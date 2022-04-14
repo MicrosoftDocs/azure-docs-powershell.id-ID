@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.datam
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataMigration/Commands.DataMigration/help/Remove-AzureRmDataMigrationTask.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataMigration/Commands.DataMigration/help/Remove-AzureRmDataMigrationTask.md
-ms.openlocfilehash: 1f05167bc05d095af2743c1af0c9a9bb41eda075e2aba303e60ec5e01e20da96
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 295ac647bcbe04e26e761e4fdf8fe2bd30282218
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140864780"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141885128"
 ---
 # Remove-AzureRmDataMigrationTask
 
 ## SYNOPSIS
-Menghapus tugas Layanan Migrasi Database Azure dari Azure.
+Menghapus tugas Azure Database Migration Service dari Azure.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -41,7 +41,7 @@ Remove-AzureRmDataMigrationTask [-ResourceId] <String> [-Force] [-PassThru]
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzureRmDataMigrationTask menghapus tugas Layanan Migrasi Database Azure dari Azure.
+Cmdlet Remove-AzureRmDataMigrationTask menghapus tugas Azure Database Migration Service dari Azure.
 
 ## EXAMPLES
 
@@ -51,19 +51,19 @@ PS C:\> Remove-AzureRmDataMigrationTask -TaskName TestTask -ProjectName myTestPr
  -ResourceGroupName MyResourceGroup
 ```
 
-Contoh sebelumnya menghapus tugas Layanan Migrasi Database Azure yang bernama TestTask dari Azure berdasarkan parameter nama tugas.
+Contoh sebelumnya menghapus tugas Azure Database Migration Service bernama TestTask dari Azure berdasarkan parameter nama tugas.
 
 ### Contoh 2
 ```
 PS C:\> Remove-AzureRmDataMigrationTask -InputObject $TestTask
 ```
 
-Contoh sebelumnya menghapus tugas Layanan Migrasi Database Azure berdasarkan objek PSProjectTask yang lolos.
+Contoh sebelumnya menghapus tugas Azure Database Migration Service berdasarkan objek PSProjectTask yang diteruskan.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -77,7 +77,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Lewati pesan konfirmasi untuk melakukan tindakan
 
 ```yaml
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Project Sumber Daya.
+Project Id Sumber Daya.
 
 ```yaml
 Type: System.String
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Nama Layanan Migrasi Database.
+nama Database Migration Service.
 
 ```yaml
 Type: System.String
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -230,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

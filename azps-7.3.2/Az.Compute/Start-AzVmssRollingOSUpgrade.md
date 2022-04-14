@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Start-AzVmssRollingOSUpgrade.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Start-AzVmssRollingOSUpgrade.md
-ms.openlocfilehash: 412b569d9932ba5fc7273ee81c04a701d9d1a817
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 4ceb728830b14009b83bd2d1038a76a9f58514db
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140202022"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141789962"
 ---
 # Start-AzVmssRollingOSUpgrade
 
 ## SYNOPSIS
-Memulai pemutakhiran berputar untuk memindahkan semua contoh kumpulan skala mesin virtual ke versi Terbaru Platform Image OS.
+Memulai pemutakhiran bergulir untuk memindahkan semua mesin virtual skala set instance ke versi Platform Image OS terbaru yang tersedia.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/start-azvmssrollingosupgrade) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Start-AzVmssRollingOSUpgrade [-ResourceGroupName] <String> [-VMScaleSetName] <St
 ```
 
 ## DESCRIPTION
-Memulai pemutakhiran berputar untuk memindahkan semua contoh kumpulan skala mesin virtual ke versi Terbaru Platform Image OS.
+Memulai pemutakhiran bergulir untuk memindahkan semua mesin virtual skala set instance ke versi Platform Image OS terbaru yang tersedia.
 Instans yang sudah menjalankan versi OS terbaru yang tersedia tidak terpengaruh.
 
 ## EXAMPLES
@@ -35,12 +38,12 @@ Instans yang sudah menjalankan versi OS terbaru yang tersedia tidak terpengaruh.
 Start-AzVmssRollingOSUpgrade -ResourceGroupName "Group001" -VMScaleSetName "VMSS001"
 ```
 
-Perintah ini memulai pemutakhiran rolling semua vm dengan skala VM yang diatur "VMSS001" dalam grup sumber daya "Group001".
+Perintah ini memulai pemutakhiran bergulir semua contoh vm dari kumpulan skala VM "VMSS001" dalam grup sumber daya "Group001".
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactories/Commands.DataFactories/help/Remove-AzureRmDataFactoryHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactories/Commands.DataFactories/help/Remove-AzureRmDataFactoryHub.md
 ms.openlocfilehash: 09e78957b3eef48731f2226a0737d0017c1e9b98
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425151"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141885563"
 ---
 # Remove-AzureRmDataFactoryHub
 
@@ -37,7 +37,7 @@ Remove-AzureRmDataFactoryHub [-Name] <String> [-Force] [-DataFactory] <PSDataFac
 
 ## DESCRIPTION
 Cmdlet **Remove-AzureRmDataFactoryHub** menghapus hub dari Azure Data Factory dalam grup sumber daya Azure yang ditentukan dan di pabrik data yang ditentukan.
-Jika Anda menghapus hub, semua layanan dan saluran tertaut dalam hub juga dihapus.
+Jika Anda menghapus hub, semua layanan dan saluran yang ditautkan di hub juga dihapus.
 
 ## EXAMPLES
 
@@ -46,12 +46,12 @@ Jika Anda menghapus hub, semua layanan dan saluran tertaut dalam hub juga dihapu
 PS C:\>Remove-AzureRmDataFactoryHub -ResourceGroupName "ADFResourceGroup" -DataFactoryName "ADFDataFactory" -Name "ContosoDataHub"
 ```
 
-Perintah ini menghapus hub yang bernama ContosoDataHub dari grup sumber daya Azure yang bernama ADFResourceGroup dan pabrik data yang bernama ADFDataFactory.
+Perintah ini menghapus hub bernama ContosoDataHub dari grup sumber daya Azure bernama ADFResourceGroup dan pabrik data bernama ADFDataFactory.
 
 ## PARAMETERS
 
 ### -DataFactory
-Menentukan objek **PSDataFactory.**
+Menentukan objek **PSDataFactory** .
 Cmdlet ini menghapus hub dari pabrik data yang ditentukan parameter ini.
 
 ```yaml
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -97,8 +97,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Mengindikasikan bahwa cmdlet ini menghapus hub tanpa meminta konfirmasi Anda.
+### -Paksa
+Menunjukkan bahwa cmdlet ini menghapus hub tanpa meminta konfirmasi kepada Anda.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -188,12 +188,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### System.Boolean
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, data, factories
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 
 [Get-AzureRmDataFactoryHub](./Get-AzureRmDataFactoryHub.md)
 
-[New-AzureRmDataFactoryHub](./New-AzureRmDataFactoryHub.md)
+[Baru-AzureRmDataFactoryHub](./New-AzureRmDataFactoryHub.md)
 
 

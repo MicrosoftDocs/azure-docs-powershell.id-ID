@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeAnalytics/Commands.DataLakeAnalytics/help/Add-AzureRmDataLakeAnalyticsFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeAnalytics/Commands.DataLakeAnalytics/help/Add-AzureRmDataLakeAnalyticsFirewallRule.md
 ms.openlocfilehash: 93f951632ade49949780b970e4910c98887fe863
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140854998"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141885270"
 ---
 # Add-AzureRmDataLakeAnalyticsFirewallRule
 
@@ -28,7 +28,7 @@ Add-AzureRmDataLakeAnalyticsFirewallRule [-Account] <String> [-Name] <String> [-
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureRmDataLakeAnalyticsFirewallRule** menambahkan aturan firewall ke akun Azure Data Lake Analytics.
+Cmdlet **Add-AzureRmDataLakeAnalyticsFirewallRule** menambahkan aturan firewall ke akun Data Lake Analytics Azure.
 
 ## EXAMPLES
 
@@ -37,12 +37,12 @@ Cmdlet **Add-AzureRmDataLakeAnalyticsFirewallRule** menambahkan aturan firewall 
 PS C:\>Add-AzureRmDataLakeAnalyticsFirewallRule -Account "ContosoAdlAcct" -Name "My firewall rule" -StartIpAddress 127.0.0.1 -EndIpAddress 127.0.0.10
 ```
 
-Perintah ini menambahkan aturan firewall bernama "aturan firewall saya" dari akun "ContosoAdlAcct" dengan rentang IP: 127.0.0.1 - 127.0.0.10
+Perintah ini menambahkan aturan firewall bernama "my firewall rule" dari akun "ContosoAdlAcct" dengan rentang IP: 127.0.0.1 - 127.0.0.10
 
 ## PARAMETERS
 
 ### -Akun
-Akun Analitik Danau Data untuk menambahkan aturan firewall
+Akun Data Lake Analytics untuk menambahkan aturan firewall ke
 
 ```yaml
 Type: System.String
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

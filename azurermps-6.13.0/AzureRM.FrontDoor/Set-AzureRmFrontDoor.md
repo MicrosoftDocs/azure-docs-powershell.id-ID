@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/FrontDoor/Commands.FrontDoor/help/Set-AzureRmFrontDoor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/FrontDoor/Commands.FrontDoor/help/Set-AzureRmFrontDoor.md
 ms.openlocfilehash: 385b706547ce90b5314c4abf88c9474814112fa2
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419963"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141884810"
 ---
 # Set-AzureRmFrontDoor
 
@@ -48,11 +48,11 @@ Set-AzureRmFrontDoor -ResourceId <String> [-RoutingRule <PSRoutingRule[]>] [-Bac
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmFrontDoor** memperbarui penyeimbang muat Front Door. Jika parameter input tidak disediakan, parameter lama dari Pintu Depan yang sudah ada akan digunakan.
+Cmdlet **Set-AzureRmFrontDoor** memperbarui penyeimbang muat Pintu Depan. Jika parameter input tidak disediakan, parameter lama dari Pintu Depan yang sudah ada akan digunakan.
 
 ## EXAMPLES
 
-### Contoh 1: perbarui Front Pintu yang sudah ada dengan FrontDoorName dan ResourceGroupName.
+### Contoh 1: perbarui Pintu Depan yang sudah ada dengan FrontDoorName dan ResourceGroupName.
 ```powershell
 PS C:\> Set-AzureRmFrontDoor -Name "frontDoor1" -ResourceGroupName "resourceGroup1" -RoutingRule $routingrule1 -BackendPool $backendpool1 -FrontendEndpoint $frontendEndpoint1 -LoadBalancingSetting $loadBalancingSetting1 -HealthProbeSetting $healthProbeSetting1
 
@@ -75,7 +75,7 @@ Type                  : Microsoft.Network/frontdoor1
 
 memperbarui FrontDoor yang sudah ada.
 
-### Contoh 2: perbarui Front Door dengan objek PSFrontDoor yang sudah ada.
+### Contoh 2: memperbarui Pintu Depan yang sudah ada dengan objek PSFrontDoor.
 ```powershell
 PS C:\>  Set-AzureRmFrontDoor -InputObject $frontDoor1 -RoutingRule $routingrule1 -BackendPool $backendpool1 -FrontendEndpoint $frontendEndpoint1 -LoadBalancingSetting $loadBalancingSetting1 -HealthProbeSetting $healthProbeSetting1
 
@@ -124,7 +124,7 @@ memperbarui FrontDoor yang sudah ada.
 ## PARAMETERS
 
 ### -BackendPool
-Backendpools tersedia untuk aturan perutean.
+Backendpool tersedia untuk aturan perutean.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSBackendPool[]
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -HealthProbeSetting
-Pengaturan health settings settings associated with this Front Door instance.
+Pengaturan pemeriksaan kesehatan yang terkait dengan instans Pintu Depan ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSHealthProbeSetting[]
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancingSetting
-Pengaturan keseimbangan muat terkait dengan contoh Pintu Depan ini.
+Pengaturan keseimbangan muat yang terkait dengan instans Pintu Depan ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSLoadBalancingSetting[]
@@ -260,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya pintu depan untuk diperbarui
+Id Sumber Daya Pintu Depan untuk memperbarui
 
 ```yaml
 Type: System.String
@@ -274,8 +274,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -RoutingRule
-Aturan perutean terkait dengan FrontDoor ini
+### -PeruteanRule
+Aturan perutean yang terkait dengan FrontDoor ini
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSRoutingRule[]
@@ -290,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag yang berhubungan dengan FrontDoor.
+Tag terkait dengan FrontDoor.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -305,7 +305,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -321,7 +321,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -336,7 +336,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -352,11 +352,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmFrontDoor](./New-AzureRmFrontDoor.md) 
- [Get-AzureRmFrontDoor](./Get-AzureRmFrontDoor.md) 
- [Remove-AzureRmFrontDoor](./Remove-AzureRmFrontDoor.md) 
- [New-AzureRmFrontDoorRoutingRuleObject](./New-AzureRmFrontDoorRoutingRuleObject.md) 
- [New-AzureRmFrontDoorHealthProbeSettingObject](./New-AzureRmFrontDoorHealthProbeSettingObject.md) 
- [New-AzureRmFrontDoorLoadBalancingSettingObject](./New-AzureRmFrontDoorLoadBalancingSettingObject.md) 
- [New-AzureRmFrontDoorFrontendEndpointObject](./New-AzureRmFrontDoorFrontendEndpointObject.md) 
- [New-AzureRmFrontDoorBackendPoolObject](./New-AzureRmFrontDoorBackendPoolObject.md)
+[AzureRmFrontDoor](./New-AzureRmFrontDoor.md)
+ Baru [Get-AzureRmFrontDoor](./Get-AzureRmFrontDoor.md)
+ [Hapus-AzureRmFrontDoor](./Remove-AzureRmFrontDoor.md)
+ [New-AzureRmFrontDoorRoutingRuleObject](./New-AzureRmFrontDoorRoutingRuleObject.md)
+ [Baru-AzureRmFrontDoorHealthProbeSettingObject](./New-AzureRmFrontDoorHealthProbeSettingObject.md)
+ [New-AzureRmFrontDoorLoadBalancingSettingObject](./New-AzureRmFrontDoorLoadBalancingSettingObject.md)
+ [Baru-AzureRmFrontDoorFrontendPointObject](./New-AzureRmFrontDoorFrontendEndpointObject.md)
+ [Baru-AzureRmFrontDoorBackendPoolObject](./New-AzureRmFrontDoorBackendPoolObject.md)

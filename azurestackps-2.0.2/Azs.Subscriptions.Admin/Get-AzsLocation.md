@@ -4,16 +4,16 @@ Module Name: Azs.Subscriptions.Admin
 online version: https://docs.microsoft.com/en-us/powershell/module/azs.subscriptions.admin/get-azslocation
 schema: 2.0.0
 ms.openlocfilehash: 431989f382d51b596cafc74d4cf229c6e803ccd6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132414199"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141812786"
 ---
 # Get-AzsLocation
 
 ## SYNOPSIS
-Mendapatkan lokasi tertentu.
+Dapatkan lokasi yang ditentukan.
 
 ## SYNTAX
 
@@ -22,7 +22,7 @@ Mendapatkan lokasi tertentu.
 Get-AzsLocation [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsLocation -Name <String> [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
@@ -33,7 +33,7 @@ Get-AzsLocation -InputObject <ISubscriptionsAdminIdentity> [-DefaultProfile <PSO
 ```
 
 ## DESCRIPTION
-Mendapatkan lokasi tertentu.
+Dapatkan lokasi yang ditentukan.
 
 ## EXAMPLES
 
@@ -46,7 +46,7 @@ DisplayName Latitude Longitude Name
 redmond                        redmond
 ```
 
-Mendapatkan daftar semua lokasi AzureStack.
+Dapatkan daftar semua lokasi AzureStack.
 
 ## PARAMETERS
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.SubscriptionsAdmin.Models.ISubscriptionsAdminIdentity
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -129,7 +129,7 @@ ALIAS
 
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 INPUTOBJECT <ISubscriptionsAdminIdentity>: Parameter Identitas
   - `[DelegatedProvider <String>]`: Pengidentifikasi DelegatedProvider.
@@ -143,8 +143,8 @@ INPUTOBJECT <ISubscriptionsAdminIdentity>: Parameter Identitas
   - `[Plan <String>]`: Nama rencana.
   - `[PlanAcquisitionId <String>]`: Pengidentifikasi akuisisi rencana
   - `[Quota <String>]`: Nama kuota.
-  - `[ResourceGroupName <String>]`: Grup sumber daya yang berada di bawah sumber daya.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[ResourceGroupName <String>]`: Grup sumber daya tempat sumber daya berada di bawah.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
   - `[TargetSubscriptionId <String>]`: ID langganan target.
   - `[Tenant <String>]`: Nama penyewa direktori.
 

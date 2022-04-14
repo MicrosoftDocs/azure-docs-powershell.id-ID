@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/export-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Export-AzKeyVaultSecurityDomain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Export-AzKeyVaultSecurityDomain.md
-ms.openlocfilehash: a8d8eaab90499473f62357c86a5688f1b27a7295
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 17626a077a94d82cab42df40f00cf04393922d7d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140199510"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142069159"
 ---
 # Export-AzKeyVaultSecurityDomain
 
 ## SYNOPSIS
-Mengekspor data domain keamanan HSM terkelola.
+Mengekspor data domain keamanan dari HSM terkelola.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/export-azkeyvaultsecuritydomain) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Export-AzKeyVaultSecurityDomain -Certificates <String[]> -OutputPath <String> [-
 ```
 
 ## DESCRIPTION
-Mengekspor data domain keamanan dari HSM terkelola untuk mengimpor di HSM lain.
+Mengekspor data domain keamanan dari HSM yang dikelola untuk mengimpor di HSM lain.
 
 ## EXAMPLES
 
@@ -43,11 +46,11 @@ Mengekspor data domain keamanan dari HSM terkelola untuk mengimpor di HSM lain.
 PS C:\Users\username\> Export-AzKeyVaultSecurityDomain -Name testmhsm -Certificates {pathOfCertificates}/sd1.cer, {pathOfCertificates}/sd2.cer, {pathOfCertificates}/sd3.cer -OutputPath {pathOfOutput}/sd.ps.json -Quorum 2
 ```
 
-Perintah ini mengambil HSM terkelola bernama testmhsm dan menyimpan cadangan domain keamanan HSM yang dikelola tersebut ke file output yang ditentukan.
+Perintah ini mengambil HSM yang dikelola bernama testmhsm dan menyimpan cadangan domain keamanan HSM yang dikelola ke file output yang ditentukan.
 
 ## PARAMETERS
 
-### -Certificates
+### -Sertifikat
 Jalur ke sertifikat yang digunakan untuk mengenkripsi data domain keamanan.
 
 ```yaml
@@ -77,8 +80,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Tentukan apakah akan menimpa file yang sudah ada.
+### -Paksa
+Tentukan apakah akan menimpa berkas yang sudah ada.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek mewakili HSM terkelola.
+Objek yang mewakili HSM yang dikelola.
 
 ```yaml
 Type: Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultIdentityItem
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Ketika ditentukan, boolean akan dikembalikan saat cmdlet berhasil.
+Ketika ditentukan, boolean akan dikembalikan ketika cmdlet berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,8 +155,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kesesaan
-Jumlah minimum jumlah berbagi yang diperlukan untuk mendekripsi domain keamanan untuk pemulihan.
+### -Kuorum
+Jumlah minimum saham yang diperlukan untuk mendekripsi domain keamanan untuk pemulihan.
 
 ```yaml
 Type: System.Int32
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengganti langganan hanya berlaku selama siklus hidup cmdlet saat ini. Langganan tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
+Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

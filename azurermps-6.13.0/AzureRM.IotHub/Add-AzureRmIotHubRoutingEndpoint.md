@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.iothu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/IotHub/Commands.IotHub/help/Add-AzureRmIotHubRoutingEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/IotHub/Commands.IotHub/help/Add-AzureRmIotHubRoutingEndpoint.md
-ms.openlocfilehash: 408129564f6a296ac405a0b715ba9eea34851fc1d2e188d65fb957ffa098610c
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: d251d3159111437cd06880a49069aee7aca6d80f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140854779"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141884614"
 ---
 # Add-AzureRmIotHubRoutingEndpoint
 
 ## SYNOPSIS
-Menambahkan titik akhir ke Hub IoT Anda
+Menambahkan titik akhir ke IoT Hub Anda
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -46,7 +46,7 @@ Add-AzureRmIotHubRoutingEndpoint [-ResourceId] <String> [-EndpointName] <String>
 ```
 
 ## DESCRIPTION
-Tambahkan titik akhir baru dalam Hub IoT Anda. Untuk mempelajari tentang titik akhir yang didukung, lihat https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-endpoints
+Tambahkan titik akhir baru di IoT Hub Anda. Untuk mempelajari tentang titik akhir yang didukung, lihat https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-endpoints
 
 ## EXAMPLES
 
@@ -60,7 +60,7 @@ EndpointName      : E2
 ConnectionString  : Endpoint=sb://myeventhub1.servicebus.windows.net:5671/;SharedAccessKeyName=iothubroutes_myeventhub1;SharedAccessKey=****;EntityPath=event1
 ```
 
-Tambahkan titik akhir baru "E2" tipe EventHub ke Hub IoT "myiothub".
+Tambahkan titik akhir baru "E2" tipe EventHub ke IoT Hub "myiothub".
 
 ### Contoh 2
 ```
@@ -77,12 +77,12 @@ MaxChunkSizeInBytes     : 314572800
 Encoding                : avro
 ```
 
-Tambahkan titik akhir baru "S1" tipe AzureStorageContainer ke Hub IoT "myiothub".
+Tambahkan titik akhir baru "S1" tipe AzureStorageContainer ke IoT Hub "myiothub".
 
 ## PARAMETERS
 
 ### -ConnectionString
-String koneksi Titik Akhir Perutean
+String koneksi titik Akhir Perutean
 
 ```yaml
 Type: System.String
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndpointResourceGroup
-Grup sumber daya sumber daya dari sumber daya titik akhir
+Grup sumber daya dari resoure Titik akhir
 
 ```yaml
 Type: System.String
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndpointSubscriptionId
-SubscriptionId dari sumber daya Titik Akhir
+SubscriptionId sumber daya Titik Akhir
 
 ```yaml
 Type: System.String
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -249,7 +249,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -264,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

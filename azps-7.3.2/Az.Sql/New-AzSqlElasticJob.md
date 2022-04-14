@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlElasticJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlElasticJob.md
-ms.openlocfilehash: 5da86b8a0d8611baad18613710df3fbbc67ef8e4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a9d720a3ec544ef02dfdf3a20cafecab26e5a65d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139998550"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141786722"
 ---
 # New-AzSqlElasticJob
 
 ## SYNOPSIS
 Membuat pekerjaan baru
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqlelasticjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -82,7 +85,7 @@ New-AzSqlElasticJob [-ParentResourceId] <String> [-Name] <String> -IntervalType 
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzSqlElasticJob membuat pekerjaan baru
+Cmdlet New-AzSqlElasticJob menciptakan pekerjaan baru
 
 ## EXAMPLES
 
@@ -100,7 +103,7 @@ Membuat pekerjaan baru
 
 ### Contoh 2
 
-Membuat pekerjaan baru. (otomatisgenerated)
+Membuat pekerjaan baru. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -Aktifkan
-Bendera untuk menunjukkan pelanggan menginginkan pekerjaan ini diaktifkan.
+Bendera untuk menunjukkan pelanggan ingin pekerjaan ini diaktifkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndTime
-Waktu selesai jadwal pekerjaan
+Waktu berakhir jadwal pekerjaan
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -IntervalType
-Tipe interval jadwal berulang - Dapat adalah Menit, Jam, Hari, Minggu, Bulan
+Tipe interval jadwal berulang - Dapat berupa Menit, Jam, Hari, Minggu, Bulan
 
 ```yaml
 Type: System.String
@@ -305,7 +308,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Waktu mulai jadwal kerja
+Waktu mulai jadwal pekerjaan
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -320,7 +323,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -336,7 +339,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -351,15 +354,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Sql.ElastisJobs.Model.AzureSqlElasticJobAgentModel
+### Microsoft.Azure.Commands.Sql.ElasticJobs.Model.AzureSqlElasticJobAgentModel
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Sql.ElastisJobs.Model.AzureSqlElasticJobModel
+### Microsoft.Azure.Commands.Sql.ElasticJobs.Model.AzureSqlElasticJobModel
 
 ## CATATAN
 

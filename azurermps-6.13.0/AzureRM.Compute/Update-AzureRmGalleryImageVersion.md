@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Update-AzureRmGalleryImageVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Update-AzureRmGalleryImageVersion.md
-ms.openlocfilehash: e004ea9b6d77dd5c67cf83835c3e1335c5624b53ab12af3fad48cbaba4db4d82
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: e8c50ffb2ac60c65f64806781d9155600c9bbe0a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140862110"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141885771"
 ---
 # Update-AzureRmGalleryImageVersion
 
 ## SYNOPSIS
-Perbarui versi gambar galeri.
+Memperbarui versi gambar galeri.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -47,7 +47,7 @@ Update-AzureRmGalleryImageVersion [-InputObject] <PSGalleryImageVersion> [-AsJob
 ```
 
 ## DESCRIPTION
-Perbarui versi gambar galeri.
+Memperbarui versi gambar galeri.
 
 ## EXAMPLES
 
@@ -60,12 +60,12 @@ PS C:\> $targetRegions = @($region1,$region2,$region3)
 PS C:\> Update-AzureRmGalleryImageVersion -ResourceGroupName $rgname -GalleryName $galleryName -GalleryImageName $imageName -Name $versionName -ReplicaCount 2 -PublishingProfileEndOfLifeDate $endOfLifeDate -TargetRegion $targetRegions
 ```
 
-Perbarui versi gambar galeri.
+Memperbarui versi gambar galeri.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublishingProfileEndOfLifeDate
-Tanggal masa berakhir galeri Versi Gambar.
+Tanggal berakhirnya galeri Versi Gambar.
 
 ```yaml
 Type: System.DateTime
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublishingProfileExcludeFromLatest
-Jika diatur, Mesin Virtual yang digunakan dari versi terbaru Definisi Gambar tidak akan menggunakan Versi Gambar ini.
+Jika diatur, Virtual Machines disebarkan dari versi terbaru Definisi Gambar tidak akan menggunakan Versi Gambar ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -260,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -276,7 +276,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -291,7 +291,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

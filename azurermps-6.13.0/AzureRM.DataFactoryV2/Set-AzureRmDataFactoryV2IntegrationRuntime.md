@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactoryV2/Commands.DataFactoryV2/help/Set-AzureRmDataFactoryV2IntegrationRuntime.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactoryV2/Commands.DataFactoryV2/help/Set-AzureRmDataFactoryV2IntegrationRuntime.md
 ms.openlocfilehash: aae3b830a55b5a2a7683aa1608d15eb4a49a49fd
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140859179"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141885507"
 ---
 # Set-AzureRmDataFactoryV2IntegrationRuntime
 
@@ -77,7 +77,7 @@ Cmdlet Set-AzureRmDataFactoryV2IntegrationRuntime memperbarui runtime integrasi 
 
 ## EXAMPLES
 
-### Contoh 1: Deskripsi runtime integrasi pembaruan.
+### Contoh 1: Perbarui deskripsi runtime integrasi.
 ```
 PS C:\> Set-AzureRmDataFactoryV2IntegrationRuntime -ResourceGroupName 'rg-test-dfv2' -DataFactoryName 'test-df-eu2' -Name 'test-selfhost-ir' `
                                             -Description 'New description'
@@ -91,7 +91,7 @@ PS C:\> Set-AzureRmDataFactoryV2IntegrationRuntime -ResourceGroupName 'rg-test-d
 
 Cmdlet memperbarui deskripsi runtime integrasi bernama 'test-selfhost-ir'.
 
-### Contoh 2: Bagikan Runtime integrasi yang dihosting sendiri.
+### Contoh 2: Bagikan runtime integrasi yang dihosting sendiri.
 ```
 PS C:\> Set-AzureRmDataFactoryV2IntegrationRuntime -ResourceGroupName 'rg-test-dfv2' -DataFactoryName 'test-df-eu2' -Name 'test-selfhost-ir' `
                                             -SharedIntegrationRuntimeResourceId '/subscriptions/b3ee3a7f-7614-4644-ad07-afa832620b4b/resourceGroups/rg-test-dfv2/providers/Microsoft.DataFactory/factories/test-df-eu2/integrationruntimes/test-selfhost-ir' -Type "SelfHosted"
@@ -103,12 +103,12 @@ PS C:\> Set-AzureRmDataFactoryV2IntegrationRuntime -ResourceGroupName 'rg-test-d
     Description       : New description
 ```
 
-Cmdlet menambahkan ADF untuk menggunakan runtime integrasi bersama. Saat menggunakan `-SharedIntegrationRuntimeResourceId` parameter, `-Type` parameter juga harus disertakan. Perhatikan bahwa pabrik data harus diberi izin untuk menggunakan runtime integrasi sebelum menjalankan cmdlet.
+Cmdlet menambahkan ADF untuk menggunakan runtime integrasi bersama. Saat menggunakan `-SharedIntegrationRuntimeResourceId` parameter, parameter `-Type` juga harus disertakan. Perhatikan bahwa pabrik data perlu diberi izin untuk menggunakan cmdlet integrasi sebelum menjalankan cmdlet.
 
 ## PARAMETERS
 
 ### -AuthKey
-Tombol autentikasi dari runtime integrasi yang dihosting sendiri.
+Kunci autentikasi runtime integrasi yang dihosting sendiri.
 
 ```yaml
 Type: System.Security.SecureString
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -CatalogPricingTier
-Tingkatan harga database katalog pada runtime integrasi.
+Tingkat harga database katalog runtime integrasi.
 
 ```yaml
 Type: System.String
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -212,8 +212,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Edition
-Edisi untuk runtime integrasi SSIS yang bisa jadi Standar atau Perusahaan, defaultnya adalah Standar jika tidak ditentukan.
+### -Edisi
+Edisi untuk runtime integrasi SSIS yang dapat berupa Standard atau Enterprise, defaultnya adalah Standar jika tidak ditentukan.
 
 ```yaml
 Type: System.String
@@ -228,7 +228,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Menjalankan cmdlet tanpa meminta konfirmasi.
 
 ```yaml
@@ -259,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### -LicenseType
-Tipe lisensi yang ingin Anda pilih untuk SSIS IR. Terdapat dua tipe: LicenseIncluded atau BasePrice. Jika Anda memenuhi syarat untuk harga Manfaat Penggunaan Hibrid Azure (AHUB), silakan pilih BasePrice. Jika tidak, silakan pilih LicenseIncluded.
+Tipe lisensi yang ingin Anda pilih untuk IR SSIS. Ada dua tipe: LicenseIncluded atau BasePrice. Jika anda memenuhi syarat untuk harga Azure Hybrid Use Benefit (AHUB), silakan pilih BasePrice. Jika tidak, silakan pilih LicenseIncluded.
 
 ```yaml
 Type: System.String
@@ -290,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxParallelExecutionsPerNode
-Jumlah eksekusi paralel maksimum per simpul untuk runtime integrasi khusus terkelola.
+Jumlah eksekusi paralel maksimum per node untuk runtime integrasi khusus terkelola.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -320,7 +320,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeCount
-Hitung node target runtime integrasi.
+Hitungan simpul target runtime integrasi.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -335,7 +335,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeSize
-Ukuran node runtime integrasi.
+Ukuran simpul runtime integrasi.
 
 ```yaml
 Type: System.String
@@ -380,7 +380,7 @@ Accept wildcard characters: False
 ```
 
 ### -SetupScriptContainerSasUri
-SAS URI dari wadah blob Azure yang berisi skrip penyiapan kustom.
+SAS URI dari kontainer blob Azure yang berisi skrip penyetelan kustom.
 
 ```yaml
 Type: System.String
@@ -395,7 +395,7 @@ Accept wildcard characters: False
 ```
 
 ### -SharedIntegrationRuntimeResourceId
-Id sumber daya dari runtime integrasi yang dihosting sendiri bersama.
+Id sumber daya runtime integrasi yang dihosting sendiri bersama.
 
 ```yaml
 Type: System.String
@@ -410,7 +410,7 @@ Accept wildcard characters: False
 ```
 
 ### -Subnet
-Nama subnet di VNet.
+Nama subnet dalam VNet.
 
 ```yaml
 Type: System.String
@@ -441,7 +441,7 @@ Accept wildcard characters: False
 ```
 
 ### -VNetId
-ID VNet yang bergabung dalam runtime integrasi.
+ID VNet yang digabungkan oleh runtime integrasi.
 
 ```yaml
 Type: System.String
@@ -456,7 +456,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -486,7 +486,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

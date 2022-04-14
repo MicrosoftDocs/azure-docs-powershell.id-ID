@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.hdins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Get-AzureRmHDInsightProperties.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Get-AzureRmHDInsightProperties.md
-ms.openlocfilehash: 1e1dc5838ab831210950616304b2e1d9dbc7f0576a707775ef657b235b6f5dae
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 198f0db3cab8b2e0f6e8f9b466ac3e0027e4638c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140867456"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141884804"
 ---
 # Get-AzureRmHDInsightProperties
 
@@ -28,21 +28,21 @@ Get-AzureRmHDInsightProperties [-Location] <String> [-DefaultProfile <IAzureCont
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmHDInsightProperties** memiliki properti khusus untuk Azure HDInsight, seperti daftar lokasi yang tersedia, versi kluster HDInsight, dan kapasitas perhitungan yang tersedia.
+Cmdlet **Get-AzureRmHDInsightProperties** mendapatkan properti khusus untuk Azure HDInsight, seperti daftar lokasi yang tersedia, versi kluster HDInsight, dan kapasitas komputasi yang tersedia.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan properti kluster Azure HDInsight
+### Contoh 1: Dapatkan properti cluster Azure HDInsight
 ```
 PS C:\>Get-AzureRmHDInsightProperties -Location "East US 2"
 ```
 
-Perintah ini mendapatkan properti dari layanan HDInsight dari lokasi EAST US 2.
+Perintah ini mendapatkan properti dari layanan HDInsight dari lokasi East US 2.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -72,11 +72,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

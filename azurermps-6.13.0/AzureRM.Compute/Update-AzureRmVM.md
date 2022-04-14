@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Update-AzureRmVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Update-AzureRmVM.md
 ms.openlocfilehash: e29eb849dfd7ec3417daaea1b0cae447d20f1322
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425897"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141885754"
 ---
 # Update-AzureRmVM
 
@@ -52,7 +52,7 @@ Update-AzureRmVM [-Id] <String> -VM <PSVirtualMachine> [-Tag <Hashtable>] [-OsDi
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzureRmVM** memperbarui status komputer virtual Azure sesuai dengan status objek mesin virtual.
+Cmdlet **Update-AzureRmVM** memperbarui status mesin virtual Azure ke status objek mesin virtual.
 
 ## EXAMPLES
 
@@ -62,13 +62,13 @@ PS C:\> Update-AzureRmVM -ResourceGroupName "ResourceGroup11" -VM $VirtualMachin
 ```
 
 Perintah ini memperbarui mesin virtual, $VirtualMachine, di ResourceGroup11.
-Perintah memperbaruinya menggunakan objek mesin virtual yang disimpan dalam $VirtualMachine variabel.
-Untuk mendapatkan objek mesin virtual, gunakan cmdlet **Get-AzureRmVM.**
+Perintah memperbaruinya dengan menggunakan objek mesin virtual yang disimpan dalam variabel $VirtualMachine.
+Untuk mendapatkan objek mesin virtual, gunakan cmdlet **Get-AzureRmVM** .
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignIdentity
-Tentukan identitas yang ditetapkan sistem untuk komputer virtual.
+Tentukan identitas sistem yang ditetapkan untuk mesin maya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID Sumber Daya komputer virtual.
+Menentukan ID Sumber Daya mesin virtual.
 
 ```yaml
 Type: System.String
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 
 ### -IdentityId
 Menentukan daftar identitas pengguna yang terkait dengan kumpulan skala mesin virtual.
-Referensi identitas pengguna akan menjadi ID sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
+Referensi identitas pengguna akan berupa id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
 
 ```yaml
 Type: System.String[]
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -OsDiskWriteAccelerator
-Menentukan apakah WriteAccelerator harus diaktifkan atau dinonaktifkan di disk OS.
+Menentukan apakah WriteAccelerator harus diaktifkan atau dinonaktifkan pada disk OS.
 
 ```yaml
 Type: System.Boolean
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: System.String
@@ -190,9 +190,9 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Menentukan sumber daya dan grup sumber daya dapat ditandai dengan kumpulan pasangan nama nilai.
-Menambahkan tag ke sumber daya memungkinkan Anda mengelompokkan sumber daya bersama-sama di seluruh grup sumber daya dan untuk membuat tampilan Anda sendiri.
-Setiap grup sumber daya atau sumber daya dapat memiliki maksimal 15 tag.
+Menentukan sumber daya dan grup sumber daya bisa ditandai dengan sekumpulan pasangan nilai nama.
+Menambahkan tag ke sumber daya memungkinkan Anda mengelompokkan sumber daya bersama di seluruh grup sumber daya dan membuat tampilan Anda sendiri.
+Setiap sumber daya atau grup sumber daya dapat memiliki maksimal 15 tag.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -UltraSSDEnabled
-Bendera yang mengaktifkan atau menonaktifkan kemampuan untuk memiliki satu atau beberapa disk data terkelola dengan tipe akun UltraSSD_LRS penyimpanan pada VM.
+Bendera yang mengaktifkan atau menonaktifkan kapabilitas untuk memiliki satu atau beberapa disk data terkelola dengan tipe akun penyimpanan UltraSSD_LRS pada VM.
 Disk terkelola dengan tipe akun penyimpanan UltraSSD_LRS dapat ditambahkan ke mesin virtual hanya jika properti ini diaktifkan.
 
 ```yaml
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -256,7 +256,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -271,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -289,9 +289,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmVM](./Get-AzureRmVM.md)
 
-[New-AzureRmVM](./New-AzureRmVM.md)
+[AzureRmVM Baru](./New-AzureRmVM.md)
 
-[Remove-AzureRmVM](./Remove-AzureRmVM.md)
+[Hapus-AzureRmVM](./Remove-AzureRmVM.md)
 
 [Mulai ulang-AzureRmVM](./Restart-AzureRmVM.md)
 
@@ -299,6 +299,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Stop-AzureRmVM](./Stop-AzureRmVM.md)
 
-[New-AzureRmVMConfig](./New-AzureRmVMConfig.md)
+[AzureRmVMConfig Baru](./New-AzureRmVMConfig.md)
 
 

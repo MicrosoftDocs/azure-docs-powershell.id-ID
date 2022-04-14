@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrApplyRecoveryPoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrApplyRecoveryPoint.md
 ms.openlocfilehash: 9dde4f55abde3e2797e64f4ba644f42df6174b2a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140278969"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141797522"
 ---
 # Start-AzRecoveryServicesAsrApplyRecoveryPoint
 
@@ -18,7 +18,7 @@ ms.locfileid: "140278969"
 Mengubah titik pemulihan untuk item yang gagal diproteksi sebelum melakukan operasi failover.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/start-azrecoveryservicesasrapplyrecoverypoint) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/start-azrecoveryservicesasrapplyrecoverypoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Start-AzRecoveryServicesAsrApplyRecoveryPoint -RecoveryPoint <ASRRecoveryPoint>
 ```
 
 ## DESCRIPTION
-**Start-AzRecoveryServicesAsrApplyRecoveryPoint** mengubah titik pemulihan untuk item yang gagal atas item yang diproteksi sebelum menerapkan operasi failover.
+**Start-AzRecoveryServicesAsrApplyRecoveryPoint** mengubah titik pemulihan untuk item yang gagal diproteksi sebelum melakukan operasi failover.
 
 ## EXAMPLES
 
@@ -39,7 +39,7 @@ Start-AzRecoveryServicesAsrApplyRecoveryPoint -RecoveryPoint <ASRRecoveryPoint>
 PS C:\> $currentJob = Start-AzRecoveryServicesAsrApplyRecoveryPoint -RecoveryPoint $RecoveryPoint -ReplicationProtectedItem $RPI
 ```
 
-Mulai menerapkan titik pemulihan tertentu ke item replikasi yang diproteksi dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Mulai menerapkan titik pemulihan tertentu ke item yang diproteksi replikasi dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ## PARAMETERS
 
@@ -58,7 +58,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DataEncryptionSeccryptryCertFile
+### -DataEncryptionSecondaryCertFile
 Menentukan file sertifikat sekunder jika enkripsi data sedang digunakan.
 
 ```yaml
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicationProtectedItem
-Menentukan objek item dilindungi replikasi ASR.
+Menentukan objek item yang diproteksi replikasi ASR.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -164,4 +164,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Cmdlet Layanan Pemulihan Azure](/powershell/module/az.recoveryservices)
+[Cmdlet Azure Recovery Services](/powershell/module/az.recoveryservices)

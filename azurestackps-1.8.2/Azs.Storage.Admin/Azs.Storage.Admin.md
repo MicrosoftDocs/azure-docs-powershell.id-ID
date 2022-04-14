@@ -6,18 +6,18 @@ Download Help Link:
 Help Version:
   '[object Object]': 
 Locale: en-US
-ms.openlocfilehash: 316626be0f9cb2bda981051ec129ee4aaf997cd7e18e87b68100abc852d0bcf3
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 034694f5e888c958de1605e09c1e2c740f6027ae
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132415909"
 ---
-# Azs. Storage. Modul Admin
+# Modul Azs.Storage.Admin
 ## Deskripsi
 Rilis pratinjau modul administrator Azure Stack Storage.  
 
-## Azs. Storage. Cmdlet Admin
+## Cmdlet Azs.Storage.Admin
 ### [Get-AzsBlobService](Get-AzsBlobService.md)
 Mengembalikan layanan blob.
 
@@ -43,16 +43,16 @@ Mengembalikan status pekerjaan pengumpulan sampah.
 Mengembalikan akun penyimpanan yang diminta.
 
 ### [Get-AzsStorageAcquisition](Get-AzsStorageAcquisition.md)
-Mengembalikan daftar akuisi blob.
+Mengembalikan daftar akuisisi blob.
 
 ### [Get-AzsStorageContainer](Get-AzsStorageContainer.md)
-Mengembalikan daftar wadah yang dapat dimigrasikan dalam berbagi yang ditentukan.
+Mengembalikan daftar kontainer yang dapat dimigrasikan dalam share yang ditentukan.
 
 ### [Get-AzsStorageContainerMigrationStatus](Get-AzsStorageContainerMigrationStatus.md)
-Mengembalikan status pekerjaan migrasi wadah.
+Mengembalikan status pekerjaan migrasi kontainer.
 
 ### [Get-AzsStorageDestinationShare](Get-AzsStorageDestinationShare.md)
-Mengembalikan daftar berbagi tujuan yang dipertimbangkan sistem sebagai kandidat terbaik untuk migrasi.
+Mengembalikan daftar berbagi tujuan yang dianggap sistem sebagai kandidat terbaik untuk migrasi.
 
 ### [Get-AzsStorageFarm](Get-AzsStorageFarm.md)
 Mengembalikan daftar semua farm penyimpanan.
@@ -67,7 +67,7 @@ Mengembalikan daftar definisi metrik untuk farm penyimpanan.
 Mengembalikan daftar kuota penyimpanan di lokasi tertentu.
 
 ### [Get-AzsStorageShare](Get-AzsStorageShare.md)
-Mengembalikan daftar penyimpanan yang bersesering.
+Mengembalikan daftar berbagi penyimpanan.
 
 ### [Get-AzsStorageShareMetric](Get-AzsStorageShareMetric.md)
 Mengembalikan daftar metrik untuk berbagi penyimpanan.
@@ -85,23 +85,23 @@ Mengembalikan daftar metrik untuk layanan tabel.
 Mengembalikan daftar definisi metrik untuk layanan tabel.
 
 ### [New-AzsStorageQuota](New-AzsStorageQuota.md)
-Membuat kuota penyimpanan baru.
+Buat kuota penyimpanan baru.
 
 ### [Remove-AzsStorageQuota](Remove-AzsStorageQuota.md)
 Menghapus kuota yang sudah ada
 
 ### [Restore-AzsStorageAccount](Restore-AzsStorageAccount.md)
-Membatalkan penghapusan akun penyimpanan yang dihapus.
+Membatalkan penghapusan akun penyimpanan.
 
 ### [Set-AzsStorageQuota](Set-AzsStorageQuota.md)
-Buat atau perbarui kuota penyimpanan yang sudah ada.
+Membuat atau memperbarui kuota penyimpanan yang sudah ada.
 
 ### [Start-AzsReclaimStorageCapacity](Start-AzsReclaimStorageCapacity.md)
-Mulai kumpulan sampah pada objek penyimpanan yang dihapus.
+Mulai pengumpulan sampah pada objek penyimpanan yang dihapus.
 
 ### [Start-AzsStorageContainerMigration](Start-AzsStorageContainerMigration.md)
-Memulai pekerjaan migrasi wadah untuk melakukan migrasi wadah ke berbagi tujuan tertentu.
+Memulai pekerjaan migrasi kontainer untuk melakukan migrasi kontainer ke berbagi tujuan yang ditentukan.
 
 ### [Stop-AzsStorageContainerMigration](Stop-AzsStorageContainerMigration.md)
-Membatalkan pekerjaan migrasi wadah.
+Membatalkan pekerjaan migrasi kontainer.
 

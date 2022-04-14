@@ -3,12 +3,12 @@ external help file: ''
 Module Name: Azs.Backup.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.backup.admin/set-azsbackupconfiguration
 schema: 2.0.0
-ms.openlocfilehash: d2710b6781cf5d6e09a3e9fc83f20194e881ee63d8aad49c177395ce8e1c3381
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: c99e2c549cc865a5f7f9ad0d7c3252cbf6651e98
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416690"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141812984"
 ---
 # Set-AzsBackupConfiguration
 
@@ -26,7 +26,7 @@ Set-AzsBackupConfiguration [-Location <String>] [-ResourceGroupName <String>] [-
  [<CommonParameters>]
 ```
 
-### Perbarui
+### Update
 ```
 Set-AzsBackupConfiguration -Backup <IBackupLocation> [-Location <String>] [-ResourceGroupName <String>]
  [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf]
@@ -38,7 +38,7 @@ Memperbarui lokasi cadangan.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur konfigurasi cadangan
+### Contoh 1: Atur konfigurasi cadangan
 ```powershell
 PS C:\> Set-AzsBackupConfiguration -Path "\\***.**_._*_._**\Share" -Username "asdomain1\azurestackadmin" -Password $password  -EncryptionCertPath $encryptionCertPath
 
@@ -64,9 +64,9 @@ Accept wildcard characters: False
 
 ```
 
-### -Backup
-Informasi tentang lokasi pencadangan.
-Untuk membuat, lihat bagian CATATAN untuk properti CADANGAN dan membuat tabel hash.
+### -Cadangan
+Informasi tentang lokasi cadangan.
+Untuk membangun, lihat bagian CATATAN untuk properti BACKUP dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.Api20180901.IBackupLocation
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupFrequencyInHours
-Interval, dalam jam, untuk frekuensi yang digunakan penjadwal untuk cadangan.
+Interval, dalam jam, untuk frekuensi penjadwal mengambil cadangan.
 
 ```yaml
 Type: System.Int32
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupRetentionPeriodInDays
-Periode penyimpanan, dalam beberapa hari, untuk penyimpanan kembali di lokasi penyimpanan.
+Periode penyimpanan, dalam hari, untuk kembali di lokasi penyimpanan.
 
 ```yaml
 Type: System.Int32
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionCertPath
-Jalur ke file sertifikat enkripsi dengan kunci publik (.cer).
+Jalur ke file sert enkripsi dengan kunci publik (.cer).
 
 ```yaml
 Type: System.String
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 
 ```
 
-### -Path
+### -Jalur
 Jalur ke lokasi pembaruan
 
 ```yaml
@@ -242,8 +242,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -274,7 +274,7 @@ Accept wildcard characters: False
 
 ```
 
-### -UserName
+### -NamaPengguna
 Nama pengguna untuk mengakses lokasi.
 
 ```yaml
@@ -291,7 +291,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -308,7 +308,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -324,7 +324,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -338,14 +338,14 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-PENCADANGAN <IBackupLocation> : Informasi tentang lokasi pencadangan.
+CADANGAN <IBackupLocation>: Informasi tentang lokasi cadangan.
   - `[Location <String>]`: Lokasi sumber daya.
   - `[Tag <IResourceTags>]`: Daftar pasangan nilai kunci.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
-  - `[BackupFrequencyInHours <Int32?>]`: Interval, dalam jam, untuk frekuensi yang digunakan penjadwal untuk cadangan.
-  - `[BackupRetentionPeriodInDays <Int32?>]`: Periode penyimpanan, dalam beberapa hari, untuk cadangan di lokasi penyimpanan.
+  - `[BackupFrequencyInHours <Int32?>]`: Interval, dalam jam, untuk frekuensi penjadwal mengambil cadangan.
+  - `[BackupRetentionPeriodInDays <Int32?>]`: Periode penyimpanan, dalam hari, untuk kembali di lokasi penyimpanan.
   - `[EncryptionCertBase64 <String>]`: Data mentah base64 untuk sertifikat enkripsi cadangan.
   - `[IsBackupSchedulerEnabled <Boolean?>]`: True jika penjadwal cadangan diaktifkan.
   - `[Password <String>]`: Kata sandi untuk mengakses lokasi.

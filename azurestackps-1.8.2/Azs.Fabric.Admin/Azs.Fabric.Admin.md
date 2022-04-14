@@ -6,46 +6,46 @@ Download Help Link:
 Help Version:
   '[object Object]': 
 Locale: en-US
-ms.openlocfilehash: cceab99de34c349d19904654ccb65d35804bb78f20794dc20877ef5a418658f2
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 42182c3d24d1964078e071b9fb2e02832ceb8f80
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132416190"
 ---
-# Azs.Fabric.Admin Module
+# Modul Azs.Fabric.Admin
 ## Deskripsi
-Preview release of the AzureStack Fabric administrator module which allows administrators to view and manage infrastructure components.  
-## Azs.Fabric.Admin Cmdlets
+Rilis pratinjau modul administrator AzureStack Fabric yang memungkinkan administrator untuk melihat dan mengelola komponen infrastruktur.  
+## Cmdlet Azs.Fabric.Admin
 ### [Disable-AzsScaleUnitNode](Disable-AzsScaleUnitNode.md)
 Mulai mode pemeliharaan untuk simpul unit skala.
 
 ### [Enable-AzsScaleUnitNode](Enable-AzsScaleUnitNode.md)
-Menghentikan mode pemeliharaan untuk simpul unit skala.
+Hentikan mode pemeliharaan untuk simpul unit skala.
 
 ### [Get-AzsEdgeGateway](Get-AzsEdgeGateway.md)
-Mengembalikan daftar semua gateway tepi di lokasi tertentu.
+Mengembalikan daftar semua gateway edge di lokasi tertentu.
 
 ### [Get-AzsEdgeGatewayPool](Get-AzsEdgeGatewayPool.md)
-Mengembalikan objek gateway pool pada satu lokasi.
+Mengembalikan objek kumpulan gateway di suatu lokasi.
 
 ### [Get-AzsInfrastructureLocation](Get-AzsInfrastructureLocation.md)
 Mengembalikan daftar semua lokasi kain.
 
 ### [Get-AzsInfrastructureRole](Get-AzsInfrastructureRole.md)
-Mengembalikan daftar semua peran infrastruktur di satu lokasi.
+Mengembalikan daftar semua peran infrastruktur di suatu lokasi.
 
 ### [Get-AzsInfrastructureRoleInstance](Get-AzsInfrastructureRoleInstance.md)
-Mengembalikan daftar dari semua instans peran infrastruktur di suatu lokasi.
+Mengembalikan daftar semua contoh peran infrastruktur di suatu lokasi.
 
 ### [Get-AzsInfrastructureShare](Get-AzsInfrastructureShare.md)
-Mengembalikan daftar dari semua file kain yang bagikan di lokasi tertentu.
+Mengembalikan daftar semua file kain yang dibagikan di lokasi tertentu.
 
 ### [Get-AzsInfrastructureVolume](Get-AzsInfrastructureVolume.md)
-Mengembalikan daftar semua volume penyimpanan di satu lokasi.
+Mengembalikan daftar semua volume penyimpanan di suatu lokasi.
 
 ### [Get-AzsIpPool](Get-AzsIpPool.md)
-Mengembalikan daftar semua kolam renang IP di lokasi tertentu.
+Mengembalikan daftar semua kumpulan IP di lokasi tertentu.
 
 ### [Get-AzsLogicalNetwork](Get-AzsLogicalNetwork.md)
 Mengembalikan daftar semua jaringan logika di suatu lokasi.
@@ -54,47 +54,47 @@ Mengembalikan daftar semua jaringan logika di suatu lokasi.
 Mengembalikan daftar semua subnet logika.
 
 ### [Get-AzsMacAddressPool](Get-AzsMacAddressPool.md)
-Mengembalikan daftar semua kolam renang alamat MAC di lokasi.
+Mengembalikan daftar semua kumpulan alamat MAC di suatu lokasi.
 
 ### [Get-AzsScaleUnit](Get-AzsScaleUnit.md)
-Mengembalikan daftar semua unit skala di satu lokasi.
+Mengembalikan daftar semua unit skala di suatu lokasi.
 
 ### [Get-AzsScaleUnitNode](Get-AzsScaleUnitNode.md)
-Mengembalikan daftar semua node unit skala di suatu lokasi.
+Mengembalikan daftar semua simpul unit skala di lokasi.
 
 ### [Get-AzsSlbMuxInstance](Get-AzsSlbMuxInstance.md)
-Mengembalikan daftar semua contoh penyeimbang muat perangkat lunak di satu lokasi.
+Mengembalikan daftar semua instans penyeimbang muat perangkat lunak di suatu lokasi.
 
 ### [Get-AzsStoragePool](Get-AzsStoragePool.md)
-Mengembalikan daftar semua kolam renang penyimpanan untuk lokasi.
+Mengembalikan daftar semua kumpulan penyimpanan untuk suatu lokasi.
 
 ### [Get-AzsStorageSystem](Get-AzsStorageSystem.md)
-Mengembalikan daftar semua subsistem penyimpanan untuk suatu lokasi.
+Mengembalikan daftar semua subsstem penyimpanan untuk suatu lokasi.
 
 ### [New-AzsIpPool](New-AzsIpPool.md)
-Buat ip infrastruktur. Setelah dibuat, ip pool tidak dapat dihapus atau diubah.
+Membuat kumpulan IP infrastruktur. Setelah membuat kumpulan IP tidak dapat dihapus atau diubah.
 
-### [Repair-AzsScaleUnitNode](Repair-AzsScaleUnitNode.md)
+### [Perbaikan-AzsScaleUnitNode](Repair-AzsScaleUnitNode.md)
 Memperbaiki simpul kluster.
 
-### [Restart-AzsInfrastructureRole](Restart-AzsInfrastructureRole.md)
+### [Mulai ulang-AzsInfrastructureRole](Restart-AzsInfrastructureRole.md)
 Memulai ulang peran infrastruktur yang diminta.
 
-### [Restart-AzsInfrastructureRoleInstance](Restart-AzsInfrastructureRoleInstance.md)
-Me-reboot contoh peran infrastruktur.
+### [Mulai ulang-AzsInfrastructureRoleInstance](Restart-AzsInfrastructureRoleInstance.md)
+Mulai ulang contoh peran infrastruktur.
 
 ### [Start-AzsInfrastructureRoleInstance](Start-AzsInfrastructureRoleInstance.md)
-Daya pada instans peran infrastruktur.
+Mengaktifkan contoh peran infrastruktur.
 
 ### [Start-AzsScaleUnitNode](Start-AzsScaleUnitNode.md)
-Daya pada simpul unit skala.
+Nyalakan simpul unit skala.
 
 ### [Stop-AzsInfrastructureRoleInstance](Stop-AzsInfrastructureRoleInstance.md)
 Mematikan instans peran infrastruktur.
 
 ### [Stop-AzsScaleUnitNode](Stop-AzsScaleUnitNode.md)
-Mematikan simpul unit skala.
+Matikan simpul unit skala.
 
 ### [Suspend-AzsInfrastructureRoleInstance](Suspend-AzsInfrastructureRoleInstance.md)
-Mematikan instans peran infrastruktur.
+Mematikan contoh peran infrastruktur.
 

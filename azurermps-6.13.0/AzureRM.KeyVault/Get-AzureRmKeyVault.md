@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/KeyVault/Commands.KeyVault/help/Get-AzureRmKeyVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/KeyVault/Commands.KeyVault/help/Get-AzureRmKeyVault.md
 ms.openlocfilehash: d79c28b09c9f6ca36ae163566574555bb3c50459
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422149"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141884425"
 ---
 # Get-AzureRmKeyVault
 
 ## SYNOPSIS
-Dapatkan kunci vault.
+Mendapatkan kubah kunci.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -45,12 +45,12 @@ Get-AzureRmKeyVault [-InRemovedState] [-DefaultProfile <IAzureContextContainer>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmKeyVault** mendapatkan informasi tentang vault kunci dalam langganan. Anda dapat melihat semua contoh key vault dalam langganan, atau memfilter hasil menurut grup sumber daya atau key vault tertentu.
-Perlu diingat bahwa meskipun menentukan grup sumber daya bersifat opsional untuk cmdlet ini saat Anda mendapatkan vault kunci tunggal, Anda harus melakukannya untuk kinerja yang lebih baik.
+Cmdlet **Get-AzureRmKeyVault** mendapatkan informasi tentang kubah kunci dalam langganan. Anda dapat menampilkan semua contoh kubah kunci dalam langganan, atau memfilter hasil menurut grup sumber daya atau kubah kunci tertentu.
+Perhatikan bahwa meskipun menentukan grup sumber daya bersifat opsional untuk cmdlet ini ketika Anda mendapatkan kubah kunci tunggal, Anda harus melakukannya untuk kinerja yang lebih baik.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua kunci vault dalam langganan Anda saat ini
+### Contoh 1: Dapatkan semua kubah kunci dalam langganan Anda saat ini
 ```powershell
 PS C:\> Get-AzureRMKeyVault
 
@@ -77,9 +77,9 @@ Resource ID         : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxx/resou
 Tags                :
 ```
 
-Perintah ini akan memasukkan semua kunci vault di langganan Anda saat ini.
+Perintah ini mendapatkan semua kubah kunci dalam langganan Anda saat ini.
 
-### Contoh 2: Dapatkan vault kunci tertentu
+### Contoh 2: Dapatkan kubah kunci tertentu
 ```powershell
 PS C:\> Get-AzureRMKeyVault -VaultName 'myvault'
 
@@ -113,9 +113,9 @@ Access Policies                  :
 Tags                             :
 ```
 
-Perintah ini akan memasukkan kunci vault bernama myvault dalam langganan Anda saat ini.
+Perintah ini mendapatkan kubah kunci bernama myvault dalam langganan Anda saat ini.
 
-### Contoh 3: Dapatkan vault kunci dalam grup sumber daya
+### Contoh 3: Dapatkan kubah kunci dalam grup sumber daya
 ```powershell
 PS C:\> Get-AzureRmKeyVault -ResourceGroupName 'myrg1'
 
@@ -134,9 +134,9 @@ Resource ID         : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxx/resou
 Tags                :
 ```
 
-Perintah ini memasukkan semua penyimpanan kunci ke grup sumber daya bernama ContosoPayRollResourceGroup.
+Perintah ini mendapatkan semua kubah kunci dalam grup sumber daya bernama ContosoPayRollResourceGroup.
 
-### Contoh 4: Mendapatkan semua vault kunci yang dihapus di langganan Anda saat ini
+### Contoh 4: Dapatkan semua kubah kunci yang dihapus dalam langganan Anda saat ini
 ```powershell
 PS C:\> Get-AzureRmKeyVault -InRemovedState
 
@@ -151,9 +151,9 @@ Scheduled Purge Date : 8/22/2018 9:33:24 PM
 Tags                 :
 ```
 
-Perintah ini akan memasukkan semua kunci vault yang dihapus di langganan Anda saat ini.
+Perintah ini mendapatkan semua kubah kunci yang dihapus dalam langganan Anda saat ini.
 
-### Contoh 5: Mendapatkan vault kunci terhapus
+### Contoh 5: Dapatkan kubah kunci yang dihapus
 ```powershell
 PS C:\> Get-AzureRMKeyVault -VaultName 'myvault4'  -Location 'westus' -InRemovedState
 
@@ -168,12 +168,12 @@ Scheduled Purge Date : 8/22/2018 9:33:24 PM
 Tags                 :
 ```
 
-Perintah ini mendapatkan informasi kunci vault terhapus yang bernama myvault4 dalam langganan Anda saat ini dan di kawasan westus.
+Perintah ini mendapatkan informasi kubah kunci yang dihapus bernama myvault4 dalam langganan Anda saat ini dan di kawasan westus.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -InRemovedState
-Menentukan apakah akan memperlihatkan vault yang dihapus sebelumnya dalam output.
+Menentukan apakah akan memperlihatkan kubah yang dihapus sebelumnya dalam output.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi vault yang dihapus.
+Lokasi kubah yang dihapus.
 
 ```yaml
 Type: System.String
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang terkait dengan key vault atau key vaults yang sedang ditanya.
+Menentukan nama grup sumber daya yang terkait dengan kubah kunci atau kubah kunci yang sedang dikueri.
 
 ```yaml
 Type: System.String
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kunci vault.
+Menentukan nama kubah kunci.
 
 ```yaml
 Type: System.String
@@ -275,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -297,4 +297,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmKeyVault](./New-AzureRmKeyVault.md)
 
-[Remove-AzureRmKeyVault](./Remove-AzureRmKeyVault.md)
+[Hapus-AzureRmKeyVault](./Remove-AzureRmKeyVault.md)

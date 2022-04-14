@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Remove-AzDataFactoryV2Pipeline.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Remove-AzDataFactoryV2Pipeline.md
-ms.openlocfilehash: 3f9159ee88400149130d8d42f7e7e0e8982112a5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 78471f367fb6efc2828268c891b702df1f346e0a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140373179"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141789116"
 ---
 # Remove-AzDataFactoryV2Pipeline
 
 ## SYNOPSIS
-Menghapus saluran dari Data Factory.
+Menghapus alur dari Pabrik Data.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/remove-azdatafactoryv2pipeline) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ Remove-AzDataFactoryV2Pipeline [-ResourceId] <String> [-Force] [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzDataFactoryV2Pipeline menghapus saluran dari Azure Data Factory.
+Cmdlet Remove-AzDataFactoryV2Pipeline menghapus pipa dari Azure Data Factory.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus pipeline
+### Contoh 1: Menghapus pipeline
 ```
 PS C:\> Remove-AzDataFactoryV2Pipeline -ResourceGroupName "ADF" -Name "DPWikisample" -DataFactoryName "WikiADF"
           Confirm
@@ -51,8 +54,8 @@ PS C:\> Remove-AzDataFactoryV2Pipeline -ResourceGroupName "ADF" -Name "DPWikisam
           True
 ```
 
-Cmdlet ini menghapus pipeline yang bernama DPWikisample dari pabrik data yang bernama WikiADF.
-Perintah mengembalikan nilai dari $True.
+Cmdlet ini menghapus pipeline bernama DPWikisample dari pabrik data bernama WikiADF.
+Perintah mengembalikan nilai $True.
 
 ## PARAMETERS
 
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -87,7 +90,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Menjalankan cmdlet tanpa meminta konfirmasi.
 
 ```yaml
@@ -103,8 +106,8 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Menentukan objek Saluran.
-Cmdlet ini menghapus saluran yang ditentukan parameter ini.
+Menentukan objek Pipeline.
+Cmdlet ini menghapus pipeline yang ditentukan parameter ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipeline
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama pipeline untuk dihapus.
+Menentukan nama alur yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya Azure.
-Cmdlet ini menghapus saluran dari grup yang ditentukan parameter ini.
+Cmdlet ini menghapus pipeline dari grup yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya Azure dari saluran yang akan dihapus.
+ID sumber daya Azure dari saluran untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -208,7 +211,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### System.Boolean
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, data, factories
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 

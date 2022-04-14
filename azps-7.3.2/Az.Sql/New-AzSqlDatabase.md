@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabase.md
-ms.openlocfilehash: 8cd37ec4bc84e2f69225d920015902e4c2ba570e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5cbfba9b7d95d80a12f609ab2efc630f1de5738f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140005984"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141786740"
 ---
 # New-AzSqlDatabase
 
 ## SYNOPSIS
 Membuat database atau database elastis.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqldatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,8 +48,8 @@ New-AzSqlDatabase -DatabaseName <String> [-CollationName <String>] [-CatalogColl
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSqlDatabase** membuat database Azure SQL baru.
-Anda juga bisa membuat database elastis dengan mengatur parameter *ElastisPoolName* ke pool elastis yang sudah ada.
+Cmdlet **New-AzSqlDatabase** membuat database Azure SQL.
+Anda juga dapat membuat database elastis dengan mengatur parameter *ElasticPoolName* ke kumpulan elastis yang sudah ada.
 
 ## EXAMPLES
 
@@ -77,7 +80,7 @@ EnableLedger                  : False
 
 Perintah ini membuat database bernama Database01 di server Server01.
 
-### Contoh 2: Membuat database elastis di server yang ditentukan
+### Contoh 2: Membuat database elastis di server tertentu
 ```
 PS C:\>New-AzSqlDatabase -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database02" -ElasticPoolName "ElasticPool01"
 ResourceGroupName             : ResourceGroup01
@@ -102,7 +105,7 @@ Tags                          :
 EnableLedger                  : False
 ```
 
-Perintah ini membuat database bernama Database02 dalam kolam elastis yang bernama ElastisPool01 di server Server01.
+Perintah ini membuat database bernama Database02 dalam kumpulan elastis bernama ElasticPool01 di server Server01.
 
 ### Contoh 3: Membuat database Vcore di server tertentu
 ```
@@ -160,12 +163,12 @@ EnableLedger                  : False
 MinimumCapacity          : 0.5
 ```
 
-Perintah ini akan membuat database Tanpa Server bernama Database04 di server Server01.
+Perintah ini membuat database tanpa server bernama Database04 di server Server01.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoPauseDelayInMinutes
-Jeda otomatis dalam menit untuk database(hanya tanpa server), -1 untuk menolak
+Penundaan jeda otomatis dalam menit untuk database(tanpa server saja), -1 untuk menolak
 
 ```yaml
 Type: System.Int32
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupStorageRedundancy
-Kelebihan penyimpanan Cadangan digunakan untuk menyimpan cadangan untuk SQL Database. Opsinya adalah: Lokal, Zona dan Geo.
+Redundansi penyimpanan Cadangan digunakan untuk menyimpan cadangan untuk SQL Database. Opsinya adalah: Lokal, Zona dan Geo.
 
 ```yaml
 Type: System.String
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -CatalogCollation
-Menentukan nama katalog SQL database kami.
+Menentukan nama kolase katalog database SQL.
 
 ```yaml
 Type: System.String
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -CollationName
-Menentukan nama database SQL collation.
+Menentukan nama kolase database SQL.
 
 ```yaml
 Type: System.String
@@ -241,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeGeneration
-Pembuatan perhitungan untuk ditetapkan.
+Generasi komputasi untuk ditetapkan.
 
 ```yaml
 Type: System.String
@@ -256,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeModel
-Model perhitungan untuk database Azure Sql. Serverless or Provisioned
+Model komputasi untuk database Azure Sql. Tanpa Server atau Disediakan
 
 ```yaml
 Type: System.String
@@ -286,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -300,15 +303,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Edition
+### -Edisi
 Menentukan edisi untuk ditetapkan ke database. Nilai yang dapat diterima untuk parameter ini adalah:
-- Tidak ada
+- Tidak
 - Dasar
 - Standar
 - Premium
-- DataWarehouse
+- Gudang Data
 - Gratis
-- Regang
+- Stretch
 - GeneralPurpose
 - BusinessCritical
 
@@ -336,8 +339,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ElastisPoolName
-Menentukan nama kolam elastis tempat database diletakkan.
+### -ElasticPoolName
+Menentukan nama kumpulan elastis untuk meletakkan database.
 
 ```yaml
 Type: System.String
@@ -352,7 +355,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableLedger
-Membuat database ledger, yang integritas semua datanya dilindungi oleh fitur ledger. Semua tabel dalam database ledger harus menjadi tabel ledger. Catatan: nilai properti ini tidak dapat diubah setelah database dibuat.
+Membuat database buku besar, di mana integritas semua data dilindungi oleh fitur buku besar. Semua tabel dalam database buku besar harus berupa tabel buku besar. Catatan: nilai properti ini tidak dapat diubah setelah database dibuat.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -366,7 +369,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Lewati pesan konfirmasi untuk melakukan tindakan
 
 ```yaml
@@ -382,7 +385,7 @@ Accept wildcard characters: False
 ```
 
 ### -HighAvailabilityReplicaCount
-Jumlah replika sekunder baca saja yang terkait dengan database yang koneksi tujuan aplikasinya baca-saja mungkin dirutekan. Properti ini hanya dapat diatur untuk database edisi Hyperscale.
+Jumlah replika sekunder baca-saja yang terkait dengan database yang koneksi niat aplikasi baca-saja mungkin dirutekan. Properti ini hanya dapat diatur untuk database edisi Hyperscale.
 
 ```yaml
 Type: System.Int32
@@ -397,9 +400,9 @@ Accept wildcard characters: False
 ```
 
 ### -LicenseType
-Tipe lisensi untuk database Azure Sql. Nilai yang mungkin adalah:
-- BasePrice - Harga diskon Azure Hybrid Benefit (AHB) untuk pemilik SQL Server lisensi yang sudah ada diterapkan. Harga database akan didiskon untuk pemilik SQL Server lisensi yang sudah ada.
-- LicenseIncluded - Harga diskon Azure Hybrid Benefit (AHB) untuk pemilik SQL Server lisensi yang sudah ada tidak berlaku. Harga database akan menyertakan biaya SQL Server baru.
+Tipe lisensi untuk database Azure Sql. Nilai yang memungkinkan adalah:
+- Harga diskon BasePrice - Azure Hybrid Benefit (AHB) untuk pemilik lisensi SQL Server yang sudah ada diterapkan. Harga database akan didiskon untuk pemilik lisensi SQL Server yang sudah ada.
+- LicenseIncluded - Harga diskon Azure Hybrid Benefit (AHB) untuk pemilik lisensi SQL Server yang sudah ada tidak diterapkan. Harga database akan menyertakan biaya lisensi SQL Server baru.
 
 ```yaml
 Type: System.String
@@ -429,7 +432,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxSizeBytes
-Menentukan ukuran maksimal database dalam byte.
+Menentukan ukuran maksimum database dalam byte.
 
 ```yaml
 Type: System.Int64
@@ -444,7 +447,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinimumCapacity
-Kapasitas minimal yang akan selalu dialokasikan database, jika tidak dijeda.
+Kapasitas Minimal yang akan selalu dialokasikan database, jika tidak dijeda.
 Hanya untuk database Azure Sql tanpa server.
 
 ```yaml
@@ -460,7 +463,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReadScale
-Jika diaktifkan, koneksi yang memiliki maksud aplikasi yang diatur ke baca saja dalam string koneksinya mungkin dirutekan ke replika sekunder saja. Properti ini hanya dapat diatur untuk database Premium dan Kritis Bisnis.
+Jika diaktifkan, koneksi yang memiliki tujuan aplikasi diatur ke baca-sebelumnya dalam string koneksinya mungkin dirutekan ke replika sekunder baca-saja. Properti ini hanya dapat diatur untuk database Premium dan Kritis Bisnis.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Database.Model.DatabaseReadScale
@@ -506,7 +509,7 @@ Accept wildcard characters: False
 ```
 
 ### -SampleName
-Nama skema sampel yang akan diterapkan saat membuat database ini.
+Nama skema sampel untuk diterapkan saat membuat database ini.
 
 ```yaml
 Type: System.String
@@ -522,7 +525,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecondaryType
-Tipe database sekunder jika database sekunder.  Nilai yang valid adalah Geo dan Bernama.
+Tipe database sekunder jika merupakan tipe sekunder.  Nilai yang valid adalah Geo dan Bernama.
 
 ```yaml
 Type: System.String
@@ -538,7 +541,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server yang menjadi host database.
+Menentukan nama server yang menghosting database.
 
 ```yaml
 Type: System.String
@@ -552,8 +555,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Tag
-Menentukan kamus pasangan Nilai kunci dalam bentuk tabel hash yang terkait dengan database baru oleh cmdlet ini. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+### -Tags
+Menentukan kamus pasangan Nilai kunci dalam bentuk tabel hash yang dikaitkan cmdlet ini dengan database baru. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -583,7 +586,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneRedundant
-Kelebihan zona untuk dikaitkan dengan Database Azure Sql
+Redundansi zona untuk dikaitkan dengan Database Azure Sql
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -598,7 +601,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -614,7 +617,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -629,7 +632,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -657,5 +660,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Suspend-AzSqlDatabase](./Suspend-AzSqlDatabase.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 

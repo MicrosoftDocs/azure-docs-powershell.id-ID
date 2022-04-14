@@ -5,27 +5,30 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudServiceNetworkInterface.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudServiceNetworkInterface.md
-ms.openlocfilehash: 2bf2a5408a42adc628a79cffa6350cf434ff348e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 22e9a56960420b252da6dfe963e73caa85293986
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140382244"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141790322"
 ---
 # Get-AzCloudServiceNetworkInterface
 
 ## SYNOPSIS
-Dapatkan antarmuka jaringan tertentu di layanan awan.
+Dapatkan antarmuka jaringan yang ditentukan di layanan awan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/get-azcloudservicenetworkinterface) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Daftar1 (Default)
+### List1 (Default)
 ```
 Get-AzCloudServiceNetworkInterface -CloudServiceName <String> -ResourceGroupName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzCloudServiceNetworkInterface -CloudServiceName <String> -Name <String> -ResourceGroupName <String>
  -RoleInstanceName <String> [-SubscriptionId <String[]>] [-Expand <String>] [-DefaultProfile <PSObject>]
@@ -45,18 +48,18 @@ Get-AzCloudServiceNetworkInterface -CloudServiceName <String> -ResourceGroupName
 ```
 
 ## DESCRIPTION
-Dapatkan antarmuka jaringan tertentu di layanan awan.
+Dapatkan antarmuka jaringan yang ditentukan di layanan awan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan antarmuka jaringan dengan nama layanan cloud
+### Contoh 1: Mendapatkan antarmuka jaringan dengan nama layanan awan
 ```powershell
 Get-AzCloudServiceNetworkInterface -ResourceGroupName "BRGThree" -CloudServiceName BService -SubscriptionId 1133e0eb-b53c-1234-b478-2eac8f04afca
 ```
 
 Mendapatkan semua antarmuka jaringan untuk nama layanan awan tertentu.
 
-### Contoh 2: Dapatkan antarmuka jaringan dengan objek layanan awan
+### Contoh 2: Mendapatkan antarmuka jaringan menurut objek layanan awan
 ```powershell
 $cs = Get-AzCloudService -ResourceGroupName "BRGThree" -CloudServiceName BService -SubscriptionId 1133e0eb-b53c-1234-b478-2eac8f04afca
 Get-AzCloudServiceNetworkInterface -CloudService $cs
@@ -64,12 +67,12 @@ Get-AzCloudServiceNetworkInterface -CloudService $cs
 
 Mendapatkan semua antarmuka jaringan untuk objek layanan awan tertentu.
 
-### Contoh 3: Dapatkan antarmuka jaringan dengan objek layanan cloud dan nama contoh peran.
+### Contoh 3: Dapatkan antarmuka jaringan menurut objek layanan awan dan nama contoh peran.
 ```powershell
 Get-AzCloudServiceNetworkInterface -CloudServiceName $cs -RoleInstanceName WebRole1_IN_0
 ```
 
-Mendapatkan semua antarmuka jaringan untuk objek layanan awan dan nama contoh peran yang diberikan.
+Mendapatkan semua antarmuka jaringan untuk objek layanan awan dan nama contoh peran tertentu.
 
 ## PARAMETERS
 
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Perluas
-Memperluas sumber daya yang direferensikan.
+Memperluas sumber daya yang dirujuk.
 
 ```yaml
 Type: System.String
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.ICloudServiceIdentity
@@ -179,8 +182,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -218,7 +221,7 @@ INPUTOBJECT <ICloudServiceIdentity>: Parameter Identitas
   - `[CloudServiceName <String>]`: 
   - `[IPConfigurationName <String>]`: Nama konfigurasi IP.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: Nama lokasi yang terkait dengan versi OS.
+  - `[Location <String>]`: Nama lokasi yang berkaitan dengan versi OS.
   - `[NetworkInterfaceName <String>]`: Nama antarmuka jaringan.
   - `[OSFamilyName <String>]`: Nama keluarga OS.
   - `[OSVersionName <String>]`: Nama versi OS.
@@ -226,8 +229,8 @@ INPUTOBJECT <ICloudServiceIdentity>: Parameter Identitas
   - `[ResourceGroupName <String>]`: 
   - `[RoleInstanceName <String>]`: Nama contoh peran.
   - `[RoleName <String>]`: Nama peran.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
-  - `[UpdateDomain <Int32?>]`: Menentukan nilai bilangan bulat yang mengidentifikasi domain pembaruan. Update domains are identified with a zero-based index: the first update domain has an ID of 0, the second has an ID of 1, and so on.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+  - `[UpdateDomain <Int32?>]`: Menentukan nilai bilangan bulat yang mengidentifikasi domain pembaruan. Perbarui domain diidentifikasi dengan indeks berbasis nol: domain pembaruan pertama memiliki ID 0, yang kedua memiliki ID 1, dan seterunya.
 
 ## RELATED LINKS
 

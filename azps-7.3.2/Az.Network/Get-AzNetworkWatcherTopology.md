@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherTopology.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherTopology.md
-ms.openlocfilehash: 91bf062a5420f054d25790f55f087aa626c692d8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e9fb8c2fa683fc1ae44a556b0d3fa28e1d66db82
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140185928"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141786884"
 ---
 # Get-AzNetworkWatcherTopology
 
 ## SYNOPSIS
-Mendapatkan tampilan tingkat jaringan sumber daya dan hubungannya di grup sumber daya.
+Mendapatkan tampilan tingkat jaringan sumber daya dan hubungannya dalam grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkwatchertopology) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzNetworkWatcherTopology -Location <String> -TargetResourceGroupName <String
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzNetworkWatcherTopology cmdlet tingkat jaringan dan hubungannya dalam grup sumber daya. Catatan: Jika sumber daya dari beberapa kawasan berada dalam grup sumber daya, hanya sumber daya di kawasan yang sama dengan Pengawas Jaringan yang akan disertakan dalam output JSON.
+Cmdlet Get-AzNetworkWatcherTopology tampilan tingkat jaringan sumber daya dan hubungannya dalam grup sumber daya. Catatan: Jika sumber daya dari beberapa kawasan berada di grup sumber daya, hanya sumber daya di kawasan yang sama dengan Network Watcher yang akan disertakan dalam output JSON.
 
 ## EXAMPLES
 
@@ -140,12 +143,12 @@ TopologyResources : [
                     ]
 ```
 
-Dalam contoh ini, kami Get-AzNetworkWatcherTopology cmdlet pada grup sumber daya yang berisi VM, Nic, NSG, dan IP publik.
+Dalam contoh ini, kami menjalankan cmdlet Get-AzNetworkWatcherTopology pada grup sumber daya yang berisi VM, Nic, NSG, dan IP publik.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengawas jaringan.
+Sumber daya pengamat jaringan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -248,7 +251,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSTopology
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, network, networking, network watcher, topology, view 
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, topologi, melihat 
 
 ## RELATED LINKS
 
@@ -256,7 +259,7 @@ Kata kunci: azure, azurerm, arm, resource, management, manager, network, network
 
 [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md)
 
-[Remove-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
+[Hapus-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
 
 [Get-AzNetworkWatcherNextHop](./Get-AzNetworkWatcherNextHop.md)
 
@@ -296,9 +299,9 @@ Kata kunci: azure, azurerm, arm, resource, management, manager, network, network
 
 [Get-AzNetworkWatcherTroubleshootingResult](./Get-AzNetworkWatcherTroubleshootingResult.md)
 
-[Get-AzNetworkWatcherReachabilityReport](./Get-AzNetworkWatcherReachabilityReport.md)
+[Get-AzNetworkWatcherReacherReportability](./Get-AzNetworkWatcherReachabilityReport.md)
 
-[Get-AzNetworkWatcherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
+[Get-AzNetworkWatcherReacherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
 
 [Get-AzNetworkWatcherFlowLogStatus](./Get-AzNetworkWatcherFlowLogStatus.md)
 

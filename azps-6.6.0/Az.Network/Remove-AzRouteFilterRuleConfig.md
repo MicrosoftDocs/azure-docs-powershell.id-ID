@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzRouteFilterRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzRouteFilterRuleConfig.md
 ms.openlocfilehash: c79c5bba835cb3993da1661cf9b27c54e386e7f2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140069849"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141799160"
 ---
 # Remove-AzRouteFilterRuleConfig
 
@@ -18,7 +18,7 @@ ms.locfileid: "140069849"
 Menghapus aturan filter rute dari filter rute.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azroutefilterruleconfig) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azroutefilterruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,13 +38,13 @@ PS C:\> $rf = Get-AzRouteFilter -Name "RouteFilter01" -ResourceGroupName "Resour
 PS C:\> Remove-AzRouteFilterRuleConfig -RouteFilter $rf -Name "Rule01"
 ```
 
-Perintah pertama mendapatkan filter rute bernama RouteFilter01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01 dan menyimpannya dalam $rf sumber daya.
+Perintah pertama mendapatkan filter rute bernama RouteFilter01 milik grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $rf.
 Perintah kedua menghapus aturan filter rute bernama Rule01 dari filter rute yang disimpan di $rf.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -58,8 +58,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi jika Anda ingin menimpa sumber daya
+### -Paksa
+Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -158,8 +158,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzRouteFilter](./Get-AzRouteFilter.md)
 
-[New-AzRouteFilter](./New-AzRouteFilter.md)
+[Filter AzRoute Baru](./New-AzRouteFilter.md)
 
-[Remove-AzRouteFilter](./Remove-AzRouteFilter.md)
+[Hapus-AzRouteFilter](./Remove-AzRouteFilter.md)
 
 [Set-AzRouteFilter](./Set-AzRouteFilter.md)

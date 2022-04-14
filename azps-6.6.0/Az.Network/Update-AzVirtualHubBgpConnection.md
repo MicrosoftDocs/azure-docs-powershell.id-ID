@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVirtualHubBgpConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVirtualHubBgpConnection.md
 ms.openlocfilehash: 88176a406a8c0f49ef204173179f651bf28a50e9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140101133"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141862538"
 ---
 # Update-AzVirtualHubBgpConnection
 
 ## SYNOPSIS
-Cmdlet Update-AzVirtualHubBgpConnection memperbarui sumber daya HubBgpConnection yang sudah ada (Koneksi BGP Virtual WAN Hub).
+Cmdlet Update-AzVirtualHubBgpConnection memperbarui sumber daya HubBgpConnection yang sudah ada (Virtual WAN Hub BGP Connection).
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/update-azvirtualhubbgpconnection) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azvirtualhubbgpconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -87,7 +87,7 @@ Update-AzVirtualHubBgpConnection [-PeerIp <String>] [-PeerAsn <UInt32>]
 ```
 
 ## DESCRIPTION
-Cmdlet Update-AzVirtualHubBgpConnection memperbarui sumber daya HubBgpConnection yang sudah ada (Koneksi BGP Virtual WAN Hub).
+Cmdlet Update-AzVirtualHubBgpConnection memperbarui sumber daya HubBgpConnection yang sudah ada (Virtual WAN Hub BGP Connection).
 
 ## EXAMPLES
 
@@ -110,12 +110,12 @@ PeerAsn                     : 20000
 PeerIp                      : 192.168.1.6
 ```
 
-Opsi di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual WAN Hub di AS Barat dan menyambungkan Virtual Network ke Virtual WAN Hub di grup sumber daya tersebut di Azure. Koneksi BGP Virtual WAN Hub akan dibuat setelah itu, yang akan membuat Virtual WAN Hub dengan peralatan jaringan yang digunakan di Jaringan Virtual. Koneksi BGP Virtual WAN Hub ini kemudian diperbarui agar memiliki IP Peer berbeda.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual WAN Hub di AS Barat dan menyambungkan Virtual Network ke hub Virtual WAN dalam grup sumber daya tersebut di Azure. Koneksi BGP Hub Virtual WAN akan dibuat setelahnya yang akan mengintip Hub Virtual WAN dengan peralatan jaringan yang digunakan di Virtual Network. Koneksi BGP Hub Virtual WAN ini kemudian diperbarui agar memiliki IP Peer yang berbeda.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeerAsn
-ASN peer.
+ASN rekan.
 
 ```yaml
 Type: System.UInt32
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeerIp
-IP peer.
+IP rekan.
 
 ```yaml
 Type: System.String
@@ -288,8 +288,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -VirtualHubvnetConnection
-Sumber daya VirtualHubvnetConnection.
+### -VirtualHubVnetConnection
+Sumber daya VirtualHubVnetConnection.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSHubVirtualNetworkConnection
@@ -315,7 +315,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -VirtualHubvnetConnectionId
+### -VirtualHubVnetConnectionId
 Id sumber daya VirtualHubVnetConnection.
 
 ```yaml
@@ -343,7 +343,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -359,7 +359,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -374,7 +374,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

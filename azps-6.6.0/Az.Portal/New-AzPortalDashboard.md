@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Portal/help/New-AzPortalDashboard.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Portal/help/New-AzPortalDashboard.md
 ms.openlocfilehash: 72d3b88bc28fce83f5f09e1a26255b8d017e649e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140100485"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141862124"
 ---
 # New-AzPortalDashboard
 
@@ -18,7 +18,7 @@ ms.locfileid: "140100485"
 Membuat atau memperbarui Dasbor.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.portal/new-azportaldashboard) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.portal/new-azportaldashboard) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-AzPortalDashboard -Name <String> -ResourceGroupName <String> -Location <Stri
  [-WhatIf] [<CommonParameters>]
 ```
 
-### Buat
+### Membuat
 ```
 New-AzPortalDashboard -Name <String> -ResourceGroupName <String> -Dashboard <IDashboard>
  [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
@@ -59,9 +59,9 @@ Buat dasbor baru menggunakan file templat dasbor yang disediakan.
 
 ## PARAMETERS
 
-### -Dashboard
-Definisi sumber daya dasbor yang dibagikan.
-Untuk membuat, lihat bagian CATATAN untuk properti DASBOR dan membuat tabel hash.
+### -Dasbor
+Definisi sumber daya dasbor bersama.
+Untuk membangun, lihat bagian CATATAN untuk properti DASBOR dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Portal.Models.Api201901Preview.IDashboard
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -DashboardPath
-Templat Jalur ke dasbor yang sudah ada.
+Jalur ke templat dasbor yang sudah ada.
 Templat dasbor mungkin diunduh dari portal.
 
 ```yaml
@@ -106,8 +106,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lens
-Dasbor lenses.
+### -Lensa
+Lensa dasbor.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 ID langganan Azure.
-Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-00000000000)
+Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
 
 ```yaml
 Type: System.String
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -263,9 +263,9 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-DASBOR <IDashboard>: Definisi sumber daya dasbor yang dibagikan.
+DASBOR <IDashboard>: Definisi sumber daya dasbor bersama.
   - `Location <String>`: Lokasi sumber daya
-  - `[Lens <IDashboardPropertiesLenses>]`: Dasbor lenses.
+  - `[Lens <IDashboardPropertiesLenses>]`: Lensa dasbor.
     - `[(Any) <IDashboardLens>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
   - `[Metadata <IDashboardPropertiesMetadata>]`: Metadata dasbor.
     - `[(Any) <Object>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.

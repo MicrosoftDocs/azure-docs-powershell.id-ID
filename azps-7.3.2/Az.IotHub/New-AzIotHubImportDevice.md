@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/new-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/New-AzIotHubImportDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/New-AzIotHubImportDevice.md
-ms.openlocfilehash: 2c31d4773ca98b560683292819867e47fcf71088
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3247c6198104acaf10003f542ead38d16df5e055
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140393963"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142069375"
 ---
 # New-AzIotHubImportDevice
 
 ## SYNOPSIS
 Membuat pekerjaan perangkat impor baru.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/new-aziothubimportdevice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzIotHubImportDevice [-ResourceGroupName] <String> [-Name] <String> [-InputB
 
 ## DESCRIPTION
 Membuat pekerjaan perangkat impor baru untuk IotHub.
-Ini akan mengimpor semua perangkat ke IotHub dari wadah yang ditentukan. Lihat artikel berikut tentang cara menghasilkan URI SAS.
+Tindakan ini akan mengimpor semua perangkat ke IotHub dari kontainer yang ditentukan. Lihat artikel berikut tentang cara menghasilkan URI SAS.
 https://docs.microsoft.com/azure/iot-hub/iot-hub-bulk-identity-mgmt#get-the-container-sas-uri .
 
 ## EXAMPLES
@@ -37,12 +40,12 @@ https://docs.microsoft.com/azure/iot-hub/iot-hub-bulk-identity-mgmt#get-the-cont
 PS C:\> New-AzIotHubImportDevice -ResourceGroupName "myresourcegroup" -Name "myiothub" -InputBlobContainerUri "https://mystorageaccount.blob.core.windows.net/mystoragecontainer?sv=2015-04-05&ss=bfqt&sr=c&srt=sco&sp=rwdl&se=2016-10-27T04:01:48Z&st=2016-10-26T20:01:48Z&spr=https&sig=QqpIhHsIMF8hNuFO%3D" -OutputBlobContainerUri "https://mystorageaccount.blob.core.windows.net/?sv=2015-04-05&ss=bfqt&sr=c&srt=sco&sp=rwdl&se=2016-10-27T04:01:48Z&st=2016-10-26T20:01:48Z&spr=https&sig=QqpIhHsIMF8hNuFO%3D"
 ```
 
-Membuat permintaan perangkat impor baru untuk "myiothub" IotHub.
+Membuat permintaan perangkat impor baru untuk IotHub "myiothub".
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -OutputBlobContainerUri
-Uri untuk menulis outputnya. 
+Uri untuk menulis output. 
 
 ```yaml
 Type: System.String
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

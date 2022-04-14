@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.hdins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Get-AzureRmHDInsightScriptActionHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Get-AzureRmHDInsightScriptActionHistory.md
-ms.openlocfilehash: e27fb912cc2c3966c51ed328cb8c8cd170c4338ec031d7b8f6de197484a3ef85
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: cadedd6441d45065344d2bf1998552b693a01301
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140854812"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141884706"
 ---
 # Get-AzureRmHDInsightScriptActionHistory
 
@@ -32,12 +32,12 @@ Cmdlet **Get-AzureRmHDInsightScriptActionHistory** mendapatkan riwayat tindakan 
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan riwayat eksekusi tindakan skrip untuk kluster
+### Contoh 1: Dapatkan riwayat eksekusi tindakan skrip untuk kluster
 ```
 PS C:\>Get-AzureRmHDInsightScriptActionHistory -ClusterName "your-hadoop-001"
 ```
 
-Perintah ini mendapatkan riwayat tindakan skrip untuk kluster your-hadoop-001.
+Perintah ini mendapatkan riwayat tindakan skrip untuk cluster your-hadoop-001.
 
 ## PARAMETERS
 
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScriptExecutionId
-Menentukan ID eksekusi tindakan skrip yang dijalankan.
+Menentukan ID eksekusi aksi skrip yang dijalankan.
 
 ```yaml
 Type: System.Nullable`1[System.Int64]
@@ -102,11 +102,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

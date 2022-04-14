@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualHubRouteTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualHubRouteTable.md
 ms.openlocfilehash: beb88fd99a1f27940638e1b00bfa034b557214c7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140281543"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141799717"
 ---
 # New-AzVirtualHubRouteTable
 
@@ -18,7 +18,7 @@ ms.locfileid: "140281543"
 Membuat objek Azure Virtual Hub Route Table.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azvirtualhubroutetable) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvirtualhubroutetable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,9 +54,9 @@ Type                      : Microsoft.Network/virtualHubs
 ProvisioningState         : Succeeded
 ```
 
-Tabel rute di atas akan dibuat yang terdiri dari beberapa rute dan dilampirkan ke hub virtual baru.
+Tabel di atas akan membuat tabel rute yang terdiri dari beberapa rute dan dilampirkan ke hub virtual baru.
 
-Ini adalah objek dalam memori yang dapat digunakan untuk menambahkan tabel Route ke VirtualHub baru atau yang sudah ada.
+Ini adalah objek dalam memori yang dapat digunakan untuk menambahkan tabel Rute ke VirtualHub baru atau yang sudah ada.
 
 ## PARAMETERS
 
@@ -75,7 +75,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Route
+### -Rute
 Daftar rute hub virtual.
 
 ```yaml
@@ -91,11 +91,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

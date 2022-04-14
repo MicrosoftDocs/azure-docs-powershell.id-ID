@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/New-AzureRmSqlSyncMember.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/New-AzureRmSqlSyncMember.md
 ms.openlocfilehash: 783c3278afd9b4e0e9086323b1cc32f1720c6b1f
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423267"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141774540"
 ---
 # New-AzureRmSqlSyncMember
 
 ## SYNOPSIS
-Membuat Azure SQL Database Sinkronisasi Klien.
+Membuat Anggota Sinkronisasi Azure SQL Database.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -46,11 +46,11 @@ New-AzureRmSqlSyncMember -Name <String> -MemberDatabaseType <String> -SqlServerD
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmSqlSyncMember** membuat Azure SQL Database Anggota Sinkronisasi.
+Cmdlet **New-AzureRmSqlSyncMember** membuat Anggota Sinkronisasi Azure SQL Database.
 
 ## EXAMPLES
 
-### Contoh 1: Buat anggota sinkronisasi untuk database Azure SQL baru.
+### Contoh 1: Membuat anggota sinkronisasi untuk database Azure SQL.
 ```
 PS C:\> $credential = Get-Credential
 PS C:\> New-AzureRmSqlSyncMember -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -SyncGroupName "SyncGroup01" -Name "SyncMember01" -SyncDirection "OneWayMemberToHub"
@@ -74,7 +74,7 @@ SyncState                   : UnProvisioned
 
 Perintah ini membuat anggota sinkronisasi untuk database Azure SQL.
 
-### Contoh 2: Buat anggota sinkronisasi untuk database SQL Server lokal
+### Contoh 2: Membuat anggota sinkronisasi untuk database SQL Server lokal
 ```
 PS C:\> $credential = Get-Credential
 PS C:\> New-AzureRmSqlSyncMember -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -SyncGroupName "SyncGroup01" -Name "SyncMember01" -SyncDirection "OneWayMemberToHub"
@@ -102,7 +102,7 @@ Perintah ini membuat anggota sinkronisasi untuk database SQL lokal.
 ## PARAMETERS
 
 ### -DatabaseName
-Nama nama Azure SQL Database.
+Nama Azure SQL Database.
 
 ```yaml
 Type: System.String
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -MemberDatabaseType
-Tipe database dari database anggota.
+Tipe database database anggota.
 
 ```yaml
 Type: System.String
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -MemberServerName
-Database Azure SQL Server Nama anggota.
+Nama Server Azure SQL database anggota.
 
 ```yaml
 Type: System.String
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama Azure SQL Server.
+Nama Server Azure SQL.
 
 ```yaml
 Type: System.String
@@ -268,7 +268,7 @@ Accept wildcard characters: False
 ```
 
 ### -SyncAgentResourceGroupName
-Nama grup sumber daya tempat agen sinkronisasi berada.
+Nama grup sumber daya di mana agen sinkronisasi berada di bawahnya.
 
 ```yaml
 Type: System.String
@@ -298,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### -SyncAgentServerName
-Nama azure SQL Server tempat agen sinkronisasi berada.
+Nama Server Azure SQL tempat agen sinkronisasi berada.
 
 ```yaml
 Type: System.String
@@ -344,7 +344,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -360,7 +360,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -375,7 +375,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -392,5 +392,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 [Get-AzureRmSqlSyncMember](./Get-AzureRmSqlSyncMember.md)
 
 
-[Remove-AzureRmSqlSyncMember](./Remove-AzureRmSqlSyncMember.md)
+[Hapus-AzureRmSqlSyncMember](./Remove-AzureRmSqlSyncMember.md)
 

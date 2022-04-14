@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Set-AzureRmSqlDatabaseAuditingPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Set-AzureRmSqlDatabaseAuditingPolicy.md
 ms.openlocfilehash: a9f0f2e478e94b45349efe85c6de643b5003a361
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420295"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141774040"
 ---
 # Set-AzureRmSqlDatabaseAuditingPolicy
 
@@ -31,52 +31,52 @@ Set-AzureRmSqlDatabaseAuditingPolicy [-AuditType <AuditType>] [-PassThru]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmSqlDatabaseAuditingPolicy** mengubah kebijakan audit database Azure SQL.
+Cmdlet **Set-AzureRmSqlDatabaseAuditingPolicy** mengubah kebijakan pengauditan database Azure SQL.
 Untuk menggunakan cmdlet, gunakan parameter *ResourceGroupName*, *ServerName*, dan *DatabaseName* untuk mengidentifikasi database.
-Tentukan parameter *StorageAccountName* untuk menentukan akun penyimpanan bagi log audit dan parameter *StorageKeyType* untuk menentukan kunci penyimpanan.
-Anda juga dapat menentukan penyimpanan untuk tabel log audit dengan mengatur nilai parameter *RetentionInDays* dan *TableIdentifier* untuk menentukan periode dan nilai awal untuk nama tabel log audit.
+Tentukan parameter *StorageAccountName* untuk menentukan akun penyimpanan untuk log audit dan parameter *StorageKeyType* untuk menentukan kunci penyimpanan.
+Anda juga bisa menentukan retensi untuk tabel log audit dengan mengatur nilai parameter *RetentionInDays* dan *TableIdentifier* untuk menentukan titik dan seed untuk nama tabel log audit.
 Tentukan parameter *EventType* untuk menentukan tipe kejadian mana yang akan diaudit.
-Setelah cmdlet berhasil dijalankan, pengauditan database akan diaktifkan.
-Untuk Pengauditan Tabel, jika database menggunakan kebijakan servernya untuk pengauditan sebelum cmdlet ini berjalan, pengauditan akan berhenti menggunakan kebijakan tersebut. For Blob Auditing, if the database used the policy of its server for auditing before you ran this cmdlet, both auditing policies will exist side-by-side.
-Jika cmdlet berhasil dan Anda menggunakan parameter *PassThru,* objek tersebut akan mengembalikan objek yang menguraikan kebijakan audit saat ini selain pengidentifikasi database.
+Setelah cmdlet berjalan dengan sukses, pengauditan database diaktifkan.
+Untuk Pengaudungan Tabel, jika database menggunakan kebijakan servernya untuk diaudit sebelum Anda menjalankan cmdlet ini, pengauditan berhenti menggunakan kebijakan tersebut. Untuk Audit Blob, jika database menggunakan kebijakan servernya untuk diaudit sebelum Anda menjalankan cmdlet ini, kedua kebijakan pengauditan akan ada secara berdampingan.
+Jika cmdlet berhasil dan Anda menggunakan parameter *PassThru* , cmdlet mengembalikan objek yang menjelaskan kebijakan audit saat ini selain pengidentifikasi database.
 Pengidentifikasi database menyertakan, tetapi tidak terbatas pada, **ResourceGroupName**, **ServerName**, dan **DatabaseName**.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur kebijakan pengauditan database untuk menggunakan pengauditan Tabel
+### Contoh 1: Mengatur kebijakan audit database untuk menggunakan Pengauditan tabel
 ```
 PS C:\>Set-AzureRmSqlDatabaseAuditingPolicy -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -AuditType Table -StorageAccountName "Storage31"
 ```
 
-Perintah ini mengatur kebijakan pengauditan database bernama Database01 yang terletak di Server01 untuk menggunakan akun penyimpanan yang bernama Storage31.
+Perintah ini mengatur kebijakan audit database bernama Database01 yang terletak di Server01 untuk menggunakan akun penyimpanan bernama Storage31.
 
-### Contoh 2: Mengatur kunci akun penyimpanan dari kebijakan audit database yang sudah ada
+### Contoh 2: Mengatur kunci akun penyimpanan dari kebijakan pengauditan database yang sudah ada
 ```
 PS C:\>Set-AzureRmSqlDatabaseAuditingPolicy -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -StorageAccountKey Secondary
 ```
 
-Perintah ini mengatur kebijakan pengauditan database bernama Database01 yang terletak di Server01 untuk terus menggunakan nama akun penyimpanan yang sama tetapi sekarang menggunakan kunci sekunder.
+Perintah ini mengatur kebijakan pengaudungan database bernama Database01 yang terletak di Server01 agar tetap menggunakan nama akun penyimpanan yang sama tetapi sekarang menggunakan kunci sekunder.
 
-### Contoh 3: Mengatur kebijakan pengauditan database untuk menggunakan tipe kejadian tertentu
+### Contoh 3: Mengatur kebijakan audit database untuk menggunakan tipe kejadian tertentu
 ```
 PS C:\>Set-AzureRmSqlDatabaseAuditingPolicy -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -EventType Login_Failure
 ```
 
-### Contoh 4: Mengatur kebijakan audit database untuk menggunakan pengauditan Blob
+### Contoh 4: Mengatur kebijakan audit database agar menggunakan audit Blob
 ```
 PS C:\>Set-AzureRmSqlDatabaseAuditingPolicy -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -AuditType Blob -StorageAccountName "Storage31" -AuditActionGroup "SUCCESSFUL_DATABASE_AUTHENTICATION_GROUP", "FAILED_DATABASE_AUTHENTICATION_GROUP" -AuditAction "UPDATE ON database::[Database01] BY [public]"  -RetentionInDays 8
 ```
 
-Perintah ini mengatur kebijakan pengauditan database bernama Database01 yang terletak di Server01.
-Log kebijakan tipe Login_Failure kejadian.
+Perintah ini mengatur kebijakan pengaudungan database bernama Database01 yang terletak di Server01.
+Kebijakan mencatat tipe kejadian Login_Failure.
 Perintah tidak mengubah pengaturan penyimpanan.
 
 ## PARAMETERS
 
 ### -AuditAction
 Tentukan satu atau beberapa tindakan audit.
-Parameter ini hanya berlaku untuk pengauditan Blob.
+Parameter ini hanya berlaku untuk audit Blob.
 
 ```yaml
 Type: System.String[]
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 
 ### -AuditActionGroup
 Tentukan satu atau beberapa grup tindakan audit.
-Parameter ini hanya berlaku untuk pengauditan Blob.
+Parameter ini hanya berlaku untuk audit Blob.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Auditing.Model.AuditActionGroups[]
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -152,10 +152,10 @@ Accept wildcard characters: False
 ```
 
 ### -EventType
-Menentukan tipe kejadian yang akan diaudit.
-Parameter ini hanya berlaku untuk Pengauditan Tabel.
-Anda dapat menentukan beberapa tipe kejadian.
-You can specify All to audit all of the event types or None to specify that no events will be audited.
+Menentukan tipe kejadian untuk diaudit.
+Parameter ini hanya berlaku untuk pengauditan Tabel.
+Anda dapat menentukan beberapa tipe acara.
+Anda bisa menentukan Semua untuk mengaudit semua tipe kejadian atau Tidak Ada untuk menentukan bahwa tidak ada kejadian yang akan diaudit.
 Jika Anda menentukan Semua atau Tidak Ada pada saat yang sama, cmdlet tidak berjalan.
 
 ```yaml
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -205,8 +205,8 @@ Accept wildcard characters: False
 ### -RetentionInDays
 Menentukan jumlah hari penyimpanan untuk tabel log audit.
 Nilai nol (0) berarti bahwa tabel tidak dipertahankan.
-Nilai default adalah nol.
-Jika Anda menentukan nilai yang lebih besar dari nol, Anda harus menentukan nilai untuk parameter *TableIdentifer.*
+Nilai defaultnya adalah nol.
+Jika menentukan nilai yang lebih besar dari nol, Anda harus menentukan nilai untuk parameter *TableIdentifer* .
 
 ```yaml
 Type: System.Nullable`1[System.UInt32]
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server yang menjadi host database.
+Menentukan nama server yang menghosting database.
 
 ```yaml
 Type: System.String
@@ -236,11 +236,11 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Menentukan nama akun penyimpanan untuk pengauditan database.
+Menentukan nama akun penyimpanan untuk mengaudit database.
 Karakter wildcard tidak diizinkan.
 Parameter ini tidak diperlukan.
-Jika Anda tidak menentukan parameter ini, cmdlet menggunakan akun penyimpanan yang sebelumnya ditetapkan sebagai bagian dari kebijakan audit database.
-Jika ini adalah kali pertama kebijakan pengauditan database ditentukan dan Anda tidak menentukan parameter ini, cmdlet akan gagal.
+Jika Anda tidak menentukan parameter ini, cmdlet menggunakan akun penyimpanan yang ditetapkan sebelumnya sebagai bagian dari kebijakan pengauditan database.
+Jika ini pertama kalinya kebijakan audit database ditetapkan dan Anda tidak menentukan parameter ini, cmdlet gagal.
 
 ```yaml
 Type: System.String
@@ -275,7 +275,7 @@ Accept wildcard characters: False
 
 ### -TableIdentifier
 Menentukan nama tabel log audit.
-Tentukan nilai ini jika Anda menentukan nilai yang lebih besar dari nol untuk parameter *RetentionInDays.*
+Tentukan nilai ini jika Anda menentukan nilai yang lebih besar dari nol untuk parameter *RetentionInDays* .
 
 ```yaml
 Type: System.String
@@ -290,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -306,7 +306,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -321,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -333,7 +333,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Nullable'1[[System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.UInt32, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 
@@ -345,8 +345,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmSqlDatabaseAuditingPolicy](./Get-AzureRmSqlDatabaseAuditingPolicy.md)
 
-[Remove-AzureRmSqlDatabaseAuditing](./Remove-AzureRmSqlDatabaseAuditing.md)
+[Hapus-AzureRmSqlDatabaseAuditing](./Remove-AzureRmSqlDatabaseAuditing.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 
 

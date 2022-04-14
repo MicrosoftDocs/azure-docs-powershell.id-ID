@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlConflictResolutionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlConflictResolutionPolicy.md
-ms.openlocfilehash: d9ce270ca679485ce1a340322cc59e110af52d75
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e34fe9d3ed5ac2d7b21ed2118753e0b908a6411c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140187945"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141789548"
 ---
 # New-AzCosmosDBSqlConflictResolutionPolicy
 
 ## SYNOPSIS
-Membuat objek baru dengan tipe PSSqlConflictResolutionPolicy. Data ini bisa disampaikan sebagai nilai parameter untuk Set-AzCosmosDBSqlContainer.
+Membuat objek baru dari tipe PSSqlConflictResolutionPolicy. Ini dapat dilewatkan sebagai nilai parameter untuk Set-AzCosmosDBSqlContainer.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbsqlconflictresolutionpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ LastWriterWins /myPath
 ## PARAMETERS
 
 ### -ConflictResolutionProcedure
-Dapat disediakan ketika tipe berjenis kustom.
+Untuk disediakan saat tipenya adalah kustom.
 
 ```yaml
 Type: System.String
@@ -70,8 +73,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Untuk disediakan saat tipe ini adalah LastWriterWins.
+### -Jalur
+Untuk disediakan ketika tipenya adalah LastWriterWins.
 
 ```yaml
 Type: System.String
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Dapat memiliki nilai: LastWriterWins, Custom, Manual.
+Dapat memiliki nilai: LastWriterWins, Kustom, Manual.
 
 ```yaml
 Type: System.String
@@ -101,11 +104,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

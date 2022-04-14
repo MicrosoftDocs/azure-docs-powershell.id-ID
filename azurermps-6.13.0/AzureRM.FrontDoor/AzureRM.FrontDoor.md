@@ -6,16 +6,16 @@ Help Version: 0.1.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/FrontDoor/Commands.FrontDoor/help/AzureRM.FrontDoor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/FrontDoor/Commands.FrontDoor/help/AzureRM.FrontDoor.md
-ms.openlocfilehash: cbbcb871a6db5ff7d00d3ea0acb703508ca1d89576e4fa701841f12b20154b62
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: d88f4b695bf8a1524c761e2d9cf3ac4787da78fd
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132417335"
 ---
 # Modul AzureRM.FrontDoor
 ## Deskripsi
-Topik dalam bagian ini mendokumentasikan Azure PowerShell cmdlet untuk Azure Front Door Service dalam kerangka kerja Azure Resource Manager (ARM). Cmdlet ada di ruang nama Microsoft.Azure.Commands.FrontDoor.
+Topik di bagian ini mendokumentasikan cmdlet Azure PowerShell untuk Azure Front Door Service dalam kerangka kerja Azure Resource Manager (ARM). Cmdlet ada di ruang nama Microsoft.Azure.Commands.FrontDoor.
 
 ## Cmdlet AzureRM.FrontDoor
 ### [Get-AzureRmFrontDoor](Get-AzureRmFrontDoor.md)
@@ -24,50 +24,50 @@ Dapatkan penyeimbang muat Pintu Depan
 ### [Get-AzureRmFrontDoorFireWallPolicy](Get-AzureRmFrontDoorFireWallPolicy.md)
 Dapatkan kebijakan WAF
 
-### [New-AzureRmFrontDoor](New-AzureRmFrontDoor.md)
-Membuat penyeimbang muat Pintu Depan Azure baru
+### [AzureRmFrontDoor Baru](New-AzureRmFrontDoor.md)
+Membuat penyeimbang muat Azure Front Door baru
 
-### [New-AzureRmFrontDoorBackendObject](New-AzureRmFrontDoorBackendObject.md)
+### [Baru-AzureRmFrontDoorBackendObject](New-AzureRmFrontDoorBackendObject.md)
 Membuat objek PSBackend
 
-### [New-AzureRmFrontDoorBackendPoolObject](New-AzureRmFrontDoorBackendPoolObject.md)
+### [Baru-AzureRmFrontDoorBackendPoolObject](New-AzureRmFrontDoorBackendPoolObject.md)
 Membuat objek PSBackendPool untuk pembuatan Pintu Depan
 
 ### [New-AzureRmFrontDoorCustomRuleObject](New-AzureRmFrontDoorCustomRuleObject.md)
-Membuat Objek CustomRule untuk pembuatan kebijakan WAF
+Buat Objek CustomRule untuk pembuatan kebijakan WAF
 
 ### [New-AzureRmFrontDoorFireWallPolicy](New-AzureRmFrontDoorFireWallPolicy.md)
-Membuat kebijakan WAF
+Buat kebijakan WAF
 
-### [New-AzureRmFrontDoorFrontendEndpointObject](New-AzureRmFrontDoorFrontendEndpointObject.md)
-Membuat Objek PSFrontendEndpoint untuk pembuatan Pintu Depan
+### [Baru-AzureRmFrontDoorFrontendPointObject](New-AzureRmFrontDoorFrontendEndpointObject.md)
+Membuat Objek PSFrontendPoint untuk pembuatan Pintu Depan
 
-### [New-AzureRmFrontDoorHealthProbeSettingObject](New-AzureRmFrontDoorHealthProbeSettingObject.md)
+### [Baru-AzureRmFrontDoorHealthProbeSettingObject](New-AzureRmFrontDoorHealthProbeSettingObject.md)
 Membuat objek PSHealthProbeSetting untuk pembuatan Pintu Depan
 
 ### [New-AzureRmFrontDoorLoadBalancingSettingObject](New-AzureRmFrontDoorLoadBalancingSettingObject.md)
-Membuat objek PSLoadBalancingSetting untuk pembuatan Pintu Depan
+Membuat PSLoadBalancingMenyiapkan objek untuk pembuatan Pintu Depan
 
 ### [New-AzureRmFrontDoorManagedRuleObject](New-AzureRmFrontDoorManagedRuleObject.md)
-Membuat Objek ManagedRule untuk pembuatan kebijakan WAF
+Buat Objek ManagedRule untuk pembuatan kebijakan WAF
 
-### [New-AzureRmFrontDoorMatchConditionObject](New-AzureRmFrontDoorMatchConditionObject.md)
-Membuat Objek MatchCondition untuk pembuatan kebijakan WAF
+### [Baru-AzureRmFrontDoorMatchConditionObject](New-AzureRmFrontDoorMatchConditionObject.md)
+Buat Objek MatchCondition untuk pembuatan kebijakan WAF
 
 ### [New-AzureRmFrontDoorRoutingRuleObject](New-AzureRmFrontDoorRoutingRuleObject.md)
-Membuat kreasi PSRoutingRuleObject untuk Pintu Depan
+Membuat PSRoutingRuleObject untuk pembuatan Pintu Depan
 
 ### [New-AzureRmFrontDoorRuleGroupOverrideObject](New-AzureRmFrontDoorRuleGroupOverrideObject.md)
-Membuat Objek RuleGroupOverride untuk pembuatan kebijakan WAF
+Buat Objek RuleGroupOverride untuk pembuatan kebijakan WAF
 
-### [Remove-AzureRmFrontDoor](Remove-AzureRmFrontDoor.md)
-Hapus Penyeimbang muat Pintu Depan
+### [Hapus-AzureRmFrontDoor](Remove-AzureRmFrontDoor.md)
+Lepas penyeimbang muat Pintu Depan
 
-### [Remove-AzureRmFrontDoorContent](Remove-AzureRmFrontDoorContent.md)
+### [Hapus-AzureRmFrontDoorContent](Remove-AzureRmFrontDoorContent.md)
 Menghapus konten di Pintu Depan
 
-### [Remove-AzureRmFrontDoorFireWallPolicy](Remove-AzureRmFrontDoorFireWallPolicy.md)
-Menghapus kebijakan WAF
+### [Hapus-AzureRmFrontDoorFireWallPolicy](Remove-AzureRmFrontDoorFireWallPolicy.md)
+Hapus kebijakan WAF
 
 ### [Set-AzureRmFrontDoor](Set-AzureRmFrontDoor.md)
 Memperbarui penyeimbang muat Pintu Depan

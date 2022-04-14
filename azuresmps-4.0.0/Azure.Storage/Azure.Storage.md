@@ -4,18 +4,18 @@ Module Guid: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 Download Help Link: ./Azure.Storage.md
 Help Version: ''
 Locale: en-US
-ms.openlocfilehash: 79b1c8636903a132efcc95266558f64926b280075097e606f04ea6e22a704aa1
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 22945d786f7dffc818ff70567cb27430f2649cc4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132417662"
 ---
-# Azure. Storage Module
+# Azure.Storage Module
 ## Deskripsi
-Topik ini menampilkan topik bantuan untuk Azure Storage Cmdlets.
+Topik ini menampilkan topik bantuan untuk Cmdlet Penyimpanan Azure.
 
-## Azure. Cmdlet Storage Baru
+## Cmdlet Azure.Storage
 ### [Get-AzureStorageBlob](Get-AzureStorageBlob.md)
 Mencantumkan blob dalam wadah.
 
@@ -23,16 +23,16 @@ Mencantumkan blob dalam wadah.
 Mengunduh blob penyimpanan.
 
 ### [Get-AzureStorageBlobCopyState](Get-AzureStorageBlobCopyState.md)
-Mendapatkan status salinan suatu Azure Storage blob.
+Mendapatkan status salinan blob Penyimpanan Azure.
 
 ### [Get-AzureStorageContainer](Get-AzureStorageContainer.md)
 Mencantumkan wadah penyimpanan.
 
 ### [Get-AzureStorageContainerStoredAccessPolicy](Get-AzureStorageContainerStoredAccessPolicy.md)
-Mendapatkan kebijakan atau kebijakan akses tersimpan untuk wadah penyimpanan Azure.
+Mendapatkan kebijakan atau kebijakan akses yang disimpan untuk wadah penyimpanan Azure.
 
 ### [Get-AzureStorageCORSRule](Get-AzureStorageCORSRule.md)
-Mendapatkan aturan CORS untuk Storage layanan baru.
+Mendapatkan aturan CORS untuk tipe layanan Penyimpanan.
 
 ### [Get-AzureStorageFile](Get-AzureStorageFile.md)
 Mencantumkan direktori dan file untuk jalur.
@@ -41,154 +41,154 @@ Mencantumkan direktori dan file untuk jalur.
 Mengunduh konten file.
 
 ### [Get-AzureStorageFileCopyState](Get-AzureStorageFileCopyState.md)
-Mendapatkan status operasi penyalinan.
+Mendapatkan status operasi salinan.
 
-### [Get-AzureStorageQueue](Get-AzureStorageQueue.md)
+### [Dapatkan-AzureStorageQueue](Get-AzureStorageQueue.md)
 Mencantumkan antrean penyimpanan.
 
 ### [Get-AzureStorageQueueStoredAccessPolicy](Get-AzureStorageQueueStoredAccessPolicy.md)
-Mendapatkan kebijakan atau kebijakan akses tersimpan untuk antrean penyimpanan Azure.
+Mendapatkan kebijakan atau kebijakan akses yang disimpan untuk antrean penyimpanan Azure.
 
 ### [Get-AzureStorageServiceLoggingProperty](Get-AzureStorageServiceLoggingProperty.md)
-Mendapatkan properti pembuatan log untuk Azure Storage baru.
+Mendapatkan properti pembuatan log untuk layanan Penyimpanan Azure.
 
 ### [Get-AzureStorageServiceMetricsProperty](Get-AzureStorageServiceMetricsProperty.md)
-Mendapatkan properti metrik untuk layanan Azure Storage ini.
+Mendapatkan properti metrik untuk layanan Penyimpanan Azure.
 
 ### [Get-AzureStorageShare](Get-AzureStorageShare.md)
-Mendapatkan daftar file yang akan bagikan.
+Mendapatkan daftar berbagi file.
 
 ### [Get-AzureStorageShareStoredAccessPolicy](Get-AzureStorageShareStoredAccessPolicy.md)
-Mendapatkan kebijakan akses yang disimpan untuk Storage bersama.
+Mendapatkan kebijakan akses yang disimpan untuk berbagi Penyimpanan.
 
 ### [Get-AzureStorageTable](Get-AzureStorageTable.md)
 Mencantumkan tabel penyimpanan.
 
 ### [Get-AzureStorageTableStoredAccessPolicy](Get-AzureStorageTableStoredAccessPolicy.md)
-Mendapatkan kebijakan atau kebijakan akses tersimpan untuk tabel penyimpanan Azure.
+Mendapatkan kebijakan atau kebijakan akses yang disimpan untuk tabel penyimpanan Azure.
 
-### [New-AzureStorageAccountSASToken](New-AzureStorageAccountSASToken.md)
+### [AzureStorage BaruAccountSASToken](New-AzureStorageAccountSASToken.md)
 Membuat token SAS.
 
-### [New-AzureStorageBlobSASToken](New-AzureStorageBlobSASToken.md)
+### [AzureStorageBlobSASToken Baru](New-AzureStorageBlobSASToken.md)
 Menghasilkan token SAS untuk blob penyimpanan Azure.
 
-### [New-AzureStorageContainer](New-AzureStorageContainer.md)
+### [AzureStorageContainer baru](New-AzureStorageContainer.md)
 Membuat wadah penyimpanan Azure.
 
-### [New-AzureStorageContainerSASToken](New-AzureStorageContainerSASToken.md)
+### [AzureStorageContainerSASToken baru](New-AzureStorageContainerSASToken.md)
 Menghasilkan token SAS untuk wadah penyimpanan Azure.
 
 ### [New-AzureStorageContainerStoredAccessPolicy](New-AzureStorageContainerStoredAccessPolicy.md)
-Membuat kebijakan akses tersimpan untuk tempat penyimpanan Azure.
+Membuat kebijakan akses yang disimpan untuk wadah penyimpanan Azure.
 
-### [New-AzureStorageContext](New-AzureStorageContext.md)
-Membuat Azure Storage konteks.
+### [AzureStorageContext baru](New-AzureStorageContext.md)
+Membuat konteks Penyimpanan Azure.
 
-### [New-AzureStorageDirectory](New-AzureStorageDirectory.md)
+### [AzureStorageDirectory baru](New-AzureStorageDirectory.md)
 Membuat direktori.
 
-### [New-AzureStorageFileSASToken](New-AzureStorageFileSASToken.md)
-Menghasilkan token tanda tangan akses bersama untuk file Storage Anda.
+### [AzureStorageFileSASToken Baru](New-AzureStorageFileSASToken.md)
+Menghasilkan token tanda tangan akses bersama untuk file Penyimpanan.
 
-### [New-AzureStorageQueue](New-AzureStorageQueue.md)
+### [Antrean AzureStorage Baru](New-AzureStorageQueue.md)
 Membuat antrean penyimpanan.
 
-### [New-AzureStorageQueueSASToken](New-AzureStorageQueueSASToken.md)
+### [AzureStorage BaruQueueSASToken](New-AzureStorageQueueSASToken.md)
 Menghasilkan token tanda tangan akses bersama untuk antrean penyimpanan Azure.
 
 ### [New-AzureStorageQueueStoredAccessPolicy](New-AzureStorageQueueStoredAccessPolicy.md)
-Membuat kebijakan akses tersimpan untuk antrean penyimpanan Azure.
+Membuat kebijakan akses yang disimpan untuk antrean penyimpanan Azure.
 
-### [New-AzureStorageShare](New-AzureStorageShare.md)
+### [AzureStorageShare baru](New-AzureStorageShare.md)
 Membuat berbagi file.
 
-### [New-AzureStorageShareSASToken](New-AzureStorageShareSASToken.md)
-Buat token Tanda Tangan Akses Bersama Azure Storage bagikan.
+### [AzureStorageshareSASToken baru](New-AzureStorageShareSASToken.md)
+Hasilkan token Tanda Tangan Akses Bersama untuk berbagi Penyimpanan Azure.
 
-### [New-AzureStorageShareStoredAccessPolicy](New-AzureStorageShareStoredAccessPolicy.md)
-Membuat kebijakan akses tersimpan di Storage bersama.
+### [AzureStorage BaruShareStoredAccessPolicy](New-AzureStorageShareStoredAccessPolicy.md)
+Membuat kebijakan akses tersimpan pada berbagi Penyimpanan.
 
-### [New-AzureStorageTable](New-AzureStorageTable.md)
+### [AzureStorageTable Baru](New-AzureStorageTable.md)
 Membuat tabel penyimpanan.
 
-### [New-AzureStorageTableSASToken](New-AzureStorageTableSASToken.md)
-Menghasilkan token SAS untuk Azure Storage tabel.
+### [AzureStorageTableSASToken baru](New-AzureStorageTableSASToken.md)
+Menghasilkan token SAS untuk tabel Penyimpanan Azure.
 
 ### [New-AzureStorageTableStoredAccessPolicy](New-AzureStorageTableStoredAccessPolicy.md)
-Membuat kebijakan akses tersimpan untuk tabel penyimpanan Azure.
+Membuat kebijakan akses yang disimpan untuk tabel penyimpanan Azure.
 
-### [Remove-AzureStorageBlob](Remove-AzureStorageBlob.md)
+### [Hapus-AzureStorageBlob](Remove-AzureStorageBlob.md)
 Menghapus blob penyimpanan tertentu.
 
-### [Remove-AzureStorageContainer](Remove-AzureStorageContainer.md)
-Menghapus wadah penyimpanan tertentu.
+### [Hapus-AzureStorageContainer](Remove-AzureStorageContainer.md)
+Menghapus wadah penyimpanan yang ditentukan.
 
 ### [Remove-AzureStorageContainerStoredAccessPolicy](Remove-AzureStorageContainerStoredAccessPolicy.md)
-Menghapus kebijakan akses tersimpan dari tempat penyimpanan Azure.
+Menghapus kebijakan akses yang disimpan dari wadah penyimpanan Azure.
 
-### [Remove-AzureStorageCORSRule](Remove-AzureStorageCORSRule.md)
-Menghapus CORS untuk layanan Storage baru.
+### [Hapus-AzureStorageCORSRule](Remove-AzureStorageCORSRule.md)
+Menghapus CORS untuk layanan Penyimpanan.
 
-### [Remove-AzureStorageDirectory](Remove-AzureStorageDirectory.md)
+### [Hapus-AzureStorageDirectory](Remove-AzureStorageDirectory.md)
 Menghapus direktori.
 
-### [Remove-AzureStorageFile](Remove-AzureStorageFile.md)
+### [Hapus-AzureStorageFile](Remove-AzureStorageFile.md)
 Menghapus file.
 
-### [Remove-AzureStorageQueue](Remove-AzureStorageQueue.md)
+### [Hapus-AzureStorageQueue](Remove-AzureStorageQueue.md)
 Menghapus antrean penyimpanan.
 
 ### [Remove-AzureStorageQueueStoredAccessPolicy](Remove-AzureStorageQueueStoredAccessPolicy.md)
-Menghapus kebijakan akses tersimpan dari antrean penyimpanan Azure.
+Menghapus kebijakan akses yang disimpan dari antrean penyimpanan Azure.
 
-### [Remove-AzureStorageShare](Remove-AzureStorageShare.md)
+### [Hapus-AzureStorageShare](Remove-AzureStorageShare.md)
 Menghapus berbagi file.
 
 ### [Remove-AzureStorageShareStoredAccessPolicy](Remove-AzureStorageShareStoredAccessPolicy.md)
-Menghapus kebijakan akses yang disimpan dari Storage bersama.
+Menghapus kebijakan akses yang disimpan dari berbagi Penyimpanan.
 
-### [Remove-AzureStorageTable](Remove-AzureStorageTable.md)
+### [Hapus-AzureStorageTable](Remove-AzureStorageTable.md)
 Menghapus tabel penyimpanan.
 
 ### [Remove-AzureStorageTableStoredAccessPolicy](Remove-AzureStorageTableStoredAccessPolicy.md)
-Menghapus kebijakan akses tersimpan dari tabel penyimpanan Azure.
+Menghapus kebijakan akses yang disimpan dari tabel penyimpanan Azure.
 
 ### [Set-AzureStorageBlobContent](Set-AzureStorageBlobContent.md)
-Mengunggah file lokal ke Azure Storage blob.
+Mengunggah file lokal ke blob Penyimpanan Azure.
 
 ### [Set-AzureStorageContainerAcl](Set-AzureStorageContainerAcl.md)
-Mengatur izin akses publik ke tempat penyimpanan.
+Mengatur izin akses publik ke wadah penyimpanan.
 
 ### [Set-AzureStorageContainerStoredAccessPolicy](Set-AzureStorageContainerStoredAccessPolicy.md)
-Menetapkan kebijakan akses tersimpan untuk tempat penyimpanan Azure.
+Mengatur kebijakan akses yang disimpan untuk wadah penyimpanan Azure.
 
 ### [Set-AzureStorageCORSRule](Set-AzureStorageCORSRule.md)
-Mengatur aturan CORS untuk jenis Storage layanan.
+Mengatur aturan CORS untuk tipe layanan Penyimpanan.
 
 ### [Set-AzureStorageFileContent](Set-AzureStorageFileContent.md)
 Mengunggah konten file.
 
 ### [Set-AzureStorageQueueStoredAccessPolicy](Set-AzureStorageQueueStoredAccessPolicy.md)
-Menetapkan kebijakan akses tersimpan untuk antrean penyimpanan Azure.
+Mengatur kebijakan akses yang disimpan untuk antrean penyimpanan Azure.
 
 ### [Set-AzureStorageServiceLoggingProperty](Set-AzureStorageServiceLoggingProperty.md)
-Memodifikasi pembuatan log untuk Azure Storage tambahan.
+Mengubah pembuatan log untuk layanan Penyimpanan Azure.
 
 ### [Set-AzureStorageServiceMetricsProperty](Set-AzureStorageServiceMetricsProperty.md)
-Mengubah properti metrik untuk layanan Azure Storage.
+Mengubah properti metrik untuk layanan Penyimpanan Azure.
 
 ### [Set-AzureStorageShareQuota](Set-AzureStorageShareQuota.md)
-Mengatur kapasitas penyimpanan untuk sebuah berbagi.
+Mengatur kapasitas penyimpanan untuk berbagi.
 
 ### [Set-AzureStorageShareStoredAccessPolicy](Set-AzureStorageShareStoredAccessPolicy.md)
-Memperbarui kebijakan akses yang disimpan pada Storage bersama.
+Memperbarui kebijakan akses yang disimpan pada berbagi Penyimpanan.
 
 ### [Set-AzureStorageTableStoredAccessPolicy](Set-AzureStorageTableStoredAccessPolicy.md)
-Mengatur kebijakan akses tersimpan untuk tabel penyimpanan Azure.
+Mengatur kebijakan akses yang disimpan untuk tabel penyimpanan Azure.
 
 ### [Start-AzureStorageBlobCopy](Start-AzureStorageBlobCopy.md)
-Memulai menyalin blob.
+Mulai menyalin sebuah blob.
 
 ### [Start-AzureStorageFileCopy](Start-AzureStorageFileCopy.md)
 Mulai menyalin file sumber.

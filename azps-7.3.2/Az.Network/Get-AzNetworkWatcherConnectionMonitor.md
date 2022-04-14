@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherConnectionMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherConnectionMonitor.md
-ms.openlocfilehash: 9d10e5abb87393546112f95dcc6ebf2cbab0eba0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 848b64addefa4e61bfea6f672969eeb9357f64a4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140392818"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141786938"
 ---
 # Get-AzNetworkWatcherConnectionMonitor
 
 ## SYNOPSIS
-Mengembalikan monitor koneksi dengan nama atau daftar monitor koneksi yang ditentukan
+Mengembalikan monitor koneksi dengan nama tertentu atau daftar monitor koneksi
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkwatcherconnectionmonitor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Get-AzNetworkWatcherConnectionMonitor -ResourceId <String> [-DefaultProfile <IAz
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzNetworkWatcherConnectionMonitor mengembalikan monitor koneksi dengan nama / resourceId yang ditentukan atau daftar monitor koneksi yang terkait dengan pengawas jaringan / lokasi tertentu.
+Cmdlet Get-AzNetworkWatcherConnectionMonitor mengembalikan monitor koneksi dengan nama / resourceId yang ditentukan atau daftar monitor koneksi yang terkait dengan pengawas jaringan / lokasi yang ditentukan.
 
 ## EXAMPLES
 
@@ -53,7 +56,7 @@ Cmdlet Get-AzNetworkWatcherConnectionMonitor mengembalikan monitor koneksi denga
 PS C:\> Get-AzNetworkWatcherConnectionMonitor -Location centraluseuap -Name cm
 ```
 
-Nama : cm Id : /subscriptions/00000000-0000-0000-0000-00000000000/resourceGro ups/NetworkWatcherRG/providers/Microsoft.Network/networkWatcher s/NetworkWatcher_centraluseuap/connectionMonitors/cm Etag : W/"40961b58-e379-4204-a47b-0c477739b095" ProvisioningState : Succeeded Source : { "ResourceId": "/subscriptions/96e68903-0a56-4819-9987-8d08ad6  a1f99/resourceGroups/VarunRgCentralUSEUAP/providers/Microsoft.C ompute/virtualMachines/irinavm", "Port": 0 } Tujuan : { "Alamat": "google.com", "Port": 80 } MonitoringIntervalInSeconds : 60 AutoStart : True StartTime : 1/12/2018 7:19:28 PM MonitoringStatus : Stopped Location : centraluseuap Type : Microsoft.Network/networkWatchers/connectionMonitors Tag : {  "key1": "value1" }
+Nama : cm Id : /subscriptions/00000000-0000-0000-000000000000/resourceGro ups/NetworkWatcherRG/providers/Microsoft.Network/networkWatcher s/NetworkWatcher_centraluseuap/connectionMonitors/cm Etag : W/"Etag40961b58-e379-4204-a47b-0c477739b095" ProvisioningState : Sumber Berhasil : { "ResourceId": "/subscriptions/96e68903-0a56-4819-9987-8d08ad6  a1f99/resourceGroups/VarunRgCentralUSEUAP/providers/Microsoft.C ompute/virtualMachines/irinavm", "Port": 0 } Tujuan : { "Address": "google.com", "Port": 80 } MonitoringIntervalInSeconds : 60 AutoStart : True StartTime : 1/12/2018 7:19:28 PM MonitoringStatus : Stop Location : Centraluseuap Type : Microsoft.Network/networkWatchers/connectionMonitors Tags : {  "key1": "value1" }
 
 ## PARAMETERS
 
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengawas jaringan.
+Sumber daya pengamat jaringan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

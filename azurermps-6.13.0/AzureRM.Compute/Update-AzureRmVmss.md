@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Update-AzureRmVmss.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Update-AzureRmVmss.md
 ms.openlocfilehash: d2ecc5799319dcbc9b2e3710c186ffd7ebc09c64
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425158"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141885723"
 ---
 # Update-AzureRmVmss
 
@@ -60,21 +60,21 @@ Update-AzureRmVmss [-ResourceGroupName] <String> [-VMScaleSetName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzureRmVmss** memperbarui status Virtual Machine Scale Set (VMSS) sesuai dengan keadaan objek VMSS lokal.
+Cmdlet **Update-AzureRmVmss** memperbarui status Kumpulan Skala Mesin Virtual (VMSS) ke status objek VMSS lokal.
 
 ## EXAMPLES
 
-### Contoh 1: Update the state of a VMSS to the state of a local VMSS object.
+### Contoh 1: Memperbarui status VMSS ke status objek VMSS lokal.
 ```
 PS C:\> Update-AzureRmVmss -ResourceGroupName "Group001" -Name "VMSS001" -VirtualMachineScaleSet $LocalVMSS
 ```
 
-Perintah ini memperbarui status VMSS bernama VMSS001 yang dimiliki oleh grup sumber daya yang bernama Group001 ke keadaan objek VMSS lokal, $LocalVMSS.
+Perintah ini memperbarui status VMSS bernama VMSS001 yang termasuk dalam grup sumber daya bernama Group001 ke status objek VMSS lokal, $LocalVMSS.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutomaticOSUpgrade
-Mengatur apakah pemutakhiran OS akan secara otomatis diterapkan pada instans kumpulan skala dengan mode berputar ketika versi gambar yang lebih baru telah tersedia.
+Mengatur apakah peningkatan OS harus diterapkan secara otomatis ke instance kumpulan skala secara bergulir saat versi gambar yang lebih baru tersedia.
 
 ```yaml
 Type: System.Boolean
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -BootDiagnosticsEnabled
-Apakah diagnostik boot harus diaktifkan pada kumpulan skala komputer virtual.
+Apakah diagnostik boot harus diaktifkan pada kumpulan skala mesin virtual.
 
 ```yaml
 Type: System.Boolean
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -BootDiagnosticsStorageUri
-URI akun penyimpanan yang dapat digunakan untuk menempatkan output konsol dan tangkapan layar.
+URI dari akun penyimpanan yang digunakan untuk menempatkan output dan cuplikan layar konsol.
 
 ```yaml
 Type: System.String
@@ -134,8 +134,8 @@ Accept wildcard characters: False
 ```
 
 ### -CustomData
-Menentukan string berkode basis 64 dari data kustom.
-Ini dikodekan ke array biner yang disimpan sebagai file pada mesin virtual.
+Menentukan string data kustom berkode basis 64.
+Ini didekodekan ke array biner yang disimpan sebagai file di mesin virtual.
 Panjang maksimum array biner adalah 65535 byte.
 
 ```yaml
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableAutoRollback
-Menonaktifkan Rollback Otomatis untuk Kebijakan Pemutakhiran Auto OS
+Menonaktifkan Pembatalan Otomatis untuk Kebijakan Pemutakhiran OS Otomatis
 
 ```yaml
 Type: System.Boolean
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisablePasswordAuthentication
-Menunjukkan bahwa cmdlet ini menonaktifkan autentikasi kata sandi untuk Linux OS.
+Menunjukkan bahwa cmdlet ini menonaktifkan autentikasi kata sandi untuk OS Linux.
 
 ```yaml
 Type: System.Boolean
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableAutomaticUpdate
-Menunjukkan apakah Windows virtual pada VMSS diaktifkan untuk pembaruan otomatis.
+Menunjukkan apakah mesin virtual Windows di VMSS diaktifkan untuk pembaruan otomatis.
 
 ```yaml
 Type: System.Boolean
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 
 ### -IdentityId
 Menentukan daftar identitas pengguna yang terkait dengan kumpulan skala mesin virtual.
-Referensi identitas pengguna akan menjadi ID sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
+Referensi identitas pengguna akan berupa id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
 
 ```yaml
 Type: System.String[]
@@ -228,13 +228,13 @@ Accept wildcard characters: False
 
 ### -IdentityType
 Menentukan tipe identitas yang digunakan untuk kumpulan skala mesin virtual.
-Tipe 'SystemAssignedUserAssigned' menyertakan identitas yang dibuat secara implisit dan kumpulan identitas yang ditetapkan pengguna.
+Tipe 'SystemAssignedUserAssigned' mencakup identitas yang dibuat secara implisit dan sekumpulan identitas yang ditetapkan pengguna.
 Tipe 'Tidak Ada' akan menghapus identitas apa pun dari kumpulan skala mesin virtual.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - SystemAssigned
 - UserAssigned
 - SystemAssignedUserAssigned
-- Tidak ada
+- Tidak
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Management.Compute.Models.ResourceIdentityType]
@@ -265,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImageReferenceOffer
-Menentukan tipe penawaran gambar mesin virtual (VMImage).
+Menentukan tipe penawaran virtual machine image (VMImage).
 Untuk mendapatkan penawaran gambar, gunakan cmdlet Get-AzureRmVMImageOffer.
 
 ```yaml
@@ -296,9 +296,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ImageReferenceSku
+### -ImageReferencesku
 Menentukan VMImage SKU.
-Untuk mendapatkan SKU, gunakan cmdlet Get-AzureRmVMImageSku baru.
+Untuk mendapatkan SKU, gunakan cmdlet Get-AzureRmVMImageSku.
 
 ```yaml
 Type: System.String
@@ -314,7 +314,7 @@ Accept wildcard characters: False
 
 ### -ImageReferenceVersion
 Menentukan versi VMImage.
-Untuk menggunakan versi terbaru, tentukan nilai terbaru dan bukan versi tertentu.
+Untuk menggunakan versi terbaru, tentukan nilai terbaru, bukan versi tertentu.
 
 ```yaml
 Type: System.String
@@ -345,7 +345,7 @@ Accept wildcard characters: False
 ```
 
 ### -LicenseType
-Tentukan tipe lisensi, yang akan membuat skenario lisensi Anda sendiri.
+Tentukan tipe lisensi, yang untuk membawa skenario lisensi Anda sendiri.
 
 ```yaml
 Type: System.String
@@ -378,8 +378,8 @@ Accept wildcard characters: False
 ```
 
 ### -MaxBatchInstancePercent
-Persentase maksimum instans mesin virtual total yang akan dimutakhirkan secara bersamaan dengan pemutakhiran bertahap dalam satu kumpulan.
-Karena ini adalah contoh maksimum yang tidak sehat pada kumpulan sebelumnya atau yang akan datang dapat menyebabkan persentase contoh dalam batch berkurang untuk memastikan keandalan yang lebih tinggi.
+Persen maksimum dari total instans mesin virtual yang akan dimutakhirkan secara bersamaan dengan pemutakhiran bergulir dalam satu batch.
+Karena ini adalah instans maksimum yang tidak sehat dalam kumpulan sebelumnya atau yang akan datang dapat menyebabkan persentase instans dalam kumpulan berkurang untuk memastikan keandalan yang lebih tinggi.
 Jika nilai tidak ditentukan, nilai diatur ke 20.
 
 ```yaml
@@ -395,8 +395,8 @@ Accept wildcard characters: False
 ```
 
 ### -MaxUnhealthyInstancePercent
-Persentase maksimum instans mesin virtual total dalam kumpulan skala yang dapat secara bersamaan tidak sehat, baik sebagai akibat pemutakhiran, atau dengan ditemukan dalam keadaan tidak sehat oleh pemeriksaan kesehatan mesin virtual sebelum peluncuran peningkatan.
-Batasan ini akan dicentang sebelum memulai kumpulan apa pun.
+Persentase maksimum dari total instans mesin virtual dalam kumpulan skala yang bisa secara bersamaan tidak sehat, baik sebagai akibat dari dimutakhirkan, atau dengan ditemukan dalam keadaan tidak sehat oleh pemeriksaan kesehatan mesin virtual sebelum pemutakhiran bergulir dibatalkan.
+Batasan ini akan diperiksa sebelum memulai kumpulan apa pun.
 Jika nilai tidak ditentukan, nilai diatur ke 20.
 
 ```yaml
@@ -412,9 +412,9 @@ Accept wildcard characters: False
 ```
 
 ### -MaxUnhealthyUpgradedInstancePercent
-Persentase maksimum dari mesin virtual yang dimutakhirkan yang dapat ditemukan dalam keadaan tidak sehat.
-Pemeriksaan ini akan terjadi setelah setiap kumpulan ditakhirkan.
-Jika persentase ini pernah melebihi, pembaruan diluncurkan pada pembaruan terkini.
+Persentase maksimum instans mesin virtual yang dimutakhirkan yang dapat ditemukan dalam keadaan tidak sehat.
+Pemeriksaan ini akan terjadi setelah setiap kumpulan dimutakhirkan.
+Jika persentase ini pernah melebihi, pembaruan bergulir akan dibatalkan.
 Jika nilai tidak ditentukan, nilai diatur ke 20.
 
 ```yaml
@@ -430,8 +430,8 @@ Accept wildcard characters: False
 ```
 
 ### -OsDiskCaching
-Menentukan mode cache dari disk sistem operasi. Nilai yang dapat diterima untuk parameter ini adalah:
-- Tidak ada
+Menentukan mode cache disk sistem operasi. Nilai yang dapat diterima untuk parameter ini adalah:
+- Tidak
 - ReadOnly
 - ReadWrite Nilai defaultnya adalah ReadWrite.
 Jika Anda mengubah nilai cache, cmdlet akan memulai ulang mesin virtual.
@@ -451,7 +451,7 @@ Accept wildcard characters: False
 ```
 
 ### -OsDiskWriteAccelerator
-Menentukan apakah WriteAccelerator harus diaktifkan atau dinonaktifkan di disk OS.
+Menentukan apakah WriteAccelerator harus diaktifkan atau dinonaktifkan pada disk OS.
 
 ```yaml
 Type: System.Boolean
@@ -466,7 +466,7 @@ Accept wildcard characters: False
 ```
 
 ### -Overprovision
-Menunjukkan apakah cmdlet overprovisions VMSS.
+Menunjukkan apakah cmdlet melebihi provisi VMSS.
 
 ```yaml
 Type: System.Boolean
@@ -528,7 +528,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlanPromotionCode
-Menentukan kode promosi paket.
+Menentukan kode promosi rencana.
 
 ```yaml
 Type: System.String
@@ -543,7 +543,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlanPublisher
-Menentukan penerbit paket.
+Menentukan penerbit rencana.
 
 ```yaml
 Type: System.String
@@ -558,7 +558,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProvisionVMAgent
-Menunjukkan apakah agen mesin virtual harus disediakan pada Windows virtual dalam VMSS.
+Menunjukkan apakah agen mesin virtual harus disediakan pada mesin virtual Windows di VMSS.
 
 ```yaml
 Type: System.Boolean
@@ -573,7 +573,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang dimiliki VMSS.
+Menentukan nama grup sumber daya tempat VMSS berada.
 
 ```yaml
 Type: System.String
@@ -618,7 +618,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Menentukan ukuran semua instans VMSS.
+Menentukan ukuran semua contoh VMSS.
 
 ```yaml
 Type: System.String
@@ -633,7 +633,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuTier
-Menentukan tingkatan VMSS.
+Menentukan tingkat VMSS.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Standar
 - Dasar
@@ -681,8 +681,8 @@ Accept wildcard characters: False
 ```
 
 ### -UltraSSDEnabled
-Bendera yang mengaktifkan atau menonaktifkan kemampuan untuk memiliki satu atau beberapa disk data terkelola dengan tipe akun UltraSSD_LRS penyimpanan lokal pada kumpulan skala mesin virtual.
-Disk terkelola dengan tipe akun UltraSSD_LRS dapat ditambahkan ke VMSS hanya jika properti ini diaktifkan.
+Bendera yang mengaktifkan atau menonaktifkan kapabilitas untuk memiliki satu atau beberapa disk data terkelola dengan tipe akun penyimpanan UltraSSD_LRS pada kumpulan skala mesin virtual.
+Disk terkelola dengan tipe akun penyimpanan UltraSSD_LRS dapat ditambahkan ke VMSS hanya jika properti ini diaktifkan.
 
 ```yaml
 Type: System.Boolean
@@ -697,11 +697,11 @@ Accept wildcard characters: False
 ```
 
 ### -UpgradePolicyMode
-Tentukan mode pemutakhiran ke mesin virtual dalam kumpulan skala.
+Menentukan mode pemutakhiran ke mesin virtual dalam kumpulan skala.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Otomatis
 - Manual
-- Berputar
+- Bergulir
 
 ```yaml
 Type: Microsoft.Azure.Management.Compute.Models.UpgradeMode
@@ -731,9 +731,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -VirtualMachinescaleSet
+### -VirtualMachineScaleSet
 Menentukan objek VMSS lokal.
-Untuk mendapatkan objek VMSS, gunakan Get-AzureRmVmss cmdlet.
+Untuk mendapatkan objek VMSS, gunakan cmdlet Get-AzureRmVmss.
 Objek mesin virtual ini berisi status yang diperbarui untuk VMSS.
 
 ```yaml
@@ -764,7 +764,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -780,7 +780,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -795,14 +795,14 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
-Parameter: VirtualMachinescaleSet (ByValue)
+Parameter: VirtualMachineScaleSet (ByValue)
 
 ## OUTPUTS
 
@@ -812,18 +812,18 @@ Parameter: VirtualMachinescaleSet (ByValue)
 
 ## RELATED LINKS
 
-[Get-AzureRmVmss](./Get-AzureRmVmss.md)
+[Get-AzureRmVms](./Get-AzureRmVmss.md)
 
-[New-AzureRmVmss](./New-AzureRmVmss.md)
+[AzureRmVms baru](./New-AzureRmVmss.md)
 
-[Remove-AzureRmVmss](./Remove-AzureRmVmss.md)
+[Hapus-AzureRmVms](./Remove-AzureRmVmss.md)
 
-[Mulai Ulang-AzureRmVmss](./Restart-AzureRmVmss.md)
+[Mulai ulang-AzureRmVms](./Restart-AzureRmVmss.md)
 
-[Set-AzureRmVmss](./Set-AzureRmVmss.md)
+[Set-AzureRmVms](./Set-AzureRmVmss.md)
 
-[Start-AzureRmVmss](./Start-AzureRmVmss.md)
+[Mulai AzureRmVms](./Start-AzureRmVmss.md)
 
-[Stop-AzureRmVmss](./Stop-AzureRmVmss.md)
+[Stop-AzureRmVms](./Stop-AzureRmVmss.md)
 
 

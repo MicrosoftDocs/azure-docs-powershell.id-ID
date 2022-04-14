@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBSqlContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBSqlContainer.md
-ms.openlocfilehash: d69b2e0a98635fad318bdd93639d660846332b11
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f5024bd059bd9bec7f909eb4ae52792091879ca3
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140557019"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141789440"
 ---
 # Update-AzCosmosDBSqlContainer
 
 ## SYNOPSIS
-Memperbarui Wadah CosmosDB Sql. Menjalankan operasi patch sisi klien dengan membaca Wadah yang sudah ada.
+Memperbarui CosmosDB Sql Container. Melakukan operasi patch sisi klien dengan membaca Kontainer yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbsqlcontainer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Update-AzCosmosDBSqlContainer [-Name <String>] [-IndexingPolicy <PSSqlIndexingPo
 ```
 
 ## DESCRIPTION
-Memperbarui Wadah CosmosDB Sql. Menjalankan operasi patch sisi klien dengan membaca Wadah yang sudah ada.
+Memperbarui CosmosDB Sql Container. Melakukan operasi patch sisi klien dengan membaca Kontainer yang sudah ada.
 
 ## EXAMPLES
 
@@ -73,7 +76,7 @@ Resource : Microsoft.Azure.Commands.CosmosDB.Models.PSMongoDBDatabaseGetProperti
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun database Cosmos DB.
 
 ```yaml
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -AnalyticalStorageTtl
-TTL untuk analytical Storage (dalam Detik).
+TTL untuk Storage Analitik (dalam Detik).
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoscaleMaxThroughput
-Nilai Throughput Maksimum jika skala otomatis diaktifkan.
+Nilai Throughput maksimum jika skala otomatis diaktifkan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConflictResolutionPolicy
-ConflictResolutionPolicy Object tipe PSSqlConflictResolutionPolicy, jika diberikan ini diatur sebagai ConflictResolutionPolicy wadah.
+ConflictResolutionPolicy Object tipe PSSqlConflictResolutionPolicy, ketika disediakan ini diatur sebagai ConflictResolutionPolicy kontainer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSSqlConflictResolutionPolicy
@@ -134,8 +137,8 @@ Accept wildcard characters: False
 ```
 
 ### -ConflictResolutionPolicyMode
-Dapat memiliki nilai: LastWriterWins, Custom, Manual.
-Jika disediakan bersama dengan parameter ConflictResolutionPolicy, parameter itu akan diabaikan.
+Dapat memiliki nilai: LastWriterWins, Kustom, Manual.
+Jika disediakan bersama dengan parameter ConflictResolutionPolicy, parameter tersebut diabaikan.
 
 ```yaml
 Type: System.String
@@ -150,8 +153,8 @@ Accept wildcard characters: False
 ```
 
 ### -ConflictResolutionPolicyPath
-Untuk disediakan saat tipe ini adalah LastWriterWins.
-Jika disediakan bersama dengan parameter ConflictResolutionPolicy, parameter itu akan diabaikan.
+Untuk disediakan ketika tipenya adalah LastWriterWins.
+Jika disediakan bersama dengan parameter ConflictResolutionPolicy, parameter tersebut diabaikan.
 
 ```yaml
 Type: System.String
@@ -166,8 +169,8 @@ Accept wildcard characters: False
 ```
 
 ### -ConflictResolutionPolicyProcedure
-Dapat disediakan ketika tipe berjenis kustom.
-Jika disediakan bersama dengan parameter ConflictResolutionPolicy, parameter itu akan diabaikan.
+Untuk disediakan saat tipenya adalah kustom.
+Jika disediakan bersama dengan parameter ConflictResolutionPolicy, parameter tersebut diabaikan.
 
 ```yaml
 Type: System.String
@@ -273,7 +276,7 @@ Accept wildcard characters: False
 
 ### -PartitionKeyKind
 Jenis algoritma yang digunakan untuk partisi.
-Kemungkinan nilai meliputi: 'Hash', 'Rentang'
+Nilai yang memungkinkan termasuk: 'Hash', 'Rentang'
 
 ```yaml
 Type: System.String
@@ -288,7 +291,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartitionKeyPath
-Jalur Kunci Partisi, misalnya '/alamat/kode pos'.
+Jalur Kunci Partisi, mis., '/address/zipcode'.
 
 ```yaml
 Type: System.String[]
@@ -334,7 +337,7 @@ Accept wildcard characters: False
 
 ### -Throughput
 Throughput wadah SQL (RU/s).
-Nilai default adalah 400.
+Nilai defaultnya adalah 400.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -349,9 +352,9 @@ Accept wildcard characters: False
 ```
 
 ### -TtlInSeconds
-Default Ttl dalam hitungan detik.
+Ttl default dalam detik.
 Jika nilai hilang atau diatur ke - 1, item tidak akan kedaluwarsa.
-Jika nilai diatur ke n, item akan kedaluwarsa n detik setelah waktu modifikasi terakhir.
+Jika nilai diatur ke n, item akan kedaluwarsa n detik setelah waktu terakhir diubah.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -366,7 +369,7 @@ Accept wildcard characters: False
 ```
 
 ### -UniqueKeyPolicy
-Objek UniqueKeyPolicy ketikkan Microsoft.Azure.Commands.CosmosDB.PSSqlUniqueKeyPolicy.
+Objek UniqueKeyPolicy tipe Microsoft.Azure.Commands.CosmosDB.PSSqlUniqueKeyPolicy.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSSqlUniqueKeyPolicy
@@ -381,7 +384,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -397,7 +400,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -412,7 +415,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

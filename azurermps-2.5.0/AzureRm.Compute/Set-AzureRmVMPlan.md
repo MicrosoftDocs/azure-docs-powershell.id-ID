@@ -4,17 +4,17 @@ Module Name: AzureRM.Compute
 ms.assetid: A1EA7D34-A8B4-4FA0-BD8C-3E846715AFBA
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/set-azurermvmplan
 schema: 2.0.0
-ms.openlocfilehash: b8a6002fc5abaf330302711ca37882da5141d1e5effda5f016f775b13818fb21
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 6d9a739156d3a4beb0d0dd86f3d7a96086d9fc32
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418239"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142147555"
 ---
 # Set-AzureRmVMPlan
 
 ## SYNOPSIS
-Mengatur informasi paket Marketplace di mesin virtual.
+Mengatur informasi rencana Marketplace di mesin virtual.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -26,16 +26,16 @@ Set-AzureRmVMPlan [-VM] <PSVirtualMachine> [-Name] <String> [[-Product] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmVMPlan** mengatur informasi paket Azure Marketplace untuk komputer virtual.
+Cmdlet **Set-AzureRmVMPlan** mengatur informasi rencana Azure Marketplace untuk mesin virtual.
 
-Sebelum dapat menyebarkan gambar Marketplace melalui baris perintah, akses programatik harus diaktifkan atau mesin virtual harus digunakan menggunakan portal Azure.
+Sebelum dapat menyebarkan gambar Marketplace melalui baris perintah, akses programatik harus diaktifkan atau mesin virtual harus disebarkan menggunakan portal Azure.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -51,8 +51,8 @@ Accept wildcard characters: False
 
 ### -Nama
 Menentukan nama gambar dari Marketplace.
-Nilai ini sama dengan yang dikembalikan oleh cmdlet Get-AzureRmVMImageSku.
-Untuk informasi selengkapnya tentang cara menemukan informasi gambar, lihat Menemukan dan menggunakan gambar [VM Azure Marketplace dengan Azure PowerShell](/azure/virtual-machines/windows/cli-ps-findimage) di Microsoft Azure ter dokumentasi.
+Ini adalah nilai yang sama yang dikembalikan oleh cmdlet Get-AzureRmVMImageSku.
+Untuk informasi selengkapnya tentang cara menemukan informasi gambar, lihat [Menemukan dan menggunakan gambar VM Azure Marketplace dengan Azure PowerShell](/azure/virtual-machines/windows/cli-ps-findimage) dalam dokumentasi Microsoft Azure.
 
 ```yaml
 Type: String
@@ -66,9 +66,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Product
+### -Produk
 Menentukan produk gambar dari Marketplace.
-Ini adalah informasi yang sama **dengan** nilai Penawaran **elemenreferensi** gambar.
+Ini adalah informasi yang sama dengan nilai **Penawaran** dari elemen **imageReference** .
 
 ```yaml
 Type: String
@@ -82,7 +82,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Kode Promosi
+### -PromotionCode
 Menentukan kode promosi.
 
 ```yaml
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 
 ### -Publisher
 Menentukan penerbit gambar.
-Anda dapat menemukan informasi ini menggunakan cmdlet Get-AzureRmVMImagePublisher cmdlet.
+Anda bisa menemukan informasi ini dengan menggunakan cmdlet Get-AzureRmVMImagePublisher.
 
 ```yaml
 Type: String
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan objek mesin virtual yang akan digunakan untuk menetapkan paket Marketplace.
+Menentukan objek mesin virtual untuk mengatur rencana Marketplace.
 Anda dapat menggunakan cmdlet Get-AzureRmVM untuk mendapatkan objek mesin virtual.
 Anda dapat menggunakan cmdlet New-AzureRmVMConfig untuk membuat objek mesin virtual.
 
@@ -131,12 +131,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSVirtualMachine
-Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari saluran
+Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari pipeline
 
 ## OUTPUTS
 
@@ -150,6 +150,6 @@ Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari saluran
 
 [Get-AzureRmVMImagePublisher](./Get-AzureRmVMImagePublisher.md)
 
-[Get-AzureRmVMImageSku](./Get-AzureRmVMImageSku.md)
+[Get-AzureRmvmImagesku](./Get-AzureRmVMImageSku.md)
 
-[New-AzureRmVMConfig](./New-AzureRmVMConfig.md)
+[AzureRmVMConfig Baru](./New-AzureRmVMConfig.md)

@@ -4,16 +4,16 @@ Module Name: Azs.Subscriptions.Admin
 online version: https://docs.microsoft.com/en-us/powershell/module/azs.subscriptions.admin/move-azsusersubscription
 schema: 2.0.0
 ms.openlocfilehash: 51ad63ef1531e7494b3929b8508e88e988155081
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132414366"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141812821"
 ---
 # Move-AzsUserSubscription
 
 ## SYNOPSIS
-Pindahkan langganan di antara penawaran penyedia yang didelegasikan.
+Pindahkan langganan antara penawaran penyedia yang didelegasikan.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ Move-AzsUserSubscription -ResourceId <String[]> [-SubscriptionId <String>]
  [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Pindahkan
+### Bergerak
 ```
 Move-AzsUserSubscription -MoveSubscriptionsDefinition <IMoveSubscriptionsDefinition>
  [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf]
@@ -46,7 +46,7 @@ Move-AzsUserSubscription -InputObject <ISubscriptionsAdminIdentity> -ResourceId 
 ```
 
 ## DESCRIPTION
-Pindahkan langganan di antara penawaran penyedia yang didelegasikan.
+Pindahkan langganan antara penawaran penyedia yang didelegasikan.
 
 ## EXAMPLES
 
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.SubscriptionsAdmin.Models.ISubscriptionsAdminIdentity
@@ -137,8 +137,8 @@ Accept wildcard characters: False
 
 ```
 
-### -MoveSubscriptionsDefinition
-Memindahkan definisi tindakan langganan Untuk dibuat, lihat bagian CATATAN untuk properti MOVESUBSCRIPTIONSDEFINITION dan membuat tabel hash.
+### -MoveSubscriptionsDefinisi
+Definisi tindakan pemindahan langganan Untuk membangun, lihat bagian CATATAN untuk properti MOVESUBSCRIPTIONSDEFINITION dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.SubscriptionsAdmin.Models.Api20151101.IMoveSubscriptionsDefinition
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Kumpulan langganan untuk dipindahkan ke penawaran penyedia yang didelegasikan target.
+Kumpulan langganan untuk berpindah ke penawaran penyedia yang didelegasikan target.
 
 ```yaml
 Type: System.String[]
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -251,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -267,7 +267,7 @@ ALIAS
 
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 INPUTOBJECT <ISubscriptionsAdminIdentity>: Parameter Identitas
   - `[DelegatedProvider <String>]`: Pengidentifikasi DelegatedProvider.
@@ -281,14 +281,14 @@ INPUTOBJECT <ISubscriptionsAdminIdentity>: Parameter Identitas
   - `[Plan <String>]`: Nama rencana.
   - `[PlanAcquisitionId <String>]`: Pengidentifikasi akuisisi rencana
   - `[Quota <String>]`: Nama kuota.
-  - `[ResourceGroupName <String>]`: Grup sumber daya yang berada di bawah sumber daya.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[ResourceGroupName <String>]`: Grup sumber daya tempat sumber daya berada di bawah.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
   - `[TargetSubscriptionId <String>]`: ID langganan target.
   - `[Tenant <String>]`: Nama penyewa direktori.
 
-MOVESUBSCRIPTIONSDEFINITION <IMoveSubscriptionsDefinition>: Pemindahan definisi tindakan langganan
-  - `Resources <String[]>`: Kumpulan langganan untuk dipindahkan ke penawaran penyedia yang didelegasikan target.
-  - `[TargetDelegatedProviderOffer <String>]`: Penyedia pengidentifikasi penawaran yang didelegasikan (dari konteks Admin) tempat langganan akan dipindahkan.
+MOVESUBSCRIPTIONSDEFINITION <IMoveSubscriptionsDefinition>: Definisi tindakan pemindahan langganan
+  - `Resources <String[]>`: Kumpulan langganan untuk berpindah ke penawaran penyedia yang didelegasikan target.
+  - `[TargetDelegatedProviderOffer <String>]`: Penyedia yang didelegasikan menawarkan pengidentifikasi (dari konteks Admin) tempat langganan dipindahkan.
 
 ## RELATED LINKS
 

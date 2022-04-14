@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.iotce
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/IotCentral/Commands.IotCentral/help/New-AzureRmIotCentralApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/IotCentral/Commands.IotCentral/help/New-AzureRmIotCentralApp.md
-ms.openlocfilehash: 74c8cc3342cbf608d5f41043bf9eb89e90f210f10ab6eca1a7ae141162afa447
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: d0bb10324c1a97b6228a26a7ab079edb4845d48a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140854785"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141884724"
 ---
 # New-AzureRmIotCentralApp
 
@@ -28,7 +28,7 @@ New-AzureRmIotCentralApp [-Subdomain] <String> [-DisplayName <String>] [-Templat
 ```
 
 ## DESCRIPTION
-Membuat Aplikasi Pusat IoT baru dengan properti dan metadata yang disediakan. Untuk pengenalan Tentang IoT Pusat, lihat https://docs.microsoft.com/en-us/azure/iot-central/.
+Membuat Aplikasi Pusat IoT baru dengan properti dan metadata yang disediakan. Untuk pengenalan IoT Central, lihat https://docs.microsoft.com/en-us/azure/iot-central/.
 
 ## EXAMPLES
 
@@ -37,22 +37,22 @@ Membuat Aplikasi Pusat IoT baru dengan properti dan metadata yang disediakan. Un
 PS C:\> New-AzureRmIotCentralApp -ResourceGroupName "MyResourceGroupName" -Name "MyAppResourceName" -Subdomain "MyAppSubdomain"
 ```
 
-Output Contoh:
+Contoh Output:
 
-ResourceId : /subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/MyResourceGroupName/providers/Microsoft . IotCentral/IoTApps/MyAppResourceName Nama : Tipe MyAppResourceName : Microsoft.IoTCentral/IoTApps Lokasi : westus Tag : Sku : Microsoft.Azure.Commands.IotCentral.Models.PSIotCentralAppSkuInfo ApplicationId : XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX DisplayName : MyAppResourceName Subdomain : Template MyAppSubdomain : iotc-default@1.0.0  SubscriptionId : XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX ResourceGroupName : MyResourceGroupName
+ResourceId : /subscriptions/XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXXXXX/resourceGroups/MyResourceGroupName/providers/Microsoft. IoTCentral/IoTApps/MyAppResourceName Name : MyAppResourceName Type : Lokasi Microsoft.IoTCentral/IoTApps : westus Tag : Sku : Microsoft.Azure.Commands.IotCentral.Models.PSIotCentRalAppSkuInfo ApplicationId : XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXXXXX DisplayName : MyAppResourceName Subdomain : MyAppSubdomain Template : iotc-default@1.0.0  SubscriptionId : XXXXXXXX-XXXX-XXXX-XXXXXXXXXXX ResourceGroupName : MyResourceGroupName
 
-Membuat aplikasi Pusat IoT dalam harga standar tingkat S1, di wilayah grup sumber daya.
+Buat aplikasi IoT Central di tingkat harga standar S1, di kawasan grup sumber daya.
 
 ### Contoh 2 Buat Aplikasi Pusat IoT sederhana.
 ```powershell
 PS C:\> New-AzureRmIotCentralApp -ResourceGroupName "MyResourceGroupName" -Name "MyAppResourceName" -Subdomain "MyAppSubdomain" -Sku "S1" -DisplayName "My Custom Display Name" -Template "iotc-default" -Location "westus"
 ```
 
-Output Contoh:
+Contoh Output:
 
-ResourceId : /subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/MyResourceGroupName/providers/Microsoft . IotCentral/IoTApps/MyAppResourceName Nama : Tipe MyAppResourceName : Microsoft.IoTCentral/IoTApps Lokasi : westus Tag : Sku : Microsoft.Azure.Commands.IotCentral.Models.PSIotCentralAppSkuInfo ApplicationId : XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX DisplayName : My Custom Display Name Subdomain : MyAppSubdomain Template : iotc-default@1.0.0  SubscriptionId : XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX ResourceGroupName : MyResourceGroupName
+ResourceId : /subscriptions/XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXXXXX/resourceGroups/MyResourceGroupName/providers/Microsoft. IoTCentral/IoTApps/MyAppResourceName Name : MyAppResourceName Type : Lokasi Microsoft.IoTCentral/IoTApps : westus Tag : Sku : Microsoft.Azure.Commands.IotCentral.Models.PSIotCentralAppskuInfo ApplicationId : XXXXXXXXX-XXXX-XXXX-XXXXXXXXXXXXXX DisplayName : Subdomain Nama Tampilan Kustom Saya : MyAppsubdomain Template : iotc-default@1.0.0  SubscriptionId : XXXXXXXX-XXXX-XXXX-XXXXXXXXXXX ResourceGroupName : MyResourceGroupName
 
-Buat aplikasi IoT Central dengan harga standar tingkat S1 di kawasan 'barat' dengan nama tampilan kustom, berdasarkan templat default iotc.
+Buat aplikasi IoT Central dengan tingkat harga standar S1 di wilayah 'westus', dengan nama tampilan kustom, berdasarkan templat default iotc.
 
 ## PARAMETERS
 
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi aplikasi Pusat IoT Anda.
+Lokasi aplikasi IoT Central Anda.
 Default adalah lokasi grup sumber daya target.
 
 ```yaml
@@ -149,8 +149,8 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Tingkatan harga untuk aplikasi Pusat IoT.
-Nilai default adalah S1.
+Tingkat harga untuk aplikasi Pusat IoT.
+Nilai defaultnya adalah S1.
 
 ```yaml
 Type: String
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 
 ### -Subdomain
 Subdomain untuk URL Pusat IoT.
-Setiap aplikasi harus memiliki subdomain unik.
+Setiap aplikasi harus memiliki subdomain yang unik.
 
 ```yaml
 Type: String
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag Sumber Daya Aplikasi Pusat.
+Iot Central Application Resource Tags.
 
 ```yaml
 Type: Hashtable
@@ -196,8 +196,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Template
-Nama templat aplikasi Pusat IoT.
+### -Templat
+Nama templat aplikasi IoT Central.
 Defaultnya adalah aplikasi kustom.
 
 ```yaml
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

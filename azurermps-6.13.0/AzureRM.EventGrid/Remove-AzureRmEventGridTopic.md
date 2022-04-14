@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventGrid/Commands.EventGrid/help/Remove-AzureRmEventGridTopic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventGrid/Commands.EventGrid/help/Remove-AzureRmEventGridTopic.md
 ms.openlocfilehash: d853d5d4659e41c9696ab87c3f9ab8b58c240044
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140860778"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141884904"
 ---
 # Remove-AzureRmEventGridTopic
 
 ## SYNOPSIS
-Menghapus Topik Kisi Acara Azure.
+Menghapus Topik Azure Event Grid.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -33,14 +33,14 @@ Remove-AzureRmEventGridTopic [-ResourceId] <String> [-PassThru] [-DefaultProfile
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### TopicInputObjectParameterSet
+### TopikInputObjectParameterSet
 ```
 Remove-AzureRmEventGridTopic [-InputObject] <PSTopic> [-PassThru] [-DefaultProfile <IAzureContextContainer>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Menghapus Topik Kisi Acara Azure.
+Menghapus Topik Azure Event Grid.
 
 ## EXAMPLES
 
@@ -49,19 +49,19 @@ Menghapus Topik Kisi Acara Azure.
 PS C:\> Remove-AzureRmEventGridTopic -ResourceGroupName MyResourceGroupName -Name Topic1
 ```
 
-Menghapus topik Kisi Kejadian Topic1 \`di grup\` sumber daya \`MyResourceGroupName\`.
+Menghapus topik \`Kisi Kejadian1\` dalam grup \`sumber daya MyResourceGroupName\`.
 
 ### Contoh 2
 ```
 PS C:\> Get-AzureRmResource -ResourceId "/subscriptions/$subscriptionId/resourceGroups/MyResourceGroupName/providers/Microsoft.EventGrid/topics/Topic1" | Remove-AzureRmEventGridTopic
 ```
 
-Menghapus topik Kisi Kejadian Topic1 \`di grup\` sumber daya \`MyResourceGroupName\`.
+Menghapus topik \`Kisi Kejadian1\` dalam grup \`sumber daya MyResourceGroupName\`.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek EventGrid Topic.
+Objek Topik EventGrid.
 
 ```yaml
 Type: Microsoft.Azure.Commands.EventGrid.Models.PSTopic
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-EventGrid Topic ResourceID.
+ID Sumber Daya Topik EventGrid.
 
 ```yaml
 Type: System.String
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

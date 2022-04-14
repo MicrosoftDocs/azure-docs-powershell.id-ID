@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DevTestLabs/Commands.DevTestLabs/help/Get-AzureRmDtlAutoStartPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DevTestLabs/Commands.DevTestLabs/help/Get-AzureRmDtlAutoStartPolicy.md
 ms.openlocfilehash: efe948e2676b44a70917efb43e901f8848dec0e3
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423336"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141884901"
 ---
 # Get-AzureRmDtlAutoStartPolicy
 
 ## SYNOPSIS
-Dapatkan kebijakan mulai otomatis sebuah lab di DevTest Labs.
+Mendapatkan kebijakan mulai otomatis lab di DevTest Labs.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,15 +28,15 @@ Get-AzureRmDtlAutoStartPolicy [-LabName] <String> [-ResourceGroupName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmDtlAutoStartPolicy** mendapatkan kebijakan mulai otomatis sebuah lab yang menjadwalkan mesin virtual lab untuk mulai otomatis.
-Cmdlet mengembalikan status kebijakan yang diaktifkan atau dinonaktifkan serta hari-hari dalam seminggu dan waktu yang Anda tetapkan untuk memperbolehkan mesin virtual lab dijadwalkan untuk mulai otomatis.
+Cmdlet **Get-AzureRmDtlAutoStartPolicy** mendapatkan kebijakan mulai otomatis lab yang menjadwalkan mesin virtual lab untuk mulai otomatis.
+Cmdlet mengembalikan status kebijakan yang diaktifkan atau dinonaktifkan dan hari-hari dalam seminggu dan waktu hari yang telah Anda tetapkan untuk memungkinkan mesin virtual lab dijadwalkan untuk mulai otomatis.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat lab dimiliki.
+Menentukan nama grup sumber daya tempat lab berada.
 
 ```yaml
 Type: System.String
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

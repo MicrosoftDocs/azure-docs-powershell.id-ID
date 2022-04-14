@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Remove-AzPowerBIWorkspaceCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Remove-AzPowerBIWorkspaceCollection.md
 ms.openlocfilehash: b2d667082999273581b1cd9ab029c1c273f7a83b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140481711"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141861818"
 ---
 # Remove-AzPowerBIWorkspaceCollection
 
 ## SYNOPSIS
-Menghapus kumpulan Power BI kerja Anda.
+Menghapus kumpulan ruang kerja Power BI.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.powerbiembedded/remove-azpowerbiworkspacecollection) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.powerbiembedded/remove-azpowerbiworkspacecollection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Remove-AzPowerBIWorkspaceCollection [-ResourceGroupName] <String> [-WorkspaceCol
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzPowerBIWorkspaceCollection** menghapus kumpulan ruang Power BI kerja dari grup langganan dan sumber daya Azure Anda.
+Cmdlet **Remove-AzPowerBIWorkspaceCollection** menghapus kumpulan ruang kerja Power BI dari grup sumber daya dan langganan Azure Anda.
 
 ## EXAMPLES
 
@@ -38,12 +38,12 @@ Cmdlet **Remove-AzPowerBIWorkspaceCollection** menghapus kumpulan ruang Power BI
 PS C:\>Remove-AzPowerBIWorkspaceCollection -ResourceGroupName "ResourceGroup17" -WorkspaceCollectionName "WCN11"
 ```
 
-Perintah ini menghapus kumpulan ruang kerja yang bernama WCN11 dalam grup sumber daya yang ditentukan.
+Perintah ini menghapus kumpulan ruang kerja bernama WCN11 dalam grup sumber daya yang ditentukan.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceCollectionName
-Menentukan nama kumpulan ruang Power BI kerja yang dihapus cmdlet ini.
+Menentukan nama kumpulan Power BI ruang kerja yang dihapus cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

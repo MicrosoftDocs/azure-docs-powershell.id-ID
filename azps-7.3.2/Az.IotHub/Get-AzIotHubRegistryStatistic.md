@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubRegistryStatistic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubRegistryStatistic.md
-ms.openlocfilehash: 3a74216135e7ebe71af269861beffbf08d495aa1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1da27da7bbaed4739ad5d30ddb05b961eab1be56
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140186699"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142069429"
 ---
 # Get-AzIotHubRegistryStatistic
 
 ## SYNOPSIS
-Mendapatkan RegistryStatistics untuk IotHub.
+Mendapatkan RegistriStatistics untuk IotHub.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubregistrystatistic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,22 +28,22 @@ Get-AzIotHubRegistryStatistic [-ResourceGroupName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Mendapatkan RegistryStatistics untuk IotHub.
-Ini menyediakan informasi tentang jumlah perangkat total, yang diaktifkan dan dinonaktifkan di IotHub.
+Mendapatkan RegistriStatistics untuk IotHub.
+Tindakan ini menyediakan informasi tentang jumlah total perangkat yang diaktifkan, dan dinonaktifkan dalam IotHub.
 
 ## EXAMPLES
 
-### Contoh 1 Dapatkan RegistryStatistics
+### Contoh 1 Dapatkan RegistriStatistics
 ```
 PS C:\> Get-AzIotHubRegistryStatistic -ResourceGroupName "myresourcegroup" -Name "myiothub"
 ```
 
-Mendapatkan RegistryStatistics untuk IotHub bernama "myiothub"
+Dapatkan RegistriStatistics untuk IotHub bernama "myiothub"
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBSqlDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBSqlDatabase.md
-ms.openlocfilehash: a6ff0eee6952a9e823d03e7447aee4020bf9c37a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 62bca1fb6b47f8d666c9d8f4d7e6e802ccbc49d7
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140394966"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141789422"
 ---
 # Update-AzCosmosDBSqlDatabase
 
 ## SYNOPSIS
-Memperbarui Database CosmosDB Sql. Menjalankan operasi patch sisi klien dengan membaca Database yang sudah ada.
+Memperbarui Database CosmosDB Sql. Melakukan operasi patch sisi klien dengan membaca Database yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbsqldatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Update-AzCosmosDBSqlDatabase [-Name <String>] [-Throughput <Int32>] [-AutoscaleM
 ```
 
 ## DESCRIPTION
-Memperbarui Database CosmosDB Sql. Menjalankan operasi patch sisi klien dengan membaca Database yang sudah ada.
+Memperbarui Database CosmosDB Sql. Melakukan operasi patch sisi klien dengan membaca Database yang sudah ada.
 
 ## EXAMPLES
 
@@ -58,7 +61,7 @@ Resource : Microsoft.Azure.Commands.CosmosDB.Models.PSSqlDatabaseGetPropertiesRe
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun database Cosmos DB.
 
 ```yaml
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoscaleMaxThroughput
-Nilai Throughput Maksimum jika skala otomatis diaktifkan.
+Nilai Throughput maksimum jika skala otomatis diaktifkan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 
 ### -Throughput
 Throughput database SQL (RU/s).
-Nilai default adalah 400.
+Nilai defaultnya adalah 400.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

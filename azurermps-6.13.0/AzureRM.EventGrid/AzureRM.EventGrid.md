@@ -6,48 +6,48 @@ Help Version: 1.0.0.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventGrid/Commands.EventGrid/help/AzureRM.EventGrid.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventGrid/Commands.EventGrid/help/AzureRM.EventGrid.md
-ms.openlocfilehash: 7a6d215765d5720dc56ce6c68625bd8536814557e7232611eb97ef0829921fa8
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 3b51ac04355d1fabc30790be889b76834b189fd8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132417757"
 ---
-# AzureRM.EventGrid Module
+# Modul AzureRM.EventGrid
 ## Deskripsi
-Topik ini menampilkan bantuan untuk cmdlet manajer sumber daya PowerShell Kisi Acara Azure.
+Topik ini menampilkan bantuan untuk cmdlet manajer sumber daya PowerShell Azure Event Grid.
 
 ## Cmdlet AzureRM.EventGrid
 ### [Get-AzureRmEventGridSubscription](Get-AzureRmEventGridSubscription.md)
 Mendapatkan detail langganan acara, atau mendapatkan daftar semua langganan acara dalam langganan Azure saat ini.
 
 ### [Get-AzureRmEventGridTopic](Get-AzureRmEventGridTopic.md)
-Mendapatkan detail topik Kisi Acara, atau mendapatkan daftar semua topik Kisi Acara di langganan Azure saat ini.
+Mendapatkan detail topik Kisi Acara, atau mendapatkan daftar semua topik Kisi Acara dalam langganan Azure saat ini.
 
 ### [Get-AzureRmEventGridTopicKey](Get-AzureRmEventGridTopicKey.md)
-Mendapatkan tombol akses bersama yang digunakan untuk menerbitkan acara ke topik Kisi Acara.
+Mendapatkan kunci akses bersama yang digunakan untuk menerbitkan acara ke topik Kisi Acara.
 
 ### [Get-AzureRmEventGridTopicType](Get-AzureRmEventGridTopicType.md)
-Mendapatkan detail tentang tipe topik yang didukung oleh Kisi Acara Azure.
+Mendapatkan detail tentang tipe topik yang didukung oleh Azure Event Grid.
 
-### [New-AzureRmEventGridSubscription](New-AzureRmEventGridSubscription.md)
-Membuat Langganan Acara Kisi Acara Azure baru pada topik, sumber daya Azure, langganan Azure, atau Grup Sumber Daya.
+### [AzureRmEventGridSubscription baru](New-AzureRmEventGridSubscription.md)
+Membuat Langganan Acara Azure Event Grid baru untuk topik, sumber daya Azure, langganan Azure, atau Grup Sumber Daya.
 
-### [New-AzureRmEventGridTopic](New-AzureRmEventGridTopic.md)
-Membuat Topik Kisi Acara Azure yang baru.
+### [AzureRmEventGridTopic baru](New-AzureRmEventGridTopic.md)
+Membuat Topik Azure Event Grid baru.
 
 ### [New-AzureRmEventGridTopicKey](New-AzureRmEventGridTopicKey.md)
-Meregenerasi kunci akses bersama untuk Topik Kisi Acara Azure.
+Meregenerasi kunci akses bersama untuk Topik Azure Event Grid.
 
-### [Remove-AzureRmEventGridSubscription](Remove-AzureRmEventGridSubscription.md)
-Menghapus langganan acara Kisi Acara Azure.
+### [Hapus-AzureRmeventGridsubscription](Remove-AzureRmEventGridSubscription.md)
+Menghapus langganan acara Azure Event Grid.
 
-### [Remove-AzureRmEventGridTopic](Remove-AzureRmEventGridTopic.md)
-Menghapus Topik Kisi Acara Azure.
+### [Hapus-AzureRmEventGridTopic](Remove-AzureRmEventGridTopic.md)
+Menghapus Topik Azure Event Grid.
 
 ### [Set-AzureRmEventGridTopic](Set-AzureRmEventGridTopic.md)
 Mengatur properti topik Kisi Acara.
 
-### [Update-AzureRmEventGridSubscription](Update-AzureRmEventGridSubscription.md)
+### [Pembaruan-AzureRmEventGridSubscription](Update-AzureRmEventGridSubscription.md)
 Perbarui properti langganan acara Kisi Acara.
 

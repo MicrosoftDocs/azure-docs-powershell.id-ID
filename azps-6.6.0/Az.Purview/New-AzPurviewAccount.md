@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/help/New-AzPurviewAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/help/New-AzPurviewAccount.md
 ms.openlocfilehash: 4e4e8cc827d1b2f95ebee71beb9bd1687aab47e5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140068517"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141861548"
 ---
 # New-AzPurviewAccount
 
@@ -18,7 +18,7 @@ ms.locfileid: "140068517"
 Membuat atau memperbarui akun
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.purview/new-azpurviewaccount) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Membuat atau memperbarui akun
 
 ## EXAMPLES
 
-### Contoh 1: Buat akun tampilan baru
+### Contoh 1: Membuat akun gambaran umum
 ```powershell
 PS C:\> New-AzPurviewAccount -Name test-pa -ResourceGroupName test-rg -Location eastus -IdentityType SystemAssigned -SkuCapacity 4 -SkuName Standard
 
@@ -43,7 +43,7 @@ IdentityPrincipalId                  IdentityTenantId                     Identi
 xxxxxxxx-9e08-4873-8b0d-1442be9e5b14 54826b22-38d6-4fb2-bad9-b7b93a3e9c5a SystemAssigned eastus  test-pa 8/17/2021 7:47:10 AM xxx.xxx…
 ```
 
-Buat akun tampilan dengan nama 'test-pa'.
+Buat akun purview bernama 'test-pa'.
 
 ## PARAMETERS
 
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 
 ### -SkuCapacity
 Mendapatkan atau mengatur kapasitas sku.
-Nilai yang mungkin termasuk: 4, 16
+Nilai yang memungkinkan meliputi: 4, 16
 
 ```yaml
 Type: System.Int32
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag pada sumber daya Azure.
+Tag di sumber daya azure.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -260,7 +260,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -275,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -4,53 +4,53 @@ Module Guid: 28bcb385-26d7-4905-99f7-d278099b2518
 Download Help Link: https://docs.microsoft.com/powershell/module/azs.fabric.admin
 Help Version: 1.0.0.0
 Locale: en-US
-ms.openlocfilehash: 85a8b2f8bce46a5e6c09248669c5b73c215b9746e39289325abb14ae3aa53113
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 8c9a74e402f31904aecf610f91a1f41016f85a15
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132416469"
 ---
-# Azs.Fabric.Admin Module
+# Modul Azs.Fabric.Admin
 ## Deskripsi
-Microsoft Azure PowerShell: FabricAdmin cmdlets
+Microsoft Azure PowerShell: Cmdlet FabricAdmin
 
-## Azs.Fabric.Admin Cmdlets
+## Cmdlet Azs.Fabric.Admin
 ### [Add-AzsScaleUnitNode](Add-AzsScaleUnitNode.md)
-Memperskalakan unit skala.
+Menskalakan unit skala.
 
 ### [Disable-AzsInfrastructureRoleInstance](Disable-AzsInfrastructureRoleInstance.md)
-Penutupan instans peran infrastruktur untuk pemeliharaan.
+Mematikan contoh peran infrastruktur untuk pemeliharaan.
 
 ### [Disable-AzsScaleUnitNode](Disable-AzsScaleUnitNode.md)
 Mulai mode pemeliharaan untuk simpul unit skala.
 
 ### [Enable-AzsScaleUnitNode](Enable-AzsScaleUnitNode.md)
-Menghentikan mode pemeliharaan untuk simpul unit skala.
+Hentikan mode pemeliharaan untuk simpul unit skala.
 
 ### [Get-AzsDrive](Get-AzsDrive.md)
 Mengembalikan drive penyimpanan yang diminta.
 
 ### [Get-AzsEdgeGateway](Get-AzsEdgeGateway.md)
-Mengembalikan gateway tepi yang diminta.
+Mengembalikan gateway edge yang diminta.
 
 ### [Get-AzsEdgeGatewayPool](Get-AzsEdgeGatewayPool.md)
-Mengembalikan objek pool gateway tepi yang diminta.
+Mengembalikan objek kumpulan gateway tepi yang diminta.
 
 ### [Get-AzsInfrastructureLocation](Get-AzsInfrastructureLocation.md)
-Mengembalikan lokasi bahan yang diminta.
+Mengembalikan lokasi kain yang diminta.
 
 ### [Get-AzsInfrastructureRole](Get-AzsInfrastructureRole.md)
 Mengembalikan deskripsi peran infrastruktur yang diminta.
 
 ### [Get-AzsInfrastructureRoleInstance](Get-AzsInfrastructureRoleInstance.md)
-Mengembalikan instans peran infrastruktur yang diminta.
+Mengembalikan contoh peran infrastruktur yang diminta.
 
 ### [Get-AzsInfrastructureShare](Get-AzsInfrastructureShare.md)
-Mengembalikan berbagi file kain yang diminta.
+Mengembalikan pembagian file kain yang diminta.
 
 ### [Get-AzsIPPool](Get-AzsIPPool.md)
-Kembalikan ip pool yang diminta.
+Mengembalikan kumpulan IP yang diminta.
 
 ### [Get-AzsLogicalNetwork](Get-AzsLogicalNetwork.md)
 Mengembalikan jaringan logika yang diminta.
@@ -59,45 +59,45 @@ Mengembalikan jaringan logika yang diminta.
 Mengembalikan subnet logika yang diminta.
 
 ### [Get-AzsMacAddressPool](Get-AzsMacAddressPool.md)
-Mengembalikan pool alamat MAC yang diminta.
+Mengembalikan kumpulan alamat MAC yang diminta.
 
 ### [Get-AzsScaleUnit](Get-AzsScaleUnit.md)
 Mengembalikan unit skala yang diminta.
 
 ### [Get-AzsScaleUnitNode](Get-AzsScaleUnitNode.md)
-Mengembalikan node unit skala yang diminta.
+Mengembalikan simpul unit skala yang diminta.
 
 ### [Get-AzsSlbMuxInstance](Get-AzsSlbMuxInstance.md)
-Mengembalikan instans multiplexer penyeimbang muat perangkat lunak yang diminta.
+Mengembalikan contoh multiplexer penyeimbang muat perangkat lunak yang diminta.
 
 ### [Get-AzsStorageSubSystem](Get-AzsStorageSubSystem.md)
-Mengembalikan subsistem penyimpanan yang diminta.
+Mengembalikan subsstem penyimpanan yang diminta.
 
 ### [Get-AzsVolume](Get-AzsVolume.md)
 Mengembalikan volume penyimpanan yang diminta.
 
 ### [New-AzsIPPool](New-AzsIPPool.md)
-Buat ip pool.
-Setelah dibuat, ip pool tidak dapat dihapus.
+Buat kumpulan IP.
+Setelah membuat kumpulan IP tidak dapat dihapus.
 
-### [Repair-AzsScaleUnitNode](Repair-AzsScaleUnitNode.md)
+### [Perbaikan-AzsScaleUnitNode](Repair-AzsScaleUnitNode.md)
 Memperbaiki simpul kluster.
 
-### [Restart-AzsInfrastructureRole](Restart-AzsInfrastructureRole.md)
+### [Mulai ulang-AzsInfrastructureRole](Restart-AzsInfrastructureRole.md)
 Memulai ulang peran infrastruktur yang diminta.
 
-### [Restart-AzsInfrastructureRoleInstance](Restart-AzsInfrastructureRoleInstance.md)
-Me-reboot contoh peran infrastruktur.
+### [Mulai ulang-AzsInfrastructureRoleInstance](Restart-AzsInfrastructureRoleInstance.md)
+Mulai ulang contoh peran infrastruktur.
 
 ### [Start-AzsInfrastructureRoleInstance](Start-AzsInfrastructureRoleInstance.md)
-Daya pada instans peran infrastruktur.
+Mengaktifkan contoh peran infrastruktur.
 
 ### [Start-AzsScaleUnitNode](Start-AzsScaleUnitNode.md)
-Daya pada simpul unit skala.
+Nyalakan simpul unit skala.
 
 ### [Stop-AzsInfrastructureRoleInstance](Stop-AzsInfrastructureRoleInstance.md)
 Mematikan instans peran infrastruktur.
 
 ### [Stop-AzsScaleUnitNode](Stop-AzsScaleUnitNode.md)
-Mematikan simpul unit skala.
+Matikan simpul unit skala.
 

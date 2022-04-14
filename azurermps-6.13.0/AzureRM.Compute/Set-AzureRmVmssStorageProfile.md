@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Set-AzureRmVmssStorageProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Set-AzureRmVmssStorageProfile.md
 ms.openlocfilehash: dc2f8633b303d15f3fe53bfc0be7eda3420e611f
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421713"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141886091"
 ---
 # Set-AzureRmVmssStorageProfile
 
 ## SYNOPSIS
-Mengatur properti profil penyimpanan VMSS.
+Mengatur properti profil penyimpanan untuk VMSS.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -33,7 +33,7 @@ Set-AzureRmVmssStorageProfile [-VirtualMachineScaleSet] <PSVirtualMachineScaleSe
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmVmssStorageProfile** mengatur properti profil penyimpanan untuk Virtual Machine Scale Set (VMSS).
+Cmdlet **Set-AzureRmVmssStorageProfile** mengatur properti profil penyimpanan untuk Kumpulan Skala Mesin Virtual (VMSS).
 
 ## EXAMPLES
 
@@ -44,7 +44,7 @@ PS C:\> Set-AzureRmVmssStorageProfile -VirtualMachineScaleSet "ContosoVMSS" -Nam
             -ImageReferencePublisher $ImgRef.PublisherName -VhdContainer $VhdContainer
 ```
 
-Perintah ini mengatur properti profil penyimpanan VMSS bernama ContosoVMSS.
+Perintah ini mengatur properti profil penyimpanan untuk VMSS bernama ContosoVMSS.
 
 ## PARAMETERS
 
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiffDiskSetting
-Menentukan pengaturan disk berbeda untuk disk sistem operasi.
+Menentukan setelan diska yang berbeda untuk disk sistem operasi.
 
 ```yaml
 Type: System.String
@@ -93,7 +93,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Image
+### -Gambar
 Menentukan URI blob untuk gambar pengguna.
 VMSS membuat disk sistem operasi dalam wadah gambar pengguna yang sama.
 
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImageReferenceOffer
-Menentukan tipe penawaran gambar mesin virtual (VMImage).
+Menentukan tipe penawaran virtual machine image (VMImage).
 Untuk mendapatkan penawaran gambar, gunakan cmdlet Get-AzureRmVMImageOffer.
 
 ```yaml
@@ -156,9 +156,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -ImageReferenceSku
+### -ImageReferencesku
 Menentukan VMImage SKU.
-Untuk mendapatkan SKU, gunakan cmdlet Get-AzureRmVMImageSku baru.
+Untuk mendapatkan SKU, gunakan cmdlet Get-AzureRmVMImageSku.
 
 ```yaml
 Type: System.String
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 
 ### -ImageReferenceVersion
 Menentukan versi VMImage.
-Untuk menggunakan versi terbaru, tentukan nilai terbaru dan bukan versi tertentu.
+Untuk menggunakan versi terbaru, tentukan nilai terbaru, bukan versi tertentu.
 
 ```yaml
 Type: System.String
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedDisk
-Menentukan disk yang dikelola.
+Menentukan diska terkelola.
 
 ```yaml
 Type: System.String
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -OsDiskCaching
-Menentukan mode cache dari disk sistem operasi. Nilai yang dapat diterima untuk parameter ini adalah:
+Menentukan mode cache disk sistem operasi. Nilai yang dapat diterima untuk parameter ini adalah:
 - ReadOnly
 - ReadWrite Nilai defaultnya adalah ReadWrite.
 Jika Anda mengubah nilai cache, cmdlet akan memulai ulang mesin virtual.
@@ -226,9 +226,9 @@ Accept wildcard characters: False
 ### -OsDiskCreateOption
 Menentukan cara cmdlet ini membuat mesin virtual VMSS.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Lampirkan: Nilai ini digunakan ketika Anda menggunakan disk khusus untuk membuat mesin virtual VMSS. 
-- FromImage : Nilai ini digunakan ketika Anda menggunakan gambar untuk membuat mesin virtual VMSS.
-Jika Anda menggunakan gambar platform, Anda juga akan menggunakan parameter *imageReference.*
+- Lampirkan : Nilai ini digunakan saat Anda menggunakan disk khusus untuk membuat mesin virtual VMSS. 
+- FromImage : Nilai ini digunakan saat Anda menggunakan gambar untuk membuat mesin virtual VMSS.
+Jika menggunakan gambar platform, Anda juga akan menggunakan parameter *imageReference* .
 
 ```yaml
 Type: System.String
@@ -258,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### -OsDiskOsType
-Menentukan tipe sistem operasi pada disk.
+Menentukan tipe sistem operasi pada diska.
 Ini hanya diperlukan untuk skenario gambar pengguna dan bukan untuk gambar platform.
 
 ```yaml
@@ -275,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### -OsDiskWriteAccelerator
-Menentukan apakah WriteAccelerator harus diaktifkan atau dinonaktifkan di disk OS.
+Menentukan apakah WriteAccelerator harus diaktifkan atau dinonaktifkan pada disk OS.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -304,9 +304,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -VirtualMachinescaleSet
+### -VirtualMachineScaleSet
 Menentukan objek VMSS.
-Untuk mendapatkan objek, gunakan New-AzureRmVmssConfig objek.
+Untuk mendapatkan objek, gunakan objek New-AzureRmVmssConfig.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
@@ -321,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -336,7 +336,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -351,7 +351,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -359,9 +359,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.CachingTypes, Microsoft.Azure.Management.Compute, Version=21.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.CachingTypes, Microsoft.Azure.Management.Compute, Version=21.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
-### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.OperatingSystemTypes, Microsoft.Azure.Management.Compute, Version=21.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.OperatingSystemTypes, Microsoft.Azure.Management.Compute, Version=21.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
 ### System.String[]
 
@@ -379,7 +379,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmVMImagePublisher](./Get-AzureRmVMImagePublisher.md)
 
-[Get-AzureRmVMImageSku](./Get-AzureRmVMImageSku.md)
+[Get-AzureRmvmImagesku](./Get-AzureRmVMImageSku.md)
 
 [New-AzureRmVmssConfig](./New-AzureRmVmssConfig.md)
 

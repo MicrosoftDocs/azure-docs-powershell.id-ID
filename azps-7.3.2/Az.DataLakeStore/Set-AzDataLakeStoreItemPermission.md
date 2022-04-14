@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreItemPermission.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreItemPermission.md
-ms.openlocfilehash: 6bca76e763937ed79c50122d39cba510b5a0ad35
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: db1db90a96707613da46f73421cb04c9319297b0
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140556859"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141788792"
 ---
 # Set-AzDataLakeStoreItemPermission
 
 ## SYNOPSIS
-Mengubah izin oktal file atau folder di Data Lake Store.
+Mengubah oktal izin file atau folder di Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/set-azdatalakestoreitempermission) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,16 +29,16 @@ Set-AzDataLakeStoreItemPermission [-Account] <String> [-Path] <DataLakeStorePath
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzDataLakeStoreItemPermission** memodifikasi oktal izin file atau folder di Data Lake Store.
+Cmdlet **Set-AzDataLakeStoreItemPermission** mengubah oktal izin file atau folder di Data Lake Store.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur izin oktal untuk sebuah item
+### Contoh 1: Mengatur oktal izin untuk item
 ```
 PS C:\>Set-AzDataLakeStoreItemPermission -AccountName "ContosoADL" -Path "/file.txt" -Permission 0770
 ```
 
-Perintah ini mengatur izin oktal untuk file ke 0770, yang menerjemahkan untuk menghapus bit tempel, mengatur izin baca/tulis/jalankan untuk pemilik file, mengatur izin baca/tulis/jalankan untuk grup pemilik file, dan menghapus izin baca/tulis/jalankan untuk orang lain.
+Perintah ini mengatur oktal izin untuk file ke 0770, yang diterjemahkan untuk menghapus bit tempel, mengatur izin baca/tulis/jalankan untuk pemilik file, mengatur izin baca/tulis/jalankan untuk grup pemilik file, dan menghapus izin baca/tulis/eksekusi untuk yang lain.
 
 ## PARAMETERS
 
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -69,8 +72,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur Data Lake Store dari file atau folder, dimulai dengan direktori akar (/).
+### -Jalur
+Menentukan jalur Penyimpanan Data Lake dari file atau folder, dimulai dengan direktori akar (/).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -84,8 +87,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Permission
-Izin untuk mengatur file atau folder, diekspresikan sebagai oktal (misalnya '777')
+### -Izin
+Izin untuk mengatur file atau folder, dinyatakan sebagai oktal (misalnya '777')
 
 ```yaml
 Type: System.Int32
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

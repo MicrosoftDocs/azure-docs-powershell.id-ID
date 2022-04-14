@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeStore/Commands.DataLakeStore/help/Set-AzureRmDataLakeStoreVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeStore/Commands.DataLakeStore/help/Set-AzureRmDataLakeStoreVirtualNetworkRule.md
 ms.openlocfilehash: b05158ae21219760c9c88fe9c0ae3e4978b76f33
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140868253"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141885252"
 ---
 # Set-AzureRmDataLakeStoreVirtualNetworkRule
 
 ## SYNOPSIS
-Mengubah aturan jaringan virtual tertentu di Data Lake Store yang ditentukan.
+Mengubah aturan jaringan virtual tertentu dalam Data Lake Store yang ditentukan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Set-AzureRmDataLakeStoreVirtualNetworkRule [-Account] <String> [-Name] <String> 
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmDataLakeStoreVirtualNetworkRule** memodifikasi aturan jaringan virtual tertentu di Data Lake Store yang ditentukan.
+Cmdlet **Set-AzureRmDataLakeStoreVirtualNetworkRule** mengubah aturan jaringan virtual tertentu dalam Data Lake Store yang ditentukan.
 
 ## EXAMPLES
 
@@ -43,7 +43,7 @@ IgnoreMissingVnetServiceEndpoint :
 State                            :
 ```
 
-Memperbarui id subnet aturan jaringan virtual "myVNET" di akun "dls" menjadi "updatedId"
+Memperbarui id subnet aturan jaringan virtual "myVNET" dalam akun "dls" menjadi "updatedId"
 
 ## PARAMETERS
 
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -3,17 +3,17 @@ external help file: ''
 Module Name: Azs.Subscriptions.Admin
 online version: https://docs.microsoft.com/en-us/powershell/module/azs.subscriptions.admin/remove-azsofferdelegation
 schema: 2.0.0
-ms.openlocfilehash: b332db4dfb0a98d91c0ee0553dd796344934ef6f8bad078a5e26ba3e7aa7f60b
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: e9de73f68501071bceb87c115c2c9882fc5ea988
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416836"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141813218"
 ---
 # Remove-AzsOfferDelegation
 
 ## SYNOPSIS
-Hapus delegasi penawaran tertentu.
+Hapus delegasi penawaran yang ditentukan.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Remove-AzsOfferDelegation -InputObject <ISubscriptionsAdminIdentity> [-DefaultPr
 ```
 
 ## DESCRIPTION
-Hapus delegasi penawaran tertentu.
+Hapus delegasi penawaran yang ditentukan.
 
 ## EXAMPLES
 
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.SubscriptionsAdmin.Models.ISubscriptionsAdminIdentity
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup sumber daya sumber daya yang berada di bawahnya.
+Grup sumber daya tempat sumber daya berada di bawah.
 
 ```yaml
 Type: System.String
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -205,9 +205,9 @@ ALIAS
 
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT <ISubscriptionsAdminIdentity> : Parameter Identitas
+INPUTOBJECT <ISubscriptionsAdminIdentity>: Parameter Identitas
   - `[DelegatedProvider <String>]`: Pengidentifikasi DelegatedProvider.
   - `[DelegatedProviderSubscriptionId <String>]`: Pengidentifikasi langganan penyedia yang didelegasikan.
   - `[Id <String>]`: Jalur identitas sumber daya
@@ -219,8 +219,8 @@ INPUTOBJECT <ISubscriptionsAdminIdentity> : Parameter Identitas
   - `[Plan <String>]`: Nama rencana.
   - `[PlanAcquisitionId <String>]`: Pengidentifikasi akuisisi rencana
   - `[Quota <String>]`: Nama kuota.
-  - `[ResourceGroupName <String>]`: Grup sumber daya yang berada di bawah sumber daya.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[ResourceGroupName <String>]`: Grup sumber daya tempat sumber daya berada di bawah.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
   - `[TargetSubscriptionId <String>]`: ID langganan target.
   - `[Tenant <String>]`: Nama penyewa direktori.
 

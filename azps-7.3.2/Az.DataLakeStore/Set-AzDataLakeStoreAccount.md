@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreAccount.md
-ms.openlocfilehash: 94feae12996a63480c5a0e9fde9deed52d74d4f8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 916418650c7117c8eefc769e3bcfd5b5b3e2ecf0
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140373107"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141788846"
 ---
 # Set-AzDataLakeStoreAccount
 
 ## SYNOPSIS
 Mengubah akun Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/set-azdatalakestoreaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +31,11 @@ Set-AzDataLakeStoreAccount [-Name] <String> [[-DefaultGroup] <String>] [[-Tag] <
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzDataLakeStoreAccount** mengubah akun Data Lake Store.
+Cmdlet **Set-AzDataLakeStoreAccount** memodifikasi akun Data Lake Store.
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan tag ke akun
+### Contoh 1: Menambahkan tag ke akun
 ```powershell
 PS C:\>Set-AzDataLakeStoreAccount -Name "ContosoADL" -Tags @{"stage"="production"}
 ```
@@ -41,7 +44,7 @@ Perintah ini menambahkan tag tertentu ke akun Data Lake Store bernama ContosoADL
 
 ### Contoh 2
 
-Mengubah akun Data Lake Store. (otomatisgenerated)
+Mengubah akun Data Lake Store. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -51,7 +54,7 @@ Set-AzDataLakeStoreAccount -FirewallState Enabled -Name 'ContosoADL'
 ## PARAMETERS
 
 ### -AllowAzureIpState
-Secara opsional izinkan/blokir Azure yang asal IP melalui firewall.
+Secara opsional izinkan/blok Azure asal IP melalui firewall.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Management.DataLake.Store.Models.FirewallAllowAzureIpsState]
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -FirewallState
-Aktifkan atau nonaktifkan aturan firewall yang sudah ada secara opsional.
+Secara opsional mengaktifkan atau menonaktifkan aturan firewall yang sudah ada.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Management.DataLake.Store.Models.FirewallState]
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVersion
-Jika tipe enkripsi adalah Pengguna yang ditetapkan, pengguna bisa memutar versi kunci mereka dengan parameter ini.
+Jika tipe enkripsi ditetapkan pengguna, pengguna dapat memutar versi kunci mereka dengan parameter ini.
 
 ```yaml
 Type: System.String
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama akun Data Lake Store.
+Menentukan nama akun Penyimpanan Data Lake.
 
 ```yaml
 Type: System.String
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi akun Data Lake Store untuk diubah.
+Menentukan nama grup sumber daya yang berisi akun Penyimpanan Data Lake untuk diubah.
 
 ```yaml
 Type: System.String
@@ -174,8 +177,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Tier
-Tingkat komitmen yang diinginkan untuk akun ini digunakan.
+### -Tingkat
+Tingkat komitmen yang diinginkan untuk digunakan akun ini.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Management.DataLake.Store.Models.TierType]
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -TrustedIdProviderState
-Aktifkan atau nonaktifkan penyedia ID tepercaya yang sudah ada secara opsional.
+Aktifkan atau nonaktifkan penyedia ID tepercaya yang sudah ada.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Management.DataLake.Store.Models.TrustedIdProviderState]
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -214,13 +217,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Hashtable
 
-### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Store.Models.TrustedIdProviderState, Microsoft.Azure.Management.DataLake.Store, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Store.Models.TrustedIdProviderState, Microsoft.Azure.Management.DataLake.Store, Version=2.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
-### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Store.Models.FirewallState, Microsoft.Azure.Management.DataLake.Store, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Store.Models.FirewallState, Microsoft.Azure.Management.DataLake.Store, Version=2.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
-### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Store.Models.TierType, Microsoft.Azure.Management.DataLake.Store, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Store.Models.TierType, Microsoft.Azure.Management.DataLake.Store, Version=2.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
-### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Store.Models.FirewallAllowAzureIpsState, Microsoft.Azure.Management.DataLake.Store, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Store.Models.FirewallAllowAzureIpsState, Microsoft.Azure.Management.DataLake.Store, Version=2.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
 ## OUTPUTS
 

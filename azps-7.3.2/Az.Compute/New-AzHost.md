@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azho
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzHost.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzHost.md
-ms.openlocfilehash: 9241a0346726ff36e234665e8d71d8233802fa2e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e8a4223e9daba389caeb752cfdc0d121bf39bd5a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140188616"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141790161"
 ---
 # New-AzHost
 
 ## SYNOPSIS
 Membuat host.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azhost) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,12 +54,12 @@ Location             : eastus
 Tags                 : {"key1":"val2"}
 ```
 
-Perintah ini membuat host Sku yang diberikan dalam grup host yang diberikan dan lokasi tertentu.
+Perintah ini membuat host Sku yang diberikan dalam grup host dan lokasi tertentu.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoReplaceOnFailure
-Menentukan apakah host harus diganti secara otomatis jika terjadi kegagalan. Nilai defaultnya adalah 'true' ketika tidak diberikan.
+Menentukan apakah host harus diganti secara otomatis jika terjadi kegagalan. Nilai defaultnya adalah 'true' ketika tidak disediakan.
 
 ```yaml
 Type: System.Boolean
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -LicenseType
-Menentukan tipe lisensi perangkat lunak yang akan diterapkan ke VM yang digunakan di host. Nilai yang mungkin adalah: Tidak ada, Windows_Server_Hybrid, dan Windows_Server_Perpetual.  Nilai default adalah Tidak Ada.
+Menentukan tipe lisensi perangkat lunak yang akan diterapkan ke VM yang digunakan pada host. Nilai yang memungkinkan adalah: Tidak ada, Windows_Server_Hybrid, dan Windows_Server_Perpetual.  Nilai defaultnya tidak ada.
 
 ```yaml
 Type: Microsoft.Azure.Management.Compute.Models.DedicatedHostLicenseTypes
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlatformFaultDomain
-Menentukan jumlah domain kesalahan platform host.  Lalu nilai minimum adalah 0 dan nilai maksimum adalah 2.
+Menentukan jumlah domain kesalahan platform host.  Maka nilai minimum adalah 0 dan nilai maksimum adalah 2.
 
 ```yaml
 Type: System.Int32
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

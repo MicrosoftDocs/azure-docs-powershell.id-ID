@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.sql/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/New-AzureRmSqlInstanceDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/New-AzureRmSqlInstanceDatabase.md
-ms.openlocfilehash: 8dfd6c9d678abeb1ff34424a70e1e1fe0de5008001a28aabe0231485ebe84056
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 2ef6ff642d22429ae22186ce01a4a17dad125b70
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140852871"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141774575"
 ---
 # New-AzureRmSqlInstanceDatabase
 
 ## SYNOPSIS
-Membuat database Azure SQL Instans Terkelola.
+Membuat database Azure SQL Managed Instance.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -43,7 +43,7 @@ New-AzureRmSqlInstanceDatabase [-Name] <String> [-Collation <String>] [-Tag <Has
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmSqlInstanceDatabase** membuat database contoh Azure SQL Dikelola.
+Cmdlet **New-AzureRmSqlInstanceDatabase** membuat database instans terkelola Azure SQL.
 
 ## EXAMPLES
 
@@ -70,12 +70,12 @@ SourceDatabaseId         :
 FailoverGroupId          :
 ```
 
-Perintah ini membuat database contoh bernama Database01 di contoh managedInstance1.
+Perintah ini membuat database instans bernama Database01 pada instans managedInstance1.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -Collation
-Collation of the Azure SQL Instance Database collation to use.
+Kolatasi kolatasi Database Instans Azure SQL untuk digunakan.
 
 ```yaml
 Type: String
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceObject
-Objek instance
+Objek instans
 
 ```yaml
 Type: AzureSqlManagedInstanceModel
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceResourceId
-Id sumber daya contoh
+Id sumber daya instans
 
 ```yaml
 Type: String
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Database Azure SQL Instance untuk dibuat.
+Nama Database Instans Azure SQL untuk dibuat.
 
 ```yaml
 Type: String
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag yang akan dikaitkan dengan Database Azure Sql Instance
+Tag yang akan dikaitkan dengan Database Instans Azure Sql
 
 ```yaml
 Type: Hashtable
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -241,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,14 +6,14 @@ Help Version: 0.8.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Az.Network.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Az.Network.md
-ms.openlocfilehash: bf1da46459eba1e1cf00858cd492018a6231ffe07cb5a8abcddad04e03983c83
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 969048e491e37e1762ba0256b332d8f943e7f33d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132415897"
 ---
-# Az.Network Module
+# Modul Az.Network
 ## Deskripsi
 Topik ini menampilkan topik bantuan untuk Cmdlet Jaringan Azure.
 
@@ -22,16 +22,16 @@ Topik ini menampilkan topik bantuan untuk Cmdlet Jaringan Azure.
 Menambahkan sertifikat autentikasi ke gateway aplikasi.
 
 ### [Add-AzApplicationGatewayBackendAddressPool](Add-AzApplicationGatewayBackendAddressPool.md)
-Menambahkan gabungan alamat ujung-belakang ke gateway aplikasi.
+Menambahkan kumpulan alamat ujung belakang ke gateway aplikasi.
 
 ### [Add-AzApplicationGatewayBackendHttpSetting](Add-AzApplicationGatewayBackendHttpSetting.md)
 Menambahkan pengaturan HTTP ujung-belakang ke gateway aplikasi.
 
 ### [Add-AzApplicationGatewayFrontendIPConfig](Add-AzApplicationGatewayFrontendIPConfig.md)
-Menambahkan konfigurasi IP front-end ke gateway aplikasi.
+Menambahkan konfigurasi IP ujung depan ke gateway aplikasi.
 
 ### [Add-AzApplicationGatewayFrontendPort](Add-AzApplicationGatewayFrontendPort.md)
-Menambahkan port ujung-depan ke gateway aplikasi.
+Menambahkan port ujung depan ke gateway aplikasi.
 
 ### [Add-AzApplicationGatewayHttpListener](Add-AzApplicationGatewayHttpListener.md)
 Menambahkan pendengar HTTP ke gateway aplikasi.
@@ -40,10 +40,10 @@ Menambahkan pendengar HTTP ke gateway aplikasi.
 Menambahkan konfigurasi IP ke gateway aplikasi.
 
 ### [Add-AzApplicationGatewayProbeConfig](Add-AzApplicationGatewayProbeConfig.md)
-Menambahkan manajemen kesehatan ke Gateway Aplikasi.
+Menambahkan pemeriksaan kesehatan ke Application Gateway.
 
 ### [Add-AzApplicationGatewayRedirectConfiguration](Add-AzApplicationGatewayRedirectConfiguration.md)
-Menambahkan konfigurasi pengalihan ke Gateway Aplikasi.
+Menambahkan konfigurasi pengalihan ke Application Gateway.
 
 ### [Add-AzApplicationGatewayRequestRoutingRule](Add-AzApplicationGatewayRequestRoutingRule.md)
 Menambahkan aturan perutean permintaan ke gateway aplikasi.
@@ -52,7 +52,7 @@ Menambahkan aturan perutean permintaan ke gateway aplikasi.
 Menambahkan sertifikat SSL ke gateway aplikasi.
 
 ### [Add-AzApplicationGatewayUrlPathMapConfig](Add-AzApplicationGatewayUrlPathMapConfig.md)
-Menambahkan array pemetaan jalur URL ke pool server backend.
+Menambahkan array pemetaan jalur URL ke kumpulan server backend.
 
 ### [Add-AzExpressRouteCircuitAuthorization](Add-AzExpressRouteCircuitAuthorization.md)
 Menambahkan otorisasi sirkuit ExpressRoute.
@@ -61,22 +61,22 @@ Menambahkan otorisasi sirkuit ExpressRoute.
 Menambahkan konfigurasi peering ke sirkuit ExpressRoute.
 
 ### [Add-AzLoadBalancerBackendAddressPoolConfig](Add-AzLoadBalancerBackendAddressPoolConfig.md)
-Menambahkan konfigurasi pool alamat backend ke penyeimbang muat.
+Menambahkan konfigurasi kumpulan alamat backend ke penyeimbang muatan.
 
 ### [Add-AzLoadBalancerFrontendIpConfig](Add-AzLoadBalancerFrontendIpConfig.md)
-Menambahkan konfigurasi IP front-end ke penyeimbang muat.
+Menambahkan konfigurasi IP ujung depan ke penyeimbang beban.
 
 ### [Add-AzLoadBalancerInboundNatPoolConfig](Add-AzLoadBalancerInboundNatPoolConfig.md)
 {{Manually Enter Add-AzLoadBalancerInboundNatPoolConfig Description Here}}
 
 ### [Add-AzLoadBalancerInboundNatRuleConfig](Add-AzLoadBalancerInboundNatRuleConfig.md)
-Menambahkan konfigurasi aturan NAT masuk ke penyeimbang muat.
+Menambahkan konfigurasi aturan NAT masuk ke penyeimbang muatan.
 
 ### [Add-AzLoadBalancerProbeConfig](Add-AzLoadBalancerProbeConfig.md)
-Menambahkan konfigurasi configuration configuration to a load balancer.
+Menambahkan konfigurasi probe ke penyeimbang muatan.
 
 ### [Add-AzLoadBalancerRuleConfig](Add-AzLoadBalancerRuleConfig.md)
-Menambahkan konfigurasi aturan ke penyeimbang muat.
+Menambahkan konfigurasi aturan ke penyeimbang muatan.
 
 ### [Add-AzNetworkInterfaceIpConfig](Add-AzNetworkInterfaceIpConfig.md)
 Menambahkan konfigurasi IP antarmuka jaringan ke antarmuka jaringan.
@@ -112,40 +112,40 @@ Mendapatkan gateway aplikasi.
 Mendapatkan sertifikat autentikasi untuk gateway aplikasi.
 
 ### [Get-AzApplicationGatewayAvailableSslOption](Get-AzApplicationGatewayAvailableSslOption.md)
-Mendapatkan semua opsi ssl yang tersedia untuk kebijakan ssl untuk Gateway Aplikasi.
+Mendapatkan semua opsi ssl yang tersedia untuk kebijakan ssl untuk Application Gateway.
 
 ### [Get-AzApplicationGatewayAvailableWafRuleSet](Get-AzApplicationGatewayAvailableWafRuleSet.md)
 Mendapatkan semua kumpulan aturan firewall aplikasi web yang tersedia.
 
 ### [Get-AzApplicationGatewayBackendAddressPool](Get-AzApplicationGatewayBackendAddressPool.md)
-Mendapatkan gabungan alamat ujung-belakang untuk gateway aplikasi.
+Mendapatkan kumpulan alamat ujung belakang untuk gateway aplikasi.
 
 ### [Get-AzApplicationGatewayBackendHealth](Get-AzApplicationGatewayBackendHealth.md)
 Mendapatkan kesehatan backend gateway aplikasi.
 
 ### [Get-AzApplicationGatewayBackendHttpSetting](Get-AzApplicationGatewayBackendHttpSetting.md)
-Mendapatkan pengaturan HTTP ujung belakang dari gateway aplikasi.
+Mendapatkan pengaturan HTTP ujung-belakang gateway aplikasi.
 
-### [Get-AzApplicationGatewayConnectionDriging](Get-AzApplicationGatewayConnectionDraining.md)
-Dapatkan koneksi dengan menghabiskan konfigurasi objek pengaturan HTTP ujung belakang.
+### [Get-AzApplicationGatewayConnectionDraining](Get-AzApplicationGatewayConnectionDraining.md)
+Mendapatkan koneksi menguras konfigurasi objek pengaturan HTTP ujung-belakang.
 
 ### [Get-AzApplicationGatewayFrontendIPConfig](Get-AzApplicationGatewayFrontendIPConfig.md)
-Mendapatkan konfigurasi IP front-end gateway aplikasi.
+Mendapatkan konfigurasi IP ujung depan gateway aplikasi.
 
 ### [Get-AzApplicationGatewayFrontendPort](Get-AzApplicationGatewayFrontendPort.md)
-Mendapatkan port ujung-depan gateway aplikasi.
+Mendapatkan port ujung depan gateway aplikasi.
 
-### [Get-AzApplicationGatewayhttpListener](Get-AzApplicationGatewayHttpListener.md)
-Mendapatkan pendengar HTTP dari gateway aplikasi.
+### [Get-AzApplicationGatewayHttpListener](Get-AzApplicationGatewayHttpListener.md)
+Mendapatkan pendengar HTTP gateway aplikasi.
 
 ### [Get-AzApplicationGatewayIPConfiguration](Get-AzApplicationGatewayIPConfiguration.md)
 Mendapatkan konfigurasi IP gateway aplikasi.
 
 ### [Get-AzApplicationGatewayProbeConfig](Get-AzApplicationGatewayProbeConfig.md)
-Mendapatkan konfigurasi konfigurasi konfigurasi konfigurasi kesehatan yang sudah ada dari Gateway Aplikasi.
+Mendapatkan konfigurasi pemeriksaan kesehatan yang sudah ada dari Application Gateway.
 
 ### [Get-AzApplicationGatewayRedirectConfiguration](Get-AzApplicationGatewayRedirectConfiguration.md)
-Mendapatkan konfigurasi pengalihan yang sudah ada dari Gateway Aplikasi.
+Mendapatkan konfigurasi pengalihan yang sudah ada dari Application Gateway.
 
 ### [Get-AzApplicationGatewayRequestRoutingRule](Get-AzApplicationGatewayRequestRoutingRule.md)
 Mendapatkan aturan perutean permintaan gateway aplikasi.
@@ -160,10 +160,10 @@ Mendapatkan sertifikat SSL untuk gateway aplikasi.
 Mendapatkan kebijakan SSL gateway aplikasi.
 
 ### [Get-AzApplicationGatewaySslPredefinedPolicy](Get-AzApplicationGatewaySslPredefinedPolicy.md)
-Mendapatkan Kebijakan SSL yang Sudah Ditentukan Sebelumnya yang disediakan oleh Gateway Aplikasi.
+Mendapatkan Kebijakan SSL yang Sudah Ditentukan sebelumnya yang disediakan oleh Application Gateway.
 
 ### [Get-AzApplicationGatewayUrlPathMapConfig](Get-AzApplicationGatewayUrlPathMapConfig.md)
-Mendapatkan array pemetaan jalur URL ke pool server backend.
+Mendapatkan array pemetaan jalur URL ke kumpulan server backend.
 
 ### [Get-AzApplicationGatewayWebApplicationFirewallConfiguration](Get-AzApplicationGatewayWebApplicationFirewallConfiguration.md)
 Mendapatkan konfigurasi WAF gateway aplikasi.
@@ -181,13 +181,13 @@ Mendapatkan grup keamanan jaringan yang efektif dari antarmuka jaringan.
 Mendapatkan tabel rute antarmuka jaringan yang efektif.
 
 ### [Get-AzExpressRouteCircuit](Get-AzExpressRouteCircuit.md)
-Dapatkan sirkuit Azure ExpressRoute dari Azure.
+Mendapatkan sirkuit Azure ExpressRoute dari Azure.
 
 ### [Get-AzExpressRouteCircuitARPTable](Get-AzExpressRouteCircuitARPTable.md)
-Dapatkan tabel ARP dari sirkuit ExpressRoute.
+Mendapatkan tabel ARP dari sirkuit ExpressRoute.
 
 ### [Get-AzExpressRouteCircuitAuthorization](Get-AzExpressRouteCircuitAuthorization.md)
-Dapatkan informasi tentang otorisasi sirkuit ExpressRoute.
+Mendapatkan informasi tentang otorisasi sirkuit ExpressRoute.
 
 ### [Get-AzExpressRouteCircuitPeeringConfig](Get-AzExpressRouteCircuitPeeringConfig.md)
 Mendapatkan konfigurasi peering sirkuit ExpressRoute.
@@ -196,34 +196,34 @@ Mendapatkan konfigurasi peering sirkuit ExpressRoute.
 Mendapatkan tabel rute dari sirkuit ExpressRoute.
 
 ### [Get-AzExpressRouteCircuitRouteTableSummary](Get-AzExpressRouteCircuitRouteTableSummary.md)
-Mendapatkan ringkasan tabel rute dari sirkuit ExpressRoute.
+Mendapatkan ringkasan tabel rute sirkuit ExpressRoute.
 
 ### [Get-AzExpressRouteCircuitStat](Get-AzExpressRouteCircuitStat.md)
-Dapatkan statistik penggunaan sirkuit ExpressRoute.
+Mendapatkan statistik penggunaan sirkuit ExpressRoute.
 
 ### [Get-AzExpressRouteServiceProvider](Get-AzExpressRouteServiceProvider.md)
 Mendapatkan daftar penyedia layanan ExpressRoute dan atributnya.
 
 ### [Get-AzLoadBalancer](Get-AzLoadBalancer.md)
-Mendapatkan penyeimbang muat.
+Mendapatkan penyeimbang beban.
 
 ### [Get-AzLoadBalancerBackendAddressPoolConfig](Get-AzLoadBalancerBackendAddressPoolConfig.md)
-Mendapatkan konfigurasi pool alamat backend untuk penyeimbang muat.
+Mendapatkan konfigurasi kumpulan alamat backend untuk penyeimbang beban.
 
 ### [Get-AzLoadBalancerFrontendIpConfig](Get-AzLoadBalancerFrontendIpConfig.md)
-Mendapatkan konfigurasi IP front-end di penyeimbang muat.
+Mendapatkan konfigurasi IP ujung depan dalam penyeimbang beban.
 
 ### [Get-AzLoadBalancerInboundNatPoolConfig](Get-AzLoadBalancerInboundNatPoolConfig.md)
 {{Manually Enter Get-AzLoadBalancerInboundNatPoolConfig Description Here}}
 
 ### [Get-AzLoadBalancerInboundNatRuleConfig](Get-AzLoadBalancerInboundNatRuleConfig.md)
-Mendapatkan konfigurasi aturan NAT masuk untuk penyeimbang muat.
+Mendapatkan konfigurasi aturan NAT masuk untuk penyeimbang beban.
 
 ### [Get-AzLoadBalancerProbeConfig](Get-AzLoadBalancerProbeConfig.md)
-Mendapatkan konfigurasi configuration configuration for a load balancer.
+Mendapatkan konfigurasi probe untuk penyeimbang beban.
 
 ### [Get-AzLoadBalancerRuleConfig](Get-AzLoadBalancerRuleConfig.md)
-Mendapatkan konfigurasi aturan untuk penyeimbang muat.
+Mendapatkan konfigurasi aturan untuk penyeimbang muatan.
 
 ### [Get-AzLocalNetworkGateway](Get-AzLocalNetworkGateway.md)
 Mendapatkan Gateway Jaringan Lokal
@@ -238,43 +238,43 @@ Mendapatkan konfigurasi IP antarmuka jaringan untuk antarmuka jaringan.
 Mendapatkan grup keamanan jaringan.
 
 ### [Get-AzNetworkSecurityRuleConfig](Get-AzNetworkSecurityRuleConfig.md)
-Mendapatkan konfigurasi aturan keamanan jaringan untuk grup keamanan jaringan.
+Dapatkan konfigurasi aturan keamanan jaringan untuk grup keamanan jaringan.
 
 ### [Get-AzNetworkUsage](Get-AzNetworkUsage.md)
 Mencantumkan penggunaan jaringan untuk langganan
 
 ### [Get-AzNetworkWatcher](Get-AzNetworkWatcher.md)
-Mendapatkan properti Pengawas Jaringan
+Mendapatkan properti Network Watcher
 
 ### [Get-AzNetworkWatcherFlowLogStatus](Get-AzNetworkWatcherFlowLogStatus.md)
 Mendapatkan status pembuatan log aliran pada sumber daya.
 
 ### [Get-AzNetworkWatcherNextHop](Get-AzNetworkWatcherNextHop.md)
-Mendapatkan lompatan berikutnya dari VM.
+Dapatkan hop berikutnya dari VM.
 
 ### [Get-AzNetworkWatcherPacketCapture](Get-AzNetworkWatcherPacketCapture.md)
 Mendapatkan informasi dan properti serta status sumber daya penangkapan paket.
 
-### [Get-AzNetworkWatcherReachabilityProvidersList](Get-AzNetworkWatcherReachabilityProvidersList.md)
+### [Get-AzNetworkWatcherReacherReachabilityProvidersList](Get-AzNetworkWatcherReachabilityProvidersList.md)
 Mencantumkan semua penyedia layanan internet yang tersedia untuk kawasan Azure tertentu.
 
-### [Get-AzNetworkWatcherReachabilityReport](Get-AzNetworkWatcherReachabilityReport.md)
+### [Get-AzNetworkWatcherReacherReportability](Get-AzNetworkWatcherReachabilityReport.md)
 Mendapatkan skor latensi relatif untuk penyedia layanan internet dari lokasi tertentu ke kawasan Azure.
 
 ### [Get-AzNetworkWatcherSecurityGroupView](Get-AzNetworkWatcherSecurityGroupView.md)
-Lihat aturan grup keamanan jaringan yang dikonfigurasi dan efektif yang diterapkan pada VM.
+Menampilkan aturan grup keamanan jaringan yang dikonfigurasi dan efektif yang diterapkan pada VM.
 
 ### [Get-AzNetworkWatcherTopology](Get-AzNetworkWatcherTopology.md)
-Mendapatkan tampilan tingkat jaringan sumber daya dan hubungannya di grup sumber daya.
+Mendapatkan tampilan tingkat jaringan sumber daya dan hubungannya dalam grup sumber daya.
 
 ### [Get-AzNetworkWatcherTroubleshootingResult](Get-AzNetworkWatcherTroubleshootingResult.md)
-Mendapatkan hasil pemecahan masalah dari operasi pemecahan masalah yang sebelumnya sedang berjalan atau yang sedang berjalan.
+Mendapatkan hasil pemecahan masalah dari operasi pemecahan masalah yang dijalankan sebelumnya atau yang sedang berjalan.
 
 ### [Get-AzPublicIpAddress](Get-AzPublicIpAddress.md)
 Mendapatkan alamat IP publik.
 
 ### [Get-AzRouteConfig](Get-AzRouteConfig.md)
-Mendapatkan rute dari tabel rute.
+Mendapatkan rute dari meja rute.
 
 ### [Get-AzRouteFilter](Get-AzRouteFilter.md)
 {{Fill in the Synopsis}}
@@ -292,22 +292,22 @@ Mendapatkan jaringan virtual dalam grup sumber daya.
 Mencantumkan layanan titik akhir yang tersedia untuk lokasi.
 
 ### [Get-AzVirtualNetworkGateway](Get-AzVirtualNetworkGateway.md)
-Mendapatkan Gateway Jaringan Virtual
+Mendapatkan Gateway Virtual Network
 
 ### [Get-AzVirtualNetworkGatewayAdvertisedRoute](Get-AzVirtualNetworkGatewayAdvertisedRoute.md)
-Mencantumkan rute yang diiklankan oleh gateway jaringan virtual Azure
+Mencantumkan rute yang sedang diiklankan oleh gateway jaringan virtual Azure
 
 ### [Get-AzVirtualNetworkGatewayBGPPeerStatus](Get-AzVirtualNetworkGatewayBGPPeerStatus.md)
 Mencantumkan rekan BGP gateway jaringan virtual Azure
 
 ### [Get-AzVirtualNetworkGatewayConnection](Get-AzVirtualNetworkGatewayConnection.md)
-Mendapatkan Koneksi Gateway Jaringan Virtual
+Mendapatkan Koneksi Gateway Virtual Network
 
 ### [Get-AzVirtualNetworkGatewayConnectionSharedKey](Get-AzVirtualNetworkGatewayConnectionSharedKey.md)
 {{Manually Enter Get-AzVirtualNetworkGatewayConnectionSharedKey Description Here}}
 
 ### [Get-AzVirtualNetworkGatewayConnectionVpnDeviceConfigScript](Get-AzVirtualNetworkGatewayConnectionVpnDeviceConfigScript.md)
-Commandlet ini mengambil sumber daya koneksi, merek perangkat VPN, model, versi firmware, dan mengembalikan skrip konfigurasi terkait yang bisa diterapkan secara langsung pada perangkat VPN lokal mereka. Skrip akan mengikuti sintaks perangkat yang dipilih, dan mengisi parameter yang diperlukan seperti alamat IP publik gateway Azure, prefiks alamat jaringan virtual, kunci vpn vpn yang telah dibagikan sebelumnya, dll. agar pelanggan cukup menyalin-menempelkan ke konfigurasi perangkat VPN mereka.
+Commandlet ini mengambil sumber daya koneksi, merek perangkat VPN, model, versi firmware, dan mengembalikan skrip konfigurasi terkait yang dapat diterapkan langsung oleh pelanggan di perangkat VPN lokal mereka. Skrip akan mengikuti sintaks perangkat yang dipilih, dan mengisi parameter yang diperlukan seperti alamat IP publik gateway Azure, prefiks alamat jaringan virtual, kunci terowongan VPN yang telah dibagikan sebelumnya, dll. sehingga pelanggan cukup menyalin-tempel ke konfigurasi perangkat VPN mereka.
 
 ### [Get-AzVirtualNetworkGatewayLearnedRoute](Get-AzVirtualNetworkGatewayLearnedRoute.md)
 Mencantumkan rute yang dipelajari oleh gateway jaringan virtual Azure
@@ -319,13 +319,13 @@ Commandlet ini mengembalikan daftar merek, model, dan versi firmware perangkat V
 Mendapatkan peering jaringan virtual.
 
 ### [Get-AzVirtualNetworkSubnetConfig](Get-AzVirtualNetworkSubnetConfig.md)
-Mendapatkan subnet dalam jaringan virtual.
+Mendapatkan subnet di jaringan virtual.
 
 ### [Get-AzVirtualNetworkUsageList](Get-AzVirtualNetworkUsageList.md)
 Mendapatkan penggunaan jaringan virtual saat ini.
 
 ### [Get-AzVpnClientConfiguration](Get-AzVpnClientConfiguration.md)
-Memungkinkan pengguna untuk mengunduh paket Profil Vpn yang dihasilkan menggunakan commandlet New-AzVpnClientConfiguration dengan mudah.
+Memungkinkan pengguna mengunduh paket Profil Vpn yang dihasilkan dengan mudah menggunakan commandlet New-AzVpnClientConfiguration.
 
 ### [Get-AzVpnClientPackage](Get-AzVpnClientPackage.md)
 Mendapatkan informasi tentang paket klien VPN.
@@ -337,7 +337,7 @@ Mendapatkan informasi tentang sertifikat pembatalan klien VPN.
 Mendapatkan informasi tentang sertifikat akar VPN.
 
 ### [Move-AzExpressRouteCircuit](Move-AzExpressRouteCircuit.md)
-Memindahkan sirkuit ExpressRoute dari model penyebaran klasik ke model penyebaran Manajer Sumber Daya.
+Memindahkan sirkuit ExpressRoute dari model penyebaran klasik ke model penyebaran Resource Manager.
 
 ### [New-AzApplicationGateway](New-AzApplicationGateway.md)
 Membuat gateway aplikasi.
@@ -346,22 +346,22 @@ Membuat gateway aplikasi.
 Membuat sertifikat autentikasi untuk gateway aplikasi.
 
 ### [New-AzApplicationGatewayBackendAddressPool](New-AzApplicationGatewayBackendAddressPool.md)
-Membuat sebuah gabungan alamat ujung-belakang untuk gateway aplikasi.
+Membuat kumpulan alamat ujung belakang untuk gateway aplikasi.
 
 ### [New-AzApplicationGatewayBackendHttpSetting](New-AzApplicationGatewayBackendHttpSetting.md)
 Membuat pengaturan HTTP ujung-belakang untuk gateway aplikasi.
 
-### [New-AzApplicationGatewayConnectionDriging](New-AzApplicationGatewayConnectionDraining.md)
-Membuat koneksi baru dengan cepat konfigurasi untuk pengaturan HTTP ujung belakang.
+### [New-AzApplicationGatewayConnectionDraining](New-AzApplicationGatewayConnectionDraining.md)
+Membuat konfigurasi pengeringan koneksi baru untuk pengaturan HTTP ujung-belakang.
 
 ### [New-AzApplicationGatewayFirewallDisabledRuleGroupConfig](New-AzApplicationGatewayFirewallDisabledRuleGroupConfig.md)
-Membuat konfigurasi grup aturan dinonaktifkan yang baru.
+Membuat konfigurasi grup aturan baru yang dinonaktifkan.
 
 ### [New-AzApplicationGatewayFrontendIPConfig](New-AzApplicationGatewayFrontendIPConfig.md)
-Membuat konfigurasi IP front-end untuk gateway aplikasi.
+Membuat konfigurasi IP ujung depan untuk gateway aplikasi.
 
 ### [New-AzApplicationGatewayFrontendPort](New-AzApplicationGatewayFrontendPort.md)
-Membuat port ujung-depan untuk gateway aplikasi.
+Membuat port ujung depan untuk gateway aplikasi.
 
 ### [New-AzApplicationGatewayHttpListener](New-AzApplicationGatewayHttpListener.md)
 Membuat pendengar HTTP untuk gateway aplikasi.
@@ -373,10 +373,10 @@ Membuat konfigurasi IP untuk gateway aplikasi.
 Membuat aturan jalur gateway aplikasi.
 
 ### [New-AzApplicationGatewayProbeConfig](New-AzApplicationGatewayProbeConfig.md)
-Membuat health healthkese.
+Membuat pemeriksaan kesehatan.
 
 ### [New-AzApplicationGatewayProbeHealthResponseMatch](New-AzApplicationGatewayProbeHealthResponseMatch.md)
-Membuat kecocokan respons default kesehatan yang digunakan oleh Health Health Health untuk gateway aplikasi.
+Membuat kecocokan respons pemeriksaan kesehatan yang digunakan oleh Health Probe untuk gateway aplikasi.
 
 ### [New-AzApplicationGatewayRedirectConfiguration](New-AzApplicationGatewayRedirectConfiguration.md)
 Membuat konfigurasi pengalihan untuk gateway aplikasi.
@@ -394,7 +394,7 @@ Membuat sertifikat SSL untuk gateway aplikasi Azure.
 Membuat kebijakan SSL untuk gateway aplikasi.
 
 ### [New-AzApplicationGatewayUrlPathMapConfig](New-AzApplicationGatewayUrlPathMapConfig.md)
-Membuat array pemetaan jalur URL ke pool server backend.
+Membuat array pemetaan jalur URL ke kumpulan server backend.
 
 ### [New-AzApplicationGatewayWebApplicationFirewallConfiguration](New-AzApplicationGatewayWebApplicationFirewallConfiguration.md)
 Membuat konfigurasi WAF untuk gateway aplikasi.
@@ -403,7 +403,7 @@ Membuat konfigurasi WAF untuk gateway aplikasi.
 Membuat grup keamanan aplikasi.
 
 ### [New-AzExpressRouteCircuit](New-AzExpressRouteCircuit.md)
-Membuat sirkuit rute ekspres Azure.
+Membuat sirkuit rute Azure express.
 
 ### [New-AzExpressRouteCircuitAuthorization](New-AzExpressRouteCircuitAuthorization.md)
 Membuat otorisasi sirkuit ExpressRoute.
@@ -415,25 +415,25 @@ Membuat konfigurasi peering baru untuk ditambahkan ke sirkuit ExpressRoute.
 Membuat Kebijakan IPSec.
 
 ### [New-AzLoadBalancer](New-AzLoadBalancer.md)
-Membuat penyeimbang muat.
+Membuat penyeimbang beban.
 
 ### [New-AzLoadBalancerBackendAddressPoolConfig](New-AzLoadBalancerBackendAddressPoolConfig.md)
-Membuat konfigurasi pool alamat backend untuk penyeimbang muat.
+Membuat konfigurasi kumpulan alamat backend untuk penyeimbang muatan.
 
 ### [New-AzLoadBalancerFrontendIpConfig](New-AzLoadBalancerFrontendIpConfig.md)
-Membuat konfigurasi IP front-end untuk penyeimbang muat.
+Membuat konfigurasi IP ujung depan untuk penyeimbang beban.
 
 ### [New-AzLoadBalancerInboundNatPoolConfig](New-AzLoadBalancerInboundNatPoolConfig.md)
 {{Manually Enter New-AzLoadBalancerInboundNatPoolConfig Description Here}}
 
 ### [New-AzLoadBalancerInboundNatRuleConfig](New-AzLoadBalancerInboundNatRuleConfig.md)
-Membuat konfigurasi aturan NAT masuk untuk penyeimbang muat.
+Membuat konfigurasi aturan NAT masuk untuk penyeimbang beban.
 
 ### [New-AzLoadBalancerProbeConfig](New-AzLoadBalancerProbeConfig.md)
-Membuat konfigurasi configuration configuration for a load balancer.
+Membuat konfigurasi probe untuk load balancer.
 
 ### [New-AzLoadBalancerRuleConfig](New-AzLoadBalancerRuleConfig.md)
-Membuat konfigurasi aturan untuk penyeimbang muat.
+Membuat konfigurasi aturan untuk penyeimbang muatan.
 
 ### [New-AzLocalNetworkGateway](New-AzLocalNetworkGateway.md)
 Membuat Gateway Jaringan Lokal
@@ -451,13 +451,13 @@ Membuat grup keamanan jaringan.
 Membuat konfigurasi aturan keamanan jaringan.
 
 ### [New-AzNetworkWatcher](New-AzNetworkWatcher.md)
-Membuat sumber daya Pengawas Jaringan baru.
+Membuat sumber daya Network Watcher baru.
 
 ### [New-AzNetworkWatcherPacketCapture](New-AzNetworkWatcherPacketCapture.md)
-Membuat sumber daya penangkapan paket baru dan memulai sesi penangkapan paket pada VM.
+Membuat sumber daya tangkapan paket baru dan memulai sesi pengambilan paket pada VM.
 
 ### [New-AzPacketCaptureFilterConfig](New-AzPacketCaptureFilterConfig.md)
-Membuat objek filter pengambilan paket baru.
+Membuat objek filter penangkapan paket baru.
 
 ### [New-AzPublicIpAddress](New-AzPublicIpAddress.md)
 Membuat alamat IP publik.
@@ -465,7 +465,7 @@ Membuat alamat IP publik.
 ### [New-AzRouteConfig](New-AzRouteConfig.md)
 Membuat rute untuk tabel rute.
 
-### [New-AzRouteFilter](New-AzRouteFilter.md)
+### [Filter AzRoute Baru](New-AzRouteFilter.md)
 Membuat filter rute.
 
 ### [New-AzRouteFilterRuleConfig](New-AzRouteFilterRuleConfig.md)
@@ -478,25 +478,25 @@ Membuat tabel rute.
 Membuat jaringan virtual.
 
 ### [New-AzVirtualNetworkGateway](New-AzVirtualNetworkGateway.md)
-Membuat Gateway Jaringan Virtual
+Membuat Gateway Virtual Network
 
 ### [New-AzVirtualNetworkGatewayConnection](New-AzVirtualNetworkGatewayConnection.md)
 {{Manually Enter New-AzVirtualNetworkGatewayConnection Description Here}}
 
 ### [New-AzVirtualNetworkGatewayIpConfig](New-AzVirtualNetworkGatewayIpConfig.md)
-Membuat Konfigurasi IP untuk Gateway Jaringan Virtual
+Membuat Konfigurasi IP untuk Gateway Virtual Network
 
 ### [New-AzVirtualNetworkSubnetConfig](New-AzVirtualNetworkSubnetConfig.md)
 Membuat konfigurasi subnet jaringan virtual.
 
 ### [New-AzVpnClientConfiguration](New-AzVpnClientConfiguration.md)
-Perintah ini memungkinkan pengguna untuk membuat paket profil VPN berdasarkan pengaturan vpn yang telah dikonfigurasi sebelumnya di gateway VPN, selain beberapa pengaturan tambahan yang mungkin perlu dikonfigurasi pengguna, misalnya beberapa sertifikat akar.
+Perintah ini memungkinkan pengguna untuk membuat paket profil Vpn berdasarkan pengaturan vpn yang telah dikonfigurasi sebelumnya pada gateway VPN, selain beberapa pengaturan tambahan yang mungkin perlu dikonfigurasi pengguna, misalnya beberapa sertifikat akar.
 
 ### [New-AzVpnClientRevokedCertificate](New-AzVpnClientRevokedCertificate.md)
-Membuat sertifikat pencabutan klien VPN baru.
+Membuat sertifikat pembatalan klien VPN baru.
 
 ### [New-AzVpnClientRootCertificate](New-AzVpnClientRootCertificate.md)
-Membuat sertifikat akar klien VPN yang baru.
+Membuat sertifikat akar klien VPN baru.
 
 ### [Remove-AzApplicationGateway](Remove-AzApplicationGateway.md)
 Menghapus gateway aplikasi.
@@ -505,31 +505,31 @@ Menghapus gateway aplikasi.
 Menghapus sertifikat autentikasi dari gateway aplikasi.
 
 ### [Remove-AzApplicationGatewayBackendAddressPool](Remove-AzApplicationGatewayBackendAddressPool.md)
-Menghapus gabungan alamat ujung-belakang dari gateway aplikasi.
+Menghapus kumpulan alamat ujung belakang dari gateway aplikasi.
 
 ### [Remove-AzApplicationGatewayBackendHttpSetting](Remove-AzApplicationGatewayBackendHttpSetting.md)
 Menghapus pengaturan HTTP ujung-belakang dari gateway aplikasi.
 
-### [Remove-AzApplicationGatewayConnectionDriging](Remove-AzApplicationGatewayConnectionDraining.md)
-Menghapus konfigurasi koneksi dari objek pengaturan HTTP ujung belakang.
+### [Remove-AzApplicationGatewayConnectionDraining](Remove-AzApplicationGatewayConnectionDraining.md)
+Menghapus koneksi yang menguras konfigurasi objek pengaturan HTTP ujung-belakang.
 
 ### [Remove-AzApplicationGatewayFrontendIPConfig](Remove-AzApplicationGatewayFrontendIPConfig.md)
-Menghapus konfigurasi IP ujung-depan dari gateway aplikasi.
+Menghapus konfigurasi IP ujung depan dari gateway aplikasi.
 
 ### [Remove-AzApplicationGatewayFrontendPort](Remove-AzApplicationGatewayFrontendPort.md)
-Menghapus port ujung-depan dari gateway aplikasi.
+Menghapus port ujung depan dari gateway aplikasi.
 
-### [Remove-AzApplicationGatewayhttpListener](Remove-AzApplicationGatewayHttpListener.md)
+### [Remove-AzApplicationGatewayHttpListener](Remove-AzApplicationGatewayHttpListener.md)
 Menghapus pendengar HTTP dari gateway aplikasi.
 
 ### [Remove-AzApplicationGatewayIPConfiguration](Remove-AzApplicationGatewayIPConfiguration.md)
 Menghapus konfigurasi IP dari gateway aplikasi.
 
 ### [Remove-AzApplicationGatewayProbeConfig](Remove-AzApplicationGatewayProbeConfig.md)
-Menghapus properti kesehatan dari gateway aplikasi yang sudah ada.
+Menghapus pemeriksaan kesehatan dari gateway aplikasi yang sudah ada.
 
 ### [Remove-AzApplicationGatewayRedirectConfiguration](Remove-AzApplicationGatewayRedirectConfiguration.md)
-Menghapus konfigurasi pengalihan dari Gateway Aplikasi yang sudah ada.
+Menghapus konfigurasi pengalihan dari Application Gateway yang sudah ada.
 
 ### [Remove-AzApplicationGatewayRequestRoutingRule](Remove-AzApplicationGatewayRequestRoutingRule.md)
 Menghapus aturan perutean permintaan dari gateway aplikasi.
@@ -541,7 +541,7 @@ Menghapus sertifikat SSL dari gateway aplikasi Azure.
 Menghapus kebijakan SSL dari gateway aplikasi Azure.
 
 ### [Remove-AzApplicationGatewayUrlPathMapConfig](Remove-AzApplicationGatewayUrlPathMapConfig.md)
-Menghapus pemetaan jalur URL ke sebuah pool server backend.
+Menghapus pemetaan jalur URL ke kumpulan server backend.
 
 ### [Remove-AzApplicationSecurityGroup](Remove-AzApplicationSecurityGroup.md)
 Menghapus grup keamanan aplikasi.
@@ -556,25 +556,25 @@ Menghapus otorisasi konfigurasi ExpressRoute yang sudah ada.
 Menghapus konfigurasi peering sirkuit ExpressRoute.
 
 ### [Remove-AzLoadBalancer](Remove-AzLoadBalancer.md)
-Menghapus penyeimbang muat.
+Menghapus penyeimbang beban.
 
 ### [Remove-AzLoadBalancerBackendAddressPoolConfig](Remove-AzLoadBalancerBackendAddressPoolConfig.md)
-Menghapus konfigurasi pool alamat backend dari penyeimbang muat.
+Menghapus konfigurasi kumpulan alamat backend dari penyeimbang muatan.
 
 ### [Remove-AzLoadBalancerFrontendIpConfig](Remove-AzLoadBalancerFrontendIpConfig.md)
-Menghapus konfigurasi IP front-end dari penyeimbang muat.
+Menghapus konfigurasi IP ujung depan dari penyeimbang beban.
 
 ### [Remove-AzLoadBalancerInboundNatPoolConfig](Remove-AzLoadBalancerInboundNatPoolConfig.md)
 {{Manually Enter Remove-AzLoadBalancerInboundNatPoolConfig Description Here}}
 
 ### [Remove-AzLoadBalancerInboundNatRuleConfig](Remove-AzLoadBalancerInboundNatRuleConfig.md)
-Menghapus konfigurasi aturan NAT masuk dari penyeimbang muat.
+Menghapus konfigurasi aturan NAT masuk dari penyeimbang muatan.
 
 ### [Remove-AzLoadBalancerProbeConfig](Remove-AzLoadBalancerProbeConfig.md)
-Menghapus konfigurasi konfigurasi konfigurasi konfigurasi konfigurasi dari penyeimbang muat.
+Menghapus konfigurasi probe dari load balancer.
 
 ### [Remove-AzLoadBalancerRuleConfig](Remove-AzLoadBalancerRuleConfig.md)
-Menghapus konfigurasi aturan untuk penyeimbang muat.
+Menghapus konfigurasi aturan untuk penyeimbang muatan.
 
 ### [Remove-AzLocalNetworkGateway](Remove-AzLocalNetworkGateway.md)
 Menghapus Gateway Jaringan Lokal
@@ -591,11 +591,11 @@ Menghapus grup keamanan jaringan.
 ### [Remove-AzNetworkSecurityRuleConfig](Remove-AzNetworkSecurityRuleConfig.md)
 Menghapus aturan keamanan jaringan dari grup keamanan jaringan.
 
-### [Remove-AzNetworkWatcher](Remove-AzNetworkWatcher.md)
-Menghapus Pengawas Jaringan.
+### [Hapus-AzNetworkWatcher](Remove-AzNetworkWatcher.md)
+Menghapus Network Watcher.
 
 ### [Remove-AzNetworkWatcherPacketCapture](Remove-AzNetworkWatcherPacketCapture.md)
-Menghapus sumber daya pengambilan paket.
+Menghapus sumber daya penangkapan paket.
 
 ### [Remove-AzPublicIpAddress](Remove-AzPublicIpAddress.md)
 Menghapus alamat IP publik.
@@ -603,7 +603,7 @@ Menghapus alamat IP publik.
 ### [Remove-AzRouteConfig](Remove-AzRouteConfig.md)
 Menghapus rute dari tabel rute.
 
-### [Remove-AzRouteFilter](Remove-AzRouteFilter.md)
+### [Hapus-AzRouteFilter](Remove-AzRouteFilter.md)
 {{Fill in the Synopsis}}
 
 ### [Remove-AzRouteFilterRuleConfig](Remove-AzRouteFilterRuleConfig.md)
@@ -616,10 +616,10 @@ Menghapus tabel rute.
 Menghapus jaringan virtual.
 
 ### [Remove-AzVirtualNetworkGateway](Remove-AzVirtualNetworkGateway.md)
-Menghapus Gateway Jaringan Virtual
+Menghapus Gateway Virtual Network
 
 ### [Remove-AzVirtualNetworkGatewayConnection](Remove-AzVirtualNetworkGatewayConnection.md)
-Menghapus Koneksi Gateway Jaringan Virtual
+Menghapus Koneksi Gateway Virtual Network
 
 ### [Remove-AzVirtualNetworkGatewayDefaultSite](Remove-AzVirtualNetworkGatewayDefaultSite.md)
 Menghapus situs default dari gateway jaringan virtual.
@@ -630,7 +630,7 @@ Menghapus situs default dari gateway jaringan virtual.
 ### [Remove-AzVirtualNetworkPeering](Remove-AzVirtualNetworkPeering.md)
 {{Manually Enter Remove-AzVirtualNetworkPeering Description Here}}
 
-### [Remove-AzVirtualNetworksubnetConfig](Remove-AzVirtualNetworkSubnetConfig.md)
+### [Remove-AzVirtualNetworkSubnetConfig](Remove-AzVirtualNetworkSubnetConfig.md)
 Menghapus konfigurasi subnet dari jaringan virtual.
 
 ### [Remove-AzVpnClientRevokedCertificate](Remove-AzVpnClientRevokedCertificate.md)
@@ -645,7 +645,7 @@ Menghapus sertifikat akar klien VPN yang sudah ada.
 ### [Reset-AzVirtualNetworkGatewayConnectionSharedKey](Reset-AzVirtualNetworkGatewayConnectionSharedKey.md)
 {{Manually Enter Reset-AzVirtualNetworkGatewayConnectionSharedKey Description Here}}
 
-### [Resize-AzVirtualNetworkGateway](Resize-AzVirtualNetworkGateway.md)
+### [Mengubah ukuran-AzVirtualNetworkGateway](Resize-AzVirtualNetworkGateway.md)
 Mengubah ukuran gateway jaringan virtual yang sudah ada.
 
 ### [Set-AzApplicationGateway](Set-AzApplicationGateway.md)
@@ -655,31 +655,31 @@ Memperbarui gateway aplikasi.
 Memperbarui sertifikat autentikasi untuk gateway aplikasi.
 
 ### [Set-AzApplicationGatewayBackendAddressPool](Set-AzApplicationGatewayBackendAddressPool.md)
-Memperbarui sebuah gabungan alamat ujung-belakang untuk gateway aplikasi.
+Memperbarui kumpulan alamat ujung belakang untuk gateway aplikasi.
 
 ### [Set-AzApplicationGatewayBackendHttpSetting](Set-AzApplicationGatewayBackendHttpSetting.md)
 Memperbarui pengaturan HTTP ujung-belakang untuk gateway aplikasi.
 
-### [Set-AzApplicationGatewayConnectionDriging](Set-AzApplicationGatewayConnectionDraining.md)
-Mengubah konfigurasi koneksi dari objek pengaturan HTTP ujung-belakang.
+### [Set-AzApplicationGatewayConnectionDraining](Set-AzApplicationGatewayConnectionDraining.md)
+Mengubah konfigurasi koneksi yang menguras objek pengaturan HTTP ujung-belakang.
 
 ### [Set-AzApplicationGatewayFrontendIPConfig](Set-AzApplicationGatewayFrontendIPConfig.md)
-Mengubah konfigurasi alamat IP ujung-depan.
+Mengubah konfigurasi alamat IP ujung depan.
 
 ### [Set-AzApplicationGatewayFrontendPort](Set-AzApplicationGatewayFrontendPort.md)
-Mengubah port ujung-depan untuk gateway aplikasi.
+Mengubah port ujung depan untuk gateway aplikasi.
 
 ### [Set-AzApplicationGatewayHttpListener](Set-AzApplicationGatewayHttpListener.md)
-Mengubah pendengar HTTP untuk gateway aplikasi.
+Memodifikasi pendengar HTTP untuk gateway aplikasi.
 
 ### [Set-AzApplicationGatewayIPConfiguration](Set-AzApplicationGatewayIPConfiguration.md)
 Mengubah konfigurasi IP untuk gateway aplikasi.
 
 ### [Set-AzApplicationGatewayProbeConfig](Set-AzApplicationGatewayProbeConfig.md)
-Mengatur konfigurasi konfigurasi konfigurasi konfigurasi konfigurasi kesehatan pada Gateway Aplikasi yang sudah ada.
+Mengatur konfigurasi pemeriksaan kesehatan pada Application Gateway yang sudah ada.
 
 ### [Set-AzApplicationGatewayRedirectConfiguration](Set-AzApplicationGatewayRedirectConfiguration.md)
-Mengatur konfigurasi pengalihan pada Gateway Aplikasi yang sudah ada.
+Mengatur konfigurasi pengalihan pada Application Gateway yang sudah ada.
 
 ### [Set-AzApplicationGatewayRequestRoutingRule](Set-AzApplicationGatewayRequestRoutingRule.md)
 Mengubah aturan perutean permintaan untuk gateway aplikasi.
@@ -703,40 +703,40 @@ Mengubah konfigurasi WAF gateway aplikasi.
 Mengubah sirkuit ExpressRoute.
 
 ### [Set-AzExpressRouteCircuitPeeringConfig](Set-AzExpressRouteCircuitPeeringConfig.md)
-Menyimpan konfigurasi peering ExpressRoute yang diubah.
+Menyimpan konfigurasi peering ExpressRoute yang dimodifikasi.
 
 ### [Set-AzLoadBalancer](Set-AzLoadBalancer.md)
-Mengatur status tujuan untuk penyeimbang muat.
+Mengatur status tujuan untuk penyeimbang beban.
 
 ### [Set-AzLoadBalancerFrontendIpConfig](Set-AzLoadBalancerFrontendIpConfig.md)
-Mengatur status tujuan untuk konfigurasi IP ujung-depan dalam penyeimbang muat.
+Mengatur status tujuan untuk konfigurasi IP ujung depan dalam penyeimbang beban.
 
 ### [Set-AzLoadBalancerInboundNatPoolConfig](Set-AzLoadBalancerInboundNatPoolConfig.md)
 {{Manually Enter Set-AzLoadBalancerInboundNatPoolConfig Description Here}}
 
 ### [Set-AzLoadBalancerInboundNatRuleConfig](Set-AzLoadBalancerInboundNatRuleConfig.md)
-Mengatur konfigurasi aturan NAT masuk untuk penyeimbang muat.
+Mengatur konfigurasi aturan NAT masuk untuk penyeimbang muatan.
 
 ### [Set-AzLoadBalancerProbeConfig](Set-AzLoadBalancerProbeConfig.md)
-Mengatur status tujuan untuk konfigurasi konfigurasi konfigurasi configuration.
+Mengatur status tujuan untuk konfigurasi penyelidikan.
 
 ### [Set-AzLoadBalancerRuleConfig](Set-AzLoadBalancerRuleConfig.md)
-Mengatur status tujuan untuk konfigurasi aturan penyeimbang muat.
+Mengatur status tujuan untuk konfigurasi aturan penyeimbang muatan.
 
 ### [Set-AzLocalNetworkGateway](Set-AzLocalNetworkGateway.md)
-Memodifikasi gateway jaringan lokal.
+Mengubah gateway jaringan lokal.
 
 ### [Set-AzNetworkInterface](Set-AzNetworkInterface.md)
-Menetapkan status tujuan untuk antarmuka jaringan.
+Mengatur status tujuan untuk antarmuka jaringan.
 
 ### [Set-AzNetworkInterfaceIpConfig](Set-AzNetworkInterfaceIpConfig.md)
-Menetapkan status tujuan untuk konfigurasi IP antarmuka jaringan Azure.
+Mengatur status tujuan untuk konfigurasi IP antarmuka jaringan Azure.
 
 ### [Set-AzNetworkSecurityGroup](Set-AzNetworkSecurityGroup.md)
 Menetapkan status tujuan untuk grup keamanan jaringan.
 
 ### [Set-AzNetworkSecurityRuleConfig](Set-AzNetworkSecurityRuleConfig.md)
-Menetapkan status tujuan untuk konfigurasi aturan keamanan jaringan.
+Mengatur status tujuan untuk konfigurasi aturan keamanan jaringan.
 
 ### [Set-AzNetworkWatcherConfigFlowLog](Set-AzNetworkWatcherConfigFlowLog.md)
 Mengonfigurasi pembuatan log alur untuk sumber daya target.
@@ -757,7 +757,7 @@ Menetapkan status tujuan untuk rute.
 Menetapkan status tujuan untuk tabel rute.
 
 ### [Set-AzVirtualNetwork](Set-AzVirtualNetwork.md)
-Menetapkan status tujuan untuk jaringan virtual.
+Mengatur status tujuan untuk jaringan virtual.
 
 ### [Set-AzVirtualNetworkGateway](Set-AzVirtualNetworkGateway.md)
 Memperbarui gateway jaringan virtual.
@@ -766,7 +766,7 @@ Memperbarui gateway jaringan virtual.
 Mengonfigurasi koneksi gateway jaringan virtual.
 
 ### [Set-AzVirtualNetworkGatewayConnectionSharedKey](Set-AzVirtualNetworkGatewayConnectionSharedKey.md)
-Mengonfigurasi kunci bersama dari koneksi gateway jaringan virtual.
+Mengonfigurasi kunci bersama koneksi gateway jaringan virtual.
 
 ### [Set-AzVirtualNetworkGatewayDefaultSite](Set-AzVirtualNetworkGatewayDefaultSite.md)
 Mengatur situs default untuk gateway jaringan virtual.
@@ -777,7 +777,7 @@ Mengatur kumpulan alamat klien VPN untuk gateway jaringan virtual.
 ### [Set-AzVirtualNetworkPeering](Set-AzVirtualNetworkPeering.md)
 Mengonfigurasi peering jaringan virtual.
 
-### [Set-azVirtualNetworkSubnetConfig](Set-AzVirtualNetworkSubnetConfig.md)
+### [Set-AzVirtualNetworkSubnetConfig](Set-AzVirtualNetworkSubnetConfig.md)
 Mengonfigurasi status tujuan untuk konfigurasi subnet dalam jaringan virtual.
 
 ### [Start-AzApplicationGateway](Start-AzApplicationGateway.md)
@@ -790,17 +790,17 @@ Memulai pemecahan masalah pada sumber daya Jaringan di Azure.
 Menghentikan gateway aplikasi
 
 ### [Stop-AzNetworkWatcherPacketCapture](Stop-AzNetworkWatcherPacketCapture.md)
-Menghentikan sesi pengambilan paket yang berjalan
+Menghentikan sesi perekaman paket yang berjalan
 
 ### [Test-AzDnsAvailability](Test-AzDnsAvailability.md)
 {{Manually Enter Test-AzDnsAvailability Description Here}}
 
 ### [Test-AzNetworkWatcherConnectivity](Test-AzNetworkWatcherConnectivity.md)
-Mengembalikan informasi konektivitas untuk VM sumber yang ditentukan dan tujuan.
+Mengembalikan informasi konektivitas untuk VM sumber tertentu dan tujuan.
 
 ### [Test-AzNetworkWatcherIPFlow](Test-AzNetworkWatcherIPFlow.md)
-Mengembalikan apakah paket diizinkan atau ditolak untuk atau dari tujuan tertentu.
+Mengembalikan apakah paket diperbolehkan atau ditolak ke atau dari tujuan tertentu.
 
 ### [Test-AzPrivateIPAddressAvailability](Test-AzPrivateIPAddressAvailability.md)
-Menguji ketersediaan alamat IP privat di jaringan virtual.
+Uji ketersediaan alamat IP privat di jaringan virtual.
 

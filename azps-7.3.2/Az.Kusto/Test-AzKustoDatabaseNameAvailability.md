@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/test-azkus
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Test-AzKustoDatabaseNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Test-AzKustoDatabaseNameAvailability.md
-ms.openlocfilehash: 0df0c711f61c6999180978edb858089f2b452511
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5b73d76618a84c4d6cddb837b695650d9dff7dee
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140549549"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142068601"
 ---
 # Test-AzKustoDatabaseNameAvailability
 
 ## SYNOPSIS
-Memeriksa bahwa nama database valid dan belum digunakan.
+Memeriksa apakah nama database valid dan belum digunakan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.kusto/test-azkustodatabasenameavailability) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Test-AzKustoDatabaseNameAvailability -InputObject <IKustoIdentity> -Name <String
 ```
 
 ## DESCRIPTION
-Memeriksa bahwa nama database valid dan belum digunakan.
+Memeriksa apakah nama database valid dan belum digunakan.
 
 ## EXAMPLES
 
@@ -46,7 +49,7 @@ Message                                                                         
 Database mykustodatabase already exists in cluster testnewkustocluster. Please select a different database name. mykustodatabase False
 ```
 
-Perintah di atas mengembalikan apakah database Kusto yang bernama "mykustodatabase" ada dalam kluster "testnewkustocluster".
+Perintah di atas mengembalikan apakah database Kusto bernama "mykustodatabase" ada dalam kluster "testnewkustocluster".
 
 ### Contoh 2: Periksa ketersediaan nama database Kusto yang tidak digunakan
 ```powershell
@@ -57,12 +60,12 @@ Message Name             NameAvailable Reason
         mykustodatabase2 True
 ```
 
-Perintah di atas mengembalikan apakah database Kusto yang bernama "mykustodatabase2" ada dalam kluster "testnewkustocluster".
+Perintah di atas mengembalikan apakah database Kusto bernama "mykustodatabase2" ada dalam kluster "testnewkustocluster".
 
 ## PARAMETERS
 
 ### -ClusterName
-Nama kluster Kusto.
+Nama klaster Kusto.
 
 ```yaml
 Type: System.String
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Kusto.Models.IKustoIdentity
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi kluster Kusto.
+Nama grup sumber daya yang berisi klaster Kusto.
 
 ```yaml
 Type: System.String
@@ -137,8 +140,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Tipe sumber daya, misalnya Microsoft.Kusto/Clusters/databases.
+Tipe sumber daya, misalnya Microsoft. Kusto/Kluster/database.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Kusto.Support.Type
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -199,15 +202,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Kusto.Models.IKustoIdentity
+### Microsoft.Azure.PowerShell.Cmdlets. Kusto. Models.IKustoIdentity
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Kusto.Models.Api202101.ICheckNameResult
+### Microsoft.Azure.PowerShell.Cmdlets. Kusto. Models.Api202101.ICheckNameResult
 
 ## CATATAN
 
@@ -220,16 +223,16 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IKustoIdentity>: Parameter Identitas
   - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database yang dilampirkan.
-  - `[ClusterName <String>]`: Nama kluster Kusto.
+  - `[ClusterName <String>]`: Nama klaster Kusto.
   - `[DataConnectionName <String>]`: Nama koneksi data.
-  - `[DatabaseName <String>]`: Nama database dalam kluster Kusto.
+  - `[DatabaseName <String>]`: Nama database dalam klaster Kusto.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama lokasi Azure (kawasan).
-  - `[OperationId <String>]`: Guid ID operasi
-  - `[PrincipalAssignmentName <String>]`: Nama principalAssignment Kusto.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi kluster Kusto.
+  - `[OperationId <String>]`: Guid of the operation ID
+  - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi klaster Kusto.
   - `[ScriptName <String>]`: Nama skrip database Kusto.
-  - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

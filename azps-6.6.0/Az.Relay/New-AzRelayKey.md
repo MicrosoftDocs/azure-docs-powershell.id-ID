@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/New-AzRelayKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/New-AzRelayKey.md
 ms.openlocfilehash: fe650277786504f89ea7d45067c0781c12b7e165
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140067515"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141797072"
 ---
 # New-AzRelayKey
 
 ## SYNOPSIS
-Meregenerasi string koneksi utama atau sekunder untuk entitas Relay tertentu (Namespace/WcfIguy/HybridConnection)
+Meregenerasi string koneksi utama atau sekunder untuk entitas Relay yang diberikan (Namespace/WcfRelay/HybridConnection)
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.relay/new-azrelaykey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.relay/new-azrelaykey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-AzRelayKey [-ResourceGroupName] <String> [-Namespace] <String> [-Name] <Stri
  [-KeyValue <String>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### WcfAuthorizationRuleSet
+### WcfRelayAuthorizationRuleSet
 ```
 New-AzRelayKey [-ResourceGroupName] <String> [[-Namespace] <String>] [-WcfRelay] <String> [-Name] <String>
  -RegenerateKey <String> [-KeyValue <String>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
@@ -43,11 +43,11 @@ New-AzRelayKey [-ResourceGroupName] <String> [[-Namespace] <String>] [-HybridCon
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzIguyKey** menghasilkan string koneksi utama dan sekunder untuk entitas Relay tertentu (Namespace/WcfIguy/HybridConnection).
+Cmdlet **New-AzRelayKey** menghasilkan string koneksi primer dan sekunder untuk entitas Relay tertentu (Namespace/WcfRelay/HybridConnection).
 
 ## EXAMPLES
 
-### Contoh 1 - Kumpulan Nama
+### Contoh 1 - Ruang nama
 ```
 PS C:\> New-AzRelayKey -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -Name AuthoRule1 -RegenerateKeys PrimaryKey
 
@@ -60,7 +60,7 @@ SecondaryKey              : ############################################
 KeyName                   : AuthoRule1
 ```
 
-Meregenerasi string koneksi utama atau sekunder untuk entitas Relay-Namespace tertentu.
+Meregenerasi string koneksi utama atau sekunder untuk entitas Relay-Namespace yang diberikan.
 
 ### Contoh 1.1 - Namespace KeyValue Provided
 ```
@@ -75,9 +75,9 @@ SecondaryKey              : ############################################
 KeyName                   : AuthoRule1
 ```
 
-menghasilkan string koneksi utama atau sekunder untuk entitas yang Relay-Namespace dengan Nilai Kunci yang Disediakan
+menghasilkan string koneksi primer atau sekunder untuk entitas Relay-Namespace yang diberikan dengan Nilai Kunci yang Disediakan
 
-### Contoh 2 - WcfCfCfy
+### Contoh 2 - WcfRelay
 ```
 PS C:\> New-AzRelayKey -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -Name AuthoRule1 -WcfRelay TestWCFRelay1 -RegenerateKeys PrimaryKey
 
@@ -90,9 +90,9 @@ SecondaryKey              : ############################################
 KeyName                   : AuthoRule1
 ```
 
-Meregenerasi string koneksi utama atau sekunder untuk entitas Relay-WcfRelay tertentu.
+Meregenerasi string koneksi utama atau sekunder untuk entitas Relay-WcfRelay yang diberikan.
 
-### Contoh 2.1 - Wcf Ctrly KeyValue Provided
+### Contoh 2.1 - WcfRelay KeyValue Provided
 ```
 PS C:\> New-AzRelayKey -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -Name AuthoRule1 -WcfRelay TestWCFRelay1 -RegenerateKeys PrimaryKey -KeyValue ############### 
 
@@ -105,7 +105,7 @@ SecondaryKey              : ############################################
 KeyName                   : AuthoRule1
 ```
 
-menghasilkan string koneksi utama atau sekunder untuk entitas yang Relay-WcfRelay dengan Nilai Kunci yang Disediakan
+menghasilkan string koneksi primer atau sekunder untuk entitas Relay-WcfRelay yang diberikan dengan Nilai Kunci yang Disediakan
 
 ### Contoh 3 - HybridConnection
 ```
@@ -120,9 +120,9 @@ SecondaryKey              : ############################################
 KeyName                   : AuthoRule1
 ```
 
-Meregenerasi string koneksi utama atau sekunder untuk entitas Relay tertentu (Namespace/WcfIguy/HybridConnection).
+Meregenerasi string koneksi utama atau sekunder untuk entitas Relay yang diberikan (Namespace/WcfRelay/HybridConnection).
 
-### Contoh 3.1 - HybridConnection KeyValue Provided
+### Contoh 3.1 - KeyValue HybridConnection Disediakan
 ```
 PS C:\> New-AzRelayKey -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -Name AuthoRule1 -HybridConnection TestHybridConnection -RegenerateKeys PrimaryKey -KeyValue ############### 
 
@@ -135,7 +135,7 @@ SecondaryKey              : ############################################
 KeyName                   : AuthoRule1
 ```
 
-menghasilkan string koneksi utama atau sekunder untuk entitas yang Relay-HybridConnection dengan Nilai Kunci yang Disediakan
+menghasilkan string koneksi primer atau sekunder untuk entitas Relay-HybridConnection yang diberikan dengan Nilai Kunci yang Disediakan
 
 ## PARAMETERS
 
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyValue
-Kunci 256-bit berkode basis64 untuk menandatangani dan memvalidasi token SAS.
+Kunci 256-bit berkode base64 untuk menandatangani dan memvalidasi token SAS.
 
 ```yaml
 Type: System.String
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegenerateKey
-Tombol regenerasi - 'PrimaryKey'/'SecondaryKey'.
+Regenerasi Tombol - 'PrimaryKey'/'SecondaryKey'.
 
 ```yaml
 Type: System.String
@@ -257,8 +257,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -WcfEby
-Nama WcfEby.
+### -WcfRelay
+Nama WcfRelay.
 
 ```yaml
 Type: System.String
@@ -273,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -289,7 +289,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -304,7 +304,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

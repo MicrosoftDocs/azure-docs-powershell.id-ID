@@ -4,20 +4,20 @@ Module Guid: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/azurerm.deploymentmanager
 Help Version: 0.0.1.0
 Locale: en-US
-ms.openlocfilehash: 8d83e715d0f8cb9e1840b586aa489abdf9398825f547f3c483985f2a9fc7f12f
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: bfec608f9663aab0d22e816abcefba122fc641f6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132416160"
 ---
-# Modul AzureRM.DeploymentManager
+# AzureRM.DeploymentManager Module
 ## Deskripsi
-Manajer Penyebaran memungkinkan Anda menggunakan praktik penyebaran yang aman ketika menggunakan layanan Anda di berbagai wilayah. Azure Deployment Manager berada dalam pratinjau publik. Untuk mempelajari cara mendaftar ke pratinjau dan menggunakan Azure Deployment Manager, lihat [Mengaktifkan praktik penyebaran aman dengan Azure Deployment Manager](https://docs.microsoft.com/en-us/azure/azure-resource-manager/deployment-manager-overview). Untuk tutorial, lihat [Menggunakan Azure Deployment Manager dengan templat Resource Manager](https://docs.microsoft.com/en-us/azure/azure-resource-manager/deployment-manager-tutorial).
+Deployment Manager memungkinkan Anda menggunakan praktik penyebaran yang aman saat menyebarkan layanan Anda di berbagai kawasan. Azure Deployment Manager berada dalam pratinjau publik. Untuk mempelajari cara mendaftar pratinjau dan menggunakan Azure Deployment Manager, lihat [Mengaktifkan praktik penggunaan yang aman dengan Azure Deployment Manager](https://docs.microsoft.com/en-us/azure/azure-resource-manager/deployment-manager-overview). Untuk tutorial, lihat [Menggunakan Azure Deployment Manager dengan templat Resource Manager](https://docs.microsoft.com/en-us/azure/azure-resource-manager/deployment-manager-tutorial).
 
 ## Cmdlet AzureRM.DeploymentManager
 ### [Get-AzureRmDeploymentManagerArtifactSource](Get-AzureRmDeploymentManagerArtifactSource.md)
-Dapatkan sumber artifak.
+Mendapatkan sumber artefak.
 
 ### [Get-AzureRmDeploymentManagerRollout](Get-AzureRmDeploymentManagerRollout.md)
 Mendapatkan peluncuran.
@@ -32,10 +32,10 @@ Mendapatkan topologi layanan.
 Mendapatkan unit layanan.
 
 ### [Get-AzureRmDeploymentManagerStep](Get-AzureRmDeploymentManagerStep.md)
-Mendapatkan langkah penggunaan.
+Mendapatkan langkah penyebaran.
 
 ### [New-AzureRmDeploymentManagerArtifactSource](New-AzureRmDeploymentManagerArtifactSource.md)
-Membuat sumber artifak.
+Membuat sumber artefak.
 
 ### [New-AzureRmDeploymentManagerService](New-AzureRmDeploymentManagerService.md)
 Membuat layanan dalam topologi layanan.
@@ -44,34 +44,34 @@ Membuat layanan dalam topologi layanan.
 Membuat topologi layanan baru.
 
 ### [New-AzureRmDeploymentManagerServiceUnit](New-AzureRmDeploymentManagerServiceUnit.md)
-Membuat unit layanan baru di bawah suatu layanan dalam topologi layanan.
+Membuat unit layanan baru di bawah layanan dalam topologi layanan.
 
 ### [New-AzureRmDeploymentManagerStep](New-AzureRmDeploymentManagerStep.md)
-Membuat langkah penggunaan baru.
+Membuat langkah penyebaran baru.
 
 ### [Remove-AzureRmDeploymentManagerArtifactSource](Remove-AzureRmDeploymentManagerArtifactSource.md)
-Menghapus sumber artifak.
+Menghapus sumber artefak.
 
-### [Remove-AzureRmDeploymentManagerRollout](Remove-AzureRmDeploymentManagerRollout.md)
+### [Hapus-AzureRmDeploymentManagerRollout](Remove-AzureRmDeploymentManagerRollout.md)
 Menghapus peluncuran.
 
-### [Remove-AzureRmDeploymentManagerService](Remove-AzureRmDeploymentManagerService.md)
+### [Hapus-AzureRmDeploymentManagerService](Remove-AzureRmDeploymentManagerService.md)
 Menghapus layanan dalam topologi layanan.
 
 ### [Remove-AzureRmDeploymentManagerServiceTopology](Remove-AzureRmDeploymentManagerServiceTopology.md)
 Menghapus topologi layanan dan semua sumber dayanya.
 
-### [Remove-AzureRmDeploymentManagerServiceUnit](Remove-AzureRmDeploymentManagerServiceUnit.md)
-Menghapus unit layanan dari suatu layanan dalam topologi layanan.
+### [Hapus-AzureRmDeploymentManagerServiceUnit](Remove-AzureRmDeploymentManagerServiceUnit.md)
+Menghapus unit layanan layanan dalam topologi layanan.
 
 ### [Remove-AzureRmDeploymentManagerStep](Remove-AzureRmDeploymentManagerStep.md)
 Menghapus langkah.
 
-### [Restart-AzureRmDeploymentManagerRollout](Restart-AzureRmDeploymentManagerRollout.md)
-Memulai ulang peluncuran yang gagal.
+### [Mulai ulang-AzureRmDeploymentManagerRollout](Restart-AzureRmDeploymentManagerRollout.md)
+Mulai ulang peluncuran yang gagal.
 
 ### [Set-AzureRmDeploymentManagerArtifactSource](Set-AzureRmDeploymentManagerArtifactSource.md)
-Memperbarui sumber artifak.
+Memperbarui sumber artefak.
 
 ### [Set-AzureRmDeploymentManagerService](Set-AzureRmDeploymentManagerService.md)
 Memperbarui layanan dalam topologi layanan.

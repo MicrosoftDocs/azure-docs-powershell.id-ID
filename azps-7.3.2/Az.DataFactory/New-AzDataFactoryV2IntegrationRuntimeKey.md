@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryV2IntegrationRuntimeKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryV2IntegrationRuntimeKey.md
-ms.openlocfilehash: 041d95dbdf2a0fbc7a3d33647b6716fbd6b5bd40
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c44dc472b9f58a230ad58500181c65311907b8da
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140009701"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141789152"
 ---
 # New-AzDataFactoryV2IntegrationRuntimeKey
 
 ## SYNOPSIS
-Regenerasi kunci runtime integrasi yang dihosting sendiri.
+Meregenerasi kunci runtime integrasi yang dihosting sendiri.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/new-azdatafactoryv2integrationruntimekey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ New-AzDataFactoryV2IntegrationRuntimeKey -KeyName <String> [-Force] [-InputObjec
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataFactoryV2IntegrationRuntimeKey** meregenerasi kunci runtime integrasi dengan nama kunci yang ditentukan oleh parameter 'KeyName'. Kunci sebelumnya tidak valid.
+Cmdlet **New-AzDataFactoryV2IntegrationRuntimeKey** meregenerasi kunci runtime integrasi dengan nama kunci yang ditentukan oleh parameter 'KeyName'. Kunci sebelumnya tidak akan valid.
 
 ## EXAMPLES
 
@@ -52,7 +55,7 @@ AuthKey1 AuthKey2
          IR@89895504-f647-48fd-8dd3-42fa556d67e3@***
 ```
 
-Cmdlet meregenerasi kunci 'authKey2' untuk runtime integrasi yang bernama 'test-selfhost-ir'.
+Cmdlet meregenerasi kunci 'authKey2' untuk runtime integrasi bernama 'test-selfhost-ir'.
 
 ## PARAMETERS
 
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -86,7 +89,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Menjalankan cmdlet tanpa meminta konfirmasi.
 
 ```yaml
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyName
-Nama kunci autentikasi dari runtime integrasi yang dihosting sendiri.
+Nama kunci autentikasi runtime integrasi yang dihosting sendiri.
 
 ```yaml
 Type: System.String
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

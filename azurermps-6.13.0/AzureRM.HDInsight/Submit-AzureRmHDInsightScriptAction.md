@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.hdins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Submit-AzureRmHDInsightScriptAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Submit-AzureRmHDInsightScriptAction.md
-ms.openlocfilehash: 8c18ec9a594ec5032f2a22d92081c948f49b8f49a1537208ec291a8f629eb4c6
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 884741f6543dee05ed8236385071ad345321413e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419342"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141884715"
 ---
 # Submit-AzureRmHDInsightScriptAction
 
@@ -31,11 +31,11 @@ Submit-AzureRmHDInsightScriptAction [-ClusterName] <String> [-Name] <String> [-U
 
 ## DESCRIPTION
 Cmdlet **Submit-AzureRmHDInsightScriptAction** mengirimkan tindakan skrip baru ke kluster Azure HDInsight.
-Gunakan *PersistOnSuccess* agar tindakan skrip berjalan setiap kali kluster diskalakan, selama tindakan skrip di awal berhasil.
+Gunakan *PersistOnSuccess* agar tindakan skrip dijalankan setiap kali kluster diskalakan, selama tindakan skrip awalnya berhasil.
 
 ## EXAMPLES
 
-### Contoh 1: Mengirim tindakan skrip baru ke kluster HDInsight yang berjalan
+### Contoh 1: Kirim tindakan skrip baru ke kluster HDInsight yang berjalan
 ```
 PS C:\>Submit-AzureRmHDInsightScriptAction `
             -ClusterName "your-hadoop-001" `
@@ -50,7 +50,7 @@ Perintah ini mengirimkan tindakan skrip ke kluster HDInsight yang berjalan.
 
 ### -ApplicationName
 Menentukan nama aplikasi untuk tindakan skrip.
-Ketika *ApplicationName* ditentukan, *PersistOnSuccess* harus diatur ke False, node harus berisi edgenode saja, dan hitungan tindakan skrip harus sama dengan 1.
+Ketika *ApplicationName* ditentukan, *PersistOnSuccess* harus diatur ke False, node harus berisi hanya edgenode, dan jumlah tindakan skrip harus sama dengan 1.
 
 ```yaml
 Type: System.String
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeTypes
-Menentukan tipe node yang akan menjalankan tindakan skrip.
+Menentukan tipe simpul untuk menjalankan tindakan skrip.
 
 ```yaml
 Type: Microsoft.Azure.Commands.HDInsight.Models.Management.RuntimeScriptActionClusterNodeType[]
@@ -125,7 +125,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Parameter
+### -Parameters
 Menentukan parameter untuk tindakan skrip.
 
 ```yaml
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -PersistOnSuccess
-Menunjukkan bahwa tindakan skrip harus berjalan setiap kali kluster diskalakan.
+Menunjukkan bahwa tindakan skrip harus dijalankan setiap kali kluster diskalakan.
 Parameter sakelar ini diabaikan jika tindakan skrip awalnya gagal.
 
 ```yaml
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.datam
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataMigration/Commands.DataMigration/help/Remove-AzureRmDataMigrationService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataMigration/Commands.DataMigration/help/Remove-AzureRmDataMigrationService.md
-ms.openlocfilehash: 4bceda17079c208a906aba5b89b3926a6b094f48a3a2e3632cb4833b6b3eb779
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 677e89dd0def314744e507c6e61c745f39a081bb
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140864786"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141885266"
 ---
 # Remove-AzureRmDataMigrationService
 
 ## SYNOPSIS
-Menghapus contoh Layanan Migrasi Database Azure dari Azure.
+Menghapus contoh Azure Database Migration Service dari Azure.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,7 +40,7 @@ Remove-AzureRmDataMigrationService [-ResourceId] <String> [-Force] [-DeleteRunni
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzureRmDataMigrationService menghapus instans Layanan Migrasi Database Azure dari Azure. Menyediakan parameter DeleteRunningTask akan menghapus semua tugas Layanan Migrasi Database Azure yang terkait dengan layanan yang akan dihapus. 
+Cmdlet Remove-AzureRmDataMigrationService menghapus contoh Azure Database Migration Service dari Azure. Memasukkan parameter DeleteRunningTask akan menghapus semua tugas Azure Database Migration Service yang terkait dengan layanan yang sedang dihapus. 
 
 ## EXAMPLES
 
@@ -49,12 +49,12 @@ Cmdlet Remove-AzureRmDataMigrationService menghapus instans Layanan Migrasi Data
 PS C:\> Remove-AzureRmDataMigrationService -ResourceGroupName MyResourceGroup -ServiceName TestService
 ```
 
-Contoh di atas menghapus contoh Layanan Migrasi Database Azure bernama TestService yang terdapat dalam Grup Sumber Daya Azure bernama MyResourceGroup.
+Contoh di atas menghapus contoh Azure Database Migration Service bernama TestService yang terdapat dalam Azure Resource Group bernama MyResourceGroup.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeleteRunningTask
-Menghapus tugas yang sedang berjalan
+Menghapus tugas apa pun yang sedang berjalan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -83,7 +83,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Lewati pesan konfirmasi untuk melakukan tindakan
 
 ```yaml
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek PSDataMigrationService.
+PSDataMigrationService Object.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataMigration.Models.PSDataMigrationService
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Layanan Migrasi Database.
+Nama Database Migration Service.
 
 ```yaml
 Type: System.String
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-DataMigrationService Resource Id.
+Id Sumber Daya DataMigrationService.
 
 ```yaml
 Type: System.String
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

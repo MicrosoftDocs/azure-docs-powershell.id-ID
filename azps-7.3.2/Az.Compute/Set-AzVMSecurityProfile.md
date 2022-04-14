@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMSecurityProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMSecurityProfile.md
-ms.openlocfilehash: cec4a77e4977059f1368107862d2d28ca58ea8d7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: befaf82ae633caaf11f5fe619828c2d35e98dc1c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140188393"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141789980"
 ---
 # Set-AzVMSecurityProfile
 
 ## SYNOPSIS
-Mengatur enum SecurityType untuk Mesin Virtual.
+Mengatur enum SecurityType untuk Virtual Machines.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmsecurityprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ $VM = Set-AzVmSecurityProfile -VM $VM -SecurityType "TrustedLaunch"
 ```
 
 Perintah pertama mendapatkan mesin virtual bernama ContosoVM07 dengan menggunakan **Get-AzVm**.
-Perintah menyimpannya di $VM variabel.
+Perintah menyimpannya dalam variabel $VM.
 Perintah kedua mengatur enum SecurityType menjadi "TrustedLaunch"
 
 ## PARAMETERS
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecurityType
-Enum yang mewakili tipe keamanan (sebagai: Peluncuran Tepercaya)
+Enum yang mewakili tipe keamanan (misalnya: Peluncuran Tepercaya)
 
 ```yaml
 Type: SecurityTypes
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

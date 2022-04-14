@@ -7,21 +7,21 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Restore-AzRecoveryServicesBackupItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Restore-AzRecoveryServicesBackupItem.md
 ms.openlocfilehash: 6b753823de16969cc64f774c9264a724ea471155
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140247823"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141797594"
 ---
 # Restore-AzRecoveryServicesBackupItem
 
 ## SYNOPSIS
 
 Memulihkan data dan konfigurasi untuk item Cadangan ke titik pemulihan yang ditentukan. Parameter yang diperlukan bervariasi dengan tipe item cadangan.
-Perintah yang sama digunakan untuk memulihkan mesin Azure Virtual, database yang berjalan dalam komputer Azure Virtual dan berbagi file Azure juga.
+Perintah yang sama digunakan untuk memulihkan mesin Azure Virtual, database yang berjalan di dalam mesin Azure Virtual dan berbagi file Azure juga.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/restore-azrecoveryservicesbackupitem) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/restore-azrecoveryservicesbackupitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -92,33 +92,33 @@ Restore-AzRecoveryServicesBackupItem [-VaultLocation <String>] [-WLRecoveryConfi
 
 ## DESCRIPTION
 
-Cmdlet **Restore-AzRecoveryServicesBackupItem** memulihkan data dan konfigurasi untuk item Azure Backup ke titik pemulihan yang ditentukan.
+Cmdlet **Restore-AzRecoveryServicesBackupItem** memulihkan data dan konfigurasi untuk item Azure Backup ke titik pemulihan tertentu.
 
-**Untuk pencadangan Azure VM**
+**Untuk cadangan Azure VM**
 
-Anda dapat mencadangkan mesin virtual Azure dan memulihkan disk (terkelola maupun tidak dikelola) menggunakan perintah ini. Operasi pemulihan tidak memulihkan mesin virtual penuh.
-Jika merupakan vm disk terkelola, grup Sumber Daya target harus ditentukan tempat disk yang dipulihkan disimpan. Saat grup sumber daya target ditentukan, jika snapshot ada dalam grup sumber daya yang ditentukan dalam kebijakan cadangan, operasi pemulihan akan instan dan disk dibuat dari snapshot lokal dan disimpan dalam grup sumber daya target. Ada juga opsi untuk memulihkannya sebagai disk tak terkelola tapi ini akan memanfaatkan data yang ada di penyimpanan layanan pemulihan Azure sehingga akan jauh lebih lambat. Konfigurasi VM dan templat penyebaran yang dapat digunakan untuk membuat VM dari disk yang dipulihkan akan diunduh ke akun penyimpanan yang ditentukan.
-Jika ini adalah VM disk yang tidak dikelola, snapshot ada dalam akun penyimpanan asli disk dan/atau dalam vault layanan pemulihan. Jika pengguna memberikan opsi untuk menggunakan Akun penyimpanan asli untuk memulihkan, pemulihan instan dapat disediakan. Jika tidak, data diambil dari disk dan vault layanan Pemulihan Azure dibuat dalam akun penyimpanan tertentu bersama dengan konfigurasi VM dan templat penyebaran.
+Anda dapat mencadangkan mesin virtual Azure dan memulihkan disk (baik yang dikelola maupun tidak dikelola) menggunakan perintah ini. Operasi pemulihan tidak memulihkan mesin maya penuh.
+Jika ini adalah VM disk terkelola, grup Sumber Daya target harus ditentukan di mana disk yang dipulihkan disimpan. Ketika grup sumber daya target ditentukan, jika snapshot ada dalam grup sumber daya yang ditentukan dalam kebijakan cadangan, operasi pemulihan akan instan dan disk dibuat dari snapshot lokal dan disimpan dalam grup sumber daya target. Ada juga opsi untuk memulihkannya sebagai disk yang tidak dikelola tetapi ini akan memanfaatkan data yang ada di kubah layanan pemulihan Azure dan karenanya akan jauh lebih lambat. Konfigurasi VM dan templat penyebaran yang dapat digunakan untuk membuat VM dari disk yang dipulihkan akan diunduh ke akun penyimpanan tertentu.
+Jika ini adalah VM disk yang tidak dikelola, snapshot hadir di akun penyimpanan asli disk dan/atau dalam kubah layanan pemulihan. Jika pengguna memberikan opsi untuk menggunakan Akun penyimpanan asli untuk memulihkan, pemulihan instan dapat disediakan. Jika tidak, data diperoleh dari brankas dan disk layanan Pemulihan Azure dibuat di akun penyimpanan tertentu bersama dengan konfigurasi VM dan templat penyebaran.
 
 > [!IMPORTANT]
-> Secara default, pencadangan Azure VM mencadangkan semua disk. Anda dapat secara selektif mencadangkan disk yang relevan menggunakan parameter exclusionList atau InclusionList selama Enable-Backup. Opsi untuk memulihkan disk secara selektif hanya tersedia jika disk telah secara selektif mencadangkannya.
+> Secara default, cadangan Azure VM mencadangkan semua disk. Anda dapat mencadangkan disk yang relevan secara selektif menggunakan parameter exclusionList atau InclusionList selama Enable-Backup. Opsi untuk memulihkan disk secara selektif hanya tersedia jika disk telah dicadangkan secara selektif.
 
 Silakan merujuk ke kumpulan parameter dan teks parameter yang berbeda untuk informasi selengkapnya.
 
 > [!NOTE]
-> Jika parameter -VaultId digunakan, parameter -VaultLocation juga harus digunakan.
+> Jika parameter -VaultId digunakan maka -VaultLocation parameter harus digunakan juga.
 
 **Untuk cadangan berbagi File Azure**
 
-Anda bisa memulihkan seluruh file yang dibagikan atau file/beberapa file/folder tertentu di berbagi. Anda bisa memulihkan ke lokasi asli atau ke lokasi alternatif.
+Anda dapat memulihkan seluruh berbagi file atau file/beberapa file/folder tertentu pada berbagi. Anda bisa memulihkan ke lokasi asli atau ke lokasi alternatif.
 
 **Untuk Beban Kerja Azure**
 
-Anda bisa SQL KEMBALI dalam VM Azure
+Anda dapat memulihkan SQL DB dalam Azure VM
 
 ## EXAMPLES
 
-### Contoh 1: Memulihkan disk dari disk yang dicadangkan Azure VM dari titik pemulihan tertentu
+### Contoh 1: Memulihkan disk disk yang dicadangkan Disk terkelola Azure VM dari titik pemulihan tertentu
 
 ```powershell
 PS C:\> $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
@@ -132,14 +132,14 @@ PS C:\> $RestoreJob = Restore-AzRecoveryServicesBackupItem -RecoveryPoint $RP[0]
     V2VM            Restore         InProgress      26-Apr-16 1:14:01 PM   01-Jan-01 12:00:00 AM
 ```
 
-Perintah pertama mendapatkan vault Layanan Pemulihan dan menyimpannya dalam $vault baru.
-Perintah kedua mendapatkan item Cadangan tipe AzureVM, nama "V2VM", dan menyimpannya di $BackupItem variabel.
-Perintah ketiga mendapatkan tanggal dari tujuh hari sebelumnya, lalu menyimpannya dalam $StartDate variabel.
-Perintah keempat mendapatkan tanggal saat ini, lalu menyimpannya dalam variabel $EndDate baru.
-Perintah kelima mendapatkan daftar poin pemulihan untuk item cadangan tertentu yang difilter oleh tim $StartDate dan $EndDate.
-Perintah terakhir memulihkan semua disk ke grup Sumber Daya target Target_RG, lalu menyediakan informasi konfigurasi VM dan templat penyebaran di DestAccount akun penyimpanan di grup sumber daya DestRG.
+Perintah pertama mendapatkan kubah Layanan Pemulihan dan menyimpannya dalam variabel $vault.
+Perintah kedua mendapatkan item Cadangan tipe AzureVM, nama "V2VM", dan menyimpannya dalam variabel $BackupItem.
+Perintah ketiga mendapatkan tanggal dari tujuh hari sebelumnya, lalu menyimpannya dalam variabel $StartDate.
+Perintah keempat mendapatkan tanggal saat ini, lalu menyimpannya dalam variabel $EndDate.
+Perintah kelima mendapatkan daftar titik pemulihan untuk item cadangan tertentu yang difilter menurut $StartDate dan $EndDate.
+Perintah terakhir memulihkan semua disk ke grup sumber daya target Target_RG, lalu menyediakan informasi konfigurasi VM dan templat penyebaran di akun penyimpanan DestAccount dalam grup sumber daya DestRG.
 
-### Contoh 2: Memulihkan disk tertentu dari disk yang dikelola yang dicadangkan Azure VM dari titik pemulihan tertentu
+### Contoh 2: Memulihkan disk yang ditentukan dari disk tercadangkan Azure VM dari titik pemulihan tertentu
 
 ```powershell
 PS C:\> $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
@@ -154,15 +154,15 @@ PS C:\> $RestoreJob = Restore-AzRecoveryServicesBackupItem -RecoveryPoint $RP[0]
     V2VM            Restore         InProgress      26-Apr-16 1:14:01 PM   01-Jan-01 12:00:00 AM
 ```
 
-Perintah pertama mendapatkan vault Layanan Pemulihan dan menyimpannya dalam $vault baru.
-Perintah kedua mendapatkan item Cadangan tipe AzureVM, nama "V2VM", dan menyimpannya di $BackupItem variabel.
-Perintah ketiga mendapatkan tanggal dari tujuh hari sebelumnya, lalu menyimpannya dalam $StartDate variabel.
-Perintah keempat mendapatkan tanggal saat ini, lalu menyimpannya dalam variabel $EndDate baru.
-Perintah kelima mendapatkan daftar poin pemulihan untuk item cadangan tertentu yang difilter oleh tim $StartDate dan $EndDate.
+Perintah pertama mendapatkan kubah Layanan Pemulihan dan menyimpannya dalam variabel $vault.
+Perintah kedua mendapatkan item Cadangan tipe AzureVM, nama "V2VM", dan menyimpannya dalam variabel $BackupItem.
+Perintah ketiga mendapatkan tanggal dari tujuh hari sebelumnya, lalu menyimpannya dalam variabel $StartDate.
+Perintah keempat mendapatkan tanggal saat ini, lalu menyimpannya dalam variabel $EndDate.
+Perintah kelima mendapatkan daftar titik pemulihan untuk item cadangan tertentu yang difilter menurut $StartDate dan $EndDate.
 Perintah keenam menyimpan daftar disk yang akan dipulihkan dalam variabel restoreDiskLUN.
-Perintah terakhir memulihkan disk tertentu, dari LUN yang ditentukan, ke grup Sumber Daya target Target_RG, lalu menyediakan informasi konfigurasi VM dan templat penyebaran dalam DestAccount akun penyimpanan di grup sumber daya DestRG.
+Perintah terakhir memulihkan disk tertentu, dari LUN yang ditentukan, ke grup sumber daya target Target_RG, lalu menyediakan informasi konfigurasi VM dan templat penyebaran di akun penyimpanan DestAccount dalam grup sumber daya DestRG.
 
-### Contoh 3: Memulihkan disk dari VM yang dikelola sebagai Disk tak terkelola
+### Contoh 3: Memulihkan disk VM yang dikelola sebagai Disk yang tidak terkelola
 
 ```powershell
 PS C:\> $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
@@ -176,14 +176,14 @@ PS C:\> $RestoreJob = Restore-AzRecoveryServicesBackupItem -RecoveryPoint $RP[0]
     V2VM            Restore         InProgress      26-Apr-16 1:14:01 PM   01-Jan-01 12:00:00 AM
 ```
 
-Perintah pertama mendapatkan vault RecoveryServices dan menyimpannya dalam $vault baru.
-Perintah kedua mendapatkan item Cadangan lalu menyimpannya dalam variabel $BackupItem Cadangkan.
-Perintah ketiga mendapatkan tanggal dari tujuh hari sebelumnya, lalu menyimpannya dalam $StartDate variabel.
-Perintah keempat mendapatkan tanggal saat ini, lalu menyimpannya dalam variabel $EndDate baru.
-Perintah kelima mendapatkan daftar poin pemulihan untuk item cadangan tertentu yang difilter oleh tim $StartDate dan $EndDate.
-Perintah keenam memulihkan disk sebagai disk yang tidak manajemen.
+Perintah pertama mendapatkan kubah RecoveryServices dan menyimpannya dalam variabel $vault.
+Perintah kedua mendapatkan item Cadangan lalu menyimpannya dalam variabel $BackupItem.
+Perintah ketiga mendapatkan tanggal dari tujuh hari sebelumnya, lalu menyimpannya dalam variabel $StartDate.
+Perintah keempat mendapatkan tanggal saat ini, lalu menyimpannya dalam variabel $EndDate.
+Perintah kelima mendapatkan daftar titik pemulihan untuk item cadangan tertentu yang difilter menurut $StartDate dan $EndDate.
+Perintah keenam memulihkan diska sebagai disk yang tidak dikelola.
 
-### Contoh 4: Pulihkan VM yang tidak manajemen sebagai Disk tak terageage menggunakan akun penyimpanan asli
+### Contoh 4: Memulihkan VM yang tidak dikelola sebagai Disk yang tidak dikelola menggunakan akun penyimpanan asli
 
 ```powershell
 PS C:\> $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
@@ -197,14 +197,14 @@ PS C:\> $RestoreJob = Restore-AzRecoveryServicesBackupItem -RecoveryPoint $RP[0]
     V2VM            Restore         InProgress      26-Apr-16 1:14:01 PM   01-Jan-01 12:00:00 AM
 ```
 
-Perintah pertama mendapatkan vault RecoveryServices dan menyimpannya dalam $vault baru.
-Perintah kedua mendapatkan item Cadangan lalu menyimpannya dalam variabel $BackupItem Cadangkan.
-Perintah ketiga mendapatkan tanggal dari tujuh hari sebelumnya, lalu menyimpannya dalam $StartDate variabel.
-Perintah keempat mendapatkan tanggal saat ini, lalu menyimpannya dalam variabel $EndDate baru.
-Perintah kelima mendapatkan daftar poin pemulihan untuk item cadangan tertentu yang difilter oleh tim $StartDate dan $EndDate.
+Perintah pertama mendapatkan kubah RecoveryServices dan menyimpannya dalam variabel $vault.
+Perintah kedua mendapatkan item Cadangan lalu menyimpannya dalam variabel $BackupItem.
+Perintah ketiga mendapatkan tanggal dari tujuh hari sebelumnya, lalu menyimpannya dalam variabel $StartDate.
+Perintah keempat mendapatkan tanggal saat ini, lalu menyimpannya dalam variabel $EndDate.
+Perintah kelima mendapatkan daftar titik pemulihan untuk item cadangan tertentu yang difilter menurut $StartDate dan $EndDate.
 Perintah keenam memulihkan disk sebagai disk yang tidak dikelola ke akun penyimpanan aslinya
 
-### Contoh 5: Pulihkan Beberapa file dari item AzureFileShare
+### Contoh 5: Memulihkan Beberapa file item AzureFileShare
 
 ```powershell
 PS C:\> $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
@@ -217,13 +217,13 @@ PS C:\> $RestoreJob = Restore-AzRecoveryServicesBackupItem -RecoveryPoint $RP[0]
     fileshareitem   Restore         InProgress      26-Apr-16 1:14:01 PM   01-Jan-01 12:00:00 AM
 ```
 
-Perintah pertama mendapatkan vault Layanan Pemulihan dan menyimpannya dalam $vault baru.
-Perintah kedua mendapatkan item Cadangan bernama fileshareitem lalu menyimpannya di $BackupItem waktu.
-Perintah ketiga mendapatkan daftar poin pemulihan untuk item cadangan tertentu.
-Perintah keempat menentukan file mana yang akan dipulihkan dan disimpan dalam $files variabel.
-Perintah terakhir memulihkan file tertentu ke lokasi aslinya.
+Perintah pertama mendapatkan kubah Layanan Pemulihan dan menyimpannya dalam variabel $vault.
+Perintah kedua mendapatkan item Cadangan bernama fileshareitem lalu menyimpannya dalam variabel $BackupItem.
+Perintah ketiga mendapatkan daftar titik pemulihan untuk item cadangan tertentu.
+Perintah keempat menentukan file mana yang akan dipulihkan dan disimpan dalam variabel $files.
+Perintah terakhir memulihkan file yang ditentukan ke lokasi aslinya.
 
-### Contoh 6: Pulihkan SQL DB dalam Azure VM ke vm target lainnya untuk poin pemulihan penuh yang berbeda
+### Contoh 6: Memulihkan SQL DB dalam Azure VM ke VM target lain untuk titik pemulihan penuh yang berbeda
 
 ```powershell
 PS C:\> $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
@@ -239,7 +239,7 @@ PS C:\> Restore-AzRecoveryServicesBackupItem -WLRecoveryConfig $AnotherInstanceW
     MSSQLSERVER/m...   Restore          InProgress        3/17/2019 10:02:45 AM                      3274xg2b-e4fg-5952-89b4-8cb566gc1748
 ```
 
-### Contoh 7: Pulihkan SQL DB dalam Azure VM ke target VM lainnya untuk titik pemulihan log
+### Contoh 7: Memulihkan SQL DB dalam Azure VM ke VM target lain untuk titik pemulihan log
 
 ```powershell
 PS C:\> $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
@@ -253,7 +253,7 @@ PS C:\> Restore-AzRecoveryServicesBackupItem -WLRecoveryConfig $AnotherInstanceW
     MSSQLSERVER/m... Restore        InProgress       3/17/2019 10:02:45 AM                       3274xg2b-e4fg-5952-89b4-8cb566gc1748
 ```
 
-### Contoh 8: Pemulihan Rehydrate untuk IaasVM dari titik pemulihan yang diarsipkan
+### Contoh 8: Pemulihan Rehidrat untuk IaasVM dari titik pemulihan yang diarsipkan
 
 ```powershell
 PS C:\> $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
@@ -262,13 +262,13 @@ PS C:\> $rp = Get-AzRecoveryServicesBackupRecoveryPoint -StartDate (Get-Date).Ad
 PS C:\> $restoreJob = Restore-AzRecoveryServicesBackupItem -RecoveryPoint $rp[0] -RehydratePriority "Standard" -RehydrateDuration "13" -TargetResourceGroupName "Target_RG" -StorageAccountName "DestAccount" -StorageAccountResourceGroupName "DestRG" -RestoreDiskList $restoreDiskLUNs -VaultId $vault.ID -VaultLocation $vault.Location
 ```
 
-Di sini, kami memfilter titik-titik pemulihan yang ada dalam tier VaultArchive dan memicu pemulihan dengan prioritas rehydration dan durasi rehydration.
+Di sini kami memfilter titik pemulihan yang ada dalam tingkat VaultArchive dan memicu pemulihan dengan prioritas rehidrasi dan durasi rehidrasi.
 
 ## PARAMETERS
 
 ### -DefaultProfile
 
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -284,7 +284,7 @@ Accept wildcard characters: False
 
 ### -DiskEncryptionSetId
 
-DES ID untuk mengenkripsi disk yang dipulihkan.
+ID DES untuk mengenkripsi disk yang dipulihkan.
 
 ```yaml
 Type: System.String
@@ -299,7 +299,7 @@ Accept wildcard characters: False
 ```
 
 ### -MultipleSourceFilePath
-Digunakan untuk Beberapa file dipulihkan dari berbagi file. Jalur item yang akan dipulihkan dalam berbagi file.
+Digunakan untuk Pemulihan beberapa file dari berbagi file. Jalur item yang akan dipulihkan di dalam berbagi file.
 
 ```yaml
 Type: System.String[]
@@ -316,7 +316,7 @@ Accept wildcard characters: False
 ### -RecoveryPoint
 
 Menentukan titik pemulihan untuk memulihkan item cadangan.
-Untuk mendapatkan objek **AzureRmRecoveryServicesBackupRecoveryPoint** , gunakan cmdlet **Get-AzRecoveryServicesBackupRecoveryPoint** .
+Untuk mendapatkan cmdlet **AzureRmRecoveryServicesBackupRecoveryPoint** , gunakan cmdlet **Get-AzRecoveryServicesBackupRecoveryPoint** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.RecoveryPointBase
@@ -332,7 +332,7 @@ Accept wildcard characters: False
 
 ### -RehydrateDuration
 
-Durasi dalam hari di mana untuk menjaga titik pemulihan yang diarsipkan diarsir ulang. Nilai dapat berkisar dari 10 hingga 30 hari, nilai default adalah 15 hari.
+Durasi dalam hari untuk mempertahankan titik pemulihan yang diarsipkan direhidrasi. Nilai dapat berkisar dari 10 hingga 30 hari, nilai default adalah 15 hari.
 
 ```yaml
 Type: System.String
@@ -348,7 +348,7 @@ Accept wildcard characters: False
 
 ### -RehydratePriority
 
-Prioritas rehydrasi untuk titik pemulihan yang diarsipkan sembari memicu pemulihan. Nilai yang dapat diterima adalah Standar, Tinggi.
+Prioritas rehidrasi untuk titik pemulihan yang diarsipkan selagi memicu pemulihan. Nilai yang dapat diterima adalah Standar, Tinggi.
 
 ```yaml
 Type: System.String
@@ -365,11 +365,11 @@ Accept wildcard characters: False
 
 ### -ResolveConflict
 
-Dalam kasus item yang dipulihkan juga ada di tujuan, gunakan ini untuk menunjukkan apakah akan menimpa atau tidak.
+Jika item yang dipulihkan juga ada di tujuan, gunakan ini untuk menunjukkan apakah akan menimpa atau tidak.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
-- Timpa
-- Lewati
+- Menimpa
+- Melewatkan
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.RestoreFSResolveConflictOption
@@ -385,7 +385,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestoreAsManagedDisk
-Use this switch to specify to restore as managed disks.
+Gunakan sakelar ini untuk menentukan untuk memulihkan sebagai disk terkelola.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -400,7 +400,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestoreAsUnmanagedDisks
-Gunakan sakelar ini untuk menentukan untuk memulihkan sebagai disk tidakage
+Gunakan sakelar ini untuk menentukan untuk memulihkan sebagai disk yang tidak dikelola
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -415,7 +415,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestoreDiskList
-Menentukan disk mana yang akan dipulihkan vm yang dicadangkan
+Tentukan disk mana yang akan dipulihkan dari VM yang dicadangkan
 
 ```yaml
 Type: System.String[]
@@ -430,7 +430,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestoreOnlyOSDisk
-Gunakan sakelar ini untuk memulihkan disk OS yang dicadangkan saja
+Gunakan sakelar ini untuk memulihkan hanya disk OS dari VM yang dicadangkan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -444,9 +444,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RestoreToSecirisanRegion
+### -RestoreToSecondaryRegion
 
-Gunakan sakelar ini untuk memicu pemulihan Wilayah silang ke kawasan sekunder.
+Gunakan sakelar ini untuk memicu pemulihan Kawasan silang ke kawasan sekunder.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -499,8 +499,8 @@ Accept wildcard characters: False
 
 ### -StorageAccountName
 
-Menentukan nama target akun Storage langganan Anda.
-Sebagai bagian dari proses pemulihan, cmdlet ini menyimpan disk dan informasi konfigurasi di akun Storage Anda.
+Menentukan nama akun Storage target dalam langganan Anda.
+Sebagai bagian dari proses pemulihan, cmdlet ini menyimpan disk dan informasi konfigurasi dalam akun Storage ini.
 
 ```yaml
 Type: System.String
@@ -516,8 +516,8 @@ Accept wildcard characters: False
 
 ### -StorageAccountResourceGroupName
 
-Menentukan nama grup sumber daya yang berisi target Storage tersebut di langganan Anda.
-Sebagai bagian dari proses pemulihan, cmdlet ini menyimpan disk dan informasi konfigurasi di akun Storage Anda.
+Menentukan nama grup sumber daya yang berisi akun Storage target dalam langganan Anda.
+Sebagai bagian dari proses pemulihan, cmdlet ini menyimpan disk dan informasi konfigurasi dalam akun Storage ini.
 
 ```yaml
 Type: System.String
@@ -533,7 +533,7 @@ Accept wildcard characters: False
 
 ### -TargetFileShareName
 
-Berbagi File tempat file bersama harus dipulihkan.
+Berbagi File tempat berbagi file harus dipulihkan.
 
 ```yaml
 Type: System.String
@@ -549,7 +549,7 @@ Accept wildcard characters: False
 
 ### -TargetFolder
 
-Folder tempat berbagi file harus dipulihkan dalam TargetFileShareName. Jika konten yang dicadangkan akan dipulihkan ke folder akar, beri nilai folder target sebagai string kosong.
+Folder tempat berbagi file harus dipulihkan ke dalam TargetFileShareName. Jika konten yang dicadangkan akan dipulihkan ke folder akar, berikan nilai folder target sebagai string kosong.
 
 ```yaml
 Type: System.String
@@ -581,7 +581,7 @@ Accept wildcard characters: False
 
 ### -TargetStorageAccountName
 
-Akun penyimpanan tempat file bersama harus dipulihkan.
+Akun penyimpanan tempat berbagi file harus dipulihkan.
 
 ```yaml
 Type: System.String
@@ -613,7 +613,7 @@ Accept wildcard characters: False
 
 ### -UseOriginalStorageAccount
 
-Gunakan sakelar ini jika disk dari titik pemulihan harus dipulihkan ke akun penyimpanan aslinya.
+Gunakan sakelar ini jika disk dari titik pemulihan akan dipulihkan ke akun penyimpanan aslinya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -640,7 +640,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserAssignedIdentityId
-Id Identitas yangSigned UserAssigned untuk memicu pemulihan berbasis MSI dengan UserAssigned Identity
+UserAssigned Identity Id untuk memicu pemulihan berbasis MSI dengan UserAssigned Identity
 
 ```yaml
 Type: System.String
@@ -671,7 +671,7 @@ Accept wildcard characters: False
 
 ### -VaultId
 
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -719,7 +719,7 @@ Accept wildcard characters: False
 
 ### -Konfirmasi
 
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -750,7 +750,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,20 +6,20 @@ Download Help Link:
 Help Version:
   '[object Object]': 
 Locale: en-US
-ms.openlocfilehash: b662012df226b8a0c68480917849c353f62fcd2e2e80e425cae354b2049e39c0
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: d24618079e66544263dc2638876ac69e0dbdcb7a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132416176"
 ---
-# Azs.Network.Admin Module
+# Modul Azs.Network.Admin
 ## Deskripsi
-Pratinjau rilis modul administrator Jaringan yang memungkinkan  
+Rilis pratinjau modul administrator jaringan yang memungkinkan  
 
 ## Cmdlet Azs.Network.Admin
 ### [Get-AzsLoadBalancer](Get-AzsLoadBalancer.md)
-Dapatkan daftar semua penyeimbang muat.
+Dapatkan daftar semua penyeimbang muatan.
 
 ### [Get-AzsNetworkAdminOverview](Get-AzsNetworkAdminOverview.md)
 Dapatkan gambaran umum status penyedia sumber daya jaringan.
@@ -36,7 +36,7 @@ Dapatkan daftar semua jaringan virtual.
 ### [New-AzsNetworkQuota](New-AzsNetworkQuota.md)
 Membuat atau memperbarui kuota.
 
-### [Remove-AzsNetworkQuota](Remove-AzsNetworkQuota.md)
+### [Hapus-AzsNetworkQuota](Remove-AzsNetworkQuota.md)
 Menghapus kuota menurut nama.
 
 ### [Set-AzsNetworkQuota](Set-AzsNetworkQuota.md)

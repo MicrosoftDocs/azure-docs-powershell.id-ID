@@ -6,14 +6,14 @@ Help Version: 3.1.2.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/IotHub/Commands.IotHub/help/AzureRM.IotHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/IotHub/Commands.IotHub/help/AzureRM.IotHub.md
-ms.openlocfilehash: 63a310c9cd2962ae2d79a038098e58f759a21e5d13010f6c2294299a2abe8c55
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: f81182178c5c3a4282f0917ff1bcd3fbf90a2de5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132416407"
 ---
-# AzureRM.IotHub Module
+# Modul AzureRM.IotHub
 ## Deskripsi
 Perintah untuk Mengelola Azure IotHubs
 
@@ -28,25 +28,25 @@ Membuat grup konsumen eventhub.
 Membuat Kunci IotHub.
 
 ### [Add-AzureRmIotHubRoute](Add-AzureRmIotHubRoute.md)
-Membuat rute di Hub IoT
+Membuat rute di IoT Hub
 
 ### [Add-AzureRmIotHubRoutingEndpoint](Add-AzureRmIotHubRoutingEndpoint.md)
-Menambahkan titik akhir ke Hub IoT Anda
+Menambahkan titik akhir ke IoT Hub Anda
 
 ### [Get-AzureRmIotHub](Get-AzureRmIotHub.md)
 Mendapatkan informasi tentang IotHubs dalam langganan.
 
 ### [Get-AzureRmIotHubCertificate](Get-AzureRmIotHubCertificate.md)
-Mencantumkan semua sertifikat atau sertifikat tertentu yang dimuat dalam Azure IoT Hub. 
+Mencantumkan semua sertifikat atau sertifikat tertentu yang terdapat dalam Azure IoT Hub. 
 
 ### [Get-AzureRmIotHubCertificateVerificationCode](Get-AzureRmIotHubCertificateVerificationCode.md)
 Menghasilkan kode verifikasi untuk sertifikat Azure IoT Hub. 
 
 ### [Get-AzureRmIotHubConnectionString](Get-AzureRmIotHubConnectionString.md)
-Mendapatkan string koneksi IotHub.
+Mendapatkan iotHub connectionstrings.
 
 ### [Get-AzureRmIotHubEventHubConsumerGroup](Get-AzureRmIotHubEventHubConsumerGroup.md)
-Mendapatkan semua grup konsumen eventhub.
+Mendapatkan semua grup pelanggan eventhub.
 
 ### [Get-AzureRmIotHubJob](Get-AzureRmIotHubJob.md)
 Mendapatkan informasi tentang pekerjaan IotHub.
@@ -58,56 +58,56 @@ Mendapatkan IotHub Key.
 Mendapatkan Metrik Kuota untuk IotHub.
 
 ### [Get-AzureRmIotHubRegistryStatistic](Get-AzureRmIotHubRegistryStatistic.md)
-Mendapatkan RegistryStatistics untuk IotHub.
+Mendapatkan RegistriStatistics untuk IotHub.
 
 ### [Get-AzureRmIotHubRoute](Get-AzureRmIotHubRoute.md)
-Dapatkan informasi tentang rute dalam IoT Hub
+Dapatkan informasi tentang rute di IoT Hub
 
 ### [Get-AzureRmIotHubRoutingEndpoint](Get-AzureRmIotHubRoutingEndpoint.md)
 Dapatkan informasi tentang semua titik akhir untuk IoT Hub Anda
 
 ### [Get-AzureRmIotHubValidSku](Get-AzureRmIotHubValidSku.md)
-Mendapatkan semua sku yang valid yang dapat dialihkan oleh IotHub ini.
+Mendapatkan semua sku valid yang dapat ditransisikan oleh IotHub ini.
 
-### [New-AzureRmIotHub](New-AzureRmIotHub.md)
+### [Baru-AzureRmIotHub](New-AzureRmIotHub.md)
 Membuat IotHub baru.
 
-### [New-AzureRmIotHubExportDevices](New-AzureRmIotHubExportDevices.md)
+### [Baru-AzureRmIotHubExportDevices](New-AzureRmIotHubExportDevices.md)
 Membuat pekerjaan perangkat ekspor baru.
 
-### [New-AzureRmIotHubImportDevices](New-AzureRmIotHubImportDevices.md)
+### [Baru-AzureRmIotHubImportDevices](New-AzureRmIotHubImportDevices.md)
 Membuat pekerjaan perangkat impor baru.
 
-### [Remove-AzureRmIotHub](Remove-AzureRmIotHub.md)
+### [Hapus-AzureRmIotHub](Remove-AzureRmIotHub.md)
 Menghapus IotHub.
 
-### [Remove-AzureRmIotHubCertificate](Remove-AzureRmIotHubCertificate.md)
+### [Hapus-AzureRmIotHubCertificate](Remove-AzureRmIotHubCertificate.md)
 Menghapus sertifikat Azure IoT Hub.
 
 ### [Remove-AzureRmIotHubEventHubConsumerGroup](Remove-AzureRmIotHubEventHubConsumerGroup.md)
-Menghapus grup konsumen eventhub.
+Menghapus grup pelanggan eventhub.
 
-### [Remove-AzureRmIotHubKey](Remove-AzureRmIotHubKey.md)
+### [Hapus-AzureRmIotHubKey](Remove-AzureRmIotHubKey.md)
 Menghapus Kunci IotHub.
 
-### [Remove-AzureRmIotHubRoute](Remove-AzureRmIotHubRoute.md)
-Menghapus rute di Hub IoT
+### [Hapus-AzureRmIotHubRoute](Remove-AzureRmIotHubRoute.md)
+Menghapus rute di IoT Hub
 
-### [Remove-AzureRmIotHubRoutingEndpoint](Remove-AzureRmIotHubRoutingEndpoint.md)
-Menghapus titik akhir untuk Hub IoT Anda
+### [Hapus-AzureRmIotHubRoutingEndpoint](Remove-AzureRmIotHubRoutingEndpoint.md)
+Menghapus titik akhir untuk IoT Hub Anda
 
 ### [Set-AzureRmIotHub](Set-AzureRmIotHub.md)
 Memperbarui properti IotHub.
 
 ### [Set-AzureRmIotHubRoute](Set-AzureRmIotHubRoute.md)
-Memperbarui rute dalam IoT Hub
+Memperbarui rute di IoT Hub
 
 ### [Set-AzureRmIotHubVerifiedCertificate](Set-AzureRmIotHubVerifiedCertificate.md)
 Memverifikasi sertifikat Azure IoT Hub. 
 
-### [Test-AzureRmIotHubRoute](Test-AzureRmIotHubRoute.md)
-Menguji rute dalam Hub IoT
+### [Uji-AzureRmIotHubRoute](Test-AzureRmIotHubRoute.md)
+Menguji rute di IoT Hub
 
-### [Update-AzureRmIotHub](Update-AzureRmIotHub.md)
-Memperbarui Hub Azure IoT.
+### [Perbarui-AzureRmIotHub](Update-AzureRmIotHub.md)
+Memperbarui Azure IoT Hub.
 
