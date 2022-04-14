@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBCassandraTableThroughput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBCassandraTableThroughput.md
 ms.openlocfilehash: 4ade34159e66fea112d4cc809f52a258ee9702fc
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140484951"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141805802"
 ---
 # Update-AzCosmosDBCassandraTableThroughput
 
 ## SYNOPSIS
-Memperbarui nilai throughput Tabel CosmosDB Database.
+Memperbarui nilai throughput Tabel Cassandra CosmosDB.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbcassandratablethroughput) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbcassandratablethroughput) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Update-AzCosmosDBCassandraTableThroughput [-Name <String>] -InputObject <PSCassa
 ```
 
 ## DESCRIPTION
-Memperbarui nilai throughput Tabel CosmosDB Database.
+Memperbarui nilai throughput Tabel Cassandra CosmosDB.
 
 ## EXAMPLES
 
@@ -60,7 +60,7 @@ OfferReplacePending :
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun database Cosmos DB.
 
 ```yaml
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoscaleMaxThroughput
-Nilai Throughput Maksimum jika skala otomatis diaktifkan.
+Nilai Throughput maksimum jika skala otomatis diaktifkan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Keyspace Space.
+Objek Keyspace Cassandra.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSCassandraTableGetResults
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyspaceName
-Space, Keyspace, Dana, Dan lain-lain
+Nama Keyspace Cassandra.
 
 ```yaml
 Type: System.String
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Tabel Excel.
+Nama Tabel Cassandra.
 
 ```yaml
 Type: System.String
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Objek Keyspace Space.
+Objek Keyspace Cassandra.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSCassandraKeyspaceGetResults
@@ -181,8 +181,8 @@ Accept wildcard characters: False
 ```
 
 ### -Throughput
-Throughput dari Throughput Keyspace (RU/s).
-Nilai default adalah 400.
+Throughput Cassandra Keyspace (RU/s).
+Nilai defaultnya adalah 400.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -228,11 +228,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.CosmosDB.Models.PSCassmicrosoftKeyspaceGetResults
+### Microsoft.Azure.Commands.CosmosDB.Models.PSCassandraKeyspaceGetResults
 
 ## OUTPUTS
 

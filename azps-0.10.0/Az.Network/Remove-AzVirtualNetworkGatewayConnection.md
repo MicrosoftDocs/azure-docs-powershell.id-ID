@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Remove-AzVirtualNetworkGatewayConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Remove-AzVirtualNetworkGatewayConnection.md
 ms.openlocfilehash: 70d110e9a539661d780c2dbce7fb8166a8f4ba97
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132414003"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141964167"
 ---
 # Remove-AzVirtualNetworkGatewayConnection
 
 ## SYNOPSIS
-Menghapus Koneksi Gateway Jaringan Virtual
+Menghapus Koneksi Gateway Virtual Network
 
 ## SYNTAX
 
@@ -26,23 +26,23 @@ Remove-AzVirtualNetworkGatewayConnection -Name <String> -ResourceGroupName <Stri
 ```
 
 ## DESCRIPTION
-Virtual Network Gateway Connection adalah objek yang mewakili IPsec portal (Site-to-Site atau Vnet-to-Vnet) yang tersambung ke Virtual Network Gateway di Azure.
+Koneksi Gateway Virtual Network adalah objek yang mewakili terowongan IPsec (Site-to-Site atau Vnet-to-Vnet) yang tersambung ke Gateway Virtual Network Anda di Azure.
 
 Cmdlet **Remove-AzVirtualNetworkGatewayConnection** menghapus objek koneksi Anda berdasarkan Nama dan Nama Grup Sumber Daya.
 
 ## EXAMPLES
 
-### 1: Menghapus Koneksi Gateway Jaringan Virtual
+### 1: Menghapus Koneksi Gateway Virtual Network
 ```
 Remove-AzVirtualNetworkGatewayConnection -Name myTunnel -ResourceGroupName myRG
 ```
 
-Menghapus objek Koneksi Gateway Jaringan Virtual dengan nama "myTunnel" dalam grup sumber daya "myRG"
+Menghapus objek Koneksi Gateway Virtual Network dengan nama "myTunnel" dalam grup sumber daya "myRG"
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -56,8 +56,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: SwitchParameter
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/Get-AzStorageFile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/Get-AzStorageFile.md
 ms.openlocfilehash: ce48b530adb0cd805559efd4785df0cccf3cf7ba
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426954"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141810537"
 ---
 # Get-AzStorageFile
 
@@ -27,7 +27,7 @@ Get-AzStorageFile [-ShareName] <String> [[-Path] <String>] [-Context <IStorageCo
  [-DefaultProfile <IAzureContextContainer>] [-ConcurrentTaskCount <Int32>] [<CommonParameters>]
 ```
 
-### Bagikan
+### Berbagi
 ```
 Get-AzStorageFile [-Share] <CloudFileShare> [[-Path] <String>] [-ServerTimeoutPerRequest <Int32>]
  [-ClientTimeoutPerRequest <Int32>] [-DefaultProfile <IAzureContextContainer>] [-ConcurrentTaskCount <Int32>]
@@ -43,34 +43,34 @@ Get-AzStorageFile [-Directory] <CloudFileDirectory> [[-Path] <String>] [-ServerT
 
 ## DESCRIPTION
 Cmdlet **Get-AzStorageFile** mencantumkan direktori dan file untuk berbagi atau direktori yang Anda tentukan.
-Tentukan *parameter Jalur* untuk mendapatkan instans direktori atau file dalam jalur yang ditentukan.
-Cmdlet ini mengembalikan **objek AzureStorageFile** **dan AzureStorageDirectory.**
+Tentukan parameter *Jalur* untuk mendapatkan contoh direktori atau file dalam jalur yang ditentukan.
+Cmdlet ini mengembalikan objek **AzureStorageFile** dan **AzureStorageDirectory** .
 Anda dapat menggunakan properti **IsDirectory** untuk membedakan antara folder dan file.
 
 ## EXAMPLES
 
-### Contoh 1: Daftar direktori di berbagi
+### Contoh 1: Daftar direktori dalam berbagi
 ```
 PS C:\>Get-AzStorageFile -ShareName "ContosoShare06" | where {$_.GetType().Name -eq "CloudFileDirectory"}
 ```
 
-Perintah ini hanya mencantumkan direktori di berbagi ContosoShare06.
-Alur kerja terlebih dahulu mengambil file dan direktori, meneruskannya ke **operator** di mana dengan menggunakan operator pipeline, lalu membuang objek apa pun yang tipenya bukan "CloudFileDirectory".
+Perintah ini hanya mencantumkan direktori dalam ContosoShare06.
+Ini pertama mengambil file dan direktori, meneruskannya ke operator **tempat** dengan menggunakan operator pipeline, lalu membuang objek apa pun yang tipenya bukan "CloudFileDirectory".
 
-### Contoh 2: Daftar Direktori File
+### Contoh 2: Mencantumkan Direktori File
 ```
 PS C:\> Get-AzStorageFile -ShareName "ContosoShare06" -Path "ContosoWorkingFolder" | Get-AzStorageFile
 ```
 
 Perintah ini mencantumkan file dan folder dalam direktori ContosoWorkingFolder di bawah berbagi ContosoShare06.
-Program akan mendapatkan contoh direktori terlebih dahulu, lalu saluran ke cmdlet **Get-AzStorageFile** untuk mencantumkan direktori.
+Pertama mendapatkan contoh direktori, lalu menyalurkannya ke cmdlet **Get-AzStorageFile** untuk mencantumkan direktori.
 
 ## PARAMETERS
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu habis di samping klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini membuat permintaan.
-Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini akan mengembalikan kesalahan.
+Menentukan interval batas waktu sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -85,11 +85,11 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan jumlah maksimum panggilan jaringan bersama.
-Anda dapat menggunakan parameter ini untuk membatasi konkurensi guna membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Menentukan maksimum panggilan jaringan serentak.
+Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
 Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
-Parameter ini bisa membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth yang rendah, seperti 100 kilobit per detik.
-Nilai default adalah 10.
+Parameter ini dapat membantu mengurangi masalah koneksi jaringan dalam lingkungan bandwidth rendah, seperti 100 kilobit per detik.
+Nilai defaultnya adalah 10.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -104,8 +104,8 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Menentukan Azure Storage konteks.
-Untuk mendapatkan Storage konteks, gunakan cmdlet New-AzStorageContext.
+Menentukan konteks Azure Storage.
+Untuk mendapatkan konteks Storage, gunakan cmdlet New-AzStorageContext.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -Direktori
-Menentukan folder sebagai objek **CloudFileDirectory.**
+Menentukan folder sebagai objek **CloudFileDirectory** .
 Cmdlet ini mendapatkan folder yang ditentukan parameter ini.
 Untuk mendapatkan direktori, gunakan cmdlet New-AzStorageDirectory.
 Anda juga dapat menggunakan cmdlet **Get-AzStorageFile** untuk mendapatkan direktori.
@@ -152,10 +152,10 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Path
+### -Jalur
 Menentukan jalur folder.
-Jika Anda menghilangkan parameter *Jalur,* **Get-AzStorageFile mencantumkan** direktori dan file dalam berbagi atau direktori file yang ditentukan.
-Jika Anda menyertakan *parameter Jalur,* **Get-AzStorageFile** mengembalikan sebuah instans direktori atau file dalam jalur yang ditentukan.
+Jika Anda menghilangkan parameter *Jalur* , **Get-AzStorageFile mencantumkan** direktori dan file dalam berbagi file atau direktori tertentu.
+Jika Anda menyertakan parameter *Jalur* , **Get-AzStorageFile** mengembalikan contoh direktori atau file dalam jalur yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -170,8 +170,8 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan interval waktu habis di sisi layanan, dalam detik, untuk permintaan.
-Jika interval yang ditentukan berlalu sebelum layanan memproses permintaan, layanan Storage akan mengembalikan kesalahan.
+Menentukan interval waktu habis sisi layanan, dalam detik, untuk permintaan.
+Jika interval yang ditentukan berlalu sebelum layanan memproses permintaan, layanan Storage mengembalikan kesalahan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -186,11 +186,11 @@ Accept wildcard characters: False
 ```
 
 ### -Bagikan
-Menentukan objek **CloudFileShare.**
+Menentukan objek **CloudFileShare** .
 Cmdlet ini mendapatkan file atau direktori dari berbagi file yang ditentukan parameter ini.
-Untuk mendapatkan objek **CloudFileShare,** gunakan cmdlet Get-AzStorageShare.
-Objek ini berisi Storage konteks.
-Jika Anda menentukan parameter ini, jangan tentukan parameter *Konteks.*
+Untuk mendapatkan objek **CloudFileShare** , gunakan cmdlet Get-AzStorageShare.
+Objek ini berisi konteks Storage.
+Jika Anda menentukan parameter ini, jangan tentukan parameter *Konteks* .
 
 ```yaml
 Type: Microsoft.WindowsAzure.Storage.File.CloudFileShare
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShareName
-Menentukan nama berbagi file.
+Menentukan nama file yang dibagikan.
 Cmdlet ini mendapatkan file atau direktori dari berbagi file yang ditentukan parameter ini.
 
 ```yaml
@@ -221,12 +221,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.WindowsAz. Storage. File.CloudFileShare
-Parameter: Berbagi (ByValue)
+Parameter: Bagikan (ByValue)
 
 ### Microsoft.WindowsAz. Storage. File.CloudFileDirectory
 Parameter: Direktori (ByValue)

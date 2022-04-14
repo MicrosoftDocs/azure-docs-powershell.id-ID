@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Set-AzLoadBalancerRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Set-AzLoadBalancerRuleConfig.md
 ms.openlocfilehash: f566c2b9ac771071a9eb72673edb7e5218656c9b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425740"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141964131"
 ---
 # Set-AzLoadBalancerRuleConfig
 
 ## SYNOPSIS
-Mengatur status tujuan untuk konfigurasi aturan penyeimbang muat.
+Mengatur status tujuan untuk konfigurasi aturan penyeimbang muatan.
 
 ## SYNTAX
 
@@ -39,28 +39,28 @@ Set-AzLoadBalancerRuleConfig -Name <String> -LoadBalancer <PSLoadBalancer>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzLoadBalancerRuleConfig** mengatur status tujuan untuk konfigurasi aturan penyeimbang muat.
+Cmdlet **Set-AzLoadBalancerRuleConfig** mengatur status tujuan untuk konfigurasi aturan penyeimbang beban.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah konfigurasi aturan keseimbangan muat
+### Contoh 1: Mengubah konfigurasi aturan penyeimbangan beban
 ```
 PS C:\>$slb = Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 PS C:\> $slb | Add-AzLoadBalancerRuleConfig -Name "NewRule" -FrontendIPConfiguration $slb.FrontendIpConfigurations[0] -Protocol "Tcp" -FrontendPort 3350 -BackendPort 3350 -EnableFloatingIP
 PS C:\> $slb | Set-AzLoadBalancerRuleConfig -Name "NewRule" -FrontendIPConfiguration $slb.FrontendIpConfigurations[0] -Protocol "Tcp" -FrontendPort 3350 -BackendPort 3350
 ```
 
-Perintah pertama mendapatkan penyeimbang muat bernama MyLoadBalancer, lalu menyimpannya dalam $slb variabel.
+Perintah pertama mendapatkan load balancer bernama MyLoadBalancer, lalu menyimpannya dalam variabel $slb.
 
-Perintah kedua menggunakan operator pipeline untuk memasukkan penyeimbang muat di $slb ke Add-AzLoadBalancerRuleConfig, yang menambahkan aturan bernama NewRule ke dalamnya.
+Perintah kedua menggunakan operator pipeline untuk mengirimkan penyeimbang muatan dalam $slb ke Add-AzLoadBalancerRuleConfig, yang menambahkan aturan bernama NewRule ke dalamnya.
 
-Perintah ketiga melewati penyeimbang muat ke **Set-AzLoadBalancerRuleConfig**, yang mengatur konfigurasi aturan baru.
-Perhatikan bahwa konfigurasi tidak mengaktifkan alamat IP terapung, yang telah diaktifkan oleh perintah sebelumnya.
+Perintah ketiga melewati penyeimbang muatan ke **Set-AzLoadBalancerRuleConfig**, yang mengatur konfigurasi aturan baru.
+Perhatikan bahwa konfigurasi tidak mengaktifkan alamat IP mengambang, yang telah diaktifkan oleh perintah sebelumnya.
 
 ## PARAMETERS
 
 ### -BackendAddressPool
-Menentukan objek **BackendAddressPool** untuk dikaitkan dengan aturan penyeimbang muat.
+Menentukan objek **BackendAddressPool** untuk dikaitkan dengan aturan load balancer.
 
 ```yaml
 Type: PSBackendAddressPool
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendAddressPoolId
-Menentukan ID objek **BackendAddressPool** untuk dikaitkan dengan konfigurasi aturan penyeimbang muat.
+Menentukan ID objek **BackendAddressPool** untuk dikaitkan dengan konfigurasi aturan load balancer.
 
 ```yaml
 Type: String
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendPort
-Menentukan port backend untuk lalu lintas yang sesuai dengan konfigurasi aturan ini.
+Menentukan port backend untuk lalu lintas yang cocok dengan konfigurasi aturan ini.
 
 ```yaml
 Type: Int32
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableOutboundSNAT
-Mengonfigurasi SNAT untuk VM dalam backend pool untuk menggunakan alamat publicIP yang ditentukan di frontend aturan keseimbangan muat.
+Mengonfigurasi SNAT untuk VM dalam kumpulan backend untuk menggunakan alamat publicIP yang ditentukan di bagian depan aturan keseimbangan beban.
 
 ```yaml
 Type: SwitchParameter
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableFloatingIP
-Mengindikasikan bahwa cmdlet ini mengaktifkan alamat IP mengambang untuk konfigurasi aturan.
+Menunjukkan bahwa cmdlet ini memungkinkan alamat IP mengambang untuk konfigurasi aturan.
 
 ```yaml
 Type: SwitchParameter
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendIpConfiguration
-Menentukan daftar alamat IP ujung-depan untuk dikaitkan dengan konfigurasi aturan penyeimbang muat.
+Menentukan daftar alamat IP ujung-depan untuk dikaitkan dengan konfigurasi aturan penyeimbang muatan.
 
 ```yaml
 Type: PSFrontendIPConfiguration
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendIpConfigurationId
-Menentukan ID untuk konfigurasi alamat IP ujung-depan.
+Menentukan ID untuk konfigurasi alamat IP ujung depan.
 
 ```yaml
 Type: String
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendPort
-Menentukan port ujung-depan yang sesuai dengan konfigurasi aturan penyeimbang muat.
+Menentukan port ujung depan yang cocok dengan konfigurasi aturan penyeimbang muatan.
 
 ```yaml
 Type: Int32
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdleTimeoutInMinutes
-Menentukan durasi waktu, dalam menit, di mana status percakapan dipertahankan dalam penyeimbang muat.
+Menentukan durasi waktu, dalam menit, di mana status percakapan dipertahankan dalam penyeimbang beban.
 
 ```yaml
 Type: Int32
@@ -210,8 +210,8 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan penyeimbang muat.
-Cmdlet ini mengatur konfigurasi aturan status tujuan untuk penyeimbang muat yang ditentukan parameter ini.
+Menentukan penyeimbang beban.
+Cmdlet ini mengatur konfigurasi aturan status tujuan untuk penyeimbang beban yang ditentukan parameter ini.
 
 ```yaml
 Type: PSLoadBalancer
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadDistribution
-Menentukan distribusi muat.
+Menentukan distribusi beban.
 Nilai yang dapat diterima untuk parameter ini adalah: SourceIP dan SourceIPProtocol.
 
 ```yaml
@@ -243,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama penyeimbang muat.
+Menentukan nama penyeimbang muatan.
 
 ```yaml
 Type: String
@@ -257,8 +257,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Ser
-Menentukan standar untuk dikaitkan dengan konfigurasi aturan penyeimbang muat.
+### -Probe
+Menentukan probe untuk dikaitkan dengan konfigurasi aturan penyeimbang muatan.
 
 ```yaml
 Type: PSProbe
@@ -272,8 +272,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Ser 2013
-Menentukan ID asosiasi untuk dikaitkan dengan konfigurasi aturan penyeimbang muat.
+### -ProbeId
+Menentukan ID probe untuk dikaitkan dengan konfigurasi aturan penyeimbang muatan.
 
 ```yaml
 Type: String
@@ -287,8 +287,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
-Menentukan protokol yang sesuai dengan aturan penyeimbang muat.
+### -Protokol
+Menentukan protokol yang cocok dengan aturan penyeimbang muatan.
 Nilai yang dapat diterima untuk parameter ini adalah: Tcp atau Udp.
 
 ```yaml
@@ -305,12 +305,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSLoadBalancer
-Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari saluran
+Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari pipeline
 
 ## OUTPUTS
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Get-AzVMImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Get-AzVMImage.md
 ms.openlocfilehash: 7b7a61c6d3043fcb4687d75ac49400b88361b81b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424092"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141964977"
 ---
 # Get-AzVMImage
 
@@ -42,12 +42,12 @@ Cmdlet **Get-AzVMImage** mendapatkan semua versi VMImage.
 PS C:\> Get-AzVMImage -Location "Central US" -PublisherName "Canonical" -Offer "UbuntuServer" -Skus "15.04-DAILY"
 ```
 
-Perintah ini mendapatkan semua versi VMImage yang sesuai dengan nilai yang ditentukan.
+Perintah ini mendapatkan semua versi VMImage yang cocok dengan nilai yang ditentukan.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -91,7 +91,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Offer
+### -Penawaran
 Menentukan tipe penawaran VMImage.
 Untuk mendapatkan penawaran gambar, gunakan cmdlet Get-AzVMImageOffer.
 
@@ -155,11 +155,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
@@ -172,12 +172,12 @@ Cmdlet ini tidak menerima input apa pun.
 
 ## RELATED LINKS
 
-[Get-AzvMImageOffer](./Get-AzVMImageOffer.md)
+[Get-AzVMImageOffer](./Get-AzVMImageOffer.md)
 
 [Get-AzVMImagePublisher](./Get-AzVMImagePublisher.md)
 
-[Get-azvmImagesku](./Get-AzVMImageSku.md)
+[Get-AzVMImageSku](./Get-AzVMImageSku.md)
 
-[Save-AzvMImage](./Save-AzVMImage.md)
+[Simpan-AzVMImage](./Save-AzVMImage.md)
 
 

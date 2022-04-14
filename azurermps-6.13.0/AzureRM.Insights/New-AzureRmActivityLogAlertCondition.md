@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Insights/Commands.Insights/help/New-AzureRmActivityLogAlertCondition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Insights/Commands.Insights/help/New-AzureRmActivityLogAlertCondition.md
 ms.openlocfilehash: 3904be513baf73c67c2dbd0018ae6b3e7e2226fd
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132414954"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141823356"
 ---
 # New-AzureRmActivityLogAlertCondition
 
 ## SYNOPSIS
-Membuat objek kondisi log aktivitas baru dalam memori.
+Membuat objek kondisi peringatan log aktivitas baru dalam memori.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,22 +28,22 @@ New-AzureRmActivityLogAlertCondition -Field <String> -Equal <String> [-DefaultPr
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmActivityLogAlertCondition** membuat objek kondisi pemberitahuan log aktivitas baru dalam memori.
+Cmdlet **New-AzureRmActivityLogAlertCondition** membuat objek kondisi peringatan log aktivitas baru dalam memori.
 
 ## EXAMPLES
 
-### Contoh 1: Buat objek kondisi peringatan log aktivitas baru dalam memori.
+### Contoh 1: Membuat objek kondisi peringatan log aktivitas baru dalam memori.
 ```
 PS C:\>$condition = New-AzureRmActivityLogAlertCondition -Field "Requests" -Equal "OtherField"
 ```
 
-Perintah ini akan membuat objek kondisi peringatan log aktivitas baru dalam memori.
-**CATATAN**: ketika cmdlet ini digunakan dengan Set-AzureRmActivityLogAlert setidaknya salah satu objek ini, yang diberikan sebagai parameter, harus memiliki Bidang yang sama dengan "Kategori". Jika tidak, backend merespons dengan 400 (BadRequest.)
+Perintah ini membuat objek kondisi peringatan log aktivitas baru dalam memori.
+**CATATAN**: ketika cmdlet ini digunakan dengan Set-AzureRmActivityLogAlert setidaknya salah satu objek ini, yang lolos sebagai parameter, harus memiliki Bidang yang sama dengan "Kategori". Jika tidak, backend merespons dengan 400 (BadRequest.)
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sama dengan
-Menentukan properti sama dengan untuk kondisi daun.
+Menentukan properti yang sama dengan untuk kondisi daun.
 
 ```yaml
 Type: System.String
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -106,10 +106,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Enable-AzureRmActivityLogAlert](./Enable-AzureRmActivityLogAlert.md)
 
-[Disable-AzureRmActivityLogAlert](./Disable-AzureRmActivityLogAlert.md)
+[Menonaktifkan-AzureRmActivityLogAlert](./Disable-AzureRmActivityLogAlert.md)
 
 [Get-AzureRmActivityLogAlert](./Get-AzureRmActivityLogAlert.md)
 
-[Remove-AzureRmActivityLogAlert](./Remove-AzureRmActivityLogAlert.md)
+[Hapus-AzureRmActivityLogAlert](./Remove-AzureRmActivityLogAlert.md)
 
-[New-AzureRmActionGroup](./Get-AzureRmActionGroup.md)
+[AzureRmActionGroup baru](./Get-AzureRmActionGroup.md)

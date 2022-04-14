@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/New-AzureRmPolicyDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/New-AzureRmPolicyDefinition.md
 ms.openlocfilehash: 22c8ea5c93a301796b2b42184a54744e9841163d
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422511"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141881670"
 ---
 # New-AzureRmPolicyDefinition
 
@@ -68,9 +68,9 @@ Cmdlet **New-AzureRmPolicyDefinition** membuat definisi kebijakan yang menyertak
 PS C:\> New-AzureRmPolicyDefinition -Name 'LocationDefinition' -Policy C:\LocationPolicy.json
 ```
 
-Perintah ini membuat definisi kebijakan bernama LocationDefinition yang berisi aturan kebijakan yang ditentukan dalam C:\LocationPolicy.json. Contoh konten untuk file LocationPolicy.json yang disediakan di atas.
+Perintah ini membuat definisi kebijakan bernama LocationDefinition yang berisi aturan kebijakan yang ditentukan di C:\LocationPolicy.json. Konten contoh untuk file LocationPolicy.json disediakan di atas.
 
-### Contoh 2: Membuat definisi kebijakan parameter menggunakan parameter sebaris
+### Contoh 2: Membuat definisi kebijakan yang di parameter menggunakan parameter sebaris
 ```
 {
    "if": {
@@ -87,7 +87,7 @@ Perintah ini membuat definisi kebijakan bernama LocationDefinition yang berisi a
 PS C:\> New-AzureRmPolicyDefinition -Name 'LocationDefinition' -Policy C:\LocationPolicy.json -Parameter '{ "listOfAllowedLocations": { "type": "array" } }'
 ```
 
-Perintah ini membuat definisi kebijakan bernama LocationDefinition yang berisi aturan kebijakan yang ditentukan dalam C:\LocationPolicy.json. Definisi parameter untuk aturan kebijakan disediakan sebaris.
+Perintah ini membuat definisi kebijakan bernama LocationDefinition yang berisi aturan kebijakan yang ditentukan di C:\LocationPolicy.json. Definisi parameter untuk aturan kebijakan disediakan sebaris.
 
 ### Contoh 3: Membuat definisi kebijakan sebaris dalam grup manajemen
 ```
@@ -95,7 +95,7 @@ PS C:\> New-AzureRmPolicyDefinition -Name 'VMPolicyDefinition' -ManagementGroupN
 ```
 
 Perintah ini membuat definisi kebijakan bernama VMPolicyDefinition dalam grup manajemen Dept42.
-Perintah tersebut menentukan kebijakan sebagai string dalam format JSON yang valid.
+Perintah menentukan kebijakan sebagai string dalam format JSON yang valid.
 
 ### Contoh 4: Membuat definisi kebijakan sebaris dengan metadata
 ```
@@ -111,8 +111,8 @@ Properties         : @{displayName=VMPolicyDefinition; policyType=Custom; mode=A
 PolicyDefinitionId : /subscriptions/11111111-1111-1111-1111-111111111111/providers/Microsoft.Authorization/policyDefinitions/VMPolicyDefinition
 ```
 
-Perintah ini membuat definisi kebijakan bernama VMPolicyDefinition dengan metadata yang mengindikasikan kategorinya adalah "Komputer Virtual".
-Perintah tersebut menentukan kebijakan sebagai string dalam format JSON yang valid.
+Perintah ini membuat definisi kebijakan bernama VMPolicyDefinition dengan metadata yang mengindikasikan kategorinya adalah "Mesin Virtual".
+Perintah menentukan kebijakan sebagai string dalam format JSON yang valid.
 
 ## PARAMETERS
 
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -178,14 +178,14 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: System.Management.Automation.ActionPreference
@@ -306,7 +306,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Mengindikasikan bahwa cmdlet ini mempertimbangkan versi API prari perilisan bila secara otomatis menentukan versi mana yang akan digunakan.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -321,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan dari definisi kebijakan baru.
+ID langganan definisi kebijakan baru.
 
 ```yaml
 Type: System.Nullable`1[System.Guid]
@@ -336,7 +336,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -348,7 +348,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmPolicyDefinition](./Get-AzureRmPolicyDefinition.md)
 
-[Remove-AzureRmPolicyDefinition](./Remove-AzureRmPolicyDefinition.md)
+[Hapus-AzureRmPolicyDefinition](./Remove-AzureRmPolicyDefinition.md)
 
 [Set-AzureRmPolicyDefinition](./Set-AzureRmPolicyDefinition.md)
 

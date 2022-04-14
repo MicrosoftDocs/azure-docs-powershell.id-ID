@@ -4,16 +4,16 @@ Module Name: Azs.ContainerRegistry.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.containerregistry.admin/get-azscontainerregistry
 schema: 2.0.0
 ms.openlocfilehash: 5f12b4f9f69fae07b3ffb4b46f270426065db1b2
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136577483"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141875977"
 ---
 # Get-AzsContainerRegistry
 
 ## SYNOPSIS
-Mengembalikan daftar registri wadah yang ada di semua lokasi penyewa.
+Mengembalikan daftar registri kontainer yang ada di semua lokasi penyewa.
 
 ## SYNTAX
 
@@ -23,11 +23,11 @@ Get-AzsContainerRegistry [-Location <String>] [-SubscriptionId <String[]>] [-Def
 ```
 
 ## DESCRIPTION
-Mengembalikan daftar registri wadah yang ada di semua lokasi penyewa.
+Mengembalikan daftar registri kontainer yang ada di semua lokasi penyewa.
 
 ## EXAMPLES
 
-### Contoh 1: Get List Azs Container Registries
+### Contoh 1: Dapatkan Daftar Azs Container Regisries
 ```powershell
 PS C:\> Get-AzsContainerRegistry | ConvertTo-Json
 
@@ -45,7 +45,7 @@ PS C:\> Get-AzsContainerRegistry | ConvertTo-Json
 }
 ```
 
-Mengembalikan daftar registri wadah yang ada di semua lokasi penyewa.
+Mengembalikan daftar registri kontainer yang ada di semua lokasi penyewa.
 
 ## PARAMETERS
 
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

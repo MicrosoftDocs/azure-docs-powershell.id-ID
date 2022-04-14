@@ -4,16 +4,16 @@ Module Name: Azs.Subscriptions.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: c2314dd02cf6fff26c3f2f9c2de31bd752ccebd6
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136580202"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141877652"
 ---
 # Get-AzsLocation
 
 ## SYNOPSIS
-Mendapatkan daftar semua lokasi AzureStack.
+Dapatkan daftar semua lokasi AzureStack.
 
 ## SYNTAX
 
@@ -22,13 +22,13 @@ Mendapatkan daftar semua lokasi AzureStack.
 Get-AzsLocation [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsLocation [-Name] <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Mendapatkan daftar semua lokasi AzureStack.
+Dapatkan daftar semua lokasi AzureStack.
 
 ## EXAMPLES
 
@@ -37,12 +37,12 @@ Mendapatkan daftar semua lokasi AzureStack.
 Get-AzsLocation
 ```
 
-Mendapatkan daftar semua lokasi AzureStack.
+Dapatkan daftar semua lokasi AzureStack.
 
 ## PARAMETERS
 
 ### -Nama
-{{fill name description}}
+{{Fill Name Description}}
 
 ```yaml
 Type: String
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

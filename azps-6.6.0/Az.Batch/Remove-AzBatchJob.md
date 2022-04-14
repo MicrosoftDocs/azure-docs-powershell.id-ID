@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchJob.md
 ms.openlocfilehash: 133e33178643de4ad2a36ba1c035fa4b6d362474
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139979961"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141807224"
 ---
 # Remove-AzBatchJob
 
 ## SYNOPSIS
-Menghapus pekerjaan Kumpulan.
+Menghapus pekerjaan Batch.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/remove-azbatchjob) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.batch/remove-azbatchjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,34 +30,34 @@ Remove-AzBatchJob [-Id] <String> [-Force] -BatchContext <BatchAccountContext>
 
 ## DESCRIPTION
 Cmdlet **Remove-AzBatchJob** menghapus pekerjaan Azure Batch.
-Cmdlet ini akan meminta konfirmasi Anda sebelum menghapus pekerjaan, kecuali jika Anda menentukan *parameter Paksa* .
+Cmdlet ini meminta konfirmasi sebelum menghapus pekerjaan, kecuali Anda menentukan parameter *Paksa* .
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus pekerjaan Kumpulan
+### Contoh 1: Menghapus pekerjaan Batch
 ```
 PS C:\>Remove-AzBatchJob -Id "Job-000001" -BatchContext $Context
 ```
 
 Perintah ini menghapus pekerjaan yang memiliki ID Job-000001.
-Perintah meminta konfirmasi Anda sebelum menghapus pekerjaan.
-Gunakan cmdlet Get-AzBatchAccountKey cmdlet untuk menetapkan konteks ke $Context variabel.
+Perintah meminta konfirmasi sebelum menghapus pekerjaan.
+Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
 
-### Contoh 2: Menghapus pekerjaan kumpulan tanpa konfirmasi dengan menggunakan pipeline
+### Contoh 2: Hapus pekerjaan Batch tanpa konfirmasi menggunakan pipeline
 ```
 PS C:\>Get-AzBatchJob -Id "Job-000002" -BatchContext $Context | Remove-AzBatchJob -Force -BatchContext $Context
 ```
 
-Perintah ini mendapatkan pekerjaan yang memiliki ID Job-000002 dengan menggunakan cmdlet Get-AzBatchJob cmdlet.
-Perintah itu melewati pekerjaan itu ke cmdlet saat ini dengan menggunakan operator pipeline.
-Perintah menghapus pekerjaan tersebut.
-Karena perintah menyertakan parameter *Paksa* , perintah tidak akan meminta konfirmasi Anda.
+Perintah ini mendapatkan pekerjaan yang memiliki ID Job-000002 dengan menggunakan cmdlet Get-AzBatchJob.
+Perintah melewati pekerjaan tersebut ke cmdlet saat ini menggunakan operator pipeline.
+Perintah akan menghapus pekerjaan tersebut.
+Karena perintah menyertakan parameter *Paksa* , perintah tidak meminta konfirmasi kepada Anda.
 
 ## PARAMETERS
 
 ### -BatchContext
-Menentukan contoh **BatchAccountContext** yang digunakan cmdlet untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -86,8 +86,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -177,4 +177,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Stop-AzBatchJob](./Stop-AzBatchJob.md)
 
-[Cmdlet Kumpulan Azure](/powershell/module/Az.Batch/)
+[Cmdlet Azure Batch](/powershell/module/Az.Batch/)

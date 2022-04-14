@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlSpatialSpec.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlSpatialSpec.md
-ms.openlocfilehash: 32e545aa6806d11c60ef4cf29267f8407211ee02
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: db4676bf68dc183f0c8e7600cad629ee90ccc253
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140187931"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141853142"
 ---
 # New-AzCosmosDBSqlSpatialSpec
 
 ## SYNOPSIS
-Membuat objek baru tipe PSSpatialSpec. Pernyataan ini bisa disampaikan sebagai nilai parameter untuk Set-AzCosmosDBSqlIndexingPolicy.
+Membuat objek baru tipe PSSpatialSpec. Ini dapat dilewatkan sebagai nilai parameter untuk Set-AzCosmosDBSqlIndexingPolicy.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbsqlspatialspec) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzCosmosDBSqlSpatialSpec -Path <String> -Type <String[]> [-DefaultProfile <I
 ```
 
 ## DESCRIPTION
-Membuat Objek terkait Jenis Spasial API Sql.
+Membuat Objek yang terkait dengan Sql API SpatialSpec.
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
+### -Jalur
 Jalur dalam dokumen JSON ke indeks.
 
 ```yaml
@@ -70,8 +73,8 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Larik string dengan nilai yang dapat diterima: Titik, String Garis, Poligon, MultiPolygon.
-Menyatakan tipe jalur spasial.
+Array string dengan nilai yang dapat diterima: Point, LineString, Polygon, MultiPolygon.
+Tipe spasial jalur representasi.
 
 ```yaml
 Type: System.String[]
@@ -86,11 +89,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

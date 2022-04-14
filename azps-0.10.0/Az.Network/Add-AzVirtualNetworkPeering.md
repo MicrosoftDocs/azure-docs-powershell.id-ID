@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Add-AzVirtualNetworkPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Add-AzVirtualNetworkPeering.md
 ms.openlocfilehash: 440c1395c30f396ff1ae2430828cac7aae675734
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425407"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141874220"
 ---
 # Add-AzVirtualNetworkPeering
 
@@ -53,9 +53,9 @@ Add-AzVirtualNetworkPeering -Name myVnet1ToMyVnet2' -VirtualNetwork $vnet1 -Remo
 Add-AzVirtualNetworkPeering -Name 'myVnet2ToMyVnet1' -VirtualNetwork $vnet2 -RemoteVirtualNetworkId $vnet1.Id
 ```
 
-Perhatikan bahwa link peering harus dibuat dari vnet1 ke vnet2 dan sebaliknya agar peering berfungsi.
+Perhatikan bahwa tautan peering harus dibuat dari vnet1 ke vnet2 dan sebaliknya agar peering dapat berfungsi.
 
-### Contoh 2: Buat peering antara dua jaringan virtual di wilayah yang berbeda
+### Contoh 2: Membuat peering di antara dua jaringan virtual di wilayah yang berbeda
 ```
 # Variables for common values used throughout the script.
 $rgName='myResourceGroup'
@@ -76,7 +76,7 @@ Add-AzVirtualNetworkPeering -Name myVnet1ToMyVnet2' -VirtualNetwork $vnet1 -Remo
 Add-AzVirtualNetworkPeering -Name 'myVnet2ToMyVnet1' -VirtualNetwork $vnet2 -RemoteVirtualNetworkId $vnet1.Id
 ```
 
-Berikut 'myVnet1' di Pusat Barat AS peered dengan 'myVnet2' di Pusat Kanada.
+Di sini 'myVnet1' di AS West Central diintip dengan 'myVnet2' di Kanada Central.
 
 ## PARAMETERS
 
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowGatewayTransit
-Bendera untuk memperbolehkan gatewayLink digunakan dalam link jaringan virtual jarak jauh ke jaringan virtual ini
+Tandai untuk memperbolehkan gatewayTautkan digunakan dalam tautan jaringan virtual jarak jauh ke jaringan virtual ini
 
 ```yaml
 Type: SwitchParameter
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -BlockVirtualNetworkAccess
-Menunjukkan bahwa cmdlet ini memblokir mesin virtual dalam ruang jaringan virtual yang ditautkan untuk mengakses semua mesin virtual di ruang jaringan virtual lokal.
+Menunjukkan bahwa cmdlet ini memblokir mesin virtual di ruang jaringan virtual tertaut untuk mengakses semua mesin virtual di ruang jaringan virtual lokal.
 
 ```yaml
 Type: SwitchParameter
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemoteVirtualNetworkId
-Menentukan ID jaringan virtual jarak jauh.
+Menentukan ID jaringan maya jarak jauh.
 
 ```yaml
 Type: String
@@ -185,8 +185,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -UseRemoteGateway
-Mengindikasikan bahwa cmdlet ini memungkinkan gateway jarak jauh pada jaringan virtual ini.
+### -UseRemoteGateways
+Menunjukkan bahwa cmdlet ini memperbolehkan gateway jarak jauh di jaringan virtual ini.
 
 ```yaml
 Type: SwitchParameter
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetwork
-Menentukan jaringan virtual induk.
+Menentukan jaringan maya induk.
 
 ```yaml
 Type: PSVirtualNetwork
@@ -216,12 +216,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### String
-Parameter 'RemoteVirtualNetworkId' menerima nilai tipe 'String' dari saluran
+Parameter 'RemoteVirtualNetworkId' menerima nilai tipe 'String' dari pipeline
 
 ### PSVirtualNetwork
 Parameter 'VirtualNetwork' menerima nilai tipe 'PSVirtualNetwork' dari pipeline

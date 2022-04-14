@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.recov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/New-AzureRmRecoveryServicesAsrNetworkMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/New-AzureRmRecoveryServicesAsrNetworkMapping.md
-ms.openlocfilehash: e1307225765cc30b8ca371b3053c102d8f92a71b1b22d4ad674d3e1f81bfaa19
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: e9aadbc8eae9703340043dc640f4cb9759b919d1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417429"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141818511"
 ---
 # New-AzureRmRecoveryServicesAsrNetworkMapping
 
@@ -43,7 +43,7 @@ New-AzureRmRecoveryServicesAsrNetworkMapping -Name <String> -PrimaryNetwork <ASR
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmRecoveryServicesAsrNetworkMapping** memulai operasi membuat pemetaan jaringan ASR antara dua jaringan dan mengembalikan objek pekerjaan ASR untuk pekerjaan ASR yang digunakan untuk melacak operasi.
+Cmdlet **New-AzureRmRecoveryServicesAsrNetworkMapping** memulai operasi pembuatan pemetaan jaringan ASR antara dua jaringan dan mengembalikan objek pekerjaan ASR untuk pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ## EXAMPLES
 
@@ -60,12 +60,12 @@ PS C:\> $currentJob = New-AzureRmRecoveryServicesAsrNetworkMapping -AzureToAzure
  -PrimaryAzureNetworkId $AzureNetworkId -RecoveryFabric $RecoveryAzureFabric -RecoveryAzureNetworkId $RecoveryNetworkId
 ```
 
-Memulai pemetaan jaringan untuk operasi pembuatan menggunakan nama yang ditentukan, jaringan utama dan pemulihan, dan mengembalikan pekerjaan ASR untuk melacak operasi(skenario Azure ke Azure).
+Memulai pemetaan jaringan untuk operasi pembuatan menggunakan nama yang ditentukan, jaringan utama dan pemulihan, dan mengembalikan pekerjaan ASR untuk melacak operasi(Skenario Azure ke Azure).
 
 ## PARAMETERS
 
 ### -AzureToAzure
-Switch parameter specifying that the network mapping being created will be used to replicated Azure virtual machines between two Azure regions.
+Parameter switch yang menentukan bahwa pemetaan jaringan yang sedang dibuat akan digunakan untuk mereplikasi mesin virtual Azure di antara dua kawasan Azure.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryAzureNetworkId
-Menentukan ID jaringan virtual Azure dari jaringan utama untuk pemetaan ini.
+Menentukan ID jaringan virtual Azure dari jaringan utama untuk pemetaan.
 
 ```yaml
 Type: System.String
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryFabric
-Spesifikasi kain ASR tempat pemetaan harus dibuat.
+Specifes the ASR fabric where mapping should be created.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRFabric
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryAzureNetworkId
-Menentukan ID jaringan Azure pemulihan untuk pemetaan jaringan.
+Menentukan ID jaringan azure pemulihan untuk pemetaan jaringan.
 
 ```yaml
 Type: System.String
@@ -170,8 +170,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RecoveryFabric
-The Azure Site Recovery fabric object corresponding to the recovery Azure region.
+### -PemulihanFabric
+Objek kain Azure Site Recovery terkait dengan kawasan Azure pemulihan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRFabric
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

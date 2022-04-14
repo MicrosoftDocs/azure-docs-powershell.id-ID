@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVpnServerConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVpnServerConfiguration.md
-ms.openlocfilehash: 15f51188f7a6ad13c55728b255fceddf6bf49342
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: bf155b69fa0817992339e4cc70921d77a4527924
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140007291"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141934342"
 ---
 # Update-AzVpnServerConfiguration
 
 ## SYNOPSIS
 Memperbarui VpnServerConfiguration yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azvpnserverconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Update-AzVpnServerConfiguration -ResourceId <String> [-VpnProtocol <String[]>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzVpnServerConfiguration** memungkinkan Anda memperbarui VpnServerConfiguration yang sudah ada dengan vpnProtocols, VpnAuthenticationTypes, IpsecPolicies, dan untuk mengatur parameter terkait tipe autentikasi vpn yang dipilih sesuai dengan persyaratan pelanggan tentang konektivitas Arahkan ke situs.
+Cmdlet **Update-AzVpnServerConfiguration** memungkinkan Anda memperbarui vpnServerConfiguration yang sudah ada dengan VpnProtocols yang berbeda, VpnAuthenticationTypes, IpsecPolicies dan mengatur parameter terkait tipe autentikasi vpn yang dipilih sesuai kebutuhan pelanggan untuk konektivitas Titik ke situs.
 
 ## EXAMPLES
 
@@ -93,7 +96,7 @@ Perintah di atas akan memperbarui VpnServerConfiguration yang sudah ada dengan V
 ## PARAMETERS
 
 ### -AadAudience
-AAD audiens untuk P2S AAD autentikasi.
+AAD audiens untuk autentikasi AAD P2S.
 
 ```yaml
 Type: System.String
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -AadIssuer
-AAD untuk P2S AAD autentikasi.
+AAD penerbit untuk autentikasi AAD P2S.
 
 ```yaml
 Type: System.String
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -AadTenant
-AAD penyewa untuk P2S AAD autentikasi.
+AAD penyewa untuk autentikasi AAD P2S.
 
 ```yaml
 Type: System.String
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek konfigurasi server vpn yang akan dimodifikasi
+Objek konfigurasi server vpn yang akan diubah
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVpnServerConfiguration
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -RadiusServerList
-P2S Server radius eksternal.
+P2S Server radius ganda eksternal.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSRadiusServer[]
@@ -303,7 +306,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable yang mewakili tag sumber daya.
+Sebuah hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -318,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnAuthenticationType
-Daftar protokol protokol protokol klien P2S VPN sebelumnya.
+Daftar protokol tunneling klien P2S VPN.
 
 ```yaml
 Type: System.String[]
@@ -349,7 +352,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnClientRevokedCertificateFilesList
-Daftar Jalur file VpnClientCertificates yang akan dicabut
+Daftar VpnClientCertificates yang akan dicabut jalur file
 
 ```yaml
 Type: System.String[]
@@ -379,7 +382,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnProtocol
-Daftar protokol protokol protokol klien P2S VPN sebelumnya.
+Daftar protokol tunneling klien P2S VPN.
 
 ```yaml
 Type: System.String[]
@@ -395,7 +398,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -411,7 +414,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -426,7 +429,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

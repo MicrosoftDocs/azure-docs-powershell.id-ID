@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.reservations/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/New-AzReservation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/New-AzReservation.md
-ms.openlocfilehash: 2ebe21ff7561146cb9a02853029e88ae1f32b4b6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: b18c6cfeeddf9e20b902fb7c26d146f2d1c9fca2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140196134"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142028945"
 ---
 # New-AzReservation
 
 ## SYNOPSIS
 Beli reservasi
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.reservations/new-azreservation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ New-AzReservation -ReservationOrderId <String> -ReservedResourceType <String> -S
 ```
 
 ## DESCRIPTION
-Beli Instans pemesanan dan dapatkan manfaat
+Beli Instans reservasi dan dapatkan manfaat
 
 ## EXAMPLES
 
@@ -38,12 +41,12 @@ PS C:\> New-AzReservation -ReservationOrderId "112382d9-9af7-4fd5-b136-b71f0a69a
 -BillingScopeId "/subscriptions/79c182d9-9af7-4fd5-b136-b71f0a69a1d0" -Term "P1Y" [-BillingPlan "Monthly"] -Quantity 2 [-DisplayName "demo"] -AppliedScopeType "Shared" [-AppliedScopes ""]
 ```
 
-Setelah menghitung harga, pelanggan dapat membeli RI yang diberikan dengan menghitung Harga
+Setelah menghitung harga, pelanggan dapat membeli yang disediakan RI dengan menghitungPrice
 
 ## PARAMETERS
 
 ### -AppliedScope
-Langganan bahwa manfaat akan diterapkan. Diperlukan jika --applied-scope-type adalah Single. Jangan tentukan apakah --applied-scope-type adalah Dibagikan.
+Langganan yang akan diterapkan manfaat tersebut. Diperlukan jika --applied-scope-type adalah Single. Jangan tentukan apakah --applied-scope-type adalah Shared.
 
 ```yaml
 Type: System.String
@@ -58,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppliedScopeType
-Tipe Lingkup yang Diterapkan untuk memperbarui reservasi dengan "Tunggal" atau "Bersama"
+Tipe Lingkup Yang Diterapkan untuk memperbarui reservasi dengan "Tunggal" atau "Dibagikan"
 
 ```yaml
 Type: System.String
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -BillingPlan
-Opsi paket tagihan tersedia untuk SKU ini. "Monthly" atau "Upfront"
+Opsi paket tagihan tersedia untuk SKU ini. "Bulanan" atau "Dimuka"
 
 ```yaml
 Type: System.String
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Nama yang mudah dikenali pengguna agar mengidentifikasi reservasi dengan mudah.
+Nama yang mudah dikenali oleh pengguna untuk mengidentifikasi reservasi dengan mudah.
 
 ```yaml
 Type: System.String
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceFlexibility
-{{ Fill InstanceFlexibility Description }}
+{{ Fill InstanceFexibility Description }}
 
 ```yaml
 Type: System.String
@@ -162,7 +165,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Jumlah
+### -Kuantitas
 Jumlah produk untuk menghitung harga atau pembelian.
 
 ```yaml
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -Perpanjang
-Setel ke true akan secara otomatis membeli reservasi baru pada tanggal kedaluwarsa.
+Atur ke true akan secara otomatis membeli reservasi baru pada tanggal kedaluwarsa.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReservationOrderId
-Id pesanan reservasi untuk dibeli, buat berdasarkan penghitungan pesanan reservasi az.
+Id pemesanan pemesanan untuk membeli, dihasilkan dengan az pemesanan pemesanan menghitung.
 
 ```yaml
 Type: System.String
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReservedResourceType
-Tipe sumber daya yang harus disediakan sku.
+Tipe sumber daya yang harus disediakan skus.
 
 ```yaml
 Type: System.String
@@ -237,8 +240,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Istilah
-Ketentuan reservasi yang tersedia untuk sumber daya ini.
+### -Term
+Syarat reservasi yang tersedia untuk sumber daya ini.
 
 
 ```yaml
@@ -254,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -269,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -284,11 +287,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

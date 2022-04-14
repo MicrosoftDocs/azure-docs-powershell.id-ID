@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Start-AzVmss.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Start-AzVmss.md
 ms.openlocfilehash: fefaa3db9550b9d88100b56deea309f884d631f8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140258119"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141870260"
 ---
 # Start-AzVmss
 
 ## SYNOPSIS
-Memulai VMSS atau kumpulan komputer virtual dalam VMSS.
+Memulai VMSS atau sekumpulan mesin virtual dalam VMSS.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/start-azvmss) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/start-azvmss) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,29 +29,29 @@ Start-AzVmss [-ResourceGroupName] <String> [-VMScaleSetName] <String> [[-Instanc
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzVmss** memulai semua mesin virtual dalam Virtual Machine Scale Set (VMSS) atau kumpulan mesin virtual.
-Anda dapat menggunakan parameter *InstanceId* untuk memilih satu set mesin virtual.
+Cmdlet **Start-AzVmss** memulai semua mesin virtual dalam Virtual Machine Scale Set (VMSS) atau sekumpulan mesin virtual.
+Anda dapat menggunakan parameter *InstanceId* untuk memilih sekumpulan mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Memulai kumpulan komputer virtual tertentu dalam VMSS
+### Contoh 1: Memulai sekumpulan mesin virtual tertentu dalam VMSS
 ```
 PS C:\> Start-AzVmss -ResourceGroupName "ContosOrg" -VMScaleSetName "ContosoVMSS"-InstanceId "0", "1"
 ```
 
-Perintah ini memulai satu set mesin virtual tertentu yang ditentukan oleh larik string ID instans yang termasuk dalam VMSS bernama ContosoVMSS.
+Perintah ini memulai sekumpulan mesin virtual tertentu yang ditentukan oleh array string ID instans yang termasuk dalam VMSS bernama ContosoVMSS.
 
-### Contoh 2: Memulai semua mesin virtual dalam VMSS
+### Contoh 2: Mulai semua mesin virtual dalam VMSS
 ```
 PS C:\> Start-AzVmss -ResourceGroupName "ContosOrg" -VMScaleSetName "ContosoVMSS"
 ```
 
-Perintah ini memulai semua mesin virtual yang termasuk dalam VMSS bernama ContosoVMSS.
+Perintah ini memulai semua mesin virtual milik VMSS bernama ContosoVMSS.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceId
-Menentukan, sebagai array string, ID atau ID contoh yang dimulai cmdlet.
+Menentukan, sebagai array string, ID atau ID instans yang cmdlet mulai.
 Misalnya: `-InstanceId "0", "3"`
 
 ```yaml
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMScaleSetName
-Tentukan nama VMSS yang digunakan cmdlet ini untuk memulai mesin virtual.
+Menentukan nama VMSS yang cmdlet ini memulai mesin virtual.
 
 ```yaml
 Type: System.String
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -177,14 +177,14 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzVmss](./New-AzVmss.md)
 
-[Remove-AzVmss](./Remove-AzVmss.md)
+[Hapus-AzVms](./Remove-AzVmss.md)
 
-[Mulai Ulang AzVmss](./Restart-AzVmss.md)
+[Mulai ulang-AzVms](./Restart-AzVmss.md)
 
-[Set-AzVmss](./Set-AzVmss.md)
+[Set-AzVms](./Set-AzVmss.md)
 
 [Stop-AzVmss](./Stop-AzVmss.md)
 
-[Update-AzVmss](./Update-AzVmss.md)
+[Pembaruan-AzVms](./Update-AzVmss.md)
 
 

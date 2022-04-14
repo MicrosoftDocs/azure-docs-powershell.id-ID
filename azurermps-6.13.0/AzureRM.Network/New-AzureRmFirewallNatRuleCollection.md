@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmFirewallNatRuleCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmFirewallNatRuleCollection.md
 ms.openlocfilehash: 12b45dd5fd62dabb2650f121f52a539962315513
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419567"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141778132"
 ---
 # New-AzureRmFirewallNatRuleCollection
 
 ## SYNOPSIS
-Membuat kumpulan aturan NAT Firewall.
+Membuat kumpulan aturan Firewall NAT.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,7 +29,7 @@ New-AzureRmFirewallNatRuleCollection -Name <String> -Priority <UInt32>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmFirewallNatRuleCollection** membuat kumpulan Firewall NAT Rules.
+Cmdlet **New-AzureRmFirewallNatRuleCollection** membuat kumpulan Aturan NAT Firewall.
 
 ## EXAMPLES
 
@@ -39,7 +39,7 @@ $rule1 = New-AzureRmFirewallNatRule -Name "natRule" -Protocol "TCP" -SourceAddre
 New-AzureRmFirewallNatRuleCollection -Name "MyNatRuleCollection" -Priority 1000 -Rule $rule1
 ```
 
-Contoh ini membuat koleksi dengan satu aturan. Semua lalu lintas yang sesuai dengan kondisi yang diidentifikasi $rule 1 akan ditetapkan menjadi ALAMAT dan port YANG diterjemahkan.
+Contoh ini membuat koleksi dengan satu aturan. Semua lalu lintas yang sesuai dengan kondisi yang diidentifikasi dalam $rule 1 akan menjadi DNAT'ed untuk diterjemahkan alamat dan port.
 
 ### 2: Menambahkan aturan ke kumpulan aturan
 ```
@@ -50,7 +50,7 @@ $rule2 = New-AzureRmFirewallNatRule -Name R2 -Protocol "TCP" -SourceAddress "*" 
 $ruleCollection.AddRule($rule2)
 ```
 
-Contoh ini membuat kumpulan aturan NAT baru dengan satu aturan lalu menambahkan aturan kedua pada kumpulan aturan menggunakan metode AddRule pada objek kumpulan aturan. Setiap nama aturan dalam kumpulan aturan harus memiliki nama yang unik dan peka huruf besar/ku.
+Contoh ini membuat kumpulan aturan NAT baru dengan satu aturan lalu menambahkan aturan kedua ke kumpulan aturan menggunakan metode AddRule pada objek kumpulan aturan. Setiap nama aturan dalam kumpulan aturan tertentu harus memiliki nama yang unik dan tidak peka huruf besar kecil.
 
 ### 3: Mendapatkan aturan dari kumpulan aturan
 ```
@@ -60,7 +60,7 @@ $ruleCollection = New-AzureRmFirewallNatRuleCollection -Name "MyNatRuleCollectio
 $rule=$ruleCollection.GetRuleByName("r1")
 ```
 
-Contoh ini membuat kumpulan aturan NAT baru dengan satu aturan lalu mendapatkan aturan menurut nama, metode panggilan GetRuleByName pada objek kumpulan aturan. Nama aturan untuk metode GetRuleByName ber sifatnya insensitif.
+Contoh ini membuat kumpulan aturan NAT baru dengan satu aturan lalu mendapatkan aturan berdasarkan nama, metode panggilan GetRuleByName pada objek kumpulan aturan. Nama aturan untuk metode GetRuleByName tidak peka huruf besar kecil.
 
 ### 4: Menghapus aturan dari kumpulan aturan
 ```
@@ -70,12 +70,12 @@ $ruleCollection = New-AzureRmFirewallNatRuleCollection -Name "MyNatRuleCollectio
 $ruleCollection.RemoveRuleByName("r1")
 ```
 
-Contoh ini membuat kumpulan aturan NAT baru dengan dua aturan lalu menghapus aturan pertama dari kumpulan aturan dengan metode panggilan RemoveRuleByName pada objek kumpulan aturan. Nama aturan untuk metode RemoveRuleByName ber sifatnya insensitif.
+Contoh ini membuat kumpulan aturan NAT baru dengan dua aturan lalu menghapus aturan pertama dari kumpulan aturan dengan memanggil metode RemoveRuleByName pada objek kumpulan aturan. Nama aturan untuk metode RemoveRuleByName tidak peka huruf besar kecil.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -Prioritas
-Menentukan prioritas aturan ini. Prioritas adalah angka antara 100 dan 65000. Makin kecil jumlahnya, semakin besar prioritasnya.
+Menentukan prioritas aturan ini. Prioritas adalah angka antara 100 dan 65000. Semakin kecil angkanya, semakin besar prioritasnya.
 
 ```yaml
 Type: System.UInt32
@@ -119,7 +119,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Rule
+### -Aturan
 Menentukan daftar aturan yang akan dikelompokkan di bawah kumpulan ini.
 
 ```yaml
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -166,11 +166,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS

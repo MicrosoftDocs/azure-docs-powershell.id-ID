@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMDiagnosticsExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMDiagnosticsExtension.md
 ms.openlocfilehash: 3e7837ef7f05a1c53d41b092652c8b7316a7c1e9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140335859"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141871232"
 ---
 # Get-AzVMDiagnosticsExtension
 
 ## SYNOPSIS
-Dapatkan pengaturan ekstensi Diagnostik di komputer virtual.
+Mendapatkan pengaturan ekstensi Diagnostik di mesin virtual.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/get-azvmdiagnosticsextension) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmdiagnosticsextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,20 +29,20 @@ Get-AzVMDiagnosticsExtension [-ResourceGroupName] <String> [-VMName] <String> [[
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVMDiagnosticsExtension** mendapatkan pengaturan ekstensi Azure Diagnostics di komputer virtual.
+Cmdlet **Get-AzVMDiagnosticsExtension** mendapatkan pengaturan ekstensi Diagnostik Azure pada mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Terapkan ekstensi diagnostik ke komputer virtual
+### Contoh 1: Dapatkan ekstensi diagnostik yang diterapkan ke mesin virtual
 ```powershell
 PS C:\> Get-AzVMDiagnosticsExtension -ResourceGroupName "ResourceGroup11" -VMName "ContosoVM22"
 ```
 
-Perintah ini akan menerapkan ekstensi diagnostik ke komputer virtual bernama ContosoVM22.
+Perintah ini akan menerapkan ekstensi diagnostik ke mesin virtual bernama ContosoVM22.
 
 ### Contoh 2
 
-Dapatkan pengaturan ekstensi Diagnostik di komputer virtual. (otomatisgenerated)
+Mendapatkan pengaturan ekstensi Diagnostik di mesin virtual. (autogenerasi)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Get-AzVMDiagnosticsExtension -Name 'AgentPool01' -ResourceGroupName 'ResourceGroup11' -Status -VMName 'ContosoVM22'
@@ -51,7 +51,7 @@ Get-AzVMDiagnosticsExtension -Name 'AgentPool01' -ResourceGroupName 'ResourceGro
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Tentukan nama ekstensi Diagnostik yang akan mendapatkan pengaturan cmdlet ini.
+Menentukan nama ekstensi Diagnostik di mana cmdlet ini mendapatkan pengaturan.
 
 ```yaml
 Type: System.String
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: System.String
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Mengindikasikan bahwa cmdlet ini menggunakan nilai Status.
+Menunjukkan bahwa cmdlet ini menggunakan nilai Status.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama komputer virtual yang akan mendapatkan ekstensi Diagnostik dari cmdlet ini.
+Menentukan nama mesin virtual tempat cmdlet ini mendapatkan ekstensi Diagnostik.
 
 ```yaml
 Type: System.String
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

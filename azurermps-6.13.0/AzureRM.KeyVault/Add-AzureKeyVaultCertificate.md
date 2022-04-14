@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/KeyVault/Commands.KeyVault/help/Add-AzureKeyVaultCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/KeyVault/Commands.KeyVault/help/Add-AzureKeyVaultCertificate.md
 ms.openlocfilehash: dd51ca4bc6d238d2aac1e4dccea4ad3a89bc8d35
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132413754"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141823082"
 ---
 # Add-AzureKeyVaultCertificate
 
 ## SYNOPSIS
-Menambahkan sertifikat ke kunci vault.
+Menambahkan sertifikat ke kubah kunci.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,7 +29,7 @@ Add-AzureKeyVaultCertificate [-VaultName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureKeyVaultCertificate** memulai proses pendaftaran sertifikat di kunci vault di Azure Key Vault.
+Cmdlet **Add-AzureKeyVaultCertificate** memulai proses pendaftaran sertifikat dalam kubah kunci di Azure Key Vault.
 
 ## EXAMPLES
 
@@ -89,10 +89,10 @@ Created     : 2/8/2016 11:21:45 PM
 Updated     : 2/8/2016 11:21:45 PM
 ```
 
-Perintah pertama menggunakan cmdlet New-AzureKeyVaultCertificatePolicy cmdlet untuk membuat kebijakan sertifikat, lalu menyimpannya di $Policy variabel.
+Perintah pertama menggunakan cmdlet New-AzureKeyVaultCertificatePolicy untuk membuat kebijakan sertifikat, lalu menyimpannya dalam variabel $Policy.
 Perintah kedua menggunakan **Add-AzureKeyVaultCertificate** untuk memulai proses untuk membuat sertifikat.
-Perintah ketiga menggunakan cmdlet Get-AzureKeyVaultCertificateOperation cmdlet untuk melakukan polling pada operasi untuk memverifikasi bahwa proses telah selesai.
-Perintah final menggunakan cmdlet Get-AzureKeyVaultCertificate cmdlet untuk mendapatkan sertifikat.
+Perintah ketiga menggunakan cmdlet Get-AzureKeyVaultCertificateOperation untuk melakukan polling operasi untuk memverifikasi bahwa proses selesai.
+Perintah terakhir menggunakan cmdlet Get-AzureKeyVaultCertificate untuk mendapatkan sertifikat.
 
 ## PARAMETERS
 
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama sertifikat untuk ditambahkan.
+Menentukan nama sertifikat yang akan ditambahkan.
 
 ```yaml
 Type: System.String
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kunci vault.
+Menentukan nama kubah kunci.
 
 ```yaml
 Type: System.String
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -220,6 +220,6 @@ Parameter: CertificatePolicy (ByValue)
 
 [Get-AzureKeyVaultCertificate](./Get-AzureKeyVaultCertificate.md)
 
-[Import-AzureKeyVaultCertificate](./Import-AzureKeyVaultCertificate.md)
+[Impor-AzureKeyVaultCertificate](./Import-AzureKeyVaultCertificate.md)
 
-[Remove-AzureKeyVaultCertificate](./Remove-AzureKeyVaultCertificate.md)
+[Hapus-AzureKeyVaultCertificate](./Remove-AzureKeyVaultCertificate.md)

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/save
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Save-AzLabServicesLabPlanImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Save-AzLabServicesLabPlanImage.md
-ms.openlocfilehash: a99819271d37719d4e33bcea872c54d01c45cecf
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 138bf93a5e81da219664a86fe2b11d872058ac32
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140008594"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141850641"
 ---
 # Save-AzLabServicesLabPlanImage
 
 ## SYNOPSIS
-Menyimpan gambar dari lab VM ke galeri gambar bersama yang dilampirkan.
+Menyimpan gambar dari VM lab ke galeri gambar bersama yang dilampirkan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.labservices/save-azlabserviceslabplanimage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,17 +29,17 @@ Save-AzLabServicesLabPlanImage -LabPlanName <String> -ResourceGroupName <String>
 ```
 
 ## DESCRIPTION
-Menyimpan gambar dari lab VM ke galeri gambar bersama yang dilampirkan.
+Menyimpan gambar dari VM lab ke galeri gambar bersama yang dilampirkan.
 
 ## EXAMPLES
 
-### Contoh 1: Menyimpan gambar VM ke Galeri Gambar Bersama.
+### Contoh 1: Menyimpan gambar VM ke Shared Image Gallery.
 ```powershell
 PS C:\> Save-AzLabServicesLabPlanImage -ResourceGroupName "Group Name" -LabName "Lab Name" -Name "New Image Name" -LabVirtualMachineId "/subscriptions/<subscription Id>/resourceGroups/<group name>/providers/Microsoft.LabServices/labs/labName/virtualMachines/<vm name>"
 
 ```
 
-Ini akan membuat gambar baru di Galeri Gambar Bersama.
+Tindakan ini akan membuat gambar baru dalam Shared Image Gallery.
 
 ## PARAMETERS
 
@@ -71,8 +74,8 @@ Accept wildcard characters: False
 ```
 
 ### -LabPlanName
-Nama rencana lab yang mengidentifikasinya secara unik di dalam grup sumber daya.
-Digunakan dalam URI sumber daya dan dalam UI.
+Nama rencana lab yang mengidentifikasinya secara unik di dalamnya berisi grup sumber daya.
+Digunakan dalam URI sumber daya dan di UI.
 
 ```yaml
 Type: System.String
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

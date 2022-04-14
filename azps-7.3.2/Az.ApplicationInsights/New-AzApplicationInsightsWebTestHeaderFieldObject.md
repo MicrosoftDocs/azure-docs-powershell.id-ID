@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ApplicationInsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/New-AzApplicationInsightsWebTestHeaderFieldObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/New-AzApplicationInsightsWebTestHeaderFieldObject.md
-ms.openlocfilehash: 589cf8e1913ee9d0b38a969c4de3a734a77ba127
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 898256661dccf3e6970ca9a1496aaacf76b49b9b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140557982"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141856328"
 ---
 # New-AzApplicationInsightsWebTestHeaderFieldObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk HeaderField
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/new-azapplicationinsightswebtestheaderfieldobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Name    Value
 version 2.0.1
 ```
 
-Perintah ini membuat objek dalam memori untuk HeaderField, Sebagai nilai `RequestHeader` parameter dalam `New-AzApplicationInsightsWebTest`.
+Perintah ini membuat objek dalam memori untuk HeaderField, Sebagai nilai `RequestHeader` parameter di `New-AzApplicationInsightsWebTest`.
 
 ## PARAMETERS
 
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

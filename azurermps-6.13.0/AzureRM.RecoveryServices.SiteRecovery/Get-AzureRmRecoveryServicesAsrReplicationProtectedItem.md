@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Get-AzureRmRecoveryServicesAsrReplicationProtectedItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Get-AzureRmRecoveryServicesAsrReplicationProtectedItem.md
 ms.openlocfilehash: 5ccc65973d3dd6f86d3a2e88ba2494fd75df6e06
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423300"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141818597"
 ---
 # Get-AzureRmRecoveryServicesAsrReplicationProtectedItem
 
 ## SYNOPSIS
-Mendapatkan properti Item Terproteksi Replikasi Situs Azure.
+Mendapatkan properti Azure Site Recovery Item Terproteksi Replikasi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -46,7 +46,7 @@ Get-AzureRmRecoveryServicesAsrReplicationProtectedItem -ProtectableItem <ASRProt
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmRecoveryServicesAsrReplicationProtectedItem** mendapatkan properti dari semua atau item dilindungi replikasi ASR tertentu dari wadah proteksi ASR yang ditentukan.
+Cmdlet **Get-AzureRmRecoveryServicesAsrReplicationProtectedItem** mendapatkan properti semua atau item yang diproteksi replikasi ASR tertentu dari wadah proteksi ASR yang ditentukan.
 
 ## EXAMPLES
 
@@ -55,7 +55,7 @@ Cmdlet **Get-AzureRmRecoveryServicesAsrReplicationProtectedItem** mendapatkan pr
 PS C:\> $ReplicationProtectedItems = Get-AzureRmRecoveryServicesAsrReplicationProtectedItem -ProtectionContainer $PrimaryContainer
 ```
 
-Mencantumkan semua item yang diproteksi pada wadah proteksi ASR yang ditentukan.
+Mencantumkan semua item yang diproteksi replikasi dalam wadah proteksi ASR yang ditentukan.
 
 ## PARAMETERS
 
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -FriendlyName
-Menentukan nama replikasi item yang dilindungi untuk masuk.
+Menentukan nama item terproteksi replikasi yang mudah didapatkan.
 
 ```yaml
 Type: System.String
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama dari item replikasi yang diproteksi untuk mendapatkannya.
+Menentukan nama item yang diproteksi replikasi untuk didapatkan.
 
 ```yaml
 Type: System.String
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectableItem
-Menentukan objek item yang dapat diproteksi ASR. Cmdlet mendapatkan item terproteksi replikasi ASR yang terkait dengan item ASR yang dapat diproteksi tertentu jika item diproteksi.
+Menentukan objek item yang dapat diproteksi ASR. Cmdlet mendapatkan item dilindungi replikasi ASR yang terkait dengan item yang dapat dilindungi ASR yang ditentukan jika item diproteksi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRProtectableItem
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionContainer
-Menentukan objek wadah proteksi ASR dari wadah proteksi ASR yang terkait dengan replikasi item yang diproteksi. 
+Menentukan objek kontainer proteksi ASR dari wadah proteksi ASR yang terkait dengan item yang diproteksi replikasi. 
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRProtectionContainer
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

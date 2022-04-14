@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmIpsecPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmIpsecPolicy.md
-ms.openlocfilehash: b1400048258966ac07ea2a8387b88da28ca8beae2db24b4e1d37c447fc0b531e
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 1b68b8ac6e480c93a9158d77a635c497fe9d1102
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140850416"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141778143"
 ---
 # New-AzureRmIpsecPolicy
 
@@ -38,12 +38,12 @@ PS C:\> $ipsecPolicy = New-AzureRmIpsecPolicy -SALifeTimeSeconds 1000 -SADataSiz
 PS C:\> New-AzureRmVirtualNetworkGatewayConnection -ResourceGroupName $rgname -name $vnetConnectionName -location $location -VirtualNetworkGateway1 $vnetGateway -LocalNetworkGateway2 $localnetGateway -ConnectionType IPsec -RoutingWeight 3 -SharedKey $sharedKey -UsePolicyBasedTrafficSelectors $true -IpsecPolicies $ipsecPolicy
 ```
 
-Membuat kebijakan IPSec untuk digunakan untuk koneksi gateway jaringan virtual baru.
+Membuat kebijakan IPSec yang akan digunakan untuk koneksi gateway jaringan virtual baru.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DhGroup
-Grup DH digunakan di IKE Phase 1 untuk awal SA
+Grup DH yang digunakan dalam IKE Fase 1 untuk awal SA
 
 ```yaml
 Type: System.String
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -IkeEncryption
-Algoritma enkripsi IKE (Fase 2 IKE)
+Algoritma enkripsi IKE (IKE Fase 2)
 
 ```yaml
 Type: System.String
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpsecEncryption
-Algoritma enkripsi IPSec (IKE Phase 1)
+Algoritma enkripsi IPSec (Tahap 1 IKE)
 
 ```yaml
 Type: System.String
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpsecIntegrity
-Algoritma integritas IPSec (Fase 1 IKE)
+Algoritma integritas IPSec (Tahap 1 IKE)
 
 ```yaml
 Type: System.String
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -PfsGroup
-Grup DH digunakan di IKE Fase 2 untuk anak baru SA
+Grup DH yang digunakan dalam IKE Fase 2 untuk anak baru SA
 
 ```yaml
 Type: System.String
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -SADataSizeKilobytes
-Ukuran muat IPSec Security Association (juga disebut Mode Cepat atau Fase 2 SA) dalam KB
+Ukuran muatan Asosiasi Keamanan IPSec (juga disebut Mode Cepat atau Fase 2 SA) dalam KB
 
 ```yaml
 Type: System.Int32
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -SALifeTimeSeconds
-Asosiasi Keamanan IPSec (juga disebut Mode Cepat atau Fase 2 SA) seumur hidup dalam detik
+Asosiasi Keamanan IPSec (juga disebut Mode Cepat atau Fase 2 SA) seumur hidup dalam hitungan detik
 
 ```yaml
 Type: System.Int32
@@ -184,11 +184,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

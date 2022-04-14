@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementTenantAccessSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementTenantAccessSecret.md
-ms.openlocfilehash: b41f75a96271a89717b7000a48e0370c66dc89cc
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1b8c7d6a3d887467fa19a3cdad3c5beff9e55d77
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140374055"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141856850"
 ---
 # Get-AzApiManagementTenantAccessSecret
 
 ## SYNOPSIS
 Mendapatkan kunci konfigurasi akses untuk penyewa.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementtenantaccesssecret) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS
 Get-AzApiManagementTenantAccessSecret -Context $apimContext
 ```
 
-Perintah ini akan mendapatkan kunci konfigurasi akses penyewa untuk konteks yang ditentukan.
+Perintah ini mendapatkan kunci konfigurasi akses penyewa untuk konteks yang ditentukan.
 
 ## PARAMETERS
 
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

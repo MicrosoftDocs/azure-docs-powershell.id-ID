@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseWorkspace.md
-ms.openlocfilehash: 90e612e76a1bb88df71ed607e7c3aedeb9bed442
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c94a37b9648699939db1d19cd26f296e357d277c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140390171"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141786470"
 ---
 # Get-AzSynapseWorkspace
 
 ## SYNOPSIS
-Mendapatkan ruang kerja Analitik Synapse.
+Mendapatkan ruang kerja Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapseworkspace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,28 +43,28 @@ Cmdlet **Get-AzSynapseWorkspace** mendapatkan informasi tentang ruang kerja Azur
 PS C:\> Get-AzSynapseWorkspace
 ```
 
-Perintah ini akan mendapatkan semua ruang kerja Azure Synapse Analytics di bawah langganan saat ini.
+Perintah ini mendapatkan semua ruang kerja Azure Synapse Analytics di bawah langganan saat ini.
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzSynapseWorkspace -ResourceGroupName ContosoResourceGroup
 ```
 
-Perintah ini mendapatkan semua ruang kerja Analitik Azure Synapse di bawah langganan saat ini dalam Grup Sumber Daya ContosoResourceGroup.
+Perintah ini mendapatkan semua ruang kerja Azure Synapse Analytics di bawah langganan saat ini dalam Grup Sumber Daya ContosoResourceGroup.
 
 ### Contoh 3
 ```powershell
 PS C:\> Get-AzSynapseWorkspace -Name ContosoWorkspace
 ```
 
-Perintah ini akan mendapatkan ruang kerja Azure Synapse Analytics dengan nama yang ditentukan.
+Perintah ini mendapatkan ruang kerja Azure Synapse Analytics dengan nama yang ditentukan.
 
 ### Contoh 4
 ```powershell
 PS C:\> Get-AzSynapseWorkspace -ResourceId /subscriptions/21686af7-58ec-4f4d-9c68-f431f4db4edd/resourceGroups/ContosoResourceGroup/providers/Microsoft.Synapse/workspaces/ContosoWorkspace
 ```
 
-Perintah ini mendapatkan ruang kerja Analitik Azure Synapse dengan ID sumber daya yang ditentukan.
+Perintah ini mendapatkan ruang kerja Azure Synapse Analytics dengan ID sumber daya tertentu.
 
 ## PARAMETERS
 
@@ -126,11 +129,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

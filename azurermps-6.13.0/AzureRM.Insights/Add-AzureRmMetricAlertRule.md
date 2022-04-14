@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Insights/Commands.Insights/help/Add-AzureRmMetricAlertRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Insights/Commands.Insights/help/Add-AzureRmMetricAlertRule.md
 ms.openlocfilehash: 155a34133b9fa03c1f056fd65a0ec202fc0aed72
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422946"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141823669"
 ---
 # Add-AzureRmMetricAlertRule
 
@@ -31,9 +31,9 @@ Add-AzureRmMetricAlertRule -WindowSize <TimeSpan> -Operator <ConditionOperator> 
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureRmMetricAlertRule** menambahkan atau memperbarui aturan pemberitahuan berbasis metrik.
-Aturan yang ditambahkan dikaitkan dengan grup sumber daya dan memiliki nama.
-Cmdlet ini menerapkan pola ShouldProcess, misalnya meminta konfirmasi dari pengguna sebelum benar-benar membuat, mengubah, atau menghapus sumber daya.
+Cmdlet **Add-AzureRmMetricAlertRule** menambahkan atau memperbarui aturan peringatan berbasis metrik.
+Aturan yang ditambahkan terkait dengan grup sumber daya dan memiliki nama.
+Cmdlet ini menerapkan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar membuat, mengubah, atau menghapus sumber daya.
 
 ## EXAMPLES
 
@@ -45,7 +45,7 @@ RequestId                                                                       
 33574ccf-0b01-43b4-aa97-87e6bbcf1c11                                                                         Created
 ```
 
-Perintah ini akan membuat aturan pemberitahuan metrik untuk situs web.
+Perintah ini membuat aturan pemberitahuan metrik untuk situs web.
 
 ### Contoh 2: Menonaktifkan aturan
 ```
@@ -56,8 +56,8 @@ RequestId                                                                       
 ```
 
 Perintah ini menonaktifkan aturan.
-Jika tidak ada, aturan akan membuatnya dinonaktifkan.
-Jika aturan sudah ada, fitur ini hanya akan menonaktifkannya.
+Jika aturan tidak ada, aturan akan membuatnya dinonaktifkan.
+Jika aturan sudah ada, maka aturan tersebut hanya menonaktifkannya.
 
 ### Contoh 3: Menambahkan aturan dengan tindakan
 ```
@@ -67,7 +67,7 @@ RequestId                                                                       
 9a5bc388-c7ac-4dc6-aa70-f4bc29c2c712                                                                                 OK
 ```
 
-Perintah ini akan membuat aturan pemberitahuan metrik untuk situs web.
+Perintah ini membuat aturan pemberitahuan metrik untuk situs web.
 
 ## PARAMETERS
 
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi tempat aturan ditentukan.
+Menentukan lokasi di mana aturan ditentukan.
 
 ```yaml
 Type: System.String
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -MetricName
-Menentukan nama metrik yang memantau aturan.
+Menentukan nama metrik yang sedang dipantau oleh aturan.
 Tentukan parameter ini hanya untuk aturan berbasis metrik.
 
 ```yaml
@@ -179,11 +179,11 @@ Accept wildcard characters: False
 ```
 
 ### -Operator
-Menentukan operator relasional untuk kondisi aturan.
+Menentukan operator relasi untuk kondisi aturan.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- GreaterTerka
+- GreaterThan
 - GreaterThanOrEqual
--  LessTer pada
+-  LessThan
 - LessThanOrEqual
 
 ```yaml
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetResourceId
-Menentukan ID sumber daya yang memantau aturan. CATATAN: Properti ini tidak dapat diperbarui untuk aturan pemberitahuan yang sudah ada.
+Menentukan ID sumber daya yang sedang dipantau oleh aturan. CATATAN: Properti ini tidak dapat diperbarui untuk aturan pemberitahuan yang sudah ada.
 
 ```yaml
 Type: System.String
@@ -229,7 +229,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Ambang Batas
+### -Ambang batas
 Menentukan ambang batas aturan.
 
 ```yaml
@@ -245,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -TimeAggregationOperator
-Menentukan operator agregasi yang diterapkan ke jendela waktu saat aturan sedang dievaluasi.
+Menentukan operator agregasi untuk diterapkan ke jendela waktu saat aturan sedang dievaluasi.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Management.Monitor.Management.Models.TimeAggregationOperator]
@@ -261,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -WindowSize
-Menentukan ukuran jendela waktu untuk aturan untuk menghitung datanya.
+Menentukan ukuran jendela waktu untuk aturan guna menghitung datanya.
 
 ```yaml
 Type: System.TimeSpan
@@ -276,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -291,7 +291,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -306,7 +306,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -318,11 +318,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Nullable'1[[Microsoft.Azure.Management.Monitor.Management.Models.TimeAggregationOperator, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]]
+### System.Nullable'1[[Microsoft.Azure.Management.Monitor.Management.Models.TimeAggregationOperator, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=netral, PublicKeyToken=null]]
 
 ### System.Management.Automation.SwitchParameter
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Management.Monitor.Management.Models.RuleAction, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Management.Monitor.Management.Models.RuleAction, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=netral, PublicKeyToken=null]]
 
 ## OUTPUTS
 
@@ -344,6 +344,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmAlertRuleWebhook](./New-AzureRmAlertRuleWebhook.md)
 
-[Remove-AzureRmAlertRule](./Remove-AzureRmAlertRule.md)
+[Hapus-AzureRmAlertRule](./Remove-AzureRmAlertRule.md)
 
 

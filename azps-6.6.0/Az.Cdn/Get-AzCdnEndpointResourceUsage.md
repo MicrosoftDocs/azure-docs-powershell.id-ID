@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnEndpointResourceUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnEndpointResourceUsage.md
 ms.openlocfilehash: 274fd53902b512bb618e975c49fa81aeef162ae6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140079947"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141872312"
 ---
 # Get-AzCdnEndpointResourceUsage
 
 ## SYNOPSIS
-Mendapatkan penggunaan sumber daya titik akhir CDN akhir.
+Mendapatkan penggunaan sumber daya titik akhir CDN.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/get-azcdnendpointresourceusage) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cdn/get-azcdnendpointresourceusage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-AzCdnEndpointResourceUsage [-EndpointName <String>] -CdnEndpoint <PSEndpoint
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCdnEndpointResourceUsage** mendapatkan batas sumber daya dan penggunaan saat ini untuk titik CDN titik akhir.
+**Cmdlet Get-AzCdnEndpointResourceUsage** mendapatkan batas sumber daya dan penggunaan saat ini untuk titik akhir CDN.
 
 ## EXAMPLES
 
@@ -54,12 +54,12 @@ origingroup           count            2    10
 originsPerOriginGroup count            2    10
 ```
 
-Contoh ini memperlihatkan batas sumber daya dan penggunaan titik akhir saat ini dengan nama 'endpoint1' di bawah profil 'profil1'.
+Contoh ini memperlihatkan batas sumber daya dan penggunaan titik akhir saat ini dengan nama 'titik akhir1' di bawah profil 'profil1'.
 
 ## PARAMETERS
 
 ### -CdnEndpoint
-Objek CDN titik akhir.
+Objek titik akhir CDN.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Cdn.Models.Endpoint.PSEndpoint
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndpointName
-Azure CDN titik akhir.
+Azure CDN nama titik akhir.
 
 ```yaml
 Type: System.String
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProfileName
-Azure CDN profil.
+Azure CDN nama profil.
 
 ```yaml
 Type: System.String
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

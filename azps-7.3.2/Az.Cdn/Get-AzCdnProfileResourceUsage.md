@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/get-azcdnpro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnProfileResourceUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnProfileResourceUsage.md
-ms.openlocfilehash: ffb0197f82741ea631101b55f34e2cdc39968678
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 82a027f3fea28bb57c4399a90acc1f8b14be2558
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140382370"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141790718"
 ---
 # Get-AzCdnProfileResourceUsage
 
 ## SYNOPSIS
 Mendapatkan penggunaan sumber daya profil CDN.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cdn/get-azcdnprofileresourceusage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzCdnProfileResourceUsage -CdnProfile <PSProfile> [-DefaultProfile <IAzureCo
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCdnProfileResourceUsage** mendapatkan batas sumber daya dan penggunaan saat ini untuk CDN profil.
+**Cmdlet Get-AzCdnProfileResourceUsage** mendapatkan batas sumber daya dan penggunaan saat ini untuk profil CDN.
 
 ## EXAMPLES
 
@@ -52,7 +55,7 @@ Contoh ini memperlihatkan batas sumber daya dan penggunaan profil saat ini denga
 ## PARAMETERS
 
 ### -CdnProfile
-Objek Azure CDN profil.
+Objek profil Azure CDN.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Cdn.Models.Profile.PSProfile
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup sumber daya tempat profil tersebut berada.
+Grup sumber daya tempat profil berada.
 
 ```yaml
 Type: System.String
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

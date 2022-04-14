@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Add-AzVMAdditionalUnattendContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Add-AzVMAdditionalUnattendContent.md
 ms.openlocfilehash: e4359629da6f4df4c8da26e5ade2b2652c0762e4
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424095"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141965211"
 ---
 # Add-AzVMAdditionalUnattendContent
 
 ## SYNOPSIS
-Menambahkan informasi ke file jawaban Windows Setup tanpa Windows.
+Menambahkan informasi ke file jawaban penyetelan Windows tanpa pengawas.
 
 ## SYNTAX
 
@@ -26,12 +26,12 @@ Add-AzVMAdditionalUnattendContent [-VM] <PSVirtualMachine> [[-Content] <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzVMAdditionalUnattendContent** menambahkan informasi ke file jawaban Windows Tanpa Pengawasan.
-Tentukan informasi berformat .xml yang dikodekan basis 64 tambahan yang ditambahkan cmdlet unattend.xml file.
+**Cmdlet Add-AzVMAdditionalUnattendContent** menambahkan informasi ke file jawaban penyiapan Windows tanpa pengawasan.
+Tentukan informasi .xml berkode dasar tambahan 64 yang ditambahkan cmdlet ini ke file unattend.xml.
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan konten ke unattend.xml
+### Contoh 1: Menambahkan konten ke unattend.xml
 ```
 PS C:\> $AvailabilitySet = Get-AzAvailabilitySet -ResourceGroupName "ResourceGroup11" -Name "AvailabilitySet03"
 PS C:\> $VirtualMachine = New-AzVMConfig -VMName "VirtualMachine07" -VMSize "Standard_A1" -AvailabilitySetID $AvailabilitySet.Id 
@@ -41,28 +41,28 @@ PS C:\> $AucContent = "<UserAccounts><AdministratorPassword><Value>" + "Password
 PS C:\> $VirtualMachine = Add-AzVMAdditionalUnattendContent -VM $VirtualMachine -Content $AucContent -SettingName "AutoLogon"
 ```
 
-Perintah pertama mendapatkan kumpulan ketersediaan bernamaAblityAblitySet03 dalam grup sumber daya yang bernama ResourceGroup11, lalu menyimpan objek tersebut dalam $AvailabilitySet sumber daya.
+Perintah pertama mendapatkan kumpulan ketersediaan bernama AvailablitySet03 dalam grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut dalam variabel $AvailabilitySet.
 
-Perintah kedua membuat objek mesin virtual, lalu menyimpannya di $VirtualMachine variabel.
-Perintah menetapkan nama dan ukuran ke komputer virtual.
-Mesin virtual tersebut termasuk dalam kumpulan ketersediaan yang disimpan di $AvailabilitySet.
+Perintah kedua membuat objek mesin virtual, lalu menyimpannya dalam variabel $VirtualMachine.
+Perintah menetapkan nama dan ukuran ke mesin virtual.
+Mesin virtual termasuk dalam kumpulan ketersediaan yang disimpan di $AvailabilitySet.
 
-Perintah ketiga membuat objek kredensial dengan menggunakan cmdlet Get-Credential, lalu menyimpan hasilnya dalam $Credential penerima.
-Perintah akan meminta nama pengguna dan kata sandi Anda.
-Untuk informasi selengkapnya, ketik `Get-Help Get-Credential` .
+Perintah ketiga membuat objek kredensial menggunakan cmdlet Get-Credential, lalu menyimpan hasilnya dalam variabel $Credential.
+Perintah meminta nama pengguna dan kata sandi Anda.
+Untuk informasi selengkapnya, ketik .`Get-Help Get-Credential`
 
 Perintah keempat menggunakan cmdlet **Set-AzVMOperatingSystem** untuk mengonfigurasi mesin virtual yang disimpan di $VirtualMachine.
 
-Perintah kelima menetapkan konten ke $AucContent variabel.
-Konten menyertakan kata sandi.
+Perintah kelima menetapkan konten ke variabel $AucContent.
+Konten tersebut menyertakan kata sandi.
 
-Perintah terakhir menambahkan konten yang disimpan di $AucContent ke unattend.xml file.
+Perintah akhir menambahkan konten yang disimpan di $AucContent ke file unattend.xml.
 
 ## PARAMETERS
 
-### -Content
-Menentukan konten yang diformat XML berkode 64.
-Cmdlet ini menambahkan konten ke unattend.xml file.
+### -Konten
+Menentukan konten berformat XML dasar 64 yang dikodekan.
+Cmdlet ini menambahkan konten ke file unattend.xml.
 Konten XML harus kurang dari 4 KB dan harus menyertakan elemen akar untuk pengaturan atau fitur yang disisipkan cmdlet ini.
 
 ```yaml
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -SettingName
-Menentukan nama pengaturan untuk menerapkan konten.
+Menentukan nama pengaturan tempat konten diterapkan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - FirstLogonCommands
@@ -113,9 +113,9 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan objek mesin virtual yang telah dimodifikasi cmdlet ini.
-Untuk mendapatkan objek mesin virtual, gunakan cmdlet [Get-AzVM.](./Get-AzVM.md)
-Buat objek mesin virtual menggunakan cmdlet [New-AzVMConfig.](./New-AzVMConfig.md)
+Menentukan objek mesin virtual yang diubah cmdlet ini.
+Untuk mendapatkan objek mesin virtual, gunakan cmdlet [Get-AzVM](./Get-AzVM.md) .
+Buat objek mesin virtual menggunakan cmdlet [New-AzVMConfig](./New-AzVMConfig.md) .
 
 ```yaml
 Type: PSVirtualMachine
@@ -130,12 +130,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSVirtualMachine
-Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari saluran
+Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari pipeline
 
 ## OUTPUTS
 
@@ -147,6 +147,6 @@ Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari saluran
 
 [Get-AzAvailabilitySet](./Get-AzAvailabilitySet.md)
 
-[Set-AzvMOperatingSystem](./Set-AzVMOperatingSystem.md)
+[Set-AzVMOperatingSystem](./Set-AzVMOperatingSystem.md)
 
-[New-azvmConfig](./New-AzVMConfig.md)
+[New-AzVMConfig](./New-AzVMConfig.md)

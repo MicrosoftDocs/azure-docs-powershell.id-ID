@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/test-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Test-AzResourceGroupDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Test-AzResourceGroupDeployment.md
-ms.openlocfilehash: 546fcf32eea935499107b0bd350ce8f3236eab30
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: bc3b1e39c01413e3ee4877acdd76330d5f70739c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140391299"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142028334"
 ---
 # Test-AzResourceGroupDeployment
 
 ## SYNOPSIS
-Memvalidasi penggunaan grup sumber daya.
+Memvalidasi penyebaran grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/test-azresourcegroupdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -149,7 +152,7 @@ Cmdlet **Test-AzResourceGroupDeployment** menentukan apakah templat penyebaran g
 
 ## EXAMPLES
 
-### Contoh 1: Uji penggunaan dengan objek templat kustom dan file parameter
+### Contoh 1: Uji penyebaran dengan objek templat kustom dan file parameter
 
 ```powershell
 PS C:\> $TemplateFileText = [System.IO.File]::ReadAllText("D:\Azure\Templates\EngineeringSite.json")
@@ -157,20 +160,20 @@ PS C:\> $TemplateObject = ConvertFrom-Json $TemplateFileText -AsHashtable
 PS C:\> Test-AzResourceGroupDeployment -ResourceGroupName "ContosoEngineering" -TemplateObject $TemplateObject -TemplateParameterFile "D:\Azure\Templates\EngSiteParams.json"
 ```
 
-Perintah ini menguji penyebaran dalam grup sumber daya tertentu menggunakan hashtable dalam memori yang dibuat dari file templat dan file parameter tertentu.
+Perintah ini menguji penyebaran dalam grup sumber daya tertentu menggunakan hashtable dalam memori yang dibuat dari file templat tertentu dan file parameter.
 
-### Contoh 2: Menguji penggunaan melalui file templat dan file parameter
+### Contoh 2: Uji penyebaran melalui file templat dan file parameter
 
 ```powershell
 PS C:\> Test-AzResourceGroupDeployment -ResourceGroupName testRG01 -TemplateFile "D:\Azure\Templates\sampleDeploymentTemplate.json" -TemplateParameterFile "D:\Azure\Templates\sampleDeploymentTemplateParams.json"
 ```
 
-Perintah ini menguji penyebaran dalam grup dan sumber daya tertentu menggunakan file templat yang disediakan dan file parameter.
+Perintah ini menguji penyebaran dalam grup sumber daya dan sumber daya tertentu menggunakan file templat yang disediakan dan file parameter.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -187,8 +190,8 @@ Accept wildcard characters: False
 ### -Mode
 Menentukan mode penyebaran.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Penambahan
-- Selesai
+- Inkremental
+- Lengkap
 
 ```yaml
 Type: Microsoft.Azure.Management.ResourceManager.Models.DeploymentMode
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Cmdlet ini mempertimbangkan versi API prari release ketika cmdlet menentukan versi mana yang akan digunakan secara otomatis.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya untuk diuji.
+Menentukan nama grup sumber daya yang akan diuji.
 
 ```yaml
 Type: System.String
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -RollBackDeploymentName
-Rollback to the successful deployment with the given name in the resource group, should not be used if -RollbackToLastDeployment is used.
+Pembatalan ke penyebaran yang berhasil dengan nama tertentu dalam grup sumber daya, tidak boleh digunakan jika -RollbackToLastDeployment digunakan.
 
 ```yaml
 Type: System.String
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -RollbackToLastDeployment
-Rollback to the last successful deployment in the resource group, should not be present if -RollBackDeploymentName is used.
+Pembatalan ke penyebaran terakhir yang berhasil dalam grup sumber daya, seharusnya tidak ada jika -RollBackDeploymentName digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipTemplateParameterPrompt
-Skips the PowerShell dynamic parameter processing that checks if the provided template parameter contains all necessary parameters used by the template. Pemeriksaan ini akan meminta pengguna untuk menyediakan nilai untuk parameter yang hilang, tetapi menyediakan -SkipTemplateParameterPrompt akan mengabaikan perintah ini dan kesalahan langsung keluar jika parameter tidak terikat dalam templat. Untuk skrip non-interaktif, -SkipTemplateParameterPrompt bisa disediakan untuk menyediakan pesan kesalahan yang lebih baik dalam kasus di mana tidak semua parameter yang diperlukan puas.
+Lewati pemrosesan parameter dinamis PowerShell yang memeriksa apakah parameter templat yang disediakan berisi semua parameter yang diperlukan yang digunakan oleh templat. Pemeriksaan ini akan meminta pengguna untuk memberikan nilai untuk parameter yang hilang, tetapi menyediakan -SkipTemplateParameterPrompt akan segera mengabaikan perintah ini dan kesalahan jika parameter ditemukan tidak terikat dalam templat. Untuk skrip non-interaktif, -SkipTemplateParameterPrompt dapat disediakan untuk memberikan pesan kesalahan yang lebih baik jika tidak semua parameter yang diperlukan puas.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -354,7 +357,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateParameterUri
-Menentukan URI dari file parameter templat.
+Menentukan URI file parameter templat.
 
 ```yaml
 Type: System.String
@@ -369,7 +372,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateSpecId
-ID Sumber Daya dari templatSpeced yang akan digunakan.
+ID sumber daya templatSpec yang akan digunakan.
 
 ```yaml
 Type: System.String
@@ -384,7 +387,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateUri
-Menentukan URI dari file templat.
+Menentukan URI file templat.
 
 ```yaml
 Type: System.String
@@ -399,7 +402,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

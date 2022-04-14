@@ -5,11 +5,11 @@ ms.assetid: 91B2DE2F-442D-4428-8A6F-9C2CEC181CA7
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/set-azurermvmsourceimage
 schema: 2.0.0
 ms.openlocfilehash: 5e07ba8ffceb42a94c41c0b21c62329f9dbe96a7
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423132"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141889296"
 ---
 # Set-AzureRmVMSourceImage
 
@@ -33,7 +33,7 @@ Set-AzureRmVMSourceImage [-VM] <PSVirtualMachine> [-Id] <String> [-DefaultProfil
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmVMSourceImage** menentukan gambar platform yang akan digunakan untuk komputer virtual.
+Cmdlet **Set-AzureRmVMSourceImage** menentukan gambar platform yang akan digunakan untuk mesin virtual.
 
 ## EXAMPLES
 
@@ -44,19 +44,19 @@ PS C:\> $VirtualMachine = New-AzureRmVMConfig -VMName "VirtualMachine07" -VMSize
 PS C:\> Set-AzureRmVMSourceImage -VM $VirtualMachine -PublisherName "MicrosoftWindowsServer" -Offer "WindowsServer" -Skus "2012-R2-Datacenter" -Version "latest"
 ```
 
-Perintah pertama mendapatkan kumpulan ketersediaan bernamaAblityAblitySet03 dalam grup sumber daya yang bernama ResourceGroup11, lalu menyimpan objek tersebut dalam $AvailabilitySet sumber daya.
+Perintah pertama mendapatkan kumpulan ketersediaan bernama AvailablitySet03 dalam grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut dalam variabel $AvailabilitySet.
 
-Perintah kedua membuat objek mesin virtual, lalu menyimpannya di $VirtualMachine variabel.
-Perintah menetapkan nama dan ukuran ke komputer virtual.
-Mesin virtual tersebut merupakan bagian dari ketersediaan yang telah diatur untuk $AvailabilitySet.
+Perintah kedua membuat objek mesin virtual, lalu menyimpannya dalam variabel $VirtualMachine.
+Perintah menetapkan nama dan ukuran ke mesin virtual.
+Mesin virtual termasuk dalam kumpulan ketersediaan yang disimpan di $AvailabilitySet.
 
 Perintah terakhir mengatur nilai untuk nama penerbit, penawaran, SKU, dan versi.
-Cmdlet **Get-AzureRmVMImagePublisher**, **Get-AzureRmVMImageOffer**, **Get-AzureRmVMImageSku**, dan **Get-AzureRmVMImage** cmdlet dapat menemukan pengaturan ini.
+Cmdlet **Get-AzureRmVMImagePublisher**, **Get-AzureRmVMImageOffer**, **Get-AzureRmVMImageSku**, dan **Get-AzureRmVMImage** dapat menemukan pengaturan ini.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -85,7 +85,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Offer
+### -Penawaran
 Menentukan tipe penawaran VMImage.
 Untuk mendapatkan penawaran gambar, gunakan cmdlet Get-AzureRmVMImageOffer.
 
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 
 ### -Skus
 Menentukan VMImage SKU.
-Untuk mendapatkan SKU, gunakan cmdlet Get-AzureRmVMImageSku baru.
+Untuk mendapatkan SKU, gunakan cmdlet Get-AzureRmVMImageSku.
 
 ```yaml
 Type: String
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 
 ### -Versi
 Menentukan versi VMImage.
-Untuk menggunakan versi terbaru, tentukan nilai terbaru dan bukan versi tertentu.
+Untuk menggunakan versi terbaru, tentukan nilai terbaru, bukan versi tertentu.
 
 ```yaml
 Type: String
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan objek mesin virtual lokal untuk dikonfigurasi.
+Menentukan objek mesin maya lokal untuk dikonfigurasi.
 
 ```yaml
 Type: PSVirtualMachine
@@ -165,12 +165,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSVirtualMachine
-Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari saluran
+Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari pipeline
 
 ## OUTPUTS
 
@@ -188,8 +188,8 @@ Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari saluran
 
 [Get-AzureRmVMImagePublisher](./Get-AzureRmVMImagePublisher.md)
 
-[Get-AzureRmVMImageSku](./Get-AzureRmVMImageSku.md)
+[Get-AzureRmvmImagesku](./Get-AzureRmVMImageSku.md)
 
-[New-AzureRmVMConfig](./New-AzureRmVMConfig.md)
+[AzureRmVMConfig Baru](./New-AzureRmVMConfig.md)
 
 

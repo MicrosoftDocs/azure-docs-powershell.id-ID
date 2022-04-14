@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Insights/Commands.Insights/help/New-AzureRmAlertRuleEmail.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Insights/Commands.Insights/help/New-AzureRmAlertRuleEmail.md
 ms.openlocfilehash: 94d7600e94057330b2491168c625f05ebc351d01
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420354"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141823373"
 ---
 # New-AzureRmAlertRuleEmail
 
@@ -28,30 +28,30 @@ New-AzureRmAlertRuleEmail [[-CustomEmail] <String[]>] [-SendToServiceOwner]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmAlertRuleEmail** membuat tindakan email untuk aturan pemberitahuan.
+Cmdlet **New-AzureRmAlertRuleEmail** membuat tindakan email untuk aturan peringatan.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat tindakan email aturan pemberitahuan untuk pemilik layanan
+### Contoh 1: Membuat tindakan email aturan peringatan untuk pemilik layanan
 ```
 PS C:\>New-AzureRmAlertRuleEmail -SendToServiceOwners
 ```
 
-Perintah ini membuat tindakan email aturan pemberitahuan untuk dikirim bagi pemilik layanannya ketika aturan pemberitahuan dipecat.
+Perintah ini membuat tindakan email aturan pemberitahuan untuk dikirimkan bagi pemilik layanannya saat aturan peringatan ditembakkan.
 
-### Contoh 2: Membuat tindakan email aturan pemberitahuan untuk pemilik non-layanan
+### Contoh 2: Membuat tindakan email aturan peringatan untuk pemilik non-layanan
 ```
 PS C:\>New-AzureRmAlertRuleEmail -CustomEmails pattif@contoso.com,davidchew@contoso.net
 ```
 
-Perintah ini akan membuat tindakan email aturan pemberitahuan untuk alamat email yang ditentukan, tetapi tidak untuk pemilik layanan.
+Perintah ini membuat tindakan email aturan pemberitahuan untuk alamat email tertentu, tetapi tidak untuk pemilik layanan.
 
-### Contoh 3: Buat tindakan email aturan pemberitahuan untuk pemilik layanan dan pemilik non-layanan
+### Contoh 3: Membuat tindakan email aturan peringatan untuk pemilik layanan dan pemilik non-layanan
 ```
 PS C:\>New-AzureRmAlertRuleEmail -CustomEmails pattif@contoso.net -SendToServiceOwners
 ```
 
-Perintah ini akan membuat tindakan email aturan pemberitahuan untuk alamat yang ditentukan dan untuk pemilik layanannya.
+Perintah ini membuat tindakan email aturan pemberitahuan untuk alamat yang ditentukan dan untuk pemilik layanannya.
 
 ## PARAMETERS
 
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -SendToServiceOwner
-Menunjukkan bahwa operasi ini mengirim email ke pemilik layanan saat aturan tersebut berlaku.
+Menunjukkan bahwa operasi ini mengirim email ke pemilik layanan ketika aturan diterapkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

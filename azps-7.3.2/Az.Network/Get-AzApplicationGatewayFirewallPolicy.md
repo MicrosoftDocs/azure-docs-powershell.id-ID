@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayFirewallPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayFirewallPolicy.md
-ms.openlocfilehash: ca8edb221c567f52be80ff63c14ab58e7d1a81c8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2d94484d9daac5d31357c6a2ef37dfd13a3511d9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140007974"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141891152"
 ---
 # Get-AzApplicationGatewayFirewallPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan firewall gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayfirewallpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Cmdlet **Get-AzApplicationGatewayFirewallPolicy** mendapatkan kebijakan firewall
 PS C:\> $AppGwFirewallPolicy = Get-AzApplicationGatewayFirewallPolicy -Name "FirewallPolicy1" -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini mendapatkan kebijakan firewall gateway aplikasi bernama FirewallPolicy1 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGwFirewallPolicy lokal.
+Perintah ini mendapatkan kebijakan firewall gateway aplikasi bernama FirewallPolicy1 milik grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGwFirewallPolicy.
 
 ## PARAMETERS
 
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

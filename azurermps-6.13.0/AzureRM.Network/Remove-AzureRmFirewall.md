@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmFirewall.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmFirewall.md
-ms.openlocfilehash: 3af6eb220c99419b0f40ecf6732523982fe801dc311f0e927e6c167034140652
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 1a6c5ae69ef6aa6dc0f64d118fcbc733c97e23a2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418669"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141820256"
 ---
 # Remove-AzureRmFirewall
 
 ## SYNOPSIS
-Hapus Firewall.
+Menghapus Firewall.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -42,9 +42,9 @@ Are you sure you want to remove resource 'azFw'
 [Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): y
 ```
 
-Contoh ini membuat Firewall lalu menghapusnya. Untuk menyembunyikan perintah saat menghapus Firewall, gunakan bendera -Paksa.
+Contoh ini akan membuat Firewall lalu menghapusnya. Untuk menyembunyikan perintah saat menghapus Firewall, gunakan bendera -Force.
 
-### 2: Deallocate the Firewall, then delete the Firewall
+### 2: Deallocate Firewall, lalu hapus Firewall
 ```
 $firewall=Get-AzureRmFirewall -ResourceGroupName rgName -Name azFw
 $firewall.Deallocate()
@@ -54,13 +54,13 @@ Are you sure you want to remove resource 'azFw'
 [Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): y
 ```
 
-Contoh ini mengambil Firewall, deallocates firewall, lalu menghapus firewall. Perintah Deallocate menghapus layanan yang berjalan namun mempertahankan konfigurasi firewall. Jika pengguna ingin memulai layanan lagi, metode Alokasikan akan dipanggil pada firewall.
-Untuk menyembunyikan perintah saat menghapus Firewall, gunakan bendera -Paksa.
+Contoh ini mengambil Firewall, mengalokasi firewall, lalu menghapus firewall. Perintah Deallocate menghapus layanan yang berjalan tetapi mempertahankan konfigurasi firewall. Jika pengguna ingin memulai layanan lagi, metode Alokasikan harus dipanggil pada firewall.
+Untuk menyembunyikan perintah saat menghapus Firewall, gunakan bendera -Force.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -89,8 +89,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: SwitchParameter
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -182,12 +182,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSAzureFirewall
-Ketik 'PSAzureFirewall' diterima dari saluran
+Ketik 'PSAzureFirewall' diterima dari pipeline
 
 ## OUTPUTS
 

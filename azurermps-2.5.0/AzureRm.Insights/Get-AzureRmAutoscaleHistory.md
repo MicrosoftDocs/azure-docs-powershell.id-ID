@@ -5,16 +5,16 @@ ms.assetid: A70F4C03-E842-45D5-9323-DC5B14B569F1
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.insights/get-azurermautoscalehistory
 schema: 2.0.0
 ms.openlocfilehash: c149cf0d44bfe5fdeee953d36a7ea8244587ba36
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132414461"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141889147"
 ---
 # Get-AzureRmAutoscaleHistory
 
 ## SYNOPSIS
-Mendapatkan riwayat Skala Otomatis.
+Mendapatkan riwayat Autoscale.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -31,12 +31,12 @@ Cmdlet **Get-AzureRmAutoscaleHistory** mendapatkan riwayat kejadian yang terkait
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua acara yang terkait dengan langganan
+### Contoh 1: Dapatkan semua acara yang terkait dengan langganan
 ```
 PS C:\>Get-AzureRmAutoscaleHistory -StartTime 2015-02-09T18:35:00 -EndTime 2015-02-09T18:40:00 -DetailedOutput
 ```
 
-Perintah ini akan mendapatkan semua acara terkait Skala Otomatis yang terkait dengan langganan saat ini.
+Perintah ini mendapatkan semua kejadian terkait Skala Otomatis yang terkait dengan langganan saat ini.
 
 ### Contoh 2: GetAutoscaleHistory untuk sumber daya tertentu
 ```
@@ -175,11 +175,11 @@ SubscriptionId       : b93fb07a-6f93-30be-bf3e-4f0deca15f4f
 SubStatus            :
 ```
 
-Perintah ini mendapatkan semua kejadian terkait SkalaOtomatis yang terkait dengan sumber daya tertentu yang diidentifikasi dengan ID sumber daya (pada dasarnya, ResourceUri).
+Perintah ini mendapatkan semua kejadian terkait skala otomatis yang terkait dengan sumber daya tertentu yang diidentifikasi oleh ID sumber daya (pada dasarnya, ResourceUri).
 
 ## PARAMETERS
 
-### -Caller
+### -Penelepon
 Menentukan penelepon.
 
 ```yaml
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -209,9 +209,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DetailOutput
-Menunjukkan bahwa operasi ini menyertakan output detail.
-Jika Anda tidak menentukan parameter ini, output diringkas.
+### -DetailedOutput
+Menunjukkan bahwa operasi ini menyertakan output mendetail.
+Jika Anda tidak menentukan parameter ini, output akan diringkas.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -242,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan ID sumber daya yang dikaitkan dengan pengaturan skala otomatis.
+Menentukan ID sumber daya tempat pengaturan skala otomatis dikaitkan.
 
 ```yaml
 Type: System.String
@@ -276,7 +276,7 @@ Accept wildcard characters: False
 ### -Status
 Menentukan filter menurut status.
 Parameter ini bersifat opsional.
-Kesalahannya adalah string kosong (yaitu tidak ada filter)
+Kesalahan adalah string kosong (misalnya tidak ada filter)
 
 ```yaml
 Type: System.String
@@ -291,13 +291,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ### System.Management.Automation.SwitchParameter
 
@@ -313,6 +313,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmAutoscaleSetting](./Get-AzureRmAutoscaleSetting.md)
 
-[Remove-AzureRmAutoscaleSetting](./Remove-AzureRmAutoscaleSetting.md)
+[Hapus-AzureRmAutoscaleSetting](./Remove-AzureRmAutoscaleSetting.md)
 
 

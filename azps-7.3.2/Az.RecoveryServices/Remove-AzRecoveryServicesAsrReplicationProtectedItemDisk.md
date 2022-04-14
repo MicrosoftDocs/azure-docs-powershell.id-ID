@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Remove-AzRecoveryServicesAsrReplicationProtectedItemDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Remove-AzRecoveryServicesAsrReplicationProtectedItemDisk.md
-ms.openlocfilehash: 01bc3884384c466b2cea77558746938773fc0fda
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d3a7970035bec6eca51b8c8b5066c4ad45f1d5f5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140196279"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142029269"
 ---
 # Remove-AzRecoveryServicesAsrReplicationProtectedItemDisk
 
 ## SYNOPSIS
-Menghapus disk untuk replikasi item yang diproteksi.
+Menghapus diska untuk item yang dilindungi replikasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/remove-azrecoveryservicesasrreplicationprotecteditemdisk) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Remove-AzRecoveryServicesAsrReplicationProtectedItemDisk -InputObject <ASRReplic
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzRecoveryServicesAsrReplicationProtectedItemDisk** menghapus disk dari item yang diproteksi replikasi ASR.
+Cmdlet **Remove-AzRecoveryServicesAsrReplicationProtectedItemDisk** menghapus disk dari item yang dilindungi replikasi ASR.
 
 ## EXAMPLES
 
@@ -43,14 +46,14 @@ Cmdlet **Remove-AzRecoveryServicesAsrReplicationProtectedItemDisk** menghapus di
 PS C:\> Remove-AzRecoveryServicesAsrReplicationProtectedItemDisk -ReplicationProtectedItem $rpi -VhdUri $vhdUri
 ```
 
-Mulai operasi untuk menghapus disk tertentu dari proteksi VM untuk disk yang tidak diatur.
+Mulai operasi untuk menghapus disk yang ditentukan dari proteksi VM untuk disk yang tidak dikelola.
 
 ### Contoh 2
 ```powershell
 PS C:\> Remove-AzRecoveryServicesAsrReplicationProtectedItemDisk -ReplicationProtectedItem $rpi -DiskId $diskId
 ```
 
-Mulai operasi untuk menghapus disk tertentu dari proteksi VM untuk disk yang dikelola.
+Mulai operasi untuk menghapus disk tertentu dari proteksi VM untuk Disk terkelola.
 
 ### Contoh 3
 ```
@@ -58,12 +61,12 @@ PS C:\>  $currentJob = Remove-AzRecoveryServicesAsrReplicationProtectedItemDisk 
 PS C:\>  Get-AzRecoveryServicesAsrJob -name $currentJob.id
 ```
 
-Memulai operasi untuk menghapus disk tertentu dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi menghapus disk yang diproteksi.
+Memulai operasi untuk menghapus disk yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi disk yang dilindungi penghapusan.
 
 ## PARAMETERS
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskId
-Menentukan daftar Id disk yang dikelola.
+Menentukan daftar Id disk terkelola.
 
 ```yaml
 Type: String[]
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -WaitForCompletion
-Tunggu penyelesaian
+Tunggu Penyelesaian
 
 ```yaml
 Type: SwitchParameter
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

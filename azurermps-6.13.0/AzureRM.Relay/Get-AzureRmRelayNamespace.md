@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Relay/Commands.Relay/help/Get-AzureRmRelayNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Relay/Commands.Relay/help/Get-AzureRmRelayNamespace.md
 ms.openlocfilehash: 05482dfae5cf4e68a82763253d0b4507b0fe364c
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140863658"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141881880"
 ---
 # Get-AzureRmRelayNamespace
 
 ## SYNOPSIS
-Mendapatkan deskripsi untuk ruang nama Relay yang ditentukan dalam grup sumber daya.
+Mendapatkan deskripsi untuk ruang nama Relay tertentu dalam grup sumber daya.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Get-AzureRmRelayNamespace [[-ResourceGroupName] <String>] [[-Name] <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmRmRmNamespace** mendapatkan deskripsi untuk ruang nama Relay yang ditentukan dalam grup sumber daya.
+Cmdlet **Get-AzureRmRelayNamespace** mendapatkan deskripsi untuk ruang nama Relay tertentu dalam grup sumber daya.
 
 ## EXAMPLES
 
@@ -47,7 +47,7 @@ Name               : TestNameSpace-Relay1
 Type               : Microsoft.Relay/namespaces
 ```
 
-Mengembalikan deskripsi dari ruang nama Relay yang ditentukan.
+Mengembalikan deskripsi ruang nama Relai yang ditentukan.
 
 ## PARAMETERS
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Relay Namespace Name.
+Relai Nama Ruang Nama.
 
 ```yaml
 Type: System.String
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
@@ -107,7 +107,7 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Relay.Models.PSNameyNamespaceAttributes
+### Microsoft.Azure.Commands.Relay.Models.PSRelayNamespaceAttributes
 
 
 ## CATATAN

@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/ConvertTo-AzVMManagedDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/ConvertTo-AzVMManagedDisk.md
 ms.openlocfilehash: 882b9f0afe9670f9e7b6f0651b3f3a96003d4668
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "132414609"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141965157"
 ---
 # ConvertTo-AzVMManagedDisk
 
 ## SYNOPSIS
-Mengonversi mesin virtual dengan disk berbasis blob menjadi mesin virtual dengan disk yang dikelola.
+Mengonversi mesin virtual dengan disk berbasis blob ke mesin virtual dengan disk terkelola.
 
 ## SYNTAX
 
@@ -25,8 +25,8 @@ ConvertTo-AzVMManagedDisk [-ResourceGroupName] <String> [-VMName] <String> [-AsJ
 ```
 
 ## DESCRIPTION
-Cmdlet **ConvertTo-AzVMManagedDisk** mengonversi mesin virtual dengan disk berbasis blob ke mesin virtual dengan disk terkelola.
-Mesin virtual harus berhenti digunakan sebelum melakukan operasi ini.
+Cmdlet **ConvertTo-AzVMManagedDisk** mengonversi mesin virtual dengan disk berbasis blob ke mesin virtual dengan disk yang dikelola.
+Mesin virtual harus berhenti ditangani sebelum memanggil operasi ini.
 
 ## EXAMPLES
 
@@ -35,12 +35,12 @@ Mesin virtual harus berhenti digunakan sebelum melakukan operasi ini.
 PS C:\> ConvertTo-AzVMManagedDisk -ResourceGroupName 'ResourceGroup01' -VMName 'VM01'
 ```
 
-Perintah ini mengonversi disk berbasis blob dari komputer virtual yang bernama 'VM01' dalam grup sumber daya 'ResourceGroup01' ke disk yang dikelola.
+Perintah ini mengonversi disk berbasis blob dari mesin virtual bernama 'VM01' dalam grup sumber daya 'ResourceGroup01' ke disk yang dikelola.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -55,7 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

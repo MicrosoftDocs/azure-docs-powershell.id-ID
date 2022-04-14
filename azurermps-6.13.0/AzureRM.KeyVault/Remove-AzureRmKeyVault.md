@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/KeyVault/Commands.KeyVault/help/Remove-AzureRmKeyVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/KeyVault/Commands.KeyVault/help/Remove-AzureRmKeyVault.md
 ms.openlocfilehash: c91bc951ef06f2e591893f0959120cac3700b070
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424529"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141823019"
 ---
 # Remove-AzureRmKeyVault
 
 ## SYNOPSIS
-Menghapus kunci vault.
+Menghapus kubah kunci.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -59,35 +59,35 @@ Remove-AzureRmKeyVault [-ResourceId] <String> [-Location] <String> [-InRemovedSt
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmKeyVault** menghapus penyimpanan kunci yang ditentukan.
-Rahasia ini juga menghapus semua kunci dan rahasia yang terdapat dalam contoh tersebut.
+Cmdlet **Remove-AzureRmKeyVault** menghapus kubah kunci yang ditentukan.
+Ini juga menghapus semua kunci dan rahasia yang terdapat dalam contoh tersebut.
 Perhatikan bahwa meskipun menentukan grup sumber daya bersifat opsional untuk cmdlet ini, Anda harus melakukannya untuk kinerja yang lebih baik.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus key vault
+### Contoh 1: Menghapus kubah kunci
 ```powershell
 PS C:\> Remove-AzureRmKeyVault -VaultName "Contoso03Vault" -PassThru
 
 True
 ```
 
-Perintah ini akan menghapus kunci vault yang bernama Contoso03Vault dari langganan Anda saat ini.
+Perintah ini menghapus kubah kunci bernama Contoso03Vault dari langganan Anda saat ini.
 
-### Contoh 2: Menghapus vault kunci dari grup sumber daya yang ditentukan
+### Contoh 2: Menghapus kubah kunci dari grup sumber daya tertentu
 ```powershell
 PS C:\> Remove-AzureRmKeyVault -VaultName "Contoso03Vault" -ResourceGroupName "Group14" -PassThru
 
 True
 ```
 
-Perintah ini akan menghapus penyimpanan kunci yang bernama Contoso03Vault dari grup sumber daya yang dinamai.
-Jika anda tidak menentukan nama grup sumber daya, cmdlet akan mencari vault tombol bernama untuk dihapus dalam langganan Anda saat ini.
+Perintah ini menghapus kubah kunci bernama Contoso03Vault dari grup sumber daya bernama.
+Jika Anda tidak menentukan nama grup sumber daya, cmdlet mencari kubah kunci bernama untuk dihapus dalam langganan Anda saat ini.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -116,9 +116,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Menunjukkan bahwa cmdlet tidak meminta konfirmasi Anda.
-Secara default, cmdlet ini meminta Anda untuk mengonfirmasi bahwa Anda ingin menghapus key vault.
+### -Paksa
+Menunjukkan bahwa cmdlet tidak meminta konfirmasi kepada Anda.
+Secara default, cmdlet ini meminta Anda untuk mengonfirmasi bahwa Anda ingin menghapus kubah kunci.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Key Vault akan dihapus.
+Key Vault objek yang akan dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.KeyVault.Models.PSKeyVault
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -InRemovedState
-Menghapus vault yang sebelumnya dihapus secara permanen.
+Hapus kubah yang dihapus sebelumnya secara permanen.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi vault yang dihapus.
+Lokasi kubah yang dihapus.
 
 ```yaml
 Type: System.String
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Cmdlet ini tidak mengembalikan objek secara default. Jika sakelar ini ditentukan, maka true akan dikembalikan jika berhasil.
+Cmdlet ini tidak mengembalikan objek secara default. Jika sakelar ini ditentukan, sakelar akan mengembalikan true jika berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-KeyVault Resource Id.
+Id Sumber Daya KeyVault.
 
 ```yaml
 Type: System.String
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kunci vault untuk dihapus.
+Menentukan nama kubah kunci untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -250,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -266,8 +266,8 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan. Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan. Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -282,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

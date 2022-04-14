@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.datam
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataMigration/Commands.DataMigration/help/New-AzureRmDataMigrationService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataMigration/Commands.DataMigration/help/New-AzureRmDataMigrationService.md
-ms.openlocfilehash: a6bc6fb83cfe7fca39b33876007117854660dbf1a90f3332bd8549f3511074ab
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: cc2f708294be05b16b0c5be94fb9da260b479799
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140866616"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141824414"
 ---
 # New-AzureRmDataMigrationService
 
 ## SYNOPSIS
-Membuat contoh baru Layanan Migrasi Database Azure.
+Membuat contoh baru Azure Database Migration Service.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ New-AzureRmDataMigrationService -ResourceGroupName <String> -Name <String> -Loca
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzureRmDataMigrationService membuat contoh baru Layanan Migrasi Database Azure. Cmdlet ini mengambil nama Grup Sumber Daya Azure yang sudah ada, nama unik untuk instans baru Azure Database Migration Service yang akan dibuat, kawasan tempat instans ditetapkan, nama SKU Pekerja DMS, dan nama Subnet Virtual Azure tempat layanan berada. Tidak ada parameter untuk nama langganan, karena diharapkan bagi pengguna untuk menentukan langganan default sesi masuk Azure atau menjalankan Get-AzureRmSubscription -SubscriptionName "MySubscription" | Select-AzureRmSubscription memilih langganan lain.
+Cmdlet New-AzureRmDataMigrationService membuat contoh baru Azure Database Migration Service. Cmdlet ini mengatasnamakan Azure Resource Group yang sudah ada, nama unik untuk contoh baru Azure Database Migration Service yang akan dibuat, kawasan tempat instans disediakan, nama SKU Pekerja DMS, dan nama Azure Virtual Subnet tempat layanan berada. Tidak ada parameter untuk nama langganan, karena diharapkan pengguna menentukan langganan default sesi masuk Azure atau menjalankan Get-AzureRmSubscription -SubscriptionName "MySubscription" | Select-AzureRmSubscription untuk memilih langganan lain.
 
 ## EXAMPLES
 
@@ -36,7 +36,7 @@ Cmdlet New-AzureRmDataMigrationService membuat contoh baru Layanan Migrasi Datab
 PS C:\> New-AzureRmDataMigrationService -ResourceGroupName myResourceGroup -Name TestService -Location "Central US" -Sku Basic_2vCores -VirtualSubnetId $virtualSubNetId
 ```
 
-Contoh di atas memperlihatkan cara membuat contoh baru Layanan Migrasi Database Azure bernama TestService di kawasan AS Tengah.
+Contoh di atas memperlihatkan cara membuat contoh baru Azure Database Migration Service bernama TestService di kawasan AS Tengah.
 
 ## PARAMETERS
 
@@ -56,7 +56,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi instans Layanan Migrasi Database Azure yang akan dibuat, yang terkait dengan kawasan Azure.
+Lokasi instans Azure Database Migration Service yang akan dibuat, yang terkait dengan kawasan Azure.
 
 ```yaml
 Type: System.String
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Layanan Migrasi Database.
+nama Database Migration Service.
 
 ```yaml
 Type: System.String
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Sku untuk instans Layanan Migrasi Database Azure. Nilai yang mungkin saat ini Basic_1vCore.Basic_2vCores.GeneralPurpose_4vCores
+Sku untuk instans Azure Database Migration Service. Nilai yang mungkin saat ini Basic_1vCore,Basic_2vCores,GeneralPurpose_4vCores
 
 ```yaml
 Type: System.String
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualSubnetId
-Nama subnet di bawah jaringan virtual tertentu yang digunakan untuk contoh Layanan Migrasi Database Azure.
+Nama subnet di bawah jaringan virtual yang ditentukan untuk digunakan untuk instans Azure Database Migration Service.
 
 ```yaml
 Type: System.String
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,11 +161,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

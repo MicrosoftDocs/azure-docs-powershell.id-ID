@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/Get-AzureRmRecoveryServicesBackupContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/Get-AzureRmRecoveryServicesBackupContainer.md
 ms.openlocfilehash: c47c3e51d970302281af5a7ae3a6175f4af79739
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421606"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141775998"
 ---
 # Get-AzureRmRecoveryServicesBackupContainer
 
 ## SYNOPSIS
-Mendapatkan wadah Cadangan.
+Mendapatkan pencadangan kontainer.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -31,37 +31,37 @@ Get-AzureRmRecoveryServicesBackupContainer [-ContainerType] <ContainerType> [[-B
 
 ## DESCRIPTION
 Cmdlet **Get-AzureRmRecoveryServicesBackupContainer** mendapatkan wadah cadangan.
-Wadah Cadangan encapsulates sumber data yang dimodelkan sebagai item cadangan.
-Mengatur konteks vault menggunakan cmdlet Set-AzureRmRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
+Wadah Cadangan merangkum sumber data yang dimodelkan sebagai item cadangan.
+Mengatur konteks kubah menggunakan cmdlet Set-AzureRmRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan wadah tertentu
+### Contoh 1: Mendapatkan wadah tertentu
 ```
 PS C:\>Get-AzureRmRecoveryServicesContainer -ContainerType "AzureVM" -Status "Registered" -Name "V2VM";
 ```
 
-Perintah ini mendapatkan wadah bernama V2VM dari tipe AzureVM.
+Perintah ini mendapatkan wadah bernama V2VM tipe AzureVM.
 
-### Contoh 2: Mendapatkan semua wadah tipe tertentu
+### Contoh 2: Mendapatkan semua kontainer dari tipe tertentu
 ```
 PS C:\>Get-AzureRmRecoveryServicesBackupContainer -ContainerType Windows -BackupManagementType MARS
 ```
 
-Perintah ini akan Windows kontainer yang dilindungi oleh agen Azure Backup.
-Parameter *BackupManagementType* hanya diperlukan untuk Windows penampung.
+Perintah ini mendapatkan semua wadah Windows yang dilindungi oleh agen Azure Backup.
+Parameter *BackupManagementType* hanya diperlukan untuk kontainer Windows.
 
 ## PARAMETERS
 
 ### -BackupManagementType
-Menentukan tipe manajemen pencadangan.
+Menentukan tipe manajemen cadangan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - AzureVM
 - MARS
 - AzureSQL
 - AzureStorage
 
-Parameter ini digunakan untuk membedakan Windows mesin yang dicadangkan menggunakan agen MARS atau mesin cadangan lainnya.
+Parameter ini digunakan untuk membedakan mesin Windows yang dicadangkan menggunakan agen MARS atau mesin cadangan lainnya.
 
 ```yaml
 Type: System.String
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -FriendlyName
-Menentukan nama wadah yang mudah digunakan.
+Menentukan nama kontainer yang mudah didapatkan.
 
 ```yaml
 Type: System.String
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama wadah untuk mendapatkan.
+Menentukan nama wadah yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Menentukan status pendaftaran kontainer.
+Menentukan status registrasi kontainer.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Terdaftar
 
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -211,6 +211,6 @@ Parameter: VaultId (ByValue)
 
 [Get-AzureRmRecoveryServicesBackupManagementServer](./Get-AzureRmRecoveryServicesBackupManagementServer.md)
 
-[Unregister-AzureRmRecoveryServicesBackupContainer](./Unregister-AzureRmRecoveryServicesBackupContainer.md)
+[Batalkan pendaftaran-AzureRmRecoveryServicesBackupContainer](./Unregister-AzureRmRecoveryServicesBackupContainer.md)
 
 

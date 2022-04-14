@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/LogicApp/Commands.LogicApp/help/Test-AzureRmLogicApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/LogicApp/Commands.LogicApp/help/Test-AzureRmLogicApp.md
 ms.openlocfilehash: 35ce8352670aa2af2a7051736e1b986b83bcc64b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132414252"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141822375"
 ---
 # Test-AzureRmLogicApp
 
@@ -42,16 +42,16 @@ Tentukan nama aplikasi logika, nama grup sumber daya, lokasi, status, ID akun in
 Modul ini mendukung parameter dinamis.
 Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
-Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilai tersebut.
+Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
 ## EXAMPLES
 
-### Contoh 1: Memvalidasi aplikasi logika menggunakan jalur file
+### Contoh 1: Memvalidasi aplikasi logika dengan menggunakan jalur file
 ```
 PS C:\>Test-AzureRmLogicApp -ResourceGroupName "ResourceGroup11" -Name "LogicApp01" -Location "westus" -State "Enabled" -DefinitionFilePath "d:\workflows\Definition.json" -ParameterFilePath "d:\workflows\Parameters.json"
 ```
 
-Perintah ini memvalidasi aplikasi logika yang bernama LogicApp01 dalam grup sumber daya yang ditentukan.
+Perintah ini memvalidasi aplikasi logika bernama LogicApp01 dalam grup sumber daya yang ditentukan.
 Perintah menentukan jalur file definisi dan parameter.
 
 ### Contoh 2: Memvalidasi aplikasi logika dengan menggunakan objek
@@ -59,13 +59,13 @@ Perintah menentukan jalur file definisi dan parameter.
 PS C:\>Test-AzureRmLogicApp -ResourceGroupName "ResourceGroup11" -Name "LogicApp01" -Location "westus" -State "Enabled" -Definition [IO.File]::ReadAllText("d:\Workflows\Definition.json") -Parameters @{name1="value1", name2="value2"}
 ```
 
-Perintah ini memvalidasi aplikasi logika yang bernama LogicApp01 dalam grup sumber daya yang ditentukan.
+Perintah ini memvalidasi aplikasi logika bernama LogicApp01 dalam grup sumber daya yang ditentukan.
 Perintah menentukan definisi dan objek parameter.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -79,7 +79,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Definition
+### -Definisi
 Menentukan definisi aplikasi logika sebagai objek atau string dalam format JavaScript Object Notation (JSON).
 
 ```yaml
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ### -Lokasi
 Menentukan lokasi aplikasi logika.
 Masukkan lokasi pusat data Azure, seperti AS Barat atau Asia Tenggara.
-Anda dapat menempatkan aplikasi logika di lokasi mana saja.
+Anda dapat menempatkan aplikasi logika di lokasi mana pun.
 
 ```yaml
 Type: System.String
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParameterFilePath
-Menentukan jalur file parameter yang diformat JSON.
+Menentukan jalur file parameter JSON yang diformat.
 
 ```yaml
 Type: System.String
@@ -171,9 +171,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Parameter
-Menentukan objek kumpulan parameter dari aplikasi logika.
-Menentukan tabel hash, Kamus\<string\>, atau Kamus\<string, WorkflowParameter\>.
+### -Parameters
+Menentukan objek pengumpulan parameter dari aplikasi logika.
+Tentukan tabel hash, Kamus\<string\>, atau Kamus\<string, WorkflowParameter\>.
 
 ```yaml
 Type: System.Object
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -236,9 +236,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmLogicApp](./Get-AzureRmLogicApp.md)
 
-[New-AzureRmLogicApp](./New-AzureRmLogicApp.md)
+[AzureRmLogicApp baru](./New-AzureRmLogicApp.md)
 
-[Remove-AzureRmLogicApp](./Remove-AzureRmLogicApp.md)
+[Hapus-AzureRmLogicApp](./Remove-AzureRmLogicApp.md)
 
 [Set-AzureRmLogicApp](./Set-AzureRmLogicApp.md)
 

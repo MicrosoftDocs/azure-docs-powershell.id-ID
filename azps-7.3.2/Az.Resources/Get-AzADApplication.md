@@ -5,19 +5,22 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADApplication.md
-ms.openlocfilehash: 120c651c28892470d029cb54b33ec935cfa09abc
-ms.sourcegitcommit: b346b2fbd8b25f54759984e75ddbee3304921c43
+ms.openlocfilehash: 27be4da63d952a525656500a9e987d591918ad11
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "140663733"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142028837"
 ---
 # Get-AzADApplication
 
 ## SYNOPSIS
-Mencantumkan entitas dari aplikasi atau mendapatkan entitas dari aplikasi dengan kunci
+Mencantumkan entitas dari aplikasi atau mendapatkan entitas dari aplikasi menurut kunci
 
 [!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azadapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -59,42 +62,42 @@ Get-AzADApplication [-Select <String[]>] -IdentifierUri <String> [-First <UInt64
 ```
 
 ## DESCRIPTION
-Mencantumkan entitas dari aplikasi atau mendapatkan entitas dari aplikasi dengan kunci
+Mencantumkan entitas dari aplikasi atau mendapatkan entitas dari aplikasi menurut kunci
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan aplikasi dengan nama tampilan
+### Contoh 1: Dapatkan aplikasi menurut nama tampilan
 ```powershell
 PS C:\> Get-AzADApplication -DisplayName $appname
 ```
 
-Dapatkan aplikasi dengan nama tampilan
+Dapatkan aplikasi berdasarkan nama tampilan
 
 ### Contoh 2: Daftar aplikasi
 ```powershell
 PS C:\> Get-AzADApplication -First 10
 ```
 
-Membuat daftar 10 aplikasi pertama
+Daftar 10 aplikasi pertama
 
-### Contoh 3: Cari nama tampilan aplikasi dimulai dengan
+### Contoh 3: Mencari nama tampilan aplikasi dimulai dengan
 ```powershell
 PS C:\> Get-AzADApplication -DisplayNameStartsWith $prefix
 ```
 
-Cari nama tampilan aplikasi dimulai dengan
+Mencari nama tampilan aplikasi dimulai dengan
 
-### Contoh 4: Get application by object Id
+### Contoh 4: Dapatkan aplikasi menurut id objek
 ```powershell
 PS C:\> Get-AzADapplication -ObjectId $id -Select Tags -AppendSelected
 ```
 
-Dapatkan aplikasi dengan objek Id dan properti penambahan 'Tag' setelah properti default: 'DisplayName', 'Id', 'DeletedDateTime', 'IdentifierUris', 'Web', 'AppId', 'SignInAudience'
+Dapatkan aplikasi menurut ID objek dan tambahkan properti 'Tag' setelah properti default: 'DisplayName', 'Id', 'DeletedDateTime', 'IdentifierUris', 'Web', 'AppId', 'SignInAudience'
 
 ## PARAMETERS
 
 ### -AppendSelected
-Tambahkan properti yang dipilih dengan properti default saat sakelar ini diaktifkan, hanya bekerja dengan parameter '-Pilih'.
+Tambahkan properti yang dipilih dengan properti default saat sakelar ini aktif, hanya berfungsi dengan parameter '-Select'.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,9 +126,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ConsistencyLevel
+### -KonsistensiLevel
 Menunjukkan tingkat konsistensi yang diminta.
-URL Dokumentasi: https://developer.microsoft.com/en-us/office/blogs/microsoft-graph-advanced-queries-for-directory-objects-are-now-generally-available/
+URL dokumentasi: https://developer.microsoft.com/en-us/office/blogs/microsoft-graph-advanced-queries-for-directory-objects-are-now-generally-available/
 
 ```yaml
 Type: System.String
@@ -275,7 +278,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lewati
-Mengabaikan objek 'n' pertama, lalu mendapatkan objek yang tersisa.
+Mengabaikan objek 'n' pertama lalu mendapatkan objek yang tersisa.
 
 ```yaml
 Type: System.UInt64
@@ -289,7 +292,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -First
+### -Pertama
 Hanya mendapatkan objek 'n' pertama.
 
 ```yaml
@@ -305,7 +308,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

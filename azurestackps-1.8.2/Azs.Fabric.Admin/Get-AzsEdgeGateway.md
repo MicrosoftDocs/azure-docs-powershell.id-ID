@@ -3,17 +3,17 @@ external help file: Azs.Fabric.Admin-help.xml
 Module Name: Azs.Fabric.Admin
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 994c173066b2f95c6854743d1a7081c35ea26447e7b88f561c914e87d0d5fb87
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 793bf4a4b5b9dfb448c5b2a1baf9d74af592a23e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416991"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141770883"
 ---
 # Get-AzsEdgeGateway
 
 ## SYNOPSIS
-Mengembalikan daftar semua gateway tepi di lokasi tertentu.
+Mengembalikan daftar semua gateway edge di lokasi tertentu.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-AzsEdgeGateway [-Location <String>] [-ResourceGroupName <String>] [-Filter <
  [-Top <Int32>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsEdgeGateway [-Name] <String> [-Location <String>] [-ResourceGroupName <String>] [<CommonParameters>]
 ```
@@ -34,7 +34,7 @@ Get-AzsEdgeGateway -ResourceId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Mengembalikan daftar semua gateway tepi di lokasi tertentu.
+Mengembalikan daftar semua gateway edge di lokasi tertentu.
 
 ## EXAMPLES
 
@@ -43,7 +43,7 @@ Mengembalikan daftar semua gateway tepi di lokasi tertentu.
 Get-AzsEdgeGateway
 ```
 
-Dapatkan daftar semua gateway tepi.
+Dapatkan daftar semua gateway edge.
 
 ### CONTOH 2
 ```
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

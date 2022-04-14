@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/FrontDoor/Commands.FrontDoor/help/New-AzureRmFrontDoorFireWallPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/FrontDoor/Commands.FrontDoor/help/New-AzureRmFrontDoorFireWallPolicy.md
 ms.openlocfilehash: b18f17830dd08f95c3d887ce272ff31e080001a0
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422538"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141823802"
 ---
 # New-AzureRmFrontDoorFireWallPolicy
 
 ## SYNOPSIS
-Membuat kebijakan WAF
+Buat kebijakan WAF
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ New-AzureRmFrontDoorFireWallPolicy -ResourceGroupName <String> -Name <String> [-
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmFrontDoorFireWallPolicy** membuat kebijakan baru Azure WAF di grup sumber daya yang ditentukan di bawah langganan saat ini
+Cmdlet **New-AzureRmFrontDoorFireWallPolicy** membuat kebijakan Azure WAF baru dalam grup sumber daya yang ditentukan di bawah langganan saat ini
 
 ## EXAMPLES
 
@@ -51,7 +51,7 @@ Name               : {Name}
 Type               :
 ```
 
-Membuat kebijakan WAF
+Buat kebijakan WAF
 
 ## PARAMETERS
 
@@ -86,8 +86,8 @@ Accept wildcard characters: False
 ```
 
 ### -EnabledState
-Apakah kebijakan berada dalam status diaktifkan atau status dinonaktifkan.
-Kemungkinan nilai meliputi: 'Dinonaktifkan', 'Diaktifkan'
+Apakah kebijakan dalam status aktif atau status nonaktif.
+Nilai yang memungkinkan termasuk: 'Dinonaktifkan', 'Diaktifkan'
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSEnabledState
@@ -118,8 +118,8 @@ Accept wildcard characters: False
 ```
 
 ### -Mode
-Menjelaskan apakah mode itu ada dalam mode deteksi atau mode pencegahan di tingkat kebijakan.
-Nilai yang memungkinkan antara lain:'Pencegahan', 'Deteksi'
+Menjelaskan apakah mode tersebut berada dalam mode deteksi atau mode pencegahan pada tingkat kebijakan.
+Nilai yang memungkinkan termasuk:'Pencegahan', 'Deteksi'
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSMode
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama WebApplicationFireWallPolicy.
+WebApplicationFireWallPolicy name.
 
 ```yaml
 Type: System.String
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -210,8 +210,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Set-AzureRmFrontDoorFireWallPolicy](./Set-AzureRmFrontDoorFireWallPolicy.md) 
- [Get-AzureRmFrontDoorFireWallPolicy](./Get-AzureRmFrontDoorFireWallPolicy.md) 
- [Remove-AzureRmFrontDoorFireWallPolicy](./Remove-AzureRmFrontDoorFireWallPolicy.md) 
- [New-AzureRmFrontDoorManagedRuleObject](./New-AzureRmFrontDoorManagedRuleObject.md) 
+[Set-AzureRmFrontDoorFireWallPolicy](./Set-AzureRmFrontDoorFireWallPolicy.md)
+ [Get-AzureRmFrontDoorFireWallPolicy](./Get-AzureRmFrontDoorFireWallPolicy.md)
+ [Hapus-AzureRmFrontDoorFireWallPolicy](./Remove-AzureRmFrontDoorFireWallPolicy.md)
+ [New-AzureRmFrontDoorManagedRuleObject](./New-AzureRmFrontDoorManagedRuleObject.md)
  [New-AzureRmFrontDoorCustomRuleObject](./New-AzureRmFrontDoorManagedRuleObject.md)

@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/New-AzureRmApiManagementApiRelease.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/New-AzureRmApiManagementApiRelease.md
 ms.openlocfilehash: 366a49a0360d3f089ae89c04d9611d864daa1688
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427645"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141888233"
 ---
 # New-AzureRmApiManagementApiRelease
 
 ## SYNOPSIS
-Membuat Rilis API Revisi API
+Membuat Rilis API revisi API
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,7 +29,7 @@ New-AzureRmApiManagementApiRelease -Context <PsApiManagementContext> -ApiId <Str
 
 ## DESCRIPTION
 
-Cmdlet **New-AzureRmApiManagementApiRelease** membuat Rilis API untuk Revisi API dalam konteks Manajemen API.
+Cmdlet **New-AzureRmApiManagementApiRelease** membuat Rilis API untuk Revisi API dalam konteks API Management.
 
 ## EXAMPLES
 
@@ -51,7 +51,7 @@ ResourceGroupName : Api-Default-WestUS
 ServiceName       : contoso
 ```
 
-Perintah ini akan membuat Rilis API `2` Revisi . `echo-api`
+Perintah ini membuat Rilis API Revisi `2` `echo-api`.
 
 ## PARAMETERS
 
@@ -116,8 +116,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Note
-Catatan Rilis Api. Parameter ini opsional
+### -Catatan
+Catatan Rilis Api. Parameter ini bersifat opsional
 
 ```yaml
 Type: System.String
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -198,5 +198,5 @@ Parameter: Konteks (ByValue)
 
 [Get-AzureRmApiManagementApiRelease](./Get-AzureRmApiManagementApiRelease.md)
 
-[Remove-AzureRmApiManagementApiRelease](./Remove-AzureRmApiManagementApiRelease.md)
+[Hapus-AzureRmApiManagementApiRelease](./Remove-AzureRmApiManagementApiRelease.md)
 

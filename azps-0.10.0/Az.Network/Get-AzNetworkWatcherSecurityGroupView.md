@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzNetworkWatcherSecurityGroupView.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzNetworkWatcherSecurityGroupView.md
 ms.openlocfilehash: fe315ac4b6c29b8ffd1c82c8045ba9b7a7aab4a0
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425786"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141964563"
 ---
 # Get-AzNetworkWatcherSecurityGroupView
 
 ## SYNOPSIS
-Lihat aturan grup keamanan jaringan yang dikonfigurasi dan efektif yang diterapkan pada VM.
+Menampilkan aturan grup keamanan jaringan yang dikonfigurasi dan efektif yang diterapkan pada VM.
 
 ## SYNTAX
 
@@ -32,11 +32,11 @@ Get-AzNetworkWatcherSecurityGroupView -NetworkWatcherName <String> -ResourceGrou
 ```
 
 ## DESCRIPTION
-Dengan Get-AzNetworkWatcherSecurityGroupView memungkinkan Anda menampilkan aturan grup keamanan jaringan yang dikonfigurasi dan efektif yang diterapkan pada VM.
+Get-AzNetworkWatcherSecurityGroupView memungkinkan Anda menampilkan aturan grup keamanan jaringan yang dikonfigurasi dan efektif yang diterapkan pada VM.
 
 ## EXAMPLES
 
-### --- Contoh 1: Melakukan panggilan Tampilan Grup Keamanan pada VM ---
+### --- Contoh 1: Melakukan panggilan Tampilan Grup Keamanan di VM ---
 ```
 $nw = Get-AzResource | Where {$_.ResourceType -eq "Microsoft.Network/networkWatchers" -and $_.Location -eq "WestCentralUS" } 
 $networkWatcher = Get-AzNetworkWatcher -Name $nw.Name -ResourceGroupName $nw.ResourceGroupName 
@@ -44,12 +44,12 @@ $VM = Get-AzVM -ResourceGroupName ContosoResourceGroup -Name VM0
 Get-AzNetworkWatcherSecurityGroupView -NetworkWatcher $networkWatcher -TargetVirtualMachineId $VM.Id
 ```
 
-Dalam contoh di atas, kami terlebih dahulu mendapatkan Network Watcher kawasan, lalu VM di kawasan tersebut. Kemudian, kami akan melakukan panggilan Security Group View menggunakan VM yang ditentukan.
+Dalam contoh di atas, kami terlebih dahulu mendapatkan Network Watcher regional, lalu VM di kawasan tersebut. Lalu kami membuat panggilan Tampilan Grup Keamanan pada VM yang ditentukan.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengawas jaringan.
+Sumber daya pengamat jaringan.
 
 ```yaml
 Type: PSNetworkWatcher
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -151,7 +151,7 @@ System.String
 ### Microsoft.Azure.Commands.Network.Models.PSViewNsgRules
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, network, networking, network watcher, flow, ip 
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, aliran, ip 
 
 ## RELATED LINKS
 
@@ -159,7 +159,7 @@ Kata kunci: azure, azurerm, arm, resource, management, manager, network, network
 
 [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md)
 
-[Remove-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
+[Hapus-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
 
 [Test-AzNetworkWatcherIPFlow](./Test-AzNetworkWatcherIPFlow.md)
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmVpnClientRevokedCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmVpnClientRevokedCertificate.md
 ms.openlocfilehash: e9095c5f2e8f2a9820214f1144f10f8049f22027
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425441"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141777091"
 ---
 # Remove-AzureRmVpnClientRevokedCertificate
 
@@ -29,24 +29,24 @@ Remove-AzureRmVpnClientRevokedCertificate -VpnClientRevokedCertificateName <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmVpnClientRevokedCertificate** menghapus sertifikat pencabutan klien dari gateway jaringan virtual.
-Sertifikat pencabutan klien mencegah komputer klien menggunakan sertifikat yang ditentukan untuk autentikasi.
-Jika Anda menghapus komputer klien sertifikat pembatalan klien bisa menggunakan sertifikat yang sebelumnya dilarang untuk membuat koneksi jaringan privat virtual (VPN, Virtual Private Network).
+Cmdlet **Remove-AzureRmVpnClientRevokedCertificate** menghapus sertifikat pembatalan klien dari gateway jaringan virtual.
+Sertifikat pembatalan klien mencegah komputer klien menggunakan sertifikat tertentu untuk autentikasi.
+Jika Anda menghapus komputer klien klien-pencabutan sertifikat bisa menggunakan sertifikat yang sebelumnya diblokir untuk membuat koneksi jaringan privat virtual (VPN).
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus sertifikat pencabutan klien dari gateway jaringan virtual
+### Contoh 1: Menghapus sertifikat pembatalan klien dari gateway jaringan virtual
 ```
 PS C:\>Remove-AzureRmVpnClientRevokedCertificate -VirtualNetworkGatewayName "ContosoVirtualNetwork" -ResourceGroupName"ContosoResourceGroup" -VpnClientRevokedCertificateName "ContosoRevokedClientCertificate"-Thumbprint "E3A38EBA60CAA1C162785A2E1C44A15AD450199C3"
 ```
 
-Perintah ini menghapus sertifikat pencabutan klien dari gateway jaringan virtual yang bernama ContosoVirtualNetwork.
-Untuk menghapus sertifikat pencabutan klien, Anda harus menentukan nama sertifikat dan thumbprint sertifikat.
+Perintah ini menghapus sertifikat pembatalan klien dari gateway jaringan virtual bernama ContosoVirtualNetwork.
+Untuk menghapus sertifikat pencabutan klien, Anda harus menentukan nama sertifikat dan sidik jari sertifikat.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -61,8 +61,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang ditetapkan untuk gateway jaringan virtual.
-Grup sumber daya mengkategorikan item untuk membantu menyederhanakan manajemen inventaris dan administrasi umum Azure.
+Menentukan nama grup sumber daya tempat gateway jaringan maya ditetapkan.
+Grup sumber daya mengkategorikan item untuk membantu menyederhanakan manajemen inventaris dan administrasi Umum Azure.
 
 ```yaml
 Type: System.String
@@ -76,9 +76,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Thumbprint
+### -Sidik jari
 Menentukan pengidentifikasi unik sertifikat yang dihapus.
-Anda bisa mengembalikan informasi yang dapat dicetak dengan jempol untuk sertifikat Anda dengan menggunakan Windows PowerShell seperti ini:`Get-ChildItem -Path "Cert:\LocalMachine\Root"`
+Anda bisa mengembalikan informasi sidik jari untuk sertifikat Anda dengan menggunakan perintah Windows PowerShell seperti ini:`Get-ChildItem -Path "Cert:\LocalMachine\Root"`
 Perintah sebelumnya mengembalikan informasi untuk semua sertifikat Komputer Lokal yang ditemukan di penyimpanan sertifikat Akar.
 
 ```yaml
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnClientRevokedCertificateName
-Menentukan nama sertifikat klien VPN yang akan dihapus.
+Menentukan nama sertifikat klien VPN yang sedang dihapus.
 
 ```yaml
 Type: System.String
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

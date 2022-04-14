@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudServiceLoadBalancerConfigurationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudServiceLoadBalancerConfigurationObject.md
 ms.openlocfilehash: 2e14ee4fc0cb125f5a469e7688fe658277c902f6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140142801"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141871880"
 ---
 # New-AzCloudServiceLoadBalancerConfigurationObject
 
@@ -18,7 +18,7 @@ ms.locfileid: "140142801"
 Membuat objek dalam memori untuk LoadBalancerConfiguration
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cloudservice/new-azcloudserviceloadbalancerconfigurationobject) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/new-azcloudserviceloadbalancerconfigurationobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,21 +32,21 @@ Membuat objek dalam memori untuk LoadBalancerConfiguration
 
 ## EXAMPLES
 
-### Contoh 1: Membuat objek konfigurasi penyeimbang muat
+### Contoh 1: Membuat objek konfigurasi load balancer
 ```powershell
 PS C:\> $publicIP = Get-AzPublicIpAddress -ResourceGroupName 'ContosoOrg' -Name 'ContosoPublicIP'
 PS C:\> $feIpConfig = New-AzCloudServiceLoadBalancerFrontendIPConfigurationObject -Name 'ContosoFe' -PublicIPAddressId $publicIP.Id
 PS C:\> $loadBalancerConfig = New-AzCloudServiceLoadBalancerConfigurationObject -Name 'ContosoLB' -FrontendIPConfiguration $feIpConfig
 ```
 
-Perintah ini membuat objek konfigurasi penyeimbang muat yang digunakan untuk membuat atau memperbarui layanan awan.
+Perintah ini membuat objek konfigurasi load balancer yang digunakan untuk membuat atau memperbarui layanan awan.
 Untuk detail selengkapnya, lihat New-AzCloudService.
 
 ## PARAMETERS
 
 ### -FrontendIPConfiguration
 FrontendIPConfiguration.
-Untuk membuat, lihat bagian CATATAN untuk properti FRONTENDIPCONFIGURATION dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti FRONTENDIPCONFIGURATION dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.Api20210301.ILoadBalancerFrontendIPConfiguration[]
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -94,7 +94,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 FRONTENDIPCONFIGURATION <ILoadBalancerFrontendIPConfiguration[]>: FrontendIPConfiguration.
-  - `Name <String>`: Nama sumber daya yang unik dalam kumpulan konfigurasi IP frontend yang digunakan oleh penyeimbang muat. Nama ini bisa digunakan untuk mengakses sumber daya.
+  - `Name <String>`: Nama sumber daya yang unik dalam rangkaian konfigurasi IP frontend yang digunakan oleh penyeimbang muatan. Nama ini bisa digunakan untuk mengakses sumber daya.
   - `[PrivateIPAddress <String>]`: Alamat IP privat jaringan virtual konfigurasi IP.
   - `[PublicIPAddressId <String>]`: Id Sumber Daya
   - `[SubnetId <String>]`: Id Sumber Daya

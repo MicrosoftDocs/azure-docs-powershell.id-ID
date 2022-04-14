@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmLoadBalancerProbeConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmLoadBalancerProbeConfig.md
 ms.openlocfilehash: 8a4889190e58edd896d1a93222a35688dd5884c1
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427579"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141777648"
 ---
 # New-AzureRmLoadBalancerProbeConfig
 
 ## SYNOPSIS
-Membuat konfigurasi configuration configuration for a load balancer.
+Membuat konfigurasi probe untuk load balancer.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,22 +29,22 @@ New-AzureRmLoadBalancerProbeConfig -Name <String> [-Protocol <String>] -Port <In
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmLoadBalancerProbeConfig** membuat konfigurasi cmdlet untuk penyeimbang muat Azure.
+Cmdlet **New-AzureRmLoadBalancerProbeConfig** membuat konfigurasi probe untuk load balancer Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat konfigurasi konfigurasi konfigurasi
+### Contoh 1: Membuat konfigurasi probe
 ```
 PS C:\>New-AzureRmLoadBalancerProbeConfig -Name "MyProbe" -Protocol "http" -Port 80 -IntervalInSeconds 15 -ProbeCount 15
 ```
 
-Perintah ini membuat konfigurasi konfigurasi myProbe yang bernama MyProbe menggunakan protokol HTTP.
-Port 80 akan terhubung dengan layanan seimbang muatan di port 80.
+Perintah ini membuat konfigurasi pemeriksaan bernama MyProbe menggunakan protokol HTTP.
+Probe baru akan tersambung ke layanan load-balanced pada port 80.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -IntervalInSeconds
-Menentukan interval, dalam detik, antar nilai ke setiap instans layanan dengan beban seimbang.
+Menentukan interval, dalam detik, antara probe untuk setiap instans layanan yang seimbang beban.
 
 ```yaml
 Type: System.Int32
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama konfigurasi konfigurasi konfigurasi konfigurasi untuk dibuat.
+Menentukan nama konfigurasi probe yang akan dibuat.
 
 ```yaml
 Type: System.String
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Menentukan port yang harus tersambung dengan layanan keseimbangan muat baru.
+Menentukan port tempat probe baru harus tersambung ke layanan load-balanced.
 
 ```yaml
 Type: System.Int32
@@ -103,8 +103,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -DipesanCount
-Menentukan jumlah kegagalan berturut-turut per instans untuk suatu instans dianggap tidak sehat.
+### -ProbeCount
+Menentukan jumlah kegagalan berturut-turut per instans yang dianggap tidak sehat.
 
 ```yaml
 Type: System.Int32
@@ -118,8 +118,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Protocol
-Menentukan protokol yang akan digunakan untuk konfigurasi konfigurasi.
+### -Protokol
+Menentukan protokol yang digunakan untuk konfigurasi probe.
 Nilai yang dapat diterima untuk parameter ini adalah: Tcp atau Http.
 
 ```yaml
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestPath
-Menentukan jalur dalam layanan muatan seimbang untuk menemukan kesehatan.
+Menentukan jalur dalam layanan seimbang-muat untuk melakukan pemeriksaan untuk menentukan kesehatan.
 
 ```yaml
 Type: System.String
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,11 +180,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -198,7 +198,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmLoadBalancerProbeConfig](./Get-AzureRmLoadBalancerProbeConfig.md)
 
-[Remove-AzureRmLoadBalancerProbeConfig](./Remove-AzureRmLoadBalancerProbeConfig.md)
+[Hapus-AzureRmLoadBalancerProbeConfig](./Remove-AzureRmLoadBalancerProbeConfig.md)
 
 [Set-AzureRmLoadBalancerProbeConfig](./Set-AzureRmLoadBalancerProbeConfig.md)
 

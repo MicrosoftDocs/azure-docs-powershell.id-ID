@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzDataCollectionRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzDataCollectionRule.md
-ms.openlocfilehash: 082bb1f1238d7fb82da6069505d7a43d814f7db5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c2f76f590ac7414556830521a4396926d26d2f11
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140000189"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141936087"
 ---
 # Get-AzDataCollectionRule
 
 ## SYNOPSIS
 Mendapatkan aturan pengumpulan data.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azdatacollectionrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ Get-AzDataCollectionRule
 ## DESCRIPTION
 Cmdlet **Get-AzDataCollectionRule** mendapatkan satu atau beberapa aturan pengumpulan data.
 
-Aturan Pengumpulan Data (DCR, Data Collection Rules) menentukan data yang akan masuk ke Azure Monitor dan menentukan tempat data harus dikirimkan atau disimpan. Berikut adalah artikel gambaran [umum DCR lengkap](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection-rule-overview).
+Aturan Pengumpulan Data (DCR) menentukan data yang masuk ke Azure Monitor dan menentukan di mana data tersebut harus dikirim atau disimpan. Berikut adalah [artikel gambaran umum DCR](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection-rule-overview) lengkap.
 
 ## EXAMPLES
 
@@ -77,7 +80,7 @@ Tags              : {[tag2, value2], [tag1, value1]}
 
 Perintah ini mencantumkan semua aturan pengumpulan data untuk langganan saat ini.
 
-### Contoh 2: Dapatkan aturan pengumpulan data untuk grup sumber daya yang diberikan
+### Contoh 2: Dapatkan aturan pengumpulan data untuk grup sumber daya tertentu
 ```
 PS C:\>Get-AzDataCollectionRule -ResourceGroup "testgroup"
 
@@ -94,7 +97,7 @@ Location          : East US 2 EUAP
 Tags              : {[tag2, value2], [tag1, value1]}
 ```
 
-Perintah ini mencantumkan aturan pengumpulan data untuk grup sumber daya yang diberikan.
+Perintah ini mencantumkan aturan pengumpulan data untuk grup sumber daya tertentu.
 
 ### Contoh 3: Mendapatkan aturan pengumpulan data
 ```
@@ -113,9 +116,9 @@ Location          : East US 2 EUAP
 Tags              : {[tag2, value2], [tag1, value1]}
 ```
 
-Perintah ini mencantumkan aturan pengumpulan data satu (daftar dengan elemen tunggal).
+Perintah ini mencantumkan satu (daftar dengan satu elemen) aturan pengumpulan data.
 
-### Contoh 4: Mendapatkan aturan pengumpulan data berdasarkan ID Aturan
+### Contoh 4: Mendapatkan aturan pengumpulan data menurut ID Aturan
 ```
 PS C:\>Get-AzDataCollectionRule -RuleId "/subscriptions/{subId}/resourceGroups/testgroup/providers/Microsoft.Insights/dataCollectionRules/testDcr"
 
@@ -132,12 +135,12 @@ Location          : East US 2 EUAP
 Tags              : {[tag2, value2], [tag1, value1]}
 ```
 
-Perintah ini mencantumkan aturan pengumpulan data satu (daftar dengan elemen tunggal).
+Perintah ini mencantumkan satu (daftar dengan satu elemen) aturan pengumpulan data.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

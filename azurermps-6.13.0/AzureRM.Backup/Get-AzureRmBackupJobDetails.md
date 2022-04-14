@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/Get-AzureRmBackupJobDetails.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/Get-AzureRmBackupJobDetails.md
 ms.openlocfilehash: bf4ba77a7162faaf593e11b68a82fe5a6e55df1d
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "132414828"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141844919"
 ---
 # Get-AzureRmBackupJobDetails
 
@@ -51,11 +51,11 @@ ErrorCode ErrorMessage                            Recommendations
    400001 Command execution failed.               {Another operation is currently in p...
 ```
 
-Perintah pertama mengambil vault bernama Vault03 menggunakan cmdlet **Get-AzureRmBackupVault** .
-Perintah menyimpan objek tersebut dalam $Vault variabel.
-Perintah kedua gagal melakukan pekerjaan dari vault di $Vault, lalu menyimpannya dalam $Jobs array tertentu.
-Pekerjaan ketiga mendapatkan detail untuk pekerjaan pertama di $Jobs baru, lalu menyimpan detail tersebut di $JobDetails baru.
-Perintah terakhir menampilkan properti **ErrorDetails** dari rumus $JobDetails menggunakan sintaks titik standar.
+Perintah pertama mendapatkan kubah bernama Vault03 menggunakan cmdlet **Get-AzureRmBackupVault** .
+Perintah menyimpan objek tersebut dalam variabel $Vault.
+Perintah kedua mendapatkan pekerjaan yang gagal dari kubah di $Vault, lalu menyimpannya dalam variabel array $Jobs.
+Pekerjaan ketiga mendapatkan detail untuk pekerjaan pertama dalam variabel $Jobs, lalu menyimpan detail tersebut dalam variabel $JobDetails.
+Perintah akhir menampilkan properti **ErrorDetails** $JobDetails menggunakan sintaks titik standar.
 
 ### Contoh 2: Menampilkan tindakan yang direkomendasikan untuk pekerjaan yang gagal
 ```
@@ -63,12 +63,12 @@ PS C:\>$JobDetails.ErrorDetails.Recommendations
 Another operation is currently in progress on this item. Please wait until the previous operation is completed, and then retry.
 ```
 
-Perintah ini menampilkan tindakan yang direkomendasikan $JobDetails variabel yang dibuat dalam contoh pertama.
+Perintah ini menampilkan tindakan yang direkomendasikan dari variabel $JobDetails yang dibuat dalam contoh pertama.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -83,8 +83,8 @@ Accept wildcard characters: False
 ```
 
 ### -Job
-Menentukan pekerjaan yang mendapatkan detail cmdlet ini.
-Untuk mendapatkan objek **AzureRmBackupJob** , gunakan Get-AzureRmBackupJob cmdlet.
+Menentukan pekerjaan di mana cmdlet ini mendapatkan detail.
+Untuk mendapatkan objek **AzureRmBackupJob** , gunakan cmdlet Get-AzureRmBackupJob.
 
 ```yaml
 Type: Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupJob
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobId
-Menentukan ID pekerjaan yang mendapatkan detail cmdlet ini.
+Menentukan ID pekerjaan di mana cmdlet ini mendapatkan detailnya.
 ID adalah properti **InstanceId** dari objek **AzureRmBackupJob** .
 Untuk mendapatkan objek **AzureRmBackupJob** , gunakan Get-AzureRmBackupJob.
 
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -Vault
-Menentukan vault Cadangan di mana cmdlet ini mendapatkan detail pekerjaan.
+Menentukan kubah Cadangan tempat cmdlet ini mendapatkan detail pekerjaan.
 Untuk mendapatkan objek **AzureRmBackupVault** , gunakan cmdlet Get-AzureRmBackupVault.
 
 ```yaml
@@ -132,12 +132,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupJob
-Parameter: Pekerjaan (ByValue)
+Parameter: Job (ByValue)
 
 ## OUTPUTS
 

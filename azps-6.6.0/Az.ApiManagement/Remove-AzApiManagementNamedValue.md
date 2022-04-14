@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementNamedValue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementNamedValue.md
 ms.openlocfilehash: efda42c3c920db127e0faa86bf0604a323429250
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140144187"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141808340"
 ---
 # Remove-AzApiManagementNamedValue
 
 ## SYNOPSIS
-Menghapus Nilai Bernama Manajemen API.
+Menghapus API Management Nilai Bernama.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementnamedvalue) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementnamedvalue) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,17 +28,17 @@ Remove-AzApiManagementNamedValue -Context <PsApiManagementContext> -NamedValueId
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzApiManagementNamedValue** menghapus Nilai Bernama Manajemen API **Azure.**
+Cmdlet **Remove-AzApiManagementNamedValue** menghapus Azure API Management **Nilai Bernama**.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus nilai bernama
+### Contoh 1: Menghapus nilai bernama
 ```
 PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Remove-AzApiManagementNamedValue -Context $apimContext -NamedValueId "Property11" -PassThru
 ```
 
-Perintah ini menghapus nilai bernama yang memiliki ID Properti11.
+Perintah ini menghapus nilai bernama yang memiliki Properti ID11.
 
 ## PARAMETERS
 
@@ -73,7 +73,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -NamedValueId
+### -NameValueId
 Pengidentifikasi nilai bernama yang sudah ada.
 Parameter ini diperlukan.
 
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika ditentukan akan menuliskan true dalam kasus operasi berhasil.
+Jika ditentukan akan menulis true dalam kasus operasi berhasil.
 Parameter ini bersifat opsional.
 Nilai default adalah false.
 
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

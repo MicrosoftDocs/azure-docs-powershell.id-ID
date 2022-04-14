@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Update-AzureRmVpnConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Update-AzureRmVpnConnection.md
 ms.openlocfilehash: 08b1e18fcd15dfb2667d0aec2410e7e0d7ea7b99
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140858276"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141819430"
 ---
 # Update-AzureRmVpnConnection
 
 ## SYNOPSIS
-Memperbarui objek VpnConnection menjadi status tujuan.
+Memperbarui objek VpnConnection ke status tujuan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -44,7 +44,7 @@ Update-AzureRmVpnConnection -InputObject <PSVpnConnection> [-SharedKey <SecureSt
 ```
 
 ## DESCRIPTION
-Membuat koneksi IPSec yang menyambungkan VpnGateway ke cabang pelanggan jarak jauh yang dinyatakan dalam RM sebagai VpnSite.
+Membuat koneksi IPSec yang menyambungkan VpnGateway ke cabang pelanggan jarak jauh yang dinyatakan dalam RM sebagai Situs Vpn.
 
 ## EXAMPLES
 
@@ -79,11 +79,11 @@ Etag                      : W/"4580a2e2-2fab-4cff-88eb-92013a76b5a8"
 Id                        : /subscriptions/{subscriptionId}/resourceGroups/ps9361/providers/Microsoft.Network/vpnGateways/testvpngw/vpnConnections/testConnection
 ```
 
-Langkah di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub, dan VpnSite di AS Barat dalam grup sumber daya "testRG" di Azure. Gateway VPN akan dibuat setelahnya di Virtual Hub dengan 2 unit skala.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual, dan Situs Vpn di AS Barat dalam grup sumber daya "testRG" di Azure. Gateway VPN akan dibuat setelahnya di Hub Virtual dengan 2 unit skala.
 
-Setelah gateway dibuat, gateway itu tersambung ke Situs Vpn menggunakan New-AzureRmVpnConnection jaringan.
+Setelah gateway dibuat, gateway tersambung ke VpnSite menggunakan perintah New-AzureRmVpnConnection.
 
-Koneksi lalu diperbarui agar memiliki IpSecPolicy baru dengan menggunakan Set-AzureRmVpnConnection koneksi.
+Koneksi kemudian diperbarui agar memiliki IpSecPolicy baru menggunakan perintah Set-AzureRmVpnConnection.
 
 ### Contoh 2
 
@@ -116,16 +116,16 @@ Etag                      : W/"4580a2e2-2fab-4cff-88eb-92013a76b5a8"
 Id                        : /subscriptions/{subscriptionId}/resourceGroups/ps9361/providers/Microsoft.Network/vpnGateways/testvpngw/vpnConnections/testConnection
 ```
 
-Langkah di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub, dan VpnSite di AS Barat dalam grup sumber daya "testRG" di Azure. Gateway VPN akan dibuat setelahnya di Virtual Hub dengan 2 unit skala.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual, dan Situs Vpn di AS Barat dalam grup sumber daya "testRG" di Azure. Gateway VPN akan dibuat setelahnya di Hub Virtual dengan 2 unit skala.
 
-Setelah gateway dibuat, gateway itu tersambung ke Situs Vpn menggunakan New-AzureRmVpnConnection jaringan.
+Setelah gateway dibuat, gateway tersambung ke VpnSite menggunakan perintah New-AzureRmVpnConnection.
 
-Koneksi lalu diperbarui agar memiliki kunci bersama baru menggunakan konstruksi string aman.
+Koneksi kemudian diperbarui agar memiliki kunci bersama baru menggunakan konstruksi string aman.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionBandwidthInMbps
-Pita yang perlu ditangani dengan koneksi ini dalam mbps.
+Bandwith yang perlu ditangani oleh koneksi ini dalam mbps.
 
 ```yaml
 Type: System.UInt32
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableBgp
-Mengaktifkan BGP untuk koneksi ini
+Aktifkan BGP untuk koneksi ini
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek VpnConenction yang akan diperbarui.
+Objek VpnConenction untuk diperbarui.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVpnConnection
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpSecPolicy
-Pita yang perlu ditangani dengan koneksi ini dalam mbps.
+Bandwith yang perlu ditangani oleh koneksi ini dalam mbps.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSIpsecPolicy
@@ -260,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya dari objek VpnConenction yang akan dihapus.
+Id sumber daya dari objek VpnConenction untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -275,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### -SharedKey
-Kunci bersama diperlukan untuk menyetel koneksi ini.
+Kunci bersama diperlukan untuk menyetel sambungan ini.
 
 ```yaml
 Type: System.Security.SecureString
@@ -290,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -306,7 +306,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -321,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

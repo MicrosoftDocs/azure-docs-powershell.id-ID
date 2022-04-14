@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/set-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHubDistributedTracing.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHubDistributedTracing.md
-ms.openlocfilehash: 287b9fb1fcca20424c806a3264a27addcacbbaa1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5d5813341d565b2bc142f9f27b6fa11e2aaca9af
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140179517"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141851216"
 ---
 # Set-AzIotHubDistributedTracing
 
 ## SYNOPSIS
-Perbarui opsi penelusuran yang didistribusikan untuk perangkat.
+Perbarui opsi penelusuran terdistribusi untuk perangkat.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/set-aziothubdistributedtracing) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Set-AzIotHubDistributedTracing [-ResourceId] <String> [-DeviceId] <String>
 ```
 
 ## DESCRIPTION
-Perbarui opsi penelusuran yang didistribusikan untuk perangkat.
+Perbarui opsi penelusuran terdistribusi untuk perangkat.
 
 ## EXAMPLES
 
@@ -55,7 +58,7 @@ Sampling Rate : 22%
 IsSynced      : False
 ```
 
-Perbarui opsi penelusuran yang didistribusikan untuk perangkat.
+Perbarui opsi penelusuran terdistribusi untuk perangkat.
 
 ## PARAMETERS
 
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -SamplingMode
-Mengaktifkan dan menonaktifkan pengambilan sampel untuk pendistribusian.
+Mengaktifkan dan menonaktifkan pengambilan sampel untuk penelusuran terdistribusi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.IotHub.Models.PSDistributedTracingSamplingMode
@@ -166,9 +169,9 @@ Accept wildcard characters: False
 ```
 
 ### -SamplingRate
-Mengontrol jumlah pesan yang sampel untuk menambahkan konteks jejak.
+Mengontrol jumlah pesan yang diambil sampelnya untuk menambahkan konteks penelusuran.
 Nilai ini adalah persentase.
-Hanya nilai dari 0 sampai 100 (inklusif) yang diizinkan.
+Hanya nilai dari 0 hingga 100 (inklusif) yang diizinkan.
 
 ```yaml
 Type: System.Int32
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

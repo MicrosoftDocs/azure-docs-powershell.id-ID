@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmRouteTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmRouteTable.md
 ms.openlocfilehash: fff89f2b6d37dc75923527fdb07a71d79dee80a2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132413932"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141820707"
 ---
 # New-AzureRmRouteTable
 
@@ -61,13 +61,13 @@ Routes            : [
 Subnets           : []
 ```
 
-Perintah pertama membuat rute bernama Route07 menggunakan cmdlet New-AzureRmRouteConfig, lalu menyimpannya dalam variabel $Route nya. Rute ini meneruskan paket ke jaringan virtual lokal.
-Perintah kedua membuat tabel rute bernama RouteTable01, dan menambahkan rute yang disimpan di $Route ke tabel baru. Perintah menentukan grup sumber daya tempat tabel dimiliki dan lokasi untuk tabel.
+Perintah pertama membuat rute bernama Route07 menggunakan cmdlet New-AzureRmRouteConfig, lalu menyimpannya dalam variabel $Route. Rute ini meneruskan paket ke jaringan virtual lokal.
+Perintah kedua membuat tabel rute bernama RouteTable01, dan menambahkan rute yang disimpan di $Route ke tabel baru. Perintah menentukan grup sumber daya tempat tabel berada dan lokasi untuk tabel.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableBgpRoutePropagation
-Menonaktifkan penyebaran otomatis Rute BGP.
+Nonaktifkan pelambatan otomatis Rute BGP.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,8 +111,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Mengindikasikan bahwa cmdlet ini membuat tabel rute sekalipun tabel rute yang memiliki nama yang sama sudah ada.
+### -Paksa
+Menunjukkan bahwa cmdlet ini membuat tabel rute meskipun tabel rute yang memiliki nama yang sama sudah ada.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -127,8 +127,8 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan kawasan Azure tempat cmdlet membuat tabel rute.
-Untuk informasi selengkapnya, [lihat Azure Regions](https://azure.microsoft.com/en-us/regions/).
+Menentukan kawasan Azure tempat cmdlet ini membuat tabel rute.
+Untuk informasi selengkapnya, lihat [Kawasan Azure](https://azure.microsoft.com/en-us/regions/).
 
 ```yaml
 Type: System.String
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini membuat tabel rute.
+Menentukan nama grup sumber daya tempat cmdlet ini membuat tabel rute.
 
 ```yaml
 Type: System.String
@@ -172,8 +172,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Route
-Menentukan array Objek rute **yang** akan dikaitkan dengan tabel rute.
+### -Rute
+Menentukan array objek **Route** untuk dikaitkan dengan tabel rute.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Network.Models.PSRoute]
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -242,7 +242,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Hashtable
 
-### System.Collections.Generic.List1\`[[Microsoft.Azure.Commands.Network.Models.PSRoute, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List1\`[[Microsoft.Azure.Commands.Network.Models.PSRoute, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=netral, PublicKeyToken=null]]
 
 ## OUTPUTS
 
@@ -254,8 +254,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmRouteTable](./Get-AzureRmRouteTable.md)
 
-[New-AzureRmRouteConfig](./New-AzureRmRouteConfig.md)
+[AzureRmRouteConfig Baru](./New-AzureRmRouteConfig.md)
 
-[Remove-AzureRmRouteTable](./Remove-AzureRmRouteTable.md)
+[Hapus-AzureRmRouteTable](./Remove-AzureRmRouteTable.md)
 
 [Set-AzureRmRouteTable](./Set-AzureRmRouteTable.md)

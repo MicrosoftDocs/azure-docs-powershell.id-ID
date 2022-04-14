@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayHttpListenerCustomError.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayHttpListenerCustomError.md
-ms.openlocfilehash: 886b84af6e2008c385b6cf36969301c19a4c824f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2ec72a508dddf468840f50db1e2e1ce306032c9a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140000029"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141891530"
 ---
 # Add-AzApplicationGatewayHttpListenerCustomError
 
 ## SYNOPSIS
-Menambahkan kesalahan kustom pada pendengar http gateway aplikasi.
+Menambahkan kesalahan kustom ke pendengar http gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azapplicationgatewayhttplistenercustomerror) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Add-AzApplicationGatewayHttpListenerCustomError -HttpListener <PSApplicationGate
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzApplicationGatewayCustomError** menambahkan kesalahan kustom ke http pendengar gateway aplikasi.
+Cmdlet **Add-AzApplicationGatewayCustomError** menambahkan kesalahan kustom ke pendengar http gateway aplikasi.
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ Perintah ini menambahkan kesalahan kustom kode status http 502 ke pendengar http
 ## PARAMETERS
 
 ### -CustomErrorPageUrl
-URL halaman kesalahan kesalahan aplikasi gateway kesalahan pelanggan.
+URL halaman kesalahan kesalahan pelanggan gateway aplikasi.
 
 ```yaml
 Type: System.String
@@ -70,8 +73,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpListener
-Gateway Aplikasi http Pendengar
+### -HttpListener
+Pendengar Http Application Gateway
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayHttpListener
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -115,8 +118,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzApplicationGatewayhttpListenerCustomError](./Get-AzApplicationGatewayHttpListenerCustomError.md)
+[Get-AzApplicationGatewayHttpListenerCustomError](./Get-AzApplicationGatewayHttpListenerCustomError.md)
 
-[Remove-AzApplicationGatewayhttpListenerCustomError](./Remove-AzApplicationGatewayHttpListenerCustomError.md)
+[Remove-AzApplicationGatewayHttpListenerCustomError](./Remove-AzApplicationGatewayHttpListenerCustomError.md)
 
-[Set-AzApplicationGatewayhttpListenerCustomError](./Set-AzApplicationGatewayHttpListenerCustomError.md)
+[Set-AzApplicationGatewayHttpListenerCustomError](./Set-AzApplicationGatewayHttpListenerCustomError.md)

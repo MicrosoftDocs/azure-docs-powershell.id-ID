@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeStore/Commands.DataLakeStore/help/Set-AzureRmDataLakeStoreItemExpiry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeStore/Commands.DataLakeStore/help/Set-AzureRmDataLakeStoreItemExpiry.md
 ms.openlocfilehash: 4aff82a2621a462f0af14fe2dce620f297011874
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132413955"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141824411"
 ---
 # Set-AzureRmDataLakeStoreItemExpiry
 
@@ -36,34 +36,34 @@ Set-AzureRmDataLakeStoreItemExpiry [-Account] <String> [-Path] <DataLakeStorePat
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmDataLakeStoreItemExpiry** atau menghapus waktu kedaluwarsa untuk file di akun Azure Data Lake Store.
+Cmdlet **Set-AzureRmDataLakeStoreItemExpiry** mengatur atau menghapus waktu kedaluwarsa untuk file di akun Azure Data Lake Store.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur waktu kedaluwarsa file
+### Contoh 1: Mengatur waktu kedaluwarsa untuk file
 ```
 PS C:\> Set-AzureRmDataLakeStoreItemExpiry -AccountName "ContosoADL" -Path /myfile.txt -Expiration [DateTimeOffset]::Now.AddHours(2)
 ```
 
-Menetapkan kedaluwarsa pada file myfile.txt di akun ContosoADL menjadi dua jam dari sekarang.
-Hal ini akan menyebabkan file kedaluwarsa (ditandai untuk dihapus) dalam dua jam.
+Mengatur kedaluwarsa pada file myfile.txt di akun ContosoADL menjadi dua jam dari sekarang.
+Ini akan menyebabkan file kedaluwarsa (ditandai untuk dihapus) dalam dua jam.
 
 ### Contoh 2: Menghapus kedaluwarsa pada file
 ```
 PS C:\> Set-AzureRmDataLakeStoreItemExpiry -AccountName "ContosoADL" -Path /myfile.txt
 ```
 
-Menghapus semua kedaluwarsa yang sebelumnya diatur pada file 'myfile.txt' di akun 'ContosoADL'.
-Artinya, file tidak akan kedaluwarsa secara otomatis (ditandai untuk dihapus) dan harus dihapus secara manual atau diatur untuk kedaluwarsa lagi.
+Menghapus kedaluwarsa yang sebelumnya diatur pada file 'myfile.txt' dalam akun 'ContosoADL'.
+Ini berarti file tidak akan kedaluwarsa secara otomatis (ditandai untuk dihapus) dan harus dihapus secara manual atau diatur untuk kedaluwarsa lagi.
 
-### Contoh 3: Atur waktu kedaluwarsa file relatif terhadap sekarang
+### Contoh 3: Atur waktu kedaluwarsa untuk file relatif ke sekarang
 ```
 PS C:\> Set-AdlStoreItemExpiry -Account "ContosoADL" -path /myfile.txt -RelativeFileExpiryOption RelativeToNow -RelativeTime 240000
 PS C:\> Set-AdlStoreItemExpiry -Account "ContosoADL" -path /myfile.txt -RelativeFileExpiryOption RelativeToCreationDate -RelativeTime 240000
 ```
 
-Perintah pertama mengatur waktu kedaluwarsa file myfile.txt /240 detik dibandingkan waktu saat ini di server.
-Perintah kedua mengatur waktu kedaluwarsa file myfile.txt /240 detik dibandingkan waktu pembuatan di server.
+Perintah pertama mengatur waktu kedaluwarsa file /myfile.txt 240 detik relatif terhadap waktu saat ini di server.
+Perintah kedua mengatur waktu kedaluwarsa file /myfile.txt 240 detik relatif terhadap waktu pembuatan di server.
 
 ## PARAMETERS
 
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kedaluwarsa
-Waktu kedaluwarsa absolut untuk file tertentu.
+Waktu kedaluwarsa mutlak untuk file yang ditentukan.
 Jika tidak ada nilai atau diatur ke MaxValue, file tidak akan pernah kedaluwarsa.
 
 ```yaml
@@ -113,8 +113,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur Data Lake Store dari item file yang akan diatur atau dihapus kedaluwarsa.
+### -Jalur
+Menentukan jalur Penyimpanan Data Lake item file yang akan diatur atau dihapus kedaluwarsanya.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -RelativeFileExpiryOption
-Opsi kedaluwarsa relatif. RelativeToNow atau RelativeToCreationDate adalah opsi saat ini
+Opsi relatif kedaluwarsa. RelativeToNow atau RelativeToCreationDate adalah opsi saat ini
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStoreEnums+PathRelativeExpiryOptions
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

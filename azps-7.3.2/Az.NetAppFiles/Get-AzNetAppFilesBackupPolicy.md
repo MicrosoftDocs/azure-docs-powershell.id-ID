@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesBackupPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesBackupPolicy.md
-ms.openlocfilehash: bba0178ebfbcef712ec633de757a17fb1c1d598b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c866d17a2a07df5f645c130676542523086fadcb
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140393082"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141849668"
 ---
 # Get-AzNetAppFilesBackupPolicy
 
 ## SYNOPSIS
-Mendapatkan detail Kebijakan Pencadangan File Azure NetApp (ANF).
+Mendapatkan detail Kebijakan Pencadangan Azure NetApp Files (ANF).
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/get-aznetappfilesbackuppolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzNetAppFilesBackupPolicy [-Name <String>] -AccountObject <PSNetAppFilesAcco
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzNetAppFilesBackupPolicy** mendapatkan detail kebijakan pencadangan ANF.
+Cmdlet **Get-AzNetAppFilesBackupPolicy** mendapatkan detail kebijakan cadangan ANF.
 
 ## EXAMPLES
 
@@ -47,11 +50,11 @@ Cmdlet **Get-AzNetAppFilesBackupPolicy** mendapatkan detail kebijakan pencadanga
 PS C:\> Get-AzNetAppFilesBackupPolicy -ResourceGroupName "MyRG" -AccountName "MyAnfAccount" -Name "MyBackupPolicy"
 ```
 
-Perintah ini mendapatkan kebijakan pencadangan bernama "MyBackupPolicy" untuk akun "MyAnfAccount".
+Perintah ini mendapatkan kebijakan cadangan bernama "MyBackupPolicy" untuk akun "MyAnfAccount".
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun ANF
 
 ```yaml
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -AccountObject
-Objek Akun berisi Kebijakan Pencadangan untuk dikembalikan
+Objek Akun yang berisi Kebijakan Pencadangan untuk dikembalikan
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesAccount
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama kebijakan pencadangan ANF
+Nama kebijakan cadangan ANF
 
 ```yaml
 Type: System.String
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya Kebijakan Pencadangan ANF
+Id sumber daya dari Kebijakan Cadangan ANF
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
