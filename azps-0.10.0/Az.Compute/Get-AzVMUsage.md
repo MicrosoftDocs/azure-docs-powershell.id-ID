@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Get-AzVMUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Get-AzVMUsage.md
 ms.openlocfilehash: 66a74ed2fa389c0dd39fa9fc86570ff8d68dc1dc
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132414173"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141918323"
 ---
 # Get-AzVMUsage
 
 ## SYNOPSIS
-Dapatkan penggunaan jumlah inti mesin virtual untuk suatu lokasi.
+Mendapatkan penggunaan hitungan inti mesin virtual untuk lokasi.
 
 ## SYNTAX
 
@@ -25,21 +25,21 @@ Get-AzVMUsage [-Location] <String> [-DefaultProfile <IAzureContextContainer>] [<
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVMUsage** mendapatkan penggunaan jumlah inti mesin virtual untuk suatu lokasi.
+Cmdlet **Get-AzVMUsage** mendapatkan penggunaan hitungan inti mesin virtual untuk lokasi.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan penggunaan jumlah inti untuk suatu lokasi
+### Contoh 1: Dapatkan penggunaan hitungan inti untuk lokasi
 ```
 PS C:\> Get-AzVMUsage -Location "Central US"
 ```
 
-Perintah ini akan menggunakan jumlah inti mesin virtual untuk lokasi AS Pusat.
+Perintah ini mendapatkan penggunaan hitungan inti mesin virtual untuk lokasi As Tengah.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -54,7 +54,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi di mana cmdlet ini mendapatkan penggunaan jumlah inti mesin virtual.
+Menentukan lokasi di mana cmdlet ini mendapatkan penggunaan hitungan inti mesin virtual.
 
 ```yaml
 Type: String
@@ -69,11 +69,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
@@ -84,6 +84,6 @@ Cmdlet ini tidak menerima input apa pun.
 
 ## RELATED LINKS
 
-[Get-azvm](./Get-AzVM.md)
+[Get-AzVM](./Get-AzVM.md)
 
 

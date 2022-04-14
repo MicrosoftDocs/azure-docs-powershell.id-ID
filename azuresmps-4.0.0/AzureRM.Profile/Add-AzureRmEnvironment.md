@@ -2,17 +2,17 @@
 external help file: Microsoft.Azure.Commands.Profile.dll-Help.xml
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 7c0c182fad75e41a231af130bddf6b8b6c1db8d679b095f3b55433e5de927134
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: d2ce5bc54f086d2e0da04485e5328e3e2bb8b5f5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417643"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141879512"
 ---
 # Add-AzureRmEnvironment
 
 ## SYNOPSIS
-Menambahkan titik akhir dan metadata untuk contoh Manajer Sumber Daya Azure.
+Menambahkan titik akhir dan metadata untuk instans Azure Resource Manager.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -31,7 +31,7 @@ Add-AzureRmEnvironment [-Name] <String> [[-PublishSettingsFileUrl] <String>] [[-
 ```
 
 ## DESCRIPTION
-Cmdlet Add-AzureRmEnvironment menambahkan titik akhir dan metadata untuk mengaktifkan cmdlet Azure Resource Manager agar tersambung dengan contoh baru Azure Resource Manager.
+Cmdlet Add-AzureRmEnvironment menambahkan titik akhir dan metadata untuk memungkinkan cmdlet Azure Resource Manager terhubung dengan instans baru Azure Resource Manager.
 Lingkungan bawaan AzureCloud dan AzureChinaCloud menargetkan instans publik Azure Resource Manager yang sudah ada.
 
 ## EXAMPLES
@@ -90,12 +90,12 @@ AzureDataLakeAnalyticsCatalogAndJobEndpointSuffix :
 AzureKeyVaultServiceEndpointResourceId            :
 ```
 
-Dalam contoh ini, kami membuat lingkungan Azure baru dengan titik akhir sampel menggunakan Add-AzureRmEnvironment, lalu kami mengubah nilai atribut ActiveDirectoryEndpoint dan GraphEndpoint dari lingkungan yang dibuat menggunakan cmdlet Set-AzureRmEnvironment.
+Dalam contoh ini, kami membuat lingkungan Azure baru dengan titik akhir sampel menggunakan Add-AzureRmEnvironment, lalu kami mengubah nilai atribut ActiveDirectoryEndpoint dan GraphEndpoint lingkungan yang dibuat menggunakan cmdlet Set-AzureRmEnvironment.
 
 ## PARAMETERS
 
 ### -ActiveDirectoryEndpoint
-Menentukan otoritas dasar untuk autentikasi Azure Active Directory baru.
+Menentukan otoritas dasar untuk autentikasi Azure Active Directory.
 
 ```yaml
 Type: String
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -ActiveDirectoryServiceEndpointResourceId
-Menentukan audiens untuk token yang mengautentikasi permintaan ke titik akhir Azure Resource Manager atau Service Management (RDFE).
+Menentukan audiens untuk token yang mengautentikasi permintaan ke titik akhir Azure Resource Manager atau Manajemen Layanan (RDFE).
 
 ```yaml
 Type: String
@@ -139,8 +139,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -AzureDataLakeAnalyticsCatalogAndJobEndpointIrufix
-Akhiran Dns pekerjaan Analitik Danau Data Azure dan layanan katalog
+### -AzureDataLakeAnalyticsCatalogAndJobEndpointSuffix
+Akhiran Dns azure Data Lake Analytics pekerjaan dan layanan katalog
 
 ```yaml
 Type: String
@@ -154,7 +154,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -AzureDataLakeStoreFileSystemEndpointSystemfix
+### -AzureDataLakeStoreFileSystemEndpointSuffix
 Akhiran Dns Azure Data Lake Store FileSystem.
 Contoh: azuredatalake.net
 
@@ -170,7 +170,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -AzureKeyVaultDnsFix
+### -AzureKeyVaultDnsSuffix
 Menentukan akhiran nama domain untuk layanan Key Vault.
 
 ```yaml
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableAdfsAuthentication
-Menunjukkan bahwa Active Directory Federation Services (ADFS) autentikasi lokal diperbolehkan.
+Menunjukkan bahwa autentikasi lokal Active Directory Federation Services (ADFS) diperbolehkan.
 
 ```yaml
 Type: SwitchParameter
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -GalleryEndpoint
-Menentukan titik akhir untuk galeri templat penyebaran Azure Resource Manager.
+Menentukan titik akhir untuk galeri azure Resource Manager templat penyebaran.
 
 ```yaml
 Type: String
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -GraphAudience
-Audiens untuk token yang mengotentikasi dengan AD Graph Titik Akhir.
+Audiens untuk token yang diautentikasi dengan Titik Akhir ad Graph.
 
 ```yaml
 Type: String
@@ -276,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama lingkungan untuk ditambahkan.
+Menentukan nama lingkungan yang akan ditambahkan.
 
 ```yaml
 Type: String
@@ -306,7 +306,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceManagerEndpoint
-Menentukan URL untuk permintaan Azure Resource Manager.
+Menentukan URL untuk permintaan Resource Manager Azure.
 
 ```yaml
 Type: String
@@ -321,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceEndpoint
-Menentukan titik akhir untuk permintaan Manajemen Layanan (RDFE, Service Management).
+Menentukan titik akhir untuk permintaan Manajemen Layanan (RDFE).
 
 ```yaml
 Type: String
@@ -335,8 +335,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -SqlDatabaseDnsFix
-Menentukan akhiran nama domain untuk Azure SQL Database baru.
+### -SqlDatabaseDnsSuffix
+Menentukan akhiran nama-domain untuk server Azure SQL Database.
 
 ```yaml
 Type: String
@@ -365,8 +365,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TrafficManagerDnsFix
-Menentukan akhiran nama domain untuk Azure Traffic Manager baru.
+### -TrafficManagerDnsSuffix
+Menentukan akhiran nama-domain untuk layanan Azure Traffic Manager.
 
 ```yaml
 Type: String
@@ -381,7 +381,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -396,7 +396,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -411,7 +411,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -426,7 +426,7 @@ Cmdlet ini mengembalikan rangkaian titik akhir dan metadata yang diperlukan untu
 
 [Get-AzureRMEnvironment]()
 
-[Remove-AzureRMEnvironment]()
+[Hapus-AzureRMEnvironment]()
 
 [Set-AzureRMEnvironment]()
 

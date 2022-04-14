@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzBastion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzBastion.md
 ms.openlocfilehash: 727041a41715a603761899689a22a4504063d4f4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140330621"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141953389"
 ---
 # New-AzBastion
 
 ## SYNOPSIS
-Membuat sumber daya sdm.
+Membuat sumber daya bastion.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azbastion) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azbastion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -88,7 +88,7 @@ New-AzBastion -ResourceGroupName <String> -Name <String> -PublicIpAddressRgName 
 ```
 
 ## DESCRIPTION
-Membuat sumber daya sdm. Ini akan membutuhkan Alamat Ip Publik dan VirtualNetwork. Harus ada subnet dengan nama AzureBastionSubnet di VirtualNetwork ini.Alamat Ip Pubic harus dibuat dengan Sku Standard.
+Membuat sumber daya bastion. Ini akan memerlukan Alamat Ip Publik dan VirtualNetwork. Harus ada subnet dengan nama AzureBastionSubnet dalam VirtualNetwork ini.Alamat Ip Pubik harus dibuat dengan Standar Sku.
 
 ## EXAMPLES
 
@@ -222,7 +222,7 @@ This example creates a BastionHost resource with Standard Sku and 3 Scale Units.
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama sumber daya eufesi.
+Nama sumber daya bastion.
 
 ```yaml
 Type: System.String
@@ -267,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddress
-Objek alamat IP publik untuk tujuan tertentu.
+Objek alamat IP publik untuk bastion.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSPublicIpAddress
@@ -282,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddressId
-Id sumber daya Alamat Ip publik Azure untuk proyek.
+Alamat Ip publik Id sumber daya Azure untuk bastion.
 
 ```yaml
 Type: System.String
@@ -297,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddressName
-Nama sumber daya alamat Ip publik untuk delegasi.
+Nama sumber daya alamat Ip publik untuk bastion.
 
 ```yaml
 Type: System.String
@@ -312,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddressRgName
-Nama grup sumber daya alamat Ip publik untuk delegasi.
+Nama grup sumber daya alamat Ip publik untuk bastion.
 
 ```yaml
 Type: System.String
@@ -327,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat Anda perlu membuat grup sumber daya.
+Nama grup sumber daya tempat Anda perlu membuat bastion.
 
 ```yaml
 Type: System.String
@@ -342,7 +342,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScaleUnit
-Unit Skala untukHost
+Unit Skala untuk BastionHost
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -357,7 +357,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Tier Sku Premium
+The Bastion Sku Tier
 
 ```yaml
 Type: System.String
@@ -373,7 +373,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable yang mewakili tag sumber daya.
+Sebuah hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -388,7 +388,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetwork
-Objek jaringan virtual untuk tujuan tertentu.
+Objek jaringan virtual untuk bastion.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualNetwork
@@ -403,7 +403,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkId
-Id sumber daya Azure jaringan virtual untuk perusahaan tersebut.
+Id sumber daya Azure jaringan virtual untuk bastion.
 
 ```yaml
 Type: System.String
@@ -418,7 +418,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkName
-Nama sumber daya jaringan virtual untuk delegasi.
+Nama sumber daya jaringan virtual untuk bastion.
 
 ```yaml
 Type: System.String
@@ -433,7 +433,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkRgName
-Nama grup sumber daya jaringan virtual untuk administrator.
+Nama grup sumber daya jaringan virtual untuk bastion.
 
 ```yaml
 Type: System.String
@@ -448,7 +448,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -464,7 +464,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -479,11 +479,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

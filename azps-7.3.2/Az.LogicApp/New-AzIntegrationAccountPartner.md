@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/new-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountPartner.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountPartner.md
-ms.openlocfilehash: 656ee4584471f569cd5c31e368e3998b3a3cb799
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 723e0088eec77d9f41cdf9e607e9aa8e4f923a33
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140008534"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141937131"
 ---
 # New-AzIntegrationAccountPartner
 
 ## SYNOPSIS
 Membuat mitra akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/new-azintegrationaccountpartner) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,11 +33,11 @@ New-AzIntegrationAccountPartner -ResourceGroupName <String> -Name <String> -Part
 Cmdlet **New-AzIntegrationAccountPartner** membuat mitra akun integrasi.
 Cmdlet ini mengembalikan objek yang mewakili mitra akun integrasi.
 Tentukan nama akun integrasi, nama grup sumber daya, nama mitra, dan identitas mitra.
-Nilai file parameter templat yang Anda tentukan di baris perintah diutamakan lebih dari nilai parameter templat dalam objek parameter templat.
+Nilai file parameter templat yang Anda tentukan di baris perintah lebih diutamakan daripada nilai parameter templat dalam objek parameter templat.
 Modul ini mendukung parameter dinamis.
 Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
-Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilai tersebut.
+Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
 ## EXAMPLES
 
@@ -56,8 +59,8 @@ Perintah ini membuat mitra akun integrasi bernama IntegrationAccountPartner22 da
 
 ## PARAMETERS
 
-### -BusinessIdentities
-Menentukan identitas bisnis untuk mitra akun integrasi. Ini adalah larik bertumpuk, dengan larik dalam yang berisi Qualifier sebagai objek/string pertama dan Nilai sebagai objek/string kedua.
+### -BisnisIdentitas
+Menentukan identitas bisnis untuk mitra akun integrasi. Ini adalah array bertumpuk, dengan array dalam yang berisi Pengualifikasi sebagai objek/string pertama dan Nilai sebagai objek/string kedua.
 
 ```yaml
 Type: System.Object
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

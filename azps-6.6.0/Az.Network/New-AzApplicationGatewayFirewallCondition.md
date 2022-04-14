@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallCondition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallCondition.md
 ms.openlocfilehash: ad258427f3c2d51d54b2734d368af5092258dedb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139935241"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141953673"
 ---
 # New-AzApplicationGatewayFirewallCondition
 
@@ -18,7 +18,7 @@ ms.locfileid: "139935241"
 Membuat kondisi kecocokan untuk aturan kustom
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationgatewayfirewallcondition) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayfirewallcondition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ New-AzApplicationGatewayFirewallCondition -MatchVariable <PSApplicationGatewayFi
 PS C:\> $condition = New-AzApplicationGatewayFirewallCondition -MatchVariable $variable -Operator Contains -NegationCondition false -Transforms Lowercase, Trim -MatchValue abc, cde
 ```
 
-Perintah akan membuat kondisi kecocokan baru menggunakan variabel kecocokan yang ditentukan dalam $variable, operatornya adalah Berisi dan kondisi negasi false, Transfrom termasuk huruf kecil dan trim, nilai yang cocok adalah abc dan cde. Kondisi kecocokan baru disimpan di $condition.
+Perintah membuat kondisi kecocokan baru menggunakan variabel kecocokan yang ditentukan dalam $variable, operator berisi dan kondisi negasi salah, Transfrom termasuk huruf kecil dan pangkas, nilai kecocokan adalah abc dan cde. Kondisi kecocokan baru disimpan dalam $condition.
 
 ## PARAMETERS
 
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -MatchVariable
-Daftar variabel yang sesuai.
+Daftar variabel yang cocok.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFirewallMatchVariable[]
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -NegationCondition
-Menjelaskan jika ini meniadakan kondisi atau tidak.
+Menjelaskan apakah ini meniadakan kondisi atau tidak.
 
 ```yaml
 Type: System.Boolean
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Operator
-Menjelaskan operator yang akan cocok.
+Menjelaskan operator yang akan dicocokkan.
 
 ```yaml
 Type: System.String
@@ -118,7 +118,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Transform
+### -Transformasi
 Daftar transformasi.
 
 ```yaml
@@ -135,11 +135,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/New-AzVmssConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/New-AzVmssConfig.md
 ms.openlocfilehash: c407ce7147d3eb175fc181b76b140605e463d9a0
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424076"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141917967"
 ---
 # New-AzVmssConfig
 
@@ -61,7 +61,7 @@ New-AzVmssConfig [[-Overprovision] <Boolean>] [[-Location] <String>] [[-Tag] <Ha
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzVmssConfig** membuat objek Local Virtual Manager Scale Set (VMSS) lokal yang dapat dikonfigurasikan. Cmdlets lainnya diperlukan untuk mengonfigurasi objek VMSS. Cmdlets ini adalah:
+Cmdlet **New-AzVmssConfig** membuat objek Virtual Manager Scale Set (VMSS) lokal yang dapat dikonfigurasi. Cmdlet lain diperlukan untuk mengonfigurasi objek VMSS. Cmdlet ini adalah:
 
 - Set-AzVmssOsProfile
 - Set-AzVmssStorageProfile
@@ -84,12 +84,12 @@ PS C:\> $VMSS = New-AzVmssConfig -Location $Loc -SkuCapacity 2 -SkuName "Standar
 New-AzVmss -ResourceGroupName $RGName -Name $VMSSName -VirtualMachineScaleSet $VMSS;
 ```
 
-Contoh ini akan membuat objek konfigurasi VMSS. Perintah pertama menggunakan cmdlet **New-AzVmssConfig** untuk membuat objek konfigurasi VMSS dan menyimpan hasilnya dalam variabel yang bernama $VMSS. Perintah kedua menggunakan cmdlet **New-AzVmss** untuk membuat VMSS yang menggunakan objek konfigurasi VMSS yang dibuat dalam perintah pertama.
+Contoh ini membuat objek konfigurasi VMSS. Perintah pertama menggunakan cmdlet **New-AzVmsConfig** untuk membuat objek konfigurasi VMSS dan menyimpan hasilnya dalam variabel bernama $VMSS. Perintah kedua menggunakan cmdlet **New-AzVmss** untuk membuat VMSS yang menggunakan objek konfigurasi VMSS yang dibuat dalam perintah pertama.
 
 ## PARAMETERS
 
 ### -AssignIdentity
-Tentukan identitas yang ditetapkan sistem untuk kumpulan skala mesin virtual.
+Tentukan identitas sistem yang ditetapkan untuk kumpulan skala mesin virtual.
 
 ```yaml
 Type: SwitchParameter
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoOSUpgrade
-Mengatur apakah pemutakhiran OS akan secara otomatis diterapkan pada instans kumpulan skala dengan mode berputar ketika versi gambar yang lebih baru telah tersedia.
+Mengatur apakah peningkatan OS harus diterapkan secara otomatis ke instance kumpulan skala secara bergulir saat versi gambar yang lebih baru tersedia.
 
 ```yaml
 Type: SwitchParameter
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -BootDiagnostic
-Menentukan profil diagnostik boot yang diatur skala komputer virtual.
+Menentukan profil diagnostik boot kumpulan skala mesin virtual.
 
 ```yaml
 Type: BootDiagnostics
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -148,8 +148,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Extension
-Menentukan objek informasi ekstensi untuk VMSS. Anda bisa menggunakan cmdlet **Add-AzVmssExtension** untuk menambahkan objek ini.
+### -Ekstensi
+Menentukan objek informasi ekstensi untuk VMSS. Anda dapat menggunakan cmdlet **Add-AzVmssExtension** untuk menambahkan objek ini.
 
 ```yaml
 Type: VirtualMachineScaleSetExtension[]
@@ -164,8 +164,8 @@ Accept wildcard characters: False
 ```
 
 ### -HealthProbeId
-Menentukan ID penyeimbang muat otomatis yang digunakan untuk menentukan kesehatan instans dalam kumpulan skala mesin virtual.
-HealthProbeId berbentuk '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/loadBalancers/{loadBalancerName}/msdns/{msdnName}'.
+Menentukan ID probe load balancer yang digunakan untuk menentukan kesehatan instans dalam kumpulan skala mesin virtual.
+HealthProbeId berupa '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/loadBalancers/{loadBalancerName}/probes/{probeName}'.
 
 ```yaml
 Type: String
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 
 ### -IdentityId
 Menentukan daftar identitas pengguna yang terkait dengan kumpulan skala mesin virtual.
-Referensi identitas pengguna akan menjadi ID sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
+Referensi identitas pengguna akan berupa id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
 
 ```yaml
 Type: String[]
@@ -197,14 +197,14 @@ Accept wildcard characters: False
 
 ### -IdentityType
 Menentukan tipe identitas yang digunakan untuk kumpulan skala mesin virtual.
-Tipe 'SystemAssignedUserAssigned' menyertakan identitas yang dibuat secara implisit dan kumpulan identitas yang ditetapkan pengguna.
+Tipe 'SystemAssignedUserAssigned' mencakup identitas yang dibuat secara implisit dan sekumpulan identitas yang ditetapkan pengguna.
 Tipe 'Tidak Ada' akan menghapus identitas apa pun dari kumpulan skala mesin virtual.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - SystemAssigned
 - UserAssigned
 - SystemAssignedUserAssigned
-- Tidak ada
+- Tidak
 
 ```yaml
 Type: ResourceIdentityType
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -LicenseType
-Tentukan tipe lisensi, yang akan membuat skenario lisensi Anda sendiri.
+Tentukan tipe lisensi, yang untuk membawa skenario lisensi Anda sendiri.
 
 ```yaml
 Type: String
@@ -251,7 +251,7 @@ Accept wildcard characters: False
 
 ### -NetworkInterfaceConfiguration
 Menentukan objek profil jaringan yang berisi properti jaringan untuk konfigurasi VMSS.
-Anda bisa menggunakan cmdlet **Add-AzVmssNetworkInterfaceConfiguration** untuk menambahkan objek ini.
+Anda dapat menggunakan cmdlet **Add-AzVmssNetworkInterfaceConfiguration** untuk menambahkan objek ini.
 
 ```yaml
 Type: VirtualMachineScaleSetNetworkConfiguration[]
@@ -282,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -Overprovision
-Menunjukkan apakah cmdlet overprovisions VMSS.
+Menunjukkan apakah cmdlet melebihi provisi VMSS.
 
 ```yaml
 Type: Boolean
@@ -327,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlanPromotionCode
-Menentukan kode promosi paket.
+Menentukan kode promosi rencana.
 
 ```yaml
 Type: String
@@ -342,7 +342,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlanPublisher
-Menentukan penerbit paket.
+Menentukan penerbit rencana.
 
 ```yaml
 Type: String
@@ -372,7 +372,7 @@ Accept wildcard characters: False
 ```
 
 ### -RollingUpgradePolicy
-Menentukan kebijakan pemutakhiran berguling.
+Menentukan kebijakan pemutakhiran bergulir.
 
 ```yaml
 Type: RollingUpgradePolicy
@@ -417,7 +417,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Menentukan ukuran semua instans VMSS.
+Menentukan ukuran semua contoh VMSS.
 
 ```yaml
 Type: String
@@ -432,7 +432,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuTier
-Menentukan tingkatan VMSS. Nilai yang dapat diterima untuk parameter ini adalah:
+Menentukan tingkat VMSS. Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Standar
 - Dasar
@@ -483,7 +483,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpgradePolicyMode
-Tentukan mode pemutakhiran ke mesin virtual dalam kumpulan skala.
+Menentukan mode pemutakhiran ke mesin virtual dalam kumpulan skala.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
@@ -503,7 +503,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Zone
+### -Zona
 Menentukan daftar zona untuk kumpulan skala mesin virtual.
 
 ```yaml
@@ -519,7 +519,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -534,7 +534,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -549,11 +549,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS

@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.autom
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRmAutomationDscOnboardingMetaconfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRmAutomationDscOnboardingMetaconfig.md
-ms.openlocfilehash: 3c742bdfe2324812965b3aefde3c3aa0668ecff05ba110c89d1779c11f624f07
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 34ce74bcaf61c4d0801bfb62fe15a45469a4c149
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140863802"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141969720"
 ---
 # Get-AzureRmAutomationDscOnboardingMetaconfig
 
 ## SYNOPSIS
-Membuat file .mof konfigurasi meta.
+Membuat file .mof meta-configuration.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,28 +29,28 @@ Get-AzureRmAutomationDscOnboardingMetaconfig [-OutputFolder <String>] [-Computer
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmAutomationDscOnboardingMetaconfig** membuat file APS Desired State Configuration (DSC) meta-configuration Managed Object Format (MOF).
-Cmdlet ini akan membuat file .mof untuk setiap nama komputer yang Anda tentukan.
-Cmdlet akan membuat folder untuk file .mof.
-Anda dapat menjalankan cmdlet Set-DscLocalConfigurationManager cmdlet agar folder ini onboard komputer ini ke akun Otomatisasi Azure sebagai node DSC.
+Cmdlet **Get-AzureRmAutomationDscOnboardingMetaconfig** membuat file meta-configuration Managed Object Format (MOF) APS Desired State Configuration (DSC).
+Cmdlet ini membuat file .mof untuk setiap nama komputer yang Anda tentukan.
+Cmdlet membuat folder untuk file .mof.
+Anda bisa menjalankan cmdlet Set-DscLocalConfigurationManager agar folder ini di-onboard komputer ini ke akun Azure Automation sebagai simpul DSC.
 
 ## EXAMPLES
 
-### Contoh 1: Server onboard menjadi DSC Otomatisasi
+### Contoh 1: Server onboard ke DSC Otomatisasi
 ```
 PS C:\>Get-AzureRmAutomationDscOnboardingMetaconfig -ResourceGroupName "ResourceGroup03" -AutomationAccountName "Contoso17" -ComputerName "Server01", "Server02" -OutputFolder "C:\Users\PattiFuller\Desktop" 
 PS C:\> Set-DscLocalConfigurationManager -Path "C:\Users\PattiFuller\Desktop\DscMetaConfigs" -ComputerName "Server01", "Server02"
 ```
 
-Perintah pertama membuat file meta-configuration DSC untuk dua server untuk akun Otomatisasi yang bernama Contoso17.
+Perintah pertama membuat file konfigurasi meta DSC untuk dua server untuk akun Otomatisasi bernama Contoso17.
 Perintah menyimpan file ini di desktop.
-Perintah kedua menggunakan cmdlet **Set-DscLocalConfigurationManager** untuk menerapkan meta-configuration ke komputer yang ditentukan untuk memasangnya sebagai node DSC.
+Perintah kedua menggunakan cmdlet **Set-DscLocalConfigurationManager** untuk menerapkan meta-configuration ke komputer tertentu untuk menginterbinasikannya sebagai node DSC.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
 Menentukan nama akun Otomatisasi.
-Anda dapat melakukan onboard pada komputer *yang ditentukan parameter ComputerName* pada akun yang ditentukan oleh parameter ini.
+Anda dapat menggunakan komputer yang ditentukan parameter *ComputerName* ke akun yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -65,8 +65,8 @@ Accept wildcard characters: False
 ```
 
 ### -ComputerName
-Menentukan array nama komputer di mana cmdlet ini menghasilkan file .mof.
-Jika Anda tidak menentukan parameter ini, cmdlet akan menghasilkan file .mof untuk komputer saat ini (localhost).
+Menentukan array nama komputer yang cmdletnya menghasilkan file .mof.
+Jika Anda tidak menentukan parameter ini, cmdlet menghasilkan file .mof untuk komputer saat ini (localhost).
 
 ```yaml
 Type: System.String[]
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -95,8 +95,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi Anda, dan mengganti file .mof yang sudah ada yang memiliki nama yang sama.
+### -Paksa
+Memaksa perintah untuk dijalankan tanpa meminta konfirmasi kepada Anda, dan mengganti file .mof yang sudah ada dengan nama yang sama.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya.
-Cmdlet ini membuat file .mof ke komputer onboard dalam grup sumber daya yang ditentukan oleh parameter ini.
+Cmdlet ini membuat file .mof ke komputer onboard dalam grup sumber daya yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

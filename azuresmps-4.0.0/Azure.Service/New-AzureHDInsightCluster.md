@@ -4,11 +4,11 @@ ms.assetid: 3EDD612F-AC5D-4D4D-BB14-2FB8DE5EDCCE
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: c0675d30b153ec01aa0ba2abfacebaae624a6a9e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423218"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141880636"
 ---
 # New-AzureHDInsightCluster
 
@@ -19,7 +19,7 @@ Membuat kluster HDInsight.
 
 ## SYNTAX
 
-### Cluster By Config (with Specific Subscription Credential) (Default)
+### Cluster By Config (dengan Kredensial Langganan Tertentu) (Default)
 ```
 New-AzureHDInsightCluster [-Certificate <X509Certificate2>] [-HostedService <String>]
  -Config <AzureHDInsightConfig> -Credential <PSCredential> [-EndPoint <Uri>] [-IgnoreSslErrors <Boolean>]
@@ -41,15 +41,15 @@ New-AzureHDInsightCluster [-Certificate <X509Certificate2>] [-HostedService <Str
 ```
 
 ## DESCRIPTION
-Versi Azure PowerShell HDInsight ini sudah tidak berlaku.
-Cmdlets ini akan dihapus pada 1 Januari 2017.
-Silakan gunakan versi yang lebih baru Azure PowerShell HDInsight.
+Versi Azure PowerShell HDInsight ini sudah tidak digunakan lagi.
+Cmdlet ini akan dihapus pada 1 Januari 2017.
+Silakan gunakan versi Azure PowerShell HDInsight yang lebih baru.
 
-Untuk informasi tentang cara menggunakan HDInsight yang baru untuk membuat kluster, lihat Membuat kluster berbasis Linux di [HDInsight menggunakan Azure PowerShell](https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-create-linux-clusters-azure-powershell/) ( https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-create-linux-clusters-azure-powershell/) .
-Untuk informasi tentang cara mengirimkan pekerjaan menggunakan Azure PowerShell dan pendekatan lain, lihat Mengirimkan pekerjaan Hadoop di [HDInsight](https://azure.microsoft.com/en-us/documentation/articles/hdinsight-submit-hadoop-jobs-programmatically/) ( https://azure.microsoft.com/en-us/documentation/articles/hdinsight-submit-hadoop-jobs-programmatically/) .
-Untuk informasi referensi tentang Azure PowerShell HDInsight, [lihat Cmdlet Azure HDInsight](/powershell/module/servicemanagement/azure.service/?view=azuresmps-4.0.0#hd-insights).
+Untuk informasi tentang cara menggunakan HDInsight baru untuk membuat klaster, lihat [Membuat kluster berbasis Linux dalam HDInsight menggunakan Azure PowerShell](https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-create-linux-clusters-azure-powershell/) (https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-create-linux-clusters-azure-powershell/).
+Untuk informasi tentang cara mengirimkan pekerjaan dengan menggunakan Azure PowerShell dan pendekatan lain, lihat [Mengirimkan pekerjaan Hadoop di HDInsight](https://azure.microsoft.com/en-us/documentation/articles/hdinsight-submit-hadoop-jobs-programmatically/) (https://azure.microsoft.com/en-us/documentation/articles/hdinsight-submit-hadoop-jobs-programmatically/).
+Untuk informasi referensi tentang Azure PowerShell HDInsight, lihat [Cmdlet Azure HDInsight](/powershell/module/servicemanagement/azure.service/?view=azuresmps-4.0.0#hd-insights).
 
-Cmdlet **New-AzureHDInsightCluster** membuat kluster Azure HDInsight menggunakan parameter yang ditentukan atau menggunakan objek konfigurasi yang dibuat menggunakan cmdlet **New-AzureHDInsightClusterConfig.**
+Cmdlet **New-AzureHDInsightCluster** membuat kluster Azure HDInsight menggunakan parameter yang ditentukan atau menggunakan objek konfigurasi yang dibuat menggunakan cmdlet **New-AzureHDInsightClusterConfig** .
 
 ## EXAMPLES
 
@@ -69,25 +69,25 @@ PS C:\> New-AzureHDInsightClusterConfig -ClusterSizeInNodes 4
     | New-AzureHDInsightCluster -Subscription $SubId -Credential $Creds
 ```
 
-Contoh ini membuat kluster HDInsight untuk langganan saat ini.
+Contoh ini membuat klaster HDInsight untuk langganan saat ini.
 
-Perintah pertama menggunakan cmdlet **Get-AzureSubscription** untuk mendapatkan ID langganan saat ini, lalu menyimpannya dalam $SubId langganan.
+Perintah pertama menggunakan cmdlet **Get-AzureSubscription** untuk mendapatkan ID langganan saat ini, lalu menyimpannya dalam variabel $SubId.
 
-Perintah kedua dan ketiga menggunakan cmdlet **Get-AzureStorageKey** untuk mendapatkan kunci penyimpanan utama untuk variabel MyBlobStorage dan MySecondBlobStorage, lalu menyimpan kunci dalam variabel $Key 1 dan $Key 2.
+Perintah kedua dan ketiga menggunakan cmdlet **Get-AzureStorageKey** untuk mendapatkan kunci penyimpanan utama untuk MyBlobStorage dan MySecondBlobStorage, lalu menyimpan kunci dalam variabel $Key 1 dan $Key 2.
 
-Perintah keempat, kelima, dan keenam menggunakan cmdlet **Get-Credential** untuk mendapatkan kredensial untuk langganan saat ini, lalu untuk Oozie dan Hive, kemudian menyimpan kredensial dalam variabel.
+Perintah keempat, kelima, dan keenam menggunakan cmdlet **Get-Credential** untuk mendapatkan kredensial untuk langganan saat ini dan untuk Oozie dan Hive, lalu menyimpan kredensial dalam variabel.
 
-Perintah terakhir menjalankan urutan operasi dengan menggunakan cmdlet ini:
+Perintah akhir melakukan serangkaian operasi dengan menggunakan cmdlet ini:
 
 - **New-AzureHDInsightClusterConfig** untuk membuat konfigurasi kluster HDInsight.
-- **Set-AzureHDInsightDefaultStorage** untuk mengatur akun penyimpanan default untuk konfigurasi MyBlobStorage.blob.core.windows.net.
-- **Add-AzureHDInsightStorage** untuk menambahkan akun penyimpanan kedua MySecondBlobStorage.blob.core.windows.net ke konfigurasi.
-- **Tambahkan-AzureHDInsightMetastore** untuk menambahkan metastore untuk Oozie dan metastore untuk Hive pada konfigurasi.
-- **New-AzureHDInsightCluster** untuk membuat kluster HDInsight dengan konfigurasi baru.
+- **Set-AzureHDInsightDefaultStorage** untuk mengatur akun penyimpanan default agar konfigurasi MyBlobStorage.blob.core.windows.net.
+- **Add-AzureHDInsightStorage** untuk menambahkan akun penyimpanan kedua yang bernama MySecondBlobStorage.blob.core.windows.net ke konfigurasi.
+- **Add-AzureHDInsightMetastore** untuk menambahkan metastore untuk Oozie dan metastore untuk Hive ke konfigurasi.
+- **AzureHDInsightCluster baru** untuk membuat kluster HDInsight dengan konfigurasi baru.
 
 ## PARAMETERS
 
-### -Certificate
+### -Sertifikat
 Menentukan sertifikat manajemen untuk langganan Azure.
 
 ```yaml
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterSizeInNodes
-Menentukan jumlah node data yang akan dibuat untuk kluster.
+Menentukan jumlah node data yang akan dibuat untuk sebuah kluster.
 
 ```yaml
 Type: Int32
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -Config
-Menentukan objek konfigurasi yang dibuat menggunakan cmdlet **New-AzureHDInsightClusterConfig.**
+Menentukan objek konfigurasi yang dibuat menggunakan cmdlet **New-AzureHDInsightClusterConfig** .
 
 ```yaml
 Type: AzureHDInsightConfig
@@ -147,8 +147,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Credential
-Menentukan kredensial pengguna untuk HDInsight yang akan digunakan untuk akun default yang digunakan untuk mengakses kluster Hadoop dari jarak jauh.
+### -Kredensial
+Menentukan kredensial pengguna untuk HDInsight untuk digunakan untuk akun default yang digunakan untuk mengakses kluster Hadoop dari jarak jauh.
 Kredensial ini berbeda dari kredensial langganan pengguna.
 
 ```yaml
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultStorageContainerName
-Menentukan nama wadah default di akun penyimpanan Azure default yang digunakan kluster HDInsight.
+Menentukan nama kontainer default dalam akun penyimpanan Azure default yang digunakan kluster HDInsight.
 
 ```yaml
 Type: String
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndPoint
-Menentukan titik akhir yang akan digunakan untuk menyambungkan ke Azure.
+Menentukan titik akhir untuk digunakan untuk menyambungkan ke Azure.
 Jika Anda tidak menentukan parameter ini, cmdlet ini menggunakan titik akhir default.
 
 ```yaml
@@ -286,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan kawasan untuk membuat kluster HDInsight.
+Menentukan kawasan tempat untuk membuat kluster HDInsight.
 
 ```yaml
 Type: String
@@ -343,8 +343,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -359,7 +359,7 @@ Accept wildcard characters: False
 ```
 
 ### -RdpAccessExpiry
-Menentukan kedaluwarsa, sebagai objek **DateTime,** untuk akses Remote Desktop Protocol (RDP) ke kluster.
+Menentukan kedaluwarsa, sebagai objek **DateTime** , untuk akses Remote Desktop Protocol (RDP) ke kluster.
 
 ```yaml
 Type: DateTime
@@ -388,8 +388,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Credential
-Menentukan nama pengguna dan kata sandi Secure Shell (SHELL) untuk kluster HDInsight.
+### -SshCredential
+Menentukan nama pengguna dan kata sandi Secure Shell (SSH) untuk kluster HDInsight.
 Parameter ini hanya valid untuk kluster Linux.
 
 ```yaml
@@ -404,8 +404,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -KlikPublicKey
-Menentukan kunci publik HDInsight untuk kluster HDInsight.
+### -SshPublicKey
+Menentukan kunci publik SSH untuk kluster HDInsight.
 Parameter ini hanya valid untuk kluster Linux.
 
 ```yaml
@@ -451,7 +451,7 @@ Accept wildcard characters: False
 ```
 
 ### -Versi
-Menentukan versi kluster HDInsight yang akan dibuat.
+Menentukan versi kluster HDInsight untuk dibuat.
 
 ```yaml
 Type: String
@@ -466,7 +466,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkId
-Menentukan ID jaringan virtual untuk penyediaan kluster.
+Menentukan ID jaringan virtual tempat untuk menyediakan kluster.
 
 ```yaml
 Type: String
@@ -480,9 +480,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Penjaga BinatangNodeVMSize
-Menentukan ukuran mesin virtual untuk simpul Penjaga Binatang.
-Parameter ini hanya valid untuk kluster HBase atau Storm.
+### -ZookeeperNodeVMSize
+Menentukan ukuran mesin virtual untuk simpul ZooKeeper.
+Parameter ini hanya berlaku untuk kluster HBase atau Storm.
 
 ```yaml
 Type: String
@@ -497,7 +497,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -513,9 +513,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureHDInsightCluster](./Get-AzureHDInsightCluster.md)
 
-[New-AzureHDInsightClusterConfig](./New-AzureHDInsightClusterConfig.md)
+[Baru-AzureHDInsightClusterConfig](./New-AzureHDInsightClusterConfig.md)
 
-[Remove-AzureHDInsightCluster](./Remove-AzureHDInsightCluster.md)
+[Hapus-AzureHDInsightCluster](./Remove-AzureHDInsightCluster.md)
 
 [Set-AzureHDInsightDefaultStorage](./Set-AzureHDInsightDefaultStorage.md)
 

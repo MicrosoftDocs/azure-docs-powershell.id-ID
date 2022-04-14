@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayCustomError.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayCustomError.md
 ms.openlocfilehash: 8d1158d885c20303f00130e39c03f0774f7bdd2a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139973283"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141953691"
 ---
 # New-AzApplicationGatewayCustomError
 
@@ -18,7 +18,7 @@ ms.locfileid: "139973283"
 Membuat kesalahan kustom dengan kode status http dan url halaman kesalahan kustom 
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationgatewaycustomerror) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewaycustomerror) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,12 +38,12 @@ PS C:\> $customError403Url = "https://mycustomerrorpages.blob.core.windows.net/e
 PS C:\> $ce = New-AzApplicationGatewayCustomError -StatusCode HttpStatus403 -CustomErrorPageUrl $customError403Url
 ```
 
-Perintah ini membuat kesalahan kustom dari kode status http 403.
+Perintah ini membuat kesalahan kustom kode status http 403.
 
 ## PARAMETERS
 
 ### -CustomErrorPageUrl
-URL halaman kesalahan kesalahan aplikasi gateway kesalahan pelanggan.
+URL halaman kesalahan kesalahan pelanggan gateway aplikasi.
 
 ```yaml
 Type: System.String
@@ -88,11 +88,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/New-AzAvailabilitySet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/New-AzAvailabilitySet.md
 ms.openlocfilehash: 03e121493d8112116f5e8fc6ed492a54b67d47d0
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425028"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141918201"
 ---
 # New-AzAvailabilitySet
 
@@ -36,12 +36,12 @@ Cmdlet **New-AzAvailabilitySet** membuat kumpulan ketersediaan Azure.
 PS C:\> New-AzAvailabilitySet -ResourceGroupName "ResourceGroup11" -Name "AvailabilitySet03" -Location "West US"
 ```
 
-Perintah ini membuat kumpulan ketersediaan bernamaAblity TersediaSet03 dalam grup sumber daya bernama ResourceGroup11.
+Perintah ini membuat kumpulan ketersediaan bernama AvailablitySet03 dalam grup sumber daya bernama ResourceGroup11.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
 
 ```yaml
 Type: SwitchParameter
@@ -56,7 +56,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -85,8 +85,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Managed
-Managed Availability Set
+### -Dikelola
+Kumpulan Ketersediaan Terkelola
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
@@ -174,11 +174,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS

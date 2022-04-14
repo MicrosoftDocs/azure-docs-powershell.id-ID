@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRMSqlDatabaseGeoBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRMSqlDatabaseGeoBackup.md
 ms.openlocfilehash: f22730e39a1b53cfea8181163dd770c67dc598a7
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425104"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141880808"
 ---
 # Get-AzureRmSqlDatabaseGeoBackup
 
 ## SYNOPSIS
-Mendapatkan cadangan database yang berlebihan geo.
+Mendapatkan cadangan database yang sangat berlebihan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,9 +28,9 @@ Get-AzureRmSqlDatabaseGeoBackup [-ServerName] <String> [[-DatabaseName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRMSqlDatabaseGeoBackup** mendapatkan cadangan geo-redundan tertentu dari database SQL atau semua cadangan geo-redundan yang tersedia pada server yang ditentukan.
-Cadangan geo-berlebihan adalah sumber daya yang dapat dikembalikan menggunakan file data dari lokasi geografis yang terpisah.
-Anda bisa Geo-Restore untuk memulihkan cadangan geo berulang jika terjadi pemadaman listrik regional untuk memulihkan database ke kawasan baru.
+Cmdlet **Get-AzureRMSqlDatabaseGeoBackup** mendapatkan cadangan geo-redundan tertentu dari database SQL atau semua cadangan geo-redundan yang tersedia di server tertentu.
+Cadangan geo-redundan adalah sumber daya yang dapat dipusingkan menggunakan file data dari lokasi geografis terpisah.
+Anda bisa menggunakan Geo-Restore untuk memulihkan cadangan geo-redundan jika terjadi pemadaman kawasan untuk memulihkan database Anda ke kawasan baru.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
 ## EXAMPLES
@@ -40,9 +40,9 @@ Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 PS C:\>Get-AzureRMSqlDatabaseGeoBackup -ResourceGroupName "ContosoResourceGroup" -ServerName "ContosoServer"
 ```
 
-Perintah ini mendapatkan semua cadangan geo-redundan yang tersedia pada server tertentu.
+Perintah ini mendapatkan semua cadangan geo-redundan yang tersedia di server tertentu.
 
-### Contoh 2: Mendapatkan cadangan geo-redundan tertentu
+### Contoh 2: Dapatkan cadangan geo-redundan tertentu
 ```
 PS C:\>Get-AzureRMSqlDatabaseGeoBackup -ResourceGroupName "ContosoResourceGroup" -ServerName "ContosoServer" -DatabaseName "ContosoDatabase"
 ```
@@ -52,7 +52,7 @@ Perintah ini mendapatkan cadangan geo-redundan database bernama ContosoDatabase.
 ## PARAMETERS
 
 ### -DatabaseName
-Menentukan nama database yang akan dapatkan.
+Menentukan nama database yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat server database SQL akan ditetapkan.
+Menentukan nama grup sumber daya tempat server database SQL ditetapkan.
 
 ```yaml
 Type: System.String
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -157,10 +157,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Gambaran umum: Keberlangsungan bisnis awan dan pemulihan bencana database dengan SQL Database](https://go.microsoft.com/fwlink/?LinkId=746881)
+[Gambaran Umum: Kelangsungan bisnis cloud dan pemulihan bencana database dengan SQL Database](https://go.microsoft.com/fwlink/?LinkId=746881)
 
 [Memulihkan Azure SQL Database dari pemadaman](https://go.microsoft.com/fwlink/?LinkId=746882)
 
-[Restore-AzureRmSqlDatabase](./Restore-AzureRmSqlDatabase.md)
+[Pulihkan-AzureRmSqlDatabase](./Restore-AzureRmSqlDatabase.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

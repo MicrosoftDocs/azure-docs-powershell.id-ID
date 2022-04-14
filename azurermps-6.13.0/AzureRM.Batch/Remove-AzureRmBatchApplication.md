@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Remove-AzureRmBatchApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Remove-AzureRmBatchApplication.md
 ms.openlocfilehash: 61288340bb2b9acb2bd47388d8f776d5c732b6f3
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428443"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141969118"
 ---
 # Remove-AzureRmBatchApplication
 
 ## SYNOPSIS
-Menghapus aplikasi dari akun Kumpulan.
+Menghapus aplikasi dari akun Batch.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -32,18 +32,18 @@ Cmdlet **Remove-AzureRmBatchApplication** menghapus aplikasi dari akun Azure Bat
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus aplikasi dari akun Kumpulan
+### Contoh 1: Menghapus aplikasi dari akun Batch
 ```
 PS C:\>Remove-AzureRmBatchApplication -AccountName "ContosoBatch" -ResourceGroupName "ContosoBatchGroup" -ApplicationId "Litware"
 ```
 
-Perintah ini akan menghapus aplikasi Litware dari akun ContosoBatch.
+Perintah ini menghapus aplikasi Litware dari akun ContosoBatch.
 Perintah gagal jika aplikasi berisi paket apa pun.
 
 ## PARAMETERS
 
-### -Nama Akun
-Menentukan nama akun Kumpulan yang akan dihapus cmdlet ini.
+### -AccountName
+Menentukan nama akun Batch tempat cmdlet ini menghapus aplikasi.
 
 ```yaml
 Type: System.String
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi akun Kumpulan.
+Menentukan nama grup sumber daya yang berisi akun Batch.
 
 ```yaml
 Type: System.String
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -121,12 +121,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmBatchApplicationPackage](./Get-AzureRmBatchApplicationPackage.md)
 
-[New-AzureRmBatchApplication](./New-AzureRmBatchApplication.md)
+[AzureRmBatchApplication baru](./New-AzureRmBatchApplication.md)
 
 [New-AzureRmBatchApplicationPackage](./New-AzureRmBatchApplicationPackage.md)
 
 [Remove-AzureRmBatchApplicationPackage](./Remove-AzureRmBatchApplicationPackage.md)
 
-[Set-AzureRmBatchApplication](./Set-AzureRmBatchApplication.md)
+[Atur-AzureRmBatchAplikasi](./Set-AzureRmBatchApplication.md)
 
 

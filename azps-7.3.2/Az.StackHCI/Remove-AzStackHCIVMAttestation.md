@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Remove-AzStackHCIVMAttestation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Remove-AzStackHCIVMAttestation.md
-ms.openlocfilehash: e14e3ec90f147ecd871131d04096d7548e7d5cbf
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5fea39a59c99205ba6bc476bac017a874b01334c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140400330"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141932667"
 ---
 # Remove-AzStackHCIVMAttestation
 
 ## SYNOPSIS
 Remove-AzStackHCIVMAttestation menghapus tamu dari AzureStack HCI IMDS Attestation.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.stackhci/remove-azstackhcivmattestation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Remove-AzStackHCIVMAttestation [-VMName] <String[]> [-Force] [-WhatIf] [-Confirm
 Remove-AzStackHCIVMAttestation [-VM] <Object[]> [-Force] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RemoveAll
+### Hapus Semua
 ```
 Remove-AzStackHCIVMAttestation [-RemoveAll] [-Force] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -51,11 +54,11 @@ Menghapus semua tamu pada simpul saat ini
 Invoke-Command -ScriptBlock {Remove-AzStackHCIVMAttestation -VMName "guest1", "guest2"} -ComputerName "node1"
 ```
 
-Melakukan invoking dari node manajemen/WAC
+Memanggil dari simpul manajemen/WAC
 
 ## PARAMETERS
 
-### -Force
+### -Paksa
 Tidak ada konfirmasi.
 
 ```yaml
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemoveAll
-Menentukan sakelar yang akan menghapus semua VM tamu dari Attestation di node saat ini
+Menentukan sakelar yang akan menghapus semua VM tamu dari Pengesahan pada simpul saat ini
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan larik objek VM dari Get-VM.
+Menentukan array objek VM dari Get-VM.
 
 ```yaml
 Type: System.Object[]
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

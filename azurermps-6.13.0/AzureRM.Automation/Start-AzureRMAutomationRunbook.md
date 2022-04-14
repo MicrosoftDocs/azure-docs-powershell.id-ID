@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Start-AzureRMAutomationRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Start-AzureRMAutomationRunbook.md
 ms.openlocfilehash: 46544d42cb28f5fca046586696b95286cdd7f3ab
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426660"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141969233"
 ---
 # Start-AzureRmAutomationRunbook
 
@@ -47,17 +47,17 @@ Tentukan ID atau nama runbook.
 PS C:\>Start-AzureRmAutomationRunbook -AutomationAccountName "Contoso17" -Name "Runbk01" -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini memulai pekerjaan runbook untuk runbook yang bernama Runbk01 dalam akun Otomatisasi Azure yang bernama Contoso17.
+Perintah ini memulai pekerjaan runbook untuk runbook bernama Runbk01 di akun Azure Automation bernama Contoso17.
 
-### Contoh 2: Mulai pekerjaan runbook dan tunggu hasil
+### Contoh 2: Memulai pekerjaan runbook dan menunggu hasil
 ```
 Start-AzureRmAutomationRunbook -AutomationAccountName "Contoso17" -Name "Runbk01" -ResourceGroupName "ResourceGroup01" -MaxWaitSeconds 1000 -Wait
 ```
 
-Perintah ini memulai pekerjaan runbook untuk runbook yang bernama Runbk01 dalam akun Otomatisasi Azure yang bernama Contoso17.
-Perintah ini menentukan _parameter_ Tunggu.
-Oleh karena itu, fungsi ini mengembalikan hasil setelah pekerjaan selesai.
-Cmdlet menunggu hingga 1000 detik untuk hasil.
+Perintah ini memulai pekerjaan runbook untuk runbook bernama Runbk01 di akun Azure Automation bernama Contoso17.
+Perintah ini menentukan parameter _Tunggu_ .
+Oleh karena itu, mengembalikan hasil setelah pekerjaan selesai.
+Cmdlet menunggu hingga 1000 detik untuk hasilnya.
 
 ## PARAMETERS
 
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -90,8 +90,8 @@ Accept wildcard characters: False
 ```
 
 ### -MaxWaitSeconds
-Menentukan jumlah detik cmdlet ini menunggu pekerjaan selesai sebelum mengabaikan pekerjaan.
-Nilai default adalah 10800, atau tiga jam.
+Menentukan jumlah detik cmdlet ini menunggu pekerjaan selesai sebelum meninggalkan pekerjaan.
+Nilai defaultnya adalah 10800, atau tiga jam.
 
 ```yaml
 Type: System.Int32
@@ -118,7 +118,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Parameter
+### -Parameters
 ```yaml
 Type: System.Collections.IDictionary
 Parameter Sets: (All)
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunOn
-Menentukan Grup Pekerja Hibrid mana yang akan menjalankan buku runbook.
+Menentukan Grup Pekerja Hibrid mana yang menjalankan runbook.
 
 ```yaml
 Type: System.String
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tunggu
-Menunjukkan bahwa cmdlet ini menunggu pekerjaan selesai, ditangguhkan, atau gagal, lalu mengembalikan kontrol untuk Azure PowerShell.
+Menunjukkan bahwa cmdlet ini menunggu pekerjaan selesai, ditangguhkan, atau gagal, lalu mengembalikan kontrol ke Azure PowerShell.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -184,10 +184,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Automation.Model.Job
--Cmdlet ini mengembalikan **objek** Job, kecuali jika Anda _menentukan_ parameter Wait.
--Jika Anda tidak menentukan _Tunggu_, Azure PowerShell akan segera **mengembalikan objek** Pekerjaan.
--Jika Anda _menentukan_ Tunggu , Azure PowerShell menyelesaikan pekerjaan, lalu mengembalikan hasilnya.
--Hasilnya bukan **objek** Pekerjaan.
+-Cmdlet ini mengembalikan objek **Job** , kecuali anda menentukan parameter _Wait_ .
+-Jika Anda tidak menentukan _Tunggu_, Azure PowerShell segera mengembalikan objek **Job**.
+-If you specify _Wait_, Azure PowerShell completes the job, and then returns the result.
+-Hasilnya bukan objek **Job** .
 
 ### System.Management.Automation.PSObject
 
@@ -195,18 +195,18 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Export-AzureRmAutomationRunbook](./Export-AzureRMAutomationRunbook.md)
+[Ekspor-AzureRmAutomationRunbook](./Export-AzureRMAutomationRunbook.md)
 
 [Get-AzureRmAutomationRunbook](./Get-AzureRMAutomationRunbook.md)
 
-[Import-AzureRmAutomationRunbook](./Import-AzureRMAutomationRunbook.md)
+[Impor-AzureRmAutomationRunbook](./Import-AzureRMAutomationRunbook.md)
 
-[New-AzureRmAutomationRunbook](./New-AzureRMAutomationRunbook.md)
+[AzureRmAutomationRunbook baru](./New-AzureRMAutomationRunbook.md)
 
-[New-AzureRmAutomationRunbook](./New-AzureRMAutomationRunbook.md)
+[AzureRmAutomationRunbook baru](./New-AzureRMAutomationRunbook.md)
 
 [Publish-AzureRmAutomationRunbook](./Publish-AzureRMAutomationRunbook.md)
 
-[Remove-AzureRmAutomationRunbook](./Remove-AzureRMAutomationRunbook.md)
+[Hapus-AzureRmAutomationRunbook](./Remove-AzureRMAutomationRunbook.md)
 
 [Set-AzureRmAutomationRunbook](./Set-AzureRMAutomationRunbook.md)

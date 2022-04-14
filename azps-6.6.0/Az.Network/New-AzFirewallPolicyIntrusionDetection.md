@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicyIntrusionDetection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicyIntrusionDetection.md
 ms.openlocfilehash: 0998a9bfc00c10ae462f11d76c7c0bd79c750419
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139972905"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141953277"
 ---
 # New-AzFirewallPolicyIntrusionDetection
 
 ## SYNOPSIS
-Membuat Pendeteksian Kebijakan Azure Firewall baru untuk dikaitkan dengan Kebijakan Firewall
+Membuat Deteksi Penyusupan Kebijakan Azure Firewall baru untuk dikaitkan dengan Kebijakan Firewall
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azfirewallpolicyintrusiondetection) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewallpolicyintrusiondetection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,38 +30,38 @@ New-AzFirewallPolicyIntrusionDetection -Mode <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzFirewallPolicyIntrusionDetection** membuat Objek Deteksi Intrusi Kebijakan Firewall Azure.
+Cmdlet **New-AzFirewallPolicyIntrusionDetection** menciptakan Objek Deteksi Intrusi Kebijakan Azure Firewall.
 
 ## EXAMPLES
 
-### Contoh 1: 1. Membuat deteksi penyusup dengan mode
+### Contoh 1: 1. Membuat deteksi intrusi dengan mode
 ```powershell
 PS C:\> New-AzFirewallPolicyIntrusionDetection -Mode "Alert"
 ```
 
-Contoh ini membuat deteksi penyusup dengan mode Peringatan (deteksi)
+Contoh ini membuat deteksi intrusi dengan mode Peringatan (deteksi)
 
-### Contoh 2: 2. Membuat deteksi penyusup dengan penggantian tanda tangan
+### Contoh 2: 2. Membuat deteksi intrusi dengan penimpaan tanda tangan
 ```powershell
 PS C:\> $signatureOverride = New-AzFirewallPolicyIntrusionDetectionSignatureOverride -Id "123456798" -Mode "Deny"
 PS C:\> New-AzFirewallPolicyIntrusionDetection -Mode "Alert" -SignatureOverride $signatureOverride
 ```
 
-Contoh ini membuat deteksi penyusup dengan penggantian tanda tangan tertentu
+Contoh ini membuat deteksi intrusi dengan penimpaan tanda tangan tertentu
 
-### Contoh 3: 3. Membuat kebijakan firewall dengan deteksi penyusup yang dikonfigurasi dengan melewati pengaturan lalu lintas
+### Contoh 3: 3. Membuat kebijakan firewall dengan deteksi intrusi yang dikonfigurasi dengan pengaturan lalu lintas bypass
 ```powershell
 PS C:\> $bypass = New-AzFirewallPolicyIntrusionDetectionBypassTraffic -Name "bypass-setting" -Protocol "TCP" -DestinationPort "80" -SourceAddress "10.0.0.0" -DestinationAddress "10.0.0.0"
 PS C:\> $intrusionDetection = New-AzFirewallPolicyIntrusionDetection -Mode "Deny" -BypassTraffic $bypass
 PS C:\> New-AzFirewallPolicy -Name fp1 -Location "westus2" -ResourceGroup TestRg -SkuTier "Premium" -IntrusionDetection $intrusionDetection
 ```
 
-Contoh ini membuat deteksi penyusup dengan melewati pengaturan lalu lintas
+Contoh ini membuat deteksi gangguan dengan melewati pengaturan lalu lintas
 
 ## PARAMETERS
 
 ### -BypassTraffic
-Daftar aturan untuk lalu lintas yang harus dilewati.
+Daftar aturan lalu lintas yang akan dilewati.
 
 ```yaml
 Type: PSAzureFirewallPolicyIntrusionDetectionBypassTrafficSetting[]
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -Mode
-Kondisi umum Deteksi Penyusup.
+Deteksi Intrusi keadaan umum.
 
 ```yaml
 Type: String
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -SignatureOverride
-Daftar negara bagian tanda tangan tertentu.
+Daftar status tanda tangan tertentu.
 
 ```yaml
 Type: PSAzureFirewallPolicyIntrusionDetectionSignatureOverride[]
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -153,11 +153,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

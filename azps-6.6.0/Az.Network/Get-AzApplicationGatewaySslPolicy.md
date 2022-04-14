@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewaySslPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewaySslPolicy.md
 ms.openlocfilehash: 16749bbd4634334c0cf0be1eaec904ba48cc1bb0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140104481"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141954285"
 ---
 # Get-AzApplicationGatewaySslPolicy
 
@@ -19,7 +19,7 @@ ms.locfileid: "140104481"
 Mendapatkan kebijakan SSL gateway aplikasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azapplicationgatewaysslpolicy) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewaysslpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,13 +39,13 @@ PS C:\>$AppGW = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceG
 PS C:\> $sslpolicy = Get-AzApplicationGatewaySslPolicy -ApplicationGateway $AppGW
 ```
 
-Perintah pertama mendapatkan Gateway Aplikasi bernama ApplicationGateway01 dan menyimpan hasilnya dalam variabel yang bernama $AppGW.
-Perintah kedua mendapatkan kebijakan ssl dari Gateway Aplikasi yang disimpan di variabel yang bernama $AppGW.
+Perintah pertama mendapatkan Application Gateway bernama ApplicationGateway01 dan menyimpan hasilnya dalam variabel bernama $AppGW.
+Perintah kedua mendapatkan kebijakan ssl dari Application Gateway yang disimpan dalam variabel bernama $AppGW.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan gateway aplikasi dari kebijakan SSL yang akan dapatkan cmdlet ini.
+Menentukan gateway aplikasi dari kebijakan SSL yang didapatkan cmdlet ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -86,7 +86,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewaySslPolicy
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, network, networking
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan
 
 ## RELATED LINKS
 

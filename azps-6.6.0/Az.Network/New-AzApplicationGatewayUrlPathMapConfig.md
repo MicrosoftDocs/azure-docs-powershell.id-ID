@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayUrlPathMapConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayUrlPathMapConfig.md
 ms.openlocfilehash: b22aab725dcddff0b9449887b88a4e4856164be6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140070551"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142047323"
 ---
 # New-AzApplicationGatewayUrlPathMapConfig
 
 ## SYNOPSIS
-Membuat array pemetaan jalur URL ke pool server backend.
+Membuat array pemetaan jalur URL ke kumpulan server backend.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationgatewayurlpathmapconfig) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayurlpathmapconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,21 +55,21 @@ New-AzApplicationGatewayUrlPathMapConfig -Name <String> -PathRules <PSApplicatio
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApplicationGatewayUrlPathMapConfig** membuat array pemetaan jalur URL ke pool server backend.
+Cmdlet **New-AzApplicationGatewayUrlPathMapConfig** membuat array pemetaan jalur URL ke kumpulan server backend.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat array pemetaan jalur URL ke sebuah pool server backend
+### Contoh 1: Membuat array pemetaan jalur URL ke kumpulan server backend
 ```
 PS C:\>New-AzApplicationGatewayUrlPathMapConfig -Name $UrlPathMapName -PathRules $VideoPathRule, $ImagePathRule -DefaultBackendAddressPool $Pool -DefaultBackendHttpSettings $PoolSetting02
 ```
 
-Perintah ini membuat array pemetaan jalur URL ke sebuah pool server backend.
+Perintah ini membuat array pemetaan jalur URL ke kumpulan server backend.
 
 ## PARAMETERS
 
 ### -DefaultBackendAddressPool
-Menentukan pool alamat backend default untuk dirutekan kalau tidak ada aturan yang ditentukan *dalam parameter pathRules* cocok.
+Menentukan kumpulan alamat backend default untuk merutekan jika tidak ada aturan yang ditentukan dalam parameter *pathRules* yang cocok.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayBackendAddressPool
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultBackendAddressPoolId
-Menentukan ID pool alamat backend default.
+Menentukan ID kumpulan alamat backend default.
 
 ```yaml
 Type: System.String
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultBackendHttpSettings
-Menentukan pengaturan backend HTTP default yang digunakan dalam kasus tidak ada aturan yang ditentukan dalam *parameter pathRules* cocok.
+Menentukan pengaturan HTTP backend default untuk digunakan jika tidak ada aturan yang ditentukan dalam parameter *pathRules* yang cocok.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayBackendHttpSettings
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultBackendHttpSettingsId
-Menentukan ID pengaturan backend HTTP default.
+Menentukan ID pengaturan HTTP backend default.
 
 ```yaml
 Type: System.String
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultRedirectConfiguration
-RedirectConfiguration default gateway aplikasi
+Konfigurasi Ulang default gateway aplikasi
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayRedirectConfiguration
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultRedirectConfigurationId
-ID gateway aplikasi default RedirectConfiguration
+ID konfigurasi ulang default gateway aplikasi
 
 ```yaml
 Type: System.String
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultRewriteRuleSetId
-ID kumpulan aturan default penulisan ulang gateway aplikasi
+ID kumpulan aturan penulisan ulang default gateway aplikasi
 
 ```yaml
 Type: System.String
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 
 ### -PathRules
 Menentukan daftar aturan jalur.
-Perhatikan bahwa aturan jalur sensitif urutan, aturan akan diterapkan sesuai urutan yang ditentukan.
+Perhatikan bahwa aturan jalur bersifat peka urutan, aturan tersebut diterapkan sesuai urutan yang ditentukan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayPathRule[]
@@ -235,11 +235,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

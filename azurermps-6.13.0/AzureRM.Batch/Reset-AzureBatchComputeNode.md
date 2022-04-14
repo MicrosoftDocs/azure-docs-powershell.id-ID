@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Reset-AzureBatchComputeNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Reset-AzureBatchComputeNode.md
 ms.openlocfilehash: 998d559265aaa590cb62f72c9e6b9ec9dc5914df
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420712"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141969126"
 ---
 # Reset-AzureBatchComputeNode
 
 ## SYNOPSIS
-Menginstal ulang sistem operasi pada node perhitungan yang ditentukan.
+Menginstal ulang sistem operasi pada simpul komputasi yang ditentukan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -35,30 +35,30 @@ Reset-AzureBatchComputeNode [[-ComputeNode] <PSComputeNode>] [-ReimageOption <Co
 ```
 
 ## DESCRIPTION
-Cmdlet **Reset-AzureBatchComputeNode** menginstal ulang sistem operasi pada node perhitungan yang ditentukan.
+Cmdlet **Reset-AzureBatchComputeNode** menginstal ulang sistem operasi pada simpul komputasi yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Mengganti simpul
+### Contoh 1: Reimage a node
 ```
 PS C:\>Reset-AzureBatchComputeNode -PoolId "MyPool" -Id "tvm-3257026573_2-20150813t200938z" -BatchContext $Context
 ```
 
-Perintah ini akan mengulangi node perhitungan dengan ID "tvm-3257026573_2-20150813t200938z" di pool bernama MyPool.
-Gunakan cmdlet Get-AzureRmBatchAccountKeys cmdlet untuk menetapkan konteks ke variabel $Context tersebut.
+Perintah ini mereimage simpul komputasi dengan ID "tvm-3257026573_2-20150813t200938z" di kolam renang bernama MyPool.
+Gunakan cmdlet Get-AzureRmBatchAccountKeys untuk menetapkan konteks ke variabel $Context.
 
-### Contoh 2: Mengganti semua simpul dalam sebuah pool
+### Contoh 2: Reimage all node in a pool
 ```
 PS C:\>Get-AzureBatchComputeNode -PoolId "MyPool" -BatchContext $Context | Reset-AzureBatchComputeNode -BatchContext $Context
 ```
 
-Perintah ini akan mengulangi setiap node perhitungan dalam pool yang bernama MyPool.
+Perintah ini mereimensikan setiap node komputasi di kolam bernama MyPool.
 
 ## PARAMETERS
 
 ### -BatchContext
-Menentukan contoh **BatchAccountContext** yang digunakan cmdlet untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeNode
-Menentukan objek **PSComputeNode** yang mewakili node perhitungan untuk mengganti.
+Menentukan objek **PSComputeNode** yang mewakili node komputasi untuk direimage.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSComputeNode
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID node hitung untuk mengganti.
+Menentukan ID simpul komputasi untuk direimage.
 
 ```yaml
 Type: System.String
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolId
-Menentukan ID pool yang berisi node perhitungan.
+Menentukan ID kumpulan yang berisi simpul komputasi.
 
 ```yaml
 Type: System.String
@@ -133,8 +133,8 @@ Accept wildcard characters: False
 ```
 
 ### -ReimageOption
-Menentukan kapan mengganti simpul dan apa yang harus dilakukan dengan tugas yang sedang berjalan.
-Defaultnya adalah Requeue.
+Menentukan waktu untuk mengolah ulang simpul dan apa yang harus dilakukan dengan tugas yang sedang berjalan saat ini.
+Defaultnya adalah Antrean Ulang.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Batch.Common.ComputeNodeReimageOption]
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -170,8 +170,8 @@ Parameter: BatchContext (ByValue)
 
 [Get-AzureBatchComputeNode](./Get-AzureBatchComputeNode.md)
 
-[Mulai Ulang-AzureBatchComputeNode](./Restart-AzureBatchComputeNode.md)
+[Mulai ulang-AzureBatchComputeNode](./Restart-AzureBatchComputeNode.md)
 
-[Cmdlet Kumpulan Azure](./AzureRM.Batch.md)
+[Cmdlet Azure Batch](./AzureRM.Batch.md)
 
 

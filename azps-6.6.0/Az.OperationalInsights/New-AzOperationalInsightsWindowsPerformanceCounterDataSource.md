@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsWindowsPerformanceCounterDataSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsWindowsPerformanceCounterDataSource.md
 ms.openlocfilehash: 07d7397ca0ad126b20d3f467be69bf017515d64f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140463290"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142045109"
 ---
 # New-AzOperationalInsightsWindowsPerformanceCounterDataSource
 
 ## SYNOPSIS
-Menambahkan Windows sumber data penghitung kinerja untuk komputer tersambung yang menjalankan Windows sistem operasi.
+Menambahkan sumber data penghitung kinerja Windows untuk komputer tersambung yang menjalankan sistem operasi Windows.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightswindowsperformancecounterdatasource) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightswindowsperformancecounterdatasource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ New-AzOperationalInsightsWindowsPerformanceCounterDataSource [-Workspace] <PSWor
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzOperationalInsightsWindowsPerformanceCounterDataSource** menambahkan sumber data Windows penghitung kinerja untuk komputer yang tersambung yang menjalankan Windows sistem operasi.
+**Cmdlet New-AzOperationalInsightsWindowsPerformanceCounterDataSource** menambahkan sumber data penghitung kinerja Windows untuk komputer tersambung yang menjalankan sistem operasi Windows.
 
 ## EXAMPLES
 
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -76,8 +76,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseLegacyCollector
-Gunakan warisan warisan atau default default.
+Gunakan kolektor warisan atau kolektor default.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ruang Kerja
-Menentukan ruang kerja tempat cmdlet beroperasi.
+Menentukan ruang kerja tempat cmdlet ini beroperasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace
@@ -196,7 +196,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Menentukan nama ruang kerja tempat cmdlet ini beroperasi.
 
 ```yaml
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -243,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

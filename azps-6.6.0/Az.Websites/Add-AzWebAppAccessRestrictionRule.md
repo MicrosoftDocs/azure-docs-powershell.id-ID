@@ -5,19 +5,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Add-AzWebAppAccessRestrictionRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Add-AzWebAppAccessRestrictionRule.md
 ms.openlocfilehash: 5f6354107cbcf677d4d1a717a4c96512fefb8726
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140128563"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141900765"
 ---
 # Add-AzWebAppAccessRestrictionRule
 
 ## SYNOPSIS
-Menambahkan aturan Restiction Access ke Azure Web App.
+Menambahkan aturan Pemulihan Akses ke Azure Web App.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/add-azwebappaccessrestrictionrule) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/add-azwebappaccessrestrictionrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,55 +54,55 @@ Add-AzWebAppAccessRestrictionRule [-ResourceGroupName] <String> [-WebAppName] <S
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzWebAppAccessRestrictionRule** menambahkan aturan Batasan Akses ke Azure Web App.
+Cmdlet **Add-AzWebAppAccessRestrictionRule** menambahkan aturan Pembatasan Akses ke Azure Web App.
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan aturan Pembatasan Akses IpAddress ke Web App
+### Contoh 1: Menambahkan aturan Pembatasan Akses IpAddress ke Aplikasi Web
 ```
 PS C:\>Add-AzWebAppAccessRestrictionRule -ResourceGroupName "Default-Web-WestUS" -WebAppName "ContosoSite" 
 -Name IpRule -Priority 200 -Action Allow -IpAddress 10.10.0.0/8
 ```
 
-Perintah ini menambahkan aturan pembatasan akses dengan prioritas 200 dan rentang ip ke Aplikasi Web bernama ContosoSite yang termasuk dalam grup sumber daya Default-Web-WestUS.
+Perintah ini menambahkan aturan pembatasan akses dengan rentang ip dan prioritas 200 ke Aplikasi Web bernama ContosoSite yang termasuk dalam grup sumber daya Default-Web-WestUS.
 
-### Contoh 2: Tambahkan aturan Pembatasan Akses Titik Akhir Layanan Subnet pada Aplikasi Web
+### Contoh 2: Menambahkan aturan Pembatasan Akses Titik Akhir Layanan Subnet ke Aplikasi Web
 ```
 PS C:\>Add-AzWebAppAccessRestrictionRule -ResourceGroupName "Default-Web-WestUS" -WebAppName "ContosoSite" 
 -Name SubnetRule -Priority 300 -Action Allow -SubnetName appgw-subnet -VirtualNetworkName corp-vnet
 ```
 
-Perintah ini menambahkan aturan pembatasan akses dengan prioritas 300 dan dengan subnet appgw-subnet dalam corp-vnet ke Aplikasi Web yang bernama ContosoSite yang termasuk dalam grup sumber daya Default-Web-WestUS.
+Perintah ini menambahkan aturan pembatasan akses dengan prioritas 300 dan subnet appgw-subnet di corp-vnet ke Web App bernama ContosoSite yang termasuk dalam grup sumber daya Default-Web-WestUS.
 
-### Contoh 3: Tambahkan aturan Pembatasan Akses ServiceTag ke Aplikasi Web
+### Contoh 3: Menambahkan aturan Pembatasan Akses ServiceTag ke Aplikasi Web
 ```
 PS C:\>Add-AzWebAppAccessRestrictionRule -ResourceGroupName "Default-Web-WestUS" -WebAppName "ContosoSite" 
 -Name ServiceTagRule -Priority 200 -Action Allow -ServiceTag AzureFrontDoor.Backend
 ```
 
-Perintah ini menambahkan aturan pembatasan akses dengan prioritas 200 dan Tag Layanan yang mewakili lingkup ip Azure Front Pintu ke Aplikasi Web bernama ContosoSite yang termasuk dalam grup sumber daya Default-Web-WestUS.
+Perintah ini menambahkan aturan pembatasan akses dengan prioritas 200 dan Tag Layanan yang mewakili lingkup ip Azure Front Door ke Aplikasi Web bernama ContosoSite yang termasuk dalam grup sumber daya Default-Web-WestUS.
 
-### Contoh 4: Tambahkan aturan Batasan Akses multi-alamat untuk Aplikasi Web
+### Contoh 4: Menambahkan aturan Pembatasan Akses multi-alamat ke Aplikasi Web
 ```
 PS C:\>Add-AzWebAppAccessRestrictionRule -ResourceGroupName "Default-Web-WestUS" -WebAppName "ContosoSite" 
 -Name MultipleIpRule -Priority 200 -Action Allow -IpAddress "10.10.0.0/8,192.168.0.0/16"
 ```
 
-Perintah ini menambahkan aturan pembatasan akses dengan prioritas 200 dan dua rentang ip ke Aplikasi Web bernama ContosoSite yang dimiliki grup sumber daya Default-Web-WestUS.
+Perintah ini menambahkan aturan pembatasan akses dengan prioritas 200 dan dua rentang ip ke Aplikasi Web bernama ContosoSite yang termasuk dalam grup sumber daya Default-Web-WestUS.
 
-### Contoh 5: Tambahkan aturan Pembatasan Akses dengan header http ke Aplikasi Web
+### Contoh 5: Menambahkan aturan Pembatasan Akses dengan header http ke Aplikasi Web
 ```
 PS C:\>Add-AzWebAppAccessRestrictionRule -ResourceGroupName "Default-Web-WestUS" -WebAppName "ContosoSite" 
 -Name MultipleIpRule -Priority 400 -Action Allow -ServiceTag AzureFrontDoor.Backend
 -HttpHeader @{'x-forwarded-host' = 'www.contoso.com', 'app.contoso.com'; 'x-azure-fdid' = '355deb06-47c4-4ba4-9641-c7d7a98b913e'}
 ```
 
-Perintah ini menambahkan aturan pembatasan akses dengan prioritas 400 untuk Tag Layanan AzureFrontDoor.Backend dan selanjutnya membatasi akses hanya ke header http dari nilai tertentu ke Aplikasi Web bernama ContosoSite yang dimiliki grup sumber daya Default-Web-WestUS.
+Perintah ini menambahkan aturan pembatasan akses dengan prioritas 400 untuk Tag Layanan AzureFrontDoor.Backend dan membatasi akses lebih lanjut hanya ke header http dari nilai tertentu ke Aplikasi Web bernama ContosoSite yang termasuk dalam grup sumber daya Default-Web-WestUS.
 
 ## PARAMETERS
 
 ### -Tindakan
-Memperbolehkan atau Menolak aturan.
+Aturan Izinkan atau Tolak.
 
 ```yaml
 Type: System.String
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -147,7 +147,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpHeader
+### -HttpHeader
 Pembatasan header http. Contoh: -HttpHeader @{'x-azure-fdid' = '7acacb02-47ea-4cd4-b568-5e880e72582e'; 'x-forwarded-host' = 'www.contoso.com', 'app.contoso.com'}
 
 ```yaml
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -IgnoreMissingServiceEndpoint
-Tentukan apakah pendaftaran Titik Akhir Layanan pada Subnet harus divalidasi.
+Tentukan apakah pendaftaran Titik Akhir Layanan di Subnet harus divalidasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpAddress
-Alamat Ip v4 atau v6 Rentang CIDR. Misalnya: 192.168.0.0/24
+Rentang Alamat Ip v4 atau v6 CIDR. Misalnya: 192.168.0.0/24
 
 ```yaml
 Type: System.String
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek konfigurasi pembatasan akses.
+Mengembalikan objek konfigurasi batasan akses.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -283,7 +283,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetId
-ResourceId dari Subnet.
+ResourceId of Subnet.
 
 ```yaml
 Type: System.String
@@ -313,7 +313,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetScmSite
-Aturan ditujukan untuk situs Utama atau situs Scm.
+Aturan ditujukan untuk Situs utama atau situs Scm.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -328,7 +328,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkName
-Nama Jaringan Virtual.
+Nama Virtual Network.
 
 ```yaml
 Type: System.String
@@ -358,7 +358,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -373,7 +373,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -388,7 +388,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

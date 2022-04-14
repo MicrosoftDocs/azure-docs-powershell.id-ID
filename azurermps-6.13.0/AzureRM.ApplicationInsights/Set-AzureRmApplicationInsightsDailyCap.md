@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApplicationInsights/Commands.ApplicationInsights/help/Set-AzureRmApplicationInsightsDailyCap.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApplicationInsights/Commands.ApplicationInsights/help/Set-AzureRmApplicationInsightsDailyCap.md
 ms.openlocfilehash: 7b47576c0fd506831d8e48201d39bd66fec72032
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140851446"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141969902"
 ---
 # Set-AzureRmApplicationInsightsDailyCap
 
 ## SYNOPSIS
-Mengatur jumlah volume data harian untuk sumber daya wawasan aplikasi
+Mengatur batas volume data harian untuk sumber daya wawasan aplikasi
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -43,11 +43,11 @@ Set-AzureRmApplicationInsightsDailyCap [-ResourceId] <String> [-DailyCapGB <Doub
 ```
 
 ## DESCRIPTION
-Mengatur jumlah volume data harian untuk sumber daya wawasan aplikasi
+Mengatur batas volume data harian untuk sumber daya wawasan aplikasi
 
 ## EXAMPLES
 
-### Contoh 1 Atur jumlah volume data harian untuk sumber daya pemahaman aplikasi
+### Contoh 1 Mengatur batas volume data harian untuk sumber daya wawasan aplikasi
 ```
 PS C:\> Set-AzureRmApplicationInsightsDailyCap -ResourceGroupName "testgroup" -Name "test" -DailyCapGB 400
  -DisableNotificationWhenHitCap
@@ -57,12 +57,12 @@ PS C:\> Set-AzureRmApplicationInsightsDailyCap -ResourceGroupName "testgroup" -N
 400         0                           True
 ```
 
-Atur jumlah volume data harian hingga 400GB per hari dan hentikan pemberitahuan kirim saat mencapai jumlah menit untuk "uji" sumber daya di grup sumber daya "grupuji"
+Atur batas volume data harian ke 400GB per hari dan hentikan pengiriman pemberitahuan ketika hit cap untuk sumber daya "uji" dalam grup sumber daya "grup uji"
 
 ## PARAMETERS
 
 ### -ApplicationInsightsComponent
-Application Insights Component Object.
+Objek Komponen Insights Aplikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApplicationInsights.Models.PSApplicationInsightsComponent
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -DailyCapGB
-Jumlah Harian.
+Topi harian.
 
 ```yaml
 Type: System.Nullable`1[System.Double]
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -106,8 +106,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DisableNotificationWhenTrCap
-Hentikan pemberitahuan kirim saat mencapai jumlah besar.
+### -DisableNotificationWhenHitCap
+Hentikan pengiriman pemberitahuan saat menekan kapital.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Aplikasi Insights Komponen.
+Nama Komponen Insights Aplikasi.
 
 ```yaml
 Type: System.String
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Application Insights Component Resource Id.
+Id Sumber Daya Komponen Insights Aplikasi.
 
 ```yaml
 Type: System.String
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

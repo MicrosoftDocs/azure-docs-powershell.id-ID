@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/get-azaksnod
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Get-AzAksNodePool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Get-AzAksNodePool.md
-ms.openlocfilehash: 39d8a27f9584363471f7dfd2f6a04f02610c3a7b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 08c91f6e9d365203c58dd2e04b4770d052b1e0fc
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140374103"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141899830"
 ---
 # Get-AzAksNodePool
 
 ## SYNOPSIS
-Daftar kolam renang node di kluster yang ditentukan.
+Daftar kumpulan node dalam kluster yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.aks/get-azaksnodepool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ Get-AzAksNodePool -ClusterObject <PSKubernetesCluster> [-Name <String>]
 ```
 
 ## DESCRIPTION
-Daftar kolam renang node di kluster yang ditentukan.
+Daftar kumpulan node dalam kluster yang ditentukan.
 
 ## EXAMPLES
 
-### Dapatkan semua kolam renang node dalam kluster tertentu
+### Dapatkan semua kumpulan node dalam kluster yang ditentukan
 ```powershell
 Get-AzAksNodePool -ResourceGroupName myResourceGroup -ClusterName myCluster
 ```
@@ -50,7 +53,7 @@ Get-AzAksNodePool -ResourceGroupName myResourceGroup -ClusterName myCluster
 ## PARAMETERS
 
 ### -ClusterName
-Nama sumber daya kluster yang dikelola.
+Nama sumber daya kluster terkelola.
 
 ```yaml
 Type: System.String
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id sebuah node pool dalam kluster Kluster Lokal yang dikelola
+Id of an node pool in managed Kubernetes cluster
 
 ```yaml
 Type: System.String
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama node pool.
+Nama kolam simpul.
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengganti langganan hanya berlaku selama siklus hidup cmdlet saat ini. Langganan tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
+Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

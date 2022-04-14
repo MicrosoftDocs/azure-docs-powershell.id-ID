@@ -4,16 +4,16 @@ ms.assetid: CB2936E4-E403-44B3-9CB8-617308E54C50
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 2616c583d27526ab1bb42ebddb9d62ca03e0fb58
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422088"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141880522"
 ---
 # New-WAPackVNet
 
 ## SYNOPSIS
-Membuat jaringan yang divirtualisasikan.
+Membuat jaringan virtual.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,29 +25,29 @@ New-WAPackVNet -LogicalNetwork <LogicalNetwork> -Name <String> [-Description <St
 ```
 
 ## DESCRIPTION
-Topik ini sudah tidak berlaku dan akan dihapus di masa mendatang.
-Topik ini menguraikan cmdlet dalam versi 0.8.1 modul Microsoft Azure PowerShell.
-Untuk mencari tahu versi modul yang Anda gunakan, dari konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Topik ini ditolak dan akan dihapus di masa mendatang.
+Topik ini menjelaskan cmdlet dalam versi 0.8.1 modul Microsoft Azure PowerShell.
+Untuk mengetahui versi modul yang Anda gunakan, dari konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version`.
 
-Cmdlet **New-WAPackVNet** membuat jaringan yang divirtualisasi.
+Cmdlet **New-WAPackVNet** membuat jaringan virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat jaringan yang divirtualisasi
+### Contoh 1: Membuat jaringan virtual
 ```
 PS C:\> $LogicalNetwork = Get-WAPackLogicalNetwork -Name "ContosoLogicalNetwork01"
 PS C:\> New-WAPackVNet -LogicalNetwork $LogicalNetwork -Name "ContosoVNett01" -Description "A description"
 ```
 
-Perintah pertama mengambil jaringan logika yang akan kami tambahkan jaringan virtualisasi baru.
+Perintah pertama terlebih dahulu mengambil jaringan logika yang ingin kami tambahkan jaringan virtual baru.
 Jaringan logika ini bernama ContosoLogicalNetwork01.
 
-Perintah kedua dan terakhir membuat jaringan yang divirtualisasikan menggunakan jaringan logika yang diambil sebelumnya, nama (ContosoVNett01) dan deskripsi (Deskripsi).
+Perintah kedua dan terakhir membuat jaringan virtual menggunakan jaringan logika yang diambil sebelumnya, nama (ContosoVNett01) dan deskripsi (Deskripsi A).
 
 ## PARAMETERS
 
 ### -Deskripsi
-Menentukan deskripsi untuk jaringan yang divirtualisasikan.
+Menentukan deskripsi untuk jaringan virtual.
 
 ```yaml
 Type: String
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogicalNetwork
-Menentukan LogicalNetwork terkait dengan jaringan yang divirtualisasi.
+Menentukan LogicalNetwork yang terkait dengan jaringan virtual.
 
 ```yaml
 Type: LogicalNetwork
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama untuk jaringan yang divirtualisasikan.
+Menentukan nama untuk jaringan virtual.
 
 ```yaml
 Type: String
@@ -92,8 +92,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -118,8 +118,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-WAPackvNet](./Get-WAPackVNet.md)
+[Get-WAPackVNet](./Get-WAPackVNet.md)
 
-[Remove-WAPackvNet](./Remove-WAPackVNet.md)
+[Hapus-WAPackVNet](./Remove-WAPackVNet.md)
 
 

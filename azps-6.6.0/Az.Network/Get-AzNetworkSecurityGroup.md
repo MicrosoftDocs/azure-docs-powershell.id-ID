@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkSecurityGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkSecurityGroup.md
 ms.openlocfilehash: 56bacb6d925bbb102a95ba67f2b738dde44f66d4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139935727"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141954015"
 ---
 # Get-AzNetworkSecurityGroup
 
@@ -19,7 +19,7 @@ ms.locfileid: "139935727"
 Mendapatkan grup keamanan jaringan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-aznetworksecuritygroup) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworksecuritygroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Get-AzNetworkSecurityGroup [-Name <String>] [-ResourceGroupName <String>]
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### Perluas
+### Memperluas
 ```
 Get-AzNetworkSecurityGroup -Name <String> -ResourceGroupName <String> -ExpandResource <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -401,7 +401,7 @@ Perintah ini mengembalikan konten grup keamanan jaringan Azure yang dimulai deng
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -429,7 +429,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama grup keamanan jaringan yang akan dapatkan cmdlet ini.
+Menentukan nama grup keamanan jaringan yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -456,7 +456,7 @@ Accept wildcard characters: True
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang dimiliki grup keamanan jaringan.
+Menentukan nama grup sumber daya tempat grup keamanan jaringan berada.
 
 ```yaml
 Type: System.String
@@ -483,7 +483,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

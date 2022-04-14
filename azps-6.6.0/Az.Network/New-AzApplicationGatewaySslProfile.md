@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewaySslProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewaySslProfile.md
 ms.openlocfilehash: d3080b62e7e93507c8670231330dc601ee5afb12
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140465183"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141953398"
 ---
 # New-AzApplicationGatewaySslProfile
 
@@ -18,7 +18,7 @@ ms.locfileid: "140465183"
 Membuat profil SSL untuk gateway aplikasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationgatewaysslprofile) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewaysslprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ New-AzApplicationGatewaySslProfile -Name <String> [-SslPolicy <PSApplicationGate
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApplicationGatewaySslProfile** membuat profil SSL untuk gateway aplikasi. Profil ssl dikonfigurasi pada para dengarkan HTTPS.
+Cmdlet **New-AzApplicationGatewaySslProfile** membuat profil SSL untuk gateway aplikasi. Profil ssl dikonfigurasi pada pendengar HTTPS.
 
 ## EXAMPLES
 
@@ -40,7 +40,7 @@ PS C:\> $sslPolicy = New-AzApplicationGatewaySslPolicy -PolicyType Custom -MinPr
 PS C:\> $trustedClient01 = New-AzApplicationGatewayTrustedClientCertificate -Name "ClientCert01" -CertificateFile "C:\clientCAChain1.cer"
 PS C:\> $profile = New-AzApplicationGatewaySslProfile -Name $sslProfile01Name -SslPolicy $sslPolicy -TrustedClientCertificates $trustedClient01
 ```
-Perintah pertama membuat kebijakan SSL baru dan menyimpannya di variabel $sslPolicy baru.
+Perintah pertama membuat kebijakan SSL baru dan menyimpannya dalam variabel $sslPolicy.
 Perintah kedua membuat rantai sertifikat CA klien tepercaya dan menyimpannya dalam variabel $ClientCert 01.
 Perintah ketiga membuat profil SSL baru dengan kebijakan ssl dan rantai sertifikat CA klien tepercaya.
 
@@ -122,11 +122,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

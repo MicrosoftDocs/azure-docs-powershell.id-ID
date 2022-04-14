@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Get-AzSqlIns
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceDatabaseLogReplay.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceDatabaseLogReplay.md
-ms.openlocfilehash: e2f6dac63a5ef8213d38d273f3900e49f4362bb0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5506b8042e58f666183c6ddac983dfc9ce513f07
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140554259"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141933063"
 ---
 # Get-AzSqlInstanceDatabaseLogReplay
 
 ## SYNOPSIS
 Mendapatkan status layanan Pemutaran Ulang Log.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlinstancedatabaselogreplay) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzSqlInstanceDatabaseLogReplay [[-Name] <String>] [-InstanceName] <String> [
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlInstanceDatabaseLogReplay** mendapatkan status layanan Log Replay di database tersebut.
+Cmdlet **Get-AzSqlInstanceDatabaseLogReplay** mendapatkan status layanan Pemutaran Ulang Log pada database tertentu.
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ Cmdlet **Get-AzSqlInstanceDatabaseLogReplay** mendapatkan status layanan Log Rep
 PS C:\> Get-AzSqlInstanceDatabaseLogReplay -ResourceGroupName "ResourceGroup01" -InstanceName "ManagedInstance01" -Name "ManagedDatabaseName"
 ```
 
-Perintah ini akan mendapatkan status layanan pemutaran ulang log di database tersebut.
+Perintah ini akan mendapatkan status layanan pemutaran ulang log pada database tertentu.
 
 ## PARAMETERS
 
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama database contoh untuk diambil.
+Nama database instans untuk diambil.
 
 ```yaml
 Type: System.String
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

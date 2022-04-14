@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnClientPackage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnClientPackage.md
 ms.openlocfilehash: 008092214b6f32441a504b25278bfa21e86a53d1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140104031"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141953727"
 ---
 # Get-AzVpnClientPackage
 
@@ -19,7 +19,7 @@ ms.locfileid: "140104031"
 Mendapatkan informasi tentang paket klien VPN.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azvpnclientpackage) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvpnclientpackage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,24 +30,24 @@ Get-AzVpnClientPackage -ResourceGroupName <String> -VirtualNetworkGatewayName <S
 
 ## DESCRIPTION
 Cmdlet **Get-AzVpnClientPackage** mendapatkan informasi tentang paket klien VPN yang tersedia dari gateway jaringan virtual.
-Paket klien berisi data konfigurasi yang memungkinkan komputer klien membuat koneksi VPN ke jaringan virtual Azure; komputer klien harus memiliki instalan paket konfigurasi yang benar agar dapat membuat koneksi VPN.
-Paket konfigurasi berbeda tersedia berdasarkan versi Windows komputer klien (misalnya, Windows 7 atau Windows 10) dan pada arsitektur prosesor komputer klien (AMD64 atau x86).
-Anda harus menentukan tipe arsitektur ketika menjalankan **Get-AzVpnClientPackage**.
+Paket klien berisi data konfigurasi yang memungkinkan komputer klien membuat koneksi VPN ke jaringan virtual Azure; komputer klien harus memiliki paket konfigurasi yang benar yang terinstal untuk membuat koneksi VPN.
+Paket konfigurasi yang berbeda tersedia berdasarkan versi Windows komputer klien (misalnya, Windows 7 atau Windows 10) dan pada arsitektur prosesor komputer klien (AMD64 atau x86).
+Anda harus menentukan tipe arsitektur saat menjalankan **Get-AzVpnClientPackage**.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan informasi tentang arsitektur prosesor paket klien VPN
+### Contoh 1: Dapatkan informasi tentang paket klien VPN arsitektur prosesor
 ```
 PS C:\>Get-AzVpnClientPackage -ProcessorArchitecture -VirtualNetworkGatewayName "ContosoVirtualNetworkGateway" -ResourceGroupName "ContosoResourceGroup" -ProcessorArchitecture "Amd64"
 ```
 
-Perintah ini mendapatkan informasi tentang paket klien VPN AMD64 yang disimpan di gateway jaringan virtual bernama ContosoVirtualNetworkGateway.
+Perintah ini mendapatkan informasi tentang paket klien AMD64 VPN yang disimpan di gateway jaringan virtual bernama ContosoVirtualNetworkGateway.
 Untuk mendapatkan informasi tentang paket klien x86, atur nilai parameter *ProcessorArchitecture* ke x86.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProcessorArchitecture
-Menentukan tipe arsitektur CPU yang didesain untuk paket klien.
+Menentukan tipe arsitektur CPU tempat paket klien didesain.
 Nilai yang valid adalah Amd64 dan X86.
 
 ```yaml
@@ -79,8 +79,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang ditetapkan untuk gateway jaringan virtual.
-Grup sumber daya mengkategorikan item untuk membantu menyederhanakan manajemen inventaris dan administrasi umum Azure.
+Menentukan nama grup sumber daya tempat gateway jaringan maya ditetapkan.
+Grup sumber daya mengkategorikan item untuk membantu menyederhanakan manajemen inventaris dan administrasi Umum Azure.
 
 ```yaml
 Type: System.String
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -124,4 +124,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Resize-AzVirtualNetworkGateway](./Resize-AzVirtualNetworkGateway.md)
+[Mengubah ukuran-AzVirtualNetworkGateway](./Resize-AzVirtualNetworkGateway.md)

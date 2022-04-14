@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallCustomRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallCustomRule.md
 ms.openlocfilehash: d1ddf9cd3b6089cb65233517accb022beeb88016
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140251009"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142047449"
 ---
 # New-AzApplicationGatewayFirewallCustomRule
 
@@ -18,7 +18,7 @@ ms.locfileid: "140251009"
 Membuat aturan kustom baru untuk kebijakan firewall gateway aplikasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationgatewayfirewallcustomrule) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayfirewallcustomrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ New-AzApplicationGatewayFirewallCustomRule -Name <String> -Priority <Int32> -Rul
 PS C:\> $customRule = New-AzApplicationGatewayFirewallCustomRule -Name example-rule -Priority 1 -RuleType MatchRule -MatchCondition $condtion -Action Allow
 ```
 
-Perintah akan membuat aturan kustom baru dengan nama aturan contoh, prioritas 1 dan tipe aturan akan menjadi MatchRule dengan kondisi yang ditentukan dalam variabel kondisi, tindakan akan mengizinkan. Aturan kustom yang baru cocokkan disimpan di $customRule.
+Perintah membuat aturan kustom baru dengan nama contoh-aturan, prioritas 1 dan tipe aturan akan MatchRule dengan kondisi yang ditentukan dalam variabel kondisi, tindakan akan diperbolehkan. Aturan kustom kecocokan baru disimpan di $customRule.
 
 ## PARAMETERS
 
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -MatchCondition
-Daftar kondisi yang cocok.
+Daftar kondisi kecocokan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFirewallCondition[]
@@ -136,11 +136,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

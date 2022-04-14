@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzP2sVpnGatewayDetailedConnectionHealth.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzP2sVpnGatewayDetailedConnectionHealth.md
 ms.openlocfilehash: 7d39904ef5c595235f14405abdcfd54f6c1bbb6e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139973445"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142047755"
 ---
 # Get-AzP2sVpnGatewayDetailedConnectionHealth
 
 ## SYNOPSIS
-Mendapatkan informasi mendetail tentang poin saat ini ke koneksi situs dari P2SVpnGateway.
+Mendapatkan informasi mendetail tentang titik saat ini ke koneksi situs dari P2SVpnGateway.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azp2svpngatewaydetailedconnectionhealth) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azp2svpngatewaydetailedconnectionhealth) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ Get-AzP2sVpnGatewayDetailedConnectionHealth -ResourceId <String> -OutputBlobSasU
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzP2sVpnGatewayDetailedConnectionHealth** memungkinkan Anda mendapatkan informasi mendetail tentang poin saat ini untuk koneksi situs dari P2SVpnGateway. Pelanggan harus menyampaikan url SAS tempat kami dapat meletakkan informasi kesehatan mendetail ini.
+Cmdlet **Get-AzP2sVpnGatewayDetailedConnectionHealth** memungkinkan Anda mendapatkan informasi mendetail tentang titik saat ini ke koneksi situs dari P2SVpnGateway. Pelanggan perlu mengirimkan URL SAS di mana kami dapat menempatkan informasi kesehatan mendetail ini.
 
 ## EXAMPLES
 
@@ -55,7 +55,7 @@ PS C:\> Get-AzP2sVpnGatewayDetailedConnectionHealth -Name 683482ade8564515aed4b8
 SasUrl : SignedSasUrl
 ```
 
-Cmdlet **Get-AzP2sVpnGatewayDetailedConnectionHealth** memungkinkan Anda mendapatkan informasi mendetail tentang poin saat ini untuk koneksi situs dari P2SVpnGateway. Pelanggan dapat mengunduh detail kesehatan dari unduhan url SAS yang lolos. Ini akan memperlihatkan informasi setiap poin ke koneksi situs dengan nama pengguna, byte masuk, byte keluar, dialokasikan alamat ip dll.
+Cmdlet **Get-AzP2sVpnGatewayDetailedConnectionHealth** memungkinkan Anda mendapatkan informasi mendetail tentang titik saat ini ke koneksi situs dari P2SVpnGateway. Pelanggan dapat mengunduh detail kesehatan dari unduhan url SAS yang lolos. Ini akan memperlihatkan informasi setiap poin ke koneksi situs dengan nama pengguna, byte di, byte keluar, alamat ip yang dialokasikan dll.
 
 ## PARAMETERS
 
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek gateway p2s vpn yang akan dimodifikasi
+Objek gateway vpn p2s yang akan diubah
 
 ```yaml
 Type: PSP2SVpnGateway
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -OutputBlobSasUrl
-Url OutputBlob Sas yang akan ditulis dengan kesehatan koneksi p2s vpn.
+Url OutputBlob Sas tempat kesehatan koneksi vpn p2s akan ditulis.
 
 ```yaml
 Type: String
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya Azure dari P2SVpnGateway akan dimodifikasi.
+ID sumber daya Azure dari P2SVpnGateway untuk diubah.
 
 ```yaml
 Type: String
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnUserNamesFilter
-Daftar nama pengguna P2S vpn untuk difilter.
+Daftar nama pengguna vpn P2S untuk difilter.
 
 ```yaml
 Type: String[]
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsWorkspaceUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsWorkspaceUsage.md
 ms.openlocfilehash: 9cbd1bd003ab54c7e0e48aa2b10b98dbd2fea018
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139933693"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142045127"
 ---
 # Get-AzOperationalInsightsWorkspaceUsage
 
@@ -19,7 +19,7 @@ ms.locfileid: "139933693"
 Mendapatkan data penggunaan untuk ruang kerja.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightsworkspaceusage) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightsworkspaceusage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,29 +30,29 @@ Get-AzOperationalInsightsWorkspaceUsage [-ResourceGroupName] <String> [-Name] <S
 
 ## DESCRIPTION
 Cmdlet **Get-AzOperationalInsightsWorkspaceUsage** mengambil data penggunaan untuk ruang kerja.
-Ini memperlihatkan berapa banyak data yang telah dianalisis oleh ruang kerja dalam periode tertentu.
+Ini memperlihatkan berapa banyak data yang telah dianalisis oleh ruang kerja selama periode tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan penggunaan data berdasarkan nama ruang kerja
+### Contoh 1: Mendapatkan data penggunaan berdasarkan nama ruang kerja
 ```
 PS C:\>Get-AzOperationalInsightsWorkspaceUsage -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace"
 ```
 
-Perintah ini mendapatkan detail penggunaan untuk ruang kerja bernama MyWorkspace dalam grup sumber daya yang ditentukan.
+Perintah ini mendapatkan detail penggunaan untuk ruang kerja bernama MyWorkspace dalam grup sumber daya tertentu.
 
-### Contoh 2: Mendapatkan data penggunaan menggunakan saluran
+### Contoh 2: Dapatkan data penggunaan menggunakan pipeline
 ```
 PS C:\>Get-AzOperationalInsightsWorkspace -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace" | Get-AzOperationalInsightsWorkspaceUsage
 ```
 
-Perintah ini akan mendapatkan ruang kerja bernama MyWorkSpace menggunakan cmdlet Get-AzOperationalInsightsWorkspace, lalu menyampaikan ruang kerja ke cmdlet saat ini.
-Perintah tersebut akan mendapatkan detail penggunaan untuk ruang kerja tersebut.
+Perintah ini mendapatkan ruang kerja bernama MyWorkSpace menggunakan cmdlet Get-AzOperationalInsightsWorkspace, lalu meneruskan ruang kerja ke cmdlet saat ini.
+Perintah akan mendapatkan detail penggunaan untuk ruang kerja tersebut.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

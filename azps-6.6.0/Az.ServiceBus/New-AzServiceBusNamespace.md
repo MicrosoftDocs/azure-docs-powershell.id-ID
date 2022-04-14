@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusNamespace.md
 ms.openlocfilehash: f8e5f2ff7efde0323889317547a22d5f6ffe84aa
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140328947"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141905476"
 ---
 # New-AzServiceBusNamespace
 
@@ -18,7 +18,7 @@ ms.locfileid: "140328947"
 Membuat ruang nama Bus Layanan baru.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/new-azservicebusnamespace) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/new-azservicebusnamespace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-AzServiceBusNamespace [-ResourceGroupName] <String> [-Location] <String> [-N
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzServiceBusNamespace** membuat kumpulan Bus Layanan nama baru. Setelah dibuat, kumpulan nama manifes sumber daya akan tetap ada. Operasi ini idempok.
+Cmdlet **New-AzServiceBusNamespace** membuat ruang nama Bus Layanan baru. Setelah dibuat, manifes sumber daya ruang nama tidak dapat berubah. Operasi ini idempotent.
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ UpdatedAt          : 1/20/2017 2:07:56 AM
 ServiceBusEndpoint : https://SB-Example1.servicebus.windows.net:443/
 ```
 
-Membuat ruang nama Bus Layanan di dalam grup sumber daya yang ditentukan.
+Membuat ruang nama Bus Layanan baru dalam grup sumber daya yang ditentukan.
 
 ### Contoh 2 - ZoneRedundant dan DisableLocalAuth
 ```
@@ -67,12 +67,12 @@ UpdatedAt          : 9/27/2021 2:07:56 AM
 ServiceBusEndpoint : https://SB-Example1.servicebus.windows.net:443/
 ```
 
-Membuat ruang nama Bus Layanan di dalam grup sumber daya yang ditentukan.
+Membuat ruang nama Bus Layanan baru dalam grup sumber daya yang ditentukan.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableLocalAuth
-mengaktifkan atau menonaktifkan autentikasi SAS untuk Bus Layanan nama
+mengaktifkan atau menonaktifkan autentikasi SAS untuk ruang nama Bus Layanan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi Bus Layanan nama.
+Lokasi ruang nama Bus Layanan.
 
 ```yaml
 Type: System.String
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuCapacity
-Kumpulan Bus Layanan premium unit throughput, yang diperbolehkan nilai 1 atau 2 atau 4
+Bus Layanan unit throughput ruang nama premium, nilai yang diperbolehkan 1 atau 2 atau 4
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Nama Bus Layanan nama SKU ruang nama.
+Nama SKU ruang nama Bus Layanan.
 
 ```yaml
 Type: System.String
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneRedundant
-mengaktifkan atau menonaktifkan Kelebihan Zona untuk ruang nama
+mengaktifkan atau menonaktifkan Zona Berlebihan untuk ruang nama
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -238,13 +238,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### System.Collections.Hashtable
 

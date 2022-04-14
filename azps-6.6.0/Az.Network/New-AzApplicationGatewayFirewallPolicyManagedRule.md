@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallPolicyManagedRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallPolicyManagedRule.md
 ms.openlocfilehash: 9bc4fcfd6aa63cb56dbb61ef656b25be4551183f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139973247"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142047395"
 ---
 # New-AzApplicationGatewayFirewallPolicyManagedRule
 
 ## SYNOPSIS
-Buat ManagedRules untuk kebijakan firewall.
+Buat Kaidah Terkelola untuk kebijakan firewall.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationgatewayfirewallpolicymanagedrule) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayfirewallpolicymanagedrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -58,7 +58,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Exclusion
+### -Pengecualian
 Daftar Entri Pengecualian.
 
 ```yaml
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedRuleSet
-Daftar Aturan terkelolaSets.
+Daftar Kumpulan aturan terkelola.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFirewallPolicyManagedRuleSet[]
@@ -89,11 +89,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

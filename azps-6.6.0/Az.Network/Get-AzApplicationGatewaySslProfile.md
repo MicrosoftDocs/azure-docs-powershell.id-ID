@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewaySslProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewaySslProfile.md
 ms.openlocfilehash: f446acdb9ce9702d5df534b4d78c0092196b972c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140252125"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142047809"
 ---
 # Get-AzApplicationGatewaySslProfile
 
@@ -18,7 +18,7 @@ ms.locfileid: "140252125"
 Mendapatkan profil SSL gateway aplikasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azapplicationgatewaysslprofile) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewaysslprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ PS C:\>$AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceG
 PS C:\> $profile  = Get-AzApplicationGatewaySslProfile -Name "SslProfile01" -ApplicationGateway $AppGw
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya yang bernama ResourceGroup01, dan menyimpannya dalam $AppGw sumber daya. Perintah kedua mendapatkan ssl profil SslProfile01 untuk $AppGw dan menyimpannya dalam $profile baru.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw. Perintah kedua mendapatkan profil SSL SslProfile01 untuk $AppGw dan menyimpannya dalam variabel $profile.
 
 ## PARAMETERS
 
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

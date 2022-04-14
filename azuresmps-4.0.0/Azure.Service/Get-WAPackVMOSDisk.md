@@ -4,16 +4,16 @@ ms.assetid: E6E40D1B-A5BC-4B38-9D22-F06A8E4DABDF
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 1de012c80c2c7df68474b56678abfe7f73e44d42
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421149"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141880637"
 ---
 # Get-WAPackVMOSDisk
 
 ## SYNOPSIS
-Mendapatkan objek disk sistem operasi untuk mesin virtual.
+Mendapatkan sistem operasi disk objek untuk mesin virtual.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -35,22 +35,22 @@ Get-WAPackVMOSDisk [-Name <String>] [-Profile <AzureSMProfile>] [<CommonParamete
 ```
 
 ## DESCRIPTION
-Topik ini sudah tidak berlaku dan akan dihapus di masa mendatang.
-Topik ini menguraikan cmdlet dalam versi 0.8.1 modul Microsoft Azure PowerShell ini.
-Untuk mencari tahu versi modul yang Anda gunakan, dari konsol Azure PowerShell, ketikkan `(Get-Module -Name Azure).Version` .
+Topik ini ditolak dan akan dihapus di masa mendatang.
+Topik ini menjelaskan cmdlet dalam versi 0.8.1 modul Microsoft Azure PowerShell.
+Untuk mengetahui versi modul yang Anda gunakan, dari konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version`.
 
 Cmdlet **Get-WAPackVMOSDisk** mendapatkan objek disk sistem operasi untuk mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan disk sistem operasi menggunakan nama
+### Contoh 1: Dapatkan disk sistem operasi dengan menggunakan nama
 ```
 PS C:\> Get-WAPackVMOSDisk -Name "ContosoOSDisk"
 ```
 
 Perintah ini mendapatkan disk sistem operasi bernama ContosoOSDisk.
 
-### Contoh 2: Dapatkan disk sistem operasi menggunakan ID
+### Contoh 2: Dapatkan disk sistem operasi dengan menggunakan ID
 ```
 PS C:\> Get-WAPackVMOSDisk -Id 66242D17-189F-480D-87CF-8E1D749998C8
 ```
@@ -67,7 +67,7 @@ Perintah ini mendapatkan semua disk sistem operasi.
 ## PARAMETERS
 
 ### -ID
-Menentukan ID unik dari disk sistem operasi.
+Menentukan ID unik disk sistem operasi.
 
 ```yaml
 Type: Guid
@@ -97,8 +97,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -123,6 +123,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-WAPackvm](./Get-WAPackVM.md)
+[Get-WAPackVM](./Get-WAPackVM.md)
 
 

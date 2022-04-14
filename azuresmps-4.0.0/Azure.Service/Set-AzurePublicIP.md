@@ -4,11 +4,11 @@ ms.assetid: BFD4E4AD-8F1B-4E4E-BF52-435A6EEAA060
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 166d2e4ee0ad7f62fbdb60f8cad8a9f62a6e4a15
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427429"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141880302"
 ---
 # Set-AzurePublicIP
 
@@ -32,44 +32,44 @@ Anda bisa menentukan label nama domain untuk membuat entri DNS terkait untuk IP 
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan IP Publik ke komputer virtual yang sudah ada
+### Contoh 1: Menambahkan IP Publik ke mesin virtual yang sudah ada
 ```
 PS C:\> Get-AzureVM -ServiceName "FTPInAzure" -Name "FTPInstance" | Set-AzurePublicIP -PublicIPName "ftpip" | Update-AzureVM
 ```
 
-Perintah ini mendapatkan mesin virtual yang bernama FTPInstance dalam layanan yang bernama FTPInAzure menggunakan cmdlet **Get-AzureVM.**
-Perintah itu melewati mesin virtual itu ke cmdlet saat ini dengan menggunakan operator pipeline.
-Cmdlet saat ini menambahkan ftpip nama IP publik.
-Perintah tersebut melewati mesin virtual ke cmdlet **Update-AzureVM,** yang menerapkan perubahan Anda.
+Perintah ini mendapatkan mesin virtual bernama FTPInstance dalam layanan bernama FTPInAzure dengan menggunakan cmdlet **Get-AzureVM** .
+Perintah melewati mesin virtual tersebut ke cmdlet saat ini menggunakan operator pipeline.
+Cmdlet saat ini menambahkan ftpip Nama IP Publik.
+Perintah melewati mesin virtual ke cmdlet **Update-AzureVM** , yang mengimplementasikan perubahan Anda.
 
-### Contoh 2: Tambahkan IP Publik ke komputer virtual baru
+### Contoh 2: Menambahkan IP Publik ke mesin virtual baru
 ```
 PS C:\> New-AzureVMConfig -Name "FTPInstance" -InstanceSize Small -ImageName "Image07" | Add-AzureProvisioningConfig -Windows -AdminUsername "AdminMain" -Password "password" | Set-AzurePublicIP -PublicIPName "ftpip" | New-AzureVM -ServiceName "FTPinAzure" -Location "North Central US"
 ```
 
-Perintah ini akan membuat objek konfigurasi mesin virtual menggunakan cmdlet **New-AzureVMConfig.**
-Perintah melewati objek itu ke cmdlet **Add-AzureProvisioningConfig,** yang menyediakan konfigurasi tambahan.
-Cmdlet saat ini menambahkan ftpip nama IP publik.
-Perintah meneruskan konfigurasi ke cmdlet **New-AzureVM,** yang membuat mesin virtual.
+Perintah ini membuat objek konfigurasi mesin virtual menggunakan cmdlet **New-AzureVMConfig** .
+Perintah melewati objek tersebut ke cmdlet **Add-AzureProvisioningConfig** , yang menyediakan konfigurasi tambahan.
+Cmdlet saat ini menambahkan ftpip Nama IP Publik.
+Perintah melewati konfigurasi ke cmdlet **New-AzureVM** , yang membuat mesin virtual.
 
-### Contoh 3: Tambahkan IP Publik dan label ke mesin virtual yang sudah ada
+### Contoh 3: Menambahkan IP Publik dan label ke mesin virtual yang sudah ada
 ```
 PS C:\> Get-AzureVM -ServiceName "FTPInAzure" -Name "FTPInstance" | Set-AzurePublicIP -PublicIPName "ftpip" -DomainNameLabel "ipname" | Update-AzureVM
 ```
 
-Perintah ini mendapatkan mesin virtual yang bernama FTPInstance dalam layanan yang bernama FTPInAzure menggunakan cmdlet **Get-AzureVM.**
-Perintah itu melewati mesin virtual itu ke cmdlet saat ini dengan menggunakan operator pipeline.
-Cmdlet saat ini menambahkan ftpip nama IP publik dan label ipname.
-Perintah akan memperbarui mesin virtual, yang menerapkan perubahan Anda.
+Perintah ini mendapatkan mesin virtual bernama FTPInstance dalam layanan bernama FTPInAzure dengan menggunakan cmdlet **Get-AzureVM** .
+Perintah melewati mesin virtual tersebut ke cmdlet saat ini menggunakan operator pipeline.
+Cmdlet saat ini menambahkan ftpip Nama IP Publik dan nama ip label.
+Perintah memperbarui mesin virtual, yang mengimplementasikan perubahan Anda.
 
-### Contoh 4: Tambahkan IP Publik dan label ke mesin virtual baru
+### Contoh 4: Menambahkan IP Publik dan label ke mesin virtual baru
 ```
 PS C:\> New-AzureVMConfig -Name "FTPInstance" -InstanceSize Small -ImageName $images[50].ImageName | Add-AzureProvisioningConfig -Windows -AdminUsername "AdminMain" -Password "password" | Set-AzurePublicIP -PublicIPName "ftpip" -DomainNameLabel "ipname" | New-AzureVM -ServiceName "FTPinAzure" -Location "North Central US"
 ```
 
-Perintah ini akan membuat objek konfigurasi mesin virtual, lalu meneruskan objek tersebut ke **Add-AzureProvisioningConfig**, yang menyediakan konfigurasi tambahan.
-Cmdlet saat ini menambahkan ftpip nama IP publik dan label ipname.
-Perintah akan membuat mesin virtual.
+Perintah ini membuat objek konfigurasi mesin virtual, lalu mengirimkan objek tersebut ke **Add-AzureProvisioningConfig**, yang menyediakan konfigurasi tambahan.
+Cmdlet saat ini menambahkan ftpip Nama IP Publik dan nama ip label.
+Perintah membuat mesin virtual.
 
 ## PARAMETERS
 
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdleTimeoutInMinutes
-Menentukan periode waktu habis tcp diam dalam menit.
+Menentukan periode waktu habis diam TCP dalam menit.
 
 ```yaml
 Type: Int32
@@ -104,16 +104,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -143,8 +143,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -189,13 +189,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
-### Microsoft.WindowsAzure.commands.ServiceManagement.Model.IPersistentVM
+### Microsoft.WindowsAzure.Commands.ServiceManagement.Model.IPersistentVM
 
 ## CATATAN
 
@@ -205,12 +205,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureVM](./Get-AzureVM.md)
 
-[New-AzureVM](./New-AzureVM.md)
+[AzureVM baru](./New-AzureVM.md)
 
-[New-AzureVMConfig](./New-AzureVMConfig.md)
+[AzureVMConfig baru](./New-AzureVMConfig.md)
 
-[Remove-AzurePublicIP](./Remove-AzurePublicIP.md)
+[Hapus-AzurePublicIP](./Remove-AzurePublicIP.md)
 
-[Update-AzureVM](./Update-AzureVM.md)
+[Perbarui-AzureVM](./Update-AzureVM.md)
 
 

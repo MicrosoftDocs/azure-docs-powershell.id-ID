@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayIdentity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayIdentity.md
 ms.openlocfilehash: 19c20c22b294fd9e1d2a696b5b6bdff5b5f5d9e0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140250739"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141953493"
 ---
 # New-AzApplicationGatewayIdentity
 
@@ -18,7 +18,7 @@ ms.locfileid: "140250739"
 Membuat objek identitas untuk gateway aplikasi. Ini akan menyimpan referensi ke identitas yang ditetapkan pengguna.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationgatewayidentity) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayidentity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-AzApplicationGatewayIdentity -UserAssignedIdentityId <String> [-DefaultProfi
 ```
 
 ## DESCRIPTION
-**Cmdlet New-AzApplicationGatewayIdentity** membuat objek identitas gateway aplikasi.
+Cmdlet **New-AzApplicationGatewayIdentity** membuat objek identitas gateway aplikasi.
 
 ## EXAMPLES
 
@@ -39,7 +39,7 @@ PS C:\> $appgwIdentity = New-AzApplicationGatewayIdentity -UserAssignedIdentity 
 PS C:\> $gateway = New-AzApplicationGateway -Name "AppGateway01" -ResourceGroupName "ResourceGroup01" -Location "West US" -Identity $appgwIdentity <..>
 ```
 
-Dalam contoh ini, kami membuat identitas yang ditetapkan pengguna lalu mereferensikannya dalam objek identitas yang digunakan dengan Gateway Aplikasi.
+Dalam contoh ini, kami membuat identitas yang ditetapkan pengguna lalu mereferensikannya dalam objek identitas yang digunakan dengan Application Gateway.
 
 ## PARAMETERS
 
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserAssignedIdentityId
-ResourceId identitas yang ditetapkan pengguna untuk ditetapkan ke Gateway Aplikasi.
+ResourceId dari identitas yang ditetapkan pengguna untuk ditetapkan ke Application Gateway.
 
 ```yaml
 Type: System.String
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

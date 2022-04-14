@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Remove-AzureRMAutomationSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Remove-AzureRMAutomationSchedule.md
 ms.openlocfilehash: cce9b4eff96be34521af58ec85f7abb93d39b3cd
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428460"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141969435"
 ---
 # Remove-AzureRmAutomationSchedule
 
@@ -33,7 +33,7 @@ Cmdlet **Remove-AzureRmAutomationSchedule** menghapus jadwal dari Azure Automati
 
 ## EXAMPLES
 
-### Contoh 1: Hapus jadwal
+### Contoh 1: Menghapus jadwal
 ```
 PS C:\>Remove-AzureRmAutomationSchedule -AutomationAccountName "Contoso17" -Name "Schedule01" -ResourceGroupName "ResourceGroup01"
 ```
@@ -43,7 +43,7 @@ Perintah ini menghapus jadwal bernama Schedule01 dalam akun otomatisasi Contoso1
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang jadwalnya akan dihapus cmdlet ini.
+Menentukan nama akun Otomatisasi yang mana cmdlet ini menghapus jadwal.
 
 ```yaml
 Type: System.String
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -72,7 +72,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 ps_force
 
 ```yaml
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini menghapus jadwal.
+Menentukan nama grup sumber daya tempat cmdlet ini menghapus jadwal.
 
 ```yaml
 Type: System.String
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -165,8 +165,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmAutomationSchedule](./Get-AzureRMAutomationSchedule.md)
 
-[New-AzureRmAutomationSchedule](./New-AzureRMAutomationSchedule.md)
+[AzureRmAutomationSchedule Baru](./New-AzureRMAutomationSchedule.md)
 
-[Set-AzureRmAutomationSchedule](./Set-AzureRMAutomationSchedule.md)
+[Atur-AzureRmAutomationSchedule](./Set-AzureRMAutomationSchedule.md)
 
 

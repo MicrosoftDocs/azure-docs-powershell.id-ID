@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzFirewallPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzFirewallPolicy.md
 ms.openlocfilehash: 4c7731c1a56defa5b611747e0242993e11cde3e9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140251837"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141954033"
 ---
 # Get-AzFirewallPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "140251837"
 Mendapatkan Kebijakan Azure Firewall
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azfirewallpolicy) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azfirewallpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Cmdlet **Get-AzFirewallPolicy** mendapatkan satu atau beberapa Firewall dalam gr
 PS C:\> Get-AzFirewallPolicy -Name firewallPolicy -ResourceGroupName TestRg
 ```
 
-Contoh ini mendapatkan kebijakan firewall yang bernama "firewallPolicy" dalam grup sumber daya "TestRg"
+Contoh ini mendapatkan kebijakan firewall bernama "firewallPolicy" dalam grup sumber daya "TestRg"
 
 ## PARAMETERS
 
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

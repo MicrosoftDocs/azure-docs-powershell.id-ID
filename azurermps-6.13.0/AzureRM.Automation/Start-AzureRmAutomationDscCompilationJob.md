@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Start-AzureRmAutomationDscCompilationJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Start-AzureRmAutomationDscCompilationJob.md
 ms.openlocfilehash: ffa84b2c5ec4ccfdc48cae4e68cbe562034f7e27
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426659"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141969221"
 ---
 # Start-AzureRmAutomationDscCompilationJob
 
 ## SYNOPSIS
-Mengompilasi konfigurasi DSC dalam Otomatisasi.
+Menyusun konfigurasi DSC dalam Otomatisasi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -30,35 +30,35 @@ Start-AzureRmAutomationDscCompilationJob [-ConfigurationName] <String> [-Paramet
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzureRmAutomationDscCompilationJob** menyusun konfigurasi APS Desired State Configuration (DSC) dalam Otomatisasi Azure.
+Cmdlet **Start-AzureRmAutomationDscCompilationJob** menyusun konfigurasi APS Desired State Configuration (DSC) dalam Azure Automation.
 
 ## EXAMPLES
 
-### Contoh 1: Susun konfigurasi Azure DSC dalam Otomatisasi
+### Contoh 1: Mengompilasi konfigurasi DSC Azure dalam Otomatisasi
 ```
 PS C:\>$Params = @{"StringParam"="Hello World";"IntegerParam"=32}
 PS C:\> Start-AzureRmAutomationDscCompilationJob -ConfigurationName "Config01" -Parameters $Params -ResourceGroupName "ResourceGroup01"
 ```
 
 Perintah pertama membuat kamus parameter, dan menyimpannya dalam variabel $Params.
-Perintah kedua mengompilasi konfigurasi DSC bernama Config01.
+Perintah kedua mengkompilasi konfigurasi DSC bernama Config01.
 Perintah ini menyertakan nilai dalam $Params untuk parameter konfigurasi DSC.
 
-### Contoh 2: Susun konfigurasi DSC Azure dalam Otomatisasi dengan versi build Konfigurasi Node baru.
+### Contoh 2: Menyusun konfigurasi Azure DSC dalam Otomatisasi dengan versi build Konfigurasi Node yang baru.
 ```
 PS C:\>$Params = @{"StringParam"="Hello World";"IntegerParam"=32}
 PS C:\> Start-AzureRmAutomationDscCompilationJob -ConfigurationName "Config01" -Parameters $Params -ResourceGroupName "ResourceGroup01" -IncrementNodeConfigurationBuild
 ```
 
-Mirip dengan contoh pertama, perintah pertama membuat kamus parameter, dan menyimpannya dalam $Params variabel.
-Perintah kedua mengompilasi konfigurasi DSC bernama Config01.
+Mirip dengan contoh pertama, perintah pertama membuat kamus parameter, dan menyimpannya dalam variabel $Params.
+Perintah kedua mengkompilasi konfigurasi DSC bernama Config01.
 Perintah ini menyertakan nilai dalam $Params untuk parameter konfigurasi DSC.
-Langkah ini tidak akan menimpa Konfigurasi Node yang lebih lama dengan membuat Konfigurasi Node baru dengan nama Config01[<2>]. <NodeName> . Nomor versi akan bertambah berdasarkan nomor versi yang sudah ada.
+Ini tidak menimpa Konfigurasi Node yang sudah ada sebelumnya dengan membuat Konfigurasi Node baru dengan nama Config01[<2>].<NodeName>. Nomor versi ditambahkan berdasarkan nomor versi yang sudah ada.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang berisi konfigurasi DSC yang disusun cmdlet ini.
+Menentukan nama akun Otomatisasi yang berisi konfigurasi DSC yang dikompilasi cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConfigurationName
-Menentukan nama konfigurasi DSC yang disusun cmdlet ini.
+Menentukan nama konfigurasi DSC yang dikompilasi cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -132,7 +132,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Parameter
+### -Parameters
 Menentukan kamus parameter yang digunakan cmdlet ini untuk menyusun konfigurasi DSC.
 
 ```yaml
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini menyusun konfigurasi.
+Menentukan nama grup sumber daya tempat cmdlet ini menyusun konfigurasi.
 
 ```yaml
 Type: System.String
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

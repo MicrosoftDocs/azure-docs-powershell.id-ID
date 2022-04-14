@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Dns/Dns/help/Get-AzDnsZone.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Dns/Dns/help/Get-AzDnsZone.md
 ms.openlocfilehash: fe650e87635d16d3768bd527bf7422fe644c885e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426229"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141917661"
 ---
 # Get-AzDnsZone
 
@@ -25,16 +25,16 @@ Mendapatkan zona DNS.
 Get-AzDnsZone [<CommonParameters>]
 ```
 
-### ResourceGroup
+### Grup Sumber Daya
 ```
 Get-AzDnsZone [-Name <String>] -ResourceGroupName <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Cmdlet **Get-AzDnsZone** mendapatkan zona Domain Name System (DNS) dari grup sumber daya yang ditentukan.
-Jika Anda *menentukan* parameter Nama, satu **objek DnsZone** akan dikembalikan.
-Jika Anda tidak menentukan parameter *Name,* array yang berisi semua zona dalam grup sumber daya yang ditentukan akan dikembalikan.
-Anda dapat menggunakan **objek DnsZone** untuk memperbarui zona, misalnya Anda dapat menambahkan **objek RecordSet** ke zona tersebut.
+Jika Anda menentukan parameter *Nama* , objek **DnsZone** tunggal akan dikembalikan.
+Jika Anda tidak menentukan parameter *Nama* , array yang berisi semua zona dalam grup sumber daya tertentu akan dikembalikan.
+Anda bisa menggunakan objek **DnsZone** untuk memperbarui zona, misalnya Anda bisa menambahkan objek **RecordSet** ke dalamnya.
 
 ## EXAMPLES
 
@@ -43,29 +43,29 @@ Anda dapat menggunakan **objek DnsZone** untuk memperbarui zona, misalnya Anda d
 PS C:\> $Zone = Get-AzDnsZone -ResourceGroupName "MyResourceGroup" -Name "myzone.com"
 ```
 
-Contoh ini mendapatkan zona DNS bernama myzone.com grup sumber daya yang ditentukan, lalu menyimpannya di $Zone tertentu.
+Contoh ini mendapatkan zona DNS bernama myzone.com dari grup sumber daya yang ditentukan, lalu menyimpannya dalam variabel $Zone.
 
-### Contoh 2: Mendapatkan semua zona dalam grup sumber daya
+### Contoh 2: Dapatkan semua zona dalam grup sumber daya
 ```
 PS C:\> $Zones = Get-AzDnsZone -ResourceGroupName "MyResourceGroup"
 ```
 
-Contoh ini mendapatkan semua zona DNS di grup sumber daya yang ditentukan, lalu menyimpannya di $Zones tertentu.
+Contoh ini mendapatkan semua zona DNS dalam grup sumber daya yang ditentukan, lalu menyimpannya dalam variabel $Zones.
 
-### Contoh 3: Mendapatkan semua zona dalam langganan
+### Contoh 3: Dapatkan semua zona dalam langganan
 ```
 PS C:\> $Zones = Get-AzDnsZone
 ```
 
-Contoh ini mendapatkan semua zona DNS di langganan Azure saat ini, lalu menyimpannya dalam $Zones baru.
+Contoh ini mendapatkan semua zona DNS dalam langganan Azure saat ini, lalu menyimpannya dalam variabel $Zones.
 
 ## PARAMETERS
 
 ### -Nama
-Menentukan nama zona DNS yang akan dapatkan.
+Menentukan nama zona DNS yang akan didapatkan.
 
-Jika Anda tidak menentukan nilai untuk parameter *Nama,* cmdlet ini mendapatkan semua zona DNS dalam grup sumber daya yang ditentukan.
-Jika Anda juga menghilangkan parameter *ResourceGroupName,* cmdlet ini akan mendapatkan semua zona DNS di langganan Azure saat ini.
+Jika Anda tidak menentukan nilai untuk parameter *Nama* , cmdlet ini mendapatkan semua zona DNS dalam grup sumber daya yang ditentukan.
+Jika Anda juga menghilangkan parameter *ResourceGroupName* , cmdlet ini akan mendapatkan semua zona DNS dalam langganan Azure saat ini.
 
 ```yaml
 Type: String
@@ -80,10 +80,10 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi zona DNS yang akan dapatkan.
+Menentukan nama grup sumber daya yang berisi zona DNS untuk didapatkan.
 
-Jika Anda tidak menentukan *ResourceGroupName,* maka Anda juga harus menghilangkan parameter *Name.*
-Dalam hal ini, cmdlet ini akan mendapatkan semua zona DNS dalam langganan Azure saat ini.
+Jika anda tidak menentukan *ResourceGroupName*, maka Anda juga harus menghilangkan parameter *Name* .
+Dalam hal ini, cmdlet ini mendapatkan semua zona DNS dalam langganan Azure saat ini.
 
 ```yaml
 Type: String
@@ -98,18 +98,18 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
-Cmdlet ini tidak memungkinkan Anda untuk pipa input.
+### Tidak
+Cmdlet ini tidak memungkinkan Anda untuk menyalurkan input.
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Dns.DnsZone
 Cmdlet ini mengembalikan objek yang mewakili zona DNS.
-Jika nama zona tidak ditentukan, larik objek zona akan dikembalikan.
+Jika nama zona tidak ditentukan, array objek zona akan dikembalikan.
 
 ## CATATAN
 
@@ -117,6 +117,6 @@ Jika nama zona tidak ditentukan, larik objek zona akan dikembalikan.
 
 [New-AzDnsZone](./New-AzDnsZone.md)
 
-[Remove-AzDnsZone](./Remove-AzDnsZone.md)
+[Hapus-AzDnsZone](./Remove-AzDnsZone.md)
 
 [Set-AzDnsZone](./Set-AzDnsZone.md)

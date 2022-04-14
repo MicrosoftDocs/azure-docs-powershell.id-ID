@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/update-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Update-AzIotHubDeviceTwin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Update-AzIotHubDeviceTwin.md
-ms.openlocfilehash: 65b9ace5d44698cdd626ba11135e3335e2076391
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1f814700d779f7c7b072beeaa13a0858568e62fc
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140199526"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141937535"
 ---
 # Update-AzIotHubDeviceTwin
 
 ## SYNOPSIS
-Memperbarui tag dan properti perangkat yang diinginkan dari perangkat tersebut.
+Memperbarui tag dan properti yang diinginkan dari perangkat kembar.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/update-aziothubdevicetwin) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Update-AzIotHubDeviceTwin [-ResourceId] <String> [-DeviceId] <String> [-Tag <Has
 ```
 
 ## DESCRIPTION
-Memperbarui atau mengganti perangkat di perangkat tertentu. Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-device-twins untuk informasi selengkapnya.
+Memperbarui atau mengganti perangkat kembar. Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-device-twins untuk informasi selengkapnya.
 
 ## EXAMPLES
 
@@ -49,21 +52,21 @@ Memperbarui atau mengganti perangkat di perangkat tertentu. Lihat https://docs.m
 PS C:\> Update-AzIotHubDeviceTwin -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -DeviceId "myDevice1" -Tag $updatedTag -Desired $updatedDesired -Partial
 ```
 
-Mengembalikan objek perangkat yang diperbarui.
+Mengembalikan objek kembar perangkat yang diperbarui.
 
 ### Contoh 2
 ```powershell
 PS C:\> Update-AzIotHubDeviceTwin -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -DeviceId "myDevice1" -Desired $updatedDesired -Partial
 ```
 
-Mengembalikan objek device object dengan updated desired properties.
+Mengembalikan objek kembar perangkat dengan properti yang diinginkan yang diperbarui.
 
 ### Contoh 3
 ```powershell
 PS C:\> Update-AzIotHubDeviceTwin -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -DeviceId "myDevice1" -Tag $updatedTag -Partial
 ```
 
-Mengembalikan objek device object with updated tags property.
+Mengembalikan objek kembar perangkat dengan properti tag yang diperbarui.
 
 ### Contoh 4
 ```powershell
@@ -74,7 +77,7 @@ PS C:\> $updatedDesired.add("desiredkey","desiredvalue")
 PS C:\> Update-AzIotHubDeviceTwin -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -DeviceId "myDevice1" -Tag $updatedTag -Desired $updatedDesired
 ```
 
-Mengembalikan objek suite perangkat yang diganti.
+Mengembalikan objek kembar perangkat yang diganti.
 
 ## PARAMETERS
 
@@ -93,8 +96,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Diinginkan
-Tambahkan atau perbarui properti yang diinginkan dalam properti perangkat.
+### -Dikehendaki
+Tambahkan atau perbarui properti yang diinginkan dalam perangkat twin.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sebagian
-Hanya memungkinkan untuk memperbarui tag dan properti yang diinginkan dari perangkat tertentu saja.
+Memungkinkan untuk hanya memperbarui tag sebagian dan properti yang diinginkan dari perangkat twin.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tambahkan atau perbarui properti tag di perangkat properti.
+Tambahkan atau perbarui properti tag dalam perangkat kembar.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -245,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

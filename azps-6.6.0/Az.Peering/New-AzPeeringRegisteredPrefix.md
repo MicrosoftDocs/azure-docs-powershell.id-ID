@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeeringRegisteredPrefix.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeeringRegisteredPrefix.md
 ms.openlocfilehash: 292199258950eacc29f75082bd5803f0a761ccbf
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139971069"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142044875"
 ---
 # New-AzPeeringRegisteredPrefix
 
 ## SYNOPSIS
-Membuat prefiks terdaftar untuk objek peering.
+Buat prefiks terdaftar untuk objek peering.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.peering/new-azpeeringregisteredprefix) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.peering/new-azpeeringregisteredprefix) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,19 +41,19 @@ New-AzPeeringRegisteredPrefix [-ResourceId] <String> [-Name] <String> -Prefix <S
 ```
 
 ## DESCRIPTION
-Membuat prefiks terdaftar untuk objek peering.
+Buat prefiks terdaftar untuk objek peering.
 
 ## EXAMPLES
 
-### Mendapatkan peering dan membuat prefiks terdaftar
+### Dapatkan peering dan buat prefiks terdaftar
 ```powershell
 PS C:\>$peering = Get-AzPeering -ResourceGroupName $resourceGroupName -Name $name
 PS C:\>$peering | New-AzPeeringRegisteredPrefix -Name $asnName -Asn $asn
 ```
 
-Dapatkan peering yang ingin Anda tambahkan prefiks terdaftar. Kemudian, sampaikan ke commandlet.
+Dapatkan peering yang ingin Anda tambahkan prefiks terdaftar. Lalu sampaikan itu ke komandan.
 
-### Menggunakan peering resourceId untuk membuat asn yang terdaftar
+### Menggunakan peering resourceId untuk membuat asn terdaftar
 ```powershell
 PS C:\>New-AzPeeringRegisteredPrefix -ResourceId $resourceId -Name $asnName -Asn $asn
 ```
@@ -135,7 +135,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Prefix
+### -Prefiks
 Prefiks IPv4 sesi
 
 ```yaml
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Buat atau gunakan nama grup sumber daya yang sudah ada.
+Membuat atau menggunakan nama grup sumber daya yang sudah ada.
 
 ```yaml
 Type: System.String
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Get-AzVMSize.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Get-AzVMSize.md
 ms.openlocfilehash: 46a0ffcaece93328447405f78af2af0785b329c0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132413850"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141918363"
 ---
 # Get-AzVMSize
 
 ## SYNOPSIS
-Mendapatkan ukuran mesin virtual yang tersedia.
+Dapatkan ukuran mesin virtual yang tersedia.
 
 ## SYNTAX
 
@@ -42,27 +42,27 @@ Cmdlet **Get-AzVMSize** mendapatkan ukuran mesin virtual yang tersedia.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan ukuran mesin virtual untuk lokasi
+### Contoh 1: Dapatkan ukuran mesin virtual untuk lokasi
 ```
 PS C:\> Get-AzVMSize -Location "Central US"
 ```
 
-Perintah ini menggunakan ukuran yang tersedia untuk mesin virtual di lokasi yang ditentukan.
+Perintah ini mendapatkan ukuran yang tersedia untuk mesin virtual di lokasi yang ditentukan.
 
-### Contoh 2: Mendapatkan ukuran untuk kumpulan ketersediaan
+### Contoh 2: Dapatkan ukuran untuk rangkaian ketersediaan
 ```
 PS C:\> Get-AzVMSize -ResourceGroupName "ResourceGroup03" -AvailabilitySetName "AvailabilitySet17"
 ```
 
-Perintah ini memiliki ukuran yang tersedia untuk mesin virtual yang dapat Anda gunakan di kumpulan ketersediaan bernama AvailabilitySet17.
+Perintah ini mendapatkan ukuran yang tersedia untuk mesin virtual yang dapat Anda sebarkan dalam kumpulan ketersediaan bernama AvailabilitySet17.
 
-### Contoh 3: Mendapatkan ukuran untuk mesin virtual yang sudah ada
+### Contoh 3: Dapatkan ukuran untuk mesin virtual yang sudah ada
 ```
 PS C:\> Get-AzVMSize -ResourceGroupName "ResourceGroup03" -VMName "VirtualMachine12"
 ```
 
-Perintah ini memiliki ukuran yang tersedia untuk mesin virtual yang sudah ada bernama VirtualMachine12.
-Anda dapat mengubah ukuran mesin virtual ini ke ukuran yang didagangkan perintah ini.
+Perintah ini mendapatkan ukuran yang tersedia untuk mesin virtual yang sudah ada bernama VirtualMachine12.
+Anda dapat mengubah ukuran mesin virtual ini ke ukuran yang didapatkan perintah ini.
 
 ## PARAMETERS
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi cmdlet ini mendapatkan ukuran mesin virtual yang tersedia.
+Menentukan lokasi di mana cmdlet ini mendapatkan ukuran mesin virtual yang tersedia.
 
 ```yaml
 Type: String
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: String
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual yang akan mendapatkan ukuran mesin virtual yang tersedia untuk ukuran ulang.
+Menentukan nama mesin virtual yang cmdlet ini mendapatkan ukuran mesin virtual yang tersedia untuk mengubah ukuran.
 
 ```yaml
 Type: String
@@ -142,11 +142,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
@@ -157,6 +157,6 @@ Cmdlet ini tidak menerima input apa pun.
 
 ## RELATED LINKS
 
-[Get-azvm](./Get-AzVM.md)
+[Get-AzVM](./Get-AzVM.md)
 
 

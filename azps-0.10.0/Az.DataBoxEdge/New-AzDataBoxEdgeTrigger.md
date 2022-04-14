@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeTrigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeTrigger.md
 ms.openlocfilehash: a24b5e5d4cce1e33536b7977590add11a6d7cb39
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132414315"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141917680"
 ---
 # New-AzDataBoxEdgeTrigger
 
@@ -46,7 +46,7 @@ New-AzDataBoxEdgeTrigger [-PeriodicTimerEvent] [-AsJob] [-DefaultProfile <IAzure
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataBoxEdgeTrigger** mengonfigurasi pemicu pada perangkat Data Box Edge. 
+Cmdlet **New-AzDataBoxEdgeTrigger** mengonfigurasi pemicu pada perangkat Box Edge Data. 
 
 ## EXAMPLES
 
@@ -61,7 +61,7 @@ periodic-trigger      PeriodicTimerEvent
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -FileEvent
-Pass this switch parameter to configure FileEvent Trigger
+Berikan parameter sakelar ini untuk mengonfigurasi Pemicu FileEvent
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeriodicTimerEvent
-Pass this switch parameter to configure PeriodicTimerEvent Trigger
+Berikan parameter sakelar ini untuk mengonfigurasi Pemicu PeriodicTimerEvent
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleName
-Menghitung peran terhadap kejadian yang akan dinaikkan.
+Peran komputasi terhadap kejadian mana yang akan dinaikkan.
 
 ```yaml
 Type: System.String
@@ -180,8 +180,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Schedule
-Frekuensi berkala di mana acara pengatur waktu perlu ditingkatkan. Tentukan jadwal dalam hari (antara 1 dan 365), jam (antara 1 dan 23), atau menit (antara 1 dan 59).
+### -Jadwal
+Frekuensi berkala saat kejadian timer perlu dinaikkan. Tentukan jadwal dalam salah satu hari (antara 1 dan 365), jam (antara 1 dan 23), atau menit (antara 1 dan 59).
 
 ```yaml
 Type: System.String
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShareId
-ID berbagi file yang akan disampaikan di Pemicu FileEvent
+ID berbagi file yang akan dialihkan dalam Pemicu FileEvent
 
 ```yaml
 Type: System.String
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShareName
-ID berbagi file yang akan disampaikan di Pemicu FileEvent
+ID berbagi file yang akan dialihkan dalam Pemicu FileEvent
 
 ```yaml
 Type: System.String
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Waktu dari hari yang menghasilkan pemicu yang valid. Jadwal dihitung dengan referensi ke waktu yang ditentukan hingga detik. Jika zona waktu tidak ditentukan, waktu akan dianggap sebagai zona waktu perangkat. Nilai akan selalu dikembalikan sebagai waktu UTC.
+Waktu hari yang menghasilkan pemicu yang valid. Jadwal dihitung dengan referensi ke waktu yang ditentukan hingga detik. Jika zona waktu tidak ditentukan, waktu akan dianggap berada dalam zona waktu perangkat. Nilai akan selalu dikembalikan sebagai waktu UTC.
 
 ```yaml
 Type: System.DateTime
@@ -240,8 +240,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Topic
-Topik saat kejadian berkala diterbitkan ke perangkat IoT.
+### -Topik
+Topik di mana acara berkala diterbitkan ke perangkat IoT.
 
 ```yaml
 Type: System.String
@@ -256,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -271,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -286,11 +286,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
