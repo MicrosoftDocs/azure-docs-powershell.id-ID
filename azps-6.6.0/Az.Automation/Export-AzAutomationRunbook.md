@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Export-AzAutomationRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Export-AzAutomationRunbook.md
 ms.openlocfilehash: 91bed1a7cc8ed5afad58da8a22b97438e1974bcc
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140259397"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142091139"
 ---
 # Export-AzAutomationRunbook
 
 ## SYNOPSIS
-Mengekspor buku jalankan Otomatisasi.
+Mengekspor runbook Otomatisasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/export-azautomationrunbook) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/export-azautomationrunbook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Export-AzAutomationRunbook [-Name] <String> [-Slot <String>] [-OutputFolder <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Export-AzAutomationRunbook** mengekspor runbook Azure Automation ke file skrip wps_2 (.ps1 ), untuk runbooks alur kerja wps_2 atau wps_2, atau ke file runbook grafis (.graphrunbook), untuk runbooks grafis.
+Cmdlet **Export-AzAutomationRunbook** mengekspor runbook Azure Automation ke file skrip wps_2 (.ps1), untuk runbook alur kerja wps_2 atau wps_2, atau ke file runbook grafis (.graphrunbook), untuk runbook grafis.
 Nama runbook menjadi nama file yang diekspor.
 
 ## EXAMPLES
@@ -40,12 +40,12 @@ Nama runbook menjadi nama file yang diekspor.
 PS C:\>Export-AzAutomationRunbook -ResourceGroupName "ResourceGroup01" -AutomationAccountName "ContosoAutomationAccount" -Name "Runbook03" -Slot "Published" -OutputFolder "C:\Users\PattiFuller\Desktop"
 ```
 
-Perintah ini mengekspor versi buku kerja Otomatisasi yang diterbitkan ke desktop pengguna.
+Perintah ini mengekspor versi runbook Otomatisasi yang diterbitkan ke desktop pengguna.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi di mana cmdlet ini mengekspor runbook.
+Menentukan nama akun Otomatisasi tempat cmdlet ini mengekspor runbook.
 
 ```yaml
 Type: System.String
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -74,7 +74,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 ps_force
 
 ```yaml
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -OutputFolder
-Menentukan jalur folder tempat cmdlet membuat file ekspor.
+Menentukan jalur folder tempat cmdlet ini membuat file ekspor.
 
 ```yaml
 Type: System.String
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini mengekspor runbook.
+Menentukan nama grup sumber daya tempat cmdlet ini mengekspor runbook.
 
 ```yaml
 Type: System.String
@@ -136,10 +136,10 @@ Accept wildcard characters: False
 ```
 
 ### -Slot
-Menentukan apakah cmdlet ini mengekspor draf atau konten yang diterbitkan dari runbook.
-Nilai valid adalah: 
+Menentukan apakah cmdlet ini mengekspor draf atau konten runbook yang diterbitkan.
+Nilai yang valid adalah: 
 - Diterbitkan 
-- Draf
+- Draft
 
 ```yaml
 Type: System.String
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

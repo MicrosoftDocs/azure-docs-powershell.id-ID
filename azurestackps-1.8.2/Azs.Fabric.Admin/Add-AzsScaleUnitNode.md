@@ -3,17 +3,17 @@ external help file: Azs.Fabric.Admin-help.xml
 Module Name: Azs.Fabric.Admin
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 09e2b1baf8dbc5c3326079a71672d88bbbd573097366e11c2f678a4387ea4735
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: ced1207f07360c0a18674d6f8ae4170be9b87beb
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418622"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141879314"
 ---
 # Add-AzsScaleUnitNode
 
 ## SYNOPSIS
-Menambahkan unit skala baru.
+Tambahkan unit skala baru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Add-AzsScaleUnitNode -NodeList <ScaleOutScaleUnitParameters[]> [-AwaitStorageCon
 ```
 
 ## DESCRIPTION
-Menambahkan unit skala baru.
+Tambahkan unit skala baru.
 
 ## EXAMPLES
 
@@ -39,7 +39,7 @@ Menambahkan unit skala baru.
 Add-AzsScaleUnitNode -ScaleUnitName "Azs-ERC03" -NodeList $nodeList
 ```
 
-Tambahkan node unit skala baru.
+Tambahkan simpul unit skala baru.
 
 ## PARAMETERS
 
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -AwaitStorageConvergence
-Bendera menunjukkan jika operasi harus menunggu penyimpanan memulang sebelum dikembalikan.
+Bendera menunjukkan jika operasi harus menunggu hingga penyimpanan kembali sebelum kembali.
 
 ```yaml
 Type: SwitchParameter
@@ -73,7 +73,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Jangan minta konfirmasi
 
 ```yaml
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-{{fill name description}}
+{{Fill Name Description}}
 
 ```yaml
 Type: String
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya node skala.
+ID sumber daya simpul unit skala.
 
 ```yaml
 Type: String
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Set-AzDeploymentManagerServiceTopology.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Set-AzDeploymentManagerServiceTopology.md
 ms.openlocfilehash: 61c2758c7ec5514a01df14f3ba57b47048213465
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139940461"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142233289"
 ---
 # Set-AzDeploymentManagerServiceTopology
 
@@ -18,7 +18,7 @@ ms.locfileid: "139940461"
 Memperbarui topologi layanan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.deploymentmanager/set-azdeploymentmanagerservicetopology) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.deploymentmanager/set-azdeploymentmanagerservicetopology) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Set-AzDeploymentManagerServiceTopology [-InputObject] <PSServiceTopologyResource
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzDeploymentManagerServiceTopology** memperbarui topologi layanan dengan objek topologi layanan tertentu.
+Cmdlet **Set-AzDeploymentManagerServiceTopology** memperbarui topologi layanan dengan objek topologi layanan yang ditentukan.
 Cmdlet mengembalikan objek topologi layanan yang diperbarui.
 
 ## EXAMPLES
@@ -38,7 +38,7 @@ Cmdlet mengembalikan objek topologi layanan yang diperbarui.
 PS C:\> Set-AzDeploymentManagerService -InputObject $serviceTopologyObject
 ```
 
-Perintah ini memperbarui topologi layanan yang namanya dan ResourceGroup sesuai dengan masing-masing properti Nama dan ResourceGroupName $serviceTopologyObject akan diperbarui.
+Perintah ini memperbarui topologi layanan yang nama dan ResourceGroupnya masing-masing cocok dengan properti Nama dan ResourceGroupName $serviceTopologyObject.
 Perintah mengembalikan objek topologi layanan yang diperbarui.
 
 ## PARAMETERS
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

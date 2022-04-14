@@ -3,12 +3,12 @@ external help file: Microsoft.WindowsAzure.Commands.Profile.dll-Help.xml
 ms.assetid: 159CAD26-710A-4E65-B015-015A2C336A91
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 5531d8d48282b1ff571eebddccbdefa2b0e0ad69ab7ba41b165e056110510c5a
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: effca2f1d155f7dcf0f9d922ee386265e3c0cb2b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418846"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142245449"
 ---
 # New-AzureProfile
 
@@ -94,7 +94,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Certificate
+### -Sertifikat
 ```yaml
 Type: X509Certificate2
 Parameter Sets: Certificate
@@ -107,7 +107,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Credential
+### -Kredensial
 ```yaml
 Type: PSCredential
 Parameter Sets: ServicePrincipal, Credentials
@@ -133,7 +133,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
+### -Jalur
 ```yaml
 Type: String
 Parameter Sets: File
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayCustomError.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayCustomError.md
-ms.openlocfilehash: 32738db6e0bc7e9f1172243dc353b7a95a9501a0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6ca93d8c10f493f771533077ccc351d856e7c4fb
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140381222"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142213669"
 ---
 # Add-AzApplicationGatewayCustomError
 
 ## SYNOPSIS
 Menambahkan kesalahan kustom ke gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azapplicationgatewaycustomerror) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,9 +42,9 @@ PS C:\> $updatedgateway = Add-AzApplicationGatewayCustomError -ApplicationGatewa
 PS C:\> Set-AzApplicationGateway -ApplicationGateway $AppGw
 ```
 
-Perintah ini menambahkan kesalahan kustom http kode status 502 ke gateway aplikasi $appgw, dan mengembalikan gateway yang diperbarui.
+Perintah ini menambahkan kesalahan kustom kode status http 502 ke gateway aplikasi $appgw, dan mengembalikan gateway yang diperbarui.
 
-### Contoh 2: Menambahkan kesalahan kustom pada tingkat pendengar gateway aplikasi
+### Contoh 2: Menambahkan kesalahan kustom ke tingkat pendengar gateway aplikasi
 ```powershell
  $resourceGroupName = "resourceGroupName"
  $AppGWName = "applicationGatewayName"
@@ -53,12 +56,12 @@ Perintah ini menambahkan kesalahan kustom http kode status 502 ke gateway aplika
  Set-AzApplicationGateway -ApplicationGateway $AppGw
 ```
 
-Perintah ini menambahkan kesalahan kustom http kode status 502 ke gateway aplikasi $appgw pada tingkat pendengar, dan mengembalikan gateway yang diperbarui.
+Perintah ini menambahkan kesalahan kustom kode status http 502 ke gateway aplikasi $appgw di tingkat pendengar, dan mengembalikan gateway yang diperbarui.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Gateway Aplikasi
+Application Gateway
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomErrorPageUrl
-URL halaman kesalahan kesalahan aplikasi gateway kesalahan pelanggan.
+URL halaman kesalahan kesalahan pelanggan gateway aplikasi.
 
 ```yaml
 Type: System.String
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

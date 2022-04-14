@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicyDnsSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicyDnsSetting.md
-ms.openlocfilehash: cb9462e66f0c2573a00f2bad021d8868cadabb66
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9ec9c6b9a4e38e1d237defa71760ee75020dcccb
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140570897"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142213237"
 ---
 # New-AzFirewallPolicyDnsSetting
 
 ## SYNOPSIS
 Membuat Pengaturan DNS baru untuk Kebijakan Azure Firewall
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewallpolicydnssetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,20 +32,20 @@ Cmdlet **New-AzFirewallPolicyDnsSetting** membuat Objek Pengaturan DNS untuk Keb
 
 ## EXAMPLES
 
-### 1. Membuat kebijakan kosong
+### 1. Buat kebijakan kosong
 ```powershell
 PS C:\> New-AzFirewallPolicyDnsSetting -EnableProxy
 ```
 
-Contoh ini membuat objek Pengaturan dns dengan pengaturan yang mengaktifkan proksi dns.
+Contoh ini membuat objek Pengaturan dns dengan pengaturan mengaktifkan proksi dns.
 
-### 2. Membuat kebijakan kosong dengan Mode ThreatIntel
+### 2. Buat kebijakan kosong dengan ThreatIntel Mode
 ```powershell
 PS C:\> $dnsServers = @("10.10.10.1", "20.20.20.2")
 PS C:\> New-AzFirewallPolicyDnsSetting -EnableProxy -Server $dnsServers
 ```
 
-Contoh ini membuat objek Pengaturan dns dengan pengaturan yang mengaktifkan proksi dns dan mengatur server dns kustom.
+Contoh ini membuat objek Pengaturan dns dengan pengaturan mengaktifkan proksi dns dan mengatur server dns kustom.
 
 ## PARAMETERS
 
@@ -62,8 +65,8 @@ Accept wildcard characters: False
 ```
 
 ### -EnableProxy
-Mengaktifkan Proksi DNS.
-Secara default dinonaktifkan.
+Aktifkan Proksi DNS.
+Secara default, file dinonaktifkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -124,11 +127,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

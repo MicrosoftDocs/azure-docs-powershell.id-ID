@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Submit-AzSynapseSparkJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Submit-AzSynapseSparkJob.md
 ms.openlocfilehash: 5ba12b6ff612f930affb7529951ac58986c61630
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140129175"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142117421"
 ---
 # Submit-AzSynapseSparkJob
 
 ## SYNOPSIS
-Mengirimkan pekerjaan Grafik Apik Analitik Synapse.
+Mengirimkan pekerjaan Synapse Analytics Spark.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/submit-azsynapsesparkjob) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/submit-azsynapsesparkjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Submit-AzSynapseSparkJob -SparkPoolObject <PSSynapseSparkPool> -Language <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Submit-AzSynapseSparkJob** mengirimkan pekerjaan Grafik Api Analitik Synapse.
+Cmdlet **Submit-AzSynapseSparkJob** mengirimkan pekerjaan Synapse Analytics Spark.
 
 ## EXAMPLES
 
@@ -48,7 +48,7 @@ Cmdlet **Submit-AzSynapseSparkJob** mengirimkan pekerjaan Grafik Api Analitik Sy
 PS C:\> Submit-AzSynapseSparkJob -WorkspaceName ContosoWorkspace -SparkPoolName ContosoSparkPool -Language Spark -Name WordCount_Java -MainDefinitionFile abfss://ContosoFileSystem@ContosoGen2Storage.dfs.core.windows.net/samples/java/wordcount/wordcount.jar -MainClassName WordCount -CommandLineArguments abfss://ContosoFileSystem@ContosoGen2Storage.dfs.core.windows.net/samples/java/wordcount/shakespeare.txt,abfss://ContosoFileSystem@ContosoGen2Storage.dfs.core.windows.net/samples/java/wordcount/result/ -ExecutorCount 2 -ExecutorSize Small
 ```
 
-Perintah ini mengirimkan pekerjaan Grafik Apik Analitik Synapse.
+Perintah ini mengirimkan pekerjaan Synapse Analytics Spark.
 
 ### Contoh 2
 ```powershell
@@ -66,8 +66,8 @@ Perintah ini mengirimkan pekerjaan Synapse Analytics PySpark.
 
 ## PARAMETERS
 
-### -CommandLineA argumentment
-Argumen opsional untuk pekerjaan. misalnya "--peringkasan 10000 --timeout 20s"
+### -CommandLineArgument
+Argumen opsional untuk pekerjaan tersebut. misalnya "--iteration 10000 --timeout 20s"
 
 ```yaml
 Type: System.String[]
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -Configuration
-Properti konfigurasi grafik api.
+Properti konfigurasi percikan api.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExecutorCount
-Jumlah eksekusi yang akan dialokasikan di pool Spark yang ditentukan untuk pekerjaan tersebut.
+Jumlah pelaksana yang akan dialokasikan dalam kumpulan Spark tertentu untuk pekerjaan tersebut.
 
 ```yaml
 Type: System.Int32
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExecutorSize
-Jumlah inti dan memori yang akan digunakan untuk mengeksekusi yang dialokasikan di pool Spark yang ditentukan untuk pekerjaan.
+Jumlah inti dan memori yang akan digunakan untuk pelaksana yang dialokasikan dalam kumpulan Spark tertentu untuk pekerjaan tersebut.
 
 ```yaml
 Type: System.String
@@ -142,8 +142,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Language
-Bahasa pekerjaan untuk dikirim.
+### -Bahasa
+Bahasa pekerjaan yang akan dikirimkan.
 
 ```yaml
 Type: System.String
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 
 ### -MainClassName
 Pengidentifikasi yang sepenuhnya memenuhi syarat atau kelas utama yang ada dalam file definisi utama.
-Diperlukan untuk pekerjaan Spark dan .NET Spark.
+Diperlukan untuk Spark dan .NET Spark job.
 misalnya "org.apache.spark.examples.SparkPi"
 
 ```yaml
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -MainDefinitionFile
-File utama digunakan untuk pekerjaan.
+File utama yang digunakan untuk pekerjaan tersebut.
 misalnya "abfss://filesystem@account.dfs.core.windows.net/mySpark.jar"
 
 ```yaml
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama pekerjaan Grafik Apik.
+Nama pekerjaan Spark.
 
 ```yaml
 Type: System.String
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -SparkPoolName
-Nama pool Grafik Apik Synapse.
+Nama kolam renang Synapse Spark.
 
 ```yaml
 Type: System.String
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -SparkPoolObject
-Objek input spark pool, biasanya melewati saluran.
+Objek input spark pool, biasanya melewati pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSparkPool
@@ -251,7 +251,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -267,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -282,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -297,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

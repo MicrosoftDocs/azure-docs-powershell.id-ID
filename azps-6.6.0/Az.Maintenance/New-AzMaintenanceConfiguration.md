@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/New-AzMaintenanceConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/New-AzMaintenanceConfiguration.md
 ms.openlocfilehash: 6c2eb8aaff33650e61940bbd4e08500e19481f95
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140309281"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142270357"
 ---
 # New-AzMaintenanceConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "140309281"
 Membuat atau Memperbarui catatan konfigurasi
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.maintenance/new-azmaintenanceconfiguration) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.maintenance/new-azmaintenanceconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -64,7 +64,7 @@ Membuat konfigurasi pemeliharaan dengan lingkup Host
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpirationDateTime
-KedaluwarsaTanggal Waktu jadwal dalam format YYY-MM-HH hh:mm
+TanggalDaluwarsa dari jadwal dalam format YYYY-MM-DD hh:mm
 
 ```yaml
 Type: System.String
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstallPatchRebootSetting
-Instal Opsi Mulai Ulang Patch. Nilai yang Diperbolehkan Tidak Pernah, Jika Diminta, Selalu
+Instal Patch Opsi Boot Ulang. Nilai yang diizinkan Tidak Pernah, Jika Diperlukan, Selalu
 
 ```yaml
 Type: string
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -LinuxParameterPackageNameMaskToExclude
-Daftar paket untuk dikecualikan selama operasi patch vm
+Daftar paket yang akan dikecualikan selama operasi patch vm
 
 ```yaml
 Type: HashSet[string]
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -LinuxParameterPackageNameMaskToInclude
-Daftar paket untuk disertakan selama operasi patch vm
+Daftar paket yang disertakan selama operasi patch vm
 
 ```yaml
 Type: HashSet[string]
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaintenanceScope
-Lingkup pemeliharaan.
+Lingkup Pemeliharaan.
 
 ```yaml
 Type: System.String
@@ -245,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreTask
-Daftar tugas yang dijalankan sebelum jadwal. misalnya [{'source' :'runbook', 'taskScope': 'Resource', 'parameters': { 'argument1': 'value1'}}]
+Daftar tugas yang dijalankan sebelum jadwal. misalnya [{'source' :'runbook', 'taskScope': 'Resource', 'parameters': { 'arg1': 'value1'}}]
 
 ```yaml
 Type: string
@@ -260,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### -PostTask
-Daftar tugas yang dijalankan setelah jadwal. misalnya [{'source' :'runbook', 'taskScope': 'Resource', 'parameters': { 'argument1': 'value1'}}]
+Daftar tugas yang dijalankan setelah jadwal. misalnya [{'source' :'runbook', 'taskScope': 'Resource', 'parameters': { 'arg1': 'value1'}}]
 
 ```yaml
 Type: string
@@ -305,7 +305,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartDateTime
-StartDateTime jadwal dalam format DD YYY-MM-DD hh:mm
+StartDateTime dari jadwal dalam format YYYY-MM-DD hh:mm
 
 ```yaml
 Type: System.String
@@ -320,7 +320,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag ARM.
+The ARM Tags.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -380,7 +380,7 @@ Accept wildcard characters: False
 ```
 
 ### -WindowParameterExcludeKbRequiringReboot
-Tidak termasuk KBs yang memerlukan reboot
+Tidak termasuk KB yang memerlukan boot ulang
 
 ```yaml
 Type: bool
@@ -395,7 +395,7 @@ Accept wildcard characters: False
 ```
 
 ### -WindowParameterKbNumberToExclude
-Daftar KB untuk dikecualikan selama operasi patch vm
+Daftar KB yang akan dikecualikan selama operasi patch vm
 
 ```yaml
 Type: HashSet[string]
@@ -410,7 +410,7 @@ Accept wildcard characters: False
 ```
 
 ### -WindowParameterKbNumberToInclude
-Daftar KB untuk disertakan selama operasi patch vm
+Daftar KB yang disertakan selama operasi patch vm
 
 ```yaml
 Type: HashSet[string]
@@ -425,7 +425,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -441,7 +441,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -456,7 +456,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

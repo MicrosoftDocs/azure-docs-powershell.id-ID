@@ -4,11 +4,11 @@ ms.assetid: 0E4D44EE-BF28-46FE-B2FA-D35C1651016F
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 33409d3254f270051dfa40515d99112fd539132b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422464"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141880412"
 ---
 # Reset-AzureLocalNetworkGateway
 
@@ -26,14 +26,14 @@ Reset-AzureLocalNetworkGateway -GatewayId <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Reset-AzureLocalNetworkGateway** mereset gateway jaringan lokal.
+Cmdlet **Reset-AzureLocalNetworkGateway** mengatur ulang gateway jaringan lokal.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -AddressSpace
-Menentukan ruang alamat.
+Menentukan spasi alamat.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -48,7 +48,7 @@ Accept wildcard characters: False
 ```
 
 ### -Asn
-Menentukan nomor sistem operasi (ASN).
+Menentukan nomor sistem otonom (ASN).
 
 ```yaml
 Type: UInt32
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini. Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca. Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -133,8 +133,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureLocalNetworkGateway](./Get-AzureLocalNetworkGateway.md)
 
-[New-AzureLocalNetworkGateway](./New-AzureLocalNetworkGateway.md)
+[AzureLocalNetworkGateway baru](./New-AzureLocalNetworkGateway.md)
 
-[Remove-AzureLocalNetworkGateway](./Remove-AzureLocalNetworkGateway.md)
+[Hapus-AzureLocalNetworkGateway](./Remove-AzureLocalNetworkGateway.md)
 
 

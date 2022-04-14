@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDeviceParent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDeviceParent.md
-ms.openlocfilehash: 9f6ebc50b10644a461f1ea288eea2d006f790ece
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 68a3102f68cb637a792e8735f7832505dff0078b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140381437"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142256785"
 ---
 # Get-AzIotHubDeviceParent
 
 ## SYNOPSIS
-Dapatkan perangkat induk dari perangkat yang ditentukan.
+Dapatkan perangkat induk perangkat yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubdeviceparent) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzIotHubDeviceParent [-ResourceId] <String> [-DeviceId] <String> [-DefaultPr
 ```
 
 ## DESCRIPTION
-Dapatkan perangkat induk dari perangkat non-tepi yang ditentukan.
+Dapatkan perangkat induk perangkat non-edge yang ditentukan.
 
 ## EXAMPLES
 
@@ -61,7 +64,7 @@ EdgeEnabled                : True
 DeviceScope                : ms-azure-iot-edge://myParentDevice1-637176526047419634
 ```
 
-Dapatkan perangkat induk dari perangkat non-tepi yang ditentukan.
+Dapatkan perangkat induk perangkat non-edge yang ditentukan.
 
 ## PARAMETERS
 
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceId
-Id perangkat non-tepi.
+Id perangkat non-edge.
 
 ```yaml
 Type: System.String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

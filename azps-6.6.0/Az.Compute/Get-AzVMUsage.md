@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMUsage.md
 ms.openlocfilehash: 16d3d61eda7e44fc582895b2cdf08305a2c9a5a4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140468009"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142272607"
 ---
 # Get-AzVMUsage
 
 ## SYNOPSIS
-Dapatkan penggunaan jumlah inti mesin virtual untuk suatu lokasi.
+Mendapatkan penggunaan hitungan inti mesin virtual untuk lokasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/get-azvmusage) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmusage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,21 +28,21 @@ Get-AzVMUsage [-Location] <String> [-DefaultProfile <IAzureContextContainer>] [<
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVMUsage** mendapatkan penggunaan jumlah inti mesin virtual untuk suatu lokasi.
+Cmdlet **Get-AzVMUsage** mendapatkan penggunaan hitungan inti mesin virtual untuk lokasi.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan penggunaan jumlah inti untuk suatu lokasi
+### Contoh 1: Dapatkan penggunaan hitungan inti untuk lokasi
 ```
 PS C:\> Get-AzVMUsage -Location "Central US"
 ```
 
-Perintah ini akan menggunakan jumlah inti mesin virtual untuk lokasi AS Pusat.
+Perintah ini mendapatkan penggunaan hitungan inti mesin virtual untuk lokasi As Tengah.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi di mana cmdlet ini mendapatkan penggunaan jumlah inti mesin virtual.
+Menentukan lokasi di mana cmdlet ini mendapatkan penggunaan hitungan inti mesin virtual.
 
 ```yaml
 Type: System.String
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -86,6 +86,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-azvm](./Get-AzVM.md)
+[Get-AzVM](./Get-AzVM.md)
 
 

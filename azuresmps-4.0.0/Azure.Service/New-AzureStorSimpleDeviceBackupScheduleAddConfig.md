@@ -4,11 +4,11 @@ ms.assetid: EE7EC812-640B-4672-B23C-673F912F0EDC
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: e2c7c0a76da53b2696b4ce5c4375311d228c6d5c
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423220"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142245118"
 ---
 # New-AzureStorSimpleDeviceBackupScheduleAddConfig
 
@@ -26,8 +26,8 @@ New-AzureStorSimpleDeviceBackupScheduleAddConfig -BackupType <String> -Recurrenc
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureStorSimpleDeviceBackupScheduleAddConfig** membuat **objek konfigurasi BackupScheduleBase.**
-Gunakan objek konfigurasi ini untuk membuat kebijakan pencadangan baru dengan menggunakan cmdlet **New-AzureStorSimpleDeviceBackupPolicy.**
+Cmdlet **New-AzureStorSimpleDeviceBackupScheduleAddConfig** membuat objek konfigurasi **BackupScheduleBase** .
+Gunakan objek konfigurasi ini untuk membuat kebijakan cadangan baru menggunakan cmdlet **New-AzureStorSimpleDeviceBackupPolicy** .
 
 ## EXAMPLES
 
@@ -44,8 +44,8 @@ StartTime      : 2014-12-16T00:37:19+05:30
 Status         : Enabled
 ```
 
-Perintah ini membuat cadangan objek dasar jadwal untuk pencadangan snapshot awan.
-Cadangan terjadi setiap hari, dan cadangan disimpan selama 100 hari.
+Perintah ini membuat objek dasar jadwal cadangan untuk cadangan snapshot awan.
+Pencadangan terjadi setiap hari, dan cadangan disimpan selama 100 hari.
 Jadwal ini diaktifkan dari waktu default, yang merupakan waktu saat ini.
 
 ## PARAMETERS
@@ -66,8 +66,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Enabled
-Menunjukkan apakah akan mengaktifkan jadwal pencadangan.
+### -Difungsikan
+Menunjukkan apakah akan mengaktifkan jadwal cadangan.
 
 ```yaml
 Type: Boolean
@@ -97,13 +97,13 @@ Accept wildcard characters: False
 ```
 
 ### -RecurrenceType
-Menentukan tipe pengulangan untuk jadwal pencadangan ini.
-Nilai valid adalah: 
+Menentukan tipe pengulangan untuk jadwal cadangan ini.
+Nilai yang valid adalah: 
 
 - Menit
-- Per jam
+- Setiap jam
 - Harian
-- Mingguan
+- Unduhan
 
 ```yaml
 Type: String
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 
 ### -RecurrenceValue
 Menentukan seberapa sering membuat cadangan.
-Parameter ini menggunakan unit yang ditentukan oleh parameter *RecurrenceType.*
+Parameter ini menggunakan unit yang ditentukan oleh parameter *RecurrenceType* .
 
 ```yaml
 Type: Int32
@@ -165,17 +165,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
 ### BackupScheduleBase
-Cmdlet ini mengembalikan objek **BackupScheduleBase.**
-Gunakan **BackupScheduleBase untuk** menyusun kebijakan pencadangan baru.
+Cmdlet ini mengembalikan objek **BackupScheduleBase** .
+Gunakan **BackupScheduleBase** untuk membuat kebijakan cadangan baru.
 
 ## CATATAN
 
@@ -183,6 +183,6 @@ Gunakan **BackupScheduleBase untuk** menyusun kebijakan pencadangan baru.
 
 [New-AzureStorSimpleDeviceBackupScheduleUpdateConfig](./New-AzureStorSimpleDeviceBackupScheduleUpdateConfig.md)
 
-[New-AzureStorSimpleDeviceBackupPolicy](./New-AzureStorSimpleDeviceBackupPolicy.md)
+[Baru-AzureStorSimpleDeviceBackupPolicy](./New-AzureStorSimpleDeviceBackupPolicy.md)
 
 

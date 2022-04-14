@@ -3,17 +3,17 @@ external help file: Azs.Subscriptions.Admin-help.xml
 Module Name: Azs.Subscriptions.Admin
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: daf85d7a75635a9eea2d451fc9c66e089e9071596f13f23583c1183561b1372f
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: c2314dd02cf6fff26c3f2f9c2de31bd752ccebd6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416933"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141878702"
 ---
 # Get-AzsLocation
 
 ## SYNOPSIS
-Mendapatkan daftar semua lokasi AzureStack.
+Dapatkan daftar semua lokasi AzureStack.
 
 ## SYNTAX
 
@@ -22,13 +22,13 @@ Mendapatkan daftar semua lokasi AzureStack.
 Get-AzsLocation [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsLocation [-Name] <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Mendapatkan daftar semua lokasi AzureStack.
+Dapatkan daftar semua lokasi AzureStack.
 
 ## EXAMPLES
 
@@ -37,12 +37,12 @@ Mendapatkan daftar semua lokasi AzureStack.
 Get-AzsLocation
 ```
 
-Mendapatkan daftar semua lokasi AzureStack.
+Dapatkan daftar semua lokasi AzureStack.
 
 ## PARAMETERS
 
 ### -Nama
-{{fill name description}}
+{{Fill Name Description}}
 
 ```yaml
 Type: String
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

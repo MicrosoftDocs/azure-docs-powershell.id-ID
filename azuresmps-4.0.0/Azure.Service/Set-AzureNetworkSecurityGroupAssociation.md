@@ -4,11 +4,11 @@ ms.assetid: 64639A35-0573-48C8-AB21-19FEB09537BA
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 5dee93f7d1c75bdbb1ff6f20443681880027eba1
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427453"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142243975"
 ---
 # Set-AzureNetworkSecurityGroupAssociation
 
@@ -39,7 +39,7 @@ Set-AzureNetworkSecurityGroupAssociation -Name <String> [-Force] [-PassThru] [-S
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureNetworkSecurityGroupAssociation** mengaitkan grup keamanan jaringan ke komputer virtual, platform sebagai peran layanan (PaaS), atau adaptor jaringan.
+Cmdlet **Set-AzureNetworkSecurityGroupAssociation** mengaitkan grup keamanan jaringan ke mesin virtual, platform sebagai peran layanan (PaaS), atau adaptor jaringan.
 
 ## EXAMPLES
 
@@ -49,12 +49,12 @@ PS C:\> Get-AzureVM -ServiceName "ContosoService" -Name "ContosoVM06" | Set-Azur
 ```
 
 Perintah ini mendapatkan mesin virtual bernama ContosoVM06 untuk layanan bernama ContosoService, dan meneruskan objek mesin virtual tersebut ke cmdlet saat ini.
-Cmdlet saat ini menetapkan grup keamanan jaringan bernama ContosoNetworkSecurityGroup ke komputer virtual tersebut.
+Cmdlet saat ini menetapkan grup keamanan jaringan bernama ContosoNetworkSecurityGroup ke mesin virtual tersebut.
 
 ## PARAMETERS
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: SwitchParameter
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama grup keamanan jaringan yang ditetapkan cmdlet ini.
+Menentukan nama grup keamanan jaringan yang diatur cmdlet ini.
 
 ```yaml
 Type: String
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkInterfaceName
-Menentukan nama adaptor jaringan tempat cmdlet ini menerapkan grup keamanan jaringan.
+Menentukan nama adapter jaringan tempat cmdlet ini menerapkan grup keamanan jaringan.
 
 ```yaml
 Type: String
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan. Secara default, cmdlet ini tidak menghasilkan output apa pun.
+Mengembalikan objek yang mewakili item tempat Anda bekerja. Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
 Type: SwitchParameter
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini. Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca. Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleName
-Menentukan nama peran PaaS di mana cmdlet ini menerapkan grup keamanan jaringan.
+Menentukan nama peran PaaS tempat cmdlet ini menerapkan grup keamanan jaringan.
 
 ```yaml
 Type: String
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 
 ### -ServiceName
 Menentukan nama layanan awan.
-Peran PaaS dimiliki oleh layanan yang ditentukan parameter ini.
+Peran PaaS termasuk dalam layanan yang ditentukan parameter ini.
 
 ```yaml
 Type: String
@@ -162,10 +162,10 @@ Accept wildcard characters: False
 ### -Slot
 Menentukan slot PaaS.
 Peran PaaS di mana cmdlet ini mengatur grup keamanan jaringan memiliki slot yang ditentukan parameter ini.
-Nilai valid adalah: 
+Nilai yang valid adalah: 
 
 - Produksi
-- Perekanan 
+- Pementasan 
 
 Nilai defaultnya adalah Produksi.
 
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

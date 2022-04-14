@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMImage.md
 ms.openlocfilehash: 04767f050896ece5ec9b2631879712f8c1edc385
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139942783"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142089404"
 ---
 # Get-AzVMImage
 
@@ -19,7 +19,7 @@ ms.locfileid: "139942783"
 Mendapatkan semua versi VMImage.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/get-azvmimage) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmimage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -58,7 +58,7 @@ Version        Skus               Offer         PublisherName          Location 
 4.127.20190218 2012-R2-Datacenter windowsserver MicrosoftWindowsServer centralus /Subscriptions/9e2...
 ```
 
-Perintah ini mendapatkan semua versi VMImage yang sesuai dengan nilai yang ditentukan.
+Perintah ini mendapatkan semua versi VMImage yang cocok dengan nilai yang ditentukan.
 
 ### Contoh 2: Dapatkan objek VMImage
 ```
@@ -80,7 +80,7 @@ PurchasePlan     : null
 DataDiskImages   : []
 ```
 
-Perintah ini mendapatkan versi VMImage tertentu yang sesuai dengan nilai yang ditentukan.
+Perintah ini mendapatkan versi VMImage tertentu yang cocok dengan nilai yang ditentukan.
 
 ### Contoh 3: Dapatkan objek VMImage
 ```
@@ -96,12 +96,12 @@ Version        Skus               Offer         PublisherName          Location 
 4.127.20181125 2012-R2-Datacenter windowsserver MicrosoftWindowsServer centralus /Subscriptions/9e2...
 ```
 
-Perintah ini mendapatkan semua versi VMImage yang sesuai dengan nilai tertentu dengan pemfilteran melalui versi.
+Perintah ini mendapatkan semua versi VMImage yang cocok dengan nilai yang ditentukan dengan pemfilteran melalui versi.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -EdgeZone
-Tetapkan nama lokasi yang diperluas untuk EdgeZone. Jika tidak diatur, VM Image akan ditanya dari kawasan utama Azure. Jika tidak, kueri akan diku lainnya dari lokasi diperluas yang ditentukan
+Atur nama lokasi yang diperluas untuk EdgeZone. Jika tidak diatur, VM Image akan dikueri dari wilayah utama Azure. Jika tidak, pesan akan dikueri dari lokasi yang diperluas yang ditentukan
 
 ```yaml
 Type: System.String
@@ -145,7 +145,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Offer
+### -Penawaran
 Menentukan tipe penawaran VMImage.
 Untuk mendapatkan penawaran gambar, gunakan cmdlet Get-AzVMImageOffer.
 
@@ -239,7 +239,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -255,12 +255,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzvMImageOffer](./Get-AzVMImageOffer.md)
+[Get-AzVMImageOffer](./Get-AzVMImageOffer.md)
 
 [Get-AzVMImagePublisher](./Get-AzVMImagePublisher.md)
 
-[Get-azvmImagesku](./Get-AzVMImageSku.md)
+[Get-AzVMImageSku](./Get-AzVMImageSku.md)
 
-[Save-AzvMImage](./Save-AzVMImage.md)
+[Simpan-AzVMImage](./Save-AzVMImage.md)
 
 

@@ -4,11 +4,11 @@ ms.assetid: 6A8F07D1-AC20-4950-9019-BDFB4FD3CF69
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 95c57c2d92caa3c1827c5dab009af5161ef5aae0
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424096"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141879964"
 ---
 # Set-AzureVMCustomScriptExtension
 
@@ -35,7 +35,7 @@ Set-AzureVMCustomScriptExtension [[-ReferenceName] <String>] [[-Version] <String
  [-InformationVariable <String>] [<CommonParameters>]
 ```
 
-### UninstalleCustomScriptExtension
+### Menghapus instalanCustomScriptExtension
 ```
 Set-AzureVMCustomScriptExtension [[-ReferenceName] <String>] [[-Version] <String>] [-Uninstall] [-ForceUpdate]
  -VM <IPersistentVM> [-Profile <AzureSMProfile>] [-InformationAction <ActionPreference>]
@@ -73,7 +73,7 @@ Perintah ini mengatur informasi untuk ekstensi skrip kustom mesin virtual menggu
 ## PARAMETERS
 
 ### -Argumen
-Menentukan string yang menyuplai argumen yang dijalankan cmdlet ini pada mesin virtual.
+Menentukan string yang menyediakan argumen yang dijalankan cmdlet ini pada mesin virtual.
 
 ```yaml
 Type: String
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerName
-Menentukan wadah nama dalam akun penyimpanan.
+Menentukan nama kontainer di dalam akun penyimpanan.
 
 ```yaml
 Type: String
@@ -102,8 +102,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Disable
-Mengindikasikan bahwa cmdlet ini menonaktifkan status ekstensi.
+### -Non-fungsikan
+Menunjukkan bahwa cmdlet ini menonaktifkan status ekstensi.
 
 ```yaml
 Type: SwitchParameter
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -NamaFile
-Menentukan array string yang berisi nama file blob dalam wadah yang ditentukan.
+Menentukan array string yang berisi nama file blob dalam wadah tertentu.
 
 ```yaml
 Type: String[]
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceUpdate
-Mengindikasikan bahwa cmdlet ini menerapkan ulang konfigurasi ke ekstensi saat konfigurasi belum diperbarui.
+Menunjukkan bahwa cmdlet ini menerapkan ulang konfigurasi ke ekstensi ketika konfigurasi belum diperbarui.
 
 ```yaml
 Type: SwitchParameter
@@ -163,16 +163,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -202,8 +202,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -220,10 +220,10 @@ Accept wildcard characters: False
 ### -ReferenceName
 Menentukan nama referensi untuk ekstensi.
 
-Parameter ini adalah string yang ditentukan pengguna yang bisa digunakan untuk merujuk ke ekstensi.
-Ekstensi ditentukan saat ekstensi ditambahkan ke mesin virtual untuk pertama kalinya.
-Untuk pembaruan berikutnya, Anda perlu menentukan nama referensi yang digunakan sebelumnya saat memperbarui ekstensi.
-*NamaReferensi* yang ditetapkan untuk ekstensi dikembalikan menggunakan cmdlet **Get-AzureVM.**
+Parameter ini adalah string yang ditentukan pengguna yang dapat digunakan untuk merujuk ke ekstensi.
+Ini ditentukan ketika ekstensi ditambahkan ke mesin virtual untuk pertama kalinya.
+Untuk pembaruan berikutnya, Anda perlu menentukan nama referensi yang sebelumnya digunakan saat memperbarui ekstensi.
+*ReferenceName* yang ditetapkan ke ekstensi dikembalikan menggunakan cmdlet **Get-AzureVM**.
 
 ```yaml
 Type: String
@@ -237,8 +237,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Run
-Menentukan perintah yang dijalankan oleh ekstensi pada komputer virtual ini.
+### -Jalankan
+Menentukan perintah cmdlet ini dijalankan oleh ekstensi pada mesin virtual.
 Hanya "powershell.exe" yang didukung.
 
 ```yaml
@@ -281,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Menentukan nama akun penyimpanan di langganan saat ini.
+Menentukan nama akun penyimpanan dalam langganan saat ini.
 
 ```yaml
 Type: String
@@ -295,7 +295,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -StorageEndpointFix
+### -StorageEndpointSuffix
 Menentukan titik akhir layanan penyimpanan.
 
 ```yaml
@@ -310,8 +310,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Uninstall
-Mengindikasikan bahwa cmdlet ini menghapus instalan ekstensi skrip kustom dari komputer virtual.
+### -Hapus instalan
+Menunjukkan bahwa cmdlet ini menghapus instalan ekstensi skrip kustom dari mesin virtual.
 
 ```yaml
 Type: SwitchParameter
@@ -356,7 +356,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

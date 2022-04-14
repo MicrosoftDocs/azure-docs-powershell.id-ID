@@ -4,16 +4,16 @@ ms.assetid: D37920D3-AF6C-4CFC-B9A3-8ED931AEC0DC
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 242bb42160b709292f8146c5db6e1eebca2be6fb
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426259"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141880232"
 ---
 # Set-AzureServiceExtension
 
 ## SYNOPSIS
-Menambahkan ekstensi layanan awan ke penggunaan.
+Menambahkan ekstensi layanan awan ke penyebaran.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -40,7 +40,7 @@ Set-AzureServiceExtension [[-ServiceName] <String>] [[-Slot] <String>] [[-Role] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureServiceExtension** menambahkan ekstensi layanan awan ke penggunaan.
+Cmdlet **Set-AzureServiceExtension** menambahkan ekstensi layanan cloud ke penyebaran.
 
 ## EXAMPLES
 
@@ -56,14 +56,14 @@ Perintah ini menambahkan layanan awan ke penyebaran.
 PS C:\> Set-AzureServiceExtension -Service $Svc -Slot "Production" -Role "WebRole1" -ExtensionName "RDP" -ProviderNamespace "Microsoft.Windows.Azure.Extensions" -PublicConfiguration $P1 -PrivateConfiguration $P2;
 ```
 
-Perintah ini menambahkan layanan awan ke penggunaan untuk peran tertentu.
+Perintah ini menambahkan layanan awan ke penyebaran untuk peran tertentu.
 
 ## PARAMETERS
 
 ### -CertificateThumbprint
-Menentukan thumbprint sertifikat yang akan digunakan untuk mengenkripsi konfigurasi privat.
+Menentukan sidik jari sertifikat untuk digunakan untuk mengenkripsi konfigurasi privat.
 Sertifikat ini harus sudah ada di penyimpanan sertifikat.
-Jika Anda tidak menentukan sertifikat, cmdlet ini membuat sertifikat.
+Jika Anda tidak menentukan sertifikat, cmdlet ini akan membuat sertifikat.
 
 ```yaml
 Type: String
@@ -108,16 +108,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -162,8 +162,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -208,8 +208,8 @@ Accept wildcard characters: False
 ```
 
 ### -Peran
-Menentukan array peran opsional yang akan menentukan konfigurasi desktop jarak jauh.
-Jika parameter ini tidak ditentukan, konfigurasi desktop jarak jauh akan diterapkan sebagai konfigurasi default untuk semua peran.
+Menentukan array peran opsional untuk menentukan konfigurasi desktop jarak jauh.
+Jika parameter ini tidak ditentukan, konfigurasi desktop jarak jauh diterapkan sebagai konfigurasi default untuk semua peran.
 
 ```yaml
 Type: String[]
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Menentukan nama layanan Azure penyebaran.
+Menentukan nama layanan Azure dari penyebaran.
 
 ```yaml
 Type: String
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 
 ### -Slot
 Menentukan lingkungan penyebaran untuk diubah.
-Nilai yang valid adalah: Produksi atau Pementasan.
+Nilai yang valid adalah: Produksi atau Staging.
 
 ```yaml
 Type: String
@@ -255,8 +255,8 @@ Accept wildcard characters: False
 ```
 
 ### -ThumbprintAlgorithm
-Menentukan algoritma hashing thumbprint yang digunakan dengan thumbprint untuk mengidentifikasi sertifikat.
-Parameter ini bersifat opsional dan defaultnya adalah bayangan1.
+Menentukan algoritma hash sidik jari yang digunakan dengan sidik jari untuk mengidentifikasi sertifikat.
+Parameter ini opsional dan defaultnya adalah sha1.
 
 ```yaml
 Type: String
@@ -286,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### -X509Certificate
-Menentukan sertifikat X.509 yang secara otomatis diunggah ke layanan awan dan digunakan untuk mengenkripsi konfigurasi privat ekstensi.
+Menentukan sertifikat X.509 yang diunggah secara otomatis ke layanan awan dan digunakan untuk mengenkripsi konfigurasi pribadi ekstensi.
 
 ```yaml
 Type: X509Certificate2
@@ -301,7 +301,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -313,6 +313,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureServiceExtension](./Get-AzureServiceExtension.md)
 
-[Remove-AzureServiceExtension](./Remove-AzureServiceExtension.md)
+[Hapus-AzureServiceExtension](./Remove-AzureServiceExtension.md)
 
 

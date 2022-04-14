@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Update-AzCognitiveServicesAccountNetworkRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Update-AzCognitiveServicesAccountNetworkRuleSet.md
-ms.openlocfilehash: 83d90b7118c8aff2db69189df9a1ea5a266b1ce7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 650903f7f68d7799b3544707e665fae25365f209
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140010531"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141854582"
 ---
 # Update-AzCognitiveServicesAccountNetworkRuleSet
 
 ## SYNOPSIS
-Memperbarui properti NetworkRule dari akun Layanan Kognitif
+Memperbarui properti NetworkRule dari akun Cognitive Services
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cognitiveservices/update-azcognitiveservicesaccountnetworkruleset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,37 +30,37 @@ Update-AzCognitiveServicesAccountNetworkRuleSet [-ResourceGroupName] <String> [-
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzCognitiveServicesAccountNetworkRuleSet** memperbarui properti NetworkRule dari akun Layanan Kognitif
+Cmdlet **Update-AzCognitiveServicesAccountNetworkRuleSet** memperbarui properti NetworkRule dari akun Cognitive Services
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui semua properti NetworkRule, input Aturan dengan JSON
+### Contoh 1: Memperbarui semua properti NetworkRule, aturan input dengan JSON
 ```powershell
 Update-AzCognitiveServicesAccountNetworkRuleSet -ResourceGroupName "myResourceGroup" -Name "myaccount" -DefaultAction Allow -IpRule (@{IpAddressOrRange="200.0.0.0/24"},@{IpAddressOrRange="28.2.0.0/16"})
     -VirtualNetworkRule (@{VirtualNetworkResourceId="/subscriptions/s1/resourceGroups/g1/providers/Microsoft.Network/virtualNetworks/vnet1/subnets/subnet1"},@{VirtualNetworkResourceId="/subscriptions/s1/resourceGroups/g1/providers/Microsoft.Network/virtualN
     etworks/vnet2/subnets/subnet2"})
 ```
 
-Perintah ini memperbarui semua properti NetworkRule, input Aturan dengan JSON.
+Perintah ini memperbarui semua properti NetworkRule, Aturan input dengan JSON.
 
-### Contoh 2: Perbarui properti Bypass NetworkRule
+### Contoh 2: Properti Bypass Pembaruan dari NetworkRule
 ```powershell
 Update-AzCognitiveServicesAccountNetworkRuleSet -ResourceGroupName "myResourceGroup" -Name "myaccount"
 ```
 
-Perintah ini memperbarui properti Bypass NetworkRule (properti lainnya tidak akan berubah).
+Perintah ini memperbarui properti Bypass networkrule (properti lain tidak akan berubah).
 
-### Contoh 3: Bersihkan aturan NetworkRule dari akun Cognitive Services
+### Contoh 3: Membersihkan aturan NetworkRule dari akun Cognitive Services
 ```powershell
 Update-AzCognitiveServicesAccountNetworkRuleSet -ResourceGroupName "myResourceGroup" -Name "myaccount" -IpRule @() -VirtualNetworkRule @()
 ```
 
-Perintah ini membersihkan aturan Aturan Jaringan dari akun Layanan Kognitif (properti lain tidak berubah).
+Perintah ini membersihkan aturan NetworkRule dari akun Cognitive Services (properti lain tidak berubah).
 
 ## PARAMETERS
 
 ### -DefaultAction
-Fungsi DefaultAction Akun Layanan Kognitif. Nilai default `Deny`.
+Akun Layanan Kognitif NetworkRule DefaultAction. Nilai `Deny`default .
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.CognitiveServices.Models.PSNetWorkRuleDefaultActionEnum
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpRule
-Layanan Kognitif Akun NetworkRule IpRules.
+Cognitive Services Account NetworkRule IpRules.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.CognitiveServices.Models.PSIpRule[]
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrJob.md
-ms.openlocfilehash: df31e4c856a521fc0681e8b5f2fe502fec31d4de
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 440293c2e4c15b94981fdfa16c2bd104972b0de9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140371322"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142211077"
 ---
 # Get-AzRecoveryServicesAsrJob
 
 ## SYNOPSIS
-Mendapatkan detail pekerjaan ASR yang ditentukan atau daftar pekerjaan ASR terbaru di vault Layanan Pemulihan.
+Mendapatkan detail pekerjaan ASR yang ditentukan atau daftar pekerjaan ASR terbaru dalam kubah Layanan Pemulihan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,8 +39,8 @@ Get-AzRecoveryServicesAsrJob -Job <ASRJob> [-DefaultProfile <IAzureContextContai
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesAsrJob** mendapatkan pekerjaan Pemulihan Situs Azure.
-Anda dapat menggunakan cmdlet ini untuk melihat pekerjaan ASR dalam vault Layanan Pemulihan.
+Cmdlet **Get-AzRecoveryServicesAsrJob** mendapatkan pekerjaan Azure Site Recovery.
+Anda dapat menggunakan cmdlet ini untuk melihat pekerjaan ASR dalam kubah Layanan Pemulihan.
 
 ## EXAMPLES
 
@@ -46,11 +49,11 @@ Anda dapat menggunakan cmdlet ini untuk melihat pekerjaan ASR dalam vault Layana
 PS C:\> $jobs = Get-AzRecoveryServicesAsrJob -TargetObjectId $ASRObjectId
 ```
 
-Mengembalikan semua pekerjaan pada objek ASR tertentu(mereferensikan objek ASR seperti item yang direplikasi atau rencana pemulihan dengan ID-nya.) 
+Mengembalikan semua pekerjaan pada objek ASR tertentu(mereferensikan objek ASR seperti item yang direplikasi atau rencana pemulihan menurut ID-nya.) 
 
 ### Contoh 2
 
-Mendapatkan detail pekerjaan ASR yang ditentukan atau daftar pekerjaan ASR terbaru di vault Layanan Pemulihan. (otomatisgenerated)
+Mendapatkan detail pekerjaan ASR yang ditentukan atau daftar pekerjaan ASR terbaru dalam kubah Layanan Pemulihan. (autogenerasi)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Get-AzRecoveryServicesAsrJob -Job $Job
@@ -77,8 +80,8 @@ Accept wildcard characters: False
 ### -EndTime
 Menentukan waktu akhir untuk pekerjaan.
 Cmdlet ini mendapatkan semua pekerjaan yang dimulai sebelum waktu yang ditentukan.
-Untuk mendapatkan objek **DateTime** bagi parameter ini, gunakan Get-Date cmdlet.
-Untuk informasi selengkapnya, ketik `Get-Help Get-Date`.
+Untuk mendapatkan objek **DateTime** untuk parameter ini, gunakan cmdlet Get-Date.
+Untuk informasi selengkapnya, ketik .`Get-Help Get-Date`
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -Job
-Menentukan objek pekerjaan ASR untuk mendapatkan detail terbaru.
+Menentukan objek pekerjaan ASR untuk mendapatkan detail yang diperbarui.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRJob
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Tentukan pekerjaan ASR berdasarkan nama.
+Tentukan tugas ASR menurut nama.
 
 ```yaml
 Type: System.String
@@ -140,13 +143,13 @@ Accept wildcard characters: False
 
 ### -Negara Bagian
 Menentukan status untuk pekerjaan ASR.
-Cmdlet ini mendapatkan semua pekerjaan yang cocok dengan status yang ditentukan.
+Cmdlet ini mendapatkan semua pekerjaan yang sesuai dengan status yang ditentukan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - NotStarted
 - InProgress
 - Berhasil
-- Lainnya
+- Lain
 - Gagal
 - Dibatalkan
 - Ditangguhkan
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetObjectId
-Menentukan ID objek. Digunakan untuk mencari pekerjaan pada objek tertentu.
+Menentukan ID objek. Digunakan untuk mencari pekerjaan pada objek yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -194,7 +197,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Restart-AzRecoveryServicesAsrJob](./Restart-AzRecoveryServicesAsrJob.md)
+[Mulai ulang-AzRecoveryServicesAsrJob](./Restart-AzRecoveryServicesAsrJob.md)
 
 [Resume-AzRecoveryServicesAsrJob](./Resume-AzRecoveryServicesAsrJob.md)
 

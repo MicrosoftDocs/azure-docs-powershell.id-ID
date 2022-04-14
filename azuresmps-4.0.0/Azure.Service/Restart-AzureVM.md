@@ -4,11 +4,11 @@ ms.assetid: 596B8A6F-D3C2-4170-BCD7-B7A1CDB656D8
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 36520cac5ec0fba3760787e675ea9855d00cd901
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422047"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141880285"
 ---
 # Restart-AzureVM
 
@@ -19,7 +19,7 @@ Memulai ulang mesin virtual Azure.
 
 ## SYNTAX
 
-### RestartByName (Default)
+### Mulai UlangByName (Default)
 ```
 Restart-AzureVM [-Name] <String> [-ServiceName] <String> [-Profile <AzureSMProfile>]
  [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
@@ -31,13 +31,13 @@ Restart-AzureVM [-Name] <String> [-Redeploy] [-ServiceName] <String> [-Profile <
  [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
 ```
 
-### InitiateMaintenanceByName
+### InisiateMaintenanceByName
 ```
 Restart-AzureVM [-Name] <String> [-InitiateMaintenance] [-ServiceName] <String> [-Profile <AzureSMProfile>]
  [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
 ```
 
-### Mulai UlangInput
+### Mulai ulangInput
 ```
 Restart-AzureVM -VM <PersistentVM> [-ServiceName] <String> [-Profile <AzureSMProfile>]
  [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
@@ -49,44 +49,44 @@ Restart-AzureVM -VM <PersistentVM> [-Redeploy] [-ServiceName] <String> [-Profile
  [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
 ```
 
-### InitiateMaintenanceInput
+### InisiateMaintenanceInput
 ```
 Restart-AzureVM -VM <PersistentVM> [-InitiateMaintenance] [-ServiceName] <String> [-Profile <AzureSMProfile>]
  [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Mulai Ulang-AzureVM** meminta mulai ulang komputer virtual Azure.
+Cmdlet **Restart-AzureVM** meminta dimulai ulang mesin virtual Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Hidupkan ulang mesin virtual
+### Contoh 1: Memulai ulang mesin virtual
 ```
 PS C:\> Restart-AzureVM -ServiceName "MyService01" -Name "MyVM"
 ```
 
-Perintah ini memulai ulang mesin virtual VirtualMachine27 yang berjalan di layanan Azure yang bernama Service01.
+Perintah ini memulai ulang mesin virtual VirtualMachine27 yang berjalan di layanan Azure bernama Service01.
 
-### Contoh 2: Mulai ulang mesin virtual dengan menggunakan objek mesin virtual
+### Contoh 2: Hidupkan ulang mesin virtual dengan menggunakan objek mesin virtual
 ```
 PS C:\> Get-AzureVM -ServiceName "MyService01" -Name "VirtualMachine27" | Restart-AzureVM
 ```
 
-Perintah ini mengambil objek mesin virtual untuk komputer virtual bernama MyVM, lalu memulai ulang.
+Perintah ini mengambil objek mesin virtual untuk mesin virtual bernama MyVM lalu memulai ulang.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -InitiateMaintenance
-Memulai Pemeliharaan di Komputer Virtual
+Memulai Pemeliharaan pada Mesin Virtual
 
 ```yaml
 Type: SwitchParameter
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama komputer virtual untuk memulai ulang.
+Menentukan nama mesin maya untuk memulai ulang.
 
 ```yaml
 Type: String
@@ -146,8 +146,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -Redeploy
-Menunjukkan bahwa cmdlet akan menjelaskan kembali mesin virtual tersebut.
+Menunjukkan bahwa cmdlet meneploy ulang mesin virtual.
 
 ```yaml
 Type: SwitchParameter
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Menentukan nama layanan Azure yang berisi mesin virtual untuk dimulai ulang.
+Menentukan nama layanan Azure yang berisi mesin virtual untuk memulai ulang.
 
 ```yaml
 Type: String
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan objek mesin virtual yang mengidentifikasi komputer virtual untuk memulai ulang.
+Menentukan objek mesin virtual yang mengidentifikasi mesin virtual untuk memulai ulang.
 
 ```yaml
 Type: PersistentVM
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -219,12 +219,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureVM](./Get-AzureVM.md)
 
-[Remove-AzureVM](./Remove-AzureVM.md)
+[Hapus-AzureVM](./Remove-AzureVM.md)
 
 [Start-AzureVM](./Start-AzureVM.md)
 
 [Stop-AzureVM](./Stop-AzureVM.md)
 
-[Update-AzureVM](./Update-AzureVM.md)
+[Perbarui-AzureVM](./Update-AzureVM.md)
 
 

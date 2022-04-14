@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.blueprint/import
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Import-AzBlueprintWithArtifact.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Import-AzBlueprintWithArtifact.md
-ms.openlocfilehash: 5cc2e8f4b9153a57fdd0dff02cf12bb2c244c0ea
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1b8b4f7b64403ef0ac887688dfac003ac01f125e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140572230"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142037495"
 ---
 # Import-AzBlueprintWithArtifact
 
 ## SYNOPSIS
-Impor file cetak biru dalam format JSON ke objek cetak biru dan simpan dalam grup manajemen atau langganan yang ditentukan.
+Impor file cetak biru dalam format JSON ke objek cetak biru dan simpan dalam grup manajemen atau langganan tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.blueprint/import-azblueprintwithartifact) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Import-AzBlueprintWithArtifact -Name <String> [-SubscriptionId <String>] [-Manag
 ```
 
 ## DESCRIPTION
-Impor definisi cetak biru dengan artifaknya. 
+Impor definisi cetak biru dengan artefaknya. 
 
 ## EXAMPLES
 
@@ -35,7 +38,7 @@ Impor definisi cetak biru dengan artifaknya.
 Import-AzBlueprintWithArtifact -Name MySimpleBlueprint -SubscriptionId 00000000-1111-0000-1111-000000000000 -InputPath  C:\Blueprints\SimpleBlueprint
 ```
 
-Impor definisi cetak biru dengan artifaknya dan simpan dalam langganan.
+Impor definisi cetak biru dengan artefaknya dan simpan dalam langganan.
 
 ## PARAMETERS
 
@@ -54,8 +57,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Saat diatur ke true, eksekusi tidak akan meminta konfirmasi.
+### -Paksa
+Ketika diatur ke true, eksekusi tidak akan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -69,8 +72,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -IncludeSubFolders
-Jika diatur ke benar, artifak dalam subfolder akan disertakan.
+### -IncludeSubFolder
+Ketika diatur ke true, artefak dalam subfolder akan disertakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputPath
-Jalur ke file JSON Cetak Biru di disk.
+Jalur ke file Blueprint JSON di disk.
 
 ```yaml
 Type: System.String
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementGroupId
-Id Grup Manajemen tempat definisi cetak biru akan disimpan.
+Id Grup Manajemen tempat definisi cetak biru berada atau akan disimpan.
 
 ```yaml
 Type: System.String
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Id Langganan tempat definisi cetak biru disimpan atau disimpan.
+Id Langganan tempat definisi cetak biru berada atau akan disimpan.
 
 ```yaml
 Type: System.String
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

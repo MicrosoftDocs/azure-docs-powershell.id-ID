@@ -3,12 +3,12 @@ external help file: Microsoft.WindowsAzure.Commands.StorSimple.dll-Help.xml
 ms.assetid: 23272A36-8F55-41A8-AFC9-2EEE0FA55DA3
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 3b3349cca92613d337a1fb3738dc2d88e6b85ed849b60db9700974f34e0919c6
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 1005403eb7c36aad4a31ac1b4499b8ae2ac68901
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419300"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142245357"
 ---
 # Import-AzureStorSimpleLegacyVolumeContainer
 
@@ -19,20 +19,20 @@ Memulai migrasi wadah volume.
 
 ## SYNTAX
 
-### MigrateSpecificContainer
+### Melakukan migrasiSpecificContainer
 ```
 Import-AzureStorSimpleLegacyVolumeContainer -LegacyConfigId <String> -LegacyContainerNames <String[]>
  [-SkipACRs] [-Force] [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
 
-### MigrateAllContainer
+### Melakukan migrasiAllContainer
 ```
 Import-AzureStorSimpleLegacyVolumeContainer -LegacyConfigId <String> [-All] [-SkipACRs] [-Force]
  [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Import-AzureStorSimpleLegacyVolumeContainer** memulai migrasi wadah volume dari peralatan warisan untuk peralatan target.
+Cmdlet **Import-AzureStorSimpleLegacyVolumeContainer** memulai migrasi wadah volume dari alat warisan ke alat target.
 
 ## EXAMPLES
 
@@ -42,22 +42,22 @@ PS C:\>Import-AzureStorSimpleLegacyVolumeContainer -LegacyConfigId "c5a831e1-788
 Import started, Please check status with Get-AzureStorSimpleLegacyVolumeContainerStatus commandlet
 ```
 
-Perintah ini mengimpor penampung volume warisan untuk wadah bernama.
-Cmdlet memulai pengi impor, lalu mengembalikan pesan.
+Perintah ini mengimpor wadah volume warisan untuk kontainer bernama.
+Cmdlet memulai impor, lalu mengembalikan pesan.
 
-### Contoh 2: Mengimpor semua wadah volume warisan
+### Contoh 2: Impor semua wadah volume warisan
 ```
 PS C:\>Import-AzureStorSimpleLegacyVolumeContainer -LegacyConfigId "c5a831e1-7888-44f4-adf1-92994be630c3" -All
 Import started, Please check status with Get-AzureStorSimpleLegacyVolumeContainerStatus commandlet
 ```
 
-Perintah ini mengimpor semua penampung volume warisan dari file konfigurasi yang diimpor.
-Cmdlet memulai pengi impor, lalu mengembalikan pesan.
+Perintah ini mengimpor semua wadah volume warisan dari file konfigurasi yang diimpor.
+Cmdlet memulai impor, lalu mengembalikan pesan.
 
 ## PARAMETERS
 
 ### -Semua
-Mengindikasikan bahwa cmdlet ini mengimpor semua wadah volume dalam file konfigurasi yang diimpor ke perangkat target.
+Menunjukkan bahwa cmdlet ini mengimpor semua wadah volume dalam file konfigurasi yang diimpor ke perangkat target.
 
 ```yaml
 Type: SwitchParameter
@@ -71,8 +71,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Menunjukkan bahwa cmdlet ini mengimpor wadah volume di perangkat lain, meskipun wadah volume telah diimpor pada perangkat lain.
+### -Paksa
+Menunjukkan bahwa cmdlet ini mengimpor wadah volume pada perangkat yang berbeda, bahkan jika wadah volume telah diimpor pada perangkat lain.
 
 ```yaml
 Type: SwitchParameter
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -LegacyConfigId
-Menentukan ID unik konfigurasi alat warisan.
+Menentukan ID unik konfigurasi peralatan warisan.
 
 ```yaml
 Type: String
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -LegacyContainerNames
-Menentukan array nama kontainer volume tempat rencana migrasi diterapkan.
+Menentukan array nama kontainer volume tempat paket migrasi diterapkan.
 
 ```yaml
 Type: String[]
@@ -117,8 +117,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -132,8 +132,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SkipACRs
-Menunjukkan bahwa proses impor melompati catatan kontrol akses untuk migrasi.
+### -SkipACR
+Menunjukkan bahwa proses impor melewati catatan kontrol akses untuk migrasi.
 
 ```yaml
 Type: SwitchParameter
@@ -148,14 +148,14 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
 ### String
-Perintah ini mengembalikan status pekerjaan wadah volume impor migrasi jika telah berhasil dimulai dalam alat.
+Perintah ini mengembalikan status pekerjaan penampung volume impor migrasi jika telah berhasil dimulai di peralatan.
 
 ## CATATAN
 
@@ -163,6 +163,6 @@ Perintah ini mengembalikan status pekerjaan wadah volume impor migrasi jika tela
 
 [Get-AzureStorSimpleLegacyVolumeContainerStatus](./Get-AzureStorSimpleLegacyVolumeContainerStatus.md)
 
-[Import-AzureStorSimpleLegacyApplianceConfig](./Import-AzureStorSimpleLegacyApplianceConfig.md)
+[Impor-AzureStorSimpleLegacyApplianceConfig](./Import-AzureStorSimpleLegacyApplianceConfig.md)
 
 

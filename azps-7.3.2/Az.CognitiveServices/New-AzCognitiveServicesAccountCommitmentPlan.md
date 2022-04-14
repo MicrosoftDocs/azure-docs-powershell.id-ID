@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/New-AzCognitiveServicesAccountCommitmentPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/New-AzCognitiveServicesAccountCommitmentPlan.md
-ms.openlocfilehash: d0840b34f1687cdc54e9feee2aff11d329218d26
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c41a629bc4b198574a2a2690687a122061bf889d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140001678"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141854691"
 ---
 # New-AzCognitiveServicesAccountCommitmentPlan
 
 ## SYNOPSIS
-Membuat Rencana Komitmen untuk akun Layanan Kognitif
+Membuat CommitmentPlan untuk akun Cognitive Services
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cognitiveservices/new-azcognitiveservicesaccountcommitmentplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzCognitiveServicesAccountCommitmentPlan [-ResourceGroupName] <String> [-Acc
 ```
 
 ## DESCRIPTION
-Membuat Rencana Komitmen untuk akun Layanan Kognitif
+Membuat CommitmentPlan untuk akun Cognitive Services
 
 ## EXAMPLES
 
@@ -35,11 +38,11 @@ Membuat Rencana Komitmen untuk akun Layanan Kognitif
 New-AzCognitiveServicesAccountDeployment -ResourceGroupName cognitive-services-resource-group -AccountName resource-name -Name "plan" -Properties $properties
 ```
 
-Membuat Rencana Komitmen untuk akun Layanan Kognitif Yang dapat digunakan untuk `New-AzCognitiveServicesObject` membuat objek CommitmentPlanProperties
+Buat CommitmentPlan untuk akun Layanan Kognitif yang dapat Anda gunakan `New-AzCognitiveServicesObject` untuk membuat objek CommitmentPlanProperties
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama Akun Layanan Kognitif.
 
 ```yaml
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

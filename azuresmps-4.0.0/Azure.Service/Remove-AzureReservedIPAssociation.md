@@ -4,16 +4,16 @@ ms.assetid: A6964C80-1991-46FC-84C8-5B00616386BE
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: e6bbcaa7091b16123db3b3f6625b35f190f583eb
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422071"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142244557"
 ---
 # Remove-AzureReservedIPAssociation
 
 ## SYNOPSIS
-Menghapus asosiasi dari alamat IP khusus untuk VM atau layanan cloud.
+Menghapus asosiasi dari alamat IP khusus ke VM atau layanan awan.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -26,8 +26,8 @@ Remove-AzureReservedIPAssociation [-ReservedIPName] <String> [-ServiceName] <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureReservedIPAssociation** memisahkan alamat IP khusus dari komputer virtual (VM) atau Layanan Cloud.
-Ketika operasi selesai, alamat IP khusus tidak gratis dan VM/VIP akan mendapatkan Alamat IP publik dinamis dari Inventaris Azure.
+Cmdlet **Remove-AzureReservedIPAssociation** memisahkan alamat IP khusus dari mesin virtual (VM) atau Cloud Service.
+Setelah operasi selesai, alamat IP khusus gratis dan VM/VIP mendapatkan Alamat IP publik dinamis dari Azure Inventory.
 
 ## EXAMPLES
 
@@ -36,15 +36,15 @@ Ketika operasi selesai, alamat IP khusus tidak gratis dan VM/VIP akan mendapatka
 PS C:\> Remove-AzureReservedIPAssociation -ReservedIPName "ResIp14" -ServiceName "PipTestWestEurope"
 ```
 
-Perintah ini memisahkan alamat IP khusus yang bernama ResIp14 dari layanan yang bernama PipTestWestEurope.
-PipTestWestEurope akan ditetapkan menjadi VIP dinamis baru.
+Perintah ini memisahkan alamat IP khusus bernama ResIp14 dari layanan bernama PipTestWestEurope.
+PipTestWestEurope akan diberi VIP dinamis baru.
 
 ## PARAMETERS
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
-Gunakan bendera ini untuk melewati pesan peringatan saat menghapus asosiasi IP khusus.
+Gunakan bendera ini untuk melewati pesan peringatan ketika menghapus asosiasi IP khusus.
 
 ```yaml
 Type: SwitchParameter
@@ -59,16 +59,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -98,8 +98,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 
 ### -Slot
 Menentukan lingkungan penyebaran.
-Nilai yang dapat diterima untuk parameter ini adalah: Produksi, Perekanan.
+Nilai yang dapat diterima untuk parameter ini adalah: Produksi, Staging.
 
 ```yaml
 Type: String
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualIPName
-Menentukan alamat IP virtual untuk menghapus keterkaitan dengan layanan atau VM.
+Menentukan alamat IP virtual untuk menghapus asosiasi dengan layanan atau VM.
 
 ```yaml
 Type: String
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

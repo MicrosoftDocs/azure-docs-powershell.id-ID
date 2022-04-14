@@ -4,11 +4,11 @@ ms.assetid: 71302FB6-7E2B-4972-A743-AB537AC7CD79
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 1532e519ddf7f4ca1df0a1813497c21ce818c656
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428088"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142245575"
 ---
 # Get-AzureStorSimpleAccessControlRecord
 
@@ -24,17 +24,17 @@ Get-AzureStorSimpleAccessControlRecord [-ACRName <String>] [-Profile <AzureSMPro
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureStorSimpleAccessControlRecord** mendapatkan catatan kontrol akses di konfigurasi layanan StorSimple Manager.
-Cmdlet ini mendapatkan semua catatan atau catatan bernama.
+Cmdlet **Get-AzureStorSimpleAccessControlRecord** mendapatkan catatan kontrol akses dalam konfigurasi layanan StorSimple Manager.
+Cmdlet ini mendapatkan semua rekaman atau rekaman bernama.
 
-Rekaman kontrol Access adalah wadah dari parameter inisiator iSCSI.
+Catatan kontrol Access adalah wadah parameter inisiator iSCSI.
 Parameter ini menentukan inisiator mana yang dapat mengakses volume.
-Saat initiator iSCSI berusaha menghubungkan ke volume, alat Anda memeriksa catatan kontrol akses yang ditetapkan untuk volume tersebut.
-Jika parameter inisiator iSCSI cocok dengan salah satu entri di kontrol akses rekaman yang dipetakan ke volume itu, inisiator iSCSI bisa menyambungkan.
+Saat inisiator iSCSI mencoba menyambungkan ke volume, peralatan Anda memeriksa catatan kontrol akses yang ditetapkan ke volume tersebut.
+Jika parameter inisiator iSCSI cocok dengan salah satu entri dalam rekaman kontrol akses yang dipetakan ke volume tersebut, inisiator iSCSI dapat tersambung.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua rekaman kontrol akses
+### Contoh 1: Dapatkan semua catatan kontrol akses
 ```
 PS C:\>Get-AzureStorSimpleAccessControlRecord
 InstanceId                           Name                        InitiatorName               VolumeCount
@@ -45,9 +45,9 @@ InstanceId                           Name                        InitiatorName  
 d508d6f0-fcda-4624-b223-c0b307d6113e Linux_XYUSFL350_ACR         iqn.1991-05.com.microsof... 9
 ```
 
-Perintah ini akan mendapatkan semua rekaman kontrol akses.
+Perintah ini mendapatkan semua catatan kontrol akses.
 
-### Contoh 2: Mendapatkan rekaman kontrol akses tertentu
+### Contoh 2: Mendapatkan catatan kontrol akses tertentu
 ```
 PS C:\>Get-AzureStorSimpleAccessControlRecord -ACRName "Acr11"
 VERBOSE: ClientRequestId: 61f261c7-acd3-4bcc-922a-ddfd85eb767b_PS
@@ -68,7 +68,7 @@ Perintah ini mendapatkan catatan kontrol akses bernama Acr11.
 ## PARAMETERS
 
 ### -ACRName
-Menentukan nama dari kontrol akses rekaman untuk mendapatkan.
+Menentukan nama catatan kontrol akses untuk didapatkan.
 
 ```yaml
 Type: String
@@ -98,20 +98,20 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
 ### AccessControlRecord, IList\<AccessControlRecord\>
-Cmdlet ini mengembalikan **objek AccessControlRecord** atau objek **\<AccessControlRecord\> IList.**
+Cmdlet ini mengembalikan objek **AccessControlRecord** atau objek **IList\<AccessControlRecord\>** .
 Objek **AccessControlRecord** berisi bidang berikut ini: 
 
 - **GlobalId** (**String**) 
-- **InitiatorName** (**String**) 
+- **InisiatorName** (**String**) 
 - **InstanceId** (**String**) 
 - **Nama** (**String**) 
 - **OperationInProgress** (**OperationInProgress**) 
@@ -121,9 +121,9 @@ Objek **AccessControlRecord** berisi bidang berikut ini:
 
 ## RELATED LINKS
 
-[New-AzureStorSimpleAccessControlRecord](./New-AzureStorSimpleAccessControlRecord.md)
+[Baru-AzureStorSimpleAccessControlRecord](./New-AzureStorSimpleAccessControlRecord.md)
 
-[Remove-AzureStorSimpleAccessControlRecord](./Remove-AzureStorSimpleAccessControlRecord.md)
+[Hapus-AzureStorSimpleAccessControlRecord](./Remove-AzureStorSimpleAccessControlRecord.md)
 
 [Set-AzureStorSimpleAccessControlRecord](./Set-AzureStorSimpleAccessControlRecord.md)
 

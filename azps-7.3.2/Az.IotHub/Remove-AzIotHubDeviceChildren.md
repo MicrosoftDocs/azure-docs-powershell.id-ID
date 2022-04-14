@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/remove-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Remove-AzIotHubDeviceChildren.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Remove-AzIotHubDeviceChildren.md
-ms.openlocfilehash: 05c1aa712d71d174a4e64fed5a3305a8d6552c1e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2b0331ab2ef15d2eb09940e98cd8621978c147c3
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140186670"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142256641"
 ---
 # Remove-AzIotHubDeviceChildren
 
 ## SYNOPSIS
-Hapus perangkat non tepi saat anak-anak dari perangkat tepi yang ditentukan.
+Hapus perangkat non edge sebagai anak dari perangkat edge yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/remove-aziothubdevicechildren) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Remove-AzIotHubDeviceChildren [-ResourceId] <String> [-DeviceId] <String> [-Chil
 ```
 
 ## DESCRIPTION
-Hapus semua atau perangkat non-tepi yang disebutkan sebagai perangkat anak tepi yang ditentukan.
+Hapus semua perangkat non-edge atau yang disebutkan sebagai perangkat tepi yang ditentukan anak-anak.
 
 ## EXAMPLES
 
@@ -59,12 +62,12 @@ PS C:\> Remove-AzIotHubDeviceChildren -ResourceGroupName "myresourcegroup" -IotH
 True
 ```
 
-Hapus semua perangkat non-tepi seperti anak perangkat tepi yang ditentukan.
+Hapus semua perangkat non-tepi sebagai perangkat tepi yang ditentukan anak-anak.
 
 ## PARAMETERS
 
 ### -Anak-anak
-Daftar perangkat anak (dipisahkan koma) hanya mencakup perangkat non-tepi.
+Daftar perangkat anak (dipisahkan koma) hanya menyertakan perangkat non-edge.
 
 ```yaml
 Type: System.String[]
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

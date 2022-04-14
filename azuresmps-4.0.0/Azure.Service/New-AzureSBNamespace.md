@@ -3,12 +3,12 @@ external help file: Microsoft.WindowsAzure.Commands.dll-Help.xml
 ms.assetid: 0C806C0A-C199-4AF4-AE2A-11A2467A0873
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 9df42fa96562c224ed6b553b1cae94d1e241ea69b0a29adf03a13539a78b6fc9
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 5ed3f08c1817b87feb86235a8758ce34cce3fb14
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419223"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142245295"
 ---
 # New-AzureSBNamespace
 
@@ -25,8 +25,8 @@ New-AzureSBNamespace -Name <String> [-Location <String>] [-CreateACSNamespace <B
 ```
 
 ## DESCRIPTION
-Topik ini menguraikan cmdlet dalam modul Microsoft Azure PowerShell versi 0.8.10.
-Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Topik ini menjelaskan cmdlet dalam versi 0.8.10 modul Microsoft Azure PowerShell.
+Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik .`(Get-Module -Name Azure).Version`
 
 Cmdlet **New-AzureSBNamespace** membuat ruang nama layanan untuk digunakan dengan Bus Layanan di Azure.
 
@@ -34,15 +34,15 @@ Cmdlet **New-AzureSBNamespace** membuat ruang nama layanan untuk digunakan denga
 
 ## EXAMPLES
 
-### Contoh 1: Buat ruang nama layanan
+### Contoh 1: Membuat ruang nama layanan
 ```
 PS C:\> New-AzureSBNamespace -Name myNameSpace -Location East US 
 PS C:\> New-AzureSBNamespace myNameSpace 'East US'
 ```
 
 Contoh membuat ruang nama layanan untuk digunakan dengan Bus Layanan di Azure.
-Kedua contoh menyertakan nilai parameter yang diperlukan, tetapi hanya contoh pertama yang menyertakan nama parameter.
-Contoh kedua dapat digunakan karena kedua parameter berposisikan dan nilainya diberikan dalam urutan yang diperlukan.
+Kedua contoh menyertakan nilai parameter yang diperlukan, tetapi hanya yang pertama yang menyertakan nama parameter.
+Contoh kedua dapat digunakan karena kedua parameter bersifat posisi dan nilainya diberikan dalam urutan yang diperlukan.
 
 ## PARAMETERS
 
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -NamespaceType
-Tentukan apakah akan menggunakan ruang nama untuk Pesan atau Hub Pemberitahuan.
+Tentukan apakah akan menggunakan ruang nama untuk Olahpesan atau Hub Pemberitahuan.
 
 ```yaml
 Type: NamespaceType
@@ -107,8 +107,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -133,6 +133,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Remove-AzureSBNamespace](./Remove-AzureSBNamespace.md)
+[Hapus-AzureSBNamespace](./Remove-AzureSBNamespace.md)
 
 

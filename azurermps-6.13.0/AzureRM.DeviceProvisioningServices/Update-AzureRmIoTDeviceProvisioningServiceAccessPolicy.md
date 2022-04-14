@@ -5,17 +5,17 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DeviceProvisioningServices/Commands.DeviceProvisioningServices/help/Update-AzureRmIoTDeviceProvisioningServiceAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DeviceProvisioningServices/Commands.DeviceProvisioningServices/help/Update-AzureRmIoTDeviceProvisioningServiceAccessPolicy.md
-ms.openlocfilehash: 709abbadd3b5bdfbaeab49cf79fbaa95b0b4ffda3a20739729e9677f729fcf88
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: f5d750dc795619f32f6c4f16a5fe1e3b5e111106
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140864675"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142141840"
 ---
 # Update-AzureRmIoTDeviceProvisioningServiceAccessPolicy
 
 ## SYNOPSIS
-Memperbarui kebijakan akses bersama dalam layanan penyediaan perangkat Azure IoT Hub.
+Perbarui kebijakan akses bersama dalam layanan penyediaan perangkat Azure IoT Hub.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -42,7 +42,7 @@ Update-AzureRmIoTDeviceProvisioningServiceAccessPolicy [-ResourceId] <String> [-
 ```
 
 ## DESCRIPTION
-Untuk pengenalan layanan penyediaan perangkat Azure IoT Hub, lihat https://docs.microsoft.com/en-us/azure/iot-dps/about-iot-dps.
+Untuk pengenalan Azure IoT Hub Layanan Penyediaan Perangkat, lihat https://docs.microsoft.com/en-us/azure/iot-dps/about-iot-dps.
 
 ## EXAMPLES
 
@@ -58,7 +58,7 @@ SecondaryKey        : vbIwGCBQCIbS5BKFKdddM6uZHLhNTuz9r8CZYgmTmpY=
 Rights              : EnrollmentWrite
 ```
 
-Perbarui kebijakan akses "mypolicy" dalam layanan penyediaan perangkat Azure IoT Hub dengan hak EnrollmentWrite.
+Kebijakan akses pembaruan "mypolicy" dalam layanan penyediaan perangkat Azure IoT Hub dengan PendaftaranMengakhirkan dengan benar.
 
 ### Contoh 1
 ```
@@ -72,7 +72,7 @@ SecondaryKey        : vbIwGCBQCIbS5BKFKdddM6uZHLhNTuz9r8CZYgmTmpY=
 Rights              : EnrollmentWrite
 ```
 
-Perbarui kebijakan akses "mypolicy" dalam layanan penyediaan perangkat Azure IoT Hub dengan EnrollmentWrite langsung menggunakan pipeline.
+Kebijakan akses pembaruan "mypolicy" dalam layanan penyediaan perangkat Azure IoT Hub dengan PendaftaranMengakhirkan langsung menggunakan pipeline.
 
 ## PARAMETERS
 
@@ -136,7 +136,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Permissions
+### -Izin
 Izin kebijakan akses Layanan Penyediaan Perangkat IoT
 
 ```yaml
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Layanan Penyediaan Perangkat Iot
+Id Sumber Daya Layanan Penyediaan Perangkat IoT
 
 ```yaml
 Type: System.String
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

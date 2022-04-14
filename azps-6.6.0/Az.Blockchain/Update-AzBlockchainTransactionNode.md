@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blockchain/help/Update-AzBlockchainTransactionNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blockchain/help/Update-AzBlockchainTransactionNode.md
 ms.openlocfilehash: e910c02e72ec903389e671abb750cf66c4d3b88b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140336821"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141872474"
 ---
 # Update-AzBlockchainTransactionNode
 
 ## SYNOPSIS
-Perbarui node transaksi.
+Perbarui simpul transaksi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.blockchain/update-azblockchaintransactionnode) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.blockchain/update-azblockchaintransactionnode) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,11 +36,11 @@ Update-AzBlockchainTransactionNode -InputObject <IBlockchainIdentity> [-Firewall
 ```
 
 ## DESCRIPTION
-Perbarui node transaksi.
+Perbarui simpul transaksi.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui node transkasi
+### Contoh 1: Memperbarui simpul transkasi
 ```powershell
 PS C:\> $tag = @{'key1'='update'}
 PS C:\> Update-AzBlockchainTransactionNode -BlockchainMemberName dolauli002 -Name transacnode002 -ResourceGroupName testgroup -Tag $tag
@@ -50,9 +50,9 @@ Name           Type                                                    Location
 transacnode002 Microsoft.Blockchain/blockchainMembers/transactionNodes eastus
 ```
 
-Perintah ini akan memperbarui simpul transaksi.
+Perintah ini memperbarui simpul transaksi.
 
-### Contoh 2: Memperbarui node transkasi
+### Contoh 2: Memperbarui simpul transkasi
 ```powershell
 PS C:\> $tag = @{'key2'='update'}
 PS C:\> $tNode = Get-AzBlockchainMember -BlockchainMemberName dolauli002 -ResourceGroupName testgroup -Name transacnode002
@@ -63,12 +63,12 @@ Name           Type                                                    Location
 transacnode002 Microsoft.Blockchain/blockchainMembers/transactionNodes eastus
 ```
 
-Perintah ini akan memperbarui simpul transaksi.
+Perintah ini memperbarui simpul transaksi.
 
 ## PARAMETERS
 
-### -TemplatMemberName
-Nama anggota Blokir.
+### -BlockchainMemberName
+Nama anggota Blockchain.
 
 ```yaml
 Type: System.String
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 
 ### -FirewallRule
 Mendapatkan atau mengatur aturan firewall.
-Untuk membuat, lihat bagian CATATAN untuk properti FIREWALLRULE dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti FIREWALLRULE dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Blockchain.Models.Api20180601Preview.IFirewallRule[]
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Blockchain.Models.IBlockchainIdentity
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama node transaksi.
+Nama simpul transaksi.
 
 ```yaml
 Type: System.String
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Password
-Mengatur kata sandi auth titik akhir dns transaksi.
+Mengatur kata sandi auth dasar titik akhir titik akhir node transaksi.
 
 ```yaml
 Type: System.Security.SecureString
@@ -159,8 +159,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya tersebut.
-Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+Nama grup sumber daya yang berisi sumber daya.
+Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
 
 ```yaml
 Type: System.String
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+ID langganan adalah bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,15 +222,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Cmdlets.Cmdlets.Models.IBlockchainIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.Blockchain.Models.IBlockchainIdentity
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Cmdlets.Cmdlets.Models.Api20180601Preview.ITransactionNode
+### Microsoft.Azure.PowerShell.Cmdlets.Blockchain.Models.Api20180601Preview.ITransactionNode
 
 ## CATATAN
 
@@ -242,18 +242,18 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 FIREWALLRULE <IFirewallRule[]>: Mendapatkan atau mengatur aturan firewall.
-  - `[EndIPAddress <String>]`: Mendapatkan atau mengatur alamat IP akhir dari rentang aturan firewall.
+  - `[EndIPAddress <String>]`: Mendapatkan atau mengatur alamat IP akhir rentang aturan firewall.
   - `[RuleName <String>]`: Mendapatkan atau mengatur nama aturan firewall.
-  - `[StartIPAddress <String>]`: Mendapatkan atau mengatur alamat IP awal dari rentang aturan firewall.
+  - `[StartIPAddress <String>]`: Mendapatkan atau mengatur alamat IP mulai rentang aturan firewall.
 
 INPUTOBJECT <IBlockchainIdentity>: Parameter Identitas
-  - `[BlockchainMemberName <String>]`: Nama anggota Server 365.
+  - `[BlockchainMemberName <String>]`: Nama anggota Blockchain.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama lokasi.
-  - `[OperationId <String>]`: Id Operasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya tersebut. Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
-  - `[SubscriptionId <String>]`: Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
-  - `[TransactionNodeName <String>]`: Nama node transaksi.
+  - `[OperationId <String>]`: Operation Id.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
+  - `[SubscriptionId <String>]`: Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan adalah bagian dari URI untuk setiap panggilan layanan.
+  - `[TransactionNodeName <String>]`: Nama simpul transaksi.
 
 ## RELATED LINKS
 

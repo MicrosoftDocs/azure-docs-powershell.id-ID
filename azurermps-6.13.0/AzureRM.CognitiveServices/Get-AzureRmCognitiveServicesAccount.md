@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/CognitiveServices/Commands.Management.CognitiveServices/help/Get-AzureRmCognitiveServicesAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/CognitiveServices/Commands.Management.CognitiveServices/help/Get-AzureRmCognitiveServicesAccount.md
 ms.openlocfilehash: 3f139d4164c092f6ef57ad29d5ab9ad3eac59b56
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424559"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142142734"
 ---
 # Get-AzureRmCognitiveServicesAccount
 
@@ -35,8 +35,8 @@ Get-AzureRmCognitiveServicesAccount [-ResourceGroupName] <String> [-Name] <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmCognitiveServicesAccount** mendapatkan akun Layanan Kognitif yang disediakan di grup sumber daya yang ditentukan oleh parameter *ResoureGroupName.*
-Jika Anda tidak menentukan parameter *ResoureGroupName,* cmdlet ini akan mendapatkan semua akun Layanan Kognitif untuk langganan saat ini.
+Cmdlet **Get-AzureRmCognitiveServicesAccount** mendapatkan akun Cognitive Services yang disediakan dalam grup sumber daya yang ditentukan oleh parameter *ResoureGroupName* .
+Jika Anda tidak menentukan parameter *ResoureGroupName* , cmdlet ini mendapatkan semua akun Cognitive Services untuk langganan saat ini.
 
 ## EXAMPLES
 
@@ -62,7 +62,7 @@ Tags              :
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama akun Layanan Kognitif yang akan dapatkan.
+Menentukan nama akun Cognitive Services yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang ditetapkan ke akun Layanan Kognitif.
+Menentukan nama grup sumber daya tempat akun Layanan Kognitif ditetapkan.
 
 ```yaml
 Type: System.String
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -133,9 +133,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmCognitiveServicesAccount](./New-AzureRmCognitiveServicesAccount.md)
+[Baru-AzureRmCognitiveServicesAccount](./New-AzureRmCognitiveServicesAccount.md)
 
-[Remove-AzureRmCognitiveServicesAccount](./Remove-AzureRmCognitiveServicesAccount.md)
+[Hapus-AzureRmCognitiveServicesAccount](./Remove-AzureRmCognitiveServicesAccount.md)
 
 [Set-AzureRmCognitiveServicesAccount](./Set-AzureRmCognitiveServicesAccount.md)
 

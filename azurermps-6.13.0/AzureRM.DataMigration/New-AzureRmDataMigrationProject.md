@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataMigration/Commands.DataMigration/help/New-AzureRmDataMigrationProject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataMigration/Commands.DataMigration/help/New-AzureRmDataMigrationProject.md
 ms.openlocfilehash: 9abb97e5006f6572c7a0b08d8d25bcc55906a765
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140866622"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142141967"
 ---
 # New-AzureRmDataMigrationProject
 
 ## SYNOPSIS
-Membuat proyek Layanan Migrasi Database Azure yang baru.
+Membuat proyek Azure Database Migration Service baru.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -46,7 +46,7 @@ New-AzureRmDataMigrationProject [-ResourceId] <String> -Location <String> -Name 
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzureRmDataMigrationProject membuat proyek Azure Database Migration Service baru. Cmdlet ini mengambil semua parameter yang diperlukan, seperti nama Grup Sumber Daya Azure, nama Layanan Migrasi Data Azure tempat proyek baru akan dibuat, kawasan tempat proyek akan dibuat, nama unik proyek baru, objek koneksi sumber dan target, dan objek tipe target,  sebagai input untuk daftar database yang akan dimigrasikan. Gunakan cmdlet New-AzureRmDataMigrationConnectionInfo cmdlet untuk membuat objek ConnectionInfo baru untuk koneksi sumber dan target. Daftar Microsoft.Azure.Management.DataMigration.Models.DatabaseInfo diharapkan untuk database yang dipilih; objek ini dapat dibuat menggunakan cmdlet New-AzureRmDataMigrationDatabaseInfo. 
+Cmdlet New-AzureRmDataMigrationProject membuat proyek Azure Database Migration Service baru. Cmdlet ini mengambil semua parameter yang diperlukan, seperti nama Grup Sumber Daya Azure, nama Layanan Migrasi Data Azure tempat proyek baru akan dibuat, kawasan tempat proyek akan dibuat, nama unik proyek baru, objek koneksi sumber dan target, dan objek tipe target,  sebagai input untuk daftar database yang akan dimigrasikan. Gunakan cmdlet New-AzureRmDataMigrationConnectionInfo untuk membuat objek ConnectionInfo baru baik untuk koneksi sumber maupun target. Daftar Microsoft.Azure.Management.DataMigration.Models.DatabaseInfo diharapkan untuk database yang dipilih; objek ini dapat dibuat menggunakan cmdlet New-AzureRmDataMigrationDatabaseInfo. 
 
 ## EXAMPLES
 
@@ -55,7 +55,7 @@ Cmdlet New-AzureRmDataMigrationProject membuat proyek Azure Database Migration S
 PS C:\> New-AzureRmDataMigrationProject -ResourceGroupName MyResourceGroup -ServiceName TestService -ProjectName MyDMSProject -Location "central us"  -SourceType SQL -TargetType SQLDB -SourceConnection $sourceConnInfo -TargetConnection $targetConnInfo -DatabaseInfo $dbList
 ```
 
-Contoh di atas memperlihatkan cara membuat proyek baru bernama MyDMSProject yang terletak di kawasan AS Tengah di bawah contoh Layanan Migrasi Database Azure bernama TestService.
+Contoh di atas memperlihatkan cara membuat proyek baru bernama MyDMSProject yang terletak di kawasan AS Tengah di bawah contoh Azure Database Migration Service bernama TestService.
 
 ## PARAMETERS
 
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek PSDataMigrationService.
+PSDataMigrationService Object.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataMigration.Models.PSDataMigrationService
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi instans Layanan Migrasi Database Azure.
+Lokasi instans Azure Database Migration Service.
 
 ```yaml
 Type: System.String
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-DataMigrationService Resource Id.
+Id Sumber Daya DataMigrationService.
 
 ```yaml
 Type: System.String
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Nama instans Layanan Migrasi Database Azure.
+Nama instans Azure Database Migration Service.
 
 ```yaml
 Type: System.String
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -270,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

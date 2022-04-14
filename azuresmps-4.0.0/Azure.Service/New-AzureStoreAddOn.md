@@ -4,16 +4,16 @@ ms.assetid: 793037C4-8FE5-4799-B59B-94C1605D9F4E
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 433ef847864a799614c6cb1def5e2fa82d303a86
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422909"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142245259"
 ---
 # New-AzureStoreAddOn
 
 ## SYNOPSIS
-Membeli instans add-on baru.
+Membeli contoh add-on baru.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,8 +25,8 @@ New-AzureStoreAddOn -Name <String> -AddOn <String> -Plan <String> -Location <Str
 ```
 
 ## DESCRIPTION
-Topik ini menguraikan cmdlet dalam modul Microsoft Azure PowerShell versi 0.8.10.
-Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Topik ini menjelaskan cmdlet dalam versi 0.8.10 modul Microsoft Azure PowerShell.
+Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik .`(Get-Module -Name Azure).Version`
 
 Membeli instans add-on baru dari Azure Store.
 
@@ -48,7 +48,7 @@ Contoh ini menggunakan kode promosi untuk membeli add-on.
 
 ## PARAMETERS
 
-### -AddOn
+### -Add-On
 Menentukan ID add-on.
 
 ```yaml
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi contoh add-on.
+Menentukan lokasi instans add-on.
 
 ```yaml
 Type: String
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Rencana
-Menentukan ID paket.
+Menentukan ID rencana.
 
 ```yaml
 Type: String
@@ -109,8 +109,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -124,8 +124,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kode Promosi
-Menentukan kode promosi yang akan berlaku untuk pembelian.
+### -PromotionCode
+Menentukan kode promosi untuk diterapkan pada pembelian.
 
 ```yaml
 Type: String
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -152,7 +152,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureStoreAddOn](./Get-AzureStoreAddOn.md)
 
-[Remove-AzureStoreAddOn](./Remove-AzureStoreAddOn.md)
+[Hapus-AzureStoreAddOn](./Remove-AzureStoreAddOn.md)
 
 [Set-AzureStoreAddOn](./Set-AzureStoreAddOn.md)
 

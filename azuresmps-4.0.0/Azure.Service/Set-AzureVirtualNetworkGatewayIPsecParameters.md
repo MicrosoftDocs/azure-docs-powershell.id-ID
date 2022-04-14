@@ -4,11 +4,11 @@ ms.assetid: 150EE0DC-07CD-4E24-AF70-0C1A7BB61433
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 5450ecf28536013fa2d815033928b7bbd78bb91f
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426521"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141879967"
 ---
 # Set-AzureVirtualNetworkGatewayIPsecParameters
 
@@ -33,7 +33,7 @@ Cmdlet **Set-AzureVirtualNetworkGatewayIPsecParameters** mengatur parameter IPse
 ## PARAMETERS
 
 ### -ConnectedEntityId
-Menentukan ID entitas tersambung.
+Menentukan ID entitas yang tersambung.
 
 ```yaml
 Type: String
@@ -82,11 +82,11 @@ Accept wildcard characters: False
 ```
 
 ### -PfsGroup
-Menentukan grup forward secrecy (PFS) yang sempurna.
+Menentukan grup kesempurnaan ketahanan maju (PFS).
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - PFS1
-- Tidak ada
+- Tidak
 
 ```yaml
 Type: String
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini. Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca. Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -SADataSizeKilobytes
-Menentukan ukuran, dalam kilobyte, dari asosiasi keamanan (SA).
+Menentukan ukuran, dalam kilobyte, asosiasi keamanan (SA).
 
 ```yaml
 Type: Int32
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

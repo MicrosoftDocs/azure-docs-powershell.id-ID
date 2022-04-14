@@ -4,16 +4,16 @@ Module Name: Azs.Storage.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 34d5c967154f08526a0002f187b8cb869d933d39
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136580241"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142134809"
 ---
 # Get-AzsStorageContainer
 
 ## SYNOPSIS
-Mengembalikan daftar wadah yang dapat dimigrasikan dalam berbagi yang ditentukan.
+Mengembalikan daftar kontainer yang dapat dimigrasikan dalam share yang ditentukan.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-AzsStorageContainer [-FarmName] <String> [-ShareName] <String> [[-ResourceGr
 ```
 
 ## DESCRIPTION
-Mengembalikan daftar wadah yang dapat dimigrasikan dalam berbagi yang ditentukan.
+Mengembalikan daftar kontainer yang dapat dimigrasikan dalam share yang ditentukan.
 
 ## EXAMPLES
 
@@ -37,7 +37,7 @@ Dapatkan daftar wadah yang dapat dimigrasikan dalam berbagi yang ditentukan.
 ## PARAMETERS
 
 ### -FarmName
-Id Farm.
+Id Pertanian.
 
 ```yaml
 Type: String
@@ -52,7 +52,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShareName
-Bagikan nama yang menyimpan wadah penyimpanan.
+Bagikan nama yang berisi wadah penyimpanan.
 
 ```yaml
 Type: String
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxCount
-Maksimum hitungan wadah.
+Jumlah maksimal kontainer.
 
 ```yaml
 Type: Int32
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartIndex
-Indeks awal dapatkan wadah.
+Indeks awal mendapatkan kontainer.
 
 ```yaml
 Type: Int32
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

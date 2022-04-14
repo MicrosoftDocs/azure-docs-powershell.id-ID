@@ -5,17 +5,20 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubSchemaGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubSchemaGroup.md
-ms.openlocfilehash: 07f31a606c5e47df00e424b0b9cc010051783e86
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0cba6834b86e93ecd14d21973243014e60b15b86
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140186909"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142257811"
 ---
 # Get-AzEventHubSchemaGroup
 
 ## SYNOPSIS
 Mendapatkan grup skema tertentu dari ruang nama atau mencantumkan semua grup skema dalam ruang nama.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/get-azeventhubschemagroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzEventHubSchemaGroup [-ResourceId] <String> [-DefaultProfile <IAzureContext
 ```
 
 ## DESCRIPTION
-Kumpulan Get-AzEventHubSchemaGroup mendapatkan grup skema tertentu dari ruang nama atau mencantumkan semua grup skema dalam ruang nama.
+Get-AzEventHubSchemaGroup mendapatkan grup skema tertentu dari ruang nama atau mencantumkan semua grup skema dalam ruang nama.
 
 ## EXAMPLES
 
@@ -49,7 +52,7 @@ SchemaType          : Avro
 GroupProperties     : {key1:value1, name:name}
 ```
 
-Mendapatkan detail grup skema \`myschemagroup di \`\` mynamespace dalam\` grup sumber daya \`myresourcegroup\`.
+Mendapatkan detail grup skema myschemagroup di mynamespace\` dalam grup \`sumber daya myresourcegroup\`.\`\` \`
 
 ### Contoh 1
 ```powershell
@@ -72,7 +75,7 @@ SchemaType          : Avro
 GroupProperties     : {key1:value1, name:name}
 ```
 
-Mendapatkan daftar semua grup skema di \`mynamespace dalam\` grup sumber daya \`grup myresourcegroup\`.
+Mendapatkan daftar semua grup skema di \`mynamespace\` dalam grup \`sumber daya myresourcegroup\`.
 
 ## PARAMETERS
 
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Namespace Resource Id
+Id Sumber Daya Ruang Nama
 
 ```yaml
 Type: System.String
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

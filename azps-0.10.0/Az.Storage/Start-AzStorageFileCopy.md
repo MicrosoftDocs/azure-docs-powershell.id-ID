@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/Start-AzStorageFileCopy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/Start-AzStorageFileCopy.md
 ms.openlocfilehash: 3336820514bbf4a949be2657d5955079efa87fac
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420568"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142091613"
 ---
 # Start-AzStorageFileCopy
 
@@ -20,7 +20,7 @@ Mulai menyalin file sumber.
 
 ## SYNTAX
 
-### ContainerName
+### NamaPengguna
 ```
 Start-AzStorageFileCopy -SrcBlobName <String> -SrcContainerName <String> -DestShareName <String>
  -DestFilePath <String> [-Context <IStorageContext>] [-DestContext <IStorageContext>] [-Force]
@@ -107,27 +107,27 @@ Cmdlet **Start-AzStorageFileCopy** mulai menyalin file sumber ke file tujuan.
 
 ## EXAMPLES
 
-### Contoh 1: Mulai operasi penyalinan dari file ke file menggunakan nama dan nama file bersama
+### Contoh 1: Mulai operasi salin dari file ke file menggunakan nama berbagi dan nama file
 ```
 PS C:\>Start-AzStorageFileCopy -SrcShareName "ContosoShare01" -SrcFilePath "FilePath01" -DestShareName "ContosoShare02" -DestFilePath "FilePath02"
 ```
 
-Perintah ini memulai operasi penyalinan dari file ke file.
+Perintah ini memulai operasi salin dari file ke file.
 Perintah menentukan nama berbagi dan nama file
 
-### Contoh 2: Mulai operasi salin dari blob ke file dengan menggunakan nama wadah dan nama blob
+### Contoh 2: Mulai operasi salin dari blob ke file dengan menggunakan nama kontainer dan nama blob
 ```
 PS C:\>Start-AzStorageFileCopy -SrcContainerName "ContosoContainer01" -SrcBlobName "ContosoBlob01" -DestShareName "ContosoShare" -DestFilePath "FilePath02"
 ```
 
-Perintah ini memulai operasi penyalinan dari blob ke file.
-Perintah menentukan nama wadah dan nama blob
+Perintah ini memulai operasi salin dari blob ke file.
+Perintah menentukan nama kontainer dan nama blob
 
 ## PARAMETERS
 
 ### -AbsoluteUri
-Menentukan URI file sumber.
-Jika lokasi sumber memerlukan kredensial, Anda harus menyediakan kredensial.
+Menentukan URI dari file sumber.
+Jika lokasi sumber memerlukan kredensial, Anda harus menyediakannya.
 
 ```yaml
 Type: System.String
@@ -142,9 +142,9 @@ Accept wildcard characters: False
 ```
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu yang habis di sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba permintaan.
-Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini akan mengembalikan kesalahan.
+Menentukan interval waktu habis pihak klien, dalam hitungan detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -159,11 +159,11 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan jumlah maksimum panggilan jaringan bersama.
-Anda dapat menggunakan parameter ini untuk membatasi konkurensi guna membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Menentukan maksimum panggilan jaringan serentak.
+Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
 Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
-Parameter ini bisa membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth yang rendah, seperti 100 kilobit per detik.
-Nilai default adalah 10.
+Parameter ini dapat membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth rendah, seperti 100 kilobit per detik.
+Nilai defaultnya adalah 10.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Menentukan Azure Storage konteks.
+Menentukan konteks Azure Storage.
 Untuk mendapatkan konteks, gunakan cmdlet New-AzStorageContext.
 
 ```yaml
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestContext
-Menentukan Azure Storage konteks tujuan.
+Menentukan konteks Azure Storage tujuan.
 Untuk mendapatkan konteks, gunakan **New-AzStorageContext**.
 
 ```yaml
@@ -225,8 +225,8 @@ Accept wildcard characters: False
 ```
 
 ### -DestFile
-Menentukan objek **CloudFile.**
-Anda dapat membuat file awan atau mendapatkannya menggunakan cmdlet Get-AzStorageFile cmdlet.
+Menentukan objek **CloudFile** .
+Anda dapat membuat file cloud atau mendapatkannya menggunakan cmdlet Get-AzStorageFile.
 
 ```yaml
 Type: Microsoft.WindowsAzure.Storage.File.CloudFile
@@ -241,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestFilePath
-Menentukan jalur file tujuan relatif dengan berbagi tujuan.
+Menentukan jalur berkas tujuan relatif terhadap berbagi tujuan.
 
 ```yaml
 Type: System.String
@@ -270,8 +270,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -286,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan lamanya periode waktu habis untuk bagian server dari permintaan.
+Menentukan lamanya periode batas waktu untuk bagian server dari permintaan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -301,8 +301,8 @@ Accept wildcard characters: False
 ```
 
 ### -SrcBlob
-Menentukan objek **CloudBlob.**
-Anda dapat membuat blob awan atau mendapatkannya menggunakan cmdlet Get-AzStorageBlob cmdlet.
+Menentukan objek **CloudBlob** .
+Anda dapat membuat blob cloud atau mendapatkannya menggunakan cmdlet Get-AzStorageBlob.
 
 ```yaml
 Type: Microsoft.WindowsAzure.Storage.Blob.CloudBlob
@@ -332,8 +332,8 @@ Accept wildcard characters: False
 ```
 
 ### -SrcContainer
-Menentukan objek wadah blob awan.
-Anda dapat membuat objek wadah blob awan atau menggunakan Get-AzStorageContainer cmdlet.
+Menentukan objek kontainer blob cloud.
+Anda dapat membuat objek kontainer blob cloud atau menggunakan cmdlet Get-AzStorageContainer.
 
 ```yaml
 Type: Microsoft.WindowsAzure.Storage.Blob.CloudBlobContainer
@@ -363,8 +363,8 @@ Accept wildcard characters: False
 ```
 
 ### -SrcFile
-Menentukan objek **CloudFile.**
-Anda dapat membuat file awan atau mendapatkannya menggunakan **Get-AzStorageFile**.
+Menentukan objek **CloudFile** .
+Anda dapat membuat file cloud atau mendapatkannya menggunakan **Get-AzStorageFile**.
 
 ```yaml
 Type: Microsoft.WindowsAzure.Storage.File.CloudFile
@@ -379,7 +379,7 @@ Accept wildcard characters: False
 ```
 
 ### -SrcFilePath
-Menentukan jalur file sumber relatif terhadap direktori sumber atau berbagi sumber.
+Menentukan jalur file sumber yang relatif terhadap direktori sumber atau sumber berbagi.
 
 ```yaml
 Type: System.String
@@ -395,7 +395,7 @@ Accept wildcard characters: False
 
 ### -SrcShare
 Menentukan objek berbagi file awan.
-Anda dapat membuat berbagi file awan atau mendapatkannya menggunakan cmdlet Get-AzStorageShare cmdlet.
+Anda dapat membuat berbagi file cloud atau mendapatkannya menggunakan cmdlet Get-AzStorageShare.
 
 ```yaml
 Type: Microsoft.WindowsAzure.Storage.File.CloudFileShare
@@ -425,7 +425,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -441,7 +441,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -456,7 +456,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

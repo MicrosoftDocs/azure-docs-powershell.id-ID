@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/FrontDoor/Commands.FrontDoor/help/New-AzureRmFrontDoorBackendObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/FrontDoor/Commands.FrontDoor/help/New-AzureRmFrontDoorBackendObject.md
 ms.openlocfilehash: 429db1fae2987531911bd4dfbd4c41daf66a5440
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425142"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142141478"
 ---
 # New-AzureRmFrontDoorBackendObject
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendHostHeader
-Nilai yang akan digunakan sebagai header host yang dikirimkan ke ujung belakang. Nilai default adalah alamat backend.
+Nilai untuk digunakan sebagai header host yang dikirim ke backend. Nilai default adalah alamat backend.
 
 ```yaml
 Type: System.String
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnabledState
-Apakah akan mengaktifkan penggunaan backend ini. Nilai default Diaktifkan
+Apakah mengaktifkan penggunaan backend ini. Nilai default diaktifkan
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSEnabledState
@@ -111,10 +111,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpPort
+### -HttpPort
 Nomor port TCP HTTP.
-Harus berada antara 1 sampai 65535.
-Nilai default adalah 80.
+Harus antara 1 dan 65535.
+Nilai defaultnya adalah 80.
 
 ```yaml
 Type: System.Int32
@@ -130,8 +130,8 @@ Accept wildcard characters: False
 
 ### -HttpsPort
 Nomor port TCP HTTPS.
-Harus berada antara 1 sampai 65535.
-Nilai default adalah 443
+Harus antara 1 dan 65535.
+Nilai defaultnya adalah 443
 
 ```yaml
 Type: System.Int32
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -Prioritas
-Prioritas untuk digunakan untuk memuat keseimbangan.
+Prioritas untuk digunakan untuk penyeimbangan beban.
 Harus antara 1 dan 5.
 Nilai default adalah 1
 
@@ -162,10 +162,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Bobot
-Bobot titik akhir ini untuk tujuan keseimbangan muat.
-Harus berada antara 1 sampai 1000.
-Nilai default adalah 50
+### -Berat
+Berat titik akhir ini untuk tujuan penyeimbangan beban.
+Harus antara 1 dan 1000.
+Nilai defaultnya adalah 50
 
 ```yaml
 Type: System.Int32
@@ -180,11 +180,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -194,4 +194,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmFrontDoorBackendPoolObject](./New-AzureRmFrontDoorBackendPoolObject.md)
+[Baru-AzureRmFrontDoorBackendPoolObject](./New-AzureRmFrontDoorBackendPoolObject.md)

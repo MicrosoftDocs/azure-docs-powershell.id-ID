@@ -4,11 +4,11 @@ ms.assetid: A4E9C9A7-7FD2-4FD5-AB35-CFF717607B44
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 85f01d5300752b1a083e3f7919197b75ba9f9a78
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422073"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141880496"
 ---
 # Remove-AzureRemoteAppUserDisk
 
@@ -25,7 +25,7 @@ Remove-AzureRemoteAppUserDisk [-CollectionName] <String> [-UserUpn] <String> [-P
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRemoteAppUserDisk** menghapus disk pengguna pengguna dari kumpulan Azure RemoteApp.
+Cmdlet **Remove-AzureRemoteAppUserDisk** menghapus disk pengguna pengguna dari koleksi Azure RemoteApp.
 
 ## EXAMPLES
 
@@ -34,7 +34,7 @@ Cmdlet **Remove-AzureRemoteAppUserDisk** menghapus disk pengguna pengguna dari k
 PS C:\> Remove-AzureRemoteAppUserDisk -CollectionName "Contoso01" -UserUpn "PattiFuller@contoso.com"
 ```
 
-Perintah ini menghapus disk pengguna pengguna pengguna Azure Active Directory yang memiliki UPN PattiFuller@contoso.com dari kumpulan Contoso01.
+Perintah ini menghapus disk pengguna pengguna Azure Active Directory yang memiliki UPN PattiFuller@contoso.com dari kumpulan Contoso01.
 
 ## PARAMETERS
 
@@ -54,8 +54,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserUpn
-Menentukan nama prinsipal pengguna (UPN, User Principal Name) pengguna yang akan dihapus cmdlet ini.
+Menentukan nama pokok pengguna (UPN) pengguna yang cmdletnya menghapus disk.
 
 ```yaml
 Type: String
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -126,6 +126,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Copy-AzureRemoteAppUserDisk](./Copy-AzureRemoteAppUserDisk.md)
+[Salin-AzureRemoteAppUserDisk](./Copy-AzureRemoteAppUserDisk.md)
 
 

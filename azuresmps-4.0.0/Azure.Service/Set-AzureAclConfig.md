@@ -3,12 +3,12 @@ external help file: Microsoft.WindowsAzure.Commands.ServiceManagement.dll-Help.x
 ms.assetid: A9E43722-DEE2-4A5C-A3F6-8DA6612735AC
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 7259fd96e1a58a6e9498ad7059d6b3fd13046e3502b3d7c9e8c3bbc5d431a08b
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: a30a57bb305d20efa842b9fe2d0a3c98c81778c5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417716"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142244139"
 ---
 # Set-AzureAclConfig
 
@@ -26,7 +26,7 @@ Set-AzureAclConfig [-AddRule] [-Action] <String> [-RemoteSubnet] <String> [[-Ord
  [-InformationVariable <String>] [<CommonParameters>]
 ```
 
-### RemoveRule
+### HapusJumlah
 ```
 Set-AzureAclConfig [-RemoveRule] [-RuleId] <Int32> -ACL <NetworkAclObject>
  [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
@@ -40,7 +40,7 @@ Set-AzureAclConfig [-SetRule] [-RuleId] <Int32> [[-Action] <String>] [[-RemoteSu
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureAclConfig** mengubah objek konfigurasi daftar kontrol akses (ACL, Access Control List) dari konfigurasi komputer virtual Azure yang sudah ada.
+Cmdlet **Set-AzureAclConfig** mengubah objek konfigurasi daftar kontrol akses (ACL) dari konfigurasi mesin virtual Azure yang sudah ada.
 
 ## EXAMPLES
 
@@ -50,7 +50,7 @@ PS C:\> $Acl = New-AzureAclConfig
 PS C:\> Set-AzureAclConfig -AddRule -ACL $Acl -Action Permit -RemoteSubnet "172.0.0.0/8" -Order 100 -Description "Permit ACL rule"
 ```
 
-Perintah pertama membuat konfigurasi ACL, lalu menyimpannya di $Acl variabel.
+Perintah pertama membuat konfigurasi ACL, lalu menyimpannya dalam variabel $Acl.
 
 Perintah kedua menambahkan aturan baru ke konfigurasi yang disimpan di $Acl.
 Perintah menentukan tindakan, subnet, urutan, dan deskripsi untuk aturan.
@@ -62,16 +62,16 @@ PS C:\> Set-AzureAclConfig -SetRule -RuleId 0 -ACL $Acl -Order 102 -Description 
 PS C:\> Get-AzureVM -ServiceName "ContosoService" -Name "VirtualMachine07" | Set-AzureEndpoint -ACL $Acl -Name "Web" | Update-AzureVM
 ```
 
-Perintah pertama mendapatkan mesin virtual bernama VirtualMachine07 dalam layanan yang bernama ContosoService menggunakan cmdlet **Get-AzureVM.**
-Perintah melewati objek itu ke cmdlet **Get-AzureAclConfig** menggunakan operator pipeline.
-Cmdlet tersebut mendapatkan konfigurasi ACL untuk titik akhir yang bernama Web.
-Perintah menyimpan objek konfigurasi ACL di $Acl berbeda.
+Perintah pertama mendapatkan mesin virtual bernama VirtualMachine07 dalam layanan bernama ContosoService dengan menggunakan cmdlet **Get-AzureVM** .
+Perintah melewati objek tersebut ke cmdlet **Get-AzureAclConfig** menggunakan operator pipeline.
+Cmdlet tersebut mendapatkan konfigurasi ACL untuk titik akhir bernama Web.
+Perintah menyimpan objek konfigurasi ACL dalam variabel $Acl.
 
 Perintah kedua mengubah aturan yang memiliki ID 0.
 Perintah mengubah urutan dan deskripsi aturan.
 
-Perintah terakhir mengatur objek konfigurasi ACL untuk komputer virtual tersebut menggunakan cmdlet **Set-AzureEndpoint.**
-Perintah juga memperbarui mesin virtual tersebut.
+Perintah akhir mengatur objek konfigurasi ACL untuk mesin virtual tersebut menggunakan cmdlet **Set-AzureEndpoint** .
+Perintah ini juga memperbarui mesin virtual tersebut.
 
 ### Contoh 3: Menghapus aturan dari konfigurasi ACL
 ```
@@ -80,18 +80,18 @@ PS C:\> Set-AzureAclConfig -RemoveRule -ID 0 -ACL $Acl
 PS C:\> Get-AzureVM -ServiceName "ContosoService" -Name "VirtualMachine07" | Set-AzureEndpoint -ACL $Acl -Name "Web" | Update-AzureVM
 ```
 
-Perintah pertama menyimpan objek konfigurasi ACL di $Acl lain.
+Perintah pertama menyimpan objek konfigurasi ACL dalam variabel $Acl.
 Ini sama seperti contoh sebelumnya.
 
 Perintah kedua menghapus aturan yang memiliki ID 0 dari konfigurasi ACL dalam $Acl.
 
-Perintah terakhir mengatur objek konfigurasi ACL untuk mesin virtual dan memperbarui mesin virtual tersebut.
+Perintah akhir mengatur objek konfigurasi ACL untuk mesin virtual dan pembaruan mesin virtual tersebut.
 Ini sama seperti contoh sebelumnya.
 
 ## PARAMETERS
 
 ### -ACL
-Menentukan objek konfigurasi ACL yang ditentukan cmdlet ini.
+Menentukan objek konfigurasi ACL yang diubah cmdlet ini.
 
 ```yaml
 Type: NetworkAclObject
@@ -106,8 +106,8 @@ Accept wildcard characters: False
 ```
 
 ### -Tindakan
-Menentukan tindakan untuk aturan yang menambahkan atau mengubah cmdlet ini.
-Nilai valid adalah: Izinkan dan Tolak.
+Menentukan tindakan untuk aturan yang ditambahkan atau diubah cmdlet ini.
+Nilai yang valid adalah: Izinkan dan Tolak.
 
 ```yaml
 Type: String
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -AddRule
-Mengindikasikan bahwa cmdlet ini menambahkan aturan pada konfigurasi ACL.
+Menunjukkan bahwa cmdlet ini menambahkan aturan ke konfigurasi ACL.
 
 ```yaml
 Type: SwitchParameter
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Menentukan deskripsi untuk aturan yang menambahkan atau mengubah cmdlet ini.
+Menentukan deskripsi untuk aturan yang ditambahkan atau diubah cmdlet ini.
 
 ```yaml
 Type: String
@@ -164,16 +164,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pesanan
-Menentukan urutan pemrosesan untuk aturan yang menambahkan atau mengubah cmdlet ini.
+Menentukan urutan pemrosesan untuk aturan yang ditambahkan atau diubah cmdlet ini.
 
 ```yaml
 Type: Int32
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemoteSubnet
-Menentukan subnet jarak jauh untuk aturan yang menambahkan atau mengubah cmdlet ini.
+Menentukan subnet jarak jauh untuk aturan yang ditambahkan atau diubah cmdlet ini.
 Menentukan alamat dalam format Classless Interdomain Routing (CIDR).
 
 ```yaml
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemoveRule
-Mengindikasikan bahwa cmdlet ini menghapus aturan dari konfigurasi ACL.
+Menunjukkan bahwa cmdlet ini menghapus aturan dari konfigurasi ACL.
 
 ```yaml
 Type: SwitchParameter
@@ -261,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -RuleId
-Menentukan ID aturan yang dihapus atau dimodifikasi cmdlet ini untuk konfigurasi ACL.
+Menentukan ID aturan yang dihapus atau diubah cmdlet ini untuk konfigurasi ACL.
 
 ```yaml
 Type: Int32
@@ -291,7 +291,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -305,12 +305,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureVM](./Get-AzureVM.md)
 
-[New-AzureAclConfig](./New-AzureAclConfig.md)
+[AzureAclConfig Baru](./New-AzureAclConfig.md)
 
-[Remove-AzureAclConfig](./Remove-AzureAclConfig.md)
+[Hapus-AzureAclConfig](./Remove-AzureAclConfig.md)
 
 [Set-AzureEndpoint](./Set-AzureEndpoint.md)
 
-[Update-AzureVM](./Update-AzureVM.md)
+[Perbarui-AzureVM](./Update-AzureVM.md)
 
 

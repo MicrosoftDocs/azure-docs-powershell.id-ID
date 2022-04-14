@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Remove-AzureRmVmss.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Remove-AzureRmVmss.md
 ms.openlocfilehash: 54c6f9f399cfabf7a418939b4662c9bcfdc83d34
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420720"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141843914"
 ---
 # Remove-AzureRmVmss
 
 ## SYNOPSIS
-Menghapus VMSS atau mesin virtual yang berada dalam VMSS.
+Menghapus VMSS atau mesin virtual yang ada dalam VMSS.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,9 +28,9 @@ Remove-AzureRmVmss [-ResourceGroupName] <String> [-VMScaleSetName] <String> [[-I
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmVmss** menghapus Kumpulan Skala Komputer Virtual (VMSS) dari Azure.
-Cmdlet ini juga dapat digunakan untuk menghapus komputer virtual tertentu dalam VMSS.
-Anda dapat menggunakan parameter *InstanceId* untuk menghapus mesin virtual tertentu dalam VMSS.
+Cmdlet **Remove-AzureRmVmss** menghapus Kumpulan Skala Mesin Virtual (VMSS) dari Azure.
+Cmdlet ini juga dapat digunakan untuk menghapus mesin virtual tertentu di dalam VMSS.
+Anda dapat menggunakan parameter *InstanceId* untuk menghapus mesin virtual tertentu di dalam VMSS.
 
 ## EXAMPLES
 
@@ -39,19 +39,19 @@ Anda dapat menggunakan parameter *InstanceId* untuk menghapus mesin virtual tert
 PS C:\> Remove-AzureRmVmss -ResourceGroupName "Group001" -VMScaleSetName "VMScaleSet001"
 ```
 
-Perintah ini menghapus VMSS yang bernama VMScaleSet001 yang dimiliki oleh grup sumber daya bernama Group001.
+Perintah ini menghapus VMSS bernama VMScaleSet001 yang termasuk dalam grup sumber daya bernama Group001.
 
 ### Contoh 2: Menghapus mesin virtual dari dalam VMSS
 ```
 PS C:\> Remove-AzureRmVmss -ResourceGroupName "Group002" -VMScaleSetName "VMScaleSet002" -InstanceId "3";
 ```
 
-Perintah ini menghapus mesin virtual dengan ID contoh 3 dari VMSS bernama VMScaleSet002 yang dimiliki oleh grup sumber daya bernama Group002.
+Perintah ini menghapus mesin virtual dengan ID instans 3 dari VMSS bernama VMScaleSet002 yang termasuk dalam grup sumber daya bernama Group002.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -80,8 +80,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang dimiliki VMSS.
+Menentukan nama grup sumber daya tempat VMSS berada.
 
 ```yaml
 Type: System.String
@@ -127,8 +127,8 @@ Accept wildcard characters: False
 ```
 
 ### -VMScaleSetName
-Spesies nama VMSS yang dihapus cmdlet ini.
-Jika Anda menentukan parameter *InstanceId,* cmdlet akan menghapus mesin virtual tertentu dari VMSS yang dinamai oleh parameter ini.
+Spesies nama VMSS yang cmdlet ini hapus.
+Jika Anda menentukan parameter *InstanceId* , cmdlet akan menghapus mesin virtual tertentu dari VMSS yang dinamai oleh parameter ini.
 
 ```yaml
 Type: System.String
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -189,18 +189,18 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzureRmVmss](./Get-AzureRmVmss.md)
+[Get-AzureRmVms](./Get-AzureRmVmss.md)
 
-[New-AzureRmVmss](./New-AzureRmVmss.md)
+[AzureRmVms baru](./New-AzureRmVmss.md)
 
-[Mulai Ulang-AzureRmVmss](./Restart-AzureRmVmss.md)
+[Mulai ulang-AzureRmVms](./Restart-AzureRmVmss.md)
 
-[Set-AzureRmVmss](./Set-AzureRmVmss.md)
+[Set-AzureRmVms](./Set-AzureRmVmss.md)
 
-[Start-AzureRmVmss](./Start-AzureRmVmss.md)
+[Mulai AzureRmVms](./Start-AzureRmVmss.md)
 
-[Stop-AzureRmVmss](./Stop-AzureRmVmss.md)
+[Stop-AzureRmVms](./Stop-AzureRmVmss.md)
 
-[Update-AzureRmVmss](./Update-AzureRmVmss.md)
+[Pembaruan-AzureRmVms](./Update-AzureRmVmss.md)
 
 

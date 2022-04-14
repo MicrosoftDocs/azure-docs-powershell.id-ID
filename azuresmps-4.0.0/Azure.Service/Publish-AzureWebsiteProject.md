@@ -3,17 +3,17 @@ external help file: Microsoft.WindowsAzure.Commands.dll-Help.xml
 ms.assetid: D866554F-78B0-4691-BA06-F625F9B0DFC8
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 984d5dcace1e0f0424706ce83173250d76e39077cb11c3d536aee41480f9dd64
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 4efef8226c247e0fb3da8fb701c80b65c8920eb4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417723"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142245111"
 ---
 # Publish-AzureWebsiteProject
 
 ## SYNOPSIS
-Menerbitkan proyek Visual Studio web ke situs web Microsoft Azure menggunakan WebDeploy.
+Menerbitkan proyek web Visual Studio ke situs web Microsoft Azure menggunakan WebDeploy.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -34,9 +34,9 @@ Publish-AzureWebsiteProject -Package <String> [-ConnectionString <Hashtable>] [-
 ```
 
 ## DESCRIPTION
-Menerbitkan proyek Visual Studio web ke situs web Microsoft Azure menggunakan WebDeploy.
-Program dapat mengambil paket WebDeploy dan menerbitkan secara langsung, atau mengambil Visual Studio web proyek, menyusun proyek, dan menerbitkannya.
-Ini juga bisa mengganti string koneksi dalam Web.config penerbitan.
+Menerbitkan proyek web Visual Studio ke situs web Microsoft Azure menggunakan WebDeploy.
+Ini bisa mengambil paket WebDeploy dan menerbitkan secara langsung, atau mengambil proyek web Visual Studio, menyusun proyek dan menerbitkan.
+Ini juga bisa mengganti string koneksi di Web.config selama penerbitan.
 
 ## EXAMPLES
 
@@ -45,21 +45,21 @@ Ini juga bisa mengganti string koneksi dalam Web.config penerbitan.
 PS C:\> Publish-AzureWebsiteProject -Name site1 -ProjectFile .\WebApplication1.csproj -Configuration Debug
 ```
 
-Buat proyek web Visual Studio dengan konfigurasi "Debug" (berarti gunakan Web.Debug.config) dan terbitkan ke Situs Web Microsoft Azure menggunakan WebDeploy.
+Buat proyek web Visual Studio dengan konfigurasi "Debug" (artinya gunakan Web.Debug.config) dan terbitkan ke Situs Web Microsoft Azure menggunakan WebDeploy.
 
 ### Contoh 2
 ```
 PS C:\> Publish-AzureWebsiteProject -Name site1 -Package .\WebApplication1.zip
 ```
 
-Menerbitkan file WebDeploy Package .zip ke situs Microsoft Azure Web menggunakan WebDeploy.
+Menerbitkan file .zip Paket WebDeploy ke Situs Web Microsoft Azure menggunakan WebDeploy.
 
 ### Contoh 3
 ```
 PS C:\> Publish-AzureWebsiteProject -Name site1 -Package .\WebApplication1
 ```
 
-Menerbitkan folder Paket WebDeploy ke situs web Microsoft Azure menggunakan WebDeploy.
+Menerbitkan folder Paket WebDeploy ke Situs Web Microsoft Azure menggunakan WebDeploy.
 
 ### Contoh 4
 ```
@@ -74,12 +74,12 @@ PS C:\> Publish-AzureWebsiteProject -Name site1 -ProjectFile .\WebApplication1.c
 ```
 
 Buat proyek web Visual Studio, timpa string koneksi "DefaultConnection" dalam Web.config dan terbitkan ke Situs Web Microsoft Azure menggunakan WebDeploy.
-Perhatikan bahwa -DefaultConnection adalah parameter dinamis yang ditambahkan dengan melakukan penguraian Web.config.
+Perhatikan bahwa -DefaultConnection adalah parameter dinamis yang ditambahkan dengan memilah Web.config.
 
 ## PARAMETERS
 
 ### -Configuration
-Konfigurasi yang digunakan untuk menyusun Visual Studio aplikasi web.
+Konfigurasi yang digunakan untuk menyusun proyek aplikasi web Visual Studio.
 
 ```yaml
 Type: String
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionString
-String koneksi yang digunakan untuk penggunaan.
+String koneksi yang digunakan untuk penyebaran.
 
 ```yaml
 Type: Hashtable
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -Paket
-Folder paket WebDeploy untuk file zip Visual Studio proyek aplikasi web yang akan diterbitkan.
+Folder paket WebDeploy untuk file zip proyek aplikasi web Visual Studio yang akan diterbitkan.
 
 ```yaml
 Type: String
@@ -152,8 +152,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProjectFile
-Proyek Visual Studio web yang akan diterbitkan.
+Proyek aplikasi web Visual Studio yang akan diterbitkan.
 
 ```yaml
 Type: String
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -247,12 +247,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzureWebsite](./Get-AzureWebsite.md)
+[Dapatkan-AzureWebsite](./Get-AzureWebsite.md)
 
-[New-AzureWebsite](./New-AzureWebsite.md)
+[Baru-AzureSitus Web](./New-AzureWebsite.md)
 
-[Remove-AzureWebsite](./Remove-AzureWebsite.md)
+[Hapus-AzureSitus Web](./Remove-AzureWebsite.md)
 
-[Set-AzureWebsite](./Set-AzureWebsite.md)
+[Atur-AzureWebsite](./Set-AzureWebsite.md)
 
 

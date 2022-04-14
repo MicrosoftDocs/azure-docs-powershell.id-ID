@@ -6,11 +6,11 @@ Help Version: 4.0.3.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/LogicApp/Commands.LogicApp/help/AzureRM.LogicApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/LogicApp/Commands.LogicApp/help/AzureRM.LogicApp.md
-ms.openlocfilehash: 09c9ce7d5f05de4cde0d5382bbd054d5cbbed6839e5d1564abebd58ea4ba8d61
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 90041abd52116f5b6bdc6889004f6f27b33aaf0a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132418371"
 ---
 # Modul AzureRM.LogicApp
@@ -25,13 +25,13 @@ Mendapatkan akun integrasi.
 Mendapatkan perjanjian akun integrasi.
 
 ### [Get-AzureRmIntegrationAccountCallbackUrl](Get-AzureRmIntegrationAccountCallbackUrl.md)
-Mendapatkan URL integrasi akun integrasi.
+Mendapatkan URL panggilan balik akun integrasi.
 
 ### [Get-AzureRmIntegrationAccountCertificate](Get-AzureRmIntegrationAccountCertificate.md)
 Mendapatkan sertifikat akun integrasi dari grup sumber daya.
 
 ### [Get-AzureRmIntegrationAccountGeneratedIcn](Get-AzureRmIntegrationAccountGeneratedIcn.md)
-Cmdlet ini mengambil nilai saat ini dari nomor kontrol pertukaran yang dihasilkan per perjanjian.
+Cmdlet ini mengambil nilai saat ini dari nomor kontrol interchange yang dihasilkan per perjanjian.
 
 ### [Get-AzureRmIntegrationAccountMap](Get-AzureRmIntegrationAccountMap.md)
 Mendapatkan peta akun integrasi.
@@ -40,7 +40,7 @@ Mendapatkan peta akun integrasi.
 Mendapatkan mitra akun integrasi.
 
 ### [Get-AzureRmIntegrationAccountReceivedIcn](Get-AzureRmIntegrationAccountReceivedIcn.md)
-Cmdlet ini mengambil nomor kontrol pertukaran tertentu yang diterima per perjanjian dan nilai nomor kontrol.
+Cmdlet ini mengambil nomor kontrol per pertukaran yang diterima tertentu per perjanjian dan nilai angka kontrol.
 
 ### [Get-AzureRmIntegrationAccountSchema](Get-AzureRmIntegrationAccountSchema.md)
 Mendapatkan skema akun integrasi.
@@ -52,24 +52,24 @@ Mendapatkan aplikasi logika dari grup sumber daya.
 Mendapatkan tindakan dari aplikasi logika yang dijalankan.
 
 ### [Get-AzureRmLogicAppRunHistory](Get-AzureRmLogicAppRunHistory.md)
-Mendapatkan riwayat proses aplikasi logika.
+Mendapatkan riwayat jalankan aplikasi logika.
 
 ### [Get-AzureRmLogicAppTrigger](Get-AzureRmLogicAppTrigger.md)
 Mendapatkan pemicu aplikasi logika.
 
 ### [Get-AzureRmLogicAppTriggerCallbackUrl](Get-AzureRmLogicAppTriggerCallbackUrl.md)
-Mendapatkan URL pemicu Aplikasi Logika.
+Mendapatkan URL panggilan balik pemicu Aplikasi Logika.
 
 ### [Get-AzureRmLogicAppTriggerHistory](Get-AzureRmLogicAppTriggerHistory.md)
-Dapatkan riwayat pemicu dalam aplikasi logika.
+Mendapatkan riwayat pemicu dalam aplikasi logika.
 
 ### [Get-AzureRmLogicAppUpgradedDefinition](Get-AzureRmLogicAppUpgradedDefinition.md)
-Mendapatkan definisi yang ditingkatkan untuk aplikasi logika.
+Mendapatkan definisi yang dimutakhirkan untuk aplikasi logika.
 
-### [New-AzureRmIntegrationAccount](New-AzureRmIntegrationAccount.md)
+### [AzureRmIntegrationAccount baru](New-AzureRmIntegrationAccount.md)
 Membuat akun integrasi.
 
-### [New-AzureRmIntegrationAccountAgreement](New-AzureRmIntegrationAccountAgreement.md)
+### [AzureRmIntegrationAccountAgreement baru](New-AzureRmIntegrationAccountAgreement.md)
 Membuat perjanjian akun integrasi.
 
 ### [New-AzureRmIntegrationAccountCertificate](New-AzureRmIntegrationAccountCertificate.md)
@@ -84,31 +84,31 @@ Membuat mitra akun integrasi.
 ### [New-AzureRmIntegrationAccountSchema](New-AzureRmIntegrationAccountSchema.md)
 Membuat skema akun integrasi.
 
-### [New-AzureRmLogicApp](New-AzureRmLogicApp.md)
+### [AzureRmLogicApp baru](New-AzureRmLogicApp.md)
 Membuat aplikasi logika dalam grup sumber daya.
 
-### [Remove-AzureRmIntegrationAccount](Remove-AzureRmIntegrationAccount.md)
+### [Hapus-AzureRmIntegrationAccount](Remove-AzureRmIntegrationAccount.md)
 Menghapus akun integrasi.
 
-### [Remove-AzureRmIntegrationAccountAgreement](Remove-AzureRmIntegrationAccountAgreement.md)
+### [Hapus-AzureRmIntegrationAccountAgreement](Remove-AzureRmIntegrationAccountAgreement.md)
 Menghapus perjanjian akun integrasi.
 
-### [Remove-AzureRmIntegrationAccountCertificate](Remove-AzureRmIntegrationAccountCertificate.md)
+### [Hapus-AzureRmIntegrationAccountCertificate](Remove-AzureRmIntegrationAccountCertificate.md)
 Menghapus sertifikat akun integrasi dari grup sumber daya.
 
-### [Remove-AzureRmIntegrationAccountMap](Remove-AzureRmIntegrationAccountMap.md)
+### [Hapus-AzureRmIntegrationAccountMap](Remove-AzureRmIntegrationAccountMap.md)
 Menghapus peta akun integrasi.
 
-### [Remove-AzureRmIntegrationAccountPartner](Remove-AzureRmIntegrationAccountPartner.md)
+### [Hapus-AzureRmIntegrationAccountPartner](Remove-AzureRmIntegrationAccountPartner.md)
 Menghapus mitra akun integrasi.
 
-### [Remove-AzureRmIntegrationAccountReceivedIcn](Remove-AzureRmIntegrationAccountReceivedIcn.md)
-Cmdlet ini menghapus nomor kontrol pertukaran tertentu yang diterima per perjanjian dan nilai nomor kontrol.
+### [Hapus-AzureRmIntegrationAccountReceivedIcn](Remove-AzureRmIntegrationAccountReceivedIcn.md)
+Cmdlet ini menghapus nomor kontrol per perjanjian per perjanjian dan nilai nomor kontrol penerimaan tertentu.
 
-### [Remove-AzureRmIntegrationAccountSchema](Remove-AzureRmIntegrationAccountSchema.md)
+### [Hapus-AzureRmIntegrationAccountSchema](Remove-AzureRmIntegrationAccountSchema.md)
 Menghapus skema akun integrasi.
 
-### [Remove-AzureRmLogicApp](Remove-AzureRmLogicApp.md)
+### [Hapus-AzureRmLogicApp](Remove-AzureRmLogicApp.md)
 Menghapus aplikasi logika dari grup sumber daya.
 
 ### [Set-AzureRmIntegrationAccount](Set-AzureRmIntegrationAccount.md)
@@ -121,7 +121,7 @@ Mengubah perjanjian akun integrasi.
 Mengubah sertifikat akun integrasi.
 
 ### [Set-AzureRmIntegrationAccountGeneratedIcn](Set-AzureRmIntegrationAccountGeneratedIcn.md)
-Memperbarui akun integrasi yang dihasilkan nomor kontrol pertukaran (ICN, Interchange Control Number) dalam grup sumber daya Azure.
+Memperbarui akun integrasi yang dihasilkan nomor kontrol pertukaran (ICN, Interchange Control Number) di grup sumber daya Azure.
 
 ### [Set-AzureRmIntegrationAccountMap](Set-AzureRmIntegrationAccountMap.md)
 Mengubah peta akun integrasi.
@@ -130,7 +130,7 @@ Mengubah peta akun integrasi.
 Mengubah mitra akun integrasi.
 
 ### [Set-AzureRmIntegrationAccountReceivedIcn](Set-AzureRmIntegrationAccountReceivedIcn.md)
-Memperbarui akun integrasi yang diterima nomor kontrol pertukaran (ICN, Interchange Control Number) dalam grup sumber daya Azure.
+Memperbarui akun integrasi yang diterima nomor kontrol pertukaran (ICN, Interchange Control Number) di grup sumber daya Azure.
 
 ### [Set-AzureRmIntegrationAccountSchema](Set-AzureRmIntegrationAccountSchema.md)
 Mengubah skema akun integrasi.
@@ -142,8 +142,8 @@ Mengubah aplikasi logika dalam grup sumber daya.
 Menjalankan aplikasi logika dalam grup sumber daya.
 
 ### [Stop-AzureRmLogicAppRun](Stop-AzureRmLogicAppRun.md)
-Membatalkan proses aplikasi logika.
+Membatalkan menjalankan aplikasi logika.
 
-### [Test-AzureRmLogicApp](Test-AzureRmLogicApp.md)
+### [Uji-AzureRmLogicApp](Test-AzureRmLogicApp.md)
 Memvalidasi definisi aplikasi logika.
 

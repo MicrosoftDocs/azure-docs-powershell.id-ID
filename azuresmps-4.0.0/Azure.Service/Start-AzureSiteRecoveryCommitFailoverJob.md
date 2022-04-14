@@ -3,17 +3,17 @@ external help file: Microsoft.Azure.Commands.RecoveryServicesRdfe.dll-Help.xml
 ms.assetid: 44A22B6C-5FD4-43B0-9726-71E28AE53E9D
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 7b4f64f6605f37545189711ad23a2c6052330a2655642f02b659d8a7f36fcb06
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 543d80291de67fd476c88a3dec4d3cac7634f526
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417693"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141879836"
 ---
 # Start-AzureSiteRecoveryCommitFailoverJob
 
 ## SYNOPSIS
-Memulai tindakan lakukan failover untuk objek Pemulihan Situs.
+Memulai tindakan commit failover untuk objek Site Recovery.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -44,11 +44,11 @@ Start-AzureSiteRecoveryCommitFailoverJob -ProtectionEntity <ASRProtectionEntity>
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzureSiteRecoveryCommitFailoverJob** memulai proses commit failover untuk objek Pemulihan Situs Azure setelah operasi failover.
+Cmdlet **Start-AzureSiteRecoveryCommitFailoverJob** memulai proses failover commit untuk objek Azure Site Recovery setelah operasi failover.
 
 ## EXAMPLES
 
-### Contoh 1: Mulai pekerjaan failover commit
+### Contoh 1: Memulai pekerjaan commit failover
 ```
 PS C:\> $Container = Get-AzureSiteRecoveryProtectionContainer 
 PS C:\> $Protected = Get-AzureSiteRecoveryProtectionEntity -ProtectionContainer $Container 
@@ -65,12 +65,12 @@ Tasks            : {}
 Errors           : {}
 ```
 
-Perintah pertama mendapatkan semua wadah yang diproteksi untuk vault Pemulihan Situs Azure saat ini menggunakan cmdlet **Get-AzureSiteRecoveryProtectionContainer,** lalu menyimpan hasil dalam $Container baru.
+Perintah pertama mendapatkan semua wadah yang dilindungi untuk brankas Azure Site Recovery saat ini menggunakan cmdlet **Get-AzureSiteRecoveryProtectionContainer**, lalu menyimpan hasilnya dalam variabel $Container.
 
-Perintah kedua mendapatkan mesin virtual terlindungi yang termasuk dalam wadah yang disimpan di $Container dengan menggunakan cmdlet **Get-AzureSiteRecoveryProtectionEntity.**
-Perintah menyimpan hasil dalam $Protected variabel.
+Perintah kedua mendapatkan mesin virtual yang dilindungi milik wadah yang disimpan di $Container menggunakan cmdlet **Get-AzureSiteRecoveryProtectionEntity** .
+Perintah menyimpan hasil dalam variabel $Protected.
 
-Perintah terakhir memulai pekerjaan failover untuk objek dilindungi yang disimpan di $Protected.
+Perintah akhir memulai pekerjaan failover untuk objek yang diproteksi yang disimpan di $Protected.
 
 ## PARAMETERS
 
@@ -94,8 +94,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -110,8 +110,8 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionContainerId
-Menentukan ID dari wadah yang diproteksi.
-Cmdlet ini memulai pekerjaan untuk mesin virtual terlindungi yang termasuk dalam wadah yang ditentukan cmdlet ini.
+Menentukan ID wadah yang diproteksi.
+Cmdlet ini memulai pekerjaan untuk mesin virtual terproteksi milik wadah yang ditentukan cmdlet ini.
 
 ```yaml
 Type: String
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 
 ### -ProtectionEntity
 Menentukan objek **ASRProtectionEntity** untuk memulai pekerjaan.
-Untuk mendapatkan objek **ASRProtectionEntity,** gunakan cmdlet **Get-AzureSiteRecoveryProtectionEntity.**
+Untuk mendapatkan objek **ASRProtectionEntity** , gunakan cmdlet **Get-AzureSiteRecoveryProtectionEntity** .
 
 ```yaml
 Type: ASRProtectionEntity
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionEntityId
-Menentukan ID mesin virtual yang diproteksi untuk memulai pekerjaan.
+Menentukan ID mesin virtual yang dilindungi untuk memulai pekerjaan.
 
 ```yaml
 Type: String
@@ -157,8 +157,8 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryPlan
-Menentukan objek paket pemulihan yang akan digunakan untuk memulai pekerjaan.
-Untuk mendapatkan objek **ASRRecoveryPlan,** gunakan cmdlet **Get-AzureSiteRecoveryRecoveryPlan.**
+Menentukan objek rencana pemulihan untuk memulai pekerjaan.
+Untuk mendapatkan objek **ASRRecoveryPlan** , gunakan cmdlet **Get-AzureSiteRecoveryPlan** .
 
 ```yaml
 Type: ASRRecoveryPlan
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -RPId
-Menentukan ID paket pemulihan yang akan digunakan untuk memulai pekerjaan.
+Menentukan ID rencana pemulihan untuk memulai pekerjaan.
 
 ```yaml
 Type: String
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -WaitForCompletion
-Menunjukkan bahwa cmdlet menunggu hingga operasi selesai sebelum mengembalikan kontrol ke Windows PowerShell baru.
+Menunjukkan bahwa cmdlet menunggu operasi selesai sebelum mengembalikan kontrol ke konsol Windows PowerShell.
 
 ```yaml
 Type: SwitchParameter
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
