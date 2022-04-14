@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Remove-AzContainerRegistry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Remove-AzContainerRegistry.md
-ms.openlocfilehash: 9ac92298dec6a18c83b9ac2d79008f55cb95bab2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: bac314ca134f35aec79f84eefae97e6bfdd8934a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140188070"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142293991"
 ---
 # Remove-AzContainerRegistry
 
 ## SYNOPSIS
-Menghapus registri wadah.
+Menghapus registri kontainer.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/remove-azcontainerregistry) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Remove-AzContainerRegistry [-ResourceGroupName] <String> [-Name] <String> [-Pass
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RegistryObjectParameterSet
+### RegistriObjectParameterSet
 ```
 Remove-AzContainerRegistry -Registry <PSContainerRegistry> [-PassThru]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -38,21 +41,21 @@ Remove-AzContainerRegistry -ResourceId <String> [-PassThru] [-DefaultProfile <IA
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzContainerRegistry cmdlet menghapus registri wadah.
+Cmdlet Remove-AzContainerRegistry menghapus registri wadah.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus registri wadah yang ditentukan
+### Contoh 1: Menghapus registri kontainer tertentu
 ```powershell
 PS C:\>Remove-AzContainerRegistry -ResourceGroupName "MyResourceGroup" -Name "MyRegistry"
 ```
 
-Perintah ini akan menghapus registri wadah yang ditentukan.
+Perintah ini menghapus registri kontainer yang ditentukan.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Container Registry Name.
+Nama Registri Kontainer.
 
 ```yaml
 Type: System.String
@@ -96,8 +99,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Registry
-Container Registry Object.
+### -Registri
+Objek Registri Kontainer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ContainerRegistry.PSContainerRegistry
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Container registry resource id
+Id sumber daya registri kontainer
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

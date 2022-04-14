@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Start-AzSynapseTrigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Start-AzSynapseTrigger.md
 ms.openlocfilehash: e092dbb76f186c2e36a68eb3d98f3eac8543916a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140129319"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142039268"
 ---
 # Start-AzSynapseTrigger
 
 ## SYNOPSIS
-Memulai pemicu di ruang kerja.
+Memulai pemicu dalam ruang kerja.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/start-azsynapsetrigger) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/start-azsynapsetrigger) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Start-AzSynapseTrigger -InputObject <PSTriggerResource> [-PassThru] [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzSynapseTrigger** memulai pemicu dalam ruang kerja. Jika pemicu berada dalam status 'Dihentikan', cmdlet memulai pemicu dan akhirnya akan menjalankan saluran berdasarkan definisinya. Jika pemicu sudah berada dalam status 'Dimulai', cmdlet ini tidak memiliki pengaruh.
+Cmdlet **Start-AzSynapseTrigger** memulai pemicu dalam ruang kerja. Jika pemicu berada dalam status 'Dihentikan', cmdlet memulai pemicu dan akhirnya memanggil saluran berdasarkan definisinya. Jika pemicu sudah berada dalam status 'Dimulai', cmdlet ini tidak berpengaruh.
 
 ## EXAMPLES
 
@@ -58,7 +58,7 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Start-AzSynapseTrigger -Name ContosoTrigger
 ```
 
-Memulai pemicu yang disebut ContosoTrigger dalam ruang kerja ContosoWorkspace melalui pipeline.
+Memulai pemicu yang disebut ContosoTrigger di ruang kerja ContosoWorkspace melalui pipeline.
 
 ### Contoh 3
 ```powershell
@@ -66,12 +66,12 @@ PS C:\> $trigger = Get-AzSynapseTrigger -WorkspaceName ContosoWorkspace -Name Co
 PS C:\> $trigger | Start-AzSynapseTrigger
 ```
 
-Memulai pemicu yang disebut ContosoTrigger dalam ruang kerja ContosoWorkspace melalui pipeline.
+Memulai pemicu yang disebut ContosoTrigger di ruang kerja ContosoWorkspace melalui pipeline.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 
 ### -PassThru
 Cmdlet ini tidak mengembalikan objek secara default.
-Jika sakelar ini ditentukan, maka true akan dikembalikan jika berhasil.
+Jika sakelar ini ditentukan, sakelar akan mengembalikan true jika berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -146,7 +146,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

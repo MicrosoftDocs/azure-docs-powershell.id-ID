@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeDevice.md
-ms.openlocfilehash: 88751c1833e94e8c3c2b265a7edf34752ce2c640
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 7031bf0e298953ca8854ee6c94d11ecd3d359342
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140553999"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142207063"
 ---
 # Get-AzStackEdgeDevice
 
 ## SYNOPSIS
-Dapatkan informasi tentang perangkat Stack Edge yang tersedia.
+Mendapatkan informasi tentang perangkat Stack Edge yang tersedia.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/get-azstackedgedevice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzStackEdgeDevice [-ResourceGroupName] <String> [-Name] <String> [-ExtendedI
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStackEdgeDevice** mendapatkan informasi tentang Perangkat Stack Edge yang tersedia. Anda bisa menentukan Nama perangkat bersama dengan Nama Grup Sumber Daya untuk mendapatkan informasi pada perangkat tertentu. 
+Cmdlet **Get-AzStackEdgeDevice** mendapatkan informasi tentang Perangkat Stack Edge yang tersedia. Anda bisa menentukan Nama perangkat bersama dengan Nama Grup Sumber Daya untuk mendapatkan informasi di perangkat tertentu. 
 
 ## EXAMPLES
 
@@ -84,8 +87,8 @@ resourceGroupName1  deviceNameOne     EncryptedCIKThumbpring      41118269132977
 
 ## PARAMETERS
 
-### -Alert
-Mengambil pemberitahuan pada perangkat Stack edge/gateway
+### -Peringatan
+Mengambil pemberitahuan di perangkat Stack edge/gateway
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExtendedInfo
-Mendapatkan informasi tambahan untuk perangkat Gateway Stack Edge/Stack yang ditentukan
+Mendapatkan informasi tambahan untuk perangkat Stack Edge/Stack Gateway yang ditentukan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkSetting
-Mendapatkan pengaturan jaringan perangkat Gateway Stack Edge/Stack yang ditentukan
+Mendapatkan pengaturan jaringan perangkat Stack Edge/Stack Gateway yang ditentukan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpdateSummary
-Mendapatkan informasi tentang ketersediaan pembaruan berdasarkan pemindaian terakhir perangkat. Juga mendapatkan informasi tentang pekerjaan unduhan atau penginstalan apa pun yang sedang berlangsung pada perangkat.
+Mendapatkan informasi tentang ketersediaan pembaruan berdasarkan pemindaian terakhir perangkat. Ini juga mendapatkan informasi tentang pekerjaan pengunduhan atau penginstalan yang sedang berlangsung di perangkat.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

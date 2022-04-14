@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/disable-azsq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Disable-AzSqlDatabaseSensitivityRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Disable-AzSqlDatabaseSensitivityRecommendation.md
-ms.openlocfilehash: d11c6b5f9168fb1ad62eeee0aa5c2415644b6bc3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 329590165a4e715205df5339c81ba628cc7a172d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139998678"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142208377"
 ---
 # Disable-AzSqlDatabaseSensitivityRecommendation
 
 ## SYNOPSIS
 Menonaktifkan (menghilangkan) rekomendasi sensitivitas pada kolom dalam database.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/disable-azsqldatabasesensitivityrecommendation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,17 +48,17 @@ Cmdlet Disable-AzSqlDatabaseSensitivityRecommendation menonaktifkan (menghilangk
 
 ## EXAMPLES
 
-### Contoh 1: Menonaktifkan rekomendasi sensitivitas pada kolom tertentu dalam suatu Azure SQL Database.
+### Contoh 1: Menonaktifkan rekomendasi sensitivitas pada kolom tertentu dalam Azure SQL Database.
 ```powershell
 PS C:\> Disable-AzSqlDatabaseSensitivityRecommendation -ResourceGroupName resourceGroup -ServerName server -DatabaseName database -SchemaName schema -TableName table -ColumnName column
 ```
 
-### Contoh 2: Nonaktifkan rekomendasi sensitivitas pada kolom yang memiliki rekomendasi sensitivitas dalam database Azure SQL menggunakan Piping.
+### Contoh 2: Menonaktifkan rekomendasi sensitivitas pada kolom yang memiliki rekomendasi sensitivitas dalam database Azure SQL menggunakan Piping.
 ```powershell
 PS C:\> Get-AzSqlDatabaseSensitivityRecommendation -ResourceGroupName resourceGroup -ServerName server -DatabaseName database | Disable-AzSqlDatabaseSensitivityRecommendation
 ```
 
-### Contoh 3: Nonaktifkan rekomendasi sensitivitas pada kolom tertentu dalam database Azure SQL menggunakan Piping.
+### Contoh 3: Menonaktifkan rekomendasi sensitivitas pada kolom tertentu dalam database Azure SQL menggunakan Piping.
 ```powershell
 PS C:\> Get-AzSqlDatabase -ResourceGroupName resourceGroup -ServerName server -DatabaseName database | Disable-AzSqlDatabaseSensitivityRecommendation -SchemaName schema -TableName table -ColumnName column
 ```
@@ -63,7 +66,7 @@ PS C:\> Get-AzSqlDatabase -ResourceGroupName resourceGroup -ServerName server -D
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseObject
-Objek SQL database.
+Objek database SQL.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek yang mewakili SQL Database Klasifikasi Sensitivitas.
+Objek yang mewakili Klasifikasi Sensitivitas SQL Database.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.DataClassification.Model.SqlDatabaseSensitivityClassificationModel
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menentukan apakah akan membuat output model klasifikasi sensitivitas pada akhir eksekusi cmdlet
+Menentukan apakah akan menghasilkan model klasifikasi sensitivitas di akhir eksekusi cmdlet
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-SQL server baru.
+SQL nama server.
 
 ```yaml
 Type: System.String
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -258,11 +261,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.sql.DataClassification.Model.SqlDatabaseSensitivityClassificationModel
+### Microsoft.Azure.Commands.Sql.DataClassification.Model.SqlDatabaseSensitivityClassificationModel
 
 ## OUTPUTS
 
@@ -272,4 +275,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Pelajari selengkapnya tentang Azure SQL Database klasifikasi dan penemuan data](https://docs.microsoft.com/azure/sql-database/sql-database-data-discovery-and-classification)
+[Pelajari selengkapnya tentang Azure SQL Database penemuan dan klasifikasi data](https://docs.microsoft.com/azure/sql-database/sql-database-data-discovery-and-classification)

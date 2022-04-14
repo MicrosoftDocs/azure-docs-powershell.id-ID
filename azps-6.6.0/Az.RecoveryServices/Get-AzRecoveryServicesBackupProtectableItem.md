@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupProtectableItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupProtectableItem.md
 ms.openlocfilehash: 0b6c2b9617799f772cc39e935b6c2a111a913dd8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139933063"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142225207"
 ---
 # Get-AzRecoveryServicesBackupProtectableItem
 
 ## SYNOPSIS
-Perintah ini akan mengambil semua item yang dapat diproteksi dalam wadah tertentu atau di seluruh wadah terdaftar. Daftar ini akan terdiri dari semua elemen hierarki aplikasi. Mengembalikan DB dan entitas tingkat atas seperti Instance, AvailabilityGroup, dll.
+Perintah ini akan mengambil semua item yang dapat dilindungi dalam wadah tertentu atau di seluruh kontainer terdaftar. Ini akan terdiri dari semua elemen hierarki aplikasi. Mengembalikan DB dan entitas tingkat atasnya seperti Instance, AvailabilityGroup dll.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupprotectableitem) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupprotectableitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,8 +43,8 @@ Get-AzRecoveryServicesBackupProtectableItem [-ParentID] <String> [[-ItemType] <P
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesBackupProtectableItem** mendapatkan daftar item yang diproteksi dalam wadah dan status proteksi item.
-Wadah yang terdaftar di vault Layanan Pemulihan Azure dapat memiliki satu atau beberapa item yang dapat diproteksi.
+Cmdlet **Get-AzRecoveryServicesBackupProtectableItem** mendapatkan daftar item yang dapat dilindungi dalam wadah dan status proteksi item.
+Wadah yang terdaftar pada kubah Layanan Pemulihan Azure dapat memiliki satu atau beberapa item yang dapat dilindungi.
 
 ## EXAMPLES
 
@@ -55,12 +55,12 @@ PS C:\> $Container = Get-AzRecoveryServicesBackupContainer -ContainerType AzureV
 PS C:\> $Item = Get-AzRecoveryServicesBackupProtectableItem -Container $Container -ItemType "SQLInstance" -WorkloadType "MSSQL" -VaultId $Vault.ID
 ```
 
-Perintah pertama mendapatkan wadah tipe MSSQL, lalu menyimpannya di $Container variabel.
-Perintah kedua mendapatkan item yang dapat diproteksi Cadangan $Container Cadangkan, lalu menyimpannya dalam $Item baru.
+Perintah pertama mendapatkan wadah tipe MSSQL, lalu menyimpannya dalam variabel $Container.
+Perintah kedua mendapatkan item Cadangan yang dapat dilindungi di $Container, lalu menyimpannya dalam variabel $Item.
 
 ## PARAMETERS
 
-### -Container
+### -Kontainer
 Wadah tempat item berada
 
 ```yaml
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama Database, Instans atau AvailabilityGroup.
+Menentukan nama Database, Instance, atau AvailabilityGroup.
 
 ```yaml
 Type: System.String
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server tempat item tersebut berada.
+Menentukan nama server tempat item berada.
 
 ```yaml
 Type: System.String
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

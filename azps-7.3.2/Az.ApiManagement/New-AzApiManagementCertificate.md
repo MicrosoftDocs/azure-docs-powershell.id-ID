@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementCertificate.md
-ms.openlocfilehash: c504bf13a2996ada6424153f3174a390fbdb63b5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9a3b325f0edcd7c622ae0af5e9ae3f8bc300cf1d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140374007"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142115657"
 ---
 # New-AzApiManagementCertificate
 
 ## SYNOPSIS
-Membuat sertifikat Manajemen API untuk digunakan selama Autentikasi dengan Backend.
+Membuat sertifikat API Management yang akan digunakan selama Autentikasi dengan Backend.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ New-AzApiManagementCertificate -Context <PsApiManagementContext> [-CertificateId
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApiManagementCertificate** membuat sertifikat Manajemen API Azure.
+Cmdlet **New-AzApiManagementCertificate** membuat sertifikat API Management Azure.
 
 ## EXAMPLES
 
@@ -49,7 +52,7 @@ Perintah ini mengunggah sertifikat ke Manajemen Api. Sertifikat ini bisa digunak
 
 ### Contoh 2
 
-Membuat sertifikat Manajemen API untuk digunakan selama Autentikasi dengan Backend. (otomatisgenerated)
+Membuat sertifikat API Management yang akan digunakan selama Autentikasi dengan Backend. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -69,8 +72,8 @@ Perintah kedua membuat sertifikat menggunakan rahasia dari keyvault ini.
 ## PARAMETERS
 
 ### -CertificateId
-Menentukan ID sertifikat untuk dibuat.
-Jika Anda tidak menentukan parameter ini, ID dihasilkan untuk Anda.
+Menentukan ID sertifikat yang akan dibuat.
+Jika Anda tidak menentukan parameter ini, ID akan dibuat untuk Anda.
 
 ```yaml
 Type: System.String
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 
 ### -KeyVault
 KeyVault digunakan untuk mengambil data sertifikat. Parameter ini diperlukan jika -PfxFilePath tidak ditentukan.
-Lihat New-AzApiManagementKeyVaultObject detailnya.
+Lihat New-AzApiManagementKeyVaultObject untuk detailnya.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementKeyVaultEntity
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -PfxFilePath
-Menentukan jalur ke file sertifikat dalam format .pfx untuk membuat dan mengunggah.
+Menentukan jalur ke file sertifikat dalam format .pfx untuk dibuat dan diunggah.
 Parameter ini diperlukan jika Anda tidak menentukan parameter *PfxBytes* .
 
 ```yaml
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

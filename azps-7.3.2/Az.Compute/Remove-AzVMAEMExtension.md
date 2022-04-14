@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMAEMExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMAEMExtension.md
-ms.openlocfilehash: d1da4b7873a80808aa144a0c9b17d1938161125c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: fa2762cf1de8575d6ab636c09611055e6c7a1bc2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140386835"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142294531"
 ---
 # Remove-AzVMAEMExtension
 
 ## SYNOPSIS
-Menghapus ekstensi AEM dari komputer virtual.
+Menghapus ekstensi AEM dari mesin virtual.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/remove-azvmaemextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,12 +38,12 @@ Cmdlet **Remove-AzVMAEMExtension** menghapus ekstensi Azure Enhanced Monitoring 
 Remove-AzVMAEMExtension -ResourceGroupName "ResourceGroup11" -VMName "contoso-server"
 ```
 
-Perintah ini akan menghapus ekstensi AEM untuk komputer virtual bernama contoso-server.
+Perintah ini menghapus ekstensi AEM untuk mesin virtual bernama contoso-server.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Memulai operasi dan segera mengembalikannya, sebelum operasi selesai. Untuk mengetahui apakah operasi berhasil diselesaikan, gunakan beberapa mekanisme lain.
+Memulai operasi dan segera kembali, sebelum operasi selesai. Untuk menentukan apakah operasi telah berhasil diselesaikan, gunakan beberapa mekanisme lain.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -OSType
-Menentukan tipe sistem operasi dari disk sistem operasi.
+Menentukan tipe sistem operasi disk sistem operasi.
 Jika disk sistem operasi tidak memiliki tipe, Anda harus menentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah: Windows dan Linux.
 
@@ -102,8 +105,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
-Cmdlet ini akan menghapus ekstensi AEM dari komputer virtual tersebut.
+Menentukan nama grup sumber daya mesin virtual.
+Cmdlet ini menghapus ekstensi AEM dari mesin virtual tersebut.
 
 ```yaml
 Type: System.String
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 
 ### -VMName
 Menentukan nama mesin virtual.
-Cmdlet ini menghapus ekstensi AEM untuk komputer virtual yang ditentukan parameter ini.
+Cmdlet ini menghapus ekstensi AEM untuk mesin virtual yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

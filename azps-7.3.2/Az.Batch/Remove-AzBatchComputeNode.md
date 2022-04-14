@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/remove-azb
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchComputeNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchComputeNode.md
-ms.openlocfilehash: 5be6f646f57ebd68398834c92e5a9b5f10b0aa8c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 257444421cbffbb1cd8295698907188b92e3ffd5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140001877"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142037693"
 ---
 # Remove-AzBatchComputeNode
 
 ## SYNOPSIS
-Menghapus node perhitungan dari kolam renang.
+Menghapus node komputasi dari kumpulan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.batch/remove-azbatchcomputenode) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,43 +40,43 @@ Remove-AzBatchComputeNode [[-ComputeNode] <PSComputeNode>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzBatchComputeNode** menghapus node perhitungan Azure Batch dari kumpulan.
+Cmdlet **Remove-AzBatchComputeNode** menghapus Azure Batch node komputasi dari kolam.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus node perhitungan
+### Contoh 1: Menghapus simpul komputasi
 ```powershell
 Remove-AzBatchComputeNode -PoolId "Pool07" -Ids "tvm-2316545714_1-20150725t213220z" -DeallocationOption Terminate -ResizeTimeout ([TimeSpan]::FromMinutes(10)) -BatchContext $Context
 ```
 
-Perintah ini menghapus node perhitungan yang memiliki ID tertentu dari pool yang memiliki ID Pool07.
-Perintah menentukan opsi Hentikan lokasi penawaran.
-Waktu yang diubah adalah 10 menit.
+Perintah ini menghapus node komputasi yang memiliki ID tertentu dari pool yang memiliki ID Pool07.
+Perintah menentukan opsi Hentikan penawaran.
+Batas waktu pengubahan ukuran adalah 10 menit.
 
-### Contoh 2: Hapus node perhitungan dengan menggunakan saluran
+### Contoh 2: Menghapus simpul komputasi menggunakan pipeline
 ```powershell
 Get-AzBatchComputeNode -PoolId "Pool07" -Id "tvm-2316545714_1-20150725t213220z" -BatchContext $Context | Remove-AzBatchComputeNode -Force -BatchContext $Context
 ```
 
-Perintah ini mendapatkan node hitung yang memiliki ID tertentu dari pool yang memiliki ID Pool07 dengan menggunakan cmdlet Get-AzBatchComputeNode cmdlet.
-Perintah melewati simpul itu ke cmdlet saat ini dengan menggunakan saluran.
-Cmdlet saat ini menghapus node perhitungan.
+Perintah ini mendapatkan node komputasi yang memiliki ID tertentu dari pool yang memiliki ID Pool07 menggunakan cmdlet Get-AzBatchComputeNode.
+Perintah melewati simpul ke cmdlet saat ini menggunakan pipeline.
+Cmdlet saat ini menghapus simpul komputasi.
 Perintah menentukan parameter *Paksa* .
-Oleh karena itu, perintah tidak akan meminta konfirmasi Anda.
+Oleh karena itu, perintah tidak meminta konfirmasi kepada Anda.
 
-### Contoh 3: Menghapus beberapa node
+### Contoh 3: Hapus beberapa node
 ```powershell
 Remove-AzBatchComputeNode -PoolId "Pool07" @("tvm-1783593343_28-20151117t214257z","tvm-1783593343_29-20151117t214257z") -Force -BatchContext $Context
 ```
 
-Perintah ini menghapus dua node hitung dari pool yang memiliki ID Pool07.
-Perintah tidak akan meminta konfirmasi Anda.
+Perintah ini menghapus dua node komputasi dari kumpulan yang memiliki ID Pool07.
+Perintah tidak meminta konfirmasi kepada Anda.
 
 ## PARAMETERS
 
 ### -BatchContext
-Menentukan contoh **BatchAccountContext** yang digunakan cmdlet untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeNode
-Menentukan objek **PSComputeNode** yang mewakili node perhitungan yang dihapus cmdlet ini.
+Menentukan objek **PSComputeNode** yang mewakili simpul komputasi yang dihapus cmdlet ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSComputeNode
@@ -103,8 +106,8 @@ Accept wildcard characters: False
 ```
 
 ### -DeallocationOption
-Menentukan opsi lokasi penawaran untuk operasi penghapusan yang dijalankan cmdlet ini.
-Nilai defaultnya adalah Requeue.
+Menentukan opsi deallokasi untuk operasi penghapusan yang dimulai cmdlet ini.
+Nilai defaultnya adalah Antrean Ulang.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Batch.Common.ComputeNodeDeallocationOption]
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -134,8 +137,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ids
-Menentukan array ID node perhitungan yang dihapus cmdlet ini dari pool.
+Menentukan array ID node komputasi yang dihapus cmdlet ini dari kumpulan.
 
 ```yaml
 Type: System.String[]
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolId
-Menentukan ID pool yang berisi node perhitungan yang dihapus cmdlet ini.
+Menentukan ID kumpulan yang berisi simpul komputasi yang dihapus cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -180,8 +183,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResizeTimeout
-Menentukan interval waktu habis untuk penghapusan node perhitungan dari pool.
-Nilai default adalah 10 menit.
+Menentukan interval waktu habis untuk penghapusan node komputasi dari kumpulan.
+Nilai defaultnya adalah 10 menit.
 Nilai minimum adalah 5 menit.
 
 ```yaml
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -248,6 +251,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzBatchComputeNode](./Get-AzBatchComputeNode.md)
 
-[Restart-AzBatchComputeNode](./Restart-AzBatchComputeNode.md)
+[Mulai ulang-AzBatchComputeNode](./Restart-AzBatchComputeNode.md)
 
 

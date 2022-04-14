@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Set-AzServiceFabricManagedClusterApplicationType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Set-AzServiceFabricManagedClusterApplicationType.md
-ms.openlocfilehash: 7eff861dc7c33e806f4883deabc8dd6db57312dc
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0fc3b6fded08e340b767a0f97945929f6c238520
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140554412"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142208719"
 ---
 # Set-AzServiceFabricManagedClusterApplicationType
 
 ## SYNOPSIS
-Update a service fabric managed application type. Ini memungkinkan Anda memperbarui tag. Hanya mendukung tipe aplikasi yang disebarkan ARM.
+Perbarui jenis aplikasi yang dikelola kain layanan. Ini memungkinkan Anda memperbarui tag. Hanya mendukung ARM tipe aplikasi yang digunakan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/set-azservicefabricmanagedclusterapplicationtype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Set-AzServiceFabricManagedClusterApplicationType [-Tag <Hashtable>] -ResourceId 
 ```
 
 ## DESCRIPTION
-Cmdlet ini bisa digunakan untuk memperbarui tag tipe aplikasi.
+Cmdlet ini dapat digunakan untuk memperbarui tag tipe aplikasi.
 
 ## EXAMPLES
 
@@ -52,7 +55,7 @@ PS C:\> $newTags = @{new="tags"}
 PS C:\> Set-AzServiceFabricManagedClusterApplicationType -ResourceGroupName $resourceGroupName -ClusterName $clusterName -Name $appTypeName -Tags $newTags -Verbose
 ```
 
-Contoh ini akan memperbarui tag tipe aplikasi terkelola "testAppType".
+Contoh ini akan memperbarui tag "testAppType" tipe aplikasi terkelola.
 
 ### Contoh 2
 ```powershell
@@ -64,7 +67,7 @@ PS C:\> $appType = Get-AzServiceFabricManagedClusterApplicationType -ResourceGro
 PS C:\> $appType | Set-AzServiceFabricManagedClusterApplicationType -Tags $newTags -Verbose
 ```
 
-Contoh ini akan memperbarui tag tipe aplikasi terkelola "testAppType".
+Contoh ini akan memperbarui tag "testAppType" tipe aplikasi terkelola.
 
 ### Contoh 3
 ```powershell
@@ -73,7 +76,7 @@ PS C:\> $resourceId = "/subscriptions/13ad2c84-84fa-4798-ad71-e70c07af873f/resou
 PS C:\> Set-AzServiceFabricManagedClusterApplicationType -ResourceId $resourceId -Tags $newTags
 ```
 
-Contoh ini akan memperbarui detail tipe aplikasi terkelola dengan ID Sumber Daya ARM yang ditentukan.
+Contoh ini akan memperbarui detail tipe aplikasi yang dikelola dengan ID Sumber Daya ARM yang ditentukan.
 
 ## PARAMETERS
 
@@ -107,8 +110,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Menghapus tanpa perintah.
+### -Paksa
+Hapus tanpa perintah.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Sumber daya tipe aplikasi yang dikelola.
+Sumber daya tipe aplikasi terkelola.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.PSManagedApplicationType
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Tentukan nama dari tipe aplikasi yang dikelola.
+Tentukan nama tipe aplikasi yang dikelola.
 
 ```yaml
 Type: System.String
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Set-AzApplicationInsightsContinuousExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Set-AzApplicationInsightsContinuousExport.md
-ms.openlocfilehash: 596440cdf1114ad08c81f2b4d372784b7f727618
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9e673ecd12e9718dd93e0df77d25e9c3aeb0b24b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140189303"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142038440"
 ---
 # Set-AzApplicationInsightsContinuousExport
 
 ## SYNOPSIS
 Memperbarui konfigurasi ekspor berkelanjutan dalam sumber daya wawasan aplikasi
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/set-azapplicationinsightscontinuousexport) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -71,12 +74,12 @@ ExportStatus                     : Preparing
 LastSuccessTime                  :
 ```
 
-Perbarui konfigurasi ekspor berkelanjutan "konfigurasiTFEiBg1rkDXOCIeJQ2mB2TxZg=" dari sumber daya "uji" di grup sumber daya "grupuji" untuk mengekspor dokumen "Permintaan" dan "Lacak" ke wadah penyimpanan "testcontainer" di "testtorageaccount". Token SAS harus valid dan memiliki izin menulis untuk wadah, jika tidak fitur ekspor berkelanjutan tidak akan berfungsi. Jika token SAS kedaluwarsa, fitur ekspor berkelanjutan akan berhenti berfungsi.
+Memperbarui konfigurasi ekspor berkelanjutan "jlTFEiBg1rkDXOCIeJQ2mB2TxZg=" sumber daya "uji" dalam grup sumber daya "testgroup" untuk mengekspor dokumen "Request" dan "Trace" ke wadah penyimpanan "testcontainer" di "teststorageaccount". Token SAS harus valid dan memiliki izin menulis ke wadah, jika tidak, fitur ekspor berkelanjutan tidak akan berfungsi. Jika token SAS kedaluwarsa, fitur ekspor berkelanjutan akan berhenti berfungsi.
 
 ## PARAMETERS
 
 ### -ApplicationInsightsComponent
-Application Insights Component Object.
+Objek Komponen Insights Aplikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApplicationInsights.Models.PSApplicationInsightsComponent
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExportId
-Application Insights Continuous Export Id.
+Id Ekspor Berkelanjutan Insights Aplikasi.
 
 ```yaml
 Type: System.String
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Aplikasi Insights Komponen.
+Nama Komponen Insights Aplikasi.
 
 ```yaml
 Type: System.String
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Application Insights Component Resource Id.
+Id Sumber Daya Komponen Insights Aplikasi.
 
 ```yaml
 Type: System.String
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountId
-Nomor Storage Id Akun.
+Id Akun Storage Tujuan.
 
 ```yaml
 Type: System.String
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageLocation
-Nomor Storage Id Lokasi.
+Id Lokasi Storage Tujuan.
 
 ```yaml
 Type: System.String
@@ -242,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -257,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -272,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

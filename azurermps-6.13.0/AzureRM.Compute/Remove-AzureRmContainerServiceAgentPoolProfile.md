@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Remove-AzureRmContainerServiceAgentPoolProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Remove-AzureRmContainerServiceAgentPoolProfile.md
 ms.openlocfilehash: b960f89ddacb365ee7c1b909b6f0a12bf7c038e1
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422169"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141844013"
 ---
 # Remove-AzureRmContainerServiceAgentPoolProfile
 
 ## SYNOPSIS
-Menghapus profil agen pool dari layanan penampung.
+Menghapus profil kumpulan agen dari layanan kontainer.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ Remove-AzureRmContainerServiceAgentPoolProfile [-ContainerService] <PSContainerS
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmContainerServiceAgentPoolProfile** menghapus profil agen pool dari layanan penampung.
+Cmdlet **Remove-AzureRmContainerServiceAgentPoolProfile** menghapus profil kumpulan agen dari layanan kontainer.
 
 ## EXAMPLES
 
@@ -38,14 +38,14 @@ PS C:\> $Container = Get-AzureRmContainerService -ResourceGroupName "ResourceGro
 PS C:\> Remove-AzureRmContainerServiceAgentPoolProfile -ContainerService $Container -Name "AgentPool01"
 ```
 
-Perintah pertama mendapatkan layanan wadah bernama CSResourceGroup17 dengan menggunakan cmdlet Get-AzureRmContainerService cmdlet.
-Perintah menyimpan layanan dalam variabel $Container baru.
-Perintah kedua menghapus profil yang bernama AgentPool01 dari layanan penampung di $Container.
+Perintah pertama mendapatkan layanan kontainer bernama CSResourceGroup17 dengan menggunakan cmdlet Get-AzureRmContainerService.
+Perintah menyimpan layanan dalam variabel $Container.
+Perintah kedua menghapus profil bernama AgentPool01 dari layanan kontainer di $Container.
 
 ## PARAMETERS
 
 ### -ContainerService
-Menentukan objek layanan kontainer tempat cmdlet ini menghapus profil agen pool.
+Menentukan objek layanan kontainer tempat cmdlet ini menghapus profil kumpulan agen.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSContainerService
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama profil agen pool yang dihapus cmdlet ini.
+Menentukan nama profil kumpulan agen yang dihapus cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

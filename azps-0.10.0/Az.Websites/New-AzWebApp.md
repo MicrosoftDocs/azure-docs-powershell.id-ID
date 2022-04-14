@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Websites/Websites/help/New-AzWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Websites/Websites/help/New-AzWebApp.md
 ms.openlocfilehash: ec5f9cf60025e6b35248b2e7f8058040b404ec42
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427955"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142091463"
 ---
 # New-AzWebApp
 
 ## SYNOPSIS
-Membuat Aplikasi Azure Web.
+Membuat Azure Web App.
 
 ## SYNTAX
 
@@ -37,22 +37,22 @@ New-AzWebApp [-ResourceGroupName] <String> [-Name] <String> [-Location] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzWebApp** membuat Azure Web App dalam grup sumber daya tertentu yang menggunakan paket Layanan Aplikasi dan pusat data tertentu.
+Cmdlet **New-AzWebApp** membuat Azure Web App dalam grup sumber daya tertentu yang menggunakan paket dan pusat data App Service yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Web App
+### Contoh 1: Membuat Aplikasi Web
 ```
 PS C:\>New-AzWebApp -ResourceGroupName Default-Web-WestUS -Name "ContosoSite" -Location "West US" -AppServicePlan "ContosoServicePlan"
 ```
 
-Perintah ini membuat Azure Web App bernama ContosoSite dalam grup sumber daya yang ada bernama Default-Web-WestUS di pusat data As Barat.
-Perintah tersebut menggunakan paket Layanan Aplikasi yang sudah ada bernama ContosoServicePlan.
+Perintah ini membuat Azure Web App bernama ContosoSite dalam grup sumber daya yang sudah ada bernama Default-Web-WestUS di pusat data AS Barat.
+Perintah menggunakan rencana App Service yang sudah ada bernama ContosoServicePlan.
 
 ## PARAMETERS
 
 ### -AppServicePlan
-Nama Paket Layanan Aplikasi
+Nama Rencana App Service
 
 ```yaml
 Type: String
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppSettingsOverrides
-Opsi Pengaturan Akan Menimpa HashTable
+Aplikasi Pengaturan Menimpa HashTable
 
 ```yaml
 Type: Hashtable
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -AseName
-Nama Lingkungan Layanan Aplikasi
+Nama Lingkungan App Service
 
 ```yaml
 Type: String
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -AseResourceGroupName
-Nama Grup Sumber Daya Lingkungan Layanan Aplikasi
+Nama Grup Sumber Daya Lingkungan App Service
 
 ```yaml
 Type: String
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -GitRepositoryPath
-Jalur ke GitHub repositori tersebut memuat aplikasi web untuk disebarkan.
+Path to the GitHub repository containign the web application to deploy.
 
 ```yaml
 Type: String
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeSourceWebAppSlots
-Sertakan Opsi Slot Aplikasi Web Sumber
+Sertakan Opsi Slot WebApp Sumber
 
 ```yaml
 Type: SwitchParameter
@@ -271,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceWebApp
-Objek Source WebApp
+Objek WebApp Sumber
 
 ```yaml
 Type: Site
@@ -286,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### -TrafficManagerProfile
-Id Sumber Daya profil manajer lalu lintas yang sudah ada
+Id Sumber Daya dari profil manajer lalu lintas yang sudah ada
 
 ```yaml
 Type: String
@@ -301,7 +301,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -316,7 +316,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -331,12 +331,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Situs
-Parameter 'SourceWebApp' menerima nilai tipe 'Situs' dari saluran
+Parameter 'SourceWebApp' menerima nilai tipe 'Situs' dari pipeline
 
 ## OUTPUTS
 
@@ -348,9 +348,9 @@ Parameter 'SourceWebApp' menerima nilai tipe 'Situs' dari saluran
 
 [Get-AzWebApp](./Get-AzWebApp.md)
 
-[Remove-AzWebApp](./Remove-AzWebApp.md)
+[Hapus-AzWebApp](./Remove-AzWebApp.md)
 
-[Restart-AzWebApp](./Restart-AzWebApp.md)
+[Mulai ulang-AzWebApp](./Restart-AzWebApp.md)
 
 [Start-AzWebApp](./Start-AzWebApp.md)
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzResourceGroupDeploymentOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzResourceGroupDeploymentOperation.md
-ms.openlocfilehash: 093f26dc6b06e6e629ba163fa8f0118b857d9566
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e7c79a7e6688e74a5b691016d38a1a4821de303f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139998862"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142209889"
 ---
 # Get-AzResourceGroupDeploymentOperation
 
 ## SYNOPSIS
-Mendapatkan operasi penggunaan grup sumber daya
+Mendapatkan operasi penyebaran grup sumber daya
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azresourcegroupdeploymentoperation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,12 +29,12 @@ Get-AzResourceGroupDeploymentOperation -DeploymentName <String> -ResourceGroupNa
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzResourceGroupDeploymentOperation** mencantumkan semua operasi yang menjadi bagian dari penyebaran untuk membantu Anda mengidentifikasi dan memberi informasi selengkapnya tentang operasi yang gagal untuk penyebaran tertentu.
-Konten juga dapat memperlihatkan respons dan permintaan konten untuk setiap operasi penyebaran.
-Ini adalah informasi yang sama yang disediakan dalam detail penggunaan di portal.
-Untuk mendapatkan permintaan dan konten respons, aktifkan pengaturan ketika mengirimkan penyebaran melalui **New-AzResourceGroupDeployment**.
-Ini bisa berpotensi membuat log dan mengekspos rahasia seperti kata sandi yang digunakan dalam properti sumber daya atau operasi **ListKeys** yang kemudian dikembalikan saat Anda mengambil operasi penyebaran.
-Untuk informasi selengkapnya tentang pengaturan ini dan cara mengaktifkannya, lihat cara New-AzResourceGroupDeployment Dan Debug penyebaran templat ARM
+Cmdlet **Get-AzResourceGroupDeploymentOperation** mencantumkan semua operasi yang merupakan bagian dari penyebaran untuk membantu Anda mengidentifikasi dan memberikan informasi selengkapnya tentang operasi persis yang gagal untuk penyebaran tertentu.
+Ini juga dapat memperlihatkan respons dan konten permintaan untuk setiap operasi penyebaran.
+Ini adalah informasi yang sama yang disediakan dalam detail penyebaran di portal.
+Untuk mendapatkan permintaan dan konten respons, aktifkan pengaturan saat mengirimkan penyebaran melalui **New-AzResourceGroupDeployment**.
+Ini dapat berpotensi membuat log dan mengekspos rahasia seperti kata sandi yang digunakan dalam properti sumber daya atau operasi **listKeys** yang kemudian dikembalikan saat Anda mengambil operasi penyebaran.
+Untuk informasi selengkapnya tentang pengaturan ini dan cara mengaktifkannya, lihat penyebaran templat New-AzResourceGroupDeployment dan Debugging ARM
 
 ## EXAMPLES
 
@@ -40,7 +43,7 @@ Untuk informasi selengkapnya tentang pengaturan ini dan cara mengaktifkannya, li
 PS C:\>Get-AzResourceGroupDeploymentOperation -DeploymentName test -ResourceGroupName test
 ```
 
-Mendapatkan operasi penyebaran dengan nama "uji" di bawah grup sumber daya "uji"
+Mendapatkan operasi penyebaran dengan nama "uji" di bawah "uji" grup sumber daya
 
 ## PARAMETERS
 
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Saat diatur, cmdlet harus menggunakan versi API prari tamu ketika menentukan versi mana yang akan digunakan secara otomatis.
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -105,13 +108,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 

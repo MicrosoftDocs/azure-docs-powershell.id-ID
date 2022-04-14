@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Remove-AzureRMVMSqlServerExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Remove-AzureRMVMSqlServerExtension.md
 ms.openlocfilehash: 83f697733d56ae7d99bc0b2660b5abbaca15a71f
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421277"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141844023"
 ---
 # Remove-AzureRmVMSqlServerExtension
 
 ## SYNOPSIS
-Menghapus ekstensi SQL Server dari komputer virtual.
+Menghapus ekstensi SQL Server dari mesin virtual.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,21 +28,21 @@ Remove-AzureRmVMSqlServerExtension [-ResourceGroupName] <String> [-VMName] <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmVMSqlServerExtension** menghapus ekstensi AzureSQL Server dari komputer virtual.
+Cmdlet **Remove-AzureRmVMSqlServerExtension** menghapus ekstensi AzureSQL Server dari mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus SQL Server ekstensi
+### Contoh 1: Menghapus ekstensi SQL Server
 ```
 PS C:\> Remove-AzureRMVMSqlServerExtension -ResourceGroupName "ResourceGroup11" -VMName "ContosoVM22" -Name "SqlIaaSAgent"
 ```
 
-Perintah ini akan menghapus SQL Server otomatis dari komputer virtual bernama ContosoVM22.
+Perintah ini menghapus ekstensi SQL Server dari mesin virtual bernama ContosoVM22.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: System.String
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual asal cmdlet ini menghapus ekstensi SQL Server.
+Menentukan nama mesin virtual tempat cmdlet ini menghapus ekstensi SQL Server.
 
 ```yaml
 Type: System.String
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

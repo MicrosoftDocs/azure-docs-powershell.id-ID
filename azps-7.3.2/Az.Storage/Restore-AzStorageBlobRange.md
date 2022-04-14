@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/restore-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Restore-AzStorageBlobRange.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Restore-AzStorageBlobRange.md
-ms.openlocfilehash: 0de6c661077356f9bf7bce2f77b8cb5ff493723c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ed914d79f90b1c51491055815fda32e45451e73f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140385263"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142206559"
 ---
 # Restore-AzStorageBlobRange
 
 ## SYNOPSIS
 Memulihkan akun Storage untuk rentang blob tertentu.
 
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/restore-azstorageblobrange) untuk informasi terbaru.
+
 ## SYNTAX
 
-### Nama Akun (Default)
+### AccountName (Default)
 ```
 Restore-AzStorageBlobRange [-ResourceGroupName] <String> [-StorageAccountName] <String>
  -TimeToRestore <DateTime> [-BlobRestoreRange <PSBlobRestoreRange[]>] [-WaitForComplete] [-AsJob]
@@ -46,7 +49,7 @@ Rentang mulai disertakan, dan rentang akhir dikecualikan dalam pemulihan blob.
 
 ## EXAMPLES
 
-### Contoh 1: Mulai memulihkan blob di akun Storage dengan rentang blob tertentu
+### Contoh 1: Mulai memulihkan blob dalam akun Storage dengan rentang blob tertentu
 ```powershell
 PS C:\> $range1 = New-AzStorageBlobRangeToRestore -StartRange container1/blob1 -EndRange container2/blob2
 PS C:\> $range2 = New-AzStorageBlobRangeToRestore -StartRange container3/blob3 -EndRange container4/blob4
@@ -63,9 +66,9 @@ Status   RestoreId                            FailureReason Parameters.TimeToRes
 Complete 6ca55a8b-fca0-461a-8e4c-13927a9707e6               2020-02-10T13:58:44.6841810Z ["container1/blob1" -> "container2/blob2",...]
 ```
 
-Perintah ini membuat 2 rentang blob terlebih dahulu, lalu memulai memulihkan blob dalam akun Storage dengan 2 rentang blob dari 1 hari yang lalu. Pengguna dapat menggunakan Get-AzStorageAccount untuk melacak status pemulihan nanti.
+Perintah ini pertama-tama membuat 2 rentang blob, lalu mulai memulihkan blob dalam akun Storage dengan rentang 2 blob dari 1 hari yang lalu. Pengguna dapat menggunakan Get-AzStorageAccount untuk melacak status pemulihan nanti.
 
-### Contoh 2: Memulihkan semua blob dalam akun Storage yang ada dalam ujung belakang
+### Contoh 2: Memulihkan semua blob dalam akun Storage di backend
 ```powershell
 PS C:\> $job = Restore-AzStorageBlobRange -ResourceGroupName "myresourcegoup" -StorageAccountName "mystorageaccount" -TimeToRestore (Get-Date).AddMinutes(-30) -WaitForComplete -asjob
 
@@ -78,9 +81,9 @@ Status   RestoreId                            FailureReason Parameters.TimeToRes
 Complete 0387953a-bbe6-4602-818d-e661581ee44b               2020-08-28T07:11:33.9843100Z ["" -> ""]
 ```
 
-Perintah ini memulihkan semua blob dalam akun Storage dari 30 menit yang lalu, dan tunggu hingga pemulihan selesai. Karena pemulihan blob mungkin memakan waktu lama, jalankan dalam backend dengan parameter -Asjob, lalu tunggu pekerjaan selesai dan perlihatkan hasilnya.
+Perintah ini memulihkan semua blob dalam akun Storage dari 30 menit yang lalu, dan menunggu pemulihan selesai. Karena mengembalikan blob mungkin memakan waktu lama, jalankan di backend dengan parameter -Asjob, lalu tunggu pekerjaan selesai dan perlihatkan hasilnya.
 
-### Contoh 3: Memulihkan blob dengan input rentang blob secara langsung, dan tunggu hingga selesai
+### Contoh 3: Memulihkan blob menurut rentang blob input secara langsung, dan menunggu selesai
 ```powershell
 PS C:\> Restore-AzStorageBlobRange -ResourceGroupName "myresourcegoup" -StorageAccountName "mystorageaccount" -WaitForComplete `
     -TimeToRestore (Get-Date).AddSeconds(-1) `
@@ -92,12 +95,12 @@ Status   RestoreId                            FailureReason Parameters.TimeToRes
 Complete d66d1d02-6e48-47ef-b516-0155dd8319c6               2020-02-10T14:17:46.8189116Z ["aaa/abc" -> "bbb/abc",...]
 ```
 
-Perintah ini memulihkan blob dalam akun Storage dari 1 hari yang lalu, dengan memasukkan 2 rentang blob secara langsung ke cmdlet Restore-AzStorageBlobRange cmdlet. Perintah ini akan menunggu pemulihan selesai.
+Perintah ini memulihkan blob dalam akun Storage dari 1 hari yang lalu, dengan input 2 blob berkisar langsung ke cmdlet Restore-AzStorageBlobRange. Perintah ini akan menunggu pemulihan selesai.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -BlobRestoreRange
-Rentang blob untuk Pulihkan.
+Rentang blob untuk Memulihkan.
 Jika tidak menentukan parameter ini, akan memulihkan semua blob.
 
 ```yaml
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Storage Sumber Daya Akun.
+id sumber daya akun Storage.
 
 ```yaml
 Type: System.String
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage objek akun
+objek akun Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Storage Akun.
+Storage Nama Akun.
 
 ```yaml
 Type: System.String
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -WaitForComplete
-Tunggu hingga Pulihkan tugas selesai
+Tunggu tugas Pulihkan selesai
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -263,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

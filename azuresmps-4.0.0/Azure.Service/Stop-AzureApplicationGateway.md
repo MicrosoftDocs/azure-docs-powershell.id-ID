@@ -4,11 +4,11 @@ ms.assetid: 17BA2ED5-E347-45C0-AF20-CDD288469514
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 02c001d3ce4a2372e38debccc60b4c5eea2d060c
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428023"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142243261"
 ---
 # Stop-AzureApplicationGateway
 
@@ -38,7 +38,7 @@ Perintah ini menghentikan gateway aplikasi bernama ApplicationGateway06.
 ## PARAMETERS
 
 ### -Nama
-Menentukan nama gateway aplikasi yang perhentian cmdlet ini.
+Menentukan nama gateway aplikasi yang dihentikan cmdlet ini.
 
 ```yaml
 Type: String
@@ -53,8 +53,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -85,9 +85,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureApplicationGateway](./Get-AzureApplicationGateway.md)
 
-[New-AzureApplicationGateway](./New-AzureApplicationGateway.md)
+[AzureApplicationGateway baru](./New-AzureApplicationGateway.md)
 
-[Remove-AzureApplicationGateway](./Remove-AzureApplicationGateway.md)
+[Hapus-AzureApplicationGateway](./Remove-AzureApplicationGateway.md)
 
 [Start-AzureApplicationGateway](./Start-AzureApplicationGateway.md)
 

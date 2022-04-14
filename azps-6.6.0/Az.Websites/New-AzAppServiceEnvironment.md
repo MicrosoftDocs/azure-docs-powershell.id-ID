@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzAppServiceEnvironment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzAppServiceEnvironment.md
 ms.openlocfilehash: 4e96a050291fa775363e05e1effc0c1ad4d52ad8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140302045"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142262707"
 ---
 # New-AzAppServiceEnvironment
 
 ## SYNOPSIS
-Membuat Lingkungan Layanan Aplikasi termasuk Tabel Rute dan Grup Keamanan Jaringan yang disarankan
+Membuat Lingkungan App Service termasuk Tabel Rute dan Grup Keamanan Jaringan yang direkomendasikan
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/new-azappserviceenvironment) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/new-azappserviceenvironment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,7 +52,7 @@ New-AzAppServiceEnvironment [-ResourceGroupName] <String> [-Name] <String> [-Loc
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzAppServiceEnvironment** membuat Lingkungan Layanan Aplikasi.
+Cmdlet **New-AzAppServiceEnvironment** menciptakan Lingkungan App Service.
 
 ## EXAMPLES
 
@@ -62,7 +62,7 @@ PS C:\> New-AzAppServiceEnvironment -ResourceGroupName MyResourceGroup -Name MyA
         -VirtualNetworkName MyVirtualNetwork -SubnetName AseSubnet -LoadBalancerMode Internal
 ```
 
-Membuat Lingkungan Layanan Aplikasi bernama MyAseV2 termasuk Tabel Rute dan Grup Keamanan Jaringan yang disarankan
+Buat Lingkungan App Service bernama MyAseV2 termasuk Tabel Rute dan Grup Keamanan Jaringan yang direkomendasikan
 
 ### Contoh 2
 ```powershell
@@ -71,13 +71,13 @@ PS C:\> New-AzAppServiceEnvironment -ResourceGroupName MyResourceGroup -Name MyA
         -SkipRouteTable -SkipNetworkSecurityGroup
 ```
 
-Buat Lingkungan Layanan Aplikasi bernama MyAseV2 tanpa Tabel Rute dan Grup Keamanan Jaringan yang direkomendasikan.
-Ini harus dibuat sebelum atau tepat setelah penyediaan Lingkungan Layanan Aplikasi untuk memastikan sebuah instans fungsional.
+Buat Lingkungan App Service bernama MyAseV2 tanpa Tabel Rute dan Grup Keamanan Jaringan yang direkomendasikan.
+Ini harus dibuat sebelum atau tepat setelah penyediaan lingkungan App Service untuk memastikan instans fungsi.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -106,7 +106,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kind
+### -Jenis
 Versi lingkungan layanan aplikasi.
 
 ```yaml
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipNetworkSecurityGroup
-Jangan membuat grup keamanan jaringan yang direkomendasikan sebagai bagian dari lingkungan layanan aplikasi.
+Jangan buat grup keamanan jaringan yang direkomendasikan sebagai bagian dari lingkungan layanan aplikasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipRouteTable
-Jangan membuat tabel rute yang direkomendasikan sebagai bagian dari lingkungan layanan aplikasi.
+Jangan buat tabel rute yang direkomendasikan sebagai bagian dari lingkungan layanan aplikasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetId
-Subnet id.
+Id subnet.
 
 ```yaml
 Type: System.String
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetName
-Nama subnet. Digunakan dalam kombinasi dengan -VirtualNetworkName dan harus dalam grup sumber daya yang sama dengan ASE. Jika tidak, gunakan -SubnetId
+Nama subnet. Digunakan dalam kombinasi dengan -VirtualNetworkName dan harus berada dalam grup sumber daya yang sama dengan ASE. Jika tidak, gunakan -SubnetId
 
 ```yaml
 Type: System.String
@@ -274,7 +274,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -290,7 +290,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -305,11 +305,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

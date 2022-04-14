@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzExpressRouteCircuitConnectionConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzExpressRouteCircuitConnectionConfig.md
 ms.openlocfilehash: 663565d3fd9db2e98bba7f9dcfb40f3c166e6f25
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140281093"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142047035"
 ---
 # Remove-AzExpressRouteCircuitConnectionConfig
 
@@ -19,7 +19,7 @@ ms.locfileid: "140281093"
 Menghapus konfigurasi koneksi sirkuit ExpressRoute.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azexpressroutecircuitconnectionconfig) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azexpressroutecircuitconnectionconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Remove-AzExpressRouteCircuitConnectionConfig [-Name] <String> [-ExpressRouteCirc
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzExpressRouteCircuitConnectionConfig** menghapus konfigurasi koneksi sirkuit ExpressRoute yang terkait dengan Sirkuit Rute Ekspres yang diberikan.
+Cmdlet **Remove-AzExpressRouteCircuitConnectionConfig** menghapus konfigurasi koneksi sirkuit ExpressRoute yang terkait dengan Express Route Circuit tertentu.
 
 ## EXAMPLES
 
@@ -45,14 +45,14 @@ Set-AzExpressRouteCircuit -ExpressRouteCircuit $circuit_init
 Get-AzExpressRouteCircuit -Name $initiatingCircuitName -ResourceGroupName $rg|Remove-AzExpressRouteCircuitConnectionConfig -Name $circuitConnectionName|Set-AzExpressRouteCircuit
 ```
 
-### Contoh 3: Hapus konfigurasi koneksi sirkuit dari sirkuit ExpressRoute untuk keluarga alamat tertentu
+### Contoh 3: Menghapus konfigurasi koneksi sirkuit dari sirkuit ExpressRoute untuk keluarga alamat tertentu
 ```
 $circuit_init = Get-AzExpressRouteCircuit -Name $initiatingCircuitName -ResourceGroupName $rg
 Remove-AzExpressRouteCircuitConnectionConfig -Name $circuitConnectionName -ExpressRouteCircuit $circuit_init -AddressPrefixType IPv4
 Set-AzExpressRouteCircuit -ExpressRouteCircuit $circuit_init
 ```
 
-### Contoh 4: Hapus konfigurasi koneksi sirkuit menggunakan Piping dari Sirkuit ExpressRoute untuk keluarga alamat tertentu
+### Contoh 4: Menghapus konfigurasi koneksi sirkuit menggunakan Piping dari Sirkuit ExpressRoute untuk keluarga alamat tertentu
 ```
 Get-AzExpressRouteCircuit -Name $initiatingCircuitName -ResourceGroupName $rg|Remove-AzExpressRouteCircuitConnectionConfig -Name $circuitConnectionName -AddressPrefixType IPv6|Set-AzExpressRouteCircuit
 ```
@@ -60,7 +60,7 @@ Get-AzExpressRouteCircuit -Name $initiatingCircuitName -ResourceGroupName $rg|Re
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -104,7 +104,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 ### -AddressPrefixType
-Menentukan alamat keluarga yang perlu dihapus dari konfigurasi
+Menentukan keluarga alamat yang perlu dihapus dari konfigurasi
 
 ```yaml
 Type: System.String
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

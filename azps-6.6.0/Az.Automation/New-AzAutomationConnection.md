@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationConnection.md
 ms.openlocfilehash: b6d129dfcbc0a25836f10766cb42032388b60de2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140143215"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142091031"
 ---
 # New-AzAutomationConnection
 
@@ -19,7 +19,7 @@ ms.locfileid: "140143215"
 Membuat koneksi Otomatisasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/new-azautomationconnection) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/new-azautomationconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,9 +40,9 @@ PS C:\> $FieldValues = @{"AutomationCertificateName"="ContosoCertificate";"Subsc
 PS C:\> New-AzAutomationConnection -Name "Connection12" -ConnectionTypeName Azure -ConnectionFieldValues $FieldValues -ResourceGroupName "ResourceGroup01" -AutomationAccountName "AutomationAccount01"
 ```
 
-Perintah pertama menetapkan tabel nilai bidang hash ke $FieldValue bidang.
-Perintah kedua membuat koneksi Azure yang bernama Connection12 dalam akun Otomatisasi yang bernama AutomationAccount01.
-Perintah menggunakan nilai bidang koneksi di $FieldValues.
+Perintah pertama menetapkan tabel hash nilai bidang ke variabel $FieldValue.
+Perintah kedua membuat koneksi Azure bernama Connection12 di akun Otomatisasi bernama AutomationAccount01.
+Perintah menggunakan nilai bidang koneksi dalam $FieldValues.
 
 ### Contoh 2: Membuat koneksi untuk ConnectionTypeName=AzureServicePrincipal
 ```
@@ -54,8 +54,8 @@ PS C:\> $RunAsAccountConnectionFieldValues = @{"ApplicationId" = $ApplicationId;
 PS C:\> New-AzAutomationConnection -Name "Connection13" -ConnectionTypeName AzureServicePrincipal -ConnectionFieldValues $RunAsAccountConnectionFieldValues -ResourceGroupName "ResourceGroup01" -AutomationAccountName "AutomationAccount01"
 ```
 
-Perintah membuat koneksi Azure yang bernama Connection13 dalam akun Otomatisasi yang bernama AutomationAccount01 menggunakan $RunAsAccountConnectionFieldValues dan ConnectionTypeName=AzureServicePrincipal.
-ConnectionTypeName=AzureServicePrincipal ini biasanya digunakan untuk Akun Azure Run As.
+Perintah membuat koneksi Azure bernama Connection13 di akun Otomatisasi bernama AutomationAccount01 menggunakan $RunAsAccountConnectionFieldValues dan ConnectionTypeName=AzureServicePrincipal.
+ConnectionTypeName=AzureServicePrincipal ini terutama digunakan untuk Akun Azure Run As.
 
 ### Contoh 3: Membuat koneksi untuk ConnectionTypeName=AzureClassicCertificate
 ```
@@ -66,13 +66,13 @@ PS C:\> $ClassicRunAsAccountConnectionFieldValues = @{"SubscriptionName" = $Subs
 PS C:\> New-AzAutomationConnection -Name "Connection14" -ConnectionTypeName AzureClassicCertificate  -ConnectionFieldValues $ClassicRunAsAccountConnectionFieldValues -ResourceGroupName "ResourceGroup01" -AutomationAccountName "AutomationAccount01"
 ```
 
-Perintah membuat koneksi Azure yang bernama Connection14 dalam akun Otomatisasi yang bernama AutomationAccount01 menggunakan $ClassicRunAsAccountConnectionFieldValues dan ConnectionTypeName=AzureClassicCertificate.
-ConnectionTypeName=AzureClassicCertificate ini biasanya digunakan untuk Akun Azure Klasik Jalankan Sebagai.
+Perintah membuat koneksi Azure bernama Connection14 di akun Otomatisasi bernama AutomationAccount01 menggunakan $ClassicRunAsAccountConnectionFieldValues dan ConnectionTypeName=AzureClassicCertificate.
+ConnectionTypeName=AzureClassicCertificate ini terutama digunakan untuk Akun Azure Classic Run As.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang membuat koneksi oleh cmdlet ini.
+Menentukan nama akun Otomatisasi tempat cmdlet ini membuat koneksi.
 
 ```yaml
 Type: System.String
@@ -88,8 +88,8 @@ Accept wildcard characters: False
 
 ### -ConnectionFieldValues
 Menentukan tabel hash yang berisi pasangan kunci/nilai.
-Tombol mewakili bidang koneksi untuk tipe koneksi yang ditentukan.
-Nilai mewakili nilai tertentu dari setiap bidang koneksi untuk contoh koneksi.
+Kunci mewakili bidang koneksi untuk tipe koneksi yang ditentukan.
+Nilai mewakili nilai tertentu dari setiap bidang koneksi untuk instans koneksi.
 
 ```yaml
 Type: System.Collections.IDictionary
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama untuk koneksi.
+Menentukan nama untuk sambungan tersebut.
 
 ```yaml
 Type: System.String
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini membuat koneksi.
+Menentukan nama grup sumber daya tempat cmdlet ini membuat koneksi.
 
 ```yaml
 Type: System.String
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

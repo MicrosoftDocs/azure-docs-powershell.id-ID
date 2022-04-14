@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.advisor/get-azad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Advisor/Advisor/help/Get-AzAdvisorConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Advisor/Advisor/help/Get-AzAdvisorConfiguration.md
-ms.openlocfilehash: 16b9c62960479dd249cef077c9627b808535ba00
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 19b601b894586bfe6e7d571929352870600fd409
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140560919"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142038593"
 ---
 # Get-AzAdvisorConfiguration
 
 ## SYNOPSIS
-Dapatkan konfigurasi Azure Advisor untuk grup langganan atau sumber daya yang diberikan.
+Dapatkan konfigurasi Azure Advisor untuk langganan atau grup sumber daya tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.advisor/get-azadvisorconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,9 +30,9 @@ Get-AzAdvisorConfiguration [-ResourceGroupName <String>] [-DefaultProfile <IAzur
 ## DESCRIPTION
 Konfigurasi yang terkait dengan langganan memiliki dua tipe:
 
-Konfigurasi tingkat langganan: Hanya bisa ada satu konfigurasi tipe ini untuk langganan. LowCpuThreshold dan Exclude adalah satu-satunya properti dari tipe konfigurasi ini.
+Konfigurasi tingkat langganan: Hanya ada satu konfigurasi tipe ini untuk langganan. LowCpuThreshold dan Exclude adalah satu-satunya properti dari tipe konfigurasi ini.
 
-Konfigurasi tingkat Grup Sumber Daya: Hanya ada satu konfigurasi untuk setiap Grup Sumber Daya dalam langganan. Kecualikan adalah satu-satunya properti dari tipe konfigurasi ini.
+Konfigurasi tingkat ResourceGroup: Hanya ada satu konfigurasi untuk setiap ResourceGroup dalam langganan. Tidak termasuk adalah satu-satunya properti dari tipe konfigurasi ini.
 
 ## EXAMPLES
 
@@ -49,7 +52,7 @@ Name       : {user_subscription}-{resourceGroupName}
 Properties : Microsoft.Azure.Commands.Advisor.Cmdlets.Models.PsAzureAdvisorConfigurationProperties
 Type       : Microsoft.Advisor/Configurations
 ```
-Mengambil daftar Konfigurasi Penasihat Azure.
+Mengambil daftar Konfigurasi Azure Advisor.
 
 ## PARAMETERS
 
@@ -84,12 +87,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

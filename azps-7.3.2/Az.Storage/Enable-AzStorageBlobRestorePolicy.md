@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/enable-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Enable-AzStorageBlobRestorePolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Enable-AzStorageBlobRestorePolicy.md
-ms.openlocfilehash: 260cafaeda463abf84a86239db46c3d7737778c1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6c553aced5d58140bfa7d0be1148fc5e05e7059f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140400318"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142206919"
 ---
 # Enable-AzStorageBlobRestorePolicy
 
 ## SYNOPSIS
-Mengaktifkan Kebijakan Pemulihan Blob pada Storage anda.
+Mengaktifkan Kebijakan Pemulihan Blob pada akun Storage.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/enable-azstorageblobrestorepolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Nama Akun (Default)
+### AccountName (Default)
 ```
 Enable-AzStorageBlobRestorePolicy [-ResourceGroupName] <String> [-StorageAccountName] <String>
  -RestoreDays <Int32> [-PassThru] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
@@ -39,11 +42,11 @@ Enable-AzStorageBlobRestorePolicy [-ResourceId] <String> -RestoreDays <Int32> [-
 ```
 
 ## DESCRIPTION
-Cmdlet **Enable-AzStorageBlobRestorePolicy** mengaktifkan Kebijakan Pemulihan Blob untuk layanan Azure Storage Blob.
+Cmdlet **Enable-AzStorageBlobRestorePolicy** memungkinkan Kebijakan Pemulihan Blob untuk layanan Azure Storage Blob.
 
 ## EXAMPLES
 
-### Contoh 1: Mengaktifkan Kebijakan Pemulihan Blob untuk Azure Storage Blob di akun Storage
+### Contoh 1: Mengaktifkan Kebijakan Pemulihan Blob untuk layanan Azure Storage Blob di akun Storage
 ```powershell
 PS C:\> Enable-AzStorageBlobDeleteRetentionPolicy -ResourceGroupName "myresourcegoup" -StorageAccountName "mystorageaccount" $accountName -RetentionDays 5
 
@@ -76,10 +79,10 @@ ChangeFeed                    : True
 IsVersioningEnabled           : True
 ```
 
-Perintah ini terlebih dahulu mengaktifkan Blob softdelete dan changefeed, lalu mengaktifkan Kebijakan Pemulihan Blob, terakhir memeriksa pengaturan dalam properti layanan Blob.
+Perintah ini pertama-tama mengaktifkan softdelete Blob dan changefeed, lalu mengaktifkan Kebijakan Pemulihan Blob, akhirnya memeriksa pengaturan di properti layanan Blob.
 Layanan Blob RestorePolicy.Days harus lebih kecil dari DeleteRetentionPolicy.Days.
-Blob softdelete dan ChangeFeed harus diaktifkan sebelum mengaktifkan Kebijakan Pemulihan blob.
-Jika softdelete dan Changefeed baru saja diaktifkan, mungkin harus menunggu beberapa waktu agar server menangani pengaturan, sebelum mengaktifkan kebijakan pemulihan Blob.
+Softdelete blob dan ChangeFeed harus diaktifkan sebelum mengaktifkan Kebijakan Pemulihan Blob.
+Jika softdelete dan Changefeed baru saja diaktifkan, mungkin perlu menunggu beberapa waktu hingga server menangani pengaturan, sebelum mengaktifkan kebijakan pemulihan Blob.
 
 ## PARAMETERS
 
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Display ServiceProperties
+Menampilkan ServiceProperties
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Masukkan Id sumber Storage akun, atau Id Sumber Daya properti layanan Blob.
+Masukkan Id Sumber Daya akun Storage, atau Id Sumber Daya properti layanan Blob.
 
 ```yaml
 Type: System.String
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestoreDays
-Mengatur jumlah hari untuk blob yang dapat dipulihkan..
+Mengatur jumlah hari untuk blob dapat dipulihkan..
 
 ```yaml
 Type: System.Int32
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage objek akun
+objek akun Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Storage Akun.
+Storage Nama Akun.
 
 ```yaml
 Type: System.String
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

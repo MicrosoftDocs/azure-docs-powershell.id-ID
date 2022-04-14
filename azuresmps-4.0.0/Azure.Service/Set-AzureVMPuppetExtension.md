@@ -4,16 +4,16 @@ ms.assetid: 268D3E91-AB0F-451F-93B2-9226985910B9
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 06d0218403408c00ee0c93c22f4c7abd5b9e56d4
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423175"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142243738"
 ---
 # Set-AzureVMPuppetExtension
 
 ## SYNOPSIS
-Mengatur ekstensi Salah Satu Ekstensi untuk mesin virtual.
+Mengatur ekstensi Puppet untuk mesin virtual.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -26,21 +26,21 @@ Set-AzureVMPuppetExtension [-PuppetMasterServer] <String> [[-Version] <String>] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureVMPuppetExtension** mengatur ekstensi Pemutakhiran Untuk mesin virtual.
+Cmdlet **Set-AzureVMPuppetExtension** mengatur ekstensi Puppet untuk mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur ekstensi Salah Satu Yang Luar Biasa untuk mesin virtual
+### Contoh 1: Mengatur ekstensi Puppet untuk mesin virtual
 ```
 PS C:\> Set-AzureVMPuppetExtension -VM $VM
 ```
 
-Contoh ini mengatur ekstensi Salah Satu untuk mesin virtual yang ditentukan seperti yang disimpan dalam variabel $VM.
+Contoh ini mengatur ekstensi Puppet untuk mesin virtual tertentu seperti yang disimpan dalam variabel $VM.
 
 ## PARAMETERS
 
-### -Disable
-Mengindikasikan bahwa cmdlet ini menonaktifkan status ekstensi.
+### -Non-fungsikan
+Menunjukkan bahwa cmdlet ini menonaktifkan status ekstensi.
 
 ```yaml
 Type: SwitchParameter
@@ -55,16 +55,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -94,8 +94,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -109,8 +109,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -MasterMasterServer
-Menentukan nama domain (FQDN, Fully Qualified Domain Name) dari server master master yang sepenuhnya memenuhi syarat.
+### -PuppetMasterServer
+Menentukan nama domain yang sepenuhnya memenuhi syarat (FQDN) server master boneka.
 
 ```yaml
 Type: String
@@ -127,10 +127,10 @@ Accept wildcard characters: False
 ### -ReferenceName
 Menentukan nama referensi ekstensi.
 
-Ini adalah string yang ditetapkan pengguna yang digunakan untuk merujuk ke ekstensi.
-Ekstensi ditentukan saat ekstensi ditambahkan ke mesin virtual untuk pertama kalinya.
-Untuk pembaruan berikutnya, Anda perlu menentukan nama referensi yang digunakan sebelumnya ketika memperbarui ekstensi.
-NamaReferensi yang ditetapkan untuk ekstensi dikembalikan menggunakan cmdlet **Get-AzureVM.**
+Ini adalah string yang ditentukan pengguna yang digunakan untuk merujuk ke ekstensi.
+Ini ditentukan ketika ekstensi ditambahkan ke mesin virtual untuk pertama kalinya.
+Untuk pembaruan berikutnya, Anda perlu menentukan nama referensi yang sebelumnya digunakan saat memperbarui ekstensi.
+ReferenceName yang ditetapkan ke ekstensi dikembalikan menggunakan cmdlet **Get-AzureVM** .
 
 ```yaml
 Type: String
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

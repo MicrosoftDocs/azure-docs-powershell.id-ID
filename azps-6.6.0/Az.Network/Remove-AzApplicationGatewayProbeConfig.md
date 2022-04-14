@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayProbeConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayProbeConfig.md
 ms.openlocfilehash: dd32e0bc700f16a02958dccd9fbc7cf432c8e51e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140250487"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142047197"
 ---
 # Remove-AzApplicationGatewayProbeConfig
 
 ## SYNOPSIS
-Menghapus properti kesehatan dari gateway aplikasi yang sudah ada.
+Menghapus pemeriksaan kesehatan dari gateway aplikasi yang sudah ada.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azapplicationgatewayprobeconfig) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azapplicationgatewayprobeconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,21 +28,21 @@ Remove-AzApplicationGatewayProbeConfig -Name <String> -ApplicationGateway <PSApp
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzApplicationGatewayProbeConfig menghapus cmdlet heath cloud dari gateway aplikasi yang sudah ada.
+Cmdlet Remove-AzApplicationGatewayProbeConfig menghapus penyelidikan heath dari gateway aplikasi yang sudah ada.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus health gateway dari gateway aplikasi yang sudah ada
+### Contoh 1: Menghapus pemeriksaan kesehatan dari gateway aplikasi yang sudah ada
 ```
 PS C:\>$Gateway = Remove-AzApplicationGatewayProbeConfig -ApplicationGateway Gateway -Name "Probe04"
 ```
 
-Perintah ini menghapus perintah kesehatan yang bernama Default04 dari gateway aplikasi yang bernama Gateway.
+Perintah ini menghapus pemeriksaan kesehatan bernama Probe04 dari gateway aplikasi bernama Gateway.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan gateway aplikasi tempat cmdlet ini menghapus cmdlet.
+Menentukan gateway aplikasi tempat cmdlet ini menghapus probe.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama cmdlet ini.
+Menentukan nama probe yang akan dihapus cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -101,7 +101,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Menghapus default dari gateway aplikasi yang sudah ada](https://azure.microsoft.com/en-us/documentation/articles/application-gateway-create-probe-ps/#remove-a-probe-from-an-existing-application-gateway)
+[Menghapus probe dari gateway aplikasi yang sudah ada](https://azure.microsoft.com/en-us/documentation/articles/application-gateway-create-probe-ps/#remove-a-probe-from-an-existing-application-gateway)
 
 [Add-AzApplicationGatewayProbeConfig](./Add-AzApplicationGatewayProbeConfig.md)
 

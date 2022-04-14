@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/CognitiveServices/Commands.Management.CognitiveServices/help/New-AzureRmCognitiveServicesAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/CognitiveServices/Commands.Management.CognitiveServices/help/New-AzureRmCognitiveServicesAccount.md
 ms.openlocfilehash: 41defe467244647f707bae16c653dfcbe99eaec3
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425468"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142100470"
 ---
 # New-AzureRmCognitiveServicesAccount
 
 ## SYNOPSIS
-Membuat akun Layanan Kognitif.
+Membuat akun Cognitive Services.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,7 +29,7 @@ New-AzureRmCognitiveServicesAccount [-ResourceGroupName] <String> [-Name] <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmCognitiveServicesAccount** membuat akun Layanan Kognitif dengan tipe dan SKU yang ditentukan.
+Cmdlet **New-AzureRmCognitiveServicesAccount** membuat akun Cognitive Services dengan tipe dan SKU yang ditentukan.
 
 ## EXAMPLES
 
@@ -56,7 +56,7 @@ Tags              :
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -70,8 +70,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama akun.
+Menentukan nama untuk akun tersebut.
 
 ```yaml
 Type: System.String
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya untuk menetapkan akun.
+Menentukan nama grup sumber daya tempat untuk menetapkan akun.
 Grup sumber daya harus sudah ada.
 
 ```yaml
@@ -139,7 +139,7 @@ Nilai yang dapat diterima untuk parameter ini adalah:
 - S1
 - S2
 - S3
-- S4 Untuk informasi selengkapnya, [lihat API Layanan Kognitif.](https://www.microsoft.com/cognitive-services/en-us/apis)
+- S4 Untuk informasi selengkapnya, lihat [API Cognitive Service](https://www.microsoft.com/cognitive-services/en-us/apis).
 
 ```yaml
 Type: System.String
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -231,6 +231,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmCognitiveServicesAccount](./Get-AzureRmCognitiveServicesAccount.md)
 
-[Remove-AzureRmCognitiveServicesAccount](./Remove-AzureRmCognitiveServicesAccount.md)
+[Hapus-AzureRmCognitiveServicesAccount](./Remove-AzureRmCognitiveServicesAccount.md)
 
 [Set-AzureRmCognitiveServicesAccount](./Set-AzureRmCognitiveServicesAccount.md)

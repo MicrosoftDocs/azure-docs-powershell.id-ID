@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Get-AzureRmVMDiskEncryptionStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Get-AzureRmVMDiskEncryptionStatus.md
 ms.openlocfilehash: b208d7c0e0db028f1b3242a70be508fbbc3788ab
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423348"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141844202"
 ---
 # Get-AzureRmVMDiskEncryptionStatus
 
@@ -30,12 +30,12 @@ Get-AzureRmVMDiskEncryptionStatus [-ResourceGroupName] <String> [-VMName] <Strin
 
 ## DESCRIPTION
 Cmdlet **Get-AzureRmVMDiskEncryptionStatus** mendapatkan status enkripsi mesin virtual.
-Area ini menampilkan status enkripsi sistem operasi dan volume data.
-Selain status enkripsi, ia juga menampilkan URL rahasia enkripsi, URL kunci enkripsi kunci, ID sumber daya **KeyVault di** mana kunci enkripsi dan kunci enkripsi kunci untuk volume sistem operasi ada.
+Ini menampilkan status enkripsi sistem operasi dan volume data.
+Selain status enkripsi, URL rahasia enkripsi juga menampilkan URL rahasia enkripsi, URL kunci enkripsi kunci, ID sumber daya **KeyVaults** tempat kunci enkripsi dan kunci enkripsi kunci untuk volume sistem operasi ada.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan status enkripsi dari mesin virtual
+### Contoh 1: Dapatkan status enkripsi mesin virtual
 ```
 PS C:\> Get-AzureRmVmDiskEncryptionStatus -ResourceGroupName "MyResourceGroup001" -VMName "VM001"
 ```
@@ -45,7 +45,7 @@ Perintah ini mendapatkan status enkripsi mesin virtual bernama VM001.
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExtensionType
-Tipe ekstensi. Tentukan parameter ini untuk menimpa nilai default "AzureDiskEncryption" untuk VM Windows dan "AzureDiskEncryptionForLinux" untuk Linux VM.
+Tipe ekstensi. Tentukan parameter ini untuk menimpa nilai default "AzureDiskEncryption" untuk Windows VM dan "AzureDiskEncryptionForLinux" untuk VM Linux.
 
 ```yaml
 Type: System.String
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: System.String
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

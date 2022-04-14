@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/set-azsi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Set-AzSignalRUpstream.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Set-AzSignalRUpstream.md
-ms.openlocfilehash: 36c94b5122aacc5855400f43a4a33d92ed41c1b2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 04721b5cadb7919ae3987e22a28f88f311314d89
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140548849"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142208593"
 ---
 # Set-AzSignalRUpstream
 
 ## SYNOPSIS
-Mengatur pengaturan upstream layanan SignalR.
+Mengatur pengaturan hulu layanan SignalR.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.signalr/set-azsignalrupstream) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,11 +42,11 @@ Set-AzSignalRUpstream -InputObject <PSSignalRResource> [-AsJob] [-Template <PSUp
 ```
 
 ## DESCRIPTION
-Mengatur pengaturan upstream layanan SignalR.
+Mengatur pengaturan hulu layanan SignalR.
 
 ## EXAMPLES
 
-### Mengatur dua templat upstream yang di pesan
+### Mengatur dua templat hulu yang diurutkan
 ```powershell
 PS C:\>  Set-AzSignalRUpstream -name pssignalr -ResourceGroupName test_resource_group -Template @{UrlTemplate='http://host-connections1.com'; HubPattern='chat';EventPattern='broadcast' }, @{UrlTemplate='http://host-connections2.com'}
 
@@ -52,7 +55,7 @@ Templates
 {Microsoft.Azure.Commands.SignalR.Models.PSUpstreamTemplate, Microsoft.Azure.Commands.SignalR.Models.PSUpstreamTemplat…
 ```
 
-JSON berikut ini menunjukkan kumpulan templat yang sebenarnya. 
+JSON berikut ini mewakili kumpulan templat aktual. 
 
  `
 {
@@ -69,7 +72,7 @@ JSON berikut ini menunjukkan kumpulan templat yang sebenarnya.
 }
 `
 
-### Menghapus semua pengaturan upstream
+### Menghapus semua pengaturan hulu
 ```powershell
 PS C:\>  Set-AzSignalRUpstream -name pssignalr -ResourceGroupName test_resource_group -Clear
 
@@ -95,8 +98,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Clear
-Hapus semua pengaturan upstream.
+### -Bersihkan
+Hapus semua pengaturan hulu.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Pengaturan default akan digunakan jika tidak ditentukan.
+Default akan digunakan jika tidak ditentukan.
 
 ```yaml
 Type: System.String
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya layanan SignalR.
+ID sumber daya layanan Signalr.
 
 ```yaml
 Type: System.String
@@ -186,11 +189,11 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Template
-Item templat untuk pengaturan upstream.
+### -Templat
+Item templat untuk pengaturan hulu.
 Kunci yang diperlukan: UrlTemplate.
 Tombol opsional: HubPattern, EventPattern, CategoryPattern.
-Contoh penggunaan sintaks splatting untuk memasukkan parameter templat: @{UrlTemplate=''http://host-connections1.com, HubPattern= 'chat'; EventPattern='broadcast' },@{UrlTemplate='http://host-connections2.com'}
+Contoh menggunakan sintaks splatting untuk meneruskan parameter templat: @{UrlTemplate=''http://host-connections1.com, HubPattern= 'chat'; EventPattern='broadcast' },@{UrlTemplate='http://host-connections2.com'}
 
 ```yaml
 Type: Microsoft.Azure.Commands.SignalR.Models.PSUpstreamTemplate[]
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -250,4 +253,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Cara menggunakan splatting untuk menyampaikan parameter ke perintah di PowerShell](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_splatting?view=powershell-7)
+[Cara menggunakan splatting untuk meneruskan parameter ke perintah di PowerShell](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_splatting?view=powershell-7)

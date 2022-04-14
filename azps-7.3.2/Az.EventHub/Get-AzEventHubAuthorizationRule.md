@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/get-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubAuthorizationRule.md
-ms.openlocfilehash: d54fe0b2f0fde9aa8c163c5e451ff30c95be66e0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 688c1fe1f4d16abdcd37315f0cdbfdee33ae5076
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140402747"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142293829"
 ---
 # Get-AzEventHubAuthorizationRule
 
 ## SYNOPSIS
 Mendapatkan detail aturan otorisasi, atau mendapatkan daftar aturan otorisasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/get-azeventhubauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,54 +41,54 @@ Get-AzEventHubAuthorizationRule [-ResourceGroupName] <String> [-Namespace] <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzEventHubAuthorizationRule ini mendapatkan detail aturan otorisasi, atau daftar semua aturan otorisasi untuk Hub Kejadian yang ditentukan.
-Jika nama aturan otorisasi diberikan, rincian tentang aturan otorisasi tunggal itu dikembalikan.
-Jika nama aturan otorisasi tidak diberikan, daftar semua aturan otorisasi untuk Hub Acara yang ditentukan akan dikembalikan.
-Jika nama Alias (Pemulihan Bencana) disediakan, detail aturan otorisasi Kumpulan Nama untuk Alias dikonfigurasi akan dikembalikan.
+Cmdlet Get-AzEventHubAuthorizationRule mendapatkan detail aturan otorisasi, atau daftar semua aturan otorisasi untuk Hub Kejadian tertentu.
+Jika nama aturan otorisasi disediakan, detail aturan otorisasi tunggal tersebut akan dikembalikan.
+Jika nama aturan otorisasi tidak disediakan, daftar semua aturan otorisasi untuk Hub Kejadian tertentu akan dikembalikan.
+Jika nama Alias (Pemulihan Bencana) disediakan, detail aturan otorisasi Ruang Nama untuk Alias yang dikonfigurasi akan dikembalikan.
 
 ## EXAMPLES
 
-### Contoh 1: OtorisasiRule untuk ruang nama
+### Contoh 1: AuthorizationRule untuk namespace
 ```powershell
 PS C:\> Get-AzEventHubAuthorizationRule -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -Name MyAuthRuleName
 ```
 
-Mendapatkan aturan otorisasi \`MyAuthRuleName\` di ruang nama \`MyNamespaceName\`.
+Mendapatkan aturan \`otorisasi MyAuthRuleName\` di ruang \`nama MyNamespaceName\`.
 
-### Contoh 2: Aturan Otorisasi untuk ruang nama
+### Contoh 2: AuthorizationRules untuk namespace
 ```powershell
 PS C:\> Get-AzEventHubAuthorizationRule -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName
 ```
 
-Mendapatkan daftar semua aturan otorisasi dalam ruang nama \`MyNamespaceName\`.
+Mendapatkan daftar semua aturan otorisasi di ruang \`nama MyNamespaceName\`.
 
 ### Contoh 3: AuthorizationRule untuk EventHub
 ```powershell
 PS C:\> Get-AzEventHubAuthorizationRule -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName -Name MyAuthRuleName
 ```
 
-Mendapatkan aturan otorisasi \`MyAuthRuleName\` di Hub \`Kejadian MyEventHubName\`, yang lingkupnya ditentukan oleh ruang nama \`MyNamespaceName\`.
+Mendapatkan aturan otorisasi MyAuthRuleName\` di Hub \`Kejadian MyEventHubName\`, yang dilingkup oleh ruang \`nama MyNamespaceName\`.\`
 
-### Contoh 4: AuthorizationRules for EventHub
+### Contoh 4: AuthorizationRules untuk EventHub
 ```powershell
 PS C:\> Get-AzEventHubAuthorizationRule -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName
 ```
 
-Mendapatkan aturan otorisasi daftar di Event Hub \`MyEventHubName\`, yang lingkupnya di lingkup ruang nama \`MyNamespaceName\`.
+Mendapatkan aturan otorisasi daftar di Hub \`Kejadian MyEventHubName\`, yang dilingkup oleh namespace \`MyNamespaceName\`.
 
 ### Contoh 5: AuthorizationRule for Alias (GeoRecovery Configuration)
 ```powershell
 PS C:\> Get-AzEventHubAuthorizationRule -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -AliasName MyAliasNameName -Name MyAuthRuleName
 ```
 
-Mendapatkan aturan otorisasi \`MyAuthRuleName\` di ruang nama \`MyNamespaceName\`.
+Mendapatkan aturan \`otorisasi MyAuthRuleName\` di ruang \`nama MyNamespaceName\`.
 
 ### Contoh 6: AuthorizationRules for Alias (GeoRecovery Configuration)
 ```powershell
 PS C:\> Get-AzEventHubAuthorizationRule -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -AliasName MyAliasNameName
 ```
 
-Mendapatkan daftar semua aturan otorisasi \`MyAuthRuleName\` dalam ruang nama \`MyNamespaceName\`.
+Mendapatkan daftar semua aturan \`otorisasi MyAuthRuleName\` di ruang \`nama MyNamespaceName\`.
 
 ## PARAMETERS
 
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

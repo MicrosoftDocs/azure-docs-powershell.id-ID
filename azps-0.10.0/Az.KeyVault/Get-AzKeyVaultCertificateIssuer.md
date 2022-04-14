@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Get-AzKeyVaultCertificateIssuer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Get-AzKeyVaultCertificateIssuer.md
 ms.openlocfilehash: b9188e1bb4d5de4896bf0ca3b2844c7718593ca2
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420208"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142057781"
 ---
 # Get-AzKeyVaultCertificateIssuer
 
 ## SYNOPSIS
-Mendapatkan penerbit sertifikat untuk vault kunci.
+Mendapatkan penerbit sertifikat untuk kubah kunci.
 
 ## SYNTAX
 
@@ -33,11 +33,11 @@ Get-AzKeyVaultCertificateIssuer [-VaultName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzKeyVaultCertificateIssuer** mendapatkan penerbit sertifikat tertentu atau semua penerbit sertifikat untuk vault kunci di Azure Key Vault.
+Cmdlet **Get-AzKeyVaultCertificateIssuer** mendapatkan penerbit sertifikat tertentu atau semua penerbit sertifikat untuk kubah kunci di Azure Key Vault.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan penerbit sertifikat
+### Contoh 1: Dapatkan penerbit sertifikat
 ```
 PS C:\>Get-AzKeyVaultCertificateIssuer -VaultName "Contosokv01" -Name "TestIssuer01"
 Name                : TestIssuer01
@@ -52,7 +52,7 @@ Perintah ini mendapatkan penerbit sertifikat bernama TestIssuer01.
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: IAzureContextContainer
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama penerbit sertifikat yang akan mendapatkannya.
+Menentukan nama penerbit sertifikat yang akan didapatkan.
 
 ```yaml
 Type: String
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kunci vault.
+Menentukan nama kubah kunci.
 
 ```yaml
 Type: String
@@ -97,11 +97,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
