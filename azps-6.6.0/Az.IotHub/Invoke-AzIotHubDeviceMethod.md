@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Invoke-AzIotHubDeviceMethod.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Invoke-AzIotHubDeviceMethod.md
 ms.openlocfilehash: 74793db447c90fca9b56f92f1d6a9e5435102774
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140285359"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141802437"
 ---
 # Invoke-AzIotHubDeviceMethod
 
 ## SYNOPSIS
-Menggunakan metode langsung pada perangkat.
+Memanggil metode langsung pada perangkat.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.iothub/invoke-aziothubdevicemethod) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/invoke-aziothubdevicemethod) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Invoke-AzIotHubDeviceMethod [-ResourceId] <String> [-DeviceId] <String> -Name <S
 ```
 
 ## DESCRIPTION
-Menggunakan metode langsung pada perangkat. Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-direct-methods untuk informasi selengkapnya.
+Memanggil metode langsung pada perangkat. Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-direct-methods untuk informasi selengkapnya.
 
 ## EXAMPLES
 
@@ -53,7 +53,7 @@ Menggunakan metode langsung pada perangkat. Lihat https://docs.microsoft.com/azu
 PS C:\> Invoke-AzIotHubDeviceMethod -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -DeviceId "myDevice1" -Name "methodName" -ResponseTimeOut 20 -ConnectionTimeOut 15
 ```
 
-Menggunakan metode perangkat.
+Memanggil metode perangkat.
 
 ## PARAMETERS
 
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama metode untuk digunakan di perangkat ini.
+Nama metode yang akan dipangkatkan pada perangkat ini.
 
 ```yaml
 Type: System.String
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -Payload
-Payload untuk metode tersebut digunakan di perangkat ini.
+Muatan untuk metode yang akan dipangkatkan pada perangkat ini.
 
 ```yaml
 Type: System.String
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResponseTimeOut
-Jumlah detik untuk ditunggu hingga hasil diterima dari metode langsung.
+Jumlah detik untuk menunggu hingga hasil diterima dari metode langsung.
 Defaultnya adalah 10.
 
 ```yaml
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -241,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

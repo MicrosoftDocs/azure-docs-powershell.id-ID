@@ -5,11 +5,11 @@ ms.assetid: 39AADD19-2EDD-4C1F-BC9E-22186DD9A085
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/set-azurermvmoperatingsystem
 schema: 2.0.0
 ms.openlocfilehash: 0eea5d3a4f379b61e5d66e04b66e7812abaf75f0
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425378"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142104181"
 ---
 # Set-AzureRmVMOperatingSystem
 
@@ -44,7 +44,7 @@ Set-AzureRmVMOperatingSystem [-VM] <PSVirtualMachine> [-Linux] [-ComputerName] <
 
 ## DESCRIPTION
 Cmdlet **Set-AzureRmVMOperatingSystem** mengatur properti sistem operasi untuk mesin virtual.
-Anda dapat menentukan kredensial masuk, nama komputer, dan tipe sistem operasi.
+Anda bisa menentukan kredensial masuk, nama komputer, dan tipe sistem operasi.
 
 ## EXAMPLES
 
@@ -61,25 +61,25 @@ PS C:\> $CustomData = "echo 'Hello World'"
 PS C:\> $VirtualMachine = Set-AzureRmVMOperatingSystem -VM $$VirtualMachine -Windows -ComputerName $ComputerName -Credential $Credential -CustomData $CustomData -WinRMHttp -WinRMHttps -WinRMCertificateUrl $WinRMCertUrl -ProvisionVMAgent -EnableAutoUpdate -TimeZone $TimeZone
 ```
 
-Perintah pertama mengonversi kata sandi ke string yang aman, lalu menyimpannya di $SecurePassword variabel.
-Untuk informasi selengkapnya, ketik `Get-Help ConvertTo-SecureString` .
+Perintah pertama mengonversi kata sandi menjadi string aman, lalu menyimpannya dalam variabel $SecurePassword.
+Untuk informasi selengkapnya, ketik .`Get-Help ConvertTo-SecureString`
 
-Perintah kedua membuat kredensial untuk FullerP pengguna dan kata sandi yang disimpan di $SecurePassword, lalu menyimpan kredensial di $Credential simpan.
-Untuk informasi selengkapnya, ketik `Get-Help New-Object` .
+Perintah kedua membuat kredensial untuk pengguna FullerP dan kata sandi yang disimpan di $SecurePassword, lalu menyimpan kredensial dalam variabel $Credential.
+Untuk informasi selengkapnya, ketik .`Get-Help New-Object`
 
-Perintah ketiga mendapatkan kumpulan ketersediaan bernamaAblity TersediaSet03 dalam grup sumber daya yang bernama ResourceGroup11, lalu menyimpan objek tersebut dalam $AvailabilitySet sumber daya.
+Perintah ketiga mendapatkan kumpulan ketersediaan bernama AvailablitySet03 dalam grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut dalam variabel $AvailabilitySet.
 
-Perintah keempat membuat objek mesin virtual, lalu menyimpannya di $VirtualMachine variabel.
-Perintah menetapkan nama dan ukuran ke komputer virtual.
-Mesin virtual tersebut merupakan bagian dari ketersediaan yang telah diatur untuk $AvailabilitySet.
+Perintah keempat membuat objek mesin virtual, lalu menyimpannya dalam variabel $VirtualMachine.
+Perintah menetapkan nama dan ukuran ke mesin virtual.
+Mesin virtual termasuk dalam kumpulan ketersediaan yang disimpan di $AvailabilitySet.
 
-Empat perintah berikutnya menetapkan nilai ke variabel untuk digunakan dalam perintah berikut.
-Karena Anda bisa menentukan string ini secara langsung di perintah **Set-AzureRmVMOperatingSystem,** pendekatan ini hanya digunakan untuk keterbacaan.
+Empat perintah berikutnya menetapkan nilai ke variabel untuk digunakan dalam perintah berikut ini.
+Karena Anda dapat menentukan string ini secara langsung dalam perintah **Set-AzureRmVMOperatingSystem** , pendekatan ini hanya digunakan untuk keterbacaan.
 Namun, Anda mungkin menggunakan pendekatan seperti ini dalam skrip.
 
-Perintah terakhir mengatur properti sistem operasi untuk mesin virtual yang disimpan di $VirtualMachine.
+Perintah akhir mengatur properti sistem operasi untuk mesin virtual yang disimpan di $VirtualMachine.
 Perintah menggunakan kredensial yang disimpan di $Credential.
-Perintah menggunakan variabel yang ditetapkan di perintah sebelumnya untuk beberapa parameter.
+Perintah menggunakan variabel yang ditetapkan dalam perintah sebelumnya untuk beberapa parameter.
 
 ## PARAMETERS
 
@@ -98,10 +98,10 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Credential
-Menentukan nama pengguna dan kata sandi untuk komputer virtual sebagai objek **PSCredential.**
-Untuk mendapatkan kredensial, gunakan cmdlet Get-Credential cmdlet.
-Untuk informasi selengkapnya, ketik `Get-Help Get-Credential` .
+### -Kredensial
+Menentukan nama pengguna dan kata sandi untuk mesin virtual sebagai objek **PSCredential** .
+Untuk mendapatkan kredensial, gunakan cmdlet Get-Credential.
+Untuk informasi selengkapnya, ketik .`Get-Help Get-Credential`
 
 ```yaml
 Type: PSCredential
@@ -116,8 +116,8 @@ Accept wildcard characters: False
 ```
 
 ### -CustomData
-Menentukan string berkode basis 64 dari data kustom.
-Ini dikodekan ke array biner yang disimpan sebagai file pada mesin virtual.
+Menentukan string data kustom berkode basis 64.
+Ini didekodekan ke array biner yang disimpan sebagai file di mesin virtual.
 Panjang maksimum array biner adalah 65535 byte.
 
 ```yaml
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisablePasswordAuthentication
-Mengindikasikan bahwa cmdlet ini menonaktifkan autentikasi kata sandi.
+Menunjukkan bahwa cmdlet ini menonaktifkan autentikasi kata sandi.
 
 ```yaml
 Type: SwitchParameter
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableAutoUpdate
-Cmdlet ini mengaktifkan pembaruan otomatis.
+Menunjukkan bahwa cmdlet ini mengaktifkan pembaruan otomatis.
 
 ```yaml
 Type: SwitchParameter
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProvisionVMAgent
-Menunjukkan bahwa pengaturan itu mengharuskan agar agen mesin virtual diinstal di komputer virtual.
+Menunjukkan bahwa pengaturan mengharuskan agen mesin maya diinstal pada mesin virtual.
 
 ```yaml
 Type: SwitchParameter
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -Zona Waktu
-Menentukan zona waktu untuk komputer virtual.
+Menentukan zona waktu untuk mesin maya.
 
 ```yaml
 Type: String
@@ -223,9 +223,9 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan objek mesin virtual lokal untuk mengatur properti sistem operasi.
+Menentukan objek mesin virtual lokal tempat untuk mengatur properti sistem operasi.
 Untuk mendapatkan objek mesin virtual, gunakan cmdlet Get-AzureRmVM.
-Membuat objek mesin virtual menggunakan cmdlet New-AzureRmVMConfig.
+Buat objek mesin virtual dengan menggunakan cmdlet New-AzureRmVMConfig.
 
 ```yaml
 Type: PSVirtualMachine
@@ -256,7 +256,7 @@ Accept wildcard characters: False
 
 ### -WinRMCertificateUrl
 Menentukan URI sertifikat WinRM.
-Ini perlu disimpan di Key Vault.
+Ini perlu disimpan dalam Key Vault.
 
 ```yaml
 Type: Uri
@@ -271,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -WinRMHttp
-Menunjukkan bahwa sistem operasi ini menggunakan WinRM HTTP.
+Menunjukkan bahwa sistem operasi ini menggunakan HTTP WinRM.
 
 ```yaml
 Type: SwitchParameter
@@ -301,12 +301,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSVirtualMachine
-Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari saluran
+Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari pipeline
 
 ## OUTPUTS
 
@@ -318,6 +318,6 @@ Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari saluran
 
 [Get-AzureRmVM](./Get-AzureRmVM.md)
 
-[New-AzureRmVMConfig](./New-AzureRmVMConfig.md)
+[AzureRmVMConfig Baru](./New-AzureRmVMConfig.md)
 
 

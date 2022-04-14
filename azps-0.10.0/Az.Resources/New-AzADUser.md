@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/New-AzADUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/New-AzADUser.md
 ms.openlocfilehash: 213e488dde914a8e87b76d6c3765f5dbe99a527a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426168"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142092322"
 ---
 # New-AzADUser
 
@@ -38,12 +38,12 @@ PS C:\> $SecureStringPassword = ConvertTo-SecureString -String "password" -AsPla
 PS C:\> New-AzADUser -DisplayName "MyDisplayName" -UserPrincipalName "myemail@domain.com" -Password $SecureStringPassword -MailNickname "MyMailNickName"
 ```
 
-Membuat pengguna AD baru dengan nama "MyDisplayName" dan nama prinsipal pengguna " myemail@domain.com " dalam penyewa.
+Membuat pengguna AD baru dengan nama "MyDisplayName" dan nama utama pengguna "myemail@domain.com" dalam penyewa.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Nama untuk ditampilkan di buku alamat untuk pengguna.
+Nama yang ditampilkan dalam buku alamat untuk pengguna.
 contoh 'Alex Wu'.
 
 ```yaml
@@ -74,8 +74,8 @@ Accept wildcard characters: False
 ```
 
 ### -ForceChangePasswordNextLogin
-Ini harus ditentukan jika pengguna harus mengubah kata sandi di login berikutnya yang berhasil (true).
-Perilaku default adalah (salah) untuk tidak mengubah kata sandi di saat berikutnya berhasil masuk.
+Harus ditentukan jika pengguna harus mengubah kata sandi pada proses masuk yang berhasil berikutnya (true).
+Perilaku default adalah (false) untuk tidak mengubah kata sandi pada proses masuk yang berhasil berikutnya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImmutableId
-Ini hanya perlu ditentukan jika Anda menggunakan domain gabungan untuk properti nama prinsipal pengguna (upn).
+Hal ini hanya perlu ditentukan jika Anda menggunakan domain gabungan untuk properti nama pokok pengguna (upn) pengguna.
 
 ```yaml
 Type: System.String
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 
 ### -Password
 Kata sandi untuk pengguna.
-Kata sandi harus memenuhi persyaratan kompleksitas kata sandi penyewa.
+Ini harus memenuhi persyaratan kompleksitas kata sandi penyewa.
 Disarankan untuk mengatur kata sandi yang kuat.
 
 ```yaml
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 
 ### -UserPrincipalName
 Nama utama pengguna.
-Contoh-' someuser@contoso.com '.
+Contoh-'someuser@contoso.com'.
 
 ```yaml
 Type: System.String
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -196,7 +196,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.DIRECTDUser
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADUser
 
 ## CATATAN
 
@@ -205,4 +205,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 [Get-AzADUser](./Get-AzADUser.md)
 
 
-[Remove-AzADUser](./Remove-AzADUser.md)
+[Hapus-AzADUser](./Remove-AzADUser.md)

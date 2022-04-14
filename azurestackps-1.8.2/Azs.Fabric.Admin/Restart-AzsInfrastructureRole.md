@@ -3,12 +3,12 @@ external help file: Azs.Fabric.Admin-help.xml
 Module Name: Azs.Fabric.Admin
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: bd67d8b62d14c2b894b9466a60f96270ebd488da655633339da60b926d19900b
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 781b920bf955a84554b9152f54c9847a00a8b160
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418747"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141814799"
 ---
 # Restart-AzsInfrastructureRole
 
@@ -17,7 +17,7 @@ Memulai ulang peran infrastruktur yang diminta.
 
 ## SYNTAX
 
-### Mulai Ulang (Default)
+### Mulai ulang (Default)
 ```
 Restart-AzsInfrastructureRole -Name <String> [-Location <String>] [-ResourceGroupName <String>] [-AsJob]
  [-Force] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -38,7 +38,7 @@ Memulai ulang peran infrastruktur yang diminta.
 Restart-AzsInfrastructureRole -Name "Active Directory Federation Services"
 ```
 
-Mulai ulang peran infrastruktur yang mengalami crash.
+Hidupkan ulang peran infrastruktur yang mengalami crash.
 
 ## PARAMETERS
 
@@ -117,8 +117,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: SwitchParameter
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

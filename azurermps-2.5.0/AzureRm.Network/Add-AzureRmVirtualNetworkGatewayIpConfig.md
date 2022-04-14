@@ -5,11 +5,11 @@ ms.assetid: BCB64535-FF37-46EF-85AF-7286BB67787B
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/add-azurermvirtualnetworkgatewayipconfig
 schema: 2.0.0
 ms.openlocfilehash: 340baa4b7a7d0afaf0e0523cb8c2f14f8270bf7c
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "132414533"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142103942"
 ---
 # Add-AzureRmVirtualNetworkGatewayIpConfig
 
@@ -47,7 +47,7 @@ Cmdlet **Add-AzureRmVirtualNetworkGatewayIpConfig** menambahkan konfigurasi IP k
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -153,8 +153,8 @@ Accept wildcard characters: False
 
 ### -VirtualNetworkGateway
 Menentukan objek **PSVirtualNetworkGateway** .
-Cmdlet ini memodifikasi objek **PSVirtualNetworkGateway** yang Anda tentukan.
-Anda bisa menggunakan cmdlet Get-AzureRmVirtualNetworkGateway untuk mengambil objek **PSVirtualNetworkGateway** .
+Cmdlet ini mengubah objek **PSVirtualNetworkGateway** yang Anda tentukan.
+Anda dapat menggunakan cmdlet Get-AzureRmVirtualNetworkGateway untuk mengambil objek **PSVirtualNetworkGateway** .
 
 ```yaml
 Type: PSVirtualNetworkGateway
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -200,12 +200,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSVirtualNetworkGateway
-Parameter 'VirtualNetworkGateway' menerima nilai tipe 'PSVirtualNetworkGateway' dari saluran
+Parameter 'VirtualNetworkGateway' menerima nilai tipe 'PSVirtualNetworkGateway' dari pipeline
 
 ## OUTPUTS
 
@@ -219,6 +219,6 @@ Parameter 'VirtualNetworkGateway' menerima nilai tipe 'PSVirtualNetworkGateway' 
 
 [New-AzureRmVirtualNetworkGatewayIpConfig](./New-AzureRmVirtualNetworkGatewayIpConfig.md)
 
-[Remove-AzureRmVirtualNetworkGatewayIpConfig](./Remove-AzureRmVirtualNetworkGatewayIpConfig.md)
+[Hapus-AzureRmVirtualNetworkGatewayIpConfig](./Remove-AzureRmVirtualNetworkGatewayIpConfig.md)
 
 

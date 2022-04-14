@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Test-AzDataLakeAnalyticsCatalogItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Test-AzDataLakeAnalyticsCatalogItem.md
-ms.openlocfilehash: b09a034c7da2d7a1b585bcae5f11339027a9188f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: cbebb2a21169ebce92001928e1503cd55a7b5e80
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140009624"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142112903"
 ---
 # Test-AzDataLakeAnalyticsCatalogItem
 
 ## SYNOPSIS
 Memeriksa keberadaan item katalog.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/test-azdatalakeanalyticscatalogitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,21 +29,21 @@ Test-AzDataLakeAnalyticsCatalogItem [-Account] <String> [-ItemType] <CatalogItem
 ```
 
 ## DESCRIPTION
-Cmdlet **Test-AzDataLakeAnalyticsCatalogItem** memeriksa keberadaan item katalog Analitik Danau Data Azure Data.
+Cmdlet **Test-AzDataLakeAnalyticsCatalogItem** memeriksa keberadaan item katalog Azure Data Lake Analytics.
 
 ## EXAMPLES
 
-### Contoh 1: Uji apakah ada item katalog
+### Contoh 1: Menguji apakah item katalog ada
 ```
 PS C:\>Test-AzDataLakeAnalyticsCatalogItem -Account "ContosoAdlAccount" -ItemType Schema -Path "databaseName.schemaName"
 ```
 
-Perintah ini menguji apakah item Skema yang ditentukan sudah ada.
+Perintah ini menguji apakah item Skema tertentu ada.
 
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Analitik Danau Data.
+Menentukan nama akun Data Lake Analytics.
 
 ```yaml
 Type: System.String
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -70,20 +73,20 @@ Accept wildcard characters: False
 ```
 
 ### -ItemType
-Menentukan tipe item katalog dari item yang akan diperiksa.
+Menentukan tipe item katalog item untuk diperiksa.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Database
 - Skema
-- Perakitan
-- Tabel
+- Majelis
+- Meja
 - TablePartition
-- TableValuedFunction
+- TableValuedFungction
 - TableStatistics
 - ExternalDataSource
-- Tampilan
+- Lihat
 - Prosedur
 - Rahasia
-- Kredensial
+- Credential
 - Jenis
 
 ```yaml
@@ -99,8 +102,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur ke item untuk diambil, atau jalur ke item induk item ke daftar.
+### -Jalur
+Menentukan jalur ke item yang akan disambungkan, atau jalur ke item induk item yang akan dicantumkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeAnalytics.Models.CatalogPathInstance
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

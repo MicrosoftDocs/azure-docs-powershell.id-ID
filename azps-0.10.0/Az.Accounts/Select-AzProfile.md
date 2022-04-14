@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Select-AzProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Select-AzProfile.md
 ms.openlocfilehash: 04b98f15def219c269bf18f21fb371822cc97f6d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132413873"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142058393"
 ---
 # Select-AzProfile
 
 ## SYNOPSIS
-Untuk modul yang mendukung beberapa profil layanan, muat cmdlet yang sesuai dengan profil layanan tertentu.
+Untuk modul yang mendukung beberapa profil layanan - muat cmdlet yang sesuai dengan profil layanan yang diberikan.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ Select-AzProfile -Name <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParamet
 ```
 
 ## DESCRIPTION
-Untuk modul yang mendukung beberapa profil layanan, muat cmdlet yang sesuai dengan profil layanan tertentu.
+Untuk modul yang mendukung beberapa profil layanan - muat cmdlet yang sesuai dengan profil layanan yang diberikan.
 
 ## EXAMPLES
 
@@ -38,7 +38,7 @@ Memuat cmdlet untuk profil AzureStack dari Maret 2019
 ## PARAMETERS
 
 ### -Nama
-Nama profil untuk dipilih
+Nama profil yang akan dipilih
 
 ```yaml
 Type: System.String
@@ -53,7 +53,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Saat ada, memaksa cmdlet untuk mengembalikan nilai pada eksekusi yang berhasil
+Ketika ada, memaksa cmdlet untuk mengembalikan nilai pada eksekusi yang berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -99,11 +99,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

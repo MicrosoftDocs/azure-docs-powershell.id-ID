@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Get-AzProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Get-AzProfile.md
 ms.openlocfilehash: d541c943c8dc9779cdf340440078ca2fd2fb36e1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132413894"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142058556"
 ---
 # Get-AzProfile
 
 ## SYNOPSIS
-Dapatkan profil layanan yang didukung oleh modul yang terinstal.
+Dapatkan profil layanan yang didukung oleh modul yang diinstal.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ Get-AzProfile [-ModuleName <String[]>] [-ListAvailable] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Dapatkan profil layanan yang didukung oleh modul yang terinstal.
+Dapatkan profil layanan yang didukung oleh modul yang diinstal.
 
 ## EXAMPLES
 
@@ -38,12 +38,12 @@ latest-2019-04-30 A snapshot of the service API versions in the Azure Global Clo
 hybrid-2019-03-01 A snapshot of the Service API versions in AzureStack, Azure Sovereign clouds, and the Azure Global Cloud. This profile was defined                    in March 2019.
 ```
 
-Mendapatkan profil layanan yang didukung oleh modul KeyVault
+Dapatkan profil layanan yang didukung oleh modul KeyVault
 
 ## PARAMETERS
 
 ### -ListAvailable
-Membuat daftar semua profil layanan yang didukung oleh modul yang diinstal
+Mencantumkan semua profil layanan yang didukung oleh modul yang diinstal
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -73,11 +73,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

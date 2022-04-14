@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datadog/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Update-AzDatadogMonitorSetPasswordLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Update-AzDatadogMonitorSetPasswordLink.md
-ms.openlocfilehash: d2d599d11385b5efecfaa70175b261299fed2379
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2c6eb91b7bafcaf36a7fd84ed869f13e9cb5ba57
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140001109"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142111859"
 ---
 # Update-AzDatadogMonitorSetPasswordLink
 
 ## SYNOPSIS
 Refresh tautan atur kata sandi dan kembalikan yang terbaru.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datadog/update-azdatadogmonitorsetpasswordlink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Update-AzDatadogMonitorSetPasswordLink -Name <String> -ResourceGroupName <String
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### RefreshViaIdentity
+### RefreshViaIdentitas
 ```
 Update-AzDatadogMonitorSetPasswordLink -InputObject <IDatadogIdentity> [-DefaultProfile <PSObject>] [-Confirm]
  [-WhatIf] [<CommonParameters>]
@@ -36,7 +39,7 @@ Refresh tautan atur kata sandi dan kembalikan yang terbaru.
 
 ## EXAMPLES
 
-### Contoh 1: Refresh tautan atur kata sandi dan kembalikan kata sandi terbaru
+### Contoh 1: Refresh tautan atur kata sandi dan kembalikan yang terbaru
 ```powershell
 PS C:\> Update-AzDatadogMonitorSetPasswordLink -ResourceGroupName azure-rg-Datadog -Name Datadog
 
@@ -45,14 +48,14 @@ https://us3.Datadoghq.com/account/reset_password/xxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 Perintah ini merefresh tautan atur kata sandi dan mengembalikan yang terbaru.
 
-### Contoh 2: Refresh tautan atur kata sandi dan kembalikan tautan terbaru menurut saluran
+### Contoh 2: Refresh tautan atur kata sandi dan kembalikan yang terbaru menurut saluran
 ```powershell
 PS C:\> Get-AzDatadogMonitor -ResourceGroupName azure-rg-Datadog -Name Datadog | Update-AzDatadogMonitorSetPasswordLink
 
 https://us3.Datadoghq.com/account/reset_password/xxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-Perintah ini merefresh link set kata sandi dan mengembalikan yang terbaru menurut saluran.
+Perintah ini merefresh tautan atur kata sandi dan mengembalikan yang terbaru menurut saluran.
 
 ## PARAMETERS
 
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IDatadogIdentity
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Memantau nama sumber daya
+Pantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,11 +167,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IData cmdletIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IDatadogIdentity
 
 ## OUTPUTS
 
@@ -187,7 +190,7 @@ INPUTOBJECT <IDatadogIdentity>: Parameter Identitas
   - `[ConfigurationName <String>]`: Nama konfigurasi
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[RuleSetName <String>]`: Nama kumpulan aturan
   - `[SubscriptionId <String>]`: ID langganan target.
 

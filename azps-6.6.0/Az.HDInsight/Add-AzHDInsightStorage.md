@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightStorage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightStorage.md
 ms.openlocfilehash: 473755436609f388a38730e6667d5261d4e7d64a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140077373"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141802868"
 ---
 # Add-AzHDInsightStorage
 
@@ -19,7 +19,7 @@ ms.locfileid: "140077373"
 Menambahkan kunci Azure Storage ke objek konfigurasi kluster.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hdinsight/add-azhdinsightstorage) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/add-azhdinsightstorage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,11 +29,11 @@ Add-AzHDInsightStorage [-Config] <AzureHDInsightConfig> [-StorageAccountName] <S
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzHDInsightStorage** menambahkan entri akun Azure Storage entri ke objek konfigurasi Azure HDInsight yang dibuat oleh cmdlet New-AzHDInsightClusterConfig cmdlet.
+Cmdlet **Add-AzHDInsightStorage** menambahkan entri akun Azure Storage ke objek konfigurasi Azure HDInsight yang dibuat oleh cmdlet New-AzHDInsightClusterConfig.
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan kunci penyimpanan Azure ke objek konfigurasi kluster
+### Contoh 1: Menambahkan kunci penyimpanan Azure ke objek konfigurasi kluster
 ```
 PS C:\># Primary storage account info
 PS C:\> $storageAccountResourceGroupName = "Group"
@@ -78,12 +78,12 @@ PS C:\> New-AzHDInsightClusterConfig `
                 -StorageContainer $storageContainer
 ```
 
-Perintah ini menambahkan entri akun penyimpanan blob ke konfigurasi HDInsight yang bernama your-hadoop-001.
+Perintah ini menambahkan entri akun penyimpanan blob ke konfigurasi HDInsight bernama your-hadoop-001.
 
 ## PARAMETERS
 
 ### -Config
-Menentukan objek konfigurasi kluster HDInsight yang dimodifikasi cmdlet ini.
+Menentukan objek konfigurasi kluster HDInsight yang diubah cmdlet ini.
 Objek ini dibuat oleh cmdlet **New-AzHDInsightClusterConfig** .
 
 ```yaml
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

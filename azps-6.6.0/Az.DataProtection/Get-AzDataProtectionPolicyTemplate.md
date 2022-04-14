@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Get-AzDataProtectionPolicyTemplate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Get-AzDataProtectionPolicyTemplate.md
 ms.openlocfilehash: f9f501496814d57ad7b2c54c59b09d4174586f22
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140139291"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142085612"
 ---
 # Get-AzDataProtectionPolicyTemplate
 
@@ -18,7 +18,7 @@ ms.locfileid: "140139291"
 Mendapatkan templat kebijakan default untuk tipe sumber data yang dipilih.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dataprotection/get-azdataprotectionpolicytemplate) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/get-azdataprotectionpolicytemplate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ Mendapatkan templat kebijakan default untuk tipe sumber data yang dipilih.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan templat kebijakan default Azure Disk
+### Contoh 1: Dapatkan templat kebijakan default Disk Azure
 ```powershell
 PS C:\> Get-AzDataProtectionPolicyTemplate -DatasourceType AzureDisk
 
@@ -46,7 +46,7 @@ Gunakan templat kebijakan ini untuk membuat kebijakan baru.
 ## PARAMETERS
 
 ### -DatasourceType
-Tipe SumberData
+Tipe Sumber Data
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Support.DatasourceTypes
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

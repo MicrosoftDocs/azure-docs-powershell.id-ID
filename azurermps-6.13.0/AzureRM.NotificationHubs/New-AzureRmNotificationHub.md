@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/NotificationHubs/Commands.NotificationHubs/help/New-AzureRmNotificationHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/NotificationHubs/Commands.NotificationHubs/help/New-AzureRmNotificationHub.md
 ms.openlocfilehash: c0a3e2231ef0f27689a08b9199876d04c4e68b2c
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426615"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142061799"
 ---
 # New-AzureRmNotificationHub
 
@@ -38,28 +38,28 @@ New-AzureRmNotificationHub [-ResourceGroup] <String> [-Namespace] <String>
 ## DESCRIPTION
 Cmdlet **New-AzureRmNotificationHub** membuat hub pemberitahuan.
 Hub pemberitahuan digunakan untuk mengirim pemberitahuan push ke beberapa klien terlepas dari platform yang digunakan oleh klien tersebut.
-Hub pemberitahuan kurang lebih sama dengan aplikasi individu: setiap aplikasi biasanya akan memiliki hub pemberitahuannya sendiri.
+Hub pemberitahuan kira-kira setara dengan aplikasi individual: setiap aplikasi Anda biasanya akan memiliki hub pemberitahuannya sendiri.
 Cmdlet **New-AzureRmNotificationHub** menyediakan dua cara untuk membuat hub pemberitahuan baru.
-Anda dapat membuat contoh objek **NotificationHubAttributes,** lalu mengonfigurasi objek tersebut.
-Anda kemudian dapat menyalin nilai properti tersebut ke hub baru melalui parameter *NotificationHubObj.*
-Alternatifnya, Anda dapat membuat file JSON (JavaScript Object Notation) yang berisi nilai konfigurasi yang relevan, lalu menerapkan nilai-nilai tersebut menggunakan parameter *InputFile.*
-Ketika digunakan bersama dengan cmdlet **New-AzureRmNotificationHub,** sampel JSON sebelumnya akan membuat hub pemberitahuan bernama ContosoNotificationHub yang terletak di pusat data As Barat.
+Anda dapat membuat contoh objek **NotificationHubAttributes** lalu mengonfigurasi objek tersebut.
+Anda kemudian dapat menyalin nilai properti tersebut ke hub baru melalui parameter *NotificationHubObj* .
+Alternatifnya, Anda dapat membuat file JSON (JavaScript Object Notation) yang berisi nilai konfigurasi yang relevan lalu menerapkan nilai tersebut menggunakan parameter *InputFile* .
+Ketika digunakan bersama dengan cmdlet **New-AzureRmNotificationHub** , sampel JSON sebelumnya membuat hub pemberitahuan bernama ContosoNotificationHub yang terletak di pusat data AS Barat.
 
 ## EXAMPLES
 
-### Contoh 1: Buat hub pemberitahuan
+### Contoh 1: Membuat hub pemberitahuan
 ```
 PS C:\>New-AzureRmNotificationHub -Namespace "ContosoNamespace" -ResourceGroup "ContosoNotificationsGroup" -InputFile "C:\Configurations\InternalHub.json"
 ```
 
-Perintah ini akan membuat hub pemberitahuan dalam ruang nama ContosoNamespace.
+Perintah ini membuat hub pemberitahuan di ruang nama ContosoNamespace.
 Hub baru akan ditetapkan ke ContosoNotificationsGroup.
 Anda tidak perlu menentukan nama atau informasi konfigurasi lain untuk hub; informasi tersebut akan diambil dari file input C:\Configurations\InternalHub.json.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroup
 Menentukan grup sumber daya tempat hub pemberitahuan akan ditetapkan.
-Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu manajemen inventaris dan administrasi Azure.
+Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang hanya membantu manajemen inventaris dan administrasi Azure.
 Anda harus menggunakan grup sumber daya yang sudah ada.
 Cmdlet **New-AzureRmNotificationHub** tidak dapat membuat grup sumber daya baru.
 
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -186,7 +186,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmNotificationHub](./Get-AzureRmNotificationHub.md)
 
-[Remove-AzureRmNotificationHub](./Remove-AzureRmNotificationHub.md)
+[Hapus-AzureRmNotificationHub](./Remove-AzureRmNotificationHub.md)
 
 [Set-AzureRmNotificationHub](./Set-AzureRmNotificationHub.md)
 

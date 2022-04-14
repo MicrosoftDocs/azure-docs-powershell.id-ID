@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Save-AzVMImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Save-AzVMImage.md
 ms.openlocfilehash: b01f8d356d83cb111441cf911750056033422fe8
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423145"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142057961"
 ---
 # Save-AzVMImage
 
@@ -36,28 +36,28 @@ Save-AzVMImage [-Name] <String> [-DestinationContainerName] <String> [-VHDNamePr
 
 ## DESCRIPTION
 Cmdlet **Save-AzVMImage** menyimpan mesin virtual sebagai VMImage.
-Sebelum Anda membuat gambar mesin virtual, sysprep mesin virtual, lalu menandainya sebagai umum menggunakan cmdlet Set-AzVM.
+Sebelum Anda membuat gambar mesin virtual, sysprep mesin virtual, lalu tandai sebagai umum dengan menggunakan cmdlet Set-AzVM.
 
 Output cmdlet ini adalah templat JavaScript Object Notation (JSON).
 Anda dapat menggunakan mesin virtual dari gambar yang diambil.
 
 ## EXAMPLES
 
-### Contoh 1: Mengambil gambar mesin virtual
+### Contoh 1: Capture a virtual machine
 ```
 PS C:\> Set-AzVM -ResourceGroupName "ResourceGroup11" -Name "VirtualMachine07" -Generalized 
 PS C:\> Save-AzVMImage -ResourceGroupName "ResourceGroup11" -VMName "VirtualMachine07" -DestinationContainerName "VMContainer01" -VHDNamePrefix "VM07"
 ```
 
-Perintah pertama menandai mesin virtual bernama VirtualMachine07 sebagai umum.
+Perintah pertama menandai mesin virtual bernama VirtualMachine07 seperti yang digeneralisasi.
 
-Perintah kedua mengambil gambar mesin virtual bernama VirtualMachine07 sebagai VMImage.
+Perintah kedua menangkap mesin virtual bernama VirtualMachine07 sebagai VMImage.
 Properti **Output** mengembalikan templat JSON.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
 
 ```yaml
 Type: SwitchParameter
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -87,14 +87,14 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationContainerName
-Menentukan nama wadah di dalam wadah "sistem" yang ingin Anda tahan gambar Anda.
+Menentukan nama wadah di dalam wadah "sistem" yang ingin Anda pegang gambar Anda.
 
-Jika wadah tidak ada, wadah dibuat untuk Anda.
-Hard disk virtual (VHD) yang merupakan VMImage berada dalam wadah yang ditentukan oleh parameter ini.
+Jika wadah tidak ada, wadah tersebut dibuat untuk Anda.
+Hard disk virtual (VHDs) yang merupakan VMImage berada di wadah yang ditentukan parameter ini.
 Jika VHD tersebar di beberapa akun penyimpanan, cmdlet ini membuat satu wadah yang memiliki nama ini di setiap akun penyimpanan.
 URL gambar yang disimpan mirip dengan: 
 
-https:// \<storageAccountName\> .blob.core.windows.net/system/Microsoft.Compute/Images/ \<imagesContainer\> / \<vhdPrefix-osDisk\> .xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx.vhd.
+\<storageAccountName\>https://.blob.core.windows.net/system/Microsoft.Compute/Images/\<imagesContainer\>/\<vhdPrefix-osDisk\>.xxxxxxxx-xxxx-xxxx-xxxx.vhd.
 
 ```yaml
 Type: String
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID Sumber Daya komputer virtual.
+Menentukan ID Sumber Daya mesin virtual.
 
 ```yaml
 Type: String
@@ -138,8 +138,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Overwrite
-Mengindikasikan bahwa cmdlet ini menimpa VHD yang memiliki prefiks yang sama dalam wadah tujuan.
+### -Timpa
+Menunjukkan bahwa cmdlet ini menimpa VHD apa pun yang memiliki prefiks yang sama dalam wadah tujuan.
 
 ```yaml
 Type: SwitchParameter
@@ -153,7 +153,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Path
+### -Jalur
 Menentukan jalur VHD.
 
 ```yaml
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: String
@@ -184,9 +184,9 @@ Accept wildcard characters: False
 ```
 
 ### -VHDNamePrefix
-Menentukan prefiks dalam nama blob yang merupakan profil penyimpanan VMImage.
+Menentukan prefiks dalam nama gumpala yang merupakan profil penyimpanan VMImage.
 
-Misalnya, prefiks vhdPrefix untuk hasil disk sistem operasi dalam nama vhdPrefix-osdisk. \<guid\> . vhd.
+Misalnya, prefiks vhdPrefix untuk disk sistem operasi menghasilkan nama vhdPrefix-osdisk.\<guid\>. Vhd.
 
 ```yaml
 Type: String
@@ -201,11 +201,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
@@ -216,14 +216,14 @@ Cmdlet ini tidak menerima input apa pun.
 
 ## RELATED LINKS
 
-[Get-AzvMImage](./Get-AzVMImage.md)
+[Get-AzVMImage](./Get-AzVMImage.md)
 
-[Get-AzvMImageOffer](./Get-AzVMImageOffer.md)
+[Get-AzVMImageOffer](./Get-AzVMImageOffer.md)
 
 [Get-AzVMImagePublisher](./Get-AzVMImagePublisher.md)
 
-[Get-azvmImagesku](./Get-AzVMImageSku.md)
+[Get-AzVMImageSku](./Get-AzVMImageSku.md)
 
-[Set-azvm](./Set-AzVM.md)
+[Set-AzVM](./Set-AzVM.md)
 
 

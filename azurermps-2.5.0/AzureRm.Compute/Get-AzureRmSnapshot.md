@@ -3,12 +3,12 @@ external help file: Microsoft.Azure.Commands.Compute.dll-Help.xml
 Module Name: AzureRM.Compute
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/get-azurermsnapshot
 schema: 2.0.0
-ms.openlocfilehash: 1595d6bf5cec76fd0e243cf5a44669ee9d23c01c596fe7ffea92b7c4d58974a6
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 8133bfc8381f08e69afbd6bfbd3a25084e9eb2b9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140857646"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142104379"
 ---
 # Get-AzureRmSnapshot
 
@@ -34,26 +34,26 @@ Cmdlet **Get-AzureRmSnapshot** mendapatkan properti snapshot.
 PS C:\> Get-AzureRmSnapshot
 ```
 
-Perintah ini mendapatkan properti dari semua snapshot langganan.
+Perintah ini mendapatkan properti semua snapshot langganan.
 
 ### Contoh 2
 ```
 PS C:\> Get-AzureRmSnapshot -ResourceGroupName "ResourceGroupName1"
 ```
 
-Perintah ini mendapatkan properti semua snapshot dalam grup sumber daya yang bernama "ResourceGroupName1"
+Perintah ini mendapatkan properti semua snapshot dalam grup sumber daya bernama "ResourceGroupName1"
 
 ### Contoh 3
 ```
 PS C:\> Get-AzureRmSnapshot -ResourceGroupName "ResourceGroupName1" -SnapshotName "SnapshotName1"
 ```
 
-Perintah ini mendapatkan properti snapshot yang bernama "SnapshotName1" dalam grup sumber daya bernama "ResourceGroupName1"
+Perintah ini mendapatkan properti snapshot bernama "SnapshotName1" dalam grup sumber daya bernama "ResourceGroupName1"
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

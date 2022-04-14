@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.opera
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/OperationalInsights/Commands.OperationalInsights/help/Get-AzureRmOperationalInsightsSavedSearch.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/OperationalInsights/Commands.OperationalInsights/help/Get-AzureRmOperationalInsightsSavedSearch.md
-ms.openlocfilehash: 5cb12c3db3b3f3b17ea1e9d50fc921a618fb2b1014472a55019e5133bb5ad825
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 712fac06a960eebe546f4554731f69286615b0ea
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419457"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142061729"
 ---
 # Get-AzureRmOperationalInsightsSavedSearch
 
@@ -29,28 +29,28 @@ Get-AzureRmOperationalInsightsSavedSearch [-ResourceGroupName] <String> [-Worksp
 
 ## DESCRIPTION
 Cmdlet **Get-AzureRmOperationalInsightsSavedSearch** mengembalikan semua pencarian yang disimpan untuk ruang kerja tertentu dalam grup sumber daya yang ditentukan jika Anda tidak menentukan ID pencarian yang disimpan.
-Jika Anda menentukan ID pencarian yang disimpan, pencarian yang tersimpan yang terkait dengan ID tersebut akan dikembalikan.
+Jika Anda menentukan ID pencarian yang disimpan, maka pencarian tersimpan yang terkait dengan ID tersebut akan dikembalikan.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua pencarian yang disimpan untuk ruang kerja
+### Contoh 1: Mendapatkan semua pencarian tersimpan untuk ruang kerja
 ```
 PS C:\>Get-AzureRmOperationalInsightsSavedSearch -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "ContosoWorkspace"
 ```
 
-Perintah ini akan mendapatkan semua sumber daya yang disimpan yang terkait dengan ruang kerja.
+Perintah ini mendapatkan semua sumber daya yang disimpan yang terkait dengan ruang kerja.
 
-### Contoh 2: Mendapatkan pencarian tertentu yang disimpan berdasarkan ID
+### Contoh 2: Mendapatkan pencarian tertentu yang disimpan menurut ID
 ```
 PS C:\>Get-AzureRmOperationalInsightsSavedSearch -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "ContosoWorkspace" -SavedSearchId "ContosoSavedSearchId"
 ```
 
-Perintah ini mendapatkan pencarian tersimpan tertentu berdasarkan ID-nya.
+Perintah ini mendapatkan pencarian tertentu yang disimpan dengan ID-nya.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -94,7 +94,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Menentukan nama ruang kerja.
 
 ```yaml
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -126,6 +126,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Cmdlet Azure Operational Insights](./AzureRM.OperationalInsights.md)
+[Cmdlet Insights Operasional Azure](./AzureRM.OperationalInsights.md)
 
 

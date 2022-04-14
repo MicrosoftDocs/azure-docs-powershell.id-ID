@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmVirtualNetworkSubnetConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmVirtualNetworkSubnetConfig.md
 ms.openlocfilehash: 4fa6fe0ca041d89b6429323fb262e68f39a8aede
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425853"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142061923"
 ---
 # Remove-AzureRmVirtualNetworkSubnetConfig
 
@@ -50,12 +50,12 @@ Remove-AzureRmVirtualNetworkSubnetConfig -Name backendSubnet -VirtualNetwork
     $virtualNetwork | Set-AzureRmVirtualNetwork
 ```
 
-Contoh ini membuat grup sumber daya dan jaringan virtual dengan dua subnet. Lalu menggunakan perintah Remove-AzureRmVirtualNetworkSubnetConfig untuk menghapus subnet backend dari representasi dalam memori jaringan virtual. Set-AzureRmVirtualNetwork lalu disebut untuk memodifikasi jaringan virtual di sisi server.
+Contoh ini membuat grup sumber daya dan jaringan virtual dengan dua subnet. Kemudian menggunakan perintah Remove-AzureRmVirtualNetworkSubnetConfig untuk menghapus subnet backend dari representasi dalam memori jaringan virtual. Set-AzureRmVirtualNetwork kemudian dipanggil untuk mengubah jaringan virtual di sisi server.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama konfigurasi subnet yang akan dihapus.
+Menentukan nama konfigurasi subnet untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetwork
-Menentukan objek **VirtualNetwork** yang berisi konfigurasi subnet yang akan dihapus.
+Menentukan objek **VirtualNetwork** yang berisi konfigurasi subnet untuk dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualNetwork
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

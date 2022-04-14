@@ -4,11 +4,11 @@ Module Name: AzureRM.Compute
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/new-azurermsnapshotupdateconfig
 schema: 2.0.0
 ms.openlocfilehash: 033b183c763be266b29aadf47a57e760e2432452
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140854635"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142104335"
 ---
 # New-AzureRmSnapshotUpdateConfig
 
@@ -27,7 +27,7 @@ New-AzureRmSnapshotUpdateConfig [[-SkuName] <StorageAccountTypes>] [[-OsType] <O
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmSnapshotUpdateConfig** membuat objek pembaruan snapshot yang dapat dikonfigurasi.
+**Cmdlet New-AzureRmSnapshotUpdateConfig** membuat objek pembaruan snapshot yang dapat dikonfigurasi.
 
 ## EXAMPLES
 
@@ -43,19 +43,19 @@ PS C:\> $snapshotupdateconfig = Set-AzureRmSnapshotUpdateKeyEncryptionKey -Snaps
 PS C:\> Update-AzureRmSnapshot -ResourceGroupName 'ResourceGroup01' -SnapshotName 'Snapshot01' -SnapshotUpdate $snapshotupdateconfig;
 ```
 
-Perintah pertama membuat objek pembaruan snapshot kosong lokal dengan ukuran 10GB di Premium_LRS akun penyimpanan. Sistem juga mengatur Windows OS dan mengaktifkan pengaturan enkripsi. Perintah kedua dan ketiga mengatur kunci enkripsi disk dan pengaturan kunci enkripsi kunci untuk objek pembaruan snapshot. Perintah terakhir mengambil objek pembaruan snapshot dan memperbarui snapshot yang sudah ada dengan nama 'Snapshot01' di grup sumber daya 'ResourceGroup01'.
+Perintah pertama membuat objek pembaruan snapshot kosong lokal dengan ukuran 10GB dalam tipe akun penyimpanan Premium_LRS. Ini juga mengatur tipe OS Windows dan mengaktifkan pengaturan enkripsi. Perintah kedua dan ketiga mengatur pengaturan kunci enkripsi disk dan kunci enkripsi kunci untuk objek pembaruan snapshot. Perintah terakhir mengambil objek pembaruan snapshot dan memperbarui snapshot yang sudah ada dengan nama 'Snapshot01' dalam grup sumber daya 'ResourceGroup01'.
 
 ### Contoh 2
 ```
 PS C:\> New-AzureRmSnapshotUpdateConfig -DiskSizeGB 10 | Update-AzureRmSnapshot -ResourceGroupName 'ResourceGroup01' -SnapshotName 'Snapshot01';
 ```
 
-Perintah ini memperbarui snapshot yang sudah ada dengan nama 'Snapshot01' dalam grup sumber daya 'ResourceGroup01' hingga ukuran disk 10 GB.
+Perintah ini memperbarui snapshot yang sudah ada dengan nama 'Snapshot01' dalam grup sumber daya 'ResourceGroup01' menjadi ukuran disk 10 GB.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionSettingsEnabled
-Mengaktifkan pengaturan enkripsi.
+Aktifkan pengaturan enkripsi.
 
 ```yaml
 Type: Boolean
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Menentukan nama Sku dari akun penyimpanan.
+Menentukan nama Sku akun penyimpanan.
 
 ```yaml
 Type: StorageAccountTypes
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -209,11 +209,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Undo-AzKeyVaultRemoval.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Undo-AzKeyVaultRemoval.md
 ms.openlocfilehash: bd62ba552ec3b6d7ee268c483bd709991b10b9e0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140309893"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142084459"
 ---
 # Undo-AzKeyVaultRemoval
 
 ## SYNOPSIS
-Memulihkan kunci vault yang dihapus ke keadaan aktif.
+Memulihkan kubah kunci yang dihapus ke status aktif.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/undo-azkeyvaultremoval) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/undo-azkeyvaultremoval) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Undo-AzKeyVaultRemoval [-InputObject] <PSDeletedKeyVault> [-Tag <Hashtable>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Undo-AzKeyVaultRemoval** akan memulihkan kunci vault yang dihapus sebelumnya. Vault yang dipulihkan akan aktif setelah pemulihan
+Cmdlet **Undo-AzKeyVaultRemoval** akan memulihkan kubah kunci yang dihapus sebelumnya. Kubah yang dipulihkan akan aktif setelah pemulihan
 
 ## EXAMPLES
 
@@ -78,12 +78,12 @@ Tags                             :
                                    x     y
 ```
 
-Perintah ini akan memulihkan kunci vault 'MyKeyVault' yang sebelumnya dihapus dari kawasan eastus2 dan grup sumber daya 'MyResourceGroup', ke dalam status aktif dan dapat digunakan. Tag juga menggantikan tag dengan tag baru.
+Perintah ini akan memulihkan kubah kunci 'MyKeyVault' yang sebelumnya dihapus dari kawasan eastus2 dan grup sumber daya 'MyResourceGroup', menjadi status aktif dan dapat digunakan. Ini juga mengganti tag dengan tag baru.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek vault yang dihapus
+Objek kubah yang dihapus
 
 ```yaml
 Type: Microsoft.Azure.Commands.KeyVault.Models.PSDeletedKeyVault
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan wilayah Azure asli penyimpanan yang dihapus.
+Menentukan kubah yang dihapus kawasan Azure asli.
 
 ```yaml
 Type: System.String
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang ada untuk membuat kunci vault.
+Menentukan nama grup sumber daya yang sudah ada untuk membuat kubah kunci.
 
 ```yaml
 Type: System.String
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengganti langganan hanya berlaku selama siklus hidup cmdlet saat ini. Langganan tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
+Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -175,8 +175,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama Vault.
-Cmdlet menyusun FQDN dari vault berdasarkan nama dan lingkungan yang saat ini dipilih.
+Nama kubah.
+Cmdlet menyusun FQDN kubah berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -235,7 +235,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Remove-AzKeyVault](./Remove-AzKeyVault.md)
+[Hapus-AzKeyVault](./Remove-AzKeyVault.md)
 
 [New-AzKeyVault](./New-AzKeyVault.md)
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/New-AzDataLakeAnalyticsComputePolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/New-AzDataLakeAnalyticsComputePolicy.md
 ms.openlocfilehash: 2eabc793adbe8f4ca5891f5ac26c38591672a934
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140139867"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142086279"
 ---
 # New-AzDataLakeAnalyticsComputePolicy
 
 ## SYNOPSIS
-Membuat aturan kebijakan perhitungan Analitik Danau Data untuk entitas AAD tertentu.
+Membuat aturan kebijakan komputasi Data Lake Analytics untuk entitas AAD tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakeanalytics/new-azdatalakeanalyticscomputepolicy) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/new-azdatalakeanalyticscomputepolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,28 +29,28 @@ New-AzDataLakeAnalyticsComputePolicy [-ResourceGroupName <String>] [-Account] <S
 ```
 
 ## DESCRIPTION
-**New-AzDataLakeAnalyticsComputePolicy** membuat aturan kebijakan perhitungan tertentu untuk entitas AAD tertentu dalam akun Azure Data Lake Analytics.
+**New-AzDataLakeAnalyticsComputePolicy** membuat aturan kebijakan komputasi tertentu untuk entitas AAD tertentu dalam akun Data Lake Analytics Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Buat kebijakan perhitungan hanya dengan satu aturan
+### Contoh 1: Membuat kebijakan komputasi hanya dengan satu aturan
 ```
 PS C:\>New-AzDataLakeAnalyticsComputePolicy -Account "contosoadla" -Name "myPolicy" -ObjectId 83cb7ad2-3523-4b82-b909-d478b0d8aea3 -ObjectType User -MaxAnalyticsUnitsPerJob 5
 ```
 
-Perintah ini membuat kebijakan yang disebut "myPolicy" dalam akun "contosoadla" bagi pengguna dengan id "83cb7ad2-3523-4b82-b909-d478b0d8aea3" yang memastikan mereka tidak dapat mengirimkan pekerjaan apa pun dengan lebih dari 5 unit analitik.
+Perintah ini membuat kebijakan yang disebut "myPolicy" dalam akun "contosoadla" untuk pengguna dengan id "83cb7ad2-3523-4b82-b909-d478b0d8aea3" yang memastikan mereka tidak dapat mengirimkan pekerjaan apa pun dengan lebih dari 5 unit analitik.
 
-### Contoh 2: Buat kebijakan perhitungan dengan kedua kumpulan aturan
+### Contoh 2: Membuat kebijakan komputasi dengan kedua kumpulan aturan
 ```
 PS C:\>New-AzDataLakeAnalyticsComputePolicy -Account "contosoadla" -Name "myPolicy" -ObjectId 83cb7ad2-3523-4b82-b909-d478b0d8aea3 -ObjectType User -MaxAnalyticsUnitsPerJob 5 -MinPriorityPerJob 100
 ```
 
-Perintah ini membuat kebijakan yang disebut "myPolicy" dalam akun "contosoadla" bagi pengguna dengan id "83cb7ad2-3523-4b82-b909-d478b0d8aea3" yang memastikan mereka tidak dapat mengirimkan pekerjaan apa pun dengan lebih dari 5 unit analitik atau dengan prioritas yang lebih rendah dari 100
+Perintah ini membuat kebijakan yang disebut "myPolicy" dalam akun "contosoadla" untuk pengguna dengan id "83cb7ad2-3523-4b82-b909-d478b0d8aea3" yang memastikan mereka tidak dapat mengirimkan pekerjaan apa pun dengan lebih dari 5 unit analitik atau dengan prioritas lebih rendah dari 100
 
 ## PARAMETERS
 
 ### -Akun
-Nama akun untuk menambahkan kebijakan perhitungan.
+Nama akun untuk menambahkan kebijakan komputasi.
 
 ```yaml
 Type: System.String
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama kebijakan perhitungan untuk dibuat.
+Nama kebijakan komputasi untuk dibuat.
 
 ```yaml
 Type: System.String
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Kumpulan Azure Active Directory objek id untuk pengguna atau grup yang akan menerapkan kebijakan.
+Id objek Azure Active Directory bagi pengguna atau grup untuk menerapkan kebijakan.
 
 ```yaml
 Type: System.Guid
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectType
-Tipe Azure Active Directory objek untuk ID objek yang dilalui.
+Tipe objek Azure Active Directory untuk ID objek yang dilewati.
 
 ```yaml
 Type: System.String
@@ -158,8 +158,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat akun Anda berada.
-Opsional dan akan berusaha mencari tahu jika tidak diberikan.
+Nama grup sumber daya di mana Akun Anda sudah ada.
+Opsional dan akan mencoba untuk menemukan jika tidak disediakan.
 
 ```yaml
 Type: System.String
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -212,7 +212,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Guid
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 

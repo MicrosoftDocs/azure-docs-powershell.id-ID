@@ -5,18 +5,18 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.maps/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Maps/Commands.Maps/help/Get-AzureRmMapsAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Maps/Commands.Maps/help/Get-AzureRmMapsAccountKey.md
-ms.openlocfilehash: ba8de7d2bf93b1a24c72b67123c246d428a77f46c1c4b382a4eef86b4d81f9d2
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 1afe0f8f93bd00a384e1bb741ed8ea54e1ae66d1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140867303"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141778581"
 ---
 # Get-AzureRmMapsAccountKey
 
 ## SYNOPSIS
 Mendapatkan kunci API untuk akun.
-Tombol ini adalah mekanisme autentikasi yang digunakan dalam panggilan berikutnya ke Azure Peta.
+Kunci ini adalah mekanisme autentikasi yang digunakan dalam panggilan berikutnya untuk Azure Maps.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -41,10 +41,10 @@ Get-AzureRmMapsAccountKey [-ResourceId] <String> [-DefaultProfile <IAzureContext
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzureRmMapsAccountKey cmdlet mendapatkan kunci API untuk akun Peta Azure yang disediakan.
-Akun Azure Peta memiliki dua kunci API: Utama dan Sekunder.
-Kunci tersebut mengaktifkan interaksi dengan titik akhir akun Azure Peta.
-Gunakan New-AzureRmMapsAccountKey (New-AzureRmMapsAccountKey.md)untuk meregenerasi kunci.
+Cmdlet Get-AzureRmMapsAccountKey mendapatkan kunci API untuk akun Azure Maps yang disediakan.
+Akun Azure Maps memiliki dua kunci API: Utama dan Sekunder.
+Tombol memungkinkan interaksi dengan titik akhir akun Azure Maps.
+Gunakan New-AzureRmMapsAccountKey (AzureRmMapsAccountKey.md Baru)untuk meregenerasi kunci.
 
 ## EXAMPLES
 
@@ -57,7 +57,7 @@ PrimaryKey                                  SecondaryKey
 ******************************************* *******************************************
 ```
 
-Mengembalikan tombol untuk akun bernama MyAccount di grup sumber daya MyResourceGroup.
+Mengembalikan kunci untuk akun bernama MyAccount dalam grup sumber daya MyResourceGroup.
 
 ### Contoh 2
 ```powershell
@@ -68,7 +68,7 @@ PrimaryKey                                  SecondaryKey
 ******************************************* *******************************************
 ```
 
-Mengembalikan kunci untuk Akun Azure Peta tertentu.
+Mengembalikan kunci untuk Akun Azure Maps yang ditentukan.
 
 ## PARAMETERS
 
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Peta disambungkan dari Get-AzureRmMapsAccount.
+Peta Akun yang disalurkan dari Get-AzureRmMapsAccount.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Maps.Models.PSMapsAccount
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Peta Akun.
+Peta Nama Akun.
 
 ```yaml
 Type: System.String
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Peta ResourceId Akun.
+Peta Account ResourceId.
 
 ```yaml
 Type: System.String
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

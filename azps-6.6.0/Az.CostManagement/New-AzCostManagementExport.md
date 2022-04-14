@@ -6,22 +6,22 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/New-AzCostManagementExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/New-AzCostManagementExport.md
 ms.openlocfilehash: e04569a35df9c6c640542f27335080c01a3f1299
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140466641"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142087467"
 ---
 # New-AzCostManagementExport
 
 ## SYNOPSIS
 Operasi untuk membuat atau memperbarui ekspor.
-Operasi pembaruan memerlukan eTag terbaru untuk diatur di permintaan.
-Anda mungkin mendapatkan eTag terbaru dengan melakukan operasi dapatkan.
-Operasi membuat tidak memerlukan eTag.
+Operasi pembaruan memerlukan eTag terbaru untuk diatur dalam permintaan.
+Anda dapat memperoleh eTag terbaru dengan melakukan operasi get.
+Operasi Buat tidak memerlukan eTag.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.costmanagement/new-azcostmanagementexport) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.costmanagement/new-azcostmanagementexport) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,9 +36,9 @@ New-AzCostManagementExport -Name <String> -Scope <String> [-ConfigurationColumn 
 
 ## DESCRIPTION
 Operasi untuk membuat atau memperbarui ekspor.
-Operasi pembaruan memerlukan eTag terbaru untuk diatur di permintaan.
-Anda mungkin mendapatkan eTag terbaru dengan melakukan operasi dapatkan.
-Operasi membuat tidak memerlukan eTag.
+Operasi pembaruan memerlukan eTag terbaru untuk diatur dalam permintaan.
+Anda dapat memperoleh eTag terbaru dengan melakukan operasi get.
+Operasi Buat tidak memerlukan eTag.
 
 ## EXAMPLES
 
@@ -57,7 +57,7 @@ Membuat AzCostManagementExport
 
 ### -ConfigurationColumn
 Array nama kolom yang akan disertakan dalam ekspor.
-Jika tidak diberikan, ekspor akan menyertakan semua kolom yang tersedia.
+Jika tidak disediakan, ekspor akan menyertakan semua kolom yang tersedia.
 Kolom yang tersedia dapat bervariasi menurut saluran pelanggan (lihat contoh).
 
 ```yaml
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefinitionTimeframe
-Kerangka waktu untuk menarik data untuk ekspor.
+Jangka waktu untuk menarik data untuk ekspor.
 Jika kustom, maka periode waktu tertentu harus disediakan.
 
 ```yaml
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 
 ### -DefinitionType
 Tipe ekspor.
-Perlu diketahui bahwa 'Penggunaan' setara dengan 'ActualCost' dan berlaku untuk mengekspor yang belum menyediakan data untuk biaya atau amortisasi untuk pemesanan layanan.
+Perhatikan bahwa 'Penggunaan' setara dengan 'ActualCost' dan berlaku untuk ekspor yang belum menyediakan data untuk biaya atau amortisasi untuk reservasi layanan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CostManagement.Support.ExportType
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -Format
-Format ekspor yang akan dikirimkan.
+Format ekspor yang dikirimkan.
 Saat ini hanya 'Csv' yang didukung.
 
 ```yaml
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecurrencePeriodTo
-Tanggal berakhir pengulangan.
+Tanggal akhir pengulangan.
 
 ```yaml
 Type: System.DateTime
@@ -258,7 +258,7 @@ Accept wildcard characters: False
 
 ### -ScheduleStatus
 Status jadwal ekspor.
-Jika 'Tidak Aktif', jadwal ekspor dijeda.
+Jika 'Tidak Aktif', jadwal ekspor akan dijeda.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CostManagement.Support.StatusType
@@ -273,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Parameter ini menentukan lingkup pengelolaan biaya dari perspektif berbeda 'Langganan','ResourceGroup' dan 'Sediakan Layanan'.
+Parameter ini menentukan lingkup costmanagement dari perspektif berbeda 'Subscription','ResourceGroup' dan 'Provide Service'.
 
 ```yaml
 Type: System.String
@@ -303,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### -TimePeriodTo
-Tanggal berakhir untuk mengekspor data.
+Tanggal akhir untuk mengekspor data.
 
 ```yaml
 Type: System.DateTime
@@ -318,7 +318,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -334,7 +334,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -349,7 +349,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

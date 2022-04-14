@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Set-AzureRmNetworkWatcherConfigFlowLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Set-AzureRmNetworkWatcherConfigFlowLog.md
 ms.openlocfilehash: 315cd17c883d7b3af9b6a4b6a98e81146c93783e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425426"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142061724"
 ---
 # Set-AzureRmNetworkWatcherConfigFlowLog
 
@@ -94,11 +94,11 @@ Set-AzureRmNetworkWatcherConfigFlowLog -Location <String> -TargetResourceId <Str
 ```
 
 ## DESCRIPTION
-Sumber Set-AzureRmNetworkWatcherConfigFlowLog mengonfigurasi pembuatan log alur untuk sumber daya target. Properti untuk dikonfigurasikan meliputi: apakah pembuatan log alur diaktifkan atau tidak diaktifkan untuk sumber daya yang disediakan, akun penyimpanan yang dikonfigurasikan untuk mengirim log, dan kebijakan penyimpanan untuk log tersebut. Saat ini Grup Keamanan Jaringan didukung untuk pembuatan log alur. 
+Set-AzureRmNetworkWatcherConfigFlowLog mengonfigurasi pembuatan log alur untuk sumber daya target. Properti untuk dikonfigurasi meliputi: apakah pembuatan log alur diaktifkan atau tidak untuk sumber daya yang disediakan, akun penyimpanan yang dikonfigurasi untuk mengirim log, dan kebijakan penyimpanan untuk log. Saat ini Grup Keamanan Jaringan didukung untuk pembuatan log alur. 
 
 ## EXAMPLES
 
-### Contoh 1: Mengonfigurasi Flow Log untuk NSG tertentu
+### Contoh 1: Mengonfigurasi Flow Pembuatan Log untuk NSG Tertentu
 ```
 PS C:\> $NW = Get-AzurermNetworkWatcher -ResourceGroupName NetworkWatcherRg -Name NetworkWatcher_westcentralus
 PS C:\> $nsg = Get-AzureRmNetworkSecurityGroup -ResourceGroupName NSGRG -Name appNSG
@@ -116,9 +116,9 @@ RetentionPolicy  : {
                    }
 ```
 
-Dalam contoh ini, kami mengonfigurasi status pembuatan log alur untuk Grup Keamanan Jaringan. Dalam respons, kami melihat NSG tertentu memiliki pembuatan log alur yang diaktifkan, dan tidak ada kumpulan kebijakan penyimpanan.
+Dalam contoh ini, kami mengonfigurasi status pembuatan log alur untuk Grup Keamanan Jaringan. Dalam respons, kami melihat NSG yang ditentukan telah mengaktifkan pembuatan log aliran, dan tidak ada kumpulan kebijakan penyimpanan.
 
-### Contoh 2: Mengonfigurasi Flow Pembuatan Log dan Analitik Lalu Lintas untuk NSG tertentu
+### Contoh 2: Mengonfigurasi Flow Pembuatan Log dan Analitik Lalu Lintas untuk NSG Tertentu
 ```
 PS C:\> $NW = Get-AzurermNetworkWatcher -ResourceGroupName NetworkWatcherRg -Name NetworkWatcher_westcentralus
 PS C:\> $nsg = Get-AzureRmNetworkSecurityGroup -ResourceGroupName NSGRG -Name appNSG
@@ -145,12 +145,12 @@ FlowAnalyticsConfiguration : {
           }
 ```
 
-Dalam contoh ini, kami mengonfigurasi status pembuatan log alur dan Analitik Lalu Lintas untuk Grup Keamanan Jaringan. Dalam respons, kami melihat NSG tertentu memiliki pembuatan log alur dan Analitik Lalu Lintas yang diaktifkan, dan tidak ada kumpulan kebijakan penyimpanan.
+Dalam contoh ini, kami mengonfigurasi status pembuatan log alur dan Analitik Lalu Lintas untuk Grup Keamanan Jaringan. Dalam respons, kami melihat NSG yang ditentukan telah mengaktifkan pembuatan log alur dan Analitik Lalu Lintas, dan tidak ada rangkaian kebijakan penyimpanan.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableFlowLog
-Bendera untuk mengaktifkan/menonaktifkan pembuatan log alur.
+Tandai untuk mengaktifkan/menonaktifkan pembuatan log alur.
 
 ```yaml
 Type: System.Boolean
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableRetention
-Bendera untuk mengaktifkan/menonaktifkan penyimpanan.
+Tandai untuk mengaktifkan/menonaktifkan penyimpanan.
 
 ```yaml
 Type: System.Boolean
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableTrafficAnalytics
-Bendera untuk mengaktifkan/menonaktifkan penyimpanan.
+Tandai untuk mengaktifkan/menonaktifkan penyimpanan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengawas jaringan.
+Sumber daya pengamat jaringan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
@@ -402,7 +402,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -417,7 +417,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -432,7 +432,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -453,15 +453,15 @@ Parameter: NetworkWatcherName (ByValue)
 ### Microsoft.Azure.Commands.Network.Models.PSFlowLog
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, network, networking, watcher, flow, logs, flowlog, logging
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengawas, aliran, log, flowlog, pembuatan log
 
 ## RELATED LINKS
 
-[New-AzureRmNetworkWatcher](./New-AzureRmNetworkWatcher.md)
+[AzureRmNetworkWatcher baru](./New-AzureRmNetworkWatcher.md)
 
 [Get-AzureRmNetworkWatcher](./Get-AzureRmNetworkWatcher.md)
 
-[Remove-AzureRmNetworkWatcher](./Remove-AzureRmNetworkWatcher.md)
+[Hapus-AzureRmNetworkWatcher](./Remove-AzureRmNetworkWatcher.md)
 
 [Get-AzureRmNetworkWatcherNextHop](./Get-AzureRmNetworkWatcherNextHop.md)
 
@@ -471,21 +471,21 @@ Kata kunci: azure, azurerm, arm, resource, management, manager, network, network
 
 [Start-AzureRmNetworkWatcherResourceTroubleshooting](./Start-AzureRmNetworkWatcherResourceTroubleshooting.md)
 
-[New-AzureRmNetworkWatcherPacketCapture](./New-AzureRmNetworkWatcherPacketCapture.md)
+[Baru-AzureRmNetworkWatcherPacketCapture](./New-AzureRmNetworkWatcherPacketCapture.md)
 
 [New-AzureRmPacketCaptureFilterConfig](./New-AzureRmPacketCaptureFilterConfig.md)
 
 [Get-AzureRmNetworkWatcherPacketCapture](./Get-AzureRmNetworkWatcherPacketCapture.md)
 
-[Remove-AzureRmNetworkWatcherPacketCapture](./Remove-AzureRmNetworkWatcherPacketCapture.md)
+[Hapus-AzureRmNetworkWatcherPacketCapture](./Remove-AzureRmNetworkWatcherPacketCapture.md)
 
 [Stop-AzureRmNetworkWatcherPacketCapture](./Stop-AzureRmNetworkWatcherPacketCapture.md)
 
 [New-AzureRmNetworkWatcherProtocolConfiguration](./New-AzureRmNetworkWatcherProtocolConfiguration.md)
 
-[Test-AzureRmNetworkWatcherIPFlow](./Test-AzureRmNetworkWatcherIPFlow.md)
+[Uji-AzureRmNetworkWatcherIPFlow](./Test-AzureRmNetworkWatcherIPFlow.md)
 
-[Test-AzureRmNetworkWatcherConnectivity](./Test-AzureRmNetworkWatcherConnectivity.md)
+[Uji-AzureRmNetworkWatcherConnectivity](./Test-AzureRmNetworkWatcherConnectivity.md)
 
 [Stop-AzureRmNetworkWatcherConnectionMonitor](./Stop-AzureRmNetworkWatcherConnectionMonitor.md)
 
@@ -495,7 +495,7 @@ Kata kunci: azure, azurerm, arm, resource, management, manager, network, network
 
 [Set-AzureRmNetworkWatcherConfigFlowLog](./Set-AzureRmNetworkWatcherConfigFlowLog.md)
 
-[Remove-AzureRmNetworkWatcherConnectionMonitor](./Remove-AzureRmNetworkWatcherConnectionMonitor.md)
+[Hapus-AzureRmNetworkWatcherConnectionMonitor](./Remove-AzureRmNetworkWatcherConnectionMonitor.md)
 
 [New-AzureRmNetworkWatcherConnectionMonitor](./New-AzureRmNetworkWatcherConnectionMonitor.md)
 

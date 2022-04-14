@@ -3,21 +3,21 @@ external help file: Azs.Storage.Admin-help.xml
 Module Name: Azs.Storage.Admin
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 6bcfa1a81e7be53f44fda2c867bfc3c491d4deb20a30dfa6c03df2ee94a8d2c5
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 769567562199d33116911f1f1f5e258ae2decbbe
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416949"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141814748"
 ---
 # Restore-AzsStorageAccount
 
 ## SYNOPSIS
-Membatalkan penghapusan akun penyimpanan yang dihapus.
+Membatalkan penghapusan akun penyimpanan.
 
 ## SYNTAX
 
-### Undelete (Default)
+### Batalkan penghapusan (Default)
 ```
 Restore-AzsStorageAccount -FarmName <String> -Name <String> [-ResourceGroupName <String>] [-Force] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -29,7 +29,7 @@ Restore-AzsStorageAccount -ResourceId <String> [-Force] [-WhatIf] [-Confirm] [<C
 ```
 
 ## DESCRIPTION
-Membatalkan penghapusan akun penyimpanan yang dihapus.
+Membatalkan penghapusan akun penyimpanan.
 
 ## EXAMPLES
 
@@ -38,12 +38,12 @@ Membatalkan penghapusan akun penyimpanan yang dihapus.
 Restore-AzsStorageAccount -FarmName "90987d65-eb60-42ae-b735-18bcd7ff69da" -Name "83fe9ac0-f1e7-433e-b04c-c61ae0712093"
 ```
 
-Membatalkan penghapusan akun penyimpanan yang dihapus.
+Membatalkan penghapusan akun penyimpanan.
 
 ## PARAMETERS
 
 ### -FarmName
-Id Farm.
+Id Pertanian.
 
 ```yaml
 Type: String
@@ -102,8 +102,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: SwitchParameter
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

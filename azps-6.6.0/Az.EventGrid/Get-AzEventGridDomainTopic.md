@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridDomainTopic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridDomainTopic.md
 ms.openlocfilehash: f77230fd2aa3ea6779de2a3bb1ed6d20c124d062
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139976559"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141803282"
 ---
 # Get-AzEventGridDomainTopic
 
 ## SYNOPSIS
-Dapatkan detail topik domain Kisi Acara, atau dapatkan daftar semua topik domain Kisi Acara di bawah domain Kisi Acara tertentu dalam langganan Azure saat ini.
+Mendapatkan detail topik domain Kisi Kejadian, atau mendapatkan daftar semua topik domain Kisi Acara di bawah domain Kisi Kejadian tertentu dalam langganan Azure saat ini.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventgrid/get-azeventgriddomaintopic) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.eventgrid/get-azeventgriddomaintopic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,17 +40,17 @@ Get-AzEventGridDomainTopic [-NextLink <String>] [-DefaultProfile <IAzureContextC
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzEventGridDomainTopic mendapatkan detail topik domain Kisi Kejadian yang ditentukan, atau daftar semua topik domain Kisi Acara di bawah domain tertentu dalam langganan Azure saat ini.
-Jika nama topik domain disediakan, detail tentang topik domain Kisi Acara dikembalikan.
-Jika nama topik domain tidak tersedia, daftar topik domain di bawah nama domain tertentu akan dikembalikan. Jumlah elemen yang dikembalikan dalam daftar ini dikontrol oleh parameter Top. Jika nilai Teratas tidak ditentukan atau $null, daftar akan berisi semua item topik domain. Jika tidak, Atas akan menunjukkan jumlah maksimum elemen yang akan dikembalikan dalam daftar.
-Jika masih ada topik domain lainnya, nilai di NextLink harus digunakan di panggilan berikutnya untuk mendapatkan halaman berikutnya tentang topik domain.
-Akhirnya, parameter ODataQuery digunakan untuk melakukan pemfilteran untuk hasil pencarian. Kueri pemfilteran mengikuti sintaks OData hanya menggunakan properti Name. Operasi yang didukung antara lain: CONTAINS, eq (untuk sama), ne (tidak sama), AND, OR dan NOT.
+Cmdlet Get-AzEventGridDomainTopic mendapatkan detail topik domain Kisi Kejadian tertentu, atau daftar semua topik domain Kisi Acara di bawah domain tertentu dalam langganan Azure saat ini.
+Jika nama topik domain disediakan, detail dari satu topik domain Kisi Kejadian dikembalikan.
+Jika nama topik domain tidak disediakan, daftar topik domain di bawah nama domain tertentu akan dikembalikan. Jumlah elemen yang dikembalikan dalam daftar ini dikontrol oleh parameter Teratas. Jika Nilai teratas tidak ditentukan atau $null, daftar akan berisi semua item topik domain. Jika tidak, Top akan menunjukkan jumlah maksimum elemen yang akan dikembalikan dalam daftar.
+Jika topik domain lainnya masih tersedia, nilai di NextLink harus digunakan dalam panggilan berikutnya untuk mendapatkan halaman topik domain berikutnya.
+Terakhir, parameter ODataQuery digunakan untuk melakukan pemfilteran untuk hasil pencarian. Kueri pemfilteran mengikuti sintaks OData menggunakan properti Name saja. Operasi yang didukung meliputi: CONTAINS, eq (untuk sama dengan), ne (untuk tidak sama dengan), AND, OR dan NOT.
 
 ## EXAMPLES
 
 ### Contoh 1
 
-Mendapatkan detail topik domain Kisi Kejadian DomainTopic1 \`\` di bawah Domain Kisi \`Kejadian1\` di grup sumber daya \`MyResourceGroupName\`.
+Mendapatkan detail topik \`domain Kisi Kejadian DomainTopic1\` di bawah Domain \`Kisi Kejadian1\` dalam grup \`sumber daya MyResourceGroupName\`.
 
 ```powershell
 PS C:\> Get-AzEventGridDomainTopic -ResourceGroup MyResourceGroupName -DomainName Domain1 -DomainTopicName DomainTopic1
@@ -65,7 +65,7 @@ ProvisioningState : Succeeded
 
 ### Contoh 2
 
-Mendapatkan detail topik domain \`Kisi Kejadian DomainTopic1\` di bawah Domain Kisi Kejadian Domain1 \`\`\` di grup sumber daya MyResourceGroupName\` menggunakan opsi ResourceId.
+Mendapatkan detail topik \`domain Kisi Kejadian DomainTopic1\` di bawah Domain \`Kisi Kejadian1\` dalam grup \`sumber daya MyResourceGroupName\` menggunakan opsi ResourceId.
 
 ```powershell
 PS C:\> Get-AzEventGridDomainTopic -ResourceId "/subscriptions/$subscriptionId/resourceGroups/MyResourceGroupName/providers/Microsoft.EventGrid/domains/Domain1/topics/DomainTopic1"
@@ -80,7 +80,7 @@ ProvisioningState : Succeeded
 
 ### Contoh 3
 
-List all the Event Grid domain topics under Event Grid domain \`Domain1\` in resource group \`MyResourceGroupName\` without pagination (all results are returned in one shot).
+Cantumkan semua topik domain Kisi Kejadian di bawah Domain \`Kisi Kejadian1\` dalam grup \`sumber daya MyResourceGroupName\` tanpa pagination (semua hasil dikembalikan dalam satu bidikan).
 
 ```powershell
 PS C:\> $result=Get-AzEventGridDomainTopic -ResourceGroup MyResourceGroupName -DomainName Domain1
@@ -113,7 +113,7 @@ ProvisioningState : Succeeded
 
 ### Contoh 4
 
-List all the Event Grid domain topics under Event Grid domain1 \`\` in resource group \`MyResourceGroupName\` without pagination (all results are returned in one shot) using ResourceId option
+Mencantumkan semua topik domain Kisi Kejadian di bawah Domain \`Kisi Kejadian1\` dalam grup \`sumber daya MyResourceGroupName\` tanpa pagination (semua hasil dikembalikan dalam satu bidikan) menggunakan opsi ResourceId
 
 ```powershell
 PS C:\> $result=Get-AzEventGridDomainTopic -ResourceId "/subscriptions/$subscriptionId/resourceGroups/MyResourceGroupName/providers/Microsoft.EventGrid/domains/Domain1"
@@ -146,7 +146,7 @@ ProvisioningState : Succeeded
 
 ### Contoh 5
 
-List the Event Grid domain topics (if any) under domain \`Domain1\` in resource group \`MyResourceGroupName\` that satisfies the $odataFilter query 10 domain topics at a time. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman berikutnya tentang topik domain, pengguna diharapkan untuk menghubungi kembali Get-AzEventGridDomainTopic menggunakan hasil. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti saat hasil. NextLink menjadi $null.
+Cantumkan topik domain Kisi Kejadian (jika ada) di bawah domain \`Domain1\` dalam grup \`sumber daya MyResourceGroupName\` yang memenuhi kueri $odataFilter 10 topik domain dalam satu waktu. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman topik domain berikutnya, pengguna diharapkan untuk menghubungi kembali Get-AzEventGridDomainTopic dan menggunakan hasil. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti ketika hasil. NextLink menjadi $null.
 
 ```powershell
 PS C:\> $total = 0
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -NextLink
-Link untuk halaman berikutnya dari sumber daya yang akan diperoleh. Nilai ini diperoleh dengan panggilan cmdlet Get-AzEventGrid pertama ketika sumber daya lainnya masih tersedia untuk dikuer lainnya.
+Tautan untuk halaman sumber daya berikutnya yang akan diperoleh. Nilai ini diperoleh dengan panggilan cmdlet pertama Get-AzEventGrid ketika lebih banyak sumber daya masih tersedia untuk dikueri.
 
 ```yaml
 Type: System.String
@@ -225,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -ODataQuery
-Kueri OData digunakan untuk memfilter hasil daftar. Pemfilteran saat ini hanya diperbolehkan pada properti Name. Operasi yang didukung antara lain: CONTAINS, eq (untuk sama), ne (tidak sama), AND, OR dan NOT.
+Kueri OData digunakan untuk memfilter hasil daftar. Pemfilteran saat ini hanya diperbolehkan pada properti Nama. Operasi yang didukung meliputi: CONTAINS, eq (untuk sama dengan), ne (untuk tidak sama dengan), AND, OR dan NOT.
 
 ```yaml
 Type: System.String
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi Sumber Daya yang mewakili Topik Domain Kisi Acara atau Domain Kisi.
+Pengidentifikasi Sumber Daya yang mewakili Domain Kisi Acara atau Topik Domain Kisi.
 
 ```yaml
 Type: System.String
@@ -270,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-Kueri OData digunakan untuk memfilter hasil daftar. Pemfilteran saat ini hanya diperbolehkan pada properti Name. Operasi yang didukung antara lain: CONTAINS, eq (untuk sama), ne (tidak sama), AND, OR dan NOT.
+Kueri OData digunakan untuk memfilter hasil daftar. Pemfilteran saat ini hanya diperbolehkan pada properti Nama. Operasi yang didukung meliputi: CONTAINS, eq (untuk sama dengan), ne (untuk tidak sama dengan), AND, OR dan NOT.
 
 ```yaml
 Type: System.Int32
@@ -285,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

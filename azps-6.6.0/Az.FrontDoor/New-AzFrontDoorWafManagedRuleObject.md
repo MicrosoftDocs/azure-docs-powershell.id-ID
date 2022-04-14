@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorWafManagedRuleObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorWafManagedRuleObject.md
 ms.openlocfilehash: dc303543ab49af782f24208a2597033f40b8e703
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140503905"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141802940"
 ---
 # New-AzFrontDoorWafManagedRuleObject
 
 ## SYNOPSIS
-Membuat Objek ManagedRule untuk pembuatan kebijakan WAF
+Buat Objek ManagedRule untuk pembuatan kebijakan WAF
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorwafmanagedruleobject) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorwafmanagedruleobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-AzFrontDoorWafManagedRuleObject -Type <String> -Version <String> [-Action <S
 ```
 
 ## DESCRIPTION
-Membuat Objek ManagedRule untuk pembuatan kebijakan WAF
+Buat Objek ManagedRule untuk pembuatan kebijakan WAF
 
 ## EXAMPLES
 
@@ -54,7 +54,7 @@ Membuat Objek ManagedRule
 ## PARAMETERS
 
 ### -Tindakan
-Tindakan Kumpulan Aturan. Kemungkinan nilai meliputi: 'Perbolehkan', 'Blokir', 'Log', 'Alihkan'.
+Tindakan Kumpulan Aturan. Nilai yang memungkinkan termasuk: 'Izinkan', 'Blokir', 'Log', 'Pengalihan'.
 
 ```yaml
 Type: System.String
@@ -83,7 +83,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Exclusion
+### -Pengecualian
 Pengecualian
 
 ```yaml
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -RuleGroupOverride
-Daftar konfigurasi timpaan penyedia terkelola Azure
+Daftar konfigurasi pengesampingan penyedia terkelola azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSAzureRuleGroupOverride[]
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Tipe perangkat aturan
+Tipe ruleset
 
 ```yaml
 Type: System.String
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -Versi
-Versi perangkat aturan
+Versi ruleset
 
 ```yaml
 Type: System.String
@@ -144,11 +144,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

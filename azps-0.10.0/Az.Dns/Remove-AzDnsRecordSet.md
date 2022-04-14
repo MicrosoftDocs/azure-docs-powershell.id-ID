@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Dns/Dns/help/Remove-AzDnsRecordSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Dns/Dns/help/Remove-AzDnsRecordSet.md
 ms.openlocfilehash: 10cd4936ad406be85f840b25c175d7900d66d679
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426216"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142057871"
 ---
 # Remove-AzDnsRecordSet
 
@@ -32,36 +32,36 @@ Remove-AzDnsRecordSet -Name <String> -RecordType <RecordType> -Zone <DnsZone> [-
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Object
+### Objek
 ```
 Remove-AzDnsRecordSet -RecordSet <DnsRecordSet> [-Overwrite] [-Force] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzDnsRecordSet** menghapus kumpulan data tertentu dari zona yang ditentukan.
-Anda tidak dapat menghapus rekaman SOA atau server nama (NS) yang secara otomatis dibuat di zona apex.
+Cmdlet **Remove-AzDnsRecordSet** menghapus kumpulan rekaman tertentu dari zona yang ditentukan.
+Anda tidak dapat menghapus catatan SOA atau server nama (NS) yang secara otomatis dibuat di apex zona.
 
-Anda dapat menyampaikan **objek RecordSet** ke cmdlet ini menggunakan operator pipeline atau sebagai parameter.
-Untuk mengidentifikasi kumpulan rekaman berdasarkan nama dan tipe tanpa menggunakan objek **RecordSet,** Anda harus melewati zona sebagai objek **DnsZone** ke cmdlet ini menggunakan operator pipeline atau sebagai parameter, atau alternatifnya Anda dapat menentukan parameter *ZoneName* dan *ResourceGroupName.*
+Anda dapat mengirimkan objek **RecordSet** ke cmdlet ini menggunakan operator pipeline atau sebagai parameter.
+Untuk mengidentifikasi catatan yang diatur menurut nama dan mengetik tanpa menggunakan objek **RecordSet** , Anda harus melewati zona sebagai objek **DnsZone** ke cmdlet ini dengan menggunakan operator pipeline atau sebagai parameter, atau sebagai alternatif Anda bisa menentukan parameter *ZoneName* dan *ResourceGroupName* .
 
-Anda dapat menggunakan parameter Konfirmasi dan $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
+Anda dapat menggunakan variabel Konfirmasi parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
 
-Saat menentukan kumpulan data menggunakan objek **RecordSet,** kumpulan data tidak dihapus jika telah diubah di Azure DNS sejak objek **RecordSet** lokal diambil.
-Ini menyediakan perlindungan untuk perubahan serentak.
-Anda dapat menyembunyikan hal ini menggunakan parameter *Timpa,* yang menghapus kumpulan rekaman terlepas dari perubahan serentak.
+Saat menentukan kumpulan catatan menggunakan objek **RecordSet** , kumpulan catatan tidak dihapus jika telah diubah di Azure DNS sejak objek **RecordSet** lokal diambil.
+Ini memberikan perlindungan untuk perubahan serentak.
+Anda bisa menyembunyikan ini dengan menggunakan parameter *Timpa* , yang menghapus kumpulan rekaman terlepas dari perubahan bersamaan.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus kumpulan rekaman
+### Contoh 1: Menghapus kumpulan catatan
 ```
 PS C:\> $RecordSet = Get-AzDnsRecordSet -Name "www" -ResourceGroupName "MyResourceGroup" -ZoneName "myzone.com"
 PS C:\> Remove-AzDnsRecordSet -RecordSet $RecordSet
 ```
 
-Perintah pertama mendapatkan kumpulan data tertentu, lalu menyimpannya dalam $RecordSet tertentu. Perintah kedua menghapus kumpulan rekaman di $RecordSet.
+Perintah pertama mendapatkan kumpulan rekaman yang ditentukan, lalu menyimpannya dalam variabel $RecordSet. Perintah kedua menghapus kumpulan catatan dalam $RecordSet.
 
-### Contoh 2: Menghapus kumpulan data dan menyembunyikan semua konfirmasi
+### Contoh 2: Menghapus kumpulan rekaman dan menyembunyikan semua konfirmasi
 ```
 PS C:\> $RecordSet = Get-AzDnsRecordSet -Name "www" -ZoneName "myzone.com" -ResourceGroupName "MyResourceGroup"
 PS C:\> Remove-AzDnsRecordSet -RecordSet $RecordSet -Confirm:$False -Overwrite
@@ -73,18 +73,18 @@ PS C:\> Remove-AzDnsRecordSet -RecordSet $RecordSet -Confirm:$False -Overwrite
 PS C:\> Remove-AzDnsRecordSet -Name "www" -ZoneName "myzone.com" -ResourceGroupName "MyResourceGroup" -Confirm:$False
 ```
 
-Perintah pertama mendapatkan kumpulan data tertentu.
+Perintah pertama akan mendapatkan kumpulan rekaman yang ditentukan.
 
-Perintah kedua menghapus kumpulan catatan tersebut, meskipun telah berubah untuk sementara.
-Perintah konfirmasi akan disingggahkan.
+Perintah kedua menghapus kumpulan catatan, bahkan jika telah berubah sementara itu.
+Perintah konfirmasi disempurnakan.
 
 ## PARAMETERS
 
-### -Force
-Parameter ini tidak berlaku bagi cmdlet ini.
-File akan dihapus pada rilis mendatang.
+### -Paksa
+Parameter ini tidak digunakan lagi untuk cmdlet ini.
+Ini akan dihapus dalam rilis mendatang.
 
-Untuk mengontrol apakah cmdlet ini meminta konfirmasi Anda, gunakan parameter *Konfirmasi.*
+Untuk mengontrol apakah cmdlet ini meminta anda untuk konfirmasi, gunakan parameter *Konfirmasi* .
 
 ```yaml
 Type: SwitchParameter
@@ -99,10 +99,10 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama **RecordSet untuk** dihapus.
-Saat menentukan kumpulan catatan menurut nama, zona DNS harus ditentukan menggunakan *parameter* Zona atau parameter *ZoneName* dan *ResourceGroupName.*
+Menentukan nama **Kumpulan Data** untuk dihapus.
+Saat menentukan catatan yang diatur menurut nama, zona DNS harus ditentukan menggunakan parameter *Zona* atau parameter *ZoneName* dan *ResourceGroupName* .
 
-Alternatifnya, kumpulan rekaman dapat ditentukan menggunakan objek **RecordSet,** yang diteruskan menggunakan parameter *RecordSet.*
+Alternatifnya, kumpulan catatan dapat ditentukan menggunakan objek **RecordSet** , yang dikirim menggunakan parameter *RecordSet* .
 
 ```yaml
 Type: String
@@ -116,10 +116,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Overwrite
-Saat menentukan kumpulan data menggunakan objek **RecordSet,** kumpulan data tidak dihapus jika telah diubah di Azure DNS sejak objek **RecordSet** lokal diambil.
-Ini menyediakan perlindungan untuk perubahan serentak.
-Hal ini dapat menyembunyikan penggunaan parameter *Overwrite,* yang menghapus kumpulan data terlepas dari perubahan serentak.
+### -Timpa
+Saat menentukan kumpulan catatan menggunakan objek **RecordSet** , kumpulan catatan tidak dihapus jika telah diubah di Azure DNS sejak objek **RecordSet** lokal diambil.
+Ini memberikan perlindungan untuk perubahan serentak.
+Ini dapat disempurnakan menggunakan parameter *Timpa* , yang menghapus kumpulan rekaman terlepas dari perubahan bersamaan.
 
 ```yaml
 Type: SwitchParameter
@@ -149,9 +149,9 @@ Accept wildcard characters: False
 ```
 
 ### -RecordSet
-Menentukan objek **RecordSet** yang akan dihapus.
+Menentukan objek **RecordSet** untuk dihapus.
 
-Alternatifnya, kumpulan catatan dapat ditentukan  menggunakan parameter Nama dan *Zona,* atau menggunakan parameter *Nama,* *Nama ZoneName,* *dan ResourceGroupName.*
+Alternatifnya, kumpulan catatan dapat ditentukan menggunakan parameter *Nama* dan *Zona* , atau menggunakan parameter *Name*, *ZoneName*, dan *ResourceGroupName* .
 
 ```yaml
 Type: DnsRecordSet
@@ -168,9 +168,9 @@ Accept wildcard characters: False
 ### -RecordType
 Menentukan tipe catatan DNS.
 
-Nilai valid adalah:
+Nilai yang valid adalah:
 
-- A
+- J
 - AAAA
 - CNAME
 - MX
@@ -179,8 +179,8 @@ Nilai valid adalah:
 - SRV
 - TXT
 
-Catatan SOA akan dihapus secara otomatis ketika zona dihapus.
-Anda tidak dapat menghapus catatan SOA secara manual.
+Rekaman SOA dihapus secara otomatis saat zona dihapus.
+Anda tidak bisa menghapus catatan SOA secara manual.
 
 ```yaml
 Type: RecordType
@@ -196,10 +196,10 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan grup sumber daya yang berisi zona DNS yang berisi **RecordSet untuk** dihapus.
-Parameter ini hanya berlaku ketika kumpulan catatan dan zona DNS ditentukan menggunakan parameter *Nama dan* *Nama ZoneName.*
+Menentukan grup sumber daya yang berisi zona DNS yang berisi **Kumpulan Rekaman** untuk dihapus.
+Parameter ini hanya berlaku ketika kumpulan catatan dan zona DNS ditentukan menggunakan parameter *Nama* dan *Nama Zona* .
 
-Alternatifnya, Anda dapat menentukan kumpulan rekaman menggunakan parameter *RecordSet,* atau *parameter Nama* *dan* Zona.
+Alternatifnya, Anda dapat menentukan kumpulan rekaman menggunakan parameter *RecordSet* , atau parameter *Name* and *Zone* .
 
 ```yaml
 Type: String
@@ -213,11 +213,11 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Zone
-Menentukan zona DNS yang berisi **RecordSet yang** akan dihapus.
-Parameter ini hanya berlaku ketika menentukan kumpulan data menggunakan parameter *Name.*
+### -Zona
+Menentukan zona DNS yang berisi **KumpulanData** untuk dihapus.
+Parameter ini hanya berlaku ketika menentukan kumpulan rekaman menggunakan parameter *Nama* .
 
-Alternatifnya, Anda dapat menentukan kumpulan data menggunakan parameter *RecordSet,* atau parameter *Name*, *ZoneName*, *dan ResourceGroupName.*
+Alternatifnya, Anda dapat menentukan kumpulan catatan menggunakan parameter *RecordSet* , atau parameter *Name*, *ZoneName*, dan *ResourceGroupName* .
 
 ```yaml
 Type: DnsZone
@@ -232,10 +232,10 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneName
-Menentukan nama zona yang berisi **RecordSet untuk** dihapus.
-Anda juga harus menentukan *parameter Nama* dan *ResourceGroupName.*
+Menentukan nama zona yang berisi **Kumpulan Data** untuk dihapus.
+Anda juga harus menentukan parameter *Nama* dan *ResourceGroupName* .
 
-Alternatifnya, kumpulan catatan dapat ditentukan menggunakan parameter *RecordSet,* atau *parameter Nama* *dan* Zona.
+Alternatifnya, kumpulan catatan dapat ditentukan menggunakan parameter *RecordSet* , atau parameter *Nama* dan *Zona* .
 
 ```yaml
 Type: String
@@ -250,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -266,7 +266,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -281,24 +281,24 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.Dns.DnsRecordSet
-Anda dapat pipa objek **RecordSet** ke cmdlet ini.
+Anda dapat menyalurkan objek **RecordSet** ke cmdlet ini.
 
 ## OUTPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menghasilkan output apa pun.
 
 ## CATATAN
 Anda dapat menggunakan parameter *Konfirmasi* untuk mengontrol apakah cmdlet ini meminta konfirmasi.
-Secara default, cmdlet akan meminta konfirmasi Anda jika $ConfirmPreference Windows PowerShell variabel memiliki nilai Sedang atau lebih rendah.
+Secara default, cmdlet meminta Konfirmasi jika variabel $ConfirmPreference Windows PowerShell memiliki nilai Sedang atau lebih rendah.
 
-Jika Anda menetapkan *Konfirmasi* *atau Konfirmasi:$True*, cmdlet ini akan meminta konfirmasi sebelum dijalankan.
-Jika Anda menentukan *Confirm:$False*, cmdlet tidak akan meminta konfirmasi Anda.
+Jika Anda menentukan *Konfirmasi* atau *Konfirmasi:$True*, cmdlet ini meminta anda untuk konfirmasi sebelum berjalan.
+Jika Anda menentukan *Konfirmasi:$False*, cmdlet tidak meminta konfirmasi kepada Anda.
 
 ## RELATED LINKS
 

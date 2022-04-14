@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/NotificationHubs/Commands.NotificationHubs/help/Remove-AzureRmNotificationHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/NotificationHubs/Commands.NotificationHubs/help/Remove-AzureRmNotificationHub.md
 ms.openlocfilehash: f4dc14fd922852fa67085588c78847623eb5eb64
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420670"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142061725"
 ---
 # Remove-AzureRmNotificationHub
 
@@ -28,27 +28,27 @@ Remove-AzureRmNotificationHub [-ResourceGroup] <String> [-Namespace] <String> [-
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmNotificationHub** menghapus hub pemberitahuan yang sudah ada.
+Cmdlet **Hapus-AzureRmNotificationHub** menghapus hub pemberitahuan yang sudah ada.
 Hub pemberitahuan digunakan untuk mengirim pemberitahuan push ke beberapa klien terlepas dari platform yang digunakan oleh klien tersebut.
-Platform termasuk, namun tidak terbatas pada: iOS, Android, Windows Phone 8, Windows Store.
-Hub pemberitahuan kurang lebih sama dengan aplikasi individu: setiap aplikasi biasanya akan memiliki hub pemberitahuannya sendiri.
-Anda dapat menghapus hub pemberitahuan yang sudah ada menggunakan cmdlet **Remove-AzureRmNotificationHub.**
+Platform mencakup, tetapi tidak terbatas pada: iOS, Android, Windows Phone 8, dan Bursa Windows.
+Hub pemberitahuan kira-kira setara dengan aplikasi individual: setiap aplikasi Anda biasanya akan memiliki hub pemberitahuannya sendiri.
+Anda dapat menghapus hub pemberitahuan yang sudah ada menggunakan cmdlet **Remove-AzureRmNotificationHub** .
 Setelah hub dihapus, Anda tidak dapat lagi menggunakan hub tersebut untuk mengirim pemberitahuan push kepada pengguna.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus hub pemberitahuan
+### Contoh 1: Menghapus hub pemberitahuan
 ```
 PS C:\>Remove-AzureRmNotificationHub -Namespace "ContosoNamespace" -ResourceGroup "ContosoNotificationsGroup" -NotificationHub "ContosoInternalHub"
 ```
 
 Perintah ini menghapus hub pemberitahuan bernama ContosoInternalHub.
-Untuk menghapus hub, Anda harus menentukan ruang nama tempat hub terletak serta grup sumber daya tempat hub ditetapkan.
+Untuk menghapus hub, Anda harus menentukan ruang nama tempat hub berada serta grup sumber daya tempat hub ditetapkan.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -62,8 +62,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroup
 Menentukan grup sumber daya tempat hub pemberitahuan ditetapkan.
-Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu manajemen inventaris dan administrasi Azure.
+Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang hanya membantu manajemen inventaris dan administrasi Azure.
 
 ```yaml
 Type: System.String
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -172,7 +172,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmNotificationHub](./Get-AzureRmNotificationHub.md)
 
-[New-AzureRmNotificationHub](./New-AzureRmNotificationHub.md)
+[Baru-AzureRmNotificationHub](./New-AzureRmNotificationHub.md)
 
 [Set-AzureRmNotificationHub](./Set-AzureRmNotificationHub.md)
 

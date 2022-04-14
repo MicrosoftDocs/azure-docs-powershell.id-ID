@@ -5,11 +5,11 @@ ms.assetid: DEC01722-EB1A-45CE-BD30-9DB861718573
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.resources/remove-azurermpolicydefinition
 schema: 2.0.0
 ms.openlocfilehash: 03da83268a06ac4026604728281b10f767fab9a3
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419824"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142103561"
 ---
 # Remove-AzureRmPolicyDefinition
 
@@ -58,7 +58,7 @@ Cmdlet **Remove-AzureRmPolicyDefinition** menghapus definisi kebijakan.
 PS C:\> Remove-AzureRmPolicyDefinition -Name 'VMPolicyDefinition'
 ```
 
-Perintah ini menghapus definisi kebijakan tertentu.
+Perintah ini menghapus definisi kebijakan yang ditentukan.
 
 ### Contoh 2: Hapus definisi kebijakan menurut ID sumber daya
 ```
@@ -66,9 +66,9 @@ PS C:\> $PolicyDefinition = Get-AzureRmPolicyDefinition -Name 'VMPolicyDefinitio
 PS C:\> Remove-AzureRmPolicyDefinition -Id $PolicyDefinition.ResourceId -Force
 ```
 
-Perintah pertama mendapatkan definisi kebijakan bernama VMPolicyDefinition dengan menggunakan cmdlet Get-AzureRmPolicyDefinition cmdlet.
-Perintah menyimpannya di $PolicyDefinition variabel.
-Perintah kedua menghapus definisi kebijakan yang diidentifikasi oleh properti **ResourceId** $PolicyDefinition.
+Perintah pertama mendapatkan definisi kebijakan bernama VMPolicyDefinition dengan menggunakan cmdlet Get-AzureRmPolicyDefinition.
+Perintah menyimpannya dalam variabel $PolicyDefinition.
+Perintah kedua menghapus definisi kebijakan yang diidentifikasi oleh properti **ResourceId** dari $PolicyDefinition.
 
 ## PARAMETERS
 
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -103,8 +103,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,14 +134,14 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: System.Management.Automation.ActionPreference
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementGroupName
-Nama grup manajemen dari definisi kebijakan yang akan dihapus.
+Nama grup manajemen definisi kebijakan untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Mengindikasikan bahwa cmdlet ini mempertimbangkan versi API prari perilisan bila secara otomatis menentukan versi mana yang akan digunakan.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan definisi kebijakan untuk menghapus.
+ID langganan definisi kebijakan yang akan dihapus.
 
 ```yaml
 Type: System.Nullable`1[System.Guid]
@@ -243,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -259,7 +259,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -274,7 +274,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -286,7 +286,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmPolicyDefinition](./Get-AzureRmPolicyDefinition.md)
 
-[New-AzureRmPolicyDefinition](./New-AzureRmPolicyDefinition.md)
+[AzureRmPolicyDefinition Baru](./New-AzureRmPolicyDefinition.md)
 
 [Set-AzureRmPolicyDefinition](./Set-AzureRmPolicyDefinition.md)
 

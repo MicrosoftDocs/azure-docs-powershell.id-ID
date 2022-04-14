@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Set-AzDeploymentManagerServiceUnit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Set-AzDeploymentManagerServiceUnit.md
-ms.openlocfilehash: 9aaa877686126ce0c9cc0ff06596cc38f96b95a7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a89897ec0b457fcbefaf3f49dadea150ac6f2ff0
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140550112"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142111823"
 ---
 # Set-AzDeploymentManagerServiceUnit
 
 ## SYNOPSIS
 Memperbarui unit layanan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.deploymentmanager/set-azdeploymentmanagerserviceunit) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,8 +28,8 @@ Set-AzDeploymentManagerServiceUnit [-InputObject] <PSServiceUnitResource>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzDeploymentManagerServiceUnit** memperbarui unit layanan dengan objek unit layanan tertentu.
-Cmdlet mengembalikan objek service unit yang diperbarui.
+Cmdlet **Set-AzDeploymentManagerServiceUnit** memperbarui unit layanan dengan objek unit layanan yang ditentukan.
+Cmdlet mengembalikan objek unit layanan yang diperbarui.
 
 ## EXAMPLES
 
@@ -35,8 +38,8 @@ Cmdlet mengembalikan objek service unit yang diperbarui.
 PS C:\> Set-AzDeploymentManagerServiceUnit -InputObject $serviceUnitObject
 ```
 
-Perintah ini akan memperbarui unit layanan dengan nama, nama layanan, nama topologi layanan, dan ResourceGroup sesuai dengan masing-masing properti Nama, Nama ServiceTopologyName dan ResourceGroupName $serviceUnitObject.
-Perintah mengembalikan objek service unit yang diperbarui.
+Perintah ini memperbarui unit layanan dengan nama, nama layanan, nama topologi layanan, dan ResourceGroup yang sesuai dengan properti Name, ServiceName, ServiceTopologyName, dan ResourceGroupName dari $serviceUnitObject.
+Perintah mengembalikan objek unit layanan yang diperbarui.
 
 ## PARAMETERS
 
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

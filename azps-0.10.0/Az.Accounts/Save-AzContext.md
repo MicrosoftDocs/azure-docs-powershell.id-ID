@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Save-AzContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Save-AzContext.md
 ms.openlocfilehash: 07e565031a5c29ae1be78246cad95326952007e6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132413877"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142058474"
 ---
 # Save-AzContext
 
 ## SYNOPSIS
-Menyimpan informasi autentikasi saat ini untuk digunakan di sesi PowerShell lainnya.
+Menyimpan informasi autentikasi saat ini untuk digunakan dalam sesi PowerShell lainnya.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Save-AzContext [[-Profile] <AzureRmProfile>] [-Path] <String> [-Force]
 ```
 
 ## DESCRIPTION
-Cmdlet Save-AzContext menyimpan informasi autentikasi saat ini untuk digunakan di sesi PowerShell lainnya.
+Cmdlet Save-AzContext menyimpan informasi autentikasi saat ini untuk digunakan dalam sesi PowerShell lainnya.
 
 ## EXAMPLES
 
@@ -42,12 +42,12 @@ Contoh ini menyimpan konteks Azure sesi saat ini ke file JSON yang disediakan.
 PS C:\> Save-AzContext -Profile (Connect-AzAccount) -Path C:\test.json
 ```
 
-Contoh ini menyimpan konteks Azure yang disampaikan ke cmdlet ke file JSON yang disediakan.
+Contoh ini menyimpan konteks Azure yang diteruskan ke cmdlet ke file JSON yang disediakan.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -61,8 +61,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Menimpa file tertentu jika ada
+### -Paksa
+Timpa file yang diberikan jika ada
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -76,7 +76,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
+### -Jalur
 Menentukan jalur file untuk menyimpan informasi autentikasi.
 
 ```yaml
@@ -92,8 +92,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan konteks Azure yang dibaca cmdlet ini.
-Jika Anda tidak menentukan konteksnya, cmdlet ini akan membaca dari konteks default lokal.
+Menentukan konteks Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan konteks, cmdlet ini akan dibaca dari konteks default lokal.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Models.AzureRmProfile
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
