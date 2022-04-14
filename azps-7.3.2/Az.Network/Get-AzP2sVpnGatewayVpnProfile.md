@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azp2
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzP2sVpnGatewayVpnProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzP2sVpnGatewayVpnProfile.md
-ms.openlocfilehash: f671dbc71bff398db1146b0816e5db77c5e06255
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 4df95cc71808fd8a16bf25bddaeb27556022336e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140386086"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141849038"
 ---
 # Get-AzP2sVpnGatewayVpnProfile
 
 ## SYNOPSIS
-Menghasilkan dan mengembalikan url SAS bagi pelanggan untuk mengunduh profil Vpn agar mengarahkan ke penyiapan klien situs agar mengarahkan ke konektivitas situs ke P2SVpnGateway.
+Menghasilkan dan mengembalikan url SAS bagi pelanggan untuk mengunduh profil Vpn untuk mengarahkan ke penyiapan klien situs agar mengarahkan ke konektivitas situs ke P2SVpnGateway.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azp2svpngatewayvpnprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzP2sVpnGatewayVpnProfile -ResourceId <String> [-AuthenticationMethod <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzP2sVpnGatewayVpnProfile** memungkinkan Anda menghasilkan dan mendapatkan url SAS untuk pelanggan agar mengunduh profil Vpn agar mengarah ke penyiapan klien situs agar mengarah ke konektivitas situs ke P2SVpnGateway. Arahkan ke penyiapan klien situs menggunakan profil Vpn ini yang hanya bisa tersambung ke P2SVpnGateway tertentu.
+Cmdlet **Get-AzP2sVpnGatewayVpnProfile** memungkinkan Anda menghasilkan dan mendapatkan url SAS bagi pelanggan untuk mengunduh profil Vpn agar penyiapan klien mengarahkan ke konektivitas situs ke P2SVpnGateway. Arahkan ke penyiapan klien situs menggunakan profil Vpn ini hanya dapat tersambung ke P2SVpnGateway tertentu ini.
 
 ## EXAMPLES
 
@@ -51,7 +54,7 @@ ProfileUrl : https://nfvprodsuppby.blob.core.windows.net/vpnprofileimmutable/8cf
              6hDY3x1HX958nimOjavnEjL2rlSuKIIW8Q%3D&st=2019-10-25T19%3A20%3A04Z&se=2019-10-25T20%3A20%3A04Z&sp=r&fileExtension=.zip
 ```
 
-Cmdlet **Get-AzP2sVpnGatewayVpnProfile** memungkinkan Anda menghasilkan dan mendapatkan url SAS untuk pelanggan agar mengunduh profil Vpn agar mengarah ke penyiapan klien situs agar mengarah ke konektivitas situs ke P2SVpnGateway. ProfileUrl memperlihatkan url SAS dari tempat pelanggan dapat mengunduh profil Vpn untuk mengarah ke penyiapan klien situs.
+Cmdlet **Get-AzP2sVpnGatewayVpnProfile** memungkinkan Anda menghasilkan dan mendapatkan url SAS bagi pelanggan untuk mengunduh profil Vpn agar penyiapan klien mengarahkan ke konektivitas situs ke P2SVpnGateway. ProfileUrl memperlihatkan url SAS dari mana pelanggan dapat mengunduh profil Vpn untuk mengarahkan ke penyiapan klien situs.
 
 ## PARAMETERS
 
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek gateway p2s vpn yang akan dimodifikasi
+Objek gateway vpn p2s yang akan diubah
 
 ```yaml
 Type: PSP2SVpnGateway
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya Azure dari P2SVpnGateway akan dimodifikasi.
+ID sumber daya Azure dari P2SVpnGateway untuk diubah.
 
 ```yaml
 Type: String
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

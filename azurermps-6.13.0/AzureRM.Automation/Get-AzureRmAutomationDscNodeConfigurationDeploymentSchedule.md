@@ -6,23 +6,23 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.autom
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRmAutomationDscNodeConfigurationDeploymentSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRmAutomationDscNodeConfigurationDeploymentSchedule.md
-ms.openlocfilehash: 79516047de170dce790bbd48f15589615e8f885051ac103e527f8f9733520adf
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: f29c4f5587b79fdc2c6eb03907ed5c1327406e8f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416553"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141845648"
 ---
 # Get-AzureRmAutomationDscNodeConfigurationDeploymentSchedule
 
 ## SYNOPSIS
-Mendapatkan jadwal pekerjaan penyebaran konfigurasi Node DSC dalam Otomatisasi.
+Mendapatkan jadwal pekerjaan penyebaran konfigurasi Node DSC di Otomatisasi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
 ## SYNTAX
 
-### SecaraSemua (Default)
+### ByAll (Default)
 ```
 Get-AzureRmAutomationDscNodeConfigurationDeploymentSchedule [-ResourceGroupName] <String>
  [-AutomationAccountName] <String> [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -35,11 +35,11 @@ Get-AzureRmAutomationDscNodeConfigurationDeploymentSchedule -JobScheduleId <Guid
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmAutomationDscNodeConfigurationDeployment** menggunakan konfigurasi node APS Desired State Configuration (DSC) dalam Otomatisasi Azure.
+Cmdlet **Get-AzureRmAutomationDscNodeConfigurationDeployment** menyebarkan konfigurasi node APS Desired State Configuration (DSC) dalam Azure Automation.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua jadwal penyebaran
+### Contoh 1: Dapatkan semua jadwal penyebaran
 ```
 PS C:\> Get-AzureRmAutomationDscNodeConfigurationDeploymentSchedule `
             -AutomationAccountName "Contoso01"  `
@@ -58,7 +58,7 @@ JobSchedule           : Microsoft.Azure.Commands.Automation.Model.JobSchedule
 RunbookName           : Deploy-NodeConfigurationToAutomationDscNodesV1
 ```
 
-### Contoh 2: Mendapatkan jadwal penyebaran
+### Contoh 2: Dapatkan jadwal penggunaan
 ```
 PS C:\> $js= Get-AzureRmAutomationDscNodeConfigurationDeploymentSchedule `
                  -AutomationAccountName "Contoso01" `
@@ -85,12 +85,12 @@ Parameters            : {AutomationAccountName, NodeConfigurationName, ResourceG
 HybridWorker          :
 ```
 
-Perintah di atas akan menggunakan konfigurasi node DSC yang bernama "Config01.Node1" ke array dua dimensi nama Node yang diberikan. Penyebaran dilakukan secara tahapan.
+Perintah di atas menyebarkan konfigurasi node DSC bernama "Config01.Node1" ke array dua dimensi Nama Node tertentu. Penyebaran terjadi secara bertahap.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang berisi konfigurasi DSC yang disusun cmdlet ini.
+Menentukan nama akun Otomatisasi yang berisi konfigurasi DSC yang dikompilasi cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobScheduleId
-Menentukan id Jadwal Pekerjaan dari pekerjaan penempatan terjadwal yang sudah ada.
+Menentukan id Jadwal Pekerjaan dari pekerjaan penyebaran terjadwal yang sudah ada.
 
 ```yaml
 Type: System.Guid
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini menyusun konfigurasi.
+Menentukan nama grup sumber daya tempat cmdlet ini menyusun konfigurasi.
 
 ```yaml
 Type: System.String
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

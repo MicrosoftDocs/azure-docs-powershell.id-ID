@@ -6,24 +6,24 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ChangeAnalysis/help/Get-AzChangeAnalysis.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ChangeAnalysis/help/Get-AzChangeAnalysis.md
 ms.openlocfilehash: 4e29440a852ba19c0150c7a9a0d26702f9f8e2c6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140312143"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141871970"
 ---
 # Get-AzChangeAnalysis
 
 ## SYNOPSIS
-Data pelanggan selalu disingkat jika kueri di tingkat langganan atau grup sumber daya.
-Untuk kueri pada sumber daya tunggal, data pelanggan disingginggkan jika pengguna tidak memiliki akses.
+Data pelanggan selalu disematkan jika kueri pada tingkat langganan atau grup sumber daya.
+Untuk kueri pada sumber daya tunggal, data pelanggan disematkan jika pengguna tidak memiliki akses.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.changeanalysis/get-azchangeanalysis) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.changeanalysis/get-azchangeanalysis) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Daftar2 (Default)
+### List2 (Default)
 ```
 Get-AzChangeAnalysis -EndTime <DateTime> -StartTime <DateTime> [-SubscriptionId <String[]>]
  [-SkipToken <String>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -42,12 +42,12 @@ Get-AzChangeAnalysis -ResourceGroupName <String> -EndTime <DateTime> -StartTime 
 ```
 
 ## DESCRIPTION
-Data pelanggan selalu disingkat jika kueri di tingkat langganan atau grup sumber daya.
-Untuk kueri pada sumber daya tunggal, data pelanggan disingginggkan jika pengguna tidak memiliki akses.
+Data pelanggan selalu disematkan jika kueri pada tingkat langganan atau grup sumber daya.
+Untuk kueri pada sumber daya tunggal, data pelanggan disematkan jika pengguna tidak memiliki akses.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan perubahan langganan dalam rentang waktu tertentu
+### Contoh 1: Mencantumkan perubahan langganan dalam rentang waktu yang ditentukan
 ```powershell
 PS C:\> $start = Get-Date -Date "2021-07-16T12:09:03.141Z" -AsUTC
 PS C:\> $end = Get-Date -Date "2021-07-18T12:09:03.141Z" -AsUTC
@@ -90,7 +90,7 @@ ARG_bd65a427-a683-4c89-bdd2-957596912e47_693e5c36-e7f4-44b0-9806-52d471a818f8_13
 Perintah ini mencantumkan perubahan langganan dalam rentang waktu yang ditentukan.
 `StartTime` dan `EndTime` merupakan format tanggal UTC.
 
-### Contoh 2: Mencantumkan perubahan grup sumber daya dalam rentang waktu tertentu
+### Contoh 2: Mencantumkan perubahan grup sumber daya dalam rentang waktu yang ditentukan
 ```powershell
 PS C:\> $start = Get-Date -Date "2021-07-16T12:09:03.141Z" -AsUTC
 PS C:\> $end = Get-Date -Date "2021-07-18T12:09:03.141Z" -AsUTC
@@ -101,10 +101,10 @@ Name                                                                            
 ARG_3dd199c6-cfec-421a-bcd3-797c08de63bc_0ee1aacb-523b-40bd-96a0-00fed2f47380_132711384626690000_132712151317657566 Microsoft.ChangeAnalysis/changes
 ```
 
-Perintah ini mencantumkan perubahan grup sumber daya dalam rentang waktu tertentu.
+Perintah ini mencantumkan perubahan grup sumber daya dalam rentang waktu yang ditentukan.
 `StartTime` dan `EndTime` merupakan format tanggal UTC.
 
-### Contoh 3: Mencantumkan perubahan sumber daya dalam rentang waktu tertentu
+### Contoh 3: Mencantumkan perubahan sumber daya dalam rentang waktu yang ditentukan
 ```powershell
 PS C:\> $start = Get-Date -Date "2021-07-16T12:09:03.141Z" -AsUTC
 PS C:\> $end = Get-Date -Date "2021-07-18T12:09:03.141Z" -AsUTC
@@ -115,7 +115,7 @@ Name                                                                            
 ARG_3dd199c6-cfec-421a-bcd3-797c08de63bc_0ee1aacb-523b-40bd-96a0-00fed2f47380_132711384626690000_132712151317657566 Microsoft.ChangeAnalysis/changes
 ```
 
-Perintah ini mencantumkan perubahan sumber daya dalam rentang waktu tertentu.
+Perintah ini mencantumkan perubahan sumber daya dalam rentang waktu yang ditentukan.
 `StartTime` dan `EndTime` merupakan format tanggal UTC.
 
 ## PARAMETERS
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -182,8 +182,8 @@ Accept wildcard characters: False
 ```
 
 ### -SkipToken
-Token lewati digunakan untuk melanjutkan mengambil item setelah operasi mengembalikan sebagian hasil.
-Jika respons sebelumnya berisi elemen nextLink, nilai elemen nextLink akan menyertakan parameter skipToken yang menentukan titik awal yang akan digunakan untuk panggilan berikutnya.
+Token lewati digunakan untuk melanjutkan mengambil item setelah operasi mengembalikan hasil parsial.
+Jika respons sebelumnya berisi elemen NextLink, nilai elemen NextLink akan menyertakan parameter skipToken yang menentukan titik awal untuk digunakan untuk panggilan berikutnya.
 
 ```yaml
 Type: System.String
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -259,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

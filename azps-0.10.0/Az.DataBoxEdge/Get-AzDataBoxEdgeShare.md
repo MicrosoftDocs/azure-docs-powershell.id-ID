@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeShare.md
 ms.openlocfilehash: 9bcc19d29bf372aaa0b1c59e23f53e80edde4d17
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132414067"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141874886"
 ---
 # Get-AzDataBoxEdgeShare
 
 ## SYNOPSIS
-Dapatkan jumlah file yang tersedia untuk satu perangkat.
+Mendapatkan berbagi yang tersedia untuk perangkat.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Get-AzDataBoxEdgeShare [[-Name] <String>] [-DefaultProfile <IAzureContextContain
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataBoxEdgeShare** mendapatkan bagian yang tersedia untuk perangkat Data Box Edge. Jika Nama disediakan, kotak ini akan mendapatkan berbagi menurut Nama.
+Cmdlet **Get-AzDataBoxEdgeShare** mendapatkan berbagi yang tersedia untuk perangkat Data Box Edge. Jika Nama disediakan, ini akan mendapatkan berbagi menurut Nama.
 
 ## EXAMPLES
 
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

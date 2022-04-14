@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewall.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewall.md
 ms.openlocfilehash: bfad744ba6a70163e5955362ed744e2dbe3057d3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139973031"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141800097"
 ---
 # New-AzFirewall
 
@@ -19,7 +19,7 @@ ms.locfileid: "139973031"
 Membuat Firewall baru dalam grup sumber daya.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azfirewall) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewall) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -64,7 +64,7 @@ New-AzFirewall -Name <String> -ResourceGroupName <String> -Location <String> -Vi
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzFirewall** membuat Azure Firewall.
+Cmdlet **New-AzFirewall** menciptakan Azure Firewall.
 
 ## EXAMPLES
 
@@ -76,11 +76,11 @@ $pip = Get-AzPublicIpAddress -ResourceGroupName $rgName -Name "publicIpName"
 New-AzFirewall -Name "azFw" -ResourceGroupName $rgName -Location centralus -VirtualNetwork $vnet -PublicIpAddress $pip
 ```
 
-Contoh ini membuat Firewall yang dilampirkan ke jaringan virtual "vnet" dalam grup sumber daya yang sama seperti firewall.
+Contoh ini membuat Firewall yang dilampirkan ke "vnet" jaringan virtual dalam grup sumber daya yang sama dengan firewall.
 Karena tidak ada aturan yang ditentukan, firewall akan memblokir semua lalu lintas (perilaku default).
-Threat Intel juga akan berjalan dalam mode default - Pemberitahuan - yang berarti lalu lintas berbahaya akan dicatat, tetapi tidak ditolak.
+Threat Intel juga akan berjalan dalam mode default - Peringatan - yang berarti lalu lintas berbahaya akan dicatat, tetapi tidak ditolak.
 
-### Contoh 2: Buat Firewall yang mengizinkan semua lalu lintas HTTPS
+### Contoh 2: Buat Firewall yang memungkinkan semua lalu lintas HTTPS
 ```powershell
 $rgName = "resourceGroupName"
 $vnet = Get-AzVirtualNetwork -ResourceGroupName $rgName -Name "vnet"
@@ -91,19 +91,19 @@ $ruleCollection = New-AzFirewallApplicationRuleCollection -Name RC1 -Priority 10
 New-AzFirewall -Name "azFw" -ResourceGroupName $rgName -Location centralus -VirtualNetwork $vnet -PublicIpAddress $pip -ApplicationRuleCollection $ruleCollection
 ```
 
-Contoh ini membuat Firewall yang mengizinkan semua lalu lintas HTTPS pada port 443.
-Threat Intel akan berjalan dalam mode default - Pemberitahuan - yang berarti lalu lintas berbahaya akan dicatat, tetapi tidak ditolak.
+Contoh ini membuat Firewall yang memungkinkan semua lalu lintas HTTPS di port 443.
+Threat Intel akan berjalan dalam mode default - Peringatan - yang berarti lalu lintas berbahaya akan dicatat, tetapi tidak ditolak.
 
-### Contoh 3: URLT - mengalihkan lalu lintas ditentukan menjadi 10.1.2.3:80 hingga 10.2.3.4:8080
+### Contoh 3: DNAT - mengalihkan lalu lintas yang ditujukan ke 10.1.2.3:80 ke 10.2.3.4:8080
 ```powershell
 $rule = New-AzFirewallNatRule -Name "natRule" -Protocol "TCP" -SourceAddress "*" -DestinationAddress "10.1.2.3" -DestinationPort "80" -TranslatedAddress "10.2.3.4" -TranslatedPort "8080"
 $ruleCollection = New-AzFirewallNatRuleCollection -Name "NatRuleCollection" -Priority 1000 -Rule $rule
 New-AzFirewall -Name "azFw" -ResourceGroupName "rg" -Location centralus -NatRuleCollection $ruleCollection -ThreatIntelMode Off
 ```
 
-Contoh ini membuat Firewall yang menerjemahkan IP tujuan dan port dari semua paket ditentukan menjadi 10.1.2.3:80 hingga 10.2.3.4:8080 Threat Intel dinonaktifkan dalam contoh ini.
+Contoh ini membuat Firewall yang menerjemahkan IP tujuan dan port semua paket yang ditakdirkan menjadi 10.1.2.3:80 hingga 10.2.3.4:8080 Threat Intel dinonaktifkan dalam contoh ini.
 
-### Contoh 4: Buat Firewall tanpa aturan dan dengan Threat Intel dalam mode Peringatan
+### Contoh 4: Membuat Firewall tanpa aturan dan dengan Threat Intel dalam mode Peringatan
 ```powershell
 $rgName = "resourceGroupName"
 $vnet = Get-AzVirtualNetwork -ResourceGroupName $rgName -Name "vnet"
@@ -111,10 +111,10 @@ $pip = Get-AzPublicIpAddress -ResourceGroupName $rgName -Name "publicIpName"
 New-AzFirewall -Name "azFw" -ResourceGroupName $rgName -Location centralus -VirtualNetwork $vnet -PublicIpAddress $pip -ThreatIntelMode Alert
 ```
 
-Contoh ini membuat Firewall yang memblokir semua lalu lintas (perilaku default) dan menjalankan Threat Intel dalam mode Peringatan.
-Ini berarti log pemberitahuan akan diterapkan untuk lalu lintas berbahaya sebelum menerapkan aturan lain (dalam kasus ini hanya aturan default - Tolak Semua)
+Contoh ini membuat Firewall yang memblokir semua lalu lintas (perilaku default) dan membuat Threat Intel berjalan dalam mode Peringatan.
+Ini berarti log peringatan dipancarkan untuk lalu lintas berbahaya sebelum menerapkan aturan lain (dalam hal ini hanya aturan default - Tolak Semua)
 
-### Contoh 5: Buat Firewall yang memungkinkan semua lalu lintas HTTP pada port 8080, tetapi memblokir domain berbahaya yang diidentifikasi oleh Threat Intel
+### Contoh 5: Buat Firewall yang memungkinkan semua lalu lintas HTTP di port 8080, tetapi memblokir domain berbahaya yang diidentifikasi oleh Threat Intel
 ```powershell
 $rgName = "resourceGroupName"
 $vnet = Get-AzVirtualNetwork -ResourceGroupName $rgName -Name "vnet"
@@ -125,8 +125,8 @@ $ruleCollection = New-AzFirewallApplicationRuleCollection -Name RC1 -Priority 10
 New-AzFirewall -Name "azFw" -ResourceGroupName $rgName -Location centralus -VirtualNetwork $vnet -PublicIpAddress $pip -ApplicationRuleCollection $ruleCollection -ThreatIntelMode Deny
 ```
 
-Contoh ini membuat Firewall yang memungkinkan semua lalu lintas HTTP pada port 8080 kecuali dianggap berbahaya oleh Threat Intel.
-Saat berjalan dalam mode Tolak, tidak seperti Pemberitahuan, lalu lintas yang dianggap berbahaya oleh Threat Intel tidak hanya masuk, tapi juga diblokir.
+Contoh ini membuat Firewall yang memungkinkan semua lalu lintas HTTP di port 8080 kecuali dianggap berbahaya oleh Threat Intel.
+Saat berjalan dalam mode Tolak, tidak seperti Peringatan, lalu lintas yang dianggap berbahaya oleh Threat Intel tidak hanya dicatat, tetapi juga diblokir.
 
 ### Contoh 6: Membuat Firewall tanpa aturan dan dengan zona ketersediaan
 ```powershell
@@ -138,7 +138,7 @@ New-AzFirewall -Name "azFw" -ResourceGroupName $rgName -Location centralus -Virt
 
 Contoh ini membuat Firewall dengan semua zona ketersediaan yang tersedia.
 
-### Contoh 7: Buat Firewall dengan dua atau beberapa Alamat IP Publik
+### Contoh 7: Membuat Firewall dengan dua atau beberapa Alamat IP Publik
 ```powershell
 $rgName = "resourceGroupName"
 $vnet = Get-AzVirtualNetwork -Name "vnet" -ResourceGroupName $rgName
@@ -149,7 +149,7 @@ New-AzFirewall -Name "azFw" -ResourceGroupName $rgName -Location centralus -Virt
 
 Contoh ini membuat Firewall yang dilampirkan ke jaringan virtual "vnet" dengan dua alamat IP publik.
 
-### Contoh 8: Buat Firewall yang memungkinkan lalu lintas MSSQL ke database SQL tertentu
+### Contoh 8: Membuat Firewall yang memungkinkan lalu lintas MSSQL ke database SQL tertentu
 ```powershell
 $rgName = "resourceGroupName"
 $vnet = Get-AzVirtualNetwork -ResourceGroupName $rgName -Name "vnet"
@@ -160,7 +160,7 @@ $ruleCollection = New-AzFirewallApplicationRuleCollection -Name RC1 -Priority 10
 New-AzFirewall -Name "azFw" -ResourceGroupName $rgName -Location centralus -VirtualNetwork $vnet -PublicIpAddress $pip -ApplicationRuleCollection $ruleCollection -ThreatIntelMode Deny
 ```
 
-Contoh ini membuat Firewall yang memungkinkan lalu lintas MSSQL pada port 1433 standar SQL database sql1.database.windows.net.
+Contoh ini membuat Firewall yang memungkinkan lalu lintas MSSQL pada port standar 1433 untuk SQL database sql1.database.windows.net.
 
 ### Contoh 9: Membuat Firewall yang dilampirkan ke hub virtual
 ```powershell
@@ -173,9 +173,9 @@ $vHubId = $vHub.Id
 New-AzFirewall -Name "azFw" -ResourceGroupName $rgName -Location centralus -SkuName AZFW_Hub -VirtualHubId $vHubId -FirewallPolicyId -$fpId
 ```
 
-Contoh ini membuat Firewall yang dilampirkan ke hub virtual "vHub". Kebijakan firewall $fp akan dilampirkan ke firewall. Firewall ini mengizinkan/menolak lalu lintas berdasarkan aturan yang disebutkan dalam kebijakan firewall $fp. Hub virtual dan firewall harus berada di kawasan yang sama.
+Contoh ini membuat Firewall yang dilampirkan ke hub virtual "vHub". Kebijakan firewall $fp akan dilampirkan ke firewall. Firewall ini memungkinkan/menolak lalu lintas berdasarkan aturan yang disebutkan dalam kebijakan firewall $fp. Hub virtual dan firewall harus berada di wilayah yang sama.
 
-### Contoh 10: Membuat Firewall dengan penyetelan daftar putih kecerdasan ancaman
+### Contoh 10: Membuat Firewall dengan penyiapan daftar putih kecerdasan ancaman
 ```powershell
 $rgName = "resourceGroupName"
 $vnet = Get-AzVirtualNetwork -ResourceGroupName $rgName -Name "vnet"
@@ -185,7 +185,7 @@ $tiWhitelist = New-AzFirewallThreatIntelWhitelist -FQDN @("www.microsoft.com") -
 New-AzFirewall -Name "azFw" -ResourceGroupName $rgName -Location centralus -VirtualNetwork $vnet -PublicIpAddress $pip -ThreatIntelWhitelist $tiWhitelist
 ```
 
-Contoh ini membuat Firewall yang whitelist "www.microsoft.com" dan "8.8.8.8" dari kecerdasan ancaman
+Contoh ini membuat Firewall yang memasukkan "www.microsoft.com" dan "8.8.8.8.8" dari kecerdasan ancaman
 
 ### Contoh 11: Membuat Firewall dengan penyetelan rentang privat yang dikustomisasi
 ```powershell
@@ -196,7 +196,7 @@ $pip = Get-AzPublicIpAddress -ResourceGroupName $rgName -Name "publicIpName"
 New-AzFirewall -Name "azFw" -ResourceGroupName $rgName -Location centralus -VirtualNetwork $vnet -PublicIpAddress $pip -PrivateRange @("99.99.99.0/24", "66.66.0.0/16")
 ```
 
-Contoh ini membuat Firewall yang memperlakukan "99.99.99.0/24" dan "66.66.0.0/16" sebagai rentang ip privat dan tidak akan melakukan lalu lintas ke alamat tersebut
+Contoh ini membuat Firewall yang memperlakukan "99.99.99.0/24" dan "66.66.0.0/16" sebagai rentang ip pribadi dan tidak akan menyaring lalu lintas ke alamat tersebut
 
 ### Contoh 12: Membuat Firewall dengan subnet manajemen dan alamat IP Publik
 ```powershell
@@ -208,11 +208,11 @@ $mgmtPip = Get-AzPublicIpAddress -ResourceGroupName $rgName -Name "managementPub
 New-AzFirewall -Name "azFw" -ResourceGroupName $rgName -Location centralus -VirtualNetwork $vnet -PublicIpAddress $pip -ManagementPublicIpAddress $mgmtPip
 ```
 
-Contoh ini membuat Firewall yang dilampirkan ke jaringan virtual "vnet" dalam grup sumber daya yang sama seperti firewall.
+Contoh ini membuat Firewall yang dilampirkan ke "vnet" jaringan virtual dalam grup sumber daya yang sama dengan firewall.
 Karena tidak ada aturan yang ditentukan, firewall akan memblokir semua lalu lintas (perilaku default).
-Threat Intel juga akan berjalan dalam mode default - Pemberitahuan - yang berarti lalu lintas berbahaya akan dicatat, tetapi tidak ditolak.
+Threat Intel juga akan berjalan dalam mode default - Peringatan - yang berarti lalu lintas berbahaya akan dicatat, tetapi tidak ditolak.
 
-Untuk mendukung skenario "paksa pengiriman", firewall ini akan menggunakan subnet "AzureFirewallManagementSubnet" dan alamat IP publik manajemen untuk lalu lintas manajemennya
+Untuk mendukung skenario "terowongan paksa", firewall ini akan menggunakan subnet "AzureFirewallManagementSubnet" dan alamat IP publik manajemen untuk lalu lintas manajemennya
 
 ### Contoh 13: Membuat Firewall dengan Kebijakan Firewall yang dilampirkan ke jaringan virtual
 ```powershell
@@ -223,8 +223,8 @@ $fp = Get-AzFirewallPolicy -ResourceGroupName $rgName -Name "fp"
 New-AzFirewall -Name "azFw" -ResourceGroupName $rgName -Location centralus -VirtualNetwork $vnet -PublicIpAddress $pip -FirewallPolicyId $fp
 ```
 
-Contoh ini membuat Firewall yang dilampirkan ke jaringan virtual "vnet" dalam grup sumber daya yang sama seperti firewall.
-Aturan dan kecerdasan ancaman yang akan diterapkan ke firewall akan diambil dari kebijakan firewall
+Contoh ini membuat Firewall yang dilampirkan ke "vnet" jaringan virtual dalam grup sumber daya yang sama dengan firewall.
+Aturan dan ancaman inteligensi yang akan diterapkan pada firewall akan diambil dari kebijakan firewall
 
 ### Contoh 14: Membuat Firewall dengan Proksi DNS dan Server DNS
 ```powershell
@@ -234,10 +234,10 @@ $pip = Get-AzPublicIpAddress -ResourceGroupName $rgName -Name "publicIpName"
 New-AzFirewall -Name "azFw" -ResourceGroupName $rgName -Location centralus -VirtualNetwork $vnet -PublicIpAddress $pip -DnsServer @("10.10.10.1", "20.20.20.2")
 ```
 
-Contoh ini membuat Firewall yang dilampirkan ke jaringan virtual "vnet" dalam grup sumber daya yang sama seperti firewall.
-Proksi DNS diaktifkan untuk firewall ini dan 2 Server DNS disediakan. Juga Haruskan Proksi DNS untuk aturan Jaringan diatur jadi jika ada aturan Jaringan dengan FQDN maka proksi DNS akan digunakan juga untuk mereka.
+Contoh ini membuat Firewall yang dilampirkan ke "vnet" jaringan virtual dalam grup sumber daya yang sama dengan firewall.
+Proksi DNS diaktifkan untuk firewall ini dan 2 Server DNS disediakan. Juga Haruskan Proksi DNS untuk Aturan jaringan diatur sehingga jika ada aturan Jaringan dengan FQDN maka proksi DNS juga akan digunakan untuk mereka.
 
-### Contoh 15: Buat Firewall dengan beberapa IP. Firewall dapat dikaitkan dengan Virtual Hub
+### Contoh 15: Membuat Firewall dengan beberapa IP. Firewall dapat dikaitkan dengan Hub Virtual
 ```powershell
 $rgName = "resourceGroupName"
 $vHub = Get-AzVirtualHub -Name "hub"
@@ -247,10 +247,10 @@ $hubIpAddresses = New-AzFirewallHubIpAddress -PublicIPs $fwpips
 $fw=New-AzFirewall -Name "azFw" -ResourceGroupName $rgName -Location westus -SkuName AZFW_Hub -HubIPAddresses $hubIpAddresses -VirtualHubId $vHubId
 ```
 
-Contoh ini membuat Firewall yang dilampirkan ke "hub" virtual hub dalam grup sumber daya yang sama dengan firewall.
+Contoh ini membuat Firewall yang dilampirkan ke "hub" hub virtual dalam grup sumber daya yang sama dengan firewall.
 Firewall akan ditetapkan 2 IP publik yang dibuat secara implisit.
 
-### Contoh 16: Buat Firewall dengan Izinkan FTP Aktif.
+### Contoh 16: Membuat Firewall dengan Allow Active FTP.
 ```
 $rgName = "resourceGroupName"
 $vnet = Get-AzVirtualNetwork -ResourceGroupName $rgName -Name "vnet"
@@ -258,7 +258,7 @@ $pip = Get-AzPublicIpAddress -ResourceGroupName $rgName -Name "publicIpName"
 New-AzFirewall -Name "azFw" -ResourceGroupName $rgName -Location centralus -VirtualNetwork $vnet -PublicIpAddress $pip -AllowActiveFTP
 ```
 
-Contoh ini membuat Firewall dengan bendera FTP aktif yang diizinkan.
+Contoh ini membuat Firewall dengan bendera FTP aktif yang diperbolehkan.
 
 ### Contoh 17: Membuat Firewall dengan subnet manajemen dan tidak ada alamat IP Publik data
 ```powershell
@@ -269,13 +269,13 @@ $mgmtPip = Get-AzPublicIpAddress -ResourceGroupName $rgName -Name "managementPub
 New-AzFirewall -Name "azFw" -ResourceGroupName $rgName -Location centralus -VirtualNetwork $vnet -ManagementPublicIpAddress $mgmtPip
 ```
 
-Contoh ini membuat firewall "memaksakan sambungan" firewall yang menggunakan subnet "AzureFirewallManagementSubnet" dan alamat IP publik manajemen untuk lalu lintas manajemennya.
-Dalam skenario ini, pengguna tidak harus menentukan DATA IP Publik jika mereka hanya menggunakan firewall untuk lalu lintas pribadi saja.
+Contoh ini membuat Firewall "terowongan paksa" yang menggunakan subnet "AzureFirewallManagementSubnet" dan alamat IP publik manajemen untuk lalu lintas manajemennya.
+Dalam skenario ini, pengguna tidak harus menentukan IP Publik data jika mereka hanya menggunakan firewall untuk lalu lintas pribadi saja.
 
 ## PARAMETERS
 
 ### -AllowActiveFTP
-Memungkinkan FTP Aktif di Firewall. Secara default dinonaktifkan.
+Memperbolehkan FTP Aktif pada Firewall. Secara default, file dinonaktifkan.
 
 
 ```yaml
@@ -306,7 +306,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -321,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -351,7 +351,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableDnsProxy
-Mengaktifkan Proksi DNS. Secara default dinonaktifkan.
+Aktifkan Proksi DNS. Secara default, file dinonaktifkan.
 
 
 ```yaml
@@ -381,8 +381,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -427,7 +427,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementPublicIpAddress
-Satu atau beberapa Alamat IP Publik yang akan digunakan untuk lalu lintas manajemen. Alamat IP publik harus menggunakan SKU Standar dan harus tergabung dalam grup sumber daya yang sama seperti Firewall.
+Satu atau beberapa Alamat IP Publik untuk digunakan untuk lalu lintas manajemen. Alamat IP Publik harus menggunakan SKU Standar dan harus tergabung dalam grup sumber daya yang sama dengan Firewall.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSPublicIpAddress
@@ -487,7 +487,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateRange
-Rentang IP privat yang lalu lintasnya tidak akan menjadi SNAT
+Rentang IP pribadi tempat lalu lintas tidak akan di-SNAT'ed
 
 ```yaml
 Type: System.String[]
@@ -502,7 +502,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddress
-Satu atau beberapa Alamat IP Publik. Alamat IP publik harus menggunakan SKU Standar dan harus tergabung dalam grup sumber daya yang sama seperti Firewall. Tidak ada input yang diperlukan untuk Firewall Data Paksa. 
+Satu atau beberapa Alamat IP Publik. Alamat IP Publik harus menggunakan SKU Standar dan harus tergabung dalam grup sumber daya yang sama dengan Firewall. Tidak perlu input untuk Firewall Terowongan Paksa. 
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSPublicIpAddress[]
@@ -517,7 +517,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpName
-Nama Ip Publik. IP Publik harus menggunakan SKU Standar dan harus tergabung dalam grup sumber daya yang sama seperti Firewall.
+Nama IP Publik. IP Publik harus menggunakan SKU Standar dan harus tergabung dalam grup sumber daya yang sama dengan Firewall.
 
 ```yaml
 Type: System.String
@@ -563,7 +563,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuTier
-Tingkatan sku untuk firewall
+Tingkat sku untuk firewall
 
 ```yaml
 Type: System.String
@@ -596,7 +596,7 @@ Accept wildcard characters: False
 ```
 
 ### -ThreatIntelMode
-Menentukan mode operasi untuk Threat Intelligence. Mode default adalah Peringatan, bukan Nonaktif.
+Menentukan mode operasi untuk Threat Intelligence. Mode default adalah Pemberitahuan, bukan Nonaktif.
 
 ```yaml
 Type: System.String
@@ -611,7 +611,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -ThreatIntelGoldlist
+### -ThreatIntelWhitelist
 Daftar putih untuk Threat Intelligence
 
 ```yaml
@@ -627,7 +627,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualHubId
-Hub virtual yang terhubung dengan firewall
+Hub virtual tempat firewall dilampirkan
 
 ```yaml
 Type: System.String
@@ -642,7 +642,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetwork
-Jaringan Virtual
+Virtual Network
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualNetwork
@@ -657,7 +657,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkName
-Menentukan nama jaringan virtual tempat Firewall akan digunakan. Jaringan virtual dan Firewall harus tergabung dalam grup sumber daya yang sama.
+Menentukan nama jaringan maya tempat Firewall akan digunakan. Jaringan virtual dan Firewall harus tergabung dalam grup sumber daya yang sama.
 
 ```yaml
 Type: System.String
@@ -671,8 +671,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Zone
-Daftar zona ketersediaan berisi asal firewall.
+### -Zona
+Daftar zona ketersediaan yang mencantumkan asal firewall.
 
 ```yaml
 Type: System.String[]
@@ -687,7 +687,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -703,7 +703,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -718,7 +718,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -748,7 +748,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzFirewall](./Get-AzFirewall.md)
 
-[Remove-AzFirewall](./Remove-AzFirewall.md)
+[Hapus-AzFirewall](./Remove-AzFirewall.md)
 
 [Set-AzFirewall](./Set-AzFirewall.md)
 

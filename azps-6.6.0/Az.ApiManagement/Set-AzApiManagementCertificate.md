@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementCertificate.md
 ms.openlocfilehash: 9413da1ea1998effdc2391d77640cd3617afbae9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140288833"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141808160"
 ---
 # Set-AzApiManagementCertificate
 
 ## SYNOPSIS
-Mengubah sertifikat Manajemen API yang dikonfigurasi untuk autentikasi bersama dengan backend.
+Mengubah sertifikat API Management yang dikonfigurasi untuk autentikasi bersama dengan backend.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementcertificate) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ Set-AzApiManagementCertificate -Context <PsApiManagementContext> -CertificateId 
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApiManagementCertificate** mengubah sertifikat Manajemen Azure API.
+Cmdlet **Set-AzApiManagementCertificate** mengubah sertifikat azure API Management.
 
 ## EXAMPLES
 
@@ -48,12 +48,12 @@ PS C:\>$ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Defa
 PS C:\>Set-AzApiManagementCertificate -Context $ApiMgmtContext -CertificateId "0123456789" -PfxFilePath "C:\contoso\certificates\apimanagementnew.pfx" -PfxPassword "2222"
 ```
 
-Perintah ini mengubah sertifikat Manajemen API yang ditentukan.
+Perintah ini mengubah sertifikat API Management yang ditentukan.
 
 ## PARAMETERS
 
 ### -CertificateId
-Menentukan ID sertifikat untuk diubah.
+Menentukan ID sertifikat yang akan diubah.
 
 ```yaml
 Type: System.String
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -PfxFilePath
-Menentukan jalur ke file sertifikat dalam format .pfx untuk membuat dan mengunggah.
+Menentukan jalur ke file sertifikat dalam format .pfx untuk dibuat dan diunggah.
 Parameter ini diperlukan jika Anda tidak menentukan parameter *PfxBytes* .
 
 ```yaml
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

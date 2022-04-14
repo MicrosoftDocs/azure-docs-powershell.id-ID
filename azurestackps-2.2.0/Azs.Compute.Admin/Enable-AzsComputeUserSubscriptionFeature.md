@@ -4,16 +4,16 @@ Module Name: Azs.Compute.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.compute.admin/enable-azscomputeusersubscriptionfeature
 schema: 2.0.0
 ms.openlocfilehash: 530ca83bf7601d33c8a3144d830e59f364621480
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136580062"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141876056"
 ---
 # Enable-AzsComputeUserSubscriptionFeature
 
 ## SYNOPSIS
-Aktifkan fitur penyewa langganan.
+Aktifkan fitur langganan penyewa.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ Enable-AzsComputeUserSubscriptionFeature -FeatureName <String> [-Location <Strin
  [<CommonParameters>]
 ```
 
-### Aktifkan
+### Mengaktifkan
 ```
 Enable-AzsComputeUserSubscriptionFeature -FeatureName <String>
  -TenantSubscriptionFeatureSetting \<ITenantSubscriptionFeatureSettings> [-Location <String>]
@@ -45,7 +45,7 @@ Enable-AzsComputeUserSubscriptionFeature -INPUTOBJECT \<IComputeAdminIdentity> [
 ```
 
 ## DESCRIPTION
-Aktifkan fitur penyewa langganan.
+Aktifkan fitur langganan penyewa.
 
 ## EXAMPLES
 
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.IComputeAdminIdentity
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,8 +134,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 
 ### -TenantSubscriptionFeatureSetting
 Pengaturan fitur untuk langganan penyewa.
-Untuk membuat, lihat bagian CATATAN untuk properti TENANTSUBSCRIPTIONFEATURESETTING dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti TENANTSUBSCRIPTIONFEATURESETTING dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20201101.ITenantSubscriptionFeatureSettings
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -233,22 +233,22 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT \<IComputeAdminIdentity> : Parameter Identitas
-  - `[DiskId <String>]`: Disk guid sebagai identitas.
+INPUTOBJECT \<IComputeAdminIdentity>: Parameter Identitas
+  - `[DiskId <String>]`: Disk memandu sebagai identitas.
   - `[FeatureName <String>]`: Nama fitur.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Lokasi sumber daya.
-  - `[MigrationId <String>]`: Nama guid pekerjaan migrasi.
+  - `[MigrationId <String>]`: Nama panduan pekerjaan migrasi.
   - `[Offer <String>]`: Nama penawaran.
   - `[Publisher <String>]`: Nama penerbit.
   - `[QuotaName <String>]`: Nama kuota.
   - `[ScaleUnitName <String>]`: Nama unit skala.
   - `[Sku <String>]`: Nama SKU.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
-  - `[Type <String>]`: Tipe ekstensi.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+  - `[Type <String>]`: Jenis ekstensi.
   - `[Version <String>]`: Versi sumber daya.
 
-TENANTSUBSCRIPTIONFEATURESETTING \<ITenantSubscriptionFeatureSettings> : Pengaturan fitur untuk langganan penyewa.
+TENANTSUBSCRIPTIONFEATURESETTING \<ITenantSubscriptionFeatureSettings>: Pengaturan fitur untuk langganan penyewa.
   - `[TenantSubscriptionId <String>]`: Pengidentifikasi langganan penyewa.
 
 ## RELATED LINKS

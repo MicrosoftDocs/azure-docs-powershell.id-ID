@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ResourceGraph/Commands.ResourceGraph/help/Search-AzureRmGraph.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ResourceGraph/Commands.ResourceGraph/help/Search-AzureRmGraph.md
 ms.openlocfilehash: 900722c15d1c7a6560ba1f498b9dd0d3981f899a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140860238"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141818049"
 ---
 # Search-AzureRmGraph
 
@@ -49,7 +49,7 @@ location   : westus2
 tags       :
 ```
 
-Kueri sumber daya sederhana meminta subset bidang sumber daya.
+Kueri sumber daya sederhana yang meminta subset bidang sumber daya.
 
 ### Contoh 2
 ```powershell
@@ -62,7 +62,7 @@ westcentralus     32
 westus            26
 ```
 
-Kueri kompleks pada sumber daya yang menampilkan pemilihan bidang, pemfilteran, dan peringkaan.
+Kueri kompleks tentang sumber daya yang menampilkan pemilihan bidang, pemfilteran dan ringkasan.
 
 ## PARAMETERS
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -Query
-Sumber Graph sumber daya.
+kueri Resource Graph.
 
 ```yaml
 Type: System.String
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lewati
-Mengabaikan objek N pertama, lalu mendapatkan objek yang tersisa.
+Mengabaikan objek N pertama lalu mendapatkan objek yang tersisa.
 
 ```yaml
 Type: System.Int32
@@ -126,9 +126,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -First
-Jumlah maksimum objek untuk dikembalikan. Nilai yang diperbolehkan: 1-5000.
-Nilai default adalah 100.
+### -Pertama
+Jumlah maksimum objek yang akan dikembalikan. Nilai yang diperbolehkan: 1-5000.
+Nilai defaultnya adalah 100.
 
 ```yaml
 Type: System.Int32
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

@@ -4,11 +4,11 @@ ms.assetid: 947D1C09-7CFA-4E97-A6B3-2DA9D7507F0C
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: b4a368e1c3ca04dc83ee4ffcae0d10e62efa201f
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427513"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141816612"
 ---
 # Get-WAPackVNet
 
@@ -35,7 +35,7 @@ Get-WAPackVNet -Name <String> [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-WAPackvNet** mendapatkan jaringan virtual.
+Cmdlet **Get-WAPackVNet** mendapatkan jaringan virtual.
 
 ## EXAMPLES
 
@@ -46,7 +46,7 @@ PS C:\> Get-WAPackVNet
 
 Perintah ini mendapatkan semua jaringan virtual.
 
-### Contoh 2: Mendapatkan jaringan virtual dengan menggunakan ID
+### Contoh 2: Dapatkan jaringan virtual dengan menggunakan ID
 ```
 PS C:\> Get-WAPackVNet -ID 66242D17-189F-480D-87CF-8E1D749998C8
 ```
@@ -63,7 +63,7 @@ Perintah ini mendapatkan jaringan virtual bernama ContosoVNet08.
 ## PARAMETERS
 
 ### -ID
-Menentukan ID unik jaringan virtual.
+Menentukan ID unik dari jaringan virtual.
 
 ```yaml
 Type: Guid
@@ -93,8 +93,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

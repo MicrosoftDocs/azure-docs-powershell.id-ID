@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/new-azlogzm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/New-AzLogzMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/New-AzLogzMonitor.md
-ms.openlocfilehash: 73ddae889456c51e20dd6051e1d211c3f6634ff4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3ee1a01ff284ab8a80a6c7d3ca11c3a34ffa089a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140549459"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141850208"
 ---
 # New-AzLogzMonitor
 
 ## SYNOPSIS
 Membuat sumber daya monitor.
-Operasi pembuatan ini dapat memakan waktu hingga 10 menit untuk selesai.
+Operasi pembuatan ini dapat memakan waktu hingga 10 menit untuk diselesaikan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.logz/new-azlogzmonitor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ New-AzLogzMonitor -Name <String> -ResourceGroupName <String> -Location <String> 
 
 ## DESCRIPTION
 Membuat sumber daya monitor.
-Operasi pembuatan ini dapat memakan waktu hingga 10 menit untuk selesai.
+Operasi pembuatan ini dapat memakan waktu hingga 10 menit untuk diselesaikan.
 
 ## EXAMPLES
 
@@ -45,7 +48,7 @@ Name          MonitoringStatus Location ResourceGroupName
 logz-pwsh01 Enabled          westus2  logz-rg-test
 ```
 
-Perintah ini akan membuat sumber daya monitor.
+Perintah ini membuat sumber daya monitor.
 
 ## PARAMETERS
 
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnterpriseAppId
-Id Aplikasi Enterprise yang digunakan untuk Masuk tunggal.
+Id Aplikasi Perusahaan yang digunakan untuk Masuk tunggal.
 
 ```yaml
 Type: System.String
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -MarketplaceSubscriptionStatus
-Bendera menentukan Status Langganan Marketplace dari sumber daya.
+Bendera yang menentukan Status Langganan Marketplace sumber daya.
 Jika pembayaran tidak dilakukan tepat waktu, sumber daya akan masuk dalam Status ditangguhkan.
 
 ```yaml
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonitoringStatus
-Bendera yang menentukan jika pemantauan sumber daya diaktifkan atau dinonaktifkan.
+Bendera yang menentukan apakah pemantauan sumber daya diaktifkan atau dinonaktifkan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Logz.Support.MonitoringStatus
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Memantau nama sumber daya
+Pantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlanBillingCycle
-siklus tagihan berbeda seperti BULANAN/MINGGUAN.
+siklus tagihan yang berbeda seperti BULANAN/MINGGUAN.
 ini mungkin enum
 
 ```yaml
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlanDetail
-id rencana seperti yang diterbitkan oleh Logz
+id rencana sebagaimana diterbitkan oleh Logz
 
 ```yaml
 Type: System.String
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlanUsageType
-tipe penggunaan berbeda seperti PAYG/COMMITTED.
+tipe penggunaan yang berbeda seperti PAYG/COMMITTED.
 ini mungkin enum
 
 ```yaml
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -369,7 +372,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserInfoPhoneNumber
-Telepon pengguna yang digunakan oleh Logz untuk menghubungi mereka jika perlu
+Telepon jumlah pengguna yang digunakan oleh Logz untuk menghubungi mereka jika diperlukan
 
 ```yaml
 Type: System.String
@@ -384,7 +387,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -400,7 +403,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -415,7 +418,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/get-azbi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzBillingInvoice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzBillingInvoice.md
-ms.openlocfilehash: 8feec5de235c2616a2803b6edb8d8bc2667d2a08
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2c0c7079864fd82679fd1f8e49a3205a15b696cf
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140572247"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142073785"
 ---
 # Get-AzBillingInvoice
 
 ## SYNOPSIS
 Dapatkan faktur tagihan langganan.
-Mendapatkan faktur tagihan dari akun tagihan dan profil tagihan
+Mendapatkan faktur tagihan akun tagihan dan profil tagihan
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.billing/get-azbillinginvoice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Get-AzBillingInvoice [-MaxCount <Int32>] [-GenerateDownloadUrl] [-DefaultProfile
 Get-AzBillingInvoice [-Latest] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>] [-BillingAccountName] [-BillingProfileName]
 ```
 
-### Tunggal
+### Satu
 ```
 Get-AzBillingInvoice -Name <System.Collections.Generic.List`1[System.String]>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -61,69 +64,69 @@ Dapatkan faktur langganan dengan nama yang ditentukan.
 Get-AzBillingInvoice
 ```
 
-Dapatkan semua faktur langganan yang tersedia dalam urutan kronologis terbalik yang dimulai dengan faktur terbaru tanpa Url unduhan. 
+Dapatkan semua faktur langganan yang tersedia dalam urutan kronologis terbalik dimulai dengan faktur terbaru tanpa mengunduh Url. 
 
 ### Contoh 4
 ```powershell
 Get-AzBillingInvoice -GenerateDownloadUrl -MaxCount 10
 ```
 
-Dapatkan 10 faktur terbaru dari langganan dan sertakan Url unduhan dalam hasil.
+Dapatkan 10 faktur terbaru langganan dan sertakan Url unduhan dalam hasilnya.
 
 ### Contoh 5
 ```powershell
 Get-AzBillingInvoice -Name 2017-02-18-432543543 -GenerateDownloadUrl
 ```
 
-Dapatkan faktur spesifik berdasarkan nama dan sertakan url unduhan dalam hasil.
+Dapatkan faktur tertentu berdasarkan nama dan sertakan url unduhan dalam hasilnya.
 
 ### Contoh 6
 ```powershell
 Get-AzBillingInvoice -BillingAccountName 00000000-0000-0000-0000-000000000000:00000000-0000-0000-0000-000000000000_0000-00-00 -GenerateDownloadUrl
 ```
 
-Dapatkan faktur dengan nama akun tagihan dan sertakan url unduhan untuk setiap faktur dalam hasilnya.
+Dapatkan faktur dengan menagih nama akun dan sertakan url unduhan untuk setiap faktur dalam hasilnya.
 
 ### Contoh 7
 ```powershell
 Get-AzBillingInvoice -Name 0000000000 -BillingAccountName 00000000-0000-0000-0000-000000000000:00000000-0000-0000-0000-000000000000_0000-00-00 -GenerateDownloadUrl
 ```
 
-Dapatkan faktur spesifik dengan nama faktur dan nama akun tagihan dan sertakan url unduhan untuk setiap faktur dalam hasil.
+Dapatkan faktur tertentu menurut nama faktur dan nama akun tagihan dan sertakan url unduh untuk setiap faktur dalam hasilnya.
 
 ### Contoh 8
 ```powershell
 Get-AzBillingInvoice -Latest -BillingAccountName 00000000-0000-0000-0000-000000000000:00000000-0000-0000-0000-000000000000_0000-00-00 -GenerateDownloadUrl
 ```
 
-Dapatkan faktur terbaru dengan nama akun tagihan dan sertakan url unduhan untuk faktur dalam hasilnya.
+Dapatkan faktur terbaru dengan menagih nama akun dan sertakan url unduhan untuk faktur dalam hasilnya.
 
 ### Contoh 9
 ```powershell
 Get-AzBillingInvoice -GenerateDownloadUrl -BillingAccountName 00000000-0000-0000-0000-000000000000:00000000-0000-0000-0000-000000000000_0000-00-00 -BillingProfileName 0000-0000-000-000 -MaxCount 10
 ```
 
-Dapatkan 10 faktur terbaru dari akun tagihan tertentu dan profil tagihan tertentu, sertakan URL unduhan dalam hasil.
+Dapatkan 10 faktur terbaru dari akun tagihan tertentu dan profil tagihan tertentu dan sertakan Url unduhan dalam hasilnya.
 
 ### Contoh 10
 ```powershell
 Get-AzBillingInvoice -Latest -GenerateDownloadUrl -BillingAccountName 00000000-0000-0000-0000-000000000000:00000000-0000-0000-0000-000000000000_0000-00-00 -BillingProfileName 0000-0000-000-000 
 ```
 
-Dapatkan faktur terbaru dengan nama akun tagihan dan nama profil tagihan dan sertakan url unduhan untuk faktur dalam hasilnya.
+Dapatkan faktur terbaru dengan menagih nama akun dan nama profil tagihan serta sertakan url unduhan untuk faktur dalam hasilnya.
 
 ### Contoh 11
 ```powershell
 Get-AzBillingInvoice -BillingAccountName 00000000-0000-0000-0000-000000000000:00000000-0000-0000-0000-000000000000_0000-00-00 -BillingProfileName 0000-0000-000-000 -PeriodStartDate 0000-00-00 -PeriodEndDate 0000-00-00
 ```
 
-Dapatkan faktur dengan nama akun tagihan dan nama profil tagihan untuk periode tagihan yang ditentukan oleh tanggal mulai dan periode Tanggal akhir.
+Dapatkan faktur dengan menagih nama akun dan nama profil tagihan untuk periode tagihan yang ditentukan oleh tanggal perioStart dan tanggal periodEnd.
 
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxCount
-Menentukan jumlah maksimum rekaman untuk dikembalikan.
+Menentukan jumlah maksimum rekaman yang akan dikembalikan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama faktur tertentu untuk mendapatkan atau yang paling baru jika tidak ditentukan.
+Nama faktur tertentu untuk mendapatkan atau yang terbaru jika tidak ditentukan.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeriodStartDate
-Tanggal mulai untuk faktur.
+Tanggal mulai faktur.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -260,11 +263,11 @@ Accept wildcard characters: False
 
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

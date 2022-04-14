@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Restore-AzApiManagement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Restore-AzApiManagement.md
 ms.openlocfilehash: ebab3e8527dc7e89451a1dfe8e8dcb5aeeef9e7d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139980825"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141808214"
 ---
 # Restore-AzApiManagement
 
 ## SYNOPSIS
-Memulihkan Layanan Manajemen API dari penyedia yang Azure Storage blob.
+Memulihkan Layanan API Management dari blob Azure Storage yang ditentukan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/restore-azapimanagement) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/restore-azapimanagement) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,11 +30,11 @@ Restore-AzApiManagement -ResourceGroupName <String> -Name <String> [-StorageCont
 ```
 
 ## DESCRIPTION
-Cmdlet **Restore-AzApiManagement** memulihkan Layanan Manajemen API dari cadangan tertentu yang berada di Azure Storage blob.
+Cmdlet **Restore-AzApiManagement** memulihkan Layanan API Management dari cadangan tertentu yang berada dalam blob Azure Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Memulihkan layanan Manajemen API
+### Contoh 1: Memulihkan layanan API Management
 ```
 PS C:\>New-AzStorageAccount -StorageAccountName "ContosoStorage" -Location $location -ResourceGroupName "ContosoGroup02" -Type Standard_LRS
 PS C:\>$storageKey = (Get-AzStorageAccountKey -ResourceGroupName "ContosoGroup02" -StorageAccountName "ContosoStorage")[0].Value
@@ -42,7 +42,7 @@ PS C:\>$storageContext = New-AzStorageContext -StorageAccountName "ContosoStorag
 PS C:\>Restore-AzApiManagement -ResourceGroupName "ContosoGroup" -Name "RestoredContosoApi" -StorageContext $StorageContext -SourceContainerName "ContosoBackups" -SourceBlobName "ContosoBackup.apimbackup"
 ```
 
-Perintah ini memulihkan layanan Manajemen API dari blob penyimpanan Azure.
+Perintah ini memulihkan layanan API Management dari blob penyimpanan Azure.
 
 ## PARAMETERS
 
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama instans Manajemen API yang akan dipulihkan dengan cadangan.
+Menentukan nama instans API Management yang akan dipulihkan dengan cadangan.
 
 ```yaml
 Type: System.String
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana Manajemen API ada.
+Menentukan nama grup sumber daya di mana API Management ada.
 
 ```yaml
 Type: System.String
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -173,6 +173,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzApiManagement](./New-AzApiManagement.md)
 
-[Remove-AzApiManagement](./Remove-AzApiManagement.md)
+[Hapus-AzApiManagement](./Remove-AzApiManagement.md)
 
 

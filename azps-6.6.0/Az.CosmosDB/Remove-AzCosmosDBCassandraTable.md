@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzCosmosDBCassandraTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzCosmosDBCassandraTable.md
 ms.openlocfilehash: 8d7d63a6cdca3184968892a73284a6c823a162ed
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140310721"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141868676"
 ---
 # Remove-AzCosmosDBCassandraTable
 
 ## SYNOPSIS
-Menghapus Tabel CosmosDB CosmosDB.
+Menghapus Tabel CosmosDB Cassandra.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/remove-azcosmosdbcassandratable) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/remove-azcosmosdbcassandratable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Remove-AzCosmosDBCassandraTable -InputObject <PSCassandraTableGetResults> [-Pass
 ```
 
 ## DESCRIPTION
-**Remove-AzCosmosDBCassosaTable** menghapus Tabel CosmosDB Pivot.
+**Remove-AzCosmosDBCassandraTable** menghapus Tabel CosmosDB Cassandra.
 
 ## EXAMPLES
 
@@ -45,11 +45,11 @@ Remove-AzCosmosDBCassandraTable -InputObject <PSCassandraTableGetResults> [-Pass
 PS C:\> Remove-AzCosmosDBCassandraTable -ResourceGroupName {resourceGroup} -AccountName {account} -KeyspaceName {keyspace} -Name {tableName}
 ```
 
-Cmdlet akan mengembalikan objek tipe bool(ketika -PassThru diteruskan) yang true, jika penghapusan berhasil.
+Cmdlet mengembalikan objek type bool(when -PassThru is passed) yang true, jika penghapusan berhasil.
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun database Cosmos DB.
 
 ```yaml
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Table Pivot Pivot.
+Objek Tabel Cassandra.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSCassandraTableGetResults
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyspaceName
-Space, Keyspace, Dana, Dan lain-lain
+Nama Keyspace Cassandra.
 
 ```yaml
 Type: System.String
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Tabel Excel.
+Nama Tabel Cassandra.
 
 ```yaml
 Type: System.String
@@ -125,8 +125,8 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Diatur ke true jika pengguna ingin menerima output.
-Output adalah true jika operasi berhasil dan kesalahan akan dihasilkan jika tidak.
+Untuk diatur ke true jika pengguna ingin menerima output.
+Output adalah true jika operasi berhasil dan kesalahan dilemparkan jika tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,11 +187,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.CosmosDB.Models.PSCassmicrosoftTableGetResults
+### Microsoft.Azure.Commands.CosmosDB.Models.PSCassandraTableGetResults
 
 ## OUTPUTS
 

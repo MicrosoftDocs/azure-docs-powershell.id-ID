@@ -6,26 +6,26 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Rename-AzContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Rename-AzContext.md
 ms.openlocfilehash: 00f9b84c1e3e8a5bb9a506952cce9ab45e55b9e9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132413879"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141875462"
 ---
 # Rename-AzContext
 
 ## SYNOPSIS
-Ganti nama konteks Azure.  Secara default konteks diberi nama berdasarkan akun pengguna dan langganan.
+Mengganti nama konteks Azure.  Secara default konteks dinamai menurut akun pengguna dan langganan.
 
 ## SYNTAX
 
-### RenameByInputObject (Default)
+### Ganti namaByInputObject (Default)
 ```
 Rename-AzContext -InputObject <PSAzureContext> [-Force] [-PassThru] [-Scope <ContextModificationScope>]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [-TargetName] <String> [<CommonParameters>]
 ```
 
-### RenameByName
+### Ganti NamaByName
 ```
 Rename-AzContext [-Force] [-PassThru] [-Scope <ContextModificationScope>]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [-SourceName] <String> [-TargetName] <String>
@@ -33,7 +33,7 @@ Rename-AzContext [-Force] [-PassThru] [-Scope <ContextModificationScope>]
 ```
 
 ## DESCRIPTION
-Ganti nama konteks Azure.  Secara default konteks diberi nama berdasarkan akun pengguna dan langganan.
+Mengganti nama konteks Azure.  Secara default konteks dinamai menurut akun pengguna dan langganan.
 
 ## EXAMPLES
 
@@ -42,19 +42,19 @@ Ganti nama konteks Azure.  Secara default konteks diberi nama berdasarkan akun p
 PS C:\> Rename-AzContext -SourceName "[user1@contoso.org; 12345-6789-2345-3567890]" -TargetName "Work"
 ```
 
-Ganti nama konteks untuk 'user1@contoso.org' dengan langganan '12345-6789-2345-3567890' menjadi 'Kerja'.  Setelah perintah ini, Anda akan bisa menargetkan konteks menggunakan 'Select-AzContext Work'.  Perhatikan bahwa Anda dapat tab melalui nilai untuk 'SourceName' menggunakan penyelesaian tab.
+Ganti nama konteks untuk 'user1@contoso.org' dengan langganan '12345-6789-2345-3567890' menjadi 'Kerja'.  Setelah perintah ini, Anda akan dapat menargetkan konteks menggunakan 'Select-AzContext Work'.  Perhatikan bahwa Anda dapat menelusuri nilai untuk 'SourceName' menggunakan penyelesaian tab.
 
 ### Mengganti nama konteks menggunakan parameter posisi
 ```
 PS C:\> Rename-AzContext "My context" "Work"
 ```
 
-Ganti nama konteks bernama "Konteks saya" menjadi "Kerja".  Setelah perintah ini, Anda akan dapat menargetkan konteks menggunakan Select-AzContext Bekerja
+Ganti nama konteks yang bernama "Konteks saya" menjadi "Kerja".  Setelah perintah ini, Anda akan dapat menargetkan konteks menggunakan Select-AzContext Pekerjaan
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -68,7 +68,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Mengganti nama konteks meskipun konteks target sudah ada
 
 ```yaml
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek konteks, biasanya melewati saluran.
+Objek konteks, biasanya melewati pipa.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Profile.Models.Core.PSAzureContext
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Menentukan lingkup perubahan konteks, misalnya, apakah perubahan diterapkan hanya pada proses saat ini, atau pada semua sesi yang dimulai oleh pengguna ini
+Menentukan lingkup perubahan konteks, misalnya, apakah perubahan hanya berlaku untuk proses saat ini, atau ke semua sesi yang dimulai oleh pengguna ini
 
 ```yaml
 Type: Microsoft.Azure.Commands.Profile.Common.ContextModificationScope
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

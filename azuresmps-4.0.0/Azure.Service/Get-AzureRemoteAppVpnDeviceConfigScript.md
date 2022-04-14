@@ -4,16 +4,16 @@ ms.assetid: D0E8B2BD-D68F-477A-9D66-C27AB737960D
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 0799cdc9cd89743e99acdec4a228a80024410f55
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426554"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141816710"
 ---
 # Get-AzureRemoteAppVpnDeviceConfigScript
 
 ## SYNOPSIS
-Mengambil skrip konfigurasi untuk perangkat VPN Azure RemoteApp.
+Mengambil skrip konfigurasi untuk perangkat Azure RemoteApp VPN.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -29,14 +29,14 @@ Cmdlet **Get-AzureRemoteAppVpnDeviceConfigScript** mengambil skrip konfigurasi u
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan skrip konfigurasi untuk perangkat VPN
+### Contoh 1: Dapatkan skrip konfigurasi untuk perangkat VPN
 ```
 PS C:\> Get-AzureRemoteAppVpnDeviceConfigScript -VNetName "ContosoVNet" -Vendor "Microsoft Corporation" -OSFamily "Windows Server 2012 R2"
 ```
 
 Perintah ini mengembalikan skrip atau file konfigurasi yang digunakan untuk mengonfigurasi perangkat VPN untuk jaringan virtual bernama ContosoVNet.
 Skrip atau file konfigurasi ini harus dijalankan atau dimuat ke perangkat VPN dengan cara umum untuk perangkat tersebut.
-Hubungi vendor perangkat VPN untuk persyaratan unik bagi setiap perangkat.
+Hubungi vendor perangkat VPN untuk persyaratan unik untuk setiap perangkat.
 
 ## PARAMETERS
 
@@ -71,8 +71,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

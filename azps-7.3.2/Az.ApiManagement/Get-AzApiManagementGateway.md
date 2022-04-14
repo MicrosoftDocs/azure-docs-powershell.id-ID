@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementGateway.md
-ms.openlocfilehash: 8d856460727cfa85c396cbde633a2d1179709688
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c5e4a88a33535a986c2cbcbabaf723e15fa8291d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140558229"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141793130"
 ---
 # Get-AzApiManagementGateway
 
 ## SYNOPSIS
 Mendapatkan semua atau gateway manajemen API tertentu.
 
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementgateway) untuk informasi terbaru.
+
 ## SYNTAX
 
-### GetAllGateway (Default)
+### GetAllGateways (Default)
 ```
 Get-AzApiManagementGateway -Context <PsApiManagementContext> [-DefaultProfile <IAzureContextContainer>]
  [<CommonParameters>]
@@ -32,25 +35,25 @@ Get-AzApiManagementGateway -Context <PsApiManagementContext> -GatewayId <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApiManagementGateway** mendapatkan semua atau Gateway manajemen API tertentu.
+Cmdlet **Get-AzApiManagementGateway** mendapatkan semua atau gateway manajemen API tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua gateway
+### Contoh 1: Dapatkan semua gateway
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementGateway -Context $apimContext
 ```
 
-Perintah ini akan mendapatkan semua gateway.
+Perintah ini mendapatkan semua gateway.
 
-### Contoh 2: Dapatkan gateway dengan ID
+### Contoh 2: Mendapatkan gateway menurut ID
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementGateway -Context $apimContext -GatewayId "0123456789"
 ```
 
-Perintah ini akan mendapatkan gateway 0123456789.
+Perintah ini mendapatkan gateway 0123456789.
 
 ## PARAMETERS
 
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 
 ### -GatewayId
 Pengidentifikasi gateway.
-Jika ditentukan akan mencoba menemukan gateway berdasarkan pengidentifikasi.
+Jika ditentukan akan mencoba menemukan gateway oleh pengidentifikasi.
 
 ```yaml
 Type: System.String
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

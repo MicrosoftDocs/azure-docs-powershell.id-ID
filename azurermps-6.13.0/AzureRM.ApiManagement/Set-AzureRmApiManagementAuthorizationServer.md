@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.apima
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Set-AzureRmApiManagementAuthorizationServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Set-AzureRmApiManagementAuthorizationServer.md
-ms.openlocfilehash: 7e07ffbee0e1fce9c5fed3f139ff55885e708127f2281974fa4c64da4d2be2c1
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 684c68b1af37ae1ae64d8ce3d9ea5b35ec008a1e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416557"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141845834"
 ---
 # Set-AzureRmApiManagementAuthorizationServer
 
@@ -35,7 +35,7 @@ Set-AzureRmApiManagementAuthorizationServer -Context <PsApiManagementContext> -S
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmApiManagementAuthorizationServer** memodifikasi detail server otorisasi Manajemen Azure API.
+Cmdlet **Set-AzureRmApiManagementAuthorizationServer** mengubah detail server otorisasi Azure API Management.
 
 ## EXAMPLES
 
@@ -45,13 +45,13 @@ PS C:\>$ApiMgmtContext = New-AzureRmApiManagementContext -ResourceGroupName "Api
 PS C:\>Set-AzureRmApiManagementAuthrizarionServer -Context $ApiMgmtContext -ServerId 0123456789 -Name "Contoso OAuth2 server" -ClientRegistrationPageUrl "https://contoso/signupv2" -AuthorizationEndpointUrl "https://contoso/authv2" -TokenEndpointUrl "https://contoso/tokenv2" -ClientId "clientid" -ClientSecret "e041ed1b660b4eadbad5a29d066e6e88" -AuthorizationRequestMethods @('Get') -GrantTypes @( 'AuthorizationCode', 'Implicit', 'ClientCredentials') -ClientAuthenticationMethods @('Basic') -TokenBodyParameters @{'par1'='val1'} -AccessTokenSendingMethods @('AuthorizationHeader')
 ```
 
-Perintah ini memodifikasi server otorisasi Manajemen API yang ditentukan.
+Perintah ini mengubah server otorisasi API Management yang ditentukan.
 
 ## PARAMETERS
 
 ### -AccessTokenSendingMethods
 Menentukan array metode untuk mengirim token akses.
-psdx_paramvalues KepalaOtor dan Kueri.
+psdx_paramvalues AuthorizationHeader dan Query.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementAccessTokenSendingMethod[]
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -AuthorizationEndpointUrl
-Menentukan titik akhir otorisasi untuk mengautentikasi pemilik sumber daya dan mendapatkan izin.
+Menentukan titik akhir otorisasi untuk mengautentikasi pemilik sumber daya dan mendapatkan hibah otorisasi.
 
 ```yaml
 Type: System.String
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 
 ### -ClientAuthenticationMethods
 Menentukan array metode autentikasi klien.
-psdx_paramvalues Dasar dan Badan.
+psdx_paramvalues Dasar dan Tubuh.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementClientAuthenticationMethod[]
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Menentukan objek **PsApiManagementContext.**
+Menentukan objek **PsApiManagementContext** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -222,9 +222,9 @@ Accept wildcard characters: False
 ```
 
 ### -GrantTypes
-Menentukan array tipe pemberian.
+Menentukan array tipe hibah.
 psdx_paramvalues
-- KodeOtorisasi
+- Kode Otorisasi
 - ClientCredentials 
 - Implisit 
 - ResourceOwnerPassword
@@ -274,7 +274,7 @@ Accept wildcard characters: False
 
 ### -ResourceOwnerPassword
 Menentukan kata sandi pemilik sumber daya.
-Anda harus menentukan parameter ini jika ResourceOwnerPassword ditentukan oleh parameter *GrantTypes.*
+Anda harus menentukan parameter ini jika ResourceOwnerPassword ditentukan oleh parameter *GrantTypes* .
 
 ```yaml
 Type: System.String
@@ -290,7 +290,7 @@ Accept wildcard characters: False
 
 ### -ResourceOwnerUsername
 Menentukan nama pengguna pemilik sumber daya.
-Anda harus menentukan parameter ini jika ResourceOwnerPassword ditentukan oleh parameter *GrantTypes.*
+Anda harus menentukan parameter ini jika ResourceOwnerPassword ditentukan oleh parameter *GrantTypes* .
 
 ```yaml
 Type: System.String
@@ -320,7 +320,7 @@ Accept wildcard characters: False
 ```
 
 ### -SupportState
-Menunjukkan apakah akan mendukung parameter *State.*
+Menunjukkan apakah akan mendukung parameter *Negara Bagian* .
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -334,8 +334,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -TokenParameters
-Menentukan parameter tubuh tambahan menggunakan format application/x-www-form-urlencoded.
+### -TokenBodyParameters
+Menentukan parameter isi tambahan menggunakan format aplikasi/x-www-form-urlencoded.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -350,7 +350,7 @@ Accept wildcard characters: False
 ```
 
 ### -TokenEndpointUrl
-Menentukan titik akhir token untuk klien untuk mendapatkan token akses sebagai ganti untuk memberikan otorisasi atau token refresh.
+Menentukan titik akhir token bagi klien untuk mendapatkan token akses dengan imbalan menyajikan hibah otorisasi atau token refresh.
 
 ```yaml
 Type: System.String
@@ -365,7 +365,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -381,7 +381,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Hashtable
 
-### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementAccessTokenSendingMethod[]
 
@@ -397,8 +397,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmApiManagementAuthorizationServer](./Get-AzureRmApiManagementAuthorizationServer.md)
 
-[New-AzureRmApiManagementAuthorizationServer](./New-AzureRmApiManagementAuthorizationServer.md)
+[AzureRmApiManagementAuthorizationServer baru](./New-AzureRmApiManagementAuthorizationServer.md)
 
-[Remove-AzureRmApiManagementAuthorizationServer](./Remove-AzureRmApiManagementAuthorizationServer.md)
+[Hapus-AzureRmApiManagementAuthorizationServer](./Remove-AzureRmApiManagementAuthorizationServer.md)
 
 

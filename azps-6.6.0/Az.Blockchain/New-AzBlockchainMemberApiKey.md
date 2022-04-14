@@ -6,23 +6,23 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blockchain/help/New-AzBlockchainMemberApiKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blockchain/help/New-AzBlockchainMemberApiKey.md
 ms.openlocfilehash: 6b8aae4729977b456bf51a60245c69e291b333cb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140486571"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141806990"
 ---
 # New-AzBlockchainMemberApiKey
 
 ## SYNOPSIS
-Meregenerasi kunci API untuk anggota regenerasi api untuk anggota regenerasi.
+Regenerasi kunci API untuk anggota blockchain.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.blockchain/new-azblockchainmemberapikey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.blockchain/new-azblockchainmemberapikey) untuk informasi terbaru.
 
 ## SYNTAX
 
-### RegenerasiExpanded (Default)
+### RegenerateExpanded (Default)
 ```
 New-AzBlockchainMemberApiKey -BlockchainMemberName <String> -ResourceGroupName <String>
  [-SubscriptionId <String>] [-KeyName <String>] [-Value <String>] [-DefaultProfile <PSObject>] [-Confirm]
@@ -36,11 +36,11 @@ New-AzBlockchainMemberApiKey -InputObject <IBlockchainIdentity> [-KeyName <Strin
 ```
 
 ## DESCRIPTION
-Meregenerasi kunci API untuk anggota regenerasi api untuk anggota regenerasi.
+Regenerasi kunci API untuk anggota blockchain.
 
 ## EXAMPLES
 
-### Contoh 1: Regenerasi Api keys for a keyboard member using name
+### Contoh 1: Meregenerasi kunci Api untuk anggota blockchain menggunakan nama
 ```powershell
 PS C:\> $keyPair = Get-AzBlockchainMemberApiKey -BlockchainMemberName myblockchainhlqc92 -ResourceGroupName bc-rg
 PS C:\> New-AzBlockchainMemberApiKey -BlockchainMemberName myblockchainhlqc92 -ResourceGroupName bc-rg -KeyName $keyPair[0].KeyName
@@ -51,9 +51,9 @@ key1    D7wyajHMZcBw4MndMgytqanz
 key2    eu9kx94TKH506R0i4JhYBmsx
 ```
 
-Perintah ini meregenerasi tombol Api untuk anggota piano menggunakan nama, grup sumber daya.
+Perintah ini meregenerasi kunci Api untuk anggota blockchain menggunakan nama, grup sumber daya.
 
-### Contoh 2: Regenerasi Api keys untuk anggota templat menggunakan idenity
+### Contoh 2: Meregenerasi kunci Api untuk anggota blockchain menggunakan idenitas
 ```powershell
 PS C:\> $keyPair = Get-AzBlockchainMemberApiKey -BlockchainMemberName myblockchainhlqc92 -ResourceGroupName bc-rg
 PS C:\> $bcMember = Get-AzBlockchainMember -Name myblockchainhlqc92 -ResourceGroupName bc-rg
@@ -65,12 +65,12 @@ key1    DdsyaaHsdasd46asd8Bw4Mnd
 key2    eu9kx94TKH506R0i4JhYBmsx
 ```
 
-Perintah ini meregenerasi tombol Api untuk anggotapm menggunakan identitas.
+Perintah ini meregenerasi kunci Api untuk anggota blockchain yang menggunakan identitas.
 
 ## PARAMETERS
 
-### -TemplatMemberName
-Nama anggota Blokir.
+### -BlockchainMemberName
+Nama anggota Blockchain.
 
 ```yaml
 Type: System.String
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Blockchain.Models.IBlockchainIdentity
@@ -130,8 +130,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya tersebut.
-Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+Nama grup sumber daya yang berisi sumber daya.
+Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
 
 ```yaml
 Type: System.String
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+ID langganan adalah bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -208,15 +208,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Cmdlets.Cmdlets.Models.IBlockchainIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.Blockchain.Models.IBlockchainIdentity
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Cmdlets.Cmdlets.Models.Api20180601Preview.IApiKey
+### Microsoft.Azure.PowerShell.Cmdlets.Blockchain.Models.Api20180601Preview.IApiKey
 
 ## CATATAN
 
@@ -228,13 +228,13 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IBlockchainIdentity>: Parameter Identitas
-  - `[BlockchainMemberName <String>]`: Nama anggota Server 365.
+  - `[BlockchainMemberName <String>]`: Nama anggota Blockchain.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama lokasi.
-  - `[OperationId <String>]`: Id Operasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya tersebut. Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
-  - `[SubscriptionId <String>]`: Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
-  - `[TransactionNodeName <String>]`: Nama node transaksi.
+  - `[OperationId <String>]`: Operation Id.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
+  - `[SubscriptionId <String>]`: Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan adalah bagian dari URI untuk setiap panggilan layanan.
+  - `[TransactionNodeName <String>]`: Nama simpul transaksi.
 
 ## RELATED LINKS
 

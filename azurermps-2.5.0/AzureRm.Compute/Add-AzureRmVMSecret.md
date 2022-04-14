@@ -5,11 +5,11 @@ ms.assetid: 5008F83F-AF3E-47CF-99A3-55129E654128
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/add-azurermvmsecret
 schema: 2.0.0
 ms.openlocfilehash: bd37ad995d3401df6034799c31dd7a05ead58d4e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422012"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142104427"
 ---
 # Add-AzureRmVMSecret
 
@@ -27,14 +27,14 @@ Add-AzureRmVMSecret [-VM] <PSVirtualMachine> [[-SourceVaultId] <String>] [[-Cert
 
 ## DESCRIPTION
 Cmdlet **Add-AzureRmVMSecret** menambahkan rahasia ke mesin virtual.
-Nilai ini memungkinkan Anda menambahkan sertifikat ke komputer virtual.
-Rahasia harus disimpan di Key Vault.
+Nilai ini memungkinkan Anda menambahkan sertifikat ke mesin virtual.
+Rahasia itu harus disimpan dalam Key Vault.
 Untuk informasi selengkapnya tentang Key Vault, lihat [Apa itu Azure Key Vault?](https://azure.microsoft.com/en-us/documentation/articles/key-vault-whatis/).
-Untuk informasi selengkapnya tentang cmdlet, lihat [Cmdlet Azure Key Vault dalam](/powershell/module/azurerm.keyvault/) pustaka Jaringan Pengembang Microsoft atau cmdlet [Set-AzureKeyVaultSecret.](/powershell/module/azurerm.keyvault/set-azurekeyvaultsecret)
+Untuk informasi selengkapnya tentang cmdlet, lihat [Cmdlet Azure Key Vault](/powershell/module/azurerm.keyvault/) di pustaka Jaringan Pengembang Microsoft atau cmdlet [Set-AzureKeyVaultSecret](/powershell/module/azurerm.keyvault/set-azurekeyvaultsecret).
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan rahasia ke mesin virtual
+### Contoh 1: Menambahkan rahasia ke mesin virtual
 ```
 PS C:\> $VirtualMachine = New-AzureRmVMConfig -VMName "VirtualMachine07" -VMSize "Standard_A1" -AvailabilitySetID $AvailabilitySet.Id
 PS C:\> $Credential = Get-Credential
@@ -45,17 +45,17 @@ PS C:\> $CertificateUrl01 = "https://contosovault.vault.azure.net/secrets/514ceb
 PS C:\> $VirtualMachine = Add-AzureRmVMSecret -VM $VirtualMachine -SourceVaultId $SourceVaultId -CertificateStore $CertificateStore01 -CertificateUrl $CertificateUrl01
 ```
 
-Perintah pertama membuat objek mesin virtual, lalu menyimpannya di $VirtualMachine variabel.
-Perintah menetapkan nama dan ukuran ke komputer virtual.
+Perintah pertama membuat objek mesin virtual, lalu menyimpannya dalam variabel $VirtualMachine.
+Perintah menetapkan nama dan ukuran ke mesin virtual.
 
-Perintah kedua membuat objek kredensial dengan menggunakan cmdlet Get-Credential, lalu menyimpan hasilnya dalam $Credential variabel.
-Perintah akan meminta nama pengguna dan kata sandi Anda.
-Untuk informasi selengkapnya, ketik `Get-Help Get-Credential` .
+Perintah kedua membuat objek kredensial dengan menggunakan cmdlet Get-Credential, lalu menyimpan hasilnya dalam variabel $Credential.
+Perintah meminta nama pengguna dan kata sandi Anda.
+Untuk informasi selengkapnya, ketik .`Get-Help Get-Credential`
 
 Perintah ketiga menggunakan cmdlet **Set-AzureRmVMOperatingSystem** untuk mengonfigurasi mesin virtual yang disimpan di $VirtualMachine.
 
-Perintah keempat menetapkan ID penyimpanan sumber ke variabel $SourceVaultId untuk digunakan nanti.
-Perintah mengasumsikan bahwa $SubscriptionId variabel memiliki nilai yang sesuai.
+Perintah keempat menetapkan ID kubah sumber ke variabel $SourceVaultId untuk digunakan nanti.
+Perintah mengasumsikan bahwa variabel $SubscriptionId memiliki nilai yang sesuai.
 
 Perintah kelima menetapkan nilai ke variabel $CertificateStore 01 untuk digunakan nanti.
 
@@ -64,14 +64,14 @@ Perintah keenam menetapkan URL untuk penyimpanan sertifikat.
 Perintah ketujuh menambahkan rahasia ke mesin virtual yang disimpan di $VirtualMachine.
 Parameter SourceVaultId menentukan Key Vault.
 Perintah menentukan nama penyimpanan sertifikat dan URL sertifikat.
-Anda bisa menjalankan **Add-AzureRmVMSecret berulang** kali untuk menambahkan rahasia untuk sertifikat lain.
+Anda dapat menjalankan **Add-AzureRmVMSecret** berulang kali untuk menambahkan rahasia untuk sertifikat lain.
 
 ## PARAMETERS
 
 ### -CertificateStore
-Menentukan nama penyimpanan sertifikat pada komputer virtual yang menjalankan sistem Windows operasi.
-Cmdlet ini menambahkan sertifikat ke penyimpanan yang ditentukan parameter ini.
-Anda hanya dapat menentukan parameter ini untuk mesin virtual yang menjalankan Windows sistem operasi.
+Menentukan nama penyimpanan sertifikat pada mesin virtual yang menjalankan sistem operasi Windows.
+Cmdlet ini menambahkan sertifikat ke bursa yang ditentukan parameter ini.
+Anda hanya dapat menentukan parameter ini untuk mesin virtual yang menjalankan sistem operasi Windows.
 
 ```yaml
 Type: String
@@ -86,11 +86,11 @@ Accept wildcard characters: False
 ```
 
 ### -CertificateUrl
-Menentukan URL yang menunjukkan rahasia Key Vault yang berisi sertifikat.
+Menentukan URL yang mengarah ke rahasia Key Vault yang berisi sertifikat.
 
-Sertifikatnya adalah pengodean Base64 dari objek JavaScript Object Notation (JSON) berikut ini, yang dikodekan dalam UTF-8:
+Sertifikat adalah pengodean Base64 dari objek JavaScript Object Notation (JSON) berikut, yang dikodekan dalam UTF-8:
 
-{ "data": " \<Base64-encoded-file\> ", "dataType": " \<file-format\> ", "password": " \<pfx-file-password\> " }
+{ "data": "\<Base64-encoded-file\>", "dataType": "\<file-format\>", "password": "\<pfx-file-password\>" }
 
 
 Saat ini, dataType hanya menerima file .pfx.
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceVaultId
-Menentukan ID sumber daya Kunci Vault yang berisi sertifikat yang dapat ditambahkan ke komputer virtual.
+Menentukan ID sumber daya dari Key Vault yang berisi sertifikat yang bisa Anda tambahkan ke mesin virtual.
 Nilai ini juga bertindak sebagai kunci untuk menambahkan beberapa sertifikat.
 Artinya, Anda dapat menggunakan nilai yang sama untuk *SourceVaultId* ketika menambahkan beberapa sertifikat dari Key Vault yang sama.
 
@@ -140,8 +140,8 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan objek mesin virtual yang telah dimodifikasi cmdlet ini.
-Untuk mendapatkan objek mesin virtual, gunakan cmdlet [Get-AzureRmVM.](./Get-AzureRmVM.md)
+Menentukan objek mesin virtual yang diubah cmdlet ini.
+Untuk mendapatkan objek mesin virtual, gunakan cmdlet [Get-AzureRmVM](./Get-AzureRmVM.md) .
 Anda dapat menggunakan cmdlet [New-AzureRmVMConfig](./New-AzureRmVMConfig.md) untuk membuat objek mesin virtual.
 
 ```yaml
@@ -157,12 +157,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSVirtualMachine
-Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari saluran
+Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari pipeline
 
 ## OUTPUTS
 
@@ -174,6 +174,6 @@ Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari saluran
 
 [Get-AzureRmVM](./Get-AzureRmVM.md)
 
-[New-AzureRmVMConfig](./New-AzureRmVMConfig.md)
+[AzureRmVMConfig Baru](./New-AzureRmVMConfig.md)
 
 [Set-AzureRmVMOperatingSystem](./Set-AzureRmVMOperatingSystem.md)

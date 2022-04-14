@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/publi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Publish-AzAutomationRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Publish-AzAutomationRunbook.md
-ms.openlocfilehash: c2520ee1dee8297c5e7a2604f6c5aa461dc60cc3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e5aa6be749d4252ff455924fb6bd4e2dc8b79ed7
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140001965"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141791726"
 ---
 # Publish-AzAutomationRunbook
 
 ## SYNOPSIS
-Menerbitkan buku runbook.
+Menerbitkan runbook.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/publish-azautomationrunbook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,21 +29,21 @@ Publish-AzAutomationRunbook [-Name] <String> [-ResourceGroupName] <String> [-Aut
 ```
 
 ## DESCRIPTION
-Cmdlet **Publish-AzAutomationRunbook** menerbitkan runbook untuk digunakan dalam lingkungan produksi Otomatisasi Azure.
+Cmdlet **Publish-AzAutomationRunbook** menerbitkan runbook untuk digunakan dalam lingkungan produksi Azure Automation.
 
 ## EXAMPLES
 
-### Contoh 1: Menerbitkan buku jalankan
+### Contoh 1: Menerbitkan runbook
 ```
 PS C:\>Publish-AzAutomationRunbook -AutomationAccountName "Contoso17" -Name "Runbk01" -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini menerbitkan runbook yang bernama Runbk01 dalam akun Otomatisasi Azure yang bernama Contoso17.
+Perintah ini menerbitkan runbook bernama Runbk01 di akun Azure Automation bernama Contoso17.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi di mana cmdlet ini menerbitkan runbook.
+Menentukan nama akun Otomatisasi tempat cmdlet ini menerbitkan runbook.
 
 ```yaml
 Type: System.String
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini menerbitkan runbook.
+Menentukan nama grup sumber daya tempat cmdlet ini menerbitkan runbook.
 
 ```yaml
 Type: System.String
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

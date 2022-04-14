@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/test-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Test-AzLogicApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Test-AzLogicApp.md
-ms.openlocfilehash: 9934bb17c33c303e5f7989226dac47e3e4258771
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 384061b5a20cd916d95bc4a193e0187ec9257e74
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140402154"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141850316"
 ---
 # Test-AzLogicApp
 
 ## SYNOPSIS
 Memvalidasi definisi aplikasi logika.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/test-azlogicapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,16 +43,16 @@ Tentukan nama aplikasi logika, nama grup sumber daya, lokasi, status, ID akun in
 Modul ini mendukung parameter dinamis.
 Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
-Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilai tersebut.
+Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
 ## EXAMPLES
 
-### Contoh 1: Memvalidasi aplikasi logika menggunakan jalur file
+### Contoh 1: Memvalidasi aplikasi logika dengan menggunakan jalur file
 ```powershell
 PS C:\>Test-AzLogicApp -ResourceGroupName "ResourceGroup11" -Name "LogicApp01" -Location "westus" -State "Enabled" -DefinitionFilePath "d:\workflows\Definition.json" -ParameterFilePath "d:\workflows\Parameters.json"
 ```
 
-Perintah ini memvalidasi aplikasi logika yang bernama LogicApp01 dalam grup sumber daya yang ditentukan.
+Perintah ini memvalidasi aplikasi logika bernama LogicApp01 dalam grup sumber daya yang ditentukan.
 Perintah menentukan jalur file definisi dan parameter.
 
 ### Contoh 2: Memvalidasi aplikasi logika dengan menggunakan objek
@@ -57,12 +60,12 @@ Perintah menentukan jalur file definisi dan parameter.
 PS C:\>Test-AzLogicApp -ResourceGroupName "ResourceGroup11" -Name "LogicApp01" -Location "westus" -State "Enabled" -Definition [IO.File]::ReadAllText("d:\Workflows\Definition.json") -Parameters @{name1="value1", name2="value2"}
 ```
 
-Perintah ini memvalidasi aplikasi logika yang bernama LogicApp01 dalam grup sumber daya yang ditentukan.
+Perintah ini memvalidasi aplikasi logika bernama LogicApp01 dalam grup sumber daya yang ditentukan.
 Perintah menentukan definisi dan objek parameter.
 
 ### Contoh 3
 
-Memvalidasi definisi aplikasi logika. (otomatisgenerated)
+Memvalidasi definisi aplikasi logika. (autogenerasi)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Test-AzLogicApp -DefinitionFilePath 'd:\workflows\Definition.json' -IntegrationAccountId <String> -Location 'westus' -Name 'LogicApp01' -ParameterFilePath 'd:\workflows\Parameters.json' -ResourceGroupName 'ResourceGroup11'
@@ -71,7 +74,7 @@ Test-AzLogicApp -DefinitionFilePath 'd:\workflows\Definition.json' -IntegrationA
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -85,7 +88,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Definition
+### -Definisi
 Menentukan definisi aplikasi logika sebagai objek atau string dalam format JavaScript Object Notation (JSON).
 
 ```yaml
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ### -Lokasi
 Menentukan lokasi aplikasi logika.
 Masukkan lokasi pusat data Azure, seperti AS Barat atau Asia Tenggara.
-Anda dapat menempatkan aplikasi logika di lokasi mana saja.
+Anda dapat menempatkan aplikasi logika di lokasi mana pun.
 
 ```yaml
 Type: System.String
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParameterFilePath
-Menentukan jalur file parameter yang diformat JSON.
+Menentukan jalur file parameter JSON yang diformat.
 
 ```yaml
 Type: System.String
@@ -177,9 +180,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Parameter
-Menentukan objek kumpulan parameter dari aplikasi logika.
-Menentukan tabel hash, Kamus\<string\>, atau Kamus\<string, WorkflowParameter\>.
+### -Parameters
+Menentukan objek pengumpulan parameter dari aplikasi logika.
+Tentukan tabel hash, Kamus\<string\>, atau Kamus\<string, WorkflowParameter\>.
 
 ```yaml
 Type: System.Object
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -244,7 +247,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzLogicApp](./New-AzLogicApp.md)
 
-[Remove-AzLogicApp](./Remove-AzLogicApp.md)
+[Hapus-AzLogicApp](./Remove-AzLogicApp.md)
 
 [Set-AzLogicApp](./Set-AzLogicApp.md)
 

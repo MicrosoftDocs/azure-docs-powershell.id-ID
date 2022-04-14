@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Relay/Commands.Relay/help/Remove-AzureRmWcfRelay.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Relay/Commands.Relay/help/Remove-AzureRmWcfRelay.md
 ms.openlocfilehash: 5e49497f8784e9686c84cb75dde4b8fd4297578d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140861330"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141818002"
 ---
 # Remove-AzureRmWcfRelay
 
 ## SYNOPSIS
-Menghapus Wcf Benary dari ruang nama Relay yang ditentukan.
+Menghapus WcfRelay dari ruang nama Relay yang ditentukan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Remove-AzureRmWcfRelay [-ResourceGroupName] <String> [-Namespace] <String> [-Nam
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmWcfRm Cmdlet** removes the WcfGroupy dari ruang nama Relay yang ditentukan.
+Cmdlet **Remove-AzureRmWcfRelay** menghapus WcfRelay dari ruang nama Relay yang ditentukan.
 
 ## EXAMPLES
 
@@ -36,7 +36,7 @@ Cmdlet **Remove-AzureRmWcfRm Cmdlet** removes the WcfGroupy dari ruang nama Rela
 PS C:\> Remove-AzureRmWcfRelay -ResourceGroupName Default-ServiceBus-WestUS -NamespaceName TestNameSpace-Relay1 -Name TestWCFRelay1
 ```
 
-Menghapus WcfCfCfy `TestWCFRelay1` dari ruang nama `TestNameSpace-Relay1`.
+Menghapus WcfRelay `TestWCFRelay1` dari ruang `TestNameSpace-Relay1`nama .
 
 ## PARAMETERS
 
@@ -56,7 +56,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama WcfEby.
+Nama WcfRelay.
 
 ```yaml
 Type: System.String
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

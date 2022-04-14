@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationWebhook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationWebhook.md
-ms.openlocfilehash: 8e7d39ddcf2f703f102b270ef1d0df2228e704a9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 31a442a462ed14c51ce2f0927acceef703236130
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140189093"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141791438"
 ---
 # Set-AzAutomationWebhook
 
 ## SYNOPSIS
-Mengubah webhook untuk buku jalankan Otomatisasi.
+Mengubah webhook untuk runbook Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/set-azautomationwebhook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,31 +34,31 @@ Cmdlet **Set-AzAutomationWebhook** mengubah webhook untuk runbook Azure Automati
 
 ## EXAMPLES
 
-### Contoh 1: Disable a webhook
+### Contoh 1: Menonaktifkan webhook
 ```powershell
 PS C:\>Set-AzAutomationWebhook -Name "Webhook01" -ResourceGroup "ResourceGroup01" -AutomationAccountName "AutomationAccount01" -IsEnabled $False
 ```
 
-Perintah ini menonaktifkan webhook yang bernama Webhook01 dalam akun Otomatisasi yang bernama AutomationAccount01.
+Perintah ini menonaktifkan webhook bernama Webhook01 di akun Otomatisasi bernama AutomationAccount01.
 
 ### Contoh 2
 ```powershell
 PS C:\>Set-AzAutomationWebhook -Name "Webhook01" -ResourceGroup "ResourceGroup01" -AutomationAccountName "AutomationAccount01" -RunOn 'Windows'
 ```
 
-Perintah ini mengatur nilai jalankan di untuk webhook dan memaksa runbook untuk dijalankan pada grup Pekerja Hibrid yang disebut Windows.
+Perintah ini mengatur nilai jalankan pada untuk webhook dan memaksa runbook dijalankan pada grup Pekerja Hibrid yang disebut Windows.
 
 ### Contoh 3
 ```powershell
 PS C:\>Set-AzAutomationWebhook -Name "Webhook01" -ResourceGroup "ResourceGroup01" -AutomationAccountName "AutomationAccount01" -RunOn $null
 ```
 
-Perintah ini memperbarui nilai jalankan berdasarkan untuk webhook dan memaksa runbook untuk dijalankan pada pekerja Azure runbook. 
+Perintah ini memperbarui nilai jalankan pada untuk webhook dan memaksa runbook dijalankan pada pekerja runbook Azure. 
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi di mana cmdlet ini memodifikasi webhook.
+Menentukan nama akun Otomatisasi di mana cmdlet ini mengubah webhook.
 
 ```yaml
 Type: System.String
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama webhook yang dimodifikasi cmdlet ini.
+Menentukan nama webhook yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -114,11 +117,11 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Parameter
+### -Parameters
 Menentukan kamus pasangan kunci/nilai.
-Kunci tersebut adalah nama parameter runbook.
-Nilai tersebut adalah nilai parameter runbook.
-Saat runbook mulai merespons webhook, parameter ini akan disampaikan ke runbook.
+Kuncinya adalah nama parameter runbook.
+Nilainya adalah nilai parameter runbook.
+Ketika runbook dimulai sebagai respons terhadap webhook, parameter ini dikirimkan ke runbook.
 
 ```yaml
 Type: System.Collections.IDictionary
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini memodifikasi webhook.
+Menentukan nama grup sumber daya di mana cmdlet ini mengubah webhook.
 
 ```yaml
 Type: System.String
@@ -163,13 +166,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### System.Collections.IDictionary
 

@@ -4,16 +4,16 @@ Module Name: Azs.Compute.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 819cdc45e75c15c38c9ae28c583ac3c73e54f4ac
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136577861"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141814334"
 ---
 # Get-AzsComputeQuota
 
 ## SYNOPSIS
-Mengembalikan kuota yang menentukan batas kuota untuk objek perhitungan.
+Mengembalikan kuota yang menentukan batas kuota untuk objek komputasi.
 
 ## SYNTAX
 
@@ -22,7 +22,7 @@ Mengembalikan kuota yang menentukan batas kuota untuk objek perhitungan.
 Get-AzsComputeQuota [-Location <String>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsComputeQuota [-Name] <String> [-Location <String>] [<CommonParameters>]
 ```
@@ -33,7 +33,7 @@ Get-AzsComputeQuota -ResourceId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Mendapatkan daftar kuota yang ada.
+Dapatkan daftar kuota yang sudah ada.
 
 ## EXAMPLES
 
@@ -42,19 +42,19 @@ Mendapatkan daftar kuota yang ada.
 Get-AzsComputeQuota -Location 'local'
 ```
 
-Dapatkan semua kuota perhitungan di lokasi tertentu.
+Dapatkan semua kuota komputasi di lokasi yang ditentukan.
 
 ### -------------------------- CONTOH 2 --------------------------
 ```
 Get-AzsComputeQuota 'Default Quota'
 ```
 
-Dapatkan kuota perhitungan tertentu.
+Dapatkan kuota komputasi tertentu.
 
 ## PARAMETERS
 
 ### -Lokasi
-{{fill location description}}
+{{Fill Location Description}}
 
 ```yaml
 Type: String
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

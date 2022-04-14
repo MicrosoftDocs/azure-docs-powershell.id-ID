@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceBus/Commands.ServiceBus/help/Get-AzureRmServiceBusRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceBus/Commands.ServiceBus/help/Get-AzureRmServiceBusRule.md
 ms.openlocfilehash: 2d249d8935b79c310e4ca0aa1270ee67bf33ece3
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140856701"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141774988"
 ---
 # Get-AzureRmServiceBusRule
 
 ## SYNOPSIS
-Membuat aturan baru untuk Langganan Topik yang diberikan. 
+Membuat aturan baru untuk Langganan Topik tertentu. 
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -44,7 +44,7 @@ Mengembalikan deskripsi aturan tertentu untuk langganan tertentu.
 PS C:\> Get-AzureRmServiceBusRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SBExample1 -Topic SBTopic -Subscription SBSubscription
 ```
 
-Mengembalikan daftar deskripsi aturan untuk langganan tertentu.  Secara default, 100 aturan akan dikembalikan, jika ada lebih dari 100 aturan yang akan dikembalikan, silakan gunakan Parameter -MaxCount.
+Mengembalikan daftar deskripsi aturan untuk langganan tertentu.  Secara default 100 aturan akan dikembalikan, jika lebih dari 100 aturan dikembalikan, silakan gunakan -MaxCount Parameter.
 
 ### Contoh 3
 ```
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxCount
-Menentukan jumlah maksimum Aturan untuk dikembalikan.
+Tentukan jumlah maksimal Aturan yang akan dikembalikan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -145,7 +145,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Topic
+### -Topik
 Nama Topik
 
 ```yaml
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

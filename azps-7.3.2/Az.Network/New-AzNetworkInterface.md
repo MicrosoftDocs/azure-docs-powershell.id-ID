@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkInterface.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkInterface.md
-ms.openlocfilehash: 8ff9ca33000a3d81c259c1a5e5839b578e56be76
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2b80c060729a74a4732a5b3f236dae0524840f05
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140555499"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142108313"
 ---
 # New-AzNetworkInterface
 
 ## SYNOPSIS
 Membuat antarmuka jaringan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-aznetworkinterface) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -70,23 +73,23 @@ Cmdlet **New-AzNetworkInterface** membuat antarmuka jaringan Azure.
 PS C:\>New-AzNetworkInterface -Name "NetworkInterface1" -ResourceGroupName "ResourceGroup1" -Location "centralus" -SubnetId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/ResourceGroup1/providers/Microsoft.Network/virtualNetworks/VirtualNetwork1/subnets/Subnet1" -IpConfigurationName "IPConfiguration1" -DnsServer "8.8.8.8", "8.8.4.4"
 ```
 
-Perintah ini membuat antarmuka jaringan yang bernama NetworkInterface001 dengan alamat IP privat yang ditetapkan secara dinamis dari Subnet1 di jaringan virtual yang bernama VirtualNetwork1. Perintah tersebut juga menetapkan dua server DNS ke antarmuka jaringan. Sumber daya anak IPConfiguration akan dibuat secara otomatis menggunakan nama IPConfiguration1.
+Perintah ini membuat antarmuka jaringan bernama NetworkInterface001 dengan alamat IP privat yang ditetapkan secara dinamis dari Subnet1 di jaringan virtual bernama VirtualNetwork1. Perintah ini juga menetapkan dua server DNS ke antarmuka jaringan. Sumber daya turunan IPConfiguration akan dibuat secara otomatis menggunakan nama IPConfiguration1.
 
-### Contoh 2: Buat antarmuka jaringan Azure menggunakan objek konfigurasi IP
+### Contoh 2: Membuat antarmuka jaringan Azure menggunakan objek konfigurasi IP
 ```powershell
 PS C:\>$Subnet = Get-AzVirtualNetwork -Name "VirtualNetwork1" -ResourceGroupName "ResourceGroup1" 
 PS C:\>$IPconfig = New-AzNetworkInterfaceIpConfig -Name "IPConfig1" -PrivateIpAddressVersion IPv4 -PrivateIpAddress "10.0.1.10" -SubnetId $Subnet.Subnets[0].Id
 PS C:\> New-AzNetworkInterface -Name "NetworkInterface1" -ResourceGroupName "ResourceGroup1" -Location "centralus" -IpConfiguration $IPconfig
 ```
 
-Contoh ini membuat antarmuka jaringan baru menggunakan objek konfigurasi IP. Objek konfigurasi IP menentukan alamat IPv4 privat statis.
+Contoh ini membuat antarmuka jaringan baru menggunakan objek konfigurasi IP. Objek konfigurasi IP menentukan alamat IPv4 pribadi statis.
 Perintah pertama mengambil jaringan virtual tertentu yang sudah ada yang digunakan untuk menetapkan subnet dalam perintah kedua.
-Perintah kedua membuat konfigurasi IP antarmuka jaringan bernama IPConfig1 dan menyimpan konfigurasi di variabel yang bernama $IPconfig.
-Perintah ketiga membuat antarmuka jaringan bernama NetworkInterface1 yang menggunakan konfigurasi IP antarmuka jaringan yang disimpan di variabel yang bernama $IPconfig.
+Perintah kedua membuat konfigurasi IP antarmuka jaringan bernama IPConfig1 dan menyimpan konfigurasi dalam variabel bernama $IPconfig.
+Perintah ketiga membuat antarmuka jaringan bernama NetworkInterface1 yang menggunakan konfigurasi IP antarmuka jaringan yang disimpan dalam variabel bernama $IPconfig.
 
 ### Contoh 3
 
-Membuat antarmuka jaringan. (otomatisgenerated)
+Membuat antarmuka jaringan. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationSecurityGroup
-Menentukan kumpulan referensi grup keamanan aplikasi tempat konfigurasi IP antarmuka jaringan seharusnya berada.
+Menentukan kumpulan referensi grup keamanan aplikasi tempat konfigurasi IP antarmuka jaringan harus dimiliki.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationSecurityGroup[]
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationSecurityGroupId
-Menentukan kumpulan referensi grup keamanan aplikasi tempat konfigurasi IP antarmuka jaringan seharusnya berada.
+Menentukan kumpulan referensi grup keamanan aplikasi tempat konfigurasi IP antarmuka jaringan harus dimiliki.
 
 ```yaml
 Type: System.String[]
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableIPForwarding
-Mengindikasikan bahwa cmdlet ini mengaktifkan penerusan IP untuk antarmuka jaringan.
+Menunjukkan bahwa cmdlet ini mengaktifkan penerusan IP untuk antarmuka jaringan.
 Penerusan IP memungkinkan mesin virtual untuk menerima lalu lintas yang dialamatkan ke tujuan lain.
 
 ```yaml
@@ -248,8 +251,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa pembuatan antarmuka jaringan meskipun antarmuka jaringan dengan nama yang sama sudah ada.
+### -Paksa
+Memaksa pembuatan antarmuka jaringan bahkan jika antarmuka jaringan dengan nama yang sama sudah ada.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -InternalDnsNameLabel
-Menentukan label nama DNS internal untuk antarmuka jaringan yang baru.
+Menentukan label nama DNS internal untuk antarmuka jaringan baru.
 
 ```yaml
 Type: System.String
@@ -339,7 +342,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerInboundNatRule
-Menentukan konfigurasi aturan NAT masuk untuk penyeimbang muat.
+Menentukan konfigurasi aturan NAT masuk untuk penyeimbang muatan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSInboundNatRule[]
@@ -354,7 +357,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerInboundNatRuleId
-Menentukan ID konfigurasi aturan NAT masuk untuk penyeimbang muat.
+Menentukan ID konfigurasi aturan NAT masuk untuk penyeimbang muatan.
 
 ```yaml
 Type: System.String[]
@@ -384,7 +387,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama antarmuka jaringan untuk dibuat.
+Menentukan nama antarmuka jaringan yang akan dibuat.
 
 ```yaml
 Type: System.String
@@ -444,7 +447,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddress
-Menentukan objek **PublicIPAddress** yang akan ditetapkan ke antarmuka jaringan.
+Menentukan objek **PublicIPAddress** untuk ditetapkan ke antarmuka jaringan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSPublicIpAddress
@@ -474,7 +477,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang menjadi bagian antarmuka jaringan.
+Menentukan nama grup sumber daya tempat antarmuka jaringan berada.
 
 ```yaml
 Type: System.String
@@ -490,7 +493,7 @@ Accept wildcard characters: False
 
 ### -Subnet
 Menentukan objek **Subnet** .
-Cmdlet ini membuat antarmuka jaringan untuk subnet yang ditentukan oleh parameter ini.
+Cmdlet ini membuat antarmuka jaringan untuk subnet yang ditentukan parameter ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSSubnet
@@ -535,7 +538,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -551,7 +554,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -566,7 +569,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

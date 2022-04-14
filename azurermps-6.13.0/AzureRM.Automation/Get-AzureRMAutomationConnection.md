@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRMAutomationConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRMAutomationConnection.md
 ms.openlocfilehash: 6397c1efdce39e575caa98558a54bd279fd0374e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419993"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141845647"
 ---
 # Get-AzureRmAutomationConnection
 
@@ -22,7 +22,7 @@ Mendapatkan koneksi Otomatisasi.
 
 ## SYNTAX
 
-### SecaraSemua (Default)
+### ByAll (Default)
 ```
 Get-AzureRmAutomationConnection [-ResourceGroupName] <String> [-AutomationAccountName] <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -41,21 +41,21 @@ Get-AzureRmAutomationConnection [-ConnectionTypeName] <String> [-ResourceGroupNa
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmAutomationConnection** mendapatkan satu atau beberapa koneksi Otomatisasi Azure.
+Cmdlet **Get-AzureRmAutomationConnection** mendapatkan satu atau beberapa koneksi Azure Automation.
 Secara default, cmdlet ini mengambil semua koneksi.
 Tentukan nama koneksi untuk mendapatkan koneksi tertentu.
 Tentukan nama tipe koneksi untuk mendapatkan semua koneksi tipe tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua koneksi
+### Contoh 1: Dapatkan semua koneksi
 ```
 PS C:\>Get-AzureRmAutomationConnection -ResourceGroupName "ResourceGroup01" -AutomationAccountName "Contoso17"
 ```
 
 Perintah ini mendapatkan metadata untuk semua koneksi dalam akun Otomatisasi bernama Contoso17.
 
-### Contoh 2: Mendapatkan semua koneksi tipe
+### Contoh 2: Dapatkan semua koneksi tipe
 ```
 PS C:\>Get-AzureRmAutomationConnection -ResourceGroupName "ResourceGroup01" -AutomationAccountName "Contoso17" -ConnectionTypeName "SqlServer"
 ```
@@ -73,7 +73,7 @@ Perintah ini mendapatkan metadata untuk koneksi bernama ContosoConnection.
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang akan mendapatkan koneksi cmdlet ini.
+Menentukan nama akun Otomatisasi tempat cmdlet ini mendapatkan koneksi.
 
 ```yaml
 Type: System.String
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionTypeName
-Menentukan nama tipe koneksi yang digunakan cmdlet untuk mengambil koneksi.
+Menentukan nama tipe koneksi tempat cmdlet ini mengambil koneksi.
 
 ```yaml
 Type: System.String
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang mendapatkan koneksi cmdlet ini.
+Menentukan nama grup sumber daya di mana cmdlet ini mendapatkan koneksi.
 
 ```yaml
 Type: System.String
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -162,8 +162,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmAutomationConnection](./New-AzureRMAutomationConnection.md)
+[Baru-AzureRmAutomationConnection](./New-AzureRMAutomationConnection.md)
 
-[Remove-AzureRmAutomationConnection](./Remove-AzureRMAutomationConnection.md)
+[Hapus-AzureRmAutomationConnection](./Remove-AzureRMAutomationConnection.md)
 
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/invoke-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Invoke-AzSynapsePipeline.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Invoke-AzSynapsePipeline.md
-ms.openlocfilehash: 9f4298d7e99db947157bca379b57b15df239a6db
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6304bcaf9b2a48a7cad9d88d225b25f66634e414
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140553632"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141786362"
 ---
 # Invoke-AzSynapsePipeline
 
 ## SYNOPSIS
-Menjalankan pipeline untuk memulai proses untuknya.
+Memanggil pipeline untuk memulai prosesnya.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/invoke-azsynapsepipeline) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Invoke-AzSynapsePipeline -WorkspaceObject <PSSynapseWorkspace> -PipelineName <St
 ```
 
 ## DESCRIPTION
-Perintah **Invoke-AzSynapsePipeline** memulai proses pada saluran yang ditentukan dan mengembalikan ID untuk proses tersebut. GUID ini dapat disampaikan ke **Get-AzSynapsePipelineRun** atau **Get-AzSynapseActivityRun** untuk mendapatkan detail selengkapnya tentang proses ini.
+Perintah **Invoke-AzSynapsePipeline** memulai proses pada saluran tertentu dan mengembalikan ID untuk proses tersebut. GUID ini dapat diteruskan ke **Get-AzSynapsePipelineRun** atau **Get-AzSynapseActivityRun** untuk mendapatkan detail lebih lanjut tentang proses ini.
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ Perintah **Invoke-AzSynapsePipeline** memulai proses pada saluran yang ditentuka
 PS C:\> Invoke-AzSynapsePipeline -WorkspaceName ContosoWorkspace -PipelineName ContosoPipeline
 ```
 
-Perintah ini memulai proses untuk pipeline yang disebut ContosoPipeline dalam ruang kerja ContosoWorkspace.
+Perintah ini memulai proses untuk alur yang disebut ContosoPipeline di ruang kerja ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
@@ -58,7 +61,7 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Invoke-AzSynapsePipeline -PipelineName ContosoPipeline
 ```
 
-Perintah ini memulai proses untuk pipeline yang disebut ContosoPipeline dalam ruang kerja ContosoWorkspace melalui pipeline.
+Perintah ini memulai proses untuk pipeline yang disebut ContosoPipeline di ruang kerja ContosoWorkspace melalui pipeline.
 
 ### Contoh 3
 ```powershell
@@ -66,12 +69,12 @@ PS C:\> $pipeline = Get-AzSynapsePipeline -WorkspaceName ContosoWorkspace -Name 
 PS C:\> $pipeline | Invoke-AzSynapsePipeline
 ```
 
-Perintah ini memulai proses untuk pipeline yang disebut ContosoPipeline dalam ruang kerja ContosoWorkspace melalui pipeline.
+Perintah ini memulai proses untuk pipeline yang disebut ContosoPipeline di ruang kerja ContosoWorkspace melalui pipeline.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Informasi tentang saluran berjalan.
+Informasi tentang alur berjalan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSPipelineResource
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 
 ### -IsRecovery
 Bendera mode pemulihan.
-Jika mode pemulihan diatur ke true, saluran referensi yang ditentukan berjalan dan proses baru akan dikelompokkan di bawah groupId yang sama.
+Jika mode pemulihan diatur ke true, alur yang dirujuk yang ditentukan berjalan dan proses baru akan dikelompokkan di bawah groupId yang sama.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -Parameter
-Parameter untuk menjalankan pipeline.
+Parameter untuk proses pipeline.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParameterFile
-Nama file dengan parameter untuk menjalankan alur.
+Nama file dengan parameter untuk proses pipeline.
 
 ```yaml
 Type: System.String
@@ -177,8 +180,8 @@ Accept wildcard characters: False
 ```
 
 ### -ReferencePipelineRunId
-Pipeline menjalankan ID untuk dijalankan kembali.
-Jika ID jalankan ditentukan, parameter dari proses yang ditentukan akan digunakan untuk membuat jalankan baru.
+ID jalankan saluran untuk dijalankan ulang.
+Jika RUN ID ditentukan, parameter dari run yang ditentukan akan digunakan untuk membuat run baru.
 
 ```yaml
 Type: System.String
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartActivityName
-Dalam mode pemulihan, jalan ulang akan dimulai dari aktivitas ini.
+Dalam mode pemulihan, rerun akan dimulai dari aktivitas ini.
 Jika tidak ditentukan, semua aktivitas akan berjalan.
 
 ```yaml
@@ -208,7 +211,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -239,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -255,7 +258,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -270,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

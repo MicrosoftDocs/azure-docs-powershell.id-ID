@@ -5,11 +5,11 @@ ms.assetid: 6FF04E82-4921-4F7B-83D0-6997316BC5FD
 online version: https://docs.microsoft.com/en-us/powershell/module/azure.storage/new-azurestoragecontainersastoken
 schema: 2.0.0
 ms.openlocfilehash: 3fa5a642bd5d8c53b81422f54fdb2c133304cc03
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132429011"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142104613"
 ---
 # New-AzureStorageContainerSASToken
 
@@ -35,36 +35,36 @@ New-AzureStorageContainerSASToken [-Name] <String> [-Permission <String>] [-Prot
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureStorageContainerSASToken** menghasilkan token Tanda Tangan Akses Bersama (SAS, Shared Access Signature) untuk wadah penyimpanan Azure.
+Cmdlet **AzureStorageContainerSASToken Baru** menghasilkan token Shared Access Signature (SAS) untuk wadah penyimpanan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Menghasilkan token SAS wadah dengan izin wadah penuh
+### Contoh 1: Menghasilkan token SAS kontainer dengan izin kontainer penuh
 ```
 PS C:\>New-AzureStorageContainerSASToken -Name "Test" -Permission rwdl
 ```
 
 Contoh ini menghasilkan token SAS kontainer dengan izin kontainer penuh.
 
-### Contoh 2: Menghasilkan beberapa token SAS wadah menurut saluran
+### Contoh 2: Menghasilkan beberapa kontainer token SAS menurut pipeline
 ```
 PS C:\>Get-AzureStorageContainer -Container test* | New-AzureStorageContainerSASToken -Permission rwdl
 ```
 
-Contoh ini menghasilkan beberapa token SAS wadah dengan menggunakan saluran.
+Contoh ini menghasilkan beberapa token SAS kontainer menggunakan pipeline.
 
-### Contoh 3: Buat token SAS wadah dengan kebijakan akses bersama
+### Contoh 3: Menghasilkan token SAS kontainer dengan kebijakan akses bersama
 ```
 PS C:\>New-AzureStorageContainerSASToken -Name "Test" -Policy "PolicyName"
 ```
 
-Contoh ini menghasilkan token SAS wadah dengan kebijakan akses bersama.
+Contoh ini menghasilkan token SAS kontainer dengan kebijakan akses bersama.
 
 ## PARAMETERS
 
 ### -Konteks
 Menentukan konteks penyimpanan Azure.
-Anda dapat membuatnya menggunakan cmdlet New-AzureStorageContext baru.
+Anda dapat membuatnya menggunakan cmdlet New-AzureStorageContext.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -94,9 +94,9 @@ Accept wildcard characters: False
 ```
 
 ### -ExpiryTime
-Menentukan waktu di mana tanda tangan akses bersama menjadi tidak valid.
-Jika pengguna mengatur waktu mulai tetapi bukan waktu kedaluwarsa, waktu kedaluwarsa diatur ke waktu mulai plus satu jam.
-Jika waktu mulai maupun waktu kedaluwarsa tidak ditentukan, waktu kedaluwarsa diatur ke waktu saat ini plus satu jam.
+Menentukan waktu ketika tanda tangan akses bersama menjadi tidak valid.
+Jika pengguna mengatur waktu mulai tetapi bukan waktu kedaluwarsa, waktu kedaluwarsa diatur ke waktu mulai ditambah satu jam.
+Jika waktu mulai atau waktu kedaluwarsa tidak ditentukan, waktu kedaluwarsa diatur ke waktu saat ini ditambah satu jam.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -FullUri
-Mengindikasikan bahwa cmdlet ini mengembalikan URI blob penuh dan token tanda tangan akses bersama.
+Menunjukkan bahwa cmdlet ini mengembalikan URI blob penuh dan token tanda tangan akses bersama.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -126,8 +126,8 @@ Accept wildcard characters: False
 ```
 
 ### -IPAddressOrRange
-Menentukan alamat IP atau rentang alamat IP untuk menerima permintaan, seperti 168.1.5.65 atau 168.1.5.60-168.1.5.70.
-Rentang bersifat inklusif.
+Menentukan alamat IP atau rentang alamat IP yang menerima permintaan, seperti 168.1.5.65 atau 168.1.5.60-168.1.5.70.
+Rentangnya inklusif.
 
 ```yaml
 Type: System.String
@@ -156,9 +156,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Permission
+### -Izin
 Menentukan izin untuk wadah penyimpanan.
-Penting untuk diingat bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis dan Hapus).
+Penting untuk diperhatikan bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis, dan Hapus).
 
 ```yaml
 Type: System.String
@@ -187,11 +187,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
+### -Protokol
 Menentukan protokol yang diizinkan untuk permintaan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 * HttpsOnly
-* HttpsOrHttp Nilai default adalah HttpsOrHttp.
+* HttpsOrHttp The default value is HttpsOrHttp.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.WindowsAzure.Storage.SharedAccessProtocol]
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Menentukan waktu validnya tanda tangan akses bersama.
+Menentukan waktu ketika tanda tangan akses bersama menjadi valid.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -238,4 +238,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureStorageBlobSASToken](./New-AzureStorageBlobSASToken.md)
+[AzureStorageBlobSASToken Baru](./New-AzureStorageBlobSASToken.md)

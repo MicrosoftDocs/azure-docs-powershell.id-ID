@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.apima
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/New-AzureRmApiManagementBackendServiceFabric.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/New-AzureRmApiManagementBackendServiceFabric.md
-ms.openlocfilehash: 76e051a520e900dd6f2944fb9308d62a44dc1eee86800a926fb2bd33de342976
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: c6b9acb5fde7934d4494a32cd7b1685e78d43a1e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132415851"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141846244"
 ---
 # New-AzureRmApiManagementBackendServiceFabric
 
 ## SYNOPSIS
-Membuat objek dari `PsApiManagementServiceFabric`
+Membuat objek `PsApiManagementServiceFabric`
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,11 +29,11 @@ New-AzureRmApiManagementBackendServiceFabric -ManagementEndpoint <String[]>
 
 ## DESCRIPTION
 
-Cmdlet **New-AzureRmApiManagementBackendServiceFabric** membuat objek untuk digunakan di `PsApiManagementServiceFabric` cmdlet **New-AzureRmApiManagementBackend** **dan Set-AzureRmApiManagementBackend.**
+Cmdlet **New-AzureRmApiManagementBackendServiceFabric** membuat objek `PsApiManagementServiceFabric` yang akan digunakan dalam cmdlet **New-AzureRmApiManagementBackend** dan **Set-AzureRmApiManagementBackend**.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat backend Service Fabric In-Memory Objek
+### Contoh 1: Membuat Objek Service Fabric In-Memory Backend
 ```powershell
 PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>$ManagementEndpoints = 'https://sfbackend-01.net:443', 'https://sfbackend-02.net:443'
@@ -48,7 +48,7 @@ Membuat Kontrak Service Fabric Backend
 ## PARAMETERS
 
 ### -ClientCertificateThumbprint
-Client Certificate Thumbprint untuk titik akhir manajemen.
+Sidik Jari Sertifikat Klien untuk titik akhir manajemen.
 Parameter ini diperlukan.
 
 ```yaml
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementEndpoint
-Service Fabric Titik Akhir Manajemen Kluster.
+Service Fabric Titik Akhir manajemen kluster.
 Parameter ini diperlukan.
 
 ```yaml
@@ -95,8 +95,8 @@ Accept wildcard characters: False
 ```
 
 ### -MaxPartitionResolutionRetry
-Jumlah maksimum perekanan ketika Service Fabric partisi.
-Parameter ini bersifat opsional dan nilai default adalah 5.
+Jumlah maksimum percobaan ulang ketika menyelesaikan partisi Service Fabric.
+Parameter ini opsional dan nilai defaultnya adalah 5.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerCertificateThumbprint
-Pencetakan sertifikat layanan manajemen kluster menggunakan tls communication. Parameter ini bersifat opsional.
+Sidik jari layanan manajemen kluster sertifikat digunakan untuk komunikasi tls. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String[]
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -158,10 +158,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmApiManagementBackend](./Get-AzureRmApiManagementBackend.md)
 
-[New-AzureRmApiManagementBackend](./New-AzureRmApiManagementBackend.md)
+[AzureRmApiManagementBackend Baru](./New-AzureRmApiManagementBackend.md)
 
-[New-AzureRmApiManagementBackendProxy](./New-AzureRmApiManagementBackendProxy.md)
+[Baru-AzureRmApiManagementBackendProxy](./New-AzureRmApiManagementBackendProxy.md)
 
 [Set-AzureRmApiManagementBackend](./Set-AzureRmApiManagementBackend.md)
 
-[Remove-AzureRmApiManagementBackend](./Remove-AzureRmApiManagementBackend.md)
+[Hapus-AzureRmApiManagementBackend](./Remove-AzureRmApiManagementBackend.md)

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/New-AzureRmADApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/New-AzureRmADApplication.md
 ms.openlocfilehash: e23e3db6cb574fb16b2c559c948372c808840de1
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428145"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141817672"
 ---
 # New-AzureRmADApplication
 
 ## SYNOPSIS
-Membuat aplikasi azure active directory baru.
+Membuat aplikasi direktori aktif azure baru.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -58,7 +58,7 @@ New-AzureRmADApplication -DisplayName <String> -IdentifierUris <String[]> [-Home
 ```
 
 ## DESCRIPTION
-Membuat aplikasi azure active directory baru.
+Membuat aplikasi direktori aktif azure baru.
 
 ## EXAMPLES
 
@@ -68,9 +68,9 @@ Membuat aplikasi azure active directory baru.
 PS C:\> New-AzureRmADApplication -DisplayName "NewApplication" -HomePage "https://www.microsoft.com" -IdentifierUris "http://NewApplication"
 ```
 
-Membuat aplikasi azure active directory baru tanpa kredensial apa pun.
+Membuat aplikasi direktori aktif azure baru tanpa kredensial apa pun.
 
-### Contoh 2 - Buat aplikasi AAD dengan kata sandi.
+### Contoh 2 - Buat aplikasi AAD baru dengan kata sandi.
 
 ```
 PS C:\> $SecureStringPassword = ConvertTo-SecureString -String "password" -AsPlainText -Force
@@ -78,12 +78,12 @@ PS C:\> New-AzureRmADApplication -DisplayName "NewApplication" -HomePage "https:
 //NewApplication" -Password $SecureStringPassword
 ```
 
-Membuat aplikasi azure active directory baru dan mengaitkan kredensial kata sandi dengannya.
+Membuat aplikasi direktori aktif azure baru dan mengaitkan kredensial kata sandi dengannya.
 
 ## PARAMETERS
 
 ### -AvailableToOtherTenants
-Nilai yang menentukan apakah aplikasi merupakan penyewa tunggal atau multi-penyewa.
+Nilai yang menentukan apakah aplikasi adalah penyewa tunggal atau multi-penyewa.
 
 ```yaml
 Type: System.Boolean
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 
 ### -CertValue
 Nilai tipe kredensial "asimetris".
-Kode ini mewakili sertifikat berkode basis 64.
+Ini mewakili sertifikat dasar 64 yang dikodekan.
 
 ```yaml
 Type: System.String
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-Tanggal berakhir efektif penggunaan kredensial.
+Tanggal berakhir efektif dari penggunaan kredensial.
 Nilai tanggal akhir default adalah satu tahun dari hari ini. Untuk kredensial tipe "asimetris", kredensial ini harus diatur ke aktif atau sebelum tanggal sertifikat X509 valid.
 
 ```yaml
@@ -266,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -282,7 +282,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -297,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -307,9 +307,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.KREASIDPasswordCredential[]
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADPasswordCredential[]
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.NGGANGDKeyCredential[]
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADKeyCredential[]
 
 ### System.Security.SecureString
 
@@ -317,22 +317,22 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.FOLDApplication
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADAplikasi
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, resource, group, template, deployment
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Templat, penyebaran
 
 ## RELATED LINKS
 
-[Remove-AzureRmADApplication](./Remove-AzureRmADApplication.md)
+[Hapus-AzureRmADAplikasi](./Remove-AzureRmADApplication.md)
 
-[Get-AzureRmADApplication](./Get-AzureRmADApplication.md)
+[Get-AzureRmADAplikasi](./Get-AzureRmADApplication.md)
 
-[New-AzureRmADServicePrincipal](./New-AzureRmADServicePrincipal.md)
+[AzureRmADServicePrincipal baru](./New-AzureRmADServicePrincipal.md)
 
 [Get-AzureRmADAppCredential](./Get-AzureRmADAppCredential.md)
 
-[New-AzureRmADAppCredential](./New-AzureRmADAppCredential.md)
+[AzureRmADAppCredential baru](./New-AzureRmADAppCredential.md)
 
-[Remove-AzureRmADAppCredential](./Remove-AzureRmADAppCredential.md)
+[Hapus-AzureRmADAppCredential](./Remove-AzureRmADAppCredential.md)
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerBackendAddressInboundNatRulePortMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerBackendAddressInboundNatRulePortMapping.md
-ms.openlocfilehash: dfbb7903aab33aa1d79418b546a9e104cf1f698b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5fe55b1b6ab012564b7b7e0d8411c0a413bd127c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140555782"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141849290"
 ---
 # Get-AzLoadBalancerBackendAddressInboundNatRulePortMapping
 
 ## SYNOPSIS
-Get-AzLoadBalancerBackendAddressInboundNatRulePortMapping mengambil daftar pemetaan port port nat masuk untuk satu alamat backend.
+Get-AzLoadBalancerBackendAddressInboundNatRulePortMapping mengambil daftar pemetaan port aturan nat masuk untuk satu alamat backend.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azloadbalancerbackendaddressinboundnatruleportmapping) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Get-AzLoadBalancerBackendAddressPool -ResourceId <String> [-IpAddress <String>]
 ```
 
 ## DESCRIPTION
-Get-AzLoadBalancerBackendAddressPool mengambil daftar pemetaan port port nat masuk untuk satu alamat backend.
+Get-AzLoadBalancerBackendAddressPool mengambil daftar pemetaan port aturan nat masuk untuk satu alamat backend.
 
 ## EXAMPLES
 
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan penyeimbang muat yang memiliki pool alamat backend
+Menentukan penyeimbang muatan yang memiliki kumpulan alamat backend
 
 ```yaml
 Type: PSLoadBalancer
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerName
-Nama penyeimbang muat.
+Nama penyeimbang beban.
 
 ```yaml
 Type: String
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama pool alamat backend.
+Nama kumpulan alamat backend.
 
 ```yaml
 Type: String
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -4,11 +4,11 @@ ms.assetid: 3249E908-B1D9-4707-844D-168274F1A466
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: dc2f37125150ed56e7aba9a304bc36199e5af3de
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427433"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141815980"
 ---
 # Set-AzureReservedIPAssociation
 
@@ -26,10 +26,10 @@ Set-AzureReservedIPAssociation [-ReservedIPName] <String> [-ServiceName] <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureReservedIPAssociation** mengaitkan alamat IP khusus dengan alamat IP Virtual (VIP) dari layanan cloud atau mesin virtual yang berjalan.
-Alamat IP khusus harus tidak digunakan pada saat faktur cmdlet ini, dan harus berada di kawasan yang sama dengan komputer virtual atau layanan cloud.
+Cmdlet **Set-AzureReservedIPAssociation** mengaitkan alamat IP khusus dengan alamat IP Virtual (VIP) mesin virtual yang berjalan atau layanan cloud.
+Alamat IP khusus tidak boleh digunakan pada saat invokasi cmdlet ini, dan harus berada di wilayah yang sama dengan mesin virtual atau layanan awan.
 
-Operasi memerlukan waktu sekitar 30 detik untuk selesai, setelah itu mesin atau layanan virtual dapat diakses menggunakan alamat IP khusus.
+Operasi ini membutuhkan waktu sekitar 30 detik untuk diselesaikan, setelah itu mesin virtual atau layanan dapat diakses menggunakan alamat IP khusus.
 
 ## EXAMPLES
 
@@ -44,16 +44,16 @@ ResIp14 adalah IP khusus di kawasan Eropa Barat.
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -83,8 +83,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Menentukan nama layanan yang memiliki penyebaran untuk mengaitkan alamat IP khusus tersebut.
+Menentukan nama layanan yang memiliki penyebaran untuk mengaitkan alamat IP khusus.
 
 ```yaml
 Type: String
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 Menentukan slot penyebaran.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
-- Perekanan
+- Pementasan
 - Produksi
 
 ```yaml
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 
 ### -VirtualIPName
 Menentukan nama VIP yang sudah ada untuk dikaitkan dengan IP khusus.
-Lihat Add-AzureVirtualIP menambahkan VIP ke layanan awan Anda.
+Lihat Add-AzureVirtualIP untuk menambahkan VIP ke layanan awan Anda.
 
 ```yaml
 Type: String
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -176,6 +176,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Remove-AzureReservedIPAssociation](./Remove-AzureReservedIPAssociation.md)
+[Hapus-AzureReservedIPAssociation](./Remove-AzureReservedIPAssociation.md)
 
 

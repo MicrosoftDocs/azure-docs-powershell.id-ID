@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMCustomScriptExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMCustomScriptExtension.md
 ms.openlocfilehash: 63a927b22f28a6ff4a08c7d5838849f04720fea2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140485401"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141806774"
 ---
 # Set-AzVMCustomScriptExtension
 
@@ -19,7 +19,7 @@ ms.locfileid: "140485401"
 Menambahkan ekstensi skrip kustom ke mesin virtual.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmcustomscriptextension) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmcustomscriptextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -92,22 +92,22 @@ Set-AzVMCustomScriptExtension -InputObject <VirtualMachineCustomScriptExtensionC
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVMCustomScriptExtension** menambahkan skrip kustom Ekstensi Mesin Virtual ke komputer virtual.
-Ekstensi ini memungkinkan Anda menjalankan skrip sendiri di komputer virtual.
+Cmdlet **Set-AzVMCustomScriptExtension** menambahkan skrip kustom Virtual Machine Extension ke mesin virtual.
+Ekstensi ini memungkinkan Anda menjalankan skrip Anda sendiri di mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan skrip kustom
+### Contoh 1: Menambahkan skrip kustom
 ```powershell
 PS C:\> Set-AzVMCustomScriptExtension -ResourceGroupName "ResourceGroup11" -Location "Central US" -VMName "VirtualMachine07" -Name "ContosoTest" -TypeHandlerVersion "1.1" -StorageAccountName "Contoso" -StorageAccountKey <StorageKey> -FileName "ContosoScript.exe" -ContainerName "Scripts"
 ```
 
 Perintah ini menambahkan skrip kustom ke mesin virtual bernama VirtualMachine07.
-File skrip tidak contososcript.exe.
+File skrip contososcript.exe.
 
 ### Contoh 2
 
-Menambahkan ekstensi skrip kustom ke mesin virtual. (otomatisgenerated)
+Menambahkan ekstensi skrip kustom ke mesin virtual. (autogenerasi)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Set-AzVMCustomScriptExtension -Argument <String> -ContainerName 'Scripts' -DefaultProfile <IAzureContextContainer> -FileName 'ContosoScript.exe' -Location 'Central US' -Name 'ContosoTest' -ResourceGroupName 'ResourceGroup11' -Run 'myScript.ps1' -SecureExecution -StorageAccountKey <String> -StorageAccountName 'Contoso' -TypeHandlerVersion '1.1' -VMName 'VirtualMachine07'
@@ -116,7 +116,7 @@ Set-AzVMCustomScriptExtension -Argument <String> -ContainerName 'Scripts' -Defau
 ## PARAMETERS
 
 ### -Argumen
-Menentukan argumen yang meneruskan ekstensi skrip ke skrip.
+Menentukan argumen yang dikirimkan ekstensi skrip ke skrip.
 
 ```yaml
 Type: System.String
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -NamaFile
-Menentukan nama file skrip. Jika file disimpan di penyimpanan Blob Azure, nilai nama file peka huruf besar kecil. Nama file yang disimpan di penyimpanan File Azure tidak peka huruf besar kecil.
+Menentukan nama file skrip. Jika file disimpan di penyimpanan Azure Blob, nilai nama file peka huruf besar/kecil. Nama file file yang disimpan di penyimpanan File Azure tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String[]
@@ -240,9 +240,9 @@ Accept wildcard characters: False
 ```
 
 ### -ForceRerun
-Mengindikasikan bahwa cmdlet ini memaksa jalankan ulang konfigurasi ekstensi yang sama pada mesin virtual tanpa menghapus instalasi dan menginstal ulang ekstensi.
-Nilai dapatlah string apa pun yang berbeda dari nilai saat ini.
-Jika forceUpdateTag tidak diubah, pembaruan pada pengaturan publik atau yang diproteksi masih diterapkan oleh penanganan.
+Menunjukkan bahwa cmdlet ini memaksa pengintaian ulang konfigurasi ekstensi yang sama pada mesin virtual tanpa menghapus instalan dan menginstal ulang ekstensi.
+Nilai dapat berupa string apa pun yang berbeda dari nilai saat ini.
+Jika forceUpdateTag tidak diubah, pembaruan untuk pengaturan publik atau terproteksi masih diterapkan oleh handler.
 
 ```yaml
 Type: System.String
@@ -272,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi mesin virtual.
+Menentukan lokasi mesin maya.
 
 ```yaml
 Type: System.String
@@ -314,7 +314,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Memulai operasi dan segera mengembalikannya, sebelum operasi selesai. Untuk mengetahui apakah operasi berhasil diselesaikan, gunakan beberapa mekanisme lain.
+Memulai operasi dan segera kembali, sebelum operasi selesai. Untuk menentukan apakah operasi telah berhasil diselesaikan, gunakan beberapa mekanisme lain.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -329,7 +329,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: System.String
@@ -358,7 +358,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Run
+### -Jalankan
 Menentukan perintah untuk digunakan yang menjalankan skrip Anda.
 
 ```yaml
@@ -374,8 +374,8 @@ Accept wildcard characters: False
 ```
 
 ### -SecureExecution
-Menunjukkan bahwa cmdlet ini memastikan bahwa nilai parameter *Jalankan* tidak masuk ke server atau dikembalikan ke pengguna menggunakan API ekstensi GET.
-Nilai Jalankan *mungkin berisi* rahasia atau kata sandi untuk disampaikan ke file skrip dengan aman.
+Menunjukkan bahwa cmdlet ini memastikan bahwa nilai parameter *Jalankan* tidak dicatat di server atau dikembalikan kepada pengguna dengan menggunakan API ekstensi GET.
+Nilai *Jalankan* mungkin berisi rahasia atau kata sandi untuk dikirimkan ke file skrip dengan aman.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -417,7 +417,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Tentukan nama akun penyimpanan Azure tempat cmdlet ini menyimpan skrip.
+Menentukan nama akun penyimpanan Azure tempat cmdlet ini menyimpan skrip.
 
 ```yaml
 Type: System.String
@@ -443,7 +443,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -StorageEndpointFix
+### -StorageEndpointSuffix
 Menentukan akhiran titik akhir penyimpanan.
 
 ```yaml
@@ -471,8 +471,8 @@ Accept wildcard characters: False
 ```
 
 ### -TypeHandlerVersion
-Menentukan versi ekstensi untuk digunakan untuk komputer virtual ini.
-Untuk mendapatkan versi, jalankan cmdlet Get-AzVMExtensionImage dengan nilai Microsoft.Compute untuk parameter *PublisherName* dan CustomScriptExtension untuk parameter *Type* .
+Menentukan versi ekstensi yang akan digunakan untuk mesin virtual ini.
+Untuk mendapatkan versi, jalankan cmdlet Get-AzVMExtensionImage dengan nilai Microsoft.Compute untuk parameter *PublisherName* dan CustomScriptExtension untuk parameter *Tipe* .
 
 ```yaml
 Type: System.String
@@ -488,7 +488,7 @@ Accept wildcard characters: False
 
 ### -VMName
 Menentukan nama mesin virtual.
-Cmdlet ini menambahkan ekstensi skrip kustom untuk komputer virtual yang ditentukan parameter ini.
+Cmdlet ini menambahkan ekstensi skrip kustom untuk mesin virtual yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -518,7 +518,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -534,7 +534,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -549,7 +549,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -567,8 +567,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzvMCustomScriptExtension](./Get-AzVMCustomScriptExtension.md)
+[Get-AzVMCustomScriptExtension](./Get-AzVMCustomScriptExtension.md)
 
-[Remove-AzvMCustomScriptExtension](./Remove-AzVMCustomScriptExtension.md)
+[Remove-AzVMCustomScriptExtension](./Remove-AzVMCustomScriptExtension.md)
 
 

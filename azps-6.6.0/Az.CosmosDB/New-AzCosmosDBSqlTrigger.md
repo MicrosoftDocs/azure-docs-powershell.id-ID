@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlTrigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlTrigger.md
 ms.openlocfilehash: de3a4bef29b217d19fe16b8009bdfcb2693070a3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140310793"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141868766"
 ---
 # New-AzCosmosDBSqlTrigger
 
 ## SYNOPSIS
-Membuat CosmosDB Sql Trigger baru.
+Membuat Pemicu CosmosDB Sql baru.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbsqltrigger) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbsqltrigger) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ New-AzCosmosDBSqlTrigger -Name <String> -Body <String> [-TriggerOperation <Strin
 ```
 
 ## DESCRIPTION
-Membuat CosmosDB Sql Trigger baru.
+Membuat Pemicu CosmosDB Sql baru.
 
 ## EXAMPLES
 
@@ -55,7 +55,7 @@ Resource : Microsoft.Azure.Commands.CosmosDB.Models.PSSqlTriggerGetPropertiesRes
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun database Cosmos DB.
 
 ```yaml
@@ -70,8 +70,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Body
-Badan Pemicu.
+### -Isi
+Isi pemicu.
 
 ```yaml
 Type: System.String
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 
 ### -TriggerOperation
 Operasi yang dikaitkan dengan pemicu.
-Kemungkinan nilai termasuk: 'Semua', 'Buat', 'Perbarui', 'Hapus', 'Ganti'
+Nilai yang memungkinkan termasuk: 'Semua', 'Buat', 'Perbarui', 'Hapus', 'Ganti'
 
 ```yaml
 Type: System.String
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 
 ### -TriggerType
 Tipe Pemicu.
-Kemungkinan nilai termasuk: 'Pra', 'Posting'
+Nilai yang memungkinkan termasuk: 'Pra', 'Posting'
 
 ```yaml
 Type: System.String
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

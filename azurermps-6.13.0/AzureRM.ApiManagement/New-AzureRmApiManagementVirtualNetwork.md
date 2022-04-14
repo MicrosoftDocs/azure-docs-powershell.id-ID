@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/New-AzureRmApiManagementVirtualNetwork.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/New-AzureRmApiManagementVirtualNetwork.md
 ms.openlocfilehash: abfcbec55ba3f53986a63a8c0964320c10fc91ec
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "132415749"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141845940"
 ---
 # New-AzureRmApiManagementVirtualNetwork
 
@@ -28,7 +28,7 @@ New-AzureRmApiManagementVirtualNetwork -Location <String> -SubnetResourceId <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmApiManagementVirtualNetwork** adalah perintah bantuan untuk membuat instans **PsApiManagementVirtualNetwork**.
+Cmdlet **New-AzureRmApiManagementVirtualNetwork** adalah perintah pembantu untuk membuat contoh **PsApiManagementVirtualNetwork**.
 Perintah ini digunakan dengan cmdlet **Update-AzureRmApiManagementDeployment** .
 
 ## EXAMPLES
@@ -57,7 +57,7 @@ Contoh ini membuat jaringan virtual lalu memanggil cmdlet **Update-AzureRmApiMan
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 
 ### -Lokasi
 Menentukan lokasi di antara kawasan yang didukung untuk layanan Manajemen Api.
-Untuk mendapatkan lokasi yang valid, gunakan cmdlet Get-AzureRmResourceProvider -ProviderNamespace "Microsoft.ApiManagement" | di mana {$_. ResourceTypes[0]. ResourceTypeName -eq "service"} | Select-Object Lokasi
+Untuk mendapatkan lokasi yang valid, gunakan cmdlet Get-AzureRmResourceProvider -ProviderNamespace "Microsoft.ApiManagement" | di mana {$_. ResourceTypes[0]. ResourceTypeName -eq "service"} | Lokasi Select-Object
 
 ```yaml
 Type: System.String
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetResourceId
-Menentukan ID sumber daya subnet dari jaringan virtual.
+Menentukan ID sumber daya subnet dari jaringan maya.
 
 ```yaml
 Type: System.String
@@ -103,11 +103,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

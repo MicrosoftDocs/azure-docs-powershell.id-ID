@@ -4,16 +4,16 @@ ms.assetid: D0A2B454-7BFF-4D4D-8A85-FDB47249758F
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 858506bfe1178d1c858a38eb71ed6462e7f5d115
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426257"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141816061"
 ---
 # Set-AzureServiceProject
 
 ## SYNOPSIS
-Mengatur lokasi default, langganan, slot, dan akun penyimpanan untuk layanan saat ini.
+Mengatur akun lokasi, langganan, slot, dan penyimpanan default untuk layanan saat ini.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -37,17 +37,17 @@ Nilai ini digunakan setiap kali layanan diterbitkan ke awan.
 PS C:\> Set-AzureServiceProject -Location "North Central US" -Slot Production -Storage myStorageAccount -Subscription myAzureSubscription
 ```
 
-Mengatur lokasi penyebaran untuk layanan ke kawasan Amerika Tengah Utara.
-Mengatur slot penyebaran ke Produksi. Mengatur akun penyimpanan yang akan digunakan untuk menentukan definisi layanan pada myStorageAccount.
-Mengatur langganan yang akan menghosting layanan ke langganan langganan saya.
-Setiap kali diterbitkan ke awan, layanan akan dihosting di pusat data di kawasan AS Tengah Utara, aplikasi akan memperbarui slot penyebaran, dan akan menggunakan akun langganan dan penyimpanan yang ditentukan.
+Mengatur lokasi penyebaran untuk layanan ke kawasan North Central US.
+Mengatur slot penyebaran ke Produksi. Mengatur akun penyimpanan yang akan digunakan untuk tahap definisi layanan ke myStorageAccount.
+Mengatur langganan yang akan menghosting layanan ke mySubscription.
+Setiap kali layanan diterbitkan ke awan, layanan akan dihosting di pusat data di kawasan North Central US, layanan akan memperbarui slot penyebaran, dan akan menggunakan akun langganan dan penyimpanan yang ditentukan.
 
 ## PARAMETERS
 
 ### -Lokasi
 Kawasan tempat layanan akan dihosting.
 Nilai ini digunakan setiap kali layanan diterbitkan ke awan.
-Nilai yang memungkinkan adalah: Asia Anywhere, Anywhere Europe, Anywhere US, Asia Timur, AS Timur, AS Tengah Utara, Eropa Utara, AS Tengah Selatan, Asia Tenggara, Eropa Barat, AS Barat.
+Nilai yang memungkinkan adalah: Di mana saja Asia, Di mana saja Eropa, Di mana saja AS, Asia Timur, AS Timur, Amerika Tengah Utara, Eropa Utara, AS Tengah Selatan, Asia Tenggara, Eropa Barat, AS Barat.
 
 ```yaml
 Type: String
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan bahwa cmdlet ini mengembalikan objek yang mewakili item tempat operasinya.
+Menunjukkan bahwa cmdlet ini mengembalikan objek yang mewakili item tempatnya beroperasi.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -78,8 +78,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -94,9 +94,9 @@ Accept wildcard characters: False
 ```
 
 ### -Slot
-Slot (produksi atau peresnjang) tempat layanan akan dihosting.
+Slot (produksi atau pementasan) tempat layanan akan dihosting.
 Nilai ini digunakan setiap kali layanan diterbitkan ke awan.
-Nilai yang mungkin adalah: Produksi, Pementasan.
+Nilai yang memungkinkan adalah: Produksi, Pementasan.
 
 ```yaml
 Type: String
@@ -111,8 +111,8 @@ Accept wildcard characters: False
 ```
 
 ### -Storage
-Akun penyimpanan yang akan digunakan saat mengunggah paket layanan ke cloud.
-Jika akun penyimpanan tidak ada, akun akan dibuat saat layanan diterbitkan ke awan.
+Akun penyimpanan yang akan digunakan saat mengunggah paket layanan ke awan.
+Jika akun penyimpanan tidak ada, akun penyimpanan akan dibuat saat layanan diterbitkan ke awan.
 
 ```yaml
 Type: String
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

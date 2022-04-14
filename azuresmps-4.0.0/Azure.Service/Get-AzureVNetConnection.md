@@ -3,12 +3,12 @@ external help file: Microsoft.WindowsAzure.Commands.ServiceManagement.Network.dl
 ms.assetid: 7B749B29-9820-4E23-B5AF-F5535251629A
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 7ba58f0388903e371a6072add8b8ae172564399cf50df8c308951b69a26aac26
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 62a7595f8f635a6609d00520eae2bc91756ddd47
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419389"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141816674"
 ---
 # Get-AzureVNetConnection
 
@@ -25,15 +25,15 @@ Get-AzureVNetConnection -VNetName <String> [-Profile <AzureSMProfile>] [<CommonP
 
 ## DESCRIPTION
 Cmdlet **Get-AzureVNetConnection** mengembalikan objek yang menentukan semua koneksi jaringan privat virtual (VPN) aktif ke jaringan virtual Azure.
-Koneksi VPN menyertakan VPN antar situs-ke-situs VPN dan jaringan virtual ke koneksi jaringan virtual.
+Koneksi VPN termasuk VPN situs-ke-situs lintas situs dan jaringan virtual ke koneksi jaringan virtual.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

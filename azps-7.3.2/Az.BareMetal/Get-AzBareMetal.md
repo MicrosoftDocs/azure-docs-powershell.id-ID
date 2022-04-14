@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.baremetal/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BareMetal/help/Get-AzBareMetal.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BareMetal/help/Get-AzBareMetal.md
-ms.openlocfilehash: 24fd87cceb5d2527707d7ea9a65d4a8d69296e3f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: bf2a5c4b36bec9b696a8aaba4ad1e5de3690d4b6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140180202"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142073983"
 ---
 # Get-AzBareMetal
 
 ## SYNOPSIS
 Mendapatkan instans Azure BareMetal untuk langganan, grup sumber daya, dan nama instans yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.baremetal/get-azbaremetal) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Mendapatkan instans Azure BareMetal untuk langganan, grup sumber daya, dan nama 
 Get-AzBareMetal [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzBareMetal -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -66,7 +69,7 @@ southcentralus oelnvmetest  SAT09A-T230
 
 Mendapatkan instans Azure BareMetal untuk langganan, grup sumber daya, dan nama instans yang ditentukan.
 
-### Contoh 3: Daftar1
+### Contoh 3: List1
 ```powershell
 PS C:\> Get-AzBareMetal -ResourceGroupName MWH03A-T210
 
@@ -76,7 +79,7 @@ westus2  rhel79ora01 MWH03A-T210
 westus2  rhel79ora02 MWH03A-T210
 ```
 
-Mendapatkan contoh Azure BareMetal untuk grup sumber daya.
+Mendapatkan instans Azure BareMetal untuk grup sumber daya.
 
 ## PARAMETERS
 
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Azure BareMetal pada instans Azure.
+Nama Azure BareMetal di instans Azure.
 
 ```yaml
 Type: System.String
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -4,16 +4,16 @@ ms.assetid: F9C8D0AA-ED97-43E8-ADB1-5AE1A4517666
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: a6e9dae565b3b46e96d035401bf5ef5c2329afa0
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428033"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141815748"
 ---
 # Start-AzureStorSimpleDeviceBackupRestoreJob
 
 ## SYNOPSIS
-Memulai pekerjaan yang memulihkan cadangan pada perangkat StorSimple.
+Memulai pekerjaan yang memulihkan cadangan di perangkat StorSimple.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,14 +25,14 @@ Start-AzureStorSimpleDeviceBackupRestoreJob -DeviceName <String> -BackupId <Stri
  [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
 
-### IdentifyById
+### IdentifikasiById
 ```
 Start-AzureStorSimpleDeviceBackupRestoreJob -DeviceName <String> -BackupId <String> -SnapshotId <String>
  [-WaitForComplete] [-Force] [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzureStorSimpleDeviceBackupRestoreJob** memulai pekerjaan yang memulihkan cadangan pada perangkat StorSimple.
+Cmdlet **Start-AzureStorSimpleDeviceBackupRestoreJob** memulai pekerjaan yang memulihkan cadangan di perangkat StorSimple.
 Tentukan ID cadangan dan ID snapshot opsional.
 
 ## EXAMPLES
@@ -55,10 +55,10 @@ StatusCode : OK
 RequestId  : e0aa2dcd2f197a8588c40a067fe0e519
 ```
 
-Perintah ini memulai pekerjaan yang memulihkan objek cadangan yang memiliki ID tertentu, dan snapshot terkait, pada perangkat yang bernama Contoso63-AppVm.
-Perintah menentukan parameter *WaitForComplete,* sehingga pekerjaan selesai sebelum cmdlet mengembalikan kontrol ke konsol.
+Perintah ini memulai pekerjaan yang memulihkan objek cadangan yang memiliki ID tertentu, dan snapshot terkaitnya, pada perangkat bernama Contoso63-AppVm.
+Perintah menentukan parameter *WaitForComplete* , sehingga pekerjaan selesai sebelum cmdlet mengembalikan kontrol ke konsol.
 
-### Contoh 2: Mulai pekerjaan untuk memulihkan snapshot tertentu
+### Contoh 2: Memulai pekerjaan untuk memulihkan snapshot tertentu
 ```
 PS C:\>Start-AzureStorSimpleDeviceBackupRestoreJob -DeviceName "Contoso63-AppVm" -BackupId "b3b50534-763c-4b05-9724-5ecf62bde721" -SnapshotId "2d0cfad7-46bf-4266-8859-96549646e947_0000000000000000" -Force
 
@@ -67,8 +67,8 @@ The start job is submitted successfully. Please use the command Get-AzureStorSim
 ```
 
 Perintah ini memulai pekerjaan yang memulihkan snapshot cadangan yang memiliki ID tertentu.
-Perintah menentukan objek cadangan dengan ID pada perangkat bernama Contoso63-AppVm.
-Perintah menentukan parameter *Paksa,* sehingga parameter memulai pekerjaan tanpa meminta Anda untuk mengonfirmasi.
+Perintah menentukan objek cadangan menurut ID pada perangkat bernama Contoso63-AppVm.
+Perintah menentukan parameter *Paksa* , sehingga memulai pekerjaan tanpa meminta Anda untuk mengonfirmasi.
 
 ## PARAMETERS
 
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceName
-Menentukan nama perangkat StorSimple di mana cadangan ada.
+Menentukan nama perangkat StorSimple tempat cadangan ada.
 
 ```yaml
 Type: String
@@ -102,8 +102,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Mengindikasikan bahwa cmdlet ini tidak meminta konfirmasi Anda.
+### -Paksa
+Menunjukkan bahwa cmdlet ini tidak meminta konfirmasi kepada Anda.
 
 ```yaml
 Type: SwitchParameter
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -WaitForComplete
-Menunjukkan bahwa cmdlet ini menunggu hingga operasi selesai sebelum mengembalikan kontrol ke Windows PowerShell baru.
+Menunjukkan bahwa cmdlet ini menunggu operasi selesai sebelum mengembalikan kontrol ke konsol Windows PowerShell.
 
 ```yaml
 Type: SwitchParameter
@@ -163,17 +163,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
 ### TaskStatusInfo, TaskResponse
-Cmdlet ini mengembalikan objek **TaskStatusInfo** jika Anda menentukan parameter *WaitForComplete.*
-Jika Anda tidak menentukan parameter itu, parameter itu mengembalikan **objek TaskResponse.**
+Cmdlet ini mengembalikan objek **TaskStatusInfo** jika Anda menentukan parameter *WaitForComplete* .
+Jika Anda tidak menentukan parameter tersebut, maka akan mengembalikan objek **TaskResponse** .
 
 ## CATATAN
 

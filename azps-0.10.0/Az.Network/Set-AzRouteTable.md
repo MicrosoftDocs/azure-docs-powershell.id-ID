@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Set-AzRouteTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Set-AzRouteTable.md
 ms.openlocfilehash: 531c2724289e90f92bf14347518d53b6208be932
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426480"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141873950"
 ---
 # Set-AzRouteTable
 
@@ -30,7 +30,7 @@ Cmdlet **Set-AzRouteTable** menetapkan status tujuan untuk tabel rute Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan rute lalu tetapkan status tujuan tabel rute
+### Contoh 1: Tambahkan rute lalu atur status tujuan tabel rute
 ```
 PS C:\>Get-AzRouteTable -ResourceGroupName "ResourceGroup11" -Name "RouteTable01" | Add-AzRouteConfig -Name "Route07" -AddressPrefix 10.2.0.0/16 -NextHopType "VnetLocal" | Set-AzRouteTable
 Name              : RouteTable01
@@ -75,14 +75,14 @@ Routes            : [
 Subnets           : []
 ```
 
-Perintah ini mendapatkan tabel rute yang bernama RouteTable01 dengan Get-AzRouteTable cmdlet.
-Perintah itu meneruskan tabel itu ke Add-AzRouteConfig cmdlet dengan menggunakan operator pipeline.
-**Add-AzRouteConfig** menambahkan rute bernama Route07, lalu meneruskan hasilnya ke cmdlet saat ini, yang memperbarui tabel agar mencerminkan perubahan Anda.
+Perintah ini mendapatkan tabel rute bernama RouteTable01 menggunakan cmdlet Get-AzRouteTable.
+Perintah melewati tabel tersebut ke cmdlet Add-AzRouteConfig menggunakan operator pipeline.
+**Add-AzRouteConfig** menambahkan rute bernama Route07, lalu meneruskan hasil ke cmdlet saat ini, yang memperbarui tabel untuk mencerminkan perubahan Anda.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -RouteTable
-Menentukan objek tabel rute yang menyatakan status tujuan cmdlet mengatur tabel rute.
+Menentukan objek tabel rute yang mewakili status tujuan cmdlet ini mengatur tabel rute.
 
 ```yaml
 Type: PSRouteTable
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -157,12 +157,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSRouteTable
-Parameter 'RouteTable' menerima nilai tipe 'PSRouteTable' dari saluran
+Parameter 'RouteTable' menerima nilai tipe 'PSRouteTable' dari pipeline
 
 ## OUTPUTS
 

@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Reservations/Commands.Reservations/help/Get-AzureRmReservationOrderId.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Reservations/Commands.Reservations/help/Get-AzureRmReservationOrderId.md
 ms.openlocfilehash: 1e60ca2ce1a845fa460e14a4e99b921fa4c085ad
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140863634"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141817979"
 ---
 # Get-AzureRmReservationOrderId
 
 ## SYNOPSIS
-Dapatkan daftar ID yang `ReservationOrder` berlaku.
+Dapatkan daftar Id yang berlaku `ReservationOrder` .
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Get-AzureRmReservationOrderId [-SubscriptionId <Guid>] [-DefaultProfile <IAzureC
 ```
 
 ## DESCRIPTION
-Dapatkan ID yang berlaku `ReservationOrder`yang dapat diterapkan ke langganan ini.
+Dapatkan Id dari s yang dapat `ReservationOrder`diterapkan ke langganan ini.
 
 ## EXAMPLES
 
@@ -36,14 +36,14 @@ Dapatkan ID yang berlaku `ReservationOrder`yang dapat diterapkan ke langganan in
 PS C:\> Get-AzureRmReservationOrderId
 ```
 
-Mulai menerapkan `ReservationOrder` langganan default
+Dapatkan aplikasi `ReservationOrder` untuk langganan default
 
 ### Contoh 2
 ```
 PS C:\> Get-AzureRmReservationOrderId -SubscriptionId "1111aaaa-b1b2-c0c2-d0d2-00000fffff"
 ```
 
-Dapatkan pendaftaran `ReservationOrder` untuk langganan tertentu
+Dapatkan aplikasi `ReservationOrder` untuk langganan tertentu
 
 ## PARAMETERS
 
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Id langganan agar diterapkan `ReservationOrder`
+Id langganan untuk mendapatkan s yang diterapkan `ReservationOrder`
 
 ```yaml
 Type: System.Guid
@@ -78,11 +78,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

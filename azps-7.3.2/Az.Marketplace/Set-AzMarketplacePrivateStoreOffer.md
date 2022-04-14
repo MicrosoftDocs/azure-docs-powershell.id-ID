@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Set-AzMarketplacePrivateStoreOffer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Set-AzMarketplacePrivateStoreOffer.md
-ms.openlocfilehash: 7f1888a3bdd969b5e1225b67471a8ebc1f7d8f78
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3a67ce8132f2d1cde13bfcd6b22f8af3ff3f0da1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140401986"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141850046"
 ---
 # Set-AzMarketplacePrivateStoreOffer
 
 ## SYNOPSIS
-Memperbarui atau membuat penawaran untuk bursa pribadi.
+Pembaruan atau membuat penawaran untuk bursa pribadi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.marketplace/set-azmarketplaceprivatestoreoffer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Name                      : publisherid.offerid
 Type                      : Microsoft.Marketplace/privateStores/offers
 ```
 
-Membuat penawaran dengan privat + paket publik untuk bursa pribadi yang dibuat di bawah lingkup penyewa. 
+Membuat penawaran dengan paket pribadi + publik untuk bursa pribadi yang dibuat di bawah lingkup penyewa. 
 
 ### Contoh 2
 ```powershell
@@ -88,7 +91,7 @@ Name                      : publisherid.offerid
 Type                      : Microsoft.Marketplace/privateStores/offers
 ```
 
-Pembaruan penawaran dengan paket privat + publik untuk bursa pribadi yang dibuat di bawah lingkup penyewa. Etag diperlukan.
+Penawaran pembaruan dengan paket pribadi + publik untuk bursa pribadi yang dibuat di bawah lingkup penyewa. Etag diperlukan.
 
 ### Contoh 4
 ```powershell
@@ -108,7 +111,7 @@ Name                      : publisherid.offerid
 Type                      : Microsoft.Marketplace/privateStores/offers
 ```
 
-Pembaruan menawarkan untuk bursa pribadi dengan paket pribadi saja yang dibuat di bawah lingkup langganan. Etag diperlukan.
+Penawaran pembaruan untuk bursa pribadi dengan paket pribadi saja yang dibuat di bawah lingkup langganan. Etag diperlukan.
 
 
 ## PARAMETERS
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -ETag
-eTag penawaran Azure Marketplace privateStore untuk pembaruan
+Marketplace Azure eTag penawaran privateStore untuk pembaruan
 
 ```yaml
 Type: System.String
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -OfferId
-Penawaran Azure Marketplace privateStore diperlukan
+Penawaran privateStore Marketplace Azure yang diperlukan
 
 ```yaml
 Type: System.String
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateStoreId
-Penawaran Azure Marketplace privateStore yang diperlukan
+Penawaran privateStore Marketplace Azure yang diperlukan
 
 ```yaml
 Type: System.String
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -SpecificPlanIdsLimitation
-Batasan id paket tertentu dari penawaran Azure Marketplace privateStore
+Batasan id paket privateStore yang diperlukan Marketplace Azure
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -220,11 +223,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

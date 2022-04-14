@@ -4,16 +4,16 @@ Module Name: Azs.Subscriptions.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: d8ef41d414d12182c15d9ec5b01138e0110dee9f
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136579723"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141813956"
 ---
 # Get-AzsPlanMetric
 
 ## SYNOPSIS
-Dapatkan metrik paket.
+Dapatkan metrik rencana.
 
 ## SYNTAX
 
@@ -22,7 +22,7 @@ Get-AzsPlanMetric [-ResourceGroupName] <String> [-PlanName] <String> [<CommonPar
 ```
 
 ## DESCRIPTION
-Dapatkan metrik paket.
+Dapatkan metrik rencana.
 
 ## EXAMPLES
 
@@ -31,7 +31,7 @@ Dapatkan metrik paket.
 Get-AzsPlanMetric -ResourceGroupName rg1 -PlanName plan1
 ```
 
-Dapatkan metrik paket.
+Dapatkan metrik rencana.
 
 ## PARAMETERS
 
@@ -51,7 +51,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup sumber daya sumber daya yang berada di bawahnya.
+Grup sumber daya tempat sumber daya berada di bawah.
 
 ```yaml
 Type: String
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/Get-AzureRmRecoveryServicesBackupItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/Get-AzureRmRecoveryServicesBackupItem.md
 ms.openlocfilehash: a1037f742fab47ae84edae6e1558e313e563c25a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421605"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141818735"
 ---
 # Get-AzureRmRecoveryServicesBackupItem
 
 ## SYNOPSIS
-Mendapatkan item dari wadah dalam Cadangkan.
+Mendapatkan item dari wadah di Cadangan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -46,10 +46,10 @@ Get-AzureRmRecoveryServicesBackupItem [-Policy] <PolicyBase> [[-Name] <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmRecoveryServicesBackupItem** mendapatkan item dalam wadah atau nilai di Azure Backup dan status proteksi item.
-Wadah yang terdaftar di vault Layanan Pemulihan Azure dapat memiliki satu atau beberapa item yang dapat diproteksi.
+Cmdlet **Get-AzureRmRecoveryServicesBackupItem** mendapatkan item dalam wadah atau nilai dalam Azure Backup dan status proteksi item.
+Wadah yang terdaftar pada kubah Layanan Pemulihan Azure dapat memiliki satu atau beberapa item yang dapat dilindungi.
 Untuk mesin virtual Azure, hanya ada satu item cadangan dalam wadah mesin virtual.
-Mengatur konteks vault menggunakan cmdlet Set-AzureRmRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
+Mengatur konteks kubah menggunakan cmdlet Set-AzureRmRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
@@ -59,8 +59,8 @@ PS C:\>$Container = Get-AzureRmRecoveryServicesBackupContainer -ContainerType Az
 PS C:\> $BackupItem = Get-AzureRmRecoveryServicesBackupItem -Container $Container -WorkloadType AzureVM
 ```
 
-Perintah pertama mendapatkan wadah tipe AzureVM, lalu menyimpannya di $Container variabel.
-Perintah kedua mendapatkan item Cadangan bernama V2VM di $Container, lalu menyimpannya di $BackupItem cadangan.
+Perintah pertama mendapatkan wadah tipe AzureVM, lalu menyimpannya dalam variabel $Container.
+Perintah kedua mendapatkan item Cadangan bernama V2VM dalam $Container, lalu menyimpannya dalam variabel $BackupItem.
 
 ## PARAMETERS
 
@@ -87,9 +87,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Container
-Menentukan objek wadah tempat cmdlet ini mendapatkan item cadangan.
-Untuk mendapatkan **AzureRmRecoveryServicesBackupContainer,** gunakan cmdlet Get-AzureRmRecoveryServicesBackupContainer cmdlet.
+### -Kontainer
+Menentukan objek kontainer tempat cmdlet ini mendapatkan item cadangan.
+Untuk mendapatkan cmdlet **AzureRmRecoveryServicesBackupContainer**, gunakan cmdlet Get-AzureRmRecoveryServicesBackupContainer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ContainerBase
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Objek kebijakan proteksi.
+Objek kebijakan perlindungan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.PolicyBase
@@ -149,16 +149,16 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionState
-Menentukan status proteksi.
+Menentukan status perlindungan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - IRPending.
 Sinkronisasi awal belum dimulai dan belum ada titik pemulihan. 
-- Diproteksi.
-Proteksi sedang berlangsung. 
+- Dilindungi.
+Perlindungan sedang berlangsung. 
 - ProtectionError.
 Terdapat kesalahan proteksi.
-- ProtectionStopped.
-Proteksi dinonaktifkan.
+- Perlindungan dihentikan.
+Perlindungan dinonaktifkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ItemProtectionState
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -250,6 +250,6 @@ Parameter: VaultId (ByValue)
 
 [Get-AzureRmRecoveryServicesBackupRecoveryPoint](./Get-AzureRmRecoveryServicesBackupRecoveryPoint.md)
 
-[Restore-AzureRmRecoveryServicesBackupItem](./Restore-AzureRmRecoveryServicesBackupItem.md)
+[Pulihkan-AzureRmRecoveryServicesBackupItem](./Restore-AzureRmRecoveryServicesBackupItem.md)
 
 

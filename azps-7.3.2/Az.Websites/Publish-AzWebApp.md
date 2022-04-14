@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/publish
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Publish-AzWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Publish-AzWebApp.md
-ms.openlocfilehash: 94b781ee601dcf42521765ba11d9b6c60f1e17b8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 05d5e4f329cb08e03e376141d9e919e707fa4b49
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140553382"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141848642"
 ---
 # Publish-AzWebApp
 
 ## SYNOPSIS
 Menyebarkan Azure Web App dari file ZIP, JAR, atau WAR menggunakan zipdeploy. 
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/publish-azwebapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Publish-AzWebApp -ArchivePath <String> [-AsJob] [-WebApp] <PSSite> [-Force] [-De
 ```
 
 ## DESCRIPTION
-Cmdlet **Publish-AzWebApp** mengunggah konten ke Azure Web App yang sudah ada. Konten harus dimasukkan dalam file ZIP jika menggunakan tumpukan seperti .NET, Python, atau Node, atau file WAR atau JAR jika menggunakan Java. Konten harus sudah dibuat sebelumnya dan siap untuk dijalankan tanpa langkah build tambahan selama penyebaran. Cmdlet ini menggunakan fitur zipdeploy daneploy Kudu untuk menyebarkan konten. Lihat wiki Kudu untuk detail tentang bagaimana zipdeploy dan wikieploy berfungsi, dan cara mengemas aplikasi web dengan benar untuk penyebaran. https://aka.ms/kuduzipdeploy dan https://aka.ms/kuduwardeploy berisi detail yang bermanfaat tentang zipdeploy dan zipeploy.
+Cmdlet **Publish-AzWebApp** mengunggah konten ke Azure Web App yang sudah ada. Konten harus dimas dalam file ZIP jika menggunakan tumpukan seperti .NET, Python, atau Node, atau file WAR atau JAR jika menggunakan Java. Konten harus dibuat sebelumnya dan siap dijalankan tanpa langkah build tambahan selama penyebaran. Cmdlet ini menggunakan fitur zipdeploy dan wardeploy Kudu untuk menyebarkan konten. Lihat wiki Kudu untuk detail tentang cara kerja zipdeploy dan wardeploy, dan cara mengemas aplikasi web untuk penggunaan dengan benar. https://aka.ms/kuduzipdeploy dan https://aka.ms/kuduwardeploy berisi detail bermanfaat tentang zipdeploy dan wardeploy.
 
 ## EXAMPLES
 
@@ -41,14 +44,14 @@ Cmdlet **Publish-AzWebApp** mengunggah konten ke Azure Web App yang sudah ada. K
 PS C:\> Publish-AzWebApp -ResourceGroupName Default-Web-WestUS -Name MyApp -ArchivePath C:\project\app.zip
 ```
 
-Mengunggah konten pesan app.zip aplikasi web bernama MyApp milik grup sumber daya Default-Web-WestUS.
+Mengunggah konten app.zip ke aplikasi web bernama MyApp milik grup sumber daya Default-Web-WestUS.
 
 ### Contoh 2
 ```powershell
 PS C:\> Publish-AzWebApp -ResourceGroupName ContosoRG -Name ContosoApp -Slot Staging -ArchivePath C:\project\javaproject.war
 ```
 
-Mengunggah konten javaproject.war ke slot Pengembangan dari aplikasi web bernama ContosoApp milik grup sumber daya ContosoRG.
+Mengunggah konten javaproject.war ke slot Staging aplikasi web bernama ContosoApp milik grup sumber daya ContosoRG.
 
 ### Contoh 3
 ```powershell
@@ -56,7 +59,7 @@ PS C:\> $app = Get-AzWebApp -ResourceGroupName ContosoRG -Name ContosoApp
 PS C:\> Publish-AzWebApp -WebApp $app -ArchivePath C:\project\app.zip -AsJob
 ```
 
-Mengunggah konten akun app.zip aplikasi web yang bernama ContosoApp milik grup sumber daya ContosoRG. Cmdlet akan dijalankan di pekerjaan latar belakang.
+Mengunggah konten app.zip ke aplikasi web bernama ContosoApp milik grup sumber daya ContosoRG. Cmdlet akan dijalankan dalam pekerjaan latar belakang.
 
 ### Contoh 4
 ```powershell
@@ -69,7 +72,7 @@ PS C:\> $app = Get-AzWebApp -ResourceGroupName ContosoRG -Name ContosoApp
 PS C:\> Publish-AzWebApp -WebApp $app -ArchivePath C:\project\app.zip -Force
 ```
 
-Mengunggah konten akun java_app.jar ke aplikasi web bernama ContosoApp milik grup sumber daya ContosoRG. Jika -Force tidak ditentukan, anda akan meminta konfirmasi sebelum konten akan disebarkan.
+Mengunggah konten java_app.jar ke aplikasi web bernama ContosoApp milik grup sumber daya ContosoRG. Jika -Force tidak ditentukan, konfirmasi akan diminta sebelum konten disebarkan.
 
 ### Contoh 6
 ```powershell
@@ -77,7 +80,7 @@ PS C:\> $app = Get-AzWebApp -ResourceGroupName ContosoRG -Name ContosoApp
 PS C:\> Publish-AzWebApp -WebApp $app -ArchivePath C:\project\app.zip -Timeout 300000 -Force
 ```
 
-Mengunggah konten akun java_app.jar ke aplikasi web bernama ContosoApp milik grup sumber daya ContosoRG. Pengguna bisa Mengatur rentang waktu dalam Milidetik untuk menunggu sebelum waktu permintaan habis. Jika -Force tidak ditentukan, anda akan meminta konfirmasi sebelum konten akan disebarkan.
+Mengunggah konten java_app.jar ke aplikasi web bernama ContosoApp milik grup sumber daya ContosoRG. Pengguna dapat Mengatur rentang waktu dalam Milidetik untuk menunggu sebelum waktu permintaan habis. Jika -Force tidak ditentukan, konfirmasi akan diminta sebelum konten disebarkan.
 
 ## PARAMETERS
 
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,8 +114,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Opsi Hapus Paksa
+### -Paksa
+Opsi Hapus Secara Paksa
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,7 +189,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Timeout
+### -Waktu habis
 Mengatur rentang waktu dalam Milidetik untuk menunggu sebelum waktu permintaan habis.
 
 ```yaml
@@ -217,17 +220,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## CATATAN
 
