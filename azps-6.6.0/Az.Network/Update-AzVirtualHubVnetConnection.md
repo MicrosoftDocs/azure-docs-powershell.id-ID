@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVirtualHubVnetConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVirtualHubVnetConnection.md
 ms.openlocfilehash: 798882d3962292f50d86aef09a08190e885f2dbc
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139971465"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141908769"
 ---
 # Update-AzVirtualHubVnetConnection
 
@@ -18,7 +18,7 @@ ms.locfileid: "139971465"
 Memperbarui HubVirtualNetworkConnection yang sudah ada.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/update-azvirtualhubvnetconnection) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azvirtualhubvnetconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -81,12 +81,12 @@ RoutingConfiguration : {
                         }
 ```
 
-Langkah di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub di AS Tengah dalam grup sumber daya tersebut di Azure. Koneksi Jaringan Virtual juga dibuat yang merupakan peer Jaringan Virtual ke Virtual Hub. Virtual Network Connection ini kemudian diperbarui untuk mengaktifkan keamanan internet.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual di AS Tengah dalam grup sumber daya tersebut di Azure. Koneksi Virtual Network juga dibuat yang merupakan rekan Virtual Network ke Hub Virtual. Sambungan Virtual Network ini kemudian diperbarui untuk memfungsikan keamanan internet.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableInternetSecurity
-Aktifkan keamanan internet untuk koneksi ini.
+Fungsikan keamanan internet untuk sambungan ini.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Sumber daya hubvirtualnetworkconnection untuk memodifikasi.
+Sumber daya hubvirtualnetworkconnection untuk diubah.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSHubVirtualNetworkConnection
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya dari sumber daya hubvirtualnetworkconnection untuk memodifikasi.
+Id sumber daya sumber daya hubvirtualnetworkconnection untuk diubah.
 
 ```yaml
 Type: System.String
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -268,4 +268,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzRoutingConfiguration](./New-AzRoutingConfiguration.md)
+[Konfigurasi AzRouting Baru](./New-AzRoutingConfiguration.md)

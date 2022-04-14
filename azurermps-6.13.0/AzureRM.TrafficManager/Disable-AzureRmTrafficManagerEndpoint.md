@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/TrafficManager/Commands.TrafficManager2/help/Disable-AzureRmTrafficManagerEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/TrafficManager/Commands.TrafficManager2/help/Disable-AzureRmTrafficManagerEndpoint.md
 ms.openlocfilehash: af05a91fe2281d457cff649bf0de6d986f7f413a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426568"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141967191"
 ---
 # Disable-AzureRmTrafficManagerEndpoint
 
 ## SYNOPSIS
-Menonaktifkan titik akhir di Traffic Manager terkait.
+Menonaktifkan titik akhir di profil Traffic Manager.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,44 +29,44 @@ Disable-AzureRmTrafficManagerEndpoint -Name <String> -Type <String> -ProfileName
  [<CommonParameters>]
 ```
 
-### Object
+### Objek
 ```
 Disable-AzureRmTrafficManagerEndpoint -TrafficManagerEndpoint <TrafficManagerEndpoint> [-Force]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Disable-AzureRmTrafficManagerEndpoint** menonaktifkan titik akhir di profil Azure Traffic Manager.
+Cmdlet **Disable-AzureRmTrafficManagerEndpoint** menonaktifkan titik akhir dalam profil Azure Traffic Manager.
 
-Anda bisa menggunakan operator pipeline untuk mengirim objek **TrafficManagerEndpoint** ke cmdlet ini, atau Anda bisa mengirim objek **TrafficManagerEndpoint** menggunakan parameter *TrafficManagerEndpoint.*
+Anda dapat menggunakan operator pipeline untuk mengirimkan objek **TrafficManagerEndpoint** ke cmdlet ini, atau melewati objek **TrafficManagerEndpoint** menggunakan parameter *TrafficManagerEndpoint* .
 
-Alternatifnya, Anda bisa menentukan nama titik  akhir dan mengetik dengan menggunakan parameter Nama dan *Tipe,* bersama dengan parameter *ProfileName* *dan ResourceGroupName.*
+Atau, Anda dapat menentukan nama titik akhir dan mengetik menggunakan parameter *Nama* dan *Tipe* , bersama-sama dengan parameter *ProfileName* dan *ResourceGroupName* .
 
 ## EXAMPLES
 
-### Contoh 1: Menonaktifkan titik akhir berdasarkan nama
+### Contoh 1: Menonaktifkan titik akhir menurut nama
 ```
 PS C:\> Disable-AzureRmTrafficManagerEndpoint -Name "contoso" -ProfileName "ContosoProfile" -ResourceGroupName ResourceGroup11 -Type ExternalEndpoints
 ```
 
-Perintah ini menonaktifkan titik akhir eksternal yang bernama contoso dalam profil yang bernama ContosoProfile dalam grup sumber daya ResouceGroup11.
-Perintah akan meminta konfirmasi Anda.
+Perintah ini menonaktifkan titik akhir eksternal bernama contoso dalam profil bernama ContosoProfile dalam grup sumber daya ResouceGroup11.
+Perintah meminta konfirmasi kepada Anda.
 
-### Contoh 2: Menonaktifkan titik akhir dengan menggunakan pipeline
+### Contoh 2: Menonaktifkan titik akhir menggunakan pipeline
 ```
 PS C:\>Get-AzureRmTrafficManagerEndpoint -Name "contoso" -Type ExternalEndpoints -ProfileName "ContosoProfile" -ResourceGroupName "ResourceGroup11" | Disable-AzureRmTrafficManagerEndpoint -Force
 ```
 
-Perintah ini mendapatkan titik akhir eksternal yang bernama Contoso dari profil yang bernama ContosoProfile dalam ResourceGroup11.
-Perintah itu lalu melewati titik akhir itu ke cmdlet **Disable-AzureRmTrafficManagerEndpoint** dengan menggunakan operator pipeline.
-Cmdlet tersebut menonaktifkan titik akhir tersebut.
-Perintah menentukan parameter *Paksa.*
-Oleh karena itu, kami tidak meminta konfirmasi Anda.
+Perintah ini mendapatkan titik akhir eksternal bernama Contoso dari profil bernama ContosoProfile di ResourceGroup11.
+Perintah kemudian melewati titik akhir tersebut ke cmdlet **Disable-AzureRmTrafficManagerEndpoint** menggunakan operator pipeline.
+Cmdlet itu menonaktifkan titik akhir itu.
+Perintah menentukan parameter *Paksa* .
+Oleh karena itu, tindakan ini tidak meminta konfirmasi kepada Anda.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -80,8 +80,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,8 +111,8 @@ Accept wildcard characters: False
 ```
 
 ### -ProfileName
-Menentukan nama profil Traffic Manager cmdlet menonaktifkan titik akhir.
-Untuk mendapatkan profil, gunakan cmdlet Get-AzureRmTrafficManagerProfile baru.
+Menentukan nama profil Traffic Manager tempat cmdlet ini menonaktifkan titik akhir.
+Untuk mendapatkan profil, gunakan cmdlet Get-AzureRmTrafficManagerProfile.
 
 ```yaml
 Type: System.String
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya.
-Cmdlet ini menonaktifkan titik Traffic Manager titik akhir dalam grup yang ditentukan parameter ini.
+Cmdlet ini menonaktifkan titik akhir Traffic Manager dalam grup yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -143,8 +143,8 @@ Accept wildcard characters: False
 ```
 
 ### -TrafficManagerEndpoint
-Menentukan titik Traffic Manager titik akhir yang dinonaktifkan cmdlet ini.
-Untuk mendapatkan objek **TrafficManagerEndpoint,** gunakan cmdlet Get-AzureRmTrafficManagerEndpoint.
+Menentukan titik akhir Traffic Manager yang dinonaktifkan cmdlet ini.
+Untuk mendapatkan objek **TrafficManagerEndpoint** , gunakan cmdlet Get-AzureRmTrafficManagerEndpoint.
 
 ```yaml
 Type: Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerEndpoint
@@ -159,8 +159,8 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Menentukan tipe titik akhir yang tambahkan cmdlet ini ke Traffic Manager profil.
-Nilai valid adalah: 
+Menentukan tipe titik akhir yang ditambahkan cmdlet ini ke profil Traffic Manager.
+Nilai yang valid adalah: 
 
 - AzureEndpoints
 - ExternalEndpoints
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -211,12 +211,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### TrafficManagerEndpoint
-Parameter 'TrafficManagerEndpoint' menerima nilai tipe 'TrafficManagerEndpoint' dari saluran
+Parameter 'TrafficManagerEndpoint' menerima nilai tipe 'TrafficManagerEndpoint' dari pipeline
 
 ## OUTPUTS
 
@@ -236,7 +236,7 @@ Parameter 'TrafficManagerEndpoint' menerima nilai tipe 'TrafficManagerEndpoint' 
 
 [New-AzureRmTrafficManagerProfile](./New-AzureRmTrafficManagerProfile.md)
 
-[Remove-AzureRmTrafficManagerEndpoint](./Remove-AzureRmTrafficManagerEndpoint.md)
+[Hapus-AzureRmTrafficManagerEndpoint](./Remove-AzureRmTrafficManagerEndpoint.md)
 
 [Set-AzureRmTrafficManagerProfile](./Set-AzureRmTrafficManagerProfile.md)
 

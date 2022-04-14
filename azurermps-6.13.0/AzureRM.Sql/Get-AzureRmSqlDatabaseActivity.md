@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlDatabaseActivity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlDatabaseActivity.md
 ms.openlocfilehash: 08c5778002a80bb4fb2effdd977f134079f3aa0d
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140853996"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141924034"
 ---
 # Get-AzureRmSqlDatabaseActivity
 
@@ -29,28 +29,28 @@ Get-AzureRmSqlDatabaseActivity [-ServerName] <String> [-ElasticPoolName <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmSqlDatabaseActivity** mendapatkan status operasi database Azure SQL Database.
+Cmdlet **Get-AzureRmSqlDatabaseActivity** mendapatkan status operasi database dalam Azure SQL Database.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan status untuk SQL Database anda
+### Contoh 1: Dapatkan status untuk semua SQL Database instans
 ```
 PS C:\>Get-AzureRmSqlDatabaseActivity -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -ElasticPoolName "ElasticPool01"
 ```
 
-Perintah ini mengembalikan status operasi semua instans SQL Database dalam pool elastis yang bernama ElastisPool01.
+Perintah ini mengembalikan status operasi semua instans SQL Database dalam kumpulan elastis bernama ElasticPool01.
 
-### Contoh 2: Dapatkan status untuk semua SQL Database operasi
+### Contoh 2: Dapatkan status untuk semua operasi SQL Database
 ```
 PS C:\>Get-AzureRmSqlDatabaseActivity -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01"
 ```
 
-Perintah ini mengembalikan status semua SQL Database operasi dalam database.
+Perintah ini mengembalikan status semua operasi SQL Database dalam database.
 
 ## PARAMETERS
 
 ### -DatabaseName
-Menentukan nama database di mana cmdlet ini mendapatkan status.
+Menentukan nama database tempat cmdlet ini mendapatkan status.
 
 ```yaml
 Type: System.String
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -79,8 +79,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ElastisPoolName
-Menentukan nama pool database elastis tempat cmdlet ini mendapatkan status.
+### -ElasticPoolName
+Menentukan nama kumpulan database elastis tempat cmdlet ini mendapatkan status.
 
 ```yaml
 Type: System.String
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -OperationId
-Menentukan ID operasi yang akan didaurkan cmdlet ini.
+Menentukan ID operasi yang didapat cmdlet ini.
 
 ```yaml
 Type: System.Nullable`1[System.Guid]
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama database Microsoft SQL Server meng host database.
+Menentukan nama Microsoft SQL Server yang menjadi host database.
 
 ```yaml
 Type: System.String
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,13 +171,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Guid, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 

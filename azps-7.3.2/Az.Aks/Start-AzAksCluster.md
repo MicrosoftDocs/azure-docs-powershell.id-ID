@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/start-azaksc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Start-AzAksCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Start-AzAksCluster.md
-ms.openlocfilehash: 8d33e76ee86155d803335639a235601239cdcc79
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 36b69dc1a8b93bbbc00bb67dc4b3f92152d6ad56
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140558352"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141899811"
 ---
 # Start-AzAksCluster
 
 ## SYNOPSIS
-Memulai Kluster yang Dihentikan Dikelola
+Memulai Kluster terkelola yang Dihentikan
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.aks/start-azakscluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,18 +35,18 @@ Start-AzAksCluster -InputObject <IAksIdentity> [-DefaultProfile <PSObject>] [-As
 ```
 
 ## DESCRIPTION
-Memulai Kluster yang Dihentikan Dikelola
+Memulai Kluster terkelola yang Dihentikan
 
 ## EXAMPLES
 
-### Contoh 1: Mulai kluster Aks dengan nama grup sumber daya dan nama kluster
+### Contoh 1: Memulai kluster Aks dengan nama grup sumber daya dan nama kluster
 ```powershell
 Start-AzAksCluster -ResourceGroupName group -Name myCluster
 ```
 
 Mulai kluster Aks dengan nama grup sumber daya dan nama kluster.
 
-### Contoh 2: Mulai kluster Aks dengan pipeline
+### Contoh 2: Memulai kluster Aks dengan pipeline
 ```powershell
 Get-AzAksCluster -ResourceGroupName group -Name myCluster | Start-AzAksCluster
 ```
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Aks.Models.IAksIdentity
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama sumber daya kluster yang dikelola.
+Nama sumber daya kluster terkelola.
 
 ```yaml
 Type: System.String
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,8 +161,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -225,14 +228,14 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IAksIdentity>: Parameter Identitas
-  - `[AgentPoolName <String>]`: Nama agen kolam renang.
+  - `[AgentPoolName <String>]`: Nama pool agen.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama kawasan Azure yang didukung.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
-  - `[ResourceName <String>]`: Nama sumber daya kluster terkelola.
-  - `[RoleName <String>]`: Nama peran untuk sumber daya accessProfile kluster terkelola.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[ResourceName <String>]`: Nama sumber daya kluster yang dikelola.
+  - `[RoleName <String>]`: Nama peran untuk sumber daya cluster accessProfile yang dikelola.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

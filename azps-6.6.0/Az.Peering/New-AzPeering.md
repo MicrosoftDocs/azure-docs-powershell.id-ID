@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeering.md
 ms.openlocfilehash: 66149f7bfc39ac3a7264183d25df218218718153
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140100719"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142123397"
 ---
 # New-AzPeering
 
@@ -18,7 +18,7 @@ ms.locfileid: "140100719"
 Membuat Sumber Daya ARM Peering baru
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.peering/new-azpeering) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.peering/new-azpeering) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,11 +46,11 @@ New-AzPeering [-ResourceGroupName] <String> [-Name] <String> [-PeeringLocation] 
 ```
 
 ## DESCRIPTION
-Membuat Arm Peering untuk langganan. Lihat [New-AzPeeringDirectConnectionObject atau](https://docs.microsoft.com/powershell/module/az.peering/new-azpeeringdirectconnectionobject) [New-AzPeeringExchangeConnectionObject](https://docs.microsoft.com/powershell/module/az.peering/new-azpeeringexchangeconnectionobject) untuk informasi selengkapnya tentang membuat objek koneksi.
+Membuat ARM Peering untuk langganan. Lihat [New-AzPeeringDirectConnectionObject](https://docs.microsoft.com/powershell/module/az.peering/new-azpeeringdirectconnectionobject) atau [New-AzPeeringExchangeConnectionObject](https://docs.microsoft.com/powershell/module/az.peering/new-azpeeringexchangeconnectionobject) untuk informasi selengkapnya tentang membuat objek koneksi.
 
 ## EXAMPLES
 
-### Membuat Peering Langsung baru
+### Membuat Peering Langsung Baru
 ```powershell
 #Gets the ASN
 PS C:> $asn = Get-AzPeerAsn -PeerName Contoso
@@ -73,9 +73,9 @@ Type                 : Microsoft.Peering/peerings
 Tags                 : {}
 ```
 
-Membuat Peering Langsung baru dengan koneksi tunggal di fasilitas Seattle menggunakan PeerAsn 65000
+Buat Direct Peering baru dengan koneksi tunggal di fasilitas Seattle menggunakan PeerAsn 65000
 
-### Create New Exchange Peering
+### Membuat Peering Exchange Baru
 ```powershell
 #Gets the ASN
 PS C:> $asn = Get-AzPeerAsn -PeerName Contoso
@@ -99,7 +99,7 @@ Tags              : {}
 
 Membuat peering exchange baru
 
-### Mengonversi Peering Warisan menjadi ARM Peering
+### Mengonversi Peering Warisan ke Peering ARM
 ```powershell
 #Gets the ASN
 PS C:> $asn = Get-AzPeerAsn -PeerName Contoso
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -DirectConnection
-Membuat koneksi Langsung yang baru menggunakan New-AzExchangePeeringConnection dan  pipet ke perintah ini.
+Buat koneksi Langsung baru menggunakan New-AzExchangePeeringConnection dan pipa ke perintah ini.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Peering.Models.PSDirectConnection[]
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExchangeConnection
-Buat koneksi Exchange baru menggunakan New-AzExchangePeeringConnection dan  pipet ke perintah ini.
+Buat koneksi Exchange baru menggunakan New-AzExchangePeeringConnection dan pipa ke perintah ini.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Peering.Models.PSExchangeConnection[]
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -MicrosoftNetwork
-Pilih jaringan Microsoft yang ingin Anda peer-nya.
+Pilih jaringan Microsoft yang ingin Anda ajakan rekan.
 
 ```yaml
 Type: System.String
@@ -251,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeerAsnResourceId
-Id Sumber Daya Peer Asn. Get-AzPeerAsn untuk mengambil Id.
+Id Sumber Daya Peer Asn. Gunakan Get-AzPeerAsn untuk mengambil Id.
 
 ```yaml
 Type: System.String
@@ -266,8 +266,8 @@ Accept wildcard characters: False
 ```
 
 ### -PeeringLocation
-Lokasi Fisik Berbeda dari Azure Region.
-Gunakan Get-AzPeeringLocation -Jenis \<kind\> gunakan Nama Kota sebagai kunci.
+Lokasi Fisik Berbeda dari Kawasan Azure.
+Gunakan Get-AzPeeringLocation -Kind \<kind\> gunakan Nama kota sebagai kunci.
 
 ```yaml
 Type: System.String
@@ -297,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Pilih Basic_Direct_Free atau Premium_Direct_Free kecuali secara eksplisit diberitahu untuk memilih opsi lain.
+Pilih Basic_Direct_Free atau Premium_Direct_Free kecuali secara eksplisit disuruh memilih opsi lain.
 
 ```yaml
 Type: System.String
@@ -327,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -342,7 +342,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -357,7 +357,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

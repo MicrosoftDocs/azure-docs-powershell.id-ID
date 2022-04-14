@@ -4,16 +4,16 @@ ms.assetid: F8418A93-8E6B-4A1C-B319-7CACE95AB600
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 5cc1c42e568934f15529cfe12587cf5cfde06cf8
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427508"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141880610"
 ---
 # Move-AzureService
 
 ## SYNOPSIS
-Melakukan migrasi layanan awan ke tumpukan Azure Resource Manager.
+Melakukan migrasi layanan awan ke tumpukan Resource Manager Azure.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -62,40 +62,40 @@ Move-AzureService [-Validate] [-ServiceName] <String> [-DeploymentName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Move-AzureService** memigrasikan layanan awan dan penyebaran di dalam layanan tersebut ke grup sumber daya di tumpukan Azure Resource Manager.
+Cmdlet **Move-AzureService** memigrasikan layanan awan dan penyebaran di dalam layanan tersebut ke grup sumber daya di tumpukan Resource Manager Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mempersiapkan migrasi layanan
+### Contoh 1: Menyiapkan migrasi layanan
 ```
 PS C:\> Move-AzureService -Prepare -ServiceName "ContosoService" -DeploymentName "ContosoVM" -CreateNewVirtualNetwork
 ```
 
-Perintah ini menyiapkan layanan bernama ContosoService untuk migrasi ke tumpukan Azure Resource Manager.
-Migrasi menyertakan penggunaan yang bernama ContosoVM.
+Perintah ini menyiapkan layanan bernama ContosoService untuk migrasi ke tumpukan Resource Manager Azure.
+Migrasi menyertakan penyebaran bernama ContosoVM.
 
-### Contoh 2: Mulai migrasi layanan
+### Contoh 2: Memulai migrasi layanan
 ```
 PS C:\> Move-AzureService -Commit -ServiceName "ContosoService" -DeploymentName "ContosoVM"
 ```
 
-Perintah ini memulai migrasi layanan bernama ContosoService ke tumpukan Azure Resource Manager.
-Migrasi menyertakan penggunaan yang bernama ContosoVM.
+Perintah ini memulai migrasi layanan bernama ContosoService ke tumpukan Resource Manager Azure.
+Migrasi menyertakan penyebaran bernama ContosoVM.
 
 ### Contoh 3: Batalkan migrasi layanan
 ```
 PS C:\> Move-AzureService -Abort -ServiceName "ContosoService" -DeploymentName "ContosoVM"
 ```
 
-Perintah ini membatalkan migrasi layanan bernama ContosoService ke tumpukan Azure Resource Manager.
+Perintah ini membatalkan migrasi layanan bernama ContosoService ke tumpukan azure Resource Manager.
 
-### Contoh 4: Mempersiapkan migrasi layanan ke jaringan virtual yang sudah ada
+### Contoh 4: Menyiapkan migrasi layanan ke jaringan virtual yang sudah ada
 ```
 PS C:\> Move-AzureService -Prepare -ServiceName "ContosoService" -DeploymentName "ContosoVM" -UseExistingVirtualNetwork -VirtualNetworkResourceGroupName "VnetRG" -VirtualNetworkName "ContosoVNET" -SubnetName "ContosoSubnet"
 ```
 
-Perintah ini menyiapkan layanan bernama ContosoService untuk migrasi ke tumpukan Azure Resource Manager.
-Migrasi menyertakan penggunaan yang bernama ContosoVM.
+Perintah ini menyiapkan layanan bernama ContosoService untuk migrasi ke tumpukan Resource Manager Azure.
+Migrasi menyertakan penyebaran bernama ContosoVM.
 Migrasi menggunakan jaringan virtual yang sebelumnya dibuat.
 
 ### Contoh 5: Memvalidasi migrasi layanan
@@ -103,22 +103,22 @@ Migrasi menggunakan jaringan virtual yang sebelumnya dibuat.
 PS C:\> Move-AzureService -Validate -ServiceName "ContosoService" -DeploymentName "ContosoVM" -CreateNewVirtualNetwork
 ```
 
-Perintah ini memvalidasi migrasi untuk layanan bernama ContosoService ke tumpukan Azure Resource Manager.
-Migrasi menyertakan penggunaan yang bernama ContosoVM.
+Perintah ini memvalidasi migrasi untuk layanan bernama ContosoService ke tumpukan azure Resource Manager.
+Migrasi menyertakan penyebaran bernama ContosoVM.
 
 ### Contoh 6: Memvalidasi migrasi layanan ke jaringan virtual yang sudah ada
 ```
 PS C:\> Move-AzureService -Validate -ServiceName "contosoService" -DeploymentName "contosoVM" -UseExistingVirtualNetwork -VirtualNetworkResourceGroupName "vnetRG" -VirtualNetworkName "contosoVNET" -SubnetName "contosoSubnet"
 ```
 
-Perintah ini memvalidasi migrasi untuk layanan bernama ContosoService ke tumpukan Azure Resource Manager.
-Migrasi menyertakan penggunaan yang bernama ContosoVM.
+Perintah ini memvalidasi migrasi untuk layanan bernama ContosoService ke tumpukan azure Resource Manager.
+Migrasi menyertakan penyebaran bernama ContosoVM.
 Migrasi menggunakan jaringan virtual yang sebelumnya dibuat.
 
 ## PARAMETERS
 
 ### -Batalkan
-Mengindikasikan bahwa cmdlet ini membatalkan migrasi layanan.
+Menunjukkan bahwa cmdlet ini membatalkan migrasi layanan.
 
 ```yaml
 Type: SwitchParameter
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -Commit
-Mengindikasikan bahwa cmdlet ini memulai migrasi layanan.
+Menunjukkan bahwa cmdlet ini memulai migrasi layanan.
 
 ```yaml
 Type: SwitchParameter
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreateNewVirtualNetwork
-Mengindikasikan bahwa cmdlet ini membuat jaringan virtual di tumpukan Azure Resource Manager.
+Menunjukkan bahwa cmdlet ini membuat jaringan virtual di tumpukan Resource Manager Azure.
 
 ```yaml
 Type: SwitchParameter
@@ -178,16 +178,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -216,8 +216,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Prepare
-Mengindikasikan bahwa cmdlet ini menyiapkan layanan awan untuk migrasi.
+### -Persiapan
+Menunjukkan bahwa cmdlet ini menyiapkan layanan awan untuk migrasi.
 
 ```yaml
 Type: SwitchParameter
@@ -232,8 +232,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -278,7 +278,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseExistingVirtualNetwork
-Menunjukkan bahwa cmdlet ini melakukan migrasi layanan awan ke jaringan virtual yang ada di tumpukan Azure Resource Manager.
+Menunjukkan bahwa cmdlet ini memigrasikan layanan awan ke jaringan virtual yang sudah ada di tumpukan Resource Manager Azure.
 
 ```yaml
 Type: SwitchParameter
@@ -292,8 +292,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Validate
-Tentukan bahwa cmdlet ini memvalidasi layanan awan untuk migrasi.
+### -Validasi
+Menentukan bahwa cmdlet ini memvalidasi layanan awan untuk migrasi.
 
 ```yaml
 Type: SwitchParameter
@@ -338,7 +338,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -348,14 +348,14 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Move-AzureNetworkSecurityGroup](./Move-AzureNetworkSecurityGroup.md)
+[Pindahkan-AzureNetworkSecurityGroup](./Move-AzureNetworkSecurityGroup.md)
 
-[Move-AzureReservedIP](./Move-AzureReservedIP.md)
+[Pindahkan-AzureReservedIP](./Move-AzureReservedIP.md)
 
-[Move-AzureRouteTable](./Move-AzureRouteTable.md)
+[Pindahkan-AzureRouteTable](./Move-AzureRouteTable.md)
 
 [Move-AzureStorageAccount](./Move-AzureStorageAccount.md)
 
-[Move-AzureVirtualNetwork](./Move-AzureVirtualNetwork.md)
+[Pindahkan-AzureVirtualNetwork](./Move-AzureVirtualNetwork.md)
 
 

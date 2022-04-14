@@ -4,11 +4,11 @@ ms.assetid: 1094497D-2CBE-41DF-9ED1-8E7D3F14B05A
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: cb16e1e0ea965a820cd7fa6714a682f02840545c
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422899"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141880294"
 ---
 # Set-AzureEnvironment
 
@@ -31,12 +31,12 @@ Set-AzureEnvironment -Name <String> [-PublishSettingsFileUrl <String>] [-Service
 
 ## DESCRIPTION
 Cmdlet **Set-AzureEnvironment** mengubah properti lingkungan Azure.
-Fungsi ini mengembalikan objek yang mewakili lingkungan dengan nilai properti barunya.
-Gunakan parameter **Name** untuk mengidentifikasi lingkungan dan parameter lainnya untuk mengubah nilai properti.
-Anda tidak **dapat menggunakan Set-AzureEnvironment** untuk mengubah nama lingkungan Azure.
+Mengembalikan objek yang mewakili lingkungan dengan nilai properti barunya.
+Gunakan parameter **Nama** untuk mengidentifikasi lingkungan dan parameter lainnya untuk mengubah nilai properti.
+Anda tidak dapat menggunakan **Set-AzureEnvironment** untuk mengubah nama lingkungan Azure.
 
-Lingkungan Azure, penyebaran independen dari Microsoft Azure, seperti AzureCloud untuk global Azure dan AzureChinaCloud untuk Azure yang dioperasikan oleh 21Vianet di Tiongkok.
-Anda juga bisa membuat lingkungan Azure lokal dengan menggunakan Paket Azure dan cmdlet WAPack.
+Lingkungan Azure merupakan penyebaran independen Microsoft Azure, seperti AzureCloud untuk Azure global dan AzureChinaCloud untuk Azure yang dioperasikan oleh 21Vianet di Tiongkok.
+Anda juga dapat membuat lingkungan Azure lokal dengan menggunakan cmdlet Azure Pack dan WAPack.
 Untuk informasi selengkapnya, lihat [Azure Pack](/previous-versions/azure/windows-server-azure-pack/).
 
 CATATAN: Jangan ubah properti lingkungan AzureCloud atau AzureChinaCloud.
@@ -49,12 +49,12 @@ Gunakan cmdlet ini untuk mengubah nilai lingkungan privat yang Anda buat.
 PS C:\> Set-AzureEnvironment -Name ContosoEnv -PublishSettingsFileUrl "https://contoso.com" -StorageEndpoint "contoso.com"
 ```
 
-Perintah ini mengubah nilai properti **PublishSettingsFileUrl** **dan StorageEndpoint** lingkungan ContosoEnv.
+Perintah ini mengubah nilai properti **PublishSettingsFileUrl** dan **StorageEndpoint** lingkungan ContosoEnv.
 
 ## PARAMETERS
 
 ### -ActiveDirectoryEndpoint
-Mengubah titik akhir untuk Azure Active Directory autentikasi ke nilai yang ditentukan.
+Mengubah titik akhir untuk autentikasi Azure Active Directory ke nilai yang ditentukan.
 
 ```yaml
 Type: String
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -ActiveDirectoryServiceEndpointResourceId
-Menentukan ID sumber daya API manajemen yang aksesnya dikelola oleh Azure Active Directory.
+Menentukan ID sumber daya api manajemen yang aksesnya dikelola oleh Azure Active Directory.
 
 ```yaml
 Type: String
@@ -96,7 +96,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -AzureKeyVaultDnsFix
+### -AzureKeyVaultDnsSuffix
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -GalleryEndpoint
-Mengubah titik akhir untuk galeri Azure Resource Manager ke nilai yang ditentukan.
+Mengubah titik akhir galeri Resource Manager Azure ke nilai yang ditentukan.
 Titik akhir galeri adalah lokasi untuk templat galeri grup sumber daya.
 Untuk informasi selengkapnya tentang grup sumber daya Azure dan templat galeri, lihat topik bantuan untuk [Get-AzureResourceGroupGalleryTemplate](https://go.microsoft.com/fwlink/?LinkID=393052).
 
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ### -Nama
 Mengidentifikasi lingkungan yang sedang diubah.
 Parameter ini diperlukan.
-Nilai parameter peka huruf besar/kecil.
+Nilai parameter peka huruf besar kecil.
 Karakter wildcard tidak diizinkan.
 
 ```yaml
@@ -199,8 +199,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -215,8 +215,8 @@ Accept wildcard characters: False
 ```
 
 ### -PublishSettingsFileUrl
-Mengubah URL untuk menerbitkan file pengaturan dalam lingkungan tertentu.
-File pengaturan Azure menerbitkan file XML yang berisi informasi tentang akun Anda dan sertifikat manajemen yang memungkinkan Windows PowerShell masuk ke akun Azure atas nama Anda.
+Mengubah URL untuk menerbitkan file pengaturan di lingkungan yang ditentukan.
+File pengaturan penerbitan Azure adalah file XML yang berisi informasi tentang akun Anda dan sertifikat manajemen yang memungkinkan Windows PowerShell masuk ke akun Azure atas nama Anda.
 
 ```yaml
 Type: String
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 
 ### -ResourceManagerEndpoint
 Mengubah titik akhir untuk data Azure Resource Manager, termasuk data tentang grup sumber daya yang terkait dengan akun tersebut.
-Untuk informasi selengkapnya tentang Manajer Sumber Daya [Azure,](https://go.microsoft.com/fwlink/?LinkID=394765) lihat Cmdlet Azure Resource Manager ( https://go.microsoft.com/fwlink/?LinkID=394765) dan Menggunakan Windows PowerShell dengan Pengelola Sumber [Daya](https://go.microsoft.com/fwlink/?LinkID=394767) ( https://go.microsoft.com/fwlink/?LinkID=394767) .
+Untuk informasi selengkapnya tentang Azure Resource Manager, lihat [Cmdlet Azure Resource Manager](https://go.microsoft.com/fwlink/?LinkID=394765) (https://go.microsoft.com/fwlink/?LinkID=394765) dan [Menggunakan Windows PowerShell dengan Resource Manager](https://go.microsoft.com/fwlink/?LinkID=394767) (https://go.microsoft.com/fwlink/?LinkID=394767).
 
 ```yaml
 Type: String
@@ -247,8 +247,8 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceEndpoint
-Mengubah URL titik akhir layanan Azure dalam lingkungan tertentu.
-Titik akhir layanan Azure menentukan apakah aplikasi Anda dikelola oleh platform global Azure, Azure yang dioperasikan oleh 21Vianet di Tiongkok, atau penginstalan azure pribadi.
+Mengubah URL titik akhir layanan Azure di lingkungan yang ditentukan.
+Titik akhir layanan Azure menentukan apakah aplikasi Anda dikelola oleh platform Azure global, Azure yang dioperasikan oleh 21Vianet di Tiongkok, atau instalasi Azure pribadi.
 
 ```yaml
 Type: String
@@ -262,7 +262,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -SqlDatabaseDnsFix
+### -SqlDatabaseDnsSuffix
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -290,7 +290,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TrafficManagerDnsFix
+### -TrafficManagerDnsSuffix
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -304,12 +304,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
-Anda dapat pipa input ke cmdlet ini berdasarkan nama properti, tetapi tidak menurut nilai.
+### Tidak
+Anda dapat menyalurkan input ke cmdlet ini menurut nama properti, tetapi tidak menurut nilai.
 
 ## OUTPUTS
 
@@ -323,6 +323,6 @@ Anda dapat pipa input ke cmdlet ini berdasarkan nama properti, tetapi tidak menu
 
 [Get-AzureEnvironment](./Get-AzureEnvironment.md)
 
-[Remove-AzureEnvironment](./Remove-AzureEnvironment.md)
+[Hapus AzureEnvironment](./Remove-AzureEnvironment.md)
 
 

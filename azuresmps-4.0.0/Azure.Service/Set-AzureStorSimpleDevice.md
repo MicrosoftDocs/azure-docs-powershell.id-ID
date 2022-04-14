@@ -3,12 +3,12 @@ external help file: Microsoft.WindowsAzure.Commands.StorSimple.dll-Help.xml
 ms.assetid: AE8E6778-1299-4EC7-BFE0-3FB464AA7BB4
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 6667d3f3f388952ab9351ea21efe5410b222d95c930f1cc7db96be08d885b208
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 6ac594d89a6b4de30234d6ee6b3ee66e8a9b8285
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417703"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141880214"
 ---
 # Set-AzureStorSimpleDevice
 
@@ -19,14 +19,14 @@ Mengubah konfigurasi perangkat untuk perangkat.
 
 ## SYNTAX
 
-### IdentifyByName (Default)
+### IdentifiByName (Default)
 ```
 Set-AzureStorSimpleDevice -DeviceName <String> [-NewName <String>] [-TimeZone <TimeZoneInfo>]
  [-SecondaryDnsServer <String>] [-StorSimpleNetworkConfig <NetworkConfig[]>] [-Profile <AzureSMProfile>]
  [<CommonParameters>]
 ```
 
-### IdentifyById
+### IdentifikasiById
 ```
 Set-AzureStorSimpleDevice -DeviceId <String> [-NewName <String>] [-TimeZone <TimeZoneInfo>]
  [-SecondaryDnsServer <String>] [-StorSimpleNetworkConfig <NetworkConfig[]>] [-Profile <AzureSMProfile>]
@@ -35,9 +35,9 @@ Set-AzureStorSimpleDevice -DeviceId <String> [-NewName <String>] [-TimeZone <Tim
 
 ## DESCRIPTION
 Cmdlet **Set-AzureStorSimpleDevice** mengubah konfigurasi perangkat untuk perangkat.
-Jika menyiapkan perangkat untuk kali pertama, Anda harus menentukan parameter *Zona* Waktu , *SecondaryDnsServer*, dan *StorSimpleNetworkConfig.*
+Jika menyiapkan perangkat untuk pertama kalinya, Anda harus menentukan parameter *TimeZone*, *SecondaryDnsServer*, dan *StorSimpleNetworkConfig* .
 Anda harus menyertakan konfigurasi jaringan untuk Data0 dengan pengontrol0 dan pengontrol1 serta alamat IP.
-Setidaknya harus ada satu antarmuka jaringan yang mendukung SCSI (ISCSI) Internet untuk mengonfigurasi perangkat pada kali pertama.
+Setidaknya harus ada satu antarmuka jaringan yang diaktifkan oleh SCSI Internet (ISCSI) untuk mengonfigurasi perangkat untuk pertama kalinya.
 
 ## EXAMPLES
 
@@ -62,18 +62,18 @@ VERBOSE: Successfully updated configuration for device Device22 with id 865e68f6
 ```
 
 Perintah pertama membuat konfigurasi jaringan untuk antarmuka Data0.
-Perintah ini menentukan parameter *Controller0IPv4Address*, *Controller1IPv4Address*, *dan EnableIscsi.*
-Perintah menyimpan hasilnya dalam variabel $NetworkConfigData 0.
+Perintah ini menentukan parameter *Controller0IPv4Address*, *Controller1IPv4Address*, dan *EnableIscsi* .
+Perintah menyimpan hasil dalam variabel $NetworkConfigData 0.
 
-Perintah kedua menggunakan kelas **System.TimeZoneInfo** .NET dan sintaks standar untuk mendapatkan zona Waktu Standar Pasifik, dan menyimpan objek tersebut dalam $TimeZoneInfo standar.
+Perintah kedua menggunakan class .NET **System.TimeZoneInfo** dan sintaks standar untuk mendapatkan Zona Waktu Standar Pasifik, dan menyimpan objek tersebut dalam variabel $TimeZoneInfo.
 
-Perintah ketiga menggunakan cmdlet **Get-AzureStorSimpleDevice** dan cmdlet inti **Where-Object** untuk mendapatkan perangkat StorSimple online, lalu menyimpannya dalam $OnlineDevice tertentu.
+Perintah ketiga menggunakan cmdlet **Get-AzureStorSimpleDevice** dan cmdlet inti **Where-Object** untuk mendapatkan perangkat StorSimple online, lalu menyimpannya dalam variabel $OnlineDevice.
 
-Perintah terakhir mengubah konfigurasi untuk perangkat yang memiliki ID perangkat tertentu.
-Perintah menggunakan objek konfigurasi yang dibuat cmdlet saat ini di perintah pertama.
+Perintah akhir mengubah konfigurasi untuk perangkat yang memiliki ID perangkat tertentu.
+Perintah menggunakan objek konfigurasi yang dibuat cmdlet saat ini dalam perintah pertama.
 Perintah menggunakan zona waktu yang disimpan di $TimeZoneInfo.
 
-### Contoh 2: Pipe the configuration object to modify a device
+### Contoh 2: Pipa objek konfigurasi untuk mengubah perangkat
 ```
 PS C:\>$TimeZoneInfo = [System.TimeZoneInfo]::GetSystemTimeZones() | where { $_.Id -eq "Pacific Standard Time" }
 PS C:\> $OnlineDevice = @(Get-AzureStorSimpleDevice | Where { $_.Status -eq "Online"})[0]
@@ -92,9 +92,9 @@ VERBOSE: ClientRequestId: 2ed2fa9b-8459-4cd6-9a61-5fc25ced2815_PS
 VERBOSE: Successfully updated configuration for device Device22 with id 865e68f6-1e71-47b6-80d5-15d3a23bd2b0
 ```
 
-Contoh ini melakukan pembaruan konfigurasi yang sama seperti contoh pertama, kecuali bahwa perintah final melewati objek konfigurasi jaringan ke cmdlet saat ini dengan menggunakan operator pipeline.
+Contoh ini melakukan pembaruan konfigurasi yang sama seperti contoh pertama, kecuali bahwa perintah akhir melewati objek konfigurasi jaringan ke cmdlet saat ini menggunakan operator pipeline.
 
-### Contoh 3: Pipe the time zone object to modify a device
+### Contoh 3: Pipa objek zona waktu untuk mengubah perangkat
 ```
 PS C:\>$NetworkConfigData0 = New-AzureStorSimpleNetworkConfig -InterfaceAlias Data0 -EnableIscsi $True -Controller0IPv4Address "10.67.64.48" -Controller1IPv4Address "10.67.64.49" 
 PS C:\> $OnlineDevice = @(Get-AzureStorSimpleDevice | Where { $_.Status -eq "Online"})[0]
@@ -113,7 +113,7 @@ VERBOSE: ClientRequestId: 981cb941-252c-4898-ba9f-f19e5b8bcaa4_PS
 VERBOSE: Successfully updated configuration for device Device22 with id 865e68f6-1e71-47b6-80d5-15d3a23bd2b0
 ```
 
-Contoh ini melakukan pembaruan konfigurasi yang sama seperti contoh pertama, kecuali bahwa perintah final melewati objek zona waktu ke cmdlet saat ini dengan menggunakan operator pipeline.
+Contoh ini melakukan pembaruan konfigurasi yang sama seperti contoh pertama, kecuali bahwa perintah akhir melewati objek zona waktu ke cmdlet saat ini menggunakan operator pipeline.
 
 ## PARAMETERS
 
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceName
-Menentukan nama perangkat StorSimple yang mudah dikonfigurasikan.
+Menentukan nama perangkat StorSimple yang mudah dikonfigurasi.
 
 ```yaml
 Type: String
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -NewName
-Menentukan nama baru perangkat StorSimple yang mudah digunakan.
+Menentukan nama perangkat StorSimple yang baru.
 
 ```yaml
 Type: String
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 
 ### -StorSimpleNetworkConfig
 Menentukan array objek konfigurasi jaringan untuk antarmuka pada perangkat.
-Untuk mendapatkan objek **NetworkConfig,** gunakan cmdlet New-AzureStorSimpleNetworkConfig.
+Untuk mendapatkan objek **NetworkConfig** , gunakan cmdlet New-AzureStorSimpleNetworkConfig.
 
 ```yaml
 Type: NetworkConfig[]
@@ -209,8 +209,8 @@ Accept wildcard characters: False
 ```
 
 ### -Zona Waktu
-Menentukan zona waktu untuk perangkat tersebut.
-Anda dapat membuat **objek TimeZoneInfo** menggunakan metode **GetSystemTimeZone().**
+Menentukan zona waktu untuk perangkat.
+Anda dapat membuat objek **TimeZoneInfo** menggunakan metode **GetSystemTimeZone().**
 Misalnya, perintah ini membuat objek informasi zona waktu untuk Waktu Standar Pasifik: `\[System.TimeZoneInfo\]::GetSystemTimeZones() | where { $_.Id -eq "Pacific Standard Time" }`
 
 ```yaml
@@ -226,12 +226,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### NetworkConfig, TimeZoneInfo
-Anda dapat pipa **objek NetworkConfig** atau **TimeZoneInfo** ke cmdlet ini.
+Anda dapat menyalurkan objek **NetworkConfig** atau **TimeZoneInfo** ke cmdlet ini.
 
 ## OUTPUTS
 
@@ -242,7 +242,7 @@ Cmdlet ini mengembalikan detail perangkat yang diperbarui untuk perangkat virtua
 
 ## RELATED LINKS
 
-[New-AzureStorSimpleNetworkConfig](./New-AzureStorSimpleNetworkConfig.md)
+[Baru-AzureStorSimpleNetworkConfig](./New-AzureStorSimpleNetworkConfig.md)
 
 [Set-AzureStorSimpleVirtualDevice](./Set-AzureStorSimpleVirtualDevice.md)
 

@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/Get-AzStorageAccountNetworkRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/Get-AzStorageAccountNetworkRuleSet.md
 ms.openlocfilehash: 7cd67b98b91a03e47ecefba7f329655895972913
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132415088"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141963357"
 ---
 # Get-AzStorageAccountNetworkRuleSet
 
 ## SYNOPSIS
-Mendapatkan properti NetWorkRule dari akun Storage
+Dapatkan properti NetWorkRule dari akun Storage
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-AzStorageAccountNetworkRuleSet [-ResourceGroupName] <String> [-Name] <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStorageAccountNetworkRuleSet** mendapatkan properti NetworkRule dari Storage Anda
+Cmdlet **Get-AzStorageAccountNetworkRuleSet** mendapatkan properti NetworkRule dari akun Storage
 
 ## EXAMPLES
 
@@ -34,7 +34,7 @@ Cmdlet **Get-AzStorageAccountNetworkRuleSet** mendapatkan properti NetworkRule d
 PS C:\> Get-AzStorageAccountNetworkRuleSet  -ResourceGroupName "rg1" -AccountName "mystorageaccount"
 ```
 
-Perintah ini mendapatkan properti NetworkRule dari akun Storage tertentu
+Perintah ini mendapatkan properti NetworkRule dari akun Storage yang ditentukan
 
 ## PARAMETERS
 
@@ -54,7 +54,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama akun Storage Anda.
+Menentukan nama akun Storage.
 
 ```yaml
 Type: System.String
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya berisi akun Storage tersebut.
+Menentukan nama grup sumber daya berisi akun Storage.
 
 ```yaml
 Type: System.String
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

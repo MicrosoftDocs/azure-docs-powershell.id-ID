@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Scheduler/Commands.Scheduler/help/New-AzureRmSchedulerHttpJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Scheduler/Commands.Scheduler/help/New-AzureRmSchedulerHttpJob.md
 ms.openlocfilehash: 1d0c66d3442d6db03897140849f5713d3107f8d1
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421204"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141924479"
 ---
 # New-AzureRmSchedulerHttpJob
 
@@ -32,9 +32,9 @@ New-AzureRmSchedulerHttpJob -ResourceGroupName <String> -JobCollectionName <Stri
 
 ## DESCRIPTION
 Cmdlet **New-AzureRmSchedulerHttpJob** membuat pekerjaan HTTP di Azure Scheduler.
-Cmdlet ini mendukung parameter dinamis berdasarkan parameter *ErrorActionType* dan *HttpAuthenticationType.*
+Cmdlet ini mendukung parameter dinamis berdasarkan parameter *ErrorActionType* dan *HttpAuthenticationType* .
 Parameter dinamis menjadi tersedia berdasarkan nilai parameter lainnya.
-Untuk menemukan nama parameter dinamis setelah Anda menentukan parameter lainnya, ketik tanda hubung (-), lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
+Untuk menemukan nama parameter dinamis setelah Anda menentukan parameter lain, ketik tanda hubung (-), lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
 Jika Anda menghilangkan parameter yang diperlukan, cmdlet akan meminta nilai tersebut.
 
 ## EXAMPLES
@@ -42,7 +42,7 @@ Jika Anda menghilangkan parameter yang diperlukan, cmdlet akan meminta nilai ter
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -57,8 +57,8 @@ Accept wildcard characters: False
 ```
 
 ### -EndTime
-Menentukan waktu akhir, sebagai objek **DateTime,** untuk pekerjaan.
-Untuk mendapatkan objek **DateTime,** gunakan cmdlet Get-Date.
+Menentukan waktu akhir, sebagai objek **DateTime** , untuk pekerjaan tersebut.
+Untuk mendapatkan objek **DateTime** , gunakan cmdlet Get-Date.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -77,7 +77,7 @@ Menentukan pengaturan tindakan kesalahan untuk pekerjaan tersebut.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Http 
 - Https 
-- StorageQueue 
+- Antrean Penyimpanan 
 - ServiceBusQueue 
 - ServiceBusTopic
 
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 
 ### -ExecutionCount
 Menentukan berapa kali pekerjaan berjalan.
-Secara default, pekerjaan berulang secara tak terbatas.
+Secara default, pekerjaan berulang tanpa batas waktu.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -110,7 +110,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Frequency
+### -Frekuensi
 Menentukan frekuensi maksimum untuk pekerjaan tersebut.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Menit 
@@ -147,10 +147,10 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -httpAuthenticationType
+### -HttpAuthenticationType
 Menentukan tipe autentikasi HTTP.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Tidak ada 
+- Tidak 
 - ClientCertificate 
 - ActiveDirectoryOAuth 
 - Dasar
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -Interval
-Menentukan interval per pengulangan untuk pekerjaan tersebut.
+Menentukan interval pengulangan untuk pekerjaan tersebut.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobCollectionName
-Menentukan nama kumpulan pekerjaan tempat pekerjaan tersebut berada.
+Menentukan nama kumpulan pekerjaan tempat pekerjaan berada.
 
 ```yaml
 Type: System.String
@@ -217,7 +217,7 @@ Accept wildcard characters: False
 Menentukan status pekerjaan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Diaktifkan 
-- Dinonaktifkan
+- Tamu penyandang cacat
 
 ```yaml
 Type: System.String
@@ -233,12 +233,12 @@ Accept wildcard characters: False
 ```
 
 ### -Method
-Menentukan metode untuk tipe tindakan untuk pekerjaan.
+Menentukan metode untuk tipe tindakan untuk pekerjaan tersebut.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- DAPATKAN 
-- PUT 
+- MENDAPATKAN 
+- MENEMPATKAN 
 - POSTING 
-- DELETE
+- MENGHAPUS
 
 ```yaml
 Type: System.String
@@ -253,8 +253,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Request Body
-Menentukan nilai badan untuk tindakan pekerjaan PUT dan POST.
+### -RequestBody
+Menentukan nilai isi untuk tindakan pekerjaan PUT dan POST.
 
 ```yaml
 Type: System.String
@@ -269,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan grup sumber daya tempat pekerjaan tersebut berada.
+Menentukan grup sumber daya tempat pekerjaan berada.
 
 ```yaml
 Type: System.String
@@ -284,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Menentukan waktu mulai, sebagai objek **DateTime,** untuk pekerjaan.
+Menentukan waktu mulai, sebagai objek **DateTime** , untuk pekerjaan tersebut.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -314,7 +314,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -330,7 +330,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -345,7 +345,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

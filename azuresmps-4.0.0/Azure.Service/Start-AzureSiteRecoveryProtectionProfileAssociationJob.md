@@ -4,16 +4,16 @@ ms.assetid: CB5E1419-C4C7-4524-ACCC-13C9D9CCA621
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 40c7e5922f68e59140f6458fa1f07d236f6497ac
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419896"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141879528"
 ---
 # Start-AzureSiteRecoveryProtectionProfileAssociationJob
 
 ## SYNOPSIS
-Memulai pekerjaan asosiasi kebijakan replikasi Pemulihan Situs.
+Memulai pekerjaan asosiasi kebijakan replikasi Site Recovery.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -33,7 +33,7 @@ Start-AzureSiteRecoveryProtectionProfileAssociationJob -ProtectionProfile <ASRPr
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzureSiteRecoveryProtectionProfileAssociationJob** memulai pekerjaan asosiasi untuk mengaitkan kebijakan replikasi dengan wadah proteksi Pemulihan Situs Azure.
+Cmdlet **Start-AzureSiteRecoveryProtectionProfileAssociationJob** memulai pekerjaan asosiasi untuk mengaitkan kebijakan replikasi dengan wadah perlindungan azure Site Recovery.
 
 ## EXAMPLES
 
@@ -55,14 +55,14 @@ Tasks            : {Adding the protection group, Configuring Windows Server 2012
 Errors           : {}
 ```
 
-Perintah pertama mendapatkan wadah proteksi dengan menggunakan cmdlet **Get-AzureSiteRecoveryProtectionContainer,** lalu menyimpan wadah itu di variabel $ProtectionContainer 01.
+Perintah pertama mendapatkan wadah perlindungan dengan menggunakan cmdlet **Get-AzureSiteRecoveryProtectionContainer** , lalu menyimpan wadah tersebut dalam variabel $ProtectionContainer 01.
 
-Perintah kedua membuat profil proteksi menggunakan cmdlet **New-AzureSiteRecoveryProtectionProfileObject,** dan menyimpan profil proteksi tersebut di $ProtectionProfile lain.
+Perintah kedua membuat profil perlindungan menggunakan cmdlet **New-AzureSiteRecoveryProtectionProfileObject** , dan menyimpan profil perlindungan tersebut dalam variabel $ProtectionProfile.
 
-Perintah ketiga mendapatkan wadah proteksi, lalu menyimpannya di $ProtectionContainer 02.
+Perintah ketiga mendapatkan wadah perlindungan, lalu menyimpannya dalam variabel $ProtectionContainer 02.
 
-Perintah terakhir mengaitkan profil proteksi yang disimpan di $ProtectionProfile ke wadah yang disimpan di $ProtectionContainer 01 sebagai wadah proteksi utama.
-Perintah mengaitkan wadah yang disimpan di $ProtectionContainer 02 sebagai wadah proteksi pemulihan.
+Perintah akhir mengaitkan profil proteksi yang disimpan di $ProtectionProfile ke wadah yang disimpan di $ProtectionContainer 01 sebagai wadah perlindungan utama.
+Perintah mengaitkan wadah yang disimpan di $ProtectionContainer 02 sebagai wadah perlindungan pemulihan.
 
 ## PARAMETERS
 
@@ -82,8 +82,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -98,8 +98,8 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionProfile
-Menentukan pengaturan profil proteksi yang akan diterapkan pada wadah proteksi.
-Untuk mendapatkan objek **ASRProtectionProfile,** gunakan cmdlet New-AzureSiteRecoveryProtectionProfileObject cmdlet.
+Menentukan pengaturan profil proteksi untuk diterapkan ke wadah proteksi.
+Untuk mendapatkan objek **ASRProtectionProfile** , gunakan cmdlet New-AzureSiteRecoveryProtectionProfileObject.
 
 ```yaml
 Type: ASRProtectionProfile
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

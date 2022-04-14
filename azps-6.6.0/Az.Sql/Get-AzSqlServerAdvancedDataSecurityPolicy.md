@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerAdvancedDataSecurityPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerAdvancedDataSecurityPolicy.md
 ms.openlocfilehash: b53fef4b9a303321cc54da9b2791d7e5bc1607bf
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140327543"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142120121"
 ---
 # Get-AzSqlServerAdvancedDataSecurityPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "140327543"
 Mendapatkan kebijakan Keamanan Data Tingkat Lanjut dari server.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlserveradvanceddatasecuritypolicy) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlserveradvanceddatasecuritypolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +28,11 @@ Get-AzSqlServerAdvancedDataSecurityPolicy [-InputObject <AzureSqlServerModel>] -
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlServerAdvancedDataSecurityPolicy** mengambil kebijakan Keamanan Data Tingkat Lanjut server.
+Cmdlet **Get-AzSqlServerAdvancedDataSecurityPolicy** mengambil kebijakan Keamanan Data Tingkat Lanjut dari server.
 
 ## EXAMPLES
 
-### Contoh 1: Gets server Advanced Data Security
+### Contoh 1: Mendapatkan Keamanan Data Tingkat Lanjut server
 ```powershell
 PS C:\>  Get-AzSqlServerAdvancedDataSecurityPolicy `
             -ResourceGroupName "ResourceGroup01" `
@@ -43,7 +43,7 @@ ServerName                   : Server01
 IsEnabled                    : True
 ```
 
-### Contoh 2: Mendapatkan server Keamanan Data Tingkat Lanjut dari sumber daya server
+### Contoh 2: Mendapatkan Keamanan Data Tingkat Lanjut server dari sumber daya server
 ```powershell
 PS C:\>  Get-AzSqlServer `
            -ResourceGroupName "ResourceGroup01" `
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-SQL Database server baru.
+SQL Database nama server.
 
 ```yaml
 Type: System.String
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

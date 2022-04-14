@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceBus/Commands.ServiceBus/help/Get-AzureRmServiceBusSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceBus/Commands.ServiceBus/help/Get-AzureRmServiceBusSubscription.md
 ms.openlocfilehash: 03d85b0b31261330f6245e7439847df04d68d56b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140862557"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141924360"
 ---
 # Get-AzureRmServiceBusSubscription
 
@@ -27,7 +27,7 @@ Get-AzureRmServiceBusSubscription [-ResourceGroupName] <String> [-Namespace] <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmServiceBusSubscription** mengembalikan deskripsi langganan untuk topik Bus Layanan tertentu.
+Cmdlet **Get-AzureRmServiceBusSubscription** mengembalikan deskripsi langganan untuk topik Bus Layanan yang ditentukan.
 
 ## EXAMPLES
 
@@ -58,7 +58,7 @@ Mengembalikan deskripsi langganan untuk topik Bus Layanan yang ditentukan.
 PS C:\> Get-AzureRmServiceBusSubscription -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1 -TopicName SB-Topic_exampl1
 ```
 
-Mengembalikan daftar langganan untuk topik Bus Layanan yang ditentukan. Secara default, 100 langganan akan dikembalikan, untuk jumlah langganan, silakan gunakan Parameter -MaxCount
+Mengembalikan daftar langganan untuk topik Bus Layanan tertentu. Secara default, 100 langganan akan dikembalikan, untuk jumlah langganan, silakan gunakan -MaxCount Parameter
 
 ### Contoh 3
 ```
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxCount
-Tentukan jumlah maksimum Langganan untuk dikembalikan.
+Tentukan jumlah maksimum Langganan yang akan dikembalikan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -144,7 +144,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Topic
+### -Topik
 Nama Topik
 
 ```yaml
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

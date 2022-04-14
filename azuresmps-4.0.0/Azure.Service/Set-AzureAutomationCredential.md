@@ -4,11 +4,11 @@ ms.assetid: C92B4B70-4342-4219-80D3-FB79BDC171A3
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 7e9d40468283ae0d5f695982679b344c5721b719
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "132414760"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141880356"
 ---
 # Set-AzureAutomationCredential
 
@@ -29,7 +29,7 @@ Set-AzureAutomationCredential -Name <String> [-Description <String>] [-Value <PS
 
 [!INCLUDE [aa-deprecation](../include/aa-deprecation.md)]
 
-Cmdlet **Set-AzureAutomationCredential** memodifikasi kredensial sebagai objek **PSCredential** dalam Microsoft Azure Automation.
+Cmdlet **Set-AzureAutomationCredential** mengubah kredensial sebagai objek **PSCredential** dalam Otomatisasi Microsoft Azure.
 
 ## EXAMPLES
 
@@ -43,7 +43,7 @@ PS C:\> New-AzureAutomationCredential -AutomationAccountName "Contos17" -Name "M
 
 Perintah ini memperbarui kredensial yang sudah ada bernama MyCredential.
 Objek kredensial pertama kali dibuat yang menyertakan nama pengguna dan kata sandi.
-Lalu ini akan digunakan dalam perintah terakhir untuk memperbarui kredensial otomatisasi.
+Ini kemudian digunakan dalam perintah terakhir untuk memperbarui kredensial otomatisasi.
 
 ## PARAMETERS
 
@@ -93,8 +93,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -138,8 +138,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureAutomationCredential](./Get-AzureAutomationCredential.md)
 
-[New-AzureAutomationCredential](./New-AzureAutomationCredential.md)
+[AzureAutomationCredential Baru](./New-AzureAutomationCredential.md)
 
-[Remove-AzureAutomationCredential](./Remove-AzureAutomationCredential.md)
+[Hapus-AzureAutomationCredential](./Remove-AzureAutomationCredential.md)
 
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ADDomainServices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ADDomainServices/help/New-AzADDomainServiceForestTrust.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ADDomainServices/help/New-AzADDomainServiceForestTrust.md
-ms.openlocfilehash: 90c03a02e5e91a908d25ba236fe3751e2052ec1f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 494abd82b7ea8c14dd331671335d65c6b3fe26c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140561012"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141900171"
 ---
 # New-AzADDomainServiceForestTrust
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk ForestTrust
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.addomainservices/new-azaddomainserviceforesttrust) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Membuat objek dalam memori untuk ForestTrust
 
 ## EXAMPLES
 
-### Contoh 1: Membuat ServiceForestTrust untuk ADDomain
+### Contoh 1: Create ServiceForestTrust untuk ADDomain
 ```powershell
 New-AzADDomainServiceForestTrust -FriendlyName FriendlyNameTest
 ```
@@ -45,7 +48,7 @@ Membuat ServiceForestTrust untuk ADDomain
 ## PARAMETERS
 
 ### -FriendlyName
-Nama yang Mudah Didingkukan.
+Nama yang mudah dikenali.
 
 ```yaml
 Type: System.String
@@ -60,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemoteDnsIP
-Ips Dns Jarak Jauh.
+Ip Dns Jarak Jauh.
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

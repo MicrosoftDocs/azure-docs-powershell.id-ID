@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Restore-AzureRmSqlInstanceDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Restore-AzureRmSqlInstanceDatabase.md
 ms.openlocfilehash: 61fe76eba8d1f8faf0ab45d0a24f56a8dabf3641
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140861678"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141967489"
 ---
 # Restore-AzureRmSqlInstanceDatabase
 
 ## SYNOPSIS
-Memulihkan database Azure SQL Instans Terkelola.
+Memulihkan database Azure SQL Managed Instance.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ Restore-AzureRmSqlInstanceDatabase [-FromPointInTimeBackup] [-Name] <String> [-I
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### PointInTimeSameInstanceRestoreInstanceDatabaseFromAzureSqlManagedDatabaseModelInstanceDefinition
+### PointInTimeSameInstanceRestoreInstanceDatabaseFromAzureSqlManagedDatabaseModelInstanceDefinisi
 ```
 Restore-AzureRmSqlInstanceDatabase [-FromPointInTimeBackup] [-InputObject] <AzureSqlManagedDatabaseModel>
  -PointInTime <DateTime> -TargetInstanceDatabaseName <String> [-AsJob]
@@ -66,29 +66,29 @@ Restore-AzureRmSqlInstanceDatabase [-FromPointInTimeBackup] [-ResourceId] <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Restore-AzureRmSqlInstanceDatabase** memulihkan database instans dari titik waktu dalam database langsung.
-Database yang dipulihkan dibuat sebagai database contoh baru.
+Cmdlet **Restore-AzureRmSqlInstanceDatabase** memulihkan database instans dari satu titik waktu dalam database langsung.
+Database yang dipulihkan dibuat sebagai database instans baru.
 
 ## EXAMPLES
 
-### Contoh 1: Memulihkan database contoh dari titik waktu
+### Contoh 1: Memulihkan database instans dari satu titik waktu
 ```
 PS C:\> Restore-AzureRmSqlinstanceDatabase -Name "Database01" -InstanceName "managedInstance1" -ResourceGroupName "ResourceGroup01" -PointInTime UTCDateTime -TargetInstanceDatabaseName "Database01_restored"
 ```
 
-Perintah memulihkan database contoh Database01 dari pencadangan titik waktu yang ditentukan ke database contoh yang bernama Database01_restored.
+Perintah memulihkan database instans01 dari cadangan point-in-time yang ditentukan ke database instans yang bernama Database01_restored.
 
-### Contoh 2: Memulihkan database contoh dari titik waktu ke instans lain pada grup sumber daya yang berbeda
+### Contoh 2: Memulihkan database instans dari titik waktu ke instans lain pada grup sumber daya yang berbeda
 ```
 PS C:\> Restore-AzureRmSqlInstanceDatabase -Name "Database01" -InstanceName "managedInstance1" -ResourceGroupName "ResourceGroup01" -PointInTime UTCDateTime -TargetInstanceDatabaseName "Database01_restored" -TargetInstanceName "managedInstance1" -TargetResourceGroupName "ResourceGroup02"
 ```
 
-Perintah memulihkan database contoh Database01 pada contoh managedInstance1 pada grup sumber daya ResourceGroup01 dari pencadangan titik waktu yang ditentukan ke database contoh bernama Database01_restored di contoh managedInstance2 pada grup sumber daya ResourceGroup02.
+Perintah memulihkan database instans Database01 pada instans managedInstance1 pada grup sumber daya ResourceGroup01 dari cadangan point-in-time yang ditentukan ke database instans bernama Database01_restored pada instans managedInstance2 pada grup sumber daya ResourceGroup02.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -FromPointInTimeBackup
-Pulihkan dari pencadangan titik waktu.
+Pulihkan dari cadangan point-in-time.
 
 ```yaml
 Type: SwitchParameter
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Instance Database untuk dipulihkan
+Objek Database Instans untuk dipulihkan
 
 ```yaml
 Type: AzureSqlManagedDatabaseModel
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Contoh nama database untuk dipulihkan.
+Nama database instans untuk dipulihkan.
 
 ```yaml
 Type: String
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya dari objek Database Contoh yang dipulihkan
+Id sumber daya objek Database Instans untuk dipulihkan
 
 ```yaml
 Type: String
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetInstanceDatabaseName
-Nama database instans target yang akan dipulihkan.
+Nama database instans target untuk dipulihkan.
 
 ```yaml
 Type: String
@@ -238,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetInstanceName
-Nama instans target untuk dipulihkan.
+Nama instans target yang akan dipulihkan.
 Jika tidak ditentukan, instans target sama dengan instans sumber.
 
 ```yaml
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 
 ### -TargetResourceGroupName
 Nama grup sumber daya target untuk dipulihkan.
-Jika tidak ditentukan, grup sumber daya target sama seperti grup sumber daya.
+Jika tidak ditentukan, grup sumber daya target sama dengan grup sumber daya.
 
 ```yaml
 Type: String
@@ -270,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -286,7 +286,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -301,7 +301,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -3,17 +3,17 @@ external help file: Microsoft.WindowsAzure.Commands.ServiceManagement.dll-Help.x
 ms.assetid: 16A34F31-1C61-4911-8C1F-9F82683524A1
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: a978eab22d26534a237c146eb92db116f6f4a92a6cc7c2a22a8de2ae8e339eae
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 4c68b04c4fe7e07235cb9face947d4ad8e2a3e9f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417282"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141923055"
 ---
 # Add-AzureDisk
 
 ## SYNOPSIS
-Menambahkan disk ke repositori disk Azure.
+Menambahkan disk ke penyimpanan disk Azure.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -26,19 +26,19 @@ Add-AzureDisk [-DiskName] <String> [-MediaLocation] <String> [-Label <String>] [
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureDisk** menambahkan disk ke penyimpanan disk Azure di langganan saat ini.
+Cmdlet **Add-AzureDisk** menambahkan disk ke penyimpanan disk Azure dalam langganan saat ini.
 Cmdlet ini dapat menambahkan disk sistem atau disk data.
-Untuk menambahkan disk sistem, tentukan tipe sistem operasi dengan menggunakan parameter *OS.*
+Untuk menambahkan disk sistem, tentukan tipe sistem operasi menggunakan parameter *OS* .
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan disk mulai yang menggunakan Windows operasi baru
+### Contoh 1: Menambahkan disk mulai yang menggunakan sistem operasi Windows
 ```
 PS C:\> Add-AzureDisk -DiskName "MyWinDisk" -MediaLocation "http://contosostorage.blob.core.azure.com/vhds/winserver-system.vhd" -Label "StartupDisk" -OS "Windows"
 ```
 
-Perintah ini menambahkan disk sistem ke tempat penyimpanan disk Anda.
-Disk sistem menggunakan sistem Windows sistem operasi.
+Perintah ini menambahkan disk sistem ke penyimpanan disk Anda.
+Disk sistem menggunakan sistem operasi Windows.
 
 ### Contoh 2: Menambahkan disk data
 ```
@@ -47,7 +47,7 @@ PS C:\> Add-AzureDisk -DiskName "MyDataDisk" -MediaLocation "http://yourstoragea
 
 Perintah ini menambahkan disk data.
 
-### Contoh 3: Tambahkan disk sistem Linux
+### Contoh 3: Menambahkan disk sistem Linux
 ```
 PS C:\> Add-AzureDisk -DiskName "MyLinuxDisk" -MediaLocation "http://yourstorageaccount.blob.core.azure.com/vhds/linuxsys.vhd" -OS "Linux"
 ```
@@ -57,7 +57,7 @@ Perintah ini menambahkan disk sistem Linux.
 ## PARAMETERS
 
 ### -DiskName
-Menentukan nama disk yang penambahan cmdlet ini.
+Menentukan nama diska yang ditambahkan cmdlet ini.
 
 ```yaml
 Type: String
@@ -72,16 +72,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Label
-Menentukan label disk untuk disk yang penambahan cmdlet ini.
+Menentukan label disk untuk diska yang ditambahkan cmdlet ini.
 
 ```yaml
 Type: String
@@ -125,9 +125,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -MediaLocation
-Menentukan lokasi fisik disk di Azure Storage.
-Nilai ini merujuk ke halaman blob di akun langganan dan penyimpanan saat ini.
+### -MediaLokasi
+Menentukan lokasi fisik disk dalam Azure Storage.
+Nilai ini merujuk ke halaman blob di akun penyimpanan dan langganan saat ini.
 
 ```yaml
 Type: String
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 
 ### -OS
 Menentukan tipe sistem operasi untuk disk sistem.
-Nilai valid adalah: 
+Nilai yang valid adalah: 
 
 - Windows 
 - Linux 
@@ -163,8 +163,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -193,7 +193,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureDisk](./Get-AzureDisk.md)
 
-[Remove-AzureDisk](./Remove-AzureDisk.md)
+[Hapus-AzureDisk](./Remove-AzureDisk.md)
 
 [Update-AzureDisk](./Update-AzureDisk.md)
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Set-AzStackEdgeBandwidthSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Set-AzStackEdgeBandwidthSchedule.md
 ms.openlocfilehash: 9c51551f0cbaa79c7591bb5878911b96a48df111
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139966749"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141903069"
 ---
 # Set-AzStackEdgeBandwidthSchedule
 
@@ -18,7 +18,7 @@ ms.locfileid: "139966749"
 Memperbarui Jadwal Bandwidth.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.stackedge/set-azstackedgebandwidthschedule) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/set-azstackedgebandwidthschedule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -86,7 +86,7 @@ Set-AzStackEdgeBandwidthSchedule [-ResourceGroupName] <String> [-DeviceName] <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzStackEdgeBandwidthSchedule** memperbarui jadwal Bandwidth untuk perangkat Stack Edge.
+**Cmdlet Set-AzStackEdgeBandwidthSchedule** memperbarui jadwal Bandwidth untuk perangkat Stack Edge.
 
 ## EXAMPLES
 
@@ -109,7 +109,7 @@ bandwidthSchedule  Sunday, Tuesday, Saturday      Unlimited  11:00:00  21:00:00
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -286,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### -UnlimitedBandwidth
-Akan mengatur Bandwidth Tak Terbatas
+Akan Mengatur Bandwidth Tak Terbatas
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -301,7 +301,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -316,7 +316,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -331,15 +331,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PS StackEdgeBandWidthSchedule
+### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeBandWidthSchedule
 
 ## CATATAN
 

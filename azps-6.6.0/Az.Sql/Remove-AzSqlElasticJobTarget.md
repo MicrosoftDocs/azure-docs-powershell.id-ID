@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlElasticJobTarget.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlElasticJobTarget.md
 ms.openlocfilehash: 9adb96c28654b8280b5f6454c29ef3fbf65ea58d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139967739"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141903483"
 ---
 # Remove-AzSqlElasticJobTarget
 
@@ -18,7 +18,7 @@ ms.locfileid: "139967739"
 Menghapus target dari grup target
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/remove-azsqlelasticjobtarget) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqlelasticjobtarget) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Remove-AzSqlElasticJobTarget [-ResourceGroupName] <String> [-AgentServerName] <S
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SqlSmap
+### SqlShardMap
 ```
 Remove-AzSqlElasticJobTarget [-ResourceGroupName] <String> [-AgentServerName] <String> [-AgentName] <String>
  [-TargetGroupName] <String> -ServerName <String> -ShardMapName <String> -DatabaseName <String>
@@ -57,7 +57,7 @@ Remove-AzSqlElasticJobTarget [-ParentObject] <AzureSqlElasticJobTargetGroupModel
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SqlSmapUsingParentObject
+### SqlShardMapUsingParentObject
 ```
 Remove-AzSqlElasticJobTarget [-ParentObject] <AzureSqlElasticJobTargetGroupModel> -ServerName <String>
  -ShardMapName <String> -DatabaseName <String> -RefreshCredentialName <String>
@@ -77,7 +77,7 @@ Remove-AzSqlElasticJobTarget [-ParentResourceId] <String> -ServerName <String> [
  [<CommonParameters>]
 ```
 
-### SqlS sintaksMapUsingParentResourceId
+### SqlShardMapUsingParentResourceId
 ```
 Remove-AzSqlElasticJobTarget [-ParentResourceId] <String> -ServerName <String> -ShardMapName <String>
  -DatabaseName <String> -RefreshCredentialName <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf]
@@ -89,7 +89,7 @@ Cmdlet Remove-AzSqlElasticJobTarget menghapus sumber daya target ke grup target
 
 ## EXAMPLES
 
-### Contoh 1: Hapus target server
+### Contoh 1: Menghapus target server
 ```powershell
 PS C:\> $tg = Get-AzSqlElasticJobTargetGroup -ResourceGroupName rg -ServerName elasticjobserver -Name tg1
 $tg | Remove-AzSqlElasticJobTarget -ServerName s1 -RefreshCredentialName cred1
@@ -99,7 +99,7 @@ TargetGroupName TargetType TargetServerName TargetDatabaseName TargetElasticPool
 tg1             SqlServer  s1                                                                           cred1                 Include
 ```
 
-### Contoh 2: Hapus target database
+### Contoh 2: Menghapus target database
 ```powershell
 PS C:\> $tg = Get-AzSqlElasticJobTargetGroup -ResourceGroupName rg -ServerName elasticjobserver -Name tg1
 $tg | Remove-AzSqlElasticJobTarget -ServerName s1 -DatabaseName db2
@@ -109,7 +109,7 @@ TargetGroupName TargetType  TargetServerName TargetDatabaseName TargetElasticPoo
 tg1             SqlDatabase s1               db2                                                                               Include
 ```
 
-### Contoh 3: Menghapus target pool elastis
+### Contoh 3: Hapus target kumpulan elastis
 ```powershell
 PS C:\> $tg = Get-AzSqlElasticJobTargetGroup -ResourceGroupName rg -ServerName elasticjobserver -Name tg1
 $tg | Remove-AzSqlElasticJobTarget -ServerName s1 -ElasticPoolName ep1 -RefreshCredentialName cred1
@@ -119,7 +119,7 @@ TargetGroupName TargetType     TargetServerName TargetDatabaseName TargetElastic
 tg1             SqlElasticPool s1                                  ep1                                      cred1                 Include
 ```
 
-### Contoh 4: Menghapus target peta lokasi
+### Contoh 4: Menghapus target peta shard
 ```powershell
 PS C:\> $tg = Get-AzSqlElasticJobTargetGroup -ResourceGroupName rg -ServerName elasticjobserver -Name tg1
 $tg | Remove-AzSqlElasticJobTarget -ServerName s1 -ShardMapName sm1 -DatabaseName db1 -RefreshCredentialName cred1
@@ -129,12 +129,12 @@ TargetGroupName TargetType  TargetServerName TargetDatabaseName TargetElasticPoo
 tg1             SqlShardMap s1               db1                                      sm1                cred1                 Include
 ```
 
-Menghapus target (server, kelompok elastis, database, dan peta s azure) dari grup target
+Menghapus target (server, kumpulan elastis, database, dan peta shard) dari grup target
 
 ## PARAMETERS
 
 ### -AgentName
-SQL Database Agen.
+SQL Database Nama Agen.
 
 ```yaml
 Type: System.String
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -AgentServerName
-SQL Database Server Agen.
+SQL Database Nama Server Agen.
 
 ```yaml
 Type: System.String
@@ -193,8 +193,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ElastisPoolName
-Nama Target Kolam Elastis
+### -ElasticPoolName
+Nama Target Kumpulan Elastis
 
 ```yaml
 Type: System.String
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -RefreshCredentialName
-Merefresh Nama Kredensial
+Refresh Nama Kredensial
 
 ```yaml
 Type: System.String
@@ -295,8 +295,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -SmapMapName
-Nama Target Peta Starget
+### -ShardMapName
+Nama Target Peta Shard
 
 ```yaml
 Type: System.String
@@ -311,7 +311,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetGroupName
-SQL Database Agen.
+SQL Database Nama Agen.
 
 ```yaml
 Type: System.String
@@ -326,7 +326,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -342,7 +342,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -357,11 +357,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Sql.ElastisJobs.Model.AzureSqlElasticJobTargetGroupModel
+### Microsoft.Azure.Commands.Sql.ElasticJobs.Model.AzureSqlElasticJobTargetGroupModel
 
 ## OUTPUTS
 

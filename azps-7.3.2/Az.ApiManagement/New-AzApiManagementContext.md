@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementContext.md
-ms.openlocfilehash: 82497872a55b8ce19bb88e99a3a9ba2f1848432a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 21fd26fd3459f59be6283f17796c1eb81ac9a048
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140558149"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141899109"
 ---
 # New-AzApiManagementContext
 
 ## SYNOPSIS
 Membuat contoh PsAzureApiManagementContext.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementcontext) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,11 +36,11 @@ New-AzApiManagementContext -ResourceId <String> [-DefaultProfile <IAzureContextC
 
 ## DESCRIPTION
 Cmdlet **New-AzApiManagementContext** membuat contoh **PsAzureApiManagementContext**.
-Konteksnya digunakan untuk semua cmdlet layanan Manajemen API.
+Konteks digunakan untuk semua cmdlet layanan API Management.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat contoh PsApiManagementContext
+### Contoh 1: Membuat instans PsApiManagementContext
 ```powershell
 $ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "ContosoResources" -ServiceName "Contoso"
 ```
@@ -47,7 +50,7 @@ Perintah ini membuat contoh **PsApiManagementContext**.
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -62,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat layanan Manajemen API digunakan.
+Menentukan nama grup sumber daya tempat layanan API Management digunakan.
 
 ```yaml
 Type: System.String
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Arm Resource Identifier of a ApiManagement service. Parameter ini diperlukan.
+Arm Resource Identifier dari layanan ApiManagement. Parameter ini diperlukan.
 
 ```yaml
 Type: System.String
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Menentukan nama layanan Manajemen API yang disebarkan.
+Menentukan nama layanan API Management yang digunakan.
 
 ```yaml
 Type: System.String
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

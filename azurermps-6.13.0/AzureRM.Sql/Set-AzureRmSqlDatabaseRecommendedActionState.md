@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Set-AzureRmSqlDatabaseRecommendedActionState.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Set-AzureRmSqlDatabaseRecommendedActionState.md
 ms.openlocfilehash: c926078b46fbfb27947e53121e159aafe092da3e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423261"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141923636"
 ---
 # Set-AzureRmSqlDatabaseRecommendedActionState
 
 ## SYNOPSIS
-Memperbarui status tindakan yang Azure SQL Database disarankan.
+Memperbarui status tindakan yang direkomendasikan Azure SQL Database.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,12 +29,12 @@ Set-AzureRmSqlDatabaseRecommendedActionState -RecommendedActionName <String> -St
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmSqlDatabaseRecommendedActionState** memperbarui status Tindakan yang Azure SQL Database yang Disarankan.
-Hal ini memungkinkan tindakan yang disarankan untuk diterapkan, dikembalikan atau dibuang berdasarkan status yang baru.
+**Cmdlet Set-AzureRmSqlDatabaseRecommendedActionState** memperbarui status Tindakan yang Direkomendasikan Azure SQL Database.
+Ini memungkinkan tindakan yang direkomendasikan untuk diterapkan, dikembalikan, atau dibuang berdasarkan status baru.
 
 ## EXAMPLES
 
-### Contoh 1: Menerapkan status tindakan yang direkomendasikan ke tertunda
+### Contoh 1: Menerapkan status tindakan yang disarankan ke tertunda
 ```
 PS C:\>Set-AzureRmSqlDatabaseRecommendedActionState -ResourceGroupName "WIRunnersProd" -ServerName "wi-runner-australia-east" -DatabaseName "WIRunner" -AdvisorName "CreateIndex" -RecommendedActionName "IR_[test_schema]_[test_table_0.0361551]_6C7AE8CC9C87E7FD5893" -State Pending
 DatabaseName               : WIRunner
@@ -69,12 +69,12 @@ TimeSeries                 : {}
 ValidSince                 : 4/21/2016 3:24:47 PM
 ```
 
-Perintah ini memperbarui status tindakan yang direkomendasikan bernama IR_ \[ test_schema \] _ \[ test_table_0.0361551 _6C7AE8CC9C87E7FD5893 yang dimiliki database bernama \] WIRunner menjadi Tertunda.
+Perintah ini memperbarui status tindakan yang direkomendasikan bernama IR_\[test_schema\]_\[test_table_0.0361551\]_6C7AE8CC9C87E7FD5893 yang termasuk dalam database bernama WIRunner menjadi Tertunda.
 
 ## PARAMETERS
 
 ### -AdvisorName
-Menentukan nama penasihat tempat tindakan disarankan ini digunakan.
+Menentukan nama penasihat tempat tindakan yang direkomendasikan ini berada.
 
 ```yaml
 Type: System.String
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Menentukan nama database di mana cmdlet ini mengatur status tindakan yang direkomendasikan.
+Menentukan nama database tempat cmdlet ini mengatur status tindakan yang disarankan.
 
 ```yaml
 Type: System.String
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -164,14 +164,14 @@ Accept wildcard characters: False
 ```
 
 ### -Negara Bagian
-Menentukan nilai baru cmdlet ini memperbarui status tindakan yang direkomendasikan.
+Menentukan nilai baru di mana cmdlet ini memperbarui status tindakan yang direkomendasikan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Aktif
 - Tertunda
 - PendingRevert
 - RevertCancelled
 - Diabaikan
-- Teratasi
+- Diselesaikan
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.RecommendedAction.Cmdlet.RecommendedActionState
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -218,20 +218,20 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### Microsoft.Azure.Commands.sql.RecommendedAction.Cmdlet.RecommendedActionState
+### Microsoft.Azure.Commands.Sql.RecommendedAction.Cmdlet.RecommendedActionState
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Sql.RecommendedAction.Model.AzureSqlDatabaseRecommendedActionModel
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, sql, database, mssql, advisor, recommendedaction
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, database, mssql, penasihat, rekomendasi
 
 ## RELATED LINKS
 
@@ -255,4 +255,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzureRmSqlServerAdvisorAutoExecuteStatus](./Set-AzureRmSqlServerAdvisorAutoExecuteStatus.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

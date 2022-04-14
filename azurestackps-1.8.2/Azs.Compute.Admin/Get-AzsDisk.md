@@ -3,12 +3,12 @@ external help file: Azs.Compute.Admin-help.xml
 Module Name: Azs.Compute.Admin
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 1acb246ae646fe9a63a8631f2ec08dfb731a373f18f9f3f8b52b6e751fb48ae7
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: a2b639a09789960393ac26d035a80157069dbaaa
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417009"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141879404"
 ---
 # Get-AzsDisk
 
@@ -28,7 +28,7 @@ Get-AzsDisk [-Location <String>] [-Start <Int32>] [-SharePath <String>] [-Count 
 Get-AzsDisk -ResourceId <String> [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsDisk [-Location <String>] -Name <String> [<CommonParameters>]
 ```
@@ -51,12 +51,12 @@ Secara default, ini akan menjadi 100 disk pertama
 $disk = Get-AzsDisk -location local -name $DiskId
 ```
 
-Mendapatkan disk terkelola tertentu.
+Dapatkan disk terkelola tertentu.
 
 ## PARAMETERS
 
 ### -Count
-Jumlah maksimum disk untuk dikembalikan.
+Jumlah maksimum diska yang akan dikembalikan.
 
 ```yaml
 Type: Int32
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Disk guid sebagai identitas.
+Disk memandu sebagai identitas.
 
 ```yaml
 Type: String
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -SharePath
-Sumber berbagi sumber daya tempat sumber daya tersebut berada.
+Sumber berbagi tempat sumber daya berada.
 
 ```yaml
 Type: String
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -Mulai
-The start index of disks in query.
+Indeks mulai disk dalam kueri.
 
 ```yaml
 Type: Int32
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserSubscriptionId
-Id Langganan Penyewa yang menjadi sumber dayanya.
+Id Langganan Penyewa tempat sumber daya berada.
 
 ```yaml
 Type: String
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

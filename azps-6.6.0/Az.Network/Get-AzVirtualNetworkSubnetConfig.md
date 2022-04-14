@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkSubnetConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkSubnetConfig.md
 ms.openlocfilehash: 7091497a1a385a01a36a12ab65c416f76ea9b30b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140104139"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142125071"
 ---
 # Get-AzVirtualNetworkSubnetConfig
 
 ## SYNOPSIS
-Mendapatkan subnet dalam jaringan virtual.
+Mendapatkan subnet di jaringan virtual.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azvirtualnetworksubnetconfig) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualnetworksubnetconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Get-AzVirtualNetworkSubnetConfig -ResourceId <String> [-DefaultProfile <IAzureCo
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVirtualNetworkSubnetConfig** mendapatkan satu atau beberapa konfigurasi subnet di jaringan virtual Azure.
+Cmdlet **Get-AzVirtualNetworkSubnetConfig** mendapatkan satu atau beberapa konfigurasi subnet dalam jaringan virtual Azure.
 
 ## EXAMPLES
 
@@ -50,12 +50,12 @@ New-AzResourceGroup -Name TestResourceGroup -Location centralus
     Get-AzVirtualNetworkSubnetConfig -Name frontendSubnet -VirtualNetwork $virtualNetwork
 ```
 
-Contoh ini membuat grup sumber daya dan jaringan virtual dengan subnet tunggal dalam grup sumber daya tersebut. Subnet tersebut kemudian mengambil data tentang subnet itu.
+Contoh ini membuat grup sumber daya dan jaringan virtual dengan subnet tunggal dalam grup sumber daya tersebut. Lalu mengambil data tentang subnet tersebut.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama konfigurasi subnet yang akan didaurkan cmdlet ini.
+Menentukan nama konfigurasi subnet yang didapatkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan id sumber daya subnet yang didaurkan cmdlet ini.
+Menentukan id sumber daya subnet yang didapatkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetwork
-Menentukan objek **VirtualNetwork** yang berisi konfigurasi subnet yang akan didaangkan cmdlet ini.
+Menentukan objek **VirtualNetwork** yang berisi konfigurasi subnet yang didapatkan cmdlet ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualNetwork
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -135,6 +135,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzVirtualNetworkSubnetConfig](./New-AzVirtualNetworkSubnetConfig.md)
 
-[Remove-AzVirtualNetworksubnetConfig](./Remove-AzVirtualNetworkSubnetConfig.md)
+[Remove-AzVirtualNetworkSubnetConfig](./Remove-AzVirtualNetworkSubnetConfig.md)
 
-[Set-azVirtualNetworkSubnetConfig](./Set-AzVirtualNetworkSubnetConfig.md)
+[Set-AzVirtualNetworkSubnetConfig](./Set-AzVirtualNetworkSubnetConfig.md)

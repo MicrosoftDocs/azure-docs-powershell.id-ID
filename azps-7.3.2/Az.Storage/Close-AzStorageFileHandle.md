@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/close-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Close-AzStorageFileHandle.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Close-AzStorageFileHandle.md
-ms.openlocfilehash: 3953308f12185de8b309ad8dbd03f812ed9906b7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 78afeafad76f6cc3d1fe9cd1db658ab90bde9e68
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140553899"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141932649"
 ---
 # Close-AzStorageFileHandle
 
 ## SYNOPSIS
-Menutup gagang file untuk berbagi file, direktori file atau file.
+Menutup gagang file yang dibagikan, direktori file, atau file.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/close-azstoragefilehandle) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ Close-AzStorageFileHandle [-Directory] <CloudFileDirectory> [[-Path] <String>] [
  [<CommonParameters>]
 ```
 
-### FileCloseAll
+### FileCloseSeMua
 ```
 Close-AzStorageFileHandle [-File] <CloudFile> [-CloseAll] [-PassThru] [-AsJob]
  [-ServerTimeoutPerRequest <Int32>] [-ClientTimeoutPerRequest <Int32>]
@@ -68,33 +71,33 @@ Close-AzStorageFileHandle [-File] <CloudFile> [-CloseAll] [-PassThru] [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet **Close-AzStorageFileHandle** menutup gagang file berbagi file, atau direktori file atau file.
+Cmdlet **Close-AzStorageFileHandle** menutup gagang file yang dibagikan, atau direktori file atau file.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan semua berbagi file Storage saat ini, lalu tutup semua gagang file yang akan bagikan secara berulang.
+### Contoh 1: Mencantumkan semua berbagi file akun Storage saat ini, dan menutup semua gagang file file yang dibagikan secara rekursif.
 ```
 PS C:\>Get-AzStorageShare | Close-AzStorageFileHandle -CloseAll -Recursive
 ```
 
-Perintah ini mencantumkan semua berbagi file dari Storage saat ini, dan menutup semua gagang file yang menangani file yang akan bagikan secara berulang..
+Perintah ini mencantumkan semua berbagi file akun Storage saat ini, dan menutup semua gagang file file yang dibagikan secara rekursif..
 
-### Contoh 2: Tutup semua gagang file pada direktori file secara berulang dan tampilkan jumlah gagang file tertutup
+### Contoh 2: Menutup semua gagang file pada direktori file secara rekursif dan memperlihatkan jumlah gagang file yang ditutup
 ```
 PS C:\>Close-AzStorageFileHandle -ShareName "mysharename" -Path 'dir1/dir2' -Recursive -CloseAll -PassThru
 10
 ```
 
-Perintah ini menutup semua gagang file pada direktori file dan memperlihatkan jumlah gagang file tertutup.
+Perintah ini menutup semua gagang file pada direktori file dan memperlihatkan jumlah gagang file yang ditutup.
 
-### Contoh 3: Tutup semua gagang file yang dibuka 1 hari lalu pada direktori file
+### Contoh 3: Menutup semua gagang file yang dibuka 1 hari yang lalu pada direktori file
 ```
 PS C:\>Get-AzStorageFileHandle -ShareName "mysharename" -Path 'dir1/dir2' -Recursive | ? {$_.OpenTime.DateTime.AddDays(1) -lt (Get-Date)} | Close-AzStorageFileHandle -ShareName "mysharename"
 ```
 
-Perintah ini mencantumkan semua gagang file pada direktori file secara berulang, memfilter gagang yang dibuka 1 hari lalu, lalu menutupnya.
+Perintah ini mencantumkan semua gagang file pada direktori file secara rekursif, memfilter gagang yang dibuka 1 hari yang lalu, lalu menutupnya.
 
-### Contoh 4: Tutup semua gagang file pada file
+### Contoh 4: Menutup semua gagang file pada file
 ```
 PS C:\>Close-AzStorageFileHandle -ShareName "mysharename" -Path 'dir1/dir2/test.txt' -CloseAll
 ```
@@ -104,7 +107,7 @@ Perintah ini menutup semua gagang file pada file.
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientTimeoutPerRequest
-Waktu eksekusi maksimal sisi klien untuk setiap permintaan dalam detik.
+Waktu eksekusi maksimum sisi klien untuk setiap permintaan dalam hitung detik.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -CloseAll
-Tutup semua gagang File.
+Tutup paksa semua gagang File.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,8 +152,8 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Jumlah total tugas bersama.
-Nilai default adalah 10.
+Jumlah total tugas asinkron serentak.
+Nilai defaultnya adalah 10.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Azure Storage Konteks
+Objek Konteks Azure Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -File
-Objek CloudFile menunjukkan file untuk menutup gagang.
+Objek CloudFile menunjukkan file untuk ditangani.
 
 ```yaml
 Type: Microsoft.Azure.Storage.File.CloudFile
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -FileHandle
-Gagang File untuk menutup.
+Gagang File untuk ditutup.
 
 ```yaml
 Type: Microsoft.WindowsAzure.Commands.Storage.Model.ResourceModel.PSFileHandle
@@ -240,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan hitungan gagang file tertutup.
+Mengembalikan hitungan gagang file yang ditutup.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -254,7 +257,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
+### -Jalur
 Jalur ke file/direktori yang sudah ada.
 
 ```yaml
@@ -269,8 +272,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Rekursif
-Daftar menangani secara rekursif.
+### -Rekursi
+Daftar menangani Berulang.
 Hanya berfungsi di Direktori File.
 
 ```yaml
@@ -286,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Waktu server habis untuk setiap permintaan dalam hitungan detik.
+Waktu server habis untuk setiap permintaan dalam hitung detik.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -316,7 +319,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShareName
-Nama berbagi file di mana file/direktori akan dicantumkan.
+Nama file yang dibagikan di mana file/direktori akan dicantumkan.
 
 ```yaml
 Type: System.String
@@ -331,7 +334,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -347,7 +350,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -362,7 +365,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -374,7 +377,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure. Storage. File.CloseFileHandleResultsegment
+### Microsoft.Azure. Storage. File.CloseFileHandleResultSegment
 
 ## CATATAN
 

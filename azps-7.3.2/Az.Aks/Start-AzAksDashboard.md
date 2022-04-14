@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/start-azaksd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Start-AzAksDashboard.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Start-AzAksDashboard.md
-ms.openlocfilehash: c9ea16c28f57862e3d2c4c4e80c0ce19baafc2f1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f890115a7efe6be6e9aa1b21c484f0421ba34506
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140203334"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141899793"
 ---
 # Start-AzAksDashboard
 
 ## SYNOPSIS
-Buat dashboard KLUSTER Kubectl ke dasbor kluster terkelola.
+Buat terowongan Kubectl SSH ke dasbor kluster yang dikelola.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.aks/start-azaksdashboard) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ Start-AzAksDashboard [-Id] <String> [-DisableBrowser] [-ListenPort <Int32>] [-Pa
 ```
 
 ## DESCRIPTION
-Buat dashboard KLUSTER Kubectl ke dasbor kluster terkelola. The WIZARD is setup in a PowerShell job called Kubectl-Tunnel and can be found by running `Get-Job`. The vpn should be accessible via [http://127.0.0.1:8001](http://127.0.0.1:8001).
+Buat terowongan Kubectl SSH ke dasbor kluster yang dikelola. Terowongan SSH diatur dalam pekerjaan PowerShell yang disebut Kubectl-Tunnel dan dapat ditemukan dengan menjalankan `Get-Job`. Terowongan harus dapat diakses melalui [http://127.0.0.1:8001](http://127.0.0.1:8001).
 
 ## EXAMPLES
 
-### Mulai dasbor DASHBOARD dan buka browser ke dasbor K dashboard
+### Mulai terowongan SSH dan buka browser ke dasbor Kubernetes
 ```powershell
 Start-AzAksDashboard -ResourceGroupName group -Name myCluster
 ```
@@ -65,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableBrowser
-Jangan pop membuka browser setelah membuat port-forward kubectl.
+Jangan buka browser setelah menetapkan port-forward kubectl.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id kluster Grup terkelola
+Id dari kluster Kubernetes yang dikelola
 
 ```yaml
 Type: System.String
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek PSK terverifikasi, biasanya melewati saluran.
+Sebuah objek PSKubernetesCluster, biasanya melewati pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Aks.Models.PSKubernetesCluster
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -ListenPort
-Port mendengarkan dasbor. Nilai default adalah 8003.
+Port mendengarkan untuk dasbor. Nilai defaultnya adalah 8003.
 
 ```yaml
 Type: System.Int32
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama kluster Grup terkelola Anda
+Nama kluster Kubernetes terkelola Anda
 
 ```yaml
 Type: System.String
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengganti langganan hanya berlaku selama siklus hidup cmdlet saat ini. Langganan tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
+Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -187,11 +190,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Aks.Models.PSK azuresCluster
+### Microsoft.Azure.Commands.Aks.Models.PSKubernetesCluster
 
 ### System.String
 

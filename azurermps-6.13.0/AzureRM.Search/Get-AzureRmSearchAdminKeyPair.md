@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.searc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Search/Commands.Management.Search/help/Get-AzureRmSearchAdminKeyPair.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Search/Commands.Management.Search/help/Get-AzureRmSearchAdminKeyPair.md
-ms.openlocfilehash: 9cd197ab15b0f72ddc65415b7c3803c58f7ccb1bfe5fcb4f00186e6b2733a37a
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 92b2e7304c0f837e47f7464e84769478902c973a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417735"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141924476"
 ---
 # Get-AzureRmSearchAdminKeyPair
 
 ## SYNOPSIS
-Mendapatkan pasangan kunci admin dari layanan Azure Search.
+Mendapatkan pasangan kunci admin azure layanan Pencarian.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,7 +40,7 @@ Get-AzureRmSearchAdminKeyPair [-ParentResourceId] <String> [-DefaultProfile <IAz
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmSearchAdminKeyPair** mendapatkan pasangan tombol admin dari layanan Pencarian Azure.
+Cmdlet **Get-AzureRmSearchAdminKeyPair** mendapatkan pasangan kunci admin Azure layanan Pencarian.
 
 ## EXAMPLES
 
@@ -53,7 +53,7 @@ Primary                          Secondary
 3B06A25BDADFF72EC132736BAA2547A1 E643B75A52E04DF13EB690807C451C55
 ```
 
-Contoh ini mendapatkan pasangan kunci admin layanan Azure Search.
+Contoh mendapatkan pasangan kunci admin azure layanan Pencarian.
 
 ## PARAMETERS
 
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentResourceId
-Search Service Resource Id.
+Id Sumber Daya Layanan Pencarian.
 
 ```yaml
 Type: System.String
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Cari Nama Layanan.
+Nama Layanan Pencarian.
 
 ```yaml
 Type: System.String
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

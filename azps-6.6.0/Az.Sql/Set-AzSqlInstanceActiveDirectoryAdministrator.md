@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstanceActiveDirectoryAdministrator.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstanceActiveDirectoryAdministrator.md
 ms.openlocfilehash: ca1a6101d674b31c88f94242a425ba435c705cfc
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139967451"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142075711"
 ---
 # Set-AzSqlInstanceActiveDirectoryAdministrator
 
 ## SYNOPSIS
-Menyediakan administrator Azure AD untuk SQL Instans Terkelola.
+Menyediakan administrator Azure AD untuk SQL Managed Instance.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqlinstanceactivedirectoryadministrator) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqlinstanceactivedirectoryadministrator) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Set-AzSqlInstanceActiveDirectoryAdministrator [-DisplayName] <String> [-ObjectId
  [-Confirm] [<CommonParameters>]
 ```
 
-### UseInputObjectParameterSet
+### GunakanInputObjectParameterSet
 ```
 Set-AzSqlInstanceActiveDirectoryAdministrator [-DisplayName] <String> [-ObjectId] <Guid>
  -InputObject <AzureSqlManagedInstanceModel> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
@@ -45,13 +45,13 @@ Set-AzSqlInstanceActiveDirectoryAdministrator [-DisplayName] <String> [-ObjectId
 ## DESCRIPTION
 Cmdlet **Set-AzSqlInstanceActiveDirectoryAdministrator** menyediakan administrator Azure Active Directory (Azure AD) untuk Instans Terkelola AzureSQL dalam langganan saat ini.
 Anda hanya bisa menyediakan satu administrator dalam satu waktu.
-Anggota Azure AD berikut dapat ditetapkan sebagai administrator Instans SQL Terkelola:
+Anggota Azure AD berikut ini dapat ditetapkan sebagai administrator SQL Managed Instance:
 - Anggota asli Azure AD 
 - Anggota gabungan Azure AD 
-- Grup Azure AD yang dibuat sebagai grup keamanan Anggota yang diimpor dari Azure AD lain tidak didukung sebagai administrator.
-Akun Microsoft, seperti yang ada di Outlook.com, Hotmail.com, atau Live.com lokal, tidak didukung sebagai administrator.
-Akun tamu lain, seperti yang ada di Gmail.com atau Yahoo.com tamu, tidak didukung sebagai administrator.
-Kami menyarankan Anda menyediakan grup Khusus Azure AD sebagai administrator.
+- Azure AD grup yang dibuat sebagai grup keamanan Anggota yang diimpor dari AD Azure lainnya tidak didukung sebagai administrator.
+Akun Microsoft, seperti yang ada di domain Outlook.com, Hotmail.com, atau Live.com, tidak didukung sebagai administrator.
+Akun tamu lain, seperti yang ada di domain Gmail.com atau Yahoo.com, tidak didukung sebagai administrator.
+Kami menyarankan agar Anda menyediakan grup Azure AD khusus sebagai administrator.
 
 ## EXAMPLES
 
@@ -66,7 +66,7 @@ ResourceGroup01   ManagedInstance01 DBAs        40b79501-b343-44ed-9ce7-da4c8cc7
 Perintah ini menyediakan grup administrator Azure AD bernama DBAs untuk instans terkelola bernama ManagedInstance01.
 Server ini dikaitkan dengan grup sumber daya ResourceGroup01.
 
-### Contoh 2: Menetapkan pengguna administrator menggunakan objek instans terkelola
+### Contoh 2: Menyediakan pengguna administrator menggunakan objek instans terkelola
 ```
 PS C:\>Get-AzSqlInstance -ResourceGroupName "ResourceGroup01" -InstanceName "ManagedInstance01" | Set-AzSqlInstanceActiveDirectoryAdministrator -DisplayName "David Chew" -ObjectId "11E95548-B179-4FE1-9AF4-ACA49D13ABB9"
 ResourceGroupName InstanceName      DisplayName ObjectId 
@@ -74,7 +74,7 @@ ResourceGroupName InstanceName      DisplayName ObjectId
 Resourcegroup01   ManagedInstance01 David Chew  11E95548-B179-4FE1-9AF4-ACA49D13ABB9
 ```
 
-Perintah ini menyediakan pengguna Azure AD sebagai administrator dari objek instans terkelola.
+Perintah ini menyediakan pengguna Azure AD sebagai administrator dari objek instans yang dikelola.
 
 ### Contoh 3: Menyediakan administrator menggunakan pengidentifikasi sumber daya instans terkelola
 ```
@@ -84,7 +84,7 @@ ResourceGroupName InstanceName      DisplayName ObjectId
 Resourcegroup01   ManagedInstance01 David Chew  11E95548-B179-4FE1-9AF4-ACA49D13ABB9
 ```
 
-Perintah ini menyediakan pengguna Azure AD sebagai administrator yang menggunakan pengidentifikasi sumber daya instans terkelola.
+Perintah ini menyediakan pengguna Azure AD sebagai administrator menggunakan pengidentifikasi sumber daya instans terkelola.
 
 ## PARAMETERS
 
@@ -104,8 +104,8 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Menentukan nama tampilan pengguna atau grup yang akan diberi izin.
-Nama tampilan harus ada di direktori aktif yang terkait dengan langganan saat ini.
+Menentukan nama tampilan pengguna atau grup yang akan memberikan izin.
+Nama tampilan ini harus ada di direktori aktif yang terkait dengan langganan saat ini.
 
 ```yaml
 Type: System.String
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek instans terkelola yang akan digunakan.
+Objek instans yang dikelola untuk digunakan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.ManagedInstance.Model.AzureSqlManagedInstanceModel
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-SQL Instans Terkelola.
+SQL Managed Instance nama.
 
 ```yaml
 Type: System.String
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Menentukan ID objek pengguna atau grup di Azure Active Directory yang memberikan izin.
+Menentukan ID objek pengguna atau grup di Azure Active Directory untuk memberikan izin.
 
 ```yaml
 Type: System.Guid
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya contoh yang digunakan
+Id sumber daya instans yang akan digunakan
 
 ```yaml
 Type: System.String
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -236,7 +236,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.sql.InstanceActiveDirectoryAdministrator.Model.AzureSqlInstanceActiveDirectoryAdministratorModel
+### Microsoft.Azure.Commands.Sql.InstanceActiveDirectoryAdministrator.Model.AzureSqlInstanceActiveDirectoryAdministratorModel
 
 ## CATATAN
 

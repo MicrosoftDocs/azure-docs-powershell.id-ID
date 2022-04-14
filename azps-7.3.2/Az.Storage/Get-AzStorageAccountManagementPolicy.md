@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/Az.storage/get-Azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageAccountManagementPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageAccountManagementPolicy.md
-ms.openlocfilehash: 2b5b9b20b13e7288e0985741af5c90539f5ca652
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 14ead654fe0ee123b1b0484f09153ccbd2c8383c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140553882"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141932560"
 ---
 # Get-AzStorageAccountManagementPolicy
 
 ## SYNOPSIS
-Mendapatkan kebijakan manajemen akun Azure Storage Anda.
+Mendapatkan kebijakan manajemen akun Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageaccountmanagementpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Nama Akun (Default)
+### AccountName (Default)
 ```
 Get-AzStorageAccountManagementPolicy [-ResourceGroupName] <String> [-StorageAccountName] <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -42,7 +45,7 @@ Cmdlet **Get-AzStorageAccountManagementPolicy** mendapatkan kebijakan manajemen 
 
 ## EXAMPLES
 
-### Contoh 1: Get the management policy of a Storage account.
+### Contoh 1: Dapatkan kebijakan manajemen akun Storage.
 ```
 PS C:\>Get-AzStorageAccountManagementPolicy -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount"
 
@@ -110,7 +113,7 @@ Rules              : [
                      ]
 ```
 
-Perintah ini mendapatkan kebijakan manajemen suatu Storage tersebut.
+Perintah ini mendapatkan kebijakan manajemen akun Storage.
 
 ## PARAMETERS
 
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage objek akun
+objek akun Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Storage Akun.
+Storage Nama Akun.
 
 ```yaml
 Type: System.String
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountResourceId
-Storage Sumber Daya Akun.
+id sumber daya akun Storage.
 
 ```yaml
 Type: System.String
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

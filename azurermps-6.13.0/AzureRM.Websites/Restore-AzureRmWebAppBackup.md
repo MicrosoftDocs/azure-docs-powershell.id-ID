@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.websi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/Restore-AzureRmWebAppBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/Restore-AzureRmWebAppBackup.md
-ms.openlocfilehash: 1e7370e48653111e7ea118547ed5055e92e95fccb0c5224d0cd12a6b483514dd
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: efb570c22b5345b9d75fdf96dca061dc5cf7847f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140856566"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141923174"
 ---
 # Restore-AzureRmWebAppBackup
 
@@ -37,7 +37,7 @@ Restore-AzureRmWebAppBackup [-AppServicePlan <String>] [-Databases <DatabaseBack
 ```
 
 ## DESCRIPTION
-Cmdlet **Restore-AzureRmWebAppBackup** memulihkan Cadangan Azure Web App.
+Cmdlet **Pulihkan-AzureRmWebAppBackup** memulihkan Cadangan Azure Web App.
 
 ## EXAMPLES
 
@@ -46,12 +46,12 @@ Cmdlet **Restore-AzureRmWebAppBackup** memulihkan Cadangan Azure Web App.
 PS C:\> Restore-AzureRmWebAppBackup -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -StorageAccountUrl "https://storageaccount.file.core.windows.net" -BlobName "myBlob"
 ```
 
-Memulihkan cadangan aplikasi tertentu ContosoWebApp yang ada di dalam grup sumber daya Default-Web-WestUS di blob "myBlob" yang terletak di https://storageaccount.file.core.windows.net
+Memulihkan cadangan aplikasi tertentu ContosoWebApp yang berada dalam grup sumber daya Default-Web-WestUS dalam blob "myBlob" yang terletak di https://storageaccount.file.core.windows.net
 
 ## PARAMETERS
 
 ### -AppServicePlan
-Nama Paket Layanan Aplikasi untuk aplikasi yang dipulihkan. Jika dibiarkan kosong, Paket Layanan Aplikasi saat ini digunakan.
+Nama paket App Service untuk aplikasi yang dipulihkan. Jika dibiarkan kosong, Paket App Service aplikasi saat ini digunakan.
 
 ```yaml
 Type: System.String
@@ -80,7 +80,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Database
+### -Databases
 Database tipe DatabaseBackupSetting[]
 
 ```yaml
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -IgnoreConflictingHostNames
-Abaikan Opsi Nama Host yang Berkonflik
+Opsi Abaikan Nama Host yang Berkonflik
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,7 +140,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Overwrite
+### -Timpa
 Opsi Timpa
 
 ```yaml
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountUrl
-Url Akun Storage Baru
+URL Akun Storage
 
 ```yaml
 Type: System.String
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

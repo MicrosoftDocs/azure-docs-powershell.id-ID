@@ -5,11 +5,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzDiskAccess.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzDiskAccess.md
 ms.openlocfilehash: c46314d125327256a6679e399aec2d5fc4d36084
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140467991"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142089645"
 ---
 # Get-AzDiskAccess
 
@@ -17,7 +17,7 @@ ms.locfileid: "140467991"
 Mendapatkan properti Akses Disk
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/get-azdiskaccess) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azdiskaccess) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-AzDiskAccess [-ResourceId] <String> [-DefaultProfile <IAzureContextContainer
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDiskAccess** mendapatkan properti Disk Accesses
+Cmdlet **Get-AzDiskAccess** mendapatkan properti Akses Disk
 
 ## EXAMPLES
 
@@ -53,7 +53,7 @@ Tags                       : {}
 
 Perintah ini mendapatkan properti sumber daya Akses Disk bernama 'DiskAccess01' dalam grup sumber daya 'ResourceGroup01'.
 
-### Contoh 2: Get-AzDiskAccess grup sumber daya
+### Contoh 2: Get-AzDiskAccess menurut Grup Sumber Daya
 ```
 PS C:\> Get-AzDiskAccess -ResourceGroupName 'ResourceGroup01'
 
@@ -76,7 +76,7 @@ Type                       : Microsoft.Compute/diskAccesses
 Tags                       : {}
 ```
 
-Perintah ini mendapatkan properti dari semua akses disk dalam grup sumber daya 'ResourceGroup01'.
+Perintah ini mendapatkan properti semua akses disk dalam grup sumber daya 'ResourceGroup01'.
 
 
 ### Contoh 3: Mendapatkan semua Akses Disk
@@ -136,7 +136,7 @@ Type                       : Microsoft.Compute/diskAccesses
 Tags                       : {}
 ```
 
-Perintah ini mendapatkan properti dari semua akses disk di bawah nama langganan yang dimulai dengan 'DiskAccessMicrosoft'.
+Perintah ini mendapatkan properti semua akses disk di bawah nama langganan yang dimulai dengan 'DiskAccessMicrosoft'.
 
 ### Contoh 5: Dapatkan Akses Disk menggunakan ResourceId.
 ```
@@ -203,7 +203,7 @@ Accept wildcard characters: True
 ```
 
 ### -ResourceId
-ID Sumber Daya untuk akses disk Anda.
+ID sumber daya untuk akses disk Anda.
 
 ```yaml
 Type: System.String
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

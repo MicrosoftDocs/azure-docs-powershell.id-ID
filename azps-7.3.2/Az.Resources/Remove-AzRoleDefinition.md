@@ -6,19 +6,22 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzRoleDefinition.md
-ms.openlocfilehash: ded759d6dfe914e0e294ece5f901c19c3c6011ce
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c97b22faf950e7b1c7b30b7743dc4a62a9c5de87
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140195926"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141933573"
 ---
 # Remove-AzRoleDefinition
 
 ## SYNOPSIS
 Menghapus peran kustom di Azure RBAC.
-Peran yang akan dihapus ditentukan menggunakan properti Id dari peran tersebut.
-Delete akan gagal jika terdapat penetapan peran yang ada yang dilakukan pada peran kustom.
+Peran yang akan dihapus ditentukan menggunakan properti Id peran tersebut.
+Hapus akan gagal jika ada penetapan peran yang sudah ada yang dibuat untuk peran kustom.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-azroledefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,10 +45,10 @@ Remove-AzRoleDefinition -InputObject <PSRoleDefinition> [-Force] [-PassThru]
 
 ## DESCRIPTION
 Cmdlet Remove-AzRoleDefinition menghapus peran kustom di Azure Role-Based Access Control.
-Menyediakan parameter Id dari peran kustom yang sudah ada untuk menghapus peran kustom itu.
-Secara default, Remove-AzRoleDefinition akan meminta konfirmasi.
+Berikan parameter Id dari peran kustom yang sudah ada untuk menghapus peran kustom tersebut.
+Secara default, Remove-AzRoleDefinition meminta konfirmasi.
 Untuk menyembunyikan perintah, gunakan parameter Paksa.
-Jika ada penetapan peran yang ada yang dilakukan pada peran kustom untuk dihapus, penghapusan akan gagal.
+Jika ada penetapan peran yang dibuat untuk peran kustom yang akan dihapus, penghapusan akan gagal.
 
 ## EXAMPLES
 
@@ -62,7 +65,7 @@ Remove-AzRoleDefinition -Id "52a6cc13-ff92-47a8-a39b-2a8205c3087e"
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -76,7 +79,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Jika diatur, tidak meminta konfirmasi sebelum menghapus peran kustom
 
 ```yaml
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -208,7 +211,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### System.Boolean
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, resource, group, template, deployment
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Templat, penyebaran
 
 ## RELATED LINKS
 

@@ -4,16 +4,16 @@ Module Name: Azs.InfrastructureInsights.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.infrastructureinsights.admin/close-azsalert
 schema: 2.0.0
 ms.openlocfilehash: 0a22053c756563d671de022e5ef5f21b4dff33fe
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136578771"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141919352"
 ---
 # Close-AzsAlert
 
 ## SYNOPSIS
-Menutup pemberitahuan tertentu.
+Menutup pemberitahuan yang diberikan.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Close-AzsAlert -Name <String> -User <String> [-Location <String>] [-ResourceGrou
  [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Tutup
+### Dekat
 ```
 Close-AzsAlert -Name <String> -User <String> -Alert \<IAlert> [-Location <String>]
  [-ResourceGroupName <String>] [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf]
@@ -54,7 +54,7 @@ Close-AzsAlert -INPUTOBJECT \<IInfrastructureInsightsAdminIdentity> -User <Strin
 ```
 
 ## DESCRIPTION
-Menutup pemberitahuan tertentu.
+Menutup pemberitahuan yang diberikan.
 
 ## EXAMPLES
 
@@ -70,13 +70,13 @@ Tutup pemberitahuan menurut Nama.
 PS C:\> Get-AzsAlert -Name f2147f3d-42ac-4316-8cbc-f0f9c18888b0 | Close-AzsAlert
 ```
 
-Tutup peringatan melalui pemipaan.
+Tutup pemberitahuan melalui perpipaan.
 
 ## PARAMETERS
 
-### -Alert
-Objek ini mewakili sumber daya pemberitahuan.
-Untuk membuat, lihat bagian CATATAN untuk properti PEMBERITAHUAN dan membuat tabel hash.
+### -Peringatan
+Objek ini mewakili sumber daya peringatan.
+Untuk membangun, lihat bagian CATATAN untuk properti ALERT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.InfrastructureInsightsAdmin.Models.Api20160501.IAlert
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClosedTimestamp
-Tanda waktu saat pemberitahuan ditutup.
+Stempel waktu saat pemberitahuan ditutup.
 
 ```yaml
 Type: System.String
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedTimestamp
-Tanda waktu saat pemberitahuan dibuat.
+Stempel waktu saat pemberitahuan dibuat.
 
 ```yaml
 Type: System.String
@@ -236,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -HasValidRemediationAction
-Menunjukkan apakah peringatan dapat diperbaiki.
+Menunjukkan apakah pemberitahuan dapat dipulihkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImpactedResourceDisplayName
-Nama tampilan untuk item yang terkena dampak.
+Nama tampilan untuk item yang terpengaruh.
 
 ```yaml
 Type: System.String
@@ -268,7 +268,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImpactedResourceId
-Mendapatkan atau mengatur ID Sumber Daya untuk item yang terkena dampak.
+Mendapatkan atau mengatur ID Sumber Daya untuk item yang terpengaruh.
 
 ```yaml
 Type: System.String
@@ -284,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.InfrastructureInsightsAdmin.Models.IInfrastructureInsightsAdminIdentity
@@ -300,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastUpdatedTimestamp
-Tanda waktu saat pemberitahuan terakhir diperbarui.
+Stempel waktu saat pemberitahuan terakhir diperbarui.
 
 ```yaml
 Type: System.String
@@ -331,7 +331,7 @@ Accept wildcard characters: False
 
 ```
 
-### -Lokasi1
+### -Location1
 Kawasan Azure tempat sumber daya berada
 
 ```yaml
@@ -364,7 +364,7 @@ Accept wildcard characters: False
 ```
 
 ### -Remediation
-Mendapatkan atau mengatur instruksi perbaikan yang ramah admin untuk peringatan tersebut.
+Mendapatkan atau mengatur instruksi perbaikan admin yang mudah dikenali untuk pemberitahuan tersebut.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.InfrastructureInsightsAdmin.Models.Api20160501.IDictionary[]
@@ -396,7 +396,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceProviderRegistrationId
-Mendapatkan atau mengatur ID pendaftaran layanan pemberitahuan tersebut.
+Mendapatkan atau mengatur ID pendaftaran layanan tempat pemberitahuan berada.
 
 ```yaml
 Type: System.String
@@ -412,8 +412,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceRegistrationId
-Mendapatkan atau mengatur ID pendaftaran sumber daya yang terkait dengan pemberitahuan tersebut.
-Jika pemberitahuan tidak terkait dengan sumber daya, ID registrasi sumber daya null.
+Mendapatkan atau mengatur ID pendaftaran sumber daya yang terkait dengan peringatan.
+Jika pemberitahuan tidak terkait dengan sumber daya, ID registrasi sumber daya adalah nol.
 
 ```yaml
 Type: System.String
@@ -429,7 +429,7 @@ Accept wildcard characters: False
 ```
 
 ### -Keparahan
-Keparahan pemberitahuan tersebut.
+Tingkat keparahan peringatan.
 
 ```yaml
 Type: System.String
@@ -445,7 +445,7 @@ Accept wildcard characters: False
 ```
 
 ### -Negara Bagian
-Status pemberitahuan.
+Status peringatan.
 
 ```yaml
 Type: System.String
@@ -461,8 +461,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure Anda.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -494,7 +494,7 @@ Accept wildcard characters: False
 ```
 
 ### -Judul
-Mendapatkan atau mengatur ID Sumber Daya untuk item yang terkena dampak.
+Mendapatkan atau mengatur ID Sumber Daya untuk item yang terpengaruh.
 
 ```yaml
 Type: System.String
@@ -526,7 +526,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -543,7 +543,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -559,7 +559,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -575,33 +575,33 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-PEMBERITAHUAN \<IAlert> : Objek ini menunjukkan sumber daya pemberitahuan.
+PERINGATAN \<IAlert>: Objek ini mewakili sumber daya peringatan.
   - `[Location <String>]`: Kawasan Azure tempat sumber daya berada
   - `[Tag \<ITrackedResourceTags>]`: Tag sumber daya.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
   - `[AlertId <String>]`: Mendapatkan atau mengatur ID pemberitahuan.
-  - `[AlertProperty \<IAlertModelAlertProperties>]`: Properti pemberitahuan.
+  - `[AlertProperty \<IAlertModelAlertProperties>]`: Properti peringatan.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
   - `[ClosedByUserAlias <String>]`: Alias pengguna yang menutup pemberitahuan.
-  - `[ClosedTimestamp <String>]`: Tanda waktu saat pemberitahuan ditutup.
-  - `[CreatedTimestamp <String>]`: Tanda waktu saat pemberitahuan dibuat.
+  - `[ClosedTimestamp <String>]`: Cap waktu saat pemberitahuan ditutup.
+  - `[CreatedTimestamp <String>]`: Cap waktu saat pemberitahuan dibuat.
   - `[Description \<IDictionary[]>]`: Deskripsi pemberitahuan.
-  - `[FaultId <String>]`: Mendapatkan atau mengatur ID kesalahan pemberitahuan.
-  - `[FaultTypeId <String>]`: Mendapatkan atau mengatur ID tipe kesalahan pemberitahuan.
-  - `[HasValidRemediationAction <Boolean?>]`: Menunjukkan apakah peringatan dapat diperbaiki.
-  - `[ImpactedResourceDisplayName <String>]`: Nama tampilan untuk item yang terkena dampak.
-  - `[ImpactedResourceId <String>]`: Mendapatkan atau mengatur ID Sumber Daya untuk item yang terkena dampak.
-  - `[LastUpdatedTimestamp <String>]`: Tanda waktu saat pemberitahuan terakhir diperbarui.
-  - `[Remediation \<IDictionary[]>]`: Mendapatkan atau mengatur instruksi perbaikan yang ramah admin untuk peringatan tersebut.
-  - `[ResourceProviderRegistrationId <String>]`: Mendapatkan atau mengatur ID pendaftaran layanan pemberitahuan tersebut.
-  - `[ResourceRegistrationId <String>]`: Mendapatkan atau mengatur ID pendaftaran sumber daya yang terkait dengan pemberitahuan tersebut. Jika pemberitahuan tidak terkait dengan sumber daya, ID registrasi sumber daya null.
-  - `[Severity <String>]`: Keparahan pemberitahuan.
-  - `[State <String>]`: Status pemberitahuan.
-  - `[Title <String>]`: Mendapatkan atau mengatur ID Sumber Daya untuk item yang terkena dampak.
+  - `[FaultId <String>]`: Mendapatkan atau mengatur ID kesalahan peringatan.
+  - `[FaultTypeId <String>]`: Mendapatkan atau mengatur ID tipe kesalahan peringatan.
+  - `[HasValidRemediationAction <Boolean?>]`: Menunjukkan apakah peringatan dapat dipulihkan.
+  - `[ImpactedResourceDisplayName <String>]`: Nama tampilan untuk item yang terpengaruh.
+  - `[ImpactedResourceId <String>]`: Mendapatkan atau mengatur ID Sumber Daya untuk item yang terpengaruh.
+  - `[LastUpdatedTimestamp <String>]`: Cap waktu saat pemberitahuan terakhir diperbarui.
+  - `[Remediation \<IDictionary[]>]`: Mendapatkan atau mengatur instruksi perbaikan admin yang mudah dikenali untuk pemberitahuan tersebut.
+  - `[ResourceProviderRegistrationId <String>]`: Mendapatkan atau mengatur ID pendaftaran layanan tempat pemberitahuan berada.
+  - `[ResourceRegistrationId <String>]`: Mendapatkan atau mengatur ID pendaftaran sumber daya yang terkait dengan peringatan. Jika pemberitahuan tidak terkait dengan sumber daya, ID registrasi sumber daya adalah nol.
+  - `[Severity <String>]`: Tingkat keparahan peringatan.
+  - `[State <String>]`: Status peringatan.
+  - `[Title <String>]`: Mendapatkan atau mengatur ID Sumber Daya untuk item yang terpengaruh.
 
-INPUTOBJECT \<IInfrastructureInsightsAdminIdentity> : Parameter Identitas
+INPUTOBJECT \<IInfrastructureInsightsAdminIdentity>: Parameter Identitas
   - `[AlertName <String>]`: Nama pemberitahuan.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama kawasan
@@ -609,7 +609,7 @@ INPUTOBJECT \<IInfrastructureInsightsAdminIdentity> : Parameter Identitas
   - `[ResourceRegistrationId <String>]`: ID pendaftaran sumber daya.
   - `[ServiceHealth <String>]`: Nama Kesehatan Layanan.
   - `[ServiceRegistrationId <String>]`: ID pendaftaran layanan.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

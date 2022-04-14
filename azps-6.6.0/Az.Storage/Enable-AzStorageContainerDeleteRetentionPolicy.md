@@ -6,23 +6,23 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Enable-AzStorageContainerDeleteRetentionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Enable-AzStorageContainerDeleteRetentionPolicy.md
 ms.openlocfilehash: 315fd940af2d1871c24d2f039c6f2cdd80919fee
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139931155"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142119149"
 ---
 # Enable-AzStorageContainerDeleteRetentionPolicy
 
 ## SYNOPSIS
-Mengaktifkan kebijakan penyimpanan penghapusan untuk Azure Storage contatiners blob.
+Aktifkan kebijakan penghapusan penyimpanan untuk Azure Storage kontatiner blob.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/enable-azstoragecontainerdeleteretentionpolicy) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/enable-azstoragecontainerdeleteretentionpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Nama Akun (Default)
+### AccountName (Default)
 ```
 Enable-AzStorageContainerDeleteRetentionPolicy [-ResourceGroupName] <String> [-StorageAccountName] <String>
  -RetentionDays <Int32> [-PassThru] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
@@ -42,11 +42,11 @@ Enable-AzStorageContainerDeleteRetentionPolicy [-ResourceId] <String> -Retention
 ```
 
 ## DESCRIPTION
-Cmdlet **Enable-AzStorageContainerDeleteRetentionPolicy** mengaktifkan kebijakan penyimpanan penghapusan untuk Azure Storage blob Contatiner.
+Cmdlet **Enable-AzStorageContainerDeleteRetentionPolicy** memungkinkan kebijakan penghapusan penyimpanan untuk Azure Storage blob Contatiner.
 
 ## EXAMPLES
 
-### Contoh 1: Mengaktifkan kebijakan penyimpanan penghapusan untuk wadah Blob
+### Contoh 1: Aktifkan kebijakan penyimpanan penghapusan untuk kontainer Blob
 ```
 C:\PS>Enable-AzStorageContainerDeleteRetentionPolicy -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount" -PassThru -RetentionDays 3
 
@@ -55,7 +55,7 @@ Enabled Days
    True    3
 ```
 
-Perintah ini memungkinkan penghapusan kebijakan penyimpanan untuk Contatiners Blob, dan mengatur hari penyimpanan blob yang dihapus ke 3.
+Perintah ini memungkinkan kebijakan penghapusan penyimpanan untuk Blob Contatiners, dan mengatur hari penyimpanan blob yang dihapus ke 3.
 
 ## PARAMETERS
 
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Display ServiceProperties
+Menampilkan ServiceProperties
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Masukkan Id sumber Storage akun, atau Id Sumber Daya properti layanan Blob.
+Masukkan Id Sumber Daya akun Storage, atau Id Sumber Daya properti layanan Blob.
 
 ```yaml
 Type: System.String
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage objek akun
+objek akun Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Storage Akun.
+Storage Nama Akun.
 
 ```yaml
 Type: System.String
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

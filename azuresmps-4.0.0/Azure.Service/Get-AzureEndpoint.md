@@ -4,16 +4,16 @@ ms.assetid: 1CFB90FD-7BC5-4687-8D08-775097DDA062
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 319cf07b7008737342b9ff575ef740bcdce1d80a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428111"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141922137"
 ---
 # Get-AzureEndpoint
 
 ## SYNOPSIS
-Mendapatkan informasi tentang titik akhir yang ditetapkan untuk komputer virtual Azure.
+Mendapatkan informasi tentang titik akhir yang ditetapkan ke mesin virtual Azure.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,32 +25,32 @@ Get-AzureEndpoint [[-Name] <String>] -VM <IPersistentVM> [-Profile <AzureSMProfi
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureEndpoint** mendapatkan informasi tentang titik akhir yang ditetapkan ke komputer virtual Azure.
+Cmdlet **Get-AzureEndpoint** mendapatkan informasi tentang titik akhir yang ditetapkan ke mesin virtual Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan informasi titik akhir untuk mesin virtual
+### Contoh 1: Dapatkan informasi titik akhir untuk mesin virtual
 ```
 PS C:\> Get-AzureVM -ServiceName "ContosoService" -Name "VirtualMachine12" | Get-AzureEndpoint
 ```
 
-Perintah ini mengambil konfigurasi komputer virtual bernama VirtualMachine12 menggunakan cmdlet **Get-AzureVM.**
-Perintah itu meneruskannya ke cmdlet saat ini dengan menggunakan operator pipeline.
+Perintah ini mengambil konfigurasi mesin virtual bernama VirtualMachine12 menggunakan cmdlet **Get-AzureVM** .
+Perintah meneruskannya ke cmdlet saat ini menggunakan operator pipeline.
 Cmdlet ini mendapatkan informasi titik akhir untuk mesin virtual tersebut.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama titik akhir di mana cmdlet ini mendapatkan informasi.
+Menentukan nama titik akhir tempat cmdlet ini mendapatkan informasi.
 
 ```yaml
 Type: String
@@ -95,8 +95,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -140,7 +140,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureVM](./Get-AzureVM.md)
 
-[Remove-AzureEndpoint](./Remove-AzureEndpoint.md)
+[Hapus-AzureEndpoint](./Remove-AzureEndpoint.md)
 
 [Set-AzureEndpoint](./Set-AzureEndpoint.md)
 

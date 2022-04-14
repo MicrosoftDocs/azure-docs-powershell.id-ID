@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Websites/Websites/help/Get-AzWebAppSlotMetrics.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Websites/Websites/help/Get-AzWebAppSlotMetrics.md
 ms.openlocfilehash: 474f5a450adba9f01ef56fe99875d062ece1689d
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "132414844"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141962943"
 ---
 # Get-AzWebAppSlotMetrics
 
@@ -44,12 +44,12 @@ Get-AzWebAppSlotMetrics [-Metrics] <String[]> [-StartTime] <DateTime> [[-EndTime
 PS C:\> Get-AzAppServicePlanMetrics -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -StartTime 2016-11-30T22:00:00Z -EndTime 2016-11-30T22:30:00Z -Granularity PT1M -Metrics ["Requests"]
 ```
 
-Perintah ini mendapatkan Permintaan dari Web App per menit yang ditentukan(PT1M - Poll Time 1 menit) antara StartTime dan EndTime
+Perintah ini mendapatkan Permintaan Aplikasi Web per menit yang ditentukan(PT1M - Poll Time 1 menit) antara StartTime dan EndTime
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndTime
-Waktu Berakhir dalam UTC
+Waktu Selesai di UTC
 
 ```yaml
 Type: DateTime
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceDetails
-Detail Contoh
+Detail Instans
 
 ```yaml
 Type: SwitchParameter
@@ -108,7 +108,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Metrics
+### -Metrik
 Metrik
 
 ```yaml
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Waktu Mulai dalam UTC
+Waktu Mulai di UTC
 
 ```yaml
 Type: DateTime
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -216,4 +216,4 @@ Parameter 'WebApp' menerima nilai tipe 'Situs' dari saluran
 
 [Get-AzWebApp](./Get-AzWebApp.md)
 
-[Get-AzWebAppslot](./Get-AzWebAppSlot.md)
+[Get-AzWebAppSlot](./Get-AzWebAppSlot.md)

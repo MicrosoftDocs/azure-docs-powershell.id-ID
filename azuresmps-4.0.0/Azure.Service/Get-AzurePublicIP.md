@@ -3,12 +3,12 @@ external help file: Microsoft.WindowsAzure.Commands.ServiceManagement.dll-Help.x
 ms.assetid: 5BEE9430-D6BF-49F1-A23D-32784C6C818E
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 6c293274a97d74244e61e6c78e4d0a4f678b8eb6f340eb5a4ab58cf14bec1be0
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 65484fedcfc1b350bb23e1595557defcffa74048
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419406"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141922011"
 ---
 # Get-AzurePublicIP
 
@@ -25,8 +25,8 @@ Get-AzurePublicIP [[-PublicIPName] <String>] -VM <IPersistentVM> [-Profile <Azur
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzurePublicIP** mendapatkan informasi IP Publik untuk komputer virtual Azure.
-Untuk mendapatkan alamat IP Ip Publik, gunakan cmdlet **Get-AzureVM.**
+Cmdlet **Get-AzurePublicIP** mendapatkan informasi IP Publik untuk mesin virtual Azure.
+Untuk mendapatkan alamat IP Publik, gunakan cmdlet **Get-AzureVM** .
 
 ## EXAMPLES
 
@@ -35,23 +35,23 @@ Untuk mendapatkan alamat IP Ip Publik, gunakan cmdlet **Get-AzureVM.**
 PS C:\> Get-AzureVM -ServiceName "FTPInAzure" -Name "FTPInstance" | Get-AzurePublicIP
 ```
 
-Perintah ini mendapatkan mesin virtual yang bernama FTPInstance dalam layanan yang bernama FTPInAzure menggunakan cmdlet **Get-AzureVM.**
-Perintah itu melewati mesin virtual itu ke cmdlet saat ini dengan menggunakan operator pipeline.
-Cmdlet saat ini mendapatkan konfigurasi IP Publik dari komputer virtual.
+Perintah ini mendapatkan mesin virtual bernama FTPInstance dalam layanan bernama FTPInAzure dengan menggunakan cmdlet **Get-AzureVM** .
+Perintah melewati mesin virtual tersebut ke cmdlet saat ini menggunakan operator pipeline.
+Cmdlet saat ini mendapatkan konfigurasi IP Publik dari mesin virtual.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -81,8 +81,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -141,7 +141,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureVM](./Get-AzureVM.md)
 
-[Remove-AzurePublicIP](./Remove-AzurePublicIP.md)
+[Hapus-AzurePublicIP](./Remove-AzurePublicIP.md)
 
 [Set-AzurePublicIP](./Set-AzurePublicIP.md)
 

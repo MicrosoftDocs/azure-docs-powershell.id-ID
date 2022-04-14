@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlVirtualCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlVirtualCluster.md
 ms.openlocfilehash: 0d8b811c30384e7e3eb7d0ed658210989c875667
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140097479"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141903555"
 ---
 # Get-AzSqlVirtualCluster
 
@@ -18,7 +18,7 @@ ms.locfileid: "140097479"
 Mengembalikan informasi tentang Azure SQL Virtual Cluster.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlvirtualcluster) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlvirtualcluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,12 +40,12 @@ Get-AzSqlVirtualCluster [-ResourceId] <String> [-DefaultProfile <IAzureContextCo
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlVirtualCluster** mengembalikan informasi tentang satu atau beberapa Kluster Virtual Azure SQL.
-Tentukan nama kluster virtual untuk melihat informasi hanya untuk kluster tersebut.
+Cmdlet **Get-AzSqlVirtualCluster** mengembalikan informasi tentang satu atau beberapa Azure SQL Kluster Virtual.
+Tentukan nama kluster virtual untuk melihat informasi bagi kluster tersebut saja.
 
 ## EXAMPLES
 
-### Contoh 1: Tetapkan semua kluster virtual ke grup sumber daya
+### Contoh 1: Mendapatkan semua kluster virtual yang ditetapkan ke grup sumber daya
 ```powershell
 PS C:> Get-AzSqlVirtualCluster -ResourceGroupName ResourceGroup01
 
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya dari objek contoh yang akan
+Id sumber daya objek instans untuk mendapatkan
 
 ```yaml
 Type: System.String
@@ -164,11 +164,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

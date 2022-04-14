@@ -4,11 +4,11 @@ Module Name: Azs.Subscriptions.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.subscriptions.admin/test-azsnameavailability
 schema: 2.0.0
 ms.openlocfilehash: c37f50536452b82b8525421ef45c01ca22bc1255
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136580689"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141919299"
 ---
 # Test-AzsNameAvailability
 
@@ -23,7 +23,7 @@ Test-AzsNameAvailability [-SubscriptionId <String>] [-Name <String>] [-ResourceT
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Periksa
+### Check
 ```
 Test-AzsNameAvailability -NameAvailabilityDefinition \<ICheckNameAvailabilityDefinition>
  [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
@@ -56,7 +56,7 @@ NameAvailable : False
 Reason        : AlreadyExists
 ```
 
-Mengembalikan ketersediaan tipe dan nama sumber daya langganan yang ditentukan
+Mengembalikan ketersediaan tipe dan nama sumber daya langganan tertentu
 
 ## PARAMETERS
 
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.SubscriptionsAdmin.Models.ISubscriptionsAdminIdentity
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama sumber daya untuk memverifikasi.
+Nama sumber daya untuk diverifikasi.
 
 ```yaml
 Type: System.String
@@ -108,9 +108,9 @@ Accept wildcard characters: False
 
 ```
 
-### -NameAvailabilityDefinition
-The check name availability action definition.
-Untuk membuat, lihat bagian CATATAN untuk properti NAMEAVAILABILITYDEFINITION dan membuat tabel hash.
+### -NameAvailabilityDefinisi
+Definisi tindakan ketersediaan nama pemeriksaan.
+Untuk membangun, lihat bagian CATATAN untuk properti NAMEAVAILABILITYDEFINITION dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.SubscriptionsAdmin.Models.Api20151101.ICheckNameAvailabilityDefinition
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -207,9 +207,9 @@ ALIAS
 
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<ISubscriptionsAdminIdentity> : Parameter Identitas
+INPUTOBJECT \<ISubscriptionsAdminIdentity>: Parameter Identitas
   - `[DelegatedProvider <String>]`: Pengidentifikasi DelegatedProvider.
   - `[DelegatedProviderSubscriptionId <String>]`: Pengidentifikasi langganan penyedia yang didelegasikan.
   - `[Id <String>]`: Jalur identitas sumber daya
@@ -221,14 +221,14 @@ INPUTOBJECT \<ISubscriptionsAdminIdentity> : Parameter Identitas
   - `[Plan <String>]`: Nama rencana.
   - `[PlanAcquisitionId <String>]`: Pengidentifikasi akuisisi rencana
   - `[Quota <String>]`: Nama kuota.
-  - `[ResourceGroupName <String>]`: Grup sumber daya yang berada di bawah sumber daya.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[ResourceGroupName <String>]`: Grup sumber daya tempat sumber daya berada di bawah.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
   - `[TargetSubscriptionId <String>]`: ID langganan target.
   - `[Tenant <String>]`: Nama penyewa direktori.
 
-NAMEAVAILABILITYDEFINITION \<ICheckNameAvailabilityDefinition> : Definisi tindakan ketersediaan nama pemeriksaan.
+NAMEAVAILABILITYDEFINITION \<ICheckNameAvailabilityDefinition>: Definisi tindakan ketersediaan nama yang diperiksa.
   - `[Name <String>]`: Nama sumber daya untuk memverifikasi.
-  - `[ResourceType <String>]`: Tipe sumber daya yang akan diverifikasi.
+  - `[ResourceType <String>]`: Tipe sumber daya untuk memverifikasi.
 
 ## RELATED LINKS
 

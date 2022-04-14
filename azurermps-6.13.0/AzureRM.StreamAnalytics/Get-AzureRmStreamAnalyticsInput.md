@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/StreamAnalytics/Commands.StreamAnalytics/help/Get-AzureRmStreamAnalyticsInput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/StreamAnalytics/Commands.StreamAnalytics/help/Get-AzureRmStreamAnalyticsInput.md
 ms.openlocfilehash: 8b63dbd497edce422fc4cf70182ca8259721d8d1
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426292"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141923411"
 ---
 # Get-AzureRmStreamAnalyticsInput
 
 ## SYNOPSIS
-Mendapatkan input pekerjaan Analitik Stream.
+Dapatkan input pekerjaan Stream Analytics.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,28 +28,28 @@ Get-AzureRmStreamAnalyticsInput [-JobName] <String> [[-Name] <String>] [-Resourc
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmStreamAnalyticsInput** mencantumkan semua input yang ditetapkan dalam pekerjaan Analitik Stream atau mendapatkan informasi tentang input tertentu.
+Cmdlet **Get-AzureRmStreamAnalyticsInput** mencantumkan semua input yang ditentukan dalam pekerjaan Stream Analytics atau mendapatkan informasi tentang input tertentu.
 
 ## EXAMPLES
 
-### CONTOH 1: Mendapatkan informasi tentang input yang ditentukan saat bekerja
+### CONTOH 1: Mendapatkan informasi tentang input yang ditentukan pada pekerjaan
 ```
 PS C:\>Get-AzureRmStreamAnalyticsInput -ResourceGroupName "StreamAnalytics-Default-West-US" -JobName "StreamingJob"
 ```
 
-Perintah ini mengembalikan informasi tentang semua input yang ditentukan untuk pekerjaan StreamingJob.
+Perintah ini mengembalikan informasi tentang semua input yang ditentukan pada pekerjaan StreamingJob.
 
-### CONTOH 2: Mendapatkan informasi tentang input tertentu yang ditentukan pada saat bekerja
+### CONTOH 2: Mendapatkan informasi tentang input tertentu yang ditentukan pada pekerjaan
 ```
 PS C:\>Get-AzureRmStreamAnalyticsInput -ResourceGroupName "StreamAnalytics-Default-West-US" -JobName "StreamingJob" -Name "EntryStream"
 ```
 
-Perintah ini mengembalikan informasi tentang input bernama EntryStream yang ditentukan di pekerjaan StreamingJob.
+Perintah ini mengembalikan informasi tentang input bernama EntryStream yang ditentukan pada pekerjaan StreamingJob.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobName
-Menentukan nama pekerjaan Analitik Azure Stream tempat input Analitik Azure Stream berada.
+Menentukan nama pekerjaan Azure Stream Analytics tempat input Azure Stream Analytics berada.
 
 ```yaml
 Type: System.String
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama input Analitik Azure Stream yang akan diambil.
+Menentukan nama input Azure Stream Analytics untuk diambil.
 
 ```yaml
 Type: System.String
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat input Analitik Azure Stream berada.
+Menentukan nama grup sumber daya tempat input Azure Stream Analytics berada.
 
 ```yaml
 Type: System.String
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -125,8 +125,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmStreamAnalyticsInput](./New-AzureRmStreamAnalyticsInput.md)
 
-[Remove-AzureRmStreamAnalyticsInput](./Remove-AzureRmStreamAnalyticsInput.md)
+[Hapus-AzureRmStreamAnalyticsInput](./Remove-AzureRmStreamAnalyticsInput.md)
 
-[Test-AzureRmStreamAnalyticsInput](./Test-AzureRmStreamAnalyticsInput.md)
+[Uji-AzureRmStreamAnalyticsInput](./Test-AzureRmStreamAnalyticsInput.md)
 
 

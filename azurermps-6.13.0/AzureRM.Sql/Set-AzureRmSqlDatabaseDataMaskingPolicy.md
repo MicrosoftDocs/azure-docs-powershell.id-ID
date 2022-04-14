@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Set-AzureRmSqlDatabaseDataMaskingPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Set-AzureRmSqlDatabaseDataMaskingPolicy.md
 ms.openlocfilehash: d59891980c11b90ee73275dbccb6a98b65c89613
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427551"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141967443"
 ---
 # Set-AzureRmSqlDatabaseDataMaskingPolicy
 
 ## SYNOPSIS
-Mengatur masker data untuk database.
+Mengatur masking data untuk database.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,27 +29,27 @@ Set-AzureRmSqlDatabaseDataMaskingPolicy [-PassThru] [-PrivilegedLogins <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmSqlDatabaseDataMaskingPolicy** mengatur kebijakan masker data untuk database Azure SQL Anda.
-Untuk menggunakan cmdlet ini, gunakan parameter *ResourceGroupName,* *ServerName,* *dan DatabaseName* untuk mengidentifikasi database.
-Anda dapat mengatur parameter *DataMaskingState* untuk menentukan apakah operasi masker data diaktifkan atau dinonaktifkan.
-Anda juga bisa mengatur parameter *PrivilegedLogins* untuk menentukan pengguna mana yang diperbolehkan untuk melihat data takmaser.
-Jika cmdlet berhasil dan parameter *PassThru* digunakan, objek akan mengembalikan objek yang menjelaskan kebijakan masker data saat ini selain pengidentifikasi database.
+Cmdlet **Set-AzureRmSqlDatabaseDataMaskingPolicy** mengatur kebijakan masking data untuk database Azure SQL.
+Untuk menggunakan cmdlet ini, gunakan parameter *ResourceGroupName*, *ServerName*, dan *DatabaseName* untuk mengidentifikasi database.
+Anda dapat mengatur parameter *DataMaskingState* untuk menentukan apakah operasi masking data diaktifkan atau dinonaktifkan.
+Anda juga dapat mengatur parameter *PrivilegedLogins* untuk menentukan pengguna mana yang diizinkan untuk melihat data yang tidak dimasak.
+Jika cmdlet berhasil dan parameter *PassThru* digunakan, cmdlet mengembalikan objek yang menjelaskan kebijakan masking data saat ini selain pengidentifikasi database.
 Pengidentifikasi database menyertakan, tetapi tidak terbatas pada, **ResourceGroupName**, **ServerName**, dan **DatabaseName**.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur kebijakan masker data untuk database
+### Contoh 1: Mengatur kebijakan penyembunyian data untuk database
 ```
 PS C:\>Set-AzureRmSqlDatabaseDataMaskingPolicy -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01 -PrivilegedUsers "public" -DataMaskingState "Enabled"
 ```
 
-Perintah ini mengatur kebijakan masker data untuk database yang bernama database01 di server yang bernama server01.
+Perintah ini mengatur kebijakan masking data untuk database bernama database01 di server bernama server01.
 
 ## PARAMETERS
 
 ### -DatabaseName
-Menentukan nama database di mana kebijakan ditetapkan.
+Menentukan nama database tempat kebijakan diatur.
 
 ```yaml
 Type: System.String
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -DataMaskingState
-Menentukan apakah operasi masker data diaktifkan atau dinonaktifkan.
+Menentukan apakah operasi penyempurnaan data diaktifkan atau dinonaktifkan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Diaktifkan
 - Dinonaktifkan Nilai default diaktifkan.
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -114,8 +114,8 @@ Accept wildcard characters: False
 ```
 
 ### -PrivilegedLogins
-Menentukan pengguna SQL dikecualikan dari masker.
-Parameter ini sudah tidak berlaku dan akan dihapus dari rilis mendatang.
+Menentukan pengguna SQL mana yang dikecualikan dari masker.
+Parameter ini ditolak dan akan dihapus dari rilis mendatang.
 
 ```yaml
 Type: System.String
@@ -130,8 +130,8 @@ Accept wildcard characters: False
 ```
 
 ### -PrivilegedUsers
-Menentukan daftar ID pengguna yang dipisahkan tanda titik koma.
-Pengguna ini diizinkan untuk menampilkan data yang menutupi data.
+Menentukan daftar ID pengguna yang dipisahkan titik koma.
+Pengguna ini diizinkan untuk menampilkan data masking.
 
 ```yaml
 Type: System.String
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -215,7 +215,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.sql.DataMasking.Model.DatabaseDataMaskingPolicyModel
+### Microsoft.Azure.Commands.Sql.DataMasking.Model.DatabaseDataMaskingPolicyModel
 
 ## CATATAN
 
@@ -227,10 +227,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmSqlDatabaseDataMaskingRule](./New-AzureRmSqlDatabaseDataMaskingRule.md)
 
-[Remove-AzureRmSqlDatabaseDataMaskingRule](./Remove-AzureRmSqlDatabaseDataMaskingRule.md)
+[Hapus-AzureRmSqlDatabaseDataMaskingRule](./Remove-AzureRmSqlDatabaseDataMaskingRule.md)
 
 [Set-AzureRmSqlDatabaseDataMaskingRule](./Set-AzureRmSqlDatabaseDataMaskingRule.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 
 

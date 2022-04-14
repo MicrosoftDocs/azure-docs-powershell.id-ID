@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesBackupProtectionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesBackupProtectionPolicy.md
-ms.openlocfilehash: 825e36f6723e9d89f4c8efc4431e8fb51e56909a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: b383fc16da1956e72756e711a4034f792013b5dd
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140391714"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141934035"
 ---
 # New-AzRecoveryServicesBackupProtectionPolicy
 
 ## SYNOPSIS
-Membuat kebijakan perlindungan Cadangan.
+Membuat kebijakan proteksi Cadangan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesbackupprotectionpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,13 +31,13 @@ New-AzRecoveryServicesBackupProtectionPolicy [-Name] <String> [-WorkloadType] <W
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzRecoveryServicesBackupProtectionPolicy** membuat kebijakan proteksi Cadangan di vault.
-Kebijakan proteksi berkaitan dengan setidaknya satu kebijakan penyimpanan.
-Kebijakan penyimpanan menentukan berapa lama titik pemulihan akan disimpan dengan Azure Backup.
-Anda bisa menggunakan cmdlet Get-AzRecoveryServicesBackupRetentionPolicyObject cmdlet untuk mendapatkan kebijakan penyimpanan default.
-Dan Anda bisa menggunakan cmdlet Get-AzRecoveryServicesBackupSchedulePolicyObject untuk mendapatkan kebijakan jadwal default.
-Objek **SchedulePolicy** **dan RetentionPolicy** digunakan sebagai input ke cmdlet **New-AzRecoveryServicesBackupProtectionPolicy** .
-Mengatur konteks vault menggunakan cmdlet Set-AzRecoveryServicesVaultContext cmdlet sebelum Anda menggunakan cmdlet saat ini.
+Cmdlet **New-AzRecoveryServicesBackupProtectionPolicy** menciptakan kebijakan perlindungan Cadangan dalam kubah.
+Kebijakan perlindungan dikaitkan dengan setidaknya satu kebijakan penyimpanan.
+Kebijakan penyimpanan menentukan berapa lama titik pemulihan disimpan dengan Azure Backup.
+Anda dapat menggunakan cmdlet Get-AzRecoveryServicesBackupRetentionPolicyObject untuk mendapatkan kebijakan penyimpanan default.
+Dan Anda dapat menggunakan cmdlet Get-AzRecoveryServicesBackupSchedulePolicyObject untuk mendapatkan kebijakan jadwal default.
+Objek **SchedulePolicy** dan **RetentionPolicy** digunakan sebagai input ke cmdlet **New-AzRecoveryServicesBackupProtectionPolicy** .
+Mengatur konteks kubah menggunakan cmdlet Set-AzRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
@@ -49,15 +52,15 @@ PS C:\> $RetPol.DailySchedule.DurationCountInDays = 365
 PS C:\> New-AzRecoveryServicesBackupProtectionPolicy -Name "NewPolicy" -WorkloadType AzureVM -RetentionPolicy $RetPol -SchedulePolicy $SchPol
 ```
 
-Perintah pertama mendapatkan dasar **SchedulePolicyObject**, lalu menyimpannya dalam $SchPol variabel.
-Perintah kedua menghapus semua waktu jalankan terjadwal dari kebijakan jadwal di $SchPol.
-Perintah ketiga menggunakan cmdlet Get-Date cmdlet untuk mendapatkan tanggal dan waktu saat ini.
-Perintah keempat menambahkan tanggal dan waktu saat ini $Dt waktu berjalan sebagai waktu berjalan yang dijadwalkan ke kebijakan jadwal.
-Perintah kelima mendapatkan objek **RetentionPolicy** basis, lalu menyimpannya dalam $RetPol penyimpanan.
-Perintah keenam mengatur kebijakan durasi penyimpanan ke 365 hari.
-Perintah terakhir membuat objek **BackupProtectionPolicy** berdasarkan kebijakan jadwal dan penyimpanan yang dibuat oleh perintah sebelumnya.
+Perintah pertama mendapatkan **schedulePolicyObject** dasar, lalu menyimpannya dalam variabel $SchPol.
+Perintah kedua menghapus semua waktu jalan terjadwal dari kebijakan jadwal dalam $SchPol.
+Perintah ketiga menggunakan cmdlet Get-Date untuk mendapatkan tanggal dan waktu saat ini.
+Perintah keempat menambahkan tanggal dan waktu saat ini dalam $Dt sebagai waktu proses terjadwal ke kebijakan jadwal.
+Perintah kelima mendapatkan objek **Base RetentionPolicy** , lalu menyimpannya dalam variabel $RetPol.
+Perintah keenam mengatur kebijakan durasi penyimpanan menjadi 365 hari.
+Perintah akhir membuat objek **BackupProtectionPolicy** berdasarkan kebijakan jadwal dan penyimpanan yang dibuat oleh perintah sebelumnya.
 
-### Contoh 2: Membuat kebijakan berbagi file untuk beberapa cadangan per hari
+### Contoh 2: Membuat kebijakan filehare untuk beberapa cadangan per hari
 ```powershell
 PS C:\> $schedulePolicy = Get-AzRecoveryServicesBackupSchedulePolicyObject -WorkloadType AzureFiles -BackupManagementType AzureStorage -ScheduleRunFrequency Hourly
 PS C:\> $timeZone = Get-TimeZone
@@ -71,16 +74,16 @@ PS C:\> $retentionPolicy.DailySchedule.DurationCountInDays = 10
 PS C:\> New-AzRecoveryServicesBackupProtectionPolicy -Name "NewPolicy" -WorkloadType AzureVM -RetentionPolicy $retentionPolicy -SchedulePolicy $schedulePolicy
 ```
 
-Perintah pertama mendapatkan **SchedulePolicyObject basis jam**, lalu menyimpannya dalam $schedulePolicy per jam.
-Perintah kedua dan ketiga mengambil zona waktu dan memperbarui zona waktu pada $schedulePolicy.
-Perintah keempat dan kelima memulai waktu mulai jendela jadwal dan memperbarui $schedulePolicy. Harap diperhatikan bahwa waktu mulai harus dalam UTC meskipun zona waktu tidak UTC. Perintah keenam dan ketujuh memperbarui interval (dalam jam) setelah itu cadangan akan dibuat ulang di hari yang sama, durasi (dalam jam) di mana jadwal akan dijalankan.
-Perintah kedelapan mendapatkan objek **RetentionPolicy** basis per jam, lalu menyimpannya dalam $retentionPolicy per jam.
-Perintah kesembilan mengatur kebijakan durasi penyimpanan ke 10 hari.
-Perintah terakhir membuat objek **BackupProtectionPolicy** berdasarkan kebijakan jadwal dan penyimpanan yang dibuat oleh perintah sebelumnya.
+Perintah pertama mendapatkan **SchedulePolicyObject** basis jam, lalu menyimpannya dalam variabel $schedulePolicy.
+Perintah kedua dan ketiga mengambil zona waktu dan memperbarui zona waktu dalam $schedulePolicy.
+Perintah keempat dan kelima menginisialisasi waktu mulai jendela jadwal dan memperbarui $schedulePolicy. Harap diperhatikan bahwa waktu mulai harus berada di UTC meskipun zona waktunya tidak UTC. Perintah keenam dan ketujuh memperbarui interval (dalam jam) setelah itu cadangan akan diambil pada hari yang sama, durasi (dalam jam) yang jadwalnya akan berjalan.
+Perintah kedelapan mendapatkan objek **RetentionPolicy** basis jam, lalu menyimpannya dalam variabel $retentionPolicy.
+Perintah kesembilan mengatur kebijakan durasi penyimpanan menjadi 10 hari.
+Perintah akhir membuat objek **BackupProtectionPolicy** berdasarkan kebijakan jadwal dan penyimpanan yang dibuat oleh perintah sebelumnya.
 
 ### Contoh 3
 
-Membuat kebijakan perlindungan Cadangan. (otomatisgenerated)
+Membuat kebijakan proteksi Cadangan. (autogenerasi)
 
 ```powershell <!-- Aladdin Generated Example --> 
 New-AzRecoveryServicesBackupProtectionPolicy -Name 'NewPolicy' -RetentionPolicy $RetPol -SchedulePolicy $SchPol -VaultId $vault.ID -WorkloadType AzureVM
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -138,8 +141,8 @@ Accept wildcard characters: False
 ```
 
 ### -RetentionPolicy
-Menentukan objek **RetentionPolicy** dasar.
-Anda bisa menggunakan cmdlet Get-AzRecoveryServicesBackupRetentionPolicyObject untuk mendapatkan objek **RetentionPolicy** .
+Menentukan objek **Base RetentionPolicy** .
+Anda dapat menggunakan cmdlet Get-AzRecoveryServicesBackupRetentionPolicyObject untuk mendapatkan objek **RetentionPolicy** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.RetentionPolicyBase
@@ -154,8 +157,8 @@ Accept wildcard characters: False
 ```
 
 ### -SchedulePolicy
-Menentukan objek **schedulePolicy** dasar.
-Anda bisa menggunakan cmdlet Get-AzRecoveryServicesBackupSchedulePolicyObject untuk mendapatkan objek **SchedulePolicy** .
+Menentukan objek **SchedulePolicy** dasar.
+Anda dapat menggunakan cmdlet Get-AzRecoveryServicesBackupSchedulePolicyObject untuk mendapatkan objek **SchedulePolicy** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.SchedulePolicyBase
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,13 +237,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.WorkloadType
 
-### System.Nullable'1[[Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.BackupManagementType, Microsoft.Azure.PowerShell.Cmdlets.RecoveryServices.Backup.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+### System.Nullable'1[[Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.BackupManagementType, Microsoft.Azure.PowerShell.Cmdlets.RecoveryServices.Backup.Models, Version=1.0.0.0, Culture=netral, PublicKeyToken=null]]
 
 ### Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.RetentionPolicyBase
 

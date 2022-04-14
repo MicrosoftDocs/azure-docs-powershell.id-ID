@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PolicyInsights/PolicyInsights/help/Get-AzPolicyRemediation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PolicyInsights/PolicyInsights/help/Get-AzPolicyRemediation.md
 ms.openlocfilehash: 84db0548026fac04f7d4c634258fa796fafd014d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139970961"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142123343"
 ---
 # Get-AzPolicyRemediation
 
@@ -18,7 +18,7 @@ ms.locfileid: "139970961"
 Mendapatkan perbaikan kebijakan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.policyinsights/get-azpolicyremediation) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.policyinsights/get-azpolicyremediation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -64,7 +64,7 @@ Cmdlet **Get-AzPolicyRemediation** mendapatkan semua perbaikan kebijakan dalam l
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua perbaikan kebijakan di langganan saat ini
+### Contoh 1: Dapatkan semua perbaikan kebijakan dalam langganan saat ini
 ```
 PS C:\> Select-AzSubscription -Subscription "My Subscription"
 PS C:\> Get-AzPolicyRemediation
@@ -77,14 +77,14 @@ Perintah ini mendapatkan semua perbaikan yang dibuat di atau di bawah langganan 
 PS C:\> Get-AzPolicyRemediation -ResourceGroupName "myResourceGroup" -Name "remediation1" -IncludeDetail
 ```
 
-Perintah ini mendapatkan perbaikan bernama 'remediation1' dari grup sumber daya 'myResourceGroup'. Detail sumber daya yang diperbaiki akan disertakan.
+Perintah ini mendapatkan perbaikan bernama 'remediation1' dari grup sumber daya 'myResourceGroup'. Detail sumber daya yang sedang dipulihkan akan disertakan.
 
 ### Contoh 3: Dapatkan 10 perbaikan kebijakan dalam grup manajemen dengan filter opsional
 ```
 PS C:\> Get-AzPolicyRemediation -ManagementGroupName "mg1" -Top 10 -Filter "PolicyAssignmentId eq '/providers/Microsoft.Management/managementGroups/mg1/providers/Microsoft.Authorization/policyAssignments/pa1'"
 ```
 
-Perintah ini mendapatkan maksimum 10 perbaikan kebijakan dari grup manajemen bernama 'mg1'. Hanya perbaikan kebijakan untuk penetapan kebijakan yang akan diambil.
+Perintah ini mendapatkan maksimal 10 perbaikan kebijakan dari grup manajemen bernama 'mg1'. Hanya perbaikan kebijakan untuk penetapan kebijakan tertentu yang akan diambil.
 
 ## PARAMETERS
 
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeDetail
-Sertakan detail penyebaran yang dibuat dengan perbaikan.
+Sertakan detail penyebaran yang dibuat oleh perbaikan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -245,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-Jumlah rekaman maksimum yang dikembalikan.
+Jumlah maksimum rekaman yang akan dikembalikan.
 
 ```yaml
 Type: System.Int32
@@ -260,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

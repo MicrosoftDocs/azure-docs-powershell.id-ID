@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.websi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/New-AzureRmWebAppBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/New-AzureRmWebAppBackup.md
-ms.openlocfilehash: a82e6f87e1fcf9c22a8e3b4394231bb30ccf10503e13db629b1d3cceb099b953
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: a4cdec386269bbda7ceb34ec8731c51d7eb1fc44
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140858675"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141923226"
 ---
 # New-AzureRmWebAppBackup
 
@@ -44,7 +44,7 @@ Cmdlet **New-AzureRmWebAppBackup** membuat Cadangan Azure Web App.
 PS C:\> New-AzureRmWebAppBackup -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -StorageAccountUrl "https://storageaccount.file.core.windows.net"
 ```
 
-Membuat cadangan aplikasi tertentu ContosoWebApp yang ada di dalam grup sumber daya Default-Web-WestUS di https://storageaccount.file.core.windows.net
+Membuat cadangan aplikasi tertentu ContosoWebApp yang berada dalam grup sumber daya Default-Web-WestUS di https://storageaccount.file.core.windows.net
 
 ## PARAMETERS
 
@@ -63,7 +63,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Database
+### -Databases
 Database tipe DatabaseBackupSetting[]
 
 ```yaml
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountUrl
-Url Akun Storage Baru
+URL Akun Storage
 
 ```yaml
 Type: System.String
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

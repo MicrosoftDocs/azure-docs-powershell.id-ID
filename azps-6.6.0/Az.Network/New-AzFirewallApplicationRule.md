@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallApplicationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallApplicationRule.md
 ms.openlocfilehash: 1197311f65bea4783fcc95c78f95e9b5d284dfc4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139973013"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142124685"
 ---
 # New-AzFirewallApplicationRule
 
@@ -19,7 +19,7 @@ ms.locfileid: "139973013"
 Membuat Aturan Aplikasi Firewall.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azfirewallapplicationrule) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewallapplicationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,24 +42,24 @@ Cmdlet **New-AzFirewallApplicationRule** membuat aturan aplikasi untuk Azure Fir
 
 ## EXAMPLES
 
-### Contoh 1: Membuat aturan untuk memperbolehkan semua lalu lintas HTTPS dari 10.0.0.0
+### Contoh 1: Buat aturan untuk mengizinkan semua lalu lintas HTTPS dari 10.0.0.0
 ```powershell
 New-AzFirewallApplicationRule -Name "https-rule" -Protocol "https:443" -TargetFqdn "*" -SourceAddress "10.0.0.0"
 ```
 
-Contoh ini membuat aturan yang akan memperbolehkan semua lalu lintas HTTPS pada port 443 dari 10.0.0.0.
+Contoh ini membuat aturan yang akan memungkinkan semua lalu lintas HTTPS di port 443 dari 10.0.0.0.
 
-### Contoh 2: Membuat aturan untuk memperbolehkan WindowsUpdate untuk subnet 10.0.0.0/24
+### Contoh 2: Membuat aturan untuk memperbolehkan subnet WindowsUpdate untuk 10.0.0.0/24
 ```powershell
 New-AzFirewallApplicationRule -Name "windows-update-rule" -FqdnTag WindowsUpdate -SourceAddress "10.0.0.0/24"
 ```
 
-Contoh ini membuat aturan yang akan memungkinkan lalu lintas untuk Windows Untuk domain 10.0.0.0/24.
+Contoh ini membuat aturan yang akan memungkinkan lalu lintas untuk Windows Pembaruan untuk domain 10.0.0.0/24.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Menentukan deskripsi opsional dari aturan ini.
+Menentukan deskripsi opsional aturan ini.
 
 ```yaml
 Type: System.String
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -FqdnTag
-Menentukan daftar Tag FQDN untuk aturan ini. Tag yang tersedia bisa diambil menggunakan cmdlet [Get-AzFirewallFqdnTag](./Get-AzFirewallFqdnTag.md) .
+Menentukan daftar Tag FQDN untuk aturan ini. Tag yang tersedia dapat diambil menggunakan cmdlet [Get-AzFirewallFqdnTag](./Get-AzFirewallFqdnTag.md) .
 
 ```yaml
 Type: System.String[]
@@ -118,9 +118,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
+### -Protokol
 Menentukan tipe lalu lintas yang akan difilter menurut aturan ini. Formatnya adalah <protocol type>:<port>. Misalnya, "http:80" atau "https:443".
-Protokol adalah wajib saat TargetFqdn digunakan, tapi tidak bisa digunakan dengan FqdnTag. Protokol yang didukung adalah HTTP dan HTTPS.
+Protokol adalah wajib ketika TargetFqdn digunakan, tetapi tidak dapat digunakan dengan FqdnTag. Protokol yang didukung adalah HTTP dan HTTPS.
 
 ```yaml
 Type: System.String[]
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceIpGroup
-Grup ip sumber aturan
+Ipgroup sumber aturan
 
 ```yaml
 Type: System.String[]
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 
 ### -TargetFqdn
 Menentukan daftar nama domain yang difilter menurut aturan ini.
-Karakter tanda bintang, '*', diterima hanya sebagai karakter pertama dari FQDN dalam daftar. Saat digunakan, tanda bintang akan menemukan berapa pun jumlah karakter. (misalnya 'msn.com*' akan cocok msn.com dan semua subdomainnya)
+Karakter tanda bintang, '*', hanya diterima sebagai karakter pertama FQDN dalam daftar. Ketika digunakan, tanda bintang cocok dengan jumlah karakter apa pun. (misalnya '* msn.com' akan cocok dengan msn.com dan semua subdomainnya)
 
 ```yaml
 Type: System.String[]
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -212,11 +212,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

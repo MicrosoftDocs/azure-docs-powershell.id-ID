@@ -3,12 +3,12 @@ external help file: Microsoft.WindowsAzure.Commands.Storage.dll-Help.xml
 ms.assetid: C274DFBD-6C93-4043-AF93-DAF7BEA1F11F
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: dddeaf1a1c03f212f814d03105ca7ae72c614a85d4b581253dfa609feee71c05
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: a625cb5e374565af22548ff638c0ecc68a5df4d1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419191"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141879552"
 ---
 # Stop-AzureStorageBlobCopy
 
@@ -41,30 +41,30 @@ Stop-AzureStorageBlobCopy -CloudBlobContainer <CloudBlobContainer> [-Blob] <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzureStorageBlobCopy** menghentikan operasi penyalinan ke blob tujuan tertentu.
+Cmdlet **Stop-AzureStorageBlobCopy** menghentikan operasi salin ke blob tujuan yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Hentikan operasi penyalinan menurut nama
+### Contoh 1: Hentikan operasi salin menurut nama
 ```
 PS C:\>Stop-AzureStorageBlobCopy -Container "ContainerName" -Blob "BlobName" -CopyId "CopyID"
 ```
 
-Perintah ini menghentikan operasi penyalinan menurut nama.
+Perintah ini menghentikan operasi salin menurut nama.
 
-### Contoh 2: Menghentikan operasi penyalinan dengan menggunakan saluran
+### Contoh 2: Hentikan operasi salin dengan menggunakan pipeline
 ```
 PS C:\>Get-AzureStorageContainer container* | Stop-AzureStorageBlobCopy -Blob "BlobName"
 ```
 
-Perintah ini menghentikan operasi penyalinan dengan meneruskan wadah ke saluran dari **Get-AzureStorageContainer**.
+Perintah ini menghentikan operasi salin dengan melewati wadah pada pipeline dari **Get-AzureStorageContainer**.
 
-### Contoh 3: Hentikan operasi penyalinan dengan menggunakan saluran dan Get-AzureStorageBlob
+### Contoh 3: Hentikan operasi salin dengan menggunakan pipeline dan Get-AzureStorageBlob
 ```
 PS C:\>Get-AzureStorageBlob -Container "ContainerName" | Stop-AzureStorageBlobCopy -Force
 ```
 
-Contoh ini menghentikan operasi penyalinan dengan meneruskan wadah ke saluran dari Get-AzureStorageBlob cmdlet.
+Contoh ini menghentikan operasi salin dengan melewati wadah pada pipeline dari cmdlet Get-AzureStorageBlob.
 
 ## PARAMETERS
 
@@ -84,9 +84,9 @@ Accept wildcard characters: False
 ```
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu yang habis di sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba permintaan.
-Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini akan mengembalikan kesalahan.
+Menentukan interval waktu habis pihak klien, dalam hitungan detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
 Type: Int32
@@ -101,8 +101,8 @@ Accept wildcard characters: False
 ```
 
 ### -CloudBlob
-Menentukan objek **CloudBlob** dari Azure Storage Client.
-Untuk mendapatkan objek **CloudBlob,** gunakan cmdlet Get-AzureStorageBlob cmdlet.
+Menentukan objek **CloudBlob** dari pustaka Klien Azure Storage.
+Untuk mendapatkan objek **CloudBlob** , gunakan cmdlet Get-AzureStorageBlob.
 
 ```yaml
 Type: CloudBlob
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -CloudBlobContainer
-Menentukan objek **CloudBlobContainer** dari Azure Storage Client.
+Menentukan objek **CloudBlobContainer** dari pustaka klien Azure Storage.
 Anda dapat membuat objek atau menggunakan cmdlet Get-AzureStorageContainer.
 
 ```yaml
@@ -133,11 +133,11 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan jumlah maksimum panggilan jaringan bersama.
-Anda dapat menggunakan parameter ini untuk membatasi konkurensi guna membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Menentukan maksimum panggilan jaringan serentak.
+Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
 Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
-Parameter ini bisa membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth yang rendah, seperti 100 kilobit per detik.
-Nilai default adalah 10.
+Parameter ini dapat membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth rendah, seperti 100 kilobit per detik.
+Nilai defaultnya adalah 10.
 
 ```yaml
 Type: Int32
@@ -151,7 +151,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Container
+### -Kontainer
 Menentukan nama wadah.
 
 ```yaml
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 
 ### -Konteks
 Menentukan konteks penyimpanan Azure.
-Anda dapat membuat konteks menggunakan cmdlet New-AzureStorageContext baru.
+Anda dapat membuat konteks dengan menggunakan cmdlet New-AzureStorageContext.
 
 ```yaml
 Type: IStorageContext
@@ -197,8 +197,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Menghentikan tugas salinan saat ini di blob yang ditentukan tanpa meminta konfirmasi.
+### -Paksa
+Menghentikan tugas salinan saat ini pada gumpalan yang ditentukan tanpa meminta konfirmasi.
 
 ```yaml
 Type: SwitchParameter
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan interval waktu habis di sisi layanan, dalam detik, untuk permintaan.
+Menentukan interval batas waktu sisi layanan, dalam detik, untuk permintaan.
 Jika interval yang ditentukan berlalu sebelum layanan memproses permintaan, layanan penyimpanan mengembalikan kesalahan.
 
 ```yaml
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -245,7 +245,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -260,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

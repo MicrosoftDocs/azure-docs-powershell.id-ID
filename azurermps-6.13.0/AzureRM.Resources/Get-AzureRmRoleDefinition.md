@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Get-AzureRmRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Get-AzureRmRoleDefinition.md
 ms.openlocfilehash: 9db953cf4c02497fd3056a57ed7b71a78687411d
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423291"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141881669"
 ---
 # Get-AzureRmRoleDefinition
 
 ## SYNOPSIS
-Mencantumkan semua peran Azure RBAC yang tersedia untuk pengalihan.
+Mencantumkan semua peran RBAC Azure yang tersedia untuk penetapan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -41,8 +41,8 @@ Get-AzureRmRoleDefinition [-Scope <String>] [-Custom] [-DefaultProfile <IAzureCo
 ```
 
 ## DESCRIPTION
-Gunakan perintah Get-AzureRmRoleDefinition dengan nama peran tertentu untuk melihat detailnya.
-Untuk memeriksa operasi individual yang diberi akses oleh peran, tinjau properti Tindakan dan NotActions dari peran tersebut.
+Gunakan perintah Get-AzureRmRoleDefinition dengan nama peran tertentu untuk menampilkan detailnya.
+Untuk memeriksa operasi individual yang diberi peran akses, tinjau properti Tindakan dan Notaksi peran tersebut.
 
 ## EXAMPLES
 
@@ -51,7 +51,7 @@ Untuk memeriksa operasi individual yang diberi akses oleh peran, tinjau properti
 PS C:\> Get-AzureRmRoleDefinition -Name Reader
 ```
 
-Mendapatkan definisi peran Pembaca
+Dapatkan definisi peran Pembaca
 
 ### Contoh 2
 ```
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -139,12 +139,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
-Parameter: Lingkup (MenurutNilai)
+Parameter: Lingkup (ByValue)
 
 ### System.Guid
 
@@ -155,7 +155,7 @@ Parameter: Lingkup (MenurutNilai)
 ### Microsoft.Azure.Commands.Resources.Models.Authorization.PSRoleDefinition
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, resource, group, template, deployment
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Templat, penyebaran
 
 ## RELATED LINKS
 
@@ -163,7 +163,7 @@ Kata kunci: azure, azurerm, arm, resource, management, manager, resource, group,
 
 [Get-AzureRmRoleAssignment](./Get-AzureRmRoleAssignment.md)
 
-[New-AzureRmRoleDefinition](./New-AzureRmRoleDefinition.md)
+[AzureRmRoleDefinition Baru](./New-AzureRmRoleDefinition.md)
 
-[Remove-AzureRmRoleDefinition](./Remove-AzureRmRoleDefinition.md)
+[Hapus-AzureRmRoleDefinition](./Remove-AzureRmRoleDefinition.md)
 

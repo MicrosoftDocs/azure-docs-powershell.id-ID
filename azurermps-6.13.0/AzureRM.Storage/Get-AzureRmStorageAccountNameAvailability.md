@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.stora
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Storage/Commands.Management.Storage/help/Get-AzureRmStorageAccountNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Storage/Commands.Management.Storage/help/Get-AzureRmStorageAccountNameAvailability.md
-ms.openlocfilehash: ff10ed43f2e6140c05c20e6e24ecc92080133d90199197933aed1484239b853c
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 402e3fdfe108486cd356af8a20ea06793f533937
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418886"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141967311"
 ---
 # Get-AzureRmStorageAccountNameAvailability
 
 ## SYNOPSIS
-Memeriksa ketersediaan akun email Storage Anda.
+Memeriksa ketersediaan nama akun Storage.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -32,7 +32,7 @@ Cmdlet **Get-AzureRmStorageAccountNameAvailability** memeriksa apakah nama akun 
 
 ## EXAMPLES
 
-### Contoh 1: Periksa ketersediaan akun Storage nama akun
+### Contoh 1: Memeriksa ketersediaan nama akun Storage
 ```
 PS C:\>Get-AzureRmStorageAccountNameAvailability -Name 'contosostorage03'
 ```
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Get-AzTrafficManagerEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Get-AzTrafficManagerEndpoint.md
 ms.openlocfilehash: 959a805a9e8ed280d6036b66eaa8ce3dc3c7b2ef
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140302297"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141900963"
 ---
 # Get-AzTrafficManagerEndpoint
 
 ## SYNOPSIS
-Mendapatkan titik akhir untuk Traffic Manager profil.
+Mendapatkan titik akhir untuk profil Traffic Manager.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.trafficmanager/get-aztrafficmanagerendpoint) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.trafficmanager/get-aztrafficmanagerendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,33 +29,33 @@ Get-AzTrafficManagerEndpoint -Name <String> -Type <String> -ProfileName <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### Object
+### Objek
 ```
 Get-AzTrafficManagerEndpoint -TrafficManagerEndpoint <TrafficManagerEndpoint>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzTrafficManagerEndpoint** mendapatkan titik akhir untuk Azure Traffic Manager profil.
+Cmdlet **Get-AzTrafficManagerEndpoint** mendapatkan titik akhir untuk profil Azure Traffic Manager.
 
-Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan ke profil menggunakan cmdlet Set-AzTrafficManagerEndpoint cmdlet.
-Tentukan titik akhir dengan menggunakan *parameter Nama* *dan* Tipe.
-Anda bisa menentukan profil Traffic Manager anda dengan menggunakan parameter *ProfileName* dan *ResourceGroupName*, atau dengan menentukan objek **TrafficManagerProfile**.
-Alternatifnya, Anda bisa melewati nilai itu dengan menggunakan saluran.
+Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan pada profil menggunakan cmdlet Set-AzTrafficManagerEndpoint.
+Tentukan titik akhir dengan menggunakan parameter *Nama* dan *Tipe* .
+Anda dapat menentukan profil Traffic Manager baik dengan menggunakan parameter *ProfileName* dan *ResourceGroupName*, atau dengan menentukan objek **TrafficManagerProfile**.
+Atau, Anda dapat melewati nilai tersebut menggunakan pipeline.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan titik akhir
+### Contoh 1: Mendapatkan titik akhir
 ```
 PS C:\>$TrafficManagerEndpoint = Get-AzTrafficManagerEndpoint -Name "contoso" -ProfileName "ContosoProfile" -ResourceGroupName "ResourceGroup11" -Type AzureEndpoints
 ```
 
-Perintah ini mendapatkan titik akhir Azure yang bernama contoso dari profil yang bernama ContosoProfile dalam grup sumber daya yang bernama ResourceGroup11, lalu menyimpan objek tersebut di $TrafficManagerEndpoint sumber daya.
+Perintah ini mendapatkan titik akhir Azure bernama contoso dari profil bernama ContosoProfile dalam grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut dalam variabel $TrafficManagerEndpoint.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama titik akhir Traffic Manager yang akan dapatkan cmdlet ini.
+Menentukan nama titik akhir Traffic Manager yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProfileName
-Menentukan nama titik akhir Traffic Manager yang akan dapatkan cmdlet ini.
+Menentukan nama titik akhir Traffic Manager yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya.
-Cmdlet ini mendapatkan Traffic Manager titik akhir dalam grup yang ditentukan parameter ini.
+Cmdlet ini mendapatkan titik akhir Traffic Manager dalam grup yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -TrafficManagerEndpoint
-Menentukan titik Traffic Manager titik akhir yang didaurkan cmdlet ini.
+Menentukan titik akhir Traffic Manager yang didapat cmdlet ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerEndpoint
@@ -131,8 +131,8 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Menentukan tipe titik akhir yang tambahkan cmdlet ini ke Traffic Manager profil.
-Nilai valid adalah: 
+Menentukan tipe titik akhir yang ditambahkan cmdlet ini ke profil Traffic Manager.
+Nilai yang valid adalah: 
 
 - AzureEndpoints
 - ExternalEndpoints
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationHybridWorkerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationHybridWorkerGroup.md
 ms.openlocfilehash: 23b30fffee13d264cda195a70fea8e8180b92528
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140143359"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141873086"
 ---
 # Get-AzAutomationHybridWorkerGroup
 
@@ -19,11 +19,11 @@ ms.locfileid: "140143359"
 Mendapatkan grup pekerja runbook hibrid.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/get-azautomationhybridworkergroup) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationhybridworkergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
-### SecaraSemua (Default)
+### ByAll (Default)
 ```
 Get-AzAutomationHybridWorkerGroup [-ResourceGroupName] <String> [-AutomationAccountName] <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -36,31 +36,31 @@ Get-AzAutomationHybridWorkerGroup [[-Name] <String>] [-ResourceGroupName] <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzAutomationHybridWorkerGroup** cmdlet mendapatkan grup pekerja runbook hibrid Azure Automation.
-Untuk mendapatkan grup tertentu, tentukan nama grup tersebut.
+Cmdlet **Get-AzAutomationHybridWorkerGroup** mendapatkan Azure Automation grup pekerja runbook hibrid.
+Untuk mendapatkan grup tertentu, tentukan namanya.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua grup pekerja runbook hibrid
+### Contoh 1: Dapatkan semua grup pekerja runbook hibrid
 ```
 PS C:\>Get-AzAutomationHybridWorkerGroup -ResourceGroupName "ResourceGroupName01" -AutomationAccountName "Contoso17"
 ```
 
-Perintah ini mendapatkan semua grup pekerja runbook hibrid dalam akun Otomatisasi bernama Contoso17.
+Perintah ini mendapatkan semua grup pekerja runbook hibrid di akun Otomatisasi bernama Contoso17.
 
-### Contoh 2: Mendapatkan grup pekerja runbook hibrid tunggal
+### Contoh 2: Dapatkan satu grup pekerja runbook hibrid
 ```
 PS C:\>Get-AzAutomationHybridWorkerGroup -ResourceGroupName "ResourceGroupName01" -AutomationAccountName "Contoso17" -Name "HybridRunbookWorkerGroup01"
 ```
 
-Perintah ini mendapatkan grup pekerja runbook hibrid bernama HybridRunbookWorkerGroup01 dalam akun Otomatisasi yang bernama Contoso17.
+Perintah ini mendapatkan grup pekerja runbook hibrid bernama HybridRunbookWorkerGroup01 di akun Otomatisasi bernama Contoso17.
 
-### Contoh 3: Get the workers in a hybrid runbook worker group
+### Contoh 3: Dapatkan pekerja dalam grup pekerja runbook hibrid
 ```
 PS C:\>(Get-AzAutomationHybridWorker -ResourceGroupName ResourceGroupName01 -AutomationAccountName Contoso17 -Name "HybridRunbookWorkerGroup01" ).RunbookWorker
 ```
 
-Perintah ini mendapatkan pekerja runbook hibrid di grup pekerja runbook hibrid bernama HybridRunbookWorkerGroup01 dalam akun Otomatisasi bernama Contoso17.
+Perintah ini mendapatkan pekerja runbook hibrid dalam grup pekerja runbook hibrid bernama HybridRunbookWorkerGroup01 di akun Otomatisasi bernama Contoso17.
 
 ## PARAMETERS
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

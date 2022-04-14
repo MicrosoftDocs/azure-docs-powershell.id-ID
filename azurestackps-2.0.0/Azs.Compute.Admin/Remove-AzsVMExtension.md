@@ -4,16 +4,16 @@ Module Name: Azs.Compute.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.compute.admin/remove-azsvmextension
 schema: 2.0.0
 ms.openlocfilehash: 0b2bca9555b14a391df69acc4abdb2fc8c95017c
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "132415511"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141920073"
 ---
 # Remove-AzsVMExtension
 
 ## SYNOPSIS
-Menghapus Gambar Ekstensi Mesin Virtual tertentu.
+Menghapus Gambar Ekstensi Mesin Virtual yang ditentukan.
 
 ## SYNTAX
 
@@ -30,18 +30,18 @@ Remove-AzsVMExtension -InputObject <IComputeAdminIdentity> [-DefaultProfile <PSO
 ```
 
 ## DESCRIPTION
-Menghapus Gambar Ekstensi Mesin Virtual tertentu.
+Menghapus Gambar Ekstensi Mesin Virtual yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus Vm Extension that Exists 
+### Contoh 1: Hapus Ekstensi VM yang Ada 
 ```powershell
 PS C:\> Remove-AzsVMExtension -Location local -Publisher Microsoft -Type MicroExtension -Version 0.1.0
 ```
 
-Panggilan yang berhasil untuk menghapus kuota perhitungan tidak akan mengembalikan output apa pun
+Panggilan yang berhasil untuk menghapus kuota komputasi tidak akan mengembalikan output apa pun
 
-### Contoh 2: Menghapus Ekstensi VM yang Tidak Ada
+### Contoh 2: Hapus Ekstensi VM yang Tidak Ada
 ```powershell
 PS C:\> Remove-AzsVMExtension -Location local -Publisher Microsoft -Type DoesntExist -Version 9.8.7
 ```
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.IComputeAdminIdentity
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,8 +131,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Tipe ekstensi.
+Jenis ekstensi.
 
 ```yaml
 Type: System.String
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -227,19 +227,19 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 INPUTOBJECT <IComputeAdminIdentity>: Parameter Identitas
-  - `[DiskId <String>]`: Disk guid sebagai identitas.
+  - `[DiskId <String>]`: Disk memandu sebagai identitas.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Lokasi sumber daya.
-  - `[MigrationId <String>]`: Nama guid pekerjaan migrasi.
+  - `[MigrationId <String>]`: Nama panduan pekerjaan migrasi.
   - `[Offer <String>]`: Nama penawaran.
   - `[Publisher <String>]`: Nama penerbit.
   - `[QuotaName <String>]`: Nama kuota.
   - `[Sku <String>]`: Nama SKU.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
-  - `[Type <String>]`: Tipe ekstensi.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+  - `[Type <String>]`: Jenis ekstensi.
   - `[Version <String>]`: Versi sumber daya.
 
 ## RELATED LINKS

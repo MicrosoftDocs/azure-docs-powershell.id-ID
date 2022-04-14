@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzManagedCassandraDataCenter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzManagedCassandraDataCenter.md
-ms.openlocfilehash: 53819e611f08ef6f2974c9dbad3a34a1ebccb4ad
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 8258d0698728a84fef31a6825a308c510efbed6c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140179867"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141941829"
 ---
 # New-AzManagedCassandraDataCenter
 
 ## SYNOPSIS
-Membuat Azure Managed Instances baru untuk Apache Apache Apache data center.
+Buat Instans Terkelola Azure baru untuk pusat data Apache Cassandra.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azmanagedcassandradatacenter) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ New-AzManagedCassandraDataCenter
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzManagedCass cmdletDataCenter** membuat pusat data Cmdlet yang dikelola baru.
+**Cmdlet New-AzManagedCassandraDataCenter** membuat pusat data Cassandra yang dikelola baru.
 
 ## EXAMPLES
 
@@ -75,7 +78,7 @@ PS C:\> New-AzManagedCassandraDataCenter `
 ## PARAMETERS
 
 ### -BackupStorageCustomerKeyUri
-URI ke tombol KeyVault yang digunakan untuk mengenkripsi cadangan kluster. Jika dihilangkan, tombol Azure sendiri akan digunakan.
+URI ke kunci KeyVault yang digunakan untuk mengenkripsi cadangan kluster. Jika dihilangkan, kunci Azure sendiri akan digunakan.
 
 ```yaml
 Type: System.String
@@ -89,8 +92,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Base64EncodedCassyamlFragment
-Konfigurasi fragmen untuk disertakan di simpul dari `cassandra.yaml` pusat data ini, Base64 dikodekan.
+### -Base64EncodedCassandraYamlFragment
+Fragmen konfigurasi untuk disertakan dalam `cassandra.yaml` simpul pusat data ini, base64 dikodekan.
 
 ```yaml
 Type: System.String
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterName
-Nama kluster Properti terkelola.
+Nama kluster Cassandra yang dikelola.
 
 ```yaml
 Type: System.String
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -DelegatedSubnetId
-Id sumber daya subnet jaringan virtual tempat Terkelola subnet seharusnya melampirkan antarmuka jaringan.
+Id sumber daya subnet jaringan virtual tempat Cassandra yang dikelola harus melampirkan antarmuka jaringan.
 
 ```yaml
 Type: System.String
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskCapacity
-Jumlah disk data yang akan tersambung ke setiap simpul dalam kluster.
+Jumlah disk data yang akan disambungkan ke setiap simpul dalam kluster.
 
 ```yaml
 Type: System.Int32
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi untuk membuat kluster Premium yang dikelola di.
+Lokasi untuk membuat kluster Cassandra yang dikelola.
 
 ```yaml
 Type: System.String
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedDiskCustomerKeyUri
-URI tombol KeyVault digunakan untuk mengenkripsi data yang disimpan dalam kluster. Jika dihilangkan, tombol Azure sendiri akan digunakan.
+URI kunci KeyVault digunakan untuk mengenkripsi data saat disimpan di kluster. Jika dihilangkan, kunci Azure sendiri akan digunakan.
 
 ```yaml
 Type: System.String
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeCount
-Jumlah node yang dibuat di pusat data ini.
+Jumlah node yang akan dibuat di pusat data ini.
 
 ```yaml
 Type: System.Int32
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Objek kluster Tujuan untuk membuat pusat data.
+Objek kluster Cassandra untuk membuat pusat data di dalamnya.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSClusterResource
@@ -239,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Nama sku mesin virtual yang akan digunakan untuk simpul di pusat data ini. Lihat [dokumentasi untuk](https://docs.microsoft.com/en-us/azure/managed-instance-apache-cassandra/create-cluster-cli) sku yang didukung.
+Nama sku mesin virtual yang digunakan untuk simpul di pusat data ini. Lihat [dokumentasi](https://docs.microsoft.com/en-us/azure/managed-instance-apache-cassandra/create-cluster-cli) untuk sku yang didukung.
 
 ```yaml
 Type: System.String
@@ -254,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtaf tag yang diatur pada sumber daya pusat data.
+Hashtable tag untuk diatur pada sumber daya pusat data.
 
 ```yaml
 Type: System.Hashtable
@@ -269,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseAvailabilityZone
-Jika diatur, alokasikan node di pusat data ini menggunakan zona ketersediaan jika didukung di kawasan tersebut.
+Jika diatur, alokasikan simpul di pusat data ini menggunakan zona ketersediaan jika didukung di kawasan.
 
 ```yaml
 Type: System.Boolean
@@ -284,7 +287,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

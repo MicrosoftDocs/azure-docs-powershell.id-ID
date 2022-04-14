@@ -3,17 +3,17 @@ external help file: Microsoft.WindowsAzure.Commands.RemoteApp.dll-Help.xml
 ms.assetid: 72D332BA-A30B-45B9-875C-DF9D33299E05
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 9e65235d6f49d9c4b5be62e3953942d4fe18fccad36cf62258eea1647724555a
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: a6e66fc296b83f908a7dce5d44262b20447cc6e2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418982"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141922389"
 ---
 # Export-AzureRemoteAppUserDisk
 
 ## SYNOPSIS
-Mengekspor semua disk pengguna dari satu kumpulan Azure RemoteApp ke akun penyimpanan Azure tertentu.
+Mengekspor semua disk pengguna dari satu kumpulan Azure RemoteApp ke akun penyimpanan Azure yang ditentukan.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -26,16 +26,16 @@ Export-AzureRemoteAppUserDisk [-CollectionName] <String> [-DestinationStorageAcc
 ```
 
 ## DESCRIPTION
-Cmdlet **Export-AzureRemoteAppUserDisk** mengekspor semua disk pengguna dari satu kumpulan Azure RemoteApp ke akun penyimpanan Azure yang ditentukan.
+Cmdlet **Ekspor-AzureRemoteAppUserDisk mengekspor** semua disk pengguna dari satu kumpulan Azure RemoteApp ke akun penyimpanan Azure yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Mengekspor semua disk pengguna dari koleksi ke akun penyimpanan Azure yang ditentukan
+### Contoh 1: Mengekspor semua disk pengguna dari kumpulan ke akun penyimpanan Azure yang ditentukan
 ```
 PS C:\> Export-AzureRemoteAppUserDisk -CollectionName "Contoso" -DestinationStorageAccountName "AccountName" -DestinationStorageAccountKey "AccountKey" -DestinationStorageAccountContainerName "ContainerName" -OverwriteExistingUserDisk
 ```
 
-Perintah ini mengekspor semua disk pengguna dari kumpulan yang bernama Contoso ke wadah bernama ContainerName di akun penyimpanan Azure yang ditentukan dengan nama AccountName dan kunci AccountKey.
+Perintah ini mengekspor semua disk pengguna dari kumpulan bernama Contoso ke wadah bernama ContainerName di akun penyimpanan Azure tertentu dengan nama AccountName dan AccountKey kunci.
 
 ## PARAMETERS
 
@@ -55,7 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationStorageAccountContainerName
-Menentukan nama wadah di akun penyimpanan Azure tujuan.
+Menentukan nama kontainer di akun penyimpanan Azure tujuan.
 
 ```yaml
 Type: String
@@ -115,8 +115,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -172,8 +172,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Copy-AzureRemoteAppUserDisk](./Copy-AzureRemoteAppUserDisk.md)
+[Salin-AzureRemoteAppUserDisk](./Copy-AzureRemoteAppUserDisk.md)
 
-[Remove-AzureRemoteAppUserDisk](./Remove-AzureRemoteAppUserDisk.md)
+[Hapus-AzureRemoteAppUserDisk](./Remove-AzureRemoteAppUserDisk.md)
 
 

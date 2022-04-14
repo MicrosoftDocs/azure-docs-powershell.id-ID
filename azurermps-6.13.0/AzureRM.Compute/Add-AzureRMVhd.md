@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Add-AzureRMVhd.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Add-AzureRMVhd.md
 ms.openlocfilehash: aee844d36fb2083e56415b34032cf928cb01d99e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419986"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141968806"
 ---
 # Add-AzureRmVhd
 
 ## SYNOPSIS
-Mengunggah hard disk virtual dari komputer virtual lokal ke blob dalam akun penyimpanan cloud di Azure.
+Mengunggah hard disk virtual dari mesin virtual lokal ke blob di akun penyimpanan cloud di Azure.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -30,29 +30,29 @@ Add-AzureRmVhd [[-ResourceGroupName] <String>] [-Destination] <Uri> [-LocalFileP
 
 ## DESCRIPTION
 Cmdlet **Add-AzureRmVhd** mengunggah hard disk virtual lokal, dalam format file .vhd, ke akun penyimpanan blob sebagai hard disk virtual tetap.
-Anda dapat mengonfigurasi jumlah utas pengunggah yang akan digunakan atau menimpa blob yang ada dalam URI tujuan yang ditentukan.
-Juga didukung adalah kemampuan untuk mengunggah versi patch dari file .vhd lokal.
-Saat hard disk virtual dasar telah diunggah, Anda bisa mengunggah disk berbeda yang menggunakan gambar dasar sebagai induk.
-URI akses bersama (Sas) juga didukung.
+Anda dapat mengonfigurasi jumlah utas pengunggah yang akan digunakan atau menimpa blob yang sudah ada dalam URI tujuan yang ditentukan.
+Juga didukung adalah kemampuan untuk mengunggah versi patch file .vhd lokal.
+Ketika hard disk virtual dasar telah diunggah, Anda dapat mengunggah disk berbeda yang menggunakan gambar dasar sebagai induknya.
+URI tanda tangan akses bersama (SAS) juga didukung.
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan file VHD
+### Contoh 1: Menambahkan file VHD
 ```
 PS C:\> Add-AzureRmVhd -Destination "http://contosoaccount.blob.core.windows.net/vhdstore/win7baseimage.vhd" -LocalFilePath "C:\vhd\Win7Image.vhd"
 ```
 
 Perintah ini menambahkan file .vhd ke akun penyimpanan.
 
-### Contoh 2: Tambahkan file VHD dan timpa tujuan
+### Contoh 2: Menambahkan file VHD dan menimpa tujuan
 ```
 PS C:\> Add-AzureRmVhd -Destination "http://contosoaccount.blob.core.windows.net/vhdstore/win7baseimage.vhd" -LocalFilePath "C:\vhd\Win7Image.vhd" -Overwrite
 ```
 
 Perintah ini menambahkan file .vhd ke akun penyimpanan.
-Perintah akan menimpa file yang sudah ada.
+Perintah menimpa file yang sudah ada.
 
-### Contoh 3: Tambahkan file VHD dan tentukan jumlah utas
+### Contoh 3: Menambahkan file VHD dan menentukan jumlah utas
 ```
 PS C:\> Add-AzureRmVhd -Destination "http://contosoaccount.blob.core.windows.net/vhdstore/win7baseimage.vhd" -LocalFilePath "C:\vhd\Win7Image.vhd" -NumberOfUploaderThreads 32
 ```
@@ -60,17 +60,17 @@ PS C:\> Add-AzureRmVhd -Destination "http://contosoaccount.blob.core.windows.net
 Perintah ini menambahkan file .vhd ke akun penyimpanan.
 Perintah menentukan jumlah utas yang akan digunakan untuk mengunggah file.
 
-### Contoh 4: Tambahkan file VHD dan tentukan SAS URI
+### Contoh 4: Menambahkan file VHD dan menentukan SAS URI
 ```
 PS C:\> Add-AzureRmVhd -Destination "http://contosoaccount.blob.core.windows.net/vhdstore/win7baseimage.vhd?st=2013-01 -09T22%3A15%3A49Z&amp;se=2013-01-09T23%3A10%3A49Z&amp;sr=b&amp;sp=w&amp;sig=13T9Ow%2FRJAMmhfO%2FaP3HhKKJ6AY093SmveO SIV4%2FR7w%3D" -LocalFilePath "C:\vhd\win7baseimage.vhd"
 ```
 
-Perintah ini menambahkan file .vhd ke akun penyimpanan dan menentukan URI SAS.
+Perintah ini menambahkan file .vhd ke akun penyimpanan dan menentukan SAS URI.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -85,8 +85,8 @@ Accept wildcard characters: False
 ```
 
 ### -BaseImageUriToPatch
-Menentukan URI ke blob gambar dasar di Azure Blob Storage.
-Sas dapat ditentukan sebagai nilai untuk parameter ini.
+Menentukan URI ke blob gambar dasar dalam Azure Blob Storage.
+SAS dapat ditentukan sebagai nilai untuk parameter ini.
 
 ```yaml
 Type: System.Uri
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -116,8 +116,8 @@ Accept wildcard characters: False
 ```
 
 ### -Tujuan
-Menentukan URI dari blob di Blob Storage.
-Parameter mendukung SAS URI, meskipun tujuan skenario patching tidak bisa menjadi SAS URI.
+Menentukan URI blob dalam blob Storage.
+Parameter mendukung SAS URI, meskipun tujuan skenario patch tidak dapat berupa SAS URI.
 
 ```yaml
 Type: System.Uri
@@ -161,8 +161,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -OverWrite
-Menunjukkan bahwa cmdlet ini menimpa blob yang sudah ada di URI tujuan yang ditentukan, jika ada.
+### -Timpa
+Menunjukkan bahwa cmdlet ini menimpa blob yang sudah ada dalam URI tujuan yang ditentukan, jika ada.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: System.String
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -202,7 +202,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.IO.FileInfo
 
-### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ### System.Management.Automation.SwitchParameter
 
@@ -214,6 +214,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Save-AzureRmVhd](./Save-AzureRmVhd.md)
+[Simpan-AzureRmVhd](./Save-AzureRmVhd.md)
 
 

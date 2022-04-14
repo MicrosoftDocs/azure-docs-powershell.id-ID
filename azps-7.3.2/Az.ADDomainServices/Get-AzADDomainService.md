@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.addomainservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ADDomainServices/help/Get-AzADDomainService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ADDomainServices/help/Get-AzADDomainService.md
-ms.openlocfilehash: a50665fbf29b6836f5ec24f9f6439549abbe71e0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9d41cf3954af6302a5015cee5a3e02bc70f3c95b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140203462"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141900243"
 ---
 # Get-AzADDomainService
 
 ## SYNOPSIS
 Operasi Dapatkan Layanan Domain mengambil representasi json dari Layanan Domain.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.addomainservices/get-azaddomainservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Operasi Dapatkan Layanan Domain mengambil representasi json dari Layanan Domain.
 Get-AzADDomainService [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzADDomainService -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -47,7 +50,7 @@ Operasi Dapatkan Layanan Domain mengambil representasi json dari Layanan Domain.
 
 ## EXAMPLES
 
-### Contoh 1: Get All ADDomainService By default
+### Contoh 1: Dapatkan Semua ADDomainService Secara default
 ```powershell
 Get-AzADDomainService
 ```
@@ -58,7 +61,7 @@ Name          Domain Name       Location Sku
 youriADdomain youriAddomain.com westus   Enterprise
 ```
 
-Mendapatkan Semua ADDomainService Secara default
+Dapatkan Semua ADDomainService Secara default
 
 ### Contoh 2: Get ADDomainService By ResourceGroup and name
 ```powershell
@@ -71,7 +74,7 @@ Name          Domain Name       Location Sku
 youriADdomain youriAddomain.com westus   Enterprise
 ```
 
-Get ADDomainService By ResourceGroup and name
+Dapatkan ADDomainService Menurut ResourceGroup dan nama
 
 ### Contoh 3: Get all ADDomainService By ResourceGroup
 ```powershell
@@ -84,9 +87,9 @@ Name          Domain Name       Location Sku
 youriADdomain youriAddomain.com westus   Enterprise
 ```
 
-Mendapatkan semua ADDomainService Menurut ResourceGroup
+Dapatkan semua ADDomainService menurut ResourceGroup
 
-### Contoh 4: Dapatkan ADDomainService by InputObject
+### Contoh 4: Get ADDomainService By InputObject
 ```powershell
 $getAzAddomain = Get-AzADDomainService -Name youriADdomain -ResourceGroupName youriADdomain
 Get-AzADDomainService -InputObject $getAzAddomain
@@ -98,7 +101,7 @@ Name          Domain Name       Location Sku
 youriADdomain youriAddomain.com westus   Enterprise
 ```
 
-Dapatkan ADDomainService By InputObject
+Dapatkan ADDomainService dengan InputObject
 
 ## PARAMETERS
 
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ADDomainServices.Models.IAdDomainServicesIdentity
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya dalam langganan pengguna.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -164,8 +167,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -202,8 +205,8 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <IAdDomainServicesIdentity>: Parameter Identitas
   - `[DomainServiceName <String>]`: Nama layanan domain.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya dalam langganan pengguna. Namanya peka huruf besar/huruf.
-  - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya dalam langganan pengguna. Nama ini tidak peka huruf besar kecil.
+  - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

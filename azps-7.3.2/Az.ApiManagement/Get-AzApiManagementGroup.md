@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementGroup.md
-ms.openlocfilehash: 740a3c0c328f8670a252eadb1716a683abe66035
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 70552e00e29ec60f096d1aff091169dcc466d89c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140560829"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141899451"
 ---
 # Get-AzApiManagementGroup
 
 ## SYNOPSIS
 Mendapatkan semua atau grup manajemen API tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,9 +58,9 @@ $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS
 Get-AzApiManagementGroup -Context $apimContext
 ```
 
-Perintah ini akan mendapatkan semua grup.
+Perintah ini mendapatkan semua grup.
 
-### Contoh 2: Dapatkan grup dengan ID
+### Contoh 2: Mendapatkan grup menurut ID
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementGroup -Context $apimContext -GroupId "0123456789"
@@ -65,7 +68,7 @@ Get-AzApiManagementGroup -Context $apimContext -GroupId "0123456789"
 
 Perintah ini mendapatkan ID grup bernama 0123456789.
 
-### Contoh 3: Dapatkan grup berdasarkan nama
+### Contoh 3: Mendapatkan grup menurut nama
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementGroup -Context $apimContext -Name "Group0002"
@@ -73,13 +76,13 @@ Get-AzApiManagementGroup -Context $apimContext -Name "Group0002"
 
 Perintah ini mendapatkan grup bernama Group0002.
 
-### Contoh 4: Mendapatkan semua grup pengguna
+### Contoh 4: Dapatkan semua grup pengguna
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementGroup -Context $apimContext -UserId "0123456789"
 ```
 
-Perintah ini mendapatkan semua grup pengguna dengan ID pengguna yang bernama 0123456789.
+Perintah ini mendapatkan semua grup pengguna dengan ID pengguna bernama 0123456789.
 
 ## PARAMETERS
 
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 
 ### -GroupId
 Menentukan ID grup.
-Jika ditentukan, cmdlet akan berusaha menemukan grup berdasarkan pengidentifikasi.
+Jika ditentukan, cmdlet berusaha menemukan grup oleh pengidentifikasi.
 
 ```yaml
 Type: System.String
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 
 ### -UserId
 Menentukan pengidentifikasi produk yang sudah ada.
-Jika ditentukan, cmdlet akan mengembalikan semua grup tempat produk ditetapkan.
+Jika ditentukan cmdlet akan mengembalikan semua grup tempat produk ditetapkan.
 
 ```yaml
 Type: System.String
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
