@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.sql/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlSyncSchema.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlSyncSchema.md
-ms.openlocfilehash: b9310b4778d88ea877637b58be55c24d7c6ce7130618125bfb2c8fb0a574267a
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 38e56102ba544bc56384f0d3ff59bdc8091bdd54
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140852247"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141923925"
 ---
 # Get-AzureRmSqlSyncSchema
 
@@ -32,7 +32,7 @@ Cmdlet **Get-AzureRmSqlSyncSchema** mengembalikan informasi tentang skema sinkro
 
 ## EXAMPLES
 
-### Contoh 1.1: Dapatkan skema sinkronisasi untuk database hub
+### Contoh 1.1: Mendapatkan skema sinkronisasi untuk database hub
 ```
 PS C:\>Get-AzureRmSqlSyncSchema -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "database01" -SyncGroupName "syncGroup01"
 Tables                     LastUpdateTime
@@ -40,7 +40,7 @@ Tables                     LastUpdateTime
 {dbo.Table_1, dbo.Table_2} 6/13/2017 10:03:44 AM
 ```
 
-Perintah ini mendapatkan skema sinkronisasi untuk database hub di grup sinkronisasi syncGroup01.
+Perintah ini mendapatkan skema sinkronisasi untuk database hub dalam sinkronisasi grup sinkronisasiGroup01.
 
 ### Contoh 1.2: Dapatkan skema sinkronisasi untuk database hub, dan perluas Tabel
 ```
@@ -58,9 +58,9 @@ Name       : dbo.Table_2
 QuotedName : [dbo].[Table_2]
 ```
 
-Perintah ini mendapatkan skema sinkronisasi untuk database hub di grup sinkronisasi syncGroup01 dan memperluas properti Tabel.
+Perintah ini mendapatkan skema sinkronisasi untuk database hub dalam sinkronisasi grup sinkronisasiGroup01 dan memperluas properti Tabel.
 
-### Contoh 2: Dapatkan skema sinkronisasi untuk database anggota
+### Contoh 2: Mendapatkan skema sinkronisasi untuk database anggota
 ```
 PS C:\>Get-AzureRmSqlSyncSchema -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "database01" -SyncGroupName "syncGroup01" -SyncMemberName "syncMember01"
 The schema payload is the same as Example 1.
@@ -71,7 +71,7 @@ Perintah ini mendapatkan skema sinkronisasi untuk database anggota dalam sinkron
 ## PARAMETERS
 
 ### -DatabaseName
-Nama nama Azure SQL Database.
+Nama Azure SQL Database.
 
 ```yaml
 Type: System.String
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama azure SQL Server.
+Nama Server Azure SQL.
 
 ```yaml
 Type: System.String
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

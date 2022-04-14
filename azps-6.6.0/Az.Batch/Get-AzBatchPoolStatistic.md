@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchPoolStatistic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchPoolStatistic.md
 ms.openlocfilehash: 63d89d7b420e6b03e43f0c70290e48b70165b59f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139980105"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141961485"
 ---
 # Get-AzBatchPoolStatistic
 
 ## SYNOPSIS
-Mendapatkan statistik ringkasan kumpulan untuk akun Kumpulan.
+Mendapatkan statistik ringkasan kumpulan untuk akun Batch.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/get-azbatchpoolstatistic) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchpoolstatistic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,12 +29,12 @@ Get-AzBatchPoolStatistic -BatchContext <BatchAccountContext> [-DefaultProfile <I
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzBatchPoolStatistic** mendapatkan statistik seumur hidup untuk semua kolam renang di akun yang ditentukan.
-Statistik diagregasi di seluruh kolam renang yang pernah ada dalam akun tersebut, dari pembuatan akun hingga waktu pembaruan terakhir statistik.
+Cmdlet **Get-AzBatchPoolStatistic** mendapatkan statistik seumur hidup untuk semua kumpulan dalam akun tertentu.
+Statistik diagregat di seluruh kumpulan yang pernah ada dalam akun, dari pembuatan akun hingga waktu pembaruan statistik terakhir.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan statistik sumber daya dari semua kolam renang di akun
+### Contoh 1: Dapatkan statistik sumber daya dari semua kumpulan dalam akun
 ```
 PS C:\>$Context = Get-AzBatchAccountKey -AccountName "ContosoBatchAccount"
 PS C:\> $PoolStatistics = Get-AzBatchPoolStatistic -BatchContext $Context
@@ -54,16 +54,16 @@ PeakMemoryGiB        : 1.11184692382813
 StartTime            : 2/10/2016 7:07:24 PM
 ```
 
-Perintah pertama membuat referensi objek ke tombol akun untuk akun kumpulan bernama ContosoBatchAccount dengan menggunakan **Get-AzBatchAccountKey**.
-Perintah menyimpan referensi objek ini di $Context variabel.
-Perintah kedua mendapatkan statistik dari semua kolam renang di akun yang ditentukan, lalu menyimpannya di $PoolStatistics.
-Perintah terakhir menampilkan properti **ResourceStatistics** $PoolStatistics.
+Perintah pertama membuat referensi objek ke kunci akun untuk akun batch bernama ContosoBatchAccount menggunakan **Get-AzBatchAccountKey**.
+Perintah menyimpan referensi objek ini dalam variabel $Context.
+Perintah kedua mendapatkan statistik semua kumpulan dalam akun tertentu, lalu menyimpannya di $PoolStatistics.
+Perintah akhir menampilkan properti **ResourceStatistics** $PoolStatistics.
 
 ## PARAMETERS
 
 ### -BatchContext
-Menentukan contoh **BatchAccountContext** yang digunakan cmdlet untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmApplicationGatewayProbeHealthResponseMatch.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmApplicationGatewayProbeHealthResponseMatch.md
 ms.openlocfilehash: f2c893f7568d33eaeb1684c00b06e36771aae8bb
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140858447"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141926158"
 ---
 # New-AzureRmApplicationGatewayProbeHealthResponseMatch
 
 ## SYNOPSIS
-Membuat kecocokan respons default kesehatan yang digunakan oleh Health Health Health untuk gateway aplikasi.
+Membuat kecocokan respons pemeriksaan kesehatan yang digunakan oleh Health Probe untuk gateway aplikasi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ New-AzureRmApplicationGatewayProbeHealthResponseMatch [-Body <String>]
 ```
 
 ## DESCRIPTION
-**Cmdlet Add-AzureRmApplicationGatewayProbeHealthResponseMatch** membuat kecocokan pemeriksaan kesehatan yang digunakan oleh Health Cmdlet untuk gateway aplikasi.
+Cmdlet **Add-AzureRmApplicationGatewayProbeHealthResponseMatch** membuat kecocokan respons pemeriksaan kesehatan yang digunakan oleh Health Probe untuk gateway aplikasi.
 
 ## EXAMPLES
 
@@ -37,12 +37,12 @@ New-AzureRmApplicationGatewayProbeHealthResponseMatch [-Body <String>]
 PS C:\>$responsematch = New-AzureRmApplicationGatewayProbeHealthResponseMatch -Body "helloworld" -StatusCode "200-399","503"
 ```
 
-Perintah ini membuat kecocokan respons kesehatan yang dapat disampaikan keConfigConfig menjadi parameter.
+Perintah ini membuat kecocokan respons kesehatan yang dapat dialihkan ke ProbeConfig sebagai parameter.
 
 ## PARAMETERS
 
-### -Body
-Isi yang harus dimuat dalam respons kesehatan.
+### -Isi
+Tubuh yang harus dikandung dalam respons kesehatan.
 Nilai default kosong
 
 ```yaml
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -StatusCode
-Rentang kode status sehat yang diperbolehkan. Rentang default kode status sehat adalah 200 - 399
+Rentang kode status sehat yang diizinkan. Rentang default kode status sehat adalah 200 - 399
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -88,11 +88,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

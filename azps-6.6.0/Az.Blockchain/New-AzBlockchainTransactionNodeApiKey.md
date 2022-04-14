@@ -6,23 +6,23 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blockchain/help/New-AzBlockchainTransactionNodeApiKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blockchain/help/New-AzBlockchainTransactionNodeApiKey.md
 ms.openlocfilehash: fd3c5476dfa1f6f146b81cab69a146ca983bda57
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140142873"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141961395"
 ---
 # New-AzBlockchainTransactionNodeApiKey
 
 ## SYNOPSIS
-Meregenerasi kunci API untuk anggota piano.
+Regenerasi kunci API untuk anggota blockchain.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.blockchain/new-azblockchaintransactionnodeapikey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.blockchain/new-azblockchaintransactionnodeapikey) untuk informasi terbaru.
 
 ## SYNTAX
 
-### RegenerasiExpanded (Default)
+### RegenerateExpanded (Default)
 ```
 New-AzBlockchainTransactionNodeApiKey -BlockchainMemberName <String> -ResourceGroupName <String>
  -TransactionNodeName <String> [-SubscriptionId <String>] [-KeyName <String>] [-Value <String>]
@@ -36,11 +36,11 @@ New-AzBlockchainTransactionNodeApiKey -InputObject <IBlockchainIdentity> [-KeyNa
 ```
 
 ## DESCRIPTION
-Meregenerasi kunci API untuk anggota piano.
+Regenerasi kunci API untuk anggota blockchain.
 
 ## EXAMPLES
 
-### Contoh 1: Regenerate Api keys for a transaction node using name.
+### Contoh 1: Meregenerasi kunci Api untuk simpul transaksi menggunakan nama.
 ```powershell
 PS C:\> $keyPair = Get-AzBlockchainTransactionNodeApiKey -BlockchainMemberName dolauli001 -ResourceGroupName testgroup -TransactionNodeName tranctionnode001 
 PS C:\> New-AzBlockchainTransactionNodeApiKey -BlockchainMemberName dolauli001 -ResourceGroupName testgroup -TransactionNodeName tranctionnode001 -KeyName $keyPair[0].KeyName 
@@ -51,9 +51,9 @@ key1    0-UCaNSNfS0lwRKRyv09sgb-
 key2    0Prk4Dl3lsOKdhyPEFQ-AnQb
 ```
 
-Perintah ini menghasilkan tombol Api untuk simpul transaksi menggunakan nama, grup sumber daya.
+Perintah ini menghasilkan kunci Api untuk simpul transaksi menggunakan nama, grup sumber daya.
 
-### Contoh 2: Kunci Api regenerasi untuk node transaksi
+### Contoh 2: Meregenerasi kunci Api untuk simpul transaksi
 ```powershell
 PS C:\> $keyPair = Get-AzBlockchainTransactionNodeApiKey -BlockchainMemberName dolauli001 -ResourceGroupName testgroup -TransactionNodeName tranctionnode001 
 PS C:\> $tNode = Get-AzBlockchainTransactionNode -BlockchainMemberName dolauli001 -ResourceGroupName testgroup -TransactionNodeName tranctionnode001 
@@ -65,12 +65,12 @@ key1    0-UCaNSNfS0lwRKRyv09sgb-
 key2    0Prk4Dl3lsOKdhyPEFQ-AnQb
 ```
 
-Perintah ini menghasilkan tombol Api untuk simpul transaksi menggunakan idenitas.
+Perintah ini menghasilkan kunci Api untuk simpul transaksi menggunakan idenitas.
 
 ## PARAMETERS
 
-### -TemplatMemberName
-Nama anggota Blokir.
+### -BlockchainMemberName
+Nama anggota Blockchain.
 
 ```yaml
 Type: System.String
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Blockchain.Models.IBlockchainIdentity
@@ -130,8 +130,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya tersebut.
-Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+Nama grup sumber daya yang berisi sumber daya.
+Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
 
 ```yaml
 Type: System.String
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+ID langganan adalah bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -TransactionNodeName
-Nama node transaksi.
+Nama simpul transaksi.
 
 ```yaml
 Type: System.String
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -223,15 +223,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Cmdlets.Cmdlets.Models.IBlockchainIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.Blockchain.Models.IBlockchainIdentity
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Cmdlets.Cmdlets.Models.Api20180601Preview.IApiKey
+### Microsoft.Azure.PowerShell.Cmdlets.Blockchain.Models.Api20180601Preview.IApiKey
 
 ## CATATAN
 
@@ -243,13 +243,13 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IBlockchainIdentity>: Parameter Identitas
-  - `[BlockchainMemberName <String>]`: Nama anggota Server 365.
+  - `[BlockchainMemberName <String>]`: Nama anggota Blockchain.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama lokasi.
-  - `[OperationId <String>]`: Id Operasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya tersebut. Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
-  - `[SubscriptionId <String>]`: Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
-  - `[TransactionNodeName <String>]`: Nama node transaksi.
+  - `[OperationId <String>]`: Operation Id.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
+  - `[SubscriptionId <String>]`: Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan adalah bagian dari URI untuk setiap panggilan layanan.
+  - `[TransactionNodeName <String>]`: Nama simpul transaksi.
 
 ## RELATED LINKS
 

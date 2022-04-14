@@ -6,29 +6,29 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/help/Get-AzPurviewAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/help/Get-AzPurviewAccount.md
 ms.openlocfilehash: af6ca957a3314ffb0194e3b7c13fde4fb414624d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140099441"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142123091"
 ---
 # Get-AzPurviewAccount
 
 ## SYNOPSIS
-Mendapatkan akun
+Dapatkan akun
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.purview/get-azpurviewaccount) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.purview/get-azpurviewaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Daftar1 (Default)
+### List1 (Default)
 ```
 Get-AzPurviewAccount [-SubscriptionId <String[]>] [-SkipToken <String>] [-DefaultProfile <PSObject>]
  [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzPurviewAccount -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -46,11 +46,11 @@ Get-AzPurviewAccount -ResourceGroupName <String> [-SubscriptionId <String[]>] [-
 ```
 
 ## DESCRIPTION
-Mendapatkan akun
+Dapatkan akun
 
 ## EXAMPLES
 
-### Contoh 1:  List All Purview Accounts
+### Contoh 1: Daftar Semua Akun Purview
 ```powershell
 PS C:\> Get-AzPurviewAccount
 
@@ -61,9 +61,9 @@ xxxxxxxx-bbe7-4506-a9c4-4d602d8e4e1c xxxxxxxx-38d6-4fb2-bad9-b7b93a3e9c5a System
 xxxxxxxx-7956-4978-87e8-9ddd82cfe2b7 xxxxxxxx-38d6-4fb2-bad9-b7b93a3e9c5a SystemAssigned eastus   test-pa       8/17/2021 6:18:57 AM xxxxxxxxxx@microsoft.com User 
 ```
 
-Membuat daftar semua akun tampilan.
+Daftar semua akun gambaran umum.
 
-### Contoh 2: Dapatkan Purview Account menurut Nama dan Nama Grup Sumber Daya
+### Contoh 2: Dapatkan Akun Purview menurut Nama dan Nama Grup Sumber Daya
 ```powershell
 PS C:\> Get-AzPurviewAccount -Name test-pa -ResourceGroupName test-rg
 
@@ -72,9 +72,9 @@ IdentityPrincipalId                  IdentityTenantId                     Identi
 xxxxxxxx-7956-4978-87e8-9ddd82cfe2b7 xxxxxxxx-38d6-4fb2-bad9-b7b93a3e9c5a SystemAssigned eastus   test-pa 8/17/2021 6:18:57 AM xxxxxxxxxx@microsoft.com User                    8/17/2021 6:18:5… 
 ```
 
-Dapatkan uji-rg nama akun purview dalam uji-pa grup sumber daya
+Dapatkan test-rg nama akun purview dalam uji-pa grup sumber daya
 
-### Contoh 3:  Purview Accounts in a Specified Resource Group 
+### Contoh 3: Daftar Akun Purview dalam Grup Sumber Daya Tertentu 
 ```powershell
 PS C:\> Get-AzPurviewAccount -ResourceGroupName test-rg
 
@@ -83,9 +83,9 @@ IdentityPrincipalId                  IdentityTenantId                     Identi
 xxxxxxxx-7956-4978-87e8-9ddd82cfe2b7 xxxxxxxx-38d6-4fb2-bad9-b7b93a3e9c5a SystemAssigned eastus   test-pa 8/17/2021 6:18:57 AM xxxxxxxxxx@microsoft.com User                    8/17/2021 6:18:5… 
 ```
 
-List the purview accounts in resource group test-pa
+Mencantumkan akun gambaran umum dalam uji-pa grup sumber daya
 
-### Contoh 4: Dapatkan Purview Account by InputObject
+### Contoh 4: Dapatkan Akun Purview oleh InputObject
 ```powershell
 PS C:\>  $got = Get-AzPurviewAccount -Name test-pa -ResourceGroupName test-rg
 PS C:\>  Get-AzADDomainService -InputObject $got
@@ -96,7 +96,7 @@ IdentityPrincipalId                  IdentityTenantId                     Identi
 xxxxxxxx-7956-4978-87e8-9ddd82cfe2b7 xxxxxxxx-38d6-4fb2-bad9-b7b93a3e9c5a SystemAssigned eastus   test-pa 8/17/2021 6:18:57 AM xxxxxxxxxx@microsoft.com User                    8/17/2021 6:18:5… 
 ```
 
-Mendapatkan akun tampilan dengan InputObject
+Dapatkan akun purview dengan InputObject
 
 ## PARAMETERS
 
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purview.Models.IPurviewIdentity
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipToken
-Token lewati.
+Token lompat.
 
 ```yaml
 Type: System.String
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

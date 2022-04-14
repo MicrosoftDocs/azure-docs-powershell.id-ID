@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/invoke-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Invoke-AzIotHubConfigurationMetricsQuery.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Invoke-AzIotHubConfigurationMetricsQuery.md
-ms.openlocfilehash: 7e589b39be247c42f052e22b79d988091de71545
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d5486fa2cc0c269aa9d92d999b07bf7bb4b79a97
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140199590"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141937797"
 ---
 # Invoke-AzIotHubConfigurationMetricsQuery
 
 ## SYNOPSIS
-Menjalankan kueri metrik konfigurasi perangkat IoT.
+Memanggil kueri metrik konfigurasi perangkat IoT.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/invoke-aziothubconfigurationmetricsquery) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,10 +44,10 @@ Invoke-AzIotHubConfigurationMetricsQuery [-ResourceId] <String> -Name <String> -
 ```
 
 ## DESCRIPTION
-Evaluasi metrik sistem atau kustom target yang ditentukan dalam konfigurasi perangkat IoT.
-Ada metrik sistem yang ditetapkan sebelumnya yang dihitung oleh Iot Hub dan tidak bisa dikustomisasi.
-- "Ditargetkan" menentukan jumlah perangkat yang sesuai dengan kondisi target.
-- "Applied" specified the number of devices that have been modified by the configuration. 
+Mengevaluasi metrik sistem atau kustom target yang ditentukan dalam konfigurasi perangkat IoT.
+Terdapat metrik sistem yang telah ditentukan sebelumnya yang dihitung oleh Iot Hub dan tidak dapat dikustomisasi.
+- "Ditargetkan" menentukan jumlah perangkat kembar yang cocok dengan kondisi target.
+- "Diterapkan" menentukan jumlah perangkat kembar yang telah diubah oleh konfigurasi. 
 
 ## EXAMPLES
 
@@ -53,14 +56,14 @@ Ada metrik sistem yang ditetapkan sebelumnya yang dihitung oleh Iot Hub dan tida
 PS C:\> Invoke-AzIotHubConfigurationMetricsQuery -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -Name "myConfig1" -MetricName "warningLimit"
 ```
 
-Evaluasi metrik 'peringatanLimit' yang ditentukan.
+Evaluasi metrik 'warningLimit' yang ditentukan kustom.
 
 ### Contoh 2
 ```powershell
 PS C:\> Invoke-AzIotHubConfigMetric -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -Name "myConfig1" -MetricName "applied" -MetricType "system"
 ```
 
-Evaluasi metrik sistem 'diterapkan'.
+Mengevaluasi metrik 'diterapkan' sistem.
 
 ## PARAMETERS
 
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/unpublish-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Unpublish-AzCdnEndpointContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Unpublish-AzCdnEndpointContent.md
-ms.openlocfilehash: 1ab5f6022a125ed3ad812a5dbedb9e85ae79c136
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c2fd29f841dd96be79ce80621a8fc9c31ab15b8e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140560509"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141943557"
 ---
 # Unpublish-AzCdnEndpointContent
 
 ## SYNOPSIS
-Pembersihan titik akhir CDN akhir.
+Membersihkan titik akhir CDN.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cdn/unpublish-azcdnendpointcontent) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Unpublish-AzCdnEndpointContent -CdnEndpoint <PSEndpoint> -PurgeContent <String[]
 ```
 
 ## DESCRIPTION
-Cmdlet **Unpublish-AzCdnEndpointContent** membersihkan konten dari titik akhir Azure Content Delivery Network (CDN).
+**Cmdlet Unpublish-AzCdnEndpointContent** membersihkan konten dari titik akhir Azure Content Delivery Network (CDN).
 
 ## EXAMPLES
 
@@ -43,7 +46,7 @@ Cmdlet **Unpublish-AzCdnEndpointContent** membersihkan konten dari titik akhir A
 Unpublish-AzCdnEndpointContent -ResourceGroupName myresourcegroup -ProfileName mycdnprofile -EndpointName myendpoint -PurgeContent "/images/kitten.png","/video/rickroll.mp4"
 ```
 
-### Contoh 2:  Purge everything in /images/ on all endpoints
+### Contoh 2: Membersihkan semuanya dalam /images/ di semua titik akhir
 ```powershell
 Get-AzCdnProfile | Get-AzCdnEndpoint | Unpublish-AzCdnEndpointContent -PurgeContent "/images/*"
 ```
@@ -51,7 +54,7 @@ Get-AzCdnProfile | Get-AzCdnEndpoint | Unpublish-AzCdnEndpointContent -PurgeCont
 ## PARAMETERS
 
 ### -CdnEndpoint
-Menentukan titik akhir pembersihan cmdlet ini.
+Menentukan titik akhir yang dibersihkan cmdlet ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Cdn.Models.Endpoint.PSEndpoint
@@ -66,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndpointName
-Menentukan nama titik akhir yang pembersihan cmdlet ini.
+Menentukan nama titik akhir yang dibersihkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProfileName
-Menentukan nama profil tempat titik akhir tersebut berada.
+Menentukan nama profil tempat titik akhir berada.
 
 ```yaml
 Type: System.String
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -PurgeContent
-Menentukan array jalur relatif untuk konten di server origin yang pembersihan cmdlet ini.
+Menentukan array jalur relatif untuk konten di server asal yang dibersihkan cmdlet ini.
 
 ```yaml
 Type: System.String[]
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat titik akhir tersebut berada.
+Menentukan nama grup sumber daya tempat titik akhir berada.
 
 ```yaml
 Type: System.String
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

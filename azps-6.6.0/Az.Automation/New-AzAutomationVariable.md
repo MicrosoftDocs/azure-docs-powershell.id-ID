@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationVariable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationVariable.md
 ms.openlocfilehash: c7c8ffa6b258851922d465d4c81cc94b9860c721
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140259127"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141915141"
 ---
 # New-AzAutomationVariable
 
@@ -19,7 +19,7 @@ ms.locfileid: "140259127"
 Membuat variabel Otomatisasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/new-azautomationvariable) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/new-azautomationvariable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,8 +31,8 @@ New-AzAutomationVariable [-Name] <String> -Encrypted <Boolean> [-Description <St
 
 ## DESCRIPTION
 Cmdlet **New-AzAutomationVariable** membuat variabel dalam Azure Automation.
-Untuk mengenkripsi variabel, tentukan parameter *Encrypted* .
-Anda tidak bisa mengubah status variabel yang dienkripsi setelah pembuatan.
+Untuk mengenkripsi variabel, *tentukan parameter Terenkripsi* .
+Anda tidak dapat mengubah status variabel terenkripsi setelah pembuatan.
 
 ## EXAMPLES
 
@@ -41,7 +41,7 @@ Anda tidak bisa mengubah status variabel yang dienkripsi setelah pembuatan.
 PS C:\>New-AzAutomationVariable -AutomationAccountName "Contoso17" -Name "StringVariable22" -Encrypted $False -Value "My String" -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini membuat variabel bernama StringVariable22 dengan nilai string dalam akun Otomatisasi yang bernama Contoso17.
+Perintah ini membuat variabel bernama StringVariable22 dengan nilai string di akun Otomatisasi bernama Contoso17.
 
 ### Contoh 2: Membuat variabel dengan nilai kompleks
 ```
@@ -49,15 +49,15 @@ PS C:\>$VirtualMachine = Get-AzVM -ServiceName "VirtualMachine" -Name "VirtualMa
 PS C:\> New-AzAutomationVariable -AutomationAccountName "Contoso17" -Name "ComplexVariable01" -Encrypted $False -Value $VirtualMachine -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah pertama mendapatkan mesin virtual menggunakan cmdlet Get-AzVM baru.
-Perintah menyimpannya di $VirtualMachine variabel.
-Perintah kedua membuat variabel bernama ComplexVariable01 dalam akun Otomatisasi yang bernama Contoso17.
+Perintah pertama mendapatkan mesin virtual dengan menggunakan cmdlet Get-AzVM.
+Perintah menyimpannya dalam variabel $VirtualMachine.
+Perintah kedua membuat variabel bernama ComplexVariable01 dalam akun Otomatisasi bernama Contoso17.
 Perintah ini menggunakan objek kompleks untuk nilainya, dalam hal ini, mesin virtual dalam $VirtualMachine.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi untuk menyimpan variabel.
+Menentukan nama akun Otomatisasi tempat untuk menyimpan variabel.
 
 ```yaml
 Type: System.String
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Menentukan deskripsi untuk variabel.
+Menentukan deskripsi untuk variabel tersebut.
 
 ```yaml
 Type: System.String
@@ -101,7 +101,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Encrypted
+### -Terenkripsi
 Menentukan apakah cmdlet ini mengenkripsi nilai variabel untuk penyimpanan.
 
 ```yaml
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan grup sumber daya di mana cmdlet ini membuat variabel.
+Menentukan grup sumber daya tempat cmdlet ini membuat variabel.
 
 ```yaml
 Type: System.String
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -Value
-Menentukan nilai untuk variabel tersebut.
+Menentukan nilai untuk variabel.
 
 ```yaml
 Type: System.Object
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

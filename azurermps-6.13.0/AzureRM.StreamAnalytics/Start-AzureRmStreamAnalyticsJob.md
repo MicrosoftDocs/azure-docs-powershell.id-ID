@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/StreamAnalytics/Commands.StreamAnalytics/help/Start-AzureRmStreamAnalyticsJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/StreamAnalytics/Commands.StreamAnalytics/help/Start-AzureRmStreamAnalyticsJob.md
 ms.openlocfilehash: 20bd934a35fdf0cf907e83f22c8148fdfe5425db
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423259"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141923436"
 ---
 # Start-AzureRmStreamAnalyticsJob
 
 ## SYNOPSIS
-Memulai pekerjaan Analitik Stream.
+Memulai pekerjaan Stream Analytics.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ Start-AzureRmStreamAnalyticsJob [-Name] <String> [[-OutputStartMode] <String>] [
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzureRmStreamAnalyticsJob** menyebarkan secara asinkron dan memulai pekerjaan Analitik Stream di Azure.
+Cmdlet **Start-AzureRmStreamAnalyticsJob** secara asinkron menyebarkan dan memulai pekerjaan Stream Analytics di Azure.
 
 ## EXAMPLES
 
@@ -37,12 +37,12 @@ Cmdlet **Start-AzureRmStreamAnalyticsJob** menyebarkan secara asinkron dan memul
 PS C:\>Start-AzureRmStreamAnalyticsJob -ResourceGroupName "StreamAnalytics-Default-West-US" -Name "StreamingJob" -OutputStartMode "CustomTime" -OutputStartTime "2014-07-03T01:00Z"
 ```
 
-Perintah ini memulai pekerjaan StreamingJob dan menentukan bahwa streaming acara output harus dimulai pada timestamp 2014-07-03T01:00Z.
+Perintah ini memulai pekerjaan StreamingJob dan menentukan bahwa streaming kejadian output harus dimulai pada cap waktu 2014-07-03T01:00Z.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama pekerjaan Azure Stream Analytics untuk dimulai.
+Menentukan nama pekerjaan Azure Stream Analytics untuk memulai.
 
 ```yaml
 Type: System.String
@@ -72,12 +72,12 @@ Accept wildcard characters: False
 ```
 
 ### -OutputStartMode
-Menentukan mode mulai untuk pekerjaan.
-Nilai valid adalah: 
-- JobStartTime - Nilai ini menunjukkan bahwa titik awal streaming acara output harus dimulai saat pekerjaan dimulai.
-- CustomTime - Nilai ini menunjukkan bahwa titik awal streaming kejadian output harus dimulai pada waktu kustom yang ditentukan dalam parameter *OutputStartTime.* 
- -- LastOutputEventTime - Nilai ini menunjukkan bahwa titik awal aliran kejadian output harus dimulai dari waktu output acara terakhir.
-Jika properti absen, defaultnya adalah JobStartTime.
+Menentukan mode mulai untuk pekerjaan tersebut.
+Nilai yang valid adalah: 
+- JobStartTime - Nilai ini menunjukkan bahwa titik awal streaming kejadian output harus dimulai ketika pekerjaan dimulai.
+- CustomTime - Nilai ini menunjukkan bahwa titik awal streaming kejadian output harus dimulai pada waktu kustom yang ditentukan dalam parameter *OutputStartTime* . 
+ -- LastOutputEventTime - Nilai ini menunjukkan bahwa titik awal streaming kejadian output harus dimulai dari waktu output kejadian terakhir.
+Jika properti tidak ada, defaultnya adalah JobStartTime.
 
 ```yaml
 Type: System.String
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 
 ### -OutputStartTime
 Menentukan waktu mulai output.
-Nilai ini merupakan stempel waktu yang diformat ISO-8601 yang mengindikasikan titik awal streaming kejadian output, atau $Null untuk menunjukkan bahwa streaming acara output akan dimulai setiap kali pekerjaan streaming dimulai.
+Nilai ini adalah stempel waktu yang diformat ISO-8601 yang menunjukkan titik awal aliran kejadian output, atau $Null untuk menunjukkan bahwa streaming kejadian output akan dimulai setiap kali pekerjaan streaming dimulai.
 Properti ini harus memiliki nilai jika *OutputStartMode* diatur ke CustomTime.
 
 ```yaml
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat pekerjaan Analitik Azure Stream dimiliki.
+Menentukan nama grup sumber daya tempat pekerjaan Azure Stream Analytics berada.
 
 ```yaml
 Type: System.String
@@ -124,13 +124,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 
@@ -144,7 +144,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmStreamAnalyticsJob](./New-AzureRmStreamAnalyticsJob.md)
 
-[Remove-AzureRmStreamAnalyticsJob](./Remove-AzureRmStreamAnalyticsJob.md)
+[Hapus-AzureRmStreamAnalyticsJob](./Remove-AzureRmStreamAnalyticsJob.md)
 
 [Stop-AzureRmStreamAnalyticsJob](./Stop-AzureRmStreamAnalyticsJob.md)
 

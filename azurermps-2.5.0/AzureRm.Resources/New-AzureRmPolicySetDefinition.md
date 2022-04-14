@@ -3,12 +3,12 @@ external help file: Microsoft.Azure.Commands.ResourceManager.Cmdlets.dll-Help.xm
 Module Name: AzureRM.Resources
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.resources/new-azurermpolicysetdefinition
 schema: 2.0.0
-ms.openlocfilehash: ce8b813e04d279f924133d1653355f5063fa7829b1ab05c11bc66f9f4753324e
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 701c7e11a5b76b2071c5810f8c6948c6024eb1ae
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140868385"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141927474"
 ---
 # New-AzureRmPolicySetDefinition
 
@@ -71,9 +71,9 @@ Cmdlet **New-AzureRmPolicySetDefinition** membuat definisi kumpulan kebijakan.
 PS C:\> New-AzureRmPolicySetDefinition -Name 'VMPolicyDefinition' -PolicyDefinition C:\VMPolicySet.json
 ```
 
-Perintah ini membuat definisi kumpulan kebijakan bernama VMPolicyDefinition yang berisi definisi kebijakan yang ditentukan di C:\VMPolicy.json. Contoh konten VMPolicy.json yang disediakan di atas.
+Perintah ini membuat definisi kumpulan kebijakan bernama VMPolicyDefinition yang berisi definisi kebijakan yang ditentukan dalam C:\VMPolicy.json. Konten contoh VMPolicy.json disediakan di atas.
 
-### Contoh 2: Membuat definisi kumpulan kebijakan parameter
+### Contoh 2: Membuat definisi kumpulan kebijakan yang di parameter
 ```
 [
    {
@@ -97,12 +97,12 @@ Perintah ini membuat definisi kumpulan kebijakan bernama VMPolicyDefinition yang
 PS C:\> New-AzureRmPolicySetDefinition -Name 'VMPolicyDefinition' -PolicyDefinition C:\VMPolicySet.json -Parameter '{ "buTagValue": { "type": "string" } }'
 ```
 
-Perintah ini membuat definisi kumpulan kebijakan parameter bernama VMPolicyDefinition yang berisi definisi kebijakan yang ditentukan dalam C:\VMPolicy.json. Contoh konten VMPolicy.json yang disediakan di atas.
+Perintah ini membuat definisi kumpulan kebijakan yang di parameter bernama VMPolicyDefinition yang berisi definisi kebijakan yang ditentukan dalam C:\VMPolicy.json. Konten contoh VMPolicy.json disediakan di atas.
 
 ## PARAMETERS
 
 ### -ApiVersion
-Saat diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
+Ketika diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
 Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai versi terbaru yang tersedia.
 
 ```yaml
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementGroupName
-Nama grup manajemen dari definisi kumpulan kebijakan baru.
+Nama grup manajemen definisi kumpulan kebijakan baru.
 
 ```yaml
 Type: System.String
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-The policy set definition name.
+Nama definisi kumpulan kebijakan.
 
 ```yaml
 Type: System.String
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Saat diatur, cmdlet harus menggunakan versi API prari tamu ketika menentukan versi mana yang akan digunakan secara otomatis.
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan dari definisi kumpulan kebijakan baru.
+ID langganan definisi kumpulan kebijakan baru.
 
 ```yaml
 Type: System.Nullable`1[System.Guid]
@@ -269,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -284,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -299,13 +299,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Guid, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 

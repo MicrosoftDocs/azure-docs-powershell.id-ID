@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Remove-AzRedisCacheDiagnostic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Remove-AzRedisCacheDiagnostic.md
-ms.openlocfilehash: 9347044d4a2412bc7c3cd5fd17ce14ca076c1924
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c5061b3bd4b6a7b3117fb466e22cd72153c80dee
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140401559"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141933819"
 ---
 # Remove-AzRedisCacheDiagnostic
 
 ## SYNOPSIS
-Menonaktifkan diagnostik di Singgahan Azure Redis.
+Menonaktifkan diagnostik di Cache Azure Redis.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.rediscache/remove-azrediscachediagnostic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,22 +29,22 @@ Remove-AzRedisCacheDiagnostic [-ResourceGroupName <String>] -Name <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzRedisCacheDiagnostic** menonaktifkan diagnostik di Singgahan Azure Redis.
+Cmdlet **Remove-AzRedisCacheDiagnostic** menonaktifkan diagnostik pada Cache Azure Redis.
 
 ## EXAMPLES
 
-### Contoh 1: Menonaktifkan diagnostik
+### Contoh 1: Nonaktifkan diagnostik
 ```
 PS C:\>Remove-AzRedisCacheDiagnostic -ResourceGroupName "ContosoResourceGroup" -Name "PeakCache" -Force
 ```
 
 Perintah ini menonaktifkan diagnostik pada Cache Azure Redis tertentu.
-Tindakan ini akan menonaktifkan diagnostik untuk semua Singgahan Azure Redis di kawasan yang sama untuk langganan.
+Tindakan ini akan menonaktifkan diagnostik untuk semua Cache Azure Redis di kawasan yang sama untuk langganan.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi cache.
+Menentukan nama grup sumber daya yang berisi singgahan.
 
 ```yaml
 Type: System.String
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -128,7 +131,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### System.Void
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, redis, cache, web, webapp, website
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, redis, cache, web, webapp, situs web
 
 ## RELATED LINKS
 

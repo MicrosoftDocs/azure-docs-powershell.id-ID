@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/KeyVault/Commands.KeyVault/help/Get-AzureKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/KeyVault/Commands.KeyVault/help/Get-AzureKeyVaultKey.md
 ms.openlocfilehash: d42cad3f07fb674394d14d38f50c6b95cf2bb9c4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132413751"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141926584"
 ---
 # Get-AzureKeyVaultKey
 
 ## SYNOPSIS
-Mendapatkan kunci Kunci Vault.
+Mendapatkan kunci Key Vault.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -77,12 +77,12 @@ Get-AzureKeyVaultKey [-ResourceId] <String> [-Name] <String> [-IncludeVersions]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureKeyVaultKey** mendapatkan tombol Azure Key Vault.
-Cmdlet ini mendapatkan **Microsoft.Azure.Commands.KeyVault.Models.KeyBundle** tertentu atau daftar semua objek **KeyBundle** di vault kunci atau versinya.
+Cmdlet **Get-AzureKeyVaultKey** mendapatkan tombol azure Key Vault.
+Cmdlet ini mendapatkan **Microsoft.Azure.Commands.KeyVault.Models.KeyBundle** tertentu atau daftar semua objek **KeyBundle** dalam kubah kunci atau versi.
 
 ## EXAMPLES
 
-### Contoh 1: Get all the keys in a key vault
+### Contoh 1: Dapatkan semua kunci dalam kubah kunci
 ```powershell
 PS C:\> Get-AzureKeyVaultKey -VaultName 'contoso'
 
@@ -111,9 +111,9 @@ Purge Disabled : False
 Tags           :
 ```
 
-Perintah ini memasukkan semua tombol ke kunci vault bernama Contoso.
+Perintah ini mendapatkan semua kunci di kubah kunci bernama Contoso.
 
-### Contoh 2: Mendapatkan versi kunci saat ini
+### Contoh 2: Dapatkan versi kunci saat ini
 ```powershell
 PS C:\> Get-AzureKeyVaultKey -VaultName 'contoso' -KeyName 'test1'
 
@@ -130,9 +130,9 @@ Purge Disabled : False
 Tags           :
 ```
 
-Perintah ini menggunakan versi kunci saat ini yang bernama test1 dalam kunci vault bernama Contoso.
+Perintah ini mendapatkan versi saat ini dari kunci bernama test1 di kubah kunci bernama Contoso.
 
-### Contoh 3: Mendapatkan semua versi kunci
+### Contoh 3: Dapatkan semua versi kunci
 ```powershell
 PS C:\> Get-AzureKeyVaultKey -VaultName 'contoso' -KeyName 'test1' -IncludeVersions
 
@@ -180,10 +180,10 @@ Purge Disabled : False
 Tags           :
 ```
 
-Perintah ini menggunakan versi tertentu dari kunci yang bernama test1 dalam kunci vault bernama Contoso.
-Setelah menjalankan perintah ini, periksa berbagai properti kunci dengan menavigasi objek $Key.
+Perintah ini mendapatkan versi tertentu dari kunci bernama test1 di kubah kunci bernama Contoso.
+Setelah menjalankan perintah ini, Anda dapat memeriksa berbagai properti kunci dengan menavigasi objek $Key.
 
-### Contoh 5: Get all the keys that have been deleted but not purged for this key vault.
+### Contoh 5: Dapatkan semua kunci yang telah dihapus tetapi tidak dibersihkan untuk kubah kunci ini.
 ```powershell
 PS C:\> Get-AzureKeyVaultKey -VaultName 'contoso' -InRemovedState
 
@@ -201,9 +201,9 @@ Purge Disabled       : False
 Tags                 :
 ```
 
-Perintah ini mendapatkan semua tombol yang telah dihapus sebelumnya, tetapi tidak di pembersihan, di kunci vault bernama Contoso.
+Perintah ini mendapatkan semua kunci yang telah dihapus sebelumnya, tetapi tidak dibersihkan, dalam kubah kunci bernama Contoso.
 
-### Contoh 6: Gets the key ITPfx that has been deleted but not purged for this key vault.
+### Contoh 6: Mendapatkan kunci ITPfx yang telah dihapus tetapi tidak dibersihkan untuk kubah kunci ini.
 ```powershell
 PS C:\> Get-AzureKeyVaultKey -VaultName 'contoso' -KeyName 'test3' -InRemovedState
 
@@ -221,13 +221,13 @@ Purge Disabled       : False
 Tags                 :
 ```
 
-Perintah ini mendapatkan key test3 yang telah dihapus sebelumnya, namun tidak di pembersihan, di kunci vault bernama Contoso.
-Perintah ini akan mengembalikan metadata seperti tanggal penghapusan, dan tanggal pembersihan terjadwal dari kunci yang dihapus ini.
+Perintah ini mendapatkan uji kunci3 yang telah dihapus sebelumnya, tetapi tidak dibersihkan, di kubah kunci bernama Contoso.
+Perintah ini akan mengembalikan metadata seperti tanggal penghapusan, dan tanggal penghapusan terjadwal kunci yang dihapus ini.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -242,10 +242,10 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeVersions
-Mengindikasikan bahwa cmdlet ini mendapatkan semua versi kunci.
-Versi kunci saat ini adalah yang pertama dalam daftar.
-Jika Anda menentukan parameter ini, Anda juga harus menentukan *parameter* *Nama dan VaultName* .
-Jika Anda tidak menentukan parameter *IncludeVersions* , cmdlet akan mendapatkan versi kunci saat ini dengan Nama yang *ditentukan*.
+Menunjukkan bahwa cmdlet ini mendapatkan semua versi kunci.
+Versi kunci saat ini adalah versi pertama dalam daftar.
+Jika menentukan parameter ini, Anda juga harus menentukan parameter *Name* dan *VaultName* .
+Jika Anda tidak menentukan parameter *IncludeVersions* , cmdlet ini akan mendapatkan versi kunci saat ini dengan *Nama* yang ditentukan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -260,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-objek KeyVault.
+Objek KeyVault.
 
 ```yaml
 Type: Microsoft.Azure.Commands.KeyVault.Models.PSKeyVault
@@ -290,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama bundel kunci untuk mendapatkan.
+Menentukan nama bundel kunci yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -317,7 +317,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-KeyVault Resource Id.
+Id Sumber Daya KeyVault.
 
 ```yaml
 Type: System.String
@@ -332,8 +332,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama key vault yang mendapatkan kunci cmdlet ini.
-Cmdlet ini menyusun nama domain (FQDN) yang sepenuhnya memenuhi syarat dari kunci vault berdasarkan nama yang ditentukan parameter ini dan lingkungan pilihan Anda.
+Menentukan nama kubah kunci tempat cmdlet ini mendapatkan kunci.
+Cmdlet ini menyusun nama domain yang sepenuhnya memenuhi syarat (FQDN) dari kubah kunci berdasarkan nama yang ditentukan parameter ini dan lingkungan yang Anda pilih.
 
 ```yaml
 Type: System.String
@@ -349,7 +349,7 @@ Accept wildcard characters: False
 
 ### -Versi
 Menentukan versi kunci.
-Cmdlet ini menyusun FQDN dari kunci berdasarkan nama key vault, lingkungan yang Anda pilih saat ini, nama kunci, dan versi kunci.
+Cmdlet ini menyusun FQDN kunci berdasarkan nama kubah kunci, lingkungan yang dipilih saat ini, nama kunci, dan versi kunci.
 
 ```yaml
 Type: System.String
@@ -364,7 +364,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -389,8 +389,8 @@ Parameter: InputObject (ByValue)
 
 [Add-AzureKeyVaultKey](./Add-AzureKeyVaultKey.md)
 
-[Remove-AzureKeyVaultKey](./Remove-AzureKeyVaultKey.md)
+[Hapus-AzureKeyVaultKey](./Remove-AzureKeyVaultKey.md)
 
-[Undo-AzureKeyVaultKeyRemoval](./Undo-AzureKeyVaultKeyRemoval.md)
+[Batalkan-AzureKeyVaultKeyRemoval](./Undo-AzureKeyVaultKeyRemoval.md)
 
 

@@ -1,0 +1,80 @@
+---
+Module Name: Az.Marketplace
+Module Guid: 91832aaa-dc11-4583-8239-bce5fd531604
+Download Help Link: https://docs.microsoft.com/powershell/module/az.marketplace
+Help Version: 1.0.0.0
+Locale: en-US
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Az.Marketplace.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Az.Marketplace.md
+ms.openlocfilehash: e9812983802064349480ba2802062a2f1bbc1daf
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141996443"
+---
+# Modul Az.Marketplace
+## Deskripsi
+Perintah untuk berinteraksi dengan Marketplace Azure.
+
+## Cmdlet Az.Marketplace
+### [Get-AzMarketplacePrivateStoreOffer](Get-AzMarketplacePrivateStoreOffer.md)
+Dapatkan satu atau beberapa penawaran bursa pribadi.
+
+### [Get-AzMarketplacePrivateStore](Get-AzMarketplacePrivateStore.md)
+Dapatkan daftar bursa pribadi
+
+### [Remove-AzMarketplacePrivateStoreOffer](Remove-AzMarketplacePrivateStoreOffer.md)
+Hapus penawaran dari bursa pribadi.
+
+### [Set-AzMarketplacePrivateStoreOffer](Set-AzMarketplacePrivateStoreOffer.md)
+Pembaruan atau membuat penawaran untuk bursa pribadi.
+
+
+### [Copy-AzMarketplacePrivateStoreCollectionOffer](Copy-AzMarketplacePrivateStoreCollectionOffer.md)
+mentransfer penawaran (menyalin atau memindahkan) dari kumpulan sumber ke koleksi target
+
+### [Get-AzMarketplaceBillingPrivateStoreAccount](Get-AzMarketplaceBillingPrivateStoreAccount.md)
+Nama akun tagihan penyewa
+
+### [Get-AzMarketplaceCollectionToSubscriptionMapping](Get-AzMarketplaceCollectionToSubscriptionMapping.md)
+Untuk daftar langganan tertentu, API akan mengembalikan peta koleksi dan langganan terkait dari daftar yang disediakan.
+
+### [Get-AzMarketplacePrivateStoreCollection](Get-AzMarketplacePrivateStoreCollection.md)
+Mendapatkan koleksi bursa pribadi
+
+### [Get-AzMarketplacePrivateStoreCollectionOffer](Get-AzMarketplacePrivateStoreCollectionOffer.md)
+Mendapatkan informasi tentang penawaran tertentu.
+
+### [Get-AzMarketplacePrivateStoreV1](Get-AzMarketplacePrivateStoreV1.md)
+Dapatkan informasi tentang bursa pribadi
+
+### [Get-AzMarketplaceQueryPrivateStoreOffer](Get-AzMarketplaceQueryPrivateStoreOffer.md)
+Daftar penawaran, terlepas dari koleksinya
+
+### [New-AzMarketplacePrivateStore](New-AzMarketplacePrivateStore.md)
+Mengubah properti bursa pribadi
+
+### [New-AzMarketplacePrivateStoreCollection](New-AzMarketplacePrivateStoreCollection.md)
+Membuat atau memperbarui koleksi bursa pribadi
+
+### [New-AzMarketplacePrivateStoreCollectionOffer](New-AzMarketplacePrivateStoreCollectionOffer.md)
+Perbarui atau tambahkan penawaran ke koleksi toko pribadi tertentu.
+
+### [Remove-AzMarketplacePrivateStoreCollection](Remove-AzMarketplacePrivateStoreCollection.md)
+Menghapus koleksi dari bursa pribadi tertentu.
+
+### [Remove-AzMarketplacePrivateStoreCollectionOffer](Remove-AzMarketplacePrivateStoreCollectionOffer.md)
+Menghapus penawaran dari koleksi bursa pribadi tertentu.
+
+### [Set-AzMarketplaceBulkPrivateStoreCollectionActionAction](Set-AzMarketplaceBulkPrivateStoreCollectionAction.md)
+Melakukan tindakan pada koleksi massal
+
+### [Set-AzMarketplacePrivateStore](Set-AzMarketplacePrivateStore.md)
+Mengubah properti bursa pribadi
+
+### [Set-AzMarketplacePrivateStoreCollection](Set-AzMarketplacePrivateStoreCollection.md)
+Membuat atau memperbarui koleksi bursa pribadi
+
+### [Set-AzMarketplacePrivateStoreCollectionOffer](Set-AzMarketplacePrivateStoreCollectionOffer.md)
+Perbarui atau tambahkan penawaran ke koleksi toko pribadi tertentu.

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Reset-AzVirtualNetworkGatewayConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Reset-AzVirtualNetworkGatewayConnection.md
 ms.openlocfilehash: 61c8e1d64ca0c9fc792d0c64a277df110c71d23a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140464085"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141909201"
 ---
 # Reset-AzVirtualNetworkGatewayConnection
 
 ## SYNOPSIS
-Mereset Koneksi Gateway Jaringan Virtual
+Mereset Koneksi Gateway Virtual Network
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/reset-azvirtualnetworkgatewayconnection) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/reset-azvirtualnetworkgatewayconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Reset-AzVirtualNetworkGatewayConnection -ResourceId <String> [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet **Reset-AzVirtualNetworkGatewayConnection** mereset koneksi gateway jaringan virtual Anda berdasarkan Nama Koneksi dan Nama Grup Sumber Daya.
+Cmdlet **Reset-AzVirtualNetworkGatewayConnection** mengatur ulang koneksi gateway jaringan virtual Anda berdasarkan Nama Koneksi dan Nama Grup Sumber Daya.
 
 ## EXAMPLES
 
@@ -50,7 +50,7 @@ Cmdlet **Reset-AzVirtualNetworkGatewayConnection** mereset koneksi gateway jarin
 PS C:\> Reset-AzVirtualNetworkGatewayConnection -ResourceGroupName myRG -Name myTunnel
 ```
 
-Mereset Koneksi Gateway Jaringan Virtual dengan nama "myTunnel" di dalam grup sumber daya "myRG"
+Mereset Koneksi Gateway Virtual Network dengan nama "myTunnel" dalam grup sumber daya "myRG"
 
 ## PARAMETERS
 
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya Azure dari Koneksi Gateway Jaringan Virtual yang harus diatur ulang.
+ID sumber daya Azure dari Koneksi Gateway Virtual Network yang harus direset.
 
 ```yaml
 Type: String
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

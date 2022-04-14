@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.hdins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Invoke-AzureRmHDInsightHiveJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Invoke-AzureRmHDInsightHiveJob.md
-ms.openlocfilehash: 95c3cb5e299fcf7a29fc23a37da86a578df8b4db39888cfbeb35d03c314bba9b
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 36def3904621991bee4d3f0f8ad5d3590a4c097b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417326"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141926903"
 ---
 # Invoke-AzureRmHDInsightHiveJob
 
 ## SYNOPSIS
-Mengirimkan kueri Hive ke kluster HDInsight dan mengambil hasil kueri dalam satu operasi.
+Mengirimkan kueri Sarang ke kluster HDInsight dan mengambil hasil kueri dalam satu operasi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -30,12 +30,12 @@ Invoke-AzureRmHDInsightHiveJob [-Arguments <String[]>] [-Files <String[]>] [-Sta
 ```
 
 ## DESCRIPTION
-Cmdlet **Invoke-AzureRmHDInsightHiveJob** mengirimkan kueri Invoke ke kluster Azure HDInsight dan mengambil hasil kueri dalam satu operasi.
-Gunakan cmdlet Use-AzureRmHDInsightCluster cmdlet sebelum memanggil **Invoke-AzureRmHDInsightHiveJob** untuk menentukan kluster mana yang akan digunakan untuk kueri.
+Cmdlet **Invoke-AzureRmHDInsightHiveJob** mengirimkan kueri Hive ke kluster Azure HDInsight dan mengambil hasil kueri dalam satu operasi.
+Gunakan cmdlet Use-AzureRmHDInsightCluster sebelum menghubungi **Invoke-AzureRmHDInsightHiveJob** untuk menentukan kluster mana yang akan digunakan untuk kueri.
 
 ## EXAMPLES
 
-### Contoh 1: Mengirim kueri Hive ke kluster Azure HDInsight
+### Contoh 1: Kirim kueri Sarang ke kluster Azure HDInsight
 ```
 PS C:\># Primary storage account info
 PS C:\> $storageAccountResourceGroupName = "Group"
@@ -64,13 +64,13 @@ PS C:\> Invoke-AzureRmHDInsightHiveJob -StatusFolder $statusFolder `
             -DefaultStorageAccountKey $storageAccountKey
 ```
 
-Perintah ini mengirimkan kueri PERLIHATKAN TABEL ke kluster yang bernama your-hadoop-001.
+Perintah ini mengirimkan kueri SHOW TABLES ke kluster bernama your-hadoop-001.
 
 ## PARAMETERS
 
 ### -Argumen
-Menentukan array argumen untuk pekerjaan itu.
-Argumen diberikan sebagai argumen baris perintah untuk setiap tugas.
+Menentukan array argumen untuk pekerjaan tersebut.
+Argumen dikirim sebagai argumen baris perintah ke setiap tugas.
 
 ```yaml
 Type: System.String[]
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultContainer
-Menentukan nama wadah default di akun Azure Storage default yang digunakan kluster HDInsight.
+Menentukan nama kontainer default dalam akun Azure Storage default yang digunakan kluster HDInsight.
 
 ```yaml
 Type: System.String
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -Defines
-Menentukan nilai konfigurasi Hadoop untuk diatur saat pekerjaan berjalan.
+Menentukan nilai konfigurasi Hadoop untuk diatur ketika pekerjaan berjalan.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -160,8 +160,8 @@ Accept wildcard characters: False
 ```
 
 ### -File
-Menentukan jalur ke file di Azure Storage berisi kueri yang akan dijalankan.
-Anda bisa menggunakan parameter ini sebagai ganti *parameter Query.*
+Menentukan jalur ke file di Azure Storage yang berisi kueri untuk dijalankan.
+Anda bisa menggunakan parameter ini dan bukan parameter *Kueri* .
 
 ```yaml
 Type: System.String
@@ -175,8 +175,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -File
-Menentukan kumpulan file yang diperlukan untuk pekerjaan Hive.
+### -Files
+Menentukan kumpulan file yang diperlukan untuk pekerjaan Sarang.
 
 ```yaml
 Type: System.String[]
@@ -191,8 +191,8 @@ Accept wildcard characters: False
 ```
 
 ### -JobName
-Menentukan nama pekerjaan Hive.
-Jika Anda tidak menentukan parameter ini, cmdlet ini menggunakan nilai default: "Hive: \<first 100 characters of Query\> ".
+Menentukan nama pekerjaan Sarang.
+Jika Anda tidak menentukan parameter ini, cmdlet ini menggunakan nilai default: "Sarang: \<first 100 characters of Query\>".
 
 ```yaml
 Type: System.String
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -Query
-Menentukan kueri Hive.
+Menentukan kueri Sarang.
 
 ```yaml
 Type: System.String
@@ -222,9 +222,9 @@ Accept wildcard characters: False
 ```
 
 ### -RunAsFileJob
-Mengindikasikan bahwa cmdlet ini membuat file di akun penyimpanan Azure default untuk menyimpan kueri.
-Cmdlet ini mengirimkan pekerjaan yang merujuk file ini sebagai skrip untuk dijalankan.
-Anda dapat menggunakan fungsionalitas ini untuk menangani karakter khusus seperti tanda persen (%) yang akan gagal pada pengiriman pekerjaan melalui Templeton, karena Templeton menginterpretasikan kueri dengan tanda persen sebagai parameter URL.
+Menunjukkan bahwa cmdlet ini membuat file di akun penyimpanan Azure default untuk menyimpan kueri.
+Cmdlet ini mengirimkan pekerjaan yang mereferensikan file ini sebagai skrip untuk dijalankan.
+Anda dapat menggunakan fungsi ini untuk menangani karakter khusus seperti tanda persen (%) yang akan gagal pada pengiriman pekerjaan melalui Templeton, karena Templeton menginterpretasikan kueri dengan tanda persen sebagai parameter URL.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -StatusFolder
-Menentukan lokasi folder yang berisi output standar dan output kesalahan untuk pekerjaan.
+Menentukan lokasi folder yang berisi output standar dan output kesalahan untuk suatu pekerjaan.
 
 ```yaml
 Type: System.String
@@ -254,11 +254,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -268,6 +268,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Use-AzureRmHDInsightCluster](./Use-AzureRmHDInsightCluster.md)
+[Gunakan-AzureRmHDInsightCluster](./Use-AzureRmHDInsightCluster.md)
 
 

@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMDiskEncryptionExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMDiskEncryptionExtension.md
 ms.openlocfilehash: 703e97e4c7fa1af1d2ef36faa495a7403f07b4a2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140485419"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142128059"
 ---
 # Set-AzVMDiskEncryptionExtension
 
 ## SYNOPSIS
-Mengaktifkan enkripsi pada mesin virtual IaaS yang sedang berjalan di Azure.
+Mengaktifkan enkripsi pada mesin virtual IaaS yang berjalan di Azure.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmdiskencryptionextension) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmdiskencryptionextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,30 +56,30 @@ Set-AzVMDiskEncryptionExtension [-ResourceGroupName] <String> [-VMName] <String>
  [-Confirm] [<CommonParameters>]
 ```
 
-### MigrateADEVersionParameterSet
+### Melakukan migrasiADEVersionParameterSet
 ```
 Set-AzVMDiskEncryptionExtension [-ResourceGroupName] <String> [-VMName] <String> [-Migrate]
 ```
 
-### MigrateADEVersionRecoveryParameterSet
+### Melakukan migrasiADEVersionRecoveryParameterSet
 ```
 Set-AzVMDiskEncryptionExtension [-ResourceGroupName] <String> [-VMName] <String> [-MigrationRecovery]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVMDiskEncryptionExtension** mengaktifkan enkripsi pada infrastruktur yang berjalan sebagai mesin virtual layanan (IaaS) di Azure.  Cara ini mengaktifkan enkripsi dengan menginstal ekstensi enkripsi disk di komputer virtual. 
+Cmdlet **Set-AzVMDiskEncryptionExtension** memungkinkan enkripsi pada infrastruktur yang berjalan sebagai mesin virtual layanan (IaaS) di Azure.  Ini memungkinkan enkripsi dengan menginstal ekstensi enkripsi disk pada mesin virtual. 
 
 Cmdlet ini memerlukan konfirmasi dari pengguna sebagai salah satu langkah untuk mengaktifkan enkripsi memerlukan mulai ulang mesin virtual.
 
-Anda disarankan untuk menyimpan pekerjaan di komputer virtual sebelum menjalankan cmdlet ini.
+Disarankan agar Anda menyimpan pekerjaan Anda di mesin virtual sebelum Anda menjalankan cmdlet ini.
 
-Linux: Parameter **VolumeType** diperlukan saat mengenkripsi mesin virtual Linux dan harus diatur ke nilai ("Os", "Data", atau "Semua") yang didukung oleh distribusi Linux. 
+Linux: Parameter **VolumeType** diperlukan saat mengenkripsi mesin virtual Linux, dan harus diatur ke nilai ("Os", "Data", atau "Semua") yang didukung oleh distribusi Linux. 
 
-Windows: Parameter **VolumeType** mungkin dihilangkan, dalam hal ini operasi defaultnya adalah Semua; jika parameter VolumeType ada untuk mesin virtual Windows, parameter harus disetel ke Semua atau OS.
+Windows: Parameter **VolumeType** mungkin dihilangkan, dalam hal ini operasi default ke Semua; jika parameter VolumeType ada untuk mesin virtual Windows, parameter harus diatur ke Semua atau OS.
 
 ## EXAMPLES
 
-### Contoh 1: Mengaktifkan enkripsi
+### Contoh 1: Aktifkan enkripsi
 ```
 $RGName = "MyResourceGroup"
 $VMName = "MyTestVM"
@@ -93,7 +93,7 @@ Set-AzVMDiskEncryptionExtension -ResourceGroupName $RGName -VMName $VMName -Disk
 
 Contoh ini mengaktifkan enkripsi pada VM tanpa menentukan kredensial AD.
 
-### Contoh 2: Mengaktifkan enkripsi dengan input saluran
+### Contoh 2: Aktifkan enkripsi dengan input pipelined
 ```
 $params = New-Object PSObject -Property @{
     ResourceGroupName = "[resource-group-name]"
@@ -108,7 +108,7 @@ $params = New-Object PSObject -Property @{
 $params | Set-AzVmDiskEncryptionExtension
 ```
 
-Contoh ini mengirimkan parameter menggunakan input bers pipeline untuk mengaktifkan enkripsi pada VM, tanpa menentukan kredensial AD.
+Contoh ini mengirim parameter menggunakan input pipelined untuk mengaktifkan enkripsi pada VM, tanpa menentukan kredensial AD.
 
 ### Contoh 3: Mengaktifkan enkripsi menggunakan ID Klien Azure AD dan Rahasia Klien
 ```
@@ -126,7 +126,7 @@ Set-AzVMDiskEncryptionExtension -ResourceGroupName $RGName -VMName $VMName -AadC
 
 Contoh ini menggunakan ID klien Azure AD dan rahasia klien untuk mengaktifkan enkripsi pada VM.
 
-### Contoh 4: Mengaktifkan enkripsi menggunakan ID klien Azure AD dan thumbprint sertifikasi klien
+### Contoh 4: Mengaktifkan enkripsi menggunakan ID klien Azure AD dan sidik jari sertifikasi klien
 ```
 $RGName = "MyResourceGroup"
 $VMName = "MyTestVM"
@@ -177,9 +177,9 @@ Update-AzVM -VM $VM -ResourceGroupName $RGName
 Set-AzVMDiskEncryptionExtension -ResourceGroupName $RGName -VMName $VMName -AadClientID $AADClientID -AadClientCertThumbprint $AADClientCertThumbprint -DiskEncryptionKeyVaultUrl $DiskEncryptionKeyVaultUrl -DiskEncryptionKeyVaultId $KeyVaultResourceId -VolumeType $VolumeType
 ```
 
-Contoh ini menggunakan ID klien Azure AD dan thumbprint sertifikasi klien untuk mengaktifkan enkripsi pada VM.
+Contoh ini menggunakan Azure AD ID klien dan sidik jari sertifikasi klien untuk mengaktifkan enkripsi pada VM.
 
-### Contoh 5: Mengaktifkan enkripsi menggunakan ID klien Azure AD, rahasia klien, dan kunci enkripsi disk pembungkusan dengan menggunakan kunci enkripsi kunci
+### Contoh 5: Mengaktifkan enkripsi menggunakan ID klien Azure AD, rahasia klien, dan kunci enkripsi disk dengan menggunakan kunci enkripsi kunci
 ```
 $RGName = "MyResourceGroup"
 $VMName = "MyTestVM"
@@ -200,9 +200,9 @@ $KeyEncryptionKeyUrl = $KEK.Key.kid
 Set-AzVMDiskEncryptionExtension -ResourceGroupName $RGName -VMName $VMName -AadClientID $AADClientID -AadClientSecret $AADClientSecret -DiskEncryptionKeyVaultUrl $DiskEncryptionKeyVaultUrl -DiskEncryptionKeyVaultId $KeyVaultResourceId -KeyEncryptionKeyUrl $KeyEncryptionKeyUrl -KeyEncryptionKeyVaultId $KeyVaultResourceId -VolumeType $VolumeType
 ```
 
-Contoh ini menggunakan ID klien Azure AD dan rahasia klien untuk mengaktifkan enkripsi pada VM, dan membungkus kunci enkripsi disk menggunakan kunci enkripsi kunci.
+Contoh ini menggunakan id klien Azure AD dan rahasia klien untuk mengaktifkan enkripsi pada VM, dan membungkus kunci enkripsi disk menggunakan kunci enkripsi kunci.
 
-### Contoh 6: Mengaktifkan enkripsi menggunakan ID klien Azure AD, thumbprint sertifikat klien, dan membungkus kunci enkripsi disk dengan menggunakan kunci enkripsi
+### Contoh 6: Aktifkan enkripsi menggunakan ID klien Azure AD, sidik jari sert klien, dan bungkus enkripsi disk dengan menggunakan kunci enkripsi kunci
 ```
 $RGName = "MyResourceGroup"
 $VMName = "MyTestVM"
@@ -255,16 +255,16 @@ Update-AzVM -VM $VM -ResourceGroupName $RGName
 Set-AzVMDiskEncryptionExtension -ResourceGroupName $RGname -VMName $VMName -AadClientID $AADClientID -AadClientCertThumbprint $AADClientCertThumbprint -DiskEncryptionKeyVaultUrl $DiskEncryptionKeyVaultUrl -DiskEncryptionKeyVaultId $KeyVaultResourceId -KeyEncryptionKeyUrl $KeyEncryptionKeyUrl -KeyEncryptionKeyVaultId $KeyVaultResourceId -VolumeType $VolumeType
 ```
 
-Contoh ini menggunakan ID klien Azure AD dan thumbprint sertifikat klien untuk mengaktifkan enkripsi pada VM, dan membungkus kunci enkripsi disk menggunakan kunci enkripsi kunci.
+Contoh ini menggunakan Azure AD ID klien dan sidik jari sert klien untuk mengaktifkan enkripsi pada VM, dan membungkus kunci enkripsi disk menggunakan kunci enkripsi kunci.
 
 ## PARAMETERS
 
 ### -AadClientCertThumbprint
-Menentukan thumbprint sertifikat klien aplikasi AzureActive Directory (Azure AD) yang memiliki izin untuk menulis rahasia bagi **KeyVault**.
-Sebagai prasyarat, sertifikat klien Azure AD harus sebelumnya digunakan ke penyimpanan sertifikat komputer lokal komputer `my` virtual.
-Cmdlet Add-AzVMSecret baru dapat digunakan untuk menyebarkan sertifikat ke komputer virtual di Azure.
-Untuk detail selengkapnya, lihat **bantuan cmdlet Add-AzVMSecret** .
-Sertifikat harus sebelumnya digunakan di komputer virtual komputer lokal penyimpanan sertifikat saya.
+Menentukan sidik jari sertifikat klien aplikasi AzureActive Directory (Azure AD) yang memiliki izin untuk menulis rahasia ke **KeyVault**.
+Sebagai prasyarat, sertifikat klien Azure AD harus digunakan sebelumnya ke penyimpanan sertifikat komputer `my` lokal mesin virtual.
+Cmdlet Add-AzVMSecret dapat digunakan untuk menyebarkan sertifikat ke mesin virtual di Azure.
+Untuk detail selengkapnya, lihat bantuan **cmdlet Add-AzVMSecret** .
+Sertifikat harus disebarkan sebelumnya ke komputer virtual komputer lokal penyimpanan sertifikat saya.
 
 ```yaml
 Type: System.String
@@ -324,7 +324,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableAutoUpgradeMinorVersion
-Mengindikasikan bahwa cmdlet ini menonaktifkan pemutakhiran otomatis versi minor ekstensi tersebut.
+Menunjukkan bahwa cmdlet ini menonaktifkan pemutakhiran otomatis dari versi minor ekstensi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -399,7 +399,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExtensionType
-Tipe ekstensi. Tentukan parameter ini untuk menimpa nilai default "AzureDiskEncryption" untuk VM Windows dan "AzureDiskEncryptionForLinux" untuk Linux VM.
+Tipe ekstensi. Tentukan parameter ini untuk menimpa nilai default "AzureDiskEncryption" untuk Windows VM dan "AzureDiskEncryptionForLinux" untuk VM Linux.
 
 ```yaml
 Type: System.String
@@ -413,8 +413,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -428,8 +428,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Migrate
-Memulai migrasi VM ke versi ekstensi Azure Disk Encryption terbaru (ADE tanpa AAD kredensial).
+### -Melakukan migrasi
+Memulai migrasi VM ke versi ekstensi Azure Disk Encryption terbaru (ADE tanpa kredensial AAD).
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -459,7 +459,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyEncryptionAlgorithm
-Menentukan algoritma yang digunakan untuk membungkus dan membuka kunci enkripsi kunci dari komputer virtual.
+Menentukan algoritma yang digunakan untuk membungkus dan membongkar kunci enkripsi kunci mesin virtual.
 Nilai defaultnya adalah RSA-OAEP.
 
 ```yaml
@@ -476,8 +476,8 @@ Accept wildcard characters: False
 ```
 
 ### -KeyEncryptionKeyUrl
-Menentukan URL dari kunci enkripsi kunci yang digunakan untuk membungkus dan membuka kunci enkripsi mesin virtual.
-Ini harus url versi penuh.
+Menentukan URL kunci enkripsi kunci yang digunakan untuk membungkus dan membongkar kunci enkripsi mesin virtual.
+Ini harus berupa URL versi lengkap.
 
 ```yaml
 Type: System.String
@@ -492,8 +492,8 @@ Accept wildcard characters: False
 ```
 
 ### -KeyEncryptionKeyVaultId
-Menentukan ID sumber daya **KeyVault** yang berisi kunci enkripsi kunci yang digunakan untuk membungkus dan membuka kunci enkripsi mesin virtual.
-Ini harus url versi penuh.
+Menentukan ID sumber daya **keyVault** yang berisi kunci enkripsi kunci yang digunakan untuk membungkus dan membongkar kunci enkripsi mesin virtual.
+Ini harus berupa URL versi lengkap.
 
 ```yaml
 Type: System.String
@@ -508,7 +508,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama sumber daya Azure Resource Manager yang mewakili ekstensi. Jika parameter *Nama* dihilangkan, ekstensi yang diinstal akan dinamai AzureDiskEncryption di komputer virtual Windows dan AzureDiskEncryptionForLinux pada komputer virtual Linux.
+Menentukan nama sumber daya Azure Resource Manager yang mewakili ekstensi. Jika parameter *Nama* dihilangkan, ekstensi yang diinstal akan dinamai AzureDiskEncryption di mesin virtual Windows dan AzureDiskEncryptionForLinux di mesin virtual Linux.
 
 
 ```yaml
@@ -523,9 +523,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Passphrase
-Menentukan passphrase yang hanya digunakan untuk mengenkripsi mesin virtual Linux.
-Parameter ini tidak digunakan untuk mesin virtual yang menjalankan Windows sistem operasi.
+### -Frasa sandi
+Menentukan frasa sandi yang digunakan untuk mengenkripsi mesin virtual Linux saja.
+Parameter ini tidak digunakan untuk mesin virtual yang menjalankan sistem operasi Windows.
 
 ```yaml
 Type: System.String
@@ -540,7 +540,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: System.String
@@ -555,9 +555,9 @@ Accept wildcard characters: False
 ```
 
 ### -SequenceVersion
-Menentukan nomor urutan operasi enkripsi untuk komputer virtual.
-Cara ini unik untuk setiap operasi enkripsi yang dilakukan di komputer virtual yang sama.
-Cmdlet Get-AzVMExtension cmdlet bisa digunakan untuk mengambil nomor urutan sebelumnya yang digunakan.
+Menentukan nomor urutan operasi enkripsi untuk mesin virtual.
+Ini unik untuk setiap operasi enkripsi yang dilakukan pada mesin virtual yang sama.
+Cmdlet Get-AzVMExtension dapat digunakan untuk mengambil nomor urutan sebelumnya yang digunakan.
 
 ```yaml
 Type: System.String
@@ -619,9 +619,9 @@ Accept wildcard characters: False
 ### -VolumeType
 Menentukan tipe volume mesin virtual untuk melakukan operasi enkripsi: OS, Data, atau Semua. 
 
-Linux: Parameter **VolumeType** diperlukan saat mengenkripsi mesin virtual Linux dan harus diatur ke nilai ("Os", "Data", atau "Semua") yang didukung oleh distribusi Linux. 
+Linux: Parameter **VolumeType** diperlukan saat mengenkripsi mesin virtual Linux, dan harus diatur ke nilai ("Os", "Data", atau "Semua") yang didukung oleh distribusi Linux. 
 
-Windows: Parameter **VolumeType** mungkin dihilangkan, dalam hal ini operasi defaultnya adalah Semua; jika parameter VolumeType ada untuk mesin virtual Windows, parameter harus disetel ke Semua atau OS.
+Windows: Parameter **VolumeType** mungkin dihilangkan, dalam hal ini operasi default ke Semua; jika parameter VolumeType ada untuk mesin virtual Windows, parameter harus diatur ke Semua atau OS.
 
 ```yaml
 Type: System.String
@@ -637,7 +637,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -653,7 +653,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -668,7 +668,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -684,9 +684,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Add-azvmSecret](./Add-AzVMSecret.md)
+[Add-AzVMSecret](./Add-AzVMSecret.md)
 
-[Get-azvmDiskEncryptionStatus](./Get-AzVMDiskEncryptionStatus.md)
+[Get-AzVMDiskEncryptionStatus](./Get-AzVMDiskEncryptionStatus.md)
 
 [Remove-AzVMDiskEncryptionExtension](./Remove-AzVMDiskEncryptionExtension.md)
 

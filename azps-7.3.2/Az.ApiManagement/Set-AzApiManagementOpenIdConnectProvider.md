@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementOpenIdConnectProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementOpenIdConnectProvider.md
-ms.openlocfilehash: 5af854559130fd9550a13462b8a940ae60db2a30
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 4409d880eb9a2c405666bd0d154034b3d80e1bbe
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140382650"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141943964"
 ---
 # Set-AzApiManagementOpenIdConnectProvider
 
 ## SYNOPSIS
-Mengubah penyedia layanan OpenID Koneksi Anda.
+Mengubah penyedia Koneksi OpenID.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementopenidconnectprovider) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Set-AzApiManagementOpenIdConnectProvider -Context <PsApiManagementContext> -Open
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApiManagementOpenIdConnectProvider** mengubah penyedia Koneksi OpenID di Manajemen API Azure.
+Cmdlet **Set-AzApiManagementOpenIdConnectProvider** mengubah penyedia Koneksi OpenID di Azure API Management.
 
 ## EXAMPLES
 
@@ -43,7 +46,7 @@ Perintah menentukan rahasia klien untuk penyedia.
 
 ### Contoh 2
 
-Mengubah penyedia layanan OpenID Koneksi Anda. (otomatisgenerated)
+Mengubah penyedia Koneksi OpenID. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -MetadataEndpointUri
-Menentukan URI titik akhir metadata dari penyedia.
+Menentukan URI titik akhir metadata penyedia.
 
 ```yaml
 Type: System.String
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama yang mudah digunakan untuk penyedia.
+Menentukan nama yang mudah dikenali untuk penyedia.
 
 ```yaml
 Type: System.String
@@ -158,8 +161,8 @@ Accept wildcard characters: False
 ```
 
 ### -OpenIdConnectProviderId
-Menentukan ID untuk penyedia yang ditentukan cmdlet ini.
-Jika Anda tidak menentukan ID, cmdlet ini akan menghasilkan ID.
+Menentukan ID untuk penyedia yang diubah cmdlet ini.
+Jika Anda tidak menentukan ID, cmdlet ini akan menghasilkannya.
 
 ```yaml
 Type: System.String
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan bahwa cmdlet ini mengembalikan **PsApiManagementOpenIdConnectProvider** yang dimodifikasi cmdlet ini.
+Menunjukkan bahwa cmdlet ini mengembalikan **PsApiManagementOpenIdConnectProvider** yang diubah cmdlet ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

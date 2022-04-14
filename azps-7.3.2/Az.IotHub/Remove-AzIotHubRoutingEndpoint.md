@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/remove-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Remove-AzIotHubRoutingEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Remove-AzIotHubRoutingEndpoint.md
-ms.openlocfilehash: 1c6d6cb0d309f8bc0060dad7115dc623ffa05728
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 51d9eb834e8773e3050e7db52128aa6786875d3a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140186657"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141937689"
 ---
 # Remove-AzIotHubRoutingEndpoint
 
 ## SYNOPSIS
-Menghapus titik akhir untuk Hub IoT Anda
+Menghapus titik akhir untuk IoT Hub Anda
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/remove-aziothubroutingendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Remove-AzIotHubRoutingEndpoint [-ResourceId] <String> [-EndpointName <String>] [
 ```
 
 ## DESCRIPTION
-Menghapus titik akhir. Ingatlah untuk menghapus rute yang menggunakan titik akhir ini.
+Menghapus titik akhir. Ingatlah untuk menghapus rute apa pun yang menggunakan titik akhir ini.
 
 ## EXAMPLES
 
@@ -51,7 +54,7 @@ PS C:\> Remove-AzIotHubRoutingEndpoint -ResourceGroupName "myresourcegroup" -Nam
 True
 ```
 
-Hapus titik akhir "E2" dari "myiothub" IoT Hub.
+Hapus titik akhir "E2" dari IoT Hub "myiothub".
 
 ## PARAMETERS
 
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

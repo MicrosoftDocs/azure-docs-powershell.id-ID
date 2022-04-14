@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sqlvirtualmachin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Get-AzSqlVMGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Get-AzSqlVMGroup.md
-ms.openlocfilehash: 0cd5cf45f86a7960ed46c1d144c1a7107fabf163
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e064b0a452a804fe1d4ee7a56fd689065d6d7579
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139998432"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142025777"
 ---
 # Get-AzSqlVMGroup
 
 ## SYNOPSIS
 Mendapatkan satu atau beberapa grup mesin virtual sql.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sqlvirtualmachine/get-azsqlvmgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Get-AzSqlVMGroup [-ResourceId] <String> [-DefaultProfile <IAzureContextContainer
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzSqlVMGroup mendapatkan satu atau beberapa grup mesin virtual sql.
+Cmdlet Get-AzSqlVMGroup mendapatkan satu atau lebih grup mesin virtual sql.
 
 ## EXAMPLES
 
@@ -51,7 +54,7 @@ test-group ResourceGroup01    Developer SQL2017-WS2016
 group1     ResourceGroup02    Developer SQL2017-WS2016
 ```
 
-Perintah ini mendapatkan informasi tentang semua grup komputer virtual Azure SQL di langganan saat ini.
+Perintah ini mendapatkan informasi tentang semua Azure SQL grup mesin virtual dalam langganan saat ini.
 
 ### Contoh 2
 ```powershell
@@ -61,7 +64,7 @@ Name       ResourceGroupName  Sku       Offer
 test-group ResourceGroup01    Developer SQL2017-WS2016
 ```
 
-Perintah ini mendapatkan informasi tentang semua grup mesin virtual Azure SQL dalam langganan saat ini yang ditetapkan ke grup sumber daya ResourceGroup01.
+Perintah ini mendapatkan informasi tentang semua Azure SQL grup mesin virtual dalam langganan saat ini yang ditetapkan ke grup sumber daya ResourceGroup01.
 
 ### Contoh 3
 ```powershell
@@ -71,7 +74,7 @@ Name       ResourceGroupName  Sku       Offer
 test-group ResourceGroup01    Developer SQL2017-WS2016
 ```
 
-Perintah ini mendapatkan informasi tentang SQL mesin virtual "test-group" yang ditetapkan ke grup sumber daya ResourceGroup01.
+Perintah ini mendapatkan informasi tentang grup mesin virtual SQL "grup uji" yang ditetapkan ke grup sumber daya ResourceGroup01.
 
 ## PARAMETERS
 
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-SQL grup mesin virtual.
+SQL nama grup mesin virtual.
 
 ```yaml
 Type: System.String
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-SQL sumber daya grup mesin virtual.
+SQL id sumber daya grup mesin virtual.
 
 ```yaml
 Type: System.String
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

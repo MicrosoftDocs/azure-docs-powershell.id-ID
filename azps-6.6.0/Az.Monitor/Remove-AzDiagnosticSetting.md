@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzDiagnosticSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzDiagnosticSetting.md
 ms.openlocfilehash: 8755ceae9c6fd84371a7a0f95b571a8ce36a218e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140105021"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141910083"
 ---
 # Remove-AzDiagnosticSetting
 
 ## SYNOPSIS
-Hapus pengaturan diagnostik untuk sumber daya.
+Menghapus pengaturan diagnostik untuk sumber daya.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/remove-azdiagnosticsetting) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/remove-azdiagnosticsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,18 +37,18 @@ Remove-AzDiagnosticSetting [-Name <String>] [-SubscriptionId] <String>
 
 ## DESCRIPTION
 Cmdlet **Remove-AzDiagnosticSetting** menghapus pengaturan diagnostik untuk sumber daya tertentu.
-Cmdlet ini menerapkan pola ShouldProcess, misalnya meminta konfirmasi dari pengguna sebelum benar-benar membuat, mengubah, atau menghapus sumber daya.
+Cmdlet ini menerapkan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar membuat, mengubah, atau menghapus sumber daya.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus pengaturan diagnostik default (layanan) untuk sumber daya
+### Contoh 1: Menghapus pengaturan diagnostik default (layanan) untuk sumber daya
 ```
 PS C:\>Remove-AzDiagnosticSetting -ResourceId "Resource01"
 ```
 
-Perintah ini akan menghapus pengaturan diagnostik default (layanan) untuk sumber daya yang disebut Resource01.
+Perintah ini menghapus pengaturan diagnostik default (layanan) untuk sumber daya yang disebut Resource01.
 
-### Contoh 2: Hapus pengaturan diagnostik default yang diidentifikasi dengan nama yang diberikan untuk sumber daya
+### Contoh 2: Menghapus pengaturan diagnostik default yang diidentifikasi dengan nama tertentu untuk sumber daya
 ```
 PS C:\>Remove-AzDiagnosticSetting -ResourceId "Resource01" -Name myDiagSetting
 ```
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama pengaturan diagnostik. Jika tidak melihat default panggilan ke "layanan" seperti dalam API sebelumnya dan cmdlet ini hanya akan menonaktifkan semua kategori untuk metrik/log.
+Nama pengaturan diagnostik. Jika tidak memberikan panggilan default ke "layanan" seperti dalam API sebelumnya dan cmdlet ini hanya akan menonaktifkan semua kategori untuk metrik/log.
 
 ```yaml
 Type: System.String
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

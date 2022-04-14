@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementApiVersionSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementApiVersionSet.md
-ms.openlocfilehash: 28a7ea08b296de75d9ea4faf8eb1a18f5f315cc6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9da7922cfe0f01eea012b85dcb46000221d666e6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140203031"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141943959"
 ---
 # Set-AzApiManagementApiVersionSet
 
 ## SYNOPSIS
-Memperbarui Kumpulan Versi API dalam Konteks Manajemen API.
+Memperbarui Set Versi API dalam Konteks API Management.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementapiversionset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Set-AzApiManagementApiVersionSet -InputObject <PsApiManagementApiVersionSet> [-N
 
 ## DESCRIPTION
 
-Cmdlet **Set-AzApiManagementApiVersionSet** mengubah Kumpulan Versi API Manajemen API Azure.
+Cmdlet **Set-AzApiManagementApiVersionSet** mengubah Set Versi API Azure API Management.
 
 ## EXAMPLES
 
@@ -47,12 +50,12 @@ $ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-Wes
 Set-AzApiManagementApiVersionSet -Context $ApiMgmtContext -ApiVersionSetId "query-verion-set" -Scheme Header -HeaderName "api-version" -Description "Azure version header string"
 ```
 
-Perintah ini memperbarui Kumpulan Versi API yang sudah ada dengan skema versi `Header` dan parameter `api-version`Header.
+Perintah ini memperbarui Set Versi API yang sudah ada dengan skema `Header` penerapan versi dan parameter `api-version`Header .
 
 ## PARAMETERS
 
 ### -ApiVersionSetId
-Pengidentifikasi untuk Kumpulan Versi API baru.
+Pengidentifikasi untuk Set Versi API baru.
 
 ```yaml
 Type: System.String
@@ -113,8 +116,8 @@ Accept wildcard characters: False
 ```
 
 ### -HeaderName
-Nilai Header yang akan berisi informasi versi.
-Jika HEADER Skema versi dipilih, nilai ini harus ditentukan.
+Nilai Header yang akan berisi informasi penerapan versi.
+Jika penerapan versi HEADER Skema dipilih, maka nilai ini harus ditentukan.
 
 ```yaml
 Type: System.String
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama ApiVersion Set.
+Nama Kumpulan ApiVersion.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika ditentukan maka instans Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApiVersionSet mewakili apiversionSet yang dimodifikasi akan ditulis ke output.
+Jika ditentukan, contoh Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApiVersionSet tipe yang mewakili apiVersionSet yang dimodifikasi akan ditulis ke output.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,8 +178,8 @@ Accept wildcard characters: False
 ```
 
 ### -QueryName
-Nilai Kueri yang akan berisi informasi versi.
-Jika kueri skema versi dipilih, nilai ini harus ditentukan.
+Nilai Kueri yang akan berisi informasi penerapan versi.
+Jika penerapan versi Kueri Skema dipilih, maka nilai ini harus ditentukan.
 
 ```yaml
 Type: System.String
@@ -190,8 +193,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Scheme
-Skema Versi untuk memilih Kumpulan Versi Api.
+### -Skema
+Skema Penerapan Versi untuk memilih Set Penerapan Versi Api.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

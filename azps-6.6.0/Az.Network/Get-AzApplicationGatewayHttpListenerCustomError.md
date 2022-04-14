@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayHttpListenerCustomError.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayHttpListenerCustomError.md
 ms.openlocfilehash: ebd1fa8f93e4a1cafe511eec69923af04dfc47c4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140104535"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142125665"
 ---
 # Get-AzApplicationGatewayHttpListenerCustomError
 
@@ -18,7 +18,7 @@ ms.locfileid: "140104535"
 Mendapatkan kesalahan kustom dari pendengar http gateway aplikasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azapplicationgatewayhttplistenercustomerror) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayhttplistenercustomerror) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,23 +29,23 @@ Get-AzApplicationGatewayHttpListenerCustomError [-StatusCode <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApplicationGatewayCustomError** mendapatkan kesalahan kustom dari http pendengar gateway aplikasi.
+Cmdlet **Get-AzApplicationGatewayCustomError** mendapatkan kesalahan kustom dari pendengar http gateway aplikasi.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan kesalahan kustom pada pendengar http
+### Contoh 1: Mendapatkan kesalahan kustom di pendengar http
 ```powershell
 PS C:\> $ce = Get-AzApplicationGatewayCustomError -HttpListener $listener01 -StatusCode HttpStatus502
 ```
 
 Perintah ini mendapatkan dan mengembalikan kesalahan kustom kode status http 502 dari pendengar http $listener 01.
 
-### Contoh 2: Mendapatkan daftar semua kesalahan kustom pada pendengar http
+### Contoh 2: Mendapatkan daftar semua kesalahan kustom di pendengar http
 ```powershell
 PS C:\> $ces = Get-AzApplicationGatewayCustomError -HttpListener $listener01
 ```
 
-Perintah ini akan mendapatkan dan mengembalikan daftar semua kesalahan kustom dari pendengar http $listener 01.
+Perintah ini mendapatkan dan mengembalikan daftar semua kesalahan kustom dari pendengar http $listener 01.
 
 ## PARAMETERS
 
@@ -64,8 +64,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpListener
-Gateway Aplikasi http Pendengar
+### -HttpListener
+Pendengar Http Application Gateway
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayHttpListener
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -109,8 +109,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Add-AzApplicationGatewayhttpListenerCustomError](./Add-AzApplicationGatewayHttpListenerCustomError.md)
+[Add-AzApplicationGatewayHttpListenerCustomError](./Add-AzApplicationGatewayHttpListenerCustomError.md)
 
-[Remove-AzApplicationGatewayhttpListenerCustomError](./Remove-AzApplicationGatewayHttpListenerCustomError.md)
+[Remove-AzApplicationGatewayHttpListenerCustomError](./Remove-AzApplicationGatewayHttpListenerCustomError.md)
 
-[Set-AzApplicationGatewayhttpListenerCustomError](./Set-AzApplicationGatewayHttpListenerCustomError.md)
+[Set-AzApplicationGatewayHttpListenerCustomError](./Set-AzApplicationGatewayHttpListenerCustomError.md)

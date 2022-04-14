@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Set-AzBlueprintArtifact.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Set-AzBlueprintArtifact.md
 ms.openlocfilehash: 88447b4851c5988f66296cbdedfe1e3378330234
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140079965"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141914511"
 ---
 # Set-AzBlueprintArtifact
 
 ## SYNOPSIS
-Perbarui artifak dalam definisi cetak biru.
+Memperbarui artefak dalam definisi cetak biru.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.blueprint/set-azblueprintartifact) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.blueprint/set-azblueprintartifact) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,7 +53,7 @@ Set-AzBlueprintArtifact -Name <String> -Type <PSArtifactKind> -Blueprint <PSBlue
 ```
 
 ## DESCRIPTION
-Perbarui artifak. Ada dua cara untuk memperbarui artifak: melalui JSON artifak sebagai file input atau dengan menyediakan parameter sebaris untuk artifak. Meskipun metode JSON tidak memerlukan tipe artifak untuk disediakan metode parameter sebaris memerlukan pengguna untuk menyediakan tipe artifak melalui parameter -Tipe.
+Perbarui artefak. Ada dua cara untuk memperbarui artefak: baik melalui artefak JSON sebagai file input atau dengan menyediakan parameter sebaris untuk artefak. Meskipun metode JSON tidak memerlukan tipe artefak untuk disediakan dalam metode parameter sebaris mengharuskan pengguna untuk menyediakan tipe artefak melalui parameter -Type.
 
 ## EXAMPLES
 
@@ -73,7 +73,7 @@ Type               : Microsoft.Blueprint/blueprints/artifacts
 Name               : PolicyAssignmentStorageTag
 ```
 
-Perbarui artifak melalui file JSON artifak.
+Perbarui artefak melalui file artefak JSON.
 
 ### Contoh 2
 ```powershell
@@ -93,7 +93,7 @@ Type               : Microsoft.Blueprint/blueprints/artifacts
 Name               : ApplyTag-RG
 ```
 
-Perbarui artifak melalui parameter sebaris.
+Perbarui artefak melalui parameter sebaris.
 
 ### Contoh 3
 ```powershell
@@ -111,12 +111,12 @@ Type          : Microsoft.Blueprint/blueprints/artifacts
 Name          : storage-account
 ```
 
-Perbarui artifak melalui file templat ARM.
+Perbarui artefak melalui file templat ARM.
 
 ## PARAMETERS
 
 ### -ArtifactFile
-Lokasi file artifak dalam format JSON di disk.
+Lokasi file artefak dalam format JSON pada disk.
 
 ```yaml
 Type: System.String
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -Blueprint
-Objek Cetak biru.
+Objek Blueprint.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Blueprint.Models.PSBlueprintBase
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -DependsOn
-Daftar nama artifak yang perlu dibuat sebelum artifak saat ini dibuat.
+Daftar nama artefak yang perlu dibuat sebelum artefak saat ini dibuat.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Deskripsi artifak.
+Deskripsi artefak.
 
 ```yaml
 Type: System.String
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama artifak
+Nama artefak
 
 ```yaml
 Type: System.String
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyDefinitionId
-Id Definisi definisi kebijakan.
+Id Definisi definisi definisi kebijakan.
 
 ```yaml
 Type: System.String
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyDefinitionParameter
-Hashtable parameter untuk ditetapkan ke artifak definisi kebijakan.
+Hashtable parameter untuk lolos ke artifak definisi kebijakan.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya artifak akan berada di bawah.
+Nama grup sumber daya artefak akan berada di bawah.
 
 ```yaml
 Type: System.String
@@ -323,7 +323,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Tipe artifak.
+Jenis artefak.
 Ada 3 tipe yang didukung: RoleAssignmentArtifact, PolicyAssignmentArtifact, TemplateArtifact.
 
 ```yaml
@@ -340,7 +340,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -355,7 +355,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -370,7 +370,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -380,7 +380,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Blueprint.Models.PSBlueprintBase
 
-### System.Collections.Generic.List'1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Collections.Generic.List'1[[System.String, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ### System.Collections.Hashtable
 

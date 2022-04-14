@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzAppServicePlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzAppServicePlan.md
 ms.openlocfilehash: e5e2afaf700920c10b5a1e8d92d4cad851cc7f42
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140301955"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141900531"
 ---
 # New-AzAppServicePlan
 
 ## SYNOPSIS
-Membuat paket Layanan Aplikasi Azure di lokasi Geo tertentu.
+Membuat rencana Azure App Service di lokasi Geo tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/new-azappserviceplan) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/new-azappserviceplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,22 +39,22 @@ New-AzAppServicePlan [-Location] <String> [[-Tier] <String>] [[-NumberofWorkers]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzAppServicePlan** membuat paket Layanan Aplikasi Azure di lokasi Geo tertentu dengan Tingkat, ukuran pegawai, dan jumlah pekerja tertentu.
+Cmdlet **New-AzAppServicePlan** membuat rencana Azure App Service di lokasi Geo tertentu dengan Tingkat, ukuran pekerja, dan jumlah pekerja yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat paket Layanan Aplikasi
+### Contoh 1: Membuat paket App Service
 ```
 PS C:\>New-AzAppServicePlan -ResourceGroupName "Default-Web-WestUS" -Name "ContosoASP" -Location "West US" -Tier "Basic" -NumberofWorkers 2 -WorkerSize "Small"
 ```
 
-Perintah ini membuat paket Layanan Aplikasi bernama ContosoASP dalam grup sumber daya yang bernama Default-Web-WestUS di lokasi Geo Barat AS.
+Perintah ini membuat rencana App Service bernama ContosoASP dalam grup sumber daya bernama Default-Web-WestUS di Geo location West US.
 Perintah menentukan Tingkat Dasar dan mengalokasikan dua pekerja kecil.
 
 ## PARAMETERS
 
 ### -AppServicePlan
-Objek Paket Layanan Aplikasi
+Objek Rencana App Service
 
 ```yaml
 Type: Microsoft.Azure.Commands.WebApps.Models.WebApp.PSAppServicePlan
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -AseName
-Nama Lingkungan Layanan Aplikasi
+Nama Lingkungan App Service
 
 ```yaml
 Type: System.String
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -AseResourceGroupName
-Nama Grup Sumber Daya Lingkungan Layanan Aplikasi
+Nama Grup Sumber Daya Lingkungan App Service
 
 ```yaml
 Type: System.String
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -HyperV
-Tentukan ini, Paket Layanan Aplikasi akan Windows Kontainer
+Tentukan ini, Paket App Service akan berjalan Windows Kontainer
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Linux
-Tentukan hal ini, Paket Layanan Aplikasi akan menjalankan Kontainer Linux
+Tentukan ini, rencana App Service akan menjalankan Kontainer Linux
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Paket Layanan Aplikasi
+Nama Rencana App Service
 
 ```yaml
 Type: System.String
@@ -203,8 +203,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PerSiteScaling
-Mengaktifkan atau tidak mengaktifkan Penskalaan Per Situs
+### -Persitescaling
+Apakah mengaktifkan atau tidak mengaktifkan Penskalakan Per Situs
 
 ```yaml
 Type: System.Boolean
@@ -248,7 +248,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tier
+### -Tingkat
 Tier
 
 ```yaml
@@ -280,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

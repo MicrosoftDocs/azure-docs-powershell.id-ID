@@ -3,17 +3,17 @@ external help file: Azs.Fabric.Admin-help.xml
 Module Name: Azs.Fabric.Admin
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: e59e3b7e5d9631b3adeeb2338da6019637e5b9abb333b8c118bf8143e74faab9
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 821495581589eff356cd0d88fc98311b5f566d61
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416178"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141879134"
 ---
 # Get-AzsSlbMuxInstance
 
 ## SYNOPSIS
-Mengembalikan daftar semua contoh penyeimbang muat perangkat lunak di satu lokasi.
+Mengembalikan daftar semua instans penyeimbang muat perangkat lunak di suatu lokasi.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-AzsSlbMuxInstance [-Location <String>] [-ResourceGroupName <String>] [-Filte
  [-Top <Int32>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsSlbMuxInstance [-Name] <String> [-Location <String>] [-ResourceGroupName <String>] [<CommonParameters>]
 ```
@@ -34,7 +34,7 @@ Get-AzsSlbMuxInstance -ResourceId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Mengembalikan daftar semua contoh penyeimbang muat perangkat lunak di satu lokasi.
+Mengembalikan daftar semua instans penyeimbang muat perangkat lunak di suatu lokasi.
 
 ## EXAMPLES
 
@@ -43,14 +43,14 @@ Mengembalikan daftar semua contoh penyeimbang muat perangkat lunak di satu lokas
 Get-AzsSlbMuxInstance
 ```
 
-Dapatkan semua contoh multiplexer penyeimbang muat perangkat lunak di satu lokasi.
+Dapatkan semua instance multiplexer penyeimbang muatan perangkat lunak di suatu lokasi.
 
 ### CONTOH 2
 ```
 Get-AzsSlbMuxInstance -Name "AzS-SLB01"
 ```
 
-Dapatkan contoh multiplexer penyeimbang muat perangkat lunak tertentu di lokasi dengan nama.
+Dapatkan instance multiplexer penyeimbang muat perangkat lunak tertentu di lokasi yang diberi nama.
 
 ## PARAMETERS
 
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

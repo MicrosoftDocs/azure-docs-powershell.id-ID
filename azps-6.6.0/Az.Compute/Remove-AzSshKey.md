@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzSshKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzSshKey.md
 ms.openlocfilehash: d0b51b42b446a27565e9dbf3d083fffc25b6af0b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140485563"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141960459"
 ---
 # Remove-AzSshKey
 
 ## SYNOPSIS
-Hapus sumber daya Kunci Publik DELETE.
+Hapus sumber daya Kunci Publik SSH.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/remove-azsshkey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/remove-azsshkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Remove-AzSshKey [-InputObject] <PSSshPublicKeyResource> [-AsJob] [-DefaultProfil
 ```
 
 ## DESCRIPTION
-Hapus sumber daya Kunci Publik DELETE.
+Hapus sumber daya Kunci Publik SSH.
 
 ## EXAMPLES
 
@@ -50,7 +50,7 @@ Hapus sumber daya Kunci Publik DELETE.
 PS C:\> Remove-AzSshKey -ResourceGroupName "testRG" -Name "sshKey1"
 ```
 
-Deletes Deletes Public Key resource named "key1" dalam Resource Group "testRG"
+Menghapus sumber daya Kunci Publik Ssh bernama "sshKey1" dalam Grup Sumber Daya "testRG"
 
 ## PARAMETERS
 
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Kunci Publik PowerShellSHELLSHELL
+Objek Kunci Publik PowerShell SSH
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSSshPublicKeyResource
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama Sumber Daya Kunci Publik Filem yang akan dapatkan.
+Menentukan nama sumber daya Kunci Publik Ssh untuk didapatkan.
 
 ```yaml
 Type: System.String
@@ -115,7 +115,7 @@ Accept wildcard characters: True
 ```
 
 ### -ResourceId
-ID Sumber Daya untuk Sumber Daya Kunci Publik BISNIS ANDA.
+ID Sumber Daya untuk Sumber Daya Kunci Publik SSH Anda.
 
 ```yaml
 Type: System.String
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

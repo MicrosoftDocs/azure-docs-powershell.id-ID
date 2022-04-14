@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVpnClientRootCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVpnClientRootCertificate.md
 ms.openlocfilehash: 2094c80f0f39060afc2a34990f8e49c12d40e511
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140249803"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141909273"
 ---
 # Remove-AzVpnClientRootCertificate
 
@@ -19,7 +19,7 @@ ms.locfileid: "140249803"
 Menghapus sertifikat akar klien VPN yang sudah ada.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azvpnclientrootcertificate) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvpnclientrootcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,11 +30,11 @@ Remove-AzVpnClientRootCertificate -VpnClientRootCertificateName <String> -Virtua
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzVpnClientRootCertificate** menghapus sertifikat akar yang ditentukan dari gateway jaringan virtual.
+Cmdlet **Remove-AzVpnClientRootCertificate** menghapus sertifikat akar tertentu dari gateway jaringan virtual.
 Sertifikat akar adalah sertifikat X.509 yang mengidentifikasi Otoritas Sertifikasi Akar Anda: semua sertifikat lain yang digunakan di gateway mempercayai sertifikat akar.
-Jika Anda menghapus komputer sertifikat akar yang menggunakan sertifikat untuk tujuan autentikasi tidak akan bisa lagi menyambungkan ke gateway.
-Saat Anda menggunakan **Remove-AzVpnClientRootCertificate**, Anda harus menyediakan nama sertifikat dan teks representasi data sertifikat.
-Untuk informasi selengkapnya tentang teks representasi sertifikat, lihat deskripsi parameter *PublicCertData* .
+Jika Anda menghapus komputer sertifikat akar yang menggunakan sertifikat untuk tujuan autentikasi tidak akan bisa lagi tersambung ke gateway.
+Saat Anda menggunakan **Remove-AzVpnClientRootCertificate**, Anda harus memasukkan nama sertifikat dan representasi teks data sertifikat.
+Untuk informasi selengkapnya tentang representasi teks sertifikat, lihat deskripsi parameter *PublicCertData* .
 
 ## EXAMPLES
 
@@ -45,16 +45,16 @@ PS C:\> $CertificateText = for ($i=1; $i -lt $Text.Length -1 ; $i++){$Text[$i]}
 PS C:\> Remove-AzVpnClientRootCertificate -PublicCertData $CertificateText -ResourceGroupName "ContosoResourceGroup" -VirtualNetworkGatewayName "ContosoVirtualGateway" -VpnClientRootCertificateName "ContosoRootCertificate"
 ```
 
-Contoh ini menghapus sertifikat akar klien yang bernama ContosoRootCertificate dari gateway jaringan virtual ContosoVirtualGateway.
-Perintah pertama menggunakan cmdlet **Get-Content** untuk mendapatkan representasi teks sertifikat yang diekspor sebelumnya; representasi teks ini disimpan di variabel bernama $Text.
-Lalu perintah kedua menggunakan pengulangan untuk mengekstrak semua teks dalam $Text kecuali untuk baris pertama dan baris terakhir.
-Teks yang diekstrak ini disimpan dalam variabel yang bernama $CertificateText.
-Perintah ketiga menggunakan informasi yang disimpan di variabel $CertificateText bersama dengan cmdlet **Remove-AzVpnClientRootCertificate** untuk menghapus sertifikat dari gateway.
+Contoh ini menghapus sertifikat akar klien bernama ContosoRootCertificate dari gateway jaringan virtual ContosoVirtualGateway.
+Perintah pertama menggunakan cmdlet **Get-Content** untuk mendapatkan representasi teks sertifikat yang diekspor sebelumnya; representasi teks ini disimpan dalam variabel bernama $Text.
+Perintah kedua kemudian menggunakan pengulangan untuk mengekstrak semua teks dalam $Text kecuali baris pertama dan baris terakhir.
+Teks yang diekstrak ini disimpan dalam variabel bernama $CertificateText.
+Perintah ketiga menggunakan informasi yang disimpan dalam variabel $CertificateText bersama dengan cmdlet **Remove-AzVpnClientRootCertificate** untuk menghapus sertifikat dari gateway.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -69,9 +69,9 @@ Accept wildcard characters: False
 ```
 
 ### -PublicCertData
-Menentukan representasi teks dari sertifikat akar yang akan dihapus.
-Untuk mendapatkan representasi teks, ekspor sertifikat Anda dalam format .cer (menggunakan pengodean Base64), lalu buka file yang dihasilkan di editor teks.
-Anda akan melihat output seperti berikut (perhatikan bahwa output aktual akan berisi lebih banyak baris teks daripada sampel yang disingkat, yang ditunjukkan di sini): ----- BEGIN CERTIFICATE ----- MIIC13FAAXC3671Auij9HgUNEW8343NMJklo09982CVVFAw8w ----- END CERTIFICATE ----- PublicCertData terdiri dari semua garis antara baris pertama (----- BEGIN CERTIFICATE -----) dan baris terakhir (----- END CERTIFICATE -----) dalam file.
+Menentukan representasi teks sertifikat akar yang akan dihapus.
+Untuk mendapatkan representasi teks, ekspor sertifikat Anda dalam format .cer (menggunakan Base64), lalu buka file yang dihasilkan dalam editor teks.
+Anda akan melihat output yang mirip dengan yang berikut ini (perhatikan bahwa output aktual akan berisi lebih banyak baris teks daripada sampel singkatan yang diperlihatkan di sini): ----- BEGIN CERTIFICATE ----- MIIC13FAAXC3671Auij9HHgUNEW8343NMJklo09982CVVFAw8w ----- END CERTIFICATE ----- The PublicCertData terdiri dari semua baris antara baris pertama (----- BEGIN CERTIFICATE -----) dan baris terakhir (----- END CERTIFICATE -----) dalam file.
 Anda dapat mengambil PublicCertData menggunakan perintah Windows PowerShell seperti ini: $Text = Get-Content -Path "C:\Azure\Certificates\ExportedCertificate.cer" $CertificateText = for ($i=1; $i -lt $Text.Length -1 ; $i++){$Text\[$i\]}
 
 ```yaml
@@ -87,8 +87,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang ditetapkan untuk gateway jaringan virtual.
-Grup sumber daya mengkategorikan item untuk membantu menyederhanakan manajemen inventaris dan administrasi umum Azure.
+Menentukan nama grup sumber daya tempat gateway jaringan maya ditetapkan.
+Grup sumber daya mengkategorikan item untuk membantu menyederhanakan manajemen inventaris dan administrasi Umum Azure.
 
 ```yaml
 Type: System.String
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

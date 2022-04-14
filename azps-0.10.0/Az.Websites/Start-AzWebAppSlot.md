@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Websites/Websites/help/Start-AzWebAppSlot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Websites/Websites/help/Start-AzWebAppSlot.md
 ms.openlocfilehash: d843cf5eed70e230f81c704e9168fee917a77077
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423972"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141962691"
 ---
 # Start-AzWebAppSlot
 
@@ -32,7 +32,7 @@ Start-AzWebAppSlot [-WebApp] <Site> [-DefaultProfile <IAzureContextContainer>] [
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzWebAppSlot** memulai Slot Azure Web App.
+Cmdlet **Start-AzWebAppSlot** memulai Azure Web App Slot.
 
 ## EXAMPLES
 
@@ -41,12 +41,12 @@ Cmdlet **Start-AzWebAppSlot** memulai Slot Azure Web App.
 PS C:\>Start-AzWebAppSlot -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -Slot "Slot001"
 ```
 
-Perintah ini memulai Slot bernama Slot001 yang terkait dengan Aplikasi Web bernama ContosoWebApp yang termasuk dalam grup sumber daya bernama Default-Web-WestUS.
+Perintah ini memulai Slot bernama Slot001 yang berkaitan dengan Aplikasi Web bernama ContosoWebApp yang termasuk dalam grup sumber daya bernama Default-Web-WestUS.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -134,16 +134,16 @@ Parameter 'WebApp' menerima nilai tipe 'Situs' dari saluran
 
 ## RELATED LINKS
 
-[Get-AzWebAppslot](./Get-AzWebAppSlot.md)
+[Get-AzWebAppSlot](./Get-AzWebAppSlot.md)
 
-[New-AzWebAppslot](./New-AzWebAppSlot.md)
+[New-AzWebAppSlot](./New-AzWebAppSlot.md)
 
-[Remove-AzWebAppslot](./Remove-AzWebAppSlot.md)
+[Hapus-AzWebAppSlot](./Remove-AzWebAppSlot.md)
 
-[Restart-AzWebAppslot](./Restart-AzWebAppSlot.md)
+[Mulai ulang-AzWebAppSlot](./Restart-AzWebAppSlot.md)
 
-[Set-AzWebAppslot](./Set-AzWebAppSlot.md)
+[Set-AzWebAppSlot](./Set-AzWebAppSlot.md)
 
-[Stop-AzWebAppslot](./Stop-AzWebAppSlot.md)
+[Stop-AzWebAppSlot](./Stop-AzWebAppSlot.md)
 
 [Get-AzWebApp](./Get-AzWebApp.md)

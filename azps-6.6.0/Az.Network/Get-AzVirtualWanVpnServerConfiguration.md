@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualWanVpnServerConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualWanVpnServerConfiguration.md
 ms.openlocfilehash: b3f048e67846631c6018f2d7e1c12cc7397be8fb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140330926"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142124999"
 ---
 # Get-AzVirtualWanVpnServerConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "140330926"
 Mendapatkan daftar semua VpnServerConfigurations yang terkait dengan VirtualWan ini.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azvirtualwanvpnserverconfiguration) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualwanvpnserverconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Get-AzVirtualWanVpnServerConfiguration [-Name <String>] -ResourceGroupName <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVirtualWanVpnServerConfiguration** akan mengembalikan daftar semua VpnServerConfigurations yang terkait dengan VirtualWan ini. misalnya Semua VpnServerConfigurations yang dilampirkan ke setiap P2SVpnGateway di bawah VirutalHubs dari VirtualWan ini.
+Cmdlet **Get-AzVirtualWanVpnServerConfiguration** akan mengembalikan daftar semua VpnServerConfigurations yang terkait dengan VirtualWan ini. Yaitu Semua VpnServerConfigurations yang dilampirkan ke P2SVpnGateways di bawah VirutalHubs VirtualWan ini.
 
 ## EXAMPLES
 
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

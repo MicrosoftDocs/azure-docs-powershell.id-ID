@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzR
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzRegulatoryComplianceAssessment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzRegulatoryComplianceAssessment.md
-ms.openlocfilehash: e05200c7e3b2c5d25ba6669ecf0b8e39e9b315d8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 7f6add1deecb8454127b925014ceda1c03d8aac2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140195830"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141933441"
 ---
 # Get-AzRegulatoryComplianceAssessment
 
 ## SYNOPSIS
 Mendapatkan penilaian kepatuhan terhadap peraturan
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azregulatorycomplianceassessment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzRegulatoryComplianceAssessment -ResourceId <String> [-DefaultProfile <IAzu
 ```
 
 ## DESCRIPTION
-Dapatkan detail penilaian yang spesifik atau  list semua penilaian di bawah kontrol dan standar kepatuhan peraturan tertentu.
+Dapatkan detail penilaian spcific atau cantumkan semua penilaian di bawah standar kontrol dan kepatuhan peraturan tertentu.
 
 ## EXAMPLES
 
@@ -162,7 +165,7 @@ FailedResources       : 0
 SkippedResources      : 0
 ```
 
-Dapatkan penilaian tertentu berdasarkan kontrol dan standar tertentu sesuai dengan id penilaian.
+Dapatkan penilaian khusus berdasarkan kontrol dan standar tertentu sesuai dengan id penilaian.
 
 ### Contoh 3
 ```powershell
@@ -184,7 +187,7 @@ FailedResources       : 0
 SkippedResources      : 0
 ```
 
-Dapatkan penilaian tertentu di bawah kontrol dan standar tertentu sesuai dengan id sumber daya.
+Dapatkan penilaian khusus di bawah kontrol dan standar tertentu sesuai dengan id sumber daya.
 
 ## PARAMETERS
 
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya keamanan yang ingin Anda perintahkan.
+ID sumber daya keamanan yang ingin Anda gunakan untuk meminta perintah.
 
 ```yaml
 Type: System.String
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

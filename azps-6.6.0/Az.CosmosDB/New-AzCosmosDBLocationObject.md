@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBLocationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBLocationObject.md
 ms.openlocfilehash: 87478cda639bf5deda8aae8fd5c1060f5178a75e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140311063"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141959847"
 ---
 # New-AzCosmosDBLocationObject
 
 ## SYNOPSIS
-Buat New CosmosDB Location Object(PSLocation).
+Buat Objek Lokasi CosmosDB baru(PSLocation).
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdblocationobject) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdblocationobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-AzCosmosDBLocationObject -LocationName <String> [-FailoverPriority <Int32>] 
 ```
 
 ## DESCRIPTION
-Buat New CosmosDB Location Object(PSLocation).
+Buat Objek Lokasi CosmosDB baru(PSLocation).
 
 ## EXAMPLES
 
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -FailoverPriority
-Prioritas lokasi failover.
+Prioritas failover lokasi.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsZoneRedundant
-Boolean untuk menunjukkan apakah kawasan ini adalah Zona Ketersediaan.
+Boolean untuk menunjukkan apakah wilayah ini adalah AvailabilityZone atau tidak.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -104,11 +104,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

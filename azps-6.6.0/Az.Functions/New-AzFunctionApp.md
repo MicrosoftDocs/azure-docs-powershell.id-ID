@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/New-AzFunctionApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/New-AzFunctionApp.md
 ms.openlocfilehash: 958a1600234b94e4403311a92bbcb6799bee3cdc
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139976127"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141912405"
 ---
 # New-AzFunctionApp
 
@@ -18,7 +18,7 @@ ms.locfileid: "139976127"
 Membuat aplikasi fungsi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.functions/new-azfunctionapp) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.functions/new-azfunctionapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +56,7 @@ Membuat aplikasi fungsi.
 
 ## EXAMPLES
 
-### Contoh 1: Buat pemakaian aplikasi fungsi PowerShell di Central US.
+### Contoh 1: Buat aplikasi fungsi PowerShell pemakaian di AS Tengah.
 ```powershell
 PS C:\> New-AzFunctionApp -Name MyUniqueFunctionAppName `
                           -ResourceGroupName MyResourceGroupName `
@@ -65,7 +65,7 @@ PS C:\> New-AzFunctionApp -Name MyUniqueFunctionAppName `
                           -Runtime PowerShell
 ```
 
-Perintah ini akan membuat aplikasi fungsi PowerShell konsumsi di AS Tengah.
+Perintah ini membuat aplikasi fungsi PowerShell yang dapat digunakan di AS Tengah.
 
 ### Contoh 2: Buat aplikasi fungsi PowerShell yang akan dihosting dalam paket layanan.
 ```powershell
@@ -76,9 +76,9 @@ PS C:\> New-AzFunctionApp -Name MyUniqueFunctionAppName `
                           -Runtime PowerShell
 ```
 
-Perintah ini akan membuat aplikasi fungsi PowerShell yang akan dihosting dalam paket layanan.
+Perintah ini membuat aplikasi fungsi PowerShell yang akan dihosting dalam paket layanan.
 
-### Contoh 3: Buat aplikasi fungsi menggunakan gambar ACR pribadi.
+### Contoh 3: Membuat aplikasi fungsi menggunakan gambar ACR pribadi.
 ```powershell
 PS C:\> New-AzFunctionApp -Name MyUniqueFunctionAppName `
                           -ResourceGroupName MyResourceGroupName `
@@ -88,12 +88,12 @@ PS C:\> New-AzFunctionApp -Name MyUniqueFunctionAppName `
 
 ```
 
-Perintah ini akan membuat aplikasi fungsi menggunakan gambar ACR pribadi.
+Perintah ini membuat aplikasi fungsi menggunakan gambar ACR pribadi.
 
 ## PARAMETERS
 
 ### -ApplicationInsightsKey
-Kunci instrumen Aplikasi Insights ditambahkan.
+Kunci instrumentasi Insights Aplikasi yang akan ditambahkan.
 
 ```yaml
 Type: System.String
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationInsightsName
-Nama Aplikasi yang sudah Insights proyek untuk ditambahkan ke aplikasi fungsi.
+Nama proyek Insights Aplikasi yang sudah ada untuk ditambahkan ke aplikasi fungsi.
 
 ```yaml
 Type: System.String
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppSetting
-Pengaturan fungsi aplikasi.
+Pengaturan aplikasi fungsi.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 
 ### -DisableApplicationInsights
 Nonaktifkan pembuatan sumber daya wawasan aplikasi selama pembuatan aplikasi fungsi.
-Log tidak akan tersedia.
+Tidak ada log yang akan tersedia.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 
 ### -DockerImageName
 Linux saja.
-Container image name from Docker Registry, e.g. publisher/image-name:tag.
+Nama gambar kontainer dari Docker Registry, misalnya publisher/image-name:tag.
 
 ```yaml
 Type: System.String
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -DockerRegistryCredential
-Wadah nama pengguna dan kata sandi registri.
+Nama pengguna dan kata sandi registri kontainer.
 Diperlukan untuk registri pribadi.
 
 ```yaml
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 
 ### -IdentityID
 Menentukan daftar identitas pengguna yang terkait dengan aplikasi fungsi.
-Referensi identitas pengguna akan menjadi ID sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
+Referensi identitas pengguna akan berupa id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
 
 ```yaml
 Type: System.String[]
@@ -263,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi untuk paket konsumsi.
+Lokasi untuk paket pemakaian.
 
 ```yaml
 Type: System.String
@@ -293,8 +293,8 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Memulai operasi dan segera mengembalikannya, sebelum operasi selesai.
-Untuk mengetahui apakah operasi berhasil diselesaikan, gunakan beberapa mekanisme lain.
+Memulai operasi dan segera kembali, sebelum operasi selesai.
+Untuk menentukan apakah operasi telah berhasil diselesaikan, gunakan beberapa mekanisme lain.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -369,7 +369,7 @@ Accept wildcard characters: False
 ```
 
 ### -Runtime
-Runtime fungsi.
+Fungsi runtime.
 
 ```yaml
 Type: System.String
@@ -384,7 +384,7 @@ Accept wildcard characters: False
 ```
 
 ### -RuntimeVersion
-Runtime fungsi.
+Fungsi runtime.
 
 ```yaml
 Type: System.String
@@ -444,7 +444,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -460,7 +460,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -475,7 +475,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

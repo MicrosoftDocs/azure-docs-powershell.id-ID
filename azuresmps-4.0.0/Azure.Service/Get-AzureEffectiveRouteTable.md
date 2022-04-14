@@ -3,17 +3,17 @@ external help file: Microsoft.WindowsAzure.Commands.ServiceManagement.Network.dl
 ms.assetid: 82CF6E71-FFE2-4B2C-8AAD-04C137AD5706
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 1366e69f7da032aa243c2946b91788d165408dc86c3858e8b83f437b8695bdd5
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 53db278d631b9da554ccdaf0a5215c78cb1906e8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418975"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141922173"
 ---
 # Get-AzureEffectiveRouteTable
 
 ## SYNOPSIS
-Rute akan diterapkan di mesin virtual.
+Dapatkan rute yang diterapkan di mesin virtual.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -32,8 +32,8 @@ Get-AzureEffectiveRouteTable -ServiceName <String> [-Slot <String>] -RoleInstanc
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureEffectiveRouteTable** akan mendapatkan rute yang diterapkan di mesin virtual.
-Operasi ini dapat memakan waktu beberapa detik untuk selesai.
+Cmdlet **Get-AzureEffectiveRouteTable** akan menerapkan rute dalam mesin virtual.
+Operasi ini bisa memakan waktu beberapa detik untuk menyelesaikan.
 
 ## EXAMPLES
 
@@ -43,12 +43,12 @@ PS C:\> Get-AzureVM -ServiceName "ContosoService" -Name "ContosoVM06" | Get-Azur
 ```
 
 Perintah ini mendapatkan mesin virtual bernama ContosoVM06 untuk layanan bernama ContosoService, dan meneruskan objek mesin virtual tersebut ke cmdlet saat ini.
-Cmdlet saat ini akan menerapkan rute ke mesin virtual tersebut.
+Cmdlet saat ini mendapatkan rute yang diterapkan ke mesin virtual itu.
 
 ## PARAMETERS
 
 ### -NetworkInterfaceName
-Menentukan nama adaptor jaringan tempat cmdlet ini mendapatkan rute efektif.
+Menentukan nama adapter jaringan di mana cmdlet ini mendapatkan rute yang efektif.
 
 ```yaml
 Type: String
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini. Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca. Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -110,11 +110,11 @@ Accept wildcard characters: False
 
 ### -Slot
 Menentukan slot PaaS.
-Peran PaaS yang mendapatkan rute efektif dari cmdlet ini memiliki slot yang ditentukan parameter ini.
-Nilai valid adalah: 
+Peran PaaS di mana cmdlet ini mendapatkan rute yang efektif memiliki slot yang ditentukan parameter ini.
+Nilai yang valid adalah: 
 
 - Produksi
-- Perekanan 
+- Pementasan 
 
 Nilai defaultnya adalah Produksi.
 
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan objek mesin virtual tempat cmdlet mendapatkan rute efektif.
+Menentukan objek mesin virtual di mana cmdlet ini mendapatkan rute yang efektif.
 
 ```yaml
 Type: PersistentVMRoleContext
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -160,11 +160,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRouteTable](./Get-AzureRouteTable.md)
 
-[New-AzureRouteTable](./New-AzureRouteTable.md)
+[AzureRouteTable Baru](./New-AzureRouteTable.md)
 
-[Remove-AzureRouteTable](./Remove-AzureRouteTable.md)
+[Hapus-AzureRouteTable](./Remove-AzureRouteTable.md)
 
-[Remove-AzureSubnetRouteTable](./Remove-AzureSubnetRouteTable.md)
+[Hapus-AzureSubnetRouteTable](./Remove-AzureSubnetRouteTable.md)
 
 [Set-AzureSubnetRouteTable](./Set-AzureSubnetRouteTable.md)
 

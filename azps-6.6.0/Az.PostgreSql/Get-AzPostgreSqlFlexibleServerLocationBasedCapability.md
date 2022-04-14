@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Get-AzPostgreSqlFlexibleServerLocationBasedCapability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Get-AzPostgreSqlFlexibleServerLocationBasedCapability.md
 ms.openlocfilehash: fd1a7d021bc0ba0da709cb0129bf4978fef7e8c6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140306545"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142123289"
 ---
 # Get-AzPostgreSqlFlexibleServerLocationBasedCapability
 
 ## SYNOPSIS
-Mendapatkan informasi SKU yang tersedia untuk lokasi
+Dapatkan informasi SKU yang tersedia untuk lokasi
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.postgresql/get-azpostgresqlflexibleserverlocationbasedcapability) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.postgresql/get-azpostgresqlflexibleserverlocationbasedcapability) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +28,11 @@ Get-AzPostgreSqlFlexibleServerLocationBasedCapability -Location <String> [-Subsc
 ```
 
 ## DESCRIPTION
-Mendapatkan informasi SKU yang tersedia untuk lokasi
+Dapatkan informasi SKU yang tersedia untuk lokasi
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan kapabilitas lokasi menurut nama lokasi
+### Contoh 1: Dapatkan kapabilitas lokasi menurut nama lokasi
 ```powershell
 PS C:\> Get-AzPostgreSqlFlexibleServerLocationBasedCapability -Location eastus
 
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

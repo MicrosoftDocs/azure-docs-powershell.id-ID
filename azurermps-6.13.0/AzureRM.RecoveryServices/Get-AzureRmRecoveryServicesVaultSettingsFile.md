@@ -7,22 +7,22 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices/help/Get-AzureRmRecoveryServicesVaultSettingsFile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices/help/Get-AzureRmRecoveryServicesVaultSettingsFile.md
 ms.openlocfilehash: a0572e73d270a37b3c705018a38b4a88fe88d1e9
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428180"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141967619"
 ---
 # Get-AzureRmRecoveryServicesVaultSettingsFile
 
 ## SYNOPSIS
-Dapatkan file pengaturan vault Pemulihan Situs Azure.
+Mendapatkan file pengaturan brankas Azure Site Recovery.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
 ## SYNTAX
 
-### ForSite
+### Situs Web
 ```
 Get-AzureRmRecoveryServicesVaultSettingsFile [-Vault] <ARSVault> -SiteIdentifier <String>
  -SiteFriendlyName <String> [[-Path] <String>] [-SiteRecovery] [-DefaultProfile <IAzureContextContainer>]
@@ -42,39 +42,39 @@ Get-AzureRmRecoveryServicesVaultSettingsFile [-Vault] <ARSVault> [[-Path] <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmRecoveryServicesVaultSettingsFile** mendapatkan file pengaturan untuk vault Pemulihan Situs Azure.
+Cmdlet **Get-AzureRmRecoveryServicesVaultSettingsFile** mendapatkan file pengaturan untuk brankas Azure Site Recovery.
 
 ## EXAMPLES
 
-### Contoh 1: Daftarkan Windows Server atau DPM machine untuk Azure Backup
+### Contoh 1: Daftarkan mesin Server Windows atau DPM untuk Azure Backup
 ```
 PS C:\> $Vault01 = Get-AzureRmRecoveryServicesVault -Name "TestVault"
 PS C:\> $CredsPath = "C:\Downloads"
 PS C:\> $Credsfilename = Get-AzureRmRecoveryServicesVaultSettingsFile -Backup -Vault $Vault01 -Path $CredsPath
 ```
 
-Perintah pertama mendapatkan vault bernama TestVault, lalu menyimpannya dalam $Vault 01.
-Perintah kedua mengatur $CredsPath ke C:\Downloads.
-Perintah terakhir mendapatkan file kredensial vault untuk $Vault 01 menggunakan kredensial dalam $CredsPath Cadangan Azure.
+Perintah pertama mendapatkan kubah bernama TestVault, lalu menyimpannya dalam variabel $Vault 01.
+Perintah kedua mengatur variabel $CredsPath ke C:\Downloads.
+Perintah terakhir mendapatkan file kredensial kubah untuk $Vault 01 menggunakan kredensial di $CredsPath untuk Azure Backup.
 
 ### Contoh 2:
 ```
 PS C:\> $Credsfilename = Get-AzureRmRecoveryServicesVaultSettingsFile -SiteIdentifier -Vault $Vault01
 ```
 
-Perintah tersebut mendapatkan file kredensial vault untuk $Vault 01 file tipe vault Pemulihan.
+Perintah mendapatkan file kredensial kubah untuk $Vault 01 dari jenis kubah siteRecovery.
 
-### Contoh 3: Daftarkan Windows Server atau DPM machine untuk Azure Backup
+### Contoh 3: Daftarkan mesin server Windows atau DPM untuk Azure Backup
 ```
 PS C:\> $Credsfilename = Get-AzureRmRecoveryServicesVaultSettingsFile -SiteIdentifier -Vault $Vault01
 ```
 
-Perintah mendapatkan file kredensial vault untuk $Vault 01.
+Perintah mendapatkan file kredensial kubah untuk $Vault 01.
 
 ## PARAMETERS
 
-### -Backup
-Menunjukkan bahwa file kredensial vault dapat digunakan untuk Azure Backup.
+### -Cadangan
+Menunjukkan bahwa file kredensial kubah berlaku untuk Azure Backup.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -103,9 +103,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur ke file pengaturan vault Pemulihan Situs Azure.
-Anda dapat mengunduh file ini dari portal vault Pemulihan Situs Azure dan menyimpannya secara lokal.
+### -Jalur
+Menentukan jalur ke file pengaturan azure Site Recovery kubah.
+Anda dapat mengunduh file ini dari portal brankas Azure Site Recovery dan menyimpannya secara lokal.
 
 ```yaml
 Type: System.String
@@ -120,8 +120,8 @@ Accept wildcard characters: False
 ```
 
 ### -SiteFriendlyName
-Menentukan nama yang mudah digunakan.
-Gunakan parameter ini jika Anda mengunduh kredensial vault untuk situs Hyper-V.
+Menentukan nama situs yang mudah dikenali.
+Gunakan parameter ini jika Anda mengunduh kredensial kubah untuk situs Hyper-V.
 
 ```yaml
 Type: System.String
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 
 ### -SiteIdentifier
 Menentukan pengidentifikasi situs.
-Gunakan parameter ini jika Anda mengunduh kredensial vault untuk situs Hyper-V.
+Gunakan parameter ini jika Anda mengunduh kredensial kubah untuk situs Hyper-V.
 
 ```yaml
 Type: System.String
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -SiteRecovery
-Menunjukkan bahwa file kredensial vault dapat digunakan untuk Pemulihan Situs Azure.
+Menunjukkan bahwa file kredensial kubah berlaku untuk Azure Site Recovery.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -Vault
-Menentukan objek vault Pemulihan Situs Azure.
+Menentukan objek kubah Azure Site Recovery.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.ARSVault
@@ -182,11 +182,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.RecoveryServices.VAULT
+### Microsoft.Azure.Commands.RecoveryServices.ARSVault
 Parameter: Vault (ByValue)
 
 ## OUTPUTS
@@ -199,7 +199,7 @@ Parameter: Vault (ByValue)
 
 [Get-AzureRmRecoveryServicesVault](./Get-AzureRmRecoveryServicesVault.md)
 
-[New-AzureRmRecoveryServicesVault](./New-AzureRmRecoveryServicesVault.md)
+[Baru-AzureRmRecoveryServicesVault](./New-AzureRmRecoveryServicesVault.md)
 
 [Remove-AzureRmRecoveryServicesVault](./Remove-AzureRmRecoveryServicesVault.md)
 

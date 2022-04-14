@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.recov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Start-AzureRmRecoveryServicesAsrUnplannedFailoverJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Start-AzureRmRecoveryServicesAsrUnplannedFailoverJob.md
-ms.openlocfilehash: 1f1a521c223647f3273bd45e6217ce7c942e296cb95c3a034ab5a46d0f664ab3
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: b7a9dffe443ca7603b8b5a3bdd100560d83a498e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417418"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141967695"
 ---
 # Start-AzureRmRecoveryServicesAsrUnplannedFailoverJob
 
 ## SYNOPSIS
-Memulai operasi failover yang tidak terencana.
+Memulai operasi failover yang tidak dienkripsi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -46,8 +46,8 @@ Start-AzureRmRecoveryServicesAsrUnplannedFailoverJob -ReplicationProtectedItem <
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzureRmRecoveryServicesAsrTestFailoverJob** memulai uji failover dari item terproteksi replikasi Pemulihan Situs Azure atau paket pemulihan.
-Anda dapat memeriksa apakah pekerjaan berhasil dengan menggunakan cmdlet Get-AzureRmRecoveryServicesAsrJob cmdlet.
+Cmdlet **Start-AzureRmRecoveryServicesAsrTestFailoverJob** memulai uji failover item terproteksi azure Site Recovery replikasi atau paket pemulihan.
+Anda dapat memeriksa apakah pekerjaan berhasil menggunakan cmdlet Get-AzureRmRecoveryServicesAsrJob.
 
 ## EXAMPLES
 
@@ -56,12 +56,12 @@ Anda dapat memeriksa apakah pekerjaan berhasil dengan menggunakan cmdlet Get-Azu
 PS C:\> $currentJob = Start-AzureRmRecoveryServicesAsrTestFailoverJob -RecoveryPlan $RP -Direction PrimaryToRecovery -VMNetwork $TestRecoveryNetwork
 ```
 
-Memulai operasi uji failover untuk rencana pemulihan dengan parameter tertentu dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Memulai operasi failover pengujian untuk rencana pemulihan dengan parameter yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ## PARAMETERS
 
 ### -DataEncryptionPrimaryCertFile
-Menentukan jalur file sertifikat utama enkripsi data untuk failover dari Item Yang Diproteksi.
+Menentukan jalur file sertifikat utama enkripsi data untuk kegagalan Item Terproteksi.
 
 ```yaml
 Type: System.String
@@ -75,8 +75,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DataEncryptionSeccryptryCertFile
-Menentukan jalur file sertifikat enkripsi data untuk failover dari Item Yang Diproteksi.
+### -DataEncryptionSecondaryCertFile
+Menentukan jalur file sertifikat sekunder enkripsi data untuk kegagalan Item Terproteksi.
 
 ```yaml
 Type: System.String
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -PerformSourceSideAction
-Lakukan operasi di sisi sumber sebelum memulai failover yang tidak terencana.
+Jalankan operasi di sisi sumber sebelum memulai failover yang tidak dienkripsi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryPoint
-Menentukan titik pemulihan kustom ke failover tempat mesin yang diproteksi diproteksi.
+Menentukan titik pemulihan kustom untuk failover mesin yang dilindungi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRecoveryPoint
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryTag
-Menentukan tag pemulihan ke failover.
+Menentukan tag pemulihan untuk di-failover.
 
 ```yaml
 Type: System.String
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicationProtectedItem
-Menentukan item replikasi situs Azure yang diproteksi.
+Menentukan item yang diproteksi replikasi pemulihan situs azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

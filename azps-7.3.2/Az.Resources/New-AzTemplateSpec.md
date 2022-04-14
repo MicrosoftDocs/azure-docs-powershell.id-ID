@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzTemplateSpec.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzTemplateSpec.md
-ms.openlocfilehash: cd07877554df6910671133feffac4a5a8c8b0824
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: efa2c16683c0e90ac1fcb8be833b028f33c4f7b5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140195990"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141933675"
 ---
 # New-AzTemplateSpec
 
 ## SYNOPSIS
 Membuat Spesifikasi Templat baru.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-aztemplatespec) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,9 +39,9 @@ New-AzTemplateSpec [-ResourceGroupName] <String> [-Name] <String> -Version <Stri
 ```
 
 ## DESCRIPTION
-Membuat versi Spesifikasi Templat baru dengan konten Templat ARM yang ditentukan. Konten bisa berasal dari string JSON mentah (menggunakan kumpulan parameter **FromJsonStringParameterSet** ) atau dari file JSON/Bicep yang ditentukan (menggunakan kumpulan parameter **FromJsonFileParameterSet** ).  
+Membuat versi Spesifikasi Templat baru dengan konten Templat ARM tertentu. Konten dapat berasal dari string JSON mentah (menggunakan kumpulan parameter **FromJsonStringParameterSet** ) atau dari file JSON/Bicep tertentu (menggunakan kumpulan parameter **FromJsonFileParameterSet** ).  
 
-Jika Spesifikasi Templat akar belum ada, spesifikasi akan dibuat bersama dengan versi Spesifikasi Templat. Jika Spesifikasi Templat sudah ada dengan nama yang diberikan, dan versi yang ditentukan akan diperbarui (versi lain yang sudah ada akan dipertahankan).
+Jika Spesifikasi Templat akar belum ada, Spesifikasi Templat akan dibuat bersama dengan versi Spesifikasi Templat. Jika Spesifikasi Templat sudah ada dengan nama tertentu, spesifikasi dan versi yang ditentukan akan diperbarui (versi lain yang sudah ada akan dipertahankan).
 
 ## EXAMPLES
 
@@ -55,16 +58,16 @@ PS C:\> $templateJson = @"
 PS C:\> New-AzTemplateSpec -ResourceGroupName 'myRG' -Name 'myTemplateSpec' -Version 'v1.0' -Location 'West US' -TemplateJson $templateJson
 ```
 
-Membuat versi Spesifikasi Templat baru "v1.0" dalam Spesifikasi Templat bernama "myTemplateSpec". Versi yang ditentukan akan $templateJson sebagai konten Templat ARM versi.
+Membuat Versi Spesifikasi Templat baru "v1.0" dalam Spesifikasi Templat bernama "myTemplateSpec". Versi yang ditentukan akan memiliki $templateJson sebagai konten Templat ARM versi.
 
- **Catatan:** Templat ARM dalam contoh ini tidak tersedia karena tidak berisi sumber daya aktual.
+ **Catatan:** Templat ARM dalam contoh adalah no-op karena tidak berisi sumber daya aktual.
 
 ### Contoh 2
 ```powershell
 PS C:\> New-AzTemplateSpec -ResourceGroupName 'myRG' -Name 'myTemplateSpec' -Version 'v2.0' -Location 'West US' -TemplateFile 'myTemplateContent.json'
 ```
 
-Membuat versi Spesifikasi Templat baru "v2.0" dalam Spesifikasi Templat bernama "myTemplateSpec". Versi tertentu akan memiliki konten dari file lokal "myTemplateContent.json" sebagai konten Templat ARM versi.
+Membuat Versi Spesifikasi Templat baru "v2.0" dalam Spesifikasi Templat bernama "myTemplateSpec". Versi yang ditentukan akan memiliki konten dari file lokal "myTemplateContent.json" sebagai konten Templat ARM versi.
 
 ## PARAMETERS
 
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Deskripsi spesifikasi templat.
+Penjabaran dari spesifikasi templat.
 
 ```yaml
 Type: System.String
@@ -113,8 +116,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi saat menimpa versi yang sudah ada.
+### -Paksa
+Jangan meminta konfirmasi ketika menimpa versi yang sudah ada.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateJson
-JSON templat Azure Resource Manager.
+Templat Azure Resource Manager JSON.
 
 ```yaml
 Type: System.String
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -UIFormDefinitionFile
-UIForm untuk sumber daya spesifik templat
+UIForm untuk sumber daya templatspec
 
 ```yaml
 Type: System.String
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -UIFormDefinitionString
-UIForm untuk sumber daya spesifik templat
+UIForm untuk sumber daya templatspec
 
 ```yaml
 Type: System.String
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -294,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -309,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sqlvirtualmachin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/New-AzAvailabilityGroupListener.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/New-AzAvailabilityGroupListener.md
-ms.openlocfilehash: e1c339ced027f81efadfe220c44c73187617f03a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 563d82b4eecc43599441f3ca598a026877ae9e1f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140548512"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142025723"
 ---
 # New-AzAvailabilityGroupListener
 
 ## SYNOPSIS
-Membuat Pendengar Grup Ketersediaan yang baru.
+Membuat Pendengar Grup Ketersediaan baru.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sqlvirtualmachine/new-azavailabilitygrouplistener) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ New-AzAvailabilityGroupListener -AvailabilityGroupName <String> [-Port <Int32>]
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzAvailabilityGroupListener membuat Pendengar Grup Ketersediaan yang baru.
+Cmdlet New-AzAvailabilityGroupListener membuat Pendengar Grup Ketersediaan baru.
 
 ## EXAMPLES
 
@@ -47,11 +50,11 @@ Cmdlet New-AzAvailabilityGroupListener membuat Pendengar Grup Ketersediaan yang 
 PS C:\> New-AzAvailabilityGroupListener -AvailabilityGroupName AvailabilityGroup01 -LoadBalancerResourceId $LoadBalanceResourceId -SubnetId $SubnetId -ProbePort 59999 -SqlVirtualMachineId $VmResourceId1,$VmResourceId2 -Name AgListener01  -ResourceGroupName ResourceGroup01 -SqlVMGroupName SqlVmGroup01 -IpAddress 10.0.0.3
 ```
 
-Name ResourceGroupName GroupName AvailabilityGroupName
+Nama ResourceGroupName GroupName AvailabilityGroupName
 ----         ----------------- ---------    ---------------------
 AgListener01 ResourceGroup01 SqlVmGroup01 AvailabilityGroup01
 
-Membuat Grup Ketersediaan baru Pendengar AgListener01 untuk Grup Ketersediaan AvailabilityGroup01 di SQL Virtual Machine Group SqlVmGroup01.
+Membuat Availability Group Listener AgListener01 baru untuk Availability Group AvailabilityGroup01 di SQL Virtual Machine Group SqlVmGroup01.
 
 ## PARAMETERS
 
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpAddress
-Alamat Ip Privat
+Alamat IP Pribadi
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerResourceId
-Id Penyeimbang Muat
+Id Load Balancer
 
 ```yaml
 Type: System.String
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Nomor port Pendengar AG. Nilai Default adalah 1433.
+Nomor port AG Listener. Nilai Default adalah 1433.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -160,7 +163,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SportPort
+### -ProbePort
 Probe Port
 
 ```yaml
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddressResourceId
-Public Ip Address Resource Id
+Id Sumber Daya Alamat Ip Publik
 
 ```yaml
 Type: System.String
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlVirtualMachineId
-List of Sql VM Resource IDs
+Daftar ID Sumber Daya VM Sql
 
 ```yaml
 Type: System.String[]
@@ -220,8 +223,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SqlvMGroupName
-SQL grup mesin virtual.
+### -SqlVMGroupName
+SQL nama grup mesin virtual.
 
 ```yaml
 Type: System.String
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlVMGroupObject
-SQL grup mesin virtual.
+SQL objek Grup mesin virtual.
 
 ```yaml
 Type: Microsoft.Azure.Commands.SqlVirtualMachine.SqlVirtualMachine.Model.AzureSqlVMGroupModel
@@ -266,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -282,7 +285,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -297,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Send-AzIotHubDevice2CloudMessage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Send-AzIotHubDevice2CloudMessage.md
 ms.openlocfilehash: 3b255271474e8ae359cf0d00dae78ed2b5d08dda
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139975388"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142049843"
 ---
 # Send-AzIotHubDevice2CloudMessage
 
@@ -18,7 +18,7 @@ ms.locfileid: "139975388"
 Mengirim pesan perangkat ke awan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.iothub/send-aziothubdevice2cloudmessage) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/send-aziothubdevice2cloudmessage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Send-AzIotHubDevice2CloudMessage [-ResourceId] <String> -DeviceId <String> -Mess
 ```
 
 ## DESCRIPTION
-Perintah ini mendukung pengiriman pesan dengan properti sistem dan aplikasi.
+Perintah ini mendukung pengiriman pesan dengan properti aplikasi dan sistem.
 
 ## EXAMPLES
 
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pesan
-Isi pesan untuk dikirim ke Hub IoT.
+Isi pesan untuk dikirim ke IoT Hub.
 
 ```yaml
 Type: System.String
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -TransportType
-Tipe transportasi yang akan digunakan.
+Tipe transportasi untuk digunakan.
 Defaultnya adalah Amqp.
 
 ```yaml
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticPoolAdvisorAutoExecuteStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticPoolAdvisorAutoExecuteStatus.md
-ms.openlocfilehash: 34e4b6c702501658e598eebe39bab9c8627ff986
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 432049288000b9fcf634d2237c18d6678ba09e57
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140390663"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142025868"
 ---
 # Set-AzSqlElasticPoolAdvisorAutoExecuteStatus
 
 ## SYNOPSIS
-Memperbarui status dijalankan otomatis dari Azure SQL Elastis Pool Advisor.
+Memperbarui status eksekusi otomatis Azure SQL Elastic Pool Advisor.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqlelasticpooladvisorautoexecutestatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +31,11 @@ Set-AzSqlElasticPoolAdvisorAutoExecuteStatus -AdvisorName <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSqlElasticPoolAdvisorAutoExecuteStatus** mengatur properti jalankan otomatis untuk Penasihat Kumpulan SQL Elastis Azure.
+Cmdlet **Set-AzSqlElasticPoolAdvisorAutoExecuteStatus** mengatur properti auto execute untuk Azure SQL Elastic Pool Advisor.
 
 ## EXAMPLES
 
-### Contoh 1: Mengaktifkan jalankan otomatis untuk penasihat
+### Contoh 1: Aktifkan eksekusi otomatis untuk penasihat
 ```
 PS C:\>Set-AzSqlElasticPoolAdvisorAutoExecuteStatus -ResourceGroupName "WIRunnersProd" -ServerName "wi-runner-australia-east" -ElasticPoolName "WIRunnerPool" -AdvisorName "CreateIndex" -AutoExecuteStatus Enabled
 'Enabled'ElasticPoolName                : WIRunnerPool
@@ -47,12 +50,12 @@ RecommendationsStatus          : Ok
 RecommendedActions             : {}
 ```
 
-Perintah ini mengatur status jalankan otomatis penasihat bernama CreateIndex agar diaktifkan.
+Perintah ini mengatur status eksekusi otomatis penasihat bernama CreateIndex untuk diaktifkan.
 
 ## PARAMETERS
 
 ### -AdvisorName
-Menentukan nama penasihat di mana cmdlet ini memperbarui status jalankan otomatis.
+Menentukan nama penasihat yang mana cmdlet ini memperbarui status eksekusi otomatis.
 
 ```yaml
 Type: System.String
@@ -67,10 +70,10 @@ Accept wildcard characters: False
 ```
 
 ### -AutoExecuteStatus
-Menentukan nilai baru di mana cmdlet ini memperbarui status jalankan otomatis.
+Menentukan nilai baru di mana cmdlet ini memperbarui status eksekusi otomatis.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Diaktifkan
-- Dinonaktifkan
+- Tamu penyandang cacat
 - Default
 
 ```yaml
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -101,8 +104,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ElastisPoolName
-Menentukan nama kolam renang elastis.
+### -ElasticPoolName
+Menentukan nama kumpulan elastis.
 
 ```yaml
 Type: System.String
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya server yang berisi kelompok elastis ini.
+Menentukan nama grup sumber daya server yang berisi kumpulan elastis ini.
 
 ```yaml
 Type: System.String
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server tempat kolam elastis berada.
+Menentukan nama server tempat kumpulan elastis berada.
 
 ```yaml
 Type: System.String
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,23 +181,23 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### Microsoft.Azure.Commands.sql.Advisor.Cmdlet.AdvisorAutoExecuteStatus
+### Microsoft.Azure.Commands.Sql.Advisor.Cmdlet.AdvisorAutoExecuteStatus
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.sql.Advisor.Model.AzureSqlElasticPoolAdvisorModel
+### Microsoft.Azure.Commands.Sql.Advisor.Model.AzureSqlElasticPoolAdvisorModel
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, sql, elastis pool, mssql, advisor
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, kolam elastis, mssql, penasihat
 
 ## RELATED LINKS
 
 [Get-AzSqlElasticPoolAdvisor](./Get-AzSqlElasticPoolAdvisor.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.recov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Start-AzureRmRecoveryServicesAsrPlannedFailoverJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Start-AzureRmRecoveryServicesAsrPlannedFailoverJob.md
-ms.openlocfilehash: 7a3ddb8f22aafcc344560795a39aa650a1f65df02207c4cc1a5592439d940da7
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: f3c3946cd521da82026c986ecab3ab0c581dfaec
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140864036"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142136046"
 ---
 # Start-AzureRmRecoveryServicesAsrPlannedFailoverJob
 
@@ -39,8 +39,8 @@ Start-AzureRmRecoveryServicesAsrPlannedFailoverJob -RecoveryPlan <ASRRecoveryPla
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzureRmRecoveryServicesAsrPlannedFailoverJob** memulai failover yang direncanakan untuk item terproteksi replikasi Situs Azure atau paket pemulihan.
-Anda dapat memeriksa apakah pekerjaan berhasil dengan menggunakan cmdlet Get-AzureRmRecoveryServicesAsrJob cmdlet.
+Cmdlet **Start-AzureRmRecoveryServicesAsrPlannedFailoverJob** memulai failover yang direncanakan untuk item yang diproteksi azure Site Recovery replikasi atau rencana pemulihan.
+Anda dapat memeriksa apakah pekerjaan berhasil menggunakan cmdlet Get-AzureRmRecoveryServicesAsrJob.
 
 ## EXAMPLES
 
@@ -49,12 +49,12 @@ Anda dapat memeriksa apakah pekerjaan berhasil dengan menggunakan cmdlet Get-Azu
 PS C:\> $currentJob = Start-AzureRmRecoveryServicesAsrPlannedFailoverJob -RecoveryPlan $RP -Direction PrimaryToRecovery
 ```
 
-Memulai failover yang direncanakan untuk paket pemulihan ASR tertentu dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Memulai failover yang direncanakan untuk rencana pemulihan ASR yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ## PARAMETERS
 
 ### -CreateVmIfNotFound
-Buat mesin virtual jika tidak ditemukan saat gagal kembali ke kawasan utama (digunakan di pemulihan lokasi alternatif.) Nilai yang dapat diterima untuk parameter ini adalah:
+Buat mesin virtual jika tidak ditemukan saat gagal kembali ke kawasan utama (digunakan dalam pemulihan lokasi alternatif.) Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Ya
 - Tidak
@@ -87,7 +87,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DataEncryptionSeccryptryCertFile
+### -DataEncryptionSecondaryCertFile
 Menentukan file sertifikat sekunder.
 
 ```yaml
@@ -139,21 +139,21 @@ Accept wildcard characters: False
 ```
 
 ### -Optimize
-Menentukan apa yang akan dioptimalkan.
-Parameter ini berlaku ketika failover dilakukan dari situs Azure ke situs lokal yang memerlukan sinkronisasi data penting.
-Nilai valid adalah:
+Menentukan apa yang harus dioptimalkan.
+Parameter ini berlaku ketika failover dilakukan dari situs Azure ke situs lokal yang memerlukan sinkronisasi data yang besar.
+Nilai yang valid adalah:
 
-- ForDowntime
+- Untuk Waktu Henti
 - ForSynchronization
 
-Saat **ForDowntime** ditentukan, ini menunjukkan bahwa data disinkronkan sebelum failover untuk meminimalkan waktu henti.
+Ketika **ForDowntime** ditentukan, ini menunjukkan bahwa data disinkronkan sebelum failover untuk meminimalkan waktu henti.
 Sinkronisasi dilakukan tanpa mematikan mesin virtual.
 Setelah sinkronisasi selesai, pekerjaan ditangguhkan.
 Lanjutkan pekerjaan untuk melakukan operasi sinkronisasi tambahan yang mematikan mesin virtual.
 
-Saat **ForSynchronization** ditentukan, ini menunjukkan bahwa data disinkronkan selama failover saja sehingga sinkronisasi data diminimalkan.
-Dengan pengaturan ini diaktifkan, mesin virtual akan langsung mematikan.
-Sinkronisasi dimulai setelah penutupan untuk menyelesaikan operasi failover.
+Ketika **ForSynchronization** ditentukan, ini menunjukkan bahwa data hanya disinkronkan selama failover sehingga sinkronisasi data diminimalkan.
+Dengan mengaktifkan pengaturan ini, mesin virtual langsung dimatikan.
+Sinkronisasi dimulai setelah shutdown untuk menyelesaikan operasi failover.
 
 ```yaml
 Type: System.String
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryPlan
-Menentukan objek paket Pemulihan ASR yang terkait dengan rencana pemulihan yang akan gagal berakhir.
+Menentukan objek rencana Pemulihan ASR yang terkait dengan rencana pemulihan yang gagal.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRecoveryPlan
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicationProtectedItem
-Menentukan objek item dilindungi replikasi ASR yang terkait dengan item replikasi yang diproteksi yang akan gagal atas.
+Menentukan objek item terproteksi replikasi ASR yang terkait dengan item yang diproteksi replikasi untuk gagal.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicesProvider
-Mengidentifikasi host untuk membuat mesin virtual saat kegagalan ke lokasi alternatif dengan menentukan objek penyedia layanan ASR terkait dengan penyedia layanan ASR yang berjalan pada host.
+Mengidentifikasi host tempat untuk membuat mesin virtual saat gagal ke lokasi alternatif dengan menentukan objek penyedia layanan ASR yang terkait dengan penyedia layanan ASR yang berjalan di host.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRecoveryServicesProvider
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

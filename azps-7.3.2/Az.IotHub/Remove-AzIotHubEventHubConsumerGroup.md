@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/remove-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Remove-AzIotHubEventHubConsumerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Remove-AzIotHubEventHubConsumerGroup.md
-ms.openlocfilehash: 5cf69f16754788e002ecb394551957f272435636
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 00de7d0e1c9575c5fbdb9082ec4685fb3c324ffd
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140393958"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141937671"
 ---
 # Remove-AzIotHubEventHubConsumerGroup
 
 ## SYNOPSIS
-Menghapus grup konsumen eventhub.
+Menghapus grup pelanggan eventhub.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/remove-aziothubeventhubconsumergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,21 +29,21 @@ Remove-AzIotHubEventHubConsumerGroup [-ResourceGroupName] <String> [-Name] <Stri
 ```
 
 ## DESCRIPTION
-Menghapus grup konsumen eventhub.
+Menghapus grup pelanggan eventhub.
 
 ## EXAMPLES
 
-### Contoh 1 Menghapus grup konsumen eventhub dari eventhub telemetri
+### Contoh 1 Hapus grup pelanggan genap dari eventhub telemetri
 ```
 PS C:\> Remove-AzIotHubEventHubConsumerGroup -ResourceGroupName "myresourcegroup" -Name "myiothub" -EventHubConsumerGroupName myconsumergroup
 ```
 
-Menghapus grup konsumen yang bernama myconsumergroup dari IotHub bernama "myiothub"
+Menghapus grup konsumen bernama myconsumergroup dari IotHub bernama "myiothub"
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventHubConsumerGroupName
-Nama Grup Konsumen EventHub.
+Nama GrupDup EventHub Consumer.
 
 ```yaml
 Type: System.String
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

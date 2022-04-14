@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/TrafficManager/Commands.TrafficManager2/help/Enable-AzureRmTrafficManagerProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/TrafficManager/Commands.TrafficManager2/help/Enable-AzureRmTrafficManagerProfile.md
 ms.openlocfilehash: f7ac75789e4020d3d0e645e5dac8ef2430795eb7
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426564"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141966970"
 ---
 # Enable-AzureRmTrafficManagerProfile
 
@@ -28,39 +28,39 @@ Enable-AzureRmTrafficManagerProfile -Name <String> -ResourceGroupName <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### Object
+### Objek
 ```
 Enable-AzureRmTrafficManagerProfile -TrafficManagerProfile <TrafficManagerProfile>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Enable-AzureRmTrafficManagerProfile** mengaktifkan Azure Traffic Manager profil.
-Anda dapat menentukan objek profil menggunakan saluran atau sebagai nilai parameter.
-Alternatifnya, Anda bisa menentukan profil dengan menggunakan parameter *Name* dan *ResourceGroupName.*
+Cmdlet **Enable-AzureRmTrafficManagerProfile** mengaktifkan profil Azure Traffic Manager.
+Anda dapat menentukan objek profil menggunakan pipeline atau sebagai nilai parameter.
+Atau, Anda dapat menentukan profil menggunakan parameter *Name* and *ResourceGroupName* .
 
 ## EXAMPLES
 
-### Contoh 1: Mengaktifkan profil yang ditentukan berdasarkan nama
+### Contoh 1: Aktifkan profil yang ditentukan menurut nama
 ```
 PS C:\>Enable-AzureRmTrafficManagerProfile -Name "ContosoProfile" -ResourceGroupName "ResourceGroup11"
 ```
 
-Perintah ini mengaktifkan profil yang bernama ContosoProfile dalam ResourceGroup11.
+Perintah ini mengaktifkan profil bernama ContosoProfile di ResourceGroup11.
 
-### Contoh 2: Mengaktifkan profil menggunakan saluran
+### Contoh 2: Mengaktifkan profil menggunakan pipeline
 ```
 PS C:\>Get-AzureRmTrafficManagerProfile -Name "ContosoProfile" -ResourceGroupName "ResourceGroup11" | Enable-AzureRmTrafficManagerProfile
 ```
 
-Perintah ini mendapatkan profil bernama ContosoProfile dalam ResourceGroup11.
-Perintah tersebut lalu meneruskan profil itu ke cmdlet **Enable-AzureRmTrafficManagerProfile** dengan menggunakan operator pipeline.
-Cmdlet tersebut mengaktifkan profil tersebut.
+Perintah ini mendapatkan profil bernama ContosoProfile di ResourceGroup11.
+Perintah kemudian meneruskan profil tersebut ke cmdlet **Enable-AzureRmTrafficManagerProfile** menggunakan operator pipeline.
+Cmdlet itu memungkinkan profil tersebut.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama profil Traffic Manager yang cmdlet ini aktifkan.
+Menentukan nama profil Traffic Manager yang diaktifkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya.
-Cmdlet ini mengaktifkan Traffic Manager profil dalam grup yang ditentukan parameter ini.
+Cmdlet ini memungkinkan profil Traffic Manager dalam grup yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 
 ### -TrafficManagerProfile
 Menentukan objek **TrafficManagerProfile** untuk diaktifkan.
-Untuk mendapatkan objek **TrafficManagerProfile,** gunakan cmdlet Get-AzureRmTrafficManagerProfile baru.
+Untuk mendapatkan objek **TrafficManagerProfile** , gunakan cmdlet Get-AzureRmTrafficManagerProfile.
 
 ```yaml
 Type: Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerProfile
@@ -122,12 +122,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.Network.TrafficManagerProfile
-Cmdlet ini menerima objek **TrafficManagerProfile.**
+Cmdlet ini menerima objek **TrafficManagerProfile** .
 
 ## OUTPUTS
 
@@ -137,13 +137,13 @@ Cmdlet ini menerima objek **TrafficManagerProfile.**
 
 ## RELATED LINKS
 
-[Disable-AzureRmTrafficManagerProfile](./Disable-AzureRmTrafficManagerProfile.md)
+[Menonaktifkan-AzureRmTrafficManagerProfile](./Disable-AzureRmTrafficManagerProfile.md)
 
 [Get-AzureRmTrafficManagerProfile](./Get-AzureRmTrafficManagerProfile.md)
 
 [New-AzureRmTrafficManagerProfile](./New-AzureRmTrafficManagerProfile.md)
 
-[Remove-AzureRmTrafficManagerProfile](./Remove-AzureRmTrafficManagerProfile.md)
+[Hapus-AzureRmTrafficManagerProfile](./Remove-AzureRmTrafficManagerProfile.md)
 
 [Set-AzureRmTrafficManagerProfile](./Set-AzureRmTrafficManagerProfile.md)
 

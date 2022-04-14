@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.strea
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/StreamAnalytics/Commands.StreamAnalytics/help/Stop-AzureRmStreamAnalyticsJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/StreamAnalytics/Commands.StreamAnalytics/help/Stop-AzureRmStreamAnalyticsJob.md
-ms.openlocfilehash: af21f3f2ccbbb1b3803959046625aae163f5f35c0916daba9d5740c6bf7a4140
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: d4ec2865f0a0efcc4a306d0614df1c27adddc5b3
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418484"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141967266"
 ---
 # Stop-AzureRmStreamAnalyticsJob
 
 ## SYNOPSIS
-Menghentikan pekerjaan Analitik Stream.
+Menghentikan pekerjaan Stream Analytics.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,13 +28,13 @@ Stop-AzureRmStreamAnalyticsJob [-Name] <String> [-ResourceGroupName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzureRmStreamAnalyticsJob** secara asinkron menghentikan pekerjaan Analitik Stream di Azure dan menangani sumber daya yang digunakan.
-Definisi dan metadata pekerjaan tetap tersedia di dalam langganan Anda melalui Portal Azure dan API Manajemen, sehingga pekerjaan dapat diedit dan dimulai ulang.
-Anda tidak akan dikenakan biaya untuk pekerjaan di negara bagian Dihentikan.
+Cmdlet **Stop-AzureRmStreamAnalyticsJob** secara asinkron menghentikan pekerjaan Stream Analytics agar tidak berjalan di Azure dan mengalokasikan sumber daya yang sedang digunakan.
+Definisi pekerjaan dan metadata tetap tersedia dalam langganan Anda melalui Portal Azure dan API Manajemen, sehingga pekerjaan dapat diedit dan dimulai ulang.
+Anda tidak akan dikenai biaya untuk pekerjaan dalam status Dihentikan.
 
 ## EXAMPLES
 
-### CONTOH 1: Menghentikan pekerjaan yang sedang berjalan
+### CONTOH 1: Menghentikan pekerjaan yang berjalan
 ```
 PS C:\>Stop-AzureRmStreamAnalyticsJob -ResourceGroupName "StreamAnalytics-Default-West-US" -Name "StreamingJob"
 ```
@@ -44,7 +44,7 @@ Perintah ini menghentikan pekerjaan StreamingJob.
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama tugas Analitik Azure Stream yang akan dihentikan.
+Menentukan nama pekerjaan Azure Stream Analytics untuk dihentikan.
 
 ```yaml
 Type: System.String
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat pekerjaan Analitik Azure Stream dimiliki.
+Menentukan nama grup sumber daya tempat pekerjaan Azure Stream Analytics berada.
 
 ```yaml
 Type: System.String
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -109,7 +109,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmStreamAnalyticsJob](./New-AzureRmStreamAnalyticsJob.md)
 
-[Remove-AzureRmStreamAnalyticsJob](./Remove-AzureRmStreamAnalyticsJob.md)
+[Hapus-AzureRmStreamAnalyticsJob](./Remove-AzureRmStreamAnalyticsJob.md)
 
 [Start-AzureRmStreamAnalyticsJob](./Start-AzureRmStreamAnalyticsJob.md)
 

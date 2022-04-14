@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2TriggerRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2TriggerRun.md
 ms.openlocfilehash: b1eb6073f95ded3fa3555f6ba54b11064069e4e1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139977927"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142053011"
 ---
 # Get-AzDataFactoryV2TriggerRun
 
@@ -18,7 +18,7 @@ ms.locfileid: "139977927"
 Mengembalikan informasi tentang pemicu yang dijalankan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2triggerrun) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2triggerrun) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,11 +37,11 @@ Get-AzDataFactoryV2TriggerRun [-Name] <String> [-TriggerRunStartedAfter] <DateTi
 ```
 
 ## DESCRIPTION
-Perintah **Get-AzDataFactoryV2TriggerRun** mengembalikan informasi mendetail tentang pemicu yang dijalankan untuk pemicu yang ditentukan dalam jangka waktu yang ditentukan.
+Perintah **Get-AzDataFactoryV2TriggerRun** mengembalikan informasi mendetail tentang pemicu yang dijalankan untuk pemicu tertentu dalam jangka waktu tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan informasi tentang trigger run
+### Contoh 1: Dapatkan informasi tentang pemicu jalankan
 ```
 PS C:\> Get-AzDataFactoryV2TriggerRun -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -TriggerName "WikiTrigger" -TriggerRunStartedAfter "2017-09-01" -TriggerRunStartedBefore "2019-09-30"
 
@@ -54,7 +54,7 @@ PS C:\> Get-AzDataFactoryV2TriggerRun -ResourceGroupName "ADF" -DataFactoryName 
     Status              : Succeeded
 ```
 
-Perintah ini memperlihatkan informasi tentang berjalan untuk "WikiTrigger" di pabrik "WikiADF" yang dimulai antara "2017-09-01" dan "2019-09-30".
+Perintah ini memperlihatkan informasi tentang jalankan untuk "WikiTrigger" di pabrik "WikiADF" yang dimulai antara "2017-09-01" dan "2019-09-30".
 
 ## PARAMETERS
 
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -133,8 +133,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -TriggerRunStartedAfter
-Waktu di atau setelahnya pemicu berjalan untuk dijalankan dalam format ISO8601.
+### -TriggerRunstartedAfter
+Waktu di atau setelah pemicu dijalankan mulai dijalankan dalam format ISO8601.
 
 ```yaml
 Type: System.DateTime
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -TriggerRunStartedBefore
-Waktu pada atau sebelum pemicu dijalankan mulai dijalankan dalam format ISO8601.
+Waktu di atau sebelum pemicu dijalankan mulai dijalankan dalam format ISO8601.
 
 ```yaml
 Type: System.DateTime
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

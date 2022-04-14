@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/New-AzureRmGalleryImageDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/New-AzureRmGalleryImageDefinition.md
 ms.openlocfilehash: 8dcfe4adedd7da375e888dade108125d7899d7d6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140853861"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141927298"
 ---
 # New-AzureRmGalleryImageDefinition
 
 ## SYNOPSIS
-Buat definisi gambar galeri.
+Membuat definisi gambar galeri.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -33,7 +33,7 @@ New-AzureRmGalleryImageDefinition [-ResourceGroupName] <String> [-GalleryName] <
 ```
 
 ## DESCRIPTION
-Buat definisi gambar galeri.
+Membuat definisi gambar galeri.
 
 ## EXAMPLES
 
@@ -42,12 +42,12 @@ Buat definisi gambar galeri.
 PS C:\> New-AzureRmGalleryImageDefinition -ResourceGroupName $resourceGroupName -GalleryName $galleryName -Name $galleryImageDefinitionName -Location $location -Publisher $publisherName -Offer $offerName -Sku $skuName -OsState "Generalized" -OsType "Linux" -Description $description -Eula $eula -PrivacyStatementUri $privacyStatementUri -ReleaseNoteUri $releaseNoteUri -DisallowedDiskType $disallowedDiskTypes -EndOfLifeDate $endOfLifeDate -MinimumMemory $minMemory -MaximumMemory $maxMemory -MinimumVCPU $minVCPU -MaximumVCPU $maxVCPU -PurchasePlanName $purchasePlanName -PurchasePlanProduct $purchasePlanProduct -PurchasePlanPublisher $purchasePlanPublisher
 ```
 
-Buat definisi gambar galeri.
+Membuat definisi gambar galeri.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Deskripsi sumber daya Definisi gambar galeri. 
+Deskripsi sumber daya definisi gambar galeri. 
 
 ```yaml
 Type: System.String
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisallowedDiskType
-Tipe disk yang tidak diizinkan.
+Tipe disk yang tidak diperbolehkan.
 
 ```yaml
 Type: System.String[]
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndOfLifeDate
-Tanggal masa berakhir galeri Definisi Gambar
+Tanggal berakhirnya masa pakai galeri Definisi Gambar
 
 ```yaml
 Type: System.DateTime
@@ -166,8 +166,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Maximum Maximum Maksimal
-Jumlah maksimal memori yang direkomendasikan
+### -MaximumMemory
+Maksimum memori yang disarankan
 
 ```yaml
 Type: System.Int32
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaximumVCPU
-Jumlah maksimal inti CPU yang direkomendasikan
+Maksimum inti CPU yang direkomendasikan
 
 ```yaml
 Type: System.Int32
@@ -196,8 +196,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Minimum Minimum MinimumMal
-Minimum memori yang direkomendasikan
+### -MinimumMemory
+Minimum memori yang disarankan
 
 ```yaml
 Type: System.Int32
@@ -241,8 +241,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Offer
-Nama galeri Penawaran Definisi Gambar.
+### -Penawaran
+Nama penawaran Definisi Gambar galeri.
 
 ```yaml
 Type: System.String
@@ -289,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivacyStatementUri
-Uri pernyataan privasi.
+Pernyataan privasi uri.
 
 ```yaml
 Type: System.String
@@ -304,7 +304,7 @@ Accept wildcard characters: False
 ```
 
 ### -Publisher
-Nama penerbit Definisi Gambar galeri.
+Nama galeri penerbit Definisi Gambar.
 
 ```yaml
 Type: System.String
@@ -364,7 +364,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReleaseNoteUri
-Uri catatan rilis.
+Catatan rilis uri.
 
 ```yaml
 Type: System.String
@@ -424,7 +424,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -440,7 +440,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -455,7 +455,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

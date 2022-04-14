@@ -4,11 +4,11 @@ ms.assetid: 75A50C59-28D1-4D29-A420-D24BF479F79E
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 1dd6da9a2bd726552600a67572abed7a8438bdd3
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425079"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141920217"
 ---
 # Remove-AzureDisk
 
@@ -25,28 +25,28 @@ Remove-AzureDisk [-DiskName] <String> [-DeleteVHD] [-Profile <AzureSMProfile>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureDisk** menghapus disk dari penyimpanan disk Azure di langganan saat ini.
+Cmdlet **Remove-AzureDisk** menghapus disk dari penyimpanan disk Azure dalam langganan saat ini.
 Secara default, cmdlet ini tidak menghapus file hard disk virtual (VHD) dari penyimpanan blob.
-Untuk menghapus VHD, tentukan parameter *DeleteVHD.*
+Untuk menghapus VHD, tentukan parameter *DeleteVHD* .
 
 ## EXAMPLES
 
-### Contoh 1: Hapus disk
+### Contoh 1: Menghapus disk
 ```
 PS C:\> Remove-AzureDisk -DiskName "ContosoDataDisk"
 ```
 
-Perintah ini menghapus disk bernama disk ContosoDataDisk dari penyimpanan disk.
+Perintah ini menghapus disk bernama ContosoDataDisk disk dari repository disk.
 Perintah tidak menghapus VHD.
 
-### Contoh 2: Menghapus disk
+### Contoh 2: Menghapus dan menghapus disk
 ```
 PS C:\> Remove-AzureDisk -DiskName "ContosoDataDisk" -DeleteVHD
 ```
 
-Perintah ini menghapus disk bernama disk ContosoDataDisk dari penyimpanan disk.
+Perintah ini menghapus disk bernama ContosoDataDisk disk dari repository disk.
 Perintah ini menentukan parameter DeleteVHD.
-Oleh karena itu, perintah akan menghapus VHD dari Azure Storage.
+Oleh karena itu, perintah menghapus VHD dari Azure Storage.
 
 ## PARAMETERS
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskName
-Menentukan nama disk data di penyimpanan disk yang dihapus cmdlet ini.
+Menentukan nama disk data dalam penyimpanan disk yang dihapus cmdlet ini.
 
 ```yaml
 Type: String
@@ -81,16 +81,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -120,8 +120,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

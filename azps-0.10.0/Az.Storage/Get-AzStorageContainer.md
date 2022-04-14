@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/Get-AzStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/Get-AzStorageContainer.md
 ms.openlocfilehash: 16365ea4f5c2826c173525b90e52fd2103d5d7dc
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426957"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141963249"
 ---
 # Get-AzStorageContainer
 
@@ -39,26 +39,26 @@ Cmdlet **Get-AzStorageContainer** mencantumkan wadah penyimpanan yang terkait de
 
 ## EXAMPLES
 
-### Contoh 1: Get Azure Storage blob by name
+### Contoh 1: Dapatkan Azure Storage blob menurut nama
 ```
 PS C:\>Get-AzStorageContainer -Name container*
 ```
 
 Contoh ini menggunakan karakter wildcard untuk mengembalikan daftar semua wadah dengan nama yang dimulai dengan wadah.
 
-### Contoh 2: Dapatkan Azure Storage wadah menurut prefiks nama wadah
+### Contoh 2: Dapatkan kontainer Azure Storage menurut prefiks nama kontainer
 ```
 PS C:\>Get-AzStorageContainer -Prefix "container"
 ```
 
-Contoh ini menggunakan parameter *Prefix* untuk mengembalikan daftar semua wadah dengan nama yang dimulai dengan wadah.
+Contoh ini menggunakan parameter *Prefiks* untuk mengembalikan daftar semua kontainer dengan nama yang dimulai dengan kontainer.
 
 ## PARAMETERS
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu yang habis di sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba permintaan.
-Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini akan mengembalikan kesalahan.
+Menentukan interval waktu habis pihak klien, dalam hitungan detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -73,11 +73,11 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan jumlah maksimum panggilan jaringan bersama.
-Anda dapat menggunakan parameter ini untuk membatasi konkurensi guna membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Menentukan maksimum panggilan jaringan serentak.
+Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
 Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
-Parameter ini bisa membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth yang rendah, seperti 100 kilobit per detik.
-Nilai default adalah 10.
+Parameter ini dapat membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth rendah, seperti 100 kilobit per detik.
+Nilai defaultnya adalah 10.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -93,8 +93,8 @@ Accept wildcard characters: False
 
 ### -Konteks
 Menentukan konteks penyimpanan.
-Untuk membuatnya, Anda dapat menggunakan cmdlet New-AzStorageContext baru.
-Cmdlet akan gagal ketika Anda menggunakan konteks penyimpanan yang dibuat dari SAS Token karena cmdlet akan meminta izin wadah yang Storage izin kunci akun.
+Untuk membuatnya, Anda bisa menggunakan cmdlet New-AzStorageContext.
+Cmdlet akan gagal ketika Anda menggunakan konteks penyimpanan yang dibuat dari Token SAS karena cmdlet akan meminta izin kontainer yang memerlukan izin kunci akun Storage.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContinuationToken
-Menentukan token lanjutan untuk daftar blob.
+Menentukan token kelanjutan untuk daftar blob.
 
 ```yaml
 Type: Microsoft.WindowsAz.Storage.Blob.BlobContinuationToken
@@ -154,9 +154,9 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan wadah nama.
-Jika nama wadah kosong, cmdlet akan mencantumkan semua wadah.
-Jika tidak, daftar itu akan mencantumkan semua wadah yang cocok dengan nama yang ditentukan atau pola nama biasa.
+Menentukan nama wadah.
+Jika nama wadah kosong, cmdlet mencantumkan semua wadah.
+Jika tidak, daftar semua wadah yang cocok dengan nama yang ditentukan atau pola nama reguler.
 
 ```yaml
 Type: System.String
@@ -170,7 +170,7 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Prefix
+### -Prefiks
 Menentukan prefiks yang digunakan dalam nama wadah atau wadah yang ingin Anda dapatkan.
 Anda dapat menggunakan ini untuk menemukan semua wadah yang dimulai dengan string yang sama, seperti "saya" atau "uji".
 
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan interval waktu habis di sisi layanan, dalam detik, untuk permintaan.
+Menentukan interval batas waktu sisi layanan, dalam detik, untuk permintaan.
 Jika interval yang ditentukan berlalu sebelum layanan memproses permintaan, layanan penyimpanan mengembalikan kesalahan.
 
 ```yaml
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -213,7 +213,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.WindowsAzure.commands.common. Storage. ResourceModel.AzureStorageContainer
+### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureStorageContainer
 
 ## CATATAN
 
@@ -221,7 +221,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzStorageContainer](./New-AzStorageContainer.md)
 
-[Remove-AzStorageContainer](./Remove-AzStorageContainer.md)
+[Hapus-AzStorageContainer](./Remove-AzStorageContainer.md)
 
 [Set-AzStorageContainerAcl](./Set-AzStorageContainerAcl.md)
 

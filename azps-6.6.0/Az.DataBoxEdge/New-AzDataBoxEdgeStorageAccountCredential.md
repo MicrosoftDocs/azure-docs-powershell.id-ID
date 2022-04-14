@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeStorageAccountCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeStorageAccountCredential.md
 ms.openlocfilehash: f7baf1ccfcb1b9a48bbe13401f2e01c099e1372a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139978143"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141913359"
 ---
 # New-AzDataBoxEdgeStorageAccountCredential
 
 ## SYNOPSIS
-Membuat kredensial baru untuk akun penyimpanan edge pada perangkat.
+Membuat kredensial baru untuk akun penyimpanan edge di perangkat.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.databoxedge/new-azdataboxedgestorageaccountcredential) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/new-azdataboxedgestorageaccountcredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-AzDataBoxEdgeStorageAccountCredential [-ResourceGroupName] <String> [-Device
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataBoxEdgeStorageAccountCredential** membuat kredensial akun penyimpanan tepi baru untuk perangkat Data Box Edge.
+Cmdlet **New-AzDataBoxEdgeStorageAccountCredential** membuat kredensial akun penyimpanan edge baru untuk perangkat Data Box Edge.
 
 ## EXAMPLES
 
@@ -44,7 +44,7 @@ storageAccountCredentalName storageAccountName     Enabled    resourceGroupName
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountAccessKey
-kunci akses akun penyimpanan
+menyediakan kunci akses akun penyimpanan
 
 ```yaml
 Type: System.Security.SecureString
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountType
-Kemungkinan Storage Access generalPurposeStorage, BlockStorage
+Kemungkinan tipe Akses Storage GeneralPurposeStorage, BlockStorage
 
 ```yaml
 Type: System.String
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,11 +194,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
