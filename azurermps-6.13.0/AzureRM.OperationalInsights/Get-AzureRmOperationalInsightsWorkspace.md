@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/OperationalInsights/Commands.OperationalInsights/help/Get-AzureRmOperationalInsightsWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/OperationalInsights/Commands.OperationalInsights/help/Get-AzureRmOperationalInsightsWorkspace.md
 ms.openlocfilehash: a88806ddd934c2c7ee4eb8bb6f463da24ecefde7
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428350"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141819353"
 ---
 # Get-AzureRmOperationalInsightsWorkspace
 
@@ -29,7 +29,7 @@ Get-AzureRmOperationalInsightsWorkspace [[-ResourceGroupName] <String>] [[-Name]
 
 ## DESCRIPTION
 Cmdlet **Get-AzureRmOperationalInsightsWorkspace** mendapatkan informasi tentang ruang kerja yang sudah ada.
-Jika Anda menentukan nama ruang kerja, cmdlet ini mendapatkan informasi tentang ruang kerja itu.
+Jika Anda menentukan nama ruang kerja, cmdlet ini akan mendapatkan informasi tentang ruang kerja tersebut.
 Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua ruang kerja dalam grup sumber daya.
 Jika Anda tidak menentukan nama dan grup sumber daya, cmdlet ini mendapatkan informasi tentang semua ruang kerja dalam langganan.
 
@@ -40,12 +40,12 @@ Jika Anda tidak menentukan nama dan grup sumber daya, cmdlet ini mendapatkan inf
 PS C:\>Get-AzureRmOperationalInsightsWorkspace -Name "MyWorkspace" -ResourceGroupName "ContosoResourceGroup"
 ```
 
-Perintah ini mendapatkan ruang kerja yang bernama MyWorkspace dalam grup sumber daya bernama ContosoResourceGroup.
+Perintah ini mendapatkan ruang kerja bernama MyWorkspace dalam grup sumber daya bernama ContosoResourceGroup.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -104,6 +104,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Cmdlet Azure Operational Insights](./AzureRM.OperationalInsights.md)
+[Cmdlet Insights Operasional Azure](./AzureRM.OperationalInsights.md)
 
 

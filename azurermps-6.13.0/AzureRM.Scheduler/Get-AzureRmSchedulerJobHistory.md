@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.sched
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Scheduler/Commands.Scheduler/help/Get-AzureRmSchedulerJobHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Scheduler/Commands.Scheduler/help/Get-AzureRmSchedulerJobHistory.md
-ms.openlocfilehash: c3a32f3d647a27bdfc72bda1bd80c4d7ead55f6ad179f4ef23d5cfc1617a3de6
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 5bf5745270db8cea076ccac9cff2d4e9b7a4bc06
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417740"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142096809"
 ---
 # Get-AzureRmSchedulerJobHistory
 
@@ -35,7 +35,7 @@ Cmdlet **Get-AzureRmSchedulerJobHistory** mendapatkan riwayat untuk pekerjaan Az
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -50,7 +50,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobCollectionName
-Menentukan nama koleksi pekerjaan.
+Menentukan nama kumpulan pekerjaan.
 
 ```yaml
 Type: System.String
@@ -70,7 +70,7 @@ Cmdlet ini mendapatkan riwayat yang sesuai dengan status yang Anda tentukan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Selesai 
 - Gagal 
-- Menunda
+- Ditunda
 
 ```yaml
 Type: System.String
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobName
-Menentukan nama pekerjaan yang mendapatkan riwayat cmdlet ini.
+Menentukan nama pekerjaan di mana cmdlet ini mendapatkan riwayat.
 
 ```yaml
 Type: System.String
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan grup sumber daya tempat pekerjaan tersebut berada.
+Menentukan grup sumber daya tempat pekerjaan berada.
 
 ```yaml
 Type: System.String
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

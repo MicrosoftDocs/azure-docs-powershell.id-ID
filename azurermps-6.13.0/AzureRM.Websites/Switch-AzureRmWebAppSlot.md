@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.websi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/Switch-AzureRmWebAppSlot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/Switch-AzureRmWebAppSlot.md
-ms.openlocfilehash: 7bde0f87aa10c10daf92bbc55bfb0d411f31d4267ed66f4ccf419d975659914d
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: ada4e30b69d4dcb6193db94e3f770966c15c5f70
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140862836"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142096061"
 ---
 # Switch-AzureRmWebAppSlot
 
@@ -37,7 +37,7 @@ Switch-AzureRmWebAppSlot [-SourceSlotName] <String> [[-DestinationSlotName] <Str
 ```
 
 ## DESCRIPTION
-**Switch-AzureRmWebAppSlot** menukar dua slot yang terkait dengan Azure Web App.
+**Switch-AzureRmWebAppSlot** mengalihkan dua slot yang terkait dengan Azure Web App.
 
 ## EXAMPLES
 
@@ -46,12 +46,12 @@ Switch-AzureRmWebAppSlot [-SourceSlotName] <String> [[-DestinationSlotName] <Str
 PS C:\> Switch-AzureRmWebAppSlot -SourceSlotName "sourceslot" -DestinationSlotName "destinationslot" -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp"
 ```
 
-Perintah ini akan mengalihkan slot "sourceslot" slot dengan "destinationslot" untuk Web App ContosoWebApp terkait dengan grup sumber daya Default-Web-WestUS
+Perintah ini akan beralih slot "sourceslot" slot dengan "destinationslot" untuk Web App ContosoWebApp yang terkait dengan grup sumber daya Default-Web-WestUS
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreserveVnet
-Pertahankan Boolean Vnet
+Pertahankan Vnet Boolean
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -SwapWithPreviewAction
-Menukar dengan tindakan pratinjau
+Menukar Dengan Tindakan Pratinjau
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.WebApps.Utilities.SwapWithPreviewAction]
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
