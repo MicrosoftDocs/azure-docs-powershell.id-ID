@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesAsrReplicationProtectedItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesAsrReplicationProtectedItem.md
 ms.openlocfilehash: c3d25342405047436a60907593f4d147972e5b41
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139970367"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141861224"
 ---
 # Set-AzRecoveryServicesAsrReplicationProtectedItem
 
 ## SYNOPSIS
-Mengatur properti pemulihan seperti jaringan target dan ukuran mesin virtual untuk item dilindungi replikasi tertentu.
+Mengatur properti pemulihan seperti jaringan target dan ukuran mesin virtual untuk item yang diproteksi replikasi tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/set-azrecoveryservicesasrreplicationprotecteditem) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/set-azrecoveryservicesasrreplicationprotecteditem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +46,7 @@ Set-AzRecoveryServicesAsrReplicationProtectedItem -InputObject <ASRReplicationPr
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzRecoveryServicesAsrReplicationProtectedItem** mengatur properti pemulihan untuk Replikasi Item yang Diproteksi.
+Cmdlet **Set-AzRecoveryServicesAsrReplicationProtectedItem** mengatur properti pemulihan untuk Item terproteksi Replikasi.
 
 ## EXAMPLES
 
@@ -55,28 +55,28 @@ Cmdlet **Set-AzRecoveryServicesAsrReplicationProtectedItem** mengatur properti p
 PS C:\> $currentJob = Set-AzRecoveryServicesAsrReplicationProtectedItem -ReplicationProtectedItem $RPI -UpdateNic $NicId -RecoveryNetworkId $AzureNetworkID -RecoveryNicSubnetName $subnetName
 ```
 
-Memulai operasi pembaruan item replikasi yang diproteksi pengaturan menggunakan parameter yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Memulai operasi memperbarui pengaturan item yang diproteksi replikasi menggunakan parameter tertentu dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ### Contoh 2
 ```
 PS C:\> $currentJob = Set-AzRecoveryServicesAsrReplicationProtectedItem -InputObject $rpi -UpdateNic "00:50:56:8F:3F:7B" -RecoveryNetworkId $recoveryNetwork -RecoveryNicSubnetName $recoverySubnet -NicSelectionType NotSelected
 ```
 
-Memulai operasi untuk memperbarui item replikasi yang diproteksi pengaturan Kartu Antarmuka Jaringan (Pengurangan NIC) menggunakan parameter yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Memulai operasi memperbarui item terproteksi replikasi pengaturan kartu Antarmuka Jaringan (Reduksi NIC) menggunakan parameter yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ### Contoh 3
 ```
 PS C:\> $currentJob = Set-AzRecoveryServicesAsrReplicationProtectedItem -InputObject $rpi -PrimaryNic "00:50:56:8F:3F:7B"
 ```
 
-Memulai operasi pembaruan item terlindungi replikasi NIC(untuk digunakan untuk pengaturan recovered vm )menggunakan parameter tertentu dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Memulai operasi memperbarui item terproteksi replikasi primer NIC(untuk digunakan untuk pulih vm )pengaturan menggunakan parameter yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ### Contoh 4
 ```
 PS C:\>Set-ASRReplicationProtectedItem -InputObject $rpi -UpdateNic $updateNic -RecoveryNetworkId $recoveryNetworkId -RecoveryNicSubnetName $recoveryNicSubnetName�-NicSelectionType SelectedByUser
 ```
 
-Memulai operasi untuk memperbarui item dilindungi replikasi NIC (untuk digunakan bagi pengaturan recovered vm )menggunakan parameter tertentu dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Memulai operasi memperbarui item yang dilindungi replikasi NIC (untuk digunakan untuk vm )pengaturan yang dipulihkan menggunakan parameter yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ### Contoh 5
 ```
@@ -84,8 +84,8 @@ PS C:\> $currentJob = Set-AzureRmRecoveryServicesAsrReplicationProtectedItem -In
         -RecoveryNetworkId $recoveryNetworkId -RecoveryNicSubnetName $recoveryNicSubnetName -EnableAcceleratedNetworkingOnRecovery
 ```
 
-Memulai operasi pembaruan item terlindungi replikasi yang dipilih noc tp enable yang dipercepat dalam pemulihan VM(untuk Azure ke pemulihan bencana Azure).
-Jangan lewati -EnableAcceleratedNetworkingOnRecovery untuk menonaktifkan Jaringan yang dipercepat.
+Memulai operasi memperbarui item yang dilindungi replikasi dipilih noc tp mengaktifkan percepatan jaringan pada pemulihan VM(untuk Azure ke Azure pemulihan bencana).
+Jangan lewat -EnableAcceleratedNetworkingOnRecovery untuk menonaktifkan jaringan yang dipercepat.
 
 ### Contoh 6
 ```
@@ -94,26 +94,26 @@ PS C:\> $currentJob = Set-AzureRmRecoveryServicesAsrReplicationProtectedItem -In
      -KeyEncryptionVaultId $KeyEncryptionVaultId  -KeyEncryptionKeyUrl $KeyEncryptionKeyUrl
 ```
 
-Mulai operasi pembaruan untuk item terproteksi replikasi terenkripsi yang ditentukan agar menggunakan detail enkripsi yang disertakan untuk vm failover.
+Mulai operasi pembaruan untuk item terproteksi replikasi terenkripsi tertentu untuk menggunakan detail enkripsi yang disediakan untuk VM failover.
 
 ### Contoh 7
 ```
 PS C:\> $currentJob = Set-AzureRmRecoveryServicesAsrReplicationProtectedItem -InputObject $ rpi -RecoveryProximityPlacementGroupId $ppg
 ```
 
-Mulai operasi pembaruan untuk item dilindungi replikasi tertentu untuk menggunakan grup penempatan kedekatan yang disediakan untuk VM failover.
+Mulai operasi pembaruan untuk item yang diproteksi replikasi tertentu untuk menggunakan grup penempatan kedekatan yang disediakan untuk VM failover.
 
 ### Contoh 8
 ```
 PS C:\> $currentJob = Set-AzureRmRecoveryServicesAsrReplicationProtectedItem -InputObject $ rpi -RecoveryVirtualMachineScaleSetId $vmss
 ```
 
-Mulai operasi pembaruan untuk item dilindungi replikasi tertentu agar menggunakan skala mesin virtual yang disediakan yang diatur untuk VM failover.
+Mulai operasi pembaruan untuk item yang dilindungi replikasi tertentu untuk menggunakan kumpulan skala mesin virtual yang disediakan untuk VM failover.
 
 ## PARAMETERS
 
 ### -ASRVMNicConfiguration
-Menentukan detail konfigurasi failover dan failover NIC uji.
+Menentukan detail konfigurasi NIC failover dan failover uji coba.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRVMNicConfig[]
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureToAzureUpdateReplicationConfiguration
-Menentukan konfigurasi disk yang akan diperbarui untuk disk terkelola Vm (Azure ke Azure DR scenrio).
+Menentukan konfigurasi disk yang akan diperbarui untuk Vm disk terkelola (Azure ke Azure DR scenrio).
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRAzuretoAzureDiskReplicationConfig[]
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionSecretUrl
-Menentukan URL rahasia enkripsi disk dengan version(Enkripsi disk Azure) untuk digunakan sebagai VM pemulihan setelah failover.
+Menentukan URL rahasia enkripsi disk dengan versi(Enkripsi disk Azure) untuk digunakan sebagai pemulihan VM setelah failover.
 
 ```yaml
 Type: System.String
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionVaultId
-Menentukan ID penyimpanan kunci rahasia enkripsi disk(Enkripsi disk Azure) untuk digunakan sebagai VM pemulihan setelah failover.
+Menentukan ID kubah kunci rahasia enkripsi disk(enkripsi disk Azure) untuk digunakan sebagai pemulihan VM setelah failover.
 
 ```yaml
 Type: System.String
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskIdToDiskEncryptionSetMap
-Kamus Id sumber daya disk ke set enkripsi disk Id ARM.
+Kamus Id sumber daya disk untuk mengenkripsi disk set ARM Id.
 
 ```yaml
 Type: System.Collections.Generic.IDictionary`2[System.String,System.String]
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskTag
-Tentukan tag untuk disk VM. Ini berlaku untuk Vmware ke Azure dan HyperV ke penyedia Azure.
+Tentukan tag untuk disk VM. Ini berlaku untuk Vmware untuk Azure dan HyperV untuk penyedia Azure.
 
 ```yaml
 Type: System.Collections.Generic.IDictionary`2[System.String,System.String]
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableAcceleratedNetworkingOnRecovery
-Menentukan NIC tertentu pada pemulihan vm setelah failover menggunakan jaringan yang dipercepat.
+Menentukan NIC yang ditentukan pada vm pemulihan setelah failover menggunakan jaringan yang dipercepat.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek input ke cmdlet: Objek item terproteksi replikasi ASR yang terkait dengan item dilindungi replikasi untuk diperbarui.
+Objek input ke cmdlet: Objek item yang diproteksi replikasi ASR terkait dengan item yang diproteksi replikasi untuk diperbarui.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem
@@ -249,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyEncryptionKeyUrl
-Menentukan versi URL kunci enkripsi disk(Enkripsi disk Azure) untuk digunakan sebagai VM pemulihan setelah failover.
+Menentukan versi URL kunci enkripsi disk(enkripsi disk Azure) untuk digunakan sebagai pemulihan VM setelah failover.
 
 ```yaml
 Type: System.String
@@ -264,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyEncryptionVaultId
-Menentukan kunci enkripsi diskVault ID(Enkripsi disk Azure) untuk digunakan sebagai vm pemulihan setelah failover.
+Menentukan kunci enkripsi disk KeyVault ID(Enkripsi disk Azure) untuk digunakan sebagai pemulihan VM setelah failover.
 
 
 ```yaml
@@ -280,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### -LicenseType
-Spesifikasi pilihan tipe lisensi yang akan digunakan untuk mesin virtual Windows Server. Jika Anda berhak menggunakan Manfaat Penggunaan Hibrid Azure (HUB) untuk migrasi dan ingin menentukan bahwa pengaturan HUB akan digunakan saat gagal atas item yang diproteksi ini, atur tipe lisensi menjadi WindowsServer.
+Specifiy pilihan tipe lisensi yang akan digunakan untuk mesin virtual server Windows. Jika Anda berhak menggunakan Manfaat Penggunaan Hibrid Azure (HUB) untuk migrasi dan ingin menentukan bahwa pengaturan HUB digunakan saat gagal atas item yang diproteksi ini, atur tipe lisensi menjadi WindowsServer.
 
 ```yaml
 Type: System.String
@@ -296,7 +296,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Tentukan nama mesin virtual pemulihan yang akan dibuat di failover.
+Menentukan nama mesin virtual pemulihan yang akan dibuat pada failover.
 
 ```yaml
 Type: System.String
@@ -343,7 +343,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryAvailabilitySet
-Kumpulan ketersediaan untuk replikasi item yang diproteksi setelah failover.
+Ketersediaan yang diatur untuk item yang diproteksi replikasi setelah failover.
 
 ```yaml
 Type: System.String
@@ -358,7 +358,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryAvailabilityZone
-Menentukan zona ketersediaan untuk item replikasi yang diproteksi setelah failover.
+Menentukan zona ketersediaan untuk item yang dilindungi replikasi setelah failover.
 
 ```yaml
 Type: System.String
@@ -373,7 +373,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryBootDiagStorageAccountId
-Menentukan akun penyimpanan untuk diagnostik boot bagi pemulihan Azure VM.
+Menentukan akun penyimpanan untuk diagnostik boot untuk pemulihan Azure VM.
 
 ```yaml
 Type: System.String
@@ -388,7 +388,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryCloudServiceId
-ID sumber daya layanan awan pemulihan untuk failover komputer virtual ini.
+ID sumber daya layanan cloud pemulihan untuk gagalover mesin virtual ini.
 
 ```yaml
 Type: System.String
@@ -403,7 +403,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryLBBackendAddressPoolId
-Menentukan kolam renang alamat backend target untuk dikaitkan dengan NIC pemulihan.
+Menentukan kumpulan alamat backend target yang akan dikaitkan dengan NIC pemulihan.
 
 ```yaml
 Type: System.String[]
@@ -463,7 +463,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryNicSubnetName
-Menentukan nama subnet pada jaringan virtual Azure pemulihan di mana NIC item yang diproteksi ini harus tersambung ke pada failover.
+Menentukan nama subnet pada jaringan virtual Azure pemulihan tempat NIC item yang dilindungi ini harus tersambung pada failover.
 
 ```yaml
 Type: System.String
@@ -478,7 +478,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryNicTag
-Tentukan tag untuk  NICs target VM. Ini berlaku untuk Vmware ke Azure dan HyperV ke penyedia Azure.
+Tentukan tag untuk NIC target VM. Ini berlaku untuk Vmware untuk Azure dan HyperV untuk penyedia Azure.
 
 ```yaml
 Type: System.Collections.Generic.IDictionary`2[System.String,System.String]
@@ -493,7 +493,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryProximityPlacementGroupId
-Menentukan Id Sumber Daya grup penempatan kedekatan pemulihan ke failover mesin virtual.
+Menentukan Id Sumber Daya dari grup penempatan kedekatan pemulihan untuk kegagalan mesin virtual.
 
 ```yaml
 Type: System.String
@@ -523,7 +523,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryResourceGroupId
-ID grup sumber daya Azure di kawasan pemulihan tempat item yang diproteksi akan dipulihkan dalam failover.
+ID grup sumber daya Azure di wilayah pemulihan tempat item yang diproteksi akan dipulihkan saat gagal.
 
 ```yaml
 Type: System.String
@@ -537,8 +537,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RecoveryVirtualMachinescaleSetId
-Menentukan skala mesin virtual target yang diatur untuk dikonfigurasi.
+### -RecoveryVirtualMachineScaleSetId
+Menentukan skala mesin virtual target yang akan dikonfigurasi.
 
 ```yaml
 Type: System.String
@@ -553,7 +553,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryVmTag
-Tentukan tag untuk VM target. Ini berlaku untuk Vmware ke Azure dan HyperV ke penyedia Azure.
+Tentukan tag untuk VM target. Ini berlaku untuk Vmware untuk Azure dan HyperV untuk penyedia Azure.
 
 ```yaml
 Type: System.Collections.Generic.IDictionary`2[System.String,System.String]
@@ -584,7 +584,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlServerLicenseType
-Tentukan SQL Server lisensi VM. Ini berlaku untuk Vmware ke Azure dan HyperV ke penyedia Azure.
+Tentukan tipe lisensi SQL Server VM. Ini berlaku untuk Vmware untuk Azure dan HyperV untuk penyedia Azure.
 
 ```yaml
 Type: System.String
@@ -600,7 +600,7 @@ Accept wildcard characters: False
 ```
 
 ### -TestNetworkId
-Menentukan Id ARM dari jaringan uji (Hanya berlaku untuk skenario replikasi VMware ke Azure).
+Menentukan ID ARM jaringan uji (Berlaku hanya untuk skenario replikasi VMware ke Azure).
 
 ```yaml
 Type: System.String
@@ -615,7 +615,7 @@ Accept wildcard characters: False
 ```
 
 ### -TestNicStaticIPAddress
-Menentukan uji alamat IP statis (Hanya berlaku untuk skenario replikasi VMware ke Azure).
+Menentukan alamat IP statis uji (Berlaku hanya untuk VMware ke skenario replikasi Azure).
 
 ```yaml
 Type: System.String
@@ -629,8 +629,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TestNicSubnetName
-Menentukan nama subnet uji (Hanya berlaku untuk skenario replikasi VMware ke Azure).
+### -TestNicsubnetName
+Menentukan nama subnet uji (Berlaku hanya untuk VMware ke skenario replikasi Azure).
 
 ```yaml
 Type: System.String
@@ -644,8 +644,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TfoAzureVMName
-Menentukan nama uji vm failover.
+### -TfoAzurevmName
+Menentukan nama VM failover uji.
 
 ```yaml
 Type: System.String
@@ -660,7 +660,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpdateNic
-Menentukan NIC mesin virtual di mana cmdlet ini mengatur properti jaringan pemulihan perlu diperbarui.
+Menentukan NIC mesin virtual tempat cmdlet ini mengatur properti jaringan pemulihan perlu diperbarui.
 
 ```yaml
 Type: System.String
@@ -675,7 +675,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseManagedDisk
-Menentukan apakah mesin virtual Azure yang dibuat di failover harus menggunakan disk terkelola.
+Menentukan apakah mesin virtual Azure yang dibuat pada failover harus menggunakan disk terkelola.
 
 ```yaml
 Type: System.String
@@ -691,7 +691,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -706,7 +706,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -721,7 +721,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

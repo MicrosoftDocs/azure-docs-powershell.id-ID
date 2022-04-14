@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementApiSchema.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementApiSchema.md
-ms.openlocfilehash: 08f4e337833773456f22366cf3f6094fabcc180c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9fcc2b7902dce0a4938f37379143e2aa1c1fa504
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140002141"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141856598"
 ---
 # Remove-AzApiManagementApiSchema
 
 ## SYNOPSIS
 Menghapus Skema API dari API.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementapischema) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,11 +51,11 @@ $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS
 Remove-AzApiManagementApiSchema -Context $apimContext -ApiId "echo-api" -SchemaId "2"
 ```
 
-Skrip menghapus Skema dari `2` Api jika `echo-api` tidak direferensikan.
+Skrip menghapus Skema `2` dari Api `echo-api` jika tidak dirujuk.
 
 ### Contoh 2
 
-Skrip menghapus Skema 2 dari Api echo-api jika tidak direferensikan. (otomatisgenerated)
+Skrip menghapus Skema 2 dari Api echo-api jika tidak dirujuk. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika ditentukan akan menuliskan true dalam kasus operasi berhasil.
+Jika ditentukan akan menulis true dalam kasus operasi berhasil.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Arm ResourceId of ApiSchema. Parameter ini diperlukan.
+Arm ResourceId dari ApiSchema. Parameter ini diperlukan.
 
 ```yaml
 Type: System.String
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

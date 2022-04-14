@@ -5,11 +5,11 @@ ms.assetid: 6FFE1B64-C80B-423D-A043-55C90A224752
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/new-azurermapplicationgatewaysslcertificate
 schema: 2.0.0
 ms.openlocfilehash: e22760c2838cf0b4fb0597dbd45532374b604b79
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422793"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141888952"
 ---
 # New-AzureRmApplicationGatewaySslCertificate
 
@@ -30,13 +30,13 @@ Cmdlet **New-AzureRmApplicationGatewaySslCertificate** membuat sertifikat SSL un
 
 ## EXAMPLES
 
-### Contoh 1: Buat sertifikat SSL untuk gateway aplikasi Azure.
+### Contoh 1: Membuat sertifikat SSL untuk gateway aplikasi Azure.
 ```
 PS C:\> $password = ConvertTo-SecureString "P@ssw0rd" -AsPlainText -Force
 PS C:\> $cert = New-AzureRmApplicationGatewaySslCertificate -Name "Cert01" -CertificateFile "D:\cert01.pfx" -Password $password
 ```
 
-Perintah ini membuat sertifikat SSL yang bernama Cert01 untuk gateway aplikasi default dan menyimpan hasilnya dalam variabel yang bernama $Cert.
+Perintah ini membuat sertifikat SSL bernama Cert01 untuk gateway aplikasi default dan menyimpan hasilnya dalam variabel bernama $Cert.
 
 ## PARAMETERS
 
@@ -56,7 +56,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

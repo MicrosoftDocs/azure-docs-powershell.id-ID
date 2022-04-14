@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayAvailableServerVariableAndHeader.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayAvailableServerVariableAndHeader.md
-ms.openlocfilehash: 850b78d520e63003eb2b8f74b7d4a376a71fe4da
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: bbbfd1e13550b26684998591a9ffcfec96f987e6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140008014"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141935097"
 ---
 # Get-AzApplicationGatewayAvailableServerVariableAndHeader
 
 ## SYNOPSIS
-Dapatkan variabel server yang didukung dan header permintaan dan respons yang tersedia.
+Dapatkan variabel server yang didukung serta header permintaan dan respons yang tersedia.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayavailableservervariableandheader) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzApplicationGatewayAvailableServerVariableAndHeader [-DefaultProfile <IAzur
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApplicationGatewayAvailableServerVariableAndHeader** mendapatkan variabel server yang didukung dan header respons serta permintaan yang tersedia. Parameter bisa digunakan untuk mendapatkan daftar variabel atau header.
+**Cmdlet Get-AzApplicationGatewayAvailableServerVariableAndHeader** mendapatkan variabel server yang didukung serta header permintaan dan respons yang tersedia. Parameter dapat digunakan untuk mendapatkan variabel atau daftar header.
 
 ## EXAMPLES
 
@@ -55,14 +58,14 @@ Perintah ini mengembalikan semua header respons yang tersedia.
 PS C:\>Get-AzApplicationGatewayAvailableServerVariableAndHeader - ServerVariable -RequestHeader -ResponseHeader
 ```
 
-Perintah ini mengembalikan semua header respons, permintaan, dan variabel server yang tersedia.
+Perintah ini mengembalikan semua variabel server, header permintaan, dan respons yang tersedia.
 
 ### Contoh 5
 ```
 PS C:\>Get-AzApplicationGatewayAvailableServerVariableAndHeader
 ```
 
-Perintah ini mengembalikan semua header respons, permintaan, dan variabel server yang tersedia.
+Perintah ini mengembalikan semua variabel server, header permintaan, dan respons yang tersedia.
 
 ## PARAMETERS
 
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestHeader
-Header permintaan yang tersedia Gateway Aplikasi.
+Application Gateway header permintaan yang tersedia.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResponseHeader
-Header respons yang tersedia di Gateway Aplikasi.
+Application Gateway header respons yang tersedia.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerVariable
-Variabel server yang tersedia Gateway Aplikasi.
+Application Gateway variabel server yang tersedia.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -127,11 +130,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

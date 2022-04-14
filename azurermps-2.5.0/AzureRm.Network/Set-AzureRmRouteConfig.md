@@ -4,12 +4,12 @@ Module Name: AzureRM.Network
 ms.assetid: 6E967F9C-949E-4485-9B57-FC4F523D5DC9
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/set-azurermrouteconfig
 schema: 2.0.0
-ms.openlocfilehash: 3a7187afe4995a14deea0888caac5c7a06b35e2c4d2d1c9c6bbc274d65f75d9f
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 5aa84098c19595ac1c7d6b33c56dca20d08a475f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418933"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142103529"
 ---
 # Set-AzureRmRouteConfig
 
@@ -27,11 +27,11 @@ Set-AzureRmRouteConfig -RouteTable <PSRouteTable> [-AddressPrefix <String>] [-Ne
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmRouteConfig** mengatur status tujuan untuk rute Azure.
+Cmdlet **Set-AzureRmRouteConfig** menetapkan status tujuan untuk rute Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah rute
+### Contoh 1: Memodifikasi rute
 ```
 PS C:\>Get-AzureRmRouteTable -ResourceGroupName "ResourceGroup11" -Name "RouteTable01" | Set-AzureRmRouteConfig -Name "Route02" -AddressPrefix 10.4.0.0/16 -NextHopType VnetLocal | Set-AzureRmRouteTable
 Name              : Routetable01
@@ -67,14 +67,14 @@ Routes            : [
 Subnets           : []
 ```
 
-Perintah ini mendapatkan tabel rute yang bernama RouteTable01 dengan menggunakan cmdlet Get-AzureRmRouteTable cmdlet.
-Perintah itu meneruskan tabel itu ke cmdlet saat ini dengan menggunakan operator pipeline.
-Cmdlet saat ini mengubah rute yang bernama Route02, lalu meneruskan hasilnya ke cmdlet **Set-AzureRmRouteTable,** yang memperbarui tabel agar mencerminkan perubahan Anda.
+Perintah ini mendapatkan tabel rute bernama RouteTable01 menggunakan cmdlet Get-AzureRmRouteTable.
+Perintah melewati tabel tersebut ke cmdlet saat ini menggunakan operator pipeline.
+Cmdlet saat ini mengubah rute bernama Route02, lalu meneruskan hasil ke cmdlet **Set-AzureRmRouteTable** , yang memperbarui tabel untuk mencerminkan perubahan Anda.
 
 ## PARAMETERS
 
 ### -AddressPrefix
-Menentukan tujuan, dalam format Classless Interdomain Routing (CIDR), ke mana rute tersebut diterapkan.
+Menentukan tujuan, dalam format Classless Interdomain Routing (CIDR), tempat rute diterapkan.
 
 ```yaml
 Type: String
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama rute yang akan memodifikasi cmdlet ini.
+Menentukan nama rute yang diubah cmdlet ini.
 
 ```yaml
 Type: String
@@ -119,9 +119,9 @@ Accept wildcard characters: False
 ```
 
 ### -NextHopIpAddress
-Menentukan alamat IP dari alat virtual yang Anda tambahkan ke jaringan virtual Azure Anda.
-Ini merutekan paket ke alamat itu.
-Tentukan parameter ini hanya jika Anda menentukan nilai VirtualAppliance untuk parameter *NextHopType.*
+Menentukan alamat IP alat virtual yang Anda tambahkan ke jaringan virtual Azure Anda.
+Rute ini meneruskan paket ke alamat tersebut.
+Tentukan parameter ini hanya jika Anda menentukan nilai VirtualAppliance untuk parameter *NextHopType* .
 
 ```yaml
 Type: String
@@ -140,16 +140,16 @@ Menentukan cara rute ini meneruskan paket.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Internet.
-Gateway internet default yang disediakan oleh Azure. 
-- Tidak ada.
+Gateway Internet default yang disediakan oleh Azure. 
+- Tidak.
 Jika Anda menentukan nilai ini, rute tidak meneruskan paket. 
 - VirtualAppliance.
-Sebuah alat virtual yang Anda tambahkan ke jaringan virtual Azure Anda. 
+Alat virtual yang Anda tambahkan ke jaringan virtual Azure Anda. 
 - VirtualNetworkGateway.
 Gateway jaringan privat virtual Azureserver-to-server. 
 - VnetLocal.
 Jaringan virtual lokal.
-Jika Anda memiliki dua subnet, 10.1.0.0/16 dan 10.2.0.0/16 di jaringan virtual yang sama, pilih nilai VnetLocal untuk setiap subnet untuk diteruskan ke subnet lain.
+Jika Anda memiliki dua subnet, 10.1.0.0/16 dan 10.2.0.0/16 di jaringan virtual yang sama, pilih nilai VnetLocal untuk setiap subnet untuk meneruskan ke subnet lainnya.
 
 ```yaml
 Type: String
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -RouteTable
-Menentukan tabel rute yang terkait dengan rute ini.
+Menentukan tabel rute yang rutenya terkait.
 
 ```yaml
 Type: PSRouteTable
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -209,12 +209,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSRouteTable
-Parameter 'RouteTable' menerima nilai tipe 'PSRouteTable' dari saluran
+Parameter 'RouteTable' menerima nilai tipe 'PSRouteTable' dari pipeline
 
 ## OUTPUTS
 
@@ -228,8 +228,8 @@ Parameter 'RouteTable' menerima nilai tipe 'PSRouteTable' dari saluran
 
 [Get-AzureRmRouteConfig](./Get-AzureRmRouteConfig.md)
 
-[New-AzureRmRouteConfig](./New-AzureRmRouteConfig.md)
+[AzureRmRouteConfig Baru](./New-AzureRmRouteConfig.md)
 
-[Remove-AzureRmRouteConfig](./Remove-AzureRmRouteConfig.md)
+[Hapus-AzureRmRouteConfig](./Remove-AzureRmRouteConfig.md)
 
 

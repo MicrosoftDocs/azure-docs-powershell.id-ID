@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBCassandraSchema.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBCassandraSchema.md
-ms.openlocfilehash: 42a37a7408afddad5dae828f34bb6524bd82198a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 84649da94305519db4c3ad3b73ac4e6d4c28d7ef
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140001349"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141853484"
 ---
 # New-AzCosmosDBCassandraSchema
 
 ## SYNOPSIS
-Membuat Schema CosmosDB Schema baru di CosmosDB.
+Membuat CosmosDB Cassandra Schema baru.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbcassandraschema) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzCosmosDBCassandraSchema [-Column <PSColumn[]>] [-PartitionKey <String[]>] 
 ```
 
 ## DESCRIPTION
-**New-AzCosmosDBCassosaSchema membuat skema New-AzCosmosDBSchema**.
+**New-AzCosmosDBCassandraSchema** menciptakan CosmosDB Cassandra Schema baru.
 
 ## EXAMPLES
 
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartitionKey
-Array string yang berisi Tombol Partisi.
+Array string yang berisi Kunci Partisi.
 
 ```yaml
 Type: System.String[]
@@ -101,15 +104,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.CosmosDB.Models.PSCassschema
+### Microsoft.Azure.Commands.CosmosDB.Models.PSCassandraSchema
 
 ## CATATAN
 

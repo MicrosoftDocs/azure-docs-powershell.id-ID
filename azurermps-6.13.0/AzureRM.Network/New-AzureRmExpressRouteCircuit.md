@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmExpressRouteCircuit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmExpressRouteCircuit.md
 ms.openlocfilehash: cee0318367ad764a9cc9e37995f092462cd157a5
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423322"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141820814"
 ---
 # New-AzureRmExpressRouteCircuit
 
 ## SYNOPSIS
-Membuat sirkuit rute ekspres Azure.
+Membuat sirkuit rute Azure express.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -44,7 +44,7 @@ New-AzureRmExpressRouteCircuit -Name <String> -ResourceGroupName <String> -Locat
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmExpressRouteCircuit** membuat sirkuit rute azure express.
+Cmdlet **New-AzureRmExpressRouteCircuit** membuat sirkuit rute Azure express.
 
 ## EXAMPLES
 
@@ -63,7 +63,7 @@ $parameters = @{
 New-AzureRmExpressRouteCircuit @parameters
 ```
 
-### Contoh 2: Buat sirkuit ExpressRoute baru di ExpressRoutePort
+### Contoh 2: Membuat sirkuit ExpressRoute baru di ExpressRoutePort
 ```
 $parameters = @{
     Name='ExpressRouteCircuit'
@@ -80,7 +80,7 @@ New-AzureRmExpressRouteCircuit @parameters
 ## PARAMETERS
 
 ### -AllowClassicOperations
-Penggunaan parameter ini memungkinkan Anda untuk menggunakan cmdlet Azure PowerShell klasik untuk mengelola sirkuit.
+Penggunaan parameter ini memungkinkan Anda menggunakan cmdlet klasik Azure PowerShell untuk mengelola sirkuit.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -109,7 +109,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Authorization
+### -Otorisasi
 Daftar otorisasi sirkuit.
 
 ```yaml
@@ -124,8 +124,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -BandwidthInWithS
-Bandwidth sirkuit ketika sirkuit ditetapkan pada sumber daya ExpressRoutePort.
+### -BandwidthInGbps
+Bandwidth sirkuit ketika sirkuit disediakan pada sumber daya ExpressRoutePort.
 
 ```yaml
 Type: Double
@@ -139,8 +139,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -BandwidthIn Mbps
-Bandwidth sirkuit. Nilai ini harus merupakan nilai yang didukung oleh penyedia layanan.
+### -BandwidthInMbps
+Bandwidth sirkuit. Ini harus berupa nilai yang didukung oleh penyedia layanan.
 
 ```yaml
 Type: System.Int32
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpressRoutePort
-Referensi ke sumber daya ExpressRoutePort ketika sirkuit ditetapkan pada sumber daya ExpressRoutePort.
+Referensi ke sumber daya ExpressRoutePort saat sirkuit ditetapkan pada sumber daya ExpressRoutePort.
 
 ```yaml
 Type: PSExpressRoutePort
@@ -184,8 +184,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama sirkuit ExpressRoute akan dibuat.
+Nama sirkuit ExpressRoute sedang dibuat.
 
 ```yaml
 Type: System.String
@@ -230,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### -Peering
-Konfigurasi rekan daftar.
+Konfigurasi peer daftar.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Network.Models.PSPeering]
@@ -275,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceProviderName
-Nama penyedia layanan sirkuit. Ini harus cocok dengan nama yang tercantum oleh Get-AzureRmExpressRouteServiceProvider cmdlet.
+Nama penyedia layanan sirkuit. Ini harus cocok dengan nama yang tercantum oleh cmdlet Get-AzureRmExpressRouteServiceProvider.
 
 ```yaml
 Type: System.String
@@ -290,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuFamily
-SKU keluarga menentukan tipe tagihan. Nilai yang memungkinkan untuk parameter ini adalah: `MeteredData` atau `UnlimitedData` . Perhatikan bahwa Anda dapat mengubah tipe tagihan dari MeteredData menjadi UnlimitedData, tetapi Anda tidak dapat mengubah tipe dari UnlimitedData menjadi MeteredData.
+Keluarga SKU menentukan jenis tagihan. Nilai yang memungkinkan untuk parameter ini adalah: `MeteredData` atau `UnlimitedData`. Perhatikan bahwa Anda bisa mengubah tipe tagihan dari MeteredData menjadi UnlimitedData, tapi Anda tidak bisa mengubah tipe dari UnlimitedData menjadi MeteredData.
 
 ```yaml
 Type: System.String
@@ -306,7 +306,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuTier
-Tingkat layanan untuk sirkuit. Nilai yang memungkinkan untuk parameter ini adalah: `Standard` atau `Premium` .
+Tingkat layanan untuk sirkuit. Nilai yang memungkinkan untuk parameter ini adalah: `Standard` atau `Premium`.
 
 ```yaml
 Type: System.String
@@ -337,7 +337,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -353,7 +353,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -368,7 +368,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -376,11 +376,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Int32
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSPeering, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSPeering, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=netral, PublicKeyToken=null]]
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuitAuthorization, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuitAuthorization, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=netral, PublicKeyToken=null]]
 
-### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ### System.Collections.Hashtable
 
@@ -394,8 +394,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmExpressRouteCircuit](Get-AzureRmExpressRouteCircuit.md)
 
-[Move-AzureRmExpressRouteCircuit](Move-AzureRmExpressRouteCircuit.md)
+[Pindahkan-AzureRmExpressRouteCircuit](Move-AzureRmExpressRouteCircuit.md)
 
-[Remove-AzureRmExpressRouteCircuit](Remove-AzureRmExpressRouteCircuit.md)
+[Hapus-AzureRmExpressRouteCircuit](Remove-AzureRmExpressRouteCircuit.md)
 
 [Set-AzureRmExpressRouteCircuit](Set-AzureRmExpressRouteCircuit.md)

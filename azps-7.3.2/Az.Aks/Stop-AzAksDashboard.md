@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/stop-azaksda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Stop-AzAksDashboard.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Stop-AzAksDashboard.md
-ms.openlocfilehash: 42fe9d10e437b13fa7c67aed87879336f00bc80a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 7d4706d26f0163565b1c8854f53387ed03069254
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140558342"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141857156"
 ---
 # Stop-AzAksDashboard
 
 ## SYNOPSIS
-Hentikan Kubectl LINUX yang dibuat di Start-AzKsecsDashboard.
+Hentikan terowongan Kubectl SSH yang dibuat di Start-AzKubernetesDashboard.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.aks/stop-azaksdashboard) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Stop-AzAksDashboard [-PassThru] [-DefaultProfile <IAzureContextContainer>] [-Sub
 ```
 
 ## DESCRIPTION
-Hentikan Kubectl LINUX yang dibuat di Start-AzKsecsDashboard.
+Hentikan terowongan Kubectl SSH yang dibuat di Start-AzKubernetesDashboard.
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ Hentikan Kubectl LINUX yang dibuat di Start-AzKsecsDashboard.
 Stop-AzKubernetesDashboard
 ```
 
-Menghentikan penyetelan konfigurasiJADWAL yang sudah ada dengan menjalankan Start-AzK outlooksDashboard.
+Hentikan penyiapan terowongan SSH yang sudah ada dengan menjalankan Start-AzKubernetesDashboard.
 
 ## PARAMETERS
 
@@ -54,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true jika linux LINUX ditutup.
+Mengembalikan true jika terowongan SSH ditutup.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengganti langganan hanya berlaku selama siklus hidup cmdlet saat ini. Langganan tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
+Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -86,11 +89,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

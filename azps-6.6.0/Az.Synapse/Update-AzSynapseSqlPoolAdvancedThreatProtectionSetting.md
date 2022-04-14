@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseSqlPoolAdvancedThreatProtectionSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseSqlPoolAdvancedThreatProtectionSetting.md
 ms.openlocfilehash: 64a5fed555150c49672d67be5bacdf9b4498c823
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140242207"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141857660"
 ---
 # Update-AzSynapseSqlPoolAdvancedThreatProtectionSetting
 
 ## SYNOPSIS
-Mengatur pengaturan perlindungan ancaman tingkat lanjut di SQL baru.
+Mengatur pengaturan perlindungan ancaman tingkat lanjut pada kumpulan SQL.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/update-azsynapsesqlpooladvancedthreatprotectionsetting) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/update-azsynapsesqlpooladvancedthreatprotectionsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,8 +55,8 @@ Update-AzSynapseSqlPoolAdvancedThreatProtectionSetting -ResourceId <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzSynapseSqlPoolAdvancedThreatProtectionSetting** mengatur pengaturan perlindungan ancaman tingkat lanjut pada kumpulan SQL Azure Synapse.
-Untuk mengaktifkan perlindungan ancaman tingkat lanjut pada SQL, pengaturan pengauditan harus diaktifkan pada SQL pool tersebut.
+Cmdlet **Update-AzSynapseSqlPoolAdvancedThreatProtectionSetting** mengatur pengaturan perlindungan ancaman tingkat lanjut pada Azure Synapse Analytics SQL pool.
+Untuk mengaktifkan perlindungan ancaman tingkat lanjut pada kumpulan SQL, pengaturan audit harus diaktifkan pada kumpulan SQL tersebut.
 
 ## EXAMPLES
 
@@ -65,12 +65,12 @@ Untuk mengaktifkan perlindungan ancaman tingkat lanjut pada SQL, pengaturan peng
 PS C:\> Update-AzSynapseSqlPoolAdvancedThreatProtectionSetting -WorkspaceName ContosoWorkspace -Name ContosoSqlPool -NotificationRecipientsEmails "admin01@contoso.com;secadmin@contoso.com" -EmailAdmins $False -ExcludedDetectionType "Sql_Injection_Vulnerability", "SQL_Injection" -StorageAccountName "mystorageAccount"
 ```
 
-Perintah ini mengatur pengaturan perlindungan ancaman tingkat lanjut untuk kumpulan SQL bernama ContosoSqlPool di bawah ruang kerja yang bernama ContosoWorkspace.
+Perintah ini mengatur pengaturan perlindungan ancaman tingkat lanjut untuk kumpulan SQL bernama ContosoSqlPool di bawah ruang kerja bernama ContosoWorkspace.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmailAdmin
-Menentukan apakah akan mengirim email ke administrator.
+Menentukan apakah akan menjadi administrator email.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-SQL input kolam renang, biasanya melewati saluran.
+SQL objek input pool, biasanya melewati pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSqlPool
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama SQL Tim.
+Nama Synapse SQL pool.
 
 ```yaml
 Type: System.String
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -NotificationRecipientsEmail
-Daftar alamat email yang dipisahkan titik koma untuk mengirimkan pemberitahuan.
+Daftar alamat email yang dipisahkan titik koma untuk mengirim pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya dari Synapse SQL Pool.
+Pengidentifikasi sumber daya Synapse SQL Pool.
 
 ```yaml
 Type: System.String
@@ -234,7 +234,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -265,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -281,7 +281,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -296,7 +296,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

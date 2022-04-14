@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmDdosProtectionPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmDdosProtectionPlan.md
 ms.openlocfilehash: 79a9f0cb2b46150c7746112553949b1bbcbaf1dc
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425858"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141820832"
 ---
 # New-AzureRmDdosProtectionPlan
 
 ## SYNOPSIS
-Membuat rencana proteksi DDoS.
+Membuat paket proteksi DDoS.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -31,17 +31,17 @@ Cmdlet New-AzureRmDdosProtectionPlan membuat rencana proteksi DDoS.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat dan mengaitkan rencana proteksi DDoS dengan jaringan virtual baru
+### Contoh 1: Membuat dan mengaitkan paket proteksi DDoS dengan jaringan virtual baru
 ```
 D:\> $ddosProtectionPlan = New-AzureRmDdosProtectionPlan -ResourceGroupName ResourceGroupName -Name DdosProtectionPlanName -Location "West US"
 D:\> $subnet = New-AzureRmVirtualNetworkSubnetConfig -Name SubnetName -AddressPrefix 10.0.1.0/24
 D:\> $vnet = New-AzureRmvirtualNetwork -Name VnetName -ResourceGroupName ResourceGroupName -Location "West US" -AddressPrefix 10.0.0.0/16 -DnsServer 8.8.8.8 -Subnet $subnet -EnableDdoSProtection -DdosProtectionPlanId $ddosProtectionPlan.Id
 ```
 
-Pertama, kami membuat paket Proteksi DDoS baru dengan **perintah New-AzureRmDdosProtectionPlan.**
-Lalu, kami membuat jaringan virtual baru dengan **AzureRmvirtualNetwork** Baru dan kami menentukan ID paket yang baru dibuat di parameter **DdosProtectionPlanId**. Dalam kasus ini, karena kami mengaitkan jaringan virtual dengan rencana, kami juga dapat menentukan parameter **EnableDdoSProtection**.
+Pertama, kami membuat paket DDoS Protection baru dengan perintah **New-AzureRmDdosProtectionPlan** .
+Lalu, kami membuat jaringan virtual baru dengan **New-AzureRmvirtualNetwork** dan kami menentukan ID rencana yang baru dibuat dalam parameter **DdosProtectionPlanId**. Dalam hal ini, karena kami mengaitkan jaringan virtual dengan rencana, kami juga dapat menentukan parameter **EnableDdoSProtection**.
 
-### Contoh 2: Membuat dan mengaitkan rencana proteksi DDoS dengan jaringan virtual yang sudah ada
+### Contoh 2: Membuat dan mengaitkan paket proteksi DDoS dengan jaringan virtual yang sudah ada
 ```
 D:\> $ddosProtectionPlan = New-AzureRmDdosProtectionPlan -ResourceGroupName ResourceGroupName -Name DdosProtectionPlanName -Location "West US"
 D:\> $vnet = Get-AzureRmVirtualNetwork -Name VnetName -ResourceGroupName ResourceGroupName
@@ -89,14 +89,14 @@ DdosProtectionPlan     : {
 EnableVmProtection     : false
 ```
 
-Pertama, kami membuat paket Proteksi DDoS baru dengan **perintah New-AzureRmDdosProtectionPlan.**
-Kedua, kita mendapatkan versi jaringan virtual terbaru yang ingin kami kaitkan dengan paket. Kami memperbarui properti **DdosProtectionPlan** dengan objek **PSResourceId yang** berisi referensi ke ID dari paket yang baru dibuat. Dalam hal ini, jika kami mengaitkan jaringan virtual dengan paket proteksi DDoS, kami juga dapat menetapkan bendera **EnableDdosProtection** ke true.
-Terakhir, kami mempertahankan status baru dengan pemipaan variabel lokal ke **Set-AzureRmVirtualNetwork**.
+Pertama, kami membuat paket DDoS Protection baru dengan perintah **New-AzureRmDdosProtectionPlan** .
+Kedua, kami mendapatkan versi terbaru dari jaringan virtual yang ingin kami kaitkan dengan rencana. Kami memperbarui properti **DdosProtectionPlan** dengan objek **PSResourceId** yang berisi referensi ke ID rencana yang baru dibuat. Dalam hal ini, jika kami mengaitkan jaringan virtual dengan paket proteksi DDoS, kami juga dapat mengatur bendera **EnableDdosProtection** ke true.
+Akhirnya, kami tetap menggunakan status baru dengan memipakan variabel lokal ke **Set-AzureRmVirtualNetwork**.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama paket proteksi DDoS yang akan dibuat.
+Menentukan nama rencana proteksi DDoS yang akan dibuat.
 
 ```yaml
 Type: System.String
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable yang mewakili tag sumber daya.
+Sebuah hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -217,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

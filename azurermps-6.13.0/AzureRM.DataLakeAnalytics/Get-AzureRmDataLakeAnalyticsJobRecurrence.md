@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeAnalytics/Commands.DataLakeAnalytics/help/Get-AzureRmDataLakeAnalyticsJobRecurrence.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeAnalytics/Commands.DataLakeAnalytics/help/Get-AzureRmDataLakeAnalyticsJobRecurrence.md
 ms.openlocfilehash: d0430b283f122b5da41392a04fc9827bc03e3082
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140859127"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141824659"
 ---
 # Get-AzureRmDataLakeAnalyticsJobRecurrence
 
 ## SYNOPSIS
-Mendapatkan Data Analitik Danau Pekerjaan pengulangan atau pengulangan.
+Mendapatkan pekerjaan Data Lake Analytics pengulangan atau pengulangan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -35,18 +35,18 @@ Get-AzureRmDataLakeAnalyticsJobRecurrence [-Account] <String> [-RecurrenceId] <G
 ```
 
 ## DESCRIPTION
-**Get-AzureRmDataLakeAnalyticsJobRecurrence** mendapatkan pengulangan Pekerjaan Analitik Danau Azure Data atau daftar pengulangan tertentu.
+**Get-AzureRmDataLakeAnalyticsJobRecurrence** mendapatkan pengulangan Azure Data Lake Analytics Job tertentu atau daftar pengulangan.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan pengulangan tertentu
+### Contoh 1: Dapatkan pengulangan yang ditentukan
 ```
 PS C:\>Get-AzureRmDataLakeAnalyticsJobRecurrence -Account "contosoadla" -RecurrenceId 83cb7ad2-3523-4b82-b909-d478b0d8aea3
 ```
 
-Perintah ini mendapatkan pengulangan pekerjaan tertentu dengan id '83cb7ad2-3523-4b82-b909-d478b0d8aea3' dalam akun 'contosoadla'.
+Perintah ini mendapatkan pengulangan pekerjaan yang ditentukan dengan id '83cb7ad2-3523-4b82-b909-d478b0d8aea3' dalam akun 'contosoadla'.
 
-### Contoh 2: Mendapatkan daftar semua pengulangan dalam akun
+### Contoh 2: Dapatkan daftar semua pengulangan dalam akun
 ```
 PS C:\>Get-AzureRmDataLakeAnalyticsJobRecurrence -AccountName "contosoadla"
 ```
@@ -56,7 +56,7 @@ Perintah ini mendapatkan daftar semua pengulangan dalam akun "contosoadla"
 ## PARAMETERS
 
 ### -Akun
-Nama nama akun Analitik Danau Data yang ingin diambil pengulangan pekerjaannya.
+Nama nama akun Data Lake Analytics yang ingin diambil pengulangan pekerjaannya.
 
 ```yaml
 Type: System.String
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecurrenceId
-ID pengulangan pekerjaan tertentu yang akan dikembalikan informasinya.
+ID pengulangan pekerjaan tertentu untuk mengembalikan informasi.
 
 ```yaml
 Type: System.Guid
@@ -115,7 +115,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -SubmittedBefore
+### -DikirimBefore
 Filter opsional yang mengembalikan pengulangan pekerjaan hanya dikirimkan sebelum waktu yang ditentukan.
 
 ```yaml
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -139,7 +139,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Guid
 
-### System.Nullable'1[[System.DateTimeOffset, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.DateTimeOffset, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 

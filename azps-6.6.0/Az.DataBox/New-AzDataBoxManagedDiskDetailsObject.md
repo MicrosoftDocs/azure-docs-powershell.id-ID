@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxManagedDiskDetailsObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxManagedDiskDetailsObject.md
 ms.openlocfilehash: fc65cc278c82da7d934ecde455324606790de4b0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140257201"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141868370"
 ---
 # New-AzDataBoxManagedDiskDetailsObject
 
@@ -18,7 +18,7 @@ ms.locfileid: "140257201"
 Membuat objek dalam memori untuk ManagedDiskDetails
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.databox/new-azdataboxmanageddiskdetailsobject) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.databox/new-azdataboxmanageddiskdetailsobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Membuat objek dalam memori untuk ManagedDiskDetails
 PS C:\> $managedDiskAccount=New-AzDataBoxManagedDiskDetailsObject -ResourceGroupId "/subscriptions/SubscriptionId/resourceGroups/resourceGroupName" -StagingStorageAccountId "/subscriptions/SubscriptionId/resourceGroups/resourceGroupName/providers/Microsoft.Storage/storageAccounts/stagingAccountName" -DataAccountType "ManagedDisk"
 ```
 
-{{ Membuat objek disk terkelola dalam memori }}
+{{ Membuat objek disk yang dikelola dalam memori }}
 
 ## PARAMETERS
 
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupId
-Id Grup Sumber Daya dari disk perhitungan.
+Id Grup Sumber Daya dari disk komputasi.
 
 ```yaml
 Type: System.String
@@ -72,13 +72,13 @@ Accept wildcard characters: False
 ```
 
 ### -SharePassword
-Kata sandi untuk semua berbagi akan dibuat pada perangkat.
-Tidak dapat dialihkan untuk pekerjaan TransferType:ExportFromAzure.
-Jika ini tidak lolos, layanan akan membuat kata sandi itu sendiri.
+Kata sandi untuk semua pembagian yang akan dibuat di perangkat.
+Tidak boleh dilewati untuk pekerjaan TransferType:ExportFromAzure.
+Jika tidak lolos, layanan akan menghasilkan kata sandi itu sendiri.
 Ini tidak akan dikembalikan di Dapatkan Panggilan.
 Persyaratan Kata Sandi : Kata sandi harus minimal 12 dan maksimal 64 karakter.
-Kata sandi harus memiliki setidaknya satu alfabet huruf besar, satu nomor dan satu karakter khusus.
-Password tidak dapat memiliki karakter berikut: IilLoO0 Password hanya bisa memiliki alfabet, angka dan karakter ini : @#\-$%^!+=;:_()]+.
+Kata sandi harus memiliki setidaknya satu alfabet huruf besar, satu angka dan satu karakter khusus.
+Kata sandi tidak dapat memiliki karakter berikut: Kata sandi IilLoO0 hanya dapat memiliki alfabet, angka, dan karakter berikut : @#\-$%^!+=;:_()]+.
 
 ```yaml
 Type: System.String
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -StagingStorageAccountId
-Id Sumber Daya dari akun penyimpanan yang bisa digunakan untuk menyalin vhd untuk pengembangan.
+Id Sumber Daya dari akun penyimpanan yang dapat digunakan untuk menyalin vhd untuk pementasan.
 
 ```yaml
 Type: System.String
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/LogicApp/Commands.LogicApp/help/New-AzureRmIntegrationAccountSchema.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/LogicApp/Commands.LogicApp/help/New-AzureRmIntegrationAccountSchema.md
 ms.openlocfilehash: 19f6884e9359612eab1d22018a7ebc1295f81210
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421666"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141778691"
 ---
 # New-AzureRmIntegrationAccountSchema
 
@@ -32,15 +32,15 @@ New-AzureRmIntegrationAccountSchema -ResourceGroupName <String> -Name <String> -
 Cmdlet **New-AzureRmIntegrationAccountSchema** membuat skema akun integrasi.
 Cmdlet ini mengembalikan objek yang mewakili skema akun integrasi.
 Tentukan nama akun integrasi, nama grup sumber daya, nama skema, dan definisi skema.
-Nilai file parameter templat yang Anda tentukan di baris perintah diutamakan lebih dari nilai parameter templat dalam objek parameter templat.
+Nilai file parameter templat yang Anda tentukan di baris perintah lebih diutamakan daripada nilai parameter templat dalam objek parameter templat.
 Modul ini mendukung parameter dinamis.
 Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
-Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilai tersebut.
+Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
 ## EXAMPLES
 
-### Contoh 1: Buat skema akun integrasi
+### Contoh 1: Membuat skema akun integrasi
 ```
 PS C:\>New-AzureRmIntegrationAccountSchema -ResourceGroupName "ResourceGroup11" -Name "IntegrationAccount31" -SchemaName "IntegrationAccountSchema1" -SchemaFilePath "c:\temp\schema1"
 Id          : /subscriptions/<SusbcriptionId>/resourceGroups/ResourceGroup11/providers/Microsoft.Logic/integrationAccounts/IntegrationAccount31/schemas/IntegrationAccountSchema1
@@ -60,7 +60,7 @@ Perintah ini membuat skema akun integrasi bernama IntegrationAccountSchema1 dala
 
 ### -ContentType
 Menentukan tipe konten untuk skema akun integrasi.
-Cmdlet ini mendukung application/xml sebagai tipe konten peta.
+Cmdlet ini mendukung aplikasi/xml sebagai tipe konten peta.
 
 ```yaml
 Type: System.String
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 
 ### -SchemaDefinition
 Menentukan objek definisi untuk skema akun integrasi.
-Tentukan parameter ini atau *parameter SchemaFilePath.*
+Tentukan parameter ini atau parameter *SchemaFilePath* .
 
 ```yaml
 Type: System.String
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 
 ### -SchemaFilePath
 Menentukan jalur file definisi untuk skema akun integrasi.
-Tentukan parameter ini atau *parameter SchemaDefinition.*
+Tentukan parameter ini atau parameter *SchemaDefinition* .
 
 ```yaml
 Type: System.String
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -230,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -246,7 +246,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmIntegrationAccountSchema](./Get-AzureRmIntegrationAccountSchema.md)
 
-[Remove-AzureRmIntegrationAccountSchema](./Remove-AzureRmIntegrationAccountSchema.md)
+[Hapus-AzureRmIntegrationAccountSchema](./Remove-AzureRmIntegrationAccountSchema.md)
 
 [Set-AzureRmIntegrationAccountSchema](./Set-AzureRmIntegrationAccountSchema.md)
 

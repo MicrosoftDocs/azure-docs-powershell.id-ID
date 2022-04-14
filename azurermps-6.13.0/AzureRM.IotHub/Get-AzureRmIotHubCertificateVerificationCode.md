@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.iothu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/IotHub/Commands.IotHub/help/Get-AzureRmIotHubCertificateVerificationCode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/IotHub/Commands.IotHub/help/Get-AzureRmIotHubCertificateVerificationCode.md
-ms.openlocfilehash: b45a734b17c62d616931d181a9157563784ddae2dd5f5a6df0bf4f519972eba7
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: a2c4c72f93597f3275e9edb1fecb6139eafbeb50
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140850714"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141779015"
 ---
 # Get-AzureRmIotHubCertificateVerificationCode
 
@@ -40,8 +40,8 @@ Get-AzureRmIotHubCertificateVerificationCode [-ResourceId] <String> [-Etag] <Str
 ```
 
 ## DESCRIPTION
-Kode verifikasi ini digunakan untuk menyelesaikan langkah kepemilikan sebuah sertifikat. Gunakan kode verifikasi ini sebagai CN dari sertifikat baru yang ditandatangani dengan kunci privat sertifikat akar.
-Untuk penjelasan mendetail tentang sertifikat CA di Azure IoT Hub, lihat https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-x509ca-overview
+Kode verifikasi ini digunakan untuk menyelesaikan langkah bukti kepemilikan untuk sertifikat. Gunakan kode verifikasi ini sebagai CN sertifikat baru yang ditandatangani dengan kunci privat sertifikat akar.
+Untuk penjelasan mendetail tentang sertifikat CA dalam Azure IoT Hub, lihathttps://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-x509ca-overview
 
 ## EXAMPLES
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Certificate
+Objek Sertifikat
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.IotHub.Models.PSCertificateDescription
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeStorageContainer.md
-ms.openlocfilehash: 9db6eda309f3c043749fd32a1eb2bc34ce175f16
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f0afddc6108245883fd4f5a0e026653843230d05
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140187846"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141852458"
 ---
 # Get-AzDataBoxEdgeStorageContainer
 
 ## SYNOPSIS
-Dapatkan wadah untuk akun Edge Storage Anda pada perangkat.
+Mendapatkan wadah untuk akun Storage Edge di perangkat.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/get-azdataboxedgestoragecontainer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Get-AzDataBoxEdgeStorageContainer [[-Name] <String>] [-DefaultProfile <IAzureCon
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataBoxEdgeStorageContainer** mendapatkan wadah penyimpanan untuk akun Storage Edge pada perangkat Data Box Edge. Anda dapat menentukan nama sebagai parameter dalam cmdlet untuk mengambil detail wadah penyimpanan tertentu. 
+Cmdlet **Get-AzDataBoxEdgeStorageContainer** mendapatkan wadah penyimpanan untuk akun Storage Edge di perangkat Data Box Edge. Anda dapat menentukan nama sebagai parameter dalam cmdlet untuk mengambil detail wadah penyimpanan tertentu. 
 
 ## EXAMPLES
 
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -EdgeStorageAccountName
-Menyediakan Nama EdgeStorageAccount yang sudah ada
+Sediakan Nama EdgeStorageAccount yang sudah ada
 
 ```yaml
 Type: System.String
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -EdgeStorageAccountObject
-Sediakan Objek EdgeStorageAccount yang sudah ada
+Menyediakan EdgeStorageAccount Object yang sudah ada
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataBoxEdge.Models.PSDataBoxEdgeStorageAccount
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

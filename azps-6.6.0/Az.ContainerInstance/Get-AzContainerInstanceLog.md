@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Get-AzContainerInstanceLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Get-AzContainerInstanceLog.md
 ms.openlocfilehash: 3f7d4028ddf13affaa59aa8109e8897c8aa8e015
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140467606"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141869954"
 ---
 # Get-AzContainerInstanceLog
 
 ## SYNOPSIS
-Dapatkan log untuk contoh wadah yang ditentukan dalam grup sumber daya dan grup wadah yang ditentukan.
+Dapatkan log untuk contoh kontainer tertentu dalam grup sumber daya dan grup kontainer tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerinstance/get-azcontainerinstancelog) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.containerinstance/get-azcontainerinstancelog) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +28,11 @@ Get-AzContainerInstanceLog -ContainerGroupName <String> -ContainerName <String> 
 ```
 
 ## DESCRIPTION
-Dapatkan log untuk contoh wadah yang ditentukan dalam grup sumber daya dan grup wadah yang ditentukan.
+Dapatkan log untuk contoh kontainer tertentu dalam grup sumber daya dan grup kontainer tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan log arah contoh wadah
+### Contoh 1: Dapatkan log ekor dari instans kontainer
 ```powershell
 PS C:\> Get-AzContainerInstanceLog -ContainerGroupName test-cg -ContainerName test-container -ResourceGroupName test-rg
 
@@ -46,10 +46,10 @@ PS C:\> Get-AzContainerInstanceLog -ContainerGroupName test-cg -ContainerName te
 /docker-entrypoint.sh: Configuration complete; ready for start up
 ```
 
-Dapatkan log dari test-container di container group test-cg.
-Secara default, akan mengembalikan hingga 4MB konten log.
+Dapatkan log dari test-container dalam test-cg grup kontainer.
+Secara default, konten log akan dikembalikan hingga 4MB.
 
-### Contoh 2: Mendapatkan arah 2 baris log dari contoh wadah
+### Contoh 2: Dapatkan 2 baris ekor log instans kontainer
 ```powershell
 PS C:\> Get-AzContainerInstanceLog -ContainerGroupName test-cg -ContainerName test-container -ResourceGroupName test-rg -Tail 2
 
@@ -57,7 +57,7 @@ PS C:\> Get-AzContainerInstanceLog -ContainerGroupName test-cg -ContainerName te
 /docker-entrypoint.sh: Configuration complete; ready for start up
 ```
 
-Dapatkan baris log arah 2 dari wadah-uji di wadah grup uji-cg.
+Dapatkan 2 baris ekor log dari test-container dalam container group test-cg.
 
 ## PARAMETERS
 
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerName
-Nama contoh wadah.
+Nama instans kontainer.
 
 ```yaml
 Type: System.String
@@ -122,8 +122,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -138,8 +138,8 @@ Accept wildcard characters: False
 ```
 
 ### -Tail
-Jumlah baris yang diperlihatkan dari arah log contoh wadah.
-Jika tidak diberikan, semua log yang tersedia diperlihatkan hingga 4 mb.
+Jumlah baris yang diperlihatkan dari ekor log instans kontainer.
+Jika tidak disediakan, semua log yang tersedia ditampilkan hingga 4mb.
 
 ```yaml
 Type: System.Int32
@@ -153,9 +153,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Timestamp
-Jika benar, menambahkan timestamp di awal setiap baris output log.
-Jika tidak diberikan, defaultnya adalah false.
+### -Cap waktu
+Jika true, tambahkan cap waktu di awal setiap baris output log.
+Jika tidak disediakan, default ke false.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2TriggerSubscriptionStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2TriggerSubscriptionStatus.md
-ms.openlocfilehash: 89ecaa8275ba733008f06ee935169b67105f9ae3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: b4f2dd82ef2001b410e3ec1c43a11d573405047e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140386691"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141895688"
 ---
 # Get-AzDataFactoryV2TriggerSubscriptionStatus
 
 ## SYNOPSIS
-Dapatkan status langganan untuk pemicu kejadian ke kejadian layanan eksternal tertentu.
+Dapatkan status langganan untuk pemicu acara ke acara layanan eksternal yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2triggersubscriptionstatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ TriggerName Status
 Trigger1    Enabled
 ```
 
-Perintah ini akan mendapatkan status berlangganan untuk pemicu BlobEnetTrigger1 pada kejadian layanan eksternal.
+Perintah ini akan mendapatkan status langganan untuk pemicu BlobEnetTrigger1 ke kejadian layanan eksternal.
 
 ## PARAMETERS
 
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmPublicIpAddress.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmPublicIpAddress.md
 ms.openlocfilehash: b6d71d4c80ba30fc02bb22695132a304f94416cc
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421643"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141821582"
 ---
 # Get-AzureRmPublicIpAddress
 
@@ -53,17 +53,17 @@ Cmdlet **Get-AzureRmPublicIPAddress** mendapatkan satu atau beberapa alamat IP p
 
 ## EXAMPLES
 
-### 1: Dapatkan sumber daya IP publik
+### 1: Mendapatkan sumber daya IP publik
 ```
 $publicIp = Get-AzureRmPublicIpAddress -Name $publicIpName -ResourceGroupName $rgName
 ```
 
-Perintah ini mendapatkan sumber daya alamat IP publik dengan nama $publicIPName grup sumber daya yang $rgName.
+Perintah ini mendapatkan sumber daya alamat IP publik dengan nama $publicIPName dalam $rgName grup sumber daya.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama alamat IP publik yang akan dapatkan cmdlet ini.
+Menentukan nama alamat IP publik yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi alamat IP publik yang akan dapatkan cmdlet ini.
+Menentukan nama grup sumber daya yang berisi alamat IP publik yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -225,7 +225,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -virtualMachinescaleSetName
+### -VirtualMachineScaleSetName
 Nama Kumpulan Skala Mesin Virtual.
 
 ```yaml
@@ -253,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -267,9 +267,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmPublicIpAddress](./New-AzureRmPublicIpAddress.md)
+[Baru-AzureRmPublicIpAddress](./New-AzureRmPublicIpAddress.md)
 
-[Remove-AzureRmPublicIpAddress](./Remove-AzureRmPublicIpAddress.md)
+[Hapus-AzureRmPublicIpAddress](./Remove-AzureRmPublicIpAddress.md)
 
 [Set-AzureRmPublicIpAddress](./Set-AzureRmPublicIpAddress.md)
 

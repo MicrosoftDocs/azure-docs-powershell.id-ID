@@ -5,11 +5,11 @@ ms.assetid: 6A278F91-C078-4DD4-82D0-2E4FA549A089
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/new-azurermroutetable
 schema: 2.0.0
 ms.openlocfilehash: 9ba23a33e82e003413172240264ef8485b12d4e0
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425363"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142103773"
 ---
 # New-AzureRmRouteTable
 
@@ -58,14 +58,14 @@ Routes            : [
 Subnets           : []
 ```
 
-Perintah pertama membuat rute bernama Route07 menggunakan cmdlet New-AzureRmRouteConfig, lalu menyimpannya dalam variabel $Route nya. Rute ini meneruskan paket ke jaringan virtual lokal.
+Perintah pertama membuat rute bernama Route07 menggunakan cmdlet New-AzureRmRouteConfig, lalu menyimpannya dalam variabel $Route. Rute ini meneruskan paket ke jaringan virtual lokal.
 
-Perintah kedua membuat tabel rute bernama RouteTable01, dan menambahkan rute yang disimpan dalam $Route ke tabel baru. Perintah menentukan grup sumber daya tempat tabel dimiliki dan lokasi untuk tabel.
+Perintah kedua membuat tabel rute bernama RouteTable01, dan menambahkan rute yang disimpan di $Route ke tabel baru. Perintah menentukan grup sumber daya tempat tabel berada dan lokasi untuk tabel.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -94,8 +94,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Mengindikasikan bahwa cmdlet ini membuat tabel rute sekalipun tabel rute yang memiliki nama yang sama sudah ada.
+### -Paksa
+Menunjukkan bahwa cmdlet ini membuat tabel rute meskipun tabel rute yang memiliki nama yang sama sudah ada.
 
 ```yaml
 Type: SwitchParameter
@@ -110,8 +110,8 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan kawasan Azure tempat cmdlet membuat tabel rute.
-Untuk informasi selengkapnya, [lihat Azure Regions](https://azure.microsoft.com/en-us/regions/).
+Menentukan kawasan Azure tempat cmdlet ini membuat tabel rute.
+Untuk informasi selengkapnya, lihat [Kawasan Azure](https://azure.microsoft.com/en-us/regions/).
 
 ```yaml
 Type: String
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini membuat tabel rute.
+Menentukan nama grup sumber daya tempat cmdlet ini membuat tabel rute.
 
 ```yaml
 Type: String
@@ -155,8 +155,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Route
-Menentukan array Objek rute **yang** akan dikaitkan dengan tabel rute.
+### -Rute
+Menentukan array objek **Route** untuk dikaitkan dengan tabel rute.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Network.Models.PSRoute]
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -233,8 +233,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmRouteTable](./Get-AzureRmRouteTable.md)
 
-[New-AzureRmRouteConfig](./New-AzureRmRouteConfig.md)
+[AzureRmRouteConfig Baru](./New-AzureRmRouteConfig.md)
 
-[Remove-AzureRmRouteTable](./Remove-AzureRmRouteTable.md)
+[Hapus-AzureRmRouteTable](./Remove-AzureRmRouteTable.md)
 
 [Set-AzureRmRouteTable](./Set-AzureRmRouteTable.md)

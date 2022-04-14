@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzFirewallPolicyRuleCollectionGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzFirewallPolicyRuleCollectionGroup.md
-ms.openlocfilehash: 1f471ffd693f492432acda8112a25f93de4edcab
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6f4dffa540d47caade42f8cddcceb541594b8895
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140555822"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142067251"
 ---
 # Get-AzFirewallPolicyRuleCollectionGroup
 
 ## SYNOPSIS
-Mendapatkan Grup Kumpulan Aturan Kebijakan Azure Firewall
+Mendapatkan Grup Kumpulan Aturan Kebijakan Firewall Azure
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azfirewallpolicyrulecollectiongroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzFirewallPolicyRuleCollectionGroup -ResourceId <String> [-DefaultProfile <I
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzFirewallPolicyRuleCollectionGroup** cmdlet gets the RuleCollectionGroup mentioned from a Firewall Policy
+Cmdlet **Get-AzFirewallPolicyRuleCollectionGroup** mendapatkan RuleCollectionGroup yang disebutkan dari Kebijakan Firewall
 
 ## EXAMPLES
 
@@ -47,11 +50,11 @@ Cmdlet **Get-AzFirewallPolicyRuleCollectionGroup** cmdlet gets the RuleCollectio
 PS C:\> Get-AzFirewallPolicyRuleCollectionGroup -Name rg1 -AzureFirewallPolicy $fp
 ```
 
-Contoh ini mendapatkan kumpulan aturanGrup dalam kebijakan firewall $fp
+Contoh ini mendapatkan kumpulan aturanGroup dalam kebijakan firewall $fp
 
 ### Contoh 2
 
-Mendapatkan Grup Kumpulan Aturan Kebijakan Azure Firewall. (otomatisgenerated)
+Mendapatkan Grup Kumpulan Aturan Kebijakan Firewall Azure. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

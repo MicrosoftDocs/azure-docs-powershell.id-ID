@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.autom
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Set-AzureRMAutomationConnectionFieldValue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Set-AzureRMAutomationConnectionFieldValue.md
-ms.openlocfilehash: 9e4f244bcdb7faf17756d71415cb1519e9374f0b0682e7dca3b4064f8b88bb4c
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: fa5faafe9a7d0b7c27e5bb596e56bfadf88e5608
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416533"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141845412"
 ---
 # Set-AzureRmAutomationConnectionFieldValue
 
@@ -29,21 +29,21 @@ Set-AzureRmAutomationConnectionFieldValue [-Name] <String> -ConnectionFieldName 
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmAutomationConnectionFieldValue** mengubah nilai bidang dalam koneksi di Otomatisasi Azure.
+Cmdlet **Set-AzureRmAutomationConnectionFieldValue** mengubah nilai bidang dalam koneksi di Azure Automation.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah nilai bidang di koneksi
+### Contoh 1: Mengubah nilai bidang dalam koneksi
 ```
 PS C:\>Set-AzureRmAutomationConnectionFieldValue -Name "ContosoConnection" -ConnectionFieldName "SubscriptionID" -Value "b53ec456-3494-4847-8f2b-180901c51050" -ResourceGroupName "ResourceGroup01" -AutomationAccountName "AutomationAccount01"
 ```
 
-Perintah ini mengubah ID langganan untuk koneksi Azure yang bernama ContosoConnection dalam akun Otomatisasi yang bernama AutomationAccount01.
+Perintah ini mengubah ID langganan untuk koneksi Azure bernama ContosoConnection di akun Otomatisasi bernama AutomationAccount01.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang cmdlet ini memodifikasi bidang dalam koneksi.
+Menentukan nama akun Otomatisasi di mana cmdlet ini mengubah bidang dalam koneksi.
 
 ```yaml
 Type: System.String
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionFieldName
-Menentukan nama untuk bidang yang akan dimodifikasi cmdlet ini.
+Menentukan nama untuk bidang yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama untuk koneksi yang digunakan cmdlet untuk memodifikasi bidang.
+Menentukan nama untuk koneksi di mana cmdlet ini mengubah bidang.
 
 ```yaml
 Type: System.String
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini memodifikasi bidang dalam koneksi.
+Menentukan nama grup sumber daya di mana cmdlet ini mengubah bidang dalam koneksi.
 
 ```yaml
 Type: System.String
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Value
-Menentukan nilai untuk diubah di bidang koneksi.
+Menentukan nilai untuk diubah dalam bidang koneksi.
 
 ```yaml
 Type: System.Object
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -149,6 +149,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmAutomationConnection](./New-AzureRMAutomationConnection.md)
+[Baru-AzureRmAutomationConnection](./New-AzureRMAutomationConnection.md)
 
 

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Insights/Commands.Insights/help/New-AzureRmAlertRuleWebhook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Insights/Commands.Insights/help/New-AzureRmAlertRuleWebhook.md
 ms.openlocfilehash: adb538f0c774ecf9f93504ca9db6586f64bd4c35
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420351"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141823436"
 ---
 # New-AzureRmAlertRuleWebhook
 
 ## SYNOPSIS
-Membuat aturan pemberitahuan webhook.
+Membuat webhook aturan peringatan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,28 +28,28 @@ New-AzureRmAlertRuleWebhook [-ServiceUri] <String> [[-Property] <Hashtable>]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmAlertRuleWebhook** membuat aturan pemberitahuan webhook.
+Cmdlet **New-AzureRmAlertRuleWebhook** membuat webhook aturan peringatan.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat webhook aturan pemberitahuan
+### Contoh 1: Membuat webhook aturan peringatan
 ```
 PS C:\>New-AzureRmAlertRuleWebhook -ServiceUri "http://contoso.com"
 ```
 
-Perintah ini membuat aturan pemberitahuan webhook dengan menentukan hanya URI layanan.
+Perintah ini membuat webhook aturan peringatan dengan menentukan hanya URI layanan.
 
 ### Contoh 2: Membuat webhook dengan satu properti
 ```
 PS C:\>$Actual = New-AzureRmAlertRuleWebhook -ServiceUri "http://contoso.com" -Properties @{prop1 = 'value1'}
 ```
 
-Perintah ini membuat webhook aturan pemberitahuan untuk Contoso.com yang memiliki satu properti, lalu menyimpannya di $Actual lain.
+Perintah ini membuat webhook aturan peringatan untuk Contoso.com yang memiliki satu properti, lalu menyimpannya dalam variabel $Actual.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -Properti
-Menentukan daftar properti dalam format @(properti1 = 'nilai1',....).
+Menentukan daftar properti dalam format @(property1 = 'value1',....).
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -117,6 +117,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmAlertRuleEmail](./New-AzureRmAlertRuleEmail.md)
 
-[New-AzureRmAutoscaleWebhook](./New-AzureRmAutoscaleWebhook.md)
+[Baru-AzureRmAutoscaleWebhook](./New-AzureRmAutoscaleWebhook.md)
 
 

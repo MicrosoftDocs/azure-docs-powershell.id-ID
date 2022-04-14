@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Set-AzVirtualNetworkPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Set-AzVirtualNetworkPeering.md
 ms.openlocfilehash: 9ad6d0ef43913bc7b182a37a9bca4b9cccae1918
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419859"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141964059"
 ---
 # Set-AzVirtualNetworkPeering
 
@@ -42,7 +42,7 @@ $myVnet1ToMyVnet2.AllowForwardedTraffic = $True
 Set-AzVirtualNetworkPeering -VirtualNetworkPeering $myVnet1ToMyVnet2
 ```
 
-### Contoh 2: Mengubah akses jaringan virtual peering jaringan virtual
+### Contoh 2: Mengubah akses jaringan virtual dari peering jaringan virtual
 ```
 # Get the virtual network peering
 $myVnet1TomyVnet2 = Get-AzVirtualNetworkPeering -VirtualNetworkName "myVnet1" -ResourceGroupName "myResourceGroup" -Name "myVnet1TomyVnet2"
@@ -54,7 +54,7 @@ $myVnet1TomyVnet2.AllowVirtualNetworkAccess = $False
 Set-AzVirtualNetworkPeering -VirtualNetworkPeering $myVnet1TomyVnet2
 ```
 
-### Contoh 3: Mengubah konfigurasi properti transit gateway peering jaringan virtual
+### Contoh 3: Mengubah konfigurasi properti transit gateway dari peering jaringan virtual
 ```
 # Get the virtual network peering
 $myVnet1TomyVnet2 = Get-AzVirtualNetworkPeering -VirtualNetworkName "myVnet1" -ResourceGroupName "myResourceGroup" -Name "myVnet1TomyVnet2"
@@ -66,7 +66,7 @@ $myVnet1TomyVnet2.AllowGatewayTransit = $True
 Set-AzVirtualNetworkPeering -VirtualNetworkPeering $myVnet1TomyVnet2
 ```
 
-### Contoh 4: Gunakan gateway jarak jauh di peering jaringan virtual
+### Contoh 4: Menggunakan gateway jarak jauh dalam peering jaringan virtual
 ```
 # Get the virtual network peering 
 $myVnet1TomyVnet2 = Get-AzVirtualNetworkPeering -VirtualNetworkName "myVnet1" -ResourceGroupName "ResourceGroup001" -Name "myVnet1TomyVnet2"
@@ -78,15 +78,15 @@ $myVnet1TomyVnet2.UseRemoteGateways = $True
 Set-AzVirtualNetworkPeering -VirtualNetworkPeering $LinkToVNet2
 ```
 
-Dengan mengubah properti ini $True, gateway VNet peer Anda bisa digunakan.
-Namun, peer VNet harus memiliki gateway yang dikonfigurasi dan **AllowGatewayTransit** harus memiliki nilai $True.
+Dengan mengubah properti ini ke $True, gateway VNet rekan Anda bisa digunakan.
+Namun, rekan VNet harus memiliki gateway yang dikonfigurasi dan **AllowGatewayTransit** harus memiliki nilai $True.
 
 Properti ini tidak bisa digunakan jika gateway telah dikonfigurasi.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -131,12 +131,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSVirtualNetworkPeering
-Parameter 'VirtualNetworkPeering' menerima nilai tipe 'PSVirtualNetworkPeering' dari saluran
+Parameter 'VirtualNetworkPeering' menerima nilai tipe 'PSVirtualNetworkPeering' dari pipeline
 
 ## OUTPUTS
 

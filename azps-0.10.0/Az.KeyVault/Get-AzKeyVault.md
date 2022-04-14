@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Get-AzKeyVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Get-AzKeyVault.md
 ms.openlocfilehash: aaace602cd50f9464021b1dcbefe39272e1621bb
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420223"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141811220"
 ---
 # Get-AzKeyVault
 
 ## SYNOPSIS
-Dapatkan kunci vault.
+Mendapatkan kubah kunci.
 
 ## SYNTAX
 
@@ -49,51 +49,51 @@ Get-AzKeyVault [-Tag <Hashtable>] [-DefaultProfile <IAzureContextContainer>] [<C
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzKeyVault** mendapatkan informasi tentang kunci vault dalam langganan. Anda dapat melihat semua contoh key vault dalam langganan, atau memfilter hasil menurut grup sumber daya atau key vault tertentu.
+Cmdlet **Get-AzKeyVault** mendapatkan informasi tentang kubah kunci dalam langganan. Anda dapat menampilkan semua contoh kubah kunci dalam langganan, atau memfilter hasil menurut grup sumber daya atau kubah kunci tertentu.
 
-Perlu diingat bahwa meskipun menentukan grup sumber daya bersifat opsional untuk cmdlet ini saat Anda mendapatkan vault kunci tunggal, Anda harus melakukannya untuk kinerja yang lebih baik.
+Perhatikan bahwa meskipun menentukan grup sumber daya bersifat opsional untuk cmdlet ini ketika Anda mendapatkan kubah kunci tunggal, Anda harus melakukannya untuk kinerja yang lebih baik.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua kunci vault dalam langganan Anda saat ini
+### Contoh 1: Dapatkan semua kubah kunci dalam langganan Anda saat ini
 ```
 PS C:\>Get-AzKeyVault
 ```
 
-Perintah ini akan memasukkan semua kunci vault di langganan Anda saat ini.
+Perintah ini mendapatkan semua kubah kunci dalam langganan Anda saat ini.
 
-### Contoh 2: Dapatkan vault kunci tertentu
+### Contoh 2: Dapatkan kubah kunci tertentu
 ```
 PS C:\>$MyVault = Get-AzKeyVault -VaultName 'Contoso03Vault'
 ```
 
-Perintah ini akan memasukkan kunci vault bernama Contoso03Vault dalam langganan Anda saat ini, lalu menyimpannya dalam $MyVault tersebut. Anda dapat memeriksa properti $MyVault mendapatkan detail tentang key vault.
+Perintah ini mendapatkan kubah kunci bernama Contoso03Vault dalam langganan Anda saat ini, lalu menyimpannya dalam variabel $MyVault. Anda dapat memeriksa properti $MyVault untuk mendapatkan detail tentang kubah kunci.
 
-### Contoh 3: Dapatkan vault kunci dalam grup sumber daya
+### Contoh 3: Dapatkan kubah kunci dalam grup sumber daya
 ```
 PS C:\>Get-AzKeyVault -ResourceGroupName 'ContosoPayRollResourceGroup'
 ```
 
-Perintah ini memasukkan semua penyimpanan kunci ke grup sumber daya bernama ContosoPayRollResourceGroup.
+Perintah ini mendapatkan semua kubah kunci dalam grup sumber daya bernama ContosoPayRollResourceGroup.
 
-### Contoh 4: Mendapatkan semua vault kunci yang dihapus di langganan Anda saat ini
+### Contoh 4: Dapatkan semua kubah kunci yang dihapus dalam langganan Anda saat ini
 ```
 PS C:\>Get-AzKeyVault -InRemovedState
 ```
 
-Perintah ini akan memasukkan semua kunci vault yang dihapus di langganan Anda saat ini.
+Perintah ini mendapatkan semua kubah kunci yang dihapus dalam langganan Anda saat ini.
 
-### Contoh 5: Mendapatkan vault kunci terhapus
+### Contoh 5: Dapatkan kubah kunci yang dihapus
 ```
 PS C:\>Get-AzKeyVault -VaultName 'Contoso03Vault'  -Location 'eastus2' -InRemovedState
 ```
 
-Perintah ini mendapatkan informasi kunci vault terhapus yang bernama Contoso03Vault dalam langganan Anda saat ini dan di kawasan eastus2.
+Perintah ini mendapatkan informasi kubah kunci yang dihapus bernama Contoso03Vault dalam langganan Anda saat ini dan di kawasan eastus2.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: IAzureContextContainer
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -InRemovedState
-Menentukan apakah akan memperlihatkan vault yang dihapus sebelumnya dalam output.
+Menentukan apakah akan memperlihatkan kubah yang dihapus sebelumnya dalam output.
 
 ```yaml
 Type: SwitchParameter
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi vault yang dihapus.
+Lokasi kubah yang dihapus.
 
 ```yaml
 Type: String
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang terkait dengan key vault atau key vaults yang sedang ditanya.
+Menentukan nama grup sumber daya yang terkait dengan kubah kunci atau kubah kunci yang sedang dikueri.
 
 ```yaml
 Type: String
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kunci vault.
+Menentukan nama kubah kunci.
 
 ```yaml
 Type: String
@@ -197,11 +197,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
@@ -220,4 +220,4 @@ Cmdlet ini tidak menerima input apa pun.
 
 [New-AzKeyVault](./New-AzKeyVault.md)
 
-[Remove-AzKeyVault](./Remove-AzKeyVault.md)
+[Hapus-AzKeyVault](./Remove-AzKeyVault.md)

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeStore/Commands.DataLakeStore/help/Set-AzureRmDataLakeStoreItemAcl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeStore/Commands.DataLakeStore/help/Set-AzureRmDataLakeStoreItemAcl.md
 ms.openlocfilehash: 45bf9fe3fb57eb6e627f1b2c7bc3e9146ccfd444
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426642"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141824404"
 ---
 # Set-AzureRmDataLakeStoreItemAcl
 
 ## SYNOPSIS
-Mengubah ACL file atau folder di Data Lake Store.
+Mengubah ACL file atau folder di Penyimpanan Data Lake.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,7 +29,7 @@ Set-AzureRmDataLakeStoreItemAcl [-Account] <String> [-Path] <DataLakeStorePathIn
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmDataLakeStoreItemAcl** mengubah daftar kontrol akses (ACL, Access Control List) dari file atau folder di Data Lake Store.
+Cmdlet **Set-AzureRmDataLakeStoreItemAcl** mengubah daftar kontrol akses (ACL) file atau folder di Penyimpanan Data Lake.
 
 ## EXAMPLES
 
@@ -39,22 +39,22 @@ PS C:\>$ACL = Get-AzureRmDataLakeStoreItemAclEntry -AccountName "ContosoADL" -Pa
 PS C:\> Set-AzureRmDataLakeStoreItemAcl -AccountName "ContosoADL" -Path "/MyFiles/Test.txt" -Acl $ACL
 ```
 
-Perintah pertama mendapatkan ACL untuk direktori akar akun ContosoADL, lalu menyimpannya di $ACL akar.
-Perintah kedua mengatur ACL untuk file Test.txt ke ACL dalam $ACL.
+Perintah pertama mendapatkan ACL untuk direktori akar akun ContosoADL, lalu menyimpannya dalam variabel $ACL.
+Perintah kedua mengatur ACL untuk file Test.txt ke file di $ACL.
 
-### Contoh 2: Mengatur ACL untuk folder secara berulang
+### Contoh 2: Mengatur ACL untuk folder secara rekurtif
 ```
 PS C:\>$ACL = Get-AzureRmDataLakeStoreItemAclEntry -AccountName "ContosoADL" -Path /Folder1
 PS C:\> Set-AzureRmDataLakeStoreItemAcl -AccountName "ContosoADL" -Path "/Folder2" -Acl $ACL -Recurse -Concurrency 128
 ```
 
-Perintah pertama mendapatkan ACL untuk direktori Folder1 dari akun ContosoADL, lalu menyimpannya di $ACL lain.
-Perintah kedua mengatur ACL secara rekursif ke Folder2 dan sub direktori dan file ke direktori di $ACL.
+Perintah pertama mendapatkan ACL untuk folder direktori1 akun ContosoADL, lalu menyimpannya dalam variabel $ACL.
+Perintah kedua mengatur ACL secara rekurtif ke Folder2 dan sub direktori dan filenya ke folder dalam $ACL.
 
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Data Lake Store.
+Menentukan nama akun Penyimpanan Data Lake.
 
 ```yaml
 Type: System.String
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konkurensi
-Jumlah file/direktori yang diproses secara paralel. Opsional: default yang masuk akal akan dipilih.
+Jumlah file/direktori yang diproses secara paralel. Opsional: default yang wajar akan dipilih.
 
 ```yaml
 Type: System.Int32
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -128,8 +128,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur Data Lake Store dari file atau folder, dimulai dengan direktori akar (/).
+### -Jalur
+Menentukan jalur Penyimpanan Data Lake dari file atau folder, dimulai dengan direktori akar (/).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -143,8 +143,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Recurse
-Menunjukkan bahwa ACL diatur secara berulang ke subarah kalori dan file anak
+### -Berulang
+Menunjukkan ACL untuk diatur secara rekursif ke subdirektori dan file anak
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShowProgress
-Jika lolos, status kemajuan akan ditampilkan. Hanya berlaku ketika kumpulan Acl rekursif selesai.
+Jika lolos, status kemajuan akan ditampilkan. Hanya berlaku ketika rangkaian Acl rekurtif selesai.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

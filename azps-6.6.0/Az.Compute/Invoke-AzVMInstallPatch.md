@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Invoke-AzVMInstallPatch.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Invoke-AzVMInstallPatch.md
 ms.openlocfilehash: 566ba34a8ee0a4d8188649678bf5002aabf8549a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140109917"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141871124"
 ---
 # Invoke-AzVMInstallPatch
 
@@ -18,7 +18,7 @@ ms.locfileid: "140109917"
 Menginstal patch pada VM
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/invoke-azvminstallpatch) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/invoke-azvminstallpatch) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -88,7 +88,7 @@ PS C:\> $myVM = Get-AzVM -ResourceGroupName 'MyRG' -Name 'MyVM'
 PS C:\> Invoke-AzVmInstallPatch -VM $myVM -MaximumDuration "PT90M" -RebootSetting "Always" -Windows -ClassificationToIncludeForWindows "Security" -KBNumberToInclude ["KB1234567", "KB123567"] -KBNumberToExclude ["KB1234702", "KB1234802"] -ExcludeKBsRequiringReboot
 ```
 
-Contoh ini melewati objek PSVirtualMachine ke parameter '-VM'. Alat ini juga menginstal patch keamanan sembari menyertakan dan mengecualikan KB tertentu dengan menggunakan '-KBNumberToExclude' dan '-KBNumberToInclude'. Ini juga termasuk KB yang memerlukan reboot dengan menggunakan '-ExcludeKBsRequiringReboot'.
+Contoh ini melewati objek PSVirtualMachine ke parameter '-VM'. Ini juga menginstal patch keamanan sambil menyertakan dan tidak termasuk KB tertentu dengan menggunakan '-KBNumberToExclude' dan '-KBNumberToInclude'. Ini juga tidak termasuk KB yang mengharuskan boot ulang dengan menggunakan '-ExcludeKBsRequiringReboot'.
 
 ### Contoh 3
 ```powershell
@@ -96,12 +96,12 @@ PS C:\> $myLinuxVM = Get-AzVM -ResourceGroupName 'MyRG' -Name 'MyLinuxVM'
 PS C:\> Invoke-AzVMInstallPatch -ResourceId $myLinuxVM.id -MaximumDuration "PT90M" -RebootSetting "Always" -Linux -ClassificationToIncludeForLinux "Security" -PackageNameMaskToInclude ["package123"] -PackageNameMaskToExclude ["package567"]
 ```
 
-Contoh ini menginstal paket tertentu untuk Linux VM yang disediakan oleh Resource ID. 
+Contoh ini menginstal paket tertentu ke VM Linux yang disediakan oleh RESOURCE ID. 
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClassificationToIncludeForLinux
-Pembaruan klasifikasi untuk dipilih ketika menginstal patch.
+Klasifikasi pembaruan untuk dipilih saat menginstal patch.
 Nilai yang mungkin berbeda untuk Windows dan Linux.
 
 ```yaml
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClassificationToIncludeForWindows
-Pembaruan klasifikasi untuk dipilih ketika menginstal patch.
+Klasifikasi pembaruan untuk dipilih saat menginstal patch.
 Nilai yang mungkin berbeda untuk Windows dan Linux.
 
 ```yaml
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExcludeKBsRequiringReboot
-Memfilter DLL yang tidak memiliki perilaku mulai ulang 'NeverReboots' saat ini diatur.
+Memfilter KB yang tidak memiliki perilaku boot ulang 'NeverReboots' saat ini diatur.
 Parameter ini hanya tersedia untuk Windows VM.
 
 ```yaml
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -KBNumberToExclude
-KBs yang akan dikecualikan dalam operasi patch.
+KB untuk dikecualikan dalam operasi patch.
 Parameter ini hanya tersedia untuk Windows VM.
 
 ```yaml
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -KBNumberToInclude
-KBs yang disertakan dalam operasi patch.
+KB untuk disertakan dalam operasi patch.
 Parameter ini hanya tersedia untuk Windows VM.
 
 ```yaml
@@ -226,8 +226,8 @@ Accept wildcard characters: False
 ```
 
 ### -MaximumDuration
-Menentukan jumlah waktu maksimum yang akan dijalankan operasi.
-String ini harus merupakan string durasi sesuai ISO 8601 seperti PT2H (2 jam).
+Menentukan jumlah waktu maksimum operasi yang akan dijalankan.
+String durasi yang sesuai dengan ISO 8601 seperti PT2H (2 jam).
 
 ```yaml
 Type: System.String
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ### -PackageNameMaskToExclude
 Paket untuk dikecualikan dalam operasi patch.
 Format: packageName_packageVersion.
-Parameter ini hanya tersedia untuk Vm Linux.
+Parameter ini hanya tersedia untuk Linux VM.
 
 ```yaml
 Type: System.String[]
@@ -259,9 +259,9 @@ Accept wildcard characters: False
 ```
 
 ### -PackageNameMaskToInclude
-Paket yang disertakan dalam operasi patch.
+Paket untuk disertakan dalam operasi patch.
 Format: packageName_packageVersion.
-Parameter ini hanya tersedia untuk Vm Linux.
+Parameter ini hanya tersedia untuk Linux VM.
 
 ```yaml
 Type: System.String[]
@@ -276,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### -RebootSetting
-Menentukan saat VM dapat diterima untuk memulai ulang VM selama operasi pembaruan perangkat lunak.
+Menentukan kapan VM dapat diterima untuk memulai ulang selama operasi pembaruan perangkat lunak.
 
 ```yaml
 Type: System.String
@@ -306,7 +306,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID Sumber Daya untuk komputer virtual Anda.
+ID sumber daya untuk mesin virtual Anda.
 
 ```yaml
 Type: System.String
@@ -366,7 +366,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -382,7 +382,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -397,7 +397,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

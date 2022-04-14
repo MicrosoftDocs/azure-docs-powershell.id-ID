@@ -3,17 +3,17 @@ external help file: Microsoft.WindowsAzure.Commands.ServiceManagement.dll-Help.x
 ms.assetid: 73CEA6A8-46C9-4772-9A67-03F532696CFD
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: ddf9948c20f439b3129b7352be2cf975225ae717e93e14a8b1c5d27ea14e8245
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: efe7989ebf917f623b7055d900c4979f4f66468f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419306"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141965981"
 ---
 # Get-AzureSubnet
 
 ## SYNOPSIS
-Mendapatkan daftar subnet yang terkait dengan komputer virtual Azure yang ditentukan.
+Mendapatkan daftar subnet yang terkait dengan mesin virtual Azure yang ditentukan.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,34 +25,34 @@ Get-AzureSubnet -VM <IPersistentVM> [-Profile <AzureSMProfile>] [-InformationAct
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureSubnet** mengembalikan daftar subnet yang terkait dengan mesin virtual yang ditentukan.
+Cmdlet **Get-AzureSubnet** mengembalikan daftar subnet yang terkait dengan mesin virtual tertentu.
 Gunakan **Get-AzureVM** untuk menentukan mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan subnet untuk mesin virtual
+### Contoh 1: Dapatkan subnet untuk mesin virtual
 ```
 PS C:\> $VM = Get-AzureVM -ServiceName "ContosoService03" -Name "VirtualMachine01"
 C:\PS> Get-AzureSubnet -VM $VM
 ```
 
-Perintah pertama mendapatkan mesin virtual bernama VirtualMachine01 di layanan yang bernama ContosoService03, lalu menyimpannya di $VM lain.
+Perintah pertama mendapatkan mesin virtual bernama VirtualMachine01 dalam layanan bernama ContosoService03, lalu menyimpannya dalam variabel $VM.
 
-Perintah kedua mendapatkan subnet Azure untuk komputer virtual pada $VM.
+Perintah kedua mendapatkan subnet Azure untuk mesin virtual di $VM.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -82,8 +82,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

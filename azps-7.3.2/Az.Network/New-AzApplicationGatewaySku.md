@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewaySku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewaySku.md
-ms.openlocfilehash: d44ce188a623deef832801a86a8956758d4e9363
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d1f4781eddd8849518aa9ecdec19b2e1d946809f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140007644"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141890792"
 ---
 # New-AzApplicationGatewaySku
 
 ## SYNOPSIS
 Membuat SKU untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewaysku) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzApplicationGatewaySku -Name <String> -Tier <String> [-Capacity <Int32>]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApplicationGatewaySku** membuat unit penyimpanan saham (SKU) untuk gateway aplikasi Azure.
+Cmdlet **New-AzApplicationGatewaySku** membuat unit penyimpanan stok (SKU) untuk gateway aplikasi Azure.
 
 ## EXAMPLES
 
@@ -35,7 +38,7 @@ Cmdlet **New-AzApplicationGatewaySku** membuat unit penyimpanan saham (SKU) untu
 PS C:\>$SKU = New-AzApplicationGatewaySku -Name "Standard_Small" -Tier "Standard" -Capacity 2
 ```
 
-Perintah ini membuat SKU yang bernama Standard_Small untuk gateway aplikasi Azure dan menyimpan hasilnya di variabel yang bernama $SKU.
+Perintah ini membuat SKU bernama Standard_Small untuk gateway aplikasi Azure dan menyimpan hasilnya dalam variabel bernama $SKU.
 
 ## PARAMETERS
 
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -93,8 +96,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tier
-Menentukan tingkatan SKU.
+### -Tingkat
+Menentukan tingkat SKU.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Standar
 - WAF
@@ -115,11 +118,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

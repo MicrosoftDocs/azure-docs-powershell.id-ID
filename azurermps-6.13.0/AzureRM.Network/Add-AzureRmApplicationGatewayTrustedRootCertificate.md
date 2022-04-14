@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Add-AzureRmApplicationGatewayTrustedRootCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Add-AzureRmApplicationGatewayTrustedRootCertificate.md
-ms.openlocfilehash: c112e3e939f19058af7b5be9257fdf06a190c89f690157621089410c5558a0df
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: e44136d5fa9b0a6b0b979005c13faf6041d98f61
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140858837"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141778431"
 ---
 # Add-AzureRmApplicationGatewayTrustedRootCertificate
 
@@ -39,10 +39,10 @@ PS C:\> $gw = Add-AzureRmApplicationGatewayBackendHttpSetting -Name $poolSetting
 PS C:\> $gw = Set-AzureRmApplicationGateway -ApplicationGateway $gw
 ```
 
-Perintah pertama akan mendapatkan gateway aplikasi dan menyimpannya dalam $gw baru.
-Perintah kedua menambahkan sertifikat akar tepercaya yang baru ke Gateway Aplikasi yang mengambil jalur sertifikat akar sebagai input.
+Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam variabel $gw.
+Perintah kedua menambahkan sertifikat akar tepercaya baru untuk Application Gateway mengambil jalur sertifikat akar sebagai input.
 Perintah ketiga membuat pengaturan backend http baru menggunakan sertifikat akar tepercaya untuk memvalidasi sertifikat server backend terhadap.
-Perintah fouth memperbarui Gateway Aplikasi.
+Perintah fouth memperbarui Application Gateway.
 
 ## PARAMETERS
 
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

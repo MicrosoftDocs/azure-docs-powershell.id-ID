@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.iothu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/IotHub/Commands.IotHub/help/Get-AzureRmIotHubJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/IotHub/Commands.IotHub/help/Get-AzureRmIotHubJob.md
-ms.openlocfilehash: 44c8822e172b7acda5717540041a59a975070a2d5b94894c50174e5470cb44a1
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 684b892d2c2cc995e12ae6327541f13428da270f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140860706"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141823376"
 ---
 # Get-AzureRmIotHubJob
 
@@ -27,9 +27,9 @@ Get-AzureRmIotHubJob [-ResourceGroupName] <String> [-Name] <String> [[-JobId] <S
 ```
 
 ## DESCRIPTION
-Mendapatkan informasi tentang Pekerjaan IotHub.
-Pekerjaan IotHub dibuat ketika operasi impor atau ekspor diinisasi menggunakan New-AzureRmIotHubExportDevices atau New-AzureRmIotHubImportDevices impor.
-Anda dapat mencantumkan semua pekerjaan atau memfilter pekerjaan menggunakan Pengidentifikasi Pekerjaan.
+Mendapatkan informasi tentang IotHub Job.
+Pekerjaan IotHub dibuat ketika operasi impor atau ekspor diinisiasi menggunakan perintah New-AzureRmIotHubExportDevices atau New-AzureRmIotHubImportDevices.
+Anda dapat mencantumkan semua pekerjaan atau memfilter pekerjaan menurut Pengidentifikasi Pekerjaan.
 
 ## EXAMPLES
 
@@ -40,7 +40,7 @@ PS C:\> Get-AzureRmIotHubJob -ResourceGroupName "myresourcegroup" -Name "myiothu
 
 Mendapatkan semua pekerjaan untuk IotHub bernama "myiothub"
 
-### Contoh 2 Mendapatkan Pekerjaan tertentu
+### Contoh 2 Dapatkan Pekerjaan tertentu
 ```
 PS C:\> Get-AzureRmIotHubJob -ResourceGroupName "myresourcegroup" -Name "myiothub" -JobId 3630fc31-4caa-43e8-a232-ea0577221cb2
 ```
@@ -50,7 +50,7 @@ Mendapatkan informasi tentang pekerjaan dengan pengidentifikasi "3630fc31-4caa-4
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

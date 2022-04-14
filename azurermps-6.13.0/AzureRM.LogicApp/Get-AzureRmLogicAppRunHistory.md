@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/LogicApp/Commands.LogicApp/help/Get-AzureRmLogicAppRunHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/LogicApp/Commands.LogicApp/help/Get-AzureRmLogicAppRunHistory.md
 ms.openlocfilehash: f8e6204be07b9094b1fb4f2cb4c5cafa2a609f0e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423654"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141822469"
 ---
 # Get-AzureRmLogicAppRunHistory
 
 ## SYNOPSIS
-Mendapatkan riwayat proses aplikasi logika.
+Mendapatkan riwayat jalankan aplikasi logika.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,17 +28,17 @@ Get-AzureRmLogicAppRunHistory -ResourceGroupName <String> -Name <String> [-RunNa
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmLogicAppRunHistory** mendapatkan riwayat proses aplikasi logika.
-Cmdlet ini mengembalikan kumpulan objek **WorkflowRun.**
+Cmdlet **Get-AzureRmLogicAppRunHistory** mendapatkan riwayat jalankan aplikasi logika.
+Cmdlet ini mengembalikan kumpulan objek **WorkflowRun** .
 Tentukan aplikasi logika dan grup sumber daya.
 Modul ini mendukung parameter dinamis.
 Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
-Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilai tersebut.
+Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan riwayat proses dari aplikasi logika
+### Contoh 1: Dapatkan riwayat jalankan aplikasi logika
 ```
 PS C:\>Get-AzureRmLogicAppActionRunHistory -ResourceGroupName "Resourcegroup11" -Name "LogicApp03"
 CorrelationId    : 55830326-9042-404d-a4c3-fab198106a57
@@ -64,9 +64,9 @@ LogicAppName     : LogicApp03
 LogicAppVersion  : 08587489107859952120
 ```
 
-Perintah ini memperoleh riwayat proses dari aplikasi logika bernama LogicApp03.
+Perintah ini mendapatkan riwayat jalankan aplikasi logika bernama LogicApp03.
 
-### Contoh 2: Dapatkan aplikasi logika berjalan
+### Contoh 2: Menjalankan aplikasi logika
 ```
 PS C:\>Get-AzureRmLogicAppActionRunHistory -ResourceGroupName "Resourcegroup11" -Name "LogicApp03" -RunName "08587489104702792076"
 CorrelationId    : 55830326-9042-404d-a4c3-fab198106a57
@@ -81,12 +81,12 @@ LogicAppName     : LogicApp03
 LogicAppVersion  : 08587489107859952120
 ```
 
-Perintah ini menjalankan aplikasi logika tertentu untuk aplikasi logika bernama LogicApp03.
+Perintah ini akan menjalankan aplikasi logika tertentu untuk aplikasi logika bernama LogicApp03.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama aplikasi logika tempat cmdlet ini mendapatkan riwayat proses.
+Menentukan nama aplikasi logika tempat cmdlet ini menjalankan riwayat.
 
 ```yaml
 Type: System.String
@@ -131,8 +131,8 @@ Accept wildcard characters: False
 ```
 
 ### -RunName
-Menentukan nama jalankan dari aplikasi logika.
-Cmdlet ini menjalankan alur kerja yang ditentukan cmdlet ini.
+Menentukan nama jalankan aplikasi logika.
+Cmdlet ini akan menjalankan alur kerja yang ditentukan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

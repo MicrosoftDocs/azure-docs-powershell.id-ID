@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzPolicyDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzPolicyDefinition.md
-ms.openlocfilehash: 754fa194e43ad8db81f30487ab82021caec06418
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 36e99a77ca535521cc4f78f8310410a25e9b8fde
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140184109"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142028441"
 ---
 # Set-AzPolicyDefinition
 
 ## SYNOPSIS
-Memodifikasi definisi kebijakan.
+Mengubah definisi kebijakan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/set-azpolicydefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -66,8 +69,8 @@ PS C:\> $PolicyDefinition = Get-AzPolicyDefinition -Name 'VMPolicyDefinition'
 PS C:\> Set-AzPolicyDefinition -Id $PolicyDefinition.ResourceId -Description 'Updated policy to not allow virtual machine creation'
 ```
 
-Perintah pertama mendapatkan definisi kebijakan yang bernama VMPolicyDefinition dengan menggunakan cmdlet Get-AzPolicyDefinition cmdlet.
-Perintah menyimpan objek tersebut dalam $PolicyDefinition variabel.
+Perintah pertama mendapatkan definisi kebijakan bernama VMPolicyDefinition dengan menggunakan cmdlet Get-AzPolicyDefinition.
+Perintah menyimpan objek tersebut dalam variabel $PolicyDefinition.
 Perintah kedua memperbarui deskripsi definisi kebijakan yang diidentifikasi oleh properti **ResourceId** $PolicyDefinition.
 
 ### Contoh 2: Memperbarui mode definisi kebijakan
@@ -75,7 +78,7 @@ Perintah kedua memperbarui deskripsi definisi kebijakan yang diidentifikasi oleh
 PS C:\> Set-AzPolicyDefinition -Name 'VMPolicyDefinition' -Mode 'All'
 ```
 
-Perintah ini memperbarui definisi kebijakan yang bernama VMPolicyDefinition dengan menggunakan cmdlet Set-AzPolicyDefinition untuk mengatur properti mode menjadi 'All'.
+Perintah ini memperbarui definisi kebijakan bernama VMPolicyDefinition dengan menggunakan cmdlet Set-AzPolicyDefinition untuk mengatur properti modenya ke 'Semua'.
 
 ### Contoh 3: Memperbarui metadata definisi kebijakan
 ```
@@ -91,7 +94,7 @@ Properties         : @{displayName=VMPolicyDefinition; policyType=Custom; mode=A
 PolicyDefinitionId : /subscriptions/11111111-1111-1111-1111-111111111111/providers/Microsoft.Authorization/policyDefinitions/VMPolicyDefinition
 ```
 
-Perintah ini memperbarui metadata definisi kebijakan yang bernama VMPolicyDefinition untuk menunjukkan kategorinya adalah "Komputer Virtual".
+Perintah ini memperbarui metadata definisi kebijakan bernama VMPolicyDefinition untuk menunjukkan kategorinya adalah "Mesin Virtual".
 
 ## PARAMETERS
 
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID sumber daya yang sepenuhnya memenuhi syarat untuk definisi kebijakan yang ditentukan cmdlet ini.
+Menentukan ID sumber daya yang sepenuhnya memenuhi syarat untuk definisi kebijakan yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementGroupName
-Nama grup manajemen definisi kebijakan untuk memperbarui.
+Nama grup manajemen definisi kebijakan untuk diperbarui.
 
 ```yaml
 Type: System.String
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama definisi kebijakan yang ditentukan cmdlet ini.
+Menentukan nama definisi kebijakan yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -Parameter
-Deklarasi parameter untuk definisi kebijakan. Anda dapat menggunakan jalur ke nama file atau uri yang berisi deklarasi parameter, atau deklarasi parameter sebagai string.
+Deklarasi parameter untuk definisi kebijakan. Ini bisa berupa jalur ke nama file atau uri yang berisi deklarasi parameter, atau deklarasi parameter sebagai string.
 
 ```yaml
 Type: System.String
@@ -278,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Cmdlet ini mempertimbangkan versi API prari release ketika cmdlet menentukan versi mana yang akan digunakan secara otomatis.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -308,13 +311,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 

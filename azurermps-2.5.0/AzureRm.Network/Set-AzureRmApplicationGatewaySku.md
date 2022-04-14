@@ -5,11 +5,11 @@ ms.assetid: 3D88F561-7FE4-4017-BAC4-8F085AD037A9
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/set-azurermapplicationgatewaysku
 schema: 2.0.0
 ms.openlocfilehash: ccefc75d28ee49f12dd1f72d03512e3850298986
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421952"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141888772"
 ---
 # Set-AzureRmApplicationGatewaySku
 
@@ -26,17 +26,17 @@ Set-AzureRmApplicationGatewaySku -ApplicationGateway <PSApplicationGateway> -Nam
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmApplicationGatewaySku** mengubah unit penyimpanan saham (SKU) gateway aplikasi.
+Cmdlet **Set-AzureRmApplicationGatewaySku** memodifikasi stock keeping unit (SKU) gateway aplikasi.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui SKU gateway aplikasi
+### Contoh 1: Memperbarui SKU gateway aplikasi
 ```
 PS C:\>$AppGw = Get-AzureRmApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 PS C:\> $AppGw = Set-AzureRmApplicationGatewaySku -ApplicationGateway $AppGw -Name "Standard_Small" -Tier "Standard" -Capacity 2
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01, dan menyimpannya di $AppGw lokal.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 milik grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw.
 
 Perintah kedua memperbarui SKU gateway aplikasi.
 
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kapasitas
-Menentukan jumlah instans gateway aplikasi.
+Menentukan hitungan instans gateway aplikasi.
 
 ```yaml
 Type: Int32
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -110,8 +110,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tier
-Menentukan tingkatan gateway aplikasi.
+### -Tingkat
+Menentukan tingkat gateway aplikasi.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Standar
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -145,8 +145,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzureRmApplicationGatewaySku](./Get-AzureRmApplicationGatewaySku.md)
+[Get-AzureRmApplicationGatewaysku](./Get-AzureRmApplicationGatewaySku.md)
 
-[New-AzureRmApplicationGatewaySku](./New-AzureRmApplicationGatewaySku.md)
+[New-AzureRmApplicationGatewaysku](./New-AzureRmApplicationGatewaySku.md)
 
 

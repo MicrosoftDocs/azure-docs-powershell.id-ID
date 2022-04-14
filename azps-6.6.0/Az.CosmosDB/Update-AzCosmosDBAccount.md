@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBAccount.md
 ms.openlocfilehash: ddb25bac3075c188e42be13f0ec0523abeee4816
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140257489"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141868586"
 ---
 # Update-AzCosmosDBAccount
 
@@ -18,7 +18,7 @@ ms.locfileid: "140257489"
 Perbarui atribut akun CosmosDB.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbaccount) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -65,7 +65,7 @@ Update-AzCosmosDBAccount -InputObject <PSDatabaseAccountGetResults> [-EnableAuto
 ```
 
 ## DESCRIPTION
-Perbarui properti akun CosmosDB. Tidak dapat memperbarui Kawasan Akun secara sederhana dengan properti lainnya.
+Perbarui properti akun CosmosDB. Tidak dapat memperbarui Kawasan Akun secara bersamaan dengan properti lain.
 
 ## EXAMPLES
 
@@ -96,7 +96,7 @@ NetworkAclBypass              : None
 NetworkAclBypassResourceIds   : {}
 ```
 
-Memperbarui DefaultConsistencyLevel menjadi "Strong", Enabled AutomaticFailover, Enabled MultipleWriteLocations dan Enabled VirtualNetwork for CosmosDB Account with name accountName. 
+Diperbarui DefaultConsistencyLevel to "Strong", Enabled AutomaticFailover, Enabled MultipleWriteLocations dan Enabled VirtualNetwork for CosmosDB Account with name accountName. 
 
 ## PARAMETERS
 
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupIntervalInMinutes
-Interval(dalam menit) ketika pencadangan diambil (hanya untuk akun dengan pencadangan mode berkala)
+Interval(dalam menit) dengan cadangan yang diambil (hanya untuk akun dengan cadangan mode berkala)
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupRetentionIntervalInHours
-Waktu(dalam jam) di mana setiap cadangan dipertahankan (hanya untuk akun dengan pencadangan mode berkala)
+Waktu(dalam jam) di mana setiap cadangan dipertahankan (hanya untuk akun dengan cadangan mode berkala)
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableAnalyticalStorage
-Bool untuk menunjukkan apakah AnalyticalStorage diaktifkan pada akun tersebut.
+Bool untuk menunjukkan apakah AnalyticalStorage diaktifkan di akun.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -237,8 +237,8 @@ Accept wildcard characters: False
 ```
 
 ### -EnableAutomaticFailover
-Mengaktifkan failover otomatis wilayah penulisan pada kejadian yang jarang terjadi karena pemadaman listrik.
-Failover otomatis akan menghasilkan kawasan penulisan baru untuk akun tersebut dan dipilih berdasarkan prioritas failover yang dikonfigurasi untuk akun tersebut.
+Mengaktifkan failover otomatis dari wilayah tulis dalam kejadian langka bahwa kawasan tidak tersedia karena pemadaman.
+Failover otomatis akan menghasilkan wilayah tulis baru untuk akun dan dipilih berdasarkan prioritas failover yang dikonfigurasi untuk akun tersebut.
 Nilai yang diterima: false, true
 
 ```yaml
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableMultipleWriteLocations
-Mengaktifkan Beberapa Lokasi Penulisan.
+Aktifkan Beberapa Lokasi Tulis.
 Nilai yang diterima: false, true
 
 ```yaml
@@ -331,7 +331,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxStalenessIntervalInSeconds
-Ketika digunakan dengan konsistensi Basi Berterikat, nilai ini menunjukkan jumlah waktu kehentikan (dalam timespan) yang diobjekkan.
+Ketika digunakan dengan konsistensi Ketokohan Terikat, nilai ini menunjukkan jumlah ketokohan waktu (dalam jangka waktu) yang ditoleransi.
 Rentang yang diterima untuk nilai ini adalah 5-86400.
 
 ```yaml
@@ -347,7 +347,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxStalenessPrefix
-Ketika digunakan dengan konsistensi  Staleness Terikat, nilai ini menunjukkan jumlah permintaan basi yang diobesakan.
+Ketika digunakan dengan konsistensi Ketokohan Terikat, nilai ini menunjukkan jumlah permintaan basi yang ditoleransi.
 Rentang yang diterima untuk nilai ini adalah 1 - 2.147.483.647.
 
 ```yaml
@@ -378,7 +378,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkAclBypass
-Apakah Bypass Acl Jaringan atau tidak diaktifkan untuk akun ini untuk Synapse Link. Kemungkinan nilai meliputi: 'Tidak ada', 'AzureServices'.
+Apakah Bypass Acl Jaringan diaktifkan atau tidak untuk akun ini untuk Tautan Sinapsis. Nilai yang memungkinkan meliputi: 'Tidak ada', 'AzureServices'.
 
 ```yaml
 Type: System.String
@@ -393,7 +393,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkAclBypassResourceId
-Daftar Id Sumber Daya untuk memperbolehkan Bypass Acl Jaringan untuk Link Synapse.
+Daftar Id Sumber Daya untuk memperbolehkan Bypass Acl Jaringan untuk Tautan Synapse.
 
 ```yaml
 Type: System.String[]
@@ -408,7 +408,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccess
-Apakah akses titik akhir publik diperbolehkan atau tidak untuk server ini. Nilai yang mungkin disertakan: 'Diaktifkan', 'Dinonaktifkan'
+Apakah akses titik akhir publik diperbolehkan atau tidak untuk server ini. Nilai yang memungkinkan termasuk: 'Diaktifkan', 'Dinonaktifkan'
 
 ```yaml
 Type: System.String
@@ -453,7 +453,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerVersion
-ServerVersion, hanya valid dalam kasus AkunAooDB.
+ServerVersion, hanya berlaku dalam kasus Akun MongoDB.
 
 ```yaml
 Type: System.String
@@ -514,7 +514,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -530,7 +530,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -545,7 +545,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupStorageRedundancy
-Tipe kelebihan data cadangan Storage ini
+Tipe redundansi dari akun Storage cadangan
 
 ```yaml
 Type: System.String
@@ -560,7 +560,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

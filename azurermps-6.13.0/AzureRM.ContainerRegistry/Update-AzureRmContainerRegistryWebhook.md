@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ContainerRegistry/Commands.ContainerRegistry/help/Update-AzureRmContainerRegistryWebhook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ContainerRegistry/Commands.ContainerRegistry/help/Update-AzureRmContainerRegistryWebhook.md
 ms.openlocfilehash: b7f10fd96d8f746db1ff37b1461cdd8394bdf75d
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423686"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141824876"
 ---
 # Update-AzureRmContainerRegistryWebhook
 
 ## SYNOPSIS
-Memperbarui container registry webhook.
+Memperbarui webhook registri kontainer.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -43,11 +43,11 @@ Update-AzureRmContainerRegistryWebhook [-Uri <Uri>] [-Action <String[]>] -Webhoo
 ```
 
 ## DESCRIPTION
-Cmdlet Update-AzureRmContainerRegistryWebhook memperbarui container registry webhook.
+Cmdlet Update-AzureRmContainerRegistryWebhook memperbarui webhook registri kontainer.
 
 ## EXAMPLES
 
-### Contoh 1: Update an existing container registry webhook.
+### Contoh 1: Memperbarui webhook registri kontainer yang sudah ada.
 ```powershell
 PS C:\>Update-AzureRmContainerRegistryWebhook -ResourceGroupName "MyResourceGroup" -RegistryName "MyRegistry" -Name "webhook001" -Uri http://www.bing.com -Action Delete,Push -Header @{SpecialHeader='headerVal'} -Tag @{Key='val'} -Status Enabled -Scope 'foo:*'
 
@@ -57,7 +57,7 @@ Name            Location   Status     Scope           Actions         Provisioni
 webhook001      westus     enabled    foo:*           {push, delete}  Succeeded
 ```
 
-Perbarui webhook registri wadah yang sudah ada.
+Memperbarui webhook registri kontainer yang sudah ada.
 
 ## PARAMETERS
 
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -Header
-Spasi dipisahkan header kustom dalam \[ format 'tombol =nilai \] ' yang akan ditambahkan ke pemberitahuan webhook.
+Spasi dipisahkan header kustom dalam format 'key\[=value\]' yang akan ditambahkan ke pemberitahuan webhook.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistryName
-Container Registry Name.
+Nama Registri Kontainer.
 
 ```yaml
 Type: System.String
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-The container registry Webhook resource id
+Id sumber daya webhook registri kontainer
 
 ```yaml
 Type: System.String
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag yang dipisahkan spasi dalam \[ format 'tombol =nilai'. \]
+Spasi yang dipisahkan tag dalam format 'key\[=value\]'.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -Uri
-URI layanan untuk webhook untuk memposting pemberitahuan.
+Layanan URI untuk webhook untuk memposting pemberitahuan.
 
 ```yaml
 Type: System.Uri
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -Webhook
-Objek Container Registry Webhook.
+Objek Webhook Registri Kontainer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ContainerRegistry.PSContainerRegistryWebhook
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -259,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -274,7 +274,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -291,10 +291,10 @@ Parameter: Webhook (ByValue)
 
 ## RELATED LINKS
 
-[New-AzureRmContainerRegistryWebhook](New-AzureRmContainerRegistryWebhook.md)
+[Baru-AzureRmContainerRegistryWebhook](New-AzureRmContainerRegistryWebhook.md)
 
 [Get-AzureRmContainerRegistryWebhook](Get-AzureRmContainerRegistryWebhook.md)
 
-[Test-AzureRmContainerRegistryWebhook](Test-AzureRmContainerRegistryWebhook.md)
+[Uji-AzureRmContainerRegistryWebhook](Test-AzureRmContainerRegistryWebhook.md)
 
-[Remove-AzureRmContainerRegistryWebhook](Remove-AzureRmContainerRegistryWebhook.md)
+[Hapus-AzureRmContainerRegistryWebhook](Remove-AzureRmContainerRegistryWebhook.md)

@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServer.md
 ms.openlocfilehash: 265e19ad2759ff8e672a645d19e0057f09216dba
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140245699"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141858524"
 ---
 # Get-AzSqlServer
 
 ## SYNOPSIS
-Mengembalikan informasi tentang SQL Database server.
+Mengembalikan informasi tentang server SQL Database.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlserver) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,8 +29,8 @@ Get-AzSqlServer [[-ResourceGroupName] <String>] [[-ServerName] <String>] [-Expan
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlServer** mengembalikan informasi tentang satu atau beberapa Azure SQL Database server.
-Tentukan nama server untuk melihat informasi hanya untuk server itu.
+Cmdlet **Get-AzSqlServer** mengembalikan informasi tentang satu atau beberapa server Azure SQL Database.
+Tentukan nama server untuk melihat informasi hanya untuk server tersebut.
 
 ## EXAMPLES
 
@@ -58,9 +58,9 @@ Identity                 :
 FullyQualifiedDomainName : server02.database.windows.net
 ```
 
-Perintah ini mendapatkan informasi tentang semua Azure SQL Database yang ditetapkan ke grup sumber daya ResourceGroup01.
+Perintah ini mendapatkan informasi tentang semua server Azure SQL Database yang ditetapkan ke grup sumber daya ResourceGroup01.
 
-### Contoh 2: Mendapatkan informasi tentang Azure SQL Database server
+### Contoh 2: Mendapatkan informasi tentang server Azure SQL Database
 ```
 PS C:\>Get-AzSqlServer -ResourceGroupName "ResourceGroup01" -ServerName "Server01"
 ResourceGroupName        : resourcegroup01
@@ -76,7 +76,7 @@ FullyQualifiedDomainName : server01.database.windows.net
 
 Perintah ini mendapatkan informasi tentang server Azure SQL Database bernama Server01.
 
-### Contoh 3: Mendapatkan semua SQL Server dalam langganan
+### Contoh 3: Dapatkan semua contoh SQL Server dalam langganan
 ```
 PS C:\>Get-AzResourceGroup | Get-AzSqlServer
 ResourceGroupName        : resourcegroup01
@@ -110,9 +110,9 @@ Identity                 :
 FullyQualifiedDomainName : server03.database.windows.net
 ```
 
-Perintah ini mendapatkan informasi tentang semua Azure SQL Database pelanggan dalam langganan saat ini.
+Perintah ini mendapatkan informasi tentang semua server Azure SQL Database dalam langganan saat ini.
 
-### Contoh 4: Dapatkan semua contoh SQL Server ditetapkan ke grup sumber daya menggunakan pemfilteran
+### Contoh 4: Mendapatkan semua contoh SQL Server ditetapkan ke grup sumber daya menggunakan pemfilteran
 ```
 PS C:\>Get-AzSqlServer -ResourceGroupName "ResourceGroup01" -ServerName "server*"
 ResourceGroupName        : resourcegroup01
@@ -136,7 +136,7 @@ Identity                 :
 FullyQualifiedDomainName : server02.database.windows.net
 ```
 
-Perintah ini mendapatkan informasi tentang semua Azure SQL Database sumber daya yang ditetapkan ke grup sumber daya ResourceGroup01 yang dimulai dengan "server".
+Perintah ini mendapatkan informasi tentang semua server Azure SQL Database yang ditetapkan ke grup sumber daya ResourceGroup01 yang dimulai dengan "server".
 
 ### Contoh 5: Dapatkan semua contoh SQL Server ditetapkan ke grup sumber daya dengan informasi administrator eksternal
 ```
@@ -179,9 +179,9 @@ TenantId                  : f553829b-6d84-481b-86a9-42db57c1dc73
 AzureADOnlyAuthentication : True
 ```
 
-Perintah ini mendapatkan informasi tentang semua Azure SQL Database yang ditetapkan ke grup sumber daya ResourceGroup01.
+Perintah ini mendapatkan informasi tentang semua server Azure SQL Database yang ditetapkan ke grup sumber daya ResourceGroup01.
 
-### Contoh 6: Mendapatkan informasi tentang server Azure SQL Database dengan informasi administrator eksternal
+### Contoh 6: Dapatkan informasi tentang server Azure SQL Database dengan informasi administrator eksternal
 ```
 PS C:\>$val = Get-AzSqlServer -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -ExpandActiveDirectoryAdministrator
 ResourceGroupName        : resourcegroup01
@@ -209,7 +209,7 @@ Perintah ini mendapatkan informasi tentang server Azure SQL Database bernama Ser
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpandActiveDirectoryAdministrator
-Memperluas Informasi Administrator Direktori Aktif di server.
+Perluas Informasi Administrator Direktori Aktif di server.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya untuk server yang ditetapkan.
+Menentukan nama grup sumber daya tempat server ditetapkan.
 
 ```yaml
 Type: System.String
@@ -254,7 +254,7 @@ Accept wildcard characters: True
 ```
 
 ### -ServerName
-Menentukan nama server yang akan dapatkan cmdlet ini.
+Menentukan nama server yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -269,7 +269,7 @@ Accept wildcard characters: True
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -285,7 +285,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -300,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -320,6 +320,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzSqlServer](./Set-AzSqlServer.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 
 

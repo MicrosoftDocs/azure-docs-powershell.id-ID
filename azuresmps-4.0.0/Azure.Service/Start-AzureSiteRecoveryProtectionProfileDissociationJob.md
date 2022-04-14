@@ -3,17 +3,17 @@ external help file: Microsoft.Azure.Commands.RecoveryServicesRdfe.dll-Help.xml
 ms.assetid: 185506BC-6155-4517-BCBD-BCDE7450C7A8
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: bc9fe4a786c42a4a83efadabb34d905dc86045158351e7ff0645d4cde382cd13
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 51485660efc815d1e29c7ba8a23bc89268b3208f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417687"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141965939"
 ---
 # Start-AzureSiteRecoveryProtectionProfileDissociationJob
 
 ## SYNOPSIS
-Memulai pekerjaan disosiasi pada kebijakan replikasi yang terkait dengan wadah proteksi Pemulihan Situs.
+Memulai pekerjaan disosiasi pada kebijakan replikasi yang terkait dengan wadah perlindungan Site Recovery.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -33,11 +33,11 @@ Start-AzureSiteRecoveryProtectionProfileDissociationJob -ProtectionProfile <ASRP
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzureSiteRecoveryProtectionProfileDissociationJob** memulai pekerjaan dissociation pada kebijakan replikasi yang terkait dengan wadah proteksi Pemulihan Situs Azure.
+Cmdlet **Start-AzureSiteRecoveryProtectionProfileDissociationJob** memulai pekerjaan disosiasi pada kebijakan replikasi yang terkait dengan wadah perlindungan azure Site Recovery.
 
 ## EXAMPLES
 
-### Contoh 1: Dissociate a protection profile
+### Contoh 1: Memisahkan profil proteksi
 ```
 PS C:\> $ProtectionContainer01 = Get-AzureSiteRecoveryProtectionContainer -Id "5ba2ea95-856d-4033-9ca3-91e3e2c080b9"
 PS C:\> $ProtectionContainer02 = Get-AzureSiteRecoveryProtectionContainer -Id "cf011f2a-aa19-443c-9f60-357f6b8afb77"
@@ -54,12 +54,12 @@ Tasks            : {}
 Errors           : {}
 ```
 
-Perintah pertama mendapatkan wadah proteksi dengan menggunakan cmdlet **Get-AzureSiteRecoveryProtectionContainer,** lalu menyimpan wadah itu di variabel $ProtectionContainer 01.
+Perintah pertama mendapatkan wadah perlindungan dengan menggunakan cmdlet **Get-AzureSiteRecoveryProtectionContainer** , lalu menyimpan wadah tersebut dalam variabel $ProtectionContainer 01.
 
-Perintah kedua mendapatkan wadah proteksi, lalu menyimpannya di variabel $ProtectionContainer 02.
+Perintah kedua mendapatkan wadah perlindungan, lalu menyimpannya dalam variabel $ProtectionContainer 02.
 
-Perintah terakhirssociate proteksi profil dari wadah yang disimpan $ProtectionContainer 01 sebagai wadah proteksi utama.
-Perintah tersebut mengusutkan wadah yang disimpan $ProtectionContainer 02 sebagai wadah proteksi pemulihan.
+Perintah akhir memisahkan profil proteksi dari wadah yang disimpan di $ProtectionContainer 01 sebagai wadah perlindungan utama.
+Perintah memisahkan wadah yang disimpan di $ProtectionContainer 02 sebagai wadah perlindungan pemulihan.
 
 ## PARAMETERS
 
@@ -79,8 +79,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -95,9 +95,9 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionProfile
-Menentukan pengaturan profil proteksi agar terpisah dari wadah proteksi.
-Menentukan pengaturan profil proteksi yang akan diterapkan pada wadah proteksi.
-Untuk mendapatkan objek **ASRProtectionProfile,** gunakan cmdlet New-AzureSiteRecoveryProtectionProfileObject cmdlet.
+Menentukan pengaturan profil proteksi untuk memisahkan diri dari wadah proteksi.
+Menentukan pengaturan profil proteksi untuk diterapkan ke wadah proteksi.
+Untuk mendapatkan objek **ASRProtectionProfile** , gunakan cmdlet New-AzureSiteRecoveryProtectionProfileObject.
 
 ```yaml
 Type: ASRProtectionProfile
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

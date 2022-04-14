@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.aks/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Aks/Commands.Aks/help/Stop-AzureRmAksDashboard.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Aks/Commands.Aks/help/Stop-AzureRmAksDashboard.md
-ms.openlocfilehash: e8e45cc0b7da0c10994a01bcf9d79ec2648b0f1b1aa9be9fdff6d1627e3ce74f
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 719ef5fd3676fdc5d5b6b8460bcb3edafabb83f6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140865230"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141846578"
 ---
 # Stop-AzureRmAksDashboard
 
 ## SYNOPSIS
-Hentikan kubectl LINUX yang dibuat di Start-AzureRmK nodesDashboard.
+Hentikan terowongan Kubectl SSH yang dibuat di Start-AzureRmKubernetesDashboard.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -26,7 +26,7 @@ Stop-AzureRmAksDashboard [-PassThru] [-DefaultProfile <IAzureContextContainer>] 
 ```
 
 ## DESCRIPTION
-Hentikan kubectl LINUX yang dibuat di Start-AzureRmK nodesDashboard.
+Hentikan terowongan Kubectl SSH yang dibuat di Start-AzureRmKubernetesDashboard.
 
 ## EXAMPLES
 
@@ -35,7 +35,7 @@ Hentikan kubectl LINUX yang dibuat di Start-AzureRmK nodesDashboard.
 PS C:\> Stop-AzureRmKubernetesDashboard
 ```
 
-Menghentikan penyiapan azure AZURE yang sudah ada dengan menjalankan Start-AzureRmK nodesDashboard.
+Menghentikan penyiapan terowongan SSH yang sudah ada dengan menjalankan Start-AzureRmKubernetesDashboard.
 
 ## PARAMETERS
 
@@ -55,7 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true jika linux LINUX ditutup.
+Mengembalikan true jika terowongan SSH ditutup.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -70,11 +70,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

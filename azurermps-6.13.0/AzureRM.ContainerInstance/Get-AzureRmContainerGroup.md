@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ContainerInstance/Commands.ContainerInstance/help/Get-AzureRmContainerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ContainerInstance/Commands.ContainerInstance/help/Get-AzureRmContainerGroup.md
 ms.openlocfilehash: b2107a667fe3d00ec0b6e9180b2edc99e864445c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140860913"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141824918"
 ---
 # Get-AzureRmContainerGroup
 
 ## SYNOPSIS
-Mendapatkan grup wadah.
+Mendapatkan grup kontainer.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -39,11 +39,11 @@ Get-AzureRmContainerGroup -ResourceId <String> [-DefaultProfile <IAzureContextCo
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmContainerGroup** mendapatkan grup wadah yang ditentukan atau semua grup wadah dalam grup sumber daya atau langganan.
+Cmdlet **Get-AzureRmContainerGroup** mendapatkan grup kontainer tertentu atau semua grup kontainer dalam grup sumber daya atau langganan.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan grup wadah yang ditentukan
+### Contoh 1: Mendapatkan grup kontainer tertentu
 ```
 PS C:\> Get-AzureRmContainerGroup -ResourceGroupName demo -Name mycontainer
 
@@ -65,9 +65,9 @@ State                    : Running
 Events                   : {}
 ```
 
-Perintah mendapatkan grup wadah yang ditentukan.
+Perintah akan mendapatkan grup kontainer yang ditentukan.
 
-### Contoh 2: Mendapatkan grup wadah dalam grup sumber daya
+### Contoh 2: Mendapatkan grup kontainer dalam grup sumber daya
 ```
 PS C:\> Get-AzureRmContainerGroup -ResourceGroupName demo
 
@@ -77,9 +77,9 @@ demo              container1               west us    Linux   alpine:latest     
 demo              container2               west us    Linux   alpine:latest                 104.42.228.253:8001  1 cores/1 gb             Succeeded
 ```
 
-Perintah tersebut mendapatkan grup wadah dalam grup sumber daya `demo`.
+Perintah mendapatkan grup kontainer dalam grup `demo`sumber daya .
 
-### Contoh 3: Mendapatkan grup wadah dalam langganan saat ini
+### Contoh 3: Mendapatkan grup kontainer dalam langganan saat ini
 ```
 PS C:\> Get-AzureRmContainerGroup
 
@@ -89,9 +89,9 @@ demo1             container1               west us    Linux   alpine:latest     
 demo2             container2               west us    Linux   alpine:latest                 104.42.228.253:8001  1 cores/1 gb             Succeeded
 ```
 
-Perintah mendapatkan grup wadah dalam langganan saat ini.
+Perintah akan mendapatkan grup kontainer dalam langganan saat ini.
 
-### Contoh 4: Mendapatkan grup wadah menggunakan Id sumber daya.
+### Contoh 4: Mendapatkan grup kontainer menggunakan Id sumber daya.
 ```
 PS C:\> Find-AzureRmResource -ResourceGroupEquals demo -ResourceNameEquals mycontainer | Get-AzureRmContainerGroup
 
@@ -113,12 +113,12 @@ State                    : Running
 Events                   : {}
 ```
 
-Perintah akan mendapatkan grup wadah dengan Id sumber daya.
+Perintah akan mendapatkan grup kontainer dengan Id sumber daya.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Wadah grup Nama.
+Nama grup wadah.
 
 ```yaml
 Type: System.String
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

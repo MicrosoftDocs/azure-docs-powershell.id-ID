@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.iothu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/IotHub/Commands.IotHub/help/Get-AzureRmIotHubRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/IotHub/Commands.IotHub/help/Get-AzureRmIotHubRoute.md
-ms.openlocfilehash: 5cd3d5a956ad4902637b71c8dee0c8194cd53ccdfce10fce2f4cc78e704be22e
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 0711bd1d6290191c2d5311a7375e6f81c4ecd573
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140863136"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141823190"
 ---
 # Get-AzureRmIotHubRoute
 
 ## SYNOPSIS
-Dapatkan informasi tentang rute dalam IoT Hub
+Dapatkan informasi tentang rute di IoT Hub
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,7 +40,7 @@ Get-AzureRmIotHubRoute [-ResourceId] <String> [-RouteName <String>] [-DefaultPro
 ```
 
 ## DESCRIPTION
-Dapatkan informasi tentang rute. Anda dapat memperoleh semua rute dari Hub IoT, mendapatkan rute ke tipe titik akhir atau mendapatkan rute ke titik akhir tertentu.
+Dapatkan informasi tentang rute. Anda bisa mendapatkan semua rute dari IoT Hub, mendapatkan rute ke jenis titik akhir atau mendapatkan rute ke titik akhir tertentu.
 
 ## EXAMPLES
 
@@ -54,7 +54,7 @@ R1        DeviceMessages   events        False
 R2        TwinChangeEvents E1            True
 ```
 
-Dapatkan semua rute dari Hub IoT "myiothub".
+Dapatkan semua rute dari IoT Hub "myiothub".
 
 ### Contoh 2
 ```
@@ -67,7 +67,7 @@ Condition     : true
 IsEnabled     : False
 ```
 
-Dapatkan informasi rute dari Hub IoT "myiothub".
+Dapatkan informasi rute dari IoT Hub "myiothub".
 
 ## PARAMETERS
 
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -172,7 +172,7 @@ System.String
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSRouteMetadata
-System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Management.IotHub.Models.PSRouteProperties, Microsoft.Azure.Commands.IotHub, Version=3.1.3.0, Culture=neutral, PublicKeyToken=null]]
+System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Management.IotHub.Models.PSRouteProperties, Microsoft.Azure.Commands.IotHub, Version=3.1.3.0, Culture=netral, PublicKeyToken=null]]
 
 ## CATATAN
 

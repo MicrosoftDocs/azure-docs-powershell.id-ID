@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.search/get-azsea
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Get-AzSearchAdminKeyPair.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Get-AzSearchAdminKeyPair.md
-ms.openlocfilehash: 385af1c7c72e1bebe0a62057db020282db342fd3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 79f7cb1e0273c0126d4452f38e24795bac82a091
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140006491"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142028154"
 ---
 # Get-AzSearchAdminKeyPair
 
 ## SYNOPSIS
-Mendapatkan pasangan kunci admin dari layanan Pencarian Kognitif Azure.
+Mendapatkan pasangan kunci admin layanan Azure Cognitive Search.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.search/get-azsearchadminkeypair) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzSearchAdminKeyPair [-ParentResourceId] <String> [-DefaultProfile <IAzureCo
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSearchAdminKeyPair** mendapatkan pasangan kunci admin dari layanan Pencarian Kognitif Azure.
+Cmdlet **Get-AzSearchAdminKeyPair** mendapatkan pasangan kunci admin layanan Azure Cognitive Search.
 
 ## EXAMPLES
 
@@ -51,7 +54,7 @@ Primary                          Secondary
 3B06A25BDADFF72EC132736BAA2547A1 E643B75A52E04DF13EB690807C451C55
 ```
 
-Contoh tersebut mendapatkan pasangan kunci admin dari layanan Pencarian Kognitif Azure.
+Contoh mendapatkan pasangan kunci admin layanan Azure Cognitive Search.
 
 ## PARAMETERS
 
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Objek Input Layanan Pencarian Kognitif Azure.
+Azure Cognitive Search Objek Input Layanan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Search.Models.PSSearchService
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentResourceId
-Id Sumber Daya Layanan Pencarian Kognitif Azure.
+Azure Cognitive Search Id Sumber Daya Layanan.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Nama Layanan Pencarian Kognitif Azure.
+Azure Cognitive Search Nama layanan.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

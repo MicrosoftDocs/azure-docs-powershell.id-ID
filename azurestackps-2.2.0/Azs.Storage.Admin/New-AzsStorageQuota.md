@@ -4,11 +4,11 @@ Module Name: Azs.Storage.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.storage.admin/new-azsstoragequota
 schema: 2.0.0
 ms.openlocfilehash: fd5b22258666644b2b316c698a687ab5895b434b
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136579023"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141811940"
 ---
 # New-AzsStorageQuota
 
@@ -23,7 +23,7 @@ New-AzsStorageQuota -Name <String> [-Location <String>] [-SubscriptionId <String
  [-NumberOfStorageAccounts <Int32>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Buat
+### Membuat
 ```
 New-AzsStorageQuota -Name <String> -QUOTAOBJECT \<IStorageQuota> [-Location <String>]
  [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
@@ -39,7 +39,7 @@ New-AzsStorageQuota -Name <String> -QUOTAOBJECT \<IStorageQuota> [-Location <Str
 PS C:\> New-AzsStorageQuota -Name TestQuota -CapacityInGb 123 -NumberOfStorageAccounts 456
 ```
 
-Buat kuota penyimpanan baru dengan nilai tertentu.
+Buat kuota penyimpanan baru dengan nilai yang ditentukan.
 
 ## PARAMETERS
 
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -QuotaObject
-Untuk membuat, lihat bagian CATATAN untuk properti QUOTAOBJECT dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti QUOTAOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.StorageAdmin.Models.Api201908Preview.IStorageQuota
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -203,11 +203,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-QUOTAOBJECT \<IStorageQuota> : 
-  - `[CapacityInGb <Int32?>]`: Kapasitas maksimal (GB).
-  - `[NumberOfStorageAccounts <Int32?>]`: Total jumlah akun penyimpanan.
+QUOTAOBJECT \<IStorageQuota>: 
+  - `[CapacityInGb <Int32?>]`: Kapasitas maksimum (GB).
+  - `[NumberOfStorageAccounts <Int32?>]`: Jumlah total akun penyimpanan.
 
 ## RELATED LINKS
 

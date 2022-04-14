@@ -4,11 +4,11 @@ ms.assetid: 482E8CD6-C38F-4BD5-8214-016D0D8C7FD0
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 7d28b0bb94372128fd47bd2e2645cb8c2f66cb49
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420259"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141966147"
 ---
 # Get-AzureStorSimpleResource
 
@@ -24,7 +24,7 @@ Get-AzureStorSimpleResource [-ResourceName <String>] [-Profile <AzureSMProfile>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureStorSimpleResource** mendapatkan semua sumber daya yang Anda buat menggunakan Portal Azure.
+Cmdlet **Get-AzureStorSimpleResource** mendapatkan semua sumber daya yang Anda buat dengan menggunakan Portal Azure.
 Cmdlet mendapatkan detail yang dapat Anda gunakan untuk menyambungkan ke sumber daya.
 
 ## EXAMPLES
@@ -57,9 +57,9 @@ Contoso63-Tsqa                                    1909806764156522689  Started
 VERBOSE: Found 1 StorSimple resource.
 ```
 
-Perintah ini menggunakan sumber daya bernama Contoso63-Tsqa.
+Perintah ini mendapatkan sumber daya bernama Contoso63-Tsqa.
 
-### Contoh 3: Mencoba mendapatkan sumber daya yang tidak konsisten
+### Contoh 3: Mencoba mendapatkan sumber daya yang tidak ada
 ```
 PS C:\>Get-AzureStorSimpleResource -ResourceName "Contoso64-Tsqa"
 VERBOSE: ClientRequestId: 5d08d40b-f9d7-4d43-956f-13f01e89625b_PS
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceName
-Menentukan nama sumber daya yang akan dapatkan cmdlet ini.
+Menentukan nama sumber daya yang didapat cmdlet ini.
 
 ```yaml
 Type: String
@@ -103,18 +103,18 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
-### IEnumerable, \<ResourceCredentials\> ResourceCredentials
-Cmdlet ini mengembalikan **objek ResourceCredentials** yang berisi properti berikut: 
+### IEnumerable\<ResourceCredentials\>, ResourceCredentials
+Cmdlet ini mengembalikan objek **ResourceCredentials** yang berisi properti berikut: 
 
-- **ResourceName**
+- **NamaPengguna Sumber Daya**
 - **ResouceId**
 - **ResourceState**
 

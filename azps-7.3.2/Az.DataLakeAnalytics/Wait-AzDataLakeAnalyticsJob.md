@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Wait-AzDataLakeAnalyticsJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Wait-AzDataLakeAnalyticsJob.md
-ms.openlocfilehash: b7b2d91aa585d741155af7c1a663b3e9f6042594
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0095b43505be663fb1cd74d1a5d1da7d5cd0420f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140200934"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141852422"
 ---
 # Wait-AzDataLakeAnalyticsJob
 
 ## SYNOPSIS
-Menunggu pekerjaan untuk diselesaikan.
+Menunggu pekerjaan selesai.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/wait-azdatalakeanalyticsjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Wait-AzDataLakeAnalyticsJob [-Account] <String> [-JobId] <Guid> [[-WaitIntervalI
 ```
 
 ## DESCRIPTION
-Cmdlet **Wait-AzDataLakeAnalyticsJob** menunggu pekerjaan Analitik Danau Azure Data selesai.
+Cmdlet **Wait-AzDataLakeAnalyticsJob** menunggu pekerjaan Azure Data Lake Analytics selesai.
 
 ## EXAMPLES
 
@@ -35,12 +38,12 @@ Cmdlet **Wait-AzDataLakeAnalyticsJob** menunggu pekerjaan Analitik Danau Azure D
 PS C:\>Wait-AzDataLakeAnalyticsJob -Account "ContosoAdlAccount" -JobId "a0a78d72-3fa8-4564-9b18-6becb3fda48a"
 ```
 
-Perintah berikut ini menunggu pekerjaan dengan ID tertentu selesai.
+Perintah berikut ini menunggu pekerjaan dengan ID yang ditentukan selesai.
 
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Analitik Danau Data.
+Menentukan nama akun Data Lake Analytics.
 
 ```yaml
 Type: System.String
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobId
-Menentukan ID pekerjaan yang harus menunggu.
+Menentukan ID pekerjaan yang akan ditunggu.
 
 ```yaml
 Type: System.Guid
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -137,6 +140,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Stop-AzDataLakeAnalyticsJob](./Stop-AzDataLakeAnalyticsJob.md)
 
-[Submit-AzDataLakeAnalyticsJob](./Submit-AzDataLakeAnalyticsJob.md)
+[Kirim-AzDataLakeAnalyticsJob](./Submit-AzDataLakeAnalyticsJob.md)
 
 

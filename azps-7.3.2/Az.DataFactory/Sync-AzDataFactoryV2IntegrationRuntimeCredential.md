@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/sync
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Sync-AzDataFactoryV2IntegrationRuntimeCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Sync-AzDataFactoryV2IntegrationRuntimeCredential.md
-ms.openlocfilehash: 34bbee1354ffb126e19b8f1276f7153a332f6a59
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: dce624c13b11a67aafa060c7301508d4b31cc91a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140187651"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141895247"
 ---
 # Sync-AzDataFactoryV2IntegrationRuntimeCredential
 
 ## SYNOPSIS
-Menyinkronkan kredensial di antara node runtime integrasi.
+Menyinkronkan kredensial di antara simpul runtime integrasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/sync-azdatafactoryv2integrationruntimecredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,13 +42,13 @@ Sync-AzDataFactoryV2IntegrationRuntimeCredential [-Force] [-InputObject] <PSInte
 ```
 
 ## DESCRIPTION
-Cmdlet **Sync-AzDataFactoryV2IntegrationRuntimeCredential** menyinkronkan kredensial lokal di antara node runtime integrasi, yang memaksa kredensial untuk identik di semua simpul.
+Cmdlet **Sync-AzDataFactoryV2IntegrationRuntimeCredential** menyinkronkan kredensial lokal di antara simpul runtime integrasi, yang memaksa kredensial menjadi identik di semua simpul.
 
 ## EXAMPLES
 
 ### Contoh 1: Menyinkronkan kredensial runtime integrasi
 
-Menyinkronkan kredensial di antara node runtime integrasi. (otomatisgenerated)
+Menyinkronkan kredensial di antara simpul runtime integrasi. (autogenerasi)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Sync-AzDataFactoryV2IntegrationRuntimeCredential -DataFactoryName 'test-df-eu2' -IntegrationRuntimeName 'test-selfhost-ir' -ResourceGroupName 'rg-test-dfv2'
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -83,7 +86,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Menjalankan cmdlet tanpa meminta konfirmasi.
 
 ```yaml
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

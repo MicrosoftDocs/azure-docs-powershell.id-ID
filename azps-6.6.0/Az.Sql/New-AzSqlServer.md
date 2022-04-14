@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServer.md
 ms.openlocfilehash: afefa53cda73d1fadbdedf71b56240ebd3511f48
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140500881"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141858308"
 ---
 # New-AzSqlServer
 
@@ -19,7 +19,7 @@ ms.locfileid: "140500881"
 Membuat server SQL Database.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqlserver) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqlserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,9 +49,9 @@ ServerVersion            : 12.0
 Tags                     :
 ```
 
-Perintah ini akan membuat server Azure SQL Database versi 12.
+Perintah ini membuat server Azure SQL Database versi 12.
 
-### Contoh 2: Buat server Azure SQL Database baru dengan Administrator External(Azure Active Directory), hanya Azure Active Directory Autentikasi dan tidak ada SqlAdministratorCredentials
+### Contoh 2: Membuat server Azure SQL Database baru dengan Administrator External(Azure Active Directory), Azure Active Directory Hanya Autentikasi dan tanpa SqlAdministratorCredentials
 ```
 PS C:\>New-AzSqlServer -ResourceGroupName "ResourceGroup01" -Location "Central US" -ServerName "server01" -ServerVersion "12.0" -ExternalAdminName DummyLogin -EnableActiveDirectoryOnlyAuthentication
 ResourceGroupName        : resourcegroup01
@@ -82,12 +82,12 @@ TenantId                  : f553829b-6d84-481b-86a9-42db57c1dc73
 AzureADOnlyAuthentication : True
 ```
 
-Perintah ini membuat server administrator versi 12 Azure SQL Database dengan properti administrator eksternal dan hanya autentikasi Azure active directory yang diaktifkan.
+Perintah ini membuat server Azure SQL Database versi 12 dengan properti administrator eksternal dan autentikasi azure active directory saja yang diaktifkan.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableActiveDirectoryOnlyAuthentication
-Mengaktifkan Autentikasi Hanya Direktori Aktif di server.
+Aktifkan Autentikasi Direktori Aktif Saja pada server.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExternalAdminName
-Menentukan nama tampilan pengguna, grup atau aplikasi yang merupakan Azure Active Directory administrator untuk server. Nama tampilan harus ada di direktori aktif yang terkait dengan langganan saat ini.
+Menentukan nama tampilan pengguna, grup, atau aplikasi yang merupakan administrator Azure Active Directory untuk server. Nama tampilan ini harus ada di direktori aktif yang terkait dengan langganan saat ini.
 
 ```yaml
 Type: System.String
@@ -161,8 +161,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ExternalAdminSID
-Menentukan ID objek pengguna, grup atau aplikasi yang merupakan Azure Active Directory administrator.
+### -ExternalAdminsID
+Menentukan ID objek pengguna, grup, atau aplikasi yang merupakan administrator Azure Active Directory.
 
 ```yaml
 Type: System.Nullable`1[System.Guid]
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi pusat data di mana cmdlet ini membuat server.
+Menentukan lokasi pusat data tempat cmdlet ini membuat server.
 
 ```yaml
 Type: System.String
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinimalTlsVersion
-Versi TLS minimal untuk diterapkan untuk Sql Server
+Versi TLS minimal yang diterapkan untuk Sql Server
 
 ```yaml
 Type: System.String
@@ -208,8 +208,8 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccess
-Benderai, diaktifkan/dinonaktifkan, untuk menentukan apakah akses jaringan publik ke server diperbolehkan atau tidak.
-Saat dinonaktifkan, hanya koneksi yang dibuat melalui Link Privat yang bisa menjangkau server ini.
+Mengambil bendera, diaktifkan/dinonaktifkan, untuk menentukan apakah akses jaringan publik ke server diperbolehkan atau tidak.
+Ketika dinonaktifkan, hanya koneksi yang dibuat melalui Tautan Privat yang dapat menjangkau server ini.
 
 ```yaml
 Type: System.String
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestrictOutboundNetworkAccess
-Ketika diaktifkan, hanya koneksi keluar yang diizinkan oleh aturan firewall keluar yang akan berhasil.
+Saat diaktifkan, hanya koneksi keluar yang diperbolehkan oleh aturan firewall keluar yang akan berhasil.
 
 ```yaml
 Type: System.String
@@ -269,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerVersion
-Menentukan versi server baru. Nilai yang dapat diterima untuk parameter ini adalah: 2.0 dan 12.0.
+Menentukan versi server baru. Nilai yang dapat diterima untuk parameter ini adalah: 2,0 dan 12,0.
 Tentukan 2.0 untuk membuat server versi 11, atau 12.0 untuk membuat server versi 12.
 
 ```yaml
@@ -285,8 +285,8 @@ Accept wildcard characters: False
 ```
 
 ### -SqlAdministratorCredentials
-Menentukan SQL Database administrator server untuk server baru. Untuk mendapatkan objek **PSCredential** , gunakan cmdlet Get-Credential. Untuk informasi selengkapnya, ketik `Get-Help
-Get-Credential`.
+Menentukan kredensial administrator server SQL Database untuk server baru. Untuk mendapatkan objek **PSCredential** , gunakan cmdlet Get-Credential. Untuk informasi selengkapnya, ketik .`Get-Help
+Get-Credential`
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -301,7 +301,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryUserAssignedIdentityId
-Id utama User Managed Identity(UMI).
+Id Identitas Terkelola Pengguna (UMI) utama.
 
 ```yaml
 Type: System.String
@@ -316,7 +316,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyId
-URI Azure Key Vault yang digunakan untuk enkripsi.
+Azure Key Vault URI yang digunakan untuk enkripsi.
 
 ```yaml
 Type: System.String
@@ -346,7 +346,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Tipe identitas yang akan ditetapkan ke server. Nilai yang mungkin adalah SystemAsssigned, UserAssigned, 'SystemAssigned,UserAssigned' dan None.
+Tipe identitas yang akan ditetapkan ke server. Nilai yang memungkinkan adalah SystemAsssigned, UserAssigned, 'SystemAssigned,UserAssigned' dan None.
 
 ```yaml
 Type: System.String
@@ -360,7 +360,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tag
+### -Tags
 Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
@@ -376,7 +376,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -392,7 +392,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -407,7 +407,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -429,4 +429,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzSqlServerFirewallRule](./New-AzSqlServerFirewallRule.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

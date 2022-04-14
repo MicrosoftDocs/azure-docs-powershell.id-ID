@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Start-AzVpnConnectionPacketCapture.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Start-AzVpnConnectionPacketCapture.md
-ms.openlocfilehash: 9f5c52dec20ed13bdf5e8f7d963c78c21e853d6f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: bac27333f7b633795b278764f8ec69caa413733d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140178942"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141934395"
 ---
 # Start-AzVpnConnectionPacketCapture
 
 ## SYNOPSIS
-Memulai Operasi Penangkapan Paket di Koneksi Vpn.
+Memulai Operasi Penangkapan Paket pada Koneksi Vpn.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/start-azvpnconnectionpacketcapture) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Start-AzVpnConnectionPacketCapture -ResourceId <String> [-FilterData <String>] -
 ```
 
 ## DESCRIPTION
-Memulai Operasi Penangkapan Paket di Koneksi Vpn.
+Memulai Operasi Penangkapan Paket pada Koneksi Vpn.
 
 ## EXAMPLES
 
@@ -86,7 +89,7 @@ Id                :
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -FilterData
-Opsi filter untuk memulai pengambilan paket di koneksi Vpn.
+Opsi filter untuk memulai pengambilan paket pada koneksi Vpn.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek koneksi Vpn tempat pengambilan paket akan dimulai.
+Objek koneksi Vpn tempat pengambilan paket dimulai.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVpnConnection
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama koneksi Vpn tempat pengambilan paket akan dimulai.
+Nama koneksi Vpn tempat pengambilan paket dimulai.
 
 ```yaml
 Type: System.String
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya Azure dari VpnConnection tempat pengambilan paket akan dimulai.
+ID sumber daya Azure dari VpnConnection tempat pengambilan paket dimulai.
 
 ```yaml
 Type: System.String
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -252,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
