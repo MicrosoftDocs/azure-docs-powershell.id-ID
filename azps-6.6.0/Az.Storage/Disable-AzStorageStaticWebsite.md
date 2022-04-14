@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Disable-AzStorageStaticWebsite.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Disable-AzStorageStaticWebsite.md
 ms.openlocfilehash: bf71840dcaed754b03d5412c422ffe4782cfd2ad
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140276431"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141902979"
 ---
 # Disable-AzStorageStaticWebsite
 
 ## SYNOPSIS
-Menonaktifkan situs web statis untuk akun Azure Storage.
+Nonaktifkan situs web statis untuk akun Azure Storage.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/disable-azstoragestaticwebsite) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/disable-azstoragestaticwebsite) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,21 +28,21 @@ Disable-AzStorageStaticWebsite [-PassThru] [-Context <IStorageContext>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Disable-AzStorageStaticWebsite** menonaktifkan situs web statis untuk Azure Storage anda.
+Cmdlet **Disable-AzStorageStaticWebsite** menonaktifkan situs web statis untuk akun Azure Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Menonaktifkan situs web statis untuk Azure Storage anda
+### Contoh 1: Menonaktifkan situs web statis untuk akun Azure Storage
 ```
 C:\PS>Disable-AzStorageStaticWebsite
 ```
 
-Perintah ini menonaktifkan situs web statis untuk Azure Storage statis.
+Perintah ini menonaktifkan situs web statis untuk akun Azure Storage.
 
 ## PARAMETERS
 
 ### -Konteks
-Azure Storage Konteks
+Objek Konteks Azure Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{fill passThru Description}}
+{{Fill PassThru Description}}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

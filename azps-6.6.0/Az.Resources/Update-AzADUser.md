@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Update-AzADUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Update-AzADUser.md
 ms.openlocfilehash: c72fafaa979869609b904ff30a4d99aba066aaff
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140194631"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142224037"
 ---
 # Update-AzADUser
 
@@ -20,7 +20,7 @@ Memperbarui pengguna direktori aktif yang sudah ada.
 [!INCLUDE [msgraph-migration-banner](../../includes/msgraph-migration-banner.md)]
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/update-azaduser) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/update-azaduser) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,7 +53,7 @@ Update-AzADUser -InputObject <PSADUser> [-DisplayName <String>] [-EnableAccount 
 ```
 
 ## DESCRIPTION
-Memperbarui pengguna direktori aktif yang sudah ada (akun kantor/sekolah juga dikenal sebagai org-id).
+Memperbarui pengguna direktori aktif yang sudah ada (akun kerja/sekolah juga dikenal sebagai org-id).
 Untuk informasi selengkapnya: https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/users-operations#UpdateUser
 
 ## EXAMPLES
@@ -66,7 +66,7 @@ PS C:\> Update-AzADUser -ObjectId 155a5c10-93a9-4941-a0df-96d83ab5ab24 -DisplayN
 
 Memperbarui nama tampilan pengguna dengan id objek '155a5c10-93a9-4941-a0df-96d83ab5ab24' menjadi 'MyNewDisplayName'.
 
-### Contoh 2: Perbarui nama tampilan pengguna menggunakan nama prinsipal pengguna
+### Contoh 2: Memperbarui nama tampilan pengguna menggunakan nama prinsipal pengguna
 
 ```powershell
 PS C:\> Update-AzADUser -UserPrincipalName foo@domain.com -DisplayName MyNewDisplayName
@@ -74,13 +74,13 @@ PS C:\> Update-AzADUser -UserPrincipalName foo@domain.com -DisplayName MyNewDisp
 
 Memperbarui nama tampilan pengguna dengan nama prinsipal pengguna 'foo@domain.com' menjadi 'MyNewDisplayName'.
 
-### Contoh 3: Perbarui nama tampilan pengguna menggunakan pemipaan
+### Contoh 3: Memperbarui nama tampilan pengguna menggunakan piping
 
 ```powershell
 PS C:\> Get-AzADUser -ObjectId 155a5c10-93a9-4941-a0df-96d83ab5ab24 | Update-AzADUser -DisplayName MyNewDisplayName
 ```
 
-Dapatkan pengguna dengan id objek '155a5c10-93a9-4941-a0df-96d83ab5ab24' dan pipa yang berada di cmdlet Update-AzADUser untuk memperbarui nama tampilan pengguna tersebut ke 'MyNewDisplayName'.
+Mendapatkan pengguna dengan id objek '155a5c10-93a9-4941-a0df-96d83ab5ab24' dan pipa yang ke cmdlet Update-AzADUser untuk memperbarui nama tampilan pengguna tersebut menjadi 'MyNewDisplayName'.
 
 ## PARAMETERS
 
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceChangePasswordNextLogin
-Ini harus ditentukan jika pengguna harus mengubah kata sandi di saat berikutnya berhasil masuk.
+Harus ditentukan jika pengguna harus mengubah kata sandi pada proses masuk yang berhasil berikutnya.
 Hanya valid jika kata sandi diperbarui jika tidak, kata sandi akan diabaikan.
 
 ```yaml
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -UPNOrObjectId
-Nama prinsipal pengguna atau id objek pengguna yang akan diperbarui.
+Nama utama pengguna atau id objek pengguna yang akan diperbarui.
 
 ```yaml
 Type: System.String
@@ -242,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserPrincipalName
-Nama utama pengguna dari pengguna yang akan diperbarui.
+Nama utama pengguna pengguna yang akan diperbarui.
 
 ```yaml
 Type: System.String
@@ -257,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -273,7 +273,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -288,21 +288,21 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### Microsoft.Azure.Commands.ActiveDirectory.LINUXDUser
+### Microsoft.Azure.Commands.ActiveDirectory.PSADUser
 
-### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### System.Security.SecureString
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.ActiveDirectory.LINUXDUser
+### Microsoft.Azure.Commands.ActiveDirectory.PSADUser
 
 ## CATATAN
 

@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Relay/Commands.Relay/help/Get-AzureRmRelayKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Relay/Commands.Relay/help/Get-AzureRmRelayKey.md
 ms.openlocfilehash: 69f6b1bc50681bafe7a860dcebaa7616c8f14e90
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140860226"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142061161"
 ---
 # Get-AzureRmRelayKey
 
 ## SYNOPSIS
-Mendapatkan string koneksi utama dan sekunder untuk entitas Relay yang diberikan (Namespace/WcfIguy/HybridConnection).
+Mendapatkan string koneksi utama dan sekunder untuk entitas Relay yang diberikan (Namespace/WcfRelay/HybridConnection).
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Get-AzureRmRelayKey [-ResourceGroupName] <String> [-Namespace] <String> [-Name] 
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### WcfAuthorizationRuleSet
+### WcfRelayAuthorizationRuleSet
 ```
 Get-AzureRmRelayKey [-ResourceGroupName] <String> [[-Namespace] <String>] [-WcfRelay] <String> [-Name] <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -40,11 +40,11 @@ Get-AzureRmRelayKey [-ResourceGroupName] <String> [[-Namespace] <String>] [-Hybr
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmGroupyKey** mengembalikan string koneksi utama dan sekunder untuk entitas Relay tertentu (Namespace/WcfIguy/HybridConnection).
+Cmdlet **Get-AzureRmRelayKey** mengembalikan string koneksi utama dan sekunder untuk entitas Relay tertentu (Namespace/WcfRelay/HybridConnection).
 
 ## EXAMPLES
 
-### Contoh 1 - Kumpulan Nama
+### Contoh 1 - Ruang nama
 ```
 PS C:\> Get-AzureRmRelayKey -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -Name AuthoRule1
 
@@ -55,7 +55,7 @@ SecondaryKey              : ############################################
 KeyName                   : AuthoRule1
 ```
 
-### Contoh 2 - WcfCfCfy
+### Contoh 2 - WcfRelay
 ```
 PS C:\> Get-AzureRmRelayKey -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1  -WcfRelay TestWCFRelay1 -Name AuthoRule1
 
@@ -77,7 +77,7 @@ SecondaryKey              : ############################################
 KeyName                   : AuthoRule1
 ```
 
-String koneksi utama dan sekunder ke entitas Relay yang ditentukan (Namespace/WcfIguy/HybridConnection).
+String koneksi primer dan sekunder ke entitas Relay tertentu (Namespace/WcfRelay/HybridConnection).
 
 ## PARAMETERS
 
@@ -168,8 +168,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -WcfEby
-Nama WcfEby.
+### -WcfRelay
+Nama WcfRelay.
 
 ```yaml
 Type: System.String
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

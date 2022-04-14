@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageTableStoredAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageTableStoredAccessPolicy.md
 ms.openlocfilehash: 901b029a645b7f3597f6a2cd9cb46deca28c2abb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140499585"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142221175"
 ---
 # Set-AzStorageTableStoredAccessPolicy
 
 ## SYNOPSIS
-Mengatur kebijakan akses tersimpan untuk tabel penyimpanan Azure.
+Mengatur kebijakan akses yang disimpan untuk tabel penyimpanan Azure.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/set-azstoragetablestoredaccesspolicy) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/set-azstoragetablestoredaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,16 +30,16 @@ Set-AzStorageTableStoredAccessPolicy [-Table] <String> [-Policy] <String> [-Perm
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzStorageTableStoredAccessPolicy** menetapkan kebijakan akses tersimpan untuk tabel penyimpanan Azure.
+Cmdlet **Set-AzStorageTableStoredAccessPolicy** mengatur kebijakan akses yang disimpan untuk tabel penyimpanan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Menetapkan kebijakan akses yang disimpan di tabel dengan izin penuh
+### Contoh 1: Mengatur kebijakan akses yang disimpan dalam tabel dengan izin penuh
 ```
 PS C:\>Set-AzStorageTableStoredAccessPolicy -Table "MyTable" -Policy "Policy08" -Permission raud
 ```
 
-Perintah ini mengatur kebijakan akses yang bernama Policy08 untuk tabel penyimpanan bernama MyTable.
+Perintah ini mengatur kebijakan akses bernama Policy08 untuk tabel penyimpanan bernama MyTable.
 
 ## PARAMETERS
 
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpiryTime
-Menentukan waktu kedaluwarsanya kebijakan akses yang disimpan.
+Menentukan waktu kedaluwarsa kebijakan akses yang disimpan.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoStartTime
-Menunjukkan bahwa waktu mulai diatur untuk $Null.
+Menunjukkan bahwa waktu mulai diatur ke $Null.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,9 +119,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Permission
-Menentukan izin dalam kebijakan akses tersimpan untuk mengakses tabel penyimpanan.
-Penting untuk diingat bahwa ini adalah string, seperti (untuk `rwd` Baca, Tulis dan Hapus).
+### -Izin
+Menentukan izin dalam kebijakan akses yang disimpan untuk mengakses tabel penyimpanan.
+Penting untuk diperhatikan bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis, dan Hapus).
 
 ```yaml
 Type: System.String
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Menentukan waktu di mana kebijakan akses tersimpan menjadi valid.
+Menentukan waktu di mana kebijakan akses yang disimpan menjadi valid.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

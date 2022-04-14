@@ -4,11 +4,11 @@ ms.assetid: FE31EE5C-830F-4B5E-82DB-C881032EF05C
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: f88b9c2a56102bee4151660d097aba0333f7ae38
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132415224"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142246160"
 ---
 # Add-AzureNetworkInterfaceConfig
 
@@ -36,16 +36,16 @@ PS C:\>
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -178,7 +178,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureNetworkInterfaceConfig](./Get-AzureNetworkInterfaceConfig.md)
 
-[Remove-AzureNetworkInterfaceConfig](./Remove-AzureNetworkInterfaceConfig.md)
+[Hapus-AzureNetworkInterfaceConfig](./Remove-AzureNetworkInterfaceConfig.md)
 
 [Set-AzureNetworkInterfaceConfig](./Set-AzureNetworkInterfaceConfig.md)
 

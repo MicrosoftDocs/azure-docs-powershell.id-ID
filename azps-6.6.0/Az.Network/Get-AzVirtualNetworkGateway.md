@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGateway.md
 ms.openlocfilehash: 66b899b635e7d5b129b2ac06dfb08ad808edf985
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140070875"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142081165"
 ---
 # Get-AzVirtualNetworkGateway
 
 ## SYNOPSIS
-Mendapatkan Gateway Jaringan Virtual
+Mendapatkan Gateway Virtual Network
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azvirtualnetworkgateway) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualnetworkgateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,29 +29,29 @@ Get-AzVirtualNetworkGateway [-Name <String>] -ResourceGroupName <String>
 ```
 
 ## DESCRIPTION
-Gateway Jaringan Virtual adalah objek yang mewakili gateway Anda di Azure.
+Gateway Virtual Network adalah objek yang mewakili gateway Anda di Azure.
 Cmdlet **Get-AzVirtualNetworkGateway** mengembalikan objek gateway Anda di Azure berdasarkan Nama dan Nama Grup Sumber Daya.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan Gateway Jaringan Virtual
+### Contoh 1: Dapatkan Gateway Virtual Network
 ```powershell
 Get-AzVirtualNetworkGateway -Name myGateway1 -ResourceGroupName myRG
 ```
 
-Mengembalikan objek Gateway Jaringan Virtual dengan nama "myGateway1" dalam grup sumber daya "myRG"
+Mengembalikan objek gateway Virtual Network dengan nama "myGateway1" dalam grup sumber daya "myRG"
 
-### Contoh 2: Mendapatkan Gateway Jaringan Virtual
+### Contoh 2: Mendapatkan Gateway Virtual Network
 ```powershell
 Get-AzVirtualNetworkGateway -Name myGateway* -ResourceGroupName myRG
 ```
 
-Mengembalikan semua Gateway Jaringan Virtual yang dimulai dengan "myGateway" dalam grup sumber daya "myRG"
+Mengembalikan semua gateway Virtual Network yang dimulai dengan "myGateway" dalam grup sumber daya "myRG"
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -92,7 +92,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -112,6 +112,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Reset-AzVirtualNetworkGateway](./Reset-AzVirtualNetworkGateway.md)
 
-[Resize-AzVirtualNetworkGateway](./Resize-AzVirtualNetworkGateway.md)
+[Mengubah ukuran-AzVirtualNetworkGateway](./Resize-AzVirtualNetworkGateway.md)
 
 [Set-AzVirtualNetworkGateway](./Set-AzVirtualNetworkGateway.md)

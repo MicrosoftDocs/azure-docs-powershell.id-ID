@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusQueue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusQueue.md
 ms.openlocfilehash: 41ac78e359d85244a04f5fb5205eed14ac2f3859
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140246530"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141905403"
 ---
 # New-AzServiceBusQueue
 
 ## SYNOPSIS
-Membuat Bus Layanan dalam ruang nama Bus Layanan yang ditentukan.
+Membuat antrean Bus Layanan dalam ruang nama Bus Layanan yang ditentukan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/new-azservicebusqueue) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/new-azservicebusqueue) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ New-AzServiceBusQueue [-ResourceGroupName] <String> [-Namespace] <String> [-Name
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzServiceBusQueue** membuat antrean Bus Layanan dalam ruang nama Bus Layanan tertentu.
+Cmdlet **New-AzServiceBusQueue** membuat antrean Bus Layanan dalam ruang nama Bus Layanan yang ditentukan.
 
 ## EXAMPLES
 
@@ -67,11 +67,11 @@ ForwardDeadLetteredMessagesTo       :
 EnableBatchedOperations             : False
 ```
 
-Membuat permintaan Bus Layanan dalam ruang `SB-Queue_example1` nama Bus Layanan ditentukan`SB-Example1`.
+Membuat antrean `SB-Queue_example1` Bus Layanan baru di ruang `SB-Example1`nama Bus Layanan yang ditentukan.
 
 ### Contoh 2
 
-Membuat Bus Layanan dalam ruang nama Bus Layanan yang ditentukan. (otomatisgenerated)
+Membuat antrean Bus Layanan dalam ruang nama Bus Layanan yang ditentukan. (autogenerasi)
 
 ```powershell <!-- Aladdin Generated Example --> 
 New-AzServiceBusQueue -EnablePartitioning $true -MaxSizeInMegabytes <Int64> -Name SB-Queue_example1 -Namespace SB-Example1 -ResourceGroupName Default-ServiceBus-WestUS
@@ -80,7 +80,7 @@ New-AzServiceBusQueue -EnablePartitioning $true -MaxSizeInMegabytes <Int64> -Nam
 ## PARAMETERS
 
 ### -AutoDeleteOnIdle
-Menentukan interval [diam jangka waktu](https://msdn.microsoft.com/library/system.timespan.aspx) , setelah itu antrean dihapus secara otomatis. Durasi minimum adalah 5 menit.
+Menentukan interval [Rentang Waktu](https://msdn.microsoft.com/library/system.timespan.aspx) diam, setelah antrean dihapus secara otomatis. Durasi minimum adalah 5 menit.
 
 ```yaml
 Type: System.String
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeadLetteringOnMessageExpiration
-Huruf mati pada kedaluwarsa pesan
+Surat Mati Pada Pesan Kedaluwarsa
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -111,9 +111,9 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultMessageTimeToLive
-Rentang waktu menjadi nilai langsung.
-Ini adalah durasi setelah pesan kedaluwarsa, dimulai dari saat pesan dikirimkan ke Bus Layanan.
-Ini adalah nilai default yang digunakan saat TimeToLive tidak disetel pada pesan itu sendiri.
+Jangka waktu untuk nilai langsung.
+Ini adalah durasi setelah pesan kedaluwarsa, dimulai dari kapan pesan dikirim ke Bus Layanan.
+Ini adalah nilai default yang digunakan ketika TimeToLive tidak diatur pada pesan itu sendiri.
 Untuk Standar = Timespan.Max dan Basic = 14 hari
 
 ```yaml
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -DuplicateDetectionHistoryTimeWindow
-Menentukan jendela waktu riwayat deteksi duplikat, [nilai TimeSpan](https://msdn.microsoft.com/library/system.timespan.aspx) yang menentukan durasi riwayat deteksi duplikat. Nilai default adalah 10 menit.
+Menentukan jendela waktu riwayat deteksi duplikat, nilai [Rentang Waktu](https://msdn.microsoft.com/library/system.timespan.aspx) yang menentukan durasi riwayat deteksi duplikat. Nilai defaultnya adalah 10 menit.
 
 ```yaml
 Type: System.String
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableBatchedOperations
-Aktifkan Operasi Batched - nilai yang menunjukkan apakah operasi batch sisi server telah diaktifkan
+Aktifkan Operasi Batched - nilai yang menunjukkan apakah operasi batch sisi server diaktifkan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -174,8 +174,8 @@ Accept wildcard characters: False
 ```
 
 ### -EnableExpress
-EnableExpress - nilai yang menunjukkan apakah Express Entities diaktifkan.
-Antrean ekspres menyimpan pesan dalam memori untuk sementara waktu sebelum menulisnya ke penyimpanan persisten.
+EnableExpress - nilai yang menunjukkan apakah Entitas Ekspres diaktifkan.
+Antrean ekspres menyimpan pesan dalam memori untuk sementara sebelum menulisnya ke penyimpanan tetap.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForwardDeadLetteredMessagesTo
-Antrean/Nama Topik untuk meneruskan pesan Dead Letter
+Nama Antrean/Topik untuk meneruskan pesan Surat Mati
 
 ```yaml
 Type: System.String
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForwardTo
-Antrean/Nama topik untuk meneruskan pesan
+Nama Antrean/Topik untuk meneruskan pesan
 
 ```yaml
 Type: System.String
@@ -253,7 +253,7 @@ Accept wildcard characters: False
 
 ### -MaxDeliveryCount
 MaxDeliveryCount - jumlah pengiriman maksimum.
-Pesan secara otomatis akan disususkan setelah jumlah pengiriman ini.
+Pesan akan tenggat waktu otomatis setelah jumlah pengiriman ini.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -268,7 +268,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxSizeInMegabytes
-MaxSizeInMegabytes - ukuran maksimum antrean dalam megabyte, yang adalah ukuran memori yang dialokasikan untuk antrean. Defaultnya adalah 1024. Maks untuk SKU Standar adalah 5120 dan untuk SKU Premium adalah 81920, Nilai yang diperbolehkan: 1024, 2048, 3072, 4096, 5120, 10240, 20480, 40960, 81920
+MaxSizeInMegabytes - ukuran maksimum antrean dalam megabyte, yang merupakan ukuran memori yang dialokasikan untuk antrean. Defaultnya adalah 1024. Maks untuk SKU Standar adalah 5120 dan untuk Premium SKU adalah 81920, Nilai yang diperbolehkan : 1024, 2048, 3072, 4096, 5120, 10240, 20480, 40960, 81920
 
 ```yaml
 Type: System.Nullable`1[System.Int64]
@@ -313,7 +313,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -344,7 +344,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequiresSession
-RequiresSession - nilai yang mengindikasikan jika antrean ini menggunakan sesi
+MemerlukanSession - nilai yang mengindikasikan jika antrean ini menggunakan sesi
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -390,7 +390,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -406,7 +406,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -421,17 +421,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
-### System.Nullable'1[[System.Int64, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int64, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 

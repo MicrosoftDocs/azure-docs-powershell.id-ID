@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.websi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/Get-AzureRmWebAppSnapshot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/Get-AzureRmWebAppSnapshot.md
-ms.openlocfilehash: 56089966d594d07f8fc347709f2b5d9c5d2adb15408d84aa300c6813d3ab2c48
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 292364ae6355c640ed66116c84289fe303acdd53
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140855306"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142246635"
 ---
 # Get-AzureRmWebAppSnapshot
 
 ## SYNOPSIS
-Dapatkan snapshot yang tersedia untuk aplikasi web.
+Mendapatkan snapshot yang tersedia untuk aplikasi web.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -33,7 +33,7 @@ Get-AzureRmWebAppSnapshot [-WebApp] <PSSite> [-DefaultProfile <IAzureContextCont
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmWebAppSnapshot** mengembalikan semua snapshot untuk aplikasi web. Snapshot adalah cadangan otomatis file dan pengaturan aplikasi web. Snapshot dapat dipulihkan dengan cmdlet **Restore-AzureRmWebAppSnap cmdlet** .
+Cmdlet **Get-AzureRmWebAppSnapshot** mengembalikan semua snapshot untuk aplikasi web. Snapshot adalah cadangan otomatis file dan pengaturan aplikasi web. Snapshot dapat dipulihkan dengan cmdlet **Restore-AzureRmWebAppSnapshot** .
 
 ## EXAMPLES
 
@@ -42,7 +42,7 @@ Cmdlet **Get-AzureRmWebAppSnapshot** mengembalikan semua snapshot untuk aplikasi
 PS C:\> Get-AzureRmWebAppSnapshot -ResourceGroupName "Default-Web-WestUS" -Name "ContosoApp" -Slot "Staging"
 ```
 
-Dapatkan snapshot untuk aplikasi web bernama "ConstosoApp" dengan slot bernama "Pengembangan" di grup sumber daya "Default-Web-WestUS"
+Dapatkan snapshot untuk aplikasi web bernama "ConstosoApp" dengan slot bernama "Staging" dalam grup sumber daya "Default-Web-WestUS"
 
 ## PARAMETERS
 
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

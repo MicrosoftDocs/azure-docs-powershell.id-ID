@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherReachabilityReport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherReachabilityReport.md
 ms.openlocfilehash: 55aee89412b98fd5a2c5abea0b29309dd19cbf1a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140070983"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142081399"
 ---
 # Get-AzNetworkWatcherReachabilityReport
 
@@ -18,7 +18,7 @@ ms.locfileid: "140070983"
 Mendapatkan skor latensi relatif untuk penyedia layanan internet dari lokasi tertentu ke kawasan Azure.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-aznetworkwatcherreachabilityreport) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkwatcherreachabilityreport) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +51,7 @@ Get-AzNetworkWatcherReachabilityReport -NetworkWatcherLocation <String> [-Provid
 ```
 
 ## DESCRIPTION
-Sumber Get-AzNetworkWatcherReachabilityReport mendapatkan skor latensi relatif untuk penyedia layanan internet dari lokasi tertentu ke kawasan Azure.
+Get-AzNetworkWatcherReachabilityReport mendapatkan skor latensi relatif untuk penyedia layanan internet dari lokasi tertentu ke kawasan Azure.
 
 ## EXAMPLES
 
@@ -86,11 +86,11 @@ Get-AzNetworkWatcherReachabilityReport -NetworkWatcher $nw -Location "West US" -
 ]
 ```
 
-Mendapatkan latensi relatif ke Pusat Data Azure di AS Barat dari 2017-10-10 hingga 2017-10-12 di Amerika Serikat.
+Mendapatkan latensi relatif ke Azure Data Center di AS Barat dari 2017-10-10 hingga 2017-10-12 di dalam Amerika Serikat.
 
 ### Contoh 2
 
-Mendapatkan skor latensi relatif untuk penyedia layanan internet dari lokasi tertentu ke kawasan Azure. (otomatisgenerated)
+Mendapatkan skor latensi relatif untuk penyedia layanan internet dari lokasi tertentu ke kawasan Azure. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -100,7 +100,7 @@ Get-AzNetworkWatcherReachabilityReport -Country 'United States' -EndTime '2017-1
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndTime
-Waktu akhir untuk laporan Kemampuan Azure.
+Waktu akhir untuk laporan keterjangkauan Azure.
 
 ```yaml
 Type: System.DateTime
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Kawasan Azure opsional untuk lingkup kueri.
+Kawasan Azure opsional untuk melingkupi kueri.
 
 ```yaml
 Type: System.String[]
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengawas jaringan
+Sumber daya pengamat jaringan
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
@@ -280,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Waktu mulai untuk laporan Azure reachability.
+Waktu mulai untuk laporan keterjangkauan Azure.
 
 ```yaml
 Type: System.DateTime
@@ -310,7 +310,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -323,7 +323,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSAzureReachabilityReport
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, network, networking, network watcher, reachability, report
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, keterjangkauan, laporan
 
 ## RELATED LINKS
 
@@ -331,7 +331,7 @@ Kata kunci: azure, azurerm, arm, resource, management, manager, network, network
 
 [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md)
 
-[Remove-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
+[Hapus-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
 
 [Get-AzNetworkWatcherNextHop](./Get-AzNetworkWatcherNextHop.md)
 
@@ -371,9 +371,9 @@ Kata kunci: azure, azurerm, arm, resource, management, manager, network, network
 
 [Get-AzNetworkWatcherTroubleshootingResult](./Get-AzNetworkWatcherTroubleshootingResult.md)
 
-[Get-AzNetworkWatcherReachabilityReport](./Get-AzNetworkWatcherReachabilityReport.md)
+[Get-AzNetworkWatcherReacherReportability](./Get-AzNetworkWatcherReachabilityReport.md)
 
-[Get-AzNetworkWatcherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
+[Get-AzNetworkWatcherReacherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
 
 [Get-AzNetworkWatcherFlowLogStatus](./Get-AzNetworkWatcherFlowLogStatus.md)
 

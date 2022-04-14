@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.subscription/upd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Subscription/Subscription/help/Update-AzSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Subscription/Subscription/help/Update-AzSubscription.md
-ms.openlocfilehash: 08100c3e6a3f60d0a9314970df7a6a18aa80127c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: aab428c4b4cc9f03bfb90c9dc540b6335f738f8f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140178354"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142206361"
 ---
 # Update-AzSubscription
 
 ## SYNOPSIS
 Memperbarui Langganan Azure
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.subscription/update-azsubscription) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Update-AzSubscription -SubscriptionId <String> -Action <String> [-Name <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzSubscription** memperbarui langganan Azure
+Cmdlet **Pembaruan-AzSubskripsi** memperbarui langganan Azure
 
 ## EXAMPLES
 
@@ -68,7 +71,7 @@ Mengganti nama langganan
 ## PARAMETERS
 
 ### -Tindakan
-Tindakan yang akan dilakukan pada langganan
+Tindakan untuk dijalankan pada langganan
 
 ```yaml
 Type: System.String
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -174,11 +177,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

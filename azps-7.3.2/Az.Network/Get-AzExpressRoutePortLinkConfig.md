@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRoutePortLinkConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRoutePortLinkConfig.md
-ms.openlocfilehash: e25dc511d35819f1c409406594a5716330be4a5e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 28426ec87f79b3eb053bf05dcde80129bb406f2d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140198022"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142067305"
 ---
 # Get-AzExpressRoutePortLinkConfig
 
 ## SYNOPSIS
 Mendapatkan konfigurasi tautan ExpressRoutePort.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azexpressrouteportlinkconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzExpressRoutePortLinkConfig -ResourceId <String> -ExpressRoutePort <PSExpre
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzExpressRoutePortLinkConfig** mengambil konfigurasi tautan dari ExpressRoutePort.
+Cmdlet **Get-AzExpressRoutePortLinkConfig** mengambil konfigurasi tautan ExpressRoutePort.
 
 ## EXAMPLES
 
@@ -41,14 +44,14 @@ Cmdlet **Get-AzExpressRoutePortLinkConfig** mengambil konfigurasi tautan dari Ex
 PS C:\> Get-AzExpressRoutePortLinkConfig -ExpressRoutePort $erport -Name Link1
 ```
 
-Mendapatkan konfigurasi Link1 dari expressRoutePort $erport
+Mendapatkan konfigurasi Link1 dari ExpressRoutePort $erport
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzExpressRoutePortLinkConfig -ExpressRoutePort $erport -ResourceId $id
 ```
 
-Mendapatkan konfigurasi tautan dengan opsi ResourceId $id ExpressRoutePort $erport
+Mendapatkan konfigurasi tautan dengan $id ResourceId di ExpressRoutePort $erport
 
 ## PARAMETERS
 
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama link.
+Nama tautan.
 
 ```yaml
 Type: System.String
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ResourceId link.
+ResourceId dari tautan tersebut.
 
 ```yaml
 Type: System.String
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

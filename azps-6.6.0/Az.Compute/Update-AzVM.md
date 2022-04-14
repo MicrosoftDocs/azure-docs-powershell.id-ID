@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzVM.md
 ms.openlocfilehash: 5236ca831dd0257c70f9f74ba058c0bf9e3369f8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140334959"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142234986"
 ---
 # Update-AzVM
 
@@ -19,7 +19,7 @@ ms.locfileid: "140334959"
 Memperbarui status mesin virtual Azure.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/update-azvm) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/update-azvm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,13 +60,13 @@ PS C:\> Update-AzVM -ResourceGroupName "ResourceGroup11" -VM $VirtualMachine
 ```
 
 Perintah ini memperbarui mesin virtual, $VirtualMachine, di ResourceGroup11.
-Perintah memperbaruinya menggunakan objek mesin virtual yang disimpan di $VirtualMachine variabel.
+Perintah memperbaruinya dengan menggunakan objek mesin virtual yang disimpan dalam variabel $VirtualMachine.
 Untuk mendapatkan objek mesin virtual, gunakan cmdlet **Get-AzVM** .
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -CapacityReservationGroupId
-Id Grup reservasi kapasitas yang digunakan untuk mengalokasikan.
+Id grup reservasi kapasitas yang digunakan untuk mengalokasikan.
 
 ```yaml
 Type: System.String
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionAtHost
-Properti EncryptionAtHost dapat digunakan oleh pengguna dalam permintaan untuk mengaktifkan atau menonaktifkan Enkripsi Host untuk mesin virtual atau kumpulan skala mesin virtual. Cara ini akan mengaktifkan enkripsi untuk semua disk, termasuk disk Resource/Temp di host itu sendiri. 
+Properti EncryptionAtHost dapat digunakan oleh pengguna dalam permintaan untuk mengaktifkan atau menonaktifkan Enkripsi Host untuk mesin virtual atau kumpulan skala mesin virtual. Ini akan mengaktifkan enkripsi untuk semua disk termasuk disk Sumber Daya/Temp di host itu sendiri. 
 
 ```yaml
 Type: System.Boolean
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostId
-The Id of Host
+Id dari Host
 
 ```yaml
 Type: System.String
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID sumber daya komputer virtual.
+Menentukan ID sumber daya mesin maya.
 
 ```yaml
 Type: System.String
@@ -156,8 +156,8 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityId
-Menentukan daftar identitas pengguna yang terkait dengan komputer virtual.
-Referensi identitas pengguna akan menjadi ID sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
+Menentukan daftar identitas pengguna yang terkait dengan mesin virtual.
+Referensi identitas pengguna akan berupa ID sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
 
 ```yaml
 Type: System.String[]
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxPrice
-Menentukan harga maksimum yang Anda bersedia untuk membayar VM/VMSS berprioritas rendah. Harga ini dalam Dolar AS. Harga ini akan dibandingkan dengan harga berprioritas rendah saat ini untuk ukuran VM. Selain itu, harga dibandingkan pada saat pembuatan/pembaruan VM/VMSS berprioritas rendah dan operasi hanya akan berhasil jika maxPrice lebih besar dari harga prioritas rendah saat ini. MaxPrice juga akan digunakan untuk membatalkan vm/VMSS prioritas rendah jika harga berprioritas rendah saat ini melampaui maxPrice setelah pembuatan VM/VMSS. Nilai yang mungkin adalah: nilai desimal apa pun yang lebih besar dari nol. Contoh: 0,01538.  -1 menunjukkan bahwa VM/VMSS berprioritas rendah tidak boleh disederhkan untuk alasan harga. Selain itu, harga maks default adalah -1 jika tidak diberikan oleh Anda.
+Menentukan harga maksimum yang ingin Anda bayar untuk VM/VMSS berprioritas rendah. Harga ini adalah dalam Dolar AS. Harga ini akan dibandingkan dengan harga prioritas rendah saat ini untuk ukuran VM. Juga, harga dibandingkan pada saat membuat / memperbarui VM / VMSS prioritas rendah dan operasi hanya akan berhasil jika maxPrice lebih besar dari harga prioritas rendah saat ini. MaxPrice juga akan digunakan untuk mengusir VM/VMSS berprioritas rendah jika harga prioritas rendah saat ini melampaui maxPrice setelah pembuatan VM/VMSS. Nilai yang memungkinkan adalah: nilai desimal apa pun yang lebih besar dari nol. Contoh: 0.01538.  -1 menunjukkan bahwa VM/VMSs prioritas rendah tidak boleh diusir karena alasan harga. Selain itu, harga maks default adalah -1 jika tidak disediakan oleh Anda.
 
 ```yaml
 Type: System.Double
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Memulai operasi dan segera mengembalikannya, sebelum operasi selesai. Untuk mengetahui apakah operasi berhasil diselesaikan, gunakan beberapa mekanisme lain.
+Memulai operasi dan segera kembali, sebelum operasi selesai. Untuk menentukan apakah operasi telah berhasil diselesaikan, gunakan beberapa mekanisme lain.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -OsDiskWriteAccelerator
-Menentukan apakah WriteAccelerator harus diaktifkan atau dinonaktifkan di disk OS.
+Menentukan apakah WriteAccelerator harus diaktifkan atau dinonaktifkan pada disk OS.
 
 ```yaml
 Type: System.Boolean
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: System.String
@@ -263,9 +263,9 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Menentukan sumber daya dan grup sumber daya dapat ditandai dengan kumpulan pasangan nama nilai.
-Menambahkan tag ke sumber daya memungkinkan Anda mengelompokkan sumber daya bersama-sama di seluruh grup sumber daya dan untuk membuat tampilan Anda sendiri.
-Setiap grup sumber daya atau sumber daya dapat memiliki maksimal 15 tag.
+Menentukan sumber daya dan grup sumber daya bisa ditandai dengan sekumpulan pasangan nilai nama.
+Menambahkan tag ke sumber daya memungkinkan Anda mengelompokkan sumber daya bersama di seluruh grup sumber daya dan membuat tampilan Anda sendiri.
+Setiap sumber daya atau grup sumber daya dapat memiliki maksimal 15 tag.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -280,8 +280,8 @@ Accept wildcard characters: False
 ```
 
 ### -UltraSSDEnabled
-Bendera yang mengaktifkan atau menonaktifkan kemampuan untuk memiliki satu atau beberapa disk data terkelola dengan tipe akun UltraSSD_LRS yang sama pada VM.
-Disk terkelola dengan tipe akun UltraSSD_LRS dapat ditambahkan ke mesin virtual hanya jika properti ini diaktifkan.
+Bendera yang mengaktifkan atau menonaktifkan kapabilitas untuk memiliki satu atau beberapa disk data terkelola dengan tipe akun penyimpanan UltraSSD_LRS pada VM.
+Disk terkelola dengan tipe akun penyimpanan UltraSSD_LRS dapat ditambahkan ke mesin virtual hanya jika properti ini diaktifkan.
 
 ```yaml
 Type: System.Boolean
@@ -297,7 +297,7 @@ Accept wildcard characters: False
 
 ### -VM
 Menentukan objek mesin virtual lokal.
-Untuk mendapatkan objek mesin virtual, gunakan Get-AzVM cmdlet.
+Untuk mendapatkan objek mesin virtual, gunakan cmdlet Get-AzVM.
 Objek mesin virtual ini berisi status yang diperbarui untuk mesin virtual.
 
 ```yaml
@@ -313,7 +313,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -329,7 +329,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -344,7 +344,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -362,18 +362,18 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-azvm](./Get-AzVM.md)
+[Get-AzVM](./Get-AzVM.md)
 
-[New-azvm](./New-AzVM.md)
+[AzVM baru](./New-AzVM.md)
 
-[Remove-azvm](./Remove-AzVM.md)
+[Hapus-AzVM](./Remove-AzVM.md)
 
-[Mulai ulang-azvm](./Restart-AzVM.md)
+[Mulai ulang-AzVM](./Restart-AzVM.md)
 
-[Start-azvm](./Start-AzVM.md)
+[Start-AzVM](./Start-AzVM.md)
 
-[Stop-azvm](./Stop-AzVM.md)
+[Stop-AzVM](./Stop-AzVM.md)
 
-[New-azvmConfig](./New-AzVMConfig.md)
+[New-AzVMConfig](./New-AzVMConfig.md)
 
 

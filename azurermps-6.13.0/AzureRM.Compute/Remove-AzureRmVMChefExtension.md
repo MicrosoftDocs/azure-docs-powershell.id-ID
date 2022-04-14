@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Remove-AzureRmVMChefExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Remove-AzureRmVMChefExtension.md
 ms.openlocfilehash: da19894751c7b653dbc70d606a44464973d9b38c
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "132414668"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142099795"
 ---
 # Remove-AzureRmVMChefExtension
 
@@ -39,24 +39,24 @@ Cmdlet **Remove-AzureVMChefExtension** menghapus ekstensi Chef dari mesin virtua
 
 ## EXAMPLES
 
-### Contoh 1: Hapus ekstensi Chef dari Windows virtual
+### Contoh 1: Hapus ekstensi Chef dari mesin virtual Windows
 ```
 PS C:\> Remove-AzureRmVMChefExtension -ResourceGroupName "ResourceGroup001" -VMName "WindowsVM001" -Windows
 ```
 
-Perintah ini menghapus ekstensi Chef dari komputer virtual berbasis Windows bernama WindowsVM001 yang dimiliki oleh grup sumber daya bernama ResourceGroup001.
+Perintah ini menghapus ekstensi Chef dari mesin virtual berbasis Windows bernama WindowsVM001 yang termasuk dalam grup sumber daya bernama ResourceGroup001.
 
-### Contoh 2: Hapus ekstensi Chef dari komputer virtual Linux
+### Contoh 2: Hapus ekstensi Chef dari mesin virtual Linux
 ```
 PS C:\> Remove-AzureRmVMChefExtension -ResourceGroupName "ResourceGroup002" -VMName "LinuxVM001" -Linux
 ```
 
-Perintah ini menghapus ekstensi Chef dari mesin virtual berbasis Linux yang bernama LinuxVM001 yang dimiliki grup sumber daya yang bernama ResourceGroup002.
+Perintah ini menghapus ekstensi Chef dari mesin virtual berbasis Linux bernama LinuxVM001 yang termasuk dalam grup sumber daya bernama ResourceGroup002.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Tentukan nama ekstensi Chef yang dihapus cmdlet ini.
+Menentukan nama ekstensi Chef yang dihapus cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi komputer virtual.
+Menentukan nama grup sumber daya yang berisi mesin virtual.
 
 ```yaml
 Type: System.String
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -Windows
-Mengindikasikan bahwa cmdlet ini menargetkan mesin Windows virtual.
+Menunjukkan bahwa cmdlet ini menargetkan mesin virtual Windows.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

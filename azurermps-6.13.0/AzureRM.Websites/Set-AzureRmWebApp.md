@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.websi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/Set-AzureRmWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/Set-AzureRmWebApp.md
-ms.openlocfilehash: f1e0e2a4a5904b525b31d7c49a9363b8c14b0ebb629e5d64949cbc4ad7bdf1af
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: a47f490ae77fc540f3e14708b19dade5ce4e7c3d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140857745"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142246630"
 ---
 # Set-AzureRmWebApp
 
@@ -54,12 +54,12 @@ Cmdlet **Set-AzureRmWebApp** mengatur Azure Web App.
 PS C:\> Set-AzureRmWebApp -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -HttpLoggingEnabled $true
 ```
 
-Perintah ini mengatur HttpLoggingEnabled ke true untuk Web App ContosoWebApp terkait dengan grup sumber daya Default-Web-WestUS
+Perintah ini mengatur HttpLoggingEnabled ke true untuk Web App ContosoWebApp yang terkait dengan grup sumber daya Default-Web-WestUS
 
 ## PARAMETERS
 
 ### -AppServicePlan
-Nama Paket Layanan Aplikasi
+Nama Rencana App Service
 
 ```yaml
 Type: System.String
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoSwapSlotName
-Nama slot tujuan untuk tukar otomatis
+Nama slot tujuan untuk pentukaran otomatis
 
 ```yaml
 Type: System.String
@@ -133,7 +133,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -String Koneksi
+### -ConnectionStrings
 HashTable String Koneksi
 
 ```yaml
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerImageName
-Container Image Name
+Nama Gambar Kontainer
 
 ```yaml
 Type: System.String
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerRegistryPassword
-Kata Sandi Registri Wadah Privat
+Kata Sandi Registri Kontainer Privat
 
 ```yaml
 Type: System.Security.SecureString
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerRegistryUrl
-Url Server Registri Wadah Privat
+Url Server Registri Kontainer Pribadi
 
 ```yaml
 Type: System.String
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerRegistryUser
-Nama Pengguna Registri Wadah Privat
+Nama Pengguna Private Container Registry
 
 ```yaml
 Type: System.String
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultDocuments
-Larik String Dokumen Default
+Array String Dokumen Default
 
 ```yaml
 Type: System.String[]
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -DetailedErrorLoggingEnabled
-Boolean Berkemampuan Pembuatan Log Kesalahan Mendetail
+Pencatatan Log Kesalahan Mendetail Diaktifkan Boolean
 
 ```yaml
 Type: System.Boolean
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableContainerContinuousDeployment
-Mengaktifkan/Menonaktifkan webhook penyebaran berkelanjutan wadah
+Webhook penyebaran berkelanjutan kontainer Enables/Disables
 
 ```yaml
 Type: System.Boolean
@@ -284,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostNames
-Larik String Nama Host WebApp
+WebApp HostNames String Array
 
 ```yaml
 Type: System.String[]
@@ -313,8 +313,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpsOnly
-Aktifkan/nonaktifkan pengalihan semua lalu lintas ke HTTPS di aplikasi atau functionapp Azure Web yang sudah ada
+### -HttpsOnly
+Mengaktifkan/menonaktifkan pengalihan semua lalu lintas ke HTTPS di azure webapp atau functionapp yang sudah ada
 
 ```yaml
 Type: System.Boolean
@@ -434,7 +434,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Use32BitWorkerProcess
+### -Use32BitWorkerProcesss
 Menggunakan Boolean Proses Pekerja 32-bit
 
 ```yaml
@@ -480,7 +480,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -502,9 +502,9 @@ Parameter: WebApp (ByValue)
 
 [Get-AzureRmWebApp](./Get-AzureRmWebApp.md)
 
-[New-AzureRmWebApp](./New-AzureRmWebApp.md)
+[Baru-AzureRmWebApp](./New-AzureRmWebApp.md)
 
-[Remove-AzureRmWebApp](./Remove-AzureRmWebApp.md)
+[Hapus-AzureRmWebApp](./Remove-AzureRmWebApp.md)
 
 [Mulai ulang-AzureRmWebApp](./Restart-AzureRmWebApp.md)
 

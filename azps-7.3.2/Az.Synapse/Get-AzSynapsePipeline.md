@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapsePipeline.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapsePipeline.md
-ms.openlocfilehash: 2f32598f67099b5715179d50588d1277e85e1688
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 51329685a63a4f8c6f510166a87f1a9648088161
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140005366"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142205971"
 ---
 # Get-AzSynapsePipeline
 
 ## SYNOPSIS
 Mendapatkan informasi tentang saluran di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsepipeline) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzSynapsePipeline -WorkspaceObject <PSSynapseWorkspace> [-Name <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapsePipeline** mendapatkan informasi tentang saluran di ruang kerja. Jika Anda menentukan nama pipeline, cmdlet ini mendapatkan informasi tentang saluran itu. Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua saluran di dalam ruang kerja.
+Cmdlet **Get-AzSynapsePipeline** mendapatkan informasi tentang saluran di ruang kerja. Jika Anda menentukan nama pipeline, cmdlet ini akan mendapatkan informasi tentang pipeline tersebut. Jika Anda tidak menentukan nama, cmdlet ini akan mendapatkan informasi tentang semua saluran dalam ruang kerja.
 
 ## EXAMPLES
 
@@ -41,14 +44,14 @@ Cmdlet **Get-AzSynapsePipeline** mendapatkan informasi tentang saluran di ruang 
 PS C:\> Get-AzSynapsePipeline -WorkspaceName ContosoWorkspace
 ```
 
-Perintah ini mendapatkan informasi tentang semua saluran di ruang kerja yang bernama ContosoWorkspace.
+Perintah ini mendapatkan informasi tentang semua saluran dalam ruang kerja bernama ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzSynapsePipeline -WorkspaceName ContosoWorkspace -Name ContosoPipeline
 ```
 
-Perintah ini mendapatkan informasi tentang pipeline yang bernama ContosoPipeline dalam ruang kerja yang bernama ContosoWorkspace.
+Perintah ini mendapatkan informasi tentang alur bernama ContosoPipeline di ruang kerja bernama ContosoWorkspace.
 
 ### Contoh 3
 ```powershell
@@ -56,7 +59,7 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Get-AzSynapsePipeline -Name ContosoPipeline
 ```
 
-Perintah ini mendapatkan informasi tentang pipeline yang dinamai ContosoPipeline dalam ruang kerja yang bernama ContosoWorkspace melalui pipeline.
+Perintah ini mendapatkan informasi tentang alur bernama ContosoPipeline di ruang kerja bernama ContosoWorkspace melalui pipeline.
 
 ## PARAMETERS
 
@@ -90,7 +93,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

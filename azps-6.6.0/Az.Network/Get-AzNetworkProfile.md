@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkProfile.md
 ms.openlocfilehash: 5877c68fe5387cf6034855fd6d97443f81b731a1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140251747"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142081417"
 ---
 # Get-AzNetworkProfile
 
 ## SYNOPSIS
-Mendapatkan sumber daya tingkat atas profil jaringan yang sudah ada
+Mendapatkan sumber daya tingkat teratas profil jaringan yang sudah ada
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-aznetworkprofile) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +46,7 @@ Get-AzNetworkProfile -ResourceId <String> [-DefaultProfile <IAzureContextContain
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzNetworkProfile** mengambil sumber daya tingkat teratas profil jaringan yang sudah ada
+Cmdlet **Get-AzNetworkProfile** mengambil sumber daya tingkat atas profil jaringan yang sudah ada
 
 ## EXAMPLES
 
@@ -71,7 +71,7 @@ Id                                          : /subscriptions/00000000-0000-0000-
                                               /providers/Microsoft.Network/networkProfiles/np1
 ```
 
-Ini mengambil np1 profil jaringan di grup sumber daya rg1
+Ini mengambil profil jaringan np1 dalam grup sumber daya rg1
 
 ### Contoh 2
 ```powershell
@@ -110,7 +110,7 @@ Id                                          : /subscriptions/00000000-0000-0000-
                                               /providers/Microsoft.Network/networkProfiles/np2
 ```
 
-Ini akan mengambil profil jaringan yang dimulai dengan "np"
+Ini mengambil profil jaringan yang dimulai dengan "np"
 
 ## PARAMETERS
 
@@ -199,7 +199,7 @@ Accept wildcard characters: True
 ```
 
 ### -ResourceId
-Id manajer sumber daya Azure profil jaringan.
+Id manajer sumber daya Azure dari profil jaringan.
 
 ```yaml
 Type: System.String
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -230,6 +230,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzNetworkProfile](./New-AzNetworkProfile.md)
 
-[Remove-AzNetworkProfile](./Remove-AzNetworkProfile.md)
+[Hapus-AzNetworkProfile](./Remove-AzNetworkProfile.md)
 
 [Set-AzNetworkProfile](./Set-AzNetworkProfile.md)

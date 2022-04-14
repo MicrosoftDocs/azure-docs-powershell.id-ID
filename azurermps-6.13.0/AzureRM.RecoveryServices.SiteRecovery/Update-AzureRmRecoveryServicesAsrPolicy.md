@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.recov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Update-AzureRmRecoveryServicesAsrPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Update-AzureRmRecoveryServicesAsrPolicy.md
-ms.openlocfilehash: 849b2af996bb6b59f89437213d6cbf7dfdc80735b33931c4656eef56d974c0e2
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 805e421aedbb06b6f9a821b3f575b8a5035c86d9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140851716"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142061519"
 ---
 # Update-AzureRmRecoveryServicesAsrPolicy
 
 ## SYNOPSIS
-Memperbarui kebijakan replikasi Pemulihan Situs Azure.
+Memperbarui kebijakan replikasi Azure Site Recovery.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -74,7 +74,7 @@ Update-AzureRmRecoveryServicesAsrPolicy [-VmmToVmm] -InputObject <ASRPolicy> [-R
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzureRmRecoveryServicesAsrPolicy** memperbarui kebijakan replikasi Pemulihan Situs Azure yang ditentukan.
+Cmdlet **Update-AzureRmRecoveryServicesAsrPolicy** memperbarui kebijakan replikasi Azure Site Recovery yang ditentukan.
 
 ## EXAMPLES
 
@@ -90,19 +90,19 @@ Memulai operasi kebijakan replikasi pembaruan menggunakan parameter yang ditentu
 PS C:\> Update-AzureRmRecoveryServicesAsrPolicy -AzureToAzure -InputObject $Policy -ReplicationFrequencyInSeconds 900
 ```
 
-Memulai pembaruan Azure ke operasi kebijakan replikasi Azure menggunakan parameter yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Memulai operasi kebijakan pembaruan azure ke azure replikasi menggunakan parameter yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ### Contoh 3
 ```
 PS C:\> $currentJob = Update-AzureRmRecoveryServicesAsrPolicy -AzureToAzure -InputObject $Policy -RecoveryPointRetentionInHours 20
 ```
 
-Memulai pembaruan Azure ke kebijakan replikasi Azure menggunakan parameter yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Memulai pembaruan azure ke kebijakan replikasi azure menggunakan parameter yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ## PARAMETERS
 
 ### -ApplicationConsistentSnapshotFrequencyInHours
-Menentukan frekuensi(dalam jam) untuk membuat poin pemulihan konsisten pada aplikasi.
+Menentukan frekuensi(dalam jam) untuk membuat titik pemulihan aplikasi yang konsisten.
 
 ```yaml
 Type: System.Int32
@@ -116,7 +116,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Authentication
+### -Otentikasi
 Menentukan tipe autentikasi yang digunakan.
 
 ```yaml
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureToAzure
-Beralih parameter yang menentukan bahwa kebijakan replikasi yang digunakan untuk mereplikasi komputer virtual Azure antara dua kawasan Azure akan diperbarui.
+Beralih parameter yang menentukan bahwa kebijakan replikasi yang digunakan untuk mereplikasi mesin virtual Azure antara dua kawasan Azure akan diperbarui.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureToVMware
-Alihkan parameter yang menunjukkan bahwa kebijakan spesifikasi digunakan untuk mereplikasi yang gagal atas mesin virtual yang dijalankan di Azure kembali ke situs VMware lokal.
+Beralih parameter yang mengindikasikan bahwa kebijakan yang dispesifikasikan digunakan untuk mereplikasi gagal melalui mesin virtual yang berjalan di Azure kembali ke situs VMware lokal.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -162,7 +162,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Compression
+### -Kompresi
 Menentukan apakah pemadatan harus diaktifkan.
 
 ```yaml
@@ -194,8 +194,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Encryption
-{{fill encryption description}}
+### -Enkripsi
+{{Fill Encryption Description}}
 
 ```yaml
 Type: System.String
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -HyperVToAzure
-Alihkan parameter yang menunjukkan bahwa kebijakan ber spesifikasi digunakan untuk mereplikasi mesin virtual Hyper-V ke Azure.
+Parameter switch yang mengindikasikan bahwa kebijakan yang dispesifikasikan digunakan untuk mereplikasi mesin virtual Hyper-V ke Azure.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -257,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### -NumberOfRecoveryPointsToRetain
-Menentukan jumlah poin pemulihan untuk dipertahankan.
+Menentukan titik pemulihan angka untuk dipertahankan.
 
 ```yaml
 Type: System.Int32
@@ -288,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryPointRetentionInHours
-Waktunya dalam jam untuk mempertahankan poin pemulihan setelah pembuatan.
+Waktu dalam jam untuk mempertahankan titik pemulihan setelah pembuatan.
 
 ```yaml
 Type: System.Int32
@@ -303,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicaDeletion
-Menentukan apakah mesin virtual replika harus dihapus pada saat menonaktifkan replikasi dari situs yang dikelola VMM ke situs lain.
+Menentukan apakah mesin virtual replika harus dihapus saat menonaktifkan replikasi dari situs yang dikelola VMM ke situs lain.
 
 ```yaml
 Type: System.String
@@ -320,7 +320,7 @@ Accept wildcard characters: False
 
 ### -ReplicationFrequencyInSeconds
 Menentukan interval frekuensi replikasi dalam detik.
-Nilai valid adalah:
+Nilai yang valid adalah:
 
 - 30
 - 300
@@ -356,7 +356,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicationPort
-Menentukan port yang digunakan untuk replikasi.
+Menentukan porta yang digunakan untuk replikasi.
 
 ```yaml
 Type: System.UInt16
@@ -402,7 +402,7 @@ Accept wildcard characters: False
 ```
 
 ### -VmmToVmm
-Alihkan parameter yang menunjukkan bahwa kebijakan spesifikasi digunakan untuk mereplikasi VMM yang dikelola mesin virtual Hyper-V antara dua situs Hyper-V.
+Parameter switch menunjukkan bahwa kebijakan yang dispesifikasikan digunakan untuk mereplikasi mesin virtual Hyper-V yang dikelola VMM antara dua situs Hyper-V.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -417,7 +417,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMwareToAzure
-Alihkan parameter yang menunjukkan bahwa kebijakan ber spesifikasi digunakan untuk mereplikasi mesin virtual VMware ke Azure.
+Parameter switch yang mengindikasikan bahwa kebijakan yang dispesifikasikan digunakan untuk mereplikasi mesin virtual VMware ke Azure.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -432,7 +432,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -447,7 +447,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -462,7 +462,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

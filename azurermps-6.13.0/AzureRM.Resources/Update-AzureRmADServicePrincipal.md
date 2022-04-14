@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.resou
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Update-AzureRmADServicePrincipal.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Update-AzureRmADServicePrincipal.md
-ms.openlocfilehash: 67c798a0c947b2df323d7f6078dd55326dbc44e3ba3c4ee437d92251924ab425
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: ce778da76b0dfc81a8438bdd0fdc3e0a20215843
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140858024"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142060886"
 ---
 # Update-AzureRmADServicePrincipal
 
@@ -51,7 +51,7 @@ Update-AzureRmADServicePrincipal -InputObject <PSADServicePrincipal> [-DisplayNa
 ```
 
 ## DESCRIPTION
-Memperbarui prinsipal layanan azure active directory yang sudah ada. Untuk memperbarui kredensial yang terkait dengan prinsipal layanan ini, silakan New-AzureRmADSpCredential cmdlet. Untuk memperbarui properti yang terkait dengan aplikasi yang mendasari, silakan Update-AzureRmADApplication cmdlet.
+Memperbarui prinsipal layanan azure active directory yang sudah ada. Untuk memperbarui kredensial yang terkait dengan prinsipal layanan ini, silakan gunakan cmdlet New-AzureRmADSpCredential. Untuk memperbarui properti yang terkait dengan aplikasi yang mendasar, silakan gunakan cmdlet Update-AzureRmADApplication.
 
 ## EXAMPLES
 
@@ -63,18 +63,18 @@ PS C:\> Update-AzureRmADServicePrincipal -ObjectId 784136ca-3ae2-4fdd-a388-89d79
 
 Memperbarui nama tampilan prinsipal layanan dengan id objek '784136ca-3ae2-4fdd-a388-89d793e7c780' menjadi 'MyNewDisplayName'.
 
-### Contoh 2 - Memperbarui nama tampilan prinsipal layanan menggunakan pemipaan
+### Contoh 2 - Memperbarui nama tampilan prinsipal layanan menggunakan piping
 
 ```
 PS C:\> Get-AzureRmADServicePrincipal -ObjectId 784136ca-3ae2-4fdd-a388-89d793e7c780 | Update-AzureRmADServicePrincipal -DisplayName MyNewDisplayName
 ```
 
-Dapatkan prinsipal layanan dengan id objek '784136ca-3ae2-4fdd-a388-89d793e7c780' dan pipa yang berada di cmdlet Update-AzureRmADServicePrincipal untuk memperbarui nama tampilan prinsipal layanan menjadi "MyNewDisplayName".
+Mendapatkan prinsipal layanan dengan id objek '784136ca-3ae2-4fdd-a388-89d793e7c780' dan pipa yang ke cmdlet Update-AzureRmADServicePrincipal untuk memperbarui nama tampilan prinsipal layanan menjadi "MyNewDisplayName".
 
 ## PARAMETERS
 
 ### -ApplicationId
-Id aplikasi prinsipal layanan untuk diperbarui.
+Id aplikasi dari prinsipal layanan untuk diperbarui.
 
 ```yaml
 Type: System.Guid
@@ -130,8 +130,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Homepage
-Laman prinsipal layanan.
+### -Laman
+Laman untuk prinsipal layanan.
 
 ```yaml
 Type: System.String
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyCredential
-Kredensial kunci untuk prinsipal layanan.
+Kredensial utama untuk prinsipal layanan.
 
 ```yaml
 Type: Microsoft.Azure.Graph.RBAC.Version1_6.Models.KeyCredential[]
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Id objek prinsipal layanan untuk diperbarui.
+Id objek dari prinsipal layanan untuk diperbarui.
 
 ```yaml
 Type: System.Guid
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalName
-SPN prinsipal layanan untuk pembaruan.
+SPN dari prinsipal layanan untuk diperbarui.
 
 ```yaml
 Type: System.String
@@ -236,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -267,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -275,12 +275,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.DIRECTDServicePrincipal
+### Microsoft.Azure.Graph.RBAC.Version1_6.ActiveDirectory.PSADServicePrincipal
 Parameter: InputObject (ByValue)
 
 ## OUTPUTS
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.DIRECTDServicePrincipal
+### Microsoft.Azure.Graph.RBAC.Version1_6.ActiveDirectory.PSADServicePrincipal
 
 ## CATATAN
 

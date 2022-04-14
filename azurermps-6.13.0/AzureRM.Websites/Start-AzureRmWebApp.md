@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/Start-AzureRmWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/Start-AzureRmWebApp.md
 ms.openlocfilehash: 034736bf55eb6dc13f7ba8a51ec57da728733eb6
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427530"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142246285"
 ---
 # Start-AzureRmWebApp
 
@@ -38,17 +38,17 @@ Cmdlet **Start-AzureRmWebApp** memulai Azure Web App.
 
 ## EXAMPLES
 
-### Contoh 1: Memulai Web App
+### Contoh 1: Memulai Aplikasi Web
 ```
 PS C:\>Start-AzureRmWebApp -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp"
 ```
 
-Perintah ini memulai Aplikasi Web bernama ContosoWebApp yang dimiliki oleh grup sumber daya yang bernama Default-Web-WestUS.
+Perintah ini memulai Aplikasi Web bernama ContosoWebApp yang termasuk dalam grup sumber daya bernama Default-Web-WestUS.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -127,9 +127,9 @@ Parameter: WebApp (ByValue)
 
 [Get-AzureRmWebApp](./Get-AzureRmWebApp.md)
 
-[New-AzureRmWebApp](./New-AzureRmWebApp.md)
+[Baru-AzureRmWebApp](./New-AzureRmWebApp.md)
 
-[Remove-AzureRmWebApp](./Remove-AzureRmWebApp.md)
+[Hapus-AzureRmWebApp](./Remove-AzureRmWebApp.md)
 
 [Mulai ulang-AzureRmWebApp](./Restart-AzureRmWebApp.md)
 

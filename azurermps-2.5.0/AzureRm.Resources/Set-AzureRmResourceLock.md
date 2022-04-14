@@ -5,11 +5,11 @@ ms.assetid: 770093CD-CE2A-4076-8A28-F4DCFFB7A075
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.resources/set-azurermresourcelock
 schema: 2.0.0
 ms.openlocfilehash: ccb491742d9a66a7e6eb300d7e75be0dcfac687e
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132415036"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142066459"
 ---
 # Set-AzureRmResourceLock
 
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -121,8 +121,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -137,14 +137,14 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: System.Management.Automation.ActionPreference
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -LockId
-Menentukan ID kunci yang dimodifikasi cmdlet ini.
+Menentukan ID kunci yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -LockLevel
-Menentukan tingkat kunci.
+Menentukan tingkat untuk kunci.
 Saat ini, satu-satunya nilai yang valid adalah CanNotDelete.
 
 ```yaml
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -LockName
-Menentukan nama kunci yang dimodifikasi cmdlet ini.
+Menentukan nama kunci yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -LockNotes
-Menentukan catatan untuk kunci tersebut.
+Menentukan catatan untuk kunci.
 
 ```yaml
 Type: System.String
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Cmdlet ini mempertimbangkan versi API prari release ketika cmdlet menentukan versi mana yang akan digunakan secara otomatis.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -265,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceName
-Menentukan nama sumber daya untuk menerapkan kunci.
+Menentukan nama sumber daya tempat kunci diterapkan.
 Misalnya, untuk menentukan database, gunakan format berikut: ServerDatabase`/`
 
 ```yaml
@@ -281,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceType
-Menentukan tipe sumber daya yang diterapkan oleh kunci.
+Menentukan tipe sumber daya yang akan diterapkan kunci.
 
 ```yaml
 Type: System.String
@@ -296,8 +296,8 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Menentukan lingkup berlakunya kunci.
-Misalnya, untuk menentukan database, gunakan format berikut ini: `/subscriptions/`nama server nama grup IDresource`/resourceGroups/``/databases/``/providers/Microsoft.Sql/servers/` langganan namadatabase Untuk menentukan grup sumber daya, gunakan format berikut ini: `/subscriptions/`nama grup IDresource langganan`/resourceGroups/`
+Menentukan lingkup yang diterapkan kunci.
+Misalnya, untuk menentukan database, gunakan format berikut: `/subscriptions/`langganan IDresource`/resourceGroups/` nama nameserver`/databases/` namedatabase`/providers/Microsoft.Sql/servers/` nama Untuk menentukan grup sumber daya, gunakan format berikut: `/subscriptions/`langganan IDresource`/resourceGroups/` nama grup
 
 ```yaml
 Type: System.String
@@ -312,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantLevel
-Mengindikasikan bahwa cmdlet ini beroperasi pada tingkat penyewa.
+Menunjukkan bahwa cmdlet ini beroperasi pada tingkat penyewa.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -327,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -343,7 +343,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -358,7 +358,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -372,6 +372,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmResourceLock](./New-AzureRmResourceLock.md)
 
-[Remove-AzureRmResourceLock](./Remove-AzureRmResourceLock.md)
+[Hapus-AzureRmResourceLock](./Remove-AzureRmResourceLock.md)
 
 
