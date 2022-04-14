@@ -4,16 +4,16 @@ Module Name: Azs.Subscriptions.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: a4bd00dc1709a3060da9777ab4755ae1c6a28ec4
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136577570"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142239625"
 ---
 # Test-AzsNameAvailability
 
 ## SYNOPSIS
-Mengembalikan ketersediaan tipe sumber daya langganan dan nama yang ditentukan
+Mengembalikan avaialbilitas tipe dan nama sumber daya langganan tertentu
 
 ## SYNTAX
 
@@ -22,7 +22,7 @@ Test-AzsNameAvailability -Name <String> -ResourceType <String> [<CommonParameter
 ```
 
 ## DESCRIPTION
-Mengembalikan ketersediaan tipe sumber daya langganan dan nama yang ditentukan
+Mengembalikan avaialbilitas tipe dan nama sumber daya langganan tertentu
 
 ## EXAMPLES
 
@@ -31,12 +31,12 @@ Mengembalikan ketersediaan tipe sumber daya langganan dan nama yang ditentukan
 Test-AzsNameAvailability -ResourceType "Microsoft.Subscriptions.Admin/offers" -Name offername1
 ```
 
-Mengembalikan ketersediaan tipe sumber daya langganan dan nama yang ditentukan
+Mengembalikan avaialbilitas tipe dan nama sumber daya langganan tertentu
 
 ## PARAMETERS
 
 ### -Nama
-Nama sumber daya untuk memverifikasi.
+Nama sumber daya untuk diverifikasi.
 
 ```yaml
 Type: String
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

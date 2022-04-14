@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticPoolRecommendedActionState.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticPoolRecommendedActionState.md
 ms.openlocfilehash: 704a3460efea9f5d8886c53527eb592d266cfab7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140326609"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142075693"
 ---
 # Set-AzSqlElasticPoolRecommendedActionState
 
 ## SYNOPSIS
-Memperbarui status tindakan Azure SQL Elastis Pool yang direkomendasikan.
+Memperbarui tindakan yang disarankan Azure SQL Elastic Pool.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqlelasticpoolrecommendedactionstate) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqlelasticpoolrecommendedactionstate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,12 +30,12 @@ Set-AzSqlElasticPoolRecommendedActionState -RecommendedActionName <String> -Stat
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSqlElasticPoolRecommendedActionState** memperbarui status tindakan Azure SQL Elastis Pool yang direkomendasikan.
-Cmdlet ini menerapkan tindakan yang disarankan, dikembalikan, atau dibuang berdasarkan status baru.
+**Cmdlet Set-AzSqlElasticPoolRecommendedActionState** memperbarui status tindakan yang direkomendasikan Azure SQL Elastic Pool.
+Cmdlet ini menerapkan tindakan yang direkomendasikan, dikembalikan, atau dibuang berdasarkan status baru.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui status tindakan yang direkomendasikan menjadi Tertunda
+### Contoh 1: Memperbarui status tindakan yang disarankan ke Tertunda
 ```
 PS C:\>Set-AzSqlElasticPoolRecommendedActionState -ResourceGroupName "WIRunnersProd" -ServerName "wi-runner-australia-east" -ElasticPoolName "WIRunnerPool" -AdvisorName "CreateIndex" -RecommendedActionName "IR_[test_schema]_[test_table_0.0361551]_6C7AE8CC9C87E7FD5893" -State Pending
 ElasticPoolName            : WIRunnerPool
@@ -69,12 +69,12 @@ TimeSeries                 : {}
 ValidSince                 : 4/21/2016 3:24:47 PM
 ```
 
-Perintah ini memperbarui status tindakan elastis pool yang direkomendasikan IR_\[test_schema\]_\[test_table_0.0361551\]_6C7AE8CC9C87E7FD5893 ke Tertunda.
+Perintah ini memperbarui status tindakan yang direkomendasikan kumpulan elastis bernama IR_\[test_schema\]_\[test_table_0.0361551\]_6C7AE8CC9C87E7FD5893 menjadi Tertunda.
 
 ## PARAMETERS
 
 ### -AdvisorName
-Menentukan nama penasihat tempat tindakan disarankan ini digunakan.
+Menentukan nama penasihat tempat tindakan yang direkomendasikan ini berada.
 
 ```yaml
 Type: System.String
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -103,8 +103,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ElastisPoolName
-Menentukan nama kolam renang elastis.
+### -ElasticPoolName
+Menentukan nama kumpulan elastis.
 
 ```yaml
 Type: System.String
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecommendedActionName
-Menentukan nama tindakan yang disarankan bagi cmdlet ini untuk memperbarui status tersebut.
+Menentukan nama tindakan yang direkomendasikan untuk memperbarui status cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya server yang berisi kelompok elastis ini.
+Menentukan nama grup sumber daya server yang berisi kumpulan elastis ini.
 
 ```yaml
 Type: System.String
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server tempat kolam elastis berada.
+Menentukan nama server tempat kumpulan elastis berada.
 
 ```yaml
 Type: System.String
@@ -171,7 +171,7 @@ Nilai yang dapat diterima untuk parameter ini adalah:
 - PendingRevert
 - RevertCancelled
 - Diabaikan
-- Teratasi
+- Diselesaikan
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.RecommendedAction.Cmdlet.RecommendedActionState
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -218,20 +218,20 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### Microsoft.Azure.Commands.sql.RecommendedAction.Cmdlet.RecommendedActionState
+### Microsoft.Azure.Commands.Sql.RecommendedAction.Cmdlet.RecommendedActionState
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Sql.RecommendedAction.Model.AzureSqlElasticPoolRecommendedActionModel
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, sql, elastispool, mssql, advisor, recommendedaction
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, elastispool, mssql, penasihat, rekomendasi
 
 ## RELATED LINKS
 
@@ -241,4 +241,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzSqlServerRecommendedActionState](./Set-AzSqlServerRecommendedActionState.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/StreamAnalytics/Commands.StreamAnalytics/help/Remove-AzureRmStreamAnalyticsFunction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/StreamAnalytics/Commands.StreamAnalytics/help/Remove-AzureRmStreamAnalyticsFunction.md
 ms.openlocfilehash: 4429142b19e64939b9fcc90d56c80f67c5296c15
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423617"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141923526"
 ---
 # Remove-AzureRmStreamAnalyticsFunction
 
@@ -28,7 +28,7 @@ Remove-AzureRmStreamAnalyticsFunction [-JobName] <String> [-Name] <String> [-Res
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmStreamAnalyticsFunction** menghapus fungsi secara asinkron dari pekerjaan Analitik Azure Stream.
+Cmdlet **Remove-AzureRmStreamAnalyticsFunction** menghapus fungsi secara asinkron dari pekerjaan Azure Stream Analytics.
 
 ## EXAMPLES
 
@@ -37,12 +37,12 @@ Cmdlet **Remove-AzureRmStreamAnalyticsFunction** menghapus fungsi secara asinkro
 PS C:\>Remove-AzureRmStreamAnalyticsFunction -ResourceGroupName "StreamAnalytics-Default-West-US" -JobName "StreamJob22" -Name "ScoreTweet"
 ```
 
-Perintah ini menghapus fungsi yang bernama ScoreTweet dari pekerjaan bernama StreamJob22.
+Perintah ini menghapus fungsi bernama ScoreTweet dari pekerjaan bernama StreamJob22.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobName
-Menentukan nama pekerjaan Analitik Stream tempat fungsi dimiliki.
+Menentukan nama pekerjaan Stream Analytics tempat fungsi berada.
 Cmdlet ini menghapus fungsi dari pekerjaan yang ditentukan parameter ini.
 
 ```yaml
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama fungsi Analitik Stream yang dihapus cmdlet ini.
+Menentukan nama fungsi Stream Analytics yang dihapus cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat fungsi Analitik Stream dimiliki.
+Menentukan nama grup sumber daya tempat fungsi Stream Analytics berada.
 Cmdlet ini menghapus fungsi dalam grup sumber daya yang ditentukan parameter ini.
 
 ```yaml
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -149,10 +149,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzureRmStreamAnalyticsFunction](./Get-AzureRmStreamAnalyticsFunction.md)
+[Get-AzureRmStreamAnalyticsFungsi](./Get-AzureRmStreamAnalyticsFunction.md)
 
-[New-AzureRmStreamAnalyticsFunction](./New-AzureRmStreamAnalyticsFunction.md)
+[New-AzureRmStreamAnalyticsFungsi](./New-AzureRmStreamAnalyticsFunction.md)
 
-[Test-AzureRmStreamAnalyticsFunction](./Test-AzureRmStreamAnalyticsFunction.md)
+[Uji-AzureRmStreamAnalyticsFungsi](./Test-AzureRmStreamAnalyticsFunction.md)
 
 

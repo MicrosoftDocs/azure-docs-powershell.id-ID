@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.stora
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Storage/Commands.Management.Storage/help/Get-AzureRmStorageUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Storage/Commands.Management.Storage/help/Get-AzureRmStorageUsage.md
-ms.openlocfilehash: 3ab8f15fc4b7bc8c4f344d4200215c99b834cf59306c6e7a670a33b90f08dca7
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: c63573da3c12eb54329d05f49615057d0595b77c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418497"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141923614"
 ---
 # Get-AzureRmStorageUsage
 
 ## SYNOPSIS
-Mendapatkan layanan Storage sumber daya langganan saat ini.
+Mendapatkan Storage penggunaan sumber daya langganan saat ini.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Get-AzureRmStorageUsage [-Location <String>] [-DefaultProfile <IAzureContextCont
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmStorageUsage** mendapatkan penggunaan sumber daya untuk Azure Storage langganan saat ini.
+Cmdlet **Get-AzureRmStorageUsage** mendapatkan penggunaan sumber daya untuk Azure Storage untuk langganan saat ini.
 
 ## EXAMPLES
 
@@ -36,7 +36,7 @@ Cmdlet **Get-AzureRmStorageUsage** mendapatkan penggunaan sumber daya untuk Azur
 PS C:\>Get-AzureRmStorageUsage
 ```
 
-Perintah ini memberikan Storage sumber daya langganan saat ini.
+Perintah ini mendapatkan Storage penggunaan sumber daya langganan saat ini.
  
 
 ### Contoh 2: Dapatkan penggunaan sumber daya penyimpanan dari lokasi tertentu
@@ -50,7 +50,7 @@ CurrentValue  : 18
 Limit         : 250
 ```
 
-Perintah ini memberikan Storage sumber daya dari lokasi tertentu di bawah langganan saat ini.
+Perintah ini mendapatkan Storage penggunaan sumber daya lokasi yang ditentukan di bawah langganan saat ini.
 
 ## PARAMETERS
 
@@ -70,8 +70,8 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Tunjukkan untuk mendapatkan Storage sumber daya di lokasi tertentu.
-Jika tidak ditentukan, akan mendapatkan Storage sumber daya di semua lokasi dalam langganan.
+Indikasikan untuk mendapatkan penggunaan sumber daya Storage pada lokasi yang ditentukan.
+Jika tidak ditentukan, akan mendapatkan Storage penggunaan sumber daya di semua lokasi di bawah langganan.
 
 ```yaml
 Type: System.String
@@ -86,11 +86,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

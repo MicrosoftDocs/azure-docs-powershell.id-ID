@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Remove-AzureRmSqlDatabaseAuditing.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Remove-AzureRmSqlDatabaseAuditing.md
 ms.openlocfilehash: a7cf769b1150ef7e209bd02234674bb26927f9a0
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424159"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141923713"
 ---
 # Remove-AzureRmSqlDatabaseAuditing
 
@@ -29,23 +29,23 @@ Remove-AzureRmSqlDatabaseAuditing [-PassThru] [-ServerName] <String> [-DatabaseN
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmSqlDatabaseAuditing** menghapus pengauditan database SQL Azure.
-Untuk menggunakan cmdlet ini, gunakan parameter *ResourceGroupName,* *ServerName,* *dan DatabaseName* untuk mengidentifikasi database.
-Setelah Anda menjalankan cmdlet ini, pengauditan database tidak dijalankan.
-Jika perintah berhasil dan Anda telah menggunakan parameter *PassThru,* cmdlet akan mengembalikan objek yang menguraikan kebijakan audit saat ini, selain pengidentifikasi database.
-Pengidentifikasi database menyertakan, tetapi tidak terbatas pada, **ResourceGroupName**, **ServerName** dan **DatabaseName**.
-Jika Anda menghapus pengauditan database Azure SQL, deteksi ancaman juga dihapus.
+Cmdlet **Remove-AzureRmSqlDatabaseAuditing** menghapus pengauditan database Azure SQL.
+Untuk menggunakan cmdlet ini, gunakan parameter *ResourceGroupName*, *ServerName*, dan *DatabaseName* untuk mengidentifikasi database.
+Setelah Anda menjalankan cmdlet ini, pengauditan database tidak dilakukan.
+Jika perintah berhasil dan Anda telah menggunakan parameter *PassThru* , cmdlet mengembalikan objek yang menjelaskan kebijakan audit saat ini, selain pengidentifikasi database.
+Pengidentifikasi database menyertakan, tetapi tidak terbatas pada, **ResourceGroupName**, **ServerName** , dan **DatabaseName**.
+Jika Anda menghapus audit database Azure SQL, deteksi ancaman juga dihapus.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus pengauditan database Azure SQL baru
+### Contoh 1: Menghapus audit database Azure SQL
 ```
 PS C:\>Remove-AzureRmSqlDatabaseAuditing -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01"
 ```
 
 Perintah ini menghapus pengauditan database bernama Database01.
-Database tersebut berada di Server01, yang ditetapkan ke grup sumber daya yang bernama ResourceGroup01.
+Database tersebut terletak di Server01, yang ditetapkan ke grup sumber daya bernama ResourceGroup01.
 
 ## PARAMETERS
 
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan. Secara default, cmdlet ini tidak menghasilkan output apa pun.
+Mengembalikan objek yang mewakili item tempat Anda bekerja. Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -173,6 +173,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzureRmSqlDatabaseAuditingPolicy](./Set-AzureRmSqlDatabaseAuditingPolicy.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzPolicyExemption.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzPolicyExemption.md
 ms.openlocfilehash: a565ac42bafd6018565d067ed57341d4f9bf79d9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140247135"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142078231"
 ---
 # Get-AzPolicyExemption
 
@@ -18,7 +18,7 @@ ms.locfileid: "140247135"
 Mendapatkan pengecualian kebijakan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azpolicyexemption) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azpolicyexemption) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzPolicyExemption [-Name <String>] [-Scope <String>] [-PolicyAssignmentIdFil
  [-ApiVersion <String>] [-Pre] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### IncludeDescendentParameterSet
+### SertakanDescendentParameterSet
 ```
 Get-AzPolicyExemption [-Scope <String>] [-IncludeDescendent] [-ApiVersion <String>] [-Pre]
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -42,7 +42,7 @@ Get-AzPolicyExemption -Id <String> [-PolicyAssignmentIdFilter <String>] [-ApiVer
 
 ## DESCRIPTION
 Cmdlet **Get-AzPolicyExemption** mendapatkan semua pengecualian kebijakan atau pengecualian tertentu.
-Identifikasi pengecualian kebijakan untuk mendapatkan menurut nama dan lingkup atau menurut ID.
+Identifikasi pengecualian kebijakan untuk mendapatkan berdasarkan nama dan lingkup atau menurut ID.
 
 ## EXAMPLES
 
@@ -53,16 +53,16 @@ PS C:\> Get-AzPolicyExemption
 
 Perintah ini mendapatkan semua pengecualian kebijakan.
 
-### Contoh 2: Mendapatkan pengecualian kebijakan tertentu
+### Contoh 2: Dapatkan pengecualian kebijakan tertentu
 ```
 PS C:\> $ResourceGroup = Get-AzResourceGroup -Name 'ResourceGroup11'
 PS C:\> Get-AzPolicyExemption -Name 'PolicyExemption07' -Scope $ResourceGroup.ResourceId
 ```
 
-Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 dengan menggunakan cmdlet Get-AzResourceGroup dan menyimpannya di $ResourceGroup sumber daya.
-Perintah kedua mendapatkan pengecualian kebijakan bernama PolicyExemption07 untuk lingkup properti **ResourceId** yang akan $ResourceGroup identifikasi.
+Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 dengan menggunakan cmdlet Get-AzResourceGroup dan menyimpannya dalam variabel $ResourceGroup.
+Perintah kedua mendapatkan pengecualian kebijakan bernama PolicyExemption07 untuk lingkup yang diidentifikasi properti **ResourceId** $ResourceGroup.
 
-### Contoh 3: Mendapatkan semua pengecualian kebijakan yang terkait dengan penetapan kebijakan
+### Contoh 3: Dapatkan semua pengecualian kebijakan yang terkait dengan penetapan kebijakan
 ```
 PS C:\> $Assignment = Get-AzPolicyAssignment -Name 'PolicyAssignment07'
 PS C:\> Get-AzPolicyExemption -PolicyAssignmentIdFilter $Assignment.ResourceId
@@ -74,7 +74,7 @@ Perintah kedua mendapatkan semua pengecualian kebijakan yang ditetapkan dengan p
 ## PARAMETERS
 
 ### -ApiVersion
-Saat diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
+Ketika diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
 Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai versi terbaru yang tersedia.
 
 ```yaml
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-ID pengecualian kebijakan yang sepenuhnya memenuhi syarat untuk mendapatkan, termasuk lingkup, misalnya /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.Authorization/policyExemptions/{policyExemptionName}.
+ID pembebasan kebijakan yang sepenuhnya memenuhi syarat untuk didapatkan, termasuk lingkup, misalnya /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.Authorization/policyExemptions/{policyExemptionName}.
 
 ```yaml
 Type: System.String
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeDescendent
-Menyebabkan daftar pengecualian kebijakan yang dikembalikan menyertakan semua pengecualian terkait dengan lingkup tertentu, termasuk yang dari lingkup dan yang dari lingkup turun.
+Menyebabkan daftar pengecualian kebijakan yang dikembalikan untuk menyertakan semua pengecualian yang terkait dengan lingkup tertentu, termasuk yang berasal dari lingkup leluhur dan yang berasal dari lingkup keturunan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama pengecualian kebijakan untuk mendapatkannya.
+Nama pembebasan kebijakan yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyAssignmentIdFilter
-Limits the list of returned policy exemptions to those assigning the policy assignment identified by this fully qualified Id.
+Membatasi daftar pengecualian kebijakan yang dikembalikan untuk penetapan kebijakan yang ditetapkan oleh Id yang sepenuhnya memenuhi syarat ini.
 
 ```yaml
 Type: System.String
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Saat diatur, cmdlet harus menggunakan versi API prari tamu ketika menentukan versi mana yang akan digunakan secara otomatis.
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Cakupan pengecualian kebijakan untuk mendapatkan, misalnya /providers/managementGroups/{managementGroupName}, default untuk langganan saat ini.
+Lingkup pengecualian kebijakan untuk mendapatkan, misalnya /providers/managementGroups/{managementGroupName}, default untuk langganan saat ini.
 
 ```yaml
 Type: System.String
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

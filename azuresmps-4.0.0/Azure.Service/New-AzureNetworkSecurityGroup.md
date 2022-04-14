@@ -4,11 +4,11 @@ ms.assetid: D61E0D1A-7A79-436C-BB1B-740E31BC982D
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 242c0cc3cdf43df8161811a338e6a4de9e825ed4
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422097"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141920703"
 ---
 # New-AzureNetworkSecurityGroup
 
@@ -32,7 +32,7 @@ Cmdlet **New-AzureNetworkSecurityGroup** membuat grup keamanan jaringan Azure di
 ## PARAMETERS
 
 ### -Label
-Menentukan deskripsi untuk grup keamanan jaringan yang baru.
+Menentukan deskripsi untuk grup keamanan jaringan baru.
 
 ```yaml
 Type: String
@@ -47,8 +47,8 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi Azure di mana cmdlet ini membuat grup keamanan jaringan.
-Untuk mendapatkan lokasi yang valid, gunakan Get-AzureLocation cmdlet.
+Menentukan lokasi Azure tempat cmdlet ini membuat grup keamanan jaringan.
+Untuk mendapatkan lokasi yang valid, gunakan cmdlet Get-AzureLocation.
 
 ```yaml
 Type: String
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama untuk grup keamanan jaringan yang baru.
+Menentukan nama untuk grup keamanan jaringan baru.
 
 ```yaml
 Type: String
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini. Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca. Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

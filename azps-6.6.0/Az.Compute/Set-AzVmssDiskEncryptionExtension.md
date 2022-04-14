@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssDiskEncryptionExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssDiskEncryptionExtension.md
 ms.openlocfilehash: 402f25263c6cb37111d77b8a2a48495f406c2bad
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140109503"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142127969"
 ---
 # Set-AzVmssDiskEncryptionExtension
 
@@ -18,7 +18,7 @@ ms.locfileid: "140109503"
 Mengaktifkan enkripsi disk pada kumpulan skala VM.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmssdiskencryptionextension) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmssdiskencryptionextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,9 +32,9 @@ Set-AzVmssDiskEncryptionExtension [-ResourceGroupName] <String> [-VMScaleSetName
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVmssDiskEncryptionExtension** mengaktifkan enkripsi pada kumpulan skala VM. Cmdlet ini mengaktifkan enkripsi dengan menginstal ekstensi enkripsi disk pada kumpulan skala VM.
+Cmdlet **Set-AzVmssDiskEncryptionExtension** memungkinkan enkripsi pada kumpulan skala VM. Cmdlet ini memungkinkan enkripsi dengan menginstal ekstensi enkripsi disk pada kumpulan skala VM.
 
-Untuk mesin virtual Linux, *parameter VolumeType* harus ada dan harus diatur ke "Data"
+Untuk mesin virtual Linux, parameter *VolumeType* harus ada dan harus diatur ke "Data"
 
 ## EXAMPLES
 
@@ -50,7 +50,7 @@ $KeyVaultResourceId = $KeyVault.ResourceId
 PS C:\> Set-AzVmssDiskEncryptionExtension -ResourceGroupName $RGName -VMScaleSetName $VmssName -DiskEncryptionKeyVaultUrl $DiskEncryptionKeyVaultUrl -DiskEncryptionKeyVaultId $KeyVaultResourceId
 ```
 
-Perintah ini mengaktifkan enkripsi di semua disk Windows VM dalam kumpulan skala VM.
+Perintah ini memungkinkan enkripsi pada semua disk dari semua Windows VM dalam kumpulan skala VM.
 
 ### Contoh 2
 ```
@@ -66,12 +66,12 @@ PS C:\> Set-AzVmssDiskEncryptionExtension -ResourceGroupName $RGName -VMScaleSet
  -VolumeType $volumeType
 ```
 
-Perintah ini mengaktifkan enkripsi pada disk data semua VM Linux dalam kumpulan skala VM.
+Perintah ini memungkinkan enkripsi pada disk data semua VM Linux dalam kumpulan skala VM.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionKeyVaultId
-RESOURCEID dari KeyVault tempat kunci enkripsi yang dihasilkan akan diletakkan
+RESOURCEID dari KeyVault tempat kunci enkripsi yang dihasilkan akan diletakkan ke
 
 ```yaml
 Type: System.String
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionKeyVaultUrl
-URL KeyVault tempat kunci enkripsi yang dihasilkan akan diletakkan
+URL KeyVault tempat kunci enkripsi yang dihasilkan akan diletakkan ke
 
 ```yaml
 Type: System.String
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 
 ### -ExtensionName
 Nama ekstensi.
-Jika parameter ini tidak ditentukan, nilai default yang digunakan adalah AzureDiskEncryption untuk WINDOWS VM dan AzureDiskEncryptionForLinux untuk Linux VM
+Jika parameter ini tidak ditentukan, nilai default yang digunakan adalah AzureDiskEncryption untuk windows VM dan AzureDiskEncryptionForLinux untuk VM Linux
 
 ```yaml
 Type: System.String
@@ -146,8 +146,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Untuk memaksa mengaktifkan enkripsi pada kumpulan skala mesin virtual.
+### -Paksa
+Untuk mengaktifkan enkripsi pada kumpulan skala mesin virtual.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceUpdate
-Buat tag untuk pembaruan paksa.  Hal ini harus dilakukan untuk melakukan operasi enkripsi berulang pada VM yang sama.
+Buat tag untuk pembaruan paksa.  Ini harus diberikan untuk melakukan operasi enkripsi berulang pada VM yang sama.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyEncryptionKeyUrl
-URL KeyVault Versi dari KeyEncryptionKey digunakan untuk mengenkripsi kunci enkripsi disk
+URL KeyVault versi KeyEncryptionKey yang digunakan untuk mengenkripsi kunci enkripsi disk
 
 ```yaml
 Type: System.String
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyEncryptionKeyVaultId
-ResourceID dari KeyVault yang berisi KeyEncryptionKey yang digunakan untuk mengenkripsi kunci enkripsi disk
+RESOURCEID dari KeyVault yang berisi KeyEncryptionKey yang digunakan untuk mengenkripsi kunci enkripsi disk
 
 ```yaml
 Type: System.String
@@ -222,9 +222,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Passphrase
-Kata sandi yang ditentukan dalam parameter.
-Parameter ini hanya berfungsi untuk Vm Linux.
+### -Frasa sandi
+Frasa sandi yang ditentukan dalam parameter.
+Parameter ini hanya berfungsi untuk Linux VM.
 
 ```yaml
 Type: System.String
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat VM Scale Set ditetapkan
+Nama grup sumber daya tempat Kumpulan Skala VM berada
 
 ```yaml
 Type: System.String
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -TypeHandlerVersion
-Versi penanganan tipe.
+Versi pengatur tipe.
 
 ```yaml
 Type: System.String
@@ -286,9 +286,9 @@ Accept wildcard characters: False
 ### -VolumeType
 Menentukan tipe volume mesin virtual untuk melakukan operasi enkripsi: OS, Data, atau Semua. 
 
-Linux: **Parameter VolumeType** harus ada dan harus diatur ke Data. 
+Linux: Parameter **VolumeType** harus ada dan harus diatur ke Data. 
 
-Windows: **Parameter VolumeType**, jika ada, harus disetel ke Semua atau OS. Jika **parameter VolumeType** dihilangkan, parameter default menjadi "All".
+Windows: Parameter **VolumeType**, jika ada, harus diatur ke Semua atau OS. Jika parameter **VolumeType** dihilangkan secara default menjadi "Semua".
 
 
 ```yaml
@@ -305,7 +305,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -321,7 +321,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -336,7 +336,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.sql/A
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Add-AzureRmSqlManagedInstanceTransparentDataEncryptionCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Add-AzureRmSqlManagedInstanceTransparentDataEncryptionCertificate.md
-ms.openlocfilehash: 78c9605187bf3688dbd50986c5dbc4a564f2ffd2340fe56b4934cc1ef70c750d
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 9fe8e36a752b4643ba44a59e8c44954bf25284c7
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140863442"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141924144"
 ---
 # Add-AzureRmSqlManagedInstanceTransparentDataEncryptionCertificate
 
@@ -28,7 +28,7 @@ Add-AzureRmSqlManagedInstanceTransparentDataEncryptionCertificate [-PassThru] [-
 ```
 
 ## DESCRIPTION
-Sumber Add-AzureRmSqlManagedInstanceTransparentDataEncryptionCertificate menambahkan Sertifikat Enkripsi Data Transparan untuk instans terkelola yang diberikan
+Add-AzureRmSqlManagedInstanceTransparentDataEncryptionCertificate menambahkan Sertifikat Enkripsi Data Transparan untuk instans terkelola tertentu
 
 ## EXAMPLES
 
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedInstanceName
-Nama instans terkelola
+Nama instans yang dikelola
 
 ```yaml
 Type: System.String
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Pada Eksekusi yang berhasil, mengembalikan objek sertifikat yang ditambahkan.
+Pada eksekusi Berhasil, mengembalikan objek sertifikat yang ditambahkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -Password
-Kata Sandi untuk Sertifikat Enkripsi Data Transparan
+Kata sandi untuk Sertifikat Enkripsi Data Transparan
 
 ```yaml
 Type: System.Security.SecureString
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateBlob
-Blob Privat untuk Sertifikat Enkripsi Data Transparan
+Blob privat untuk Sertifikat Enkripsi Data Transparan
 
 ```yaml
 Type: System.Security.SecureString
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -165,11 +165,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

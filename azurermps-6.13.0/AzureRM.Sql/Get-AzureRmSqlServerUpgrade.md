@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlServerUpgrade.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlServerUpgrade.md
 ms.openlocfilehash: 7f48385c7002f353ca34f399d40310a9e0469977
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420302"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141923927"
 ---
 # Get-AzureRmSqlServerUpgrade
 
@@ -32,7 +32,7 @@ Cmdlet **Get-AzureRmSqlServerUpgrade** mendapatkan status pemutakhiran server Az
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan status peningkatan
+### Contoh 1: Dapatkan status pemutakhiran
 ```
 PS C:\>Get-AzureRmSqlServerUpgrade -ResourceGroupName "ResourceGroup01" -ServerName "Server01" | Format-List
 ResourceGroupName               : resourcegroup01
@@ -40,12 +40,12 @@ ServerName                      : server01
 Status                          : Queued
 ```
 
-Perintah ini mendapatkan status pemutakhiran dari server yang bernama Server01 dalam grup sumber daya bernama ResourceGroup01.
+Perintah ini mendapatkan status pemutakhiran dari server bernama Server01 dalam grup sumber daya bernama ResourceGroup01.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server di mana cmdlet ini mendapatkan status pemutakhiran.
+Menentukan nama server tempat cmdlet ini mendapatkan status pemutakhiran.
 
 ```yaml
 Type: System.String
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -139,6 +139,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Stop-AzureRmSqlServerUpgrade](./Stop-AzureRmSqlServerUpgrade.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 
 

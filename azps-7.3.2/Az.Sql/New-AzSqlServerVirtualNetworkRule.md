@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServerVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServerVirtualNetworkRule.md
-ms.openlocfilehash: f64a51dab53442e498249609a7b2a70dc36f28bd
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f30c44c57aec821b8dadc974f9a7fff960cb9821
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140400563"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142207837"
 ---
 # New-AzSqlServerVirtualNetworkRule
 
 ## SYNOPSIS
-Membuat Aturan Jaringan Virtual Azure SQL Server. 
+Membuat Aturan Virtual Network Server Azure SQL. 
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqlservervirtualnetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzSqlServerVirtualNetworkRule -VirtualNetworkRuleName <String> -VirtualNetwo
 ```
 
 ## DESCRIPTION
-Membuat Aturan Jaringan Virtual Azure SQL Server. Aturan Jaringan Virtual digunakan untuk menyambungkan Azure SQL Server ke Jaringan Virtual tertentu untuk membatasi akses di Azure SQL Server hanya tersedia dalam Jaringan Virtual. 
+Membuat Aturan Virtual Network Server Azure SQL. Aturan Virtual Network digunakan untuk menyambungkan Server Azure SQL ke Virtual Network tertentu untuk membatasi akses di Server Azure SQL agar hanya tersedia dalam Virtual Network. 
 
 ## EXAMPLES
 
@@ -35,12 +38,12 @@ Membuat Aturan Jaringan Virtual Azure SQL Server. Aturan Jaringan Virtual diguna
 PS C:\> $virtualNetworkRule = New-AzSqlServerVirtualNetworkRule -ResourceGroupName rg -ServerName serverName -VirtualNetworkRuleName virtualNetworkRuleName -VirtualNetworkSubnetId virtualNetworkSubnetId
 ```
 
-Membuat aturan jaringan virtual Azure SQL Server
+Membuat aturan jaringan virtual Server Azure SQL
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -IgnoreMissingVnetServiceEndpoint
-Buat aturan firewall sebelum jaringan virtual memiliki titik akhir layanan vnet yang diaktifkan.
+Buat aturan firewall sebelum jaringan maya mengaktifkan titik akhir layanan vnet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkRuleName
-Nama Aturan Jaringan Virtual Azure Sql Server.
+Nama Aturan Virtual Network Azure Sql Server.
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkSubnetId
-Id Subnet Jaringan Virtual yang menentukan detail Microsoft.Network
+Id Subnet Virtual Network yang menentukan detail Microsoft.Network
 
 ```yaml
 Type: System.String
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

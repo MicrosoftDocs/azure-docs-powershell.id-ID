@@ -3,17 +3,17 @@ external help file: Azs.Fabric.Admin-help.xml
 Module Name: Azs.Fabric.Admin
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 05be4c352fd153814f6ab3b88d73979b26123546afe0c762bc121c227fa11700
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 3760ecd9c0bc9fd62e49ee8163dfe24ae190985e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416988"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142242001"
 ---
 # Get-AzsStorageSystem
 
 ## SYNOPSIS
-Mengembalikan daftar semua subsistem penyimpanan untuk suatu lokasi.
+Mengembalikan daftar semua subsstem penyimpanan untuk suatu lokasi.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-AzsStorageSystem [-Location <String>] [-ResourceGroupName <String>] [-Filter
  [-Top <Int32>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsStorageSystem [-Name] <String> [-Location <String>] [-ResourceGroupName <String>] [<CommonParameters>]
 ```
@@ -34,7 +34,7 @@ Get-AzsStorageSystem -ResourceId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Mengembalikan daftar semua subsistem penyimpanan untuk suatu lokasi.
+Mengembalikan daftar semua subsstem penyimpanan untuk suatu lokasi.
 
 ## EXAMPLES
 
@@ -43,14 +43,14 @@ Mengembalikan daftar semua subsistem penyimpanan untuk suatu lokasi.
 Get-AzsStorageSystem
 ```
 
-Mendapatkan semua subsistem penyimpanan dari suatu lokasi.
+Dapatkan semua subsstem penyimpanan dari lokasi.
 
 ### CONTOH 2
 ```
 Get-AzsStorageSystem -Name S-Cluster.azurestack.local
 ```
 
-Dapatkan subsistem penyimpanan dengan lokasi dan nama.
+Dapatkan subsstem penyimpanan yang diberi lokasi dan nama.
 
 ## PARAMETERS
 
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -3,12 +3,12 @@ external help file: Microsoft.WindowsAzure.Commands.dll-Help.xml
 ms.assetid: 1FB590D3-E5D2-45F0-A611-01A1B701938A
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: a8f43e993beb10ec24c94d1a7add544635cf46eca96774a43751f6421ff63abf
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: a4386af91bd0cbbc52d92fc880a8107cf02d21df
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418983"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141922371"
 ---
 # Enable-AzureWebsiteDebug
 
@@ -29,12 +29,12 @@ Mengaktifkan fitur debug situs web di Visual Studio.
 
 ## EXAMPLES
 
-### Mengaktifkan penelusuran kesalahan Visual Studio 2013
+### Aktifkan proses debug Visual Studio 2013
 ```
 PS C:\> Enable-AzureWebsiteDebug -Name MyWebsite -Version VS2013
 ```
 
-Memungkinkan penelusuran kesalahan di VS 2013.
+Mengaktifkan proses debug pada VS 2013.
 
 ## PARAMETERS
 
@@ -54,7 +54,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -70,8 +70,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -126,14 +126,14 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Disable-AzureWebsiteDe azure](./Disable-AzureWebsiteDebug.md)
+[Disable-AzureWebsiteDebug](./Disable-AzureWebsiteDebug.md)
 
-[Get-AzureWebsite](./Get-AzureWebsite.md)
+[Dapatkan-AzureWebsite](./Get-AzureWebsite.md)
 
-[New-AzureWebsite](./New-AzureWebsite.md)
+[Baru-AzureSitus Web](./New-AzureWebsite.md)
 
-[Remove-AzureWebsite](./Remove-AzureWebsite.md)
+[Hapus-AzureSitus Web](./Remove-AzureWebsite.md)
 
-[Start-AzureWebsite](./Start-AzureWebsite.md)
+[Mulai AzureSitus Web](./Start-AzureWebsite.md)
 
 

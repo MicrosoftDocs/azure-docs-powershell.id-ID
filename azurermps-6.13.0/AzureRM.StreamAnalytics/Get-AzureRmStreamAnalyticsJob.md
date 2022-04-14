@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/StreamAnalytics/Commands.StreamAnalytics/help/Get-AzureRmStreamAnalyticsJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/StreamAnalytics/Commands.StreamAnalytics/help/Get-AzureRmStreamAnalyticsJob.md
 ms.openlocfilehash: eef326688a81481d235fb85281739f0361a6233c
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422489"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141923537"
 ---
 # Get-AzureRmStreamAnalyticsJob
 
 ## SYNOPSIS
-Mendapatkan informasi pekerjaan Analitik Stream.
+Dapatkan informasi pekerjaan Stream Analytics.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -34,35 +34,35 @@ Get-AzureRmStreamAnalyticsJob [-NoExpand] [-DefaultProfile <IAzureContextContain
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmStreamAnalyticsJob** mencantumkan semua pekerjaan Analitik Stream yang ditentukan dalam langganan Azure atau grup sumber daya tertentu atau mendapatkan informasi pekerjaan tertentu dalam grup sumber daya.
+Cmdlet **Get-AzureRmStreamAnalyticsJob** mencantumkan semua pekerjaan Stream Analytics yang ditentukan dalam langganan Azure atau grup sumber daya tertentu atau mendapatkan informasi pekerjaan tentang pekerjaan tertentu dalam grup sumber daya.
 
 ## EXAMPLES
 
-### CONTOH 1: Mendapatkan informasi tentang semua pekerjaan dalam langganan
+### CONTOH 1: Dapatkan informasi tentang semua pekerjaan dalam langganan
 ```
 PS C:\>Get-AzureRmStreamAnalyticsJob
 ```
 
 Perintah ini mengembalikan informasi tentang semua pekerjaan Stream Analytics dalam langganan Azure.
 
-### CONTOH 2: Mendapatkan informasi tentang semua pekerjaan dalam grup sumber daya
+### CONTOH 2: Dapatkan informasi tentang semua pekerjaan dalam grup sumber daya
 ```
 PS C:\>Get-AzureRmStreamAnalyticsJob -ResourceGroupName "StreamAnalytics-Default-West-US"
 ```
 
-Perintah ini mengembalikan informasi tentang semua pekerjaan Analitik Stream dalam grup sumber daya StreamAnalytics-Default-West-US.
+Perintah ini mengembalikan informasi tentang semua pekerjaan Stream Analytics dalam grup sumber daya StreamAnalytics-Default-West-US.
 
 ### CONTOH 3: Mendapatkan informasi tentang pekerjaan tertentu dalam grup sumber daya
 ```
 PS C:\>Get-AzureRmStreamAnalyticsJob -ResourceGroupName "StreamAnalytics-Default-West-US" -Name "StreamingJob"
 ```
 
-Perintah ini mengembalikan informasi tentang pekerjaan Analitik Stream StreamingJob dalam grup sumber daya StreamAnalytics-Default-West-US.
+Perintah ini mengembalikan informasi tentang pekerjaan Stream Analytics StreamingJob dalam grup sumber daya StreamAnalytics-Default-West-US.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama pekerjaan Azure Stream Analytics yang akan diambil.
+Menentukan nama pekerjaan Azure Stream Analytics untuk diambil.
 
 ```yaml
 Type: System.String
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoExpand
-Mengindikasikan cmdlet akan mengambil pekerjaan Analitik Azure Stream, tetapi tidak akan mengembalikan informasi tentang input, output, dan transformasinya.
+Menunjukkan cmdlet akan mengambil pekerjaan Azure Stream Analytics, tetapi tidak mengembalikan informasi tentang input, output, dan transformasinya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat pekerjaan Analitik Azure Stream dimiliki.
+Menentukan nama grup sumber daya tempat pekerjaan Azure Stream Analytics berada.
 
 ```yaml
 Type: System.String
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -140,7 +140,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmStreamAnalyticsJob](./New-AzureRmStreamAnalyticsJob.md)
 
-[Remove-AzureRmStreamAnalyticsJob](./Remove-AzureRmStreamAnalyticsJob.md)
+[Hapus-AzureRmStreamAnalyticsJob](./Remove-AzureRmStreamAnalyticsJob.md)
 
 [Start-AzureRmStreamAnalyticsJob](./Start-AzureRmStreamAnalyticsJob.md)
 

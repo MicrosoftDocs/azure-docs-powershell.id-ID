@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Set-AzBatchApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Set-AzBatchApplication.md
 ms.openlocfilehash: 6a58d466021799b74a42e49f5af1ca09315955a1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140080073"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142129985"
 ---
 # Set-AzBatchApplication
 
 ## SYNOPSIS
-Pembaruan pengaturan untuk aplikasi tertentu.
+Pengaturan pembaruan untuk aplikasi yang ditentukan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/set-azbatchapplication) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.batch/set-azbatchapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,17 +34,17 @@ Cmdlet **Set-AzBatchApplication** mengubah pengaturan untuk aplikasi Azure Batch
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui aplikasi dalam akun Kumpulan
+### Contoh 1: Memperbarui aplikasi dalam akun Batch
 ```powershell
 PS C:\>Set-AzBatchApplication -AccountName "ContosoBatch" -ResourceGroupName "ContosoBatchGroup" -ApplicationName "Litware" -AllowUpdates $False
 ```
 
-Perintah ini mengubah apakah aplikasi Litware di akun ContosoBatch memperbolehkan pembaruan.
-Perintah tidak mengubah nama tampilan atau versi default aplikasi.
+Perintah ini mengubah apakah aplikasi Litware di akun ContosoBatch memungkinkan pembaruan.
+Perintah tidak mengubah versi default atau nama tampilan aplikasi.
 
 ### Contoh 2
 
-Pembaruan pengaturan untuk aplikasi tertentu. (otomatisgenerated)
+Pengaturan pembaruan untuk aplikasi yang ditentukan. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -53,8 +53,8 @@ Set-AzBatchApplication -AccountName 'ContosoBatch' -ApplicationName 'Litware' -D
 
 ## PARAMETERS
 
-### -Nama Akun
-Menentukan nama akun Batch yang digunakan cmdlet untuk memodifikasi aplikasi.
+### -AccountName
+Menentukan nama akun Batch tempat cmdlet ini mengubah aplikasi.
 
 ```yaml
 Type: System.String
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowUpdates
-Menentukan apakah paket dalam aplikasi bisa ditimpa menggunakan string versi yang sama.
+Menentukan apakah paket dalam aplikasi dapat ditimpa menggunakan string versi yang sama.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultVersion
-Menentukan paket mana yang digunakan jika klien meminta aplikasi tapi tidak menentukan versi.
+Menentukan paket mana yang akan digunakan jika klien meminta aplikasi tetapi tidak menentukan versi.
 
 ```yaml
 Type: System.String
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi akun Kumpulan.
+Menentukan nama grup sumber daya yang berisi akun Batch.
 
 ```yaml
 Type: System.String
@@ -159,13 +159,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 
@@ -175,15 +175,15 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzBatchApplication](./Get-AzBatchApplication.md)
+[Get-AzBatchAplikasi](./Get-AzBatchApplication.md)
 
 [Get-AzBatchApplicationPackage](./Get-AzBatchApplicationPackage.md)
 
-[New-AzBatchApplication](./New-AzBatchApplication.md)
+[New-AzBatchAplikasi](./New-AzBatchApplication.md)
 
 [New-AzBatchApplicationPackage](./New-AzBatchApplicationPackage.md)
 
-[Remove-AzBatchApplication](./Remove-AzBatchApplication.md)
+[Remove-AzBatchAplikasi](./Remove-AzBatchApplication.md)
 
 [Remove-AzBatchApplicationPackage](./Remove-AzBatchApplicationPackage.md)
 

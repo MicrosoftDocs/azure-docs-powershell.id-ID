@@ -3,12 +3,12 @@ external help file: Azs.Subscriptions.Admin-help.xml
 Module Name: Azs.Subscriptions.Admin
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 8aa15fb4dfb8d5dc305786a85a083e2bd87bcb09f52fa5d0c5774297cc829b2f
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 20b70e2eeb1aa2d98f595dfe7bbe3075174c1f64
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418733"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142241226"
 ---
 # New-DirectoryTenantObject
 
@@ -33,7 +33,7 @@ Penyewa direktori.
 PS C:\> {{ Add example code here }}
 ```
 
-{{ Tambahkan contoh deskripsi di sini }}
+{{ Tambahkan deskripsi contoh di sini }}
 
 ## PARAMETERS
 
@@ -82,7 +82,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tag
+### -Tags
 Daftar pasangan nilai kunci.
 
 ```yaml
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

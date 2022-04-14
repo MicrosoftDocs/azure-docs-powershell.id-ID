@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/New-AzNotificationHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/New-AzNotificationHub.md
 ms.openlocfilehash: f38548adc2594ca3a5a373150786b546a0bf0152
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140248741"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142123721"
 ---
 # New-AzNotificationHub
 
@@ -19,7 +19,7 @@ ms.locfileid: "140248741"
 Membuat hub pemberitahuan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.notificationhubs/new-aznotificationhub) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.notificationhubs/new-aznotificationhub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,28 +39,28 @@ New-AzNotificationHub [-ResourceGroup] <String> [-Namespace] <String>
 ## DESCRIPTION
 Cmdlet **New-AzNotificationHub** membuat hub pemberitahuan.
 Hub pemberitahuan digunakan untuk mengirim pemberitahuan push ke beberapa klien terlepas dari platform yang digunakan oleh klien tersebut.
-Hub pemberitahuan kurang lebih sama dengan aplikasi individu: setiap aplikasi biasanya akan memiliki hub pemberitahuannya sendiri.
+Hub pemberitahuan kira-kira setara dengan aplikasi individual: setiap aplikasi Anda biasanya akan memiliki hub pemberitahuannya sendiri.
 Cmdlet **New-AzNotificationHub** menyediakan dua cara untuk membuat hub pemberitahuan baru.
-Anda dapat membuat contoh objek **NotificationHubAttributes** , lalu mengonfigurasi objek tersebut.
+Anda dapat membuat contoh objek **NotificationHubAttributes** lalu mengonfigurasi objek tersebut.
 Anda kemudian dapat menyalin nilai properti tersebut ke hub baru melalui parameter *NotificationHubObj* .
-Alternatifnya, Anda dapat membuat file JSON (JavaScript Object Notation) yang berisi nilai konfigurasi yang relevan, lalu menerapkan nilai-nilai tersebut menggunakan parameter *InputFile* .
-Ketika digunakan bersama dengan cmdlet **New-AzNotificationHub** , sampel JSON sebelumnya akan membuat hub pemberitahuan bernama ContosoNotificationHub yang terletak di pusat data Barat AS.
+Alternatifnya, Anda dapat membuat file JSON (JavaScript Object Notation) yang berisi nilai konfigurasi yang relevan lalu menerapkan nilai tersebut menggunakan parameter *InputFile* .
+Ketika digunakan bersama dengan cmdlet **New-AzNotificationHub** , sampel JSON sebelumnya membuat hub pemberitahuan bernama ContosoNotificationHub yang terletak di pusat data AS Barat.
 
 ## EXAMPLES
 
-### Contoh 1: Buat hub pemberitahuan
+### Contoh 1: Membuat hub pemberitahuan
 ```
 PS C:\>New-AzNotificationHub -Namespace "ContosoNamespace" -ResourceGroup "ContosoNotificationsGroup" -InputFile "C:\Configurations\InternalHub.json"
 ```
 
-Perintah ini akan membuat hub pemberitahuan dalam ruang nama ContosoNamespace.
+Perintah ini membuat hub pemberitahuan di ruang nama ContosoNamespace.
 Hub baru akan ditetapkan ke ContosoNotificationsGroup.
 Anda tidak perlu menentukan nama atau informasi konfigurasi lain untuk hub; informasi tersebut akan diambil dari file input C:\Configurations\InternalHub.json.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 Menentukan ruang nama tempat hub pemberitahuan akan ditetapkan.
 Ruang nama menyediakan cara untuk mengelompokkan dan mengkategorikan hub pemberitahuan.
 Hub pemberitahuan harus ditetapkan ke ruang nama yang sudah ada.
-Cmdlet **New-AzNotificationHub** tidak bisa membuat ruang nama baru.
+Cmdlet **New-AzNotificationHub** tidak dapat membuat ruang nama baru.
 
 ```yaml
 Type: System.String
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroup
 Menentukan grup sumber daya tempat hub pemberitahuan akan ditetapkan.
-Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu manajemen inventaris dan administrasi Azure.
+Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang hanya membantu manajemen inventaris dan administrasi Azure.
 Anda harus menggunakan grup sumber daya yang sudah ada.
 Cmdlet **New-AzNotificationHub** tidak dapat membuat grup sumber daya baru.
 
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

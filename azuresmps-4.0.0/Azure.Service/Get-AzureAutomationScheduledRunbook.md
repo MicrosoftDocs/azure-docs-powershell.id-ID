@@ -3,24 +3,24 @@ external help file: Microsoft.Azure.Commands.Automation.dll-Help.xml
 ms.assetid: 2F66B0F2-37F3-4046-9FB0-B8C4B90D84A3
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: d8c8da3745d398dd2acdd6c8bf3564eafadda6329cbedd724f0377c362a020de
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 3c5c63d2506712ba98982b2620bedd6aaf82153c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418979"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141922281"
 ---
 # Get-AzureAutomationScheduledRunbook
 
 ## SYNOPSIS
 
-Mendapatkan runbooks Azure Automation dan jadwal terkait.
+Mendapatkan Azure Automation runbook dan jadwal terkait.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
 ## SYNTAX
 
-### SecaraSemua (Default)
+### ByAll (Default)
 ```
 Get-AzureAutomationScheduledRunbook -AutomationAccountName <String> [-Profile <AzureSMProfile>]
  [<CommonParameters>]
@@ -54,40 +54,40 @@ Get-AzureAutomationScheduledRunbook -ScheduleName <String> -AutomationAccountNam
 
 [!INCLUDE [aa-deprecation](../include/aa-deprecation.md)]
 
-**Get-AzureAutomationScheduledRunbook** mendapatkan satu atau beberapa runbooks Azure Automation dan jadwal terkait.
-Secara default, semua runbooks terjadwal akan dikembalikan.
+**Get-AzureAutomationScheduledRunbook** mendapatkan satu atau beberapa Azure Automation runbook dan jadwal terkait.
+Secara default, semua runbook terjadwal dikembalikan.
 
-Untuk mendapatkan buku runbook terjadwal tertentu, tentukan nama runbook dan nama jadwal.
-Untuk mendapatkan semua jadwal yang terkait dengan runbook, tentukan hanya nama runbook.
-Untuk mendapatkan semua runbooks yang terkait dengan jadwal, tentukan nama jadwal saja.
+Untuk mendapatkan runbook terjadwal tertentu, tentukan nama runbook dan nama jadwal.
+Untuk mendapatkan semua jadwal yang terkait dengan runbook, tentukan nama runbook saja.
+Untuk mendapatkan semua runbook yang terkait dengan jadwal, tentukan nama jadwal saja.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua runbooks terjadwal
+### Contoh 1: Dapatkan semua runbook terjadwal
 ```
 PS C:\> Get-AzureAutomationScheduledRunbook -AutomationAccountName "Contoso17"
 ```
 
-Perintah ini mendapatkan semua runbooks terjadwal dalam akun Otomatisasi bernama Contoso17.
+Perintah ini mendapatkan semua runbook terjadwal dalam akun Otomatisasi bernama Contoso17.
 
-### Contoh 2: Mendapatkan semua jadwal yang terkait dengan runbook
+### Contoh 2: Dapatkan semua jadwal yang terkait dengan runbook
 ```
 PS C:\> Get-AzureAutomationScheduledRunbook -AutomationAccountName "Contoso17" -RunbookName "Runbk01"
 ```
 
-Perintah ini mendapatkan semua runbooks terjadwal untuk runbook Runbk01 dalam akun Otomatisasi yang bernama Contoso17.
+Perintah ini mendapatkan semua runbook terjadwal untuk runbook Runbk01 di akun Automation bernama Contoso17.
 
-### Contoh 3: Mendapatkan semua runbooks yang terkait dengan jadwal
+### Contoh 3: Dapatkan semua runbook yang terkait dengan jadwal
 ```
 PS C:\> Get-AzureAutomationScheduledRunbook -AutomationAccountName "Contoso17" -ScheduleName "Schedule01"
 ```
 
-Perintah ini mendapatkan semua runbooks terjadwal untuk jadwal Schedule01 dalam akun Otomatisasi yang bernama Contoso17.
+Perintah ini mendapatkan semua runbook terjadwal untuk jadwal Schedule01 di akun Otomatisasi bernama Contoso17.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi Azure.
+Menentukan nama akun Azure Automation.
 
 ```yaml
 Type: String
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobScheduleId
-Menentukan ID pekerjaan yang dijadwalkan.
+Menentukan ID pekerjaan terjadwal.
 
 ```yaml
 Type: Guid
@@ -117,8 +117,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -177,6 +177,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Register-AzureAutomationScheduledRunbook](./Register-AzureAutomationScheduledRunbook.md)
 
-[Unregister-AzureAutomationScheduledRunbook](./Unregister-AzureAutomationScheduledRunbook.md)
+[Batalkan pendaftaran-AzureAutomationScheduledRunbook](./Unregister-AzureAutomationScheduledRunbook.md)
 
 

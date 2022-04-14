@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.sql/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlServerAdvancedThreatProtectionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlServerAdvancedThreatProtectionPolicy.md
-ms.openlocfilehash: e51e20d9e7a3954cdb30a656ef0eb124480edc4247303828d78cb97316912327
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 16762b56995b90422c78ad6dc5dd87461c0a8317
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140864504"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141924019"
 ---
 # Get-AzureRmSqlServerAdvancedThreatProtectionPolicy
 
@@ -27,11 +27,11 @@ Get-AzureRmSqlServerAdvancedThreatProtectionPolicy [-InputObject <AzureSqlServer
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmSqlServerAdvancedThreatProtectionPolicy mengabaikan** kebijakan Advanced Threat Protection server.
+Cmdlet **Get-AzureRmSqlServerAdvancedThreatProtectionPolicy** mencoba kebijakan Perlindungan Ancaman Tingkat Lanjut dari server.
 
 ## EXAMPLES
 
-### Contoh 1 - Gets server Advanced Threat Protection
+### Contoh 1 - Mendapatkan Server Advanced Threat Protection
 ```powershell
 PS C:\>  Get-AzureRmSqlServerAdvancedThreatProtectionPolicy `
             -ResourceGroupName "ResourceGroup01" `
@@ -42,7 +42,7 @@ ServerName                   : Server01
 IsEnabled                    : True
 ```
 
-### Contoh 2 - Mendapatkan server Advanced Threat Protection dari sumber daya server
+### Contoh 2 - Mendapatkan Server Advanced Threat Protection dari sumber daya server
 ```powershell
 PS C:\>  Get-AzureRmSqlServer `
            -ResourceGroupName "ResourceGroup01" `
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek server untuk digunakan dengan operasi kebijakan Advanced Threat Protection
+Objek server untuk digunakan dengan operasi kebijakan Perlindungan Ancaman Tingkat Lanjut
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Server.Model.AzureSqlServerModel
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-SQL Database server baru.
+SQL Database nama server.
 
 ```yaml
 Type: System.String
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

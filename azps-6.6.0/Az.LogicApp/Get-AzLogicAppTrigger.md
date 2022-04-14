@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicAppTrigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicAppTrigger.md
 ms.openlocfilehash: 6a871d8d968ce204e0d10166d2319db6f367b3fb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140502591"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142127195"
 ---
 # Get-AzLogicAppTrigger
 
@@ -19,7 +19,7 @@ ms.locfileid: "140502591"
 Mendapatkan pemicu aplikasi logika.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logicapp/get-azlogicapptrigger) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/get-azlogicapptrigger) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,11 +35,11 @@ Tentukan alur kerja, grup sumber daya, dan pemicu.
 Modul ini mendukung parameter dinamis.
 Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
-Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilai tersebut.
+Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pemicu aplikasi logika
+### Contoh 1: Mendapatkan pemicu aplikasi logika
 ```
 PS C:\>Get-AzLogicAppTrigger -ResourceGroupName "ResourceGroup11" -Name "LogicApp05" -TriggerName "Trigger01"
 ChangedTime         : 1/14/2016 11:45:07 AM
@@ -55,7 +55,7 @@ LogicAppName        : LogicApp05
 LogicAppVersion     : 08587489107406290826
 ```
 
-Perintah ini memperoleh pemicu bernama Trigger01 dari aplikasi logika yang bernama LogicApp05.
+Perintah ini mendapatkan pemicu bernama Trigger01 dari aplikasi logika bernama LogicApp05.
 
 ### Contoh 2: Mendapatkan semua pemicu aplikasi logika
 ```
@@ -73,12 +73,12 @@ LogicAppName        : LogicApp07
 LogicAppVersion     : 08587489107406290826
 ```
 
-Perintah ini memperoleh pemicu aplikasi logika bernama LogicApp07.
+Perintah ini mendapatkan pemicu aplikasi logika bernama LogicApp07.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini mendapatkan pemicu.
+Menentukan nama grup sumber daya tempat cmdlet ini mendapatkan pemicu.
 
 ```yaml
 Type: System.String
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -TriggerName
-Menentukan nama pemicu yang akan dapatkan cmdlet ini.
+Menentukan nama pemicu yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

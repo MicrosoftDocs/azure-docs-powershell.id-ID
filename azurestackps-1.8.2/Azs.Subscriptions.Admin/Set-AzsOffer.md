@@ -3,12 +3,12 @@ external help file: Azs.Subscriptions.Admin-help.xml
 Module Name: Azs.Subscriptions.Admin
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: a8d2b158572c037e68ab046175d96665ae8809e8f1d81689775b48d840b04511
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 9b08aed00a4c16bd2031608ff795a4dde8491859
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416913"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142241149"
 ---
 # Set-AzsOffer
 
@@ -50,7 +50,7 @@ Perbarui penawaran.
 ## PARAMETERS
 
 ### -AddonPlanDefinition
-Referensi untuk paket add-on yang bisa didapatkan penyewa secara opsional sebagai bagian dari penawaran.
+Referensi ke paket add-on yang dapat diperoleh penyewa secara opsional sebagai bagian dari penawaran.
 
 ```yaml
 Type: AddonPlanDefinition[]
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -BasePlanIds
-Pengidentifikasi paket dasar yang menjadi tersedia untuk penyewa segera ketika penyewa berlangganan penawaran.
+Pengidentifikasi rencana dasar yang langsung tersedia untuk penyewa saat penyewa berlangganan penawaran.
 
 ```yaml
 Type: String[]
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek input tipe Microsoft.AzureStack.Management.Subscriptions.Admin.Models.Offer.
+Objek input dari tipe Microsoft.AzureStack.Management.Subscriptions.Admin.Models.Offer.
 
 ```yaml
 Type: Offer
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup sumber daya sumber daya yang berada di bawahnya.
+Grup sumber daya tempat sumber daya berada di bawah.
 
 ```yaml
 Type: String
@@ -257,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -273,7 +273,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -288,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

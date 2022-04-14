@@ -4,11 +4,11 @@ ms.assetid: AF4DF7EC-95BA-44E2-AB9B-5C8FE45CCE4C
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 6e50b1550e6df51140d1ded97970b20acad0e4c5
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421580"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141922832"
 ---
 # Add-AzureDns
 
@@ -25,7 +25,7 @@ Add-AzureDns [-Name] <String> [-IPAddress] <String> [-ServiceName] <String> [-Pr
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureDn** menambahkan server DNS ke layanan Azure.
+Cmdlet **Add-AzureDns** menambahkan server DNS ke layanan Azure.
 
 ## EXAMPLES
 
@@ -39,16 +39,16 @@ Perintah ini menambahkan server DNS yang memiliki alamat 10.1.2.4 ke ContosoServ
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -93,8 +93,8 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama yang mudah digunakan untuk server DNS.
-Nama ini bukanlah nama domain yang sepenuhnya memenuhi syarat.
+Menentukan nama yang mudah dikenali untuk server DNS.
+Nama ini belum tentu nama domain yang sepenuhnya memenuhi syarat.
 
 ```yaml
 Type: String
@@ -109,8 +109,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -154,9 +154,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureDns](./Get-AzureDns.md)
 
-[AzureDn baru](./New-AzureDns.md)
+[AzureDns baru](./New-AzureDns.md)
 
-[Remove-AzureDns](./Remove-AzureDns.md)
+[Hapus AzureDns](./Remove-AzureDns.md)
 
 [Set-AzureDns](./Set-AzureDns.md)
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzDataLakeGen2Item.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzDataLakeGen2Item.md
 ms.openlocfilehash: 1adb91b8d000dc3a8bee78aa351efc4d69b40cc4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139931119"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142264676"
 ---
 # Get-AzDataLakeGen2Item
 
 ## SYNOPSIS
-Mendapatkan detail file atau direktori di filesystem.
+Mendapatkan detail file atau direktori dalam sistem file.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azdatalakegen2item) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azdatalakegen2item) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,12 +28,12 @@ Get-AzDataLakeGen2Item [-FileSystem] <String> [-Path <String>] [-Context <IStora
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataLakeGen2Item** mendapatkan detail file atau direktori di Filesystem dalam akun penyimpanan Azure.
-Cmdlet ini hanya berfungsi jika Ruang Nama Hierarki diaktifkan untuk Storage tersebut. Jenis akun ini dapat dibuat dengan menjalankan cmdlet "New-AzStorageAccount" dengan "-EnableHierarchicalNamespace $true".
+Cmdlet **Get-AzDataLakeGen2Item** mendapatkan detail file atau direktori dalam Filesystem di akun penyimpanan Azure.
+Cmdlet ini hanya berfungsi jika Ruang Nama Hierarki diaktifkan untuk akun Storage. Akun semacam ini dapat dibuat dengan menjalankan cmdlet "New-AzStorageAccount" dengan "-EnableHierarchicalNamespace $true".
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan direktori dari Filesystem, lalu memperlihatkan detailnya
+### Contoh 1: Dapatkan direktori dari Filesystem, dan perlihatkan detailnya
 ```
 PS C:\> $dir1 = Get-AzDataLakeGen2Item -FileSystem "filesystem1" -Path "dir1/"
 PS C:\> $dir1
@@ -117,7 +117,7 @@ Perintah ini mendapatkan detail file dari Filesystem.
 ## PARAMETERS
 
 ### -Konteks
-Azure Storage Konteks
+Objek Konteks Azure Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -161,10 +161,10 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Path
-Jalur dalam Filesystem yang ditentukan akan diambil.
-Bisa merupakan file atau direktori Dalam format 'directory/file.txt' atau 'directory1/directory2/'.
-Parameter ini tidak ditentukan untuk mendapatkan direktori akar Filesystem.
+### -Jalur
+Jalur dalam Filesystem tertentu yang harus diambil.
+Dapat berupa file atau direktori Dalam format 'directory/file.txt' atau 'directory1/directory2/'.
+Tidak menentukan parameter ini untuk mendapatkan direktori akar dari Filesystem.
 
 ```yaml
 Type: System.String
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -189,7 +189,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.WindowsAzure.commands.common. Storage. ResourceModel.AzureDataLakeGen2Item
+### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureDataLakeGen2Item
 
 ## CATATAN
 

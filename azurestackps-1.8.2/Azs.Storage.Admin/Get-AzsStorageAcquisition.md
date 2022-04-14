@@ -4,16 +4,16 @@ Module Name: Azs.Storage.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 3a53b5af4cf77ec961e65f8c0c0d84b05b4adfa1
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "132415516"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142241623"
 ---
 # Get-AzsStorageAcquisition
 
 ## SYNOPSIS
-Mengembalikan daftar akuisi blob.
+Mengembalikan daftar akuisisi blob.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-AzsStorageAcquisition [-FarmName] <String> [-ResourceGroupName <String>] [-F
 ```
 
 ## DESCRIPTION
-Mengembalikan daftar akuisi blob.
+Mengembalikan daftar akuisisi blob.
 
 ## EXAMPLES
 
@@ -32,19 +32,19 @@ Mengembalikan daftar akuisi blob.
 Get-AzsStorageAcquisition -FarmName f9b8e2e2-e4b4-44e0-9d92-6a848b1a5376
 ```
 
-Dapatkan daftar akuisi blob.
+Dapatkan daftar akuisisi blob.
 
 ### CONTOH 2
 ```
 Get-AzsStorageAcquisition -FarmName f9b8e2e2-e4b4-44e0-9d92-6a848b1a5376 -Filter "startswith(properties/Storageaccount, 'Test'"
 ```
 
-Dapatkan daftar akuisi blob.
+Dapatkan daftar akuisisi blob.
 
 ## PARAMETERS
 
 ### -FarmName
-Id Farm.
+Id Pertanian.
 
 ```yaml
 Type: String
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-String filter
+Memfilter string
 
 ```yaml
 Type: String
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

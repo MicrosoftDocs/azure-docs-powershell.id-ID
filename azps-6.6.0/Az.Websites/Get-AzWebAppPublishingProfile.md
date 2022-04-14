@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppPublishingProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppPublishingProfile.md
 ms.openlocfilehash: 5c77879627e739f55355f7e5381f1ea666b13ce8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140497425"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142038863"
 ---
 # Get-AzWebAppPublishingProfile
 
@@ -19,7 +19,7 @@ ms.locfileid: "140497425"
 Mendapatkan profil penerbitan Azure Web App.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/get-azwebapppublishingprofile) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azwebapppublishingprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,12 +45,12 @@ Cmdlet **Get-AzWebAppPublishingProfile** mendapatkan profil penerbitan Azure Web
 PS C:\> Get-AzWebAppPublishingProfile -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -Format "Ftp" -OutputFile "C:\Users\contoso\outputfile.publishsettings"
 ```
 
-Perintah ini mendapatkan profil penerbitan dalam format Ftp untuk Web App ContosoWebApp yang terkait dengan grup sumber daya Default-Web-WestUS dan menyimpannya dalam file output yang ditentukan.
+Perintah ini mendapatkan profil penerbitan dalam format Ftp untuk Web App ContosoWebApp yang terkait dengan grup sumber daya Default-Web-WestUS dan menyimpannya dalam file output tertentu.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -Format
-Memformat
+Format
 
 ```yaml
 Type: System.String
@@ -156,13 +156,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## OUTPUTS
 

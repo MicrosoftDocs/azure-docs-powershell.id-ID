@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVpnClientIpsecParameter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVpnClientIpsecParameter.md
 ms.openlocfilehash: 0c5d1509bf55f539d39c8210cb2ea694df1fe2bf
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140101403"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142123829"
 ---
 # Set-AzVpnClientIpsecParameter
 
@@ -18,7 +18,7 @@ ms.locfileid: "140101403"
 Mengatur parameter ipsec vpn untuk gateway jaringan virtual yang sudah ada.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azvpnclientipsecparameter) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azvpnclientipsecparameter) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Set-AzVpnClientIpsecParameter -VirtualNetworkGatewayName <String> -ResourceGroup
 
 ## DESCRIPTION
 Cmdlet **Set-AzVpnClientIpsecParameter** mengatur parameter ipsec vpn untuk gateway jaringan virtual yang sudah ada.
-Saat Gateway jaringan virtual dibuat, Gateway Virtual mengatur kumpulan kebijakan ipsec vpn default di Gateway. In case, Point to site user wants to use certain custom ipsec policy to connect to VPN Gateway, user has to set that ipsec policy on VPN Gateway first. **Set-AzVpnClientIpsecParameter** menyediakan cara untuk melakukan hal itu.
+Saat gateway jaringan virtual dibuat, gateway ini mengatur kumpulan kebijakan ipsec vpn default di Gateway. Dalam kasus, Arahkan ke pengguna situs ingin menggunakan kebijakan ipsec kustom tertentu untuk menyambungkan ke VPN Gateway, pengguna harus mengatur kebijakan ipsec tersebut pada VPN Gateway terlebih dahulu. **Set-AzVpnClientIpsecParameter** menyediakan cara untuk melakukannya.
 
 ## EXAMPLES
 
@@ -55,9 +55,9 @@ PS C:\>$vpnclientipsecparams = New-AzVpnClientIpsecParameter -IpsecEncryption AE
 PS C:\> $setvpnIpsecParams = Set-AzVpnClientIpsecParameter -VirtualNetworkGatewayName "ContosoLocalGateway" -ResourceGroupName "ContosoResourceGroup" -VpnClientIPsecParameter $vpnclientipsecparams
 ```
 
-Contoh ini mengatur kebijakan ipsec vpn kustom ke gateway jaringan virtual yang sudah ada yang bernama ContosoVirtualGateway dari grup Sumber Daya yang bernama ContosoResourceGroup.
-New-AzVpnClientIpsecParameter cmdlet digunakan untuk membuat objek parameter ipsec vpn objek menggunakan satu atau semua nilai parameter yang telah diberikan yang bisa diatur oleh pengguna untuk semua gateway jaringan Virtual yang sudah ada di ResourceGroup.
-Objek VpnClientIPsecParameters yang dibuat ini disimpan ke Set-AzVpnClientIpsecParameter untuk menetapkan kebijakan kustom ipsec Vpn tertentu di gateway jaringan Virtual seperti yang diperlihatkan di contoh di atas. Perintah ini mengembalikan objek VpnClientIPsecParameters yang memperlihatkan parameter set.
+Contoh ini mengatur kebijakan ipsec vpn kustom ke gateway jaringan virtual yang sudah ada bernama ContosoVirtualGateway dari grup Sumber Daya bernama ContosoResourceGroup.
+cmdlet New-AzVpnClientIpsecParameter digunakan untuk membuat objek parameter ipsec vpn menggunakan nilai satu atau semua parameter yang dilewati yang dapat diatur pengguna untuk gateway jaringan Virtual yang sudah ada di ResourceGroup.
+Objek VpnClientIPsecParameters yang dibuat ini dialihkan ke perintah Set-AzVpnClientIpsecParameter untuk mengatur kebijakan kustom Ipsec Vpn tertentu pada gateway jaringan virtual seperti yang diperlihatkan dalam contoh di atas. Perintah ini mengembalikan objek VpnClientIPsecParameters yang memperlihatkan parameter yang ditetapkan.
 
 ## PARAMETERS
 
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnClientIPsecParameter
-Parameter ipsec klien vpn. Nilai parameter ini bisa dibangun menggunakan perintah PS let:New-AzVpnClientIpsecParameter
+Parameter ipsec klien vpn. Nilai parameter ini dapat dibangun menggunakan perintah PS let:New-AzVpnClientIpsecParameter
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVpnClientIPsecParameters
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

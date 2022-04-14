@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceBus/Commands.ServiceBus/help/New-AzureRmServiceBusGeoDRConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceBus/Commands.ServiceBus/help/New-AzureRmServiceBusGeoDRConfiguration.md
 ms.openlocfilehash: e2f1edfa0d1b5fa081754457fa3fc53f310eb345
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140861795"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141924308"
 ---
 # New-AzureRmServiceBusGeoDRConfiguration
 
 ## SYNOPSIS
-Membuat Alias baru(Konfigurasi Pemulihan Bencana)
+Membuat Alias baru(konfigurasi Pemulihan Bencana)
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -43,7 +43,7 @@ New-AzureRmServiceBusGeoDRConfiguration [-ResourceId] <String> [-Name] <String> 
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmServiceBusGeoDRConfiguration** Membuat Alias(Konfigurasi Pemulihan Bencana) baru
+Cmdlet **New-AzureRmServiceBusGeoDRConfiguration** Membuat Alias baru(konfigurasi Pemulihan Bencana)
 
 ## EXAMPLES
 
@@ -59,12 +59,12 @@ PartnerNamespace  : /subscriptions/{SubscriptionId}/resourceGroups/TestignGeoDR/
 Role              : Primary
 ```
 
-Membuat alias "SampleDRCongifName" dengan ruang nama utama "SampleNamespace_Primary" dengan kumpulan nama sekunder "SampleNamespace_Secondary"
+Membuat alias "SampleDRCongifName" dengan ruang nama utama "SampleNamespace_Primary" dengan ruang nama sekunder "SampleNamespace_Secondary"
 
 ## PARAMETERS
 
-### -AlternateName
-AlternateName
+### -AlternatifName
+Nama Alternatif
 
 ```yaml
 Type: System.String
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Namespace Resource Id
+Id Sumber Daya Ruang Nama
 
 ```yaml
 Type: System.String
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -230,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

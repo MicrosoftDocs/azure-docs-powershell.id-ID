@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Remove-AzStackEdgeDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Remove-AzStackEdgeDevice.md
 ms.openlocfilehash: 29fffba9c974e70f5d115b9f19a732bc602f2ae0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140500305"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142119311"
 ---
 # Remove-AzStackEdgeDevice
 
@@ -18,7 +18,7 @@ ms.locfileid: "140500305"
 Menghapus perangkat Stack Edge.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.stackedge/remove-azstackedgedevice) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/remove-azstackedgedevice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Remove-AzStackEdgeDevice -DeviceObject <PSStackEdgeDevice> [-AsJob] [-DefaultPro
 Cmdlet **Remove-AzStackEdgeDevice** menghapus konfigurasi untuk perangkat Stack Edge.
 Perhatikan bahwa perangkat hanya dapat dihapus setelah Anda membuat pesanan dan sebelum perangkat disiapkan oleh Microsoft untuk pengiriman.
 
-Lihat dokumentasi tentang Menghapus sumber daya sebelum menggunakan [cmdlet ini](https://docs.microsoft.com/azure/databox-online/data-box-edge-return-device#delete-the-resource)
+Rujuk dokumentasi tentang Menghapus sumber daya sebelum menggunakan [cmdlet](https://docs.microsoft.com/azure/databox-online/data-box-edge-return-device#delete-the-resource) ini
 
 ## EXAMPLES
 
@@ -56,7 +56,7 @@ PS C:\> Remove-AzStackEdgeDevice ResourceGroupName resourceGroupName -Name devic
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -191,13 +191,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PS StackEdgeDevice
+### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeDevice
 
 ## OUTPUTS
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateDiskMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateDiskMapping.md
 ms.openlocfilehash: 48ab1cd6384d982207b01cc14389ddf22f573534
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140332637"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142126421"
 ---
 # New-AzMigrateDiskMapping
 
@@ -18,7 +18,7 @@ ms.locfileid: "140332637"
 Membuat pemetaan disk baru
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.migrate/new-azmigratediskmapping) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.migrate/new-azmigratediskmapping) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +28,11 @@ New-AzMigrateDiskMapping -DiskID <String> -DiskType <String> -IsOSDisk <String>
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzMigrateDiskMapping membuat pemetaan disk sumber yang terhubung ke server untuk dimigrasi
+Cmdlet New-AzMigrateDiskMapping membuat pemetaan disk sumber yang terhubung ke server yang akan dimigrasikan
 
 ## EXAMPLES
 
-### Contoh 1: Buat disk
+### Contoh 1: Membuat disk
 ```powershell
 PS C:\> New-AzMigrateDiskMapping -DiskID a -DiskType Standard -IsOSDisk 'true'
 
@@ -41,12 +41,12 @@ DiskEncryptionSetId DiskId   DiskType  IsOSDisk LogStorageAccountId LogStorageAc
                       a      Standard  true  
 ```
 
-Mendapatkan objek disk untuk menyediakan input bagi New-AzMigrateServerReplication
+Dapatkan objek disk untuk menyediakan input untuk New-AzMigrateServerReplication
 
 ## PARAMETERS
 
 ### -DiskEncryptionSetID
-Menentukan kumpulanencyption disk yang akan digunakan.
+Menentukan set ensipsi diska yang akan digunakan.
 
 ```yaml
 Type: System.String
@@ -60,8 +60,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DiskID
-Menentukan ID disk dari disk yang terhubung ke server yang ditemukan untuk dimigrasikan.
+### -DISKID
+Menentukan ID diska diska yang terpasang ke server yang ditemukan untuk dimigrasikan.
 
 ```yaml
 Type: System.String
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsOSDisk
-Menentukan apakah disk berisi Sistem Operasi untuk server sumber yang akan dimigrasikan.
+Menentukan apakah diska berisi Sistem Operasi untuk server sumber yang akan dimigrasikan.
 
 ```yaml
 Type: System.String
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

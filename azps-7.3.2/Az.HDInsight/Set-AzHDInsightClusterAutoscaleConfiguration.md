@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Set-AzHDInsightClusterAutoscaleConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Set-AzHDInsightClusterAutoscaleConfiguration.md
-ms.openlocfilehash: 02ff6a3b06005c7d7e13372e5c901f5e79e22c4b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a612b90432db496a3d042a18214b73507944de5a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140186852"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142110455"
 ---
 # Set-AzHDInsightClusterAutoscaleConfiguration
 
 ## SYNOPSIS
-Mengatur konfigurasi skala otomatis kluster Azure HDInsight.
+Mengatur konfigurasi skala otomatis dari kluster Azure HDInsight.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/set-azhdinsightclusterautoscaleconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -85,7 +88,7 @@ Set-AzHDInsightClusterAutoscaleConfiguration [-InputObject] <AzureHDInsightClust
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzHDInsightClusterAutoscaleConfiguration** ini mengatur konfigurasi skala otomatis kluster Azure HDInsight.
+Cmdlet **Set-AzHDInsightClusterAutoscaleConfiguration** ini mengatur konfigurasi skala otomatis dari kluster Azure HDInsight.
 
 ## EXAMPLES
 
@@ -97,9 +100,9 @@ PS C:\> Set-AzHDInsightClusterAutoscaleConfiguration -ResourceGroupName $cluster
             -ClusterName $clusterName -MinWorkerNodeCount 3 -MaxWorkerNodeCount 5
 ```
 
-Perintah ini mengatur konfigurasi skala otomatis berbasis memuat dari kluster Azure HDInsight.
+Perintah ini mengatur konfigurasi skala otomatis berbasis muat dari kluster Azure HDInsight.
 
-### Contoh 2: Atur skala otomatis berbasis Jadwal dari kluster HDInsight
+### Contoh 2: Mengatur skala otomatis berbasis jadwal dari kluster HDInsight
 ```powershell
 # Create autoscale conditions
 PS C:\> $condition1=New-AzHDInsightClusterAutoscaleScheduleCondition -Time 09:00 -WorkerNodeCount 5 -Day Monday,Wednesday
@@ -111,9 +114,9 @@ PS C:\> $clusterName="MyCluster"
 PS C:\> Set-AzHDInsightClusterAutoscaleConfiguration -ResourceGroupName $clusterResourceGroup -ClusterName $clusterName -Schedule -TimeZone "Pacific Standard Time" -Condition $condition1,$condition2
 ```
 
-Perintah ini mengatur konfigurasi skala otomatis berbasis Jadwal dari kluster HDInsight.
+Perintah ini mengatur konfigurasi skala otomatis berbasis jadwal kluster HDInsight.
 
-### Contoh 3: Mengatur konfigurasi skala otomatis kluster HDInsight berdasarkan kluster lain yang telah mengatur konfigurasi skala otomatis
+### Contoh 3: Atur konfigurasi skala otomatis kluster HDInsight berdasarkan kluster lain yang telah mengatur konfigurasi skala otomatis
 ```powershell
 # Get the autoscale configuration of another cluster.
 PS C:\> $clusterResourceGroup="group"
@@ -132,7 +135,7 @@ Perintah ini mengatur konfigurasi skala otomatis kluster HDInsight berdasarkan k
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxWorkerNodeCount
-Mendapatkan atau mengatur pekerja maksimal tidak akan menghitung skala otomatis berbasis beban.
+Mendapatkan atau mengatur jumlah workernode maksimal dari skala otomatis berbasis beban.
 
 ```yaml
 Type: System.Int32
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinWorkerNodeCount
-Mendapatkan atau mengatur pekerja minimalnode jumlah skala otomatis berbasis muat.
+Mendapatkan atau mengatur jumlah workernode minimal dari skala otomatis berbasis beban.
 
 ```yaml
 Type: System.Int32
@@ -281,7 +284,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Schedule
+### -Jadwal
 Mengatur parameter berbasis jadwal
 
 ```yaml
@@ -312,7 +315,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -328,7 +331,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -343,7 +346,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

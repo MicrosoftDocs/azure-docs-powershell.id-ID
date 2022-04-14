@@ -5,11 +5,11 @@ ms.assetid: 35562212-283C-4BB2-8B12-C3617A6760D0
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/get-azurermapplicationgatewayipconfiguration
 schema: 2.0.0
 ms.openlocfilehash: 09986be8ccc8dce8eaec522c501fe3f98ff03c56
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132429170"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141781693"
 ---
 # Get-AzureRmApplicationGatewayIPConfiguration
 
@@ -37,7 +37,7 @@ PS C:\>$AppGw = Get-AzureRmApplicationGateway -Name "ApplicationGateway01" -Reso
 PS C:\> $GatewaySubnet = Get-AzureRmApplicationGatewayIPConfiguration -Name "GatewaySubnet01" -ApplicationGateway $AppGw
 ```
 
-Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam $AppGw variabel. Perintah kedua mendapatkan konfigurasi IP bernama GateSubnet01 dari gateway yang disimpan di $AppGw.
+Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam variabel $AppGw. Perintah kedua mendapatkan konfigurasi IP bernama GateSubnet01 dari gateway yang disimpan di $AppGw.
 
 ### Contoh 2: Mendapatkan daftar konfigurasi IP
 ```
@@ -45,7 +45,7 @@ PS C:\>$AppGw = Get-AzureRmApplicationGateway -Name "ApplicationGateway01" -Reso
 PS C:\> $GatewaySubnets = Get-AzureRmApplicationGatewayIPConfiguration -ApplicationGateway $AppGw
 ```
 
-Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam $AppGw variabel. Perintah kedua mendapatkan daftar semua konfigurasi IP.
+Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam variabel $AppGw. Perintah kedua mendapatkan daftar semua konfigurasi IP.
 
 ## PARAMETERS
 
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama konfigurasi IP yang akan didaangkan cmdlet ini.
+Menentukan nama konfigurasi IP yang didapatkan cmdlet ini.
 
 ```yaml
 Type: String
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

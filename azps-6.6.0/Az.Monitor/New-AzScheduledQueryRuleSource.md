@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleSource.md
 ms.openlocfilehash: 6d6f78b33f75d5c563f92a69b6791f458a95faaa
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140308453"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142126043"
 ---
 # New-AzScheduledQueryRuleSource
 
 ## SYNOPSIS
-Membuat objek tipe Sumber
+Membuat objek dari tipe Sumber
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/new-azscheduledqueryrulesource) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azscheduledqueryrulesource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,8 +28,8 @@ New-AzScheduledQueryRuleSource -Query <String> [-AuthorizedResource <String[]>] 
 ```
 
 ## DESCRIPTION
-Membuat objek tipe Sumber.
-Objek ini akan diteruskan ke perintah yang membuat Aturan Pemberitahuan Log
+Membuat objek dari tipe Sumber.
+Objek ini akan dialihkan ke perintah yang membuat Aturan Peringatan Log
 
 ## EXAMPLES
 
@@ -42,7 +42,7 @@ PS C:\> $source = New-AzScheduledQueryRuleSource -Query "Heartbeat | summarize A
 
 ### Contoh 2
 
-Membuat objek tipe Sumber. (otomatisgenerated)
+Membuat objek dari tipe Sumber. (autogenerasi)
 
 ```powershell <!-- Aladdin Generated Example --> 
 New-AzScheduledQueryRuleSource -DataSourceId <String> -Query 'Heartbeat | summarize AggregatedValue = count() by bin(TimeGenerated, 5m)'
@@ -126,11 +126,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

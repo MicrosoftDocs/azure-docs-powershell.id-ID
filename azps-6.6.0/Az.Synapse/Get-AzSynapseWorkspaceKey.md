@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseWorkspaceKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseWorkspaceKey.md
 ms.openlocfilehash: 157b5d76af8b889ad96121cffa348393f5156823
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140129733"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142263661"
 ---
 # Get-AzSynapseWorkspaceKey
 
@@ -18,7 +18,7 @@ ms.locfileid: "140129733"
 Mendapatkan kunci ruang kerja.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapseworkspacekey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapseworkspacekey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,14 +49,14 @@ Cmdlet **Get-AzSynapseWorkspaceKey** mendapatkan kunci ruang kerja.
 PS C:\> Get-AzSynapseWorkspaceKey -WorkspaceName ContosoWorkspace
 ```
 
-Perintah ini mendapatkan informasi tentang semua kunci ruang kerja dalam ruang kerja bernama ContosoWorkspace.
+Perintah ini mendapatkan informasi tentang semua tombol ruang kerja di ruang kerja bernama ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzSynapseWorkspaceKey -WorkspaceName ContosoWorkspace -Name ContosoWorkspaceKey
 ```
 
-Perintah ini mendapatkan informasi tentang kunci ruang kerja bernama ContosoWorkspaceKey dalam ruang kerja yang bernama ContosoWorkspace.
+Perintah ini mendapatkan informasi tentang kunci ruang kerja bernama ContosoWorkspaceKey di ruang kerja bernama ContosoWorkspace.
 
 ### Contoh 3
 ```powershell
@@ -64,14 +64,14 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Get-AzSynapseWorkspaceKey -Name ContosoWorkspaceKey
 ```
 
-Perintah ini mendapatkan informasi tentang kunci ruang kerja bernama ContosoWorkspaceKey dalam ruang kerja yang bernama ContosoWorkspace melalui pipeline.
+Perintah ini mendapatkan informasi tentang tombol ruang kerja bernama ContosoWorkspaceKey di ruang kerja bernama ContosoWorkspace melalui pipeline.
 
 ### Contoh 4
 ```powershell
 PS C:\> Get-AzSynapseSqlPool -ResourceId "/subscriptions/21686af7-58ec-4f4d-9c68-f431f4db4edd/resourceGroups/ContosoResourceGroup/providers/Microsoft.Synapse/workspaces/ContosoWorkspace/keys/ContosoWorkspaceKey"
 ```
 
-Perintah ini akan memasukkan kunci ruang kerja dengan ID sumber daya yang ditentukan.
+Perintah ini mendapatkan kunci ruang kerja dengan ID sumber daya yang ditentukan.
 
 ## PARAMETERS
 
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya dari Synapse SQL Pool.
+Pengidentifikasi sumber daya Synapse SQL Pool.
 
 ```yaml
 Type: System.String
@@ -135,7 +135,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

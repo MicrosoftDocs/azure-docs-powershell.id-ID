@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeOrder.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeOrder.md
 ms.openlocfilehash: a3f3c9aa1e04a99629cdc2c5945ea87a739fb4b7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139966947"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142119455"
 ---
 # Get-AzStackEdgeOrder
 
@@ -18,7 +18,7 @@ ms.locfileid: "139966947"
 Dapatkan detail pesanan untuk perangkat
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.stackedge/get-azstackedgeorder) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/get-azstackedgeorder) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ Get-AzStackEdgeOrder -ResourceId <String> [-DefaultProfile <IAzureContextContain
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStackEdgeOrder** mendapatkan detail urutan untuk perangkat Stack Edge. 
+Cmdlet **Get-AzStackEdgeOrder** mendapatkan detail pesanan untuk perangkat Stack Edge. 
 
 ## EXAMPLES
 
@@ -130,17 +130,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PS StackEdgeDevice
+### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeDevice
 
 ### System.String
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PS StackEdgeOrder
+### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeOrder
 
 ## CATATAN
 

@@ -4,11 +4,11 @@ ms.assetid: 436A6D6E-2280-475C-A1F5-6A6D72DAD9E7
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: b24d3379b64160c7b0d05bbac4a38bd923beb81b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425091"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141922335"
 ---
 # Get-AzureAutomationSchedule
 
@@ -20,7 +20,7 @@ Mendapatkan jadwal Azure Automation.
 
 ## SYNTAX
 
-### SecaraSemua (Default)
+### ByAll (Default)
 ```
 Get-AzureAutomationSchedule -AutomationAccountName <String> [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
@@ -35,7 +35,7 @@ Get-AzureAutomationSchedule -Name <String> -AutomationAccountName <String> [-Pro
 
 [!INCLUDE [aa-deprecation](../include/aa-deprecation.md)]
 
-Cmdlet **Get-AzureAutomationSchedule** mendapatkan Microsoft Azure otomatisasi yang tersedia.
+Cmdlet **Get-AzureAutomationSchedule** mendapatkan jadwal Otomatisasi Microsoft Azure.
 
 ## EXAMPLES
 
@@ -44,12 +44,12 @@ Cmdlet **Get-AzureAutomationSchedule** mendapatkan Microsoft Azure otomatisasi y
 PS C:\> Get-AzureAutomationSchedule -AutomationAccountName "Contoso17" -Name "DailySchedule08"
 ```
 
-Perintah ini mendapatkan jadwal bernama DailySchedule08.
+Perintah ini mendapatkan jadwal yang bernama DailySchedule08.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi Azure.
+Menentukan nama akun Azure Automation.
 
 ```yaml
 Type: String
@@ -79,8 +79,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -107,10 +107,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureAutomationSchedule](./New-AzureAutomationSchedule.md)
+[AzureAutomationSchedule Baru](./New-AzureAutomationSchedule.md)
 
-[Remove-AzureAutomationSchedule](./Remove-AzureAutomationSchedule.md)
+[Hapus-AzureAutomationSchedule](./Remove-AzureAutomationSchedule.md)
 
-[Set-AzureAutomationSchedule](./Set-AzureAutomationSchedule.md)
+[Atur-AzureAutomationSchedule](./Set-AzureAutomationSchedule.md)
 
 

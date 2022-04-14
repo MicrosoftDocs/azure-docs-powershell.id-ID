@@ -3,12 +3,12 @@ external help file: Azs.Storage.Admin-help.xml
 Module Name: Azs.Storage.Admin
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: f22d9adaa7c225dc0125dfeb2033b5176671d3379e8ef043431bd32708535348
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: cf6664023fbd43601c9b7c41a4f578809a9717c5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416957"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142241641"
 ---
 # Get-AzsTableService
 
@@ -31,12 +31,12 @@ Mengembalikan layanan tabel.
 Get-AzsTableService -FarmName f9b8e2e2-e4b4-44e0-9d92-6a848b1a5376
 ```
 
-Dapatkan tabel tabel tabel.
+Dapatkan servie meja.
 
 ## PARAMETERS
 
 ### -FarmName
-Id Farm.
+Id Pertanian.
 
 ```yaml
 Type: String
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

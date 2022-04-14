@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Set-AzVirtualNetworkGatewayConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Set-AzVirtualNetworkGatewayConnection.md
 ms.openlocfilehash: b38ef9d212ceeb519e29d99391b17099177236a5
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422410"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142130885"
 ---
 # Set-AzVirtualNetworkGatewayConnection
 
@@ -40,7 +40,7 @@ Cmdlet **Set-AzVirtualNetworkGatewayConnection** mengonfigurasi koneksi gateway 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -55,7 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableBgp
-Apakah akan menggunakan sesi BGP melalui vpn S2S vpn
+Apakah menggunakan sesi BGP melalui terowongan VPN S2S
 
 ```yaml
 Type: Boolean
@@ -84,8 +84,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: SwitchParameter
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkGatewayConnection
-Menentukan objek PSVirtualNetworkGatewayConnection yang digunakan cmdlet ini untuk memodifikasi koneksi gateway jaringan virtual.
+Menentukan objek PSVirtualNetworkGatewayConnection yang digunakan cmdlet ini untuk mengubah koneksi gateway jaringan virtual.
 
 ```yaml
 Type: PSVirtualNetworkGatewayConnection
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -176,12 +176,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSVirtualNetworkGatewayConnection
-Parameter 'VirtualNetworkGatewayConnection' menerima nilai tipe 'PSVirtualNetworkGatewayConnection' dari saluran
+Parameter 'VirtualNetworkGatewayConnection' menerima nilai tipe 'PSVirtualNetworkGatewayConnection' dari pipeline
 
 ## OUTPUTS
 

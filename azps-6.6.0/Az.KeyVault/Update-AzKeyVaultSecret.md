@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultSecret.md
 ms.openlocfilehash: eea1165a0d1cdf6dc096a598e0a65cebf233e125
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140503041"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142127321"
 ---
 # Update-AzKeyVaultSecret
 
 ## SYNOPSIS
-Memperbarui atribut rahasia di kunci vault.
+Memperbarui atribut rahasia dalam kubah kunci.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/update-azkeyvaultsecret) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/update-azkeyvaultsecret) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,11 +37,11 @@ Update-AzKeyVaultSecret [-InputObject] <PSKeyVaultSecretIdentityItem> [[-Version
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzKeyVaultSecret memperbarui** atribut rahasia rahasia di kunci vault.
+Cmdlet **Update-AzKeyVaultSecret** memperbarui atribut rahasia yang dapat diedit dalam kubah kunci.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah atribut dari sebuah rahasia
+### Contoh 1: Memodifikasi atribut rahasia
 ```powershell
 PS C:\> $Expires = (Get-Date).AddYears(2).ToUniversalTime()
 PS C:\> $Nbf = (Get-Date).ToUniversalTime()
@@ -65,27 +65,27 @@ Tags         : Name      Value
 ```
 
 Empat perintah pertama menentukan atribut untuk tanggal kedaluwarsa, tanggal NotBefore, tag, dan tipe konteks, dan menyimpan atribut dalam variabel.
-Perintah terakhir mengubah atribut untuk rahasia yang bernama HR dalam kunci vault yang bernama ContosoVault, menggunakan variabel yang disimpan.
+Perintah akhir mengubah atribut untuk rahasia bernama HR dalam kubah kunci bernama ContosoVault, menggunakan variabel yang disimpan.
 
 ### Contoh 2: Menghapus tag dan tipe konten untuk rahasia
 ```
 PS C:\> Update-AzKeyVaultSecret -VaultName 'ContosoVault' -Name 'HR' -Version '9EEA45C6EE50490B9C3176A80AC1A0DF' -ContentType '' -Tag -@{}
 ```
 
-Perintah ini menghapus tag dan tipe konten untuk versi rahasia tertentu bernama HR di key vault bernama Contoso.
+Perintah ini menghapus tag dan tipe konten untuk versi rahasia tertentu yang bernama HR dalam kubah kunci bernama Contoso.
 
-### Contoh 3: Menonaktifkan versi rahasia saat ini yang namanya dimulai dengan IT
+### Contoh 3: Menonaktifkan versi rahasia saat ini yang namanya dimulai dengan TI
 ```
 PS C:\> $Vault = 'ContosoVault'
 PS C:\> $Prefix = 'IT'
 PS C:\> Get-AzKeyVaultSecret $Vault | Where-Object {$_.Name -like $Prefix + '*'} | Update-AzKeyVaultSecret -Enable $False
 ```
 
-Perintah pertama menyimpan nilai string Contoso dalam $Vault string.
-Perintah kedua menyimpan nilai string IT dalam $Prefix nilai.
-Perintah ketiga menggunakan cmdlet Get-AzKeyVaultSecret rahasia untuk mendapatkan rahasia dalam penyimpanan kunci tertentu, lalu melewati rahasia tersebut ke cmdlet **Where-Object** . Cmdlet **Where-Object** memfilter rahasia untuk nama yang dimulai dengan karakter IT. Perintah akan pipa rahasia yang cocok dengan filter ke cmdlet Update-AzKeyVaultSecret, yang akan menonaktifkannya.
+Perintah pertama menyimpan nilai string Contoso dalam variabel $Vault.
+Perintah kedua menyimpan nilai string TI dalam variabel $Prefix.
+Perintah ketiga menggunakan cmdlet Get-AzKeyVaultSecret untuk mendapatkan rahasia dalam kubah kunci yang ditentukan, lalu meneruskan rahasia tersebut ke cmdlet **Where-Object** . Cmdlet **Where-Object** memfilter rahasia untuk nama yang dimulai dengan karakter TI. Perintah menyalurkan rahasia yang cocok dengan filter ke cmdlet Update-AzKeyVaultSecret, yang menonaktifkannya.
 
-### Contoh 4: Setel ContentType untuk semua versi rahasia
+### Contoh 4: Mengatur ContentType untuk semua versi rahasia
 ```
 PS C:\> $VaultName = 'ContosoVault'
 PS C:\> $Name = 'HR'
@@ -93,13 +93,13 @@ PS C:\> $ContentType = 'xml'
 PS C:\> Get-AzKeyVaultKey -VaultName $VaultName -Name $Name -IncludeVersions | Update-AzKeyVaultSecret -ContentType $ContentType
 ```
 
-Tiga perintah pertama menentukan variabel string yang akan digunakan untuk *parameter VaultName*, *Name*, *dan ContentType* . Perintah keempat menggunakan cmdlet Get-AzKeyVaultKey cmdlet untuk mendapatkan kunci yang ditentukan, dan pipakan tombol ke cmdlet Update-AzKeyVaultSecret untuk mengatur tipe kontennya ke XML.
+Tiga perintah pertama menentukan variabel string yang akan digunakan untuk parameter *VaultName*, *Name*, dan *ContentType* . Perintah keempat menggunakan cmdlet Get-AzKeyVaultKey untuk mendapatkan tombol yang ditentukan, dan menyalurkan kunci ke cmdlet Update-AzKeyVaultSecret untuk mengatur tipe kontennya ke XML.
 
 ## PARAMETERS
 
 ### -ContentType
-Tipe konten rahasia.
-Jika tidak ditentukan, nilai tipe konten rahasianya tetap tidak berubah.
+Tipe konten Rahasia.
+Jika tidak ditentukan, nilai tipe konten rahasia yang sudah ada tidak berubah.
 Hapus nilai tipe konten yang sudah ada dengan menentukan string kosong.
 
 ```yaml
@@ -130,9 +130,9 @@ Accept wildcard characters: False
 ```
 
 ### -Aktifkan
-Jika ada, aktifkan rahasia jika nilai adalah benar.
-Nonaktifkan rahasia jika nilai adalah false.
-Jika tidak ditentukan, nilai status rahasia yang sudah ada yang diaktifkan/dinonaktifkan tetap tidak berubah.
+Jika ada, aktifkan rahasia jika nilai benar.
+Menonaktifkan rahasia jika nilai salah.
+Jika tidak ditentukan, nilai status aktif/nonaktif rahasia yang sudah ada tidak berubah.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 
 ### -Kedaluwarsa
 Waktu kedaluwarsa rahasia dalam waktu UTC.
-Jika tidak ditentukan, nilai waktu kedaluwarsa rahasianya tetap tidak berubah.
+Jika tidak ditentukan, nilai waktu kedaluwarsa rahasia yang sudah ada tidak berubah.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 
 ### -Nama
 Nama rahasia.
-Cmdlet menyusun FQDN rahasia dari nama vault, lingkungan yang saat ini dipilih dan nama rahasia.
+Cmdlet menyusun FQDN rahasia dari nama kubah, lingkungan yang saat ini dipilih dan nama rahasia.
 
 ```yaml
 Type: System.String
@@ -193,9 +193,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -NotBefore
+### -TidakBefore
 Waktu UTC sebelum rahasia mana yang tidak bisa digunakan.
-Jika tidak ditentukan, nilai atribut NotBefore rahasia tetap tidak berubah.
+Jika tidak ditentukan, nilai atribut NotBefore secret yang sudah ada tidak berubah.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -226,9 +226,9 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable mewakili tag rahasia.
-Jika tidak ditentukan, tag rahasia yang sudah ada tetap tidak berubah.
-Menghapus tag dengan menentukan Hashtable kosong.
+Sebuah hashtable yang mewakili tag rahasia.
+Jika tidak ditentukan, tag rahasia yang sudah ada tidak berubah.
+Hapus tag dengan menentukan Hashtable kosong.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -243,8 +243,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama Vault.
-Cmdlet menyusun FQDN dari vault berdasarkan nama dan lingkungan yang saat ini dipilih.
+Nama kubah.
+Cmdlet menyusun FQDN kubah berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -260,7 +260,7 @@ Accept wildcard characters: False
 
 ### -Versi
 Versi rahasia.
-Cmdlet menyusun FQDN rahasia dari nama vault, lingkungan yang saat ini dipilih, nama rahasia dan versi rahasia.
+Cmdlet menyusun FQDN rahasia dari nama kubah, lingkungan yang saat ini dipilih, nama rahasia, dan versi rahasia.
 
 ```yaml
 Type: System.String
@@ -275,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -291,7 +291,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -306,7 +306,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

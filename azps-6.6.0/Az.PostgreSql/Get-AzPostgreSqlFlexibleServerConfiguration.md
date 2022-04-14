@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Get-AzPostgreSqlFlexibleServerConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Get-AzPostgreSqlFlexibleServerConfiguration.md
 ms.openlocfilehash: 49965a3e125fa5454198f8bff75784d312353d93
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139970925"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142044695"
 ---
 # Get-AzPostgreSqlFlexibleServerConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "139970925"
 Mendapatkan informasi tentang konfigurasi server.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.postgresql/get-azpostgresqlflexibleserverconfiguration) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.postgresql/get-azpostgresqlflexibleserverconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzPostgreSqlFlexibleServerConfiguration -ResourceGroupName <String> -ServerN
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzPostgreSqlFlexibleServerConfiguration -Name <String> -ResourceGroupName <String> -ServerName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -45,7 +45,7 @@ Mendapatkan informasi tentang konfigurasi server.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan konfigurasi PostgreSql tertentu menurut nama
+### Contoh 1: Dapatkan konfigurasi PostgreSql yang ditentukan menurut nama
 ```powershell
 PS C:\> Get-AzPostgreSqlFlexibleServerConfiguration -Name work_mem -ResourceGroupName PowershellPostgreSqlTest -ServerName postgresql-test
 
@@ -54,9 +54,9 @@ Name     Value AllowedValue Source         DefaultValue
 work_mem 4096  4096-2097151 system-default 4096
 ```
 
-Cmdlet ini akan menetapkan konfigurasi PostgreSql menurut nama.
+Cmdlet ini mendapatkan konfigurasi PostgreSql yang ditentukan berdasarkan nama.
 
-### Contoh 2: Daftar semua konfigurasi di server PostgreSql yang ditentukan
+### Contoh 2: Mencantumkan semua konfigurasi di server PostgreSql tertentu
 ```powershell
 PS C:\> Get-AzPostgreSqlFlexibleServerConfiguration -ResourceGroupName PowershellPostgreSqlTest -ServerName postgresql-test
 
@@ -75,7 +75,7 @@ require_secure_transport                   on                         on,off
 pgbouncer.enabled                          false                      true, false
 ```
 
-Cmdlet ini mencantumkan semua konfigurasi di server PostgreSql yang ditentukan.
+Cmdlet ini mencantumkan semua konfigurasi di server PostgreSql tertentu.
 
 ## PARAMETERS
 
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.PostgreSql.Models.IPostgreSqlIdentity
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -196,7 +196,7 @@ INPUTOBJECT <IPostgreSqlIdentity>: Parameter Identitas
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

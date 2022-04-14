@@ -4,16 +4,16 @@ ms.assetid: 6B406310-287F-4BD3-BA38-A9C97E8EDC45
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: c17c0c8f4ad93c63bcebce6ea408d6f9e77e0dbc
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421573"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141921186"
 ---
 # Get-AzureWebsiteJob
 
 ## SYNOPSIS
-Mendapatkan pekerjaan web terkait dengan situs web.
+Mendapatkan pekerjaan web yang terkait dengan situs web.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,30 +25,30 @@ Get-AzureWebsiteJob [-JobName <String>] [-JobType <String>] [-Name <String>] [-S
 ```
 
 ## DESCRIPTION
-Mendapatkan pekerjaan web terkait dengan situs web.
+Mendapatkan pekerjaan web yang terkait dengan situs web.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan info pekerjaan web tertentu
+### Contoh 1: Dapatkan info pekerjaan web tertentu
 ```
 PS C:\> Get-AzureWebsiteJob -Name MyWebsite -JobName MyWebJob
 ```
 
-Mendapatkan pekerjaan web bernama MyWebJob dari slot produksi Situs WebSaya.
+Mendapatkan pekerjaan web bernama MyWebJob dari slot produksi MyWebsite.
 
 ### Contoh 2: Mendapatkan semua pekerjaan web untuk situs web
 ```
 PS C:\> Get-AzureWebsiteJob -Name MyWebsite
 ```
 
-Mendapatkan semua pekerjaan web terkait slot produksi MyWebsite.
+Mendapatkan semua pekerjaan web yang terkait dengan slot produksi MyWebsite.
 
-### Contoh 3: Mendapatkan semua pekerjaan web yang dipicu
+### Contoh 3: Dapatkan semua pekerjaan web yang dipicu
 ```
 PS C:\> Get-AzureWebsiteJob -Name MyWebsite -Slot staging -Type Triggered
 ```
 
-Mendapatkan semua pekerjaan web yang dipicu dari pengembangan slot SitusSaya.
+Mendapatkan semua pekerjaan web yang dipicu dari slot pementasan Situs Saya.
 
 ## PARAMETERS
 
@@ -72,7 +72,7 @@ Tipe pekerjaan web.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Dipicu
-- Berkelanjutan
+- Terus menerus
 
 ```yaml
 Type: String
@@ -102,8 +102,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -143,11 +143,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzureWebsite](./Get-AzureWebsite.md)
+[Dapatkan-AzureWebsite](./Get-AzureWebsite.md)
 
-[New-AzureWebsiteJob](./New-AzureWebsiteJob.md)
+[AzureWebsiteJob Baru](./New-AzureWebsiteJob.md)
 
-[Remove-AzureWebsiteJob](./Remove-AzureWebsiteJob.md)
+[Hapus-AzureWebsiteJob](./Remove-AzureWebsiteJob.md)
 
 [Start-AzureWebsiteJob](./Start-AzureWebsiteJob.md)
 

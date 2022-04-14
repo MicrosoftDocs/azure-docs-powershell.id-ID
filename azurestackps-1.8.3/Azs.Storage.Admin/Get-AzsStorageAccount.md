@@ -4,11 +4,11 @@ Module Name: Azs.Storage.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: b4ec0639e31df3766550d6f7acc655cd3b5608bf
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136580493"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142240093"
 ---
 # Get-AzsStorageAccount
 
@@ -23,7 +23,7 @@ Get-AzsStorageAccount -FarmName <String> [-ResourceGroupName <String>] [-Summary
  [-Top <Int32>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsStorageAccount -FarmName <String> [-Name <String>] [-ResourceGroupName <String>] [<CommonParameters>]
 ```
@@ -50,12 +50,12 @@ Dapatkan daftar akun penyimpanan.
 Get-AzsStorageAccount -FarmName 431e8245-9e38-43e9-bf73-5f9cb2fbbdb6 -Name f8f7ff7335cb4ba284fb855547e48f34
 ```
 
-Dapatkan detail tentang akun penyimpanan tertentu.
+Dapatkan detail akun penyimpanan tertentu.
 
 ## PARAMETERS
 
 ### -FarmName
-Id Farm.
+Id Pertanian.
 
 ```yaml
 Type: String
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ringkasan
-Beralih untuk ringkasan wheter atau informasi detail dikembalikan.
+Beralih untuk ringkasan wheter atau informasi mendetail dikembalikan.
 
 ```yaml
 Type: SwitchParameter
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

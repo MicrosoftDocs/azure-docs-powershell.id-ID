@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzContainerNicConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzContainerNicConfig.md
 ms.openlocfilehash: 34394afe6e29d85be0757e2dfdf0a29f59e543aa
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139935025"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142124711"
 ---
 # New-AzContainerNicConfig
 
@@ -18,7 +18,7 @@ ms.locfileid: "139935025"
 Membuat objek konfigurasi antarmuka jaringan wadah baru.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azcontainernicconfig) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azcontainernicconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-AzContainerNicConfig [-Name <String>] [-IpConfiguration <PSIPConfigurationPr
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzContainerNicConfig** membuat objek konfigurasi antarmuka jaringan wadah baru. Objek ini menentukan karakteristik antarmuka jaringan wadah yang dibuat merujuk profil jaringan induk.
+Cmdlet **New-AzContainerNicConfig** membuat objek konfigurasi antarmuka jaringan kontainer baru. Objek ini menentukan karakteristik antarmuka jaringan kontainer yang dibuat merujuk profil jaringan induk.
 
 ## EXAMPLES
 
@@ -39,11 +39,11 @@ $containerNicConfig = New-AzContainerNicConfig -Name cnicConfig1
 $networkProfile = New-AzNetworkProfile -Name np1 -ResourceGroupName rg1 -Location westus -ContainerNetworkInterfaceConfiguration $containerNicConfig
 ```
 
-Perintah pertama membuat konfigurasi antarmuka jaringan wadah kosong. Perintah kedua membuat profil jaringan baru, meneruskan konfigurasi antarmuka jaringan wadah yang dibuat sebelumnya sebagai argumen ke New-NetworkProfile cmdlet.
+Perintah pertama membuat konfigurasi antarmuka jaringan wadah kosong. Yang kedua membuat profil jaringan baru, meneruskan konfigurasi antarmuka jaringan kontainer yang dibuat sebelumnya sebagai argumen ke cmdlet New-NetworkProfile.
 
 ### Contoh 2
 
-Membuat objek konfigurasi antarmuka jaringan wadah baru. (otomatisgenerated)
+Membuat objek konfigurasi antarmuka jaringan wadah baru. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpConfiguration
-Collection of IP configuration profiles which determine what ip configurations are created when a container nic is instantiated from this container network interface configuration
+Kumpulan profil konfigurasi IP yang menentukan konfigurasi ip apa yang dibuat ketika nic kontainer diinisiasi dari konfigurasi antarmuka jaringan kontainer ini
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSIPConfigurationProfile[]
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama konfigurasi antarmuka jaringan wadah.
+Nama konfigurasi antarmuka jaringan kontainer.
 
 ```yaml
 Type: System.String
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

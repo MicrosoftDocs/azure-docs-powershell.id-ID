@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzInsightsPrivateLinkScopedResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzInsightsPrivateLinkScopedResource.md
 ms.openlocfilehash: 680b28dc2cbc2a3bbac6e570f0aaabd0c21e69c1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140076095"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141800853"
 ---
 # New-AzInsightsPrivateLinkScopedResource
 
 ## SYNOPSIS
-buat untuk sumber daya yang lingkup link privat
+buat untuk sumber daya lingkup tautan privat
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/new-azinsightsprivatelinkscopedresource) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azinsightsprivatelinkscopedresource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ New-AzInsightsPrivateLinkScopedResource -LinkedResourceId <String> -Name <String
 ```
 
 ## DESCRIPTION
-buat untuk sumber daya dengan lingkup tautan privat, sumber daya yang lingkupnya bisa menjadi ruang kerja Analitik Log atau Insights aplikasi
+buat untuk sumber daya lingkup tautan privat, sumber daya yang dilingkup bisa berupa ruang kerja Analitik Log atau komponen Insights aplikasi
 
 ## EXAMPLES
 
@@ -48,7 +48,7 @@ $ai = Get-AzApplicationInsights -ResourceGroupName "rg_name" -Name "ai_name"
 New-AzInsightsPrivateLinkScopedResource -LinkedResourceId $ai.Id -ResourceGroupName "rg_name" -ScopeName "scope_name" -Name "scoped_resource_name"
 ```
 
-create scoped resource "scoped_resource_name" linked to application insights component "ai_name"
+buat sumber daya terlingkup "scoped_resource_name" yang ditautkan ke komponen wawasan aplikasi "ai_name"
 
 ## PARAMETERS
 
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -LinkedResourceId
-LA/AI Resource Id to Link
+ID Sumber Daya LA/AI ke Tautan
 
 ```yaml
 Type: System.String
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama sumber daya yang lingkup
+Nama sumber daya lingkup
 
 ```yaml
 Type: System.String
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScopeName
-Nama Lingkup Tautan Pribadi
+Nama Lingkup Private Link
 
 ```yaml
 Type: System.String
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
