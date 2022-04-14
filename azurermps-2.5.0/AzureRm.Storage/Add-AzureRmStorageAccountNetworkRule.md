@@ -4,11 +4,11 @@ Module Name: AzureRM.Storage
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.storage/add-azurermstorageaccountnetworkrule
 schema: 2.0.0
 ms.openlocfilehash: 0b1d497bbd7e976d942bdc3f99c6bea2d4c2c1cb
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140868346"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142103376"
 ---
 # Add-AzureRmStorageAccountNetworkRule
 
@@ -47,7 +47,7 @@ Add-AzureRmStorageAccountNetworkRule [-ResourceGroupName] <String> [-Name] <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureRmStorageAccountNetworkRule** menambahkan IpRules atau VirtualNetworkRules ke properti NetworkRule dari Storage tersebut
+Cmdlet **Add-AzureRmStorageAccountNetworkRule** menambahkan IpRules atau VirtualNetworkRules ke properti NetworkRule akun Storage
 
 ## EXAMPLES
 
@@ -58,7 +58,7 @@ PS C:\>Add-AzureRMStorageAccountNetworkRule -ResourceGroupName "myResourceGroup"
 
 Perintah ini menambahkan beberapa IpRules dengan IPAddressOrRange.
 
-### Contoh 2: Menambahkan VirtualNetworkRule dengan VirtualNetworkResourceID
+### Contoh 2: Tambahkan VirtualNetworkRule dengan VirtualNetworkResourceID
 ```
 PS C:\>$subnet = Get-AzureRmVirtualNetwork -ResourceGroupName "myResourceGroup" -Name "myvirtualnetwork" | Get-AzureRmVirtualNetworkSubnetConfig
 PS C:\>Add-AzureRMStorageAccountNetworkRule -ResourceGroupName "myResourceGroup" -Name "mystorageaccount" -VirtualNetworkResourceId $subnet[0].Id
@@ -66,25 +66,25 @@ PS C:\>Add-AzureRMStorageAccountNetworkRule -ResourceGroupName "myResourceGroup"
 
 Perintah ini menambahkan VirtualNetworkRule dengan VirtualNetworkResourceID.
 
-### Contoh 3: Tambahkan VirtualNetworkRules dengan Objek VirtualNetworkRule dari akun lain
+### Contoh 3: Tambahkan VirtualNetworkRules dengan VirtualNetworkRule Objects dari akun lain
 ```
 PS C:\> $networkrule = Get-AzureRMStorageAccountNetworkRuleSet -ResourceGroupName "myResourceGroup" -Name "mystorageaccount1"
 PS C:\> Add-AzureRMStorageAccountNetworkRule -ResourceGroupName "myResourceGroup" -Name "mystorageaccount2" -VirtualNetworkRule $networkrule.VirtualNetworkRules
 ```
 
-Perintah ini menambahkan VirtualNetworkRules dengan Objek VirtualNetworkRule dari akun lain.
+Perintah ini menambahkan VirtualNetworkRules dengan VirtualNetworkRule Objects dari akun lain.
 
 ### Contoh 4: Tambahkan beberapa IpRule dengan objek IpRule, input dengan JSON
 ```
 PS C:\>Add-AzureRMStorageAccountNetworkRule -ResourceGroupName "myResourceGroup" -Name "mystorageaccount" -IPRule (@{IPAddressOrRange="10.0.0.0/24";Action="allow"},@{IPAddressOrRange="28.2.0.0/16";Action="allow"})
 ```
 
-Perintah ini menambahkan beberapa IpRule dengan objek IpRule, diinput dengan JSON.
+Perintah ini menambahkan beberapa IpRule dengan objek IpRule, input dengan JSON.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -IPAddressOrRange
-Array IpAddressOrRange, tambahkan IpRules dengan ipAddressOrRange input dan Tindakan default Perbolehkan untuk Properti NetworkRule.
+Array IpAddressOrRange, tambahkan IpRules dengan input IpAddressOrRange dan Default Action Allow to NetworkRule Property.
 
 ```yaml
 Type: System.String[]
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -IPRule
-Array objek IpRule yang akan ditambahkan ke Properti NetworkRule.
+Array objek IpRule untuk ditambahkan ke Properti NetworkRule.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSIpRule[]
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama akun Storage Anda.
+Menentukan nama akun Storage.
 
 ```yaml
 Type: System.String
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya berisi akun Storage tersebut.
+Menentukan nama grup sumber daya berisi akun Storage.
 
 ```yaml
 Type: System.String
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkResourceId
-Array VirtualNetworkResourceId, akan menambahkan VirtualNetworkRule dengan input VirtualNetworkResourceId dan tindakan default Perbolehkan untuk Properti NetworkRule.
+Array VirtualNetworkResourceId, akan menambahkan VirtualNetworkRule dengan input VirtualNetworkResourceId dan Default Action Allow to NetworkRule Property.
 
 ```yaml
 Type: System.String[]
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Set-AzureRmVMAccessExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Set-AzureRmVMAccessExtension.md
 ms.openlocfilehash: 0a2d3ce354a5039db21fdd336f6f2d64efdb56fd
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423344"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142099654"
 ---
 # Set-AzureRmVMAccessExtension
 
@@ -29,25 +29,25 @@ Set-AzureRmVMAccessExtension [-Credential <PSCredential>] [-ResourceGroupName] <
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmVMAccessExtension** menambahkan Ekstensi VMAccess Mesin Virtual Access (VMAccess) Virtual Machine ke komputer virtual. Ekstensi VMAccess dapat digunakan untuk mengatur kata sandi sementara dan kata sandi ini harus segera diubah setelah masuk ke komputer. Hal ini tidak didukung pada Windows Pengontrol Domain.
+Cmdlet **Set-AzureRmVMAccessExtension** menambahkan Virtual Machine Access (VMAccess) Virtual Machine VMAccess Extension ke mesin virtual. Ekstensi VMAccess dapat digunakan untuk mengatur kata sandi sementara dan ini harus segera diubah setelah masuk ke komputer. Ini tidak didukung pada Windows Pengontrol Domain.
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan ekstensi VMAccess
+### Contoh 1: Menambahkan ekstensi VMAccess
 ```
 PS C:\> Set-AzureRmVMAccessExtension -ResourceGroupName "ResrouceGroup11" -Location "Central US" -VMName "VirtualMachine07" -Name "ContosoTest" -TypeHandlerVersion "2.4" -UserName "PFuller" -Password "Password"
 ```
 
 Perintah ini menambahkan ekstensi VMAccess untuk mesin virtual bernama VirtualMachine07 di ResrouceGroup11.
-Perintah menentukan versi penanganan tipe dan nama untuk VMAccess.
+Perintah menentukan nama dan versi pengatur tipe untuk VMAccess.
 
 ## PARAMETERS
 
-### -Credential
-Menentukan nama pengguna dan kata sandi untuk komputer virtual sebagai objek **PSCredential.**
-Jika mengetik nama yang berbeda dengan akun administrator lokal saat ini pada VM, ekstensi VMAccess akan menambahkan akun administrator lokal dengan nama tersebut, dan menetapkan kata sandi yang ditentukan untuk akun tersebut. Jika akun administrator lokal pada VM Anda ada, vm akan mengatur ulang kata sandi dan jika akun dinonaktifkan, ekstensi VMAccess akan mengaktifkannya.
+### -Kredensial
+Menentukan nama pengguna dan kata sandi untuk mesin virtual sebagai objek **PSCredential** .
+Jika Anda mengetikkan nama yang berbeda dari akun administrator lokal saat ini di VM, ekstensi VMAccess akan menambahkan akun administrator lokal dengan nama tersebut, dan menetapkan kata sandi yang ditentukan ke akun tersebut. Jika akun administrator lokal di VM Anda ada, akun tersebut akan mereset kata sandi dan jika akun dinonaktifkan, ekstensi VMAccess mengaktifkannya.
 Untuk mendapatkan kredensial, gunakan cmdlet Get-Credential.
-Untuk informasi selengkapnya, ketik `Get-Help Get-Credential` .
+Untuk informasi selengkapnya, ketik .`Get-Help Get-Credential`
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -90,9 +90,9 @@ Accept wildcard characters: False
 ```
 
 ### -ForceRerun
-Mengindikasikan bahwa cmdlet ini memaksa jalankan ulang konfigurasi ekstensi yang sama pada mesin virtual tanpa menghapus instalasi dan menginstal ulang ekstensi.
-Nilai dapatlah string apa pun yang berbeda dari nilai saat ini.
-Jika forceUpdateTag tidak diubah, pembaruan pada pengaturan publik atau yang diproteksi masih diterapkan oleh penanganan.
+Menunjukkan bahwa cmdlet ini memaksa pengintaian ulang konfigurasi ekstensi yang sama pada mesin virtual tanpa menghapus instalan dan menginstal ulang ekstensi.
+Nilai dapat berupa string apa pun yang berbeda dari nilai saat ini.
+Jika forceUpdateTag tidak diubah, pembaruan untuk pengaturan publik atau terproteksi masih diterapkan oleh handler.
 
 ```yaml
 Type: System.String
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi mesin virtual.
+Menentukan lokasi mesin maya.
 
 ```yaml
 Type: System.String
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama ekstensi yang tambahkan cmdlet ini.
+Menentukan nama ekstensi yang ditambahkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: System.String
@@ -152,8 +152,8 @@ Accept wildcard characters: False
 ```
 
 ### -TypeHandlerVersion
-Menentukan versi ekstensi untuk digunakan untuk komputer virtual ini.
-Untuk mendapatkan versi, jalankan cmdlet Get-AzureRmVMExtensionImage dengan nilai Microsoft.Compute untuk parameter *PublisherName* dan VMAccessAgent untuk parameter *Type.* typeHandlerVersion harus 2.0 atau lebih besar, karena versi 1 sudah tidak berlaku.
+Menentukan versi ekstensi yang akan digunakan untuk mesin virtual ini.
+Untuk mendapatkan versi, jalankan cmdlet Get-AzureRmVMExtensionImage dengan nilai Microsoft.Compute untuk parameter *PublisherName* dan VMAccessAgent untuk parameter *Tipe* . TypeHandlerVersion harus 2.0 atau lebih besar, karena versi 1 ditolak.
 
 ```yaml
 Type: System.String
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -235,7 +235,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmVMAccessExtension](./Get-AzureRmVMAccessExtension.md)
 
-[Remove-AzureRmVMAccessExtension](./Remove-AzureRmVMAccessExtension.md)
+[Hapus-AzureRmVMAccessExtension](./Remove-AzureRmVMAccessExtension.md)
 
 [Set-AzureRmVMExtension](./Set-AzureRmVMExtension.md)
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlobQueryResult.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlobQueryResult.md
 ms.openlocfilehash: 9acb6b26465bd23da71a073089fdf11e89345b8a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139966461"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142221931"
 ---
 # Get-AzStorageBlobQueryResult
 
 ## SYNOPSIS
-Menerapkan pernyataan Bahasa Permintaan Terstruktur (SQL) sederhana pada konten blob dan hanya menyimpan subkumpulan data yang dikumpul ke file lokal.
+Menerapkan pernyataan Sederhana Structured Query Language (SQL) pada konten blob dan hanya menyimpan subkumpulan data yang dikueri ke file lokal.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azstorageblobqueryresult) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageblobqueryresult) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,11 +55,11 @@ Get-AzStorageBlobQueryResult -BlobContainerClient <BlobContainerClient> [-Blob] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStorageBlobQueryResult** menerapkan pernyataan Bahasa Permintaan Terstruktur (SQL) sederhana pada konten blob dan menyimpan subset data yang dikueri ke file lokal.
+Cmdlet **Get-AzStorageBlobQueryResult** menerapkan pernyataan Sederhana Structured Query Language (SQL) pada konten blob dan menyimpan subset data yang dikueri ke file lokal.
 
 ## EXAMPLES
 
-### Contoh 1: Query a blob
+### Contoh 1: Kueri blob
 ```powershell
 PS C:\> $inputconfig = New-AzStorageBlobQueryConfig -AsCsv -HasHeader
 
@@ -76,7 +76,7 @@ BytesScanned FailureCount BlobQueryError
          449            0
 ```
 
-Perintah ini sebelumnya membuat kueri blob dengan input config as csv, dan output config as json, lalu menyimpan output ke file lokal "c:\resultfile.json".
+Perintah ini membuat kueri blob secara succsssful dengan konfigurasi input sebagai csv, dan output config sebagai json, dan menyimpan output ke file lokal "c:\resultfile.json".
 
 ### Contoh 2: Membuat kueri snapshot blob
 ```powershell
@@ -105,12 +105,12 @@ Name       Description                                                   IsFatal
 ParseError Unexpected token '1' at [byte: 3077737]. Expecting token ','.    True  7270632
 ```
 
-Perintah ini akan mengambil objek blob terlebih dahulu untuk snapshot blob, lalu membuat kueri snapshot blob dan memperlihatkan hasilnya menyertakan kesalahan kueri.
+Perintah ini terlebih dahulu mendapatkan objek blob untuk snapshot blob, lalu kueri snapshot blob dan memperlihatkan hasilnya menyertakan kesalahan kueri.
 
 ## PARAMETERS
 
 ### -Blob
-Nama Blob
+Nama blob
 
 ```yaml
 Type: System.String
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientTimeoutPerRequest
-Waktu eksekusi maksimal sisi klien untuk setiap permintaan dalam detik.
+Waktu eksekusi maksimum sisi klien untuk setiap permintaan dalam hitung detik.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -170,8 +170,8 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Jumlah total tugas bersama.
-Nilai default adalah 10.
+Jumlah total tugas asinkron serentak.
+Nilai defaultnya adalah 10.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -185,7 +185,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Container
+### -Kontainer
 Nama kontainer
 
 ```yaml
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Azure Storage Konteks
+Objek Konteks Penyimpanan Azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -230,8 +230,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Paksa untuk menimpa file yang sudah ada.
+### -Paksa
+Memaksa untuk menimpa file yang sudah ada.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -276,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan apakah blob tertentu berhasil dikuerifikasi.
+Mengembalikan apakah blob yang ditentukan berhasil dikueri.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -321,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Waktu server habis untuk setiap permintaan dalam hitungan detik.
+Waktu server habis untuk setiap permintaan dalam hitung detik.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -366,7 +366,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -382,7 +382,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -397,13 +397,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Azure. Storage. Blobs.Specialized.BlobBaseClient
+### Azure.Storage.Blobs.Specialized.BlobBaseClient
 
-### Azure. Storage. Blobs.BlobContainerClient
+### Azure.Storage.Blobs.BlobContainerClient
 
 ### Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
 

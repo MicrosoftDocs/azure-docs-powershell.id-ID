@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/Get-AzStorageServiceLoggingProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/Get-AzStorageServiceLoggingProperty.md
 ms.openlocfilehash: fc1cbddd59d52816b0f7ef3bd664405a98ead518
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426937"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142235251"
 ---
 # Get-AzStorageServiceLoggingProperty
 
 ## SYNOPSIS
-Mendapatkan properti pembuatan log untuk Azure Storage baru.
+Mendapatkan properti pembuatan log untuk layanan Penyimpanan Azure.
 
 ## SYNTAX
 
@@ -26,11 +26,11 @@ Get-AzStorageServiceLoggingProperty [-ServiceType] <StorageServiceType> [-Contex
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStorageServiceLoggingProperty** mendapatkan properti pembuatan log untuk Azure Storage baru.
+Cmdlet **Get-AzStorageServiceLoggingProperty** mendapatkan properti pembuatan log untuk layanan Penyimpanan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan properti pembuatan log untuk layanan Blob
+### Contoh 1: Dapatkan properti pembuatan log untuk layanan Blob
 ```
 C:\PS>Get-AzStorageServiceLoggingProperty -ServiceType Blob
 ```
@@ -72,11 +72,11 @@ Accept wildcard characters: False
 
 ### -ServiceType
 Menentukan tipe layanan penyimpanan.
-Cmdlet ini mendapatkan properti pembuatan log untuk tipe layanan yang ditentukan oleh parameter ini.
+Cmdlet ini mendapatkan properti pembuatan log untuk tipe layanan yang ditentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Blob 
-- Tabel
-- Antrean
+- Gumpalan 
+- Meja
+- Antrian
 - File Nilai File saat ini tidak didukung.
 
 ```yaml
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -101,7 +101,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.WindowsAz. Storage. Shared.Protocol.LoggingProperties
+### Microsoft.WindowsAz.Storage.Shared.Protocol.LoggingProperties
 
 ## CATATAN
 

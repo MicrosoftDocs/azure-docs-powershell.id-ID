@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/stop-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Stop-AzDataShareSubscriptionSynchronization.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Stop-AzDataShareSubscriptionSynchronization.md
-ms.openlocfilehash: 5de66e86d674732b2217b43fa72b1728281f58a7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 8b52754ad1fe6c06cdfe05f5cee1ecb1c0980c4c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140373095"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142112129"
 ---
 # Stop-AzDataShareSubscriptionSynchronization
 
 ## SYNOPSIS
-Menghentikan sinkronisasi berkelanjutan untuk langganan bersama. Langganan bersama dapat ditentukan melalui id sumber daya atau namanya.
+Berhenti menyinkronkan yang sedang berlangsung untuk langganan berbagi. Langganan berbagi dapat ditentukan melalui id sumber daya atau namanya.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datashare/stop-azdatasharesubscriptionsynchronization) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Stop-AzDataShareSubscriptionSynchronization -InputObject <PSDataShareSubscriptio
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzDataShareSubscriptionSynchronization** menghentikan sinkronisasi berkelanjutan untuk langganan bersama
+Cmdlet **Stop-AzDataShareSubscriptionSynchronization berhenti menyinkronkan** yang sedang berlangsung untuk langganan berbagi
 
 ## EXAMPLES
 
@@ -59,11 +62,11 @@ status            : Canceled
 synchronizationId : 20a4416b-b33b-4539-a908-71dc8ef698fb
 ```
 
-Berhenti sinkronisasi berkelanjutan yang diidentifikasi dengan id - 20a4416b-b33b-4539-a908-71dc8ef698fb
+Menghentikan sinkronisasi berkelanjutan yang diidentifikasi dengan id - 20a4416b-b33b-4539-a908-71dc8ef698fb
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun berbagi data Azure
 
 ```yaml
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya akun berbagi data Azure
+Nama grup sumber daya dari akun berbagi data azure
 
 ```yaml
 Type: System.String
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya langganan berbagi Azure
+Id sumber daya langganan berbagi azure
 
 ```yaml
 Type: System.String
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

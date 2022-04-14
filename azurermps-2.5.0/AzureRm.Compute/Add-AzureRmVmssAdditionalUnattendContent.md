@@ -5,16 +5,16 @@ ms.assetid: 9BE2E42C-594B-4B67-866C-BBA3B84AA5FD
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/add-azurermvmssadditionalunattendcontent
 schema: 2.0.0
 ms.openlocfilehash: c0ceb74c6880508f04fb0832c48d0752507f5a5b
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132415076"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142104494"
 ---
 # Add-AzureRmVmssAdditionalUnattendContent
 
 ## SYNOPSIS
-Menambahkan informasi ke file jawaban Windows Tanpa Windows.
+Menambahkan informasi ke file jawaban penyetelan Windows tanpa pengawas.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,22 +27,22 @@ Add-AzureRmVmssAdditionalUnattendContent [-VirtualMachineScaleSet] <PSVirtualMac
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureRmVmssAdditionalUnattendContent** menambahkan informasi ke file jawaban Windows Tanpa Pengawasan.
+**Cmdlet Add-AzureRmVmssAdditionalUnattendContent** menambahkan informasi ke file jawaban penyiapan Windows tanpa pengawasan.
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan informasi ke file jawaban Windows tanpa Windows
+### Contoh 1: Menambahkan informasi ke file jawaban penyiapan Windows tanpa pengamanan
 ```
 PS C:\> Add-AzureRmVmssAdditionalUnattendContent -VirtualMachineScaleSet $VMSS -ComponentName  $AUCComponentName -Content  $AUCContent -PassName $AUCPassName -SettingName  $AUCSetting
 ```
 
-Perintah ini menambahkan informasi ke file jawaban Windows tanpa Windows.
+Perintah ini menambahkan informasi ke file jawaban penyetelan Windows tanpa pengawas.
 
 ## PARAMETERS
 
 ### -ComponentName
 Menentukan nama komponen untuk dikonfigurasi dengan konten yang ditambahkan.
-Satu-satunya nilai yang dapat diizinkan adalah Microsoft-Windows-Shell-Setup.
+Satu-satunya nilai yang diperbolehkan adalah Microsoft-Windows-Shell-Setup.
 
 ```yaml
 Type: ComponentNames
@@ -57,8 +57,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Content
-Menentukan konten berformat XML yang ditambahkan ke file unattend.xml untuk jalur dan komponen yang ditentukan.
+### -Konten
+Menentukan konten berformat XML yang ditambahkan ke file unattend.xml untuk jalur dan komponen tertentu.
 
 ```yaml
 Type: String
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -88,8 +88,8 @@ Accept wildcard characters: False
 ```
 
 ### -PassName
-Menentukan nama pas yang berlaku untuk konten.
-Satu-satunya nilai yang dapat diizinkan adalah oobeSystem.
+Menentukan nama pass yang diterapkan konten.
+Satu-satunya nilai yang diperbolehkan adalah oobeSystem.
 
 ```yaml
 Type: PassNames
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -SettingName
-Menentukan nama pengaturan untuk menerapkan konten.
+Menentukan nama pengaturan tempat konten diterapkan.
 Nilai yang dapat diterima untuk parameter ini adalah::
 
 - FirstLogonCommands
@@ -124,9 +124,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -VirtualMachinescaleSet
-Tentukan objek Atur **Skala mesin** virtual.
-Anda dapat menggunakan cmdlet [New-AzureRmVmssConfig](./New-AzureRmVmssConfig.md) untuk membuat objek.
+### -VirtualMachineScaleSet
+Tentukan objek **Kumpulan Skala** mesin virtual.
+Anda dapat menggunakan cmdlet [New-AzureRmVmsConfig](./New-AzureRmVmssConfig.md) untuk membuat objek.
 
 ```yaml
 Type: PSVirtualMachineScaleSet
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -171,12 +171,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### VirtualMachinescaleSet
-Parameter 'VirtualMachineScaleSet' menerima nilai tipe 'VirtualMachineScaleSet' dari saluran
+### VirtualMachineScaleSet
+Parameter 'VirtualMachineScaleSet' menerima nilai tipe 'VirtualMachineScaleSet' dari pipeline
 
 ## OUTPUTS
 

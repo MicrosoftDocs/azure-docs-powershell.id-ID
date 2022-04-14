@@ -4,16 +4,16 @@ Module Name: AzureRM.KeyVault
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.keyvault/set-azurekeyvaultkeyattribute
 schema: 2.0.0
 ms.openlocfilehash: e7daafc147775b128351a7fa9ffb7b4d807bfe17
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132429195"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142104083"
 ---
 # Set-AzureKeyVaultKeyAttribute
 
 ## SYNOPSIS
-Memperbarui atribut kunci di kunci vault.
+Memperbarui atribut kunci dalam kubah kunci.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -26,35 +26,35 @@ Set-AzureKeyVaultKeyAttribute [-VaultName] <String> [-Name] <String> [[-Version]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureKeyVaultKeyAttribute** memperbarui atribut tombol yang dapat diedit di kunci vault.
+Cmdlet **Set-AzureKeyVaultKeyAttribute** memperbarui atribut kunci yang dapat diedit dalam kubah kunci.
 
 ## EXAMPLES
 
-### Contoh 1: Ubah kunci untuk mengaktifkannya, serta atur tanggal kedaluwarsa dan tag
+### Contoh 1: Memodifikasi kunci untuk mengaktifkannya, dan mengatur tanggal kedaluwarsa dan tag
 ```
 PS C:\>$Expires = (Get-Date).AddYears(2).ToUniversalTime()
 PS C:\> $Tags = @{'Severity' = 'high'; 'Accounting' = null}
 PS C:\> Set-AzureKeyVaultKeyAttribute -VaultName 'Contoso' -Name 'ITSoftware' -Expires $Expires -Enable $True -Tag $Tags -PassThru
 ```
 
-Perintah pertama membuat objek **DateTime** menggunakan cmdlet **Get-Date.** Objek tersebut menentukan waktu dua tahun di masa mendatang. Perintah menyimpan tanggal itu dalam $Expires variabel.
-Untuk informasi selengkapnya, ketik `Get-Help Get-Date` .
+Perintah pertama membuat objek **DateTime** menggunakan cmdlet **Get-Date** . Objek tersebut menentukan waktu dua tahun di masa mendatang. Perintah menyimpan tanggal tersebut dalam variabel $Expires.
+Untuk informasi selengkapnya, ketik .`Get-Help Get-Date`
 
 Perintah kedua membuat variabel untuk menyimpan nilai tag dengan tingkat keparahan tinggi dan Akuntansi.
 
-Perintah terakhir mengubah kunci bernama ITSoftware. Perintah mengaktifkan kunci, mengatur waktu kedaluwarsanya ke waktu yang disimpan di $Expires, dan mengatur tag yang disimpan di $Tags.
+Perintah akhir mengubah kunci bernama ITSoftware. Perintah mengaktifkan kunci, mengatur waktu kedaluwarsanya ke waktu yang disimpan di $Expires, dan mengatur tag yang disimpan di $Tags.
 
 ### Contoh 2: Mengubah kunci untuk menghapus semua tag
 ```
 PS C:\>Set-AzureKeyVaultKeyAttribute -VaultName 'Contoso' -Name 'ITSoftware' -Version '7EEA45C6EE50490B9C3176F80AC1A0DG' -Tag @{}
 ```
 
-Perintah ini menghapus semua tag untuk versi kunci tertentu bernama ITSoftware.
+Perintah ini menghapus semua tag untuk versi kunci tertentu yang bernama ITSoftware.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: IAzureContextContainer
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -Aktifkan
-Menentukan apakah akan mengaktifkan atau menonaktifkan kunci. Nilai nilai $True mengaktifkan kunci tersebut. Nilai dari $False menonaktifkan kunci. Jika Anda tidak menentukan parameter ini, cmdlet ini tidak akan mengubah status kunci.
+Menentukan apakah akan mengaktifkan atau menonaktifkan kunci. Nilai $True mengaktifkan kunci. Nilai $False menonaktifkan kunci. Jika Anda tidak menentukan parameter ini, cmdlet ini tidak mengubah status kunci.
 
 ```yaml
 Type: Boolean
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kedaluwarsa
-Menentukan waktu kedaluwarsa, sebagai objek **DateTime,** untuk kunci yang diperbarui cmdlet ini. Parameter ini menggunakan Waktu Universal Terkoordinasi (UTC). Untuk mendapatkan **objek DateTime,** gunakan cmdlet **Get-Date.** Untuk informasi selengkapnya, ketik `Get-Help Get-Date` .
+Menentukan waktu kedaluwarsa, sebagai objek **DateTime** , untuk kunci yang diperbarui cmdlet ini. Parameter ini menggunakan Waktu Universal Terkoordinasi (UTC). Untuk mendapatkan objek **DateTime** , gunakan cmdlet **Get-Date** . Untuk informasi selengkapnya, ketik .`Get-Help Get-Date`
 
 ```yaml
 Type: DateTime
@@ -99,19 +99,19 @@ Accept wildcard characters: False
 ```
 
 ### -KeyOps
-Menentukan larik operasi yang dapat dijalankan menggunakan kunci yang penambahan cmdlet ini.
-Jika Anda tidak menentukan parameter ini, semua operasi dapat dijalankan.
+Menentukan array operasi yang dapat dilakukan dengan menggunakan kunci yang ditambahkan cmdlet ini.
+Jika Anda tidak menentukan parameter ini, semua operasi dapat dilakukan.
 
-Nilai yang dapat diterima untuk parameter ini adalah daftar operasi kunci yang dipisahkan koma seperti yang ditetapkan oleh spesifikasi JSON Web Key. Nilai ini (peka huruf besar/kecil) adalah:
+Nilai yang dapat diterima untuk parameter ini adalah daftar operasi kunci yang dipisahkan koma seperti yang ditentukan oleh spesifikasi Kunci Web JSON. Nilai ini (peka huruf besar/kecil) adalah:
 
-- enkripsi
-- dekripsi
-- bungkus
-- unwrap
-- tanda tangan
-- verifikasi
-- pencadangan
-- pulihkan
+- Mengenkripsi
+- Mendekripsi
+- Bungkus
+- Membuka
+- Tanda
+- Memverifikasi
+- Cadangan
+- Mengembalikan
 
 ```yaml
 Type: String[]
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama kunci untuk diperbarui. Cmdlet ini menyusun nama domain (FQDN) yang sepenuhnya memenuhi syarat dari kunci berdasarkan nama yang ditentukan parameter ini, nama kunci vault, dan lingkungan Anda saat ini.
+Menentukan nama kunci yang akan diperbarui. Cmdlet ini menyusun nama domain yang sepenuhnya memenuhi syarat (FQDN) kunci berdasarkan nama yang ditentukan parameter ini, nama kubah kunci, dan lingkungan Anda saat ini.
 
 ```yaml
 Type: String
@@ -140,10 +140,10 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -NotBefore
-Menentukan waktu, sebagai objek **DateTime,** sebelum tombol tidak dapat digunakan.
+### -TidakBefore
+Menentukan waktu, sebagai objek **DateTime** , sebelum kunci tidak dapat digunakan.
 Parameter ini menggunakan UTC.
-Untuk mendapatkan **objek DateTime,** gunakan cmdlet **Get-Date.**
+Untuk mendapatkan objek **DateTime** , gunakan cmdlet **Get-Date** .
 
 ```yaml
 Type: DateTime
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -191,8 +191,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama key vault di mana cmdlet ini memodifikasi kunci tersebut.
-Cmdlet ini menyusun FQDN dari kunci vault berdasarkan nama yang ditentukan parameter ini dan lingkungan Anda saat ini.
+Menentukan nama kubah kunci tempat cmdlet ini mengubah kunci.
+Cmdlet ini menyusun FQDN kubah kunci berdasarkan nama yang ditentukan parameter ini dan lingkungan Anda saat ini.
 
 ```yaml
 Type: String
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 
 ### -Versi
 Menentukan versi kunci.
-Cmdlet ini menyusun FQDN dari kunci berdasarkan nama key vault, lingkungan yang Anda pilih saat ini, nama kunci, dan versi kunci.
+Cmdlet ini menyusun FQDN kunci berdasarkan nama kubah kunci, lingkungan yang dipilih saat ini, nama kunci, dan versi kunci.
 
 ```yaml
 Type: String
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -270,4 +270,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureKeyVaultKey](./Get-AzureKeyVaultKey.md)
 
-[Remove-AzureKeyVaultKey](./Remove-AzureKeyVaultKey.md)
+[Hapus-AzureKeyVaultKey](./Remove-AzureKeyVaultKey.md)

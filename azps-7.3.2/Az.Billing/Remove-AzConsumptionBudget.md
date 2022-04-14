@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Remove-AzConsumptionBudget.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Remove-AzConsumptionBudget.md
-ms.openlocfilehash: 613241ac8162dd862fdc0855709a436a90d258d2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3638638f2c5d99e0fb220cb27f950a2ec26f2e47
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140382398"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142073713"
 ---
 # Remove-AzConsumptionBudget
 
 ## SYNOPSIS
-Hapus anggaran dalam langganan atau grup sumber daya.
+Hapus anggaran baik dalam langganan atau grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.billing/remove-azconsumptionbudget) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,18 +28,18 @@ Remove-AzConsumptionBudget [-DefaultProfile <IAzureContextContainer>] -Name <Str
  [-ResourceGroupName <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Pemipaan
+### Pipa
 ```
 Remove-AzConsumptionBudget [-DefaultProfile <IAzureContextContainer>] -InputObject <PSBudget> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzConsumptionBudget cmdlet menghapus anggaran baik dalam langganan maupun grup sumber daya.
+Cmdlet Remove-AzConsumptionBudget menghapus anggaran baik dalam langganan atau grup sumber daya.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus anggaran dengan nama anggaran di tingkat langganan
+### Contoh 1: Menghapus anggaran dengan nama anggaran pada tingkat langganan
 ```powershell
 Remove-AzConsumptionBudget -Name PSBudget -PassThru
 ```
@@ -54,7 +57,7 @@ Remove-AzConsumptionBudget -ResourceGroupName RGBudgets -Name PSBudgetRG -PassTh
 True
 ```
 
-### Contoh 3: Hapus anggaran melalui pemipaan pada tingkat langganan
+### Contoh 3: Menghapus anggaran melalui pipa pada tingkat langganan
 ```powershell
 Get-AzConsumptionBudget -Name PSBudget | Remove-AzConsumptionBudget -PassThru
 ```
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -183,7 +186,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### System.Boolean
 
 ## CATATAN
-- Saat ini, SDK PowerShell untuk Pemakaian hanya tersedia bagi Perjanjian Enterprise pelanggan.
-- PowerShell SDK untuk Konsumsi menggunakan versi Anggaran API yang lebih lama dan beberapa item yang tidak kompatibel mundur seperti daftar Anggaran dengan filter tidak akan berfungsi seperti yang diharapkan.
+- Saat ini, SDK PowerShell untuk Pemakaian hanya tersedia untuk pelanggan Perjanjian Enterprise.
+- SDK PowerShell untuk Pemakaian menggunakan versi API Anggaran yang lebih lama dan beberapa item yang tidak kompatibel seperti daftar Anggaran dengan filter tidak akan berfungsi seperti yang diharapkan.
 
 ## RELATED LINKS

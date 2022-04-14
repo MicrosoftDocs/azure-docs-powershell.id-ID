@@ -4,19 +4,19 @@ Module Name: AzureRM.Resources
 ms.assetid: 2D882B33-2B62-4785-AF8F-5F4644E9504D
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.resources/remove-azurermroledefinition
 schema: 2.0.0
-ms.openlocfilehash: da200e88dae6e5228cd0681c878b2643b71f4f2dc900f8b4a8a5fac24b6086cd
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 90b7b0b1d7909210d86ec1d5ac6b465f6e9fb239
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417771"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142103517"
 ---
 # Remove-AzureRmRoleDefinition
 
 ## SYNOPSIS
 Menghapus peran kustom di Azure RBAC.
-Peran yang akan dihapus ditentukan menggunakan properti Id dari peran tersebut.
-Delete akan gagal jika terdapat penetapan peran yang ada yang dilakukan pada peran kustom.
+Peran yang akan dihapus ditentukan menggunakan properti Id peran tersebut.
+Hapus akan gagal jika ada penetapan peran yang sudah ada yang dibuat untuk peran kustom.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -42,10 +42,10 @@ Remove-AzureRmRoleDefinition -InputObject <PSRoleDefinition> [-Force] [-PassThru
 
 ## DESCRIPTION
 Cmdlet Remove-AzureRmRoleDefinition menghapus peran kustom di Azure Role-Based Access Control.
-Menyediakan parameter Id dari peran kustom yang sudah ada untuk menghapus peran kustom itu.
-Secara default, Remove-AzureRmRoleDefinition akan meminta konfirmasi.
+Berikan parameter Id dari peran kustom yang sudah ada untuk menghapus peran kustom tersebut.
+Secara default, Remove-AzureRmRoleDefinition meminta konfirmasi.
 Untuk menyembunyikan perintah, gunakan parameter Paksa.
-Jika ada penetapan peran yang ada yang dilakukan pada peran kustom untuk dihapus, penghapusan akan gagal.
+Jika ada penetapan peran yang dibuat untuk peran kustom yang akan dihapus, penghapusan akan gagal.
 
 ## EXAMPLES
 
@@ -62,7 +62,7 @@ Remove-AzureRmRoleDefinition -Id "52a6cc13-ff92-47a8-a39b-2a8205c3087e"
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -76,7 +76,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Jika diatur, tidak meminta konfirmasi sebelum menghapus peran kustom
 
 ```yaml
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -209,11 +209,11 @@ Parameter: InputObject (ByValue)
 ### System.Boolean
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, resource, group, template, deployment
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Templat, penyebaran
 
 ## RELATED LINKS
 
-[New-AzureRmRoleDefinition](./New-AzureRmRoleDefinition.md)
+[AzureRmRoleDefinition Baru](./New-AzureRmRoleDefinition.md)
 
 [Get-AzureRmRoleDefinition](./Get-AzureRmRoleDefinition.md)
 

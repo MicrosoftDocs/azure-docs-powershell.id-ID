@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreTrustedIdProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreTrustedIdProvider.md
 ms.openlocfilehash: 900ef1286240d701214d4823788bcd95a3b363c4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140484231"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142086117"
 ---
 # Set-AzDataLakeStoreTrustedIdProvider
 
 ## SYNOPSIS
-Mengubah penyedia identitas tepercaya yang ditentukan di Data Lake Store yang ditentukan.
+Mengubah penyedia identitas tepercaya tertentu dalam Data Lake Store tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakestore/set-azdatalakestoretrustedidprovider) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/set-azdatalakestoretrustedidprovider) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Set-AzDataLakeStoreTrustedIdProvider [-Account] <String> [-Name] <String> [-Prov
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzDataLakeStoreTrustedIdProvider** memodifikasi penyedia identitas tepercaya tertentu di Data Lake Store yang ditentukan.
+Cmdlet **Set-AzDataLakeStoreTrustedIdProvider** mengubah penyedia identitas tepercaya tertentu dalam Data Lake Store yang ditentukan.
 
 ## EXAMPLES
 
@@ -39,7 +39,7 @@ Cmdlet **Set-AzDataLakeStoreTrustedIdProvider** memodifikasi penyedia identitas 
 PS C:\> Set-AzDataLakeStoreTrustedIdProvider -AccountName "ContosoADL" -Name MyProvider -ProviderEndpoint "https://sts.windows.net/6b04908c-b91f-40ce-8024-7ee8a4fd6150"
 ```
 
-Langkah ini memperbarui titik akhir penyedia untuk aturan firewall "MyProvider" di akun "ContosoADL" untuk "https://sts.windows.net/6b04908c-b91f-40ce-8024-7ee8a4fd6150"
+Ini memperbarui titik akhir penyedia untuk aturan firewall "MyProvider" dalam akun "ContosoADL" menjadi "https://sts.windows.net/6b04908c-b91f-40ce-8024-7ee8a4fd6150"
 
 ## PARAMETERS
 
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

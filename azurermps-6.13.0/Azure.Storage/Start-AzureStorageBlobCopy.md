@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/Storage/Commands.Storage/help/Start-AzureStorageBlobCopy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/Storage/Commands.Storage/help/Start-AzureStorageBlobCopy.md
 ms.openlocfilehash: 9c0b679c95515fcde31caa4e7a772f6f9ce36d71
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427648"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142066171"
 ---
 # Start-AzureStorageBlobCopy
 
 ## SYNOPSIS
-Memulai menyalin blob.
+Mulai menyalin sebuah blob.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -114,59 +114,59 @@ Cmdlet **Start-AzureStorageBlobCopy** mulai menyalin blob.
 
 ## EXAMPLES
 
-### Contoh 1: Menyalin blob bernama
+### Contoh 1: Salin blob bernama
 ```
 C:\PS>Start-AzureStorageBlobCopy -SrcBlob "ContosoPlanning2015" -DestContainer "ContosoArchives" -SrcContainer "ContosoUploads"
 ```
 
-Perintah ini memulai operasi penyalinan blob yang bernama ContosoPlanning2015 dari wadah yang bernama ContosoUploads ke wadah yang bernama ContosoArchives.
+Perintah ini memulai operasi salinan gumpalan bernama ContosoPlanning2015 dari wadah bernama ContosoUploads ke wadah bernama ContosoArchives.
 
 ### Contoh 2: Dapatkan wadah untuk menentukan blob untuk disalin
 ```
 C:\PS>Get-AzureStorageContainer -Name "ContosoUploads" | Start-AzureStorageBlobCopy -SrcBlob "ContosoPlanning2015" -DestContainer "ContosoArchives"
 ```
 
-Perintah ini mendapatkan wadah bernama ContosoUploads, menggunakan cmdlet **Get-AzureStorageContainer,** lalu meneruskan wadah ke cmdlet saat ini menggunakan operator pipeline.
-Cmdlet tersebut memulai operasi penyalinan blob bernama ContosoPlanning2015.
+Perintah ini mendapatkan wadah bernama ContosoUploads, dengan menggunakan cmdlet **Get-AzureStorageContainer** , lalu meneruskan kontainer ke cmdlet saat ini menggunakan operator pipeline.
+Cmdlet itu memulai operasi salinan blob bernama ContosoPlanning2015.
 Cmdlet sebelumnya menyediakan wadah sumber.
 Parameter *DestContainer* menentukan ContosoArchives sebagai wadah tujuan.
 
-### Contoh 3: Get all blobs in a container and copy them
+### Contoh 3: Dapatkan semua blob dalam wadah dan salin
 ```
 C:\PS>Get-AzureStorageBlob -Container "ContosoUploads" | Start-AzureStorageBlobCopy -DestContainer "ContosoArchives"
 ```
 
-Perintah ini menghasilkan blob dalam wadah yang bernama ContosoUploads, menggunakan cmdlet **Get-AzureStorageBlob,** lalu meneruskan hasilnya ke cmdlet saat ini menggunakan operator pipeline.
-Cmdlet tersebut memulai operasi penyalinan blob ke wadah yang bernama ContosoArchives.
+Perintah ini mendapatkan blob dalam wadah bernama ContosoUploads, dengan menggunakan cmdlet **Get-AzureStorageBlob** , lalu meneruskan hasil ke cmdlet saat ini menggunakan operator pipeline.
+Cmdlet itu memulai operasi salinan gumpalan ke wadah bernama ContosoArchives.
 
-### Contoh 4: Menyalin blob yang ditentukan sebagai objek
+### Contoh 4: Salin blob yang ditentukan sebagai objek
 ```
 C:\PS>$SrcBlob = Get-AzureStorageBlob -Container "ContosoUploads" -Blob "ContosoPlanning2015"
 C:\PS> $DestBlob = Get-AzureStorageBlob -Container "ContosoArchives" -Blob "ContosoPlanning2015Archived"
 C:\PS> Start-AzureStorageBlobCopy -ICloudBlob $SrcBlob.ICloudBlob -DestICloudBlob $DestBlob.ICloudBlob
 ```
 
-Perintah pertama mendapatkan blob bernama ContosoPlanning2015 dalam wadah yang bernama ContosoUploads.
-Perintah menyimpan objek tersebut dalam $SrcBlob variabel.
-Perintah kedua mendapatkan blob bernama ContosoPlanning2015Archived dalam wadah yang bernama ContosoArchives.
-Perintah menyimpan objek tersebut dalam $DestBlob variabel.
-Perintah terakhir memulai operasi penyalinan dari wadah sumber ke wadah tujuan.
-Perintah menggunakan notasi titik standar untuk menentukan **objek ICloudBlob** untuk $SrcBlob dan $DestBlob blob.
+Perintah pertama mendapatkan blob bernama ContosoPlanning2015 dalam wadah bernama ContosoUploads.
+Perintah menyimpan objek tersebut dalam variabel $SrcBlob.
+Perintah kedua mendapatkan gumpalan bernama ContosoPlanning2015Archived dalam wadah bernama ContosoArchives.
+Perintah menyimpan objek tersebut dalam variabel $DestBlob.
+Perintah terakhir memulai operasi salin dari wadah sumber ke wadah tujuan.
+Perintah menggunakan notasi titik standar untuk menentukan objek **ICloudBlob** untuk $SrcBlob dan gumpalan $DestBlob.
 
-### Contoh 5: Menyalin blob dari URI
+### Contoh 5: Salin blob dari URI
 ```
 C:\PS>$Context = New-AzureStorageContext -StorageAccountName "ContosoGeneral" -StorageAccountKey "< Storage Key for ContosoGeneral ends with == >"
 C:\PS> Start-AzureStorageBlobCopy -AbsoluteUri "http://www.contosointernal.com/planning" -DestContainer "ContosoArchive" -DestBlob "ContosoPlanning2015" -DestContext $Context
 ```
 
-Perintah ini akan membuat konteks untuk akun bernama ContosoGeneral yang menggunakan kunci tertentu, lalu menyimpan kunci tersebut di $Context tertentu.
-Perintah kedua menyalin file dari URI tertentu ke blob bernama ContosoPlanning dalam wadah yang bernama ContosoArchive.
-Perintah tersebut memulai operasi penyalinan dalam konteks yang disimpan di $Context.
+Perintah ini membuat konteks untuk akun bernama ContosoGeneral yang menggunakan kunci tertentu, lalu menyimpan kunci tersebut dalam variabel $Context.
+Perintah kedua menyalin file dari URI yang ditentukan ke blob bernama ContosoPlanning dalam wadah bernama ContosoArchive.
+Perintah memulai operasi salin dalam konteks yang disimpan di $Context.
 
 ## PARAMETERS
 
 ### -AbsoluteUri
-Menentukan URI absolut dari file untuk disalin ke Azure Storage blob.
+Menentukan URI absolut dari file untuk disalin ke blob Azure Storage.
 
 ```yaml
 Type: System.String
@@ -181,9 +181,9 @@ Accept wildcard characters: False
 ```
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu yang habis di sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba permintaan.
-Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini akan mengembalikan kesalahan.
+Menentukan interval waktu habis pihak klien, dalam hitungan detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -198,8 +198,8 @@ Accept wildcard characters: False
 ```
 
 ### -CloudBlob
-Menentukan objek **CloudBlob** dari Azure Storage Client.
-Untuk mendapatkan objek **CloudBlob,** gunakan cmdlet Get-AzureStorageBlob cmdlet.
+Menentukan objek **CloudBlob** dari pustaka Klien Azure Storage.
+Untuk mendapatkan objek **CloudBlob** , gunakan cmdlet Get-AzureStorageBlob.
 
 ```yaml
 Type: Microsoft.WindowsAzure.Storage.Blob.CloudBlob
@@ -214,9 +214,9 @@ Accept wildcard characters: False
 ```
 
 ### -CloudBlobContainer
-Menentukan objek **CloudBlobContainer** dari Azure Storage Client.
+Menentukan objek **CloudBlobContainer** dari pustaka klien Azure Storage.
 Cmdlet ini menyalin blob dari wadah yang ditentukan parameter ini.
-Untuk mendapatkan objek **CloudBlobContainer,** gunakan cmdlet Get-AzureStorageContainer cmdlet.
+Untuk mendapatkan objek **CloudBlobContainer** , gunakan cmdlet Get-AzureStorageContainer.
 
 ```yaml
 Type: Microsoft.WindowsAzure.Storage.Blob.CloudBlobContainer
@@ -231,11 +231,11 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan jumlah maksimum panggilan jaringan bersama.
-Anda dapat menggunakan parameter ini untuk membatasi konkurensi guna membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Menentukan maksimum panggilan jaringan serentak.
+Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
 Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
-Parameter ini bisa membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth yang rendah, seperti 100 kilobit per detik.
-Nilai default adalah 10.
+Parameter ini dapat membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth rendah, seperti 100 kilobit per detik.
+Nilai defaultnya adalah 10.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -320,7 +320,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestCloudBlob
-Menentukan objek **CloudBlob tujuan**
+Menentukan objek **CloudBlob** tujuan
 
 ```yaml
 Type: Microsoft.WindowsAzure.Storage.Blob.CloudBlob
@@ -365,8 +365,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Mengindikasikan bahwa cmdlet ini menimpa blob tujuan tanpa meminta konfirmasi.
+### -Paksa
+Menunjukkan bahwa cmdlet ini menimpa blob tujuan tanpa meminta konfirmasi kepada Anda.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -381,7 +381,7 @@ Accept wildcard characters: False
 ```
 
 ### -PremiumPageBlobTier
-Premium Tier Blob Halaman
+Tingkat Blob Halaman Premium
 
 ```yaml
 Type: Microsoft.WindowsAzure.Storage.Blob.PremiumPageBlobTier
@@ -397,7 +397,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan interval waktu habis di sisi layanan, dalam detik, untuk permintaan.
+Menentukan interval batas waktu sisi layanan, dalam detik, untuk permintaan.
 Jika interval yang ditentukan berlalu sebelum layanan memproses permintaan, layanan penyimpanan mengembalikan kesalahan.
 
 ```yaml
@@ -443,7 +443,7 @@ Accept wildcard characters: False
 ```
 
 ### -SrcDir
-Menentukan objek **CloudFileDirectory** dari Azure Storage Client.
+Menentukan objek **CloudFileDirectory** dari pustaka Klien Azure Storage.
 
 ```yaml
 Type: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
@@ -458,8 +458,8 @@ Accept wildcard characters: False
 ```
 
 ### -SrcFile
-Spesifikasi objek **CloudFile** dari Azure Storage Client.
-Anda dapat membuatnya atau menggunakan Get-AzureStorageFile cmdlet.
+Menspekuifikasikan objek **CloudFile** dari pustaka Klien Azure Storage.
+Anda dapat membuatnya atau menggunakan cmdlet Get-AzureStorageFile.
 
 ```yaml
 Type: Microsoft.WindowsAzure.Storage.File.CloudFile
@@ -474,7 +474,7 @@ Accept wildcard characters: False
 ```
 
 ### -SrcFilePath
-Menentukan jalur relatif file sumber dari direktori sumber atau berbagi sumber.
+Menentukan jalur relatif file sumber dari direktori sumber atau sumber berbagi.
 
 ```yaml
 Type: System.String
@@ -489,8 +489,8 @@ Accept wildcard characters: False
 ```
 
 ### -SrcShare
-Menentukan objek **CloudFileShare** dari Azure Storage Client.
-Anda dapat membuatnya atau menggunakan Get-AzureStorageShare cmdlet.
+Menentukan objek **CloudFileShare** dari pustaka Klien Azure Storage.
+Anda dapat membuatnya atau menggunakan cmdlet Get-AzureStorageShare.
 
 ```yaml
 Type: Microsoft.WindowsAzure.Storage.File.CloudFileShare
@@ -520,7 +520,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -536,7 +536,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -551,7 +551,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -568,7 +568,7 @@ Parameter: SrcFile (ByValue)
 
 ## OUTPUTS
 
-### Microsoft.WindowsAzure.commands.common. Storage. ResourceModel.AzureStorageBlob
+### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureStorageBlob
 
 ## CATATAN
 

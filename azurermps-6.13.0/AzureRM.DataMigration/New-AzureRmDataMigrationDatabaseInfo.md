@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataMigration/Commands.DataMigration/help/New-AzureRmDataMigrationDatabaseInfo.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataMigration/Commands.DataMigration/help/New-AzureRmDataMigrationDatabaseInfo.md
 ms.openlocfilehash: c04a79a54e42c64fe897a419565e4816964879b6
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140854077"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142098789"
 ---
 # New-AzureRmDataMigrationDatabaseInfo
 
 ## SYNOPSIS
-Membuat objek DatabaseInfo untuk Layanan Migrasi Database Azure, yang menentukan sumber database untuk migrasi.
+Membuat objek DatabaseInfo untuk Azure Database Migration Service, yang menentukan sumber database untuk migrasi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ New-AzureRmDataMigrationDatabaseInfo -SourceDatabaseName <String> [-DefaultProfi
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzureRmDataMigrationDatabaseInfo membuat objek DatabaseInfo yang menentukan instans database sumber untuk dimigrasi. Nama database dianggap sebagai parameter input.
+Cmdlet New-AzureRmDataMigrationDatabaseInfo membuat objek DatabaseInfo yang menentukan instans database sumber yang akan dimigrasikan. Nama database diambil sebagai parameter input.
 
 ## EXAMPLES
 
@@ -37,12 +37,12 @@ PS C:\> New-AzureRmDataMigrationDatabaseInfo -SourceDatabaseName 'AdventureWorks
 ```
 
 Contoh sebelumnya membuat objek DatabaseInfo baru untuk database sumber **AdventureWorks2016**.
-Skrip ini mengasumsikan bahwa Anda sudah masuk ke akun Azure. Anda dapat mengonfirmasi status masuk menggunakan cmdlet Get-AzureSubscription.
+Skrip ini mengasumsikan bahwa Anda sudah masuk ke akun Azure Anda. Anda dapat mengonfirmasi status masuk menggunakan cmdlet Get-AzureSubscription.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -72,11 +72,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

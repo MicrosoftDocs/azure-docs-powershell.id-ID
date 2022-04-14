@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/FrontDoor/Commands.FrontDoor/help/Set-AzureRmFrontDoorFireWallPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/FrontDoor/Commands.FrontDoor/help/Set-AzureRmFrontDoorFireWallPolicy.md
 ms.openlocfilehash: a02510cc72b9e674f9d4fded1355ae5b2cadc807
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426322"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142097991"
 ---
 # Set-AzureRmFrontDoorFireWallPolicy
 
@@ -104,12 +104,12 @@ Type               :
 
 memperbarui kebijakan WAF yang sudah ada
 
-### Contoh 4: perbarui semua kebijakan WAF di $resourceGroup
+### Contoh 4: memperbarui semua kebijakan WAF dalam $resourceGroup
 ```powershell
 PS C:\> Get-AzureRmFrontDoorFireWallPolicy -ResourceGroupName $resourceGroup | Set-AzureRmFrontDoorFireWallPolicy -Customrule $customRule -ManagedRule $managedRule -EnabledState $enabledState -Mode $mode
 ```
 
-perbarui semua kebijakan WAF di $resourceGroup
+memperbarui semua kebijakan WAF di $resourceGroup
 
 ## PARAMETERS
 
@@ -144,8 +144,8 @@ Accept wildcard characters: False
 ```
 
 ### -EnabledState
-Apakah kebijakan berada dalam status diaktifkan atau status dinonaktifkan.
-Kemungkinan nilai meliputi: 'Dinonaktifkan', 'Diaktifkan'
+Apakah kebijakan dalam status aktif atau status nonaktif.
+Nilai yang memungkinkan termasuk: 'Dinonaktifkan', 'Diaktifkan'
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSEnabledState
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek FireWallPolicy yang akan diperbarui.
+Objek FireWallPolicy untuk diperbarui.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSPolicy
@@ -191,8 +191,8 @@ Accept wildcard characters: False
 ```
 
 ### -Mode
-Menjelaskan apakah mode itu ada dalam mode deteksi atau mode pencegahan di tingkat kebijakan.
-Nilai yang memungkinkan antara lain:'Pencegahan', 'Deteksi'
+Menjelaskan apakah mode tersebut berada dalam mode deteksi atau mode pencegahan pada tingkat kebijakan.
+Nilai yang memungkinkan termasuk:'Pencegahan', 'Deteksi'
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSMode
@@ -253,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -269,7 +269,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -284,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -300,7 +300,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmFrontDoorFireWallPolicy](./New-AzureRmFrontDoorFireWallPolicy.md) 
- [Get-AzureRmFrontDoorFireWallPolicy](./Get-AzureRmFrontDoorFireWallPolicy.md) 
- [New-AzureRmFrontDoorManagedRuleObject](./New-AzureRmFrontDoorManagedRuleObject.md) 
+[New-AzureRmFrontDoorFireWallPolicy](./New-AzureRmFrontDoorFireWallPolicy.md)
+ [Get-AzureRmFrontDoorFireWallPolicy](./Get-AzureRmFrontDoorFireWallPolicy.md)
+ [New-AzureRmFrontDoorManagedRuleObject](./New-AzureRmFrontDoorManagedRuleObject.md)
  [New-AzureRmFrontDoorCustomRuleObject](./New-AzureRmFrontDoorManagedRuleObject.md)

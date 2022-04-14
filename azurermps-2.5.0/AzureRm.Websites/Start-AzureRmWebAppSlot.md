@@ -5,11 +5,11 @@ ms.assetid: 0FDDDEE1-CEAD-46DA-A7EB-EE477ED59749
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.websites/start-azurermwebappslot
 schema: 2.0.0
 ms.openlocfilehash: 97bf4078ca09ce250fea0d7c660629fbab651974
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421916"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142103343"
 ---
 # Start-AzureRmWebAppSlot
 
@@ -32,7 +32,7 @@ Start-AzureRmWebAppSlot [-WebApp] <Site> [-DefaultProfile <IAzureContextContaine
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzureRmWebAppSlot** memulai Slot Azure Web App.
+Cmdlet **Start-AzureRmWebAppSlot** memulai Azure Web App Slot.
 
 ## EXAMPLES
 
@@ -41,12 +41,12 @@ Cmdlet **Start-AzureRmWebAppSlot** memulai Slot Azure Web App.
 PS C:\>Start-AzureRmWebAppSlot -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -Slot "Slot001"
 ```
 
-Perintah ini memulai Slot bernama Slot001 yang terkait dengan Aplikasi Web bernama ContosoWebApp yang termasuk dalam grup sumber daya bernama Default-Web-WestUS.
+Perintah ini memulai Slot bernama Slot001 yang berkaitan dengan Aplikasi Web bernama ContosoWebApp yang termasuk dalam grup sumber daya bernama Default-Web-WestUS.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -136,9 +136,9 @@ Parameter 'WebApp' menerima nilai tipe 'Situs' dari saluran
 
 [Get-AzureRMWebAppSlot](./Get-AzureRMWebAppSlot.md)
 
-[New-AzureRMWebAppSlot](./New-AzureRMWebAppSlot.md)
+[AzureRM BaruWebAppSlot](./New-AzureRMWebAppSlot.md)
 
-[Remove-AzureRMWebAppSlot](./Remove-AzureRMWebAppSlot.md)
+[Hapus-AzureRMWebAppSlot](./Remove-AzureRMWebAppSlot.md)
 
 [Mulai ulang-AzureRMWebAppSlot](./Restart-AzureRMWebAppSlot.md)
 

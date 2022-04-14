@@ -5,16 +5,16 @@ ms.assetid: CAA3E6A9-7E1A-4D57-A269-0B2D3D9C3BEC
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/get-azurermvmsqlserverextension
 schema: 2.0.0
 ms.openlocfilehash: 6b02a83c7664fa460cd4ebd25a1754a8bc57e784
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422007"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142104397"
 ---
 # Get-AzureRmVMSqlServerExtension
 
 ## SYNOPSIS
-Dapatkan pengaturan untuk ekstensi SQL Server di komputer virtual.
+Mendapatkan pengaturan untuk ekstensi SQL Server di mesin virtual.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -26,7 +26,7 @@ Get-AzureRmVMSqlServerExtension [-ResourceGroupName] <String> [-VMName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmVMSqlServerExtension** mendapatkan pengaturan infrastruktur SQL Server sebagai Agen layanan (IaaS) di komputer virtual.
+Cmdlet **Get-AzureRmVMSqlServerExtension** mendapatkan pengaturan infrastruktur SQL Server sebagai agen layanan (IaaS) pada mesin virtual.
 
 ## EXAMPLES
 
@@ -42,9 +42,9 @@ AutoPatchingSettings : Microsoft.WindowsAzure.Commands.ServiceManagement.IaaS.Ex
 AutoBackupSettings   : Microsoft.WindowsAzure.Commands.ServiceManagement.IaaS.Extensions.AutoBackupSettings
 ```
 
-Perintah ini mendapatkan pengaturan ekstensi SQL Server pada komputer virtual bernama ContosoVM07.
+Perintah ini mendapatkan pengaturan ekstensi SQL Server pada mesin virtual bernama ContosoVM07.
 
-### Contoh 2: Dapatkan pengaturan dengan menggunakan saluran
+### Contoh 2: Dapatkan pengaturan dengan menggunakan pipeline
 ```
 PS C:\> Get-AzureRmVM -ServiceName "Service08" -Name "ContosoVM22" | Get-AzureRmVMSqlServerExtension
 ExtensionName        : SqlIaaSAgent
@@ -56,12 +56,12 @@ AutoPatchingSettings : Microsoft.WindowsAzure.Commands.ServiceManagement.IaaS.Ex
 AutoBackupSettings   : Microsoft.WindowsAzure.Commands.ServiceManagement.IaaS.Extensions.AutoBackupSettings
 ```
 
-Perintah ini mendapatkan mesin virtual bernama ContosoVM22 pada layanan Service08 menggunakan cmdlet Get-AzureRmVM cmdlet.
-Perintah itu menyampaikan hasilnya ke cmdlet saat ini dengan menggunakan operator pipeline.
+Perintah ini mendapatkan mesin virtual bernama ContosoVM22 pada service Service08 dengan menggunakan cmdlet Get-AzureRmVM.
+Perintah meneruskan hasil ke cmdlet saat ini menggunakan operator pipeline.
 
-Perintah saat ini mendapatkan pengaturan agen SQL Server IaaS di komputer virtual tersebut.
+Perintah saat ini mendapatkan pengaturan agen iaaS SQL Server pada mesin virtual tersebut.
 
-### Contoh 3: Dapatkan pengaturan versi SQL Server tertentu
+### Contoh 3: Mendapatkan pengaturan versi SQL Server tertentu
 ```
 PS C:\> Get-AzureRmVMSqlServerExtension -ResourceGroupName "ResourceGroup11" -VMName "ContosoVM07" -Version "1.0"
 ExtensionName        : SqlIaaSAgent
@@ -73,12 +73,12 @@ AutoPatchingSettings : Microsoft.WindowsAzure.Commands.ServiceManagement.IaaS.Ex
 AutoBackupSettings   : Microsoft.WindowsAzure.Commands.ServiceManagement.IaaS.Extensions.AutoBackupSettings
 ```
 
-Perintah ini mendapatkan pengaturan ekstensi SQL Server 1.0 di komputer virtual bernama ContosoVM07.
+Perintah ini mendapatkan pengaturan ekstensi SQL Server versi 1.0 di mesin virtual bernama ContosoVM07.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: String
@@ -138,11 +138,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS

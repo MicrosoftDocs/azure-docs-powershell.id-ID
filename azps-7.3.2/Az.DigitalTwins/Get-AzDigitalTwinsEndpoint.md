@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.digitaltwins/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Get-AzDigitalTwinsEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Get-AzDigitalTwinsEndpoint.md
-ms.openlocfilehash: 4f1f852ad7839d9a08e2e411c2504ed226a8be67
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 4536069e599f3f468f9cce7ac3d08e4690b7dc67
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140571487"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142111211"
 ---
 # Get-AzDigitalTwinsEndpoint
 
 ## SYNOPSIS
-Dapatkan Titik Akhir DigitalTwinsInstances.
+Dapatkan DigitalTwinsInstances Endpoint.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.digitaltwins/get-azdigitaltwinsendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzDigitalTwinsEndpoint -ResourceGroupName <String> -ResourceName <String> [-
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzDigitalTwinsEndpoint -EndpointName <String> -ResourceGroupName <String> -ResourceName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -38,11 +41,11 @@ Get-AzDigitalTwinsEndpoint -InputObject <IDigitalTwinsIdentity> [-DefaultProfile
 ```
 
 ## DESCRIPTION
-Dapatkan Titik Akhir DigitalTwinsInstances.
+Dapatkan DigitalTwinsInstances Endpoint.
 
 ## EXAMPLES
 
-### Contoh 1: List AzDigitalTwinsEndpoint in ResourceGroup
+### Contoh 1: Daftar AzDigitalTwinsEndpoint di ResourceGroup
 ```powershell
 PS C:\> Get-AzDigitalTwinsEndpoint -ResourceGroupName youritemp -ResourceName youriDigitalTwinsTest
 
@@ -53,7 +56,7 @@ youriDigitalTwinEndpoint Microsoft.DigitalTwins/digitalTwinsInstances/endpoints
 
 Daftar semua AzDigitalTwinsEndpoints menurut ResourceGroupName
 
-### Contoh 2: Get AzDigitalTwinsEndpoint by EndpointName
+### Contoh 2: Dapatkan AzDigitalTwinsEndpoint by EndpointName
 ```powershell
 PS C:\> Get-AzDigitalTwinsEndpoint -EndpointName youriDigitalTwinEndpoint -ResourceGroupName youritemp -ResourceName youriDigitalTwinsTest
 
@@ -62,7 +65,7 @@ Name                     Type
 youriDigitalTwinEndpoint Microsoft.DigitalTwins/digitalTwinsInstances/endpoints
 ```
 
-Dapatkan AzDigitalTwinsEndpoint menurut EndpointName dalam ResourceGroup
+Dapatkan AzDigitalTwinsEndpoint dengan EndpointName di ResourceGroup
 
 ### Contoh 3: Get AzDigitalTwinsEndpoint by 'AzDigitalTwinsEndpoint' Object
 ```powershell
@@ -74,7 +77,7 @@ Name                     Type
 youriDigitalTwinEndpoint Microsoft.DigitalTwins/digitalTwinsInstances/endpoints
 ```
 
-Dapatkan AzDigitalTwinsEndpoint oleh Objek 'AzDigitalTwinsEndpoint'
+Dapatkan AzDigitalTwinsEndpoint dari Objek 'AzDigitalTwinsEndpoint'
 
 ## PARAMETERS
 
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DigitalTwins.Models.IDigitalTwinsIdentity
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

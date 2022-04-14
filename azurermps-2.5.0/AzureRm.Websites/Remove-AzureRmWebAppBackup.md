@@ -4,12 +4,12 @@ Module Name: AzureRM.WebSites
 ms.assetid: 65A78654-A490-4B60-8C16-B0CC597EE995
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.websites/remove-azurermwebappbackup
 schema: 2.0.0
-ms.openlocfilehash: 2d8e2f3e5f4612b30c62cc77e37f71bff73afc10bf01ca3d323488c204e9263a
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: ad27e4f9f7e042fa5a649fb06131167f38f1a1be
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140852652"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142066399"
 ---
 # Remove-AzureRmWebAppBackup
 
@@ -32,7 +32,7 @@ Remove-AzureRmWebAppBackup [-BackupId] <String> [-WebApp] <Site> [-DefaultProfil
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmWebAppBackup** menghapus cadangan tertentu dari Azure Web App.
+Cmdlet **Hapus-AzureRmWebAppBackup** menghapus cadangan Azure Web App yang ditentukan.
 
 ## EXAMPLES
 
@@ -41,12 +41,12 @@ Cmdlet **Remove-AzureRmWebAppBackup** menghapus cadangan tertentu dari Azure Web
 PS C:\>Remove-AzureRmWebAppBackup -ResourceGroupName "Default-Web-WestUS" -Name "WebAppStandard" -BackupId "12345"
 ```
 
-Perintah ini menghapus cadangan dengan ID "12345" dari Web App yang bernama WebAppStandard yang termasuk dalam grup sumber daya Default-Web-WestUS.
+Perintah ini menghapus cadangan dengan cadangan dengan ID "12345" dari Web App bernama WebAppStandard yang termasuk dalam grup sumber daya Default-Web-WestUS.
 
 ## PARAMETERS
 
 ### -BackupId
-ID Cadangan
+Id Cadangan
 
 ```yaml
 Type: String
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

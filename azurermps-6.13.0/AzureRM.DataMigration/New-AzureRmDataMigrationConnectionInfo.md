@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataMigration/Commands.DataMigration/help/New-AzureRmDataMigrationConnectionInfo.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataMigration/Commands.DataMigration/help/New-AzureRmDataMigrationConnectionInfo.md
 ms.openlocfilehash: 77559f5858c26d665d062f822a5c65258625bb14
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140857343"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142098862"
 ---
 # New-AzureRmDataMigrationConnectionInfo
 
 ## SYNOPSIS
-Membuat objek Info Koneksi baru yang menentukan tipe server dan nama untuk koneksi.
+Membuat objek Info Koneksi baru yang menentukan tipe dan nama server untuk koneksi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ New-AzureRmDataMigrationConnectionInfo -ServerType <ServerTypeEnum> [-DefaultPro
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzureRmDataMigrationConnectionInfo membuat objek Baru Info Koneksi yang menentukan tipe server untuk koneksi. 
+Cmdlet New-AzureRmDataMigrationConnectionInfo membuat objek Info Koneksi baru yang menentukan tipe server untuk koneksi. 
 
 ## EXAMPLES
 
@@ -36,12 +36,12 @@ Cmdlet New-AzureRmDataMigrationConnectionInfo membuat objek Baru Info Koneksi ya
 PS C:\> New-AzureRmDmsConnInfo -ServerType SQL -DataSource mySourceServer -AuthType SqlAuthentication -TrustServerCertificate:$true
 ```
 
-Contoh sebelumnya membuat objek Connection Info baru yang menyediakan SQL sebagai parameter ServerType.
+Contoh sebelumnya membuat objek Info Koneksi baru yang menyediakan SQL sebagai parameter ServerType.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -56,7 +56,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerType
-Enum yang menjelaskan tipe server yang akan disambungkan. Nilai yang didukung saat ini SQL untuk SQL Server, Azure SQL Managed Instance, Azure SQL Database. 
+Enum yang menjelaskan tipe server untuk disambungkan. Nilai yang didukung saat ini SQL untuk SQL Server, Azure SQL Managed Instance, dan Azure SQL Database. 
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataMigration.Models.ServerTypeEnum
@@ -72,11 +72,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

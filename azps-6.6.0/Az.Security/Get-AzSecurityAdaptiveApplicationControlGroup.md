@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAdaptiveApplicationControlGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAdaptiveApplicationControlGroup.md
 ms.openlocfilehash: f77e78981d21faed2f74b19aa2f8e0dc4f6c91b1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140459415"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142041779"
 ---
 # Get-AzSecurityAdaptiveApplicationControlGroup
 
 ## SYNOPSIS
-Mendapatkan grup VM/server kontrol aplikasi.
+Mendapatkan kontrol aplikasi VM/grup server.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/get-azsecurityadaptiveapplicationcontrolgroup) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azsecurityadaptiveapplicationcontrolgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Get-AzSecurityAdaptiveApplicationControlGroup  -GroupName <String> -AscLocation 
 ```
 
 ## DESCRIPTION
-Kontrol Aplikasi Adaptif secara otomatis dihitung oleh Azure Security Center, gunakan cmdlet ini untuk mendapatkan grup VM/server kontrol aplikasi.
+Kontrol Aplikasi Adaptif dihitung secara otomatis dengan Azure Security Center, gunakan cmdlet ini untuk mendapatkan kontrol aplikasi grup VM/server.
 
 ## EXAMPLES
 
@@ -42,7 +42,7 @@ Type       : Microsoft.Security/applicationWhitelistings
 Location   : centralus
 Properties : Microsoft.Azure.Commands.SecurityCenter.Models.AdaptiveApplicationControls.PSSecurityAdaptiveApplicationControlsProperties
 ```
-Mendapatkan grup VM/server kontrol aplikasi.
+Mendapatkan kontrol aplikasi VM/grup server.
 
 
 ## PARAMETERS
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

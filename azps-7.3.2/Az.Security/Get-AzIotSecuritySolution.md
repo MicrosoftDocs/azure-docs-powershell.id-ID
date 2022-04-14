@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzI
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzIotSecuritySolution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzIotSecuritySolution.md
-ms.openlocfilehash: 8feb91abe99d296cb8f5b267f79fe349c0b47e0a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0bc995e61aa7887d25cf5b6cd41a414cefc3a94b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140401206"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142028050"
 ---
 # Get-AzIotSecuritySolution
 
 ## SYNOPSIS
 Dapatkan solusi keamanan IoT
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.security/get-aziotsecuritysolution) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Get-AzIotSecuritySolution -ResourceId <String> [-DefaultProfile <IAzureContextCo
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzIotSecuritySolution mengembalikan satu atau beberapa solusi keamanan. Solusi keamanan IoT mengumpulkan data dan kejadian keamanan dari perangkat iot dan hub iot untuk membantu mencegah dan mendeteksi ancaman.
+Cmdlet Get-AzIotSecuritySolution mengembalikan satu atau beberapa solusi keamanan iot. Solusi keamanan IoT mengumpulkan data keamanan dan kejadian dari perangkat iot dan iot hub untuk membantu mencegah dan mendeteksi ancaman.
 
 ## EXAMPLES
 
@@ -81,7 +84,7 @@ UnmaskedIpLoggingStatus: "Enabled"
 Tags: {}
 ```
 
-Dapatkan solusi "MySample" di grup sumber daya "MyResourceGroup"
+Dapatkan solusi "MySample" dalam grup sumber daya "MyResourceGroup"
 
 ### Contoh 2
 ```powershell
@@ -90,7 +93,7 @@ PS C:\> Get-AzIotSecuritySolution -ResourceGroupName "MyResourceGroup"
 Array of security solution items as shown is example 1
 ```
 
-Dapatkan daftar semua solusi keamanan di grup sumber daya "MyResourceGroup"
+Dapatkan daftar semua solusi keamanan dalam grup sumber daya "MyResourceGroup"
 
 ## PARAMETERS
 
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya keamanan yang ingin Anda perintahkan.
+ID sumber daya keamanan yang ingin Anda gunakan untuk meminta perintah.
 
 ```yaml
 Type: System.String
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

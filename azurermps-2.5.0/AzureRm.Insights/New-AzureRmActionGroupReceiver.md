@@ -5,11 +5,11 @@ ms.assetid: 9830CD16-D797-47EB-BEF5-6CFE3454BCAA
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.insights/new-azurermactiongroupreceiver
 schema: 2.0.0
 ms.openlocfilehash: 0f452818db1af3f3a69db58f82b89e6cfa8ee461
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420555"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142104154"
 ---
 # New-AzureRmActionGroupReceiver
 
@@ -43,26 +43,26 @@ Cmdlet **New-AzureRmActionGroupReceiver** membuat penerima grup tindakan baru da
 
 ## EXAMPLES
 
-### Contoh 1: Buat penerima Email baru dalam memori.
+### Contoh 1: Membuat penerima Email baru dalam memori.
 ```
 PS C:\>$emailReceiver = New-AzureRmActionGroupReceiver -Name 'emailReceiver1' -EmailReceiver -EmailAddress 'user1@example.com'
 ```
 
-Perintah ini akan membuat penerima Email baru dalam memori.
+Perintah ini membuat penerima Email baru dalam memori.
 
 ### Contoh 2: Buat penerima SMS baru dalam memori.
 ```
 PS C:\>$smsReceiver = New-AzureRmActionGroupReceiver -Name 'smsReceiver1' -SmsReceiver -CountryCode '1' -PhoneNumber '5555555555'
 ```
 
-Perintah ini akan membuat penerima SMS baru dalam memori.
+Perintah ini membuat penerima SMS baru dalam memori.
 
 ### Contoh 3: Membuat penerima webhook baru dalam memori.
 ```
 PS C:\>$webhookReceiver = New-AzureRmActionGroupReceiver -Name 'webhookReceiver1' -SMSReceiver -ServiceUri 'http://test.com'
 ```
 
-Perintah ini akan membuat penerima webhook baru dalam memori.
+Perintah ini membuat penerima webhook baru dalam memori.
 
 ## PARAMETERS
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -212,12 +212,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands. Insights. OutputClasses.PSActionGroupReceiverBase
+### Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupReceiverBase
 
 ## CATATAN
 
 ## RELATED LINKS
 
-[Set-AzureRmActionGroup](./Set-AzureRmActionGroup.md) 
- [Get-AzureRmActionGroup](./Get-AzureRmActionGroup.md) 
- [Remove-AzureRmActionGroup](./Remove-AzureRmActionGroup.md)
+[Set-AzureRmActionGroup](./Set-AzureRmActionGroup.md)
+ [Get-AzureRmActionGroup](./Get-AzureRmActionGroup.md)
+ [Hapus-AzureRmActionGroup](./Remove-AzureRmActionGroup.md)

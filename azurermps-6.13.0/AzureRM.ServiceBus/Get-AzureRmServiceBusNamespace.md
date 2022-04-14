@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.servi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceBus/Commands.ServiceBus/help/Get-AzureRmServiceBusNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceBus/Commands.ServiceBus/help/Get-AzureRmServiceBusNamespace.md
-ms.openlocfilehash: 8e2e547b520d8eedba4deeaded0f85e0e3520253217130c00f28b71b8867b471
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 37d142947c09c211c947f3bd80455a812f96844f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140855504"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142060749"
 ---
 # Get-AzureRmServiceBusNamespace
 
 ## SYNOPSIS
-Mendapatkan deskripsi untuk kumpulan nama Bus Layanan tertentu di dalam grup sumber daya.
+Mendapatkan deskripsi untuk ruang nama Bus Layanan yang ditentukan dalam grup sumber daya.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Get-AzureRmServiceBusNamespace [[-ResourceGroupName] <String>] [[-Name] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmServiceBusNamespace** mendapatkan deskripsi untuk kumpulan nama Bus Layanan tertentu di dalam grup sumber daya.
+Cmdlet **Get-AzureRmServiceBusNamespace** mendapatkan deskripsi untuk ruang nama Bus Layanan yang ditentukan dalam grup sumber daya.
 
 ## EXAMPLES
 
@@ -51,7 +51,7 @@ ServiceBusEndpoint : https://SB-Example1.servicebus.windows.net:443/
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

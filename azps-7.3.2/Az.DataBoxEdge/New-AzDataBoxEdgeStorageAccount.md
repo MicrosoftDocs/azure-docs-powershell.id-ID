@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeStorageAccount.md
-ms.openlocfilehash: ad1e2ee26c66bd179ca790c16e1630548d88f3ee
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c63cf837c4170765c0ea326ad8a091a8054f7533
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140009821"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141895904"
 ---
 # New-AzDataBoxEdgeStorageAccount
 
 ## SYNOPSIS
 Membuat akun Storage Edge baru di perangkat.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/new-azdataboxedgestorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzDataBoxEdgeStorageAccount [-ResourceGroupName] <String> [-DeviceName] <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataBoxEdgeStorageAccount** membuat akun Storage Edge baru di perangkat Microsoft Edge Kotak Data. Untuk satu perangkat, satu akun Storage Edge dapat dipetakan paling banyak hanya ke satu akun Storage Cloud.
+Cmdlet **New-AzDataBoxEdgeStorageAccount** membuat akun Storage Edge baru di perangkat Data Box Edge. Untuk perangkat, satu akun Storage Edge paling banyak hanya dapat dipetakan ke satu akun Storage Cloud.
 
 ## EXAMPLES
 
@@ -47,12 +50,12 @@ Name                ContainerCount Status BlobEndpoint                          
 edgestoragegacount2 0              OK     https://edgestoragegacount2.blob.dbEdge.microsoftdatabox.com/ cloudstorageaccount2     dbEdge     resourceGroupName
 ```
 
-2 EdgeStorageAccount di perangkat tidak dapat berbagi lebih dari 1 Akun Storage Cloud
+2 EdgeStorageAccounts di perangkat tidak dapat berbagi lebih dari 1 Akun Storage Cloud
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountCredentialName
-Sediakan Nama Sumber Daya StorageAccountCredential yang sudah ada
+Menyediakan Nama Sumber Daya StorageAccountCredential yang sudah ada
 
 ```yaml
 Type: System.String
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
