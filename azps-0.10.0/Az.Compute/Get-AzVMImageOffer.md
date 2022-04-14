@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Get-AzVMImageOffer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Get-AzVMImageOffer.md
 ms.openlocfilehash: eb56542d02498a0d4b8aa4176c77d75ab6ad4da6
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425421"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142235971"
 ---
 # Get-AzVMImageOffer
 
 ## SYNOPSIS
-Mendapatkan jenis penawaran VMImage.
+Mendapatkan tipe penawaran VMImage.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Get-AzVMImageOffer -Location <String> -PublisherName <String> [-DefaultProfile <
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVMImageOffer** mendapatkan jenis penawaran VMImage.
+Cmdlet **Get-AzVMImageOffer** mendapatkan tipe penawaran VMImage.
 
 ## EXAMPLES
 
@@ -35,12 +35,12 @@ Cmdlet **Get-AzVMImageOffer** mendapatkan jenis penawaran VMImage.
 PS C:\> Get-AzVMImageOffer -Location "Central US" -PublisherName "Fabrikam"
 ```
 
-Perintah ini mendapatkan tipe penawaran untuk penerbit tertentu di kawasan As Tengah.
+Perintah ini mendapatkan tipe penawaran untuk penerbit tertentu di kawasan AS Tengah.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -86,11 +86,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
@@ -101,12 +101,12 @@ Cmdlet ini tidak menerima input apa pun.
 
 ## RELATED LINKS
 
-[Get-AzvMImage](./Get-AzVMImage.md)
+[Get-AzVMImage](./Get-AzVMImage.md)
 
 [Get-AzVMImagePublisher](./Get-AzVMImagePublisher.md)
 
-[Get-azvmImagesku](./Get-AzVMImageSku.md)
+[Get-AzVMImageSku](./Get-AzVMImageSku.md)
 
-[Save-AzvMImage](./Save-AzVMImage.md)
+[Simpan-AzVMImage](./Save-AzVMImage.md)
 
 

@@ -7,21 +7,21 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzADApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzADApplication.md
 ms.openlocfilehash: cce132b9cf16c52df2b911e0cb8246bc4ac343b9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140182289"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142078069"
 ---
 # New-AzADApplication
 
 ## SYNOPSIS
-Membuat aplikasi azure active directory baru.
+Membuat aplikasi direktori aktif azure baru.
 
 [!INCLUDE [msgraph-migration-banner](../../includes/msgraph-migration-banner.md)]
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/new-azadapplication) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azadapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -61,7 +61,7 @@ New-AzADApplication -DisplayName <String> [-IdentifierUri <String[]>] [-HomePage
 ```
 
 ## DESCRIPTION
-Membuat aplikasi azure active directory baru. Berikut izin yang diperlukan untuk membuat aplikasi:
+Membuat aplikasi direktori aktif azure baru. Di bawah ini adalah izin yang diperlukan untuk membuat aplikasi:
 
 - Azure Active Directory Graph
   - Application.ReadWrite.OwnedBy
@@ -77,9 +77,9 @@ Membuat aplikasi azure active directory baru. Berikut izin yang diperlukan untuk
 PS C:\> New-AzADApplication -DisplayName "NewApplication" -HomePage "http://www.microsoft.com" -IdentifierUris "http://NewApplication"
 ```
 
-Membuat aplikasi azure active directory baru tanpa kredensial apa pun.
+Membuat aplikasi direktori aktif azure baru tanpa kredensial apa pun.
 
-### Contoh 2: Buat aplikasi AAD dengan kata sandi.
+### Contoh 2: Buat aplikasi AAD baru dengan kata sandi.
 
 ```powershell
 PS C:\> $SecureStringPassword = ConvertTo-SecureString -String "password" -AsPlainText -Force
@@ -87,12 +87,12 @@ PS C:\> New-AzADApplication -DisplayName "NewApplication" -HomePage "http://www.
 //NewApplication" -Password $SecureStringPassword
 ```
 
-Membuat aplikasi azure active directory baru dan mengaitkan kredensial kata sandi dengannya.
+Membuat aplikasi direktori aktif azure baru dan mengaitkan kredensial kata sandi dengannya.
 
 ## PARAMETERS
 
 ### -AvailableToOtherTenants
-Nilai yang menentukan apakah aplikasi merupakan penyewa tunggal atau multi-penyewa.
+Nilai yang menentukan apakah aplikasi adalah penyewa tunggal atau multi-penyewa.
 
 ```yaml
 Type: System.Boolean
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 
 ### -CertValue
 Nilai tipe kredensial "asimetris".
-Kode ini mewakili sertifikat berkode basis 64.
+Ini mewakili sertifikat dasar 64 yang dikodekan.
 
 ```yaml
 Type: System.String
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-Tanggal berakhir efektif penggunaan kredensial.
+Tanggal berakhir efektif dari penggunaan kredensial.
 Nilai tanggal akhir default adalah satu tahun dari hari ini. Untuk kredensial tipe "asimetris", kredensial ini harus diatur ke aktif atau sebelum tanggal sertifikat X509 valid.
 
 ```yaml
@@ -275,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -291,7 +291,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -306,7 +306,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -316,9 +316,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-### Microsoft.Azure.Commands.ActiveDirectory.LINUXDPasswordCredential[]
+### Microsoft.Azure.Commands.ActiveDirectory.PSADPasswordCredential[]
 
-### Microsoft.Azure.Commands.ActiveDirectory.LINUXDKeyCredential[]
+### Microsoft.Azure.Commands.ActiveDirectory.PSADKeyCredential[]
 
 ### System.Security.SecureString
 
@@ -326,16 +326,16 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.ActiveDirectory.FOLDApplication
+### Microsoft.Azure.Commands.ActiveDirectory.PSADAplikasi
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, resource, group, template, deployment
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Templat, penyebaran
 
 ## RELATED LINKS
 
-[Remove-AzADApplication](./Remove-AzADApplication.md)
+[Remove-AzADAplikasi](./Remove-AzADApplication.md)
 
-[Get-AzADApplication](./Get-AzADApplication.md)
+[Get-AzADAplikasi](./Get-AzADApplication.md)
 
 [New-AzADServicePrincipal](./New-AzADServicePrincipal.md)
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/New-AzSearchAdminKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/New-AzSearchAdminKey.md
 ms.openlocfilehash: 4c396d7c12a9e88d701e2a3488f14486f55cc5d6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140099063"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142223965"
 ---
 # New-AzSearchAdminKey
 
 ## SYNOPSIS
-Meregenerasi kunci admin dari layanan Pencarian Kognitif Azure.
+Meregenerasi kunci admin layanan Azure Cognitive Search.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.search/new-azsearchadminkey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.search/new-azsearchadminkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ New-AzSearchAdminKey [-ParentResourceId] <String> -KeyKind <PSSearchAdminKeyKind
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSearchAdminKey** meregenerasi kunci admin dari layanan Pencarian Kognitif Azure.
+Cmdlet **New-AzSearchAdminKey** meregenerasi kunci admin layanan Azure Cognitive Search.
 
 ## EXAMPLES
 
@@ -58,7 +58,7 @@ Primary                          Secondary
 85B3813D11904B591BE8A196C2C743A1 CEF791D5BAC2E6C0B232C56702F21E87
 ```
 
-Contoh meregenerasi kunci Utama dari layanan Pencarian Kognitif Azure.
+Contoh meregenerasi Kunci utama layanan Azure Cognitive Search.
 
 ## PARAMETERS
 
@@ -77,8 +77,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyKind
-Jenis tombol admin Layanan Pencarian Kognitif Azure (Utama/Sekunder).
+Azure Cognitive Search Jenis kunci admin layanan (Primer/Sekunder).
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Search.Models.PSSearchAdminKeyKind
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Objek Input Layanan Pencarian Kognitif Azure.
+Azure Cognitive Search Objek Input Layanan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Search.Models.PSSearchService
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentResourceId
-Id Sumber Daya Layanan Pencarian Kognitif Azure.
+Azure Cognitive Search Id Sumber Daya Layanan.
 
 ```yaml
 Type: System.String
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Nama Layanan Pencarian Kognitif Azure.
+Azure Cognitive Search Nama layanan.
 
 ```yaml
 Type: System.String
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

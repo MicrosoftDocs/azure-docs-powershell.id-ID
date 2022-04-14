@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Stop-AzManagementGroupDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Stop-AzManagementGroupDeployment.md
 ms.openlocfilehash: a1c5a5e06a889d91f88850847cb79f11d6688678
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140277979"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142224109"
 ---
 # Stop-AzManagementGroupDeployment
 
 ## SYNOPSIS
-Membatalkan penyebaran saat menjalankan grup manajemen
+Membatalkan penyebaran yang berjalan di grup manajemen
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/stop-azmanagementgroupdeployment) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/stop-azmanagementgroupdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,10 +41,10 @@ Stop-AzManagementGroupDeployment -InputObject <PSDeployment> [-PassThru] [-Pre]
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzManagementGroupDeployment** membatalkan penyebaran yang telah dimulai tetapi belum selesai di grup manajemen.
-Untuk menghentikan penyebaran, penyebaran harus memiliki status penyediaan yang tidak lengkap, seperti Penyediaan, dan bukan status selesai, seperti Diprovisikan atau Gagal.
+Cmdlet **Stop-AzManagementGroupDeployment** membatalkan penyebaran yang telah dimulai tetapi tidak selesai di grup manajemen.
+Untuk menghentikan penyebaran, penyebaran harus memiliki status penyediaan yang tidak lengkap, seperti Penyediaan, dan bukan status yang diselesaikan, seperti Provisioned atau Failed.
 
-Untuk membuat penyebaran di grup manajemen, gunakan cmdlet New-AzManagementGroupDeployment cmdlet.
+Untuk membuat penyebaran di grup manajemen, gunakan cmdlet New-AzManagementGroupDeployment.
 
 ## EXAMPLES
 
@@ -53,7 +53,7 @@ Untuk membuat penyebaran di grup manajemen, gunakan cmdlet New-AzManagementGroup
 PS C:\>Stop-AzManagementGroupDeployment -ManagementGroupId "myMG" -Name "deployment01"
 ```
 
-Perintah ini membatalkan penyebaran "deployment01" yang berjalan pada grup manajemen "myMG".
+Perintah ini membatalkan penyebaran berjalan "deployment01" di grup manajemen "myMG".
 
 ### Contoh 2
 ```
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id sumber daya penyebaran yang sepenuhnya memenuhi syarat.
+Id sumber daya yang sepenuhnya memenuhi syarat dari penyebaran.
 contoh: /providers/Microsoft.Management/managementGroups/{managementGroupId}/providers/Microsoft.Resources/deployments/{deploymentName}
 
 ```yaml
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Saat diatur, cmdlet harus menggunakan versi API prari tamu ketika menentukan versi mana yang akan digunakan secara otomatis.
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

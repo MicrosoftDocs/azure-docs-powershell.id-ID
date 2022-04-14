@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Cdn/Commands.Cdn/help/Publish-AzureRmCdnEndpointContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Cdn/Commands.Cdn/help/Publish-AzureRmCdnEndpointContent.md
 ms.openlocfilehash: a4a2479c6dc7c116ff7da9151fcd5dea5ec26660
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427628"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142100413"
 ---
 # Publish-AzureRmCdnEndpointContent
 
@@ -35,14 +35,14 @@ Publish-AzureRmCdnEndpointContent -CdnEndpoint <PSEndpoint> -LoadContent <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Publish-AzureRmCdnEndpointContent** memuat konten dari server origin untuk titik akhir Azure Content Delivery Network (CDN).
+**Cmdlet Publish-AzureRmCdnEndpointContent** memuat konten dari server asal untuk titik akhir Azure Content Delivery Network (CDN).
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -CdnEndpoint
-Sepcifies the CDN endpoint.
+Memisahkan titik akhir CDN.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Cdn.Models.Endpoint.PSEndpoint
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadContent
-Menentukan array jalur relatif untuk konten di server origin yang diterbitkan cmdlet ini.
+Menentukan array jalur relatif untuk konten di server asal yang diterbitkan cmdlet ini.
 
 ```yaml
 Type: System.String[]
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProfileName
-Menentukan nama profil asal server.
+Menentukan nama profil tempat server asal berada.
 
 ```yaml
 Type: System.String
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -165,6 +165,6 @@ Parameter: CdnEndpoint (ByValue)
 
 ## RELATED LINKS
 
-[Unpublish-AzureRmCdnEndpointContent](./Unpublish-AzureRmCdnEndpointContent.md)
+[Batal terbitkan-AzureRmCdnEndpointContent](./Unpublish-AzureRmCdnEndpointContent.md)
 
 

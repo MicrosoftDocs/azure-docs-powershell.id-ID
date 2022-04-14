@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementUser.md
-ms.openlocfilehash: 79d865fd6d9529f3adc7e26fb7ce4b3e4bc8262d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3df9c11179eb054527d9e57076604d0bbe7c6967
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140558039"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142074451"
 ---
 # Set-AzApiManagementUser
 
 ## SYNOPSIS
 Mengatur detail pengguna.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementuser) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,11 +42,11 @@ $securePassword = ConvertTo-SecureString "qwerty" -AsPlainText -Force
 Set-AzApiManagementUser -Context $apimContext -UserId "0123456789" -Email "patti.fuller@contoso.com" -Password $securePassword -State "Blocked"
 ```
 
-Perintah ini mengatur kata sandi dan alamat email pengguna baru, serta memblokir pengguna.
+Perintah ini mengatur kata sandi pengguna dan alamat email baru dan memblokir pengguna.
 
 ### Contoh 2
 
-Mengatur detail pengguna. (otomatisgenerated)
+Mengatur detail pengguna. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 
 ### -FirstName
 Menentukan nama depan pengguna.
-Parameter ini harus memiliki panjang 1 hingga 100 karakter.
+Parameter ini harus panjangnya 1 hingga 100 karakter.
 
 ```yaml
 Type: System.String
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 
 ### -LastName
 Menentukan nama belakang pengguna.
-Parameter ini panjangnya harus 1 hingga 100 karakter.
+Parameter ini harus panjangnya 1 hingga 100 karakter.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Note
+### -Catatan
 Menentukan catatan tentang pengguna.
 Parameter ini bersifat opsional.
 Nilai default parameter ini adalah $null.
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -244,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

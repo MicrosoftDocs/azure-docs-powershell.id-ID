@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Import-AzRedisCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Import-AzRedisCache.md
 ms.openlocfilehash: 0279c4187f81883151505b30439721c082d89d9b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139970007"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142078465"
 ---
 # Import-AzRedisCache
 
@@ -19,7 +19,7 @@ ms.locfileid: "139970007"
 Mengimpor data dari blob ke Cache Azure Redis.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.rediscache/import-azrediscache) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.rediscache/import-azrediscache) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Import-AzRedisCache [-ResourceGroupName <String>] -Name <String> -Files <String[
 ```
 
 ## DESCRIPTION
-Cmdlet **Import-AzRedisCache** mengimpor data dari blob ke Cache Azure Redis.
+Cmdlet **Import-AzRedisCache** mengimpor data dari blob ke Azure Redis Cache.
 
 ## EXAMPLES
 
@@ -38,12 +38,12 @@ Cmdlet **Import-AzRedisCache** mengimpor data dari blob ke Cache Azure Redis.
 PS C:\>Import-AzRedisCache -ResourceGroupName "ResourceGroup13" -Name "RedisCache06" -Files @("https://mystorageaccount.blob.core.windows.net/container22/blobname?sv=2015-04-05&sr=b&sig=caIwutG2uDa0NZ8mjdNJdgOY8%2F8mhwRuGNdICU%2B0pI4%3D&st=2016-05-27T00%3A00%3A00Z&se=2016-05-28T00%3A00%3A00Z&sp=rwd") -Force
 ```
 
-Perintah ini mengimpor data dari blob yang ditentukan oleh URL SAS ke Cache Azure Redis.
+Perintah ini mengimpor data dari blob yang ditentukan oleh URL SAS ke Dalam Cache Azure Redis.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -57,8 +57,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -File
-Menentukan URL SAS dari blob yang kontennya diimpor cmdlet ini ke cache. Anda dapat menghasilkan URL SAS menggunakan perintah PowerShell berikut: $storageAccountContext = New-AzStorageContext -StorageAccountName "storageName" -StorageAccountKey "key" $sasKeyForBlob = New-AzStorageBlobSASToken -Container "containerName" -blob "blobName" -Permission "rwdl" -StartTime ([System.DateTime]::Now). AddMinutes(-15) -ExpiryTime ([System.DateTime]::Now). AddHours(5) -Context $storageAccountContext -FullUri Import-AzRedisCache -ResourceGroupName "ResourceGroupName" -Name "cacheName" -Files ($sasKeyForBlob) -Force
+### -Files
+Menentukan URL SAS blob yang kontennya diimpor cmdlet ini ke dalam cache. Anda dapat menghasilkan URL SAS menggunakan perintah PowerShell berikut: $storageAccountContext = New-AzStorageContext -StorageAccountName "storageName" -StorageAccountKey "key" $sasKeyForBlob = New-AzStorageBlobSASToken -Container "containerName" -blob "blobName" -Permission "rwdl" -StartTime ([System.DateTime]::Now). AddMinutes(-15) -ExpiryTime ([System.DateTime]::Now). AddHours(5) -Context $storageAccountContext -FullUri Import-AzRedisCache -ResourceGroupName "ResourceGroupName" -Name "cacheName" -Files ($sasKeyForBlob) -Force
 
 ```yaml
 Type: System.String[]
@@ -72,8 +72,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengindikasikan bahwa cmdlet ini mengembalikan Boolean yang mengindikasikan apakah operasi berhasil.
+Menunjukkan bahwa cmdlet ini mengembalikan Boolean yang menunjukkan apakah operasi berhasil.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi cache.
+Menentukan nama grup sumber daya yang berisi singgahan.
 
 ```yaml
 Type: System.String
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -194,7 +194,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### System.Boolean
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, redis, cache, web, webapp, website
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, redis, cache, web, webapp, situs web
 
 ## RELATED LINKS
 
@@ -202,9 +202,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzRedisCache](./New-AzRedisCache.md)
 
-[Remove-AzRedisCache](./Remove-AzRedisCache.md)
+[Hapus-AzRedisCache](./Remove-AzRedisCache.md)
 
-[Reset-AzRedisCache](./Reset-AzRedisCache.md)
+[Atur Ulang-AzRedisCache](./Reset-AzRedisCache.md)
 
 [Set-AzRedisCache](./Set-AzRedisCache.md)
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Restart-AzRecoveryServicesAsrJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Restart-AzRecoveryServicesAsrJob.md
 ms.openlocfilehash: ae5406bd645d2e79bc839f80441f999d720a064a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140132541"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142224895"
 ---
 # Restart-AzRecoveryServicesAsrJob
 
 ## SYNOPSIS
-Memulai ulang pekerjaan Pemulihan Situs Azure.
+Memulai ulang pekerjaan Site Recovery Azure.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/restart-azrecoveryservicesasrjob) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/restart-azrecoveryservicesasrjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Restart-AzRecoveryServicesAsrJob -Name <String> [-DefaultProfile <IAzureContextC
 ```
 
 ## DESCRIPTION
-Cmdlet **Mulai Ulang-AzRecoveryServicesAsrJob** memulai ulang pekerjaan Pemulihan Situs Azure.
+Cmdlet **Restart-AzRecoveryServicesAsrJob** memulai ulang pekerjaan Site Recovery Azure.
 
 ## EXAMPLES
 
@@ -44,7 +44,7 @@ Cmdlet **Mulai Ulang-AzRecoveryServicesAsrJob** memulai ulang pekerjaan Pemuliha
 PS C:\> $currentJob = Restart-AzRecoveryServicesAsrJob -Job $Job
 ```
 
-Memulai ulang pekerjaan ASR tertentu dan mengembalikan objek pekerjaan ASR yang diperbarui dari pekerjaan ASR.
+Memulai ulang pekerjaan ASR yang ditentukan dan mengembalikan objek pekerjaan ASR yang diperbarui dari pekerjaan ASR.
 
 ## PARAMETERS
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Tentukan pekerjaan berdasarkan nama.
+Tentukan pekerjaan menurut nama.
 
 ```yaml
 Type: System.String
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

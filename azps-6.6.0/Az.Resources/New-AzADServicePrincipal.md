@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzADServicePrincipal.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzADServicePrincipal.md
 ms.openlocfilehash: e06f2399bec0169ef6e93500fcd02238caf4c62b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140182288"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142078015"
 ---
 # New-AzADServicePrincipal
 
@@ -21,7 +21,7 @@ Membuat prinsipal layanan direktori aktif Azure yang baru.
 [!INCLUDE [msgraph-migration-banner](../../includes/msgraph-migration-banner.md)]
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/new-azadserviceprincipal) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azadserviceprincipal) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -118,18 +118,18 @@ New-AzADServicePrincipal -ApplicationObject <PSADApplication> -KeyCredential <PS
 
 ## DESCRIPTION
 
-Membuat prinsipal layanan direktori aktif Azure yang baru. Kumpulan parameter default menggunakan nilai default untuk parameter jika tidak disediakan. Untuk informasi selengkapnya tentang nilai default, lihat deskripsi untuk setiap parameter. Cmdlet ini memiliki kemampuan untuk menetapkan peran ke prinsipal layanan dengan parameter **Peran** **dan** Lingkup. Jika keduanya dihilangkan, peran kontributor ditetapkan pada prinsipal layanan. Nilai default untuk parameter **Peran dan** **Lingkup** adalah **Kontributor untuk** langganan saat ini. Cmdlet membuat aplikasi dan mengatur propertinya jika ApplicationId tidak disediakan. Untuk memperbarui parameter khusus aplikasi, gunakan cmdlet [Update-AzADApplication](./update-azadapplication.md) .
+Membuat prinsipal layanan direktori aktif Azure yang baru. Kumpulan parameter default menggunakan nilai default untuk parameter jika tidak disediakan. Untuk informasi selengkapnya tentang nilai default, lihat deskripsi untuk setiap parameter. Cmdlet ini memiliki kemampuan untuk menetapkan peran ke prinsipal layanan dengan parameter **Peran** dan **Lingkup** . Jika keduanya dihilangkan, peran kontributor ditetapkan ke prinsipal layanan. Nilai default untuk parameter **Peran** dan **Lingkup** adalah **Kontributor** untuk langganan saat ini. Cmdlet membuat aplikasi dan mengatur propertinya jika ApplicationId tidak disediakan. Untuk memperbarui parameter khusus aplikasi, gunakan cmdlet [Update-AzADApplication](./update-azadapplication.md) .
 
 > [!WARNING]
-> Ketika Anda membuat prinsipal layanan menggunakan **perintah New-AzADServicePrincipal** , output menyertakan kredensial yang harus Anda proteksi. Sebagai alternatif, pertimbangkan [menggunakan identitas terkelola](/azure/active-directory/managed-identities-azure-resources/overview) untuk menghindari perlu menggunakan kredensial.
+> Saat Anda membuat prinsipal layanan menggunakan perintah **New-AzADServicePrincipal** , output menyertakan kredensial yang harus Anda lindungi. Sebagai alternatif, pertimbangkan menggunakan [identitas terkelola](/azure/active-directory/managed-identities-azure-resources/overview) untuk menghindari perlunya menggunakan kredensial.
 >
-> Secara default, **New-AzADServicePrincipal** menetapkan peran [Kontributor](/azure/role-based-access-control/built-in-roles#contributor) pada prinsipal layanan pada lingkup langganan. Untuk mengurangi risiko prinsipal layanan yang dibobol, tetapkan peran yang lebih spesifik dan persempit lingkupnya pada grup sumber daya atau sumber daya. Lihat [Langkah-langkah untuk menambahkan penetapan peran](/azure/role-based-access-control/role-assignments-steps) untuk informasi selengkapnya.
+> Secara default, **New-AzADServicePrincipal** menetapkan peran [Kontributor](/azure/role-based-access-control/built-in-roles#contributor) ke prinsipal layanan pada lingkup langganan. Untuk mengurangi risiko pokok layanan yang disusupi, tetapkan peran yang lebih spesifik dan persempit lingkup ke grup sumber daya atau sumber daya. Lihat [Langkah-langkah untuk menambahkan penetapan peran](/azure/role-based-access-control/role-assignments-steps) untuk informasi selengkapnya.
 
 ## EXAMPLES
 
-### Contoh 1: Pembuatan prinsipal layanan AD sederhana
+### Contoh 1: Simple AD service principal creation
 
-Contoh berikut membuat prinsipal layanan AD menggunakan nilai default untuk parameter yang tidak ditentukan. Karena ID aplikasi tidak diberikan, aplikasi dibuat untuk prinsipal layanan. Karena tidak ada nilai yang disediakan **untuk** Peran **atau** Lingkup, prinsipal layanan yang dibuat ditetapkan peran **kontributor** untuk langganan saat ini.
+Contoh berikut membuat prinsipal layanan AD menggunakan nilai default untuk parameter yang tidak ditentukan. Karena ID aplikasi tidak disediakan, aplikasi dibuat untuk prinsipal layanan. Karena tidak ada nilai yang disediakan untuk **Peran** atau **Lingkup**, prinsipal layanan yang dibuat ditetapkan peran **kontributor** untuk langganan saat ini.
 
 ```powershell
 New-AzADServicePrincipal
@@ -146,9 +146,9 @@ Type                  : ServicePrincipal
 WARNING: Assigning role 'Contributor' over scope '/subscriptions/00000000-0000-0000-0000-000000000000' to the new service principal.
 ```
 
-### Contoh 2: Pembuatan prinsipal layanan AD sederhana dengan peran tertentu dan lingkup default
+### Contoh 2: Pembuatan prinsipal layanan AD sederhana dengan peran dan lingkup default yang ditentukan
 
-Contoh berikut membuat prinsipal layanan AD menggunakan nilai default untuk parameter yang tidak ditentukan. Karena ID aplikasi tidak diberikan, aplikasi dibuat untuk prinsipal layanan. Prinsipal layanan dibuat dengan **izin Reader** untuk langganan saat ini karena tidak ada nilai yang **disediakan untuk parameter** Lingkup.
+Contoh berikut membuat prinsipal layanan AD menggunakan nilai default untuk parameter yang tidak ditentukan. Karena ID aplikasi tidak disediakan, aplikasi dibuat untuk prinsipal layanan. Prinsipal layanan dibuat dengan izin **Pembaca** untuk langganan saat ini karena tidak ada nilai yang disediakan untuk parameter **Lingkup** .
 
 ```powershell
 New-AzADServicePrincipal -Role Reader
@@ -165,9 +165,9 @@ Type                  : ServicePrincipal
 WARNING: Assigning role 'Reader' over scope '/subscriptions/00000000-0000-0000-0000-000000000000' to the new service principal.
 ```
 
-### Contoh 3: Pembuatan prinsipal layanan AD sederhana dengan lingkup tertentu dan peran default
+### Contoh 3: Pembuatan prinsipal layanan AD sederhana dengan lingkup dan peran default yang ditentukan
 
-Contoh berikut membuat prinsipal layanan AD menggunakan nilai default untuk parameter yang tidak ditentukan. Karena ID aplikasi tidak diberikan, aplikasi dibuat untuk prinsipal layanan. Prinsipal layanan dibuat dengan izin **Kontributor** untuk lingkup grup sumber daya yang disediakan karena tidak ada nilai yang disediakan untuk **parameter** Peran.
+Contoh berikut membuat prinsipal layanan AD menggunakan nilai default untuk parameter yang tidak ditentukan. Karena ID aplikasi tidak disediakan, aplikasi dibuat untuk prinsipal layanan. Prinsipal layanan dibuat dengan izin **Kontributor** untuk lingkup grup sumber daya yang disediakan karena tidak ada nilai yang disediakan untuk parameter **Peran** .
 
 ```powershell
 New-AzADServicePrincipal -Scope /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myResourceGroup
@@ -184,9 +184,9 @@ Type                  : ServicePrincipal
 WARNING: Assigning role 'Contributor' over scope '/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myResourceGroup' to the new service principal.
 ```
 
-### Contoh 4: Pembuatan prinsipal layanan AD sederhana dengan lingkup dan peran tertentu
+### Contoh 4: Pembuatan prinsipal layanan SIMPLE AD dengan lingkup dan peran tertentu
 
-Contoh berikut membuat prinsipal layanan AD menggunakan nilai default untuk parameter yang tidak ditentukan. Karena ID aplikasi tidak diberikan, aplikasi dibuat untuk prinsipal layanan. Prinsipal layanan dibuat dengan izin **Pembaca untuk** lingkup grup sumber daya yang disediakan.
+Contoh berikut membuat prinsipal layanan AD menggunakan nilai default untuk parameter yang tidak ditentukan. Karena ID aplikasi tidak disediakan, aplikasi dibuat untuk prinsipal layanan. Prinsipal layanan dibuat dengan izin **Pembaca** untuk lingkup grup sumber daya yang disediakan.
 
 ```powershell
 New-AzADServicePrincipal -Role Reader -Scope /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myResourceGroup
@@ -203,9 +203,9 @@ Type                  : ServicePrincipal
 WARNING: Assigning role 'Reader' over scope '/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myResourceGroup' to the new service principal.
 ```
 
-### Contoh 5: Membuat pokok layanan AD baru menggunakan ID aplikasi dengan penetapan peran
+### Contoh 5: Membuat prinsipal layanan AD baru menggunakan ID aplikasi dengan penetapan peran
 
-Contoh berikut membuat prinsipal layanan AD baru untuk aplikasi dengan ID aplikasi '00000000-0000-0000-0000-00000000000'. Karena tidak ada nilai yang disediakan **untuk** Peran **atau** Lingkup, prinsipal layanan yang dibuat ditetapkan peran **kontributor** untuk langganan saat ini.
+Contoh berikut membuat prinsipal layanan AD baru untuk aplikasi dengan ID aplikasi '00000000-0000-0000-0000-00000000000000'. Karena tidak ada nilai yang disediakan untuk **Peran** atau **Lingkup**, prinsipal layanan yang dibuat ditetapkan peran **kontributor** untuk langganan saat ini.
 
 ```powershell
 New-AzADServicePrincipal -ApplicationId 00000000-0000-0000-0000-000000000000
@@ -219,9 +219,9 @@ Id                    : 00000000-0000-0000-0000-000000000000
 Type                  : ServicePrincipal
 ```
 
-### Contoh 6: Membuat prinsipal layanan AD baru menggunakan pemipaan
+### Contoh 6: Membuat prinsipal layanan AD baru menggunakan piping
 
-Contoh berikut mengambil aplikasi dengan ID objek '3ede3c26-b443-4e0b-9efc-b05e68338dc3' menggunakan cmdlet [Get-AzADApplication](./get-azadapplication.md) . Hasilnya di pipetkan ke `New-AzADServicePrincipal` cmdlet untuk membuat prinsipal layanan AD baru untuk aplikasi tersebut.
+Contoh berikut mengambil aplikasi dengan ID objek '3ede3c26-b443-4e0b-9efc-b05e68338dc3' menggunakan cmdlet [Get-AzADApplication](./get-azadapplication.md) . Hasilnya disalurkan ke `New-AzADServicePrincipal` cmdlet untuk membuat prinsipal layanan AD baru untuk aplikasi tersebut.
 
 ```powershell
 Get-AzADApplication -ObjectId 3ede3c26-b443-4e0b-9efc-b05e68338dc3 | New-AzADServicePrincipal
@@ -229,7 +229,7 @@ Get-AzADApplication -ObjectId 3ede3c26-b443-4e0b-9efc-b05e68338dc3 | New-AzADSer
 
 ### Contoh 7: Membuat prinsipal layanan AD baru menggunakan DisplayName dan kredensial kata sandi
 
-Contoh berikut membuat aplikasi baru dengan nama **ServicePrincipalName** dan kata sandi **StrongPassworld!23**. Layanan membuat prinsipal layanan berdasarkan aplikasi yang dibuat. Tanggal mulai dan tanggal berakhir ditambahkan ke kredensial kata sandi.
+Contoh berikut membuat aplikasi baru dengan nama **ServicePrincipalName** dan kata sandi **StrongPassworld!23**. Ini membuat prinsipal layanan berdasarkan aplikasi yang dibuat. Tanggal mulai dan tanggal akhir ditambahkan ke kredensial kata sandi.
 
 ```powershell
 $credentials = New-Object -TypeName Microsoft.Azure.Commands.ActiveDirectory.PSADPasswordCredential -Property @{
@@ -248,7 +248,7 @@ Type                  :
 
 ### Contoh 8: Membuat prinsipal layanan AD baru menggunakan DisplayName dan kredensial kunci biasa
 
-Contoh berikut membuat aplikasi baru dengan nama **ServicePrincipalName** dan sertifikat **$cert**. Layanan membuat prinsipal layanan berdasarkan aplikasi yang dibuat. Tanggal berakhir ditambahkan ke kredensial kunci.
+Contoh berikut membuat aplikasi baru dengan nama **ServicePrincipalName** dan sertifikat **$cert**. Ini membuat prinsipal layanan berdasarkan aplikasi yang dibuat. Tanggal akhir ditambahkan ke kredensial kunci.
 
 ```powershell
 $cert = 'public certificate as Base64 encoded string'
@@ -268,7 +268,7 @@ Type                  :
 
 ### -ApplicationId
 
-ID aplikasi unik untuk prinsipal layanan dalam penyewa. Setelah dibuat, properti ini tidak dapat diubah. Jika ID aplikasi untuk aplikasi yang sudah ada tidak ditentukan, aplikasi dibuat.
+ID aplikasi unik untuk prinsipal layanan dalam penyewa. Setelah dibuat, properti ini tidak dapat diubah. Jika ID aplikasi untuk aplikasi yang sudah ada tidak ditentukan, aplikasi akan dibuat.
 
 ```yaml
 Type: System.Guid
@@ -296,7 +296,7 @@ Accept wildcard characters: False
 
 ### -ApplicationObject
 
-Objek yang mewakili aplikasi yang menjadi tujuan dibuatnya prinsipal layanan.
+Objek yang mewakili aplikasi tempat prinsipal layanan dibuat.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ActiveDirectory.PSADApplication
@@ -312,7 +312,7 @@ Accept wildcard characters: False
 
 ### -CertValue
 
-Nilai tipe kredensial asimetris. Kode ini mewakili sertifikat berkode Base64.
+Nilai tipe kredensial asimetris. Ini mewakili sertifikat base64 yang dikodekan.
 
 ```yaml
 Type: System.String
@@ -356,7 +356,7 @@ Accept wildcard characters: False
 
 ### -DisplayName
 
-Nama prinsipal layanan yang mudah di friendly. Jika nama tampilan tidak disediakan, nilai ini akan default untuk **azure-powershell-MM-dd-yyyy-HH-mm-ss** di mana akhiran adalah waktu pembuatan aplikasi.
+Nama pokok layanan yang ramah. Jika nama tampilan tidak disediakan, nilai ini akan default ke **azure-powershell-MM-dd-yyyy-HH-mm-ss** di mana akhirannya adalah waktu pembuatan aplikasi.
 
 ```yaml
 Type: System.String
@@ -384,8 +384,8 @@ Accept wildcard characters: False
 
 ### -EndDate
 
-Tanggal berakhir efektif penggunaan kredensial. Nilai tanggal akhir default adalah satu tahun dari hari ini.
-Untuk kredensial tipe asimetris, kredensial ini harus diatur ke aktif atau sebelum tanggal validnya sertifikat X509.
+Tanggal berakhir efektif dari penggunaan kredensial. Nilai tanggal akhir default adalah satu tahun dari hari ini.
+Untuk kredensial tipe asimetris, ini harus diatur ke aktif atau sebelum tanggal sertifikat X509 valid.
 
 ```yaml
 Type: System.DateTime
@@ -469,7 +469,7 @@ Accept wildcard characters: False
 
 ### -Peran
 
-Peran prinsipal layanan ada di atas lingkupnya. Jika tidak ada nilai yang **disediakan** , Peran default untuk **peran** Kontributor.
+Peran yang dimiliki oleh prinsipal layanan melalui lingkup. Jika tidak ada nilai yang disediakan, **Perankan** default ke peran **Kontributor** .
 
 ```yaml
 Type: System.String
@@ -485,7 +485,7 @@ Accept wildcard characters: False
 
 ### -Lingkup
 
-Cakupan prinsipal layanan tersebut memiliki izin. Jika tidak ada nilai yang disediakan, **Lingkup** akan default untuk langganan saat ini.
+Lingkup tempat prinsipal layanan memiliki izin. Jika tidak ada nilai yang disediakan, **Lingkup** default untuk langganan saat ini.
 
 ```yaml
 Type: System.String
@@ -501,7 +501,7 @@ Accept wildcard characters: False
 
 ### -SkipAssignment
 
-Jika set, lewati pembuatan penetapan peran default untuk prinsipal layanan.
+Jika diatur, lewati pembuatan penetapan peran default untuk prinsipal layanan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -545,7 +545,7 @@ Accept wildcard characters: False
 
 ### -Konfirmasi
 
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -561,7 +561,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -576,7 +576,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -584,23 +584,23 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### Microsoft.Azure.Commands.ActiveDirectory.FOLDApplication
+### Microsoft.Azure.Commands.ActiveDirectory.PSADAplikasi
 
-### Microsoft.Azure.Commands.ActiveDirectory.LINUXDPasswordCredential[]
+### Microsoft.Azure.Commands.ActiveDirectory.PSADPasswordCredential[]
 
-### Microsoft.Azure.Commands.ActiveDirectory.LINUXDKeyCredential[]
+### Microsoft.Azure.Commands.ActiveDirectory.PSADKeyCredential[]
 
 ### System.DateTime
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.ActiveDirectory.LINUXDServicePrincipal
+### Microsoft.Azure.Commands.ActiveDirectory.PSADServicePrincipal
 
-### Microsoft.Azure.Commands.Resources.Models.Authorization.BURDServicePrincipalWra azure
+### Microsoft.Azure.Commands.Resources.Models.Authorization.PSADServicePrincipalWrapper
 
 ## CATATAN
 
-Kata kunci: azure, azurerm, arm, resource, management, manager, resource, group, template, deployment
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Templat, penyebaran
 
 ## RELATED LINKS
 
@@ -608,9 +608,9 @@ Kata kunci: azure, azurerm, arm, resource, management, manager, resource, group,
 
 [Get-AzADServicePrincipal](./Get-AzADServicePrincipal.md)
 
-[New-AzADApplication](./New-AzADApplication.md)
+[New-AzADAplikasi](./New-AzADApplication.md)
 
-[Remove-AzADApplication](./Remove-AzADApplication.md)
+[Remove-AzADAplikasi](./Remove-AzADApplication.md)
 
 [Get-AzADSpCredential](./Get-AzADSpCredential.md)
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/New-AzSearchService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/New-AzSearchService.md
 ms.openlocfilehash: ac2520da8d4355217ca6704d9509ed22f05ab5eb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140066609"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142223911"
 ---
 # New-AzSearchService
 
 ## SYNOPSIS
-Membuat layanan Pencarian Kognitif Azure.
+Membuat layanan Azure Cognitive Search.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.search/new-azsearchservice) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.search/new-azsearchservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ New-AzSearchService [-ResourceGroupName] <String> [-Name] <String> [-Sku] <PSSku
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSearchService** membuat layanan Pencarian Kognitif Azure dengan parameter tertentu.
+Cmdlet **New-AzSearchService** membuat layanan Azure Cognitive Search dengan parameter tertentu.
 
 ## EXAMPLES
 
@@ -50,7 +50,7 @@ HostingMode       : Default
 Tags              :
 ```
 
-Perintah tersebut akan membuat layanan Pencarian Kognitif Azure.
+Perintah membuat layanan Azure Cognitive Search.
 
 ## PARAMETERS
 
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostingMode
-Mode hosting Layanan Pencarian Kognitif Azure.
+Azure Cognitive Search Mode hosting layanan.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.Management.Search.Models.PSHostingMode]
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-(Opsional) Identitas Layanan Pencarian Kognitif Azure (Tidak Ada/SystemAssigned)
+(Opsional) Azure Cognitive Search Service Identity (None/SystemAssigned)
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.Management.Search.Models.PSIdentityType]
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -IPRuleList
-(Opsional) Aturan IP Azure Cognitive Search Service
+(Opsional) aturan IP layanan Azure Cognitive Search
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Search.Models.PSIpRule[]
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi Layanan Pencarian Kognitif Azure.
+lokasi Layanan Azure Cognitive Search.
 
 ```yaml
 Type: System.String
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Layanan Pencarian Kognitif Azure.
+Azure Cognitive Search Nama layanan.
 
 ```yaml
 Type: System.String
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartitionCount
-Jumlah partisi Layanan Pencarian Kognitif Azure.
+Azure Cognitive Search Jumlah partisi layanan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccess
-(Opsional) Akses jaringan publik Layanan Pencarian Kognitif Azure (Diaktifkan/Dinonaktifkan)
+(Opsional) akses jaringan publik Layanan Azure Cognitive Search (Diaktifkan/Dinonaktifkan)
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.Management.Search.Models.PSPublicNetworkAccess]
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicaCount
-Jumlah replika Layanan Pencarian Kognitif Azure.
+Azure Cognitive Search Hitungan replika layanan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Sku Layanan Pencarian Kognitif Azure.
+Azure Cognitive Search Service Sku.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Search.Models.PSSkuName
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -252,11 +252,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

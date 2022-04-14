@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlDatabaseSecondary.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlDatabaseSecondary.md
-ms.openlocfilehash: 36698059226b14a9d1b11b7ed335dc819a960c0c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d652ac50cd26e23c0ba640e332eb3140d092338c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139998534"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142207737"
 ---
 # Remove-AzSqlDatabaseSecondary
 
 ## SYNOPSIS
 Mengakhiri replikasi data antara SQL Database dan database sekunder yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqldatabasesecondary) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,15 +30,15 @@ Remove-AzSqlDatabaseSecondary [-DatabaseName] <String> -PartnerResourceGroupName
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzSqlDatabaseSecbasery** memaksa pemutusan link geo-replication.
-Cmdlet ini menggantikan cmdlet Stop-AzSqlDatabaseCopy cmdlet.
-Tidak ada sinkronisasi replikasi sebelum berakhirnya program.
+Cmdlet **Remove-AzSqlDatabaseSecondary** memaksa penghentian tautan geo-replikasi.
+Cmdlet ini menggantikan cmdlet Stop-AzSqlDatabaseCopy.
+Tidak ada sinkronisasi replikasi sebelum penghentian.
 
 ## EXAMPLES
 
 ### Contoh 1
 
-Mengakhiri replikasi data antara SQL Database dan database sekunder yang ditentukan. (otomatisgenerated)
+Mengakhiri replikasi data antara SQL Database dan database sekunder yang ditentukan. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -45,7 +48,7 @@ Remove-AzSqlDatabaseSecondary -DatabaseName db1 -PartnerResourceGroupName rg2 -P
 ## PARAMETERS
 
 ### -DatabaseName
-Menentukan nama grup utama Azure SQL Database memiliki link replikasi yang dihapus cmdlet ini.
+Menentukan nama Azure SQL Database utama yang memiliki tautan replikasi yang dihapus cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -60,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerServerName
-Menentukan nama mitra SQL Server.
+Menentukan nama SQL Server mitra.
 
 ```yaml
 Type: System.String
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang terkait dengan link replikasi untuk dihapus.
+Menentukan nama grup sumber daya yang terkait dengan tautan replikasi untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama karakter SQL Server memiliki link replikasi untuk dihapus.
+Menentukan nama SQL Server yang memiliki tautan replikasi untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -180,8 +183,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzSqlDatabaseSecbasery](./New-AzSqlDatabaseSecondary.md)
+[New-AzSqlDatabaseSecondary](./New-AzSqlDatabaseSecondary.md)
 
-[Set-AzSqlDatabaseSecbasery](./Set-AzSqlDatabaseSecondary.md)
+[Set-AzSqlDatabaseSecondary](./Set-AzSqlDatabaseSecondary.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

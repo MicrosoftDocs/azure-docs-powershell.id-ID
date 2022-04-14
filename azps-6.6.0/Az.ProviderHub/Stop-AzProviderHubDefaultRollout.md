@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Stop-AzProviderHubDefaultRollout.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Stop-AzProviderHubDefaultRollout.md
 ms.openlocfilehash: f57fd10419ec102bfe287f1ac7d2017c4c6d2d67
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139970601"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142225477"
 ---
 # Stop-AzProviderHubDefaultRollout
 
@@ -18,7 +18,7 @@ ms.locfileid: "139970601"
 Menghentikan atau membatalkan peluncuran, jika sedang berlangsung.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.providerhub/stop-azproviderhubdefaultrollout) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.providerhub/stop-azproviderhubdefaultrollout) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Stop-AzProviderHubDefaultRollout -ProviderNamespace <String> -RolloutName <Strin
  [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### StopViaIdentity
+### StopViaIdentitas
 ```
 Stop-AzProviderHubDefaultRollout -InputObject <IProviderHubIdentity> [-DefaultProfile <PSObject>] [-PassThru]
  [-Confirm] [-WhatIf] [<CommonParameters>]
@@ -44,14 +44,14 @@ Menghentikan atau membatalkan peluncuran, jika sedang berlangsung.
 PS C:\> Stop-AzProviderHubDefaultRollout -ProviderNamespace "Microsoft.Contoso" -RolloutName "defaultRollout2021w10"
 ```
 
-Membatalkan peluncuran default dengan nama peluncuran.
+Batalkan peluncuran default dengan nama peluncuran.
 
 ### Contoh 2: Batalkan peluncuran default dengan nama peluncuran.
 ```powershell
 PS C:\> Stop-AzProviderHubDefaultRollout -ProviderNamespace "Microsoft.Contoso" -RolloutName "defaultRollout2021w10"
 ```
 
-Membatalkan peluncuran default dengan nama peluncuran.
+Batalkan peluncuran default dengan nama peluncuran.
 
 ## PARAMETERS
 
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.IProviderHubIdentity
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -201,7 +201,7 @@ INPUTOBJECT <IProviderHubIdentity>: Parameter Identitas
   - `[NestedResourceTypeFirst <String>]`: Tipe sumber daya anak pertama.
   - `[NestedResourceTypeSecond <String>]`: Tipe sumber daya anak kedua.
   - `[NestedResourceTypeThird <String>]`: Tipe sumber daya anak ketiga.
-  - `[NotificationRegistrationName <String>]`: Pendaftaran pemberitahuan.
+  - `[NotificationRegistrationName <String>]`: Registrasi pemberitahuan.
   - `[ProviderNamespace <String>]`: Nama penyedia sumber daya yang dihosting dalam ProviderHub.
   - `[ResourceType <String>]`: Tipe sumber daya.
   - `[RolloutName <String>]`: Nama peluncuran.

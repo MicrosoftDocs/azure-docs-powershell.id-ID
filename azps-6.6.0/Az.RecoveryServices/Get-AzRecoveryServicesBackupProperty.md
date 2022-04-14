@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupProperty.md
 ms.openlocfilehash: bd9d6243e06093407e6934d5468016ce9973161d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140068247"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142225171"
 ---
 # Get-AzRecoveryServicesBackupProperty
 
 ## SYNOPSIS
-Mendapatkan properti Cadangan.
+Mendapatkan properti Pencadangan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupproperty) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupproperty) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzRecoveryServicesBackupProperty -Vault <ARSVault> [-DefaultProfile <IAzureC
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesBackupProperty** mendapatkan properti cadangan untuk vault Layanan Pemulihan.
+Cmdlet **Get-AzRecoveryServicesBackupProperty** mendapatkan properti cadangan untuk kubah Layanan Pemulihan.
 
 ## EXAMPLES
 
@@ -37,12 +37,12 @@ Cmdlet **Get-AzRecoveryServicesBackupProperty** mendapatkan properti cadangan un
 PS C:\> Get-AzRecoveryServicesBackupProperty -Vault $vault
 ```
 
-Dapatkan properti vault cadangan untuk vault.
+Dapatkan properti brankas cadangan untuk kubah.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -57,8 +57,8 @@ Accept wildcard characters: False
 ```
 
 ### -Vault
-Menentukan nama vault.
-Vault harus merupakan objek **AzureRmRecoveryServicesVault** .
+Menentukan nama kubah.
+Kubah harus berupa objek **AzureRmRecoveryServicesVault** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.ARSVault
@@ -73,11 +73,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.RecoveryServices.VAULT
+### Microsoft.Azure.Commands.RecoveryServices.ARSVault
 
 ## OUTPUTS
 

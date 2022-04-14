@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/update-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Update-AzSqlSyncGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Update-AzSqlSyncGroup.md
-ms.openlocfilehash: f4a9c1ed5ad762d233ca32888f6a06b04c10640d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1e8e3d8131ddcc26e630bc53f4f3a1c89a12dd58
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140005841"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142207213"
 ---
 # Update-AzSqlSyncGroup
 
 ## SYNOPSIS
-Memperbarui Azure SQL Database Sinkronisasi Bersama.
+Memperbarui Grup Sinkronisasi Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/update-azsqlsyncgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ Update-AzSqlSyncGroup [-Name] <String> [-IntervalInSeconds <Int32>] [-DatabaseCr
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzSqlSyncGroup** mengubah properti grup Azure SQL Database Sinkronisasi.
+Cmdlet **Update-AzSqlSyncGroup** mengubah properti grup sinkronisasi Azure SQL Database.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui grup sinkronisasi untuk suatu Azure SQL Database.
+### Contoh 1: Memperbarui grup sinkronisasi untuk Azure SQL Database.
 ```
 PS C:\> $credential = Get-Credential
 PS C:\> Update-AzSqlSyncGroup -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -Name "SyncGroup01"
@@ -51,12 +54,12 @@ LastSyncTime                : 1/1/0001 12:00:00 AM
 Schema                      :
 ```
 
-Perintah ini memperbarui grup sinkronisasi untuk suatu Azure SQL Database. "schema.json" adalah file di disk lokal. Daftar isi berisi skema payload dalam format json. Contoh json skema adalah: {"Tables": [{"Columns": [{"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column1"}, {"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column2"}], "QuotedName": "MayQuotedTable1"}, {"Columns": [{"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column1"}, {"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column2"}], "QuotedName": "MayQuotedTable2"}], "MasterSyncMemberName":  null }
+Perintah ini memperbarui grup sinkronisasi untuk Azure SQL Database. "schema.json" adalah file di disk lokal. Ini berisi muatan skema dalam format json. Contoh json skema adalah: {"Tables": [{"Columns": [{"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column1"}, {"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column2"}], "QuotedName": "MayQuotedTable1"}, {"Columns": [{"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column1"}, {"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column2"}], "QuotedName": "MayQuotedTable2"}], "MasterSyncMemberName":  null }
 
 ## PARAMETERS
 
 ### -DatabaseCredential
-Kredensial SQL autentikasi database hub.
+Kredensial autentikasi SQL database hub.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama azure SQL Server.
+Nama Server Azure SQL.
 
 ```yaml
 Type: System.String
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -UsePrivateLinkConnection
-Apakah akan menggunakan koneksi link pribadi saat menyambungkan ke hub grup sinkronisasi ini.
+Apakah akan menggunakan koneksi tautan privat saat menyambungkan ke hub grup sinkronisasi ini.
 
 ```yaml
 Type: System.Boolean
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

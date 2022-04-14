@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlDatabaseToFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlDatabaseToFailoverGroup.md
 ms.openlocfilehash: 2d35a6251f1bbc87c5ce082f0668909e550612d0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140246185"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142076791"
 ---
 # Add-AzSqlDatabaseToFailoverGroup
 
 ## SYNOPSIS
-Menambahkan satu atau beberapa database ke Azure SQL Database Failover Group.
+Menambahkan satu atau beberapa database ke Grup Failover Azure SQL Database.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/add-azsqldatabasetofailovergroup) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/add-azsqldatabasetofailovergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,8 +29,8 @@ Add-AzSqlDatabaseToFailoverGroup [-ServerName] <String> [-FailoverGroupName] <St
 ```
 
 ## DESCRIPTION
-Menambahkan satu atau beberapa database di server utama Azure SQL Database Failover Group ke Grup Failover tersebut. Database tidak boleh database sekunder dalam hubungan replikasi yang sudah ada. Perintah akan memulai replikasi geografis setiap database yang ditambahkan ke server sekunder Grup Failover.
-Untuk mendapatkan objek database yang akan digunakan untuk mengisi parameter '-Database', gunakan (misalnya) Get-AzSqlDatabase cmdlet.
+Menambahkan satu atau beberapa database di server utama Grup Failover Azure SQL Database ke Grup Failover tersebut. Database tidak boleh berupa database sekunder dalam hubungan replikasi yang sudah ada. Perintah akan memulai geo-replikasi database apa pun yang ditambahkan ke server sekunder Grup Failover.
+Untuk mendapatkan objek database yang digunakan untuk mengisi parameter '-Database', gunakan (misalnya) cmdlet Get-AzSqlDatabase.
 Server utama Grup Failover harus digunakan untuk menjalankan perintah.
 
 ## EXAMPLES
@@ -40,7 +40,7 @@ Server utama Grup Failover harus digunakan untuk menjalankan perintah.
 PS C:\> $failoverGroup = Get-AzSqlDatabase -ResourceGroupName rg -ServerName primaryserver -DatabaseName db1 | Add-AzSqlDatabaseToFailoverGroup -ResourceGroupName rg -ServerName primaryserver -FailoverGroupName fg
 ```
 
-Perintah ini menambahkan satu database ke Grup Failover dengan pemipaannya.
+Perintah ini menambahkan satu database ke Grup Failover dengan memilahnya.
 
 ### Contoh 2
 ```
@@ -48,7 +48,7 @@ PS C:\> $primaryServer = Get-AzSqlServer -ResourceGroupName rg -ServerName prima
 PS C:\> $failoverGroup = $primaryServer | Add-AzSqlDatabaseToFailoverGroup -FailoverGroupName fg -Database ($primaryServer | Get-AzSqlDatabase)
 ```
 
-Perintah ini menambahkan semua database di server ke Grup Failover.
+Perintah ini menambahkan semua database dalam server ke Grup Failover.
 
 ### Contoh 3
 ```
@@ -57,12 +57,12 @@ PS C:\> $databases = Get-AzSqlElasticPoolDatabase -ResourceGroupName rg -ServerN
 PS C:\> $failoverGroup = $failoverGroup | Add-AzSqlDatabaseToFailoverGroup -Database $databases
 ```
 
-Perintah ini menambahkan semua database dalam Kelompok Elastis ke Grup Failover.
+Perintah ini menambahkan semua database dalam Kumpulan Elastis ke Grup Failover.
 
 ## PARAMETERS
 
 ### -Database
-Satu atau beberapa Database SQL Azure di server utama Grup Failover untuk ditambahkan ke Grup Failover.
+Satu atau beberapa Database Azure SQL di server utama Grup Failover untuk ditambahkan ke Grup Failover.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel]
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -FailoverGroupName
-Nama grup Azure SQL Database Failover.
+Nama Grup failover Azure SQL Database.
 
 ```yaml
 Type: System.String
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama server utama Azure SQL Database Dari Grup Failover.
+Nama Server Azure SQL Database utama Grup Failover.
 
 ```yaml
 Type: System.String
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -165,4 +165,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Remove-AzSqlDatabaseFailoverGroup](./Remove-AzSqlDatabaseFailoverGroup.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

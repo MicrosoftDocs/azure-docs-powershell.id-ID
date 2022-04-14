@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzResourceLock.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzResourceLock.md
 ms.openlocfilehash: 1efd1e60db74a7782118bfd6eaf02dc5d31c9f92
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140066897"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142224433"
 ---
 # New-AzResourceLock
 
@@ -19,7 +19,7 @@ ms.locfileid: "140066897"
 Membuat kunci sumber daya.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/new-azresourcelock) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azresourcelock) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -75,14 +75,14 @@ Cmdlet **New-AzResourceLock** membuat kunci sumber daya.
 PS C:\>New-AzResourceLock -LockLevel CanNotDelete -LockNotes "My lock notes" -LockName "ContosoSiteLock" -ResourceName "ContosoSite" -ResourceType "microsoft.web/sites"
 ```
 
-Perintah ini akan membuat kunci sumber daya di situs web.
+Perintah ini membuat kunci sumber daya di situs web.
 
 ### Contoh 2: Membuat kunci sumber daya pada database
 ```
 PS C:\>New-AzResourceLock -LockLevel CanNotDelete -LockNotes "Lock note" -LockName "db-lock" -ResourceName "server1/ContosoDB"  -ResourceGroupName "RG1" -ResourceType "Microsoft.Sql/servers/databases"
 ```
 
-Perintah ini akan membuat kunci sumber daya pada database Azure.
+Perintah ini membuat kunci sumber daya di database Azure.
 
 ## PARAMETERS
 
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -117,8 +117,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -LockLevel
-Menentukan tingkat kunci.
+Menentukan tingkat untuk kunci.
 Saat ini, nilai yang valid adalah CanNotDelete, ReadOnly.
 
 ```yaml
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -LockNotes
-Menentukan catatan untuk kunci tersebut.
+Menentukan catatan untuk kunci.
 
 ```yaml
 Type: System.String
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Cmdlet ini mempertimbangkan versi API prari release ketika cmdlet menentukan versi mana yang akan digunakan secara otomatis.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat kunci diterapkan atau berisi grup sumber daya tempat kunci diterapkan.
+Menentukan nama grup sumber daya tempat kunci diterapkan atau yang berisi grup sumber daya tempat kunci diterapkan.
 
 ```yaml
 Type: System.String
@@ -225,8 +225,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceName
-Menentukan nama sumber daya untuk menerapkan kunci.
-Sebagai contoh, untuk menentukan database, gunakan format berikut: `ContosoServer/ContosoDatabase`
+Menentukan nama sumber daya tempat kunci diterapkan.
+Misalnya, untuk menentukan database, gunakan format berikut: `ContosoServer/ContosoDatabase`
 
 ```yaml
 Type: System.String
@@ -241,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceType
-Menentukan tipe sumber daya dari sumber daya yang diterapkan oleh kunci.
+Menentukan tipe sumber daya tempat kunci diterapkan.
 
 ```yaml
 Type: System.String
@@ -256,8 +256,8 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Menentukan lingkup berlakunya kunci.
-Misalnya, untuk menentukan database, gunakan format berikut ini: `/subscriptions/`nama server nama grup IDresource`/resourceGroups/``/databases/``/providers/Microsoft.Sql/servers/` langganan namadatabase Untuk menentukan grup sumber daya, gunakan format berikut ini: `/subscriptions/`nama grup IDresource langganan`/resourceGroups/`
+Menentukan lingkup yang diterapkan kunci.
+Misalnya, untuk menentukan database, gunakan format berikut: `/subscriptions/`langganan IDresource`/resourceGroups/` nama nameserver`/databases/` namedatabase`/providers/Microsoft.Sql/servers/` nama Untuk menentukan grup sumber daya, gunakan format berikut: `/subscriptions/`langganan IDresource`/resourceGroups/` nama grup
 
 ```yaml
 Type: System.String
@@ -272,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -288,7 +288,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -303,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -321,7 +321,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzResourceLock](./Get-AzResourceLock.md)
 
-[Remove-AzResourceLock](./Remove-AzResourceLock.md)
+[Hapus-AzResourceLock](./Remove-AzResourceLock.md)
 
 [Set-AzResourceLock](./Set-AzResourceLock.md)
 

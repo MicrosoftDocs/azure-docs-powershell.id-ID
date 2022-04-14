@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Invoke-AzResourceAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Invoke-AzResourceAction.md
 ms.openlocfilehash: 88568e3c9572a9655ea55a1aa318782e19d7547b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140246923"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142078141"
 ---
 # Invoke-AzResourceAction
 
 ## SYNOPSIS
-Menjalankan tindakan pada sumber daya.
+Memanggil tindakan pada sumber daya.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/invoke-azresourceaction) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/invoke-azresourceaction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,12 +47,12 @@ Invoke-AzResourceAction [-Parameters <Hashtable>] -Action <String> -ResourceName
 ```
 
 ## DESCRIPTION
-Cmdlet **Invoke-AzResourceAction** menjalankan tindakan pada sumber daya Azure yang ditentukan.
+Cmdlet **Invoke-AzResourceAction** memanggil tindakan pada sumber daya Azure tertentu.
 Untuk mendapatkan daftar tindakan yang didukung, gunakan alat Azure Resource Explorer.
 
 ## EXAMPLES
 
-### Contoh 1: Invoke starting a VM with ResourceId
+### Contoh 1: Memanggil memulai VM dengan ResourceId
 
 ```powershell
 PS C:\>Invoke-AzResourceAction -ResourceId /subscriptions/{subId}/resourceGroups/{rg}/providers/Microsoft.Compute/virtualMachines/testVM -Action start
@@ -62,18 +62,18 @@ Are you sure you want to invoke the 'start' action on the following resource: /s
 [Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): y
 ```
 
-Perintah ini memulai Komputer Virtual dengan {ResourceId}.
+Perintah ini memulai Mesin Virtual dengan {ResourceId}.
 
-### Contoh 2: Invoke poweroffing a VM with ResourceName
+### Contoh 2: Memanggil poweroffing VM dengan ResourceName
 
 ```powershell
 PS C:\>Invoke-AzResourceAction -ResourceGroupName testGroup -ResourceName testVM -ResourceType Microsoft.Compute/virtualMachines/ -Action Poweroff -Force
 ```
 
-Perintah ini menghentikan Komputer Virtual dengan {ResourceId}.
-Perintah menentukan parameter *Paksa* , oleh karena itu, perintah tidak akan meminta konfirmasi Anda.
+Perintah ini menghentikan Mesin Virtual dengan {ResourceId}.
+Oleh karena itu, perintah menentukan parameter *Paksa* , tidak meminta konfirmasi kepada Anda.
 
-### Contoh 3: Invoke mendaftarkan penyedia sumber daya dengan ResourceId
+### Contoh 3: Memanggil mendaftarkan penyedia sumber daya dengan ResourceId
 
 ```powershell
 PS C:\>Invoke-AzResourceAction -ResourceId /subscriptions/{subId}/providers/Microsoft.Network -action register -Force
@@ -89,12 +89,12 @@ registrationState : Registered
 ```
 
 Perintah ini mendaftarkan penyedia sumber daya "Microsoft.Network".
-Perintah menentukan parameter *Paksa* , oleh karena itu, perintah tidak akan meminta konfirmasi Anda.
+Oleh karena itu, perintah menentukan parameter *Paksa* , tidak meminta konfirmasi kepada Anda.
 
 ## PARAMETERS
 
 ### -Tindakan
-Menentukan nama tindakan untuk diminta.
+Menentukan nama tindakan yang akan dijalankan.
 
 ```yaml
 Type: System.String
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -140,8 +140,8 @@ Accept wildcard characters: False
 ```
 
 ### -ExtensionResourceName
-Menentukan nama sumber daya ekstensi untuk sumber daya di mana cmdlet ini akan menjalankan tindakan.
-Misalnya, untuk menentukan database, gunakan format berikut: namadatabase`/` server
+Menentukan nama sumber daya ekstensi untuk sumber daya di mana cmdlet ini memanggil tindakan.
+Misalnya, untuk menentukan database, gunakan format berikut: nama namadatabase`/` server
 
 ```yaml
 Type: System.String
@@ -171,8 +171,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,8 +202,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Parameter
-Menentukan parameter, sebagai tabel hash, untuk tindakan yang diminta cmdlet ini.
+### -Parameters
+Menentukan parameter, sebagai tabel hash, untuk tindakan yang dijalankan cmdlet ini.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Cmdlet ini mempertimbangkan versi API prari release ketika cmdlet menentukan versi mana yang akan digunakan secara otomatis.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini akan menjalankan tindakan.
+Menentukan nama grup sumber daya tempat cmdlet ini memanggil tindakan.
 
 ```yaml
 Type: System.String
@@ -248,8 +248,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan ID sumber daya yang sepenuhnya memenuhi syarat dari sumber daya di mana cmdlet ini akan menjalankan tindakan.
-ID mencakup langganan, seperti dalam contoh berikut: `/subscriptions/`ID langganan`/providers/Microsoft.Sql/servers/ContosoServer/databases/ContosoDatabase`
+Menentukan ID sumber daya yang sepenuhnya memenuhi syarat dari sumber daya tempat cmdlet ini memanggil tindakan.
+ID menyertakan langganan, seperti dalam contoh berikut: `/subscriptions/`ID langganan`/providers/Microsoft.Sql/servers/ContosoServer/databases/ContosoDatabase`
 
 ```yaml
 Type: System.String
@@ -264,8 +264,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceName
-Menentukan nama sumber daya sumber daya di mana cmdlet ini akan menjalankan tindakan.
-Sebagai contoh, untuk menentukan database, gunakan format berikut: `ContosoServer/ContosoDatabase`
+Menentukan nama sumber daya tempat cmdlet ini memanggil tindakan.
+Misalnya, untuk menentukan database, gunakan format berikut: `ContosoServer/ContosoDatabase`
 
 ```yaml
 Type: System.String
@@ -281,7 +281,7 @@ Accept wildcard characters: False
 
 ### -ResourceType
 Menentukan tipe sumber daya.
-Sebagai contoh, untuk database, tipe sumber dayanya adalah sebagai berikut: `Microsoft.Sql/Servers/Databases`
+Misalnya, untuk database, tipe sumber daya adalah sebagai berikut: `Microsoft.Sql/Servers/Databases`
 
 ```yaml
 Type: System.String
@@ -296,7 +296,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantLevel
-Mengindikasikan bahwa cmdlet ini beroperasi pada tingkat penyewa.
+Menunjukkan bahwa cmdlet ini beroperasi pada tingkat penyewa.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -311,7 +311,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -327,7 +327,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -342,7 +342,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

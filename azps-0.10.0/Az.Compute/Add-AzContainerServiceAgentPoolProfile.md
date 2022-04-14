@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Add-AzContainerServiceAgentPoolProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Add-AzContainerServiceAgentPoolProfile.md
 ms.openlocfilehash: c1a3cf88350c02359633d73b074ea1faa910bde9
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422029"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142236151"
 ---
 # Add-AzContainerServiceAgentPoolProfile
 
 ## SYNOPSIS
-Menambahkan profil wadah agen layanan kolam renang.
+Menambahkan profil kumpulan agen layanan kontainer.
 
 ## SYNTAX
 
@@ -27,22 +27,22 @@ Add-AzContainerServiceAgentPoolProfile [-ContainerService] <PSContainerService> 
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzContainerServiceAgentPoolProfile** menambahkan profil pool agen layanan penampung ke objek layanan penampung lokal.
+Cmdlet **Add-AzContainerServiceAgentPoolProfile** menambahkan profil kumpulan agen layanan kontainer ke objek layanan kontainer lokal.
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan profil
+### Contoh 1: Menambahkan profil
 ```
 PS C:\> Add-AzContainerServiceAgentPoolProfile -Name "AgentPool01" -VmSize "Standard_A1" -DnsPrefix "APResourceGroup17"
 ```
 
-Perintah ini menambahkan profil pool agen layanan kontainer ke objek layanan penampung lokal.
+Perintah ini menambahkan profil kumpulan agen layanan kontainer ke objek layanan kontainer lokal.
 
 ## PARAMETERS
 
 ### -ContainerService
-Menentukan objek layanan kontainer tempat cmdlet ini menambahkan profil penyimpanan agen.
-Untuk mendapatkan objek **ContainerService,** gunakan cmdlet [New-AzContainerServiceConfig.](./New-AzContainerServiceConfig.md)
+Menentukan objek layanan kontainer tempat cmdlet ini menambahkan profil kumpulan agen.
+Untuk mendapatkan objek **ContainerService** , gunakan cmdlet [New-AzContainerServiceConfig](./New-AzContainerServiceConfig.md) .
 
 ```yaml
 Type: PSContainerService
@@ -57,9 +57,9 @@ Accept wildcard characters: False
 ```
 
 ### -Count
-Menentukan jumlah agen yang menjadi host wadah.
-Nilai yang dapat diterima untuk parameter ini adalah: bilangan bulat dari 1 sampai 100.
-Nilai default adalah 1.
+Menentukan jumlah agen yang menghosting kontainer.
+Nilai yang dapat diterima untuk parameter ini adalah: bilangan bulat dari 1 hingga 100.
+Nilai defaultnya adalah 1.
 
 ```yaml
 Type: Int32
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -DnsPrefix
-Menentukan prefiks DNS yang digunakan cmdlet ini untuk membuat nama domain yang sepenuhnya memenuhi syarat untuk pool agen ini.
+Menentukan prefiks DNS yang digunakan cmdlet ini untuk membuat nama domain yang sepenuhnya memenuhi syarat untuk kumpulan agen ini.
 
 ```yaml
 Type: String
@@ -104,8 +104,8 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama profil agen pool.
-Nilai ini harus unik dalam konteks langganan dan grup sumber daya.
+Menentukan nama profil kumpulan agen.
+Nilai ini harus unik dalam konteks grup langganan dan sumber daya.
 
 ```yaml
 Type: String
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -165,12 +165,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### ContainerService
-Parameter 'ContainerService' menerima nilai tipe 'ContainerService' dari saluran
+Parameter 'ContainerService' menerima nilai tipe 'ContainerService' dari pipeline
 
 ## OUTPUTS
 

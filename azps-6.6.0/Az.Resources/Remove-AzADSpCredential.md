@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADSpCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADSpCredential.md
 ms.openlocfilehash: ce3ab71d874bbb5f44ed26f03c3a77a71c5a0ea9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140547679"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142224415"
 ---
 # Remove-AzADSpCredential
 
@@ -21,7 +21,7 @@ Menghapus kredensial dari prinsipal layanan.
 [!INCLUDE [msgraph-migration-banner](../../includes/msgraph-migration-banner.md)]
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/remove-azadspcredential) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-azadspcredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,9 +50,9 @@ Remove-AzADSpCredential -ServicePrincipalObject <PSADServicePrincipal> [-KeyId <
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzADSpCredential ini dapat digunakan untuk menghapus kunci kredensial dari prinsipal layanan dalam hal kedaluwarsa rol kunci kredensial atau sebagai bagian dari kredensial.
-Prinsipal layanan diidentifikasi dengan menyediakan ID objek atau nama prinsipal layanan (SPN).
-Kredensial yang akan dihapus diidentifikasi dengan ID kuncinya jika kredensial individual akan dihapus atau dengan sakelar 'Semua' untuk menghapus semua kredensial yang terkait dengan prinsipal layanan.
+Cmdlet Remove-AzADSpCredential dapat digunakan untuk menghapus kunci kredensial dari prinsipal layanan dalam kasus kompromi atau sebagai bagian dari kedaluwarsa rollover kunci kredensial.
+Prinsipal layanan diidentifikasi dengan memasok ID objek atau nama pokok layanan (SPN).
+Kredensial yang akan dihapus diidentifikasi oleh ID kuncinya jika kredensial individual akan dihapus atau dengan sakelar 'Semua' untuk menghapus semua kredensial yang terkait dengan prinsipal layanan.
 
 ## EXAMPLES
 
@@ -72,18 +72,18 @@ PS C:\> Remove-AzADSpCredential -ServicePrincipalName http://test123
 
 Menghapus semua kredensial dari prinsipal layanan dengan SPN "http://test123".
 
-### Contoh 3: Hapus semua kredensial dari prinsipal layanan menggunakan pemipaan
+### Contoh 3: Hapus semua kredensial dari prinsipal layanan menggunakan piping
 
 ```powershell
 PS C:\> Get-AzADServicePrincipal -ObjectId 7663d3fb-6f86-4352-9e6d-cf9d50d5ee82 | Remove-AzADSpCredential
 ```
 
-Dapatkan prinsipal layanan dengan id objek '7663d3fb-6f86-4352-9e6d-cf9d50d5ee82' dan pipa yang ke cmdlet Remove-AzADSpCredential untuk menghapus semua kredensial dari prinsipal layanan tersebut.
+Mendapatkan prinsipal layanan dengan object id '7663d3fb-6f86-4352-9e6d-cf9d50d5ee82' dan pipa yang ke cmdlet Remove-AzADSpCredential untuk menghapus semua kredensial dari prinsipal layanan tersebut.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -112,8 +112,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Beralihlah ke hapus kredensial tanpa konfirmasi.
+### -Paksa
+Beralih untuk menghapus kredensial tanpa konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 
 ### -KeyId
 Menentukan kunci kredensial yang akan dihapus.
-Id kunci untuk prinsipal layanan dapat diperoleh menggunakan cmdlet Get-AzADSpCredential baru.
+Id kunci untuk prinsipal layanan dapat diperoleh menggunakan cmdlet Get-AzADSpCredential.
 
 ```yaml
 Type: System.Guid
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Id objek prinsipal layanan untuk menghapus kredensial.
+Id objek pokok layanan untuk menghapus kredensial.
 
 ```yaml
 Type: System.String
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalName
-Nama (SPN) prinsipal layanan untuk menghapus kredensial dari.
+Nama (SPN) pokok layanan untuk menghapus kredensial.
 
 ```yaml
 Type: System.String
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalObject
-Objek prinsipal layanan untuk menghapus kredensial.
+Objek pokok layanan untuk menghapus kredensial.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ActiveDirectory.PSADServicePrincipal
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -235,13 +235,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### Microsoft.Azure.Commands.ActiveDirectory.LINUXDServicePrincipal
+### Microsoft.Azure.Commands.ActiveDirectory.PSADServicePrincipal
 
 ### System.Guid
 

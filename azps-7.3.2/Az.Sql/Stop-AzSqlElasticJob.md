@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/stop-Azsqlel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Stop-AzSqlElasticJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Stop-AzSqlElasticJob.md
-ms.openlocfilehash: d43e51a71a84a29e3c51f3f8b6792d96973f7744
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 69080fc22e0726a9fe47b33bdd29a77185de1cae
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140005861"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142207297"
 ---
 # Stop-AzSqlElasticJob
 
 ## SYNOPSIS
-Menghentikan pekerjaan dengan id eksekusi pekerjaan
+Menghentikan pekerjaan mengingat id eksekusi pekerjaan
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/stop-azsqlelasticjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ JobName JobExecutionId                       Lifecycle                    StartT
 job1    dab0ebe8-fd52-42e9-bacf-e5f27577039b WaitingForChildJobExecutions 6/1/2018 10:13:56 PM
 ```
 
-Menghentikan eksekusi pekerjaan yang sedang berjalan dan mengembalikan status terbarunya
+Menghentikan eksekusi pekerjaan yang berjalan dan mengembalikan statusnya saat ini
 
 ### Contoh 2
 
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,15 +219,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Sql.ElastisJobs.Model.AzureSqlElasticJobExecutionModel
+### Microsoft.Azure.Commands.Sql.ElasticJobs.Model.AzureSqlElasticJobExecutionModel
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Sql.ElastisJobs.Model.AzureSqlElasticJobExecutionModel
+### Microsoft.Azure.Commands.Sql.ElasticJobs.Model.AzureSqlElasticJobExecutionModel
 
 ## CATATAN
 

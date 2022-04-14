@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseIntegrationRuntime.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseIntegrationRuntime.md
-ms.openlocfilehash: de3a660c17c0d449344392bf52d5f194c386c1c9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9b7e57649f8b790f9cf4922e2487bc855f95e71e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140548142"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142206091"
 ---
 # Get-AzSynapseIntegrationRuntime
 
 ## SYNOPSIS
 Mendapatkan informasi tentang sumber daya runtime integrasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapseintegrationruntime) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,9 +47,9 @@ Get-AzSynapseIntegrationRuntime -InputObject <PSIntegrationRuntime> [-Status]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseIntegrationRuntime** mendapatkan informasi tentang runtime integrasi di dalam ruang kerja.
-Jika Anda menentukan nama runtime integrasi, cmdlet ini mendapatkan informasi tentang runtime integrasi itu.
-Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua runtime integrasi di dalam ruang kerja.
+Cmdlet **Get-AzSynapseIntegrationRuntime** mendapatkan informasi tentang runtime integrasi dalam ruang kerja.
+Jika Anda menentukan nama runtime integrasi, cmdlet ini akan mendapatkan informasi tentang runtime integrasi tersebut.
+Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua runtime integrasi dalam ruang kerja.
 
 ## EXAMPLES
 
@@ -55,21 +58,21 @@ Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua 
 PS C:\> Get-AzSynapseIntegrationRuntime -WorkspaceName ContosoWorkspace
 ```
 
-Mencantumkan semua runtime integrasi di ruang kerja bernama ContosoWorkspace.
+Cantumkan semua runtime integrasi di ruang kerja bernama ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzSynapseIntegrationRuntime -WorkspaceName ContosoWorkspace -Name 'test-selfhost-ir'
 ```
 
-Perintah ini menampilkan informasi tentang runtime integrasi yang bernama 'test-selfhost-ir' di ruang kerja yang bernama ContosoWorkspace.
+Perintah ini menampilkan informasi tentang runtime integrasi bernama 'test-selfhost-ir' di ruang kerja bernama ContosoWorkspace.
 
 ### Contoh 3
 ```powershell
 PS C:\> Get-AzSynapseIntegrationRuntime -WorkspaceName ContosoWorkspace -Name 'test-selfhost-ir' -Status
 ```
 
-Perintah ini menampilkan status detail tentang runtime integrasi bernama 'test-selfhost-ir' di ruang kerja yang bernama ContosoWorkspace.
+Perintah ini menampilkan status detail tentang runtime integrasi bernama 'test-selfhost-ir' di ruang kerja bernama ContosoWorkspace.
 
 ## PARAMETERS
 
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya dari runtime integrasi Synapse.
+Pengidentifikasi sumber daya runtime integrasi Synapse.
 
 ```yaml
 Type: System.String
@@ -163,7 +166,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

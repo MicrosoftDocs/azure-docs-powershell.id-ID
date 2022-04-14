@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/set-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseManagedIdentitySqlControlSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseManagedIdentitySqlControlSetting.md
-ms.openlocfilehash: c316419445b610fd4fe064a9762c85d0b6930483
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ee6efdec0cfc022a356c21d475b68e8e56de7d57
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140195063"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142205425"
 ---
 # Set-AzSynapseManagedIdentitySqlControlSetting
 
 ## SYNOPSIS
-Memperbarui identitas terkelola SQL kontrol ke ruang kerja.
+Pembaruan identitas terkelola SQL mengontrol pengaturan ke ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/set-azsynapsemanagedidentitysqlcontrolsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Set-AzSynapseManagedIdentitySqlControlSetting -ResourceId <String> -Enabled <Boo
 ```
 
 ## DESCRIPTION
-**Set-AzSynapseManagedIdentitySqlControlSetting** memperbarui identitas terkelola SQL kontrol ke ruang kerja.
+**Set-AzSynapseManagedIdentitySqlControlSetting** memperbarui identitas terkelola SQL pengaturan kontrol ke ruang kerja.
 
 ## EXAMPLES
 
@@ -47,14 +50,14 @@ Set-AzSynapseManagedIdentitySqlControlSetting -ResourceId <String> -Enabled <Boo
 PS C:\> Set-AzSynapseManagedIdentitySqlControlSetting -WorkspaceName ContosoWorkspace -Enabled $true
 ```
 
-Perintah ini memungkinkan identitas terkelola SQL pengaturan kontrol ke ruang kerja untuk ruang kerja ContosoWorkspace.
+Perintah ini memungkinkan identitas terkelola SQL mengontrol pengaturan ke ruang kerja untuk ContosoWorkspace ruang kerja.
 
 ### Contoh 2
 ```powershell
 PS C:\> Set-AzSynapseManagedIdentitySqlControlSetting -WorkspaceName ContosoWorkspace -Enabled $false
 ```
 
-Perintah ini menonaktifkan pengaturan kontrol identitas SQL terkelola ke ruang kerja untuk ruang kerja ContosoWorkspace.
+Perintah ini menonaktifkan identitas terkelola SQL pengaturan kontrol ke ruang kerja untuk Ruang Kerja ContosoWorkspace.
 
 ### Contoh 3
 ```powershell
@@ -62,14 +65,14 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Set-AzSynapseManagedIdentitySqlControlSetting -Enabled $true
 ```
 
-Perintah ini memungkinkan identitas terkelola SQL kontrol ke ruang kerja untuk ruang kerja ContosoWorkspace melalui pipeline.
+Perintah ini memungkinkan identitas terkelola SQL mengontrol pengaturan ke ruang kerja untuk ruang kerja ContosoWorkspace melalui pipeline.
 
 ### Contoh 4
 ```powershell
 PS C:\> Set-AzSynapseManagedIdentitySqlControlSetting -ResourceId /subscriptions/21686af7-58ec-4f4d-9c68-f431f4db4edd3/resourcegroups/ContosoResourceGroup/providers/Microsoft.Synapse/workspaces/ContosoWorkspace -Enabled $true
 ```
 
-Perintah ini memungkinkan pengelolaan identitas SQL pengaturan kontrol ruang kerja untuk ruang kerja ContosoWorkspace melalui ID sumber daya ruang kerja.
+Perintah ini memungkinkan identitas terkelola SQL mengontrol pengaturan ke ruang kerja untuk ruang kerja ContosoWorkspace melalui ID sumber daya ruang kerja.
 
 ## PARAMETERS
 
@@ -88,9 +91,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Enabled
-Menunjukkan apakah akan mengaktifkan identitas terkelola SQL pengaturan kontrol.
-Tentukan $True untuk mengaktifkan identitas SQL terkelola, atau $False untuk menonaktifkan identitas terkelola SQL pengaturan kontrol.
+### -Difungsikan
+Menunjukkan apakah mengaktifkan pengaturan kontrol SQL identitas terkelola.
+Tentukan $True untuk mengaktifkan pengaturan kontrol SQL identitas terkelola, atau $False untuk menonaktifkan pengaturan kontrol SQL identitas terkelola.
 
 ```yaml
 Type: System.Boolean
@@ -134,7 +137,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

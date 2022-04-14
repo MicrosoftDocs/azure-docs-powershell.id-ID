@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzResourceGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzResourceGroup.md
 ms.openlocfilehash: af224a39b1475ffb08f698f8c29d311ad955f315
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140132019"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142224595"
 ---
 # Get-AzResourceGroup
 
@@ -19,7 +19,7 @@ ms.locfileid: "140132019"
 Mendapatkan grup sumber daya.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azresourcegroup) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azresourcegroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,10 +36,10 @@ Get-AzResourceGroup [[-Location] <String>] [-Id <String>] [-ApiVersion <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzResourceGroup** mendapatkan grup sumber daya Azure di langganan saat ini.
+Cmdlet **Get-AzResourceGroup** mendapatkan grup sumber daya Azure dalam langganan saat ini.
 Anda bisa mendapatkan semua grup sumber daya, atau menentukan grup sumber daya menurut nama atau menurut properti lainnya.
-Secara default, cmdlet ini akan mendapatkan semua grup sumber daya dalam langganan saat ini.
-Untuk informasi selengkapnya tentang sumber daya Azure dan grup sumber daya Azure, lihat New-AzResourceGroup cmdlet.
+Secara default, cmdlet ini mendapatkan semua grup sumber daya dalam langganan saat ini.
+Untuk informasi selengkapnya tentang sumber daya Azure dan grup sumber daya Azure, lihat cmdlet New-AzResourceGroup.
 
 ## EXAMPLES
 
@@ -48,9 +48,9 @@ Untuk informasi selengkapnya tentang sumber daya Azure dan grup sumber daya Azur
 PS C:\> Get-AzResourceGroup -Name "EngineerBlog"
 ```
 
-Perintah ini mendapatkan grup sumber daya Azure dalam langganan Anda yang bernama EngineerBlog.
+Perintah ini mendapatkan grup sumber daya Azure di langganan Anda bernama EngineerBlog.
 
-### Contoh 2: Mendapatkan semua tag grup sumber daya
+### Contoh 2: Dapatkan semua tag grup sumber daya
 ```
 PS C:\> (Get-AzResourceGroup -Name "ContosoRG").Tags
 ```
@@ -62,7 +62,7 @@ Perintah ini mendapatkan grup sumber daya bernama ContosoRG, dan menampilkan tag
 PS C:\> Get-AzResourceGroup -Tag @{'environment'='prod'}
 ```
 
-### Contoh 4: Memperlihatkan grup Sumber Daya menurut lokasi
+### Contoh 4: Memperlihatkan grup Sumber Daya berdasarkan lokasi
 ```
 PS C:\> Get-AzResourceGroup |
   Sort Location,ResourceGroupName |
@@ -85,7 +85,7 @@ PS C:\> Get-AzResourceGroup -Name WebServer*
 
 ### -ApiVersion
 Menentukan versi API yang didukung oleh Penyedia sumber daya.
-Anda bisa menentukan versi yang berbeda dari versi default.
+Anda dapat menentukan versi yang berbeda dari versi default.
 
 ```yaml
 Type: System.String
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID grup sumber daya untuk mendapatkannya.
+Menentukan ID grup sumber daya yang akan didapatkan.
 Karakter wildcard tidak diizinkan.
 
 ```yaml
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi grup sumber daya untuk mendapatkannya.
+Menentukan lokasi grup sumber daya untuk didapatkan.
 
 ```yaml
 Type: System.String
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama grup sumber daya untuk mendapatkannya. Parameter ini mendukung wildcard di awal dan/atau akhir string.
+Menentukan nama grup sumber daya untuk didapatkan. Parameter ini mendukung wildcard di awal dan/atau akhir string.
 
 ```yaml
 Type: System.String
@@ -161,7 +161,7 @@ Accept wildcard characters: True
 ```
 
 ### -Pra
-Cmdlet ini mempertimbangkan versi API prari release ketika cmdlet menentukan versi mana yang akan digunakan secara otomatis.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable tag untuk memfilter grup sumber daya menurut.
+Tag hashtable untuk memfilter grup sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -207,9 +207,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzResourceGroup](./New-AzResourceGroup.md)
+[AzResourceGroup baru](./New-AzResourceGroup.md)
 
-[Remove-AzResourceGroup](./Remove-AzResourceGroup.md)
+[Hapus-AzResourceGroup](./Remove-AzResourceGroup.md)
 
 [Set-AzResourceGroup](./Set-AzResourceGroup.md)
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAlert.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAlert.md
 ms.openlocfilehash: c83255c85966ac0ee2a3561e708544f9bb14cebd
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140066357"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142077655"
 ---
 # Get-AzSecurityAlert
 
 ## SYNOPSIS
-Mendapatkan pemberitahuan keamanan yang terdeteksi oleh Pusat Keamanan Azure
+Mendapatkan pemberitahuan keamanan yang terdeteksi oleh Azure Security Center
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/get-azsecurityalert) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azsecurityalert) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +50,7 @@ Get-AzSecurityAlert -ResourceId <String> [-DefaultProfile <IAzureContextContaine
 ```
 
 ## DESCRIPTION
-Mendapatkan pemberitahuan keamanan yang terdeteksi oleh Pusat Keamanan Azure
+Mendapatkan pemberitahuan keamanan yang terdeteksi oleh Azure Security Center
 
 ## EXAMPLES
 
@@ -190,7 +190,7 @@ WorkspaceArmId     : /subscriptions/487bb485-b5b0-471e-9c0d-10717612f869/resourc
                      -eus
 ```
 
-Mendapatkan semua pemberitahuan keamanan yang terdeteksi pada sumber daya dalam langganan
+Mendapatkan semua pemberitahuan keamanan yang terdeteksi pada sumber daya di dalam langganan
 
 ### Contoh 2
 ```powershell
@@ -436,7 +436,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
