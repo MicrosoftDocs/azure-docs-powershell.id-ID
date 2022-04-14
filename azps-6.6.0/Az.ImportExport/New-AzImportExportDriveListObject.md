@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/New-AzImportExportDriveListObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/New-AzImportExportDriveListObject.md
 ms.openlocfilehash: a9fd906818fd2933a8360b09a6f3d095087a77de
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139938535"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141912207"
 ---
 # New-AzImportExportDriveListObject
 
@@ -18,7 +18,7 @@ ms.locfileid: "139938535"
 Membuat Objek DriverList untuk ImportExport.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.importexport/new-azimportexportdrivelistobject) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.importexport/new-azimportexportdrivelistobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Membuat Objek DriverList untuk ImportExport.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat DriveList baru untuk pekerjaan ImportExport
+### Contoh 1: Membuat driveList baru untuk pekerjaan ImportExport
 ```powershell
 PS C:\> New-AzImportExportDriveListObject -DriveId "9CA995BA" -BitLockerKey "238810-662376-448998-450120-652806-203390-606320-483076" -ManifestFile "\\DriveManifest.xml" -ManifestHash "109B21108597EF36D5785F08303F3638"
 
@@ -43,12 +43,12 @@ BitLockerKey                                            BytesSucceeded CopyStatu
 238810-662376-448998-450120-652806-203390-606320-483076 0                                         9CA995BA             \\DriveManifest.xml 109B21108597EF36D5785F08303F3638             0
 ```
 
-Cmdlet ini membuat DriveList baru untuk pekerjaan ImportExport.
+Cmdlet ini membuat pekerjaan DriveList untuk ImportExport baru.
 
 ## PARAMETERS
 
 ### -BitLockerKey
-Kunci BitLocker digunakan untuk mengenkripsi drive.
+Tombol BitLocker digunakan untuk mengenkripsi kandar.
 
 ```yaml
 Type: System.String
@@ -62,8 +62,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BytesSucceeded
-Byte berhasil ditransfer untuk drive.
+### -BytesSucceed
+Byte berhasil ditransfer untuk kandar.
 
 ```yaml
 Type: System.Int64
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -CopyStatus
-Status detail tentang proses transfer data.
+Status mendetail tentang proses transfer data.
 Bidang ini tidak dikembalikan dalam respons hingga drive berada dalam status Transfer.
 
 ```yaml
@@ -93,7 +93,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -driveHeaderHash
+### -DriveHeaderHash
 Nilai hash header drive.
 
 ```yaml
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -ErrorLogUri
-URI yang menunjuk ke blob yang berisi log kesalahan untuk operasi transfer data.
+URI yang mengarah ke blob yang berisi log kesalahan untuk operasi transfer data.
 
 ```yaml
 Type: System.String
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManifestFile
-Jalur relatif file manifes pada drive.
+Jalur relatif file manifes di drive.
 
 ```yaml
 Type: System.String
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManifestHash
-Hash MD5 berkode basis16 dari file manifes pada drive.
+Hash MD5 berkode Base16 dari file manifes di drive.
 
 ```yaml
 Type: System.String
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManifestUri
-URI yang menunjuk ke blob yang berisi file manifes drive.
+URI yang mengarah ke blob yang berisi file manifes drive.
 
 ```yaml
 Type: System.String
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -Negara Bagian
-Status drive saat ini.
+Status kandar saat ini.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ImportExport.Support.DriveState
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -VerboseLogUri
-URI yang menunjuk ke blob yang berisi log verbose untuk operasi transfer data.
+URI yang mengarah ke blob yang berisi log verbose untuk operasi transfer data.
 
 ```yaml
 Type: System.String
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.sql/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/New-AzureRmSqlSyncAgentKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/New-AzureRmSqlSyncAgentKey.md
-ms.openlocfilehash: f929d5c5cc1c0380a77c80f8478455a5aed9bc4b5f010fe6f5fea9fd433f45bd
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: cb4ca947d9f87cd6a0d3b4cdf476cf0176db2c3e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140852850"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141923753"
 ---
 # New-AzureRmSqlSyncAgentKey
 
 ## SYNOPSIS
-Membuat Kunci Agen SQL Azure.
+Membuat Kunci Agen Sinkronisasi Azure SQL.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,22 +27,22 @@ New-AzureRmSqlSyncAgentKey [-ServerName] <String> [-SyncAgentName] <String> [-Re
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmSqlSyncAgentKey** membuat kunci Azure SQL Sync Agent.
+Cmdlet **New-AzureRmSqlSyncAgentKey** membuat kunci Agen Sinkronisasi Azure SQL.
 
 ## EXAMPLES
 
-### Contoh 1: Buat kunci agen sinkronisasi untuk agen sinkronisasi Azure SQL terbaru.
+### Contoh 1: Membuat kunci agen sinkronisasi untuk agen sinkronisasi Azure SQL.
 ```
 PS C:\> New-AzureRmSqlSyncAgentKey -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -SyncAgentName "SyncAgent01"
 SyncAgentKey                  : Key
 ```
 
-Perintah ini akan membuat kunci agen sinkronisasi untuk Azure SQL Agen Sinkronisasi.
+Perintah ini membuat kunci agen sinkronisasi untuk Agen Sinkronisasi Azure SQL.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama azure SQL Server agen sinkronisasi sudah masuk.
+Nama Server Azure SQL tempat agen sinkronisasi berada.
 
 ```yaml
 Type: System.String
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

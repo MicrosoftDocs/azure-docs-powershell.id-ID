@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Update-AzAppConfigurationStore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Update-AzAppConfigurationStore.md
 ms.openlocfilehash: 89743c36f4bd55fdfdff174b69d30e8312be0d84
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140313289"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141915429"
 ---
 # Update-AzAppConfigurationStore
 
 ## SYNOPSIS
-Memperbarui penyimpanan konfigurasi dengan parameter yang ditentukan.
+Memperbarui penyimpanan konfigurasi dengan parameter tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.appconfiguration/update-azappconfigurationstore) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.appconfiguration/update-azappconfigurationstore) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,11 +39,11 @@ Update-AzAppConfigurationStore -InputObject <IAppConfigurationIdentity> [-Encryp
 ```
 
 ## DESCRIPTION
-Memperbarui penyimpanan konfigurasi dengan parameter yang ditentukan.
+Memperbarui penyimpanan konfigurasi dengan parameter tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mengaktifkan enkripsi data dari penyimpanan konfigurasi aplikasi dengan identitas terkelola yang ditetapkan sistem
+### Contoh 1: Mengaktifkan enkripsi data penyimpanan konfigurasi aplikasi menurut identitas terkelola yang ditetapkan sistem
 ```powershell
 PS C:\> $key = Add-AzKeyVaultKey -VaultName kv-Name -Name key-Name -Destination 'Software'
 PS C:\> $systemAssignedAppStore = New-AzAppConfigurationStore -Name appconfig-test11 -ResourceGroupName azpwsh-manual-test -Location $env.location -Sku 'standard' -IdentityType "SystemAssigned"
@@ -55,10 +55,10 @@ Location Name             Type
 eastus   appconfig-test01 Microsoft.AppConfiguration/configurationStores
 ```
 
-Perintah ini mengaktifkan enkripsi data dari kunci yang disimpan di Azure Key Vault menggunakan identitas terkelola yang ditetapkan sistem.
-Vault harus mengaktifkan penghapusan sementara dan proteksi pembersihan, dan identitas terkelola harus memiliki izin kunci berikut: get, wrapKey, unwrapKey.
+Perintah ini memungkinkan enkripsi data oleh kunci yang disimpan di Azure Key Vault menggunakan identitas terkelola yang ditetapkan sistem.
+Kubah harus mengaktifkan penghapusan lembut dan perlindungan pembersihan, dan identitas terkelola harus memiliki izin kunci ini: dapatkan, bungkusKey, hapus bungkusKey.
 
-### Contoh 2: Mengaktifkan enkripsi data dari penyimpanan konfigurasi aplikasi berdasarkan identitas terkelola yang ditetapkan pengguna
+### Contoh 2: Mengaktifkan enkripsi data penyimpanan konfigurasi aplikasi menurut identitas terkelola yang ditetapkan pengguna
 ```powershell
 PS C:\> $key = Add-AzKeyVaultKey -VaultName kv-Name -Name key-Name -Destination 'Software'
 PS C:\> $assignedIdentity = New-AzUserAssignedIdentity -ResourceGroupName azpwsh-manual-test -Name assignedIdentity
@@ -71,11 +71,11 @@ Location Name             Type
 eastus   appconfig-test10 Microsoft.AppConfiguration/configurationStores
 ```
 
-Perintah ini mengaktifkan enkripsi data dari kunci yang disimpan di Azure Key Vault menggunakan identitas terkelola yang ditetapkan pengguna.
+Perintah ini memungkinkan enkripsi data oleh kunci yang disimpan di Azure Key Vault menggunakan identitas terkelola yang ditetapkan pengguna.
 Identitas yang ditetapkan pengguna harus telah ditetapkan dengan `-UserAssignedIdentity`.
-Vault harus mengaktifkan penghapusan sementara dan proteksi pembersihan, dan identitas terkelola harus memiliki izin kunci berikut: get, wrapKey, unwrapKey.
+Kubah harus mengaktifkan penghapusan lembut dan perlindungan pembersihan, dan identitas terkelola harus memiliki izin kunci ini: dapatkan, bungkusKey, hapus bungkusKey.
 
-### Contoh 3: Nonaktifkan enkripsi penyimpanan konfigurasi aplikasi.
+### Contoh 3: Menonaktifkan enkripsi penyimpanan konfigurasi aplikasi.
 ```powershell
 PS C:\> $appConf = Get-AzAppConfigurationStore -ResourceGroupName azpwsh-manual-test -Name appconfig-test10 | Update-AzAppConfigurationStore -EncryptionKeyIdentifier $null
 
@@ -86,7 +86,7 @@ eastus   appconfig-test10 Microsoft.AppConfiguration/configurationStores
 
 Perintah ini menonaktifkan enkripsi penyimpanan konfigurasi aplikasi.
 
-### Contoh 3: Perbarui sku dan tag dari app configuration store by pipeline.
+### Contoh 3: Memperbarui sku dan tag penyimpanan konfigurasi aplikasi menurut pipeline.
 ```powershell
 PS C:\> Get-AzAppConfigurationStore -ResourceGroupName azpwsh-manual-test -Name appconfig-test10 | Update-AzAppConfigurationStore -Sku 'standard' -Tag @{'key'='update'}
 
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionKeyIdentifier
-URI kunci vault yang digunakan untuk mengenkripsi data.
+URI kunci kubah kunci yang digunakan untuk mengenkripsi data.
 
 ```yaml
 Type: System.String
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 
 ### -IdentityType
 Tipe identitas terkelola yang digunakan.
-Tipe 'SystemAssignedAndUserAssigned' menyertakan identitas yang dibuat secara implisit dan kumpulan identitas yang ditetapkan pengguna.
+Tipe 'SystemAssignedAndUserAssigned' mencakup identitas yang dibuat secara implisit dan sekumpulan identitas yang ditetapkan pengguna.
 Tipe 'Tidak Ada' akan menghapus identitas apa pun.
 
 ```yaml
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.AppConfiguration.Models.IAppConfigurationIdentity
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultIdentityClientId
-Id klien identitas yang akan digunakan untuk mengakses key vault.
+Id klien identitas yang akan digunakan untuk mengakses kubah kunci.
 
 ```yaml
 Type: System.String
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat wadah registri berada.
+Nama grup sumber daya tempat registri kontainer berada.
 
 ```yaml
 Type: System.String
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Nama SKU penyimpanan konfigurasi.
+Nama SKU bursa konfigurasi.
 
 ```yaml
 Type: System.String
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID Microsoft Azure langganan.
+ID langganan Microsoft Azure.
 
 ```yaml
 Type: System.String
@@ -283,7 +283,7 @@ Accept wildcard characters: False
 
 ### -UserAssignedIdentity
 Daftar identitas yang ditetapkan pengguna yang terkait dengan sumber daya.
-Kunci kamus identitas yang ditetapkan pengguna akan menjadi ID sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}'.
+Kunci kamus identitas yang ditetapkan pengguna akan berupa id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}'.
 
 ```yaml
 Type: System.String[]
@@ -298,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -314,7 +314,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -329,7 +329,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -350,11 +350,11 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IAppConfigurationIdentity>: Parameter Identitas
   - `[ConfigStoreName <String>]`: Nama penyimpanan konfigurasi.
-  - `[GroupName <String>]`: Nama grup sumber daya tautan privat.
+  - `[GroupName <String>]`: Nama grup sumber daya tautan pribadi.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat wadah registri t dimiliki.
-  - `[SubscriptionId <String>]`: Microsoft Azure ID langganan.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat registri kontainer berada.
+  - `[SubscriptionId <String>]`: ID langganan Microsoft Azure.
 
 ## RELATED LINKS
 

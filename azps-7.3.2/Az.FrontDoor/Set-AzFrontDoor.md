@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Set-AzFrontDoor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Set-AzFrontDoor.md
-ms.openlocfilehash: 36cc60525d09628e35f07e94d7d0eac1631db79b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 4466caa23a284e7490050b8299e711715ba3a50b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140402694"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141938787"
 ---
 # Set-AzFrontDoor
 
 ## SYNOPSIS
 Memperbarui penyeimbang muat Pintu Depan
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/set-azfrontdoor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -99,11 +102,11 @@ Set-AzFrontDoor -ResourceId <String> [-RoutingRule <PSRoutingRule[]>] [-BackendP
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzFrontDoor** memperbarui penyeimbang muat Front Door. Jika parameter input tidak disediakan, parameter lama dari Pintu Depan yang sudah ada akan digunakan.
+Cmdlet **Set-AzFrontDoor** memperbarui penyeimbang beban Pintu Depan. Jika parameter input tidak disediakan, parameter lama dari Pintu Depan yang sudah ada akan digunakan.
 
 ## EXAMPLES
 
-### Contoh 1: perbarui Front Pintu yang sudah ada dengan FrontDoorName dan ResourceGroupName.
+### Contoh 1: perbarui Pintu Depan yang sudah ada dengan FrontDoorName dan ResourceGroupName.
 ```powershell
 PS C:\> Set-AzFrontDoor -Name "frontDoor1" -ResourceGroupName "resourceGroup1" -RoutingRule $routingrule1 -BackendPool $backendpool1 -FrontendEndpoint $frontendEndpoint1 -LoadBalancingSetting $loadBalancingSetting1 -HealthProbeSetting $healthProbeSetting1 -BackendPoolsSetting $backendPoolsSetting1
 
@@ -127,7 +130,7 @@ Type                        : Microsoft.Network/frontdoors
 
 memperbarui FrontDoor yang sudah ada.
 
-### Contoh 2: perbarui Front Door dengan objek PSFrontDoor yang sudah ada.
+### Contoh 2: memperbarui Pintu Depan yang sudah ada dengan objek PSFrontDoor.
 ```powershell
 PS C:\>  Set-AzFrontDoor -InputObject $frontDoor1 -RoutingRule $routingrule1 -BackendPool $backendpool1 -FrontendEndpoint $frontendEndpoint1 -LoadBalancingSetting $loadBalancingSetting1 -HealthProbeSetting $healthProbeSetting1 -BackendPoolsSetting $backendPoolsSetting1
 
@@ -175,8 +178,8 @@ Type                        : Microsoft.Network/frontdoor1
 
 memperbarui FrontDoor yang sudah ada.
 
-### Contoh 4: perbarui properti BackendPoolSetting EnforceCertificateNameCheck dari parameter switch -DisableCertificateNameCheck yang sudah ada
-Pintu Depan untuk diperbarui dapat diidentifikasi menggunakan FrontoorName dan ResourceGroupName, objek PSFrontDoor, atau ResourceId. (Lihat 3 contoh di atas, misalnya) Contoh di bawah ini menggunakan objek PSFrontDoor.
+### Contoh 4: memperbarui properti BackendPoolSetting EnforceCertificateNameCheck pintu depan yang sudah ada dengan parameter sakelar -DisableCertificateNameCheck
+Pintu Depan yang akan diperbarui dapat diidentifikasi menggunakan FrontoorName dan ResourceGroupName, objek PSFrontDoor, atau ResourceId. (Lihat di atas 3 contoh misalnya) Contoh di bawah ini menggunakan objek PSFrontDoor.
 
 ```powershell
 PS C:\>  Set-AzFrontDoor -InputObject $frontDoor1 -RoutingRule $routingrule1 -BackendPool $backendpool1 -FrontendEndpoint $frontendEndpoint1 -LoadBalancingSetting $loadBalancingSetting1 -HealthProbeSetting $healthProbeSetting1 -DisableCertificateNameCheck
@@ -204,7 +207,7 @@ memperbarui FrontDoor yang sudah ada.
 ## PARAMETERS
 
 ### -BackendPool
-Backendpools tersedia untuk aturan perutean.
+Backendpool tersedia untuk aturan perutean.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSBackendPool[]
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendPoolsSetting
-Pengaturan untuk semua backendPools.
+Pengaturan untuk semua backendPool.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSBackendPoolsSetting
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableCertificateNameCheck
-Apakah akan menonaktifkan pemeriksaan nama sertifikat pada permintaan HTTPS ke semua kolam renang backend. Tidak berpengaruh pada permintaan non-HTTPS.
+Apakah menonaktifkan pemeriksaan nama sertifikat pada permintaan HTTPS ke semua kumpulan backend. Tidak berpengaruh pada permintaan non-HTTPS.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -295,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### -HealthProbeSetting
-Pengaturan health settings settings associated with this Front Door instance.
+Pengaturan pemeriksaan kesehatan yang terkait dengan instans Pintu Depan ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSHealthProbeSetting[]
@@ -325,7 +328,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancingSetting
-Pengaturan keseimbangan muat terkait dengan contoh Pintu Depan ini.
+Pengaturan keseimbangan muat yang terkait dengan instans Pintu Depan ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSLoadBalancingSetting[]
@@ -370,7 +373,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya pintu depan untuk diperbarui
+Id Sumber Daya Pintu Depan untuk memperbarui
 
 ```yaml
 Type: System.String
@@ -384,8 +387,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -RoutingRule
-Aturan perutean terkait dengan FrontDoor ini
+### -PeruteanRule
+Aturan perutean yang terkait dengan FrontDoor ini
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSRoutingRule[]
@@ -400,7 +403,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag yang berhubungan dengan FrontDoor.
+Tag terkait dengan FrontDoor.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -415,7 +418,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -431,7 +434,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -446,7 +449,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -461,7 +464,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzFrontDoor](./New-AzFrontDoor.md)
  [Get-AzFrontDoor](./Get-AzFrontDoor.md)
- [Remove-azFrontDoor](./Remove-AzFrontDoor.md)
+ [Remove-AzFrontDoor](./Remove-AzFrontDoor.md)
  [New-AzFrontDoorRoutingRuleObject](./New-AzFrontDoorRoutingRuleObject.md)
  [New-AzFrontDoorHealthProbeSettingObject](./New-AzFrontDoorHealthProbeSettingObject.md)
  [New-AzFrontDoorLoadBalancingSettingObject](./New-AzFrontDoorLoadBalancingSettingObject.md)

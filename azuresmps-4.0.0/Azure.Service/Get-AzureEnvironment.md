@@ -4,11 +4,11 @@ ms.assetid: BF5E3E1A-14B6-4630-8168-628057009D5E
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: a280834b5efb01be6dba87936ec0acc88344aac3
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428120"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141922119"
 ---
 # Get-AzureEnvironment
 
@@ -26,15 +26,15 @@ Get-AzureEnvironment [-Name <String>] [-Profile <AzureSMProfile>] [<CommonParame
 ## DESCRIPTION
 Cmdlet **Get-AzureEnvironment** mendapatkan lingkungan Azure yang tersedia untuk Windows PowerShell.
 
-Lingkungan Azure, penyebaran independen dari Microsoft Azure, seperti AzureCloud untuk global Azure dan AzureChinaCloud untuk Azure yang dioperasikan oleh 21Vianet di Tiongkok.
-Anda juga bisa membuat lingkungan Azure lokal dengan menggunakan Paket Azure dan cmdlet WAPack.
+Lingkungan Azure merupakan penyebaran independen Microsoft Azure, seperti AzureCloud untuk Azure global dan AzureChinaCloud untuk Azure yang dioperasikan oleh 21Vianet di Tiongkok.
+Anda juga dapat membuat lingkungan Azure lokal dengan menggunakan cmdlet Azure Pack dan WAPack.
 Untuk informasi selengkapnya, lihat [Paket Azure](/previous-versions/azure/windows-server-azure-pack/)).
 
 Cmdlet **Get-AzureEnvironment** mendapatkan lingkungan dari file data langganan Anda, bukan dari Azure.
-Jika file data langganan usang, jalankan cmdlet **Add-AzureAccount** atau **Import-PublishSettingsFile** untuk merefreshnya.
+Jika file data langganan kedaluarsa, jalankan cmdlet **Add-AzureAccount** atau **Import-PublishSettingsFile** untuk merefreshnya.
 
-Topik ini menguraikan cmdlet dalam modul Microsoft Azure PowerShell versi 0.8.10.
-Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Topik ini menjelaskan cmdlet dalam versi 0.8.10 modul Microsoft Azure PowerShell.
+Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik .`(Get-Module -Name Azure).Version`
 
 ## EXAMPLES
 
@@ -49,9 +49,9 @@ AzureCloud                    https://management.core.wi... https://management.a
 AzureChinaCloud               https://management.core.ch... https://not-supported-serv... https://go.microsoft.com/fw...
 ```
 
-Perintah ini memberikan semua lingkungan yang tersedia untuk Windows PowerShell.
+Perintah ini mendapatkan semua lingkungan yang tersedia untuk Windows PowerShell.
 
-### Contoh 2: Dapatkan lingkungan dengan nama
+### Contoh 2: Dapatkan lingkungan berdasarkan nama
 ```
 PS C:\> Get-AzureEnvironment -Name AzureCloud
 
@@ -82,25 +82,25 @@ GalleryEndpoint               : https://gallery.azure.com/
 
 Contoh ini mendapatkan lingkungan AzureCloud.
 
-### Contoh 3: Mendapatkan semua properti untuk semua lingkungan
+### Contoh 3: Dapatkan semua properti dari semua lingkungan
 ```
 PS C:\> Get-AzureEnvironment | ForEach-Object {Get-AzureEnvironment -Name $_.EnvironmentName}
 ```
 
-Perintah ini mendapatkan semua properti untuk semua lingkungan.
+Perintah ini mendapatkan semua properti dari semua lingkungan.
 
-Perintah tersebut menggunakan cmdlet **Get-AzureEnvironment** untuk mendapatkan semua lingkungan Azure untuk akun ini.
-Lalu, perintah ini menggunakan cmdlet **Foreach-Object** untuk menjalankan perintah **Get-AzureEnvironment** dengan parameter **Name** di setiap lingkungan.
-Nilai parameter **Name** adalah properti **EnvironmentName** dari setiap lingkungan.
+Perintah menggunakan cmdlet **Get-AzureEnvironment** untuk mendapatkan semua lingkungan Azure untuk akun ini.
+Lalu, cmdlet **Foreach-Object** menggunakan untuk menjalankan perintah **Get-AzureEnvironment** dengan parameter **Name** di setiap lingkungan.
+Nilai parameter **Nama** adalah properti **EnvironmentName** dari setiap lingkungan.
 
 Tanpa parameter, **Get-AzureEnvironment** hanya mendapatkan properti lingkungan yang dipilih.
 
 ## PARAMETERS
 
 ### -Nama
-Hanya mendapatkan lingkungan tertentu.
+Hanya mendapatkan lingkungan yang ditentukan.
 Ketikkan nama lingkungan.
-Nilai parameter peka huruf besar/kecil.
+Nilai parameter peka huruf besar kecil.
 Karakter wildcard tidak diizinkan.
 
 ```yaml
@@ -116,8 +116,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -132,20 +132,20 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
-Anda dapat pipa input ke cmdlet ini berdasarkan nama properti, tetapi tidak menurut nilai.
+### Tidak
+Anda dapat menyalurkan input ke cmdlet ini menurut nama properti, tetapi tidak menurut nilai.
 
 ## OUTPUTS
 
 ### System.Management.Automation.PSCustomObject
-Secara default, **Get-AzureEnvironment** akan mengembalikan objek kustom.
+Secara default, **Get-AzureEnvironment** mengembalikan objek kustom.
 
 ### Microsoft.WindowsAzure.Commands.Utilities.Common.WindowsAzureEnvironment
-Ketika Anda **menjalankan Get-AzureEnvironment** dengan parameter **Nama,** parameter ini akan **mengembalikan objek WindowsAzureEnvironment.**
+Saat Anda menjalankan **Get-AzureEnvironment** dengan parameter **Name** , maka akan mengembalikan objek  **WindowsAzureEnvironment** .
 
 ## CATATAN
 
@@ -157,9 +157,9 @@ Ketika Anda **menjalankan Get-AzureEnvironment** dengan parameter **Nama,** para
 
 [Get-AzurePublishSettingsFile](./Get-AzurePublishSettingsFile.md)
 
-[Import-AzurePublishSettingsFile](./Import-AzurePublishSettingsFile.md)
+[Impor-AzurePublishSettingsFile](./Import-AzurePublishSettingsFile.md)
 
-[Remove-AzureEnvironment](./Remove-AzureEnvironment.md)
+[Hapus AzureEnvironment](./Remove-AzureEnvironment.md)
 
 [Set-AzureEnvironment](./Set-AzureEnvironment.md)
 

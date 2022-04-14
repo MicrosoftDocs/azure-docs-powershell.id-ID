@@ -5,17 +5,17 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DeviceProvisioningServices/Commands.DeviceProvisioningServices/help/Get-AzureRmIoTDeviceProvisioningServiceLinkedHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DeviceProvisioningServices/Commands.DeviceProvisioningServices/help/Get-AzureRmIoTDeviceProvisioningServiceLinkedHub.md
-ms.openlocfilehash: 8ad68dc31bfd02474ec23ed3b5ffa518e20709d1652df2a15f0bc5d54003a4be
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: bae363b984f148ff55f34eaa04b1ba85eaad4449
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140853426"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141968557"
 ---
 # Get-AzureRmIoTDeviceProvisioningServiceLinkedHub
 
 ## SYNOPSIS
-Menampilkan semua atau memperlihatkan detail hub IoT tertaut dalam layanan penyediaan perangkat Azure IoT Hub.
+Cantumkan semua atau tampilkan detail hub IoT tertaut dalam layanan penyediaan perangkat Azure IoT Hub.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,7 +40,7 @@ Get-AzureRmIoTDeviceProvisioningServiceLinkedHub [-ResourceId] <String> [-Linked
 ```
 
 ## DESCRIPTION
-Untuk pengenalan layanan penyediaan perangkat Azure IoT Hub, lihat https://docs.microsoft.com/en-us/azure/iot-dps/about-iot-dps.
+Untuk pengenalan Azure IoT Hub Layanan Penyediaan Perangkat, lihat https://docs.microsoft.com/en-us/azure/iot-dps/about-iot-dps.
 
 ## EXAMPLES
 
@@ -54,7 +54,7 @@ myiothub1.azure-devices.net     eastus      2
 myiothub2.azure-devices.net     westus2                         true
 ```
 
-Mencantumkan semua hub IoT yang ditautkan dalam "myiotdps".
+Daftar semua hub IoT yang ditautkan di "myiotdps".
 
 ### Contoh 2
 ```
@@ -69,7 +69,7 @@ ApplyAllocationPolicy :
 Location              : eastus
 ```
 
-Memperlihatkan detail hub IoT tertaut "myiothub1" dalam layanan penyediaan perangkat Azure IoT Hub.
+Tampilkan detail "myiothub1" hub IoT yang ditautkan dalam layanan penyediaan perangkat Azure IoT Hub.
 
 ## PARAMETERS
 
@@ -88,7 +88,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Object
+### -DpsObject
 Objek Layanan Penyediaan Perangkat IoT
 
 ```yaml
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -LinkedHubName
-Nama host Hub IoT tertaut
+Nama host IoT Hub tertaut
 
 ```yaml
 Type: System.String
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Layanan Penyediaan Perangkat Iot
+Id Sumber Daya Layanan Penyediaan Perangkat IoT
 
 ```yaml
 Type: System.String
@@ -164,12 +164,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.Management.DeviceProvisioningServices.Models.PSProvisioningServiceDescription
-Parameter:ObjectObject (ByValue)
+Parameter: DpsObject (ByValue)
 
 ### System.String
 

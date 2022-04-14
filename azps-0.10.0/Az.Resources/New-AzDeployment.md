@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/New-AzDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/New-AzDeployment.md
 ms.openlocfilehash: 97d6b11a4993ced62b84de24c501a2c438173141
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132413815"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141915700"
 ---
 # New-AzDeployment
 
@@ -79,21 +79,21 @@ New-AzDeployment [-Name <String>] -Location <String> [-DeploymentDebugLogLevel <
 Cmdlet **New-AzDeployment** menambahkan penyebaran pada lingkup langganan saat ini.
 Ini termasuk sumber daya yang diperlukan penyebaran.
 
-Sumber daya Azure adalah entitas Azure yang dikelola pengguna. Sumber daya bisa berada di grup sumber daya, seperti server database, database, situs web, mesin virtual, Storage Anda. Atau, ini bisa menjadi sumber daya tingkat langganan, seperti definisi peran, definisi kebijakan, dll.
+Sumber daya Azure adalah entitas Azure yang dikelola pengguna. Sumber daya dapat hidup dalam grup sumber daya, seperti server database, database, situs web, mesin virtual, atau akun Storage. Atau, bisa berupa sumber daya tingkat langganan, seperti definisi peran, definisi kebijakan, dll.
 
-Untuk menambahkan sumber daya ke grup sumber daya, **gunakan Grup Sumber Daya Baru-AzDeployment** yang membuat penyebaran di grup sumber daya.
-Cmdlet **New-AzDeployment** membuat penyebaran di lingkup langganan saat ini, yang menggunakan sumber daya tingkat langganan. 
+Untuk menambahkan sumber daya ke grup sumber daya, gunakan **New-AzDeployment** yang membuat penyebaran di grup sumber daya.
+Cmdlet **New-AzDeployment** membuat penyebaran pada lingkup langganan saat ini, yang menyebarkan sumber daya tingkat langganan. 
 
 Untuk menambahkan penyebaran di langganan, tentukan lokasi dan templat.
-Lokasi memberi tahu Azure Resource Manager tentang tempat untuk menyimpan data penyebaran. Templat tersebut adalah string JSON yang berisi sumber daya individu yang akan digunakan.
-Templat ini menyertakan tempat penampung parameter untuk sumber daya yang diperlukan dan nilai properti yang dapat dikonfigurasi, seperti nama dan ukuran.
+Lokasi memberi tahu Azure Resource Manager tempat untuk menyimpan data penyebaran. Templat adalah string JSON yang berisi sumber daya individual yang akan digunakan.
+Templat menyertakan tempat penampung parameter untuk sumber daya yang diperlukan dan nilai properti yang dapat dikonfigurasi, seperti nama dan ukuran.
 
-Untuk menggunakan templat kustom untuk penggunaan, tentukan parameter *TemplateFile* atau parameter *TemplateUri* .
+Untuk menggunakan templat kustom untuk penyebaran, tentukan parameter *TemplateFile* atau parameter *TemplateUri* .
 Setiap templat memiliki parameter untuk properti yang dapat dikonfigurasi.
-Untuk menentukan nilai bagi parameter templat, tentukan parameter *TemplateParameterFile* atau *parameter TemplateParameterObject* .
+Untuk menentukan nilai untuk parameter templat, tentukan parameter *TemplateParameterFile* atau parameter *TemplateParameterObject* .
 Alternatifnya, Anda bisa menggunakan parameter templat yang ditambahkan secara dinamis ke perintah saat Anda menentukan templat.
-Untuk menggunakan parameter dinamis, ketik parameter dinamis di prompt perintah, atau ketik tanda minus (-) untuk mengindikasikan parameter dan gunakan tombol Tab untuk melihat parameter yang tersedia.
-Nilai parameter templat yang Anda masukkan di prompt perintah lebih diprioritaskan ke prioritas dalam objek parameter templat atau file.
+Untuk menggunakan parameter dinamis, ketikkan parameter di prompt perintah, atau ketik tanda minus (-) untuk menunjukkan parameter dan menggunakan tombol Tab untuk menelusuri parameter yang tersedia.
+Nilai parameter templat yang Anda masukkan di prompt perintah lebih diutamakan daripada nilai dalam objek atau file parameter templat.
 
 ## EXAMPLES
 
@@ -104,12 +104,12 @@ PS C:\>New-AzDeployment -Location "West US" -TemplateFile "D:\Azure\Templates\En
 
 Perintah ini membuat penyebaran baru di lingkup langganan saat ini dengan menggunakan templat kustom dan file templat di disk.
 Perintah menggunakan parameter *TemplateFile* untuk menentukan templat dan parameter *TemplateParameterFile* untuk menentukan file yang berisi parameter dan nilai parameter.
-Templat ini *menggunakan parameter TemplateVersion* untuk menentukan versi template.
+Ini menggunakan parameter *TemplateVersion* untuk menentukan versi templat.
 
 ## PARAMETERS
 
 ### -ApiVersion
-Saat diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
+Ketika diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
 Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai versi terbaru yang tersedia.
 
 ```yaml
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -154,7 +154,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DeploymentDelogiLogLevel
+### -DeploymentDebugLogLevel
 Tingkat log debug penyebaran.
 
 ```yaml
@@ -185,9 +185,9 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama penyebaran yang akan dibuat.
+Nama penyebaran yang akan dibuatnya.
 Hanya valid ketika templat digunakan.
-Ketika templat digunakan, jika pengguna tidak menentukan nama penggunaan, gunakan waktu saat ini, seperti "20131223140835".
+Ketika templat digunakan, jika pengguna tidak menentukan nama penyebaran, gunakan waktu saat ini, seperti "20131223140835".
 
 ```yaml
 Type: String
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Saat diatur, cmdlet harus menggunakan versi API prari tamu ketika menentukan versi mana yang akan digunakan secara otomatis.
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
 
 ```yaml
 Type: SwitchParameter
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateParameterObject
-Tabel hash yang menyatakan parameter.
+Tabel hash yang mewakili parameter.
 
 ```yaml
 Type: Hashtable
@@ -292,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -308,7 +308,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -323,7 +323,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

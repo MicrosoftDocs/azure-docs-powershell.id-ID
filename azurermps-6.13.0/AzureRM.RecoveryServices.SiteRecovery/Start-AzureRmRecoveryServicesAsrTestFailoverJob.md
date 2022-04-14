@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.recov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Start-AzureRmRecoveryServicesAsrTestFailoverJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Start-AzureRmRecoveryServicesAsrTestFailoverJob.md
-ms.openlocfilehash: fc2177a7f9ef1132c9dcfe9f5d17cc27106c11b436f743c65e513b55a2e374fa
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: f0350cfa9facfe8fc21e6c039c2fa5838bba8875
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417306"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141967749"
 ---
 # Start-AzureRmRecoveryServicesAsrTestFailoverJob
 
 ## SYNOPSIS
-Memulai operasi uji failover.
+Memulai operasi failover uji coba.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -52,7 +52,7 @@ Start-AzureRmRecoveryServicesAsrTestFailoverJob -RecoveryPlan <ASRRecoveryPlan> 
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ByrPIObjectWithVMNetwork
+### ByRPIObjectWithVMNetwork
 ```
 Start-AzureRmRecoveryServicesAsrTestFailoverJob -ReplicationProtectedItem <ASRReplicationProtectedItem>
  -Direction <String> -VMNetwork <ASRNetwork> [-DataEncryptionPrimaryCertFile <String>]
@@ -60,7 +60,7 @@ Start-AzureRmRecoveryServicesAsrTestFailoverJob -ReplicationProtectedItem <ASRRe
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ByrPIObjectWithAzureVMNetworkId
+### ByRPIObjectWithAzureVMNetworkId
 ```
 Start-AzureRmRecoveryServicesAsrTestFailoverJob -ReplicationProtectedItem <ASRReplicationProtectedItem>
  -Direction <String> -AzureVMNetworkId <String> [-CloudServiceCreationOption <String>]
@@ -70,8 +70,8 @@ Start-AzureRmRecoveryServicesAsrTestFailoverJob -ReplicationProtectedItem <ASRRe
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzureRmRecoveryServicesAsrTestFailoverJob** memulai uji failover dari item terproteksi replikasi Pemulihan Situs Azure atau paket pemulihan.
-Anda dapat memeriksa apakah pekerjaan berhasil dengan menggunakan cmdlet Get-AzureRmRecoveryServicesAsrJob cmdlet.
+Cmdlet **Start-AzureRmRecoveryServicesAsrTestFailoverJob** memulai uji failover item terproteksi azure Site Recovery replikasi atau paket pemulihan.
+Anda dapat memeriksa apakah pekerjaan berhasil menggunakan cmdlet Get-AzureRmRecoveryServicesAsrJob.
 
 ## EXAMPLES
 
@@ -80,12 +80,12 @@ Anda dapat memeriksa apakah pekerjaan berhasil dengan menggunakan cmdlet Get-Azu
 PS C:\> $currentJob = Start-AzureRmRecoveryServicesAsrTestFailoverJob -RecoveryPlan $RP -Direction PrimaryToRecovery -VMNetwork $TestRecoveryNetwork
 ```
 
-Memulai operasi uji failover untuk rencana pemulihan dengan parameter tertentu dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Memulai operasi failover pengujian untuk rencana pemulihan dengan parameter yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ## PARAMETERS
 
 ### -AzureVMNetworkId
-Menentukan ID jaringan virtual Azure untuk menyambungkan pengujian yang gagal melalui mesin virtual.
+Menentukan ID jaringan virtual Azure untuk menyambungkan uji gagal melalui mesin virtual.
 
 ```yaml
 Type: System.String
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -CloudServiceCreationOption
-Menentukan apakah layanan cloud baru harus dibuat atau layanan cloud pemulihan yang dikonfigurasi untuk VM harus digunakan untuk uji failover.
+Menentukan apakah layanan awan baru harus dibuat atau layanan awan pemulihan yang dikonfigurasi untuk VM harus digunakan untuk uji failover.
 
 ```yaml
 Type: System.String
@@ -130,7 +130,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DataEncryptionSeccryptryCertFile
+### -DataEncryptionSecondaryCertFile
 Menentukan file sertifikat sekunder.
 
 ```yaml
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryPoint
-Menentukan titik pemulihan kustom untuk menguji failover tempat mesin yang diproteksi diproteksi.
+Menentukan titik pemulihan kustom untuk menguji failover mesin yang dilindungi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRecoveryPoint
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryTag
-Menentukan tag pemulihan untuk menguji failover
+Menentukan tag pemulihan untuk menguji failover ke
 
 ```yaml
 Type: System.String
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicationProtectedItem
-Menentukan item replikasi ASR yang diproteksi.
+Menentukan item yang diproteksi replikasi ASR.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem
@@ -243,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMNetwork
-Menentukan jaringan mesin virtual Pemulihan Situs untuk menyambungkan ke mesin virtual failover uji.
+Menentukan jaringan mesin virtual Site Recovery untuk menyambungkan mesin virtual failover uji ke.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRNetwork
@@ -258,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -273,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -288,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

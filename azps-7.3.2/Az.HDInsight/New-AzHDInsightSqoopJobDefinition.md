@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightSqoopJobDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightSqoopJobDefinition.md
-ms.openlocfilehash: 3642be23fee18e994c96c66b71ec9ec018d11f70
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 334267036943ccea9b3a901caebb6d65d7cca3b3
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140394107"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141938535"
 ---
 # New-AzHDInsightSqoopJobDefinition
 
 ## SYNOPSIS
 Membuat objek pekerjaan Sqoop.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/new-azhdinsightsqoopjobdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzHDInsightSqoopJobDefinition [-Files <String[]>] [-StatusFolder <String>] [
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzHDInsightSqoopJobDefinition** menentukan objek pekerjaan Sqoop untuk digunakan dengan kluster Azure HDInsight.
+Cmdlet **New-AzHDInsightSqoopJobDefinition** menentukan objek pekerjaan Sqoop untuk digunakan dengan cluster Azure HDInsight.
 
 ## EXAMPLES
 
@@ -62,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -78,8 +81,8 @@ Accept wildcard characters: False
 
 ### -File
 Menentukan jalur ke file yang berisi kueri untuk dijalankan.
-File harus tersedia pada akun Storage yang terkait dengan kluster.
-Anda bisa menggunakan parameter ini sebagai ganti *parameter Query* .
+File harus tersedia di akun Storage yang terkait dengan kluster.
+Anda bisa menggunakan parameter ini dan bukan parameter *Kueri* .
 
 ```yaml
 Type: System.String
@@ -93,7 +96,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -File
+### -Files
 Menentukan kumpulan file yang terkait dengan pekerjaan Hive.
 
 ```yaml
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -StatusFolder
-Menentukan lokasi folder yang berisi output standar dan output kesalahan untuk pekerjaan.
+Menentukan lokasi folder yang berisi output standar dan output kesalahan untuk suatu pekerjaan.
 
 ```yaml
 Type: System.String
@@ -139,11 +142,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

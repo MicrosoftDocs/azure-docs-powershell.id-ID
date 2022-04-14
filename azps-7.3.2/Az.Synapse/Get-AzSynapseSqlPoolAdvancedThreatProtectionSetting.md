@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPoolAdvancedThreatProtectionSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPoolAdvancedThreatProtectionSetting.md
-ms.openlocfilehash: 144bb7ce72ef9a67e469e00d3bc935c195f5e107
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 45b794874b1919027724b8c86f8bf46dd20103f1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140182806"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142023905"
 ---
 # Get-AzSynapseSqlPoolAdvancedThreatProtectionSetting
 
 ## SYNOPSIS
-Dapatkan pengaturan perlindungan ancaman tingkat lanjut untuk SQL baru.
+Mendapatkan pengaturan perlindungan ancaman tingkat lanjut untuk kolam SQL.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsesqlpooladvancedthreatprotectionsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Get-AzSynapseSqlPoolAdvancedThreatProtectionSetting -ResourceId <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseSqlPoolAdvancedThreatProtectionSetting** mendapatkan pengaturan perlindungan ancaman tingkat lanjut dari grup SQL Analitik Azure Synapse.
+Cmdlet **Get-AzSynapseSqlPoolAdvancedThreatProtectionSetting** mendapatkan pengaturan perlindungan ancaman tingkat lanjut dari Azure Synapse Analytics SQL pool.
 
 ## EXAMPLES
 
@@ -53,7 +56,7 @@ Cmdlet **Get-AzSynapseSqlPoolAdvancedThreatProtectionSetting** mendapatkan penga
 PS C:\> Get-AzSynapseSqlPoolAdvancedThreatProtectionSetting -WorkspaceName ContosoWorkspace -Name ContosoSqlPool
 ```
 
-Perintah ini mendapatkan pengaturan perlindungan ancaman tingkat lanjut untuk suatu SQL jaringan bernama ContosoSqlPool di bawah ruang kerja yang bernama ContosoWorkspace.
+Perintah ini mendapatkan pengaturan perlindungan ancaman tingkat lanjut untuk kumpulan SQL bernama ContosoSqlPool di bawah ruang kerja bernama ContosoWorkspace.
 
 ## PARAMETERS
 
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-SQL input kolam renang, biasanya melewati saluran.
+SQL objek input pool, biasanya melewati pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSqlPool
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama SQL Tim.
+Nama Synapse SQL pool.
 
 ```yaml
 Type: System.String
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya dari Synapse SQL Pool.
+Pengidentifikasi sumber daya Synapse SQL Pool.
 
 ```yaml
 Type: System.String
@@ -132,7 +135,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

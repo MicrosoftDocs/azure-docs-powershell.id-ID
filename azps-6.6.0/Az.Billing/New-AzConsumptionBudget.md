@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/New-AzConsumptionBudget.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/New-AzConsumptionBudget.md
 ms.openlocfilehash: c94463fa8dcc75f99a4e0d23f78ddf01c0fba1e1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140142891"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141914583"
 ---
 # New-AzConsumptionBudget
 
 ## SYNOPSIS
-Buat anggaran baik dalam langganan maupun grup sumber daya.
+Buat anggaran baik dalam langganan atau grup sumber daya.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.billing/new-azconsumptionbudget) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.billing/new-azconsumptionbudget) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Cmdlet New-AzConsumptionBudget membuat anggaran baik dalam langganan atau grup s
 
 ## EXAMPLES
 
-### Contoh 1: Buat anggaran biaya dengan nama anggaran di tingkat langganan
+### Contoh 1: Membuat anggaran biaya dengan nama anggaran pada tingkat langganan
 ```powershell
 PS C:\> New-AzConsumptionBudget -Amount 60 -Name PSBudget -Category Cost -StartDate 2018-06-01 -EndDate 2018-11-01 -TimeGrain Monthly
 Amount:  60     
@@ -59,7 +59,7 @@ TimePeriod:  EndDate:  11/1/2018 12:00:00 AM
 Type:  Microsoft.Consumption/budgets
 ```
 
-### Contoh 2: Buat anggaran biaya dengan nama anggaran pada tingkat grup sumber daya
+### Contoh 2: Membuat anggaran biaya dengan nama anggaran di tingkat grup sumber daya
 ```powershell
 PS C:\> New-AzConsumptionBudget -ResourceGroupName RGBudgets -Amount 60 -Name PSBudgetRG -Category Cost -StartDate 2018-06-01 -EndDate 2018-11-01 -TimeGrain Monthly
 Amount:  60     
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kategori
-Kategori anggaran bisa menjadi biaya atau penggunaan.
+Kategori anggaran dapat berupa biaya atau penggunaan.
 
 ```yaml
 Type: System.String
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContactEmail
-Alamat email untuk mengirim pemberitahuan anggaran ketika ambang batas telah melebihi batas.
+Alamat email untuk mengirim pemberitahuan anggaran ke saat ambang batas melebihi batas.
 
 ```yaml
 Type: System.String[]
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContactGroup
-Grup tindakan untuk mengirim pemberitahuan anggaran ke saat ambang batas melebihi batas.
+Grup tindakan untuk mengirim pemberitahuan anggaran ke saat ambang batas terlampaui.
 
 ```yaml
 Type: System.String[]
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContactRole
-Peran kontak untuk mengirim pemberitahuan anggaran ke bila ambang batas telah melebihi batas.
+Peran kontak untuk mengirim pemberitahuan anggaran ke saat ambang batas terlampaui.
 
 ```yaml
 Type: System.String[]
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-Tanggal selesai (DD-MM-YYY dalam UTC) periode waktu anggaran.
+Tanggal akhir (YYYY-MM-DD dalam UTC) periode waktu anggaran.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -NotificationKey
-Kunci pemberitahuan yang terkait dengan anggaran, diperlukan untuk membuat pemberitahuan dengan tombol pemberitahuan aktif, ambang pemberitahuan, email kontak, grup kontak, atau peran kontak.
+Kunci pemberitahuan yang terkait dengan anggaran, diperlukan untuk membuat pemberitahuan dengan sakelar pemberitahuan diaktifkan, ambang pemberitahuan, email kontak, grup kontak, atau peran kontak.
 
 ```yaml
 Type: System.String
@@ -245,8 +245,8 @@ Accept wildcard characters: False
 
 ### -NotificationThreshold
 Nilai ambang batas yang terkait dengan pemberitahuan.
-Pemberitahuan dikirim saat biaya atau penggunaan telah melampaui ambang batas.
-Selalu persen dan harus berada di antara 0 dan 1000.
+Pemberitahuan dikirim ketika biaya atau penggunaan melebihi ambang batas.
+Selalu persen dan harus antara 0 dan 1000.
 
 ```yaml
 Type: System.Nullable`1[System.Decimal]
@@ -261,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceFilter
-Daftar contoh sumber daya yang dipisahkan koma untuk difilter.
+Daftar instans sumber daya yang dipisahkan koma untuk difilter.
 
 ```yaml
 Type: System.String[]
@@ -306,10 +306,10 @@ Accept wildcard characters: False
 ```
 
 ### -StartDate
-Tanggal mulai (DD-MM-YYY dalam UTC) periode waktu anggaran.
-Tidak sebelum bulan saat ini untuk grain waktu bulanan.
-Tidak sebelum tiga bulan untuk tinggian waktu per kuartal.
-Tidak sebelum dua belas bulan untuk tinggi waktu tahunan.
+Tanggal mulai (YYYY-MM-DD dalam UTC) periode waktu anggaran.
+Tidak sebelum bulan saat ini untuk biji-bijian waktu bulanan.
+Tidak sebelum tiga bulan untuk biji-bijian kuartalan waktu.
+Tidak sebelum dua belas bulan untuk biji-bijian tahunan.
 Tanggal mulai di masa mendatang tidak lebih dari tiga bulan.
 
 ```yaml
@@ -325,7 +325,7 @@ Accept wildcard characters: False
 ```
 
 ### -TimeGrain
-Tinggi waktu anggaran dapat bulanan, kuartal, atau tahunan.
+Butir waktu anggaran bisa bulanan, kuartalan, atau tahunan.
 
 ```yaml
 Type: System.String
@@ -341,7 +341,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -357,7 +357,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -372,11 +372,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

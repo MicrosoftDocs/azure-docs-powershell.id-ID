@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/New-AzureRmImageConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/New-AzureRmImageConfig.md
 ms.openlocfilehash: f2d5903de64655b79765774f7232790f8a00ffc1
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140860994"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141927155"
 ---
 # New-AzureRmImageConfig
 
@@ -28,7 +28,7 @@ New-AzureRmImageConfig [[-Location] <String>] [[-Tag] <Hashtable>] [[-SourceVirt
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmImageConfig** membuat objek gambar yang dapat dikonfigurasikan.
+Cmdlet **New-AzureRmImageConfig** membuat objek gambar yang dapat dikonfigurasi.
 
 ## EXAMPLES
 
@@ -44,11 +44,11 @@ PS C:\> Add-AzureRmImageDataDisk -Image $imageConfig -Lun 2 -BlobUri $dataDiskVh
 PS C:\> New-AzureRmImage -Image $imageConfig -ImageName 'ImageName01' -ResourceGroupName 'ResourceGroup01';
 ```
 
-Perintah pertama akan membuat objek gambar, lalu menyimpannya dalam $imageConfig variabel.
-Tiga perintah berikutnya menetapkan jalur dari disk os dan dua disk data ke variabel $osDiskVhdUri, $dataDiskVhdUri 1, $dataDiskVhdUri 2. Pendekatan ini hanya untuk keterbacaan perintah berikut.
-Tiga perintah berikutnya masing-masing menambahkan satu disk os dan dua disk data ke gambar yang disimpan di $imageConfig.
-URI setiap disk disimpan di sumber $osDiskVhdUri, $dataDiskVhdUri 1, dan $dataDiskVhdUri 2.
-Perintah terakhir membuat gambar bernama 'ImageName01' dalam grup sumber daya 'ResourceGroup01'.
+Perintah pertama membuat objek gambar, lalu menyimpannya dalam variabel $imageConfig.
+Tiga perintah berikutnya menetapkan jalur disk os dan dua disk data ke variabel $osDiskVhdUri, $dataDiskVhdUri 1, dan $dataDiskVhdUri 2. Pendekatan ini hanya untuk keterbacaan perintah berikut.
+Tiga perintah berikutnya masing-masing menambahkan disk os dan dua disk data ke gambar yang disimpan di $imageConfig.
+URI setiap disk disimpan di $osDiskVhdUri, $dataDiskVhdUri 1, dan $dataDiskVhdUri 2.
+Perintah akhir membuat gambar bernama 'ImageName01' dalam grup sumber daya 'ResourceGroup01'.
 
 ## PARAMETERS
 
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -OsDisk
-Menentukan Disk sistem operasi.
+Menentukan disk sistem operasi.
 
 ```yaml
 Type: Microsoft.Azure.Management.Compute.Models.ImageOSDisk
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneResilient
-Mengaktifkan resilien zona
+Aktifkan ketahanan zona
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

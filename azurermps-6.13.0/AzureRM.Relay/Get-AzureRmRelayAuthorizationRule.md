@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Relay/Commands.Relay/help/Get-AzureRmRelayAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Relay/Commands.Relay/help/Get-AzureRmRelayAuthorizationRule.md
 ms.openlocfilehash: 13de3f05879234a0db1af34517d37172c2a5a6bb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140865974"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141925026"
 ---
 # Get-AzureRmRelayAuthorizationRule
 
 ## SYNOPSIS
-Dapatkan deskripsi aturan otorisasi yang ditentukan untuk entitas Relay tertentu (Namespace/WcfIguy/HybridConnection).
+Mendapatkan deskripsi aturan otorisasi tertentu untuk entitas Relay tertentu (Namespace/WcfRelay/HybridConnection).
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Get-AzureRmRelayAuthorizationRule [-ResourceGroupName] <String> [-Namespace] <St
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### WcfAuthorizationRuleSet
+### WcfRelayAuthorizationRuleSet
 ```
 Get-AzureRmRelayAuthorizationRule [-ResourceGroupName] <String> [[-Namespace] <String>] [-WcfRelay] <String>
  [[-Name] <String>] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -41,11 +41,11 @@ Get-AzureRmRelayAuthorizationRule [-ResourceGroupName] <String> [[-Namespace] <S
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmEroyAuthorizationRule** mendapatkan deskripsi aturan otorisasi tertentu dalam entitas Relay yang diberikan (Namespace/Wcf Azurey/HybridConnection).
+Cmdlet **Get-AzureRmRelayAuthorizationRule** mendapatkan deskripsi aturan otorisasi tertentu dalam entitas Relay tertentu (Namespace/WcfRelay/HybridConnection).
 
 ## EXAMPLES
 
-### Contoh 1 - Kumpulan Nama
+### Contoh 1 - Ruang nama
 ```
 PS C:\> Get-AzureRmRelayNamespaceAuthorizationRule -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -Name AuthoRule1
 
@@ -56,9 +56,9 @@ Id     : /subscriptions/854d368f-1828-428f-8f3c-f2affa9b2f7d/resourceGroups/Defa
          hoRule1
 ```
 
-Mengembalikan deskripsi aturan otorisasi tertentu untuk ruang nama yang ditentukan.
+Mengembalikan deskripsi aturan otorisasi tertentu untuk ruang nama tertentu.
 
-### Contoh 2 - WcfCfCfy
+### Contoh 2 - WcfRelay
 ```
 PS C:\>Get-AzureRmWcfRelayAuthorizationRule -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -WcfRelay TestWCFRelay1 -Name AuthoRule1
 
@@ -69,7 +69,7 @@ Id     : /subscriptions/854d368f-1828-428f-8f3c-f2affa9b2f7d/resourceGroups/Defa
          1/authorizationRules/AuthoRule1
 ```
 
-Mengembalikan deskripsi aturan otorisasi tertentu untuk WcfCfCf Adada.
+Mengembalikan deskripsi aturan otorisasi tertentu untuk WcfRelay tertentu.
 
 ### Contoh 3 - HybridConnection
 ```
@@ -82,7 +82,7 @@ Id     : /subscriptions/854d368f-1828-428f-8f3c-f2affa9b2f7d/resourceGroups/Defa
          HybridConnection/authorizationRules/AuthoRule1
 ```
 
-Mengembalikan deskripsi aturan otorisasi yang ditentukan untuk HybridConnection yang diberikan.
+Mengembalikan deskripsi aturan otorisasi tertentu untuk HybridConnection tertentu.
 
 ## PARAMETERS
 
@@ -173,8 +173,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -WcfEby
-Nama WcfEby.
+### -WcfRelay
+Nama WcfRelay.
 
 ```yaml
 Type: System.String
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

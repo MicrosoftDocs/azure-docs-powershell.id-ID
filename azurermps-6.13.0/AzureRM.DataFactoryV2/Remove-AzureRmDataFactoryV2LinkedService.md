@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.dataf
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactoryV2/Commands.DataFactoryV2/help/Remove-AzureRmDataFactoryV2LinkedService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactoryV2/Commands.DataFactoryV2/help/Remove-AzureRmDataFactoryV2LinkedService.md
-ms.openlocfilehash: 68669816187fbd2806a1b4583c5e5f95e7bcb7281efe9efaa9d3f49fff6150bb
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: a11588c5c8ce4e2a04b3ead13281ab64163bc5ce
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140864921"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141927105"
 ---
 # Remove-AzureRmDataFactoryV2LinkedService
 
 ## SYNOPSIS
-Menghapus layanan tertaut dari Data Factory.
+Menghapus layanan tertaut dari Pabrik Data.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -54,14 +54,14 @@ PS C:\> Remove-AzureRmDataFactoryV2LinkedService -ResourceGroupName "ADF" -DataF
           True
 ```
 
-Perintah ini menghapus layanan tertaut yang bernama LinkedServiceTest dari pabrik data bernama WikiADF.
-Perintah ini mengembalikan nilai dari $True.
+Perintah ini menghapus layanan tertaut bernama LinkedServiceTest dari pabrik data bernama WikiADF.
+Perintah ini mengembalikan nilai $True.
 
 ## PARAMETERS
 
 ### -DataFactoryName
 Menentukan nama pabrik data.
-Cmdlet ini menghapus layanan yang ditautkan dari pabrik data yang ditentukan parameter ini.
+Cmdlet ini menghapus layanan tertaut dari pabrik data yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -90,7 +90,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Menjalankan cmdlet tanpa meminta konfirmasi.
 
 ```yaml
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Menentukan objek LinkedService yang akan dihapus.
+Menentukan objek LinkedService untuk dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataFactoryV2.Models.PSLinkedService
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama layanan tertaut yang akan dihapus.
+Menentukan nama layanan yang ditautkan untuk dihapus.
 Nama layanan yang ditautkan.
 
 ```yaml
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya Azure dari layanan yang ditautkan yang akan dihapus.
+ID sumber daya Azure dari layanan yang ditautkan untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -212,7 +212,7 @@ Parameter: InputObject (ByValue)
 ### System.Void
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, data, factories
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 

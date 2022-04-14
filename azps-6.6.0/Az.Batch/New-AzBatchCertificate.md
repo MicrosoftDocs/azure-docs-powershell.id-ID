@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchCertificate.md
 ms.openlocfilehash: 34dbca336728007cf8859f5777e012dec0d2f3bc
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140258770"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141914961"
 ---
 # New-AzBatchCertificate
 
 ## SYNOPSIS
-Menambahkan sertifikat ke akun Kumpulan yang ditentukan.
+Menambahkan sertifikat ke akun Batch tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/new-azbatchcertificate) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.batch/new-azbatchcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,22 +45,22 @@ Cmdlet **New-AzBatchCertificate** menambahkan sertifikat ke akun Azure Batch yan
 PS C:\>New-AzBatchCertificate -FilePath "E:\Certificates\MyCert.cer" -BatchContext $Context
 ```
 
-Perintah ini menambahkan sertifikat ke akun Batch yang ditentukan dengan menggunakan file E:\Certificates\MyCert.cer.
+Perintah ini menambahkan sertifikat ke akun Batch yang ditentukan menggunakan file E:\Certificates\MyCert.cer.
 
-### Contoh 2: Tambahkan sertifikat dari data mentah
+### Contoh 2: Menambahkan sertifikat dari data mentah
 ```
 PS C:\>$RawData = [System.IO.File]::ReadAllBytes("E:\Certificates\MyCert.pfx")
 PS C:\> New-AzBatchCertificate -RawData $RawData -Password "Password1234" -BatchContext $Context
 ```
 
-Perintah pertama membaca data dari file bernama MyCert.pfx ke dalam $RawData variabel.
-Perintah kedua menambahkan sertifikat ke akun Batch yang ditentukan menggunakan data mentah yang disimpan dalam $RawData.
+Perintah pertama membaca data dari file bernama MyCert.pfx ke dalam variabel $RawData.
+Perintah kedua menambahkan sertifikat ke akun Batch tertentu menggunakan data mentah yang disimpan di $RawData.
 
 ## PARAMETERS
 
 ### -BatchContext
-Menentukan contoh **BatchAccountContext** yang digunakan cmdlet untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -105,8 +105,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kind
-Jenis sertifikat untuk dibuat. Jika ini tidak ditentukan, diasumsikan bahwa semua sertifikat tanpa kata sandi adalah CER dan semua sertifikat dengan kata sandi adalah PFX.
+### -Jenis
+Jenis sertifikat yang akan dibuat. Jika ini tidak ditentukan, diasumsikan bahwa semua sertifikat tanpa kata sandi adalah CER dan semua sertifikat dengan kata sandi adalah PFX.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSCertificateKind
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -Password
-Menentukan kata sandi untuk mengakses sertifikat kunci privat.
+Menentukan kata sandi untuk mengakses kunci privat sertifikat.
 Anda harus menentukan parameter ini jika Anda menentukan sertifikat dalam format .pfx.
 
 ```yaml
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -RawData
-Menentukan data sertifikat mentah baik dalam format .cer atau .pfx.
+Menentukan data sertifikat mentah dalam format .cer atau .pfx.
 
 ```yaml
 Type: System.Byte[]
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -173,6 +173,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzBatchAccountKey](./Get-AzBatchAccountKey.md)
 
-[Remove-AzBatchCertificate](./Remove-AzBatchCertificate.md)
+[Hapus-AzBatchCertificate](./Remove-AzBatchCertificate.md)
 
-[Cmdlet Kumpulan Azure](/powershell/module/Az.Batch/)
+[Cmdlet Azure Batch](/powershell/module/Az.Batch/)

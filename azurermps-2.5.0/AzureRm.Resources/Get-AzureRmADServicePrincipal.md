@@ -5,11 +5,11 @@ ms.assetid: 4DC26C26-6162-4A15-BFCB-4D2B6B52DD81
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.resources/get-azurermadserviceprincipal
 schema: 2.0.0
 ms.openlocfilehash: 10d95102058c759f9b2641f233bd590364945c71
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422778"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141927998"
 ---
 # Get-AzureRmADServicePrincipal
 
@@ -75,7 +75,7 @@ PS C:\> Get-AzureRmADServicePrincipal
 
 Mencantumkan semua prinsipal layanan AD dalam penyewa.
 
-### Contoh 2 - Daftar prinsipal layanan AD menggunakan pembuatan halaman
+### Contoh 2 - Daftar prinsipal layanan AD menggunakan paging
 
 ```
 PS C:\> Get-AzureRmADServicePrincipal -First 100
@@ -83,7 +83,7 @@ PS C:\> Get-AzureRmADServicePrincipal -First 100
 
 Mencantumkan 100 prinsipal layanan AD pertama dalam penyewa.
 
-### Contoh 3 - Prinsipal layanan daftar menurut SPN
+### Contoh 3 - Daftar prinsipal layanan menurut SPN
 
 ```
 PS C:\> Get-AzureRmADServicePrincipal -ServicePrincipalName 36f81fc3-b00f-48cd-8218-3879f51ff39f
@@ -91,7 +91,7 @@ PS C:\> Get-AzureRmADServicePrincipal -ServicePrincipalName 36f81fc3-b00f-48cd-8
 
 Mencantumkan prinsipal layanan dengan SPN '36f81fc3-b00f-48cd-8218-3879f51ff39f'.
 
-### Contoh 4 - Prinsipal layanan daftar berdasarkan string pencarian
+### Contoh 4 - Daftar prinsipal layanan menurut string pencarian
 
 ```
 PS C:\> Get-AzureRmADServicePrincipal -SearchString "Web"
@@ -99,13 +99,13 @@ PS C:\> Get-AzureRmADServicePrincipal -SearchString "Web"
 
 Mencantumkan semua prinsipal layanan AD yang nama tampilannya dimulai dengan "Web".
 
-### Contoh 5 - Pokok layanan daftar dengan pemipaan
+### Contoh 5 - Daftar prinsipal layanan menurut perpipaan
 
 ```
 PS C:\> Get-AzureRmADApplication -ObjectId 39e64ec6-569b-4030-8e1c-c3c519a05d69 | Get-AzureRmADServicePrincipal
 ```
 
-Dapatkan aplikasi AD dengan object id '39e64ec6-569b-4030-8e1c-c3c519a05d69' dan pipes ke cmdlet Get-AzureRmADServicePrincipal untuk mencantumkan semua prinsipal layanan untuk aplikasi tersebut.
+Mendapatkan aplikasi AD dengan id objek '39e64ec6-569b-4030-8e1c-c3c519a05d69' dan menyalurkannya ke cmdlet Get-AzureRmADServicePrincipal untuk mencantumkan semua prinsipal layanan untuk aplikasi tersebut.
 
 ## PARAMETERS
 
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Nama tampilan prinsipal layanan.
+Nama tampilan utama layanan.
 
 ```yaml
 Type: System.String
@@ -184,8 +184,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -First
-Jumlah maksimum objek untuk dikembalikan.
+### -Pertama
+Jumlah maksimum objek yang akan dikembalikan.
 
 ```yaml
 Type: System.UInt64
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeTotalCount
-Melaporkan jumlah objek dalam set data. Saat ini, parameter ini tidak melakukan apa-apa.
+Melaporkan jumlah objek dalam kumpulan data. Saat ini, parameter ini tidak melakukan apa-apa.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Id objek prinsipal layanan.
+Id objek dari prinsipal layanan.
 
 ```yaml
 Type: System.Guid
@@ -245,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lewati
-Mengabaikan objek N pertama, lalu mendapatkan objek yang tersisa.
+Mengabaikan objek N pertama lalu mendapatkan objek yang tersisa.
 
 ```yaml
 Type: System.UInt64
@@ -260,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -268,24 +268,24 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Guid
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.FOLDApplication
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADAplikasi
 Parameter: ApplicationObject (ByValue)
 
 ## OUTPUTS
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.DIRECTDServicePrincipal
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADServicePrincipal
 
 ## CATATAN
 
 ## RELATED LINKS
 
-[New-AzureRmADServicePrincipal](./New-AzureRmADServicePrincipal.md)
+[AzureRmADServicePrincipal baru](./New-AzureRmADServicePrincipal.md)
 
 
 
-[Remove-AzureRmADServicePrincipal](./Remove-AzureRmADServicePrincipal.md)
+[Hapus-AzureRmADServicePrincipal](./Remove-AzureRmADServicePrincipal.md)
 
-[Get-AzureRmADApplication](./Get-AzureRmADApplication.md)
+[Get-AzureRmADAplikasi](./Get-AzureRmADApplication.md)
 
-[Get-AzureRmADSpCredential](./Get-AzureRmADSpCredential.md)
+[Get-AzureRmADSpcredential](./Get-AzureRmADSpCredential.md)
 

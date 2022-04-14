@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/enter-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Enter-AzWebAppContainerPSSession.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Enter-AzWebAppContainerPSSession.md
-ms.openlocfilehash: a195d5583430e234a946b26071493cd89ba5d64d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5db0067bb9ac7c1bec98376ceba0b201c1396929
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140194838"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142023329"
 ---
 # Enter-AzWebAppContainerPSSession
 
 ## SYNOPSIS
-Membuka sesi PowerShell jarak jauh ke dalam wadah windows yang ditentukan dalam situs atau slot tertentu dan grup sumber daya tertentu
+Membuka sesi PowerShell jarak jauh ke dalam wadah jendela yang ditentukan dalam situs atau slot tertentu dan grup sumber daya yang diberikan
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/enter-azwebappcontainerpssession) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Enter-AzWebAppContainerPSSession [-PassThru] [-Force] [-WebApp] <PSSite>
 ```
 
 ## DESCRIPTION
-membuka sesi PowerShell jarak jauh ke dalam wadah windows yang ditentukan dalam situs atau slot tertentu dan grup sumber daya tertentu
+membuka sesi PowerShell jarak jauh ke dalam wadah jendela yang ditentukan dalam situs atau slot tertentu dan grup sumber daya yang diberikan
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ membuka sesi PowerShell jarak jauh ke dalam wadah windows yang ditentukan dalam 
 PS C:\> Enter-AzWebAppContainerPSSession -ResourceGroupName "Default-Web-WestUS" -Name "ContosoASP"
 ```
 
-Perintah ini membuka sesi PowerShell jarak jauh ke aplikasi wadah windows ContosoASP
+Perintah ini membuka sesi PowerShell jarak jauh ke aplikasi kontainer windows ContosoASP
 
 ## PARAMETERS
 
@@ -60,7 +63,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Buat sesi PowerShell tanpa meminta konfirmasi.
 
 ```yaml
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan nilai yang menunjukkan keberhasilan atau kegagalan
+Mengembalikan nilai yang mengindikasikan keberhasilan atau kegagalan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,13 +184,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## OUTPUTS
 

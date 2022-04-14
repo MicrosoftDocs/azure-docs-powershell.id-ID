@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Set-AzureRmLoadBalancerInboundNatRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Set-AzureRmLoadBalancerInboundNatRuleConfig.md
 ms.openlocfilehash: c7d0d5879b4c0ca7ee92a9f22d062241e1cb89a0
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422117"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141925694"
 ---
 # Set-AzureRmLoadBalancerInboundNatRuleConfig
 
 ## SYNOPSIS
-Mengatur konfigurasi aturan NAT masuk untuk penyeimbang muat.
+Mengatur konfigurasi aturan NAT masuk untuk penyeimbang muatan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -39,7 +39,7 @@ Set-AzureRmLoadBalancerInboundNatRuleConfig -LoadBalancer <PSLoadBalancer> -Name
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmLoadBalancerInboundNatRuleConfig** mengatur konfigurasi aturan penerjemahan alamat jaringan masuk (NAT, Inbound Network Address Translation) untuk penyeimbang muat Azure.
+Cmdlet **Set-AzureRmLoadBalancerInboundNatRuleConfig** mengatur konfigurasi aturan terjemahan alamat jaringan masuk (NAT) untuk penyeimbang muatan Azure.
 
 ## EXAMPLES
 
@@ -50,15 +50,15 @@ PS C:\> $slb | Add-AzureRmLoadBalancerInboundNatRuleConfig -Name "NewNatRule" -F
 PS C:\> $slb | Set-AzureRmLoadBalancerInboundNatRuleConfig -Name "NewNatRule" -FrontendIPConfiguration $slb.FrontendIpConfigurations[0] -Protocol "Tcp" -FrontendPort 3350 -BackendPort 3350
 ```
 
-Perintah pertama mendapatkan penyeimbang muat bernama MyLoadBalancer, lalu menyimpannya di $slb variabel.
-Perintah kedua menggunakan operator pipeline untuk melewati penyeimbang muat di $slb ke Add-AzureRmLoadBalancerInboundNatRuleConfig, yang menambahkan konfigurasi aturan NAT masuk ke dalamnya.
-Perintah ketiga melewati penyeimbang muat ke **Set-AzureRmLoadBalancerInboundNatRuleConfig,** yang menyimpan dan memperbarui konfigurasi aturan NAT masuk.
-Perhatikan bahwa konfigurasi aturan telah diatur tanpa mengaktifkan IP terapung, yang telah diaktifkan oleh perintah sebelumnya.
+Perintah pertama mendapatkan load balancer bernama MyLoadBalancer, lalu menyimpannya dalam variabel $slb.
+Perintah kedua menggunakan operator pipeline untuk mengirim penyeimbang muatan dalam $slb ke Add-AzureRmLoadBalancerInboundNatRuleConfig, yang menambahkan konfigurasi aturan NAT masuk ke dalamnya.
+Perintah ketiga melewati penyeimbang muatan ke **Set-AzureRmLoadBalancerInboundNatRuleConfig**, yang menyimpan dan memperbarui konfigurasi aturan NAT masuk.
+Perhatikan bahwa konfigurasi aturan diatur tanpa mengaktifkan IP mengambang, yang telah diaktifkan oleh perintah sebelumnya.
 
 ## PARAMETERS
 
 ### -BackendPort
-Menentukan port backend untuk lalu lintas yang sesuai dengan konfigurasi aturan ini.
+Menentukan port backend untuk lalu lintas yang cocok dengan konfigurasi aturan ini.
 
 ```yaml
 Type: System.Int32
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableFloatingIP
-Mengindikasikan bahwa cmdlet ini mengaktifkan alamat IP mengambang untuk konfigurasi aturan.
+Menunjukkan bahwa cmdlet ini memungkinkan alamat IP mengambang untuk konfigurasi aturan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableTcpReset
-Menerima Reset TCP dua arah pada waktu habis habis arus TCP atau pemutusan koneksi yang tidak diharapkan. Elemen ini hanya digunakan saat protokol diatur ke TCP.
+Terima Pengaturan Ulang TCP dua arah pada batas waktu diam aliran TCP atau pemutusan koneksi yang tidak diharapkan. Elemen ini hanya digunakan ketika protokol diatur ke TCP.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendIpConfiguration
-Menentukan daftar alamat IP ujung depan untuk dikaitkan dengan konfigurasi aturan NAT masuk.
+Menentukan daftar alamat IP ujung-depan untuk dikaitkan dengan konfigurasi aturan NAT masuk.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSFrontendIPConfiguration
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendIpConfigurationId
-Menentukan ID untuk konfigurasi alamat IP ujung-depan.
+Menentukan ID untuk konfigurasi alamat IP ujung depan.
 
 ```yaml
 Type: System.String
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendPort
-Menentukan port ujung-depan yang sesuai dengan konfigurasi aturan penyeimbang muat.
+Menentukan port ujung depan yang cocok dengan konfigurasi aturan penyeimbang muatan.
 
 ```yaml
 Type: System.Int32
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdleTimeoutInMinutes
-Menentukan lamanya waktu, dalam menit, bahwa status percakapan dipertahankan dalam penyeimbang muat.
+Menentukan lamanya waktu, dalam menit, bahwa status percakapan dipertahankan dalam penyeimbang beban.
 
 ```yaml
 Type: System.Int32
@@ -178,8 +178,8 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan penyeimbang muat.
-Cmdlet ini mengatur konfigurasi aturan NAT masuk untuk penyeimbang muat yang ditentukan parameter ini.
+Menentukan penyeimbang beban.
+Cmdlet ini mengatur konfigurasi aturan NAT masuk untuk penyeimbang muatan yang ditentukan parameter ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
@@ -208,7 +208,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
+### -Protokol
 Menentukan protokol yang cocok dengan konfigurasi aturan NAT masuk.
 Nilai yang dapat diterima untuk parameter ini adalah: Tcp atau Udp.
 
@@ -225,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -278,6 +278,6 @@ Parameter: LoadBalancer (ByValue)
 
 [New-AzureRmLoadBalancerInboundNatRuleConfig](./New-AzureRmLoadBalancerInboundNatRuleConfig.md)
 
-[Remove-AzureRmLoadBalancerInboundNatRuleConfig](./Remove-AzureRmLoadBalancerInboundNatRuleConfig.md)
+[Hapus-AzureRmLoadBalancerInboundNatRuleConfig](./Remove-AzureRmLoadBalancerInboundNatRuleConfig.md)
 
 

@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Set-AzureRmVMPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Set-AzureRmVMPlan.md
-ms.openlocfilehash: 0cd83ac19cc45ab9e45c5b6b3baa5039ad6b253bc5652319306843e1b1867d42
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 9a6a4a5a88cebd35993f464a74828115e8a34bdb
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132415836"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141927167"
 ---
 # Set-AzureRmVMPlan
 
 ## SYNOPSIS
-Mengatur informasi paket Marketplace di mesin virtual.
+Mengatur informasi rencana Marketplace di mesin virtual.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,15 +28,15 @@ Set-AzureRmVMPlan [-VM] <PSVirtualMachine> [-Name] <String> [[-Product] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmVMPlan** mengatur informasi paket Azure Marketplace untuk komputer virtual.
-Sebelum dapat menyebarkan gambar Marketplace melalui baris perintah, akses programatik harus diaktifkan atau mesin virtual harus digunakan menggunakan portal Azure.
+Cmdlet **Set-AzureRmVMPlan** mengatur informasi rencana Marketplace Azure untuk mesin virtual.
+Sebelum dapat menyebarkan gambar Marketplace melalui baris perintah, akses programatik harus diaktifkan atau mesin virtual harus digunakan dengan menggunakan portal Azure.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -52,8 +52,8 @@ Accept wildcard characters: False
 
 ### -Nama
 Menentukan nama gambar dari Marketplace.
-Nilai ini sama dengan yang dikembalikan oleh cmdlet Get-AzureRmVMImageSku cmdlet.
-Untuk informasi selengkapnya tentang cara menemukan informasi gambar, lihat Menemukan dan menggunakan gambar [VM Azure Marketplace](/azure/virtual-machines/windows/cli-ps-findimage) dengan Azure PowerShell dalam Microsoft Azure dokumen.
+Ini adalah nilai yang sama yang dikembalikan oleh cmdlet Get-AzureRmVMImageSku.
+Untuk informasi selengkapnya tentang cara menemukan informasi gambar, lihat [Menemukan dan menggunakan gambar VM Marketplace Azure dengan Azure PowerShell](/azure/virtual-machines/windows/cli-ps-findimage) dalam dokumentasi Microsoft Azure.
 
 ```yaml
 Type: System.String
@@ -67,9 +67,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Product
+### -Produk
 Menentukan produk gambar dari Marketplace.
-Ini adalah informasi yang sama **dengan** nilai Penawaran **elemenreferensi** gambar.
+Ini adalah informasi yang sama dengan nilai **Penawaran** dari elemen **imageReference** .
 
 ```yaml
 Type: System.String
@@ -83,7 +83,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Kode Promosi
+### -PromotionCode
 Menentukan kode promosi.
 
 ```yaml
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 
 ### -Publisher
 Menentukan penerbit gambar.
-Anda dapat menemukan informasi ini menggunakan cmdlet Get-AzureRmVMImagePublisher.
+Anda bisa menemukan informasi ini dengan menggunakan cmdlet Get-AzureRmVMImagePublisher.
 
 ```yaml
 Type: System.String
@@ -115,8 +115,8 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan objek mesin virtual yang akan digunakan untuk menetapkan paket Marketplace.
-Anda dapat menggunakan cmdlet Get-AzureRmVM cmdlet untuk mendapatkan objek mesin virtual.
+Menentukan objek mesin virtual untuk mengatur rencana Marketplace.
+Anda dapat menggunakan cmdlet Get-AzureRmVM untuk mendapatkan objek mesin virtual.
 Anda dapat menggunakan cmdlet New-AzureRmVMConfig untuk membuat objek mesin virtual.
 
 ```yaml
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -152,6 +152,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmVMImagePublisher](./Get-AzureRmVMImagePublisher.md)
 
-[Get-AzureRmVMImageSku](./Get-AzureRmVMImageSku.md)
+[Get-AzureRmvmImagesku](./Get-AzureRmVMImageSku.md)
 
-[New-AzureRmVMConfig](./New-AzureRmVMConfig.md)
+[AzureRmVMConfig Baru](./New-AzureRmVMConfig.md)

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2IntegrationRuntimeMetric.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2IntegrationRuntimeMetric.md
 ms.openlocfilehash: fc599a7f189dde7371b56b37f3e3dd7777f8574b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140077903"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141913323"
 ---
 # Get-AzDataFactoryV2IntegrationRuntimeMetric
 
 ## SYNOPSIS
-Mendapatkan metrik data untuk runtime integrasi. 
+Mendapatkan data metrik untuk runtime integrasi. 
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2integrationruntimemetric) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2integrationruntimemetric) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,11 +41,11 @@ Get-AzDataFactoryV2IntegrationRuntimeMetric [-InputObject] <PSIntegrationRuntime
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzDataFactoryV2IntegrationRuntimeMetric mendapatkan metrik data tentang runtime integrasi dalam pabrik data.
+Cmdlet Get-AzDataFactoryV2IntegrationRuntimeMetric mendapatkan data metrik tentang runtime integrasi di pabrik data.
 
 ## EXAMPLES
 
-### Contoh 1: Metrik runtime Integrasi
+### Contoh 1: Dapatkan metrik runtime integrasi
 ```
 PS C:\> Get-AzDataFactoryV2IntegrationRuntimeMetric -ResourceGroupName 'rg-test-dfv2' -DataFactoryName 'test-df-eu2' -Name 'test-selfhost-ir'
 
@@ -54,7 +54,7 @@ IntegrationRuntimeName ResourceGroupName DataFactoryName   Nodes
 test-selfhost-ir       rg-test-dfv2      test-df-eu2       {Node_1}
 ```
 
-Perintah ini menampilkan data metrik tentang runtime integrasi yang bernama 'test-selfhost-ir' dalam langganan untuk grup sumber daya yang bernama 'rg-test-dfv2' dan pabrik data bernama 'test-df-eu2'.
+Perintah ini menampilkan data metrik tentang runtime integrasi bernama 'test-selfhost-ir' dalam langganan untuk grup sumber daya bernama 'rg-test-dfv2' dan pabrik data bernama 'test-df-eu2'.
 
 ## PARAMETERS
 
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

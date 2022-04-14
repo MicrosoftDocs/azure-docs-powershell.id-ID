@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzStaticWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzStaticWebApp.md
-ms.openlocfilehash: f602ddb482cfc37e38c94aa6c5ec33ba1a703b94
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 75f31bb3e0b65c2b25d7abc434dce93d6d2fb58c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139997862"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142023311"
 ---
 # Get-AzStaticWebApp
 
 ## SYNOPSIS
 Deskripsi untuk Mendapatkan detail situs statis.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azstaticwebapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Deskripsi untuk Mendapatkan detail situs statis.
 Get-AzStaticWebApp [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzStaticWebApp -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -58,7 +61,7 @@ Kind Location   Name               Type
 
 Perintah ini mencantumkan semua aplikasi web statis di bawah langganan.
 
-### Contoh 2: Membuat daftar semua aplikasi web statis di bawah grup sumber daya
+### Contoh 2: Mencantumkan semua aplikasi web statis di bawah grup sumber daya
 ```powershell
 PS C:\> Get-AzStaticWebApp -ResourceGroupName azure-rg-test
 
@@ -79,9 +82,9 @@ Kind Location   Name               Type
      Central US staticweb-portal04 Microsoft.Web/staticSites
 ```
 
-Perintah ini mendapatkan aplikasi web satic berdasarkan namanya.
+Perintah ini mendapatkan aplikasi web satic berdasarkan nama.
 
-### Contoh 4: Dapatkan aplikasi web satic dengan pipline
+### Contoh 4: Dapatkan aplikasi web satic menurut pipline
 ```powershell
 PS C:\> New-AzStaticWebApp -ResourceGroupName azure-rg-test -Name staticweb-pwsh01 -Location eastus2 -RepositoryUrl 'https://github.com/username/RepoName' -RepositoryToken 'repoToken123' -Branch 'master' -AppLocation 'Client' -ApiLocation 'Api' -OutputLocation 'wwwroot' -SkuName 'free' -SkuTier 'free'  | Get-AzStaticWebApp -InputObejct 
 
@@ -90,7 +93,7 @@ Kind Location   Name               Type
      Central US staticweb-portal04 Microsoft.Web/staticSites
 ```
 
-Perintah ini mendapatkan aplikasi web satic dengan pipline.
+Perintah ini mendapatkan aplikasi web satic menurut pipline.
 
 ## PARAMETERS
 
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Websites.Models.IWebsitesIdentity
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat sumber daya tersebut berada.
+Nama grup sumber daya tempat sumber daya berada.
 
 ```yaml
 Type: System.String
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -191,15 +194,15 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IWebsitesIdentity>: Parameter Identitas
-  - `[Authprovider <String>]`: Penyedia layanan auth untuk pengguna.
+  - `[Authprovider <String>]`: Penyedia auth untuk pengguna.
   - `[DomainName <String>]`: Nama domain kustom.
   - `[EnvironmentName <String>]`: Pengidentifikasi situs tahapan.
   - `[FunctionAppName <String>]`: Nama aplikasi fungsi yang terdaftar dengan build situs statis.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: Lokasi tempat Anda berencana membuat situs statis.
+  - `[Location <String>]`: Lokasi tempat Anda berencana untuk membuat situs statis.
   - `[Name <String>]`: Nama situs statis.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat sumber daya tersebut berada.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat sumber daya berada.
   - `[SubscriptionId <String>]`: ID langganan Azure Anda. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000).
   - `[Userid <String>]`: Id pengguna pengguna.
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightIPConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightIPConfiguration.md
-ms.openlocfilehash: c9e713d3dfdc7707055b7d97a43c9218bc3b1745
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5550706892d03e180222108b8f6e86294048ff9e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140402603"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141938679"
 ---
 # New-AzHDInsightIPConfiguration
 
 ## SYNOPSIS
-Membuat konfigurasi IP dari konfigurasi tautan privat.
+Membuat konfigurasi IP konfigurasi tautan privat.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/new-azhdinsightipconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzHDInsightIPConfiguration [-Name <String>] [-Primary] [-PrivateIPAddress <S
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzHDInsightIPConfiguration** ini membuat konfigurasi ip di memeory.
+Cmdlet **Ini New-AzHDInsightIPConfiguration** membuat konfigurasi ip dalam memeori.
 
 ## EXAMPLES
 
@@ -75,8 +78,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Utama
-Mendapatkan atau mengatur bendera menunjukkan apakah konfigurasi IP ini penting untuk NIC terkait.
+### -Primer
+Mendapatkan atau mengatur bendera menunjukkan apakah konfigurasi IP ini utama untuk NIC terkait.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateIPAddress
-Mendapatkan atau mengatur alamat ip privat.
+Mendapatkan atau mengatur alamat ip pribadi.
 
 ```yaml
 Type: System.String
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateIPAllocationMethod
-Mendapatkan atau mengatur metode alokasi ip privat.
+Mendapatkan atau mengatur metode alokasi ip pribadi.
 
 ```yaml
 Type: System.String
@@ -137,11 +140,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

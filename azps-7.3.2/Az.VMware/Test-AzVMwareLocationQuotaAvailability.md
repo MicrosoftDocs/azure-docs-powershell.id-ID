@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/test-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Test-AzVMwareLocationQuotaAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Test-AzVMwareLocationQuotaAvailability.md
-ms.openlocfilehash: a5a846da6f8d2a4854e96412a2a9955639cf15d2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: afa9e9de9749fbac9e1d687d59252ee1b97069ab
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140389926"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142023401"
 ---
 # Test-AzVMwareLocationQuotaAvailability
 
 ## SYNOPSIS
-Kembalikan kuota untuk langganan menurut wilayah
+Kuota pengembalian untuk langganan menurut kawasan
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.vmware/test-azvmwarelocationquotaavailability) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Test-AzVMwareLocationQuotaAvailability -Location <String> [-SubscriptionId <Stri
 ```
 
 ## DESCRIPTION
-Kembalikan kuota untuk langganan menurut wilayah
+Kuota pengembalian untuk langganan menurut kawasan
 
 ## EXAMPLES
 
@@ -38,7 +41,7 @@ Enabled
 Enabled
 ```
 
-Memeriksa ketersediaan kuota
+Periksa ketersediaan kuota
 
 ## PARAMETERS
 
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Set-AzEventGridTopic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Set-AzEventGridTopic.md
-ms.openlocfilehash: 3a309c2f02aee86f7260249d0003fc6ff0e78051
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f4e3a274864ccfa79c29bb56433e40cbdc03b649
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140372906"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141939039"
 ---
 # Set-AzEventGridTopic
 
 ## SYNOPSIS
 Mengatur properti topik Kisi Acara.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.eventgrid/set-azeventgridtopic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Set-AzEventGridTopic [-ResourceId] <String> [-Tag] <Hashtable> [-InboundIpRule] 
  [<CommonParameters>]
 ```
 
-### TopicInputObjectParameterSet
+### TopikInputObjectParameterSet
 ```
 Set-AzEventGridTopic [-InputObject] <PSTopic> [[-Tag] <Hashtable>] [[-InboundIpRule] <Hashtable>]
  [[-PublicNetworkAccess] <String>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
@@ -41,7 +44,7 @@ Set-AzEventGridTopic [-InputObject] <PSTopic> [[-Tag] <Hashtable>] [[-InboundIpR
 ```
 
 ## DESCRIPTION
-Mengatur properti topik Kisi Acara. Ini bisa digunakan untuk mengganti tag topik Kisi Acara.
+Mengatur properti topik Kisi Acara. Ini dapat digunakan untuk mengganti tag topik Kisi Acara.
 
 ## EXAMPLES
 
@@ -50,12 +53,12 @@ Mengatur properti topik Kisi Acara. Ini bisa digunakan untuk mengganti tag topik
 PS C:\> Set-AzEventGridTopic -ResourceGroup MyResourceGroupName -Name Topic1 -Tag @{ Department="Finance"; Environment="Test" }
 ```
 
-Mengatur properti topik Kisi Acara Topic1 \`\` \`dalam grup sumber daya MyResourceGroupName\` untuk mengganti tag dengan tag "Departemen" dan "Lingkungan" yang ditentukan.
+Mengatur properti topik \`Kisi Kejadian Topik1\` dalam grup \`sumber daya MyResourceGroupName\` untuk mengganti tag dengan tag tertentu "Departemen" dan "Lingkungan".
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -InboundIpRule
-Hashtable yang mewakili daftar aturan IP masuk. Setiap aturan menentukan Alamat IP dalam notasi CIDR, misalnya 10.0.0.0/8 beserta Tindakan terkait yang akan dijalankan berdasarkan kecocokan atau tidak ada kecocokan ipMask. Nilai Tindakan yang Mungkin menyertakan Hanya perbolehkan
+Hashtable yang mewakili daftar aturan IP masuk. Setiap aturan menentukan Alamat IP dalam notasi CIDR misalnya, 10.0.0.0/8 bersama dengan Tindakan terkait yang akan dilakukan berdasarkan kecocokan atau tidak ada kecocokan IpMask. Nilai Tindakan yang Mungkin menyertakan Perbolehkan saja
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek EventGrid Topic.
+Objek Topik EventGrid.
 
 ```yaml
 Type: Microsoft.Azure.Commands.EventGrid.Models.PSTopic
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccess
-Ini menentukan jika lalu lintas diperbolehkan melalui jaringan publik. Secara default fitur ini diaktifkan. Anda bisa selanjutnya membatasi untuk IP tertentu dengan mengonfigurasi parameter InboundIpRule. Nilai yang diperbolehkan akan dinonaktifkan dan diaktifkan.
+Ini menentukan apakah lalu lintas diperbolehkan melalui jaringan publik. Secara default diaktifkan. Anda dapat membatasi lebih lanjut ke IP tertentu dengan mengonfigurasi parameter InboundIpRule. Nilai yang diperbolehkan dinonaktifkan dan diaktifkan.
 
 ```yaml
 Type: System.String
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-EventGrid Topic ResourceID.
+ID Sumber Daya Topik EventGrid.
 
 ```yaml
 Type: System.String
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -244,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

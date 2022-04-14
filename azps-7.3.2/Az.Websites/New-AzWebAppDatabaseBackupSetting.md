@@ -6,16 +6,19 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppDatabaseBackupSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppDatabaseBackupSetting.md
-ms.openlocfilehash: 5fd1e5c7aa13f7b0160935b2c0bf63466ab9b5d0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 37796b795146a8667b43d56540cad8b52671a746
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140399843"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142023095"
 ---
 # New-AzWebAppDatabaseBackupSetting
 
 ## SYNOPSIS
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/new-azwebappdatabasebackupsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzWebAppDatabaseBackupSetting [-Name] <String> [-DatabaseType] <String> [-Co
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzWebAppDatabaseBackupSetting** membuat pengaturan baru Azure Web App Backup.
+Cmdlet **New-AzWebAppDatabaseBackupSetting** membuat pengaturan Cadangan Azure Web App baru.
 
 ## EXAMPLES
 
@@ -34,11 +37,11 @@ Cmdlet **New-AzWebAppDatabaseBackupSetting** membuat pengaturan baru Azure Web A
 PS C:\> New-AzWebAppDatabaseBackupSetting -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -ConnectionString "MyConnectionString" -DatabaseType "SqlAzure"
 ```
 
-Membuat pengaturan cadangan database (string koneksi) tipe SqlAzure untuk aplikasi tertentu ContosoWebApp yang berada di dalam grup sumber daya Default-Web-WestUS.
+Membuat pengaturan pencadangan database (string koneksi) tipe SqlAzure untuk aplikasi tertentu ContosoWebApp yang berada dalam grup sumber daya Default-Web-WestUS.
 
 ### Contoh 2
 
-Cmdlet New-AzWebAppDatabaseBackupSetting membuat pengaturan Cadangan Azure Web App baru. (otomatisgenerated)
+Cmdlet New-AzWebAppDatabaseBackupSetting membuat pengaturan Cadangan Azure Web App yang baru. (autogenerasi)
 
 ```powershell <!-- Aladdin Generated Example --> 
 New-AzWebAppDatabaseBackupSetting -ConnectionString 'MyConnectionString' -ConnectionStringName <String> -DatabaseType 'SqlAzure' -Name 'ContosoWebApp'
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

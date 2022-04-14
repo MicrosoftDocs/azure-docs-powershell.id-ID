@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/CognitiveServices/Commands.Management.CognitiveServices/help/Get-AzureRmCognitiveServicesAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/CognitiveServices/Commands.Management.CognitiveServices/help/Get-AzureRmCognitiveServicesAccountKey.md
 ms.openlocfilehash: b0e47d95d8ede448b37ef62e0b9deb7283d293c9
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424556"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141968789"
 ---
 # Get-AzureRmCognitiveServicesAccountKey
 
@@ -29,8 +29,8 @@ Get-AzureRmCognitiveServicesAccountKey [-ResourceGroupName] <String> [-Name] <St
 
 ## DESCRIPTION
 Cmdlet **Get-AzureRmCognitiveServicesAccountKey** mendapatkan kunci API untuk akun Layanan Kognitif yang disediakan.
-Akun Layanan Kognitif memiliki dua kunci API: Key1 dan Key2.
-Tombol mengaktifkan interaksi dengan titik akhir akun Layanan Kognitif.
+Akun Cognitive Services memiliki dua kunci API: Key1 dan Key2.
+Kunci memungkinkan interaksi dengan titik akhir akun Cognitive Services.
 Gunakan New-AzureRmCognitiveServicesAccountKey untuk meregenerasi kunci.
 
 ## EXAMPLES
@@ -47,7 +47,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 
 ### -Nama
 Menentukan nama akun.
-Cmdlet ini akan mendapatkan kunci untuk akun ini.
+Cmdlet ini mendapatkan kunci untuk akun ini.
 
 ```yaml
 Type: System.String
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang menjadi tempat akun ditetapkan.
+Menentukan nama grup sumber daya tempat akun ditetapkan.
 
 ```yaml
 Type: System.String
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -107,6 +107,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmCognitiveServicesAccountKey](./New-AzureRmCognitiveServicesAccountKey.md)
+[Baru-AzureRmCognitiveServicesAccountKey](./New-AzureRmCognitiveServicesAccountKey.md)
 
 

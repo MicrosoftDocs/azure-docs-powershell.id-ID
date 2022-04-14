@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Set-AzureRmNetworkWatcherConnectionMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Set-AzureRmNetworkWatcherConnectionMonitor.md
 ms.openlocfilehash: 5c7709c234ba762e5b87418cc0e9b3fc4637ac11
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424499"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141925845"
 ---
 # Set-AzureRmNetworkWatcherConnectionMonitor
 
@@ -100,12 +100,12 @@ Tags                        : {
                               }
 ```
 
-Dalam contoh ini kami memperbarui monitor koneksi yang sudah ada dengan mengubah tujuanAlamat dan menambahkan tag.
+Dalam contoh ini, kami memperbarui monitor koneksi yang sudah ada dengan mengubah tujuanAddress dan menambahkan tag.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConfigureOnly
-Mengonfigurasi monitor koneksi, tapi tidak memulainya
+Mengonfigurasi monitor koneksi, tetapi jangan memulainya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengawas jaringan.
+Sumber daya pengamat jaringan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
@@ -345,7 +345,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable yang mewakili tag sumber daya.
+Sebuah hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -360,7 +360,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -376,7 +376,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -391,7 +391,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -408,15 +408,15 @@ Parameter: InputObject (ByValue)
 ### Microsoft.Azure.Commands.Network.Models.PSConnectionMonitorResult
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, connectivity, management, manager, network, networking, network watcher, connection monitor
+Kata kunci: azure, azurerm, lengan, sumber daya, konektivitas, manajemen, manajer, jaringan, jaringan, pengamat jaringan, monitor koneksi
 
 ## RELATED LINKS
 
-[New-AzureRmNetworkWatcher]()
+[AzureRmNetworkWatcher baru]()
 
 [Get-AzureRmNetworkWatcher]()
 
-[Remove-AzureRmNetworkWatcher]()
+[Hapus-AzureRmNetworkWatcher]()
 
 [Get-AzureRmNetworkWatcherNextHop]()
 
@@ -426,13 +426,13 @@ Kata kunci: azure, azurerm, arm, resource, connectivity, management, manager, ne
 
 [Get-AzureRmNetworkWatcherTroubleshootingResult]()
 
-[New-AzureRmNetworkWatcherPacketCapture]()
+[Baru-AzureRmNetworkWatcherPacketCapture]()
 
 [New-AzureRmPacketCaptureFilterConfig]()
 
 [Get-AzureRmNetworkWatcherPacketCapture]()
 
-[Remove-AzureRmNetworkWatcherPacketCapture]()
+[Hapus-AzureRmNetworkWatcherPacketCapture]()
 
 [Stop-AzureRmNetworkWatcherPacketCapture]()
 
@@ -440,7 +440,7 @@ Kata kunci: azure, azurerm, arm, resource, connectivity, management, manager, ne
 
 [Get-AzureRmNetworkWatcherConnectionMonitorReport]()
 
-[Remove-AzureRmNetworkWatcherConnectionMonitor]()
+[Hapus-AzureRmNetworkWatcherConnectionMonitor]()
 
 [Set-AzureRmNetworkWatcherConnectionMonitor]()
 
@@ -450,9 +450,9 @@ Kata kunci: azure, azurerm, arm, resource, connectivity, management, manager, ne
 
 [New-AzureRmNetworkWatcherProtocolConfiguration]()
 
-[Test-AzureRmNetworkWatcherIPFlow]()
+[Uji-AzureRmNetworkWatcherIPFlow]()
 
-[Test-AzureRmNetworkWatcherConnectivity]()
+[Uji-AzureRmNetworkWatcherConnectivity]()
 
 [Start-AzureRmNetworkWatcherResourceTroubleshooting]()
 

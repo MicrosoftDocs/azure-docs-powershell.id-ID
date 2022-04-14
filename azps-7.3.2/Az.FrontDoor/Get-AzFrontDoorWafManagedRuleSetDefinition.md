@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Get-AzFrontDoorWafManagedRuleSetDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Get-AzFrontDoorWafManagedRuleSetDefinition.md
-ms.openlocfilehash: 409bb57db9093e5220d2355b286bd0738f16dbb0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 45d62231928442141a44b597fbdd0cf47a939639
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140009004"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141938913"
 ---
 # Get-AzFrontDoorWafManagedRuleSetDefinition
 
 ## SYNOPSIS
-Mendapatkan definisi kumpulan aturan terkelola WAF
+Dapatkan definisi kumpulan aturan terkelola WAF
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/get-azfrontdoorwafmanagedrulesetdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Get-AzFrontDoorWafManagedRuleSetDefinition [-DefaultProfile <IAzureContextContai
 ```
 
 ## DESCRIPTION
-Mendapatkan daftar definisi kumpulan aturan terkelola WAF yang digunakan sebagai referensi
+Mendapatkan daftar definisi kumpulan aturan terkelola WAF untuk digunakan sebagai referensi
 
 ## EXAMPLES
 
@@ -40,7 +43,7 @@ Succeeded         DefaultRuleSet              preview-0.1    {LFI, RFI, RCE, PHP
 Succeeded         BotProtection               preview-0.1    {KnownBadBots}
 ```
 
-Mendapatkan definisi kumpulan aturan terkelola WAF.
+Dapatkan definisi kumpulan aturan terkelola WAF.
 
 ## PARAMETERS
 
@@ -60,11 +63,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

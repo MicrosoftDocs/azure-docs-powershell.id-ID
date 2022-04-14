@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmVirtualWan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmVirtualWan.md
-ms.openlocfilehash: 992e36d26b65a1de6c004ba21ff605471af7b7b9bbd9fed1b64e20eea82ba2c9
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 1ff9eb4307c4419dd303d74f7528a8ee0d50bdf3
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140867132"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141926043"
 ---
 # Remove-AzureRmVirtualWan
 
 ## SYNOPSIS
-Menghapus AZURE Virtual WAN.
+Menghapus Virtual WAN Azure.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,7 +40,7 @@ Remove-AzureRmVirtualWan -ResourceId <String> [-Force] [-PassThru] [-DefaultProf
 ```
 
 ## DESCRIPTION
-Menghapus AZURE Virtual WAN.
+Menghapus Virtual WAN Azure.
 
 ## EXAMPLES
 
@@ -52,7 +52,7 @@ PS C:\> New-AzureRmVirtualWan -Name "MyVirtualWan" -ResourceGroupName "TestResou
 PS C:\> Remove-AzureRmVirtualWan -Name "MyVirtualWan" -ResourceGroupName "TestResourceGroup" -Passthru
 ```
 
-Contoh ini membuat Virtual WAN dalam grup sumber daya dan segera menghapusnya. Untuk menyembunyikan perintah ketika menghapus Virtual WAN, gunakan bendera -Force.
+Contoh ini membuat Virtual WAN dalam grup sumber daya lalu langsung menghapusnya. Untuk menyembunyikan perintah saat menghapus Virtual WAN, gunakan bendera -Force.
 
 ### Contoh 2
 
@@ -62,8 +62,8 @@ PS C:\> $virtualWan = New-AzureRmVirtualWan -Name "MyVirtualWan" -ResourceGroupN
 PS C:\> Remove-AzureRmVirtualWan -InputObject $virtualWan -Passthru
 ```
 
-Contoh ini membuat Virtual WAN dalam grup sumber daya dan segera menghapusnya. Penghapusan ini terjadi menggunakan objek wan virtual yang dikembalikan oleh New-AzureRmVirtualWan.
-Untuk menyembunyikan perintah ketika menghapus Virtual WAN, gunakan bendera -Force.
+Contoh ini membuat Virtual WAN dalam grup sumber daya lalu langsung menghapusnya. Penghapusan ini terjadi menggunakan objek wan virtual yang dikembalikan oleh New-AzureRmVirtualWan.
+Untuk menyembunyikan perintah saat menghapus Virtual WAN, gunakan bendera -Force.
 
 ### Contoh 3
 
@@ -73,8 +73,8 @@ PS C:\> $virtualWan = New-AzureRmVirtualWan -Name "MyVirtualWan" -ResourceGroupN
 PS C:\> Remove-AzureRmVirtualWan -ResourceId $virtualWan.Id -Passthru
 ```
 
-Contoh ini membuat Virtual WAN dalam grup sumber daya dan segera menghapusnya. Penghapusan ini terjadi menggunakan id sumber daya wan virtual yang dikembalikan oleh New-AzureRmVirtualWan.
-Untuk menyembunyikan perintah ketika menghapus Virtual WAN, gunakan bendera -Force.
+Contoh ini membuat Virtual WAN dalam grup sumber daya lalu langsung menghapusnya. Penghapusan ini terjadi menggunakan id sumber daya wan virtual yang dikembalikan oleh New-AzureRmVirtualWan.
+Untuk menyembunyikan perintah saat menghapus Virtual WAN, gunakan bendera -Force.
 
 ## PARAMETERS
 
@@ -93,8 +93,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya Azure untuk wan virtual yang akan dihapus.
+ID sumber daya Azure agar wan virtual dihapus.
 
 ```yaml
 Type: System.String
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

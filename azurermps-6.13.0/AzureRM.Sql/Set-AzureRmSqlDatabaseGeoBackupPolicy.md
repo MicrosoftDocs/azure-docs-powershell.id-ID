@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Set-AzureRmSqlDatabaseGeoBackupPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Set-AzureRmSqlDatabaseGeoBackupPolicy.md
 ms.openlocfilehash: c7aa097318f65cd2506ccfcd96e4d9eeeaf9d1bf
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423263"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141967409"
 ---
 # Set-AzureRmSqlDatabaseGeoBackupPolicy
 
 ## SYNOPSIS
-Mengatur kebijakan database geo backup.
+Mengatur kebijakan pencadangan geo database.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,15 +29,15 @@ Set-AzureRmSqlDatabaseGeoBackupPolicy -State <GeoBackupPolicyState> [-ServerName
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmSqlDatabaseGeoBackupPolicy** mengatur kebijakan geo cadangan yang didaftarkan ke database.
-Ini adalah sumber daya Cadangan Azure yang digunakan untuk menentukan kebijakan penyimpanan cadangan.
+Cmdlet **Set-AzureRmSqlDatabaseGeoBackupPolicy** mengatur kebijakan cadangan geo yang didaftarkan ke database.
+Ini adalah sumber daya Azure Backup yang digunakan untuk menentukan kebijakan penyimpanan cadangan.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -DatabaseName
-Menentukan nama database di mana cmdlet ini mengatur kebijakan geo cadangan.
+Menentukan nama database tempat cmdlet ini mengatur kebijakan cadangan geografis.
 
 ```yaml
 Type: System.String
@@ -52,7 +52,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server yang menjadi host database.
+Menentukan nama server yang menghosting database.
 
 ```yaml
 Type: System.String
@@ -97,10 +97,10 @@ Accept wildcard characters: False
 ```
 
 ### -Negara Bagian
-Menentukan status kebijakan geo backup.
+Menentukan status kebijakan pencadangan geografis.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Diaktifkan 
-- Dinonaktifkan
+- Tamu penyandang cacat
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Backup.Model.AzureSqlDatabaseGeoBackupPolicyModel+GeoBackupPolicyState
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -163,5 +163,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmSqlDatabaseGeoBackupPolicy](./Get-AzureRmSqlDatabaseGeoBackupPolicy.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 

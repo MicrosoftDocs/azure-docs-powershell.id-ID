@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/Get-AzureRmWebAppCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/Get-AzureRmWebAppCertificate.md
 ms.openlocfilehash: 94cd9c6aa3c47d87b1c99a1f8ae68c48c613aefd
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422478"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141967123"
 ---
 # Get-AzureRmWebAppCertificate
 
@@ -29,7 +29,7 @@ Get-AzureRmWebAppCertificate [[-ResourceGroupName] <String>] [[-Thumbprint] <Str
 
 ## DESCRIPTION
 Cmdlet **Get-AzureRmWebAppCertificate** mendapatkan informasi tentang sertifikat Azure Web App yang terkait dengan grup sumber daya tertentu.
-Jika mengetahui thumbprint sertifikat, Anda juga dapat menggunakan cmdlet ini untuk mendapatkan informasi tentang sertifikat yang ditentukan.
+Jika Anda mengetahui sidik jari sertifikat, Anda juga bisa menggunakan cmdlet ini untuk mendapatkan informasi tentang sertifikat yang ditentukan.
 
 ## EXAMPLES
 
@@ -40,17 +40,17 @@ PS C:\>Get-AzureRmWebAppCertificate -ResourceGroupName "ContosoResourceGroup"
 
 Perintah ini mengembalikan informasi tentang sertifikat Web App yang diunggah yang terkait dengan grup sumber daya ContosoResourceGroup.
 
-### Contoh 2: Mendapatkan sertifikat aplikasi web yang ditentukan
+### Contoh 2: Mendapatkan sertifikat aplikasi web tertentu
 ```
 PS C:\>Get-AzureRmWebAppCertificate -ResourceGroupName "ContosoResourceGroup" -Thumbprint "E3A38EBA60CAA1C162785A2E1C44A15AD450199C3"
 ```
 
-Perintah ini mendapatkan sertifikat ContosoResourceGroup Web App dengan thumbprint E3A38EBA60CAA1C162785A2E1C44A15AD450199C3.
+Perintah ini mendapatkan sertifikat ContosoResourceGroup Web App dengan sidik jari E3A38EBA60CAA1C162785A2E1C44A15AD450199C3.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -79,7 +79,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Thumbprint
+### -Sidik jari
 Menentukan pengidentifikasi unik untuk sertifikat.
 
 ```yaml
@@ -95,11 +95,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

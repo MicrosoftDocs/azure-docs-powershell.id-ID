@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVHubRouteTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVHubRouteTable.md
 ms.openlocfilehash: 77dfab64efd1f587ce3495b2ea11d8aa62fd627a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140248849"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141951405"
 ---
 # Update-AzVHubRouteTable
 
 ## SYNOPSIS
-Menghapus sumber daya tabel rute hub yang terkait dengan VirtualHub.
+Hapus sumber daya tabel rute hub yang terkait dengan VirtualHub.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/update-azvhubroutetable) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azvhubroutetable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Update-AzVHubRouteTable -ResourceGroupName <String> -ParentResourceName <String>
 Update-AzVHubRouteTable -Name <String> -ParentObject <PSVirtualHub> [-Route <PSVHubRoute[]>] [-Label <String[]>] [-AsJob] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ByvHubRouteTableObject
+### ByVHubRouteTableObject
 ```powershell
 Update-AzVHubRouteTable -InputObject <PSVHubRouteTable> [-Route <PSVHubRoute[]>] [-Label <String[]>] [-AsJob] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -87,12 +87,12 @@ AssociatedConnections  : []
 PropagatingConnections : []
 ```
 
-Perintah ini menghapus tabel rute hub dari hub virtual.
+Perintah ini menghapus tabel rute hub hub hub virtual.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Objek hub virtual induk dari sumber daya ini.
+Objek hub maya induk sumber daya ini.
 
 ```yaml
 Type: PSVirtualHub
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya dari sumber daya vhubroutetable ke Pembaruan.
+Id sumber daya sumber daya vhubroutetable ke Update.
 
 ```yaml
 Type: String
@@ -226,7 +226,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Route
+### -Rute
 Daftar rute untuk tabel rute ini.
 
 ```yaml
@@ -242,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -258,7 +258,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -273,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -291,10 +291,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzvHubRouteTable](./Get-AzVHubRouteTable.md)
+[Get-AzVHubRouteTable](./Get-AzVHubRouteTable.md)
 
-[New-AzvHubRoute](./New-AzVHubRoute.md)
+[New-AzVHubRoute](./New-AzVHubRoute.md)
 
-[New-AzvHubRouteTable](./New-AzVHubRouteTable.md)
+[New-AzVHubRouteTable](./New-AzVHubRouteTable.md)
 
-[Remove-AzvHubRouteTable](./Remove-AzVHubRouteTable.md)
+[Remove-AzVHubRouteTable](./Remove-AzVHubRouteTable.md)

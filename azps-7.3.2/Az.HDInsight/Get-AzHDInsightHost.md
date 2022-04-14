@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightHost.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightHost.md
-ms.openlocfilehash: 3d927b86ab17f3beb709a98ee0d649f55a42c23f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 4968deeee39cbf2c6b676ffffb485498ccc4aba8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140199910"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141938733"
 ---
 # Get-AzHDInsightHost
 
 ## SYNOPSIS
 Mencantumkan host kluster HDInsight.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/get-azhdinsighthost) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ PS C:\> $clusterName = "your-hadoop-001"
 PS C:\> Get-AzHDInsightHost -ClusterName $clusterName
 ```
 
-Perintah ini mencantumkan host kluster' dengan nama kluster.
+Perintah ini mencantumkan host kluster dengan nama kluster.
 
 ### Contoh 2
 ```powershell
@@ -58,7 +61,7 @@ PS C:\> $cluster=Get-AzHDInsightCluster -ClusterName $clusterName
 PS C:\> $cluster | Get-AzHDInsightHost
 ```
 
-Daftar perintah ini untuk host kluster dengan saluran.
+Perintah ini mencantumkan host kluster dengan pipeline.
 
 ## PARAMETERS
 
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

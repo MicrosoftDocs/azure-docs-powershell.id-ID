@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Get-AzureRmADApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Get-AzureRmADApplication.md
 ms.openlocfilehash: 4c97328ba8e33ecad0f96db085a07419decc4063
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424500"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141924781"
 ---
 # Get-AzureRmADApplication
 
 ## SYNOPSIS
-Mencantumkan aplikasi azure active directory yang sudah ada.
+Mencantumkan aplikasi direktori aktif azure yang sudah ada.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -59,9 +59,9 @@ Get-AzureRmADApplication -IdentifierUri <String> [-DefaultProfile <IAzureContext
 ```
 
 ## DESCRIPTION
-Mencantumkan aplikasi azure active directory yang sudah ada.
-Pencarian aplikasi dapat dilakukan oleh ObjectId, ApplicationId, IdentifierUri atau DisplayName.
-Jika tidak ada parameter yang diberikan, parameter itu mengambil semua aplikasi di bawah penyewa.
+Mencantumkan aplikasi direktori aktif azure yang sudah ada.
+Pencarian aplikasi dapat dilakukan dengan ObjectId, ApplicationId, IdentifierUri atau DisplayName.
+Jika tidak ada parameter yang disediakan, parameter akan mengambil semua aplikasi di bawah penyewa.
 
 ## EXAMPLES
 
@@ -73,7 +73,7 @@ PS C:\> Get-AzureRmADApplication
 
 Mencantumkan semua aplikasi di bawah penyewa.
 
-### Contoh 2 - Daftar aplikasi menggunakan paging
+### Contoh 2 - Daftar aplikasi menggunakan halaman
 
 ```
 PS C:\> Get-AzureRmADApplication -First 100
@@ -81,13 +81,13 @@ PS C:\> Get-AzureRmADApplication -First 100
 
 Mencantumkan 100 aplikasi pertama di bawah penyewa.
 
-### Contoh 3 - Dapatkan aplikasi berdasarkan URI pengidentifikasi
+### Contoh 3 - Dapatkan aplikasi menurut pengidentifikasi URI
 
 ```
 PS C:\> Get-AzureRmADApplication -IdentifierUri http://mySecretApp1
 ```
 
-Dapatkan aplikasi dengan uri pengidentifikasi sebagai " http://mySecretApp1 ".
+Mendapatkan aplikasi dengan uri pengidentifikasi sebagai "http://mySecretApp1".
 
 ### Contoh 4 - Dapatkan aplikasi menurut id objek
 
@@ -95,12 +95,12 @@ Dapatkan aplikasi dengan uri pengidentifikasi sebagai " http://mySecretApp1 ".
 PS C:\> Get-AzureRmADApplication -ObjectId 39e64ec6-569b-4030-8e1c-c3c519a05d69
 ```
 
-Dapatkan aplikasi dengan id objek '39e64ec6-569b-4030-8e1c-c3c519a05d69'.
+Mendapatkan aplikasi dengan id objek '39e64ec6-569b-4030-8e1c-c3c519a05d69'.
 
 ## PARAMETERS
 
 ### -ApplicationId
-Id aplikasi dari aplikasi yang akan diambil.
+Id aplikasi aplikasi untuk mengambil.
 
 ```yaml
 Type: System.Guid
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -159,8 +159,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -First
-Jumlah maksimum objek untuk dikembalikan.
+### -Pertama
+Jumlah maksimum objek yang akan dikembalikan.
 
 ```yaml
 Type: System.UInt64
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentifierUri
-Uri pengidentifikasi unik dari aplikasi untuk diambil.
+Pengidentifikasi unik Uri dari aplikasi untuk mengambil.
 
 ```yaml
 Type: System.String
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeTotalCount
-Melaporkan jumlah objek dalam set data. Saat ini, parameter ini tidak melakukan apa-apa.
+Melaporkan jumlah objek dalam kumpulan data. Saat ini, parameter ini tidak melakukan apa-apa.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Id objek aplikasi yang akan diambil.
+Id objek aplikasi untuk mengambil.
 
 ```yaml
 Type: System.Guid
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lewati
-Mengabaikan objek N pertama, lalu mendapatkan objek yang tersisa.
+Mengabaikan objek N pertama lalu mendapatkan objek yang tersisa.
 
 ```yaml
 Type: System.UInt64
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -245,20 +245,20 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.FOLDApplication
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADAplikasi
 
 ## CATATAN
 
 ## RELATED LINKS
 
-[Remove-AzureRmADAppCredential](./Remove-AzureRmADAppCredential.md)
+[Hapus-AzureRmADAppCredential](./Remove-AzureRmADAppCredential.md)
 
-[New-AzureRmADAppCredential](./New-AzureRmADAppCredential.md)
+[AzureRmADAppCredential baru](./New-AzureRmADAppCredential.md)
 
 [Get-AzureRmADAppCredential](./Get-AzureRmADAppCredential.md)
 
-[Remove-AzureRmADApplication](./Remove-AzureRmADApplication.md)
+[Hapus-AzureRmADAplikasi](./Remove-AzureRmADApplication.md)
 
 
-[Aplikasi New-AzureRmAD](./New-AzureRmADApplication.md)
+[AzureRmADAplikasi Baru](./New-AzureRmADApplication.md)
 

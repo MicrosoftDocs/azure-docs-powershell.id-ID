@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/New-AzureRmRecoveryServicesBackupProtectionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/New-AzureRmRecoveryServicesBackupProtectionPolicy.md
 ms.openlocfilehash: 1a9eb2ef731e7ce555fbac1a08cd8468de83ebc5
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424182"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141925047"
 ---
 # New-AzureRmRecoveryServicesBackupProtectionPolicy
 
 ## SYNOPSIS
-Membuat kebijakan perlindungan Cadangan.
+Membuat kebijakan proteksi Cadangan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -30,13 +30,13 @@ New-AzureRmRecoveryServicesBackupProtectionPolicy [-Name] <String> [-WorkloadTyp
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmRecoveryServicesBackupProtectionPolicy** membuat kebijakan proteksi Cadangan di vault.
-Kebijakan proteksi berkaitan dengan setidaknya satu kebijakan penyimpanan.
-Kebijakan penyimpanan menentukan berapa lama titik pemulihan akan disimpan dengan Azure Backup.
-Anda bisa menggunakan cmdlet Get-AzureRmRecoveryServicesBackupRetentionPolicyObject cmdlet untuk mendapatkan kebijakan penyimpanan default.
-Dan Anda bisa menggunakan cmdlet Get-AzureRmRecoveryServicesBackupSchedulePolicyObject cmdlet untuk mendapatkan kebijakan jadwal default.
-Objek **SchedulePolicy** **dan RetentionPolicy** digunakan sebagai input ke cmdlet **New-AzureRmRecoveryServicesBackupProtectionPolicy.**
-Mengatur konteks vault menggunakan cmdlet Set-AzureRmRecoveryServicesVaultContext cmdlet sebelum Anda menggunakan cmdlet saat ini.
+Cmdlet **New-AzureRmRecoveryServicesBackupProtectionPolicy** membuat kebijakan perlindungan Cadangan dalam kubah.
+Kebijakan perlindungan dikaitkan dengan setidaknya satu kebijakan penyimpanan.
+Kebijakan penyimpanan menentukan berapa lama titik pemulihan disimpan dengan Azure Backup.
+Anda dapat menggunakan cmdlet Get-AzureRmRecoveryServicesBackupRetentionPolicyObject untuk mendapatkan kebijakan penyimpanan default.
+Dan Anda dapat menggunakan cmdlet Get-AzureRmRecoveryServicesBackupSchedulePolicyObject untuk mendapatkan kebijakan jadwal default.
+Objek **SchedulePolicy** dan **RetentionPolicy** digunakan sebagai input ke cmdlet **New-AzureRmRecoveryServicesBackupProtectionPolicy** .
+Mengatur konteks kubah menggunakan cmdlet Set-AzureRmRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
@@ -51,13 +51,13 @@ PS C:\> $RetPol.DailySchedule.DurationCountInDays = 365
 PS C:\> New-AzureRmRecoveryServicesBackupProtectionPolicy -Name "NewPolicy" -WorkloadType AzureVM -RetentionPolicy $RetPol -SchedulePolicy $SchPol
 ```
 
-Perintah pertama mendapatkan dasar **SchedulePolicyObject**, lalu menyimpannya dalam $SchPol variabel.
-Perintah kedua menghapus semua waktu jalankan terjadwal dari kebijakan jadwal di $SchPol.
-Perintah ketiga menggunakan cmdlet Get-Date cmdlet untuk mendapatkan tanggal dan waktu saat ini.
-Perintah keempat menambahkan tanggal dan waktu saat ini $Dt waktu sebagaimana waktu berjalan yang dijadwalkan ke kebijakan jadwal.
-Perintah kelima mendapatkan objek **RetentionPolicy** basis, lalu menyimpannya dalam $RetPol penyimpanan.
-Perintah keenam mengatur kebijakan durasi penyimpanan ke 365 hari.
-Perintah terakhir membuat objek **BackupProtectionPolicy** berdasarkan kebijakan jadwal dan penyimpanan yang dibuat oleh perintah sebelumnya.
+Perintah pertama mendapatkan **schedulePolicyObject** dasar, lalu menyimpannya dalam variabel $SchPol.
+Perintah kedua menghapus semua waktu jalan terjadwal dari kebijakan jadwal dalam $SchPol.
+Perintah ketiga menggunakan cmdlet Get-Date untuk mendapatkan tanggal dan waktu saat ini.
+Perintah keempat menambahkan tanggal dan waktu saat ini dalam $Dt sebagai waktu proses terjadwal ke kebijakan jadwal.
+Perintah kelima mendapatkan objek **Base RetentionPolicy** , lalu menyimpannya dalam variabel $RetPol.
+Perintah keenam mengatur kebijakan durasi penyimpanan menjadi 365 hari.
+Perintah akhir membuat objek **BackupProtectionPolicy** berdasarkan kebijakan jadwal dan penyimpanan yang dibuat oleh perintah sebelumnya.
 
 ## PARAMETERS
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -111,8 +111,8 @@ Accept wildcard characters: False
 ```
 
 ### -RetentionPolicy
-Menentukan objek **RetentionPolicy** dasar.
-Anda bisa menggunakan cmdlet Get-AzureRmRecoveryServicesBackupRetentionPolicyObject untuk mendapatkan **objek RetentionPolicy.**
+Menentukan objek **Base RetentionPolicy** .
+Anda dapat menggunakan cmdlet Get-AzureRmRecoveryServicesBackupRetentionPolicyObject untuk mendapatkan objek **RetentionPolicy** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.RetentionPolicyBase
@@ -127,8 +127,8 @@ Accept wildcard characters: False
 ```
 
 ### -SchedulePolicy
-Menentukan objek **schedulePolicy** dasar.
-Anda bisa menggunakan cmdlet Get-AzureRmRecoveryServicesBackupSchedulePolicyObject untuk mendapatkan **objek SchedulePolicy.**
+Menentukan objek **SchedulePolicy** dasar.
+Anda dapat menggunakan cmdlet Get-AzureRmRecoveryServicesBackupSchedulePolicyObject untuk mendapatkan objek **SchedulePolicy** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.SchedulePolicyBase
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

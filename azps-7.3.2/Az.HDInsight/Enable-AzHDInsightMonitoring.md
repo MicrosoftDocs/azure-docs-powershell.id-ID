@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/enable
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Enable-AzHDInsightMonitoring.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Enable-AzHDInsightMonitoring.md
-ms.openlocfilehash: b16785d186bc68abb1c46ab5d5e64c0d9adfe4ff
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 254822db5ebab8e588402076ee71c23efc0bc02b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140394131"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141938769"
 ---
 # Enable-AzHDInsightMonitoring
 
 ## SYNOPSIS
-Mengaktifkan integrasi log Monitor Azure Klasik pada kluster HDInsight dan log yang relevan akan dikirim ke ruang kerja pemantauan yang ditentukan selama diaktifkan.
+Mengaktifkan integrasi log Azure Monitor Klasik pada klaster HDInsight dan log yang relevan akan dikirim ke ruang kerja pemantauan yang ditentukan selama aktifkan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/enable-azhdinsightmonitoring) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Enable-AzHDInsightMonitoring [-Name] <String> [-WorkspaceId] <String> [-PrimaryK
 ```
 
 ## DESCRIPTION
-Cmdlet **Enable-AzHDInsightMonitoring** mengaktifkan integrasi log Azure Monitor Klasik pada kluster HDInsight.
+Cmdlet **Enable-AzHDInsightMonitoring** memungkinkan integrasi log Azure Monitor Klasik pada kluster HDInsight.
 
 ## EXAMPLES
 
@@ -51,7 +54,7 @@ Pemantauan akan diaktifkan pada kluster HDInsight dan log yang relevan akan diki
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Start-AzVirtualnetworkGatewayPacketCapture.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Start-AzVirtualnetworkGatewayPacketCapture.md
 ms.openlocfilehash: 9b9a4822d024afa7125cebae7eb84fa7c3a01922
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140463769"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141951550"
 ---
 # Start-AzVirtualnetworkGatewayPacketCapture
 
 ## SYNOPSIS
-Memulai Operasi Penangkapan Paket di Gateway Jaringan Virtual.
+Memulai Operasi Penangkapan Paket di Gateway Virtual Network.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/start-azvirtualnetworkgatewaypacketcapture) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/start-azvirtualnetworkgatewaypacketcapture) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Start-AzVirtualnetworkGatewayPacketCapture -ResourceId <String> [-FilterData <St
 ```
 
 ## DESCRIPTION
-Memulai Operasi Penangkapan Paket di Gateway Jaringan Virtual.
+Memulai Operasi Penangkapan Paket di Gateway Virtual Network.
 
 ## EXAMPLES
 
@@ -83,7 +83,7 @@ Etag              :
 Id                :
 ```
 ### Contoh 3
-Contoh Ambil Paket untuk merekam semua paket dalam dan luar
+Contoh Pengambilan Paket untuk mengambil semua paket dalam dan luar
 ```powershell
 $a = "{`"TracingFlags`": 11,`"MaxPacketBufferSize`": 120,`"MaxFileSize`": 500,`"Filters`" :[{`"CaptureSingleDirectionTrafficOnly`": false}]}"
 Start-AzVirtualnetworkGatewayPacketCapture -ResourceGroupName "PktCaptureTestSite2RG" -Name "PktCaptureTestSite2VNG" -FilterData $a
@@ -106,7 +106,7 @@ Id                :
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -FilterData
-Opsi filter untuk memulai pengambilan paket di gateway jaringan virtual.
+Opsi filter untuk memulai perekaman paket di gateway jaringan virtual.
 
 ```yaml
 Type: String
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek gateway jaringan virtual tempat pengambilan paket untuk dimulai.
+Objek gateway jaringan virtual tempat pengambilan paket dimulai.
 
 ```yaml
 Type: PSVirtualNetworkGateway
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama gateway jaringan virtual tempat pengambilan paket akan dimulai.
+Nama gateway jaringan virtual tempat pengambilan paket dimulai.
 
 ```yaml
 Type: String
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya Azure dari VirtualNetworkGateway tempat pengambilan paket akan dimulai.
+ID sumber daya Azure dari VirtualNetworkGateway tempat pengambilan paket dimulai.
 
 ```yaml
 Type: String
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -242,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

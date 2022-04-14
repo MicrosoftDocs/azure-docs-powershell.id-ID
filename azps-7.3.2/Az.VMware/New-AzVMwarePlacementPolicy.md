@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/new-azvmw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwarePlacementPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwarePlacementPolicy.md
-ms.openlocfilehash: 8924290dc006ae1402fe32482c84614728512b0e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0035d6ac909f222799c0c5ab83a687c2bb886f63
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140560132"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142023455"
 ---
 # New-AzVMwarePlacementPolicy
 
 ## SYNOPSIS
-Membuat atau memperbarui kebijakan penempatan dalam kluster awan privat
+Membuat atau memperbarui kebijakan penempatan di kluster cloud privat
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.vmware/new-azvmwareplacementpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ New-AzVMwarePlacementPolicy -ClusterName <String> -Name <String> -PrivateCloudNa
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui kebijakan penempatan dalam kluster awan privat
+Membuat atau memperbarui kebijakan penempatan di kluster cloud privat
 
 ## EXAMPLES
 
-### Contoh 1: Membuat atau memperbarui kebijakan penempatan di kluster awan privat
+### Contoh 1: Membuat atau memperbarui kebijakan penempatan di kluster cloud privat
 ```powershell
 PS C:\> $abc = New-AzVMwareVMPlacementPolicyPropertiesObject -AffinityType 'Affinity' -Type 'VmVm' -VMMember @{"test"="test"}
 PS C:\> New-AzVMwarePlacementPolicy -ClusterName cluster1 -Name policy1 -PrivateCloudName cloud1 -ResourceGroupName group1 -Property $abc
@@ -40,9 +43,9 @@ Name    ResourceGroupName
 policy1 group1
 ```
 
-Membuat atau memperbarui kebijakan penempatan dalam kluster awan privat
+Membuat atau memperbarui kebijakan penempatan di kluster cloud privat
 
-### Contoh 2: Membuat atau memperbarui kebijakan penempatan di kluster awan privat
+### Contoh 2: Membuat atau memperbarui kebijakan penempatan di kluster cloud privat
 ```powershell
 PS C:\> $abc = New-AzVMwareVmHostPlacementPolicyPropertiesObject -AffinityType 'AntiAffinity' -HostMember @{"test"="test"}  -Type 'VmHost' -VMMember @{"test"="test"}
 PS C:\> New-AzVMwarePlacementPolicy -ClusterName cluster1 -Name policy1 -PrivateCloudName cloud1 -ResourceGroupName group1 -Property $abc
@@ -52,7 +55,7 @@ Name    ResourceGroupName
 policy1 group1
 ```
 
-Membuat atau memperbarui kebijakan penempatan dalam kluster awan privat
+Membuat atau memperbarui kebijakan penempatan di kluster cloud privat
 
 ## PARAMETERS
 
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterName
-Nama kluster di awan privat
+Nama kluster di awan pribadi
 
 ```yaml
 Type: System.String
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama kebijakan penempatan VMware v Distributed Resource Scheduler (DRS)
+Nama kebijakan penempatan VMware vSphere Distributed Resource Scheduler (DRS)
 
 ```yaml
 Type: System.String
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateCloudName
-Nama awan privat
+Nama awan pribadi
 
 ```yaml
 Type: System.String
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -Properti
-properti kebijakan penempatan Untuk dibuat, lihat bagian CATATAN untuk properti PROPERTI dan membuat tabel hash.
+properti kebijakan penempatan Untuk membangun, lihat bagian CATATAN untuk properti PROPERTI dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.Api20211201.IPlacementPolicyProperties
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -224,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -242,7 +245,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 PROPERTI <IPlacementPolicyProperties>: properti kebijakan penempatan
-  - `Type <PlacementPolicyType>`: tipe kebijakan penempatan
+  - `Type <PlacementPolicyType>`: jenis kebijakan penempatan
   - `[DisplayName <String>]`: Nama tampilan kebijakan penempatan
   - `[State <PlacementPolicyState?>]`: Apakah kebijakan penempatan diaktifkan atau dinonaktifkan
 

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlElasticPoolRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlElasticPoolRecommendation.md
 ms.openlocfilehash: 0769824bc0b50641f7b73cb530dde0a5f30bf7ee
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424482"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141923928"
 ---
 # Get-AzureRmSqlElasticPoolRecommendation
 
 ## SYNOPSIS
-Mendapatkan rekomendasi kolam renang yang elastis.
+Mendapatkan rekomendasi kolam renang elastis.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,30 +28,30 @@ Get-AzureRmSqlElasticPoolRecommendation [-ServerName] <String> [-ResourceGroupNa
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmSqlElasticPoolRecommendation** mendapatkan rekomendasi kolam elastis untuk server.
-Rekomendasi ini menyertakan nilai berikut:
-- DatabaseCollection. Kumpulan nama database yang termasuk dalam kelompok. 
-- DatabaseDtuMin. Garansi Unit Transmisi Data (DTU, Data Transmission Unit) untuk database dalam pool elastis. 
- -- DatabaseDtuMax. Huruf DTU besar untuk database dalam pool elastis. 
+Cmdlet **Get-AzureRmSqlElasticPoolRecommendation** mendapatkan rekomendasi kumpulan elastis untuk server.
+Rekomendasi ini mencakup nilai berikut:
+- DatabaseCollection. Kumpulan nama database yang termasuk dalam kumpulan. 
+- DatabaseDtuMin. Jaminan Unit Transmisi Data (DTU) untuk database dalam kumpulan elastis. 
+ -- DatabaseDtuMax. DTU cap untuk database di kolam elastis. 
 - Dtu. Jaminan DTU untuk kolam elastis. 
-- StorageMb. Storage dalam megabyte untuk kolam elastis. 
-- Edisi. Edition untuk elastis pool. Nilai yang dapat diterima untuk parameter ini adalah: Dasar, Standar, dan Premium. 
-- IncludeAllDatabases. Menunjukkan apakah untuk semua database dalam pool elastis dikembalikan. 
-- Nama. Nama pool elastis.
+- StorageMb. Storage di megabyte untuk kolam elastis. 
+- Edisi. Edisi untuk kolam elastis. Nilai yang dapat diterima untuk parameter ini adalah: Dasar, Standar, dan Premium. 
+- SertakanAllDatabases. Menunjukkan apakah ke semua database dalam kumpulan elastis dikembalikan. 
+- Nama. Nama kolam elastis.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan rekomendasi server
+### Contoh 1: Dapatkan rekomendasi untuk server
 ```
 PS C:\>Get-AzureRmSqlElasticPoolRecommendation -ResourceGroupName "ResourceGroup01" -ServerName "Server01"
 ```
 
-Perintah ini mendapatkan rekomendasi pool elastis untuk server bernama Server01.
+Perintah ini mendapatkan rekomendasi kumpulan elastis untuk server bernama Server01.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

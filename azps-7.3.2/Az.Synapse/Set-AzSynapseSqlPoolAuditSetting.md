@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/set-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlPoolAuditSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlPoolAuditSetting.md
-ms.openlocfilehash: bd5816c70b29f4577a76bd31ef90e1a8e8ade3e5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 545bfbc7e58bae14c3c0153a1531a0930e1f0f82
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140547969"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142023671"
 ---
 # Set-AzSynapseSqlPoolAuditSetting
 
 ## SYNOPSIS
-Mengubah pengaturan audit untuk analitik Azure Synapse SQL sama.
+Mengubah pengaturan pengauditan untuk Azure Synapse kumpulan SQL Analitik.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/set-azsynapsesqlpoolauditsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,8 +63,8 @@ Set-AzSynapseSqlPoolAuditSetting [-AuditActionGroup <AuditActionGroups[]>] [-Aud
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSynapseSqlPoolAuditSetting** mengubah pengaturan audit azure Synapse Analytics SQL pool.
-Ketika penyimpanan blob adalah tujuan untuk log audit, tentukan parameter *StorageAccountResourceId* untuk menentukan akun penyimpanan bagi log audit dan parameter *StorageKeyType* untuk menentukan kunci penyimpanan. Anda juga bisa menentukan penyimpanan untuk log audit dengan mengatur nilai parameter *RetentionInDays* untuk menentukan periode untuk log audit.
+Cmdlet **Set-AzSynapseSqlPoolAuditSetting mengubah** pengaturan pengauditan Azure Synapse Analytics SQL pool.
+Ketika penyimpanan blob adalah tujuan untuk log audit, tentukan parameter *StorageAccountResourceId* untuk menentukan akun penyimpanan untuk log audit dan parameter *StorageKeyType* untuk menentukan kunci penyimpanan. Anda juga bisa menentukan retensi untuk log audit dengan mengatur nilai parameter *RetentionInDays* untuk menentukan periode untuk log audit.
 
 ## EXAMPLES
 
@@ -70,113 +73,113 @@ Ketika penyimpanan blob adalah tujuan untuk log audit, tentukan parameter *Stora
 PS C:\> Set-AzSynapseSqlPoolAuditSetting -WorkspaceName ContosoWorkspace -Name ContosoSqlPool -BlobStorageTargetState Enabled -StorageAccountResourceId "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/resourcegroup01/providers/Microsoft.Storage/storageAccounts/mystorage" -StorageKeyType Primary
 ```
 
-Mengaktifkan kebijakan pengauditan penyimpanan blob dari grup Analitik Azure Synapse SQL bernama ContosoSqlPool.
+Aktifkan kebijakan pengaudungan penyimpanan blob Azure Synapse Analytics SQL pool bernama ContosoSqlPool.
 
 ### Contoh 2
 ```powershell
 PS C:\> Set-AzSynapseSqlPoolAuditSetting -WorkspaceName ContosoWorkspace -Name ContosoSqlPool -BlobStorageTargetState Disabled
 ```
 
-Menonaktifkan kebijakan pengauditan penyimpanan blob dari grup Analitik Azure Synapse SQL bernama ContosoSqlPool.
+Nonaktifkan kebijakan pengaudungan penyimpanan blob Azure Synapse Analytics SQL pool bernama ContosoSqlPool.
 
 ### Contoh 3
 ```powershell
 PS C:\> Set-AzSynapseSqlPoolAuditSetting -WorkspaceName ContosoWorkspace -Name ContosoSqlPool -BlobStorageTargetState Enabled -StorageAccountResourceId "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/resourcegroup01/providers/Microsoft.Storage/storageAccounts/mystorage" -StorageKeyType Primary -PredicateExpression "statement <> 'select 1'"
 ```
 
-Mengaktifkan kebijakan pengauditan penyimpanan blob dari kolam SQL Analitik Azure Synapse yang bernama ContosoSqlPool dengan pemfilteran tingkat lanjut menggunakan predikat SQL T.
+Aktifkan kebijakan pengaudatan penyimpanan blob Azure Synapse Analytics SQL pool bernama ContosoSqlPool dengan pemfilteran tingkat lanjut menggunakan predikat T-SQL.
 
 ### Contoh 4
 ```powershell
 PS C:\> Set-AzSynapseSqlPoolAuditSetting -WorkspaceName ContosoWorkspace -Name ContosoSqlPool -PredicateExpression ""
 ```
 
-Hapus pengaturan pemfilteran tingkat lanjut dari kebijakan audit analitik Azure Synapse yang SQL bernama ContosoSqlPool.
+Hapus pengaturan pemfilteran tingkat lanjut dari kebijakan audit Azure Synapse Analytics SQL pool bernama ContosoSqlPool.
 
 ### Contoh 5
 ```powershell
 PS C:\>Set-AzSynapseSqlPoolAuditSetting -WorkspaceName ContosoWorkspace -Name ContosoSqlPool -EventHubTargetState Enabled -EventHubName "EventHubName" -EventHubAuthorizationRuleResourceId "EventHubAuthorizationRuleResourceId"
 ```
 
-Aktifkan kebijakan pengauditan hub kejadian dari grup Analitik Azure Synapse SQL bernama ContosoSqlPool.
+Aktifkan kebijakan audit hub kejadian Azure Synapse kumpulan SQL Analitik bernama ContosoSqlPool.
 
 ### Contoh 6
 ```powershell
 PS C:\>Set-AzSynapseSqlPoolAuditSetting -WorkspaceName ContosoWorkspace -Name ContosoSqlPool -EventHubTargetState Disabled
 ```
 
-Menonaktifkan kebijakan pengauditan hub kejadian dari grup Analitik Azure Synapse SQL bernama ContosoSqlPool.
+Nonaktifkan kebijakan audit hub aktivitas Azure Synapse kumpulan SQL Analitik bernama ContosoSqlPool.
 
 ### Contoh 7
 ```powershell
 PS C:\>Set-AzSynapseSqlPoolAuditSetting -WorkspaceName ContosoWorkspace -Name ContosoSqlPool -LogAnalyticsTargetState Enabled -WorkspaceResourceId "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/myworkspace"
 ```
 
-Aktifkan kebijakan pengauditan analitik log dari grup Analitik Azure Synapse SQL bernama ContosoSqlPool.
+Aktifkan kebijakan pengaudaran analitik log Azure Synapse kumpulan SQL Analitik bernama ContosoSqlPool.
 
 ### Contoh 8
 ```powershell
 PS C:\>Set-AzSynapseSqlPoolAuditSetting -WorkspaceName ContosoWorkspace -Name ContosoSqlPool -LogAnalyticsTargetState Disabled
 ```
 
-Nonaktifkan kebijakan pengauditan analitik log dari layanan Analitik Azure Synapse SQL bernama ContosoSqlPool.
+Nonaktifkan kebijakan pengaudungan analitik log Azure Synapse SQL kumpulan SQL Analitik bernama ContosoSqlPool.
 
 ### Contoh 9
 ```powershell
 PS C:\> Get-AzSynapseSqlPool -WorkspaceName ContosoWorkspace -Name ContosoSqlPool | Set-AzSynapseSqlPoolAuditSetting -BlobStorageTargetState Disabled
 ```
 
-Menonaktifkan kebijakan pengauditan penyimpanan blob analitik Azure Synapse yang SQL bernama ContosoSqlPool melalui pipeline.
+Nonaktifkan kebijakan pengaudungan penyimpanan blob Azure Synapse Analytics SQL pool bernama ContosoSqlPool melalui pipeline.
 
 ### Contoh 10
 ```powershell
 PS C:\>Set-AzSynapseSqlPoolAuditSetting -WorkspaceName ContosoWorkspace -Name ContosoSqlPool -LogAnalyticsTargetState Enabled -WorkspaceResourceId "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/myworkspace" -BlobStorageTargetState Disabled
 ```
 
- Nonaktifkan pengiriman catatan audit analitik Azure Synapse SQL Pool ke penyimpanan blob, dan aktifkan pengirimannya untuk membuat log analitik.
+ Nonaktifkan pengiriman catatan audit Azure Synapse Analytics SQL Pool ke penyimpanan blob, dan aktifkan mengirimnya ke analitik log.
 
 ### Contoh 11
 ```powershell
 PS C:\>Set-AzSynapseSqlPoolAuditSetting -WorkspaceName ContosoWorkspace -Name ContosoSqlPool -BlobStorageTargetState Enabled -StorageAccountResourceId "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/resourcegroup01/providers/Microsoft.Storage/storageAccounts/mystorage" -EventHubTargetState Enabled -EventHubName "EventHubName" -EventHubAuthorizationRuleResourceId "EventHubAuthorizationRuleResourceId" -LogAnalyticsTargetState Enabled  -WorkspaceResourceId "/subscriptions/4b9e8510-67ab-4e9a-95a9-e2f1e570ea9c/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/viruela2"
 ```
 
-Mengaktifkan pengiriman catatan audit analitik Azure Synapse SQL Pool ke penyimpanan blob, hub kejadian, dan analitik log.
+Aktifkan pengiriman catatan audit Azure Synapse Analytics SQL Pool ke penyimpanan blob, hub kejadian, dan analitik log.
 
 ## PARAMETERS
 
 ### -AuditAction
 Kumpulan tindakan audit.
 
-Tindakan yang didukung untuk diaudit adalah:
+Tindakan yang didukung untuk mengaudit adalah:
 
-SELECT
+PILIH
 
 UPDATE
 
-INSERT
+MEMASUKKAN
 
-DELETE
+MENGHAPUS
 
-EXECUTE
+MENJALANKAN
 
-TERIMA
+MENERIMA
 
-REFERENCES
+REFERENSI
 
-Formulir umum untuk menentukan tindakan yang akan diaudit adalah:
+Formulir umum untuk menetapkan tindakan yang akan diaudit adalah:
 
-\[tindakan\] ON \[objek\] BY \[prinsipal\]
+\[tindakan\] OBJEK\] \[ON \[oleh prinsipal\]
 
-Perhatikan bahwa \[objek\] dalam format di atas bisa merujuk ke objek seperti tabel, tampilan, atau prosedur yang disimpan, atau seluruh database atau skema.
-Untuk kasus yang terakhir ini, formulir DATABASE::\[dbname\] dan SCHEMA::\[schemaname\] digunakan untuk masing-masing.
+Perhatikan bahwa \[objek\] dalam format di atas dapat merujuk ke objek seperti tabel, tampilan, atau prosedur yang disimpan, atau seluruh database atau skema.
+Untuk kasus yang terakhir, database formulir::\[dbname\] dan SCHEMA::\[schemaname\] digunakan, secara berurutan.
 
 Misalnya:
 
-SELECT on dbo.myTable by public
+SELECT di dbo.myTable menurut publik
 
-SELECT pada DATABASE::myDatabase menurut publik
+SELECT on DATABASE::myDatabase by public
 
-SELECT pada SCHEMA::mySchema menurut publik
+SELECT on SCHEMA::mySchema by public
 
 Untuk informasi selengkapnya, lihat https://docs.microsoft.com/sql/relational-databases/security/auditing/sql-server-audit-action-groups-and-actions#database-level-audit-actions.
 
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -AuditActionGroup
-Kumpulan grup tindakan yang disarankan untuk digunakan adalah kombinasi berikut ini, tindakan ini akan mengaudit semua kueri dan prosedur tersimpan yang dijalankan terhadap database, serta berhasil dan gagal masuk:
+Kumpulan grup tindakan yang direkomendasikan untuk digunakan adalah kombinasi berikut ini - ini akan mengaudit semua kueri dan prosedur yang disimpan yang dijalankan terhadap database, serta proses masuk yang berhasil dan gagal:
 
 
 
@@ -203,8 +206,8 @@ Kumpulan grup tindakan yang disarankan untuk digunakan adalah kombinasi berikut 
 
 "FAILED_DATABASE_AUTHENTICATION_GROUP"
 
-Kombinasi di atas juga merupakan kumpulan yang dikonfigurasi secara default.
-Grup ini mencakup SQL pernyataan privasi dan prosedur tersimpan yang dijalankan terhadap database, dan tidak boleh digunakan dalam kombinasi dengan grup lain karena ini akan menghasilkan log audit duplikat.
+Kombinasi di atas ini juga merupakan kumpulan yang dikonfigurasi secara default.
+Grup ini mencakup semua pernyataan SQL dan prosedur yang disimpan yang dijalankan terhadap database, dan tidak boleh digunakan dalam kombinasi dengan grup lain karena ini akan menghasilkan log audit duplikat.
 
 Untuk informasi selengkapnya, lihat https://docs.microsoft.com/sql/relational-databases/security/auditing/sql-server-audit-action-groups-and-actions#database-level-audit-action-groups.
 
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventHubAuthorizationRuleResourceId
-Id sumber daya untuk aturan otorisasi hub acara
+Id sumber daya untuk aturan otorisasi hub kejadian
 
 ```yaml
 Type: System.String
@@ -283,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventHubTargetState
-Menunjukkan apakah hub kejadian adalah tujuan untuk catatan audit.
+Menunjukkan apakah hub kejadian merupakan tujuan untuk catatan audit.
 
 ```yaml
 Type: System.String
@@ -316,7 +319,7 @@ Accept wildcard characters: False
 
 ### -PassThru
 Cmdlet ini tidak mengembalikan objek secara default.
-Jika sakelar ini ditentukan, maka true akan dikembalikan jika berhasil.
+Jika sakelar ini ditentukan, sakelar akan mengembalikan true jika berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -331,7 +334,7 @@ Accept wildcard characters: False
 ```
 
 ### -PredicateExpression
-Predikat T-SQL (klausa WHERE) yang digunakan untuk memfilter log audit.
+Predikat T-SQL (klausul WHERE) digunakan untuk memfilter log audit.
 
 ```yaml
 Type: System.String
@@ -361,7 +364,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya dari Synapse SQL Pool.
+Pengidentifikasi sumber daya Synapse SQL Pool.
 
 ```yaml
 Type: System.String
@@ -391,7 +394,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlPoolName
-Nama SQL Tim.
+Nama Synapse SQL pool.
 
 ```yaml
 Type: System.String
@@ -406,7 +409,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlPoolObject
-SQL input kolam renang, biasanya melewati saluran.
+SQL objek input pool, biasanya melewati pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSqlPool
@@ -451,7 +454,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -482,7 +485,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceResourceId
-ID ruang kerja (ID sumber daya dari ruang kerja Analitik Log) untuk ruang kerja Analitik Log yang ingin Anda kirimi Log Audit. Contoh: /subscriptions/4b9e8510-67ab-4e9a-95a9-e2f1e570ea9c/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/vir dropbox2
+ID ruang kerja (ID sumber daya ruang kerja Analitik Log) untuk ruang kerja Analitik Log yang ingin Anda kirimi Log Audit. Contoh: /subscriptions/4b9e8510-67ab-4e9a-95a9-e2f1e570ea9c/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/viruela2
 
 ```yaml
 Type: System.String
@@ -497,7 +500,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -513,7 +516,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -528,7 +531,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

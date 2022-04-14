@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.hdins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Add-AzureRmHDInsightConfigValues.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Add-AzureRmHDInsightConfigValues.md
-ms.openlocfilehash: 30bbf30a5157a5f9aa8a9f5cfc182deab9ad072bb97cd9564ec6296529490860
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: dd577b5ae4aa61ff988b872bcd37eab1c911e6cc
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418379"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141926915"
 ---
 # Add-AzureRmHDInsightConfigValues
 
@@ -22,7 +22,7 @@ Menambahkan kustomisasi nilai konfigurasi Hadoop dan/atau kustomisasi pustaka be
 
 ## SYNTAX
 
-### Grafik api1
+### Spark1
 ```
 Add-AzureRmHDInsightConfigValues [-Config] <AzureHDInsightConfig> [-Core <Hashtable>] [-HiveSite <Hashtable>]
  [-HiveEnv <Hashtable>] [-OozieSite <Hashtable>] [-OozieEnv <Hashtable>] [-WebHCat <Hashtable>]
@@ -87,12 +87,12 @@ PS C:\> New-AzureRmHDInsightClusterConfig `
                 -DefaultStorageContainer $storageAccountContainer
 ```
 
-Perintah ini menambahkan nilai konfigurasi Hadoop ke kluster yang bernama your-hadoop-001.
+Perintah ini menambahkan nilai konfigurasi Hadoop ke kluster bernama your-hadoop-001.
 
 ## PARAMETERS
 
 ### -Config
-Menentukan objek konfigurasi kluster HDInsight yang dimodifikasi cmdlet ini.
+Menentukan objek konfigurasi kluster HDInsight yang diubah cmdlet ini.
 Objek ini dibuat oleh cmdlet New-AzureRmHDInsightClusterConfig.
 
 ```yaml
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -HiveSite
-Menentukan konfigurasi Situs Hive dari kluster HDInsight ini.
+Menentukan konfigurasi Situs Sarang dari kluster HDInsight ini.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -212,8 +212,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -MapRed
-Menentukan konfigurasi Situs MapRed dari kluster HDInsight ini.
+### -Dipetakan
+Menentukan konfigurasi MapRed Site dari kluster HDInsight ini.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -273,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -Spark2Defaults
-Menentukan konfigurasi Spark2 Defaults dari kluster HDInsight ini.
+Menentukan konfigurasi Default Spark2 dari kluster HDInsight ini.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -288,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -Spark2ThriftConf
-Menentukan konfigurasi Spark2 SparkConf dari kluster HDInsight ini.
+Menentukan konfigurasi Spark2 Thrift SparkConf dari kluster HDInsight ini.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -303,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### -SparkDefaults
-Menentukan konfigurasi Grafik Otomatis dari kluster HDInsight ini.
+Menentukan konfigurasi Spark Defaults dari kluster HDInsight ini.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -318,7 +318,7 @@ Accept wildcard characters: False
 ```
 
 ### -SparkThriftConf
-Menentukan konfigurasi Spark Spark SparkConf dari kluster HDInsight ini.
+Menentukan konfigurasi Spark Thrift SparkConf dari kluster HDInsight ini.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -332,8 +332,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Storm
-Menentukan konfigurasi Situs Storm dari kluster HDInsight ini.
+### -Badai
+Menentukan konfigurasi Storm Site dari kluster HDInsight ini.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -377,8 +377,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Insesi
-Menentukan konfigurasi Situs ROUTER dari kluster HDInsight ini.
+### -Yarn
+Menentukan konfigurasi Situs YARN dari kluster HDInsight ini.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -393,7 +393,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -408,6 +408,6 @@ Parameter: Config (ByValue)
 
 ## RELATED LINKS
 
-[New-AzureRmHDInsightClusterConfig](./New-AzureRmHDInsightClusterConfig.md)
+[Baru-AzureRmHDInsightClusterConfig](./New-AzureRmHDInsightClusterConfig.md)
 
 

@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.recov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Remove-AzureRmRecoveryServicesAsrFabric.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Remove-AzureRmRecoveryServicesAsrFabric.md
-ms.openlocfilehash: 60f1c3c9b89ae8a21155dde0629f7b1150136bacaff5f3a513288d2db8939521
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 8a7b36b67b0ec1721da36dfeba920b556892c5f5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417313"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141967846"
 ---
 # Remove-AzureRmRecoveryServicesAsrFabric
 
 ## SYNOPSIS
-Deletes the specified Azure Site Recovery Fabric from the Recovery Services vault.
+Menghapus Azure Site Recovery Fabric yang ditentukan dari kubah Layanan Pemulihan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Remove-AzureRmRecoveryServicesAsrFabric -InputObject <ASRFabric> [-Force]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmRecoveryServicesAsrFabric** menghapus kain Pemulihan Situs Azure tertentu dari vault layanan Pemulihan.
+Cmdlet **Remove-AzureRmRecoveryServicesAsrFabric** menghapus kain Azure Site Recovery yang ditentukan dari kubah layanan Pemulihan.
 
 ## EXAMPLES
 
@@ -36,7 +36,7 @@ Cmdlet **Remove-AzureRmRecoveryServicesAsrFabric** menghapus kain Pemulihan Situ
 PS C:\> $currentJob = Remove-AzureRmRecoveryServicesAsrFabric -Fabric $Fabric
 ```
 
-Starts the deletion of specified fabric and returns the ASR job used to track the operation.
+Memulai penghapusan kain tertentu dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ## PARAMETERS
 
@@ -56,8 +56,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk berjalan tanpa menyediakan peringatan tambahan.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa memberikan peringatan tambahan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-The input object to the cmdlet: The ASR fabric object corresponding to the fabric to be deleted.
+Objek input ke cmdlet: Objek kain ASR yang terkait dengan kain yang akan dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRFabric
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet dijalankan tanpa menjalankan cmdlet tersebut.
+Menunjukkan apa yang akan terjadi jika cmdlet dijalankan tanpa benar-benar menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -133,4 +133,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmRecoveryServicesAsrFabric](./Get-AzureRmRecoveryServicesAsrFabric.md)
 
-[New-AzureRmRecoveryServicesAsrFabric](./New-AzureRmRecoveryServicesAsrFabric.md)
+[Baru-AzureRmRecoveryServicesAsrFabric](./New-AzureRmRecoveryServicesAsrFabric.md)

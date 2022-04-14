@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.recov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Start-AzureRmRecoveryServicesAsrCommitFailoverJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Start-AzureRmRecoveryServicesAsrCommitFailoverJob.md
-ms.openlocfilehash: 07ffbf3dc2cde5cc1ec30f2b3bb30cc4f981596f7dfc8071287288f483564332
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 4543b127af4c0c6ca882daf93c95fb1dce614b73
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140850234"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141967793"
 ---
 # Start-AzureRmRecoveryServicesAsrCommitFailoverJob
 
 ## SYNOPSIS
-Memulai tindakan lakukan failover untuk objek Pemulihan Situs.
+Memulai tindakan commit failover untuk objek Site Recovery.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -34,7 +34,7 @@ Start-AzureRmRecoveryServicesAsrCommitFailoverJob -RecoveryPlan <ASRRecoveryPlan
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzureRmRecoveryServicesAsrCommitFailoverJob** memulai proses commit failover untuk objek Pemulihan Situs Azure setelah operasi failover.
+Cmdlet **Start-AzureRmRecoveryServicesAsrCommitFailoverJob** memulai proses failover commit untuk objek Azure Site Recovery setelah operasi failover.
 
 ## EXAMPLES
 
@@ -43,7 +43,7 @@ Cmdlet **Start-AzureRmRecoveryServicesAsrCommitFailoverJob** memulai proses comm
 PS C:\> $currentJob = Start-AzureRmRecoveryServicesAsrCommitFailoverJob -RecoveryPlan $RP
 ```
 
-Memulai tindakan pemulihan untuk paket pemulihan tertentu dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Memulai failover commit untuk rencana pemulihan yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ## PARAMETERS
 
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryPlan
-Menentukan objek paket pemulihan ASR yang terkait dengan paket pemulihan akan failover.
+Menentukan objek rencana pemulihan ASR yang terkait dengan rencana pemulihan yang akan gagal.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRecoveryPlan
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicationProtectedItem
-Menentukan objek item dilindungi replikasi ASR yang terkait dengan replikasi item yang diproteksi untuk failover.
+Menentukan objek item terproteksi replikasi ASR yang terkait dengan item yang diproteksi replikasi agar gagal.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

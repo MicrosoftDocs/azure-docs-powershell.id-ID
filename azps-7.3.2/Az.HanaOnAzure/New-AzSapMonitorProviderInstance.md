@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hanaonazure/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/New-AzSapMonitorProviderInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/New-AzSapMonitorProviderInstance.md
-ms.openlocfilehash: d1ffe19d504d9dd75038361f16833e6a39f4b763
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e142e6338df63a59d571edcdf159a14dc12e39ff
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140186782"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141938301"
 ---
 # New-AzSapMonitorProviderInstance
 
 ## SYNOPSIS
-Membuat instans penyedia untuk langganan, grup sumber daya, Nama SapMonitor, dan nama sumber daya yang ditentukan.
+Membuat instans penyedia untuk langganan, grup sumber daya, nama SapMonitor, dan nama sumber daya tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hanaonazure/new-azsapmonitorproviderinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,11 +48,11 @@ New-AzSapMonitorProviderInstance -Name <String> -ResourceGroupName <String> -Sap
 ```
 
 ## DESCRIPTION
-Membuat instans penyedia untuk langganan, grup sumber daya, Nama SapMonitor, dan nama sumber daya yang ditentukan.
+Membuat instans penyedia untuk langganan, grup sumber daya, nama SapMonitor, dan nama sumber daya tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat contoh monitor SAP dengan string untuk HANA
+### Contoh 1: Membuat contoh monitor SAP menurut string untuk HANA
 ```powershell
 PS C:\> New-AzSapMonitorProviderInstance -ResourceGroupName nancyc-hn1 -Name ps-sapmonitorins-t01 -SapMonitorName yemingmonitor -ProviderType SapHana -HanaHostname 'hdb1-0' -HanaDatabaseName 'SYSTEMDB' -HanaDatabaseSqlPort 30015 -HanaDatabaseUsername SYSTEM -HanaDatabasePassword (ConvertTo-SecureString "Manager1" -AsPlainText -Force)
 
@@ -58,9 +61,9 @@ Name                 Type
 ps-sapmonitorins-t01 Microsoft.HanaOnAzure/sapMonitors/providerInstances
 ```
 
-Perintah ini membuat contoh monitor SAP dengan string untuk HANA.
+Perintah ini membuat contoh monitor SAP menurut string untuk HANA.
 
-### Contoh 2: Membuat contoh monitor SAP dengan key vault untuk HANA
+### Contoh 2: Membuat contoh monitor SAP menurut kubah kunci untuk HANA
 ```powershell
 PS C:\> New-AzSapMonitorProviderInstance -ResourceGroupName nancyc-hn1 -SapMonitorName sapMonitor-vayh7q-test -ProviderType SapHana -HanaHostname 'hdb1-0' -HanaDatabaseName 'SYSTEMDB' -HanaDatabaseSqlPort 30015 -HanaDatabaseUsername SYSTEM -HanaDatabasePasswordSecretId https://kv-9gosjc-test.vault.azure.net/secrets/hanaPassword/bf516d1dfcc144138e5cf55114f3344b -HanaDatabasePasswordKeyVaultResourceId /subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/costmanagement-rg-8p50xe/providers/Microsoft.KeyVault/vaults/kv-9gosjc-test -Name sapins-kv-test
 
@@ -69,7 +72,7 @@ Name           Type
 sapins-kv-test Microsoft.HanaOnAzure/sapMonitors/providerInstances
 ```
 
-Perintah ini membuat contoh monitor SAP dengan key vault untuk HANA.
+Perintah ini membuat contoh monitor SAP menurut kubah kunci untuk HANA.
 
 ### Contoh 3: Membuat contoh monitor SAP menurut kamus untuk PrometheusHaCluster
 ```powershell
@@ -92,7 +95,7 @@ Name                  Type
 dolauli-instance-prom Microsoft.HanaOnAzure/sapMonitors/providerInstances
 ```
 
-Perintah ini membuat contoh monitor SAP oleh kamus untuk PrometheusOS.
+Perintah ini membuat contoh monitor SAP menurut kamus untuk PrometheusOS.
 
 ### Contoh 5: Membuat contoh monitor SAP menurut kamus untuk MsSqlServer
 ```powershell
@@ -114,7 +117,7 @@ Name                  Type
 dolauli-instance-hana Microsoft.HanaOnAzure/sapMonitors/providerInstances
 ```
 
-Perintah ini membuat contoh monitor SAP dengan kamus untuk SapHana.
+Perintah ini membuat contoh monitor SAP menurut kamus untuk SapHana.
 
 ## PARAMETERS
 
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -HanaDatabaseName
-Nama database instans SAP HANA.
+Nama database instans SAP Hana.
 
 ```yaml
 Type: System.String
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -HanaDatabasePassword
-Kata sandi database sap HANA.
+Kata sandi database instans SAP Hana.
 
 ```yaml
 Type: System.Security.SecureString
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -HanaDatabasePasswordKeyVaultResourceId
-ID Sumber Daya Vault Kunci yang berisi kredensial HANA.
+ID sumber daya dari Key Vault yang berisi kredensial HANA.
 
 ```yaml
 Type: System.String
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -HanaDatabasePasswordSecretId
-Pengidentifikasi rahasia untuk rahasia Key Vault yang berisi kredensial HANA.
+Pengidentifikasi rahasia ke rahasia Key Vault yang berisi kredensial HANA.
 
 ```yaml
 Type: System.String
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -HanaDatabaseSqlPort
-Port SQL port database instans SAP HANA.
+Port SQL database instans SAP Hana.
 
 ```yaml
 Type: System.Int32
@@ -224,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -HanaDatabaseUsername
-Nama pengguna database instans SAP HANA.
+Nama pengguna database instans SAP Hana.
 
 ```yaml
 Type: System.String
@@ -239,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -HanaHostname
-Nama host instans SAP HANA.
+Nama host instans SAP Hana.
 
 ```yaml
 Type: System.String
@@ -269,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### -Metadata
-String JSON berisi metadata instans penyedia.
+String JSON yang berisi metadata instans penyedia.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -299,7 +302,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -360,8 +363,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID Langganan yang secara unik mengidentifikasi Microsoft Azure langganan.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+ID Langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -376,7 +379,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -392,7 +395,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -407,7 +410,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

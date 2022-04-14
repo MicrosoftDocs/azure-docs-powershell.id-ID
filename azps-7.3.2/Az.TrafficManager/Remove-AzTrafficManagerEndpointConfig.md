@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Remove-AzTrafficManagerEndpointConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Remove-AzTrafficManagerEndpointConfig.md
-ms.openlocfilehash: b7888b34fc3082aa0899e978e46b6654d8be8ed9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6b352d503a36a85b0d54c1087079c69757dc0574
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140553482"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142023491"
 ---
 # Remove-AzTrafficManagerEndpointConfig
 
 ## SYNOPSIS
-Menghapus titik akhir dari objek Traffic Manager profil lokal.
+Menghapus titik akhir dari objek profil Traffic Manager lokal.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.trafficmanager/remove-aztrafficmanagerendpointconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,12 +29,12 @@ Remove-AzTrafficManagerEndpointConfig -EndpointName <String> -TrafficManagerProf
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzTrafficManagerEndpointConfig** menghapus titik akhir dari objek Azure Traffic Manager profil lokal.
-Anda dapat menggunakan profil menggunakan cmdlet Get-AzTrafficManagerProfile.
+Cmdlet **Remove-AzTrafficManagerEndpointConfig** menghapus titik akhir dari objek profil Azure Traffic Manager lokal.
+Anda bisa mendapatkan profil dengan menggunakan cmdlet Get-AzTrafficManagerProfile.
 
 Cmdlet ini beroperasi pada objek profil lokal.
-Lakukan perubahan ke profil untuk Traffic Manager dengan menggunakan cmdlet Set-AzTrafficManagerProfile cmdlet.
-Untuk menghapus titik akhir dan melakukan perubahan dalam satu operasi, gunakan cmdlet Remove-AzTrafficManagerEndpoint cmdlet.
+Lakukan perubahan anda ke profil untuk Traffic Manager dengan menggunakan cmdlet Set-AzTrafficManagerProfile.
+Untuk menghapus titik akhir dan melakukan perubahan dalam operasi tunggal, gunakan cmdlet Remove-AzTrafficManagerEndpoint.
 
 ## EXAMPLES
 
@@ -43,17 +46,17 @@ PS C:\> Set-AzTrafficManagerProfile -TrafficManagerProfile $TrafficManagerProfil
 ```
 
 Perintah pertama mendapatkan profil Azure Traffic Manager dengan menggunakan cmdlet **Get-AzTrafficManagerProfile**.
-Perintah menyimpan profil lokal di $TrafficManagerProfile lokal.
+Perintah menyimpan profil lokal dalam variabel $TrafficManagerProfile.
 
-Perintah kedua menghapus titik akhir Azure yang bernama contoso dari profil yang disimpan di $TrafficManagerProfile.
+Perintah kedua menghapus titik akhir Azure bernama contoso dari profil yang disimpan di $TrafficManagerProfile.
 Perintah ini hanya mengubah objek lokal.
 
-Perintah terakhir memperbarui profil Traffic Manager bernama ContosoProfile agar sesuai dengan nilai lokal di $TrafficManagerProfile.
+Perintah terakhir memperbarui profil Traffic Manager bernama ContosoProfile agar sesuai dengan nilai lokal dalam $TrafficManagerProfile.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

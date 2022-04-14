@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/Wait-AzureRmRecoveryServicesBackupJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/Wait-AzureRmRecoveryServicesBackupJob.md
 ms.openlocfilehash: 377250dcc8cbeb3727e7d2bf3f0dd0a8581d6401
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420649"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141967849"
 ---
 # Wait-AzureRmRecoveryServicesBackupJob
 
@@ -29,10 +29,10 @@ Wait-AzureRmRecoveryServicesBackupJob [-Job] <Object> [[-Timeout] <Int64>] [-Vau
 
 ## DESCRIPTION
 Cmdlet **Wait-AzureRmRecoveryServicesBackupJob** menunggu pekerjaan Azure Backup selesai.
-Pekerjaan cadangan bisa memakan waktu lama.
-Jika Anda menjalankan pekerjaan cadangan sebagai bagian dari skrip, Anda mungkin ingin memaksa skrip untuk menunggu pekerjaan selesai sebelum melanjutkan ke tugas lain.
-Skrip yang menyertakan cmdlet ini bisa lebih sederhana daripada yang menjajaki layanan Pencadangan untuk status pekerjaan tersebut.
-Mengatur konteks vault menggunakan cmdlet Set-AzureRmRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
+Pencadangan dapat memakan waktu lama.
+Jika Anda menjalankan pekerjaan cadangan sebagai bagian dari skrip, Anda mungkin ingin memaksa skrip untuk menunggu pekerjaan selesai sebelum berlanjut ke tugas lain.
+Skrip yang menyertakan cmdlet ini bisa lebih sederhana daripada skrip yang menjajaki layanan Cadangan untuk status pekerjaan.
+Mengatur konteks kubah menggunakan cmdlet Set-AzureRmRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
@@ -59,7 +59,7 @@ Skrip ini menjajaki pekerjaan pertama yang saat ini sedang berlangsung hingga pe
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 
 ### -Job
 Menentukan pekerjaan yang harus ditunggu.
-Untuk mendapatkan objek **BackupJob,** gunakan cmdlet Get-AzureRmRecoveryServicesBackupJob.
+Untuk mendapatkan objek **BackupJob** , gunakan cmdlet Get-AzureRmRecoveryServicesBackupJob.
 
 ```yaml
 Type: System.Object
@@ -89,9 +89,9 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Timeout
-Menentukan waktu maksimum, dalam detik, cmdlet ini menunggu hingga pekerjaan selesai.
-Disarankan untuk menentukan nilai waktu habis.
+### -Waktu habis
+Menentukan waktu maksimum, dalam detik, cmdlet ini menunggu pekerjaan selesai.
+Disarankan untuk menentukan nilai batas waktu.
 
 ```yaml
 Type: System.Nullable`1[System.Int64]
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -121,12 +121,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.Object
-Parameter: Pekerjaan (ByValue)
+Parameter: Job (ByValue)
 
 ### System.String
 Parameter: VaultId (ByValue)

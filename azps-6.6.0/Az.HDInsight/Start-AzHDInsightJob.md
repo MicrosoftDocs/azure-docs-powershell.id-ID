@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Start-AzHDInsightJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Start-AzHDInsightJob.md
 ms.openlocfilehash: 7745761d77c4f5e0d48667f4ac530414c9c86359
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140310577"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141912369"
 ---
 # Start-AzHDInsightJob
 
@@ -19,7 +19,7 @@ ms.locfileid: "140310577"
 Memulai pekerjaan Azure HDInsight yang ditentukan pada kluster tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hdinsight/start-azhdinsightjob) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/start-azhdinsightjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,11 +31,11 @@ Start-AzHDInsightJob [-ClusterName] <String> [-JobDefinition] <AzureHDInsightJob
 
 ## DESCRIPTION
 Cmdlet **Start-AzHDInsightJob** memulai pekerjaan Azure HDInsight yang ditentukan pada kluster tertentu.
-Ini bisa menjadi pekerjaan MapReduce, pekerjaan Streaming MapReduce, pekerjaan Hive, atau pekerjaan Pig.
+Ini bisa berupa pekerjaan MapReduce, pekerjaan Streaming MapReduce, pekerjaan Hive, atau pekerjaan Babi.
 
 ## EXAMPLES
 
-### Contoh 1: Memulai pekerjaan pada kluster tertentu
+### Contoh 1: Memulai pekerjaan pada kluster yang ditentukan
 ```
 PS C:\># Cluster info
 PS C:\> $clusterName = "your-hadoop-001"
@@ -52,7 +52,7 @@ PS C:\> New-AzHDInsightHiveJobDefinition -StatusFolder $statusFolder `
             -ClusterCredential $clusterCreds
 ```
 
-Perintah ini memulai pekerjaan pada kluster yang bernama up-hadoop-001.
+Perintah ini memulai pekerjaan di kluster bernama your-hadoop-001.
 
 ## PARAMETERS
 
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -86,8 +86,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpCredential
-Menentukan kredensial masuk kluster (HTTP) untuk kluster tersebut.
+### -HttpCredential
+Menentukan kredensial masuk kluster (HTTP) untuk kluster.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobDefinition
-Menentukan pekerjaan untuk dimulai pada kluster Azure HDInsight.
+Menentukan pekerjaan untuk memulai di kluster Azure HDInsight.
 
 ```yaml
 Type: Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightJobDefinition
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

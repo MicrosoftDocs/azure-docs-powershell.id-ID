@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightStreamingMapReduceJobDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightStreamingMapReduceJobDefinition.md
-ms.openlocfilehash: c5daa41db9ae49cb23e93d63c53395f88b99fcdc
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 84e05e5c7514f359c36ff05da923fbc0736d551c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140372762"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141938517"
 ---
 # New-AzHDInsightStreamingMapReduceJobDefinition
 
 ## SYNOPSIS
 Membuat objek pekerjaan Streaming MapReduce.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/new-azhdinsightstreamingmapreducejobdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +31,11 @@ New-AzHDInsightStreamingMapReduceJobDefinition [-Arguments <String[]>] [-File <S
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzHDInsightStreamingMapReduceJobDefinition** menentukan objek pekerjaan Streaming MapReduce untuk digunakan dengan kluster Azure HDInsight.
+Cmdlet **New-AzHDInsightStreamingMapReduceJobDefinition** menentukan objek pekerjaan Streaming MapReduce untuk digunakan dengan cluster Azure HDInsight.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat definisi pekerjaan Streaming MapReduce
+### Contoh 1: Membuat Streaming MapReduce job definition
 ```
 PS C:\># Cluster info
 PS C:\>$clusterName = "your-hadoop-001"
@@ -54,8 +57,8 @@ Perintah ini membuat definisi pekerjaan Streaming MapReduce.
 ## PARAMETERS
 
 ### -Argumen
-Menentukan array argumen untuk pekerjaan itu.
-Argumen diberikan sebagai argumen baris perintah untuk setiap tugas.
+Menentukan array argumen untuk pekerjaan tersebut.
+Argumen dikirim sebagai argumen baris perintah ke setiap tugas.
 
 ```yaml
 Type: System.String[]
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -CommandEnvironment
-Menentukan array variabel lingkungan baris perintah yang akan ditetapkan ketika pekerjaan berjalan di node pekerja.
+Menentukan array variabel lingkungan baris perintah untuk diatur ketika pekerjaan berjalan pada node pekerja.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Defines
-Menentukan nilai konfigurasi Hadoop yang akan diatur ketika pekerjaan berjalan.
+Menentukan nilai konfigurasi Hadoop untuk diatur saat pekerjaan berjalan.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 
 ### -File
 Menentukan jalur ke file yang berisi kueri untuk dijalankan.
-Anda bisa menggunakan parameter ini sebagai ganti *parameter Query* .
+Anda bisa menggunakan parameter ini dan bukan parameter *Kueri* .
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -File
+### -Files
 Menentukan kumpulan file yang terkait dengan pekerjaan Hive.
 
 ```yaml
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -StatusFolder
-Menentukan lokasi folder yang berisi output standar dan output kesalahan untuk pekerjaan.
+Menentukan lokasi folder yang berisi output standar dan output kesalahan untuk suatu pekerjaan.
 
 ```yaml
 Type: System.String
@@ -221,11 +224,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

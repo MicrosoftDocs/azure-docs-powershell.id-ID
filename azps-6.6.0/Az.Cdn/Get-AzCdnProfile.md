@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnProfile.md
 ms.openlocfilehash: 6aaf2e911f2a9ec9137a3b8a4450a5ee58b915b5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139979295"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141914493"
 ---
 # Get-AzCdnProfile
 
 ## SYNOPSIS
-Mendapatkan profil CDN Anda.
+Mendapatkan profil CDN.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/get-azcdnprofile) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cdn/get-azcdnprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,14 +29,14 @@ Get-AzCdnProfile [-ProfileName <String>] [-ResourceGroupName <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCdnProfile** mendapatkan profil Azure Content Delivery Network (CDN) dan informasi terkait.
+**Cmdlet Get-AzCdnProfile** mendapatkan profil Content Delivery Network Azure (CDN) dan informasi terkaitnya.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana profil tersebut berada.
+Menentukan nama grup sumber daya tempat profil berada.
 
 ```yaml
 Type: System.String
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -97,7 +97,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzCdnProfile](./New-AzCdnProfile.md)
 
-[Remove-AzCdnProfile](./Remove-AzCdnProfile.md)
+[Hapus-AzCdnProfile](./Remove-AzCdnProfile.md)
 
 [Set-AzCdnProfile](./Set-AzCdnProfile.md)
 

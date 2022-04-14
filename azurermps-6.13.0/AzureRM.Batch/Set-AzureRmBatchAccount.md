@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.batch
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Set-AzureRmBatchAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Set-AzureRmBatchAccount.md
-ms.openlocfilehash: 69368211ebae4e69105e557f482664b4dcf8c5adfb8142a13298ef9a3ef52a9e
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: d67c6b32f26b1addc1cc4ae165f572a3286440cc
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418993"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141969016"
 ---
 # Set-AzureRmBatchAccount
 
 ## SYNOPSIS
-Memperbarui akun Kumpulan.
+Memperbarui akun Batch.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,11 +29,11 @@ Set-AzureRmBatchAccount [-AccountName] <String> [-Tag] <Hashtable> [-ResourceGro
 
 ## DESCRIPTION
 Cmdlet **Set-AzureRmBatchAccount** memperbarui akun Azure Batch.
-Saat ini, cmdlet ini hanya bisa memperbarui tag.
+Saat ini, cmdlet ini hanya dapat memperbarui tag.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui tag pada akun Kumpulan
+### Contoh 1: Memperbarui tag pada akun Batch
 ```
 PS C:\>Set-AzureRmBatchAccount -AccountName "cmdletexample" -Tag @{key0="value0";key1=$null;key2="value2"}
 AccountName                  : cmdletexample
@@ -55,8 +55,8 @@ Perintah ini memperbarui tag pada akun bernama pfuller.
 
 ## PARAMETERS
 
-### -Nama Akun
-Menentukan nama akun Kumpulan yang diperbarui cmdlet ini.
+### -AccountName
+Menentukan nama akun Batch yang diperbarui cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -149,8 +149,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmBatchAccount](./Get-AzureRmBatchAccount.md)
 
-[New-AzureRmBatchAccount](./New-AzureRmBatchAccount.md)
+[AzureRmBatchAccount baru](./New-AzureRmBatchAccount.md)
 
-[Remove-AzureRmBatchAccount](./Remove-AzureRmBatchAccount.md)
+[Hapus-AzureRmBatchAccount](./Remove-AzureRmBatchAccount.md)
 
-[Cmdlet Kumpulan Azure](./AzureRM.Batch.md)
+[Cmdlet Azure Batch](./AzureRM.Batch.md)

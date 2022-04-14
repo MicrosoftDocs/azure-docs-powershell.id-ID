@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Websites/Websites/help/New-AzWebAppSlot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Websites/Websites/help/New-AzWebAppSlot.md
 ms.openlocfilehash: 41851c1492c3c14e3129ba04367580b09cf3ffb5
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426941"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141962907"
 ---
 # New-AzWebAppSlot
 
@@ -28,7 +28,7 @@ New-AzWebAppSlot [-ResourceGroupName] <String> [-Name] <String> [[-Slot] <String
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzWebAppSlot** membuat Slot Azure Web App dalam grup sumber daya tertentu yang menggunakan paket dan pusat data Layanan Aplikasi yang ditentukan.
+Cmdlet **New-AzWebAppSlot** membuat Azure Web App Slot dalam grup sumber daya tertentu yang menggunakan paket App Service dan pusat data yang ditentukan.
 
 ## EXAMPLES
 
@@ -37,13 +37,13 @@ Cmdlet **New-AzWebAppSlot** membuat Slot Azure Web App dalam grup sumber daya te
 PS C:\> New-AzWebAppSlot -ResourceGroupName Default-Web-WestUS -Name "ContosoSite" -AppServicePlan "ContosoServicePlan" -Slot "Slot001"
 ```
 
-Perintah ini membuat Slot bernama Slot001 di bawah nama Web App ContosoSite yang sudah ada di grup sumber daya yang ada bernama Default-Web-WestUS di pusat data AS Barat.
-Perintah tersebut menggunakan paket Layanan Aplikasi yang sudah ada bernama ContosoServicePlan.
+Perintah ini membuat Slot bernama Slot001 di bawah nama Aplikasi Web yang sudah ada ContosoSite dalam grup sumber daya yang sudah ada bernama Default-Web-WestUS di pusat data AS Barat.
+Perintah menggunakan rencana App Service yang sudah ada bernama ContosoServicePlan.
 
 ## PARAMETERS
 
 ### -AppServicePlan
-Nama Paket Layanan Aplikasi
+Nama Rencana App Service
 
 ```yaml
 Type: String
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppSettingsOverrides
-Opsi Pengaturan Mengganti HashTable
+Aplikasi Pengaturan Menimpa Hashtable
 
 ```yaml
 Type: Hashtable
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -AseName
-Nama Lingkungan Layanan Aplikasi
+Nama Lingkungan App Service
 
 ```yaml
 Type: String
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -AseResourceGroupName
-Nama Grup Sumber Daya Lingkungan Layanan Aplikasi
+Nama Grup Sumber Daya Lingkungan App Service
 
 ```yaml
 Type: String
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -IgnoreCustomHostNames
-Abaikan Opsi Nama Host Kustom
+Opsi Abaikan Nama Host Kustom
 
 ```yaml
 Type: SwitchParameter
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceWebApp
-Objek Source WebApp
+Objek WebApp Sumber
 
 ```yaml
 Type: Site
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -223,12 +223,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Situs
-Parameter 'SourceWebApp' menerima nilai tipe 'Situs' dari saluran
+Parameter 'SourceWebApp' menerima nilai tipe 'Situs' dari pipeline
 
 ## OUTPUTS
 
@@ -236,17 +236,17 @@ Parameter 'SourceWebApp' menerima nilai tipe 'Situs' dari saluran
 
 ## RELATED LINKS
 
-[Get-AzWebAppslot](./Get-AzWebAppSlot.md)
+[Get-AzWebAppSlot](./Get-AzWebAppSlot.md)
 
-[Remove-AzWebAppslot](./Remove-AzWebAppSlot.md)
+[Hapus-AzWebAppSlot](./Remove-AzWebAppSlot.md)
 
-[Restart-AzWebAppslot](./Restart-AzWebAppSlot.md)
+[Mulai ulang-AzWebAppSlot](./Restart-AzWebAppSlot.md)
 
-[Set-AzWebAppslot](./Set-AzWebAppSlot.md)
+[Set-AzWebAppSlot](./Set-AzWebAppSlot.md)
 
-[Start-AzWebAppslot](./Start-AzWebAppSlot.md)
+[Start-AzWebAppSlot](./Start-AzWebAppSlot.md)
 
-[Stop-AzWebAppslot](./Stop-AzWebAppSlot.md)
+[Stop-AzWebAppSlot](./Stop-AzWebAppSlot.md)
 
 [Get-AzAppServicePlan](./Get-AzAppServicePlan.md)
 

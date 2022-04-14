@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/New-AzADAppCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/New-AzADAppCredential.md
 ms.openlocfilehash: c33bf796336bb039ae6e68ab24769e1375cc1a4e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426171"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141915807"
 ---
 # New-AzADAppCredential
 
@@ -70,8 +70,8 @@ New-AzADAppCredential -ApplicationObject <PSADApplication> -Password <SecureStri
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzADAppCredential cmdlet bisa digunakan untuk menambahkan kredensial baru atau untuk membuat kredensial untuk aplikasi.
-Aplikasi diidentifikasi dengan menyediakan id objek aplikasi atau Id aplikasi.
+Cmdlet New-AzADAppCredential dapat digunakan untuk menambahkan kredensial baru atau untuk menggulung kredensial untuk aplikasi.
+Aplikasi diidentifikasi dengan memasok id objek aplikasi atau Id aplikasi.
 
 ## EXAMPLES
 
@@ -82,7 +82,7 @@ PS C:\> $SecureStringPassword = ConvertTo-SecureString -String "password" -AsPla
 PS C:\> New-AzADAppCredential -ObjectId 1f89cf81-0146-4f4e-beae-2007d0668416 -Password $SecureStringPassword
 ```
 
-Kredensial kata sandi baru ditambahkan ke aplikasi yang sudah ada dengan id objek '1f89cf81-0146-4f4e-beae-2007d0668416'.
+Kredensial kata sandi baru ditambahkan ke aplikasiplikasi yang sudah ada dengan id objek '1f89cf81-0146-4f4e-beae-2007d0668416'.
 
 ### Contoh 2 - Membuat kredensial aplikasi baru menggunakan sertifikat
 
@@ -94,16 +94,16 @@ PS C:\> $credValue = [System.Convert]::ToBase64String($binCert)
 PS C:\> New-AzADAppCredential -ApplicationId 4589cd6b-3d79-4bb4-93b8-a0b99f3bfc58 -CertValue $credValue -StartDate $cer.GetEffectiveDateString() -EndDate $cer.GetExpirationDateString()
 ```
 
-Sertifikat X509 publik yang dikodekan base64 yang disediakan ("myapp.cer") ditambahkan ke aplikasi yang sudah ada dengan id aplikasi '4589cd6b-3d79-4bb4-93b8-a0b99f3bfc58'.
+Sertifikat X509 publik berkode base64 yang disertakan ("myapp.cer") ditambahkan ke aplikasi yang sudah ada dengan id aplikasi '4589cd6b-3d79-4bb4-93b8-a0b99f3bfc58'.
 
-### Contoh 3 - Buat kredensial aplikasi baru menggunakan pemipaan
+### Contoh 3 - Membuat kredensial aplikasi baru menggunakan pipa
 
 ```
 PS C:\> $SecureStringPassword = ConvertTo-SecureString -String "password" -AsPlainText -Force
 PS C:\> Get-AzADApplication -ObjectId 1f89cf81-0146-4f4e-beae-2007d0668416 | New-AzADAppCredential -Password $SecureStringPassword
 ```
 
-Dapatkan aplikasi dengan id objek '1f89cf81-0146-4f4e-beae-2007d0668416' dan pipes yang ke New-AzADAppCredential untuk membuat kredensial aplikasi baru untuk aplikasi tersebut dengan kata sandi yang diberikan.
+Mendapatkan aplikasi dengan id objek '1f89cf81-0146-4f4e-beae-2007d0668416' dan pipa yang ke New-AzADAppCredential untuk membuat kredensial aplikasi baru untuk aplikasi tersebut dengan kata sandi tertentu.
 
 ## PARAMETERS
 
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationObject
-Objek aplikasi yang akan ditambahkan kredensial.
+Objek aplikasi untuk menambahkan kredensial.
 
 ```yaml
 Type: Microsoft.Azure.Graph.RBAC.Version1_6.ActiveDirectory.PSADApplication
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -CertValue
-Nilai tipe kredensial "asimetris". Kode ini mewakili sertifikat berkode basis 64.
+Nilai tipe kredensial "asimetris". Ini mewakili sertifikat dasar 64 yang dikodekan.
 
 ```yaml
 Type: System.String
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-Tanggal berakhir efektif penggunaan kredensial. Nilai tanggal akhir default adalah satu tahun dari hari ini.  Untuk kredensial tipe "asimetris", kredensial ini harus diatur ke aktif atau sebelum tanggal sertifikat X509 valid.
+Tanggal berakhir efektif dari penggunaan kredensial. Nilai tanggal akhir default adalah satu tahun dari hari ini.  Untuk kredensial tipe "asimetris", kredensial ini harus diatur ke aktif atau sebelum tanggal sertifikat X509 valid.
 
 ```yaml
 Type: System.DateTime
@@ -267,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -283,7 +283,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -298,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -306,7 +306,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.FOLDApplication
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADAplikasi
 Parameter: ApplicationObject (ByValue)
 
 ### System.Security.SecureString
@@ -315,7 +315,7 @@ Parameter: ApplicationObject (ByValue)
 
 ## OUTPUTS
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.CREDCredential
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADCredential
 
 ## CATATAN
 
@@ -325,5 +325,5 @@ Parameter: ApplicationObject (ByValue)
 
 [Remove-AzADAppCredential](./Remove-AzADAppCredential.md)
 
-[Get-AzADApplication](./Get-AzADApplication.md)
+[Get-AzADAplikasi](./Get-AzADApplication.md)
 
