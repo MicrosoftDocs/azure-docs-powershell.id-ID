@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.redis
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RedisCache/Commands.RedisCache/help/Get-AzureRmRedisCacheLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RedisCache/Commands.RedisCache/help/Get-AzureRmRedisCacheLink.md
-ms.openlocfilehash: 7c4798865365b09a63d5d445d356e00f9c3312da3dba96417db1aae6b5228deb
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: a45407fc7f25e2c7bee5c591ab3110b0620a2c0f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419247"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141775732"
 ---
 # Get-AzureRmRedisCacheLink
 
 ## SYNOPSIS
-Dapatkan link replikasi geo untuk Redis Cache.
+Dapatkan tautan replikasi geografis untuk Redis Cache.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -38,18 +38,18 @@ Get-AzureRmRedisCacheLink -PrimaryServerName <String> -SecondaryServerName <Stri
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### AllLinksForSeccacheryCache
+### AllLinksForSecondaryCache
 ```
 Get-AzureRmRedisCacheLink -SecondaryServerName <String> [-DefaultProfile <IAzureContextContainer>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Ada empat cara berbeda untuk mendapatkan detail link replikasi geo. Sediakan parameter Nama atau PrimaryServerName dan/atau SecondaryServerName. Name is given then all link where cache exists will be returned. Jika hanya PrimaryServerName yang diberikan, semua tautan yang cachenya akan dikembalikan adalah cache utama. Jika hanya NamaServer Sekunder diberikan, semua tautan tempat singgahan sekunder akan dikembalikan. Jika PrimaryServerName dan SecondaryServerName diberikan, tautan khusus dengan peran yang benar akan dikembalikan. 
+Ada empat cara berbeda untuk mendapatkan detail tautan geo-replikasi. Berikan nama parameter atau PrimaryServerName dan/atau SecondaryServerName. Nama diberikan lalu semua tautan tempat cache ada akan dikembalikan. Jika hanya PrimaryServerName yang diberikan, maka semua link di mana cache utama akan dikembalikan. Jika hanya SecondaryServerName yang diberikan, maka semua link di mana cache adalah sekunder akan dikembalikan. Jika PrimaryServerName dan SecondaryServerName keduanya diberikan, tautan tertentu dengan peran yang benar akan dikembalikan. 
 
 ## EXAMPLES
 
-### Contoh 1: Get using parameter set AllLinksForCache
+### Contoh 1: Menggunakan kumpulan parameter AllLinksForCache
 ```
 PS C:\>Get-AzureRmRedisCacheLink -Name "mycache1"
 
@@ -58,9 +58,9 @@ PS C:\>Get-AzureRmRedisCacheLink -Name "mycache1"
         ProvisioningState   : Succeeded
 ```
 
-Perintah ini mendapatkan semua tautan replikasi geo untuk Cache Redis yang dinamai mycache1.
+Perintah ini mendapatkan semua tautan geo-replikasi untuk Redis Cache bernama mycache1.
 
-### Contoh 2: Get using parameter set AllLinksForPrimaryCache
+### Contoh 2: Menggunakan kumpulan parameter AllLinksForPrimaryCache
 ```
 PS C:\>Get-AzureRmRedisCacheLink -PrimaryServerName "mycache1"
 
@@ -69,9 +69,9 @@ PS C:\>Get-AzureRmRedisCacheLink -PrimaryServerName "mycache1"
         ProvisioningState   : Succeeded
 ```
 
-Perintah ini mendapatkan tautan replikasi geo di mana Cache Redis bernama mycache1 adalah yang utama.
+Perintah ini mendapatkan tautan geo-replikasi di mana Redis Cache bernama mycache1 adalah yang utama.
 
-### Contoh 3: Get using parameter set AllLinksForSeccacheryCache
+### Contoh 3: Menggunakan kumpulan parameter AllLinksForSecondaryCache
 ```
 PS C:\>Get-AzureRmRedisCacheLink -SecondaryServerName "mycache2"
 
@@ -80,9 +80,9 @@ PS C:\>Get-AzureRmRedisCacheLink -SecondaryServerName "mycache2"
         ProvisioningState   : Succeeded
 ```
 
-Perintah ini mendapatkan tautan replikasi geo, tempat Cache Redis bernama mycache2 sekunder.
+Perintah ini mendapatkan tautan geo-replikasi di mana Redis Cache bernama mycache2 adalah sekunder.
 
-### Contoh 4: Get using parameter set SingleLink
+### Contoh 4: Menggunakan kumpulan parameter SingleLink
 ```
 PS C:\>Get-AzureRmRedisCacheLink -PrimaryServerName "mycache1" -SecondaryServerName "mycache2"
 
@@ -91,12 +91,12 @@ PS C:\>Get-AzureRmRedisCacheLink -PrimaryServerName "mycache1" -SecondaryServerN
         ProvisioningState   : Succeeded
 ```
 
-Perintah ini memiliki satu tautan replikasi geo, tempat Singgahan Redis yang disebut mycache1 sebagai utama dan Cache Redis yang bernama mycache2 sekunder.
+Perintah ini mendapatkan satu link geo-replikasi di mana Redis Cache bernama mycache1 adalah utama dan Redis Cache bernama mycache2 adalah sekunder.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama cache akan redis.
+Nama singgahan redis.
 
 ```yaml
 Type: System.String
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryServerName
-Nama tautan dalam cache utama akan disimpan.
+Nama cache redis utama dalam tautan.
 
 ```yaml
 Type: System.String
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecondaryServerName
-Nama cache dalam daftar merah sekunder ada di tautan.
+Nama cache redis sekunder dalam tautan.
 
 ```yaml
 Type: System.String
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -170,14 +170,14 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmRedisCacheLink](./New-AzureRmRedisCacheLink.md)
+[AzureRmRedisCacheLink Baru](./New-AzureRmRedisCacheLink.md)
 
-[Remove-AzureRmRedisCacheLink](./Remove-AzureRmRedisCacheLink.md)
+[Hapus-AzureRmRedisCacheLink](./Remove-AzureRmRedisCacheLink.md)
 
 [Get-AzureRmRedisCache](./Get-AzureRmRedisCache.md)
 
-[New-AzureRmRedisCache](./New-AzureRmRedisCache.md)
+[AzureRmRedisCache Baru](./New-AzureRmRedisCache.md)
 
-[Remove-AzureRmRedisCache](./Remove-AzureRmRedisCache.md)
+[Hapus-AzureRmRedisCache](./Remove-AzureRmRedisCache.md)
 
 [Set-AzureRmRedisCache](./Set-AzureRmRedisCache.md)

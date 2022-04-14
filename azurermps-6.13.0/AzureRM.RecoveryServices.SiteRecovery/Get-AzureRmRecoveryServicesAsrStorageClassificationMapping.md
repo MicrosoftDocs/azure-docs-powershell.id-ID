@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Get-AzureRmRecoveryServicesAsrStorageClassificationMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Get-AzureRmRecoveryServicesAsrStorageClassificationMapping.md
 ms.openlocfilehash: ec5ba90fd0c3dbdbf96ddf2370948de090306611
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428344"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141882177"
 ---
 # Get-AzureRmRecoveryServicesAsrStorageClassificationMapping
 
@@ -44,7 +44,7 @@ Cmdlet **Get-AzureRmRecoveryServicesAsrStorageClassificationMapping** mendapatka
 PS C:\> $StorageClassificationMappings = Get-AzureRmRecoveryServicesAsrStorageClassificationMapping -StorageClassification $StorageClassification
 ```
 
-List all storage classification mappings corresponding to the specified storage classification.
+Cantumkan semua pemetaan klasifikasi penyimpanan yang terkait dengan klasifikasi penyimpanan yang ditentukan.
 
 ## PARAMETERS
 
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama pemetaan klasifikasi penyimpanan untuk mendapatkannya.
+Menentukan nama pemetaan klasifikasi penyimpanan untuk didapatkan.
 
 ```yaml
 Type: System.String
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageClassification
-Menentukan objek klasifikasi penyimpanan ASR. Cmdlet mendapatkan pemetaan klasifikasi penyimpanan ASR yang terkait dengan klasifikasi penyimpanan tertentu 
+Menentukan objek klasifikasi penyimpanan ASR. Cmdlet mendapatkan pemetaan klasifikasi penyimpanan ASR yang terkait dengan klasifikasi penyimpanan yang ditentukan 
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRStorageClassification
@@ -95,11 +95,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzP2sVpnGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzP2sVpnGateway.md
 ms.openlocfilehash: 2f42227ac314f41e4e416e12b450a088a4460f27
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140282479"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141863582"
 ---
 # Get-AzP2sVpnGateway
 
@@ -18,7 +18,7 @@ ms.locfileid: "140282479"
 Mendapatkan P2SVpnGateway yang sudah ada di bawah VirtualHub.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azp2svpngateway) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azp2svpngateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -86,7 +86,7 @@ P2SConnectionConfigurations    : [
                                  ]
 ```
 
-Cmdlet **Get-AzP2sVpnGateway** memungkinkan Anda mendapatkan P2SVpnGateway yang sudah ada di bawah VirtualHub yang digunakan untuk konektivitas situs Point ke.
+Cmdlet **Get-AzP2sVpnGateway** memungkinkan Anda mendapatkan P2SVpnGateway yang sudah ada di bawah VirtualHub yang digunakan untuk konektivitas situs Point to.
 
 ## PARAMETERS
 
@@ -136,11 +136,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

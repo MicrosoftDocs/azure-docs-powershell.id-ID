@@ -4,11 +4,11 @@ Module Name: Azs.Compute.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.compute.admin/get-azsdisk
 schema: 2.0.0
 ms.openlocfilehash: 9c3c87e7c62764cff0a7d6b9d65a3dfe3df31990
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "132414625"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141813701"
 ---
 # Get-AzsDisk
 
@@ -24,7 +24,7 @@ Get-AzsDisk [-Location <String>] [-SubscriptionId <String[]>] [-Count <Int32>] [
  [-VolumeLabel <String>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsDisk -Name <String> [-Location <String>] [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>]
  [<CommonParameters>]
@@ -68,9 +68,9 @@ UserResourceId  : /subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGr
                   e/Disks/TEST_OsDisk_1_426b89458a2442adacdcc26f16202489
 ```
 
-Tentukan disknya untuk `Name` mengambilnya.
+Tentukan diska berdasarkan `Name` diska untuk mengambilnya.
 
-### Contoh 3: Mendapatkan jumlah Disk yang ditentukan
+### Contoh 3: Dapatkan Jumlah Disk yang Ditentukan
 ```powershell
 PS C:\>  Get-AzsDisk -Count 3
 
@@ -172,12 +172,12 @@ Type            : Microsoft.Compute.Admin/locations/disks
 UserResourceId  : /subscriptions/7829c784-cd3f-464a-b195-3be83c964c9c/resourceGroups/RBACTEST/providers/Microsoft.Compute/Disks/testdd
 ```
 
-Menggunakan parameter `ScaleUnit` atau `VolumeLabel` untuk mencantumkan semua disk di lokasi tertentu
+`ScaleUnit` Gunakan parameter atau `VolumeLabel` untuk mencantumkan semua disk di lokasi tertentu
 
 ## PARAMETERS
 
 ### -Count
-Jumlah maksimum disk untuk dikembalikan.
+Jumlah maksimum diska yang akan dikembalikan.
 
 ```yaml
 Type: System.Int32
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.IComputeAdminIdentity
@@ -241,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Disk guid sebagai identitas.
+Disk memandu sebagai identitas.
 
 ```yaml
 Type: System.String
@@ -257,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScaleUnit
-Unit skala sumber daya yang dimiliki.
+Unit skala tempat sumber daya berada.
 
 ```yaml
 Type: System.String
@@ -273,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -SharePath
-Berbagi sumber daya yang dimiliki.
+Berbagi tempat sumber daya berada.
 
 ```yaml
 Type: System.String
@@ -289,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### -Mulai
-The start index of disks in query.
+Indeks mulai disk dalam kueri.
 
 ```yaml
 Type: System.Int32
@@ -321,8 +321,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -338,7 +338,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserSubscriptionId
-Id Langganan Pengguna yang menjadi sumber daya.
+Id Langganan Pengguna tempat sumber daya berada.
 
 ```yaml
 Type: System.String
@@ -354,7 +354,7 @@ Accept wildcard characters: False
 ```
 
 ### -VolumeLabel
-Label volume volume sumber daya yang dimiliki.
+Label volume volume tempat sumber daya berada.
 
 ```yaml
 Type: System.String
@@ -370,7 +370,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -384,19 +384,19 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 INPUTOBJECT <IComputeAdminIdentity>: Parameter Identitas
-  - `[DiskId <String>]`: Disk guid sebagai identitas.
+  - `[DiskId <String>]`: Disk memandu sebagai identitas.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Lokasi sumber daya.
-  - `[MigrationId <String>]`: Nama guid pekerjaan migrasi.
+  - `[MigrationId <String>]`: Nama panduan pekerjaan migrasi.
   - `[Offer <String>]`: Nama penawaran.
   - `[Publisher <String>]`: Nama penerbit.
   - `[QuotaName <String>]`: Nama kuota.
   - `[Sku <String>]`: Nama SKU.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
-  - `[Type <String>]`: Tipe ekstensi.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+  - `[Type <String>]`: Jenis ekstensi.
   - `[Version <String>]`: Versi sumber daya.
 
 ## RELATED LINKS

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryWebhook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryWebhook.md
-ms.openlocfilehash: f9acb572c89091a05863c16c35d1c815fc8317d2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5c039dcc465b9ecfa3a760b715cd889f12e20c9a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140188099"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141897435"
 ---
 # Get-AzContainerRegistryWebhook
 
 ## SYNOPSIS
-Mendapatkan container registry webhook.
+Mendapatkan webhook registri kontainer.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/get-azcontainerregistrywebhook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,11 +53,11 @@ Get-AzContainerRegistryWebhook [-IncludeConfiguration] -ResourceId <String>
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzContainerRegistryWebhook mendapatkan webhook tertentu dari registri wadah atau semua webhook registri wadah.
+Cmdlet Get-AzContainerRegistryWebhook mendapatkan webhook tertentu dari registri kontainer atau semua webhook dari registri kontainer.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan webhook tertentu dari container registry
+### Contoh 1: Mendapatkan webhook tertentu dari registri kontainer
 ```powershell
 PS C:\>Get-AzContainerRegistryWebhook -ResourceGroupName "MyResourceGroup" -RegistryName "MyRegistry" -Name "webhook001"
 
@@ -64,9 +67,9 @@ Name            Location   Status     Scope           Actions         Provisioni
 webhook001      westus     enabled                    {push, delete}  Succeeded
 ```
 
-Mendapatkan webhook tertentu dari registri wadah
+Mendapatkan webhook tertentu dari registri kontainer
 
-### Contoh 2: Dapatkan semua webhooks dari registri wadah
+### Contoh 2: Dapatkan semua webhook dari registri kontainer
 ```powershell
 PS C:\>Get-AzContainerRegistryWebhook -ResourceGroupName "MyResourceGroup" -RegistryName "MyRegistry"
 
@@ -78,9 +81,9 @@ webhook05       westus     disabled                   {push, delete}  Succeeded
 wh003           westus     enabled                    delete          Succeeded
 ```
 
-Mendapatkan semua webhooks registri wadah
+Dapatkan semua webhook dari registri kontainer
 
-### Contoh 3: Mendapatkan webhook tertentu dari registri wadah dengan detail konfigurasi
+### Contoh 3: Dapatkan webhook tertentu dari registri kontainer dengan detail konfigurasi
 ```powershell
 PS C:\>Get-AzContainerRegistryWebhook -ResourceGroupName "MyResourceGroup" -RegistryName "MyRegistry" -Name "webhook001" -IncludeConfiguration
 
@@ -90,12 +93,12 @@ Name            Location   Status     Scope           Actions         Provisioni
 webhook001      westus     enabled                    {push, delete}  Succeeded  http://www.test.com/
 ```
 
-Mendapatkan webhook tertentu dari registri wadah dengan detail konfigurasi
+Dapatkan webhook tertentu dari registri kontainer dengan detail konfigurasi
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -139,8 +142,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Registry
-Container Registry Object.
+### -Registri
+Objek Registri Kontainer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ContainerRegistry.PSContainerRegistry
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistryName
-Container Registry Name.
+Nama Registri Kontainer.
 
 ```yaml
 Type: System.String
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-The container registry Webhook resource id
+Id sumber daya webhook registri kontainer
 
 ```yaml
 Type: System.String
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -222,4 +225,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Remove-AzContainerRegistryWebhook](Remove-AzContainerRegistryWebhook.md)
 
-[Test-AzContainerRegistryWebhook](Test-AzContainerRegistryWebhook.md)
+[Uji-AzContainerRegistryWebhook](Test-AzContainerRegistryWebhook.md)

@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.recov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Update-AzureRmRecoveryServicesAsrMobilityService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Update-AzureRmRecoveryServicesAsrMobilityService.md
-ms.openlocfilehash: aafec88615007eb4e7f53c1a4049b583767f8a1970e07f6ce311d5dc80e50310
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 539a0471ae27adc80b67360fc47955fdb4b50bb1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140858222"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141882046"
 ---
 # Update-AzureRmRecoveryServicesAsrMobilityService
 
 ## SYNOPSIS
-Agen layanan mobilitas memperbarui pada mesin yang diproteksi.
+Mendorong pembaruan agen layanan mobilitas ke mesin yang dilindungi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ Update-AzureRmRecoveryServicesAsrMobilityService [-Account <ASRRunAsAccount>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzureRmRecoveryServicesAsrMobilityService** berusaha mendorong pembaruan agen layanan mobilitas pada mesin yang diproteksi(jika pembaruan tersedia.)
+Cmdlet **Update-AzureRmRecoveryServicesAsrMobilityService** berusaha mendorong pembaruan agen layanan mobilitas ke mesin yang dilindungi(jika pembaruan tersedia.)
 
 ## EXAMPLES
 
@@ -37,12 +37,12 @@ Cmdlet **Update-AzureRmRecoveryServicesAsrMobilityService** berusaha mendorong p
 PS C:\> Update-AzureRmRecoveryServicesAsrMobilityService -ReplicationProtectedItem $rpi -Account $fabric.fabricSpecificDetails.RunAsAccounts[0]
 ```
 
-Pekerjaan untuk melacak Agen Layanan Moblility Item Terproteksi Replikasi Pembaruan.
+Tugas untuk melacak Update Replication Protected Item's Moblility Service Agent.
 
 ## PARAMETERS
 
 ### -Akun
-Id berjalan sebagai akun yang akan digunakan untuk mendorong pembaruan. Must be one from the list of run as accounts in the ASR fabric corresponding to machine being updated.
+JALANKAN sebagai ID akun yang akan digunakan untuk mendorong pembaruan. Harus salah satu dari daftar jalankan sebagai akun dalam kain ASR yang terkait dengan mesin yang sedang diperbarui.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRunAsAccount
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicationProtectedItem
-Item replikasi Pemulihan Situs Azure yang diproteksi akan diperbarui.
+Azure Site Recovery item yang dilindungi replikasi untuk diperbarui.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

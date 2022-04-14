@@ -7,20 +7,20 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesVaultContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesVaultContext.md
 ms.openlocfilehash: b4998853fe1499c3fc6d0bd57aaa28f57d493aa1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140306113"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141861170"
 ---
 # Set-AzRecoveryServicesVaultContext
 
 ## SYNOPSIS
 
-Mengatur konteks vault.
+Mengatur konteks kubah.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/set-azrecoveryservicesvaultcontext) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/set-azrecoveryservicesvaultcontext) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,9 +31,9 @@ Set-AzRecoveryServicesVaultContext -Vault <ARSVault> [-DefaultProfile <IAzureCon
 
 ## DESCRIPTION
 
-Cmdlet **Set-AzRecoveryServicesVaultContext** mengatur konteks vault untuk layanan Pemulihan Situs Azure.
+Cmdlet **Set-AzRecoveryServicesVaultContext** mengatur konteks kubah untuk layanan Azure Site Recovery.
 
-Peringatan: Cmdlet ini akan tidak berlaku lagi dalam rilis perubahan terbaru yang akan datang. Tidak ada pengganti untuk produk tersebut. Silakan gunakan parameter -VaultId dalam semua perintah Layanan Pemulihan selanjutnya.
+Peringatan: Cmdlet ini ditolak dalam rilis perubahan yang akan datang. Tidak akan ada penggantian untuk itu. Silakan gunakan parameter -VaultId di semua perintah Layanan Pemulihan ke depannya.
 
 ## EXAMPLES
 
@@ -44,13 +44,13 @@ PS C:\> $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" 
 PS C:\> Set-AzRecoveryServicesVaultContext -Vault $vault
 ```
 
-Mengatur konteks vault.
+Mengatur konteks kubah.
 
 ## PARAMETERS
 
 ### -DefaultProfile
 
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -66,8 +66,8 @@ Accept wildcard characters: False
 
 ### -Vault
 
-Menentukan nama vault.
-Vault harus merupakan objek **AzureRmRecoveryServicesVault** .
+Menentukan nama kubah.
+Kubah harus berupa objek **AzureRmRecoveryServicesVault** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.ARSVault
@@ -82,11 +82,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.RecoveryServices.VAULT
+### Microsoft.Azure.Commands.RecoveryServices.ARSVault
 
 ## OUTPUTS
 

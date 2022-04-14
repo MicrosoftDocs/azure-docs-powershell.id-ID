@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallDisabledRuleGroupConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallDisabledRuleGroupConfig.md
 ms.openlocfilehash: c07d6b34ad19aefd2e6d47b2d305d8b46e080c9a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140330783"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141863240"
 ---
 # New-AzApplicationGatewayFirewallDisabledRuleGroupConfig
 
 ## SYNOPSIS
-Membuat konfigurasi grup aturan dinonaktifkan yang baru.
+Membuat konfigurasi grup aturan baru yang dinonaktifkan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationgatewayfirewalldisabledrulegroupconfig) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayfirewalldisabledrulegroupconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-AzApplicationGatewayFirewallDisabledRuleGroupConfig -RuleGroupName <String> 
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApplicationGatewayFirewallDisabledRuleGroupConfig** membuat konfigurasi grup aturan dinonaktifkan baru.
+Cmdlet **New-AzApplicationGatewayFirewallDisabledRuleGroupConfig** membuat konfigurasi grup aturan baru yang dinonaktifkan.
 
 ## EXAMPLES
 
@@ -37,12 +37,12 @@ Cmdlet **New-AzApplicationGatewayFirewallDisabledRuleGroupConfig** membuat konfi
 PS C:\> $disabledRuleGroup1 = New-AzApplicationGatewayFirewallDisabledRuleGroupConfig -RuleGroupName "REQUEST-942-APPLICATION-ATTACK-SQLI" -Rules 942130,942140
 ```
 
-Perintah membuat konfigurasi grup aturan dinonaktifkan baru untuk grup aturan bernama "REQUEST-942-APPLICATION-ATTACK-SQLI" dengan aturan 942130 dan aturan 942140 yang dinonaktifkan. Konfigurasi grup aturan dinonaktifkan yang baru disimpan di $disabledRuleGroup 1.
+Perintah membuat konfigurasi grup aturan baru yang dinonaktifkan untuk grup aturan bernama "REQUEST-942-APPLICATION-ATTACK-SQLI" dengan aturan 942130 dan aturan 942140 dinonaktifkan. Konfigurasi grup aturan baru yang dinonaktifkan disimpan di $disabledRuleGroup 1.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -88,11 +88,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerInstanceEnvironmentVariableObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerInstanceEnvironmentVariableObject.md
 ms.openlocfilehash: d8d5e47b79099c175e4f838691b0cc56b5b0a999
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140334833"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141806468"
 ---
 # New-AzContainerInstanceEnvironmentVariableObject
 
@@ -18,7 +18,7 @@ ms.locfileid: "140334833"
 Membuat objek dalam memori untuk EnvironmentVariable
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerinstance/new-azcontainerinstanceenvironmentvariableobject) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.containerinstance/new-azcontainerinstanceenvironmentvariableobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Membuat objek dalam memori untuk EnvironmentVariable
 
 ## EXAMPLES
 
-### Contoh 1: Membuat variabel lingkungan dalam contoh wadah
+### Contoh 1: Membuat variabel lingkungan dalam contoh kontainer
 ```powershell
 PS C:\> {{ Add code here }}
 
@@ -43,9 +43,9 @@ Name SecureValue Value
 env1             value1
 ```
 
-Perintah ini membuat variabel lingkungan dalam contoh wadah.
+Perintah ini membuat variabel lingkungan di dalam instance kontainer.
 
-### Contoh 2: Membuat variabel lingkungan aman dalam contoh wadah
+### Contoh 2: Membuat variabel lingkungan yang aman dalam instans kontainer
 ```powershell
 PS C:\> New-AzContainerInstanceEnvironmentVariableObject -Name "env2" -SecureValue (ConvertTo-SecureString -String "******" -AsPlainText -Force)
 
@@ -54,7 +54,7 @@ Name SecureValue Value
 env2 ******
 ```
 
-Perintah ini membuat variabel lingkungan aman dalam contoh wadah
+Perintah ini membuat variabel lingkungan yang aman dalam contoh kontainer
 
 ## PARAMETERS
 
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

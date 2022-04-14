@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Get-AzActionRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Get-AzActionRule.md
 ms.openlocfilehash: 2819794edd474137a233b9bb4c3c1dd3a85e6274
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140314531"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141809511"
 ---
 # Get-AzActionRule
 
 ## SYNOPSIS
-Mendapatkan Informasi Aturan Tindakan
+Dapatkan Informasi Aturan Tindakan
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.alertsmanagement/get-azactionrule) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.alertsmanagement/get-azactionrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -59,14 +59,14 @@ Get-AzActionRule [-Name <String>] [-ResourceGroupName <String>] [-TargetResource
 PS C:\> Get-AzActionRule -ResourceGroupName "test-rg" -Severity "Sev2" -MonitorService "Platform"
 ```
 
-Membuat daftar semua aturan tindakan yang dikonfigurasi dalam uji grup sumber daya yang difilter di Sev2 keparahan dan Layanan Monitor Platform. Gunakan Format-List untuk mendapatkan detail setiap aturan tindakan dalam daftar.
+Cantumkan semua aturan tindakan yang dikonfigurasi dalam uji-rg grup sumber daya yang difilter pada Tingkat Keparahan Sev2 dan Layanan Monitor Platform. Gunakan Format-List untuk mendapatkan detail setiap aturan tindakan dalam daftar.
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzActionRule -ResourceGroupName "test-rg" -Name "Test-Action-Rule" | Format-List
 ```
 
-Dapatkan aturan tindakan dengan nama Test-Action-Rule dalam grup sumber daya test-rg.
+Dapatkan aturan tindakan dengan nama Uji-Tindakan-Aturan dalam grup sumber daya uji-rg.
 
 ## PARAMETERS
 
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -AlertRuleId
-Filter pada ID Aturan Pemberitahuan
+Filter pada Id Aturan Peringatan
 
 ```yaml
 Type: System.String
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImpactedScope
-Filter pada Lingkup terdampak
+Filter pada lingkup yang terpengaruh
 
 ```yaml
 Type: System.String
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonitorService
-Filter berdasarkan Layanan Seniter
+Filter pada Layanan Moniter
 
 ```yaml
 Type: System.String
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama Grup Sumber Daya di mana aturan tindakan berada.
+Nama Grup Sumber Daya tempat aturan tindakan berada.
 
 ```yaml
 Type: System.String
@@ -230,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### -Keparahan
-Filter berdasarkan Tingkat keparahan pemberitahuan
+Filter pada Tingkat Keparahan pemberitahuan
 
 ```yaml
 Type: System.String
@@ -245,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetResourceGroup
-Filter pada Nama grup sumber daya dari sumber daya pemberitahuan target.
+Filter pada Nama grup Sumber Daya dari sumber daya target pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -260,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetResourceId
-Filter pada Id Sumber Daya dari sumber daya pemberitahuan target.
+Filter pada Id Sumber Daya sumber daya sumber daya pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -275,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetResourceType
-Filter pada Tipe sumber daya dari sumber daya pemberitahuan target.
+Filter pada Tipe sumber daya sumber daya target pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -290,11 +290,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

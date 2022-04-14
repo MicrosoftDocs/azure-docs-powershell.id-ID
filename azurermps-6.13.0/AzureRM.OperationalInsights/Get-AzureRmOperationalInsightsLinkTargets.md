@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/OperationalInsights/Commands.OperationalInsights/help/Get-AzureRmOperationalInsightsLinkTargets.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/OperationalInsights/Commands.OperationalInsights/help/Get-AzureRmOperationalInsightsLinkTargets.md
 ms.openlocfilehash: a1040e5fe810a5dfbbb2e41daf7e8933102e3799
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424508"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141819359"
 ---
 # Get-AzureRmOperationalInsightsLinkTargets
 
 ## SYNOPSIS
-Mendapatkan akun yang tidak terkait dengan langganan.
+Dapatkan akun yang tidak terkait dengan langganan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,11 +28,11 @@ Get-AzureRmOperationalInsightsLinkTargets [-DefaultProfile <IAzureContextContain
 
 ## DESCRIPTION
 Cmdlet **Get-AzureRmOperationalInsightsLinkTargets** mencantumkan akun yang sudah ada yang tidak terkait dengan langganan Azure.
-Untuk menautkan ruang kerja baru ke akun yang sudah ada, gunakan ID pelanggan yang dikembalikan oleh operasi ini dalam properti ID pelanggan dari ruang kerja baru.
+Untuk menautkan ruang kerja baru ke akun yang sudah ada, gunakan ID pelanggan yang dikembalikan oleh operasi ini di properti ID pelanggan ruang kerja baru.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan akun yang tidak ditautkan
+### Contoh 1: Dapatkan akun yang tidak ditautkan
 ```
 PS C:\>Get-AzureRmOperationalInsightsLinkTargets
 ```
@@ -42,7 +42,7 @@ Perintah ini mendapatkan akun yang tidak ditautkan yang dimiliki oleh ID penelep
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -57,11 +57,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -71,6 +71,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Cmdlet Azure Operational Insights](./AzureRM.OperationalInsights.md)
+[Cmdlet Insights Operasional Azure](./AzureRM.OperationalInsights.md)
 
 

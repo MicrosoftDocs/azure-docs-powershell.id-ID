@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlDatabaseBackupLongTermRetentionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlDatabaseBackupLongTermRetentionPolicy.md
 ms.openlocfilehash: dcc8d99cdf179ed3e069ef82fe758c4c699054a9
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420307"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141880718"
 ---
 # Get-AzureRmSqlDatabaseBackupLongTermRetentionPolicy
 
@@ -29,11 +29,11 @@ Get-AzureRmSqlDatabaseBackupLongTermRetentionPolicy [-Current] [-ServerName] <St
 
 ## DESCRIPTION
 Cmdlet **Get-AzureRmSqlDatabaseBackupLongTermRetentionPolicy** mendapatkan kebijakan penyimpanan jangka panjang yang terdaftar pada database ini.
-Kebijakan tersebut adalah sumber daya Azure Backup yang digunakan untuk menentukan kebijakan penyimpanan cadangan.
+Kebijakan ini merupakan sumber daya Azure Backup yang digunakan untuk menentukan kebijakan penyimpanan cadangan.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan versi saat ini dari kebijakan penyimpanan jangka panjang
+### Contoh 1: Dapatkan versi kebijakan penyimpanan jangka panjang saat ini
 ```powershell
 PS C:\> Get-AzureRmSqlDatabaseBackupLongTermRetentionPolicy -ResourceGroupName resourcegroup01 -ServerName server01 -DatabaseName database01 -Current
 
@@ -50,9 +50,9 @@ RecoveryServicesBackupPolicyResourceId :
 Location                               :
 ```
 
-Perintah ini mendapatkan versi terbaru kebijakan penyimpanan jangka panjang untuk database01
+Perintah ini mendapatkan versi kebijakan penyimpanan jangka panjang untuk database01 saat ini
 
-### Contoh 2: Mendapatkan versi warisan dari kebijakan penyimpanan jangka panjang
+### Contoh 2: Dapatkan versi lama dari kebijakan penyimpanan jangka panjang
 ```powershell
 PS C:\> Get-AzureRmSqlDatabaseBackupLongTermRetentionPolicy -ResourceGroupName resourcegroup01 -ServerName server01 -DatabaseName database01
 
@@ -69,13 +69,13 @@ RecoveryServicesBackupPolicyResourceId : /subscriptions/4f2b42fc-4fc3-fd41-8ab8-
 Location                               : Southeast Asia
 ```
 
-Perintah ini mendapatkan versi warisan kebijakan penyimpanan jangka panjang untuk database01
+Perintah ini mendapatkan versi lama dari kebijakan penyimpanan jangka panjang untuk database01
 
 ## PARAMETERS
 
-### -Saat Ini
-Jika tidak tersedia, perintah tersebut mengembalikan informasi kebijakan Penyimpanan Jangka Panjang warisan.
-Jika tidak, perintah tersebut mengembalikan versi kebijakan Penyimpanan Jangka Panjang saat ini.
+### -Saat ini
+Jika tidak disediakan, perintah mengembalikan informasi kebijakan Penyimpanan Jangka Panjang warisan.
+Jika tidak, perintah mengembalikan versi kebijakan Penyimpanan Jangka Panjang saat ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Nama nama Azure SQL Database digunakan.
+Nama Azure SQL Database untuk digunakan.
 
 ```yaml
 Type: System.String
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama azure SQL Server database berada.
+Nama Server Azure SQL tempat database berada.
 
 ```yaml
 Type: System.String
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -201,4 +201,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzureRmSqlDatabaseBackupLongTermRetentionPolicy](./Set-AzureRmSqlDatabaseBackupLongTermRetentionPolicy.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

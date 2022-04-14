@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationSoftwareUpdateConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationSoftwareUpdateConfiguration.md
 ms.openlocfilehash: b3ebd82df948abc7a9ae40eb5085774002be4be5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140288437"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141807566"
 ---
 # New-AzAutomationSoftwareUpdateConfiguration
 
 ## SYNOPSIS
-Membuat konfigurasi pembaruan perangkat lunak otomatisasi Azure terjadwal.
+Membuat konfigurasi pembaruan perangkat lunak otomatisasi azure terjadwal.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/new-azautomationsoftwareupdateconfiguration) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/new-azautomationsoftwareupdateconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,12 +47,12 @@ New-AzAutomationSoftwareUpdateConfiguration -Schedule <Schedule> [-Linux] [-Rebo
 ```
 
 ## DESCRIPTION
-Membuat konfigurasi pembaruan perangkat lunak yang berjalan sesuai jadwal untuk memperbarui daftar komputer. Komputer mencakup mesin virtual Azure atau komputer non-az.
+Membuat konfigurasi pembaruan perangkat lunak yang berjalan sesuai jadwal untuk memperbarui daftar komputer. Komputer menyertakan mesin virtual Azure atau komputer non-az.
 
 ## EXAMPLES
 
 ### Contoh 1
-Membuat konfigurasi pembaruan perangkat lunak untuk menginstal pembaruan penting pada dua komputer virtual Azure Windows setiap Sabtu pukul 21.00. Durasi pembaruan diatur ke 2 jam dalam contoh ini.
+Membuat konfigurasi pembaruan perangkat lunak untuk menginstal pembaruan penting pada dua Windows mesin virtual Azure sekali setiap Sabtu 21:00. Durasi pembaruan diatur ke 2 jam dalam contoh ini.
 
 ```powershell
 PS C:\> $startTime = [DateTimeOffset]"2018-09-13T21:00"
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureQuery
-Kueri Azure grup dinamis.
+Kueri azure grup dinamis.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Automation.Model.UpdateManagement.AzureQueryProperties[]
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureVMResourceId
-Id Sumber Daya untuk komputer virtual Azure.
+Id Sumber Daya untuk mesin virtual azure.
 
 ```yaml
 Type: System.String[]
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExcludedKbNumber
-Nomor KB dari pembaruan yang dikecualikan.
+Nomor KB pembaruan yang dikecualikan.
 
 ```yaml
 Type: System.String[]
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExcludedPackageNameMask
-Tidak termasuk masker paket Linux.
+Masker paket Linux yang dikecualikan.
 
 ```yaml
 Type: System.String[]
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludedKbNumber
-Nomor KB dari pembaruan yang disertakan.
+Nomor KB pembaruan yang disertakan.
 
 ```yaml
 Type: System.String[]
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludedPackageClassification
-Menyertakan klasifikasi paket Linux.
+Termasuk klasifikasi paket Linux.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Automation.Model.UpdateManagement.LinuxPackageClasses[]
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludedPackageNameMask
-Menyertakan masker paket Linux.
+Masker paket Linux yang disertakan.
 
 ```yaml
 Type: System.String[]
@@ -243,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludedUpdateClassification
-Menyertakan Windows Klasifikasi pembaruan.
+Termasuk klasifikasi Windows Update.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Automation.Model.UpdateManagement.WindowsUpdateClasses[]
@@ -259,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### -Linux
-Menunjukkan bahwa konfigurasi pembaruan perangkat lunak menargetkan mesin sistem operasi Linux.
+Menunjukkan bahwa konfigurasi pembaruan perangkat lunak yang menargetkan mesin sistem operasi Linux.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -289,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### -NonAzureQuery
-Kueri non Azure grup dinamis.
+Grup dinamis bukan kueri Azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Automation.Model.UpdateManagement.NonAzureQueryProperties[]
@@ -319,7 +319,7 @@ Accept wildcard characters: False
 ```
 
 ### -PostTaskRunbookParameter
-Memposting parameter tugas.
+Posting parameter tugas.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -334,7 +334,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreTaskRunbookName
-Pra-tugas.
+Tugas sebelumnya.
 
 ```yaml
 Type: System.String
@@ -349,7 +349,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreTaskRunbookParameter
-Parameter pra-tugas.
+Parameter pra tugas.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -364,7 +364,7 @@ Accept wildcard characters: False
 ```
 
 ### -RebootOnly
-Menunjukkan bahwa konfigurasi pembaruan perangkat lunak hanya akan Melakukan Reboot komputer.
+Menunjukkan bahwa konfigurasi pembaruan perangkat lunak hanya akan boot ulang mesin.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -379,7 +379,7 @@ Accept wildcard characters: False
 ```
 
 ### -RebootSetting
-Pengaturan Reboot.
+Mulai ulang Pengaturan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Automation.Model.UpdateManagement.RebootSetting
@@ -409,7 +409,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Schedule
+### -Jadwal
 Jadwalkan objek yang digunakan untuk konfigurasi pembaruan perangkat lunak.
 
 ```yaml
@@ -425,7 +425,7 @@ Accept wildcard characters: False
 ```
 
 ### -Windows
-Menunjukkan bahwa konfigurasi pembaruan perangkat lunak menargetkan mesin sistem operasi windows.
+Menunjukkan bahwa konfigurasi pembaruan perangkat lunak yang menargetkan mesin sistem operasi windows.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -440,7 +440,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -456,7 +456,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -471,7 +471,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

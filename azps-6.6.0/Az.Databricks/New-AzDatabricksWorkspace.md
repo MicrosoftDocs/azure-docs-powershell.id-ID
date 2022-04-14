@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/New-AzDatabricksWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/New-AzDatabricksWorkspace.md
 ms.openlocfilehash: 80b618fbefc18d69cb1c4f6fbc3865217fa728c7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140139093"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141804182"
 ---
 # New-AzDatabricksWorkspace
 
@@ -18,7 +18,7 @@ ms.locfileid: "140139093"
 Membuat ruang kerja baru.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.databricks/new-azdatabricksworkspace) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.databricks/new-azdatabricksworkspace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Location Name            Type
 eastus   databricks-test Microsoft.Databricks/workspaces
 ```
 
-Perintah ini akan membuat ruang kerja Databricks.
+Perintah ini membuat ruang kerja Databricks.
 
 ### Contoh 2: Membuat ruang kerja Databricks dengan jaringan virtual yang dikustomisasi
 ```powershell
@@ -61,9 +61,9 @@ Location Name                           Type
 eastus   databricks-test-with-custom-vn Microsoft.Databricks/workspaces
 ```
 
-Perintah ini membuat ruang kerja Berbrick data dengan jaringan virtual yang dikustomisasi dalam grup sumber daya.
+Perintah ini membuat ruang kerja Databricks dengan jaringan virtual yang dikustomisasi dalam grup sumber daya.
 
-### Contoh 3: Membuat ruang kerja Berbricks Data dengan aktifkan enkripsi
+### Contoh 3: Membuat ruang kerja Databricks dengan mengaktifkan enkripsi
 ```powershell
 PS C:\> New-AzDatabricksWorkspace -Name databricks-test02 -ResourceGroupName testgroup -PrepareEncryption -Location "East US 2 EUAP" -Sku premium
 
@@ -72,8 +72,8 @@ Location Name            Type
 eastus   databricks-test02 Microsoft.Databricks/workspaces
 ```
 
-Perintah ini membuat ruang kerja Databricks dan mengaturnya untuk menyiapkan enkripsi.
-Silakan merujuk pada contoh enkripsi Update-AzDatabricksWorkspace pengaturan lainnya.
+Perintah ini membuat ruang kerja Databricks dan mengaturnya untuk mempersiapkan enkripsi.
+Silakan lihat contoh Update-AzDatabricksWorkspace untuk pengaturan lainnya ke enkripsi.
 
 ## PARAMETERS
 
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi geo-location di mana sumber daya berada
+Lokasi geografis tempat sumber daya berada
 
 ```yaml
 Type: System.String
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedResourceGroupName
-Nama grup sumber daya yang dikelola.
+Nama grup sumber daya terkelola.
 
 ```yaml
 Type: System.String
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrepareEncryption
-Mempersiapkan ruang kerja untuk enkripsi.
+Siapkan ruang kerja untuk enkripsi.
 Mengaktifkan Identitas Terkelola untuk akun penyimpanan terkelola.
 
 ```yaml
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateSubnetName
-Nama Subnet Privat dalam Jaringan Virtual.
+Nama Subnet Privat dalam Virtual Network.
 
 ```yaml
 Type: System.String
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicSubnetName
-Nama Subnet Publik dalam Jaringan Virtual.
+Nama Subnet Publik di dalam Virtual Network.
 
 ```yaml
 Type: System.String
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequireInfrastructureEncryption
-Boolean mengindikasikan apakah sistem file akar DBFS akan diaktifkan dengan lapisan enkripsi sekunder dengan kunci terkelola platform untuk data yang tidak digunakan.
+Boolean yang menunjukkan apakah sistem file akar DBFS akan diaktifkan dengan lapisan enkripsi sekunder dengan kunci yang dikelola platform untuk data saat istirahat.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -245,7 +245,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -305,7 +305,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkId
-ID Jaringan Virtual di mana Kluster Databricks harus dibuat.
+ID Virtual Network tempat Kluster Databricks ini harus dibuat.
 
 ```yaml
 Type: System.String
@@ -320,7 +320,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -336,7 +336,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -351,7 +351,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

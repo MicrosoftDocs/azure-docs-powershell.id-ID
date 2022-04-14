@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/Backup-AzureRmRecoveryServicesBackupItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/Backup-AzureRmRecoveryServicesBackupItem.md
 ms.openlocfilehash: 9838db99fa1126f3948bb16f9ee16180cb652904
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428347"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141882200"
 ---
 # Backup-AzureRmRecoveryServicesBackupItem
 
 ## SYNOPSIS
-Memulai pencadangan untuk item Cadangan.
+Memulai cadangan untuk item Cadangan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,9 +28,9 @@ Backup-AzureRmRecoveryServicesBackupItem -Item <ItemBase> [-ExpiryDateTimeUTC <D
 ```
 
 ## DESCRIPTION
-Cmdlet **Backup-AzureRmRecoveryServicesBackupItem** memulai pencadangan untuk item Azure Backup yang diproteksi yang tidak terkait dengan jadwal pencadangan.
-Anda bisa melakukan cadangan awal segera setelah Anda mengaktifkan proteksi atau memulai cadangan setelah pencadangan terjadwal gagal.
-Mengatur konteks vault menggunakan cmdlet Set-AzureRmRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
+Cmdlet **Backup-AzureRmRecoveryServicesBackupItem** memulai pencadangan untuk item Azure Backup yang diproteksi yang tidak terkait dengan jadwal cadangan.
+Anda dapat melakukan pencadangan awal segera setelah Mengaktifkan proteksi atau memulai pencadangan setelah pencadangan terjadwal gagal.
+Mengatur konteks kubah menggunakan cmdlet Set-AzureRmRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
@@ -44,14 +44,14 @@ Operation        Status               StartTime            EndTime              
 pstestv2vm1      Backup               InProgress           4/23/2016 5:00:30 PM      cf4b3ef5-2fac-4c8e-a215-d2eba4124f27
 ```
 
-Perintah pertama mendapatkan wadah Cadangan tipe AzureVM bernama pstestv2vm1, lalu menyimpannya dalam $NamedContainer baru.
-Perintah kedua mendapatkan item Cadangan yang terkait dengan wadah dalam $NamedContainer, lalu menyimpannya dalam variabel $Item cadangkan.
-Perintah terakhir memicu pekerjaan pencadangan untuk item Cadangan dalam $Item.
+Perintah pertama mendapatkan kontainer Cadangan tipe AzureVM bernama pstestv2vm1, lalu menyimpannya dalam variabel $NamedContainer.
+Perintah kedua mendapatkan item Cadangan yang terkait dengan wadah di $NamedContainer, lalu menyimpannya dalam variabel $Item.
+Perintah terakhir memicu pekerjaan cadangan untuk item Cadangan dalam $Item.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpiryDateTimeUTC
-Menentukan waktu kedaluwarsa sebagai objek **DateTime.**
+Menentukan waktu kedaluwarsa sebagai objek **DateTime** .
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -Item
-Menentukan item Cadangan ketika cmdlet ini memulai operasi pencadangan.
+Menentukan item Cadangan di mana cmdlet ini memulai operasi pencadangan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ItemBase
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,14 +141,14 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ItemBase
-Parameter: Item (MenurutNilai)
+Parameter: Item (ByValue)
 
-### System.Nullable'1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ### System.String
 Parameter: VaultId (ByValue)
@@ -165,6 +165,6 @@ Parameter: VaultId (ByValue)
 
 [Get-AzureRmRecoveryServicesBackupItem](./Get-AzureRmRecoveryServicesBackupItem.md)
 
-[Restore-AzureRmRecoveryServicesBackupItem](./Restore-AzureRmRecoveryServicesBackupItem.md)
+[Pulihkan-AzureRmRecoveryServicesBackupItem](./Restore-AzureRmRecoveryServicesBackupItem.md)
 
 

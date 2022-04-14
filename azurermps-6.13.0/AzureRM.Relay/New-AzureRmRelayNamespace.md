@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Relay/Commands.Relay/help/New-AzureRmRelayNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Relay/Commands.Relay/help/New-AzureRmRelayNamespace.md
 ms.openlocfilehash: a809d563c4fe633669e9b1cf9d3bbb39770bfd85
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140861966"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141817982"
 ---
 # New-AzureRmRelayNamespace
 
 ## SYNOPSIS
-Membuat ruang nama Relay baru.
+Membuat ruang nama Relai baru.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ New-AzureRmRelayNamespace [-ResourceGroupName] <String> [-Name] <String> [-Locat
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmNameyNamespace** membuat ruang nama Relay baru. Setelah dibuat, kumpulan nama manifes sumber daya akan tetap ada.
+Cmdlet **New-AzureRmRelayNamespace** membuat ruang nama Relai baru. Setelah dibuat, manifes sumber daya ruang nama tidak dapat berubah.
 
 ## EXAMPLES
 
@@ -47,7 +47,7 @@ Name               : TestNameSpace-Relay1
 Type               : Microsoft.Relay/namespaces
 ```
 
-Membuat ruang nama Relay baru di dalam grup sumber daya yang ditentukan.
+Membuat ruang nama Relai baru dalam grup sumber daya yang ditentukan.
 
 ## PARAMETERS
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Relay Namespace Location.
+Relai Lokasi Ruang Nama.
 
 ```yaml
 Type: System.String
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Relay Namespace Name.
+Relai Nama Ruang Nama.
 
 ```yaml
 Type: System.String
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
@@ -169,7 +169,7 @@ System.Collections.Hashtable
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Relay.Models.PSNameyNamespaceAttributes
+### Microsoft.Azure.Commands.Relay.Models.PSRelayNamespaceAttributes
 
 
 ## CATATAN

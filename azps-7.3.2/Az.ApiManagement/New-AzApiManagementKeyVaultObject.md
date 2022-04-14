@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementKeyVaultObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementKeyVaultObject.md
-ms.openlocfilehash: 1a71360c811f617b3cee5aed5125744acf3553d2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: bbf080fdc62fce460340c786b4eb99b335b66992
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140560732"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141792915"
 ---
 # New-AzApiManagementKeyVaultObject
 
 ## SYNOPSIS
 Membuat contoh PsApiManagementKeyVaultObject.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementkeyvaultobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Cmdlet **New-AzApiManagementKeyVaultObject** membuat contoh PsApiManagementKeyVa
 
 ## EXAMPLES
 
-### Contoh 1 : Membuat kunciVault Namedvalue
+### Contoh 1 : Membuat keyVault Bernamavalue
 ```powershell
 $secretIdentifier = 'https://contoso.vault.azure.net/secrets/xxxx'
 $keyvault = New-AzApiManagementKeyVaultObject -SecretIdentifier $secretIdentifier 
@@ -37,7 +40,7 @@ $keyVaultNamedValue = New-AzApiManagementNamedValue -Context $context -NamedValu
 ```
 
 Perintah pertama membuat keyvault.
-Perintah kedua membuat nilai bernama menggunakan rahasia dari keyvault ini.
+Perintah kedua membuat nilai bernama menggunakan secret dari keyvault ini.
 
 ### Contoh 2 : Membuat sertifikat keyVault
 ```powershell
@@ -67,8 +70,8 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityClientId
-Id Klien Identitas dari Identitas Terkelola yang ditetapkan pengguna.
-Akan ditetapkan sistem default jika biarkan kosong.
+Id Klien Identitas identitas identitas terkelola yang ditetapkan pengguna.
+Akan ditetapkan sistem default jika dibiarkan kosong.
 
 ```yaml
 Type: System.String
@@ -98,11 +101,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

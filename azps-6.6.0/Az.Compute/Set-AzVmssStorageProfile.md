@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssStorageProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssStorageProfile.md
 ms.openlocfilehash: 959dd4875d2d85ebb3a188c1c78f4a781f72c6fb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140485275"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141806703"
 ---
 # Set-AzVmssStorageProfile
 
 ## SYNOPSIS
-Mengatur properti profil penyimpanan VMSS.
+Mengatur properti profil penyimpanan untuk VMSS.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmssstorageprofile) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmssstorageprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Set-AzVmssStorageProfile [-VirtualMachineScaleSet] <PSVirtualMachineScaleSet>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVmssStorageProfile** mengatur properti profil penyimpanan untuk Virtual Machine Scale Set (VMSS).
+Cmdlet **Set-AzVmssStorageProfile** mengatur properti profil penyimpanan untuk Kumpulan Skala Mesin Virtual (VMSS).
 
 ## EXAMPLES
 
@@ -46,7 +46,7 @@ PS C:\> Set-AzVmssStorageProfile -VirtualMachineScaleSet "ContosoVMSS" -Name "Te
             -ImageReferencePublisher $ImgRef.PublisherName -VhdContainer $VhdContainer
 ```
 
-Perintah ini mengatur properti profil penyimpanan VMSS bernama ContosoVMSS.
+Perintah ini mengatur properti profil penyimpanan untuk VMSS bernama ContosoVMSS.
 
 ## PARAMETERS
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiffDiskSetting
-Menentukan pengaturan disk berbeda untuk disk sistem operasi.
+Menentukan setelan diska yang berbeda untuk disk sistem operasi.
 
 ```yaml
 Type: System.String
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionSetId
-Menentukan Id sumber daya dari kumpulan enkripsi disk yang dikelola pelanggan.  This can only be specified for managed disk.
+Menentukan ID sumber daya kumpulan enkripsi disk yang dikelola pelanggan.  Ini hanya dapat ditentukan untuk disk yang dikelola.
 
 ```yaml
 Type: System.String
@@ -110,7 +110,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Image
+### -Gambar
 Menentukan URI blob untuk gambar pengguna.
 VMSS membuat disk sistem operasi dalam wadah gambar pengguna yang sama.
 
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImageReferenceOffer
-Menentukan tipe penawaran gambar mesin virtual (VMImage).
+Menentukan tipe penawaran virtual machine image (VMImage).
 Untuk mendapatkan penawaran gambar, gunakan cmdlet Get-AzVMImageOffer.
 
 ```yaml
@@ -173,9 +173,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -ImageReferenceSku
+### -ImageReferencesku
 Menentukan VMImage SKU.
-Untuk mendapatkan SKU, gunakan Get-AzVMImageSku cmdlet.
+Untuk mendapatkan SKU, gunakan cmdlet Get-AzVMImageSku.
 
 ```yaml
 Type: System.String
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 
 ### -ImageReferenceVersion
 Menentukan versi VMImage.
-Untuk menggunakan versi terbaru, tentukan nilai terbaru dan bukan versi tertentu.
+Untuk menggunakan versi terbaru, tentukan nilai terbaru, bukan versi tertentu.
 
 ```yaml
 Type: System.String
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedDisk
-Menentukan disk yang dikelola.
+Menentukan diska terkelola.
 
 ```yaml
 Type: System.String
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -OsDiskCaching
-Menentukan mode cache dari disk sistem operasi. Nilai yang dapat diterima untuk parameter ini adalah:
+Menentukan mode cache disk sistem operasi. Nilai yang dapat diterima untuk parameter ini adalah:
 - ReadOnly
 - ReadWrite Nilai defaultnya adalah ReadWrite.
 Jika Anda mengubah nilai cache, cmdlet akan memulai ulang mesin virtual.
@@ -243,9 +243,9 @@ Accept wildcard characters: False
 ### -OsDiskCreateOption
 Menentukan cara cmdlet ini membuat mesin virtual VMSS.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Lampirkan: Nilai ini digunakan ketika Anda menggunakan disk khusus untuk membuat mesin virtual VMSS. 
-- FromImage : Nilai ini digunakan ketika Anda menggunakan gambar untuk membuat mesin virtual VMSS.
-Jika Anda menggunakan gambar platform, Anda juga akan menggunakan parameter *imageReference* .
+- Lampirkan : Nilai ini digunakan saat Anda menggunakan disk khusus untuk membuat mesin virtual VMSS. 
+- FromImage : Nilai ini digunakan saat Anda menggunakan gambar untuk membuat mesin virtual VMSS.
+Jika menggunakan gambar platform, Anda juga akan menggunakan parameter *imageReference* .
 
 ```yaml
 Type: System.String
@@ -275,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### -OsDiskOsType
-Menentukan tipe sistem operasi pada disk.
+Menentukan tipe sistem operasi pada diska.
 Ini hanya diperlukan untuk skenario gambar pengguna dan bukan untuk gambar platform.
 
 ```yaml
@@ -292,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### -OsDiskWriteAccelerator
-Menentukan apakah WriteAccelerator harus diaktifkan atau dinonaktifkan di disk OS.
+Menentukan apakah WriteAccelerator harus diaktifkan atau dinonaktifkan pada disk OS.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -321,7 +321,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -VirtualMachinescaleSet
+### -VirtualMachineScaleSet
 Menentukan objek VMSS.
 Untuk mendapatkan objek, gunakan objek New-AzVmssConfig.
 
@@ -338,7 +338,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -353,7 +353,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -368,7 +368,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -376,9 +376,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.CachingTypes, Microsoft.Azure.Management.Compute, Version=23.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.CachingTypes, Microsoft.Azure.Management.Compute, Version=23.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
-### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.OperatingSystemTypes, Microsoft.Azure.Management.Compute, Version=23.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.OperatingSystemTypes, Microsoft.Azure.Management.Compute, Version=23.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
 ### System.String[]
 
@@ -392,11 +392,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzvMImageOffer](./Get-AzVMImageOffer.md)
+[Get-AzVMImageOffer](./Get-AzVMImageOffer.md)
 
 [Get-AzVMImagePublisher](./Get-AzVMImagePublisher.md)
 
-[Get-azvmImagesku](./Get-AzVMImageSku.md)
+[Get-AzVMImageSku](./Get-AzVMImageSku.md)
 
 [New-AzVmssConfig](./New-AzVmssConfig.md)
 

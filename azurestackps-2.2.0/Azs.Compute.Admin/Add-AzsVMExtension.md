@@ -4,16 +4,16 @@ Module Name: Azs.Compute.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.compute.admin/add-azsvmextension
 schema: 2.0.0
 ms.openlocfilehash: c98cc728a5c0164fb60162bf7ae898de51b12f5f
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136580076"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141876037"
 ---
 # Add-AzsVMExtension
 
 ## SYNOPSIS
-Buat Gambar Ekstensi Mesin Virtual dengan publisher, versi.
+Buat Gambar Ekstensi Mesin Virtual dengan penerbit, versi.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Add-AzsVMExtension -Publisher <String> -Type <String> -Version <String> [-Locati
  [<CommonParameters>]
 ```
 
-### Buat
+### Membuat
 ```
 Add-AzsVMExtension -Publisher <String> -Type <String> -Version <String> -Extension \<IVMExtensionParameters>
  [-Location <String>] [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf]
@@ -48,7 +48,7 @@ Add-AzsVMExtension -INPUTOBJECT \<IComputeAdminIdentity> [-Publisher <String>] [
 ```
 
 ## DESCRIPTION
-Buat Gambar Ekstensi Mesin Virtual dengan publisher, versi.
+Buat Gambar Ekstensi Mesin Virtual dengan penerbit, versi.
 
 ## EXAMPLES
 
@@ -57,12 +57,12 @@ Buat Gambar Ekstensi Mesin Virtual dengan publisher, versi.
 Add-AzsVMExtension -Location "local" -Publisher "Microsoft" -Type "MicroExtension" -Version "0.1.0" -ComputeRole "IaaS" -SourceBlob "https://github.com/Microsoft/PowerShell-DSC-for-Linux/archive/v1.1.1-294.zip" -SupportMultipleExtensions -VmOsType "Linux"
 ```
 
-ExtensionType : MicroExtension TypeHandlerVersion : 0.1.0 ComputeRole : IaaS Id : /subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locati ons/local/artifactTypes/VMExtension/publishers/Microsoft/types/MicroExtension/versions/0.1.0 IsSystemExtension : False Location : local Name : ProvisioningState : Creating Publisher                 : Microsoft SourceBlobUri : https://github.com/Microsoft/PowerShell-DSC-for-Linux/archive/v1.1.1-294.zip SupportMultipleExtension : True Type : Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions VMScaleSetEnabled : False VmosType : Linux
+ExtensionType : MicroExtension TypeHandlerVersion : 0.1.0 ComputeRole : IaaS Id : /subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locati ons/local/artifactTypes/VMExtension/publishers/Microsoft/types/MicroExtension/versions/0.1.0 IsSystemExtension : False Location : Local Name : ProvisioningState : Creating Publisher                 : Microsoft SourceBlobUri : https://github.com/Microsoft/PowerShell-DSC-for-Linux/archive/v1.1.1-294.zip SupportMultipleExtension : True Type : Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions VMScaleSetEnabled : False VmosType : Linux
 
 ## PARAMETERS
 
 ### -ComputeRole
-Peran perhitungan
+Peran komputasi
 
 ```yaml
 Type: System.String
@@ -91,9 +91,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Extension
+### -Ekstensi
 Parameter yang digunakan untuk membuat Gambar Ekstensi Mesin Virtual baru.
-Untuk membuat, lihat bagian CATATAN untuk properti EKSTENSI dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti EKSTENSI dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20151201Preview.IVMExtensionParameters
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.IComputeAdminIdentity
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsSystemExtension
-Menunjukkan jika ekstensi tersebut untuk sistem.
+Menunjukkan apakah ekstensi untuk sistem.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,7 +152,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PropertiPublisher
+### -PropertiesPublisher
 Penerbit Ekstensi VM
 
 ```yaml
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProvisioningState
-Status penyediaan ekstensi.
+Status perpanjangan penyediaan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Support.ProvisioningState
@@ -213,8 +213,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure Anda.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Tipe ekstensi.
+Jenis ekstensi.
 
 ```yaml
 Type: System.String
@@ -274,7 +274,7 @@ Accept wildcard characters: False
 ```
 
 ### -VmOsType
-Ketikkan sistem operasi mesin virtual target yang diperlukan untuk menggunakan penanganan ekstensi.
+Tipe sistem operasi mesin virtual target yang diperlukan untuk menyebarkan penanganan ekstensi.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Support.OSType
@@ -304,7 +304,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -320,7 +320,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -335,7 +335,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -356,29 +356,29 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-EKSTENSI \<IVMExtensionParameters> : Parameter yang digunakan untuk membuat Gambar Ekstensi Mesin Virtual baru.
-  - `[ComputeRole <String>]`: Peran perhitungan
-  - `[IsSystemExtension <Boolean?>]`: Menunjukkan jika ekstensi tersebut untuk sistem.
-  - `[ProvisioningState <ProvisioningState?>]`: Status provisi ekstensi.
-  - `[Publisher <String>]`: Penerbit Vm Extension
+EKSTENSI \<IVMExtensionParameters>: Parameter yang digunakan untuk membuat Gambar Ekstensi Mesin Virtual baru.
+  - `[ComputeRole <String>]`: Peran komputasi
+  - `[IsSystemExtension <Boolean?>]`: Menunjukkan apakah ekstensi untuk sistem.
+  - `[ProvisioningState <ProvisioningState?>]`: Ketentuan status perpanjangan.
+  - `[Publisher <String>]`: Penerbit Ekstensi VM
   - `[SourceBlobUri <String>]`: URI ke Azure atau AzureStack blob.
   - `[SupportMultipleExtension <Boolean?>]`: True jika mendukung beberapa ekstensi.
   - `[VMScaleSetEnabled <Boolean?>]`: Nilai yang menunjukkan apakah ekstensi diaktifkan untuk dukungan kumpulan skala mesin virtual.
-  - `[VmosType <OSType?>]`: Targetkan tipe sistem operasi mesin virtual yang diperlukan untuk menggunakan penanganan ekstensi.
+  - `[VmosType <OSType?>]`: Tipe sistem operasi mesin virtual target yang diperlukan untuk menyebarkan penanganan ekstensi.
 
-INPUTOBJECT \<IComputeAdminIdentity> : Parameter Identitas
-  - `[DiskId <String>]`: Disk guid sebagai identitas.
+INPUTOBJECT \<IComputeAdminIdentity>: Parameter Identitas
+  - `[DiskId <String>]`: Disk memandu sebagai identitas.
   - `[FeatureName <String>]`: Nama fitur.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Lokasi sumber daya.
-  - `[MigrationId <String>]`: Nama guid pekerjaan migrasi.
+  - `[MigrationId <String>]`: Nama panduan pekerjaan migrasi.
   - `[Offer <String>]`: Nama penawaran.
   - `[Publisher <String>]`: Nama penerbit.
   - `[QuotaName <String>]`: Nama kuota.
   - `[ScaleUnitName <String>]`: Nama unit skala.
   - `[Sku <String>]`: Nama SKU.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
-  - `[Type <String>]`: Tipe ekstensi.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+  - `[Type <String>]`: Jenis ekstensi.
   - `[Version <String>]`: Versi sumber daya.
 
 ## RELATED LINKS

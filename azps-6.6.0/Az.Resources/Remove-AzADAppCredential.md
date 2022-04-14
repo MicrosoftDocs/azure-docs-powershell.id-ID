@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADAppCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADAppCredential.md
 ms.openlocfilehash: 9cb472ce99f73c07b8dd358e113f0e7949bbf5cb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140014204"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141860576"
 ---
 # Remove-AzADAppCredential
 
@@ -21,7 +21,7 @@ Menghapus kredensial dari aplikasi.
 [!INCLUDE [msgraph-migration-banner](../../includes/msgraph-migration-banner.md)]
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/remove-azadappcredential) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-azadappcredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,13 +50,13 @@ Remove-AzADAppCredential [-KeyId <Guid>] -ApplicationObject <PSADApplication> [-
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzADAppCredential cmdlet bisa digunakan untuk menghapus kunci kredensial dari aplikasi dalam kasus kedaluwarsa rol kunci kredensial atau sebagai bagian dari kredensial.
+Cmdlet Remove-AzADAppCredential dapat digunakan untuk menghapus kunci kredensial dari aplikasi dalam kasus kompromi atau sebagai bagian dari kedaluwarsa rollover kunci kredensial.
 Aplikasi diidentifikasi dengan menyediakan ID objek atau AppId.
-Kredensial yang akan dihapus diidentifikasi dengan ID kuncinya.
+Kredensial yang akan dihapus diidentifikasi oleh ID kuncinya.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus kredensial tertentu dari aplikasi
+### Contoh 1: Menghapus kredensial tertentu dari aplikasi
 
 ```powershell
 PS C:\> Remove-AzADAppCredential -ObjectId 7663d3fb-6f86-4352-9e6d-cf9d50d5ee82 -KeyId 9044423a-60a3-45ac-9ab1-09534157ebb
@@ -64,7 +64,7 @@ PS C:\> Remove-AzADAppCredential -ObjectId 7663d3fb-6f86-4352-9e6d-cf9d50d5ee82 
 
 Menghapus kredensial dengan id kunci '9044423a-60a3-45ac-9ab1-09534157ebb' dari aplikasi dengan id objek '7663d3fb-6f86-4352-9e6d-cf9d50d5ee82'.
 
-### Contoh 2: Hapus semua kredensial dari aplikasi
+### Contoh 2: Menghapus semua kredensial dari aplikasi
 
 ```powershell
 PS C:\> Remove-AzADAppCredential -ApplicationId 4589cd6b-3d79-4bb4-93b8-a0b99f3bfc58
@@ -72,13 +72,13 @@ PS C:\> Remove-AzADAppCredential -ApplicationId 4589cd6b-3d79-4bb4-93b8-a0b99f3b
 
 Menghapus semua kredensial dari aplikasi dengan id aplikasi '4589cd6b-3d79-4bb4-93b8-a0b99f3bfc58'.
 
-### Contoh 3: Hapus semua kredensial menggunakan pemipaan
+### Contoh 3: Hapus semua kredensial menggunakan piping
 
 ```powershell
 PS C:\> Get-AzADApplication -ObjectId 7663d3fb-6f86-4352-9e6d-cf9d50d5ee82 | Remove-AzADAppCredential
 ```
 
-Dapatkan aplikasi dengan object id '7663d3fb-6f86-4352-9e6d-cf9d50d5ee82' dan pipa yang ke cmdlet Remove-AzADAppCredential dan menghapus semua kredensial dari aplikasi itu.
+Mendapatkan aplikasi dengan id objek '7663d3fb-6f86-4352-9e6d-cf9d50d5ee82' dan pipa yang ke cmdlet Remove-AzADAppCredential dan menghapus semua kredensial dari aplikasi itu.
 
 ## PARAMETERS
 
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -142,8 +142,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Beralihlah ke hapus kredensial tanpa konfirmasi.
+### -Paksa
+Beralih untuk menghapus kredensial tanpa konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -255,7 +255,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Guid
 
-### Microsoft.Azure.Commands.ActiveDirectory.FOLDApplication
+### Microsoft.Azure.Commands.ActiveDirectory.PSADAplikasi
 
 ## OUTPUTS
 
@@ -269,4 +269,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzADAppCredential](./New-AzADAppCredential.md)
 
-[Get-AzADApplication](./Get-AzADApplication.md)
+[Get-AzADAplikasi](./Get-AzADApplication.md)

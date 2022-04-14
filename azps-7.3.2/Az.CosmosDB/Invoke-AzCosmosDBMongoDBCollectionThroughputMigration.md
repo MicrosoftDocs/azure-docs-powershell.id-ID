@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/invoke-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Invoke-AzCosmosDBMongoDBCollectionThroughputMigration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Invoke-AzCosmosDBMongoDBCollectionThroughputMigration.md
-ms.openlocfilehash: a32bbc717ea354ca472212d083aa18bd1c2fc83b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a3e324b3d65702c467ade9c5ef8565c8d3ed7e43
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140395086"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141896931"
 ---
 # Invoke-AzCosmosDBMongoDBCollectionThroughputMigration
 
 ## SYNOPSIS
-Gunakan opsi ini untuk melakukan migrasi throughput skala otomatis ke throughput manual dan sebaliknya.
+Gunakan ini untuk melakukan migrasi throughput skala otomatis ke throughput manual dan sebaliknya.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/invoke-azcosmosdbmongodbcollectionthroughputmigration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Invoke-AzCosmosDBMongoDBCollectionThroughputMigration [-Name <String>]
 ```
 
 ## DESCRIPTION
-ThroughpyteType paramter menentukan throughput ke mana Anda ingin melakukan migrasi.
+Paramter ThroughpyteType menentukan throughput yang ingin Anda migrasi.
 
 ## EXAMPLES
 
@@ -53,7 +56,7 @@ PS C:\> $NewCollection =  New-AzCosmosDBMongoDBCollection -AccountName myAccount
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun database Cosmos DB.
 
 ```yaml
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Collection Collection Perpustakaan Perpustakaan.
+Objek Koleksi Mongo.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSMongoDBCollectionGetResults
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Objek Database.
+Objek Mongo Database.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSMongoDBDatabaseGetResults
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 
 ### -ThroughputType
 Tipe throughput untuk dimigrasikan.
-Nilai yang mungkin adalah: SkalaOtomatis, Manual.
+Nilai yang memungkinkan adalah: Skala Otomatis, Manual.
 
 ```yaml
 Type: System.String
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualHubRouteTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualHubRouteTable.md
 ms.openlocfilehash: 43cf0efd6093c3929e2e7796fd58b2ac3670b619
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140331017"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141863384"
 ---
 # Get-AzVirtualHubRouteTable
 
 ## SYNOPSIS
-Mendapatkan Tabel Rute Virtual Hub di hub virtual atau mencantumkan semua tabel rute di hub virtual.
+Mendapatkan Tabel Rute Hub Virtual di hub virtual atau mencantumkan semua tabel rute di hub virtual.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azvirtualhubroutetable) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualhubroutetable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Get-AzVirtualHubRouteTable -ParentResourceId <String> [-Name <String>]
 ```
 
 ## DESCRIPTION
-Mendapatkan Tabel Rute Virtual Hub di hub virtual atau mencantumkan semua tabel rute di hub virtual.
+Mendapatkan Tabel Rute Hub Virtual di hub virtual atau mencantumkan semua tabel rute di hub virtual.
 
 ## EXAMPLES
 
@@ -56,7 +56,7 @@ Connections : {All_Vnets}
 ProvisioningState   : Succeeded
 ```
 
-Cmdlet ini mengambil sumber daya tabel rute menggunakan nama grup sumber daya, nama hub dan nama tabel rute.
+Cmdlet ini mengambil sumber daya tabel rute menggunakan nama grup sumber daya, nama hub, dan nama tabel rute.
 
 ### Contoh 2
 ```powershell
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

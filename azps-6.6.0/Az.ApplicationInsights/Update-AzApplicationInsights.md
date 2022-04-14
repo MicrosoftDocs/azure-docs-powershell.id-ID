@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Update-AzApplicationInsights.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Update-AzApplicationInsights.md
 ms.openlocfilehash: 1cbf25a6efa51a2168a6514d833d396731f0fa7e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140143683"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141807800"
 ---
 # Update-AzApplicationInsights
 
@@ -18,7 +18,7 @@ ms.locfileid: "140143683"
 memperbarui sumber daya wawasan aplikasi yang sudah ada
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.applicationinsights/update-azapplicationinsights) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/update-azapplicationinsights) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ memperbarui sumber daya wawasan aplikasi yang sudah ada
 Update-AzApplicationInsights -ResourceGroupName "rgName" -Name "aiName" -PublicNetworkAccessForIngestion "Disabled" -PublicNetworkAccessForQuery "Disabled"
 ```
 
-perbarui komponen wawasan aplikasi "aiName" PublicNetworkAccessForIngestion/PublicNetworkAccessForQuery keduanya menjadi "Dinonaktifkan"
+perbarui komponen wawasan aplikasi "aiName" PublicNetworkAccessForIngestion/PublicNetworkAccessForQuery keduanya menjadi "Disabled"
 
 ## PARAMETERS
 
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Application Insights Resource Name.
+Nama Sumber Daya Insights Aplikasi.
 
 ```yaml
 Type: System.String
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccessForIngestion
-Tipe akses jaringan untuk mengakses Aplikasi Insights penggunaan.
+Tipe akses jaringan untuk mengakses aplikasi Insights penyerapan.
 Nilai harus 'Diaktifkan' atau 'Dinonaktifkan'
 
 ```yaml
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccessForQuery
-Tipe akses jaringan untuk mengakses aplikasi Insights kueri.
+Tipe akses jaringan untuk mengakses kueri Insights Aplikasi.
 Nilai harus 'Diaktifkan' atau 'Dinonaktifkan'
 
 ```yaml
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetentionInDays
-Penyimpanan Pada Hari, 90 secara default.
+Penyimpanan Dalam Hari, 90 secara default.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

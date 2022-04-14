@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzDisk.md
-ms.openlocfilehash: 375baff9b74b8e26761ad560e5e265bb83224a92
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: b0f3c4e5ffc7a1f24d2ef761ac4cb09d0bbee48e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140010491"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141898659"
 ---
 # Get-AzDisk
 
 ## SYNOPSIS
-Mendapatkan properti disk Yang Dikelola.
+Mendapatkan properti disk terkelola.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azdisk) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzDisk [[-ResourceGroupName] <String>] [[-DiskName] <String>] [-DefaultProfi
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDisk** mendapatkan properti disk Terkelola.
+Cmdlet **Get-AzDisk** mendapatkan properti disk yang dikelola.
 
 ## EXAMPLES
 
@@ -149,7 +152,7 @@ Location           : westus2
 Tags               : {}
 ```
 
-Perintah ini mendapatkan properti semua disk dalam langganan.
+Perintah ini mendapatkan properti semua disk di bawah langganan.
 
 ### Contoh 4
 ```powershell
@@ -201,7 +204,7 @@ Perintah ini mendapatkan properti semua disk di bawah nama langganan yang dimula
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskName
-Menentukan nama disk.
+Menentukan nama diska.
 
 ```yaml
 Type: System.String
@@ -246,7 +249,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

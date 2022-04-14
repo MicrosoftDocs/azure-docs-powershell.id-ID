@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ContainerInstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerGroupVolumeObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerGroupVolumeObject.md
-ms.openlocfilehash: c0e45bb1e671a274abb2762a533bd9d830f4ff2f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1379759874c588a3722dd0fe9c7098c120ad174a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140188112"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141897511"
 ---
 # New-AzContainerGroupVolumeObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk Volume
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.containerinstance/new-azcontainergroupvolumeobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,12 +47,12 @@ Name
 myvolume
 ```
 
-Perintah ini akan membuat volume File Azure.
+Perintah ini membuat volume File Azure.
 
 ## PARAMETERS
 
 ### -AzureFileReadOnly
-Bendera yang menunjukkan apakah File Azure bersama terpasang sebagai volume baca-saja.
+Bendera yang mengindikasikan apakah File Azure yang dibagikan dipasang sebagai volume bersifat baca-saja.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -64,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureFileShareName
-Nama berbagi File Azure akan terpasang sebagai volume.
+Nama berbagi File Azure yang akan dikaitkan sebagai volume.
 
 ```yaml
 Type: System.String
@@ -110,9 +113,9 @@ Accept wildcard characters: False
 
 ### -GitRepoDirectoryName
 Nama direktori target.
-Tidak boleh berisi atau dimulai dengan '..'.
-Jika '.' disertakan, direktori volume akan menjadi repositori git.
-Jika tidak, jika ditentukan, volume akan berisi repositori git dalam subarah dengan nama yang diberikan.
+Tidak boleh memuat atau memulai dengan '..'.
+Jika '.' disertakan, direktori volume akan menjadi repository git.
+Jika tidak, jika ditentukan, volume akan berisi repository git dalam subdirektori dengan nama tertentu.
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -GitRepoRevision
-Menerapkan hash untuk revisi tertentu.
+Lakukan hash untuk revisi yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

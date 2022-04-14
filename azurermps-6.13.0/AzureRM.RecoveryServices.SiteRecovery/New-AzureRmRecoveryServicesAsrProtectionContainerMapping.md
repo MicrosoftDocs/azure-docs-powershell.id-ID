@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/New-AzureRmRecoveryServicesAsrProtectionContainerMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/New-AzureRmRecoveryServicesAsrProtectionContainerMapping.md
 ms.openlocfilehash: 35e338d5e6fd9dccbee1a099bc4dabf234cd8e70
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426599"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141775932"
 ---
 # New-AzureRmRecoveryServicesAsrProtectionContainerMapping
 
 ## SYNOPSIS
-Membuat pemetaan Wadah Proteksi Pemulihan Situs Azure dengan mengaitkan kebijakan replikasi tertentu ke wadah proteksi ASR yang ditentukan.
+Membuat pemetaan Azure Site Recovery Protection Container dengan mengasosiasikan kebijakan replikasi tertentu ke wadah proteksi ASR yang ditentukan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -36,7 +36,7 @@ New-AzureRmRecoveryServicesAsrProtectionContainerMapping -Name <String> -Policy 
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmRecoveryServicesAsrProtectionContainerMapping** membuat pemetaan Wadah Perlindungan Pemulihan Situs Azure dengan mengaitkan kebijakan replikasi tertentu ke wadah proteksi yang ditentukan.
+Cmdlet **New-AzureRmRecoveryServicesAsrProtectionContainerMapping** membuat pemetaan Azure Site Recovery Protection Container dengan mengaitkan kebijakan replikasi tertentu ke wadah proteksi yang ditentukan.
 
 ## EXAMPLES
 
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Menentukan objek kebijakan replikasi ASR untuk kebijakan replikasi yang akan digunakan dalam pemetaan.
+Menentukan objek kebijakan replikasi ASR agar kebijakan replikasi digunakan dalam pemetaan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRPolicy
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryProtectionContainer
-Menentukan objek wadah proteksi ASR untuk wadah proteksi utama yang akan digunakan dalam pemetaan.
+Menentukan objek kontainer proteksi ASR untuk wadah proteksi utama yang akan digunakan dalam pemetaan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRProtectionContainer
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryProtectionContainer
-Menentukan objek wadah proteksi ASR untuk wadah proteksi pemulihan yang akan digunakan dalam pemetaan (digunakan jika meregasi ke lokasi pemulihan yang bukan Azure.)
+Menentukan objek kontainer proteksi ASR agar wadah proteksi pemulihan digunakan dalam pemetaan (digunakan jika mereplikasi ke lokasi pemulihan yang bukan Azure.)
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRProtectionContainer
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

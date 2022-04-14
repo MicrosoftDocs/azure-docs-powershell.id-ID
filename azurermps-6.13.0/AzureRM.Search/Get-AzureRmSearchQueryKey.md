@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Search/Commands.Management.Search/help/Get-AzureRmSearchQueryKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Search/Commands.Management.Search/help/Get-AzureRmSearchQueryKey.md
 ms.openlocfilehash: 3535e9d7723c87e0f528192e47c921d3835ff9e3
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424483"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141816975"
 ---
 # Get-AzureRmSearchQueryKey
 
 ## SYNOPSIS
-Mendapatkan kunci kueri dari layanan Pencarian Azure.
+Mendapatkan kunci kueri azure layanan Pencarian.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,7 +40,7 @@ Get-AzureRmSearchQueryKey [-ParentResourceId] <String> [-DefaultProfile <IAzureC
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmSearchQueryKey** mendapatkan kunci kueri layanan Pencarian Azure.
+Cmdlet **Get-AzureRmSearchQueryKey** mendapatkan kunci kueri dari layanan Pencarian Azure.
 
 ## EXAMPLES
 
@@ -53,7 +53,7 @@ Name Key
      896AA09C167541072D404E1BE0442CE9
 ```
 
-Contoh tersebut mendapatkan semua kunci kueri Layanan Pencarian Azure.
+Contoh ini mendapatkan semua kunci kueri Layanan Pencarian Azure.
 
 ## PARAMETERS
 
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentResourceId
-Search Service Resource Id.
+Id Sumber Daya Layanan Pencarian.
 
 ```yaml
 Type: System.String
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Cari Nama Layanan.
+Nama Layanan Pencarian.
 
 ```yaml
 Type: System.String
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

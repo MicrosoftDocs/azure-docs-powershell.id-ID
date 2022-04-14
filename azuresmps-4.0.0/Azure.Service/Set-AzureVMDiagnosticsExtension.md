@@ -4,16 +4,16 @@ ms.assetid: A05B39BF-87EB-471E-9FCD-F7807CB46B4D
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 31f0b527da0f026b40182900fa988aa7f7bd40ce
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419892"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141815983"
 ---
 # Set-AzureVMDiagnosticsExtension
 
 ## SYNOPSIS
-Mengonfigurasi ekstensi Azure Diagnostics di komputer virtual.
+Mengonfigurasi ekstensi Diagnostik Azure di mesin virtual.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -36,11 +36,11 @@ Set-AzureVMDiagnosticsExtension [-DiagnosticsConfigurationPath] <String> [[-Stor
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureVMDiagnosticsExtension** mengonfigurasi Microsoft Azure Diagnostics di komputer virtual.
+Cmdlet **Set-AzureVMDiagnosticsExtension mengonfigurasi** ekstensi Diagnostik Microsoft Azure pada mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Buat mesin virtual dengan ekstensi Azure Diagnostics diterapkan
+### Contoh 1: Membuat mesin virtual dengan ekstensi Diagnostik Azure yang diterapkan
 ```
 PS C:\> $VM = New-AzureVMConfig -Name $VM -InstanceSize Small -ImageName $VMImage
 PS C:\> $VM = Add-AzureProvisioningConfig -VM $VM -AdminUsername $Username -Password $Password -Windows
@@ -48,9 +48,9 @@ PS C:\> $VM = Set-AzureVMDiagnosticsExtension -DiagnosticsConfigurationPath $Con
 PS C:\> New-AzureVM -Location $Location -ServiceName $Service_Name -VM $VM
 ```
 
-Perintah ini mengaktifkan ekstensi Azure Diagnostics di komputer virtual.
+Perintah ini mengaktifkan ekstensi Diagnostik Azure di mesin virtual.
 
-### Contoh 2: Mengaktifkan ekstensi Azure Diagnostics di komputer virtual yang sudah ada
+### Contoh 2: Mengaktifkan ekstensi Diagnostik Azure di mesin virtual yang sudah ada
 ```
 PS C:\> $VM = Get-AzureVM -ServiceName $Service_Name -Name $VM_Name
 PS C:\> $VM_Update = Set-AzureVMDiagnosticsExtension -DiagnosticsConfigurationPath $Config_Path -Version "1.*" -VM $VM -StorageContext $Storage_Context
@@ -59,9 +59,9 @@ PS C:\> Update-AzureVM -ServiceName $Service_Name -Name $VM_Name -VM $VM_Update.
 
 Perintah pertama menggunakan cmdlet **Get-AzureVM** untuk mendapatkan mesin virtual.
 
-Perintah kedua menggunakan cmdlet **Set-AzureVMDiagnosticsExtension** untuk memperbarui konfigurasi komputer virtual agar menyertakan ekstensi Azure Diagnostics.
+Perintah kedua menggunakan cmdlet **Set-AzureVMDiagnosticsExtension** untuk memperbarui konfigurasi mesin virtual agar menyertakan ekstensi Diagnostik Azure.
 
-Perintah terakhir menerapkan konfigurasi yang diperbarui ke komputer virtual.
+Perintah akhir menerapkan konfigurasi yang diperbarui ke mesin virtual.
 
 ## PARAMETERS
 
@@ -80,8 +80,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Disable
-Mengindikasikan bahwa cmdlet ini menonaktifkan ekstensi diagnostik di komputer virtual.
+### -Non-fungsikan
+Menunjukkan bahwa cmdlet ini menonaktifkan ekstensi diagnostik pada mesin virtual.
 
 ```yaml
 Type: SwitchParameter
@@ -96,16 +96,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -135,8 +135,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -256,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -270,6 +270,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Remove-AzureVMDiagnosticsExtension](./Remove-AzureVMDiagnosticsExtension.md)
 
-[Update-AzureVM](./Update-AzureVM.md)
+[Perbarui-AzureVM](./Update-AzureVM.md)
 
 

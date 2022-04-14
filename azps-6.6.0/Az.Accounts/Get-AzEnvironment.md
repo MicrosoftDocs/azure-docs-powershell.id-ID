@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzEnvironment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzEnvironment.md
 ms.openlocfilehash: 54b4367c972ab627da7a499e7c3cbe5a622bbe21
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140504643"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141809870"
 ---
 # Get-AzEnvironment
 
@@ -18,7 +18,7 @@ ms.locfileid: "140504643"
 Dapatkan titik akhir dan metadata untuk contoh layanan Azure.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.accounts/get-azenvironment) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.accounts/get-azenvironment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ AzureCloud        https://management.azure.com/         https://login.microsofto
 AzureChinaCloud   https://management.chinacloudapi.cn/  https://login.chinacloudapi.cn/    Built-in
 ```
 
-Contoh ini menunjukkan cara mendapatkan titik akhir dan metadata untuk lingkungan AzureCloud (default).
+Contoh ini memperlihatkan cara mendapatkan titik akhir dan metadata untuk lingkungan AzureCloud (default).
 
 ### Contoh 2: Mendapatkan lingkungan AzureCloud
 ```powershell
@@ -54,7 +54,7 @@ Name       Resource Manager Url          ActiveDirectory Authority          Type
 AzureCloud https://management.azure.com/ https://login.microsoftonline.com/ Built-in
 ```
 
-Contoh ini menunjukkan cara mendapatkan titik akhir dan metadata untuk lingkungan AzureCloud (default).
+Contoh ini memperlihatkan cara mendapatkan titik akhir dan metadata untuk lingkungan AzureCloud (default).
 
 ### Contoh 3: Mendapatkan lingkungan AzureChinaCloud
 ```powershell
@@ -104,12 +104,12 @@ Name              Resource Manager Url                  ActiveDirectory Authorit
 AzureUSGovernment https://management.usgovcloudapi.net/ https://login.microsoftonline.us/ Built-in
 ```
 
-Contoh ini menunjukkan cara mendapatkan titik akhir dan metadata untuk lingkungan AzureUSGovernment.
+Contoh ini memperlihatkan cara mendapatkan titik akhir dan metadata untuk lingkungan AzureUSGovernment.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama instans Azure yang akan dapatkan.
+Menentukan nama instans Azure yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -155,7 +155,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Add-AzEnvironment](./Add-AzEnvironment.md)
 
-[Remove-AzEnvironment](./Remove-AzEnvironment.md)
+[Hapus-AzEnvironment](./Remove-AzEnvironment.md)
 
 [Set-AzEnvironment](./Set-AzEnvironment.md)
 

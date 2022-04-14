@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Add-AzLoadBalancerInboundNatRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Add-AzLoadBalancerInboundNatRuleConfig.md
 ms.openlocfilehash: 6a699907b70256995973bfdbde4e11b08c594669
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "132414582"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141810986"
 ---
 # Add-AzLoadBalancerInboundNatRuleConfig
 
 ## SYNOPSIS
-Menambahkan konfigurasi aturan NAT masuk ke penyeimbang muat.
+Menambahkan konfigurasi aturan NAT masuk ke penyeimbang muatan.
 
 ## SYNTAX
 
@@ -37,24 +37,24 @@ Add-AzLoadBalancerInboundNatRuleConfig -Name <String> -LoadBalancer <PSLoadBalan
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzLoadBalancerInboundNatRuleConfig** menambahkan konfigurasi aturan penerjemahan alamat jaringan masuk (NAT, Inbound Network Address Translation) ke penyeimbang muat Azure.
+Cmdlet **Add-AzLoadBalancerInboundNatRuleConfig** menambahkan konfigurasi aturan terjemahan alamat jaringan masuk (NAT) ke penyeimbang muatan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan konfigurasi aturan NAT masuk ke penyeimbang muat
+### Contoh 1: Menambahkan konfigurasi aturan NAT masuk ke penyeimbang muat
 ```
 PS C:\>$slb = Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 PS C:\> $slb | Add-AzLoadBalancerInboundNatRuleConfig -Name "NewNatRule" -FrontendIPConfiguration $slb.FrontendIpConfigurations[0] -Protocol "Tcp" -FrontendPort 3350 -BackendPort 3350  -EnableFloatingIP
 ```
 
-Perintah pertama mendapatkan penyeimbang muat bernama MyloadBalancer, lalu menyimpannya dalam variabel $slb.
+Perintah pertama mendapatkan load balancer bernama MyloadBalancer, lalu menyimpannya dalam variabel $slb.
 
-Perintah kedua menggunakan operator pipeline untuk memasukkan penyeimbang muat di $slb ke **Add-AzLoadBalancerInboundNatRuleConfig**, yang menambahkan konfigurasi aturan NAT masuk ke penyeimbang muat.
+Perintah kedua menggunakan operator pipeline untuk mengirimkan load balancer dalam $slb ke **Add-AzLoadBalancerInboundNatRuleConfig**, yang menambahkan konfigurasi aturan NAT masuk ke load balancer.
 
 ## PARAMETERS
 
 ### -BackendPort
-Menentukan port backend untuk lalu lintas sesuai dengan konfigurasi aturan.
+Menentukan port backend untuk lalu lintas yang cocok dengan konfigurasi aturan.
 
 ```yaml
 Type: Int32
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableFloatingIP
-Mengindikasikan bahwa cmdlet ini mengaktifkan alamat IP mengambang untuk konfigurasi aturan.
+Menunjukkan bahwa cmdlet ini memungkinkan alamat IP mengambang untuk konfigurasi aturan.
 
 ```yaml
 Type: SwitchParameter
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendIpConfiguration
-Menentukan daftar alamat IP ujung depan untuk dikaitkan dengan konfigurasi aturan NAT masuk.
+Menentukan daftar alamat IP ujung-depan untuk dikaitkan dengan konfigurasi aturan NAT masuk.
 
 ```yaml
 Type: PSFrontendIPConfiguration
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendIpConfigurationId
-Menentukan ID untuk konfigurasi alamat IP ujung-depan.
+Menentukan ID untuk konfigurasi alamat IP ujung depan.
 
 ```yaml
 Type: String
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendPort
-Menentukan port ujung-depan yang sesuai dengan konfigurasi aturan.
+Menentukan port ujung depan yang cocok dengan konfigurasi aturan.
 
 ```yaml
 Type: Int32
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdleTimeoutInMinutes
-Menentukan durasi waktu, dalam menit, bahwa status percakapan dipertahankan dalam penyeimbang muat.
+Menentukan lamanya waktu, dalam menit, bahwa status percakapan dipertahankan dalam penyeimbang beban.
 
 ```yaml
 Type: Int32
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 
 ### -LoadBalancer
 Menentukan objek **LoadBalancer** .
-Cmdlet ini menambahkan konfigurasi aturan NAT masuk ke penyeimbang muat yang ditentukan parameter ini.
+Cmdlet ini menambahkan konfigurasi aturan NAT masuk ke penyeimbang beban yang ditentukan parameter ini.
 
 ```yaml
 Type: PSLoadBalancer
@@ -189,8 +189,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
-Menentukan protokol yang sesuai dengan aturan NAT masuk.
+### -Protokol
+Menentukan protokol yang cocok dengan aturan NAT masuk.
 Nilai yang dapat diterima untuk parameter ini adalah: Tcp atau Udp.
 
 ```yaml
@@ -207,12 +207,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSLoadBalancer
-Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari saluran
+Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari pipeline
 
 ## OUTPUTS
 

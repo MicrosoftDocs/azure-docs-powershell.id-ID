@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlElasticPoolAdvisor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlElasticPoolAdvisor.md
 ms.openlocfilehash: f6b8fba0fd629493fdd848708db009e09c86e417
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423281"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141774680"
 ---
 # Get-AzureRmSqlElasticPoolAdvisor
 
 ## SYNOPSIS
-Dapatkan satu atau beberapa Penasihat untuk Azure SQL Elastis Pool.
+Mendapatkan satu atau beberapa Penasihat untuk Azure SQL Elastic Pool.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,11 +29,11 @@ Get-AzureRmSqlElasticPoolAdvisor [-AdvisorName <String>] [-ExpandRecommendedActi
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmSqlElasticPoolAdvisor** mendapatkan satu atau beberapa Azure SQL Elastis Pool Advisor untuk Pool Elastis Azure SQL Elastis.
+Cmdlet **Get-AzureRmSqlElasticPoolAdvisor** mendapatkan satu atau beberapa Azure SQL Elastic Pool Advisors untuk Azure SQL Elastic Pool.
 
 ## EXAMPLES
 
-### Contoh 1: Daftar semua penasihat untuk pool elastis tertentu
+### Contoh 1: Mencantumkan semua penasihat untuk kumpulan elastis yang ditentukan
 ```
 PS C:\>Get-AzureRmSqlElasticPoolAdvisor -ResourceGroupName "WIRunnersProd" -ServerName "wi-runner-australia-east" -PoolName "WIRunnerPool"
 ElasticPoolName                : WIRunnerPool
@@ -81,9 +81,9 @@ RecommendationsStatus          : SchemaIsConsistent
 RecommendedActions             : {}
 ```
 
-Perintah tersebut akan mencantumkan semua penasihat untuk kolam elastis yang bernama WIRunnerPool.
+Perintah akan mencantumkan semua penasihat untuk kumpulan elastis bernama WIRunnerPool.
 
-### Contoh 2: Mendapatkan penasihat tunggal untuk pool elastis tertentu
+### Contoh 2: Dapatkan penasihat tunggal untuk kumpulan elastis yang ditentukan
 ```
 PS C:\>Get-AzureRmSqlElasticPoolAdvisor -ResourceGroupName "WIRunnersProd" -ServerName "wi-runner-australia-east" -ElasticPoolName "WIRunnerPool" -AdvisorName "CreateIndex"
 ElasticPoolName                : WIRunnerPool
@@ -98,9 +98,9 @@ RecommendationsStatus          : Ok
 RecommendedActions             : {}
 ```
 
-Perintah ini mendapatkan Penasihat bernama CreateIndex untuk kolam elastis yang bernama WIRunnerPool.
+Perintah ini mendapatkan Penasihat bernama CreateIndex untuk kumpulan elastis bernama WIRunnerPool.
 
-### Contoh 3: Mencantumkan semua penasihat dengan tindakan yang disarankan yang disertakan dalam respons
+### Contoh 3: Mencantumkan semua penasihat dengan tindakan yang direkomendasikan yang disertakan dalam respons
 ```
 PS C:\>Get-AzureRmSqlElasticPoolAdvisor -ResourceGroupName "WIRunnersProd" -ServerName "wi-runner-australia-east" -ElasticPoolName "WIRunnerPool" -ExpandRecommendedActions
 ElasticPoolName                : WIRunnerPool
@@ -154,9 +154,9 @@ RecommendationsStatus          : SchemaIsConsistent
 RecommendedActions             : {}
 ```
 
-Perintah ini akan mendapatkan semua penasihat untuk pool elastis dengan tindakan yang direkomendasikan yang disertakan dalam respons.
+Perintah ini mendapatkan semua penasihat untuk kumpulan elastis dengan tindakan yang direkomendasikan yang disertakan dalam respons.
 
-### Contoh 4: Dapatkan satu penasihat dengan tindakan yang direkomendasikan yang disertakan dalam respons
+### Contoh 4: Dapatkan penasihat tunggal dengan tindakan yang direkomendasikan yang disertakan dalam respons
 ```
 PS C:\>Get-AzureRmSqlElasticPoolAdvisor -ResourceGroupName "WIRunnersProd" -ServerName "wi-runner-australia-east" -ElasticPoolName "WIRunnerPool" -AdvisorName "CreateIndex" -ExpandRecommendedActions
 ElasticPoolName                : WIRunnerPool
@@ -174,12 +174,12 @@ RecommendedActions             : {IR_[test_schema]_[test_table_0.0361551]_6C7AE8
                                  IR_[test_schema]_[test_table_0.437714]_6C7AE8CC9C87E7FD5893...}
 ```
 
-Perintah ini mendapatkan penasihat bernama CreateIndex dari server yang bernama wi-runner-australia-east dengan tindakan yang disarankan yang disertakan dalam respons.
+Perintah ini mendapatkan penasihat bernama CreateIndex dari server bernama wi-runner-australia-east dengan tindakan yang direkomendasikan yang disertakan dalam respons.
 
 ## PARAMETERS
 
 ### -AdvisorName
-Menentukan nama Penasihat yang akan dapatkan cmdlet ini.
+Menentukan nama Penasihat yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -208,8 +208,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ElastisPoolName
-Menentukan nama pool elastis di mana cmdlet ini meminta Penasihat.
+### -ElasticPoolName
+Menentukan nama kumpulan elastis yang meminta cmdlet ini kepada Penasihat.
 
 ```yaml
 Type: System.String
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpandRecommendedActions
-Menunjukkan bahwa cmdlet menyertakan tindakan penasihat yang disarankan dalam respons.
+Menunjukkan bahwa cmdlet menyertakan tindakan yang disarankan dari Penasihat dalam respons.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya server yang berisi kelompok elastis ini.
+Menentukan nama grup sumber daya server yang berisi kumpulan elastis ini.
 
 ```yaml
 Type: System.String
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server tempat kolam elastis berada.
+Menentukan nama server tempat kumpulan elastis berada.
 
 ```yaml
 Type: System.String
@@ -269,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -279,10 +279,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.sql.Advisor.Model.AzureSqlElasticPoolAdvisorModel
+### Microsoft.Azure.Commands.Sql.Advisor.Model.AzureSqlElasticPoolAdvisorModel
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, sql, elastispool, mssql, penasihat
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, elastispool, mssql, penasihat
 
 ## RELATED LINKS
 
@@ -294,4 +294,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzureRmSqlElasticPoolAdvisorAutoExecuteStatus](./Set-AzureRmSqlElasticPoolAdvisorAutoExecuteStatus.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

@@ -6,23 +6,23 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualWanVpnServerConfigurationVpnProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualWanVpnServerConfigurationVpnProfile.md
 ms.openlocfilehash: c805c56fb38f680793e3fd6d8af8f84e14dbe9d6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139935385"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141863276"
 ---
 # Get-AzVirtualWanVpnServerConfigurationVpnProfile
 
 ## SYNOPSIS
-Menghasilkan dan mengunduh profil Vpn VirtualWan-VpnServerConfiguration tingkat untuk Arahkan ke penyiapan klien situs.
+Menghasilkan dan mengunduh profil Vpn pada tingkat VirtualWan-VpnServerConfiguration untuk penyiapan klien point to site.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azvirtualwanvpnserverconfigurationvpnprofile) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualwanvpnserverconfigurationvpnprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
-### ByVirtualWanNameByServerConfigurationObject (Default)
+### ByVirtualWanNameByVpnServerConfigurationObject (Default)
 ```
 Get-AzVirtualWanVpnServerConfigurationVpnProfile [-Name <String>] -ResourceGroupName <String>
  -VpnServerConfiguration <PSVpnServerConfiguration> [-AuthenticationMethod <String>]
@@ -36,7 +36,7 @@ Get-AzVirtualWanVpnServerConfigurationVpnProfile [-Name <String>] -ResourceGroup
  [<CommonParameters>]
 ```
 
-### ByVirtualWanObjectByServerConfigurationObject
+### ByVirtualWanObjectByVpnServerConfigurationObject
 ```
 Get-AzVirtualWanVpnServerConfigurationVpnProfile -VirtualWanObject <PSVirtualWan>
  -VpnServerConfiguration <PSVpnServerConfiguration> [-AuthenticationMethod <String>]
@@ -64,7 +64,7 @@ Get-AzVirtualWanVpnServerConfigurationVpnProfile -ResourceId <String> -VpnServer
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVirtualWanVpnServerConfigurationVpnProfile** memungkinkan Anda membuat dan mengunduh profil Vpn VirtualWan-VpnServerConfiguration tingkat untuk penyetelan klien situs Arahkan ke. Hal ini diperlukan agar konektivitas arahkan ke situs dari Klien titik ke situs ke Azure P2SVpnGateway.
+Cmdlet **Get-AzVirtualWanVpnServerConfigurationVpnProfile** memungkinkan Anda menghasilkan dan mengunduh profil Vpn pada tingkat VirtualWan-VpnServerConfiguration untuk penyiapan klien Point to site. Hal ini diperlukan untuk konektivitas situs Point to site dari Point ke site client ke Azure P2SVpnGateway.
 
 ## EXAMPLES
 
@@ -76,7 +76,7 @@ ProfileUrl : https://nfvprodsuppby.blob.core.windows.net/vpnprofileimmutable/aa3
              qsEAbWAcYiKfUHFxZzh2hwvtb49dfVtUDA%3D&st=2019-10-25T19%3A52%3A36Z&se=2019-10-25T20%3A52%3A36Z&sp=r&fileExtension=.zip
 ```
 
-Perintah di atas akan menghasilkan dan mengembalikan URL SAS pelanggan untuk mengunduh profil Vpn VirtualWan-VpnServerConfiguration tingkat untuk penyiapan klien situs Poin ke.
+Perintah di atas akan menghasilkan dan mengembalikan URL SAS bagi pelanggan untuk mengunduh profil Vpn pada tingkat VirtualWan-VpnServerConfiguration untuk penyiapan klien Point to site.
 
 ## PARAMETERS
 
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnServerConfiguration
-VpnServerConfiguration yang dikaitkan dengan VirtualWan ini.
+VpnServerConfiguration yang terkait dengan VirtualWan ini.
 
 ```yaml
 Type: PSVpnServerConfiguration
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnServerConfigurationId
-Id objek Konfigurasi server Vpn wan Virtual ini akan dikaitkan.
+Id vpn server configuraiton objek wan Virtual ini akan dikaitkan dengan.
 
 ```yaml
 Type: String
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

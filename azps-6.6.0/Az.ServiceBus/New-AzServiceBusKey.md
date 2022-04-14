@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusKey.md
 ms.openlocfilehash: 12b1fc24a28ff0b8b5c0509eb99ec3cbf41bcdee
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140277007"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141859748"
 ---
 # New-AzServiceBusKey
 
 ## SYNOPSIS
-Meregenerasi string koneksi utama atau sekunder untuk ruang Bus Layanan nama atau antrean atau topik.
+Meregenerasi string koneksi utama atau sekunder untuk ruang nama atau antrean atau topik Bus Layanan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/new-azservicebuskey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/new-azservicebuskey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,14 +29,14 @@ New-AzServiceBusKey [-ResourceGroupName] <String> [-Namespace] <String> [-Name] 
  [<CommonParameters>]
 ```
 
-### QueueAuthorizationRuleSet
+### AntreanAuthorizationRuleSet
 ```
 New-AzServiceBusKey [-ResourceGroupName] <String> [-Namespace] <String> [-Queue] <String> [-Name] <String>
  -RegenerateKey <String> [-KeyValue <String>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### TopicAuthorizationRuleSet
+### TopikAuthorizationRuleSet
 ```
 New-AzServiceBusKey [-ResourceGroupName] <String> [-Namespace] <String> [-Topic] <String> [-Name] <String>
  -RegenerateKey <String> [-KeyValue <String>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
@@ -44,7 +44,7 @@ New-AzServiceBusKey [-ResourceGroupName] <String> [-Namespace] <String> [-Topic]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzServiceBusKey** menghasilkan string koneksi utama atau sekunder baru untuk kumpulan nama atau antrean atau topik dan aturan otorisasi yang ditentukan.
+Cmdlet **New-AzServiceBusKey** menghasilkan string koneksi utama atau sekunder baru untuk ruang nama atau antrean atau aturan topik dan otorisasi yang ditentukan.
 
 ## EXAMPLES
 
@@ -81,14 +81,14 @@ Meregenerasi string koneksi utama atau sekunder dengan nilai Kunci yang disediak
 PS C:\> New-AzServiceBusKey -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Topic SBTopic -Name AuthoRule1 -RegenerateKey PrimaryKey
 ```
 
-Meregenerasi string koneksi utama atau sekunder untuk topik ini.
+Meregenerasi string koneksi utama atau sekunder untuk topik tersebut.
 
 ### Contoh 6
 ```powershell
 PS C:\> New-AzServiceBusKey -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Topic SBTopic -Name AuthoRule1 -RegenerateKey PrimaryKey -KeyValue {base64-encoded 256-bit key}
 ```
 
-Meregenerasi string koneksi utama atau sekunder dengan nilai Kunci yang disediakan untuk topik ini.
+Meregenerasi string koneksi utama atau sekunder dengan nilai Kunci yang disediakan untuk topik tersebut.
 
 ## PARAMETERS
 
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyValue
-Kunci 256-bit berkode basis64 untuk menandatangani dan memvalidasi token SAS.
+Kunci 256-bit berkode base64 untuk menandatangani dan memvalidasi token SAS.
 
 ```yaml
 Type: System.String
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegenerateKey
-Tombol regenerasi - 'PrimaryKey'/'SecondaryKey'.
+Regenerasi Tombol - 'PrimaryKey'/'SecondaryKey'.
 
 ```yaml
 Type: System.String
@@ -198,7 +198,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Topic
+### -Topik
 Nama Topik
 
 ```yaml
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -230,7 +230,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -245,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

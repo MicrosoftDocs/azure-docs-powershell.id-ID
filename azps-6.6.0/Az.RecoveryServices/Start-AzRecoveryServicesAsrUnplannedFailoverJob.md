@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrUnplannedFailoverJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrUnplannedFailoverJob.md
 ms.openlocfilehash: 16259ed9cf3a42fb5722c95d9f301b8efaefc75d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140247697"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141861008"
 ---
 # Start-AzRecoveryServicesAsrUnplannedFailoverJob
 
 ## SYNOPSIS
-Memulai operasi failover yang tidak terencana.
+Memulai operasi failover yang tidak dienkripsi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/start-azrecoveryservicesasrunplannedfailoverjob) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/start-azrecoveryservicesasrunplannedfailoverjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,8 +47,8 @@ Start-AzRecoveryServicesAsrUnplannedFailoverJob -ReplicationProtectedItem <ASRRe
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzRecoveryServicesAsrUnplannedFailoverJob** memulai failover yang tidak terencana dari item terproteksi replikasi Situs Azure atau paket pemulihan.
-Anda dapat memeriksa apakah pekerjaan berhasil menggunakan cmdlet Get-AzRecoveryServicesAsrJob cmdlet.
+Cmdlet **Start-AzRecoveryServicesAsrUnplannedFailoverJob** memulai failover terencana item terproteksi azure Site Recovery replikasi atau rencana pemulihan.
+Anda dapat memeriksa apakah pekerjaan berhasil menggunakan cmdlet Get-AzRecoveryServicesAsrJob.
 
 ## EXAMPLES
 
@@ -57,11 +57,11 @@ Anda dapat memeriksa apakah pekerjaan berhasil menggunakan cmdlet Get-AzRecovery
 PS C:\> $currentJob = Start-AzRecoveryServicesAsrUnplannedFailoverJob -RecoveryPlan $RP -Direction PrimaryToRecovery -VMNetwork $RecoveryNetwork
 ```
 
-Memulai operasi failover tidak terencana untuk paket pemulihan dengan parameter tertentu dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Memulai operasi failover tidak terencana untuk rencana pemulihan dengan parameter tertentu dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ### Contoh 2
 
-Memulai operasi failover yang tidak terencana. (otomatisgenerated)
+Memulai operasi failover yang tidak dienkripsi. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -71,7 +71,7 @@ Start-AzRecoveryServicesAsrUnplannedFailoverJob -Direction PrimaryToRecovery -Re
 ## PARAMETERS
 
 ### -DataEncryptionPrimaryCertFile
-Menentukan jalur file sertifikat utama enkripsi data untuk failover dari Item Yang Diproteksi.
+Menentukan jalur file sertifikat utama enkripsi data untuk kegagalan Item Terproteksi.
 
 ```yaml
 Type: System.String
@@ -85,8 +85,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DataEncryptionSeccryptryCertFile
-Menentukan jalur file sertifikat enkripsi data untuk failover dari Item Yang Diproteksi.
+### -DataEncryptionSecondaryCertFile
+Menentukan jalur file sertifikat sekunder enkripsi data untuk kegagalan Item Terproteksi.
 
 ```yaml
 Type: System.String
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -MultiVmSyncPoint
-Menentukan apakah akan mengaktifkan poin sinkronisasi multi VM untuk failover dari VM sync multi VM yang diaktifkan (Hanya berlaku untuk skenario replikasi VMware ke Azure).
+Menentukan apakah akan mengaktifkan titik sinkronisasi multi VM untuk kegagalan sinkronisasi multi VM yang diaktifkan VM (Berlaku hanya untuk VMware ke skenario replikasi Azure).
 
 ```yaml
 Type: System.String
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -PerformSourceSideAction
-Lakukan operasi di sisi sumber sebelum memulai failover yang tidak terencana.
+Jalankan operasi di sisi sumber sebelum memulai failover yang tidak dienkripsi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryPoint
-Menentukan titik pemulihan kustom ke failover tempat mesin yang diproteksi diproteksi. Jika tidak ditentukan, ASR akan memproses tulisan yang tertunda dan memilih titik pemulihan terbaru (RPO terendah).
+Menentukan titik pemulihan kustom untuk failover mesin yang dilindungi. Jika tidak ditentukan, ASR akan memproses tulisan tertunda dan memilih titik pemulihan terbaru (RPO terendah).
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRecoveryPoint
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryTag
-Menentukan tag pemulihan ke failover.
+Menentukan tag pemulihan untuk di-failover.
 
 ```yaml
 Type: System.String
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicationProtectedItem
-Menentukan item replikasi situs Azure yang diproteksi.
+Menentukan item yang diproteksi replikasi pemulihan situs azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem
@@ -242,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -257,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -272,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

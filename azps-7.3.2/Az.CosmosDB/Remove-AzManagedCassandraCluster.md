@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzManagedCassandraCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzManagedCassandraCluster.md
-ms.openlocfilehash: e0733c87bbd6ec888d8e2698db9ac12e8f6a2e38
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 842b08f9e8e3f668ff8b49e21a58ede090623917
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140201510"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141896571"
 ---
 # Remove-AzManagedCassandraCluster
 
 ## SYNOPSIS
-Menghapus Azure Managed Instances untuk kluster Apache Apache Apache.
+Menghapus Instans Terkelola Azure untuk klaster Apache Cassandra.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/remove-azmanagedcassandracluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Remove-AzManagedCassandraCluster
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzManagedCass clusterCluster** menghapus kluster Cmdlet Cmdlet yang dikelola dan semua pusat data di dalamnya.
+**Cmdlet Remove-AzManagedCassandraCluster** menghapus kluster Cassandra yang dikelola dan semua pusat data di dalamnya.
 
 ## EXAMPLES
 
@@ -72,7 +75,7 @@ PS C:\> $clusterResource | Remove-AzManagedCassandraCluster
 ## PARAMETERS
 
 ### -ClusterName
-Nama kluster Properti terkelola.
+Nama kluster Cassandra yang dikelola.
 
 ```yaml
 Type: System.String
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek kluster yang akan dihapus.
+Objek kluster untuk dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSClusterResource
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya dari kluster Failover yang dikelola.
+Id sumber daya dari kluster Cassandra yang dikelola.
 
 ```yaml
 Type: System.String
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

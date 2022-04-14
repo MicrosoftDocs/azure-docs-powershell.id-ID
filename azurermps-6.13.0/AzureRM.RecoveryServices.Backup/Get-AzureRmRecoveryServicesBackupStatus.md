@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.recov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/Get-AzureRmRecoveryServicesBackupStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/Get-AzureRmRecoveryServicesBackupStatus.md
-ms.openlocfilehash: ceb8e677ed4a205e8fd1c7db6d986d7c09299e5cdb375fc4956b9f2ba78be9e4
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 00d7bb2c58abfa466b0c4843eb480b43b08b3d90
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140862056"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141818717"
 ---
 # Get-AzureRmRecoveryServicesBackupStatus
 
@@ -34,7 +34,7 @@ Get-AzureRmRecoveryServicesBackupStatus -ResourceId <String> [-DefaultProfile <I
 ```
 
 ## DESCRIPTION
-Perintah akan mengembalikan null/kosong jika sumber daya yang ditentukan tidak dilindungi di bawah vault Layanan Pemulihan apa pun dalam langganan. Jika dilindungi, detail vault yang relevan akan dikembalikan.
+Perintah mengembalikan null/kosong jika sumber daya yang ditentukan tidak dilindungi di bawah kubah Layanan Pemulihan apa pun dalam langganan. Jika dilindungi, detail kubah yang relevan akan dikembalikan.
 
 ## EXAMPLES
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Sumber Daya Azure yang merupakan item perwakilannya perlu diperiksa jika sudah dilindungi oleh beberapa Vault Layanan Pemulihan dalam langganan.
+Nama Sumber Daya Azure yang item representatifnya perlu diperiksa jika item tersebut sudah dilindungi oleh beberapa Vault Layanan Pemulihan dalam langganan.
 
 ```yaml
 Type: System.String
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya Sumber Daya Azure yang merupakan item representatifnya perlu diperiksa jika item telah dilindungi oleh beberapa Vault Layanan Pemulihan dalam langganan.
+Nama grup sumber daya Azure Resource yang item representatifnya perlu diperiksa jika item tersebut sudah dilindungi oleh beberapa Vault Layanan Pemulihan dalam langganan.
 
 ```yaml
 Type: System.String
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID Sumber Daya Azure yang merupakan item perwakilannya perlu diperiksa jika item tersebut sudah dilindungi oleh beberapa RecoveryService Vault dalam langganan.
+ID Sumber Daya Azure yang item representatifnya perlu diperiksa apakah item tersebut sudah dilindungi oleh beberapa Vault Layanan Pemulihan dalam langganan.
 
 ```yaml
 Type: System.String
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Nama Sumber Daya Azure yang merupakan item perwakilannya perlu diperiksa jika sudah dilindungi oleh beberapa Vault Layanan Pemulihan dalam langganan.
+Nama Sumber Daya Azure yang item representatifnya perlu diperiksa jika item tersebut sudah dilindungi oleh beberapa Vault Layanan Pemulihan dalam langganan.
 
 ```yaml
 Type: System.String
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

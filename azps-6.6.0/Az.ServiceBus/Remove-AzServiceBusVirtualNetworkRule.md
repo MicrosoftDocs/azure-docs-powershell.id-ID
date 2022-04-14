@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusVirtualNetworkRule.md
 ms.openlocfilehash: 73d796952c948586f03d3052c89d297037b9ad9d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140066159"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141859712"
 ---
 # Remove-AzServiceBusVirtualNetworkRule
 
 ## SYNOPSIS
-Menghapus tunggal VirtualNetworkRule untuk NetworkRuleSet dari Kumpulan Nama
+Menghapus single yang diberikan VirtualNetworkRule untuk NetworkRuleSet dari Namespace
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/remove-azservicebusvirtualnetworkrule) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/remove-azservicebusvirtualnetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Remove-AzServiceBusVirtualNetworkRule [-ResourceGroupName] <String> [-Name] <Str
 ```
 
 ## DESCRIPTION
-Menghapus tunggal VirtualNetworkRule untuk NetworkRuleSet dari Kumpulan Nama
+Menghapus single yang diberikan VirtualNetworkRule untuk NetworkRuleSet dari Namespace
 
 ## EXAMPLES
 
@@ -45,20 +45,20 @@ Menghapus tunggal VirtualNetworkRule untuk NetworkRuleSet dari Kumpulan Nama
 PS C:\> Remove-AzServiceBusVirtualNetworkRule -ResourceGroupName v-ajnavtest -Namespace ServiceBus-Namespace1-2389 -SubnetId "/subscriptions/SubscriptionId/resourcegroups/ResourceGroup/v-ajnavtest/providers/Microsoft.Network/virtualNetworks/sbehvnettest1/subnets/sbdefault01"
 ```
 
-Menghapus tunggal VirtualNetworkRule untuk NetworkRuleSet dari Kumpulan Nama
+Menghapus single yang diberikan VirtualNetworkRule untuk NetworkRuleSet dari Namespace
 
 ### Contoh 2
 ```powershell
 PS C:\> Remove-AzServiceBusVirtualNetworkRule -ResourceGroupName v-ajnavtest -Namespace ServiceBus-Namespace1-2389 -VirtualNetworkRuleObject $virtualruleset1
 ```
 
-Menghapus $virtualruleset 1 dari NetworkRuleSet untuk Kumpulan Nama
+Menghapus $virtualruleset 1 NetworkRuleSet untuk Namespace tertentu
 
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{fill passThru Description}}
+{{Fill PassThru Description}}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkRuleObject
-Objek Konfigurasi IPRule
+Objek Konfigurasi IpRule
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceBus.Models.PSNWRuleSetVirtualNetworkRulesAttributes
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

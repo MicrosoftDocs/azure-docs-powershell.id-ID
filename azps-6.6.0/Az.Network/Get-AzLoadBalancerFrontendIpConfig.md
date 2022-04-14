@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerFrontendIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerFrontendIpConfig.md
 ms.openlocfilehash: a4a932e8f5afd3f60b049a61ae75c221cf25b426
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139935853"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141863708"
 ---
 # Get-AzLoadBalancerFrontendIpConfig
 
 ## SYNOPSIS
-Mendapatkan konfigurasi IP front-end di penyeimbang muat.
+Mendapatkan konfigurasi IP ujung depan dalam penyeimbang beban.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azloadbalancerfrontendipconfig) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azloadbalancerfrontendipconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,23 +29,23 @@ Get-AzLoadBalancerFrontendIpConfig -LoadBalancer <PSLoadBalancer> [-Name <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzLoadBalancerFrontendIpConfig mendapatkan konfigurasi IP front-end** atau daftar konfigurasi IP ujung-depan dalam penyeimbang muat.
+Cmdlet **Get-AzLoadBalancerFrontendIpConfig** mendapatkan konfigurasi IP front-end atau daftar konfigurasi IP front-end dalam load balancer.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan konfigurasi IP front-end dalam penyeimbang muat
+### Contoh 1: Dapatkan konfigurasi IP ujung depan dalam penyeimbang muat
 ```
 PS C:\>$slb = Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 PS C:\> Get-AzLoadBalancerFrontendIpConfig -Name "MyFrontEnd" -LoadBalancer $slb
 ```
 
-Perintah pertama mendapatkan penyeimbang muat bernama MyLoadBalancer, lalu menyimpannya di nilai $slb.
-Perintah kedua mendapatkan konfigurasi IP ujung depan yang terkait dengan penyeimbang muat tersebut.
+Perintah pertama mendapatkan load balancer bernama MyLoadBalancer, lalu menyimpannya dalam variabel $slb.
+Perintah kedua mendapatkan konfigurasi IP ujung depan yang terkait dengan penyeimbang muatan tersebut.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan penyeimbang muat yang terkait dengan konfigurasi IP front-end yang akan dapatkan.
+Menentukan penyeimbang muatan yang terkait dengan konfigurasi IP ujung depan yang akan didapatkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama penyeimbang muat yang berisi konfigurasi IP ujung-depan untuk mendapatkan.
+Menentukan nama penyeimbang muatan yang berisi konfigurasi IP ujung depan yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBGremlinDatabaseThroughput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBGremlinDatabaseThroughput.md
-ms.openlocfilehash: 8a4b456f2b0aaf4e3a647adbcd4a8da35ba04160
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1dc953e61a0b4bd930bff3e2c00a2b49b75ed0d2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140179978"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141897075"
 ---
 # Get-AzCosmosDBGremlinDatabaseThroughput
 
 ## SYNOPSIS
-Mendapatkan throughput Database CosmosDB Azuremlin.
+Mendapatkan throughput Database Gremlin CosmosDB.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbgremlindatabasethroughput) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzCosmosDBGremlinDatabaseThroughput -Name <String> -InputObject <PSDatabaseA
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCosmosDBGremlinDatabaseThroughput** mendapatkan throughput Database CosmosDB Database Azure.
+Cmdlet **Get-AzCosmosDBGremlinDatabaseThroughput** mendapatkan throughput Database Gremlin CosmosDB.
 
 ## EXAMPLES
 
@@ -48,7 +51,7 @@ OfferReplacePending: {value}
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun database Cosmos DB.
 
 ```yaml
@@ -124,11 +127,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

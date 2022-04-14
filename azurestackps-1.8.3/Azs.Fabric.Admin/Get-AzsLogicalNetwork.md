@@ -4,11 +4,11 @@ Module Name: Azs.Fabric.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 88d9fc8456c86f0806313bb0234e145b7f4d727a
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136577206"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141878000"
 ---
 # Get-AzsLogicalNetwork
 
@@ -23,7 +23,7 @@ Get-AzsLogicalNetwork [-Location <String>] [-ResourceGroupName <String>] [-Filte
  [-Top <Int32>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsLogicalNetwork [-Name] <String> [-Location <String>] [-ResourceGroupName <String>] [<CommonParameters>]
 ```
@@ -43,19 +43,19 @@ Mengembalikan daftar semua jaringan logika di suatu lokasi.
 Get-AzsLogicalNetwork
 ```
 
-Mendapatkan semua jaringan logika di satu lokasi.
+Dapatkan semua jaringan logika di suatu lokasi.
 
 ### CONTOH 2
 ```
 Get-AzsLogicalNetwork -Name "bb6c6f28-bad9-441b-8e62-57d2be255904"
 ```
 
-Dapatkan jaringan logika tertentu pada lokasi berdasarkan nama.
+Dapatkan jaringan logika tertentu di lokasi berdasarkan nama.
 
 ## PARAMETERS
 
 ### -Nama
-Nama jaringan logis.
+Nama jaringan logika.
 
 ```yaml
 Type: String
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
