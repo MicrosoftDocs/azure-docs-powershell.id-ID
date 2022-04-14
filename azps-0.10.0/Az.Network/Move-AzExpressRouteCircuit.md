@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Move-AzExpressRouteCircuit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Move-AzExpressRouteCircuit.md
 ms.openlocfilehash: ffa10dca752adaeebbdd6fbf92a6a16b094a3085
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425765"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142056971"
 ---
 # Move-AzExpressRouteCircuit
 
 ## SYNOPSIS
-Memindahkan sirkuit ExpressRoute dari model penyebaran klasik ke model penyebaran Manajer Sumber Daya.
+Memindahkan sirkuit ExpressRoute dari model penyebaran klasik ke model penyebaran Resource Manager.
 
 ## SYNTAX
 
@@ -27,11 +27,11 @@ Move-AzExpressRouteCircuit -Name <String> -ResourceGroupName <String> -Location 
 ```
 
 ## DESCRIPTION
-Cmdlet **Move-AzExpressRouteCircuit** memindahkan sirkuit ExpressRoute dari model penyebaran klasik ke model penyebaran Manajer Sumber Daya. Setelah pemindahan, sirkuit ExpressRoute berperilaku dan berjalan seperti sirkuit ExpressRoute lainnya yang dibuat dalam model penggunaan Manajer Sumber Daya. Link sirkuit, jaringan virtual, dan gateway VPN tidak dipindahkan melalui operasi ini. Sumber daya tersebut perlu dikonfigurasi ulang setelah pemindahan tersebut.
+Cmdlet **Move-AzExpressRouteCircuit** memindahkan sirkuit ExpressRoute dari model penyebaran klasik ke model penyebaran Resource Manager. Setelah perpindahan, sirkuit ExpressRoute berulah dan berkinerja seperti sirkuit ExpressRoute lainnya yang dibuat dalam model penyebaran Resource Manager. Link sirkuit, jaringan virtual, dan gateway VPN tidak dipindahkan melalui operasi ini. Sumber daya tersebut perlu dikonfigurasi ulang setelah pemindahan.
 
 ## EXAMPLES
 
-### Contoh 1: Memindahkan sirkuit ExpressRoute ke model penyebaran Manajer Sumber Daya
+### Contoh 1: Memindahkan sirkuit ExpressRoute ke model penyebaran Resource Manager
 ```
 Move-AzExpressRouteCircuit -Name $CircuitName -ResourceGroupName $RG -Location $Location -ServiceKey $ServiceKey
 ```
@@ -39,7 +39,7 @@ Move-AzExpressRouteCircuit -Name $CircuitName -ResourceGroupName $RG -Location $
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -54,7 +54,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -68,8 +68,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: SwitchParameter
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang akan berisi sirkuit ExpressRoute yang akan dipindahkan.
+Nama grup sumber daya yang akan berisi sirkuit ExpressRoute sedang dipindahkan.
 
 ```yaml
 Type: String
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Update-AzContainerRegistryManifest.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Update-AzContainerRegistryManifest.md
 ms.openlocfilehash: a44c799eec3083fb14683e7d8c4df2268e7a6858
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140311567"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142307383"
 ---
 # Update-AzContainerRegistryManifest
 
@@ -18,11 +18,11 @@ ms.locfileid: "140311567"
 Perbarui manifes ACR. 
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerregistry/update-azcontainerregistrymanifest) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/update-azcontainerregistrymanifest) untuk informasi terbaru.
 
 ## SYNTAX
 
-### ByFestfestParameterSet (Default)
+### ByManifestParameterSet (Default)
 ```
 Update-AzContainerRegistryManifest -RepositoryName <String> -Manifest <String> [-DeleteEnabled <Boolean>]
  [-WriteEnabled <Boolean>] [-ListEnabled <Boolean>] [-ReadEnabled <Boolean>] -RegistryName <String>
@@ -39,7 +39,7 @@ Update-AzContainerRegistryManifest -RepositoryName <String> -Tag <String> [-Dele
 ## DESCRIPTION
 Perbarui manifes ACR.
 Untuk menggunakan cmdlet ini silakan jalankan `Update-AzContainerRegistryRepository -RegistryName XXX -Repository XXX -WriteEnable $true`
-pertama.
+Pertama.
 
 ## EXAMPLES
 
@@ -52,7 +52,7 @@ Registry                    ImageName Attributes
 registry.azurecr.io alpine    Microsoft.Azure.Commands.ContainerRegistry.Models.PSManifestAttributeBase
 ```
 
-Perbarui atribut untuk manifes sha256:185518070891758909c9f839cf4ca393ee977ac378609f700f60a771a2dfe321 di bawah registri.
+Memperbarui atribut untuk manifest sha256:185518070891758909c9f839cf4ca393ee977ac378609f700f60a771a2dfe321 di bawah registri.
 
 ### Contoh 2
 ```powershell
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeleteEnabled
-Hapus aktif.
+Hapus aktifkan.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReadEnabled
-Baca diaktifkan.
+Baca aktifkan.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistryName
-Nama Registri Azure Container.
+Nama Registri Kontainer Azure.
 
 ```yaml
 Type: System.String
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Beri tag.
+Tandai.
 
 ```yaml
 Type: System.String
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -WriteEnabled
-Menulis diaktifkan.
+Aktifkan penulisan.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -242,7 +242,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.ContainerRegistry.Models.PSFestAttribute
+### Microsoft.Azure.Commands.ContainerRegistry.Models.PSManifestAttribute
 
 ## CATATAN
 

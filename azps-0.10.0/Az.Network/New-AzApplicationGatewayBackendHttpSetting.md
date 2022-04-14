@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/New-AzApplicationGatewayBackendHttpSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/New-AzApplicationGatewayBackendHttpSetting.md
 ms.openlocfilehash: 8815813e12c249eebbdc825b75b05d9796a5d01c
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425762"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142056881"
 ---
 # New-AzApplicationGatewayBackendHttpSetting
 
@@ -31,22 +31,22 @@ New-AzApplicationGatewayBackendHttpSetting -Name <String> -Port <Int32> -Protoco
 
 ## DESCRIPTION
 Cmdlet New-AzApplicationGatewayBackendHttpSetting membuat pengaturan HTTP ujung-belakang untuk gateway aplikasi.
-Pengaturan HTTP ujung-belakang diterapkan ke semua server ujung-belakang dalam sebuah kolam renang.
+Pengaturan HTTP ujung-belakang diterapkan ke semua server back-end dalam kumpulan.
 
 ## EXAMPLES
 
-### Contoh 1: Buat pengaturan HTTP ujung-belakang
+### Contoh 1: Membuat pengaturan HTTP ujung-belakang
 ```
 PS C:\>$Setting = New-AzApplicationGatewayBackendHttpSetting -Name "Setting01" -Port 80 -Protocol Http -CookieBasedAffinity Disabled
 ```
 
-Perintah ini membuat pengaturan HTTP ujung-belakang yang bernama Pengaturan01 pada port 80, menggunakan protokol HTTP, dengan afiliasi berbasis cookie dinonaktifkan.
-Pengaturan disimpan di variabel $Setting berbeda.
+Perintah ini membuat pengaturan HTTP ujung-belakang bernama Pengaturan01 pada port 80, menggunakan protokol HTTP, dengan afinitas berbasis cookie dinonaktifkan.
+Pengaturan disimpan dalam variabel $Setting.
 
 ## PARAMETERS
 
-### -AffinityCoyamaeName
-Nama cookie untuk digunakan untuk cookie afiliasi
+### -AffinityCookieName
+Nama cookie yang digunakan untuk cookie affinity
 
 ```yaml
 Type: String
@@ -75,8 +75,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ConnectionDhubungan
-Koneksi menghabiskan sumber daya pengaturan backend http.
+### -ConnectionDraining
+Koneksi menguras sumber daya pengaturan backend http.
 
 ```yaml
 Type: PSApplicationGatewayConnectionDraining
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -CookieBasedAffinity
-Menentukan apakah affinity berbasis cookie harus diaktifkan atau dinonaktifkan untuk pool server back-end.
+Menentukan apakah affinity berbasis cookie harus diaktifkan atau dinonaktifkan untuk kumpulan server back-end.
 
 ```yaml
 Type: String
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostName
-Mengatur header host yang akan dikirimkan ke server backend.
+Mengatur header host yang akan dikirim ke server backend.
 
 ```yaml
 Type: String
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama pengaturan HTTP ujung belakang yang dibuat cmdlet ini.
+Menentukan nama pengaturan HTTP ujung-belakang yang dibuat cmdlet ini.
 
 ```yaml
 Type: String
@@ -151,9 +151,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
+### -Jalur
 Jalur yang harus digunakan sebagai prefiks untuk semua permintaan HTTP.
-Jika tidak ada nilai yang disediakan untuk parameter ini, maka tidak ada jalur yang akan diawali.
+Jika tidak ada nilai yang disediakan untuk parameter ini, maka tidak ada jalur yang akan didahului.
 
 ```yaml
 Type: String
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Menentukan port pool server back-end.
+Menentukan port kumpulan server ujung-belakang.
 
 ```yaml
 Type: Int32
@@ -197,8 +197,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Ser
-Menentukan batas untuk dikaitkan dengan pool server ujung-belakang.
+### -Probe
+Menentukan probe untuk dikaitkan dengan kumpulan server ujung-belakang.
 
 ```yaml
 Type: PSApplicationGatewayProbe
@@ -212,8 +212,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PengetahuanEnabled
-Benderai jika pengbenderaan harus diaktifkan.
+### -ProbeEnabled
+Tandai jika probe harus diaktifkan.
 
 ```yaml
 Type: SwitchParameter
@@ -227,8 +227,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Ser 2013
-Menentukan ID perusahaan untuk dikaitkan dengan pool server back-end.
+### -ProbeId
+Menentukan ID probe untuk dikaitkan dengan kumpulan server ujung-belakang.
 
 ```yaml
 Type: String
@@ -242,8 +242,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
-Menentukan protokol yang akan digunakan untuk komunikasi antara gateway aplikasi dan server ujung-belakang.
+### -Protokol
+Menentukan protokol yang digunakan untuk komunikasi antara gateway aplikasi dan server back-end.
 Nilai yang dapat diterima untuk parameter ini adalah: Http dan Https.
 
 ```yaml
@@ -260,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestTimeout
-Menentukan nilai waktu habis permintaan.
+Menentukan nilai batas waktu permintaan.
 
 ```yaml
 Type: Int32
@@ -275,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

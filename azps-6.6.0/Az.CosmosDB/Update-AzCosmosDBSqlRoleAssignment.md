@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBSqlRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBSqlRoleAssignment.md
 ms.openlocfilehash: 73b2bfe360634ebbc1d848a1bfaba87f0d3c2e63
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140333879"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142307015"
 ---
 # Update-AzCosmosDBSqlRoleAssignment
 
 ## SYNOPSIS
-Memperbarui Penetapan Peran CosmosDB Sql yang sudah ada.
+Memperbarui Tugas Peran CosmosDB Sql yang sudah ada.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbsqlroleassignment) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbsqlroleassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,8 +43,8 @@ Update-AzCosmosDBSqlRoleAssignment -InputObject <PSSqlRoleAssignmentGetResults>
 ```
 
 ## DESCRIPTION
-Memperbarui Penetapan Peran CosmosDB Sql yang sudah ada.
-Lingkup bisa sepenuhnya memenuhi syarat (yaitu. /subscriptions/subId/resourceGroups/resourceGroupName/providers/Microsoft.DocumentDB/databaseAccounts/accountName/dbs/dbName) atau mulai dengan nama database (yaitu. /dbs/dbName).
+Memperbarui Tugas Peran CosmosDB Sql yang sudah ada.
+Lingkup dapat sepenuhnya memenuhi syarat (yaitu /subscriptions/subId/resourceGroups/resourceGroupName/providers/Microsoft.DocumentDB/databaseAccounts/accountName/dbName) atau dimulai dengan nama database (ie. /dbs/dbName).
 RoleDefinitionId dan Id dapat sepenuhnya memenuhi syarat atau hanya Guid.
 
 ## EXAMPLES
@@ -63,11 +63,11 @@ RoleDefinitionId : /subscriptions/subId/resourceGroups/resourceGroupName/provide
 PrincipalId      : principalId
 ```
 
-{{ Tambahkan contoh deskripsi di sini }}
+{{ Tambahkan deskripsi contoh di sini }}
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun database Cosmos DB.
 
 ```yaml
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Penetapan Peran.
+Objek Tugas Peran.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSSqlRoleAssignmentGetResults
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalId
-ID Objek (Guid) AAD utama penetapan Peran yang diberikan. Ini bisa merupakan identitas pengguna, grup, prinsipal layanan, atau identitas terkelola.
+OBJECT ID (Guid) dari pokok AAD tempat Penetapan Peran diberikan. Ini bisa berupa pengguna, grup, prinsipal layanan, atau identitas terkelola.
 
 ```yaml
 Type: System.String
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Jalur sumber daya di bawahnya yang akan diberi akses oleh Penetapan Peran. Contohnya '/', '/dbs/dbname','/dbs/dbname/colls/collname'.
+Jalur sumber daya di bawah tempat Tugas Peran akan memberikan akses. Misalnya. '/', '/dbs/dbname','/dbs/dbname/colls/collname'.
 
 ```yaml
 Type: System.String
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -249,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

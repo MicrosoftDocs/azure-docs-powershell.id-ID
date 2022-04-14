@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Remove-AzEventHubCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Remove-AzEventHubCluster.md
 ms.openlocfilehash: 25c2e9f782216f57bd798b90c9c35ba63d587ebc
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140255239"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142232533"
 ---
 # Remove-AzEventHubCluster
 
 ## SYNOPSIS
-Menghapus Kluster Eventhub Khusus tertentu dari ResourceGroup
+Menghapus Klaster Eventhub Khusus yang ditentukan dari ResourceGroup
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventhub/remove-azeventhubcluster) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/remove-azeventhubcluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Remove-AzEventHubCluster [-ResourceId] <String> [-PassThru] [-AsJob] [-DefaultPr
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzEventHubCluster menghapus nama Kluster eventhub khusus yang diberikan dari grup sumber daya yang diberikan
+Cmdlet Remove-AzEventHubCluster menghapus nama Cluster eventhub khusus dari grup sumber daya tertentu
 
 ## EXAMPLES
 
@@ -50,12 +50,12 @@ Cmdlet Remove-AzEventHubCluster menghapus nama Kluster eventhub khusus yang dibe
 PS C:\> Remove-AzEventHubCluster -ResourceGroupName RSG-Cluster27651 -Name Eventhub-Cluster-5557
 ```
 
-Menghapus Kluster-Kluster-Eventhub-5557 dari RSG-Cluster27651 sumber daya
+Menghapus Cluster Eventhub-Cluster-5557 dari grup sumber daya RSG-Cluster27651
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Cluster
+Objek Kluster
 
 ```yaml
 Type: Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

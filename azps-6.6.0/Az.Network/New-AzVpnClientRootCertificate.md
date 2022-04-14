@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnClientRootCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnClientRootCertificate.md
 ms.openlocfilehash: 0bb6ebd5b03d348cc14fea1113e2bb5c21d51f83
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139934431"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142047161"
 ---
 # New-AzVpnClientRootCertificate
 
 ## SYNOPSIS
-Membuat sertifikat akar klien VPN yang baru.
+Membuat sertifikat akar klien VPN baru.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azvpnclientrootcertificate) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvpnclientrootcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,11 +32,11 @@ New-AzVpnClientRootCertificate -Name <String> -PublicCertData <String>
 Cmdlet **New-AzVpnClientRootCertificate** membuat sertifikat akar VPN baru untuk digunakan di gateway jaringan virtual.
 Sertifikat akar adalah sertifikat X.509 yang mengidentifikasi Otoritas Sertifikasi Akar Anda: semua sertifikat lain yang digunakan di gateway mempercayai sertifikat akar.
 Cmdlet ini membuat sertifikat mandiri yang tidak ditetapkan ke gateway virtual.
-Sebagai gantinya, sertifikat yang dibuat **oleh New-AzVpnClientRootCertificate** digunakan bersama dengan cmdlet New-AzVirtualNetworkGateway saat membuat gateway baru.
-Misalnya, anggaplah Anda membuat sertifikat baru dan menyimpannya di variabel yang bernama $Certificate.
-Anda lalu bisa menggunakan objek sertifikat tersebut saat membuat gateway virtual baru.
-Sebagai contoh, `New-AzVirtualNetworkGateway -Name "ContosoVirtualGateway" -ResourceGroupName "ContosoResourceGroup" -Location "West US" -GatewayType "VPN" -IpConfigurations $Ipconfig  -VPNType "RouteBased" -VpnClientRootCertificates $Certificate`
-Untuk informasi selengkapnya, lihat dokumentasi untuk cmdlet New-AzVirtualNetworkGateway lanjut.
+Sebagai gantinya, sertifikat yang dibuat oleh **New-AzVpnClientRootCertificate** digunakan bersama dengan cmdlet New-AzVirtualNetworkGateway saat membuat gateway baru.
+Misalnya, Anda membuat sertifikat baru dan menyimpannya dalam variabel bernama $Certificate.
+Anda kemudian bisa menggunakan objek sertifikat itu saat membuat gateway virtual baru.
+Misalnya, `New-AzVirtualNetworkGateway -Name "ContosoVirtualGateway" -ResourceGroupName "ContosoResourceGroup" -Location "West US" -GatewayType "VPN" -IpConfigurations $Ipconfig  -VPNType "RouteBased" -VpnClientRootCertificates $Certificate`
+Untuk informasi selengkapnya, lihat dokumentasi untuk cmdlet New-AzVirtualNetworkGateway.
 
 ## EXAMPLES
 
@@ -47,16 +47,16 @@ PS C:\> $CertificateText = for ($i=1; $i -lt $Text.Length -1 ; $i++){$Text[$i]}
 PS C:\> $Certificate = New-AzVpnClientRootCertificate -PublicCertData $CertificateText -Name "ContosoClientRootCertificate"
 ```
 
-Contoh ini membuat sertifikat akar klien dan menyimpan objek sertifikat dalam variabel yang bernama $Certificate.
-Variabel ini lalu bisa digunakan oleh cmdlet **New-AzVirtualNetworkGateway** untuk menambahkan sertifikat akar ke gateway jaringan virtual yang baru.
-Perintah pertama menggunakan cmdlet **Get-Content** untuk mendapatkan representasi teks akar yang diekspor sebelumnya; bahwa data teks disimpan dalam variabel yang bernama $Text.
-Lalu perintah kedua menggunakan pengulangan untuk mengekstrak semua teks kecuali untuk baris pertama dan baris terakhir, menyimpan teks yang diekstrak dalam variabel yang bernama $CertificateText.
-Perintah ketiga menggunakan cmdlet **New-AzVpnClientRootCertificate** untuk membuat sertifikat, menyimpan objek yang dibuat di variabel yang bernama $Certificate.
+Contoh ini membuat sertifikat akar klien dan menyimpan objek sertifikat dalam variabel bernama $Certificate.
+Variabel ini kemudian dapat digunakan oleh cmdlet **New-AzVirtualNetworkGateway** untuk menambahkan sertifikat akar ke gateway jaringan virtual baru.
+Perintah pertama menggunakan cmdlet **Get-Content** untuk mendapatkan representasi teks yang sebelumnya diekspor dari sertifikat akar; data teks tersebut disimpan dalam variabel bernama $Text.
+Perintah kedua kemudian menggunakan pengulangan untuk mengekstrak semua teks kecuali untuk baris pertama dan baris terakhir, menyimpan teks yang diekstrak dalam variabel bernama $CertificateText.
+Perintah ketiga menggunakan cmdlet **New-AzVpnClientRootCertificate** untuk membuat sertifikat, menyimpan objek yang dibuat dalam variabel bernama $Certificate.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -86,9 +86,9 @@ Accept wildcard characters: False
 ```
 
 ### -PublicCertData
-Menentukan representasi teks dari sertifikat akar yang akan ditambahkan.
-Untuk mendapatkan representasi teks, ekspor sertifikat Anda dalam format .cer (menggunakan pengodean Base64), lalu buka file yang dihasilkan di editor teks.
-Anda akan melihat output seperti ini (perhatikan bahwa output aktual akan berisi lebih banyak baris teks dari sampel yang disingkat, diperlihatkan di sini): ----- BEGIN CERTIFICATE ----- MIIC13FAAXC3671Auij9HgUNEW8343NMJklo09982CVVFAw8w ----- END CERTIFICATE ----- PublicCertData terdiri dari semua garis antara baris pertama (----- BEGIN CERTIFICATE -----) dan baris terakhir (----- END CERTIFICATE -----) dalam file.
+Menentukan representasi teks sertifikat akar yang akan ditambahkan.
+Untuk mendapatkan representasi teks, ekspor sertifikat Anda dalam format .cer (menggunakan pengodean Base64), lalu buka file yang dihasilkan dalam editor teks.
+Anda akan melihat output yang mirip dengan ini (perhatikan bahwa output aktual akan berisi lebih banyak baris teks daripada sampel singkatan yang diperlihatkan di sini): ----- BEGIN CERTIFICATE ----- MIIC13FAAXC3671Auij9HHgUNEW8343NMJklo09982CVVFAw8w ----- END CERTIFICATE ----- PublicCertData terdiri dari semua baris antara baris pertama (----- BEGIN CERTIFICATE -----) dan baris terakhir (----- END CERTIFICATE -----) dalam file.
 Anda dapat mengambil PublicCertData menggunakan perintah Windows PowerShell seperti ini: $Text = Get-Content -Path "C:\Azure\Certificates\ExportedCertificate.cer" $CertificateText = for ($i=1; $i -lt $Text.Length -1 ; $i++){$Text\[$i\]}
 
 ```yaml
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

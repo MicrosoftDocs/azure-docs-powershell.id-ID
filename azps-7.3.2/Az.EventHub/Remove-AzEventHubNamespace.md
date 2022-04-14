@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Remove-AzEventHubNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Remove-AzEventHubNamespace.md
-ms.openlocfilehash: acab2b2147115465688589f9069693d03ff902f2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: b23a7548171a13fb7ed75fc897dac05f6b9ba8b4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140402742"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142215462"
 ---
 # Remove-AzEventHubNamespace
 
 ## SYNOPSIS
-Menghapus ruang nama Hub Acara yang ditentukan.
+Menghapus ruang nama Hub Kejadian tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/remove-azeventhubnamespace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,9 +50,9 @@ Cmdlet Remove-AzEventHubNamespace menghapus dan menghapus ruang nama Hub Kejadia
 PS C:\> Remove-AzEventHubNamespace -ResourceGroupName MyResourceGroupName -Name MyNamespaceName
 ```
 
-Menghapus ruang nama Hub Kejadian \`MyNamespaceName dalam\` grup sumber daya \`MyResourceGroupName\`.
+Menghapus ruang \`nama Hub Kejadian MyNamespaceName\` dalam grup \`sumber daya MyResourceGroupName\`.
 
-### Contoh 2: InputObject - Menggunakan Variabel:
+### Contoh 2: InputObject - Using Variable:
 ```powershell
 PS C:\> $inputObject = Get-AzEventHubNamespace <params> 
 PS C:\> Remove-AzEventHubNamespace -InputObject $inputObject
@@ -71,7 +74,7 @@ PS C:\> Remove-AzEventHubNamespace -ResourceId $resourceid.Id
 PS C:\> Get-AzResource -ResourceType Microsoft.EventHub/Namespaces | Remove-AzEventHubNamespace
 ```
 
-### Contoh 6: ResourceId - Menggunakan String:
+### Contoh 6: ResourceId - Using String:
 ```powershell
 PS C:\> Remove-AzEventHubNamespace -ResourceId "/subscriptions/xxx-xxxxx-xxxxxx-xxxxxx/resourceGroups/ResourceGroupName/providers/Microsoft.EventHub/namespaces/NamespaceName"
 ```
@@ -79,7 +82,7 @@ PS C:\> Remove-AzEventHubNamespace -ResourceId "/subscriptions/xxx-xxxxx-xxxxxx-
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Kumpulan Nama EventHubs
+Objek Ruang Nama EventHubs
 
 ```yaml
 Type: Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Kumpulan Nama EventHub
+Nama Ruang Nama EventHub
 
 ```yaml
 Type: System.String
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Kumpulan Nama EventHubs
+Id Sumber Daya Ruang Nama EventHubs
 
 ```yaml
 Type: System.String
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

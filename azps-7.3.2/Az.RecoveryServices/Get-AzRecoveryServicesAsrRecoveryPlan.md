@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrRecoveryPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrRecoveryPlan.md
-ms.openlocfilehash: e8878190eacfb9401453c7bc8bbdcf021d01ece8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f253af1a19f7d53b1d93868347f2252b79f760ae
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140184598"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142211023"
 ---
 # Get-AzRecoveryServicesAsrRecoveryPlan
 
 ## SYNOPSIS
-Mendapatkan paket pemulihan atau semua paket pemulihan di vault Layanan Pemulihan
+Mendapatkan paket pemulihan atau semua paket pemulihan dalam kubah Layanan Pemulihan
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrrecoveryplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Get-AzRecoveryServicesAsrRecoveryPlan -FriendlyName <String> [[-Path] <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesAsrRecoveryPlan** mendapatkan detail paket pemulihan yang ditentukan atau semua paket pemulihan di vault Layanan Pemulihan.
+Cmdlet **Get-AzRecoveryServicesAsrRecoveryPlan** mendapatkan detail rencana pemulihan yang ditentukan atau semua rencana pemulihan dalam kubah Layanan Pemulihan.
 
 ## EXAMPLES
 
@@ -46,7 +49,7 @@ Cmdlet **Get-AzRecoveryServicesAsrRecoveryPlan** mendapatkan detail paket pemuli
 PS C:\> $RP = Get-AzRecoveryServicesAsrRecoveryPlan -Name $RPName
 ```
 
-Dapatkan paket pemulihan dengan nama yang ditentukan.
+Mendapatkan paket pemulihan dengan nama yang ditentukan.
 
 ## PARAMETERS
 
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -FriendlyName
-Menentukan nama mudah dari paket pemulihan yang akan anda dapatkan.
+Menentukan nama yang mudah dikenali dari rencana pemulihan yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Tentukan nama dari paket pemulihan yang akan anda dapatkan.
+Menentukan nama rencana pemulihan yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -96,8 +99,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur file tempat cmdlet ini menyimpan definisi json rencana pemulihan. Definisi json dapat diedit untuk mengubah rencana pemulihan dan digunakan untuk memperbarui paket pemulihan melalui cmdlet Update-AzRecoveryServicesASRRecoveryPlan
+### -Jalur
+Menentukan jalur file tempat cmdlet ini menyimpan definisi json rencana pemulihan. Definisi json dapat diedit untuk mengubah rencana pemulihan dan digunakan untuk memperbarui rencana pemulihan melalui cmdlet Update-AzRecoveryServicesASRRecoveryPlan
 
 ```yaml
 Type: System.String
@@ -112,11 +115,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

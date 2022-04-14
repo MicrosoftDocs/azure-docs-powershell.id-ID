@@ -4,16 +4,16 @@ Module Name: Azs.Subscriptions.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: afc99afebed095da96d826918cc6912f197d1899
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "132415342"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142333709"
 ---
 # Get-AzsDelegatedProvider
 
 ## SYNOPSIS
-Dapatkan daftar delegasiProviders.
+Dapatkan daftar delegasiProvider.
 
 ## SYNTAX
 
@@ -22,13 +22,13 @@ Dapatkan daftar delegasiProviders.
 Get-AzsDelegatedProvider [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsDelegatedProvider [-DelegatedProviderId] <Guid> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Dapatkan daftar delegasiProviders.
+Dapatkan daftar delegasiProvider.
 
 ## EXAMPLES
 
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

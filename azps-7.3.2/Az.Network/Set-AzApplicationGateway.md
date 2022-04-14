@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGateway.md
-ms.openlocfilehash: b288fdc753260e67dbfcef43520d7c4b7b1666f2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 045fd141934a9158a138050927e2428c57919489
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140555239"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142212337"
 ---
 # Set-AzApplicationGateway
 
 ## SYNOPSIS
 Memperbarui gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,12 +40,12 @@ PS C:\>$AppGw.Tag = @{"key"="value"}
 PS C:\>$UpdatedAppGw = Set-AzApplicationGateway -ApplicationGateway $AppGw
 ```
 
-Perintah ini memperbarui gateway aplikasi dengan pengaturan di variabel $AppGw dan menyimpan gateway yang diperbarui di $UpdatedAppGw diperbarui.
+Perintah ini memperbarui gateway aplikasi dengan pengaturan dalam variabel $AppGw dan menyimpan gateway yang diperbarui dalam variabel $UpdatedAppGw.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan objek gateway aplikasi mewakili status yang harus disetel gateway aplikasi.
+Menentukan objek gateway aplikasi yang mewakili status di mana gateway aplikasi harus diatur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

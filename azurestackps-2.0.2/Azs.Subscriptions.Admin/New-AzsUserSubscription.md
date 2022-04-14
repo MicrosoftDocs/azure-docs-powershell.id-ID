@@ -4,11 +4,11 @@ Module Name: Azs.Subscriptions.Admin
 online version: https://docs.microsoft.com/en-us/powershell/module/azs.subscriptions.admin/new-azsusersubscription
 schema: 2.0.0
 ms.openlocfilehash: 6ccc47c6b6254e23050cf4341cae355bda78d8df
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132413660"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142352213"
 ---
 # New-AzsUserSubscription
 
@@ -25,7 +25,7 @@ New-AzsUserSubscription -OfferId <String> -Owner <String> [-TargetSubscriptionId
  [-TenantId <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Buat
+### Membuat
 ```
 New-AzsUserSubscription -SubscriptionDefinition <ISubscriptionDefinition> [-TargetSubscriptionId <String>]
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -DelegatedProviderSubscriptionId
-Pengidentifikasi langganan Delegasi Delegasi Induk.
+Pengidentifikasi langganan Parent DelegatedProvider.
 
 ```yaml
 Type: System.String
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoutingResourceManagerType
-Tipe manajer sumber daya perutean.
+Merutekan tipe manajer sumber daya.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.SubscriptionsAdmin.Support.ResourceManagerType
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionDefinition
 Properti objek langganan.
-Untuk membuat, lihat bagian CATATAN untuk properti SUBSCRIPTIONDEFINITION dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti SUBSCRIPTIONDEFINITION dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.SubscriptionsAdmin.Models.Api20151101.ISubscriptionDefinition
@@ -251,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -268,7 +268,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -284,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -298,16 +298,16 @@ ALIAS
 
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 SUBSCRIPTIONDEFINITION <ISubscriptionDefinition>: Properti objek langganan.
-  - `[DelegatedProviderSubscriptionId <String>]`: Pengidentifikasi langganan Delegasi Delegasi Induk.
+  - `[DelegatedProviderSubscriptionId <String>]`: Pengidentifikasi langganan DelegatedProvider induk.
   - `[DisplayName <String>]`: Nama langganan.
   - `[ExternalReferenceId <String>]`: Pengidentifikasi referensi eksternal.
   - `[Id <String>]`: Pengidentifikasi yang sepenuhnya memenuhi syarat.
   - `[OfferId <String>]`: Pengidentifikasi penawaran di bawah lingkup penyedia yang didelegasikan.
   - `[Owner <String>]`: Pemilik langganan.
-  - `[RoutingResourceManagerType <ResourceManagerType?>]`: Tipe manajer sumber daya perutean.
+  - `[RoutingResourceManagerType <ResourceManagerType?>]`: Merutekan tipe manajer sumber daya.
   - `[State <SubscriptionState?>]`: Status langganan.
   - `[SubscriptionId <String>]`: Pengidentifikasi langganan.
   - `[TenantId <String>]`: Pengidentifikasi penyewa direktori.

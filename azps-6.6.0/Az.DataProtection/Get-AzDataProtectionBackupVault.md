@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Get-AzDataProtectionBackupVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Get-AzDataProtectionBackupVault.md
 ms.openlocfilehash: c8165f1422cb9565ea7d0cc842209accf2843a6b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140139345"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142306303"
 ---
 # Get-AzDataProtectionBackupVault
 
@@ -18,7 +18,7 @@ ms.locfileid: "140139345"
 Mengembalikan kumpulan sumber daya milik grup sumber daya.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dataprotection/get-azdataprotectionbackupvault) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/get-azdataprotectionbackupvault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Mengembalikan kumpulan sumber daya milik grup sumber daya.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua vault cadangan dalam langganan tertentu
+### Contoh 1: Dapatkan semua kubah cadangan dalam langganan tertentu
 ```powershell
 PS C:\> Get-AzDataProtectionBackupVault
 
@@ -57,10 +57,10 @@ ETag IdentityPrincipalId                  IdentityTenantId                     I
      26da260b-e232-419c-8586-9157e4f6260e 72f988bf-86f1-41af-91ab-2d7cd011db47 SystemAssigned centraluseuap dpprunnervaultus              Microsoft.DataProtection/backupV�
 ```
 
-Perintah ini mendapatkan semua vault cadangan dalam konteks langganan saat ini.
-Sediakan parameter SubscriptionId untuk mengambil vault cadangan di langganan yang berbeda.
+Perintah ini mendapatkan semua kubah cadangan dalam konteks langganan saat ini.
+Sediakan parameter SubscriptionId untuk mengambil kubah cadangan dalam langganan yang berbeda.
 
-### Contoh 2: Dapatkan semua vault cadangan dalam Grup sumber daya yang diberikan.
+### Contoh 2: Dapatkan semua kubah cadangan dalam Grup sumber daya tertentu.
 ```powershell
 PS C:\> Get-AzDataProtectionBackupVault -SubscriptionId "xxxx-xxx-xxxx" -ResourceGroupName sarath-rg
 
@@ -70,9 +70,9 @@ ETag IdentityPrincipalId                  IdentityTenantId                     I
      2ca1d5f7-38b3-4b61-aa45-8147d7e0edbc 72f988bf-86f1-41af-91ab-2d7cd011db47 SystemAssigned centraluseuap sarath-vault    Microsoft.DataProtection/backupVaults
 ```
 
-Perintah ini menyimpan semua vault cadangan dalam grup sumber daya yang ada.
+Perintah ini mendapatkan semua kubah cadangan dalam grup sumber daya tertentu.
 
-### Contoh 3: Dapatkan vault tertentu.
+### Contoh 3: Dapatkan kubah tertentu.
 ```powershell
 PS C:\> Get-AzDataProtectionBackupVault -SubscriptionId "xxxx-xxx-xxxx" -ResourceGroupName sarath-rg -VaultName sarath-vault
 
@@ -81,7 +81,7 @@ ETag IdentityPrincipalId                  IdentityTenantId                     I
      2ca1d5f7-38b3-4b61-aa45-8147d7e0edbc 72f988bf-86f1-41af-91ab-2d7cd011db47 SystemAssigned centraluseuap sarath-vault    Microsoft.DataProtection/backupVaults
 ```
 
-Perintah ini mendapatkan vault tertentu dengan nama vault tertentu.
+Perintah ini mendapatkan kubah tertentu dengan nama kubah tertentu.
 
 ## PARAMETERS
 
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.IDataProtectionIdentity
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat vault cadangan ada.
+Nama grup sumber daya tempat kubah cadangan ada.
 
 ```yaml
 Type: System.String
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama vault cadangan.
+Nama kubah cadangan.
 
 ```yaml
 Type: System.String
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -189,10 +189,10 @@ INPUTOBJECT <IDataProtectionIdentity>: Parameter Identitas
   - `[OperationId <String>]`: 
   - `[RecoveryPointId <String>]`: 
   - `[RequestName <String>]`: 
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat vault cadangan ada.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat kubah cadangan ada.
   - `[ResourceGuardsName <String>]`: Nama ResourceGuard
   - `[SubscriptionId <String>]`: Id langganan.
-  - `[VaultName <String>]`: Nama vault cadangan.
+  - `[VaultName <String>]`: Nama kubah cadangan.
 
 ## RELATED LINKS
 

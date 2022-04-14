@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hanaonazure/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/Remove-AzSapMonitorProviderInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/Remove-AzSapMonitorProviderInstance.md
-ms.openlocfilehash: 73c571e2c16247d729ba558108a1180471473cae
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d2ba04e96c41170329444120e1d649a047dac112
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140186741"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142110149"
 ---
 # Remove-AzSapMonitorProviderInstance
 
 ## SYNOPSIS
-Menghapus instans penyedia untuk langganan, grup sumber daya, nama SapMonitor, dan nama sumber daya yang ditentukan.
+Menghapus instans penyedia untuk langganan, grup sumber daya, nama SapMonitor, dan nama sumber daya tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hanaonazure/remove-azsapmonitorproviderinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,11 +36,11 @@ Remove-AzSapMonitorProviderInstance -InputObject <IHanaOnAzureIdentity> [-Defaul
 ```
 
 ## DESCRIPTION
-Menghapus instans penyedia untuk langganan, grup sumber daya, nama SapMonitor, dan nama sumber daya yang ditentukan.
+Menghapus instans penyedia untuk langganan, grup sumber daya, nama SapMonitor, dan nama sumber daya tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus contoh monitor SAP menurut nama
+### Contoh 1: Menghapus contoh monitor SAP menurut nama
 ```powershell
 PS C:\> Remove-AzSapMonitorProviderInstance -ResourceGroupName nancyc-hn1 -SapMonitorName ps-spamonitor-t01 -Name ps-sapmonitorins-t02
 
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.HanaOnAzure.Models.IHanaOnAzureIdentity
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,8 +180,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID Langganan yang secara unik mengidentifikasi Microsoft Azure langganan.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+ID Langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -224,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -245,15 +248,15 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IHanaOnAzureIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: Lokasi vault yang dihapus.
+  - `[Location <String>]`: Lokasi kubah yang dihapus.
   - `[OperationKind <AccessPolicyUpdateKind?>]`: Nama operasi
   - `[ProviderInstanceName <String>]`: Nama instans penyedia.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
   - `[ResourceName <String>]`: Nama sumber daya identitas.
   - `[SapMonitorName <String>]`: Nama sumber daya monitor SAP.
-  - `[Scope <String>]`: Lingkup penyedia sumber daya sumber daya. Sumber daya induk sedang diperluas oleh Identitas yang Dikelola.
-  - `[SubscriptionId <String>]`: ID langganan yang secara unik mengidentifikasi Microsoft Azure langganan. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
-  - `[VaultName <String>]`: Nama vault
+  - `[Scope <String>]`: Lingkup penyedia sumber daya sumber daya. Sumber daya induk diperluas oleh Identitas Terkelola.
+  - `[SubscriptionId <String>]`: ID Langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+  - `[VaultName <String>]`: Nama kubah
 
 ## RELATED LINKS
 

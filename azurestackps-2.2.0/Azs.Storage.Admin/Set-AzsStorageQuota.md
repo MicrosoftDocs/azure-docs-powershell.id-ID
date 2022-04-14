@@ -4,11 +4,11 @@ Module Name: Azs.Storage.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.storage.admin/set-azsstoragequota
 schema: 2.0.0
 ms.openlocfilehash: 8e7e7bd635be2c9ba75b1176e36d772b6062e8a4
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136578998"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142351835"
 ---
 # Set-AzsStorageQuota
 
@@ -40,14 +40,14 @@ Set-AzsStorageQuota -QUOTAOBJECT \<IStorageQuota> [-Location <String>] [-Subscri
 PS C:\> Set-AzsStorageQuota -Name 'TestUpdateStorageQuota' -NumberOfStorageAccounts 11 -CapacityInGb 22
 ```
 
-Perbarui kuota penyimpanan yang sudah ada menurut namanya.
+Perbarui kuota penyimpanan yang sudah ada berdasarkan nama.
 
 ### Contoh 2:
 ```powershell
 PS C:\> Get-AzsStorageQuota -Name 'TestUpdateStorageQuota' | Set-AzsStorageQuota -NumberOfStorageAccounts 22 -CapacityInGb 33
 ```
 
-Perbarui kuota penyimpanan yang ada dengan pemipaan.
+Perbarui kuota penyimpanan yang sudah ada dengan pipa.
 
 ## PARAMETERS
 
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -QuotaObject
-Untuk membuat, lihat bagian CATATAN untuk properti QUOTAOBJECT dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti QUOTAOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.StorageAdmin.Models.Api201908Preview.IStorageQuota
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -211,11 +211,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-QUOTAOBJECT \<IStorageQuota> : 
-  - `[CapacityInGb <Int32?>]`: Kapasitas maksimal (GB).
-  - `[NumberOfStorageAccounts <Int32?>]`: Total jumlah akun penyimpanan.
+QUOTAOBJECT \<IStorageQuota>: 
+  - `[CapacityInGb <Int32?>]`: Kapasitas maksimum (GB).
+  - `[NumberOfStorageAccounts <Int32?>]`: Jumlah total akun penyimpanan.
 
 ## RELATED LINKS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Get-AzAttestation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Get-AzAttestation.md
 ms.openlocfilehash: e1a10801cfb755d75bfe9851152a789f9033d377
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139945268"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142091211"
 ---
 # Get-AzAttestation
 
 ## SYNOPSIS
-Mendapatkan aplikasi secara langsung.
+Mendapatkan tanda penganti.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.attestation/get-azattestation) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.attestation/get-azattestation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ Get-AzAttestation [[-Location] <String>] [-DefaultProvider] [-DefaultProfile <IA
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzAttestation mendapatkan informasi tentang attestation dalam langganan.
+Cmdlet Get-AzAttestation mendapatkan informasi tentang pengesahan dalam langganan.
 
 ## EXAMPLES
 
@@ -62,7 +62,7 @@ TagsTable         :
                     Example     True
 ```
 
-Dapatkan *pshtest Penyedia Attestation* di *Psh-test-rg Grup Sumber Daya*.
+Dapatkan *pshtest* Penyedia Pengesahan di Resource Group *psh-test-rg*.
 
 ### Contoh 2
 ```powershell
@@ -98,7 +98,7 @@ Tags              :
 TagsTable         :
 ```
 
-Dapatkan semua Penyedia Default Attestation yang Tersedia
+Dapatkan semua Penyedia Default Aestasi yang tersedia
 
 ### Contoh 3
 ```powershell
@@ -114,7 +114,7 @@ Tags              :
 TagsTable         :
 ```
 
-Dapatkan Penyedia Default Attestation dari Location *East US 2*
+Dapatkan Penyedia Default Atestation dari Location *East US 2*
 
 ## PARAMETERS
 
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProvider
-Menentukan ini adalah permintaan ke penyedia attestation default.
+Menentukan ini adalah permintaan ke penyedia pengesahan default.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan Lokasi penyedia attestation default.
+Menentukan Lokasi penyedia penetapan default.
 
 ```yaml
 Type: System.String
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-NamaStation.
+Nama Attesasi.
 
 ```yaml
 Type: System.String
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang terkait dengan pengesahan yang sedang ditanya.
+Menentukan nama grup sumber daya yang terkait dengan pengesahan yang sedang dikueri.
 
 ```yaml
 Type: System.String
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan nama ResourceID yang terkait dengan attestation yang sedang ditanya
+Menentukan nama RESOURCEID yang terkait dengan autentikasi yang sedang dikueri
 
 ```yaml
 Type: System.String
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

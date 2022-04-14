@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridSubscription.md
 ms.openlocfilehash: 24b8e9318984860a0a0c11474482d79b7aa95b1f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140137581"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142232677"
 ---
 # Get-AzEventGridSubscription
 
@@ -18,7 +18,7 @@ ms.locfileid: "140137581"
 Mendapatkan detail langganan acara, atau mendapatkan daftar semua langganan acara dalam langganan Azure saat ini.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventgrid/get-azeventgridsubscription) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.eventgrid/get-azeventgridsubscription) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -74,11 +74,11 @@ Get-AzEventGridSubscription [-NextLink <String>] [-DefaultProfile <IAzureContext
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzEventGridSubscription mendapatkan detail langganan Kisi Kejadian yang ditentukan, atau daftar semua langganan Kisi Acara di grup sumber daya atau langganan Azure saat ini.
-Jika nama langganan acara disediakan, detail dari satu langganan Kisi Acara akan dikembalikan.
-Jika nama langganan acara tidak tersedia, daftar semua langganan acara akan dikembalikan. Jumlah elemen yang dikembalikan dalam daftar ini dikontrol oleh parameter Top. Jika nilai Teratas tidak ditentukan atau $null, daftar akan berisi semua item langganan acara. Jika tidak, Atas akan menunjukkan jumlah maksimum elemen yang akan dikembalikan dalam daftar.
-Jika masih ada langganan yang lebih banyak, nilai di NextLink harus digunakan di panggilan berikutnya untuk mendapatkan halaman langganan acara berikutnya.
-Akhirnya, parameter ODataQuery digunakan untuk melakukan pemfilteran untuk hasil pencarian. Kueri pemfilteran mengikuti sintaks OData hanya menggunakan properti Name. Operasi yang didukung antara lain: CONTAINS, eq (untuk sama), ne (tidak sama), AND, OR dan NOT.
+Cmdlet Get-AzEventGridSubscription mendapatkan detail langganan Kisi Acara tertentu, atau daftar semua langganan Kisi Acara dalam grup sumber daya atau langganan Azure saat ini.
+Jika nama langganan acara disediakan, detail satu langganan Kisi Acara akan dikembalikan.
+Jika nama langganan acara tidak disediakan, daftar semua langganan acara akan dikembalikan. Jumlah elemen yang dikembalikan dalam daftar ini dikontrol oleh parameter Teratas. Jika Nilai teratas tidak ditentukan atau $null, daftar akan berisi semua item langganan acara. Jika tidak, Top akan menunjukkan jumlah maksimum elemen yang akan dikembalikan dalam daftar.
+Jika langganan acara lainnya masih tersedia, nilai di NextLink harus digunakan dalam panggilan berikutnya untuk mendapatkan halaman langganan acara berikutnya.
+Terakhir, parameter ODataQuery digunakan untuk melakukan pemfilteran untuk hasil pencarian. Kueri pemfilteran mengikuti sintaks OData menggunakan properti Name saja. Operasi yang didukung meliputi: CONTAINS, eq (untuk sama dengan), ne (untuk tidak sama dengan), AND, OR dan NOT.
 
 ## EXAMPLES
 
@@ -87,21 +87,21 @@ Akhirnya, parameter ODataQuery digunakan untuk melakukan pemfilteran untuk hasil
 PS C:\> Get-AzEventGridSubscription -ResourceGroupName MyResourceGroupName -TopicName Topic1 -EventSubscriptionName EventSubscription1
 ```
 
-Mendapatkan detail kejadian langganan EventSubscription1 \`\` yang dibuat untuk topik Topic1 \`di\` grup sumber daya \`MyResourceGroupName\`.
+Mendapatkan detail langganan acara EventSubscription1\` yang dibuat untuk topik \`Topik1\` dalam grup \`sumber daya MyResourceGroupName\`.\`
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzEventGridSubscription -ResourceGroupName MyResourceGroupName -TopicName Topic1 -EventSubscriptionName EventSubscription1 -IncludeFullEndpointUrl
 ```
 
-Mendapatkan detail \`acara Langganan EventSubscription1 \`\` yang dibuat untuk topik Topic1\` \`di grup sumber daya MyResourceGroupName\`, termasuk URL titik akhir lengkap jika itu adalah langganan acara berbasis web.
+Mendapatkan detail langganan \`acara EventSubscription1\` yang dibuat untuk topik \`Topik1\` dalam grup \`sumber daya MyResourceGroupName\`, termasuk URL titik akhir penuh jika merupakan langganan acara berbasis webhook.
 
 ### Contoh 3
 ```powershell
 PS C:\> Get-AzEventGridSubscription -ResourceGroupName MyResourceGroupName -TopicName Topic1
 ```
 
-Dapatkan daftar semua langganan acara yang dibuat untuk topik \`Topic1\` dalam grup sumber daya \`MyResourceGroupName\` tanpa penomoran halaman.
+Dapatkan daftar semua langganan acara yang dibuat untuk topik \`Topik1\` dalam grup \`sumber daya MyResourceGroupName\` tanpa pagination.
 
 ### Contoh 4
 ```powershell
@@ -110,28 +110,28 @@ PS C:\> Get-AzEventGridSubscription -ResourceGroupName MyResourceGroupName -Topi
 PS C:\> Get-AzEventGridSubscription $result.NextLink
 ```
 
-List the first 10 event subscriptions (if any) created for topic \`Topic1\` in resource group \`MyResourceGroupName\` that satisfies the $odataFilter query. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman langganan acara berikutnya, pengguna diharapkan untuk melakukan panggilan ulang dan Get-AzEventGridSubscription hasil. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti saat hasil. NextLink menjadi $null.
+Cantumkan 10 langganan kejadian pertama (jika ada) yang dibuat untuk topik \`Topik1\` dalam grup \`sumber daya MyResourceGroupName\` yang memenuhi kueri $odataFilter. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman langganan acara berikutnya, pengguna diharapkan untuk menghubungi kembali Get-AzEventGridSubscription dan menggunakan hasilnya. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti ketika hasil. NextLink menjadi $null.
 
 ### Contoh 5
 ```powershell
 PS C:\> Get-AzEventGridSubscription -ResourceGroupName MyResourceGroupName -EventSubscriptionName EventSubscription1
 ```
 
-Mendapatkan detail kejadian langganan EventSubscription1 \`\` yang dibuat untuk grup sumber daya \`MyResourceGroupName\`.
+Mendapatkan detail langganan \`acara EventSubscription1\` yang dibuat untuk grup \`sumber daya MyResourceGroupName\`.
 
 ### Contoh 6
 ```powershell
 PS C:\> Get-AzEventGridSubscription -EventSubscriptionName EventSubscription1
 ```
 
-Dapatkan detail langganan acaraSubskrip1 \`yang dibuat\` untuk langganan Azure yang saat ini dipilih.
+Mendapatkan detail langganan \`acara Langganan acara1\` dibuat untuk langganan Azure yang saat ini dipilih.
 
 ### Contoh 7
 ```powershell
 PS C:\> Get-AzEventGridSubscription -ResourceGroupName MyResourceGroupName
 ```
 
-Mendapatkan daftar semua langganan acara global yang dibuat di bawah grup sumber daya \`MyResourceGroupName\` tanpa penomoran halaman.
+Mendapatkan daftar semua langganan acara global yang dibuat di bawah grup \`sumber daya MyResourceGroupName\` tanpa pagination.
 
 ### Contoh 8
 ```powershell
@@ -140,14 +140,14 @@ PS C:\> Get-AzEventGridSubscription -ResourceGroupName MyResourceGroupName -Top 
 PS C:\> Get-AzEventGridSubscription $result.NextLink
 ```
 
-List the first event subscriptions (if any) created under resource group \`MyResourceGroupName\` that satisfies the $odataFilter query. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman langganan acara berikutnya, pengguna diharapkan untuk melakukan panggilan ulang dan Get-AzEventGridSubscription hasil. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti saat hasil. NextLink menjadi $null.
+Cantumkan 5 langganan acara pertama (jika ada) yang dibuat di bawah grup \`sumber daya MyResourceGroupName\` yang memenuhi kueri $odataFilter. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman langganan acara berikutnya, pengguna diharapkan untuk menghubungi kembali Get-AzEventGridSubscription dan menggunakan hasilnya. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti ketika hasil. NextLink menjadi $null.
 
 ### Contoh 9
 ```powershell
 PS C:\> Get-AzEventGridSubscription
 ```
 
-Mendapatkan daftar semua langganan acara global yang dibuat di bawah langganan Azure yang saat ini dipilih tanpa penomoran halaman.
+Mendapatkan daftar semua langganan acara global yang dibuat di bawah langganan Azure yang saat ini dipilih tanpa paginasi.
 
 ### Contoh 10
 ```powershell
@@ -156,14 +156,14 @@ PS C:\> Get-AzEventGridSubscription -Top 15 -ODataQuery $odataFilter
 PS C:\> Get-AzEventGridSubscription $result.NextLink
 ```
 
-List the first global event subscriptions (if any) created under the currently selected Azure subscription that satisfies the $odataFilter query. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman langganan acara berikutnya, pengguna diharapkan untuk melakukan panggilan ulang dan Get-AzEventGridSubscription hasil. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti saat hasil. NextLink menjadi $null.
+Cantumkan 15 langganan acara global pertama (jika ada) yang dibuat di bawah langganan Azure yang saat ini dipilih yang memenuhi kueri $odataFilter. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman langganan acara berikutnya, pengguna diharapkan untuk menghubungi kembali Get-AzEventGridSubscription dan menggunakan hasilnya. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti ketika hasil. NextLink menjadi $null.
 
 ### Contoh 11
 ```powershell
 PS C:\> Get-AzEventGridSubscription -ResourceGroupName MyResourceGroupName -Location westus2
 ```
 
-Mendapatkan daftar semua langganan acara kawasan yang dibuat di \`bawah grup sumber daya MyResourceGroupName\` \`di lokasi tertentu westus2\` tanpa penomoran halaman.
+Mendapatkan daftar semua langganan acara kawasan yang dibuat di bawah grup \`sumber daya MyResourceGroupName\` di lokasi \`yang ditentukan westus2\` tanpa pagination.
 
 ### Contoh 12
 ```powershell
@@ -172,14 +172,14 @@ PS C:\> Get-AzEventGridSubscription -ResourceGroupName MyResourceGroupName -Loca
 PS C:\> Get-AzEventGridSubscription $result.NextLink
 ```
 
-List the first regional event subscriptions (if any) created under resource group \`MyResourceGroupName\` in the specified location \`westus2\` that satisfies the $odataFilter query. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman langganan acara berikutnya, pengguna diharapkan untuk melakukan panggilan ulang dan Get-AzEventGridSubscription hasil. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti saat hasil. NextLink menjadi $null.
+Cantumkan 15 langganan acara regional pertama (jika ada) yang dibuat di bawah grup \`sumber daya MyResourceGroupName\` di westus2\` lokasi \`yang ditentukan yang memenuhi kueri $odataFilter. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman langganan acara berikutnya, pengguna diharapkan untuk menghubungi kembali Get-AzEventGridSubscription dan menggunakan hasilnya. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti ketika hasil. NextLink menjadi $null.
 
 ### Contoh 13
 ```powershell
 PS C:\> Get-AzEventGridSubscription -ResourceId "/subscriptions/$subscriptionId/resourceGroups/$resourceGroupName/providers/Microsoft.EventHub/namespaces/$namespaceName"
 ```
 
-Mendapatkan daftar semua langganan acara yang dibuat untuk ruang nama EventHub yang ditentukan tanpa penomoran halaman.
+Mendapatkan daftar semua langganan acara yang dibuat untuk ruang nama EventHub tertentu tanpa paginasi.
 
 ### Contoh 14
 ```powershell
@@ -188,14 +188,14 @@ PS C:\> Get-AzEventGridSubscription -ResourceId "/subscriptions/$subscriptionId/
 PS C:\> Get-AzEventGridSubscription $result.NextLink
 ```
 
-Daftar 25 langganan acara pertama (jika ada) yang dibuat untuk kumpulan nama EventHub yang ditentukan yang memenuhi $odataFilter kueri. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman langganan acara berikutnya, pengguna diharapkan untuk melakukan panggilan ulang dan Get-AzEventGridSubscription hasil. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti saat hasil. NextLink menjadi $null.
+Cantumkan 25 langganan acara pertama (jika ada) yang dibuat untuk ruang nama EventHub tertentu yang memenuhi kueri $odataFilter. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman langganan acara berikutnya, pengguna diharapkan untuk menghubungi kembali Get-AzEventGridSubscription dan menggunakan hasilnya. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti ketika hasil. NextLink menjadi $null.
 
 ### Contoh 15
 ```powershell
 PS C:\> Get-AzEventGridSubscription -TopicTypeName "Microsoft.EventHub.Namespaces" -Location $location
 ```
 
-Mendapatkan daftar semua langganan acara yang dibuat untuk tipe topik yang ditentukan (ruang nama EventHub) di lokasi yang ditentukan tanpa penomoran halaman.
+Mendapatkan daftar semua langganan acara yang dibuat untuk tipe topik tertentu (ruang nama EventHub) di lokasi yang ditentukan tanpa paginasi.
 
 ### Contoh 16
 ```powershell
@@ -204,14 +204,14 @@ PS C:\> Get-AzEventGridSubscription -TopicTypeName "Microsoft.EventHub.Namespace
 PS C:\> Get-AzEventGridSubscription $result.NextLink
 ```
 
-List the first 15 event subscriptions (if any) created for the specified topic type (EventHub namespaces) in the specified location that satisfies the $odataFilter query. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman langganan acara berikutnya, pengguna diharapkan untuk melakukan panggilan ulang dan Get-AzEventGridSubscription hasil. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti saat hasil. NextLink menjadi $null.
+Cantumkan 15 langganan kejadian pertama (jika ada) yang dibuat untuk tipe topik tertentu (Ruang nama EventHub) di lokasi tertentu yang memenuhi kueri $odataFilter. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman langganan acara berikutnya, pengguna diharapkan untuk menghubungi kembali Get-AzEventGridSubscription dan menggunakan hasilnya. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti ketika hasil. NextLink menjadi $null.
 
 ### Contoh 17
 ```powershell
 PS C:\> Get-AzEventGridSubscription -TopicTypeName "Microsoft.Resources.ResourceGroups" -ResourceGroupName MyResourceGroupName
 ```
 
-Mendapatkan daftar semua langganan acara yang dibuat untuk grup sumber daya tertentu tanpa penomoran halaman.
+Mendapatkan daftar semua langganan acara yang dibuat untuk grup sumber daya tertentu tanpa paginasi.
 
 ### Contoh 18
 ```powershell
@@ -220,12 +220,12 @@ PS C:\> Get-AzEventGridSubscription -TopicTypeName "Microsoft.Resources.Resource
 PS C:\> Get-AzEventGridSubscription $result.NextLink
 ```
 
-List the first 100 event subscriptions (if any) created for the specific resource group that satisfies the $odataFilter query. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman langganan acara berikutnya, pengguna diharapkan untuk melakukan panggilan ulang dan Get-AzEventGridSubscription hasil. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti saat hasil. NextLink menjadi $null.
+Cantumkan 100 langganan kejadian pertama (jika ada) yang dibuat untuk grup sumber daya tertentu yang memenuhi kueri $odataFilter. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman langganan acara berikutnya, pengguna diharapkan untuk menghubungi kembali Get-AzEventGridSubscription dan menggunakan hasilnya. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti ketika hasil. NextLink menjadi $null.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -DomainInputObject
-Objek EventGrid Domain.
+Objek Domain EventGrid.
 
 ```yaml
 Type: Microsoft.Azure.Commands.EventGrid.Models.PSDomain
@@ -270,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### -DomainTopicInputObject
-Objek EventGrid Domain Topic.
+Objek Topik Domain EventGrid.
 
 ```yaml
 Type: Microsoft.Azure.Commands.EventGrid.Models.PSDomainTopic
@@ -315,7 +315,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeFullEndpointUrl
-Sertakan URL titik akhir lengkap tujuan langganan acara.
+Sertakan URL titik akhir penuh tujuan langganan acara.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -330,7 +330,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek EventGrid Topic.
+Objek Topik EventGrid.
 
 ```yaml
 Type: Microsoft.Azure.Commands.EventGrid.Models.PSTopic
@@ -360,7 +360,7 @@ Accept wildcard characters: False
 ```
 
 ### -NextLink
-Link untuk halaman berikutnya dari sumber daya yang akan diperoleh. Nilai ini diperoleh dengan panggilan cmdlet Get-AzEventGrid pertama ketika sumber daya lainnya masih tersedia untuk dikuer lainnya.
+Tautan untuk halaman sumber daya berikutnya yang akan diperoleh. Nilai ini diperoleh dengan panggilan cmdlet pertama Get-AzEventGrid ketika lebih banyak sumber daya masih tersedia untuk dikueri.
 
 ```yaml
 Type: System.String
@@ -375,7 +375,7 @@ Accept wildcard characters: False
 ```
 
 ### -ODataQuery
-Kueri OData digunakan untuk memfilter hasil daftar. Pemfilteran saat ini hanya diperbolehkan pada properti Name. Operasi yang didukung antara lain: CONTAINS, eq (untuk sama), ne (tidak sama), AND, OR dan NOT.
+Kueri OData digunakan untuk memfilter hasil daftar. Pemfilteran saat ini hanya diperbolehkan pada properti Nama. Operasi yang didukung meliputi: CONTAINS, eq (untuk sama dengan), ne (untuk tidak sama dengan), AND, OR dan NOT.
 
 ```yaml
 Type: System.String
@@ -405,7 +405,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya tempat langganan kejadian dibuat.
+Pengidentifikasi sumber daya tempat langganan acara telah dibuat.
 
 ```yaml
 Type: System.String
@@ -420,7 +420,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-Kueri OData digunakan untuk memfilter hasil daftar. Pemfilteran saat ini hanya diperbolehkan pada properti Name. Operasi yang didukung antara lain: CONTAINS, eq (untuk sama), ne (tidak sama), AND, OR dan NOT.
+Kueri OData digunakan untuk memfilter hasil daftar. Pemfilteran saat ini hanya diperbolehkan pada properti Nama. Operasi yang didukung meliputi: CONTAINS, eq (untuk sama dengan), ne (untuk tidak sama dengan), AND, OR dan NOT.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -450,7 +450,7 @@ Accept wildcard characters: False
 ```
 
 ### -TopicTypeName
-Nama Jenis Topik
+Nama TopicType
 
 ```yaml
 Type: System.String
@@ -465,7 +465,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -477,7 +477,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.EventGrid.Models.PSDomainTopic
 
-### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 

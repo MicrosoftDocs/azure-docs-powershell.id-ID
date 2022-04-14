@@ -4,11 +4,11 @@ Module Name: Azs.Subscriptions.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: ef53ac2d32d71a68b7fe342f5d2d0cafc2a193f8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132413683"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142333439"
 ---
 # Set-AzsUserSubscription
 
@@ -50,7 +50,7 @@ Memperbarui langganan
 ## PARAMETERS
 
 ### -DelegatedProviderSubscriptionId
-Pengidentifikasi langganan Delegasi Delegasi Induk.
+Pengidentifikasi langganan Parent DelegatedProvider.
 
 ```yaml
 Type: String
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek input ketikkan Microsoft.AzureStack.Management.Network.Admin.Models.Quota.
+Objek input dari tipe Microsoft.AzureStack.Management.Network.Admin.Models.Quota.
 
 ```yaml
 Type: Subscription
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoutingResourceManagerType
-Tipe manajer sumber daya perutean.
+Merutekan tipe manajer sumber daya.
 
 ```yaml
 Type: String
@@ -230,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -261,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

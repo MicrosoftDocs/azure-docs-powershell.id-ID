@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlobByTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlobByTag.md
-ms.openlocfilehash: 13db73a2fe9037f2805991d8727ffcc4400e7823
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 73ac371acae7cf1adb76dacddda4e7c20ce4eb40
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140385287"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142251091"
 ---
 # Get-AzStorageBlobByTag
 
 ## SYNOPSIS
 Mencantumkan blob dalam akun penyimpanan di seluruh wadah, dengan ekspresi sql filter tag blob.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageblobbytag) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ Get-AzStorageBlobByTag -TagFilterSqlExpression <String> [-MaxCount <Int32>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStorageBlobByTag** mencantumkan blob dalam akun penyimpanan di seluruh wadah, dengan filter tag blob ekspresi sql.
+Cmdlet **Get-AzStorageBlobByTag** mencantumkan blob dalam akun penyimpanan di seluruh wadah, dengan ekspresi sql filter tag blob.
 
 ## EXAMPLES
 
-### Contoh 1: List all blobs match a specific blob tag, across containers.
+### Contoh 1: Cantumkan semua blob yang cocok dengan tag blob tertentu, di seluruh kontainer.
 ```
 PS C:\> Get-AzStorageBlobByTag -TagFilterSqlExpression """tag1""='value1'" -Context $ctx 
 
@@ -50,9 +53,9 @@ testblob3                                                                       
 testblob4                                                                                                                                   False
 ```
 
-Perintah ini mencantumkan semua blob dalam akun penyimpanan, yang berisi tag dengan nama "tag1" dan nilai "nilai1".
+Perintah ini mencantumkan semua blob dalam accoun penyimpanan, yang berisi tag dengan nama "tag1" dan nilai "value1".
 
-### Contoh 2: Daftar blob dalam wadah tertentu dan cocok dengan tag blob tertentu
+### Contoh 2: Blob daftar dalam wadah tertentu dan cocok dengan tag blob tertentu
 ```
 PS C:\> Get-AzStorageBlobByTag -TagFilterSqlExpression "@container='containername' AND ""tag1""='value1'" -Context $ctx
 
@@ -64,9 +67,9 @@ test1                                                                           
 test2                                                                                                                                      False
 ```
 
-Perintah ini mencantumkan blob dalam wadah dan sesuai dengan tag blob tertentu.
+Perintah ini mencantumkan blob dalam wadah dan cocok dengan tag blob tertentu.
 
-### Contoh 3: Daftar semua blob cocok dengan tag blob tertentu, seluruh wadah, dan mendapatkan properti blob.
+### Contoh 3: Cantumkan semua blob yang cocok dengan tag blob tertentu, di seluruh wadah, dan dapatkan properti blob.
 ```
 PS C:\> Get-AzStorageBlobByTag -TagFilterSqlExpression """tag1""='value1'" -GetBlobProperty
 
@@ -85,13 +88,13 @@ testblob3            BlockBlob 100             application/octet-stream       20
 testblob4            BlockBlob 2024            application/octet-stream       2020-07-01 09:42:11Z Hot                                     False      2020-07-01T09:42:11.4283807Z *
 ```
 
-Perintah ini mencantumkan semua blob dalam akun penyimpanan, yang berisi tag dengan nama "tag1" dan nilai "nilai1", serta mendapatkan properti blob.
-Perlu diingat, untuk mendapatkan properti blob dengan parameter -GetBlobProperty, setiap blob memerlukan permintaan tambahan, sehingga cmdlet berjalan ketika terdapat banyak blob.
+Perintah ini mencantumkan semua blob dalam accoun penyimpanan, yang berisi tag dengan nama "tag1" dan nilai "value1", dan mendapatkan properti blob.
+Harap diperhatikan, untuk mendapatkan properti blob dengan parameter -GetBlobProperty, setiap blob akan memerlukan permintaan tambahan, sehingga cmdlet berjalan menunjukkan ketika ada banyak blob.
 
 ## PARAMETERS
 
 ### -ClientTimeoutPerRequest
-Waktu eksekusi maksimal sisi klien untuk setiap permintaan dalam detik.
+Waktu eksekusi maksimum sisi klien untuk setiap permintaan dalam hitung detik.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -106,8 +109,8 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Jumlah total tugas bersama.
-Nilai default adalah 10.
+Jumlah total tugas asinkron serentak.
+Nilai defaultnya adalah 10.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Azure Storage Konteks
+Objek Konteks Azure Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -GetBlobProperty
-Karena tag dapatkan oleh blob tidak berisi blob proeprties, tentukan parameter tis untuk mendapatkan properti blob dengan permintaan tambahan di setiap blob.
+Karena blob yang didapatkan dengan tag tidak berisi proeprties blob, tentukan parameter tis untuk mendapatkan properti blob dengan permintaan tambahan pada setiap blob.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxCount
-Jumlah maks blob yang dapat dikembalikan.
+Jumlah maksimal dari blob yang dapat kembali.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Waktu server habis untuk setiap permintaan dalam hitungan detik.
+Waktu server habis untuk setiap permintaan dalam hitung detik.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -TagFilterSqlExpression
-Memfilter kumpulan hasil yang diatur hanya untuk menyertakan blob yang tagnya cocok dengan ekspresi yang ditentukan.
+Memfilter kumpulan hasil agar hanya menyertakan blob yang tagnya cocok dengan ekspresi tertentu.
 Lihat detail di https://docs.microsoft.com/en-us/rest/api/storageservices/find-blobs-by-tags#remarks.
 
 ```yaml
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -236,7 +239,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.WindowsAzure.commands.common. Storage. ResourceModel.AzureStorageBlob
+### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureStorageBlob
 
 ## CATATAN
 

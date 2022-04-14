@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Remove-AzDataShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Remove-AzDataShare.md
 ms.openlocfilehash: 8addcd22e65a9cb33ac0cdcd3d2812328c324140
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140107469"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142306141"
 ---
 # Remove-AzDataShare
 
@@ -18,7 +18,7 @@ ms.locfileid: "140107469"
 Menghapus berbagi data.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datashare/remove-azdatashare) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datashare/remove-azdatashare) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +56,7 @@ Perintah ini menghapus berbagi data bernama AdsShare dari akun berbagi data azur
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun berbagi data Azure
 
 ```yaml
@@ -102,9 +102,9 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Azure data share object' ''yaml Type: PSDataShare Parameter Sets: ByObjectParameterSet Aliases: 
+Objek berbagi data Azure' ''yaml Type: PSDataShare Parameter Sets: ByObjectParameterSet Aliases: 
 
-Diperlukan: Posisi True: Nilai Default Bernama: Input saluran Tidak Ada Terima: True (ByValue) Terima karakter wildcard: False
+Diperlukan: True Position: Nilai default bernama: None Accept pipeline input: True (ByValue) Accept wildcard characters: False
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataShare.Models.PSDataShare
@@ -121,9 +121,9 @@ Accept wildcard characters: False
 ### -Nama
 Nama berbagi data Azure
 
-Tipe yaml: Kumpulan Parameter String: Alias ByFieldsParameterSet: 
+yaml Type: String Parameter Sets: ByFieldsParameterSet Aliases: 
 
-Diperlukan: Posisi True: Nilai Default Bernama: Input saluran Tidak Diterima: Karakter wildcard Terima False: False
+Diperlukan: Posisi True: Nilai default bernama: Tidak Ada Menerima input pipeline: False Terima karakter wildcard: False
 
 ```yaml
 Type: System.String
@@ -138,11 +138,11 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Objek yang dikembalikan (jika ditentukan).
+Mengembalikan objek (jika ditentukan).
 
-Tipe yaml: SwitchParameter Parameter Sets: (Semua) Alias: 
+Tipe yaml: Set Parameter SwitchParameter: (Semua) Alias: 
 
-Diperlukan: Posisi False: Nilai Default Bernama: Input saluran Tidak Terima: Karakter wildcard Terima False: False
+Diperlukan: Posisi False: Nilai default bernama: Tidak Ada Terima input pipeline: False Terima karakter wildcard: False
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,11 +157,11 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya akun berbagi data Azure
+Nama grup sumber daya dari akun berbagi data azure
 
-Tipe yaml: Kumpulan Parameter String: Alias ByFieldsParameterSet: 
+yaml Type: String Parameter Sets: ByFieldsParameterSet Aliases: 
 
-Diperlukan: Posisi True: Nilai Default Bernama: Input saluran Tidak Diterima: Karakter wildcard Terima False: False
+Diperlukan: Posisi True: Nilai default bernama: Tidak Ada Menerima input pipeline: False Terima karakter wildcard: False
 
 ```yaml
 Type: System.String
@@ -178,9 +178,9 @@ Accept wildcard characters: False
 ### -ResourceId
 Id sumber daya berbagi data Azure
 
-Tipe yaml: Kumpulan Parameter String: Alias ByResourceIdParameterSet: 
+yaml Type: String Parameter Sets: ByResourceIdParameterSet Aliases: 
 
-Diperlukan: Posisi True: Nilai Default Bernama: Input saluran Tidak Diterima: True (ByPropertyName) Terima karakter wildcard: False
+Diperlukan: True Position: Nilai default bernama: None Accept pipeline input: True (ByPropertyName) Accept wildcard characters: False
 
 ```yaml
 Type: System.String
@@ -195,11 +195,11 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
-Tipe yaml: SwitchParameter Parameter Sets: (Semua) Alias: cf
+Tipe yaml: Set Parameter SwitchParameter: (Semua) Alias: cf
 
-Diperlukan: Posisi False: Nilai Default Bernama: Input saluran Tidak Terima: Karakter wildcard Terima False: False
+Diperlukan: Posisi False: Nilai default bernama: Tidak Ada Terima input pipeline: False Terima karakter wildcard: False
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -215,18 +215,18 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
-Tipe yaml: SwitchParameter Parameter Sets: (Semua) Alias: wi
+tipe yaml: Set Parameter SwitchParameter: (Semua) Alias: wi
 
-Diperlukan: Posisi False: Nilai Default Bernama: Input saluran Tidak Terima: Karakter wildcard Terima False: False
-
-
+Diperlukan: Posisi False: Nilai default bernama: Tidak Ada Terima input pipeline: False Terima karakter wildcard: False
 
 
-jenis yaml: Microsoft.Azure.PowerShell.Cmdlets.DataShare.Models.PSDataShare Parameter Sets: ByObjectParameterSet Aliases:
 
-Diperlukan: Posisi True: Nilai Default Bernama: Input saluran Tidak Ada Terima: True (ByValue) Terima karakter wildcard: False
+
+tipe yaml: Microsoft.Azure.PowerShell.Cmdlets.DataShare.Models.PSDataShare Parameter Set: ByObjectParameterSet Aliases:
+
+Diperlukan: True Position: Nilai default bernama: None Accept pipeline input: True (ByValue) Accept wildcard characters: False
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -241,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicyIntrusionDetectionBypassTraffic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicyIntrusionDetectionBypassTraffic.md
 ms.openlocfilehash: 7ef816cc8b4d5d22f0499cfc7668a7be225bc290
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139934809"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142047215"
 ---
 # New-AzFirewallPolicyIntrusionDetectionBypassTraffic
 
 ## SYNOPSIS
-Membuat Pengaturan Lalu Lintas Lewati Deteksi Intrusi Kebijakan Azure Firewall baru
+Membuat Azure Firewall Deteksi Penyusupan Kebijakan baru Melewati Pengaturan Lalu Lintas
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azfirewallpolicyintrusiondetectionbypasstraffic) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewallpolicyintrusiondetectionbypasstraffic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,17 +30,17 @@ New-AzFirewallPolicyIntrusionDetectionBypassTraffic -Name <String> [-Description
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzFirewallPolicyIntrusionDetectionBypassTraffic** membuat cmdlet Deteksi Intrusion Deteksi Firewall Azure Melewati Objek Lalu Lintas.
+Cmdlet **New-AzFirewallPolicyIntrusionDetectionBypassTraffic** membuat Azure Firewall Deteksi Intrusi Kebijakan Melewati Objek Lalu Lintas.
 
 ## EXAMPLES
 
-### Contoh 1: 1. Membuat lalu lintas bypass dengan alamat port dan sumber tertentu
+### Contoh 1: 1. Membuat lalu lintas bypass dengan port dan alamat sumber tertentu
 ```powershell
 PS C:\> $bypass = New-AzFirewallPolicyIntrusionDetectionBypassTraffic -Name "bypass-setting" -Protocol "TCP" -DestinationPort "80" -SourceAddress "10.0.0.0" -DestinationAddress "*"
 PS C:\> New-AzFirewallPolicyIntrusionDetection -Mode "Deny" -BypassTraffic $bypass
 ```
 
-Contoh ini membuat deteksi penyusup dengan melewati pengaturan lalu lintas
+Contoh ini membuat deteksi gangguan dengan melewati pengaturan lalu lintas
 
 ## PARAMETERS
 
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationPort
-Daftar port tujuan atau rentang.
+Daftar port atau rentang tujuan.
 
 ```yaml
 Type: String[]
@@ -134,7 +134,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
+### -Protokol
 Melewati protokol pengaturan.
 
 ```yaml
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceAddress
-Daftar alamat IP atau rentang sumber.
+Daftar alamat IP sumber atau rentang.
 
 ```yaml
 Type: String[]
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceIpGroup
-Daftar IpGroup sumber.
+Daftar IpGroups sumber.
 
 ```yaml
 Type: String[]
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -212,11 +212,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

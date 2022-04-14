@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/test-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Test-AzDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Test-AzDeployment.md
-ms.openlocfilehash: cff115215b094bf703f39d12e10c0b3f35bd4608
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 7a6f245a60b33a73ee0bdb79823c24e1250c14a2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140391294"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142209511"
 ---
 # Test-AzDeployment
 
 ## SYNOPSIS
 Memvalidasi penyebaran.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/test-azdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -132,25 +135,25 @@ Cmdlet **Test-AzDeployment** menentukan apakah templat penyebaran dan nilai para
 
 ## EXAMPLES
 
-### Contoh 1: Uji penggunaan dengan templat kustom dan file parameter
+### Contoh 1: Uji penyebaran dengan templat kustom dan file parameter
 ```powershell
 PS C:\> Test-AzDeployment -Location "West US" -TemplateFile "D:\Azure\Templates\EngineeringSite.json" -TemplateParameterFile "D:\Azure\Templates\EngSiteParms.json"
 ```
 
-Perintah ini menguji penyebaran pada lingkup langganan saat ini menggunakan file templat dan file parameter yang ditentukan.
+Perintah ini menguji penyebaran pada lingkup langganan saat ini menggunakan file templat dan file parameter tertentu.
 
-### Contoh 2: Uji penggunaan dengan objek templat kustom dan file parameter
+### Contoh 2: Uji penyebaran dengan objek templat kustom dan file parameter
 ```powershell
 PS C:\> $TemplateFileText = [System.IO.File]::ReadAllText("D:\Azure\Templates\EngineeringSite.json")
 PS C:\> $TemplateObject = ConvertFrom-Json $TemplateFileText -AsHashtable
 PS C:\> Test-AzDeployment -Location "West US" -TemplateObject $TemplateObject -TemplateParameterFile "D:\Azure\Templates\EngSiteParams.json"
 ```
 
-Perintah ini menguji penyebaran pada lingkup langganan saat ini menggunakan hashtable dalam memori yang dibuat dari file templat dan file parameter tertentu.
+Perintah ini menguji penyebaran pada lingkup langganan saat ini menggunakan hashtable dalam memori yang dibuat dari file templat tertentu dan file parameter.
 
 ### Contoh 3
 
-Memvalidasi penyebaran. (otomatisgenerated)
+Memvalidasi penyebaran. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama penyebaran yang akan diuji penyebarannya. Jika tidak ditentukan, defaultnya adalah nama file templat ketika file templat disediakan
+Nama penyebaran yang akan diuji. Jika tidak ditentukan, default ke nama file templat saat file templat disediakan
 
 ```yaml
 Type: System.String
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Saat diatur, cmdlet harus menggunakan versi API prari tamu ketika menentukan versi mana yang akan digunakan secara otomatis.
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipTemplateParameterPrompt
-Skips the PowerShell dynamic parameter processing that checks if the provided template parameter contains all necessary parameters used by the template. Pemeriksaan ini akan meminta pengguna untuk menyediakan nilai untuk parameter yang hilang, tetapi menyediakan -SkipTemplateParameterPrompt akan mengabaikan perintah ini dan kesalahan langsung keluar jika parameter tidak terikat dalam templat. Untuk skrip non-interaktif, -SkipTemplateParameterPrompt bisa disediakan untuk menyediakan pesan kesalahan yang lebih baik dalam kasus di mana tidak semua parameter yang diperlukan puas.
+Lewati pemrosesan parameter dinamis PowerShell yang memeriksa apakah parameter templat yang disediakan berisi semua parameter yang diperlukan yang digunakan oleh templat. Pemeriksaan ini akan meminta pengguna untuk memberikan nilai untuk parameter yang hilang, tetapi menyediakan -SkipTemplateParameterPrompt akan segera mengabaikan perintah ini dan kesalahan jika parameter ditemukan tidak terikat dalam templat. Untuk skrip non-interaktif, -SkipTemplateParameterPrompt dapat disediakan untuk memberikan pesan kesalahan yang lebih baik jika tidak semua parameter yang diperlukan puas.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -297,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateParameterObject
-Tabel hash yang menyatakan parameter.
+Tabel hash yang mewakili parameter.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -327,7 +330,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateSpecId
-ID Sumber Daya dari templatSpeced yang akan digunakan.
+ID sumber daya templatSpec yang akan digunakan.
 
 ```yaml
 Type: System.String
@@ -357,7 +360,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

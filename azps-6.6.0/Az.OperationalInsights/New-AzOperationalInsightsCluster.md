@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsCluster.md
 ms.openlocfilehash: 043e1cb3e9b99a28c992ab01d81e856ce3ad0580
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140463308"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142267333"
 ---
 # New-AzOperationalInsightsCluster
 
@@ -18,7 +18,7 @@ ms.locfileid: "140463308"
 Buat kluster
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightscluster) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightscluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +56,7 @@ Buat kluster
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-tipe identitas, nilai bisa menjadi 'SystemAssigned', 'Tidak ada'.
+tipe identitas, nilai dapat berupa 'SystemAssigned', 'None'.
 
 ```yaml
 Type: String
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Kawasan geografis yang akan digunakan oleh kluster tersebut.
+Wilayah geografis yang akan digunakan kluster.
 
 ```yaml
 Type: String
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuCapacity
-Kapasitas Sku, nilai harus kelipatan 100 dan dalam rentang 1000-2000.
+Kapasitas Sku, nilai perlu kelipatan 100 dan dalam rentang 1000-2000.
 
 ```yaml
 Type: Int64
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Sku Nama, sekarang bisa menjadi 'CapacityReservation' saja
+Nama Sku, kini hanya dapat berupa 'CapacityReservation'
 
 ```yaml
 Type: String
@@ -177,7 +177,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tag
+### -Tags
 Tag kluster
 
 ```yaml
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

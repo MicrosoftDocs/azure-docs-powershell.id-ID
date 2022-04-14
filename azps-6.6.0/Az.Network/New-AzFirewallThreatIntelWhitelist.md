@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallThreatIntelWhitelist.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallThreatIntelWhitelist.md
 ms.openlocfilehash: d01a4b692c7663560badb596c430112ab0081f0b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140307337"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142268215"
 ---
 # New-AzFirewallThreatIntelWhitelist
 
@@ -18,7 +18,7 @@ ms.locfileid: "140307337"
 Membuat daftar putih kecerdasan ancaman baru untuk Azure Firewall
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azfirewallthreatintelwhitelist) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewallthreatintelwhitelist) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-AzFirewallThreatIntelWhitelist [-FQDN <String[]>] [-IpAddress <String[]>]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzFirewallThreatIntelGroupGroup membuat** objek threat intel whitelist, yang bisa digunakan saat membuat atau mengatur Azure Firewall.
+Cmdlet **New-AzFirewallThreatIntelWhitelist** menciptakan objek daftar putih intel ancaman, yang dapat digunakan saat membuat atau mengatur Azure Firewall.
 
 ## EXAMPLES
 
@@ -37,7 +37,7 @@ Cmdlet **New-AzFirewallThreatIntelGroupGroup membuat** objek threat intel whitel
 PS C:\> New-AzFirewallThreatIntelWhitelist -IpAddress @("2.2.2.2", "3.3.3.3") -FQDN @("bing.com", "yammer.com")
 ```
 
-Contoh ini membuat daftar putih intel ancaman yang berisi daftar putih FQDN berisi dua entri dan daftar putih alamat Ip yang terdiri dari dua entri
+Contoh ini membuat daftar putih intel ancaman yang berisi daftar putih FQDN dari dua entri dan daftar putih alamat Ip dari dua entri
 
 ## PARAMETERS
 
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -FQDN
-FQDN Dari Threat Intel Whitelist
+Daftar Putih FQDN Dari Threat Intel
 
 ```yaml
 Type: System.String[]
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpAddress
-Alamat IP Threat Intel Whitelist
+Alamat IP dari Daftar Putih Threat Intel
 
 ```yaml
 Type: System.String[]
@@ -87,15 +87,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Network.Models.PSAzureFirewallThreatIntelMicrosoftlist
+### Microsoft.Azure.Commands.Network.Models.PSAzureFirewallThreatIntelWhitelist
 
 ## CATATAN
 
