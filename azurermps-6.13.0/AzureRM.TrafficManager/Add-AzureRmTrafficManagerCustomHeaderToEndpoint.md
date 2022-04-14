@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.traff
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/TrafficManager/Commands.TrafficManager2/help/Add-AzureRmTrafficManagerCustomHeaderToEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/TrafficManager/Commands.TrafficManager2/help/Add-AzureRmTrafficManagerCustomHeaderToEndpoint.md
-ms.openlocfilehash: f399067d2d6947561969452cc96249569e5bcc6fdd1a22da3e3a81ff0b3c7acf
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: a00eb5977ad1a58b12ad3f326d36dba8d083d718
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140867982"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141773623"
 ---
 # Add-AzureRmTrafficManagerCustomHeaderToEndpoint
 
 ## SYNOPSIS
-Menambahkan informasi header kustom ke objek titik Traffic Manager titik akhir lokal.
+Menambahkan informasi header kustom ke objek titik akhir Traffic Manager lokal.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -30,10 +30,10 @@ Add-AzureRmTrafficManagerCustomHeaderToEndpoint -Name <String> -Value <String>
 
 ## DESCRIPTION
 Cmdlet **Add-AzureRmTrafficManagerCustomHeaderToEndpoint** menambahkan informasi header kustom ke objek titik akhir Azure Traffic Manager lokal.
-Anda dapat memperoleh titik akhir menggunakan cmdlet New-AzureRmTrafficManagerEndpoint Get-AzureRmTrafficManagerEndpoint.
+Anda bisa mendapatkan titik akhir dengan menggunakan cmdlet New-AzureRmTrafficManagerEndpoint atau Get-AzureRmTrafficManagerEndpoint.
 
 Cmdlet ini beroperasi pada objek titik akhir lokal.
-Lakukan perubahan anda ke titik akhir Traffic Manager dengan menggunakan cmdlet Set-AzureRmTrafficManagerEndpoint cmdlet.
+Lakukan perubahan anda ke titik akhir untuk Traffic Manager dengan menggunakan cmdlet Set-AzureRmTrafficManagerEndpoint.
 
 ## EXAMPLES
 
@@ -44,15 +44,15 @@ PS C:\> Add-AzureRmTrafficManagerCustomHeaderToEndpoint -TrafficManagerEndpoint 
 PS C:\> Set-AzureRmTrafficManagerEndpoint -TrafficManagerEndpoint $TrafficManagerEndpoint
 ```
 
-Perintah pertama membuat titik akhir Azure Traffic Manager dengan menggunakan cmdlet **New-AzureRmTrafficManagerEndpoint**.
-Perintah menyimpan titik akhir lokal dalam $TrafficManagerEndpoint variabel.
+Perintah pertama membuat titik akhir Azure Traffic Manager menggunakan cmdlet **New-AzureRmTrafficManagerEndpoint**.
+Perintah menyimpan titik akhir lokal dalam variabel $TrafficManagerEndpoint.
 Perintah kedua menambahkan informasi header kustom ke titik akhir yang disimpan di $TrafficManagerEndpoint.
-Perintah terakhir memperbarui titik akhir pada Traffic Manager cocok dengan nilai lokal dalam $TrafficManagerEndpoint.
+Perintah terakhir memperbarui titik akhir di Traffic Manager agar sesuai dengan nilai lokal dalam $TrafficManagerEndpoint.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama informasi header kustom untuk ditambahkan.
+Menentukan nama informasi header kustom yang akan ditambahkan.
 
 ```yaml
 Type: System.String
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ### -TrafficManagerEndpoint
 Menentukan objek **TrafficManagerEndpoint** lokal.
 Cmdlet ini mengubah objek lokal ini.
-Untuk mendapatkan objek **TrafficManagerEndpoint** , gunakan cmdlet Get-AzureRmTrafficManagerEndpoint New-AzureRmTrafficManagerEndpoint.
+Untuk mendapatkan objek **TrafficManagerEndpoint** , gunakan cmdlet Get-AzureRmTrafficManagerEndpoint atau New-AzureRmTrafficManagerEndpoint.
 
 ```yaml
 Type: Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerEndpoint
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -Value
-Menentukan nilai dari informasi header kustom yang akan ditambahkan.
+Menentukan nilai informasi header kustom yang akan ditambahkan.
 
 ```yaml
 Type: System.String
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -144,17 +144,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.Network.TrafficManagerEndpoint
-Cmdlet ini menerima objek **TrafficManagerEndpoint** ke cmdlet ini.
+Cmdlet ini menerima objek **TrafficManagerEndpoint** untuk cmdlet ini.
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Network.TrafficManagerEndpoint
-Cmdlet ini mengembalikan objek **TrafficManagerEndpoint yang** diubah.
+Cmdlet ini mengembalikan objek **TrafficManagerEndpoint** yang dimodifikasi.
 
 ## CATATAN
 

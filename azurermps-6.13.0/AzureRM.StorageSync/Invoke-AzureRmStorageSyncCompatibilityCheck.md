@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.stora
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/StorageSync/Commands.StorageSync/help/Invoke-AzureRmStorageSyncCompatibilityCheck.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/StorageSync/Commands.StorageSync/help/Invoke-AzureRmStorageSyncCompatibilityCheck.md
-ms.openlocfilehash: 9b4a459a123684bd46bd7a605eba91713cd10a9e00d7d4cb22002c0ba36c2bb3
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 73e0f00fe184a5462141b060717ca64567d4a67e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140852169"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141773593"
 ---
 # Invoke-AzureRmStorageSyncCompatibilityCheck
 
 ## SYNOPSIS
-Memeriksa potensi masalah kompatibilitas antara sistem dan Sinkronisasi File Azure.
+Memeriksa potensi masalah kompatibilitas antara sistem Anda dan Sinkronisasi File Azure.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -34,14 +34,14 @@ Invoke-AzureRmStorageSyncCompatibilityCheck [-Credential <PSCredential>] [-Compu
 ```
 
 ## DESCRIPTION
-Cmdlet **Invoke-AzureRmStorageSyncCompatibilityCheck** memeriksa potensi masalah kompatibilitas antara sistem Anda dan Sinkronisasi File Azure. Jika diberi jalur lokal atau jarak jauh, program ini menjalankan serangkaian validasi pada sistem dan ruang nama file, lalu mengembalikan setiap masalah kompatibilitas yang ditemukannya.
+Cmdlet **Invoke-AzureRmStorageSyncCompatibilityCheck** memeriksa potensi masalah kompatibilitas antara sistem anda dan Azure File Sync. Dengan jalur lokal atau jarak jauh, jalur ini menjalankan sekumpulan validasi pada sistem dan ruang nama file, lalu mengembalikan masalah kompatibilitas yang ditemukan.
 Pemeriksaan sistem:
-- Pemeriksaan ruang nama File kompatibilitas OS:
+- Kompatibilitas OS Ruang nama file memeriksa:
 - Karakter yang tidak didukung
 - Ukuran file maksimum
 - Panjang jalur maksimum
 - Panjang file maksimum
-- Ukuran maksimum set data
+- Ukuran kumpulan data maksimum
 - Kedalaman direktori maksimum
 
 ## EXAMPLES
@@ -58,7 +58,7 @@ Perintah ini memeriksa kompatibilitas sistem dan juga file dan folder di C:\DATA
 PS C:\> Invoke-AzureRmStorageSyncCompatibilityCheck C:\DATA -SkipSystemChecks
 ```
 
-Perintah ini memeriksa kompatibilitas file dan folder di C:\DATA, tetapi tidak menjalankan pemeriksaan kompatibilitas sistem.
+Perintah ini memeriksa kompatibilitas file dan folder di C:\DATA, tetapi tidak melakukan pemeriksaan kompatibilitas sistem.
 
 ### Contoh 3
 ```powershell
@@ -71,7 +71,7 @@ Perintah ini memeriksa kompatibilitas sistem dan juga file dan folder di C:\DATA
 ## PARAMETERS
 
 ### -ComputerName
-Komputer yang Anda menjalankan pemeriksaan ini.
+Komputer tempat Anda menjalankan pemeriksaan ini.
 
 ```yaml
 Type: System.String
@@ -85,8 +85,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Credential
-Kredensial Anda untuk berbagi yang sedang Anda validasi.
+### -Kredensial
+Kredensial Anda untuk berbagi yang Anda validasi.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -100,8 +100,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Jalur UNC dari berbagi yang Anda validasi.
+### -Jalur
+Jalur UNC berbagi yang Anda validasi.
 
 ```yaml
 Type: System.String
@@ -115,7 +115,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Quiet
+### -Diam
 Menyembunyikan laporan output penulisan ke konsol.
 
 ```yaml
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipNamespaceChecks
-Set this flag to skip file namespace validations and only perform system validations.
+Atur bendera ini untuk melewati validasi ruang nama file dan hanya melakukan validasi sistem.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipSystemChecks
-Set this flag to skip system validations and only perform file namespace validations.
+Atur bendera ini untuk melewati validasi sistem dan hanya melakukan validasi ruang nama file.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,17 +161,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.StorageSync.Evaluation.Models.PSValidationResult
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, storagesync, filesync
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, storagesync, filesync
 
 ## RELATED LINKS

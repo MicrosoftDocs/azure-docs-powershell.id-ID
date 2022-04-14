@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.managedservices/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/New-AzManagedServicesAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/New-AzManagedServicesAssignment.md
-ms.openlocfilehash: 01059c396285642e45239c9da15f9772d7803866
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6de10dba4b2e8e7a660802c08a21bed989d422f4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140556169"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141787658"
 ---
 # New-AzManagedServicesAssignment
 
 ## SYNOPSIS
-Membuat atau memperbarui penetapan pendaftaran.
+Membuat atau memperbarui tugas pendaftaran.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.managedservices/new-azmanagedservicesassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ New-AzManagedServicesAssignment -Name <String> [-Scope <String>] [-RegistrationD
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui penetapan pendaftaran.
+Membuat atau memperbarui tugas pendaftaran.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat penetapan pendaftaran Mercusuar Azure baru di lingkup langganan
+### Contoh 1: Membuat penetapan pendaftaran Azure Lighthouse baru pada lingkup langganan
 ```powershell
 PS C:\> New-AzManagedServicesAssignment -Name xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -Scope "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" -RegistrationDefinitionId  "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/providers/Microsoft.ManagedServices/registrationDefinitions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 
@@ -49,7 +52,7 @@ Name                                 Type
 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx Microsoft.ManagedServices/registrationAssignments
 ```
 
-Membuat penetapan pendaftaran Azure Lighthouse baru pada lingkup grup sumber daya dengan definisi registrasi.
+Membuat penetapan pendaftaran Azure Lighthouse baru di lingkup grup sumber daya dengan definisi pendaftaran.
 
 ## PARAMETERS
 
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-GUID penetapan pendaftaran.
+GUID tugas pendaftaran.
 
 ```yaml
 Type: System.String
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistrationDefinitionId
-Jalur definisi registrasi yang sepenuhnya memenuhi syarat.
+Jalur yang sepenuhnya memenuhi syarat dari definisi pendaftaran.
 
 ```yaml
 Type: System.String
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

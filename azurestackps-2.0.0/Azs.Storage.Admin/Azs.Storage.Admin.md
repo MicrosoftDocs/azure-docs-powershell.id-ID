@@ -4,16 +4,16 @@ Module Guid: 9dbccb05-3016-4031-87bf-dd66baef639b
 Download Help Link: https://docs.microsoft.com/powershell/module/azs.storage.admin
 Help Version: 1.0.0.0
 Locale: en-US
-ms.openlocfilehash: 2aa077768cca733dbbc06c5729211781d65e3a4644b0ac62ebf7f87988b06349
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: dd7c333b6d1a68291c6ccc75650a76570ed4e7a1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132416906"
 ---
 # Azs. Storage. Modul Admin
 ## Deskripsi
-PowerShell Microsoft AzureStack: Cmdlet StorageAdmin
+Microsoft AzureStack PowerShell: Cmdlet StorageAdmin
 
 ## Azs. Storage. Cmdlet Admin
 ### [Get-AzsStorageAccount](Get-AzsStorageAccount.md)

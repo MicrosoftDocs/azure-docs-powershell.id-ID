@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareSubscriptionSynchronizationDetail.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareSubscriptionSynchronizationDetail.md
-ms.openlocfilehash: cb3f0843653f490fe327090f7c0e21795c613ff7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 51663d0a17f8cd3e0c28a060d3928719cb2c2e9a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140187399"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141894266"
 ---
 # Get-AzDataShareSubscriptionSynchronizationDetail
 
 ## SYNOPSIS
 Mendapatkan informasi tentang detail sinkronisasi untuk berbagi langganan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datashare/get-azdatasharesubscriptionsynchronizationdetail) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,11 +58,11 @@ Name         : 16d5161b-2b3f-4d90-b074-13ad7121bcc7
 Message      :
 ```
 
-Perintah ini menyediakan informasi tentang sinkronisasi yang dimulai untuk berbagi langganan AdsShareSubscription di bawah data berbagi akun WikiAds.
+Perintah ini menyediakan informasi tentang sinkronisasi yang dimulai untuk berbagi langganan AdsShareSubscription di bawah akun berbagi data WikiAds.
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun berbagi data Azure
 
 ```yaml
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya akun berbagi data Azure
+Nama grup sumber daya dari akun berbagi data azure
 
 ```yaml
 Type: System.String
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -SynchronizationId
-Id sinkronisasi dari sinkronisasi langganan bersama
+Id sinkronisasi langganan berbagi
 
 ```yaml
 Type: System.String
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

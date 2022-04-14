@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Restore-AzKeyVaultCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Restore-AzKeyVaultCertificate.md
 ms.openlocfilehash: bc5bb0f229444123426f93831a59db3f8a89821e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140252935"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141866660"
 ---
 # Restore-AzKeyVaultCertificate
 
 ## SYNOPSIS
-Memulihkan sertifikat di kunci vault dari file cadangan.
+Memulihkan sertifikat dalam kubah kunci dari file cadangan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/restore-azkeyvaultcertificate) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/restore-azkeyvaultcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,13 +41,13 @@ Restore-AzKeyVaultCertificate [-ResourceId] <String> [-InputFile] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Restore-AzKeyVaultCertificate** membuat sertifikat di vault kunci tertentu dari file cadangan.
-Sertifikat ini adalah replika sertifikat yang dicadangkan dalam file input dan memiliki nama yang sama seperti sertifikat aslinya.
-Jika kunci vault sudah berisi sertifikat dengan nama yang sama, cmdlet ini gagal dan bukan menimpa sertifikat asli.
-Jika cadangan berisi beberapa versi sertifikat, semua versi dipulihkan.
-Kunci vault tempat Anda memulihkan sertifikat mungkin berbeda dari key vault yang Anda cadangkan sertifikatnya.
-Namun, kunci vault harus menggunakan langganan yang sama dan berada di kawasan Azure di geografi yang sama (misalnya, Amerika Utara).
-Lihat Microsoft Azure Kepercayaan Lokal (https://azure.microsoft.com/support/trust-center/) untuk pemetaan wilayah Azure ke geografi.
+Cmdlet **Restore-AzKeyVaultCertificate** membuat sertifikat dalam kubah kunci tertentu dari file cadangan.
+Sertifikat ini adalah replika sertifikat yang dicadangkan dalam file input dan memiliki nama yang sama dengan sertifikat asli.
+Jika kubah kunci sudah berisi sertifikat dengan nama yang sama, cmdlet ini gagal, bukan menimpa sertifikat asli.
+Jika cadangan berisi beberapa versi sertifikat, semua versi akan dipulihkan.
+Kubah kunci yang Anda pulihkan sertifikatnya bisa berbeda dari kubah kunci tempat Anda mencadangkan sertifikat.
+Namun, kubah kunci harus menggunakan langganan yang sama dan berada di kawasan Azure dalam geografi yang sama (misalnya, Amerika Utara).
+Lihat Pusat Kepercayaan Microsoft Azure (https://azure.microsoft.com/support/trust-center/) untuk pemetaan kawasan Azure ke geografis.
 
 ## EXAMPLES
 
@@ -89,7 +89,7 @@ Version       : bd406f6d6b3a41a1a1c633494d8c3c3a
 Id            : https://mykeyvault.vault.azure.net:443/certificates/cert1/bd406f6d6b3a41a1a1c633494d8c3c3a
 ```
 
-Perintah ini memulihkan sertifikat, termasuk semua versinya, dari file cadangan bernama Backup.blob ke dalam kunci vault yang bernama MyKeyVault.
+Perintah ini memulihkan sertifikat, termasuk semua versinya, dari file cadangan bernama Backup.blob ke dalam kubah kunci bernama MyKeyVault.
 
 ## PARAMETERS
 
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 
 ### -InputFile
 File input.
-File input berisi blob cadangan
+File input yang berisi gumpalan yang dicadangkan
 
 ```yaml
 Type: System.String
@@ -155,8 +155,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama Vault.
-Cmdlet menyusun FQDN dari vault berdasarkan nama dan lingkungan yang saat ini dipilih.
+Nama kubah.
+Cmdlet menyusun FQDN kubah berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

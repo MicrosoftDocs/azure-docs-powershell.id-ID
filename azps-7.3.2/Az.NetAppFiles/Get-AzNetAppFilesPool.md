@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesPool.md
-ms.openlocfilehash: 0b232716aa8114afcd3cf919c922acabd522ae49
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f6f0d6d430a4f3e4bac356ff1b013999e8748bc1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140393063"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141787352"
 ---
 # Get-AzNetAppFilesPool
 
 ## SYNOPSIS
-Dapatkan detail tentang kolam File Azure NetApp (ANF).
+Dapatkan detail kumpulan Azure NetApp Files (ANF).
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/get-aznetappfilespool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,11 +40,11 @@ Get-AzNetAppFilesPool -AccountObject <PSNetAppFilesAccount> [-DefaultProfile <IA
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzNetAppFilesPool** mendapatkan detail tentang kolam ANF.
+Cmdlet **Get-AzNetAppFilesPool** mendapatkan detail pool ANF.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pool ANF
+### Contoh 1: Dapatkan kumpulan ANF
 ```
 PS C:\>Get-AzNetAppFilesPool -ResourceGroupName "MyRG" -AccountName "MyAnfAccount" -Name "MyAnfPool"
 
@@ -65,7 +68,7 @@ Perintah ini mendapatkan akun bernama MyAnfPool dari akun "MyAnfAccount".
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun ANF
 
 ```yaml
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -AccountObject
-Objek akun berisi pool untuk dikembalikan
+Objek akun yang berisi kumpulan untuk dikembalikan
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesAccount
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama pool ANF
+Nama kumpulan ANF
 
 ```yaml
 Type: System.String
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya dari pool ANF
+Id sumber daya kumpulan ANF
 
 ```yaml
 Type: System.String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

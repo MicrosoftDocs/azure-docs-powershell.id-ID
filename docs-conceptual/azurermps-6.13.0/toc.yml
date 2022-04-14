@@ -2,9 +2,9 @@
   href: overview.md
 - name: Instal
   items:
-    - name: Instal dengan PowerShellGet
+    - name: Menginstal dengan PowerShellGet
       href: install-azurerm-ps.md
-    - name: Instal dengan MSI
+    - name: Menginstal dengan MSI
       href: other-install.md
 - name: Hapus instalasi
   href: uninstall-azurerm-ps.md
@@ -22,17 +22,17 @@
       href: context-persistence.md
 - name: Kueri
   href: queries-azureps.md
-- name: Format output
+- name: Output format
   href: formatting-output.md
 - name: Kelola langganan
   href: manage-subscriptions-azureps.md
 - name: Sebarkan
   items:
-    - name: Menerapkan templat Pengelola Sumber Daya
+    - name: Menyebarkan templat Resource Manager
       href: /azure/azure-resource-manager/resource-group-template-deploy
-    - name: Mengekspor templat Pengelola Sumber Daya
+    - name: Mengekspor templat Resource Manager
       href: /azure/azure-resource-manager/resource-manager-export-template-powershell
-    - name: Menerapkan templat Pengelola Sumber Daya pribadi
+    - name: Menyebarkan templat Resource Manager privat
       href: /azure/azure-resource-manager/resource-manager-powershell-sas-token
 - name: Konsep
   items:

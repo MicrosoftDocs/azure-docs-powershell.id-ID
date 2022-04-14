@@ -4,32 +4,32 @@ Module Guid: 05ed726b-fcce-40b2-ae08-ae5e6027eee4
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/azs.subscriptions.admin
 Help Version: 1.0.0.0
 Locale: en-US
-ms.openlocfilehash: 001dfd7e2ae241a04c02e762ba2f0cd72f7ac2cb8191d57326712278786d0989
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: d8a1ac9394acacf3ad06e44c728f0009816986db
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132416882"
 ---
-# Azs.Subscriptions.Admin Module
+# Modul Azs.Subscriptions.Admin
 ## Deskripsi
-PowerShell Microsoft AzureStack: Cmdlet SubscriptionsAdmin
+Microsoft AzureStack PowerShell: cmdlet SubscriptionsAdmin
 
 ## Cmdlet Azs.Subscriptions.Admin
 ### [Add-AzsPlanToOffer](Add-AzsPlanToOffer.md)
-Menautkan paket ke penawaran.
+Menautkan rencana ke penawaran.
 
 ### [Get-AzsAcquiredPlan](Get-AzsAcquiredPlan.md)
-Mendapatkan paket tertentu yang diperoleh dengan menggunakan langganan akan menghabiskan penawaran tersebut.
+Mendapatkan paket tertentu yang diperoleh dengan langganan yang mengkonsumsi penawaran.
 
 ### [Get-AzsAdminManagedOffer](Get-AzsAdminManagedOffer.md)
-Mendapatkan penawaran tertentu.
+Dapatkan penawaran yang ditentukan.
 
 ### [Get-AzsDelegatedProvider](Get-AzsDelegatedProvider.md)
-Dapatkan penyedia yang didelegasikan tertentu.
+Dapatkan penyedia yang didelegasikan yang ditentukan.
 
 ### [Get-AzsDelegatedProviderManagedOffer](Get-AzsDelegatedProviderManagedOffer.md)
-Dapatkan penawaran penyedia terdelegasi tertentu.
+Dapatkan penawaran penyedia yang didelegasikan yang ditentukan.
 
 ### [Get-AzsDirectoryTenant](Get-AzsDirectoryTenant.md)
 Dapatkan penyewa direktori berdasarkan nama.
@@ -38,73 +38,73 @@ Dapatkan penyewa direktori berdasarkan nama.
 Memeriksa kesehatan identitas
 
 ### [Get-AzsLocation](Get-AzsLocation.md)
-Mendapatkan lokasi tertentu.
+Dapatkan lokasi yang ditentukan.
 
-### [Get-AzsFest](Get-AzsManifest.md)
+### [Get-AzsManifest](Get-AzsManifest.md)
 Dapatkan manifes yang ditentukan.
 
 ### [Get-AzsOfferDelegation](Get-AzsOfferDelegation.md)
-Dapatkan delegasi penawaran tertentu.
+Dapatkan delegasi penawaran yang ditentukan.
 
 ### [Get-AzsOfferMetric](Get-AzsOfferMetric.md)
-Dapatkan penawaran metrik.
+Dapatkan metrik penawaran.
 
 ### [Get-AzsPlan](Get-AzsPlan.md)
-Mendapatkan paket tertentu.
+Dapatkan paket yang ditentukan.
 
 ### [Get-AzsPlanMetric](Get-AzsPlanMetric.md)
-Dapatkan metrik dari paket yang ditentukan.
+Dapatkan metrik paket yang ditentukan.
 
 ### [Get-AzsSubscriptionQuota](Get-AzsSubscriptionQuota.md)
-Mendapatkan kuota menurut nama.
+Mendapatkan kuota berdasarkan nama.
 
 ### [Get-AzsUserSubscription](Get-AzsUserSubscription.md)
-Mendapatkan langganan tertentu.
+Dapatkan langganan tertentu.
 
 ### [Move-AzsUserSubscription](Move-AzsUserSubscription.md)
-Pindahkan langganan di antara penawaran penyedia yang didelegasikan.
+Pindahkan langganan antara penawaran penyedia yang didelegasikan.
 
 ### [New-AzsAcquiredPlan](New-AzsAcquiredPlan.md)
 
 
 ### [New-AzsOffer](New-AzsOffer.md)
-Buat atau perbarui penawaran.
+Membuat atau memperbarui penawaran.
 
 ### [New-AzsOfferDelegation](New-AzsOfferDelegation.md)
 Membuat atau memperbarui delegasi penawaran.
 
 ### [New-AzsPlan](New-AzsPlan.md)
-Buat atau perbarui rencana tersebut.
+Buat atau perbarui rencana.
 
 ### [New-AzsUserSubscription](New-AzsUserSubscription.md)
 Membuat atau memperbarui langganan tertentu.
 
 ### [Remove-AzsAcquiredPlan](Remove-AzsAcquiredPlan.md)
-Menghapus rencana yang diperoleh.
+Menghapus paket yang diperoleh.
 
-### [Remove-AzsOffer](Remove-AzsOffer.md)
-Hapus penawaran tertentu.
+### [Hapus-AzsOffer](Remove-AzsOffer.md)
+Hapus penawaran yang ditentukan.
 
 ### [Remove-AzsOfferDelegation](Remove-AzsOfferDelegation.md)
-Hapus delegasi penawaran tertentu.
+Hapus delegasi penawaran yang ditentukan.
 
 ### [Remove-AzsPlan](Remove-AzsPlan.md)
-Menghapus paket tertentu.
+Menghapus paket yang ditentukan.
 
 ### [Remove-AzsPlanFromOffer](Remove-AzsPlanFromOffer.md)
-Menghapus tautan rencana dari penawaran.
+Batalkan penautan paket dari penawaran.
 
 ### [Remove-AzsUserSubscription](Remove-AzsUserSubscription.md)
 
 
 ### [Set-AzsOffer](Set-AzsOffer.md)
-Buat atau perbarui penawaran.
+Membuat atau memperbarui penawaran.
 
 ### [Set-AzsOfferDelegation](Set-AzsOfferDelegation.md)
 Membuat atau memperbarui delegasi penawaran.
 
 ### [Set-AzsPlan](Set-AzsPlan.md)
-Buat atau perbarui rencana tersebut.
+Buat atau perbarui rencana.
 
 ### [Set-AzsUserSubscription](Set-AzsUserSubscription.md)
 Membuat atau memperbarui langganan tertentu.

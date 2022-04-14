@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayRequestRoutingRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayRequestRoutingRule.md
-ms.openlocfilehash: 8be3f2fdf7b66061e91ff4e1ce135480d3542f17
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5148e6bcd00279c4ca61ee4fcbb8be05bc573375
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140392986"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141787244"
 ---
 # Add-AzApplicationGatewayRequestRoutingRule
 
 ## SYNOPSIS
 Menambahkan aturan perutean permintaan ke gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azapplicationgatewayrequestroutingrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ PS C:\>$AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceG
 PS C:\> $Appgw = Add-AzApplicationGatewayRequestRoutingRule -ApplicationGateway $AppGw -Name "Rule01" -RuleType Basic -Priority 100 -BackendHttpSettings $Setting -HttpListener $Listener -BackendAddressPool $Pool
 ```
 
-Perintah pertama akan mendapatkan gateway aplikasi dan menyimpannya dalam $AppGw variabel.
+Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam variabel $AppGw.
 Perintah kedua menambahkan aturan perutean permintaan ke gateway aplikasi.
 
 ## PARAMETERS
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendAddressPool
-Menentukan objek gabungan alamat ujung belakang gateway aplikasi.
+Menentukan objek kumpulan alamat ujung belakang gateway aplikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayBackendAddressPool
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendAddressPoolId
-Menentukan ID gabungan alamat ujung belakang gateway aplikasi.
+Menentukan ID kumpulan alamat back-end gateway aplikasi.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -145,7 +148,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpListener
+### -HttpListener
 Menentukan objek pendengar HTTP gateway aplikasi.
 
 ```yaml
@@ -160,7 +163,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpListenerId
+### -HttpListenerId
 Menentukan ID pendengar HTTP gateway aplikasi.
 
 ```yaml
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama aturan perutean permintaan yang menambahkan cmdlet ini.
+Menentukan nama aturan perutean permintaan yang ditambahkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -206,8 +209,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RedirectConfiguration
-Application gateway RedirectConfiguration
+### -Konfigurasi Ulang
+Konfigurasi Ulang gateway aplikasi
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayRedirectConfiguration
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -RedirectConfigurationId
-ID gateway aplikasi RedirectConfiguration
+ID konfigurasi ulang gateway aplikasi
 
 ```yaml
 Type: System.String
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -RewriteRuleSet
-Gateway Aplikasi Tulis UlangRuleSet
+Gateway aplikasi RewriteRuleSet
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayRewriteRuleSet
@@ -311,7 +314,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

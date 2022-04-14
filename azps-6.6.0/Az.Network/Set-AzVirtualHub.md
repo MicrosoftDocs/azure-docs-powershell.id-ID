@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualHub.md
 ms.openlocfilehash: 995c06d55b659dd156146e44fb83534305f1a008
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140248993"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141798565"
 ---
 # Set-AzVirtualHub
 
 ## SYNOPSIS
-Mengubah Virtual Hub untuk menambahkan Tabel Rute HUb Virtual ke dalamnya.
+Memodifikasi Hub Virtual untuk menambahkan Tabel Rute HUb Virtual ke dalamnya.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azvirtualhub) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azvirtualhub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -67,12 +67,12 @@ Type                                  : Microsoft.Network/virtualHubs
 ProvisioningState                     : Succeeded
 ```
 
-Pertama-mata kita membuat objek Rute Virtual Hub, dan menggunakannya untuk membuat sumber daya Tabel Rute Virtual Hub. Lalu kami mengatur sumber daya tabel rute ini ke hub virtual menggunakan Set-AzVirtualHub perintah.
+Pertama, kami membuat objek Rute Hub Virtual, dan menggunakannya untuk membuat sumber daya Tabel Rute Hub Virtual. Lalu kami mengatur sumber daya tabel rute ini ke hub virtual menggunakan perintah Set-AzVirtualHub.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Hub virtual yang akan dimodifikasi.
+Objek hub virtual yang akan diubah.
 
 ```yaml
 Type: PSVirtualHub
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -RouteTable
-Tabel rute yang berkaitan dengan Virtual Hub ini.
+Tabel rute yang terkait dengan Hub Virtual ini.
 
 ```yaml
 Type: PSVirtualHubRouteTable[]
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable yang mewakili tag sumber daya.
+Sebuah hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: Hashtable
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

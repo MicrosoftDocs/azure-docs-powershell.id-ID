@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Remove-AzDeploymentManagerRollout.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Remove-AzDeploymentManagerRollout.md
-ms.openlocfilehash: 40f9a26b13cc7b1454578ac6ba1fe5ca329fa13b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 87542bb2c6f13f73e0944b6d77319c527e55d0dd
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140179712"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141893978"
 ---
 # Remove-AzDeploymentManagerRollout
 
 ## SYNOPSIS
 Menghapus peluncuran.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.deploymentmanager/remove-azdeploymentmanagerrollout) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,8 +41,8 @@ Remove-AzDeploymentManagerRollout [-InputObject] <PSRollout> [-PassThru]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzDeploymentManagerRollout** menghapus peluncuran di status terminal.
-Tentukan peluncuran berdasarkan namanya dan nama grup sumber daya. Alternatifnya, Anda bisa menyediakan objek Rollout atau ResourceId.
+Cmdlet **Remove-AzDeploymentManagerRollout** menghapus peluncuran dalam status terminal.
+Tentukan peluncuran menurut nama dan nama grup sumber dayanya. Alternatifnya, Anda dapat menyediakan objek Rollout atau ResourceId.
 
 ## EXAMPLES
 
@@ -57,12 +60,12 @@ PS C:\> Remove-AzDeploymentManagerRollout -ResourceId "/subscriptions/subscripti
 
 Perintah ini menghapus peluncuran bernama ContosoRollout di ContosoResourceGroup.
 
-### Contoh 3: Menghapus peluncuran menggunakan objek rollout.
+### Contoh 3: Menghapus peluncuran menggunakan objek peluncuran.
 ```powershell
 PS C:\> Remove-AzDeploymentManagerRollout -InputObject $rolloutObject
 ```
 
-Perintah ini menghapus peluncuran yang namanya dan Grup Sumber Dayanya sesuai dengan properti Nama dan ResourceGroupName $rolloutObject, secara berurutan.
+Perintah ini menghapus peluncuran yang nama dan ResourceGroupnya masing-masing cocok dengan properti Name dan ResourceGroupName $rolloutObject.
 
 ## PARAMETERS
 
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{fill passThru Description}}
+{{Fill PassThru Description}}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

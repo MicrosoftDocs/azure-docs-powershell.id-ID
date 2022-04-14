@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dns/new-azdnszon
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/New-AzDnsZone.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/New-AzDnsZone.md
-ms.openlocfilehash: ec8b13b74ae4218ec099883494a8924fd6677e94
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 4847e4696f3720794c66364e165d51195a7b5b55
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140556512"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141788306"
 ---
 # New-AzDnsZone
 
 ## SYNOPSIS
 Membuat zona DNS baru.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.dns/new-azdnszone) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,8 +47,8 @@ New-AzDnsZone -Name <String> -ResourceGroupName <String> [-ZoneType <ZoneType>] 
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDnsZone** membuat zona Sistem Nama Domain (DNS) baru di grup sumber daya yang ditentukan. Anda harus menentukan nama zona DNS *unik untuk parameter* Nama atau cmdlet akan mengembalikan kesalahan. Setelah zona dibuat, gunakan cmdlet New-AzDnsRecordSet untuk membuat kumpulan catatan dalam zona.
-Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
+Cmdlet **New-AzDnsZone** membuat zona Domain Name System (DNS) baru dalam grup sumber daya yang ditentukan. Anda harus menentukan nama zona DNS unik untuk parameter *Nama* atau cmdlet akan mengembalikan kesalahan. Setelah zona dibuat, gunakan cmdlet New-AzDnsRecordSet untuk membuat kumpulan rekaman di zona.
+Anda dapat menggunakan variabel *Konfirmasi* parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
 
 ## EXAMPLES
 
@@ -54,39 +57,39 @@ Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Window
 PS C:\>$Zone = New-AzDnsZone -Name "myzone.com" -ResourceGroupName "MyResourceGroup"
 ```
 
-Perintah ini membuat zona DNS baru yang bernama myzone.com dalam grup sumber daya yang ditentukan, lalu menyimpannya di $Zone lain.
+Perintah ini membuat zona DNS baru bernama myzone.com dalam grup sumber daya tertentu, lalu menyimpannya dalam variabel $Zone.
 
-### Contoh 2: Membuat zona DNS privat dengan menentukan ID jaringan virtual
+### Contoh 2: Membuat zona DNS Pribadi dengan menentukan ID jaringan virtual
 ```
 PS C:\>$ResVirtualNetworkId = "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/testresgroup/providers/Microsoft.Network/virtualNetworks/resvnet"
 PS C:\>$Zone = New-AzDnsZone -Name "myprivatezone.com" -ResourceGroupName "MyResourceGroup" -ZoneType Private -ResolutionVirtualNetworkId @($ResVirtualNetworkId)
 ```
 
-Perintah ini akan membuat zona DNS Privat baru bernama myprivatezone.com dalam grup sumber daya tertentu dengan jaringan virtual resolusi terkait (menentukan IDnya), lalu menyimpannya dalam variabel $Zone terbatas.
+Perintah ini membuat zona DNS Pribadi baru bernama myprivatezone.com dalam grup sumber daya tertentu dengan jaringan virtual resolusi terkait (menentukan ID-nya), lalu menyimpannya dalam variabel $Zone.
 
-### Contoh 3: Membuat zona DNS Privat dengan menentukan objek jaringan virtual
+### Contoh 3: Membuat zona DNS Pribadi dengan menentukan objek jaringan virtual
 ```
 PS C:\>$ResVirtualNetwork = Get-AzVirtualNetwork -Name "resvnet" -ResourceGroupName "testresgroup"
 PS C:\>$Zone = New-AzDnsZone -Name "myprivatezone.com" -ResourceGroupName "MyResourceGroup" -ZoneType Private -ResolutionVirtualNetwork @($ResVirtualNetwork)
 ```
 
-Perintah ini akan membuat zona DNS Privat baru bernama myprivatezone.com dalam grup sumber daya tertentu dengan jaringan virtual resolusi terkait (yang dirujuk oleh variabel $ResVirtualNetwork), lalu menyimpannya dalam variabel $Zone tertentu.
+Perintah ini membuat zona DNS Pribadi baru bernama myprivatezone.com dalam grup sumber daya tertentu dengan jaringan virtual resolusi terkait (dirujuk oleh variabel $ResVirtualNetwork), lalu menyimpannya dalam variabel $Zone.
 
-### Contoh 4: Buat zona DNS dengan delegasi dengan menentukan nama zona induk
+### Contoh 4: Membuat zona DNS dengan delegasi dengan menentukan nama zona induk
 ```
 PS C:\>$Zone = New-AzDnsZone -Name "mychild.zone.com" -ResourceGroupName "MyResourceGroup" -ParentZoneName "zone.com"
 ```
 
-Perintah ini membuat zona DNS anak baru yang bernama mychild.zone.com dalam grup dan toko sumber daya yang ditentukan $Zone sumber daya.
-Ini juga menambahkan delegasi dalam zona DNS induk yang bernama zone.com yang berada di langganan dan grup sumber daya yang sama sebagai zona anak.
+Perintah ini membuat zona DNS anak baru bernama mychild.zone.com dalam grup sumber daya yang ditentukan dan disimpan dalam variabel $Zone.
+Ini juga menambahkan delegasi di zona DNS induk bernama zone.com berada di grup langganan dan sumber daya yang sama dengan zona turunan.
 
-### Contoh 5: Buat zona DNS dengan delegasi dengan menentukan id zona induk
+### Contoh 5: Membuat zona DNS dengan delegasi dengan menentukan id zona induk
 ```
 PS C:\>$Zone = New-AzDnsZone -Name "mychild.zone.com" -ResourceGroupName "MyResourceGroup" -ParentZoneId "/subscriptions/**67e2/resourceGroups/other-rg/providers/Microsoft.Network/dnszones/zone.com"
 ```
 
-Perintah ini membuat zona DNS anak baru yang bernama mychild.zone.com dalam grup dan toko sumber daya yang ditentukan $Zone sumber daya.
-Ini juga menambahkan delegasi di zona DNS induk yang bernama zone.com dalam grup sumber daya yang disediakan rg lain sama seperti yang dibuat zona anak.
+Perintah ini membuat zona DNS anak baru bernama mychild.zone.com dalam grup sumber daya yang ditentukan dan disimpan dalam variabel $Zone.
+Ini juga menambahkan delegasi di zona DNS induk bernama zone.com dalam grup sumber daya langganan lain-rg yang disediakan sama seperti zona turunan yang dibuat.
 
 ### Contoh 6: Membuat zona DNS dengan delegasi dengan menentukan objek zona induk
 ```
@@ -94,13 +97,13 @@ PS C:\>$PZone = New-AzDnsZone -Name "zone.com" -ResourceGroupName "MyResourceGro
 PS C:\>$Zone = New-AzDnsZone -Name "mychild.zone.com" -ResourceGroupName "MyResourceGroup" -ParentZone @($PZone)
 ```
 
-Perintah ini membuat zona DNS anak baru yang bernama mychild.zone.com dalam grup dan toko sumber daya yang ditentukan $Zone sumber daya.
-Delegasi juga menambahkan delegasi dalam zona DNS induk yang bernama zone.com yang disampaikan dalam objek ParentZone
+Perintah ini membuat zona DNS anak baru bernama mychild.zone.com dalam grup sumber daya yang ditentukan dan disimpan dalam variabel $Zone.
+Ini juga menambahkan delegasi di zona DNS induk bernama zone.com seperti yang dikirimkan dalam objek ParentZone
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentZone
-Nama lengkap zona induk untuk menambahkan delegasi (tanpa titik akhir).
+Nama lengkap zona induk untuk menambahkan delegasi (tanpa titik penghentian).
 
 ```yaml
 Type: Microsoft.Azure.Commands.Dns.DnsZone
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentZoneId
-Id sumber daya zona induk untuk menambahkan delegasi (tanpa titik tanda titik).
+Id sumber daya zona induk untuk menambahkan delegasi (tanpa titik penghentian).
 
 ```yaml
 Type: System.String
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentZoneName
-Nama lengkap zona induk untuk menambahkan delegasi (tanpa titik akhir).
+Nama lengkap zona induk untuk menambahkan delegasi (tanpa titik penghentian).
 
 ```yaml
 Type: System.String
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistrationVirtualNetwork
-Daftar jaringan virtual yang akan mendaftarkan catatan nama host mesin virtual dalam zona DNS ini, hanya tersedia untuk zona privat.
+Daftar jaringan virtual yang akan mendaftarkan catatan hostname mesin virtual di zona DNS ini, hanya tersedia untuk zona privat.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Management.Internal.Network.Common.IResourceReference]
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistrationVirtualNetworkId
-Daftar DNS jaringan virtual yang akan mendaftarkan catatan nama host mesin virtual di zona DNS ini, hanya tersedia untuk zona privat.
+Daftar ID jaringan virtual yang akan mendaftarkan catatan nama host mesin virtual di zona DNS ini, hanya tersedia untuk zona privat.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResolutionVirtualNetwork
-Daftar jaringan virtual yang bisa memecahkan catatan dalam zona DNS ini, hanya tersedia untuk zona privat.
+Daftar jaringan virtual yang bisa mengatasi catatan di zona DNS ini, hanya tersedia untuk zona privat.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Management.Internal.Network.Common.IResourceReference]
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResolutionVirtualNetworkId
-Daftar ID jaringan virtual yang bisa mengatasi catatan di zona DNS ini, hanya tersedia untuk zona privat.
+Daftar ID jaringan virtual dapat mengatasi catatan di zona DNS ini, hanya tersedia untuk zona privat.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -265,7 +268,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneType
-Tipe zona, Publik atau Privat. Zona tanpa tipe atau dengan tipe Publik dibuat tersedia di bidang layanan DNS publik untuk digunakan dalam hierarki DNS. Zona dengan tipe Privat hanya terlihat dari dengan kumpulan jaringan virtual yang terkait (fitur ini berada dalam pratinjau). Properti ini tidak dapat diubah untuk zona.
+Tipe zona, Publik atau Privat. Zona tanpa tipe atau dengan tipe Publik tersedia di bidang penyajian DNS publik untuk digunakan dalam hierarki DNS. Zona dengan tipe Privat hanya terlihat dengan sekumpulan jaringan virtual terkait (fitur ini ada dalam pratinjau). Properti ini tidak dapat diubah untuk zona.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Management.Dns.Models.ZoneType]
@@ -281,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -296,7 +299,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan. Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan. Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -311,19 +314,19 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[Microsoft.Azure.Management.Dns.Models.ZoneType, Microsoft.Azure.Management.Dns, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.Dns.Models.ZoneType, Microsoft.Azure.Management.Dns, Version=3.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
 ### System.Collections.Hashtable
 
-### System.Collections.Generic.List'1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Collections.Generic.List'1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Management.Internal.Network.Common.IResourceReference, Microsoft.Azure.PowerShell.Clients.Network, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Management.Internal.Network.Common.IResourceReference, Microsoft.Azure.PowerShell.Clients.Network, Version=1.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
 ## OUTPUTS
 
@@ -331,9 +334,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## CATATAN
 Anda dapat menggunakan parameter *Konfirmasi* untuk mengontrol apakah cmdlet ini meminta konfirmasi.
-Secara default, cmdlet akan meminta konfirmasi Anda jika $ConfirmPreference Windows PowerShell variabel memiliki nilai Sedang atau lebih rendah.
-Jika Anda menentukan *Konfirmasi* *atau Konfirmasi:$True* lanjut, cmdlet ini akan meminta konfirmasi sebelum dijalankan.
-Jika Anda menentukan *Confirm:$False*, cmdlet tidak akan meminta konfirmasi Anda.
+Secara default, cmdlet meminta Konfirmasi jika variabel $ConfirmPreference Windows PowerShell memiliki nilai Sedang atau lebih rendah.
+Jika Anda menentukan *Konfirmasi* atau *Konfirmasi:$True*, cmdlet ini meminta anda untuk konfirmasi sebelum berjalan.
+Jika Anda menentukan *Konfirmasi:$False*, cmdlet tidak meminta konfirmasi kepada Anda.
 
 ## RELATED LINKS
 
@@ -341,4 +344,4 @@ Jika Anda menentukan *Confirm:$False*, cmdlet tidak akan meminta konfirmasi Anda
 
 [New-AzDnsRecordSet](./New-AzDnsRecordSet.md)
 
-[Remove-AzDnsZone](./Remove-AzDnsZone.md)
+[Hapus-AzDnsZone](./Remove-AzDnsZone.md)

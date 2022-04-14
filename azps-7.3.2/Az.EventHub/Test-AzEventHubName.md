@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/test-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Test-AzEventHubName.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Test-AzEventHubName.md
-ms.openlocfilehash: 4b3fcd17eadf56bf16bcd2aba7224887b539bb2b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d2397ac264d737bb9ea90f013a1c0560a2729715
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140549959"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141788108"
 ---
 # Test-AzEventHubName
 
 ## SYNOPSIS
-Memeriksa Ketersediaan nama NameSpace atau Alias (Nama Konfigurasi DR) yang diberikan
+Memeriksa Ketersediaan Nama NameSpace atau Alias (Nama Konfigurasi DR) yang diberikan
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/test-azeventhubname) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Test-AzEventHubName [-ResourceGroupName] <String> [-Namespace] <String> [-AliasN
 ```
 
 ## DESCRIPTION
-Cmdlet **Test-AzEventhubName** Memeriksa Ketersediaan NameSpace Name atau Alias (Nama Konfigurasi DR)
+Cmdlet **Test-AzEventhubName** Memeriksa Ketersediaan Nama NameSpace atau Alias (Nama Konfigurasi DR)
 
 ## EXAMPLES
 
@@ -40,21 +43,21 @@ Cmdlet **Test-AzEventhubName** Memeriksa Ketersediaan NameSpace Name atau Alias 
 PS C:\> Test-AzEventhubName -Namespace MyNameSapceName
 ```
 
-Mengembalikan status pada ketersediaan nama ruang nama 'MyNameSapceName' sebagai True jika tersedia
+Mengembalikan status ketersediaan nama ruang nama 'MyNameSapceName' sebagai True jika tersedia
 
 ### Contoh 2
 ```
 PS C:\> Test-AzEventhubName -Namespace MyNameSapceName
 ```
 
-Mengembalikan status pada ketersediaan nama ruang nama 'MyNameSapceName' sebagai False dengan Alasan
+Mengembalikan status ketersediaan nama ruang nama 'MyNameSapceName' sebagai False dengan Alasan
 
 ### Contoh 3
 ```
 PS C:\> Test-AzEventhubName -ResourceGroupName MyResourceGroup -Namespace Test123 -AliasName myAliasName
 ```
 
-Mengembalikan status pada ketersediaan nama alias 'myAliasName' untuk ruang nama 'MyNameSapceName' sebagai True jika tersedia
+Mengembalikan status ketersediaan nama alias 'myAliasName' untuk ruang nama 'MyNameSapceName' sebagai True jika tersedia
 
 ## PARAMETERS
 
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama Eventhub
+Nama Namespace Eventhub
 
 ```yaml
 Type: System.String
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

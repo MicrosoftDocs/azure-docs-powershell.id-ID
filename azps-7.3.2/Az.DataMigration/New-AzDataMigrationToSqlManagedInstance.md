@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationToSqlManagedInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationToSqlManagedInstance.md
-ms.openlocfilehash: 0ed3ed97574d98f288eac645d0cd2ab6d9c3880a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: bbe552f26b52149415d558bd74c1158a3bf829e6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140394558"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141894608"
 ---
 # New-AzDataMigrationToSqlManagedInstance
 
 ## SYNOPSIS
-Membuat migrasi database baru ke contoh SQL Terkelola tertentu.
+Buat migrasi database baru ke SQL Managed Instance tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationtosqlmanagedinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,11 +38,11 @@ New-AzDataMigrationToSqlManagedInstance -ManagedInstanceName <String> -ResourceG
 ```
 
 ## DESCRIPTION
-Membuat migrasi database baru ke contoh SQL Terkelola tertentu.
+Buat migrasi database baru ke SQL Managed Instance tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Memulai Migrasi Database dari Sql Server Sumber lokal untuk menargetkan Instans Yang Dikelola
+### Contoh 1: Memulai Migrasi Database dari Sumber Sql Server lokal ke Instans Terkelola target
 ```powershell
 PS C:\> New-AzDataMigrationToSqlManagedInstance -ResourceGroupName "MyResourceGroup" -ManagedInstanceName "MyManagedInstance" -TargetDbName "MyDb" -Kind "SqlMI" -Scope "/subscriptions/0000-1111-2222-3333-4444/resourceGroups/MyResourceGroup/providers/Microsoft.Sql/managedInstances/MyManagedInstance" -MigrationService "/subscriptions/0000-1111-2222-3333-4444/resourceGroups/MyRG/providers/Microsoft.DataMigration/SqlMigrationServices/MySqlMigrationService" -StorageAccountResourceId "/subscriptions/0000-1111-2222-3333-4444/resourceGroups/MyResourceGroup/providers/Microsoft.Storage/storageAccounts/MyStorageAccount" -StorageAccountKey "aaaaacccccoouunntkkkkeeeyyy" -FileSharePath "\\filesharepath.com\SharedBackup\MyBackUps" -FileShareUsername "filesharepath\User" -FileSharePassword "password" -SourceSqlConnectionAuthentication "SqlAuthentication" -SourceSqlConnectionDataSource "LabServer.database.net" -SourceSqlConnectionUserName "User" -SourceSqlConnectionPassword "password" -SourceDatabaseName "AdventureWorks"
 
@@ -48,9 +51,9 @@ Name               Type                                       Kind  Provisioning
 MyDb               Microsoft.DataMigration/databaseMigrations SqlMi Succeeded         InProgress
 ```
 
-Perintah ini memulai Migrasi Database dari Server Sumber Sql untuk menargetkan Instans yang Dikelola.
+Perintah ini memulai Migrasi Database dari Source Sql Server untuk menargetkan Instans Terkelola.
 Contoh ini untuk migrasi online.
-Untuk membuatnya menambahkan -Offline ke parameter secara offline.
+Untuk membuatnya offline tambahkan -Offline ke parameter.
 
 ## PARAMETERS
 
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureBlobAccountKey
-Storage Bawah.
+Storage Kunci Akun.
 
 ```yaml
 Type: System.String
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureBlobContainerName
-Nama wadah Blob tempat cadangan disimpan.
+Nama kontainer blob tempat cadangan disimpan.
 
 ```yaml
 Type: System.String
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureBlobStorageAccountResourceId
-Id Sumber Daya akun penyimpanan tempat cadangan disimpan.
+Id Sumber Daya dari akun penyimpanan tempat cadangan disimpan.
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -FileSharePassword
-Kata sandi nama pengguna untuk mengakses lokasi berbagi file.
+Kata sandi untuk nama pengguna untuk mengakses lokasi berbagi file.
 
 ```yaml
 Type: System.String
@@ -174,7 +177,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kind
+### -Jenis
 .
 
 ```yaml
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -267,7 +270,7 @@ Accept wildcard characters: False
 ### -OfflineConfigurationLastBackupName
 Nama cadangan terakhir untuk migrasi offline.
 Ini opsional untuk migrasi dari berbagi file.
-Jika tidak diberikan, layanan akan menentukan nama file cadangan terakhir berdasarkan file cadangan terbaru yang ada dalam berbagi file.
+Jika tidak disediakan, maka layanan akan menentukan nama file cadangan terakhir berdasarkan file cadangan terbaru yang ada dalam berbagi file.
 
 ```yaml
 Type: System.String
@@ -282,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -312,8 +315,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya tersebut.
-Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+Nama grup sumber daya yang berisi sumber daya.
+Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
 
 ```yaml
 Type: System.String
@@ -328,7 +331,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Id Sumber Daya sumber daya target (SQL VM atau SQL Managed Instance)
+Id Sumber Daya sumber daya sumber daya (SQL VM atau SQL Managed Instance)
 
 ```yaml
 Type: System.String
@@ -388,7 +391,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceSqlConnectionEncryptConnection
-Enkripsi koneksi atau tidak.
+Apakah akan mengenkripsi koneksi atau tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -433,7 +436,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceSqlConnectionUserName
-Nama pengguna untuk menyambungkan ke sumber SQL.
+Nama pengguna untuk menyambungkan ke SQL sumber.
 
 ```yaml
 Type: System.String
@@ -448,7 +451,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountKey
-Storage Bawah.
+Storage Kunci Akun.
 
 ```yaml
 Type: System.String
@@ -463,7 +466,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountResourceId
-Id Sumber Daya akun penyimpanan menyalin cadangan.
+Id Sumber Daya dari akun penyimpanan yang menyalin cadangan.
 
 ```yaml
 Type: System.String
@@ -493,7 +496,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetDatabaseCollation
-Database collation to be used for the target database.
+Kolatasi database yang akan digunakan untuk database target.
 
 ```yaml
 Type: System.String
@@ -523,7 +526,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -539,7 +542,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -554,7 +557,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

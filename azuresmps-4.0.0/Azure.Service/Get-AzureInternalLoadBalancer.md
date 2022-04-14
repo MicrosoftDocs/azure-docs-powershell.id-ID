@@ -4,16 +4,16 @@ ms.assetid: A439ADC4-991E-4860-82AA-7BED315991B9
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 460adbb512a512b490373936ef77eb87fe69b6cf
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424125"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141772862"
 ---
 # Get-AzureInternalLoadBalancer
 
 ## SYNOPSIS
-Mendapatkan detail konfigurasi penyeimbang muat internal.
+Mendapatkan detail konfigurasi load balancer internal.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,32 +25,32 @@ Get-AzureInternalLoadBalancer [-ServiceName] <String> [-Profile <AzureSMProfile>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureInternalLoadBalancer** mendapatkan detail konfigurasi penyeimbang muat internal untuk layanan Azure.
+Cmdlet **Get-AzureInternalLoadBalancer** mendapatkan detail konfigurasi penyeimbang muatan internal untuk layanan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan detail untuk penyeimbang muat internal
+### Contoh 1: Dapatkan detail untuk penyeimbang muatan internal
 ```
 PS C:\> Get-AzureService -ServiceName "ContosoService" | Get-AzureInternalLoadBalancer
 ```
 
-Perintah ini mendapatkan layanan bernama ContosoService menggunakan cmdlet **Get-AzureService.**
-Perintah itu melewati layanan itu ke cmdlet saat ini dengan menggunakan operator pipeline.
-Cmdlet saat ini mendapatkan detail untuk penyeimbang muat internal untuk layanan tersebut.
+Perintah ini mendapatkan layanan bernama ContosoService dengan menggunakan cmdlet **Get-AzureService** .
+Perintah melewati layanan tersebut ke cmdlet saat ini menggunakan operator pipeline.
+Cmdlet saat ini mendapatkan detail untuk penyeimbang beban internal untuk layanan tersebut.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -80,8 +80,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Menentukan nama layanan di mana cmdlet ini mendapatkan detail untuk penyeimbang muat internal.
+Menentukan nama layanan di mana cmdlet ini mendapatkan detail untuk penyeimbang muatan internal.
 
 ```yaml
 Type: String
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -127,9 +127,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureService](./Get-AzureService.md)
 
-[New-AzureInternalLoadBalancerConfig](./New-AzureInternalLoadBalancerConfig.md)
+[Baru-AzureInternalLoadBalancerConfig](./New-AzureInternalLoadBalancerConfig.md)
 
-[Remove-AzureInternalLoadBalancer](./Remove-AzureInternalLoadBalancer.md)
+[Hapus-AzureInternalLoadBalancer](./Remove-AzureInternalLoadBalancer.md)
 
 [Set-AzureInternalLoadBalancer](./Set-AzureInternalLoadBalancer.md)
 

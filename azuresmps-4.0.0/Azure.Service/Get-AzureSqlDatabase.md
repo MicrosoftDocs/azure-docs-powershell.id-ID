@@ -4,11 +4,11 @@ ms.assetid: 7427A101-9439-45B9-B72E-F8C2DA85E412
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 70b60e311a2a9fc653c12a89c0d8ca15d9b6030a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421569"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141772362"
 ---
 # Get-AzureSqlDatabase
 
@@ -35,20 +35,20 @@ Get-AzureSqlDatabase -ServerName <String> [-Database <Database>] [-DatabaseName 
 
 ## DESCRIPTION
 Cmdlet **Get-AzureSqlDatabase** mengambil satu atau beberapa contoh Azure SQL Database dari server Azure SQL Database.
-Anda dapat menentukan server dengan konteks koneksi Azure SQL Database server yang dibuat menggunakan cmdlet **New-AzureSqlDatabaseServerContext.**
-Atau, jika Anda menentukan Azure SQL Database server, cmdlet menggunakan informasi langganan Azure saat ini untuk mengautentikasi permintaan agar dapat mengakses server.
+Anda dapat menentukan server dengan konteks koneksi server Azure SQL Database yang dibuat menggunakan cmdlet **New-AzureSqlDatabaseServerContext**.
+Atau, jika Anda menentukan nama server Azure SQL Database, cmdlet menggunakan informasi langganan Azure saat ini untuk mengautentikasi permintaan untuk mengakses server.
 
 Jika Anda tidak menentukan database, cmdlet **Get-AzureSqlDatabase** mengembalikan semua database dari server yang ditentukan.
 
-Mengambil database yang bisa dikembalikan:
+Mengambil database yang dihapus yang dapat dipulihkan:
 
-Ambil database yang bisa dikembalikan dengan menggunakan parameter *Restorable Restorable Restorpped.*
-Untuk mengembalikan semua database yang bisa dikembalikan gunakan parameter  *RestorableName dan* *DatabaseDeletionDate*.
-Untuk mengembalikan database tertentu yang bisa dikembalikan gunakan parameter *RestorablePped* dengan parameter *DatabaseName* *dan DatabaseDeletionDate.*
-Saat mengambil database tertentu yang dapat dikembalikan menggunakan parameter *DatabaseName* Anda juga harus menyertakan parameter *DatabaseDeletionDate* dan nilai *DatabaseDeletionDate* yang ditentukan harus menyertakan milidetik agar cocok dengan database yang diinginkan.
+Ambil database yang dihapus kembali menggunakan parameter *RestorableDropped* .
+Untuk mengembalikan semua database yang dihapus kembali, gunakan parameter *RestorableDropped* tanpa *DatabaseName* dan *DatabaseDeletionDate*.
+Untuk mengembalikan database tertentu yang dipulihkan, gunakan parameter *RestorableDropped* dengan parameter *DatabaseName* dan *DatabaseDeletionDate* .
+Saat mengambil database tertentu yang dapat dipulihkan menggunakan parameter *DatabaseName* , Anda juga harus menyertakan parameter *DatabaseDeletionDate* dan nilai *DatabaseDeletionDate* tertentu harus menyertakan milidetik agar sesuai dengan database yang diinginkan.
 
-Cmdlet **Get-AzureSqlDatabase** mengembalikan semua database yang rusak di server, atau satu database tertentu yang cocok baik *DatabaseName* maupun *DatabaseDeletionDate*.
-Untuk mengembalikan database yang bisa dikembalikan yang memenuhi kriteria berbeda, seperti semua database bernama tertentu yang bisa dikembalikan, Anda harus mengembalikan semua database yang bisa dikembalikan, lalu memfilter hasil pada klien.
+Cmdlet **Get-AzureSqlDatabase** mengembalikan semua database yang dihapus kembali di server, atau satu database tertentu yang cocok dengan *DatabaseName* dan *DatabaseDeletionDate*.
+Untuk mengembalikan database yang dihapus yang dapat dipulihkan yang memenuhi kriteria yang berbeda, seperti semua database yang dipulihkan kembali dari nama tertentu, Anda harus mengembalikan semua database yang dipulihkan kembali, lalu memfilter hasil pada klien.
 
 ## EXAMPLES
 
@@ -59,42 +59,42 @@ PS C:\> Get-AzureSqlDatabase -ServerName "lpqd0zbr8y"
 
 Perintah ini mengambil semua database di server bernama lpqd0zbr8y.
 
-### Contoh 2: Mengambil semua database yang jatuh dan dapat dikembalikan di server
+### Contoh 2: Mengambil semua database yang diletakkan kembali di server
 ```
 PS C:\> Get-AzureSqlDatabase -ServerName "lpqd0zbr8y" -RestorableDropped
 ```
 
-This command retrieves all restorable dropped databases on the server named lpqd0zbr8y.
+Perintah ini mengambil semua database yang dihapus kembali di server bernama lpqd0zbr8y.
 
 ### Contoh 3: Mengambil database dari server yang ditentukan oleh konteks koneksi
 ```
 PS C:\> $Database01 = Get-AzureSqlDatabase -ConnectionContext $Context -DatabaseName "Database01"
 ```
 
-Perintah ini mengambil database yang bernama Database01 dari server yang ditentukan oleh koneksi $Context.
+Perintah ini mengambil database bernama Database01 dari server yang ditentukan oleh konteks koneksi $Context.
 
 ### Contoh 4: Menyimpan objek database dalam variabel
 ```
 PS C:\> $Database01 = Get-AzureSqlDatabase -ServerName "lpqd0zbr8y" -DatabaseName "Database01"
 ```
 
-Perintah ini mengambil database yang bernama Database01 dari server yang bernama lpqd0zbr8y.
-Perintah menyimpan objek database di variabel $Database 01.
+Perintah ini mengambil database bernama Database01 dari server bernama lpqd0zbr8y.
+Perintah menyimpan objek database dalam variabel $Database 01.
 
-### Contoh 5: Mengambil database yang bisa dikembalikan
+### Contoh 5: Mengambil database yang diletakkan dengan pemulihan
 ```
 PS C:\> $DroppedDB = Get-AzureSqlDatabase -ServerName "lpqd0zbr8y" -DatabaseName "Database01" -DatabaseDeletionDate "2012-11-09T22:59:43.000Z" -RestorableDropped
 ```
 
-Perintah ini mengambil database yang dihapus yang bisa dikembalikan bernama Database01 yang dihapus pada 9/11/2012 dari server yang bernama lpqd0zbr8y.
-Perintah ini menyimpan hasil dalam $DroppedDB variabel.
+Perintah ini mengambil database yang dihapus kembali bernama Database01 yang dihapus pada 9/11/2012 dari server bernama lpqd0zbr8y.
+Perintah ini menyimpan hasil dalam variabel $DroppedDB.
 
-### Contoh 6: Ambil semua database yang bisa dikembalikan di server dan filter hasilnya
+### Contoh 6: Mengambil semua database yang dihapus kembali di server dan memfilter hasilnya
 ```
 PS C:\> Get-AzureSqlDatabase -ServerName "lpqd0zbr8y" -RestorableDropped | Where-Object {$_.Name -eq "ContactDB"}
 ```
 
-Perintah ini mengambil semua database yang bisa dikembalikan di server yang bernama lpqd0zbr8y, lalu memfilter hasil hanya untuk database bernama ContactDB.
+Perintah ini mengambil semua database yang dibuang kembali di server bernama lpqd0zbr8y, lalu memfilter hasil ke database yang bernama ContactDB saja.
 
 ## PARAMETERS
 
@@ -130,10 +130,10 @@ Accept wildcard characters: False
 
 ### -DatabaseDeletionDate
 Menentukan tanggal dan waktu penghapusan.
-Jika Anda menentukan parameter *RestorablePped,* tentukan parameter ini untuk mengambil database yang dihapus yang bisa dikembalikan berdasarkan tanggal dan waktu penghapusan.
+Jika Anda menentukan parameter *RestorableDropped, tentukan* parameter ini untuk mengambil database yang dihapus kembali berdasarkan tanggal dan waktu penghapusan.
 
-Parameter *DatabaseDeletionDate* harus menyertakan milidetik untuk mencocokkan waktu database yang diinginkan.
-Menentukan nilai tanpa hasil milidetik dalam database tidak ditemukan.
+Parameter *DatabaseDeletionDate* harus menyertakan milidetik agar sesuai dengan waktu database yang diinginkan.
+Menentukan nilai tanpa milidetik menghasilkan database yang tidak ditemukan.
 
 ```yaml
 Type: DateTime
@@ -163,8 +163,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -178,9 +178,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Restorable Di dapat Disesuaikan
-Menunjukkan bahwa cmdlet ini mengembalikan *objek Restorable RestorablePpedDatabase* dan bukan *objek Database.*
-Anda bisa menggunakan *parameter DatabaseDeletionDate* untuk memilih database tertentu yang diturunkan.
+### -RestorableDropped
+Menunjukkan bahwa cmdlet ini mengembalikan objek *RestorableDroppedDatabase* , bukan objek *Database* .
+Anda bisa menggunakan parameter *DatabaseDeletionDate* untuk memilih database tertentu yang dihapus yang dapat disembuhkan.
 
 ```yaml
 Type: SwitchParameter
@@ -194,8 +194,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RestorableDatabase
-Menentukan objek yang mewakili database jatuh yang dapat dikembalikan yang diambil cmdlet ini.
+### -RestorableDroppedDatabase
+Menentukan objek yang mewakili database yang dijatuhkan kembali yang diambil cmdlet ini.
 
 ```yaml
 Type: RestorableDroppedDatabase
@@ -226,21 +226,21 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.WindowsAzure.Commands.SqlDatabase.Services.Server.Database
 
-### Microsoft.WindowsAzure.Commands.SqlDatabase.Services.Server.RestorableDataPpedDatabase
+### Microsoft.WindowsAzure.Commands.SqlDatabase.Services.Server.RestorableDroppedDatabase
 
 ## OUTPUTS
 
-### IEnumerable\<Microsoft.WindowsAzure.Commands.SqlDatabase.Services.Server.Database\>
-Cmdlet ini mengembalikan *objek Database* jika Anda tidak menentukan parameter *RestorablePped.*
+### Ienumerable\<Microsoft.WindowsAzure.Commands.SqlDatabase.Services.Server.Database\>
+Cmdlet ini mengembalikan objek *Database* jika Anda tidak menentukan parameter *RestorableDropped* .
 
-### IEnumerable\<Microsoft.WindowsAzure.Commands.SqlDatabase.Services.Server.RestorableDroppedDatabase\>
-Cmdlet ini mengembalikan objek *RestorableDatabase jika* Anda menentukan parameter *RestorablePped.*
+### Ienumerable\<Microsoft.WindowsAzure.Commands.SqlDatabase.Services.Server.RestorableDroppedDatabase\>
+Cmdlet ini mengembalikan objek *RestorableDroppedDatabase* jika Anda menentukan parameter *RestorableDropped* .
 
 ## CATATAN
 
@@ -248,13 +248,13 @@ Cmdlet ini mengembalikan objek *RestorableDatabase jika* Anda menentukan paramet
 
 [Azure SQL Database](https://azure.microsoft.com/en-us/services/sql-database/)
 
-[Operasi untuk Database SQL Azure](https://msdn.microsoft.com/en-us/library/azure/dn505719.aspx)
+[Operasi untuk Database Azure SQL](https://msdn.microsoft.com/en-us/library/azure/dn505719.aspx)
 
-[New-AzureSqlDatabase](./New-AzureSqlDatabase.md)
+[AzureSqlDatabase baru](./New-AzureSqlDatabase.md)
 
-[New-AzureSqlDatabaseServerContext](./New-AzureSqlDatabaseServerContext.md)
+[Baru-AzureSqlDatabaseServerContext](./New-AzureSqlDatabaseServerContext.md)
 
-[Remove-AzureSqlDatabase](./Remove-AzureSqlDatabase.md)
+[Hapus-AzureSqlDatabase](./Remove-AzureSqlDatabase.md)
 
 [Set-AzureSqlDatabase](./Set-AzureSqlDatabase.md)
 

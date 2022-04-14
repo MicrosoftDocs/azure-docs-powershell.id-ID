@@ -4,11 +4,11 @@ ms.assetid: 761317FE-55FD-4DCC-B997-4F27D041470F
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: a966bc26e7943dd7931d566a646ea5bdfd5bfc0e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422072"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141772055"
 ---
 # Remove-AzureReservedIP
 
@@ -25,11 +25,11 @@ Remove-AzureReservedIP [-ReservedIPName] <String> [-Force] [-Profile <AzureSMPro
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureReservedIP** menghapus alamat IP khusus dengan namanya.
+Cmdlet **Remove-AzureReservedIP** menghapus alamat IP khusus berdasarkan namanya.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus alamat IP khusus menurut namanya
+### Contoh 1: Menghapus alamat IP khusus menurut namanya
 ```
 PS C:\> Remove-AzureReservedIP -ReservedIPName $name
 ```
@@ -38,8 +38,8 @@ Perintah ini menghapus alamat IP khusus menurut namanya.
 
 ## PARAMETERS
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: SwitchParameter
@@ -54,16 +54,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -93,8 +93,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -136,7 +136,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureReservedIP](./Get-AzureReservedIP.md)
 
-[New-AzureReservedIP](./New-AzureReservedIP.md)
+[AzureReservedIP Baru](./New-AzureReservedIP.md)
 
 [Set-AzureReservedIPAssociation](./Set-AzureReservedIPAssociation.md)
 

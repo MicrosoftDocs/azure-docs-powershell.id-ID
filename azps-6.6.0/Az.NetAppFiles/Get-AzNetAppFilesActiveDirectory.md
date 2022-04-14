@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesActiveDirectory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesActiveDirectory.md
 ms.openlocfilehash: 9e659bc8c99910e93cc58ed71444bc27329323d9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140307913"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141800337"
 ---
 # Get-AzNetAppFilesActiveDirectory
 
 ## SYNOPSIS
-Dapatkan detail tentang konfigurasi Direktori Aktif Azure NetApp Files (ANF).
+Mendapatkan detail konfigurasi Azure NetApp Files (ANF) Active Directory.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.netappfiles/get-aznetappfilesactivedirectory) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/get-aznetappfilesactivedirectory) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-AzNetAppFilesActiveDirectory [-ActiveDirectoryId <String>] -AccountObject <P
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzNetAppFilesActiveDirectory** mendapatkan detail tentang konfigurasi Direktori Aktif akun ANF.
+Cmdlet **Get-AzNetAppFilesActiveDirectory** mendapatkan detail konfigurasi Direktori Aktif akun ANF.
 
 ## EXAMPLES
 
@@ -44,11 +44,11 @@ Cmdlet **Get-AzNetAppFilesActiveDirectory** mendapatkan detail tentang konfigura
 PS C:\> Get-AzNetAppFilesActiveDirectory -ResourceGroupName "MyRG" -AccountName "MyAnfAccount" -Name "MyADConfigName"
 ```
 
-Perintah ini mendapatkan konfigurasi AD bernama MyADConfigName untuk akun File Azure NetApp (ANF) bernama MyAnfAccount.
+Perintah ini mendapatkan konfigurasi AD bernama MyADConfigName untuk akun Azure NetApp Files (ANF) bernama MyAnfAccount.
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun ANF
 
 ```yaml
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

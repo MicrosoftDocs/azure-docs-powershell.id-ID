@@ -5,19 +5,22 @@ online version: https://docs.microsoft.com/powershell/module/az.diskpool/new-azd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/New-AzDiskPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/New-AzDiskPool.md
-ms.openlocfilehash: 8c1db3097e5292d10ad1be2ffb840dc01edcf624
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 173cd30970bbe644939a84d3bba7cd21793564be
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140009181"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141893078"
 ---
 # New-AzDiskPool
 
 ## SYNOPSIS
-Buat atau Perbarui penyimpanan Disk.
-Operasi membuat atau memperbarui ini dapat membutuhkan waktu 15 menit untuk selesai.
-Perilaku ini adalah perilaku layanan yang diharapkan.
+Buat atau Perbarui Kumpulan disk.
+Operasi pembuatan atau pembaruan ini dapat memakan waktu 15 menit untuk selesai.
+Ini adalah perilaku layanan yang diharapkan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.diskpool/new-azdiskpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,13 +33,13 @@ New-AzDiskPool -Name <String> -ResourceGroupName <String> -Location <String> -Sk
 ```
 
 ## DESCRIPTION
-Buat atau Perbarui penyimpanan Disk.
-Operasi membuat atau memperbarui ini dapat membutuhkan waktu 15 menit untuk selesai.
-Perilaku ini adalah perilaku layanan yang diharapkan.
+Buat atau Perbarui Kumpulan disk.
+Operasi pembuatan atau pembaruan ini dapat memakan waktu 15 menit untuk selesai.
+Ini adalah perilaku layanan yang diharapkan.
 
 ## EXAMPLES
 
-### Contoh 1: Create a Disk Pool
+### Contoh 1: Membuat Disk Pool
 ```powershell
 PS C:\> New-AzDiskPool -Name 'disk-pool-1' -ResourceGroupName 'storagepool-rg-test' -Location 'eastus2euap' -SkuName 'Standard' -SkuTier 'Standard' -SubnetId '/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/storagepool-rg-test/providers/Microsoft.Network/virtualNetworks/disk-pool-vnet/subnets/default' -AvailabilityZone "1"
 
@@ -45,12 +48,12 @@ Name             Location    Status    ProvisioningState AvailabilityZone
 disk-pool-1      eastus2euap Running   Succeeded         {3}
 ```
 
-Perintah ini akan membuat Disk Pool.
+Perintah ini membuat Kumpulan Disk.
 
 ## PARAMETERS
 
 ### -AdditionalCapability
-Daftar kemampuan tambahan untuk Disk Pool.
+Daftar kemampuan tambahan untuk Kumpulan Disk.
 
 ```yaml
 Type: System.String[]
@@ -79,7 +82,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -KetersediaanZone
+### -AvailabilityZone
 Zona logika untuk sumber daya Disk Pool; contoh: ["1"].
 
 ```yaml
@@ -110,8 +113,8 @@ Accept wildcard characters: False
 ```
 
 ### -DiskId
-Daftar Disk Terkelola Azure untuk dilampirkan ke Disk Pool.
-Untuk membuat, lihat bagian CATATAN untuk properti DISK dan membuat tabel hash.
+Daftar Disk terkelola Azure untuk dilampirkan ke Kumpulan Disk.
+Untuk membangun, lihat bagian CATATAN untuk properti DISK dan membuat tabel hash.
 
 ```yaml
 Type: System.String[]
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi geo-lokasi tempat sumber daya berada.
+Lokasi geografis tempat sumber daya berada.
 
 ```yaml
 Type: System.String
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedBy
-Id sumber daya Azure. Menunjukkan apakah sumber daya ini dikelola oleh sumber daya Azure lain.
+Id sumber daya Azure. Menunjukkan apakah sumber daya ini dikelola oleh sumber daya Azure lainnya.
 
 ```yaml
 Type: System.String
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Disk Pool.
+Nama Kumpulan Disk.
 
 ```yaml
 Type: System.String
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuTier
-Sku tier
+Tingkat Sku
 
 ```yaml
 Type: System.String
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetId
-ID Sumber Daya Azure dari Subnet untuk Disk Pool.
+ID Sumber Daya Azure dari Subnet untuk Kumpulan Disk.
 
 ```yaml
 Type: System.String
@@ -292,7 +295,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -308,7 +311,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -323,7 +326,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

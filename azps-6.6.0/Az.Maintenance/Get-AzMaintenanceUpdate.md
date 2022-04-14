@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/Get-AzMaintenanceUpdate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/Get-AzMaintenanceUpdate.md
 ms.openlocfilehash: 2ada75dd4e67aa6d9d336464be333e8474c84440
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140076599"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141865742"
 ---
 # Get-AzMaintenanceUpdate
 
 ## SYNOPSIS
-Dapatkan pembaruan pemeliharaan yang tertunda pada sumber daya.
+Dapatkan pembaruan pemeliharaan tertunda ke sumber daya.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.maintenance/get-azmaintenanceupdate) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.maintenance/get-azmaintenanceupdate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Get-AzMaintenanceUpdate [-ResourceGroupName] <String> [-ProviderName] <String> [
 ```
 
 ## DESCRIPTION
-Dapatkan pembaruan pemeliharaan yang tertunda pada sumber daya.
+Dapatkan pembaruan pemeliharaan tertunda ke sumber daya.
 
 ## EXAMPLES
 
@@ -45,7 +45,7 @@ NotBefore           : 1/24/2020 5:11:41 AM
 ResourceId          : /subscriptions/42c974dd-2c03-4f1b-96ad-b07f050aaa74/resourcegroups/smdtestwestus2/providers/Microsoft.Compute/hostGroups/smddhgwestus2/hosts/smddhwestus2
 ```
 
-Dapatkan pembaruan pemeliharaan yang tertunda pada sumber daya.
+Dapatkan pembaruan pemeliharaan tertunda ke sumber daya.
 
 ## PARAMETERS
 
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Get-AzDnsResolverOutboundEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Get-AzDnsResolverOutboundEndpoint.md
-ms.openlocfilehash: 0ba92ef7b19c3474a2ff6c6d512f9bc91e418fa9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 4e3f8b00c6fb36ff5b10e89e3dba54cfef9a2fe7
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140549999"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141892844"
 ---
 # Get-AzDnsResolverOutboundEndpoint
 
 ## SYNOPSIS
-Mendapatkan properti titik akhir keluar untuk resolver DNS.
+Mendapatkan properti titik akhir keluar untuk penyelesaian DNS.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.dnsresolver/get-azdnsresolveroutboundendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzDnsResolverOutboundEndpoint -DnsResolverName <String> -ResourceGroupName <
  [-SubscriptionId <String[]>] [-Top <Int32>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzDnsResolverOutboundEndpoint -DnsResolverName <String> -Name <String> -ResourceGroupName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -38,11 +41,11 @@ Get-AzDnsResolverOutboundEndpoint -InputObject <IDnsResolverIdentity> [-DefaultP
 ```
 
 ## DESCRIPTION
-Mendapatkan properti titik akhir keluar untuk resolver DNS.
+Mendapatkan properti titik akhir keluar untuk penyelesaian DNS.
 
 ## EXAMPLES
 
-### Contoh 1:  List all outbound endpoints under the DNS resolver in a resouce group 
+### Contoh 1: Mencantumkan semua titik akhir keluar di bawah penyelesaian DNS dalam grup resouce 
 ```powershell
 Get-AzDnsResolverOutboundEndpoint -DnsResolverName sampleResolver -ResourceGroupName sampleResouceGroup
 ```
@@ -53,9 +56,9 @@ Name         Type                                             Etag
 sampleOutbound Microsoft.Network/dnsResolvers/outboundEndpoints "0a001a28-0000-0800-0000-60e3846a0000"
 sampleOutbound2 Microsoft.Network/dnsResolvers/outboundEndpoints "0a001a27-0000-0800-0000-60e3846a0000"
 ```
-Perintah ini mendapatkan semua titik akhir keluar di bawah resolver DNS dalam grup sumber daya.
+Perintah ini mendapatkan semua titik akhir keluar di bawah penyelesaian DNS dalam grup resouce.
 
-### Contoh 2: Dapatkan titik akhir keluar tunggal berdasarkan nama 
+### Contoh 2: Dapatkan titik akhir keluar tunggal menurut nama 
 ```powershell
 Get-AzDnsResolverOutboundEndpoint -DnsResolverName sampleResolver -Name sampleOutbound -ResourceGroupName sampleResouceGroup
 ```
@@ -66,7 +69,7 @@ Name         Type                                             Etag
 sampleOutbound Microsoft.Network/dnsResolvers/outboundEndpoints "0a001a28-0000-0800-0000-60e3846a0000"
 ```
 
-Perintah ini mendapatkan titik akhir keluar di bawah resolver DNS dalam grup sumber daya.
+Perintah ini mendapatkan titik akhir keluar di bawah penyelesaian DNS dalam grup resouce.
 
 ## PARAMETERS
 
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -DnsResolverName
-Nama resolver DNS.
+Nama penuntas DNS.
 
 ```yaml
 Type: System.String
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DnsResolver.Models.IDnsResolverIdentity
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama titik akhir keluar untuk resolver DNS.
+Nama titik akhir keluar untuk penyelesaian DNS.
 
 ```yaml
 Type: System.String
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-Jumlah maksimum hasil yang dikembalikan.
+Jumlah hasil maksimum yang akan dikembalikan.
 Jika tidak ditentukan, mengembalikan hingga 100 hasil.
 
 ```yaml
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -198,15 +201,15 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IDnsResolverIdentity>: Parameter Identitas
-  - `[DnsForwardingRulesetName <String>]`: Nama daftar aturan penerusan DNS.
-  - `[DnsResolverName <String>]`: Nama resolver DNS.
+  - `[DnsForwardingRulesetName <String>]`: Nama aturan penerusan DNS.
+  - `[DnsResolverName <String>]`: Nama penuntas DNS.
   - `[ForwardingRuleName <String>]`: Nama aturan penerusan.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[InboundEndpointName <String>]`: Nama titik akhir masuk untuk resolver DNS.
-  - `[OutboundEndpointName <String>]`: Nama titik akhir keluar untuk resolver DNS.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[InboundEndpointName <String>]`: Nama titik akhir masuk untuk penyelesaian DNS.
+  - `[OutboundEndpointName <String>]`: Nama titik akhir keluar untuk penyelesaian DNS.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
-  - `[VirtualNetworkLinkName <String>]`: Nama link jaringan virtual.
+  - `[VirtualNetworkLinkName <String>]`: Nama tautan jaringan virtual.
   - `[VirtualNetworkName <String>]`: Nama jaringan virtual.
 
 ## RELATED LINKS

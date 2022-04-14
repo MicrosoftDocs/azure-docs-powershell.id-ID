@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kubernetesconfig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/Remove-AzKubernetesConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/Remove-AzKubernetesConfiguration.md
-ms.openlocfilehash: 9f4eaf29a158200dbd6dd9388aecebf11b275d91
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: b6883a0967f4b331a436c04ec5aebeb9cc9b5474
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140000574"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141787928"
 ---
 # Remove-AzKubernetesConfiguration
 
 ## SYNOPSIS
-Langkah ini akan menghapus file YAML yang digunakan untuk menyiapkan konfigurasi Kontrol sumber, sehingga akan menghentikan sinkronisasi mendatang dari sumber ulang.
+Tindakan ini akan menghapus file YAML yang digunakan untuk menyiapkan konfigurasi kontrol Sumber, sehingga menghentikan sinkronisasi mendatang dari repo sumber.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.kubernetesconfiguration/remove-azkubernetesconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,26 +36,26 @@ Remove-AzKubernetesConfiguration -InputObject <IKubernetesConfigurationIdentity>
 ```
 
 ## DESCRIPTION
-Langkah ini akan menghapus file YAML yang digunakan untuk menyiapkan konfigurasi Kontrol sumber, sehingga akan menghentikan sinkronisasi mendatang dari sumber ulang.
+Tindakan ini akan menghapus file YAML yang digunakan untuk menyiapkan konfigurasi kontrol Sumber, sehingga menghentikan sinkronisasi mendatang dari repo sumber.
 
 ## EXAMPLES
 
-### Contoh 1: Remove a configuation of krigs cluster by name
+### Contoh 1: Remove a configuation of kubernetes cluster by name
 ```powershell
 PS C:\> Remove-AzKubernetesConfiguration -ResourceGroupName azps_test_group -ClusterName azps_test_cluster -Name  azpstestk8s01 -ClusterType ConnectedClusters
 
 ```
 
-Perintah ini menghapus konfigurasi kluster kjadwal menurut nama.
+Perintah ini menghapus konfigurasi kluster kubernetes berdasarkan nama.
 
-### Contoh 2: Remove a configuation of krigs cluster by object
+### Contoh 2: Remove a configuation of kubernetes cluster by object
 ```powershell
 PS C:\> $kubConf = Get-AzKubernetesConfiguration -ClusterName azps_test_cluster -ClusterType ConnectedClusters -ResourceGroupName azps_test_group -Name azpstestk8s02
 PS C:\> Remove-AzKubernetesConfiguration -InputObject $kubConf
 
 ```
 
-Perintah ini menghapus konfigurasi kluster berdasarkan objek.
+Perintah ini menghapus konfigurasi kluster kubernetes berdasarkan objek.
 
 ## PARAMETERS
 
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterName
-Nama kluster k ada.
+Nama kluster kubernetes.
 
 ```yaml
 Type: System.String
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterType
-Nama sumber daya kluster Kjadwal, baik managedClusters (untuk kluster AKS) maupun connectedClusters (untuk kluster OnPrem K8S).
+Nama sumber daya kluster Kubernetes - baik managedClusters (untuk kluster AKS) atau ConnectedClusters (untuk kluster OnPrem K8S).
 
 ```yaml
 Type: System.String
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.KubernetesConfiguration.Models.IKubernetesConfigurationIdentity
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -238,11 +241,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.K cmdletsConfiguration.Models.IKconfigurationIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.KubernetesConfiguration.Models.IKubernetesConfigurationIdentity
 
 ## OUTPUTS
 
@@ -260,15 +263,15 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IKubernetesConfigurationIdentity>: Parameter Identitas
-  - `[ClusterName <String>]`: Nama kluster kjadwal.
-  - `[ClusterResourceName <String>]`: Nama sumber daya kluster Kjadwal, baik managedClusters (untuk kluster AKS) atau connectedClusters (untuk kluster OnPrem K8S).
-  - `[ClusterRp <String>]`: Kluster Kmicrosoft RP - baik Microsoft.ContainerService (untuk kluster AKS) atau Microsoft.Kmicrosoft (untuk kluster OnPrem K8S).
+  - `[ClusterName <String>]`: Nama kluster kubernetes.
+  - `[ClusterResourceName <String>]`: Nama sumber daya kluster Kubernetes - baik managedClusters (untuk kluster AKS) atau ConnectedClusters (untuk kluster OnPrem K8S).
+  - `[ClusterRp <String>]`: RP kluster Kubernetes - baik Microsoft.ContainerService (untuk kluster AKS) atau Microsoft.Kubernetes (untuk kluster OnPrem K8S).
   - `[ExtensionName <String>]`: Nama Ekstensi.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[OperationId <String>]`: id operasi
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
   - `[SourceControlConfigurationName <String>]`: Nama Konfigurasi Kontrol Sumber.
-  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-00000000000)
+  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
 
 ## RELATED LINKS
 

@@ -5,19 +5,19 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.sql/u
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Update-AzureRmSqlSyncSchema.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Update-AzureRmSqlSyncSchema.md
-ms.openlocfilehash: b288df6f2efa39bca723444567bef72f9ff57b18ca699efbe7dab1eb0363e799
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 710ae0ea93c7dc49597210d8890ebef04cc7c367
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140856587"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141773842"
 ---
 # Update-AzureRmSqlSyncSchema
 
 ## SYNOPSIS
-Memperbarui skema sinkronisasi untuk database anggota sinkronisasi atau database hub sinkronisasi.
-It will get the latest database schema from the real database and then use it refresh the schema cached by Sync metadata database.
-Jika "SyncMemberName" ditentukan, skema itu akan merefresh skema database anggota; jika tidak, itu akan merefresh skema database hub.
+Perbarui skema sinkronisasi untuk database anggota sinkronisasi atau database hub sinkronisasi.
+Ini akan mendapatkan skema database terbaru dari database riil lalu menggunakannya merefresh skema singgahan oleh database metadata Sinkronisasi.
+Jika "SyncMemberName" ditentukan, skema database anggota akan direfresh; jika tidak, ini akan merefresh skema database hub.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -39,19 +39,19 @@ Cmdlet **Update-AzureRmSqlSyncSchema** memperbarui skema sinkronisasi untuk data
 PS C:\>Update-AzureRmSqlSyncSchema -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "database01" -SyncGroupName "syncGroup01"
 ```
 
-Perintah ini memperbarui skema sinkronisasi untuk database hub di sinkronisasi grup sinkronisasiGroup01
+Perintah ini memperbarui skema sinkronisasi untuk database hub dalam sinkronisasi grup sinkronisasiGroup01
 
 ### Contoh 2: Memperbarui skema sinkronisasi untuk database anggota
 ```
 PS C:\>Update-AzureRmSqlSyncSchema -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "database01" -SyncGroupName "syncGroup01" -SyncMemberName "syncMember01"
 ```
 
-Perintah ini memperbarui skema sinkronisasi untuk database anggota di sinkronisasi anggota sinkronisasiMember01
+Perintah ini memperbarui skema sinkronisasi untuk database anggota dalam sinkronisasi anggota sinkronisasiMember01
 
 ## PARAMETERS
 
 ### -DatabaseName
-Nama nama Azure SQL Database.
+Nama Azure SQL Database.
 
 ```yaml
 Type: System.String
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menentukan Apakah mengembalikan grup sinkronisasi yang berfungsi cmdlet ini
+Menentukan Apakah mengembalikan grup sinkronisasi tempat cmdlet ini berfungsi
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama azure SQL Server.
+Nama Server Azure SQL.
 
 ```yaml
 Type: System.String
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

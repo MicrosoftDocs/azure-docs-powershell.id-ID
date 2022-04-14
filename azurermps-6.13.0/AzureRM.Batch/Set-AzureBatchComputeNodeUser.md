@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.batch
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Set-AzureBatchComputeNodeUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Set-AzureBatchComputeNodeUser.md
-ms.openlocfilehash: 33e4be1498eca2808c6268eae008f20c6531e46ff943dd8689ac1e6474dce69e
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: c6a89a5c42daea7991711dfa0c96953856949aed
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140865116"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141844546"
 ---
 # Set-AzureBatchComputeNodeUser
 
 ## SYNOPSIS
-Mengubah properti akun pada node perhitungan Batch.
+Mengubah properti akun pada simpul komputasi Batch.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,7 +29,7 @@ Set-AzureBatchComputeNodeUser [-PoolId] <String> [-ComputeNodeId] <String> [-Nam
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureBatchComputeNodeUser** memodifikasi properti akun pengguna pada node perhitungan Azure Batch.
+Cmdlet **Set-AzureBatchComputeNodeUser** mengubah properti akun pengguna pada simpul komputasi Azure Batch.
 
 ## EXAMPLES
 
@@ -38,14 +38,14 @@ Cmdlet **Set-AzureBatchComputeNodeUser** memodifikasi properti akun pengguna pad
 PS C:\>Set-AzureBatchComputeNodeUser -PoolId "ContosoPool" -ComputeNodeId "tvm-3257026573_1-20150904t230807z" -Name "PFuller" -BatchContext $Context -Password "Password" -ExpiryTime ([DateTime]::Now.AddDays(14))
 ```
 
-Perintah ini memodifikasi akun pengguna bernama PFuller pada node perhitungan yang memiliki ID tertentu di pool bernama ContosoPool.
-Perintah akan mengubah kata sandi akun dan waktu kedaluwarsa.
+Perintah ini mengubah akun pengguna bernama PFuller pada simpul komputasi yang memiliki ID tertentu dalam kumpulan bernama ContosoPool.
+Perintah mengubah kata sandi akun dan waktu kedaluwarsa.
 
 ## PARAMETERS
 
 ### -BatchContext
-Menentukan contoh **BatchAccountContext** yang digunakan cmdlet untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeNodeId
-Menentukan ID node perhitungan tempat cmdlet ini beroperasi.
+Menentukan ID simpul komputasi tempat cmdlet ini beroperasi.
 
 ```yaml
 Type: System.String
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama akun pengguna yang akan dimodifikasi cmdlet ini.
+Menentukan nama akun pengguna yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolId
-Menentukan ID pool yang berisi node perhitungan tempat cmdlet ini beroperasi.
+Menentukan ID kumpulan yang berisi simpul komputasi tempat cmdlet ini beroperasi.
 
 ```yaml
 Type: System.String
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -167,10 +167,10 @@ Parameter: BatchContext (ByValue)
 
 [Get-AzureRmBatchAccountKeys](./Get-AzureRmBatchAccountKeys.md)
 
-[New-AzureBatchComputeNodeUser](./New-AzureBatchComputeNodeUser.md)
+[AzureBatchComputeNodeUser Baru](./New-AzureBatchComputeNodeUser.md)
 
 [Remove-AzureBatchComputeNodeUser](./Remove-AzureBatchComputeNodeUser.md)
 
-[Cmdlet Kumpulan Azure](./AzureRM.Batch.md)
+[Cmdlet Azure Batch](./AzureRM.Batch.md)
 
 

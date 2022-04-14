@@ -4,11 +4,11 @@ ms.assetid: FED10AA9-DD3A-4034-B78E-F9E55290B353
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 0dbca819ae65d2cfc4f40107a6b34b6b90cc362b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419923"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141772970"
 ---
 # Get-AzureAutomationCertificate
 
@@ -20,7 +20,7 @@ Mendapatkan sertifikat Azure Automation.
 
 ## SYNTAX
 
-### SecaraSemua (Default)
+### ByAll (Default)
 ```
 Get-AzureAutomationCertificate -AutomationAccountName <String> [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
@@ -35,20 +35,20 @@ Get-AzureAutomationCertificate -Name <String> -AutomationAccountName <String> [-
 
 [!INCLUDE [aa-deprecation](../include/aa-deprecation.md)]
 
-Cmdlet **Get-AzureAutomationCertificate** mendapatkan satu atau beberapa sertifikat Microsoft Azure Otomatisasi.
+Cmdlet **Get-AzureAutomationCertificate** mendapatkan satu atau beberapa sertifikat Otomatisasi Microsoft Azure.
 Secara default, semua sertifikat dikembalikan.
 Untuk mendapatkan sertifikat tertentu, tentukan namanya.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua sertifikat
+### Contoh 1: Dapatkan semua sertifikat
 ```
 PS C:\> Get-AzureAutomationCertificate -AutomationAccountName "Contoso17"
 ```
 
-Perintah ini mendapatkan semua sertifikat dalam akun Otomatisasi Azure bernama Contoso17.
+Perintah ini mendapatkan semua sertifikat di akun Azure Automation bernama Contoso17.
 
-### Contoh 2: Mendapatkan sertifikat
+### Contoh 2: Dapatkan sertifikat
 ```
 PS C:\> Get-AzureAutomationCertificate -AutomationAccountName "Contoso17" -Name "MyUserCertificate"
 ```
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama sertifikat untuk diambil.
+Menentukan nama sertifikat yang akan diambil.
 
 ```yaml
 Type: String
@@ -88,8 +88,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -116,9 +116,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureAutomationCertificate](./New-AzureAutomationCertificate.md)
+[AzureAutomation BaruPenerima](./New-AzureAutomationCertificate.md)
 
-[Remove-AzureAutomationCertificate](./Remove-AzureAutomationCertificate.md)
+[Hapus-AzureAutomationCertificate](./Remove-AzureAutomationCertificate.md)
 
 [Set-AzureAutomationCertificate](./Set-AzureAutomationCertificate.md)
 

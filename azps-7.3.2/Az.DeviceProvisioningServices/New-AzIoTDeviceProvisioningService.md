@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/New-AzIoTDeviceProvisioningService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/New-AzIoTDeviceProvisioningService.md
-ms.openlocfilehash: 84011f020ea4aef0788e8483946ed15e5fc8e567
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: bb1152281fe678ac89c7dd477b3bd9cc96ca583b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140556572"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141788342"
 ---
 # New-AzIoTDeviceProvisioningService
 
 ## SYNOPSIS
-Membuat layanan penyediaan perangkat Azure IoT Hub.
+Buat layanan penyediaan perangkat Azure IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.deviceprovisioningservices/new-aziotdeviceprovisioningservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzIoTDeviceProvisioningService [-ResourceGroupName] <String> [-Name] <String
 ```
 
 ## DESCRIPTION
-Untuk pengenalan layanan penyediaan perangkat Azure IoT Hub, lihat https://docs.microsoft.com/azure/iot-dps/about-iot-dps.
+Untuk pengenalan Azure IoT Hub Layanan Penyediaan Perangkat, lihat https://docs.microsoft.com/azure/iot-dps/about-iot-dps.
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ SkuTier                     : Standard
 Etag                        : AAAAAAAT52k=
 ```
 
-Membuat layanan penyediaan perangkat Azure IoT Hub dengan harga standar tingkat S1 dan tag, di wilayah grup sumber daya.
+Buat layanan penyediaan perangkat Azure IoT Hub dengan tingkat harga standar S1 dan tag, di kawasan grup sumber daya.
 
 ### Contoh 2
 ```
@@ -70,7 +73,7 @@ SkuTier                     : Standard
 Etag                        : AAAAAAAPoOk=
 ```
 
-Membuat layanan penyediaan perangkat Azure IoT Hub dengan harga standar tingkat S1, di kawasan 'eastus'.
+Buat layanan penyediaan perangkat Azure IoT Hub dengan tingkat harga standar S1, di wilayah 'eastus'.
 
 ## PARAMETERS
 
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag instans Layanan Pengadaan Perangkat IoT. Tas properti dalam pasangan nilai kunci dalam bentuk tabel hash.
+Tag instans Layanan Penyediaan Perangkat IoT. Tas properti dalam pasangan nilai kunci dalam bentuk tabel hash.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -213,11 +216,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

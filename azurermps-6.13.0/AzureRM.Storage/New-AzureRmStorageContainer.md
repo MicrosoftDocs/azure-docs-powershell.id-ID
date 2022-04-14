@@ -5,23 +5,23 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.stora
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Storage/Commands.Management.Storage/help/New-AzureRmStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Storage/Commands.Management.Storage/help/New-AzureRmStorageContainer.md
-ms.openlocfilehash: 1810139b3b25f3fd6de1e15c0212f4821b47d4cff005eb153d606b9a121ffc5b
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 8e136188a2857b53b566d30c439e222caea16abb
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140863317"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141773712"
 ---
 # New-AzureRmStorageContainer
 
 ## SYNOPSIS
-Membuat wadah Storage blob
+Membuat wadah blob Storage
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
 ## SYNTAX
 
-### Nama Akun (Default)
+### AccountName (Default)
 ```
 New-AzureRmStorageContainer [-ResourceGroupName] <String> [-StorageAccountName] <String> [-Name] <String>
  [-PublicAccess <PSPublicAccess>] [-Metadata <Hashtable>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf]
@@ -36,29 +36,29 @@ New-AzureRmStorageContainer -StorageAccount <PSStorageAccount> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmStorageContainer** membuat Storage wadah blob
+Cmdlet **New-AzureRmStorageContainer** membuat wadah blob Storage
 
 ## EXAMPLES
 
-### Contoh 1: Membuat wadah Storage blob dengan Storage wadah dan nama akun, dengan metadata
+### Contoh 1: Membuat wadah blob Storage dengan nama akun dan nama kontainer Storage, dengan metadata
 ```
 PS C:\>New-AzureRmStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" -Metadata @{tag0="value0";tag1="value1";tag2="value2"} 
 ```
 
-Perintah ini akan membuat Storage blob dengan Storage wadah dan nama akun, dengan metadata.
+Perintah ini membuat wadah blob Storage dengan nama akun Storage dan nama kontainer, dengan metadata.
 
-### Contoh 2: Membuat wadah Storage blob dengan Storage wadah dan objek akun, dengan akses publik sebagai Blob
+### Contoh 2: Membuat wadah blob Storage dengan objek akun Storage dan nama kontainer, dengan akses publik sebagai Blob
 ```
 PS C:\>$accountObject = Get-AzureRmStorageAccount -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount"
 PS C:\>New-AzureRmStorageContainer -StorageAccount $accountObject -ContainerName "myContainer" -PublicAccess Blob
 ```
 
-Perintah ini akan membuat Storage blob dengan Storage objek akun dan nama wadah pengguna, dengan akses publik sebagai Blob.
+Perintah ini membuat wadah blob Storage dengan objek akun Storage dan nama kontainer, dengan akses publik sebagai Blob.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Metadata
-Metadata Wadah
+Metadata Kontainer
 
 ```yaml
 Type: Hashtable
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicAccess
-Container PublicAccess
+Wadah PublicAccess
 
 ```yaml
 Type: PSPublicAccess
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage objek akun
+objek akun Storage
 
 ```yaml
 Type: PSStorageAccount
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Storage Akun.
+Storage Nama Akun.
 
 ```yaml
 Type: String
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

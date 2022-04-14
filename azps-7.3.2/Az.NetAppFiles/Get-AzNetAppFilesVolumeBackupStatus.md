@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesVolumeBackupStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesVolumeBackupStatus.md
-ms.openlocfilehash: efe2e211b22d6211647ad1495c265d6085e96c61
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 915168e8839f7fdd8db6cf097d7624878d6953bc
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140372399"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141787334"
 ---
 # Get-AzNetAppFilesVolumeBackupStatus
 
 ## SYNOPSIS
-Mendapatkan status pencadangan volume
+Dapatkan status cadangan volume
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/get-aznetappfilesvolumebackupstatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Get-AzNetAppFilesVolumeBackupStatus -InputObject <PSNetAppFilesVolume>
 ```
 
 ## DESCRIPTION
-Cmd **Get-AzNetAppFilesVolumeBackupStatus** CmdLet mendapatkan status pencadangan volume
+CmdLet **Get-AzNetAppFilesVolumeBackupStatus** mendapatkan status pencadangan untuk volume
 
 ## EXAMPLES
 
@@ -53,11 +56,11 @@ Cmd **Get-AzNetAppFilesVolumeBackupStatus** CmdLet mendapatkan status pencadanga
 PS C:\> Get-AzNetAppFilesVolumeBackupStatus -ResourceGroupName MyGroup -AccountName MyAccount -PoolName MyPool -Name MyVolume
 ```
 
-Perintah ini mendapatkan status pencadangan volume bernama "MyVolume".
+Perintah ini mendapatkan status cadangan volume bernama "MyVolume".
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun ANF
 
 ```yaml
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek volume yang akan mendapatkan status pencadangan untuk
+Objek volume untuk mendapatkan status cadangan untuk
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesVolume
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolName
-Nama pool ANF
+Nama kumpulan ANF
 
 ```yaml
 Type: System.String
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolObject
-Objek pool berisi volume untuk dikembalikan
+Objek pool yang berisi volume yang akan dikembalikan
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesPool
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

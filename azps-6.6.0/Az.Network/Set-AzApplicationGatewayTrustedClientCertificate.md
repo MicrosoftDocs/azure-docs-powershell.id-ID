@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayTrustedClientCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayTrustedClientCertificate.md
 ms.openlocfilehash: 9470dceb0395c97f0a6ed62ba2b555b9f7205c6b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140330387"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141798674"
 ---
 # Set-AzApplicationGatewayTrustedClientCertificate
 
 ## SYNOPSIS
-Mengubah rantai sertifikat CA klien tepercaya dari sebuah gateway aplikasi.
+Mengubah rantai sertifikat CA klien tepercaya gateway aplikasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azapplicationgatewaytrustedclientcertificate) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewaytrustedclientcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Set-AzApplicationGatewayTrustedClientCertificate -ApplicationGateway <PSApplicat
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApplicationGatewayTrustedClientCertificate** memodifikasi rantai sertifikat CA klien tepercaya dari gateway aplikasi.
+Cmdlet **Set-AzApplicationGatewayTrustedClientCertificate** mengubah rantai sertifikat CA klien tepercaya gateway aplikasi.
 
 ## EXAMPLES
 
@@ -39,7 +39,7 @@ PS C:\> $gw = Set-AzApplicationGatewayTrustedClientCertificate -ApplicationGatew
 PS C:\> $gw = Set-AzApplicationGateway -ApplicationGateway $gw
 ```
 
-Contoh skenario di atas memperlihatkan cara memperbarui objek rantai sertifikat CA klien tepercaya yang sudah ada. Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam $gw baru. Perintah kedua mengubah objek rantai sertifikat CA klien tepercaya yang sudah ada dengan file rantai sertifikat CA yang baru. Perintah ketiga memperbarui gateway aplikasi di Azure.
+Contoh skenario di atas memperlihatkan cara memperbarui objek rantai sertifikat CA klien tepercaya yang sudah ada. Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam variabel $gw. Perintah kedua mengubah objek rantai sertifikat CA klien tepercaya yang sudah ada dengan file rantai sertifikat CA baru. Perintah ketiga memperbarui gateway aplikasi di Azure.
 
 ## PARAMETERS
 
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

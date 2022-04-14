@@ -4,11 +4,11 @@ ms.assetid: F92D18AC-B716-42CA-9C2D-1AB5A599F73E
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: d02683982b2daf4fbc68e4c941ff19a05548592c
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424110"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141772054"
 ---
 # Remove-AzureStorSimpleAccessControlRecord
 
@@ -19,13 +19,13 @@ Menghapus catatan kontrol akses dari konfigurasi layanan.
 
 ## SYNTAX
 
-### IdentifyByName
+### IdentifikasiByName
 ```
 Remove-AzureStorSimpleAccessControlRecord -ACRName <String> [-WaitForComplete] [-Force]
  [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
 
-### IdentifyByObject
+### IdentifikasiByObject
 ```
 Remove-AzureStorSimpleAccessControlRecord -ACR <AccessControlRecord> [-WaitForComplete] [-Force]
  [-Profile <AzureSMProfile>] [<CommonParameters>]
@@ -36,7 +36,7 @@ Cmdlet **Remove-AzureStorSimpleAccessControlRecord** menghapus catatan kontrol a
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus kontrol kontrol kontrol accessaccess kontrol kontrolaccess
+### Contoh 1: Menghapus kontrol Access Controlaccess kontrol recordaccess control
 ```
 PS C:\>Remove-AzureStorSimpleAccessControlRecord -ACRName "Acr10" -WaitForComplete -Force
 VERBOSE: ClientRequestId: 574aeb7f-fbc9-46d5-bc68-1bfe4487bd8b_PS
@@ -55,10 +55,10 @@ JobSteps     : {}
 VERBOSE: The job created for your delete operation has completed successfully.
 ```
 
-Perintah ini menghapus rekaman kontrol akses bernama Acr10.
-Perintah ini menentukan parameter *WaitForComplete,* dan oleh karena itu, perintah akan menunggu hingga operasi selesai, lalu mengembalikan objek **TaskStatusInfo.**
+Perintah ini menghapus catatan kontrol akses bernama Acr10.
+Perintah ini menentukan parameter *WaitForComplete* , dan oleh karena itu, perintah menunggu hingga operasi selesai, lalu mengembalikan objek **TaskStatusInfo** .
 
-### Contoh 2: Menghapus rekaman kontrol Access Controlaccess menggunakan kontrol pipelineAccess Controlaccess controlaccess
+### Contoh 2: Menghapus rekaman kontrol Controlaccess Access dengan menggunakan kontrol controlaccess Controlaccess PipelineAccess
 ```
 PS C:\>Get-AzureStorSimpleAccessControlRecord -ACRName "Acr10" | Remove-AzureStorSimpleAccessControlRecord -Force 
 VERBOSE: ClientRequestId: ff8d8bd6-4c92-4ab6-8fde-e9344a253da3_PS
@@ -71,15 +71,15 @@ VERBOSE: The delete task is submitted successfully. Please use the command Get-A
 294a0208-a43f-4d80-b824-2319cd77c5e6 for tracking the task's status
 ```
 
-Perintah ini menggunakan **Get-AzureStorSimpleAccessControlRecord** untuk mendapatkan **AccessControlRecord** bernama Acr10, lalu meneruskan objek itu ke cmdlet saat ini dengan menggunakan operator pipeline.
-Perintah ini memulai operasi yang menghapus objek **AccessControlRecord,** lalu mengembalikan objek **TaskResponse.**
-Untuk melihat status tugas, gunakan cmdlet **Get-AzureStorSimpleTask.**
+Perintah ini menggunakan **Get-AzureStorSimpleAccessControlRecord** untuk mendapatkan **AccessControlRecord** bernama Acr10, lalu mengirimkan objek tersebut ke cmdlet saat ini menggunakan operator saluran.
+Perintah memulai operasi yang menghapus objek **AccessControlRecord** , lalu mengembalikan objek **TaskResponse** .
+Untuk melihat status tugas, gunakan cmdlet **Get-AzureStorSimpleTask** .
 
 ## PARAMETERS
 
 ### -ACR
-Menentukan objek **AccessControlRecord** yang akan dihapus.
-Untuk mendapatkan objek **AccessControlRecord,** gunakan cmdlet **Get-AzureStorSimpleAccessControlRecord.**
+Menentukan objek **AccessControlRecord** untuk dihapus.
+Untuk mendapatkan objek **AccessControlRecord** , gunakan cmdlet **Get-AzureStorSimpleAccessControlRecord** .
 
 ```yaml
 Type: AccessControlRecord
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -ACRName
-Menentukan nama rekaman kontrol akses untuk dihapus.
+Menentukan nama catatan kontrol akses untuk dihapus.
 
 ```yaml
 Type: String
@@ -108,8 +108,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Mengindikasikan bahwa cmdlet ini tidak meminta konfirmasi Anda.
+### -Paksa
+Menunjukkan bahwa cmdlet ini tidak meminta konfirmasi kepada Anda.
 
 ```yaml
 Type: SwitchParameter
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -WaitForComplete
-Menunjukkan bahwa cmdlet ini menunggu hingga operasi selesai sebelum mengembalikan kontrol ke Windows PowerShell baru.
+Menunjukkan bahwa cmdlet ini menunggu operasi selesai sebelum mengembalikan kontrol ke konsol Windows PowerShell.
 
 ```yaml
 Type: SwitchParameter
@@ -154,16 +154,16 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### AccessControlRecord
-Cmdlet ini menerima objek **AccessControlRecord.**
+Cmdlet ini menerima objek **AccessControlRecord** .
 Objek **AccessControlRecord** berisi bidang berikut ini: 
 
 - **GlobalId** (**String**) 
-- **InitiatorName** (**String**) 
+- **InisiatorName** (**String**) 
 - **InstanceId** (**String**) 
 - **Nama** (**String**) 
 - **OperationInProgress** (**OperationInProgress**) 
@@ -172,8 +172,8 @@ Objek **AccessControlRecord** berisi bidang berikut ini:
 ## OUTPUTS
 
 ### TaskStatusInfo, TaskResponse
-Cmdlet ini mengembalikan objek **TaskStatusInfo** jika Anda menentukan parameter *WaitForComplete.*
-Jika Anda tidak menentukan parameter itu, parameter itu mengembalikan **objek TaskResponse.**
+Cmdlet ini mengembalikan objek **TaskStatusInfo** jika Anda menentukan parameter *WaitForComplete* .
+Jika Anda tidak menentukan parameter tersebut, maka akan mengembalikan objek **TaskResponse** .
 
 ## CATATAN
 
@@ -181,7 +181,7 @@ Jika Anda tidak menentukan parameter itu, parameter itu mengembalikan **objek Ta
 
 [Get-AzureStorSimpleAccessControlRecord](./Get-AzureStorSimpleAccessControlRecord.md)
 
-[New-AzureStorSimpleAccessControlRecord](./New-AzureStorSimpleAccessControlRecord.md)
+[Baru-AzureStorSimpleAccessControlRecord](./New-AzureStorSimpleAccessControlRecord.md)
 
 [Set-AzureStorSimpleAccessControlRecord](./Set-AzureStorSimpleAccessControlRecord.md)
 

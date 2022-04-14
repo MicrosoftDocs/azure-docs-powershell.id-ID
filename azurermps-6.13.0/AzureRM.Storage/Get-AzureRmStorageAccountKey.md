@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.stora
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Storage/Commands.Management.Storage/help/Get-AzureRmStorageAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Storage/Commands.Management.Storage/help/Get-AzureRmStorageAccountKey.md
-ms.openlocfilehash: e71b9c58ef33689238ebd2cd84858ba1c3cda38725023d4fe1402b62690d74a6
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 08d997caef7280d922a01dbea127bd4db64cd28f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418501"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141773740"
 ---
 # Get-AzureRmStorageAccountKey
 
 ## SYNOPSIS
-Dapatkan kunci akses untuk akun Azure Storage Anda.
+Mendapatkan kunci akses untuk akun Azure Storage.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,18 +28,18 @@ Get-AzureRmStorageAccountKey [-ResourceGroupName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmStorageAccountKey** mendapatkan kunci akses untuk akun Azure Storage Anda.
+Cmdlet **Get-AzureRmStorageAccountKey** mendapatkan kunci akses untuk akun Azure Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kunci akses untuk Storage anda
+### Contoh 1: Dapatkan kunci akses untuk akun Storage
 ```
 PS C:\>Get-AzureRmStorageAccountKey -ResourceGroupName "RG01" -AccountName "mystorageaccount"
 ```
 
-Perintah ini mendapatkan tombol untuk akun Azure Storage tertentu.
+Perintah ini mendapatkan kunci untuk akun Azure Storage yang ditentukan.
 
-### Contoh 2: Mendapatkan kunci akses tertentu untuk Storage tersebut
+### Contoh 2: Dapatkan kunci akses tertentu untuk akun Storage
 ```
 This command gets a specific key for a Storage account. This command works for Azure PowerShell version 1.4, and later versions.
 PS C:\>(Get-AzureRmStorageAccountKey -ResourceGroupName "RG01" -AccountName "mystorageaccount").Value[0]
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama akun Storage yang mendapatkan kunci cmdlet ini.
+Menentukan nama akun Storage tempat cmdlet ini mendapatkan kunci.
 
 ```yaml
 Type: System.String
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi akun Storage tersebut.
+Menentukan nama grup sumber daya yang berisi akun Storage.
 
 ```yaml
 Type: System.String
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.strea
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/StreamAnalytics/Commands.StreamAnalytics/help/Get-AzureRmStreamAnalyticsQuota.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/StreamAnalytics/Commands.StreamAnalytics/help/Get-AzureRmStreamAnalyticsQuota.md
-ms.openlocfilehash: 8eb1b148f9cd6cd69be32740f6160bd6977e444ab97f0be1eb74fe913c23bdd5
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 281bc9cd39891ab2794901d0425b299cc72c4644
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418491"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141773490"
 ---
 # Get-AzureRmStreamAnalyticsQuota
 
 ## SYNOPSIS
-Mendapatkan informasi tentang kuota Unit Streaming untuk satu kawasan.
+Mendapatkan informasi tentang kuota Unit Streaming untuk suatu kawasan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -42,7 +42,7 @@ Perintah ini mengembalikan informasi tentang kuota dan penggunaan Unit Streaming
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -57,8 +57,8 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan nama lokasi kawasan atau pusat data Azure yang akan mendapatkan informasi kuota Unit Streaming.
-https://azure.microsoft.com/en-us/regions/#serviceshttps://azure.microsoft.com/en-us/regions/#servicesLihat daftar kawasan Azure yang didukung.
+Menentukan nama kawasan Azure atau lokasi pusat data untuk mendapatkan informasi kuota Unit Streaming.
+Lihat https://azure.microsoft.com/en-us/regions/#serviceshttps://azure.microsoft.com/en-us/regions/#services daftar kawasan Azure yang didukung.
 
 ```yaml
 Type: System.String
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -87,6 +87,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Cmdlet Analitik Azure Stream](./AzureRM.StreamAnalytics.md)
+[Cmdlet Azure Stream Analytics](./AzureRM.StreamAnalytics.md)
 
 

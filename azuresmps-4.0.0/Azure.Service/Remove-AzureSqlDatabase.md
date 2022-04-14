@@ -4,11 +4,11 @@ ms.assetid: B3813F54-E5B7-4605-BB1C-67417FDDB076
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: e54b9af06b56f3e9010136b8aff704cf5e8d5d4c
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422065"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141772053"
 ---
 # Remove-AzureSqlDatabase
 
@@ -44,8 +44,8 @@ Remove-AzureSqlDatabase -ServerName <String> -Database <Database> [-Force] [-Pro
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureSqlDatabase** menghapus langganan Azure SQL Database konteks koneksi server atau nama server.
-Anda dapat membuat Azure SQL Database koneksi server menggunakan cmdlet **New-AzureSqlDatabaseServerContext,** lalu menggunakannya dengan cmdlet ini.
+Cmdlet **Remove-AzureSqlDatabase** menghapus Azure SQL Database menurut konteks koneksi server atau nama server.
+Anda dapat membuat konteks koneksi server Azure SQL Database menggunakan cmdlet **New-AzureSqlDatabaseServerContext**, lalu menggunakannya dengan cmdlet ini.
 
 Saat Anda menghapus database dengan menentukan nama server Azure SQL Database, cmdlet **Remove-AzureSqlDatabase** menggunakan nama dan informasi langganan Azure saat ini untuk melakukan operasi.
 
@@ -56,7 +56,7 @@ Saat Anda menghapus database dengan menentukan nama server Azure SQL Database, c
 PS C:\> Remove-AzureSqlDatabase -ConnectionContext $Context -DatabaseName "Database01"
 ```
 
-Perintah ini menghapus database bernama Database01 dari Azure SQL Database konteks koneksi server $Context.
+Perintah ini menghapus database bernama Database01 dari konteks koneksi server Azure SQL Database $Context.
 
 ### Contoh 2: Menghapus database menggunakan nama server
 ```
@@ -65,18 +65,18 @@ PS C:\> Remove-AzureSqlDatabase -ServerName "lpqd0zbr8y" -DatabaseName "Database
 
 Perintah ini menghapus database bernama Database01 dari server Azure SQL Database bernama lpqd0zbr8y.
 
-### Contoh 3: Menghapus database dengan menggunakan saluran
+### Contoh 3: Menghapus database menggunakan saluran
 ```
 PS C:\> $Database01 | Remove-AzureSqlDatabase -ConnectionContext $Context
 PS C:\> $Database01 | Remove-AzureSqlDatabase -ServerName "lpqd0zbr8y"
 ```
 
-Contoh ini menunjukkan metode alternatif untuk meneruskan objek database melalui saluran.
+Contoh ini menunjukkan metode alternatif untuk melewati objek database melalui pipeline.
 
 ## PARAMETERS
 
 ### -ConnectionContext
-Menentukan konteks koneksi server yang akan dihapus cmdlet ini.
+Menentukan konteks koneksi server tempat cmdlet ini menghapus database.
 
 ```yaml
 Type: IServerDataServiceContext
@@ -120,8 +120,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memungkinkan tindakan untuk selesai tanpa meminta konfirmasi kepada pengguna.
+### -Paksa
+Memperbolehkan tindakan untuk diselesaikan tanpa meminta konfirmasi kepada pengguna.
 
 ```yaml
 Type: SwitchParameter
@@ -136,8 +136,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server yang akan dihapus cmdlet ini.
+Menentukan nama server tempat cmdlet ini menghapus database.
 
 ```yaml
 Type: String
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -207,7 +207,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ## CATATAN
-* Karena tingkat parahnya operasi, secara default, cmdlet ini meminta konfirmasi Anda. Untuk melewati konfirmasi, tentukan parameter *Paksa.*
+* Karena tingkat keparahan operasi, secara default, cmdlet ini meminta Anda untuk konfirmasi. Untuk melewati konfirmasi, tentukan parameter *Paksa* .
 
 ## RELATED LINKS
 
@@ -215,13 +215,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Hapus Database](https://msdn.microsoft.com/en-us/library/azure/dn505705.aspx)
 
-[Operasi untuk Database SQL Azure](https://msdn.microsoft.com/en-us/library/azure/dn505719.aspx)
+[Operasi untuk Database Azure SQL](https://msdn.microsoft.com/en-us/library/azure/dn505719.aspx)
 
 [Get-AzureSqlDatabase](./Get-AzureSqlDatabase.md)
 
-[New-AzureSqlDatabase](./New-AzureSqlDatabase.md)
+[AzureSqlDatabase baru](./New-AzureSqlDatabase.md)
 
-[New-AzureSqlDatabaseServerContext](./New-AzureSqlDatabaseServerContext.md)
+[Baru-AzureSqlDatabaseServerContext](./New-AzureSqlDatabaseServerContext.md)
 
 [Set-AzureSqlDatabase](./Set-AzureSqlDatabase.md)
 

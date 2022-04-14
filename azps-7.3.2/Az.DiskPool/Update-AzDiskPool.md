@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.diskpool/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/Update-AzDiskPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/Update-AzDiskPool.md
-ms.openlocfilehash: 427f9f2136d40ee67e905622ebb28d0cd08a3ae4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 75bc8d12e8419db5c0bd4f6591ef21aa2ea1042b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140394383"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141892966"
 ---
 # Update-AzDiskPool
 
 ## SYNOPSIS
-Memperbarui Disk pool.
+Memperbarui kumpulan Disk.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.diskpool/update-azdiskpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,11 +37,11 @@ Update-AzDiskPool -InputObject <IDiskPoolIdentity> [-DiskId <String[]>] [-Manage
 ```
 
 ## DESCRIPTION
-Memperbarui Disk pool.
+Memperbarui kumpulan Disk.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui Disk Pool
+### Contoh 1: Memperbarui Disk Pool
 ```powershell
 PS C:\> Update-AzDiskPool -Name 'disk-pool-1' -ResourceGroupName 'storagepool-rg-test' -DiskId @()
 
@@ -47,7 +50,7 @@ Name             Location    Status    ProvisioningState AvailabilityZone
 disk-pool-1      eastus2euap Running   Succeeded         {3}
 ```
 
-Perintah ini memperbarui Disk Pool.
+Perintah ini memperbarui Kumpulan Disk.
 
 ### Contoh 2: Memperbarui Disk Pool menurut objek
 ```powershell
@@ -58,7 +61,7 @@ Name             Location    Status    ProvisioningState AvailabilityZone
 disk-pool-1      eastus2euap Running   Succeeded         {3}
 ```
 
-Perintah ini memperbarui Disk Pool menurut objek.
+Perintah ini memperbarui Kumpulan Disk menurut objek.
 
 ## PARAMETERS
 
@@ -93,8 +96,8 @@ Accept wildcard characters: False
 ```
 
 ### -DiskId
-Daftar Disk Terkelola Azure untuk dilampirkan ke Disk Pool.
-Untuk membuat, lihat bagian CATATAN untuk properti DISK dan membuat tabel hash.
+Daftar Disk terkelola Azure untuk dilampirkan ke Kumpulan Disk.
+Untuk membangun, lihat bagian CATATAN untuk properti DISK dan membuat tabel hash.
 
 ```yaml
 Type: System.String[]
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DiskPool.Models.IDiskPoolIdentity
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedBy
-Id sumber daya Azure. Menunjukkan apakah sumber daya ini dikelola oleh sumber daya Azure lain.
+Id sumber daya Azure. Menunjukkan apakah sumber daya ini dikelola oleh sumber daya Azure lainnya.
 
 ```yaml
 Type: System.String
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Disk Pool.
+Nama Kumpulan Disk.
 
 ```yaml
 Type: System.String
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuTier
-Sku tier
+Tingkat Sku
 
 ```yaml
 Type: System.String
@@ -260,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -276,7 +279,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -291,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -315,7 +318,7 @@ INPUTOBJECT <IDiskPoolIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[IscsiTargetName <String>]`: Nama Target iSCSI.
   - `[Location <String>]`: Lokasi sumber daya.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS

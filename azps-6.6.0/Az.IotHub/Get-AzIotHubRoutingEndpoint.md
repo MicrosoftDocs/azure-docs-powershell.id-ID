@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubRoutingEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubRoutingEndpoint.md
 ms.openlocfilehash: 96f27b272cc176fef0484bfe4a3cafa7dcd9c92e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140253745"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141867272"
 ---
 # Get-AzIotHubRoutingEndpoint
 
@@ -18,7 +18,7 @@ ms.locfileid: "140253745"
 Dapatkan informasi tentang semua titik akhir untuk IoT Hub Anda
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.iothub/get-aziothubroutingendpoint) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubroutingendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Get-AzIotHubRoutingEndpoint [-ResourceId] <String> [-EndpointType <PSEndpointTyp
 ```
 
 ## DESCRIPTION
-Dapatkan informasi tentang titik akhir.
+Dapatkan informasi di titik akhir.
 
 ## EXAMPLES
 
@@ -56,7 +56,7 @@ E2   EventHub               resourcegroup1/event2
 S1   AzureStorageContainer  mystorage1/container
 ```
 
-Dapatkan semua titik akhir dari "myiothub" IoT Hub.
+Dapatkan semua titik akhir dari IoT Hub "myiothub".
 
 ### Contoh 2
 ```
@@ -68,7 +68,7 @@ resourcegroup1    91d12343-a3de-345d-b2ea-135792468abc E1
 resourcegroup1    91d12343-a3de-345d-b2ea-135792468abc E2
 ```
 
-Dapatkan semua titik akhir tipe EventHub dari "myiothub" IoT Hub. 
+Dapatkan semua titik akhir tipe EventHub dari IoT Hub "myiothub". 
 
 ### Contoh 3
 ```
@@ -80,7 +80,7 @@ EndpointName      : E1
 ConnectionString  : Endpoint=sb://myeventhub1.servicebus.windows.net:5671/;SharedAccessKeyName=iothubroutes_myeventhub1;SharedAccessKey=****;EntityPath=event1
 ```
 
-Dapatkan semua titik akhir tipe EventHub dari "myiothub" IoT Hub.
+Dapatkan semua titik akhir tipe EventHub dari IoT Hub "myiothub".
 
 ### Contoh 4
 ```
@@ -92,7 +92,7 @@ EndpointName      : E1
 ConnectionString  : Endpoint=sb://myeventhub1.servicebus.windows.net:5671/;SharedAccessKeyName=iothubroutes_myeventhub1;SharedAccessKey=****;EntityPath=event1
 ```
 
-Dapatkan informasi titik akhir dari Hub IoT "myiothub".
+Dapatkan informasi titik akhir dari IoT Hub "myiothub".
 
 ## PARAMETERS
 
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

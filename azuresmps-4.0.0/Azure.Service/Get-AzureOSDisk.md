@@ -4,11 +4,11 @@ ms.assetid: 8A269A53-8FB2-4D4E-8FBB-A84BE658F75F
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: ab8099e1707a41712e5d5f0546dad7337d2e3083
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425082"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141772754"
 ---
 # Get-AzureOSDisk
 
@@ -25,7 +25,7 @@ Get-AzureOSDisk -VM <IPersistentVM> [-Profile <AzureSMProfile>] [-InformationAct
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureOSDisk** mendapatkan disk sistem operasi komputer virtual Azure.
+Cmdlet **Get-AzureOSDisk** mendapatkan disk sistem operasi mesin virtual Azure.
 
 ## EXAMPLES
 
@@ -34,23 +34,23 @@ Cmdlet **Get-AzureOSDisk** mendapatkan disk sistem operasi komputer virtual Azur
 PS C:\> Get-AzureVM -ServiceName "ContosoService" -Name "VirtualMachine02" | Get-AzureOSDisk
 ```
 
-Perintah ini mendapatkan mesin virtual bernama VirtualMachine02 dalam layanan yang bernama ContosoService menggunakan cmdlet **Get-AzureVM.**
-Perintah tersebut melewati mesin virtual ke cmdlet saat ini menggunakan operator pipeline.
-Cmdlet saat ini mendapatkan disk sistem operasi komputer virtual tersebut.
+Perintah ini mendapatkan mesin virtual bernama VirtualMachine02 dalam layanan bernama ContosoService dengan menggunakan cmdlet **Get-AzureVM** .
+Perintah melewati mesin virtual ke cmdlet saat ini menggunakan operator pipeline.
+Cmdlet saat ini mendapatkan disk sistem operasi dari mesin virtual itu.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -80,8 +80,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -96,8 +96,8 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan mesin virtual yang akan mendapatkan disk sistem operasi dari cmdlet ini.
-Untuk mendapatkan objek mesin virtual, gunakan cmdlet **Get-AzureVM.**
+Menentukan mesin virtual di mana cmdlet ini mendapatkan disk sistem operasi.
+Untuk mendapatkan objek mesin virtual, gunakan cmdlet **Get-AzureVM** .
 
 ```yaml
 Type: IPersistentVM
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

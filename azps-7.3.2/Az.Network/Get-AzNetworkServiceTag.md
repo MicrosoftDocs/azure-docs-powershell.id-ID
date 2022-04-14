@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkServiceTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkServiceTag.md
-ms.openlocfilehash: 617e7420dcd5f39106ad53126c1b1540282a7730
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d0d105fc0611a0155e773bcd80d2ed6ae5eb5f8a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140007841"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141786992"
 ---
 # Get-AzNetworkServiceTag
 
 ## SYNOPSIS
-Mendapatkan daftar sumber daya informasi tag layanan.
+Mendapatkan daftar sumber informasi tag layanan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkservicetag) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,9 +27,9 @@ Get-AzNetworkServiceTag -Location <String> [-DefaultProfile <IAzureContextContai
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzNetworkServiceTag** mendapatkan daftar sumber daya informasi tag layanan.
+Cmdlet **Get-AzNetworkServiceTag** mendapatkan daftar sumber informasi tag layanan.
 
-Harap diperhatikan bahwa informasi wilayah Azure yang Anda tentukan akan digunakan sebagai referensi untuk versi (bukan sebagai filter berdasarkan lokasi). Misalnya, `-Location eastus2` meskipun anda menentukan akan mendapatkan daftar tag layanan dengan detail prefiks di seluruh kawasan tetapi terbatas pada awan tempat langganan Anda digunakan (misalnya Publik, pemerintah AS, Tiongkok, atau Jerman).
+Harap diperhatikan bahwa informasi kawasan Azure yang Anda tentukan akan digunakan sebagai referensi untuk versi (bukan sebagai filter berdasarkan lokasi). Misalnya, bahkan jika Menentukan `-Location eastus2` , Anda akan mendapatkan daftar tag layanan dengan detail prefiks di seluruh kawasan namun terbatas pada cloud yang menjadi milik langganan Anda (misalnya Publik, pemerintah AS, Tiongkok, atau Jerman).
 
 ## EXAMPLES
 
@@ -76,7 +79,7 @@ Change Number    : 2
 ...
 ```
 
-Perintah tersebut mendapatkan daftar sumber daya informasi tag layanan dan menyimpannya dalam variabel `serviceTags`.
+Perintah mendapatkan daftar sumber daya informasi tag layanan dan menyimpannya dalam variabel `serviceTags`.
 
 ### Contoh 2: Dapatkan semua prefiks alamat untuk AzureSQL
 ```powershell
@@ -100,10 +103,10 @@ PS C:\> $sql.Properties.AddressPrefixes
 ...
 ```
 
-Perintah pertama mendapatkan daftar sumber daya informasi tag layanan dan menyimpannya dalam variabel `serviceTags`.
-Perintah kedua memfilter daftar untuk memilih sumber informasi bagi Sql.
+Perintah pertama mendapatkan daftar sumber informasi tag layanan dan menyimpannya dalam variabel `serviceTags`.
+Perintah kedua memfilter daftar untuk memilih sumber informasi untuk Sql.
 
-### Contoh 3: Dapatkan Storage informasi tag layanan untuk West US 2
+### Contoh 3: Dapatkan sumber informasi tag layanan Storage untuk WEST US 2
 ```powershell
 PS C:\> $serviceTags = Get-AzNetworkServiceTag -Location eastus2
 PS C:\> $serviceTags.Values | Where-Object { $_.Name -eq "Storage.WestUS2" }
@@ -131,8 +134,8 @@ Address Prefixes : {13.66.176.16/28, 13.66.176.48/28, 13.66.232.64/28, 13.66.232
 Change Number    : 5
 ```
 
-Perintah pertama mendapatkan daftar sumber daya informasi tag layanan dan menyimpannya dalam variabel `serviceTags`.
-Perintah berikut ini memperlihatkan berbagai cara untuk memfilter daftar untuk memilih informasi tag layanan bagi Storage di Barat AS 2.
+Perintah pertama mendapatkan daftar sumber informasi tag layanan dan menyimpannya dalam variabel `serviceTags`.
+Perintah berikut ini memperlihatkan berbagai cara untuk memfilter daftar guna memilih informasi tag layanan untuk Storage di AS Barat 2.
 
 ### Contoh 4: Dapatkan semua sumber daya informasi tag layanan global
 ```powershell
@@ -168,8 +171,8 @@ Change Number    : 2
 ...
 ```
 
-Perintah pertama mendapatkan daftar sumber daya informasi tag layanan dan menyimpannya dalam variabel `serviceTags`.
-Perintah kedua memfilter daftar untuk memilihnya saja tanpa wilayah.
+Perintah pertama mendapatkan daftar sumber informasi tag layanan dan menyimpannya dalam variabel `serviceTags`.
+Perintah kedua memfilter daftar untuk memilih hanya yang tidak memiliki kawasan yang diatur.
 
 ## PARAMETERS
 
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi yang akan digunakan sebagai referensi untuk versi (bukan sebagai filter berdasarkan lokasi, Anda akan mendapatkan daftar tag layanan dengan detail prefiks di seluruh kawasan tetapi terbatas pada awan di mana langganan Anda dimiliki).
+Lokasi yang akan digunakan sebagai referensi untuk versi (bukan sebagai filter berdasarkan lokasi, Anda akan mendapatkan daftar tag layanan dengan detail prefiks di seluruh kawasan tetapi terbatas pada awan tempat langganan Anda berada).
 
 ```yaml
 Type: System.String
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

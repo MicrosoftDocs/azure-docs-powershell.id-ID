@@ -6,60 +6,60 @@ Download Help Link:
 Help Version:
   '[object Object]': 
 Locale: en-US
-ms.openlocfilehash: dee9ce7f8dd8a3b4d6100178c722124c4fa68b52ce22d00012d8c8963eb847cd
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 8b74dd57a85a39403f56840dd0fc54b3f25184f1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132417013"
 ---
-# Azs.Compute.Admin Module
+# Modul Azs.Compute.Admin
 ## Deskripsi
-Pratinjau rilis modul administrator AzureStack Compute yang menyediakan fungsionalitas untuk mengelola kuota perhitungan, gambar platform, dan ekstensi mesin virtual, serta pekerjaan migrasi disk yang dikelola untuk menyeimbangkan penyimpanan.
+Rilis pratinjau modul administrator AzureStack Compute yang menyediakan fungsionalitas untuk mengelola kuota komputasi, gambar platform, dan ekstensi mesin virtual, serta pekerjaan migrasi disk terkelola untuk menyeimbangkan penyimpanan.
 
 ## Cmdlet Azs.Compute.Admin
 ### [Add-AzsPlatformImage](Add-AzsPlatformImage.md)
-Menambahkan gambar platform mesin virtual dari konfigurasi gambar tertentu.
+Tambahkan gambar platform mesin virtual dari konfigurasi gambar tertentu.
 
 ### [Add-AzsVMExtension](Add-AzsVMExtension.md)
 Buat gambar ekstensi mesin virtual baru.
 
 ### [Get-AzsComputeQuota](Get-AzsComputeQuota.md)
-Mengembalikan kuota yang menentukan batas kuota untuk objek perhitungan.
+Mengembalikan kuota yang menentukan batas kuota untuk objek komputasi.
 
 ### [Get-AzsDisk](Get-AzsDisk.md)
 Mengembalikan daftar disk terkelola yang dapat dimigrasikan dalam berbagi yang ditentukan.
 
 ### [Get-AzsDiskMigrationJob](Get-AzsDiskMigrationJob.md)
-Mengembalikan daftar pekerjaan migrasi disk yang dikelola.
+Mengembalikan daftar pekerjaan migrasi disk terkelola.
 
 ### [Get-AzsPlatformImage](Get-AzsPlatformImage.md)
-Mengembalikan gambar mesin virtual yang dimuat ke dalam tempat penyimpanan gambar platform.
+Mengembalikan gambar mesin virtual yang dimuat ke dalam penyimpanan gambar platform.
 
 ### [Get-AzsVMExtension](Get-AzsVMExtension.md)
 Mengembalikan ekstensi gambar mesin virtual yang saat ini tersedia.
 
 ### [New-AzsComputeQuota](New-AzsComputeQuota.md)
-Buat kuota perhitungan baru yang digunakan untuk membatasi sumber daya perhitungan.
+Buat kuota komputasi baru yang digunakan untuk membatasi sumber daya komputasi.
 
 ### [New-AzsDiskMigrationJob](New-AzsDiskMigrationJob.md)
 Memulai pekerjaan migrasi disk terkelola untuk melakukan migrasi disk terkelola ke berbagi tujuan yang ditentukan.
 
-### [New-DataDiskObject](New-DataDiskObject.md)
+### [Data BaruDiskObject](New-DataDiskObject.md)
 Membuat disk data yang digunakan untuk membuat gambar platform mesin virtual baru.
 
 ### [Remove-AzsComputeQuota](Remove-AzsComputeQuota.md)
-Menghapus kuota perhitungan tertentu.
+Menghapus kuota komputasi yang ditentukan.
 
 ### [Remove-AzsPlatformImage](Remove-AzsPlatformImage.md)
-Hapus gambar mesin virtual dari tempat penyimpanan gambar platform.
+Hapus gambar mesin virtual dari penyimpanan gambar platform.
 
 ### [Remove-AzsVMExtension](Remove-AzsVMExtension.md)
 Menghapus gambar ekstensi mesin virtual.
 
 ### [Set-AzsComputeQuota](Set-AzsComputeQuota.md)
-Perbarui kuota perhitungan yang ada menggunakan parameter yang disediakan.
+Perbarui kuota komputasi yang sudah ada menggunakan parameter yang disediakan.
 
 ### [Stop-AzsDiskMigrationJob](Stop-AzsDiskMigrationJob.md)
-Membatalkan pekerjaan migrasi disk terkelola.
+Batalkan pekerjaan migrasi disk terkelola.
 

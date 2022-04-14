@@ -6,20 +6,20 @@ Help Version: 4.2.2.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Cdn/Commands.Cdn/help/AzureRM.Cdn.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Cdn/Commands.Cdn/help/AzureRM.Cdn.md
-ms.openlocfilehash: 9b334b0fbd139319b314a62fb5eceba0ecf2970f38b1360fba0111e8e2877c3d
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: ff8cf56df753cbd357dec4f15d413560650ee006
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132417763"
 ---
 # Modul AzureRM.Cdn
 ## Deskripsi
-Topik dalam bagian ini mendokumentasikan cmdlet Azure PowerShell untuk Azure Content Delivery Network (CDN) dalam kerangka kerja Azure Resource Manager (ARM). Cmdlet ada dalam ruang nama Microsoft.Azure.Commands.Cdn.
+Topik di bagian ini mendokumentasikan cmdlet Azure PowerShell untuk Azure Content Delivery Network (CDN) dalam kerangka kerja Azure Resource Manager (ARM). Cmdlet ada di ruang nama Microsoft.Azure.Commands.Cdn.
 
 ## Cmdlet AzureRM.Cdn
-### [Confirm-AzureRmCdnEndpointProbeURL](Confirm-AzureRmCdnEndpointProbeURL.md)
-Memvalidasi URL kustom.
+### [Konfirmasi-AzureRmCdnEndpointProbeURL](Confirm-AzureRmCdnEndpointProbeURL.md)
+Memvalidasi URL probe.
 
 ### [Disable-AzureRmCdnCustomDomain](Disable-AzureRmCdnCustomDomain.md)
 Menonaktifkan HTTPS kustom.
@@ -28,45 +28,45 @@ Menonaktifkan HTTPS kustom.
 Mengaktifkan HTTPS kustom.
 
 ### [Get-AzureRmCdnCustomDomain](Get-AzureRmCdnCustomDomain.md)
-Mendapatkan domain CDN kustom.
+Mendapatkan domain kustom CDN.
 
 ### [Get-AzureRmCdnEdgeNodes](Get-AzureRmCdnEdgeNodes.md)
-Mendapatkan Azure CDN edgenodes.
+Mendapatkan Azure CDN edgenode.
 
 ### [Get-AzureRmCdnEndpoint](Get-AzureRmCdnEndpoint.md)
-Mendapatkan titik CDN akhir.
+Mendapatkan titik akhir CDN.
 
 ### [Get-AzureRmCdnEndpointNameAvailability](Get-AzureRmCdnEndpointNameAvailability.md)
-Mendapatkan status ketersediaan CDN akhir.
+Mendapatkan status ketersediaan titik akhir CDN.
 
 ### [Get-AzureRmCdnEndpointResourceUsage](Get-AzureRmCdnEndpointResourceUsage.md)
-Mendapatkan penggunaan sumber daya titik akhir CDN akhir.
+Mendapatkan penggunaan sumber daya titik akhir CDN.
 
 ### [Get-AzureRmCdnOrigin](Get-AzureRmCdnOrigin.md)
-Mendapatkan server CDN origin.
+Mendapatkan server asal CDN.
 
 ### [Get-AzureRmCdnProfile](Get-AzureRmCdnProfile.md)
-Mendapatkan profil CDN Anda.
+Mendapatkan profil CDN.
 
 ### [Get-AzureRmCdnProfileResourceUsage](Get-AzureRmCdnProfileResourceUsage.md)
 Mendapatkan penggunaan sumber daya profil CDN.
 
 ### [Get-AzureRmCdnProfileSsoUrl](Get-AzureRmCdnProfileSsoUrl.md)
-Dapatkan URL masuk tunggal profil CDN masuk.
+Mendapatkan URL masuk tunggal dari profil CDN.
 
 ### [Get-AzureRmCdnProfileSupportedOptimizationType](Get-AzureRmCdnProfileSupportedOptimizationType.md)
-Mendapatkan tipe optimisasi yang didukung untuk CDN bisnis.
+Mendapatkan tipe optimisasi yang didukung untuk profil CDN.
 
 ### [Get-AzureRmCdnSubscriptionResourceUsage](Get-AzureRmCdnSubscriptionResourceUsage.md)
-Mendapatkan penggunaan sumber daya untuk kecurigaan.
+Mendapatkan penggunaan sumber daya untuk susbskripsi.
 
-### [New-AzureRmCdnCustomDomain](New-AzureRmCdnCustomDomain.md)
-Membuat domain kustom untuk titik akhir CDN akhir.
+### [Baru-AzureRmCdnCustomDomain](New-AzureRmCdnCustomDomain.md)
+Membuat domain kustom untuk titik akhir CDN.
 
-### [New-AzureRmCdnEndpoint](New-AzureRmCdnEndpoint.md)
-Membuat CDN akhir.
+### [AzureRmCdnEndpoint baru](New-AzureRmCdnEndpoint.md)
+Membuat titik akhir CDN.
 
-### [New-AzureRmCdnProfile](New-AzureRmCdnProfile.md)
+### [AzureRmCdnProfile baru](New-AzureRmCdnProfile.md)
 Membuat profil CDN.
 
 ### [Publish-AzureRmCdnEndpointContent](Publish-AzureRmCdnEndpointContent.md)
@@ -75,30 +75,30 @@ Memuat konten ke titik akhir.
 ### [Remove-AzureRmCdnCustomDomain](Remove-AzureRmCdnCustomDomain.md)
 Menghapus domain kustom.
 
-### [Remove-AzureRmCdnEndpoint](Remove-AzureRmCdnEndpoint.md)
-Menghapus titik akhir CDN akhir.
+### [Hapus-AzureRmCdnEndpoint](Remove-AzureRmCdnEndpoint.md)
+Menghapus titik akhir CDN.
 
-### [Remove-AzureRmCdnProfile](Remove-AzureRmCdnProfile.md)
+### [Hapus-AzureRmCdnProfile](Remove-AzureRmCdnProfile.md)
 Menghapus profil CDN.
 
 ### [Set-AzureRmCdnEndpoint](Set-AzureRmCdnEndpoint.md)
-Memperbarui titik CDN akhir.
+Memperbarui titik akhir CDN.
 
 ### [Set-AzureRmCdnOrigin](Set-AzureRmCdnOrigin.md)
-Memperbarui server CDN origin.
+Memperbarui server asal CDN.
 
 ### [Set-AzureRmCdnProfile](Set-AzureRmCdnProfile.md)
-Memperbarui profil CDN Anda.
+Memperbarui profil CDN.
 
 ### [Start-AzureRmCdnEndpoint](Start-AzureRmCdnEndpoint.md)
-Memulai titik CDN akhir.
+Memulai titik akhir CDN.
 
 ### [Stop-AzureRmCdnEndpoint](Stop-AzureRmCdnEndpoint.md)
-Menghentikan titik CDN akhir.
+Menghentikan titik akhir CDN.
 
-### [Test-AzureRmCdnCustomDomain](Test-AzureRmCdnCustomDomain.md)
-Memeriksa apakah domain kustom dapat ditambahkan ke titik akhir.
+### [Uji-AzureRmCdnCustomDomain](Test-AzureRmCdnCustomDomain.md)
+Memeriksa apakah domain kustom bisa ditambahkan ke titik akhir.
 
-### [Unpublish-AzureRmCdnEndpointContent](Unpublish-AzureRmCdnEndpointContent.md)
-Pembersihan titik akhir CDN akhir.
+### [Batal terbitkan-AzureRmCdnEndpointContent](Unpublish-AzureRmCdnEndpointContent.md)
+Membersihkan titik akhir CDN.
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Add-AzureRmVMNetworkInterface.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Add-AzureRmVMNetworkInterface.md
 ms.openlocfilehash: a7e84ee56e09e2008d76ccd9177d320be7ada96a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422180"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141844468"
 ---
 # Add-AzureRmVMNetworkInterface
 
@@ -36,37 +36,37 @@ Add-AzureRmVMNetworkInterface [-VM] <PSVirtualMachine>
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureRmVMNetworkInterface** menambahkan antarmuka jaringan ke komputer virtual.
+Cmdlet **Add-AzureRmVMNetworkInterface** menambahkan antarmuka jaringan ke mesin virtual.
 Anda dapat menambahkan antarmuka saat membuat mesin virtual atau menambahkannya ke mesin virtual yang sudah ada.
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan antarmuka jaringan ke mesin virtual baru
+### Contoh 1: Menambahkan antarmuka jaringan ke mesin virtual baru
 ```
 PS C:\> $VirtualMachine = New-AzureRmVMConfig -VMName "VirtualMachine07" -VMSize "Standard_A1"
 PS C:\> Add-AzureRmVMNetworkInterface -VM $VirtualMachine -Id "/subscriptions/46fc8ea4-2de6-4179-8ab1-365da4121af4/resourceGroups/contoso/providers/Microsoft.Network/networkInterfaces/sshNIC"
 ```
 
-Perintah pertama membuat objek mesin virtual, lalu menyimpannya di $VirtualMachine variabel.
-Perintah menetapkan nama dan ukuran ke komputer virtual.
+Perintah pertama membuat objek mesin virtual, lalu menyimpannya dalam variabel $VirtualMachine.
+Perintah menetapkan nama dan ukuran ke mesin virtual.
 Perintah kedua menambahkan antarmuka jaringan ke mesin virtual yang disimpan di $VirtualMachine.
 
-### Contoh 2: Menambahkan antarmuka jaringan ke komputer virtual yang sudah ada
+### Contoh 2: Menambahkan antarmuka jaringan ke mesin virtual yang sudah ada
 ```
 PS C:\> $VirtualMachine = Get-AzureRmVM -ResourceGroupName "ResourceGroup11" -Name "VirtualMachine07"
 PS C:\> Add-AzureRmVMNetworkInterface -VM $VirtualMachine -Id "/subscriptions/46fc8ea4-2de6-4179-8ab1-365da4121af4/resourceGroups/contoso/providers/Microsoft.Network/networkInterfaces/sshNIC"
 PS C:\> Update-AzureRmVM -ResourceGroupName "ResourceGroup11" -VM $VirtualMachine
 ```
 
-Perintah pertama mendapatkan mesin virtual bernama VirtualMachine07 menggunakan cmdlet **Get-AzureRmVM.**
-Perintah menyimpan mesin virtual di $VirtualMachine variabel.
+Perintah pertama mendapatkan mesin virtual bernama VirtualMachine07 menggunakan cmdlet **Get-AzureRmVM** .
+Perintah menyimpan mesin virtual dalam variabel $VirtualMachine.
 Perintah kedua menambahkan antarmuka jaringan ke mesin virtual yang disimpan di $VirtualMachine.
-Perintah terakhir memperbarui status mesin virtual yang disimpan di $VirtualMachine ResourceGroup11.
+Perintah terakhir memperbarui status mesin virtual yang disimpan di $VirtualMachine di ResourceGroup11.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID antarmuka jaringan untuk ditambahkan ke komputer virtual.
+Menentukan ID antarmuka jaringan untuk ditambahkan ke mesin virtual.
 Anda dapat menggunakan cmdlet [Get-AzureRmNetworkInterface](/powershell/module/azurerm.network/get-azurermnetworkinterface) untuk mendapatkan antarmuka jaringan.
 
 ```yaml
@@ -111,8 +111,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Utama
-Mengindikasikan bahwa cmdlet ini menambahkan antarmuka jaringan sebagai antarmuka utama.
+### -Primer
+Menunjukkan bahwa cmdlet ini menambahkan antarmuka jaringan sebagai antarmuka utama.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -127,9 +127,9 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan objek mesin virtual lokal untuk menambahkan antarmuka jaringan.
-Untuk membuat mesin virtual, gunakan cmdlet **New-AzureRmVMConfig.**
-Untuk mendapatkan mesin virtual yang sudah ada, gunakan cmdlet **Get-AzureRmVM.**
+Menentukan objek mesin maya lokal tempat untuk menambahkan antarmuka jaringan.
+Untuk membuat mesin virtual, gunakan cmdlet **New-AzureRmVMConfig** .
+Untuk mendapatkan mesin virtual yang sudah ada, gunakan cmdlet **Get-AzureRmVM** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -152,7 +152,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Management.Internal.Network.Common.INetworkInterfaceReference, Microsoft.Azure.Commands.Common.Network, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Management.Internal.Network.Common.INetworkInterfaceReference, Microsoft.Azure.Commands.Common.Network, Version=1.0.0.0, Culture=netral, PublicKeyToken=null]]
 
 ### System.Management.Automation.SwitchParameter
 
@@ -164,7 +164,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmVMConfig](./New-AzureRmVMConfig.md)
+[AzureRmVMConfig Baru](./New-AzureRmVMConfig.md)
 
 [Get-AzureRmVM](./Get-AzureRmVM.md)
 

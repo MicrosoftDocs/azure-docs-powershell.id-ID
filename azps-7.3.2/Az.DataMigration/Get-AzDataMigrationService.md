@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/Ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationService.md
-ms.openlocfilehash: f997ac50c9ef45f53edf8f01f2861b4fdf3c9aa9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1a167789e7dab2633e06b8f1efaf146b92d4db4e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140009524"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141894788"
 ---
 # Get-AzDataMigrationService
 
 ## SYNOPSIS
-Mengambil properti yang terkait dengan contoh Layanan Migrasi Database Azure. 
+Mengambil properti yang terkait dengan contoh Azure Database Migration Service. 
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/get-azdatamigrationservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzDataMigrationService [-ResourceGroupName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzDataMigrationService ini mengambil properti yang terkait dengan contoh Layanan Migrasi Database Azure berdasarkan nama Layanan dan nama Grup Sumber Daya Azure sebagai parameter input. 
+Cmdlet Get-AzDataMigrationService mengambil properti yang terkait dengan contoh Azure Database Migration Service berdasarkan nama layanan dan nama Azure Resource Group sebagai parameter input. 
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Cmdlet Get-AzDataMigrationService ini mengambil properti yang terkait dengan con
 PS C:\> Get-AzDataMigrationService -ResourceGroupName testResourceGroup -Name testService
 ```
 
-Contoh di atas mengambil properti contoh Layanan Migrasi Database Azure yang disebut testService. 
+Contoh di atas mengambil properti instans Azure Database Migration Service yang disebut testService. 
 
 ### Contoh 2
 ```
@@ -59,7 +62,7 @@ Contoh di atas mengambil Layanan Migrasi Database Azure dalam grup sumber daya y
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Layanan Migrasi Database.
+Nama Database Migration Service.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-DataMigrationService Resource Id.
+Id Sumber Daya DataMigrationService.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

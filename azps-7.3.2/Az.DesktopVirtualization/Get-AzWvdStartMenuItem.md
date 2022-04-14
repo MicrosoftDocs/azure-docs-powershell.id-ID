@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdStartMenuItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdStartMenuItem.md
-ms.openlocfilehash: 7b746d1ee85d8534c714f40d197f0abccacf6e7b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 07df7360a66a10e240849547020b42d05199a5c3
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140394479"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141893870"
 ---
 # Get-AzWvdStartMenuItem
 
 ## SYNOPSIS
-Item menu mulai daftar dalam grup aplikasi tertentu.
+Daftar item menu mulai dalam grup aplikasi tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/get-azwvdstartmenuitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzWvdStartMenuItem -ApplicationGroupName <String> -ResourceGroupName <String
 ```
 
 ## DESCRIPTION
-Item menu mulai daftar dalam grup aplikasi tertentu.
+Daftar item menu mulai dalam grup aplikasi tertentu.
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ ApplicationGroupName/Disk Cleanup                   Microsoft.DesktopVirtualizat
 ApplicationGroupName/Internet Explorer              Microsoft.DesktopVirtualization/applicationgroups/startmenuitems
 ```
 
-Perintah ini Mencantumkan Windows Item Menu Mulai Desktop Virtual dalam Grup aplikasi.
+Perintah ini Mencantumkan Windows Item Menu Mulai Desktop Virtual dalam Grup Aplikasi.
 
 ## PARAMETERS
 
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

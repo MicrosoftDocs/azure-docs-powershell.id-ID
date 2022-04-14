@@ -5,23 +5,23 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.stora
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Storage/Commands.Management.Storage/help/Get-AzureRmStorageContainerImmutabilityPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Storage/Commands.Management.Storage/help/Get-AzureRmStorageContainerImmutabilityPolicy.md
-ms.openlocfilehash: abf01ec66b08d1b7b2032f1e3c753ec77e355e473fa7a81fcc2bc3ee00b26d0e
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: cff5f387b6729f51634ee0466b099e1df8314589
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140858744"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141773723"
 ---
 # Get-AzureRmStorageContainerImmutabilityPolicy
 
 ## SYNOPSIS
-Mendapatkan ImmutabilityPolicy wadah Storage blob
+Mendapatkan ImmutabilityPolicy dari wadah blob Storage
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
 ## SYNTAX
 
-### Nama Akun (Default)
+### AccountName (Default)
 ```
 Get-AzureRmStorageContainerImmutabilityPolicy [-ResourceGroupName] <String> [-StorageAccountName] <String>
  [-ContainerName] <String> [-Etag <String>] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -40,7 +40,7 @@ Get-AzureRmStorageContainerImmutabilityPolicy -Container <PSContainer> [-Etag <S
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmStorageContainerImmutabilityPolicy** mendapatkan ImmutabilityPolicy penampung Storage blob
+Cmdlet **Get-AzureRmStorageContainerImmutabilityPolicy** mendapatkan ImmutabilityPolicy dari wadah blob Storage
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ Cmdlet **Get-AzureRmStorageContainerImmutabilityPolicy** mendapatkan Immutabilit
 PS C:\>Get-AzureRmStorageContainerImmutabilityPolicy -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer"
 ```
 
-Perintah ini mendapatkan ImmutabilityPolicy dari wadah Storage blob dengan Storage dan nama wadah akun.
+Perintah ini mendapatkan ImmutabilityPolicy dari wadah blob Storage dengan nama akun Storage dan nama kontainer.
 
 ### Contoh 2: Get ImmutabilityPolicy of a Storage blob container with Storage account object and container name
 ```
@@ -57,7 +57,7 @@ PS C:\>$accountObject = Get-AzureRmStorageAccount -ResourceGroupName "myResource
 PS C:\>Get-AzureRmStorageContainerImmutabilityPolicy -StorageAccount $accountObject -ContainerName "myContainer"
 ```
 
-Perintah ini mendapatkan ImmutabilityPolicy pada wadah Storage blob dengan Storage objek akun dan nama wadah.
+Perintah ini mendapatkan ImmutabilityPolicy dari wadah blob Storage dengan objek akun Storage dan nama kontainer.
 
 ### Contoh 3: Get ImmutabilityPolicy of a Storage blob container with Storage container object
 ```
@@ -65,12 +65,12 @@ PS C:\>$containerObject = Get-AzureRmStorageContainer -ResourceGroupName "myReso
 PS C:\>Get-AzureRmStorageContainerImmutabilityPolicy -Container $containerObject 
 ```
 
-Perintah ini mendapatkan ImmutabilityPolicy pada wadah Storage blob dengan Storage wadah objek.
+Perintah ini mendapatkan ImmutabilityPolicy dari wadah blob Storage dengan objek kontainer Storage.
 
 ## PARAMETERS
 
-### -Container
-Storage wadah objek
+### -Kontainer
+objek kontainer Storage
 
 ```yaml
 Type: PSContainer
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -Etag
-Tag kebijakan keterbacaan.
+Etag kebijakan keabadian.
 
 ```yaml
 Type: String
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage objek akun
+objek akun Storage
 
 ```yaml
 Type: PSStorageAccount
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Storage Akun.
+Storage Nama Akun.
 
 ```yaml
 Type: String
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

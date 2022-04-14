@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Enable-AzRecoveryServicesBackupProtection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Enable-AzRecoveryServicesBackupProtection.md
 ms.openlocfilehash: 385b2f3573f191290e99356f79509dd61ac75e68
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140068481"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141797864"
 ---
 # Enable-AzRecoveryServicesBackupProtection
 
 ## SYNOPSIS
-Mengaktifkan pencadangan untuk item dengan kebijakan Proteksi pencadangan tertentu.
+Mengaktifkan pencadangan untuk item dengan kebijakan proteksi Cadangan yang ditentukan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/enable-azrecoveryservicesbackupprotection) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/enable-azrecoveryservicesbackupprotection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +51,7 @@ Enable-AzRecoveryServicesBackupProtection [[-Policy] <PolicyBase>] [-Protectable
  [-VaultId <String>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ModifyProtection
+### Ubah Proteksi
 ```
 Enable-AzRecoveryServicesBackupProtection [[-Policy] <PolicyBase>] [-Item] <ItemBase>
  [-InclusionDisksList <String[]>] [-ExclusionDisksList <String[]>] [-ResetExclusionSettings]
@@ -60,13 +60,13 @@ Enable-AzRecoveryServicesBackupProtection [[-Policy] <PolicyBase>] [-Item] <Item
 ```
 
 ## DESCRIPTION
-Cmdlet **Enable-AzRecoveryServicesBackupProtection** mengaktifkan cadangan dengan mengaitkan kebijakan proteksi dengan item tersebut.
-Jika ID kebijakan tidak ada atau item cadangan tidak terkait dengan kebijakan apa pun, maka perintah ini akan mengharapkan IDkebkaan kebijakan.
-Mengatur konteks vault menggunakan cmdlet Set-AzRecoveryServicesVaultContext cmdlet sebelum Anda menggunakan cmdlet saat ini.
+Cmdlet **Enable-AzRecoveryServicesBackupProtection** memungkinkan pencadangan dengan mengaitkan kebijakan perlindungan dengan item.
+Jika ID kebijakan tidak ada atau item cadangan tidak terkait dengan kebijakan apa pun, maka perintah ini akan mengharapkan ID kebijakan.
+Mengatur konteks kubah menggunakan cmdlet Set-AzRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Mengaktifkan Proteksi cadangan untuk item
+### Contoh 1: Aktifkan proteksi Pencadangan untuk item
 ```powershell
 PS C:\> $Pol = Get-AzRecoveryServicesBackupProtectionPolicy -Name "DefaultPolicy"
 PS C:\> $inclusionDiskLUNS = ("1", "2")
@@ -76,13 +76,13 @@ WorkloadName    Operation        Status          StartTime                  EndT
 co03-vm         ConfigureBackup  Completed       11-Apr-16 12:19:49 PM      11-Apr-16 12:19:54 PM
 ```
 
-Cmdlet pertama mendapatkan objek kebijakan default, lalu menyimpannya di $Pol variabel.
-Cmdlet kedua menentukan LUN disk yang akan dicadangkan dan menyimpannya di $inclusionDiskLUNS variabel.
-Cmdlet ketiga mengatur kebijakan Proteksi cadangan untuk komputer virtual ARM bernama V2VM menggunakan kebijakan dalam $Pol.
+Cmdlet pertama mendapatkan objek kebijakan default, lalu menyimpannya dalam variabel $Pol.
+Cmdlet kedua menentukan LUN disk yang akan dicadangkan dan menyimpannya dalam variabel $inclusionDiskLUNS.
+Cmdlet ketiga mengatur kebijakan perlindungan Cadangan untuk mesin virtual ARM bernama V2VM menggunakan kebijakan dalam $Pol.
 
 ### Contoh 2
 
-Mengaktifkan pencadangan untuk item dengan kebijakan Proteksi pencadangan tertentu. (otomatisgenerated)
+Mengaktifkan pencadangan untuk item dengan kebijakan proteksi Cadangan yang ditentukan. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -92,7 +92,7 @@ Enable-AzRecoveryServicesBackupProtection -Item $Item -Policy $Pol -VaultId $vau
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExcludeAllDataDisks
-Opsi untuk menentukan hanya untuk mencadangkan disk OS
+Opsi untuk menentukan untuk mencadangkan disk OS saja
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExclusionDisksList
-Daftar LUN Disk yang akan dikecualikan dalam pencadangan dan sisanya secara otomatis disertakan.
+Daftar LUN Disk yang akan dikecualikan dalam cadangan dan sisanya secara otomatis disertakan.
 
 ```yaml
 Type: System.String[]
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -InclusionDisksList
-Daftar LUN Disk yang akan disertakan dalam pencadangan dan sisanya secara otomatis dikecualikan kecuali disk OS.
+Daftar LUN Disk yang akan disertakan dalam cadangan dan sisanya secara otomatis dikecualikan kecuali disk OS.
 
 ```yaml
 Type: System.String[]
@@ -152,8 +152,8 @@ Accept wildcard characters: False
 ```
 
 ### -Item
-Menentukan item Cadangan yang memungkinkan proteksi oleh cmdlet ini.
-Untuk mendapatkan **AzureRmRecoveryServicesBackupItem**, gunakan cmdlet Get-AzRecoveryServicesBackupItem cmdlet.
+Menentukan item Cadangan di mana cmdlet ini mengaktifkan proteksi.
+Untuk mendapatkan cmdlet **AzureRmRecoveryServicesBackupItem**, gunakan cmdlet Get-AzRecoveryServicesBackupItem.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ItemBase
@@ -183,8 +183,8 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Menentukan kebijakan proteksi bahwa cmdlet ini terkait dengan item.
-Untuk mendapatkan objek **AzureRmRecoveryServicesBackupProtectionPolicy** , gunakan cmdlet Get-AzRecoveryServicesBackupProtectionPolicy baru.
+Menentukan kebijakan proteksi yang terkait dengan cmdlet ini dengan item.
+Untuk mendapatkan objek **AzureRmRecoveryServicesBackupProtectionPolicy** , gunakan cmdlet Get-AzRecoveryServicesBackupProtectionPolicy.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.PolicyBase
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectableItem
-Menentukan item yang akan dilindungi dengan kebijakan yang diberikan.
+Menentukan item yang akan dilindungi dengan kebijakan tertentu.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ProtectableItemBase
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResetExclusionSettings
-Menentukan untuk mengatur ulang pengaturan pengecualian disk yang terkait dengan item
+Menentukan untuk mereset pengaturan pengecualian disk yang terkait dengan item
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -245,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Cloud Service Name untuk Azure Classic Compute VM.
+Nama Layanan Awan untuk Azure Classic Compute VM.
 
 ```yaml
 Type: System.String
@@ -275,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -290,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -320,7 +320,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

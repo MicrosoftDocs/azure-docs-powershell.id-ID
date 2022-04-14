@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Update-AzKustoCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Update-AzKustoCluster.md
 ms.openlocfilehash: 135a7f0f0a7ac729c7775befff61cf69721977ce
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140309614"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141866336"
 ---
 # Update-AzKustoCluster
 
 ## SYNOPSIS
-Memperbarui kluster Kusto.
+Memperbarui klaster Kusto.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.kusto/update-azkustocluster) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.kusto/update-azkustocluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,11 +53,11 @@ Update-AzKustoCluster -InputObject <IKustoIdentity> [-IfMatch <String>] [-Enable
 ```
 
 ## DESCRIPTION
-Memperbarui kluster Kusto.
+Memperbarui klaster Kusto.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui kluster yang ada berdasarkan nama
+### Contoh 1: Memperbarui klaster yang sudah ada menurut nama
 ```powershell
 PS C:\> Update-AzKustoCluster -ResourceGroupName testrg -Name testnewkustocluster -SkuName Standard_D12_v2 -SkuTier Standard -EngineType 'V2'
 
@@ -66,9 +66,9 @@ Location Name                Type                     Zone
 East US  testnewkustocluster Microsoft.Kusto/Clusters
 ```
 
-Perintah di atas memperbarui sku kluster Kusto "testnewkustocluster" yang ditemukan dalam grup sumber daya "testrg".
+Perintah di atas memperbarui sku klaster Kusto "testnewkustocluster" yang ditemukan dalam grup sumber daya "testrg".
 
-### Contoh 2: Memperbarui kluster berdasarkan nama yang sudah ada
+### Contoh 2: Memperbarui klaster yang sudah ada berdasarkan nama
 ```powershell
 PS C:\> Update-AzKustoCluster -ResourceGroupName testrg -Name testnewkustocluster -KeyVaultPropertyKeyName "TestKey" -KeyVaultPropertyKeyVaultUri "https://testpskeyvault.vault.azure.net" -KeyVaultPropertyKeyVersion "4bd66f0e0d7c403fac80305e0355d982"
 
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableStreamingIngest
-Nilai boolean yang menunjukkan jika streaming yang paling aktif.
+Nilai boolean yang menunjukkan jika penyetelan streaming diaktifkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 
 ### -IdentityType
 Tipe identitas terkelola yang digunakan.
-Tipe 'SystemAssigned, UserAssigned' menyertakan identitas yang dibuat secara implisit dan kumpulan identitas yang ditetapkan pengguna.
+Tipe 'SystemAssigned, UserAssigned' mencakup identitas yang dibuat secara implisit dan sekumpulan identitas yang ditetapkan pengguna.
 Tipe 'Tidak Ada' akan menghapus semua identitas.
 
 ```yaml
@@ -204,8 +204,8 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityUserAssignedIdentity
-Daftar identitas pengguna yang terkait dengan kluster Kusto.
-Referensi kunci kamus identitas pengguna akan menjadi ID sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}'.
+Daftar identitas pengguna yang terkait dengan klaster Kusto.
+Referensi kunci kamus identitas pengguna akan berupa id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}'.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -220,9 +220,9 @@ Accept wildcard characters: False
 ```
 
 ### -IfMatch
-ETag kluster.
-Menghilangkan nilai ini agar selalu menimpa kluster saat ini.
-Tentukan nilai ETag yang terakhir dilihat untuk mencegah secara tidak sengaja menimpa perubahan bersama.
+ETag dari kluster.
+Hilangkan nilai ini untuk selalu menimpa kluster saat ini.
+Tentukan nilai ETag yang terakhir terlihat untuk mencegah timpa perubahan bersamaan secara tidak sengaja.
 
 ```yaml
 Type: System.String
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Kusto.Models.IKustoIdentity
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultPropertyKeyName
-Nama kunci vault.
+Nama kunci kubah kunci.
 
 ```yaml
 Type: System.String
@@ -267,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultPropertyKeyVaultUri
-Uri dari kunci vault.
+Uri kubah kunci.
 
 ```yaml
 Type: System.String
@@ -282,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultPropertyKeyVersion
-Versi kunci vault.
+Versi kunci kubah kunci.
 
 ```yaml
 Type: System.String
@@ -297,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultPropertyUserIdentity
-Identitas yang ditetapkan pengguna (ID sumber daya ARM) yang memiliki akses ke kunci.
+User assigned identity (ARM resource id) yang memiliki akses ke key.
 
 ```yaml
 Type: System.String
@@ -327,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama kluster Kusto.
+Nama klaster Kusto.
 
 ```yaml
 Type: System.String
@@ -342,7 +342,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -357,7 +357,7 @@ Accept wildcard characters: False
 ```
 
 ### -OptimizedAutoscaleIsEnabled
-Nilai boolean yang mengindikasikan apakah fitur skala otomatis yang dioptimalkan diaktifkan atau tidak.
+Nilai boolean yang menunjukkan apakah fitur skala otomatis yang dioptimalkan diaktifkan atau tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -372,7 +372,7 @@ Accept wildcard characters: False
 ```
 
 ### -OptimizedAutoscaleMaximum
-Jumlah maksimum yang diperbolehkan.
+Jumlah instans maksimum yang diperbolehkan.
 
 ```yaml
 Type: System.Int32
@@ -417,7 +417,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi kluster Kusto.
+Nama grup sumber daya yang berisi klaster Kusto.
 
 ```yaml
 Type: System.String
@@ -462,7 +462,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuTier
-SKU tier.
+Tingkat SKU.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Kusto.Support.AzureSkuTier
@@ -477,8 +477,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -569,7 +569,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -585,7 +585,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -600,15 +600,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Kusto.Models.IKustoIdentity
+### Microsoft.Azure.PowerShell.Cmdlets. Kusto. Models.IKustoIdentity
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Kusto.Models.Api202101.ICluster
+### Microsoft.Azure.PowerShell.Cmdlets. Kusto. Models.Api202101.ICluster
 
 ## CATATAN
 
@@ -621,16 +621,16 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IKustoIdentity>: Parameter Identitas
   - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database yang dilampirkan.
-  - `[ClusterName <String>]`: Nama kluster Kusto.
+  - `[ClusterName <String>]`: Nama klaster Kusto.
   - `[DataConnectionName <String>]`: Nama koneksi data.
-  - `[DatabaseName <String>]`: Nama database dalam kluster Kusto.
+  - `[DatabaseName <String>]`: Nama database dalam klaster Kusto.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama lokasi Azure (kawasan).
-  - `[OperationId <String>]`: Guid ID operasi
-  - `[PrincipalAssignmentName <String>]`: Nama principalAssignment Kusto.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi kluster Kusto.
+  - `[OperationId <String>]`: Guid of the operation ID
+  - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi klaster Kusto.
   - `[ScriptName <String>]`: Nama skrip database Kusto.
-  - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 TRUSTEDEXTERNALTENANT <ITrustedExternalTenant[]>: Penyewa eksternal kluster.
   - `[Value <String>]`: GUID mewakili penyewa eksternal.

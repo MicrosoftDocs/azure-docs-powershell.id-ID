@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.batch
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Set-AzureBatchPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Set-AzureBatchPool.md
-ms.openlocfilehash: 9c6fcdf6bc15cd89267ea3feaa618d92eac8d346e7597984b703c6eb9f838579
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: c0f1dc4972e3b71dce74bffb7a72e782774a2734
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418997"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141844520"
 ---
 # Set-AzureBatchPool
 
@@ -28,13 +28,13 @@ Set-AzureBatchPool [-Pool] <PSCloudPool> -BatchContext <BatchAccountContext>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureBatchPool** memperbarui properti kumpulan di layanan Azure Batch.
-Gunakan cmdlet Get-AzureBatchPool untuk mendapatkan objek **PSCloudPool.**
-Modifikasi properti objek itu, lalu gunakan cmdlet saat ini untuk melakukan perubahan Anda ke layanan Batch.
+Cmdlet **Set-AzureBatchPool** memperbarui properti kolam dalam layanan Azure Batch.
+Gunakan cmdlet Get-AzureBatchPool untuk mendapatkan objek **PSCloudPool** .
+Ubah properti objek tersebut, lalu gunakan cmdlet saat ini untuk melakukan perubahan Pada layanan Batch.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui pool
+### Contoh 1: Memperbarui kumpulan
 ```
 PS C:\>$Pool = Get-AzureBatchPool "ContosoPool" -BatchContext $Context
 PS C:\> $StartTask = New-Object Microsoft.Azure.Commands.Batch.Models.PSStartTask
@@ -43,15 +43,15 @@ PS C:\> $Pool.StartTask = $StartTask
 PS C:\> Set-AzureBatchPool -Pool $Pool -BatchContext $Context
 ```
 
-Perintah pertama mendapatkan kolam renang dengan menggunakan **Get-AzureBatchPool,** lalu menyimpannya di $Pool baru.
-Tiga perintah berikutnya memodifikasi spesifikasi mulai tugas pada $Pool baru.
-Perintah terakhir memperbarui layanan Kumpulan agar sesuai dengan objek lokal di $Pool.
+Perintah pertama mendapatkan kumpulan menggunakan **Get-AzureBatchPool**, lalu menyimpannya dalam variabel $Pool.
+Tiga perintah berikutnya mengubah spesifikasi tugas mulai pada objek $Pool.
+Perintah akhir memperbarui layanan Batch agar sesuai dengan objek lokal di $Pool.
 
 ## PARAMETERS
 
 ### -BatchContext
-Menentukan contoh **BatchAccountContext** yang digunakan cmdlet untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -80,8 +80,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pool
-Menentukan **PSCloudPool tempat** cmdlet ini memperbarui layanan Kumpulan.
+### -Kolam Renang
+Menentukan **PSCloudPool** tempat cmdlet ini memperbarui layanan Batch.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSCloudPool
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -118,10 +118,10 @@ Parameter: BatchContext (ByValue)
 
 [Get-AzureRmBatchAccountKeys](./Get-AzureRmBatchAccountKeys.md)
 
-[New-AzureBatchPool](./New-AzureBatchPool.md)
+[AzureBatchPool Baru](./New-AzureBatchPool.md)
 
-[Remove-AzureBatchPool](./Remove-AzureBatchPool.md)
+[Hapus-AzureBatchPool](./Remove-AzureBatchPool.md)
 
-[Cmdlet Kumpulan Azure](./AzureRM.Batch.md)
+[Cmdlet Azure Batch](./AzureRM.Batch.md)
 
 
