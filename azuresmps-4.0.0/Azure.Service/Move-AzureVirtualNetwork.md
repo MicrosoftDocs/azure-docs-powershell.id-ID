@@ -4,16 +4,16 @@ ms.assetid: 2B0CC65A-0A73-4FFE-BF7C-B148871909D9
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 4c400a39615bddfd02f21d82fd46b0a281b95fba
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427506"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141921024"
 ---
 # Move-AzureVirtualNetwork
 
 ## SYNOPSIS
-Memigrasikan jaringan virtual ke tumpukan Azure Resource Manager.
+Melakukan migrasi jaringan virtual ke tumpukan Resource Manager Azure.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -57,26 +57,26 @@ Cmdlet **Move-AzureVirtualNetwork** memigrasikan jaringan virtual ke grup sumber
 PS C:\> Move-AzureVirtualNetwork -Prepare -VirtualNetworkName "ContosoVNET"
 ```
 
-Perintah ini menyiapkan jaringan virtual bernama ContosoVNET untuk migrasi ke tumpukan Azure Resource Manager.
+Perintah ini menyiapkan jaringan virtual bernama ContosoVNET untuk migrasi ke tumpukan Resource Manager Azure.
 
 ### Contoh 2: Mulai migrasi jaringan virtual
 ```
 PS C:\> Move-AzureVirtualNetwork -Commit -VirtualNetworkName "ContosoVNET"
 ```
 
-Perintah ini memulai migrasi jaringan virtual bernama ContosoVNET ke tumpukan Azure Resource Manager.
+Perintah ini memulai migrasi jaringan virtual bernama ContosoVNET ke tumpukan Resource Manager Azure.
 
-### Contoh 3: Memvalidasi migrasi jaringan virtual
+### Contoh 3: Validasi migrasi jaringan virtual
 ```
 PS C:\> Move-AzureVirtualNetwork -Validate -VirtualNetworkName "ContosoVNET"
 ```
 
-Perintah ini memvalidasi migrasi untuk jaringan virtual yang bernama ContosoVNET ke tumpukan Azure Resource Manager.
+Perintah ini memvalidasi migrasi untuk jaringan virtual bernama ContosoVNET ke tumpukan Resource Manager Azure.
 
 ## PARAMETERS
 
 ### -Batalkan
-Mengindikasikan bahwa cmdlet ini membatalkan migrasi jaringan virtual.
+Menunjukkan bahwa cmdlet ini membatalkan migrasi jaringan virtual.
 
 ```yaml
 Type: SwitchParameter
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -Commit
-Mengindikasikan bahwa cmdlet ini memulai migrasi jaringan virtual.
+Menunjukkan bahwa cmdlet ini memulai migrasi jaringan virtual.
 
 ```yaml
 Type: SwitchParameter
@@ -106,16 +106,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -144,8 +144,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Prepare
-Mengindikasikan bahwa cmdlet ini mempersiapkan jaringan virtual untuk migrasi.
+### -Persiapan
+Menunjukkan bahwa cmdlet ini mempersiapkan jaringan virtual untuk migrasi.
 
 ```yaml
 Type: SwitchParameter
@@ -160,8 +160,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -175,8 +175,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Validate
-Tentukan bahwa cmdlet ini memvalidasi jaringan virtual untuk migrasi.
+### -Validasi
+Menentukan bahwa cmdlet ini memvalidasi jaringan virtual untuk migrasi.
 
 ```yaml
 Type: SwitchParameter
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkName
-Nama Jaringan Virtual untuk dimigrasikan
+Nama Virtual Network untuk dimigrasi
 
 ```yaml
 Type: String
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -247,13 +247,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Move-AzureNetworkSecurityGroup](./Move-AzureNetworkSecurityGroup.md)
+[Pindahkan-AzureNetworkSecurityGroup](./Move-AzureNetworkSecurityGroup.md)
 
-[Move-AzureReservedIP](./Move-AzureReservedIP.md)
+[Pindahkan-AzureReservedIP](./Move-AzureReservedIP.md)
 
-[Move-AzureRouteTable](./Move-AzureRouteTable.md)
+[Pindahkan-AzureRouteTable](./Move-AzureRouteTable.md)
 
-[Move-AzureService](./Move-AzureService.md)
+[Pindahkan-AzureService](./Move-AzureService.md)
 
 [Move-AzureStorageAccount](./Move-AzureStorageAccount.md)
 

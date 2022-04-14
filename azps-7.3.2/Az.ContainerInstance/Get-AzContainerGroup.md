@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.containerinstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Get-AzContainerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Get-AzContainerGroup.md
-ms.openlocfilehash: 79fa23396d4f2cad52d0396df832f38f5c09a060
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 024ff70465458fba72afca7a4c7268ebde99968d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140180105"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142114433"
 ---
 # Get-AzContainerGroup
 
 ## SYNOPSIS
-Mendapatkan properti grup wadah yang ditentukan dalam langganan dan grup sumber daya yang ditentukan.
-Operasi mengembalikan properti setiap grup wadah termasuk wadah, kredensial registri gambar, kebijakan mulai ulang, tipe alamat IP, tipe OS, status, dan volume.
+Mendapatkan properti grup kontainer yang ditentukan dalam grup sumber daya dan langganan tertentu.
+Operasi mengembalikan properti dari setiap grup kontainer termasuk wadah, kredensial registri gambar, kebijakan mulai ulang, tipe alamat IP, tipe OS, status, dan volume.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.containerinstance/get-azcontainergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Operasi mengembalikan properti setiap grup wadah termasuk wadah, kredensial regi
 Get-AzContainerGroup [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzContainerGroup -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -44,12 +47,12 @@ Get-AzContainerGroup -ResourceGroupName <String> [-SubscriptionId <String[]>] [-
 ```
 
 ## DESCRIPTION
-Mendapatkan properti grup wadah yang ditentukan dalam langganan dan grup sumber daya yang ditentukan.
-Operasi mengembalikan properti setiap grup wadah termasuk wadah, kredensial registri gambar, kebijakan mulai ulang, tipe alamat IP, tipe OS, status, dan volume.
+Mendapatkan properti grup kontainer yang ditentukan dalam grup sumber daya dan langganan tertentu.
+Operasi mengembalikan properti dari setiap grup kontainer termasuk wadah, kredensial registri gambar, kebijakan mulai ulang, tipe alamat IP, tipe OS, status, dan volume.
 
 ## EXAMPLES
 
-### Contoh 1:  List all container groups in the current subscription
+### Contoh 1: Mencantumkan semua grup kontainer dalam langganan saat ini
 ```powershell
 Get-AzContainerGroup
 ```
@@ -61,9 +64,9 @@ eastus   test-cg1      test-rg
 eastus   test-cg2      test-rg
 ```
 
-Perintah ini mendapatkan semua grup wadah dalam langganan saat ini.
+Perintah ini mendapatkan semua grup kontainer dalam langganan saat ini.
 
-### Contoh 2: Mendapatkan grup wadah tertentu
+### Contoh 2: Mendapatkan grup kontainer tertentu
 ```powershell
 Get-AzContainerGroup -Name test-cg1 -ResourceGroupName test-rg | fl
 ```
@@ -119,9 +122,9 @@ Type                           : Microsoft.ContainerInstance/containerGroups
 Volume                         :
 ```
 
-Perintah mendapatkan grup wadah yang ditentukan.
+Perintah akan mendapatkan grup kontainer yang ditentukan.
 
-### Contoh 3: Dapatkan grup wadah dalam grup sumber daya
+### Contoh 3: Mendapatkan grup kontainer dalam grup sumber daya
 ```powershell
 Get-AzContainerGroup -ResourceGroupName test-rg
 ```
@@ -133,9 +136,9 @@ eastus   test-cg1      test-rg
 eastus   test-cg2      test-rg
 ```
 
-Perintah tersebut mendapatkan grup wadah dalam grup sumber daya `test-rg`.
+Perintah mendapatkan grup kontainer dalam grup `test-rg`sumber daya .
 
-### Contoh 4: Dapatkan grup wadah dengan pemipaan
+### Contoh 4: Dapatkan grup kontainer dengan piping
 ```powershell
 Update-AzContainerGroup -Name test-cg1 -ResourceGroupName test-rg -Tag @{"test"="value"} | Get-AzContainerGroup
 ```
@@ -146,7 +149,7 @@ Location Name    Zone ResourceGroupName
 eastus   test-cg1      test-rg
 ```
 
-Perintah mendapatkan grup wadah yang diperbarui dengan pemipaan.
+Perintah mendapatkan grup kontainer yang diperbarui dengan pipa.
 
 ## PARAMETERS
 
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.IContainerInstanceIdentity
@@ -211,8 +214,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -227,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -248,11 +251,11 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IContainerInstanceIdentity>: Parameter Identitas
   - `[ContainerGroupName <String>]`: Nama grup wadah.
-  - `[ContainerName <String>]`: Contoh nama wadah.
+  - `[ContainerName <String>]`: Nama instans kontainer.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Pengidentifikasi untuk lokasi azure fisik.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

@@ -4,11 +4,11 @@ ms.assetid: 1999C880-F8F9-4CED-91A9-33E9BBDFE27D
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 5424be7a8c939f85edb7a621803ddc599d7ed2e7
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427471"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141920433"
 ---
 # New-AzureVM
 
@@ -38,23 +38,23 @@ New-AzureVM -ServiceName <String> [-Location <String>] [-AffinityGroup <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureVM** menambahkan mesin virtual baru ke layanan Azure yang sudah ada, atau membuat  mesin dan layanan virtual dalam langganan saat ini jika Lokasi atau *AffinityGroup* ditentukan.
+Cmdlet **AzureVM Baru** menambahkan mesin virtual baru ke layanan Azure yang sudah ada, atau membuat mesin virtual dan layanan dalam langganan saat ini jika *Lokasi* atau *AffinityGroup* ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat mesin virtual untuk Windows lokal
+### Contoh 1: Membuat mesin virtual untuk konfigurasi Windows
 ```
 PS C:\> New-AzureVMConfig -Name "VirtualMachine07" -InstanceSize ExtraSmall -ImageName (Get-AzureVMImage)[4].ImageName | Add-AzureProvisioningConfig -Windows -Password $adminPassword -AdminUsername PsTestAdmin | New-AzureVM -ServiceName "ContosoService" -AffinityGroup "Contoso" -WaitForBoot
 ```
 
-Perintah ini akan membuat konfigurasi pengadaan berdasarkan konfigurasi mesin virtual untuk sistem operasi Windows, dan menggunakannya untuk membuat mesin virtual dalam grup afiliasi yang ditentukan.
+Perintah ini membuat konfigurasi penyediaan berdasarkan konfigurasi mesin virtual untuk sistem operasi Windows, dan menggunakannya untuk membuat mesin virtual dalam grup affinity tertentu.
 
 ### Contoh 2: Membuat mesin virtual untuk konfigurasi Linux
 ```
 PS C:\> New-AzureVMConfig -Name "SUSEVM02" -InstanceSize ExtraSmall -ImageName (Get-AzureVMImage)[7].ImageName | Add-AzureProvisioningConfig -Linux -LinuxUser "RootMain" -Password "password" -AdminUsername PsTestAdmin | New-AzureVM
 ```
 
-Perintah ini akan membuat konfigurasi pengadaan berdasarkan konfigurasi mesin virtual untuk Linux, dan menggunakannya untuk membuat mesin virtual dalam grup afiliasi yang ditentukan.
+Perintah ini membuat konfigurasi penyediaan berdasarkan konfigurasi mesin virtual untuk Linux, dan menggunakannya untuk membuat mesin virtual dalam grup affinity yang ditentukan.
 
 ### Contoh 3: Membuat mesin virtual dan menambahkan disk data
 ```
@@ -63,21 +63,21 @@ PS C:\> $Image = $Images[4]
 PS C:\> $VirtualMachine02 = New-AzureVMConfig -Name "VirtualMachine02" -InstanceSize ExtraSmall -ImageName $myImage.ImageName | Add-AzureProvisioningConfig -Windows -Password "password" | Add-AzureDataDisk -CreateNew -DiskSizeInGB 50 -DiskLabel "DataDisk50" -LUN 0
 ```
 
-Dua perintah pertama akan mendapatkan gambar yang tersedia menggunakan cmdlet **Get-AzureVMImage,** dan menyimpan salah satunya dalam $Image variabel.
+Dua perintah pertama mendapatkan gambar yang tersedia dengan menggunakan cmdlet **Get-AzureVMImage** , dan menyimpan salah satunya dalam variabel $Image.
 
-Perintah ini membuat konfigurasi penyediaan berdasarkan konfigurasi mesin virtual untuk sistem Windows, dan menggunakannya untuk membuat mesin virtual dengan disk data Azure.
+Perintah ini membuat konfigurasi penyediaan berdasarkan konfigurasi mesin virtual untuk sistem operasi Windows, dan menggunakannya untuk membuat mesin virtual dengan disk data Azure.
 
 ### Contoh 4: Membuat mesin virtual dengan alamat IP khusus
 ```
 PS C:\> New-AzureVMConfig -Name "VirtualMachine06" -InstanceSize ExtraSmall -ImageName (Get-AzureVMImage)[4].ImageName | Add-AzureProvisioningConfig -Windows -Password $adminPassword -AdminUsername "AdminMain" | New-AzureVM -ServiceName "ContosoService02" -AffinityGroup "Contoso" -ReservedIPName $ipName
 ```
 
-Perintah ini akan membuat konfigurasi penyediaan berdasarkan konfigurasi mesin virtual untuk sistem operasi Windows, dan menggunakannya untuk membuat mesin virtual dengan alamat IP khusus.
+Perintah ini membuat konfigurasi penyediaan berdasarkan konfigurasi mesin virtual untuk sistem operasi Windows, dan menggunakannya untuk membuat mesin virtual dengan alamat IP khusus.
 
 ## PARAMETERS
 
 ### -AffinityGroup
-Menentukan grup azure afiliasi di mana layanan awan berada.
+Menentukan grup affinity Azure tempat layanan awan berada.
 Parameter ini hanya diperlukan ketika cmdlet ini membuat layanan awan.
 
 ```yaml
@@ -139,16 +139,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -InternalLoadBalancerConfig
-Menentukan penyeimbang muat internal.
+Menentukan penyeimbang muatan internal.
 Parameter ini tidak digunakan.
 
 ```yaml
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi yang meng host layanan baru.
+Menentukan lokasi yang menjadi host layanan baru.
 Jika layanan sudah ada, jangan tentukan parameter ini.
 
 ```yaml
@@ -210,8 +210,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -241,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReverseDnsFqdn
-Menentukan nama domain yang sepenuhnya memenuhi syarat untuk DNS terbalik.
+Menentukan nama domain yang sepenuhnya memenuhi syarat untuk membalik DNS.
 
 ```yaml
 Type: String
@@ -288,10 +288,10 @@ Accept wildcard characters: False
 ### -ServiceName
 Menentukan nama layanan baru atau yang sudah ada.
 
-Jika layanan tidak ada, cmdlet ini akan membuatnya untuk Anda.
-Gunakan parameter *Location* atau *AffinityGroup* untuk menentukan tempat membuat layanan.
+Jika layanan tidak ada, cmdlet ini membuatnya untuk Anda.
+Gunakan parameter *Lokasi* atau *AffinityGroup* untuk menentukan tempat untuk membuat layanan.
 
-Jika layanan ada, *parameter Location* atau *AffinityGroup* tidak diperlukan.
+Jika layanan ada, parameter *Lokasi* atau *AffinityGroup* tidak diperlukan.
 
 ```yaml
 Type: String
@@ -305,7 +305,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -VM
+### -VMs
 Menentukan daftar objek mesin virtual untuk dibuat.
 
 ```yaml
@@ -321,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### -VNetName
-Menentukan nama jaringan virtual tempat cmdlet menggunakan komputer virtual.
+Menentukan nama jaringan virtual tempat cmdlet ini menyebarkan mesin virtual.
 
 ```yaml
 Type: String
@@ -336,8 +336,8 @@ Accept wildcard characters: False
 ```
 
 ### -WaitForBoot
-Menentukan bahwa cmdlet ini menunggu mesin virtual untuk mencapai status **ReadyRole.**
-Cmdlet ini gagal jika mesin virtual berada di salah satu kondisi berikut ini saat menunggu: FailedStartingVM, ProvisioningFailed, ProvisioningTimeout.
+Menentukan bahwa cmdlet ini menunggu mesin virtual mencapai status **ReadyRole** .
+Cmdlet ini gagal jika mesin virtual jatuh di salah satu status berikut saat menunggu: FailedStartingVM, ProvisioningFailed, ProvisioningTimeout.
 
 ```yaml
 Type: SwitchParameter
@@ -352,7 +352,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -368,6 +368,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureVMImage](./Get-AzureVMImage.md)
 
-[New-AzureVMConfig](./New-AzureVMConfig.md)
+[AzureVMConfig baru](./New-AzureVMConfig.md)
 
 

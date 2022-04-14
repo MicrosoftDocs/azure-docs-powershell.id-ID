@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorWafCustomRuleObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorWafCustomRuleObject.md
 ms.openlocfilehash: a4f733374f00791748c2a3d7288ad6b7abe8773a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139976181"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142050779"
 ---
 # New-AzFrontDoorWafCustomRuleObject
 
 ## SYNOPSIS
-Membuat Objek CustomRule untuk pembuatan kebijakan WAF
+Buat Objek CustomRule untuk pembuatan kebijakan WAF
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorwafcustomruleobject) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorwafcustomruleobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-AzFrontDoorWafCustomRuleObject -Name <String> -RuleType <String> -MatchCondi
 ```
 
 ## DESCRIPTION
-Membuat Objek CustomRule untuk pembuatan kebijakan WAF
+Buat Objek CustomRule untuk pembuatan kebijakan WAF
 
 ## EXAMPLES
 
@@ -48,7 +48,7 @@ Membuat Objek CustomRule
 
 ### -Tindakan
 Tipe Tindakan.
-Kemungkinan nilai termasuk: 'Perbolehkan', 'Blokir', 'Log'
+Nilai yang mungkin termasuk: 'Izinkan', 'Blokir', 'Log'
 
 ```yaml
 Type: System.String
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnabledState
-Status Aktif. Nilai yang mungkin disertakan: 'Diaktifkan', 'Dinonaktifkan'.
+Status Diaktifkan. Nilai yang memungkinkan termasuk: 'Diaktifkan', 'Dinonaktifkan'.
 
 ```yaml
 Type: System.String
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -MatchCondition
-Daftar kondisi yang cocok.
+Daftar kondisi kecocokan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSMatchCondition[]
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -RateLimitDurationInMinutes
-Durasi batas suku bunga. Default - 1 menit
+Durasi batas tarif. Default - 1 menit
 
 ```yaml
 Type: System.Int32
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 
 ### -RuleType
 Tipe aturan.
-Kemungkinan nilai termasuk: 'MatchRule', 'RateLimitRule'
+Nilai yang memungkinkan termasuk: 'MatchRule', 'RateLimitRule'
 
 ```yaml
 Type: System.String
@@ -184,11 +184,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

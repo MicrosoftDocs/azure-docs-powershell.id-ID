@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseTriggerRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseTriggerRun.md
 ms.openlocfilehash: 3b9b23051e93bb951be631c2e615b4ababa394fe
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140064917"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141901809"
 ---
 # Get-AzSynapseTriggerRun
 
@@ -18,7 +18,7 @@ ms.locfileid: "140064917"
 Mengembalikan informasi tentang pemicu yang dijalankan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapsetriggerrun) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsetriggerrun) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-AzSynapseTriggerRun -WorkspaceObject <PSSynapseWorkspace> -Name <String> -Ru
 ```
 
 ## DESCRIPTION
-Perintah **Get-AzSynapseTriggerRun mengembalikan** informasi mendetail tentang pemicu yang dijalankan untuk pemicu yang ditentukan dalam jangka waktu yang ditentukan.
+Perintah **Get-AzSynapseTriggerRun** mengembalikan informasi mendetail tentang pemicu yang dijalankan untuk pemicu tertentu dalam jangka waktu tertentu.
 
 ## EXAMPLES
 
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunStartedAfter
-Waktu pada atau setelahnya acara jalankan diperbarui dalam format 'ISO 8601'.
+Waktu pada atau setelah acara jalankan diperbarui dalam format 'ISO 8601'.
 
 ```yaml
 Type: System.DateTimeOffset
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunStartedBefore
-Waktu pada atau sebelum acara yang dijalankan diperbarui dalam format 'ISO 8601'.
+Waktu pada atau sebelum acara jalankan diperbarui dalam format 'ISO 8601'.
 
 ```yaml
 Type: System.DateTimeOffset
@@ -116,7 +116,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

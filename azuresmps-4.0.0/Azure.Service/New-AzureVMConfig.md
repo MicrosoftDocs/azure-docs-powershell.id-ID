@@ -4,11 +4,11 @@ ms.assetid: C6DFD49F-26A5-4199-A844-CA0FC405BEDC
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: c6553251be36c32ecf455760e43c7a1c7e8fe5b2
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427469"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141920366"
 ---
 # New-AzureVMConfig
 
@@ -19,7 +19,7 @@ Membuat objek konfigurasi mesin virtual Azure.
 
 ## SYNTAX
 
-### ImageName (Default)
+### NamaGambar (Default)
 ```
 New-AzureVMConfig [-Name] <String> [-InstanceSize] <String> [[-HostCaching] <String>]
  [[-AvailabilitySetName] <String>] [[-Label] <String>] [-ImageName] <String> [[-MediaLocation] <String>]
@@ -41,14 +41,14 @@ Anda dapat menggunakan objek ini untuk melakukan penyebaran baru dan menambahkan
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Windows konfigurasi mesin virtual
+### Contoh 1: Membuat konfigurasi mesin virtual Windows
 ```
 PS C:\> $Image = (Get-AzureVMImage)[4].ImageName 
 C:\PS> New-AzureVMConfig -Name "MyVM1" -InstanceSize ExtraSmall -ImageName $Image | Add-AzureProvisioningConfig -Windows -Password $AdminPassword | Add-AzureDataDisk -CreateNew -DiskSizeInGB 50 -DiskLabel "Datadisk1" -LUN 0 | New-AzureVM -ServiceName "MySvc1"
 ```
 
-Perintah ini akan membuat Windows mesin virtual dengan disk sistem operasi, disk data, dan konfigurasi penyediaan.
-Konfigurasi ini lalu digunakan untuk membuat mesin virtual baru.
+Perintah ini membuat konfigurasi mesin virtual Windows dengan disk sistem operasi, disk data, dan konfigurasi penyediaan.
+Konfigurasi ini kemudian digunakan untuk membuat mesin virtual baru.
 
 ### Contoh 2: Membuat konfigurasi mesin virtual Linux
 ```
@@ -56,8 +56,8 @@ PS C:\> $Image = (Get-AzureVMImage)[7].ImageName
 C:\PS> New-AzureVMConfig -Name "MyVM1" -InstanceSize ExtraSmall -ImageName $Image | Add-AzureProvisioningConfig -Linux -LinuxUser $LinuxUser -Password $AdminPassword | Add-AzureDataDisk -CreateNew -DiskSizeInGB 50 -DiskLabel "Datadisk1" -LUN 0 | New-AzureVM -ServiceName "MySvc1"
 ```
 
-Perintah ini akan membuat konfigurasi mesin virtual Linux baru dengan disk sistem operasi, disk data, dan konfigurasi penyediaan.
-Konfigurasi ini lalu digunakan untuk membuat mesin virtual baru.
+Perintah ini membuat konfigurasi mesin virtual Linux baru dengan disk sistem operasi, disk data, dan konfigurasi penyediaan.
+Konfigurasi ini kemudian digunakan untuk membuat mesin virtual baru.
 
 ## PARAMETERS
 
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 
 ### -DisableBootDiagnostics
 Menunjukkan bahwa konfigurasi menonaktifkan diagnostik boot.
-Secara default, diagnostik boot diaktifkan di komputer virtual.
+Secara default, diagnostik boot diaktifkan di mesin virtual.
 
 ```yaml
 Type: SwitchParameter
@@ -123,9 +123,9 @@ Accept wildcard characters: False
 ```
 
 ### -HostCaching
-Menentukan mode host cache untuk disk sistem operasi.
+Menentukan mode cache host untuk disk sistem operasi.
 
-Nilai valid adalah:
+Nilai yang valid adalah:
 
 - ReadOnly
 - ReadWrite
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImageName
-Menentukan nama gambar mesin virtual yang akan digunakan untuk disk sistem operasi.
+Menentukan nama citra mesin maya yang akan digunakan untuk disk sistem operasi.
 
 ```yaml
 Type: String
@@ -158,16 +158,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -196,14 +196,14 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -InstanceSize
+### -Instancesize
 Menentukan ukuran instans.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - ExtraSmall
 - Kecil
-- Sedang
+- Menengah
 - Besar
 - ExtraLarge
 - A5
@@ -238,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -Label
-Menentukan label untuk ditetapkan ke mesin virtual.
+Menentukan label untuk ditetapkan ke mesin maya.
 
 ```yaml
 Type: String
@@ -259,7 +259,7 @@ Nilai yang dapat diterima untuk parameter ini adalah:
 - Windows_Client
 - Windows_Server 
 
-Tentukan parameter ini hanya untuk gambar yang berisi Windows sistem operasi Server.
+Tentukan parameter ini hanya untuk gambar yang berisi sistem operasi Windows Server.
 
 ```yaml
 Type: String
@@ -273,7 +273,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -MediaLocation
+### -MediaLokasi
 Menentukan lokasi penyimpanan Azure untuk disk mesin virtual baru.
 
 ```yaml
@@ -304,8 +304,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -320,7 +320,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -4,12 +4,12 @@ Module Name: AzureRM.WebSites
 ms.assetid: BFC38930-DBB4-4EBB-8E29-73B901FAF486
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.websites/edit-azurermwebappbackupconfiguration
 schema: 2.0.0
-ms.openlocfilehash: 41dd99bf610d7720b3e554f4db54ee36844bb74ce136ae6d62a257116bb8e011
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 9a90e56909de016bb388be1a43f5b41c8e47e9e8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416438"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142103372"
 ---
 # Edit-AzureRmWebAppBackupConfiguration
 
@@ -42,7 +42,7 @@ Cmdlet **Edit-AzureRmWebAppBackupConfiguration** mengedit cadangan konfigurasi s
 
 ## PARAMETERS
 
-### -Database
+### -Databases
 Database tipe DatabaseBackupSetting[]
 
 ```yaml
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrequencyUnit
-Frequency Unit
+Satuan Frekuensi
 
 ```yaml
 Type: String
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeepAtLeastOneBackup
-Opsi Simpan Setidaknya Satu Cadangan
+Pertahankan Setidaknya Satu Opsi Pencadangan
 
 ```yaml
 Type: SwitchParameter
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Waktu Mulai dalam UTC
+StartTime di UTC
 
 ```yaml
 Type: DateTime
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountUrl
-Url Akun Storage Baru
+URL Akun Storage
 
 ```yaml
 Type: String
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

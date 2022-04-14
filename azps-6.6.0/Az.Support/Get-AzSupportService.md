@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/Get-AzSupportService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/Get-AzSupportService.md
 ms.openlocfilehash: 35861619407a0d2c998921280a5f4502096c4eb3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140243233"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141902349"
 ---
 # Get-AzSupportService
 
 ## SYNOPSIS
-Dapatkan layanan yang tersedia untuk dukungan. 
+Dapatkan layanan yang dukungannya tersedia. 
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.support/get-azsupportservice) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.support/get-azsupportservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,9 +33,9 @@ Get-AzSupportService -Id <String> [-DefaultProfile <IAzureContextContainer>] [<C
 ```
 
 ## DESCRIPTION
-Mendapatkan daftar layanan Azure saat ini yang menyediakan dukungan. Setiap layanan mungkin berisi satu atau beberapa informasi tipe sumber daya manajer sumber daya Azure (ARM). Tipe sumber daya (contoh: 'microsoft.compute/virtualmachines') dapat berguna untuk memetakan produk yang tepat dan sumber daya ARM saat membuat tiket dukungan teknis. Setiap layanan Azure memiliki kumpulan kategorinya sendiri yang disebut klasifikasi masalah. Dapatkan daftar klasifikasi masalah saat ini untuk layanan menggunakan Get-AzSupportProblemClassification. Anda dapat menggunakan GUID klasifikasi masalah dan layanan untuk membuat tiket dukungan baru menggunakan New-AzSupportTicket.
+Mendapatkan daftar layanan Azure saat ini yang dukungannya tersedia. Setiap layanan mungkin berisi satu atau beberapa informasi tipe sumber daya Azure resource manager (ARM). Tipe sumber daya (misalnya: 'microsoft.compute/virtualmachines') dapat berguna untuk memetakan sumber daya ARM dan produk yang tepat saat membuat tiket dukungan teknis. Setiap layanan Azure memiliki kumpulan kategorinya sendiri yang disebut klasifikasi masalah. Dapatkan daftar klasifikasi masalah saat ini untuk layanan menggunakan Get-AzSupportProblemClassification. Anda dapat menggunakan GUID klasifikasi layanan dan masalah untuk membuat tiket dukungan baru menggunakan New-AzSupportTicket.
 
-Selalu gunakan layanan dan masalah klasifikasi GUID yang diperoleh secara terprogram. Praktik ini memastikan Anda memiliki kumpulan layanan terbaru dan klasifikasi masalah GUID untuk pembuatan tiket dukungan.
+Selalu gunakan GUID klasifikasi layanan dan masalah yang diperoleh secara terprogram. Praktik ini memastikan bahwa Anda memiliki kumpulan GUID klasifikasi masalah dan layanan terbaru untuk pembuatan tiket dukungan.
 
 ## EXAMPLES
 
@@ -61,7 +61,7 @@ b7d2f8b7-7d20-cf2f-ddd5-5543ada54bd2 App Service Domains
 101732bb-31af-ee61-7c16-d4ad77c86a50 Application Gateway
 ```
 
-### Contoh 2: Dapatkan detail tentang satu layanan berdasarkan id yang tersedia untuk dukungan
+### Contoh 2: Dapatkan detail layanan tunggal berdasarkan id yang tersedia untuk dukungan
 ```powershell
 PS C:\> Get-AzSupportService -Id "484e2236-bc6d-b1bb-76d2-7d09278cf9ea"
 
@@ -103,11 +103,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

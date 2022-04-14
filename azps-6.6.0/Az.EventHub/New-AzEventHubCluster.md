@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubCluster.md
 ms.openlocfilehash: 818d110a0642f709d7a95fc2f75363a2ca296e4d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140137329"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142051103"
 ---
 # New-AzEventHubCluster
 
 ## SYNOPSIS
-Membuat kluster eventhub khusus baru
+Membuat klaster eventhub khusus baru
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventhub/new-azeventhubcluster) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/new-azeventhubcluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ New-AzEventHubCluster [-Name] <String> [-ResourceId] <String> [-DefaultProfile <
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzEventHubCluster membuat kluster eventhub khusus dalam grup sumber daya yang diberikan
+Cmdlet New-AzEventHubCluster menciptakan klaster eventhub khusus dalam grup sumber daya tertentu
 
 ## EXAMPLES
 
@@ -61,7 +61,7 @@ Membuat kluster khusus 'Eventhub-Cluster-5557' dalam grup sumber daya 'RSG-Clust
 ## PARAMETERS
 
 ### -Kapasitas
-Kapasitas Kluster (CU), secara melengkung, nilai yang diperbolehkan = 1
+Cluster Capacity (CU), curerntrly, allowed value = 1
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -209,13 +209,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ### System.Collections.Hashtable
 

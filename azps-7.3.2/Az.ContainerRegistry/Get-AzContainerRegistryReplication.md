@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryReplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryReplication.md
-ms.openlocfilehash: 471080b3a68ba4b13235b85f6d47fe531b6195c7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: fa5d25356476f3f52b3232417321a906006fcf75
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140557219"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141942135"
 ---
 # Get-AzContainerRegistryReplication
 
 ## SYNOPSIS
-Mendapatkan replikasi registri wadah.
+Mendapatkan replikasi registri kontainer.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/get-azcontainerregistryreplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,11 +53,11 @@ Get-AzContainerRegistryReplication -ResourceId <String> [-DefaultProfile <IAzure
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzContainerRegistryReplication mendapatkan replikasi registri wadah yang ditentukan atau semua replikasi registri wadah.
+Cmdlet Get-AzContainerRegistryReplication mendapatkan replikasi tertentu dari registri kontainer atau semua replikasi registri kontainer.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan replikasi registri wadah yang ditentukan
+### Contoh 1: Mendapatkan replikasi tertentu dari registri kontainer
 ```powershell
 PS C:\>Get-AzContainerRegistryReplication -ResourceGroupName "MyResourceGroup" -RegistryName "MyRegistry" -Name "myreplication"
 
@@ -64,9 +67,9 @@ Name                 Location   Provisioni Status               StatusTimestamp 
 myreplication       westus     Succeeded  Ready                 11/17/2017 10:19:45 PM         {[tagName, MyTag]}
 ```
 
-Mendapatkan replikasi tertentu dari registri wadah
+Mendapatkan replikasi tertentu dari registri kontainer
 
-### Contoh 2: Mendapatkan semua replikasi registri wadah
+### Contoh 2: Mendapatkan semua replikasi registri kontainer
 ```powershell
 PS C:\>Get-AzContainerRegistryReplication -ResourceGroupName "MyResourceGroup" -RegistryName "MyRegistry"
 
@@ -77,12 +80,12 @@ eastus               eastus     Succeeded  Ready                11/6/2017 6:14:4
 myreplication        westus     Succeeded  Ready                11/17/2017 10:19:45 PM         {[tagName, MyTag]}
 ```
 
-Mendapatkan semua replikasi registri wadah
+Mendapatkan semua replikasi registri kontainer
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Container Registry Replication Name.
+Nama Replikasi Registri Kontainer.
 
 ```yaml
 Type: System.String
@@ -111,8 +114,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Registry
-Container Registry Object.
+### -Registri
+Objek Registri Kontainer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ContainerRegistry.PSContainerRegistry
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistryName
-Container Registry Name.
+Nama Registri Kontainer.
 
 ```yaml
 Type: System.String
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya replikasi registri wadah
+Id sumber daya registri registri kontainer
 
 ```yaml
 Type: System.String
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

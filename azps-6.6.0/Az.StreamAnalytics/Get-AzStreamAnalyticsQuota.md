@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsQuota.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsQuota.md
 ms.openlocfilehash: e149b9ecf6f52367b7c1ccb22321882ce29762a7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140065385"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141902601"
 ---
 # Get-AzStreamAnalyticsQuota
 
@@ -18,7 +18,7 @@ ms.locfileid: "140065385"
 Mengambil informasi kuota langganan saat ini di kawasan tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.streamanalytics/get-azstreamanalyticsquota) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/get-azstreamanalyticsquota) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Mengambil informasi kuota langganan saat ini di kawasan tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan informasi tentang kuota Unit Streaming untuk satu wilayah
+### Contoh 1: Dapatkan informasi tentang kuota Unit Streaming untuk wilayah
 ```powershell
 PS C:\> Get-AzStreamAnalyticsQuota -Location 'WestCentralUS'
 
@@ -62,8 +62,8 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Kawasan untuk mengambil informasi kuota langganan.
-Anda dapat mencari tahu wilayah mana Azure Stream Analytics didukung di sini: https://azure.microsoft.com/en-us/regions/
+Kawasan tempat untuk mengambil informasi kuota langganan.
+Anda dapat mengetahui kawasan mana Azure Stream Analytics didukung di sini: https://azure.microsoft.com/en-us/regions/
 
 ```yaml
 Type: System.String
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

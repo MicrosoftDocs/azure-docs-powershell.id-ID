@@ -4,11 +4,11 @@ ms.assetid: 5605F11E-EEA0-4C32-8445-2E001D56BC47
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: c37b61e14d41a705e1a579793954a8a059f1ae8d
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423217"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141920469"
 ---
 # New-AzureStorSimpleDeviceVolumeContainer
 
@@ -29,11 +29,11 @@ New-AzureStorSimpleDeviceVolumeContainer -DeviceName <String> -VolumeContainerNa
 ## DESCRIPTION
 Cmdlet **New-AzureStorSimpleDeviceVolumeContainer** membuat wadah volume.
 Anda harus mengaitkan kredensial akun penyimpanan dengan wadah volume baru.
-Untuk mendapatkan kredensial akun penyimpanan, gunakan cmdlet **Get-AzureStorSimpleStorageAccountCredential.**
+Untuk mendapatkan kredensial akun penyimpanan, gunakan cmdlet **Get-AzureStorSimpleStorageAccountCredential** .
 
 ## EXAMPLES
 
-### Contoh 1: Buat wadah
+### Contoh 1: Membuat wadah
 ```
 PS C:\>Get-AzureStorSimpleStorageAccountCredential -StorageAccountName "ContosoAccount" | New-AzureStorSimpleDeviceVolumeContainer -DeviceName "Contoso63-AppVm" -VolumeContainerName "Container08" -BandWidthRateInMbps 256
 VERBOSE: ClientRequestId: 96a4ccd4-f2a9-4820-8bc8-e6b7b56dce0d_PS
@@ -48,16 +48,16 @@ VERBOSE: The create task is submitted successfully. Please use the command Get-A
 5b192120-9df0-40ed-b75e-b4e728bd37ef for tracking the task's status
 ```
 
-Perintah ini mendapatkan kredensial akun penyimpanan untuk akun bernama ContosoAccount dengan menggunakan cmdlet **Get-AzureStorSimpleStorageAccountCredential.**
-Perintah memasukkan kredensial ke cmdlet saat ini menggunakan operator pipeline.
-Cmdlet ini menggunakan kredensial dari cmdlet tersebut untuk membuat wadah bernama Container08 di perangkat yang bernama Contoso63-AppVm.
-Perintah ini memulai pekerjaan, lalu mengembalikan objek **TaskResponse.**
-Untuk melihat status pekerjaan, gunakan cmdlet **Get-AzureStorSimpleTask.**
+Perintah ini mendapatkan kredensial akun penyimpanan untuk akun bernama ContosoAccount menggunakan cmdlet **Get-AzureStorSimpleStorageAccountCredential** .
+Perintah melewati kredensial ke cmdlet saat ini menggunakan operator pipeline.
+Cmdlet ini menggunakan kredensial dari cmdlet tersebut untuk membuat wadah bernama Container08 pada perangkat bernama Contoso63-AppVm.
+Perintah ini memulai pekerjaan, lalu mengembalikan objek **TaskResponse** .
+Untuk melihat status pekerjaan, gunakan cmdlet **Get-AzureStorSimpleTask** .
 
 ## PARAMETERS
 
-### -BandWidthRateIn Mbps
-Menentukan kecepatan bandwidth dalam megabit per detik (Mbps).
+### -BandWidthRateInMbps
+Menentukan tingkat bandwidth dalam megabit per detik (Mbps).
 
 ```yaml
 Type: Int32
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceName
-Menentukan nama perangkat StorSimple untuk membuat wadah volume.
+Menentukan nama perangkat StorSimple tempat untuk membuat wadah volume.
 
 ```yaml
 Type: String
@@ -117,8 +117,8 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryStorageAccountCredential
-Menentukan kredensial, sebagai objek **StorageAccountCredential,** untuk dikaitkan dengan wadah volume baru.
-Untuk mendapatkan objek **StorageAccountCredential,** gunakan cmdlet **Get-AzureStorSimpleStorageAccountCredential.**
+Menentukan kredensial, sebagai objek **StorageAccountCredential** , untuk mengaitkan dengan wadah volume baru.
+Untuk mendapatkan objek **StorageAccountCredential** , gunakan cmdlet **Get-AzureStorSimpleStorageAccountCredential** .
 
 ```yaml
 Type: StorageAccountCredentialResponse
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -VolumeContainerName
-Menentukan nama wadah volume untuk dibuat.
+Menentukan nama wadah volume yang akan dibuat.
 
 ```yaml
 Type: String
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -WaitForComplete
-Menunjukkan bahwa cmdlet ini menunggu hingga operasi selesai sebelum mengembalikan kontrol ke Windows PowerShell baru.
+Menunjukkan bahwa cmdlet ini menunggu operasi selesai sebelum mengembalikan kontrol ke konsol Windows PowerShell.
 
 ```yaml
 Type: SwitchParameter
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -188,7 +188,7 @@ Cmdlet ini menerima objek **PrimaryStorageAccountCredential** untuk dikaitkan de
 ## OUTPUTS
 
 ### TaskStatusInfo
-Cmdlet ini mengembalikan **objek TaskStatusInfo,** jika Anda menentukan parameter *WaitForComplete.*
+Cmdlet ini mengembalikan objek **TaskStatusInfo** , jika Anda menentukan parameter *WaitForComplete* .
 
 ## CATATAN
 
@@ -196,7 +196,7 @@ Cmdlet ini mengembalikan **objek TaskStatusInfo,** jika Anda menentukan paramete
 
 [Get-AzureStorSimpleDeviceVolumeContainer](./Get-AzureStorSimpleDeviceVolumeContainer.md)
 
-[Remove-AzureStorSimpleDeviceVolumeContainer](./Remove-AzureStorSimpleDeviceVolumeContainer.md)
+[Hapus-AzureStorSimpleDeviceVolumeContainer](./Remove-AzureStorSimpleDeviceVolumeContainer.md)
 
 [Get-AzureStorSimpleStorageAccountCredential](./Get-AzureStorSimpleStorageAccountCredential.md)
 

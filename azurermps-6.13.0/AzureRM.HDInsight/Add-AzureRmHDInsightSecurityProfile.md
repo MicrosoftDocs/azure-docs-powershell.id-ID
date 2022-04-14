@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.hdins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Add-AzureRmHDInsightSecurityProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Add-AzureRmHDInsightSecurityProfile.md
-ms.openlocfilehash: aa50faba2558bd02b7525251e071f982d002f6a61c6815dc29f9496104940017
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 003072e6821561c78975d50fa627edf0f7fd120a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140866466"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142097907"
 ---
 # Add-AzureRmHDInsightSecurityProfile
 
@@ -30,8 +30,8 @@ Add-AzureRmHDInsightSecurityProfile [-Config] <AzureHDInsightConfig> -Domain <St
 ```
 
 ## DESCRIPTION
-Profil keamanan digunakan untuk membuat kluster aman dengan membuat kerberisasi.
-Profil keamanan berisi konfigurasi terkait bergabung dalam kluster ke Domain Direktori Aktif.
+Profil keamanan digunakan untuk membuat kluster yang aman dengan melakukan kerberisasi.
+Profil keamanan berisi konfigurasi yang terkait dengan penggabung kluster ke Domain Direktori Aktif.
 
 ## EXAMPLES
 
@@ -40,12 +40,12 @@ Profil keamanan berisi konfigurasi terkait bergabung dalam kluster ke Domain Dir
 PS C:\> {{ Add example code here }}
 ```
 
-{{ Tambahkan contoh deskripsi di sini }}
+{{ Tambahkan deskripsi contoh di sini }}
 
 ## PARAMETERS
 
-### -ClusterUsersGroupDNs
-Nama khusus grup Direktori Aktif yang akan tersedia di Ambari dan Ranger
+### -ClusterUsersGroupDN
+Nama yang dibedakan dari grup Direktori Aktif yang akan tersedia di Ambari dan Ranger
 
 ```yaml
 Type: System.String[]
@@ -60,8 +60,8 @@ Accept wildcard characters: False
 ```
 
 ### -Config
-Menentukan objek konfigurasi kluster HDInsight yang dimodifikasi cmdlet ini.
-Objek ini dibuat oleh cmdlet New-AzureRmHDInsightClusterConfig baru.
+Menentukan objek konfigurasi kluster HDInsight yang diubah cmdlet ini.
+Objek ini dibuat oleh cmdlet New-AzureRmHDInsightClusterConfig.
 
 ```yaml
 Type: Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightConfig
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -136,8 +136,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -OrganizationalUnitdn
-Nama khusus unit organisasi di direktori Aktif tempat akun pengguna dan komputer akan dibuat
+### -OrganizationalUnitDN
+Nama yang dibedakan dari unit organisasi di direktori Aktif tempat akun pengguna dan komputer akan dibuat
 
 ```yaml
 Type: System.String
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

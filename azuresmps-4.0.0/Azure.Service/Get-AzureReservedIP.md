@@ -3,12 +3,12 @@ external help file: Microsoft.WindowsAzure.Commands.ServiceManagement.dll-Help.x
 ms.assetid: C0EEC51F-F8AB-4A6C-8F99-2B2DFFE9BB26
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 878e6ef08132f34205b5cbde315825a3096959164ff3f66cd4186a61b18daebc
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 1a47334171f188f73dda60a7738aa3da6009eb8d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419238"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141921939"
 ---
 # Get-AzureReservedIP
 
@@ -25,7 +25,7 @@ Get-AzureReservedIP [[-ReservedIPName] <String>] [-Profile <AzureSMProfile>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureReservedIP** mendapatkan alamat IP khusus dengan namanya atau mencantumkan semua alamat IP khusus dalam langganan.
+Cmdlet **Get-AzureReservedIP** mendapatkan alamat IP khusus berdasarkan namanya atau mencantumkan semua alamat IP khusus dalam langganan.
 
 ## EXAMPLES
 
@@ -36,26 +36,26 @@ PS C:\> Get-AzureReservedIP
 
 Perintah ini mendapatkan semua alamat IP khusus.
 
-### Contoh 2: Mendapatkan alamat IP khusus dengan nama yang ditentukan
+### Contoh 2: Dapatkan alamat IP khusus dengan nama tertentu
 ```
 PS C:\> Get-AzureReservedIP -ReservedIPName $IpName
 ```
 
-Perintah ini mendapatkan alamat IP khusus yang memiliki nama yang ditentukan oleh $IpName khusus.
+Perintah ini mendapatkan alamat IP khusus yang memiliki nama yang ditentukan oleh variabel $IpName.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -85,8 +85,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -126,8 +126,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureReservedIP](./New-AzureReservedIP.md)
+[AzureReservedIP Baru](./New-AzureReservedIP.md)
 
-[Remove-AzureReservedIP](./Remove-AzureReservedIP.md)
+[Hapus-AzureReservedIP](./Remove-AzureReservedIP.md)
 
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseSqlPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseSqlPool.md
 ms.openlocfilehash: 1101949fafaeffde747714d492b34aec5513fd13
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140498721"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141901575"
 ---
 # New-AzSynapseSqlPool
 
 ## SYNOPSIS
-Membuat alat Analitik Synapse SQL sama.
+Membuat kumpulan SQL Synapse Analytics.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/new-azsynapsesqlpool) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapsesqlpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ New-AzSynapseSqlPool -WorkspaceObject <PSSynapseWorkspace> -Name <String> [-Vers
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSynapseSqlPool** membuat cmdlet Azure Synapse Analytics SQL pool.
+Cmdlet **New-AzSynapseSqlPool** membuat Azure Synapse analytics SQL pool.
 
 ## EXAMPLES
 
@@ -46,12 +46,12 @@ Cmdlet **New-AzSynapseSqlPool** membuat cmdlet Azure Synapse Analytics SQL pool.
 PS C:\> New-AzSynapseSqlPool -WorkspaceName ContosoWorkspace -Name ContosoSqlPool -PerformanceLevel DW200c
 ```
 
-Perintah ini akan membuat SQL Analitik Azure Synapse.
+Perintah ini membuat Azure Synapse kumpulan SQL Analytics.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -66,8 +66,8 @@ Accept wildcard characters: False
 ```
 
 ### -Collation
-Collation menentukan aturan yang mengurutkan dan membandingkan data, dan tidak dapat diubah setelah SQL pool.
-Pemeriksaan default akan SQL_Latin1_General_CP1_CI_AS.
+Kolase menentukan aturan yang mengurutkan dan membandingkan data, dan tidak dapat diubah setelah pembuatan kumpulan SQL.
+Kolatasi default adalah SQL_Latin1_General_CP1_CI_AS.
 
 ```yaml
 Type: System.String
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama SQL Tim.
+Nama Synapse SQL pool.
 
 ```yaml
 Type: System.String
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -PerformanceLevel
-Tingkat SQL Layanan tingkat dan tingkat kinerja untuk ditetapkan ke SQL baru.
+Tingkat layanan SQL dan tingkat kinerja untuk ditetapkan ke kumpulan SQL.
 Misalnya, DW2000c.
 
 ```yaml
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Kamus string, kamus string dari tag yang terkait dengan sumber daya tersebut.
+String, kamus string tag yang terkait dengan sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -172,7 +172,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -4,17 +4,17 @@ Module Name: AzureRM.Network
 ms.assetid: 1FDA90C0-D01F-45E1-9149-16AD04046271
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/get-azurermloadbalancerinboundnatruleconfig
 schema: 2.0.0
-ms.openlocfilehash: 56f31928e558e815c963cf704d19cb223fb9ac3541d144d79273c9ea353625e4
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: fbfa70146a5eb70d118e6cd1859f968c576d8a0f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416623"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141781562"
 ---
 # Get-AzureRmLoadBalancerInboundNatRuleConfig
 
 ## SYNOPSIS
-Mendapatkan konfigurasi aturan NAT masuk untuk penyeimbang muat.
+Mendapatkan konfigurasi aturan NAT masuk untuk penyeimbang beban.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -26,24 +26,24 @@ Get-AzureRmLoadBalancerInboundNatRuleConfig [-Name <String>] -LoadBalancer <PSLo
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmLoadBalancerInboundNatRuleConfig** mendapatkan satu atau beberapa aturan penerjemahan alamat jaringan masuk (NAT, Inbound Network Address Translation) di penyeimbang muat Azure.
+Cmdlet **Get-AzureRmLoadBalancerInboundNatRuleConfig** mendapatkan satu atau beberapa aturan terjemahan alamat jaringan masuk (NAT) dalam penyeimbang muatan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan konfigurasi aturan NAT masuk
+### Contoh 1: Dapatkan konfigurasi aturan NAT masuk
 ```
 PS C:\>$slb = Get-AzureRmLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 PS C:\> Get-AzureRmLoadBalancerInboundNatRuleConfig -Name "MyInboundNatRule1" -LoadBalancer $slb
 ```
 
-Perintah pertama mendapatkan penyeimbang muat bernama MyLoadBalancer, dan menyimpannya dalam variabel $slb.
+Perintah pertama mendapatkan load balancer bernama MyLoadBalancer, dan menyimpannya dalam variabel $slb.
 
-Perintah kedua mendapatkan aturan NAT terkait yang bernama MyInboundNatRule1 dari penyeimbang muat di $slb.
+Perintah kedua mendapatkan aturan NAT terkait bernama MyInboundNatRule1 dari load balancer di $slb.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan penyeimbang muat yang terkait dengan konfigurasi aturan NAT masuk untuk masuk.
+Menentukan penyeimbang muatan yang terkait dengan konfigurasi aturan NAT masuk yang akan didapatkan.
 
 ```yaml
 Type: PSLoadBalancer
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama konfigurasi aturan NAT masuk untuk masuk.
+Menentukan nama konfigurasi aturan NAT masuk yang akan didapatkan.
 
 ```yaml
 Type: String
@@ -88,12 +88,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSLoadBalancer
-Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari saluran
+Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari pipeline
 
 ## OUTPUTS
 
@@ -107,7 +107,7 @@ Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari saluran
 
 [New-AzureRmLoadBalancerInboundNatRuleConfig](./New-AzureRmLoadBalancerInboundNatRuleConfig.md)
 
-[Remove-AzureRmLoadBalancerInboundNatRuleConfig](./Remove-AzureRmLoadBalancerInboundNatRuleConfig.md)
+[Hapus-AzureRmLoadBalancerInboundNatRuleConfig](./Remove-AzureRmLoadBalancerInboundNatRuleConfig.md)
 
 [Set-AzureRmLoadBalancerInboundNatRuleConfig](./Set-AzureRmLoadBalancerInboundNatRuleConfig.md)
 

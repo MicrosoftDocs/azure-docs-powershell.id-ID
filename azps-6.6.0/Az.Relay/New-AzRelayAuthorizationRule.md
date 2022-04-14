@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/New-AzRelayAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/New-AzRelayAuthorizationRule.md
 ms.openlocfilehash: e06529458346f404da9778e520c11d7b243535ae
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140461068"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142122605"
 ---
 # New-AzRelayAuthorizationRule
 
 ## SYNOPSIS
-Membuat aturan otorisasi baru untuk entitas Relay yang ditentukan (Namespace/WcfIguy/HybridConnection).
+Membuat aturan otorisasi baru untuk entitas Relay tertentu (Namespace/WcfRelay/HybridConnection).
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.relay/new-azrelayauthorizationrule) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.relay/new-azrelayauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-AzRelayAuthorizationRule [-ResourceGroupName] <String> [-Namespace] <String>
  -Rights <String[]> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### WcfAuthorizationRuleSet
+### WcfRelayAuthorizationRuleSet
 ```
 New-AzRelayAuthorizationRule [-ResourceGroupName] <String> [[-Namespace] <String>] [-WcfRelay] <String>
  [-Name] <String> -Rights <String[]> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
@@ -43,11 +43,11 @@ New-AzRelayAuthorizationRule [-ResourceGroupName] <String> [[-Namespace] <String
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzIguyAuthorizationRule** membuat aturan otorisasi baru untuk entitas Relay yang ditentukan (Namespace/WcfIguy/HybridConnection).
+Cmdlet **New-AzRelayAuthorizationRule** membuat aturan otorisasi baru untuk entitas Relay tertentu (Namespace/WcfRelay/HybridConnection).
 
 ## EXAMPLES
 
-### Contoh 1: Kumpulan Nama
+### Contoh 1: Ruang nama
 ```powershell
 PS C:\>New-AzRelayAuthorizationRule -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -Name AuthoRule1 -Rights "Listen"
 
@@ -57,9 +57,9 @@ Type   : Microsoft.Relay/AuthorizationRules
 Id     : /subscriptions/854d368f-1828-428f-8f3c-f2affa9b2f7d/resourceGroups/Default-ServiceBus-WestUS/providers/Microsoft.Relay/namespaces/TestNameSpace-Relay1/AuthorizationRules/AuthoRule1
 ```
 
-Membuat `AuthoRule1` dengan **hak** Dengarkan untuk ruang nama `TestNameSpace-Relay1`.
+`AuthoRule1` Membuat dengan hak **Dengarkan** untuk ruang `TestNameSpace-Relay1`nama .
 
-### Contoh 2: WcfCfCfy
+### Contoh 2: WcfRelay
 ```powershell
 PS C:\>New-AzRelayAuthorizationRule -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -WcfRelay TestWCFRelay1 -Name AuthoRule1 -Rights "Listen"
 
@@ -69,7 +69,7 @@ Type   : Microsoft.Relay/AuthorizationRules
 Id     : /subscriptions/854d368f-1828-428f-8f3c-f2affa9b2f7d/resourceGroups/Default-ServiceBus-WestUS/providers/Microsoft.Relay/namespaces/TestNameSpace-Relay1/WcfRelays/TestWCFRelay1/authorizationRules/AuthoRule1
 ```
 
-Membuat aturan otorisasi `AuthoRule1` **dengan hak** Dengarkan untuk Wcf Berlaku `TestWCFRelay1`.
+Membuat aturan `AuthoRule1` otorisasi dengan hak **Dengar** untuk WcfRelay `TestWCFRelay1`.
 
 ### Contoh 3: HybridConnection
 ```powershell
@@ -81,7 +81,7 @@ Type   : Microsoft.Relay/AuthorizationRules
 Id     : /subscriptions/854d368f-1828-428f-8f3c-f2affa9b2f7d/resourceGroups/Default-ServiceBus-WestUS/providers/Microsoft.Relay/namespaces/TestNameSpace-Relay1/HybridConnections/TestHybridConnection/authorizationRules/AuthoRule1
 ```
 
-Membuat `AuthoRule1` dengan **hak** Dengarkan untuk Koneksi Hibrid `TestHybridConnection`.
+`AuthoRule1` Membuat dengan hak **Dengar** untuk Koneksi `TestHybridConnection`Hibrid .
 
 ## PARAMETERS
 
@@ -188,8 +188,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -WcfEby
-Nama WcfEby.
+### -WcfRelay
+Nama WcfRelay.
 
 ```yaml
 Type: System.String
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Remove-AzDeploymentManagerArtifactSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Remove-AzDeploymentManagerArtifactSource.md
 ms.openlocfilehash: e2e9234cf9e7f8ed5c45c7ca1c8f402f5ca7806a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140138841"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142051967"
 ---
 # Remove-AzDeploymentManagerArtifactSource
 
 ## SYNOPSIS
-Menghapus sumber artifak yang ditentukan.
+Menghapus sumber artefak yang ditentukan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.deploymentmanager/remove-azdeploymentmanagerartifactsource) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.deploymentmanager/remove-azdeploymentmanagerartifactsource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,31 +41,31 @@ Remove-AzDeploymentManagerArtifactSource [-InputObject] <PSArtifactSource> [-Pas
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzDeploymentManagerArtifactSource** menghapus sumber artifak Tentukan sumber artifak dengan namanya dan nama grup sumber daya. Alternatifnya, Anda dapat menyediakan objek ArtifactSource atau ResourceId.
+Cmdlet **Remove-AzDeploymentManagerArtifactSource** menghapus sumber artefak Tentukan sumber artefak berdasarkan nama dan nama grup sumber dayanya. Alternatifnya, Anda dapat menyediakan objek ArtifactSource atau ResourceId.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus sumber artifak
+### Contoh 1: Menghapus sumber artefak
 ### Contoh 1
 ```powershell
 PS C:\> Remove-AzDeploymentManagerArtifactSource -ResourceGroupName "ContosoResourceGroup" -Name "ContosoArtifactSource"
 ```
 
-Perintah ini menghapus sumber artifak bernama ContosoArtifactSource di ContosoResourceGroup.
+Perintah ini menghapus sumber artefak bernama ContosoArtifactSource di ContosoResourceGroup.
 
-### Contoh 2: Menghapus sumber artifak menggunakan pengidentifikasi sumber daya
+### Contoh 2: Menghapus sumber artefak menggunakan pengidentifikasi sumber daya
 ```powershell
 PS C:\> Remove-AzDeploymentManagerArtifactSource -ResourceId "/subscriptions/subscriptionId/resourcegroups/ContosoResourceGroup/providers/Microsoft.DeploymentManager/artifactSources/ContosoArtifactSource"
 ```
 
-Perintah ini menghapus sumber artifak bernama ContosoArtifactSource di ContosoResourceGroup.
+Perintah ini menghapus sumber artefak bernama ContosoArtifactSource di ContosoResourceGroup.
 
-### Contoh 3: Menghapus sumber artifak menggunakan objek
+### Contoh 3: Menghapus sumber artefak menggunakan objek
 ```powershell
 PS C:\> Remove-AzDeploymentManagerArtifactSource -InputObject $artifactSourceObject
 ```
 
-Perintah ini menghapus sumber artifak yang namanya dan Grup Sumber Dayanya sesuai dengan properti Nama dan ResourceGroupName $artifactSourceObject, secara berurutan.
+Perintah ini menghapus sumber artefak yang nama dan ResourceGroupnya masing-masing cocok dengan properti Nama dan ResourceGroupName $artifactSourceObject.
 
 ## PARAMETERS
 
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Sumber artifak yang akan dihapus.
+Sumber artefak yang akan dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DeploymentManager.Models.PSArtifactSource
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama sumber artifak.
+Nama sumber artefak.
 
 ```yaml
 Type: System.String
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{fill passThru Description}}
+{{Fill PassThru Description}}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

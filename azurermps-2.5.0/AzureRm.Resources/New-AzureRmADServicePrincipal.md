@@ -5,11 +5,11 @@ ms.assetid: D602F910-B26F-473D-B5B6-C7BDFB0A14CB
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.resources/new-azurermadserviceprincipal
 schema: 2.0.0
 ms.openlocfilehash: 9d0fb4f188b3753e22258a27cf8632d85fe866dc
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420547"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141780330"
 ---
 # New-AzureRmADServicePrincipal
 
@@ -121,12 +121,12 @@ New-AzureRmADServicePrincipal -ApplicationObject <PSADApplication> -KeyCredentia
 
 ## DESCRIPTION
 Membuat prinsipal layanan azure active directory baru. Kumpulan parameter default menggunakan nilai default untuk parameter jika pengguna tidak menyediakannya. Untuk informasi selengkapnya tentang nilai default yang digunakan, silakan lihat deskripsi untuk parameter tertentu di bawah ini.
-Cmdlet ini memiliki kemampuan untuk menetapkan peran ke prinsipal layanan dengan dan parameter; jika tidak ada peran yang akan ditetapkan pada prinsipal `Role` `Scope` layanan. Nilai default untuk dan parameter adalah "Kontributor" dan langganan saat ini, secara berurutan ( catatan : default hanya digunakan saat pengguna menyediakan nilai untuk salah satu dari dua parameter, tapi tidak yang `Role` `Scope` lain).
-Cmdlet juga secara implisit membuat aplikasi dan mengatur propertinya (jika ApplicationId tidak disediakan). Untuk memperbarui parameter aplikasi tertentu, silakan gunakan cmdlet Set-AzureRmADApplication cmdlet.
+Cmdlet ini memiliki kemampuan untuk menetapkan peran ke prinsipal layanan dengan `Role` parameter dan `Scope` ; jika tidak ada parameter ini yang disediakan, tidak ada peran yang akan ditetapkan ke prinsipal layanan. Nilai default untuk `Role` dan `Scope` parameter adalah "Kontributor" dan langganan saat ini, masing-masing (_catatan_: default hanya digunakan ketika pengguna menyediakan nilai untuk salah satu dari dua parameter, tetapi bukan yang lainnya).
+Cmdlet juga secara implisit membuat aplikasi dan mengatur propertinya (jika ApplicationId tidak disediakan). Untuk memperbarui parameter aplikasi tertentu, silakan gunakan cmdlet Set-AzureRmADApplication.
 
 ## EXAMPLES
 
-### Contoh 1 - Pembuatan prinsipal layanan AD sederhana
+### Contoh 1 - Pembuatan prinsipal layanan AD Sederhana
 
 ```
 PS C:\> New-AzureRmADServicePrincipal
@@ -139,7 +139,7 @@ Id                    : yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy
 Type                  : ServicePrincipal
 ```
 
-Perintah di atas membuat prinsipal layanan AD menggunakan nilai default untuk parameter yang tidak disediakan. Karena id aplikasi tidak diberikan, aplikasi dibuat untuk prinsipal layanan. Karena tidak ada nilai yang diberikan `Role` atau `Scope` , prinsipal layanan yang dibuat tidak memiliki izin apa pun.
+Perintah di atas membuat prinsipal layanan AD menggunakan nilai default untuk parameter yang tidak disediakan. Karena id aplikasi tidak disediakan, aplikasi dibuat untuk prinsipal layanan. Karena tidak ada nilai yang disediakan untuk `Role` atau `Scope`, prinsipal layanan yang dibuat tidak memiliki izin apa pun.
 
 ### Contoh 2 - Pembuatan prinsipal layanan AD sederhana dengan peran tertentu dan lingkup default
 
@@ -156,9 +156,9 @@ Type                  : ServicePrincipal
 WARNING: Assigning role 'Reader' over scope '/subscriptions/zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz' to the new service principal.
 ```
 
-Perintah di atas membuat prinsipal layanan AD menggunakan nilai default untuk parameter yang tidak disediakan. Karena id aplikasi tidak diberikan, aplikasi dibuat untuk prinsipal layanan. Prinsipal layanan dibuat dengan izin "Reader" atas langganan saat ini (karena tidak ada nilai yang disediakan untuk `Scope` parameter).
+Perintah di atas membuat prinsipal layanan AD menggunakan nilai default untuk parameter yang tidak disediakan. Karena id aplikasi tidak disediakan, aplikasi dibuat untuk prinsipal layanan. Prinsipal layanan dibuat dengan izin "Pembaca" atas langganan saat ini (karena tidak ada nilai yang disediakan untuk `Scope` parameter).
 
-### Contoh 3 - Pembuatan prinsipal layanan AD sederhana dengan lingkup tertentu dan peran default
+### Contoh 3 - Pembuatan prinsipal layanan AD sederhana dengan lingkup dan peran default yang ditentukan
 
 ```
 PS C:\> New-AzureRmADServicePrincipal -Scope /subscriptions/zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz/resourceGroups/myResourceGroup
@@ -173,7 +173,7 @@ Type                  : ServicePrincipal
 WARNING: Assigning role 'Contributor' over scope '/subscriptions/zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz/resourceGroups/myResourceGroup' to the new service principal.
 ```
 
-Perintah di atas membuat prinsipal layanan AD menggunakan nilai default untuk parameter yang tidak disediakan. Karena id aplikasi tidak diberikan, aplikasi dibuat untuk prinsipal layanan. Prinsipal layanan dibuat dengan izin "Kontributor" (karena tidak ada nilai yang disediakan untuk `Role` parameter) melalui lingkup grup sumber daya yang disediakan.
+Perintah di atas membuat prinsipal layanan AD menggunakan nilai default untuk parameter yang tidak disediakan. Karena id aplikasi tidak disediakan, aplikasi dibuat untuk prinsipal layanan. Prinsipal layanan dibuat dengan izin "Kontributor" (karena tidak ada nilai yang disediakan untuk `Role` parameter) selama lingkup grup sumber daya yang disediakan.
 
 ### Contoh 4 - Pembuatan prinsipal layanan AD sederhana dengan lingkup dan peran tertentu
 
@@ -190,9 +190,9 @@ Type                  : ServicePrincipal
 WARNING: Assigning role 'Reader' over scope '/subscriptions/zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz/resourceGroups/myResourceGroup' to the new service principal.
 ```
 
-Perintah di atas membuat prinsipal layanan AD menggunakan nilai default untuk parameter yang tidak disediakan. Karena id aplikasi tidak diberikan, aplikasi dibuat untuk prinsipal layanan. Prinsipal layanan dibuat dengan izin "Pembaca" pada lingkup grup sumber daya yang disediakan.
+Perintah di atas membuat prinsipal layanan AD menggunakan nilai default untuk parameter yang tidak disediakan. Karena id aplikasi tidak disediakan, aplikasi dibuat untuk prinsipal layanan. Prinsipal layanan dibuat dengan izin "Pembaca" melalui lingkup grup sumber daya yang disediakan.
 
-### Contoh 5 - Membuat pokok layanan AD baru menggunakan id aplikasi dengan penetapan peran
+### Contoh 5 - Membuat prinsipal layanan AD baru menggunakan id aplikasi dengan penetapan peran
 
 ```
 PS C:\> New-AzureRmADServicePrincipal -ApplicationId 34a28ad2-dec4-4a41-bc3b-d22ddf90000e
@@ -204,22 +204,22 @@ Id                    : yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy
 Type                  : ServicePrincipal
 ```
 
-Membuat prinsipal layanan AD yang baru untuk aplikasi dengan id aplikasi '34a28ad2-dec4-4a41-bc3b-d22ddf90000e'. Karena tidak ada nilai yang diberikan `Role` atau `Scope` , prinsipal layanan yang dibuat tidak memiliki izin apa pun.
+Membuat prinsipal layanan AD baru untuk aplikasi dengan id aplikasi '34a28ad2-dec4-4a41-bc3b-d22ddf90000e'. Karena tidak ada nilai yang disediakan untuk `Role` atau `Scope`, prinsipal layanan yang dibuat tidak memiliki izin apa pun.
 
-### Contoh 6 - Membuat prinsipal layanan AD baru menggunakan pemipaan
+### Contoh 6 - Membuat prinsipal layanan AD baru menggunakan perpipaan
 
 ```
 PS C:\> Get-AzureRmADApplication -ObjectId 3ede3c26-b443-4e0b-9efc-b05e68338dc3 | New-AzureRmADServicePrincipal
 ```
 
-Mendapatkan aplikasi dengan id objek '3ede3c26-b443-4e0b-9efc-b05e68338dc3' dan pipa yang berada di cmdlet New-AzureRmADServicePrincipal untuk membuat prinsipal layanan AD baru untuk aplikasi tersebut.
+Mendapatkan aplikasi dengan id objek '3ede3c26-b443-4e0b-9efc-b05e68338dc3' dan pipa yang ke cmdlet New-AzureRmADServicePrincipal untuk membuat prinsipal layanan AD baru untuk aplikasi itu.
 
 ## PARAMETERS
 
 ### -ApplicationId
 Id aplikasi unik untuk prinsipal layanan dalam penyewa.
 Setelah dibuat, properti ini tidak dapat diubah.
-Jika id aplikasi tidak ditentukan, id akan dibuat.
+Jika id aplikasi tidak ditentukan, id aplikasi akan dihasilkan.
 
 ```yaml
 Type: System.Guid
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationObject
-Objek yang mewakili aplikasi yang menjadi tujuan dibuatnya prinsipal layanan.
+Objek yang mewakili aplikasi tempat prinsipal layanan dibuat.
 
 ```yaml
 Type: Microsoft.Azure.Graph.RBAC.Version1_6.ActiveDirectory.PSADApplication
@@ -262,7 +262,7 @@ Accept wildcard characters: False
 
 ### -CertValue
 Nilai tipe kredensial "asimetris".
-Kode ini mewakili sertifikat berkode basis 64.
+Ini mewakili sertifikat dasar 64 yang dikodekan.
 
 ```yaml
 Type: System.String
@@ -289,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -304,7 +304,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Nama prinsipal layanan yang mudah di friendly. Jika nama tampilan tidak disediakan, nilai ini akan menggunakan 'azure-powershell-MM-dd-yyyy-HH-mm-ss', di mana akhiran adalah waktu pembuatan aplikasi.
+Nama pokok layanan yang ramah. Jika nama tampilan tidak disediakan, nilai ini akan default ke 'azure-powershell-MM-dd-yyyy-HH-mm-ss', di mana akhirannya adalah waktu pembuatan aplikasi.
 
 ```yaml
 Type: System.String
@@ -331,7 +331,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-Tanggal berakhir efektif penggunaan kredensial.
+Tanggal berakhir efektif dari penggunaan kredensial.
 Nilai tanggal akhir default adalah satu tahun dari hari ini. Untuk kredensial tipe "asimetris", kredensial ini harus diatur ke aktif atau sebelum tanggal sertifikat X509 valid.
 
 ```yaml
@@ -386,7 +386,7 @@ Accept wildcard characters: False
 ```
 
 ### -Password
-Kata sandi yang akan dikaitkan dengan prinsipal layanan. Jika kata sandi tidak diberikan, GUID acak akan dibuat dan digunakan sebagai kata sandi.
+Kata sandi yang akan dikaitkan dengan prinsipal layanan. Jika kata sandi tidak disediakan, GUID acak akan dihasilkan dan digunakan sebagai kata sandi.
 
 ```yaml
 Type: System.Security.SecureString
@@ -452,7 +452,7 @@ Accept wildcard characters: False
 ```
 
 ### -Peran
-Peran prinsipal layanan ada di atas lingkupnya. Jika nilai untuk `Scope` disediakan, tapi tidak ada nilai yang disediakan untuk `Role` , maka akan default untuk peran `Role` 'Kontributor'.
+Peran yang dimiliki oleh prinsipal layanan melalui lingkup. Jika nilai untuk `Scope` disediakan, tetapi tidak ada nilai yang disediakan untuk `Role`, maka `Role` akan default ke peran 'Kontributor'.
 
 ```yaml
 Type: System.String
@@ -467,7 +467,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Cakupan prinsipal layanan memiliki izin. Jika nilai untuk `Role` disediakan, tetapi tidak ada nilai yang diberikan untuk `Scope` , maka akan default untuk langganan saat `Scope` ini.
+Lingkup tempat prinsipal layanan memiliki izin. Jika nilai untuk `Role` disediakan, tetapi tidak ada nilai yang disediakan untuk `Scope`, maka `Scope` akan default ke langganan saat ini.
 
 ```yaml
 Type: System.String
@@ -482,7 +482,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipAssignment
-Jika set, akan melewatkan pembuatan penetapan peran default untuk prinsipal layanan.
+Jika diatur, akan melewati pembuatan penetapan peran default untuk prinsipal layanan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -525,7 +525,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -541,7 +541,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -556,7 +556,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -564,12 +564,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.FOLDApplication
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADAplikasi
 Parameter: ApplicationObject (ByValue)
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.DIRECTDPasswordCredential[]
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADPasswordCredential[]
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.DIRECTDKeyCredential[]
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADKeyCredential[]
 
 ### System.Security.SecureString
 
@@ -577,26 +577,26 @@ Parameter: ApplicationObject (ByValue)
 
 ## OUTPUTS
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.DIRECTDServicePrincipal
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADServicePrincipal
 
-### Microsoft.Azure.Commands.Resources.Models.Authorization.BURDServicePrincipalWra azure
+### Microsoft.Azure.Commands.Resources.Models.Authorization.PSADServicePrincipalWrapper
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, resource, group, template, deployment
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Templat, penyebaran
 
 ## RELATED LINKS
 
-[Remove-AzureRmADServicePrincipal](./Remove-AzureRmADServicePrincipal.md)
+[Hapus-AzureRmADServicePrincipal](./Remove-AzureRmADServicePrincipal.md)
 
 [Get-AzureRmADServicePrincipal](./Get-AzureRmADServicePrincipal.md)
 
-[Aplikasi New-AzureRmAD](./New-AzureRmADApplication.md)
+[AzureRmADAplikasi Baru](./New-AzureRmADApplication.md)
 
-[Remove-AzureRmADApplication](./Remove-AzureRmADApplication.md)
+[Hapus-AzureRmADAplikasi](./Remove-AzureRmADApplication.md)
 
-[Get-AzureRmADSpCredential](./Get-AzureRmADSpCredential.md)
+[Get-AzureRmADSpcredential](./Get-AzureRmADSpCredential.md)
 
-[New-AzureRmADSpCredential](./New-AzureRmADSpCredential.md)
+[Baru-AzureRmADSpcredential](./New-AzureRmADSpCredential.md)
 
-[Remove-AzureRmADSpCredential](./Remove-AzureRmADSpCredential.md)
+[Hapus-AzureRmADSpcredential](./Remove-AzureRmADSpCredential.md)
 

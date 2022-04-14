@@ -4,11 +4,11 @@ ms.assetid: 7EF20FC0-3E2A-4AFC-AC02-9B11C8952DB8
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 2df8617c292e1f3903b0a9bbe82dd7a3c83d269a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428328"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141921453"
 ---
 # Get-AzureStorSimpleDeviceVolumeContainer
 
@@ -25,24 +25,24 @@ Get-AzureStorSimpleDeviceVolumeContainer -DeviceName <String> [-VolumeContainerN
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureStorSimpleDeviceVolumeContainer** mendapatkan daftar wadah volume di perangkat, atau volume wadah yang memiliki nama yang ditentukan.
+Cmdlet **Get-AzureStorSimpleDeviceVolumeContainer** mendapatkan daftar wadah volume di perangkat, atau wadah volume yang memiliki nama tertentu.
 Objek yang dikembalikan berisi properti berikut ini: 
 
 - **BandwidthRate**
 - **EncryptionKey**
 - **InstanceId**
-- **IsDefault**
+- **Isdefault**
 - **IsEncryptionEnabled**
 - **Nama**
 - **OperationInProgress**
 - **Dimiliki**
 - **PrimaryStorageAccountCredential**
-- **SecretEncryptionThumbprint**
+- **SecretsEncryptionThumbprint**
 - **VolumeCount**
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua wadah pada perangkat
+### Contoh 1: Dapatkan semua kontainer di perangkat
 ```
 PS C:\>Get-AzureStorSimpleDeviceVolumeContainer -DeviceName "8600-Bravo 001"
 InstanceId                           Name                                             IsEncryptionEnabled  Owned BandwidthRate                                    PrimaryStorageAccountCredential                 VolumeCount                                    
@@ -52,7 +52,7 @@ InstanceId                           Name                                       
 
 Perintah ini mendapatkan daftar wadah volume di perangkat bernama 8600-Bravo 001.
 
-### Contoh 2: Mendapatkan wadah dengan menggunakan namanya
+### Contoh 2: Dapatkan wadah dengan menggunakan namanya
 ```
 PS C:\>Get-AzureStorSimpleDeviceVolumeContainer -DeviceName "Contoso63-AppVm" -VolumeContainerName "Container08"
 VERBOSE: ClientRequestId: 8027c66a-869b-4ea3-97a2-e17d98ec751c_PS
@@ -81,7 +81,7 @@ Perintah ini mendapatkan wadah volume bernama Container08 di perangkat bernama C
 
 ### -DeviceName
 Menentukan nama perangkat StorSimple.
-Cmdlet ini mendapatkan penampung volume dari perangkat yang ditentukan parameter ini.
+Cmdlet ini mendapatkan wadah volume dari perangkat yang ditentukan parameter ini.
 
 ```yaml
 Type: String
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -VolumeContainerName
-Menentukan nama kontainer volume untuk mendapatkan.
+Menentukan nama wadah volume yang akan didapatkan.
 
 ```yaml
 Type: String
@@ -126,24 +126,24 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
 ### DataContainer, IList\<DataContainer\>
-Cmdlet ini mengembalikan objek **DataContainer,** jika Anda menentukan parameter *VolumeContainerName.*
-Jika Anda tidak menentukan parameter itu, cmdlet ini mengembalikan **objek IList. \<DataContainer\>**
+Cmdlet ini mengembalikan objek **DataContainer** , jika Anda menentukan parameter *VolumeContainerName* .
+Jika Anda tidak menentukan parameter tersebut, cmdlet ini mengembalikan objek **IList\<DataContainer\>** .
 
 ## CATATAN
 
 ## RELATED LINKS
 
-[New-AzureStorSimpleDeviceVolumeContainer](./New-AzureStorSimpleDeviceVolumeContainer.md)
+[Baru-AzureStorSimpleDeviceVolumeContainer](./New-AzureStorSimpleDeviceVolumeContainer.md)
 
-[Remove-AzureStorSimpleDeviceVolumeContainer](./Remove-AzureStorSimpleDeviceVolumeContainer.md)
+[Hapus-AzureStorSimpleDeviceVolumeContainer](./Remove-AzureStorSimpleDeviceVolumeContainer.md)
 
 

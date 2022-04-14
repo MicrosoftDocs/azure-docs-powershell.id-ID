@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseDroppedSqlPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseDroppedSqlPool.md
 ms.openlocfilehash: 95ad959ac367ada9bd130593b2e325df701c53bb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140243071"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141902277"
 ---
 # Get-AzSynapseDroppedSqlPool
 
 ## SYNOPSIS
-Mendapatkan cadangan pool Sql dari Synapse Sql Pool.
+Mendapatkan cadangan kolam renang Sql yang jatuh dari Kolam Synapse Sql.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapsedroppedsqlpool) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsedroppedsqlpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,23 +35,23 @@ Get-AzSynapseDroppedSqlPool [-DeletionDate <DateTime>] [-ResourceId <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseTamppedSqlPool** mendapatkan cadangan pool SQL terhapus yang dapat Anda pulihkan, atau semua cadangan yang dihapus yang dapat Anda pulihkan di ruang kerja. 
+Cmdlet **Get-AzSynapseDroppedSqlPool** mendapatkan cadangan kumpulan SQL yang dihapus yang ditentukan yang bisa Anda pulihkan, atau semua cadangan yang dihapus yang dapat Anda pulihkan di ruang kerja. 
 
 ## EXAMPLES
 
-### Contoh 1: Get a specified dropped sqlpools from a sql pool
+### Contoh 1: Dapatkan sqlpool yang dijatuhkan tertentu dari kumpulan sql
 ```powershell
 PS C:\> Get-AzSynapseDroppedSqlPool -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -Name "ContosoSqlPool"
 ```
 
-Cmdlet mengambil sqlpools yang dijatuhkan untuk kolam sql.
+Cmdlet mengambil sqlpools jatuh untuk kolam renang sql.
 
 ### Contoh 2: Get all dropped sqlpool on a workspace
 ```
 PS C:\>Get-AzSynapseDroppedSqlPool -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "ContosoWorkspace"
 ```
 
-Perintah ini akan menyebabkan semua sqlpool keluar yang tersedia di ruang kerja tertentu.
+Perintah ini mendapatkan semua sqlpool yang tersedia di ruang kerja tertentu.
 
 ## PARAMETERS
 
@@ -70,8 +70,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DeletionDate
-Tanggal penghapusan program Azure Synaspe SQL Database mengambil cadangan, dengan presisi milidetik (misalnya 2016-02-23T00:21:22.847Z)
+### -PenghapusanDate
+Tanggal penghapusan Azure Synaspe SQL Database untuk mengambil cadangan, dengan presisi milidetik (misalnya 2016-02-23T00:21:22.847Z)
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Pool Synapse Sql.
+Kolam renang Sql Synapse.
 
 ```yaml
 Type: System.String
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Memasukkan Id Sumber Daya Sql Pool yang Jatuh.
+Masukkan Id Sumber Daya Kumpulan Sql yang Dihapus.
 
 ```yaml
 Type: System.String
@@ -130,7 +130,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -156,7 +156,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Synapse.Models.PSPpedSqlPoolBackupModel
+### Microsoft.Azure.Commands.Synapse.Models.PSDroppedSqlPoolBackupModel
 
 ## CATATAN
 

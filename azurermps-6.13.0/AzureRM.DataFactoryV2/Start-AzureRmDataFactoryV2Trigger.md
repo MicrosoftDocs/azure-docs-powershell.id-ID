@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactoryV2/Commands.DataFactoryV2/help/Start-AzureRmDataFactoryV2Trigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactoryV2/Commands.DataFactoryV2/help/Start-AzureRmDataFactoryV2Trigger.md
 ms.openlocfilehash: 5ee7492473cdf36c3d50b08aa770371651f85003
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140859149"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142064985"
 ---
 # Start-AzureRmDataFactoryV2Trigger
 
@@ -40,7 +40,7 @@ Start-AzureRmDataFactoryV2Trigger [-ResourceId] <String> [-Force] [-DefaultProfi
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzureRmDataFactoryV2Trigger** memulai pemicu di pabrik data. Jika pemicu berada dalam status 'Dihentikan', cmdlet memulai pemicu dan akhirnya akan menjalankan saluran berdasarkan definisinya. Jika pemicu sudah berada dalam status 'Dimulai', cmdlet ini tidak memiliki pengaruh. Jika parameter Force ditentukan, cmdlet tidak akan meminta sebelum memulai pemicu.
+Cmdlet **Start-AzureRmDataFactoryV2Trigger** memulai pemicu di pabrik data. Jika pemicu berada dalam status 'Dihentikan', cmdlet memulai pemicu dan akhirnya memanggil saluran berdasarkan definisinya. Jika pemicu sudah berada dalam status 'Dimulai', cmdlet ini tidak berpengaruh. Jika parameter Paksa ditentukan, cmdlet tidak meminta sebelum memulai pemicu.
 
 ## EXAMPLES
 
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -88,7 +88,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Menjalankan cmdlet tanpa meminta konfirmasi.
 
 ```yaml
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Memicu objek untuk dimulai.
+Memicu objek untuk memulai.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -217,4 +217,4 @@ Parameter: InputObject (ByValue)
 
 [Stop-AzureRmDataFactoryV2Trigger]()
 
-[Remove-AzureRmDataFactoryV2Trigger]()
+[Hapus-AzureRmDataFactoryV2Trigger]()

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzRoleAssignment.md
 ms.openlocfilehash: e46ce30ed1737039573f4893f2c40500bba258df
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140459770"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142121993"
 ---
 # Set-AzRoleAssignment
 
 ## SYNOPSIS
-Memperbarui Penetapan Peran yang sudah ada.
+Perbarui Tugas Peran yang sudah ada.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/set-azroleassignment) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/set-azroleassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,9 +36,9 @@ Set-AzRoleAssignment -InputFile <String> [-PassThru] [-DefaultProfile <IAzureCon
 
 ## DESCRIPTION
 Gunakan perintah New-AzRoleAssignment untuk mengubah tugas yang sudah ada.  
-Deskripsi dapat string valid apa pun, yang digunakan untuk menyimpulkan satu sama lain.  
-jika Kondisi disetel, Versi Kondisi harus disetel juga tetapi jika Anda memperbarui Kondisi yang tidak diperlukan.
-Versi Kondisi dapat dimutakhirkan dari 1.0 ke 2.0, tetapi tidak dapat diturunkan kembali. Berhati-hatilah karena 2.0 tidak kompatibel dengan 1,0.
+Deskripsi bisa berupa string apa pun yang valid, gunakan itu untuk mendiferensiasi satu sama lain.  
+jika Kondisi diatur Versi Kondisi harus diatur juga tetapi jika Anda memperbarui Kondisi yang tidak diperlukan.
+Versi Kondisi dapat dimutakhirkan dari 1.0 ke 2.0 tetapi tidak dapat diturunkan kembali. Berhati-hatilah karena 2.0 tidak dapat diingat dengan 1.0.
 
 ## EXAMPLES
 
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputFile
-Nama file berisi definisi peran tunggal.
+Nama file yang berisi definisi peran tunggal.
 
 ```yaml
 Type: System.String
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzAutoscaleNotification.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzAutoscaleNotification.md
 ms.openlocfilehash: 5d4a0d5d0099ab91e43bebba0c8a62fb3d82e249
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140105039"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141800906"
 ---
 # New-AzAutoscaleNotification
 
@@ -19,7 +19,7 @@ ms.locfileid: "140105039"
 Membuat pemberitahuan email Skala Otomatis.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/new-azautoscalenotification) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azautoscalenotification) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,19 +39,19 @@ Cmdlet **New-AzAutoscaleNotification** membuat pemberitahuan email untuk Skala O
 PS C:\>New-AzAutoscaleNotification -CustomEmail "pattif@contoso.com, davidchew@contoso.net"
 ```
 
-Perintah ini akan membuat pemberitahuan email Skala Otomatis untuk dua alamat yang ditentukan.
+Perintah ini membuat pemberitahuan email Skala Otomatis untuk dua alamat tertentu.
 
-### Contoh 2: Buat pemberitahuan email Skala Otomatis untuk administrator langganan
+### Contoh 2: Membuat pemberitahuan email Skala Otomatis untuk administrator langganan
 ```
 PS C:\>New-AzAutoscaleNotification -SendEmailToSubscriptionAdministrator
 ```
 
-Perintah ini akan membuat pemberitahuan email Skala Otomatis untuk administrator langganan.
+Perintah ini membuat pemberitahuan email Skala Otomatis untuk administrator langganan.
 
 ## PARAMETERS
 
 ### -CustomEmail
-Menentukan daftar alamat email yang dipisahkan tanda koma.
+Menentukan daftar alamat email yang dipisahkan koma.
 
 ```yaml
 Type: System.String[]
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -SendEmailToSubscriptionAdministrator
-Menunjukkan bahwa operasi ini mengirimkan pemberitahuan email ke administrator langganan.
+Menunjukkan bahwa operasi ini mengirim pemberitahuan email ke administrator langganan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -SendEmailToSubscriptionCoAdministrator
-Menunjukkan bahwa operasi ini mengirimkan pemberitahuan email ke administrator bersama langganan.
+Menunjukkan bahwa operasi ini mengirim pemberitahuan email ke rekan administrator langganan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Webhook
-Menentukan daftar web skala otomatis yang dipisahkan koma.
+Menentukan daftar webhook Skala Otomatis yang dipisahkan koma.
 
 ```yaml
 Type: Microsoft.Azure.Management.Monitor.Management.Models.WebhookNotification[]
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

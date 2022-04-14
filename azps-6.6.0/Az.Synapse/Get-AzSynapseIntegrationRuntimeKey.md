@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseIntegrationRuntimeKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseIntegrationRuntimeKey.md
 ms.openlocfilehash: 3eb55dfa20b97ff369fd30666259989e076d443a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140325833"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141902097"
 ---
 # Get-AzSynapseIntegrationRuntimeKey
 
@@ -18,7 +18,7 @@ ms.locfileid: "140325833"
 Mendapatkan kunci untuk runtime integrasi yang dihosting sendiri.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapseintegrationruntimekey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapseintegrationruntimekey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ Get-AzSynapseIntegrationRuntimeKey -InputObject <PSIntegrationRuntime>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseIntegrationRuntimeKey** mendapatkan kunci untuk runtime integrasi. Tombol digunakan untuk mendaftarkan node runtime integrasi.
+Cmdlet **Get-AzSynapseIntegrationRuntimeKey** mendapatkan kunci untuk runtime integrasi. Kunci digunakan untuk mendaftarkan simpul runtime integrasi.
 
 ## EXAMPLES
 
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya dari runtime integrasi Synapse.
+Pengidentifikasi sumber daya runtime integrasi Synapse.
 
 ```yaml
 Type: System.String
@@ -135,7 +135,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

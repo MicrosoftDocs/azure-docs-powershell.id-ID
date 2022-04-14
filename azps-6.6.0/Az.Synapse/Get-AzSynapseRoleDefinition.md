@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseRoleDefinition.md
 ms.openlocfilehash: 31a71306e1f510eda75871034c192b71cf8a9945
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140129967"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141901989"
 ---
 # Get-AzSynapseRoleDefinition
 
@@ -18,7 +18,7 @@ ms.locfileid: "140129967"
 Mendapatkan definisi peran Analitik Synapse.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapseroledefinition) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapseroledefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +48,7 @@ Get-AzSynapseRoleDefinition -WorkspaceObject <PSSynapseWorkspace> [-Name <String
 
 ## DESCRIPTION
 Cmdlet **Get-AzSynapseRoleDefinition** mendapatkan Definisi Peran Analitik Azure Synapse.
-Jika Anda tidak menentukan nama peran atau Id peran, cmdlet ini akan mendapatkan semua definisi peran.
+Jika Anda tidak menentukan nama peran atau ID peran, cmdlet ini mendapatkan semua definisi peran.
 
 ## EXAMPLES
 
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id Peran yang ditetapkan kepada pokok.
+Id dari Peran yang ditetapkan untuk pokok.
 
 ```yaml
 Type: System.String
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Peran yang ditetapkan kepada pokok.
+Nama Peran yang ditetapkan untuk pokok.
 
 ```yaml
 Type: System.String
@@ -133,7 +133,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

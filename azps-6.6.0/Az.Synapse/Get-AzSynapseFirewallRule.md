@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseFirewallRule.md
 ms.openlocfilehash: e7e85d77e7bdf4446c602b72231c1c06b3d09cf0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140275763"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141902205"
 ---
 # Get-AzSynapseFirewallRule
 
@@ -18,7 +18,7 @@ ms.locfileid: "140275763"
 Mendapatkan Aturan Firewall Analitik Synapse.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapsefirewallrule) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsefirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Jika Anda tidak menentukan nama aturan, cmdlet ini akan mendapatkan semua aturan
 PS C:\> Get-AzSynapseFirewallRule -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace
 ```
 
-Perintah ini akan membuat semua aturan firewall ada di bawah ruang kerja.
+Perintah ini mendapatkan semua aturan firewall di bawah ruang kerja.
 
 ### Contoh 2
 ```powershell
@@ -60,7 +60,7 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Get-AzSynapseFirewallRule
 ```
 
-Perintah ini membuat semua aturan firewall dalam ruang kerja melalui saluran.
+Perintah ini mendapatkan semua aturan firewall di bawah ruang kerja melalui pipeline.
 
 ## PARAMETERS
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama aturan dinding firerwall untuk ruang kerja.
+Nama aturan firerwall untuk ruang kerja.
 
 ```yaml
 Type: System.String
@@ -109,7 +109,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

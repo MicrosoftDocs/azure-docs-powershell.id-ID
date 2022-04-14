@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azure.storage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/Storage/Commands.Storage/help/Remove-AzureStorageQueue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/Storage/Commands.Storage/help/Remove-AzureStorageQueue.md
-ms.openlocfilehash: 3a5a3df64e2b10bb68302bda21782550aa60b682d452ad4510cd23a959502341
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 544d019547616ab7fc37804e150115eacc8a0224
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132415865"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142103160"
 ---
 # Remove-AzureStorageQueue
 
@@ -28,11 +28,11 @@ Remove-AzureStorageQueue [-Name] <String> [-Force] [-PassThru] [-Context <IStora
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureStorageQueue** menghapus antrean penyimpanan.
+Cmdlet **Hapus-AzureStorageQueue** menghapus antrean penyimpanan.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus antrean penyimpanan menurut nama
+### Contoh 1: Menghapus antrean penyimpanan menurut nama
 ```
 PS C:\>Remove-AzureStorageQueue "ContosoQueue01"
 ```
@@ -50,7 +50,7 @@ Perintah ini menghapus semua antrean dengan nama yang dimulai dengan Contoso.
 
 ### -Konteks
 Menentukan konteks penyimpanan Azure.
-Untuk mendapatkan konteks penyimpanan, cmdlet New-AzureStorageContext cmdlet.
+Untuk mendapatkan konteks penyimpanan, cmdlet New-AzureStorageContext.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -79,8 +79,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan bahwa cmdlet ini **mengembalikan Boolean** yang mencerminkan keberhasilan operasi.
+Menunjukkan bahwa cmdlet ini mengembalikan **Boolean** yang mencerminkan keberhasilan operasi.
 Secara default, cmdlet ini tidak mengembalikan nilai.
 
 ```yaml
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -173,6 +173,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzureStorageQueue](./Get-AzureStorageQueue.md)
+[Dapatkan-AzureStorageQueue](./Get-AzureStorageQueue.md)
 
-[New-AzureStorageQueue](./New-AzureStorageQueue.md)
+[Antrean AzureStorage Baru](./New-AzureStorageQueue.md)

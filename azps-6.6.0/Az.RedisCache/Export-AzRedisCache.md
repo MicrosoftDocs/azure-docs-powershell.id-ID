@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Export-AzRedisCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Export-AzRedisCache.md
 ms.openlocfilehash: bb5ef6b3fdd57f93c43b41917fb1aa9bb6d73ac6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140461473"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142122875"
 ---
 # Export-AzRedisCache
 
 ## SYNOPSIS
-Mengekspor data dari Cache Azure Redis ke wadah.
+Mengekspor data dari Azure Redis Cache ke wadah.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.rediscache/export-azrediscache) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.rediscache/export-azrediscache) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Export-AzRedisCache [-ResourceGroupName <String>] -Name <String> -Prefix <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Export-AzRedisCache** mengekspor data dari Singgahan Azure Redis menjadi wadah.
+Cmdlet **Export-AzRedisCache** mengekspor data dari Azure Redis Cache ke wadah.
 
 ## EXAMPLES
 
@@ -39,12 +39,12 @@ Cmdlet **Export-AzRedisCache** mengekspor data dari Singgahan Azure Redis menjad
 PS C:\>Export-AzRedisCache -ResourceGroupName "ResourceGroup13" -Name "RedisCache06" -Prefix "blobprefix" -Container "https://mystorageaccount.blob.core.windows.net/container18?sv=2015-04-05&sr=c&sig=HezZtBZ3DURmEGDduauE7pvETY4kqlPI8JCNa8ATmaw%3D&st=2016-05-27T00%3A00%3A00Z&se=2016-05-28T00%3A00%3A00Z&sp=rwdl"
 ```
 
-Perintah ini mengekspor data dari contoh Cache Azure Redis ke wadah yang ditentukan oleh URL SAS.
+Perintah ini mengekspor data dari instans Cache Azure Redis ke dalam wadah yang ditentukan oleh URL SAS.
 
 ## PARAMETERS
 
-### -Container
-Menentukan URL Service SAS dari wadah tempat cmdlet ini mengekspor data. Anda dapat menghasilkan URL Service SAS menggunakan perintah PowerShell berikut: $storageAccountContext = New-AzStorageContext -StorageAccountName "storageName" -StorageAccountKey "key" $sasKeyForContainer = New-AzStorageContainerSASToken -Name "containername" -Permission "rwdl" -StartTime ([System.DateTime]::Now). AddMinutes(-15) -ExpiryTime ([System.DateTime]::Now). AddHours(5) -Context $storageAccountContext -FullUri Export-AzRedisCache -ResourceGroupName "ResourceGroupName" -Name "cacheName" -Prefix "blobprefix" -Container ($sasKeyForContainer)
+### -Kontainer
+Menentukan URL kontainer Service SAS tempat cmdlet ini mengekspor data. Anda dapat membuat URL SAS Layanan menggunakan perintah PowerShell berikut: $storageAccountContext = New-AzStorageContext -StorageAccountName "storageName" -StorageAccountKey "key" $sasKeyForContainer = New-AzStorageContainerSASToken -Name "containername" -Permission "rwdl" -StartTime ([System.DateTime]::Now). AddMinutes(-15) -ExpiryTime ([System.DateTime]::Now). AddHours(5) -Context $storageAccountContext -FullUri Export-AzRedisCache -ResourceGroupName "ResourceGroupName" -Name "cacheName" -Prefix "blobprefix" -Container ($sasKeyForContainer)
 
 ```yaml
 Type: System.String
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengindikasikan bahwa cmdlet ini mengembalikan Boolean yang mengindikasikan apakah operasi berhasil.
+Menunjukkan bahwa cmdlet ini mengembalikan Boolean yang menunjukkan apakah operasi berhasil.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -120,8 +120,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Prefix
-Menentukan prefiks yang akan digunakan untuk nama blob.
+### -Prefiks
+Menentukan prefiks yang digunakan untuk nama blob.
 
 ```yaml
 Type: System.String
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi cache.
+Menentukan nama grup sumber daya yang berisi singgahan.
 
 ```yaml
 Type: System.String
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -192,17 +192,17 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### System.Boolean
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, redis, cache, web, webapp, website
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, redis, cache, web, webapp, situs web
 
 ## RELATED LINKS
 
-[Import-AzRedisCache](./Import-AzRedisCache.md)
+[Impor-AzRedisCache](./Import-AzRedisCache.md)
 
 [New-AzRedisCache](./New-AzRedisCache.md)
 
-[Remove-AzRedisCache](./Remove-AzRedisCache.md)
+[Hapus-AzRedisCache](./Remove-AzRedisCache.md)
 
-[Reset-AzRedisCache](./Reset-AzRedisCache.md)
+[Atur Ulang-AzRedisCache](./Reset-AzRedisCache.md)
 
 [Set-AzRedisCache](./Set-AzRedisCache.md)
 

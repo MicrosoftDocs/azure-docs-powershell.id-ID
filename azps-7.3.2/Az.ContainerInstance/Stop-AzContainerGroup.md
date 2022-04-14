@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.containerinstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Stop-AzContainerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Stop-AzContainerGroup.md
-ms.openlocfilehash: edbe0ac6f1aa5eb340ac766abc9f21499d02f4b7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: aa61067867a05be92b4a36464a78ecfd4338ef75
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140201782"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141942189"
 ---
 # Stop-AzContainerGroup
 
 ## SYNOPSIS
 Menghentikan semua wadah dalam grup wadah.
-Hitung sumber daya yang akan ditangani, lalu tagihan akan berhenti.
+Sumber daya komputasi akan ditangani dan penagihan akan berhenti.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.containerinstance/stop-azcontainergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Stop-AzContainerGroup -Name <String> -ResourceGroupName <String> [-SubscriptionI
  [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### StopViaIdentity
+### StopViaIdentitas
 ```
 Stop-AzContainerGroup -InputObject <IContainerInstanceIdentity> [-DefaultProfile <PSObject>] [-PassThru]
  [-Confirm] [-WhatIf] [<CommonParameters>]
@@ -34,24 +37,24 @@ Stop-AzContainerGroup -InputObject <IContainerInstanceIdentity> [-DefaultProfile
 
 ## DESCRIPTION
 Menghentikan semua wadah dalam grup wadah.
-Hitung sumber daya yang akan ditangani, lalu tagihan akan berhenti.
+Sumber daya komputasi akan ditangani dan penagihan akan berhenti.
 
 ## EXAMPLES
 
-### Contoh 1: Menghentikan semua wadah dalam grup wadah
+### Contoh 1: Menghentikan semua kontainer dalam grup wadah
 ```powershell
 Stop-AzContainerGroup -Name test-cg -ResourceGroupName test-rg
 ```
 
 Perintah ini menghentikan semua wadah dalam grup wadah.
-Hitung sumber daya yang akan ditangani, lalu tagihan akan berhenti.
+Sumber daya komputasi akan ditangani dan penagihan akan berhenti.
 
-### Contoh 2: Hentikan semua wadah dalam grup wadah dengan pemipaan
+### Contoh 2: Hentikan semua kontainer dalam grup wadah dengan mempipa
 ```powershell
 Get-AzContainerGroup -Name test-cg -ResourceGroupName test-rg | Stop-AzContainerGroup
 ```
 
-Perintah ini menghentikan semua wadah dalam grup wadah dengan pemipaan.
+Perintah ini menghentikan semua wadah dalam grup wadah dengan mempipa.
 
 ## PARAMETERS
 
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.IContainerInstanceIdentity
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,8 +134,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -199,11 +202,11 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IContainerInstanceIdentity>: Parameter Identitas
   - `[ContainerGroupName <String>]`: Nama grup wadah.
-  - `[ContainerName <String>]`: Contoh nama wadah.
+  - `[ContainerName <String>]`: Nama instans kontainer.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Pengidentifikasi untuk lokasi azure fisik.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

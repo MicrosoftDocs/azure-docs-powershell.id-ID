@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.batch
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Set-AzureBatchPoolOSVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Set-AzureBatchPoolOSVersion.md
-ms.openlocfilehash: 91aa54eae410b4597d8135deb9a5e1ff208a3265be013acac7a23aa127191027
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: d85e0ca61b86e523c6d73ea8d2349d7d692aafb8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418995"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142100410"
 ---
 # Set-AzureBatchPoolOSVersion
 
 ## SYNOPSIS
-Mengubah versi sistem operasi dari pool yang ditentukan.
+Mengubah versi sistem operasi dari kumpulan yang ditentukan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,22 +28,22 @@ Set-AzureBatchPoolOSVersion [-Id] <String> [-TargetOSVersion] <String> -BatchCon
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureBatchPoolOSVersion** mengubah versi sistem operasi kumpulan tertentu.
+Cmdlet **Set-AzureBatchPoolOSVersion** mengubah versi sistem operasi dari kumpulan yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Set the target operating system version of a pool
+### Contoh 1: Atur versi sistem operasi target dari sebuah pool
 ```
 PS C:\>Set-AzureBatchPoolOSVersion -Id "MyPool" -TargetOSVersion "WA-GUEST-OS-4.20_201505-01" -BatchContext $Context
 ```
 
-Perintah ini mengatur versi sistem operasi target MyPool ke WA-GUEST-OS-4.20_201505-01.
+Perintah ini menetapkan versi sistem operasi target dari pool MyPool ke WA-GUEST-OS-4.20_201505-01.
 
 ## PARAMETERS
 
 ### -BatchContext
-Menentukan contoh **BatchAccountContext** yang digunakan cmdlet untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID pool.
+Menentukan ID kumpulan.
 
 ```yaml
 Type: System.String
@@ -88,8 +88,8 @@ Accept wildcard characters: False
 ```
 
 ### -TargetOSVersion
-Menentukan versi sistem operasi Azure Guest untuk diinstal pada komputer virtual di pool.
-Untuk informasi selengkapnya tentang versi sistem operasi Azure Guest, lihat Rilis Azure Guest OS dan Matriks Kompatibilitas SDK https://azure.microsoft.com/en-us/documentation/articles/cloud-services-guestos-update-matrix/ ( https://azure.microsoft.com/en-us/documentation/articles/cloud-services-guestos-update-matrix/) .
+Menentukan versi sistem operasi Azure Guest untuk diinstal pada mesin virtual di pool.
+Untuk informasi selengkapnya tentang versi sistem operasi Azure Guest, lihat Rilis OS Tamu Azure dan Matrikshttps://azure.microsoft.com/en-us/documentation/articles/cloud-services-guestos-update-matrix/ Kompatibilitas SDK (https://azure.microsoft.com/en-us/documentation/articles/cloud-services-guestos-update-matrix/).
 
 ```yaml
 Type: System.String
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Set-AzSearchService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Set-AzSearchService.md
 ms.openlocfilehash: e9ee30cd096c0860138a2b2f00cdf8d7d56a9352
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140305303"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142121867"
 ---
 # Set-AzSearchService
 
 ## SYNOPSIS
-Perbarui layanan Pencarian Kognitif Azure.
+Memperbarui layanan Azure Cognitive Search.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.search/set-azsearchservice) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.search/set-azsearchservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Set-AzSearchService [-ResourceId] <String> [-PartitionCount <Int32>] [-ReplicaCo
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSearchService** mengubah layanan Pencarian Kognitif Azure.
+Cmdlet **Set-AzSearchService** mengubah layanan Azure Cognitive Search.
 
 ## EXAMPLES
 
@@ -65,7 +65,7 @@ HostingMode       : Default
 Tags              :
 ```
 
-Contoh tersebut mengubah jumlah partisi dan hitungan replika layanan Pencarian Kognitif Azure menjadi 2.
+Contoh mengubah jumlah partisi dan hitungan replika layanan Azure Cognitive Search menjadi 2.
 
 ## PARAMETERS
 
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-(Opsional) Identitas Layanan Pencarian Kognitif Azure (Tidak Ada/SystemAssigned)
+(Opsional) Azure Cognitive Search Service Identity (None/SystemAssigned)
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.Management.Search.Models.PSIdentityType]
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -IPRuleList
-(Opsional) Aturan IP Azure Cognitive Search Service
+(Opsional) aturan IP layanan Azure Cognitive Search
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Search.Models.PSIpRule[]
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Cari Nama Layanan.
+Nama Layanan Pencarian.
 
 ```yaml
 Type: System.String
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartitionCount
-Cari jumlah partisi layanan.
+Hitungan partisi Layanan Pencarian.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccess
-(Opsional) Akses jaringan publik Layanan Pencarian Kognitif Azure (Diaktifkan/Dinonaktifkan)
+(Opsional) akses jaringan publik Layanan Azure Cognitive Search (Diaktifkan/Dinonaktifkan)
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.Management.Search.Models.PSPublicNetworkAccess]
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicaCount
-Jumlah replika Layanan Pencarian.
+Hitungan replika Layanan Pencarian.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Search Service Resource Id.
+Id Sumber Daya Layanan Pencarian.
 
 ```yaml
 Type: System.String
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -250,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

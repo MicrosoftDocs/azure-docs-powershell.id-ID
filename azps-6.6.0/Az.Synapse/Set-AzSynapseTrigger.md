@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseTrigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseTrigger.md
 ms.openlocfilehash: 7e4426a9239beb91f223cd9c84edfe6f9390202e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140498361"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141901287"
 ---
 # Set-AzSynapseTrigger
 
 ## SYNOPSIS
-Membuat pemicu di ruang kerja.
+Membuat pemicu dalam ruang kerja.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/set-azsynapsetrigger) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/set-azsynapsetrigger) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Set-AzSynapseTrigger -WorkspaceObject <PSSynapseWorkspace> -Name <String> -Defin
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSynapseTrigger** membuat pemicu di ruang kerja. Pemicu dibuat dalam status 'Dihentikan', yang berarti bahwa pemicu tidak langsung memulai saluran yang mereka referensikan.
+Cmdlet **Set-AzSynapseTrigger** membuat pemicu dalam ruang kerja. Pemicu dibuat dalam status 'Dihentikan', yang berarti bahwa pemicu tidak langsung memulai pemicu yang dirujuknya.
 
 ## EXAMPLES
 
@@ -44,7 +44,7 @@ Cmdlet **Set-AzSynapseTrigger** membuat pemicu di ruang kerja. Pemicu dibuat dal
 PS C:\> Set-AzSynapseTrigger -WorkspaceName ContosoWorkspace -Name ContosoTrigger -DefinitionFile ".\scheduledTrigger.json"
 ```
 
-Buat pemicu baru yang disebut ContosoTrigger di ruang kerja ContosoWorkspace. Pemicu dibuat dalam status 'Dihentikan', yang berarti pemicu tidak segera dimulai. Pemicu dapat mulai menggunakan `Start-AzDataFactoryV2Trigger` cmdlet.
+Buat pemicu baru yang disebut ContosoTrigger di ruang kerja ContosoWorkspace. Pemicu dibuat dalam status 'Dihentikan', yang berarti pemicu tidak langsung dimulai. Pemicu dapat dimulai menggunakan `Start-AzDataFactoryV2Trigger` cmdlet.
 
 ### Contoh 2
 ```powershell
@@ -52,12 +52,12 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Set-AzSynapseTrigger -Name ContosoTrigger -DefinitionFile ".\scheduledTrigger.json"
 ```
 
-Buat pemicu baru yang disebut ContosoTrigger di ruang kerja ContosoWorkspace melalui pipeline. Pemicu dibuat dalam status 'Dihentikan', yang berarti pemicu tidak segera dimulai. Pemicu dapat mulai menggunakan `Start-AzDataFactoryV2Trigger` cmdlet.
+Buat pemicu baru yang disebut ContosoTrigger di ruang kerja ContosoWorkspace melalui pipeline. Pemicu dibuat dalam status 'Dihentikan', yang berarti pemicu tidak langsung dimulai. Pemicu dapat dimulai menggunakan `Start-AzDataFactoryV2Trigger` cmdlet.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -116,7 +116,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

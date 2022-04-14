@@ -3,12 +3,12 @@ external help file: Microsoft.WindowsAzure.Commands.dll-Help.xml
 ms.assetid: D7EB9FE4-BDEB-43A5-B6D3-FEAB16BC2711
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: b5f5d719b8eabe842bb4d4882bb0bdef9c8de4c580b9e6e7361c29243fe987d8
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: fbe6d2e6b415b8771a15d089ff4b22599816f485
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419226"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141921060"
 ---
 # Get-WAPackVMRole
 
@@ -34,37 +34,37 @@ Get-WAPackVMRole -Name <String> -CloudServiceName <String> [-Profile <AzureSMPro
 ```
 
 ## DESCRIPTION
-Topik ini sudah tidak berlaku dan akan dihapus di masa mendatang.
-Topik ini menguraikan cmdlet dalam versi 0.8.1 modul Microsoft Azure PowerShell ini.
-Untuk mencari tahu versi modul yang Anda gunakan, dari konsol Azure PowerShell, ketikkan `(Get-Module -Name Azure).Version` .
+Topik ini ditolak dan akan dihapus di masa mendatang.
+Topik ini menjelaskan cmdlet dalam versi 0.8.1 modul Microsoft Azure PowerShell.
+Untuk mengetahui versi modul yang Anda gunakan, dari konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version`.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan peran mesin virtual (dibuat melalui portal)
+### Contoh 1: Dapatkan peran mesin virtual (dibuat melalui portal)
 ```
 PS C:\> Get-WAPackVMRole -Name "ContosoVMRole01"
 ```
 
 Perintah ini mendapatkan peran mesin virtual yang telah dibuat melalui portal bernama ContosoVMRole01.
 
-### Contoh 2: Mendapatkan peran mesin virtual menggunakan nama dan nama layanan cloud
+### Contoh 2: Dapatkan peran mesin virtual dengan menggunakan nama dan nama layanan awan
 ```
 PS C:\> Get-WAPackVMRole -CloudServiceName "ContosoCloudService01" -Name "ContosoVMRole02"
 ```
 
 Perintah ini mendapatkan peran mesin virtual bernama ContosoVMRole02 yang berdiri di layanan awan bernama ContosoCloudService01.
 
-### Contoh 3: Mendapatkan semua peran mesin virtual
+### Contoh 3: Dapatkan semua peran mesin virtual
 ```
 PS C:\> Get-WAPackVMRole
 ```
 
-Perintah ini mendapatkan semua peran mesin virtual yang ada.
+Perintah ini mendapatkan semua peran mesin virtual yang sudah ada.
 
 ## PARAMETERS
 
 ### -CloudServiceName
-Menentukan nama layanan awan dari peran mesin virtual.
+Menentukan nama layanan cloud peran mesin virtual.
 
 ```yaml
 Type: String
@@ -94,8 +94,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -122,8 +122,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-WAPackVMRole](./New-WAPackVMRole.md)
 
-[Remove-WAPackVMRole](./Remove-WAPackVMRole.md)
+[Hapus-WAPackVMRole](./Remove-WAPackVMRole.md)
 
-[Set-WAPackvMRole](./Set-WAPackVMRole.md)
+[Set-WAPackVMRole](./Set-WAPackVMRole.md)
 
 

@@ -5,11 +5,11 @@ ms.assetid: 7C8B47B4-2F6A-45EF-A351-88C8C3F9D0D3
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/set-azurermapplicationgateway
 schema: 2.0.0
 ms.openlocfilehash: 1b852be30b513963f5d311940162078bdf6f692a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428251"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141781037"
 ---
 # Set-AzureRmApplicationGateway
 
@@ -35,12 +35,12 @@ Cmdlet **Set-AzureRmApplicationGateway** memperbarui gateway aplikasi Azure.
 PS C:\>$UpdatedAppGw = Set-AzureRmApplicationGateway -ApplicationGateway $AppGw
 ```
 
-Perintah ini memperbarui gateway aplikasi dengan pengaturan di variabel $AppGw dan menyimpan gateway yang diperbarui di $UpdatedAppGw variabel.
+Perintah ini memperbarui gateway aplikasi dengan pengaturan dalam variabel $AppGw dan menyimpan gateway yang diperbarui dalam variabel $UpdatedAppGw.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan objek gateway aplikasi mewakili status yang harus disetel gateway aplikasi.
+Menentukan objek gateway aplikasi yang mewakili status di mana gateway aplikasi harus diatur.
 
 ```yaml
 Type: PSApplicationGateway
@@ -55,7 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -85,12 +85,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSApplicationGateway
-Parameter 'ApplicationGateway' menerima nilai tipe 'PSApplicationGateway' dari saluran
+Parameter 'ApplicationGateway' menerima nilai tipe 'PSApplicationGateway' dari pipeline
 
 ## OUTPUTS
 

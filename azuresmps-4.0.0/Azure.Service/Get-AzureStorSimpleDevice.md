@@ -4,16 +4,16 @@ ms.assetid: C5A2A8D2-A840-4712-A8BD-F49C6063D193
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: e1dec13a7166f851be19cd1b7c798c4fa91c0fcb
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428086"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141921543"
 ---
 # Get-AzureStorSimpleDevice
 
 ## SYNOPSIS
-Lampirkan perangkat ke sumber daya.
+Membuat perangkat terpasang ke sumber daya.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,26 +25,26 @@ Get-AzureStorSimpleDevice [-Type <String>] [-ModelID <String>] [-Detailed] [-Pro
  [<CommonParameters>]
 ```
 
-### IdentifyById
+### IdentifikasiById
 ```
 Get-AzureStorSimpleDevice [-DeviceId <String>] [-Type <String>] [-ModelID <String>] [-Detailed]
  [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
 
-### IdentifyByName
+### IdentifikasiByName
 ```
 Get-AzureStorSimpleDevice [-DeviceName <String>] [-Type <String>] [-ModelID <String>] [-Detailed]
  [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureStorSimpleDevice** mendapatkan daftar perangkat StorSimple yang terhubung ke sumber daya.
-Anda bisa menentukan ID perangkat, nama, ID model, dan tipe.
+Cmdlet **Get-AzureStorSimpleDevice** mendapatkan daftar perangkat StorSimple yang dilampirkan ke sumber daya.
+Anda dapat menentukan ID perangkat, nama, ID model, dan tipe.
 Gunakan properti **DeviceID** yang diperoleh dengan menggunakan cmdlet ini untuk menentukan perangkat untuk cmdlet StorSimple lainnya.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan perangkat yang tersedia pada sumber daya
+### Contoh 1: Dapatkan perangkat yang tersedia di sumber daya
 ```
 PS C:\>Get-AzureStorSimpleDevice
 DeviceId                  : 6f9ab151-39c7-4ded-b7d0-f5b0968f2766
@@ -96,10 +96,10 @@ TotalStorageInBytes       : 549755813888000
 UsingStorageInBytes       : 978893799424
 ```
 
-Perintah ini akan menyediakan semua perangkat yang ada pada sumber daya.
+Perintah ini mendapatkan semua perangkat yang tersedia di sumber daya.
 Dalam contoh ini, hanya satu perangkat yang tersedia.
 
-### Contoh 2: Dapatkan perangkat tertentu yang tersedia pada sumber daya
+### Contoh 2: Dapatkan perangkat tertentu yang tersedia di sumber daya
 ```
 PS C:\>Get-AzureStorSimpleDevice -DeviceName "8600-SHX90193XXXXXXX" -Type Appliance -ModelId "8600"
 DeviceId                  : f9db31da-8a6c-4718-8f5b-5ce89e600f28
@@ -119,7 +119,7 @@ TotalStorageInBytes       : 549755813888000
 UsingStorageInBytes       : 14445182976
 ```
 
-Perintah ini akan memberikan semua perangkat yang tersedia pada sumber daya dengan nama, tipe, dan ID model yang ditentukan.
+Perintah ini mendapatkan semua perangkat yang tersedia di sumber daya yang memiliki nama, tipe, dan ID model tertentu.
 
 ### Contoh 3: Dapatkan detail untuk perangkat
 ```
@@ -143,14 +143,14 @@ VirtualApplianceProperties     : Microsoft.WindowsAzure.Management.StorSimple.Mo
 WebProxy                       : Microsoft.WindowsAzure.Management.StorSimple.Models.WebProxySettings
 ```
 
-Perintah ini menetapkan semua perangkat yang tersedia pada sumber daya dengan nama dan tipe yang ditentukan.
-Perintah ini menentukan parameter *Mendetail.*
-Perintah menyediakan detail tambahan tentang perangkat yang dikembalikannya.
+Perintah ini mendapatkan semua perangkat yang tersedia di sumber daya yang memiliki nama dan tipe yang ditentukan.
+Perintah ini menentukan parameter *Mendetail* .
+Perintah ini menyediakan detail tambahan tentang perangkat yang dikembalikannya.
 
 ## PARAMETERS
 
 ### -Detail
-Menunjukkan bahwa cmdlet ini mengembalikan detail perangkat untuk perangkat yang didaurkan.
+Menunjukkan bahwa cmdlet ini mengembalikan detail perangkat untuk perangkat yang didapatkannya.
 
 ```yaml
 Type: SwitchParameter
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceId
-Menentukan ID instans perangkat untuk mendapatkannya.
+Menentukan ID instans perangkat yang akan didapatkan.
 
 ```yaml
 Type: String
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceName
-Menentukan nama perangkat StorSimple untuk mendapatkan.
+Menentukan nama perangkat StorSimple yang akan didapatkan.
 
 ```yaml
 Type: String
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -ModelID
-Menentukan ID dari model perangkat StorSimple yang akan dapatkan.
+Menentukan ID model perangkat StorSimple untuk didapatkan.
 
 ```yaml
 Type: String
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 
 ### -Tipe
 Menentukan tipe perangkat StorSimple.
-Nilai valid adalah: Perlengkapan dan Aplikasi Virtual.
+Nilai yang valid adalah: Peralatan dan VirtualAppliance.
 
 ```yaml
 Type: String
@@ -241,17 +241,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
-### Daftar, \<DeviceDetails\> IEnumerable\<DeviceInfo\>
-Cmdlet ini mengembalikan **objek \<DeviceDetails\> List,** jika Anda menentukan parameter *Detail.*
-Jika Anda tidak menentukan parameter tersebut, parameter tersebut mengembalikan **objek IEnumerable. \<DeviceInfo\>**
+### Daftar\<DeviceDetails\>, IEnumerable\<DeviceInfo\>
+Cmdlet ini mengembalikan objek **Daftar\<DeviceDetails\>** , jika Anda menentukan parameter *Mendetail* .
+Jika Anda tidak menentukan parameter tersebut, maka akan mengembalikan objek **IEnumerable\<DeviceInfo\>** .
 
 ## CATATAN
 

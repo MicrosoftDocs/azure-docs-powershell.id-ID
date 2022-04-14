@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/New-AzRedisEnterpriseCacheKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/New-AzRedisEnterpriseCacheKey.md
 ms.openlocfilehash: 9bc3f79a8873561018e63ab72da8ada8bacfaa99
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140132361"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142122731"
 ---
 # New-AzRedisEnterpriseCacheKey
 
@@ -18,7 +18,7 @@ ms.locfileid: "140132361"
 Meregenerasi kunci akses untuk database Redis Enterprise.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.redisenterprisecache/new-azredisenterprisecachekey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.redisenterprisecache/new-azredisenterprisecachekey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Meregenerasi kunci akses untuk database Redis Enterprise.
 
 ## EXAMPLES
 
-### Contoh 1: Regenerasi kunci akses utama
+### Contoh 1: Meregenerasi kunci akses utama
 ```powershell
 PS C:\> New-AzRedisEnterpriseCacheKey -Name "MyCache" -ResourceGroupName "MyGroup" -KeyType "Primary"
 
@@ -43,9 +43,9 @@ new-primary-key                              secondary-key
 
 ```
 
-Perintah ini meregenerasi kunci akses rahasia utama yang digunakan untuk mengotentikan koneksi ke database singgahan Redis Enterprise bernama MyCache.
+Perintah ini meregenerasi kunci akses rahasia utama yang digunakan untuk mengautentikasi koneksi ke database singgahan Redis Enterprise bernama MyCache.
 
-### Contoh 2: Meregenerasi tombol akses sekunder
+### Contoh 2: Meregenerasi kunci akses sekunder
 ```powershell
 PS C:\> New-AzRedisEnterpriseCacheKey -Name "MyCache" -ResourceGroupName "MyGroup" -KeyType "Secondary"
 
@@ -55,7 +55,7 @@ primary-key                                  new-secondary-key
 
 ```
 
-Perintah ini meregenerasi kunci akses rahasia sekunder yang digunakan untuk mengotentikan koneksi ke database singgahan Redis Enterprise bernama MyCache.
+Perintah ini meregenerasi kunci akses rahasia sekunder yang digunakan untuk mengautentikasi koneksi ke database singgahan Redis Enterprise bernama MyCache.
 
 ## PARAMETERS
 
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyType
-Yang merupakan kunci akses untuk meregenerasi.
+Kunci akses mana yang akan diregenerasi.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.RedisEnterpriseCache.Support.AccessKeyType
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -4,16 +4,16 @@ ms.assetid: 3EC274C9-9BF6-4B39-BC70-C7F9D780805D
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 58f7f4ed7dc4533fe230e656f41bde2cc8ec8531
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426542"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141921772"
 ---
 # Get-AzureSiteRecoveryServer
 
 ## SYNOPSIS
-Gets Site Recovery servers registered a Site Recovery vault.
+Mendapatkan server Site Recovery terdaftar di kubah Site Recovery.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -35,11 +35,11 @@ Get-AzureSiteRecoveryServer -Name <String> [-Profile <AzureSMProfile>] [<CommonP
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureSiteRecoveryServer** mendapatkan informasi tentang server Pemulihan Situs Azure yang terdaftar di vault Pemulihan Situs saat ini.
+Cmdlet **Get-AzureSiteRecoveryServer** mendapatkan informasi tentang server Azure Site Recovery yang terdaftar ke kubah Site Recovery saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan informasi tentang server Pemulihan Situs
+### Contoh 1: Mendapatkan informasi tentang server Site Recovery
 ```
 PS C:\> Get-AzureSiteRecoveryServer
 ID              : cd7dec80-1144-4531-9ab3-888b8ab39bee
@@ -55,7 +55,7 @@ ProviderVersion : 3.5
 ServerVersion   : 3.2.7510.0
 ```
 
-Perintah ini mendapatkan informasi tentang server Pemulihan Situs Azure.
+Perintah ini mendapatkan informasi tentang server Site Recovery Azure.
 
 ## PARAMETERS
 
@@ -90,8 +90,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

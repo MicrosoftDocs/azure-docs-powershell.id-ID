@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/Set-AzureRmBackupProtectionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/Set-AzureRmBackupProtectionPolicy.md
 ms.openlocfilehash: caf6394ce84b18bd8e36b4504173fe7f7bb07fac
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422197"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141780122"
 ---
 # Set-AzureRmBackupProtectionPolicy
 
 ## SYNOPSIS
-Mengubah kebijakan proteksi yang sudah ada.
+Mengubah kebijakan perlindungan yang sudah ada.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -36,7 +36,7 @@ Set-AzureRmBackupProtectionPolicy [[-NewName] <String>] [-Daily] [[-BackupTime] 
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### WeeklyScheduleParamSet
+### MingguanScheduleParamSet
 ```
 Set-AzureRmBackupProtectionPolicy [[-NewName] <String>] [-Weekly] [[-BackupTime] <DateTime>]
  [[-RetentionPolicy] <AzureRMBackupRetentionPolicy[]>] [[-DaysOfWeek] <String[]>]
@@ -45,20 +45,20 @@ Set-AzureRmBackupProtectionPolicy [[-NewName] <String>] [-Weekly] [[-BackupTime]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmBackupProtectionPolicy** mengubah kebijakan proteksi yang sudah ada di Azure Backup.
-Anda bisa memodifikasi komponen kebijakan proteksi berikut ini: 
+Cmdlet **Set-AzureRmBackupProtectionPolicy** mengubah kebijakan proteksi yang sudah ada dalam Azure Backup.
+Anda dapat mengubah komponen kebijakan proteksi berikut: 
 - Nama
-- Jadwal pencadangan
-- Kebijakan penyimpanan Perubahan apa pun dapat mempengaruhi pencadangan dan penyimpanan item yang terkait dengan kebijakan tersebut.
+- Jadwal cadangan
+- Kebijakan penyimpanan Perubahan apa pun dapat memengaruhi pencadangan dan penyimpanan item yang terkait dengan kebijakan.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -BackupTime
-Menentukan waktu pencadangan hari yang baru, sebagai objek **DateTime,** untuk kebijakan tersebut.
-Untuk mendapatkan objek **DateTime,** gunakan cmdlet Get-Date.
-Untuk informasi tentang **objek DateTime,** ketik `Get-Help Get-Date` .
+Menentukan waktu pencadangan baru hari ini, sebagai objek **DateTime** , untuk kebijakan tersebut.
+Untuk mendapatkan objek **DateTime** , gunakan cmdlet Get-Date.
+Untuk informasi tentang objek **DateTime**, ketik .`Get-Help Get-Date`
 
 ```yaml
 Type: System.DateTime
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Harian
-Menunjukkan bahwa operasi pencadangan berjalan sesuai jadwal Harian.
+Menunjukkan bahwa operasi pencadangan berjalan pada jadwal Harian.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 
 ### -DaysOfWeek
 Menentukan array hari dalam seminggu.
-Kebijakan ini menjalankan pencadangan pada hari-hari yang ditentukan oleh parameter ini.
+Kebijakan ini menjalankan pencadangan pada hari yang ditentukan oleh parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Senin 
 - Selasa 
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 
 ### -NewName
 Menentukan nama baru untuk kebijakan tersebut.
-Nama ini harus unik di dalam vault.
+Nama ini harus unik dalam kubah.
 
 ```yaml
 Type: System.String
@@ -144,8 +144,8 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionPolicy
-Menentukan kebijakan proteksi yang ditentukan cmdlet ini.
-Untuk mendapatkan objek **AzureRmBackupProtectionPolicy,** gunakan cmdlet Get-AzureRmBackupProtectionPolicy baru.
+Menentukan kebijakan proteksi yang diubah cmdlet ini.
+Untuk mendapatkan objek **AzureRmBackupProtectionPolicy** , gunakan cmdlet Get-AzureRmBackupProtectionPolicy.
 
 ```yaml
 Type: Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupProtectionPolicy
@@ -160,8 +160,8 @@ Accept wildcard characters: False
 ```
 
 ### -RetentionPolicy
-Menentukan array kebijakan penyimpanan untuk kebijakan pencadangan.
-Untuk mendapatkan **objek AzureRmBackupRetentionPolicy,** gunakan cmdlet New-AzureRmBackupRetentionPolicyObject cmdlet.
+Menentukan array kebijakan penyimpanan untuk kebijakan cadangan.
+Untuk mendapatkan objek **AzureRmBackupRetentionPolicy** , gunakan cmdlet New-AzureRmBackupRetentionPolicyObject.
 
 ```yaml
 Type: Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupRetentionPolicy[]
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

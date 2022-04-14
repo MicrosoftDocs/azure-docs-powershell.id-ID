@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Update-AzSentinelIncident.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Update-AzSentinelIncident.md
 ms.openlocfilehash: 4b34003c537952175c07556e5f3e7fe4a409db4e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140304547"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142121291"
 ---
 # Update-AzSentinelIncident
 
@@ -18,7 +18,7 @@ ms.locfileid: "140304547"
 Memperbarui Insiden
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.securityinsights/update-azsentinelincident) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/update-azsentinelincident) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,8 +52,8 @@ Update-AzSentinelIncident -ResourceId <String> [-Classification <String>] [-Clas
 
 ## DESCRIPTION
 Cmdlet **Update-AzSentinelIncident** memperbarui Insiden di ruang kerja yang ditentukan.
-Anda bisa melewati **objek Insiden** sebagai parameter atau dengan menggunakan operator pipeline, atau alternatifnya Anda bisa menentukan parameter yang diperlukan.
-Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
+Anda dapat melewati objek **Insiden** sebagai parameter atau menggunakan operator pipeline, atau menentukan parameter yang diperlukan.
+Anda dapat menggunakan variabel *Konfirmasi* parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
 
 ## EXAMPLES
 
@@ -62,7 +62,7 @@ Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Window
 PS C:\> Update-AzSentinelIncident -ResourceGroupName "myResourceGroup" -WorkspaceName "myWorkspaceName" -IncidentId "myIncidentId" -Severity High
 ```
 
-Contoh ini mendapatkan Insiden menurut *IncidentId* dan mengatur *properti Keparahan* ke *Tinggi*.  Semua properti lainnya tetap tidak berubah.
+Contoh ini mendapatkan Insiden menurut *IncidentId* dan mengatur properti *Tingkat Keparahan* ke *Tinggi*.  Semua properti lainnya tetap tidak berubah.
 
 ### Contoh 2
 ```powershell
@@ -70,17 +70,17 @@ $ownerObject = @{"AssignedTo" = "John Doe"; "Email" = "johndoe@contoso.com"; "Ob
 Update-AzSentinelIncident -ResourceGroupName "myResourceGroup" -WorkspaceName "myWorkspaceName"  -IncidentId a4b586c8-97d8-4cc5-9154-b723c62d26d8 -Owner $ownerObject
 ```
 
-Contoh ini membuat "objek *pemilik*" terlebih dahulu yang berisi informasi pemilik, lalu cmdlet **Update-AzSentinelIncident** digunakan untuk melewati ownerObject untuk memperbarui insiden. <br/><br/>
+Contoh ini pertama-tama membuat "*objek pemilik*" yang berisi informasi pemilik, lalu cmdlet **Update-AzSentinelIncident** digunakan untuk melewati pemilikObject untuk memperbarui insiden. <br/><br/>
 
-*Catatan: ObjectId pemilik dapat ditemukan di bawah tampilan detail pengguna di bawah Azure Active Directory. Jika Anda ingin mengotomatisasi pengambilan ObjectId melalui scripting, Anda bisa memanfaatkan modul Azure Active Directory PowerShell, seperti ini: Get-AzureADUser -ObjectId "johndoe@contoso.com".*
+*Catatan: ObjectId pemilik dapat ditemukan di bawah tampilan detail pengguna di bawah Azure Active Directory. Jika ingin mengotomatisasi pengambilan ObjectId melalui scripting, Anda dapat memanfaatkan modul powerShell Azure Active Directory, seperti ini: Get-AzureADUser -ObjectId "johndoe@contoso.com".*
 
 ### Contoh 3
 ```powershell
 Update-AzSentinelIncident -ResourceGroupName "myResourceGroup" -WorkspaceName "myWorkspaceName"  -IncidentID "561c5184-f8da-4d8b-8544-c89e422bbf6f" -Classification FalsePositive -Status "Closed"
 ```
 
-Contoh ini menutup insiden tertentu dengan **Klasifikasi** "Positif False" <br/>
-*Catatan: menyediakan Klasifikasi saat ditutup wajib dilakukan*
+Contoh ini menutup insiden tertentu dengan **Klasifikasi** "False Positif" <br/>
+*Catatan: menyediakan Klasifikasi saat penutupan adalah wajib*
 
 ### Contoh 4
 ```powershell
@@ -88,12 +88,12 @@ Update-AzSentinelIncident -ResourceGroupName "myResourceGroup" -WorkspaceName "m
 -IncidentID "561c5184-f8da-4d8b-8544-c89e422bbf6f" -Classification FalsePositive  -ClassificationComment "my comment" -ClassificationReason InaccurateData -Status "Closed"
 ```
 
-Contoh ini menutup insiden tertentu dan menyediakan komentar klasifikasi dan alasan
+Contoh ini menutup insiden tertentu dan memberikan komentar klasifikasi dan alasan
 
 ## PARAMETERS
 
-### -Classification
-Incident Classificaiton.
+### -Klasifikasi
+Insiden Classificaiton.
 
 ```yaml
 Type: System.String
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClassificationComment
-Komentar Kelas Insiden.
+Komentar Classificaiton Insiden.
 
 ```yaml
 Type: System.String
@@ -123,8 +123,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ClassificationReason
-Incident Classificaiton Reason.
+### -KlasifikasiReason
+Insiden Alasan Classificaiton.
 
 ```yaml
 Type: System.String
@@ -306,7 +306,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama Ruang Kerja.
 
 ```yaml
@@ -322,7 +322,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -338,7 +338,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -353,7 +353,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -361,7 +361,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Collections.Generic.IList'1[[Microsoft.Azure.Commands.SecurityInsights.Models.Incidents.PSSentinelIncidentLabel, Microsoft.Azure.PowerShell.Cmdlets.SecurityInsights, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.IList'1[[Microsoft.Azure.Commands.SecurityInsights.Models.Incidents.PSSentinelIncidentLabel, Microsoft.Azure.PowerShell.Cmdlets.SecurityInsights, Version=0.1.0.0, Culture=netral, PublicKeyToken=null]]
 
 ### Microsoft.Azure.Commands.SecurityInsights.Models.Incidents.PSSentinelIncidentOwner
 

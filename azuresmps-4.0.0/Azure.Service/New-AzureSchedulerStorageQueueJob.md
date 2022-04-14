@@ -4,16 +4,16 @@ ms.assetid: 7247CF85-78B0-4837-9162-F66077668A74
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 87281bb43bd13699b244d58ee3130e508d8b6db6
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421143"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141920613"
 ---
 # New-AzureSchedulerStorageQueueJob
 
 ## SYNOPSIS
-Membuat pekerjaan penjadwal yang memiliki Storage jadwal.
+Membuat pekerjaan penjadwal yang memiliki tindakan Storage.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -38,37 +38,37 @@ New-AzureSchedulerStorageQueueJob [-StorageQueueMessage <String>] [-Interval <In
 ```
 
 ## DESCRIPTION
-Topik ini menguraikan cmdlet dalam modul Microsoft Azure PowerShell versi 0.8.10.
-Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Topik ini menjelaskan cmdlet dalam versi 0.8.10 modul Microsoft Azure PowerShell.
+Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik .`(Get-Module -Name Azure).Version`
 
-Cmdlet **New-AzureSchedulerStorageQueueJob** membuat pekerjaan penjadwal yang memiliki Azure Storage jadwal.
+Cmdlet **New-AzureSchedulerStorageQueueJob** membuat pekerjaan penjadwal yang memiliki tindakan Azure Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Buat pekerjaan Storage yang dijalankan sekali
+### Contoh 1: Membuat pekerjaan Storage yang berjalan sekali
 ```
 PS C:\> New-AzureSchedulerStorageQueueJob -JobCollectionName "JobCollection01" -JobName "Job01" -Location "North Central US" -StorageQueueAccount "ContosoStorageAccount" -StorageQueueName "ContosoStorageQueue" -SASToken "?sv=2012-02-12&si=samplePolicy%2F30%2F2014%206%3A37%3A36%20PM&sig=vLQEbSfZbTFh7q3YrzlxBeL%2BjiYKp0gE6lMJ0a5Nb4M%3D"
 ```
 
-Perintah ini membuat penjadwal Storage pekerjaan sebagai bagian dari kumpulan bernama JobCollection01.
-Perintah menentukan cara Storage, nama antrean, dan token SAS.
-Pekerjaan berjalan sekali saja, dengan segera.
+Perintah ini membuat pekerjaan Storage penjadwal sebagai bagian dari koleksi bernama JobCollection01.
+Perintah menentukan akun Storage, nama antrean, dan token SAS.
+Pekerjaan berjalan sekali, segera.
 
-### Contoh 2: Membuat Storage pekerjaan yang menjalankan sejumlah waktu tertentu
+### Contoh 2: Membuat pekerjaan Storage yang menjalankan jumlah waktu tertentu
 ```
 PS C:\> New-AzureSchedulerStorageQueueJob -JobCollectionName "JobCollection01" -JobName "Job12" -Location "North Central US"-StorageQueueAccount "ContosoStorageAccount" -StorageQueueName "ContosoStorageQueue" -SASToken "?sv=2012-02-12&si=samplePolicy%2F30%2F2014%206%3A37%3A36%20PM&sig=vLQEbSfZbTFh7q3YrzlxBeL%2BjiYKp0gE6lMJ0a5Nb4M%3D" -ExecutionCount 20 -Frequency "Hour" -Interval 2
 ```
 
-Perintah ini membuat penjadwal Storage pekerjaan sebagai bagian dari kumpulan bernama JobCollection01.
-Perintah menentukan cara Storage, nama antrean, dan token SAS.
-Pekerjaan dijalankan total 20 kali, dua kali setiap jam.
+Perintah ini membuat pekerjaan Storage penjadwal sebagai bagian dari koleksi bernama JobCollection01.
+Perintah menentukan akun Storage, nama antrean, dan token SAS.
+Total pekerjaan berjalan 20 kali, dua kali setiap jam.
 
 ## PARAMETERS
 
 ### -EndTime
-Menentukan waktu, sebagai objek **DateTime,** bagi penjadwal untuk berhenti memulai pekerjaan.
-Untuk mendapatkan **objek DateTime,** gunakan cmdlet **Get-Date.**
-Untuk informasi selengkapnya, ketik `Get-Help Get-Date` .
+Menentukan waktu, sebagai objek **DateTime** , agar penjadwal berhenti memulai pekerjaan.
+Untuk mendapatkan objek **DateTime** , gunakan cmdlet **Get-Date** .
+Untuk informasi selengkapnya, ketik .`Get-Help Get-Date`
 
 ```yaml
 Type: DateTime
@@ -99,13 +99,13 @@ Accept wildcard characters: False
 
 ### -ErrorActionMethod
 Menentukan metode untuk tipe tindakan HTTP dan HTTPS.
-Nilai valid adalah: 
+Nilai yang valid adalah: 
 
-- DAPATKAN
-- PUT
+- MENDAPATKAN
+- MENEMPATKAN
 - POSTING
-- HEAD
-- DELETE
+- KEPALA
+- MENGHAPUS
 
 ```yaml
 Type: String
@@ -119,8 +119,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ErrorActionQueueMessageMessageMessage
-Menentukan badan untuk tindakan Storage pekerjaan Anda.
+### -ErrorActionQueueMessageBody
+Menentukan isi untuk Storage tindakan pekerjaan.
 
 ```yaml
 Type: String
@@ -134,8 +134,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ErrorActionRequestRequestRequest
-Menentukan tubuh untuk tindakan pekerjaan PUT dan POST.
+### -ErrorActionRequestBody
+Menentukan isi untuk tindakan pekerjaan PUT dan POST.
 
 ```yaml
 Type: String
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -ErrorActionSASToken
-Menentukan token Shared Access Signature (SAS) untuk Storage lama.
+Menentukan token Tanda Tangan Akses Bersama (SAS) untuk antrean Storage.
 
 ```yaml
 Type: String
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -ErrorActionStorageAccount
-Menentukan nama akun Storage Anda.
+Menentukan nama akun Storage.
 
 ```yaml
 Type: String
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -ErrorActionStorageQueue
-Menentukan nama Storage antrean.
+Menentukan nama antrean Storage.
 
 ```yaml
 Type: String
@@ -210,8 +210,8 @@ Accept wildcard characters: False
 ```
 
 ### -ExecutionCount
-Menentukan jumlah kemunculan pekerjaan yang dijalankan.
-Secara default, pekerjaan berulang secara tak terbatas.
+Menentukan kemunculan angka dari pekerjaan yang berjalan.
+Secara default, pekerjaan berulang tanpa batas waktu.
 
 ```yaml
 Type: Int32
@@ -225,7 +225,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Frequency
+### -Frekuensi
 Menentukan frekuensi maksimum untuk pekerjaan penjadwal ini.
 
 ```yaml
@@ -241,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -Interval
-Menentukan interval pengulangan pada frekuensi yang ditentukan dengan menggunakan parameter *Frequency.*
+Menentukan interval pengulangan pada frekuensi yang ditentukan dengan menggunakan parameter *Frekuensi* .
 
 ```yaml
 Type: Int32
@@ -302,11 +302,11 @@ Accept wildcard characters: False
 
 ### -Lokasi
 Menentukan nama lokasi yang menjadi host layanan awan.
-Nilai valid adalah: 
+Nilai yang valid adalah: 
 
-- Asia mana pun
-- Eropa di mana saja
-- US di mana saja
+- Di mana saja Asia
+- Di mana saja Eropa
+- Di mana saja AS
 - Asia Timur
 - AS Timur
 - As Tengah Utara
@@ -329,8 +329,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -345,7 +345,7 @@ Accept wildcard characters: False
 ```
 
 ### -SASToken
-Menentukan token SAS untuk Storage permintaan.
+Menentukan token SAS untuk antrean Storage.
 
 ```yaml
 Type: String
@@ -360,7 +360,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Menentukan waktu, sebagai objek **DateTime,** agar pekerjaan dimulai.
+Menentukan waktu, sebagai objek **DateTime** , agar pekerjaan dimulai.
 
 ```yaml
 Type: DateTime
@@ -375,7 +375,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageQueueAccount
-Menentukan nama Storage akun.
+Menentukan nama akun Storage.
 
 ```yaml
 Type: String
@@ -390,7 +390,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageQueueMessage
-Menentukan pesan antrean untuk Storage pekerjaan.
+Menentukan pesan antrean untuk pekerjaan Storage.
 
 ```yaml
 Type: String
@@ -405,7 +405,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageQueueName
-Menentukan nama Storage antrean.
+Menentukan nama antrean Storage.
 
 ```yaml
 Type: String
@@ -420,7 +420,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

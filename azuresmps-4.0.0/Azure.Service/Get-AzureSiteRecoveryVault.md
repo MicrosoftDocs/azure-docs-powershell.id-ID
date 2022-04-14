@@ -4,16 +4,16 @@ ms.assetid: 2A6DDF5F-2906-4DB5-B791-B6BF590261A0
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: a0cba77a0f4e08ff42848d1c906fd532fd7404a3
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428096"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141921643"
 ---
 # Get-AzureSiteRecoveryVault
 
 ## SYNOPSIS
-Mendapatkan vault Pemulihan Situs dari langganan saat ini.
+Mendapatkan Site Recovery kubah dari langganan saat ini.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -30,11 +30,11 @@ Get-AzureSiteRecoveryVault -Name <String> [-Profile <AzureSMProfile>] [<CommonPa
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureSiteRecoveryVault** mendapatkan daftar vault Pemulihan Situs Azure atau vault Pemulihan Situs tertentu dari langganan saat ini.
+Cmdlet **Get-AzureSiteRecoveryVault** mendapatkan daftar brankas Azure Site Recovery atau kubah Site Recovery tertentu dari langganan saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan vault aktif
+### Contoh 1: Dapatkan kubah aktif
 ```
 PS C:\> Get-AzureSiteRecoveryVault
 Name             : ContosoVault
@@ -46,12 +46,12 @@ Status           : Active
 Location         : West US
 ```
 
-Perintah ini menggunakan vault Pemulihan Situs Azure aktif.
+Perintah ini mendapatkan azure aktif Site Recovery kubah.
 
 ## PARAMETERS
 
 ### -Nama
-Menentukan nama vault untuk mendapatkannya.
+Menentukan nama kubah yang akan didapatkan.
 
 ```yaml
 Type: String
@@ -66,8 +66,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -92,6 +92,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureSiteRecoveryVault](./New-AzureSiteRecoveryVault.md)
+[Baru-AzureSiteRecoveryVault](./New-AzureSiteRecoveryVault.md)
 
 

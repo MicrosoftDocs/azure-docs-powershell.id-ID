@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssVM.md
 ms.openlocfilehash: e2ef1b00cfcc823a13334b30951894dbcaa111a5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140485293"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141960279"
 ---
 # Set-AzVmssVM
 
@@ -19,7 +19,7 @@ ms.locfileid: "140485293"
 Mengubah status instans VMSS.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmssvm) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmssvm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +48,7 @@ Set-AzVmssVM [-ResourceGroupName] <String> [-VMScaleSetName] <String> [-Instance
  [<CommonParameters>]
 ```
 
-### SimulateEvictionMethodParameter
+### SimulasiEvictionMethodParameter
 ```
 Set-AzVmssVM [-ResourceGroupName] <String> [-VMScaleSetName] <String> [-InstanceId] <String>
  [-SimulateEviction] [-AsJob] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
@@ -56,13 +56,13 @@ Set-AzVmssVM [-ResourceGroupName] <String> [-VMScaleSetName] <String> [-Instance
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVmssVM** mengubah keadaan instans Virtual Machine Scale Set (VMSS).
+Cmdlet **Set-AzVmssVM** memodifikasi status instans Rangkaian Skala Mesin Virtual (VMSS).
 
 ## EXAMPLES
 
 ### Contoh 1
 
-Mengubah status instans VMSS. (otomatisgenerated)
+Mengubah status instans VMSS. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -71,7 +71,7 @@ Set-AzVmssVM -InstanceId <String> -Reimage -ResourceGroupName myresourcegroup -V
 
 ### Contoh 2
 
-Mengubah status instans VMSS. (otomatisgenerated)
+Mengubah status instans VMSS. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -81,7 +81,7 @@ Set-AzVmssVM -InstanceId <String> -PerformMaintenance -ResourceGroupName myresou
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceId
-Menentukan ID instans VMSS yang akan digunakan oleh cmdlet ini.
+Menentukan ID instans VMSS yang mengubah status cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -PerformMaintenance
-Menunjukkan bahwa cmdlet ini melakukan pemeliharaan pada komputer virtual dalam VMSS.
+Menunjukkan bahwa cmdlet ini melakukan pemeliharaan pada mesin virtual dalam VMSS.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -Redeploy
-Menunjukkan bahwa cmdlet ini akan menerapkan kembali mesin virtual dalam VMSS.
+Menunjukkan bahwa cmdlet ini mendandani mesin virtual dalam VMSS.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -Reimage
-Menunjukkan bahwa cmdlet ini penggantian instans VMSS.
+Menunjukkan bahwa cmdlet ini mengoptimalkan instans VMSS.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -170,8 +170,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ReimageAll
-Menunjukkan bahwa cmdlet penggantian semua disk dalam instans VMSS.
+### -ReimageSemua
+Menunjukkan bahwa cmdlet mereimage semua disk dalam instans VMSS.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi instans VMSS.
+Menentukan nama grup sumber daya yang berisi contoh VMSS.
 
 ```yaml
 Type: System.String
@@ -201,8 +201,8 @@ Accept wildcard characters: False
 ```
 
 ### -SimulateEviction
-Menunjukkan bahwa cmdlet ini mensimulasikan fungsi spot mesin virtual dalam kumpulan skala VM.
-Batas waktu akan digunakan dalam 30 menit setelah memanggil API.
+Menunjukkan bahwa cmdlet ini mensimulasikan penggusuran mesin virtual spot dalam kumpulan skala VM.
+Pengusiran akan terjadi dalam waktu 30 menit setelah panggilan API.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -217,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMScaleSetName
-Menentukan nama instans VMSS yang dimodifikasi cmdlet ini.
+Menentukan nama instans VMSS yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -262,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

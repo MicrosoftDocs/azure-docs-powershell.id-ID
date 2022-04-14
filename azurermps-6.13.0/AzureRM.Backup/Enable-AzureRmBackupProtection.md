@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/Enable-AzureRmBackupProtection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/Enable-AzureRmBackupProtection.md
 ms.openlocfilehash: c66eda488b0b7876317b02db279202a88bbcc3d7
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421292"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141780364"
 ---
 # Enable-AzureRmBackupProtection
 
 ## SYNOPSIS
-Mengaitkan item dengan kebijakan proteksi Cadangan Azure.
+Mengaitkan item dengan kebijakan proteksi Azure Backup.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,13 +29,13 @@ Enable-AzureRmBackupProtection -Policy <AzureRMBackupProtectionPolicy>
 
 ## DESCRIPTION
 Cmdlet **Enable-AzureRmBackupProtection** mengaitkan item dengan kebijakan proteksi Azure Backup.
-Untuk mengaktifkan kebijakan proteksi, Anda harus terlebih dahulu memiliki item cadangan dan kebijakan yang sudah ada.
-Keduanya harus berada di vault Cadangan yang sama.
-Jadwal pencadangan melakukan salinan awal penuh untuk item dan salinan tambahan untuk cadangan berikutnya.
+Untuk mengaktifkan kebijakan proteksi, Anda harus terlebih dahulu memiliki item cadangan yang sudah ada dan kebijakan yang sudah ada.
+Keduanya harus memiliki kubah Cadangan yang sama.
+Jadwal cadangan melakukan salinan awal penuh untuk item dan salinan tambahan untuk cadangan berikutnya.
 
 ## EXAMPLES
 
-### Contoh 1: Mengaktifkan perlindungan di komputer virtual Azure
+### Contoh 1: Aktifkan proteksi di mesin virtual Azure
 ```
 PS C:\>$Vault = Get-AzureRmBackupVault -Name "Vault03"
 PS C:\> $Policy = Get-AzureRmBackupProtectionPolicy -Vault $Vault -Name "DefaultPolicy"
@@ -45,19 +45,19 @@ WorkloadName    Operation        Status          StartTime              EndTime
 co03-vm         ConfigureBackup  Completed       26-Aug-15 12:19:49 PM  26-Aug-15 12:19:54 PM
 ```
 
-Perintah pertama mengambil vault bernama Vault03 menggunakan cmdlet **Get-AzureRmBackupVault.**
-Perintah menyimpan objek tersebut dalam $Vault variabel.
-Perintah kedua mendapatkan kebijakan Proteksi cadangan yang bernama DefaultPolicy untuk vault di $Vault.
-Perintah menyimpan objek tersebut dalam $Policy variabel.
-Perintah final menggunakan operator pipeline untuk meneruskan nilai dari satu cmdlet ke cmdlet berikutnya.
-Perintah ini mendapatkan wadah, dengan menggunakan Get-AzureRmBackupContainer cmdlet.
-Perintah akan mendapatkan item cadangan dari wadah tersebut menggunakan cmdlet Get-AzureRmBackupItem.
-Cmdlet saat ini mengaktifkan kebijakan yang disimpan di $Policy untuk item yang dilewati perintah ke cmdlet tersebut.
+Perintah pertama mendapatkan kubah bernama Vault03 menggunakan cmdlet **Get-AzureRmBackupVault** .
+Perintah menyimpan objek tersebut dalam variabel $Vault.
+Perintah kedua mendapatkan kebijakan Proteksi cadangan bernama DefaultPolicy untuk kubah di $Vault.
+Perintah menyimpan objek tersebut dalam variabel $Policy.
+Perintah akhir menggunakan operator saluran untuk meneruskan nilai dari satu cmdlet ke cmdlet berikutnya.
+Ini mendapatkan wadah, dengan menggunakan cmdlet Get-AzureRmBackupContainer.
+Perintah mendapatkan item cadangan dari wadah tersebut menggunakan cmdlet Get-AzureRmBackupItem.
+Cmdlet saat ini memungkinkan kebijakan yang disimpan di $Policy untuk item yang dilewati perintah ke cmdlet tersebut.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -72,8 +72,8 @@ Accept wildcard characters: False
 ```
 
 ### -Item
-Menentukan item Cadangan yang memungkinkan proteksi oleh cmdlet ini.
-Untuk mendapatkan **AzureRmBackupItem,** gunakan cmdlet Get-AzureRmBackupItem cmdlet.
+Menentukan item Cadangan di mana cmdlet ini mengaktifkan proteksi.
+Untuk mendapatkan **AzureRmBackupItem**, gunakan cmdlet Get-AzureRmBackupItem.
 
 ```yaml
 Type: Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupContainerContextObject
@@ -88,8 +88,8 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Menentukan kebijakan proteksi bahwa cmdlet ini terkait dengan item.
-Untuk mendapatkan objek **AzureRmBackupProtectionPolicy,** gunakan cmdlet Get-AzureRmBackupProtectionPolicy baru.
+Menentukan kebijakan proteksi yang terkait dengan cmdlet ini dengan item.
+Untuk mendapatkan objek **AzureRmBackupProtectionPolicy** , gunakan cmdlet Get-AzureRmBackupProtectionPolicy.
 
 ```yaml
 Type: Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupProtectionPolicy
@@ -104,12 +104,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupContainerContextObject
-Parameter: Item (MenurutNilai)
+Parameter: Item (ByValue)
 
 ## OUTPUTS
 

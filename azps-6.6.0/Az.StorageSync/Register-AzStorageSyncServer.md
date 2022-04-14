@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Register-AzStorageSyncServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Register-AzStorageSyncServer.md
 ms.openlocfilehash: 9bb3b6687d998ee62557f3f0a05e268355641311
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140276215"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141902684"
 ---
 # Register-AzStorageSyncServer
 
 ## SYNOPSIS
-Perintah ini mendaftarkan server ke layanan sinkronisasi penyimpanan yang membuat hubungan kepercayaan. PowerShell atau portal Azure selanjutnya bisa digunakan untuk mengonfigurasi sinkronisasi di server ini.
+Perintah ini mendaftarkan server ke layanan sinkronisasi penyimpanan yang membuat hubungan kepercayaan. PowerShell atau portal Azure kemudian dapat digunakan untuk mengonfigurasi sinkronisasi di server ini.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storagesync/register-azstoragesyncserver) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/register-azstoragesyncserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,8 +41,8 @@ Register-AzStorageSyncServer [-ParentResourceId] <String> [-AsJob] [-DefaultProf
 ```
 
 ## DESCRIPTION
-Perintah ini mendaftarkan server ke layanan sinkronisasi penyimpanan, sumber daya tingkat teratas untuk Sinkronisasi File Azure. Hubungan kepercayaan antara layanan sinkronisasi server dan penyimpanan dibuat yang memastikan transfer data dan saluran manajemen yang aman. PowerShell atau portal Azure selanjutnya bisa digunakan untuk mengonfigurasi apa yang disinkronkan di server ini. Server hanya dapat didaftarkan ke satu layanan sinkronisasi penyimpanan. Jika server perlu berpartisipasi dalam menyinkronkan kumpulan file yang sama, daftarkan file ke layanan sinkronisasi penyimpanan yang sama.
-Perintah harus dijalankan secara lokal di server yang akan didaftarkan, baik dijalankan secara langsung maupun melalui sesi PowerShell jarak jauh. Objek komputer jarak jauh tidak dapat diterima.
+Perintah ini mendaftarkan server ke layanan sinkronisasi penyimpanan, sumber daya tingkat atas untuk Sinkronisasi File Azure. Hubungan kepercayaan antara server dan layanan sinkronisasi penyimpanan dibuat yang memastikan saluran manajemen dan transfer data aman. PowerShell atau portal Azure kemudian dapat digunakan untuk mengonfigurasi sinkronisasi apa yang ada di server ini. Server hanya dapat didaftarkan ke layanan sinkronisasi penyimpanan tunggal. Jika server perlu berpartisipasi dalam menyinkronkan kumpulan file yang sama, daftarkan ke layanan sinkronisasi penyimpanan yang sama.
+Perintah harus dijalankan secara lokal di server yang akan didaftarkan - baik dijalankan secara langsung atau melalui sesi PowerShell jarak jauh. Objek komputer jarak jauh tidak bisa diterima.
 
 ## EXAMPLES
 
@@ -56,7 +56,7 @@ Perintah ini akan mendaftarkan server lokal tempat perintah ini dijalankan.
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentResourceId
-Id Sumber Daya Orang Tua StorageSyncService
+StorageSyncService Parent Resource Id
 
 ```yaml
 Type: System.String
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

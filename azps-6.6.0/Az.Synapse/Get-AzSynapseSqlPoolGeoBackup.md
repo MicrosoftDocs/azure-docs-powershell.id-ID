@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPoolGeoBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPoolGeoBackup.md
 ms.openlocfilehash: 105e9f5a89e16d71e4f830fecabf4199a8e8fca5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140242855"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141901899"
 ---
 # Get-AzSynapseSqlPoolGeoBackup
 
@@ -18,7 +18,7 @@ ms.locfileid: "140242855"
 Mendapatkan cadangan geo-redundan dari Sql Pool.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapsesqlpoolgeobackup) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsesqlpoolgeobackup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,32 +35,32 @@ Get-AzSynapseSqlPoolGeoBackup [-ResourceId <String>] [-DefaultProfile <IAzureCon
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseSqlPoolGeoBackup** mendapatkan cadangan geo-redundan tertentu dari Pool SQL atau semua cadangan geo-redundan yang tersedia pada ruang kerja tertentu.
-Cadangan geo-berlebihan adalah sumber daya yang dapat dikembalikan menggunakan file data dari lokasi geografis yang terpisah.
-Anda bisa Geo-Restore memulihkan cadangan geo berulang jika terjadi pemadaman listrik regional untuk memulihkan Sql Pool ke kawasan baru.
+Cmdlet **Get-AzSynapseSqlPoolGeoBackup** mendapatkan cadangan geo-redundan tertentu dari SQL Pool atau semua cadangan geo-redundan yang tersedia di ruang kerja tertentu.
+Cadangan geo-redundan adalah sumber daya yang dapat dipusingkan menggunakan file data dari lokasi geografis terpisah.
+Anda dapat menggunakan Geo-Restore untuk memulihkan cadangan geo-redundan jika terjadi pemadaman kawasan untuk memulihkan Sql Pool ke kawasan baru.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan cadangan geo-redundan tertentu
+### Contoh 1: Dapatkan cadangan geo-redundan tertentu
 ```powershell
 PS C:\> Get-AzSynapseSqlPoolGeoBackup -ResourceGroupName ContosoResourceGroup -WorkspaceName "ContosoWorkspace" -Name "ContosoSqlPool"
 ```
 
-Cmdlet mengambil Geo Backup untuk sql pool.
+Cmdlet mengambil Geo Backup untuk kolam renang sql.
 
 ### Contoh 2: Mendapatkan semua cadangan geo-redundan di ruang kerja
 ```
 PS C:\>Get-AzSynapseSqlPoolGeoBackup -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "ContosoWorkspace"
 ```
 
-Perintah ini mendapatkan semua cadangan geo-berlebihan yang tersedia di ruang kerja tertentu.
+Perintah ini mendapatkan semua cadangan geo-redundan yang tersedia di ruang kerja tertentu.
 
 ### Contoh 3: Mendapatkan semua cadangan geo-redundan di ruang kerja menggunakan pemfilteran
 ```
 PS C:\>Get-AzSynapseSqlPoolGeoBackup -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "ContosoWorkspace" -Name "Contoso*"
 ```
 
-Perintah ini mendapatkan semua cadangan geo-berlebihan yang tersedia di ruang kerja tertentu yang dimulai dengan "Contoso".
+Perintah ini mendapatkan semua cadangan geo-redundan yang tersedia di ruang kerja tertentu yang dimulai dengan "Contoso".
 
 ## PARAMETERS
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Pool Synapse Sql.
+Kolam renang Sql Synapse.
 
 ```yaml
 Type: System.String
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Memasukkan Id Sumber Daya Geo Backup Sql Pool.
+Masukkan Sql Pool Geo Backup Resource Id.
 
 ```yaml
 Type: System.String
@@ -124,7 +124,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

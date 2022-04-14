@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Invoke-AzSynapseTriggerRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Invoke-AzSynapseTriggerRun.md
 ms.openlocfilehash: 335c9810cef3db209c163c003553eaea33ce3138
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140129607"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141901708"
 ---
 # Invoke-AzSynapseTriggerRun
 
 ## SYNOPSIS
-Menjalankan contoh pemicu lain.
+Memanggil contoh lain dari pemicu yang dijalankan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/invoke-azsynapsetriggerrun) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/invoke-azsynapsetriggerrun) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Invoke-AzSynapseTriggerRun -WorkspaceObject <PSSynapseWorkspace> -Name <String> 
 ```
 
 ## DESCRIPTION
-Perintah Invoke-AzSynapseTriggerRun memulai contoh lain dari pemicu yang dijalankan dengan id jalankan pemicu baru.
+Perintah Invoke-AzSynapseTriggerRun memulai contoh lain dari pemicu yang dijalankan dengan id run pemicu baru.
 
 ## EXAMPLES
 
@@ -50,7 +50,7 @@ Perintah Invoke-AzSynapseTriggerRun memulai contoh lain dari pemicu yang dijalan
 PS C:\> Invoke-AzSynapseTriggerRun -WorkspaceName ContosoWorkspace -Name ContosoTrigger -TriggerRunId 000111222333abc
 ```
 
-Memulai contoh lain dari pemicu yang dijalankan dengan id jalankan pemicu baru, mempertahankan jendela yang samaStartTime dan windowEndTime sebagai pemicu asli dijalankan.
+Memulai contoh lain dari pemicu yang dijalankan dengan id run pemicu baru, mempertahankan jendela yang samaStartTime dan windowEndTime sebagai pemicu asli berjalan.
 
 ### Contoh 2
 ```powershell
@@ -58,7 +58,7 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Invoke-AzSynapseTriggerRun -Name ContosoTrigger -TriggerRunId 000111222333abc
 ```
 
-Memulai contoh lain dari pemicu yang dijalankan dengan id jalankan pemicu baru di ruang kerja Synapse ContosoWorkspace melalui pipeline.
+Memulai contoh lain dari pemicu yang dijalankan dengan id run pemicu baru di ruang kerja Synapse ContosoWorkspace melalui pipeline.
 
 ### Contoh 3
 ```powershell
@@ -66,7 +66,7 @@ PS C:\> $triggerun = Get-AzSynapseTriggerRun -WorkspaceName ContosoWorkspace -Na
 PS C:\> $triggerun | Invoke-AzSynapseTriggerRun
 ```
 
-Memulai contoh lain dari pemicu yang dijalankan dengan id jalankan pemicu baru di ruang kerja Synapse ContosoWorkspace melalui pipeline.
+Memulai contoh lain dari pemicu yang dijalankan dengan id run pemicu baru di ruang kerja Synapse ContosoWorkspace melalui pipeline.
 
 ## PARAMETERS
 
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Informasi mengenai pemicu berjalan.
+Informasi tentang pemicu berjalan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSTriggerRun
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Cmdlet ini tidak mengembalikan objek secara default. Jika sakelar ini ditentukan, maka true akan dikembalikan jika berhasil.
+Cmdlet ini tidak mengembalikan objek secara default. Jika sakelar ini ditentukan, sakelar akan mengembalikan true jika berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -TriggerRunId
-Id Jalankan dari pemicu.
+ID Jalankan pemicu.
 
 ```yaml
 Type: System.String
@@ -145,7 +145,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

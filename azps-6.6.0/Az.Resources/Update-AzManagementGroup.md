@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Update-AzManagementGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Update-AzManagementGroup.md
 ms.openlocfilehash: 45bbd49725fc6d1dd860cd3d81041010ae12af1c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140066717"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142121885"
 ---
 # Update-AzManagementGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "140066717"
 Memperbarui Grup Manajemen
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/update-azmanagementgroup) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/update-azmanagementgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -68,7 +68,7 @@ ParentName        : 6b2064b9-34bd-46e6-9092-52f2dd5f7fc0
 ParentDisplayName : 6b2064b9-34bd-46e6-9092-52f2dd5f7fc0
 ```
 
-### Contoh 2: Perbarui Induk Grup Manajemen
+### Contoh 2: Memperbarui Induk Grup Manajemen
 ```
 PS C:\> Update-AzManagementGroup -Group "TestGroup" -ParentId "/providers/Microsoft.Management/managementGroups/TestGroupParent"
 
@@ -84,7 +84,7 @@ ParentName        : TestGroupParent
 ParentDisplayName : TestGroupParent
 ```
 
-### Contoh 3: Perbarui Grup Manajemen dengan pemipaan Objek PSManagementGroup
+### Contoh 3: Memperbarui Grup Manajemen dengan piping PSManagementGroup Object
 ```
 PS C:\> Get-AzManagementGroup -GroupName "TestGroup" | Update-AzManagementGroup -DisplayName "TestDisplayName" -ParentId "/providers/Microsoft.Management/managementGroups/TestGroupParent"
 
@@ -100,7 +100,7 @@ ParentName        : TestGroupParent
 ParentDisplayName : TestGroupParent
 ```
 
-### Contoh 4: Perbarui induk Grup Manajemen menggunakan ParentObject
+### Contoh 4: Memperbarui induk Grup Manajemen menggunakan ParentObject
 ```
 PS C:\> $parentObject = Get-AzManagementGroup -GroupName "TestGroupParent"
 PS C:\> Update-AzManagementGroup -GroupName "TestGroup" -ParentObject $parentObject
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Tampilkan Nama grup manajemen
+Nama Tampilan grup manajemen
 
 ```yaml
 Type: System.String
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -241,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/Get-AzElasticVMHost.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/Get-AzElasticVMHost.md
 ms.openlocfilehash: bdc905f9e3698cd4bfa80083a5db724264282eb9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140137635"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142051355"
 ---
 # Get-AzElasticVMHost
 
 ## SYNOPSIS
-Awasi sumber daya vm yang saat ini sedang dipantau oleh sumber daya monitor Elastis.
+Cantumkan sumber daya vm yang saat ini sedang dipantau oleh sumber daya monitor Elastis.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.elastic/get-azelasticvmhost) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.elastic/get-azelasticvmhost) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +28,11 @@ Get-AzElasticVMHost -Name <String> -ResourceGroupName <String> [-SubscriptionId 
 ```
 
 ## DESCRIPTION
-Awasi sumber daya vm yang saat ini sedang dipantau oleh sumber daya monitor Elastis.
+Cantumkan sumber daya vm yang saat ini sedang dipantau oleh sumber daya monitor Elastis.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan sumber daya vm yang saat ini dipantau oleh sumber daya monitor Elastis
+### Contoh 1: Cantumkan sumber daya vm yang saat ini sedang dipantau oleh sumber daya monitor Elastic
 ```powershell
 PS C:\> Get-AzElasticVMHost -ResourceGroupName azure-elastic-test -Name elastic-pwsh02
 
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Memantau nama sumber daya
+Pantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat sumber daya Elastis dimiliki.
+Nama grup sumber daya tempat sumber daya Elastis berada.
 
 ```yaml
 Type: System.String
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 ID langganan Azure.
-Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-00000000000)
+Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
 
 ```yaml
 Type: System.String[]
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,13 +138,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Elastis.Models.Api20200701.IVMResources
+### Microsoft.Azure.PowerShell.Cmdlets.Elastic.Models.Api20200701.IVMResources
 
 ## CATATAN
 

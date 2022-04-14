@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzDeploymentScriptLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzDeploymentScriptLog.md
 ms.openlocfilehash: 077910604369be91a0d538b3c4334485936fc814
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140305843"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142122371"
 ---
 # Get-AzDeploymentScriptLog
 
@@ -18,7 +18,7 @@ ms.locfileid: "140305843"
 Mendapatkan log eksekusi skrip penyebaran.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azdeploymentscriptlog) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azdeploymentscriptlog) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +50,7 @@ Cmdlet **Get-AzDeploymentScriptLog** mendapatkan log eksekusi skrip penyebaran.
 PS C:\> Get-AzDeploymentScriptLog -Name MyDeploymentScript -ResourceGroupName DS-TestRg
 ```
 
-Dapatkan log skrip penyebaran dengan nama MyDeploymentScript dalam grup sumber daya DS-TestRG.
+Mendapatkan log skrip penyebaran dengan nama MyDeploymentScript dalam grup sumber daya DS-TestRG.
 
 ### Contoh 2
 ```powershell
@@ -66,7 +66,7 @@ PS C:\> Get-AzDeploymentScriptLog -DeploymentScriptInputObject $ds
 ```
 
 Perintah pertama mendapatkan skrip penyebaran dengan nama MyDeploymentScript dalam grup sumber daya DS-TestRG.
-Perintah kedua mendapatkan log skrip penggunaan tertentu.
+Perintah kedua mendapatkan log skrip penyebaran yang diberikan.
 
 ## PARAMETERS
 
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeploymentScriptObject
-The deployment script PowerShell object.
+Skrip penyebaran objek PowerShell.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PsDeploymentScript
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tail
-Batasi output ke baris n terakhir
+Batasi output ke n baris terakhir
 
 ```yaml
 Type: System.Int32
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

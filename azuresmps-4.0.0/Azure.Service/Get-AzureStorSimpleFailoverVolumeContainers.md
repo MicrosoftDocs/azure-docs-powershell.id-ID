@@ -3,12 +3,12 @@ external help file: Microsoft.WindowsAzure.Commands.StorSimple.dll-Help.xml
 ms.assetid: BABBA19E-5833-452C-9E36-811EAE7C20F9
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 00e685c1ede0e8ff7b65142fa663d9b860e4e25ac491999829ed56a9e663293c
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 093d3be147b19a0f3bf5ec6bfbe13affad1b56b4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418860"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141921471"
 ---
 # Get-AzureStorSimpleFailoverVolumeContainers
 
@@ -19,12 +19,12 @@ Mendapatkan grup wadah volume untuk failover perangkat.
 
 ## SYNTAX
 
-### IdentifyById
+### IdentifikasiById
 ```
 Get-AzureStorSimpleFailoverVolumeContainers -DeviceId <String> [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
 
-### IdentifyByName
+### IdentifikasiByName
 ```
 Get-AzureStorSimpleFailoverVolumeContainers -DeviceName <String> [-Profile <AzureSMProfile>]
  [<CommonParameters>]
@@ -32,12 +32,12 @@ Get-AzureStorSimpleFailoverVolumeContainers -DeviceName <String> [-Profile <Azur
 
 ## DESCRIPTION
 Cmdlet **Get-AzureStorSimpleFailoverVolumeContainers** mendapatkan grup wadah volume untuk failover perangkat.
-Akses satu **grup VolumeContainer** atau larik grup **VolumeContainer** ke cmdlet **Start-AzureStorSimpleDeviceFailover.**
-Hanya grup yang memiliki nilai $True untuk **properti IsDCGroupEligibleForDR** yang memenuhi syarat untuk failover.
+Loloskan grup **VolumeContainer** tunggal atau larik grup **VolumeContainer** ke cmdlet **Start-AzureStorSimpleDeviceFailover** .
+Hanya grup yang memiliki nilai $True untuk properti **IsDCGroupEligibleForDR** yang memenuhi syarat untuk failover.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan wadah volume failover
+### Contoh 1: Dapatkan kontainer volume failover
 ```
 PS C:\>Get-AzureStorSimpleFailoverVolumeContainers -DeviceName "ChewD_App7"
 
@@ -49,13 +49,13 @@ DCGroup                    IneligibilityMessage          IsDCGroupEligibleForDR
 {VolumeContainer407850151} No cloud snapshot found                        False
 ```
 
-Perintah ini mendapatkan wadah volume failover.
-Hanya DCGroups yang memiliki nilai $True untuk properti **IsDCGroupEligibleForDR** dapat digunakan untuk failover perangkat.
+Perintah ini mendapatkan kontainer volume failover.
+Hanya DCGroup yang memiliki nilai $True untuk properti **IsDCGroupEligibleForDR** yang dapat digunakan untuk failover perangkat.
 
 ## PARAMETERS
 
 ### -DeviceId
-Menentukan ID instans perangkat StorSimple yang digunakan untuk menjalankan cmdlet.
+Menentukan ID instans perangkat StorSimple tempat menjalankan cmdlet.
 
 ```yaml
 Type: String
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceName
-Menentukan nama perangkat StorSimple yang digunakan untuk menjalankan cmdlet.
+Menentukan nama perangkat StorSimple tempat menjalankan cmdlet.
 
 ```yaml
 Type: String
@@ -100,14 +100,14 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
 ### IList\<DataContainerGroup\>
-Cmdlet ini mengembalikan daftar grup **VolumeContainer.**
+Cmdlet ini mengembalikan daftar grup **VolumeContainer** .
 
 ## CATATAN
 

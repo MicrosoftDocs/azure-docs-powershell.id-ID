@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Update-AzADApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Update-AzADApplication.md
 ms.openlocfilehash: ad2d97baac5caf7a68ef35e571da95d6812ec48d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140194646"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142121903"
 ---
 # Update-AzADApplication
 
@@ -20,7 +20,7 @@ Memperbarui aplikasi azure active directory yang sudah ada.
 [!INCLUDE [msgraph-migration-banner](../../includes/msgraph-migration-banner.md)]
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/update-azadapplication) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/update-azadapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,11 +47,11 @@ Update-AzADApplication -InputObject <PSADApplication> [-DisplayName <String>] [-
 
 ## DESCRIPTION
 Memperbarui aplikasi azure active directory yang sudah ada.
-Untuk memperbarui kredensial yang terkait dengan aplikasi ini, silakan gunakan cmdlet New-AzADAppCredential cmdlet.
+Untuk memperbarui kredensial yang terkait dengan aplikasi ini, silakan gunakan cmdlet New-AzADAppCredential.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui nama tampilan aplikasi
+### Contoh 1: Memperbarui nama tampilan aplikasi
 
 ```powershell
 PS C:\> Update-AzADApplication -ObjectId fb7b3405-ca44-4b5b-8584-12392f5d96d7 -DisplayName MyNewDisplayName
@@ -67,13 +67,13 @@ PS C:\> Update-AzADApplication -ObjectId fb7b3405-ca44-4b5b-8584-12392f5d96d7 -D
 
 Memperbarui properti aplikasi dengan id objek 'fb7b3405-ca44-4b5b-8584-12392f5d96d7'.
 
-### Contoh 3: Perbarui nama tampilan aplikasi menggunakan pemipaan
+### Contoh 3: Memperbarui nama tampilan aplikasi menggunakan piping
 
 ```powershell
 PS C:\> Get-AzADApplication -ObjectId fb7b3405-ca44-4b5b-8584-12392f5d96d7 | Update-AzADApplication -DisplayName MyNewDisplayName
 ```
 
-Dapatkan aplikasi dengan id objek 'fb7b3405-ca44-4b5b-8584-12392f5d96d7' dan pipa yang ke cmdlet Update-AzADApplication untuk memperbarui nama tampilan aplikasi menjadi "MyNewDisplayName".
+Mendapatkan aplikasi dengan id objek 'fb7b3405-ca44-4b5b-8584-12392f5d96d7' dan pipa yang ke cmdlet Update-AzADApplication untuk memperbarui nama tampilan aplikasi ke "MyNewDisplayName".
 
 ## PARAMETERS
 
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Nama tampilan aplikasi untuk diperbarui.
+Nama tampilan untuk diperbarui oleh aplikasi.
 
 ```yaml
 Type: System.String
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Id objek aplikasi yang akan diperbarui.
+Id objek aplikasi untuk diperbarui.
 
 ```yaml
 Type: System.String
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplyUrl
-Menentukan URL yang dikirimkan token pengguna untuk masuk, atau URI pengalihan yang dikirimkan ke kode otorisasi dan token akses OAuth 2.0.
+Menentukan URL tempat token pengguna dikirim untuk masuk, atau URL pengalihan tempat kode otorisasi dan token akses OAuth 2.0 dikirim.
 
 ```yaml
 Type: System.String[]
@@ -273,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -289,7 +289,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -304,7 +304,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -312,7 +312,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Guid
 
-### Microsoft.Azure.Commands.ActiveDirectory.FOLDApplication
+### Microsoft.Azure.Commands.ActiveDirectory.PSADAplikasi
 
 ### System.String[]
 
@@ -320,7 +320,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.ActiveDirectory.FOLDApplication
+### Microsoft.Azure.Commands.ActiveDirectory.PSADAplikasi
 
 ## CATATAN
 

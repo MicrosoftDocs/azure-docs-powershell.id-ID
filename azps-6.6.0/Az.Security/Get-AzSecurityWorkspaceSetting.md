@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityWorkspaceSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityWorkspaceSetting.md
 ms.openlocfilehash: c2f2013347d37d34ef577c4282afff2778c98409
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140246905"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142121610"
 ---
 # Get-AzSecurityWorkspaceSetting
 
@@ -18,7 +18,7 @@ ms.locfileid: "140246905"
 Mendapatkan pengaturan ruang kerja keamanan yang dikonfigurasi pada langganan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/get-azsecurityworkspacesetting) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azsecurityworkspacesetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Get-AzSecurityWorkspaceSetting -ResourceId <String> [-DefaultProfile <IAzureCont
 ```
 
 ## DESCRIPTION
-Cmdlet ini memungkinkan Anda menemukan ruang kerja yang dikonfigurasi yang akan menampung data keamanan yang dikumpulkan oleh agen keamanan yang diinstal dalam VM di dalam langganan ini.
+Cmdlet ini memungkinkan Anda menemukan ruang kerja yang dikonfigurasi yang akan menyimpan data keamanan yang dikumpulkan oleh agen keamanan yang diinstal di VM di dalam langganan ini.
 
 ## EXAMPLES
 
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

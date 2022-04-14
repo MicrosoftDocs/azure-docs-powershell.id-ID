@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Set-AzHDInsightClusterDiskEncryptionKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Set-AzHDInsightClusterDiskEncryptionKey.md
-ms.openlocfilehash: 42cb95271679dd73939e60b2f21f5a4e9903afca
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 8f747a68697f344ca9a2d90fc197e2c75932cc47
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140186839"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142110437"
 ---
 # Set-AzHDInsightClusterDiskEncryptionKey
 
 ## SYNOPSIS
 Memutar kunci enkripsi disk dari kluster HDInsight yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/set-azhdinsightclusterdiskencryptionkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Set-AzHDInsightClusterDiskEncryptionKey [-InputObject] <AzureHDInsightCluster> -
 ```
 
 ## DESCRIPTION
-Putar kunci enkripsi disk dari kluster HDInsight yang ditentukan. Untuk operasi ini, kluster harus memiliki akses ke kunci saat ini dan tombol baru yang dimaksud, jika tidak operasi tombol putar akan gagal.
+Putar kunci enkripsi disk dari kluster HDInsight yang ditentukan. Untuk operasi ini, kluster harus memiliki akses ke kunci saat ini dan kunci baru yang dimaksud, jika tidak operasi tombol putar akan gagal.
 
 ## EXAMPLES
 
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionVaultUri
-Mendapatkan atau mengatur uri enkripsi vault.
+Mendapatkan atau mengatur uri kubah enkripsi.
 
 ```yaml
 Type: System.String
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -225,11 +228,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

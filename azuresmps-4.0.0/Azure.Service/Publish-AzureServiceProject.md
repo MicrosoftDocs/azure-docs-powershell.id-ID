@@ -4,16 +4,16 @@ ms.assetid: CF7E7C62-88FC-48CA-940F-9A6C7442BEF2
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: ba639a114db5c572d2d48541c9479296d9021a17
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420247"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141920333"
 ---
 # Publish-AzureServiceProject
 
 ## SYNOPSIS
-Terbitkan layanan saat ini Windows Azure.
+Menerbitkan layanan saat ini ke Windows Azure.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -36,11 +36,11 @@ Publish-AzureServiceProject [-Package <String>] -Configuration <String> [-Storag
 ```
 
 ## DESCRIPTION
-Topik ini menguraikan cmdlet dalam modul Microsoft Azure PowerShell versi 0.8.10.
-Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Topik ini menjelaskan cmdlet dalam versi 0.8.10 modul Microsoft Azure PowerShell.
+Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik .`(Get-Module -Name Azure).Version`
 
 Cmdlet **Publish-AzureServiceProject** menerbitkan layanan saat ini ke awan.
-Anda dapat menentukan konfigurasi penerbitan (seperti **Langganan,** **StorageAccountName**, **Lokasi,** **Slot**) di baris perintah, atau di pengaturan lokal melalui cmdlet **Set-AzureServiceProject.**
+Anda dapat menentukan konfigurasi penerbitan (seperti **Langganan**, **StorageAccountName**, **Lokasi**, **Slot**) pada baris perintah, atau dalam pengaturan lokal melalui cmdlet **Set-AzureServiceProject** .
 
 ## EXAMPLES
 
@@ -49,14 +49,14 @@ Anda dapat menentukan konfigurasi penerbitan (seperti **Langganan,** **StorageAc
 PS C:\> Publish-AzureServiceProject
 ```
 
-Contoh ini menerbitkan layanan saat ini, menggunakan pengaturan layanan saat ini dan profil penerbitan Azure saat ini.
+Contoh ini menerbitkan layanan saat ini, menggunakan pengaturan layanan saat ini dan profil publikasi Azure saat ini.
 
 ### Contoh 2: Membuat paket penyebaran
 ```
 PS C:\> Publish-AzureServiceProject -PackageOnly
 ```
 
-Contoh ini membuat file paket penyebaran (.cspkg) dalam direktori layanan dan tidak diterbitkan ke Windows Azure.
+Contoh ini membuat file paket penyebaran (.cspkg) di direktori layanan dan tidak diterbitkan ke Windows Azure.
 
 ## PARAMETERS
 
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 
 ### -Configuration
 Menentukan file konfigurasi layanan.
-Jika Anda menentukan parameter ini, tentukan parameter *Package.*
+Jika Anda menentukan parameter ini, tentukan parameter *Paket* .
 
 ```yaml
 Type: String
@@ -119,7 +119,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Launch
+### -Luncurkan
 Membuka jendela browser sehingga Anda bisa menampilkan aplikasi setelah disebarkan.
 
 ```yaml
@@ -136,11 +136,11 @@ Accept wildcard characters: False
 
 ### -Lokasi
 Kawasan tempat aplikasi akan dihosting.
-Nilai yang mungkin adalah: 
+Nilai yang memungkinkan adalah: 
   
-- Asia mana pun
-- Eropa di mana saja
-- US di mana saja
+- Di mana saja Asia
+- Di mana saja Eropa
+- Di mana saja AS
 - Asia Timur
 - AS Timur
 - As Tengah Utara
@@ -150,7 +150,7 @@ Nilai yang mungkin adalah:
 - Eropa Barat
 - AS Barat
  
-Jika tidak ada Lokasi yang ditentukan, lokasi yang ditentukan dalam panggilan terakhir untuk **Set-AzureServiceProject** akan digunakan. Jika tidak ada Lokasi yang pernah ditentukan, Lokasi akan dipilih secara acak dari lokasi 'As Pusat Utara' dan 'As Pusat Selatan'.
+Jika tidak ada Lokasi yang ditentukan, lokasi yang ditentukan dalam panggilan terakhir ke **Set-AzureServiceProject** akan digunakan. Jika tidak ada Lokasi yang ditentukan, Lokasi akan dipilih secara acak dari lokasi 'North Central US' dan 'South Central US'.
 
 ```yaml
 Type: String
@@ -165,9 +165,9 @@ Accept wildcard characters: False
 ```
 
 ### -Paket
-Menentukan file paket untuk disebarkan.
-Tentukan file lokal yang memiliki ekstensi nama file .cspkg atau URI blob yang berisi paket tersebut.
-Jika Anda menentukan parameter ini, jangan tentukan parameter *ServiceName.*
+Menentukan file paket yang akan digunakan.
+Tentukan file lokal yang memiliki ekstensi nama file .cspkg atau URI blob yang berisi paket.
+Jika Anda menentukan parameter ini, jangan tentukan parameter *ServiceName* .
 
 ```yaml
 Type: String
@@ -182,8 +182,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -198,10 +198,10 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Menentukan nama yang akan digunakan untuk layanan ketika menerbitkan ke Windows Azure.
-Nama menentukan bagian label di subdomain cloudapp.net yang digunakan untuk menangani layanan ketika dihosting di Windows Azure (yaitu, **nama**.cloudapp.net).
-Setiap nama yang ditentukan saat menerbitkan layanan akan menimpa nama yang diberikan ketika layanan tersebut dibuat.
-(Lihat cmdlet **New-AzureServiceProject).**
+Menentukan nama yang akan digunakan untuk layanan saat menerbitkan ke Windows Azure.
+Nama menentukan bagian label dalam subdomain cloudapp.net yang digunakan untuk mengatasi layanan ketika dihosting di Windows Azure (yaitu, **name.cloudapp.net**).
+Nama apa pun yang ditentukan saat menerbitkan layanan menimpa nama yang diberikan saat layanan dibuat.
+(Lihat cmdlet **New-AzureServiceProject** ).
 
 ```yaml
 Type: String
@@ -216,10 +216,10 @@ Accept wildcard characters: False
 ```
 
 ### -Slot
-Slot penggunaan yang akan digunakan untuk layanan ini.
-Nilai yang mungkin adalah 'Produksi' dan 'Produksi'.
-Jika tidak ada slot yang ditentukan, slot yang disediakan di panggilan Set-AzureDeploymentSlot terakhir digunakan.
-Jika tidak ada slot yang telah ditentukan, slot 'Produksi' akan digunakan.
+Slot penyebaran yang akan digunakan untuk layanan ini.
+Nilai yang memungkinkan adalah 'Staging' dan 'Production'.
+Jika tidak ada slot yang ditentukan, slot yang disediakan dalam panggilan terakhir untuk Set-AzureDeploymentSlot digunakan.
+Jika tidak ada slot yang telah ditentukan, slot 'Produksi' digunakan.
 
 ```yaml
 Type: String
@@ -234,12 +234,12 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Menentukan Windows penyimpanan Azure yang akan digunakan saat menerbitkan layanan.
+Menentukan nama akun penyimpanan Azure Windows yang akan digunakan saat menerbitkan layanan.
 Nilai ini tidak digunakan hingga layanan diterbitkan.
 Ketika parameter ini tidak ditentukan, nilai diperoleh dari perintah **Set-AzureServiceProject** terakhir.
 Jika tidak ada akun penyimpanan yang pernah ditentukan, akun penyimpanan yang cocok dengan nama layanan akan digunakan.
-Jika tidak ada akun penyimpanan tersebut, cmdlet akan berusaha membuat akun penyimpanan baru.
-Namun, usaha tersebut dapat gagal jika akun penyimpanan yang cocok dengan nama layanan ada di langganan lain.
+Jika tidak ada akun penyimpanan tersebut, cmdlet akan mencoba membuat yang baru.
+Namun, upaya tersebut mungkin gagal jika akun penyimpanan yang cocok dengan nama layanan ada di langganan lain.
 
 ```yaml
 Type: String
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

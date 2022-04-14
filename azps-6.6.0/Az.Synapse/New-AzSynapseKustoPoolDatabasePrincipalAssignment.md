@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseKustoPoolDatabasePrincipalAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseKustoPoolDatabasePrincipalAssignment.md
 ms.openlocfilehash: 3ed6bcc0da90e9e76b5ae6dc9073e7c779d591a1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140095409"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141901630"
 ---
 # New-AzSynapseKustoPoolDatabasePrincipalAssignment
 
 ## SYNOPSIS
-Membuat prinsipal database kusto poolAssignment.
+Membuat Kusto kumpulan database principalAssignment.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/new-azsynapsekustopooldatabaseprincipalassignment) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapsekustopooldatabaseprincipalassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,11 +31,11 @@ New-AzSynapseKustoPoolDatabasePrincipalAssignment -DatabaseName <String> -KustoP
 ```
 
 ## DESCRIPTION
-Membuat prinsipal database kusto poolAssignment.
+Membuat Kusto kumpulan database principalAssignment.
 
 ## EXAMPLES
 
-### Contoh 1: Create a Kusto pool database principalAssignment
+### Contoh 1: Membuat Kusto kumpulan prinsipal database principalAssignment
 ```powershell
 PS C:\> New-AzSynapseKustoPoolDatabasePrincipalAssignment -ResourceGroupName testrg -WorkspaceName testws -KustoPoolName testkustopool -DatabaseName testdatabase -PrincipalAssignmentName kustoprincipal -PrincipalId 00000000-0000-0000-0000-000000000000 -PrincipalType App -Role Viewer
 
@@ -44,7 +44,7 @@ Name                                             Type
 testws/testkustopool/testdatabase/kustoprincipal Microsoft.Synapse/workspaces/kustoPools/Databases/PrincipalAssignments
 ```
 
-Perintah di atas membuat prinsipal database kusto poolAssignment
+Perintah di atas membuat Kusto prinsipal database poolAssignment
 
 ## PARAMETERS
 
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Nama database di dalam kolam Kusto.
+Nama database dalam kumpulan Kusto.
 
 ```yaml
 Type: System.String
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -KustoPoolName
-Nama pool Kusto.
+Nama kumpulan Kusto.
 
 ```yaml
 Type: System.String
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalAssignmentName
-Nama principalAssignment Kusto.
+Nama Kusto principalAssignment.
 
 ```yaml
 Type: System.String
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 
 ### -PrincipalId
 ID utama yang ditetapkan ke prinsipal database.
-Ini bisa menjadi email pengguna, ID aplikasi, atau nama grup keamanan.
+Ini bisa berupa email pengguna, ID aplikasi, atau nama grup keamanan.
 
 ```yaml
 Type: System.String
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalType
-Tipe pokok.
+Tipe prinsipal.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Synapse.Support.PrincipalType
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-Id penyewa pokok
+Id penyewa dari prinsipal
 
 ```yaml
 Type: System.String
@@ -230,7 +230,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja
 
 ```yaml
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -262,7 +262,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -277,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

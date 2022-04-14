@@ -4,16 +4,16 @@ ms.assetid: 0ACEDE22-1C2B-4846-A949-710AF6C148D0
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 6b7072c5cd9c9e91a5c71d585be685a4dfa7700c
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "132415663"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141921657"
 ---
 # Get-AzureSqlDatabaseServer
 
 ## SYNOPSIS
-Mendapatkan informasi tentang Azure SQL Database baru.
+Mendapatkan informasi tentang server Azure SQL Database.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -24,9 +24,9 @@ Get-AzureSqlDatabaseServer [-ServerName <String>] [-Profile <AzureSMProfile>] [<
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureSqlDatabaseServer** mendapatkan informasi tentang instans Server Azure SQL Database dalam langganan saat ini.
-Jika Anda menentukan server menurut nama, cmdlet ini mengembalikan objek yang berisi informasi tentang server itu.
-Jika tidak, cmdlet akan mengembalikan informasi tentang semua server.
+Cmdlet **Get-AzureSqlDatabaseServer** mendapatkan informasi tentang contoh server Azure SQL Database dalam langganan saat ini.
+Jika Anda menentukan server menurut nama, cmdlet ini mengembalikan objek yang berisi informasi tentang server tersebut.
+Jika tidak, cmdlet mengembalikan informasi tentang semua server.
 
 ## EXAMPLES
 
@@ -35,20 +35,20 @@ Jika tidak, cmdlet akan mengembalikan informasi tentang semua server.
 PS C:\> Get-AzureSqlDatabaseServer
 ```
 
-Perintah ini mengembalikan informasi tentang semua Azure SQL Database Server dalam langganan saat ini.
+Perintah ini mengembalikan informasi tentang semua contoh Azure SQL Database Server dalam langganan saat ini.
 
 ### Contoh 2: Mendapatkan informasi tentang server tertentu
 ```
 PS C:\> Get-AzureSqlDatabaseServer -ServerName "lpqd0zbr8y"
 ```
 
-Perintah ini mengembalikan informasi tentang server yang bernama lpqd0zbr8y.
+Perintah ini mengembalikan informasi tentang server bernama lpqd0zbr8y.
 
 ## PARAMETERS
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -87,7 +87,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### IEnumerable\<Microsoft.WindowsAzure.Commands.SqlDatabase.Model.SqlDatabaseServerContext\>
+### Ienumerable\<Microsoft.WindowsAzure.Commands.SqlDatabase.Model.SqlDatabaseServerContext\>
 
 ## CATATAN
 
@@ -97,11 +97,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Server Daftar](https://msdn.microsoft.com/en-us/library/azure/dn505702.aspx)
 
-[Operasi untuk Database SQL Azure](https://msdn.microsoft.com/en-us/library/azure/dn505719.aspx)
+[Operasi untuk Database Azure SQL](https://msdn.microsoft.com/en-us/library/azure/dn505719.aspx)
 
-[New-AzureSqlDatabaseServer](./New-AzureSqlDatabaseServer.md)
+[Azure BaruSqlDatabaseServer](./New-AzureSqlDatabaseServer.md)
 
-[Remove-AzureSqlDatabaseServer](./Remove-AzureSqlDatabaseServer.md)
+[Hapus-AzureSqlDatabaseServer](./Remove-AzureSqlDatabaseServer.md)
 
 [Set-AzureSqlDatabaseServer](./Set-AzureSqlDatabaseServer.md)
 

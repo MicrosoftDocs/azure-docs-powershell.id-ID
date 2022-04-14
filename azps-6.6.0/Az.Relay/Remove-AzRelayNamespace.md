@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Remove-AzRelayNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Remove-AzRelayNamespace.md
 ms.openlocfilehash: b2aa1e2c15c3b0d220d67b3e0ea77c3f29ccbe42
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140330027"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142122587"
 ---
 # Remove-AzRelayNamespace
 
@@ -18,7 +18,7 @@ ms.locfileid: "140330027"
 Menghapus ruang nama dari grup sumber daya yang ditentukan. 
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.relay/remove-azrelaynamespace) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.relay/remove-azrelaynamespace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Remove-AzRelayNamespace [-ResourceGroupName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzGroupyNamespace** menghapus ruang nama dari grup sumber daya yang ditentukan.
+Cmdlet **Remove-AzRelayNamespace** menghapus ruang nama dari grup sumber daya tertentu.
 
 ## EXAMPLES
 
@@ -37,7 +37,7 @@ Cmdlet **Remove-AzGroupyNamespace** menghapus ruang nama dari grup sumber daya y
 PS C:\> Remove-AzRelayNamespace -ResourceGroupName Default-ServiceBus-WestUS -Name TestNameSpace-Relay1
 ```
 
-Menghapus ruang nama Relay dari `TestNameSpace-Relay1` grup sumber daya yang ditentukan `Default-ServiceBus-WestUS`.
+Menghapus ruang `TestNameSpace-Relay1` nama Relai dari grup `Default-ServiceBus-WestUS`sumber daya yang ditentukan.
 
 ## PARAMETERS
 
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Relay Namespace Name.
+Relai Nama Ruang Nama.
 
 ```yaml
 Type: System.String
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/New-AzureRmHDInsightPigJobDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/New-AzureRmHDInsightPigJobDefinition.md
 ms.openlocfilehash: 27f2e9d6dbc823f7148db6a299f9e999131c75d7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140860733"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142097770"
 ---
 # New-AzureRmHDInsightPigJobDefinition
 
 ## SYNOPSIS
-Membuat objek pekerjaan Pig.
+Membuat objek pekerjaan Babi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,11 +28,11 @@ New-AzureRmHDInsightPigJobDefinition [-Arguments <String[]>] [-Files <String[]>]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmHDInsightPigJobDefinition** menentukan objek pekerjaan Pig untuk digunakan dengan kluster Azure HDInsight.
+Cmdlet **New-AzureRmHDInsightPigJobDefinition** menentukan objek pekerjaan Babi untuk digunakan dengan kluster Azure HDInsight.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat definisi pekerjaan Pig
+### Contoh 1: Create a Pig job definition
 ```
 PS C:\># Cluster info
 PS C:\>$clusterName = "your-hadoop-001"
@@ -49,13 +49,13 @@ PS C:\>New-AzureRmHDInsightPigJobDefinition -StatusFolder $statusFolder `
             -ClusterCredential $clusterCreds
 ```
 
-Perintah ini akan membuat definisi pekerjaan Pig.
+Perintah ini membuat definisi pekerjaan Babi.
 
 ## PARAMETERS
 
 ### -Argumen
-Menentukan array argumen untuk pekerjaan itu.
-Argumen diberikan sebagai argumen baris perintah untuk setiap tugas.
+Menentukan array argumen untuk pekerjaan tersebut.
+Argumen dikirim sebagai argumen baris perintah ke setiap tugas.
 
 ```yaml
 Type: System.String[]
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -86,8 +86,8 @@ Accept wildcard characters: False
 
 ### -File
 Menentukan jalur ke file yang berisi kueri untuk dijalankan.
-File harus tersedia pada akun penyimpanan yang terkait dengan kluster.
-Anda bisa menggunakan parameter ini sebagai ganti *parameter Query* .
+File harus tersedia di akun penyimpanan yang terkait dengan kluster.
+Anda bisa menggunakan parameter ini dan bukan parameter *Kueri* .
 
 ```yaml
 Type: System.String
@@ -101,7 +101,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -File
+### -Files
 Menentukan kumpulan file yang terkait dengan pekerjaan Hive.
 
 ```yaml
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Query
-Menentukan kueri Pig.
+Menentukan kueri Babi.
 
 ```yaml
 Type: System.String
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -StatusFolder
-Menentukan lokasi folder yang berisi output standar dan output kesalahan untuk pekerjaan.
+Menentukan lokasi folder yang berisi output standar dan output kesalahan untuk suatu pekerjaan.
 
 ```yaml
 Type: System.String
@@ -147,11 +147,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

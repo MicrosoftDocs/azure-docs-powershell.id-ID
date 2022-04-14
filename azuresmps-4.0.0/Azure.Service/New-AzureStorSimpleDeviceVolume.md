@@ -4,11 +4,11 @@ ms.assetid: 049201C9-590F-47EB-9030-25F80CD8DFA5
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 22273f9ce959e5fd446eb47ce391517a50263b85
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423219"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141920487"
 ---
 # New-AzureStorSimpleDeviceVolume
 
@@ -28,11 +28,11 @@ New-AzureStorSimpleDeviceVolume -DeviceName <String> -VolumeContainer <DataConta
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureStorSimpleDeviceVolume** membuat volume dalam wadah volume yang ditentukan.
-Cmdlet ini menghubungkan setiap volume dengan satu atau beberapa rekaman kontrol akses.
-Untuk mendapatkan **objek AccessControlRecord,** gunakan cmdlet **Get-AzureStorSimpleAccessControlRecord.**
+Cmdlet **New-AzureStorSimpleDeviceVolume** membuat volume dalam wadah volume tertentu.
+Cmdlet ini mengaitkan setiap volume dengan satu atau beberapa catatan kontrol akses.
+Untuk mendapatkan objek **AccessControlRecord** , gunakan cmdlet **Get-AzureStorSimpleAccessControlRecord** .
 Tentukan nama, ukuran, dan AppType untuk volume.
-Selain itu, tentukan apakah akan membuat volume online, apakah akan mengaktifkan pencadangan default, dan apakah akan mengaktifkan pemantauan.
+Juga, tentukan apakah akan membuat volume secara online, apakah akan mengaktifkan cadangan default, dan apakah mengaktifkan pemantauan.
 
 ## EXAMPLES
 
@@ -53,16 +53,16 @@ c3b1ad53-7a51-49d7-ae83-94ff1ff3ab90 for tracking the task's status
 VERBOSE: Volume container with name: VolumeContainer07 is found.
 ```
 
-Perintah pertama mendapatkan catatan kontrol akses di konfigurasi layanan StorSimple Manager menggunakan cmdlet **Get-AzureStorSimpleAccessControlRecord,** lalu menyimpannya dalam variabel $AcrList.
+Perintah pertama mendapatkan catatan kontrol akses dalam konfigurasi layanan StorSimple Manager menggunakan cmdlet **Get-AzureStorSimpleAccessControlRecord** , lalu menyimpannya dalam variabel $AcrList.
 
-Perintah kedua mendapatkan wadah volume yang bernama VolumeContainer07 untuk perangkat yang bernama Contoso63-AppVm dengan menggunakan cmdlet **Get-AzureStorSimpleDeviceVolumeContainer.**
-Perintah itu melewati wadah itu ke cmdlet saat ini dengan menggunakan operator pipeline.
-Cmdlet ini membuat volume.
+Perintah kedua mendapatkan wadah volume bernama VolumeContainer07 untuk perangkat yang bernama Contoso63-AppVm menggunakan cmdlet **Get-AzureStorSimpleDeviceVolumeContainer** .
+Perintah melewati kontainer ke cmdlet saat ini menggunakan operator pipeline.
+Cmdlet ini menciptakan volume.
 Perintah menentukan nama untuk volume, ukuran, dan rekaman kontrol akses yang disimpan di $AcrList.
-Perintah ini memulai pekerjaan, lalu mengembalikan objek **TaskResponse.**
-Untuk melihat status pekerjaan, gunakan cmdlet **Get-AzureStorSimpleTask.**
+Perintah ini memulai pekerjaan, lalu mengembalikan objek **TaskResponse** .
+Untuk melihat status pekerjaan, gunakan cmdlet **Get-AzureStorSimpleTask** .
 
-### Contoh 2: Membuat volume tanpa kontrol kontrol Access Controlaccess mengontrol kontrolaccess
+### Contoh 2: Membuat volume tanpa kontrol Controlaccess Accessaks kontrolaks kontrol
 ```
 PS C:\>Get-AzureStorSimpleDeviceVolumeContainer -DeviceName "Contoso63-AppVm" -VolumeContainerName "VolumeContainer01" | New-AzureStorSimpleDeviceVolume -DeviceName "Contoso63-AppVm" -VolumeName "Volume22" -Size 2000000000 -AccessControlRecords @() -VolumeAppType PrimaryVolume -Online $True -EnableDefaultBackup $False -EnableMonitoring $False -WaitForComplete
 VERBOSE: ClientRequestId: 3f359790-7e1f-48e7-acf8-ecabba850966_PS
@@ -102,19 +102,19 @@ VSN                    : SS-VOL-d73b7eec-76fc-4310-b347-69b160de8cdd
 VERBOSE: Volume container with name: VolumeContainer01 is found.
 ```
 
-Perintah ini mendapatkan wadah volume yang bernama VolumeContainer01 untuk perangkat yang bernama Contoso63-AppVm dengan menggunakan cmdlet **Get-AzureStorSimpleDeviceVolumeContainer.**
-Perintah itu melewati wadah itu ke cmdlet saat ini dengan menggunakan operator pipeline.
-Cmdlet ini membuat volume.
+Perintah ini mendapatkan wadah volume bernama VolumeContainer01 untuk perangkat yang bernama Contoso63-AppVm menggunakan cmdlet **Get-AzureStorSimpleDeviceVolumeContainer** .
+Perintah melewati kontainer ke cmdlet saat ini menggunakan operator pipeline.
+Cmdlet ini menciptakan volume.
 Perintah menentukan nama untuk volume, ukuran, dan nilai kosong untuk rekaman kontrol akses.
-Perintah ini menentukan parameter *WaitForComplete,* sehingga akan mengembalikan **TaskStatusInfo** setelah membuat volume.
+Perintah ini menentukan parameter *WaitForComplete* , sehingga mengembalikan **TaskStatusInfo** setelah membuat volume.
 
-Karena perintah tidak menentukan data kontrol akses, volume ini tidak dapat diakses.
-Anda dapat menambahkan akses, nanti, dengan menggunakan cmdlet **Set-AzureStorSimpleDeviceVolume.**
+Karena perintah tidak menentukan rekaman kontrol akses, volume ini tidak dapat diakses.
+Anda dapat menambahkan akses, nantinya, dengan menggunakan cmdlet **Set-AzureStorSimpleDeviceVolume** .
 
 ## PARAMETERS
 
 ### -AccessControlRecords
-Menentukan daftar catatan kontrol akses untuk dikaitkan dengan volume.
+Menentukan daftar rekaman kontrol akses untuk dikaitkan dengan volume.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.WindowsAzure.Management.StorSimple.Models.AccessControlRecord]
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceName
-Menentukan nama perangkat StorSimple untuk membuat volume.
+Menentukan nama perangkat StorSimple tempat untuk membuat volume.
 
 ```yaml
 Type: String
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableDefaultBackup
-Menentukan apakah akan mengaktifkan cadangan default untuk volume.
+Menentukan apakah akan mengaktifkan cadangan asali untuk volume.
 
 ```yaml
 Type: Boolean
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Online
-Menentukan apakah akan membuat volume online.
+Menentukan apakah akan membuat volume secara online.
 
 ```yaml
 Type: Boolean
@@ -220,8 +220,8 @@ Accept wildcard characters: False
 ```
 
 ### -VolumeContainer
-Menentukan wadah, sebagai objek **DataContainer,** untuk membuat volume.
-Untuk mendapatkan objek **VirtualDisk,** gunakan cmdlet **Get-AzureStorSimpleDeviceVolumeContainer.**
+Menentukan wadah, sebagai objek **DataContainer** , tempat untuk membuat volume.
+Untuk mendapatkan objek **VirtualDisk** , gunakan cmdlet **Get-AzureStorSimpleDeviceVolumeContainer** .
 
 ```yaml
 Type: DataContainer
@@ -266,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### -WaitForComplete
-Menunjukkan bahwa cmdlet ini menunggu hingga operasi selesai sebelum mengembalikan kontrol ke Windows PowerShell konsol.
+Menunjukkan bahwa cmdlet ini menunggu operasi selesai sebelum mengembalikan kontrol ke konsol Windows PowerShell.
 
 ```yaml
 Type: SwitchParameter
@@ -281,17 +281,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### DataContainer, Daftar\<AccessControlRecord\>
-Cmdlet ini menerima **objek DataContainer** dan daftar objek **AccessControlRecord** untuk volume baru.
+Cmdlet ini menerima objek **DataContainer** dan daftar objek **AccessControlRecord** untuk volume baru.
 
 ## OUTPUTS
 
 ### TaskStatusInfo
-Cmdlet ini mengembalikan **objek TaskStatusInfo,** jika Anda menentukan parameter *WaitForComplete.*
+Cmdlet ini mengembalikan objek **TaskStatusInfo** , jika Anda menentukan parameter *WaitForComplete* .
 
 ## CATATAN
 
@@ -299,7 +299,7 @@ Cmdlet ini mengembalikan **objek TaskStatusInfo,** jika Anda menentukan paramete
 
 [Get-AzureStorSimpleDeviceVolume](./Get-AzureStorSimpleDeviceVolume.md)
 
-[Remove-AzureStorSimpleDeviceVolume](./Remove-AzureStorSimpleDeviceVolume.md)
+[Hapus-AzureStorSimpleDeviceVolume](./Remove-AzureStorSimpleDeviceVolume.md)
 
 [Set-AzureStorSimpleDeviceVolume](./Set-AzureStorSimpleDeviceVolume.md)
 

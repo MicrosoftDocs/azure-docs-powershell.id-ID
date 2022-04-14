@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/New-AzureRmApiManagementLogger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/New-AzureRmApiManagementLogger.md
 ms.openlocfilehash: 04119d70f1cf3ae01b1d74e24cb2e030eecaa46b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420384"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142101545"
 ---
 # New-AzureRmApiManagementLogger
 
 ## SYNOPSIS
-Membuat Logger Manajemen API.
+Membuat API Management Logger.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -37,22 +37,22 @@ New-AzureRmApiManagementLogger -Context <PsApiManagementContext> [-LoggerId <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmApiManagementLogger** membuat **Logger** Manajemen API Azure.
+Cmdlet **New-AzureRmApiManagementLogger** membuat Azure API Management **Logger**.
 
 ## EXAMPLES
 
-### Contoh 1: Buat logger
+### Contoh 1: Membuat logger
 ```powershell
 PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>New-AzureRmApiManagementLogger -Context $apimContext -LoggerId "Logger123" -Name "ContosoSdkEventHub" -ConnectionString "Endpoint=sb://ContosoSdkEventHubs.servicebus.windows.net/;SharedAccessKeyName=SendKey;SharedAccessKey=<key>" -Description "SDK event hub logger"
 ```
 
-Perintah ini membuat logger yang bernama ContosoSdkEventHub dengan menggunakan string koneksi yang ditentukan.
+Perintah ini membuat logger bernama ContosoSdkEventHub menggunakan string koneksi yang ditentukan.
 
 ## PARAMETERS
 
 ### -ConnectionString
-Menentukan string koneksi Azure Event Hub yang dimulai dengan hal berikut ini: `Endpoint=endpoint and key from Azure classic portal`
+Menentukan string koneksi Azure Event Hubs yang dimulai dengan yang berikut ini:`Endpoint=endpoint and key from Azure classic portal`
 Kunci dengan Hak Kirim dalam string koneksi harus dikonfigurasi.
 
 ```yaml
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Menentukan objek **PsApiManagementContext.**
+Menentukan objek **PsApiManagementContext** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstrumentationKey
-Kunci Instrumen aplikasi akan Insights. Parameter ini bersifat opsional.
+Kunci Instrumentasi aplikasi Insights. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String
@@ -128,9 +128,9 @@ Accept wildcard characters: False
 ```
 
 ### -IsBuffered
-Menentukan apakah data dalam logger terjadi buffer sebelum penerbitan.
+Menentukan apakah rekaman dalam logger dibunyikan sebelum diterbitkan.
 Nilai defaultnya adalah $True.
-Ketika terjadi buffer, rekaman dikirimkan ke Hub Kejadian setiap 15 detik, atau setiap kali buffer menerima 256 KB pesan.
+Ketika catatan dibunyikan, data dikirim ke Hub Acara setiap 15 detik, atau setiap kali buffer menerima 256 KB pesan.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -145,8 +145,8 @@ Accept wildcard characters: False
 ```
 
 ### -LoggerId
-Menentukan ID untuk logger.
-Jika Anda tidak menentukan ID, cmdlet ini akan menghasilkan ID.
+Menentukan ID untuk pencatat.
+Jika Anda tidak menentukan ID, cmdlet ini akan menghasilkannya.
 
 ```yaml
 Type: System.String
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama entitas dari hub acara dari portal klasik Azure.
+Menentukan nama entitas hub acara dari portal klasik Azure.
 
 ```yaml
 Type: System.String
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -184,7 +184,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 
@@ -196,7 +196,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmApiManagementLogger](./Get-AzureRmApiManagementLogger.md)
 
-[Remove-AzureRmApiManagementLogger](./Remove-AzureRmApiManagementLogger.md)
+[Hapus-AzureRmApiManagementLogger](./Remove-AzureRmApiManagementLogger.md)
 
 [Set-AzureRmApiManagementLogger](./Set-AzureRmApiManagementLogger.md)
 

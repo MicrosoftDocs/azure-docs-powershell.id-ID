@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Add-AzMetricAlertRuleV2.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Add-AzMetricAlertRuleV2.md
 ms.openlocfilehash: ca237ad29a4759ad225ef968d81d45afa3434875
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140076275"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141801122"
 ---
 # Add-AzMetricAlertRuleV2
 
 ## SYNOPSIS
-Menambahkan atau memperbarui aturan pemberitahuan berbasis metrik V2 (non klasik).
+Menambahkan atau memperbarui aturan peringatan berbasis metrik V2 (non-klasik).
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/add-azmetricalertrulev2) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/add-azmetricalertrulev2) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Add-AzMetricAlertRuleV2 -Name <String> -ResourceGroupName <String> -WindowSize <
 ```
 
 ## DESCRIPTION
-Menambahkan atau memperbarui **aturan pemberitahuan berbasis metrik V2 (non klasik**). Aturan yang ditambahkan dikaitkan dengan grup sumber daya dan memiliki nama. Cmdlet ini menerapkan pola ShouldProcess, misalnya meminta konfirmasi dari pengguna sebelum benar-benar membuat, mengubah, atau menghapus sumber daya.
+Menambahkan atau memperbarui **aturan peringatan berbasis metrik V2 (non-klasik**). Aturan yang ditambahkan terkait dengan grup sumber daya dan memiliki nama. Cmdlet ini menerapkan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar membuat, mengubah, atau menghapus sumber daya.
 
 ## EXAMPLES
 
@@ -72,9 +72,9 @@ Location             : global
 Tags                 :
 ```
 
-Perintah ini membuat aturan pemberitahuan metrik untuk komputer virtual. $condition adalah output cmdlet [New-AzMetricAlertRuleV2Criteria](https://docs.microsoft.com/powershell/module/az.monitor/new-azmetricalertrulev2criteria) dan $act adalah output cmdlet [New-AzActionGroup](https://docs.microsoft.com/powershell/module/az.monitor/new-azactiongroup)
+Perintah ini membuat aturan peringatan metrik untuk mesin virtual. $condition adalah output cmdlet [New-AzMetricAlertRuleV2Criteria](https://docs.microsoft.com/powershell/module/az.monitor/new-azmetricalertrulev2criteria) dan $act adalah output cmdlet [New-AzActionGroup](https://docs.microsoft.com/powershell/module/az.monitor/new-azactiongroup)
 
-### Contoh 2: Tambahkan aturan pemberitahuan metrik untuk semua mesin virtual dalam langganan
+### Contoh 2: Menambahkan aturan pemberitahuan metrik untuk semua mesin virtual dalam langganan
 ```powershell
 PS C:\> Add-AzMetricAlertRuleV2 -Name AllVM -ResourceGroupName xxxxRG -WindowSize 0:5 -Frequency 0:5 -TargetResourceScope "/subscriptions/00000000-0000-0000-0000-0000000" -TargetResourceType "Microsoft.Compute/virtualMachines" -TargetResourceRegion "eastus" -Description "This is description" -Severity 4 -ActionGroup $act -Condition $condition
 
@@ -97,7 +97,7 @@ Location             : global
 Tags                 :
 ```
 
-Perintah ini akan membuat aturan pemberitahuan metrik untuk semua mesin virtual dalam langganan yang berada di eastus
+Perintah ini membuat aturan pemberitahuan metrik untuk semua mesin virtual dalam langganan di eastus
 
 ### Contoh 3: Menonaktifkan aturan pemberitahuan metrik
 ```powershell
@@ -121,7 +121,7 @@ Location             : global
 Tags                 :
 ```
 
-Perintah ini menonaktifkan aturan pemberitahuan metrik. Di sini, kami melakukan pemipaan output [Get-AzMetricAlertRuleV2](https://docs.microsoft.com/powershell/module/az.monitor/get-azmetricalertrulev2) ke [Add-AzMetricAlertRuleV2](https://docs.microsoft.com/powershell/module/az.monitor/add-azmetricalertrulev2) 
+Perintah ini menonaktifkan aturan pemberitahuan metrik. Di sini, kami adalah output perpipaan [dari Get-AzMetricAlertRuleV2](https://docs.microsoft.com/powershell/module/az.monitor/get-azmetricalertrulev2) ke [Add-AzMetricAlertRuleV2](https://docs.microsoft.com/powershell/module/az.monitor/add-azmetricalertrulev2) 
 
 ### Contoh 4: Menambahkan aturan pemberitahuan metrik dengan dimensi
 
@@ -150,9 +150,9 @@ Location             : global
 Tags                 :
 ```
 
-Untuk membuat aturan pemberitahuan metrik yang lebih kompleks seperti aturan yang melibatkan pemilihan nilai dimensi atau memiliki beberapa kriteria, Anda dapat menggunakan cmdlet bantuan [New-AzMetricAlertRuleV2DimensionSelection](https://docs.microsoft.com/powershell/module/az.monitor/new-azmetricalertrulev2dimensionselection) dan [New-AzMetricAlertRuleV2Criteria](https://docs.microsoft.com/powershell/module/az.monitor/new-azmetricalertrulev2criteria).
+Untuk membuat aturan pemberitahuan metrik yang lebih kompleks seperti aturan yang melibatkan pemilihan nilai dimensi atau memiliki beberapa kriteria, Anda dapat menggunakan cmdlet pembantu [New-AzMetricAlertRuleV2DimensionSelection](https://docs.microsoft.com/powershell/module/az.monitor/new-azmetricalertrulev2dimensionselection) dan [New-AzMetricAlertRuleV2Criteria](https://docs.microsoft.com/powershell/module/az.monitor/new-azmetricalertrulev2criteria).
 
-Di atas kumpulan cmdlet akan membuat aturan peringatan metrik dengan dimensi.
+Set cmdlet di atas akan membuat aturan peringatan metrik dengan dimensi.
 
 ## PARAMETERS
 
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoMitigate
-Bendera yang mengindikasikan apakah pemberitahuan sebaiknya diatasi secara otomatis atau tidak
+Bendera yang menunjukkan apakah pemberitahuan harus diatasi secara otomatis atau tidak
 
 ```yaml
 Type: System.Boolean
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kondisi
-Ketentuan untuk aturan
+Kondisi untuk aturan
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Insights.OutputClasses.IPSMultiMetricCriteria]
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Deskripsi aturan pemberitahuan metrik
+Penjabaran dari aturan pemberitahuan metrik
 
 ```yaml
 Type: System.String
@@ -261,8 +261,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Frequency
-The evaluation frequency for rule
+### -Frekuensi
+Frekuensi evaluasi untuk aturan
 
 ```yaml
 Type: System.TimeSpan
@@ -397,7 +397,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -413,7 +413,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -428,7 +428,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -438,7 +438,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String[]
 
-### System.Collections.generic.List'1[[Microsoft.Azure.Commands.Insights. OutputClasses.IPSMultiMetricCriteria, Microsoft.Azure.PowerShell.Cmdlets.Monitor, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Insights. OutputClasses.IPSMultiMetricCriteria, Microsoft.Azure.PowerShell.Cmdlets.Monitor, Version=1.0.1.0, Culture=netral, PublicKeyToken=null]]
 
 ### Microsoft.Azure.Management.Monitor.Models.ActivityLogAlertActionGroup[]
 

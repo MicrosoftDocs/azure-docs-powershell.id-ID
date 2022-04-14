@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/New-AzStorageTableSASToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/New-AzStorageTableSASToken.md
 ms.openlocfilehash: 190db8ff50c3c52fb8d43a2cdbd509f9e67ea63b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424905"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142092195"
 ---
 # New-AzStorageTableSASToken
 
 ## SYNOPSIS
-Menghasilkan token SAS untuk Azure Storage tabel.
+Menghasilkan token SAS untuk tabel Azure Storage.
 
 ## SYNTAX
 
@@ -37,17 +37,17 @@ New-AzStorageTableSASToken [-Name] <String> [-Permission <String>] [-Protocol <S
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzStorageTableSASToken** menghasilkan token Shared Access Signature (SAS) untuk Azure Storage tabel.
+Cmdlet **New-AzStorageTableSASToken** menghasilkan token Shared Access Signature (SAS) untuk tabel Azure Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Buat token SAS yang memiliki izin penuh untuk tabel
+### Contoh 1: Menghasilkan token SAS yang memiliki izin penuh untuk tabel
 ```
 C:\PS>New-AzStorageTableSASToken -Name "ContosoResources" -Permission "raud"
 ```
 
 Perintah ini menghasilkan token SAS dengan izin penuh untuk tabel bernama ContosoResources.
-Token tersebut untuk izin membaca, menambahkan, memperbarui, dan menghapus.
+Token tersebut adalah untuk izin baca, tambahkan, perbarui, dan hapus.
 
 ### Contoh 2: Menghasilkan token SAS untuk rentang partisi
 ```
@@ -55,15 +55,15 @@ C:\PS>New-AzStorageTableSASToken -Name "ContosoResources" -Permission "raud" -St
 ```
 
 Perintah ini menghasilkan dan token SAS dengan izin penuh untuk tabel bernama ContosoResources.
-The command limits the token to the range that the *StartPartitionKey* and *EndPartitionKey* specify.
+Perintah membatasi token ke rentang yang ditentukan oleh parameter *StartPartitionKey* dan *EndPartitionKey* .
 
-### Contoh 3: Buat token SAS yang memiliki kebijakan akses tersimpan untuk tabel
+### Contoh 3: Menghasilkan token SAS yang memiliki kebijakan akses tersimpan untuk tabel
 ```
 C:\PS>New-AzStorageTableSASToken -Name "ContosoResources" -Policy "ClientPolicy01"
 ```
 
 Perintah ini menghasilkan token SAS untuk tabel bernama ContosoResources.
-Perintah menentukan kebijakan akses tersimpan bernama ClientPolicy01.
+Perintah menentukan kebijakan akses yang disimpan bernama ClientPolicy01.
 
 ## PARAMETERS
 
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndPartitionKey
-Menentukan kunci partisi dari akhir rentang untuk token yang dibuat cmdlet ini.
+Menentukan kunci partisi akhir rentang untuk token yang dibuat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndRowKey
-Menentukan kunci baris untuk akhir rentang untuk token yang dibuat cmdlet ini.
+Menentukan tombol baris untuk akhir rentang untuk token yang dibuat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -159,8 +159,8 @@ Accept wildcard characters: False
 ```
 
 ### -IPAddressOrRange
-Menentukan alamat IP atau rentang alamat IP untuk menerima permintaan, seperti 168.1.5.65 atau 168.1.5.60-168.1.5.70.
-Rentang bersifat inklusif.
+Menentukan alamat IP atau rentang alamat IP yang menerima permintaan, seperti 168.1.5.65 atau 168.1.5.60-168.1.5.70.
+Rentangnya inklusif.
 
 ```yaml
 Type: System.String
@@ -190,9 +190,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Permission
-Menentukan izin untuk Azure Storage tabel.
-Penting untuk diingat bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis dan Hapus).
+### -Izin
+Menentukan izin untuk tabel Azure Storage.
+Penting untuk diperhatikan bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis, dan Hapus).
 
 ```yaml
 Type: System.String
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Menentukan kebijakan akses tersimpan, yang mencakup izin untuk token SAS ini.
+Menentukan kebijakan akses tersimpan, yang menyertakan izin untuk token SAS ini.
 
 ```yaml
 Type: System.String
@@ -221,11 +221,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
+### -Protokol
 Menentukan protokol yang diizinkan untuk permintaan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 * HttpsOnly
-* HttpsOrHttp Nilai default adalah HttpsOrHttp.
+* HttpsOrHttp The default value is HttpsOrHttp.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.WindowsAz.Storage.SharedAccessProtocol]
@@ -256,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartRowKey
-Menentukan kunci baris untuk awal rentang untuk token yang dibuat cmdlet ini.
+Menentukan tombol baris untuk awal rentang untuk token yang dibuat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -286,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

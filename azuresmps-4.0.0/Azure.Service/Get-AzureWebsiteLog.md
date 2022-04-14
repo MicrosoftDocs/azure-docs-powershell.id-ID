@@ -3,12 +3,12 @@ external help file: Microsoft.WindowsAzure.Commands.dll-Help.xml
 ms.assetid: BFB57100-93F6-4FD2-8ECA-7F54BEB0D6B0
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 4837ede2d3838543c1261775162d4fe90fca65171d94845b620961ad1e6b4c55
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: d0cc984e4930935201a0d92be005fb231dcb464f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418201"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141921114"
 ---
 # Get-AzureWebsiteLog
 
@@ -19,7 +19,7 @@ Mendapatkan log untuk situs web tertentu.
 
 ## SYNTAX
 
-### Tail
+### Ekor
 ```
 Get-AzureWebsiteLog [-Path <String>] [-Message <String>] [-Tail] [-Name <String>] [-Slot <String>]
  [-Profile <AzureSMProfile>] [<CommonParameters>]
@@ -32,28 +32,28 @@ Get-AzureWebsiteLog [-ListPath] [-Name <String>] [-Slot <String>] [-Profile <Azu
 ```
 
 ## DESCRIPTION
-Topik ini menguraikan cmdlet dalam modul Microsoft Azure PowerShell versi 0.8.10.
-Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Topik ini menjelaskan cmdlet dalam versi 0.8.10 modul Microsoft Azure PowerShell.
+Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik .`(Get-Module -Name Azure).Version`
 
 Mendapatkan log untuk situs web tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Memulai streaming log
+### Contoh 1: Mulai streaming log
 ```
 PS C:\> Get-AzureWebsiteLog -Tail
 ```
 
 Contoh ini memulai streaming log untuk semua log aplikasi.
 
-### Contoh 2: Memulai streaming log untuk log http
+### Contoh 2: Mulai streaming log untuk log http
 ```
 PS C:\> Get-AzureWebsiteLog -Tail -Path http
 ```
 
 Contoh ini memulai streaming log untuk log http.
 
-### Contoh 3: Memulai streaming log untuk log kesalahan
+### Contoh 3: Mulai streaming log untuk log kesalahan
 ```
 PS C:\> Get-AzureWebsiteLog -Tail -Message Error
 ```
@@ -115,9 +115,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Path
+### -Jalur
 Jalur dari mana log akan diambil.
-Secara default adalah Akar, yang berarti menyertakan semua jalur.
+Secara default adalah Root, yang berarti menyertakan semua jalur.
 
 ```yaml
 Type: String
@@ -132,8 +132,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -188,12 +188,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzureWebsite](./Get-AzureWebsite.md)
+[Dapatkan-AzureWebsite](./Get-AzureWebsite.md)
 
-[New-AzureWebsite](./New-AzureWebsite.md)
+[Baru-AzureSitus Web](./New-AzureWebsite.md)
 
-[Remove-AzureWebsite](./Remove-AzureWebsite.md)
+[Hapus-AzureSitus Web](./Remove-AzureWebsite.md)
 
-[Start-AzureWebsite](./Start-AzureWebsite.md)
+[Mulai AzureSitus Web](./Start-AzureWebsite.md)
 
 

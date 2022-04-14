@@ -4,11 +4,11 @@ ms.assetid: A40879D2-371B-4CF1-BF1F-9E5C896EB89C
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 982c70a063f5f69d926e0f59ec435d2514f7b3c3
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428084"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141921489"
 ---
 # Get-AzureStorSimpleDeviceBackup
 
@@ -25,25 +25,25 @@ Get-AzureStorSimpleDeviceBackup -DeviceName <String> [-From <String>] [-To <Stri
  [-Skip <Int32>] [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
 
-### IdentifyById
+### IdentifikasiById
 ```
 Get-AzureStorSimpleDeviceBackup -DeviceName <String> -BackupPolicyId <String> [-From <String>] [-To <String>]
  [-First <Int32>] [-Skip <Int32>] [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
 
-### IdentifyById2
+### IdentifiById2
 ```
 Get-AzureStorSimpleDeviceBackup -DeviceName <String> -VolumeId <String> [-From <String>] [-To <String>]
  [-First <Int32>] [-Skip <Int32>] [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
 
-### IdentifyByObject
+### IdentifikasiByObject
 ```
 Get-AzureStorSimpleDeviceBackup -DeviceName <String> -BackupPolicy <BackupPolicyDetails> [-From <String>]
  [-To <String>] [-First <Int32>] [-Skip <Int32>] [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
 
-### IdentifyByObject2
+### IdentifiByObject2
 ```
 Get-AzureStorSimpleDeviceBackup -DeviceName <String> -Volume <VirtualDisk> [-From <String>] [-To <String>]
  [-First <Int32>] [-Skip <Int32>] [-Profile <AzureSMProfile>] [<CommonParameters>]
@@ -51,16 +51,16 @@ Get-AzureStorSimpleDeviceBackup -DeviceName <String> -Volume <VirtualDisk> [-Fro
 
 ## DESCRIPTION
 Cmdlet **Get-AzureStorSimpleDeviceBackup** mendapatkan cadangan dari perangkat.
-Anda bisa menentukan kebijakan pencadangan, volume, dan waktu pembuatan cadangan.
+Anda dapat menentukan kebijakan, volume, dan waktu pembuatan cadangan cadangan.
 
 Cmdlet ini dapat mengembalikan maksimal 100 cadangan di halaman pertama.
-Jika terdapat lebih dari 100 cadangan, ambil halaman berikutnya dengan menggunakan *parameter Pertama* *dan Lewati.*
-Jika Anda menentukan nilai 100 untuk Lewati dan 50 untuk *Pertama,* cmdlet ini tidak mengembalikan 100 hasil pertama. 
-Fungsi akan mengembalikan 50 hasil berikutnya setelah 100 yang dilewati.
+Jika ada lebih dari 100 cadangan, ambil halaman berikutnya menggunakan parameter *Pertama* dan *Lewati* .
+Jika Anda menentukan nilai 100 untuk *Lewati* dan 50 untuk *Pertama*, cmdlet ini tidak mengembalikan 100 hasil pertama.
+Mengembalikan 50 hasil berikutnya setelah 100 yang dilewatinya.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua cadangan pada perangkat
+### Contoh 1: Dapatkan semua cadangan di perangkat
 ```
 PS C:\>Get-AzureStorSimpleDeviceBackup -DeviceName "Contoso63-AppVm"
 InstanceId                           Name                               Type          BackupJobCreationType              CreatedOn                          SizeInBytes                       Snapshots                         SSMHostName                      
@@ -77,10 +77,10 @@ ebd87fa3-a9e2-49c9-a7e6-dada47071544 Cloud_Snapshot_vg-all              CloudSna
 2c3dd48d-824c-4298-82b5-fb44abb67a1e Test Group                         LocalSnapshot Adhoc                              3/27/2015 1:47:00 AM               5016521801728                     {Volume 1, Volume 3}
 ```
 
-Perintah ini mendapatkan semua cadangan yang ada pada perangkat bernama Contoso63-AppVm.
-Jika ada lebih dari maksimal 100 cadangan yang diperbolehkan untuk  halaman pertama, gunakan parameter Pertama dan *Lewati* untuk menampilkan hasil tambahan.
+Perintah ini mendapatkan semua cadangan yang ada di perangkat bernama Contoso63-AppVm.
+Jika ada lebih dari maksimal 100 cadangan yang diperbolehkan untuk halaman pertama, gunakan parameter *Pertama* dan *Lewati* untuk menampilkan hasil tambahan.
 
-### Contoh 2: Buat cadangan di antara dua tanggal
+### Contoh 2: Membuat cadangan di antara dua tanggal
 ```
 PS C:\>Get-AzureStorSimpleDeviceBackup -DeviceName "Contoso63-AppVm" -From "9/7/2014" -To "10/7/2014" -First 2 -Skip 1
 BackupJobCreationType : BySchedule
@@ -104,10 +104,10 @@ your commandlet
 ```
 
 Perintah ini mendapatkan cadangan di perangkat bernama Contoso63-AppVm yang dibuat pada atau setelah 7/10/2014 dan pada atau sebelum 8/10/2014.
-Cmdlet ini melompati hasil pertama dan mengembalikan dua hasil pertama setelah hasil pertama.
-Memodifikasi nilai untuk *Pertama* dan *Lompat* untuk menampilkan hasil lain.
+Cmdlet ini melewati hasil pertama dan mengembalikan dua hasil pertama setelah hasil pertama.
+Ubah nilai untuk *Pertama* dan *Lewati* untuk menampilkan hasil lainnya.
 
-### Contoh 3: Mendapatkan cadangan untuk ID kebijakan cadangan
+### Contoh 3: Dapatkan cadangan untuk ID kebijakan cadangan
 ```
 PS C:\>Get-AzureStorSimpleDeviceBackup -DeviceName "Contoso63-AppVm" -BackupPolicyId "de088eac-b283-4d92-b501-a759845fdf3f" -First 10 -From "9/7/2014"
 BackupJobCreationType : BySchedule
@@ -133,11 +133,11 @@ VERBOSE: More backups are available for your query. To access the next page of y
 in your commandlet
 ```
 
-Perintah ini mendapatkan cadangan di perangkat yang bernama Contoso63-AppVm dibuat pada atau sebelum tanggal yang ditentukan.
-Perintah mendapatkan cadangan yang dibuat dengan menggunakan kebijakan pencadangan yang memiliki ID tertentu.
-Perintah ini menentukan *Parameter pertama,* sehingga hanya mengembalikan 10 hasil pertama.
+Perintah ini mendapatkan cadangan pada perangkat bernama Contoso63-AppVm yang dibuat pada atau sebelum tanggal yang ditentukan.
+Perintah mendapatkan cadangan yang dibuat menggunakan kebijakan cadangan yang memiliki ID tertentu.
+Perintah ini menentukan parameter *Pertama* , sehingga hanya mengembalikan 10 hasil pertama.
 
-### Contoh 4: Mendapatkan cadangan untuk objek kebijakan cadangan
+### Contoh 4: Dapatkan cadangan untuk objek kebijakan cadangan
 ```
 PS C:\>Get-AzureStorSimpleDeviceBackupPolicy -DeviceName "Contoso63-AppVm" -BackupPolicyName "TSQATest_Default" | Get-AzureStorSimpleDeviceBackup -DeviceName "Contoso63-AppVm" -First 10 -From "9/7/2014"
 BackupJobCreationType : BySchedule
@@ -163,12 +163,12 @@ VERBOSE: More backups are available for your query. To access the next page of y
 in your commandlet
 ```
 
-Perintah ini mendapatkan objek **BackupPolicyDetails** menggunakan cmdlet **Get-AzureStorSimpleDeviceBackupPolicy,** lalu meneruskan objek tersebut ke cmdlet saat ini menggunakan operator pipeline.
-Cmdlet tersebut mendapatkan cadangan untuk perangkat yang Contoso63-AppVm dibuat dengan menggunakan kebijakan pencadangan dari bagian pertama perintah.
+Perintah ini mendapatkan objek **BackupPolicyDetails** menggunakan cmdlet **Get-AzureStorSimpleDeviceBackupPolicy** , lalu meneruskan objek tersebut ke cmdlet saat ini menggunakan operator pipeline.
+Cmdlet tersebut mendapatkan cadangan untuk perangkat bernama Contoso63-AppVm yang dibuat dengan menggunakan kebijakan cadangan dari bagian pertama perintah.
 Perintah akan membuat cadangan pada atau sebelum tanggal yang ditentukan, sama seperti dalam contoh sebelumnya.
 Perintah ini hanya mengembalikan 10 hasil pertama.
 
-### Contoh 5: Mendapatkan cadangan untuk ID volume
+### Contoh 5: Dapatkan cadangan untuk ID volume
 ```
 PS C:\>Get-AzureStorSimpleDeviceBackup -DeviceName "Contoso63-AppVm" -VolumeId "SS-VOL-246b9df1-11bb-4071-8043-f955cc406446" -First 1
 BackupJobCreationType : BySchedule
@@ -184,10 +184,10 @@ VERBOSE: # of backups returned : 1
 VERBOSE: No more backup sets are present for your query!
 ```
 
-Perintah ini akan mendapatkan cadangan di perangkat yang dibuat pada volume yang memiliki ID instans tertentu.
-Perintah ini menentukan *parameter Pertama,* sehingga hanya mengembalikan satu hasil pertama.
+Perintah ini mendapatkan cadangan pada perangkat yang dibuat pada volume yang memiliki ID instans tertentu.
+Perintah ini menentukan parameter *Pertama* , sehingga hanya mengembalikan satu hasil pertama.
 
-### Contoh 6: Mendapatkan cadangan untuk nama volume
+### Contoh 6: Dapatkan cadangan untuk nama volume
 ```
 PS C:\>Get-AzureStorSimpleDeviceVolume -DeviceName "Contoso63-AppVm" -VolumeName "TSQATest03" | Get-AzureStorSimpleDeviceBackup -DeviceName "Contoso63-AppVm" -First 1
 BackupJobCreationType : BySchedule
@@ -203,16 +203,16 @@ VERBOSE: # of backups returned : 1
 VERBOSE: No more backup sets are present for your query!
 ```
 
-Perintah ini mendapatkan objek **VirtualDisk** menggunakan cmdlet **Get-AzureStorSimpleDeviceVolume,** lalu meneruskan objek tersebut ke cmdlet saat ini menggunakan operator pipeline.
-Cmdlet tersebut mendapatkan cadangan untuk perangkat yang Contoso63-AppVm dibuat pada volume dari bagian pertama perintah.
+Perintah ini mendapatkan objek **VirtualDisk** menggunakan cmdlet **Get-AzureStorSimpleDeviceVolume** , lalu meneruskan objek tersebut ke cmdlet saat ini menggunakan operator pipeline.
+Cmdlet tersebut mendapatkan cadangan untuk perangkat bernama Contoso63-AppVm yang dibuat pada volume dari bagian pertama perintah.
 Perintah ini hanya mengembalikan hasil pertama.
 
 ## PARAMETERS
 
 ### -BackupPolicy
-Menentukan objek **BackupPolicyDetails.**
-Cmdlet ini menggunakan **InstanceId** objek ini untuk menentukan cadangan mana yang akan digunakan.
-Untuk mendapatkan objek **BackupPolicyDetails,** gunakan cmdlet **Get-AzureStorSimpleDeviceBackupPolicy.**
+Menentukan objek **BackupPolicyDetails** .
+Cmdlet ini menggunakan **InstanceId** objek ini untuk menentukan cadangan mana yang akan didapatkan.
+Untuk mendapatkan objek **BackupPolicyDetails** , gunakan cmdlet **Get-AzureStorSimpleDeviceBackupPolicy** .
 
 ```yaml
 Type: BackupPolicyDetails
@@ -243,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceName
-Menentukan nama perangkat StorSimple yang akan mendapatkan cadangan.
+Menentukan nama perangkat StorSimple untuk mendapatkan cadangan.
 
 ```yaml
 Type: String
@@ -257,9 +257,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -First
+### -Pertama
 Hanya mendapatkan jumlah objek yang ditentukan.
-Masukkan jumlah objek yang akan dapatkan.
+Masukkan jumlah objek yang akan didapatkan.
 
 ```yaml
 Type: Int32
@@ -274,7 +274,7 @@ Accept wildcard characters: False
 ```
 
 ### -Dari
-Menentukan tanggal dan waktu mulai untuk cadangan yang akan cmdlet ini dapatkan.
+Menentukan tanggal mulai dan waktu untuk cadangan yang didapatkan cmdlet ini.
 
 ```yaml
 Type: String
@@ -304,7 +304,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lewati
-Mengabaikan jumlah objek tertentu lalu mendapatkan objek yang tersisa.
+Mengabaikan jumlah objek yang ditentukan lalu mendapatkan objek yang tersisa.
 Masukkan jumlah objek yang akan dilewati.
 
 ```yaml
@@ -319,8 +319,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Ke
-Menentukan tanggal dan waktu akhir untuk cadangan yang akan cmdlet dapatkan.
+### -Kepada
+Menentukan tanggal dan waktu akhir untuk cadangan yang didapatkan cmdlet ini.
 
 ```yaml
 Type: String
@@ -335,9 +335,9 @@ Accept wildcard characters: False
 ```
 
 ### -Volume
-Menentukan objek **VirtualDisk.**
-Cmdlet ini menggunakan **InstanceId** objek ini untuk menentukan volume di mana cadangan ada.
-Untuk mendapatkan objek **VirtualDisk,** gunakan parameter **Get-AzureStorSimpleDeviceVolume.**
+Menentukan objek **VirtualDisk** .
+Cmdlet ini menggunakan **InstanceId** objek ini untuk menentukan volume cadangan yang ada.
+Untuk mendapatkan objek **VirtualDisk** , gunakan parameter **Get-AzureStorSimpleDeviceVolume** .
 
 ```yaml
 Type: VirtualDisk
@@ -367,23 +367,23 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### BackupPolicyDetails, VirtualDisk
-Cmdlet ini menerima **objek BackupPolicyDetails** **dan VirtualDisk.**
+Cmdlet ini menerima objek **BackupPolicyDetails** dan **VirtualDisk** .
 
 ## OUTPUTS
 
 ### IList\<Backup\>
-Cmdlet ini mengembalikan daftar **objek Cadangan.**
+Cmdlet ini mengembalikan daftar objek **Cadangan** .
 
 ## CATATAN
 
 ## RELATED LINKS
 
-[Remove-AzureStorSimpleDeviceBackup](./Remove-AzureStorSimpleDeviceBackup.md)
+[Hapus-AzureStorSimpleDeviceBackup](./Remove-AzureStorSimpleDeviceBackup.md)
 
 [Get-AzureStorSimpleDeviceBackupPolicy](./Get-AzureStorSimpleDeviceBackupPolicy.md)
 

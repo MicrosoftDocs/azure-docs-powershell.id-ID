@@ -5,11 +5,11 @@ ms.assetid: 04B1E3A6-6D52-46A3-8241-2CCDB5E71642
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.resources/remove-azurermadspcredential
 schema: 2.0.0
 ms.openlocfilehash: 73fff5ff4cf612c39bacd26fed61c4e856e34128
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424897"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141780326"
 ---
 # Remove-AzureRmADSpCredential
 
@@ -45,9 +45,9 @@ Remove-AzureRmADSpCredential -ServicePrincipalObject <PSADServicePrincipal> [-Ke
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzureRmADSpCredential ini dapat digunakan untuk menghapus kunci kredensial dari prinsipal layanan dalam hal kedaluwarsa rol kunci kredensial atau sebagai bagian dari kredensial.
-Prinsipal layanan diidentifikasi dengan menyediakan ID objek atau nama prinsipal layanan (SPN).
-Kredensial yang akan dihapus diidentifikasi dengan ID kuncinya jika kredensial individual akan dihapus atau dengan sakelar 'Semua' untuk menghapus semua kredensial yang terkait dengan prinsipal layanan.
+Cmdlet Remove-AzureRmADSpCredential dapat digunakan untuk menghapus kunci kredensial dari prinsipal layanan dalam kasus kompromi atau sebagai bagian dari kedaluwarsa rollover kunci kredensial.
+Prinsipal layanan diidentifikasi dengan memasok ID objek atau nama pokok layanan (SPN).
+Kredensial yang akan dihapus diidentifikasi oleh ID kuncinya jika kredensial individual akan dihapus atau dengan sakelar 'Semua' untuk menghapus semua kredensial yang terkait dengan prinsipal layanan.
 
 ## EXAMPLES
 
@@ -59,26 +59,26 @@ PS C:\> Remove-AzureRmADSpCredential -ObjectId 7663d3fb-6f86-4352-9e6d-cf9d50d5e
 
 Menghapus kredensial dengan id kunci '9044423a-60a3-45ac-9ab1-09534157ebb' dari prinsipal layanan dengan id objek '7663d3fb-6f86-4352-9e6d-cf9d50d5ee82'.
 
-### Contoh 2 - Hapus semua kredensial dari prinsipal layanan
+### Contoh 2 - Menghapus semua kredensial dari prinsipal layanan
 
 ```
 PS C:\> Remove-AzureRmADSpCredential -ServicePrincipalName http://test123
 ```
 
-Menghapus semua kredensial dari prinsipal layanan dengan SPN " http://test123 ".
+Menghapus semua kredensial dari prinsipal layanan dengan SPN "http://test123".
 
-### Contoh 3 - Hapus semua kredensial dari prinsipal layanan menggunakan pemipaan
+### Contoh 3 - Menghapus semua kredensial dari prinsipal layanan menggunakan perpipaan
 
 ```
 PS C:\> Get-AzureRmADServicePrincipal -ObjectId 7663d3fb-6f86-4352-9e6d-cf9d50d5ee82 | Remove-AzureRmADSpCredential
 ```
 
-Dapatkan prinsipal layanan dengan id objek '7663d3fb-6f86-4352-9e6d-cf9d50d5ee82' dan pipa ke cmdlet Remove-AzureRmADSpCredential untuk menghapus semua kredensial dari prinsipal layanan tersebut.
+Mendapatkan prinsipal layanan dengan object id '7663d3fb-6f86-4352-9e6d-cf9d50d5ee82' dan pipa yang ke cmdlet Remove-AzureRmADSpCredential untuk menghapus semua kredensial dari prinsipal layanan tersebut.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -107,8 +107,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Beralihlah ke hapus kredensial tanpa konfirmasi.
+### -Paksa
+Beralih untuk menghapus kredensial tanpa konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Id objek prinsipal layanan untuk menghapus kredensial.
+Id objek pokok layanan untuk menghapus kredensial.
 
 ```yaml
 Type: System.Guid
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalName
-Nama (SPN) prinsipal layanan untuk menghapus kredensial dari.
+Nama (SPN) pokok layanan untuk menghapus kredensial.
 
 ```yaml
 Type: System.String
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalObject
-Objek prinsipal layanan untuk menghapus kredensial.
+Objek pokok layanan untuk menghapus kredensial.
 
 ```yaml
 Type: Microsoft.Azure.Graph.RBAC.Version1_6.ActiveDirectory.PSADServicePrincipal
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -230,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -238,7 +238,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.DIRECTDServicePrincipal
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADServicePrincipal
 Parameter: ServicePrincipalObject (ByValue)
 
 ## OUTPUTS
@@ -249,9 +249,9 @@ Parameter: ServicePrincipalObject (ByValue)
 
 ## RELATED LINKS
 
-[Get-AzureRmADSpCredential](./Get-AzureRmADSpCredential.md)
+[Get-AzureRmADSpcredential](./Get-AzureRmADSpCredential.md)
 
-[New-AzureRmADSpCredential](./New-AzureRmADSpCredential.md)
+[Baru-AzureRmADSpcredential](./New-AzureRmADSpCredential.md)
 
 [Get-AzureRmADServicePrincipal](./Get-AzureRmADServicePrincipal.md)
 

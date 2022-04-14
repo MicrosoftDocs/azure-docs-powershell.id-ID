@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Restore-AzRmStorageShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Restore-AzRmStorageShare.md
 ms.openlocfilehash: 80cbbb656739269d7abaf87566a214082797958a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140130543"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141946689"
 ---
 # Restore-AzRmStorageShare
 
@@ -18,11 +18,11 @@ ms.locfileid: "140130543"
 Memulihkan berbagi file yang dihapus.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/restore-azrmstorageshare) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/restore-azrmstorageshare) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Nama Akun (Default)
+### AccountName (Default)
 ```
 Restore-AzRmStorageShare [-ResourceGroupName] <String> [-StorageAccountName] <String> -Name <String>
  -DeletedShareVersion <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
@@ -42,7 +42,7 @@ Restore-AzRmStorageShare -InputObject <PSShare> [-DefaultProfile <IAzureContextC
 ```
 
 ## DESCRIPTION
-Cmdlet **Restore-AzRmStorageShare** memulihkan berbagi file yang dihapus dalam hari penyimpanan yang valid jika penghapusan sementara berbagi diaktifkan.
+Cmdlet **Restore-AzRmStorageShare** memulihkan berbagi file yang dihapus dalam hari penyimpanan yang valid jika penghapusan lunak berbagi diaktifkan.
 
 ## EXAMPLES
 
@@ -68,7 +68,7 @@ Name     QuotaGiB EnabledProtocol AccessTier Deleted Version ShareUsageBytes
 share1   100
 ```
 
-Perintah ini terlebih dahulu menghapus file bersama, lalu mencantumkan berbagi dan melihat versi berbagi yang dihapus, terakhir memulihkannya kembali ke berbagi normal. Perlu mengaktifkan penghapusan sementara berbagi dengan Update-AzStorageFileServiceProperty, sebelum menghapus berbagi.
+Perintah ini terlebih dahulu menghapus berbagi file, lalu mencantumkan berbagi dan melihat versi berbagi yang dihapus, akhirnya memulihkannya kembali ke berbagi normal. Perlu diaktifkan berbagi penghapusan lembut dengan Update-AzStorageFileServiceProperty, sebelum menghapus berbagi.
 
 ## PARAMETERS
 
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeletedShareVersion
-Hapus Versi Berbagi, yang akan dipulihkan.
+Versi Berbagi yang Dihapus, yang akan dipulihkan.
 
 ```yaml
 Type: System.String
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Berbagi yang dihapus
+Objek Berbagi yang Dihapus
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSShare
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Berbagi yang dihapus, yang akan dipulihkan.
+Nama Berbagi yang Dihapus, yang akan dipulihkan.
 
 ```yaml
 Type: System.String
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage objek akun
+objek akun Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Storage Akun.
+Storage Nama Akun.
 
 ```yaml
 Type: System.String
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

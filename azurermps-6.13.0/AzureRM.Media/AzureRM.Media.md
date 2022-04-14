@@ -6,35 +6,35 @@ Help Version: 0.9.2.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Media/Commands.Media/help/AzureRM.Media.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Media/Commands.Media/help/AzureRM.Media.md
-ms.openlocfilehash: ecd66d9ca645b2b931e38f2db7518df31be0c7ebcf457631f517b7f2d98defc0
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 928ecbceef8bcd5343f7d97e68561d02b36e5dbd
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132418545"
 ---
 # AzureRM.Media Module
 ## Deskripsi
-Topik ini menampilkan topik bantuan untuk fitur layanan web Layanan Media dalam cmdlet Layanan Aplikasi Azure.
+Topik ini menampilkan topik bantuan untuk fitur layanan web Layanan Media dalam cmdlet Azure App Service.
 
 ## Cmdlet AzureRM.Media
 ### [Get-AzureRmMediaService](Get-AzureRmMediaService.md)
 Mendapatkan informasi tentang layanan media.
 
 ### [Get-AzureRmMediaServiceKeys](Get-AzureRmMediaServiceKeys.md)
-Mendapatkan informasi penting untuk mengakses titik akhir REST yang terkait dengan layanan media.
+Mendapatkan informasi utama untuk mengakses titik akhir REST yang terkait dengan layanan media.
 
 ### [Get-AzureRmMediaServiceNameAvailability](Get-AzureRmMediaServiceNameAvailability.md)
 Memeriksa apakah nama layanan media tersedia.
-Nama layanan media ber unik secara global.
+Nama layanan media unik secara global.
 
-### [New-AzureRmMediaService](New-AzureRmMediaService.md)
+### [Baru-AzureRmMediaService](New-AzureRmMediaService.md)
 Membuat layanan media jika layanan media sudah ada, semua propertinya diperbarui dengan input yang disediakan.
 
 ### [New-AzureRmMediaServiceStorageConfig](New-AzureRmMediaServiceStorageConfig.md)
 Buat konfigurasi akun penyimpanan untuk cmdlet layanan media.
 
-### [Remove-AzureRmMediaService](Remove-AzureRmMediaService.md)
+### [Hapus-AzureRmMediaService](Remove-AzureRmMediaService.md)
 Menghapus layanan media.
 
 ### [Set-AzureRmMediaService](Set-AzureRmMediaService.md)
