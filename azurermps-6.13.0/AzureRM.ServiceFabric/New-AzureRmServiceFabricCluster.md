@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceFabric/Commands.ServiceFabric/help/New-AzureRmServiceFabricCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceFabric/Commands.ServiceFabric/help/New-AzureRmServiceFabricCluster.md
 ms.openlocfilehash: 87fb451028fb0e345bd8748573424cf33066e52b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423626"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141880907"
 ---
 # New-AzureRmServiceFabricCluster
 
 ## SYNOPSIS
-This command uses certificates that you provide or system generated self-signed certificates to set up a new service fabric cluster. Templat ini dapat menggunakan templat default atau templat kustom yang telah diberikan. Anda memiliki opsi menentukan folder untuk mengekspor sertifikat yang ditandatangani sendiri untuk atau mengambilnya nanti dari kunci vault. 
+Perintah ini menggunakan sertifikat yang Anda berikan atau sistem yang dibuat sertifikat yang ditandatangani sendiri untuk menyiapkan kluster kain layanan baru. Templat dapat menggunakan templat default atau templat kustom yang Anda sediakan. Anda memiliki opsi untuk menentukan folder untuk mengekspor sertifikat yang ditandatangani sendiri atau mengambilnya nanti dari kubah kunci. 
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -30,14 +30,14 @@ New-AzureRmServiceFabricCluster [-ResourceGroupName] <String> [-CertificateOutpu
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### MenurutExistingKeyVault
+### ByExistingKeyVault
 ```
 New-AzureRmServiceFabricCluster [-ResourceGroupName] <String> -TemplateFile <String> -ParameterFile <String>
  [-VmPassword <SecureString>] -SecretIdentifier <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### ByNewVaultxAndVaultName
+### ByNewPfxAndVaultName
 ```
 New-AzureRmServiceFabricCluster [-ResourceGroupName] <String> -TemplateFile <String> -ParameterFile <String>
  [-CertificateOutputFolder <String>] [-CertificatePassword <SecureString>] [-KeyVaultResouceGroupName <String>]
@@ -45,7 +45,7 @@ New-AzureRmServiceFabricCluster [-ResourceGroupName] <String> -TemplateFile <Str
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### MenurutExistingVaultxAndVaultName
+### ByExistingPfxAndVaultName
 ```
 New-AzureRmServiceFabricCluster [-ResourceGroupName] <String> -TemplateFile <String> -ParameterFile <String>
  -CertificateFile <String> [-CertificatePassword <SecureString>] [-SecondaryCertificateFile <String>]
@@ -55,13 +55,13 @@ New-AzureRmServiceFabricCluster [-ResourceGroupName] <String> -TemplateFile <Str
 ```
 
 ## DESCRIPTION
-Perintah **New-AzureRmServiceFabricCluster** menggunakan sertifikat yang Anda sediakan atau sistem yang dihasilkan sertifikat yang ditandatangani sendiri untuk menyiapkan kluster kain layanan baru. Templat yang digunakan bisa merupakan templat default atau templat kustom yang Anda sediakan. Anda memiliki opsi menentukan folder untuk mengekspor sertifikat yang ditandatangani sendiri atau mengambilnya nanti dari kunci vault.
-Jika Anda menentukan templat kustom dan file parameter, Anda tidak perlu menyediakan informasi sertifikat dalam file parameter, sistem akan mengisi parameter ini.
-Empat opsi tersebut dijelaskan secara mendetail di bawah ini. Gulir ke bawah untuk penjelasan dari setiap parameter.
+Perintah **New-AzureRmServiceFabricCluster** menggunakan sertifikat yang Anda sediakan atau sistem yang dibuat sertifikat yang ditandatangani sendiri untuk menyiapkan kluster kain layanan baru. Templat yang digunakan bisa berupa templat default atau templat kustom yang Anda sediakan. Anda memiliki opsi untuk menentukan folder untuk mengekspor sertifikat yang ditandatangani sendiri atau mengambilnya nanti dari kubah kunci.
+Jika Anda menentukan templat kustom dan file parameter, Anda tidak perlu memberikan informasi sertifikat dalam file parameter, sistem akan mengisi parameter ini.
+Empat opsi tersebut dirinci di bawah ini. Gulir ke bawah untuk penjelasan setiap parameter.
 
 ## EXAMPLES
 
-### Contoh 1: Menentukan ukuran kluster saja, nama subjek sertifikat, dan OS untuk menyebarkan kluster.
+### Contoh 1: Tentukan hanya ukuran kluster, nama subjek sert, dan OS untuk menyebarkan kluster.
 ```
 $pass="Password#1234" | ConvertTo-SecureString -AsPlainText -Force
 $RGname="test01"
@@ -74,9 +74,9 @@ Write-Output "Create cluster in '$clusterloc' with cert subject name '$subname' 
 New-AzureRmServiceFabricCluster -ResourceGroupName $RGname -Location $clusterloc -ClusterSize 5 -VmPassword $pass -CertificateSubjectName $subname -CertificateOutputFolder $pfxfolder -CertificatePassword $pass -OS WindowsServer2016Datacenter
 ```
 
-Perintah ini hanya menentukan ukuran kluster, nama subjek sertifikat, dan OS untuk menyebarkan kluster.
+Perintah ini hanya menentukan ukuran kluster, nama subjek sert, dan OS untuk menyebarkan kluster.
 
-### Contoh 2: Menentukan sumber daya Sertifikat yang sudah ada dalam penyimpanan kunci dan templat kustom untuk menyebarkan kluster
+### Contoh 2: Tentukan sumber daya Sertifikat yang sudah ada dalam kubah kunci dan templat kustom untuk menyebarkan kluster
 ```
 $RGname="test20"
 $templateParmfile="C:\service-fabric-secure-nsg-cluster-65-node-3-nodetype\azuredeploytest.parameters.json"
@@ -86,9 +86,9 @@ $secretId="https://test1.vault.azure.net:443/secrets/testcertificate4/56ec774dc6
 New-AzureRmServiceFabricCluster -ResourceGroupName $RGname -TemplateFile $templateFile -ParameterFile $templateParmfile -SecretIdentifier $secretId
 ```
 
-Perintah ini menentukan sumber daya Sertifikat yang sudah ada dalam penyimpanan kunci dan templat kustom untuk menyebarkan kluster.
+Perintah ini menentukan sumber daya Sertifikat yang sudah ada dalam kubah kunci dan templat kustom untuk menyebarkan kluster.
 
-### Contoh 3: Buat kluster baru menggunakan templat kustom. Menentukan nama grup sumber daya yang berbeda untuk vault kunci dan meminta sistem mengunggah sertifikat baru ke dalamnya
+### Contoh 3: Membuat kluster baru menggunakan templat kustom. Tentukan nama grup sumber daya yang berbeda untuk kubah kunci dan mintalah sistem mengunggah sertifikat baru ke dalamnya
 ```
 $pass="Password#1234" | ConvertTo-SecureString -AsPlainText -Force
 $RGname="test20"
@@ -103,9 +103,9 @@ $templateFile="C:\service-fabric-secure-nsg-cluster-65-node-3-nodetype\azuredepl
 New-AzureRmServiceFabricCluster -ResourceGroupName $RGname -TemplateFile $templateFile -ParameterFile $templateParmfile -CertificateOutputFolder $pfxfolder -CertificatePassword $pass -KeyVaultResouceGroupName $keyVaultRG  -KeyVaultName $keyVault -CertificateSubjectName $subname
 ```
 
-Perintah ini membuat kluster baru menggunakan templat kustom. Menentukan nama grup sumber daya yang berbeda untuk vault kunci dan meminta sistem mengunggah sertifikat baru ke dalamnya
+Perintah ini membuat kluster baru menggunakan templat kustom. Tentukan nama grup sumber daya yang berbeda untuk kubah kunci dan mintalah sistem mengunggah sertifikat baru ke dalamnya
 
-### Contoh 4: Bawa Sertifikat Anda sendiri dan templat kustom dan buat kluster baru
+### Contoh 4: Bawa Sertifikat anda sendiri dan templat kustom dan buat kluster baru
 ```
 $pass="Password#1234" | ConvertTo-SecureString -AsPlainText -Force
 $RGname="test20"
@@ -118,7 +118,7 @@ $templateFile="~\GitHub\azure-quickstart-templates\service-fabric-secure-nsg-clu
 New-AzureRmServiceFabricCluster -ResourceGroupName $RGname -TemplateFile $templateFile -ParameterFile $templateParmfile -CertificateFile $pfxsourcefile -CertificatePassword $pass -KeyVaultResouceGroupName $keyVaultRG -KeyVaultName $keyVault
 ```
 
-Perintah ini akan memungkinkan Anda membawa Sertifikat dan templat kustom Anda sendiri serta membuat kluster baru.
+Perintah ini akan memungkinkan Anda membawa Sertifikat dan templat kustom Anda sendiri dan membuat kluster baru.
 
 ## PARAMETERS
 
@@ -182,8 +182,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ClusterSize
-Jumlah node di kluster. Defaultnya adalah 5 node.
+### -Clustersize
+Jumlah node dalam kluster. Defaultnya adalah 5 node.
 
 ```yaml
 Type: System.Int32
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultName
-Nama key vault Azure. Jika tidak diberikan, pengaturan defaultnya akan diberikan ke nama grup sumber daya.
+Nama kubah tombol Azure. Jika tidak diberikan, nama grup sumber daya akan diatur ke default.
 
 ```yaml
 Type: System.String
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultResouceGroupName
-Nama grup sumber daya penyimpanan tombol Azure. Jika tidak, akan defaultnya adalah nama grup sumber daya.
+Nama grup sumber daya kubah kunci Azure. Jika tidak diberikan, nama grup sumber daya akan menjadi default.
 
 ```yaml
 Type: System.String
@@ -258,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Tentukan nama kluster. Jika tidak diberikan, akan sama seperti nama grup sumber daya.
+Tentukan nama kluster. Jika tidak diberikan, nama grup sumber daya akan sama dengan nama grup sumber daya.
 
 ```yaml
 Type: System.String
@@ -273,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -OS
-Sistem Operasi VM yang menjadi kluster.
+Sistem Operasi VM yang menyusun kluster.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.OperatingSystem
@@ -349,7 +349,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecretIdentifier
-URL rahasia penyimpanan kunci Azure yang sudah ada, misalnya: https://mykv.vault.azure.net:443/secrets/mysecrets/55ec7c4dc61a462bbc645ffc9b4b225f ' '.
+URL rahasia kubah kunci Azure yang sudah ada, misalnya: 'https://mykv.vault.azure.net:443/secrets/mysecrets/55ec7c4dc61a462bbc645ffc9b4b225f'.
 
 ```yaml
 Type: System.String
@@ -405,7 +405,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Vmsku
+### -VmSku
 The Vm Sku.
 
 ```yaml
@@ -436,7 +436,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -451,7 +451,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -466,7 +466,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/New-AzSpatialAnchorsAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/New-AzSpatialAnchorsAccountKey.md
 ms.openlocfilehash: 40c8d961c93cf9b99afc770cbf122203367902b2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140105165"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142126331"
 ---
 # New-AzSpatialAnchorsAccountKey
 
 ## SYNOPSIS
-Kunci regenerasi Akun Jangkar Spasial
+Meregenerasi kunci Akun Jangkar Spasial
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mixedreality/new-azspatialanchorsaccountkey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.mixedreality/new-azspatialanchorsaccountkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,38 +28,38 @@ New-AzSpatialAnchorsAccountKey -ResourceGroupName <String> -Name <String> [-Prim
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RegenerateSecparameterryKeyParameterSet
+### RegenerateSecondaryKeyParameterSet
 ```
 New-AzSpatialAnchorsAccountKey -ResourceGroupName <String> -Name <String> [-Secondary] [-Force]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ResourceIdRegatePrimaryKeyParameterSet
+### ResourceIdRegeneratePrimaryKeyParameterSet
 ```
 New-AzSpatialAnchorsAccountKey -ResourceId <String> [-Primary] [-Force]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ResourceIdRegulasiateSecparameterryKeyParameterSet
+### ResourceIdRegenerateSecondaryKeyParameterSet
 ```
 New-AzSpatialAnchorsAccountKey -ResourceId <String> [-Secondary] [-Force]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### PipelineRegulasiatePrimaryKeyParameterSet
+### PipelineRegeneratePrimaryKeyParameterSet
 ```
 New-AzSpatialAnchorsAccountKey -InputObject <PSSpatialAnchorsAccount> -Primary [-Force]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### PipelineRegulasiateSecparameterSetKey
+### PipelineRegenerateSecondaryKeyParameterSet
 ```
 New-AzSpatialAnchorsAccountKey -InputObject <PSSpatialAnchorsAccount> -Secondary [-Force]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Meregenerasi kunci primer atau kunci sekunder dari Akun Jangkar Spasis.
+Meregenerasi kunci utama atau kunci sekunder Akun Jangkar Spasial.
 
 ## EXAMPLES
 
@@ -72,7 +72,7 @@ PrimaryKey                                   SecondaryKey
 QTwT6LpnD6NuUfgfkCKFBmf89xWJ7tDC0Yx0yxxaejs= mF8lsBeEbs51H/jLe4COW4zUiEyg9lDM1XHQ03jtxZU=
 ```
 
-Regenerasi kunci sekunder dari Akun Jangkar Spasial "contoh" di Grup Sumber Daya "rg1". 
+Regenerasi kunci sekunder dari "contoh" Akun Jangkar Spasial dalam Grup Sumber Daya "rg1". 
 
 ### Contoh 2
 ```powershell
@@ -83,7 +83,7 @@ PrimaryKey                                   SecondaryKey
 QTwT6LpnD6NuUfgfkCKFBmf89xWJ7tDC0Yx0yxxaejs= BGOP2NZN5ThHbDFKzW+FISSgxnnBqCPKpTsixAxkvXk=
 ```
 
-Regenerasi kunci sekunder dari Akun Jangkar Spasial "contoh" dari Langganan dan Grup Sumber Daya saat ini "rg1" dengan pemipaan.
+Regenerasi kunci sekunder dari "contoh" Akun Jangkar Spasial dari Langganan saat ini dan Grup Sumber Daya "rg1" dengan perpipaan.
 
 ## PARAMETERS
 
@@ -102,8 +102,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,7 +147,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Utama
+### -Primer
 Meregenerasi kunci utama Akun Jangkar Spasial.
 
 ```yaml
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID Sumber Daya dari Akun Jangkar Spasial.
+ID Sumber Daya Akun Jangkar Spasial.
 
 ```yaml
 Type: String
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -238,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

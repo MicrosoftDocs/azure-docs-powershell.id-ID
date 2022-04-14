@@ -5,16 +5,16 @@ ms.assetid: D818C404-60E4-42DB-AADF-063305D9541B
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/remove-azurermloadbalancerinboundnatruleconfig
 schema: 2.0.0
 ms.openlocfilehash: 2af05b60498fc83b74c00701794dba7f1b59e6a6
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423944"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141928155"
 ---
 # Remove-AzureRmLoadBalancerInboundNatRuleConfig
 
 ## SYNOPSIS
-Menghapus konfigurasi aturan NAT masuk dari penyeimbang muat.
+Menghapus konfigurasi aturan NAT masuk dari penyeimbang muatan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -26,7 +26,7 @@ Remove-AzureRmLoadBalancerInboundNatRuleConfig [-Name <String>] -LoadBalancer <P
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmLoadBalancerInboundNatRuleConfig** menghapus konfigurasi aturan penerjemahan alamat jaringan masuk (NAT, Inbound Network Address Translation) dari penyeimbang muat Azure.
+Cmdlet **Remove-AzureRmLoadBalancerInboundNatRuleConfig** menghapus konfigurasi aturan terjemahan alamat jaringan masuk (NAT) dari load balancer Azure.
 
 ## EXAMPLES
 
@@ -37,12 +37,12 @@ $loadbalancer = Get-AzureRmLoadBalancer -Name mylb -ResourceGroupName myrg
  Remove-AzureRmLoadBalancerInboundNatRuleConfig -Name "myinboundnatrule" -LoadBalancer $loadbalancer
 ```
 
-Perintah pertama memuat penyeimbang muat yang sudah ada yang disebut "mylb" dan menyimpannya di penyeimbang $load variabel. Perintah kedua menghapus aturan NAT masuk yang terkait dengan penyeimbang muat ini.
+Perintah pertama memuat load balancer yang sudah ada yang disebut "mylb" dan menyimpannya dalam variabel $load balancer. Perintah kedua menghapus aturan NAT masuk yang terkait dengan penyeimbang muatan ini.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -87,12 +87,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSLoadBalancer
-Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari saluran
+Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari pipeline
 
 ## OUTPUTS
 

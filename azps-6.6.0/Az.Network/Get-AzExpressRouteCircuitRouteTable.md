@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCircuitRouteTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCircuitRouteTable.md
 ms.openlocfilehash: a9484065efed1fa966ef8bf305a9bf85bd571e81
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140282605"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142125503"
 ---
 # Get-AzExpressRouteCircuitRouteTable
 
@@ -19,7 +19,7 @@ ms.locfileid: "140282605"
 Mendapatkan tabel rute dari sirkuit ExpressRoute.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azexpressroutecircuitroutetable) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azexpressroutecircuitroutetable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Get-AzExpressRouteCircuitRouteTable -ResourceGroupName <String> -ExpressRouteCir
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzExpressRouteCircuitRouteTable** mengambil tabel rute mendetail dari sirkuit ExpressRoute. Tabel rute akan memperlihatkan semua rute atau dapat difilter untuk memperlihatkan rute bagi tipe peering tertentu. Anda bisa menggunakan tabel rute untuk memvalidasi konfigurasi peering dan konektivitas Anda.
+Cmdlet **Get-AzExpressRouteCircuitRouteTable** mengambil tabel rute mendetail dari sirkuit ExpressRoute. Tabel rute akan memperlihatkan semua rute atau dapat difilter untuk memperlihatkan rute untuk tipe peering tertentu. Anda dapat menggunakan tabel rute untuk memvalidasi konfigurasi peering dan konektivitas Anda.
 
 ## EXAMPLES
 
@@ -42,7 +42,7 @@ Get-AzExpressRouteCircuitRouteTable -ResourceGroupName $RG -ExpressRouteCircuitN
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpressRouteCircuitName
-Nama sirkuit ExpressRoute yang akan diperiksa.
+Nama sirkuit ExpressRoute sedang diperiksa.
 
 ```yaml
 Type: System.String
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeeringType
-Nilai yang dapat diterima untuk parameter ini adalah: `AzurePrivatePeering`, `AzurePublicPeering`, dan `MicrosoftPeering`
+Nilai yang dapat diterima untuk parameter ini adalah: `AzurePrivatePeering`, , `AzurePublicPeering`dan `MicrosoftPeering`
 
 ```yaml
 Type: System.String
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

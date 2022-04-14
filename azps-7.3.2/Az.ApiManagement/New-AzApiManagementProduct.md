@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementProduct.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementProduct.md
-ms.openlocfilehash: d6b2de1baebc54a5dca6aeb547d62bf513ef18e9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e4f2df032766257aa3f1565eb15a9fca9e47f83c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140558109"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141944259"
 ---
 # New-AzApiManagementProduct
 
 ## SYNOPSIS
-Membuat produk Manajemen API.
+Membuat produk API Management.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementproduct) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ New-AzApiManagementProduct -Context <PsApiManagementContext> [-ProductId <String
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApiManagementProduct** membuat produk Manajemen API.
+Cmdlet **New-AzApiManagementProduct** menciptakan produk API Management.
 
 ## EXAMPLES
 
@@ -38,24 +41,24 @@ $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS
 New-AzApiManagementProduct -Context $apimContext -ProductId "0123456789" -Title "Starter" -Description "Starter Product" -LegalTerms "Free for all" -SubscriptionRequired $False -State "Published"
 ```
 
-Perintah ini akan membuat produk Manajemen API.
-Anda tidak perlu berlangganan.
+Perintah ini membuat produk API Management.
+Tidak diperlukan langganan.
 
-### Contoh 2: Buat produk yang memerlukan langganan dan persetujuan
+### Contoh 2: Membuat produk yang memerlukan langganan dan persetujuan
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 New-AzApiManagementProduct -Context $apimContext -ProductId "9876543210" -Title "Unlimited" -Description "Subscribers have completely unlimited access to the API. Administrator approval is required." -LegalTerms "Free for all" -ApprovalRequired $True -State "Published" -NotificationPeriod "D10" -SubscriptionPeriod "Y1"
 ```
 
-Perintah ini akan membuat produk.
+Perintah ini membuat produk.
 Langganan dan persetujuan diperlukan.
-Perintah ini mengatur periode pemberitahuan ke 10 hari.
+Perintah ini mengatur periode pemberitahuan menjadi 10 hari.
 Durasi langganan diatur ke satu tahun.
 
 ## PARAMETERS
 
-### -ApprovalRequired
-Menunjukkan apakah langganan untuk produk tersebut memerlukan persetujuan atau tidak.
+### -PersetujuanDiperlukan
+Menunjukkan apakah langganan produk memerlukan persetujuan atau tidak.
 Secara default, parameter ini **$False**.
 
 ```yaml
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -166,8 +169,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionRequired
-Menunjukkan apakah produk tersebut memerlukan langganan.
-Nilai defaultnya adalah **$True**.
+Menunjukkan apakah produk memerlukan langganan.
+Nilai defaultnya **adalah $True**.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -181,8 +184,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -LanggananLimit
-Menentukan jumlah maksimum langganan secara bersamaan.
+### -SubscriptionsLimit
+Menentukan jumlah maksimum langganan bersamaan.
 Nilai defaultnya adalah Tidak Ada.
 
 ```yaml
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -221,11 +224,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
-### System.Nullable'1[[Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementProductState, Microsoft.Azure.PowerShell.Cmdlets.ApiManagement.ServiceManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+### System.Nullable'1[[Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementProductState, Microsoft.Azure.PowerShell.Cmdlets.ApiManagement.ServiceManagement, Version=1.0.0.0, Culture=netral, PublicKeyToken=null]]
 
 ## OUTPUTS
 

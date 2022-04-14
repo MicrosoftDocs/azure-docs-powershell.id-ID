@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Set-AzStorageSyncServerEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Set-AzStorageSyncServerEndpoint.md
 ms.openlocfilehash: 572e35fdfb503fa1011e513b54774710a41d19ff
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140065691"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141946365"
 ---
 # Set-AzStorageSyncServerEndpoint
 
@@ -18,7 +18,7 @@ ms.locfileid: "140065691"
 Perintah ini memungkinkan perubahan pada parameter titik akhir server yang dapat disesuaikan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storagesync/set-azstoragesyncserverendpoint) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/set-azstoragesyncserverendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +46,7 @@ Set-AzStorageSyncServerEndpoint [-InputObject] <PSServerEndpoint> [-CloudTiering
 ```
 
 ## DESCRIPTION
-Perintah ini memungkinkan perubahan pada parameter titik akhir server yang dapat disesuaikan. Misalnya kebijakan tingkatan awan dan cloud tiering dapat diubah kapan saja. Beberapa aspek titik akhir server, seperti jalur lokal, tidak dapat diubah setelah titik akhir server dibuat.
+Perintah ini memungkinkan perubahan pada parameter titik akhir server yang dapat disesuaikan. Misalnya, kebijakan tingkat cloud dan tingkat cloud dapat diubah kapan saja. Beberapa aspek titik akhir server, seperti jalur lokal, tidak dapat diubah setelah titik akhir server dibuat.
 
 ## EXAMPLES
 
@@ -55,12 +55,12 @@ Perintah ini memungkinkan perubahan pada parameter titik akhir server yang dapat
 PS C:\> Set-AzStorageSyncServerEndpoint -ResourceGroupName "myResourceGroup" -StorageSyncServiceName "myStorageSyncServiceName" -SyncGroupName "mySyncGroupName" -Name "myServerEndpointName" -TierFilesOlderThanDays 30
 ```
 
-Contoh ini menjalankan dua tindakan, menetapkan kebijakan tingkatan awan baru pada titik akhir server yang ditentukan, yang mengarahkan server untuk tingkatan semua file yang belum diakses dalam 30 hari terakhir dan juga menonaktifkan mode transfer data offline, yang awalnya diaktifkan pada titik akhir server ini selama pembuatannya. Transfer data offline digunakan sebagai bagian dari interoperabilitas dengan layanan migrasi massal, seperti Azure Data Box.
+Contoh ini melakukan dua tindakan, ini mengatur kebijakan tingkat cloud baru pada titik akhir server tertentu, yang mengarahkan server ke tingkat semua file yang belum diakses dalam 30 hari terakhir dan juga menonaktifkan mode transfer data offline, yang awalnya diaktifkan di titik akhir server ini selama pembuatannya. Transfer data offline digunakan sebagai bagian dari interoperabilitas dengan layanan migrasi massal, seperti Azure Data Box.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -CloudTiering
-Cloud Tiering Parameter
+Parameter Tingkat Cloud
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek SyncGroup, biasanya melewati parameter.
+SyncGroup Object, biasanya melewati parameter.
 
 ```yaml
 Type: Microsoft.Azure.Commands.StorageSync.Models.PSServerEndpoint
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -OfflineDataTransfer
-Parameter Data Bersederhan Awan.
+Parameter Data Yang Disemai Awan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -SyncGroupName
-Nama GrupSinkronisasi.
+Nama GrupSinkronkan.
 
 ```yaml
 Type: System.String
@@ -225,8 +225,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TierFilesOlderTermal
-File tingkatan yang lebih lama dari parameter hari
+### -TierFilesOlderThanDays
+Tier Files Older Than Days Parameter
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -256,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -271,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -286,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

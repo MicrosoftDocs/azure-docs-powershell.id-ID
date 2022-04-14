@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusNamespace.md
 ms.openlocfilehash: e5e99a33dd6347fe416de6bb2f548d66b04bd3f8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140098721"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142121111"
 ---
 # Set-AzServiceBusNamespace
 
 ## SYNOPSIS
-Memperbarui deskripsi ruang nama yang sudah Bus Layanan.
+Memperbarui deskripsi ruang nama Bus Layanan yang sudah ada.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/set-azservicebusnamespace) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/set-azservicebusnamespace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Set-AzServiceBusNamespace [-ResourceGroupName] <String> [-Location] <String> [-N
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzServiceBusNamespace** memperbarui deskripsi ruang nama Bus Layanan tertentu di dalam grup sumber daya.
+Cmdlet **Set-AzServiceBusNamespace** memperbarui deskripsi ruang nama Bus Layanan yang ditentukan dalam grup sumber daya.
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ UpdatedAt          :
 ServiceBusEndpoint :
 ```
 
-Memperbarui ruang Bus Layanan nama dengan deskripsi baru.
+Memperbarui ruang nama Bus Layanan dengan deskripsi baru.
 
 ### Contoh 2
 ```
@@ -67,12 +67,12 @@ UpdatedAt          :
 ServiceBusEndpoint :
 ```
 
-Memperbarui ruang Bus Layanan nama dengan deskripsi baru.
+Memperbarui ruang nama Bus Layanan dengan deskripsi baru.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableLocalAuth
-mengaktifkan atau menonaktifkan autentikasi SAS untuk Bus Layanan nama
+mengaktifkan atau menonaktifkan autentikasi SAS untuk ruang nama Bus Layanan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi Bus Layanan nama.
+Lokasi ruang nama Bus Layanan.
 
 ```yaml
 Type: System.String
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuCapacity
-Kapasitas Sku Kumpulan Nama.
+Kapasitas Sku Ruang Nama.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Nama ruang nama SKU.
+Nama SKU ruang nama.
 
 ```yaml
 Type: System.String
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Memperbarui ruang Bus Layanan nama dengan informasi yang ditentukan.
+Memperbarui ruang nama Bus Layanan dengan informasi yang ditentukan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -224,13 +224,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### System.Collections.Hashtable
 

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/Set-AzureRmAppServicePlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/Set-AzureRmAppServicePlan.md
 ms.openlocfilehash: 2163c18fecadba069b7c3fba260ab81538ed5583
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419510"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141923292"
 ---
 # Set-AzureRmAppServicePlan
 
 ## SYNOPSIS
-Mengatur paket Layanan Aplikasi Azure.
+Mengatur paket Azure App Service.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -36,20 +36,20 @@ Set-AzureRmAppServicePlan [-AsJob] [-AppServicePlan] <PSAppServicePlan>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmAppServicePlan** mengatur paket Layanan Aplikasi Azure.
+Cmdlet **Set-AzureRmAppServicePlan** mengatur rencana Azure App Service.
 
 ## EXAMPLES
 
-### 1: Mengubah paket Layanan Aplikasi
+### 1: Mengubah paket App Service
 ```
 PS C:\>Set-AzureRmAppServicePlan -ResourceGroupName "Default-Web-WestUS" -Name "ContosoASP" -PerSiteScaling $true
 ```
 
-Perintah ini mengatur opsi PerSiteScaling menjadi true pada paket Layanan Aplikasi bernama ContosoASP yang termasuk dalam grup sumber daya bernama Default-Web-WestUS.
+Perintah ini mengatur opsi PerSiteScaling menjadi true pada paket App Service bernama ContosoASP yang termasuk dalam grup sumber daya bernama Default-Web-WestUS.
 
 ## PARAMETERS
 
-### -AdminSiteName
+### -AdminsiteName
 Nama Situs Admin
 
 ```yaml
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppServicePlan
-Objek Paket Layanan Aplikasi
+Objek Rencana App Service
 
 ```yaml
 Type: Microsoft.Azure.Commands.WebApps.Models.WebApp.PSAppServicePlan
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Paket Layanan Aplikasi
+Nama Rencana App Service
 
 ```yaml
 Type: System.String
@@ -139,8 +139,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PerSiteScaling
-Boolean Penskalaan Per Situs
+### -Persitescaling
+Per Boolean Penskalaan Situs
 
 ```yaml
 Type: System.Boolean
@@ -169,7 +169,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tier
+### -Tingkat
 Tier
 
 ```yaml
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -217,9 +217,9 @@ Parameter: AppServicePlan (ByValue)
 
 [Get-AzureRmWebApp](./Get-AzureRmWebApp.md)
 
-[New-AzureRmWebApp](./New-AzureRmWebApp.md)
+[Baru-AzureRmWebApp](./New-AzureRmWebApp.md)
 
-[Remove-AzureRmWebApp](./Remove-AzureRmWebApp.md)
+[Hapus-AzureRmWebApp](./Remove-AzureRmWebApp.md)
 
 [Mulai ulang-AzureRmWebApp](./Restart-AzureRmWebApp.md)
 

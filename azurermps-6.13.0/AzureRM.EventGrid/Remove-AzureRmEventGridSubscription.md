@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventGrid/Commands.EventGrid/help/Remove-AzureRmEventGridSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventGrid/Commands.EventGrid/help/Remove-AzureRmEventGridSubscription.md
 ms.openlocfilehash: 82d386fb0834db3de03d5692ad8b7a241b6eed90
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140866531"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141927052"
 ---
 # Remove-AzureRmEventGridSubscription
 
 ## SYNOPSIS
-Menghapus langganan acara Kisi Acara Azure.
+Menghapus langganan acara Azure Event Grid.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -47,7 +47,7 @@ Remove-AzureRmEventGridSubscription [-EventSubscriptionName] <String> [-Resource
 ```
 
 ## DESCRIPTION
-Menghapus langganan acara Kisi Acara Azure untuk topik Kisi Acara Azure, sumber daya, langganan Azure, atau grup sumber daya.
+Menghapus langganan acara Azure Event Grid untuk topik Azure Event Grid, sumber daya, langganan Azure, atau grup sumber daya.
 
 ## EXAMPLES
 
@@ -56,40 +56,40 @@ Menghapus langganan acara Kisi Acara Azure untuk topik Kisi Acara Azure, sumber 
 PS C:\> Remove-AzureRmEventGridSubscription -ResourceGroup MyResourceGroup -TopicName Topic1 -EventSubscriptionName EventSubscription1
 ```
 
-Menghapus langganan acara EventSubscription1 \`\` ke topik Kisi Acara \`Azure Topic1\` di grup sumber daya \`MyResourceGroupName\`.
+Menghapus langganan acara EventSubscription1\` ke topik \`Azure Event Grid Topik1\` dalam grup \`sumber daya MyResourceGroupName\`.\`
 
 ### Contoh 2
 ```
 PS C:\> Remove-AzureRmEventGridSubscription -ResourceGroupName MyResourceGroupName -EventSubscriptionName EventSubscription1
 ```
 
-Menghapus langganan kejadian EventSubscription1 \`ke\` grup sumber daya \`MyResourceGroupName\`.
+Menghapus langganan \`acara EventSubscription1\` ke grup \`sumber daya MyResourceGroupName\`.
 
 ### Contoh 3
 ```
 PS C:\> Remove-AzureRmEventGridSubscription -EventSubscriptionName EventSubscription1
 ```
 
-Menghapus langganan acara EventSubscription1 \`\` ke langganan default Azure.
+Menghapus langganan \`acara LanggananSubskripsi1\` ke langganan Azure default.
 
 ### Contoh 4
 ```
 PS C:\> Get-AzureRmResource -ResourceId "/subscriptions/$subscriptionId/resourceGroups/$resourceGroupName/providers/Microsoft.EventHub/namespaces/$namespaceName" | Remove-AzureRmEventGridSubscription -EventSubscriptionName EventSubscription1
 ```
 
-Menghapus langganan acaraSubscription1 \`\` ke ruang nama Hub Acara.
+Menghapus langganan \`acara LanggananSubskripsi1\` ke ruang nama Hub Kejadian.
 
 ### Contoh 5
 ```
 PS C:\> Get-AzureRmEventGridTopic -ResourceGroup MyResourceGroup -TopicName Topic1 | Remove-AzureRmEventGridSubscription -EventSubscriptionName EventSubscription1
 ```
 
-Menghapus langganan acaraSubskrip1 \`\` kejadian ke Topik Kisi Acara.
+Menghapus langganan \`kejadianSubscription1\` ke Topik Kisi Acara.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya yang langganan kejadiannya perlu dihapus.
+Pengidentifikasi sumber daya yang langganan acaranya perlu dihapus.
 
 ```yaml
 Type: System.String
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -TopicName
-Nama topik kisi acara.
+Nama Topik Kisi Acara.
 
 ```yaml
 Type: System.String
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -249,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BotService/help/Export-AzBotServiceApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BotService/help/Export-AzBotServiceApp.md
 ms.openlocfilehash: d2e66bc4a5419e08923060116442e4dc75cbea77
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140287843"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141914475"
 ---
 # Export-AzBotServiceApp
 
@@ -18,7 +18,7 @@ ms.locfileid: "140287843"
 Mengembalikan BotService yang ditentukan oleh parameter.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.botservice/export-azbotserviceapp) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.botservice/export-azbotserviceapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Mengembalikan BotService yang ditentukan oleh parameter.
 
 ## EXAMPLES
 
-### Contoh 1: Folder DownLoad the BotService App
+### Contoh 1: DownLoad folder Aplikasi BotService
 ```powershell
 PS C:\> Export-AzBotServiceApp -ResourceGroupName youriBotTest -name youriechobottest
 
@@ -45,7 +45,7 @@ Mode                 LastWriteTime         Length Name
 d----          2020/12/15    13:45                youriechobottest
 ```
 
-DownLoad folder BotService App
+TurunKan Folder Aplikasi BotService
 
 ## PARAMETERS
 
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

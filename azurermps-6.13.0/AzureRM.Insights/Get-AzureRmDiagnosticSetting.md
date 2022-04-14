@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.insig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Insights/Commands.Insights/help/Get-AzureRmDiagnosticSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Insights/Commands.Insights/help/Get-AzureRmDiagnosticSetting.md
-ms.openlocfilehash: b106077efc8b8215fd8317fc47fd23a89c50a0d41339349f86534b141e570a0c
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 2b70fd58bd0b51e03079b1c24665b67ac3ad3a2d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418267"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141968278"
 ---
 # Get-AzureRmDiagnosticSetting
 
 ## SYNOPSIS
-Mendapatkan kategori dan tinggi waktu yang dicatat.
+Mendapatkan kategori dan biji-bijian waktu yang dicatat.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,12 +28,12 @@ Get-AzureRmDiagnosticSetting [-ResourceId] <String> [-Name <String>] [-DefaultPr
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmDiagnosticSetting** mendapatkan kategori dan instans waktu yang dicatat untuk sumber daya.
-Tinggi waktu adalah interval agregasi dari metrik.
+Cmdlet **Get-AzureRmDiagnosticSetting** mendapatkan kategori dan butir waktu yang dicatat untuk sumber daya.
+Gandum waktu adalah interval agregasi metrik.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan status kategori pembuatan log dan tinggi waktu
+### Contoh 1: Mendapatkan status kategori pembuatan log dan biji-bijian waktu
 ```
 PS C:\>Get-AzureRmDiagnosticSetting -ResourceId "/subscriptions/1a66ce04-b633-4a0b-b2bc-a912ec8986a6/ResourceGroups/ContosoRG/providers/microsoft.keyvault/KeyVaults/ContosoKeyVault"
 StorageAccountId   : /subscriptions/1a66ce04-b633-4a0b-b2bc-a912ec8986a6/ResourceGroups/ContosoRG/providers/microsoft.storage/accounts/ContosoStorageAccount
@@ -45,12 +45,12 @@ Enabled  : True
 Category : AuditEvent
 ```
 
-Perintah ini mendapatkan kategori dan time grains yang dicatat untuk Key Vault Azure dengan *ResourceId* of /subscriptions/1a66ce04-b633-4a0b-b2bc-a912ec8986a6/ResourceGroups/ContosoRG/providers/microsoft.keyvault/KeyVaults/ContosoKeyVault.
+Perintah ini mendapatkan kategori dan butir waktu yang dicatat untuk Azure Key Vault dengan *ResourceId* /subscriptions/1a66ce04-b633-4a0b-b2bc-a912ec8986a6/ResourceGroups/ContosoRG/providers/microsoft.keyvault/KeyVaults/ContosoKeyVault.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama pengaturan diagnostik. Jika tidak memberikan default panggilan ke "layanan" seperti pada API sebelumnya.
+Nama pengaturan diagnostik. Jika tidak memberikan panggilan default ke "layanan" seperti dalam API sebelumnya.
 
 ```yaml
 Type: System.String
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -109,5 +109,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Set-AzureRmDiagnosticSetting](./Set-AzureRmDiagnosticSetting.md) 
- [Remove-AzureRmDiagnosticSetting](./Remove-AzureRmDiagnosticSetting.md)
+[Mengatur-AzureRmDiagnosticSetting](./Set-AzureRmDiagnosticSetting.md)
+ [Hapus-AzureRmDiagnosticSetting](./Remove-AzureRmDiagnosticSetting.md)

@@ -5,11 +5,11 @@ ms.assetid: FA868206-D8B0-4868-A1D1-D3F96BF3ADCC
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.websites/set-azurermwebappslot
 schema: 2.0.0
 ms.openlocfilehash: 245ce5ab011f03b8d8331b5d80fa4eeb01e19e15
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420534"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141970170"
 ---
 # Set-AzureRmWebAppSlot
 
@@ -55,12 +55,12 @@ Cmdlet **Set-AzureRmWebApp** mengatur Slot Azure Web App.
 PS C:\> Set-AzureRmWebAppSlot -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -Slot "Slot001" -HttpLoggingEnabled $true
 ```
 
-Perintah ini mengatur HttpLoggingEnabled ke true untuk Slot Slot001 yang terkait dengan Web App ContosoWebApp terkait dengan grup sumber daya Default-Web-WestUS
+Perintah ini mengatur HttpLoggingEnabled ke true untuk Slot Slot001 yang berkaitan dengan Web App ContosoWebApp yang terkait dengan grup sumber daya Default-Web-WestUS
 
 ## PARAMETERS
 
 ### -AppServicePlan
-Nama Paket Layanan Aplikasi
+Nama Rencana App Service
 
 ```yaml
 Type: String
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppSettings
-Tabel Pengaturan HashTable
+HashTable Pengaturan Aplikasi
 
 ```yaml
 Type: Hashtable
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoSwapSlotName
-Nama slot tujuan untuk tukar otomatis
+Nama slot tujuan untuk pentukaran otomatis
 
 ```yaml
 Type: String
@@ -104,7 +104,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -String Koneksi
+### -ConnectionStrings
 HashTable String Koneksi
 
 ```yaml
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultDocuments
-Larik String Dokumen Default
+Array String Dokumen Default
 
 ```yaml
 Type: String[]
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -DetailedErrorLoggingEnabled
-Boolean Berkemampuan Pembuatan Log Kesalahan Mendetail
+Pencatatan Log Kesalahan Mendetail Diaktifkan Boolean
 
 ```yaml
 Type: Boolean
@@ -271,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestTracingEnabled
-Boolean Permintaan Penelusuran yang Diaktifkan
+Request Tracing Enabled Boolean
 
 ```yaml
 Type: Boolean
@@ -315,7 +315,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Use32BitWorkerProcess
+### -Use32BitWorkerProcesss
 Menggunakan Boolean Proses Pekerja 32-bit
 
 ```yaml
@@ -346,7 +346,7 @@ Accept wildcard characters: False
 ```
 
 ### -WebSocketsEnabled
-Boolean Berkemampuan Soket Web
+Soket Web Diaktifkan Boolean
 
 ```yaml
 Type: Boolean
@@ -359,7 +359,7 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
-### -httpsOnly
+### -HttpsOnly
 Aktifkan/nonaktifkan pengalihan semua lalu lintas ke HTTPS di slot yang sudah ada
 
 ```yaml
@@ -374,7 +374,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 ### -AssignIdentity
-Mengaktifkan/menonaktifkan MSI di slot yang sudah ada [PREVIEW]
+Aktifkan/nonaktifkan MSI pada slot yang sudah ada [PRATINJAU]
 
 ```yaml
 Type: Boolean
@@ -389,7 +389,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -404,12 +404,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Int32
-Parameter 'NumberOfWorkers' menerima nilai tipe 'Int32' dari saluran
+Parameter 'NumberOfWorkers' menerima nilai tipe 'Int32' dari pipeline
 
 ### Situs
 Parameter 'WebApp' menerima nilai tipe 'Situs' dari saluran
@@ -422,9 +422,9 @@ Parameter 'WebApp' menerima nilai tipe 'Situs' dari saluran
 
 [Get-AzureRMWebAppSlot](./Get-AzureRMWebAppSlot.md)
 
-[New-AzureRMWebAppSlot](./New-AzureRMWebAppSlot.md)
+[AzureRM BaruWebAppSlot](./New-AzureRMWebAppSlot.md)
 
-[Remove-AzureRMWebAppSlot](./Remove-AzureRMWebAppSlot.md)
+[Hapus-AzureRMWebAppSlot](./Remove-AzureRMWebAppSlot.md)
 
 [Mulai ulang-AzureRMWebAppSlot](./Restart-AzureRMWebAppSlot.md)
 

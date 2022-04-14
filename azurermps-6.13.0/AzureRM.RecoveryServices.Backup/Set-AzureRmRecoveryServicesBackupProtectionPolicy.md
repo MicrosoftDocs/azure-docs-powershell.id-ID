@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/Set-AzureRmRecoveryServicesBackupProtectionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/Set-AzureRmRecoveryServicesBackupProtectionPolicy.md
 ms.openlocfilehash: fb0373e97d719535c87c01c0a4b53b029cc2a878
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424179"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141924977"
 ---
 # Set-AzureRmRecoveryServicesBackupProtectionPolicy
 
 ## SYNOPSIS
-Mengubah kebijakan Proteksi cadangan.
+Mengubah kebijakan proteksi Pencadangan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -30,9 +30,9 @@ Set-AzureRmRecoveryServicesBackupProtectionPolicy [-Policy] <PolicyBase>
 
 ## DESCRIPTION
 Cmdlet **Set-AzureRmBackupProtectionPolicy** mengubah kebijakan proteksi Azure Backup yang sudah ada.
-Anda bisa memodifikasi komponen kebijakan penyimpanan dan jadwal cadangan.
-Setiap perubahan yang Anda buat mempengaruhi pencadangan dan penyimpanan item yang terkait dengan kebijakan tersebut.
-Mengatur konteks vault menggunakan cmdlet Set-AzureRmRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
+Anda dapat mengubah komponen Kebijakan pencadangan dan penyimpanan.
+Perubahan apa pun yang Anda buat memengaruhi pencadangan dan penyimpanan item yang terkait dengan kebijakan.
+Mengatur konteks kubah menggunakan cmdlet Set-AzureRmRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
@@ -48,19 +48,19 @@ PS C:\> $Pol = Get-AzureRmRecoveryServicesBackupProtectionPolicy -Name "NewPolic
 PS C:\> Set-AzureRmRecoveryServicesBackupProtectionPolicy -Policy $Pol -SchedulePolicy $SchPol -RetentionPolicy $RetPol
 ```
 
-Perintah pertama mendapatkan objek SchedulePolicy dasar, lalu menyimpannya dalam $SchPol variabel.
-Perintah kedua menghapus semua waktu jalankan terjadwal dari kebijakan jadwal di $SchPol.
-Perintah ketiga menggunakan cmdlet Get-Date cmdlet untuk mendapatkan tanggal dan waktu saat ini, lalu menyimpannya dalam $DT variabel.
-Perintah keempat menambahkan tanggal dan waktu dalam $DT waktu berjalan sesuai jadwal untuk kebijakan jadwal.
-Perintah kelima mendapatkan objek kebijakan penyimpanan dasar, lalu menyimpannya di $RetPol penyimpanan.
-Perintah keenam mengatur durasi penyimpanan ke 365 hari.
-Perintah ketujuh mendapatkan kebijakan Proteksi cadangan bernama NewPolicy, lalu menyimpannya dalam $Pol pengguna.
-Perintah final mengubah kebijakan Proteksi cadangan dalam $Pol menggunakan kebijakan jadwal di $SchPol dan kebijakan penyimpanan di $RetPol.
+Perintah pertama mendapatkan objek SchedulePolicy dasar, lalu menyimpannya dalam variabel $SchPol.
+Perintah kedua menghapus semua waktu jalan terjadwal dari kebijakan jadwal dalam $SchPol.
+Perintah ketiga menggunakan cmdlet Get-Date untuk mendapatkan tanggal dan waktu saat ini, lalu menyimpannya dalam variabel $DT.
+Perintah keempat menambahkan tanggal dan waktu dalam $DT ke waktu proses jadwal untuk kebijakan jadwal.
+Perintah kelima mendapatkan objek kebijakan penyimpanan dasar, lalu menyimpannya dalam variabel $RetPol.
+Perintah keenam mengatur durasi penyimpanan menjadi 365 hari.
+Perintah ketujuh mendapatkan kebijakan perlindungan Cadangan bernama NewPolicy, lalu menyimpannya dalam variabel $Pol.
+Perintah akhir mengubah kebijakan perlindungan Pencadangan dalam $Pol menggunakan kebijakan jadwal dalam $SchPol dan kebijakan penyimpanan di $RetPol.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -75,8 +75,8 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Menentukan kebijakan Proteksi cadangan yang ditentukan cmdlet ini.
-Untuk mendapatkan objek **BackupProtectionPolicy,** gunakan cmdlet Get-AzureRmRecoveryServicesBackupProtectionPolicy.
+Menentukan kebijakan proteksi Cadangan yang diubah cmdlet ini.
+Untuk mendapatkan objek **BackupProtectionPolicy** , gunakan cmdlet Get-AzureRmRecoveryServicesBackupProtectionPolicy.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.PolicyBase
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 
 ### -RetentionPolicy
 Menentukan kebijakan penyimpanan dasar.
-Untuk mendapatkan objek **RetentionPolicy,** gunakan cmdlet Get-AzureRmRecoveryServicesBackupRetentionPolicyObject.
+Untuk mendapatkan objek **RetentionPolicy** , gunakan cmdlet Get-AzureRmRecoveryServicesBackupRetentionPolicyObject.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.RetentionPolicyBase
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 
 ### -SchedulePolicy
 Menentukan objek kebijakan jadwal dasar.
-Untuk mendapatkan objek **SchedulePolicy,** gunakan Get-AzureRmRecoveryServicesBackupSchedulePolicyObject Anda.
+Untuk mendapatkan objek **SchedulePolicy** , gunakan objek Get-AzureRmRecoveryServicesBackupSchedulePolicyObject.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.SchedulePolicyBase
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

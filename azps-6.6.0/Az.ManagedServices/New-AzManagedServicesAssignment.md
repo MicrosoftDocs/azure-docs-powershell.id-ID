@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/ManagedServices/help/New-AzManagedServicesAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/ManagedServices/help/New-AzManagedServicesAssignment.md
 ms.openlocfilehash: 60509deafddbecfe5a508ce1545905b8a41ae7cf
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140309299"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142126943"
 ---
 # New-AzManagedServicesAssignment
 
 ## SYNOPSIS
-Membuat atau memperbarui penetapan pendaftaran.
+Membuat atau memperbarui tugas pendaftaran.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.managedservices/new-azmanagedservicesassignment) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.managedservices/new-azmanagedservicesassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ New-AzManagedServicesAssignment [-Name <String>] [-Scope <String>]
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui penetapan pendaftaran.
+Membuat atau memperbarui tugas pendaftaran.
 
 ## EXAMPLES
 
@@ -59,7 +59,7 @@ Name                                 Id                                         
 PS C:\>
 ```
 
-Membuat penetapan pendaftaran di lingkup default menggunakan pengidentifikasi definisi registrasi.
+Membuat tugas pendaftaran pada lingkup default menggunakan pengidentifikasi definisi pendaftaran.
 
 ### Contoh 2
 ```
@@ -84,7 +84,7 @@ b279ec53-b42f-4952-bd62-cd49982e9572 /subscriptions/24ab6047-da91-48c0-66e5-20a8
 PS C:\>
 ```
 
-Membuat penetapan pendaftaran dengan objek definisi registrasi sebagai input.
+Membuat tugas pendaftaran dengan objek definisi pendaftaran sebagai input.
 
 ### Contoh 3
 ```
@@ -104,7 +104,7 @@ Name                                 Id                                         
 PS C:\>
 ```
 
-Memperbarui penetapan registrasi dengan pengidentifikasi definisi dan nama registrasi.
+Memperbarui tugas pendaftaran dengan pengidentifikasi definisi pendaftaran dan nama.
 
 
 ## PARAMETERS
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama unik Penetapan Pendaftaran.
+Nama unik Tugas Pendaftaran.
 
 ```yaml
 Type: System.String
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistrationDefinition
-Objek input definisi registrasi.
+Objek input definisi pendaftaran.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ManagedServices.Models.PSRegistrationDefinition
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistrationDefinitionId
-Id sumber daya yang sepenuhnya memenuhi syarat dari definisi registrasi.
+Id sumber daya yang sepenuhnya memenuhi syarat dari definisi pendaftaran.
 
 ```yaml
 Type: System.String
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Lingkup tempat penetapan pendaftaran akan dibuat.
+Lingkup tempat penugasan pendaftaran harus dibuat.
 
 ```yaml
 Type: System.String
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

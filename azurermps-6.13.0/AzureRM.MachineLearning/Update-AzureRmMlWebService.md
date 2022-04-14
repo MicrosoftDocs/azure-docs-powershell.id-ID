@@ -6,22 +6,22 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/MachineLearning/Commands.MachineLearning/help/Update-AzureRmMlWebService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/MachineLearning/Commands.MachineLearning/help/Update-AzureRmMlWebService.md
 ms.openlocfilehash: e695e2de2cf0512ecffc1c072f94cc577d523ddf
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140853242"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141926450"
 ---
 # Update-AzureRmMlWebService
 
 ## SYNOPSIS
-Memperbarui properti layanan web yang sudah ada.
+Memperbarui properti sumber daya layanan web yang sudah ada.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
 ## SYNTAX
 
-### UpdateFromParameters
+### PembaruanFromParameters
 ```
 Update-AzureRmMlWebService -ResourceGroupName <String> -Name <String> [-Title <String>] [-Description <String>]
  [-IsReadOnly] [-Keys <WebServiceKeys>] [-StorageAccountKey <String>] [-Diagnostics <DiagnosticsConfiguration>]
@@ -31,7 +31,7 @@ Update-AzureRmMlWebService -ResourceGroupName <String> -Name <String> [-Title <S
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateFromObject
+### PembaruanFromObject
 ```
 Update-AzureRmMlWebService -ResourceGroupName <String> -Name <String> -ServiceUpdates <WebService> [-Force]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -39,8 +39,8 @@ Update-AzureRmMlWebService -ResourceGroupName <String> -Name <String> -ServiceUp
 
 ## DESCRIPTION
 Cmdlet Update-AzureRmMlWebService memungkinkan Anda memperbarui properti non-statis layanan web.
-Cmdlet berfungsi sebagai operasi patch.
-Pass only the properties that you want modified.
+Cmdlet bekerja sebagai operasi patch.
+Hanya lewati properti yang ingin Anda ubah.
 
 ## EXAMPLES
 
@@ -63,7 +63,7 @@ Contoh pertama membuat definisi layanan web, yang hanya berisi bidang yang akan 
 ## PARAMETERS
 
 ### -Aset
-Kumpulan aset (misalnya modul, kumpulan data) yang menjadi bagian dari layanan web.
+Kumpulan aset (misalnya modul, kumpulan data) yang menyusun layanan web.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 
 ### -Deskripsi
 Nilai baru untuk deskripsi layanan web.
-Hal ini dapat dilihat dalam skema API Swagger layanan.
+Hal ini terlihat dalam skema Swagger API layanan.
 
 ```yaml
 Type: System.String
@@ -123,8 +123,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -154,8 +154,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsReadOnly
-Menentukan bahwa layanan web ini terbaca hanya.
-Setelah diatur, layanan web dapat diperbarui lagi, termasuk mengubah nilai properti ini, dan hanya dapat dihapus.
+Menentukan bahwa layanan web ini sudah dibaca.
+Setelah diatur, layanan web dapat diperbarui lebih lama, termasuk mengubah nilai properti ini, dan hanya dapat dihapus.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -Keys
-Memperbarui satu atau kedua tombol akses yang digunakan untuk mengautentikasi panggilan ke API runtime layanan.
+Memperbarui satu atau kedua kunci akses yang digunakan untuk mengautentikasi panggilan ke API runtime layanan.
 
 ```yaml
 Type: Microsoft.Azure.Management.MachineLearning.WebServices.Models.WebServiceKeys
@@ -229,8 +229,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Parameter
-Kumpulan nilai parameter global yang ditentukan untuk layanan web, yang diberikan sebagai nama parameter global - kumpulan\> nilai default.
+### -Parameters
+Kumpulan nilai parameter global yang ditentukan untuk layanan web, yang diberikan sebagai nama parameter global -\> kumpulan nilai default.
 Jika tidak ada nilai default yang ditentukan, parameter dianggap diperlukan.
 
 ```yaml
@@ -276,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceUpdates
-Kumpulan pembaruan untuk diterapkan ke layanan web yang disediakan sebagai contoh definisi layanan web.
+Sekumpulan pembaruan untuk diterapkan ke layanan web yang disediakan sebagai contoh definisi layanan web.
 Hanya bidang non-statis yang dimodifikasi.
 
 ```yaml
@@ -308,7 +308,7 @@ Accept wildcard characters: False
 
 ### -Judul
 Nilai baru untuk judul layanan web.
-Hal ini dapat dilihat dalam skema API Swagger layanan.
+Hal ini terlihat dalam skema Swagger API layanan.
 
 ```yaml
 Type: System.String
@@ -323,7 +323,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -339,7 +339,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -354,7 +354,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -366,6 +366,6 @@ Parameter: ServiceUpdates (ByValue)
 ### Microsoft.Azure.Management.MachineLearning.WebServices.Models.WebService
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, machine, machine learning, azureml
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, mesin, pembelajaran mesin, azureml
 
 ## RELATED LINKS

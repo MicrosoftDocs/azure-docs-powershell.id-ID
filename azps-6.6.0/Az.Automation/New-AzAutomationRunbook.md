@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationRunbook.md
 ms.openlocfilehash: 36cf4964a9c0f3c9fbc96c829c7c689675bc30a0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140143179"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141915159"
 ---
 # New-AzAutomationRunbook
 
 ## SYNOPSIS
-Membuat buku jalankan Otomatisasi.
+Membuat runbook Otomatisasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/new-azautomationrunbook) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/new-azautomationrunbook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ New-AzAutomationRunbook [-Name] <String> [-Description <String>] [-Tags <IDictio
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzAutomationRunbook** membuat runbook Azure Automation kosong menggunakan APS.
+Cmdlet **New-AzAutomationRunbook** membuat Azure Automation runbook kosong dengan menggunakan APS.
 Tentukan nama untuk runbook.
 
 ## EXAMPLES
@@ -40,11 +40,11 @@ Tentukan nama untuk runbook.
 PS C:\>New-AzAutomationRunbook -AutomationAccountName "Contoso17" -Name "Runbook02" -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini membuat runbook yang bernama Runbook02 dalam akun Otomatisasi Azure yang bernama Contoso17.
+Perintah ini membuat runbook bernama Runbook02 di akun Azure Automation bernama Contoso17.
 
 ### Contoh 2
 
-Membuat buku jalankan Otomatisasi. (otomatisgenerated)
+Membuat runbook Otomatisasi. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 
@@ -56,7 +56,7 @@ New-AzAutomationRunbook -AutomationAccountName 'Contoso17' -Name 'Runbook02' -Re
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi di mana cmdlet ini membuat runbook.
+Menentukan nama akun Otomatisasi tempat cmdlet ini membuat runbook.
 
 ```yaml
 Type: System.String
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogVerbose
-Menentukan apakah pembuatan log menyertakan informasi detail.
+Menentukan apakah pembuatan log menyertakan informasi mendetail.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini membuat runbook.
+Menentukan nama grup sumber daya tempat cmdlet ini membuat runbook.
 
 ```yaml
 Type: System.String
@@ -160,7 +160,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Tag
+### -Tags
 Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
@@ -177,14 +177,14 @@ Accept wildcard characters: False
 
 ### -Tipe
 Menentukan tipe runbook yang dibuat cmdlet ini.
-Nilai valid adalah:
-- PowerShell
+Nilai yang valid adalah:
+- Powershell
 - GraphicalPowerShell
 - PowerShellWorkflow
 - GraphicalPowerShellWorkflow
 - Graph
-- Python2 Nilai Graph sudah tidak t fungsi.
-Ini sama dengan GraphicalPowerShellWorkflow.
+- Python2 Nilai Graph sudah tidak terpakai.
+Ini setara dengan GraphicalPowerShellWorkflow.
 
 ```yaml
 Type: System.String
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -208,7 +208,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.IDictionary
 
-### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 

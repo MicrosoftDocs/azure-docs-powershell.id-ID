@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/New-AzureRmApiManagementBackendProxy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/New-AzureRmApiManagementBackendProxy.md
 ms.openlocfilehash: 06c7082d07c0ff07f3efddca1c2e15309f340de3
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421304"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141969900"
 ---
 # New-AzureRmApiManagementBackendProxy
 
 ## SYNOPSIS
-Membuat Objek Proksi Backend yang baru.
+Membuat Objek Proksi Backend baru.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,11 +27,11 @@ New-AzureRmApiManagementBackendProxy -Url <String> [-ProxyCredential <PSCredenti
 ```
 
 ## DESCRIPTION
-Membuat Objek Proksi Backend baru yang bisa di pipet saat membuat entitas Backend baru.
+Membuat Objek Proksi Backend baru yang dapat disalurkan saat membuat entitas Backend baru.
 
 ## EXAMPLES
 
-### Membuat objek proksi backend In-Memory backend
+### Membuat Proksi Backend In-Memory Objek
 ```powershell
 PS C:\>$secpassword = ConvertTo-SecureString "PlainTextPassword" -AsPlainText -Force
 PS C:\>$proxyCreds = New-Object System.Management.Automation.PSCredential ("foo", $secpassword)
@@ -42,12 +42,12 @@ PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-De
 PS C:\>$backend = New-AzureRmApiManagementBackend -Context  $apimContext -BackendId 123 -Url 'https://contoso.com/awesomeapi' -Protocol http -Title "first backend" -SkipCertificateChainValidation $true -Proxy $credential -Description "backend with proxy server"
 ```
 
-Membuat Objek Proksi Backend dan menyetel Backend
+Membuat Objek Proksi Backend dan menyiapkan Backend
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProxyCredential
-Kredensial yang digunakan untuk tersambung ke Proksi Backend. Parameter ini bersifat opsional.
+Kredensial yang digunakan untuk menyambungkan ke Proksi Backend. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Url
-Url server Proksi yang akan digunakan saat meneruskan panggilan ke Backend.
+Url server Proksi yang akan digunakan ketika mengalihkan panggilan ke Backend.
 Parameter ini diperlukan.
 
 ```yaml
@@ -93,11 +93,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -109,10 +109,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmApiManagementBackend](./Get-AzureRmApiManagementBackend.md)
 
-[New-AzureRmApiManagementBackend](./New-AzureRmApiManagementBackend.md)
+[AzureRmApiManagementBackend Baru](./New-AzureRmApiManagementBackend.md)
 
-[New-AzureRmApiManagementBackendCredential](./New-AzureRmApiManagementBackendCredential.md)
+[Baru-AzureRmApiManagementBackendCredential](./New-AzureRmApiManagementBackendCredential.md)
 
 [Set-AzureRmApiManagementBackend](./Set-AzureRmApiManagementBackend.md)
 
-[Remove-AzureRmApiManagementBackend](./Remove-AzureRmApiManagementBackend.md)
+[Hapus-AzureRmApiManagementBackend](./Remove-AzureRmApiManagementBackend.md)

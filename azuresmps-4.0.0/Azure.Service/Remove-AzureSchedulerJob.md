@@ -4,11 +4,11 @@ ms.assetid: 22DEC693-32BA-4048-8912-D1626DD511E7
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 6c52931456f157ba421ef94db6b2388996c9b638
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419911"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141880493"
 ---
 # Remove-AzureSchedulerJob
 
@@ -25,8 +25,8 @@ Remove-AzureSchedulerJob [-Force] [-Location <String>] -JobCollectionName <Strin
 ```
 
 ## DESCRIPTION
-Topik ini menguraikan cmdlet dalam modul Microsoft Azure PowerShell versi 0.8.10.
-Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Topik ini menjelaskan cmdlet dalam versi 0.8.10 modul Microsoft Azure PowerShell.
+Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik .`(Get-Module -Name Azure).Version`
 
 Cmdlet **Remove-AzureSchedulerJob** menghapus pekerjaan penjadwal.
 
@@ -37,13 +37,13 @@ Cmdlet **Remove-AzureSchedulerJob** menghapus pekerjaan penjadwal.
 PS C:\> Remove-AzureSchedulerJob -Location "North Central US" -JobCollectionName "JobCollection01" -JobName "Job17"
 ```
 
-Perintah ini menghapus pekerjaan bernama Pekerjaan17.
-Pekerjaan tersebut merupakan bagian dari kumpulan pekerjaan bernama JobCollection01 dan berada di dalam lokasi yang ditentukan.
+Perintah ini menghapus pekerjaan bernama Job17.
+Pekerjaan tersebut adalah bagian dari koleksi pekerjaan bernama JobCollection01 dan berada di lokasi yang ditentukan.
 
 ## PARAMETERS
 
-### -Force
-Mengindikasikan bahwa cmdlet ini menghapus pekerjaan penjadwal tanpa meminta konfirmasi Anda.
+### -Paksa
+Menunjukkan bahwa cmdlet ini menghapus pekerjaan penjadwal tanpa meminta konfirmasi kepada Anda.
 
 ```yaml
 Type: SwitchParameter
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobCollectionName
-Menentukan nama koleksi yang berisi tugas penjadwal yang akan dihapus.
+Menentukan nama kumpulan yang berisi tugas penjadwal untuk dihapus.
 
 ```yaml
 Type: String
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobName
-Menentukan nama pekerjaan penjadwal untuk dihapus.
+Menentukan nama tugas penjadwal yang akan dihapus.
 
 ```yaml
 Type: String
@@ -89,11 +89,11 @@ Accept wildcard characters: False
 
 ### -Lokasi
 Menentukan nama lokasi yang menjadi host layanan awan.
-Nilai valid adalah: 
+Nilai yang valid adalah: 
 
-- Asia mana pun
-- Eropa di mana saja
-- US di mana saja
+- Di mana saja Asia
+- Di mana saja Eropa
+- Di mana saja AS
 - Asia Timur
 - AS Timur
 - As Tengah Utara
@@ -116,8 +116,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

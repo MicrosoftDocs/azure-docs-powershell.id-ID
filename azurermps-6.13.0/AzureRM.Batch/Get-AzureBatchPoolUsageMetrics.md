@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Get-AzureBatchPoolUsageMetrics.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Get-AzureBatchPoolUsageMetrics.md
 ms.openlocfilehash: 881e5d1cbd188589f4e0e28384ecf926b3495233
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419988"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141969121"
 ---
 # Get-AzureBatchPoolUsageMetrics
 
@@ -28,12 +28,12 @@ Get-AzureBatchPoolUsageMetrics [-StartTime <DateTime>] [-EndTime <DateTime>] [-F
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureBatchPoolUsageMetrics** mendapatkan metrik penggunaan, yang diagregatkan menurut kumpulan antar interval waktu individual, untuk akun yang ditentukan.
-Anda bisa mendapatkan statistik untuk kelompok tertentu dan untuk rentang waktu.
+Cmdlet **Get-AzureBatchPoolUsageMetrics** mendapatkan metrik penggunaan, diagregasi menurut kumpulan di interval waktu individual, untuk akun tertentu.
+Anda bisa mendapatkan statistik untuk kumpulan tertentu dan untuk rentang waktu.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan metrik penggunaan pool untuk rentang waktu
+### Contoh 1: Dapatkan metrik penggunaan kumpulan untuk rentang waktu
 ```
 PS C:\>$Context = Get-AzureRmBatchAccountKeys -AccountName "ContosoBatchAccount"
 PS C:\> $StartTime = Get-Date -Date "2016-05-16 00:00:00Z"
@@ -72,13 +72,13 @@ TotalCoreHours     : 11.9999999993333
 VirtualMachineSize : standard_d4
 ```
 
-Perintah pertama membuat referensi objek ke kunci akun untuk akun kumpulan bernama ContosoBatchAccount dengan menggunakan **Get-AzureRmBatchAccountKeys.**
-Perintah menyimpan referensi objek ini di $Context variabel.
-Dua perintah berikutnya membuat **objek DateTime** dengan menggunakan Get-Date cmdlet.
-Perintah menyimpan nilai ini dalam $StartTime $EndTime variabel untuk digunakan dengan perintah akhir.
-Perintah final mengembalikan semua metrik penggunaan kumpulan, yang diagregasi menurut kumpulan, antar interval waktu antara waktu mulai dan akhir yang ditentukan.
+Perintah pertama membuat referensi objek ke kunci akun untuk akun batch bernama ContosoBatchAccount menggunakan **Get-AzureRmBatchAccountKeys**.
+Perintah menyimpan referensi objek ini dalam variabel $Context.
+Dua perintah berikutnya membuat objek **DateTime** menggunakan cmdlet Get-Date.
+Perintah menyimpan nilai ini dalam variabel $StartTime dan $EndTime untuk digunakan dengan perintah akhir.
+Perintah akhir mengembalikan semua metrik penggunaan kumpulan, diagregat menurut kumpulan, sepanjang interval waktu antara waktu mulai dan akhir yang ditentukan.
 
-### Contoh 2: Dapatkan metrik penggunaan pool dengan menggunakan filter
+### Contoh 2: Dapatkan metrik penggunaan kumpulan menggunakan filter
 ```
 PS C:\>Get-AzureBatchPoolUsageMetrics -Filter "poolId eq 'ContosoPool'" -BatchContext $Context
 DataEgressGiB      : 9.0496614575386E-06
@@ -90,14 +90,14 @@ TotalCoreHours     : 12
 VirtualMachineSize : standard_d4
 ```
 
-Perintah ini mengembalikan metrik penggunaan untuk pool bernama ContosoPool.
-Perintah menentukan string filter untuk menentukan pool tersebut, dan menggunakan nilai $Context yang sama seperti contoh sebelumnya.
+Perintah ini mengembalikan metrik penggunaan untuk kumpulan bernama ContosoPool.
+Perintah menentukan string filter untuk menentukan kumpulan tersebut, dan menggunakan nilai $Context yang sama seperti contoh sebelumnya.
 
 ## PARAMETERS
 
 ### -BatchContext
-Menentukan contoh **BatchAccountContext** yang digunakan cmdlet untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 
 ### -EndTime
 Menentukan akhir rentang waktu di mana cmdlet ini mendapatkan metrik penggunaan.
-Menentukan waktu setidaknya dua jam sebelumnya.
+Tentukan waktu setidaknya dua jam sebelumnya.
 Jika Anda tidak menentukan waktu akhir, cmdlet ini menggunakan interval agregasi terakhir yang saat ini tersedia.
 
 ```yaml
@@ -144,9 +144,9 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Menentukan klausul filter OData untuk digunakan memfilter metrik yang didaurkan cmdlet ini.
-Satu-satunya properti yang **valid adalah poolId** dengan nilai string.
-Operasi yang memungkinkan adalah sebagai berikut: eq, ge, gt, le, lt, startswith.
+Menentukan klausul filter OData untuk digunakan untuk memfilter metrik yang disusun ulang cmdlet ini.
+Satu-satunya properti yang valid adalah **poolId** dengan nilai string.
+Kemungkinan operasi adalah sebagai berikut: eq, ge, gt, le, lt, mulai dengan itu.
 
 ```yaml
 Type: System.String
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 
 ### -StartTime
 Menentukan awal rentang waktu di mana cmdlet ini mendapatkan metrik penggunaan.
-Tentukan waktu setidaknya dua dan setengah jam sebelumnya.
+Tentukan waktu setidaknya dua setengah jam sebelumnya.
 Jika Anda tidak menentukan waktu mulai, cmdlet ini menggunakan interval agregasi terakhir yang saat ini tersedia.
 
 ```yaml
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

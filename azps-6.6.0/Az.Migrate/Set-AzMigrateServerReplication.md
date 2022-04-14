@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Set-AzMigrateServerReplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Set-AzMigrateServerReplication.md
 ms.openlocfilehash: d0c3c138fdf8f4a2b4a0afc0053a6c35abea9e73
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140076383"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141910551"
 ---
 # Set-AzMigrateServerReplication
 
 ## SYNOPSIS
-Memperbarui properti target untuk server yang replikasi.
+Memperbarui properti target untuk server replikasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.migrate/set-azmigrateserverreplication) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.migrate/set-azmigrateserverreplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +51,7 @@ Set-AzMigrateServerReplication -InputObject <IMigrationItem> [-DiskToUpdate <IVM
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzMigrateServerReplication memperbarui properti target untuk server yang replikasi.
+Cmdlet Set-AzMigrateServerReplication memperbarui properti target untuk server replikasi.
 
 ## EXAMPLES
 
@@ -81,9 +81,9 @@ Task                             : {DisableProtectionOnPrimary, UpdateDraState}
 Type                             : Microsoft.RecoveryServices/vaults/replicationJobs
 ```
 
-Berdasarkan id.
+Dengan id.
 
-### Contoh 2: Perbarui beberapa nama disk berdasarkan id
+### Contoh 2: Memperbarui beberapa nama disk menurut id
 ```powershell
 PS C:\> $OSDisk = Set-AzMigrateDiskMapping -DiskID "6000C294-1217-dec3-bc18-81f117220424" -DiskName "ContosoDisk_1"
 PS C:\> $DataDisk = Set-AzMigrateDiskMapping -DiskID "6000C292-79b9-bbdc-fb8a-f1fa8dbeff84" -DiskName "ContosoDisk_2"
@@ -134,8 +134,8 @@ Accept wildcard characters: False
 ```
 
 ### -DiskToUpdate
-Memperbarui disk untuk Azure VM yang akan dibuat.
-Untuk membuat, lihat bagian CATATAN untuk properti DISKTOUPDATE dan membuat tabel hash.
+Memperbarui disk agar Azure VM dibuat.
+Untuk membangun, lihat bagian CATATAN untuk properti DISKTOUPDATE dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IVMwareCbtUpdateDiskInput[]
@@ -150,9 +150,9 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Menentukan server replika tempat properti perlu diperbarui.
+Menentukan server replikasi yang propertinya perlu diperbarui.
 Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServerReplication.
-Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IMigrationItem
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlServerLicenseType
-Menentukan apakah manfaat Azure Hybrid untuk SQL Server hybrid berlaku bagi server untuk dimigrasi.
+Menentukan apakah manfaat Azure Hybrid untuk SQL Server berlaku bagi server yang akan dimigrasikan.
 
 ```yaml
 Type: System.String
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetAvailabilityZone
-Menentukan Zona Ketersediaan yang akan digunakan untuk pembuatan VM.
+Menentukan Availability Zone yang akan digunakan untuk pembuatan VM.
 
 ```yaml
 Type: System.String
@@ -273,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetNetworkId
-Memperbarui id Jaringan Virtual dalam langganan Azure tujuan tempat server perlu dimigrasikan.
+Memperbarui id Virtual Network dalam langganan Azure tujuan tempat server perlu dimigrasikan.
 
 ```yaml
 Type: System.String
@@ -288,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetObjectID
-Menentukan server berulang di mana properti perlu diperbarui.
+Menentukan server replcating yang propertinya perlu diperbarui.
 ID harus diambil menggunakan cmdlet Get-AzMigrateServerReplication.
 
 ```yaml
@@ -319,7 +319,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetVMName
-Menentukan server berulang di mana properti perlu diperbarui.
+Menentukan server replcating yang propertinya perlu diperbarui.
 ID harus diambil menggunakan cmdlet Get-AzMigrateServerReplication.
 
 ```yaml
@@ -350,7 +350,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpdateDiskTag
-Menentukan tag yang akan digunakan untuk pembuatan disk.
+Menentukan tag yang akan digunakan untuk pembuatan diska.
 Untuk membuat, lihat bagian CATATAN untuk properti UPDATEDISKTAG dan membuat tabel hash.
 
 ```yaml
@@ -366,7 +366,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpdateDiskTagOperation
-Menentukan operasi tag perbarui disk.
+Menentukan operasi tag diska pembaruan.
 
 ```yaml
 Type: System.String
@@ -397,7 +397,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpdateNicTagOperation
-Menentukan operasi tag pembaruan NIC.
+Menentukan operasi tag NIC pembaruan.
 
 ```yaml
 Type: System.String
@@ -412,7 +412,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpdateTag
-Menentukan tag yang akan digunakan untuk Pembuatan sumber daya.
+Menentukan tag yang akan digunakan untuk pembuatan Sumber Daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -443,7 +443,7 @@ Accept wildcard characters: False
 
 ### -UpdateVMTag
 Menentukan tag yang akan digunakan untuk pembuatan VM.
-Untuk membuat, lihat bagian CATATAN untuk properti UPDATEVMTAG dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti UPDATEVMTAG dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IVMwareCbtEnableMigrationInputTargetVmtags
@@ -473,7 +473,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -494,15 +494,15 @@ DISKTOUPDATE <IVMwareCbtUpdateDiskInput[]>: Memperbarui disk untuk VM Azure yang
   - `DiskId <String>`: Id disk.
   - `[TargetDiskName <String>]`: Nama disk target.
 
-INPUTOBJECT <IMigrationItem>: Menentukan server replikasi tempat properti perlu diperbarui. Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServerReplication.
+INPUTOBJECT <IMigrationItem>: Menentukan server replikasi yang propertinya perlu diperbarui. Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServerReplication.
   - `[Location <String>]`: Lokasi Sumber Daya
   - `[ProviderSpecificDetail <IMigrationProviderSpecificSettings>]`: Pengaturan kustom penyedia migrasi.
 
-NICTOUPDATE <IVMwareCbtNicInput[]>: Updates the NIC for the Azure VM to be created.
-  - `IsPrimaryNic <String>`: Sebuah nilai yang mengindikasikan apakah ini adalah NIC utama.
-  - `NicId <String>`: The NIC Id.
-  - `[IsSelectedForMigration <String>]`: Sebuah nilai yang menunjukkan apakah NIC ini dipilih untuk migrasi.
-  - `[TargetNicName <String>]`: Nama NIC target.
+NICTOUPDATE <IVMwareCbtNicInput[]>: Memperbarui NIC agar Azure VM dibuat.
+  - `IsPrimaryNic <String>`: Nilai yang mengindikasikan apakah ini adalah NIC utama.
+  - `NicId <String>`: Id NIC.
+  - `[IsSelectedForMigration <String>]`: Nilai yang menunjukkan apakah NIC ini dipilih untuk migrasi.
+  - `[TargetNicName <String>]`: Target nama NIC.
   - `[TargetStaticIPAddress <String>]`: Alamat IP statis.
   - `[TargetSubnetName <String>]`: Nama subnet target.
 

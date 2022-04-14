@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Invoke-AzSqlInstanceFailover.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Invoke-AzSqlInstanceFailover.md
 ms.openlocfilehash: 0366904367d781f762e7815a09237d51eb989aa3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139967811"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142119941"
 ---
 # Invoke-AzSqlInstanceFailover
 
 ## SYNOPSIS
-Failovers An Azure SQL Managed Instance.
+Failovers Azure SQL Managed Instance.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/invoke-azsqlinstancefailover) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/invoke-azsqlinstancefailover) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Invoke-AzSqlInstanceFailover [-Name] <String> [-AsJob] [-PassThru] [-Force] [-Re
 ```
 
 ## DESCRIPTION
-Cmdlet **Invoke-AzSqlInstanceFailover** failovers Azure SQL Managed Instance.
+Cmdlet **Invoke-AzSqlInstanceFailover** mengalami kegagalan Azure SQL Managed Instance.
 
 ## EXAMPLES
 
@@ -38,19 +38,19 @@ Cmdlet **Invoke-AzSqlInstanceFailover** failovers Azure SQL Managed Instance.
 PS C:\> Invoke-AzSqlInstanceFailover -ResourceGroupName "ResourceGroup01" -Name "ManagedInstance01"
 ```
 
-Perintah ini akan membuat replika utama contoh bernama "ManagedInstance01".
+Perintah ini akan gagal dari replika utama instans bernama "ManagedInstance01".
 
 ### Contoh 2
 ```powershell
 PS C:\> Invoke-AzSqlInstanceFailover -ResourceGroupName "ResourceGroup01" -Name "ManagedInstance01" -ReadableSecondary
 ```
 
-Perintah ini akan menjadi replika sekunder yang dapat dibaca dari contoh terkelola "ManagedInstance01".
+Perintah ini akan gagal lagi dari replika sekunder yang dapat dibaca dari instans terkelola "ManagedInstance01".
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -79,7 +79,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Lewati pesan konfirmasi untuk melakukan tindakan
 
 ```yaml
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama instans Azure SQL akan gagal.
+Nama instans Azure SQL gagal.
 
 ```yaml
 Type: System.String
@@ -110,7 +110,7 @@ Accept wildcard characters: True
 ```
 
 ### -PassThru
-Pada Eksekusi yang berhasil, mengembalikan true.  Secara default, cmdlet ini tidak menghasilkan output apa pun.
+Pada eksekusi Berhasil, mengembalikan true.  Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -124,8 +124,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ReadableSecsecsecry
-Replika sekunder yang dapat dibaca dan bukan replika utama default
+### -ReadableSecondary
+Failover replika sekunder yang dapat dibaca dan bukan replika utama default
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

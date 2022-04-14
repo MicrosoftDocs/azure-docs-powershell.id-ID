@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmVirtualNetworkSubnetConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmVirtualNetworkSubnetConfig.md
 ms.openlocfilehash: 37202e0e852f0171ce48c2c3d61d13151b05148c
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428208"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142138190"
 ---
 # New-AzureRmVirtualNetworkSubnetConfig
 
@@ -44,11 +44,11 @@ New-AzureRmVirtualNetworkSubnetConfig -Name <String>
 ```
 
 ## DESCRIPTION
-**Cmdlet New-AzureRmVirtualNetworkSubnetConfig** membuat konfigurasi subnet jaringan virtual.
+Cmdlet **New-AzureRmVirtualNetworkSubnetConfig** membuat konfigurasi subnet jaringan virtual.
 
 ## EXAMPLES
 
-### 1: Buat jaringan virtual dengan dua subnet dan grup keamanan jaringan
+### 1: Membuat jaringan virtual dengan dua subnet dan grup keamanan jaringan
 ```
 New-AzureRmResourceGroup -Name TestResourceGroup -Location centralus
 
@@ -70,7 +70,7 @@ New-AzureRmVirtualNetwork -Name MyVirtualNetwork -ResourceGroupName TestResource
     -Location centralus -AddressPrefix "10.0.0.0/16" -Subnet $frontendSubnet,$backendSubnet
 ```
 
-Contoh ini membuat dua konfigurasi subnet baru menggunakan cmdlet New-AzureRmVirtualSubnetConfig, lalu menggunakannya untuk membuat jaringan virtual. Templat New-AzureRmVirtualSubnetConfig hanya membuat representasi dalam memori subnet. Dalam contoh ini, frontendSubnet memiliki CIDR 10.0.1.0/24 dan mereferesi grup keamanan jaringan yang mengizinkan akses RDP. BackendSubnet memiliki CIDR 10.0.2.0/24 dan merujuk grup keamanan jaringan yang sama.
+Contoh ini membuat dua konfigurasi subnet baru menggunakan cmdlet New-AzureRmVirtualSubnetConfig, lalu menggunakannya untuk membuat jaringan virtual. Templat New-AzureRmVirtualSubnetConfig hanya membuat representasi dalam memori subnet. Dalam contoh ini, frontendSubnet memiliki CIDR 10.0.1.0/24 dan mereferensikan grup keamanan jaringan yang memungkinkan akses RDP. BackendSubnet memiliki CIDR 10.0.2.0/24 dan mereferensikan grup keamanan jaringan yang sama.
 
 ## PARAMETERS
 
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -104,7 +104,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Delegation
+### -Delegasi
 Daftar layanan yang memiliki izin untuk melakukan operasi pada subnet ini.
 
 ```yaml
@@ -225,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -235,11 +235,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSRouteTable
 
-### System.Collections.Generic.List'1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Collections.Generic.List'1[[System.String, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSServiceEndpointPolicy, Microsoft.Azure.Commands.Network, Version=6.7.0.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSServiceEndpointPolicy, Microsoft.Azure.Commands.Network, Version=6.7.0.0, Culture=netral, PublicKeyToken=null]]
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSDelegation, Microsoft.Azure.Commands.Network, Version=6.7.0.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSDelegation, Microsoft.Azure.Commands.Network, Version=6.7.0.0, Culture=netral, PublicKeyToken=null]]
 
 ## OUTPUTS
 

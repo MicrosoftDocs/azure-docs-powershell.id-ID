@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.machi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/MachineLearningCompute/Commands.MachineLearningCompute/help/Set-AzureRmMlOpCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/MachineLearningCompute/Commands.MachineLearningCompute/help/Set-AzureRmMlOpCluster.md
-ms.openlocfilehash: 02371a651153b1a9ad596a7e607efea295ee986d16da581d34a0efd8c0b4496b
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: cbe72d14eac4864b784f31c4a800db09fc38b042
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140858844"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141926402"
 ---
 # Set-AzureRmMlOpCluster
 
 ## SYNOPSIS
-Mengatur properti kluster operasiisasi.
+Mengatur properti kluster operasionalisasi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -43,7 +43,7 @@ Set-AzureRmMlOpCluster -ResourceId <String> [-AgentCount <Int32>] [-SslStatus <S
 ```
 
 ## DESCRIPTION
-Mengatur semua properti kluster operasional. Karena mengatur semua properti ketika menggunakan objek kluster, objek input yang sepenuhnya valid harus diteruskan. Properti baca-saja akan diabaikan. Hanya beberapa properti yang saat ini dapat updatable, seperti yang diperlihatkan dalam kumpulan parameter.
+Mengatur semua properti kluster operasionalisasi. Karena itu mengatur semua properti ketika menggunakan objek kluster objek input yang sepenuhnya valid harus dilewati. Properti baca-saja akan diabaikan. Hanya beberapa properti yang saat ini dapat diperbarui, seperti yang diperlihatkan dalam kumpulan parameter.
 
 ## EXAMPLES
 
@@ -66,7 +66,7 @@ PS C:\> Set-AzureRmMlOpCluster -InputObject $cluster
 ## PARAMETERS
 
 ### -AgentCount
-Jumlah node agen di kluster ACS.
+Jumlah simpul agen dalam kluster ACS.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Properti kluster operasional.
+Properti kluster operasionalisasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.MachineLearningCompute.Models.PSOperationalizationCluster
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama kluster operasional.
+Nama kluster operasionalisasi.
 
 ```yaml
 Type: System.String
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya untuk kluster operasional.
+Nama grup sumber daya untuk kluster operasionalisasi.
 
 ```yaml
 Type: System.String
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya Azure untuk kluster operasi.
+Id sumber daya Azure untuk kluster operasionalisasi.
 
 ```yaml
 Type: System.String
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -SslKey
-Data utama SSL dalam format PEM.
+Data kunci SSL dalam format PEM.
 
 ```yaml
 Type: System.String
@@ -250,7 +250,7 @@ Accept wildcard characters: False
 
 ### -SslStatus
 Status SSL.
-Nilai yang mungkin adalah 'Diaktifkan' dan 'Dinonaktifkan'.
+Nilai yang memungkinkan adalah 'Diaktifkan' dan 'Dinonaktifkan'.
 
 ```yaml
 Type: System.String
@@ -277,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -293,7 +293,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -308,7 +308,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -317,7 +317,7 @@ Parameter: InputObject (ByValue)
 
 ### System.String
 
-### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 

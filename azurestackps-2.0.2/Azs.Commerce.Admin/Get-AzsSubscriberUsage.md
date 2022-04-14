@@ -4,11 +4,11 @@ Module Name: Azs.Commerce.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.commerce.admin/get-azssubscriberusage
 schema: 2.0.0
 ms.openlocfilehash: e3254ab018abaf191b45327f8b8efa6d5b063f9d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132414371"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142133550"
 ---
 # Get-AzsSubscriberUsage
 
@@ -28,21 +28,21 @@ Mendapatkan kumpulan SubscriberUsageAggregates, yaitu UsageAggregates dari pengg
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan data penggunaan diagregasi menurut hari
+### Contoh 1: Dapatkan data penggunaan yang diagregasi menurut hari
 ```powershell
 Get-AzsSubscriberUsage -ReportedStartTime "2019/12/30" -ReportedEndTime "2019-12-31" -AggregationGranularity Daily
 ```
 
-Dapatkan data penggunaan untuk seluruh hari ke-30 Des 2019 (dalam UTC) untuk semua penyewa di bawah penyedia yang diagregatkan menurut hari. Menentukan tanggal menggunakan format `mm/dd/yyyy`.  
+Dapatkan data penggunaan untuk seluruh hari dari 30 Des 2019 (dalam UTC) untuk semua penyewa di bawah penyedia yang diagregasi dari hari ke hari. Tentukan tanggal menggunakan format `mm/dd/yyyy`.  
 Jika dipanggil sebagai administrator layanan, ini secara efektif memperlihatkan semua data penggunaan untuk setiap penyewa.
 
-### Contoh 2: Dapatkan data penggunaan diagregasi menurut jam
+### Contoh 2: Dapatkan data penggunaan yang diagregasi per jam
 ```powershell
 Get-AzsSubscriberUsage -ReportedStartTime "12/30/2019 15:00" -ReportedEndTime "12/30/2019 16:00" -AggregationGranularity Hourly
 ```
 
-Dapatkan data penggunaan antara pukul 15.00 - 04.00 pada tanggal 30 Des 2019 (dalam UTC) yang diagregatkan menurut jam. Menentukan tanggal dan waktu menggunakan format `mm/dd/yyyy HH:MM`.  
-Demikian pula, jika dipanggil sebagai administrator layanan, ini secara efektif memperlihatkan semua data penggunaan untuk setiap penyewa.
+Dapatkan data penggunaan antara 15.00 - 04.00 pada 30 Des 2019 (dalam UTC) yang diagregasi setiap jam. Tentukan tanggal dan waktu menggunakan format `mm/dd/yyyy HH:MM`.  
+Demikian juga, jika disebut sebagai administrator layanan, ini secara efektif memperlihatkan semua data penggunaan untuk setiap penyewa.
 
 ## PARAMETERS
 
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReportedEndTime
-Waktu selesai yang dilaporkan (eksklusif).
+Waktu akhir yang dilaporkan (eksklusif).
 
 ```yaml
 Type: System.DateTime
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallApplicationRuleCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallApplicationRuleCollection.md
 ms.openlocfilehash: 7ef3136b92e8e1ff77a48c0bd55fc8a0f30d8e31
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139934881"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142124639"
 ---
 # New-AzFirewallApplicationRuleCollection
 
@@ -19,7 +19,7 @@ ms.locfileid: "139934881"
 Membuat kumpulan aturan aplikasi Firewall.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azfirewallapplicationrulecollection) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewallapplicationrulecollection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ New-AzFirewallApplicationRuleCollection -Name <String> -Priority <UInt32>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzFirewallApplicationRuleCollection** membuat kumpulan Firewall Application Rules.
+Cmdlet **New-AzFirewallApplicationRuleCollection** membuat kumpulan Aturan Aplikasi Firewall.
 
 ## EXAMPLES
 
@@ -40,8 +40,8 @@ $rule1 = New-AzFirewallApplicationRule -Name "httpsRule" -Protocol "https:443" -
 New-AzFirewallApplicationRuleCollection -Name "MyAppRuleCollection" -Priority 1000 -Rule $rule1 -ActionType "Allow"
 ```
 
-Contoh ini membuat koleksi dengan satu aturan. Semua lalu lintas yang cocok dengan kondisi yang diidentifikasi $rule 1 akan diizinkan.
-Aturan pertama adalah untuk semua lalu lintas HTTPS pada port 443 dari 10.0.0.0. Jika ada kumpulan aturan aplikasi lain dengan prioritas lebih tinggi (angka lebih kecil) yang juga cocok dengan lalu lintas yang diidentifikasi dalam $rule 1, tindakan pengumpulan aturan dengan prioritas lebih tinggi akan diterapkan sebagai gantinya. 
+Contoh ini membuat koleksi dengan satu aturan. Semua lalu lintas yang sesuai dengan kondisi yang diidentifikasi dalam $rule 1 akan diizinkan.
+Aturan pertama adalah untuk semua lalu lintas HTTPS di port 443 dari 10.0.0.0. Jika terdapat pengumpulan aturan aplikasi lain dengan prioritas yang lebih tinggi (angka yang lebih kecil) yang juga cocok dengan lalu lintas yang diidentifikasi dalam $rule 1, tindakan pengumpulan aturan dengan prioritas yang lebih tinggi akan diterapkan sebagai gantinya. 
 
 ### Contoh 2: Menambahkan aturan ke kumpulan aturan
 ```powershell
@@ -52,7 +52,7 @@ $rule2 = New-AzFirewallApplicationRule -Name R2 -Protocol "http:80","https:443" 
 $ruleCollection.AddRule($rule2)
 ```
 
-Contoh ini membuat kumpulan aturan aplikasi baru dengan satu aturan lalu menambahkan aturan kedua ke kumpulan aturan menggunakan metode AddRule pada objek kumpulan aturan. Setiap nama aturan dalam kumpulan aturan harus memiliki nama yang unik dan peka huruf besar/ku.
+Contoh ini membuat kumpulan aturan aplikasi baru dengan satu aturan lalu menambahkan aturan kedua ke kumpulan aturan menggunakan metode AddRule pada objek kumpulan aturan. Setiap nama aturan dalam kumpulan aturan tertentu harus memiliki nama yang unik dan tidak peka huruf besar kecil.
 
 ### Contoh 3: Mendapatkan aturan dari kumpulan aturan
 ```powershell
@@ -61,7 +61,7 @@ $ruleCollection = New-AzFirewallApplicationRuleCollection -Name "MyAppRuleCollec
 $getRule=$ruleCollection.GetRuleByName("r1")
 ```
 
-Contoh ini membuat kumpulan aturan aplikasi baru dengan satu aturan lalu mendapatkan aturan menurut nama, metode panggilan GetRuleByName pada objek kumpulan aturan. Nama aturan untuk metode GetRuleByName ber sifatnya insensitif.
+Contoh ini membuat kumpulan aturan aplikasi baru dengan satu aturan lalu mendapatkan aturan berdasarkan nama, metode panggilan GetRuleByName pada objek kumpulan aturan. Nama aturan untuk metode GetRuleByName tidak peka huruf besar kecil.
 
 ### Contoh 4: Menghapus aturan dari kumpulan aturan
 ```powershell
@@ -71,7 +71,7 @@ $ruleCollection = New-AzFirewallApplicationRuleCollection -Name "MyAppRuleCollec
 $ruleCollection.RemoveRuleByName("r1")
 ```
 
-Contoh ini membuat kumpulan aturan aplikasi baru dengan dua aturan lalu menghapus aturan pertama dari kumpulan aturan dengan metode panggilan RemoveRuleByName pada objek kumpulan aturan. Nama aturan untuk metode RemoveRuleByName ber sifatnya insensitif.
+Contoh ini membuat kumpulan aturan aplikasi baru dengan dua aturan lalu menghapus aturan pertama dari kumpulan aturan dengan metode panggilan RemoveRuleByName pada objek kumpulan aturan. Nama aturan untuk metode RemoveRuleByName tidak peka huruf besar kecil.
 
 ## PARAMETERS
 
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -Prioritas
-Menentukan prioritas aturan ini. Prioritas adalah angka antara 100 dan 65000. Makin kecil jumlahnya, semakin besar prioritasnya.
+Menentukan prioritas aturan ini. Prioritas adalah angka antara 100 dan 65000. Semakin kecil angkanya, semakin besar prioritasnya.
 
 ```yaml
 Type: System.UInt32
@@ -136,7 +136,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Rule
+### -Aturan
 Menentukan daftar aturan yang akan dikelompokkan di bawah kumpulan ini.
 
 ```yaml
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,11 +183,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

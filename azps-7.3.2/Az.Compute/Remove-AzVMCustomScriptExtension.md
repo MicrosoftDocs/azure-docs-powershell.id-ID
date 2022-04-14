@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMCustomScriptExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMCustomScriptExtension.md
-ms.openlocfilehash: 49f629716beac15357ed15044f620d2d4158e594
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2f3e6ca6efb1f68997947c6e3d7239d8c41d94b9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140557399"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142115009"
 ---
 # Remove-AzVMCustomScriptExtension
 
 ## SYNOPSIS
-Menghapus ekstensi skrip kustom dari komputer virtual.
+Menghapus ekstensi skrip kustom dari mesin virtual.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/remove-azvmcustomscriptextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,13 +29,13 @@ Remove-AzVMCustomScriptExtension [-ResourceGroupName] <String> [-VMName] <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzVMCustomScriptExtension** menghapus skrip kustom Ekstensi Mesin Virtual dari mesin virtual.
+Cmdlet **Remove-AzVMCustomScriptExtension** menghapus skrip kustom Virtual Machine Extension dari mesin virtual.
 
 ## EXAMPLES
 
 ### Contoh 1
 
-Menghapus ekstensi skrip kustom dari komputer virtual. (otomatisgenerated)
+Menghapus ekstensi skrip kustom dari mesin virtual. (autogenerasi)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Remove-AzVMCustomScriptExtension -Name 'AgentPool01' -ResourceGroupName myresourcegroup -VMName 'VM01'
@@ -41,7 +44,7 @@ Remove-AzVMCustomScriptExtension -Name 'AgentPool01' -ResourceGroupName myresour
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -55,8 +58,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Memulai operasi dan segera mengembalikannya, sebelum operasi selesai. Untuk mengetahui apakah operasi berhasil diselesaikan, gunakan beberapa mekanisme lain.
+Memulai operasi dan segera kembali, sebelum operasi selesai. Untuk menentukan apakah operasi telah berhasil diselesaikan, gunakan beberapa mekanisme lain.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual asal cmdlet ini menghapus ekstensi skrip kustom.
+Menentukan nama mesin virtual tempat cmdlet ini menghapus ekstensi skrip kustom.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -176,6 +179,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzvMCustomScriptExtension](./Get-AzVMCustomScriptExtension.md)
+[Get-AzVMCustomScriptExtension](./Get-AzVMCustomScriptExtension.md)
 
-[Set-AzvMCustomScriptExtension](./Set-AzVMCustomScriptExtension.md)
+[Set-AzVMCustomScriptExtension](./Set-AzVMCustomScriptExtension.md)

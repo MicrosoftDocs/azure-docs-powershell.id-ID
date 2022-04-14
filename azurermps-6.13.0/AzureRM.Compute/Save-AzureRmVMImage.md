@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Save-AzureRmVMImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Save-AzureRmVMImage.md
 ms.openlocfilehash: b6d8d21eea863683912e204403ebe5a75ac40fc4
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422971"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141927178"
 ---
 # Save-AzureRmVMImage
 
@@ -38,26 +38,26 @@ Save-AzureRmVMImage [-Name] <String> [-DestinationContainerName] <String> [-VHDN
 
 ## DESCRIPTION
 Cmdlet **Save-AzureRmVMImage** menyimpan mesin virtual sebagai VMImage.
-Sebelum Anda membuat gambar mesin virtual, sysprep mesin virtual, lalu menandainya sebagai umum dengan menggunakan cmdlet Set-AzureRmVM baru.
+Sebelum Anda membuat gambar mesin virtual, sysprep mesin virtual, lalu tandai sebagai umum dengan menggunakan cmdlet Set-AzureRmVM.
 Output cmdlet ini adalah templat JavaScript Object Notation (JSON).
 Anda dapat menggunakan mesin virtual dari gambar yang diambil.
 
 ## EXAMPLES
 
-### Contoh 1: Mengambil gambar mesin virtual
+### Contoh 1: Capture a virtual machine
 ```
 PS C:\> Set-AzureRmVM -ResourceGroupName "ResourceGroup11" -Name "VirtualMachine07" -Generalized 
 PS C:\> Save-AzureRmVMImage -ResourceGroupName "ResourceGroup11" -VMName "VirtualMachine07" -DestinationContainerName "VMContainer01" -VHDNamePrefix "VM07"
 ```
 
-Perintah pertama menandai mesin virtual bernama VirtualMachine07 sebagai umum.
-Perintah kedua mengambil gambar mesin virtual bernama VirtualMachine07 sebagai VMImage.
+Perintah pertama menandai mesin virtual bernama VirtualMachine07 seperti yang digeneralisasi.
+Perintah kedua menangkap mesin virtual bernama VirtualMachine07 sebagai VMImage.
 Properti **Output** mengembalikan templat JSON.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -87,11 +87,11 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationContainerName
-Menentukan nama wadah di dalam wadah "sistem" yang ingin Anda tahan gambar Anda.
-Jika wadah tidak ada, wadah dibuat untuk Anda.
-Hard disk virtual (VHD) yang merupakan VMImage berada dalam wadah yang ditentukan oleh parameter ini.
+Menentukan nama wadah di dalam wadah "sistem" yang ingin Anda pegang gambar Anda.
+Jika wadah tidak ada, wadah tersebut dibuat untuk Anda.
+Hard disk virtual (VHDs) yang merupakan VMImage berada di wadah yang ditentukan parameter ini.
 Jika VHD tersebar di beberapa akun penyimpanan, cmdlet ini membuat satu wadah yang memiliki nama ini di setiap akun penyimpanan.
-URL gambar yang disimpan mirip dengan: https:// \<storageAccountName\> .blob.core.windows.net/system/Microsoft.Compute/Images/ \<imagesContainer\> / \<vhdPrefix-osDisk\> .xxxxxxxx-xxxx-xxxx-xxxxxxxxxxxx.vhd.
+URL gambar yang disimpan mirip dengan: https://\<storageAccountName\>.blob.core.windows.net/system/Microsoft.Compute/Images/\<imagesContainer\>/\<vhdPrefix-osDisk\>.xxxxxxxx-xxxx-xxxx-xxxx.vhd.
 
 ```yaml
 Type: System.String
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID Sumber Daya komputer virtual.
+Menentukan ID Sumber Daya mesin virtual.
 
 ```yaml
 Type: System.String
@@ -135,8 +135,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Overwrite
-Mengindikasikan bahwa cmdlet ini menimpa VHD yang memiliki prefiks yang sama dalam wadah tujuan.
+### -Timpa
+Menunjukkan bahwa cmdlet ini menimpa VHD apa pun yang memiliki prefiks yang sama dalam wadah tujuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -150,8 +150,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Path
-Jalur file tempat templat gambar yang diambil disimpan.
+### -Jalur
+Jalur file tempat templat gambar yang direkam disimpan.
 
 ```yaml
 Type: System.String
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: System.String
@@ -181,8 +181,8 @@ Accept wildcard characters: False
 ```
 
 ### -VHDNamePrefix
-Menentukan prefiks dalam nama blob yang merupakan profil penyimpanan VMImage.
-Misalnya, prefiks vhdPrefix untuk hasil disk sistem operasi dalam nama vhdPrefix-osdisk. \<guid\> . vhd.
+Menentukan prefiks dalam nama gumpala yang merupakan profil penyimpanan VMImage.
+Misalnya, prefiks vhdPrefix untuk disk sistem operasi menghasilkan nama vhdPrefix-osdisk.\<guid\>. Vhd.
 
 ```yaml
 Type: System.String
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -219,7 +219,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmVMImagePublisher](./Get-AzureRmVMImagePublisher.md)
 
-[Get-AzureRmVMImageSku](./Get-AzureRmVMImageSku.md)
+[Get-AzureRmvmImagesku](./Get-AzureRmVMImageSku.md)
 
 [Set-AzureRmVM](./Set-AzureRmVM.md)
 

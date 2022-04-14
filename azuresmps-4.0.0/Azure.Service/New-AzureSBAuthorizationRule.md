@@ -4,16 +4,16 @@ ms.assetid: 75320133-E7B1-40D4-B16D-567686D5AE99
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 31c04545c1a1f960dff637129d85827053292000
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428063"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142135763"
 ---
 # New-AzureSBAuthorizationRule
 
 ## SYNOPSIS
-Membuat aturan Bus Layanan otorisasi baru.
+Membuat aturan otorisasi Bus Layanan baru.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -26,20 +26,20 @@ New-AzureSBAuthorizationRule -Name <String> [-Permission <AccessRights[]>] -Name
  [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
 
-### Kumpulan nama
+### NamespaceSAS
 ```
 New-AzureSBAuthorizationRule -Name <String> [-Permission <AccessRights[]>] -Namespace <String>
  [-PrimaryKey <String>] [-SecondaryKey <String>] [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureSBAuthorizationRule** membuat Bus Layanan otorisasi bisnis.
+Cmdlet **New-AzureSBAuthorizationRule** membuat aturan otorisasi Bus Layanan.
 
 [!INCLUDE [sb-deprecation.md](../include/sb-deprecation.md)]
 
 ## EXAMPLES
 
-### Contoh 1: Buat aturan otorisasi dengan kunci primer yang dihasilkan
+### Contoh 1: Membuat aturan otorisasi dengan kunci utama yang dihasilkan
 ```
 PS C:\> New-AzureSBAuthorizationRule -Name MyRule -Namespace MyNamespace -Permission $("Send")
 ```
@@ -56,7 +56,7 @@ Membuat aturan otorisasi baru pada tingkat Antrean MyEntity dengan semua izin.
 ## PARAMETERS
 
 ### -EntityName
-Menentukan nama entitas untuk diterapkan aturan di.
+Menentukan nama entitas untuk menerapkan aturan pada.
 
 ```yaml
 Type: String
@@ -72,9 +72,9 @@ Accept wildcard characters: False
 
 ### -EntityType
 Menentukan tipe entitas.
-Nilai valid adalah:
+Nilai yang valid adalah:
   
-- Antrean
+- Antrian
 - Topik
 - Relay
 - NotificationHub
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 
 ### -Namespace
 Menentukan nama ruang nama untuk menerapkan aturan otorisasi.
-Jika tidak *ada EntityName* yang menyediakan aturan akan berada di tingkat ruang nama.
+Jika tidak ada *EntityName* yang menyediakan aturan akan berada di tingkat ruang nama.
 
 ```yaml
 Type: String
@@ -122,7 +122,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Permission
+### -Izin
 Izin otorisasi (Kirim, Kelola, Dengarkan).
 
 ```yaml
@@ -154,8 +154,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecondaryKey
-Menentukan tombol sekunder Tanda Tangan Akses Bersama.
+Menentukan kunci sekunder Tanda Tangan Akses Bersama.
 
 ```yaml
 Type: String
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -197,7 +197,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureSBAuthorizationRule](./Get-AzureSBAuthorizationRule.md)
 
-[Remove-AzureSBAuthorizationRule](./Remove-AzureSBAuthorizationRule.md)
+[Hapus-AzureSBAuthorizationRule](./Remove-AzureSBAuthorizationRule.md)
 
 [Set-AzureSBAuthorizationRule](./Set-AzureSBAuthorizationRule.md)
 

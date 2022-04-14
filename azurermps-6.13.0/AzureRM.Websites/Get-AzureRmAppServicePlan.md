@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/Get-AzureRmAppServicePlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/Get-AzureRmAppServicePlan.md
 ms.openlocfilehash: 9fe7d3d9580411c31fdf5ca7e21ba1c4379217a4
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420281"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141923160"
 ---
 # Get-AzureRmAppServicePlan
 
 ## SYNOPSIS
-Mendapatkan paket Layanan Aplikasi Azure dalam grup sumber daya yang ditentukan.
+Mendapatkan paket Azure App Service dalam grup sumber daya tertentu.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -34,28 +34,28 @@ Get-AzureRmAppServicePlan [-Location] <String> [-DefaultProfile <IAzureContextCo
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmAppServicePlan** mendapatkan paket Layanan Aplikasi Azure di grup sumber daya yang ditentukan.
+Cmdlet **Get-AzureRmAppServicePlan** mendapatkan rencana Azure App Service dalam grup sumber daya yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan paket Layanan Aplikasi dari grup sumber daya
+### Contoh 1: Dapatkan paket App Service dari grup sumber daya
 ```
 PS C:\>Get-AzureRmAppServicePlan -ResourceGroupName "Default-Web-WestUS" -Name "ContosoASP"
 ```
 
-Perintah ini mendapatkan paket Layanan Aplikasi bernama ContosoASP yang dimiliki grup sumber daya bernama Default-Web-WestUS.
+Perintah ini mendapatkan paket App Service bernama ContosoASP yang termasuk dalam grup sumber daya bernama Default-Web-WestUS.
 
-### Contoh 2: Dapatkan semua paket Layanan Aplikasi di suatu lokasi
+### Contoh 2: Dapatkan semua paket App Service di lokasi
 ```
 PS C:\>Get-AzureRmAppServicePlan -Location "West US"
 ```
 
-Perintah ini mendapatkan semua paket Layanan Aplikasi yang terletak di kawasan "Barat AS".
+Perintah ini mendapatkan semua paket App Service yang terletak di kawasan "AS Barat".
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Paket Layanan Aplikasi
+Nama Rencana App Service
 
 ```yaml
 Type: System.String
@@ -115,11 +115,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -131,7 +131,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmAppServicePlan](./New-AzureRmAppServicePlan.md)
 
-[Remove-AzureRmAppServicePlan](./Remove-AzureRmAppServicePlan.md)
+[Hapus-AzureRmAppServicePlan](./Remove-AzureRmAppServicePlan.md)
 
 [Set-AzureRmAppServicePlan](./Set-AzureRmAppServicePlan.md)
 

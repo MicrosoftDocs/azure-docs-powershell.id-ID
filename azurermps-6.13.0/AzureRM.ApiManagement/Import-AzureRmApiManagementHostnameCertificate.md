@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Import-AzureRmApiManagementHostnameCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Import-AzureRmApiManagementHostnameCertificate.md
 ms.openlocfilehash: 80bc75e8029db9aa4cac9f1e0abd53ad17c9fad1
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423373"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141969896"
 ---
 # Import-AzureRmApiManagementHostnameCertificate
 
 ## SYNOPSIS
-Mengimpor sertifikat dalam format PFX untuk Layanan Manajemen API.
+Mengimpor sertifikat dalam format PFX untuk Layanan API Management.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,12 +29,12 @@ Import-AzureRmApiManagementHostnameCertificate -ResourceGroupName <String> -Name
 ```
 
 ## DESCRIPTION
-Cmdlet **Import-AzureRmApiManagementHostnameCertificate** mengimpor sertifikat dalam format PFX untuk Layanan Manajemen API.
-Sertifikat akan digunakan untuk konfigurasi nama host kustom.
+Cmdlet **Import-AzureRmApiManagementHostnameCertificate** mengimpor sertifikat dalam format PFX untuk Layanan API Management.
+Sertifikat ini akan digunakan untuk konfigurasi nama host kustom.
 
 ## EXAMPLES
 
-### Contoh 1: Mengimpor sertifikat nama host Manajemen API
+### Contoh 1: Mengimpor sertifikat nama host API Management
 ```powershell
 PS C:\>Import-AzureRmApiManagementHostnameCertificate -Name "ContosoApi" -ResourceGroupName Contoso -HostnameType "Proxy" -PfxPath "C:\proxycert.pfx" -PfxPassword "CertSecret"
 ```
@@ -44,7 +44,7 @@ Perintah ini mengimpor sertifikat untuk nama host kustom proksi.
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -59,9 +59,9 @@ Accept wildcard characters: False
 ```
 
 ### -HostnameType
-Menentukan tipe nama host yang memuat sertifikat oleh cmdlet ini.
-Nilai valid adalah: 
-- Proksi
+Menentukan tipe nama host tempat cmdlet ini memuat sertifikat.
+Nilai yang valid adalah: 
+- Proxy
 - Portal
 
 ```yaml
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama penyebaran Manajemen API yang diimpor cmdlet ini.
+Menentukan nama penyebaran API Management yang diimpor cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana penyebaran Manajemen API ada.
+Menentukan nama grup sumber daya di mana penyebaran API Management ada.
 
 ```yaml
 Type: System.String
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -170,7 +170,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmApiManagementHostnameConfiguration](./New-AzureRmApiManagementHostnameConfiguration.md)
+[Baru-AzureRmApiManagementHostnameConfiguration](./New-AzureRmApiManagementHostnameConfiguration.md)
 
 [Set-AzureRmApiManagementHostnames](./Set-AzureRmApiManagementHostnames.md)
 

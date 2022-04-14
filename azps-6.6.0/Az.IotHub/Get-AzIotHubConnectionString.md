@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubConnectionString.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubConnectionString.md
 ms.openlocfilehash: 4bf0ab73785c3c8ac3218e16c47ab14fd50e81ae
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140285449"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141911991"
 ---
 # Get-AzIotHubConnectionString
 
 ## SYNOPSIS
-Mendapatkan string koneksi IotHub.
+Mendapatkan iotHub connectionstrings.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.iothub/get-aziothubconnectionstring) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubconnectionstring) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,29 +28,29 @@ Get-AzIotHubConnectionString [-ResourceGroupName] <String> [-Name] <String> [[-K
 ```
 
 ## DESCRIPTION
-Mendapatkan string koneksi IotHub.
-Anda bisa mendapatkan string koneksi untuk semua tombol atau memfilternya dengan nama kunci tertentu.
+Mendapatkan iotHub connectionstrings.
+Anda bisa mendapatkan connectionstring untuk semua kunci atau memfilternya dengan nama kunci tertentu.
 
 ## EXAMPLES
 
-### Contoh 1 Dapatkan Semua string koneksi IotHub
+### Contoh 1 Dapatkan Semua sambungan IotHub
 ```
 PS C:\> Get-AzIotHubConnectionString -ResourceGroupName "myresourcegroup" -Name "myiothub"
 ```
 
-Mendapatkan string koneksi untuk semua tombol untuk iothub yang bernama "myiothub"
+Mendapatkan connectionstrings untuk semua kunci untuk iothub bernama "myiothub"
 
-### Contoh 2 Mendapatkan string koneksi IotHub untuk tombol tertentu
+### Contoh 2 Dapatkan alas koneksi IotHub untuk kunci tertentu
 ```
 PS C:\> Get-AzIotHubConnectionString -ResourceGroupName "myresourcegroup" -Name "myiothub" -KeyName "mykey"
 ```
 
-Mendapatkan string koneksi untuk kunci yang bernama "mykey" untuk iothub yang bernama "myiothub"
+Mendapatkan connectionstrings untuk kunci bernama "mykey" untuk iothub bernama "myiothub"
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

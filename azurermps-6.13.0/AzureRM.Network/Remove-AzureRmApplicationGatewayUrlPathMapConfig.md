@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmApplicationGatewayUrlPathMapConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmApplicationGatewayUrlPathMapConfig.md
 ms.openlocfilehash: 68676c05757a58f2c1094e36338d17a52de6b040
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422122"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142137833"
 ---
 # Remove-AzureRmApplicationGatewayUrlPathMapConfig
 
 ## SYNOPSIS
-Menghapus pemetaan jalur URL ke sebuah pool server backend.
+Menghapus pemetaan jalur URL ke kumpulan server backend.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,14 +28,14 @@ Remove-AzureRmApplicationGatewayUrlPathMapConfig -Name <String> -ApplicationGate
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmApplicationGatewayUrlPathMapConfig** menghapus pemetaan jalur URL ke pool server backend.
+Cmdlet **Remove-AzureRmApplicationGatewayUrlPathMapConfig** menghapus pemetaan jalur URL ke kumpulan server backend.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan gateway aplikasi di mana cmdlet ini menghapus konfigurasi peta jalur URL.
+Menentukan gateway aplikasi tempat cmdlet ini menghapus konfigurasi peta jalur URL.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -50,7 +50,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

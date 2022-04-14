@@ -5,16 +5,16 @@ ms.assetid: D639E4F5-5AAD-4F13-9B48-70E90D2DFFCA
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/new-azurermloadbalancerfrontendipconfig
 schema: 2.0.0
 ms.openlocfilehash: 3cd241b84f7ac03dc268a8f04df0490f6a9f9665
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132429155"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141928368"
 ---
 # New-AzureRmLoadBalancerFrontendIpConfig
 
 ## SYNOPSIS
-Membuat konfigurasi IP front-end untuk penyeimbang muat.
+Membuat konfigurasi IP ujung depan untuk penyeimbang beban.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -49,24 +49,24 @@ New-AzureRmLoadBalancerFrontendIpConfig -Name <String> -PublicIpAddress <PSPubli
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmLoadBalancerFrontendIpConfig** membuat konfigurasi IP front-end untuk penyeimbang muat Azure.
+Cmdlet **New-AzureRmLoadBalancerFrontendIpConfig** membuat konfigurasi IP front-end untuk penyeimbang muatan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat konfigurasi IP front-end untuk penyeimbang muat
+### Contoh 1: Membuat konfigurasi IP ujung depan untuk penyeimbang muatan
 ```
 PS C:\>$publicip = New-AzureRmPublicIpAddress -ResourceGroupName "MyResourceGroup" -Name "MyPublicIP" -Location "West US" -AllocationMethod "Dynamic"
 PS C:\> New-AzureRmLoadBalancerFrontendIpConfig -Name "FrontendIpConfig01" -PublicIpAddress $publicip
 ```
 
-Perintah pertama membuat alamat IP publik dinamis bernama MyPublicIP dalam grup sumber daya yang bernama MyResourceGroup, lalu menyimpannya di $publicip lokal.
+Perintah pertama membuat alamat IP publik dinamis bernama MyPublicIP dalam grup sumber daya bernama MyResourceGroup, lalu menyimpannya dalam variabel $publicip.
 
-Perintah kedua membuat konfigurasi IP ujung-depan bernama FrontendIpConfig01 menggunakan alamat IP publik dalam $publicip.
+Perintah kedua membuat konfigurasi IP front-end bernama FrontendIpConfig01 menggunakan alamat IP publik di $publicip.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 
 ### -PrivateIpAddress
 Menentukan alamat IP privat penyeimbang muat.
-Tentukan parameter ini hanya jika Anda juga menentukan parameter *Subnet.*
+Tentukan parameter ini hanya jika Anda juga menentukan parameter *Subnet* .
 
 ```yaml
 Type: String
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddress
-Menentukan objek **PublicIpAddress** yang akan dikaitkan dengan konfigurasi IP ujung-depan.
+Menentukan objek **PublicIpAddress** untuk dikaitkan dengan konfigurasi IP front-end.
 
 ```yaml
 Type: PSPublicIpAddress
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddressId
-Menentukan ID objek **PublicIpAddress** untuk dikaitkan dengan konfigurasi IP front-end.
+Menentukan ID objek **PublicIpAddress** untuk dikaitkan dengan konfigurasi IP ujung depan.
 
 ```yaml
 Type: String
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -Subnet
-Menentukan objek **Subnet** untuk membuat konfigurasi IP ujung-depan.
+Menentukan objek **Subnet** untuk membuat konfigurasi IP front-end.
 
 ```yaml
 Type: PSSubnet
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetId
-Menentukan ID subnet untuk membuat konfigurasi IP ujung-depan.
+Menentukan ID subnet untuk membuat konfigurasi IP front-end.
 
 ```yaml
 Type: String
@@ -171,8 +171,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Zone
-Daftar zona ketersediaan mencantumkan IP yang dialokasikan untuk sumber daya yang diperlukan.
+### -Zona
+Daftar zona ketersediaan yang mencantumkan IP yang dialokasikan untuk sumber daya yang diperlukan.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -203,9 +203,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmLoadBalancerFrontendIpConfig](./Get-AzureRmLoadBalancerFrontendIpConfig.md)
 
-[New-AzureRmPublicIpAddress](./New-AzureRmPublicIpAddress.md)
+[Baru-AzureRmPublicIpAddress](./New-AzureRmPublicIpAddress.md)
 
-[Remove-AzureRmLoadBalancerFrontendIpConfig](./Remove-AzureRmLoadBalancerFrontendIpConfig.md)
+[Hapus-AzureRmLoadBalancerFrontendIpConfig](./Remove-AzureRmLoadBalancerFrontendIpConfig.md)
 
 [Set-AzureRmLoadBalancerFrontendIpConfig](./Set-AzureRmLoadBalancerFrontendIpConfig.md)
 

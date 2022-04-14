@@ -7,20 +7,20 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Get-AzMediaServiceNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Get-AzMediaServiceNameAvailability.md
 ms.openlocfilehash: ddb871c77f55ea901394f5884102c8fc91b24f0b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139974417"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142126637"
 ---
 # Get-AzMediaServiceNameAvailability
 
 ## SYNOPSIS
 Memeriksa apakah nama layanan media tersedia.
-Nama layanan media ber unik secara global.
+Nama layanan media unik secara global.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.media/get-azmediaservicenameavailability) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.media/get-azmediaservicenameavailability) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ Get-AzMediaServiceNameAvailability [-DefaultProfile <IAzureContextContainer>] [-
 
 ## DESCRIPTION
 Cmdlet **Get-AzMediaServiceNameAvailability** memeriksa apakah nama layanan media tersedia.
-Nama layanan media ber unik secara global.
+Nama layanan media unik secara global.
 
 ## EXAMPLES
 
@@ -44,8 +44,8 @@ Perintah ini memeriksa apakah nama MediaService1 tersedia.
 
 ## PARAMETERS
 
-### -Nama Akun
-Menentukan nama layanan media yang akan didaurkan cmdlet ini.
+### -AccountName
+Menentukan nama layanan media yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -75,11 +75,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -93,7 +93,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzMediaService](./New-AzMediaService.md)
 
-[Remove-AzMediaService](./Remove-AzMediaService.md)
+[Hapus-AzMediaService](./Remove-AzMediaService.md)
 
 [Set-AzMediaService](./Set-AzMediaService.md)
 

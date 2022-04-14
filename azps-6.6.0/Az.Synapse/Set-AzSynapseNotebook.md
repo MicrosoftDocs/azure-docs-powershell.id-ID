@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseNotebook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseNotebook.md
 ms.openlocfilehash: cb77f225bfa2088ad5678b2d5b58bc2e534cd359
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140094851"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141945285"
 ---
 # Set-AzSynapseNotebook
 
 ## SYNOPSIS
-Membuat atau memperbarui buku catatan di dalam ruang kerja.
+Membuat atau memperbarui buku catatan dalam ruang kerja.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/set-azsynapsenotebook) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/set-azsynapsenotebook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +49,7 @@ Set-AzSynapseNotebook -WorkspaceObject <PSSynapseWorkspace> [-Name <String>] -Sp
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSynapseNotebook** membuat atau memperbarui buku catatan di dalam ruang kerja.
+Cmdlet **Set-AzSynapseNotebook** membuat atau memperbarui buku catatan dalam ruang kerja.
 
 ## EXAMPLES
 
@@ -62,7 +62,7 @@ PS C:\> Set-AzSynapseNotebook -WorkspaceName ContosoWorkspace -DefinitionFile "C
     Name          : notebook
 ```
 
-Perintah ini akan membuat atau memperbarui buku catatan dari file notebook.ipynb dalam ruang kerja bernama ContosoWorkspace.
+Perintah ini membuat atau memperbarui buku catatan dari buku catatan file notebook.ipynb di ruang kerja bernama ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
@@ -70,19 +70,19 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Set-AzSynapseNotebook -DefinitionFile "C:\\samples\\notebook.ipynb"
 ```
 
-Perintah ini akan membuat atau memperbarui buku catatan dari file notebook.ipynb dalam ruang kerja yang bernama ContosoWorkspace melalui pipeline.
+Perintah ini membuat atau memperbarui buku catatan dari buku catatan file notebook.ipynb di ruang kerja bernama ContosoWorkspace melalui pipeline.
 
 ### Contoh 3
 ```powershell
 PS C:\> Set-AzSynapseNotebook -WorkspaceName ContosoWorkspace -DefinitionFile "C:\\samples\\notebook.ipynb" -SparkPoolName ContosoSparkPool -ExecutorCount 2
 ```
 
-Perintah ini membuat atau memperbarui buku catatan dari buku catatan notebook.ipynb yang terhubung ke ContosoSparkPool dan menggunakan 2 eksekusi di ruang kerja bernama ContosoWorkspace.
+Perintah ini membuat atau memperbarui buku catatan dari notebook file notebook.ipynb yang dilampirkan ke ContosoSparkPool dan menggunakan 2 pelaksana di ruang kerja bernama ContosoWorkspace.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExecutorCount
-Jumlah eksekusi yang akan dialokasikan di pool Spark yang ditentukan untuk pekerjaan tersebut.
+Jumlah pelaksana yang akan dialokasikan dalam kumpulan Spark tertentu untuk pekerjaan tersebut.
 
 ```yaml
 Type: System.Int32
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExecutorSize
-Jumlah inti dan memori yang akan digunakan untuk mengeksekusi yang dialokasikan di pool Spark yang ditentukan untuk pekerjaan.
+Jumlah inti dan memori yang akan digunakan untuk pelaksana yang dialokasikan dalam kumpulan Spark tertentu untuk pekerjaan tersebut.
 
 ```yaml
 Type: System.String
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -SparkPoolName
-Nama pool Grafik Apik Synapse.
+Nama kolam renang Synapse Spark.
 
 ```yaml
 Type: System.String
@@ -187,7 +187,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -249,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

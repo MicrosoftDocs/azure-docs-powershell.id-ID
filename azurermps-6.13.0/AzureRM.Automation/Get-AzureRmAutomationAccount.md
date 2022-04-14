@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRmAutomationAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRmAutomationAccount.md
 ms.openlocfilehash: a72b7dcb729df3327277b2156574c5a0d5d9deb6
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427637"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141969719"
 ---
 # Get-AzureRmAutomationAccount
 
@@ -22,7 +22,7 @@ Mendapatkan akun Otomatisasi dalam grup sumber daya.
 
 ## SYNTAX
 
-### SecaraSemua (Default)
+### ByAll (Default)
 ```
 Get-AzureRmAutomationAccount [[-ResourceGroupName] <String>] [-DefaultProfile <IAzureContextContainer>]
  [<CommonParameters>]
@@ -36,7 +36,7 @@ Get-AzureRmAutomationAccount [-ResourceGroupName] <String> [-Name] <String>
 
 ## DESCRIPTION
 Cmdlet **Get-AzureRmAutomationAccount** mendapatkan akun Azure Automation dalam grup sumber daya.
-Untuk informasi selengkapnya tentang akun Otomatisasi, lihat cmdlet New-AzureRmAutomationAccount baru.
+Untuk informasi selengkapnya tentang akun Otomatisasi, lihat cmdlet New-AzureRmAutomationAccount.
 
 ## EXAMPLES
 
@@ -47,17 +47,17 @@ PS C:\>Get-AzureRmAutomationAccount -ResourceGroupName "ResourceGroup03"
 
 Perintah ini mendapatkan semua akun Otomatisasi dalam grup sumber daya bernama ResourceGroup03.
 
-### Contoh 2: Mendapatkan akun
+### Contoh 2: Dapatkan akun
 ```
 PS C:\>Get-AzureRmAutomationAccount -ResourceGroupName "ResourceGroup03" -Name "ContosoAutomationAccount"
 ```
 
-Perintah ini mendapatkan akun Otomatisasi yang bernama ContosoAutomationAccount dalam grup sumber daya yang bernama ContosoResourceGroup.
+Perintah ini mendapatkan akun Otomatisasi bernama ContosoAutomationAccount dalam grup sumber daya bernama ContosoResourceGroup.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama akun Otomatisasi yang akan didaurkan cmdlet ini.
+Menentukan nama akun Otomatisasi yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -128,9 +128,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmAutomationAccount](./New-AzureRmAutomationAccount.md)
+[AzureRmAutomationAccount Baru](./New-AzureRmAutomationAccount.md)
 
-[Remove-AzureRmAutomationAccount](./Remove-AzureRmAutomationAccount.md)
+[Hapus-AzureRmAutomationAccount](./Remove-AzureRmAutomationAccount.md)
 
 [Set-AzureRmAutomationAccount](./Set-AzureRmAutomationAccount.md)
 

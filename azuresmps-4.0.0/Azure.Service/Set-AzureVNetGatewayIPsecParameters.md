@@ -4,11 +4,11 @@ ms.assetid: C85576C1-182B-467E-9620-A475728E20D2
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: c0668373bb49f8691a947e4c4de298ab78497dab
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426520"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141880002"
 ---
 # Set-AzureVNetGatewayIPsecParameters
 
@@ -26,7 +26,7 @@ Set-AzureVNetGatewayIPsecParameters -VNetName <String> -LocalNetworkSiteName <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureVNetGatewayIPsecParameters** mengatur parameter Internet Protocol security (IPsec) dan Internet Key Exchange (IKE) untuk koneksi antara gateway jaringan virtual dan situs jaringan lokal.
+Cmdlet **Set-AzureVNetGatewayIPsecParameters** mengatur parameter Keamanan Protokol Internet (IPsec) dan Internet Key Exchange (IKE) untuk koneksi antara gateway jaringan virtual dan situs jaringan lokal.
 
 ## EXAMPLES
 
@@ -34,7 +34,7 @@ Cmdlet **Set-AzureVNetGatewayIPsecParameters** mengatur parameter Internet Proto
 
 ### -EncryptionType
 Menentukan tipe enkripsi untuk gateway jaringan virtual.
-Nilai valid adalah: 
+Nilai yang valid adalah: 
 
 - NoEncryption 
 - RequireEncryption
@@ -52,7 +52,7 @@ Accept wildcard characters: False
 ```
 
 ### -LocalNetworkSiteName
-Menentukan nama koneksi situs jaringan lokal di mana cmdlet ini mengonfigurasi parameter IPsec dan IKE.
+Menentukan nama koneksi situs jaringan lokal tempat cmdlet ini mengonfigurasi parameter IPsec dan IKE.
 
 ```yaml
 Type: String
@@ -67,11 +67,11 @@ Accept wildcard characters: False
 ```
 
 ### -PfsGroup
-Menentukan grup forward secrecy (PFS) yang sempurna.
-Nilai valid adalah: 
+Menentukan grup kesempurnaan ketahanan maju (PFS).
+Nilai yang valid adalah: 
 
 - PFS1 
-- Tidak ada
+- Tidak
 
 ```yaml
 Type: String
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini. Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca. Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -SADataSizeKilobytes
-Menentukan ukuran, dalam kilobyte, dari asosiasi keamanan (SA).
+Menentukan ukuran, dalam kilobyte, asosiasi keamanan (SA).
 
 ```yaml
 Type: Int32
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

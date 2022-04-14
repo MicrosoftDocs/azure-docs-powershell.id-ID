@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/TrafficManager/Commands.TrafficManager2/help/Remove-AzureRmTrafficManagerEndpointConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/TrafficManager/Commands.TrafficManager2/help/Remove-AzureRmTrafficManagerEndpointConfig.md
 ms.openlocfilehash: 3468730caa727c7c8cde46ddbf431c374361b8fa
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423247"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141923127"
 ---
 # Remove-AzureRmTrafficManagerEndpointConfig
 
 ## SYNOPSIS
-Menghapus titik akhir dari objek Traffic Manager profil lokal.
+Menghapus titik akhir dari objek profil Traffic Manager lokal.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,12 +28,12 @@ Remove-AzureRmTrafficManagerEndpointConfig -EndpointName <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmTrafficManagerEndpointConfig** menghapus titik akhir dari objek Azure Traffic Manager profil lokal.
-Anda dapat menggunakan cmdlet Get-AzureRmTrafficManagerProfile.
+Cmdlet **Remove-AzureRmTrafficManagerEndpointConfig** menghapus titik akhir dari objek profil Azure Traffic Manager lokal.
+Anda bisa mendapatkan profil dengan menggunakan cmdlet Get-AzureRmTrafficManagerProfile.
 
 Cmdlet ini beroperasi pada objek profil lokal.
-Lakukan perubahan ke profil untuk Traffic Manager dengan cmdlet Set-AzureRmTrafficManagerProfile cmdlet.
-Untuk menghapus titik akhir dan melakukan perubahan dalam satu operasi, gunakan cmdlet Remove-AzureRmTrafficManagerEndpoint cmdlet.
+Lakukan perubahan anda ke profil untuk Traffic Manager dengan menggunakan cmdlet Set-AzureRmTrafficManagerProfile.
+Untuk menghapus titik akhir dan melakukan perubahan dalam operasi tunggal, gunakan cmdlet Remove-AzureRmTrafficManagerEndpoint.
 
 ## EXAMPLES
 
@@ -44,18 +44,18 @@ PS C:\> Remove-AzureRmTrafficManagerEndpointConfig -EndpointName "contoso" -Traf
 PS C:\> Set-AzureRmTrafficManagerProfile -TrafficManagerProfile $TrafficManagerProfile
 ```
 
-Perintah pertama mendapatkan profil Azure Traffic Manager dengan menggunakan cmdlet **Get-AzureRmTrafficManagerProfile.**
-Perintah menyimpan profil lokal di $TrafficManagerProfile variabel.
+Perintah pertama mendapatkan profil Azure Traffic Manager dengan menggunakan cmdlet **Get-AzureRmTrafficManagerProfile**.
+Perintah menyimpan profil lokal dalam variabel $TrafficManagerProfile.
 
-Perintah kedua menghapus titik akhir Azure yang bernama contoso dari profil yang disimpan di $TrafficManagerProfile.
+Perintah kedua menghapus titik akhir Azure bernama contoso dari profil yang disimpan di $TrafficManagerProfile.
 Perintah ini hanya mengubah objek lokal.
 
-Perintah terakhir memperbarui profil Traffic Manager bernama ContosoProfile agar sesuai dengan nilai lokal di $TrafficManagerProfile.
+Perintah terakhir memperbarui profil Traffic Manager bernama ContosoProfile agar sesuai dengan nilai lokal dalam $TrafficManagerProfile.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ### -TrafficManagerProfile
 Menentukan objek **TrafficManagerProfile** lokal.
 Cmdlet ini mengubah objek lokal ini.
-Untuk mendapatkan objek **TrafficManagerProfile,** gunakan cmdlet Get-AzureRmTrafficManagerProfile baru.
+Untuk mendapatkan objek **TrafficManagerProfile** , gunakan cmdlet Get-AzureRmTrafficManagerProfile.
 
 ```yaml
 Type: Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerProfile
@@ -102,17 +102,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.Network.TrafficManagerProfile
-Cmdlet ini menerima objek **TrafficManagerProfile** ke cmdlet ini.
+Cmdlet ini menerima objek **TrafficManagerProfile** untuk cmdlet ini.
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Network.TrafficManagerProfile
-Cmdlet ini mengembalikan objek TrafficManagerProfile yang diubah.
+Cmdlet ini mengembalikan objek TrafficManagerProfile yang dimodifikasi.
 
 ## CATATAN
 
@@ -122,7 +122,7 @@ Cmdlet ini mengembalikan objek TrafficManagerProfile yang diubah.
 
 [Get-AzureRmTrafficManagerProfile](./Get-AzureRmTrafficManagerProfile.md)
 
-[Remove-AzureRmTrafficManagerEndpoint](./Remove-AzureRmTrafficManagerEndpoint.md)
+[Hapus-AzureRmTrafficManagerEndpoint](./Remove-AzureRmTrafficManagerEndpoint.md)
 
 [Set-AzureRmTrafficManagerProfile](./Set-AzureRmTrafficManagerProfile.md)
 

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/KeyVault/Commands.KeyVault/help/Get-AzureKeyVaultSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/KeyVault/Commands.KeyVault/help/Get-AzureKeyVaultSecret.md
 ms.openlocfilehash: aa8306070eb560deb465cbaa9ddae2bce24c5600
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422150"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141926510"
 ---
 # Get-AzureKeyVaultSecret
 
 ## SYNOPSIS
-Rahasianya ada di kunci vault.
+Mendapatkan rahasia dalam kubah kunci.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -77,12 +77,12 @@ Get-AzureKeyVaultSecret [-ResourceId] <String> [-Name] <String> [-IncludeVersion
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureKeyVaultSecret** rahasia di vault kunci.
-Cmdlet ini rahasia tertentu atau rahasia semua rahasia dalam kunci vault.
+Cmdlet **Get-AzureKeyVaultSecret** mendapatkan rahasia dalam kubah kunci.
+Cmdlet ini mendapatkan rahasia tertentu atau semua rahasia dalam kubah kunci.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua versi rahasia saat ini dalam kunci vault
+### Contoh 1: Dapatkan semua versi saat ini dari semua rahasia dalam kubah kunci
 ```powershell
 PS C:\> Get-AzureKeyVaultSecret -VaultName 'Contoso'
 
@@ -111,9 +111,9 @@ Content Type :
 Tags         :
 ```
 
-Perintah ini rahasia semua versi terbaru di kunci vault bernama Contoso.
+Perintah ini mendapatkan versi saat ini dari semua rahasia dalam kubah kunci bernama Contoso.
 
-### Contoh 2: Mendapatkan semua versi rahasia tertentu
+### Contoh 2: Dapatkan semua versi rahasia tertentu
 ```powershell
 PS C:\> Get-AzureKeyVaultSecret -VaultName 'Contoso' -Name 'secret1' -IncludeVersions
 
@@ -142,7 +142,7 @@ Content Type :
 Tags         :
 ```
 
-Perintah ini mendapatkan semua versi rahasia bernama rahasia1 di kunci vault bernama Contoso.
+Perintah ini mendapatkan semua versi rahasia bernama secret1 dalam kubah kunci bernama Contoso.
 
 ### Contoh 3: Mendapatkan versi rahasia tertentu saat ini
 ```powershell
@@ -161,9 +161,9 @@ Content Type :
 Tags         :
 ```
 
-Perintah ini mendapatkan versi rahasia rahasia bernama secret1 di key vault bernama Contoso.
+Perintah ini mendapatkan versi rahasia saat ini yang bernama secret1 dalam kubah kunci bernama Contoso.
 
-### Contoh 4: Mendapatkan versi rahasia tertentu
+### Contoh 4: Mendapatkan versi tertentu dari rahasia tertentu
 ```powershell
 PS C:\> Get-AzureKeyVaultSecret -VaultName 'Contoso' -Name 'secret1' -Version '5d1a74ba2c454439886fb8509b6cab3c'
 
@@ -180,7 +180,7 @@ Content Type :
 Tags         :
 ```
 
-Perintah ini mendapatkan versi rahasia tertentu yang bernama rahasia1 di key vault bernama Contoso.
+Perintah ini mendapatkan versi rahasia tertentu yang bernama secret1 dalam kubah kunci bernama Contoso.
 
 ### Contoh 5: Mendapatkan nilai teks biasa dari versi rahasia tertentu saat ini
 ```powershell
@@ -190,9 +190,9 @@ PS C:\> Write-Host "Secret Value is:" $secret.SecretValueText
 Secret Value is: P@ssw0rd
 ```
 
-Perintah ini mendapatkan versi rahasia saat ini yang bernama ITSecret, lalu menampilkan nilai teks biasa dari rahasia tersebut.
+Perintah ini mendapatkan versi rahasia saat ini yang bernama ITSecret, lalu menampilkan nilai teks biasa rahasia tersebut.
 
-### Contoh 6: Dapatkan semua rahasia yang telah dihapus tapi tidak di purged untuk vault kunci ini.
+### Contoh 6: Dapatkan semua rahasia yang telah dihapus tetapi tidak dibersihkan untuk kubah kunci ini.
 ```powershell
 PS C:\> Get-AzureKeyVaultSecret -VaultName 'Contoso' -InRemovedState
 
@@ -223,7 +223,7 @@ Content Type         :
 Tags                 :
 ```
 
-Perintah ini mendapatkan semua rahasia yang telah dihapus sebelumnya, tapi tidak di pembersihan, di kunci vault bernama Contoso.
+Perintah ini mendapatkan semua rahasia yang telah dihapus sebelumnya, tetapi tidak dibersihkan, di kubah kunci bernama Contoso.
 
 ### Contoh 7: Gets the secret ITSecret that has been deleted but not purged for this key vault.
 ```powershell
@@ -244,13 +244,13 @@ Content Type         :
 Tags                 :
 ```
 
-Perintah ini mendapatkan 'rahasia1' rahasia yang telah dihapus sebelumnya, tetapi tidak di pembersihan, di key vault bernama Contoso.
-Perintah ini akan mengembalikan metadata seperti tanggal penghapusan, dan tanggal pembersihan terjadwal dari rahasia yang dihapus ini.
+Perintah ini mendapatkan rahasia 'rahasia1' yang telah dihapus sebelumnya, tetapi tidak dibersihkan, di kubah kunci bernama Contoso.
+Perintah ini akan mengembalikan metadata seperti tanggal penghapusan, dan tanggal pembersihan terjadwal rahasia yang dihapus ini.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -265,10 +265,10 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeVersions
-Mengindikasikan bahwa cmdlet ini mendapatkan semua versi rahasia.
+Menunjukkan bahwa cmdlet ini mendapatkan semua versi rahasia.
 Versi rahasia saat ini adalah versi pertama dalam daftar.
-Jika Anda menentukan parameter ini, Anda juga harus menentukan *parameter* *Nama dan VaultName.*
-Jika Anda tidak menentukan parameter *IncludeVersions,* cmdlet ini mendapatkan versi rahasia terbaru dengan Nama yang *ditentukan.*
+Jika menentukan parameter ini, Anda juga harus menentukan parameter *Name* dan *VaultName* .
+Jika Anda tidak menentukan parameter *IncludeVersions* , cmdlet ini akan mendapatkan versi rahasia saat ini dengan *Nama* yang ditentukan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -298,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### -InRemovedState
-Menentukan apakah akan memperlihatkan rahasia yang sebelumnya dihapus dalam output
+Menentukan apakah akan menampilkan rahasia yang dihapus sebelumnya dalam output
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -313,7 +313,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama rahasia untuk mendapatkannya.
+Menentukan nama rahasia yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -340,7 +340,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-KeyVault Resource Id.
+Id Sumber Daya KeyVault.
 
 ```yaml
 Type: System.String
@@ -355,8 +355,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kunci vault yang menjadi miliknya.
-Cmdlet ini menyusun nama domain (FQDN) yang sepenuhnya memenuhi syarat dari kunci vault berdasarkan nama yang ditentukan parameter ini dan lingkungan Anda saat ini.
+Menentukan nama kubah kunci tempat rahasia berada.
+Cmdlet ini menyusun nama domain yang sepenuhnya memenuhi syarat (FQDN) dari kubah kunci berdasarkan nama yang ditentukan parameter ini dan lingkungan Anda saat ini.
 
 ```yaml
 Type: System.String
@@ -372,7 +372,7 @@ Accept wildcard characters: False
 
 ### -Versi
 Menentukan versi rahasia.
-Cmdlet ini menyusun FQDN dari rahasia berdasarkan nama key vault, lingkungan yang Anda pilih saat ini, nama rahasia, dan versi rahasia.
+Cmdlet ini menyusun FQDN rahasia berdasarkan nama kubah kunci, lingkungan yang dipilih saat ini, nama rahasia, dan versi rahasia.
 
 ```yaml
 Type: System.String
@@ -387,7 +387,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -410,9 +410,9 @@ Parameter: InputObject (ByValue)
 
 ## RELATED LINKS
 
-[Remove-AzureKeyVaultSecret](./Remove-AzureKeyVaultSecret.md)
+[Hapus-AzureKeyVaultSecret](./Remove-AzureKeyVaultSecret.md)
 
-[Undo-AzureKeyVaultSecretRemoval](./Undo-AzureKeyVaultSecretRemoval.md)
+[Batalkan-AzureKeyVaultSecretRemoval](./Undo-AzureKeyVaultSecretRemoval.md)
 
 [Set-AzureKeyVaultSecret](./Set-AzureKeyVaultSecret.md)
 

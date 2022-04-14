@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Register-AzureRMAutomationScheduledRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Register-AzureRMAutomationScheduledRunbook.md
 ms.openlocfilehash: deb6611fedbb1f88b9668b4750e096056ea8b1b7
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425922"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141969441"
 ---
 # Register-AzureRmAutomationScheduledRunbook
 
 ## SYNOPSIS
-Mengaitkan buku runbook ke jadwal.
+Mengaitkan runbook ke jadwal.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -37,16 +37,16 @@ Register-AzureRmAutomationScheduledRunbook -RunbookName <String> -ScheduleName <
 
 ## DESCRIPTION
 Cmdlet **Register-AzureRmAutomationScheduledRunbook** mengaitkan runbook Azure Automation ke jadwal.
-Runbook dimulai berdasarkan jadwal yang Anda tentukan menggunakan parameter *ScheduleName.*
+Runbook dimulai berdasarkan jadwal yang Anda tentukan menggunakan parameter *ScheduleName* .
 
 ## EXAMPLES
 
-### Contoh 1: Kaitkan runbook dengan jadwal
+### Contoh 1: Mengaitkan runbook dengan jadwal
 ```
 PS C:\>Register-AzureRmAutomationScheduledRunbook -AutomationAccountName "Contoso17" -Name "Runbk01" -ScheduleName "Sched01" -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini menghubungkan runbook yang bernama Runbk01 dengan jadwal bernama Sched01 dalam akun Otomatisasi Azure yang bernama Contoso17.
+Perintah ini mengaitkan runbook bernama Runbk01 dengan jadwal bernama Sched01 di akun Azure Automation bernama Contoso17.
 
 ## PARAMETERS
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -80,11 +80,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Parameter
+### -Parameters
 Menentukan tabel hash pasangan kunci/nilai.
-Kunci tersebut adalah nama parameter runbook.
-Nilai tersebut adalah nilai parameter runbook.
-Saat runbook mulai merespons jadwal terkait, parameter ini akan diberikan ke runbook.
+Kuncinya adalah nama parameter runbook.
+Nilainya adalah nilai parameter runbook.
+Ketika runbook dimulai sebagai respons terhadap jadwal terkait, parameter ini dikirimkan ke runbook.
 
 ```yaml
 Type: System.Collections.IDictionary
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunbookName
-Menentukan nama runbook yang mengaitkan cmdlet ini dengan jadwal.
+Menentukan nama runbook yang dikaitkan cmdlet ini dengan jadwal.
 
 ```yaml
 Type: System.String
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleName
-Menentukan nama jadwal mengaitkan cmdlet ini dengan runbook.
+Menentukan nama jadwal cmdlet ini mengaitkan runbook.
 
 ```yaml
 Type: System.String
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -175,6 +175,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmAutomationScheduledRunbook](./Get-AzureRMAutomationScheduledRunbook.md)
 
-[Unregister-AzureRmAutomationScheduledRunbook](./Unregister-AzureRMAutomationScheduledRunbook.md)
+[Batalkan pendaftaran-AzureRmAutomationScheduledRunbook](./Unregister-AzureRMAutomationScheduledRunbook.md)
 
 

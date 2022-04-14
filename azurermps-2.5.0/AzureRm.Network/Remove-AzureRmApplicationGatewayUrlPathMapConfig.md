@@ -5,16 +5,16 @@ ms.assetid: E43C8D2A-A6B5-4259-94B9-353FBC15F5A8
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/remove-azurermapplicationgatewayurlpathmapconfig
 schema: 2.0.0
 ms.openlocfilehash: a0885534311dfef4498c9fc71be7f82d16b05277
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132429136"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141928242"
 ---
 # Remove-AzureRmApplicationGatewayUrlPathMapConfig
 
 ## SYNOPSIS
-Menghapus pemetaan jalur URL ke sebuah pool server backend.
+Menghapus pemetaan jalur URL ke kumpulan server backend.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -26,7 +26,7 @@ Remove-AzureRmApplicationGatewayUrlPathMapConfig -Name <String> -ApplicationGate
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmApplicationGatewayUrlPathMapConfig** menghapus pemetaan jalur URL ke pool server backend.
+Cmdlet **Remove-AzureRmApplicationGatewayUrlPathMapConfig** menghapus pemetaan jalur URL ke kumpulan server backend.
 
 ## EXAMPLES
 
@@ -38,7 +38,7 @@ Cmdlet **Remove-AzureRmApplicationGatewayUrlPathMapConfig** menghapus pemetaan j
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan gateway aplikasi di mana cmdlet ini menghapus konfigurasi peta jalur URL.
+Menentukan gateway aplikasi tempat cmdlet ini menghapus konfigurasi peta jalur URL.
 
 ```yaml
 Type: PSApplicationGateway
@@ -53,7 +53,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -83,12 +83,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSApplicationGateway
-Parameter 'ApplicationGateway' menerima nilai tipe 'PSApplicationGateway' dari saluran
+Parameter 'ApplicationGateway' menerima nilai tipe 'PSApplicationGateway' dari pipeline
 
 ## OUTPUTS
 

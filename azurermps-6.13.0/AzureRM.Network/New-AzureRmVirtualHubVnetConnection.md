@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmVirtualHubVnetConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmVirtualHubVnetConnection.md
 ms.openlocfilehash: 6805d6671d0335599dc95f206ddb8482867734fc
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140860481"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142138192"
 ---
 # New-AzureRmVirtualHubVnetConnection
 
 ## SYNOPSIS
-Cmdlet New-AzureRmVirtualHubVnetConnection membuat sumber daya HubVirtualNetworkConnection yang menghubungkan Jaringan Virtual ke Azure Virtual Hub.
+Cmdlet New-AzureRmVirtualHubVnetConnection membuat sumber daya HubVirtualNetworkConnection yang mengintip Virtual Network ke Azure Virtual Hub.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -63,7 +63,7 @@ New-AzureRmVirtualHubVnetConnection -ParentResourceId <String> -Name <String> -R
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzureRmVirtualHubVnetConnection membuat sumber daya HubVirtualNetworkConnection yang menghubungkan Jaringan Virtual ke Azure Virtual Hub.
+Cmdlet New-AzureRmVirtualHubVnetConnection membuat sumber daya HubVirtualNetworkConnection yang mengintip Virtual Network ke Azure Virtual Hub.
 
 ## EXAMPLES
 
@@ -84,12 +84,12 @@ RemoteVirtualNetwork : /subscriptions/{subscriptionId}/resourceGroups/testRG/pro
 ProvisioningState    : Succeeded
 ```
 
-Langkah di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub di AS Tengah dalam grup sumber daya tersebut di Azure. Koneksi Jaringan Virtual akan dibuat setelahnya, yang akan peer Jaringan Virtual ke Virtual Hub.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual di AS Tengah dalam grup sumber daya tersebut di Azure. Koneksi Virtual Network akan dibuat setelahnya yang akan mengintip Virtual Network ke Hub Virtual.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemoteVirtualNetwork
-Jaringan virtual jarak jauh yang tersambung dengan koneksi jaringan virtual hub ini.
+Jaringan maya jauh tempat koneksi jaringan maya hub ini tersambung.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualNetwork
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemoteVirtualNetworkId
-Jaringan virtual jarak jauh yang tersambung dengan koneksi jaringan virtual hub ini.
+Jaringan maya jauh tempat koneksi jaringan maya hub ini tersambung.
 
 ```yaml
 Type: System.String
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

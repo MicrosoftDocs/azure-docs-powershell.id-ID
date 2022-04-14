@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/TrafficManager/Commands.TrafficManager2/help/Add-AzureRmTrafficManagerEndpointConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/TrafficManager/Commands.TrafficManager2/help/Add-AzureRmTrafficManagerEndpointConfig.md
 ms.openlocfilehash: 3c77ca67999ffa9cecbe35de4d4533f5d163f17f
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423252"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141923417"
 ---
 # Add-AzureRmTrafficManagerEndpointConfig
 
 ## SYNOPSIS
-Menambahkan titik akhir ke objek Traffic Manager profil lokal.
+Menambahkan titik akhir ke objek profil Traffic Manager lokal.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -33,12 +33,12 @@ Add-AzureRmTrafficManagerEndpointConfig -EndpointName <String> -TrafficManagerPr
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureRmTrafficManagerEndpointConfig** menambahkan titik akhir ke objek Azure Traffic Manager profil lokal.
-Anda dapat memperoleh profil menggunakan cmdlet New-AzureRmTrafficManagerProfile atau Get-AzureRmTrafficManagerProfile baru.
+Cmdlet **Add-AzureRmTrafficManagerEndpointConfig** menambahkan titik akhir ke objek profil Azure Traffic Manager lokal.
+Anda bisa mendapatkan profil dengan menggunakan cmdlet New-AzureRmTrafficManagerProfile atau Get-AzureRmTrafficManagerProfile.
 
 Cmdlet ini beroperasi pada objek profil lokal.
-Lakukan perubahan ke profil untuk Traffic Manager dengan cmdlet Set-AzureRmTrafficManagerProfile cmdlet.
-Untuk membuat titik akhir dan melakukan perubahan dalam satu operasi, gunakan cmdlet New-AzureRmTrafficManagerEndpoint cmdlet.
+Lakukan perubahan anda ke profil untuk Traffic Manager dengan menggunakan cmdlet Set-AzureRmTrafficManagerProfile.
+Untuk membuat titik akhir dan melakukan perubahan dalam satu operasi, gunakan cmdlet New-AzureRmTrafficManagerEndpoint.
 
 ## EXAMPLES
 
@@ -49,11 +49,11 @@ PS C:\> Add-AzureRmTrafficManagerEndpointConfig -EndpointName "contoso" -Endpoin
 PS C:\> Set-AzureRmTrafficManagerProfile -TrafficManagerProfile $TrafficManagerProfile
 ```
 
-Perintah pertama mendapatkan profil Azure Traffic Manager dengan menggunakan cmdlet **Get-AzureRmTrafficManagerProfile.**
-Perintah menyimpan profil lokal di $TrafficManagerProfile variabel.
+Perintah pertama mendapatkan profil Azure Traffic Manager dengan menggunakan cmdlet **Get-AzureRmTrafficManagerProfile**.
+Perintah menyimpan profil lokal dalam variabel $TrafficManagerProfile.
 
-Perintah kedua menambahkan titik akhir yang bernama contoso ke profil yang disimpan di $TrafficManagerProfile.
-Perintah tersebut menyertakan data konfigurasi untuk titik akhir.
+Perintah kedua menambahkan titik akhir bernama contoso ke profil yang disimpan di $TrafficManagerProfile.
+Perintah ini menyertakan data konfigurasi untuk titik akhir.
 Perintah ini hanya mengubah objek lokal.
 
 Perintah terakhir memperbarui profil Traffic Manager di Azure agar sesuai dengan nilai lokal di $TrafficManagerProfile.
@@ -61,7 +61,7 @@ Perintah terakhir memperbarui profil Traffic Manager di Azure agar sesuai dengan
 ## PARAMETERS
 
 ### -CustomHeader
-Daftar nama header dan pasangan nilai kustom untuk permintaan header kustom.
+Daftar nama header kustom dan pasangan nilai untuk permintaan probe.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerCustomHeader]
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -91,12 +91,12 @@ Accept wildcard characters: False
 ```
 
 ### -EndpointLocation
-Menentukan lokasi titik akhir yang akan digunakan dalam metode Perutean lalu lintas kinerja.
-Parameter ini hanya berlaku untuk titik akhir tipe ExternalEndpoints atau NestedEndpoints.
-Anda harus menentukan parameter ini ketika metode Perutean lalu lintas kinerja digunakan.
+Menentukan lokasi titik akhir untuk digunakan dalam metode Perutean lalu lintas kinerja.
+Parameter ini hanya berlaku untuk titik akhir dari tipe ExternalEndpoints atau NestedEndpoints.
+Anda harus menentukan parameter ini saat metode Perutean lalu lintas kinerja digunakan.
 
 Tentukan nama kawasan Azure.
-Untuk daftar lengkap kawasan Azure, lihat Azure Regions https://azure.microsoft.com/regions/ ( https://azure.microsoft.com/regions/) .
+Untuk daftar lengkap kawasan Azure, lihat Kawasanhttps://azure.microsoft.com/regions/ Azure (https://azure.microsoft.com/regions/).
 
 ```yaml
 Type: System.String
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndpointName
-Menentukan nama titik akhir Traffic Manager yang cmdlet tambahkan.
+Menentukan nama titik akhir Traffic Manager yang ditambahkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -127,12 +127,12 @@ Accept wildcard characters: False
 
 ### -EndpointStatus
 Menentukan status titik akhir.
-Nilai valid adalah: 
+Nilai yang valid adalah: 
 
 - Diaktifkan 
-- Dinonaktifkan 
+- Tamu penyandang cacat 
 
-Jika status Diaktifkan, titik akhir disederhkan untuk kesehatan titik akhir dan disertakan dalam metode perutean lalu lintas.
+Jika status Diaktifkan, titik akhir diprobed untuk kesehatan titik akhir dan disertakan dalam metode perutean lalu lintas.
 
 ```yaml
 Type: System.String
@@ -147,8 +147,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -GeoMapping
-Daftar kawasan yang dipetakan ke titik akhir ini saat menggunakan metode perutean lalu lintas 'Geografis'. Bacalah Traffic Manager ini untuk daftar [lengkap nilai yang diterima.](https://docs.microsoft.com/en-us/azure/traffic-manager/traffic-manager-geographic-regions)
+### -Geomapping
+Daftar kawasan yang dipetakan ke titik akhir ini ketika menggunakan metode perutean lalu lintas 'Geografis'. Silakan konsultasikan dokumentasi Traffic Manager untuk [daftar lengkap nilai yang diterima](https://docs.microsoft.com/en-us/azure/traffic-manager/traffic-manager-geographic-regions).
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinChildEndpoints
-Jumlah minimum titik akhir yang harus tersedia di profil anak agar Titik Akhir Bertumpuk di profil induk agar dianggap tersedia.
+Jumlah minimum titik akhir yang harus tersedia di profil anak agar Titik Akhir Bertumpuk di profil induk dapat dianggap tersedia.
 Hanya berlaku untuk titik akhir tipe 'NestedEndpoints'.
 
 ```yaml
@@ -181,11 +181,11 @@ Accept wildcard characters: False
 ### -Prioritas
 Menentukan prioritas yang Traffic Manager tetapkan ke titik akhir.
 Parameter ini hanya digunakan jika profil Traffic Manager dikonfigurasi dengan metode perutean lalu lintas Prioritas.
-Nilai valid adalah bilangan bulat dari 1 sampai 1000.
-Nilai yang lebih rendah menunjukkan prioritas yang lebih tinggi.
+Nilai yang valid adalah bilangan bulat dari 1 sampai 1000.
+Nilai yang lebih rendah mewakili prioritas yang lebih tinggi.
 
-Jika menentukan prioritas, Anda harus menentukan prioritas di semua titik akhir dalam profil, dan tidak ada dua titik akhir yang dapat berbagi nilai prioritas yang sama.
-Jika Anda tidak menentukan prioritas, Traffic Manager menetapkan nilai prioritas default ke titik akhir, dimulai dengan satu (1), dalam urutan profil akan mencantumkan titik akhir.
+Jika Anda menentukan prioritas, Anda harus menentukan prioritas pada semua titik akhir di profil, dan tidak ada dua titik akhir yang bisa berbagi nilai prioritas yang sama.
+Jika Anda tidak menentukan prioritas, Traffic Manager menetapkan nilai prioritas default ke titik akhir, dimulai dengan satu (1), dalam urutan profil mencantumkan titik akhir.
 
 ```yaml
 Type: System.Nullable`1[System.UInt32]
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetMapping
-Daftar rentang alamat atau subnet yang dipetakan ke titik akhir ini saat menggunakan metode perutean lalu lintas ™.
+Daftar rentang alamat atau subnet yang dipetakan ke titik akhir ini ketika menggunakan metode perutean lalu lintas â€ ̃Subnetâ€™.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerIpAddressRange]
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 
 ### -Target
 Menentukan nama DNS titik akhir yang sepenuhnya memenuhi syarat.
-Traffic Manager mengembalikan nilai ini dalam respons DNS ketika mengarahkan lalu lintas ke titik akhir ini.
+Traffic Manager mengembalikan nilai ini dalam respons DNS saat mengarahkan lalu lintas ke titik akhir ini.
 Tentukan parameter ini hanya untuk tipe titik akhir ExternalEndpoints.
 Untuk tipe titik akhir lainnya, tentukan parameter *TargetResourceId* sebagai gantinya.
 
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 ### -TrafficManagerProfile
 Menentukan objek **TrafficManagerProfile** lokal.
 Cmdlet ini mengubah objek lokal ini.
-Untuk mendapatkan objek **TrafficManagerProfile,** gunakan cmdlet Get-AzureRmTrafficManagerProfile baru.
+Untuk mendapatkan objek **TrafficManagerProfile** , gunakan cmdlet Get-AzureRmTrafficManagerProfile.
 
 ```yaml
 Type: Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerProfile
@@ -267,8 +267,8 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Menentukan tipe titik akhir yang tambahkan cmdlet ini ke Azure Traffic Manager profil.
-Nilai valid adalah: 
+Menentukan tipe titik akhir yang ditambahkan cmdlet ini ke profil Azure Traffic Manager.
+Nilai yang valid adalah: 
 
 - AzureEndpoints
 - ExternalEndpoints
@@ -287,11 +287,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Bobot
+### -Berat
 Menentukan bobot yang Traffic Manager tetapkan ke titik akhir.
-Nilai valid adalah bilangan bulat dari 1 sampai 1000.
+Nilai yang valid adalah bilangan bulat dari 1 sampai 1000.
 Nilai defaultnya adalah satu (1).
-Parameter ini hanya digunakan jika profil Traffic Manager dikonfigurasi dengan metode perutean lalu lintas tertimbang.
+Parameter ini hanya digunakan jika profil Traffic Manager dikonfigurasi dengan metode perutean lalu lintas Tertimbang.
 
 ```yaml
 Type: System.Nullable`1[System.UInt32]
@@ -306,17 +306,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.Network.TrafficManagerProfile
-Cmdlet ini menerima objek **TrafficManagerProfile** ke cmdlet ini.
+Cmdlet ini menerima objek **TrafficManagerProfile** untuk cmdlet ini.
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Network.TrafficManagerProfile
-Cmdlet ini mengembalikan objek **TrafficManagerProfile yang** diubah.
+Cmdlet ini mengembalikan objek **TrafficManagerProfile** yang dimodifikasi.
 
 ## CATATAN
 
@@ -326,7 +326,7 @@ Cmdlet ini mengembalikan objek **TrafficManagerProfile yang** diubah.
 
 [New-AzureRmTrafficManagerEndpoint](./New-AzureRmTrafficManagerEndpoint.md)
 
-[Remove-AzureRmTrafficManagerEndpointConfig](./Remove-AzureRmTrafficManagerEndpointConfig.md)
+[Hapus-AzureRmTrafficManagerEndpointConfig](./Remove-AzureRmTrafficManagerEndpointConfig.md)
 
 [Set-AzureRmTrafficManagerProfile](./Set-AzureRmTrafficManagerProfile.md)
 
