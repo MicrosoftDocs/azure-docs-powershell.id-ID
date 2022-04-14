@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzManagementGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzManagementGroup.md
-ms.openlocfilehash: 95a56b3d29d02c8c495ff349a110b80cdb9555a9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1a896bf1c1dd0bc97972f5bdef0b30575023eed4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140391438"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142028783"
 ---
 # Get-AzManagementGroup
 
 ## SYNOPSIS
-Gets Management Group(s)
+Dapatkan Grup Manajemen
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azmanagementgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Gets Management Group(s)
 Get-AzManagementGroup [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GetOperation
+### Getoperation
 ```
 Get-AzManagementGroup [-GroupName] <String> [-DefaultProfile <IAzureContextContainer>] [-Expand] [-Recurse]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -35,7 +38,7 @@ Cmdlet Get-AzManagementGroup Mendapatkan semua atau Grup Manajemen tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua Grup Manajemen
+### Contoh 1: Dapatkan semua Grup Manajemen
 ```
 PS C:\> Get-AzManagementGroup
 
@@ -94,7 +97,7 @@ DisplayName : TestGroup1DisplayName
 Children    :
 ```
 
-Dengan bendera `Expand` , seseorang dapat menavigasi larik dan `Children` mendapatkan detail untuk setiap anak. Misalnya, akan `Children[0]` memberi detail untuk grup dengan nama tampilan `TestGroup1DisplayName`.
+`Expand` Dengan bendera, seseorang dapat menavigasi larik `Children` dan mendapatkan detail untuk setiap anak. Misalnya, `Children[0]` akan memberikan detail untuk grup dengan nama `TestGroup1DisplayName`tampilan .
 
 ### Contoh 4: Dapatkan Grup Manajemen tertentu dan semua tingkat hierarki
 ```
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -Perluas
-Perluas output ke daftar anak-anak grup manajemen
+Memperluas output untuk mencantumkan anak-anak grup manajemen
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,8 +180,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Recurse
-Mencantumkan anak-anak grup manajemen secara berulang
+### -Berulang
+Mencantumkan anak-anak grup manajemen secara rekuuran
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -224,11 +227,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

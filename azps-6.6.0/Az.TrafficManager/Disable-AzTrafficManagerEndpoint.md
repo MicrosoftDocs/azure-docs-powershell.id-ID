@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Disable-AzTrafficManagerEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Disable-AzTrafficManagerEndpoint.md
 ms.openlocfilehash: 409fd4b109442ace6b849e68c59beafb3316dd3e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140457651"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141857498"
 ---
 # Disable-AzTrafficManagerEndpoint
 
 ## SYNOPSIS
-Menonaktifkan titik akhir di Traffic Manager profil.
+Menonaktifkan titik akhir di profil Traffic Manager.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.trafficmanager/disable-aztrafficmanagerendpoint) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.trafficmanager/disable-aztrafficmanagerendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,44 +30,44 @@ Disable-AzTrafficManagerEndpoint -Name <String> -Type <String> -ProfileName <Str
  [<CommonParameters>]
 ```
 
-### Object
+### Objek
 ```
 Disable-AzTrafficManagerEndpoint -TrafficManagerEndpoint <TrafficManagerEndpoint> [-Force]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Disable-AzTrafficManagerEndpoint** menonaktifkan titik akhir di profil Azure Traffic Manager.
+Cmdlet **Disable-AzTrafficManagerEndpoint** menonaktifkan titik akhir dalam profil Azure Traffic Manager.
 
-Anda bisa menggunakan operator pipeline untuk mengirim objek **TrafficManagerEndpoint** ke cmdlet ini, atau Anda bisa mengirim objek **TrafficManagerEndpoint** menggunakan parameter *TrafficManagerEndpoint* .
+Anda dapat menggunakan operator pipeline untuk mengirimkan objek **TrafficManagerEndpoint** ke cmdlet ini, atau melewati objek **TrafficManagerEndpoint** menggunakan parameter *TrafficManagerEndpoint* .
 
-Alternatifnya, Anda bisa menentukan nama titik akhir dan mengetik dengan menggunakan parameter  Nama dan *Tipe*, bersama dengan parameter *ProfileName dan ResourceGroupName*.
+Atau, Anda dapat menentukan nama titik akhir dan mengetik menggunakan parameter *Nama* dan *Tipe* , bersama-sama dengan parameter *ProfileName* dan *ResourceGroupName* .
 
 ## EXAMPLES
 
-### Contoh 1: Menonaktifkan titik akhir berdasarkan nama
+### Contoh 1: Menonaktifkan titik akhir menurut nama
 ```
 PS C:\> Disable-AzTrafficManagerEndpoint -Name "contoso" -ProfileName "ContosoProfile" -ResourceGroupName ResourceGroup11 -Type ExternalEndpoints
 ```
 
-Perintah ini menonaktifkan titik akhir eksternal yang bernama contoso dalam profil yang bernama ContosoProfile dalam grup sumber daya ResourceGroup11.
-Perintah akan meminta konfirmasi Anda.
+Perintah ini menonaktifkan titik akhir eksternal bernama contoso dalam profil bernama ContosoProfile dalam grup sumber daya ResourceGroup11.
+Perintah meminta konfirmasi kepada Anda.
 
-### Contoh 2: Menonaktifkan titik akhir dengan menggunakan pipeline
+### Contoh 2: Menonaktifkan titik akhir menggunakan pipeline
 ```
 PS C:\>Get-AzTrafficManagerEndpoint -Name "contoso" -Type ExternalEndpoints -ProfileName "ContosoProfile" -ResourceGroupName "ResourceGroup11" | Disable-AzTrafficManagerEndpoint -Force
 ```
 
-Perintah ini mendapatkan titik akhir eksternal yang bernama Contoso dari profil yang bernama ContosoProfile dalam ResourceGroup11.
-Perintah itu lalu melewati titik akhir itu ke cmdlet **Disable-AzTrafficManagerEndpoint** dengan menggunakan operator pipeline.
-Cmdlet tersebut menonaktifkan titik akhir tersebut.
+Perintah ini mendapatkan titik akhir eksternal bernama Contoso dari profil bernama ContosoProfile di ResourceGroup11.
+Perintah kemudian melewati titik akhir tersebut ke cmdlet **Disable-AzTrafficManagerEndpoint** menggunakan operator pipeline.
+Cmdlet itu menonaktifkan titik akhir itu.
 Perintah menentukan parameter *Paksa* .
-Oleh karena itu, kami tidak meminta konfirmasi Anda.
+Oleh karena itu, tindakan ini tidak meminta konfirmasi kepada Anda.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -81,8 +81,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProfileName
-Menentukan nama profil Traffic Manager cmdlet ini menonaktifkan titik akhir.
+Menentukan nama profil Traffic Manager tempat cmdlet ini menonaktifkan titik akhir.
 Untuk mendapatkan profil, gunakan cmdlet Get-AzTrafficManagerProfile.
 
 ```yaml
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya.
-Cmdlet ini menonaktifkan titik Traffic Manager titik akhir dalam grup yang ditentukan parameter ini.
+Cmdlet ini menonaktifkan titik akhir Traffic Manager dalam grup yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -144,8 +144,8 @@ Accept wildcard characters: False
 ```
 
 ### -TrafficManagerEndpoint
-Menentukan titik Traffic Manager titik akhir yang dinonaktifkan cmdlet ini.
-Untuk mendapatkan objek **TrafficManagerEndpoint** , gunakan cmdlet Get-AzTrafficManagerEndpoint cmdlet.
+Menentukan titik akhir Traffic Manager yang dinonaktifkan cmdlet ini.
+Untuk mendapatkan objek **TrafficManagerEndpoint** , gunakan cmdlet Get-AzTrafficManagerEndpoint.
 
 ```yaml
 Type: Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerEndpoint
@@ -160,8 +160,8 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Menentukan tipe titik akhir yang tambahkan cmdlet ini ke Traffic Manager profil.
-Nilai valid adalah: 
+Menentukan tipe titik akhir yang ditambahkan cmdlet ini ke profil Traffic Manager.
+Nilai yang valid adalah: 
 
 - AzureEndpoints
 - ExternalEndpoints
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

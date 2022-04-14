@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzResourceGroupDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzResourceGroupDeployment.md
-ms.openlocfilehash: c5a8d98cae34c16e5cc04d008a64dae20e74ff61
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f4fad25dfbec11727775a05896e47894a2cb737c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139998830"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142028496"
 ---
 # Remove-AzResourceGroupDeployment
 
 ## SYNOPSIS
-Menghapus penyebaran grup sumber daya dan setiap operasi terkait.
+Menghapus penyebaran grup sumber daya dan operasi apa pun yang terkait.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-azresourcegroupdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Remove-AzResourceGroupDeployment -Id <String> [-Pre] [-DefaultProfile <IAzureCon
 
 ## DESCRIPTION
 
-Cmdlet **Remove-AzResourceGroupDeployment** menghapus penyebaran grup sumber daya Azure dan setiap operasi terkait.
+Cmdlet **Remove-AzResourceGroupDeployment** menghapus penyebaran grup sumber daya Azure dan semua operasi terkait.
 
 ## EXAMPLES
 
@@ -46,8 +49,8 @@ PS C:\>Remove-AzResourceGroupDeployment -ResourceId /subscriptions/{subId}/resou
 True
 ```
 
-Perintah ini menghapus penyebaran grup sumber daya dengan Id sumber daya penyebaran yang sepenuhnya memenuhi syarat.
-Penghapusan yang berhasil mengembalikan true.
+Perintah ini menghapus penyebaran grup sumber daya dengan Id sumber daya yang sepenuhnya memenuhi syarat dari penyebaran.
+Penghapusan berhasil mengembalikan true.
 
 ### Contoh 2: Menghapus penyebaran grup sumber daya dengan ResourceGroupName dan ResourceName
 
@@ -58,12 +61,12 @@ True
 ```
 
 Perintah ini menghapus penyebaran grup sumber daya dengan ResourceGroupName dan ResourceName yang disediakan.
-Penghapusan yang berhasil mengembalikan true.
+Penghapusan berhasil mengembalikan true.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Cmdlet ini mempertimbangkan versi API prari release ketika cmdlet menentukan versi mana yang akan digunakan secara otomatis.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

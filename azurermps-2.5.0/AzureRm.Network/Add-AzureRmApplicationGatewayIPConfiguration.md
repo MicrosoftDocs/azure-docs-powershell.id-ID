@@ -5,11 +5,11 @@ ms.assetid: 5358C08F-A1EB-457E-85B1-7F12396A873A
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/add-azurermapplicationgatewayipconfiguration
 schema: 2.0.0
 ms.openlocfilehash: 17938a8fe4ee5a279554758cc36cc7a234a359ce
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428697"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141781685"
 ---
 # Add-AzureRmApplicationGatewayIPConfiguration
 
@@ -48,13 +48,13 @@ PS C:\> $AppGw = Add-AzureRmApplicationGatewayIPConfiguration -ApplicationGatewa
 
 Perintah pertama membuat jaringan virtual.
 Perintah kedua membuat subnet menggunakan jaringan virtual yang dibuat sebelumnya.
-Perintah ketiga mendapatkan gateway aplikasi dan menyimpannya di $AppGw baru.
+Perintah ketiga mendapatkan gateway aplikasi dan menyimpannya dalam variabel $AppGw.
 Perintah fouth menambahkan konfigurasi IP ke gateway aplikasi yang disimpan di $AppGw.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan gateway aplikasi tempat cmdlet menambahkan konfigurasi IP.
+Menentukan gateway aplikasi tempat cmdlet ini menambahkan konfigurasi IP.
 
 ```yaml
 Type: PSApplicationGateway
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBGremlinCompositePath.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBGremlinCompositePath.md
-ms.openlocfilehash: 617f2acc915040f664ffb01ccdefd521facf7b44
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: fc52805b1389d90a27e73ea63929770f45f665bf
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140386770"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141853430"
 ---
 # New-AzCosmosDBGremlinCompositePath
 
 ## SYNOPSIS
-Membuat objek baru tipe PSCompositePath. Data ini dapat disampaikan sebagai nilai parameter untuk Set-AzCosmosDBGremlinGraph.
+Membuat objek baru dari tipe PSCompositePath. Ini dapat dilewatkan sebagai nilai parameter untuk Set-AzCosmosDBGremlinGraph.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbgremlincompositepath) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzCosmosDBGremlinCompositePath [-Path <String>] [-Order <String>]
 ```
 
 ## DESCRIPTION
-Objek yang terkait dengan Kunci KompositPath dari API Grafit.
+Objek yang terkait dengan CompositePath Gremlin API.
 
 ## EXAMPLES
 
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 
 ### -Pesanan
 Mendapatkan atau mengatur susunan urutan untuk jalur komposit.
-Nilai yang mungkin termasuk: 'Naik', 'Turun'
+Nilai yang memungkinkan termasuk: 'Naik', 'Turun'
 
 ```yaml
 Type: System.String
@@ -71,9 +74,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Jalur penerapan perilaku pengindeksan.
-Jalur indeks biasanya dimulai dengan akar dan diakhiri dengan wildcard (/jalur/*)
+### -Jalur
+Jalur di mana perilaku pengindeksan diterapkan.
+Jalur indeks biasanya dimulai dengan root dan diakhiri dengan wildcard (/path/*)
 
 ```yaml
 Type: System.String
@@ -88,11 +91,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

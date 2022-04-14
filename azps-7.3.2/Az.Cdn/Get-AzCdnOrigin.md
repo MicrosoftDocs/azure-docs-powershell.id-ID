@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/get-azcdnori
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnOrigin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnOrigin.md
-ms.openlocfilehash: 06316c32deeb087e68c114bcd2c06507af965a42
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 876e41565a08e43abd93724170d37eafbb693557
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140550459"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141854960"
 ---
 # Get-AzCdnOrigin
 
 ## SYNOPSIS
-Mendapatkan server CDN origin.
+Mendapatkan server asal CDN.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cdn/get-azcdnorigin) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Get-AzCdnOrigin [-OriginName <String>] -CdnEndpoint <PSEndpoint> [-DefaultProfil
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCdnOrigin** mendapatkan server origin Azure Content Delivery Network (CDN) dan data konfigurasinya.
+**Cmdlet Get-AzCdnOrigin** mendapatkan server asal Azure Content Delivery Network (CDN) dan data konfigurasinya.
 
 ## EXAMPLES
 
@@ -72,7 +75,7 @@ ProvisioningState          : Succeeded
 ## PARAMETERS
 
 ### -CdnEndpoint
-Menentukan objek CDN titik akhir tempat asal berada.
+Menentukan objek titik akhir CDN tempat asalnya berada.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Cdn.Models.Endpoint.PSEndpoint
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndpointName
-Menentukan nama titik akhir tempat server origin berada.
+Menentukan nama titik akhir tempat server asal berada.
 
 ```yaml
 Type: System.String
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginName
-Menentukan nama server origin.
+Menentukan nama server asal.
 
 ```yaml
 Type: System.String
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProfileName
-Menentukan nama profil asal server.
+Menentukan nama profil tempat server asal berada.
 
 ```yaml
 Type: System.String
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya dari Azure CDN origin.
+Id sumber daya asal Azure CDN.
 
 ```yaml
 Type: System.String
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/Get-AzureRmRecoveryServicesBackupManagementServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/Get-AzureRmRecoveryServicesBackupManagementServer.md
 ms.openlocfilehash: c3419f020aca0853d94d8848e944e39fc8ed05a0
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422521"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141882280"
 ---
 # Get-AzureRmRecoveryServicesBackupManagementServer
 
 ## SYNOPSIS
-Mendapatkan server manajemen SCDPM dan Azure Backup.
+Mendapatkan SCDPM dan server manajemen Azure Backup.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,24 +28,24 @@ Get-AzureRmRecoveryServicesBackupManagementServer [[-Name] <String>] [-VaultId <
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmRecoveryServicesBackupManagementServer** mendapatkan daftar Server manajemen cadangan yang terdaftar di vault.
-Ada dua tipe server manajemen Pencadangan: Server manajemen Pencadangan Pusat Sistem (SCDPM) dan Azure Backup.
-Server manajemen cadangan diinstal secara terpisah untuk mengelola Backup orchestration.
-Mengatur konteks vault menggunakan cmdlet Set-AzureRmRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
+Cmdlet **Get-AzureRmRecoveryServicesBackupManagementServer** mendapatkan daftar server manajemen cadangan yang terdaftar dalam kubah.
+Ada dua tipe server manajemen cadangan: System Center Data Protection Manager (SCDPM) dan server manajemen Azure Backup.
+Server manajemen cadangan diinstal secara terpisah untuk mengelola orkestrasi Cadangan.
+Mengatur konteks kubah menggunakan cmdlet Set-AzureRmRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Get all Backup management servers
+### Contoh 1: Dapatkan semua server manajemen pencadangan
 ```
 PS C:\>Get-AzureRmRecoveryServicesBackupManagementServer
 ```
 
-Perintah ini akan mendaftarkan semua server manajemen Pencadangan bersama vault.
+Perintah ini membuat semua server manajemen cadangan terdaftar dengan kubah.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama Server manajemen cadangan untuk mendapatkannya.
+Menentukan nama server manajemen Cadangan untuk didapatkan.
 
 ```yaml
 Type: System.String
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Get-AzPrivateDnsRecordSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Get-AzPrivateDnsRecordSet.md
-ms.openlocfilehash: a7d471398355c3e08c0086489df24749a6f8df98
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c2ee8aee4c17f9cd4c3162be1b40b8a90318d614
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139999229"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142029989"
 ---
 # Get-AzPrivateDnsRecordSet
 
 ## SYNOPSIS
-Mendapatkan kumpulan catatan dari zona DNS Privat.
+Mendapatkan kumpulan catatan dari zona DNS Pribadi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.privatedns/get-azprivatednsrecordset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Get-AzPrivateDnsRecordSet -ResourceGroupName <String> -ZoneName <String> -Name <
  -RecordType <RecordType> [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### Object
+### Objek
 ```
 Get-AzPrivateDnsRecordSet -Zone <PSPrivateDnsZone> -Name <String> -RecordType <RecordType>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -56,11 +59,11 @@ Get-AzPrivateDnsRecordSet -ParentResourceId <String> [-RecordType <RecordType>]
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzPrivateDnsRecordSet mendapatkan kumpulan catatan Private Domain Name System (DNS) dengan nama dan tipe yang ditentukan, dalam zona privat yang ditentukan. Jika Anda tidak menentukan parameter Name atau RecordType, cmdlet ini akan mengembalikan semua kumpulan data tipe yang ditentukan dalam zona privat. Jika Anda menentukan parameter RecordType tetapi bukan parameter Name, cmdlet ini akan mengembalikan semua kumpulan data tipe catatan yang ditentukan. Anda dapat menggunakan operator pipeline untuk menyampaikan objek PSPrivateDnsZone ke cmdlet ini, atau Anda dapat melewati objek PSPrivateDnsZone sebagai parameter Zona, atau anda juga dapat menentukan zona dan grup sumber daya berdasarkan namanya. Anda juga bisa menentukan zona privat menggunakan Id Sumber Daya zona privat.
+Cmdlet Get-AzPrivateDnsRecordSet mendapatkan kumpulan catatan Private Domain Name System (DNS) dengan nama dan tipe yang ditentukan, dalam zona privat yang ditentukan. Jika Anda tidak menentukan parameter Name atau RecordType, cmdlet ini mengembalikan semua kumpulan rekaman dari tipe yang ditentukan dalam zona privat. Jika Anda menentukan parameter RecordType tapi bukan parameter Nama, cmdlet ini mengembalikan semua kumpulan rekaman dari tipe catatan yang ditentukan. Anda bisa menggunakan operator pipeline untuk mengirimkan objek PSPrivateDnsZone ke cmdlet ini, atau Anda bisa melewati objek PSPrivateDnsZone sebagai parameter Zona, atau sebagai alternatif Anda bisa menentukan zona dan grup sumber daya menurut nama. Anda juga dapat menentukan zona privat menggunakan Id Sumber Daya zona privat.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan kumpulan rekaman dengan nama dan tipe yang ditentukan
+### Contoh 1: Mendapatkan kumpulan catatan dengan nama dan tipe yang ditentukan
 ```powershell
 PS C:\>$RecordSet = Get-AzPrivateDnsRecordSet -ResourceGroupName "MyResourceGroup" -ZoneName "myzone.com" -Name "www" -RecordType A
 
@@ -77,9 +80,9 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Perintah ini mendapatkan kumpulan catatan tipe catatan A bernama www dalam grup sumber daya dan zona privat yang ditentukan, lalu menyimpannya di $RecordSet terbatas. Karena parameter Nama dan RecordType ditentukan, hanya satu objek RecordSet yang dikembalikan.
+Perintah ini mendapatkan kumpulan catatan tipe catatan A bernama www dalam grup sumber daya dan zona pribadi tertentu, lalu menyimpannya dalam variabel $RecordSet. Karena parameter Name dan RecordType ditentukan, hanya satu objek RecordSet yang dikembalikan.
 
-### Contoh 2: Mendapatkan kumpulan rekaman dari tipe tertentu
+### Contoh 2: Mendapatkan kumpulan rekaman dari tipe yang ditentukan
 ```powershell
 PS C:\>$RecordSets = Get-AzPrivateDnsRecordSet -ResourceGroupName "MyResourceGroup" -ZoneName "myzone.com" -RecordType A
 
@@ -108,7 +111,7 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Perintah ini mendapatkan array dari semua kumpulan data tipe data A dalam zona privat bernama myzone.com dalam grup sumber daya yang bernama MyResourceGroup, lalu menyimpannya di $RecordSets sumber daya.
+Perintah ini mendapatkan array dari semua kumpulan catatan tipe catatan A di zona privat bernama myzone.com dalam grup sumber daya bernama MyResourceGroup, lalu menyimpannya dalam variabel $RecordSets.
 
 ### Contoh 3: Mendapatkan semua kumpulan rekaman dalam zona privat
 ```powershell
@@ -139,9 +142,9 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Perintah ini mendapatkan array semua kumpulan data di zona privat yang bernama myzone.com dalam grup sumber daya yang bernama MyResourceGroup, lalu menyimpannya dalam $RecordSets sumber daya.
+Perintah ini mendapatkan array dari semua kumpulan rekaman di zona privat bernama myzone.com dalam grup sumber daya bernama MyResourceGroup, lalu menyimpannya dalam variabel $RecordSets.
 
-### Contoh 4: Mendapatkan semua kumpulan data dalam zona privat, menggunakan objek PSPrivateDnsZone
+### Contoh 4: Dapatkan semua kumpulan rekaman dalam zona privat, menggunakan objek PSPrivateDnsZone
 ```powershell
 PS C:\> $Zone = Get-AzPrivateDnsZone -Name "myzone.com" -ResourceGroupName "MyResourceGroup"
 PS C:\> $RecordSets = Get-AzPrivateDnsRecordSet -Zone $Zone
@@ -171,7 +174,7 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Contoh ini sama dengan Contoh 3 di atas. Saat ini, zona privat ditentukan menggunakan objek zona privat.
+Contoh ini sama dengan Contoh 3 di atas. Kali ini, zona privat ditentukan menggunakan objek zona privat.
 
 ## PARAMETERS
 
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama catatan dalam kumpulan catatan ini (relatif terhadap nama zona dan tanpa titik akhir).
+Nama rekaman dalam kumpulan catatan ini (relatif terhadap nama zona dan tanpa titik penghentian).
 
 ```yaml
 Type: System.String
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentResourceId
-Private DNS Zone ResourceID.
+ID Sumber Daya Zona DNS Pribadi.
 
 ```yaml
 Type: System.String
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup sumber daya tempat zona tersebut berada.
+Grup sumber daya tempat zona berada.
 
 ```yaml
 Type: System.String
@@ -264,8 +267,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Zone
-Objek DnsZone mewakili zona untuk membuat kumpulan rekaman.
+### -Zona
+Objek DnsZone yang mewakili zona untuk membuat kumpulan catatan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.PrivateDns.Models.PSPrivateDnsZone
@@ -280,7 +283,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneName
-Zona untuk membuat kumpulan rekaman (tanpa titik berakhir).
+Zona tempat untuk membuat kumpulan rekaman (tanpa titik penghentian).
 
 ```yaml
 Type: System.String
@@ -295,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

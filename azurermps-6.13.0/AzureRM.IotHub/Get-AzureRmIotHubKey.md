@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.iothu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/IotHub/Commands.IotHub/help/Get-AzureRmIotHubKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/IotHub/Commands.IotHub/help/Get-AzureRmIotHubKey.md
-ms.openlocfilehash: 0e3ce6136a58ce85ee0dd86069c2cd945634ef7904a3999f09ae11572e00b0d1
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 33232e5e8f415309bec36f8918c272c251835f82
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140858951"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141823368"
 ---
 # Get-AzureRmIotHubKey
 
@@ -28,28 +28,28 @@ Get-AzureRmIotHubKey [-ResourceGroupName] <String> [-Name] <String> [[-KeyName] 
 
 ## DESCRIPTION
 Mendapatkan IotHub Key.
-Anda dapat mencantumkan semua Tombol atau memfilter daftar menurut Nama Kunci tertentu.
+Anda dapat mencantumkan semua Kunci atau memfilter daftar menurut Nama Kunci tertentu.
 
 ## EXAMPLES
 
-### Contoh 1 Dapatkan semua kunci
+### Contoh 1 Dapatkan semua Kunci
 ```
 PS C:\> Get-AzureRmIotHubKey -ResourceGroupName "myresourcegroup" -Name "myiothub"
 ```
 
 Mendapatkan semua Kunci untuk IotHub bernama "myiothub"
 
-### Contoh 2 Mendapatkan informasi untuk Kunci tertentu
+### Contoh 2 Dapatkan informasi untuk Kunci tertentu
 ```
 PS C:\> Get-AzureRmIotHubKey -ResourceGroupName "myresourcegroup" -Name "myiothub" -KeyName "iothubowner"
 ```
 
-Mendapatkan informasi untuk kunci yang bernama "iothubowner" untuk IotHub bernama "myiothub"
+Mendapatkan informasi untuk kunci bernama "iothubowner" untuk IotHub bernama "myiothub"
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.insig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Insights/Commands.Insights/help/New-AzureRmAutoscaleNotification.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Insights/Commands.Insights/help/New-AzureRmAutoscaleNotification.md
-ms.openlocfilehash: daefd2ad3728fc05a3e75c13a14da67e6bc12ab49045e00988db90ddd9d4fe4b
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: e550341d0bd5a5d2f4e26e4ac736fab9831b67c0
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418681"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141823367"
 ---
 # New-AzureRmAutoscaleNotification
 
@@ -38,19 +38,19 @@ Cmdlet **New-AzureRmAutoscaleNotification** membuat pemberitahuan email untuk Sk
 PS C:\>New-AzureRmAutoscaleNotification -CustomEmails "pattif@contoso.com, davidchew@contoso.net"
 ```
 
-Perintah ini akan membuat pemberitahuan email Skala Otomatis untuk dua alamat yang ditentukan.
+Perintah ini membuat pemberitahuan email Skala Otomatis untuk dua alamat tertentu.
 
-### Contoh 2: Buat pemberitahuan email Skala Otomatis untuk administrator langganan
+### Contoh 2: Membuat pemberitahuan email Skala Otomatis untuk administrator langganan
 ```
 PS C:\>New-AzureRmAutoscaleNotification -SendEmailToSubscriptionAdministrator
 ```
 
-Perintah ini akan membuat pemberitahuan email Skala Otomatis untuk administrator langganan.
+Perintah ini membuat pemberitahuan email Skala Otomatis untuk administrator langganan.
 
 ## PARAMETERS
 
 ### -CustomEmail
-Menentukan daftar alamat email yang dipisahkan tanda koma.
+Menentukan daftar alamat email yang dipisahkan koma.
 
 ```yaml
 Type: System.String[]
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -SendEmailToSubscriptionAdministrator
-Menunjukkan bahwa operasi ini mengirimkan pemberitahuan email ke administrator langganan.
+Menunjukkan bahwa operasi ini mengirim pemberitahuan email ke administrator langganan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -SendEmailToSubscriptionCoAdministrator
-Menunjukkan bahwa operasi ini mengirimkan pemberitahuan email ke administrator bersama langganan.
+Menunjukkan bahwa operasi ini mengirim pemberitahuan email ke rekan administrator langganan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Webhook
-Menentukan daftar web skala otomatis yang dipisahkan koma.
+Menentukan daftar webhook Skala Otomatis yang dipisahkan koma.
 
 ```yaml
 Type: Microsoft.Azure.Management.Monitor.Management.Models.WebhookNotification[]
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -143,6 +143,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmAutoscaleWebhook](./New-AzureRmAutoscaleWebhook.md)
+[Baru-AzureRmAutoscaleWebhook](./New-AzureRmAutoscaleWebhook.md)
 
 

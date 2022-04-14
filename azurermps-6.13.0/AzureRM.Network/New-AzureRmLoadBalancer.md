@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmLoadBalancer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmLoadBalancer.md
 ms.openlocfilehash: db7d531b83dabe3bb5fc9dc79d86c3153d1553a9
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419946"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141883273"
 ---
 # New-AzureRmLoadBalancer
 
 ## SYNOPSIS
-Membuat penyeimbang muat.
+Membuat penyeimbang beban.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -36,11 +36,11 @@ New-AzureRmLoadBalancer -ResourceGroupName <String> -Name <String> -Location <St
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmLoadBalancer** membuat penyeimbang muat Azure.
+Cmdlet **New-AzureRmLoadBalancer** membuat penyeimbang muatan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat penyeimbang muat
+### Contoh 1: Membuat load balancer
 ```
 PS C:\>$publicip = New-AzureRmPublicIpAddress -ResourceGroupName "MyResourceGroup" -Name "MyPublicIp" -Location "West US" -AllocationMethod "Dynamic"
 PS C:\> $frontend = New-AzureRmLoadBalancerFrontendIpConfig -Name "MyFrontEnd" -PublicIpAddress $publicip
@@ -53,15 +53,15 @@ PS C:\> $lb = New-AzureRmLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName 
 PS C:\> Get-AzureRmLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 ```
 
-Menggunakan penyeimbang muat mengharuskan Anda terlebih dahulu membuat beberapa objek, dan tujuh perintah pertama memperlihatkan cara membuat objek tersebut.
-Perintah kedelapan membuat penyeimbang muat bernama MyLoadBalancer dalam grup sumber daya yang bernama MyResourceGroup.
-Perintah sembilan dan terakhir mendapatkan penyeimbang muat baru untuk memastikan berhasil dibuat.
-Perhatikan bahwa contoh ini hanya memperlihatkan cara membuat penyeimbang muat. Anda juga harus mengonfigurasinya menggunakan cmdlet Add-AzureRmNetworkInterfaceIpConfig untuk menetapkan NICs ke komputer virtual yang berbeda.
+Menyebarkan load balancer mengharuskan Anda membuat beberapa objek terlebih dahulu, dan tujuh perintah pertama memperlihatkan cara membuat objek tersebut.
+Perintah kedelapan membuat load balancer bernama MyLoadBalancer dalam grup sumber daya bernama MyResourceGroup.
+Perintah kesembilan dan terakhir mendapatkan penyeimbang muatan baru untuk memastikan berhasil dibuat.
+Perhatikan bahwa contoh ini hanya memperlihatkan cara membuat load balancer. Anda juga harus mengonfigurasinya menggunakan cmdlet Add-AzureRmNetworkInterfaceIpConfig untuk menetapkan NIC ke mesin virtual yang berbeda.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendAddressPool
-Menentukan pool alamat backend untuk dikaitkan dengan penyeimbang muat.
+Menentukan kumpulan alamat backend untuk dikaitkan dengan penyeimbang muatan.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Network.Models.PSBackendAddressPool]
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -105,8 +105,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Mengindikasikan bahwa cmdlet ini membuat penyeimbang muat bahkan jika penyeimbang muat dengan nama yang sama sudah ada.
+### -Paksa
+Menunjukkan bahwa cmdlet ini membuat load balancer meskipun load balancer dengan nama yang sama sudah ada.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendIpConfiguration
-Menentukan daftar alamat IP ujung-depan untuk dikaitkan dengan penyeimbang muat.
+Menentukan daftar alamat IP ujung-depan untuk dikaitkan dengan load balancer.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Network.Models.PSFrontendIPConfiguration]
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -InboundNatRule
-Menentukan daftar aturan penerjemahan alamat jaringan masuk (NAT, Inbound Network Address Translation) untuk dikaitkan dengan penyeimbang muat.
+Menentukan daftar aturan penerjemahan alamat jaringan masuk (NAT) untuk dikaitkan dengan penyeimbang muatan.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Network.Models.PSInboundNatRule]
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancingRule
-Menentukan daftar aturan keseimbangan muat untuk dikaitkan dengan penyeimbang muat.
+Menentukan daftar aturan penyeimbangan beban untuk dikaitkan dengan penyeimbang muatan.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Network.Models.PSLoadBalancingRule]
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan kawasan untuk membuat penyeimbang muat.
+Menentukan kawasan tempat untuk membuat penyeimbang muatan.
 
 ```yaml
 Type: System.String
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama penyeimbang muat yang akan dibuat.
+Menentukan nama penyeimbang muatan yang dibuat ini.
 
 ```yaml
 Type: System.String
@@ -223,8 +223,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Ser
-Menentukan daftar bidang yang akan dikaitkan dengan penyeimbang muat.
+### -Probe
+Menentukan daftar probe untuk dikaitkan dengan load balancer.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Network.Models.PSProbe]
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya untuk membuat penyeimbang muat.
+Menentukan nama grup sumber daya untuk membuat load balancer.
 
 ```yaml
 Type: System.String
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Nama Sku penyeimbang muat.
+Nama Sku penyeimbang muatan.
 
 ```yaml
 Type: System.String
@@ -284,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -300,7 +300,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -315,25 +315,25 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Collections.Generic.List \` 1[[Microsoft.Azure.Commands.Network.Models.PSFrontendIPConfiguration, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List1\`[[Microsoft.Azure.Commands.Network.Models.PSFrontendIPConfiguration, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=netral, PublicKeyToken=null]]
 
-### System.Collections.Generic.List \` 1[[Microsoft.Azure.Commands.Network.Models.PSBackendAddressPool, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List1\`[[Microsoft.Azure.Commands.Network.Models.PSBackendAddressPool, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=netral, PublicKeyToken=null]]
 
-### System.Collections.Generic.List \` 1[[Microsoft.Azure.Commands.Network.Models.PSProbe, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List1\`[[Microsoft.Azure.Commands.Network.Models.PSProbe, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=netral, PublicKeyToken=null]]
 
-### System.Collections.Generic.List \` 1[[Microsoft.Azure.Commands.Network.Models.PSInboundNatRule, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List1\`[[Microsoft.Azure.Commands.Network.Models.PSInboundNatRule, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=netral, PublicKeyToken=null]]
 
-### System.Collections.Generic.List \` 1[[Microsoft.Azure.Commands.Network.Models.PSLoadBalancingRule, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List1\`[[Microsoft.Azure.Commands.Network.Models.PSLoadBalancingRule, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=netral, PublicKeyToken=null]]
 
 ### System.Collections.Hashtable
 
-### System.Collections.Generic.List \` 1[[Microsoft.Azure.Commands.Network.Models.PSInboundNatPool, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List1\`[[Microsoft.Azure.Commands.Network.Models.PSInboundNatPool, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=netral, PublicKeyToken=null]]
 
 ## OUTPUTS
 
@@ -347,6 +347,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmLoadBalancer](./Get-AzureRmLoadBalancer.md)
 
-[Remove-AzureRmLoadBalancer](./Remove-AzureRmLoadBalancer.md)
+[Hapus-AzureRmLoadBalancer](./Remove-AzureRmLoadBalancer.md)
 
 [Set-AzureRmLoadBalancer](./Set-AzureRmLoadBalancer.md)

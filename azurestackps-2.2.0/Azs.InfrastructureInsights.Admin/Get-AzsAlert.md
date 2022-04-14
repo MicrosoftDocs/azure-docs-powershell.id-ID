@@ -4,11 +4,11 @@ Module Name: Azs.InfrastructureInsights.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.infrastructureinsights.admin/get-azsalert
 schema: 2.0.0
 ms.openlocfilehash: 9b92285bf8449326442d28b09d8dab697c5a4b21
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136576730"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141811914"
 ---
 # Get-AzsAlert
 
@@ -23,7 +23,7 @@ Get-AzsAlert [-Location <String>] [-ResourceGroupName <String>] [-SubscriptionId
  [-Filter <String>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsAlert -Name <String> [-Location <String>] [-ResourceGroupName <String>] [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -52,7 +52,7 @@ Dapatkan pemberitahuan berdasarkan Nama.
 PS C:\> Get-AzsAlert | Where State -EQ 'active' | select FaultTypeId, Title
 ```
 
-Dapatkan semua peringatan aktif serta tampilkan kesalahan dan jabatannya.
+Dapatkan semua peringatan aktif dan tampilkan kesalahan dan judulnya.
 
 ## PARAMETERS
 
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.InfrastructureInsightsAdmin.Models.IInfrastructureInsightsAdminIdentity
@@ -153,8 +153,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure Anda.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -184,9 +184,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<IInfrastructureInsightsAdminIdentity> : Parameter Identitas
+INPUTOBJECT \<IInfrastructureInsightsAdminIdentity>: Parameter Identitas
   - `[AlertName <String>]`: Nama pemberitahuan.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama kawasan
@@ -194,7 +194,7 @@ INPUTOBJECT \<IInfrastructureInsightsAdminIdentity> : Parameter Identitas
   - `[ResourceRegistrationId <String>]`: ID pendaftaran sumber daya.
   - `[ServiceHealth <String>]`: Nama Kesehatan Layanan.
   - `[ServiceRegistrationId <String>]`: ID pendaftaran layanan.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

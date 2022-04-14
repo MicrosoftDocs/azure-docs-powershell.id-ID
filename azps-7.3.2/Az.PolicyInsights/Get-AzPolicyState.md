@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.policyinsights/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PolicyInsights/PolicyInsights/help/Get-AzPolicyState.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PolicyInsights/PolicyInsights/help/Get-AzPolicyState.md
-ms.openlocfilehash: a05169c2351a9fa6b1638694ccd4f071fa656ab9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3df993f25a2677288e7b69d512bada2b1c02e13d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140196631"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142030295"
 ---
 # Get-AzPolicyState
 
 ## SYNOPSIS
-Mendapatkan kebijakan tingkat kepatuhan untuk sumber daya.
+Mendapatkan status kepatuhan kebijakan untuk sumber daya.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.policyinsights/get-azpolicystate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Get-AzPolicyState [-All] [-SubscriptionId <String>] -ResourceGroupName <String> 
  [-Apply <String>] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### ResourceScope
+### Cakupan Sumber Daya
 ```
 Get-AzPolicyState [-All] -ResourceId <String> [-Top <Int32>] [-OrderBy <String>] [-Select <String>]
  [-From <DateTime>] [-To <DateTime>] [-Filter <String>] [-Apply <String>] [-Expand <String>]
@@ -76,7 +79,7 @@ Get-AzPolicyState [-All] [-SubscriptionId <String>] -ResourceGroupName <String> 
 ```
 
 ## DESCRIPTION
-Mendapatkan kebijakan tingkat kepatuhan untuk sumber daya. Catatan status kebijakan bisa dikutafkan di berbagai lingkup. Berdasarkan interval waktu yang ditentukan (default ke hari terakhir), baik status kebijakan terbaru maupun semua transisi status kebijakan dapat dikuerifikasi. Hasil bisa difilter, dikelompokkan, dan agregasi grup bisa dihitung.
+Mendapatkan status kepatuhan kebijakan untuk sumber daya. Catatan status kebijakan dapat dikueri di berbagai lingkup. Berdasarkan interval waktu yang ditentukan (default ke hari terakhir), baik status kebijakan terbaru atau semua transisi status kebijakan dapat dikueri. Hasil dapat difilter, dikelompokkan, dan agregasi grup dapat dihitung.
 
 ## EXAMPLES
 
@@ -85,189 +88,189 @@ Mendapatkan kebijakan tingkat kepatuhan untuk sumber daya. Catatan status kebija
 PS C:\> Get-AzPolicyState
 ```
 
-Mendapatkan catatan status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini.
+Mendapatkan rekaman status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini.
 
-### Contoh 2: Dapatkan kondisi kebijakan terbaru dalam lingkup langganan tertentu
+### Contoh 2: Dapatkan status kebijakan terbaru dalam lingkup langganan tertentu
 ```powershell
 PS C:\> Get-AzPolicyState -SubscriptionId "fff10b27-fff3-fff5-fff8-fffbe01e86a5"
 ```
 
-Mendapatkan catatan status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya di dalam langganan yang ditentukan.
+Mendapatkan rekaman status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan tertentu.
 
 ### Contoh 3: Dapatkan semua status kebijakan dalam lingkup langganan saat ini
 ```powershell
 PS C:\> Get-AzPolicyState -All
 ```
 
-Mendapatkan semua catatan status kebijakan historis (termasuk yang terbaru) yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini.
+Mendapatkan semua rekaman status kebijakan historis (termasuk terbaru) yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini.
 
-### Contoh 4: Dapatkan kondisi kebijakan terbaru dalam lingkup grup manajemen
+### Contoh 4: Dapatkan status kebijakan terbaru dalam lingkup grup manajemen
 ```powershell
 PS C:\> Get-AzPolicyState -ManagementGroupName "myManagementGroup"
 ```
 
-Mendapatkan catatan status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya di dalam grup manajemen yang ditentukan.
+Mendapatkan rekaman status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya dalam grup manajemen yang ditentukan.
 
 ### Contoh 5: Dapatkan status kebijakan terbaru dalam lingkup grup sumber daya dalam langganan saat ini
 ```powershell
 PS C:\> Get-AzPolicyState -ResourceGroupName "myResourceGroup"
 ```
 
-Mendapatkan catatan status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya di dalam grup sumber daya yang ditentukan (dalam langganan dalam konteks sesi saat ini).
+Mendapatkan rekaman status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya dalam grup sumber daya tertentu (dalam langganan dalam konteks sesi saat ini).
 
-### Contoh 6: Dapatkan kondisi kebijakan terbaru dalam lingkup grup sumber daya dalam langganan yang ditentukan
+### Contoh 6: Dapatkan status kebijakan terbaru dalam lingkup grup sumber daya dalam langganan tertentu
 ```powershell
 PS C:\> Get-AzPolicyState -SubscriptionId "fff10b27-fff3-fff5-fff8-fffbe01e86a5" -ResourceGroupName "myResourceGroup"
 ```
 
-Mendapatkan catatan status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya di dalam grup sumber daya yang ditentukan (dalam langganan yang ditentukan).
+Mendapatkan rekaman status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya dalam grup sumber daya tertentu (dalam langganan yang ditentukan).
 
-### Contoh 7: Dapatkan kondisi kebijakan terbaru untuk sumber daya
+### Contoh 7: Dapatkan status kebijakan terbaru untuk sumber daya
 ```powershell
 PS C:\> Get-AzPolicyState -ResourceId "/subscriptions/fff10b27-fff3-fff5-fff8-fffbe01e86a5/resourceGroups/myResourceGroup/providers/Microsoft.EventHub/namespaces/myns1/eventhubs/eh1/consumergroups/cg1"
 ```
 
-Mendapatkan catatan status kebijakan terbaru yang dihasilkan di hari terakhir untuk sumber daya yang ditentukan.
+Mendapatkan rekaman status kebijakan terbaru yang dihasilkan di hari terakhir untuk sumber daya yang ditentukan.
 
 ### Contoh 8: Dapatkan status kebijakan terbaru untuk definisi kumpulan kebijakan dalam langganan saat ini
 ```powershell
 PS C:\> Get-AzPolicyState -PolicySetDefinitionName "fff58873-fff8-fff5-fffc-fffbe7c9d697"
 ```
 
-Mendapatkan catatan status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang dihasilkan oleh definisi kumpulan kebijakan yang ditentukan (yang ada dalam langganan dalam konteks sesi saat ini).
+Mendapatkan rekaman status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang diberlakukan oleh definisi kumpulan kebijakan yang ditentukan (yang ada dalam langganan dalam konteks sesi saat ini).
 
-### Contoh 9: Dapatkan kondisi kebijakan terbaru untuk definisi kumpulan kebijakan dalam langganan yang ditentukan
+### Contoh 9: Dapatkan status kebijakan terbaru untuk definisi kumpulan kebijakan dalam langganan yang ditentukan
 ```powershell
 PS C:\> Get-AzPolicyState -SubscriptionId "fff10b27-fff3-fff5-fff8-fffbe01e86a5" -PolicySetDefinitionName "fff58873-fff8-fff5-fffc-fffbe7c9d697"
 ```
 
-Mendapatkan catatan status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang dihasilkan oleh definisi kumpulan kebijakan yang ditentukan (yang ada di dalam langganan yang ditentukan).
+Mendapatkan rekaman status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang diberlakukan oleh definisi kumpulan kebijakan tertentu (yang ada dalam langganan yang ditentukan).
 
 ### Contoh 10: Dapatkan status kebijakan terbaru untuk definisi kebijakan dalam langganan saat ini
 ```powershell
 PS C:\> Get-AzPolicyState -PolicyDefinitionName "fff58873-fff8-fff5-fffc-fffbe7c9d697"
 ```
 
-Mendapatkan catatan status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang dihasilkan oleh definisi kebijakan yang ditentukan (yang ada dalam langganan dalam konteks sesi saat ini).
+Mendapatkan rekaman status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang diberlakukan oleh definisi kebijakan yang ditentukan (yang ada dalam langganan dalam konteks sesi saat ini).
 
-### Contoh 11: Dapatkan kondisi kebijakan terbaru untuk definisi kebijakan dalam langganan tertentu
+### Contoh 11: Dapatkan status kebijakan terbaru untuk definisi kebijakan dalam langganan yang ditentukan
 ```powershell
 PS C:\> Get-AzPolicyState -SubscriptionId "fff10b27-fff3-fff5-fff8-fffbe01e86a5" -PolicyDefinitionName "fff58873-fff8-fff5-fffc-fffbe7c9d697"
 ```
 
-Mendapatkan catatan status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang dihasilkan oleh definisi kebijakan yang ditentukan (yang ada di langganan yang ditentukan).
+Mendapatkan rekaman status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang diberlakukan oleh definisi kebijakan yang ditentukan (yang ada dalam langganan yang ditentukan).
 
-### Contoh 12: Dapatkan status kebijakan terbaru untuk penetapan kebijakan dalam langganan saat ini
+### Contoh 12: Mendapatkan status kebijakan terbaru untuk penetapan kebijakan dalam langganan saat ini
 ```powershell
 PS C:\> Get-AzPolicyState -PolicyAssignmentName "ddd8ef92e3714a5ea3d208c1"
 ```
 
-Mendapatkan catatan status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang dihasilkan oleh penetapan kebijakan yang ditentukan (yang ada dalam langganan dalam konteks sesi saat ini).
+Mendapatkan rekaman status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya (dalam penyewa dalam konteks sesi saat ini) yang dipenrpengaruh oleh penetapan kebijakan yang ditentukan (yang ada dalam langganan dalam konteks sesi saat ini).
 
-### Contoh 13: Dapatkan kondisi kebijakan terbaru untuk penetapan kebijakan dalam langganan yang ditentukan
+### Contoh 13: Mendapatkan status kebijakan terbaru untuk penetapan kebijakan dalam langganan tertentu
 ```powershell
 PS C:\> Get-AzPolicyState -SubscriptionId "fff10b27-fff3-fff5-fff8-fffbe01e86a5" -PolicyAssignmentName "ddd8ef92e3714a5ea3d208c1"
 ```
 
-Mendapatkan catatan status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang dihasilkan oleh penetapan kebijakan yang ditentukan (yang ada dalam langganan yang ditentukan).
+Mendapatkan rekaman status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya (dalam penyewa dalam konteks sesi saat ini) yang dipenrpengaruh oleh penetapan kebijakan yang ditentukan (yang ada dalam langganan yang ditentukan).
 
 ### Contoh 14: Dapatkan status kebijakan terbaru untuk penetapan kebijakan dalam grup sumber daya tertentu dalam langganan saat ini
 ```powershell
 PS C:\> Get-AzPolicyState -ResourceGroupName "myResourceGroup" -PolicyAssignmentName "ddd8ef92e3714a5ea3d208c1"
 ```
 
-Mendapatkan catatan status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang dihasilkan oleh penetapan kebijakan yang ditentukan (yang ada di grup sumber daya dalam langganan dalam konteks sesi saat ini).
+Mendapatkan rekaman status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya (dalam penyewa dalam konteks sesi saat ini) yang diberlakukan oleh penetapan kebijakan yang ditentukan (yang ada dalam grup sumber daya dalam langganan dalam konteks sesi saat ini).
 
-### Contoh 15: Dapatkan status kebijakan terbaru dalam lingkup langganan saat ini, dengan OrderBy, Top, dan Pilih opsi kueri
+### Contoh 15: Dapatkan status kebijakan terbaru dalam lingkup langganan saat ini, dengan opsi OrderBy, Atas, dan Pilih kueri
 ```powershell
 PS C:\> Get-AzPolicyState -OrderBy "Timestamp desc, PolicyAssignmentName asc" -Top 5 -Select "Timestamp, ResourceId, PolicyAssignmentId, PolicySetDefinitionId, PolicyDefinitionId, IsCompliant"
 ```
 
-Mendapatkan catatan status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini. Perintah memesan hasil menurut timestamp dan properti nama penetapan kebijakan, dan hanya akan mengambil 5 teratas dari properti yang tercantum dalam urutan tersebut.
-Opsi ini juga memilih untuk mencantumkan hanya subset kolom untuk setiap rekaman.
+Mendapatkan rekaman status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini. Perintah mengurutkan hasil menurut stempel waktu dan properti nama penetapan kebijakan, dan hanya mengambil 5 teratas dari yang tercantum dalam urutan tersebut.
+Ini juga memilih untuk mencantumkan hanya subset kolom untuk setiap catatan.
 
 ### Contoh 16: Dapatkan status kebijakan terbaru dalam lingkup langganan saat ini, dengan opsi kueri Dari dan Ke
 ```powershell
 PS C:\> Get-AzPolicyState -From "2018-03-08 00:00:00Z" -To "2018-03-15 00:00:00Z"
 ```
 
-Mendapatkan catatan status kebijakan terbaru yang dihasilkan dalam rentang tanggal yang ditentukan untuk semua sumber daya di dalam langganan dalam konteks sesi saat ini.
+Mendapatkan rekaman status kebijakan terbaru yang dihasilkan dalam rentang tanggal yang ditentukan untuk semua sumber daya dalam langganan dalam konteks sesi saat ini.
 
-### Contoh 17: Dapatkan status kebijakan terbaru dalam lingkup langganan saat ini, dengan opsi Filter kueri
+### Contoh 17: Mendapatkan status kebijakan terbaru dalam lingkup langganan saat ini, dengan opsi Filter kueri
 ```powershell
 PS C:\> Get-AzPolicyState -Filter "(PolicyDefinitionAction eq 'deny' or PolicyDefinitionAction eq 'audit') and ComplianceState eq 'NonCompliant' and ResourceLocation ne 'eastus'"
 ```
 
-Mendapatkan catatan status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini.
-Perintah tersebut membatasi hasil yang dikembalikan dengan pemfilteran berdasarkan tindakan definisi kebijakan (termasuk tindakan tolak atau audit), status kepatuhan (hanya menyertakan status tidak memenuhi syarat) dan lokasi sumber daya (tidak termasuk lokasi eastus).
+Mendapatkan rekaman status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini.
+Perintah membatasi hasil yang dikembalikan dengan pemfilteran berdasarkan tindakan definisi kebijakan (termasuk tindakan penolakan atau audit), status kepatuhan (hanya menyertakan status yang tidak sesuai) dan lokasi sumber daya (tidak termasuk lokasi eastus).
 
-### Contoh 18: Dapatkan status kebijakan terbaru dalam lingkup langganan saat ini, dengan Terapkan agregasi menentukan jumlah baris
+### Contoh 18: Dapatkan status kebijakan terbaru dalam lingkup langganan saat ini, dengan Terapkan yang menentukan agregasi hitungan baris
 ```powershell
 PS C:\> Get-AzPolicyState -Apply "aggregate(`$count as NumberOfRecords)"
 ```
 
-Dapatkan jumlah catatan status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini.
-Perintah mengembalikan hitungan data status kebijakan saja, yang dikembalikan di dalam properti AdditionalProperties.
+Mendapatkan jumlah rekaman status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini.
+Perintah mengembalikan hitungan rekaman status kebijakan saja, yang dikembalikan di dalam properti AdditionalProperties.
 
-### Contoh 19: Get latest policy states in current subscription scope, with Apply specifying grouping with aggregation
+### Contoh 19: Dapatkan status kebijakan terbaru dalam lingkup langganan saat ini, dengan Terapkan menentukan pengelompokan dengan agregasi
 ```powershell
 PS C:\> Get-AzPolicyState -Filter "ComplianceState eq 'NonCompliant'" -Apply "groupby((PolicyAssignmentId, PolicySetDefinitionId, PolicyDefinitionReferenceId, PolicyDefinitionId), aggregate(`$count as NumStates))" -OrderBy "NumStates desc" -Top 5
 ```
 
-Mendapatkan catatan status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini. Perintah tersebut membatasi hasil yang dikembalikan dengan memfilter berdasarkan status kepatuhan (hanya menyertakan status tidak memenuhi persyaratan).
-Properti ini mengelompokkan hasil berdasarkan penetapan kebijakan, definisi kumpulan kebijakan, dan definisi kebijakan, serta menghitung jumlah data di setiap grup, yang dikembalikan di dalam properti AdditionalProperties.
-It orders the results by the count aggregation in descending order, and takes only top 5 of those listed in that order.
+Mendapatkan rekaman status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini. Perintah membatasi hasil yang dikembalikan dengan pemfilteran berdasarkan status kepatuhan (hanya menyertakan status yang tidak sesuai).
+Ini mengelompokkan hasil berdasarkan penetapan kebijakan, definisi kumpulan kebijakan, dan definisi kebijakan, dan menghitung jumlah rekaman di setiap grup, yang dikembalikan di dalam properti AdditionalProperties.
+Ini mengurutkan hasil menurut agregasi hitungan dalam urutan menurun, dan hanya mengambil 5 teratas dari yang tercantum dalam urutan tersebut.
 
-### Contoh 20: Get latest policy states in current subscription scope, with Apply specifying grouping without aggregation
+### Contoh 20: Dapatkan status kebijakan terbaru dalam lingkup langganan saat ini, dengan Terapkan menentukan pengelompokan tanpa agregasi
 ```powershell
 PS C:\> Get-AzPolicyState -Filter "ComplianceState eq 'NonCompliant'" -Apply "groupby((ResourceId))"
 ```
 
-Mendapatkan catatan status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini. Perintah tersebut membatasi hasil yang dikembalikan dengan memfilter berdasarkan status kepatuhan (hanya menyertakan status tidak memenuhi persyaratan).
-It groups the results based on resource id. Ini menghasilkan daftar semua sumber daya di dalam langganan yang tidak memenuhi syarat untuk setidaknya satu kebijakan.
+Mendapatkan rekaman status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini. Perintah membatasi hasil yang dikembalikan dengan pemfilteran berdasarkan status kepatuhan (hanya menyertakan status yang tidak sesuai).
+Ini mengelompokkan hasil berdasarkan id sumber daya. Ini menghasilkan daftar semua sumber daya dalam langganan yang tidak memenuhi syarat untuk setidaknya satu kebijakan.
 
-### Contoh 21: Dapatkan status kebijakan terbaru dalam lingkup langganan saat ini, dengan Menerapkan menentukan beberapa grup
+### Contoh 21: Dapatkan status kebijakan terbaru dalam lingkup langganan saat ini, dengan Terapkan yang menentukan beberapa pengelompokan
 ```powershell
 PS C:\> Get-AzPolicyState -Filter "ComplianceState eq 'NonCompliant'" -Apply "groupby((PolicyAssignmentId, PolicySetDefinitionId, PolicyDefinitionReferenceId, PolicyDefinitionId, ResourceId))/groupby((PolicyAssignmentId, PolicySetDefinitionId, PolicyDefinitionReferenceId, PolicyDefinitionId), aggregate(`$count as NumNonCompliantResources))" -OrderBy "NumNonCompliantResources desc" -Top 5
 ```
 
-Mendapatkan catatan status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini. Perintah tersebut membatasi hasil yang dikembalikan dengan memfilter berdasarkan status kepatuhan (hanya menyertakan status tidak memenuhi persyaratan).
-It groups the results first based on policy assignment, policy set definition, policy definition, and resource id. Lalu, selanjutnya mengelompokkan hasil dari grup ini dengan properti yang sama kecuali untuk id sumber daya, dan menghitung jumlah data di setiap grup ini, yang dikembalikan di dalam properti AdditionalProperties.
-It orders the results by the count aggregation in descending order, and takes only top 5 of those listed in that order.
-Ini menghasilkan 5 kebijakan teratas dengan sebagian besar sumber daya yang tidak patuh.
+Mendapatkan rekaman status kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini. Perintah membatasi hasil yang dikembalikan dengan pemfilteran berdasarkan status kepatuhan (hanya menyertakan status yang tidak sesuai).
+Ini mengelompokkan hasil terlebih dahulu berdasarkan penetapan kebijakan, definisi kumpulan kebijakan, definisi kebijakan, dan id sumber daya. Kemudian, grup selanjutnya mengelompokkan hasil pengelompokan ini dengan properti yang sama kecuali untuk id sumber daya, dan menghitung jumlah rekaman di setiap grup ini, yang dikembalikan di dalam properti AdditionalProperties.
+Ini mengurutkan hasil menurut agregasi hitungan dalam urutan menurun, dan hanya mengambil 5 teratas dari yang tercantum dalam urutan tersebut.
+Ini menghasilkan 5 kebijakan teratas dengan jumlah sumber daya yang tidak sesuai.
 
-### Contoh 22: Dapatkan kondisi kebijakan terbaru termasuk detail evaluasi kebijakan untuk sumber daya
+### Contoh 22: Dapatkan status kebijakan terbaru termasuk detail evaluasi kebijakan untuk sumber daya
 ```powershell
 PS C:\> Get-AzPolicyState -ResourceId "/subscriptions/fff10b27-fff3-fff5-fff8-fffbe01e86a5/resourceGroups/myResourceGroup/providers/Microsoft.EventHub/namespaces/myns1/eventhubs/eh1/consumergroups/cg1" -Expand "PolicyEvaluationDetails"
 ```
 
-Mendapatkan catatan status kebijakan terbaru yang dihasilkan di hari terakhir untuk sumber daya tertentu dan memperluas kebijakanEvaluationDetails.
+Mendapatkan rekaman status kebijakan terbaru yang dihasilkan di hari terakhir untuk sumber daya yang ditentukan dan memperluas kebijakanEvaluationDetails.
 
-### Contoh 23: Dapatkan kondisi kebijakan komponen terbaru untuk sumber daya (misalnya. vault) diberi penetapan kebijakan mode penyedia sumber daya
+### Contoh 23: Dapatkan status kebijakan komponen terbaru untuk sumber daya (misalnya. vault) dengan penetapan kebijakan mode penyedia sumber daya
 ```powershell
 PS C:\> Get-AzPolicyState -ResourceId "/subscriptions/fff10b27-fff3-fff5-fff8-fffbe01e86a5/resourceGroups/myResourceGroup/providers/Microsoft.KeyVault/vaults/myvault" - Filter "policyAssignmentId eq '/subscriptions/fff10b27-fff3-fff5-fff8-fffbe01e86a5/providers/Microsoft.Authorization/policyAssignments/ddd8ef92e3714a5ea3d208c1'" -Expand "Components(`$filter=ComplianceState eq 'NonCompliant' or ComplianceState eq 'Compliant')"
 ```
 
-Mendapatkan catatan status kebijakan komponen terbaru yang dihasilkan di hari terakhir untuk sumber daya yang ditentukan, diberikan penetapan kebijakan mode penyedia sumber daya yang mereferesi definisi kebijakan mode penyedia sumber daya.
+Mendapatkan rekaman status kebijakan komponen terbaru yang dihasilkan di hari terakhir untuk sumber daya yang ditentukan, mengingat penetapan kebijakan mode penyedia sumber daya yang mereferensikan definisi kebijakan mode penyedia sumber daya.
 
-### Contoh 24: Dapatkan kondisi kebijakan komponen terbaru untuk sumber daya (misalnya. vault) diberi penetapan inisiatif kebijakan yang berisi definisi kebijakan mode penyedia sumber daya
+### Contoh 24: Dapatkan status kebijakan komponen terbaru untuk sumber daya (misalnya. vault) diberikan penetapan inisiatif kebijakan yang berisi definisi kebijakan mode penyedia sumber daya
 ```powershell
 PS C:\> Get-AzPolicyState -ResourceId "/subscriptions/fff10b27-fff3-fff5-fff8-fffbe01e86a5/resourceGroups/myResourceGroup/providers/Microsoft.KeyVault/vaults/myvault" - Filter "policyAssignmentId eq '/subscriptions/fff10b27-fff3-fff5-fff8-fffbe01e86a5/providers/Microsoft.Authorization/policyAssignments/ddd8ef92e3714a5ea3d208c1' and policyDefinitionReferenceId eq 'myResourceProviderModeDefinitionReferenceId'" -Expand "Components(`$filter=ComplianceState eq 'NonCompliant' or ComplianceState eq 'Compliant')"
 ```
 
-Mendapatkan catatan status kebijakan komponen terbaru yang dihasilkan di hari terakhir untuk sumber daya yang ditentukan, diberikan penetapan kebijakan mode penyedia sumber daya yang mereferisi inisiatif yang berisi definisi kebijakan mode penyedia sumber daya.
+Mendapatkan rekaman status kebijakan komponen terbaru yang dihasilkan di hari terakhir untuk sumber daya yang ditentukan, mengingat penetapan kebijakan mode penyedia sumber daya yang mereferensikan inisiatif yang berisi definisi kebijakan mode penyedia sumber daya.
 
-### Contoh 25: Dapatkan hitungan komponen terbaru menurut status kepatuhan untuk sumber daya (misalnya. vault) diberi penetapan kebijakan mode penyedia sumber daya
+### Contoh 25: Dapatkan jumlah komponen terbaru menurut status kepatuhan untuk sumber daya (misalnya. vault) dengan penetapan kebijakan mode penyedia sumber daya
 ```powershell
 PS C:\> Get-AzPolicyState -ResourceId "/subscriptions/fff10b27-fff3-fff5-fff8-fffbe01e86a5/resourceGroups/myResourceGroup/providers/Microsoft.KeyVault/vaults/myvault" - Filter "policyAssignmentId eq '/subscriptions/fff10b27-fff3-fff5-fff8-fffbe01e86a5/providers/Microsoft.Authorization/policyAssignments/ddd8ef92e3714a5ea3d208c1'" -Expand "Components(`$filter=ComplianceState eq 'NonCompliant' or ComplianceState eq 'Compliant' or ComplianceState eq 'Conflict';`$apply=groupby((complianceState),aggregate(`$count as count)))"
 ```
 
-Mendapatkan hitungan komponen terbaru yang dihasilkan dalam hari terakhir yang dikelompokkan menurut status kepatuhan untuk sumber daya yang ditentukan, diberikan penetapan kebijakan mode penyedia sumber daya.
+Mendapatkan jumlah komponen terbaru yang dihasilkan di hari terakhir yang dikelompokkan menurut status kepatuhan untuk sumber daya tertentu, dengan penetapan kebijakan mode penyedia sumber daya.
 
 ## PARAMETERS
 
 ### -Semua
-Dalam interval waktu yang ditentukan, dapatkan semua kondisi kebijakan, bukan yang terbaru saja.
+Dalam interval waktu yang ditentukan, dapatkan semua status kebijakan, bukan yang terbaru saja.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -281,8 +284,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Apply
-Menerapkan ekspresi untuk agregasi menggunakan notasi OData.
+### -Terapkan
+Terapkan ekspresi untuk agregasi menggunakan notasi OData.
 
 ```yaml
 Type: System.String
@@ -342,8 +345,8 @@ Accept wildcard characters: False
 ```
 
 ### -Dari
-Timestamp yang diformat ISO 8601 yang menentukan waktu mulai interval ke kueri.
-Ketika tidak ditentukan, default nilai parameter 'To' dikurangi 1 hari.
+Stempel waktu yang diformat ISO 8601 menentukan waktu mulai interval ke kueri.
+Ketika tidak ditentukan, default ke nilai parameter 'Kepada' dikurangi 1 hari.
 
 ```yaml
 Type: System.DateTime
@@ -373,7 +376,7 @@ Accept wildcard characters: False
 ```
 
 ### -OrderBy
-Memesan ekspresi menggunakan notasi OData.
+Pengurutan ekspresi menggunakan notasi OData.
 Satu atau beberapa nama kolom yang dipisahkan koma dengan 'desc' opsional (default) atau 'asc'.
 
 ```yaml
@@ -466,7 +469,7 @@ Accept wildcard characters: False
 ### -Pilih
 Pilih ekspresi menggunakan notasi OData.
 Satu atau beberapa nama kolom yang dipisahkan koma.
-Membatasi kolom di setiap rekaman hanya untuk yang diminta.
+Membatasi kolom pada setiap catatan hanya pada yang diminta.
 
 ```yaml
 Type: System.String
@@ -495,9 +498,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Ke
-Timestamp yang diformat ISO 8601 yang menentukan waktu akhir interval ke kueri.
-Bila tidak ditentukan, defaultnya adalah waktu permintaan.
+### -Kepada
+Stempel waktu yang diformat ISO 8601 menentukan waktu akhir interval ke kueri.
+Ketika tidak ditentukan, default ke waktu permintaan.
 
 ```yaml
 Type: System.DateTime
@@ -512,7 +515,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-Jumlah rekaman maksimum yang dikembalikan.
+Jumlah maksimum rekaman yang akan dikembalikan.
 
 ```yaml
 Type: System.Int32
@@ -527,7 +530,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmEffectiveRouteTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmEffectiveRouteTable.md
 ms.openlocfilehash: 8095e2ebd1d9e55e8f5bc847f4a72277363e197a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428397"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141778216"
 ---
 # Get-AzureRmEffectiveRouteTable
 
@@ -28,21 +28,21 @@ Get-AzureRmEffectiveRouteTable -NetworkInterfaceName <String> [-ResourceGroupNam
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmEffectiveRouteTable** mengembalikan tabel rute efektif yang diterapkan di antarmuka jaringan.
+Cmdlet **Get-AzureRmEffectiveRouteTable** mengembalikan tabel rute efektif yang diterapkan pada antarmuka jaringan.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan tabel rute yang efektif pada antarmuka jaringan
+### Contoh 1: Dapatkan tabel rute yang efektif di antarmuka jaringan
 ```
 PS C:\>Get-AzureRmEffectiveRouteTable -NetworkInterfaceName "MyNetworkInterface" -ResourceGroupName "MyResourceGroup"
 ```
 
-Perintah ini mendapatkan tabel rute efektif yang terkait dengan antarmuka jaringan yang bernama MyNetworkInterface dalam grup sumber daya yang bernama MyResourceGroup.
+Perintah ini mendapatkan tabel rute efektif yang terkait dengan antarmuka jaringan bernama MyNetworkInterface dalam grup sumber daya bernama MyResourceGroup.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkInterfaceName
-Tentukan nama antarmuka jaringan.
+Menentukan nama antarmuka jaringan.
 
 ```yaml
 Type: System.String
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

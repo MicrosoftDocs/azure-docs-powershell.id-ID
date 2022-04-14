@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementApiVersionSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementApiVersionSet.md
-ms.openlocfilehash: a3330fe97dfd577bc53610622b8b668f3b5277f4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c12aba29de87530c7a797a090f88533a5bfccae8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140560739"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141856814"
 ---
 # New-AzApiManagementApiVersionSet
 
 ## SYNOPSIS
-Membuat Kumpulan Versi API.
+Membuat Set Versi API.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementapiversionset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzApiManagementApiVersionSet -Context <PsApiManagementContext> [-ApiVersionS
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApiManagementApiVersionSet** membuat entitas kumpulan Versi API dalam konteks Manajemen API Azure.
+Cmdlet **New-AzApiManagementApiVersionSet** membuat entitas kumpulan Versi API dalam konteks Azure API Management.
 
 ## EXAMPLES
 
@@ -48,12 +51,12 @@ ResourceGroupName : Api-Default-WestUS
 ServiceName       : contoso
 ```
 
-Perintah ini membuat Kumpulan Versi API skema versi mana dan `Query` parameter Kueri `api-version`.
+Perintah ini membuat Kumpulan Versi API yang skema `Query` penerapan versi dan parameter `api-version`Kueri .
 
 ## PARAMETERS
 
 ### -ApiVersionSetId
-Pengidentifikasi untuk Kumpulan Versi API baru.
+Pengidentifikasi untuk Set Versi API baru.
 Parameter ini bersifat opsional.
 Jika tidak ditentukan, pengidentifikasi akan dihasilkan.
 
@@ -116,8 +119,8 @@ Accept wildcard characters: False
 ```
 
 ### -HeaderName
-Nilai Header yang akan berisi informasi versi.
-Jika HEADER Skema versi dipilih, nilai ini harus ditentukan.
+Nilai Header yang akan berisi informasi penerapan versi.
+Jika penerapan versi HEADER Skema dipilih, maka nilai ini harus ditentukan.
 
 ```yaml
 Type: System.String
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama ApiVersion Set.
+Nama Kumpulan ApiVersion.
 Parameter ini diperlukan.
 
 ```yaml
@@ -148,8 +151,8 @@ Accept wildcard characters: False
 ```
 
 ### -QueryName
-Nilai Kueri yang akan berisi informasi versi.
-Jika kueri skema versi dipilih, nilai ini harus ditentukan.
+Nilai Kueri yang akan berisi informasi penerapan versi.
+Jika penerapan versi Kueri Skema dipilih, maka nilai ini harus ditentukan.
 
 ```yaml
 Type: System.String
@@ -163,8 +166,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Scheme
-Skema Versi untuk memilih Kumpulan Versi Api.
+### -Skema
+Skema Penerapan Versi untuk memilih Set Penerapan Versi Api.
 Parameter ini diperlukan.
 
 ```yaml
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

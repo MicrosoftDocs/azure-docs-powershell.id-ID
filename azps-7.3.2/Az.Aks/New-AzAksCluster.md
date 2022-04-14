@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/new-azaksclu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/New-AzAksCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/New-AzAksCluster.md
-ms.openlocfilehash: 7f4371c916047bb2293d6fe0257a5a8d3eac0e08
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 4e04e65ad92106e5bb160a7740354f0855191b85
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140203366"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141857228"
 ---
 # New-AzAksCluster
 
 ## SYNOPSIS
-Membuat kluster Grup Terkelola baru.
+Buat kluster Kubernetes terkelola baru.
 
-Cmdlet dapat memanggil di bawah API Graph Microsoft sesuai dengan parameter input:
+Cmdlet dapat memanggil di bawah Api Graph Microsoft sesuai dengan parameter input:
 
 - POST /servicePrincipals
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.aks/new-azakscluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,18 +50,18 @@ New-AzAksCluster [-NodeVmSetType <String>] [-NodeVnetSubnetID <String>] [-NodeMa
 
 ## DESCRIPTION
 
-Buat kluster Azure K azure Service(AKS) baru.
+Buat klaster Azure Kubernetes Service(AKS) baru.
 
 ## EXAMPLES
 
-### AKS baru dengan param default.
+### Baru AKS dengan param default.
 
 ```powershell
 New-AzAksCluster -ResourceGroupName myResourceGroup -Name myCluster
 ```
 
-### Membuat Windows Server di AKS.
-Untuk membuat Windows Server di AKS, Anda harus menentukan setidaknya empat parameter berikut saat membuat AKS, `NetworkPlugin` `NodeVmSetType` `azure` serta nilai untuk harus dan masing-masing.`VirtualMachineScaleSets`
+### Buat kontainer Server Windows di AKS.
+Untuk membuat kontainer server Windows di AKS, Anda harus menentukan setidaknya empat parameter berikut ini saat membuat AKS, dan nilai untuk `NetworkPlugin` dan `NodeVmSetType` harus `azure` serta `VirtualMachineScaleSets` masing-masing.
 `-WindowsProfileAdminUserName *** -WindowsProfileAdminUserPassword *** -NetworkPlugin azure -NodeVmSetType VirtualMachineScaleSets`
 
 ```powershell
@@ -70,7 +73,7 @@ New-AzAksNodePool -ResourceGroupName myResourceGroup -ClusterName myCluster -Nam
 ## PARAMETERS
 
 ### -AcrNameToAttach
-Berikan peran 'acrpull' dari ACR tertentu menjadi Prinsipal Layanan AKS, misalnya myacr
+Berikan peran 'acrpull' dari ACR yang ditentukan untuk AKS Service Principal, misalnya myacr
 
 ```yaml
 Type: System.String
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -AksCustomHeader
-Header kustom Aks digunakan untuk membangun jaringan Komunikasi.
+Aks header kustom yang digunakan untuk membangun jaringan Kubernetes.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiServerAccessAuthorizedIpRange
-Rentang IP tersebut diotorisasi untuk mengakses server API Kwens.
+Rentang IP yang diotorisasi untuk mengakses server API Kubernetes.
 
 ```yaml
 Type: System.String[]
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiServerAccessPrivateDnsZone
-Mode zona DNS privat untuk kluster.
+Mode zona DNS pribadi untuk kluster.
 
 ```yaml
 Type: System.String
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -DnsNamePrefix
-Prefiks nama DNS untuk kluster. Panjang harus sesuai <= 9 jika pengguna berencana untuk menambahkan wadah windows.
+Prefiks nama DNS untuk kluster. Panjangnya harus <= 9 jika pengguna berencana menambahkan wadah windows.
 
 ```yaml
 Type: System.String
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -DnsServiceIP
-IP layanan DNS yang digunakan untuk membangun jaringan Komunikasi.
+IP layanan DNS yang digunakan untuk membangun jaringan Kubernetes.
 
 ```yaml
 Type: System.String
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -DockerBridgeCidr
-Jembatan docker yang digunakan untuk jaringan Jembatan Penghubung.
+Docker bridge cidr digunakan untuk membangun jaringan Kubernetes.
 
 ```yaml
 Type: System.String
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableApiServerAccessPrivateClusterPublicFQDN
-Apakah akan membuat FQDN publik tambahan untuk kluster privat atau tidak.
+Apakah akan membuat FQDN publik tambahan untuk klaster privat atau tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableNodeAutoScaling
-Apakah akan mengaktifkan penskala otomatis
+Apakah mengaktifkan penskalakan otomatis
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -265,7 +268,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableNodePublicIp
-Apakah akan mengaktifkan IP publik untuk simpul.
+Apakah mengaktifkan IP publik untuk node.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -280,7 +283,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableRbac
-Apakah untuk mengaktifkan File Role-Based Access
+Apakah mengaktifkan Kubernetes Role-Based Access
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -294,8 +297,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Membuat kluster meskipun kluster sudah ada
+### -Paksa
+Buat kluster meskipun sudah ada
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -310,7 +313,7 @@ Accept wildcard characters: False
 ```
 
 ### -FqdnSubdomain
-Subdomain FQDN kluster privat dengan zona dns privat kustom.
+Subdomain FQDN dari kluster privat dengan zona dns pribadi kustom.
 
 ```yaml
 Type: System.String
@@ -325,7 +328,7 @@ Accept wildcard characters: False
 ```
 
 ### -GenerateSshKey
-Buat file kunci jpg ke {HOME}/.txt/id_rsa.
+Hasilkan file kunci ssh ke {HOME}/.ssh/id_rsa.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -339,8 +342,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kversion
-Versi File yang digunakan untuk membuat kluster.
+### -KubernetesVersion
+Versi Kubernetes yang digunakan untuk membuat kluster.
 
 ```yaml
 Type: System.String
@@ -355,7 +358,7 @@ Accept wildcard characters: False
 ```
 
 ### -LinuxProfileAdminUserName
-Nama pengguna untuk Komputer Virtual Linux.
+Nama pengguna untuk Virtual Machines Linux.
 
 ```yaml
 Type: System.String
@@ -370,7 +373,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerAllocatedOutboundPort
-Jumlah port SNAT yang dialokasikan yang diinginkan per VM.
+Jumlah port SNAT yang dialokasikan per VM yang diinginkan.
 
 ```yaml
 Type: System.Int32
@@ -385,7 +388,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerIdleTimeoutInMinute
-Waktu diam aliran keluar yang diinginkan habis dalam menit.
+Waktu habis aliran keluar yang diinginkan habis dalam hitungan menit.
 
 ```yaml
 Type: System.Int32
@@ -400,7 +403,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerManagedOutboundIpCount
-Jumlah IP keluar terkelola yang diinginkan untuk penyeimbang muat kluster.
+Jumlah IP keluar terkelola yang diinginkan untuk kluster load balancer.
 
 ```yaml
 Type: System.Int32
@@ -415,7 +418,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerOutboundIp
-Sumber daya IP keluar yang diinginkan untuk penyeimbang muat kluster.
+Sumber daya IP keluar yang diinginkan untuk kluster load balancer.
 
 ```yaml
 Type: System.String[]
@@ -430,7 +433,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerOutboundIpPrefix
-Sumber daya Prefiks IP keluar yang diinginkan untuk penyeimbang muat kluster.
+Sumber daya Outbound IP Prefix yang diinginkan untuk kluster load balancer.
 
 ```yaml
 Type: System.String[]
@@ -444,8 +447,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -LoadBalancerSku
-Sku penyeimbang muat untuk kluster terkelola.
+### -LoadBalancersku
+Sku load balancer untuk kluster yang dikelola.
 
 ```yaml
 Type: System.String
@@ -460,7 +463,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi Azure untuk kluster tersebut.
+Lokasi Azure untuk kluster.
 Default ke lokasi grup sumber daya.
 
 ```yaml
@@ -476,7 +479,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-K nodes managed cluster Name.
+Nama kluster terkelola Kubernetes.
 
 ```yaml
 Type: System.String
@@ -491,7 +494,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkPlugin
-Plugin jaringan yang digunakan untuk membangun jaringan Komunikasi.
+Plugin jaringan yang digunakan untuk membangun jaringan Kubernetes.
 
 ```yaml
 Type: System.String
@@ -506,7 +509,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkPolicy
-Kebijakan jaringan yang digunakan untuk membangun jaringan Komunikasi.
+Kebijakan jaringan yang digunakan untuk membangun jaringan Kubernetes.
 
 ```yaml
 Type: System.String
@@ -521,7 +524,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeCount
-Jumlah simpul default untuk kolam renang simpul.
+Jumlah node default untuk kumpulan simpul.
 
 ```yaml
 Type: System.Int32
@@ -536,7 +539,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeMaxCount
-Jumlah maksimum node untuk penskalaan otomatis
+Jumlah node maksimum untuk penskalaan otomatis
 
 ```yaml
 Type: System.Int32
@@ -551,7 +554,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeMaxPodCount
-Jumlah maksimum pod yang dapat dijalankan pada simpul.
+Jumlah maksimum pod yang dapat dijalankan pada node.
 
 ```yaml
 Type: System.Int32
@@ -566,7 +569,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeMinCount
-Jumlah minimum node untuk penskalaan otomatis.
+Jumlah node minimum untuk penskalaan otomatis.
 
 ```yaml
 Type: System.Int32
@@ -581,7 +584,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeName
-Nama unik profil kelompok agen sesuai konteks langganan dan grup sumber daya.
+Nama unik profil kumpulan agen dalam konteks langganan dan grup sumber daya.
 
 ```yaml
 Type: System.String
@@ -596,7 +599,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeOsDiskSize
-Ukuran dalam GB disk OS untuk setiap simpul dalam kolam simpul. Minimal 30 GB.
+Ukuran dalam GB disk OS untuk setiap simpul dalam kumpulan simpul. Minimal 30 GB.
 
 ```yaml
 Type: System.Int32
@@ -611,7 +614,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodePoolLabel
-Label kolam renang node yang digunakan untuk membangun jaringan Komunikasi.
+Node pool label yang digunakan untuk membangun jaringan Kubernetes.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -626,7 +629,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodePoolMode
-NodePoolMode mewakili mode node pool.
+NodePoolMode mewakili mode kumpulan simpul.
 
 ```yaml
 Type: System.String
@@ -641,7 +644,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodePublicIPPrefixID
-Id sumber daya prefiks IP publik untuk node pool.
+Id sumber daya prefiks IP publik untuk kumpulan simpul.
 
 ```yaml
 Type: System.String
@@ -656,7 +659,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeScaleSetEvictionPolicy
-ScaleSetEvictionPolicy akan digunakan untuk menentukan kebijakan pembatasan untuk kumpulan skala mesin virtual berprioritas rendah. Default untuk Hapus.
+ScaleSetEvictionPolicy yang akan digunakan untuk menentukan kebijakan penggusuran untuk kumpulan skala mesin virtual prioritas rendah. Default ke Hapus.
 
 ```yaml
 Type: System.String
@@ -671,7 +674,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeSetPriority
-ScaleSetPriority untuk digunakan untuk menentukan prioritas set skala mesin virtual. Default menjadi reguler.
+ScaleSetPriority yang akan digunakan untuk menentukan prioritas rangkaian skala mesin virtual. Default ke reguler.
 
 ```yaml
 Type: System.String
@@ -686,7 +689,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeVmSetType
-AgentPoolType mewakili tipe agen terkumpul. Nilai yang memungkinkan meliputi: 'VirtualMachineScaleSets', 'AvailabilitySet'
+AgentPoolType mewakili tipe kumpulan agen. Nilai yang memungkinkan termasuk: 'VirtualMachineScaleSets', 'AvailabilitySet'
 
 ```yaml
 Type: System.String
@@ -701,7 +704,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeVmSize
-Ukuran Komputer Virtual. Nilai default adalah Standard_D2_v2.
+Ukuran Mesin Virtual. Nilai default adalah Standard_D2_v2.
 
 ```yaml
 Type: System.String
@@ -731,7 +734,7 @@ Accept wildcard characters: False
 ```
 
 ### -PodCidr
-Pod cidr digunakan untuk jaringan Perusahaan yang membangun.
+Pod cidr digunakan untuk membangun jaringan Kubernetes.
 
 ```yaml
 Type: System.String
@@ -761,7 +764,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceCidr
-Layanan cidr digunakan untuk jaringan Komunikasi gedung.
+Service cidr digunakan untuk membangun jaringan Kubernetes.
 
 ```yaml
 Type: System.String
@@ -776,7 +779,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalIdAndSecret
-Id klien dan rahasia klien terkait dengan AAD / prinsipal layanan.
+Id klien dan rahasia klien yang terkait dengan aplikasi AAD / prinsipal layanan.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -790,9 +793,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ValueKeyValue
-Nilai file kunci DEFAULT atau jalur file kunci.
-Default untuk {HOME}/.comments/id_rsa.pub.
+### -SshKeyValue
+Nilai file kunci SSH atau jalur file kunci.
+Default ke {HOME}/.ssh/id_rsa.pub.
 
 ```yaml
 Type: System.String
@@ -824,7 +827,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengganti langganan hanya berlaku selama siklus hidup cmdlet saat ini. Langganan tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
+Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -854,7 +857,7 @@ Accept wildcard characters: False
 ```
 
 ### -WindowsProfileAdminUserName
-Nama pengguna administrator untuk digunakan Windows VM.
+Nama pengguna administrator yang digunakan untuk Windows VM.
 
 ```yaml
 Type: System.String
@@ -869,7 +872,7 @@ Accept wildcard characters: False
 ```
 
 ### -WindowsProfileAdminUserPassword
-Kata sandi administrator untuk digunakan Windows VM, panjangnya harus setidaknya 12, yang berisi setidaknya satu karakter huruf kecil, `[a-z]`yaitu , `[A-Z]` satu dan satu karakter khusus `[!@#$%^&*()]`.
+Kata sandi administrator untuk digunakan untuk Windows VM, panjangnya harus setidaknya 12, berisi setidaknya satu karakter huruf kecil, yaitu `[a-z]`, satu `[A-Z]` dan satu karakter `[!@#$%^&*()]`khusus .
 
 ```yaml
 Type: System.Security.SecureString
@@ -884,7 +887,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceResourceId
-Id Sumber Daya ruang kerja addon Pemantauan.
+Id Sumber Daya ruang kerja add-on Pemantauan.
 
 ```yaml
 Type: System.String
@@ -899,7 +902,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -915,7 +918,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -930,15 +933,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Aks.Models.PSK azuresCluster
+### Microsoft.Azure.Commands.Aks.Models.PSKubernetesCluster
 
 ## CATATAN
 

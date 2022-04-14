@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.iothu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/IotHub/Commands.IotHub/help/Test-AzureRmIotHubRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/IotHub/Commands.IotHub/help/Test-AzureRmIotHubRoute.md
-ms.openlocfilehash: 634d06e80c01a97eca83b07f30c5dfdc8f550cdb937b694ecb8e5a22fc2285cd
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: f51ba85215d252959b974a39ea864b1c98fce460
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140864561"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141823145"
 ---
 # Test-AzureRmIotHubRoute
 
 ## SYNOPSIS
-Menguji rute dalam Hub IoT
+Menguji rute di IoT Hub
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -70,7 +70,7 @@ Test-AzureRmIotHubRoute [-ResourceId] <String> [-Source] <PSRoutingSource> [-Bod
 ```
 
 ## DESCRIPTION
-Menguji rute tertentu.
+Uji rute tertentu.
 
 ## EXAMPLES
 
@@ -93,7 +93,7 @@ PS C:\> Test-AzureRmIotHubRoute -ResourceGroupName "myresourcegroup" -Name "myio
 Result : true
 ```
 
-Menguji rute tertentu.
+Uji rute tertentu.
 
 ### Contoh 3
 ```
@@ -104,7 +104,7 @@ ErrorMessage  Severity LocationStartLine LocationStartColumn LocationEndLine Loc
 Syntax error. error    1                 29                  1               30
 ```
 
-Menguji rute tertentu dan memperlihatkan alasan kegagalan.
+Uji rute tertentu dan tunjukkan alasan kegagalan.
 
 ## PARAMETERS
 
@@ -123,7 +123,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Body
+### -Isi
 Isi pesan rute
 
 ```yaml
@@ -260,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### -SystemProperty
-Properti sistem pesan rute
+Properti sistem dari pesan rute
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -275,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -285,7 +285,7 @@ System.String
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSTestRouteResult
-Microsoft.Azure.Commands.Management.IotHub.Models.PSRouteCompilationError System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Management.IotHub.Models.PSRouteProperties, Microsoft.Azure.Commands.IotHub, Version=3.1.3.0, Culture=neutral, PublicKeyToken=null]]
+Microsoft.Azure.Commands.Management.IotHub.Models.PSRouteCompilationError System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Management.IotHub.Models.PSRouteProperties, Microsoft.Azure.Commands.IotHub, Version=3.1.3.0, Culture=netral, PublicKeyToken=null]]
 
 ## CATATAN
 

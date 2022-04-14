@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Get-AzPrivateDnsVirtualNetworkLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Get-AzPrivateDnsVirtualNetworkLink.md
-ms.openlocfilehash: db8f9a8cbc05a986c3a995d030c1e674e98e9872
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 50c5c5fee74d78513336069bb85a875a7ce8b149
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140007014"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142029971"
 ---
 # Get-AzPrivateDnsVirtualNetworkLink
 
 ## SYNOPSIS
-Mendapatkan link jaringan virtual yang terkait dengan zona DNS Privat yang ditentukan.
+Mendapatkan tautan jaringan virtual yang terkait dengan zona DNS Pribadi tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.privatedns/get-azprivatednsvirtualnetworklink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,14 +29,14 @@ Get-AzPrivateDnsVirtualNetworkLink -ResourceGroupName <String> -ZoneName <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzPrivateDnsVirtualNetworkLink** mendapatkan link jaringan virtual yang terkait dengan zona DNS Privat tertentu dari grup sumber daya yang ditentukan.
-Jika Anda menentukan parameter *Nama* , satu objek **PSPrivateDnsVirtualNetworkLink** dikembalikan.
-Jika Anda tidak menentukan parameter *Name* , array yang berisi semua link yang terkait dengan zona dalam grup sumber daya yang ditentukan akan dikembalikan.
-Anda bisa menggunakan **objek PSPrivateDnsVirtualNetworkLink** untuk memperbarui link.
+Cmdlet **Get-AzPrivateDnsVirtualNetworkLink** mendapatkan tautan jaringan virtual yang terkait dengan zona DNS Pribadi tertentu dari grup sumber daya yang ditentukan.
+Jika Anda menentukan parameter *Nama* , sebuah objek **PSPrivateDnsVirtualNetworkLink** dikembalikan.
+Jika Anda tidak menentukan parameter *Nama* , array yang berisi semua link yang terkait dengan zona dalam grup sumber daya yang ditentukan akan dikembalikan.
+Anda dapat menggunakan objek **PSPrivateDnsVirtualNetworkLink** untuk memperbarui tautan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan link jaringan virtual.
+### Contoh 1: Dapatkan tautan jaringan virtual.
 ```
 PS C:\> $Link = Get-AzPrivateDnsVirtualNetworkLink -ResourceGroupName "MyResourceGroup" -ZoneName "myzone.com" -Name "mylink"
 
@@ -54,9 +57,9 @@ VirtualNetworkLinkState : Completed
 ProvisioningState       : Succeeded
 ```
 
-Contoh ini mendapatkan link jaringan virtual mylink yang terkait dengan zona DNS Privat bernama myzone.com dari grup sumber daya yang ditentukan, lalu menyimpannya di $Link tertentu.
+Contoh ini mendapatkan tautan jaringan virtual mylink yang terkait dengan zona DNS Pribadi bernama myzone.com dari grup sumber daya tertentu, lalu menyimpannya dalam variabel $Link.
 
-### Contoh 2: Dapatkan semua link yang terkait dengan zona dalam grup sumber daya.
+### Contoh 2: Dapatkan semua tautan yang terkait dengan zona dalam grup sumber daya.
 ```
 PS C:\> $Links = Get-AzPrivateDnsVirtualNetworkLink -ResourceGroupName "MyResourceGroup" -ZoneName "myzone.com"
 
@@ -89,12 +92,12 @@ VirtualNetworkLinkState : Completed
 ProvisioningState       : Succeeded
 ```
 
-Contoh ini mendapatkan semua link jaringan virtual yang terkait dengan "myzone.com" zona DNS Privat dalam grup sumber daya yang ditentukan, lalu menyimpannya di $Links terbatas.
+Contoh ini mendapatkan semua tautan jaringan virtual yang terkait dengan zona DNS Pribadi "myzone.com" dalam grup sumber daya yang ditentukan, lalu menyimpannya dalam variabel $Links.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -109,8 +112,8 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama dari link jaringan virtual untuk mendapatkan.
-Jika Anda tidak menentukan nilai *untuk Parameter nama* , cmdlet ini akan mendapatkan semua link yang terkait dengan zona DNS Privat tertentu dalam grup sumber daya yang ditentukan.
+Menentukan nama tautan jaringan virtual untuk didapatkan.
+Jika Anda tidak menentukan nilai untuk parameter *Nama* , cmdlet ini mendapatkan semua link yang terkait dengan zona DNS Pribadi tertentu dalam grup sumber daya yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi link jaringan virtual untuk mendapatkan.
+Menentukan nama grup sumber daya yang berisi tautan jaringan virtual untuk didapatkan.
 
 ```yaml
 Type: System.String
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneName
-Menentukan nama zona DNS Privat tempat link jaringan virtual ditautkan.
+Menentukan nama zona DNS Privat tempat tautan jaringan virtual ditautkan.
 
 
 ```yaml
@@ -156,11 +159,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

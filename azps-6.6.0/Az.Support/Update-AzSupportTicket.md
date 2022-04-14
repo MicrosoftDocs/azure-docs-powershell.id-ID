@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/Update-AzSupportTicket.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/Update-AzSupportTicket.md
 ms.openlocfilehash: 01d5e9378910b99a6c5da932cfbebb99cd8d1aa9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140276017"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141794966"
 ---
 # Update-AzSupportTicket
 
 ## SYNOPSIS
-Update support ticket.
+Memperbarui tiket dukungan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.support/update-azsupportticket) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.support/update-azsupportticket) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,11 +54,11 @@ Update-AzSupportTicket -InputObject <PSSupportTicket> [-Severity <Severity>] [-S
 ```
 
 ## DESCRIPTION
-Gunakan cmdlet ini untuk memperbarui tingkat keparahan, status, atau detail kontak pelanggan dukungan. Perlu diketahui bahwa memperbarui tingkat keparahan atau status tiket dukungan tidak diperbolehkan saat tiket ditetapkan ke teknisi dukungan. Jika Anda ingin memperbarui tingkat keparahan atau status setelah penetapan tiket, hubungi teknisi dukungan dengan mengirimkan komunikasi tentang tiket.
+Gunakan cmdlet ini untuk memperbarui tingkat keparahan, status, atau detail kontak pelanggan tiket dukungan. Perhatikan bahwa memperbarui tingkat keparahan atau status tiket dukungan tidak diperbolehkan saat tiket ditetapkan ke teknisi dukungan. Jika Anda ingin memperbarui tingkat keparahan atau status setelah penetapan tiket, hubungi teknisi dukungan dengan mengirimkan komunikasi pada tiket.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui keparahan tiket dukungan.
+### Contoh 1: Memperbarui tingkat keparahan tiket dukungan.
 ```powershell
 PS C:\> Update-AzSupportTicket -Name "test1" -Severity "moderate"
 
@@ -67,7 +67,7 @@ Name  Title                        SupportTicketId Severity ServiceDisplayName  
 test1 test title1                  150010521000317 Moderate Virtual Machine running Linux Open   2/5/2020 1:33:53 AM
 ```
 
-### Contoh 2: Perbarui status tiket dukungan.
+### Contoh 2: Memperbarui status tiket dukungan.
 ```powershell
 PS C:\> Update-AzSupportTicket -Name "test1" -Status "Closed"
 
@@ -76,7 +76,7 @@ Name  Title                        SupportTicketId Severity ServiceDisplayName  
 test1 test title1                  150010521000317 Moderate Virtual Machine running Linux Closed   2/5/2020 1:33:53 AM
 ```
 
-### Contoh 3: Perbarui detail kontak tiket dukungan berdasarkan tentukan objek kontak.
+### Contoh 3: Memperbarui detail kontak tiket dukungan dengan menentukan objek kontak.
 ```powershell
 PS C:\> $contactDetail = new-object Microsoft.Azure.Commands.Support.Models.PSContactProfile
 PS C:\> $contactDetail.FirstName = "first name updated"
@@ -88,7 +88,7 @@ Name  Title                        SupportTicketId Severity ServiceDisplayName  
 test1 test title1                  150010521000317 Moderate Virtual Machine running Linux Open   2/5/2020 1:33:53 AM
 ```
 
-### Contoh 4: Perbarui keparahan tiket dukungan dengan pemipaan objek tiket dukungan.
+### Contoh 4: Perbarui tingkat keparahan tiket dukungan dengan objek tiket dukungan perpipaan.
 ```powershell
 PS C:\> Get-AzSupportTicket -Name "test1" | Update-AzSupportTicket -Severity "moderate"
 
@@ -97,7 +97,7 @@ Name  Title                        SupportTicketId Severity ServiceDisplayName  
 test1 test title1                  150010521000317 Moderate Virtual Machine running Linux Open   2/5/2020 1:33:53 AM
 ```
 
-### Contoh 5: Perbarui detail kontak tiket dukungan dengan menentukan parameter kontak individual.
+### Contoh 5: Memperbarui detail kontak tiket dukungan dengan menentukan parameter kontak individual.
 ```powershell
 PS C:\> Update-AzSupportTicket -Name "test1" -CustomerFirstName "first name updated" -CustomerLastName "last name updated" -AdditionalEmailAddress @("user2@contoso.com") 
 
@@ -106,7 +106,7 @@ Name  Title                        SupportTicketId Severity ServiceDisplayName  
 test1 test title1                  150010521000317 Moderate Virtual Machine running Linux Open   2/5/2020 1:33:53 AM
 ```
 
-### Contoh 6: Perbarui status tiket dukungan dengan piping support ticket object.
+### Contoh 6: Memperbarui status tiket dukungan dengan objek tiket dukungan perpipaan.
 ```powershell
 PS C:\> Get-AzSupportTicket -Name "test1" | Update-AzSupportTicket -Status "Closed"
 
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomerContactDetail
-Perbarui detail Kontak pada SupportTicket.
+Perbarui Detail kontak di SupportTicket.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Support.Models.PSContactProfile
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 
 ### -CustomerCountry
 Negara pelanggan.
-Kode ini harus merupakan kode negara ISO Alpha-3 yang valid (ISO 3166).
+Kode ini harus berupa kode negara ISO Alpha-3 yang valid (ISO 3166).
 
 ```yaml
 Type: System.String
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 
 ### -CustomerPhoneNumber
 Nomor telepon pelanggan.
-Ini diperlukan jika metode kontak yang lebih disukai adalah telepon.
+Ini diperlukan jika metode kontak pilihan adalah telepon.
 
 ```yaml
 Type: System.String
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 
 ### -CustomerPreferredSupportLanguage
 Bahasa dukungan pilihan pelanggan.
-Kode ini harus merupakan kode lanjutan bahasa yang valid untuk salah satu bahasa yang didukung yang tercantum di sini https://azure.microsoft.com/support/faq/.
+Kode ini harus merupakan kode kontry bahasa yang valid untuk salah satu bahasa yang didukung yang tercantum di sini https://azure.microsoft.com/support/faq/.
 
 ```yaml
 Type: System.String
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 
 ### -CustomerPreferredTimeZone
 Zona waktu pilihan pelanggan.
-Nilai ini harus bernilai System.TimeZoneInfo.Id valid.
+Ini harus berupa nilai System.TimeZoneInfo.Id yang valid.
 
 ```yaml
 Type: System.String
@@ -303,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreferredContactMethod
-Memilih metode kontak.
+Metode kontak pilihan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Support.Models.ContactMethod
@@ -319,7 +319,7 @@ Accept wildcard characters: False
 ```
 
 ### -Keparahan
-Perbarui Keparahan SupportTicket.
+Perbarui Tingkat Keparahan SupportTicket.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Support.Models.Severity
@@ -335,7 +335,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Perbarui Status SupportTicket.
+Perbarui Status DukunganTicket.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Support.Models.Status
@@ -351,7 +351,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -367,7 +367,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -382,7 +382,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

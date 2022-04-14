@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Get-AzAlert.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Get-AzAlert.md
 ms.openlocfilehash: 6e4aa9efc2329d1669e1ba243ecae06a61676031
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140110961"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141809438"
 ---
 # Get-AzAlert
 
 ## SYNOPSIS
-Dapatkan Informasi Pemberitahuan
+Dapatkan Informasi Peringatan
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.alertsmanagement/get-azalert) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.alertsmanagement/get-azalert) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +46,7 @@ Get-AzAlert [-TargetResourceId <String>] [-MonitorService <String>] [-MonitorCon
 ```
 
 ## DESCRIPTION
-**Cmdlet Get-AzAlert** mendapatkan contoh pemberitahuan fired.
+**Cmdlet Get-AzAlert** mendapatkan instans peringatan yang ditembakkan.
 
 ## EXAMPLES
 
@@ -55,7 +55,7 @@ Get-AzAlert [-TargetResourceId <String>] [-MonitorService <String>] [-MonitorCon
 PS C:\> Get-AzAlert -Severity "Sev2" -MonitorCondition "Fired" -IncludeContext $true
 ```
 
-List all alerts with Sev2 severity and Fired monitor condition. Mengatur IncludeContext ke true, menyertakan muatan pemberitahuan kustom.
+Cantumkan semua pemberitahuan dengan kondisi sev2 severity dan Fired monitor. Pengaturan SertakanContext ke true, sertakan beban kustom pemberitahuan.
 Gunakan Format-List untuk mendapatkan detail lengkap setiap pemberitahuan dalam daftar.
 
 ### Contoh 2
@@ -63,11 +63,11 @@ Gunakan Format-List untuk mendapatkan detail lengkap setiap pemberitahuan dalam 
 PS C:\> Get-AzAlert -AlertId "afbf1b3a-0a6c-4f19-9c9b-644ccd7b1529" | Format-List
 ```
 
-Dapatkan detail Pemberitahuan berdasarkan Id (GUID) atau Id Sumber Daya (Id ARM Lengkap)
+Dapatkan detail Peringatan berdasarkan Id (GUID) atau Id Sumber Daya (Complete ARM Id)
 
 ### Contoh 3
 
-Dapatkan Informasi Pemberitahuan. (otomatisgenerated)
+Dapatkan Informasi Peringatan. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -77,7 +77,7 @@ Get-AzAlert -IncludeContext $true -TimeRange '1h'
 ## PARAMETERS
 
 ### -AlertId
-Pengidentifikasi Unik Pemberitahuan / ResourceId pemberitahuan.
+Pengidentifikasi Unik Peringatan / ResourceId pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -AlertRuleId
-Filter pada ID Aturan Pemberitahuan
+Filter pada Id Aturan Peringatan
 
 ```yaml
 Type: System.String
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomTimeRange
-Format yang didukung - \<start-time\>/\<end-time\> ketika waktu dalam format ISO-8601
+Format yang didukung - \<start-time\>/\<end-time\> di mana waktu berada dalam format ISO-8601
 
 ```yaml
 Type: System.String
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeContext
-Sertakan konteks (muat kustom) pemberitahuan
+Menyertakan konteks (beban kustom) pemberitahuan
 
 ```yaml
 Type: System.Boolean
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonitorService
-Filter berdasarkan Layanan Seniter
+Filter pada Layanan Moniter
 
 ```yaml
 Type: System.String
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -PageCount
-Jumlah pemberitahuan yang akan diambil di halaman.
+Jumlah pemberitahuan yang akan disambungkan dalam halaman.
 
 ```yaml
 Type: System.Int32
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pilih
-Project bidang yang diperlukan dari yang penting.
+Project bidang yang diperlukan dari hal-hal penting.
 Input yang diharapkan dipisahkan koma.
 
 ```yaml
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -Keparahan
-Filter berdasarkan Tingkat keparahan pemberitahuan
+Filter pada Tingkat Keparahan pemberitahuan
 
 ```yaml
 Type: System.String
@@ -258,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### -SortBy
-Properti pemberitahuan yang akan digunakan saat mengurutkan
+Properti peringatan untuk digunakan saat mengurutkan
 
 ```yaml
 Type: System.String
@@ -288,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -Negara Bagian
-Filter berdasarkan Status pemberitahuan
+Filter pada Status pemberitahuan
 
 ```yaml
 Type: System.String
@@ -303,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetResourceGroup
-Filter pada Nama grup sumber daya dari sumber daya pemberitahuan target.
+Filter pada Nama grup Sumber Daya dari sumber daya target pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -318,7 +318,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetResourceId
-Filter pada Id Sumber Daya dari sumber daya pemberitahuan target.
+Filter pada Id Sumber Daya sumber daya sumber daya pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -333,7 +333,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetResourceType
-Filter pada Tipe sumber daya dari sumber daya pemberitahuan target.
+Filter pada Tipe sumber daya sumber daya target pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -348,7 +348,7 @@ Accept wildcard characters: False
 ```
 
 ### -TimeRange
-Nilai rentang waktu yang didukung - 1j, 1d, 7d, 30d (Default adalah 1d)
+Nilai rentang waktu yang didukung - 1h, 1d, 7d, 30d (Defaultnya adalah 1d)
 
 ```yaml
 Type: System.String
@@ -363,11 +363,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

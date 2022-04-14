@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzNetworkWatcherTopology.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzNetworkWatcherTopology.md
 ms.openlocfilehash: 72f5c803c7fa4f4693da3660c41f73eadb464ab7
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425787"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141810806"
 ---
 # Get-AzNetworkWatcherTopology
 
 ## SYNOPSIS
-Mendapatkan tampilan tingkat jaringan sumber daya dan hubungannya di grup sumber daya.
+Mendapatkan tampilan tingkat jaringan sumber daya dan hubungannya dalam grup sumber daya.
 
 ## SYNTAX
 
@@ -32,11 +32,11 @@ Get-AzNetworkWatcherTopology -NetworkWatcherName <String> -ResourceGroupName <St
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzNetworkWatcherTopology cmdlet tingkat jaringan dari sumber daya dan hubungannya dalam grup sumber daya. Catatan: Jika sumber daya dari beberapa kawasan berada dalam grup sumber daya, hanya sumber daya di kawasan yang sama dengan Pengawas Jaringan yang akan disertakan dalam output JSON.
+Cmdlet Get-AzNetworkWatcherTopology tampilan tingkat jaringan sumber daya dan hubungannya dalam grup sumber daya. Catatan: Jika sumber daya dari beberapa kawasan berada di grup sumber daya, hanya sumber daya di kawasan yang sama dengan Network Watcher yang akan disertakan dalam output JSON.
 
 ## EXAMPLES
 
-### -------------------------- Contoh 1: Dapatkan dukungan Azure Topology --------------------------
+### -------------------------- Contoh 1: Mendapatkan -------------------------- Azure Topology
 ```
 $networkWatcher = Get-AzNetworkWatcher -Name NetworkWatcher_westcentralus -ResourceGroup NetworkWatcherRG 
 Get-AzNetworkWatcherTopology -NetworkWatcher $networkWatcher -ResourceGroupName testresourcegroup
@@ -139,7 +139,7 @@ Dalam contoh ini, kami menjalankan cmdlet Get-AzNetworkWatcherTopology pada grup
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengawas jaringan.
+Sumber daya pengamat jaringan.
 
 ```yaml
 Type: PSNetworkWatcher
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -226,7 +226,7 @@ System.String
 ### Microsoft.Azure.Commands.Network.Models.PSTopology
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, network, networking, network watcher, topology, view 
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, topologi, melihat 
 
 ## RELATED LINKS
 
@@ -234,7 +234,7 @@ Kata kunci: azure, azurerm, arm, resource, management, manager, network, network
 
 [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md)
 
-[Remove-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
+[Hapus-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
 
 [New-AzNetworkWatcherPacketCapture](./New-AzNetworkWatcherPacketCapture.md)
 

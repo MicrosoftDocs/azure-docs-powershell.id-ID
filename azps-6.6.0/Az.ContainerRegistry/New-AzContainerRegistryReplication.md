@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/New-AzContainerRegistryReplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/New-AzContainerRegistryReplication.md
 ms.openlocfilehash: 7a7f46eca4b8cb8e87624f733b851fa50de0e23d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140141253"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141806378"
 ---
 # New-AzContainerRegistryReplication
 
 ## SYNOPSIS
-Membuat replikasi registri wadah.
+Membuat replikasi registri kontainer.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerregistry/new-azcontainerregistryreplication) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/new-azcontainerregistryreplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-AzContainerRegistryReplication [-ResourceGroupName] <String> [-RegistryName]
  [<CommonParameters>]
 ```
 
-### RegistryObjectParameterSet
+### RegistriObjectParameterSet
 ```
 New-AzContainerRegistryReplication -Registry <PSContainerRegistry> -Location <String> [-Name <String>]
  [-Tag <Hashtable>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -42,11 +42,11 @@ New-AzContainerRegistryReplication -Location <String> [-Name <String>] [-Tag <Ha
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzContainerRegistryReplication membuat replikasi registri wadah baru.
+Cmdlet New-AzContainerRegistryReplication membuat replikasi registri kontainer baru.
 
 ## EXAMPLES
 
-### Contoh 1: Buat replikasi registri wadah baru.
+### Contoh 1: Membuat replikasi registri kontainer baru.
 ```powershell
 PS C:\>New-AzContainerRegistryReplication -ResourceGroupName "MyResourceGroup" -RegistryName "MyRegistry" -Name replication001 -Location 'west us' -Tag @{tagName='MyTag'}
 
@@ -56,12 +56,12 @@ Name                 Location   Provisioni Status               StatusTimestamp 
 replication001       westus     Succeeded  Ready                11/17/2017 10:19:45 PM         {[tagName, MyTag]}
 ```
 
-Membuat replikasi registri wadah baru.
+Buat replikasi registri kontainer baru.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Container Registry Location.
+Lokasi Registri Kontainer.
 Default ke lokasi grup sumber daya.
 
 ```yaml
@@ -92,8 +92,8 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Container Registry Replication Name.
-Default untuk nama lokasi.
+Nama Replikasi Registri Kontainer.
+Default ke nama lokasi.
 
 ```yaml
 Type: System.String
@@ -107,8 +107,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Registry
-Container Registry Object.
+### -Registri
+Objek Registri Kontainer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ContainerRegistry.PSContainerRegistry
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistryName
-Container Registry Name.
+Nama Registri Kontainer.
 
 ```yaml
 Type: System.String
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Container registry resource id
+Id sumber daya registri kontainer
 
 ```yaml
 Type: System.String
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Container Registry Tags.
+Tag Registri Kontainer.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Uninstall-AzureRm.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Uninstall-AzureRm.md
 ms.openlocfilehash: 0d310b734b588bff4c2a848d3b944314f7885c33
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140145267"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141809654"
 ---
 # Uninstall-AzureRm
 
@@ -18,7 +18,7 @@ ms.locfileid: "140145267"
 Menghapus semua modul AzureRm dari komputer.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.accounts/uninstall-azurerm) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.accounts/uninstall-azurerm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Menghapus semua modul AzureRm dari komputer.
 PS C:\> Uninstall-AzureRm
 ```
 
-Menjalankan perintah ini akan menghapus semua modul AzureRm dari komputer untuk versi PowerShell yang menjalankan cmdlet.
+Menjalankan perintah ini akan menghapus semua modul AzureRm dari komputer untuk versi PowerShell tempat cmdlet dijalankan.
 
 ## PARAMETERS
 
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Daftar Modul yang dikembalikan dihapus jika ditentukan.
+Daftar pengembalian Modul dihapus jika ditentukan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,11 +103,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkWatcherConfigFlowLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkWatcherConfigFlowLog.md
-ms.openlocfilehash: 93e0340714a0d1bc5e5977620ca41c15849d3158
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1289c8249b19125fb8fea5081ab600abb2c09123
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139999510"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142030979"
 ---
 # Set-AzNetworkWatcherConfigFlowLog
 
 ## SYNOPSIS
 Mengonfigurasi pembuatan log alur untuk sumber daya target.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/set-aznetworkwatcherconfigflowlog) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -100,11 +103,11 @@ Set-AzNetworkWatcherConfigFlowLog -Location <String> -TargetResourceId <String> 
 ```
 
 ## DESCRIPTION
-Sumber Set-AzNetworkWatcherConfigFlowLog mengonfigurasi pembuatan log alur untuk sumber daya target. Properti untuk dikonfigurasikan meliputi: apakah pembuatan log alur diaktifkan atau tidak diaktifkan untuk sumber daya yang disediakan, akun penyimpanan yang dikonfigurasikan untuk mengirim log, format pembuatan log alur, dan kebijakan penyimpanan untuk log tersebut. Saat ini Grup Keamanan Jaringan didukung untuk pembuatan log alur. 
+Set-AzNetworkWatcherConfigFlowLog mengonfigurasi pembuatan log alur untuk sumber daya target. Properti untuk dikonfigurasi meliputi: apakah pembuatan log alur diaktifkan atau tidak untuk sumber daya yang disediakan, akun penyimpanan yang dikonfigurasi untuk mengirim log, format pembuatan log aliran, dan kebijakan penyimpanan untuk log. Saat ini Grup Keamanan Jaringan didukung untuk pembuatan log alur. 
 
 ## EXAMPLES
 
-### Contoh 1: Mengonfigurasi Flow Log Untuk NSG tertentu
+### Contoh 1: Mengonfigurasi Flow Pembuatan Log untuk NSG Tertentu
 ```
 PS C:\> $NW = Get-AzNetworkWatcher -ResourceGroupName NetworkWatcherRg -Name NetworkWatcher_westcentralus
 PS C:\> $nsg = Get-AzNetworkSecurityGroup -ResourceGroupName NSGRG -Name appNSG
@@ -126,9 +129,9 @@ Format           : {
                    }
 ```
 
-Dalam contoh ini, kami mengonfigurasi status pembuatan log alur untuk Grup Keamanan Jaringan. Dalam respons, kami melihat NSG tertentu memiliki pembuatan log alur yang diaktifkan, format default, dan tidak ada kumpulan kebijakan penyimpanan.
+Dalam contoh ini, kami mengonfigurasi status pembuatan log alur untuk Grup Keamanan Jaringan. Dalam respons, kami melihat NSG yang ditentukan telah mengaktifkan pembuatan log alur, format default, dan tidak ada rangkaian kebijakan penyimpanan.
 
-### Contoh 2: Konfigurasi Flow Log Pihak Server untuk NSG tertentu dan atur versi pembuatan log alur ke 2.
+### Contoh 2: Konfigurasi Flow Pembuatan Log untuk NSG Tertentu dan atur versi pembuatan log alur ke 2.
 ```
 PS C:\> $NW = Get-AzNetworkWatcher -ResourceGroupName NetworkWatcherRg -Name NetworkWatcher_westcentralus
 PS C:\> $nsg = Get-AzNetworkSecurityGroup -ResourceGroupName NSGRG -Name appNSG
@@ -150,9 +153,9 @@ Format           : {
                    }
 ```
 
-Dalam contoh ini, kami mengonfigurasi pembuatan log alur di Grup Keamanan Jaringan (NSG, Network Security Group) dengan log versi 2 yang ditentukan. Dalam respons, kami melihat NSG tertentu memiliki pembuatan log alur yang diaktifkan, format diatur, dan tidak ada kebijakan penyimpanan yang dikonfigurasi. Jika kawasan tersebut tidak mendukung versi yang Anda tentukan, Pengawas Jaringan akan menulis versi default yang didukung di kawasan tersebut.
+Dalam contoh ini, kami mengonfigurasi pembuatan log alur di Grup Keamanan Jaringan (NSG) dengan log versi 2 yang ditentukan. Dalam respons, kami melihat NSG yang ditentukan telah mengaktifkan pembuatan log alur, format diatur, dan tidak ada kebijakan penyimpanan yang dikonfigurasi. Jika kawasan tidak mendukung versi yang Anda tentukan, Network Watcher akan menulis versi default yang didukung di kawasan.
 
-### Contoh 3: Mengonfigurasi Flow Pembuatan Log dan Analitik Lalu Lintas untuk NSG tertentu
+### Contoh 3: Mengonfigurasi Flow Pembuatan Log dan Analitik Lalu Lintas untuk NSG Tertentu
 ```
 PS C:\> $NW = Get-AzNetworkWatcher -ResourceGroupName NetworkWatcherRg -Name NetworkWatcher_westcentralus
 PS C:\> $nsg = Get-AzNetworkSecurityGroup -ResourceGroupName NSGRG -Name appNSG
@@ -184,9 +187,9 @@ FlowAnalyticsConfiguration : {
           }
 ```
 
-Dalam contoh ini, kami mengonfigurasi status pembuatan log alur dan Analitik Lalu Lintas untuk Grup Keamanan Jaringan. Dalam respons, kami melihat NSG tertentu memiliki pembuatan log alur dan Analitik Lalu Lintas yang diaktifkan, format default, dan tidak ada kumpulan kebijakan penyimpanan.
+Dalam contoh ini, kami mengonfigurasi status pembuatan log alur dan Analitik Lalu Lintas untuk Grup Keamanan Jaringan. Dalam respons, kami melihat NSG yang ditentukan memiliki pembuatan log aliran dan Analitik Lalu Lintas yang diaktifkan, format default, dan tidak ada kumpulan kebijakan penyimpanan.
 
-### Contoh 4: Menonaktifkan Analitik Lalu Lintas untuk NSG Tertentu dengan Pembuatan Log Flow dan Analitik Lalu Lintas yang dikonfigurasi
+### Contoh 4: Menonaktifkan Analitik Lalu Lintas untuk NSG Tertentu dengan Flow Pembuatan Log dan Analitik Lalu Lintas yang dikonfigurasi
 ```
 PS C:\> $NW = Get-AzNetworkWatcher -ResourceGroupName NetworkWatcherRg -Name NetworkWatcher_westcentralus
 PS C:\> $nsg = Get-AzNetworkSecurityGroup -ResourceGroupName NSGRG -Name appNSG
@@ -219,12 +222,12 @@ FlowAnalyticsConfiguration : {
           }
 ```
 
-Dalam contoh ini kami menonaktifkan Analitik Lalu Lintas untuk Grup Keamanan Jaringan yang memiliki pembuatan log alur dan Analitik Lalu Lintas yang dikonfigurasi sebelumnya. Dalam respons, kami melihat NSG tertentu memiliki pembuatan log alur yang diaktifkan tetapi Analitik Lalu Lintas dinonaktifkan.
+Dalam contoh ini, kami menonaktifkan Analitik Lalu Lintas untuk Grup Keamanan Jaringan yang memiliki pembuatan log aliran dan Analitik Lalu Lintas yang dikonfigurasi sebelumnya. Dalam respons, kami melihat NSG yang ditentukan telah mengaktifkan pembuatan log aliran tetapi Analitik Lalu Lintas dinonaktifkan.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -239,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -254,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableFlowLog
-Bendera untuk mengaktifkan/menonaktifkan pembuatan log alur.
+Tandai untuk mengaktifkan/menonaktifkan pembuatan log alur.
 
 ```yaml
 Type: System.Boolean
@@ -269,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableRetention
-Bendera untuk mengaktifkan/menonaktifkan penyimpanan.
+Tandai untuk mengaktifkan/menonaktifkan penyimpanan.
 
 ```yaml
 Type: System.Boolean
@@ -284,7 +287,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableTrafficAnalytics
-Bendera untuk mengaktifkan/menonaktifkan penyimpanan.
+Tandai untuk mengaktifkan/menonaktifkan penyimpanan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -344,7 +347,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengawas jaringan.
+Sumber daya pengamat jaringan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
@@ -434,7 +437,7 @@ Accept wildcard characters: False
 ```
 
 ### -TrafficAnalyticsInterval
-Mendapatkan atau mengatur interval (dalam menit) yang akan menentukan seberapa sering layanan TA harus melakukan analitik alur. Nilai yang didukung adalah 10 dan 60 menit.
+Mendapatkan atau mengatur interval (dalam menit) yang akan memutuskan seberapa sering layanan TA harus melakukan analitik alur. Nilai yang didukung adalah 10 dan 60 menit.
 
 ```yaml
 Type: System.Int32
@@ -521,7 +524,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -536,7 +539,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -551,7 +554,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -563,7 +566,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Int32
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### Microsoft.Azure.Management.Internal.Network.Common.IOperationalInsightWorkspace
 
@@ -572,7 +575,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSFlowLog
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, network, networking, watcher, flow, logs, flowlog, logging
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengawas, aliran, log, flowlog, pembuatan log
 
 ## RELATED LINKS
 
@@ -580,7 +583,7 @@ Kata kunci: azure, azurerm, arm, resource, management, manager, network, network
 
 [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md)
 
-[Remove-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
+[Hapus-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
 
 [Get-AzNetworkWatcherNextHop](./Get-AzNetworkWatcherNextHop.md)
 
@@ -620,9 +623,9 @@ Kata kunci: azure, azurerm, arm, resource, management, manager, network, network
 
 [Get-AzNetworkWatcherTroubleshootingResult](./Get-AzNetworkWatcherTroubleshootingResult.md)
 
-[Get-AzNetworkWatcherReachabilityReport](./Get-AzNetworkWatcherReachabilityReport.md)
+[Get-AzNetworkWatcherReacherReportability](./Get-AzNetworkWatcherReachabilityReport.md)
 
-[Get-AzNetworkWatcherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
+[Get-AzNetworkWatcherReacherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
 
 [Get-AzNetworkWatcherFlowLogStatus](./Get-AzNetworkWatcherFlowLogStatus.md)
 

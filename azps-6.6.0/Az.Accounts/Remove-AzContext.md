@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Remove-AzContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Remove-AzContext.md
 ms.openlocfilehash: 9db7a706c7fa620bb931ed3bba1e8ac2bc78a67d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140508081"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141809852"
 ---
 # Remove-AzContext
 
@@ -18,7 +18,7 @@ ms.locfileid: "140508081"
 Menghapus konteks dari kumpulan konteks yang tersedia
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.accounts/remove-azcontext) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.accounts/remove-azcontext) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,14 +28,14 @@ Remove-AzContext -InputObject <PSAzureContext> [-Force] [-PassThru] [-Scope <Con
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RemoveByName
+### HapusByName
 ```
 Remove-AzContext [-Force] [-PassThru] [-Scope <ContextModificationScope>]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [-Name] <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Menghapus konteks Azure dari kumpulan konteks
+Menghapus konteks azure dari kumpulan konteks
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ Menghapus konteks yang bernama default
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -63,8 +63,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Menghapus konteks meskipun konteks adalah defaultnya
+### -Paksa
+Menghapus konteks meskipun merupakan default
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek konteks, biasanya melewati saluran.
+Objek konteks, biasanya melewati pipa.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Profile.Models.Core.PSAzureContext
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Menentukan lingkup perubahan konteks, misalnya, apakah perubahan diterapkan hanya pada proses saat ini, atau pada semua sesi yang dimulai oleh pengguna ini
+Menentukan lingkup perubahan konteks, misalnya, apakah perubahan hanya berlaku untuk proses saat ini, atau ke semua sesi yang dimulai oleh pengguna ini
 
 ```yaml
 Type: Microsoft.Azure.Commands.Profile.Common.ContextModificationScope
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

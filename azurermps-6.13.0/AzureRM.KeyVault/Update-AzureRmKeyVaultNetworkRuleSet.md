@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/KeyVault/Commands.KeyVault/help/Update-AzureRmKeyVaultNetworkRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/KeyVault/Commands.KeyVault/help/Update-AzureRmKeyVaultNetworkRuleSet.md
 ms.openlocfilehash: b1a0081f24932cf25026bdea4e9064e9dbb5a0cb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140856398"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141778743"
 ---
 # Update-AzureRmKeyVaultNetworkRuleSet
 
 ## SYNOPSIS
-Memperbarui aturan jaringan yang diatur di kunci vault.
+Memperbarui aturan jaringan yang diatur pada kubah kunci.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -46,7 +46,7 @@ Update-AzureRmKeyVaultNetworkRuleSet [-ResourceId] <String>
 ```
 
 ## DESCRIPTION
-Perintah **Update-AzureRmKeyVaultNetworkRuleSet** memperbarui aturan jaringan yang berlaku di penyimpanan kunci yang ditentukan. 
+Perintah **Perbarui-AzureRmKeyVaultNetworkRuleSet** memperbarui aturan jaringan yang berlaku pada kubah kunci yang ditentukan. 
 
 ## EXAMPLES
 
@@ -96,12 +96,12 @@ Network Rule Set                 :
 Tags                             :
 ```
 
-Perintah ini memperbarui aturan jaringan pada penyimpanan bernama 'myVault' untuk rentang IP tertentu dan jaringan virtual, yang memungkinkan melewati aturan jaringan untuk layanan Azure.
+Perintah ini memperbarui aturan jaringan pada kubah bernama 'myVault' untuk rentang IP tertentu dan jaringan virtual, yang memungkinkan melewati aturan jaringan untuk layanan Azure.
 
 ## PARAMETERS
 
 ### -Bypass
-Menentukan lewati aturan jaringan.
+Menentukan bypass aturan jaringan.
 
 ```yaml
 Type: PSKeyVaultNetworkRuleBypassEnum
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultAction
-Menentukan tindakan default aturan jaringan.
+Menentukan aksi default aturan jaringan.
 
 ```yaml
 Type: PSKeyVaultNetworkRuleDefaultActionEnum
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpAddressRange
-Menentukan rentang alamat IP jaringan yang diizinkan dari aturan jaringan.
+Menentukan rentang alamat IP jaringan yang diperbolehkan dari aturan jaringan.
 
 ```yaml
 Type: String[]
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 
 ### -PassThru
 Cmdlet ini tidak mengembalikan objek secara default.
-Jika sakelar ini ditentukan, tombol tersebut akan mengembalikan objek vault kunci yang diperbarui.
+Jika sakelar ini ditentukan, maka akan mengembalikan objek kubah kunci yang diperbarui.
 
 ```yaml
 Type: SwitchParameter
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang terkait dengan penyimpanan kunci yang aturan jaringannya sedang diubah.
+Menentukan nama grup sumber daya yang terkait dengan kubah kunci yang aturan jaringannya sedang diubah.
 
 ```yaml
 Type: String
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kunci vault yang aturan jaringannya sedang dimodifikasi.
+Menentukan nama kubah kunci yang aturan jaringannya sedang diubah.
 
 ```yaml
 Type: String
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkResourceId
-Menentukan pengidentifikasi sumber daya jaringan virtual yang diperbolehkan dari aturan jaringan.
+Menentukan pengidentifikasi sumber daya jaringan maya yang diperbolehkan dari aturan jaringan.
 
 ```yaml
 Type: String[]
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -270,7 +270,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -285,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

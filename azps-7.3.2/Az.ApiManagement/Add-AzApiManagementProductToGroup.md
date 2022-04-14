@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Add-AzApiManagementProductToGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Add-AzApiManagementProductToGroup.md
-ms.openlocfilehash: cd8fca02a31b31bd70f6840681d112f2e92987ca
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 95e6d84a60951a08615d56ba5ba8e0057da30aa6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140558279"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141856958"
 ---
 # Add-AzApiManagementProductToGroup
 
 ## SYNOPSIS
 Menambahkan produk ke grup.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/add-azapimanagementproducttogroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Add-AzApiManagementProductToGroup -Context <PsApiManagementContext> -GroupId <St
 
 ## DESCRIPTION
 Cmdlet **Add-AzApiManagementProductToGroup** menambahkan produk ke grup yang sudah ada.
-Dengan kata lain, cmdlet ini menetapkan grup ke produk.
+Dengan kata lain, cmdlet ini menetapkan grup ke sebuah produk.
 
 ## EXAMPLES
 
@@ -58,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

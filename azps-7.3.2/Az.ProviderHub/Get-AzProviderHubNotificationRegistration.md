@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Get-AzProviderHubNotificationRegistration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Get-AzProviderHubNotificationRegistration.md
-ms.openlocfilehash: 89d0f029f564f025c195de95bd237a9c6cedaacd
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 216a84c6414b308d8f1257df98dcbc6a6d4eab64
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140006951"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142029935"
 ---
 # Get-AzProviderHubNotificationRegistration
 
 ## SYNOPSIS
 Mendapatkan detail pendaftaran pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.providerhub/get-azproviderhubnotificationregistration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzProviderHubNotificationRegistration -ProviderNamespace <String> [-Subscrip
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzProviderHubNotificationRegistration -Name <String> -ProviderNamespace <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -42,7 +45,7 @@ Mendapatkan detail pendaftaran pemberitahuan.
 
 ## EXAMPLES
 
-### Contoh 1:  List all the notification registration by ProviderNamespace.
+### Contoh 1: Cantumkan semua pendaftaran pemberitahuan menurut ProviderNamespace.
 ```powershell
 PS C:\> Get-AzProviderHubNotificationRegistration -ProviderNamespace "Microsoft.Contoso"
 
@@ -52,9 +55,9 @@ notificationRegistrationTest1
 notificationRegistrationTest2
 ```
 
-List all the notification registration in the provider namespace.
+Cantumkan semua pendaftaran pemberitahuan di ruang nama penyedia.
 
-### Contoh 2: Dapatkan pendaftaran pemberitahuan menurut nama.
+### Contoh 2: Dapatkan pendaftaran pemberitahuan berdasarkan nama.
 ```powershell
 PS C:\> Get-AzProviderHubNotificationRegistration -ProviderNamespace "Microsoft.Contoso" -Name "notificationRegistrationTest"
 
@@ -63,7 +66,7 @@ Name
 notificationRegistrationTest
 ```
 
-Dapatkan pendaftaran pemberitahuan menurut nama.
+Dapatkan pendaftaran pemberitahuan berdasarkan nama.
 
 ## PARAMETERS
 
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.IProviderHubIdentity
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -167,7 +170,7 @@ INPUTOBJECT <IProviderHubIdentity>: Parameter Identitas
   - `[NestedResourceTypeFirst <String>]`: Tipe sumber daya anak pertama.
   - `[NestedResourceTypeSecond <String>]`: Tipe sumber daya anak kedua.
   - `[NestedResourceTypeThird <String>]`: Tipe sumber daya anak ketiga.
-  - `[NotificationRegistrationName <String>]`: Pendaftaran pemberitahuan.
+  - `[NotificationRegistrationName <String>]`: Registrasi pemberitahuan.
   - `[ProviderNamespace <String>]`: Nama penyedia sumber daya yang dihosting dalam ProviderHub.
   - `[ResourceType <String>]`: Tipe sumber daya.
   - `[RolloutName <String>]`: Nama peluncuran.

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Get-AzureRmVMImageOffer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Get-AzureRmVMImageOffer.md
 ms.openlocfilehash: 66c0355af202c5900fddc60c81e92f2851ddc1ab
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419590"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141886865"
 ---
 # Get-AzureRmVMImageOffer
 
 ## SYNOPSIS
-Mendapatkan jenis penawaran VMImage.
+Mendapatkan tipe penawaran VMImage.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ Get-AzureRmVMImageOffer -Location <String> -PublisherName <String> [-DefaultProf
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmVMImageOffer** mendapatkan jenis penawaran VMImage.
+Cmdlet **Get-AzureRmVMImageOffer** mendapatkan tipe penawaran VMImage.
 
 ## EXAMPLES
 
@@ -37,12 +37,12 @@ Cmdlet **Get-AzureRmVMImageOffer** mendapatkan jenis penawaran VMImage.
 PS C:\> Get-AzureRmVMImageOffer -Location "Central US" -PublisherName "Fabrikam"
 ```
 
-Perintah ini mendapatkan tipe penawaran untuk penerbit tertentu di kawasan As Tengah.
+Perintah ini mendapatkan tipe penawaran untuk penerbit tertentu di kawasan AS Tengah.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -106,8 +106,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmVMImagePublisher](./Get-AzureRmVMImagePublisher.md)
 
-[Get-AzureRmVMImageSku](./Get-AzureRmVMImageSku.md)
+[Get-AzureRmvmImagesku](./Get-AzureRmVMImageSku.md)
 
-[Save-AzureRmVMImage](./Save-AzureRmVMImage.md)
+[Simpan-AzureRmVMImage](./Save-AzureRmVMImage.md)
 
 

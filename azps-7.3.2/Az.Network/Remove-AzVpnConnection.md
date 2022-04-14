@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVpnConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVpnConnection.md
-ms.openlocfilehash: 086d337a387c19ac060bf78950f9c7ed24ce51ae
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c6c9ab1e9fb4c5bf252af34a484fe1d3c09f8bc3
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140007531"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142031285"
 ---
 # Remove-AzVpnConnection
 
 ## SYNOPSIS
 Menghapus VpnConnection.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvpnconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,11 +63,11 @@ PS C:\> New-AzVpnConnection -ResourceGroupName $vpnGateway.ResourceGroupName -Pa
 PS C:\> Remove-AzVpnConnection -ResourceGroupName $vpnGateway.ResourceGroupName -ParentResourceName $vpnGateway.Name -Name "testConnection"
 ```
 
-Langkah di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub, dan VpnSite di AS Barat dalam grup sumber daya "testRG" di Azure. Gateway VPN akan dibuat setelahnya di Virtual Hub dengan 2 unit skala.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual, dan Situs Vpn di AS Barat dalam grup sumber daya "testRG" di Azure. Gateway VPN akan dibuat setelahnya di Hub Virtual dengan 2 unit skala.
 
-Setelah gateway dibuat, gateway itu tersambung ke Situs Vpn menggunakan New-AzVpnConnection jaringan.
+Setelah gateway dibuat, gateway tersambung ke VpnSite menggunakan perintah New-AzVpnConnection.
 
-Lalu menghapus koneksi menggunakan nama koneksi.
+Lalu koneksi akan menghapus koneksi menggunakan nama koneksi.
 
 ### Contoh 2
 
@@ -85,7 +88,7 @@ PS C:\> New-AzVpnConnection -ResourceGroupName $vpnGateway.ResourceGroupName -Pa
 PS C:\> Get-AzVpnConnection -ResourceGroupName $vpnGateway.ResourceGroupName -ParentResourceName $vpnGateway.Name -Name "testConnection" | Remove-AzVpnConnection
 ```
 
-Sama seperti contoh 1, tetapi sekarang menghapus koneksi menggunakan objek pipa dari Get-AzVpnConnection.
+Sama seperti contoh 1, tetapi sekarang menghapus koneksi menggunakan objek piped dari Get-AzVpnConnection.
 
 ## PARAMETERS
 
@@ -104,8 +107,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi jika Anda ingin menimpa sumber daya
+### -Paksa
+Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek VpnConnection yang akan diperbarui.
+Objek VpnConnection untuk diperbarui.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVpnConnection
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya objek VpnConnection yang akan dihapus.
+Id sumber daya objek VpnConnection untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -227,7 +230,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -242,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

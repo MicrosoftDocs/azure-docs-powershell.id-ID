@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Disable-AzDataCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Disable-AzDataCollection.md
 ms.openlocfilehash: f390e5ac2a65ae46a31920a726afd4118d1ed625
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140111015"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141809888"
 ---
 # Disable-AzDataCollection
 
 ## SYNOPSIS
-Memilih untuk tidak mengumpulkan data untuk meningkatkan Azure PowerShell cmdlet. Data akan dikumpulkan secara default kecuali Anda secara eksplisit memilih untuk tidak mengikuti.
+Menolak mengumpulkan data untuk meningkatkan cmdlet Azure PowerShell. Data dikumpulkan secara default kecuali Anda menolak secara eksplisit.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.accounts/disable-azdatacollection) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.accounts/disable-azdatacollection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Disable-AzDataCollection [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-
 
 ## DESCRIPTION
 
-Cmdlet `Disable-AzDataCollection` digunakan untuk menolak pengumpulan data. Azure PowerShell mengumpulkan data telemetri secara default. Untuk menonaktifkan pengumpulan data, Anda harus secara eksplisit memilih untuk tidak ikut serta. Microsoft menggabungkan data yang dikumpulkan untuk mengidentifikasi pola penggunaan, untuk mengidentifikasi masalah umum, dan untuk meningkatkan pengalaman Azure PowerShell. Microsoft Azure PowerShell tidak mengumpulkan data pribadi atau pribadi apa pun. Jika sebelumnya Anda memilih untuk tidak mengikuti, jalankan cmdlet untuk `Enable-AzDataCollection` mengaktifkan kembali pengumpulan data bagi pengguna saat ini di komputer saat ini.
+`Disable-AzDataCollection` Cmdlet digunakan untuk menolak pengumpulan data. Azure PowerShell secara otomatis mengumpulkan data telemetri secara default. Untuk menonaktifkan pengumpulan data, Anda harus menolak secara eksplisit. Microsoft menggabungkan data yang dikumpulkan untuk mengidentifikasi pola penggunaan, mengidentifikasi masalah umum, dan untuk meningkatkan pengalaman Azure PowerShell. Microsoft Azure PowerShell tidak mengumpulkan data pribadi atau pribadi apa pun. Jika Anda sebelumnya telah menolak, jalankan `Enable-AzDataCollection` cmdlet untuk mengaktifkan kembali pengumpulan data untuk pengguna saat ini di komputer saat ini.
 
 ## EXAMPLES
 
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 
 ### -Konfirmasi
 
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -91,11 +91,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

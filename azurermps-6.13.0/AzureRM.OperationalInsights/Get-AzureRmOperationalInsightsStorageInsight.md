@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.opera
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/OperationalInsights/Commands.OperationalInsights/help/Get-AzureRmOperationalInsightsStorageInsight.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/OperationalInsights/Commands.OperationalInsights/help/Get-AzureRmOperationalInsightsStorageInsight.md
-ms.openlocfilehash: 33e98695f9924d7f2345c950f598aa5041e4a2f9092c3c5ee29cc5f3e9009070
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: b0d3baaa1e41e6f0df74e1b6bf39bdc858777a92
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419450"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141882534"
 ---
 # Get-AzureRmOperationalInsightsStorageInsight
 
 ## SYNOPSIS
-Mendapatkan informasi tentang Storage Insight.
+Mendapatkan informasi tentang wawasan Storage.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -35,9 +35,9 @@ Get-AzureRmOperationalInsightsStorageInsight [-Workspace] <PSWorkspace> [[-Name]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmOperationalInsightsStorageInsight** mendapatkan informasi tentang fitur yang Storage Insight.
-Jika nama Storage Insight ditentukan, cmdlet ini mendapatkan informasi tentang hal Storage Insight.
-Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua wawasan penyimpanan di dalam ruang kerja.
+Cmdlet **Get-AzureRmOperationalInsightsStorageInsight** mendapatkan informasi tentang wawasan Storage yang sudah ada.
+Jika nama Storage Insight ditentukan, cmdlet ini akan mendapatkan informasi tentang Storage Insight tersebut.
+Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua wawasan penyimpanan dalam ruang kerja.
 
 ## EXAMPLES
 
@@ -46,21 +46,21 @@ Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua 
 PS C:\>Get-AzureRmOperationalInsightsStorageInsight -Name "MyStorageInsight" -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "ContosoWorkspace"
 ```
 
-Perintah ini memperoleh wawasan penyimpanan yang bernama MyStorageInsight dari ruang kerja yang bernama ContosoWorkspace.
+Perintah ini mendapatkan wawasan penyimpanan bernama MyStorageInsight dari ruang kerja bernama ContosoWorkspace.
 
-### Contoh 2: Mendapatkan Storage Insight dengan menggunakan objek ruang kerja
+### Contoh 2: Dapatkan Storage Insight menggunakan objek ruang kerja
 ```
 PS C:\>$Workspace = Get-AzureRmOperationalInsightsWorkspace -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace"
 PS C:\>Get-AzureRmOperationalInsightsStorageInsight -Workspace $Workspace -Name "MyStorageInsight"
 ```
 
-Perintah pertama menggunakan cmdlet **Get-AzureRmOperationalInsightsWorkspace** untuk mendapatkan ruang kerja Insights Operasional, lalu menyimpannya dalam variabel $Workspace tertentu.
+Perintah pertama menggunakan cmdlet **Get-AzureRmOperationalInsightsWorkspace** untuk mendapatkan ruang kerja Insights Operasional, lalu menyimpannya dalam variabel $Workspace.
 Perintah kedua mendapatkan wawasan penyimpanan bernama MyStorageInsight untuk ruang kerja di $Workspace.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama Storage Wawasan.
+Menentukan nama Storage Insight.
 
 ```yaml
 Type: System.String
@@ -119,8 +119,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
-Menentukan nama ruang kerja yang berisi nama Storage Insights.
+### -Nama Ruang Kerja
+Menentukan nama ruang kerja yang berisi Storage Insights.
 
 ```yaml
 Type: System.String
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -152,6 +152,6 @@ Parameter: Ruang Kerja (ByValue)
 
 ## RELATED LINKS
 
-[Cmdlet Azure Operational Insights](./AzureRM.OperationalInsights.md)
+[Cmdlet Insights Operasional Azure](./AzureRM.OperationalInsights.md)
 
 

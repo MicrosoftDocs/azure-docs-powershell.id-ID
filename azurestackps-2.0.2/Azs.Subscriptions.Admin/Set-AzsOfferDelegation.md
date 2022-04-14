@@ -3,12 +3,12 @@ external help file: ''
 Module Name: Azs.Subscriptions.Admin
 online version: https://docs.microsoft.com/en-us/powershell/module/azs.subscriptions.admin/set-azsofferdelegation
 schema: 2.0.0
-ms.openlocfilehash: f23999655398146b7ae94c2ba1cc275f1e8fdd7cdc423cbe3668cc26026c3d86
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 59afc363d040724bbd525afc6e1f599a995cfdcb
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416636"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141812624"
 ---
 # Set-AzsOfferDelegation
 
@@ -24,7 +24,7 @@ Set-AzsOfferDelegation -Name <String> -OfferName <String> -ResourceGroupName <St
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Perbarui
+### Update
 ```
 Set-AzsOfferDelegation -Name <String> -OfferName <String> -ResourceGroupName <String>
  -OfferDelegationDefinition <IOfferDelegation> [-SubscriptionId <String>] [-DefaultProfile <PSObject>]
@@ -96,8 +96,8 @@ Accept wildcard characters: False
 ```
 
 ### -OfferDelegationDefinition
-Delegasi penawaran.
-Untuk membuat, lihat bagian CATATAN untuk properti OFFERDELEGATIONDEFINITION dan membuat tabel hash.
+Menawarkan delegasi.
+Untuk membangun, lihat bagian CATATAN untuk properti OFFERDELEGATIONDEFINITION dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.SubscriptionsAdmin.Models.Api20151101.IOfferDelegation
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 
 ```
 
-### -PropertiSubscriptionId
+### -PropertiesSubscriptionId
 Pengidentifikasi langganan yang menerima penawaran yang didelegasikan.
 
 ```yaml
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup sumber daya sumber daya yang berada di bawahnya.
+Grup sumber daya tempat sumber daya berada di bawah.
 
 ```yaml
 Type: System.String
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure Anda. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -224,9 +224,9 @@ ALIAS
 
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-OFFERDELEGATIONDEFINITION <IOfferDelegation> : Delegasi penawaran.
+OFFERDELEGATIONDEFINITION <IOfferDelegation>: Delegasi penawaran.
   - `[Location <String>]`: Lokasi sumber daya
   - `[SubscriptionId <String>]`: Pengidentifikasi langganan yang menerima penawaran yang didelegasikan.
 

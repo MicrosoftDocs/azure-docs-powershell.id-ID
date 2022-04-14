@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azba
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzBastion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzBastion.md
-ms.openlocfilehash: 8dfc05b18c9fb275c17449a704af59640c901634
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 8804d56cd3f3d4e30f2ca81790cb79182d26a527
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140371763"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142031159"
 ---
 # Set-AzBastion
 
 ## SYNOPSIS
-Memperbarui Sumber Daya Sdm Sdm.
+Memperbarui Sumber Daya Bastion.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azbastion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Set-AzBastion -InputObject <PSBastion> [-Sku <String>] [-ScaleUnit <Int32>] [-Ta
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzBastion** dapat digunakan untuk memperbarui Sku, Unit Skala atau Tag sumber daya Host yang sudah ada.
+Cmdlet **Set-AzBastion** dapat digunakan untuk memperbarui Sku, Unit Skala atau Tag sumber daya BastionHost yang sudah ada.
 
 ## EXAMPLES
 
@@ -64,7 +67,7 @@ Sku                  : {
 Scale Units          : 10
 ```
 
-Memperbarui sumber dayaHostHost dengan Sku Dasar dan 2 Unit Skala ke Sku Standar dan 10 Unit Skala
+Memperbarui sumber daya BastionHost dengan Sku Dasar dan 2 Unit Skala ke Standar Sku dan 10 Unit Skala
 
 ### Contoh 2
 ```powershell
@@ -136,12 +139,12 @@ Sku                  : {
 Scale Units          : 50
 ```
 
-Memperbarui sumber dayaHostHost dengan Sku Dasar dan 2 Unit Skala ke Sku Standar dan 50 Unit Skala
+Pembaruan sumber daya BastionHost dengan Unit Skala Sku Dasar dan 2 ke Unit Skala Sku Standar dan 50
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-ObjekHostHost
+Objek BastionHost
 
 ```yaml
 Type: PSBastion
@@ -185,7 +188,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Minta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScaleUnit
-Unit Skala Scale The Scale Units
+Unit Skala Bastion
 
 ```yaml
 Type: Int32
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Tier Sku Premium
+The Bastion Sku Tier
 
 ```yaml
 Type: String
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable yang mewakili tag sumber daya.
+Sebuah hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: Hashtable
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -263,7 +266,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -278,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -286,7 +289,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=5.0.0.0,0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### System.Collections.Hashtable
 

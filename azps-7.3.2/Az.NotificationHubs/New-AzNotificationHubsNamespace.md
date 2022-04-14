@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/New-AzNotificationHubsNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/New-AzNotificationHubsNamespace.md
-ms.openlocfilehash: 1d94738793c58b1409b3e5f763917c8072a6bbe9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f59feb60af87655118a4fa7f0c8678640379d29d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140007264"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142030673"
 ---
 # New-AzNotificationHubsNamespace
 
 ## SYNOPSIS
 Membuat ruang nama hub pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.notificationhubs/new-aznotificationhubsnamespace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,37 +32,37 @@ New-AzNotificationHubsNamespace [-ResourceGroup] <String> [-Namespace] <String> 
 ## DESCRIPTION
 Cmdlet **New-AzNotificationHubsNamespace** membuat ruang nama hub pemberitahuan.
 Ruang nama adalah wadah logis yang membantu Anda menata dan mengelola hub pemberitahuan.
-Anda setidaknya harus memiliki satu ruang nama hub pemberitahuan.
-Ruang nama tunggal bisa menjadi rumah beberapa hub.
-Anda bisa memiliki beberapa ruang nama untuk menata hub Anda, atau memberikan izin kepada individu tertentu untuk mengelola subkumpulan yang dipilih dari hub Anda.
-Untuk membuat ruang nama, pastikan bahwa Anda menentukan nama yang unik untuk ruang nama; tentukan datacenter di mana ruang nama akan berada; dan, tentukan grup sumber daya yang akan diberi ruang nama.
-Setelah kumpulan nama dibuat, Anda bisa menggunakan cmdlet New-AzNotificationHubsNamespaceAuthorizationRules untuk menetapkan aturan otorisasi ke kumpulan nama itu.
+Anda harus memiliki setidaknya satu ruang nama hub pemberitahuan.
+Ruang nama tunggal dapat menampung beberapa hub.
+Anda bisa memiliki beberapa ruang nama untuk menata hub Anda, atau untuk memberikan izin individu tertentu untuk mengelola subset hub yang dipilih.
+Untuk membuat ruang nama, pastikan Anda menentukan nama unik untuk ruang nama; tentukan pusat data tempat ruang nama akan berada; dan, tentukan grup sumber daya tempat ruang nama akan ditetapkan.
+Setelah ruang nama dibuat, Anda dapat menggunakan cmdlet New-AzNotificationHubsNamespaceAuthorizationRules untuk menetapkan aturan otorisasi ke ruang nama tersebut.
 Aturan otorisasi digunakan untuk mengelola izin ke ruang nama.
 
 ## EXAMPLES
 
-### Contoh 1: Buat hub pemberitahuan
+### Contoh 1: Membuat hub pemberitahuan
 ```
 PS C:\>New-AzNotificationHubsNamespace -ResourceGroup "ContosoNotificationsGroup" -Location "West US" -Namespace "ContosoPartners"
 ```
 
-Perintah ini akan membuat hub pemberitahuan bernama ContosoPartners.
-Ruang nama akan terletak di pusat data AS Barat dan ditetapkan ke grup sumber daya Grup ContosoNotifications.
+Perintah ini membuat hub pemberitahuan bernama ContosoPartners.
+Ruang nama akan berada di pusat data AS Barat dan ditetapkan ke grup sumber daya ContosoNotificationsGroup.
 
-### Contoh 2: Buat hub pemberitahuan dengan tag
+### Contoh 2: Membuat hub pemberitahuan dengan tag
 ```
 PS C:\>New-AzNotificationHubsNamespace -ResourceGroup "ContosoNotificationsGroup" -Location "West US" -Namespace "ContosoPartners" -Tags @{Name="Audience";Value="PartnerOrganizations"}
 ```
 
-Perintah ini akan membuat hub pemberitahuan bernama ContosoPartners.
-Ruang nama akan terletak di pusat data AS Barat dan ditetapkan ke grup sumber daya Grup ContosoNotifications.
-Selain itu, perintah ini membuat tag dengan nama Audiens dan nilai Organisasi Mitra dan ditetapkan ke ruang nama.
-Ini memastikan bahwa ruang nama akan ditampilkan setiap kali Anda memfilter item di mana tag Audiens diatur ke Organisasi Mitra.
+Perintah ini membuat hub pemberitahuan bernama ContosoPartners.
+Ruang nama akan berada di pusat data AS Barat dan ditetapkan ke grup sumber daya ContosoNotificationsGroup.
+Selain itu, perintah ini membuat tag dengan nama Audiens dan nilai PartnerOrganizations dan ditetapkan ke ruang nama.
+Ini memastikan bahwa ruang nama akan ditampilkan setiap kali Anda memfilter item di mana tag Audiens diatur ke PartnerOrganizations.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -74,8 +77,8 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan nama tampilan datacenter yang akan menjadi host Ruang Nama.
-Meskipun Anda bisa mengatur parameter ini ke lokasi valid apa pun, untuk kinerja optimal, Anda mungkin ingin menggunakan pusat data yang terletak di dekat mayoritas pengguna Anda.
+Menentukan nama tampilan pusat data yang akan menghosting Ruang Nama.
+Meskipun Anda bisa mengatur parameter ini ke lokasi yang valid, untuk kinerja optimal Anda mungkin ingin menggunakan pusat data yang terletak di dekat sebagian besar pengguna Anda.
 
 ```yaml
 Type: System.String
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroup
 Menentukan grup sumber daya tempat ruang nama akan ditetapkan.
-Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu manajemen inventaris dan administrasi.
+Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu hanya manajemen inventaris dan administrasi.
 
 ```yaml
 Type: System.String
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuTier
-Sku tier dari ruang nama
+Tingkat Sku dari ruang nama
 
 ```yaml
 Type: System.String
@@ -137,12 +140,12 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Menentukan pasangan nilai nama yang dapat digunakan untuk mengategorikan dan menata item Azure.
-Fungsi tag yang sama dengan kata kunci, dan beroperasi pada penyebaran.
-Misalnya, jika Anda mencari semua item dengan tag Departemen:IT, pencarian akan mengembalikan semua item Azure yang memiliki tag tersebut, terlepas dari hal-hal seperti tipe item, lokasi, atau grup sumber daya.
-Tag individu terdiri dari dua bagian: *Nama* dan, opsional, *Nilai*.
-Misalnya, di Department:IT, nama tag adalah Departemen dan nilai tag adalah IT.
-Untuk menambahkan tag, gunakan sintaks tabel hash seperti ini, yang akan membuat tag CalendarYear:2016:
+Menentukan pasangan nilai nama yang dapat digunakan untuk mengkategorikan dan menata item Azure.
+Fungsi tag mirip dengan kata kunci, dan beroperasi di seluruh penyebaran.
+Misalnya, jika Anda mencari semua item dengan tag Departemen:TI, pencarian akan mengembalikan semua item Azure yang memiliki tag tersebut, terlepas dari hal-hal seperti tipe item, lokasi, atau grup sumber daya.
+Tag individual terdiri dari dua bagian: *Nama* dan, secara opsional, *Nilai*.
+Misalnya, dalam Departemen:TI, nama tag adalah Departemen dan nilai tagnya adalah TI.
+Untuk menambahkan tag, gunakan sintaks tabel hash yang mirip dengan ini, yang membuat tag CalendarYear:2016:
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
