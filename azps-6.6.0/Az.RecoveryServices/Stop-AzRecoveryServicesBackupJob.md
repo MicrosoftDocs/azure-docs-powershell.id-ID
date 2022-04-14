@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Stop-AzRecoveryServicesBackupJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Stop-AzRecoveryServicesBackupJob.md
 ms.openlocfilehash: eb7ecfef5dac4af101dfb07b2c387894cba91f3b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140247643"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141860918"
 ---
 # Stop-AzRecoveryServicesBackupJob
 
@@ -19,7 +19,7 @@ ms.locfileid: "140247643"
 Membatalkan pekerjaan yang sedang berjalan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/stop-azrecoveryservicesbackupjob) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/stop-azrecoveryservicesbackupjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,9 +37,9 @@ Stop-AzRecoveryServicesBackupJob [-JobId] <String> [-VaultId <String>]
 
 ## DESCRIPTION
 Cmdlet **Stop-AzRecoveryServicesBackupJob** membatalkan pekerjaan Azure Backup yang sudah ada.
-Gunakan cmdlet ini untuk menghentikan pekerjaan yang membutuhkan waktu terlalu lama dan memblokir aktivitas lain.
-Anda hanya bisa membatalkan tipe pekerjaan Cadangkan dan Pulihkan.
-Mengatur konteks vault menggunakan cmdlet Set-AzRecoveryServicesVaultContext cmdlet sebelum Anda menggunakan cmdlet saat ini.
+Gunakan cmdlet ini untuk menghentikan pekerjaan yang memakan waktu terlalu lama dan memblokir aktivitas lainnya.
+Anda hanya dapat membatalkan tipe pekerjaan Pencadangan dan Pemulihan.
+Mengatur konteks kubah menggunakan cmdlet Set-AzRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
@@ -49,13 +49,13 @@ PS C:\>$Job = Get-AzRecoveryServicesBackupJob -Operation Backup
 PS C:\> Stop-AzRecoveryServicesBackupJob -JobID $Job.InstanceId
 ```
 
-Perintah pertama mendapatkan pekerjaan cadangan, lalu menyimpan pekerjaan di $Job tersebut.
-Perintah terakhir menghentikan pekerjaan dengan menentukan ID Contoh pekerjaan cadangan di $Job.
+Perintah pertama mendapatkan pekerjaan cadangan, lalu menyimpan pekerjaan dalam variabel $Job.
+Perintah terakhir menghentikan pekerjaan dengan menentukan ID Instans dari pekerjaan cadangan di $Job.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -Job
-Menentukan pekerjaan yang dibatalkan cmdlet ini.
+Menentukan pekerjaan yang cmdlet ini batalkan.
 Untuk mendapatkan objek **BackupJob** , gunakan cmdlet Get-AzRecoveryServicesBackupJob.
 
 ```yaml
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

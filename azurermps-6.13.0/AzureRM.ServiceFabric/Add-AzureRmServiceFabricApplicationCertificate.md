@@ -5,30 +5,30 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.servi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceFabric/Commands.ServiceFabric/help/Add-AzureRmServiceFabricApplicationCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceFabric/Commands.ServiceFabric/help/Add-AzureRmServiceFabricApplicationCertificate.md
-ms.openlocfilehash: dcc79b2e6b2491d092e2d6ce67e55973bc36e20c8d5f8eea9bb46cccf46b2b62
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 982eb6bf8c579d3f6ef9a5c6b74299ecf1114eb6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418257"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142060386"
 ---
 # Add-AzureRmServiceFabricApplicationCertificate
 
 ## SYNOPSIS
-Tambahkan sertifikat baru ke Kumpulan Skala Mesin Virtual yang menjadi kluster. Sertifikat tersebut dimaksudkan untuk digunakan sebagai sertifikat aplikasi.
+Tambahkan sertifikat baru ke Kumpulan Skala Mesin Virtual yang menyusun kluster. Sertifikat dimaksudkan untuk digunakan sebagai sertifikat aplikasi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
 ## SYNTAX
 
-### MenurutExistingKeyVault
+### ByExistingKeyVault
 ```
 Add-AzureRmServiceFabricApplicationCertificate [-ResourceGroupName] <String> [-Name] <String>
  -SecretIdentifier <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### ByNewVaultxAndVaultName
+### ByNewPfxAndVaultName
 ```
 Add-AzureRmServiceFabricApplicationCertificate [-ResourceGroupName] <String> [-Name] <String>
  [-KeyVaultResouceGroupName <String>] [-KeyVaultName <String>] [-CertificateOutputFolder <String>]
@@ -36,7 +36,7 @@ Add-AzureRmServiceFabricApplicationCertificate [-ResourceGroupName] <String> [-N
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### MenurutExistingVaultxAndVaultName
+### ByExistingPfxAndVaultName
 ```
 Add-AzureRmServiceFabricApplicationCertificate [-ResourceGroupName] <String> [-Name] <String>
  [-KeyVaultResouceGroupName <String>] [-KeyVaultName <String>] -CertificateFile <String>
@@ -45,7 +45,7 @@ Add-AzureRmServiceFabricApplicationCertificate [-ResourceGroupName] <String> [-N
 ```
 
 ## DESCRIPTION
-Gunakan **Add-AzureRmServiceFabricApplicationCertificate** untuk menginstal sertifikat ke semua node di kluster. Anda dapat menentukan sertifikat yang sudah ada atau meminta sistem membuat sertifikat baru untuk Anda, dan mengunggahnya ke penyimpanan kunci Azure yang baru atau yang sudah ada.
+Gunakan **Add-AzureRmServiceFabricApplicationCertificate** untuk menginstal sertifikat ke semua node dalam kluster. Anda bisa menentukan sertifikat yang sudah Anda miliki atau memiliki sistem yang baru untuk Anda, dan mengunggahnya ke kubah kunci Azure yang baru atau yang sudah ada.
 
 ## EXAMPLES
 
@@ -54,7 +54,7 @@ Gunakan **Add-AzureRmServiceFabricApplicationCertificate** untuk menginstal sert
 PS c:> Add-AzureRmServiceFabricApplicationCertificate -ResourceGroupName 'Group1' -Name 'Contoso01SFCluster' -SecretIdentifier 'https://contoso03vault.vault.azure.net/secrets/contoso03vaultrg/7f7de9131c034172b9df37ccc549524f'
 ```
 
-Perintah ini akan menambahkan sertifikat dari kunci vault Azure yang sudah ada ke semua tipe node kluster.
+Perintah ini akan menambahkan sertifikat dari kubah kunci Azure yang sudah ada ke semua tipe simpul kluster.
 
 ### Contoh 2
 ```
@@ -63,7 +63,7 @@ PS C:\> Add-AzureRmServiceFabricApplicationCertificate -ResourceGroupName 'Group
         -CertificateSubjectName 'cn=Contoso.com' -CertificateOutputFolder 'c:\test' -CertificatePassword $pwd
 ```
 
-Perintah ini akan membuat sertifikat yang ditandatangani sendiri di key vault Azure dengan nama grup sumber daya key vault dan Nama key vault, menginstal ke semua tipe node kluster, dan mengunduh sertifikat di bawah folder 'c:\test'. Nama sertifikat yang diunduh sama seperti nama sertifikat kunci vault.
+Perintah ini akan membuat sertifikat yang ditandatangani sendiri di kubah kunci Azure dengan nama grup sumber daya kubah kunci dan nama kubah kunci, diinstal ke semua tipe simpul kluster, dan mengunduh sertifikat di bawah folder 'c:\test'. Nama sertifikat yang diunduh sama dengan nama sertifikat kubah kunci.
 
 ## PARAMETERS
 
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultName
-Nama key vault Azure.
+Nama kubah tombol Azure.
 
 ```yaml
 Type: System.String
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultResouceGroupName
-Nama grup sumber daya penyimpanan tombol Azure.
+Nama grup sumber daya kubah kunci Azure.
 
 ```yaml
 Type: System.String
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecretIdentifier
-Kode rahasia penyimpanan kunci Azure yang sudah ada.
+Uri rahasia kubah kunci Azure yang sudah ada.
 
 ```yaml
 Type: System.String
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/Get-AzADSpCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/Get-AzADSpCredential.md
 ms.openlocfilehash: 40543468145c7fcfaf49fcfc7cad1cbf70938adf
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419855"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142235485"
 ---
 # Get-AzADSpCredential
 
@@ -43,39 +43,39 @@ Get-AzADSpCredential -ServicePrincipalObject <PSADServicePrincipal>
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzADSpCredential ini dapat digunakan untuk mengambil daftar kredensial yang terkait dengan prinsipal layanan.
+Cmdlet Get-AzADSpCredential dapat digunakan untuk mengambil daftar kredensial yang terkait dengan prinsipal layanan.
 Perintah ini akan mengambil semua properti kredensial (tetapi bukan nilai kredensial) yang terkait dengan prinsipal layanan.
 
 ## EXAMPLES
 
-### Contoh 1 - Kredensial daftar dengan SPN
+### Contoh 1 - Daftar kredensial menurut SPN
 
 ```
 PS C:\> Get-AzADSpCredential -ServicePrincipalName http://test12345
 ```
 
-Mengembalikan daftar kredensial yang terkait dengan prinsipal layanan dengan SPN ' http://test12345 '.
+Mengembalikan daftar kredensial yang terkait dengan prinsipal layanan dengan SPN 'http://test12345'.
 
-### Contoh 2 - Kredensial daftar berdasarkan id objek
+### Contoh 2 - Cantumkan kredensial menurut id objek
 
 ```
 PS C:\> Get-AzADSpCredential -ObjectId 58e28616-99cc-4da4-b705-7672130e1047
 ```
 
-Mengembalikan daftar kredensial yang terkait dengan prinsipal layanan dengan id objek "58e28616-99cc-4da4-b705-7672130e1047".
+Mengembalikan daftar kredensial yang terkait dengan prinsipal layanan dengan object id "58e28616-99cc-4da4-b705-7672130e1047".
 
-### Contoh 3 - Kredensial daftar dengan pemipaan
+### Contoh 3 - Mencantumkan kredensial dengan pipa
 
 ```
 PS C:\> Get-AzADServicePrincipal -ObjectId 58e28616-99cc-4da4-b705-7672130e1047 | Get-AzADSpCredential
 ```
 
-Mendapatkan prinsipal layanan dengan id objek "58e28616-99cc-4da4-b705-7672130e1047" dan pipes ke cmdlet Get-AzADSpCredential untuk mencantumkan semua kredensial untuk prinsipal layanan tersebut.
+Mendapatkan prinsipal layanan dengan id objek "58e28616-99cc-4da4-b705-7672130e1047" dan menyalurkannya ke cmdlet Get-AzADSpCredential untuk mencantumkan semua kredensial untuk prinsipal layanan tersebut.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Id objek prinsipal layanan untuk mengambil kredensial dari.
+Id objek dari prinsipal layanan untuk mengambil kredensial dari.
 
 ```yaml
 Type: System.Guid
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalName
-Nama (SPN) prinsipal layanan untuk mengambil kredensial dari.
+Nama (SPN) pokok layanan untuk mengambil kredensial dari.
 
 ```yaml
 Type: System.String
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalObject
-Objek prinsipal layanan untuk mengambil kredensial dari.
+Objek pokok layanan untuk mengambil kredensial dari.
 
 ```yaml
 Type: Microsoft.Azure.Graph.RBAC.Version1_6.ActiveDirectory.PSADServicePrincipal
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -158,12 +158,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.DIRECTDServicePrincipal
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADServicePrincipal
 Parameter: ServicePrincipalObject (ByValue)
 
 ## OUTPUTS
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.CREDCredential
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADCredential
 
 ## CATATAN
 

@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.strea
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/StreamAnalytics/Commands.StreamAnalytics/help/Test-AzureRmStreamAnalyticsInput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/StreamAnalytics/Commands.StreamAnalytics/help/Test-AzureRmStreamAnalyticsInput.md
-ms.openlocfilehash: b9c02efbf2aa018b9b33353a67cb5717f03d31df35390805f7bcf1814afc96af
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 6256fc57d4084a55b2288875b56c6c616b16f8b2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418483"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142246917"
 ---
 # Test-AzureRmStreamAnalyticsInput
 
@@ -32,17 +32,17 @@ Cmdlet **Test-AzureRmStreamAnalyticsInput** menguji kemampuan Stream Analytics u
 
 ## EXAMPLES
 
-### CONTOH 1: Menguji status koneksi aliran input
+### CONTOH 1: Menguji status koneksi dari aliran input
 ```
 PS C:\>Test-AzureRmStreamAnalyticsInput -ResourceGroupName "StreamAnalytics-Default-West-US" -JobName "StreamingJob" -Name "EntryStream"
 ```
 
-Ini menguji status koneksi dari EntryStream input di StreamingJob.
+Ini menguji status koneksi input EntryStream di StreamingJob.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobName
-Menentukan nama pekerjaan Analitik Azure Stream tempat input Analitik Azure Stream berada.
+Menentukan nama pekerjaan Azure Stream Analytics tempat input Azure Stream Analytics berada.
 
 ```yaml
 Type: System.String
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama input Analitik Azure Stream untuk diuji.
+Menentukan nama input Azure Stream Analytics untuk diuji.
 
 ```yaml
 Type: System.String
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat input Analitik Azure Stream berada.
+Menentukan nama grup sumber daya tempat input Azure Stream Analytics berada.
 
 ```yaml
 Type: System.String
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -120,6 +120,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmStreamAnalyticsInput](./New-AzureRmStreamAnalyticsInput.md)
 
-[Remove-AzureRmStreamAnalyticsInput](./Remove-AzureRmStreamAnalyticsInput.md)
+[Hapus-AzureRmStreamAnalyticsInput](./Remove-AzureRmStreamAnalyticsInput.md)
 
 

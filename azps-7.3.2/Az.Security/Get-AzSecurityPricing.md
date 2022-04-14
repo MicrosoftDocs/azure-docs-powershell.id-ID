@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityPricing.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityPricing.md
-ms.openlocfilehash: 7498414f79d3196b5cb5a2032e16822d8f2659ca
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 7945933a3bd4dcd2dd95772b287c7d8ce5567235
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140183968"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142027955"
 ---
 # Get-AzSecurityPricing
 
 ## SYNOPSIS
 
-Mendapatkan paket Pertahanan Azure untuk langganan di Pusat Keamanan Azure.
+Mendapatkan paket Pertahanan Azure untuk langganan di Azure Security Center.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azsecuritypricing) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,9 +43,9 @@ Get-AzSecurityPricing -ResourceId <String> [-DefaultProfile <IAzureContextContai
 
 ## DESCRIPTION
 
-Anda dapat melihat setiap paket Pertahanan Azure, per langganan, menggunakan cmdlet ini.
+Anda dapat menampilkan setiap paket Pertahanan Azure, per langganan, menggunakan cmdlet ini.
 
-Untuk detail tentang Pertahanan Azure dan paket yang tersedia, [lihat Pengenalan Pertahanan Azure](https://docs.microsoft.com/azure/security-center/azure-defender).
+Untuk detail tentang Pertahanan Azure dan paket yang tersedia, lihat [Pengenalan Pertahanan Azure](https://docs.microsoft.com/azure/security-center/azure-defender).
 
 ## EXAMPLES
 
@@ -62,7 +65,7 @@ Id                                                                              
 /subscriptions/fbaa2b23-e9dd-4bed-93c1-9e2a44f64bc0/providers/Microsoft.Security/pricings/KeyVaults                  KeyVaults                 Free           00:00:00
 ```
 
-Mendapatkan status setiap paket Pertahanan Azure untuk langganan tersebut.
+Mendapatkan status setiap paket Pertahanan Azure untuk langganan.
 
 
 
@@ -72,7 +75,7 @@ Mendapatkan status setiap paket Pertahanan Azure untuk langganan tersebut.
 PS C:\> Get-AzSecurityPricing -ResourceId
 ```
 
-Mendapatkan detail harga DARI ID sumber daya tertentu. Where ResourceId is one of the IDs returned by `Get-AzSecurityPricing`.
+Mendapatkan detail harga ID sumber daya tertentu. Di mana ResourceId adalah salah satu ID yang dikembalikan oleh `Get-AzSecurityPricing`.
 
 ### Contoh 3
 
@@ -80,7 +83,7 @@ Mendapatkan detail harga DARI ID sumber daya tertentu. Where ResourceId is one o
 PS C:\> Get-AzSecurityPricing -Name
 ```
 
-Mendapatkan detail harga paket Pertahanan Azure bernama. Di `name` mana salah satu nama yang dikembalikan oleh `Get-AzSecurityPricing`.
+Mendapatkan detail harga paket Azure Defender yang bernama. Di mana `name` salah satu nama yang dikembalikan oleh `Get-AzSecurityPricing`.
 
 
 ## PARAMETERS
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 
 ### CommonParameters
 
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

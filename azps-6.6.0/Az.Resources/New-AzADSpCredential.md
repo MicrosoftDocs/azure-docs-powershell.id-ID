@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzADSpCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzADSpCredential.md
 ms.openlocfilehash: 985af65f2227dd7400e68937cc5803650f224d41
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140182275"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142224523"
 ---
 # New-AzADSpCredential
 
@@ -21,7 +21,7 @@ Menambahkan kredensial ke prinsipal layanan yang sudah ada.
 [!INCLUDE [msgraph-migration-banner](../../includes/msgraph-migration-banner.md)]
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/new-azadspcredential) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azadspcredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -62,12 +62,12 @@ New-AzADSpCredential -ServicePrincipalObject <PSADServicePrincipal> [-StartDate 
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzADSpCredential dapat digunakan untuk menambahkan kredensial baru atau untuk roll kredensial untuk prinsipal layanan.
-Prinsipal layanan diidentifikasi dengan menyediakan id objek atau nama prinsipal layanan.
+Cmdlet New-AzADSpCredential dapat digunakan untuk menambahkan kredensial baru atau untuk menggulung kredensial untuk prinsipal layanan.
+Prinsipal layanan diidentifikasi dengan memasok id objek atau nama pokok layanan.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat kredensial prinsipal layanan baru menggunakan kata sandi yang dihasilkan
+### Contoh 1: Membuat kredensial utama layanan baru menggunakan kata sandi yang dihasilkan
 
 ```powershell
 PS C:\> New-AzADSpCredential -ObjectId 1f99cf81-0146-4f4e-beae-2007d0668476
@@ -81,7 +81,7 @@ Type      : Password
 
 Kredensial kata sandi baru ditambahkan ke prinsipal layanan yang sudah ada dengan id objek '1f99cf81-0146-4f4e-beae-2007d0668476'.
 
-### Contoh 2: Membuat kredensial prinsipal layanan baru menggunakan sertifikat
+### Contoh 2: Membuat kredensial utama layanan baru menggunakan sertifikat
 
 ```powershell
 PS C:\> $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2
@@ -91,9 +91,9 @@ PS C:\> $credValue = [System.Convert]::ToBase64String($binCert)
 PS C:\> New-AzADSpCredential -ServicePrincipalName "http://test123" -CertValue $credValue -StartDate $cer.NotBefore -EndDate $cer.NotAfter
 ```
 
-Sertifikat X509 publik yang dikodekan base64 yang disediakan ("myapp.cer") ditambahkan ke prinsipal layanan yang sudah ada menggunakan SPN-nya.
+Sertifikat X509 publik berkode base64 yang disediakan ("myapp.cer") ditambahkan ke prinsipal layanan yang sudah ada menggunakan SPN-nya.
 
-### Contoh 3: Buat kredensial prinsipal layanan baru menggunakan pemipaan
+### Contoh 3: Membuat kredensial utama layanan baru menggunakan piping
 
 ```powershell
 PS C:\> Get-AzADServicePrincipal -ObjectId 1f99cf81-0146-4f4e-beae-2007d0668476 | New-AzADSpCredential
@@ -105,13 +105,13 @@ KeyId     : xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 Type      : Password
 ```
 
-Mendapatkan prinsipal layanan dengan id objek '1f99cf81-0146-4f4e-beae-2007d0668476' dan pipa ke New-AzADSpCredential untuk membuat kredensial prinsipal layanan baru untuk prinsipal layanan tersebut dengan kata sandi yang dihasilkan.
+Mendapatkan prinsipal layanan dengan id objek '1f99cf81-0146-4f4e-beae-2007d0668476' dan pipa yang ke New-AzADSpCredential untuk membuat kredensial utama layanan baru untuk prinsipal layanan tersebut dengan kata sandi yang dihasilkan.
 
 ## PARAMETERS
 
 ### -CertValue
 Nilai tipe kredensial "asimetris".
-Kode ini mewakili sertifikat berkode basis 64.
+Ini mewakili sertifikat dasar 64 yang dikodekan.
 
 ```yaml
 Type: System.String
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-Tanggal berakhir efektif penggunaan kredensial.
+Tanggal berakhir efektif dari penggunaan kredensial.
 Nilai tanggal akhir default adalah satu tahun dari hari ini.
 Untuk kredensial tipe "asimetris", kredensial ini harus diatur ke aktif atau sebelum tanggal sertifikat X509 valid.
 
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Id objek prinsipal layanan yang akan ditambahkan kredensial.
+Id objek pokok layanan untuk menambahkan kredensial.
 
 ```yaml
 Type: System.String
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalName
-Nama (SPN) prinsipal layanan untuk menambahkan kredensial.
+Nama (SPN) prinsipal layanan untuk menambahkan kredensial ke dalamnya.
 
 ```yaml
 Type: System.String
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalObject
-Objek prinsipal layanan yang akan ditambahkan kredensial.
+Objek pokok layanan untuk menambahkan kredensial.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ActiveDirectory.PSADServicePrincipal
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -263,21 +263,21 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### Microsoft.Azure.Commands.ActiveDirectory.LINUXDServicePrincipal
+### Microsoft.Azure.Commands.ActiveDirectory.PSADServicePrincipal
 
 ### System.DateTime
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.ActiveDirectory.LINUXDCredential
+### Microsoft.Azure.Commands.ActiveDirectory.PSADCredential
 
-### Microsoft.Azure.Commands.Resources.Models.Authorization.ARATDCredentialWrashell
+### Microsoft.Azure.Commands.Resources.Models.Authorization.PSADCredentialWrapper
 
 ## CATATAN
 

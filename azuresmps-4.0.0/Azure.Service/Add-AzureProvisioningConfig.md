@@ -4,16 +4,16 @@ ms.assetid: 0B3EF123-8424-4CCA-95E8-01301B70CBDC
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 063014d8230346d580f4be3959da674efece041f
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424143"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142246087"
 ---
 # Add-AzureProvisioningConfig
 
 ## SYNOPSIS
-Menambahkan konfigurasi pengadaan untuk mesin virtual Azure.
+Menambahkan konfigurasi penyediaan untuk mesin virtual Azure.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -49,12 +49,12 @@ Add-AzureProvisioningConfig -VM <IPersistentVM> [-DisableGuestAgent] [-CustomDat
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureProvisioningConfig** menambahkan informasi konfigurasi pengadaan ke konfigurasi mesin virtual Azure.
+Cmdlet **Add-AzureProvisioningConfig** menambahkan penyediaan informasi konfigurasi ke konfigurasi mesin virtual Azure.
 Anda dapat menggunakan objek konfigurasi untuk membuat mesin virtual.
 
-Cmdlet ini mendukung konfigurasi penyediaan berbeda, termasuk server Windows mandiri, server Windows tergabung ke domain Direktori Aktif, dan server berbasis Linux.
+Cmdlet ini mendukung konfigurasi penyediaan yang berbeda, termasuk server Windows mandiri, server Windows yang bergabung ke domain Direktori Aktif, dan server berbasis Linux.
 
-Untuk membuat server yang tergabung dengan domain Direktori Aktif, tentukan nama domain yang sepenuhnya memenuhi syarat dari domain Direktori Aktif dan kredensial domain pengguna yang memiliki izin untuk bergabung dengan mesin virtual ke domain.
+Untuk membuat server gabungan domain Direktori Aktif, tentukan nama domain domain yang sepenuhnya memenuhi syarat dari domain Direktori Aktif dan kredensial domain pengguna yang memiliki izin untuk bergabung dengan mesin virtual ke domain.
 
 ## EXAMPLES
 
@@ -63,32 +63,32 @@ Untuk membuat server yang tergabung dengan domain Direktori Aktif, tentukan nama
 PS C:\> New-AzureVMConfig -Name "NonDomainVM" -InstanceSize Small -ImageName "Image07" | Add-AzureProvisioningConfig -Windows -Password "password" -AdminUsername "AdminMain" | New-AzureVM -ServiceName "ContosoService"
 ```
 
-Perintah ini akan membuat objek konfigurasi mesin virtual menggunakan cmdlet **New-AzureVMConfig.**
-Perintah melewati objek itu ke cmdlet saat ini dengan menggunakan operator pipeline.
-Cmdlet saat ini menambahkan konfigurasi pengadaan untuk mesin virtual yang menjalankan sistem Windows operasi.
-Konfigurasi menyertakan nama pengguna dan kata sandi administrator.
-Perintah meneruskan konfigurasi ke cmdlet **New-AzureVM,** yang membuat mesin virtual.
+Perintah ini membuat objek konfigurasi mesin virtual menggunakan cmdlet **New-AzureVMConfig** .
+Perintah melewati objek tersebut ke cmdlet saat ini menggunakan operator pipeline.
+Cmdlet saat ini menambahkan konfigurasi penyediaan untuk mesin virtual yang menjalankan sistem operasi Windows.
+Konfigurasi mencakup nama pengguna dan kata sandi administrator.
+Perintah melewati konfigurasi ke cmdlet **New-AzureVM** , yang membuat mesin virtual.
 
-### Contoh 2: Membuat mesin virtual yang bergabung dalam domain
+### Contoh 2: Membuat mesin virtual gabungan domain
 ```
 PS C:\> New-AzureVMConfig -Name "DomainVM" -InstanceSize Small -ImageName "Image09" | Add-AzureProvisioningConfig -WindowsDomain -Password "password" -AdminUsername "AdminMain" -ResetPasswordOnFirstLogon -JoinDomain "contoso.com" -Domain "contoso" -DomainUserName "DomainAdminUser" -DomainPassword "DomainPassword" -MachineObjectOU 'OU=AzureVMs,DC=contoso,DC=com' | New-AzureVM -ServiceName "ContosoService"
 ```
 
-Perintah ini akan membuat objek konfigurasi mesin virtual, lalu meneruskannya ke cmdlet saat ini.
-Cmdlet saat ini menambahkan konfigurasi penyediaan untuk mesin virtual agar dapat digunakan dengan domain contoso.
-Perintah menyertakan nama pengguna dan kata sandi yang diperlukan untuk bergabung dengan mesin virtual ke domain.
-Konfigurasi mengharuskan pengguna untuk mengubah kata sandi pada saat masuk pertama.
-Perintah membuat mesin virtual berdasarkan objek pengadaan.
+Perintah ini membuat objek konfigurasi mesin virtual, lalu meneruskannya ke cmdlet saat ini.
+Cmdlet saat ini menambahkan konfigurasi penyediaan untuk mesin virtual yang akan digabungkan dengan domain contoso.
+Perintah ini menyertakan nama pengguna dan kata sandi yang diperlukan untuk bergabung dengan mesin virtual ke domain.
+Konfigurasi mengharuskan pengguna untuk mengubah kata sandi pengguna pada saat masuk pertama.
+Perintah membuat mesin virtual berdasarkan objek penyediaan.
 
 ### Contoh 3: Membuat mesin virtual berbasis Linux
 ```
 PS C:\> New-AzureVMConfig -Name "LinuxVM" -InstanceSize Small -ImageName "LinuxImage03" | Add-AzureProvisioningConfig -Linux -LinuxUser "LinuxRoot" -Password "password" | New-AzureVM -ServiceName "ContosoService"
 ```
 
-Perintah ini akan membuat objek konfigurasi mesin virtual, lalu meneruskannya ke cmdlet saat ini.
-Cmdlet saat ini menambahkan konfigurasi pengadaan untuk mesin virtual yang menjalankan sistem operasi Linux.
-Konfigurasi menyertakan nama pengguna dan kata sandi akar.
-Perintah membuat mesin virtual berdasarkan objek pengadaan.
+Perintah ini membuat objek konfigurasi mesin virtual, lalu meneruskannya ke cmdlet saat ini.
+Cmdlet saat ini menambahkan konfigurasi penyediaan untuk mesin virtual yang menjalankan sistem operasi Linux.
+Konfigurasi mencakup nama pengguna dan kata sandi akar.
+Perintah membuat mesin virtual berdasarkan objek penyediaan.
 
 ### Contoh 4: Membuat mesin virtual yang menyertakan sertifikat untuk WinRM
 ```
@@ -96,46 +96,46 @@ PS C:\> $certs = Get-ChildItem Cert:\CurrentUser\My
 New-AzureVMConfig -Name "NonDomainVM" -InstanceSize Small -ImageName "Image11" | Add-AzureProvisioningConfig -Windows -Password "password" -AdminUsername "AdminMain" -WinRMCertificate $certs[0] -X509Certificates $certs[1], $certs[2] | New-AzureVM -ServiceName "ContosoService" -WaitForBoot
 ```
 
-Perintah pertama mendapatkan sertifikat dari penyimpanan sertifikat, lalu menyimpannya dalam variabel $certs array.
+Perintah pertama mendapatkan sertifikat dari penyimpanan sertifikat, lalu menyimpannya dalam variabel array $certs.
 
-Perintah kedua akan membuat objek konfigurasi mesin virtual, lalu meneruskannya ke cmdlet saat ini.
-Cmdlet saat ini menambahkan konfigurasi pengadaan yang menyertakan sertifikat untuk WinRM.
-Perintah membuat mesin virtual berdasarkan objek pengadaan.
+Perintah kedua membuat objek konfigurasi mesin virtual, lalu meneruskannya ke cmdlet saat ini.
+Cmdlet saat ini menambahkan konfigurasi penyediaan yang menyertakan sertifikat untuk WinRM.
+Perintah membuat mesin virtual berdasarkan objek penyediaan.
 
-### Contoh 5: Buat mesin virtual dengan WinRM yang diaktifkan melalui HTTP
+### Contoh 5: Membuat mesin virtual yang mengaktifkan WinRM melalui HTTP
 ```
 PS C:\> New-AzureVMConfig -Name "NonDomainVM" -InstanceSize Small -ImageName "Image14" | Add-AzureProvisioningConfig -Windows -Password "password" -AdminUsername "AdminMain" -EnableWinRMHttp | New-AzureVM -ServiceName "ContosoService" -WaitForBoot
 ```
 
-Perintah ini akan membuat objek konfigurasi mesin virtual, lalu meneruskannya ke cmdlet saat ini.
-Cmdlet saat ini menambahkan konfigurasi pengadaan yang telah mengaktifkan WinRM melalui HTTP.
-Perintah membuat mesin virtual berdasarkan objek pengadaan.
+Perintah ini membuat objek konfigurasi mesin virtual, lalu meneruskannya ke cmdlet saat ini.
+Cmdlet saat ini menambahkan konfigurasi penyediaan yang mengaktifkan WinRM melalui HTTP.
+Perintah membuat mesin virtual berdasarkan objek penyediaan.
 
-### Contoh 6: Buat mesin virtual dengan WinRM dinonaktifkan melalui HTTPS
+### Contoh 6: Membuat mesin virtual yang menonaktifkan WinRM melalui HTTPS
 ```
 PS C:\> New-AzureVMConfig -Name "NonDomainVM" -InstanceSize Small -ImageName "Image07" | Add-AzureProvisioningConfig -Windows -Password "password" -AdminUsername "AdminMain" -DisableWinRMHttps | New-AzureVM -ServiceName "ContosoService" -WaitForBoot
 ```
 
-Perintah ini akan membuat objek konfigurasi mesin virtual, lalu meneruskannya ke cmdlet saat ini.
-Cmdlet saat ini menambahkan konfigurasi pengadaan yang menonaktifkan WinRM melalui HTTPS.
-Perintah membuat mesin virtual berdasarkan objek pengadaan.
+Perintah ini membuat objek konfigurasi mesin virtual, lalu meneruskannya ke cmdlet saat ini.
+Cmdlet saat ini menambahkan konfigurasi penyediaan yang menonaktifkan WinRM melalui HTTPS.
+Perintah membuat mesin virtual berdasarkan objek penyediaan.
 
-### Contoh 7: Buat mesin virtual tanpa ekspor kunci
+### Contoh 7: Membuat mesin virtual tanpa ekspor kunci
 ```
 PS C:\> $certs = Get-ChildItem Cert:\CurrentUser\My
 New-AzureVMConfig -Name "NonDomainVM" -InstanceSize Small -ImageName "Image07" | Add-AzureProvisioningConfig -Windows -Password "password" -AdminUsername "AdminMain" -X509Certificates $certs[0], $certs[1] -NoExportPrivateKey | New-AzureVM -ServiceName "ContosoService" -WaitForBoot
 ```
 
-Perintah pertama mendapatkan sertifikat dari penyimpanan sertifikat, lalu menyimpannya dalam variabel $certs array.
+Perintah pertama mendapatkan sertifikat dari penyimpanan sertifikat, lalu menyimpannya dalam variabel array $certs.
 
-Perintah kedua akan membuat objek konfigurasi mesin virtual, lalu meneruskannya ke cmdlet saat ini.
-Cmdlet saat ini menambahkan konfigurasi pengadaan untuk komputer virtual yang menyertakan sertifikat dan tidak mengekspor kunci privat.
-Perintah membuat mesin virtual berdasarkan objek pengadaan.
+Perintah kedua membuat objek konfigurasi mesin virtual, lalu meneruskannya ke cmdlet saat ini.
+Cmdlet saat ini menambahkan konfigurasi penyediaan untuk mesin virtual yang menyertakan sertifikat dan tidak mengekspor kunci privat.
+Perintah membuat mesin virtual berdasarkan objek penyediaan.
 
 ## PARAMETERS
 
 ### -AdminUsername
-Menentukan nama pengguna akun Administrator yang dibuat oleh konfigurasi ini di komputer virtual.
+Menentukan nama pengguna akun Administrator yang dibuat konfigurasi ini pada mesin virtual.
 
 ```yaml
 Type: String
@@ -161,8 +161,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Certificates
-Menentukan kumpulan sertifikat yang diinstal konfigurasi ini pada komputer virtual.
+### -Sertifikat
+Menentukan sekumpulan sertifikat yang diinstal konfigurasi ini pada mesin virtual.
 
 ```yaml
 Type: CertificateSettingList
@@ -179,11 +179,11 @@ Accept wildcard characters: False
 ### -CustomDataFile
 Menentukan file data untuk mesin virtual.
 Cmdlet ini mengkodekan konten file sebagai Base64.
-File tersebut harus kurang dari 64 kilobyte panjang.
+Panjang file harus kurang dari 64 kilobyte.
 
-Jika sistem operasi tamu adalah sistem Windows operasi, konfigurasi ini menyimpan data ini sebagai file biner bernama %SYSTEMDRIVE%\AzureData\CustomData.bin.
+Jika sistem operasi tamu adalah sistem operasi Windows, konfigurasi ini menyimpan data ini sebagai file biner bernama %SYSTEMDRIVE%\AzureData\CustomData.bin.
 
-Jika sistem operasi tamu adalah Linux, konfigurasi ini akan melewati data menggunakan file ovf-env.xml.
+Jika sistem operasi tamu adalah Linux, konfigurasi ini melewati data menggunakan file ovf-env.xml.
 Konfigurasi menyalin file tersebut ke direktori /var/lib/waagent.
 Agen juga menyimpan data berkode Base64 di /var/lib/waagent/CustomData.
 
@@ -230,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableSSH
-Menunjukkan bahwa konfigurasi ini menonaktifkan WIZARD.
+Menunjukkan bahwa konfigurasi ini menonaktifkan SSH.
 
 ```yaml
 Type: SwitchParameter
@@ -245,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableWinRMHttps
-Menunjukkan bahwa konfigurasi ini menonaktifkan Windows Jarak Jauh (WinRM) di HTTPS.
+Menunjukkan bahwa konfigurasi ini menonaktifkan Windows Remote Management (WinRM) di HTTPS.
 Secara default, WinRM diaktifkan melalui HTTPS.
 
 ```yaml
@@ -261,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -Domain
-Menentukan nama domain akun yang memiliki izin untuk menambahkan komputer ke sebuah domain.
+Menentukan nama domain akun yang memiliki izin untuk menambahkan komputer ke domain.
 
 ```yaml
 Type: String
@@ -291,7 +291,7 @@ Accept wildcard characters: False
 ```
 
 ### -DomainUserName
-Menentukan nama akun pengguna yang memiliki izin untuk menambahkan komputer ke sebuah domain.
+Menentukan nama akun pengguna yang memiliki izin untuk menambahkan komputer ke domain.
 
 ```yaml
 Type: String
@@ -321,16 +321,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -360,7 +360,7 @@ Accept wildcard characters: False
 ```
 
 ### -JoinDomain
-Menentukan nama domain yang sepenuhnya memenuhi syarat (FQDN, Fully Qualified Domain Name) dari domain untuk diikuti.
+Menentukan nama domain yang sepenuhnya memenuhi syarat (FQDN) domain yang akan digabungkan.
 
 ```yaml
 Type: String
@@ -390,7 +390,7 @@ Accept wildcard characters: False
 ```
 
 ### -LinuxUser
-Menentukan nama pengguna akun administratif Linux yang dibuat konfigurasi ini di komputer virtual.
+Menentukan nama pengguna akun administratif Linux yang dibuat konfigurasi ini pada mesin virtual.
 
 ```yaml
 Type: String
@@ -405,7 +405,7 @@ Accept wildcard characters: False
 ```
 
 ### -MachineObjectOU
-Menentukan nama yang sepenuhnya memenuhi syarat untuk unit organisasi (OU, Fully Qualified Name) tempat konfigurasi membuat akun komputer.
+Menentukan nama unit organisasi (OU) yang sepenuhnya memenuhi syarat di mana konfigurasi membuat akun komputer.
 
 ```yaml
 Type: String
@@ -450,7 +450,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoSSHEndpoint
-Menunjukkan bahwa konfigurasi ini membuat mesin virtual tanpa titik akhir ENDPOINT ENDPOINT.
+Menunjukkan bahwa konfigurasi ini membuat mesin virtual tanpa titik akhir SSH.
 
 ```yaml
 Type: SwitchParameter
@@ -465,7 +465,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoSSHPassword
-Menunjukkan bahwa konfigurasi ini membuat mesin virtual tanpa kata sandi LINUX.
+Menunjukkan bahwa konfigurasi ini membuat mesin virtual tanpa kata sandi SSH.
 
 ```yaml
 Type: SwitchParameter
@@ -480,7 +480,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWinRMEndpoint
-Menunjukkan bahwa konfigurasi ini tidak menambahkan titik akhir WinRM untuk komputer virtual.
+Menunjukkan bahwa konfigurasi ini tidak menambahkan titik akhir WinRM untuk mesin virtual.
 
 ```yaml
 Type: SwitchParameter
@@ -510,8 +510,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -540,8 +540,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -LINUXKeyPairs
-Menentukan pasangan tombol LINUX.
+### -SSHKeyPairs
+Menentukan pasangan kunci SSH.
 
 ```yaml
 Type: SSHKeyPairList
@@ -555,8 +555,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -LINUXPublicKeys
-Menentukan kunci publik KEYS.
+### -SSHPublicKeys
+Menentukan kunci publik SSH.
 
 ```yaml
 Type: SSHPublicKeyList
@@ -571,7 +571,7 @@ Accept wildcard characters: False
 ```
 
 ### -Zona Waktu
-Menentukan zona waktu untuk mesin virtual, misalnya, Waktu Standar Pasifik atau Waktu Standar Tengah Kanada.
+Menentukan zona waktu untuk mesin virtual, misalnya, Waktu Standar Pasifik atau Waktu Standar Pusat Kanada.
 
 ```yaml
 Type: String
@@ -601,7 +601,7 @@ Accept wildcard characters: False
 ```
 
 ### -Windows
-Menunjukkan bahwa konfigurasi ini membuat mesin virtual mandiri yang menjalankan sistem Windows operasi mandiri.
+Menunjukkan bahwa konfigurasi ini membuat mesin virtual mandiri yang menjalankan sistem operasi Windows.
 
 ```yaml
 Type: SwitchParameter
@@ -616,7 +616,7 @@ Accept wildcard characters: False
 ```
 
 ### -WindowsDomain
-Menunjukkan bahwa konfigurasi ini Windows server yang tergabung ke domain Direktori Aktif.
+Menunjukkan bahwa konfigurasi ini membuat server Windows yang digabungkan ke domain Direktori Aktif.
 
 ```yaml
 Type: SwitchParameter
@@ -631,7 +631,7 @@ Accept wildcard characters: False
 ```
 
 ### -WinRMCertificate
-Menentukan sertifikat bahwa konfigurasi ini terkait ke titik akhir WinRM.
+Menentukan sertifikat yang terkait dengan konfigurasi ini ke titik akhir WinRM.
 
 ```yaml
 Type: X509Certificate2
@@ -645,7 +645,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -X509Certificates
+### -X509Sertifikaat
 Menentukan array sertifikat X509 yang digunakan untuk layanan yang dihosting.
 
 ```yaml
@@ -661,7 +661,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -671,8 +671,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureVM](./New-AzureVM.md)
+[AzureVM baru](./New-AzureVM.md)
 
-[New-AzureVMConfig](./New-AzureVMConfig.md)
+[AzureVMConfig baru](./New-AzureVMConfig.md)
 
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Security/Commands.Security/help/Get-AzureRmSecurityAutoProvisioningSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Security/Commands.Security/help/Get-AzureRmSecurityAutoProvisioningSetting.md
 ms.openlocfilehash: 98adc5714f4a4abaeca9fe6723b1a56fe1d49fca
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140860137"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142060736"
 ---
 # Get-AzureRmSecurityAutoProvisioningSetting
 
@@ -39,8 +39,8 @@ Get-AzureRmSecurityAutoProvisioningSetting -ResourceId <String> [-DefaultProfile
 ```
 
 ## DESCRIPTION
-Fitur Penyediaan Pengaturan memungkinkan Anda memutuskan apakah Anda ingin Azure Security Cetner secara otomatis mengambil agen keamanan yang akan diinstal pada VM Anda.
-Agen keamanan akan memantau VM Anda untuk membuat pemberitahuan keamanan dan memantau kepatuhan keamanan VM.
+Pengaturan Penyediaan Otomatis memungkinkan Anda memutuskan apakah Anda ingin Azure Security Cetner memproviosionalkan agen keamanan yang akan diinstal di VM Anda secara otomatis.
+Agen keamanan akan memantau VM Anda untuk membuat peringatan keamanan dan memantau kepatuhan keamanan VM.
 
 ## EXAMPLES
 
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

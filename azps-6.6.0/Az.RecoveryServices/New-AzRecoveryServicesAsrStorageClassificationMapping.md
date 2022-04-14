@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrStorageClassificationMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrStorageClassificationMapping.md
 ms.openlocfilehash: 793b8562e435f1cdb435e5784a7205b32c17fd23
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140068102"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142043975"
 ---
 # New-AzRecoveryServicesAsrStorageClassificationMapping
 
 ## SYNOPSIS
-Membuat pemetaan klasifikasi penyimpanan ASR di vault Layanan Pemulihan.
+Membuat pemetaan klasifikasi penyimpanan ASR di kubah Layanan Pemulihan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesasrstorageclassificationmapping) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesasrstorageclassificationmapping) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ New-AzRecoveryServicesAsrStorageClassificationMapping -Name <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzRecoveryServicesAsrStorageClassificationMapping** membuat klasifikasi penyimpanan memetakan vault Layanan Pemulihan.
+Cmdlet **New-AzRecoveryServicesAsrStorageClassificationMapping** membuat klasifikasi penyimpanan memetakan kubah Layanan Pemulihan.
 
 ## EXAMPLES
 
@@ -39,7 +39,7 @@ Cmdlet **New-AzRecoveryServicesAsrStorageClassificationMapping** membuat klasifi
 PS C:\> $currentJob = New-AzRecoveryServicesAsrStorageClassificationMapping -Name $StorageClassificationMappingName -PrimaryStorageClassification $PrimaryStorageClassification -RecoveryStorageClassification $RecoveryStorageClassification
 ```
 
-Memulai operasi pembuatan pemetaan klasifikasi penyimpanan dengan parameter tertentu dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Memulai operasi pembuatan pemetaan klasifikasi penyimpanan dengan parameter yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ## PARAMETERS
 
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

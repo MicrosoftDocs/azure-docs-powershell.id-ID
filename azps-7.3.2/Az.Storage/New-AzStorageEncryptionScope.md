@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageEncryptionScope.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageEncryptionScope.md
-ms.openlocfilehash: 07a271bff2009d7e3496b3edf1e4edcef6a22a63
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 398f530dac5b8543914e7fb5b987d333795c276a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140548352"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142206703"
 ---
 # New-AzStorageEncryptionScope
 
 ## SYNOPSIS
-Membuat lingkup enkripsi untuk akun Storage Anda.
+Membuat lingkup enkripsi untuk akun Storage.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azstorageencryptionscope) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Nama Akun (Default)
+### AccountName (Default)
 ```
 New-AzStorageEncryptionScope [-ResourceGroupName] <String> [-StorageAccountName] <String>
  -EncryptionScopeName <String> [-StorageEncryption] [-RequireInfrastructureEncryption]
@@ -48,11 +51,11 @@ New-AzStorageEncryptionScope -StorageAccount <PSStorageAccount> -EncryptionScope
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzStorageEncryptionScope** membuat lingkup enkripsi untuk akun Storage Anda.
+Cmdlet **New-AzStorageEncryptionScope** membuat lingkup enkripsi untuk akun Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat lingkup enkripsi dengan Storage Enkripsi
+### Contoh 1: Membuat lingkup enkripsi dengan enkripsi Storage
 ```
 PS C:\> New-AzStorageEncryptionScope -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount"  -EncryptionScopeName testscope -StorageEncryption
 
@@ -63,7 +66,7 @@ Name      State    Source            KeyVaultKeyUri RequireInfrastructureEncrypt
 testscope Enabled  Microsoft.Storage
 ```
 
-Perintah ini membuat lingkup enkripsi dengan Storage Enkripsi.
+Perintah ini membuat lingkup enkripsi dengan Enkripsi Storage.
 
 ### Contoh 2: Membuat lingkup enkripsi dengan Enkripsi Keyvault, dan RequireInfrastructureEncryption
 ```
@@ -79,7 +82,7 @@ testscope Enabled  Microsoft.Keyvault https://keyvalutname.vault.azure.net:443/k
 ```
 
 Perintah ini membuat lingkup enkripsi dengan Enkripsi Keyvault dan RequireInfrastructureEncryption.
-Identitas akun Storage harus memiliki izin dapatkan,wrapkey,unwrapkey ke kunci keyvault.
+Akun Storage Yang diperlukan Identitas memiliki izin get,wrapkey,unwrapkey ke kunci keyvault.
 
 ## PARAMETERS
 
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionScopeName
-Azure Storage EncryptionScope
+nama Azure Storage EncryptionScope
 
 ```yaml
 Type: System.String
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyUri
-Uri kunci
+Kunci Uri
 
 ```yaml
 Type: System.String
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequireInfrastructureEncryption
-Lingkup enkripsi akan menerapkan lapisan enkripsi sekunder dengan kunci terkelola platform untuk data yang tidak digunakan.
+Lingkup enkripsi akan menerapkan lapisan enkripsi sekunder dengan kunci yang dikelola platform untuk data saat disimpan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage objek akun
+objek akun Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Storage Akun.
+Storage Nama Akun.
 
 ```yaml
 Type: System.String
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayConnectionIkeSa.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayConnectionIkeSa.md
 ms.openlocfilehash: fc558c2a7fcf12c3c289cecdc3745bc794e538c8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140251422"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142081057"
 ---
 # Get-AzVirtualNetworkGatewayConnectionIkeSa
 
 ## SYNOPSIS
-Mendapatkan Asosiasi Keamanan IKE dari Koneksi Gateway Jaringan Virtual
+Dapatkan Asosiasi Keamanan IKE dari Koneksi Gateway Virtual Network
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azvirtualnetworkgatewayconnectionikesa) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualnetworkgatewayconnectionikesa) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ Get-AzVirtualNetworkGatewayConnectionIkeSa [-ResourceId <String>] [-AsJob]
 
 ## DESCRIPTION
 Cmdlet **Get-AzVirtualNetworkGatewayConnectionIkeSa** mengembalikan Asosiasi Keamanan IKE koneksi Anda berdasarkan Nama Koneksi dan Nama Grup Sumber Daya.
-Jika cmdlet **Get-AzVirtualNetworkGatewayConnection** diterbitkan tanpa menentukan parameter -Name, output tidak akan memperlihatkan Asosiasi Keamanan IKE.
+Jika cmdlet **Get-AzVirtualNetworkGatewayConnection** dikeluarkan tanpa menentukan parameter -Name, output tidak akan memperlihatkan Asosiasi Keamanan IKE.
 
 ## EXAMPLES
 
@@ -64,7 +64,7 @@ elapsedTimeInseconds       : 23092
 quickModeSa                : {}
 ```
 
-Mengembalikan Asosiasi Keamanan IKE untuk Koneksi Gateway Jaringan Virtual dengan nama "myTunnel" dalam grup sumber daya "myRG"
+Mengembalikan Asosiasi Keamanan IKE untuk Koneksi Gateway Virtual Network dengan nama "myTunnel" dalam grup sumber daya "myRG"
 
 ## PARAMETERS
 
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek koneksi gateway jaringan virtual yang harus diambil IKES.
+Objek koneksi gateway jaringan virtual tempat SAS IKE perlu disambungkan.
 
 ```yaml
 Type: PSVirtualNetworkGatewayConnection
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama koneksi gateway jaringan virtual yang perlu diambil IKES.
+Nama koneksi gateway jaringan virtual tempat SAS IKE perlu disambungkan.
 
 ```yaml
 Type: String
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya Azure dari Koneksi Gateway Jaringan Virtual yang perlu diambil IKE.
+ID sumber daya Azure dari Virtual Network Gateway Connection tempat SAS IKE harus di ambil.
 
 ```yaml
 Type: String
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

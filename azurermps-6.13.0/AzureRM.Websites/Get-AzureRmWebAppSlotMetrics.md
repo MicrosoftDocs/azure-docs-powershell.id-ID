@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.websi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/Get-AzureRmWebAppSlotMetrics.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/Get-AzureRmWebAppSlotMetrics.md
-ms.openlocfilehash: 2f4e5978ac27e80cc37ca38272753296acf90b2a286e0a24bd153a42bcb82632
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 9c336c1bb2c2485c5bef691a5d5560a1b8795360
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140862842"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142246707"
 ---
 # Get-AzureRmWebAppSlotMetrics
 
@@ -46,12 +46,12 @@ Get-AzureRmWebAppSlotMetrics [-Metrics] <String[]> [-StartTime] <DateTime> [[-En
 PS C:\> Get-AzureRmAppServicePlanMetrics -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -StartTime 2016-11-30T22:00:00Z -EndTime 2016-11-30T22:30:00Z -Granularity PT1M -Metrics ["Requests"]
 ```
 
-Perintah ini mendapatkan Permintaan dari Web App per menit yang ditentukan(PT1M - Poll Time 1 menit) antara StartTime dan EndTime
+Perintah ini mendapatkan Permintaan Aplikasi Web per menit yang ditentukan(PT1M - Poll Time 1 menit) antara StartTime dan EndTime
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndTime
-Waktu Berakhir dalam UTC
+Waktu Selesai di UTC
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceDetails
-Detail Contoh
+Detail Instans
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -110,7 +110,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Metrics
+### -Metrik
 Metrik
 
 ```yaml
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Waktu Mulai dalam UTC
+Waktu Mulai di UTC
 
 ```yaml
 Type: System.DateTime
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

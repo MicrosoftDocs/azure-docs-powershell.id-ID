@@ -4,11 +4,11 @@ ms.assetid: 40179CF3-7896-4C45-BC18-4CB653B245B6
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 4027b13fb398d69bee09be5c0a939ff86a099e39
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428772"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142147271"
 ---
 # Get-AzureRmDnsRecordSet
 
@@ -25,7 +25,7 @@ Get-AzureRmDnsRecordSet [-Name <String>] -ZoneName <String> -ResourceGroupName <
  [-RecordType <RecordType>] [<CommonParameters>]
 ```
 
-### Object
+### Objek
 ```
 Get-AzureRmDnsRecordSet [-Name <String>] -Zone <DnsZone> [-RecordType <RecordType>] [<CommonParameters>]
 ```
@@ -33,49 +33,49 @@ Get-AzureRmDnsRecordSet [-Name <String>] -Zone <DnsZone> [-RecordType <RecordTyp
 ## DESCRIPTION
 Cmdlet **Get-AzureRmDnsRecordSet** mendapatkan kumpulan catatan Domain Name System (DNS) dengan nama dan tipe yang ditentukan, dalam zona yang ditentukan.
 
-Jika Anda tidak menentukan parameter *Name* atau *RecordType,* cmdlet ini akan mengembalikan semua kumpulan data tipe yang ditentukan dalam zona.
-Jika Anda menentukan parameter *RecordType* tetapi bukan parameter *Name,* cmdlet ini akan mengembalikan semua kumpulan data tipe catatan yang ditentukan.
+Jika Anda tidak menentukan parameter *Name* atau *RecordType* , cmdlet ini mengembalikan semua kumpulan rekaman dari tipe yang ditentukan dalam zona.
+Jika Anda menentukan parameter *RecordType* tapi bukan parameter *Nama* , cmdlet ini mengembalikan semua kumpulan rekaman dari tipe catatan yang ditentukan.
 
-Anda dapat menggunakan operator pipeline untuk menyampaikan objek **DnsZone** ke cmdlet ini, atau anda dapat melewati objek **DnsZone** sebagai *parameter* Zona, atau menentukan zona dan grup sumber daya berdasarkan nama.
+Anda bisa menggunakan operator pipeline untuk mengirimkan objek **DnsZone** ke cmdlet ini, atau Anda bisa melewati objek **DnsZone** sebagai parameter *Zona* , atau alternatifnya Anda bisa menentukan zona dan grup sumber daya menurut nama.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan kumpulan rekaman dengan nama dan tipe yang ditentukan
+### Contoh 1: Mendapatkan kumpulan catatan dengan nama dan tipe yang ditentukan
 ```
 PS C:\>$RecordSet = Get-AzureRmDnsRecordSet -ResourceGroupName "MyResourceGroup" -ZoneName "myzone.com" -Name "www" -RecordType A
 ```
 
-Perintah ini mendapatkan kumpulan catatan tipe catatan A bernama www dalam grup dan zona sumber daya yang ditentukan, lalu menyimpannya di $RecordSet sumber daya.
-Karena parameter *Nama* *dan RecordType* ditentukan, hanya satu **objek RecordSet** yang dikembalikan.
+Perintah ini mendapatkan kumpulan catatan tipe catatan A bernama www dalam grup dan zona sumber daya tertentu, lalu menyimpannya dalam variabel $RecordSet.
+Karena parameter *Name* dan *RecordType* ditentukan, hanya satu objek **RecordSet** yang dikembalikan.
 
-### Contoh 2: Mendapatkan kumpulan rekaman dari tipe tertentu
+### Contoh 2: Mendapatkan kumpulan rekaman dari tipe yang ditentukan
 ```
 PS C:\>$RecordSets = Get-AzureRmDnsRecordSet -ResourceGroupName "MyResourceGroup" -ZoneName "myzone.com" -RecordType A
 ```
 
-Perintah ini mendapatkan array dari semua kumpulan data tipe data A dalam zona yang bernama myzone.com di grup sumber daya yang bernama MyResourceGroup, lalu menyimpannya di $RecordSets sumber daya.
+Perintah ini mendapatkan array dari semua kumpulan rekaman tipe A di zona bernama myzone.com dalam grup sumber daya bernama MyResourceGroup, lalu menyimpannya dalam variabel $RecordSets.
 
-### Contoh 3: Mendapatkan semua kumpulan rekaman dalam satu zona
+### Contoh 3: Mendapatkan semua kumpulan rekaman dalam zona
 ```
 PS C:\>$RecordSets = Get-AzureRmDnsRecordSet -ResourceGroupName "MyResourceGroup" -ZoneName "myzone.com"
 ```
 
-Perintah ini mendapatkan array semua kumpulan data dalam zona yang bernama myzone.com dalam grup sumber daya yang bernama MyResourceGroup, lalu menyimpannya dalam $RecordSets sumber daya.
+Perintah ini mendapatkan array semua kumpulan rekaman dalam zona bernama myzone.com dalam grup sumber daya bernama MyResourceGroup, lalu menyimpannya dalam variabel $RecordSets.
 
-### Contoh 4: Mendapatkan semua kumpulan rekaman dalam satu zona, menggunakan objek DnsZone
+### Contoh 4: Dapatkan semua kumpulan catatan dalam zona, menggunakan objek DnsZone
 ```
 PS C:\> $Zone = Get-AzureRmDnsZone -Name "myzone.com" -ResourceGroupName "MyResourceGroup"
 PS C:\> $RecordSets = Get-AzureRmDnsRecordSet -Zone $Zone
 ```
 
 Contoh ini sama dengan Contoh 3 di atas.
-Saat ini, zona ditentukan menggunakan objek zona.
+Kali ini, zona ditentukan menggunakan objek zona.
 
 ## PARAMETERS
 
 ### -Nama
-Menentukan nama **RecordSet untuk** mendapatkan.
-Jika Anda tidak menentukan parameter *Name,* semua kumpulan data dari tipe tertentu akan dikembalikan.
+Menentukan nama **RecordSet** yang akan didapatkan.
+Jika Anda tidak menentukan parameter *Nama* , semua kumpulan rekaman dari tipe yang ditentukan akan dikembalikan.
 
 ```yaml
 Type: String
@@ -102,11 +102,11 @@ Accept wildcard characters: False
 ```
 
 ### -RecordType
-Menentukan tipe catatan DNS yang akan dapatkan cmdlet ini.
+Menentukan tipe catatan DNS yang didapat cmdlet ini.
 
-Nilai valid adalah: 
+Nilai yang valid adalah: 
 
-- A
+- J
 - AAAA
 - CNAME
 - MX
@@ -116,7 +116,7 @@ Nilai valid adalah:
 - SRV
 - TXT
 
-Jika Anda tidak menentukan parameter *RecordType,* Anda juga harus menghilangkan parameter *Name.* Cmdlet ini lalu mengembalikan semua kumpulan data dalam zona (semua nama dan tipe).
+Jika tidak menentukan parameter *RecordType* , Anda juga harus menghilangkan parameter *Nama* . Cmdlet ini kemudian mengembalikan semua kumpulan rekaman dalam zona (dari semua nama dan tipe).
 
 ```yaml
 Type: RecordType
@@ -133,9 +133,9 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan grup sumber daya yang berisi zona DNS.
-Nama zona juga harus ditentukan, menggunakan parameter *ZoneName.*
+Nama zona juga harus ditentukan, menggunakan parameter *ZoneName* .
 
-Alternatifnya, Anda dapat menentukan zona dan grup sumber daya dengan memberikan **objek DnsZone** menggunakan *parameter Zona.*
+Atau, Anda dapat menentukan zona dan grup sumber daya dengan masuk ke objek **DnsZone** menggunakan parameter *Zona* .
 
 ```yaml
 Type: String
@@ -149,9 +149,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Zone
-Menentukan zona DNS yang berisi kumpulan data yang akan cmdlet ini dapatkan.
-Alternatifnya, Anda bisa menentukan zona menggunakan parameter *ZoneName* *dan ResourceGroupName.*
+### -Zona
+Menentukan zona DNS yang berisi kumpulan catatan yang didapatkan cmdlet ini.
+Atau, Anda dapat menentukan zona menggunakan parameter *ZoneName* dan *ResourceGroupName* .
 
 ```yaml
 Type: DnsZone
@@ -166,10 +166,10 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneName
-Menentukan nama zona DNS yang berisi catatan yang akan mendapatkannya.
-Grup sumber daya yang berisi zona juga harus ditentukan, menggunakan parameter *ResourceGroupName.*
+Menentukan nama zona DNS yang berisi kumpulan catatan untuk didapatkan.
+Grup sumber daya yang berisi zona juga harus ditentukan, menggunakan parameter *ResourceGroupName* .
 
-Alternatifnya, Anda dapat menentukan grup zona dan sumber daya dengan memberikan objek Zona DNS menggunakan *parameter Zona.*
+Alternatifnya, Anda dapat menentukan zona dan grup sumber daya dengan masuk ke objek Zona DNS menggunakan parameter *Zona* .
 
 ```yaml
 Type: String
@@ -184,19 +184,19 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.Dns.DnsZone
-Anda dapat pipa objek **DnsZone** ke cmdlet ini.
-Objek **DnsZone** mewakili zona untuk mencari objek **RecordSet.**
+Anda dapat menyalurkan objek **DnsZone** ke cmdlet ini.
+Objek **DnsZone** mewakili zona untuk mencari objek **RecordSet** .
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Dns.DnsRecordSet
-Cmdlet ini mengembalikan satu atau beberapa objek yang mewakili kumpulan data yang ditemukan.
-Akan ada di sebagian besar **RecordSet** yang dikembalikan jika parameter Nama dan *RecordType* ditentukan, jika tidak beberapa objek  **RecordSet** dikembalikan sebagai array.
+Cmdlet ini mengembalikan satu atau beberapa objek yang mewakili kumpulan rekaman yang ditemukan.
+Akan ada paling banyak satu **RecordSet** yang dikembalikan jika parameter *Name* dan *RecordType* ditentukan, jika tidak beberapa objek **RecordSet** dikembalikan sebagai array.
 
 ## CATATAN
 

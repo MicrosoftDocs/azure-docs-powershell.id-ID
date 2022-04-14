@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Restart-AzServiceFabricManagedNodeType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Restart-AzServiceFabricManagedNodeType.md
 ms.openlocfilehash: e6d8d4a3cc41d74d9294c9082271a5b81fb96ccb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139968513"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142223425"
 ---
 # Restart-AzServiceFabricManagedNodeType
 
 ## SYNOPSIS
-Mulai ulang node tertentu dari tipe node.
+Mulai ulang node tertentu dari tipe simpul.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/restart-azservicefabricmanagednodetype) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/restart-azservicefabricmanagednodetype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Restart-AzServiceFabricManagedNodeType [-ResourceGroupName] <String> [-ClusterNa
 ```
 
 ## DESCRIPTION
-Mulai ulang node tertentu dari tipe node. It will disabled the service fabric node before restarting the vms and enabled them back again once they come back. Jika hal ini dilakukan pada tipe node utama, proses ini mungkin memakan waktu beberapa saat karena mungkin tidak memulai ulang semua simpul secara bersamaan. Use -ForceRestart force the operation even if service fabric is unable to disable the node but use with caution as this might cause data loss if stateful workloads are running on the node.
+Mulai ulang node tertentu dari tipe simpul. Ini akan menonaktifkan layanan fabric node sebelum memulai ulang vm dan mengaktifkannya kembali setelah mereka kembali. Jika hal ini dilakukan pada tipe simpul utama, mungkin akan memakan waktu cukup lama karena mungkin tidak memulai ulang semua simpul secara bersamaan. Gunakan -ForceRestart memaksa operasi meskipun kain servis tidak dapat menonaktifkan simpul tetapi gunakan dengan hati-hati karena hal ini dapat menyebabkan hilangnya data jika beban kerja yang dinyatakan berjalan pada simpul.
 
 ## EXAMPLES
 
@@ -41,12 +41,12 @@ $NodeTypeName = "nt1"
 Restart-AzServiceFabricManagedNodeType -ResourceGroupName $rgName -ClusterName $clusterName  -Name $NodeTypeName -NodeName nt1_0, nt1_3
 ```
 
-Mulai ulang node 0 dan 3 pada tipe node.
+Mulai ulang simpul 0 dan 3 pada tipe simpul.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceRestart
-Using this flag will force the node to restart even if service fabric is unable to disable the node.
+Menggunakan bendera ini akan memaksa simpul untuk memulai ulang meskipun kain servis tidak dapat menonaktifkan simpul.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Tentukan nama tipe node.
+Tentukan nama tipe simpul.
 
 ```yaml
 Type: System.String
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeName
-Daftar nama node untuk operasi.
+Daftar nama simpul untuk operasi tersebut.
 
 ```yaml
 Type: System.String[]
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storagesync/unre
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Unregister-AzStorageSyncServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Unregister-AzStorageSyncServer.md
-ms.openlocfilehash: 904344be8d65fed7e233c016493bc23ed9f250d4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2906902cf1ce8982c485f84a5f2d34fe7b7f1141
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140548229"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142206446"
 ---
 # Unregister-AzStorageSyncServer
 
 ## SYNOPSIS
-Peringatan: Membatalkan pendaftaran server akan mengakibatkan penghapusan kaskada dari semua titik akhir server di server ini. Perintah ini akan membatalkan pendaftaran server dari layanan sinkronisasi penyimpanannya.
+Peringatan: Membatalkan pendaftaran server akan mengakibatkan penghapusan bertingkat dari semua titik akhir server di server ini. Perintah ini akan membatalkan pendaftaran server dari layanan sinkronisasi penyimpanannya.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/unregister-azstoragesyncserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Unregister-AzStorageSyncServer [-ResourceId] <String> [-Force] [-PassThru] [-AsJ
 ```
 
 ## DESCRIPTION
-Perintah ini akan membatalkan pendaftaran server dari layanan sinkronisasi penyimpanan. Peringatan: Membatalkan pendaftaran server akan mengakibatkan penghapusan kaskada dari semua titik akhir server di server ini. Ini seharusnya hanya disebut saat Anda yakin bahwa tidak ada jalur di server ini yang akan disinkronkan lagi.
+Perintah ini akan membatalkan pendaftaran server dari layanan sinkronisasi penyimpanan. Peringatan: Membatalkan pendaftaran server akan mengakibatkan penghapusan bertingkat dari semua titik akhir server di server ini. Seharusnya hanya dipanggil ketika Anda yakin bahwa tidak ada jalur di server ini yang akan disinkronkan lagi.
 
 ## EXAMPLES
 
@@ -49,12 +52,12 @@ PS C:\> $RegisteredServer = Get-AzStorageSyncServer -ResourceGroupName "myResour
 PS C:\> Unregister-AzStorageSyncServer -Force -ResourceGroupName "myResourceGroup" -StorageSyncServiceName "myStorageSyncServiceName" -ServerId $RegisteredServer.ServerId
 ```
 
-Perintah ini akan membatalkan pendaftaran server, yang menyebabkan penghapusan kaskada dari semua titik akhir server di server ini.
+Perintah ini akan membatalkan pendaftaran server, menyebabkan penghapusan bertingkat dari semua titik akhir server di server ini.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -83,8 +86,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Supply -Force untuk melewati konfirmasi perintah ini.
+### -Paksa
+Pasokan -Paksa untuk melewati konfirmasi perintah ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Input RegisteredServer, biasanya melewati saluran.
+RegisteredServer Input Object, biasanya melewati pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.StorageSync.Models.PSRegisteredServer
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Dalam eksekusi normal, cmdlet ini tidak mengembalikan nilai berhasil. Jika Anda menyediakan parameter PassThru, maka cmdlet akan menulis nilai ke pipeline setelah eksekusi berhasil.
+Dalam eksekusi normal, cmdlet ini tidak mengembalikan nilai keberhasilan. Jika Anda memberikan parameter PassThru, cmdlet akan menulis nilai ke pipeline setelah eksekusi berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Server Terdaftar
+Id Sumber Daya RegisteredServer
 
 ```yaml
 Type: System.String
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.sql/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Stop-AzureRmSqlElasticPoolActivity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Stop-AzureRmSqlElasticPoolActivity.md
-ms.openlocfilehash: 44465cf65dc7459b9f6ea1470ec305aa707dda39034b6dfa6ed9bf4de7d01f1f
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 999fd83af11422f1499e386f194fd75d9b99e152
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140857862"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142247161"
 ---
 # Stop-AzureRmSqlElasticPoolActivity
 
@@ -28,11 +28,11 @@ Stop-AzureRmSqlElasticPoolActivity [-PassThru] [-ServerName] <String> [-ElasticP
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzureRmSqlElasticPoolActivity** membatalkan operasi pembaruan asinkron pada kolam elastis.
+Cmdlet **Stop-AzureRmSqlElasticPoolActivity** membatalkan operasi pembaruan asinkron pada kumpulan elastis.
 
 ## EXAMPLES
 
-### Contoh 1: Membatalkan operasi pembaruan asinkron pada pool elastis
+### Contoh 1: Batalkan operasi pembaruan asinkron pada kumpulan elastis
 ```
 PS C:\> Stop-AzureRmSqlElasticPoolActivity -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -ElasticPoolName "ElasticPool01" -OperationId af97005d-9243-4f8a-844e-402d1cc855f5
 
@@ -49,7 +49,7 @@ EndTime         : 10/15/2017 02:49:43 PM
 PercentComplete :
 ```
 
-Perintah ini membatalkan operasi pembaruan asinkron pada pool elastis.
+Perintah ini membatalkan operasi pembaruan asinkron pada kumpulan elastis.
 
 ## PARAMETERS
 
@@ -68,8 +68,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ElastisPoolName
-Nama Azure SQL Elastis Pool.
+### -ElasticPoolName
+Nama Azure SQL Elastic Pool.
 
 ```yaml
 Type: System.String
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{fill passThru Description}}
+{{Fill PassThru Description}}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama Azure SQL Server Ruang Elastis ada di.
+Nama Server Azure SQL tempat Kumpulan Elastis berada.
 
 ```yaml
 Type: System.String
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,17 +175,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Guid, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Sql.ElastisPool.Model.AzureSqlElasticPoolActivityModel
+### Microsoft.Azure.Commands.Sql.ElasticPool.Model.AzureSqlElasticPoolActivityModel
 
 ## CATATAN
 

@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.stora
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Storage/Commands.Management.Storage/help/Remove-AzureRmStorageAccountNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Storage/Commands.Management.Storage/help/Remove-AzureRmStorageAccountNetworkRule.md
-ms.openlocfilehash: d4e7650d38e4f4fa679baf5dab70555a9b8e2bf4e1ca2676f837f1e6702d969c
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 73f096c516bb285b89e45d90107ff6a3ad406dbf
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140852832"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142247083"
 ---
 # Remove-AzureRmStorageAccountNetworkRule
 
 ## SYNOPSIS
-Menghapus IpRules atau VirtualNetworkRules dari properti NetWorkRule akun Storage
+Hapus IpRules atau VirtualNetworkRules dari properti NetWorkRule akun Storage
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -53,19 +53,19 @@ Cmdlet **Remove-AzureRmStorageAccountNetworkRule** menghapus IpRules atau Virtua
 
 ## EXAMPLES
 
-### Contoh 1: Remove several IpRules with IPAddressOrRange
+### Contoh 1: Hapus beberapa IpRules dengan IPAddressOrRange
 ```
 PS C:\>Remove-AzureRmStorageAccountNetworkRule -ResourceGroupName "myResourceGroup" -AccountName "mystorageaccount" -IPAddressOrRange "10.0.0.0/24,28.1.0.0/16"
 ```
 
 Perintah ini menghapus beberapa IpRules dengan IPAddressOrRange.
 
-### Contoh 2: Menghapus Input Objek VirtualNetworkRule dengan VirtualNetworkRule dengan JSON
+### Contoh 2: Hapus VirtualNetworkRule dengan input Objek VirtualNetworkRule dengan JSON
 ```
 PS C:\>Remove-AzureRmStorageAccountNetworkRule -ResourceGroupName "myResourceGroup" -AccountName "mystorageaccount" -VirtualNetworkRules (@{VirtualNetworkReourceId="/subscriptions/s1/resourceGroups/g1/providers/Microsoft.Network/virtualNetworks/vnet1/subnets/subnet1";Action="allow"})
 ```
 
-Perintah ini menghapus input Objek VirtualNetworkRule dengan VirtualNetworkRule dengan JSON.
+Perintah ini menghapus VirtualNetworkRule dengan input Objek VirtualNetworkRule dengan JSON.
 
 ### Contoh 3: Hapus IpRule pertama dengan pipeline
 ```
@@ -74,7 +74,7 @@ PS C:\>(Get-AzureRmStorageAccountNetworkRuleSet -ResourceGroupName "myResourceGr
 
 Perintah ini menghapus IpRule pertama dengan pipeline.
 
-### Contoh 4: Menghapus beberapa VirtualNetworkRules dengan VirtualNetworkResourceID
+### Contoh 4: Hapus beberapa VirtualNetworkRules dengan VirtualNetworkResourceID
 ```
 PS C:\>Remove-AzureRmStorageAccountNetworkRule -ResourceGroupName "myResourceGroup" -AccountName "mystorageaccount" -VirtualNetworkResourceId "/subscriptions/s1/resourceGroups/g1/providers/Microsoft.Network/virtualNetworks/vnet1/subnets/subnet1","/subscriptions/s1/resourceGroups/g1/providers/Microsoft.Network/virtualNetworks/vnet2/subnets/subnet2"
 ```
@@ -84,7 +84,7 @@ Perintah ini menghapus beberapa VirtualNetworkRules dengan VirtualNetworkResourc
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -IPAddressOrRange
-Array IpAddressOrRange, akan menghapus IpRule dengan IpAddressOrRange yang sama dari properti NetWorkRule.
+Array IpAddressOrRange, akan menghapus IpRule dengan IpAddressOrRange yang sama dari Properti NetWorkRule.
 
 ```yaml
 Type: System.String[]
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -IPRule
-Array objek IpRule yang akan dihapus dari Properti NetWorkRule.
+Array objek IpRule untuk dihapus dari Properti NetWorkRule.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSIpRule[]
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama akun Storage Anda.
+Menentukan nama akun Storage.
 
 ```yaml
 Type: System.String
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya berisi akun Storage tersebut.
+Menentukan nama grup sumber daya berisi akun Storage.
 
 ```yaml
 Type: System.String
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkResourceId
-Array VirtualNetworkResourceId, akan menghapus VirtualNetworkRule dengan VirtualNetworkResourceId yang sama dari properti NetWorkRule.
+Array VirtualNetworkResourceId, akan menghapus VirtualNetworkRule dengan VirtualNetworkResourceId yang sama dari Properti NetWorkRule.
 
 ```yaml
 Type: System.String[]
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkRule
-Array objek VirtualNetworkRule yang akan dihapus dari Properti NetWorkRule.
+Array objek VirtualNetworkRule untuk dihapus dari Properti NetWorkRule.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSVirtualNetworkRule[]
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

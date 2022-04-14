@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.subsc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Subscription/Commands.Subscription/help/New-AzureRmSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Subscription/Commands.Subscription/help/New-AzureRmSubscription.md
-ms.openlocfilehash: 756e81e475e4a87638d0076f7923bc230067fd90613f27ec6dbe94305995955a
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: cc88f762f1e965eb4e46462f7d43074fa3fe4646
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140862884"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142246912"
 ---
 # New-AzureRmSubscription
 
@@ -28,7 +28,7 @@ New-AzureRmSubscription -EnrollmentAccountObjectId <String> [[-Name] <String>] -
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmSubscription** membuat langganan Azure.
+Cmdlet **AzureRmSubscription Baru** membuat langganan Azure.
 
 ## EXAMPLES
 
@@ -42,12 +42,12 @@ TenantId    : a5dcb057-fd83-4384-9d49-5198004d33a5
 State       : Enabled
 ```
 
-Membuat langganan Azure di bawah akun pendaftaran tertentu dengan tipe penawaran tertentu.
+Membuat langganan Azure di bawah akun pendaftaran tertentu dengan tipe penawaran yang ditentukan.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnrollmentAccountObjectId
-Nama akun pendaftaran yang digunakan saat membuat langganan.
+Nama akun pendaftaran yang akan digunakan saat membuat langganan.
 
 ```yaml
 Type: System.String
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -OwnerApplicationId
-Aplikasi SPN akan diberikan akses Pemilik ke langganan.
+SPN aplikasi yang akan diberikan akses Pemilik ke langganan.
 
 ```yaml
 Type: System.String[]
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -OwnerObjectId
-Pengguna atau objek grup id untuk diberi akses Pemilik ke langganan.
+Id pengguna atau objek grup untuk diberi akses Pemilik ke langganan.
 
 ```yaml
 Type: System.String[]
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -OwnerSignInName
-Pengguna akan diberi akses Pemilik ke langganan.
+Pengguna yang akan diberi akses Pemilik ke langganan.
 
 ```yaml
 Type: System.String[]
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,11 +197,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -4,11 +4,11 @@ Module Name: AzureRM.Compute
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/set-azurermvmssdiskencryptionextension
 schema: 2.0.0
 ms.openlocfilehash: ff1034cfbcead2e17e89b73622243c86207b9abc
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140859752"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142147551"
 ---
 # Set-AzureRmVmssDiskEncryptionExtension
 
@@ -29,9 +29,9 @@ Set-AzureRmVmssDiskEncryptionExtension [-ResourceGroupName] <String> [-VMScaleSe
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmVmssDiskEncryptionExtension** mengaktifkan enkripsi pada kumpulan skala VM.
-Cmdlet ini mengaktifkan enkripsi dengan menginstal ekstensi enkripsi disk pada kumpulan skala VM.
-Jika tidak *ada* parameter Nama yang ditentukan, ekstensi dengan nama default AzureDiskEncryption untuk mesin virtual yang menjalankan sistem operasi Windows atau AzureDiskEncryptionForLinux untuk komputer virtual Linux diinstal.
+Cmdlet **Set-AzureRmVmssDiskEncryptionExtension** memungkinkan enkripsi pada kumpulan skala VM.
+Cmdlet ini memungkinkan enkripsi dengan menginstal ekstensi enkripsi disk pada kumpulan skala VM.
+Jika tidak ada parameter *Nama* yang ditentukan, ekstensi dengan nama default AzureDiskEncryption untuk mesin virtual yang menjalankan sistem operasi Windows atau AzureDiskEncryptionForLinux untuk mesin virtual Linux diinstal.
 
 ## EXAMPLES
 
@@ -46,12 +46,12 @@ $KeyVaultResourceId = $KeyVault.ResourceId
 PS C:\> Set-AzureRmVmssDiskEncryptionExtension -ResourceGroupName $RGName -VMScaleSetName $VmssName -DiskEncryptionKeyVaultUrl $DiskEncryptionKeyVaultUrl -DiskEncryptionKeyVaultId $KeyVaultResourceId
 ```
 
-Perintah ini mengaktifkan enkripsi pada semua disk VM dalam kumpulan skala VM.
+Perintah ini memungkinkan enkripsi pada semua disk dari semua VM dalam kumpulan skala VM.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionKeyVaultId
-RESOURCEID dari KeyVault tempat kunci enkripsi yang dihasilkan akan diletakkan
+RESOURCEID dari KeyVault tempat kunci enkripsi yang dihasilkan akan diletakkan ke
 
 ```yaml
 Type: String
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionKeyVaultUrl
-URL KeyVault tempat kunci enkripsi yang dihasilkan akan diletakkan
+URL KeyVault tempat kunci enkripsi yang dihasilkan akan diletakkan ke
 
 ```yaml
 Type: String
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 
 ### -ExtensionName
 Nama ekstensi.
-Jika parameter ini tidak ditentukan, nilai default yang digunakan adalah AzureDiskEncryption untuk WINDOWS VM dan AzureDiskEncryptionForLinux untuk Linux VM
+Jika parameter ini tidak ditentukan, nilai default yang digunakan adalah AzureDiskEncryption untuk windows VM dan AzureDiskEncryptionForLinux untuk VM Linux
 
 ```yaml
 Type: String
@@ -126,8 +126,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Untuk memaksa mengaktifkan enkripsi pada kumpulan skala mesin virtual.
+### -Paksa
+Untuk mengaktifkan enkripsi pada kumpulan skala mesin virtual.
 
 ```yaml
 Type: SwitchParameter
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceUpdate
-Buat tag untuk pembaruan paksa.  Hal ini harus dilakukan untuk melakukan operasi enkripsi berulang pada VM yang sama.
+Buat tag untuk pembaruan paksa.  Ini harus diberikan untuk melakukan operasi enkripsi berulang pada VM yang sama.
 
 ```yaml
 Type: SwitchParameter
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyEncryptionKeyUrl
-URL KeyVault Versi dari KeyEncryptionKey digunakan untuk mengenkripsi kunci enkripsi disk
+URL KeyVault versi KeyEncryptionKey yang digunakan untuk mengenkripsi kunci enkripsi disk
 
 ```yaml
 Type: String
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyEncryptionKeyVaultId
-ResourceID dari KeyVault yang berisi KeyEncryptionKey yang digunakan untuk mengenkripsi kunci enkripsi disk
+RESOURCEID dari KeyVault yang berisi KeyEncryptionKey yang digunakan untuk mengenkripsi kunci enkripsi disk
 
 ```yaml
 Type: String
@@ -202,9 +202,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Passphrase
-Kata sandi yang ditentukan dalam parameter.
-Parameter ini hanya berfungsi untuk Vm Linux.
+### -Frasa sandi
+Frasa sandi yang ditentukan dalam parameter.
+Parameter ini hanya berfungsi untuk Linux VM.
 
 ```yaml
 Type: String
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat VM Scale Set ditetapkan
+Nama grup sumber daya tempat Kumpulan Skala VM berada
 
 ```yaml
 Type: String
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -TypeHandlerVersion
-Versi penanganan tipe.
+Versi pengatur tipe.
 
 ```yaml
 Type: String
@@ -280,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -296,7 +296,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -311,7 +311,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

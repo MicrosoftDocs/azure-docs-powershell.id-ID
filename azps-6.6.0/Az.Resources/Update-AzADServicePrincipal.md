@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Update-AzADServicePrincipal.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Update-AzADServicePrincipal.md
 ms.openlocfilehash: 1672421fb49d4ddf3cf021e27c82ee9c66e39d3d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140210927"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142224055"
 ---
 # Update-AzADServicePrincipal
 
@@ -20,7 +20,7 @@ Memperbarui prinsipal layanan azure active directory yang sudah ada.
 [!INCLUDE [msgraph-migration-banner](../../includes/msgraph-migration-banner.md)]
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/update-azadserviceprincipal) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/update-azadserviceprincipal) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,11 +53,11 @@ Update-AzADServicePrincipal -InputObject <PSADServicePrincipal> [-DisplayName <S
 ```
 
 ## DESCRIPTION
-Memperbarui prinsipal layanan azure active directory yang sudah ada. Untuk memperbarui kredensial yang terkait dengan prinsipal layanan ini, silakan New-AzADSpCredential cmdlet. Untuk memperbarui properti yang terkait dengan aplikasi yang mendasari, silakan Update-AzADApplication cmdlet.
+Memperbarui prinsipal layanan azure active directory yang sudah ada. Untuk memperbarui kredensial yang terkait dengan prinsipal layanan ini, silakan gunakan cmdlet New-AzADSpCredential. Untuk memperbarui properti yang terkait dengan aplikasi yang mendasar, silakan gunakan cmdlet Update-AzADApplication.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui nama tampilan prinsipal layanan
+### Contoh 1: Memperbarui nama tampilan prinsipal layanan
 
 ```powershell
 PS C:\> Update-AzADServicePrincipal -ObjectId 784136ca-3ae2-4fdd-a388-89d793e7c780 -DisplayName MyNewDisplayName
@@ -65,17 +65,17 @@ PS C:\> Update-AzADServicePrincipal -ObjectId 784136ca-3ae2-4fdd-a388-89d793e7c7
 
 Memperbarui nama tampilan prinsipal layanan dengan id objek '784136ca-3ae2-4fdd-a388-89d793e7c780' menjadi 'MyNewDisplayName'.
 
-### Contoh 2: Perbarui nama tampilan prinsipal layanan menggunakan pemipaan
+### Contoh 2: Memperbarui nama tampilan prinsipal layanan menggunakan piping
 
 ```powershell
 PS C:\> Get-AzADServicePrincipal -ObjectId 784136ca-3ae2-4fdd-a388-89d793e7c780 | Update-AzADServicePrincipal -DisplayName MyNewDisplayName
 ```
 
-Dapatkan prinsipal layanan dengan id objek '784136ca-3ae2-4fdd-a388-89d793e7c780' dan pipa yang berada di cmdlet Update-AzADServicePrincipal untuk memperbarui nama tampilan prinsipal layanan menjadi "MyNewDisplayName".
+Mendapatkan prinsipal layanan dengan id objek '784136ca-3ae2-4fdd-a388-89d793e7c780' dan pipa yang ke cmdlet Update-AzADServicePrincipal untuk memperbarui nama tampilan prinsipal layanan menjadi "MyNewDisplayName".
 
 ### Contoh 3
 
-Memperbarui prinsipal layanan azure active directory yang sudah ada. (otomatisgenerated)
+Memperbarui prinsipal layanan azure active directory yang sudah ada. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -85,7 +85,7 @@ Update-AzADServicePrincipal -IdentifierUri https://mySecretApp1 -ObjectId 000000
 ## PARAMETERS
 
 ### -ApplicationId
-Id aplikasi prinsipal layanan untuk diperbarui.
+Id aplikasi dari prinsipal layanan untuk diperbarui.
 
 ```yaml
 Type: System.Guid
@@ -141,8 +141,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Homepage
-Laman prinsipal layanan.
+### -Laman
+Laman untuk prinsipal layanan.
 
 ```yaml
 Type: System.String
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyCredential
-Kredensial kunci untuk prinsipal layanan.
+Kredensial utama untuk prinsipal layanan.
 
 ```yaml
 Type: Microsoft.Azure.Graph.RBAC.Models.KeyCredential[]
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Id objek prinsipal layanan untuk diperbarui.
+Id objek dari prinsipal layanan untuk diperbarui.
 
 ```yaml
 Type: System.String
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalName
-SPN prinsipal layanan untuk pembaruan.
+SPN dari prinsipal layanan untuk diperbarui.
 
 ```yaml
 Type: System.String
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -263,7 +263,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -278,7 +278,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -286,11 +286,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Guid
 
-### Microsoft.Azure.Commands.ActiveDirectory.LINUXDServicePrincipal
+### Microsoft.Azure.Commands.ActiveDirectory.PSADServicePrincipal
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.ActiveDirectory.LINUXDServicePrincipal
+### Microsoft.Azure.Commands.ActiveDirectory.PSADServicePrincipal
 
 ## CATATAN
 

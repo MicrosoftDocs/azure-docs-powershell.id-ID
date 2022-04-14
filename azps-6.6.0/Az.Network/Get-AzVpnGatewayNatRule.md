@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnGatewayNatRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnGatewayNatRule.md
 ms.openlocfilehash: d75365d8f01ae6a0f1bf00b040730781d8b07cd5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140330801"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142080805"
 ---
 # Get-AzVpnGatewayNatRule
 
@@ -18,7 +18,7 @@ ms.locfileid: "140330801"
 Mendapatkan aturan NAT yang terkait dengan VpnGateway.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azvpngatewaynatrule) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvpngatewaynatrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -71,8 +71,8 @@ Id                        : /subscriptions/{subscriptionId}/resourceGroups/testR
 
 ```
 
-Langkah di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub, dan VpnGateway & aturan NAT yang terkait dengan Vpngateway.
-Lalu akan mendapatkan aturan NAT menggunakan nama aturan NAT.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual dan VpnGateway & aturan NAT yang terkait dengan Vpngateway.
+Kemudian mendapatkan aturan NAT menggunakan nama aturan NAT.
 
 ## PARAMETERS
 
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Orang tua VpnGateway untuk VpnGatewayNatRule ini.
+VpnGateway induk untuk VpnGatewayNatRule ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVpnGateway
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentResourceId
-Id sumber daya dari vpnGateway induk untuk VpnGatewayNatRule ini.
+Id sumber daya dari induk VpnGateway untuk VpnGatewayNatRule ini.
 
 ```yaml
 Type: System.String
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

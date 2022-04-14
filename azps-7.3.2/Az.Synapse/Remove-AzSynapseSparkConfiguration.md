@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSparkConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSparkConfiguration.md
-ms.openlocfilehash: 4bfd41aa4adca49749f1baed6458af707bc00f61
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 8ba10118fb21aab9411b64380f48eef61f3c1436
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140195158"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142205497"
 ---
 # Remove-AzSynapseSparkConfiguration
 
 ## SYNOPSIS
-Menghapus konfigurasi grafik api dari ruang kerja.
+Menghapus konfigurasi percikan api dari ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/remove-azsynapsesparkconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzSynapseSparkConfiguration -InputObject <PSSparkConfigurationResource> [
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzSynapseSparkConfiguration** menghapus konfigurasi grafik api dari ruang kerja.
+Cmdlet **Remove-AzSynapseSparkConfiguration** menghapus konfigurasi percikan api dari ruang kerja.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Cmdlet **Remove-AzSynapseSparkConfiguration** menghapus konfigurasi grafik api d
 PS C:\> Remove-AzSynapseSparkConfiguration -WorkspaceName ContosoWorkspace -Name ContosoSparkConfiguration
 ```
 
-Hapus konfigurasi grafik api yang disebut ContosoSparkConfiguration dari ruang kerja ContosoWorkspace.
+Hapus konfigurasi percikan api yang disebut ContosoSparkConfiguration dari Ruang Kerja ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
@@ -55,7 +58,7 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Remove-AzSynapseSparkConfiguration -Name ContosoSparkConfiguration
 ```
 
-Hapus konfigurasi grafik api yang disebut ContosoSparkConfiguration dari ruang kerja ContosoWorkspace melalui pipeline.
+Hapus konfigurasi percikan api yang disebut ContosoSparkConfiguration dari ruang kerja ContosoWorkspace melalui pipeline.
 
 ### Contoh 3
 ```powershell
@@ -63,12 +66,12 @@ PS C:\> $sparkConfiguration = Get-AzSynapseSparkConfiguration -WorkspaceName Con
 PS C:\> $sparkConfiguration | Remove-AzSynapseSparkConfiguration
 ```
 
-Hapus konfigurasi grafik api yang disebut ContosoSparkConfiguration dari ruang kerja ContosoWorkspace melalui pipeline.
+Hapus konfigurasi percikan api yang disebut ContosoSparkConfiguration dari ruang kerja ContosoWorkspace melalui pipeline.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -97,8 +100,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek konfigurasi Grafik Api.
+Objek konfigurasi Spark.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSparkConfigurationResource
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Konfigurasi Grafik Api.
+Nama Konfigurasi Spark.
 
 ```yaml
 Type: System.String
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 
 ### -PassThru
 Cmdlet ini tidak mengembalikan objek secara default.
-Jika sakelar ini ditentukan, maka true akan dikembalikan jika berhasil.
+Jika sakelar ini ditentukan, sakelar akan mengembalikan true jika berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +161,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

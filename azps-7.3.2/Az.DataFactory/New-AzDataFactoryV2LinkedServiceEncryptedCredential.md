@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryV2LinkedServiceEncryptedCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryV2LinkedServiceEncryptedCredential.md
-ms.openlocfilehash: 6c884357f054dc5d68ac51dbbbdb312f240481be
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f9f722661000d82404fff164aaf3d8d82084273f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140571720"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141895490"
 ---
 # New-AzDataFactoryV2LinkedServiceEncryptedCredential
 
 ## SYNOPSIS
-Enkripsi kredensial dalam layanan tertaut dengan runtime integrasi tertentu.
+Enkripsi kredensial dalam layanan tertaut dengan runtime integrasi yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/new-azdatafactoryv2linkedserviceencryptedcredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,17 +37,17 @@ New-AzDataFactoryV2LinkedServiceEncryptedCredential [-IntegrationRuntimeName] <S
 ```
 
 ## DESCRIPTION
-Kredensial enkripsi cmdlet New-AzDataFactoryV2LinkedServiceEncryptedCredential dalam layanan tertaut dengan runtime integrasi tertentu.
+Cmdlet New-AzDataFactoryV2LinkedServiceEncryptedCredential mengenkripsi kredensial dalam layanan tertaut dengan runtime integrasi yang ditentukan.
 
-Harap pastikan persyaratan berikut ini terpenuhi:
-* **Opsi akses** jarak jauh diaktifkan pada runtime integrasi yang dihosting sendiri.
-* Powershell 7.0 atau lebih tinggi digunakan untuk menjalankan cmdlet.
+Pastikan prasyarat berikut terpenuhi:
+* Opsi **akses jarak jauh** diaktifkan pada runtime integrasi yang dihosting sendiri.
+* Powershell 7.0 atau yang lebih tinggi digunakan untuk menjalankan cmdlet.
 
 ## EXAMPLES
 
-### Contoh 1: Mengenkripsi kredensial dalam layanan yang ditautkan
+### Contoh 1: Mengenkripsi kredensial dalam layanan tertaut
 
-Perintah ini mengenkripsi kredensial di file C:\samples\WikiSample\CacheDemo1.json dengan runtime integrasi yang bernama test-selfhost-ir.
+Perintah ini mengenkripsi kredensial dalam file C:\samples\WikiSample\TaxiDemo1.json dengan runtime integrasi bernama test-selfhost-ir.
 
 ```powershell <!-- Aladdin Generated Example --> 
 New-AzDataFactoryV2LinkedServiceEncryptedCredential -DataFactoryName WikiADF -DefinitionFile 'C:\samples\WikiSample\TaxiDemo1.json' -IntegrationRuntimeName 'test-selfhost-ir' -ResourceGroupName MyResourceGroup
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -112,7 +115,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Menjalankan cmdlet tanpa meminta konfirmasi.
 
 ```yaml
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

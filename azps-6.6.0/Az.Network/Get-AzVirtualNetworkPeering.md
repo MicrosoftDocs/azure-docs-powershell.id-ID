@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkPeering.md
 ms.openlocfilehash: 9529a00b19d4fd566d65c0c363aff4dd62fe162b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139935493"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142081075"
 ---
 # Get-AzVirtualNetworkPeering
 
@@ -19,7 +19,7 @@ ms.locfileid: "139935493"
 Mendapatkan peering jaringan virtual.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azvirtualnetworkpeering) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualnetworkpeering) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,14 +33,14 @@ Cmdlet **Get-AzVirtualNetworkPeering** mendapatkan peering jaringan virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan peering antara dua jaringan virtual
+### Contoh 1: Dapatkan peering di antara dua jaringan virtual
 ```
 # Get virtual network peering named myVnet1TomyVnet2 located in myVirtualNetwork in the resource group named myResourceGroup.
 
 Get-AzVirtualNetworkPeering -Name "myVnet1TomyVnet2" -VirtualNetwork "myVnet" -ResourceGroupName "myResourceGroup"
 ```
 
-### Contoh 2: Dapatkan semua peerings di jaringan virtual
+### Contoh 2: Dapatkan semua peering di jaringan virtual
 ```
 # Get all virtual network peerings located in myVirtualNetwork in the resource group named myResourceGroup.
 
@@ -50,7 +50,7 @@ Get-AzVirtualNetworkPeering -Name "myVnet1To*" -VirtualNetwork "myVnet" -Resourc
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama peering jaringan virtual.
+Menentukan nama peering jaringan maya.
 
 ```yaml
 Type: System.String
@@ -80,7 +80,7 @@ Accept wildcard characters: True
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat peering jaringan virtual dimiliki.
+Menentukan nama grup sumber daya tempat peering jaringan virtual berada.
 
 ```yaml
 Type: System.String
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkName
-Menentukan nama jaringan virtual yang akan dapatkan cmdlet ini.
+Menentukan nama jaringan virtual yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

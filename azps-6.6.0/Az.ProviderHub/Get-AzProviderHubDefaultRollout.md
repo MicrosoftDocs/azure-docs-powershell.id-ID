@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Get-AzProviderHubDefaultRollout.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Get-AzProviderHubDefaultRollout.md
 ms.openlocfilehash: 58be299932bb3ef666aa0a651f6bb5682be5a36c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140279491"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142225617"
 ---
 # Get-AzProviderHubDefaultRollout
 
@@ -18,7 +18,7 @@ ms.locfileid: "140279491"
 Mendapatkan detail peluncuran default.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.providerhub/get-azproviderhubdefaultrollout) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.providerhub/get-azproviderhubdefaultrollout) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzProviderHubDefaultRollout -ProviderNamespace <String> [-SubscriptionId <St
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzProviderHubDefaultRollout -ProviderNamespace <String> -RolloutName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -45,7 +45,7 @@ Mendapatkan detail peluncuran default.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat daftar semua peluncuran default di bawah penyedia sumber daya.
+### Contoh 1: Cantumkan semua peluncuran default di bawah penyedia sumber daya.
 ```powershell
 PS C:\> Get-AzProviderHubDefaultRollout -ProviderNamespace "Microsoft.Contoso"
 
@@ -55,7 +55,7 @@ defaultRollout2021w10     Microsoft.ProviderHub/providerRegistrations/defaultRol
 defaultRollout2021w11     Microsoft.ProviderHub/providerRegistrations/defaultRollouts
 ```
 
-Daftar semua peluncuran default di bawah penyedia sumber daya.
+Cantumkan semua peluncuran default di bawah penyedia sumber daya.
 
 ### Contoh 2: Dapatkan peluncuran tertentu menurut nama.
 ```powershell
@@ -66,7 +66,7 @@ Name                      Type
 defaultRollout2021w10     Microsoft.ProviderHub/providerRegistrations/defaultRollouts
 ```
 
-Dapatkan peluncuran tertentu menurut nama.
+Dapatkan peluncuran tertentu berdasarkan nama.
 
 ## PARAMETERS
 
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.IProviderHubIdentity
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -170,7 +170,7 @@ INPUTOBJECT <IProviderHubIdentity>: Parameter Identitas
   - `[NestedResourceTypeFirst <String>]`: Tipe sumber daya anak pertama.
   - `[NestedResourceTypeSecond <String>]`: Tipe sumber daya anak kedua.
   - `[NestedResourceTypeThird <String>]`: Tipe sumber daya anak ketiga.
-  - `[NotificationRegistrationName <String>]`: Pendaftaran pemberitahuan.
+  - `[NotificationRegistrationName <String>]`: Registrasi pemberitahuan.
   - `[ProviderNamespace <String>]`: Nama penyedia sumber daya yang dihosting dalam ProviderHub.
   - `[ResourceType <String>]`: Tipe sumber daya.
   - `[RolloutName <String>]`: Nama peluncuran.

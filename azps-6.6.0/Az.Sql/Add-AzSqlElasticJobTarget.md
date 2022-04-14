@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlElasticJobTarget.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlElasticJobTarget.md
 ms.openlocfilehash: 7ed1a413a37c1a136e2908ec8986f43458469668
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140303683"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142223029"
 ---
 # Add-AzSqlElasticJobTarget
 
@@ -18,7 +18,7 @@ ms.locfileid: "140303683"
 Menambahkan target ke grup target
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/add-azsqlelasticjobtarget) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/add-azsqlelasticjobtarget) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Add-AzSqlElasticJobTarget [-Exclude] [-ResourceGroupName] <String> [-AgentServer
  [<CommonParameters>]
 ```
 
-### SqlSmap
+### SqlShardMap
 ```
 Add-AzSqlElasticJobTarget [-Exclude] [-ResourceGroupName] <String> [-AgentServerName] <String>
  [-AgentName] <String> [-TargetGroupName] <String> -ServerName <String> -ShardMapName <String>
@@ -58,7 +58,7 @@ Add-AzSqlElasticJobTarget [-Exclude] [-ParentObject] <AzureSqlElasticJobTargetGr
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SqlSmapUsingParentObject
+### SqlShardMapUsingParentObject
 ```
 Add-AzSqlElasticJobTarget [-Exclude] [-ParentObject] <AzureSqlElasticJobTargetGroupModel> -ServerName <String>
  -ShardMapName <String> -DatabaseName <String> -RefreshCredentialName <String>
@@ -78,7 +78,7 @@ Add-AzSqlElasticJobTarget [-Exclude] [-ParentResourceId] <String> -ServerName <S
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SqlS sintaksMapUsingParentResourceId
+### SqlShardMapUsingParentResourceId
 ```
 Add-AzSqlElasticJobTarget [-Exclude] [-ParentResourceId] <String> -ServerName <String> -ShardMapName <String>
  -DatabaseName <String> -RefreshCredentialName <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf]
@@ -90,7 +90,7 @@ Cmdlet Add-AzSqlElasticJobTarget menambahkan sumber daya target ke grup target
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan target server
+### Contoh 1: Menambahkan target server
 ```powershell
 PS C:\> $tg = Get-AzSqlElasticJobTargetGroup -ResourceGroupName rg -ServerName elasticjobserver -Name tg1
 $tg | Add-AzSqlElasticJobTarget -ServerName s1 -RefreshCredentialName cred1
@@ -100,7 +100,7 @@ TargetGroupName TargetType TargetServerName TargetDatabaseName TargetElasticPool
 tg1             SqlServer  s1                                                                           cred1                 Include
 ```
 
-### Contoh 2: Tambahkan target database
+### Contoh 2: Menambahkan target database
 ```powershell
 PS C:\> $tg = Get-AzSqlElasticJobTargetGroup -ResourceGroupName rg -ServerName elasticjobserver -Name tg1
 $tg | Add-AzSqlElasticJobTarget -ServerName s1 -DatabaseName db2
@@ -110,7 +110,7 @@ TargetGroupName TargetType  TargetServerName TargetDatabaseName TargetElasticPoo
 tg1             SqlDatabase s1               db2                                                                               Include
 ```
 
-### Contoh 3: Tambahkan target pool elastis
+### Contoh 3: Tambahkan target kumpulan elastis
 ```powershell
 PS C:\> $tg | Add-AzSqlElasticJobTarget -ServerName s1 -ElasticPoolName ep1 -RefreshCredentialName cred1
 
@@ -119,7 +119,7 @@ TargetGroupName TargetType     TargetServerName TargetDatabaseName TargetElastic
 tg1             SqlElasticPool s1                                  ep1                                      cred1                 Include
 ```
 
-### Contoh 4: Menambahkan target peta bagi peta
+### Contoh 4: Menambahkan target peta shard
 ```powershell
 PS C:\> $tg = Get-AzSqlElasticJobTargetGroup -ResourceGroupName rg -ServerName elasticjobserver -Name tg1
 $tg | Add-AzSqlElasticJobTarget -ServerName s1 -ShardMapName sm1 -DatabaseName db1 -RefreshCredentialName cred1
@@ -129,7 +129,7 @@ TargetGroupName TargetType  TargetServerName TargetDatabaseName TargetElasticPoo
 tg1             SqlShardMap s1               db1                                      sm1                cred1                 Include
 ```
 
-Menambahkan target (server, kelompok elastis, database, dan peta s azure) ke grup target
+Menambahkan target (server, kumpulan elastis, database, dan peta shard) ke grup target
 
 ## PARAMETERS
 
@@ -193,8 +193,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ElastisPoolName
-Nama Target Kolam Elastis
+### -ElasticPoolName
+Nama Target Kumpulan Elastis
 
 ```yaml
 Type: System.String
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -RefreshCredentialName
-Merefresh Nama Kredensial
+Refresh Nama Kredensial
 
 ```yaml
 Type: System.String
@@ -310,8 +310,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -SmapMapName
-Nama Target Peta Starget
+### -ShardMapName
+Nama Target Peta Shard
 
 ```yaml
 Type: System.String
@@ -341,7 +341,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -357,7 +357,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -372,11 +372,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Sql.ElastisJobs.Model.AzureSqlElasticJobTargetGroupModel
+### Microsoft.Azure.Commands.Sql.ElasticJobs.Model.AzureSqlElasticJobTargetGroupModel
 
 ## OUTPUTS
 

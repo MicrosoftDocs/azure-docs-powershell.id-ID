@@ -7,21 +7,21 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADApplication.md
 ms.openlocfilehash: e8896eef8f520bf92a19550734c605601c66e7ad
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140182303"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142224739"
 ---
 # Get-AzADApplication
 
 ## SYNOPSIS
-Mencantumkan aplikasi azure active directory yang sudah ada.
+Mencantumkan aplikasi direktori aktif azure yang sudah ada.
 
 [!INCLUDE [msgraph-migration-banner](../../includes/msgraph-migration-banner.md)]
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azadapplication) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azadapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -62,13 +62,13 @@ Get-AzADApplication -IdentifierUri <String> [-DefaultProfile <IAzureContextConta
 ```
 
 ## DESCRIPTION
-Mencantumkan aplikasi azure active directory yang sudah ada.
-Pencarian aplikasi dapat dilakukan oleh ObjectId, ApplicationId, IdentifierUri atau DisplayName.
-Jika tidak ada parameter yang diberikan, parameter itu mengambil semua aplikasi di bawah penyewa.
+Mencantumkan aplikasi direktori aktif azure yang sudah ada.
+Pencarian aplikasi dapat dilakukan dengan ObjectId, ApplicationId, IdentifierUri atau DisplayName.
+Jika tidak ada parameter yang disediakan, parameter akan mengambil semua aplikasi di bawah penyewa.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan semua aplikasi
+### Contoh 1: Daftar semua aplikasi
 
 ```powershell
 PS C:\> Get-AzADApplication
@@ -76,7 +76,7 @@ PS C:\> Get-AzADApplication
 
 Mencantumkan semua aplikasi di bawah penyewa.
 
-### Contoh 2: List applications using paging
+### Contoh 2: Daftar aplikasi menggunakan halaman
 
 ```powershell
 PS C:\> Get-AzADApplication -First 100
@@ -84,26 +84,26 @@ PS C:\> Get-AzADApplication -First 100
 
 Mencantumkan 100 aplikasi pertama di bawah penyewa.
 
-### Contoh 3: Dapatkan aplikasi dengan URI pengidentifikasi
+### Contoh 3: Dapatkan aplikasi menurut pengidentifikasi URI
 
 ```powershell
 PS C:\> Get-AzADApplication -IdentifierUri http://mySecretApp1
 ```
 
-Dapatkan aplikasi dengan pengidentifikasi uri sebagai "http://mySecretApp1".
+Mendapatkan aplikasi dengan uri pengidentifikasi sebagai "http://mySecretApp1".
 
-### Contoh 4: Get application by object id
+### Contoh 4: Dapatkan aplikasi menurut id objek
 
 ```powershell
 PS C:\> Get-AzADApplication -ObjectId 39e64ec6-569b-4030-8e1c-c3c519a05d69
 ```
 
-Dapatkan aplikasi dengan id objek '39e64ec6-569b-4030-8e1c-c3c519a05d69'.
+Mendapatkan aplikasi dengan id objek '39e64ec6-569b-4030-8e1c-c3c519a05d69'.
 
 ## PARAMETERS
 
 ### -ApplicationId
-Id aplikasi dari aplikasi yang akan diambil.
+Id aplikasi aplikasi untuk mengambil.
 
 ```yaml
 Type: System.Guid
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentifierUri
-Uri pengidentifikasi unik dari aplikasi untuk diambil.
+Pengidentifikasi unik Uri dari aplikasi untuk mengambil.
 
 ```yaml
 Type: System.String
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Id objek aplikasi yang akan diambil.
+Id objek aplikasi untuk mengambil.
 
 ```yaml
 Type: System.String
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeTotalCount
-Melaporkan jumlah objek dalam set data. Saat ini, parameter ini tidak melakukan apa-apa.
+Melaporkan jumlah objek dalam kumpulan data. Saat ini, parameter ini tidak melakukan apa-apa.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lewati
-Mengabaikan objek N pertama, lalu mendapatkan objek yang tersisa.
+Mengabaikan objek N pertama lalu mendapatkan objek yang tersisa.
 
 ```yaml
 Type: System.UInt64
@@ -222,8 +222,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -First
-Jumlah maksimum objek untuk dikembalikan.
+### -Pertama
+Jumlah maksimum objek yang akan dikembalikan.
 
 ```yaml
 Type: System.UInt64
@@ -238,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -248,7 +248,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.ActiveDirectory.FOLDApplication
+### Microsoft.Azure.Commands.ActiveDirectory.PSADAplikasi
 
 ## CATATAN
 
@@ -260,9 +260,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzADAppCredential](./Get-AzADAppCredential.md)
 
-[Remove-AzADApplication](./Remove-AzADApplication.md)
+[Remove-AzADAplikasi](./Remove-AzADApplication.md)
 
-[New-AzADApplication](./New-AzADApplication.md)
+[New-AzADAplikasi](./New-AzADApplication.md)
 
-[Update-AzADApplication](./Update-AzADApplication.md)
+[Pembaruan-AzADAplikasi](./Update-AzADApplication.md)
 

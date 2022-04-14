@@ -6,23 +6,23 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageFileServiceProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageFileServiceProperty.md
 ms.openlocfilehash: bd870151601e9bc07218945247646301e17b7efd
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139931011"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142221769"
 ---
 # Get-AzStorageFileServiceProperty
 
 ## SYNOPSIS
-Mendapatkan properti layanan untuk Azure Storage File.
+Mendapatkan properti layanan untuk layanan File Azure Storage.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azstoragefileserviceproperty) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstoragefileserviceproperty) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Nama Akun (Default)
+### AccountName (Default)
 ```
 Get-AzStorageFileServiceProperty [-ResourceGroupName] <String> [-StorageAccountName] <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -41,11 +41,11 @@ Get-AzStorageFileServiceProperty [-ResourceId] <String> [-DefaultProfile <IAzure
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStorageFileServiceProperty** mendapatkan properti layanan untuk Azure Storage File.
+Cmdlet **Get-AzStorageFileServiceProperty** mendapatkan properti layanan untuk layanan File Azure Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan Azure Storage File dari akun Storage tertentu
+### Contoh 1: Dapatkan properti layanan File Azure Storage dari akun Storage tertentu
 ```powershell
 PS C:\> Get-AzStorageFileServiceProperty -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount"
 
@@ -60,7 +60,7 @@ ProtocolSettings.Smb.KerberosTicketEncryption : {RC4-HMAC, AES-256}
 ProtocolSettings.Smb.ChannelEncryption        : {AES-128-CCM, AES-128-GCM, AES-256-GCM}
 ```
 
-Perintah ini mendapatkan properti layanan File dari akun Storage tertentu.
+Perintah ini mendapatkan properti layanan File dari Akun Storage tertentu.
 
 ## PARAMETERS
 
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Memasukkan id Storage sumber daya akun, atau Id Sumber Daya properti layanan File.
+Masukkan Id Sumber Daya akun Storage, atau Properti layanan File Id Sumber Daya.
 
 ```yaml
 Type: System.String
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage objek akun
+objek akun Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Storage Akun.
+Storage Nama Akun.
 
 ```yaml
 Type: System.String
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

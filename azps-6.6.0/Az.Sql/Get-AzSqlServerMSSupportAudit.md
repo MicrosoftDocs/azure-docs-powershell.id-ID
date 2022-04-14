@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerMSSupportAudit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerMSSupportAudit.md
 ms.openlocfilehash: e3b92ca42d642741980a72991d5b0bc2c3a79726
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140245537"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142222831"
 ---
 # Get-AzSqlServerMSSupportAudit
 
 ## SYNOPSIS
-Mendapatkan pengaturan pengauditan operasi dukungan Microsoft dari server Azure SQL.
+Mendapatkan pengaturan pengaudungan operasi dukungan Microsoft dari server Azure SQL.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlservermssupportaudit) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlservermssupportaudit) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,12 +36,12 @@ Get-AzSqlServerMSSupportAudit -ServerObject <AzureSqlServerModel> [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlServerMSSupportAudit** mendapatkan pengaturan audit operasi dukungan Microsoft dari server SQL Azure.
-Tentukan parameter *ResourceGroupName* *dan ServerName* untuk mengidentifikasi server.
+Cmdlet **Get-AzSqlServerMSupportAudit** mendapatkan pengaturan audit operasi dukungan Microsoft dari server Azure SQL.
+Tentukan parameter *ResourceGroupName* dan *ServerName* untuk mengidentifikasi server.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pengaturan audit operasi dukungan Microsoft untuk server SQL Azure
+### Contoh 1: Dapatkan pengaturan pengauditan operasi dukungan Microsoft dari server Azure SQL
 ```
 PS C:\>Get-AzSqlServerMSSupportAudit -ResourceGroupName "resourcegroup01" -ServerName "server01"
 ServerName                          : server01
@@ -55,7 +55,7 @@ LogAnalyticsTargetState             : Enabled
 WorkspaceResourceId                 : "/subscriptions/4b9e8510-67ab-4e9a-95a9-e2f1e570ea9c/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/viruela2"
 ```
 
-### Contoh 2: Get, through pipeline, the Microsoft support operations auditing settings of an Azure SQL server
+### Contoh 2: Dapatkan, melalui pipeline, pengaturan audit operasi Dukungan Microsoft dari server Azure SQL
 ```
 PS C:\> Get-AzSqlServer -ResourceGroupName "ResourceGroup01" -ServerName "Server01" | Get-AzSqlServerMSSupportAudit
 ServerName                          : server01
@@ -69,7 +69,7 @@ LogAnalyticsTargetState             : Enabled
 WorkspaceResourceId                 : "/subscriptions/4b9e8510-67ab-4e9a-95a9-e2f1e570ea9c/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/viruela2"
 ```
 
-### Contoh 3: Dapatkan pengaturan audit operasi dukungan Microsoft untuk server SQL Azure
+### Contoh 3: Dapatkan pengaturan audit operasi dukungan Microsoft dari server Azure SQL
 ```
 PS C:\>Get-AzSqlServerMSSupportAudit -ResourceGroupName "resourcegroup01" -ServerName "server01"
 ServerName                          : server01
@@ -86,7 +86,7 @@ WorkspaceResourceId                 :
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-SQL server baru.
+SQL nama server.
 
 ```yaml
 Type: System.String
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

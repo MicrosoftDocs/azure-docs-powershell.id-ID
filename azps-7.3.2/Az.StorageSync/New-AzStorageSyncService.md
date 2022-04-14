@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storagesync/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/New-AzStorageSyncService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/New-AzStorageSyncService.md
-ms.openlocfilehash: ee7d5707d1a932d0e0c5550346c01bdb6312b182
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 664829d065e91219371046bbe3ec0e85a94ec837
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140005493"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142206469"
 ---
 # New-AzStorageSyncService
 
 ## SYNOPSIS
-Perintah ini akan membuat layanan sinkronisasi penyimpanan baru dalam grup sumber daya.
+Perintah ini membuat layanan sinkronisasi penyimpanan baru dalam grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/new-azstoragesyncservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzStorageSyncService [-ResourceGroupName] <String> [-Name] <String> [-Locati
 ```
 
 ## DESCRIPTION
-Layanan sinkronisasi penyimpanan adalah sumber daya tingkat teratas untuk Sinkronisasi File Azure. Perintah ini akan membuat layanan sinkronisasi penyimpanan baru dalam grup sumber daya. Kami menyarankan untuk membuat layanan sinkronisasi penyimpanan sesingkas mungkin yang benar-benar diperlukan untuk membedakan grup server berbeda di organisasi Anda. Layanan sinkronisasi penyimpanan berisi grup sinkronisasi dan juga berfungsi sebagai target untuk mendaftarkan server Anda. Server hanya dapat didaftarkan ke satu layanan sinkronisasi penyimpanan. Jika server perlu berpartisipasi dalam menyinkronkan kumpulan file yang sama, daftarkan file ke layanan sinkronisasi penyimpanan yang sama.
+Layanan sinkronisasi penyimpanan adalah sumber daya tingkat teratas untuk Sinkronisasi File Azure. Perintah ini membuat layanan sinkronisasi penyimpanan baru dalam grup sumber daya. Kami merekomendasikan untuk membuat layanan sinkronisasi penyimpanan sesedikat yang benar-benar diperlukan untuk membedakan grup server yang berbeda di organisasi Anda. Layanan sinkronisasi penyimpanan berisi grup sinkronisasi dan juga berfungsi sebagai target untuk mendaftarkan server Anda. Server hanya dapat didaftarkan ke layanan sinkronisasi penyimpanan tunggal. Jika server perlu berpartisipasi dalam menyinkronkan kumpulan file yang sama, daftarkan ke layanan sinkronisasi penyimpanan yang sama.
 
 ## EXAMPLES
 
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Storage Layanan Sinkronisasi.
+Storage lokasi Layanan Sinkronisasi.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Storage Tag Layanan Sinkronisasi.
+Storage Sinkronkan Tag Layanan.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

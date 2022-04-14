@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseWorkspace.md
-ms.openlocfilehash: 0357baf9815befd8776b2f380e205ed837afab67
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3406733e5284da9783de955cbd7146f8174b38fa
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140005093"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142205191"
 ---
 # Update-AzSynapseWorkspace
 
 ## SYNOPSIS
-Memperbarui ruang kerja Analitik Synapse.
+Memperbarui ruang kerja Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/update-azsynapseworkspace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Update-AzSynapseWorkspace -ResourceId <String> [-Tag <Hashtable>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzSynapseWorkspace** memperbarui ruang kerja Azure Synapse Analytics.
+Cmdlet **Update-AzSynapseWorkspace** memperbarui ruang kerja analitik Azure Synapse.
 
 ## EXAMPLES
 
@@ -53,7 +56,7 @@ Cmdlet **Update-AzSynapseWorkspace** memperbarui ruang kerja Azure Synapse Analy
 PS C:\> Update-AzSynapseWorkspace -Name ContosoWorkspace -Tag @{'key'='value'}
 ```
 
-Perintah ini memperbarui tag untuk ruang kerja Azure Synapse Analytics tertentu.
+Perintah ini akan memperbarui tag untuk ruang kerja Azure Synapse Analytics yang dispesifikasikan.
 
 ### Contoh 2
 ```powershell
@@ -61,14 +64,14 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Update-AzSynapseWorkspace -Tag @{'key'='value1'}
 ```
 
-Perintah ini memperbarui tag untuk ruang kerja Analitik Azure Synapse ber spesifikasi melalui saluran.
+Perintah ini memperbarui tag untuk ruang kerja Azure Synapse Analytics yang dispesifikasikan melalui pipeline.
 
 ### Contoh 3
 ```powershell
 PS C:\> Update-AzSynapseWorkspace -ResourceId /subscriptions/21686af7-58ec-4f4d-9c68-f431f4db4edd/resourceGroups/ContosoResourceGroup/providers/Microsoft.Synapse/workspaces/ContosoWorkspace -Tag @{'key'='value2'}
 ```
 
-Perintah ini memperbarui tag untuk ruang kerja Analitik Azure Synapse ber spesifikasi melalui saluran dengan ID sumber daya.
+Perintah ini akan memperbarui tag untuk ruang kerja Azure Synapse Analytics yang dispesifikasikan melalui pipeline dengan ID sumber daya.
 
 ### Contoh 4
 ```powershell
@@ -76,12 +79,12 @@ PS C:\> $config = New-AzSynapseGitRepositoryConfig -RepositoryType GitHub -Accou
 PS C:\> Update-AzSynapseWorkspace -Name ContosoWorkspace -GitRepository $config
 ```
 
-Perintah ini memperbarui penyimpanan Git tempat ruang kerja digunakan untuk ruang kerja Azure Synapse Analytics tertentu.
+Perintah ini memperbarui penyimpanan Git tempat ruang kerja disetujui untuk ruang kerja Azure Synapse Analytics yang diperkirakan.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -GitRepository
-Git Repository Pengaturan. Koneksi kerja ke tempat penyimpanan untuk kontrol sumber dan kolaborasi untuk bekerja pada saluran ruang kerja Anda
+Git Repositori Pengaturan. Koneksi ruang kerja ke tempat penyimpanan untuk kontrol sumber dan kolaborasi untuk bekerja pada saluran ruang kerja Anda
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSWorkspaceRepositoryConfiguration
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedVirtualNetwork
-Managed Virtual Network Pengaturan.
+Virtual Network Pengaturan terkelola.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSManagedVirtualNetworkSettings
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlAdministratorLoginPassword
-Administrator kata sandi SQL baru untuk ruang kerja.
+Kata sandi administrator SQL baru untuk ruang kerja.
 
 ```yaml
 Type: System.Security.SecureString
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Kamus string, kamus string dari tag yang terkait dengan sumber daya tersebut.
+String, kamus string tag yang terkait dengan sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -262,7 +265,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -277,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

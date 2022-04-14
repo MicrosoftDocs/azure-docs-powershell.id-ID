@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmInterfaceEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmInterfaceEndpoint.md
 ms.openlocfilehash: 8759546c9d7161f2bea139845c7d291c6d7832b5
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140866295"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142062993"
 ---
 # Get-AzureRmInterfaceEndpoint
 
@@ -43,7 +43,7 @@ Cmdlet **Get-AzureRmInterfaceEndpoint** mendapatkan Titik Akhir Antarmuka.
 $interfaceendpoint = Get-AzureRmInterfaceEndpoint -Name "InterfaceEndpoint1" -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini mendapatkan titik akhir antarmuka yang bernama InterfaceEndpoint1 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01 dan menyimpannya dalam $interfaceendpoint sumber daya tersebut.
+Perintah ini mendapatkan titik akhir antarmuka bernama InterfaceEndpoint1 milik grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $interfaceendpoint.
 
 ### Contoh 2
 ```
@@ -51,7 +51,7 @@ $interfaceendpoint = Get-AzureRmInterfaceEndpoint -ResourceId "/subscriptions/su
 
 ```
 
-Perintah ini mendapatkan titik akhir antarmuka dengan resourceId /subscriptions/sub1/resourceGroups/chs dropboxIEtest1/providers/Microsoft.Network/interfaceEndpoints/ie1.10 dan menyimpannya di variabel $interfaceendpoint.
+Perintah ini mendapatkan titik akhir antarmuka dengan resourceId /subscriptions/sub1/resourceGroups/chsriniIEtest1/providers/Microsoft.Network/interfaceEndpoints/ie1.10 dan menyimpannya dalam variabel $interfaceendpoint.
 
 
 ## PARAMETERS
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

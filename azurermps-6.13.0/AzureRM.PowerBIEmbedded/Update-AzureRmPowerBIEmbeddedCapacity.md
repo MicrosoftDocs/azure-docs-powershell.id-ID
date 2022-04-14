@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.power
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/PowerBIEmbedded/Commands.PowerBI/help/Update-AzureRmPowerBIEmbeddedCapacity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/PowerBIEmbedded/Commands.PowerBI/help/Update-AzureRmPowerBIEmbeddedCapacity.md
-ms.openlocfilehash: 70f2a217e07d4cad6498bcc6f11d44616bb68e870ff5b2ec60a3e06088a9cc11
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 6236a03b22bd3509933d58579db3e84d48723b68
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417319"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142061740"
 ---
 # Update-AzureRmPowerBIEmbeddedCapacity
 
 ## SYNOPSIS
-Mengubah instans Kapasitas yang Disematkan PowerBI.
+Mengubah contoh Kapasitas Tersemat PowerBI.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -44,7 +44,7 @@ Update-AzureRmPowerBIEmbeddedCapacity [-Sku <String>] [-Tag <Hashtable>] [-Admin
 ```
 
 ## DESCRIPTION
-Cmdlet Update-AzureRmPowerBIEmbeddedCapacity memodifikasi instans Kapasitas Yang Disematkan PowerBI
+Cmdlet Update-AzureRmPowerBIEmbeddedCapacity mengubah contoh Kapasitas Tersemat PowerBI
 
 ## EXAMPLES
 
@@ -63,12 +63,12 @@ Tier                   : PBIE_Azure
 Tag                    : {[key1, value1], [key2, value2]}
 ```
 
-Memodifikasi kapasitas bernama testcapacity dalam grup uji grup sumber daya untuk mengatur tag sebagai key1:value1 and key2:value2 dan administrator ke testuser1@contoso.com
+Mengubah kapasitas bernama testcapacity dalam grup uji grup sumber daya untuk mengatur tag sebagai key1:value1 dan key2:value2 dan administrator menjadi testuser1@contoso.com
 
 ## PARAMETERS
 
 ### -Administrator
-Nama kapasitas yang dipisahkan koma untuk diatur sebagai administrator pada kapasitas
+Nama kapasitas yang dipisahkan koma untuk ditetapkan sebagai administrator pada kapasitas
 
 ```yaml
 Type: System.String[]
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Kapasitas yang Disematkan PowerBI
+Nama Kapasitas Tersemat PowerBI
 
 ```yaml
 Type: System.String
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya Azure tempat kapasitas dimiliki
+Nama grup sumber daya Azure tempat kapasitas berada
 
 ```yaml
 Type: System.String
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ResourceID Kapasitas yang Disematkan PowerBI.
+PowerBI Embedded Capacity ResourceID.
 
 ```yaml
 Type: System.String
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Menjelaskan tindakan yang akan dilakukan operasi saat ini tanpa benar-benar menjalankannya
+Menguraikan tindakan yang akan dilakukan operasi saat ini tanpa benar-benar menjalankannya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

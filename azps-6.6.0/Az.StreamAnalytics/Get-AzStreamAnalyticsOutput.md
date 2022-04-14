@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsOutput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsOutput.md
 ms.openlocfilehash: 5944be4e80d4882461575e5ad69494abfd132d12
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140276143"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142220792"
 ---
 # Get-AzStreamAnalyticsOutput
 
 ## SYNOPSIS
-Mendapatkan detail tentang output tertentu.
+Mendapatkan detail tentang output yang ditentukan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.streamanalytics/get-azstreamanalyticsoutput) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/get-azstreamanalyticsoutput) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzStreamAnalyticsOutput -JobName <String> -ResourceGroupName <String> [-Subs
  [-Select <String>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzStreamAnalyticsOutput -JobName <String> -Name <String> -ResourceGroupName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -41,11 +41,11 @@ Get-AzStreamAnalyticsOutput -InputObject <IStreamAnalyticsIdentity> [-DefaultPro
 ```
 
 ## DESCRIPTION
-Mendapatkan detail tentang output tertentu.
+Mendapatkan detail tentang output yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan informasi tentang output pekerjaan
+### Contoh 1: Dapatkan informasi tentang output pekerjaan
 ```powershell
 PS C:\> Get-AzStreamAnalyticsOutput -ResourceGroupName azure-rg-test -JobName sajob-02-pwsh
 
@@ -56,7 +56,7 @@ output-01 Microsoft.StreamAnalytics/streamingjobs/outputs
 
 Perintah ini mengembalikan informasi tentang output yang ditentukan pada pekerjaan.
 
-### Contoh 2: Mendapatkan informasi tentang output pekerjaan tertentu
+### Contoh 2: Dapatkan informasi tentang output pekerjaan tertentu
 ```powershell
 PS C:\> Get-AzStreamAnalyticsOutput -ResourceGroupName azure-rg-test -JobName sajob-02-pwsh -Name output-01
 
@@ -67,7 +67,7 @@ output-01 Microsoft.StreamAnalytics/streamingjobs/outputs 3819fb65-07f5-4dc3-83e
 
 Perintah ini mengembalikan informasi tentang output yang ditentukan pada pekerjaan.
 
-### Contoh 3: Mendapatkan informasi tentang output pekerjaan tertentu menurut pipeline
+### Contoh 3: Dapatkan informasi tentang output pekerjaan tertentu menurut pipeline
 ```powershell
 PS C:\>New-AzStreamAnalyticsOutput -ResourceGroupName azure-rg-test -JobName sajob-01-portal -Name output-05 -File .\test\template-json\StroageAccount.json | Get-AzStreamAnalyticsOutput
 
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.StreamAnalytics.Models.IStreamAnalyticsIdentity
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -157,8 +157,8 @@ Accept wildcard characters: False
 ```
 
 ### -Pilih
-Parameter $select OData.
-Daftar ini merupakan daftar properti struktural yang dipisahkan tanda koma untuk disertakan dalam respons, atau "*" untuk menyertakan semua properti. Secara default, semua properti akan dikembalikan kecuali diagnostik. Saat ini hanya menerima '*' sebagai nilai yang valid.
+Parameter kueri OData $select.
+Ini adalah daftar properti struktural yang dipisahkan koma untuk disertakan dalam respons, atau "*" untuk menyertakan semua properti. Secara default, semua properti dikembalikan kecuali diagnostik. Saat ini hanya menerima '*' sebagai nilai yang valid.
 
 ```yaml
 Type: System.String
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -213,11 +213,11 @@ INPUTOBJECT <IStreamAnalyticsIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[InputName <String>]`: Nama input.
   - `[JobName <String>]`: Nama pekerjaan streaming.
-  - `[Location <String>]`: Kawasan untuk mengambil informasi kuota langganan. Anda dapat mencari tahu wilayah mana Azure Stream Analytics didukung di sini: https://azure.microsoft.com/en-us/regions/
+  - `[Location <String>]`: Kawasan tempat untuk mengambil informasi kuota langganan. Anda dapat mengetahui kawasan mana Azure Stream Analytics didukung di sini: https://azure.microsoft.com/en-us/regions/
   - `[OutputName <String>]`: Nama output.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
-  - `[TransformationName <String>]`: Nama transformasi tersebut.
+  - `[TransformationName <String>]`: Nama transformasi.
 
 ## RELATED LINKS
 

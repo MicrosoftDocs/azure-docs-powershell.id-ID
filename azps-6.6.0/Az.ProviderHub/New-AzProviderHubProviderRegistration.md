@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/New-AzProviderHubProviderRegistration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/New-AzProviderHubProviderRegistration.md
 ms.openlocfilehash: 94f63b73645597a8a04999bfae22f53924cad69b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139970691"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142225531"
 ---
 # New-AzProviderHubProviderRegistration
 
@@ -18,7 +18,7 @@ ms.locfileid: "139970691"
 Membuat atau memperbarui pendaftaran penyedia.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.providerhub/new-azproviderhubproviderregistration) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.providerhub/new-azproviderhubproviderregistration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 
 ### -Capability
 .
-Untuk membuat, lihat bagian CATATAN untuk properti CAPABILITY dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti CAPABILITY dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.IResourceProviderCapabilities[]
@@ -178,7 +178,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ManagementBerfestOwner
+### -ManagementManifestOwner
 .
 
 ```yaml
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 
 ### -ManagementServiceTreeInfo
 .
-Untuk membuat, lihat bagian CATATAN untuk properti MANAGEMENTSERVICETREEINFO dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti MANAGEMENTSERVICETREEINFO dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.IServiceTreeInfo[]
@@ -285,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -316,7 +316,7 @@ Accept wildcard characters: False
 
 ### -ProviderAuthorization
 .
-Untuk membuat, lihat bagian CATATAN untuk properti PROVIDERAUTHORIZATION dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti PROVIDERAUTHORIZATION dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.IResourceProviderAuthorization[]
@@ -483,7 +483,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionLifecycleNotificationSpecificationSubscriptionStateOverrideAction
 .
-Untuk selanjutnya, lihat bagian CATATAN untuk PROPERTI SUBSCRIPTIONLIFECYCLENOTIFICATIONSPECIFICATIONSUBSCRIPTIONSTATEOVERRIDEACTION dan buat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti SUBSCRIPTIONLIFECYCLENOTIFICATIONSPECIFICATIONSUBSCRIPTIONSTATEOVERRIDEACTION dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.ISubscriptionStateOverrideAction[]
@@ -529,7 +529,7 @@ Accept wildcard characters: False
 
 ### -ThirdPartyProviderAuthorizationAuthorization
 .
-Untuk membuat, lihat bagian CATATAN untuk properti THIRDPARTYPROVIDERAUTHORIZATIONAUTHORIZATION dan buat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti THIRDPARTYPROVIDERAUTHORIZATIONAUTHORIZATION dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.ILightHouseAuthorization[]
@@ -559,7 +559,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -575,7 +575,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -590,7 +590,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -607,7 +607,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-CAPABILITY <iResourceProviderCapabilities[]>: .
+KEMAMPUAN <IResourceProviderCapabilities[]>: .
   - `Effect <ResourceProviderCapabilitiesEffect>`: 
   - `QuotaId <String>`: 
   - `[RequiredFeature <String[]>]`: 

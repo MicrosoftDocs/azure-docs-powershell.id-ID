@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseGitRepositoryConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseGitRepositoryConfig.md
-ms.openlocfilehash: a45bfec4b819dfa91eff69468de75e01958adea7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d42f7390ef4ea570a1ae0aaa418afb64ed418c30
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140390159"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142205785"
 ---
 # New-AzSynapseGitRepositoryConfig
 
 ## SYNOPSIS
-Membuat konfigurasi repositori Git.
+Membuat konfigurasi penyimpanan Git.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapsegitrepositoryconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,12 +41,12 @@ PS C:\> $creds = New-Object System.Management.Automation.PSCredential ("ContosoU
 PS C:\> New-AzSynapseWorkspace -ResourceGroupName ContosoResourceGroup -Name ContosoWorkspace -Location northeurope -DefaultDataLakeStorageAccountName ContosoAdlGen2Storage -DefaultDataLakeStorageFilesystem ContosoFileSystem -SqlAdministratorLoginCredential $creds -AsJob -GitRepository $config
 ```
 
-Perintah pertama membuat konfigurasi repositori Git. Lalu metode lainnya menggunakan konfigurasi untuk membuat ruang kerja Synapse yang baru.
+Perintah pertama membuat konfigurasi penyimpanan Git. Kemudian metode lainnya menggunakan konfigurasi untuk membuat ruang kerja Synapse baru.
 
 ## PARAMETERS
 
-### -Nama Akun
-GitHub atau DevOps digunakan untuk tempat penyimpanan.
+### -AccountName
+GitHub atau nama akun DevOps yang digunakan untuk penyimpanan.
 
 ```yaml
 Type: System.String
@@ -58,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -CollaborationBranch
-Pilih nama cabang tempat Anda akan berkolaborasi dengan orang lain dan dari mana Anda akan menerbitkannya.
+Pilih nama cabang tempat Anda akan berkolaborasi dengan orang lain dan dari mana Anda akan menerbitkan.
 
 ```yaml
 Type: System.String
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostName
-GitHub host Enterprise.
+GitHub Nama host Enterprise.
 Misalnya: `https://github.mydomain.com`
 
 ```yaml
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProjectName
-Nama proyek yang Anda sambungkan, hanya tentukan saat Anda memilih DevOps.
+Nama proyek yang Anda sambungkan, hanya tentukan ketika Anda memilih DevOps.
 
 ```yaml
 Type: System.String
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -RepositoryName
-Nama penyimpanan yang Anda sambungkan.
+Nama repository yang Anda sambungkan.
 
 ```yaml
 Type: System.String
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -RepositoryType
-Pilih tipe penyimpanan yang ingin Anda gunakan untuk menyimpan artifak Anda untuk ruang kerja Analitik Synapse ini, tipenya meliputi DevOps dan GitHub.
+Pilih tipe repositori yang ingin Anda gunakan untuk menyimpan artefak Anda untuk ruang kerja Analitik Synapse ini, tipenya termasuk DevOps dan GitHub.
 
 ```yaml
 Type: System.String
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 
 ### -RootFolder
 Menampilkan nama folder ke lokasi sumber daya JSON Azure Data Factory Anda diimpor.
-Nilai default adalah /
+Nilai defaultnya adalah /
 
 ```yaml
 Type: System.String
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-Pilih Id penyewa untuk digunakan saat masuk ke Azure DevOps repositori Git.
+Pilih Id penyewa yang akan digunakan saat masuk ke repository Git Azure DevOps.
 
 ```yaml
 Type: System.Guid
@@ -181,11 +184,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

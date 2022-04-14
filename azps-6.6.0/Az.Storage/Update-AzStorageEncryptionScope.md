@@ -6,23 +6,23 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzStorageEncryptionScope.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzStorageEncryptionScope.md
 ms.openlocfilehash: 9c416e024313e15cd03c3720bd7fd792ac7310e9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140325869"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142221067"
 ---
 # Update-AzStorageEncryptionScope
 
 ## SYNOPSIS
-Mengubah lingkup enkripsi untuk akun Storage Anda.
+Mengubah lingkup enkripsi untuk akun Storage.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/update-azstorageencryptionscope) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/update-azstorageencryptionscope) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Nama Akun (Default)
+### AccountName (Default)
 ```
 Update-AzStorageEncryptionScope [-ResourceGroupName] <String> [-StorageAccountName] <String>
  -EncryptionScopeName <String> [-StorageEncryption] [-State <String>]
@@ -63,7 +63,7 @@ Update-AzStorageEncryptionScope -InputObject <PSEncryptionScope> [-KeyvaultEncry
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzStorageEncryptionScope** mengubah lingkup enkripsi untuk akun Storage Anda.
+Cmdlet **Update-AzStorageEncryptionScope** mengubah lingkup enkripsi untuk akun Storage.
 
 ## EXAMPLES
 
@@ -93,7 +93,7 @@ testscope Enabled  Microsoft.Storage
 
 Perintah ini mengaktifkan lingkup enkripsi.
 
-### Contoh 3: Memperbarui lingkup enkripsi untuk menggunakan Storage Enkripsi
+### Contoh 3: Memperbarui lingkup enkripsi untuk menggunakan enkripsi Storage
 ```
 PS C:\> Update-AzStorageEncryptionScope -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount"  -EncryptionScopeName testscope -StorageEncryption
 
@@ -104,7 +104,7 @@ Name      State    Source            KeyVaultKeyUri RequireInfrastructureEncrypt
 testscope Enabled  Microsoft.Storage
 ```
 
-Perintah ini memperbarui lingkup enkripsi untuk menggunakan Storage Enkripsi.
+Perintah ini memperbarui lingkup enkripsi untuk menggunakan Enkripsi Storage.
 
 ### Contoh 4: Memperbarui lingkup enkripsi untuk menggunakan Enkripsi Keyvault
 ```
@@ -117,8 +117,8 @@ Name      State    Source             KeyVaultKeyUri                            
 testscope Enabled  Microsoft.Keyvault https://keyvalutname.vault.azure.net:443/keys/keyname/34a0ba563b4243d9a0ef2b1d3c0c7d57
 ```
 
-Perintah ini updtaes a encryption scope to use Keyvault Encryption.
-Identitas akun Storage harus memiliki izin dapatkan,wrapkey,unwrapkey ke kunci keyvault.
+Perintah ini memperbarui lingkup enkripsi untuk menggunakan Enkripsi Keyvault.
+Akun Storage Yang diperlukan Identitas memiliki izin get,wrapkey,unwrapkey ke kunci keyvault.
 
 ## PARAMETERS
 
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionScopeName
-Azure Storage EncryptionScope
+nama Azure Storage EncryptionScope
 
 ```yaml
 Type: System.String
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyUri
-Uri kunci
+Kunci Uri
 
 ```yaml
 Type: System.String
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -Negara Bagian
-Perbarui lingkup enkripsi Status, Nilai yang mungkin menyertakan: 'Diaktifkan', 'Dinonaktifkan'.
+Perbarui Status lingkup enkripsi, Nilai yang mungkin termasuk: 'Diaktifkan', 'Dinonaktifkan'.
 
 ```yaml
 Type: System.String
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage objek akun
+objek akun Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Storage Akun.
+Storage Nama Akun.
 
 ```yaml
 Type: System.String
@@ -274,7 +274,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -290,7 +290,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -305,7 +305,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

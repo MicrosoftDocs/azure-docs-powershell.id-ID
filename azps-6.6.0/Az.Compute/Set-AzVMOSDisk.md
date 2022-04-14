@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMOSDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMOSDisk.md
 ms.openlocfilehash: 2090fa0867196e9e2975ed5cb0651f895b93253a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140311765"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142235017"
 ---
 # Set-AzVMOSDisk
 
 ## SYNOPSIS
-Mengatur properti disk sistem operasi pada komputer virtual.
+Mengatur properti disk sistem operasi pada mesin maya.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmosdisk) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmosdisk) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -85,13 +85,13 @@ PS C:\> $VirtualMachine = Set-AzVMOSDisk -VM $VirtualMachine -Name "osDisk.vhd" 
 PS C:> New-AzVM -VM $VirtualMachine -ResourceGroupName "ResourceGroup11"
 ```
 
-Perintah pertama mendapatkan ketersediaan yang diatur bernama AvailabilitySet13 dalam grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut di $AvailabilitySet sumber daya.
-Perintah kedua membuat objek mesin virtual, lalu menyimpannya di $VirtualMachine variabel.
-Perintah menetapkan nama dan ukuran ke komputer virtual.
-Mesin virtual tersebut merupakan bagian dari kumpulan ketersediaan yang disimpan di $AvailabilitySet.
-Perintah terakhir mengatur properti di komputer virtual dalam $VirtualMachine.
+Perintah pertama mendapatkan kumpulan ketersediaan bernama AvailabilitySet13 dalam grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut dalam variabel $AvailabilitySet.
+Perintah kedua membuat objek mesin virtual, lalu menyimpannya dalam variabel $VirtualMachine.
+Perintah menetapkan nama dan ukuran ke mesin virtual.
+Mesin virtual termasuk dalam kumpulan ketersediaan yang disimpan di $AvailabilitySet.
+Perintah akhir mengatur properti pada mesin virtual dalam $VirtualMachine.
 
-### Contoh 2: Mengatur properti pada mesin virtual dari gambar pengguna umum
+### Contoh 2: Mengatur properti di mesin virtual dari gambar pengguna umum
 ```
 PS C:\> $AvailabilitySet = Get-AzAvailabilitySet -ResourceGroupName "ResourceGroup11" -Name "AvailabilitySet13" 
 PS C:\> $VirtualMachine = New-AzVMConfig -VMName "VirtualMachine17" -VMSize "Standard_A1"
@@ -100,13 +100,13 @@ PS C:\> $VirtualMachine = Set-AzVMOSDisk -VM $VirtualMachine -Name "osDisk.vhd" 
 PS C:> New-AzVM -VM $VirtualMachine -ResourceGroupName "ResourceGroup11"
 ```
 
-Perintah pertama mendapatkan ketersediaan yang diatur bernama AvailabilitySet13 dalam grup sumber daya yang bernama ResourceGroup11 dan menyimpan objek tersebut di $AvailabilitySet sumber daya.
-Perintah kedua membuat objek mesin virtual dan menyimpannya dalam $VirtualMachine baru.
-Perintah menetapkan nama dan ukuran ke komputer virtual.
-Mesin virtual tersebut merupakan bagian dari kumpulan ketersediaan yang disimpan di $AvailabilitySet.
-Perintah terakhir mengatur properti di komputer virtual dalam $VirtualMachine.
+Perintah pertama mendapatkan kumpulan ketersediaan bernama AvailabilitySet13 dalam grup sumber daya bernama ResourceGroup11 dan menyimpan objek tersebut dalam variabel $AvailabilitySet.
+Perintah kedua membuat objek mesin virtual dan menyimpannya dalam variabel $VirtualMachine.
+Perintah menetapkan nama dan ukuran ke mesin virtual.
+Mesin virtual termasuk dalam kumpulan ketersediaan yang disimpan di $AvailabilitySet.
+Perintah akhir mengatur properti pada mesin virtual dalam $VirtualMachine.
 
-### Contoh 3: Mengatur properti pada mesin virtual dari gambar pengguna khusus
+### Contoh 3: Mengatur properti di mesin virtual dari gambar pengguna khusus
 ```
 PS C:\> $AvailabilitySet = Get-AzAvailabilitySet -ResourceGroupName "ResourceGroup11" -Name "AvailabilitySet13" 
 PS C:\> $VirtualMachine = New-AzVMConfig -VMName "VirtualMachine17" -VMSize "Standard_A1"
@@ -114,11 +114,11 @@ PS C:\> $VirtualMachine = Set-AzVMOSDisk -VM $VirtualMachine -Name "osDisk.vhd" 
 PS C:> New-AzVM -VM $VirtualMachine -ResourceGroupName "ResourceGroup11"
 ```
 
-Perintah pertama mendapatkan ketersediaan yang diatur bernama AvailabilitySet13 dalam grup sumber daya yang bernama ResourceGroup11 dan menyimpan objek tersebut di $AvailabilitySet sumber daya.
-Perintah kedua membuat objek mesin virtual dan menyimpannya dalam $VirtualMachine baru.
-Perintah menetapkan nama dan ukuran ke komputer virtual.
-Mesin virtual tersebut merupakan bagian dari kumpulan ketersediaan yang disimpan di $AvailabilitySet.
-Perintah terakhir mengatur properti di komputer virtual dalam $VirtualMachine.
+Perintah pertama mendapatkan kumpulan ketersediaan bernama AvailabilitySet13 dalam grup sumber daya bernama ResourceGroup11 dan menyimpan objek tersebut dalam variabel $AvailabilitySet.
+Perintah kedua membuat objek mesin virtual dan menyimpannya dalam variabel $VirtualMachine.
+Perintah menetapkan nama dan ukuran ke mesin virtual.
+Mesin virtual termasuk dalam kumpulan ketersediaan yang disimpan di $AvailabilitySet.
+Perintah akhir mengatur properti pada mesin virtual dalam $VirtualMachine.
 
 ### Contoh 4: Mengatur pengaturan enkripsi disk pada disk sistem operasi mesin virtual
 ```
@@ -132,12 +132,12 @@ Contoh ini mengatur pengaturan enkripsi disk pada disk sistem operasi mesin virt
 ## PARAMETERS
 
 ### -Caching
-Menentukan mode cache dari disk sistem operasi.
-Nilai valid adalah: 
+Menentukan mode cache disk sistem operasi.
+Nilai yang valid adalah: 
 - ReadOnly
 - ReadWrite Nilai defaultnya adalah ReadWrite.
-Mengubah nilai cache menyebabkan komputer virtual memulai ulang.
-Pengaturan ini mempengaruhi kinerja disk.
+Mengubah nilai singgahan menyebabkan mesin virtual dimulai ulang.
+Pengaturan ini mempengaruhi kinerja diska.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Management.Compute.Models.CachingTypes]
@@ -153,18 +153,18 @@ Accept wildcard characters: False
 ```
 
 ### -CreateOption
-Menentukan apakah cmdlet ini membuat disk di komputer virtual dari platform atau gambar pengguna, atau melampirkan disk yang sudah ada.
-Nilai valid adalah: 
-- Lampirkan.
+Menentukan apakah cmdlet ini membuat disk di mesin virtual dari platform atau gambar pengguna, atau melampirkan disk yang sudah ada.
+Nilai yang valid adalah: 
+- Melampirkan.
 Tentukan opsi ini untuk membuat mesin virtual dari disk khusus.
-Ketika Anda menentukan opsi ini, jangan tentukan parameter *SourceImageUri* .
-Sebagai gantinya, Set-AzVMSourceImage cmdlet.
-Anda juga harus menggunakan parameter *Windows* *atau Linux* agar memberi tahu tipe sistem operasi pada VHD platform Azure.
-Parameter *VhdUri* cukup memberi tahu platform Azure mengenai lokasi disk untuk melampirkannya. 
+Saat Anda menentukan opsi ini, jangan tentukan parameter *SourceImageUri* .
+Sebagai gantinya, gunakan cmdlet Set-AzVMSourceImage.
+Anda juga harus menggunakan parameter *Windows* atau *Linux* untuk memberi tahu platform azure tipe sistem operasi pada VHD.
+Parameter *VhdUri* cukup untuk memberi tahu platform azure lokasi disk untuk dilampirkan. 
 - FromImage.
 Tentukan opsi ini untuk membuat mesin virtual dari gambar platform atau gambar pengguna umum.
-Dalam kasus gambar pengguna yang di generalisasi, Anda juga perlu menentukan parameter *SourceImageUri* dan parameter *Windows* atau *Linux* untuk memberi tahu lokasi platform Azure dan tipe disk sistem operasi VHD daripada menggunakan cmdlet **Set-AzVMSourceImage**.
-Dalam kasus gambar platform, parameter *VhdUri* sudah memadai. 
+Dalam kasus gambar pengguna umum, Anda juga perlu menentukan parameter *SourceImageUri* dan parameter *Windows* atau *Linux* untuk memberi tahu platform Azure lokasi dan tipe disk sistem operasi VHD daripada menggunakan cmdlet **Set-AzVMSourceImage**.
+Dalam kasus gambar platform, parameter *VhdUri* sudah cukup. 
 - Kosong.
 
 ```yaml
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeleteOption
-Menentukan opsi hapus disk OS setelah penghapusan VM. Opsinya adalah Lepas, Hapus
+Menentukan opsi penghapusan Disk OS setelah penghapusan VM. Opsi dilepas, Hapus
 
 ```yaml
 Type: System.String
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiffDiskSetting
-Menentukan pengaturan disk berbeda untuk disk sistem operasi.
+Menentukan setelan diska yang berbeda untuk disk sistem operasi.
 
 ```yaml
 Type: System.String
@@ -225,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionKeyUrl
-Menentukan lokasi kunci enkripsi disk.
+Menentukan lokasi kunci enkripsi diska.
 
 ```yaml
 Type: System.String
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionKeyVaultId
-Menentukan ID sumber daya Vault Kunci yang berisi kunci enkripsi disk.
+Menentukan ID sumber daya Key Vault yang memuat kunci enkripsi disk.
 
 ```yaml
 Type: System.String
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionSetId
-Menentukan Id sumber daya dari kumpulan enkripsi disk yang dikelola pelanggan.  This can only be specified for managed disk.
+Menentukan ID sumber daya kumpulan enkripsi disk yang dikelola pelanggan.  Ini hanya dapat ditentukan untuk disk yang dikelola.
 
 ```yaml
 Type: System.String
@@ -300,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyEncryptionKeyVaultId
-Menentukan ID sumber daya Vault Kunci yang berisi kunci enkripsi kunci.
+Menentukan ID sumber daya dari Key Vault yang berisi kunci enkripsi kunci.
 
 ```yaml
 Type: System.String
@@ -331,7 +331,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedDiskId
-Menentukan ID dari disk yang dikelola.
+Menentukan ID disk yang dikelola.
 
 ```yaml
 Type: System.String
@@ -361,7 +361,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceImageUri
-Menentukan URI VHD untuk skenario gambar pengguna.
+Menentukan URI dari VHD untuk skenario gambar pengguna.
 
 ```yaml
 Type: System.String
@@ -376,7 +376,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountType
-Menentukan tipe akun penyimpanan dari disk terkelola.
+Menentukan tipe akun penyimpanan disk terkelola.
 
 ```yaml
 Type: System.String
@@ -393,7 +393,7 @@ Accept wildcard characters: False
 ### -VhdUri
 Menentukan Uniform Resource Identifier (URI) dari hard disk virtual (VHD).
 Untuk mesin virtual berbasis gambar, parameter ini menentukan file VHD untuk dibuat ketika gambar platform atau gambar pengguna ditentukan.
-Ini adalah lokasi disalinnya objek besar biner (BLOB) gambar untuk memulai mesin virtual.
+Ini adalah lokasi dari mana gambar biner objek besar (BLOB) disalin untuk memulai mesin virtual.
 Untuk skenario boot mesin virtual berbasis disk, parameter ini menentukan file VHD yang digunakan mesin virtual secara langsung untuk memulai.
 
 ```yaml
@@ -409,8 +409,8 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan objek mesin virtual lokal untuk mengatur properti disk sistem operasi.
-Untuk mendapatkan objek mesin virtual, gunakan Get-AzVM cmdlet.
+Menentukan obyek mesin maya lokal untuk mengatur properti disk sistem operasi.
+Untuk mendapatkan objek mesin virtual, gunakan cmdlet Get-AzVM.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
@@ -440,7 +440,7 @@ Accept wildcard characters: False
 ```
 
 ### -WriteAccelerator
-Menentukan apakah WriteAccelerator harus diaktifkan atau dinonaktifkan di disk OS.
+Menentukan apakah WriteAccelerator harus diaktifkan atau dinonaktifkan pada disk OS.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -455,7 +455,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -471,10 +471,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-azvm](./Get-AzVM.md)
+[Get-AzVM](./Get-AzVM.md)
 
 [Get-AzAvailabilitySet](./Get-AzAvailabilitySet.md)
 
-[New-azvmConfig](./New-AzVMConfig.md)
+[New-AzVMConfig](./New-AzVMConfig.md)
 
 
