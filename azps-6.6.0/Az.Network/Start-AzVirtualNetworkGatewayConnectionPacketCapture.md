@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Start-AzVirtualNetworkGatewayConnectionPacketCapture.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Start-AzVirtualNetworkGatewayConnectionPacketCapture.md
 ms.openlocfilehash: 054853d7c059ab34c0978e92a248188163161c38
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139971699"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142079077"
 ---
 # Start-AzVirtualNetworkGatewayConnectionPacketCapture
 
 ## SYNOPSIS
-Memulai Operasi Penangkapan Paket pada Koneksi Gateway Jaringan Virtual.
+Memulai Operasi Penangkapan Paket pada Koneksi Gateway Virtual Network.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/start-azvirtualnetworkgatewayconnectionpacketcapture) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/start-azvirtualnetworkgatewayconnectionpacketcapture) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Start-AzVirtualNetworkGatewayConnectionPacketCapture -ResourceId <String> [-Filt
 ```
 
 ## DESCRIPTION
-Memulai Operasi Penangkapan Paket pada Koneksi Gateway Jaringan Virtual.
+Memulai Operasi Penangkapan Paket pada Koneksi Gateway Virtual Network.
 
 ## EXAMPLES
 
@@ -85,7 +85,7 @@ Etag              :
 Id                :
 ```
 ### Contoh 3
-Contoh Ambil Paket untuk merekam semua paket dalam dan luar
+Contoh Pengambilan Paket untuk mengambil semua paket dalam dan luar
 ```powershell
 $a = "{`"TracingFlags`": 11,`"MaxPacketBufferSize`": 120,`"MaxFileSize`": 500,`"Filters`" :[{`"CaptureSingleDirectionTrafficOnly`": false}]}"
 Start-AzVirtualNetworkGatewayConnectionPacketCapture -ResourceGroupName "PktCaptureTestSite2RG" -Name "PktCaptureTestSite2Site1Cn" -FilterData $a
@@ -108,7 +108,7 @@ Id                :
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -FilterData
-Opsi filter untuk memulai pengambilan paket di koneksi gateway jaringan virtual.
+Opsi filter untuk memulai perekaman paket pada koneksi gateway jaringan virtual.
 
 ```yaml
 Type: String
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek koneksi gateway jaringan virtual tempat pengambilan paket untuk dimulai.
+Objek koneksi gateway jaringan virtual tempat pengambilan paket dimulai.
 
 ```yaml
 Type: PSVirtualNetworkGatewayConnection
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama koneksi gateway jaringan virtual tempat pengambilan paket untuk dimulai.
+Nama koneksi gateway jaringan virtual tempat pengambilan paket dimulai.
 
 ```yaml
 Type: String
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya Azure dari VirtualNetworkGatewayConnection tempat pengambilan paket akan dimulai.
+ID sumber daya Azure dari VirtualNetworkGatewayConnection tempat pengambilan paket dimulai.
 
 ```yaml
 Type: String
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

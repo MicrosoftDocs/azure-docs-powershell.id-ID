@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Get-AzDataLakeAnalyticsCatalogItemAclEntry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Get-AzDataLakeAnalyticsCatalogItemAclEntry.md
-ms.openlocfilehash: a39568f0dd42015bc6d6331c3f71a3b3b1175e7b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 696a249440b3e10283fac18dfa89c2077e392879
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140394678"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141895246"
 ---
 # Get-AzDataLakeAnalyticsCatalogItemAclEntry
 
 ## SYNOPSIS
-Mendapatkan entri dalam ACL katalog atau item katalog di Analitik Danau Data.
+Mendapatkan entri dalam ACL item katalog atau katalog di Data Lake Analytics.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/get-azdatalakeanalyticscatalogitemaclentry) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Get-AzDataLakeAnalyticsCatalogItemAclEntry [-Account] <String> [-GroupOwner] -It
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataLakeAnalyticsCatalogItemAclEntry** mendapatkan daftar entri (AES, Access Control List) dari katalog atau item katalog di Analitik Danau Data.
+Cmdlet **Get-AzDataLakeAnalyticsCatalogItemAclEntry** mendapatkan daftar entri (ACE) dalam daftar kontrol akses (ACL) item katalog atau katalog dalam Data Lake Analytics.
 
 ## EXAMPLES
 
@@ -71,9 +74,9 @@ Group 902b155a-5601-4ca8-8178-ad3289211f88   ReadWrite
 Other 00000000-0000-0000-0000-000000000000        None
 ```
 
-Perintah ini mendapatkan ACL untuk katalog akun Analitik Danau Data yang ditentukan
+Perintah ini mendapatkan ACL untuk katalog akun Data Lake Analytics yang ditentukan
 
-### Contoh 2: Mendapatkan entri ACL pemilik pengguna untuk katalog
+### Contoh 2: Dapatkan entri ACL pemilik pengguna untuk katalog
 ```powershell
 PS C:\> Get-AzDataLakeAnalyticsCatalogItemAclEntry -Account "contosoadla" -UserOwner
 
@@ -82,7 +85,7 @@ Type      Id                                   Permissions
 UserOwner 0316ac75-6703-4ace-984f-a4dd79aeeafc   ReadWrite
 ```
 
-Perintah ini mendapatkan entri ACL dari pemilik pengguna untuk katalog akun Analitik Danau Data yang ditentukan
+Perintah ini mendapatkan entri ACL pemilik pengguna untuk katalog akun Data Lake Analytics yang ditentukan
 
 ### Contoh 3: Dapatkan entri ACL pemilik grup untuk katalog
 ```powershell
@@ -93,9 +96,9 @@ Type       Id                                   Permissions
 GroupOwner 0316ac75-6703-4ace-984f-a4dd79aeeafc   ReadWrite
 ```
 
-Perintah ini mendapatkan entri ACL dari pemilik grup untuk katalog akun Analitik Danau Data yang ditentukan
+Perintah ini mendapatkan entri ACL dari pemilik grup untuk katalog akun Data Lake Analytics yang ditentukan
 
-### Contoh 4: Dapatkan ACL untuk database
+### Contoh 4: Mendapatkan ACL untuk database
 ```powershell
 PS C:\> Get-AzDataLakeAnalyticsCatalogItemAclEntry -Account "contosoadla" -ItemType Database -Path "databaseName"
 
@@ -106,7 +109,7 @@ Group 902b155a-5601-4ca8-8178-ad3289211f88   ReadWrite
 Other 00000000-0000-0000-0000-000000000000        None
 ```
 
-Perintah ini mendapatkan ACL untuk database dari akun Analitik Danau Data yang ditentukan
+Perintah ini mendapatkan ACL untuk database akun Data Lake Analytics yang ditentukan
 
 ### Contoh 5: Mendapatkan entri ACL pemilik pengguna untuk database
 ```powershell
@@ -117,9 +120,9 @@ Type      Id                                   Permissions
 UserOwner 0316ac75-6703-4ace-984f-a4dd79aeeafc   ReadWrite
 ```
 
-Perintah ini mendapatkan entri ACL pemilik pengguna untuk database akun Analitik Danau Data yang ditentukan
+Perintah ini mendapatkan entri ACL pemilik pengguna untuk database akun Data Lake Analytics yang ditentukan
 
-### Contoh 6: Dapatkan entri ACL pemilik grup untuk database
+### Contoh 6: Mendapatkan entri ACL pemilik grup untuk database
 ```powershell
 PS C:\> Get-AzDataLakeAnalyticsCatalogItemAclEntry -Account "contosoadla" -GroupOwner -ItemType Database -Path "databaseName"
 
@@ -128,12 +131,12 @@ Type       Id                                   Permissions
 GroupOwner 0316ac75-6703-4ace-984f-a4dd79aeeafc   ReadWrite
 ```
 
-Perintah ini mendapatkan entri ACL pemilik grup untuk database akun Analitik Danau Data yang ditentukan
+Perintah ini mendapatkan entri ACL pemilik grup untuk database akun Data Lake Analytics yang ditentukan
 
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Analitik Danau Data.
+Menentukan nama akun Data Lake Analytics.
 
 ```yaml
 Type: System.String
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupOwner
-Dapatkan entri katalog ACL untuk pemilik grup
+Dapatkan entri ACL katalog untuk pemilik grup
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,9 +197,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur Analitik Danau Data dari katalog atau item katalog.
-Bagian jalur harus dipisahkan oleh titik (.).
+### -Jalur
+Menentukan jalur Data Lake Analytics item katalog atau katalog.
+Bagian jalur harus dipisahkan oleh tanda titik (.).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeAnalytics.Models.CatalogPathInstance
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserOwner
-Dapatkan entri katalog ACL untuk pemilik pengguna.
+Dapatkan entri ACL katalog untuk pemilik pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzPolicyAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzPolicyAssignment.md
 ms.openlocfilehash: b64334edc981aa79fa707d258e84c9bd2800d5fb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140459861"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142042301"
 ---
 # Set-AzPolicyAssignment
 
@@ -19,7 +19,7 @@ ms.locfileid: "140459861"
 Mengubah penetapan kebijakan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/set-azpolicyassignment) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/set-azpolicyassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -83,34 +83,34 @@ Set-AzPolicyAssignment [-NotScope <String[]>] [-DisplayName <String>] [-Descript
 
 ## DESCRIPTION
 Cmdlet **Set-AzPolicyAssignment** mengubah penetapan kebijakan.
-Tentukan tugas berdasarkan ID atau menurut nama dan lingkup.
+Tentukan tugas menurut ID atau menurut nama dan lingkup.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui nama tampilan
+### Contoh 1: Memperbarui nama tampilan
 ```
 PS C:\> $ResourceGroup = Get-AzResourceGroup -Name 'ResourceGroup11'
 PS C:\> $PolicyAssignment = Get-AzPolicyAssignment -Name 'PolicyAssignment' -Scope $ResourceGroup.ResourceId
 PS C:\> Set-AzPolicyAssignment -Id $PolicyAssignment.ResourceId -DisplayName 'Do not allow VM creation'
 ```
 
-Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 dengan menggunakan cmdlet Get-AzResourceGroup cmdlet.
-Perintah menyimpan objek tersebut dalam $ResourceGroup variabel.
-Perintah kedua mendapatkan penetapan kebijakan bernama PenetapanKebeseruan Dengan menggunakan cmdlet Get-AzPolicyAssignment.
-Perintah menyimpan objek tersebut di $PolicyAssignment variabel.
-Perintah terakhir memperbarui nama tampilan pada penetapan kebijakan di grup sumber daya yang diidentifikasi oleh properti **ResourceId** $ResourceGroup.
+Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 menggunakan cmdlet Get-AzResourceGroup.
+Perintah menyimpan objek tersebut dalam variabel $ResourceGroup.
+Perintah kedua mendapatkan penetapan kebijakan bernama PolicyAssignment menggunakan cmdlet Get-AzPolicyAssignment.
+Perintah menyimpan objek tersebut dalam variabel $PolicyAssignment.
+Perintah akhir memperbarui nama tampilan pada penetapan kebijakan pada grup sumber daya yang diidentifikasi oleh properti **ResourceId** $ResourceGroup.
 
-### Contoh 2: Tambahkan identitas terkelola ke penetapan kebijakan
+### Contoh 2: Menambahkan identitas terkelola ke penetapan kebijakan
 ```
 PS C:\> $PolicyAssignment = Get-AzPolicyAssignment -Name 'PolicyAssignment'
 PS C:\> Set-AzPolicyAssignment -Id $PolicyAssignment.ResourceId -AssignIdentity -Location 'westus'
 ```
 
-Perintah pertama mendapatkan penetapan kebijakan bernama PenetapanKebesianKebesian dari langganan saat ini dengan menggunakan cmdlet Get-AzPolicyAssignment cmdlet.
-Perintah menyimpan objek tersebut di $PolicyAssignment variabel.
-Perintah terakhir menetapkan identitas terkelola ke penetapan kebijakan.
+Perintah pertama mendapatkan penetapan kebijakan bernama PolicyAssignment dari langganan saat ini menggunakan cmdlet Get-AzPolicyAssignment.
+Perintah menyimpan objek tersebut dalam variabel $PolicyAssignment.
+Perintah akhir menetapkan identitas terkelola ke penetapan kebijakan.
 
-### Contoh 3: Perbarui parameter penetapan kebijakan dengan objek parameter kebijakan baru
+### Contoh 3: Memperbarui parameter penetapan kebijakan dengan objek parameter kebijakan baru
 ```
 PS C:\> $Locations = Get-AzLocation | where {($_.displayname -like 'france*') -or ($_.displayname -like 'uk*')}
 PS C:\> $AllowedLocations = @{'listOfAllowedLocations'=($Locations.location)}
@@ -119,12 +119,12 @@ PS C:\> Set-AzPolicyAssignment -Id $PolicyAssignment.ResourceId -PolicyParameter
 ```
 
 Perintah pertama dan kedua membuat objek yang berisi semua kawasan Azure yang namanya dimulai dengan "france" atau "uk".
-Perintah kedua menyimpan objek tersebut dalam $AllowedLocations variabel.
-Perintah ketiga mendapatkan penetapan kebijakan bernama 'PolicyAssignment' Perintah menyimpan objek tersebut dalam $PolicyAssignment variabel.
-Perintah terakhir memperbarui nilai parameter pada penetapan kebijakan bernama PolicyAssignment.
+Perintah kedua menyimpan objek tersebut dalam variabel $AllowedLocations.
+Perintah ketiga mendapatkan penetapan kebijakan bernama 'PolicyAssignment' Perintah menyimpan objek tersebut dalam variabel $PolicyAssignment.
+Perintah akhir memperbarui nilai parameter pada penetapan kebijakan bernama PolicyAssignment.
 
-### Contoh 4: Perbarui parameter penetapan kebijakan dengan file parameter kebijakan
-Buat file yang disebut _AllowedLocations.json_ di direktori kerja lokal dengan konten berikut.
+### Contoh 4: Memperbarui parameter penetapan kebijakan dengan file parameter kebijakan
+Buat file yang disebut _AllowedLocations.json_ di direktori kerja lokal dengan konten berikut ini.
 
 ```
 {
@@ -152,20 +152,20 @@ PS C:\> $PolicyAssignment = Get-AzPolicyAssignment -Name 'PolicyAssignment' -Sco
 PS C:\> Set-AzPolicyAssignment -Id $PolicyAssignment.ResourceId -EnforcementMode Default
 ```
 
-Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 dengan menggunakan cmdlet Get-AzResourceGroup cmdlet.
-Perintah menyimpan objek tersebut dalam $ResourceGroup variabel.
-Perintah kedua mendapatkan penetapan kebijakan bernama PenetapanKebeseruan Dengan menggunakan cmdlet Get-AzPolicyAssignment.
-Perintah menyimpan objek tersebut di $PolicyAssignment variabel.
-Perintah terakhir memperbarui properti enforcementMode pada penetapan kebijakan pada grup sumber daya yang diidentifikasi oleh properti **ResourceId** dari $ResourceGroup.
+Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 menggunakan cmdlet Get-AzResourceGroup.
+Perintah menyimpan objek tersebut dalam variabel $ResourceGroup.
+Perintah kedua mendapatkan penetapan kebijakan bernama PolicyAssignment menggunakan cmdlet Get-AzPolicyAssignment.
+Perintah menyimpan objek tersebut dalam variabel $PolicyAssignment.
+Perintah akhir memperbarui properti enforcementMode pada penetapan kebijakan pada grup sumber daya yang diidentifikasi oleh properti **ResourceId** $ResourceGroup.
 
-### Contoh 6: Memperbarui pesan tidak sesuai
+### Contoh 6: Memperbarui pesan non-kepatuhan
 ```
 PS C:\> $PolicyAssignment = Get-AzPolicyAssignment -Name 'VirtualMachinePolicy'
 PS C:\> Set-AzPolicyAssignment -Id $PolicyAssignment.ResourceId -NonComplianceMessage @{Message="All resources must follow resource naming guidelines."}
 ```
 
-Perintah pertama mendapatkan penetapan kebijakan yang bernama VirtualMachinePolicy menggunakan cmdlet Get-AzPolicyAssignment dan menyimpannya dalam $PolicyAssignment baru.
-Perintah terakhir memperbarui pesan tidak memenuhi persyaratan pada penetapan kebijakan dengan pesan baru yang akan ditampilkan jika sumber daya ditolak oleh kebijakan tersebut.
+Perintah pertama mendapatkan penetapan kebijakan bernama VirtualMachinePolicy dengan menggunakan cmdlet Get-AzPolicyAssignment dan menyimpannya dalam variabel $PolicyAssignment.
+Perintah akhir memperbarui pesan ketidaksesuaian pada penetapan kebijakan dengan pesan baru yang akan ditampilkan jika sumber daya ditolak oleh kebijakan.
 
 ## PARAMETERS
 
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignIdentity
-Buat dan tetapkan Identitas Azure Active Directory untuk penetapan kebijakan ini. Identitas akan digunakan saat menjalankan penyebaran untuk kebijakan 'deployIfNotExists' dan 'modifikasi'. Lokasi diperlukan saat menetapkan identitas.
+Membuat dan menetapkan identitas Azure Active Directory untuk penetapan kebijakan ini. Identitas akan digunakan saat menjalankan penyebaran untuk kebijakan 'deployIfNotExists' dan 'modifikasi'. Lokasi diperlukan saat menetapkan identitas.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -262,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID sumber daya yang sepenuhnya memenuhi syarat untuk penetapan kebijakan yang ditentukan cmdlet ini.
+Menentukan ID sumber daya yang sepenuhnya memenuhi syarat untuk penetapan kebijakan yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -277,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek penetapan kebijakan untuk memperbarui yang merupakan output dari cmdlet lainnya.
+Objek penetapan kebijakan untuk memperbarui yang merupakan output dari cmdlet lain.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.Policy.PsPolicyAssignment
@@ -322,7 +322,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama penetapan kebijakan yang ditentukan cmdlet ini.
+Menentukan nama penetapan kebijakan yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -337,7 +337,7 @@ Accept wildcard characters: False
 ```
 
 ### -NonComplianceMessage
-Pesan non-kepatuhan yang menjelaskan mengapa sumber daya tidak patuh dengan kebijakan tersebut.
+Pesan tidak sesuai yang menjelaskan mengapa sumber daya tidak sesuai dengan kebijakan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.Policy.PsNonComplianceMessage[]
@@ -352,7 +352,7 @@ Accept wildcard characters: False
 ```
 
 ### -NotScope
-Penetapan kebijakan tidak lingkup.
+Penetapan kebijakan bukan lingkup.
 
 ```yaml
 Type: System.String[]
@@ -367,7 +367,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyParameter
-Jalur file parameter kebijakan atau string baru untuk penetapan kebijakan.
+Kebijakan baru parameter jalur file atau string untuk penetapan kebijakan.
 
 ```yaml
 Type: System.String
@@ -397,7 +397,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Cmdlet ini mempertimbangkan versi API prari release ketika cmdlet menentukan versi mana yang akan digunakan secara otomatis.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -412,7 +412,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Menentukan lingkup di mana kebijakan diterapkan.
+Menentukan lingkup penerapan kebijakan.
 
 ```yaml
 Type: System.String
@@ -427,7 +427,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

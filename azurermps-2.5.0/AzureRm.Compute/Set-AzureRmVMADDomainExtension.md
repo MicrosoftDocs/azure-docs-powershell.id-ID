@@ -4,12 +4,12 @@ Module Name: AzureRM.Compute
 ms.assetid: 65BF37D3-4FCE-48A3-BC5D-01AA20FEB6CA
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/set-azurermvmaddomainextension
 schema: 2.0.0
-ms.openlocfilehash: caf8b2339f333c59a414405a2175b815212f4b61c21623b59cdf49f33bda61d9
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 140f1ccdedd6f3b3402601a8a844092bf3d7ab0e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419022"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142147607"
 ---
 # Set-AzureRmVMADDomainExtension
 
@@ -28,17 +28,17 @@ Set-AzureRmVMADDomainExtension -DomainName <String> [-OUPath <String>] [-JoinOpt
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmVMADDomainExtension** menambahkan ekstensi mesin virtual domain Azure Active Directory (AD) ke komputer virtual.
-Ekstensi ini memungkinkan mesin virtual Anda bergabung dalam sebuah domain.
+Cmdlet **Set-AzureRmVMADDomainExtension** menambahkan ekstensi mesin virtual domain Azure Active Directory (AD) ke mesin virtual.
+Ekstensi ini memungkinkan mesin virtual Anda bergabung dengan domain.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -Credential
-Menentukan nama pengguna dan kata sandi untuk komputer virtual sebagai objek **PSCredential.**
+### -Kredensial
+Menentukan nama pengguna dan kata sandi untuk mesin virtual sebagai objek **PSCredential** .
 Untuk mendapatkan kredensial, gunakan cmdlet Get-Credential.
-Untuk informasi selengkapnya, ketik `Get-Help Get-Credential` .
+Untuk informasi selengkapnya, ketik .`Get-Help Get-Credential`
 
 ```yaml
 Type: PSCredential
@@ -53,7 +53,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableAutoUpgradeMinorVersion
-Mengindikasikan bahwa cmdlet ini menonaktifkan pemutakhiran otomatis versi minor ekstensi tersebut.
+Menunjukkan bahwa cmdlet ini menonaktifkan pemutakhiran otomatis dari versi minor ekstensi.
 
 ```yaml
 Type: SwitchParameter
@@ -98,10 +98,10 @@ Accept wildcard characters: False
 ```
 
 ### -ForceRerun
-Mengindikasikan bahwa cmdlet ini memaksa jalankan ulang konfigurasi ekstensi yang sama pada mesin virtual tanpa menghapus instalasi dan menginstal ulang ekstensi.
-Nilai dapatlah string apa pun yang berbeda dari nilai saat ini.
+Menunjukkan bahwa cmdlet ini memaksa pengintaian ulang konfigurasi ekstensi yang sama pada mesin virtual tanpa menghapus instalan dan menginstal ulang ekstensi.
+Nilai dapat berupa string apa pun yang berbeda dari nilai saat ini.
 
-Jika forceUpdateTag tidak diubah, pembaruan pada pengaturan publik atau yang diproteksi masih diterapkan oleh penanganan.
+Jika forceUpdateTag tidak diubah, pembaruan untuk pengaturan publik atau terproteksi masih diterapkan oleh handler.
 
 ```yaml
 Type: String
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -JoinOption
-Menentukan opsi gabung.
+Menentukan opsi gabungan.
 
 ```yaml
 Type: UInt32
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi mesin virtual.
+Menentukan lokasi mesin maya.
 
 ```yaml
 Type: String
@@ -162,8 +162,8 @@ Accept wildcard characters: False
 
 ### -OUPath
 Menentukan unit organisasi (OU) untuk akun domain.
-Masukkan nama lengkap OU dalam tanda kutip.
-Nilai defaultnya adalah OU default untuk objek mesin pada domain.
+Masukkan nama lengkap OU yang dibedakan dalam tanda kutip.
+Nilai defaultnya adalah OU default untuk objek mesin dalam domain.
 
 ```yaml
 Type: String
@@ -192,9 +192,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Mulai ulang
-Mengindikasikan bahwa cmdlet ini memulai ulang mesin virtual.
-Sering kali, mulai ulang diperlukan untuk membuat perubahan efektif.
+### -Hidupkan ulang
+Menunjukkan bahwa cmdlet ini memulai ulang mesin virtual.
+Mulai ulang seringkali diperlukan untuk membuat perubahan efektif.
 
 ```yaml
 Type: SwitchParameter
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -256,7 +256,7 @@ Accept wildcard characters: False
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
 
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -271,11 +271,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS

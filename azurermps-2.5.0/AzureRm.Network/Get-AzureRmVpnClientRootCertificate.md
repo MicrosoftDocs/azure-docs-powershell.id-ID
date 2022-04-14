@@ -4,12 +4,12 @@ Module Name: AzureRM.Network
 ms.assetid: 16754F70-9619-4F68-86E9-5C8B27812707
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/get-azurermvpnclientrootcertificate
 schema: 2.0.0
-ms.openlocfilehash: bdcff7f68daa1d211d39dfd3f11339cfd2769bcc997b501e3951889e00ec0599
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 7c3ee4e2c640417a7ba3d6cd78c2c8ea0691fff3
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416613"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142146174"
 ---
 # Get-AzureRmVpnClientRootCertificate
 
@@ -27,11 +27,11 @@ Get-AzureRmVpnClientRootCertificate [-VpnClientRootCertificateName <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmVpnClientRootCertificate** mengembalikan informasi tentang sertifikat akar yang ditetapkan untuk gateway jaringan virtual.
+Cmdlet **Get-AzureRmVpnClientRootCertificate** mengembalikan informasi tentang sertifikat akar yang ditetapkan ke gateway jaringan virtual.
 Sertifikat akar adalah sertifikat X.509 yang mengidentifikasi Otoritas Sertifikasi Akar Anda: semua sertifikat lain yang digunakan di gateway mempercayai sertifikat akar.
 
-Secara default, **Get-AzureRmVpnClientRootCertificate** mengembalikan informasi tentang semua sertifikat akar yang ditetapkan untuk gateway.
-(Gateway bisa memiliki lebih dari satu sertifikat akar.) Namun, dengan menyertakan parameter **VpnClientRootCertificateName** Anda bisa membatasi data yang dikembalikan menjadi sertifikat tertentu.
+Secara default, **Get-AzureRmVpnClientRootCertificate** mengembalikan informasi tentang semua sertifikat akar yang ditetapkan ke gateway.
+(Gateway bisa memiliki lebih dari satu sertifikat akar.) Namun, dengan menyertakan parameter **VpnClientRootCertificateName** , Anda dapat membatasi data yang dikembalikan ke sertifikat tertentu.
 
 ## EXAMPLES
 
@@ -48,12 +48,12 @@ PS C:\>Get-AzureRmVpnClientRootCertificate -VirtualNetworkGatewayName "ContosoVi
 ```
 
 Perintah ini adalah variasi perintah yang diperlihatkan dalam Contoh 1.
-Namun, dalam kasus ini, parameter *VpnClientRootCertificateName* disertakan untuk membatasi data yang dikembalikan ke sertifikat akar tertentu: ContosoRootClientCertificate.
+Namun, dalam hal ini, parameter *VpnClientRootCertificateName* disertakan untuk membatasi data yang dikembalikan ke sertifikat akar tertentu: ContosoRootClientCertificate.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -68,9 +68,9 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang ditetapkan untuk gateway jaringan virtual.
+Menentukan nama grup sumber daya tempat gateway jaringan maya ditetapkan.
 
-Grup sumber daya mengkategorikan item untuk membantu menyederhanakan manajemen inventaris dan administrasi umum Azure.
+Grup sumber daya mengkategorikan item untuk membantu menyederhanakan manajemen inventaris dan administrasi Umum Azure.
 
 ```yaml
 Type: String
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkGatewayName
-Menentukan nama gateway jaringan virtual tempat sertifikat akar ditetapkan.
+Menentukan nama gateway jaringan maya tempat sertifikat akar ditetapkan.
 
 ```yaml
 Type: String
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnClientRootCertificateName
-Menentukan nama sertifikat akar klien yang didaurkan cmdlet ini.
+Menentukan nama sertifikat akar klien yang didapat cmdlet ini.
 
 ```yaml
 Type: String
@@ -115,14 +115,14 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
 ###  
-**Get-AzureRmVpnClientRootCertificate** mendapatkan contoh objek **Microsoft.Azure.Commands.Network.Models.PSVpnClientRootCertificate.**
+**Get-AzureRmVpnClientRootCertificate** mendapatkan instance objek **Microsoft.Azure.Commands.Network.Models.PSVpnClientRootCertificate** .
 
 ## CATATAN
 
@@ -132,6 +132,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmVpnClientRootCertificate](./New-AzureRmVpnClientRootCertificate.md)
 
-[Remove-AzureRmVpnClientRootCertificate](./Remove-AzureRmVpnClientRootCertificate.md)
+[Hapus-AzureRmVpnClientRootCertificate](./Remove-AzureRmVpnClientRootCertificate.md)
 
 

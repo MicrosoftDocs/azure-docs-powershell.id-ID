@@ -4,12 +4,12 @@ Module Name: AzureRM.Resources
 ms.assetid: 63BBDF98-75FC-4A44-9FD0-95AD21ED93A6
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.resources/export-azurermresourcegroup
 schema: 2.0.0
-ms.openlocfilehash: 06cf5a8f4d6cb4c9b9007020d11ba91b89e29ac1d6a7bf4b131ee0506a738b0a
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: a5390cd66e97f05e80f52685af6e43135ed64141
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140852022"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142145441"
 ---
 # Export-AzureRmResourceGroup
 
@@ -28,11 +28,11 @@ Export-AzureRmResourceGroup -ResourceGroupName <String> [-Path <String>] [-Inclu
 ```
 
 ## DESCRIPTION
-Cmdlet **Export-AzureRmResourceGroup** merekam grup sumber daya yang ditentukan sebagai templat dan menyimpannya ke file JSON. Ini bisa berguna dalam skenario di mana Anda sudah membuat beberapa sumber daya di grup sumber daya Anda, lalu ingin memanfaatkan penggunaan yang dicadangkan templat.
-Cmdlet ini memberi Anda permulaan yang mudah dengan menghasilkan templat untuk sumber daya Anda yang sudah ada di grup sumber daya.
-Mungkin ada beberapa kasus ketika cmdlet ini gagal menghasilkan beberapa bagian templat.
-Pesan peringatan akan menginformasikan sumber daya yang gagal.
-Templat masih akan dihasilkan untuk bagian yang berhasil.
+Cmdlet **Ekspor-AzureRmResourceGroup** menangkap grup sumber daya tertentu sebagai templat dan menyimpannya ke file JSON. Ini bisa berguna dalam skenario di mana Anda telah membuat beberapa sumber daya di grup sumber daya Anda, lalu ingin memanfaatkan manfaat penggunaan templat yang didukung.
+Cmdlet ini memberi Anda awal yang mudah dengan menghasilkan templat untuk sumber daya yang sudah ada dalam grup sumber daya.
+Mungkin ada beberapa kasus di mana cmdlet ini gagal menghasilkan beberapa bagian templat.
+Pesan peringatan akan memberi tahu Anda tentang sumber daya yang gagal.
+Templat masih akan dihasilkan untuk bagian-bagian yang berhasil.
 
 ## EXAMPLES
 
@@ -41,13 +41,13 @@ Templat masih akan dihasilkan untuk bagian yang berhasil.
 PS C:\>Export-AzureRmResourceGroup -ResourceGroupName "TestGroup"
 ```
 
-Perintah ini akan mengambil gambar grup sumber daya bernama GrupUji sebagai templat, dan menyimpannya ke file JSON dalam direktori saat ini.
+Perintah ini menangkap grup sumber daya bernama TestGroup sebagai templat, dan menyimpannya ke file JSON di direktori saat ini.
 
 ## PARAMETERS
 
 ### -ApiVersion
 Menentukan versi API penyedia sumber daya untuk digunakan.
-Jika tidak ditentukan, versi API terbaru akan digunakan.
+Jika tidak ditentukan, versi API terbaru digunakan.
 
 ```yaml
 Type: System.String
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -76,8 +76,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -122,14 +122,14 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: System.Management.Automation.ActionPreference
@@ -158,7 +158,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
+### -Jalur
 Menentukan jalur output file templat.
 
 ```yaml
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Menunjukkan bahwa cmdlet ini menggunakan versi API prari perilisan ketika secara otomatis menentukan versi API mana yang akan digunakan.
+Menunjukkan bahwa cmdlet ini menggunakan versi API prarilis saat menentukan versi API mana yang akan digunakan secara otomatis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

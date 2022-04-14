@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.notif
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/NotificationHubs/Commands.NotificationHubs/help/Get-AzureRmNotificationHubsNamespaceListKeys.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/NotificationHubs/Commands.NotificationHubs/help/Get-AzureRmNotificationHubsNamespaceListKeys.md
-ms.openlocfilehash: f559d141a478b721b0e07d3e32e0b12ad1d70bc7e63ef7e4cae809a8e52a7fa9
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 2e90a656b700c1fda3064b740ccbbec08f2c7031
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416483"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142097541"
 ---
 # Get-AzureRmNotificationHubsNamespaceListKeys
 
@@ -28,25 +28,25 @@ Get-AzureRmNotificationHubsNamespaceListKeys [-ResourceGroup] <String> [-Namespa
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmNotificationHubsNamespaceListKeys** mengembalikan string koneksi utama dan sekunder untuk aturan otorisasi Tanda Tangan Akses Bersama (SAS, Shared Access Signature) yang ditetapkan ke ruang nama hub pemberitahuan.
+Cmdlet **Get-AzureRmNotificationHubsNamespaceListKeys** mengembalikan string koneksi utama dan sekunder untuk aturan otorisasi Tanda Tangan Akses Bersama (SAS) yang ditetapkan ke ruang nama hub pemberitahuan.
 Aturan otorisasi mengelola hak pengguna ke ruang nama hub pemberitahuan.
 Setiap aturan menyertakan string koneksi utama dan sekunder.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan string koneksi utama dan sekunder untuk aturan otorisasi
+### Contoh 1: Dapatkan string koneksi utama dan sekunder untuk aturan otorisasi
 ```
 PS C:\>Get-AzureRmNotificationHubsNamespaceListKeys -Namespace "ContosoNamespace" -ResourceGroup "ContosoNotificationsGroup" -AuthorizationRule "ListenRule"
 ```
 
 Perintah ini mengembalikan string koneksi utama dan sekunder untuk aturan otorisasi bernama ListenRule yang ditetapkan ke ruang nama ContosoNamespace.
-Saat Anda menjalankan perintah ini Anda harus menyertakan nama grup sumber daya yang diberi ruang nama.
+Saat Menjalankan perintah ini, Anda harus menyertakan nama grup sumber daya tempat ruang nama ditetapkan.
 
 ## PARAMETERS
 
 ### -AuthorizationRule
 Menentukan nama aturan autentikasi SAS.
-Aturan ini menentukan tipe akses yang pengguna miliki ke hub pemberitahuan.
+Aturan ini menentukan tipe akses yang dimiliki pengguna ke hub pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Menentukan ruang nama yang berisi string koneksi yang akan didapsum cmdlet ini.
+Menentukan ruang nama yang berisi string koneksi yang didapatkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroup
 Menentukan grup sumber daya tempat ruang nama ditetapkan.
-Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu manajemen inventaris dan administrasi Azure.
+Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang hanya membantu manajemen inventaris dan administrasi Azure.
 
 ```yaml
 Type: System.String
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecuritySecureScoreControl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecuritySecureScoreControl.md
-ms.openlocfilehash: 852f371cd8a45a51e829b0371331c582b60b1ba9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 8f4fc6b2ae67cd1228ce558170fd8ce73ec2866f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140006404"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142027866"
 ---
 # Get-AzSecuritySecureScoreControl
 
 ## SYNOPSIS
 Mendapatkan kontrol skor aman keamanan dan hasilnya pada langganan
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azsecuritysecurescorecontrol) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Get-AzSecuritySecureScoreControl -Name <String> [-DefaultProfile <IAzureContextC
 ```
 
 ## DESCRIPTION
-Pengguna Get-AzSecuritySecureScoreControl comlet mendapatkan kontrol skor aman keamanan dan hasilnya pada langganan.
+Komplet Get-AzSecuritySecureScoreControl mendapatkan kontrol skor aman keamanan dan hasilnya pada langganan.
 
 ## EXAMPLES
 
@@ -52,7 +55,7 @@ UnhealthyResourceCount : 6
 NotApplicableResourceCount : 0
 ```
 
-Mendapatkan semua skor aman keamanan dalam langganan
+Mendapatkan semua skor keamanan aman dalam langganan
 
 ## PARAMETERS
 
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Mengamankan nama skor.
+Amankan nama skor.
 
 ```yaml
 Type: String
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

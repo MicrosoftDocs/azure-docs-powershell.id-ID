@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azcdndel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnDeliveryPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnDeliveryPolicy.md
-ms.openlocfilehash: 08841c25bf726e7245097fac785dc5b8d449edaf
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 70c1634ab58e08692fa8566afa3fc3ea081c0302
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140572160"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142073569"
 ---
 # New-AzCdnDeliveryPolicy
 
 ## SYNOPSIS
 Membuat kebijakan pengiriman.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cdn/new-azcdndeliverypolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzCdnDeliveryPolicy [-Description <String>] -Rule <PSDeliveryRule[]>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzCdnDeliveryPolicy** membuat kebijakan pengiriman untuk pembuatan CDN titik akhir.
+**Cmdlet New-AzCdnDeliveryPolicy** menciptakan kebijakan pengiriman untuk pembuatan titik akhir CDN.
 
 ## EXAMPLES
 
@@ -40,7 +43,7 @@ Description   Rules
 Sample Policy {rule1}
 ```
 
-Membuat contoh kebijakan pengiriman
+Membuat kebijakan pengiriman sampel
 
 ## PARAMETERS
 
@@ -74,8 +77,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Rule
-Daftar aturan pengiriman.
+### -Aturan
+Daftar pengirimanRules.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Cdn.Models.Endpoint.PSDeliveryRule[]
@@ -90,11 +93,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

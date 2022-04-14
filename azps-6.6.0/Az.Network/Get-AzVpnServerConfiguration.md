@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnServerConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnServerConfiguration.md
 ms.openlocfilehash: ff3d197a69927151ca710fe22ba620c91f88b765
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140282227"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142080787"
 ---
 # Get-AzVpnServerConfiguration
 
 ## SYNOPSIS
-Dapatkan VpnServerConfiguration yang sudah ada untuk mengarahkan ke konektivitas situs.
+Mendapatkan VpnServerConfiguration yang sudah ada untuk mengarahkan ke konektivitas situs.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azvpnserverconfiguration) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvpnserverconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-AzVpnServerConfiguration [-ResourceGroupName <String>] [-Name <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVpnServerConfiguration** mengembalikan VpnServerConfiguration untuk Point to site connectivity yang sudah ada.
+Cmdlet **Get-AzVpnServerConfiguration** mengembalikan konektivitas VpnServerConfiguration for Point to site yang sudah ada.
 
 ## EXAMPLES
 
@@ -115,11 +115,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

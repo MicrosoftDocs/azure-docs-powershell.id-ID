@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.resou
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Set-AzureRmPolicyAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Set-AzureRmPolicyAssignment.md
-ms.openlocfilehash: 634beb453f791ec5e0f62f3fd93c576e9d3cbea317b313727340c583d6ea185b
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 0fd276b8af8c16fdeb4d412029ac884ae3e5e183
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419246"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142096757"
 ---
 # Set-AzureRmPolicyAssignment
 
@@ -40,32 +40,32 @@ Set-AzureRmPolicyAssignment [-NotScope <String[]>] -Id <String> [-DisplayName <S
 
 ## DESCRIPTION
 Cmdlet **Set-AzureRmPolicyAssignment** mengubah penetapan kebijakan.
-Tentukan tugas berdasarkan ID atau menurut nama dan lingkup.
+Tentukan tugas menurut ID atau menurut nama dan lingkup.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui nama tampilan
+### Contoh 1: Memperbarui nama tampilan
 ```
 PS C:\> $ResourceGroup = Get-AzureRmResourceGroup -Name 'ResourceGroup11'
 PS C:\> $PolicyAssignment = Get-AzureRmPolicyAssignment -Name 'PolicyAssignment' -Scope $ResourceGroup.ResourceId
 PS C:\> Set-AzureRmPolicyAssignment -Id $PolicyAssignment.ResourceId -DisplayName 'Do not allow VM creation'
 ```
 
-Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 dengan menggunakan cmdlet Get-AzureRMResourceGroup cmdlet.
-Perintah menyimpan objek tersebut dalam $ResourceGroup variabel.
-Perintah kedua mendapatkan penetapan kebijakan bernama PenetapanKebesianKebesian dengan menggunakan Get-AzureRmPolicyAssignment cmdlet.
-Perintah menyimpan objek tersebut dalam $PolicyAssignment variabel.
-Perintah terakhir memperbarui nama tampilan pada penetapan kebijakan di grup sumber daya yang diidentifikasi oleh properti **ResourceId** $ResourceGroup.
+Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 menggunakan cmdlet Get-AzureRMResourceGroup.
+Perintah menyimpan objek tersebut dalam variabel $ResourceGroup.
+Perintah kedua mendapatkan penetapan kebijakan bernama PolicyAssignment menggunakan cmdlet Get-AzureRmPolicyAssignment.
+Perintah menyimpan objek tersebut dalam variabel $PolicyAssignment.
+Perintah akhir memperbarui nama tampilan pada penetapan kebijakan pada grup sumber daya yang diidentifikasi oleh properti **ResourceId** $ResourceGroup.
 
-### Contoh 2: Tambahkan identitas terkelola ke penetapan kebijakan
+### Contoh 2: Menambahkan identitas terkelola ke penetapan kebijakan
 ```
 PS C:\> $PolicyAssignment = Get-AzureRmPolicyAssignment -Name 'PolicyAssignment'
 PS C:\> Set-AzureRmPolicyAssignment -Id $PolicyAssignment.ResourceId -AssignIdentity -Location 'westus'
 ```
 
-Perintah pertama mendapatkan penetapan kebijakan bernama PenetapanKebesianKebesian dari langganan saat ini dengan menggunakan cmdlet Get-AzureRmPolicyAssignment cmdlet.
-Perintah menyimpan objek tersebut dalam $PolicyAssignment variabel.
-Perintah terakhir menetapkan identitas terkelola ke penetapan kebijakan.
+Perintah pertama mendapatkan penetapan kebijakan bernama PolicyAssignment dari langganan saat ini menggunakan cmdlet Get-AzureRmPolicyAssignment.
+Perintah menyimpan objek tersebut dalam variabel $PolicyAssignment.
+Perintah akhir menetapkan identitas terkelola ke penetapan kebijakan.
 
 ## PARAMETERS
 
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignIdentity
-Buat dan tetapkan Identitas Azure Active Directory untuk penetapan kebijakan ini. Identitas akan digunakan saat menjalankan penyebaran untuk kebijakan 'deployIfNotExists'. Lokasi diperlukan saat menetapkan identitas.
+Membuat dan menetapkan identitas Azure Active Directory untuk penetapan kebijakan ini. Identitas akan digunakan saat menjalankan penyebaran untuk kebijakan 'deployIfNotExists'. Lokasi diperlukan saat menetapkan identitas.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID sumber daya yang sepenuhnya memenuhi syarat untuk penetapan kebijakan yang ditentukan cmdlet ini.
+Menentukan ID sumber daya yang sepenuhnya memenuhi syarat untuk penetapan kebijakan yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -161,14 +161,14 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: System.Management.Automation.ActionPreference
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama penetapan kebijakan yang ditentukan cmdlet ini.
+Menentukan nama penetapan kebijakan yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -243,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -NotScope
-Penetapan kebijakan tidak lingkup.
+Penetapan kebijakan bukan lingkup.
 
 ```yaml
 Type: System.String[]
@@ -258,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Mengindikasikan bahwa cmdlet ini mempertimbangkan versi API prari perilisan bila secara otomatis menentukan versi mana yang akan digunakan.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -273,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Menentukan lingkup di mana kebijakan diterapkan.
+Menentukan lingkup penerapan kebijakan.
 
 ```yaml
 Type: System.String
@@ -288,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Tabel hash yang menyatakan properti sku.
+Tabel hash yang mewakili properti sku.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -303,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -315,8 +315,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmPolicyAssignment](./Get-AzureRmPolicyAssignment.md)
 
-[New-AzureRmPolicyAssignment](./New-AzureRmPolicyAssignment.md)
+[Baru-AzureRmPolicyAssignment](./New-AzureRmPolicyAssignment.md)
 
-[Remove-AzureRmPolicyAssignment](./Remove-AzureRmPolicyAssignment.md)
+[Hapus-AzureRmPolicyAssignment](./Remove-AzureRmPolicyAssignment.md)
 
 

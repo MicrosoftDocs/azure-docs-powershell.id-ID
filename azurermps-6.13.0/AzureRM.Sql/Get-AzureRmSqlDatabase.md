@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlDatabase.md
 ms.openlocfilehash: abe58faae0f0bd761cb532e47e1358129bc21998
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419944"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142096257"
 ---
 # Get-AzureRmSqlDatabase
 
@@ -28,7 +28,7 @@ Get-AzureRmSqlDatabase [[-DatabaseName] <String>] [-ServerName] <String> [-Resou
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmSqlDatabase** mendapatkan satu atau beberapa database Azure SQL dari Azure SQL Database Server.
+Cmdlet **Get-AzureRmSqlDatabase** mendapatkan satu atau beberapa database Azure SQL dari Server Azure SQL Database.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
 ## EXAMPLES
@@ -77,7 +77,7 @@ Tags                          :
 
 Perintah ini mendapatkan semua database di server bernama server01.
 
-### Contoh 2: Dapatkan database berdasarkan nama pada server
+### Contoh 2: Mendapatkan database berdasarkan nama di server
 ```
 PS C:\>Get-AzureRmSqlDatabase -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database02"
 ResourceGroupName             : resourcegroup01
@@ -100,12 +100,12 @@ EarliestRestoreDate           :
 Tags                          :
 ```
 
-Perintah ini mendapatkan database bernama Database02 dari server yang bernama Server01.
+Perintah ini mendapatkan database bernama Database02 dari server bernama Server01.
 
 ## PARAMETERS
 
 ### -DatabaseName
-Menentukan nama database untuk diambil.
+Menentukan nama database yang akan diambil.
 
 ```yaml
 Type: System.String
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server yang ditetapkan database.
+Menentukan nama server tempat database ditetapkan.
 
 ```yaml
 Type: System.String
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -212,7 +212,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmSqlDatabase](./New-AzureRmSqlDatabase.md)
 
-[Remove-AzureRmSqlDatabase](./Remove-AzureRmSqlDatabase.md)
+[Hapus-AzureRmSqlDatabase](./Remove-AzureRmSqlDatabase.md)
 
 [Resume-AzureRmSqlDatabase](./Resume-AzureRmSqlDatabase.md)
 

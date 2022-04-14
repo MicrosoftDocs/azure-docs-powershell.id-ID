@@ -4,16 +4,16 @@ Module Name: AzureRM.Network
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/get-azurermnetworkwatchertroubleshootingresult
 schema: 2.0.0
 ms.openlocfilehash: a2caff32969ac771140bd8c6a5a3b142f4d61485
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421537"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142146286"
 ---
 # Get-AzureRmNetworkWatcherTroubleshootingResult
 
 ## SYNOPSIS
-Mendapatkan hasil pemecahan masalah dari operasi pemecahan masalah yang sebelumnya sedang berjalan atau yang sedang berjalan.
+Mendapatkan hasil pemecahan masalah dari operasi pemecahan masalah yang dijalankan sebelumnya atau yang sedang berjalan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -32,11 +32,11 @@ Get-AzureRmNetworkWatcherTroubleshootingResult -NetworkWatcherName <String> -Res
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzureRmNetworkWatcherTroubleshootingResult mendapatkan hasil pemecahan masalah dari operasi yang dijalankan sebelumnya atau saat Start-AzureRmNetworkWatcherResourceTroubleshooting ini. Jika operasi pemecahan masalah sedang berlangsung, maka operasi ini mungkin membutuhkan waktu beberapa menit hingga selesai. Saat ini Gateway dan Koneksi Jaringan Virtual didukung.
+Cmdlet Get-AzureRmNetworkWatcherTroubleshootingResult mendapatkan hasil pemecahan masalah dari operasi Start-AzureRmNetworkWatcherResourceTroubleshooting yang dijalankan sebelumnya atau saat ini. Jika operasi pemecahan masalah saat ini sedang berlangsung, operasi ini mungkin membutuhkan waktu beberapa menit untuk diselesaikan. Saat ini Gateway dan Koneksi Virtual Network didukung.
 
 ## EXAMPLES
 
-### --- Contoh 1: Mulai Pemecahan Masalah di Gateway Jaringan Virtual dan Ambil ---
+### --- Contoh 1: Mulai Pemecahan Masalah di Gateway Virtual Network dan Ambil Hasil ---
 ```
 $nw = Get-AzurermResource | Where {$_.ResourceType -eq "Microsoft.Network/networkWatchers" -and $_.Location -eq "WestCentralUS" } 
 $networkWatcher = Get-AzureRmNetworkWatcher -Name $nw.Name -ResourceGroupName $nw.ResourceGroupName 
@@ -50,13 +50,13 @@ Start-AzureRmNetworkWatcherResourceTroubleshooting -NetworkWatcher $networkWatch
 Get-AzureRmNetworkWatcherTroubleshootingResult -NetworkWatcher $NW -TargetResourceId $target
 ```
 
-Sampel di atas memulai pemecahan masalah di gateway jaringan virtual. Operasi mungkin membutuhkan waktu beberapa menit untuk selesai.
-Setelah pemecahan masalah dimulai, Get-AzureRmNetworkWatcherTroubleshootingResult panggilan dilakukan ke sumber daya untuk mendapatkan hasil panggilan ini. 
+Contoh di atas memulai pemecahan masalah pada gateway jaringan virtual. Operasi mungkin membutuhkan waktu beberapa menit untuk diselesaikan.
+Setelah pemecahan masalah dimulai, panggilan Get-AzureRmNetworkWatcherTroubleshootingResult dilakukan ke sumber daya untuk mengambil hasil panggilan ini. 
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengawas jaringan.
+Sumber daya pengamat jaringan.
 
 ```yaml
 Type: PSNetworkWatcher
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -143,29 +143,29 @@ System.String
 ### Microsoft.Azure.Commands.Network.Models.PSViewNsgRules
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, network, networking, network watcher, troubleshoot, VPN, connection
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, pemecahan masalah, VPN, koneksi
 
 ## RELATED LINKS
 
 [Start-AzureRmNetworkWatcherResourceTroubleshooting](./Start-AzureRmNetworkWatcherResourceTroubleshooting.md)
 
-[New-AzureRmNetworkWatcher](./New-AzureRmNetworkWatcher.md)
+[AzureRmNetworkWatcher baru](./New-AzureRmNetworkWatcher.md)
 
 [Get-AzureRmNetworkWatcher](./Get-AzureRmNetworkWatcher.md)
 
-[Remove-AzureRmNetworkWatcher](./Remove-AzureRmNetworkWatcher.md)
+[Hapus-AzureRmNetworkWatcher](./Remove-AzureRmNetworkWatcher.md)
 
-[New-AzureRmNetworkWatcherPacketCapture](./New-AzureRmNetworkWatcherPacketCapture.md)
+[Baru-AzureRmNetworkWatcherPacketCapture](./New-AzureRmNetworkWatcherPacketCapture.md)
 
 [New-AzureRmPacketCaptureFilterConfig](./New-AzureRmPacketCaptureFilterConfig.md)
 
 [Get-AzureRmNetworkWatcherPacketCapture](./Get-AzureRmNetworkWatcherPacketCapture.md)
 
-[Remove-AzureRmNetworkWatcherPacketCapture](./Remove-AzureRmNetworkWatcherPacketCapture.md)
+[Hapus-AzureRmNetworkWatcherPacketCapture](./Remove-AzureRmNetworkWatcherPacketCapture.md)
 
 [Stop-AzureRmNetworkWatcherPacketCapture](./Stop-AzureRmNetworkWatcherPacketCapture.md)
 
-[Test-AzureRmNetworkWatcherIPFlow](./Test-AzureRmNetworkWatcherIPFlow.md)
+[Uji-AzureRmNetworkWatcherIPFlow](./Test-AzureRmNetworkWatcherIPFlow.md)
 
 [Get-AzureRmNetworkWatcherNextHop](./Get-AzureRmNetworkWatcherNextHop.md)
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceGraph/ResourceGraph/help/Search-AzGraph.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceGraph/ResourceGraph/help/Search-AzGraph.md
 ms.openlocfilehash: 7bc6b2c992486c87238c1f438f4d2e1fdb15f59e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140329955"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142043075"
 ---
 # Search-AzGraph
 
@@ -18,7 +18,7 @@ ms.locfileid: "140329955"
 Kueri sumber daya yang dikelola oleh Azure Resource Manager.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resourcegraph/search-azgraph) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resourcegraph/search-azgraph) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -59,7 +59,7 @@ tags       :
 ResourceId : /subscriptions/1ef51df4-f8a9-4b69-9919-1ef51df4eff6/resourceGroups/Service-INT-a/providers/Microsoft.EventGrid/topics/egtopic-1
 ```
 
-Kueri sumber daya sederhana meminta subset bidang sumber daya.
+Kueri sumber daya sederhana yang meminta subset bidang sumber daya.
 
 ### Contoh 2
 ```powershell
@@ -72,7 +72,7 @@ westcentralus     32
 westus            26
 ```
 
-Kueri kompleks pada sumber daya yang menampilkan pemilihan bidang, pemfilteran, dan peringkaan.
+Kueri kompleks tentang sumber daya yang menampilkan pemilihan bidang, pemfilteran dan ringkasan.
 
 ### Contoh 3
 ```powershell
@@ -93,7 +93,7 @@ location   : westeurope
 ResourceId : /subscriptions/1ef51df4-f8a9-4b69-9919-1ef51df4eff6/resourceGroups/test/providers/Microsoft.Network/networkSecurityGroups/17nsg
 ```
 
-Kueri dengan token lewati yang lewati dari hasil kueri sebelumnya. Harap diperhatikan bahwa menyimpan id dalam hasil wajib untuk mendapatkan kembali token lewati.
+Kueri dengan token lompat yang lolos dari hasil kueri sebelumnya. Harap dicatat bahwa menyimpan id dalam hasil wajib untuk mendapatkan kembali token skip.
 
 ### Contoh 4
 ```powershell
@@ -115,13 +115,13 @@ tags       :
 ResourceId : /subscriptions/1ef51df4-f8a9-4b69-9919-1ef51df4eff6/resourceGroups/Service-INT-a/providers/Microsoft.EventGrid/topics/egtopic-1
 ```
 
-Kueri yang ditentukan ke grup manajemen yang memungkinkan kueri berhasil dengan sebagian hasil lingkup jika MyManagementGroupId memiliki lebih dari N langganan di bawahnya.
-N adalah jumlah maksimal langganan yang dapat diproses oleh server.
+Kueri yang dicakup ke grup manajemen yang memungkinkan kueri berhasil dengan hasil lingkup parsial jika MyManagementGroupId memiliki lebih dari N langganan di bawahnya.
+N adalah jumlah maksimum langganan yang dapat diproses oleh server.
 
 ## PARAMETERS
 
 ### -AllowPartialScope
-Mengindikasikan jika kueri seharusnya berhasil saat hanya sebagian langganan di bawahnya yang dapat diproses oleh server
+Menunjukkan apakah kueri harus berhasil ketika hanya sebagian jumlah langganan di bawahnya yang dapat diproses oleh server
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementGroup
-Grup manajemen untuk menjalankan kueri.
+Grup manajemen untuk menjalankan kueri terhadap.
 
 ```yaml
 Type: System.String[]
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -Query
-Sumber Graph sumber daya.
+kueri Resource Graph.
 
 ```yaml
 Type: System.String
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipToken
-Lewati token untuk digunakan mendapatkan halaman hasil berikutnya jika ada.
+Token lompat untuk digunakan untuk mendapatkan halaman hasil berikutnya jika ada.
 
 ```yaml
 Type: System.String
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lewati
-Mengabaikan objek N pertama, lalu mendapatkan objek yang tersisa.
+Mengabaikan objek N pertama lalu mendapatkan objek yang tersisa.
 
 ```yaml
 Type: System.Int32
@@ -225,9 +225,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -First
-Jumlah maksimum objek untuk dikembalikan. Nilai yang diperbolehkan: 1-1000.
-Nilai default adalah 100.
+### -Pertama
+Jumlah maksimum objek yang akan dikembalikan. Nilai yang diperbolehkan: 1-1000.
+Nilai defaultnya adalah 100.
 
 ```yaml
 Type: System.Int32
@@ -242,11 +242,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

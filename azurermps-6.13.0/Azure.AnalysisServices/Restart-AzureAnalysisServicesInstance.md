@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AnalysisServices/Commands.AnalysisServices.Dataplane/help/Restart-AzureAnalysisServicesInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AnalysisServices/Commands.AnalysisServices.Dataplane/help/Restart-AzureAnalysisServicesInstance.md
 ms.openlocfilehash: 496c0410808604303ab60d8ad4d989e838828bf7
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140863028"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142144834"
 ---
 # Restart-AzureAnalysisServicesInstance
 
 ## SYNOPSIS
-Memulai ulang contoh server Analysis Services di Lingkungan yang saat ini dicatat seperti yang ditentukan Add-AzureAnalysisServicesAccount perintah
+Memulai ulang contoh server Analysis Services dalam lingkungan yang saat ini masuk seperti yang ditentukan dalam perintah Add-AzureAnalysisServicesAccount
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -36,12 +36,12 @@ PS C:\>Restart-AzureAnalysisServicesInstance
 Instance: testserver
 ```
 
-Perintah ini akan memulai ulang 'testserver' server di lingkungan yang ditentukan dalam Add-AzureAnalysisServicesAccount perintah
+Perintah ini akan memulai ulang 'testserver' server dalam lingkungan yang ditentukan dalam perintah Add-AzureAnalysisServicesAccount
 
 ## PARAMETERS
 
 ### -Instance
-Nama contoh server Analysis Services untuk dimulai ulang
+Nama contoh server Analysis Services untuk memulai ulang
 
 ```yaml
 Type: System.String
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -102,11 +102,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

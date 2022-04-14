@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzExpressRouteCircuitAuthorization.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzExpressRouteCircuitAuthorization.md
 ms.openlocfilehash: c06b66b75614a276b75d22246224e6a41abe4a87
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139972311"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142079869"
 ---
 # Remove-AzExpressRouteCircuitAuthorization
 
@@ -19,7 +19,7 @@ ms.locfileid: "139972311"
 Menghapus otorisasi konfigurasi ExpressRoute yang sudah ada.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azexpressroutecircuitauthorization) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azexpressroutecircuitauthorization) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Remove-AzExpressRouteCircuitAuthorization [-Name <String>] -ExpressRouteCircuit 
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzExpressRouteCircuitAuthorization** menghapus otorisasi yang ditetapkan ke sirkuit ExpressRoute. Sirkuit ExpressRoute menghubungkan jaringan lokal Anda ke Azure dengan menggunakan penyedia konektivitas, bukan Internet publik. Pemilik sirkuit ExpressRoute dapat membuat sebanyak 10 otorisasi untuk setiap sirkuit; otorisasi ini menghasilkan kunci otorisasi yang bisa digunakan oleh pemilik jaringan virtual untuk menghubungkan jaringannya ke sirkuit. Hanya bisa ada satu otorisasi per jaringan virtual. Kapan saja, namun, pemilik sirkuit bisa menggunakan **Remove-AzExpressRouteCircuitAuthorization** untuk menghapus otorisasi yang ditetapkan ke jaringan virtual. Ketika hal tersebut terjadi, jaringan virtual yang terkait tidak lagi dapat menggunakan sirkuit ExpressRoute untuk tersambung ke Azure.
+Cmdlet **Remove-AzExpressRouteCircuitAuthorization menghapus otorisasi** yang ditetapkan ke sirkuit ExpressRoute. Sirkuit ExpressRoute menyambungkan jaringan lokal Anda ke Azure menggunakan penyedia konektivitas, bukan Internet publik. Pemilik sirkuit ExpressRoute dapat membuat sebanyak 10 otorisasi untuk setiap sirkuit; otorisasi ini menghasilkan kunci otorisasi yang dapat digunakan oleh pemilik jaringan virtual untuk menyambungkan jaringannya ke sirkuit. Hanya bisa ada satu otorisasi per jaringan virtual. Namun, kapan saja, pemilik sirkuit dapat menggunakan **Remove-AzExpressRouteCircuitAuthorization** untuk menghapus otorisasi yang ditetapkan ke jaringan virtual. Ketika hal tersebut terjadi, jaringan virtual terkait tidak lagi dapat menggunakan sirkuit ExpressRoute untuk tersambung ke Azure.
 
 ## EXAMPLES
 
@@ -40,14 +40,14 @@ Remove-AzExpressRouteCircuitAuthorization -Name "ContosoCircuitAuthorization" -C
 Set-AzExpressRouteCircuit -ExpressRouteCircuit $Circuit
 ```
 
-Contoh ini menghapus otorisasi sirkuit dari sirkuit ExpressRoute. Perintah pertama menggunakan cmdlet **Get-AzExpressRouteCircuit** untuk membuat referensi objek ke sirkuit ExpressRoute yang bernama ContosoCircuit dan menyimpan hasilnya dalam variabel yang bernama $Circuit.
+Contoh ini menghapus otorisasi sirkuit dari sirkuit ExpressRoute. Perintah pertama menggunakan cmdlet **Get-AzExpressRouteCircuit** untuk membuat referensi objek ke sirkuit ExpressRoute bernama ContosoCircuit dan menyimpan hasilnya dalam variabel bernama $Circuit.
 Perintah kedua menandai otorisasi sirkuit ContosoCircuitAuthorization untuk penghapusan.
-Perintah ketiga menggunakan cmdlet Set-AzExpressRouteCircuit untuk mengonfirmasi penghapusan sirkuit ExpressRoute yang disimpan di $Circuit variabel.
+Perintah ketiga menggunakan cmdlet Set-AzExpressRouteCircuit untuk mengonfirmasi penghapusan sirkuit ExpressRoute yang disimpan dalam variabel $Circuit.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

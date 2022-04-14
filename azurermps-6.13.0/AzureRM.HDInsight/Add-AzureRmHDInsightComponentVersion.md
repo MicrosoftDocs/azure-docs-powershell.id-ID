@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Add-AzureRmHDInsightComponentVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Add-AzureRmHDInsightComponentVersion.md
 ms.openlocfilehash: f464883eef8b37716585d4336d64dd6c032470da
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140864594"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142097990"
 ---
 # Add-AzureRmHDInsightComponentVersion
 
@@ -29,11 +29,11 @@ Add-AzureRmHDInsightComponentVersion [-Config] <AzureHDInsightConfig> [-Componen
 ```
 
 ## DESCRIPTION
-Cmdlet Add-AzureRmHDInsightComponentVersion menambahkan versi untuk layanan yang berjalan dalam kluster ke objek konfigurasi Azure HDInsight yang dibuat oleh cmdlet New-AzureRmHDInsightClusterConfig lanjut.
+Cmdlet Add-AzureRmHDInsightComponentVersion menambahkan versi untuk layanan yang berjalan dalam kluster ke objek konfigurasi Azure HDInsight yang dibuat oleh cmdlet New-AzureRmHDInsightClusterConfig.
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan versi Untuk Grafik Api ke objek konfigurasi kluster.
+### Contoh 1: Tambahkan versi untuk Spark ke objek konfigurasi kluster.
 ```
 PS C:\> # Primary storage account info
         $storageAccountResourceGroupName = "Group"
@@ -73,7 +73,7 @@ PS C:\> # Primary storage account info
                 -Version "3.5"
 ```
 
-Perintah ini menambahkan versi Grafik Spark ke kluster HDInsight yang bernama 'your-spark-001'.
+Perintah ini menambahkan versi Spark ke kluster HDInsight bernama 'your-spark-001'.
 
 ## PARAMETERS
 
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RedisCache/Commands.RedisCache/help/Get-AzureRmRedisCacheFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RedisCache/Commands.RedisCache/help/Get-AzureRmRedisCacheFirewallRule.md
 ms.openlocfilehash: 91eff9b6a096263b96ecae0cf9901f6dbce26c68
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419555"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142097138"
 ---
 # Get-AzureRmRedisCacheFirewallRule
 
 ## SYNOPSIS
-Atur aturan firewall di Singgahan Redis.
+Atur aturan firewall di Redis Cache.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,11 +27,11 @@ Get-AzureRmRedisCacheFirewallRule [-ResourceGroupName <String>] -Name <String> [
 ```
 
 ## DESCRIPTION
-Jika parameter **RuleName** jika tersedia, cmdlet **Get-AzureRmRedisCacheFirewallRule** mendapatkan detail tentang aturan firewall tertentu di Singgahan Azure Redis. Jika hanya **Nama** yang ditentukan operasi ini yang mendapatkan semua aturan firewall yang tersedia di Singgahan Redis tersebut.
+Jika parameter **RuleName** jika disediakan, cmdlet **Get-AzureRmRedisCacheFirewallRule** mendapatkan detail tentang aturan firewall tertentu di Azure Redis Cache. Jika hanya **Nama** yang ditentukan operasi ini mendapatkan semua aturan firewall yang tersedia di Singgahan Redis tersebut.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan aturan firewall tunggal
+### Contoh 1: Dapatkan aturan firewall tunggal
 ```
 PS C:\>Get-AzureRmRedisCacheFirewallRule -Name "mycache" -RuleName "ruleone"
 
@@ -44,9 +44,9 @@ PS C:\>Get-AzureRmRedisCacheFirewallRule -Name "mycache" -RuleName "ruleone"
         EndIP             : 10.0.0.32
 ```
 
-Perintah ini mendapatkan aturan firewall yang dinamai ruleone dari Cache Redis yang dinamai mycache.
+Perintah ini mendapatkan aturan firewall bernama ruleone dari Redis Cache bernama mycache.
 
-### Contoh 2: Mendapatkan semua aturan firewall
+### Contoh 2: Dapatkan semua aturan firewall
 ```
 PS C:\>Get-AzureRmRedisCacheFirewallRule -Name "mycache"
 
@@ -67,12 +67,12 @@ PS C:\>Get-AzureRmRedisCacheFirewallRule -Name "mycache"
         EndIP             : 10.0.0.64
 ```
 
-Perintah ini mendapatkan semua aturan firewall dari Singgahan Redis yang dinamai mycache.
+Perintah ini mendapatkan semua aturan firewall dari Redis Cache bernama mycache.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama cache akan redis.
+Nama singgahan redis.
 
 ```yaml
 Type: System.String
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -148,12 +148,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmRedisCacheFirewallRule](./New-AzureRmRedisCacheFirewallRule.md)
 
-[Remove-AzureRmRedisCacheFirewallRule](./Remove-AzureRmRedisCacheFirewallRule.md)
+[Hapus-AzureRmRedisCacheFirewallRule](./Remove-AzureRmRedisCacheFirewallRule.md)
 
 [Get-AzureRmRedisCache](./Get-AzureRmRedisCache.md)
 
-[New-AzureRmRedisCache](./New-AzureRmRedisCache.md)
+[AzureRmRedisCache Baru](./New-AzureRmRedisCache.md)
 
-[Remove-AzureRmRedisCache](./Remove-AzureRmRedisCache.md)
+[Hapus-AzureRmRedisCache](./Remove-AzureRmRedisCache.md)
 
 [Set-AzureRmRedisCache](./Set-AzureRmRedisCache.md)

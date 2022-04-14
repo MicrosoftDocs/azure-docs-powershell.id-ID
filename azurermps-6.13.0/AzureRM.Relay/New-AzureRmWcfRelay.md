@@ -6,29 +6,29 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Relay/Commands.Relay/help/New-AzureRmWcfRelay.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Relay/Commands.Relay/help/New-AzureRmWcfRelay.md
 ms.openlocfilehash: 3aa57c1ec70d560a0fee395b27d79372bdf4fd61
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140864001"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142096965"
 ---
 # New-AzureRmWcfRelay
 
 ## SYNOPSIS
-Membuat WcfIguy dalam ruang nama Relay yang ditentukan.
+Membuat WcfRelay dalam ruang nama Relay yang ditentukan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
 ## SYNTAX
 
-### WcfNasyInputObjectSet
+### WcfRelayInputObjectSet
 ```
 New-AzureRmWcfRelay [-ResourceGroupName] <String> [-Namespace] <String> [-Name] <String>
  [-InputObject <WcfRelayAttributes>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### WcfPropertiesSet
+### WcfRelayPropertiesSet
 ```
 New-AzureRmWcfRelay [-ResourceGroupName] <String> [-Namespace] <String> [-Name] <String>
  [-WcfRelayType <String>] [-RequiresClientAuthorization <Boolean>] [-RequiresTransportSecurity <Boolean>]
@@ -36,7 +36,7 @@ New-AzureRmWcfRelay [-ResourceGroupName] <String> [-Namespace] <String> [-Name] 
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzureRmWcfRelay membuat WcfIguy dalam ruang nama Relay yang ditentukan.
+Cmdlet New-AzureRmWcfRelay membuat WcfRelay dalam ruang nama Relay yang ditentukan.
 
 ## EXAMPLES
 
@@ -62,7 +62,7 @@ Name                        : TestWCFRelay2
 Type                        : Microsoft.Relay/WcfRelays
 ```
 
-Membuat WcfIguy \`TestWCF Spacey2\` baru dalam ruang nama Relay tertentu \`TestNameSpace-Relay\`.
+Membuat WcfRelay \`TestWCFRelay2\` baru dalam Ruang \`nama Relay yang ditentukan TestNameSpace-Relay\`.
 
 ### Contoh 2 - Properti
 ```
@@ -82,7 +82,7 @@ Name                        : TestWCFRelay
 Type                        : Microsoft.Relay/WcfRelays
 ```
 
-Membuat WcfIguy \`TestWCFEby baru\` dalam ruang nama Relay tertentu \`TestNameSpace-Relay1\`.
+Membuat WcfRelay \`TestWCFRelay\` baru dalam Ruang \`nama Relay yang ditentukan TestNameSpace-Relay1\`.
 
 ## PARAMETERS
 
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek WcfNasy.
+Objek WcfRelay.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Relay.Models.PSWcfRelayAttributes
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama WcfEby.
+Nama WcfRelay.
 
 ```yaml
 Type: System.String
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequiresClientAuthorization
-true jika otorisasi klien diperlukan untuk relay ini; jika tidak, false
+true jika otorisasi klien diperlukan untuk relai ini; jika tidak, false
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequiresTransportSecurity
-true jika keamanan transpor diperlukan untuk relay ini; jika tidak, false
+true jika keamanan transportasi diperlukan untuk relay ini; jika tidak, false
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserMetadata
-Mendapatkan atau mengatur usermetadata adalah tempat penampung untuk menyimpan data string yang ditentukan pengguna untuk titik akhir HybridConnection. misalnya informasi ini dapat digunakan untuk menyimpan data deskriptif, seperti daftar tim dan informasi kontak mereka, juga pengaturan konfigurasi yang ditentukan oleh pengguna yang dapat disimpan.
+Gets or sets usermetadata is a placeholder to store user-defined string data for the HybridConnection endpoint.e.g. ini dapat digunakan untuk menyimpan data deskriptif, seperti daftar tim dan informasi kontak mereka juga pengaturan konfigurasi yang ditentukan pengguna dapat disimpan.
 
 ```yaml
 Type: System.String
@@ -206,9 +206,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -WcfEbyType
-Tipe WcfEby.
-Kemungkinan nilai termasuk: 'NetTcp' atau 'Http'
+### -WcfRelayType
+Tipe WcfRelay.
+Nilai yang mungkin termasuk: 'NetTcp' atau 'Http'
 
 ```yaml
 Type: System.String
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -255,18 +255,18 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
-Microsoft.Azure.Commands.Relay.Models.PSWcf BooleanyAttributes System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+Microsoft.Azure.Commands.Relay.Models.PSWcfRelayAttributes System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
 
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Relay.Models.PSWcfMicrosoftyAttributes
+### Microsoft.Azure.Commands.Relay.Models.PSWcfRelayAttributes
 
 
 ## CATATAN

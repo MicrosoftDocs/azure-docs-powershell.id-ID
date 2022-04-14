@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Remove-AzureRmHDInsightPersistedScriptAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Remove-AzureRmHDInsightPersistedScriptAction.md
 ms.openlocfilehash: 7e24fac68efa4392944179d4a0618c0ad487c03f
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428404"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142097768"
 ---
 # Remove-AzureRmHDInsightPersistedScriptAction
 
 ## SYNOPSIS
-Menghapus tindakan skrip yang tetap dari kluster HDInsight.
+Menghapus tindakan skrip tetap dari kluster HDInsight.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,19 +28,19 @@ Remove-AzureRmHDInsightPersistedScriptAction [-ClusterName] <String> [-Name] <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmHDInsightPersistedScriptAction** menghapus tindakan skrip yang tetap dari daftar kluster Azure HDInsight tertentu tentang tindakan skrip yang tetap.
-Skrip yang dihapus tidak lagi dijalankan saat kluster diskalakan.
+Cmdlet **Remove-AzureRmHDInsistedScriptAction** menghapus tindakan skrip tetap dari daftar aksi skrip yang tetap di cluster Azure HDInsight yang ditentukan.
+Skrip yang dihapus tidak akan lagi dijalankan ketika kluster diskalakan.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus tindakan skrip dari daftar tindakan skrip yang ada di kluster
+### Contoh 1: Menghapus tindakan skrip dari daftar tindakan skrip tetap pada kluster
 ```
 PS C:\>Remove-AzureRmHDInsightPersistedScriptAction `
             -ClusterName "your-hadoop-001" `
             -Name "Scriptaction"
 ```
 
-Perintah ini menghapus tindakan skrip yang bernama Tindakan skrip dari daftar tindakan skrip yang sudah ada di kluster yang ditentukan.
+Perintah ini menghapus tindakan skrip bernama Scriptaction dari daftar tindakan skrip yang tetap pada kluster yang ditentukan.
 
 ## PARAMETERS
 
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama tindakan skrip yang sudah ada untuk dihapus.
+Menentukan nama tindakan skrip tetap yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -105,11 +105,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

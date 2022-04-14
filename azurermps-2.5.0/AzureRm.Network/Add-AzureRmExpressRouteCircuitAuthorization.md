@@ -5,11 +5,11 @@ ms.assetid: 9994E2B2-20A1-4E95-9A9F-379B8B63F7F5
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/add-azurermexpressroutecircuitauthorization
 schema: 2.0.0
 ms.openlocfilehash: 9b41eb0c95c2b1693e56c8b11fee86b6e49a4609
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132429243"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142146619"
 ---
 # Add-AzureRmExpressRouteCircuitAuthorization
 
@@ -26,27 +26,27 @@ Add-AzureRmExpressRouteCircuitAuthorization -Name <String> -ExpressRouteCircuit 
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureRmExpressRouteCircuitAuthorization** menambahkan otorisasi ke sirkuit ExpressRoute. Sirkuit ExpressRoute menyambungkan jaringan lokal Anda ke awan Microsoft dengan menggunakan penyedia konektivitas, bukan Internet publik. Pemilik sirkuit ExpressRoute dapat membuat sebanyak 10 otorisasi untuk setiap sirkuit; ini otorisasi menghasilkan kunci otorisasi yang bisa digunakan oleh pemilik jaringan virtual untuk menghubungkan jaringannya ke sirkuit (satu otorisasi per jaringan virtual). **Add-AzureRmExpressRouteCircuitAuthorization** menambahkan otorisasi baru ke sirkuit dan, pada saat yang sama, menghasilkan kunci otorisasi terkait. Tombol ini dapat ditampilkan kapan saja dengan menjalankan cmdlet Get-AzureRmExpressRouteCircuitAuthorization, dan, sebagaimana diperlukan, kemudian dapat disalin dan diteruskan ke pemilik jaringan yang sesuai.
+Cmdlet **Add-AzureRmExpressRouteCircuitAuthorization menambahkan otorisasi** ke sirkuit ExpressRoute. Sirkuit ExpressRoute menyambungkan jaringan lokal Anda ke awan Microsoft dengan menggunakan penyedia konektivitas, bukan Internet publik. Pemilik sirkuit ExpressRoute dapat membuat sebanyak 10 otorisasi untuk setiap sirkuit; otorisasi ini menghasilkan kunci otorisasi yang dapat digunakan oleh pemilik jaringan virtual untuk menyambungkan jaringannya ke sirkuit (satu otorisasi per jaringan virtual). **Add-AzureRmExpressRouteCircuitAuthorization menambahkan otorisasi** baru ke sirkuit dan, pada saat yang sama, menghasilkan kunci otorisasi terkait. Kunci ini dapat dilihat kapan saja dengan menjalankan cmdlet Get-AzureRmExpressRouteCircuitAuthorization dan, sesuai kebutuhan, kemudian dapat disalin dan diteruskan ke pemilik jaringan yang sesuai.
 
-Perhatikan bahwa, setelah menjalankan **Add-AzureRmExpressRouteCircuitAuthorization**, Anda harus memanggil cmdlet Set-AzureRmExpressRouteCircuit untuk mengaktifkan kunci. If you do not call **Set-AzureRmExpressRouteCircuit** the authorization will be added to the circuit but will not be enabled for use.
+Perhatikan bahwa, setelah menjalankan **Add-AzureRmExpressRouteCircuitAuthorization**, Anda harus menghubungi cmdlet Set-AzureRmExpressRouteCircuit untuk mengaktifkan kunci. Jika Anda tidak memanggil **Set-AzureRmExpressRouteCircuit** , otorisasi akan ditambahkan ke sirkuit tetapi tidak akan diaktifkan untuk digunakan.
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan otorisasi ke sirkuit ExpressRoute yang ditentukan
+### Contoh 1: Menambahkan otorisasi ke sirkuit ExpressRoute yang ditentukan
 ```
 $Circuit = Get-AzureRmExpressRouteCircuit -Name "ContosoCircuit" -ResourceGroupName "ContosoResourceGroup"
 Add-AzureRmExpressRouteCircuitAuthorization -Name "ContosoCircuitAuthorization" -Circuit $Circuit
 Set-AzureRmExpressRouteCircuit -ExpressRouteCircuit $Circuit
 ```
 
-Perintah dalam contoh ini menambahkan otorisasi baru ke sirkuit ExpressRoute yang ada. Perintah pertama menggunakan **Get-AzureRmExpressRouteCircuit** untuk membuat referensi objek ke sirkuit bernama ContosoCircuit. Referensi objek tersebut disimpan dalam variabel yang bernama $Circuit.
+Perintah dalam contoh ini menambahkan otorisasi baru ke sirkuit ExpressRoute yang sudah ada. Perintah pertama menggunakan **Get-AzureRmExpressRouteCircuit** untuk membuat referensi objek ke sirkuit bernama ContosoCircuit. Referensi objek tersebut disimpan dalam variabel bernama $Circuit.
 
-Di perintah kedua, cmdlet **Add-AzureRmExpressRouteCircuitAuthorization** digunakan untuk menambahkan otorisasi baru (ContosoCircuitAuthorization) ke sirkuit ExpressRoute. Perintah ini menambahkan otorisasi tapi tidak mengaktifkan otorisasi itu. Mengaktifkan otorisasi memerlukan **Set-AzureRmExpressRouteCircuit** diperlihatkan di perintah final dalam contoh.
+Dalam perintah kedua, cmdlet **Add-AzureRmExpressRouteCircuitAuthorization** digunakan untuk menambahkan otorisasi baru (ContosoCircuitAuthorization) ke sirkuit ExpressRoute. Perintah ini menambahkan otorisasi tetapi tidak mengaktifkan otorisasi tersebut. Mengaktifkan otorisasi memerlukan **Set-AzureRmExpressRouteCircuit** yang diperlihatkan dalam perintah akhir dalam contoh.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpressRouteCircuit
-Menentukan sirkuit ExpressRoute yang menambahkan otorisasi kepada cmdlet ini.
+Menentukan sirkuit ExpressRoute tempat cmdlet ini menambahkan otorisasi.
 
 ```yaml
 Type: PSExpressRouteCircuit
@@ -91,17 +91,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSExpressRouteCircuit
-**Add-AzureRmExpressRouteCircuitAuthorization** accepts pipelined instances of the **Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit** object.
+**Add-AzureRmExpressRouteCircuitAuthorization** menerima instans pipelined objek **Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit** .
 
 ## OUTPUTS
 
 ### PSExpressRouteCircuit
-**Add-AzureRmExpressRouteCircuitAuthorization** modifies instances of the **Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit** object.
+**Add-AzureRmExpressRouteCircuitAuthorization** mengubah instans objek **Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit** .
 
 ## CATATAN
 
