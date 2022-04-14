@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRMAutomationCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRMAutomationCredential.md
 ms.openlocfilehash: c92e42f49368e894006da0f7afeb9ffcf7e4a564
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132415001"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142101251"
 ---
 # Get-AzureRmAutomationCredential
 
@@ -22,7 +22,7 @@ Mendapatkan kredensial Otomatisasi.
 
 ## SYNTAX
 
-### SecaraSemua (Default)
+### ByAll (Default)
 ```
 Get-AzureRmAutomationCredential [-ResourceGroupName] <String> [-AutomationAccountName] <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -35,7 +35,7 @@ Get-AzureRmAutomationCredential [-Name] <String> [-ResourceGroupName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmAutomationCredential** mendapatkan satu atau beberapa kredensial Otomatisasi Azure.
+Cmdlet **Get-AzureRmAutomationCredential** mendapatkan satu kredensial Azure Automation atau lebih.
 Secara default, semua kredensial dikembalikan.
 Tentukan nama kredensial untuk mendapatkan kredensial tertentu.
 Untuk tujuan keamanan, cmdlet ini tidak mengembalikan kata sandi kredensial.
@@ -47,19 +47,19 @@ Untuk tujuan keamanan, cmdlet ini tidak mengembalikan kata sandi kredensial.
 PS C:\>Get-AzureRmAutomationCredential -ResourceGroupName "ResourceGroup01" -AutomationAccountName "Contoso17"
 ```
 
-Perintah ini mendapatkan metadata untuk semua kredensial dalam akun Otomatisasi yang bernama Contoso17.
+Perintah ini mendapatkan metadata untuk semua kredensial di akun Otomatisasi bernama Contoso17.
 
-### Contoh 2: Dapatkan kredensial
+### Contoh 2: Mendapatkan kredensial
 ```
 PS C:\>Get-AzureRmAutomationCredential -ResourceGroupName "ResourceGroup01" -AutomationAccountName "Contoso17" -Name "ContosoCredential"
 ```
 
-Perintah ini mendapatkan metadata untuk kredensial bernama ContosoCredential dalam akun Otomatisasi yang bernama Contoso17.
+Perintah ini mendapatkan metadata untuk kredensial bernama ContosoCredential dalam akun Otomatisasi bernama Contoso17.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang akan mengambil kredensial cmdlet ini.
+Menentukan nama akun Otomatisasi tempat cmdlet ini mengambil kredensial.
 
 ```yaml
 Type: System.String
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan grup sumber daya di mana cmdlet ini mengambil kredensial.
+Menentukan grup sumber daya tempat cmdlet ini mengambil kredensial.
 
 ```yaml
 Type: System.String
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -133,7 +133,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmAutomationCredential](./New-AzureRMAutomationCredential.md)
+[AzureRmAutomationCredential Baru](./New-AzureRMAutomationCredential.md)
 
 [Remove-AzureRmAutomationCredential](./Remove-AzureRMAutomationCredential.md)
 

@@ -4,11 +4,11 @@ ms.assetid: E771D1F2-A06B-44BB-AAFF-9459DC6303E6
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: ce3cef70ab7ea8c0198eea9340c8985b5bb8e326
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424106"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142093383"
 ---
 # Select-AzureStorSimpleResource
 
@@ -25,12 +25,12 @@ Select-AzureStorSimpleResource -ResourceName <String> [-RegistrationKey <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Select-AzureStorSimpleResource menetapkan** sumber daya sebagai sumber daya saat ini.
-Setelah Anda memilih sumber daya, cmdlet lain diterapkan di dalam konteks sumber daya tersebut.
+Cmdlet **Select-AzureStorSimpleResource** mengatur sumber daya sebagai sumber daya saat ini.
+Setelah Anda memilih sumber daya, cmdlet lain diterapkan dalam konteks sumber daya tersebut.
 
 ## EXAMPLES
 
-### Contoh 1: Memilih sumber daya untuk pertama kalinya
+### Contoh 1: Pilih sumber daya untuk pertama kalinya
 ```
 PS C:\>Select-AzureStorSimpleResource -ResourceName "Contoso64-Tsqa" -RegistrationKey "<your registration key>"
 ResourceId           ResourceName
@@ -38,8 +38,8 @@ ResourceId           ResourceName
 1909806764156522689  Contoso64-Tsqa
 ```
 
-Perintah ini memilih sumber daya yang Contoso64-Tsqa seperti konteks saat ini.
-Dalam contoh ini, komputer belum menjalankan konteks ini sebelumnya, dan oleh karena itu, Anda harus menentukan nilai untuk parameter *RegistrationKey.*
+Perintah ini memilih sumber daya yang bernama Contoso64-Tsqa sebagai konteks saat ini.
+Dalam contoh ini, komputer belum memiliki konteks ini yang diinisialisasi sebelumnya, dan oleh karena itu, Anda harus menentukan nilai untuk parameter *RegistrationKey* .
 
 ### Contoh 2: Mencoba memilih sumber daya
 ```
@@ -55,7 +55,7 @@ Select-AzureStorSimpleResource : Could not find the persisted secret. Please use
 provide the Registration key once again.
 ```
 
-### Contoh 3: Memilih sumber daya yang sebelumnya dipilih
+### Contoh 3: Memilih sumber daya yang dipilih sebelumnya
 ```
 PS C:\>Select-AzureStorSimpleResource -ResourceName "Contoso64-Tsqa"
 ResourceId           ResourceName
@@ -63,8 +63,8 @@ ResourceId           ResourceName
 1909806764156522689  Contoso64-Tsqa
 ```
 
-Perintah ini memilih sumber daya yang Contoso64-Tsqa seperti konteks saat ini.
-Dalam contoh ini, konteks telah dipilih sebelumnya, dan oleh karena itu, Anda tidak perlu menentukan nilai untuk parameter *RegistrationKey.*
+Perintah ini memilih sumber daya yang bernama Contoso64-Tsqa sebagai konteks saat ini.
+Dalam contoh ini, konteks tersebut sebelumnya telah dipilih, dan oleh karena itu, Anda tidak perlu menentukan nilai untuk parameter *RegistrationKey* .
 
 ## PARAMETERS
 
@@ -84,10 +84,10 @@ Accept wildcard characters: False
 ```
 
 ### -RegistrationKey
-Menentukan kunci pendaftaran.
+Menentukan kunci registrasi.
 Tentukan kunci saat pertama kali Anda memilih sumber daya.
-Setelah cmdlet ini memilih sumber daya saat ini, cmdlet menggunakan tombol ini, sesuai kebutuhan.
-Untuk informasi selengkapnya, [lihat Mendapatkan kunci registrasi layanan](https://msdn.microsoft.com/en-us/library/azure/dn772346.aspx)  ( di Jaringan Pengembang https://msdn.microsoft.com/en-us/library/azure/dn772346.aspx) Microsoft.
+Setelah cmdlet ini memilih sumber daya saat ini, cmdlet menggunakan kunci ini, sesuai kebutuhan.
+Untuk informasi selengkapnya, lihat [Mendapatkan kunci registrasi layanan](https://msdn.microsoft.com/en-us/library/azure/dn772346.aspx)  (https://msdn.microsoft.com/en-us/library/azure/dn772346.aspx) di Microsoft Developer Network.
 
 ```yaml
 Type: String
@@ -117,11 +117,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

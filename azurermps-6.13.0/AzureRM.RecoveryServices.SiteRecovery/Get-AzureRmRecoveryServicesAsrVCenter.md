@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.recov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Get-AzureRmRecoveryServicesAsrVCenter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Get-AzureRmRecoveryServicesAsrVCenter.md
-ms.openlocfilehash: 3f9c8b781aae1ec0139e5ac0e435976568b44badbb46ff6a452643a151b11eff
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 8db3dd9579e528110ec41f59b1c29da5d132d18d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140859428"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142061411"
 ---
 # Get-AzureRmRecoveryServicesAsrvCenter
 
 ## SYNOPSIS
-Gets details of the vCenter servers registered for discovery on the Configuration server specified by the ASR fabric.
+Mendapatkan detail server vCenter yang terdaftar untuk penemuan di server Konfigurasi yang ditentukan oleh kain ASR.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,7 +40,7 @@ Get-AzureRmRecoveryServicesAsrvCenter -Fabric <ASRFabric> -Name <String>
 ```
 
 ## DESCRIPTION
-**Get-AzureRmRecoveryServicesAsrvCenter** cmdlet gets details of the vCenter servers registered for discovery on the Configuration server specified by the ASR fabric.
+Cmdlet **Get-AzureRmRecoveryServicesAsrvCenter** mendapatkan detail server vCenter yang terdaftar untuk ditemukan di server Konfigurasi yang ditentukan oleh kain ASR.
 
 ## EXAMPLES
 
@@ -60,19 +60,19 @@ DiscoveryStatus       : Pending
 LastHeartbeat         :
 ```
 
-Get azure site recovery vCenter by fabric name and name of vCenter.
+Dapatkan vCenter pemulihan situs azure menurut nama kain dan nama vCenter.
 
 ### Contoh 2
 ```
 PS C:\> Get-AzureRmRecoveryServicesAsrvCenter -Fabric $Fabric
 ```
 
-Get azure site recovery vCenter list by fabric name.
+Dapatkan daftar vCenter pemulihan situs azure menurut nama kain.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Fabric
-Objek kain ASR mewakili Configuration Server.
+Objek kain ASR mewakili Server Konfigurasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRFabric
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan resourceId dari vCenter.
+Menentukan resourceId vCenter.
 
 ```yaml
 Type: System.String
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -140,7 +140,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### System.Collections.Generic.IEnumerable'1[[Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRvCenter, Microsoft.Azure.Commands.RecoveryServices.SiteRecovery, Version=0.1.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.IEnumerable'1[[Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRvCenter, Microsoft.Azure.Commands.RecoveryServices.SiteRecovery, Version=0.1.1.0, Culture=netral, PublicKeyToken=null]]
 
 ## CATATAN
 

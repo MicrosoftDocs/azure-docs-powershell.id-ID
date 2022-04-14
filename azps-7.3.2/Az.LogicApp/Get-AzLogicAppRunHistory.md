@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicAppRunHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicAppRunHistory.md
-ms.openlocfilehash: 1245c169603a875e70af87b4d7fdef8fc706624e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3b397bee16d817b242f64c7432365149d44e5f8f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140186293"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142068151"
 ---
 # Get-AzLogicAppRunHistory
 
 ## SYNOPSIS
 
-Mendapatkan riwayat proses aplikasi logika.
+Mendapatkan riwayat jalankan aplikasi logika.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/get-azlogicapprunhistory) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,17 +31,17 @@ Get-AzLogicAppRunHistory -ResourceGroupName <String> -Name <String> [-RunName <S
 
 ## DESCRIPTION
 
-Cmdlet **Get-AzLogicAppRunHistory** mendapatkan riwayat jalankan aplikasi logika.
+Cmdlet **Get-AzLogicAppRunHistory** mendapatkan riwayat berjalan dari aplikasi logika.
 Cmdlet ini mengembalikan kumpulan objek **WorkflowRun** .
 Tentukan aplikasi logika dan grup sumber daya.
 Modul ini mendukung parameter dinamis.
 Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
-Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilai tersebut.
+Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan riwayat proses dari aplikasi logika
+### Contoh 1: Dapatkan riwayat jalankan aplikasi logika
 
 ```powershell
 PS C:\>Get-AzLogicAppRunHistory -ResourceGroupName "Resourcegroup11" -Name "LogicApp03"
@@ -65,9 +68,9 @@ LogicAppName     : LogicApp03
 LogicAppVersion  : 08587489107859952120
 ```
 
-Perintah ini memperoleh riwayat proses dari aplikasi logika bernama LogicApp03.
+Perintah ini mendapatkan riwayat jalankan aplikasi logika bernama LogicApp03.
 
-### Contoh 2: Dapatkan aplikasi logika berjalan
+### Contoh 2: Menjalankan aplikasi logika
 
 ```powershell
 PS C:\>Get-AzLogicAppRunHistory -ResourceGroupName "Resourcegroup11" -Name "LogicApp03" -RunName "08587489104702792076"
@@ -83,7 +86,7 @@ LogicAppName     : LogicApp03
 LogicAppVersion  : 08587489107859952120
 ```
 
-Perintah ini menjalankan aplikasi logika tertentu untuk aplikasi logika bernama LogicApp03.
+Perintah ini akan menjalankan aplikasi logika tertentu untuk aplikasi logika bernama LogicApp03.
 
 ### Contoh 3
 
@@ -91,7 +94,7 @@ Perintah ini menjalankan aplikasi logika tertentu untuk aplikasi logika bernama 
 Get-AzLogicAppRunHistory -Name 'LogicApp03' -ResourceGroupName MyResourceGroup -FollowNextPageLink
 ```
 
-Perintah ini mendapatkan seluruh riwayat proses dari aplikasi logika bernama LogicApp03 dengan mengikuti NextPageLink.
+Perintah ini mendapatkan seluruh riwayat proses aplikasi logika bernama LogicApp03 dengan mengikuti NextPageLink.
 
 ### Contoh 4
 
@@ -99,14 +102,14 @@ Perintah ini mendapatkan seluruh riwayat proses dari aplikasi logika bernama Log
 Get-AzLogicAppRunHistory -Name 'LogicApp03' -ResourceGroupName MyResourceGroup -FollowNextPageLink -MaximumFollowNextPageLink 1
 ```
 
-Perintah ini mendapatkan dua halaman pertama riwayat proses dari aplikasi logika bernama LogicApp03 dengan mengikuti NextPageLink dan membatasi ukuran hasil menjadi dua halaman.
+Perintah ini mendapatkan dua halaman pertama riwayat jalankan aplikasi logika bernama LogicApp03 dengan mengikuti NextPageLink dan membatasi ukuran hasil menjadi dua halaman.
 Setiap halaman berisi tiga puluh hasil.
 
 ## PARAMETERS
 
 ### -DefaultProfile
 
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 
 ### -FollowNextPageLink
 
-Mengindikasikan cmdlet harus mengikuti tautan halaman berikutnya.
+Menunjukkan cmdlet harus mengikuti tautan halaman berikutnya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 
 ### -MaximumFollowNextPageLink
 
-Menentukan berapa kali untuk mengikuti link halaman berikutnya jika FollowNextPageLink digunakan.
+Menentukan berapa kali untuk mengikuti tautan halaman berikutnya jika FollowNextPageLink digunakan.
 
 ```yaml
 Type: System.Int32
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 
 ### -Nama
 
-Menentukan nama aplikasi logika tempat cmdlet ini mendapatkan riwayat proses.
+Menentukan nama aplikasi logika tempat cmdlet ini menjalankan riwayat.
 
 ```yaml
 Type: System.String
@@ -186,8 +189,8 @@ Accept wildcard characters: False
 
 ### -RunName
 
-Menentukan nama jalankan dari aplikasi logika.
-Cmdlet ini menjalankan alur kerja yang ditentukan cmdlet ini.
+Menentukan nama jalankan aplikasi logika.
+Cmdlet ini akan menjalankan alur kerja yang ditentukan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 
 ### CommonParameters
 
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

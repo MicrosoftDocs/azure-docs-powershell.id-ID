@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Set-AzureRmApiManagementApiRevision.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Set-AzureRmApiManagementApiRevision.md
 ms.openlocfilehash: fe709b560c790ad010469bf2f0a2043231124138
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "132415746"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142101466"
 ---
 # Set-AzureRmApiManagementApiRevision
 
 ## SYNOPSIS
-Memodifikasi Revisi API
+Mengubah Revisi API
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -39,7 +39,7 @@ Set-AzureRmApiManagementApiRevision -InputObject <PsApiManagementApi> -Name <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmApiManagementApiRevision** mengubah Revisi API Manajemen API Azure.
+Cmdlet **Set-AzureRmApiManagementApiRevision** mengubah Revisi API Azure API Management.
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ PS C:\>$ApiMgmtContext = New-AzureRmApiManagementContext -ResourceGroupName "Api
 PS C:\>Set-AzureRmApiManagementApiRevision -Context $ApiMgmtContext -ApiId "echo-api" -ApiRevision "2" -Name "EchoApi" -ServiceUrl "https://contoso.com/apis/echo" -Protocols @('https') -Description "Responds with what was sent" -Path "echo"
 ```
 
-Cmdlet memperbarui revisi `2` API dengan deskripsi `echo-api` , protokol, dan jalur baru.
+Cmdlet memperbarui `2` revisi API `echo-api` dengan deskripsi, protokol, dan jalur baru.
 
 ## PARAMETERS
 
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -AuthorizationServerId
-Pengidentifikasi server otorisasi OAuth.
+Pengidentifikasi server oauth otorisasi.
 Parameter ini bersifat opsional.
 Nilai default adalah $null.
 Harus ditentukan jika AuthorizationScope ditentukan.
@@ -182,8 +182,8 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama WEB API.
-Nama publik API seperti yang akan muncul di portal pengembang dan admin.
+Nama API Web.
+Nama publik API seperti yang akan muncul di portal admin dan pengembang.
 Parameter ini diperlukan.
 
 ```yaml
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika instans Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApi ditentukan mewakili API yang ditetapkan.
+Jika ditentukan, contoh Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApi tipe mewakili API yang ditetapkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -213,11 +213,11 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Path
-Jalur Web API.
-Bagian terakhir DARI URL publik API.
-URL ini akan digunakan oleh konsumen API untuk mengirimkan permintaan ke layanan web.
-Harus memiliki panjang 1 hingga 400 karakter.
+### -Jalur
+Jalur API Web.
+Bagian terakhir URL publik API.
+URL ini akan digunakan oleh konsumen API untuk mengirim permintaan ke layanan web.
+Panjangnya harus 1 hingga 400 karakter.
 Parameter ini bersifat opsional.
 Nilai default adalah $null.
 
@@ -233,9 +233,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Protocols
-Protokol WEB API (http, https).
-Protokol yang mana API akan tersedia.
+### -Protokol
+Protokol API Web (http, https).
+Protokol di mana API tersedia.
 Parameter ini diperlukan.
 Nilai default adalah $null.
 
@@ -253,9 +253,9 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceUrl
-URL layanan web yang memperlihatkan API.
-URL ini hanya akan digunakan oleh Manajemen API Azure, dan tidak akan dibuat untuk publik.
-Harus memiliki panjang 1 hingga 2000 karakter.
+URL layanan web yang mengekspos API.
+URL ini hanya akan digunakan oleh Azure API Management, dan tidak akan diumumkan ke publik.
+Panjangnya harus 1 hingga 2000 karakter.
 Parameter ini diperlukan.
 
 ```yaml
@@ -271,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionKeyHeaderName
-Nama header kunci langganan.
+Nama header tombol langganan.
 Parameter ini bersifat opsional.
 Nilai default adalah $null.
 
@@ -305,7 +305,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -321,7 +321,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -336,7 +336,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -363,4 +363,4 @@ Parameter: InputObject (ByValue)
 
 [New-AzureRmApiManagementApiRevision](./New-AzureRmApiManagementApiRevision.md)
 
-[Remove-AzureRmApiManagementApiRevision](./Remove-AzureRmApiManagementApiRevision.md)
+[Hapus-AzureRmApiManagementApiRevision](./Remove-AzureRmApiManagementApiRevision.md)

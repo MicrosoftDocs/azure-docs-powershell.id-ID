@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementBackendCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementBackendCredential.md
-ms.openlocfilehash: d066a21e1a5b6281f5ca0cd8bc03616082eb5057
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3664e36f3a58ddbd869305da741af524e1fd1f99
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140558162"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141856742"
 ---
 # New-AzApiManagementBackendCredential
 
 ## SYNOPSIS
-Membuat kontrak Backend Credential baru.
+Membuat kontrak Kredensial Backend baru.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementbackendcredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ New-AzApiManagementBackendCredential [-CertificateThumbprint <String[]>] [-Certi
 ```
 
 ## DESCRIPTION
-Membuat kontrak Backend Credential baru.
+Membuat kontrak Kredensial Backend baru.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Kredensial Backend In-Memory Belakang
+### Contoh 1: Membuat Kredensial Backend In-Memory Objek
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 $credential = New-AzApiManagementBackendCredential -AuthorizationHeaderScheme basic -AuthorizationHeaderParameter opensesame -Query @{"sv" = @('xx', 'bb'); "sr" = @('cc')} -Header @{"x-my-1" = @('val1', 'val2')}
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -CertificateThumbprint
-Thumbprint Sertifikat Klien.
+Sidik Jari Sertifikat Klien.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -153,11 +156,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

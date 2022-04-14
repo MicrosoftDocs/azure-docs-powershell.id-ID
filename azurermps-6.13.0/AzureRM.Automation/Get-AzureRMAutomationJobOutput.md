@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRMAutomationJobOutput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRMAutomationJobOutput.md
 ms.openlocfilehash: e2b965800c4f8307edaedf25b032767ca1784049
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425165"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142101247"
 ---
 # Get-AzureRmAutomationJobOutput
 
 ## SYNOPSIS
-Mendapatkan output pekerjaan Otomatisasi.
+Mendapatkan output dari pekerjaan Otomatisasi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,21 +29,21 @@ Get-AzureRmAutomationJobOutput [-Id] <Guid> [-Stream <StreamType>] [-StartTime <
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmAutomationJobOutput** mendapatkan output pekerjaan Otomatisasi Azure.
+Cmdlet **Get-AzureRmAutomationJobOutput** mendapatkan output pekerjaan Azure Automation.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan output pekerjaan Otomatisasi
+### Contoh 1: Dapatkan output dari pekerjaan Automation
 ```
 PS C:\>Get-AzureRmAutomationJobOutput -AutomationAccountName "Contoso17" -Id 2989b069-24fe-40b9-b3bd-cb7e5eac4b64 -ResourceGroupName "ResourceGroup01" -Stream "Any"
 ```
 
-Perintah ini mendapatkan semua output pekerjaan yang memiliki ID yang ditentukan.
+Perintah ini mendapatkan semua output dari pekerjaan yang memiliki ID yang ditentukan.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang akan mendapatkan output pekerjaan dari cmdlet ini.
+Menentukan nama akun Otomatisasi di mana cmdlet ini mendapatkan output pekerjaan.
 
 ```yaml
 Type: System.String
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID pekerjaan yang mendapatkan output cmdlet ini.
+Menentukan ID pekerjaan di mana cmdlet ini mendapatkan output.
 
 ```yaml
 Type: System.Guid
@@ -103,8 +103,8 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Menentukan waktu mulai sebagai objek **DateTimeOffset.**
-Anda bisa menentukan string yang bisa dikonversi menjadi **DateTimeOffset** yang valid.
+Menentukan waktu mulai sebagai objek **DateTimeOffset** .
+Anda dapat menentukan string yang dapat dikonversi menjadi **DateTimeOffset** yang valid.
 Cmdlet mengambil output yang dibuat setelah waktu ini.
 
 ```yaml
@@ -121,8 +121,8 @@ Accept wildcard characters: False
 
 ### -Stream
 Menentukan tipe output.
-Nilai valid adalah: 
-- Apa pun
+Nilai yang valid adalah: 
+- Setiap
 - Debug
 - Kesalahan
 - Output
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -152,7 +152,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Common.StreamType
 
-### System.Nullable'1[[System.DateTimeOffset, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.DateTimeOffset, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ### System.String
 

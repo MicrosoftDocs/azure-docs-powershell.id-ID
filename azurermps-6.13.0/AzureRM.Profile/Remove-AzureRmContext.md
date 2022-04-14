@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.profi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Profile/Commands.Profile/help/Remove-AzureRmContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Profile/Commands.Profile/help/Remove-AzureRmContext.md
-ms.openlocfilehash: bc0decfcc4ab39bc012857d57c2e62f1bfdd4779eb0b63cbfd91d09050238cc4
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 0e102d6c0c4db5bd3d93d4349a2a0e06284cd8d5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140862098"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142097207"
 ---
 # Remove-AzureRmContext
 
@@ -27,14 +27,14 @@ Remove-AzureRmContext -InputObject <PSAzureContext> [-Force] [-PassThru] [-Scope
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RemoveByName
+### HapusByName
 ```
 Remove-AzureRmContext [-Force] [-PassThru] [-Scope <ContextModificationScope>]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [-Name] <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Menghapus konteks Azure dari kumpulan konteks
+Menghapus konteks azure dari kumpulan konteks
 
 ## EXAMPLES
 
@@ -48,7 +48,7 @@ Menghapus konteks yang bernama default
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -62,8 +62,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Menghapus konteks meskipun merupakan fitnah
+### -Paksa
+Hapus konteks bahkan jika itu adalah defualt
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek konteks, biasanya melewati saluran.
+Objek konteks, biasanya melewati pipa.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Profile.Models.PSAzureContext
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Menentukan lingkup perubahan konteks, misalnya, apakah perubahan diterapkan hanya pada proses saat ini, atau pada semua sesi yang dimulai oleh pengguna ini
+Menentukan lingkup perubahan konteks, misalnya, apakah perubahan hanya berlaku untuk proses saat ini, atau ke semua sesi yang dimulai oleh pengguna ini
 
 ```yaml
 Type: Microsoft.Azure.Commands.Profile.Common.ContextModificationScope
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

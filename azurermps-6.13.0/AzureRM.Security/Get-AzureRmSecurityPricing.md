@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Security/Commands.Security/help/Get-AzureRmSecurityPricing.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Security/Commands.Security/help/Get-AzureRmSecurityPricing.md
 ms.openlocfilehash: 27d27cf3df8c41eaa507d9223c73f2b36637a04c
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140861221"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142096441"
 ---
 # Get-AzureRmSecurityPricing
 
 ## SYNOPSIS
-Mendapatkan data tingkatan harga untuk Pusat Keamanan Azure untuk lingkupnya.
+Mendapatkan data tingkat harga untuk Azure Security Center untuk lingkup.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -49,9 +49,9 @@ Get-AzureRmSecurityPricing -ResourceId <String> [-DefaultProfile <IAzureContextC
 ```
 
 ## DESCRIPTION
-Tingkatan harga Azure Security Center ditentukan per lingkup, dengan cmdlet ini Anda dapat memperoleh tingkatan harga yang dikonfigurasikan.
-Tingkatan harga langganan mencakup semua grup sumber daya di bawahnya.
-Tingkatan harga Grup Sumber Daya akan menimpa tingkat harga langganan.
+Azure Security Center tingkat harga diputuskan per lingkup, dengan cmdlet ini Anda bisa mendapatkan tingkat harga yang dikonfigurasi.
+Tingkat harga langganan menyertakan semua grup sumber daya di bawahnya.
+Tingkat harga Grup Sumber Daya akan menimpa tingkat harga langganan.
 
 ## EXAMPLES
 
@@ -64,7 +64,7 @@ Id                                                                              
 /subscriptions/487bb485-b5b0-471e-9c0d-10717612f869/resourceGroups/myService1/providers/Microsoft.Security/pricings/myService1 myService1 Standard
 ```
 
-Mendapatkan semua tingkatan harga yang dikonfigurasi untuk langganan dan grup sumber daya di bawahnya.
+Mendapatkan semua tingkat harga yang dikonfigurasi untuk langganan dan grup sumber daya di bawahnya.
 
 ### Contoh 2
 ```powershell
@@ -74,7 +74,7 @@ Id                                                                              
 /subscriptions/487bb485-b5b0-471e-9c0d-10717612f869/resourceGroups/myService1/providers/Microsoft.Security/pricings/myService1 myService1 Standard
 ```
 
-Mendapatkan tingkatan harga yang dikonfigurasi untuk gorup sumber daya "myService1".
+Mendapatkan tingkat harga yang dikonfigurasi untuk gorup sumber daya "myService1".
 
 ## PARAMETERS
 
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

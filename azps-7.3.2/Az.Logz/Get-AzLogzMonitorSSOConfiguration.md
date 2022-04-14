@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/get-azlogzm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitorSSOConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitorSSOConfiguration.md
-ms.openlocfilehash: dc11c4d879822212f1b7da2953e6bea7c8e32d14
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f19b1a67505bab119a077bf7c2c9f41c139239bc
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140393502"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141936969"
 ---
 # Get-AzLogzMonitorSSOConfiguration
 
 ## SYNOPSIS
-Dapatkan sumber daya masuk tunggal Logz untuk Monitor tertentu.
+Mendapatkan sumber daya masuk tunggal Logz untuk Monitor yang diberikan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.logz/get-azlogzmonitorssoconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,11 +35,11 @@ Get-AzLogzMonitorSSOConfiguration -InputObject <ILogzIdentity> [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Dapatkan sumber daya masuk tunggal Logz untuk Monitor tertentu.
+Mendapatkan sumber daya masuk tunggal Logz untuk Monitor yang diberikan.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan sumber daya masuk tunggal Logz default untuk Monitor tertentu
+### Contoh 1: Mendapatkan sumber daya masuk tunggal Logz default untuk Monitor yang diberikan
 ```powershell
 PS C:\> Get-AzLogzMonitorSSOConfiguration -ResourceGroupName LPTrials -MonitorName lpatlogz
 
@@ -45,9 +48,9 @@ Name    ProvisioningState SingleSignOnState SingleSignOnUrl                     
 default Succeeded         Existing          https://api-wa.logz.io/auth/azure/325420/login LPTrials
 ```
 
-Perintah ini mendapatkan sumber daya masuk tunggal Logz default untuk Monitor tertentu.
+Perintah ini mendapatkan sumber daya masuk tunggal Logz default untuk Monitor yang diberikan.
 
-### Contoh 2: Mendapatkan sumber daya masuk tunggal Logz default untuk Monitor dengan saluran
+### Contoh 2: Mendapatkan sumber daya masuk tunggal Logz default untuk Monitor menurut pipeline
 ```powershell
 PS C:\> New-AzLogzMonitorSSOConfiguration -ResourceGroupName logz-rg-test -MonitorName pwsh-logz04 | Get-AzLogzMonitorSSOConfiguration
 
@@ -56,7 +59,7 @@ Name    ProvisioningState SingleSignOnState SingleSignOnUrl             Resource
 default Succeeded         Disable           https://app.logz.io/        logz-rg-test
 ```
 
-Perintah ini mendapatkan sumber daya masuk tunggal Logz default untuk Monitor tertentu melalui saluran.
+Perintah ini mendapatkan sumber daya masuk tunggal Logz default untuk Monitor menurut pipeline.
 
 ## PARAMETERS
 
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.ILogzIdentity
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonitorName
-Memantau nama sumber daya
+Pantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -160,7 +163,7 @@ INPUTOBJECT <ILogzIdentity>: Parameter Identitas
   - `[ConfigurationName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[RuleSetName <String>]`: 
   - `[SubAccountName <String>]`: Nama sumber daya Sub Akun
   - `[SubscriptionId <String>]`: ID langganan target.

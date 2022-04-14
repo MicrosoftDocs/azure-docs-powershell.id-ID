@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/New-AzureRmSqlInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/New-AzureRmSqlInstance.md
 ms.openlocfilehash: 025a9acc53405aeb1e211473b5f8f13066791714
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140856674"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142096194"
 ---
 # New-AzureRmSqlInstance
 
 ## SYNOPSIS
-Membuat Instans Azure SQL Database Terkelola.
+Membuat Instans terkelola Azure SQL Database.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,7 +29,7 @@ New-AzureRmSqlInstance [-Name] <String> [-ResourceGroupName] <String> -Administr
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### NewBySkuNameParameterSetParameter
+### NewByskuNameParameterSetParameter
 ```
 New-AzureRmSqlInstance [-Name] <String> [-ResourceGroupName] <String> -AdministratorCredential <PSCredential>
  -Location <String> -SubnetId <String> -LicenseType <String> -StorageSizeInGB <Int32> -VCore <Int32>
@@ -38,11 +38,11 @@ New-AzureRmSqlInstance [-Name] <String> [-ResourceGroupName] <String> -Administr
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmSqlInstance** membuat Azure SQL Database Yang Dikelola.
+Cmdlet **New-AzureRmSqlInstance** membuat instans Azure SQL Database Dikelola.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat contoh baru
+### Contoh 1: Membuat instans baru
 ```
 PS C:\>New-AzureRmSqlInstance -Name managedInstance1 -ResourceGroupName ResourceGroup01 -Location westcentralus -AdministratorCredential (Get-Credential) -SubnetId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Network/virtualNetworks/vnet_name/subnets/subnet_name" -LicenseType LicenseIncluded -StorageSizeInGB 1024 -VCore 16 -SkuName GP_Gen4
 Location                 : westcentralus
@@ -61,9 +61,9 @@ VCores                   : 16
 StorageSizeInGB          : 1024
 ```
 
-Perintah ini membuat instans baru dengan menggunakan parameter Edition dan ComputeGeneration.
+Perintah ini membuat instans baru menggunakan parameter Edition dan ComputeGeneration.
 
-### Contoh 2: Membuat contoh baru
+### Contoh 2: Membuat instans baru
 ```
 PS C:\>New-AzureRmSqlInstance -Name managedInstance2 -ResourceGroupName ResourceGroup01 -Location westcentralus -AdministratorCredential (Get-Credential) -SubnetId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Network/virtualNetworks/vnet_name/subnets/subnet_name" -LicenseType LicenseIncluded -StorageSizeInGB 1024 -VCore 16 -Edition "GeneralPurpose" -ComputeGeneration Gen4
 Location                 : westcentralus
@@ -87,7 +87,7 @@ Perintah ini membuat instans baru dengan menggunakan parameter Edition dan Compu
 ## PARAMETERS
 
 ### -AdministratorCredential
-Contoh SQL kredensial autentikasi contoh.
+Kredensial autentikasi SQL instans.
 
 ```yaml
 Type: PSCredential
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignIdentity
-Buat dan tetapkan identitas Azure Active Directory untuk instans Terkelola ini untuk digunakan dengan layanan manajemen kunci seperti Azure KeyVault.
+Buat dan tetapkan identitas Azure Active Directory untuk instans Terkelola ini untuk digunakan dengan layanan manajemen utama seperti Azure KeyVault.
 
 ```yaml
 Type: SwitchParameter
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeGeneration
-Pembuatan perhitungan untuk contoh.
+Pembuatan komputasi untuk instans.
 
 ```yaml
 Type: String
@@ -161,8 +161,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Edition
-Edisi contoh.
+### -Edisi
+Edisi untuk instans.
 
 ```yaml
 Type: String
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -LicenseType
-Menentukan Tipe Lisensi instans mana yang digunakan
+Menentukan Tipe Lisensi instans mana yang akan digunakan
 
 ```yaml
 Type: String
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama contoh.
+Nama instans.
 
 ```yaml
 Type: String
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageSizeInGB
-Menentukan seberapa Storage besar untuk dikaitkan dengan instans
+Menentukan berapa banyak ukuran Storage untuk dikaitkan dengan instans
 
 ```yaml
 Type: Int32
@@ -282,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag untuk dikaitkan dengan contoh
+Tag yang akan dikaitkan dengan instans
 
 ```yaml
 Type: Hashtable
@@ -297,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -VCore
-Menentukan seberapa banyak VCore dikaitkan dengan contoh
+Menentukan berapa banyak VCore untuk dikaitkan dengan instance
 
 ```yaml
 Type: Int32
@@ -312,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -328,7 +328,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -343,11 +343,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

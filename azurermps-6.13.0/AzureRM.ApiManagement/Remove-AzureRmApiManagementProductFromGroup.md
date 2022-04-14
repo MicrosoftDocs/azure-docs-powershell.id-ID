@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Remove-AzureRmApiManagementProductFromGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Remove-AzureRmApiManagementProductFromGroup.md
 ms.openlocfilehash: 0d56528f2cbe827f4dfc5ba20e2a9f8c840256ed
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427081"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141888016"
 ---
 # Remove-AzureRmApiManagementProductFromGroup
 
@@ -29,7 +29,7 @@ Remove-AzureRmApiManagementProductFromGroup -Context <PsApiManagementContext> -G
 
 ## DESCRIPTION
 Cmdlet **Remove-AzureRmApiManagementProductFromGroup** menghapus produk dari grup yang sudah ada.
-Dengan kata lain, cmdlet ini akan menghapus penetapan grup dari produk.
+Dengan kata lain, cmdlet ini menghapus tugas grup dari produk.
 
 ## EXAMPLES
 
@@ -39,12 +39,12 @@ PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-De
 PS C:\>Remove-AzureRmApiManagementProductFromGroup -Context $apimContext -GroupId "0001" -ProductId "0123456789"
 ```
 
-Perintah ini akan menghapus produk dari grup yang sudah ada.
+Perintah ini menghapus produk dari grup yang sudah ada.
 
 ## PARAMETERS
 
 ### -Konteks
-Menentukan objek **PsApiManagementContext.**
+Menentukan objek **PsApiManagementContext** .
 Parameter ini diperlukan.
 
 ```yaml
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengindikasikan bahwa cmdlet ini mengembalikan nilai $True berhasil, atau lebih $False.
+Menunjukkan bahwa cmdlet ini mengembalikan nilai $True, jika berhasil, atau $False, jika tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

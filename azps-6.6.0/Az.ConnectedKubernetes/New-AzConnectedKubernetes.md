@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/New-AzConnectedKubernetes.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/New-AzConnectedKubernetes.md
 ms.openlocfilehash: 2d5f31cf8e958e645e36389daac969c17c58e2b8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140078615"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141870062"
 ---
 # New-AzConnectedKubernetes
 
 ## SYNOPSIS
-API untuk mendaftarkan kluster K8 baru dan dengan demikian membuat sumber daya terlacak di ARM
+API untuk mendaftarkan klaster K8s baru dan dengan demikian membuat sumber daya terlacak di ARM
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.connectedkubernetes/new-azconnectedkubernetes) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.connectedkubernetes/new-azconnectedkubernetes) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,11 +29,11 @@ New-AzConnectedKubernetes -ClusterName <String> -ResourceGroupName <String> -Loc
 ```
 
 ## DESCRIPTION
-API untuk mendaftarkan kluster K8 baru dan dengan demikian membuat sumber daya terlacak di ARM
+API untuk mendaftarkan klaster K8s baru dan dengan demikian membuat sumber daya terlacak di ARM
 
 ## EXAMPLES
 
-### Contoh 1: Membuat grup tersambung
+### Contoh 1: Create a connected kubernetes
 ```powershell
 PS C:\> New-AzConnectedKubernetes -ClusterName ps-connaks-t01 -ResourceGroupName connected-aks -Location 
 Location Name         Type
@@ -41,9 +41,9 @@ Location Name         Type
 eastus   ps-connaks-t01 Microsoft.Kubernetes/connectedClusters
 ```
 
-Perintah ini akan membuat grup yang tersambung.
+Perintah ini membuat kubernetes yang terhubung.
 
-### Contoh 1: Membuat file tersambung dengan parameter kubeConfig dan kubeContext
+### Contoh 1: Create a connected kubernetes with parameters kubeConfig and kubeContext
 ```powershell
 PS C:\> New-AzConnectedKubernetes -ClusterName ps-connaks-t02 -ResourceGroupName connected-aks -Location eastus -KubeConfig $HOME\.kube\config -KubeContext portal-aks-t01
 
@@ -52,12 +52,12 @@ Location Name         Type
 eastus   ps-connaks-t02 Microsoft.Kubernetes/connectedClusters
 ```
 
-Perintah ini membuat file tersambung dengan parameter kubeConfig dan kubeContext.
+Perintah ini membuat kubernetes yang terhubung dengan parameter kubeConfig dan kubeContext.
 
 ## PARAMETERS
 
 ### -ClusterName
-Nama kluster Kluster tempat get disebut.
+Nama kluster Kubernetes yang dinamai get.
 
 ```yaml
 Type: System.String
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -KubeConfig
-Jalur ke file konfigurasi kube
+Jalur ke berkas konfigurasi kube
 
 ```yaml
 Type: System.String
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -KubeContext
-Konteks Kubconfig dari komputer saat ini
+Konteks kubconfig dari mesin saat ini
 
 ```yaml
 Type: System.String
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat kluster kjadwal didaftarkan.
+Nama grup sumber daya yang didaftarkan oleh kluster kubernetes.
 
 ```yaml
 Type: System.String
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan tempat kluster grup didaftarkan.
+ID dari langganan yang didaftarkan oleh kluster kubernetes.
 
 ```yaml
 Type: System.String
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,13 +193,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.ConnectedK cmdlets.Models.Api20210301.IConnectedCluster
+### Microsoft.Azure.PowerShell.Cmdlets.ConnectedKubernetes.Models.Api20210301.IConnectedCluster
 
 ## CATATAN
 

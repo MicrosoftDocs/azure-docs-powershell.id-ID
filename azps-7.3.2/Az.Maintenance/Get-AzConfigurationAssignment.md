@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.maintenance/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/Get-AzConfigurationAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/Get-AzConfigurationAssignment.md
-ms.openlocfilehash: 4eab921969d9c102b9486a85bf46bf6b38743ce9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: dc279f9d9fbc6664a3d05886ecd6a4b808cd9565
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140386415"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141936573"
 ---
 # Get-AzConfigurationAssignment
 
 ## SYNOPSIS
-List configurationAssignments for resource.
+Konfigurasi daftarSertaan untuk sumber daya.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.maintenance/get-azconfigurationassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzConfigurationAssignment [-ResourceGroupName] <String> [-ProviderName] <Str
 ```
 
 ## DESCRIPTION
-List configurationAssignments for resource.
+Konfigurasi daftarSertaan untuk sumber daya.
 
 ## EXAMPLES
 
@@ -42,7 +45,7 @@ Name                       : ps2
 Type                       : Microsoft.Maintenance/configurationAssignments
 ```
 
-Konfigurasi daftar Penetapan untuk host khusus.
+Konfigurasi daftarSertakan untuk host khusus.
 
 ## PARAMETERS
 
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Profile/Commands.Profile/help/Import-AzureRmContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Profile/Commands.Profile/help/Import-AzureRmContext.md
 ms.openlocfilehash: 590557d883979ac3f23decd88695695df9aecc0a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140866025"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142097180"
 ---
 # Import-AzureRmContext
 
@@ -21,13 +21,13 @@ Memuat informasi autentikasi Azure dari file.
 
 ## SYNTAX
 
-### ProfilFromDisk (Default)
+### ProfileFromDisk (Default)
 ```
 Import-AzureRmContext [-Path] <String> [-Scope <ContextModificationScope>]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### InFileProfile
+### InMemoryProfile
 ```
 Import-AzureRmContext [-AzureContext] <AzureRmProfile> [-Scope <ContextModificationScope>]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -48,7 +48,7 @@ Account                SubscriptionName TenantId                Environment
 azureuser@contoso.com  Subscription1    xxxx-xxxx-xxxx-xxxx     AzureCloud
 ```
 
-Contoh ini mengimpor konteks dari PSAzureProfile yang disampaikan ke cmdlet.
+Contoh ini mengimpor konteks dari PSAzureProfile yang diteruskan ke cmdlet.
 
 ### Contoh 2: Mengimpor konteks dari file JSON
 ```
@@ -59,12 +59,12 @@ Account                SubscriptionName TenantId                Environment
 azureuser@contoso.com  Subscription1    xxxx-xxxx-xxxx-xxxx     AzureCloud
 ```
 
-Contoh ini memilih konteks dari file JSON yang disampaikan melalui cmdlet. File JSON ini dapat dibuat dari Simpan-AzureRmContext.
+Contoh ini memilih konteks dari file JSON yang diteruskan ke cmdlet. File JSON ini dapat dibuat dari Save-AzureRmContext.
 
 ## PARAMETERS
 
 ### -AzureContext
-Menentukan konteks Azure yang dibaca cmdlet ini. Jika Anda tidak menentukan konteksnya, cmdlet ini akan membaca dari konteks default lokal.
+Menentukan konteks Azure tempat cmdlet ini dibaca. Jika Anda tidak menentukan konteks, cmdlet ini akan dibaca dari konteks default lokal.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Models.AzureRmProfile
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -93,8 +93,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur untuk informasi konteks yang disimpan menggunakan Simpan-AzureRMContext.
+### -Jalur
+Menentukan jalur ke informasi konteks yang disimpan menggunakan Save-AzureRMContext.
 
 ```yaml
 Type: System.String
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Menentukan lingkup perubahan konteks, misalnya, apakah perubahan diterapkan hanya pada proses saat ini, atau untuk semua sesi yang dimulai oleh pengguna ini.
+Menentukan lingkup perubahan konteks, misalnya, apakah perubahan hanya berlaku untuk proses saat ini, atau ke semua sesi yang dimulai oleh pengguna ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Profile.Common.ContextModificationScope
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

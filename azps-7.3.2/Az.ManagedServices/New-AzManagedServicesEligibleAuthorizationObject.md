@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ManagedServices/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/New-AzManagedServicesEligibleAuthorizationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/New-AzManagedServicesEligibleAuthorizationObject.md
-ms.openlocfilehash: a0b5751f23385ce9b2f438a2c1d1a1b32053a89e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1ff8337f8f37cc25c73ff020114490afd5c2173a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140571227"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141936501"
 ---
 # New-AzManagedServicesEligibleAuthorizationObject
 
 ## SYNOPSIS
-Membuat objek dalam memori untukAuthorisasi yang Memenuhi Syarat
+Membuat objek dalam memori untuk Pengabaian yang Memenuhi Syarat
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.managedservices/new-azmanagedserviceseligibleauthorizationobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +31,11 @@ New-AzManagedServicesEligibleAuthorizationObject -PrincipalId <String> -RoleDefi
 ```
 
 ## DESCRIPTION
-Membuat objek dalam memori untukAuthorisasi yang Memenuhi Syarat
+Membuat objek dalam memori untuk Pengabaian yang Memenuhi Syarat
 
 ## EXAMPLES
 
-### Contoh 1: Membuat objek otorisasi Mercusuar Azure yang baru yang memenuhi syarat untuk digunakan dengan definisi Registrasi
+### Contoh 1: Membuat objek otorisasi Azure Lighthouse baru yang memenuhi syarat untuk digunakan dengan Definisi registrasi
 ```powershell
 PS C:\> New-AzManagedServicesEligibleAuthorizationObject -PrincipalId "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" -PrincipalIdDisplayName "Test user" -RoleDefinitionId "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 
@@ -41,9 +44,9 @@ PrincipalId                          PrincipalIdDisplayName RoleDefinitionId
 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx Test user              xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 ```
 
-Membuat objek otorisasi Azure Lighthouse yang memenuhi syarat untuk digunakan dengan definisi Registrasi.
+Membuat objek otorisasi Azure Lighthouse baru yang memenuhi syarat untuk digunakan dengan definisi Registrasi.
 
-### Contoh 2: Buat Mercusuar Azure baru yang memenuhi syarat otorisasi dengan pengaturan JustInTime
+### Contoh 2: Membuat otorisasi Azure Lighthouse baru yang memenuhi syarat dengan pengaturan JustInTime
 ```powershell
 PS C:\> $approver = New-AzManagedServicesEligibleApproverObject -PrincipalId "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" -PrincipalIdDisplayName "Approver group"
 
@@ -59,13 +62,13 @@ JustInTimeAccessPolicyMultiFactorAuthProvider   : Azure
 JustInTimeAccessPolicyMaximumActivationDuration : 00:30:00
 ```
 
-Membuat objek otorisasi Azure Lighthouse yang memenuhi syarat dengan pengaturan JustInTime (JIT).
+Membuat objek otorisasi Azure Lighthouse baru yang memenuhi syarat dengan pengaturan JustInTime (JIT).
 
 ## PARAMETERS
 
 ### -JustInTimeAccessPolicyManagedByTenantApprover
-Daftar pemberi persetujuan managedByTenant untuk otorisasi yang memenuhi syarat.
-Untuk membuat, lihat bagian CATATAN untuk propertiASEACCESSPOLICYMANAGEDBYTENANTAPPROVER dan membuat tabel hash.
+Daftar penyetuju managedByTenant untuk otorisasi yang memenuhi syarat.
+Untuk membangun, lihat bagian CATATAN untuk properti JUSTINTIMEACCESSPOLICYMANAGEDBYTENANTAPPROVER dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ManagedServices.Models.Api20200201Preview.IEligibleApprover[]
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -JustInTimeAccessPolicyMaximumActivationDuration
-Durasi akses maksimum dalam format ISO 8601 untuk permintaan akses langsung.
+Durasi akses maksimum dalam format ISO 8601 untuk permintaan akses tepat waktu.
 
 ```yaml
 Type: System.TimeSpan
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -JustInTimeAccessPolicyMultiFactorAuthProvider
-Penyedia otorisasi multi-faktor yang akan digunakan untuk permintaan akses hanya dalam waktu.
+Penyedia multi-factor authorization yang akan digunakan untuk permintaan akses tepat waktu.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ManagedServices.Support.MultiFactorAuthProvider
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalId
-Pengidentifikasi dari Azure Active Directory pokok.
+Pengidentifikasi prinsipal Azure Active Directory.
 
 ```yaml
 Type: System.String
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalIdDisplayName
-Nama tampilan pokok Azure Active Directory.
+Nama tampilan prinsipal Azure Active Directory.
 
 ```yaml
 Type: System.String
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleDefinitionId
-Pengidentifikasi peran bawaan Azure yang menentukan izin yang akan tersedia Azure Active Directory utamanya pada lingkup yang diproyeksikan.
+Pengidentifikasi peran bawaan Azure yang menentukan izin yang akan dimiliki prinsipal Azure Active Directory pada lingkup yang diproyeksikan.
 
 ```yaml
 Type: System.String
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -172,9 +175,9 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-KMTIMEACCESSPOLICYMANAGEDBYTENANTAPPROVER <IEligibleApprover[]>: Daftar pemberi persetujuan managedByTenant untuk otorisasi yang memenuhi syarat.
-  - `PrincipalId <String>`: Pengidentifikasi dari Azure Active Directory utama.
-  - `[PrincipalIdDisplayName <String>]`: Nama tampilan pokok Azure Active Directory.
+JUSTINTIMEACCESSPOLICYMANAGEDBYTENANTAPPROVER <IEligibleApprover[]>: Daftar penyetuju ManagedByTenant untuk otorisasi yang memenuhi syarat.
+  - `PrincipalId <String>`: Pengidentifikasi prinsipal Azure Active Directory.
+  - `[PrincipalIdDisplayName <String>]`: Nama tampilan prinsipal Azure Active Directory.
 
 ## RELATED LINKS
 

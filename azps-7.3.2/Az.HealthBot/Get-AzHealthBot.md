@@ -5,26 +5,29 @@ online version: https://docs.microsoft.com/powershell/module/az.healthbot/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthBot/help/Get-AzHealthBot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthBot/help/Get-AzHealthBot.md
-ms.openlocfilehash: f7824deaf7897be3f2ef15b6bd7b4965b5661e19
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ff8aaad5262cb92b35d096593494bc6d522ac7b7
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140549842"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141851540"
 ---
 # Get-AzHealthBot
 
 ## SYNOPSIS
 Dapatkan HealthBot.
 
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.healthbot/get-azhealthbot) untuk informasi terbaru.
+
 ## SYNTAX
 
-### Daftar1 (Default)
+### List1 (Default)
 ```
 Get-AzHealthBot [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzHealthBot -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -46,7 +49,7 @@ Dapatkan HealthBot.
 
 ## EXAMPLES
 
-### Contoh 1: Get all HealthBot
+### Contoh 1: Dapatkan semua HealthBot
 ```powershell
 PS C:\> Get-AzHealthBot
 
@@ -58,7 +61,7 @@ eastus   yourihealthbotmemory 2020/12/29 6:54:32  test@microsoft.com User       
 
 Dapatkan semua HealthBot
 
-### Contoh 2: Get all HealthBot by ResourceGroupName
+### Contoh 2: Dapatkan semua HealthBot dengan ResourceGroupName
 ```powershell
 PS C:\> Get-AzHealthBot -ResourceGroupName youriTest
 
@@ -70,7 +73,7 @@ eastus   yourihealthbotmemory 2020/12/29 6:54:32  test@microsoft.com User       
 
 Dapatkan semua HealthBot menurut ResourceGroupName
 
-### Contoh 3: Get HealthBot by ResourceGroupName dan Name
+### Contoh 3: Get HealthBot by ResourceGroupName and Name
 ```powershell
 PS C:\> Get-AzHealthBot -ResourceGroupName youriTest -name yourihealthbot
 
@@ -79,9 +82,9 @@ Location Name                 SystemDataCreatedAt SystemDataCreatedBy   SystemDa
 eastus   yourihealthbot       2020/12/29 5:54:14  test@microsoft.com User                    2020/12/29 5:54:19       ********-****-****-****-********** Application                  Microsoft.HealthBot/healthBots
 ```
 
-Dapatkan HealthBot berdasarkan ResourceGroupName dan Name
+Dapatkan HealthBot menurut ResourceGroupName dan Name
 
-### Contoh 4: Dapatkan HealthBot by InputObject
+### Contoh 4: Get HealthBot by InputObject
 ```powershell
 PS C:\> $getAzHealthBot = Get-AzHealthBot -ResourceGroupName youriTest -name yourihealthbot
 Get-AzHealthBot -InputObject $getAzHealthBot
@@ -91,7 +94,7 @@ Location Name                 SystemDataCreatedAt SystemDataCreatedBy   SystemDa
 eastus   yourihealthbot       2020/12/29 5:54:14  test@microsoft.com User                    2020/12/29 5:54:19       ********-****-****-****-********** Application                  Microsoft.HealthBot/healthBots
 ```
 
-Dapatkan HealthBot dari InputObject
+Dapatkan HealthBot dengan InputObject
 
 ## PARAMETERS
 
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.HealthBot.Models.IHealthBotIdentity
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -193,7 +196,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <IHealthBotIdentity>: Parameter Identitas
   - `[BotName <String>]`: Nama sumber daya Bot.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup Sumber daya Bot dalam langganan pengguna.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya Bot dalam langganan pengguna.
   - `[SubscriptionId <String>]`: ID Langganan Azure.
 
 ## RELATED LINKS

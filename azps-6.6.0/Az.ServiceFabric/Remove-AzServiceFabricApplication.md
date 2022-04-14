@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricApplication.md
 ms.openlocfilehash: 3a15b71a41fa64f2c80f90b4b80e2afb10772cec
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139968603"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141904971"
 ---
 # Remove-AzServiceFabricApplication
 
 ## SYNOPSIS
-Menghapus aplikasi dari kluster. Ini akan menghapus semua layanan di bawah aplikasi tersebut. Hanya mendukung aplikasi yang disebarkan ARM.
+Hapus aplikasi dari kluster. Tindakan ini akan menghapus semua layanan di bawah aplikasi. Hanya mendukung aplikasi arm yang digunakan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/remove-azservicefabricapplication) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/remove-azservicefabricapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Remove-AzServiceFabricApplication -InputObject <PSApplication> [-PassThru] [-For
 ```
 
 ## DESCRIPTION
-Cmdlet ini menghapus formulir aplikasi kluster. Ini akan menghapus semua layanan, jika ada, di bawah sumber daya aplikasi.
+Cmdlet ini menghapus aplikasi dari kluster. Tindakan ini akan menghapus semua layanan, jika ada, di bawah sumber daya aplikasi.
 
 ## EXAMPLES
 
@@ -53,7 +53,7 @@ PS C:\> $appName = "testApp"
 PS C:\> Remove-AzServiceFabricApplication -ResourceGroupName $resourceGroupName -ClusterName $clusterName -Name $appName
 ```
 
-Contoh ini menghapus aplikasi "testApp" di bawah grup sumber daya "testRG" dan cluster "testCluster".
+Contoh ini menghapus aplikasi "testApp" di bawah grup sumber daya "testRG" dan kluster "testCluster".
 
 ## PARAMETERS
 
@@ -87,8 +87,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Menghapus tanpa perintah.
+### -Paksa
+Hapus tanpa perintah.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{fill passThru Description}}
+{{Fill PassThru Description}}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -209,13 +209,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### Microsoft.Azure.Commands.ServiceFabric.Models.PSApplication
+### Microsoft.Azure.Commands.ServiceFabric.Models.PSAplikasi
 
 ## OUTPUTS
 

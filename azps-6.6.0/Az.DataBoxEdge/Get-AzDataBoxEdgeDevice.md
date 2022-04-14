@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeDevice.md
 ms.openlocfilehash: e1bb1a4d2b736da093d3d57e7efbb1277d464f6c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140140568"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141913431"
 ---
 # Get-AzDataBoxEdgeDevice
 
 ## SYNOPSIS
-Dapatkan informasi tentang perangkat Data Box Edge yang tersedia.
+Mendapatkan informasi tentang perangkat Box Edge Data yang tersedia.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.databoxedge/get-azdataboxedgedevice) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/get-azdataboxedgedevice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -88,7 +88,7 @@ Get-AzDataBoxEdgeDevice [-ResourceGroupName] <String> [-Name] <String> [-Alert]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataBoxEdgeDevice** mendapatkan informasi tentang Perangkat Edge Kotak Data yang tersedia. Anda bisa menentukan Nama perangkat bersama dengan Nama Grup Sumber Daya untuk mendapatkan informasi pada perangkat tertentu. 
+Cmdlet **Get-AzDataBoxEdgeDevice** mendapatkan informasi tentang Perangkat Box Edge Data yang tersedia. Anda bisa menentukan Nama perangkat bersama dengan Nama Grup Sumber Daya untuk mendapatkan informasi di perangkat tertentu. 
 
 ## EXAMPLES
 
@@ -120,8 +120,8 @@ deviceName      resourceGroupName    Edge    eastus
 
 ## PARAMETERS
 
-### -Alert
-Mengambil pemberitahuan pada tepi kotak data/perangkat gateway
+### -Peringatan
+Mengambil pemberitahuan di perangkat edge/gateway kotak data
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExtendedInfo
-Mendapatkan informasi tambahan untuk perangkat Gateway Kotak Data Edge/Kotak Data yang ditentukan
+Mendapatkan informasi tambahan untuk perangkat Box Edge/Gateway Kotak Data yang ditentukan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkSetting
-Mendapatkan pengaturan jaringan dari perangkat Gateway Tepi Kotak Data/Kotak Data yang ditentukan
+Mendapatkan pengaturan jaringan perangkat Box Edge/Gateway Box Data yang ditentukan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -238,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpdateSummary
-Mendapatkan informasi tentang ketersediaan pembaruan berdasarkan pemindaian terakhir perangkat. Juga mendapatkan informasi tentang pekerjaan unduhan atau penginstalan apa pun yang sedang berlangsung pada perangkat.
+Mendapatkan informasi tentang ketersediaan pembaruan berdasarkan pemindaian terakhir perangkat. Ini juga mendapatkan informasi tentang pekerjaan pengunduhan atau penginstalan yang sedang berlangsung di perangkat.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -253,11 +253,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azcu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzCustomIpPrefix.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzCustomIpPrefix.md
-ms.openlocfilehash: 8de25f3708c71d41a27afbcf46241c1b7b35cec3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 37edcdb3ce0a91ddfb9036feb31d464fc860c49c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140198119"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141934899"
 ---
 # Get-AzCustomIpPrefix
 
 ## SYNOPSIS
 Mendapatkan sumber daya CustomIpPrefix
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azcustomipprefix) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Get-AzCustomIpPrefix -ResourceId <String> [-DefaultProfile <IAzureContextContain
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCustomIpPrefix** mendapatkan satu atau beberapa perbaikan CustomIpPrefixes yang ditentukan dari kumpulan parameter input
+Cmdlet **Get-AzCustomIpPrefix** mendapatkan satu atau beberapa CustomIpPrefix mengingat kumpulan parameter input
 
 ## EXAMPLES
 
@@ -58,7 +61,7 @@ CustomIpPrefixParent :
 ChildCustomIpPrefixes: []
 ```
 
-Perintah ini memiliki sumber daya CustomIpPrefix yang bernama myCustomIpPrefix dalam grup sumber daya myRg
+Perintah ini mendapatkan sumber daya CustomIpPrefix bernama myCustomIpPrefix dalam myRg grup sumber daya
 
 ## PARAMETERS
 
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -139,6 +142,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzCustomIpPrefix](./New-AzCustomIpPrefix.md)
 
-[Remove-azCustomIpPrefix](./Remove-AzCustomIpPrefix.md)
+[Remove-AzCustomIpPrefix](./Remove-AzCustomIpPrefix.md)
 
-[Update-azCustomIpPrefix](./Update-AzCustomIpPrefix.md)
+[Update-AzCustomIpPrefix](./Update-AzCustomIpPrefix.md)

@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/MachineLearningCompute/Commands.MachineLearningCompute/help/Get-AzureRmMlOpClusterKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/MachineLearningCompute/Commands.MachineLearningCompute/help/Get-AzureRmMlOpClusterKey.md
 ms.openlocfilehash: 6b5797d67b709e9c44756dad018a47eb416ed174
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140858873"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141884007"
 ---
 # Get-AzureRmMlOpClusterKey
 
 ## SYNOPSIS
-Dapatkan kunci akses yang terkait dengan kluster operasional.
+Mendapatkan kunci akses yang terkait dengan kluster operasionalisasi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -39,7 +39,7 @@ Get-AzureRmMlOpClusterKey -ResourceId <String> [-DefaultProfile <IAzureContextCo
 ```
 
 ## DESCRIPTION
-Kunci untuk akun penyimpanan, registri wadah, dan layanan lain yang terkait dengan kluster operasional tidak dikembalikan saat mendapatkan properti kluster. Panggilan khusus untuk mengambil kunci harus dilakukan karena kunci tersebut merupakan informasi sensitif.
+Kunci untuk akun penyimpanan, registri kontainer, dan layanan lain yang terkait dengan kluster operasional tidak dikembalikan saat mendapatkan properti kluster. Panggilan tertentu untuk mengambil kunci harus dilakukan karena mereka adalah informasi sensitif.
 
 ## EXAMPLES
 
@@ -48,12 +48,12 @@ Kunci untuk akun penyimpanan, registri wadah, dan layanan lain yang terkait deng
 PS C:\> Get-AzureRmMlOpClusterKey -ResourceGroupName my-group -Name my-cluster
 ```
 
-Mengembalikan kunci rahasia untuk layanan yang terkait dengan kluster operasional.
+Mengembalikan kunci rahasia untuk layanan yang terkait dengan kluster operasionalisasi.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek kluster operasional.
+Objek kluster operasionalisasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.MachineLearningCompute.Models.PSOperationalizationCluster
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama kluster operasional.
+Nama kluster operasionalisasi.
 
 ```yaml
 Type: System.String
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya untuk kluster operasional.
+Nama grup sumber daya untuk kluster operasionalisasi.
 
 ```yaml
 Type: System.String
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya Azure untuk kluster operasi.
+Id sumber daya Azure untuk kluster operasionalisasi.
 
 ```yaml
 Type: System.String
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzDiskUpdateKeyEncryptionKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzDiskUpdateKeyEncryptionKey.md
 ms.openlocfilehash: e59cc19ee1667f7a526003b37029024a220b7946
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140311909"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141870476"
 ---
 # Set-AzDiskUpdateKeyEncryptionKey
 
 ## SYNOPSIS
-Mengatur properti kunci enkripsi pada objek pembaruan disk.
+Mengatur properti kunci enkripsi kunci pada objek pembaruan disk.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azdiskupdatekeyencryptionkey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azdiskupdatekeyencryptionkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Set-AzDiskUpdateKeyEncryptionKey [-DiskUpdate] <PSDiskUpdate> [[-KeyUrl] <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzDiskUpdateKeyEncryptionKey** mengatur properti kunci enkripsi kunci kunci pada objek pembaruan disk.
+**Cmdlet Set-AzDiskUpdateKeyEncryptionKey** mengatur properti kunci enkripsi kunci pada objek pembaruan disk.
 
 ## EXAMPLES
 
@@ -44,14 +44,14 @@ PS C:\> $diskupdateconfig = Set-AzDiskUpdateKeyEncryptionKey -DiskUpdate $diskup
 PS C:\> Update-AzDisk -ResourceGroupName 'ResourceGroup01' -DiskName 'Disk01' -DiskUpdate $diskupdateconfig;
 ```
 
-Perintah pertama membuat objek pembaruan disk kosong lokal berukuran 10GB di Premium_LRS akun penyimpanan.  Sistem juga mengatur Windows OS dan mengaktifkan pengaturan enkripsi.
-Perintah kedua dan ketiga mengatur kunci enkripsi disk dan pengaturan kunci enkripsi kunci untuk objek pembaruan disk.
-Perintah terakhir mengambil objek pembaruan disk dan memperbarui disk yang sudah ada dengan nama 'Disk01' di grup sumber daya 'ResourceGroup01'.
+Perintah pertama membuat objek pembaruan disk kosong lokal dengan ukuran 10GB dalam tipe akun penyimpanan Premium_LRS.  Ini juga mengatur tipe OS Windows dan mengaktifkan pengaturan enkripsi.
+Perintah kedua dan ketiga mengatur pengaturan kunci enkripsi disk dan kunci enkripsi kunci untuk objek pembaruan disk.
+Perintah terakhir mengambil objek pembaruan disk dan memperbarui disk yang sudah ada dengan nama 'Disk01' dalam grup sumber daya 'ResourceGroup01'.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyUrl
-Menentukan url kunci.
+Menentukan Url kunci.
 
 ```yaml
 Type: System.String
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceVaultId
-Menentukan ID penyimpanan sumber.
+Menentukan ID kubah sumber.
 
 ```yaml
 Type: System.String
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

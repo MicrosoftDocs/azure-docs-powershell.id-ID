@@ -4,16 +4,16 @@ ms.assetid: 02F429EA-FE9A-427F-86B5-C9C4275FD3EA
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: d4b326bc556c32559ce1a2545c5b50f8a6db7443
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419495"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142095363"
 ---
 # Copy-AzureRemoteAppUserDisk
 
 ## SYNOPSIS
-Menyalin disk pengguna pengguna dari satu kumpulan Azure RemoteApp ke kumpulan lain.
+Menyalin disk pengguna pengguna dari satu kumpulan Azure RemoteApp ke yang lain.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,7 +25,7 @@ Copy-AzureRemoteAppUserDisk [-SourceCollectionName] <String> [-DestinationCollec
 ```
 
 ## DESCRIPTION
-Cmdlet **Copy-AzureRemoteAppUserDisk** menyalin disk pengguna pengguna dari satu kumpulan Azure RemoteApp ke yang lain.
+Cmdlet **Salin-AzureRemoteAppUserDisk** menyalin disk pengguna pengguna dari satu koleksi Azure RemoteApp ke yang lain.
 
 ## EXAMPLES
 
@@ -34,13 +34,13 @@ Cmdlet **Copy-AzureRemoteAppUserDisk** menyalin disk pengguna pengguna dari satu
 PS C:\> Copy-AzureRemoteAppUserDisk -DestinationCollectionName "Contoso02" -SourceCollectionName "Contoso01" -UserUpn "PattiFuller@contoso.com" -OverwriteExistingUserDisk
 ```
 
-Perintah ini menyalin disk pengguna Azure Active Directory yang memiliki UPN dari kumpulan PattiFuller@contoso.com Contoso01 ke kumpulan Contoso02.
-Jika disk pengguna untuk sudah PattiFuller@contoso.com ada di Contoso02, perintah ini akan menimpanya.
+Perintah ini menyalin disk pengguna pengguna pengguna Azure Active Directory yang memiliki UPN PattiFuller@contoso.com dari kumpulan Contoso01 ke kumpulan Contoso02.
+Jika disk pengguna untuk PattiFuller@contoso.com sudah ada di Contoso02, perintah ini menimpanya.
 
 ## PARAMETERS
 
 ### -DestinationCollectionName
-Menentukan nama koleksi Azure RemoteApp tujuan.
+Menentukan nama kumpulan Azure RemoteApp tujuan.
 
 ```yaml
 Type: String
@@ -55,7 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -OverwriteExistingUserDisk
-Mengindikasikan bahwa cmdlet ini menimpa disk pengguna yang sudah ada.
+Menunjukkan bahwa cmdlet ini menimpa disk pengguna yang sudah ada.
 
 ```yaml
 Type: SwitchParameter
@@ -70,8 +70,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserUpn
-Menentukan nama prinsipal pengguna (UPN, User Principal Name) pengguna yang disalin cmdlet disk.
+Menentukan nama pokok pengguna (UPN) pengguna yang cmdlet ini menyalin disk.
 
 ```yaml
 Type: String
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -126,6 +126,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Remove-AzureRemoteAppUserDisk](./Remove-AzureRemoteAppUserDisk.md)
+[Hapus-AzureRemoteAppUserDisk](./Remove-AzureRemoteAppUserDisk.md)
 
 

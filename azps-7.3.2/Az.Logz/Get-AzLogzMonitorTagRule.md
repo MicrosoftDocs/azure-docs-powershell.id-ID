@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/get-azlogzm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitorTagRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitorTagRule.md
-ms.openlocfilehash: e84dc746092b9555ef09c02c5522e442d1ff30eb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: b23ee0fa7ea1b6b7d6d6eeae9ed88999d2c7bfe6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140402130"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141936933"
 ---
 # Get-AzLogzMonitorTagRule
 
 ## SYNOPSIS
-Mendapatkan kumpulan aturan tag untuk sumber daya monitor tertentu.
+Dapatkan kumpulan aturan tag untuk sumber daya monitor tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.logz/get-azlogzmonitortagrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,11 +34,11 @@ Get-AzLogzMonitorTagRule -InputObject <ILogzIdentity> [-DefaultProfile <PSObject
 ```
 
 ## DESCRIPTION
-Mendapatkan kumpulan aturan tag untuk sumber daya monitor tertentu.
+Dapatkan kumpulan aturan tag untuk sumber daya monitor tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan kumpulan aturan tag default untuk sumber daya monitor tertentu
+### Contoh 1: Dapatkan kumpulan aturan tag default untuk sumber daya monitor tertentu
 ```powershell
 PS C:\> Get-AzLogzMonitorTagRule -ResourceGroupName logz-rg-test -MonitorName pwsh-logz04
 
@@ -44,9 +47,9 @@ Name    ProvisioningState ResourceGroupName
 default Succeeded         logz-rg-test
 ```
 
-Perintah ini menetapkan aturan tag default untuk sumber daya monitor tertentu.
+Perintah ini mendapatkan kumpulan aturan tag default untuk sumber daya monitor tertentu.
 
-### Contoh 2: Get the default tag rule set for a given monitor resource by pipeline
+### Contoh 2: Dapatkan kumpulan aturan tag default untuk sumber daya monitor tertentu menurut pipeline
 ```powershell
 PS C:\> Get-AzLogzMonitorTagRule -ResourceGroupName logz-rg-test -MonitorName pwsh-logz04 | Get-AzLogzMonitorTagRule
 
@@ -55,7 +58,7 @@ Name    ProvisioningState ResourceGroupName
 default Succeeded         logz-rg-test
 ```
 
-Perintah ini menyetel aturan tag default untuk sumber daya monitor tertentu menurut saluran.
+Perintah ini mendapatkan kumpulan aturan tag default untuk sumber daya monitor tertentu menurut pipeline.
 
 ## PARAMETERS
 
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.ILogzIdentity
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonitorName
-Memantau nama sumber daya
+Pantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -159,7 +162,7 @@ INPUTOBJECT <ILogzIdentity>: Parameter Identitas
   - `[ConfigurationName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[RuleSetName <String>]`: 
   - `[SubAccountName <String>]`: Nama sumber daya Sub Akun
   - `[SubscriptionId <String>]`: ID langganan target.

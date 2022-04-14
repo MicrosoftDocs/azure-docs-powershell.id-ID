@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsWindowsEventDataSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsWindowsEventDataSource.md
 ms.openlocfilehash: 612d5106f78a56a6c5f7893f8b1884152a3cc682
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140100989"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141908499"
 ---
 # New-AzOperationalInsightsWindowsEventDataSource
 
 ## SYNOPSIS
-Mengumpulkan log kejadian dari komputer yang menjalankan Windows sistem operasi.
+Mengumpulkan log kejadian dari komputer yang menjalankan sistem operasi Windows.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightswindowseventdatasource) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightswindowseventdatasource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +38,11 @@ New-AzOperationalInsightsWindowsEventDataSource [-Workspace] <PSWorkspace> [-Nam
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzOperationalInsightsWindowsEventDataSource** menambahkan sumber data yang mengumpulkan log kejadian Windows dari komputer yang tersambung yang menjalankan sistem operasi Windows di Azure Operational Insights.
+**Cmdlet New-AzOperationalInsightsWindowsEventDataSource** menambahkan sumber data yang mengumpulkan Windows log kejadian dari komputer tersambung yang menjalankan sistem operasi Windows dalam Insights Operasional Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat sistem Windows sumber data kejadian
+### Contoh 1: Membuat sumber data kejadian Windows sistem
 ```
 $EventLogNames       = @()
 $EventLogNames      += 'Directory Service'
@@ -73,7 +73,7 @@ Get-AzOperationalInsightsDataSource `
 ## PARAMETERS
 
 ### -CollectErrors
-Menunjukkan bahwa Operasi Insights mengumpulkan pesan kesalahan.
+Menunjukkan bahwa Insights Operasional mengumpulkan pesan kesalahan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -CollectInformation
-Menunjukkan bahwa Operasi Insights mengumpulkan pesan informasi.
+Menunjukkan bahwa Insights Operasional mengumpulkan pesan informasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -CollectWarnings
-Menunjukkan bahwa Operasi Insights mengumpulkan pesan peringatan.
+Menunjukkan bahwa Insights Operasional mengumpulkan pesan peringatan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -147,8 +147,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama untuk sumber data. Nama tidak diekspos di Portal Azure dan string apa pun bisa digunakan selama itu unik.
+Menentukan nama untuk sumber data. Nama tidak diekspos dalam Portal Azure dan string apa pun dapat digunakan selama itu unik.
 
 ```yaml
 Type: System.String
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ruang Kerja
-Menentukan ruang kerja tempat cmdlet beroperasi.
+Menentukan ruang kerja tempat cmdlet ini beroperasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace
@@ -207,7 +207,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Menentukan nama ruang kerja tempat cmdlet ini beroperasi.
 
 ```yaml
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

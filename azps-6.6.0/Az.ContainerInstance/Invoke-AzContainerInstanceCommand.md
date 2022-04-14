@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Invoke-AzContainerInstanceCommand.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Invoke-AzContainerInstanceCommand.md
 ms.openlocfilehash: ac3692908e077e864f6fab80e07f07e0f49eb961
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140334851"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141869900"
 ---
 # Invoke-AzContainerInstanceCommand
 
 ## SYNOPSIS
-Menjalankan perintah untuk contoh wadah tertentu dalam grup sumber daya dan grup wadah yang ditentukan.
+Menjalankan perintah untuk contoh kontainer tertentu dalam grup sumber daya dan grup kontainer tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerinstance/invoke-azcontainerinstancecommand) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.containerinstance/invoke-azcontainerinstancecommand) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,11 +29,11 @@ Invoke-AzContainerInstanceCommand -ContainerGroupName <String> -ContainerName <S
 ```
 
 ## DESCRIPTION
-Menjalankan perintah untuk contoh wadah tertentu dalam grup sumber daya dan grup wadah yang ditentukan.
+Menjalankan perintah untuk contoh kontainer tertentu dalam grup sumber daya dan grup kontainer tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Menjalankan perintah dalam contoh wadah tertentu
+### Contoh 1: Menjalankan perintah dalam contoh kontainer tertentu
 ```powershell
 PS C:\> Invoke-AzContainerInstanceCommand -ContainerGroupName test-cg -ContainerName test-container -ResourceGroupName　test-rg -Command "echo hello" -TerminalSizeCol 12 -TerminalSizeRow 12
 
@@ -42,7 +42,7 @@ Password                                           WebSocketUri
 ****************** wss://bridge-linux-xx.eastus.management.azurecontainer.io/exec/caas-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/bridge-xxxxxxxxxxxxxxx?rows=12&cols=12api-version=2018-02-01-preview
 ```
 
-Menjalankan perintah "echo hello" dalam contoh wadah `test-container`.
+Menjalankan perintah "echo hello" dalam sebuah instance `test-container`kontainer .
 
 ## PARAMETERS
 
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerName
-Nama contoh wadah.
+Nama instans kontainer.
 
 ```yaml
 Type: System.String
@@ -122,8 +122,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Remove-AzureRmSqlInstanceDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Remove-AzureRmSqlInstanceDatabase.md
 ms.openlocfilehash: f391dbb5d3e70e486a91c1dbb9e6517936bd2b3e
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140863352"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142096150"
 ---
 # Remove-AzureRmSqlInstanceDatabase
 
 ## SYNOPSIS
-Menghapus database Azure SQL Instans Terkelola.
+Menghapus database Azure SQL Managed Instance.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -44,12 +44,12 @@ Cmdlet **Remove-AzureRmSqlInstanceDatabase** menghapus database Azure SQL Manage
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus database dari suatu contoh
+### Contoh 1: Menghapus database dari instans
 ```
 PS C:\>Remove-AzureRmSqlInstanceDatabase -Name "Database01" -InstanceName "managedInstance1" -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini menghapus database bernama Database01 dari contoh managedInstance1.
+Perintah ini menghapus database bernama Database01 dari instans managedInstance1.
 
 ## PARAMETERS
 
@@ -68,7 +68,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Lewati pesan konfirmasi untuk melakukan tindakan
 
 ```yaml
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Instance Database yang akan dihapus
+Objek Database Instans untuk dihapus
 
 ```yaml
 Type: AzureSqlManagedDatabaseModel
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Database Contoh SQL Azure yang akan dihapus.
+Nama Database Instans Azure SQL untuk dihapus.
 
 ```yaml
 Type: String
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya dari objek Database Contoh yang akan dihapus
+Id sumber daya objek Database Instans untuk dihapus
 
 ```yaml
 Type: String
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

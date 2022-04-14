@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Get-AzureBatchPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Get-AzureBatchPool.md
 ms.openlocfilehash: 8f5a4aee0087f34769f099b6e9b44d249b53f7d0
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422186"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141887220"
 ---
 # Get-AzureBatchPool
 
 ## SYNOPSIS
-Dapatkan kolam renang Batch di bawah akun Batch yang ditentukan.
+Dapatkan kumpulan Batch di bawah akun Batch yang ditentukan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -35,12 +35,12 @@ Get-AzureBatchPool [[-Id] <String>] [-Select <String>] [-Expand <String>] -Batch
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureBatchPool** mendapatkan kolam renang Azure Batch di bawah akun Batch yang ditentukan dengan parameter *BatchContext.*
-Anda dapat menggunakan parameter *Id* untuk mendapatkan kolam renang tunggal, atau menggunakan parameter *Filter* untuk mendapatkan kolam renang yang cocok dengan filter Open Data Protocol (OData).
+Cmdlet **Get-AzureBatchPool** mendapatkan kumpulan Azure Batch di bawah akun Batch yang ditentukan dengan parameter *BatchContext*.
+Anda bisa menggunakan parameter *Id* untuk mendapatkan satu kumpulan, atau Anda bisa menggunakan parameter *Filter* untuk mendapatkan kumpulan yang cocok dengan filter Open Data Protocol (OData).
 
 ## EXAMPLES
 
-### Contoh 1: Get a pool by ID
+### Contoh 1: Dapatkan pool by ID
 ```
 PS C:\>Get-AzureBatchPool -Id "MyPool" -BatchContext $Context
 AllocationState                      : Resizing
@@ -73,9 +73,9 @@ Url                                  : https://cmdletexample.westus.batch.azure.
 VirtualMachineSize                   : small
 ```
 
-Perintah ini akan mendapatkan pool dengan ID MyPool.
+Perintah ini mendapatkan kolam renang dengan ID MyPool.
 
-### Contoh 2: Dapatkan semua kolam renang menggunakan filter OData
+### Contoh 2: Dapatkan semua kumpulan menggunakan filter OData
 ```
 PS C:\>Get-AzureBatchPool -Filter "startswith(id,'My')" -BatchContext $Context
 AllocationState                      : Resizing
@@ -108,13 +108,13 @@ Url                                  : https://cmdletexample.westus.batch.azure.
 VirtualMachineSize                   : small
 ```
 
-Perintah ini akan mendapatkan kolam renang dengan IDENTITAS yang dimulai dengan Saya menggunakan *parameter Filter.*
+Perintah ini mendapatkan kumpulan yang ID-nya dimulai dengan My dengan menggunakan parameter *Filter* .
 
 ## PARAMETERS
 
 ### -BatchContext
-Menentukan contoh **BatchAccountContext** yang digunakan cmdlet untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Perluas
-Menentukan klausul perluas Open Data Protocol (OData).
+Menentukan klausul perluasan Open Data Protocol (OData).
 Tentukan nilai untuk parameter ini untuk mendapatkan entitas terkait dari entitas utama yang Anda dapatkan.
 
 ```yaml
@@ -160,8 +160,8 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Menentukan klausul filter OData untuk digunakan saat membuat kueri untuk kolam renang.
-Jika Anda tidak menentukan filter, semua kolam renang di bawah akun Batch yang ditentukan dengan parameter *BatchContext* akan dikembalikan.
+Menentukan klausul filter OData untuk digunakan saat membuat kueri untuk kumpulan.
+Jika Anda tidak menentukan filter, semua kumpulan di bawah akun Batch yang ditentukan dengan parameter *BatchContext* dikembalikan.
 
 ```yaml
 Type: System.String
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID pool untuk mendapatkan.
+Menentukan ID kumpulan yang akan didapatkan.
 Anda tidak bisa menentukan karakter wildcard.
 
 ```yaml
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxCount
-Menentukan jumlah maksimal kolam renang untuk dikembalikan.
+Menentukan jumlah maksimum kumpulan yang akan dikembalikan.
 Jika Anda menentukan nilai nol (0) atau kurang, cmdlet tidak menggunakan batas atas.
 Nilai defaultnya adalah 1000.
 
@@ -209,8 +209,8 @@ Accept wildcard characters: False
 ```
 
 ### -Pilih
-Menentukan klausul pilih OData.
-Tentukan nilai untuk parameter ini agar mendapatkan properti tertentu dan bukan semua properti objek.
+Menentukan klausul pemilihan OData.
+Tentukan nilai untuk parameter ini untuk mendapatkan properti tertentu daripada semua properti objek.
 
 ```yaml
 Type: System.String
@@ -225,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -244,10 +244,10 @@ Parameter: BatchContext (ByValue)
 
 [Get-AzureRmBatchAccountKeys](./Get-AzureRmBatchAccountKeys.md)
 
-[New-AzureBatchPool](./New-AzureBatchPool.md)
+[AzureBatchPool Baru](./New-AzureBatchPool.md)
 
-[Remove-AzureBatchPool](./Remove-AzureBatchPool.md)
+[Hapus-AzureBatchPool](./Remove-AzureBatchPool.md)
 
-[Cmdlet Kumpulan Azure](./AzureRM.Batch.md)
+[Cmdlet Azure Batch](./AzureRM.Batch.md)
 
 

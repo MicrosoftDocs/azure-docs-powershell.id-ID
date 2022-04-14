@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/New-AzLabServicesLab.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/New-AzLabServicesLab.md
-ms.openlocfilehash: 0b3465e9b7a6cc48e0908f63c6c68d4f8b880e68
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 41e699a96a4cfd57624a47fd23325f1e0dcc5c1c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140571250"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142068439"
 ---
 # New-AzLabServicesLab
 
 ## SYNOPSIS
 Operasi untuk membuat sumber daya lab.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.labservices/new-azlabserviceslab) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Operasi untuk membuat sumber daya lab.
 
 ## EXAMPLES
 
-### Contoh 1: Buat lab baru.
+### Contoh 1: Membuat lab baru.
 ```powershell
 PS C:\>  New-AzLabServicesLab `
         -Name "NewLab" `
@@ -85,7 +88,7 @@ Membuat Lab baru.
 ## PARAMETERS
 
 ### -AdditionalCapabilityInstallGpuDriver
-Benderai untuk driver GPU khusus yang telah diinstal sebelumnya.
+Tandai ke driver GPU khusus pra-instal.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Support.EnableState
@@ -100,8 +103,8 @@ Accept wildcard characters: False
 ```
 
 ### -AdminUserPassword
-Kata sandi untuk pengguna tersebut.
-Ini diperlukan untuk TemplateVM createOption.
+Kata sandi untuk pengguna.
+Ini diperlukan untuk CreateOption TemplateVM.
 
 ```yaml
 Type: System.Security.SecureString
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -AdminUserUsername
-Nama pengguna untuk digunakan saat masuk ke VM lab.
+Nama pengguna yang digunakan saat masuk ke VM lab.
 
 ```yaml
 Type: System.String
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoShutdownProfileDisconnectDelay
-Jumlah waktu VM akan tetap berjalan setelah pengguna memutuskan sambungan jika perilaku ini diaktifkan.
+Jumlah waktu VM akan tetap berjalan setelah pengguna terputus jika perilaku ini diaktifkan.
 
 ```yaml
 Type: System.TimeSpan
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoShutdownProfileIdleDelay
-Jumlah waktu VM akan diam sebelum penutupan jika perilaku ini diaktifkan.
+Jumlah waktu VM akan diam sebelum dimatikan jika perilaku ini diaktifkan.
 
 ```yaml
 Type: System.TimeSpan
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoShutdownProfileNoConnectDelay
-Jumlah waktu VM akan tetap berjalan sebelum penutupannya jika tidak ada koneksi yang dilakukan dan perilaku ini diaktifkan.
+Jumlah waktu VM akan tetap berjalan sebelum mati jika tidak ada koneksi yang dibuat dan perilaku ini diaktifkan.
 
 ```yaml
 Type: System.TimeSpan
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoShutdownProfileShutdownOnDisconnect
-Apakah penutupan saat pemutusan diaktifkan
+Apakah mematikan sambungan saat diputus diaktifkan
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Support.EnableState
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoShutdownProfileShutdownOnIdle
-Apakah VM akan mengalami penutupan jika vm telah diam selama periode waktu tertentu.
+Apakah VM akan dimatikan ketika diam selama periode waktu tertentu.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Support.ShutdownOnIdleMode
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoShutdownProfileShutdownWhenNotConnected
-Apakah VM akan mengalami penutupan saat belum tersambung setelah beberapa waktu.
+Apakah VM akan dimatikan ketika belum tersambung setelah periode waktu tertentu.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Support.EnableState
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionProfileClientSshAccess
-Tingkat akses yang diaktifkan untuk Akses Klien melalui LYNC.
+Tingkat akses yang diaktifkan untuk Akses Klien melalui SSH.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Support.ConnectionType
@@ -281,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionProfileWebSshAccess
-Tingkat akses yang diaktifkan untuk Akses Web melalui BLUETOOTH.
+Tingkat akses yang diaktifkan untuk Akses Web melalui SSH.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Support.ConnectionType
@@ -311,7 +314,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Deskripsi lab.
+Penjabaran dari lab.
 
 ```yaml
 Type: System.String
@@ -370,8 +373,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ImageReferenceSku
-SKU gambar
+### -ImageReferencesku
+Gambar SKU
 
 ```yaml
 Type: System.String
@@ -386,7 +389,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImageReferenceVersion
-Versi gambar yang ditentukan pada saat pembuatan.
+Versi gambar yang ditentukan pada pembuatan.
 
 ```yaml
 Type: System.String
@@ -418,7 +421,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi geo-location di mana sumber daya berada
+Lokasi geografis tempat sumber daya berada
 
 ```yaml
 Type: System.String
@@ -433,7 +436,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama lab yang secara unik mengidentifikasinya di dalam berisi akun lab.
+Nama lab yang mengidentifikasinya secara unik di dalamnya berisi akun lab.
 Digunakan dalam URI sumber daya.
 
 ```yaml
@@ -449,7 +452,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkProfileLoadBalancerId
-Id sumber daya penyeimbang muat eksternal
+Id sumber daya penyeimbang beban eksternal
 
 ```yaml
 Type: System.String
@@ -494,8 +497,8 @@ Accept wildcard characters: False
 ```
 
 ### -NonAdminUserPassword
-Kata sandi untuk pengguna tersebut.
-Ini diperlukan untuk TemplateVM createOption.
+Kata sandi untuk pengguna.
+Ini diperlukan untuk CreateOption TemplateVM.
 
 ```yaml
 Type: System.Security.SecureString
@@ -510,7 +513,7 @@ Accept wildcard characters: False
 ```
 
 ### -NonAdminUserUsername
-Nama pengguna untuk digunakan saat masuk ke VM lab.
+Nama pengguna yang digunakan saat masuk ke VM lab.
 
 ```yaml
 Type: System.String
@@ -525,7 +528,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -541,7 +544,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -556,8 +559,8 @@ Accept wildcard characters: False
 ```
 
 ### -RosterProfileActiveDirectoryGroupId
-Hasil AAD id grup tempat daftar lab terisi.
-Setelah kumpulan ini mengaktifkan AAD mode sinkronisasi.
+ID grup AAD tempat daftar lab ini diisi.
+Mengatur ini mengaktifkan mode sinkronisasi AAD.
 
 ```yaml
 Type: System.String
@@ -572,7 +575,7 @@ Accept wildcard characters: False
 ```
 
 ### -RosterProfileLmsInstance
-URI dasar yang mengidentifikasi contoh lms.
+Basis URI yang mengidentifikasi instans IM.
 
 ```yaml
 Type: System.String
@@ -587,7 +590,7 @@ Accept wildcard characters: False
 ```
 
 ### -RosterProfileLtiClientId
-Id unik alat layanan lab azure dalam lms.
+Id unik dari alat layanan lab azure di lms.
 
 ```yaml
 Type: System.String
@@ -602,7 +605,7 @@ Accept wildcard characters: False
 ```
 
 ### -RosterProfileLtiContextId
-Pengidentifikasi konteks yang unik untuk lab dalam lms.
+Pengidentifikasi konteks yang unik untuk lab di lms.
 
 ```yaml
 Type: System.String
@@ -617,7 +620,7 @@ Accept wildcard characters: False
 ```
 
 ### -RosterProfileLtiRosterEndpoint
-Uri nama dan titik akhir layanan peran pada lms untuk kelas yang dilampirkan ke lab ini.
+Uri dari nama dan peran titik akhir layanan pada lms untuk kelas yang melekat pada lab ini.
 
 ```yaml
 Type: System.String
@@ -631,8 +634,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SecurityProfileOpenAccess
-Apakah pengguna atau hanya pengguna tertentu yang dapat mendaftar ke sebuah lab.
+### -SecurityProfileOpenAccesss
+Apakah setiap pengguna atau hanya pengguna tertentu yang dapat mendaftar ke lab.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Support.EnableState
@@ -647,8 +650,8 @@ Accept wildcard characters: False
 ```
 
 ### -SkuCapacity
-Jika SKU mendukung skala keluar/masuk maka bilangan bulat kapasitas akan disertakan.
-Jika skala/in tidak dimungkinkan untuk sumber daya, hal ini mungkin dihilangkan.
+Jika SKU mendukung penskalaan keluar/masuk maka bilangan bulat kapasitas harus disertakan.
+Jika skala keluar/masuk tidak dimungkinkan untuk sumber daya ini mungkin dihilangkan.
 
 ```yaml
 Type: System.Int32
@@ -663,7 +666,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuFamily
-Jika layanan memiliki beberapa generasi perangkat keras, untuk SKU yang sama, fitur tersebut dapat diambil di sini.
+Jika layanan memiliki generasi perangkat keras yang berbeda, untuk SKU yang sama, maka yang dapat ditangkap di sini.
 
 ```yaml
 Type: System.String
@@ -679,8 +682,8 @@ Accept wildcard characters: False
 
 ### -SkuName
 Nama SKU.
-Misalnya - P3.
-Kode ini biasanya adalah kode huruf+angka
+Bekas - P3.
+Biasanya berupa kode huruf+angka
 
 ```yaml
 Type: System.String
@@ -694,9 +697,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SkuSize
+### -Skusize
 Ukuran SKU.
-Jika bidang nama merupakan kombinasi tingkatan dan beberapa nilai lain, ini akan menjadi kode mandiri.
+Ketika bidang nama adalah kombinasi tingkat dan beberapa nilai lainnya, ini akan menjadi kode mandiri.
 
 ```yaml
 Type: System.String
@@ -711,7 +714,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuTier
-Bidang ini harus diterapkan oleh Penyedia Sumber Daya jika layanan memiliki lebih dari satu tingkatan, tetapi tidak diperlukan pada PUT.
+Bidang ini diperlukan untuk diterapkan oleh Penyedia Sumber Daya jika layanan memiliki lebih dari satu tingkat, tetapi tidak diperlukan pada PUT.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Support.SkuTier
@@ -756,7 +759,7 @@ Accept wildcard characters: False
 ```
 
 ### -Judul
-Judul lab.
+Judul laboratorium.
 
 ```yaml
 Type: System.String
@@ -771,7 +774,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualMachineProfileCreateOption
-Menunjukkan mesin virtual lab dari mana mesin virtual dibuat.
+Menunjukkan dari mesin virtual lab mana yang dibuat.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Support.CreateOption
@@ -786,7 +789,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualMachineProfileUsageQuota
-Kuota awal disotot ke setiap pengguna lab.
+Kuota awal yang dialokasikan untuk setiap pengguna lab.
 Harus rentang waktu antara 0 dan 9999 jam.
 
 ```yaml
@@ -817,7 +820,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -833,7 +836,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -848,7 +851,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

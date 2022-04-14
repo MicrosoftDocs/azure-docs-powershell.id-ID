@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/star
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Start-AzLabServicesVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Start-AzLabServicesVM.md
-ms.openlocfilehash: 5e498e03f27badde9e707f23dbb1c68b4c17d8f6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e340032d9132f4e7c418a81957d34b8f25f9ea6e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140393675"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142068331"
 ---
 # Start-AzLabServicesVM
 
 ## SYNOPSIS
 Tindakan untuk memulai mesin virtual lab.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.labservices/start-azlabservicesvm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Tindakan untuk memulai mesin virtual lab.
 
 ## EXAMPLES
 
-### Contoh 1: Start specific VM in the lab.
+### Contoh 1: Mulai VM tertentu di lab.
 ```powershell
 PS C:\> Start-AzLabServicesVM -ResourceGroupName "Group Name" -LabName "Lab Name" -Name 0
 
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -LabName
-Nama lab yang secara unik mengidentifikasinya di dalam berisi akun lab.
+Nama lab yang mengidentifikasinya secara unik di dalamnya berisi akun lab.
 Digunakan dalam URI sumber daya.
 
 ```yaml
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-ID mesin virtual yang mengidentifikasinya secara unik di dalam lab berisi.
+ID mesin virtual yang mengidentifikasinya secara unik di dalam lab yang berisi.
 Digunakan dalam URI sumber daya.
 
 ```yaml
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Untuk membuat, lihat bagian CATATAN untuk properti VM dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti VM dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Models.Api20211001Preview.VirtualMachine
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -259,12 +262,12 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 VM <VirtualMachine>: 
-  - `[SystemDataCreatedAt <DateTime?>]`: Timestamp pembuatan sumber daya (UTC).
+  - `[SystemDataCreatedAt <DateTime?>]`: Stempel waktu pembuatan sumber daya (UTC).
   - `[SystemDataCreatedBy <String>]`: Identitas yang membuat sumber daya.
   - `[SystemDataCreatedByType <CreatedByType?>]`: Tipe identitas yang membuat sumber daya.
-  - `[SystemDataLastModifiedAt <DateTime?>]`: Timestamp sumber daya modifikasi terakhir (UTC)
-  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir diubah sumber daya.
-  - `[SystemDataLastModifiedByType <CreatedByType?>]`: Tipe identitas yang terakhir diubah sumber daya.
+  - `[SystemDataLastModifiedAt <DateTime?>]`: Cap waktu modifikasi terakhir sumber daya (UTC)
+  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir mengubah sumber daya.
+  - `[SystemDataLastModifiedByType <CreatedByType?>]`: Tipe identitas yang terakhir mengubah sumber daya.
 
 ## RELATED LINKS
 

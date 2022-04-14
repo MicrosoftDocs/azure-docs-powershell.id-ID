@@ -4,16 +4,16 @@ ms.assetid: B935B615-1200-4A83-95AF-4F17785793B4
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: b6a3b81e547bffd8706b9b0ac02072132b71aeeb
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423606"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142094499"
 ---
 # Move-AzureDeployment
 
 ## SYNOPSIS
-Menukar penyebaran antara produksi dan perbesaran.
+Menukar penyebaran antara produksi dan pementasan.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -27,10 +27,10 @@ Move-AzureDeployment [-ServiceName] <String> [-Profile <AzureSMProfile>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Move-AzureDeployment** menukar alamat IP virtual penyebaran dalam lingkungan produksi dan perekanan.
-Cmdlet ini menukar penyebaran yang saat ini berjalan dalam lingkungan perekanan dengan lingkungan produksi, dan penyebaran yang berjalan di lingkungan produksi ke lingkungan lokal.
-Jika ada penyebaran dalam lingkungan perekanan dan tidak ada penyebaran di lingkungan produksi, cmdlet akan memindahkan penyebaran ke produksi.
-Jika ada penyebaran dalam lingkungan produksi dan tidak dapat digunakan dalam lingkungan sebelumnya, cmdlet akan gagal.
+Cmdlet **Move-AzureDeployment** menukar alamat IP virtual penyebaran dalam lingkungan produksi dan pementasan.
+Cmdlet ini menukar penyebaran yang saat ini berjalan di lingkungan pementasan ke lingkungan produksi, dan penyebaran yang berjalan di lingkungan produksi ke lingkungan pementasan.
+Jika ada penyebaran dalam lingkungan pementasan dan tidak ada penyebaran di lingkungan produksi, cmdlet memindahkan penyebaran ke produksi.
+Jika ada penyebaran di lingkungan produksi dan tidak ada penyebaran di lingkungan pementasan, cmdlet gagal.
 
 ## EXAMPLES
 
@@ -39,21 +39,21 @@ Jika ada penyebaran dalam lingkungan produksi dan tidak dapat digunakan dalam li
 PS C:\> Move-AzureDeployment -ServiceName "ContosoService"
 ```
 
-Perintah ini menukar penyebaran layanan yang bernama ContosoService antara lingkungan produksi dan perekanan.
+Perintah ini menukar penyebaran layanan bernama ContosoService antara lingkungan produksi dan pementasan.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -83,8 +83,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Menentukan nama layanan di mana cmdlet ini menukar produksi dan mengatur penyebaran.
+Menentukan nama layanan tempat cmdlet ini menukar produksi dan penyebaran pementasan.
 
 ```yaml
 Type: String
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -130,9 +130,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureDeploymentEvent](./Get-AzureDeploymentEvent.md)
 
-[New-AzureDeployment](./New-AzureDeployment.md)
+[AzureDeployment baru](./New-AzureDeployment.md)
 
-[Remove-AzureDeployment](./Remove-AzureDeployment.md)
+[Hapus-AzureDeployment](./Remove-AzureDeployment.md)
 
 [Set-AzureDeployment](./Set-AzureDeployment.md)
 

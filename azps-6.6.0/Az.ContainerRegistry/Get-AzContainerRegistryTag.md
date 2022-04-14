@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryTag.md
 ms.openlocfilehash: fdbd2bfc2cbdf9529811160d770a5d793b3f2195
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140109161"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141869630"
 ---
 # Get-AzContainerRegistryTag
 
 ## SYNOPSIS
-Dapatkan atau  list tag ACR. 
+Dapatkan atau cantumkan tag ACR. 
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerregistry/get-azcontainerregistrytag) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/get-azcontainerregistrytag) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,9 +35,9 @@ Get-AzContainerRegistryTag -RepositoryName <String> -Name <String> -RegistryName
 ```
 
 ## DESCRIPTION
-Dapatkan atau  list tag ACR.
+Dapatkan atau cantumkan tag ACR.
 Untuk menggunakan cmdlet ini silakan jalankan `Update-AzContainerRegistryRepository -RegistryName XXX -Repository XXX -ReadEnable $true -ListEnable $true`
-pertama.
+Pertama.
 
 ## EXAMPLES
 
@@ -50,7 +50,7 @@ Registry                    ImageName Tags
 registry.azurecr.io alpine    {latest}
 ```
 
-Daftar tag untuk repositori alpine di bawah registri.
+Tag daftar untuk repository alpine di bawah registri.
 
 ### Contoh 2
 ```powershell
@@ -61,7 +61,7 @@ Registry                    ImageName Attributes
 registry.azurecr.io alpine    Microsoft.Azure.Commands.ContainerRegistry.Models.PSTagAttributeBase
 ```
 
-Dapatkan tag terbaru untuk repositori alpine di bawah registri.
+Dapatkan tag terbaru untuk repository alpine di bawah registri.
 
 ## PARAMETERS
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Beri tag.
+Tandai.
 
 ```yaml
 Type: System.String
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistryName
-Nama Registri Azure Container.
+nama Azure Container Registry.
 
 ```yaml
 Type: System.String
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

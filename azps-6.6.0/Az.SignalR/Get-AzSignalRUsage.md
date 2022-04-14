@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Get-AzSignalRUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Get-AzSignalRUsage.md
 ms.openlocfilehash: fc459e17d6003d236caeca7e16ec7f6fc755fcc1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139968315"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141904719"
 ---
 # Get-AzSignalRUsage
 
@@ -18,7 +18,7 @@ ms.locfileid: "139968315"
 Dapatkan kuota penggunaan langganan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.signalr/get-azsignalrusage) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.signalr/get-azsignalrusage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ Dapatkan kuota penggunaan langganan.
 
 ## EXAMPLES
 
-### Mendapatkan kuota penggunaan dengan memasukkan lokasi
+### Dapatkan kuota penggunaan dengan memasukkan lokasi
 ```powershell
 PS C:\> Get-AzSignalRUsage eastus
 
@@ -74,11 +74,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

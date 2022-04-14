@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVMSqlServerAutoPatchingConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVMSqlServerAutoPatchingConfig.md
 ms.openlocfilehash: 0bcd068c59be85f83816cfc5b0176e4f0331fa99
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140258335"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141913827"
 ---
 # New-AzVMSqlServerAutoPatchingConfig
 
 ## SYNOPSIS
-Membuat objek konfigurasi untuk patching otomatis pada komputer virtual.
+Membuat objek konfigurasi untuk patch otomatis pada mesin virtual.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/new-azvmsqlserverautopatchingconfig) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azvmsqlserverautopatchingconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,11 +29,11 @@ New-AzVMSqlServerAutoPatchingConfig [-Enable] [-DayOfWeek <String>] [-Maintenanc
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzVMSqlServerAutoPatchingConfig** membuat objek konfigurasi untuk patch otomatis pada komputer virtual.
+Cmdlet **New-AzVMSqlServerAutoPatchingConfig** membuat objek konfigurasi untuk patching otomatis pada mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Buat objek konfigurasi untuk mengonfigurasi patching otomatis
+### Contoh 1: Membuat objek konfigurasi untuk mengonfigurasi patching otomatis
 ```
 PS C:\> $AutoPatchingConfig = New-AzVMSqlServerAutoPatchingConfig -Enable -DayOfWeek "Thursday" -MaintenanceWindowStartingHour 11 -MaintenanceWindowDuration 120 -PatchCategory "Important"
 Enable                        : True
@@ -45,9 +45,9 @@ PatchCategory                 : Important
 
 Perintah ini membuat objek konfigurasi untuk patching.
 Perintah menentukan hari dalam seminggu dan menentukan jendela pemeliharaan.
-Konfigurasi ini mengaktifkan patching yang menggunakan nilai ini.
-Perintah menyimpan hasilnya dalam $AutoBackupConfig variabel.
-Anda dapat menentukan item konfigurasi ini untuk cmdlet lain, seperti cmdlet Set-AzVMSqlServerExtension cmdlet.
+Konfigurasi ini memungkinkan patch yang menggunakan nilai ini.
+Perintah menyimpan hasil dalam variabel $AutoBackupConfig.
+Anda dapat menentukan item konfigurasi ini untuk cmdlet lain, seperti cmdlet Set-AzVMSqlServerExtension.
 
 ## PARAMETERS
 
@@ -61,7 +61,7 @@ Nilai yang dapat diterima untuk parameter ini adalah:
 - Kamis
 - Jumat
 - Sabtu
-- Sehari-hari
+- Everyday
 
 ```yaml
 Type: System.String
@@ -77,9 +77,9 @@ Accept wildcard characters: False
 ```
 
 ### -Aktifkan
-Menunjukkan bahwa patch otomatis untuk mesin virtual telah diaktifkan.
-Jika Anda mengaktifkan patching otomatis, cmdlet meletakkan Windows Update ke dalam mode interaktif.
-Jika Anda menonaktifkan patching otomatis, Windows Pengaturan pembaruan tidak berubah.
+Menunjukkan bahwa patch otomatis untuk mesin virtual diaktifkan.
+Jika Anda mengaktifkan patch otomatis cmdlet menempatkan Windows Update ke mode interaktif.
+Jika Anda menonaktifkan patch otomatis, pengaturan Windows Update tidak berubah.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -94,8 +94,8 @@ Accept wildcard characters: False
 ```
 
 ### -MaintenanceWindowDuration
-Menentukan durasi, dalam menit, jendela pemeliharaan.
-Patching otomatis menghindari melakukan tindakan yang bisa mempengaruhi ketersediaan mesin virtual di luar jendela itu.
+Menentukan durasi, dalam menit, dari jendela pemeliharaan.
+Patch otomatis menghindari melakukan tindakan yang dapat mempengaruhi ketersediaan mesin virtual di luar jendela tersebut.
 Tentukan kelipatan 30 menit.
 
 ```yaml
@@ -111,8 +111,8 @@ Accept wildcard characters: False
 ```
 
 ### -MaintenanceWindowStartingHour
-Menentukan jam pada hari ketika jendela pemeliharaan dimulai.
-Kali ini menentukan kapan pembaruan mulai diinstal.
+Menentukan jam hari ketika jendela pemeliharaan dimulai.
+Waktu ini menentukan kapan pembaruan mulai diinstal.
 
 ```yaml
 Type: System.Int32
@@ -143,11 +143,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -157,7 +157,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-azvmSqlServerAutoBackupConfig](./New-AzVMSqlServerAutoBackupConfig.md)
+[New-AzVMSqlServerAutoBackupConfig](./New-AzVMSqlServerAutoBackupConfig.md)
 
 [Set-AzVMSqlServerExtension](./Set-AzVMSqlServerExtension.md)
 

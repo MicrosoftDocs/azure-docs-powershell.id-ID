@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmVirtualNetworkGatewayDefaultSite.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmVirtualNetworkGatewayDefaultSite.md
 ms.openlocfilehash: a2c6c51a1f9f22130436e7d0a0d5fd888bccfb99
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419561"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141882825"
 ---
 # Remove-AzureRmVirtualNetworkGatewayDefaultSite
 
@@ -28,11 +28,11 @@ Remove-AzureRmVirtualNetworkGatewayDefaultSite -VirtualNetworkGateway <PSVirtual
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmVirtualNetworkGatewayDefaultSite** menghapus situs default paksa dari gateway jaringan virtual.
-Paksa membantu menyediakan cara Anda mengalihkan lalu lintas terikat Internet dari mesin virtual Azure ke jaringan lokal; ini memungkinkan Anda untuk memeriksa dan mengaudit lalu lintas sebelum merilisnya.
-Upaya paksa dilakukan menggunakan vpn jaringan privat virtual (VPN, Virtual Private Network) vpn; dasbor ini memerlukan situs default, gateway lokal tempat semua lalu lintas terikat Internet Azure dialihkan.
+Cmdlet **Remove-AzureRmVirtualNetworkGatewayDefaultSite** menghapus situs default tunneling paksa dari gateway jaringan virtual.
+Terowongan paksa menyediakan cara bagi Anda untuk mengalihkan lalu lintas terikat internet dari mesin virtual Azure ke jaringan lokal Anda; hal ini memungkinkan Anda memeriksa dan mengaudit lalu lintas sebelum merilisnya.
+Terowongan paksa dilakukan dengan menggunakan terowongan jaringan privat virtual (VPN); terowongan ini memerlukan situs default, gateway lokal di mana semua lalu lintas Azure yang terikat internet diarahkan ulang.
 **Remove-AzureRmVirtualNetworkGatewayDefaultSite** menghapus situs default yang ditetapkan ke gateway.
-Jika Anda melakukan hal ini Anda akan perlu menggunakan Set-AzureRmVirtualNetworkGatewayDefaultSite untuk menetapkan situs default baru sebelum gateway bisa digunakan untuk paksa bekerja.
+Jika Anda melakukan ini, Anda perlu menggunakan Set-AzureRmVirtualNetworkGatewayDefaultSite untuk menetapkan situs default baru sebelum gateway bisa digunakan untuk pembuatan terowongan paksa.
 
 ## EXAMPLES
 
@@ -42,14 +42,14 @@ PS C:\>$Gateway = Get-AzureRmVirtualNetworkGateway -Name "ContosoVirtualGateway"
 PS C:\> Remove-AzureRmVirtualNetworkGatewayDefaultSite -VirtualNetworkGateway $Gateway
 ```
 
-Contoh ini menghapus situs default yang saat ini ditetapkan ke gateway jaringan virtual yang bernama ContosoVirtualGateway.
-Perintah pertama menggunakan **Get-AzureRmVirtualNetworkGateway** untuk membuat referensi objek ke gateway; referensi objek ini disimpan dalam variabel yang bernama $Gateway.
-Perintah kedua lalu menggunakan **Remove-AzureRmVirtualNetworkGatewayDefaultSite** untuk menghapus situs default yang ditetapkan untuk gateway tersebut.
+Contoh ini menghapus situs default yang saat ini ditetapkan ke gateway jaringan virtual bernama ContosoVirtualGateway.
+Perintah pertama menggunakan **Get-AzureRmVirtualNetworkGateway** untuk membuat referensi objek ke gateway; referensi objek ini disimpan dalam variabel bernama $Gateway.
+Perintah kedua kemudian menggunakan **Remove-AzureRmVirtualNetworkGatewayDefaultSite** untuk menghapus situs default yang ditetapkan ke gateway tersebut.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzDataCollectionRuleAssociation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzDataCollectionRuleAssociation.md
-ms.openlocfilehash: dfb56c07a6cd07107cf9810e4536a33b360d4c52
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c4ba4d06d8241da4ee9ff56fd8876f1507e6c077
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140401871"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141936015"
 ---
 # Get-AzDataCollectionRuleAssociation
 
 ## SYNOPSIS
-Mendapatkan asosiasi aturan pengumpulan data.
+Mendapatkan kaitan aturan pengumpulan data.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azdatacollectionruleassociation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,13 +57,13 @@ Get-AzDataCollectionRuleAssociation
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataCollectionRuleAssociation** mendapatkan satu atau beberapa aturan pengumpulan data yang berhubungan (DCRA).
+Cmdlet **Get-AzDataCollectionRuleAssociation** mendapatkan satu atau beberapa asosiasi aturan pengumpulan data (DCRA).
 
-Untuk menerapkan DCR ke mesin virtual, Anda membuat asosiasi untuk mesin virtual. Mesin virtual mungkin memiliki kaitan ke beberapa DCR, dan DCR mungkin memiliki beberapa mesin virtual yang terkait dengannya. Ini memungkinkan Anda menentukan kumpulan DCR, setiap persyaratan tertentu yang cocok, dan menerapkannya hanya pada mesin virtual di mana ketentuan berlaku. Berikut adalah artikel ["Mengonfigurasi pengumpulan data untuk agen Azure Monitor"](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection-rule-azure-monitor-agent) menggunakan DCRA.
+Untuk menerapkan DCR ke mesin virtual, Anda membuat asosiasi untuk mesin virtual. Mesin virtual mungkin memiliki hubungan dengan beberapa DCR, dan DCR mungkin memiliki beberapa mesin virtual yang terkait dengannya. Ini memungkinkan Anda menentukan sekumpulan DCR, masing-masing cocok dengan persyaratan tertentu, dan menerapkannya hanya ke mesin virtual tempatnya diterapkan. Berikut adalah [artikel "Mengonfigurasi pengumpulan data untuk agen Azure Monitor"](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection-rule-azure-monitor-agent) menggunakan DCRA.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan aturan pengumpulan data yang berhubungan dengan ID sumber daya target (mesin virtual terkait)
+### Contoh 1: Dapatkan kaitan aturan pengumpulan data menurut ID sumber daya target (mesin virtual terkait)
 ```
 PS C:\>$vm = Get-AzVM -ResourceGroupName $rg -Name $vmName
 PS C:\>Get-AzDataCollectionRuleAssociation -TargetResourceId $vm.Id
@@ -76,9 +79,9 @@ Name                 : {assocName}
 Type                 : Microsoft.Insights/dataCollectionRuleAssociations
 ```
 
-Perintah ini mencantumkan semua aturan pengumpulan data untuk ID sumber daya target (mesin virtual) yang diberikan.
+Perintah ini mencantumkan semua aturan pengumpulan data untuk ID sumber daya target (mesin virtual) tertentu.
 
-### Contoh 2: Dapatkan aturan pengumpulan data yang diasingkan menurut aturan (DCR, Data Collection Rules)
+### Contoh 2: Dapatkan kaitan aturan pengumpulan data menurut aturan (DCR)
 ```
 PS C:\>Get-AzDataCollectionRuleAssociation -ResourceGroup $rg -RuleName $dcrName
 
@@ -93,9 +96,9 @@ Name                 : {assocName}
 Type                 : Microsoft.Insights/dataCollectionRuleAssociations
 ```
 
-Perintah ini mencantumkan aturan pengumpulan data yang berkaitan dengan grup dan aturan sumber daya yang ditetapkan (DCR, Resource Group and Rule).
+Perintah ini mencantumkan kaitan aturan pengumpulan data untuk grup dan aturan sumber daya (DCR) tertentu.
 
-### Contoh 3: Mendapatkan aturan pengumpulan data yang diasingkan oleh objek input (PSDataCollectionRuleResource)
+### Contoh 3: Dapatkan kaitan aturan pengumpulan data menurut objek input (PSDataCollectionRuleResource)
 ```
 PS C:\>$dcr = Get-AzDataCollectionRule -ResourceGroupName $rg -RuleName $dcrName
 PS C:\>$dcr | Get-AzDataCollectionRuleAssociation
@@ -111,9 +114,9 @@ Name                 : {assocName}
 Type                 : Microsoft.Insights/dataCollectionRuleAssociations
 ```
 
-Perintah ini mencantumkan aturan pengumpulan data yang berkaitan dengan objek input tertentu.
+Perintah ini mencantumkan kaitan aturan pengumpulan data untuk objek input tertentu.
 
-### Contoh 4: Dapatkan aturan pengumpulan data yang diasosiasikan dengan ID sumber daya target (mesin virtual terkait) dan nama kaitan
+### Contoh 4: Dapatkan kaitan aturan pengumpulan data menurut ID sumber daya target (mesin virtual terkait) dan nama asosiasi
 ```
 PS C:\>Get-AzDataCollectionRuleAssociation -TargetResourceId $vm.Id -AssociationName $assocName
 
@@ -128,12 +131,12 @@ Name                 : {assocName}
 Type                 : Microsoft.Insights/dataCollectionRuleAssociations
 ```
 
-Perintah ini mencantumkan satu (daftar dengan elemen tunggal) yang terkait aturan pengumpulan data.
+Perintah ini mencantumkan satu (daftar dengan satu elemen) kaitan aturan pengumpulan data.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetResourceId
-ID sumber daya yang terkait
+ID sumber daya terkait
 
 ```yaml
 Type: System.String
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-PSDataCollectionRuleResource Object
+Objek PSDataCollectionRuleResource
 
 ```yaml
 Type: Microsoft.Azure.Commands.Insights.OutputClasses.PSDataCollectionRuleResource
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

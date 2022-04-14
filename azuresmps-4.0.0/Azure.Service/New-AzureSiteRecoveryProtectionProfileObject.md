@@ -4,16 +4,16 @@ ms.assetid: 853D5585-2A92-4B65-BA8C-EC06BEE8C237
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: cf0569d96e7f8a022f2f80340ae717c573da6364
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422096"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142094289"
 ---
 # New-AzureSiteRecoveryProtectionProfileObject
 
 ## SYNOPSIS
-Membuat objek profil proteksi Pemulihan Situs.
+Membuat objek profil proteksi Site Recovery.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -38,7 +38,7 @@ New-AzureSiteRecoveryProtectionProfileObject [-Name <String>] -ReplicationProvid
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureSiteRecoveryProtectionProfileObject** membuat objek profil proteksi Pemulihan Situs Azure.
+Cmdlet **New-AzureSiteRecoveryProtectionProfileObject** membuat objek profil perlindungan Azure Site Recovery.
 Cmdlet ini membuat objek **ASRProtectionProfile** untuk digunakan dengan cmdlet lain.
 
 ## EXAMPLES
@@ -53,9 +53,9 @@ HyperVReplicaProviderSettingsObject      : Microsoft.Azure.Portal.RecoveryServic
 HyperVReplicaAzureProviderSettingsObject :
 ```
 
-Perintah ini akan membuat objek profil proteksi.
+Perintah ini membuat objek profil proteksi.
 
-### Contoh 2: Membuat profil proteksi untuk penyedia HyperVReplicaAzure
+### Contoh 2: Membuat profil perlindungan untuk penyedia HyperVReplicaAzure
 ```
 PS C:\> New-AzureSiteRecoveryProtectionProfileObject -Name "ProtectionProfile" -ReplicationProvider "HyperVReplicaAzure" -RecoveryAzureSubscription "cb53d0c3-bd59-4721-89bc-06916a9147ef" -RecoveryAzureStorageAccount "Contoso01" -ReplicationFrequencyInSeconds 30 -RecoveryPoints 1 -Force
 Name                                     : ProtectionProfile
@@ -65,12 +65,12 @@ HyperVReplicaProviderSettingsObject      :
 HyperVReplicaAzureProviderSettingsObject : Microsoft.Azure.Portal.RecoveryServices.Models.Common.HyperVReplicaAzureProviderSettings
 ```
 
-Perintah ini membuat profil proteksi untuk penyedia HyperVReplicaAzure.
+Perintah ini membuat profil perlindungan untuk penyedia HyperVReplicaAzure.
 
 ## PARAMETERS
 
 ### -AllowReplicaDeletion
-Menunjukkan bahwa profil proteksi mengaktifkan penghapusan entitas replika.
+Menunjukkan bahwa profil perlindungan memungkinkan penghapusan entitas replika.
 
 ```yaml
 Type: SwitchParameter
@@ -99,7 +99,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Authentication
+### -Otentikasi
 Menentukan tipe autentikasi yang akan digunakan.
 Nilai yang dapat diterima untuk parameter ini adalah: Sertifikat dan Kerberos.
 
@@ -130,8 +130,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: SwitchParameter
@@ -161,8 +161,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryAzureStorageAccount
-Menentukan nama akun Azure Storage tempat untuk menyimpan entitas replika Azure.
+Menentukan nama akun Azure Storage untuk menyimpan entitas replika Azure.
 
 ```yaml
 Type: String
@@ -192,8 +192,8 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryAzureSubscription
-Menentukan ID Langganan Azure untuk akun penyimpanan.
-Parameter ini mengacu ke akun tempat untuk menyimpan entitas replika Azure.
+Menentukan ID untuk Langganan Azure untuk akun penyimpanan.
+Parameter ini merujuk ke akun tempat untuk menyimpan entitas replika Azure.
 
 ```yaml
 Type: String
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryPoints
-Menentukan jumlah jam untuk mempertahankan poin pemulihan.
+Menentukan jumlah jam untuk mempertahankan titik pemulihan.
 
 ```yaml
 Type: Int32
@@ -307,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrReplicationProtectedItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrReplicationProtectedItem.md
 ms.openlocfilehash: eb6be4303f9d2301c44e6580fa87647bc2600d03
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140462321"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141907617"
 ---
 # Get-AzRecoveryServicesAsrReplicationProtectedItem
 
 ## SYNOPSIS
-Mendapatkan properti Item Terproteksi Replikasi Situs Azure.
+Mendapatkan properti Azure Site Recovery Item Terproteksi Replikasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrreplicationprotecteditem) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrreplicationprotecteditem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ Get-AzRecoveryServicesAsrReplicationProtectedItem -ProtectableItem <ASRProtectab
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesAsrReplicationProtectedItem** mendapatkan properti dari semua atau item dilindungi replikasi ASR tertentu dari wadah proteksi ASR yang ditentukan.
+Cmdlet **Get-AzRecoveryServicesAsrReplicationProtectedItem** mendapatkan properti semua atau item yang diproteksi replikasi ASR tertentu dari wadah proteksi ASR yang ditentukan.
 
 ## EXAMPLES
 
@@ -56,11 +56,11 @@ Cmdlet **Get-AzRecoveryServicesAsrReplicationProtectedItem** mendapatkan propert
 PS C:\> $ReplicationProtectedItems = Get-AzRecoveryServicesAsrReplicationProtectedItem -ProtectionContainer $PrimaryContainer
 ```
 
-Mencantumkan semua item yang diproteksi pada wadah proteksi ASR yang ditentukan.
+Mencantumkan semua item yang diproteksi replikasi dalam wadah proteksi ASR yang ditentukan.
 
 ### Contoh 2
 
-Mendapatkan properti Item Terproteksi Replikasi Situs Azure. (otomatisgenerated)
+Mendapatkan properti Azure Site Recovery Item Terproteksi Replikasi. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -FriendlyName
-Menentukan nama replikasi item yang dilindungi untuk masuk.
+Menentukan nama item terproteksi replikasi yang mudah didapatkan.
 
 ```yaml
 Type: System.String
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama dari item replikasi yang diproteksi untuk mendapatkannya.
+Menentukan nama item yang diproteksi replikasi untuk didapatkan.
 
 ```yaml
 Type: System.String
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectableItem
-Menentukan objek item yang dapat diproteksi ASR. Cmdlet mendapatkan item terproteksi replikasi ASR yang terkait dengan item ASR yang dapat diproteksi tertentu jika item diproteksi.
+Menentukan objek item yang dapat diproteksi ASR. Cmdlet mendapatkan item dilindungi replikasi ASR yang terkait dengan item yang dapat dilindungi ASR yang ditentukan jika item diproteksi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRProtectableItem
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionContainer
-Menentukan objek wadah proteksi ASR dari wadah proteksi ASR yang terkait dengan replikasi item yang diproteksi. 
+Menentukan objek kontainer proteksi ASR dari wadah proteksi ASR yang terkait dengan item yang diproteksi replikasi. 
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRProtectionContainer
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

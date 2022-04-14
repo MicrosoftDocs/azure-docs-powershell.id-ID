@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/Update-AzConnectedKubernetes.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/Update-AzConnectedKubernetes.md
 ms.openlocfilehash: 869b2239d8c04425741ee0c3d4cacceedffdc0c6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140078579"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141869990"
 ---
 # Update-AzConnectedKubernetes
 
@@ -18,7 +18,7 @@ ms.locfileid: "140078579"
 API untuk memperbarui properti tertentu dari sumber daya kluster yang tersambung.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.connectedkubernetes/update-azconnectedkubernetes) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.connectedkubernetes/update-azconnectedkubernetes) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ API untuk memperbarui properti tertentu dari sumber daya kluster yang tersambung
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui file tersambung
+### Contoh 1: Update a connected kubernetes
 ```powershell
 PS C:\> Update-AzConnectedKubernetes -ResourceGroupName connected-aks -ClusterName ps-connaks-t01 -Tag @{'key'='1'}
 
@@ -48,9 +48,9 @@ Location Name           Type
 eastus   ps-connaks-t01 Microsoft.Kubernetes/connectedClusters
 ```
 
-Perintah ini akan memperbarui grup yang tersambung.
+Perintah ini memperbarui kubernetes yang terhubung.
 
-### Contoh 2: Memperbarui file tersambung menurut objek
+### Contoh 2: Update a connected kubernetes by object
 ```powershell
 PS C:\> $conn = Get-AzConnectedKubernetes -ResourceGroupName connected-aks -ClusterName ps-connaks-t03
 PS C:\> Update-AzConnectedKubernetes -InputObject $conn -Tag @{'key'='2'}
@@ -60,12 +60,12 @@ Location Name           Type
 eastus   ps-connaks-t03 Microsoft.Kubernetes/connectedClusters
 ```
 
-Perintah ini memperbarui file tersambung menurut objek.
+Perintah ini memperbarui kubernetes yang terhubung menurut objek.
 
 ## PARAMETERS
 
 ### -ClusterName
-Nama kluster Kluster tempat get disebut.
+Nama kluster Kubernetes yang dinamai get.
 
 ```yaml
 Type: System.String
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedKubernetes.Models.IConnectedKubernetesIdentity
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,15 +187,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.ConnectedK cmdlets.Models.IConnectedK cmdletsIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.ConnectedKubernetes.Models.IConnectedKubernetesIdentity
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.ConnectedK cmdlets.Models.Api20210301.IConnectedCluster
+### Microsoft.Azure.PowerShell.Cmdlets.ConnectedKubernetes.Models.Api20210301.IConnectedCluster
 
 ## CATATAN
 
@@ -207,9 +207,9 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IConnectedKubernetesIdentity>: Parameter Identitas
-  - `[ClusterName <String>]`: Nama kluster Kluster Kedaering yang disebut dengan get.
+  - `[ClusterName <String>]`: Nama kluster Kubernetes yang dinamai get.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/get-azcdnpro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnProfileSupportedOptimizationType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnProfileSupportedOptimizationType.md
-ms.openlocfilehash: e5e2d048462494d32494170d37f0818e579a7860
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 7a3c4b015da6253c9acbd131eb6a0650aeb77940
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140550442"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141854870"
 ---
 # Get-AzCdnProfileSupportedOptimizationType
 
 ## SYNOPSIS
-Mendapatkan tipe optimisasi yang didukung untuk CDN bisnis.
+Mendapatkan tipe optimisasi yang didukung untuk profil CDN.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cdn/get-azcdnprofilesupportedoptimizationtype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzCdnProfileSupportedOptimizationType -CdnProfile <PSProfile> [-DefaultProfi
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCdnProfileSupportedOptimizationType** mendapatkan tipe optimisasi yang didukung untuk profil saat ini. Pengguna dapat membuat titik akhir dengan tipe optimisasi dari nilai yang dicantumkan.
+**Cmdlet Get-AzCdnProfileSupportedOptimizationType** mendapatkan tipe optimisasi yang didukung untuk profil saat ini. Pengguna dapat membuat titik akhir dengan tipe pengoptimalan dari nilai yang tercantum.
 
 ## EXAMPLES
 
@@ -46,12 +49,12 @@ OptimizationType: GeneralWebDelivery
 OptimizationType: DynamicSiteAcceleration
 ```
 
-Dapatkan tipe optimisasi yang didukung untuk CDN bisnis.
+Dapatkan tipe optimisasi yang didukung untuk profil CDN.
 
 ## PARAMETERS
 
 ### -CdnProfile
-Objek Azure CDN profil.
+Objek profil Azure CDN.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Cdn.Models.Profile.PSProfile
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup sumber daya tempat profil tersebut berada.
+Grup sumber daya tempat profil berada.
 
 ```yaml
 Type: System.String
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

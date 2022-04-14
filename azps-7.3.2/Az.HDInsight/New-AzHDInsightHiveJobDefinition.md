@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightHiveJobDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightHiveJobDefinition.md
-ms.openlocfilehash: d0c91eb2910cb8311f1518e43875fc8513339335
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1312bdb637f739615fde2f9adc2955f4e07e60c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140549879"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142069807"
 ---
 # New-AzHDInsightHiveJobDefinition
 
 ## SYNOPSIS
-Membuat objek pekerjaan Hive.
+Membuat objek pekerjaan Sarang.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/new-azhdinsighthivejobdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Cmdlet **New-AzHDInsightHiveJobDefinition** menentukan objek pekerjaan Hive untu
 
 ## EXAMPLES
 
-### Contoh 1: Membuat definisi pekerjaan Hive
+### Contoh 1: Membuat definisi pekerjaan Sarang
 ```
 PS C:\># Cluster info
 PS C:\>$clusterName = "your-hadoop-001"
@@ -48,13 +51,13 @@ PS C:\>New-AzHDInsightHiveJobDefinition -StatusFolder $statusFolder `
             -ClusterCredential $clusterCreds
 ```
 
-Perintah ini membuat definisi pekerjaan Hive.
+Perintah ini membuat definisi pekerjaan Sarang.
 
 ## PARAMETERS
 
 ### -Argumen
-Menentukan array argumen untuk pekerjaan itu.
-Argumen diberikan sebagai argumen baris perintah untuk setiap tugas.
+Menentukan array argumen untuk pekerjaan tersebut.
+Argumen dikirim sebagai argumen baris perintah ke setiap tugas.
 
 ```yaml
 Type: System.String[]
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Defines
-Menentukan nilai konfigurasi Hadoop yang akan diatur ketika pekerjaan berjalan.
+Menentukan nilai konfigurasi Hadoop untuk diatur saat pekerjaan berjalan.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -100,8 +103,8 @@ Accept wildcard characters: False
 
 ### -File
 Menentukan jalur ke file yang berisi kueri untuk dijalankan.
-File harus tersedia pada akun penyimpanan yang terkait dengan kluster.
-Anda bisa menggunakan parameter ini sebagai ganti *parameter Query* .
+File harus tersedia di akun penyimpanan yang terkait dengan kluster.
+Anda bisa menggunakan parameter ini dan bukan parameter *Kueri* .
 
 ```yaml
 Type: System.String
@@ -115,7 +118,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -File
+### -Files
 Menentukan kumpulan file yang terkait dengan pekerjaan Hive.
 
 ```yaml
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -Query
-Menentukan kueri Hive.
+Menentukan kueri Sarang.
 
 ```yaml
 Type: System.String
@@ -161,9 +164,9 @@ Accept wildcard characters: False
 ```
 
 ### -RunAsFileJob
-Mengindikasikan bahwa cmdlet ini membuat file di akun penyimpanan Azure default untuk menyimpan kueri.
-Cmdlet ini mengirimkan pekerjaan yang merujuk file ini sebagai skrip untuk dijalankan.
-Anda dapat menggunakan fungsionalitas ini untuk menangani karakter khusus seperti tanda persen (%) yang akan gagal pada pengiriman pekerjaan melalui Templeton, karena Templeton menginterpretasikan kueri dengan tanda persen sebagai parameter URL.
+Menunjukkan bahwa cmdlet ini membuat file di akun penyimpanan Azure default untuk menyimpan kueri.
+Cmdlet ini mengirimkan pekerjaan yang mereferensikan file ini sebagai skrip untuk dijalankan.
+Anda dapat menggunakan fungsi ini untuk menangani karakter khusus seperti tanda persen (%) yang akan gagal pada pengiriman pekerjaan melalui Templeton, karena Templeton menginterpretasikan kueri dengan tanda persen sebagai parameter URL.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -StatusFolder
-Menentukan lokasi folder yang berisi output standar dan output kesalahan untuk pekerjaan.
+Menentukan lokasi folder yang berisi output standar dan output kesalahan untuk suatu pekerjaan.
 
 ```yaml
 Type: System.String
@@ -193,11 +196,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

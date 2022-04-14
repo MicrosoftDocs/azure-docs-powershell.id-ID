@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/add-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/help/Add-AzPurviewAccountRootCollectionAdmin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/help/Add-AzPurviewAccountRootCollectionAdmin.md
-ms.openlocfilehash: db10227e2b2a09a8c1a12c4f4a9aed375ff97944
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 4af179ae907ee170336bae9f660f17f973e74998
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139999181"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142029755"
 ---
 # Add-AzPurviewAccountRootCollectionAdmin
 
 ## SYNOPSIS
 Tambahkan administrator untuk kumpulan akar yang terkait dengan akun ini.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.purview/add-azpurviewaccountrootcollectionadmin) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Tambahkan administrator untuk kumpulan akar yang terkait dengan akun ini.
 
 ## EXAMPLES
 
-### Contoh 1: Add the administrator for root collection
+### Contoh 1: Tambahkan administrator untuk kumpulan akar
 ```powershell
 PS C:\> Add-AzPurviewAccountRootCollectionAdmin -AccountName test-pa -ResourceGroupName test-rg -ObjectId xxxxxxxx-5be9-4f43-abd2-04561777c8b0
 
@@ -44,7 +47,7 @@ PS C:\> Add-AzPurviewAccountRootCollectionAdmin -AccountName test-pa -ResourceGr
 
 Tambahkan administrator untuk kumpulan akar yang terkait dengan akun bernama 'test-pa'.
 
-### Contoh 2: Tambahkan administrator untuk koleksi akar dengan InputObject
+### Contoh 2: Tambahkan administrator untuk kumpulan akar oleh InputObject
 ```powershell
 PS C:\>  $got = Get-AzPurviewAccount -Name test-pa -ResourceGroupName test-rg
 PS C:\>  Add-AzPurviewAccountRootCollectionAdmin -InputObject $got -ObjectId xxxxxxxx-5be9-4f43-abd2-04561777c8b0
@@ -54,7 +57,7 @@ Tambahkan administrator untuk kumpulan akar yang terkait dengan akun bernama 'te
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun.
 
 ```yaml
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purview.Models.IPurviewIdentity
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

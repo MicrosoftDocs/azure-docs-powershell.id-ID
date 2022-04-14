@@ -7,22 +7,22 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRMAutomationScheduledRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRMAutomationScheduledRunbook.md
 ms.openlocfilehash: e2b458e7a1f739b7891768d197f1993da065d09f
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423364"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142101246"
 ---
 # Get-AzureRmAutomationScheduledRunbook
 
 ## SYNOPSIS
-Mendapatkan runbooks Otomatisasi dan jadwal terkait.
+Mendapatkan runbook otomatisasi dan jadwal terkait.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
 ## SYNTAX
 
-### SecaraSemua (Default)
+### ByAll (Default)
 ```
 Get-AzureRmAutomationScheduledRunbook [-ResourceGroupName] <String> [-AutomationAccountName] <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -54,32 +54,32 @@ Get-AzureRmAutomationScheduledRunbook -ScheduleName <String> [-ResourceGroupName
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmAutomationScheduledRunbook** mendapatkan satu atau beberapa runbooks Azure Automation dan jadwal terkait.
-Secara default, cmdlet ini mendapatkan semua runbooks terjadwal.
-Tentukan nama runbook atau jadwal, atau keduanya untuk melihat jadwal runbook tertentu.
+Cmdlet **Get-AzureRmAutomationScheduledRunbook** mendapatkan satu atau beberapa Azure Automation runbook dan jadwal terkait.
+Secara default, cmdlet ini mendapatkan semua runbook terjadwal.
+Tentukan nama runbook atau jadwal atau keduanya untuk melihat jadwal runbook tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua runbooks terjadwal
+### Contoh 1: Dapatkan semua runbook terjadwal
 ```
 PS C:\>Get-AzureRmAutomationScheduledRunbook -AutomationAccountName "Contoso17" -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini mendapatkan semua runbooks terjadwal dalam akun Azure Automation yang bernama Contoso17.
+Perintah ini mendapatkan semua runbook terjadwal di akun Azure Automation bernama Contoso17.
 
-### Contoh 2: Mendapatkan semua jadwal yang terkait dengan runbook
+### Contoh 2: Dapatkan semua jadwal yang terkait dengan runbook
 ```
 PS C:\>Get-AzureRmAutomationScheduledRunbook -AutomationAccountName "Contoso17" -ResourceGroupName "ResourceGroup01" -RunbookName "Runbk01"
 ```
 
-Perintah ini mendapatkan semua runbooks terjadwal untuk runbook Runbk01 dalam akun Otomatisasi Azure yang bernama Contoso17.
+Perintah ini mendapatkan semua runbook terjadwal untuk runbook Runbk01 di akun Azure Automation bernama Contoso17.
 
-### Contoh 3: Mendapatkan semua runbooks yang terkait dengan jadwal
+### Contoh 3: Dapatkan semua runbook yang terkait dengan jadwal
 ```
 PS C:\>Get-AzureRmAutomationScheduledRunbook -AutomationAccountName "Contoso17" -ResourceGroupName "ResourceGroup01" -ScheduleName "Schedule01"
 ```
 
-Perintah ini mendapatkan semua runbooks terjadwal untuk jadwal Schedule01 dalam akun Azure Automation bernama Contoso17.
+Perintah ini mendapatkan semua runbook terjadwal untuk jadwal Schedule01 di akun Azure Automation bernama Contoso17.
 
 ## PARAMETERS
 
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobScheduleId
-Menentukan ID pekerjaan terjadwal yang akan dapatkan cmdlet ini.
+Menentukan ID pekerjaan terjadwal yang didapat cmdlet ini.
 
 ```yaml
 Type: System.Nullable`1[System.Guid]
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya untuk runbooks terjadwal yang akan dapatkan cmdlet ini.
+Menentukan nama grup sumber daya untuk runbook terjadwal yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunbookName
-Menentukan nama runbook yang akan mendapatkan runbooks terjadwal dari cmdlet ini.
+Menentukan nama runbook di mana cmdlet ini mendapatkan runbook terjadwal.
 
 ```yaml
 Type: System.String
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleName
-Menentukan nama jadwal cmdlet mendapatkan runbooks terjadwal.
+Menentukan nama jadwal cmdlet ini mendapatkan runbook terjadwal.
 
 ```yaml
 Type: System.String
@@ -174,11 +174,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### System.Nullable'1[[System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Guid, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ### System.String
 
@@ -192,6 +192,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Register-AzureRmAutomationScheduledRunbook](./Register-AzureRMAutomationScheduledRunbook.md)
 
-[Unregister-AzureRmAutomationScheduledRunbook](./Unregister-AzureRMAutomationScheduledRunbook.md)
+[Batalkan pendaftaran-AzureRmAutomationScheduledRunbook](./Unregister-AzureRMAutomationScheduledRunbook.md)
 
 

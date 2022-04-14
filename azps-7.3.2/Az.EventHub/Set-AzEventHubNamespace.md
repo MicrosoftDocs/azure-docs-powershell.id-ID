@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/set-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubNamespace.md
-ms.openlocfilehash: 8f2691a2056e021d6bff0dd7608bb3b09f6beff1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 84084e062463c4a336c37703ec399f6b89484148
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140571447"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142070059"
 ---
 # Set-AzEventHubNamespace
 
 ## SYNOPSIS
-Memperbarui ruang nama Hub Acara yang ditentukan.
+Memperbarui ruang nama Hub Kejadian yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/set-azeventhubnamespace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Set-AzEventHubNamespace [-ResourceGroupName] <String> [-Name] <String> [[-Locati
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AutoInparameterSet
+### AutoInflateParameterSet
 ```
 Set-AzEventHubNamespace [-ResourceGroupName] <String> [-Name] <String> [[-Location] <String>]
  [[-SkuName] <String>] [[-SkuCapacity] <Int32>] [[-State] <NamespaceState>] [[-Tag] <Hashtable>]
@@ -49,7 +52,7 @@ Set-AzEventHubNamespace [-ResourceGroupName] <String> [-Name] <String> [[-Locati
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzEventHubNamespace memperbarui properti dari ruang nama Hub Kejadian yang ditentukan.
+Cmdlet Set-AzEventHubNamespace memperbarui properti ruang nama Hub Kejadian yang ditentukan.
 
 ## EXAMPLES
 
@@ -75,7 +78,7 @@ MaximumThroughputUnits : 10
 
 ```
 
-Memperbarui Tag untuk ruang nama \`MyNamespaceName\` menjadi Dibuat.
+Memperbarui Tag untuk ruang \`nama MyNamespaceName\` menjadi Dibuat .
 
 ### Contoh 2
 ```powershell
@@ -99,11 +102,11 @@ IsAutoInflateEnabled   : True
 MaximumThroughputUnits : 10
 ```
 
-Memperbarui status ruang nama \`MyNamespaceName\` dengan AutoIn protocole = enabled dan MaximumThroughputUnits = 10
+Memperbarui status namespace \`MyNamespaceName\` dengan AutoInflate = enabled dan MaximumThroughputUnits = 10
 
 ### Contoh 3
 
-Memperbarui ruang nama Hub Acara yang ditentukan. (otomatisgenerated)
+Memperbarui ruang nama Hub Kejadian yang ditentukan. (autogenerasi)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Set-AzEventHubNamespace -Location 'WestUS' -Name MyNamespaceName -ResourceGroupName MyResourceGroupName -SkuName Basic
@@ -161,11 +164,11 @@ EncryptionConfig              : {{ KeyName: key1,
                                  }}
 ```
 
-Buat ruang nama dengan Identitas Ditetapkan Sistem diaktifkan lalu gunakan Perintah Atur untuk menambahkan konfigurasi enkripsi.
+Buat ruang nama dengan Identitas Yang Ditetapkan Sistem diaktifkan lalu gunakan Perintah Setel untuk menambahkan konfigurasi enkripsi.
 
 ### Contoh 5
 
-Tambahkan konfigurasi enkripsi lain ke ruang nama dalam Contoh 4
+Menambahkan konfigurasi enkripsi lain ke ruang nama di Contoh 4
 
 ```
 powershell
@@ -221,7 +224,7 @@ EncryptionConfig              : {{ KeyName: key1,
                                  }}
 ```
 
-If you have to append encryption config to a namespace. Lakukan Dapatkan di ruang nama dan kueri hasilnya untuk menyertakan enkripsi konfigurasi baru.
+Jika Anda harus menambahkan konfigurasi enkripsi ke ruang nama. Lakukan Dapatkan di ruang nama dan buat kueri hasil untuk menyertakan konfigurasi enkripsi baru.
 
 
 ## PARAMETERS
@@ -256,8 +259,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -EnableAutoInotomatise
-Menunjukkan apakah PengaturanOtomatis diaktifkan
+### -EnableAutoInflate
+Menunjukkan apakah AutoInflate diaktifkan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -284,7 +287,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableKafka
-mengaktifkan atau menonaktifkan NamespaceKa untuk
+mengaktifkan atau menonaktifkan Kafka untuk ruang nama
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -313,7 +316,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Identity
+### -Identitas
 mengaktifkan atau menonaktifkan Identitas untuk ruang nama
 
 ```yaml
@@ -341,7 +344,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityId
-Daftar ID Identitas yang ditetapkan pengguna
+Daftar Id Identitas yang ditetapkan pengguna
 
 ```yaml
 Type: System.String[]
@@ -372,7 +375,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityUserDefined
-Identitas yang ditentukan pengguna atau Tidak ada
+Identitas yang ditentukan pengguna atau Tidak Ada
 
 ```yaml
 Type: System.String
@@ -432,7 +435,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaximumThroughputUnits
-Batas atas satuan throughput ketika FileOtomatis diaktifkan, nilai harus berada dalam 0 hingga 20 unit throughput.
+Batas atas unit throughput saat AutoInflate diaktifkan, nilai harus berada dalam 0 hingga 20 unit throughput.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -492,7 +495,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Nama Ruang Nama Sku.
+Nama Sku Ruang Nama.
 
 ```yaml
 Type: System.String
@@ -539,7 +542,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -555,7 +558,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -570,15 +573,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
-### System.Nullable'1[[Microsoft.Azure.Commands.EventHub.Models.NamespaceState, Microsoft.Azure.PowerShell.Cmdlets.EventHub, Version=1.9.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Nullable'1[[Microsoft.Azure.Commands.EventHub.Models.NamespaceState, Microsoft.Azure.PowerShell.Cmdlets.EventHub, Version=1.9.1.0, Culture=netral, PublicKeyToken=null]]
 
 ### System.Collections.Hashtable
 

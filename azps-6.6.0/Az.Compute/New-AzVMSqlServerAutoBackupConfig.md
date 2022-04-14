@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVMSqlServerAutoBackupConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVMSqlServerAutoBackupConfig.md
 ms.openlocfilehash: bf5972bc7e2e8b66f8cf26bb593ca35acf0004bf
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139942459"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141870836"
 ---
 # New-AzVMSqlServerAutoBackupConfig
 
 ## SYNOPSIS
-Membuat objek konfigurasi untuk SQL Server pencadangan otomatis.
+Membuat objek konfigurasi untuk pencadangan otomatis SQL Server.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/new-azvmsqlserverautobackupconfig) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azvmsqlserverautobackupconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,11 +42,11 @@ New-AzVMSqlServerAutoBackupConfig [-ResourceGroupName] <String> [-Enable] [[-Ret
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzVMSqlServerAutoBackupConfig** membuat objek konfigurasi untuk SQL Server pencadangan otomatis.
+Cmdlet **New-AzVMSqlServerAutoBackupConfig** membuat objek konfigurasi untuk pencadangan otomatis SQL Server.
 
 ## EXAMPLES
 
-### Contoh 1: Buat konfigurasi pencadangan otomatis menggunakan tombol URI dan akun penyimpanan
+### Contoh 1: Membuat konfigurasi cadangan otomatis menggunakan URI penyimpanan dan kunci akun
 ```
 PS C:\> $AutoBackupConfig = New-AzVMSqlServerAutoBackupConfig -Enable -RetentionPeriod 10 -StorageUri "\\contoso\StorageGeneral" -StorageKey "< Storage Key for ContosoGeneral >"
 Enable                : True
@@ -54,12 +54,12 @@ EnableEncryption      : False
 RetentionPeriodInDays : 10
 ```
 
-Perintah ini akan membuat objek konfigurasi pencadangan otomatis dengan menentukan tombol akun dan URI penyimpanan.
+Perintah ini membuat objek konfigurasi cadangan otomatis dengan menentukan URI penyimpanan dan kunci akun.
 Pencadangan otomatis diaktifkan dan pencadangan otomatis disimpan selama 10 hari.
-Perintah menyimpan hasilnya dalam $AutoBackupConfig variabel.
-Anda dapat menentukan item konfigurasi ini untuk cmdlet lain, seperti cmdlet Set-AzVMSqlServerExtension cmdlet.
+Perintah menyimpan hasil dalam variabel $AutoBackupConfig.
+Anda dapat menentukan item konfigurasi ini untuk cmdlet lain, seperti cmdlet Set-AzVMSqlServerExtension.
 
-### Contoh 2: Membuat konfigurasi pencadangan otomatis menggunakan konteks penyimpanan
+### Contoh 2: Membuat konfigurasi cadangan otomatis menggunakan konteks penyimpanan
 ```
 PS C:\> $StorageContext = New-AzStorageContext -StorageAccountName "ContosoGeneral" -StorageAccountKey "< Storage Key for ContosoGeneral >"
 PS C:\> $AutoBackupConfig = New-AzVMSqlServerAutoBackupConfig -StorageContext $StorageContext -Enable -RetentionPeriod 10
@@ -68,12 +68,12 @@ EnableEncryption      : False
 RetentionPeriodInDays : 10
 ```
 
-Perintah pertama akan membuat konteks penyimpanan, lalu menyimpannya dalam $StorageContext penyimpanan.
+Perintah pertama membuat konteks penyimpanan, lalu menyimpannya dalam variabel $StorageContext.
 Untuk informasi selengkapnya, lihat New-AzStorageContext.
-Perintah kedua membuat objek konfigurasi pencadangan otomatis dengan menentukan konteks penyimpanan di $StorageContext.
+Perintah kedua membuat objek konfigurasi cadangan otomatis dengan menentukan konteks penyimpanan dalam $StorageContext.
 Pencadangan otomatis diaktifkan dan pencadangan otomatis disimpan selama 10 hari.
 
-### Contoh 3: Membuat konfigurasi pencadangan otomatis menggunakan konteks penyimpanan dengan enkripsi dan kata sandi
+### Contoh 3: Membuat konfigurasi cadangan otomatis menggunakan konteks penyimpanan dengan enkripsi dan kata sandi
 ```
 PS C:\> $StorageContext = New-AzVMSqlServerAutoBackupConfig -StorageContext $StorageContext -Enable -RetentionPeriod 10 -EnableEncryption -CertificatePassword $CertificatePassword
 Enable                : True
@@ -81,10 +81,10 @@ EnableEncryption      : True
 RetentionPeriodInDays : 10
 ```
 
-Perintah ini akan membuat dan menyimpan objek konfigurasi cadangan otomatis.
+Perintah ini membuat dan menyimpan objek konfigurasi cadangan otomatis.
 Perintah menentukan konteks penyimpanan yang dibuat dalam contoh sebelumnya.
-Perintah mengaktifkan enkripsi dengan kata sandi.
-Kata sandi sebelumnya disimpan sebagai string aman dalam $CertificatePassword pengguna.
+Perintah ini memungkinkan enkripsi dengan kata sandi.
+Kata sandi sebelumnya disimpan sebagai string aman dalam variabel $CertificatePassword.
 Untuk membuat string aman, gunakan cmdlet ConvertTo-SecureString.
 
 ## PARAMETERS
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -CertificatePassword
-Menentukan kata sandi untuk mengenkripsi sertifikat yang digunakan untuk melakukan pencadangan SQL Server terenkripsi.
+Menentukan kata sandi untuk mengenkripsi sertifikat yang digunakan untuk melakukan pencadangan terenkripsi SQL Server.
 
 ```yaml
 Type: System.Security.SecureString
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -151,9 +151,9 @@ Accept wildcard characters: False
 ```
 
 ### -Aktifkan
-Menunjukkan bahwa pencadangan otomatis untuk SQL Server virtual diaktifkan.
-Jika Anda menentukan parameter ini, pencadangan otomatis mengatur jadwal pencadangan untuk semua database sekarang dan baru.
-Ini memperbarui pengaturan Cadangan Terkelola Anda untuk mengikuti jadwal ini.
+Menunjukkan bahwa cadangan otomatis untuk mesin virtual SQL Server diaktifkan.
+Jika Anda menentukan parameter ini, cadangan otomatis mengatur jadwal cadangan untuk semua database saat ini dan baru.
+Ini memperbarui pengaturan Pencadangan Terkelola Anda untuk mengikuti jadwal ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableEncryption
-Mengindikasikan bahwa cmdlet ini mengaktifkan enkripsi.
+Menunjukkan bahwa cmdlet ini mengaktifkan enkripsi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -FullBackupStartHour
-Jam dalam sehari (0-23) ketika Pencadangan Penuh Sql Server dimulai
+Jam dalam sehari (0-23) ketika Pencadangan Penuh Sql Server harus dimulai
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -FullBackupWindowInHours
-Jendela Pencadangan Penuh Sql Server dalam jam
+Jendela Cadangan Penuh Sql Server dalam jam
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogBackupFrequencyInMinutes
-Frekuensi Pencadangan Log Sql Server, setiap 1-60 menit
+Frekuensi Pencadangan Log Sql Server, sekali setiap 1-60 menit
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: System.String
@@ -259,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetentionPeriodInDays
-Menentukan jumlah hari untuk menyimpan cadangan.
+Menentukan jumlah hari untuk mempertahankan cadangan.
 
 ```yaml
 Type: System.Int32
@@ -275,8 +275,8 @@ Accept wildcard characters: False
 
 ### -StorageContext
 Menentukan akun penyimpanan yang akan digunakan untuk menyimpan cadangan.
-Untuk mendapatkan objek **AzureStorageContext** , gunakan cmdlet New-AzStorageContext cmdlet.
-Defaultnya adalah akun penyimpanan yang terkait dengan SQL Server virtual.
+Untuk mendapatkan objek **AzureStorageContext** , gunakan cmdlet New-AzStorageContext.
+Defaultnya adalah akun penyimpanan yang terkait dengan mesin virtual SQL Server.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -321,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -337,7 +337,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Security.SecureString
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 
@@ -347,7 +347,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-azvmSqlServerAutoPatchingConfig](./New-AzVMSqlServerAutoPatchingConfig.md)
+[New-AzVMSqlServerAutoPatchingConfig](./New-AzVMSqlServerAutoPatchingConfig.md)
 
 [Set-AzVMSqlServerExtension](./Set-AzVMSqlServerExtension.md)
 

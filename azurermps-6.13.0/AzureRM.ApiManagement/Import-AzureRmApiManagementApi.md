@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Import-AzureRmApiManagementApi.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Import-AzureRmApiManagementApi.md
 ms.openlocfilehash: 7eb2e25f137abb303e1c9fa5b4ebe8b932346871
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422560"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141888248"
 ---
 # Import-AzureRmApiManagementApi
 
@@ -22,7 +22,7 @@ Mengimpor API dari file atau URL.
 
 ## SYNTAX
 
-### ImportFromLocalFile (Default)
+### ImporFromLocalFile (Default)
 ```
 Import-AzureRmApiManagementApi -Context <PsApiManagementContext> [-ApiId <String>] [-ApiRevision <String>]
  -SpecificationFormat <PsApiManagementApiFormat> -SpecificationPath <String> [-Path <String>]
@@ -30,7 +30,7 @@ Import-AzureRmApiManagementApi -Context <PsApiManagementContext> [-ApiId <String
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### ImportFromUrl
+### ImporFromUrl
 ```
 Import-AzureRmApiManagementApi -Context <PsApiManagementContext> [-ApiId <String>] [-ApiRevision <String>]
  -SpecificationFormat <PsApiManagementApiFormat> -SpecificationUrl <String> [-Path <String>]
@@ -39,7 +39,7 @@ Import-AzureRmApiManagementApi -Context <PsApiManagementContext> [-ApiId <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Import-AzureRmApiManagementApi** mengimpor API Manajemen API Azure dari file atau URL dalam format Bahasa Deskripsi Aplikasi Web (WADL), Bahasa Deskripsi Layanan Web (WSDL), atau Swagger.
+Cmdlet **Import-AzureRmApiManagementApi** mengimpor API Azure API Management dari file atau URL dalam format Web Application Description Language (WADL), Web Services Description Language (WSDL), atau Swagger.
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ PS C:\>$ApiMgmtContext = New-AzureRmApiManagementContext -ResourceGroupName "Api
 PS C:\>Import-AzureRmApiManagementApi -Context $ApiMgmtContext -SpecificationFormat "Wadl" -SpecificationPath "C:\contoso\specifications\echoapi.wadl" -Path "apis"
 ```
 
-Perintah ini mengimpor API dari file WADL tertentu.
+Perintah ini mengimpor API dari file WADL yang ditentukan.
 
 ### Contoh 2 Mengimpor API dari file Swagger
 ```powershell
@@ -71,7 +71,7 @@ Perintah ini mengimpor API dari tautan WADL yang ditentukan.
 
 ### -ApiId
 Menentukan ID untuk API yang akan diimpor.
-Jika Anda tidak menentukan parameter ini, ID dihasilkan untuk Anda.
+Jika Anda tidak menentukan parameter ini, ID akan dibuat untuk Anda.
 
 ```yaml
 Type: System.String
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiRevision
-Pengidentifikasi Revisi API. Parameter ini bersifat opsional. Jika tidak ditentukan, impor akan dilakukan ke revisi aktif atau api baru.
+Pengidentifikasi Revisi API. Parameter ini bersifat opsional. Jika tidak ditentukan, impor akan dilakukan ke revisi aktif saat ini atau api baru.
 
 ```yaml
 Type: System.String
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiType
-Parameter ini opsional dengan nilai default dari Http. Opsi Soap hanya berlaku ketika mengimpor WSDL dan akan membuat API Passthrough SOAP.
+Parameter ini opsional dengan nilai default Http. Opsi Soap hanya berlaku ketika mengimpor WSDL dan akan membuat API Passthrough SOAP.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApiType]
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Menentukan objek **PsApiManagementContext.**
+Menentukan objek **PsApiManagementContext** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -146,10 +146,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur WEB API sebagai bagian terakhir URL publik API.
-URL ini digunakan oleh konsumen API untuk mengirimkan permintaan ke layanan web.
-Harus memiliki panjang 1 hingga 400 karakter.
+### -Jalur
+Menentukan jalur API web sebagai bagian terakhir URL publik API.
+URL ini digunakan oleh konsumen API untuk mengirim permintaan ke layanan web.
+Panjangnya harus 1 hingga 400 karakter.
 Nilai defaultnya adalah $Null.
 
 ```yaml
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -WsdlEndpointName
-Nama lokal Titik Akhir (port) WSDL yang akan diimpor. Harus memiliki panjang 1 hingga 400 karakter. Parameter ini bersifat opsional dan hanya diperlukan untuk mengimpor Wsdl. Nilai default adalah $null.
+Nama lokal Titik Akhir WSDL (port) yang akan diimpor. Panjangnya harus 1 hingga 400 karakter. Parameter ini opsional dan hanya diperlukan untuk mengimpor Wsdl. Nilai default adalah $null.
 
 ```yaml
 Type: System.String
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -WsdlServiceName
-Nama lokal Layanan WSDL yang akan diimpor. Harus memiliki panjang 1 hingga 400 karakter. Parameter ini bersifat opsional dan hanya diperlukan untuk mengimpor Wsdl . Nilai default adalah $null.
+Nama lokal Layanan WSDL yang akan diimpor. Panjangnya harus 1 hingga 400 karakter. Parameter ini opsional dan hanya diperlukan untuk mengimpor Wsdl . Nilai default adalah $null.
 
 ```yaml
 Type: System.String
@@ -242,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -262,13 +262,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Export-AzureRmApiManagementApi](./Export-AzureRmApiManagementApi.md)
+[Ekspor-AzureRmApiManagementApi](./Export-AzureRmApiManagementApi.md)
 
 [Get-AzureRmApiManagementApi](./Get-AzureRmApiManagementApi.md)
 
 [New-AzureRmApiManagementApi](./New-AzureRmApiManagementApi.md)
 
-[Remove-AzureRmApiManagementApi](./Remove-AzureRmApiManagementApi.md)
+[Hapus-AzureRmApiManagementApi](./Remove-AzureRmApiManagementApi.md)
 
 [Set-AzureRmApiManagementApi](./Set-AzureRmApiManagementApi.md)
 

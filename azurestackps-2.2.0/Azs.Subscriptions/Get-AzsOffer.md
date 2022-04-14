@@ -4,11 +4,11 @@ Module Name: Azs.Subscriptions
 online version: https://docs.microsoft.com/powershell/module/azs.subscriptions/get-azsoffer
 schema: 2.0.0
 ms.openlocfilehash: 7b2fcb224486915e78bdd90a84941ac0207a45c3
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136578463"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141811688"
 ---
 # Get-AzsOffer
 
@@ -41,7 +41,7 @@ Id          : /delegatedProviders/default/offers/TestOffer-8322dc27-47a0-4446-89
 Name        : TestOffer-8322dc27-47a0-4446-89a0-eb5a0ec3b12b
 ```
 
-Mendapatkan daftar penawaran publik
+Dapatkan daftar penawaran publik
 
 ## PARAMETERS
 
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

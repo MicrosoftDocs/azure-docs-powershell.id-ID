@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.apima
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Set-AzureRmApiManagementCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Set-AzureRmApiManagementCertificate.md
-ms.openlocfilehash: 7aa9bab2b6f6852e80b96b70357b7bd0db8596c2b62f5816871741d3fc914f08
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: f7712a7938617d979dad2feabf4d2b2126e20433
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418578"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142101465"
 ---
 # Set-AzureRmApiManagementCertificate
 
 ## SYNOPSIS
-Mengubah sertifikat Manajemen API yang dikonfigurasi untuk autentikasi bersama dengan backend.
+Mengubah sertifikat API Management yang dikonfigurasi untuk autentikasi bersama dengan backend.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -37,7 +37,7 @@ Set-AzureRmApiManagementCertificate -Context <PsApiManagementContext> -Certifica
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmApiManagementCertificate** mengubah sertifikat Manajemen API Azure.
+Cmdlet **Set-AzureRmApiManagementCertificate** mengubah sertifikat azure API Management.
 
 ## EXAMPLES
 
@@ -47,12 +47,12 @@ PS C:\>$ApiMgmtContext = New-AzureRmApiManagementContext -ResourceGroupName "Api
 PS C:\>Set-AzureRmApiManagementCertificate -Context $ApiMgmtContext -CertificateId "0123456789" -PfxFilePath "C:\contoso\certificates\apimanagementnew.pfx" -PfxPassword "2222"
 ```
 
-Perintah ini mengubah sertifikat Manajemen API yang ditentukan.
+Perintah ini mengubah sertifikat API Management yang ditentukan.
 
 ## PARAMETERS
 
 ### -CertificateId
-Menentukan ID sertifikat untuk diubah.
+Menentukan ID sertifikat yang akan diubah.
 
 ```yaml
 Type: System.String
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Menentukan objek **PsApiManagementContext.**
+Menentukan objek **PsApiManagementContext** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 
 ### -PfxBytes
 Menentukan array byte file sertifikat dalam format .pfx.
-Parameter ini diperlukan jika Anda tidak menentukan parameter *PfxFilePath.*
+Parameter ini diperlukan jika Anda tidak menentukan parameter *PfxFilePath* .
 
 ```yaml
 Type: System.Byte[]
@@ -128,8 +128,8 @@ Accept wildcard characters: False
 ```
 
 ### -PfxFilePath
-Menentukan jalur ke file sertifikat dalam format .pfx untuk membuat dan mengunggah.
-Parameter ini diperlukan jika Anda tidak menentukan parameter *PfxBytes.*
+Menentukan jalur ke file sertifikat dalam format .pfx untuk dibuat dan diunggah.
+Parameter ini diperlukan jika Anda tidak menentukan parameter *PfxBytes* .
 
 ```yaml
 Type: System.String
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -181,8 +181,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmApiManagementCertificate](./Get-AzureRmApiManagementCertificate.md)
 
-[New-AzureRmApiManagementCertificate](./New-AzureRmApiManagementCertificate.md)
+[Baru-AzureRmApiManagementCertificate](./New-AzureRmApiManagementCertificate.md)
 
-[Remove-AzureRmApiManagementCertificate](./Remove-AzureRmApiManagementCertificate.md)
+[Hapus-AzureRmApiManagementCertificate](./Remove-AzureRmApiManagementCertificate.md)
 
 

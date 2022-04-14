@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Get-AzureRmApiManagementPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Get-AzureRmApiManagementPolicy.md
 ms.openlocfilehash: fcf88fcb9b54adec01b8a04b50f557b6a74e7ca8
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425507"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141888231"
 ---
 # Get-AzureRmApiManagementPolicy
 
 ## SYNOPSIS
-Mendapatkan kebijakan lingkup tertentu.
+Mendapatkan kebijakan lingkup yang ditentukan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -50,7 +50,7 @@ Get-AzureRmApiManagementPolicy -Context <PsApiManagementContext> [-Format <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmApiManagementPolicy** mendapatkan kebijakan lingkup tertentu.
+Cmdlet **Get-AzureRmApiManagementPolicy** mendapatkan kebijakan lingkup yang ditentukan.
 
 ## EXAMPLES
 
@@ -62,7 +62,7 @@ PS C:\>Get-AzureRmApiManagementPolicy -Context $apimContext -SaveAs "C:\contoso\
 
 Perintah ini mendapatkan kebijakan tingkat penyewa dan menyimpannya ke file bernama tenantpolicy.xml.
 
-### Contoh 2: Mendapatkan kebijakan cakupan produk
+### Contoh 2: Dapatkan kebijakan lingkup produk
 ```powershell
 PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzureRmApiManagementPolicy -Context $apimContext -ProductId "0123456789"
@@ -70,7 +70,7 @@ PS C:\>Get-AzureRmApiManagementPolicy -Context $apimContext -ProductId "01234567
 
 Perintah ini mendapatkan kebijakan lingkup produk
 
-### Contoh 3: Mendapatkan kebijakan lingkup API
+### Contoh 3: Dapatkan kebijakan lingkup API
 ```powershell
 PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzureRmApiManagementPolicy -Context $apimContext -ApiId "9876543210"
@@ -78,7 +78,7 @@ PS C:\>Get-AzureRmApiManagementPolicy -Context $apimContext -ApiId "9876543210"
 
 Perintah ini mendapatkan kebijakan lingkup API.
 
-### Contoh 4: Mendapatkan kebijakan lingkup operasi
+### Contoh 4: Dapatkan kebijakan lingkup operasi
 ```powershell
 PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzureRmApiManagementPolicy -Context $apimContext -ApiId "9876543210" -OperationId "777"
@@ -90,7 +90,7 @@ Perintah ini mendapatkan kebijakan lingkup operasi.
 
 ### -ApiId
 Menentukan pengidentifikasi API yang sudah ada.
-Jika Anda menentukan parameter ini, cmdlet akan mengembalikan kebijakan lingkup API.
+Jika Anda menentukan parameter ini cmdlet mengembalikan kebijakan lingkup API.
 
 ```yaml
 Type: System.String
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -149,7 +149,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 ps_force
 
 ```yaml
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 
 ### -Format
 Menentukan format kebijakan manajemen API.
-Nilai default untuk parameter ini adalah "application/xml.ms-azure-apim.policy+xml".
+Nilai default untuk parameter ini adalah "application/vnd.ms-azure-apim.policy+xml".
 
 ```yaml
 Type: System.String
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 
 ### -OperationId
 Menentukan pengidentifikasi operasi API yang sudah ada.
-Jika Anda menentukan parameter ini dengan *ApiId,* cmdlet akan mengembalikan kebijakan lingkup operasi.
+Jika Anda menentukan parameter ini dengan *ApiId* , cmdlet mengembalikan kebijakan lingkup operasi.
 
 ```yaml
 Type: System.String
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 
 ### -ProductId
 Menentukan pengidentifikasi produk yang sudah ada.
-Jika Anda menentukan parameter ini, cmdlet akan mengembalikan kebijakan lingkup produk.
+Jika Anda menentukan parameter ini cmdlet mengembalikan kebijakan lingkup produk.
 
 ```yaml
 Type: System.String
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 
 ### -SaveAs
 Menentukan jalur file untuk menyimpan hasilnya.
-Jika Anda tidak menentukan parameter ini, hasilnya akan saluran sebagai sting.
+Jika Anda tidak menentukan parameter ini, hasilnya akan disalurkan sebagai sengatan.
 
 ```yaml
 Type: System.String
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -259,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -277,7 +277,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Remove-AzureRmApiManagementPolicy](./Remove-AzureRmApiManagementPolicy.md)
+[Hapus-AzureRmApiManagementPolicy](./Remove-AzureRmApiManagementPolicy.md)
 
 [Set-AzureRmApiManagementPolicy](./Set-AzureRmApiManagementPolicy.md)
 

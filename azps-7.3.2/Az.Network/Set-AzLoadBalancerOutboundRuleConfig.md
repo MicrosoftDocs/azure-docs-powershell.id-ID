@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzLoadBalancerOutboundRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzLoadBalancerOutboundRuleConfig.md
-ms.openlocfilehash: 4a156d08a38a702585906f78dd1a8636d6791443
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 484ecb1a9401860d36d11cbc82574f99ae4797fa
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140371715"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141934539"
 ---
 # Set-AzLoadBalancerOutboundRuleConfig
 
 ## SYNOPSIS
-Mengatur konfigurasi aturan keluar untuk penyeimbang muat.
+Mengatur konfigurasi aturan keluar untuk penyeimbang muatan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azloadbalanceroutboundruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,20 +39,20 @@ Set-AzLoadBalancerOutboundRuleConfig -LoadBalancer <PSLoadBalancer> -Name <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzLoadBalancerOutboundRuleConfig** mengatur konfigurasi aturan keluar untuk penyeimbang muat Azure.
+Cmdlet **Set-AzLoadBalancerOutboundRuleConfig** mengatur konfigurasi aturan keluar untuk penyeimbang muatan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah konfigurasi aturan keluar pada penyeimbang muat
+### Contoh 1: Mengubah konfigurasi aturan keluar pada penyeimbang muatan
 ```powershell
 PS C:\>$slb = Get-AzLoadBalancer -ResourceGroupName "MyResourceGroup" -Name "MyLoadBalancer"
 PS C:\>$slb | Add-AzLoadBalancerOutboundRuleConfig -Name "NewRule" -Protocol "Tcp" -FrontendIPConfiguration $slb.FrontendIpConfigurations[0] -BackendAddressPool $slb.BackendAddressPools[0] -IdleTimeoutInMinutes 5
 PS C:\>$slb | Set-AzLoadBalancerOutboundRuleConfig -Name "NewRule" -Protocol "Tcp" -FrontendIPConfiguration $slb.FrontendIpConfigurations[0] -BackendAddressPool $slb.BackendAddressPools[0] -IdleTimeoutInMinutes 10
 ```
 
-Perintah pertama mendapatkan penyeimbang muat bernama MyLoadBalancer, lalu menyimpannya di $slb variabel.
-Perintah kedua menggunakan operator pipeline untuk melewati penyeimbang muat di $slb ke Add-AzLoadBalancerOutboundRuleConfig, yang menambahkan konfigurasi aturan keluar ke dalamnya.
-Perintah ketiga melewati penyeimbang muat ke **Set-AzLoadBalancerOutboundRuleConfig**, yang menyimpan dan memperbarui konfigurasi aturan keluar.
+Perintah pertama mendapatkan load balancer bernama MyLoadBalancer, lalu menyimpannya dalam variabel $slb.
+Perintah kedua menggunakan operator pipeline untuk mengirimkan penyeimbang muatan dalam $slb ke Add-AzLoadBalancerOutboundRuleConfig, yang menambahkan konfigurasi aturan keluar ke dalamnya.
+Perintah ketiga melewati penyeimbang muatan ke **Set-AzLoadBalancerOutboundRuleConfig**, yang menyimpan dan memperbarui konfigurasi aturan keluar.
 
 ## PARAMETERS
 
@@ -69,8 +72,8 @@ Accept wildcard characters: False
 ```
 
 ### -BackendAddressPool
-Referensi ke 10 DIP.
-Lalu lintas keluar dimuat secara acak di seluruh IP dalam IP backend.
+Referensi ke kumpulan DIP.
+Lalu lintas keluar secara acak memuat seimbang di seluruh IP di IP backend.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSBackendAddressPool
@@ -85,8 +88,8 @@ Accept wildcard characters: False
 ```
 
 ### -BackendAddressPoolId
-Referensi ke 10 DIP.
-Lalu lintas keluar dimuat secara acak di seluruh IP dalam IP backend.
+Referensi ke kumpulan DIP.
+Lalu lintas keluar secara acak memuat seimbang di seluruh IP di IP backend.
 
 ```yaml
 Type: System.String
@@ -116,8 +119,8 @@ Accept wildcard characters: False
 ```
 
 ### -EnableTcpReset
-Menerima Reset TCP dua arah pada waktu habis habis arus TCP atau pemutusan koneksi yang tidak diharapkan.
-Elemen ini hanya digunakan saat protokol diatur ke TCP.
+Terima Pengaturan Ulang TCP dua arah pada batas waktu diam aliran TCP atau pemutusan koneksi yang tidak diharapkan.
+Elemen ini hanya digunakan ketika protokol diatur ke TCP.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendIpConfiguration
-Alamat IP Frontend dari penyeimbang muat.
+Alamat IP Frontend dari penyeimbang muatan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSResourceId[]
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Referensi dari sumber daya penyeimbang muat.
+Referensi sumber daya load balancer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
@@ -191,7 +194,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
+### -Protokol
 Protokol - TCP, UDP atau Semua
 
 ```yaml
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

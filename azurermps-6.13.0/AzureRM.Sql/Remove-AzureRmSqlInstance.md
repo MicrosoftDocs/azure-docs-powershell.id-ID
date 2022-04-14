@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.sql/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Remove-AzureRmSqlInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Remove-AzureRmSqlInstance.md
-ms.openlocfilehash: ba393fd965b12a52d85f1bd993be77f1b2f02c00f402c7028bd5056d456a4f65
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 1da1c431d41c7277a8291bb9a012218057b9c678
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140856656"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142095975"
 ---
 # Remove-AzureRmSqlInstance
 
 ## SYNOPSIS
-Menghapus Instans Database SQL Terkelola Azure.
+Menghapus Instans Database Terkelola Azure SQL.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,7 +40,7 @@ Remove-AzureRmSqlInstance [-ResourceId] <String> [-Force] [-DefaultProfile <IAzu
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmSqlInstance** menghapus Azure SQL Database Yang Dikelola.
+Cmdlet **Remove-AzureRmSqlInstance** menghapus Instans terkelola Azure SQL Database.
 
 ## EXAMPLES
 
@@ -68,7 +68,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Lewati pesan konfirmasi untuk melakukan tindakan
 
 ```yaml
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek AzureSqlManagedInstanceModel yang akan dihapus
+Objek AzureSqlManagedInstanceModel untuk dihapus
 
 ```yaml
 Type: AzureSqlManagedInstanceModel
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-SQL nama contoh.
+SQL nama instans.
 
 ```yaml
 Type: String
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya dari objek contoh yang akan dihapus
+Id sumber daya objek instans untuk dihapus
 
 ```yaml
 Type: String
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

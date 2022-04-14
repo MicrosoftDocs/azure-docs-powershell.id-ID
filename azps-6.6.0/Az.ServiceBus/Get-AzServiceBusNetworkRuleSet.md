@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusNetworkRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusNetworkRuleSet.md
 ms.openlocfilehash: 4afa8cadeca438154f2105b51e81273fba045544
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140098757"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141905601"
 ---
 # Get-AzServiceBusNetworkRuleSet
 
 ## SYNOPSIS
-Mendapatkan detail kumpulan nama NetworkruleSet Hub Acara di langganan Azure saat ini.
+Mendapatkan detail Event Hubs NetworkruleSet ruang nama dalam langganan Azure saat ini.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/get-azservicebusnetworkruleset) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/get-azservicebusnetworkruleset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Get-AzServiceBusNetworkRuleSet [-ResourceId] <String> [-DefaultProfile <IAzureCo
 ```
 
 ## DESCRIPTION
-Mendapatkan detail kumpulan nama NetworkruleSet Hub Acara di langganan Azure saat ini.
+Mendapatkan detail Event Hubs NetworkruleSet ruang nama dalam langganan Azure saat ini.
 
 ## EXAMPLES
 
@@ -49,26 +49,26 @@ Mendapatkan detail kumpulan nama NetworkruleSet Hub Acara di langganan Azure saa
 ```powershell
 PS C:\> Get-AzServiceBusNetworkRuleSet -ResourceGroupName  v-ajnavtest -Namespace ServiceBus-Namespace-1122
 ```
-Nama : default DefaultAction : Perbolehkan Id: /subscriptions/subscriptionId/resourceGroups/RSG-TestAzEventhub/providers/Microsoft.ServiceBus/namespaces/ServiceBus-Namespace-1122/networkRuleSets/default Type : Microsoft.ServiceBus/Namespaces/NetworkRuleSet IpRules : {1.1.1.1, Allow} VirtualNetworkRules : {/subscriptions/subscriptionId/resourcegroups/v-ajnavtest/providers/Microsoft.Network/virtualNetworks/sbehv subnetst1/subnets/default,  False}
+Nama : DefaultAction : Allow Id : /subscriptions/subscriptionId/resourceGroups/RSG-TestAzEventhub/providers/Microsoft.ServiceBus/namespaces/ServiceBus-Namespace-1122/networkRuleSets/default Type : Microsoft.ServiceBus/Namespaces/NetworkRuleSet IpRules : {1.1.1.1, Allow} VirtualNetworkRules : {/subscriptions/subscriptionId/resourcegroups/v-ajnavtest/providers/Microsoft.Network/virtualNetworks/sbehvnettest1/subnets/default,  False}
 
-Dapatkan detail tentang Hub Kejadian NetworkruleSet dari kumpulan nama menggunakan parameter ResourceGroup dan Namespace. 
+Dapatkan detail Event Hubs NetworkruleSet ruang nama menggunakan parameter ResourceGroup dan Namespace. 
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzServiceBusNetworkRuleSet -Namespace ServiceBus-Namespace-1122
 ```
-Nama : default DefaultAction : Perbolehkan Id: /subscriptions/subscriptionId/resourceGroups/RSG-TestAzEventhub/providers/Microsoft.ServiceBus/namespaces/ServiceBus-Namespace-1122/networkRuleSets/default Type : Microsoft.ServiceBus/Namespaces/NetworkRuleSet IpRules : {1.1.1.1, Allow} VirtualNetworkRules : {/subscriptions/subscriptionId/resourcegroups/v-ajnavtest/providers/Microsoft.Network/virtualNetworks/sbehv subnetst1/subnets/default,  False}
+Nama : DefaultAction : Allow Id : /subscriptions/subscriptionId/resourceGroups/RSG-TestAzEventhub/providers/Microsoft.ServiceBus/namespaces/ServiceBus-Namespace-1122/networkRuleSets/default Type : Microsoft.ServiceBus/Namespaces/NetworkRuleSet IpRules : {1.1.1.1, Allow} VirtualNetworkRules : {/subscriptions/subscriptionId/resourcegroups/v-ajnavtest/providers/Microsoft.Network/virtualNetworks/sbehvnettest1/subnets/default,  False}
 
-Dapatkan detail Hub Acara NetworkruleSet dari kumpulan nama menggunakan Kumpulan nama yang ada di langganan saat ini.
+Dapatkan detail Event Hubs NetworkruleSet ruang nama menggunakan Namespace yang ada dalam langganan saat ini.
 
 ### Contoh 3
 ```powershell
 PS C:\> Get-AzServiceBusNetworkRuleSet -ResourceId /SubscriptionId/resourcegroups/ResourceGroup/providers/Microsoft.ServiceBus/namespaces/ServiceBus-Namespace-2389
 ```
 
-Nama: default DefaultAction : Perbolehkan Id : /subscriptions/subscriptionId/resourceGroups/RSG-TestAzEventhub/providers/Microsoft.ServiceBus/namespaces/ServiceBus-Namespace-2389/networkRuleSets/default Type : Microsoft.ServiceBus/Namespaces/NetworkRuleSet IpRules : {1.1.1.1, Allow} VirtualNetworkRules : {/subscriptions/subscriptionId/resourcegroups/v-ajnavtest/providers/Microsoft.Network/virtualNetworks/sbehv subnetst1/subnets/default,  False}
+Nama : DefaultAction : Allow Id : /subscriptions/subscriptionId/resourceGroups/RSG-TestAzEventhub/providers/Microsoft.ServiceBus/namespaces/ServiceBus-Namespace-2389/networkRuleSets/default Type : Microsoft.ServiceBus/Namespaces/NetworkRuleSet IpRules : {1.1.1.1, Allow} VirtualNetworkRules : {/subscriptions/subscriptionId/resourcegroups/v-ajnavtest/providers/Microsoft.Network/virtualNetworks/sbehvnettest1/subnets/default,  False}
 
-Dapatkan detail Hub Kejadian NetworkruleSet dari kumpulan nama menggunakan Id Sumber Daya dari Kumpulan Nama lainnya 
+Dapatkan detail Event Hubs NetworkruleSet ruang nama menggunakan Id Sumber Daya ruang Nama lainnya 
 
 ## PARAMETERS
 
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Namespace Resource Id
+Id Sumber Daya Ruang Nama
 
 ```yaml
 Type: System.String
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

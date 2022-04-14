@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.autom
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRmAutomationSourceControlSyncJobOutput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRmAutomationSourceControlSyncJobOutput.md
-ms.openlocfilehash: 2a5b14fa1d33e282edd96c4d4bba44d6af323fee20c7cb3f5d98cf271e9400b6
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 59de6fa12ef3c6bd774f05fe55d31d74bb9efa13
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140867834"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141887779"
 ---
 # Get-AzureRmAutomationSourceControlSyncJobOutput
 
 ## SYNOPSIS
-Mendapatkan output pekerjaan sinkronisasi kontrol sumber Otomatisasi Azure.
+Mendapatkan output dari pekerjaan sinkronisasi kontrol sumber Azure Automation.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ Get-AzureRmAutomationSourceControlSyncJobOutput -SourceControlName <String> -Job
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmAutomationSourceControlSyncJobOutput** mendapatkan output untuk pekerjaan sinkronisasi kontrol sumber Otomatisasi Azure.
+Cmdlet **Get-AzureRmAutomationSourceControlSyncJobOutput** mendapatkan output untuk pekerjaan sinkronisasi kontrol sumber Azure Automation.
 
 ## EXAMPLES
 
@@ -155,8 +155,8 @@ Accept wildcard characters: False
 ```
 
 ### -Stream
-Tipe aliran.
-Default untuk Semua.
+Tipe streaming.
+Defaults to Any.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Automation.Common.SourceControlSyncJobStreamType
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -StreamId
-The stream id.
+Id streaming.
 
 ```yaml
 Type: System.String
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Enable-AzSynapseSqlAdvancedDataSecurity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Enable-AzSynapseSqlAdvancedDataSecurity.md
 ms.openlocfilehash: 007f0390077395a0dc06046a2169dd1fa509f6ea
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140243125"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141794822"
 ---
 # Enable-AzSynapseSqlAdvancedDataSecurity
 
@@ -18,7 +18,7 @@ ms.locfileid: "140243125"
 Mengaktifkan Keamanan Data Tingkat Lanjut di ruang kerja.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/enable-azsynapsesqladvanceddatasecurity) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/enable-azsynapsesqladvanceddatasecurity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Enable-AzSynapseSqlAdvancedDataSecurity -ResourceId <String> [-DoNotConfigureVul
 ```
 
 ## DESCRIPTION
-Cmdlet **Enable-AzSynapseSqlAdvancedDataSecurity** mengaktifkan Keamanan Data Tingkat Lanjut di ruang kerja. Advanced Data Security adalah paket keamanan terpadu yang mencakup Klasifikasi Data, Penilaian Kerentanan, dan Perlindungan Ancaman Tingkat Lanjut untuk ruang kerja Anda. (Akun penyimpanan baru akan otomatis dibuat untuk menyimpan penilaian kerentanan. Jika akun penyimpanan sebelumnya dibuat untuk tujuan ini, akun akan digunakan sebagai gantinya)
+Cmdlet **Enable-AzSynapseSqlAdvancedDataSecurity** memungkinkan Keamanan Data Tingkat Lanjut di ruang kerja. Keamanan Data Tingkat Lanjut adalah paket keamanan terpadu yang mencakup Klasifikasi Data, Penilaian Kerentanan, dan Perlindungan Ancaman Tingkat Lanjut untuk ruang kerja Anda. (Akun penyimpanan baru akan dibuat secara otomatis untuk menghemat penilaian kerentanan. Jika akun penyimpanan sebelumnya dibuat untuk tujuan ini, akun tersebut akan digunakan sebagai gantinya)
 
 ## EXAMPLES
 
@@ -53,26 +53,26 @@ Cmdlet **Enable-AzSynapseSqlAdvancedDataSecurity** mengaktifkan Keamanan Data Ti
 PS C:\> Enable-AzSynapseSqlAdvancedDataSecurity -WorkspaceName ContosoWorkspace
 ```
 
-Perintah ini memungkinkan ruang kerja Keamanan Data Tingkat Lanjut.
+Perintah ini memungkinkan Keamanan Data Tingkat Lanjut ruang kerja.
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzSynapseWorkspace -Name ContosoWorkspace | Enable-AzSynapseSqlAdvancedDataSecurity
 ```
 
-Perintah ini memungkinkan ruang kerja Keamanan Data Tingkat Lanjut melalui saluran.
+Perintah ini memungkinkan Keamanan Data Tingkat Lanjut ruang kerja melalui saluran pipa.
 
 ### Contoh 3
 ```powershell
 PS C:\> Enable-AzSynapseSqlAdvancedDataSecurity -WorkspaceName ContosoWorkspace -DoNotConfigureVulnerabilityAssessment
 ```
 
-Perintah ini mengaktifkan Keamanan Data Tingkat Lanjut ruang kerja melalui saluran dan tidak mengaktifkan Penilaian Kerentanan secara otomatis.
+Perintah ini memungkinkan Keamanan Data Tingkat Lanjut ruang kerja melalui saluran pipa dan tidak mengaktifkan Penilaian Kerentanan secara otomatis.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeploymentName
-Memberikan nama kustom untuk penyebaran Keamanan Data Tingkat Lanjut.
+Masukkan nama kustom untuk penyebaran Keamanan Data Tingkat Lanjut.
 
 ```yaml
 Type: System.String
@@ -176,7 +176,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

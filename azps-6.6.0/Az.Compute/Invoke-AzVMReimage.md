@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Invoke-AzVMReimage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Invoke-AzVMReimage.md
 ms.openlocfilehash: 66b76f9fe56439c40ffd8dcc003d0b5bc7392e0b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140485797"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141871034"
 ---
 # Invoke-AzVMReimage
 
 ## SYNOPSIS
-Mengganti komputer virtual Azure.
+Mengolah ulang mesin virtual Azure.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/invoke-azvmreimage) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/invoke-azvmreimage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Invoke-AzVMReimage [-ResourceGroupName] <String> [-VMName] <String> [-TempDisk] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Invoke-AzVMReimage** mengulangi mesin virtual Azure.
+Cmdlet **Invoke-AzVMReimage mereimage** mesin virtual Azure.
 
 ## EXAMPLES
 
@@ -37,12 +37,12 @@ Cmdlet **Invoke-AzVMReimage** mengulangi mesin virtual Azure.
 PS C:\> Invoke-AzVMReimage -ResourceGroupName "ResourceGroup11" -Name "VirtualMachine07"
 ```
 
-Perintah ini akan mengulangi mesin virtual bernama VirtualMachine07 dalam ResourceGroup11.
+Perintah ini mereimages mesin virtual bernama VirtualMachine07 di ResourceGroup11.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: System.String
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -TempDisk
-Menentukan apakah akan mengganti disk sementara.
+Menentukan apakah akan mengolah ulang cakram sementara.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudServiceLoadBalancerFrontendIPConfigurationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudServiceLoadBalancerFrontendIPConfigurationObject.md
 ms.openlocfilehash: 461ce43fb82dc37040e16bdb6bc5af174f904aa8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140336417"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141871832"
 ---
 # New-AzCloudServiceLoadBalancerFrontendIPConfigurationObject
 
@@ -18,7 +18,7 @@ ms.locfileid: "140336417"
 Membuat objek dalam memori untuk LoadBalancerFrontendIPConfiguration
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cloudservice/new-azcloudserviceloadbalancerfrontendipconfigurationobject) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/new-azcloudserviceloadbalancerfrontendipconfigurationobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +49,7 @@ PS C:\> $loadBalancerConfig = New-AzCloudServiceLoadBalancerConfigurationObject 
 Perintah ini membuat objek konfigurasi IP frontend load balancer yang digunakan untuk membuat atau memperbarui layanan awan.
 Untuk detail selengkapnya, lihat New-AzCloudService.
 
-### Contoh 2: Buat penyeimbang muat objek konfigurasi IP frontend dengan alamat ID Privat
+### Contoh 2: Membuat objek konfigurasi IP frontend load balancer dengan alamat ID Pribadi
 ```powershell
 # Create role profile object
 PS C:\> $subnet = New-AzVirtualNetworkSubnetConfig -Name "WebTier" -AddressPrefix "10.0.0.0/24" -WarningAction SilentlyContinue 
@@ -58,7 +58,7 @@ PS C:\> $loadBalancerConfig = New-AzCloudServiceLoadBalancerConfigurationObject 
 
 ```
 
-Perintah ini membuat penyeimbang muat objek konfigurasi IP frontend dengan alamat IP Privat
+Perintah ini membuat objek konfigurasi IP frontend load balancer dengan alamat IP Privat
 
 ## PARAMETERS
 
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateIPAddress
-Alamat IP Privat
+Alamat IP Pribadi
 
 ```yaml
 Type: System.String
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzDiagnosticSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzDiagnosticSetting.md
-ms.openlocfilehash: 0dbb692291c75ed39a84f83ef00be736feba1cb8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5b79f1b8c87ed85743419872653bf507e21ad67a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140556032"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141935997"
 ---
 # Get-AzDiagnosticSetting
 
 ## SYNOPSIS
-Mendapatkan kategori dan tinggi waktu yang dicatat.
+Mendapatkan kategori dan biji-bijian waktu yang dicatat.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azdiagnosticsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,12 +36,12 @@ Get-AzDiagnosticSetting [-Name <String>] [-SubscriptionId] <String> [-DefaultPro
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDiagnosticSetting** mendapatkan kategori dan tinggi waktu yang dicatat untuk sumber daya.
-Tinggi waktu adalah interval agregasi dari metrik.
+Cmdlet **Get-AzDiagnosticSetting** mendapatkan kategori dan butir waktu yang dicatat untuk sumber daya.
+Gandum waktu adalah interval agregasi metrik.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan status kategori pembuatan log dan tinggi waktu
+### Contoh 1: Mendapatkan status kategori pembuatan log dan biji-bijian waktu
 ```
 PS C:\>Get-AzDiagnosticSetting -ResourceId "/subscriptions/1a66ce04-b633-4a0b-b2bc-a912ec8986a6/ResourceGroups/ContosoRG/providers/microsoft.keyvault/KeyVaults/ContosoKeyVault"
 StorageAccountId   : /subscriptions/1a66ce04-b633-4a0b-b2bc-a912ec8986a6/ResourceGroups/ContosoRG/providers/microsoft.storage/accounts/ContosoStorageAccount
@@ -50,12 +53,12 @@ Enabled  : True
 Category : AuditEvent
 ```
 
-Perintah ini mendapatkan kategori dan time grains yang dicatat untuk Azure Key Vault dengan *ResourceId* of /subscriptions/1a66ce04-b633-4a0b-b2bc-a912ec8986a6/ResourceGroups/ContosoRG/providers/microsoft.keyvault/KeyVaults/ContosoKeyVault.
+Perintah ini mendapatkan kategori dan butir waktu yang dicatat untuk Azure Key Vault dengan *ResourceId* /subscriptions/1a66ce04-b633-4a0b-b2bc-a912ec8986a6/ResourceGroups/ContosoRG/providers/microsoft.keyvault/KeyVaults/ContosoKeyVault.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama pengaturan diagnostik. Jika tidak memberikan default panggilan ke "layanan" seperti pada API sebelumnya.
+Nama pengaturan diagnostik. Jika tidak memberikan panggilan default ke "layanan" seperti dalam API sebelumnya.
 
 ```yaml
 Type: System.String
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

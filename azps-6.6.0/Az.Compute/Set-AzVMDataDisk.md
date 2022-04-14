@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMDataDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMDataDisk.md
 ms.openlocfilehash: e870fc9318a34d2b9ff83632cbe7447bf566ecdd
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140335221"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141870368"
 ---
 # Set-AzVMDataDisk
 
@@ -19,11 +19,11 @@ ms.locfileid: "140335221"
 Mengubah properti disk data mesin virtual.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmdatadisk) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmdatadisk) untuk informasi terbaru.
 
 ## SYNTAX
 
-### ChangeWithName
+### UbahWithName
 ```
 Set-AzVMDataDisk [-VM] <PSVirtualMachine> [-Name] <String> [[-Caching] <CachingTypes>]
  [[-DiskSizeInGB] <Int32>] [-StorageAccountType <String>] [-DiskEncryptionSetId <String>] [-WriteAccelerator]
@@ -38,7 +38,7 @@ Set-AzVMDataDisk [-VM] <PSVirtualMachine> [-Lun] <Int32> [[-Caching] <CachingTyp
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVMDataDisk** memodifikasi properti disk data mesin virtual.
+Cmdlet **Set-AzVMDataDisk** mengubah properti disk data mesin virtual.
 
 ## EXAMPLES
 
@@ -49,14 +49,14 @@ PS C:\> Set-AzVMDataDisk -VM $VM -Name "DataDisk01" -Caching ReadWrite | Update-
 ```
 
 Perintah pertama mendapatkan mesin virtual bernama ContosoVM07 dengan menggunakan **Get-AzVM**.
-Perintah menyimpannya di $VM variabel.
-Perintah kedua memodifikasi mode cache untuk disk data yang bernama DataDisk01 di komputer virtual dalam $VM.
+Perintah menyimpannya dalam variabel $VM.
+Perintah kedua mengubah mode cache untuk disk data bernama DataDisk01 pada mesin virtual di $VM.
 Perintah melewati hasil ke cmdlet Update-AzVM, yang mengimplementasikan perubahan Anda.
-Perubahan pada mode kas menyebabkan mesin virtual memulai ulang.
+Perubahan pada mode kas menyebabkan mesin virtual dimulai ulang.
 
 ### Contoh 2
 
-Mengubah properti disk data mesin virtual. (otomatisgenerated)
+Mengubah properti disk data mesin virtual. (autogenerasi)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Set-AzVMDataDisk -Caching None -Lun 1 -VM <PSVirtualMachine>
@@ -65,11 +65,11 @@ Set-AzVMDataDisk -Caching None -Lun 1 -VM <PSVirtualMachine>
 ## PARAMETERS
 
 ### -Caching
-Menentukan mode cache disk.
+Menentukan mode cache diska.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - ReadOnly
 - ReadWrite Nilai defaultnya adalah ReadWrite.
-Mengubah nilai ini menyebabkan mesin virtual memulai ulang.
+Mengubah nilai ini menyebabkan mesin virtual dimulai ulang.
 Pengaturan ini mempengaruhi konsistensi dan kinerja disk.
 
 ```yaml
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionSetId
-Menentukan Id sumber daya dari kumpulan enkripsi disk yang dikelola pelanggan.  This can only be specified for managed disk.
+Menentukan ID sumber daya kumpulan enkripsi disk yang dikelola pelanggan.  Ini hanya dapat ditentukan untuk disk yang dikelola.
 
 ```yaml
 Type: System.String
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lun
-Menentukan nomor unit logika (LUN) disk data yang dimodifikasi cmdlet ini.
+Menentukan nomor unit logika (LUN) disk data yang diubah cmdlet ini.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama disk data yang dimodifikasi cmdlet ini.
+Menentukan nama disk data yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountType
-Tipe akun disk terkelola mesin virtual.
+Tipe akun disk yang dikelola mesin virtual.
 
 ```yaml
 Type: System.String
@@ -176,8 +176,8 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan mesin virtual yang digunakan cmdlet ini untuk memodifikasi disk data.
-Untuk mendapatkan objek mesin virtual, gunakan Get-AzVM cmdlet.
+Menentukan mesin virtual di mana cmdlet ini mengubah disk data.
+Untuk mendapatkan objek mesin virtual, gunakan cmdlet Get-AzVM.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -215,9 +215,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
-### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.CachingTypes, Microsoft.Azure.Management.Compute, Version=23.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.CachingTypes, Microsoft.Azure.Management.Compute, Version=23.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
 ## OUTPUTS
 
@@ -227,8 +227,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-azvm](./Get-AzVM.md)
+[Get-AzVM](./Get-AzVM.md)
 
-[Update-azvm](./Update-AzVM.md)
+[Perbarui-AzVM](./Update-AzVM.md)
 
 

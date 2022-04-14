@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRedirectConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRedirectConfiguration.md
-ms.openlocfilehash: e1afe72f2c57a195fa8820982d882364b365030f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2b943170a3a8e67ef85bb19cf9621233a38118a0
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140007654"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141934773"
 ---
 # New-AzApplicationGatewayRedirectConfiguration
 
 ## SYNOPSIS
 Membuat konfigurasi pengalihan untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayredirectconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ New-AzApplicationGatewayRedirectConfiguration -Name <String> -RedirectType <Stri
 ```
 
 ## DESCRIPTION
-**Cmdlet New-AzApplicationGatewayRedirectConfiguration** membuat konfigurasi pengalihan untuk gateway aplikasi.
+Cmdlet **New-AzApplicationGatewayRedirectConfiguration** membuat konfigurasi pengalihan untuk gateway aplikasi.
 
 ## EXAMPLES
 
@@ -50,11 +53,11 @@ New-AzApplicationGatewayRedirectConfiguration -Name <String> -RedirectType <Stri
 PS C:\>$RedirectConfig = New-AzApplicationGatewayRedirectConfiguration -Name "Redirect01" -RedirectType Permanent -TargetListener $listener01
 ```
 
-Perintah ini membuat konfigurasi pengalihan yang bernama Redirect01 dan menyimpan hasilnya dalam variabel yang bernama $RedirectConfig.
+Perintah ini membuat konfigurasi pengalihan bernama Pengalihan01 dan menyimpan hasilnya dalam variabel bernama $RedirectConfig.
 
 ### Contoh 2
 
-Membuat konfigurasi pengalihan untuk gateway aplikasi. (otomatisgenerated)
+Membuat konfigurasi pengalihan untuk gateway aplikasi. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -64,7 +67,7 @@ New-AzApplicationGatewayRedirectConfiguration -IncludePath $false -IncludeQueryS
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludePath
-Sertakan jalur di url yang dialihkan.
+Sertakan jalur dalam url yang dialihkan.
 Default adalah true.
 
 ```yaml
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeQueryString
-Sertakan string kueri di url yang dialihkan.
+Sertakan string kueri dalam url yang dialihkan.
 Default adalah true.
 
 ```yaml
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetUrl
-Pengalihan URL target
+Pengalihan fo URL target
 
 ```yaml
 Type: System.String
@@ -187,11 +190,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
