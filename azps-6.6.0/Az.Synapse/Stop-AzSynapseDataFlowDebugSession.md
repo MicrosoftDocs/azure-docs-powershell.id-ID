@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapseDataFlowDebugSession.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapseDataFlowDebugSession.md
 ms.openlocfilehash: 0af1419de1cd0354c17f6062958f680872b08d99
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140275079"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142117547"
 ---
 # Stop-AzSynapseDataFlowDebugSession
 
 ## SYNOPSIS
-Menghentikan sesi debug aliran data di ruang kerja.
+Menghentikan sesi debug aliran data dalam ruang kerja.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/stop-azsynapsedataflowdebugsession) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/stop-azsynapsedataflowdebugsession) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Stop-AzSynapseDataFlowDebugSession -WorkspaceObject <PSSynapseWorkspace> -Sessio
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzSynapseDataFlowDenapSession** menghentikan sesi debug aliran data dalam ruang kerja yang ditentukan dengan SessionId.
+Cmdlet **Stop-AzSynapseDataFlowDebugSession** menghentikan sesi debug aliran data dalam ruang kerja yang ditentukan dengan SessionId.
 
 ## EXAMPLES
 
@@ -48,7 +48,7 @@ Are you sure you want to stop data flow debug session 'c744f68d-a101-4115-9cd5-8
 [Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): y
 ```
 
-Perintah ini menghentikan sesi debug aliran data "c744f68d-a101-4115-9cd5-8b11314fe4b8" di ruang kerja ContosoWorkspace.
+Perintah ini menghentikan sesi debug alur data "c744f68d-a101-4115-9cd5-8b11314fe4b8" di ruang kerja ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
@@ -60,7 +60,7 @@ Are you sure you want to stop data flow debug session 'c744f68d-a101-4115-9cd5-8
 [Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): y
 ```
 
-Perintah ini menghentikan sesi debug aliran data "c744f68d-a101-4115-9cd5-8b11314fe4b8" melalui pipeline.
+Perintah ini menghentikan sesi debug alur data "c744f68d-a101-4115-9cd5-8b11314fe4b8" melalui pipeline.
 
 ## PARAMETERS
 
@@ -79,8 +79,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 
 ### -PassThru
 Cmdlet ini tidak mengembalikan objek secara default.
-Jika sakelar ini ditentukan, maka true akan dikembalikan jika berhasil.
+Jika sakelar ini ditentukan, sakelar akan mengembalikan true jika berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -SessionId
-Pengidentifikasi sesi Grafik Apik.
+Pengidentifikasi sesi Spark.
 
 ```yaml
 Type: System.String
@@ -125,7 +125,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

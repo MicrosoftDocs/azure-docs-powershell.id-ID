@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Get-AzureRmVmss.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Get-AzureRmVmss.md
 ms.openlocfilehash: d2e9ad0d83c573292996b65924ab7078368d328f
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424557"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141844065"
 ---
 # Get-AzureRmVmss
 
@@ -41,25 +41,25 @@ Get-AzureRmVmss [[-ResourceGroupName] <String>] [[-VMScaleSetName] <String>] [-O
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmVmss** mendapatkan tampilan model dan contoh Virtual Machine Scale Set (VMSS).
+Cmdlet **Get-AzureRmVmss** mendapatkan model dan tampilan instans Kumpulan Skala Mesin Virtual (VMSS).
 Tampilan model adalah properti yang ditentukan pengguna dari kumpulan skala mesin virtual.
-Tampilan contoh adalah status tingkat contoh dari kumpulan skala mesin virtual.
-Tentukan parameter *InstanceView* untuk mendapatkan hanya tampilan contoh kumpulan skala mesin virtual.
+Tampilan instans adalah status tingkat instans dari kumpulan skala mesin virtual.
+Tentukan parameter *InstanceView* untuk mendapatkan hanya tampilan instans kumpulan skala mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan properti VMSS
+### Contoh 1: Dapatkan properti VMSS
 ```
 PS C:\> Get-AzureRmVmss -ResourceGroupName "Group001" -VMScaleSetName "VMSS001"
 ```
 
-Perintah ini memiliki properti VMSS bernama VMSS001 yang dimiliki oleh grup sumber daya bernama Group001.
-Karena perintah tidak menentukan parameter *sakelar InstanceView,* cmdlet mendapatkan tampilan model kumpulan skala mesin virtual.
+Perintah ini mendapatkan properti VMSS bernama VMSS001 yang termasuk dalam grup sumber daya bernama Group001.
+Karena perintah tidak menentukan parameter switch *InstanceView* , cmdlet mendapatkan tampilan model kumpulan skala mesin virtual.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceView
-Mengindikasikan bahwa cmdlet ini hanya mendapatkan tampilan contoh kumpulan skala mesin virtual.
+Menunjukkan bahwa cmdlet ini hanya mendapatkan tampilan instans kumpulan skala mesin virtual.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -OSUpgradeHistory
-Mengindikasikan bahwa cmdlet ini mencantumkan riwayat pemutakhiran os kumpulan skala mesin virtual.
+Menunjukkan bahwa cmdlet ini mencantumkan riwayat pemutakhiran os dari kumpulan skala mesin virtual.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama Grup Sumber Daya VMSS.
+Menentukan nama Grup Sumber Daya dari VMSS.
 
 ```yaml
 Type: System.String
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -148,18 +148,18 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmVmss](./New-AzureRmVmss.md)
+[AzureRmVms baru](./New-AzureRmVmss.md)
 
-[Remove-AzureRmVmss](./Remove-AzureRmVmss.md)
+[Hapus-AzureRmVms](./Remove-AzureRmVmss.md)
 
-[Mulai Ulang-AzureRmVmss](./Restart-AzureRmVmss.md)
+[Mulai ulang-AzureRmVms](./Restart-AzureRmVmss.md)
 
-[Set-AzureRmVmss](./Set-AzureRmVmss.md)
+[Set-AzureRmVms](./Set-AzureRmVmss.md)
 
-[Start-AzureRmVmss](./Start-AzureRmVmss.md)
+[Mulai AzureRmVms](./Start-AzureRmVmss.md)
 
-[Stop-AzureRmVmss](./Stop-AzureRmVmss.md)
+[Stop-AzureRmVms](./Stop-AzureRmVmss.md)
 
-[Update-AzureRmVmss](./Update-AzureRmVmss.md)
+[Pembaruan-AzureRmVms](./Update-AzureRmVmss.md)
 
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Set-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzSecurityAssessmentMetadata.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzSecurityAssessmentMetadata.md
-ms.openlocfilehash: bab05e420961cd5453ac3fcc71fb73d0537c39b2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: b79c9fe5ae1948f19a0e30b8688aea53d9f2fc39
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140006314"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142209209"
 ---
 # Set-AzSecurityAssessmentMetadata
 
 ## SYNOPSIS
 Membuat atau memperbarui tipe penilaian keamanan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.security/set-azsecurityassessmentmetadata) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Set-AzSecurityAssessmentMetadata -Name <String> -DisplayName <String> [-Descript
 
 ## DESCRIPTION
 Membuat atau memperbarui metadata penilaian keamanan, dapat digunakan untuk membuat dan mengelola berbagai properti penilaian.
-Setelah tindakan ini, Anda dapat melaporkan hasil penilaian pada sumber daya apa pun dalam langganan ini.
+Setelah tindakan ini, Anda akan dapat melaporkan hasil penilaian pada sumber daya apa pun dalam langganan ini.
 
 ## EXAMPLES
 
@@ -56,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-String detail yang akan membantu pengguna memahami makna penilaian ini dan cara penghitungannya.
+String mendetail yang akan membantu pengguna memahami arti penilaian ini dan bagaimana penghitungannya.
 
 ```yaml
 Type: String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -162,11 +165,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

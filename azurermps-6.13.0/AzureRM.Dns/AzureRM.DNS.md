@@ -6,11 +6,11 @@ Help Version: 4.1.2.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Dns/Commands.Dns/help/AzureRM.DNS.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Dns/Commands.Dns/help/AzureRM.DNS.md
-ms.openlocfilehash: 621f653daced25716070f2faf20591cda14acac178e036678b40b7c1368d8284
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: b74b4146e8fec1c340a81073ba85780e6cbe04bf
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132418683"
 ---
 # AzureRM.Dns Module
@@ -19,7 +19,7 @@ Topik ini menampilkan topik bantuan untuk Cmdlet DNS Azure.
 
 ## Cmdlet AzureRM.Dns
 ### [Add-AzureRmDnsRecordConfig](Add-AzureRmDnsRecordConfig.md)
-Menambahkan catatan DNS ke objek set catatan lokal.
+Menambahkan catatan DNS ke objek kumpulan catatan lokal.
 
 ### [Get-AzureRmDnsRecordSet](Get-AzureRmDnsRecordSet.md)
 Mendapatkan kumpulan catatan DNS.
@@ -33,16 +33,16 @@ Membuat objek lokal catatan DNS baru.
 ### [New-AzureRmDnsRecordSet](New-AzureRmDnsRecordSet.md)
 Membuat kumpulan catatan DNS.
 
-### [New-AzureRmDnsZone](New-AzureRmDnsZone.md)
+### [AzureRmDnsZone baru](New-AzureRmDnsZone.md)
 Membuat zona DNS baru.
 
-### [Remove-AzureRmDnsRecordConfig](Remove-AzureRmDnsRecordConfig.md)
+### [Hapus-AzureRmDnsRecordConfig](Remove-AzureRmDnsRecordConfig.md)
 Menghapus catatan DNS dari objek kumpulan catatan lokal.
 
 ### [Remove-AzureRmDnsRecordSet](Remove-AzureRmDnsRecordSet.md)
 Menghapus kumpulan catatan.
 
-### [Remove-AzureRmDnsZone](Remove-AzureRmDnsZone.md)
+### [Hapus-AzureRmDnsZone](Remove-AzureRmDnsZone.md)
 Menghapus zona DNS dari grup sumber daya.
 
 ### [Set-AzureRmDnsRecordSet](Set-AzureRmDnsRecordSet.md)

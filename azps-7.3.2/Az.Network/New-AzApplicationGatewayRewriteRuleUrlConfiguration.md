@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRewriteRuleUrlConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRewriteRuleUrlConfiguration.md
-ms.openlocfilehash: 46bdde0c87c2bc32b36fe01ef1883f8b012c54c8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: b9e5f1695affe0f3098b1890473cf05399dd3951
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140007651"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142213435"
 ---
 # New-AzApplicationGatewayRewriteRuleUrlConfiguration
 
 ## SYNOPSIS
-Membuat konfigurasi url tulis ulang aturan untuk gateway aplikasi.
+Membuat konfigurasi url aturan penulisan ulang untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayrewriteruleurlconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzApplicationGatewayRewriteRuleUrlConfiguration [-ModifiedPath <String>] [-M
 ```
 
 ## DESCRIPTION
-**Cmdlet AzApplicationGatewayRewriteRuleUrlConfiguration** membuat konfigurasi url aturan tulis ulang untuk gateway aplikasi Azure.
+Cmdlet **AzApplicationGatewayRewriteRuleUrlConfiguration** membuat konfigurasi URL aturan penulisan ulang untuk gateway aplikasi Azure.
 
 ## EXAMPLES
 
@@ -34,9 +37,9 @@ New-AzApplicationGatewayRewriteRuleUrlConfiguration [-ModifiedPath <String>] [-M
 PS C:\> $urlConfiguration = New-AzApplicationGatewayRewriteRuleUrlConfiguration -ModifiedPath "/abc" -ModifiedQueryString "x=y&a=b"
 ```
 
-Perintah ini membuat konfigurasi url tulis ulang aturan dan menyimpan hasilnya dalam variabel yang bernama $urlConfiguration.
+Perintah ini membuat konfigurasi url aturan penulisan ulang dan menyimpan hasilnya dalam variabel bernama $urlConfiguration.
 
-If you want to update any existing UrlConfiguration, you can do it by creating a new UrlConfiguration and assigning the new UrlConfiguration to the UrlConfiguration property of Rewrite Rule Action Set.
+Jika ingin memperbarui UrlConfiguration yang sudah ada, Anda dapat melakukannya dengan membuat UrlConfiguration baru dan menetapkan UrlConfiguration baru ke properti UrlConfiguration dari Rewrite Rule Action Set.
 
 ## PARAMETERS
 
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -ModifiedPath
-Nilai jalur url.
+Nilai jalur URL.
 
 ```yaml
 Type: System.String
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -ModifiedQueryString
-Url query string value.
+Nilai string kueri url.
 
 ```yaml
 Type: System.String
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -Reroute
-Bendera untuk mengevaluasi ulang peta jalur url yang disediakan dalam aturan perutean permintaan berbasis jalur menggunakan jalur yang dimodifikasi.
+Benderai untuk mengevaluasi ulang peta jalur URL yang disediakan dalam aturan perutean permintaan berbasis jalur menggunakan jalur yang diubah.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -97,11 +100,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

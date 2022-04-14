@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Set-AzureRmApiManagement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Set-AzureRmApiManagement.md
 ms.openlocfilehash: 3831be3072f6922ad986cbde5a0a800764d1656a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419595"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142143962"
 ---
 # Set-AzureRmApiManagement
 
@@ -28,11 +28,11 @@ Set-AzureRmApiManagement -InputObject <PsApiManagement> [-AssignIdentity] [-AsJo
 
 ## DESCRIPTION
 
-Cmdlet **Set-AzureRmApiManagement** memperbarui layanan Manajemen API Azure.
+Cmdlet **Set-AzureRmApiManagement** memperbarui layanan azure API Management.
 
 ## EXAMPLES
 
-### Contoh 1 Dapatkan layanan Manajemen API dan scale-nya Premium dan Tambahkan kawasan
+### Contoh 1 Dapatkan layanan API Management dan skalakan ke Premium dan Tambahkan kawasan
 ```powershell
 PS C:\> $apim = Get-AzureRmApiManagement -ResourceGroupName "ContosoGroup" -Name "ContosoApi"
 PS C:\> $apim.Sku = "Premium"
@@ -41,9 +41,9 @@ PS C:\> $apim.AddRegion("Central US", "Premium", 3)
 PS C:\>Set-AzureRmApiManagement -ApiManagement $apim
 ```
 
-Contoh ini mendapatkan instans Manajemen Api, menskalakan ke lima unit premium lalu menambahkan tiga unit tambahan ke kawasan premium.
+Contoh ini mendapatkan instance Api Management, menskalakannya menjadi lima unit premium lalu menambahkan tiga unit tambahan ke kawasan premium.
 
-### Contoh 2: Perbarui penyebaran (VNET eksternal)
+### Contoh 2: Penyebaran pembaruan (VNET eksternal)
 ```powershell
 PS C:\> $virtualNetwork = New-AzureRmApiManagementVirtualNetwork -Location "East US" -SubnetResourceId "/subscriptions/a8ff56dc-3bc7-4174-a1e8-3726ab15d0e2/resourceGroups/Api-Default-WestUS/providers/Microsoft.Network/virtualNetworks/dfVirtualNetwork/subnets/backendSubnet"
 PS C:\> $apim = Get-AzureRmApiManagement -ResourceGroupName "ContosoGroup" -Name "ContosoApi"
@@ -52,9 +52,9 @@ PS C:\> $apim.VirtualNetwork = $virtualNetwork
 PS C:\> Set-AzureRmApiManagement -ApiManagement $apim
 ```
 
-Perintah ini memperbarui penyebaran Manajemen API yang sudah ada dan bergabung ke *VpnType eksternal.*
+Perintah ini memperbarui penyebaran API Management yang sudah ada dan bergabung ke *VpnType* eksternal.
 
-### Contoh 3: Membuat dan memulai contoh PsApiManagementCustomHostNameConfiguration menggunakan Rahasia dari Sumber Daya KeyVault
+### Contoh 3: Membuat dan menginisialisasi contoh PsApiManagementCustomHostNameConfiguration menggunakan Secret dari KeyVault Resource
 ```powershell
 PS C:\>$portal = New-AzureRmApiManagementCustomHostnameConfiguration -Hostname "portal.contoso.com" -HostnameType Portal -KeyVaultId "https://apim-test-keyvault.vault.azure.net/secrets/api-portal-custom-ssl.pfx"
 PS C:\>$proxy1 = New-AzureRmApiManagementCustomHostnameConfiguration -Hostname "gatewayl.contoso.com" -HostnameType Proxy -KeyVaultId "https://apim-test-keyvault.vault.azure.net/secrets/contoso-proxy-custom-ssl.pfx"
@@ -69,7 +69,7 @@ PS C:\>Set-AzureRmApiManagement -InputObject $apim -AssignIdentity
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengirimkan PsApiManagement yang diperbarui ke saluran jika operasi berhasil.
+Mengirim PsApiManagement yang diperbarui ke pipeline jika operasi berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -191,6 +191,6 @@ Parameter: InputObject (ByValue)
 
 [Get-AzureRmApiManagement](./Get-AzureRmApiManagement.md)
 
-[New-AzureRmApiManagement](./New-AzureRmApiManagement.md)
+[Baru-AzureRmApiManagement](./New-AzureRmApiManagement.md)
 
-[Remove-AzureRmApiManagement](./Remove-AzureRmApiManagement.md)
+[Hapus-AzureRmApiManagement](./Remove-AzureRmApiManagement.md)

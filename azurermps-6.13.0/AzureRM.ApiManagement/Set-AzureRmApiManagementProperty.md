@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.apima
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Set-AzureRmApiManagementProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Set-AzureRmApiManagementProperty.md
-ms.openlocfilehash: 877f5fe9f85537a895612d05d1773e4e99ef45e08e3a7b6c2c2995654f1b6755
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 162cdc0fdad8a9f3db33ff928a3524f942be16c7
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416552"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142143845"
 ---
 # Set-AzureRmApiManagementProperty
 
 ## SYNOPSIS
-Mengubah Properti Manajemen API.
+Mengubah Properti API Management.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,7 +29,7 @@ Set-AzureRmApiManagementProperty -Context <PsApiManagementContext> -PropertyId <
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmApiManagementProperty** mengubah Properti Manajemen Azure API.
+Cmdlet **Set-AzureRmApiManagementProperty** mengubah Properti API Management Azure.
 
 ## EXAMPLES
 
@@ -40,11 +40,11 @@ PS C:\>$Tags = 'sdk', 'powershell'
 PS C:\> Set-AzureRmApiManagementProperty -Context $apimContext -PropertyId "Property11" -Tags $Tags -PassThru
 ```
 
-Perintah pertama menetapkan dua nilai ke $Tags nilai.
-Perintah kedua mengubah properti yang memiliki ID Properti11.
-Perintah menetapkan string di $Tags tag pada properti.
+Perintah pertama menetapkan dua nilai ke variabel $Tags.
+Perintah kedua mengubah properti yang memiliki PROPERTI ID11.
+Perintah menetapkan string dalam $Tags sebagai tag pada properti.
 
-### Contoh 2: Mengubah properti untuk memiliki nilai rahasia
+### Contoh 2: Memodifikasi properti agar memiliki nilai rahasia
 ```
 PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Set-AzureRmApiManagementProperty -Context $apimContext -PropertyId "Property12" -Secret $True -PassThru
@@ -55,7 +55,7 @@ Perintah ini mengubah properti menjadi Terenkripsi.
 ## PARAMETERS
 
 ### -Konteks
-Menentukan objek **PsApiManagementContext.**
+Menentukan objek **PsApiManagementContext** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ### -Nama
 Menentukan nama properti.
 Panjang maksimum adalah 100 karakter.
-Nama hanya berisi huruf, digit, titik, garis putus-putus, dan garis bawah.
+Nama hanya berisi karakter huruf, digit, titik, tanda hubung, dan garis bawah.
 
 ```yaml
 Type: System.String
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -PropertyId
-Menentukan ID properti yang ditentukan cmdlet ini.
+Menentukan ID properti yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -Rahasia
-Menunjukkan bahwa nilai properti bernilai rahasia dan harus dienkripsi.
+Menunjukkan bahwa nilai properti adalah rahasia dan harus dienkripsi.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -188,7 +188,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ### System.String[]
 
@@ -204,8 +204,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmApiManagementProperty](./Get-AzureRmApiManagementProperty.md)
 
-[New-AzureRmApiManagementProperty](./New-AzureRmApiManagementProperty.md)
+[Baru-AzureRmApiManagementProperty](./New-AzureRmApiManagementProperty.md)
 
-[Remove-AzureRmApiManagementProperty](./Remove-AzureRmApiManagementProperty.md)
+[Hapus-AzureRmApiManagementProperty](./Remove-AzureRmApiManagementProperty.md)
 
 

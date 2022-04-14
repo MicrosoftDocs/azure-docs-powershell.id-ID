@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Update-AzEventGridSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Update-AzEventGridSubscription.md
-ms.openlocfilehash: 08996bbdd47ff1086ff4ccc39883c14c4abd778d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e8c73a673ac690794072a5504d90746a3fb8236e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140372891"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142215559"
 ---
 # Update-AzEventGridSubscription
 
 ## SYNOPSIS
 Perbarui properti langganan acara Kisi Acara.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.eventgrid/update-azeventgridsubscription) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -86,7 +89,7 @@ Update-AzEventGridSubscription [-EventSubscriptionName] <String> [-ResourceGroup
 ```
 
 ## DESCRIPTION
-Perbarui properti langganan acara Kisi Acara. Ini dapat digunakan untuk memperbarui filter, tujuan, atau label langganan acara yang sudah ada.
+Perbarui properti langganan acara Kisi Acara. Hal ini dapat digunakan untuk memperbarui filter, tujuan, atau label langganan acara yang sudah ada.
 
 ## EXAMPLES
 
@@ -95,21 +98,21 @@ Perbarui properti langganan acara Kisi Acara. Ini dapat digunakan untuk memperba
 PS C:\> Update-AzEventGridSubscription -EventSubscriptionName ES1 -TopicName Topic1 -ResourceGroup MyResourceGroupName -Endpoint https://requestb.in/1kxxoui1
 ```
 
-Memperbarui titik akhir langganan acara \`ES1 untuk topik Topic1 \`\` di grup\` sumber daya \`MyResourceGroupName\` untuk\`https://requestb.in/1kxxoui1\`
+Memperbarui titik akhir langganan acara ES1\` untuk topik \`Topik1\` dalam grup \`sumber daya MyResourceGroupName\` menjadi \`\`https://requestb.in/1kxxoui1\`
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzEventGridSubscription -EventSubscriptionName ES1 -TopicName Topic1 -ResourceGroup MyResourceGroupName | Update-AzEventGridSubscription -Endpoint https://requestb.in/1kxxoui1
 ```
 
-Memperbarui titik akhir langganan acara \`ES1 untuk topik Topic1 \`\` di grup\` sumber daya \`MyResourceGroupName\` untuk\`https://requestb.in/1kxxoui1\`
+Memperbarui titik akhir langganan acara ES1\` untuk topik \`Topik1\` dalam grup \`sumber daya MyResourceGroupName\` menjadi \`\`https://requestb.in/1kxxoui1\`
 
 ### Contoh 3
 ```powershell
 PS C:\> Update-AzEventGridSubscription -EventSubscriptionName ES1 -ResourceId "/subscriptions/55f3dcd4-cac7-43b4-990b-a139d62a1eb2/resourceGroups/TestRG/providers/Microsoft.EventHub/namespaces/ContosoNamespace" -Endpoint https://requestb.in/1kxxoui1 -SubjectEndsWith "jpg"
 ```
 
-Memperbarui properti langganan acara ES1\` untuk ruang nama EventHub ContosoNamespace \`https://requestb.in/1kxxoui1\dengan titik akhir baru sebagai ' dan filter SubjectEndsWith baru sebagai \`jpg \`\`
+Memperbarui properti langganan \`acara ES1\` untuk ruang nama EventHub ContosoNamespace dengan titik akhir baru sebagaihttps://requestb.in/1kxxoui1\\` ' dan SubjectEndsWith filter baru sebagai \`jpg\`
 
 ### Contoh 4
 ```powershell
@@ -117,12 +120,12 @@ PS C:\> $labels = "Finance", "HR"
 PS C:\> Update-AzEventGridSubscription -EventSubscriptionName ES1 -ResourceGroup MyResourceGroupName -Label $labels
 ```
 
-Memperbarui properti ES1\` langganan kejadian \`untuk grup sumber daya \`MyResourceGroupName\` dengan label baru $labels.
+Memperbarui properti langganan \`acara ES1\` untuk grup \`sumber daya MyResourceGroupName\` dengan label baru $labels.
 
 ## PARAMETERS
 
 ### -AdvancedFilter
-Filter tingkat lanjut yang menentukan larik dari beberapa nilai Hashtable yang digunakan untuk pemfilteran berbasis atribut. Setiap nilai Hashtable memiliki info nilai kunci berikut: Operasi, Kunci, dan Nilai atau Nilai. Operator dapat menjadi salah satu dari nilai berikut: NumberIn, NumberNotIn, NumberLessTerTerTerTer SampaiKanan, NumberLessThanOrEquals, NumberGreaterThanOrEquals, BoolEquals, StringIn, StringNotIn, StringBeginsWith, StringEndsWith atau StringContains. Kunci mewakili properti payload tempat kebijakan pemfilteran tingkat lanjut diterapkan. Akhirnya, Nilai atau Nilai mewakili nilai atau kumpulan nilai yang akan cocok. Ini bisa merupakan nilai tunggal dari tipe terkait atau array nilai. Sebagai contoh parameter filter tingkat lanjut: $AdvancedFilters=@($AdvFilter 1, $AdvFilter 2) where $AdvFilter 1=@{operator="NumberIn"; key="Data.Key1"; Values=@(1,2)} and $AdvFilter 2=@{operator="StringBeginsWith"; key="Subject"; Values=@("SubjectPrefix1","SubjectPrefix2")}
+Filter tingkat lanjut yang menentukan array beberapa nilai Hashtable yang digunakan untuk pemfilteran berbasis atribut. Setiap nilai Hashtable memiliki info nilai kunci berikut: Operasi, Kunci dan Nilai atau Nilai. Operator dapat berupa salah satu nilai berikut: NumberIn, NumberNotIn, NumberLessThan, NumberGreaterThan, NumberLessThanOrEquals, NumberGreaterThanOrEquals, BoolEquals, StringIn, StringNotIn, StringBeginsWith, StringEndsWith atau StringContains. Kunci mewakili properti payload tempat kebijakan pemfilteran tingkat lanjut diterapkan. Terakhir, Nilai atau Nilai mewakili nilai atau sekumpulan nilai yang akan dicocokkan. Ini bisa berupa nilai tunggal dari tipe terkait atau array nilai. Sebagai contoh parameter filter tingkat lanjut: $AdvancedFilters=@($AdvFilter 1, $AdvFilter 2) di mana $AdvFilter 1=@{operator="NumberIn"; key="Data.Key1"; Values=@(1,2)} dan $AdvFilter 2=@{operator="StringBeginsWith"; key="Subject"; Values=@("SubjectPrefix1","SubjectPrefix2")}
 
 ```yaml
 Type: System.Collections.Hashtable[]
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureActiveDirectoryApplicationIdOrUri
-Id Aplikasi Azure Active Directory (AAD) atau Uri untuk mendapatkan token akses yang akan disertakan sebagai token beruang dalam permintaan pengiriman. Hanya berlaku untuk webhook sebagai tujuan.
+Id Aplikasi Azure Active Directory (AAD) atau Uri untuk mendapatkan token akses yang akan disertakan sebagai token pembawa dalam permintaan pengiriman. Hanya berlaku untuk webhook sebagai tujuan.
 
 ```yaml
 Type: System.String
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureActiveDirectoryTenantId
-Id Penyewa Azure Active Directory (AAD) untuk mendapatkan token akses yang akan disertakan sebagai token bearer dalam permintaan pengiriman. Hanya berlaku untuk webhook sebagai tujuan.
+Id Penyewa Azure Active Directory (AAD) untuk mendapatkan token akses yang akan disertakan sebagai token pembawa dalam permintaan pengiriman. Hanya berlaku untuk webhook sebagai tujuan.
 
 ```yaml
 Type: System.String
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeadLetterEndpoint
-Titik akhir yang digunakan untuk menyimpan acara yang tidak terkirim. Tentukan ID sumber daya Azure dari wadah blob Storage. Misalnya: /subscriptions/[SubscriptionId]/resourceGroups/[ResourceGroupName]/providers/Microsoft. Storage/storageAccounts/[StorageAccountName]/blobServices/default/containers/[ContainerName].
+Titik akhir yang digunakan untuk menyimpan kejadian yang tidak terkirg. Tentukan ID sumber daya Azure dari wadah blob Storage. Misalnya: /subscriptions/[SubscriptionId]/resourceGroups/[ResourceGroupName]/providers/Microsoft. Storage/storageAccounts/[StorageAccountName]/blobServices/default/containers/[ContainerName].
 
 ```yaml
 Type: System.String
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -DomainName
-Nama domain tempat langganan acara akan dibuat.
+Nama domain tempat langganan acara harus dibuat.
 
 ```yaml
 Type: System.String
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -DomainTopicName
-Nama topik domain tempat langganan acara akan dibuat.
+Nama topik domain tempat langganan acara harus dibuat.
 
 ```yaml
 Type: System.String
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 
 ### -Titik akhir
 Titik akhir tujuan langganan acara.
-Ini bisa merupakan URL webhook, atau ID sumber daya Azure dari EventHub, antrean penyimpanan, hybridconnection atau servicebusqueue. Misalnya, ID sumber daya untuk koneksi hibrid akan mengambil formulir berikut ini: /subscriptions/[Azure Subscription ID]/resourceGroups/[ResourceGroupName]/providers/Microsoft.Relay/namespaces/[NamespaceName]/hybridConnections/[HybridConnectionName]. Diharapkan bahwa titik akhir tujuan akan dibuat dan tersedia untuk digunakan sebelum menjalankan cmdlet Kisi Kejadian apa pun.
+Ini bisa berupa URL webhook, atau ID sumber daya Azure dari EventHub, antrean penyimpanan, hibridkoneksi atau servicebusqueue. Misalnya, ID sumber daya untuk koneksi hibrid mengambil formulir berikut: /subscriptions/[Azure Subscription ID]/resourceGroups/[ResourceGroupName]/providers/Microsoft.Relay/namespaces/[NamespaceName]/hybridConnections/[HybridConnectionName]. Diharapkan titik akhir tujuan akan dibuat dan tersedia untuk digunakan sebelum menjalankan cmdlet Kisi Acara apa pun.
 
 ```yaml
 Type: System.String
@@ -244,7 +247,7 @@ Accept wildcard characters: False
 
 ### -EndpointType
 Tipe Titik Akhir.
-This can be webhook, eventhub, storagequeue, hybridconnection or servicebusqueue. Nilai default adalah webhook.
+Ini bisa berupa webhook, eventhub, antrean penyimpanan, hibridkoneksi atau servicebusqueue. Nilai defaultnya adalah webhook.
 
 ```yaml
 Type: System.String
@@ -275,7 +278,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventTtl
-Waktu dalam menit untuk pengiriman acara. Nilai ini harus antara 1 sampai 1440
+Waktu dalam menit untuk pengiriman acara. Nilai ini harus antara 1 dan 1440
 
 ```yaml
 Type: System.Int32
@@ -290,7 +293,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpirationDate
-Menentukan Tanggal Kedaluwarsa untuk langganan acara setelah langganan acara akan dihentikan.
+Menentukan Tanggal Kedaluwarsa untuk langganan acara setelah langganan acara dihentikan.
 
 ```yaml
 Type: System.DateTime
@@ -350,7 +353,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxDeliveryAttempt
-Jumlah maksimum upaya untuk mengirimkan acara. Nilai ini harus antara 1 dan 30
+Jumlah maksimum upaya untuk menyampaikan acara. Nilai ini harus antara 1 dan 30
 
 ```yaml
 Type: System.Int32
@@ -365,7 +368,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxEventsPerBatch
-Jumlah maksimum acara dalam kumpulan. Nilai ini harus antara 1 sampai 5000. Parameter ini valid ketika Tipe Endpint hanya webhook.
+Jumlah maksimum kejadian dalam kumpulan. Nilai ini harus antara 1 dan 5000. Parameter ini valid ketika Tipe Endpint hanya merupakan webhook.
 
 ```yaml
 Type: System.Int32
@@ -380,7 +383,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreferredBatchSizeInKiloBytes
-Ukuran kumpulan pilihan dalam kilobyte. Nilai ini harus antara 1 dan 1024. Parameter ini valid ketika Tipe Endpint hanya webhook.
+Ukuran batch pilihan dalam kilobyte. Nilai ini harus antara 1 dan 1024. Parameter ini valid ketika Tipe Endpint hanya merupakan webhook.
 
 ```yaml
 Type: System.Int32
@@ -422,7 +425,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya tempat langganan kejadian dibuat.
+Pengidentifikasi sumber daya tempat langganan acara dibuat.
 
 ```yaml
 Type: System.String
@@ -453,7 +456,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubjectEndsWith
-Filter yang menentukan bahwa hanya kejadian yang cocok dengan akhiran subjek yang ditentukan yang akan disertakan.
+Filter yang menentukan bahwa hanya kejadian yang cocok dengan akhiran subjek tertentu yang akan disertakan.
 Jika tidak ditentukan, kejadian dengan semua akhiran subjek akan disertakan.
 
 ```yaml
@@ -469,7 +472,7 @@ Accept wildcard characters: False
 ```
 
 ### -TopicName
-Nama topik tempat langganan acara akan dibuat.
+Nama topik tempat langganan acara harus dibuat.
 
 ```yaml
 Type: System.String
@@ -484,7 +487,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -500,7 +503,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -515,7 +518,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

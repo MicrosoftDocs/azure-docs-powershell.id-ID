@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/Get-AzHpcCacheStorageTarget.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/Get-AzHpcCacheStorageTarget.md
 ms.openlocfilehash: f32dee9c0a342b985c37f188e0fb485ea632a403
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140254411"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142231849"
 ---
 # Get-AzHpcCacheStorageTarget
 
@@ -18,7 +18,7 @@ ms.locfileid: "140254411"
 Dapatkan target penyimpanan cache HPC.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hpccache/get-azhpccachestoragetarget) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hpccache/get-azhpccachestoragetarget) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ Get-AzHpcCacheStorageTarget -CacheObject <PSHPCCache> [-DefaultProfile <IAzureCo
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzHpcCacheStorageTarget** mendapatkan target penyimpanan yang ada dalam singgahan.
+Cmdlet **Get-AzHpcCacheStorageTarget** mendapatkan target penyimpanan yang ada di cache.
 
 ## EXAMPLES
 
@@ -57,7 +57,7 @@ PS C:\> Get-AzHpcCacheStorageTarget -ResourceGroupName rgTest -CacheName cacheTe
 ## PARAMETERS
 
 ### -CacheId
-Id sumber daya Cache
+Id sumber daya singgahan
 
 ```yaml
 Type: System.String
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -CacheObject
-Objek cache yang akan dimulai.
+Objek cache untuk memulai.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.HPCCache.Models.PSHPCCache
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama singgahan grup sumber daya berada di.
+Nama cache grup sumber daya berada.
 
 
 ```yaml
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

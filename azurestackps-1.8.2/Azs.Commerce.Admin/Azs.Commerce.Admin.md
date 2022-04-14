@@ -6,18 +6,18 @@ Download Help Link:
 Help Version:
   '[object Object]': 
 Locale: en-US
-ms.openlocfilehash: 4f85ef1fc9e608ab63da4cf8585191fe872410c768b3b6ca8bdf8d3b0b2e239b
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 204ddf2a0ed650e8122141134fbf382f9cf950bb
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132418751"
 ---
-# Azs.Commerce.Admin Module
+# Modul Azs.Commerce.Admin
 ## Deskripsi
-Pratinjau rilis modul administrator AzureStack Commerce yang menyediakan cara untuk menampilkan penggunaan data agregat di seluruh stempel AzureStack Anda. 
+Rilis pratinjau modul administrator AzureStack Commerce yang menyediakan cara untuk menampilkan penggunaan data agregat di seluruh stempel AzureStack Anda. 
 
 ## Cmdlet Azs.Commerce.Admin
 ### [Get-AzsSubscriberUsage](Get-AzsSubscriberUsage.md)
-Dapatkan data penggunaan dari selama jangka waktu yang ditentukan.
+Dapatkan data penggunaan dari rentang waktu yang ditentukan.
 

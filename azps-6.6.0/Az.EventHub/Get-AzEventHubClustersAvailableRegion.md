@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubClustersAvailableRegion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubClustersAvailableRegion.md
 ms.openlocfilehash: b406f621c1ad0626a6a4833939830ff9e561ac9c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140137455"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142232569"
 ---
 # Get-AzEventHubClustersAvailableRegion
 
@@ -18,7 +18,7 @@ ms.locfileid: "140137455"
 Mendapatkan detail kluster Eventhub tunggal atau daftar kluster dalam Grup Sumber Daya yang diberikan
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventhub/get-azeventhubclustersavailableregion) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/get-azeventhubclustersavailableregion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Get-AzEventHubClustersAvailableRegion [-DefaultProfile <IAzureContextContainer>]
 ```
 
 ## DESCRIPTION
-Daftar cmdlet Get-AzEventHubClustersAvailableRegion cmdlet kawasan tempat khusus tersedia untuk dibuat.
+Daftar cmdlet Get-AzEventHubClustersAvailableRegion wilayah di mana khusus tersedia untuk dibuat.
 
 ## EXAMPLES
 
@@ -77,15 +77,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
-### System.Collections.Generic.IEnumerable'1[[Microsoft.Azure.Commands.EventHub.Models.PSEventHubsAvailableCluster, Microsoft.Azure.PowerShell.Cmdlets.EventHub, Version=1.5.0.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.IEnumerable'1[[Microsoft.Azure.Commands.EventHub.Models.PSEventHubsAvailableCluster, Microsoft.Azure.PowerShell.Cmdlets.EventHub, Version=1.5.0.0, Culture=netral, PublicKeyToken=null]]
 
 ## CATATAN
 

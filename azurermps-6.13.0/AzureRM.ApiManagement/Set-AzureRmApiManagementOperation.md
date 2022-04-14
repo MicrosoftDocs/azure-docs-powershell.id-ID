@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.apima
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Set-AzureRmApiManagementOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Set-AzureRmApiManagementOperation.md
-ms.openlocfilehash: 80808f27ec6124b12daf390cccbc8924f1a3241a2b0b05cf42edd6fd65ebf42c
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: e50e912c55a09ef5d036bee668bc45f58fc42c19
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416555"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142143975"
 ---
 # Set-AzureRmApiManagementOperation
 
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiRevision
-Pengidentifikasi Revisi API. Parameter ini bersifat opsional. Jika tidak ditentukan, operasi akan diperbarui dalam revisi api yang saat ini aktif.
+Pengidentifikasi Revisi API. Parameter ini bersifat opsional. Jika tidak ditentukan, operasi akan diperbarui dalam revisi api aktif saat ini.
 
 ```yaml
 Type: System.String
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -Method
-Menentukan metode HTTP operasi yang baru.
+Menentukan metode HTTP dari operasi baru.
 
 ```yaml
 Type: System.String
@@ -195,8 +195,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Responses
-Menentukan array kemungkinan respons operasi.
+### -Respons
+Menentukan larik kemungkinan respons operasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementResponse[]
@@ -211,9 +211,9 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateParameters
-Menentukan array atau parameter yang ditentukan dalam parameter *UrlTemplate*.
+Menentukan array atau parameter yang ditentukan dalam *UrlTemplate* parameter.
 Jika Anda tidak menentukan nilai, nilai default akan dihasilkan berdasarkan UrlTemplate.
-Gunakan parameter untuk memberikan detail selengkapnya tentang parameter seperti deskripsi, tipe, dan nilai lain yang mungkin.
+Gunakan parameter untuk memberikan detail selengkapnya tentang parameter seperti deskripsi, tipe, dan nilai lain yang memungkinkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementParameter[]
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 
 ### -UrlTemplate
 Menentukan templat URL.
-Sebagai contoh: customers/{cid}/orders/{oid}/?date={date}.
+Misalnya: customers/{cid}/orders/{oid}/?date={date}.
 
 ```yaml
 Type: System.String
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -270,7 +270,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmApiManagementOperation](./Get-AzureRmApiManagementOperation.md)
 
-[New-AzureRmApiManagementOperation](./New-AzureRmApiManagementOperation.md)
+[Baru-AzureRmApiManagementOperation](./New-AzureRmApiManagementOperation.md)
 
 [Remove-AzureRmApiManagementOperation](./Remove-AzureRmApiManagementOperation.md)
 

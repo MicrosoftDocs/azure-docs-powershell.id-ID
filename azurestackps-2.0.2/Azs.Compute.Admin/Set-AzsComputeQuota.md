@@ -4,11 +4,11 @@ Module Name: Azs.Compute.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.compute.admin/set-azscomputequota
 schema: 2.0.0
 ms.openlocfilehash: 3229a6383d7159b31bf542add7374326d0de4ac4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132414367"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142237915"
 ---
 # Set-AzsComputeQuota
 
@@ -38,11 +38,11 @@ Set-AzsComputeQuota -Name <String> [-Location <String>] [-SubscriptionId <String
  [<CommonParameters>]
 ```
 ## DESCRIPTION
-Perbarui Kuota Perhitungan
+Memperbarui Kuota Komputasi
 
 ## EXAMPLES
 
-### Contoh 1: Atur Properti pada Kuota Perhitungan yang Ada
+### Contoh 1: Mengatur Properti pada Kuota Komputasi yang Sudah Ada
 ```powershell
 PS C:\> $myComputeQuota = Get-AzsComputeQuota -Name MyComputeQuota
 
@@ -62,8 +62,8 @@ VMScaleSetCount                    : 0
 VirtualMachineCount                : 100
 ```
 
-Mengatur parameter yang ditentukan di baris perintah.
-Parameter apa pun yang tidak diatur akan diatur default ke 0
+Atur parameter yang ditentukan pada baris perintah.
+Parameter apa pun yang tidak diatur akan default ke 0
 
 ## PARAMETERS
 
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -163,16 +163,16 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 NEWQUOTA <IQuota>: 
   - `[Location <String>]`: Lokasi sumber daya.
-  - `[AvailabilitySetCount <Int32?>]`: Jumlah maksimum kumpulan ketersediaan yang diperbolehkan.
+  - `[AvailabilitySetCount <Int32?>]`: Jumlah maksimal set ketersediaan yang diperbolehkan.
   - `[CoresLimit <Int32?>]`: Jumlah maksimum inti yang diperbolehkan.
-  - `[PremiumManagedDiskAndSnapshotSize <Int32?>]`: Jumlah maksimum disk dan jepretan layar tipe premium yang diizinkan.
-  - `[StandardManagedDiskAndSnapshotSize <Int32?>]`: Jumlah maksimum disk terkelola dan snapshot tipe standar yang diperbolehkan.
-  - `[VMScaleSetCount <Int32?>]`: Jumlah maksimum kumpulan skala yang diperbolehkan.
-  - `[VirtualMachineCount <Int32?>]`: Jumlah maksimum mesin virtual yang diperbolehkan.
+  - `[PremiumManagedDiskAndSnapshotSize <Int32?>]`: Jumlah maksimal disk terkelola dan snapshot tipe premium yang diperbolehkan.
+  - `[StandardManagedDiskAndSnapshotSize <Int32?>]`: Jumlah maksimal disk terkelola dan snapshot tipe standar yang diperbolehkan.
+  - `[VMScaleSetCount <Int32?>]`: Jumlah maksimal kumpulan skala yang diperbolehkan.
+  - `[VirtualMachineCount <Int32?>]`: Jumlah maksimal mesin virtual yang diperbolehkan.
 
 ## RELATED LINKS
 

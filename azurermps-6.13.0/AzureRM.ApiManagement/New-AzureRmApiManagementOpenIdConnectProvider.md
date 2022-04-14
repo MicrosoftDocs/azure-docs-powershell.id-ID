@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/New-AzureRmApiManagementOpenIdConnectProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/New-AzureRmApiManagementOpenIdConnectProvider.md
 ms.openlocfilehash: c338cd8b2ea3ce2a464a7975ecac959bc1e52140
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420383"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142144172"
 ---
 # New-AzureRmApiManagementOpenIdConnectProvider
 
@@ -30,17 +30,17 @@ New-AzureRmApiManagementOpenIdConnectProvider -Context <PsApiManagementContext>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmApiManagementOpenIdConnectProvider** membuat penyedia Koneksi OpenID di Manajemen API Azure.
+Cmdlet **New-AzureRmApiManagementOpenIdConnectProvider** membuat penyedia Koneksi OpenID di Azure API Management.
 
 ## EXAMPLES
 
-### Contoh 1: Buat penyedia
+### Contoh 1: Membuat penyedia
 ```
 PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>New-AzureRmApiManagementOpenIdConnectProvider -Context $apimContext -OpenIdConnectProviderId "OICProvicer01" -Name "Contoso OpenID Connect Provider" -MetadataEndpointUri "https://openid.provider/configuration" -ClientId "12432143" -Description "OpenID Connect provider description"
 ```
 
-Perintah ini membuat Penyedia OpenID Koneksi **bernama** Contoso OpenID Koneksi Provider
+Perintah ini membuat **Penyedia** Koneksi OpenID bernama Penyedia Koneksi Contoso OpenID
 
 ## PARAMETERS
 
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Menentukan objek **PsApiManagementContext.**
+Menentukan objek **PsApiManagementContext** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -MetadataEndpointUri
-Menentukan URI titik akhir metadata dari penyedia.
+Menentukan URI titik akhir metadata penyedia.
 
 ```yaml
 Type: System.String
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama yang mudah digunakan untuk penyedia.
+Menentukan nama yang mudah dikenali untuk penyedia.
 
 ```yaml
 Type: System.String
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 
 ### -OpenIdConnectProviderId
 Menentukan ID untuk penyedia.
-Jika Anda tidak menentukan ID, cmdlet ini akan menghasilkan ID.
+Jika Anda tidak menentukan ID, cmdlet ini akan menghasilkannya.
 
 ```yaml
 Type: System.String
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,29 +6,29 @@ Help Version: 0.16.3.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Scheduler/Commands.Scheduler/help/AzureRM.Scheduler.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Scheduler/Commands.Scheduler/help/AzureRM.Scheduler.md
-ms.openlocfilehash: 232237995757e1f196a07ba8477fa58575d06ac1b3ec86a99660c5a30de33fc7
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 11cb684cb68525603868b065f435219292a0e73d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132419419"
 ---
-# AzureRM.Scheduler Module
+# Modul AzureRM.Scheduler
 ## Deskripsi
 Topik ini menampilkan topik bantuan untuk cmdlet Azure Scheduler.
 
 ## Cmdlet AzureRM.Scheduler
 ### [Disable-AzureRmSchedulerJobCollection](Disable-AzureRmSchedulerJobCollection.md)
-Menonaktifkan kumpulan pekerjaan.
+Menonaktifkan koleksi pekerjaan.
 
 ### [Enable-AzureRmSchedulerJobCollection](Enable-AzureRmSchedulerJobCollection.md)
-Mengaktifkan kumpulan pekerjaan.
+Mengaktifkan koleksi pekerjaan.
 
 ### [Get-AzureRmSchedulerJob](Get-AzureRmSchedulerJob.md)
-Mendapatkan pekerjaan Penjadwal.
+Mendapatkan pekerjaan Scheduler.
 
 ### [Get-AzureRmSchedulerJobCollection](Get-AzureRmSchedulerJobCollection.md)
-Mendapatkan kumpulan pekerjaan.
+Mendapatkan koleksi pekerjaan.
 
 ### [Get-AzureRmSchedulerJobHistory](Get-AzureRmSchedulerJobHistory.md)
 Mendapatkan riwayat pekerjaan.
@@ -37,7 +37,7 @@ Mendapatkan riwayat pekerjaan.
 Membuat pekerjaan HTTP.
 
 ### [New-AzureRmSchedulerJobCollection](New-AzureRmSchedulerJobCollection.md)
-Membuat kumpulan pekerjaan.
+Membuat koleksi pekerjaan.
 
 ### [New-AzureRmSchedulerServiceBusQueueJob](New-AzureRmSchedulerServiceBusQueueJob.md)
 Membuat pekerjaan antrean bus layanan.
@@ -48,17 +48,17 @@ Membuat pekerjaan topik bus layanan.
 ### [New-AzureRmSchedulerStorageQueueJob](New-AzureRmSchedulerStorageQueueJob.md)
 Membuat pekerjaan antrean penyimpanan.
 
-### [Remove-AzureRmSchedulerJob](Remove-AzureRmSchedulerJob.md)
-Menghapus pekerjaan Penjadwal.
+### [Hapus-AzureRmSchedulerJob](Remove-AzureRmSchedulerJob.md)
+Menghapus pekerjaan Scheduler.
 
-### [Remove-AzureRmSchedulerJobCollection](Remove-AzureRmSchedulerJobCollection.md)
-Menghapus kumpulan pekerjaan.
+### [Hapus-AzureRmSchedulerJobCollection](Remove-AzureRmSchedulerJobCollection.md)
+Menghapus koleksi pekerjaan.
 
 ### [Set-AzureRmSchedulerHttpJob](Set-AzureRmSchedulerHttpJob.md)
-Mengubah pekerjaan HTTP Penjadwal.
+Mengubah pekerjaan HTTP Scheduler.
 
 ### [Set-AzureRmSchedulerJobCollection](Set-AzureRmSchedulerJobCollection.md)
-Mengubah kumpulan pekerjaan.
+Mengubah koleksi pekerjaan.
 
 ### [Set-AzureRmSchedulerServiceBusQueueJob](Set-AzureRmSchedulerServiceBusQueueJob.md)
 Mengubah pekerjaan antrean bus layanan.

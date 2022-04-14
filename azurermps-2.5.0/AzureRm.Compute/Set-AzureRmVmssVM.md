@@ -5,11 +5,11 @@ ms.assetid: 70AA9747-232E-40F2-845C-35A779F51CD2
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/set-azurermvmssvm
 schema: 2.0.0
 ms.openlocfilehash: ffce87e30fb5bffa78cb10a85b1ac8a143deeaad
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428782"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142147395"
 ---
 # Set-AzureRmVmssVM
 
@@ -33,14 +33,14 @@ Set-AzureRmVmssVM [-ResourceGroupName] <String> [-VMScaleSetName] <String> [-Ins
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmVmssVM** mengubah status instans Virtual Machine Scale Set (VMSS).
+Cmdlet **Set-AzureRmVmssVM** mengubah status instans Kumpulan Skala Mesin Virtual (VMSS).
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -55,7 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceId
-Menentukan ID instans VMSS yang akan digunakan oleh cmdlet ini.
+Menentukan ID instans VMSS yang mengubah status cmdlet ini.
 
 ```yaml
 Type: String
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -Reimage
-Menunjukkan bahwa cmdlet ini penggantian instans VMSS.
+Menunjukkan bahwa cmdlet ini mengoptimalkan instans VMSS.
 
 ```yaml
 Type: SwitchParameter
@@ -99,8 +99,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ReimageAll
-Menunjukkan bahwa cmdlet penggantian semua disk dalam instans VMSS.
+### -ReimageSemua
+Menunjukkan bahwa cmdlet mereimage semua disk dalam instans VMSS.
 
 ```yaml
 Type: SwitchParameter
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi instans VMSS.
+Menentukan nama grup sumber daya yang berisi contoh VMSS.
 
 ```yaml
 Type: String
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMScaleSetName
-Menentukan nama instans VMSS yang dimodifikasi cmdlet ini.
+Menentukan nama instans VMSS yang diubah cmdlet ini.
 
 ```yaml
 Type: String
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -175,11 +175,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS

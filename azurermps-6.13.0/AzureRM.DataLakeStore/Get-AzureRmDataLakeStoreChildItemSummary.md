@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeStore/Commands.DataLakeStore/help/Get-AzureRmDataLakeStoreChildItemSummary.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeStore/Commands.DataLakeStore/help/Get-AzureRmDataLakeStoreChildItemSummary.md
 ms.openlocfilehash: 83fb8b3ea5fdf9ad63983d2a3a3d23d402fbb5a0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140855544"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142142209"
 ---
 # Get-AzureRmDataLakeStoreChildItemSummary
 
 ## SYNOPSIS
-Mendapatkan ringkasan ukuran total, file dan direktori yang terdapat di jalur yang ditentukan
+Mendapatkan ringkasan ukuran total, file dan direktori yang terdapat dalam jalur yang ditentukan
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Get-AzureRmDataLakeStoreChildItemSummary [-Account] <String> [-Path] <DataLakeSt
 ```
 
 ## DESCRIPTION
-**Get-AzureRmDataLakeStoreChildItemSummary** mengambil ringkasan konten untuk jalur tertentu. It recursively computes total number of files, directories and total size of all the files under the given path.
+**Get-AzureRmDataLakeStoreChildItemSummary** mengambil ringkasan konten untuk jalur tertentu. Ini secara rekurif menghitung jumlah total file, direktori dan ukuran total semua file di bawah jalur tertentu.
 
 ## EXAMPLES
 
@@ -36,7 +36,7 @@ Get-AzureRmDataLakeStoreChildItemSummary [-Account] <String> [-Path] <DataLakeSt
 PS C:\> Get-AzureRmDataLakeStoreChildItemSummary -Account ContosoADL -Path /a -Concurrency 128
 ```
 
-Ini mencantumkan jumlah direktori total, file dan ukurannya dimuat di bawah /a.
+Daftar ini mencantumkan jumlah total direktori, file, dan ukurannya yang terdapat di bawah /a.
 
 ## PARAMETERS
 
@@ -86,9 +86,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Jalur dalam akun Data Lake yang akan diambil.
-Bisa merupakan file atau folder Dalam format '/folder/file.txt', di mana '/' pertama setelah DNS menunjukkan akar sistem file.
+### -Jalur
+Jalur dalam akun Data Lake tertentu yang harus diambil.
+Bisa berupa file atau folder Dalam format '/folder/file.txt', di mana '/' pertama setelah DNS menunjukkan akar sistem file.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/ManagedServices/help/Get-AzManagedServicesAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/ManagedServices/help/Get-AzManagedServicesAssignment.md
 ms.openlocfilehash: 58e06bc287f9e0ee35302124d78241331d3bccbe
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140283289"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142229869"
 ---
 # Get-AzManagedServicesAssignment
 
 ## SYNOPSIS
-Mendapatkan penetapan pendaftaran tertentu atau daftar penetapan pendaftaran.
+Mendapatkan tugas pendaftaran tertentu atau daftar tugas pendaftaran.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.managedservices/get-azmanagedservicesassignment) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.managedservices/get-azmanagedservicesassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-AzManagedServicesAssignment [-Scope <String>] [-Name <String>] [-ExpandRegis
 ```
 
 ## DESCRIPTION
-Mendapatkan penetapan pendaftaran tertentu atau daftar penetapan pendaftaran.
+Mendapatkan tugas pendaftaran tertentu atau daftar tugas pendaftaran.
 
 ## EXAMPLES
 
@@ -50,7 +50,7 @@ Name                                 Id                                         
 PS C:\>
 ```
 
-Mendapatkan semua pendaftaran tugas di bawah lingkup default.
+Mendapatkan semua tugas pendaftaran di bawah lingkup default.
 
 ### Contoh 2
 ```
@@ -67,7 +67,7 @@ Name       : 0c146106-c927-4098-a7ca-30bbcf44a502
 PS C:\>
 ```
 
-Mendapatkan semua penugasan pendaftaran dengan detail definisi registrasi.
+Mendapatkan semua tugas pendaftaran dengan detail definisi pendaftaran.
 
 ### Contoh 3
 ```
@@ -80,7 +80,7 @@ Name                                 Id                                         
 PS C:\>
 ```
 
-Mendapatkan penetapan pendaftaran berdasarkan nama tanpa detail definisi registrasi.
+Mendapatkan tugas pendaftaran berdasarkan nama tanpa detail definisi pendaftaran.
 
 ### Contoh 4
 ```
@@ -97,7 +97,7 @@ Name       : 0c146106-c927-4098-a7ca-30bbcf44a502
 PS C:\>
 ```
 
-Mendapatkan pendaftaran penugasan menurut nama dengan detail definisi registrasi.
+Mendapatkan tugas pendaftaran berdasarkan nama dengan detail definisi pendaftaran.
 
 ### Contoh 5
 ```
@@ -110,7 +110,7 @@ Name                                 Id                                         
 PS C:\>
 ```
 
-Mendapatkan semua pendaftaran tugas dalam lingkup tertentu.
+Mendapatkan semua tugas pendaftaran pada lingkup tertentu.
 
 ## PARAMETERS
 
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpandRegistrationDefinition
-Apakah akan menyertakan detail definisi registrasi.
+Apakah menyertakan detail definisi pendaftaran.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama unik Penetapan Pendaftaran.
+Nama unik Tugas Pendaftaran.
 
 ```yaml
 Type: System.String
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Lingkup tempat penetapan pendaftaran dibuat.
+Lingkup tempat tugas pendaftaran dibuat.
 
 ```yaml
 Type: System.String
@@ -175,11 +175,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 ## OUTPUTS
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ManagedServices.Models.PSRegistrationAssignment

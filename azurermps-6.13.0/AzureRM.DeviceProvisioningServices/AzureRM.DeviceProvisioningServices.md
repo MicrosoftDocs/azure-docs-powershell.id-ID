@@ -6,11 +6,11 @@ Help Version: 1.0.0.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DeviceProvisioningServices/Commands.DeviceProvisioningServices/help/AzureRM.DeviceProvisioningServices.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DeviceProvisioningServices/Commands.DeviceProvisioningServices/help/AzureRM.DeviceProvisioningServices.md
-ms.openlocfilehash: dc9395b4cc2487e8bb11336880577cf99046a5b0b85d7b3d949fb3eabee29503
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 48dbed554711a50756dc03f83e8a45b55145673f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132418384"
 ---
 # AzureRM.DeviceProvisioningServices Module
@@ -18,54 +18,54 @@ ms.locfileid: "132418384"
 Perintah untuk Mengelola Layanan Penyediaan Perangkat Azure IoT Hub.
 
 ## Cmdlet AzureRM.DeviceProvisioningServices
-### [Add-AzureRmIotDeviceProvisioningServiceAccessPolicy](Add-AzureRmIoTDeviceProvisioningServiceAccessPolicy.md)
+### [Add-AzureRmIoTDeviceProvisioningServiceAccessPolicy](Add-AzureRmIoTDeviceProvisioningServiceAccessPolicy.md)
 Tambahkan kebijakan akses bersama baru dalam layanan penyediaan perangkat Azure IoT Hub.
 
 ### [Add-AzureRmIotDeviceProvisioningServiceCertificate](Add-AzureRmIoTDeviceProvisioningServiceCertificate.md)
 Membuat/memperbarui sertifikat Layanan Penyediaan Perangkat Azure IoT Hub.
 
-### [Add-AzureRmIotDeviceProvisioningServiceLinkedHub](Add-AzureRmIoTDeviceProvisioningServiceLinkedHub.md)
+### [Add-AzureRmIoTDeviceProvisioningServiceLinkedHub](Add-AzureRmIoTDeviceProvisioningServiceLinkedHub.md)
 Hub IoT tertaut ke layanan penyediaan perangkat Azure IoT Hub.
 
 ### [Get-AzureRmIotDeviceProvisioningService](Get-AzureRmIoTDeviceProvisioningService.md)
-Menampilkan semua atau memperlihatkan detail layanan penyediaan perangkat Azure IoT Hub.
+Cantumkan semua atau perlihatkan detail layanan penyediaan perangkat Azure IoT Hub.
 
-### [Get-AzureRmIotDeviceProvisioningServiceAccessPolicy](Get-AzureRmIoTDeviceProvisioningServiceAccessPolicy.md)
-Daftar semua atau tampilkan detail kebijakan akses bersama dalam layanan penyediaan perangkat Azure IoT Hub.
+### [Get-AzureRmIoTDeviceProvisioningServiceAccessPolicy](Get-AzureRmIoTDeviceProvisioningServiceAccessPolicy.md)
+Cantumkan semua atau perlihatkan detail kebijakan akses bersama dalam layanan penyediaan perangkat Azure IoT Hub.
 
 ### [Get-AzureRmIotDeviceProvisioningServiceCertificate](Get-AzureRmIoTDeviceProvisioningServiceCertificate.md)
-Mencantumkan semua sertifikat atau sertifikat tertentu yang dimuat dalam Layanan Penyediaan Perangkat Azure IoT Hub.
+Mencantumkan semua sertifikat atau sertifikat tertentu yang terdapat dalam Layanan Penyediaan Perangkat Azure IoT Hub.
 
-### [Get-AzureRmIotDeviceProvisioningServiceLinkedHub](Get-AzureRmIoTDeviceProvisioningServiceLinkedHub.md)
-Menampilkan semua atau memperlihatkan detail hub IoT tertaut dalam layanan penyediaan perangkat Azure IoT Hub.
+### [Get-AzureRmIoTDeviceProvisioningServiceLinkedHub](Get-AzureRmIoTDeviceProvisioningServiceLinkedHub.md)
+Cantumkan semua atau tampilkan detail hub IoT tertaut dalam layanan penyediaan perangkat Azure IoT Hub.
 
-### [New-AzureRmIotDeviceProvisioningService](New-AzureRmIoTDeviceProvisioningService.md)
-Membuat layanan penyediaan perangkat Azure IoT Hub.
+### [Baru-AzureRmIotDeviceProvisioningService](New-AzureRmIoTDeviceProvisioningService.md)
+Buat layanan penyediaan perangkat Azure IoT Hub.
 
 ### [New-AzureRmIotDeviceProvisioningServiceCertificateVerificationCode](New-AzureRmIoTDeviceProvisioningServiceCertificateVerificationCode.md)
 Buat kode verifikasi untuk sertifikat Layanan Penyediaan Perangkat Azure IoT Hub.
 
-### [Remove-AzureRmIotDeviceProvisioningService](Remove-AzureRmIoTDeviceProvisioningService.md)
-Hapus layanan penyediaan perangkat Azure IoT Hub.
+### [Hapus-AzureRmIotDeviceProvisioningService](Remove-AzureRmIoTDeviceProvisioningService.md)
+Menghapus layanan penyediaan perangkat Azure IoT Hub.
 
-### [Remove-AzureRmIotDeviceProvisioningServiceAccessPolicy](Remove-AzureRmIoTDeviceProvisioningServiceAccessPolicy.md)
-Hapus kebijakan akses bersama dalam layanan penyediaan perangkat Azure IoT Hub.
+### [Hapus-AzureRmIoTDeviceProvisioningServiceAccessPolicy](Remove-AzureRmIoTDeviceProvisioningServiceAccessPolicy.md)
+Menghapus kebijakan akses bersama dalam layanan penyediaan perangkat Azure IoT Hub.
 
-### [Remove-AzureRmIotDeviceProvisioningServiceCertificate](Remove-AzureRmIoTDeviceProvisioningServiceCertificate.md)
-Hapus sertifikat Layanan Penyediaan Perangkat Azure IoT Hub.
+### [Hapus-AzureRmIotDeviceProvisioningServiceCertificate](Remove-AzureRmIoTDeviceProvisioningServiceCertificate.md)
+Menghapus sertifikat Layanan Penyediaan Perangkat Azure IoT Hub.
 
-### [Remove-AzureRmIotDeviceProvisioningServiceLinkedHub](Remove-AzureRmIoTDeviceProvisioningServiceLinkedHub.md)
-Menghapus hub IoT tertaut dalam layanan penyediaan perangkat Azure IoT Hub.
+### [Remove-AzureRmIoTDeviceProvisioningServiceLinkedHub](Remove-AzureRmIoTDeviceProvisioningServiceLinkedHub.md)
+Hapus hub IoT yang ditautkan dalam layanan penyediaan perangkat Azure IoT Hub.
 
 ### [Set-AzureRmIotDeviceProvisioningServiceCertificate](Set-AzureRmIoTDeviceProvisioningServiceCertificate.md)
 Verifikasi sertifikat Layanan Penyediaan Perangkat Azure IoT Hub.
 
-### [Update-AzureRmIotDeviceProvisioningService](Update-AzureRmIoTDeviceProvisioningService.md)
-Memperbarui layanan penyediaan perangkat Azure IoT Hub.
+### [Pembaruan-AzureRmIotDeviceProvisioningService](Update-AzureRmIoTDeviceProvisioningService.md)
+Perbarui layanan penyediaan perangkat Azure IoT Hub.
 
-### [Update-AzureRmIotDeviceProvisioningServiceAccessPolicy](Update-AzureRmIoTDeviceProvisioningServiceAccessPolicy.md)
-Memperbarui kebijakan akses bersama dalam layanan penyediaan perangkat Azure IoT Hub.
+### [Pembaruan-AzureRmIoTDeviceProvisioningServiceAccessPolicy](Update-AzureRmIoTDeviceProvisioningServiceAccessPolicy.md)
+Perbarui kebijakan akses bersama dalam layanan penyediaan perangkat Azure IoT Hub.
 
-### [Update-AzureRmIotDeviceProvisioningServiceLinkedHub](Update-AzureRmIoTDeviceProvisioningServiceLinkedHub.md)
-Memperbarui hub IoT tertaut dalam layanan penyediaan perangkat Azure IoT Hub.
+### [Pembaruan-AzureRmIoTDeviceProvisioningServiceLinkedHub](Update-AzureRmIoTDeviceProvisioningServiceLinkedHub.md)
+Perbarui hub IoT yang ditautkan dalam layanan penyediaan perangkat Azure IoT Hub.
 

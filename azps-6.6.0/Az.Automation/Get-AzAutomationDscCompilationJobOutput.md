@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscCompilationJobOutput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscCompilationJobOutput.md
 ms.openlocfilehash: 335226a5c86d9bdb605563e817d9a058c9faf730
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140143395"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141873140"
 ---
 # Get-AzAutomationDscCompilationJobOutput
 
@@ -19,7 +19,7 @@ ms.locfileid: "140143395"
 Mendapatkan aliran pembuatan log dari pekerjaan kompilasi DSC Otomatisasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/get-azautomationdsccompilationjoboutput) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationdsccompilationjoboutput) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,19 +30,19 @@ Get-AzAutomationDscCompilationJobOutput [-Id] <Guid> [-Stream <CompilationJobStr
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzAutomationDscCompilationJobOutput** mendapatkan rekaman aliran dari pekerjaan kompilasi APS Desired State Configuration (DSC) di Azure Automation.
+Cmdlet **Get-AzAutomationDscCompilationJobOutput** mendapatkan rekaman streaming pekerjaan kompilasi APS Desired State Configuration (DSC) di Azure Automation.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan log untuk kompilasi pekerjaan DSC
+### Contoh 1: Dapatkan log untuk pekerjaan kompilasi DSC
 ```
 PS C:\>$Jobs = Get-AzAutomationDscCompilationJob -ResourceGroupName "ResourceGroup01" -AutomationAccountName "Contoso17"
 PS C:\> $Jobs[0] | Get-AzAutomationDscCompilationJobOutput -Stream "Any"
 ```
 
-Perintah pertama mendapatkan pekerjaan kompilasi dalam akun Otomatisasi yang bernama Contoso17 dengan menggunakan cmdlet Get-AzAutomationDscCompilationJob cmdlet.
-Perintah menyimpan objek tersebut dalam $Jobs variabel.
-Perintah kedua mendapatkan output pekerjaan kompilasi untuk stream apa pun untuk anggota pertama $Jobs array.
+Perintah pertama mendapatkan pekerjaan kompilasi dalam akun Otomatisasi bernama Contoso17 menggunakan cmdlet Get-AzAutomationDscCompilationJob.
+Perintah menyimpan objek tersebut dalam variabel $Jobs.
+Perintah kedua mendapatkan output pekerjaan kompilasi untuk streaming apa pun untuk anggota pertama array $Jobs.
 
 ## PARAMETERS
 
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID unik pekerjaan kompilasi DSC yang mendapatkan output cmdlet ini.
+Menentukan ID unik dari pekerjaan kompilasi DSC di mana cmdlet ini mendapatkan output.
 
 ```yaml
 Type: System.Guid
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi pekerjaan kompilasi DSC yang mendapatkan rekaman stream dari cmdlet ini.
+Menentukan nama grup sumber daya yang berisi pekerjaan kompilasi DSC di mana cmdlet ini mendapatkan rekaman streaming.
 
 ```yaml
 Type: System.String
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 
 ### -StartTime
 Menentukan waktu mulai.
-Cmdlet ini mendapatkan rekaman streaming yang output pekerjaan kompilasi DSC setelah waktu ini.
+Cmdlet ini mendapatkan rekaman streaming yang dihasilkan oleh pekerjaan kompilasi DSC setelah waktu ini.
 
 ```yaml
 Type: System.Nullable`1[System.DateTimeOffset]
@@ -123,9 +123,9 @@ Accept wildcard characters: False
 ```
 
 ### -Stream
-Menentukan tipe aliran untuk output yang akan didaurkan cmdlet ini.
-Nilai valid adalah: 
-- Apa pun 
+Menentukan tipe streaming untuk output yang didapat cmdlet ini.
+Nilai yang valid adalah: 
+- Setiap 
 - Peringatan 
 - Kesalahan 
 - Verbose
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -152,7 +152,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Common.CompilationJobStreamType
 
-### System.Nullable'1[[System.DateTimeOffset, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.DateTimeOffset, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### System.String
 

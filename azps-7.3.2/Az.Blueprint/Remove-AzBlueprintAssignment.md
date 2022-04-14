@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.blueprint/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Remove-AzBlueprintAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Remove-AzBlueprintAssignment.md
-ms.openlocfilehash: c9ffac4c0e75062f2274e787c1adbd452def5500
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 878e33776692b9c132e47ba268461374e530e460
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140373707"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142037477"
 ---
 # Remove-AzBlueprintAssignment
 
 ## SYNOPSIS
-Hapus penetapan cetak biru dari langganan atau grup manajemen.
+Menghapus tugas cetak biru dari langganan atau grup manajemen.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.blueprint/remove-azblueprintassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzBlueprintAssignment -InputObject <PSBlueprintAssignment> [-PassThru]
 ```
 
 ## DESCRIPTION
-Hapus cetak biru yang telah ditetapkan ke langganan.
+Menghapus cetak biru yang telah ditetapkan ke langganan.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Hapus cetak biru yang telah ditetapkan ke langganan.
 Remove-AzBlueprintAssignment -Name "myAssignment" -Subscription "00000000-1111-0000-1111-000000000000" -Confirm
 ```
 
-Hapus penetapan cetak biru yang ditentukan berdasarkan nama dari langganan yang ditentukan. Cmdlet akan meminta konfirmasi sebelum menjalankan perintah.
+Hapus penetapan cetak biru yang ditentukan menurut nama dari langganan yang ditentukan. Cmdlet akan meminta konfirmasi sebelum menjalankan perintah.
 
 ## PARAMETERS
 
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek penetapan cetak biru.
+Objek tugas cetak biru.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Blueprint.Models.PSBlueprintAssignment
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementGroupId
-ID grup manajemen tempat penetapan Cetak Biru disimpan.
+ID grup manajemen tempat penetapan Blueprint disimpan.
 
 ```yaml
 Type: System.String
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Ketika diatur, cmdlet akan mengembalikan objek yang mewakili penetapan Cetak Biru yang dihapus. Secara default, cmdlet ini tidak menghasilkan output apa pun.
+Ketika diatur, cmdlet akan mengembalikan objek yang mewakili penetapan Blueprint yang dihapus. Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Id Langganan penetapan cetak biru digunakan.
+Subscription Id tempat penetapan cetak biru disebarkan.
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

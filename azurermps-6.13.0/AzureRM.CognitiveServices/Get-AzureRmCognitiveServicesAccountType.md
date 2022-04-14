@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.cogni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/CognitiveServices/Commands.Management.CognitiveServices/help/Get-AzureRmCognitiveServicesAccountType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/CognitiveServices/Commands.Management.CognitiveServices/help/Get-AzureRmCognitiveServicesAccountType.md
-ms.openlocfilehash: bfc0cac22a212b1482daa982e3f39a018c79e6a11f02a1fc835df595f3d666f2
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 05a4af3e92febcf30d44de9b114972a7c1f61d5b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140854437"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142142733"
 ---
 # Get-AzureRmCognitiveServicesAccountType
 
 ## SYNOPSIS
-Dapatkan Tipe Akun Layanan Kognitif yang tersedia.
+Mendapatkan Tipe Akun Layanan Kognitif yang tersedia.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -43,7 +43,7 @@ Cmdlet **Get-AzureRmCognitiveServicesAccountType** mendapatkan Tipe Akun Layanan
 PS C:\> Get-AzureRmCognitiveServicesAccountType
 ```
 
-Mendapatkan daftar Tipe yang tersedia.
+Dapatkan daftar Tipe yang tersedia.
 
 ### Contoh 2
 ```powershell
@@ -59,7 +59,7 @@ PS C:\> Get-AzureRmCognitiveServicesAccountType -TypeName Face
 Face
 ```
 
-Periksa apakah `Face` nama Tipe yang valid, nama tersebut akan dikembalikan jika merupakan nama yang valid.
+Periksa apakah `Face` nama Tipe valid, nama akan dikembalikan jika nama tersebut adalah nama yang valid.
 
 ## PARAMETERS
 
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

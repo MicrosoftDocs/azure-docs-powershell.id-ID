@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultNetworkRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultNetworkRuleSet.md
 ms.openlocfilehash: 297ff36f7715c6e5eae2da2f8398a812844efb3e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140284549"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142230949"
 ---
 # Update-AzKeyVaultNetworkRuleSet
 
 ## SYNOPSIS
-Memperbarui aturan jaringan yang diatur di kunci vault.
+Memperbarui aturan jaringan yang diatur pada kubah kunci.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/update-azkeyvaultnetworkruleset) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/update-azkeyvaultnetworkruleset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +50,7 @@ Update-AzKeyVaultNetworkRuleSet [-ResourceId] <String>
 ```
 
 ## DESCRIPTION
-Perintah **Update-AzKeyVaultNetworkRuleSet** memperbarui aturan jaringan yang berlaku pada vault kunci yang ditentukan. 
+Perintah **Update-AzKeyVaultNetworkRuleSet** memperbarui aturan jaringan yang berlaku pada kubah kunci yang ditentukan. 
 
 ## EXAMPLES
 
@@ -100,11 +100,11 @@ Network Rule Set                 :
 Tags                             :
 ```
 
-Perintah ini memperbarui aturan jaringan pada penyimpanan bernama 'myVault' untuk rentang IP tertentu dan jaringan virtual, yang memungkinkan melewati aturan jaringan untuk layanan Azure.
+Perintah ini memperbarui aturan jaringan pada kubah bernama 'myVault' untuk rentang IP tertentu dan jaringan virtual, yang memungkinkan melewati aturan jaringan untuk layanan Azure.
 
 ### Contoh 2
 
-Memperbarui aturan jaringan yang diatur di kunci vault. (otomatisgenerated)
+Memperbarui aturan jaringan yang diatur pada kubah kunci. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -114,7 +114,7 @@ Update-AzKeyVaultNetworkRuleSet -DefaultAction Allow -VaultName 'myVault'
 ## PARAMETERS
 
 ### -Bypass
-Menentukan lewati aturan jaringan.
+Menentukan bypass aturan jaringan.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultNetworkRuleBypassEnum]
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultAction
-Menentukan tindakan default aturan jaringan.
+Menentukan aksi default aturan jaringan.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultNetworkRuleDefaultActionEnum]
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpAddressRange
-Menentukan rentang alamat IP jaringan yang diizinkan dari aturan jaringan.
+Menentukan rentang alamat IP jaringan yang diperbolehkan dari aturan jaringan.
 
 ```yaml
 Type: System.String[]
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 
 ### -PassThru
 Cmdlet ini tidak mengembalikan objek secara default.
-Jika sakelar ini ditentukan, tombol tersebut akan mengembalikan objek vault kunci yang diperbarui.
+Jika sakelar ini ditentukan, maka akan mengembalikan objek kubah kunci yang diperbarui.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang terkait dengan penyimpanan kunci yang aturan jaringannya sedang diubah.
+Menentukan nama grup sumber daya yang terkait dengan kubah kunci yang aturan jaringannya sedang diubah.
 
 ```yaml
 Type: System.String
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengganti langganan hanya berlaku selama siklus hidup cmdlet saat ini. Langganan tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
+Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kunci vault yang aturan jaringannya sedang dimodifikasi.
+Menentukan nama kubah kunci yang aturan jaringannya sedang diubah.
 
 ```yaml
 Type: System.String
@@ -269,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkResourceId
-Menentukan pengidentifikasi sumber daya jaringan virtual yang diperbolehkan dari aturan jaringan.
+Menentukan pengidentifikasi sumber daya jaringan maya yang diperbolehkan dari aturan jaringan.
 
 ```yaml
 Type: System.String[]
@@ -284,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -300,7 +300,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -315,7 +315,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

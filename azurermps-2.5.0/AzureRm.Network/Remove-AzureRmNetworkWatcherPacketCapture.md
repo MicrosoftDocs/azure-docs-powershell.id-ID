@@ -4,16 +4,16 @@ Module Name: AzureRM.Network
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/remove-azurermnetworkwatcherpacketcapture
 schema: 2.0.0
 ms.openlocfilehash: eb8997025a9fa73c394c2c51c23f00c211604cb2
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132429129"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141847584"
 ---
 # Remove-AzureRmNetworkWatcherPacketCapture
 
 ## SYNOPSIS
-Menghapus sumber daya pengambilan paket.
+Menghapus sumber daya penangkapan paket.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -33,7 +33,7 @@ Remove-AzureRmNetworkWatcherPacketCapture -NetworkWatcherName <String> -Resource
 ```
 
 ## DESCRIPTION
-Sumber Remove-AzureRmNetworkWatcherPacketCapture menghapus sumber daya penangkapan paket. Sebaiknya hubungi penyedia Stop-AzureRmNetworkWatcherPacketCapture menghapus-AzureRmNetworkWatcherPacketCapture. Jika sesi pengambilan paket berjalan saat Remove-AzureRmNetworkWatcherPacketCapture paket disebut pengambilan paket mungkin tidak disimpan. Jika sesi dihentikan sebelum penghapusan file .cap yang berisi data tangkapan tidak dihapus. 
+Remove-AzureRmNetworkWatcherPacketCapture menghapus sumber daya penangkapan paket. Disarankan untuk menghubungi Stop-AzureRmNetworkWatcherPacketCapture sebelum menghubungi Remove-AzureRmNetworkWatcherPacketCapture. Jika sesi pengambilan paket berjalan saat Remove-AzureRmNetworkWatcherPacketCapture disebut penangkapan paket mungkin tidak disimpan. Jika sesi dihentikan sebelum menghapus file .cap yang berisi data tangkapan tidak dihapus. 
 
 ## EXAMPLES
 
@@ -42,12 +42,12 @@ Sumber Remove-AzureRmNetworkWatcherPacketCapture menghapus sumber daya penangkap
 Remove-AzureRmNetworkWatcherPacketCapture -NetworkWatcher $networkWatcher -PacketCaptureName "PacketCaptureTest"
 ```
 
-Dalam contoh ini, kami menghapus sesi penangkapan paket yang sudah ada bernama "PacketCaptureTest".
+Dalam contoh ini, kami menghapus sesi pengambilan paket yang sudah ada bernama "PacketCaptureTest".
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengawas jaringan.
+Sumber daya pengamat jaringan.
 
 ```yaml
 Type: PSNetworkWatcher
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -PacketCaptureName
-Nama pengambilan paket.
+Nama penangkapan paket.
 
 ```yaml
 Type: String
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{fill passThru Description}}
+{{Fill PassThru Description}}
 
 ```yaml
 Type: SwitchParameter
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -195,11 +195,11 @@ System.String
 ### System.Object
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, network, networking, network watcher, packet, capture, traffic, remove
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengawas jaringan, paket, menangkap, lalu lintas, menghapus
 
 ## RELATED LINKS
 
-[New-AzureRmNetworkWatcherPacketCapture](./New-AzureRmNetworkWatcherPacketCapture.md)
+[Baru-AzureRmNetworkWatcherPacketCapture](./New-AzureRmNetworkWatcherPacketCapture.md)
 
 [New-AzureRmPacketCaptureFilterConfig](./New-AzureRmPacketCaptureFilterConfig.md)
 
@@ -207,13 +207,13 @@ Kata kunci: azure, azurerm, arm, resource, management, manager, network, network
 
 [Stop-AzureRmNetworkWatcherPacketCapture](./Stop-AzureRmNetworkWatcherPacketCapture.md)
 
-[New-AzureRmNetworkWatcher](./New-AzureRmNetworkWatcher.md)
+[AzureRmNetworkWatcher baru](./New-AzureRmNetworkWatcher.md)
 
 [Get-AzureRmNetworkWatcher](./Get-AzureRmNetworkWatcher.md)
 
-[Remove-AzureRmNetworkWatcher](./Remove-AzureRmNetworkWatcher.md)
+[Hapus-AzureRmNetworkWatcher](./Remove-AzureRmNetworkWatcher.md)
 
-[Test-AzureRmNetworkWatcherIPFlow](./Test-AzureRmNetworkWatcherIPFlow.md)
+[Uji-AzureRmNetworkWatcherIPFlow](./Test-AzureRmNetworkWatcherIPFlow.md)
 
 [Get-AzureRmNetworkWatcherNextHop](./Get-AzureRmNetworkWatcherNextHop.md)
 
