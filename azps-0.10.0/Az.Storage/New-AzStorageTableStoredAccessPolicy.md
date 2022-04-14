@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/New-AzStorageTableStoredAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/New-AzStorageTableStoredAccessPolicy.md
 ms.openlocfilehash: 083114668fe46da6fb2ca8ba47bc540067539532
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424904"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142092159"
 ---
 # New-AzStorageTableStoredAccessPolicy
 
 ## SYNOPSIS
-Membuat kebijakan akses tersimpan untuk tabel penyimpanan Azure.
+Membuat kebijakan akses yang disimpan untuk tabel penyimpanan Azure.
 
 ## SYNTAX
 
@@ -27,16 +27,16 @@ New-AzStorageTableStoredAccessPolicy [-Table] <String> [-Policy] <String> [-Perm
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzStorageTableStoredAccessPolicy** membuat kebijakan akses tersimpan untuk tabel penyimpanan Azure.
+Cmdlet **New-AzStorageTableStoredAccessPolicy** membuat kebijakan akses yang disimpan untuk tabel penyimpanan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat kebijakan akses tersimpan dalam tabel
+### Contoh 1: Membuat kebijakan akses yang disimpan dalam tabel
 ```
 PS C:\>New-AzStorageTableStoredAccessPolicy -Table "MyTable" -Policy "Policy02"
 ```
 
-Perintah ini membuat kebijakan akses yang bernama Policy02 dalam tabel penyimpanan yang bernama MyTable.
+Perintah ini membuat kebijakan akses bernama Policy02 dalam tabel penyimpanan bernama MyTable.
 
 ## PARAMETERS
 
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpiryTime
-Menentukan waktu di mana kebijakan akses tersimpan menjadi tidak valid.
+Menentukan waktu ketika kebijakan akses yang disimpan menjadi tidak valid.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -86,9 +86,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Permission
-Menentukan izin dalam kebijakan akses tersimpan untuk mengakses tabel penyimpanan.
-Penting untuk diingat bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis dan Hapus).
+### -Izin
+Menentukan izin dalam kebijakan akses yang disimpan untuk mengakses tabel penyimpanan.
+Penting untuk diperhatikan bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis, dan Hapus).
 
 ```yaml
 Type: System.String
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Menentukan waktu di mana kebijakan akses tersimpan menjadi valid.
+Menentukan waktu di mana kebijakan akses yang disimpan menjadi valid.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -4,16 +4,16 @@ Module Name: AzureRM.Network
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/get-azurermvirtualnetworkgatewayadvertisedroute
 schema: 2.0.0
 ms.openlocfilehash: 0097cd022387b3ac2ee8ceb1fa2a831b60c4256d
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140851095"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142146280"
 ---
 # Get-AzureRmVirtualNetworkGatewayAdvertisedRoute
 
 ## SYNOPSIS
-Mencantumkan rute yang diiklankan oleh gateway jaringan virtual Azure
+Mencantumkan rute yang sedang diiklankan oleh gateway jaringan virtual Azure
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -25,7 +25,7 @@ Get-AzureRmVirtualNetworkGatewayAdvertisedRoute -VirtualNetworkGatewayName <Stri
 ```
 
 ## DESCRIPTION
-Jika IP peer BGP, menghitung rute yang diiklankan ke rekan tersebut oleh gateway jaringan virtual Azure yang ditentukan. 
+Mengingat IP peer BGP, menghitung rute yang diiklankan ke rekan tersebut oleh gateway jaringan virtual Azure yang ditentukan. 
 
 ## EXAMPLES
 
@@ -34,7 +34,7 @@ Jika IP peer BGP, menghitung rute yang diiklankan ke rekan tersebut oleh gateway
 PS C:\> Get-AzureRmVirtualNetworkGatewayAdvertisedRoute -VirtualNetworkGatewayName gatewayName -ResourceGroupName resourceGroupName -Peer 10.0.0.254
 ```
 
-Untuk gateway Azure yang bernama gatewayName dalam sumber daya grup sumber dayaGroupName, lihat kembali daftar rute yang diiklankan ke peer BGP dengan IP 10.0.0.254
+Untuk gateway Azure bernama gatewayName dalam sumber daya grup sumber dayaGroupName, mengupayakan daftar rute yang sedang diiklankan ke peer BGP dengan IP 10.0.0.254
 
 ### Contoh 2
 ```
@@ -42,12 +42,12 @@ PS C:\> $bgpPeerStatus = Get-AzureRmVirtualNetworkGatewayBGPPeerStatus -VirtualN
 PS C:\> Get-AzureRmVirtualNetworkGatewayAdvertisedRoute -VirtualNetworkGatewayName gatewayName -ResourceGroupName resourceGroupName -Peer $bgpPeerStatus[0].Neighbor
 ```
 
-Untuk gateway Azure yang bernama gatewayName dalam sumber daya grup sumber dayaGroupName, mengambil rute yang diiklankan ke rekan BGP pertama di daftar gateway rekan BGP.
+Untuk gateway Azure bernama gatewayName dalam sumber daya grup sumber dayaGroupName, mengambil rute yang sedang diiklankan ke rekan BGP pertama di daftar rekan BGP gateway.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Peer
-Alamat IP rekan BGP. Ini harus merupakan IP dalam ruang alamat yang dapat diakses dari dalam jaringan virtual Azure, gateway yang digunakan. 
+Alamat IP BGP peer. Ini harus berupa IP di dalam ruang alamat yang dapat diakses dari dalam jaringan virtual Azure tempat gateway disebarkan. 
 
 ```yaml
 Type: String
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -133,7 +133,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSGatewayRoute[]
 
 ## CATATAN
-Perintah ini hanya berlaku untuk gateway jaringan virtual Azure dengan koneksi yang diaktifkan BGP.
+Perintah ini hanya berlaku untuk gateway jaringan virtual Azure dengan koneksi BGP yang diaktifkan.
 
 ## RELATED LINKS
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Restore-AzWebAppSnapshot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Restore-AzWebAppSnapshot.md
 ms.openlocfilehash: 7d3fea59855df7384151dae831be8b3447e5b518
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140456778"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142116539"
 ---
 # Restore-AzWebAppSnapshot
 
@@ -18,7 +18,7 @@ ms.locfileid: "140456778"
 Memulihkan snapshot aplikasi web.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/restore-azwebappsnapshot) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/restore-azwebappsnapshot) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Restore-AzWebAppSnapshot [-RecoverConfiguration] [-UseDisasterRecovery] [-Force]
 ```
 
 ## DESCRIPTION
-Memulihkan snapshot aplikasi web ke aplikasi web. Memulihkan snapshot menimpa semua file di aplikasi web dengan file yang terdapat dalam snapshot. Untuk memulihkan pengaturan juga, gunakan parameter sakelar RecoverConfiguration. Snapshot dari satu aplikasi web dapat dipulihkan ke aplikasi web lainnya dalam langganan yang sama.
+Memulihkan snapshot aplikasi web ke aplikasi web. Memulihkan snapshot menimpa semua file di aplikasi web dengan file yang terdapat dalam snapshot. Untuk memulihkan pengaturan juga, gunakan parameter sakelar PemulihanKonfigurasi. Snapshot dari satu aplikasi web dapat dipulihkan ke aplikasi web lainnya dalam langganan yang sama.
 
 ## EXAMPLES
 
@@ -47,12 +47,12 @@ PS C:\> $snapshot = (Get-AzWebAppSnapshot -ResourceGroupName "Default-Web-WestUS
 PS C:\> Restore-AzWebAppSnapshot -ResourceGroupName "Default-Web-WestUS" -Name "ContosoApp" -Slot "Restore" -InputObject $snapshot -RecoverConfiguration
 ```
 
-Dapatkan snapshot terbaru dari aplikasi web yang bernama "ContosoApp" dengan slot bernama "Pengembangan" di grup sumber daya "Default-Web-WestUS". Memulihkan jepretan layar ke slot "Pulihkan" aplikasi web.
+Mendapatkan snapshot terbaru aplikasi web bernama "ContosoApp" dengan slot bernama "Staging" dalam grup sumber daya "Default-Web-WestUS". Memulihkan snapshot ke slot "Pulihkan" aplikasi web.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -81,8 +81,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memungkinkan aplikasi web asli untuk ditimpa tanpa menampilkan peringatan.
+### -Paksa
+Memungkinkan aplikasi web asli ditimpa tanpa menampilkan peringatan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -126,8 +126,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -RecoverConfiguration
-Memulihkan konfigurasi aplikasi web selain file.
+### -PemulihanKonfigurasi
+Pulihkan konfigurasi aplikasi web selain file.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -241,7 +241,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ### Microsoft.Azure.Commands.WebApps.Cmdlets.BackupRestore.AzureWebAppSnapshot
 

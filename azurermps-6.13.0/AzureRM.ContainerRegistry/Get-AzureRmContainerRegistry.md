@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ContainerRegistry/Commands.ContainerRegistry/help/Get-AzureRmContainerRegistry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ContainerRegistry/Commands.ContainerRegistry/help/Get-AzureRmContainerRegistry.md
 ms.openlocfilehash: 3d9580549308c17c92037b3e31a337f11bbe6938
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422963"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142065435"
 ---
 # Get-AzureRmContainerRegistry
 
 ## SYNOPSIS
-Mendapatkan registri wadah.
+Mendapatkan registri kontainer.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Get-AzureRmContainerRegistry [[-ResourceGroupName] <String>] [-IncludeDetail]
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### RegistryNameParameterSet
+### RegistriNameParameterSet
 ```
 Get-AzureRmContainerRegistry [-ResourceGroupName] <String> [-Name] <String> [-IncludeDetail]
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -40,11 +40,11 @@ Get-AzureRmContainerRegistry [-IncludeDetail] -ResourceId <String> [-DefaultProf
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzureRmContainerRegistry mendapatkan registri wadah yang ditentukan atau semua registri wadah dalam grup sumber daya atau langganan.
+Cmdlet Get-AzureRmContainerRegistry mendapatkan registri kontainer tertentu atau semua registri kontainer dalam grup sumber daya atau langganan.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan registri wadah yang ditentukan
+### Contoh 1: Dapatkan registri kontainer tertentu
 ```powershell
 PS C:\>Get-AzureRmContainerRegistry -ResourceGroupName "MyResourceGroup" -Name "MyRegistry"
 
@@ -56,9 +56,9 @@ Registry Name     Sku        LoginServer               CreationDate             
 myregistry        Premium    myregistry.azurecr.io     10/31/2017 6:49:31 PM      Succeeded  True
 ```
 
-Perintah ini mendapatkan registri wadah yang ditentukan.
+Perintah ini mendapatkan registri kontainer yang ditentukan.
 
-### Contoh 2: Dapatkan semua registri wadah dalam grup sumber daya
+### Contoh 2: Mendapatkan semua registri kontainer dalam grup sumber daya
 ```powershell
 PS C:\>Get-AzureRmContainerRegistry -ResourceGroupName "MyResourceGroup"
 
@@ -78,9 +78,9 @@ Registry Name     Sku        LoginServer               CreationDate             
 myregistry1       Premium    myregistry1.azurecr.io    10/31/2017 6:29:31 PM      Succeeded  True
 ```
 
-Perintah ini mendapatkan semua registri wadah dalam grup sumber daya.
+Perintah ini mendapatkan semua registri kontainer dalam grup sumber daya.
 
-### Contoh 3: Mendapatkan semua registri wadah dalam langganan
+### Contoh 3: Dapatkan semua registri kontainer dalam langganan
 ```powershell
 PS C:\>Get-AzureRmContainerRegistry
 
@@ -100,12 +100,12 @@ Registry Name     Sku        LoginServer               CreationDate             
 myregistry1       Premium    myregistry1.azurecr.io    10/31/2017 6:29:31 PM      Succeeded  True
 ```
 
-Perintah ini akan mendapatkan semua registri wadah dalam langganan.
+Perintah ini mendapatkan semua registri kontainer dalam langganan.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeDetail
-Perlihatkan detail selengkapnya tentang registri wadah.
+Tampilkan detail selengkapnya tentang registri kontainer.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Container Registry Name.
+Nama Registri Kontainer.
 
 ```yaml
 Type: System.String
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Container registry resource id
+Id sumber daya registri kontainer
 
 ```yaml
 Type: System.String
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -206,9 +206,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmContainerRegistry](New-AzureRmContainerRegistry.md)
+[AzureRmContainerRegistry baru](New-AzureRmContainerRegistry.md)
 
-[Update-AzureRmContainerRegistry](Update-AzureRmContainerRegistry.md)
+[Pembaruan-AzureRmContainerRegistry](Update-AzureRmContainerRegistry.md)
 
-[Remove-AzureRmContainerRegistry](Remove-AzureRmContainerRegistry.md)
+[Hapus-AzureRmContainerRegistry](Remove-AzureRmContainerRegistry.md)
 

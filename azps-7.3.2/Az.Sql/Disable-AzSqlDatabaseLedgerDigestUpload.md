@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/disable-azsq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Disable-AzSqlDatabaseLedgerDigestUpload.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Disable-AzSqlDatabaseLedgerDigestUpload.md
-ms.openlocfilehash: 1db59020b5ccbff96cd06622f2eae3f01ad8590e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e18e993f59afa9fb51c25a4d9864c537e87d8ec3
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140400863"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142208431"
 ---
 # Disable-AzSqlDatabaseLedgerDigestUpload
 
 ## SYNOPSIS
-Menonaktifkan pengunggahan ringkasan Ledger ke penyimpanan Blob Azure atau ke Azure Confidential Ledger.
+Menonaktifkan pengunggahan pencernaan buku besar ke penyimpanan Azure Blob atau ke Azure Confidential Ledger.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/disable-azsqldatabaseledgerdigestupload) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Disable-AzSqlDatabaseLedgerDigestUpload [-ResourceId] <String> [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Cmdlet Disable-AzSqlDatabaseLedgerDigestUpload menonaktifkan pengunggahan digest ledger ke penyimpanan Blob Azure atau Ledger Azure Confidental. Untuk menggunakan cmdlet, identifikasi database.
+Cmdlet Disable-AzSqlDatabaseLedgerDigestUpload menonaktifkan pengunggahan pencernaan buku besar ke penyimpanan Azure Blob atau Azure Confidental Ledger. Untuk menggunakan cmdlet, identifikasi database.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Cmdlet Disable-AzSqlDatabaseLedgerDigestUpload menonaktifkan pengunggahan digest
 PS C:\> Disable-AzSqlDatabaseLedgerDigestUpload -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" 
 ```
 
-Titik akhir Status ServerName ServerName ResourceGroupName
+Titik Akhir Status NamaData Database ResourceGroupName ServerName
 ----------------- ---------- ------------ -----    --------
 ResourceGroup01 Server01 Database01 Dinonaktifkan
 
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek database untuk menonaktifkan unggahan ringkasan untuk.
+Objek database untuk menonaktifkan unggahan digest.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya database untuk menonaktifkan unggahan ringkasan.
+Id sumber daya database untuk menonaktifkan unggahan digest.
 
 ```yaml
 Type: System.String
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-SQL server baru.
+SQL nama server.
 
 ```yaml
 Type: System.String
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

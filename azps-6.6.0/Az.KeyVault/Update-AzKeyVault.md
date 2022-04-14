@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVault.md
 ms.openlocfilehash: 2611674d2acb8d98224f24c79f8ed676fcee05b5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140284657"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142230985"
 ---
 # Update-AzKeyVault
 
 ## SYNOPSIS
-Perbarui status penyimpanan kunci Azure.
+Perbarui status kubah kunci Azure.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/update-azkeyvault) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/update-azkeyvault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Update-AzKeyVault -ResourceId <String> [-EnablePurgeProtection] [-EnableRbacAuth
 ```
 
 ## DESCRIPTION
-Cmdlet ini memperbarui status key vault Azure.
+Cmdlet ini memperbarui status kubah kunci Azure.
 
 ## EXAMPLES
 
@@ -53,28 +53,28 @@ Cmdlet ini memperbarui status key vault Azure.
 PS C:\> Get-AzKeyVault -VaultName $keyVaultName -ResourceGroupName $resourceGroupName | Update-AzKeyVault -EnablePurgeProtection
 ```
 
-Memungkinkan proteksi pembersihan menggunakan sintaks pemipaan.
+Memungkinkan perlindungan pembersihan menggunakan sintaks perpipaan.
 
 ### Contoh 2: Aktifkan Otorisasi RBAC
 ```powershell
 PS C:\> Get-AzKeyVault -VaultName $keyVaultName -ResourceGroupName $resourceGroupName | Update-AzKeyVault -EnableRbacAuthorization $true
 ```
 
-Mengaktifkan Otorisasi RBAC menggunakan sintaks pemipaan.
+Mengaktifkan Otorisasi RBAC menggunakan sintaks perpipaan.
 
 ### Contoh 3: Mengatur tag
 ```powershell
 PS C:\> Get-AzKeyVault -VaultName $keyVaultName | Update-AzKeyVault -Tags @{key = "value"}
 ```
 
-Mengatur tag kunci vault bernama $keyVaultName.
+Mengatur tag kubah kunci bernama $keyVaultName.
 
 ### Contoh 4: Bersihkan tag
 ```powershell
 PS C:\> Get-AzKeyVault -VaultName $keyVaultName | Update-AzKeyVault -Tags @{}
 ```
 
-Menghapus semua tag kunci vault bernama $keyVaultName.
+Menghapus semua tag kubah kunci bernama $keyVaultName.
 
 ## PARAMETERS
 
@@ -94,9 +94,9 @@ Accept wildcard characters: False
 ```
 
 ### -EnablePurgeProtection
-Aktifkan fungsi proteksi pembersihan untuk vault kunci ini.
-Setelah diaktifkan, fitur ini tidak dapat dinonaktifkan.
-Perlu penghapusan sementara untuk diaktifkan.
+Aktifkan fungsi perlindungan pembersihan untuk kubah kunci ini.
+Setelah diaktifkan, tidak dapat dinonaktifkan.
+Ini memerlukan penghapusan lunak untuk diaktifkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableRbacAuthorization
-Aktifkan atau nonaktifkan kunci vault ini untuk mengotorisasi tindakan data menurut Kontrol Akses Berbasis Peran (RBAC, Role Based Access Control).
+Aktifkan atau nonaktifkan kubah kunci ini untuk mengotorisasi tindakan data menurut Access Control Berbasis Peran (RBAC).
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek kunci vault.
+Objek kubah kunci.
 
 ```yaml
 Type: Microsoft.Azure.Commands.KeyVault.Models.PSKeyVault
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya penyimpanan kunci.
+ID sumber daya kubah kunci.
 
 ```yaml
 Type: System.String
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengganti langganan hanya berlaku selama siklus hidup cmdlet saat ini. Langganan tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
+Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama kunci vault.
+Nama kubah kunci.
 
 ```yaml
 Type: System.String
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -249,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

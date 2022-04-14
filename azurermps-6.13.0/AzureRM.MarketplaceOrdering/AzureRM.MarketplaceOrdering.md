@@ -6,21 +6,21 @@ Help Version: 0.1.0.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/MarketplaceOrdering/Commands.MarketplaceOrdering/help/AzureRM.MarketplaceOrdering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/MarketplaceOrdering/Commands.MarketplaceOrdering/help/AzureRM.MarketplaceOrdering.md
-ms.openlocfilehash: 006c825a3529ab1ffc717bd06a1eb6ee87436ed8c5fa041301a05df0475f37aa
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: bbbdd28f0ea3916581c20cf8f078eca1cb2ddca6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132418226"
 ---
 # AzureRM.MarketplaceOrdering Module
 ## Deskripsi
-Topik dalam bagian ini mendokumentasikan Azure PowerShell cmdlet untuk Azure MarketplaceOrdering dalam kerangka kerja Azure Resource Manager (ARM). Cmdlet ada di ruang nama Microsoft.Azure.Commands.MarketplaceOrdering. Cmdlets ini memungkinkan pengguna Azure untuk menerima ketentuan hukum untuk penawaran marketplace yang memungkinkan penyebaran programatik lebih lanjut untuk solusi ini. Pengguna juga dapat menolak kumpulan syarat hukum yang sudah diterima.
+Topik di bagian ini mendokumentasikan cmdlet Azure PowerShell untuk Azure MarketplaceOrdering dalam kerangka kerja Azure Resource Manager (ARM). Cmdlet ada di ruang nama Microsoft.Azure.Commands.MarketplaceOrdering. Cmdlet ini memungkinkan pengguna Azure untuk menerima ketentuan hukum untuk pasar yang menawarkan penyebaran terprogram lebih lanjut untuk solusi ini. Pengguna juga dapat menolak kumpulan ketentuan hukum yang sudah diterima.
 
 ## Cmdlet AzureRM.MarketplaceOrdering
 ### [Get-AzureRmMarketplaceTerms](Get-AzureRmMarketplaceTerms.md)
-Dapatkan persyaratan perjanjian untuk publisher id(Publisher), offer id(Product) dan plan id(Name) yang diberikan. Istilah objek yang dikembalikan oleh perintah ini harus disampaikan ke Set-AzureRmMarketplaceTerms untuk menerima persyaratan hukum.
+Dapatkan ketentuan perjanjian untuk id penerbit tertentu(Publisher), id penawaran(Produk) dan id rencana(Nama). Objek istilah yang dikembalikan oleh perintah ini harus dialihkan ke Set-AzureRmMarketplaceTerms untuk menerima ketentuan hukum.
 
 ### [Set-AzureRmMarketplaceTerms](Set-AzureRmMarketplaceTerms.md)
-Terima atau tolak persyaratan untuk publisher id(Publisher), offer id(Product) dan plan id(Name) yang diberikan. Silakan gunakan Get-AzureRmMarketplaceTerms untuk mendapatkan ketentuan perjanjian.
+Menerima atau menolak ketentuan untuk id penerbit tertentu(Publisher), id penawaran(Produk) dan id rencana(Nama). Silakan gunakan Get-AzureRmMarketplaceTerms untuk mendapatkan ketentuan perjanjian.
 

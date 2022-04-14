@@ -4,29 +4,29 @@ Module Guid: 0a83c907-1ffb-4d87-a492-c65ac7d7ed37
 Download Help Link: ''
 Help Version: 3.5.0.0
 Locale: en-US
-ms.openlocfilehash: 1dc44b1d7171304f4ddb9df5b0b971b6818b1904d6d8bc29345f3aa61594e2d6
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 53c0de52dcb059f2e7d2b75b1489d8de2a938891
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132419475"
 ---
 # AzureRM.Compute Module
 ## Deskripsi
-Topik ini menampilkan topik bantuan untuk Cmdlet Perhitungan Azure.
+Topik ini menampilkan topik bantuan untuk Cmdlet Komputasi Azure.
 
 ## Cmdlet AzureRM.Compute
 ### [Add-AzureRmContainerServiceAgentPoolProfile](Add-AzureRmContainerServiceAgentPoolProfile.md)
-Menambahkan profil wadah agen layanan kolam renang.
+Menambahkan profil kumpulan agen layanan kontainer.
 
 ### [Add-AzureRmImageDataDisk](Add-AzureRmImageDataDisk.md)
 Menambahkan disk data ke objek gambar.
 
 ### [Add-AzureRmVhd](Add-AzureRmVhd.md)
-Mengunggah hard disk virtual dari komputer virtual lokal ke blob dalam akun penyimpanan cloud di Azure.
+Mengunggah hard disk virtual dari mesin virtual lokal ke blob di akun penyimpanan cloud di Azure.
 
 ### [Add-AzureRmVMAdditionalUnattendContent](Add-AzureRmVMAdditionalUnattendContent.md)
-Menambahkan informasi ke file jawaban Windows Setup tanpa Windows.
+Menambahkan informasi ke file jawaban penyetelan Windows tanpa pengawas.
 
 ### [Add-AzureRmVMDataDisk](Add-AzureRmVMDataDisk.md)
 Menambahkan disk data ke mesin virtual.
@@ -38,58 +38,58 @@ Menambahkan antarmuka jaringan ke mesin virtual.
 Menambahkan rahasia ke mesin virtual.
 
 ### [Add-AzureRmVmssAdditionalUnattendContent](Add-AzureRmVmssAdditionalUnattendContent.md)
-Menambahkan informasi ke file jawaban Windows Setup tanpa Windows.
+Menambahkan informasi ke file jawaban penyetelan Windows tanpa pengawas.
 
 ### [Add-AzureRmVmssDataDisk](Add-AzureRmVmssDataDisk.md)
 Menambahkan disk data ke VMSS.
 
 ### [Add-AzureRmVmssDiagnosticsExtension](Add-AzureRmVmssDiagnosticsExtension.md)
-Menambahkan ekstensi diagnostik pada VMSS.
+Menambahkan ekstensi diagnostik ke VMSS.
 
 ### [Add-AzureRmVmssExtension](Add-AzureRmVmssExtension.md)
-Menambahkan ekstensi pada VMSS.
+Menambahkan ekstensi ke VMSS.
 
 ### [Add-AzureRmVMSshPublicKey](Add-AzureRmVMSshPublicKey.md)
-Menambahkan kunci publik UNTUK KEYS untuk komputer virtual.
+Menambahkan kunci publik untuk SSH untuk mesin virtual.
 
 ### [Add-AzureRmVmssNetworkInterfaceConfiguration](Add-AzureRmVmssNetworkInterfaceConfiguration.md)
-Menambahkan konfigurasi antarmuka jaringan pada VMSS.
+Menambahkan konfigurasi antarmuka jaringan ke VMSS.
 
 ### [Add-AzureRmVmssSecret](Add-AzureRmVmssSecret.md)
-Menambahkan rahasia pada VMSS.
+Menambahkan rahasia ke VMSS.
 
 ### [Add-AzureRmVmssSshPublicKey](Add-AzureRmVmssSshPublicKey.md)
-Menambahkan kunci publik KEYS KE VMSS.
+Menambahkan kunci publik SSH ke VMSS.
 
 ### [Add-AzureRmVmssWinRMListener](Add-AzureRmVmssWinRMListener.md)
-Menambahkan pendengar WinRM pada VMSS.
+Menambahkan pendengar WinRM ke VMSS.
 
 ### [ConvertTo-AzureRmVMManagedDisk](ConvertTo-AzureRmVMManagedDisk.md)
-Mengonversi mesin virtual dengan disk berbasis blob menjadi mesin virtual dengan disk yang dikelola.
+Mengonversi mesin virtual dengan disk berbasis blob ke mesin virtual dengan disk terkelola.
 
-### [Disable-AzureRmVMDiskEncryption](Disable-AzureRmVMDiskEncryption.md)
+### [Nonaktifkan-AzureRmVMDiskEncryption](Disable-AzureRmVMDiskEncryption.md)
 Menonaktifkan enkripsi pada mesin virtual IaaS.
 
 ### [Disable-AzureRmVmssDiskEncryption](Disable-AzureRmVmssDiskEncryption.md)
 Menonaktifkan enkripsi disk pada kumpulan skala VM.
 
-### [Export-AzureRmLogAnalyticRequestRateByInterval](Export-AzureRmLogAnalyticRequestRateByInterval.md)
-Ekspor log yang memperlihatkan permintaan Api yang dibuat oleh langganan ini dalam jendela waktu tertentu untuk memperlihatkan aktivitas pembatasan.
+### [Ekspor-AzureRmLogAnalyticRequestRateByInterval](Export-AzureRmLogAnalyticRequestRateByInterval.md)
+Ekspor log yang memperlihatkan permintaan Api yang dibuat oleh langganan ini di jendela waktu tertentu untuk memperlihatkan aktivitas pembatasan.
 
-### [Export-AzureRmLogAnalyticThrottledRequests](Export-AzureRmLogAnalyticThrottledRequests.md)
-Ekspor log yang memperlihatkan permintaan Api total yang dilindungi untuk langganan ini dalam jendela waktu tertentu.
+### [Ekspor-AzureRmLogAnalyticThrottledRequests](Export-AzureRmLogAnalyticThrottledRequests.md)
+Ekspor log yang memperlihatkan total permintaan Api yang dibatasi untuk langganan ini di jendela waktu tertentu.
 
 ### [Get-AzureRmAvailabilitySet](Get-AzureRmAvailabilitySet.md)
 Mendapatkan kumpulan ketersediaan Azure dalam grup sumber daya.
 
-### [Get-AzureRmComputeResourceSku](Get-AzureRmComputeResourceSku.md)
-Daftar semua Sku sumber daya perhitungan
+### [Get-AzureRmComputeResourcesku](Get-AzureRmComputeResourceSku.md)
+Mencantumkan semua sku sumber daya komputasi
 
 ### [Get-AzureRmContainerService](Get-AzureRmContainerService.md)
 Mendapatkan layanan kontainer.
 
 ### [Get-AzureRmDisk](Get-AzureRmDisk.md)
-Mendapatkan properti disk Yang Dikelola.
+Mendapatkan properti disk terkelola.
 
 ### [Get-AzureRmImage](Get-AzureRmImage.md)
 Mendapatkan properti gambar.
@@ -113,7 +113,7 @@ Mendapatkan informasi tentang ekstensi domain AD.
 Mendapatkan informasi tentang ekstensi AEM.
 
 ### [Get-AzureRmVMBootDiagnosticsData](Get-AzureRmVMBootDiagnosticsData.md)
-Mendapatkan data diagnostik boot untuk komputer virtual.
+Mendapatkan data diagnostik boot untuk mesin virtual.
 
 ### [Get-AzureRmVMChefExtension](Get-AzureRmVMChefExtension.md)
 Mendapatkan informasi tentang ekstensi Chef.
@@ -122,58 +122,58 @@ Mendapatkan informasi tentang ekstensi Chef.
 Mendapatkan informasi tentang ekstensi skrip kustom.
 
 ### [Get-AzureRmVMDiagnosticsExtension](Get-AzureRmVMDiagnosticsExtension.md)
-Dapatkan pengaturan ekstensi Diagnostik di komputer virtual.
+Mendapatkan pengaturan ekstensi Diagnostik di mesin virtual.
 
 ### [Get-AzureRmVMDiskEncryptionStatus](Get-AzureRmVMDiskEncryptionStatus.md)
 Mendapatkan status enkripsi mesin virtual.
 
 ### [Get-AzureRmVMDscExtension](Get-AzureRmVMDscExtension.md)
-Dapatkan pengaturan ekstensi DSC di komputer virtual tertentu.
+Mendapatkan pengaturan ekstensi DSC pada mesin virtual tertentu.
 
 ### [Get-AzureRmVMDscExtensionStatus](Get-AzureRmVMDscExtensionStatus.md)
-Mendapatkan status penanganan ekstensi DSC untuk komputer virtual.
+Mendapatkan status pengatur ekstensi DSC untuk mesin virtual.
 
 ### [Get-AzureRmVMExtension](Get-AzureRmVMExtension.md)
-Mendapatkan properti Ekstensi Mesin Virtual yang diinstal di komputer virtual.
+Dapatkan properti Ekstensi Mesin Virtual yang terinstal di mesin virtual.
 
 ### [Get-AzureRmVMExtensionImage](Get-AzureRmVMExtensionImage.md)
 Mendapatkan semua versi untuk ekstensi Azure.
 
 ### [Get-AzureRmVMExtensionImageType](Get-AzureRmVMExtensionImageType.md)
-Mendapatkan jenis ekstensi Azure.
+Mendapatkan tipe ekstensi Azure.
 
 ### [Get-AzureRmVMImage](Get-AzureRmVMImage.md)
 Mendapatkan semua versi VMImage.
 
 ### [Get-AzureRmVMImageOffer](Get-AzureRmVMImageOffer.md)
-Mendapatkan jenis penawaran VMImage.
+Mendapatkan tipe penawaran VMImage.
 
 ### [Get-AzureRmVMImagePublisher](Get-AzureRmVMImagePublisher.md)
 Mendapatkan penerbit VMImage.
 
-### [Get-AzureRmVMImageSku](Get-AzureRmVMImageSku.md)
-Mendapatkan VMImage SKU.
+### [Get-AzureRmvmImagesku](Get-AzureRmVMImageSku.md)
+Mendapatkan SKU VMImage.
 
 ### [Get-AzureRmVMRunCommandDocument](Get-AzureRmVMRunCommandDocument.md)
-Dapatkan jalankan dokumen perintah.
+Dapatkan dokumen perintah jalankan.
 
-### [Get-AzureRmVMSize](Get-AzureRmVMSize.md)
-Mendapatkan ukuran mesin virtual yang tersedia.
+### [Dapatkan-AzureRmVMSize](Get-AzureRmVMSize.md)
+Dapatkan ukuran mesin virtual yang tersedia.
 
 ### [Get-AzureRmVMSqlServerExtension](Get-AzureRmVMSqlServerExtension.md)
-Dapatkan pengaturan untuk ekstensi SQL Server di komputer virtual.
+Mendapatkan pengaturan untuk ekstensi SQL Server di mesin virtual.
 
-### [Get-AzureRmVmss](Get-AzureRmVmss.md)
+### [Get-AzureRmVms](Get-AzureRmVmss.md)
 Mendapatkan properti VMSS.
 
 ### [Get-AzureRmVmssDiskEncryption](Get-AzureRmVmssDiskEncryption.md)
 Memperlihatkan status enkripsi disk dari kumpulan skala VM.
 
 ### [Get-AzureRmVmssRollingUpgrade](Get-AzureRmVmssRollingUpgrade.md)
-Memperlihatkan status kumpulan skala mesin virtual terbaru pemutakhiran berputar.
+Memperlihatkan status pemutakhiran rolling set skala mesin virtual terbaru.
 
 ### [Get-AzureRmVmssSku](Get-AzureRmVmssSku.md)
-Dapatkan SKU yang tersedia untuk VMSS.
+Mendapatkan SKU yang tersedia untuk VMSS.
 
 ### [Get-AzureRmVmssVM](Get-AzureRmVmssVM.md)
 Mendapatkan properti mesin virtual VMSS.
@@ -182,7 +182,7 @@ Mendapatkan properti mesin virtual VMSS.
 Memperlihatkan status enkripsi disk VM dalam kumpulan skala VM.
 
 ### [Get-AzureRmVMUsage](Get-AzureRmVMUsage.md)
-Dapatkan penggunaan jumlah inti mesin virtual untuk suatu lokasi.
+Mendapatkan penggunaan hitungan inti mesin virtual untuk lokasi.
 
 ### [Grant-AzureRmDiskAccess](Grant-AzureRmDiskAccess.md)
 Memberikan akses ke disk.
@@ -193,31 +193,31 @@ Memberikan akses ke snapshot.
 ### [Invoke-AzureRmVMRunCommand](Invoke-AzureRmVMRunCommand.md)
 Jalankan perintah pada VM.
 
-### [New-AzureRmAvailabilitySet](New-AzureRmAvailabilitySet.md)
+### [AzureRmAvailabilitySet baru](New-AzureRmAvailabilitySet.md)
 Membuat kumpulan ketersediaan Azure.
 
-### [New-AzureRmContainerService](New-AzureRmContainerService.md)
-Membuat layanan wadah.
+### [Baru-AzureRmContainerService](New-AzureRmContainerService.md)
+Membuat layanan kontainer.
 
 ### [New-AzureRmContainerServiceConfig](New-AzureRmContainerServiceConfig.md)
-Membuat objek konfigurasi lokal untuk layanan wadah.
+Membuat objek konfigurasi lokal untuk layanan kontainer.
 
-### [New-AzureRmDisk](New-AzureRmDisk.md)
+### [AzureRmDisk Baru](New-AzureRmDisk.md)
 Membuat disk terkelola.
 
-### [New-AzureRmDiskConfig](New-AzureRmDiskConfig.md)
+### [AzureRmDiskConfig Baru](New-AzureRmDiskConfig.md)
 Membuat objek disk yang dapat dikonfigurasi.
 
 ### [New-AzureRmDiskUpdateConfig](New-AzureRmDiskUpdateConfig.md)
 Membuat objek pembaruan disk yang dapat dikonfigurasi.
 
-### [New-AzureRmImage](New-AzureRmImage.md)
+### [AzureRmImage Baru](New-AzureRmImage.md)
 Membuat gambar.
 
-### [New-AzureRmImageConfig](New-AzureRmImageConfig.md)
+### [AzureRmImageConfig Baru](New-AzureRmImageConfig.md)
 Membuat objek gambar yang dapat dikonfigurasi.
 
-### [New-AzureRmSnapshot](New-AzureRmSnapshot.md)
+### [Baru-AzureRmSnapshot](New-AzureRmSnapshot.md)
 Membuat snapshot.
 
 ### [New-AzureRmSnapshotConfig](New-AzureRmSnapshotConfig.md)
@@ -226,28 +226,28 @@ Membuat objek snapshot yang dapat dikonfigurasi.
 ### [New-AzureRmSnapshotUpdateConfig](New-AzureRmSnapshotUpdateConfig.md)
 Membuat objek pembaruan snapshot yang dapat dikonfigurasi.
 
-### [New-AzureRmVM](New-AzureRmVM.md)
+### [AzureRmVM Baru](New-AzureRmVM.md)
 Membuat mesin virtual.
 
-### [New-AzureRmVMConfig](New-AzureRmVMConfig.md)
+### [AzureRmVMConfig Baru](New-AzureRmVMConfig.md)
 Membuat objek mesin virtual yang dapat dikonfigurasi.
 
 ### [New-AzureRmVMSqlServerAutoBackupConfig](New-AzureRmVMSqlServerAutoBackupConfig.md)
-Membuat objek konfigurasi untuk SQL Server pencadangan otomatis.
+Membuat objek konfigurasi untuk pencadangan otomatis SQL Server.
 
-### [New-AzureRmVMSqlServerAutoPatchingConfig](New-AzureRmVMSqlServerAutoPatchingConfig.md)
-Membuat objek konfigurasi untuk patching otomatis pada komputer virtual.
+### [Baru-AzureRmVMSqlServerAutoPatchingConfig](New-AzureRmVMSqlServerAutoPatchingConfig.md)
+Membuat objek konfigurasi untuk patch otomatis pada mesin virtual.
 
 ### [New-AzureRmVMSqlServerKeyVaultCredentialConfig](New-AzureRmVMSqlServerKeyVaultCredentialConfig.md)
-Membuat objek konfigurasi untuk SQL penyimpanan kunci server di komputer virtual.
+Membuat objek konfigurasi untuk kredensial kubah kunci server SQL pada mesin virtual.
 
-### [New-AzureRmVmss](New-AzureRmVmss.md)
+### [AzureRmVms baru](New-AzureRmVmss.md)
 Membuat VMSS.
 
 ### [New-AzureRmVmssConfig](New-AzureRmVmssConfig.md)
 Membuat objek konfigurasi VMSS.
 
-### [New-AzureRmVmssIpConfig](New-AzureRmVmssIpConfig.md)
+### [AzureRmVmsIpConfig baru](New-AzureRmVmssIpConfig.md)
 Membuat konfigurasi IP untuk antarmuka jaringan VMSS.
 
 ### [New-AzureRmVmssVaultCertificateConfig](New-AzureRmVmssVaultCertificateConfig.md)
@@ -256,79 +256,79 @@ Membuat konfigurasi sertifikat Key Vault.
 ### [Publish-AzureRmVMDscConfiguration](Publish-AzureRmVMDscConfiguration.md)
 Mengunggah skrip DSC ke penyimpanan blob Azure.
 
-### [Remove-AzureRmAvailabilitySet](Remove-AzureRmAvailabilitySet.md)
-Menghapus kumpulan ketersediaan dari Azure.
+### [Hapus-AzureRmAvailabilitySet](Remove-AzureRmAvailabilitySet.md)
+Menghapus sekumpulan ketersediaan dari Azure.
 
-### [Remove-AzureRmContainerService](Remove-AzureRmContainerService.md)
-Menghapus layanan wadah.
+### [Hapus-AzureRmContainerService](Remove-AzureRmContainerService.md)
+Menghapus layanan kontainer.
 
-### [Remove-AzureRmContainerServiceAgentPoolProfile](Remove-AzureRmContainerServiceAgentPoolProfile.md)
-Menghapus profil agen pool dari layanan penampung.
+### [Hapus-AzureRmContainerServiceAgentPoolProfile](Remove-AzureRmContainerServiceAgentPoolProfile.md)
+Menghapus profil kumpulan agen dari layanan kontainer.
 
-### [Remove-AzureRmDisk](Remove-AzureRmDisk.md)
-Menghapus disk.
+### [Hapus-AzureRmDisk](Remove-AzureRmDisk.md)
+Menghapus diska.
 
-### [Remove-AzureRmImage](Remove-AzureRmImage.md)
+### [Hapus-AzureRmImage](Remove-AzureRmImage.md)
 Menghapus gambar.
 
-### [Remove-AzureRmImageDataDisk](Remove-AzureRmImageDataDisk.md)
+### [Hapus-AzureRmImageDataDisk](Remove-AzureRmImageDataDisk.md)
 Menghapus disk data dari objek gambar.
 
-### [Remove-AzureRmSnapshot](Remove-AzureRmSnapshot.md)
+### [Hapus-AzureRmSnapshot](Remove-AzureRmSnapshot.md)
 Menghapus snapshot.
 
-### [Remove-AzureRmVM](Remove-AzureRmVM.md)
+### [Hapus-AzureRmVM](Remove-AzureRmVM.md)
 Menghapus mesin virtual dari Azure.
 
-### [Remove-AzureRmVMAccessExtension](Remove-AzureRmVMAccessExtension.md)
-Menghapus ekstensi VMAccess dari komputer virtual.
+### [Hapus-AzureRmVMAccessExtension](Remove-AzureRmVMAccessExtension.md)
+Menghapus ekstensi VMAccess dari mesin virtual.
 
-### [Remove-AzureRmVMAEMExtension](Remove-AzureRmVMAEMExtension.md)
-Menghapus ekstensi AEM dari komputer virtual.
+### [Hapus-AzureRmVMAEMExtension](Remove-AzureRmVMAEMExtension.md)
+Menghapus ekstensi AEM dari mesin virtual.
 
-### [Remove-AzureRmVMBackup](Remove-AzureRmVMBackup.md)
+### [Hapus-AzureRmVMBackup](Remove-AzureRmVMBackup.md)
 Menghapus cadangan dari mesin virtual.
 
-### [Remove-AzureRmVMChefExtension](Remove-AzureRmVMChefExtension.md)
+### [Hapus-AzureRmVMChefExtension](Remove-AzureRmVMChefExtension.md)
 Menghapus ekstensi Chef dari mesin virtual.
 
 ### [Remove-AzureRmVMCustomScriptExtension](Remove-AzureRmVMCustomScriptExtension.md)
-Menghapus ekstensi skrip kustom dari komputer virtual.
+Menghapus ekstensi skrip kustom dari mesin virtual.
 
-### [Remove-AzureRmVMDataDisk](Remove-AzureRmVMDataDisk.md)
+### [Hapus-AzureRmVMDataDisk](Remove-AzureRmVMDataDisk.md)
 Menghapus disk data dari mesin virtual.
 
 ### [Remove-AzureRmVMDiagnosticsExtension](Remove-AzureRmVMDiagnosticsExtension.md)
-Menghapus ekstensi Diagnostik dari komputer virtual.
+Menghapus ekstensi Diagnostik dari mesin virtual.
 
 ### [Remove-AzureRmVMDiskEncryptionExtension](Remove-AzureRmVMDiskEncryptionExtension.md)
-Menghapus ekstensi enkripsi disk dari komputer virtual.
+Menghapus ekstensi enkripsi disk dari mesin maya.
 
 ### [Remove-AzureRmVMDscExtension](Remove-AzureRmVMDscExtension.md)
-Menghapus penanganan ekstensi DSC dari komputer virtual dalam grup sumber daya.
+Menghapus pengatur ekstensi DSC dari mesin virtual dalam grup sumber daya.
 
 ### [Remove-AzureRmVMExtension](Remove-AzureRmVMExtension.md)
 Menghapus ekstensi dari mesin virtual.
 
-### [Remove-AzureRmVMNetworkInterface](Remove-AzureRmVMNetworkInterface.md)
+### [Hapus-AzureRmVMNetworkInterface](Remove-AzureRmVMNetworkInterface.md)
 Menghapus antarmuka jaringan dari mesin virtual.
 
-### [Remove-AzureRmVMSecret](Remove-AzureRmVMSecret.md)
+### [Hapus-AzureRmVMSecret](Remove-AzureRmVMSecret.md)
 Menghapus (a) rahasia dari objek mesin virtual
 
 ### [Remove-AzureRmVMSqlServerExtension](Remove-AzureRmVMSqlServerExtension.md)
-Menghapus ekstensi SQL Server dari komputer virtual.
+Menghapus ekstensi SQL Server dari mesin virtual.
 
-### [Remove-AzureRmVmss](Remove-AzureRmVmss.md)
-Menghapus VMSS atau mesin virtual yang berada dalam VMSS.
+### [Hapus-AzureRmVms](Remove-AzureRmVmss.md)
+Menghapus VMSS atau mesin virtual yang ada dalam VMSS.
 
-### [Remove-AzureRmVmssDataDisk](Remove-AzureRmVmssDataDisk.md)
+### [Hapus-AzureRmVmssDataDisk](Remove-AzureRmVmssDataDisk.md)
 Menghapus disk data dari VMSS.
 
-### [Remove-AzureRmVmssDiagnosticsExtension](Remove-AzureRmVmssDiagnosticsExtension.md)
+### [Hapus-AzureRmVmssDiagnosticsExtension](Remove-AzureRmVmssDiagnosticsExtension.md)
 Menghapus ekstensi diagnostik dari VMSS.
 
-### [Remove-AzureRmVmssExtension](Remove-AzureRmVmssExtension.md)
+### [Hapus-AzureRmVmssExtension](Remove-AzureRmVmssExtension.md)
 Menghapus ekstensi dari VMSS.
 
 ### [Remove-AzureRmVmssNetworkInterfaceConfiguration](Remove-AzureRmVmssNetworkInterfaceConfiguration.md)
@@ -337,23 +337,23 @@ Menghapus konfigurasi antarmuka jaringan dari VMSS.
 ### [Mulai ulang-AzureRmVM](Restart-AzureRmVM.md)
 Memulai ulang mesin virtual Azure.
 
-### [Mulai Ulang-AzureRmVmss](Restart-AzureRmVmss.md)
+### [Mulai ulang-AzureRmVms](Restart-AzureRmVmss.md)
 Memulai ulang VMSS atau mesin virtual dalam VMSS.
 
-### [Revoke-AzureRmDiskAccess](Revoke-AzureRmDiskAccess.md)
-Mencabut akses ke disk.
+### [Cabut-AzureRmDiskAccess](Revoke-AzureRmDiskAccess.md)
+Mencabut akses ke diska.
 
-### [Revoke-AzureRmSnapshotAccess](Revoke-AzureRmSnapshotAccess.md)
+### [Cabut-AzureRmSnapshotAccess](Revoke-AzureRmSnapshotAccess.md)
 Mencabut akses ke snapshot.
 
-### [Save-AzureRmVhd](Save-AzureRmVhd.md)
+### [Simpan-AzureRmVhd](Save-AzureRmVhd.md)
 Menyimpan gambar .vhd yang diunduh secara lokal.
 
-### [Save-AzureRmVMImage](Save-AzureRmVMImage.md)
+### [Simpan-AzureRmVMImage](Save-AzureRmVMImage.md)
 Menyimpan mesin virtual sebagai VMImage.
 
 ### [Set-AzureRmDiskDiskEncryptionKey](Set-AzureRmDiskDiskEncryptionKey.md)
-Mengatur properti kunci enkripsi disk pada objek disk.
+Menyetel properti kunci enkripsi diska pada objek disk.
 
 ### [Set-AzureRmDiskImageReference](Set-AzureRmDiskImageReference.md)
 Mengatur properti referensi gambar pada objek disk.
@@ -365,7 +365,7 @@ Mengatur properti kunci enkripsi kunci pada objek disk.
 Mengatur properti kunci enkripsi disk pada objek pembaruan disk.
 
 ### [Set-AzureRmDiskUpdateKeyEncryptionKey](Set-AzureRmDiskUpdateKeyEncryptionKey.md)
-Mengatur properti kunci enkripsi pada objek pembaruan disk.
+Mengatur properti kunci enkripsi kunci pada objek pembaruan disk.
 
 ### [Set-AzureRmImageOsDisk](Set-AzureRmImageOsDisk.md)
 Mengatur properti disk sistem operasi pada objek gambar.
@@ -386,7 +386,7 @@ Mengatur properti kunci enkripsi disk pada objek pembaruan snapshot.
 Mengatur properti kunci enkripsi kunci pada objek pembaruan snapshot.
 
 ### [Set-AzureRmVM](Set-AzureRmVM.md)
-Menandai mesin virtual sebagai di generalisasi.
+Menandai mesin virtual sebagai generalisasi.
 
 ### [Set-AzureRmVMAccessExtension](Set-AzureRmVMAccessExtension.md)
 Menambahkan ekstensi VMAccess ke mesin virtual.
@@ -395,16 +395,16 @@ Menambahkan ekstensi VMAccess ke mesin virtual.
 Menambahkan ekstensi domain AD ke mesin virtual.
 
 ### [Set-AzureRmVMAEMExtension](Set-AzureRmVMAEMExtension.md)
-Mengaktifkan dukungan untuk pemantauan sistem SAP.
+Mengaktifkan dukungan untuk pemantauan untuk sistem SAP.
 
 ### [Set-AzureRmVMBackupExtension](Set-AzureRmVMBackupExtension.md)
-Mengatur properti ekstensi cadangan di komputer virtual.
+Mengatur properti ekstensi cadangan pada mesin maya.
 
 ### [Set-AzureRmVMBginfoExtension](Set-AzureRmVMBginfoExtension.md)
-Menambahkan ekstensi BGInfo ke komputer virtual.
+Menambahkan ekstensi BGInfo ke mesin virtual.
 
 ### [Set-AzureRmVMBootDiagnostics](Set-AzureRmVMBootDiagnostics.md)
-Mengubah properti diagnostik komputer virtual untuk boot.
+Mengubah properti diagnostik boot mesin virtual.
 
 ### [Set-AzureRmVMChefExtension](Set-AzureRmVMChefExtension.md)
 Menambahkan ekstensi Chef ke mesin virtual.
@@ -416,37 +416,37 @@ Menambahkan ekstensi skrip kustom ke mesin virtual.
 Mengubah properti disk data mesin virtual.
 
 ### [Set-AzureRmVMDiagnosticsExtension](Set-AzureRmVMDiagnosticsExtension.md)
-Mengonfigurasi ekstensi diagnostik Azure di komputer virtual.
+Mengonfigurasi ekstensi diagnostik Azure di mesin virtual.
 
 ### [Set-AzureRmVMDiskEncryptionExtension](Set-AzureRmVMDiskEncryptionExtension.md)
-Mengaktifkan enkripsi pada mesin virtual IaaS yang sedang berjalan di Azure.
+Mengaktifkan enkripsi pada mesin virtual IaaS yang berjalan di Azure.
 
 ### [Set-AzureRmVMDscExtension](Set-AzureRmVMDscExtension.md)
-Mengonfigurasi ekstensi DSC di komputer virtual.
+Mengonfigurasi ekstensi DSC pada mesin virtual.
 
 ### [Set-AzureRmVMExtension](Set-AzureRmVMExtension.md)
-Memperbarui properti ekstensi atau menambahkan ekstensi ke komputer virtual.
+Memperbarui properti ekstensi atau menambahkan ekstensi ke mesin virtual.
 
 ### [Set-AzureRmVMOperatingSystem](Set-AzureRmVMOperatingSystem.md)
 Mengatur properti sistem operasi untuk mesin virtual.
 
 ### [Set-AzureRmVMOSDisk](Set-AzureRmVMOSDisk.md)
-Mengatur properti disk sistem operasi pada komputer virtual.
+Mengatur properti disk sistem operasi pada mesin maya.
 
 ### [Set-AzureRmVMPlan](Set-AzureRmVMPlan.md)
-Mengatur informasi paket Marketplace di mesin virtual.
+Mengatur informasi rencana Marketplace di mesin virtual.
 
 ### [Set-AzureRmVMSourceImage](Set-AzureRmVMSourceImage.md)
 Menentukan gambar untuk mesin virtual.
 
 ### [Set-AzureRmVMSqlServerExtension](Set-AzureRmVMSqlServerExtension.md)
-Mengatur ekstensi SQL Server Azure di komputer virtual.
+Mengatur ekstensi Server Azure SQL pada mesin virtual.
 
-### [Set-AzureRmVmss](Set-AzureRmVmss.md)
+### [Set-AzureRmVms](Set-AzureRmVmss.md)
 Mengatur tindakan tertentu pada VMSS tertentu.
 
 ### [Set-AzureRmVmssBootDiagnostic](Set-AzureRmVmssBootDiagnostic.md)
-Mengatur profil diagnostik boot yang diatur skala mesin virtual.
+Mengatur skala mesin virtual mengatur profil diagnostik boot.
 
 ### [Set-AzureRmVmssDiskEncryptionExtension](Set-AzureRmVmssDiskEncryptionExtension.md)
 Mengaktifkan enkripsi disk pada kumpulan skala VM.
@@ -455,10 +455,10 @@ Mengaktifkan enkripsi disk pada kumpulan skala VM.
 Mengatur properti profil sistem operasi VMSS.
 
 ### [Set-AzureRmVmssRollingUpgradePolicy](Set-AzureRmVmssRollingUpgradePolicy.md)
-Mengatur properti kebijakan pemutakhiran vmSS yang diluncurkan.
+Mengatur properti kebijakan pemutakhiran bergulir VMSS.
 
 ### [Set-AzureRmVmssStorageProfile](Set-AzureRmVmssStorageProfile.md)
-Mengatur properti profil penyimpanan VMSS.
+Mengatur properti profil penyimpanan untuk VMSS.
 
 ### [Set-AzureRmVmssVM](Set-AzureRmVmssVM.md)
 Mengubah status instans VMSS.
@@ -466,43 +466,43 @@ Mengubah status instans VMSS.
 ### [Start-AzureRmVM](Start-AzureRmVM.md)
 Memulai mesin virtual Azure.
 
-### [Start-AzureRmVmss](Start-AzureRmVmss.md)
-Memulai VMSS atau kumpulan komputer virtual dalam VMSS.
+### [Mulai AzureRmVms](Start-AzureRmVmss.md)
+Memulai VMSS atau sekumpulan mesin virtual dalam VMSS.
 
 ### [Start-AzureRmVmssRollingOSUpgrade](Start-AzureRmVmssRollingOSUpgrade.md)
-Memulai pemutakhiran berputar untuk memindahkan semua contoh kumpulan skala mesin virtual ke versi Terbaru Platform Image OS.
+Memulai pemutakhiran bergulir untuk memindahkan semua mesin virtual skala set instance ke versi Platform Image OS terbaru yang tersedia.
 
 ### [Stop-AzureRmVM](Stop-AzureRmVM.md)
 Menghentikan mesin virtual Azure.
 
-### [Stop-AzureRmVmss](Stop-AzureRmVmss.md)
-Hentikan VMSS atau beberapa mesin virtual dalam VMSS.
+### [Stop-AzureRmVms](Stop-AzureRmVmss.md)
+Menghentikan VMSS atau sekumpulan mesin virtual dalam VMSS.
 
-### [Stop-AzureRmVmssRollingUpgrade](Stop-AzureRmVmssRollingUpgrade.md)
-Membatalkan pemutakhiran berskala mesin virtual saat ini.
+### [Stop-AzureRmVmsSRollingUpgrade](Stop-AzureRmVmssRollingUpgrade.md)
+Membatalkan pemutakhiran rolling set skala mesin virtual saat ini.
 
-### [Test-AzureRmVMAEMExtension](Test-AzureRmVMAEMExtension.md)
+### [Uji-AzureRmVMAEMExtension](Test-AzureRmVMAEMExtension.md)
 Memeriksa konfigurasi ekstensi AEM.
 
-### [Update-AzureRmAvailabilitySet](Update-AzureRmAvailabilitySet.md)
+### [Pembaruan-AzureRmAvailabilitySet](Update-AzureRmAvailabilitySet.md)
 Memperbarui kumpulan ketersediaan.
 
-### [Update-AzureRmContainerService](Update-AzureRmContainerService.md)
-Memperbarui status layanan wadah.
+### [Pembaruan-AzureRmContainerService](Update-AzureRmContainerService.md)
+Memperbarui status layanan kontainer.
 
 ### [Update-AzureRmDisk](Update-AzureRmDisk.md)
 Memperbarui disk.
 
-### [Update-AzureRmImage](Update-AzureRmImage.md)
+### [Perbarui-AzureRmImage](Update-AzureRmImage.md)
 Memperbarui gambar.
 
-### [Update-AzureRmSnapshot](Update-AzureRmSnapshot.md)
+### [Perbarui-AzureRmSnapshot](Update-AzureRmSnapshot.md)
 Memperbarui snapshot.
 
-### [Update-AzureRmVM](Update-AzureRmVM.md)
+### [Perbarui-AzureRmVM](Update-AzureRmVM.md)
 Memperbarui status mesin virtual Azure.
 
-### [Update-AzureRmVmss](Update-AzureRmVmss.md)
+### [Pembaruan-AzureRmVms](Update-AzureRmVmss.md)
 Memperbarui status VMSS.
 
 ### [Update-AzureRmVmssInstance](Update-AzureRmVmssInstance.md)

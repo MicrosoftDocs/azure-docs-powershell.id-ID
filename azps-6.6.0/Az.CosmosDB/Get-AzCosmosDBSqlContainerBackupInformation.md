@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlContainerBackupInformation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlContainerBackupInformation.md
 ms.openlocfilehash: 2beeb7d1b4b1d8fa5e633c60f82fcf0df646a38e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140141146"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142088043"
 ---
 # Get-AzCosmosDBSqlContainerBackupInformation
 
 ## SYNOPSIS
-Mengambil kunci waktu terbaru yang dapat dikembalikan untuk wadah sql.
+Mengambil stempel waktu terbaru yang dapat disembuhkan untuk wadah sql.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbsqlcontainerbackupinformation) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbsqlcontainerbackupinformation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Get-AzCosmosDBSqlContainerBackupInformation -ResourceGroupName <String> -Account
 ```
 
 ## DESCRIPTION
-Mengambil kunci waktu terbaru yang dapat dikembalikan untuk wadah sql. Inilah timestamp terbaru yang bisa dipulihkan pengguna ke wadah ini.
+Mengambil stempel waktu terbaru yang dapat disembuhkan untuk wadah sql. Ini adalah upto stempel waktu terbaru yang dapat berhasil dipulihkan oleh pengguna dalam wadah ini.
 
 ## EXAMPLES
 
@@ -42,11 +42,11 @@ LatestRestorableTimestamp
 1623042210
 ```
 
-Mengambil kunci waktu terbaru yang dapat dikembalikan untuk wadah sql. Inilah timestamp terbaru yang bisa dipulihkan pengguna ke wadah ini.
+Mengambil stempel waktu terbaru yang dapat disembuhkan untuk wadah sql. Ini adalah upto stempel waktu terbaru yang dapat berhasil dipulihkan oleh pengguna dalam wadah ini.
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun database Cosmos DB.
 
 ```yaml
@@ -137,11 +137,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

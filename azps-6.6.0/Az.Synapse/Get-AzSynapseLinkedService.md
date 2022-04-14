@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseLinkedService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseLinkedService.md
 ms.openlocfilehash: 6793c594ae7284e8f08cfdc235176aed03a95803
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140095643"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142118105"
 ---
 # Get-AzSynapseLinkedService
 
 ## SYNOPSIS
-Mendapatkan informasi tentang layanan yang ditautkan di dalam ruang kerja.
+Mendapatkan informasi tentang layanan tertaut di ruang kerja.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapselinkedservice) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapselinkedservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,9 +35,9 @@ Get-AzSynapseLinkedService -WorkspaceObject <PSSynapseWorkspace> [-Name <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseLinkedService mendapatkan** informasi tentang layanan tertaut di ruang kerja.
-Jika Anda menentukan nama layanan tertaut, cmdlet ini mendapatkan informasi tentang layanan tertaut tersebut.
-Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua layanan yang ditautkan di dalam ruang kerja.
+Cmdlet **Get-AzSynapseLinkedService** mendapatkan informasi tentang layanan tertaut di ruang kerja.
+Jika Anda menentukan nama layanan yang ditautkan, cmdlet ini akan mendapatkan informasi tentang layanan tertaut tersebut.
+Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua layanan yang ditautkan dalam ruang kerja.
 
 ## EXAMPLES
 
@@ -46,14 +46,14 @@ Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua 
 PS C:\> Get-AzSynapseLinkedService -WorkspaceName ContosoWorkspace
 ```
 
-Perintah ini mendapatkan informasi tentang semua layanan yang ditautkan di ruang kerja bernama ContosoWorkspace.
+Perintah ini mendapatkan informasi tentang semua layanan tertaut di ruang kerja bernama ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzSynapseLinkedService -WorkspaceName ContosoWorkspace -Name ContosoLinkedService
 ```
 
-Perintah ini mendapatkan informasi tentang layanan tertaut bernama ContosoLinkedService di ruang kerja yang bernama ContosoWorkspace.
+Perintah ini mendapatkan informasi tentang layanan tertaut bernama ContosoLinkedService di ruang kerja bernama ContosoWorkspace.
 
 ### Contoh 3
 ```powershell
@@ -61,7 +61,7 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Get-AzSynapseLinkedService -Name ContosoLinkedService
 ```
 
-Perintah ini mendapatkan informasi tentang layanan tertaut yang bernama ContosoLinkedService dalam ruang kerja yang bernama ContosoWorkspace melalui pipeline.
+Perintah ini mendapatkan informasi tentang layanan tertaut bernama ContosoLinkedService di ruang kerja bernama ContosoWorkspace melalui pipeline.
 
 ## PARAMETERS
 
@@ -95,7 +95,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

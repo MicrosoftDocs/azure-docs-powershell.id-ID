@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzSshKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzSshKey.md
 ms.openlocfilehash: a62ee1168292203887cd885fedddad61df5b6faa
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139942981"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142089519"
 ---
 # Get-AzSshKey
 
 ## SYNOPSIS
-Mendapatkan properti sumber daya KUNCI Publik LINUX.
+Mendapatkan properti sumber daya Kunci Publik SSH.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/get-azsshkey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azsshkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-AzSshKey [-ResourceId] <String> [-DefaultProfile <IAzureContextContainer>] [
 ```
 
 ## DESCRIPTION
-Mendapatkan properti sumber daya KUNCI Publik LINUX.
+Mendapatkan properti sumber daya Kunci Publik SSH.
 
 ## EXAMPLES
 
@@ -43,21 +43,21 @@ Mendapatkan properti sumber daya KUNCI Publik LINUX.
 PS C:\> Get-AzSshKey -ResourceGroupName "testRG" -Name "SshKey1"
 ```
 
-Contoh ini mengambil sumber daya Kunci Publik Linux tertentu.
+Contoh ini mengambil sumber daya Kunci Publik Ssh tertentu.
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzSshKey -ResourceGroupName "testRG"
 ```
 
-Contoh ini mengambil daftar sumber daya Kunci Publik Resources yang berada di Grup Sumber Daya: "testRG"
+Contoh ini mengambil daftar sumber daya Kunci Publik Ssh yang ada di Grup Sumber Daya: "testRG"
 
 ### Contoh 3
 ```powershell
 PS C:\> Get-AzSshKey 
 ```
 
-Contoh ini mengambil semua sumber daya Kunci Publik Bisnis di langganan. 
+Contoh ini mengambil semua sumber daya Kunci Publik Ssh dalam langganan. 
 
 ## PARAMETERS
 
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama Sumber Daya Kunci Publik Filem yang akan dapatkan.
+Menentukan nama sumber daya Kunci Publik Ssh untuk didapatkan.
 
 ```yaml
 Type: System.String
@@ -107,7 +107,7 @@ Accept wildcard characters: True
 ```
 
 ### -ResourceId
-ID Sumber Daya untuk Sumber Daya Kunci Publik BISNIS ANDA.
+ID Sumber Daya untuk Sumber Daya Kunci Publik SSH Anda.
 
 ```yaml
 Type: System.String
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Set-AzureRmApiManagementApi.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Set-AzureRmApiManagementApi.md
 ms.openlocfilehash: 10df1034b414260cb618c7de0b31b8ad93d30d0b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426342"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142143992"
 ---
 # Set-AzureRmApiManagementApi
 
@@ -40,7 +40,7 @@ Set-AzureRmApiManagementApi -InputObject <PsApiManagementApi> -Name <String> [-D
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmApiManagementApi** mengubah API Manajemen Azure API.
+Cmdlet **Set-AzureRmApiManagementApi** mengubah API Azure API Management.
 
 ## EXAMPLES
 
@@ -53,7 +53,7 @@ PS C:\>Set-AzureRmApiManagementApi -Context $ApiMgmtContext -Name "EchoApi" -Ser
 ## PARAMETERS
 
 ### -ApiId
-Menentukan ID API untuk diubah.
+Menentukan ID API yang akan diubah.
 
 ```yaml
 Type: System.String
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Menentukan objek **PsApiManagementContext.**
+Menentukan objek **PsApiManagementContext** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama web API.
+Menentukan nama API web.
 
 ```yaml
 Type: System.String
@@ -190,9 +190,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Path
+### -Jalur
 Menentukan jalur API web, yang merupakan bagian terakhir dari URL publik API.
-URL ini digunakan oleh konsumen API untuk mengirimkan permintaan ke layanan web, dan panjangnya harus satu hingga 400 karakter.
+URL ini digunakan oleh konsumen API untuk mengirim permintaan ke layanan web, dan panjangnya harus satu hingga 400 karakter.
 Nilai defaultnya adalah $Null.
 
 ```yaml
@@ -207,10 +207,10 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Protocols
-Menentukan array protokol WEB API.
+### -Protokol
+Menentukan array protokol API web.
 psdx_paramvalues http dan https.
-Berikut adalah protokol web yang menjadi tempat API tersedia.
+Ini adalah protokol web di mana API disediakan.
 Nilai defaultnya adalah $Null.
 
 ```yaml
@@ -227,9 +227,9 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceUrl
-Menentukan URL layanan web yang memperlihatkan API.
-URL ini hanya digunakan oleh Manajemen API Azure, dan tidak dibuat publik.
-URL harus berisi satu hingga 2000 karakter.
+Menentukan URL layanan web yang mengekspos API.
+URL ini hanya digunakan oleh Azure API Management, dan tidak diumumkan ke publik.
+URL harus panjangnya satu hingga 2000 karakter.
 
 ```yaml
 Type: System.String
@@ -276,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -299,14 +299,14 @@ Parameter: InputObject (ByValue)
 
 ## RELATED LINKS
 
-[Export-AzureRmApiManagementApi](./Export-AzureRmApiManagementApi.md)
+[Ekspor-AzureRmApiManagementApi](./Export-AzureRmApiManagementApi.md)
 
 [Get-AzureRmApiManagementApi](./Get-AzureRmApiManagementApi.md)
 
-[Import-AzureRmApiManagementApi](./Import-AzureRmApiManagementApi.md)
+[Impor-AzureRmApiManagementApi](./Import-AzureRmApiManagementApi.md)
 
 [New-AzureRmApiManagementApi](./New-AzureRmApiManagementApi.md)
 
-[Remove-AzureRmApiManagementApi](./Remove-AzureRmApiManagementApi.md)
+[Hapus-AzureRmApiManagementApi](./Remove-AzureRmApiManagementApi.md)
 
 

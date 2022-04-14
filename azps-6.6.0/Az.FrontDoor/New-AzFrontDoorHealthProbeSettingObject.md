@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorHealthProbeSettingObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorHealthProbeSettingObject.md
 ms.openlocfilehash: 0fb7438505c94ad2a3a9f307544a7cadef0ed1f2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140254969"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142050869"
 ---
 # New-AzFrontDoorHealthProbeSettingObject
 
@@ -18,7 +18,7 @@ ms.locfileid: "140254969"
 Membuat objek PSHealthProbeSetting untuk pembuatan Pintu Depan
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorhealthprobesettingobject) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorhealthprobesettingobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnabledState
-Apakah akan mengaktifkan opsi kesehatan yang dilakukan terhadap backends yang ditentukan di bawah backendPools. Health backend hanya bisa dinonaktifkan jika ada backend tunggal yang diaktifkan dalam satu ujung belakang yang diaktifkan.
+Apakah akan memungkinkan pemeriksaan kesehatan dilakukan terhadap backend yang ditentukan di bawah backendPools. Pemeriksaan kesehatan hanya dapat dinonaktifkan jika ada satu backend yang diaktifkan dalam satu kumpulan backend yang diaktifkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSEnabledState
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -HealthProbeMethod
-Mengonfigurasi metode HTTP mana yang akan digunakan untuk backend yang ditentukan di bawah backendPools.
+Mengonfigurasi metode HTTP mana yang digunakan untuk menyelimuti backend yang ditentukan di bawah backendPools.
 
 ```yaml
 Type: System.String
@@ -102,8 +102,8 @@ Accept wildcard characters: False
 ```
 
 ### -IntervalInSeconds
-Jumlah detik antara health transit.
-Nilai default adalah 30
+Jumlah detik antara pemeriksaan kesehatan.
+Nilai defaultnya adalah 30
 
 ```yaml
 Type: System.Int32
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama pengaturan health default.
+Nama pengaturan pemeriksaan kesehatan.
 
 ```yaml
 Type: System.String
@@ -132,8 +132,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Jalur untuk digunakan bagi kesehatan.
+### -Jalur
+Jalur yang akan digunakan untuk pemeriksaan kesehatan.
 Defaultnya adalah /
 
 ```yaml
@@ -148,8 +148,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
-Skema protokol yang digunakan untuk default nilai default ini adalah HTTP
+### -Protokol
+Skema protokol yang digunakan untuk probe ini Nilai default adalah HTTP
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSProtocol
@@ -165,11 +165,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.FrontDoor.Models.PSHealthProbeSetting

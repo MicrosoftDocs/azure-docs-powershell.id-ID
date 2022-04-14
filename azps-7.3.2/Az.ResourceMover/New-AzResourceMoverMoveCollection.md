@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcemover/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/New-AzResourceMoverMoveCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/New-AzResourceMoverMoveCollection.md
-ms.openlocfilehash: dca1c085253f3419eb1a170222ddfde485a50a52
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ca62e80542adf4fd33a6db2e138b83ffbb0116de
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139998941"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142210100"
 ---
 # New-AzResourceMoverMoveCollection
 
 ## SYNOPSIS
-Membuat atau memperbarui kumpulan pindahkan.
+Membuat atau memperbarui koleksi perpindahan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resourcemover/new-azresourcemovermovecollection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ New-AzResourceMoverMoveCollection -Name <String> -ResourceGroupName <String> [-S
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui kumpulan pindahkan.
+Membuat atau memperbarui koleksi perpindahan.
 
 ## EXAMPLES
 
-### Contoh 1: Buat koleksi Pindahkan baru.
+### Contoh 1: Membuat koleksi Pindahkan baru.
 ```powershell
 PS C:\> New-AzResourceMoverMoveCollection -Name "PS-centralus-westcentralus-demoRMS"  -ResourceGroupName "RG-MoveCollection-demoRMS" -SourceRegion "centralus" -TargetRegion "westcentralus" -Location "centraluseuap" -IdentityType "SystemAssigned"
 
@@ -40,7 +43,7 @@ Etag                                   Location      Name                       
 "0200d92f-0000-3300-0000-6021e9ec0000" centraluseuap PS-centralus-westcentralus-demoRMs Microsoft.Migrate/moveCollections
 ```
 
-Buat Kumpulan Pindahkan baru.
+Buat Koleksi Pindahkan baru.
 
 ## PARAMETERS
 
@@ -60,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityPrincipalId
-Mendapatkan atau mengatur id utama.
+Mendapatkan atau mengatur id prinsipal.
 
 ```yaml
 Type: System.String
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Tipe identitas yang digunakan untuk layanan pemindahan sumber daya.
+Tipe identitas yang digunakan untuk layanan pemindah sumber daya.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ResourceMover.Support.ResourceIdentityType
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi geo-lokasi tempat sumber daya berada.
+Lokasi geografis tempat sumber daya berada.
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Pindahkan nama koleksi.
+Nama Pindahkan Koleksi.
 
 ```yaml
 Type: System.String
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya.
+Nama Grup Sumber Daya.
 
 ```yaml
 Type: System.String
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetRegion
-Mendapatkan atau mengatur kawasan target.
+Mendapatkan atau mengatur wilayah target.
 
 ```yaml
 Type: System.String
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -241,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

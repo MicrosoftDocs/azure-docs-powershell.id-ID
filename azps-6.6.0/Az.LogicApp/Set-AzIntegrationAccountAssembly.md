@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccountAssembly.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccountAssembly.md
 ms.openlocfilehash: fb54426a2316c3c40b636528dbb8e49ce41425a2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139937906"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142230193"
 ---
 # Set-AzIntegrationAccountAssembly
 
 ## SYNOPSIS
-Memodifikasi akun integrasi perakitan akun.
+Mengubah perakitan akun integrasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logicapp/set-azintegrationaccountassembly) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/set-azintegrationaccountassembly) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -97,7 +97,7 @@ Tags       :
 
 ```
 
-Mengubah perakitan bernama "sampleAssembly" menggunakan file lokal yang terletak di jalur file yang dimuat dalam "$localAssemblyFilePath".
+Mengubah perakitan bernama "sampleAssembly" menggunakan file lokal yang terletak di jalur file yang terdapat dalam "$localAssemblyFilePath".
 
 ### Contoh 2: Mengubah perakitan menggunakan data byte
 ```powershell
@@ -112,9 +112,9 @@ Tags       :
 
 ```
 
-Mengubah perakitan bernama "sampleAssembly" menggunakan array byte yang dimuat dalam "$assemblyContent".
+Mengubah perakitan bernama "sampleAssembly" menggunakan array byte yang terdapat dalam "$assemblyContent".
 
-### Contoh 3: Mengubah perakitan menggunakan link konten
+### Contoh 3: Memodifikasi perakitan menggunakan tautan konten
 ```powershell
 PS C:\> Set-AzIntegrationAccountAssembly -ResourceGroupName "sampleResourceGroup" -IntegrationAccountName "sampleIntegrationAccount" -AssemblyName "sampleAssembly" -ContentLink $assemblyUrl
 
@@ -127,12 +127,12 @@ Tags       :
 
 ```
 
-Memodifikasi perakitan bernama "sampleAssembly" menggunakan data byte yang terletak di URL "$assemblyUrl". Berikut adalah metode yang disarankan untuk membuat assemblies berukuran besar.
+Mengubah perakitan bernama "sampleAssembly" menggunakan data byte yang terletak di URL "$assemblyUrl". Ini adalah metode yang disarankan untuk membuat rakitan berukuran besar.
 
 ## PARAMETERS
 
 ### -AssemblyData
-Akun integrasi perakitan data byte.
+Data byte perakitan akun integrasi.
 
 ```yaml
 Type: System.Byte[]
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContentLink
-Link yang dapat diakses secara publik ke akun integrasi perakitan data.
+Tautan yang dapat diakses secara publik ke data perakitan akun integrasi.
 
 ```yaml
 Type: System.String
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Akun integrasi perakitan.
+Perakitan akun integrasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.LogicApp.Models.PSIntegrationAccountAssembly
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -Metadata
-Akun integrasi perakitan metadata.
+Metadata perakitan akun integrasi.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -267,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Akun integrasi perakitan id sumber daya.
+Id sumber daya perakitan akun integrasi.
 
 ```yaml
 Type: System.String
@@ -282,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -297,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -312,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

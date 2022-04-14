@@ -6,19 +6,19 @@ Download Help Link:
 Help Version:
   '[object Object]': 
 Locale: en-US
-ms.openlocfilehash: ad0fac54c4048477f69ec0ff238f3c5bebff0eab4575a821849ca82e1b2ca2e3
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 99c069554ee60c8fd93262ddc9e30265d08cc914
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132418963"
 ---
-# Azs.Update.Admin Module
+# Modul Azs.Update.Admin
 ## Deskripsi
-Rilis pratinjau modul administrator Pembaruan Tumpukan Azure.  Dalam modul ini administrator dapat:
-- Membuat daftar dan menginstal pembaruan yang tersedia
-- Lanjutkan pembaruan yang terganggu
-- Menampilkan pembaruan yang diinstal
+Rilis pratinjau modul administrator Azure Stack Update.  Dalam modul ini administrator dapat:
+- Daftar dan instal pembaruan yang tersedia
+- Lanjutkan pembaruan terganggu
+- Lihat pembaruan yang terinstal
 
 ## Cmdlet Azs.Update.Admin
 ### [Get-AzsUpdate](Get-AzsUpdate.md)
@@ -31,8 +31,8 @@ Dapatkan daftar lokasi pembaruan.
 Dapatkan daftar pembaruan yang berjalan.
 
 ### [Install-AzsUpdate](Install-AzsUpdate.md)
-Terapkan pembaruan tertentu di lokasi pembaruan.
+Menerapkan pembaruan tertentu di lokasi pembaruan.
 
 ### [Resume-AzsUpdateRun](Resume-AzsUpdateRun.md)
-Melanjutkan pembaruan yang sebelumnya dimulai dan gagal.
+Melanjutkan menjalankan pembaruan yang telah dimulai sebelumnya yang gagal.
 

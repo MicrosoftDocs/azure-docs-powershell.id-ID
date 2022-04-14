@@ -6,26 +6,26 @@ Download Help Link:
 Help Version:
   '[object Object]': 
 Locale: en-US
-ms.openlocfilehash: f8b9533719c127ed8c03eb833332c96f6515526409781d6e7a8bed484e5a5e03
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 4b73adae3f1f7a71fe42ad4546d1fd56a72084d6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132417825"
 ---
-# Azs.AzureBridge.Admin Module
+# Modul Azs.AzureBridge.Admin
 ## Deskripsi
-Pratinjau rilis modul administrator AzureStack AzureBridge yang memungkinkan Anda mengelola item marketplace AzureStack Anda. 
+Rilis pratinjau modul administrator AzureStack AzureBridge yang memungkinkan Anda mengelola item marketplace AzureStack. 
 
-## Azs.AzureBridge.Admin Cmdlets
+## Cmdlet Azs.AzureBridge.Admin
 ### [Get-AzsAzureBridgeActivation](Get-AzsAzureBridgeActivation.md)
-Mengembalikan Azure Bridge Activation.
+Mengembalikan Aktivasi Azure Bridge.
 
 ### [Get-AzsAzureBridgeDownloadedProduct](Get-AzsAzureBridgeDownloadedProduct.md)
 Mengembalikan daftar produk yang diunduh dari Azure MarketPlace.
 
 ### [Get-AzsAzureBridgeProduct](Get-AzsAzureBridgeProduct.md)
-Mengembalikan daftar produk yang tersedia untuk diunduh dari Azure Marketplace.
+Mengembalikan daftar produk yang tersedia untuk diunduh dari Marketplace Azure.
 
 ### [Invoke-AzsAzureBridgeProductDownload](Invoke-AzsAzureBridgeProductDownload.md)
 Mengunduh produk dari azure marketplace.

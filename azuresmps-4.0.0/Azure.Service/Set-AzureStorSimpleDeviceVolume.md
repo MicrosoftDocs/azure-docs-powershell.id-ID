@@ -4,11 +4,11 @@ ms.assetid: 39E9BB88-6AD8-4B05-9498-35393E22BA30
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: af8a21fe3790d84b882a4914b42a5ae11b1f6416
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426525"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142243815"
 ---
 # Set-AzureStorSimpleDeviceVolume
 
@@ -19,7 +19,7 @@ Memperbarui properti volume yang sudah ada.
 
 ## SYNTAX
 
-### IdentifyByName
+### IdentifikasiByName
 ```
 Set-AzureStorSimpleDeviceVolume -DeviceName <String> -VolumeName <String> [-Online <Boolean>]
  [-VolumeSizeInBytes <Int64>] [-VolumeAppType <AppType>]
@@ -28,7 +28,7 @@ Set-AzureStorSimpleDeviceVolume -DeviceName <String> -VolumeName <String> [-Onli
  [-InformationVariable <String>] [<CommonParameters>]
 ```
 
-### IdentifyByObject
+### IdentifikasiByObject
 ```
 Set-AzureStorSimpleDeviceVolume -DeviceName <String> -Volume <VirtualDisk> [-Online <Boolean>]
  [-VolumeSizeInBytes <Int64>] [-VolumeAppType <AppType>]
@@ -40,9 +40,9 @@ Set-AzureStorSimpleDeviceVolume -DeviceName <String> -Volume <VirtualDisk> [-Onl
 ## DESCRIPTION
 Cmdlet **Set-AzureStorSimpleDeviceVolume** memperbarui properti volume yang sudah ada.
 Cmdlet ini mengaitkan volume dengan satu atau beberapa rekaman kontrol akses.
-Untuk mendapatkan **objek AccessControlRecord,** gunakan cmdlet **Get-AzureStorSimpleAccessControlRecord.**
-Perbarui ukuran atau tipe volume.
-Selain itu, perbarui apakah ingin membuat volume secara online.
+Untuk mendapatkan objek **AccessControlRecord** , gunakan cmdlet **Get-AzureStorSimpleAccessControlRecord** .
+Perbarui ukuran atau tipe untuk volume.
+Selain itu, perbarui apakah akan membuat volume secara online.
 
 ## EXAMPLES
 
@@ -58,11 +58,11 @@ VERBOSE: The update task is submitted successfully. Please use the command Get-A
 de7000f1-29c7-4102-a375-b52432f9e67e for tracking the task's status
 ```
 
-Perintah ini memperbarui volume bernama Volume18 agar memiliki nilai online yang $False.
-Perintah ini memulai tugas, lalu mengembalikan objek **TaskResponse.**
-Untuk melihat status tugas, gunakan cmdlet **Get-AzureStorSimpleTask.**
+Perintah ini memperbarui volume bernama Volume18 agar memiliki nilai online $False.
+Perintah ini memulai tugas, lalu mengembalikan objek **TaskResponse** .
+Untuk melihat status tugas, gunakan cmdlet **Get-AzureStorSimpleTask** .
 
-### Contoh 2: Ubah nilai dan tipe online
+### Contoh 2: Memodifikasi nilai online dan mengetik
 ```
 PS C:\>Set-AzureStorSimpleDeviceVolume -DeviceName "Contoso63-AppVm" -VolumeName "Volume18" -Online $True -VolumeAppType ArchiveVolume 
 VERBOSE: ClientRequestId: af42b02a-645e-4801-a2d7-4197511c68cf_PS
@@ -75,12 +75,12 @@ aa977225-af78-4c93-b754-72704afc928f for tracking the task's status
 ```
 
 Perintah ini memperbarui volume bernama Volume18.
-Parameter ini memodifikasi tipe dan mengubah nilai parameter *Online* untuk $True.
+Ini mengubah tipe dan mengubah nilai parameter *Online* menjadi $True.
 
 ## PARAMETERS
 
 ### -AccessControlRecords
-Menentukan daftar catatan kontrol akses untuk dikaitkan dengan volume.
+Menentukan daftar rekaman kontrol akses untuk dikaitkan dengan volume.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.WindowsAzure.Management.StorSimple.Models.AccessControlRecord]
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceName
-Menentukan nama perangkat StorSimple untuk memperbarui volume yang ada.
+Menentukan nama perangkat StorSimple yang digunakan untuk memperbarui volume.
 
 ```yaml
 Type: String
@@ -110,16 +110,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -Online
-Menentukan apakah volume online.
+Menentukan apakah volume sedang online.
 
 ```yaml
 Type: Boolean
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -Volume
-Menentukan nama volume untuk diperbarui.
+Menentukan nama volume yang akan diperbarui.
 
 ```yaml
 Type: VirtualDisk
@@ -225,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -VolumeName
-Menentukan nama volume untuk diperbarui.
+Menentukan nama volume yang akan diperbarui.
 
 ```yaml
 Type: String
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -WaitForComplete
-Menunjukkan bahwa cmdlet ini menunggu hingga operasi selesai sebelum mengembalikan kontrol ke Windows PowerShell baru.
+Menunjukkan bahwa cmdlet ini menunggu operasi selesai sebelum mengembalikan kontrol ke konsol Windows PowerShell.
 
 ```yaml
 Type: SwitchParameter
@@ -270,17 +270,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Daftar\<AccessControlRecord\>
-Cmdlet ini menerima daftar objek **AccessControlRecord** untuk dikaitkan ke volume.
+Cmdlet ini menerima daftar objek **AccessControlRecord** untuk dikaitkan dengan volume.
 
 ## OUTPUTS
 
 ### TaskStatusInfo
-Cmdlet ini mengembalikan **objek TaskStatusInfo,** jika Anda menentukan parameter *WaitForComplete.*
+Cmdlet ini mengembalikan objek **TaskStatusInfo** , jika Anda menentukan parameter *WaitForComplete* .
 
 ## CATATAN
 
@@ -290,7 +290,7 @@ Cmdlet ini mengembalikan **objek TaskStatusInfo,** jika Anda menentukan paramete
 
 [New-AzureStorSimpleDeviceVolume](./New-AzureStorSimpleDeviceVolume.md)
 
-[Remove-AzureStorSimpleDeviceVolume](./Remove-AzureStorSimpleDeviceVolume.md)
+[Hapus-AzureStorSimpleDeviceVolume](./Remove-AzureStorSimpleDeviceVolume.md)
 
 [Get-AzureStorSimpleAccessControlRecord](./Get-AzureStorSimpleAccessControlRecord.md)
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Get-AzProviderHubProviderRegistration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Get-AzProviderHubProviderRegistration.md
 ms.openlocfilehash: edd37c3698763c6487a23cdc1f5038d48c1117c8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139933351"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142225603"
 ---
 # Get-AzProviderHubProviderRegistration
 
 ## SYNOPSIS
-Dapatkan detail pendaftaran penyedia.
+Mendapatkan detail registrasi penyedia.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.providerhub/get-azproviderhubproviderregistration) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.providerhub/get-azproviderhubproviderregistration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzProviderHubProviderRegistration [-SubscriptionId <String[]>] [-DefaultProf
  [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzProviderHubProviderRegistration -ProviderNamespace <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -41,11 +41,11 @@ Get-AzProviderHubProviderRegistration -InputObject <IProviderHubIdentity> [-Defa
 ```
 
 ## DESCRIPTION
-Dapatkan detail pendaftaran penyedia.
+Mendapatkan detail registrasi penyedia.
 
 ## EXAMPLES
 
-### Contoh 1: Get the provider registration.
+### Contoh 1: Dapatkan pendaftaran penyedia.
 ```powershell
 PS C:\> Get-AzProviderHubProviderRegistration -ProviderNamespace "Microsoft.Contoso"
 
@@ -54,7 +54,7 @@ Name                Type
 Microsoft.Contoso   Microsoft.ProviderHub/providerRegistrations
 ```
 
-Dapatkan pendaftaran penyedia.
+Dapatkan registrasi penyedia.
 
 ## PARAMETERS
 
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.IProviderHubIdentity
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -143,7 +143,7 @@ INPUTOBJECT <IProviderHubIdentity>: Parameter Identitas
   - `[NestedResourceTypeFirst <String>]`: Tipe sumber daya anak pertama.
   - `[NestedResourceTypeSecond <String>]`: Tipe sumber daya anak kedua.
   - `[NestedResourceTypeThird <String>]`: Tipe sumber daya anak ketiga.
-  - `[NotificationRegistrationName <String>]`: Pendaftaran pemberitahuan.
+  - `[NotificationRegistrationName <String>]`: Registrasi pemberitahuan.
   - `[ProviderNamespace <String>]`: Nama penyedia sumber daya yang dihosting dalam ProviderHub.
   - `[ResourceType <String>]`: Tipe sumber daya.
   - `[RolloutName <String>]`: Nama peluncuran.

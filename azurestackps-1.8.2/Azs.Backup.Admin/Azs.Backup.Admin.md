@@ -6,16 +6,16 @@ Download Help Link:
 Help Version:
   '[object Object]': 
 Locale: en-US
-ms.openlocfilehash: 8f019ff2ed748bdb0b6efd3830a0243cba1c724b0da9ea921892c411f866943c
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: d2b505711d0cee24ea2ec850513ba3c1af2a8c73
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132418630"
 ---
-# Azs.Backup.Admin Module
+# Modul Azs.Backup.Admin
 ## Deskripsi
-{{Manually Enter Description here}}
+{{Manually Enter Description Here}}
 
 ## Cmdlet Azs.Backup.Admin
 ### [Get-AzsBackup](Get-AzsBackup.md)
@@ -25,13 +25,13 @@ Mengembalikan cadangan dari lokasi berdasarkan nama.
 Mengembalikan daftar konfigurasi cadangan.
 
 ### [New-AzsEncryptionKeyBase64](New-AzsEncryptionKeyBase64.md)
-Menghasilkan kunci enkripsi untuk cadangan infrastruktur.
+Buat kunci enkripsi untuk cadangan infrastruktur.
 
 ### [Restore-AzsBackup](Restore-AzsBackup.md)
 Memulihkan cadangan.
 
-### [Set-AzsBackupConfiguration](Set-AzsBackupConfiguration.md)
-Mengatur konfigurasi cadangan di lokasi tertentu.
+### [Konfigurasi Set-AzsBackup](Set-AzsBackupConfiguration.md)
+Atur konfigurasi cadangan pada lokasi yang ditentukan.
 
 ### [Start-AzsBackup](Start-AzsBackup.md)
 Mencadangkan lokasi tertentu.

@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/FrontDoor/Commands.FrontDoor/help/Remove-AzureRmFrontDoor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/FrontDoor/Commands.FrontDoor/help/Remove-AzureRmFrontDoor.md
 ms.openlocfilehash: 8eae5034080bd1035cfe7e8331ca015820688e63
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419964"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142141457"
 ---
 # Remove-AzureRmFrontDoor
 
 ## SYNOPSIS
-Hapus Penyeimbang muat Pintu Depan
+Lepas penyeimbang muat Pintu Depan
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,23 +40,23 @@ Remove-AzureRmFrontDoor -ResourceId <String> [-PassThru] [-DefaultProfile <IAzur
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmFrontDoor** menghapus penyeimbang muat Front Door di bawah langganan saat ini
+Cmdlet **Remove-AzureRmFrontDoor** menghapus penyeimbang muat Pintu Depan di bawah langganan saat ini
 
 ## EXAMPLES
 
-### Contoh 1: Hapus "frontdoor1" di grup sumber daya "rg1" di bawah langganan saat ini.
+### Contoh 1: Hapus "frontdoor1" dalam grup sumber daya "rg1" di bawah langganan saat ini.
 ```powershell
 PS C:\> Remove-AzureRmFrontDoor -Name "frontdoor1" -ResourceGroupName "rg1"
 ```
 
-Hapus "frontdoor1" di grup sumber daya "rg1" di bawah langganan saat ini.
+Hapus "frontdoor1" dalam grup sumber daya "rg1" di bawah langganan saat ini.
 
-### Contoh 2: Hapus semua FrontDoors in resource group "rg1" di bawah langganan saat ini.
+### Contoh 2: Hapus semua FrontDoors dalam grup sumber daya "rg1" di bawah langganan saat ini.
 ```powershell
 PS C:\> Get-AzureRmFrontDoor -ResourceGroupName "rg1" | Remove-AzureRmFrontDoor
 ```
 
-Hapus semua FrontDoors di grup sumber daya "rg1" di bawah langganan saat ini.
+Hapus semua FrontDoors dalam grup sumber daya "rg1" di bawah langganan saat ini.
 
 ### Contoh 3: Hapus semua FrontDoors di bawah langganan saat ini.
 ```powershell
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Pintu Depan yang akan dihapus.
+Objek Pintu Depan untuk dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSFrontDoor
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Objek yang dikembalikan (jika ditentukan).
+Mengembalikan objek (jika ditentukan).
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya dari Pintu Depan untuk dihapus
+Id Sumber Daya Dari Pintu Depan untuk dihapus
 
 ```yaml
 Type: System.String
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -214,5 +214,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmFrontDoor](./New-AzureRmFrontDoor.md) 
- [Get-AzureRmFrontDoor](./Get-AzureRmFrontDoor.md)
+[AzureRmFrontDoor](./New-AzureRmFrontDoor.md)
+ Baru [Get-AzureRmFrontDoor](./Get-AzureRmFrontDoor.md)

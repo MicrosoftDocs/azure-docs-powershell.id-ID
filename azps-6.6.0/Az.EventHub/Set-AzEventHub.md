@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHub.md
 ms.openlocfilehash: ac40b3f843db77f97c4477dfa187788ff2173374
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140106299"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142051031"
 ---
 # Set-AzEventHub
 
 ## SYNOPSIS
-Memperbarui Hub Acara yang ditentukan.
+Memperbarui Hub Kejadian tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventhub/set-azeventhub) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/set-azeventhub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ Cmdlet Set-AzEventHub memperbarui properti Hub Kejadian yang ditentukan.
 ## EXAMPLES
 
 ### Contoh 1
-Untuk memperbarui Eventhub dengan properti Deskripsi tangkapan, silakan ikuti langkah-langkah di bawah ini. 
+Untuk memperbarui Eventhub dengan properti deskripsi Capture, ikuti langkah-langkah di bawah ini. 
 
 ```
 PS C:\> $createdEventHub = Get-AzEventHub -ResourceGroupName MyResourceGroupName -Namespace MyNamespaceName -Name MyCreatedEventHub
@@ -58,14 +58,14 @@ PS C:\> $createdEventHub.CaptureDescription.Destination.StorageAccountResourceId
 PS C:\> Set-AzEventHub -ResourceGroupName MyResourceGroupName -Namespace MyNamespaceName -Name MyEventHubName -InputObject $createdEventHub 
 ```
 
-Memperbarui Event Hub \`MyEventHubName\` yang diwakili oleh objek \`MyCreatedEventHub\` , mengatur properti CaptureDescription
+Memperbarui Hub \`Kejadian MyEventHubName\` yang diwakili oleh \`objek MyCreatedEventHub\` , mengatur properti CaptureDescription
 
 ### Contoh 2
 ```
 PS C:\> Set-AzEventHub -ResourceGroupName MyResourceGroupName -Namespace MyNamespaceName -Name MyEventHubName -InputObject MyCreatedEventHub -messageRetentionInDays 4 -partitionCount 2
 ```
 
-Memperbarui Event Hub \`MyEventHubName\` \`yang diwakili oleh objek MyCreatedEventHub\` , mengatur periode penyimpanan pesan ke 4 hari, dan jumlah partisi menjadi 2.
+Memperbarui Hub \`Kejadian MyEventHubName\` yang diwakili oleh \`objek MyCreatedEventHub\` , mengatur periode penyimpanan pesan menjadi 4 hari, dan jumlah partisi menjadi 2.
 
 ## PARAMETERS
 
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -messageRetentionInDays
-Penyimpanan pesan Eventhub dalam hari
+Penyimpanan Pesan Eventhub Dalam Hari
 
 ```yaml
 Type: System.Nullable`1[System.Int64]
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -214,7 +214,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes
 
-### System.Nullable'1[[System.Int64, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int64, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 

@@ -6,14 +6,14 @@ Help Version: 5.5.2.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/Az.Resources.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/Az.Resources.md
-ms.openlocfilehash: 9f4fe19450b5980c886011138e04e297566cef5b9c32e7fa460caf34fc8f0859
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: eea677a82961c73181cb54ac209614a0bf1f5ebd
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132418945"
 ---
-# Az.Resources Module
+# Modul Az.Resources
 ## Deskripsi
 Topik ini menampilkan topik bantuan untuk Cmdlet Azure Resource Manager.
 
@@ -21,14 +21,14 @@ Topik ini menampilkan topik bantuan untuk Cmdlet Azure Resource Manager.
 ### [Add-AzADGroupMember](Add-AzADGroupMember.md)
 Menambahkan pengguna ke grup AD yang sudah ada.
 
-### [Export-AzResourceGroup](Export-AzResourceGroup.md)
+### [Ekspor-AzResourceGroup](Export-AzResourceGroup.md)
 Merekam grup sumber daya sebagai templat dan menyimpannya ke file.
 
 ### [Get-AzADAppCredential](Get-AzADAppCredential.md)
 Mengambil daftar kredensial yang terkait dengan aplikasi.
 
-### [Get-AzADApplication](Get-AzADApplication.md)
-Mencantumkan aplikasi azure active directory yang sudah ada.
+### [Get-AzADAplikasi](Get-AzADApplication.md)
+Mencantumkan aplikasi direktori aktif azure yang sudah ada.
 
 ### [Get-AzADGroup](Get-AzADGroup.md)
 Memfilter grup direktori aktif.
@@ -46,22 +46,22 @@ Mengambil daftar kredensial yang terkait dengan prinsipal layanan.
 Memfilter pengguna direktori aktif.
 
 ### [Get-AzDeployment](Get-AzDeployment.md)
-Mendapatkan penggunaan pada lingkup langganan.
+Mendapatkan penyebaran pada lingkup langganan.
 
 ### [Get-AzDeploymentOperation](Get-AzDeploymentOperation.md)
-Mendapatkan operasi penyebaran untuk penggunaan di lingkup langganan.
+Mendapatkan operasi penyebaran untuk penyebaran di lingkup langganan.
 
 ### [Get-AzLocation](Get-AzLocation.md)
 Mendapatkan semua lokasi dan penyedia sumber daya yang didukung untuk setiap lokasi.
 
 ### [Get-AzManagedApplication](Get-AzManagedApplication.md)
-Aplikasi yang dikelola
+Mendapatkan aplikasi terkelola
 
 ### [Get-AzManagedApplicationDefinition](Get-AzManagedApplicationDefinition.md)
-Definisi aplikasi yang dikelola
+Mendapatkan definisi aplikasi terkelola
 
 ### [Get-AzManagementGroup](Get-AzManagementGroup.md)
-Gets Management Group(s)
+Dapatkan Grup Manajemen
 
 ### [Get-AzPolicyAssignment](Get-AzPolicyAssignment.md)
 Mendapatkan penetapan kebijakan.
@@ -76,7 +76,7 @@ Mendapatkan definisi kumpulan kebijakan.
 Mendapatkan informasi tentang fitur penyedia Azure.
 
 ### [Get-AzProviderOperation](Get-AzProviderOperation.md)
-Dapatkan operasi untuk penyedia sumber daya Azure yang dapat mengamankan menggunakan Azure RBAC.
+Mendapatkan operasi untuk penyedia sumber daya Azure yang dapat disempurnakan menggunakan Azure RBAC.
 
 ### [Get-AzResource](Get-AzResource.md)
 Mendapatkan sumber daya.
@@ -85,36 +85,36 @@ Mendapatkan sumber daya.
 Mendapatkan grup sumber daya.
 
 ### [Get-AzResourceGroupDeployment](Get-AzResourceGroupDeployment.md)
-Mendapatkan penyebaran di grup sumber daya.
+Mendapatkan penyebaran dalam grup sumber daya.
 
 ### [Get-AzResourceGroupDeploymentOperation](Get-AzResourceGroupDeploymentOperation.md)
-Mendapatkan operasi penggunaan grup sumber daya
+Mendapatkan operasi penyebaran grup sumber daya
 
 ### [Get-AzResourceLock](Get-AzResourceLock.md)
-Dapatkan kunci sumber daya.
+Mendapatkan kunci sumber daya.
 
 ### [Get-AzResourceProvider](Get-AzResourceProvider.md)
 Mendapatkan penyedia sumber daya.
 
 ### [Get-AzRoleAssignment](Get-AzRoleAssignment.md)
 Mencantumkan penetapan peran Azure RBAC pada lingkup yang ditentukan.
-Secara default, daftar tersebut mencantumkan semua penetapan peran dalam langganan Azure yang dipilih.
-Gunakan parameter terkait untuk mencantumkan penetapan ke pengguna tertentu, atau untuk mencantumkan penetapan pada grup atau sumber daya sumber daya tertentu.
+Secara default mencantumkan semua penetapan peran dalam langganan Azure yang dipilih.
+Gunakan parameter masing-masing untuk mencantumkan penetapan ke pengguna tertentu, atau untuk mencantumkan penetapan pada grup sumber daya atau sumber daya tertentu.
 
 ### [Get-AzRoleDefinition](Get-AzRoleDefinition.md)
-Mencantumkan semua peran Azure RBAC yang tersedia untuk pengalihan.
+Mencantumkan semua peran RBAC Azure yang tersedia untuk penetapan.
 
 ### [Invoke-AzResourceAction](Invoke-AzResourceAction.md)
-Menjalankan tindakan pada sumber daya.
+Memanggil tindakan pada sumber daya.
 
 ### [Move-AzResource](Move-AzResource.md)
-Memindahkan sumber daya ke grup atau langganan sumber daya yang berbeda.
+Memindahkan sumber daya ke grup sumber daya atau langganan yang berbeda.
 
 ### [New-AzADAppCredential](New-AzADAppCredential.md)
 Menambahkan kredensial ke aplikasi yang sudah ada.
 
-### [New-AzADApplication](New-AzADApplication.md)
-Membuat aplikasi azure active directory baru.
+### [New-AzADAplikasi](New-AzADApplication.md)
+Membuat aplikasi direktori aktif azure baru.
 
 ### [New-AzADGroup](New-AzADGroup.md)
 Membuat grup direktori aktif baru.
@@ -132,7 +132,7 @@ Membuat pengguna direktori aktif baru.
 Membuat penyebaran baru di lingkup langganan.
 
 ### [New-AzManagedApplication](New-AzManagedApplication.md)
-Membuat aplikasi terkelola Azure.
+Membuat aplikasi yang dikelola Azure.
 
 ### [New-AzManagedApplicationDefinition](New-AzManagedApplicationDefinition.md)
 Membuat definisi aplikasi terkelola.
@@ -155,7 +155,7 @@ Membuat definisi kumpulan kebijakan.
 ### [New-AzResource](New-AzResource.md)
 Membuat sumber daya.
 
-### [New-AzResourceGroup](New-AzResourceGroup.md)
+### [AzResourceGroup baru](New-AzResourceGroup.md)
 Membuat grup sumber daya Azure.
 
 ### [New-AzResourceGroupDeployment](New-AzResourceGroupDeployment.md)
@@ -165,13 +165,13 @@ Menambahkan penyebaran Azure ke grup sumber daya.
 Membuat kunci sumber daya.
 
 ### [New-AzRoleAssignment](New-AzRoleAssignment.md)
-Menetapkan peran RBAC tertentu untuk pokok tertentu, pada lingkup yang ditentukan.
+Menetapkan peran RBAC tertentu ke prinsipal yang ditentukan, pada lingkup yang ditentukan.
 
 ### [New-AzRoleDefinition](New-AzRoleDefinition.md)
 Membuat peran kustom di Azure RBAC.
 Sediakan file definisi peran JSON atau objek PSRoleDefinition sebagai input.
 Pertama, gunakan perintah Get-AzRoleDefinition untuk menghasilkan objek definisi peran garis dasar.
-Lalu, modifikasi propertinya sebagaimana diperlukan.
+Lalu, ubah propertinya sesuai kebutuhan.
 Terakhir, gunakan perintah ini untuk membuat peran kustom menggunakan definisi peran.
 
 ### [Register-AzProviderFeature](Register-AzProviderFeature.md)
@@ -183,10 +183,10 @@ Mendaftarkan penyedia sumber daya.
 ### [Remove-AzADAppCredential](Remove-AzADAppCredential.md)
 Menghapus kredensial dari aplikasi.
 
-### [Remove-AzADApplication](Remove-AzADApplication.md)
+### [Remove-AzADAplikasi](Remove-AzADApplication.md)
 Menghapus aplikasi azure active directory.
 
-### [Remove-AzADGroup](Remove-AzADGroup.md)
+### [Hapus-AzADGroup](Remove-AzADGroup.md)
 Menghapus grup direktori aktif.
 
 ### [Remove-AzADGroupMember](Remove-AzADGroupMember.md)
@@ -198,14 +198,14 @@ Menghapus prinsipal layanan azure active directory.
 ### [Remove-AzADSpCredential](Remove-AzADSpCredential.md)
 Menghapus kredensial dari prinsipal layanan.
 
-### [Remove-AzADUser](Remove-AzADUser.md)
+### [Hapus-AzADUser](Remove-AzADUser.md)
 Menghapus pengguna direktori aktif.
 
-### [Remove-AzDeployment](Remove-AzDeployment.md)
+### [Hapus-AzDeployment](Remove-AzDeployment.md)
 Menghapus penyebaran pada lingkup langganan.
 
 ### [Remove-AzManagedApplication](Remove-AzManagedApplication.md)
-Menghapus aplikasi yang dikelola
+Menghapus aplikasi terkelola
 
 ### [Remove-AzManagedApplicationDefinition](Remove-AzManagedApplicationDefinition.md)
 Menghapus definisi aplikasi terkelola
@@ -225,46 +225,46 @@ Menghapus definisi kebijakan.
 ### [Remove-AzPolicySetDefinition](Remove-AzPolicySetDefinition.md)
 Menghapus definisi kumpulan kebijakan.
 
-### [Remove-AzResource](Remove-AzResource.md)
+### [Hapus-AzResource](Remove-AzResource.md)
 Menghapus sumber daya.
 
-### [Remove-AzResourceGroup](Remove-AzResourceGroup.md)
+### [Hapus-AzResourceGroup](Remove-AzResourceGroup.md)
 Menghapus grup sumber daya.
 
 ### [Remove-AzResourceGroupDeployment](Remove-AzResourceGroupDeployment.md)
-Menghapus penyebaran grup sumber daya dan setiap operasi terkait.
+Menghapus penyebaran grup sumber daya dan operasi apa pun yang terkait.
 
-### [Remove-AzResourceLock](Remove-AzResourceLock.md)
+### [Hapus-AzResourceLock](Remove-AzResourceLock.md)
 Menghapus kunci sumber daya.
 
-### [Remove-AzRoleAssignment](Remove-AzRoleAssignment.md)
-Menghapus penetapan peran ke pokok tertentu yang ditetapkan pada peran tertentu di lingkup tertentu.
+### [Hapus-AzRoleAssignment](Remove-AzRoleAssignment.md)
+Menghapus penetapan peran untuk pokok tertentu yang ditetapkan ke peran tertentu pada lingkup tertentu.
 
 ### [Remove-AzRoleDefinition](Remove-AzRoleDefinition.md)
 Menghapus peran kustom di Azure RBAC.
-Peran yang akan dihapus ditentukan menggunakan properti Id dari peran tersebut.
-Delete akan gagal jika terdapat penetapan peran yang ada yang dilakukan pada peran kustom.
+Peran yang akan dihapus ditentukan menggunakan properti Id peran tersebut.
+Hapus akan gagal jika ada penetapan peran yang sudah ada yang dibuat untuk peran kustom.
 
 ### [Save-AzDeploymentTemplate](Save-AzDeploymentTemplate.md)
-Dapatkan templat untuk penggunaan di lingkup langganan.
+Mendapatkan templat untuk penggunaan di lingkup langganan.
 
 ### [Save-AzResourceGroupDeploymentTemplate](Save-AzResourceGroupDeploymentTemplate.md)
 Menyimpan templat penyebaran grup sumber daya ke file.
 
 ### [Set-AzManagedApplication](Set-AzManagedApplication.md)
-Memperbarui aplikasi yang dikelola
+Pembaruan aplikasi terkelola
 
 ### [Set-AzManagedApplicationDefinition](Set-AzManagedApplicationDefinition.md)
-Memperbarui definisi aplikasi yang dikelola
+Pembaruan definisi aplikasi terkelola
 
 ### [Set-AzPolicyAssignment](Set-AzPolicyAssignment.md)
 Mengubah penetapan kebijakan.
 
 ### [Set-AzPolicyDefinition](Set-AzPolicyDefinition.md)
-Memodifikasi definisi kebijakan.
+Mengubah definisi kebijakan.
 
 ### [Set-AzPolicySetDefinition](Set-AzPolicySetDefinition.md)
-Memodifikasi definisi kumpulan kebijakan
+Mengubah definisi kumpulan kebijakan
 
 ### [Set-AzResource](Set-AzResource.md)
 Mengubah sumber daya.
@@ -276,10 +276,10 @@ Mengubah grup sumber daya.
 Mengubah kunci sumber daya.
 
 ### [Set-AzRoleDefinition](Set-AzRoleDefinition.md)
-Memodifikasi peran kustom di Azure RBAC.
-Sediakan definisi peran yang dimodifikasi baik sebagai file JSON atau sebagai PSRoleDefinition.
-Pertama, gunakan Get-AzRoleDefinition baru untuk mengambil peran kustom yang ingin Anda ubah.
-Kemudian, ubah properti yang ingin Anda ubah.
+Mengubah peran kustom di Azure RBAC.
+Berikan definisi peran yang dimodifikasi baik sebagai file JSON atau sebagai PSRoleDefinition.
+Pertama, gunakan perintah Get-AzRoleDefinition untuk mengambil peran kustom yang ingin Anda ubah.
+Lalu, ubah properti yang ingin Anda ubah.
 Terakhir, simpan definisi peran menggunakan perintah ini.
 
 ### [Stop-AzDeployment](Stop-AzDeployment.md)
@@ -289,15 +289,15 @@ Membatalkan penyebaran yang berjalan pada lingkup langganan.
 Membatalkan penyebaran grup sumber daya.
 
 ### [Test-AzDeployment](Test-AzDeployment.md)
-Memvalidasi templat dan parameter penyebaran di lingkup langganan.
+Memvalidasi templat penyebaran dan parameter pada lingkup langganan.
 
 ### [Test-AzResourceGroupDeployment](Test-AzResourceGroupDeployment.md)
-Memvalidasi penggunaan grup sumber daya.
+Memvalidasi penyebaran grup sumber daya.
 
-### [Pisahkan-AzResourceProvider](Unregister-AzResourceProvider.md)
-Pisahkan pendaftaran penyedia sumber daya.
+### [Unregister-AzResourceProvider](Unregister-AzResourceProvider.md)
+Membatalkan pendaftaran penyedia sumber daya.
 
-### [Update-AzADApplication](Update-AzADApplication.md)
+### [Pembaruan-AzADAplikasi](Update-AzADApplication.md)
 Memperbarui aplikasi azure active directory yang sudah ada.
 
 ### [Update-AzADServicePrincipal](Update-AzADServicePrincipal.md)

@@ -6,23 +6,23 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageObjectReplicationPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageObjectReplicationPolicy.md
 ms.openlocfilehash: 62e01e5e58d3f2830cc4516d43d81cb6505417d5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140303125"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142118447"
 ---
 # Set-AzStorageObjectReplicationPolicy
 
 ## SYNOPSIS
-Membuat atau memperbarui kebijakan replikasi objek tertentu dalam Storage tertentu.
+Membuat atau memperbarui kebijakan replikasi objek tertentu dalam akun Storage.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/set-azstorageobjectreplicationpolicy) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/set-azstorageobjectreplicationpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Nama Akun (Default)
+### AccountName (Default)
 ```
 Set-AzStorageObjectReplicationPolicy [-ResourceGroupName] <String> [-StorageAccountName] <String>
  [-PolicyId <String>] -SourceAccount <String> [-DestinationAccount <String>]
@@ -45,11 +45,11 @@ Set-AzStorageObjectReplicationPolicy -StorageAccount <PSStorageAccount> [-Policy
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzStorageObjectReplicationPolicy** membuat atau memperbarui kebijakan replikasi objek tertentu dalam Storage mereka.
+Cmdlet **Set-AzStorageObjectReplicationPolicy** membuat atau memperbarui kebijakan replikasi objek tertentu dalam akun Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Atur kebijakan replikasi objek ke tujuan dan akun sumber.
+### Contoh 1: Atur kebijakan replikasi objek ke akun tujuan dan sumber.
 ```
 PS C:\> $rule1 = New-AzStorageObjectReplicationPolicyRule -SourceContainer src1 -DestinationContainer dest1 
 
@@ -73,8 +73,8 @@ myresourcegroup   mysourceaccount    56bfa11c-81ef-4f8d-b307-5e5386e16fba       
 ```
 
 Perintah ini mengatur kebijakan replikasi objek ke akun tujuan dan sumber.
-Pertama- buat 2 aturan kebijakan replikasi objek, dan atur kebijakan ke akun tujuan dengan 2 aturan dan Id sumber akun sumber. Lalu dapatkan kebijakan replikasi objek dari akun tujuan dan atur ke akun sumber.
-Harap diingat, ketika akun penyimpanan memiliki AllowCrossTenantReplication sebagai false, SourceAccount dan DestinationAccount harus merupakan Id sumber daya akun.
+Pertama buat 2 aturan kebijakan replikasi objek, dan atur kebijakan ke akun tujuan dengan 2 aturan dan id sumber daya akun sumber daya. Lalu dapatkan kebijakan replikasi objek dari akun tujuan dan atur ke akun sumber.
+Harap diperhatikan, ketika akun penyimpanan memiliki AllowCrossTenantReplication sebagai false, SourceAccount dan DestinationAccount harus berupa Id sumber daya akun.
 
 ## PARAMETERS
 
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationAccount
-Tujuan Kebijakan Replikasi ObjekAccount, jika SourceAccount adalah nama akun itu harus merupakan nama akun, selain itu harus id sumber daya akun. Nilai default akan menjadi input StorageAccountName, atau resouceID akun.
+Tujuan Kebijakan Replikasi ObjekAccount, jika SourceAccount adalah nama akun, maka nama akun harus berupa id sumber daya akun. Nilai default adalah input StorageAccountName, atau resouceID akun.
 
 ```yaml
 Type: System.String
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Kebijakan Replikasi Objek untuk Diatur ke Akun yang ditentukan.
+Objek Kebijakan Replikasi Objek untuk Diatur ke Akun tertentu.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSObjectReplicationPolicy
@@ -124,8 +124,8 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyId
-Id Kebijakan Replikasi Objek. Ini harus menjadi GUID atau 'default'.
-Jika tidak memasukkan PolicyId, akan menggunakan 'default', yang berarti membuat kebijakan baru dan Id kebijakan baru akan dikembalikan dalam kebijakan yang dibuat.
+Id Kebijakan Replikasi Objek. Ini harus berupa GUID atau 'default'.
+Jika tidak memasukkan PolicyId, akan menggunakan 'default', yang berarti untuk membuat kebijakan baru dan Id kebijakan baru akan dikembalikan dalam kebijakan yang dibuat.
 
 ```yaml
 Type: System.String
@@ -154,7 +154,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Rule
+### -Aturan
 Aturan Kebijakan Replikasi Objek.
 
 ```yaml
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceAccount
-Object Replication Policy SourceAccount. Ini harus merupakan id sumber daya jika allowCrossTenantReplication adalah false..
+Sumber Kebijakan Replikasi ObjekAccount. Ini harus berupa id sumber daya jika allowCrossTenantReplication false..
 
 ```yaml
 Type: System.String
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage objek akun
+objek akun Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Storage Akun.
+Storage Nama Akun.
 
 ```yaml
 Type: System.String
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

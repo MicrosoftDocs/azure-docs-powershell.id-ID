@@ -3,18 +3,18 @@ external help file: ''
 Module Name: Azs.Fabric.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.fabric.admin/new-azsippool
 schema: 2.0.0
-ms.openlocfilehash: 652f02a3082b495670c05b2c00e5b82dc40398aa51e4eb7502a5cc67018dc549
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 2b04c5c1eb4d0a2b79543bf81bbfc02d1f0fb4ad
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417802"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142134370"
 ---
 # New-AzsIPPool
 
 ## SYNOPSIS
-Buat ip pool.
-Setelah dibuat, ip pool tidak dapat dihapus.
+Buat kumpulan IP.
+Setelah membuat kumpulan IP tidak dapat dihapus.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ New-AzsIPPool -Name <String> [-Location <String>] [-ResourceGroupName <String>] 
  [-WhatIf] [<CommonParameters>]
 ```
 
-### Buat
+### Membuat
 ```
 New-AzsIPPool -Name <String> -Pool <IIPPool> [-Location <String>] [-ResourceGroupName <String>]
  [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf]
@@ -35,8 +35,8 @@ New-AzsIPPool -Name <String> -Pool <IIPPool> [-Location <String>] [-ResourceGrou
 ```
 
 ## DESCRIPTION
-Buat ip pool.
-Setelah dibuat, ip pool tidak dapat dihapus.
+Buat kumpulan IP.
+Setelah membuat kumpulan IP tidak dapat dihapus.
 
 ## EXAMPLES
 
@@ -46,7 +46,7 @@ PS C:\> New-AzsIpPool -Name IpPool4 -StartIpAddress ***.**_._*_._*_ -EndIpAddres
 
 ```
 
-Buat ip pool baru.
+Buat kumpulan IP baru.
 
 
 
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama ip pool.
+Nama kumpulan IP.
 
 ```yaml
 Type: System.String
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -NumberOfAllocatedIPAddress
-Jumlah alamat IP yang saat ini dialokasikan.
+Jumlah alamat IP yang dialokasikan saat ini.
 
 ```yaml
 Type: System.Int64
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -NumberOfIPAddress
-Total jumlah alamat IP.
+Jumlah total alamat IP.
 
 ```yaml
 Type: System.Int64
@@ -212,9 +212,9 @@ Accept wildcard characters: False
 
 ```
 
-### -Pool
-Sumber daya ini menentukan rentang alamat IP yang alamatnya dialokasikan untuk node dalam suatu subnet.
-Untuk membuat, lihat bagian CATATAN untuk properti POOL dan membuat tabel hash.
+### -Kolam Renang
+Sumber daya ini menentukan rentang alamat IP tempat alamat dialokasikan untuk node dalam subnet.
+Untuk membangun, lihat bagian CATATAN untuk properti POOL dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20160501.IIPPool
@@ -262,8 +262,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -295,7 +295,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -312,7 +312,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -328,7 +328,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -342,16 +342,16 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-POOL <IIPPool> : Sumber daya ini menentukan rentang alamat IP yang alamatnya dialokasikan untuk node dalam suatu subnet.
+POOL <IIPPool>: Sumber daya ini menentukan rentang alamat IP tempat alamat dialokasikan untuk node dalam subnet.
   - `[Location <String>]`: Kawasan tempat sumber daya berada.
   - `[Tag <IResourceTags>]`: Daftar pasangan nilai kunci.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
   - `[AddressPrefix <String>]`: Prefiks alamat.
   - `[EndIPAddress <String>]`: Alamat IP akhir.
-  - `[NumberOfAllocatedIPAddresses <Int64?>]`: Jumlah alamat IP yang saat ini dialokasikan.
-  - `[NumberOfIPAddresses <Int64?>]`: Total jumlah alamat IP.
+  - `[NumberOfAllocatedIPAddresses <Int64?>]`: Jumlah alamat IP yang dialokasikan saat ini.
+  - `[NumberOfIPAddresses <Int64?>]`: Jumlah total alamat IP.
   - `[NumberOfIPAddressesInTransition <Int64?>]`: Jumlah alamat IP saat ini dalam transisi.
   - `[StartIPAddress <String>]`: Alamat IP awal.
 

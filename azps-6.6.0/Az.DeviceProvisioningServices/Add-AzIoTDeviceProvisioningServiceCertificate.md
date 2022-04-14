@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Add-AzIoTDeviceProvisioningServiceCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Add-AzIoTDeviceProvisioningServiceCertificate.md
 ms.openlocfilehash: d6c331fc485ac17b88e17ee17d1329b84cf22507
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139940137"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142051607"
 ---
 # Add-AzIoTDeviceProvisioningServiceCertificate
 
@@ -18,7 +18,7 @@ ms.locfileid: "139940137"
 Membuat/memperbarui sertifikat Layanan Penyediaan Perangkat Azure IoT Hub.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.deviceprovisioningservices/add-aziotdeviceprovisioningservicecertificate) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.deviceprovisioningservices/add-aziotdeviceprovisioningservicecertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Add-AzIoTDeviceProvisioningServiceCertificate [-ResourceId] <String> [-Certifica
 
 ## DESCRIPTION
 Mengunggah sertifikat baru atau mengganti sertifikat yang sudah ada dengan nama yang sama.
-Untuk penjelasan mendetail tentang sertifikat CA di Layanan Penyediaan Perangkat Azure IoT Hub, lihat https://docs.microsoft.com/azure/iot-dps/how-to-verify-certificates.
+Untuk penjelasan mendetail tentang sertifikat CA di Azure IoT Hub Layanan Penyediaan Perangkat, lihat https://docs.microsoft.com/azure/iot-dps/how-to-verify-certificates.
 
 ## EXAMPLES
 
@@ -65,7 +65,7 @@ Created             : 1/01/2017 16:01
 Etag                : AAAAAAFpGcA=
 ```
 
-Upload file SERTIFIKAT CA CER ke layanan penyediaan perangkat Azure IoT Hub.
+Upload file CER sertifikat CA ke layanan penyediaan perangkat Azure IoT Hub.
 
 ### Contoh 2
 ```
@@ -83,7 +83,7 @@ Created             : 1/01/2017 16:01
 Etag                : AAAAAAFpObE=
 ```
 
-Memperbarui sertifikat CA dalam layanan penyediaan perangkat hub IoT dengan mengunggah file CER baru. 
+Memperbarui sertifikat CA di layanan penyediaan perangkat hub IoT dengan mengunggah file CER baru. 
 
 ## PARAMETERS
 
@@ -162,8 +162,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-representasi basis-64 dari file .cer atau file .pem sertifikat X509 atau jalur file .pem
+### -Jalur
+representasi base-64 dari file .cer sertifikat X509 atau jalur file .pem
 
 ```yaml
 Type: System.String
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Sertifikat Layanan Pengadaan Perangkat Iot
+Id Sumber Daya Sertifikat Layanan Penyediaan Perangkat IoT
 
 ```yaml
 Type: System.String
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

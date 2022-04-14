@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Get-AzureRmBatchAccountKeys.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Get-AzureRmBatchAccountKeys.md
 ms.openlocfilehash: 1f32e700cd5d0c20e041143e43755172ecf2da86
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425919"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142143172"
 ---
 # Get-AzureRmBatchAccountKeys
 
 ## SYNOPSIS
-Dapatkan kunci akun Kumpulan.
+Mendapatkan kunci akun Batch.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,14 +28,14 @@ Get-AzureRmBatchAccountKeys [-AccountName] <String> [-ResourceGroupName <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmBatchAccountKeys** mendapatkan kunci akun Azure Batch di langganan saat ini.
+Cmdlet **Get-AzureRmBatchAccountKeys** mendapatkan kunci akun Azure Batch dalam langganan saat ini.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -Nama Akun
-Menentukan nama akun yang mendapatkan kunci cmdlet ini.
+### -AccountName
+Menentukan nama akun di mana cmdlet ini mendapatkan kunci.
 
 ```yaml
 Type: System.String
@@ -50,7 +50,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi akun yang mendapatkan kunci cmdlet ini.
+Menentukan nama grup sumber daya yang berisi akun di mana cmdlet ini mendapatkan kunci.
 
 ```yaml
 Type: System.String
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -94,8 +94,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmBatchAccountKey](./New-AzureRmBatchAccountKey.md)
+[Baru-AzureRmBatchAccountKey](./New-AzureRmBatchAccountKey.md)
 
-[Cmdlet Kumpulan Azure](./AzureRM.Batch.md)
+[Cmdlet Azure Batch](./AzureRM.Batch.md)
 
 

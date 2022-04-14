@@ -4,16 +4,16 @@ Module Guid: c1157b29-2b5d-4d44-8e50-c9630d257155
 Download Help Link: https://docs.microsoft.com/powershell/module/azs.backup.admin
 Help Version: 1.0.0.0
 Locale: en-US
-ms.openlocfilehash: 86679fb7cf358a1be0bc39bd3d9219d2a8e510eb5d0a39cfc30d121d0f3021b7
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 2606ef99fc9f4a4aa73b51a72cd8659c38b8de93
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132418956"
 ---
-# Azs.Backup.Admin Module
+# Modul Azs.Backup.Admin
 ## Deskripsi
-Microsoft AzureStack PowerShell: Cmdlet BackupAdmin
+Microsoft AzureStack PowerShell: cmdlet BackupAdmin
 
 ## Cmdlet Azs.Backup.Admin
 ### [Get-AzsBackup](Get-AzsBackup.md)
@@ -25,7 +25,7 @@ Mengembalikan lokasi cadangan tertentu berdasarkan nama.
 ### [Restore-AzsBackup](Restore-AzsBackup.md)
 Memulihkan cadangan.
 
-### [Set-AzsBackupConfiguration](Set-AzsBackupConfiguration.md)
+### [Konfigurasi Set-AzsBackup](Set-AzsBackupConfiguration.md)
 Memperbarui lokasi cadangan.
 
 ### [Start-AzsBackup](Start-AzsBackup.md)

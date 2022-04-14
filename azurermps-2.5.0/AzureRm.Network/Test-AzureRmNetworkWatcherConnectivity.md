@@ -3,17 +3,17 @@ external help file: Microsoft.Azure.Commands.Network.dll-Help.xml
 Module Name: AzureRM.Network
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/test-azurermnetworkwatcherconnectivity
 schema: 2.0.0
-ms.openlocfilehash: b99fd08daf88432d1458f5e69c22107cd271e9dcc82c5dde018ed369188444fc
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 55dc2682c4c3e62b42a6a23ac12f93991e4873fc
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416602"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142145575"
 ---
 # Test-AzureRmNetworkWatcherConnectivity
 
 ## SYNOPSIS
-Mengembalikan informasi konektivitas untuk VM sumber yang ditentukan dan tujuan.
+Mengembalikan informasi konektivitas untuk VM sumber tertentu dan tujuan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -34,11 +34,11 @@ Test-AzureRmNetworkWatcherConnectivity -NetworkWatcherName <String> -ResourceGro
 ```
 
 ## DESCRIPTION
-Cmdlet Test-AzureRmNetworkWatcherConnectivity mengembalikan informasi konektivitas untuk VM sumber yang ditentukan dan tujuan. Jika konektivitas antara sumber dan tujuan tidak dapat dibuat, cmdlet akan mengembalikan detail tentang masalah tersebut.
+Cmdlet Test-AzureRmNetworkWatcherConnectivity mengembalikan informasi konektivitas untuk VM sumber tertentu dan tujuan. Jika konektivitas antara sumber dan tujuan tidak dapat dibuat, cmdlet mengembalikan detail tentang masalah tersebut.
 
 ## EXAMPLES
 
-### --------------- Contoh 1: Uji Konektivitas Pengawas Jaringan dari VM ke situs web ---------------
+### --------------- Contoh 1: Uji Konektivitas Network Watcher dari VM ke situs web ---------------
 ```
 Test-AzureRmNetworkWatcherConnectivity -NetworkWatcherName NetworkWatcher -ResourceGroupName NetworkWatcherRG -SourceId "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/ContosoRG/providers/Microsoft.Compute/virtualMachines/MultiTierApp0" -DestinationAddress "bing.com" -DestinationPort 80
 
@@ -71,12 +71,12 @@ Hops             : [
                    ]
 ```
 
-Dalam contoh ini, kami menguji konektivitas dari VM dalam Azure www.bing.com.
+Dalam contoh ini, kami menguji konektivitas dari VM di Azure ke www.bing.com.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationAddress
-Alamat IP atau URI sumber daya yang akan digunakan untuk percobaan koneksi.
+Alamat IP atau URI sumber daya tempat upaya koneksi akan dilakukan.
 
 ```yaml
 Type: String
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationId
-ID sumber daya tempat percobaan koneksi akan dilakukan.
+ID sumber daya tempat upaya koneksi akan dilakukan.
 
 ```yaml
 Type: String
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationPort
-Port yang menjalankan konektivitas pemeriksaan yang akan dijalankan.
+Port di mana konektivitas pemeriksaan akan dijalankan.
 
 ```yaml
 Type: Int32
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengawas jaringan.
+Sumber daya pengamat jaringan.
 
 ```yaml
 Type: PSNetworkWatcher
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceId
-ID sumber daya di mana pemeriksaan konektivitas akan dimulai.
+ID sumber daya tempat pemeriksaan konektivitas akan dimulai.
 
 ```yaml
 Type: String
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -238,21 +238,21 @@ System.String System.Int32
 ### Microsoft.Azure.Commands.Network.Models.PSConnectivityInformation
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, connectivity, management, manager, network, networking, network watcher
+Kata kunci: azure, azurerm, lengan, sumber daya, konektivitas, manajemen, manajer, jaringan, jaringan, pengawas jaringan
 
 ## RELATED LINKS
 
-[New-AzureRmNetworkWatcher](./New-AzureRmNetworkWatcher.md) 
- [Get-AzureRmNetworkWatcher](./Get-AzureRmNetworkWatcher.md) 
- [Remove-AzureRmNetworkWatcher](./Remove-AzureRmNetworkWatcher.md)
+[AzureRmNetworkWatcher](./New-AzureRmNetworkWatcher.md)
+ baru [Get-AzureRmNetworkWatcher](./Get-AzureRmNetworkWatcher.md)
+ [Hapus-AzureRmNetworkWatcher](./Remove-AzureRmNetworkWatcher.md)
 
-[Get-AzureRmNetworkWatcherNextHop](./Get-AzureRmNetworkWatcherNextHop.md) 
- [Get-AzureRmNetworkWatcherSecurityGroupView](./Get-AzureRmNetworkWatcherSecurityGroupView.md) 
- [Get-AzureRmNetworkWatcherTopology](./Get-AzureRmNetworkWatcherTopology.md) 
+[Get-AzureRmNetworkWatcherNextHop](./Get-AzureRmNetworkWatcherNextHop.md)
+ [Get-AzureRmNetworkWatcherSecurityGroupView](./Get-AzureRmNetworkWatcherSecurityGroupView.md)
+ [Get-AzureRmNetworkWatcherTopology](./Get-AzureRmNetworkWatcherTopology.md)
  [Get-AzureRmNetworkWatcherTroubleshootingResult](./Get-AzureRmNetworkWatcherTroubleshootingResult.md)
 
-[New-AzureRmNetworkWatcherPacketCapture](./New-AzureRmNetworkWatcherPacketCapture.md) 
- [New-AzureRmPacketCaptureFilterConfig](./New-AzureRmPacketCaptureFilterConfig.md) 
- [Get-AzureRmNetworkWatcherPacketCapture](./Get-AzureRmNetworkWatcherPacketCapture.md) 
- [Remove-AzureRmNetworkWatcherPacketCapture](./Remove-AzureRmNetworkWatcherPacketCapture.md) 
+[Baru-AzureRmNetworkWatcherPacketCapture](./New-AzureRmNetworkWatcherPacketCapture.md)
+ [New-AzureRmPacketCaptureFilterConfig](./New-AzureRmPacketCaptureFilterConfig.md)
+ [Get-AzureRmNetworkWatcherPacketCapture](./Get-AzureRmNetworkWatcherPacketCapture.md)
+ [Hapus-AzureRmNetworkWatcherPacketCapture](./Remove-AzureRmNetworkWatcherPacketCapture.md)
  [Stop-AzureRmNetworkWatcherPacketCapture](./Stop-AzureRmNetworkWatcherPacketCapture.md)

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeAnalytics/Commands.DataLakeAnalytics/help/Set-AzureRmDataLakeAnalyticsCatalogSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeAnalytics/Commands.DataLakeAnalytics/help/Set-AzureRmDataLakeAnalyticsCatalogSecret.md
 ms.openlocfilehash: 22a10d4f65d43f4d11871cbf43399bfc35febf04
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423342"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142142236"
 ---
 # Set-AzureRmDataLakeAnalyticsCatalogSecret
 
 ## SYNOPSIS
-Memodifikasi rahasia katalog Analitik Danau Data.
+Memodifikasi rahasia katalog Data Lake Analytics.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -35,21 +35,21 @@ Set-AzureRmDataLakeAnalyticsCatalogSecret [-Account] <String> [-DatabaseName] <S
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmDataLakeAnalyticsCatalogSecret** mengubah rahasia yang terkait dengan katalog Azure Data Lake Analytics.
+Cmdlet **Set-AzureRmDataLakeAnalyticsCatalogSecret memodifikasi** rahasia yang terkait dengan katalog Azure Data Lake Analytics.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah rahasia yang dikaitkan dengan akun
+### Contoh 1: Modifikasi rahasia yang terkait dengan akun
 ```
 PS C:\>Set-AzureRmDataLakeAnalyticsCatalogSecret -Account "ContosoAdlAccount" -DatabaseName "databaseName" -Secret (Get-Credential) -Host "https://example.contoso.com" -Port 8080
 ```
 
-Perintah ini mengatur rahasia terkait dengan katalog Analitik Danau Data.
+Perintah ini mengatur rahasia yang terkait dengan katalog Data Lake Analytics.
 
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Analitik Danau Data.
+Menentukan nama akun Data Lake Analytics.
 
 ```yaml
 Type: System.String
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseHost
-Menentukan nama host untuk database rahasia terkait dengan dalam format 'mydatabase.contoso.com'.
+Menentukan nama host untuk database yang dikaitkan dengan rahasia dalam format 'mydatabase.contoso.com'.
 
 ```yaml
 Type: System.String
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Menentukan nama database yang sedang rahasia.
+Menentukan nama database yang menyimpan rahasia.
 
 ```yaml
 Type: System.String
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Rahasia
-Menentukan nama dan kata sandi rahasia tersebut.
+Menentukan nama dan kata sandi rahasia.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -174,7 +174,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmDataLakeAnalyticsCatalogSecret](./New-AzureRmDataLakeAnalyticsCatalogSecret.md)
+[Baru-AzureRmDataLakeAnalyticsCatalogSecret](./New-AzureRmDataLakeAnalyticsCatalogSecret.md)
 
 [Remove-AzureRmDataLakeAnalyticsCatalogSecret](./Remove-AzureRmDataLakeAnalyticsCatalogSecret.md)
 

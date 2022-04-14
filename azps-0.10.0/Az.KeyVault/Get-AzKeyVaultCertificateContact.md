@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Get-AzKeyVaultCertificateContact.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Get-AzKeyVaultCertificateContact.md
 ms.openlocfilehash: e02b60055818d1ed79e93e6853353795e78c5830
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420213"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142057799"
 ---
 # Get-AzKeyVaultCertificateContact
 
 ## SYNOPSIS
-Mendapatkan kontak yang terdaftar untuk pemberitahuan sertifikat untuk vault kunci.
+Mendapatkan kontak yang terdaftar untuk pemberitahuan sertifikat untuk kubah kunci.
 
 ## SYNTAX
 
@@ -26,21 +26,21 @@ Get-AzKeyVaultCertificateContact [-VaultName] <String> [-DefaultProfile <IAzureC
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzKeyVaultCertificateContact** mendapatkan kontak yang terdaftar untuk pemberitahuan sertifikat untuk kunci vault di Azure Key Vault.
+Cmdlet **Get-AzKeyVaultCertificateContact** mendapatkan kontak yang terdaftar untuk pemberitahuan sertifikat untuk kubah kunci di Azure Key Vault.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua kontak sertifikat
+### Contoh 1: Dapatkan semua kontak sertifikat
 ```
 PS C:\>$Contacts = Get-AzKeyVaultCertificateContact -VaultName "Contoso"
 ```
 
-Perintah ini akan memasukkan semua kontak untuk objek sertifikat di kunci vault Contoso, lalu menyimpannya dalam $Contacts variabel.
+Perintah ini mendapatkan semua kontak untuk objek sertifikat dalam kubah kunci Contoso, lalu menyimpannya dalam variabel $Contacts.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: IAzureContextContainer
@@ -55,7 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kunci vault.
+Menentukan nama kubah kunci.
 
 ```yaml
 Type: String
@@ -70,11 +70,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
@@ -87,5 +87,5 @@ Cmdlet ini tidak menerima input apa pun.
 
 [Add-AzKeyVaultCertificateContact](./Add-AzKeyVaultCertificateContact.md)
 
-[Remove-AzKeyVaultCertificateContact](./Remove-AzKeyVaultCertificateContact.md)
+[Hapus-AzKeyVaultCertificateContact](./Remove-AzKeyVaultCertificateContact.md)
 

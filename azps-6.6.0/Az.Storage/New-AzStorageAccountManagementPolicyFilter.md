@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageAccountManagementPolicyFilter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageAccountManagementPolicyFilter.md
 ms.openlocfilehash: ec4eaf9eaae974d3f73a182fa0ea19a8401f5f20
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139930831"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142118879"
 ---
 # New-AzStorageAccountManagementPolicyFilter
 
 ## SYNOPSIS
-Membuat objek filter aturan ManagementPolicy, yang bisa digunakan dalam New-AzStorageAccountManagementPolicyRule.
+Membuat objek filter aturan ManagementPolicy, yang dapat digunakan di New-AzStorageAccountManagementPolicyRule.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/new-azstorageaccountmanagementpolicyfilter) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azstorageaccountmanagementpolicyfilter) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +28,11 @@ New-AzStorageAccountManagementPolicyFilter [-PrefixMatch <String[]>] [-BlobType 
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzStorageAccountManagementPolicyFilter** membuat objek filter aturan ManagementPolicy, yang dapat digunakan dalam New-AzStorageAccountManagementPolicyRule.
+Cmdlet **New-AzStorageAccountManagementPolicyFilter** membuat objek filter aturan ManagementPolicy, yang dapat digunakan di New-AzStorageAccountManagementPolicyRule.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat objek filter aturan ManajemenPolicy lalu menambahkannya ke aturan kebijakan manajemen dan menetapkan ke Storage anda
+### Contoh 1: Membuat objek filter aturan ManagementPolicy, lalu menambahkannya ke aturan kebijakan manajemen dan diatur ke akun Storage
 ```
 PS C:\>$filter = New-AzStorageAccountManagementPolicyFilter -PrefixMatch blobprefix1,blobprefix2 -BlobType appendBlob,blockBlob
 PS C:\>$filter 
@@ -46,12 +46,12 @@ PS C:\>$rule = New-AzStorageAccountManagementPolicyRule -Name Test -Action $acti
 PS C:\>$policy = Set-AzStorageAccountManagementPolicy -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount" -Rule $rule
 ```
 
-Perintah ini membuat objek filter aturan ManagementPolicy. Lalu tambahkan aturan kebijakan manajemen dan setel ke Storage anda.
+Perintah ini membuat objek filter aturan ManagementPolicy. Lalu tambahkan ke aturan kebijakan manajemen dan atur ke akun Storage.
 
 ## PARAMETERS
 
 ### -BlobType
-Array string agar blobtypes cocok. Saat ini blockBlob mendukung semua tindakan tiering dan penghapusan. Hanya tindakan penghapusan yang didukung untuk penambahanBlob.
+Array string agar blobtypes cocok. Saat ini blokBlob mendukung semua tindakan tingkatan dan penghapusan. Hanya tindakan penghapusan yang didukung untuk menambahkanBlob.
 
 ```yaml
 Type: System.String[]
@@ -82,8 +82,8 @@ Accept wildcard characters: False
 ```
 
 ### -PrefixMatch
-Larik string agar prefiks sesuai.
-String prefiks harus diawali dengan nama wadah.
+Array string agar prefiks cocok.
+String prefiks harus dimulai dengan nama kontainer.
 
 ```yaml
 Type: System.String[]
@@ -98,11 +98,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Billing/Commands.Billing/help/Get-AzureRmBillingInvoice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Billing/Commands.Billing/help/Get-AzureRmBillingInvoice.md
 ms.openlocfilehash: 1f21022294b1bcf5c75a7cf49dcc009600dc4cc0
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140865098"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142143151"
 ---
 # Get-AzureRmBillingInvoice
 
@@ -32,7 +32,7 @@ Get-AzureRmBillingInvoice [-MaxCount <Int32>] [-GenerateDownloadUrl] [-DefaultPr
 Get-AzureRmBillingInvoice [-Latest] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### Tunggal
+### Satu
 ```
 Get-AzureRmBillingInvoice -Name <System.Collections.Generic.List`1[System.String]>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -62,19 +62,19 @@ Dapatkan faktur langganan dengan nama yang ditentukan.
 PS C:\> Get-AzureRmBillingInvoice
 ```
 
-Dapatkan semua faktur langganan yang tersedia dalam urutan kronologis terbalik yang dimulai dengan faktur terbaru tanpa Url unduhan. 
+Dapatkan semua faktur langganan yang tersedia dalam urutan kronologis terbalik dimulai dengan faktur terbaru tanpa mengunduh Url. 
 
 ### Contoh 4
 ```
 PS C:\> Get-AzureRmBillingInvoice -GenerateDownloadUrl -MaxCount 10
 ```
 
-Dapatkan 10 faktur terbaru dari langganan dan sertakan Url unduhan dalam hasil.
+Dapatkan 10 faktur terbaru langganan dan sertakan Url unduhan dalam hasilnya.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxCount
-Menentukan jumlah maksimum rekaman untuk dikembalikan.
+Menentukan jumlah maksimum rekaman yang akan dikembalikan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama faktur tertentu untuk mendapatkan atau yang paling baru jika tidak ditentukan.
+Nama faktur tertentu untuk mendapatkan atau yang terbaru jika tidak ditentukan.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -149,11 +149,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

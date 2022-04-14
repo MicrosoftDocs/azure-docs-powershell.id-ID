@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Repair-AzVmssServiceFabricUpdateDomain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Repair-AzVmssServiceFabricUpdateDomain.md
 ms.openlocfilehash: 9aefdbece7e5f6ee7e0216a6c28e32b77ee6700a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140079101"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142088853"
 ---
 # Repair-AzVmssServiceFabricUpdateDomain
 
@@ -18,7 +18,7 @@ ms.locfileid: "140079101"
 Manual platform update domain walk to update virtual machines in a service fabric virtual machine scale set.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/repair-azvmssservicefabricupdatedomain) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/repair-azvmssservicefabricupdatedomain) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Repair-AzVmssServiceFabricUpdateDomain [-PlatformUpdateDomain] <Int32>
 ```
 
 ## DESCRIPTION
-Force manual platform update domain walk to update virtual machines in a service fabric virtual machine scale set.
+Paksa platform manual memperbarui domain berjalan untuk memperbarui mesin virtual dalam rangkaian skala mesin virtual kain layanan.
 
 ## EXAMPLES
 
@@ -52,7 +52,7 @@ Force manual platform update domain walk to update virtual machines in a service
 PS C:\> Repair-AzVmssServiceFabricUpdateDomain -ResourceGroupName $rgname -VMScaleSetName $vmssName -PlatformUpdateDomain 0
 ```
 
-This command forces service fabric update walk on UD 0 for the virtual machine scale set specified by resource group name and scale set name.
+Perintah ini memaksa layanan pembaruan kain berjalan di UD 0 untuk kumpulan skala mesin virtual yang ditentukan oleh nama grup sumber daya dan nama kumpulan skala.
 
 ### Contoh 2
 ```
@@ -60,19 +60,19 @@ PS C:\> $vmss = Get-AzVmss -ResourceGroupName $rgname -VMScaleSetName $vmssName
 PS C:\> Repair-AzVmssServiceFabricUpdateDomain -VirtualMachineScaleSet $vmss -PlatformUpdateDomain 1
 ```
 
-This command forces service fabric update walk on UD 1 for the virtual machine scale set specified by VM scale set object.
+Perintah ini memaksa layanan pembaruan kain berjalan di UD 1 untuk mesin virtual skala yang ditentukan oleh VM skala set objek.
 
 ### Contoh 3
 ```
 PS C:\> Repair-AzVmssServiceFabricUpdateDomain -ResourceId $resourceId  -PlatformUpdateDomain 2;
 ```
 
-This command forces service fabric update walk on UD 2 for the virtual machine scale set specified by resource id.
+Perintah ini memaksa layanan pembaruan kain berjalan di UD 2 untuk skala mesin virtual yang ditentukan oleh id sumber daya.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlatformUpdateDomain
-Domain pembaruan platform yang diminta panduan pemulihan manualnya.
+Domain pembaruan platform di mana panduan pemulihan berjalan diminta.
 
 ```yaml
 Type: System.Int32
@@ -146,8 +146,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -VirtualMachinescaleSet
-Objek set skala mesin virtual lokal
+### -VirtualMachineScaleSet
+Objek kumpulan skala mesin virtual lokal
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -218,7 +218,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Compute.Automation.Models.PSRecoveryMicrosoftResponse
+### Microsoft.Azure.Commands.Compute.Automation.Models.PSRecoveryWalkResponse
 
 ## CATATAN
 

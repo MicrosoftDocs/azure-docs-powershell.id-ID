@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVmssRollingUpgrade.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVmssRollingUpgrade.md
-ms.openlocfilehash: 39d2c0064f1f6be58b04c973f8b5e89eaae7cf43
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 7bf350acc7e1045d00af9d01200a0bf58f06ec54
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140545289"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141854276"
 ---
 # Get-AzVmssRollingUpgrade
 
 ## SYNOPSIS
-Memperlihatkan status kumpulan skala mesin virtual terbaru pemutakhiran berputar.
+Memperlihatkan status pemutakhiran rolling set skala mesin virtual terbaru.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmssrollingupgrade) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzVmssRollingUpgrade [-ResourceGroupName] <String> [-VMScaleSetName] <String
 ```
 
 ## DESCRIPTION
-Memperlihatkan status kumpulan skala mesin virtual terbaru pemutakhiran berputar.
+Memperlihatkan status pemutakhiran rolling set skala mesin virtual terbaru.
 
 ## EXAMPLES
 
@@ -34,12 +37,12 @@ Memperlihatkan status kumpulan skala mesin virtual terbaru pemutakhiran berputar
 Get-AzVmssRollingUpgrade -ResourceGroupName "Group001" -VMScaleSetName "VMSS001"
 ```
 
-Perintah ini memperlihatkan status pemutakhiran diluncurkan terbaru VMSS bernama VMSS001 yang dimiliki oleh grup sumber daya bernama Group001.
+Perintah ini memperlihatkan status pemutakhiran VMSS terbaru yang bernama VMSS001 yang termasuk dalam grup sumber daya bernama Group001.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

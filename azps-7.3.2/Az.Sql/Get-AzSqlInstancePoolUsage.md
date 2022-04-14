@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstancePoolUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstancePoolUsage.md
-ms.openlocfilehash: ff767984fa24c4629346234b811004290e713dd7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0a945e5702ba11c4f54ede9978e9c2c0f983b760
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140570370"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142208125"
 ---
 # Get-AzSqlInstancePoolUsage
 
 ## SYNOPSIS
-Mengembalikan informasi tentang penggunaan SQL Azure instance.
+Mengembalikan informasi tentang penggunaan kumpulan instans Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlinstancepoolusage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ Get-AzSqlInstancePoolUsage [-ResourceId] <String> [-ExpandChildren] [-DefaultPro
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlInstancePoolUsage** mengembalikan informasi penggunaan SQL Instance Azure.
+Cmdlet **Get-AzSqlInstancePoolUsage** mengembalikan informasi penggunaan kumpulan Instans Azure SQL.
 
 ## EXAMPLES
 
-### Contoh 1 : Mendapatkan penggunaan azure SQL instance
+### Contoh 1 : Mendapatkan penggunaan kumpulan Instans Azure SQL
 ```powershell
 PS C:\> Get-AzSqlInstancePoolUsage -ResourceGroupName resourcegroup01 -Name instancepool0
 
@@ -71,9 +74,9 @@ Name           : Database utilization
 Type           : Microsoft.Sql/instancePools/usages
 ```
 
-Mendapatkan penggunaan instancepool0 Azure SQL Instance.
+Mendapatkan penggunaan untuk instancepool0 kumpulan instans Azure SQL.
 
-### Contoh 2: Mendapatkan penggunaan azure SQL instance menggunakan objek instance pool
+### Contoh 2: Mendapatkan penggunaan kumpulan instans Azure SQL menggunakan objek kumpulan instans
 ```powershell
 PS C:\> $instancePool = Get-AzSqlInstancePool -ResourceGroupName resourcegroup01 -Name instancepool0
 PS C:\> Get-AzSqlInstancePoolUsage -InstancePool $instancePool
@@ -103,9 +106,9 @@ Name           : Database utilization
 Type           : Microsoft.Sql/instancePools/usages
 ```
 
-Mendapatkan penggunaan instancepool0 Azure SQL Instance menggunakan objek instance pool.
+Mendapatkan penggunaan untuk instancepool0 kumpulan instans Azure SQL menggunakan objek kumpulan instans.
 
-### Contoh 3: Mendapatkan penggunaan azure SQL instance menggunakan id sumber daya pool instans
+### Contoh 3: Mendapatkan penggunaan kumpulan instans Azure SQL menggunakan id sumber daya kumpulan instans
 ```powershell
 PS C:\> Get-AzSqlInstancePoolUsage -ResourceId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Sql/instancePools/instancePool0"
 
@@ -134,9 +137,9 @@ Name           : Database utilization
 Type           : Microsoft.Sql/instancePools/usages
 ```
 
-Mendapatkan penggunaan untuk instancepool0 SQL Azure SQL menggunakan pengidentifikasi sumber daya pool instans.
+Mendapatkan penggunaan untuk instancepool0 kumpulan instans Azure SQL menggunakan pengidentifikasi sumber daya kumpulan instans.
 
-### Contoh 3: Mendapatkan penggunaan azure SQL Instance dengan uraian penggunaan instans terkelola dalam pool.
+### Contoh 3: Mendapatkan penggunaan kumpulan instans Azure SQL dengan rincian penggunaan instans terkelola dalam kumpulan.
 ```powershell
 PS C:\> Get-AzSqlInstancePoolUsage -ResourceGroupName resourcegroup01 -Name instancepool0 -ExpandChildren
 
@@ -189,7 +192,7 @@ Name           : Database utilization
 Type           : Microsoft.Sql/instancePools/managedInstances/usages
 ```
 
-Mendapatkan penggunaan instancepool0 SQL Azure SQL bersama dengan penggunaan instans terkelola dalam instancepool0.
+Mendapatkan penggunaan untuk instancepool0 kumpulan instans Azure SQL beserta penggunaan instans terkelola dalam instancepool0.
 
 ## PARAMETERS
 
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpandChildren
-Bendera menunjukkan apakah akan memperluas penggunaan instance pool dengan penggunaan anak-anak.
+Benderai yang mengindikasikan apakah akan memperluas penggunaan kumpulan instans ini dengan penggunaan anak-anaknya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -224,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstancePool
-Objek pool contoh induk.
+Objek kumpulan instans induk.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Instance_Pools.Model.AzureSqlInstancePoolModel
@@ -239,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama pool instance terkelola.
+Nama kumpulan instans terkelola.
 
 ```yaml
 Type: System.String
@@ -284,7 +287,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

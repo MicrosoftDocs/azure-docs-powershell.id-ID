@@ -6,80 +6,80 @@ Help Version: 4.0.0.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/TrafficManager/Commands.TrafficManager2/help/AzureRM.TrafficManager.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/TrafficManager/Commands.TrafficManager2/help/AzureRM.TrafficManager.md
-ms.openlocfilehash: facb628e60a0b368eae20e2460c48183c18ab7b2c023d937ffc7962ac2894c14
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: d8a18597a74e26ba8df6e04f2684137aea9295b6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132418873"
 ---
-# Modul AzureRM.TrafficManager
+# AzureRM.TrafficManager Module
 ## Deskripsi
-Topik ini mencantumkan topik bantuan untuk Azure Traffic Manager cmdlet. Cmdlet menggunakan Manajer Sumber Daya Azure.
+Topik ini mencantumkan topik bantuan untuk cmdlet Azure Traffic Manager. Cmdlet menggunakan Azure Resource Manager.
 
 ## Cmdlet AzureRM.TrafficManager
 ### [Add-AzureRmTrafficManagerCustomHeaderToEndpoint](Add-AzureRmTrafficManagerCustomHeaderToEndpoint.md)
-Menambahkan informasi header kustom ke objek titik Traffic Manager titik akhir lokal.
+Menambahkan informasi header kustom ke objek titik akhir Traffic Manager lokal.
 
 ### [Add-AzureRmTrafficManagerCustomHeaderToProfile](Add-AzureRmTrafficManagerCustomHeaderToProfile.md)
-Menambahkan informasi header kustom ke objek Traffic Manager profil kustom.
+Menambahkan informasi header kustom ke objek profil Traffic Manager lokal.
 
 ### [Add-AzureRmTrafficManagerEndpointConfig](Add-AzureRmTrafficManagerEndpointConfig.md)
-Menambahkan titik akhir ke objek Traffic Manager profil lokal.
+Menambahkan titik akhir ke objek profil Traffic Manager lokal.
 
 ### [Add-AzureRmTrafficManagerExpectedStatusCodeRange](Add-AzureRmTrafficManagerExpectedStatusCodeRange.md)
-Menambahkan rentang kode status yang diharapkan ke objek Traffic Manager profil lokal.
+Menambahkan rentang kode status yang diharapkan ke objek profil Traffic Manager lokal.
 
 ### [Add-AzureRmTrafficManagerIpAddressRange](Add-AzureRmTrafficManagerIpAddressRange.md)
-Menambahkan rentang alamat atau subnet ke objek titik Traffic Manager titik akhir lokal.
+Menambahkan rentang alamat atau subnet ke objek titik akhir Traffic Manager lokal.
 
-### [Disable-AzureRmTrafficManagerEndpoint](Disable-AzureRmTrafficManagerEndpoint.md)
-Menonaktifkan titik akhir di Traffic Manager terkait.
+### [Menonaktifkan-AzureRmTrafficManagerEndpoint](Disable-AzureRmTrafficManagerEndpoint.md)
+Menonaktifkan titik akhir di profil Traffic Manager.
 
-### [Disable-AzureRmTrafficManagerProfile](Disable-AzureRmTrafficManagerProfile.md)
+### [Menonaktifkan-AzureRmTrafficManagerProfile](Disable-AzureRmTrafficManagerProfile.md)
 Menonaktifkan profil Traffic Manager.
 
 ### [Enable-AzureRmTrafficManagerEndpoint](Enable-AzureRmTrafficManagerEndpoint.md)
-Mengaktifkan titik akhir dalam Traffic Manager profil.
+Mengaktifkan titik akhir di profil Traffic Manager.
 
 ### [Enable-AzureRmTrafficManagerProfile](Enable-AzureRmTrafficManagerProfile.md)
 Mengaktifkan profil Traffic Manager.
 
 ### [Get-AzureRmTrafficManagerEndpoint](Get-AzureRmTrafficManagerEndpoint.md)
-Mendapatkan titik akhir untuk Traffic Manager profil.
+Mendapatkan titik akhir untuk profil Traffic Manager.
 
 ### [Get-AzureRmTrafficManagerProfile](Get-AzureRmTrafficManagerProfile.md)
-Mendapatkan profil Traffic Manager Anda.
+Mendapatkan profil Traffic Manager.
 
 ### [New-AzureRmTrafficManagerEndpoint](New-AzureRmTrafficManagerEndpoint.md)
-Membuat titik akhir di Traffic Manager profil.
+Membuat titik akhir di profil Traffic Manager.
 
 ### [New-AzureRmTrafficManagerProfile](New-AzureRmTrafficManagerProfile.md)
-Membuat profil Traffic Manager anda.
+Membuat profil Traffic Manager.
 
 ### [Remove-AzureRmTrafficManagerCustomHeaderFromEndpoint](Remove-AzureRmTrafficManagerCustomHeaderFromEndpoint.md)
-Menghapus informasi header kustom dari objek titik Traffic Manager titik akhir lokal.
+Menghapus informasi header kustom dari objek titik akhir Traffic Manager lokal.
 
 ### [Remove-AzureRmTrafficManagerCustomHeaderFromProfile](Remove-AzureRmTrafficManagerCustomHeaderFromProfile.md)
-Menghapus informasi header kustom dari objek Traffic Manager profil kustom.
+Menghapus informasi header kustom dari objek profil Traffic Manager lokal.
 
-### [Remove-AzureRmTrafficManagerEndpoint](Remove-AzureRmTrafficManagerEndpoint.md)
+### [Hapus-AzureRmTrafficManagerEndpoint](Remove-AzureRmTrafficManagerEndpoint.md)
 Menghapus titik akhir dari Traffic Manager.
 
-### [Remove-AzureRmTrafficManagerEndpointConfig](Remove-AzureRmTrafficManagerEndpointConfig.md)
-Menghapus titik akhir dari objek Traffic Manager profil lokal.
+### [Hapus-AzureRmTrafficManagerEndpointConfig](Remove-AzureRmTrafficManagerEndpointConfig.md)
+Menghapus titik akhir dari objek profil Traffic Manager lokal.
 
-### [Remove-AzureRmTrafficManagerExpectedStatusCodeRange](Remove-AzureRmTrafficManagerExpectedStatusCodeRange.md)
-Menghapus rentang kode status yang diharapkan dari objek Traffic Manager profil mereka.
+### [Hapus-AzureRmTrafficManagerExpectedStatusCodeRange](Remove-AzureRmTrafficManagerExpectedStatusCodeRange.md)
+Menghapus rentang kode status yang diharapkan dari objek profil Traffic Manager lokal.
 
-### [Remove-AzureRmTrafficManagerIpAddressRange](Remove-AzureRmTrafficManagerIpAddressRange.md)
-Menghapus rentang alamat atau subnet dari grup Traffic Manager titik akhir.
+### [Hapus-AzureRmTrafficManagerIpAddressRange](Remove-AzureRmTrafficManagerIpAddressRange.md)
+Menghapus rentang alamat atau subnet dari objek titik akhir Traffic Manager lokal.
 
-### [Remove-AzureRmTrafficManagerProfile](Remove-AzureRmTrafficManagerProfile.md)
+### [Hapus-AzureRmTrafficManagerProfile](Remove-AzureRmTrafficManagerProfile.md)
 Menghapus profil Traffic Manager.
 
 ### [Set-AzureRmTrafficManagerEndpoint](Set-AzureRmTrafficManagerEndpoint.md)
-Memperbarui titik Traffic Manager akhir.
+Memperbarui titik akhir Traffic Manager.
 
 ### [Set-AzureRmTrafficManagerProfile](Set-AzureRmTrafficManagerProfile.md)
 Memperbarui profil Traffic Manager.

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMCustomScriptExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMCustomScriptExtension.md
 ms.openlocfilehash: 8097c4ed1f65e718b5dfe10ec90f47746802249d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140142711"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142089429"
 ---
 # Get-AzVMCustomScriptExtension
 
@@ -19,7 +19,7 @@ ms.locfileid: "140142711"
 Mendapatkan informasi tentang ekstensi skrip kustom.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/get-azvmcustomscriptextension) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmcustomscriptextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Get-AzVMCustomScriptExtension [-ResourceGroupName] <String> [-VMName] <String> [
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVMCustomScriptExtension** mendapatkan informasi tentang skrip kustom Ekstensi Mesin Virtual pada komputer virtual.
+Cmdlet **Get-AzVMCustomScriptExtension** mendapatkan informasi tentang skrip kustom Ekstensi Mesin Virtual pada mesin virtual.
 
 ## EXAMPLES
 
@@ -38,19 +38,19 @@ Cmdlet **Get-AzVMCustomScriptExtension** mendapatkan informasi tentang skrip kus
 PS C:\> $VMCustomScriptExtension = Get-AzVMCustomScriptExtension -ResourceGroupName "ResourceGroup11" -VMName "VirtualMachine07" -Name "ContosoCustomScript"
 ```
 
-Perintah ini akan mendapatkan ekstensi skrip kustom bernama ContosoCustomScript untuk komputer virtual bernama VirtualMachine07.
+Perintah ini mendapatkan ekstensi skrip kustom bernama ContosoCustomScript untuk mesin virtual bernama VirtualMachine07.
 
-### Contoh 2: Mendapatkan tampilan contoh ekstensi skrip kustom
+### Contoh 2: Mendapatkan tampilan instans ekstensi skrip kustom
 ```
 PS C:\> $VMCustomScriptExtension = Get-AzVMCustomScriptExtension -ResourceGroupName "ResourceGroup11" -VMName "VirtualMachine07" -Name "ContosoCustomScript" -Status
 ```
 
-Perintah ini mendapatkan tampilan contoh ekstensi skrip kustom yang bernama ContosoCustomScript untuk mesin virtual bernama VirtualMachine07.
+Perintah ini mendapatkan tampilan instans ekstensi skrip kustom bernama ContosoCustomScript untuk mesin virtual bernama VirtualMachine07.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama ekstensi skrip kustom tentang bagaimana cmdlet ini mendapatkan informasi.
+Menentukan nama ekstensi skrip kustom tempat cmdlet ini mendapatkan informasi.
 
 ```yaml
 Type: System.String
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: System.String
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Mengindikasikan bahwa cmdlet ini mendapatkan tampilan contoh ekstensi skrip kustom.
+Menunjukkan bahwa cmdlet ini mendapatkan tampilan instans ekstensi skrip kustom.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual yang akan mendapatkan ekstensi skrip kustom oleh cmdlet ini.
+Menentukan nama mesin virtual di mana cmdlet ini mendapatkan ekstensi skrip kustom.
 
 ```yaml
 Type: System.String
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,46 +6,46 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Disconnect-AzWvdUserSession.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Disconnect-AzWvdUserSession.md
 ms.openlocfilehash: 00d23b97541bb6d4e1b140434887ae6cf662dd77
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140107127"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142051859"
 ---
 # Disconnect-AzWvdUserSession
 
 ## SYNOPSIS
-Memutuskan koneksi userSession.
+Putuskan sambungan userSession.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.desktopvirtualization/disconnect-azwvdusersession) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/disconnect-azwvdusersession) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Putuskan (Default)
+### Putuskan sambungan (Default)
 ```
 Disconnect-AzWvdUserSession -HostPoolName <String> -Id <String> -ResourceGroupName <String>
  -SessionHostName <String> [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-PassThru] [-Confirm]
  [-WhatIf] [<CommonParameters>]
 ```
 
-### DisconnectViaIdentity
+### Putuskan KoneksiIdentitas
 ```
 Disconnect-AzWvdUserSession -InputObject <IDesktopVirtualizationIdentity> [-DefaultProfile <PSObject>]
  [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Memutuskan koneksi userSession.
+Putuskan sambungan userSession.
 
 ## EXAMPLES
 
-### Contoh 1: Putuskan koneksi Windows UserSession Desktop Virtual menurut nama
+### Contoh 1: Putuskan sambungan Windows UserSession Desktop Virtual menurut nama
 ```powershell
 PS C:\> Disconnect-AzWvdUserSession -ResourceGroupName ResourceGroupName -HostPoolName HostPoolName -SessionHostName SessionHostName -Id 2
 ```
 
-Perintah ini memutuskan koneksi Windows UserSession Desktop Virtual di Session Host.
+Perintah ini memutuskan sambungan Windows UserSession Desktop Virtual dalam Host Sesi.
 
 ## PARAMETERS
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Nama sesi pengguna dalam sesi host yang ditentukan
+Nama sesi pengguna dalam host sesi yang ditentukan
 
 ```yaml
 Type: System.String
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IDesktopVirtualizationIdentity
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -SessionHostName
-Nama tuan rumah sesi dalam host pool yang ditentukan
+Nama host sesi dalam kumpulan host yang ditentukan
 
 ```yaml
 Type: System.String
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -223,16 +223,16 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IDesktopVirtualizationIdentity>: Parameter Identitas
   - `[ApplicationGroupName <String>]`: Nama grup aplikasi
-  - `[ApplicationName <String>]`: Nama aplikasi di dalam grup aplikasi yang ditentukan
+  - `[ApplicationName <String>]`: Nama aplikasi dalam grup aplikasi yang ditentukan
   - `[DesktopName <String>]`: Nama desktop dalam grup desktop yang ditentukan
-  - `[HostPoolName <String>]`: Nama host pool dalam grup sumber daya yang ditentukan
+  - `[HostPoolName <String>]`: Nama kumpulan host dalam grup sumber daya yang ditentukan
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[MsixPackageFullName <String>]`: Nama lengkap paket versi tertentu dari paket MSIX di dalam hostpool tertentu
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
-  - `[ScalingPlanName <String>]`: Nama rencana penskalaan.
-  - `[SessionHostName <String>]`: Nama tuan rumah sesi dalam host pool yang ditentukan
+  - `[MsixPackageFullName <String>]`: Versi paket tertentu nama lengkap paket MSIX dalam hostpool tertentu
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ScalingPlanName <String>]`: Nama paket penskalaan.
+  - `[SessionHostName <String>]`: Nama host sesi dalam kumpulan host yang ditentukan
   - `[SubscriptionId <String>]`: ID langganan target.
-  - `[UserSessionId <String>]`: Nama sesi pengguna dalam sesi host yang ditentukan
+  - `[UserSessionId <String>]`: Nama sesi pengguna dalam host sesi yang ditentukan
   - `[WorkspaceName <String>]`: Nama ruang kerja
 
 ## RELATED LINKS

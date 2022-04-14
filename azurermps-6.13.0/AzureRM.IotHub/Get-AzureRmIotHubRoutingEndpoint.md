@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.iothu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/IotHub/Commands.IotHub/help/Get-AzureRmIotHubRoutingEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/IotHub/Commands.IotHub/help/Get-AzureRmIotHubRoutingEndpoint.md
-ms.openlocfilehash: ed18639ced14e0af20087e87af19da0fc69426209c0a417f1fe1818b95e844cf
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 2aa49f01b16547987604a7ee978018596c7d9647
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140864396"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142140812"
 ---
 # Get-AzureRmIotHubRoutingEndpoint
 
@@ -41,7 +41,7 @@ Get-AzureRmIotHubRoutingEndpoint [-ResourceId] <String> [-EndpointType <PSEndpoi
 ```
 
 ## DESCRIPTION
-Dapatkan informasi tentang titik akhir.
+Dapatkan informasi di titik akhir.
 
 ## EXAMPLES
 
@@ -56,7 +56,7 @@ E2   EventHub               resourcegroup1/event2
 S1   AzureStorageContainer  mystorage1/container
 ```
 
-Dapatkan semua titik akhir dari "myiothub" IoT Hub.
+Dapatkan semua titik akhir dari IoT Hub "myiothub".
 
 ### Contoh 2
 ```
@@ -68,7 +68,7 @@ resourcegroup1    91d12343-a3de-345d-b2ea-135792468abc E1
 resourcegroup1    91d12343-a3de-345d-b2ea-135792468abc E2
 ```
 
-Dapatkan semua titik akhir tipe EventHub dari "myiothub" IoT Hub. 
+Dapatkan semua titik akhir tipe EventHub dari IoT Hub "myiothub". 
 
 ### Contoh 3
 ```
@@ -80,7 +80,7 @@ EndpointName      : E1
 ConnectionString  : Endpoint=sb://myeventhub1.servicebus.windows.net:5671/;SharedAccessKeyName=iothubroutes_myeventhub1;SharedAccessKey=****;EntityPath=event1
 ```
 
-Dapatkan semua titik akhir tipe EventHub dari "myiothub" IoT Hub.
+Dapatkan semua titik akhir tipe EventHub dari IoT Hub "myiothub".
 
 ### Contoh 4
 ```
@@ -92,7 +92,7 @@ EndpointName      : E1
 ConnectionString  : Endpoint=sb://myeventhub1.servicebus.windows.net:5671/;SharedAccessKeyName=iothubroutes_myeventhub1;SharedAccessKey=****;EntityPath=event1
 ```
 
-Dapatkan informasi titik akhir dari Hub IoT "myiothub".
+Dapatkan informasi titik akhir dari IoT Hub "myiothub".
 
 ## PARAMETERS
 
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -217,7 +217,7 @@ System.Collections.Generic.List1`1[[Microsoft.Azure.Commands.Management.IotHub.M
 Microsoft.Azure.Commands.Management.IotHub.Models.PSRoutingServiceBusQueueEndpoint
 System.Collections.Generic.List`[[Microsoft.Azure.Commands.Management.IotHub.Models.PSRoutingServiceBusQueueEndpointProperties, Microsoft.Azure.Commands.IotHub, Version=3.1.3.0, Culture=neutral, PublicKeyToken=null]] Microsoft.Azure.Commands.Management.IotHub.Models.PSRoutingServiceBusTopicEndpoint System.Collections.Generic.List1`1[[Microsoft.Azure.Commands.Management.IotHub.Models.PSRoutingServiceBusTopicEndpointProperties, Microsoft.Azure.Commands.IotHub, Version=3.1.3.0, Culture=neutral, PublicKeyToken=null]]
 Microsoft.Azure.Commands.Management.IotHub.Models.PSRoutingStorageContainerEndpoint
-System.Collections.Generic.List`[[Microsoft.Azure.Commands.Management.IotHub.Models.PSRoutingStorageContainerProperties, Microsoft.Azure.Commands.IotHub, Version=3.1.3.0, Culture=neutral, PublicKeyToken=null]] System.Collections.Generic.List'1[Microsoft.Azure.Commands.Management.IotHub.Models.PSRoutingCustomEndpoint, Microsoft.Azure.Commands.IotHub, Version=3.1.3.0, Culture=neutral, PublicKeyToken=null]]
+System.Collections.Generic.List`[[Microsoft.Azure.Commands.Management.IotHub.Models.PSRoutingStorageContainerProperties, Microsoft.Azure.Commands.IotHub, Version=3.1.3.0, Culture=netral, PublicKeyToken=null]] System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Management.IotHub.Models.PSRoutingCustomEndpoint, Microsoft.Azure.Commands.IotHub, Version=3.1.3.0, Culture=netral, PublicKeyToken=null]]
 
 ## CATATAN
 

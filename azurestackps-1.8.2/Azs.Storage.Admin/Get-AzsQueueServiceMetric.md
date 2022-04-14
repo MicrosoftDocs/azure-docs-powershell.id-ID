@@ -4,11 +4,11 @@ Module Name: Azs.Storage.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: e2776c768f49dabdea8483ff601f129e80bfc2dc
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "132415529"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141878828"
 ---
 # Get-AzsQueueServiceMetric
 
@@ -37,7 +37,7 @@ Dapatkan daftar metrik untuk layanan antrean.
 ## PARAMETERS
 
 ### -FarmName
-Id Farm.
+Id Pertanian.
 
 ```yaml
 Type: String
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

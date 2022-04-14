@@ -6,20 +6,20 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/WindowsIotServices/help/Update-AzWindowsIotServicesDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/WindowsIotServices/help/Update-AzWindowsIotServicesDevice.md
 ms.openlocfilehash: e062aaa969e3c8d8550996a9b64ca55299a2ece0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140128077"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142116467"
 ---
 # Update-AzWindowsIotServicesDevice
 
 ## SYNOPSIS
-Memperbarui metadata layanan Windows IoT Device.
-Pola biasa untuk mengubah properti adalah mengambil Windows metadata Layanan Perangkat IoT dan metadata keamanan, lalu menggabungkannya dengan nilai yang dimodifikasi dalam badan baru untuk memperbarui Windows IoT Device Service.
+Memperbarui metadata Layanan Perangkat IoT Windows.
+Pola yang biasa untuk mengubah properti adalah mengambil metadata layanan perangkat IoT Windows dan metadata keamanan, lalu menggabungkannya dengan nilai yang dimodifikasi dalam isi baru untuk memperbarui Layanan Perangkat IoT Windows.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.windowsiotservices/update-azwindowsiotservicesdevice) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.windowsiotservices/update-azwindowsiotservicesdevice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,12 +40,12 @@ Update-AzWindowsIotServicesDevice -InputObject <IWindowsIotServicesIdentity> [-I
 ```
 
 ## DESCRIPTION
-Memperbarui metadata layanan Windows IoT Device.
-Pola biasa untuk mengubah properti adalah mengambil Windows metadata Layanan Perangkat IoT dan metadata keamanan, lalu menggabungkannya dengan nilai yang dimodifikasi dalam badan baru untuk memperbarui Windows IoT Device Service.
+Memperbarui metadata Layanan Perangkat IoT Windows.
+Pola yang biasa untuk mengubah properti adalah mengambil metadata layanan perangkat IoT Windows dan metadata keamanan, lalu menggabungkannya dengan nilai yang dimodifikasi dalam isi baru untuk memperbarui Layanan Perangkat IoT Windows.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui Windows IoT berdasarkan nama
+### Contoh 1: Memperbarui layanan IoT Windows menurut nama
 ```powershell
 PS C:\> Update-AzWindowsIotServicesDevice -Name wsi-t03 -ResourceGroupName azure-rg-test -Quantity 10
 
@@ -54,9 +54,9 @@ Location Name    Type                                Etag
 eastus   wsi-t03 Microsoft.WindowsIoT/DeviceServices "5d006a5c-0000-0700-0000-5faa46760000"
 ```
 
-Perintah ini memperbarui Windows IoT berdasarkan namanya.
+Perintah ini memperbarui layanan IoT Windows menurut nama.
 
-### Contoh 2: Memperbarui Windows IoT berdasarkan pipeline
+### Contoh 2: Memperbarui layanan IoT Windows menurut saluran
 ```powershell
 PS C:\> Get-AzWindowsIotServicesDevice -Name wsi-t03 -ResourceGroupName azure-rg-test | Update-AzWindowsIotServicesDevice-Quantity 100 -Tag @{'oper'='update'}
 
@@ -65,12 +65,12 @@ Location Name    Type                                Etag
 West US  wsi-t01 Microsoft.WindowsIoT/DeviceServices "5d005f5f-0000-0700-0000-5faa46ae0000"
 ```
 
-Perintah ini memperbarui Windows IoT berdasarkan pipeline.
+Perintah ini memperbarui layanan IoT Windows menurut saluran.
 
 ## PARAMETERS
 
 ### -AdminDomainName
-Windows domain OEM AAD IoT Device Service
+Windows IoT Device Service OEM AAD domain
 
 ```yaml
 Type: System.String
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -BillingDomainName
-Windows domain layanan perangkat IoT ODM AAD
+Windows domain AAD ODM Layanan Perangkat IoT
 
 ```yaml
 Type: System.String
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 
 ### -Etag
 Bidang Etag *tidak* diperlukan.
-Jika disediakan di badan respons, judul juga harus disediakan sebagai header per konvensi ETag normal.
+Jika disediakan dalam isi respons, itu juga harus disediakan sebagai header per konvensi ETag normal.
 
 ```yaml
 Type: System.String
@@ -131,9 +131,9 @@ Accept wildcard characters: False
 ```
 
 ### -IfMatch
-ETag layanan Windows IoT Device.
-Jangan tentukan untuk membuat informasi baru Windows IoT Device.
-Diperlukan untuk memperbarui data yang Windows IoT Device Service.
+ETag layanan perangkat IoT Windows.
+Jangan tentukan untuk membuat Layanan Perangkat IoT Windows baru.
+Diperlukan untuk memperbarui Layanan Perangkat IoT Windows yang sudah ada.
 
 ```yaml
 Type: System.String
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.WindowsIotServices.Models.IWindowsIotServicesIdentity
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama layanan Windows IoT Device.
+Nama Layanan Perangkat IoT Windows.
 
 ```yaml
 Type: System.String
@@ -192,8 +192,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Note
-Windows Catatan Layanan Perangkat IoT.
+### -Catatan
+Windows catatan Layanan Perangkat IoT.
 
 ```yaml
 Type: System.String
@@ -207,8 +207,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Jumlah
-Windows alokasi perangkat IoT Device Service,
+### -Kuantitas
+Windows alokasi perangkat Layanan Perangkat IoT,
 
 ```yaml
 Type: System.Int64
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi data Windows IoT Device.
+Nama grup sumber daya yang berisi Windows Layanan Perangkat IoT.
 
 ```yaml
 Type: System.String
@@ -268,7 +268,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -284,7 +284,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -299,7 +299,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -319,9 +319,9 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IWindowsIotServicesIdentity>: Parameter Identitas
-  - `[DeviceName <String>]`: Nama layanan Windows IoT Device.
+  - `[DeviceName <String>]`: Nama Layanan Perangkat IoT Windows.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi data Windows IoT Device.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi Windows Layanan Perangkat IoT.
   - `[SubscriptionId <String>]`: Pengidentifikasi langganan.
 
 ## RELATED LINKS

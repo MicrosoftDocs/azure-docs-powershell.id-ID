@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Set-AzDeploymentManagerService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Set-AzDeploymentManagerService.md
 ms.openlocfilehash: 6420d5eab0b1e6049127d0174a7af5d424bf32ef
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140483115"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142051949"
 ---
 # Set-AzDeploymentManagerService
 
@@ -18,7 +18,7 @@ ms.locfileid: "140483115"
 Memperbarui layanan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.deploymentmanager/set-azdeploymentmanagerservice) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.deploymentmanager/set-azdeploymentmanagerservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Set-AzDeploymentManagerService [-InputObject] <PSServiceResource> [-DefaultProfi
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzDeploymentManagerService** memperbarui layanan dengan objek layanan tertentu.
+Cmdlet **Set-AzDeploymentManagerService** memperbarui layanan dengan objek layanan yang ditentukan.
 Cmdlet mengembalikan objek layanan yang diperbarui.
 
 ## EXAMPLES
@@ -38,8 +38,8 @@ Cmdlet mengembalikan objek layanan yang diperbarui.
 PS C:\> Set-AzDeploymentManagerService -InputObject $serviceObject
 ```
 
-Perintah ini memperbarui layanan dengan nama, nama topologi layanan, dan ResourceGroup sesuai dengan properti Nama, ServiceTopologyName dan ResourceGroupName $serviceObject, secara berurutan.
-Layanan akan diperbarui menjadi properti yang diatur dalam $serviceObject.
+Perintah ini memperbarui layanan dengan nama, nama topologi layanan, dan ResourceGroup yang masing-masing cocok dengan properti Name, ServiceTopologyName dan ResourceGroupName $serviceObject.
+Layanan akan diperbarui ke properti yang diatur dalam $serviceObject.
 
 ## PARAMETERS
 
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

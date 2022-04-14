@@ -3,17 +3,17 @@ external help file: Azs.Compute.Admin-help.xml
 Module Name: Azs.Compute.Admin
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: ab11c7f11a33de3b319672178cc5b0f33a68b3f15bedf03403729651b6883e17
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: d39721f1a9ed243242bd08053f9a22f0ed53df30
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417015"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141879458"
 ---
 # Add-AzsPlatformImage
 
 ## SYNOPSIS
-Menambahkan gambar platform mesin virtual dari konfigurasi gambar tertentu.
+Tambahkan gambar platform mesin virtual dari konfigurasi gambar tertentu.
 
 ## SYNTAX
 
@@ -53,7 +53,7 @@ Accept wildcard characters: False
 ```
 
 ### -BillingPartNumber
-Nomor komponen digunakan untuk tagihan biaya perangkat lunak.
+Nomor komponen digunakan untuk menagih biaya perangkat lunak.
 
 ```yaml
 Type: String
@@ -82,8 +82,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: SwitchParameter
@@ -112,7 +112,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Offer
+### -Penawaran
 Nama penawaran.
 
 ```yaml
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -OsType
-Jenis sistem operasi.
+Tipe sistem operasi.
 
 ```yaml
 Type: Object
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -OsUri
-Lokasi disk.
+Lokasi diska.
 
 ```yaml
 Type: String
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

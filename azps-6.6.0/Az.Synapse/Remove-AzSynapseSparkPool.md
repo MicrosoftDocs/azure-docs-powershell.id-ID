@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSparkPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSparkPool.md
 ms.openlocfilehash: a3af7189543f01ea1580dffdb403ddea7d9ed0a0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140498505"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142117817"
 ---
 # Remove-AzSynapseSparkPool
 
 ## SYNOPSIS
-Menghapus pool Apache Spark dalam Azure Synapse Analytics.
+Menghapus kumpulan Apache Spark di Azure Synapse Analytics.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/remove-azsynapsesparkpool) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/remove-azsynapsesparkpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ Remove-AzSynapseSparkPool -ResourceId <String> [-PassThru] [-AsJob] [-Force]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzSynapseSparkPool** secara permanen menghapus pool Apache Spark dalam Azure Synapse Analytics.
+Cmdlet **Remove-AzSynapseSparkPool** secara permanen menghapus kumpulan Apache Spark di analitik Azure Synapse.
 
 ## EXAMPLES
 
@@ -56,7 +56,7 @@ Cmdlet **Remove-AzSynapseSparkPool** secara permanen menghapus pool Apache Spark
 PS C:\> Remove-AzSynapseSparkPool -WorkspaceName ContosoWorkspace -Name ContosoSparkPool
 ```
 
-Perintah ini menghapus sebuah pool Apache Spark dalam Azure Synapse Analytics.
+Perintah ini menghapus kumpulan Apache Spark di Analitik Azure Synapse.
 
 ### Contoh 2
 ```powershell
@@ -64,7 +64,7 @@ PS C:\> $pool = Get-AzSynapseSparkPool -WorkspaceName ContosoWorkspace -Name Con
 PS C:\> $pool | Remove-AzSynapseSparkPool
 ```
 
-Perintah ini menghapus sebuah pool Apache Spark dalam Azure Synapse Analytics through pipeline.
+Perintah ini menghapus kumpulan Apache Spark di Azure Synapse Analytics melalui pipeline.
 
 ### Contoh 3
 ```powershell
@@ -72,19 +72,19 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Remove-AzSynapseSparkPool -Name ContosoSparkPool
 ```
 
-Perintah ini menghapus sebuah pool Apache Spark dalam Azure Synapse Analytics through pipeline.
+Perintah ini menghapus kumpulan Apache Spark di Azure Synapse Analytics melalui pipeline.
 
 ### Contoh 4
 ```powershell
 PS C:\> Remove-AzSynapseSparkPool -ResourceId /subscriptions/21686af7-58ec-4f4d-9c68-f431f4db4edd/resourceGroups/ContosoResourceGroup/providers/Microsoft.Synapse/workspaces/ContosoWorkspace/bigDataPools/ContosoSparkPool
 ```
 
-Perintah ini menghapus kolam Apache Spark dalam Azure Synapse Analytics dengan ID sumber daya.
+Perintah ini menghapus kumpulan Apache Spark di analitik Azure Synapse dengan ID sumber daya.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -113,8 +113,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek input spark pool, biasanya melewati saluran.
+Objek input spark pool, biasanya melewati pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSparkPool
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama pool Grafik Apik Synapse.
+Nama kolam renang Synapse Spark.
 
 ```yaml
 Type: System.String
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Cmdlet ini tidak mengembalikan objek secara default. Jika sakelar ini ditentukan, maka true akan dikembalikan jika berhasil.
+Cmdlet ini tidak mengembalikan objek secara default. Jika sakelar ini ditentukan, sakelar akan mengembalikan true jika berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya dari pool Spark Synapse.
+Pengidentifikasi sumber daya kumpulan Synapse Spark.
 
 ```yaml
 Type: System.String
@@ -203,7 +203,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -250,7 +250,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -265,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

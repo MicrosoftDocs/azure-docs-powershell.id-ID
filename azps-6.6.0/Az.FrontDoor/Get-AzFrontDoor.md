@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Get-AzFrontDoor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Get-AzFrontDoor.md
 ms.openlocfilehash: ab7a578e0ee9e6ce3842a30c57305c1cde61f8ac
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139939543"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142050977"
 ---
 # Get-AzFrontDoor
 
@@ -18,7 +18,7 @@ ms.locfileid: "139939543"
 Dapatkan penyeimbang muat Pintu Depan
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.frontdoor/get-azfrontdoor) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/get-azfrontdoor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +28,11 @@ Get-AzFrontDoor [-ResourceGroupName <String>] [-Name <String>] [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzFrontDoorGet** mendapatkan semua Pintu Depan yang sudah ada di langganan saat ini yang sesuai dengan informasi yang disediakan.
+Cmdlet **Get-AzFrontDoorGet** mendapatkan semua Pintu Depan yang sudah ada dalam langganan saat ini yang cocok dengan informasi yang disediakan.
 
 ## EXAMPLES
 
-### Contoh 1: Get all FrontDoors in the current subscription.
+### Contoh 1: Dapatkan semua FrontDoors dalam langganan saat ini.
 ```powershell
 PS C:\> Get-AzFrontDoor
 
@@ -73,7 +73,7 @@ Type                  : Microsoft.Network/frontdoor1
 
 Dapatkan semua FrontDoors dalam langganan saat ini.
 
-### Contoh 2: Get all FrontDoors in resource group "rg1" di langganan saat ini.
+### Contoh 2: Dapatkan semua FrontDoors dalam grup sumber daya "rg1" dalam langganan saat ini.
 ```powershell
 PS C:\> Get-AzFrontDoor -ResourceGroupName "rg1"
 
@@ -112,9 +112,9 @@ Name                  : frontdoor1
 Type                  : Microsoft.Network/frontdoor1
 ```
 
-Dapatkan semua FrontDoors di grup sumber daya "rg1" dalam langganan saat ini.
+Dapatkan semua FrontDoors dalam grup sumber daya "rg1" dalam langganan saat ini.
 
-### Contoh 3: Get the FrontDoors in resource group "rg1" with name "frontDoor1" di langganan saat ini.
+### Contoh 3: Dapatkan FrontDoors dalam grup sumber daya "rg1" dengan nama "frontDoor1" dalam langganan saat ini.
 ```powershell
 PS C:\> Get-AzFrontDoor -ResourceGroupName "rg1" -Name "frontDoor1"
 
@@ -136,7 +136,7 @@ Name                  : frontdoor1
 Type                  : Microsoft.Network/frontdoor1
 ```
 
-Dapatkan FrontDoors di grup sumber daya "rg1" dengan nama "frontDoor1" di langganan saat ini.
+Dapatkan FrontDoors dalam grup sumber daya "rg1" dengan nama "frontDoor1" dalam langganan saat ini.
 
 ## PARAMETERS
 
@@ -186,11 +186,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -202,4 +202,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzFrontDoor](./New-AzFrontDoor.md)
  [Set-AzFrontDoor](./Set-AzFrontDoor.md)
- [Remove-azFrontDoor](./Remove-AzFrontDoor.md)
+ [Remove-AzFrontDoor](./Remove-AzFrontDoor.md)

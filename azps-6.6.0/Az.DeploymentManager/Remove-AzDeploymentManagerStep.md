@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Remove-AzDeploymentManagerStep.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Remove-AzDeploymentManagerStep.md
 ms.openlocfilehash: daf247b9fbe642582ada7e09336490e0384f53df
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140107199"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142051931"
 ---
 # Remove-AzDeploymentManagerStep
 
@@ -18,7 +18,7 @@ ms.locfileid: "140107199"
 Menghapus langkah.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.deploymentmanager/remove-azdeploymentmanagerstep) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.deploymentmanager/remove-azdeploymentmanagerstep) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,12 +41,12 @@ Remove-AzDeploymentManagerStep [-InputObject] <PSStepResource> [-PassThru]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzDeploymentManagerStep** menghapus sebuah langkah.
-Tentukan langkah berdasarkan namanya dan nama grup sumber daya. Alternatifnya, Anda bisa menyediakan objek Langkah atau ResourceId.
+Cmdlet **Remove-AzDeploymentManagerStep** menghapus langkah.
+Tentukan langkah menurut namanya dan nama grup sumber daya. Alternatifnya, Anda bisa menyediakan objek Langkah atau ResourceId.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus langkah
+### Contoh 1: Menghapus langkah
 ```powershell
 PS C:\> Remove-AzDeploymentManagerStep -ResourceGroupName ContosoResourceGroup -Name ContosoService1WaitStep
 ```
@@ -66,7 +66,7 @@ Perintah ini menghapus langkah bernama ContosoService1WaitStep di ContosoResourc
 PS C:\> Remove-AzDeploymentManagerStep -InputObject $stepObject
 ```
 
- Perintah ini menghapus langkah yang namanya dan Grup Sumber Dayanya sesuai dengan properti Nama dan ResourceGroupName $stepObject, secara berurutan.
+ Perintah ini menghapus langkah yang namanya dan ResourceGroup masing-masing cocok dengan properti Nama dan ResourceGroupName $stepObject.
 
 ## PARAMETERS
 
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{fill passThru Description}}
+{{Fill PassThru Description}}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

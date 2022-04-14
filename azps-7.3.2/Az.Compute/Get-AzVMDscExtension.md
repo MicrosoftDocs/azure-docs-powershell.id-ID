@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMDscExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMDscExtension.md
-ms.openlocfilehash: 64aafff4e74e70e76722b27c7e797b54e63e8a25
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 91333abf0af8adac68b76b5c32b5a6472b3ba63b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140572000"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141854366"
 ---
 # Get-AzVMDscExtension
 
 ## SYNOPSIS
-Dapatkan pengaturan ekstensi DSC di komputer virtual tertentu.
+Mendapatkan pengaturan ekstensi DSC pada mesin virtual tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmdscextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Get-AzVMDscExtension [-Status] [-VM <PSVirtualMachine>] [-DefaultProfile <IAzure
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVMDscExtension** mendapatkan pengaturan ekstensi Konfigurasi Status Diinginkan (DSC, Desired State Configuration) pada mesin virtual tertentu.
+Cmdlet **Get-AzVMDscExtension** mendapatkan pengaturan ekstensi Desired State Configuration (DSC) pada mesin virtual tertentu.
 
 ## EXAMPLES
 
@@ -42,12 +45,12 @@ Cmdlet **Get-AzVMDscExtension** mendapatkan pengaturan ekstensi Konfigurasi Stat
 Get-AzVMDscExtension -ResourceGroupName "ResourceGroup002" -VMName "VM07" -Name "DSC"
 ```
 
-Perintah ini mendapatkan pengaturan ekstensi yang bernama DSC pada komputer virtual bernama VM07.
+Perintah ini mendapatkan pengaturan ekstensi bernama DSC pada mesin virtual bernama VM07.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -63,8 +66,8 @@ Accept wildcard characters: False
 
 ### -Nama
 Menentukan nama sumber daya Azure Resource Manager yang mewakili ekstensi.
-Cmdlet Set-AzVMDscExtension mengatur nama ini menjadi Microsoft.Powershell.DSC, yang merupakan nilai yang sama untuk digunakan oleh **Get-AzVMDscExtension**.
-Tentukan parameter ini hanya jika Anda mengubah nama default dalam cmdlet **Set-AzVMDscExtension** atau menggunakan nama sumber daya lain di templat Manajer Sumber Daya.
+Cmdlet Set-AzVMDscExtension mengatur nama ini ke Microsoft.Powershell.DSC, yang merupakan nilai yang sama yang digunakan oleh **Get-AzVMDscExtension**.
+Tentukan parameter ini hanya jika Anda mengubah nama default dalam cmdlet **Set-AzVMDscExtension** atau menggunakan nama sumber daya yang berbeda dalam templat Resource Manager.
 
 ```yaml
 Type: System.String
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: System.String
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Mengindikasikan bahwa cmdlet ini mendapatkan tampilan contoh ekstensi DSC.
+Menunjukkan bahwa cmdlet ini mendapatkan tampilan instans ekstensi DSC.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan objek mesin virtual tempat ekstensi berada.
+Menentukan objek mesin maya tempat ekstensi diaktifkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual yang akan mendapatkan ekstensi DSC dari cmdlet ini.
+Menentukan nama mesin virtual di mana cmdlet ini mendapatkan ekstensi DSC.
 
 ```yaml
 Type: System.String
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

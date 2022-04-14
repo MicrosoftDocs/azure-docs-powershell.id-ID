@@ -3,17 +3,17 @@ external help file: Azs.InfrastructureInsights.Admin-help.xml
 Module Name: Azs.Infrastructureinsights.Admin
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: ad3ebf55b4718f77ec0c0fb3ecdd1b5401c9e48da05338df76b38653aab44efb
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 14885871139eaed1c901312b9540a90d385795e5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418742"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141878972"
 ---
 # Close-AzsAlert
 
 ## SYNOPSIS
-Menutup pemberitahuan tertentu.
+Menutup pemberitahuan yang diberikan.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Close-AzsAlert -ResourceId <String> [-Force] [-WhatIf] [-Confirm] [<CommonParame
 ```
 
 ## DESCRIPTION
-Menutup pemberitahuan tertentu.
+Menutup pemberitahuan yang diberikan.
 
 ## EXAMPLES
 
@@ -50,7 +50,7 @@ Tutup pemberitahuan menurut Nama.
 Get-AzsAlert -Name f2147f3d-42ac-4316-8cbc-f0f9c18888b0 | Close-AzsAlert
 ```
 
-Tutup peringatan melalui pemipaan.
+Tutup pemberitahuan melalui perpipaan.
 
 ## PARAMETERS
 
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya pemberitahuan tersebut.
+Nama grup sumber daya pemberitahuan.
 
 ```yaml
 Type: String
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Pemberitahuan yang dikembalikan dari Get-AzsAlert.
+Peringatan dikembalikan dari Get-AzsAlert.
 
 ```yaml
 Type: Alert
@@ -129,7 +129,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Alihkan parameter untuk tidak meminta konfirmasi.
 
 ```yaml
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

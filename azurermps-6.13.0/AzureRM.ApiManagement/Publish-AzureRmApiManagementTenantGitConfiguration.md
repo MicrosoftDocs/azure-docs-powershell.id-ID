@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Publish-AzureRmApiManagementTenantGitConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Publish-AzureRmApiManagementTenantGitConfiguration.md
 ms.openlocfilehash: 24c5bb33982d7bc4fb5209133022358a2dee5486
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425180"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142143960"
 ---
 # Publish-AzureRmApiManagementTenantGitConfiguration
 
@@ -30,7 +30,7 @@ Publish-AzureRmApiManagementTenantGitConfiguration -Context <PsApiManagementCont
 
 ## DESCRIPTION
 Cmdlet **Publish-AzureRmApiManagementTenantGitConfiguration** menerbitkan perubahan dari cabang Git ke database konfigurasi.
-Alternatifnya Anda bisa memvalidasi perubahan dalam cabang Git tanpa menerbitkan.
+Anda juga dapat memvalidasi perubahan dalam cabang Git tanpa menerbitkan.
 
 ## EXAMPLES
 
@@ -40,7 +40,7 @@ PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-De
 PS C:\>Publish-AzureRmApiManagementTenantGitConfiguration -Context $apimContext -Branch 'master' -PassThru
 ```
 
-Perintah ini menerbitkan perubahan dari cabang yang ditentukan ke database konfigurasi.
+Perintah ini menerbitkan perubahan dari cabang tertentu ke database konfigurasi.
 
 ### Contoh 2: Memvalidasi perubahan Git
 ```
@@ -48,13 +48,13 @@ PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-De
 PS C:\>Publish-AzureRmApiManagementTenantGitConfiguration -Context $apimContext -Branch 'master' -ValidateOnly -PassThru
 ```
 
-Perintah ini memvalidasi perubahan di cabang Git terhadap database konfigurasi.
+Perintah ini memvalidasi perubahan dalam cabang Git terhadap database konfigurasi.
 Artikel ini tidak menerbitkan perubahan.
 
 ## PARAMETERS
 
-### -Cabang
-Menentukan nama cabang Git yang menyebarkan cmdlet ini ke database konfigurasi.
+### -Branch
+Menentukan nama cabang Git tempat cmdlet ini menyebarkan konfigurasi ke database konfigurasi.
 
 ```yaml
 Type: System.String
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Menentukan objek **PsApiManagementContext.**
+Menentukan objek **PsApiManagementContext** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -98,8 +98,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Mengindikasikan bahwa cmdlet ini menghapus langganan untuk produk yang dihapus dalam pembaruan ini.
+### -Paksa
+Menunjukkan bahwa cmdlet ini menghapus langganan untuk produk yang dihapus dalam pembaruan ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan bahwa cmdlet ini mengembalikan objek **PsApiManagementOperationResult.**
+Menunjukkan bahwa cmdlet ini mengembalikan objek **PsApiManagementOperationResult** .
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 
 ### -ValidateOnly
 Menunjukkan bahwa cmdlet ini memvalidasi perubahan dalam cabang Git yang ditentukan.
-Database tidak diterbitkan ke database konfigurasi.
+Tidak diterbitkan ke database konfigurasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

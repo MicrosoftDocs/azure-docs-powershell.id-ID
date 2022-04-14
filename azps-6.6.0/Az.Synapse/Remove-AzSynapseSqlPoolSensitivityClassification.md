@@ -6,23 +6,23 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSqlPoolSensitivityClassification.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSqlPoolSensitivityClassification.md
 ms.openlocfilehash: d667a15317ff2dc82ee7f6f841a9defcc09e78f1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140064665"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142117727"
 ---
 # Remove-AzSynapseSqlPoolSensitivityClassification
 
 ## SYNOPSIS
-Menghapus tipe informasi dan label sensitivitas kolom dalam SQL sama.
+Menghapus tipe informasi dan label sensitivitas kolom dalam kumpulan SQL.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/remove-azsynapsesqlpoolsensitivityclassification) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/remove-azsynapsesqlpoolsensitivityclassification) untuk informasi terbaru.
 
 ## SYNTAX
 
-### ClassificationObjectParameterSet (Default)
+### KlasifikasiObjectParameterSet (Default)
 ```
 Remove-AzSynapseSqlPoolSensitivityClassification -ClassificationObject <SqlPoolSensitivityClassificationModel>
  [-PassThru] [-AsJob] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -43,21 +43,21 @@ Remove-AzSynapseSqlPoolSensitivityClassification -SqlPoolObject <PSSynapseSqlPoo
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzSynapseSqlPoolSensitivityClassification menghapus tipe informasi dan label sensitivitas kolom dalam SQL sama.
+Cmdlet Remove-AzSynapseSqlPoolSensitivityClassification menghapus tipe informasi dan label sensitivitas kolom dalam kumpulan SQL.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus tipe informasi dan label sensitivitas kolom di kotak masuk Azure Synapse SQL sama.
+### Contoh 1: Menghapus tipe informasi dan label sensitivitas kolom dalam kumpulan Azure Synapse SQL.
 ```powershell
 PS C:\> Remove-AzSynapseSqlPoolSensitivityClassification -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -SqlPoolName ContosoSqlPool -SchemaName schema -TableName table -ColumnName column
 ```
 
-### Contoh 2: Hapus tipe informasi saat ini dan label sensitivitas kolom di azure Synapse SQL menggunakan Piping.
+### Contoh 2: Hapus tipe informasi saat ini dan label sensitivitas kolom dalam kumpulan Azure Synapse SQL menggunakan Piping.
 ```powershell
 PS C:\> Get-AzSynapseSqlPoolSensitivityClassification -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -SqlPoolName ContosoSqlPool | Remove-AzSynapseSqlPoolSensitivityClassification
 ```
 
-### Contoh 3: Hapus tipe informasi dan label sensitivitas kolom dalam SQL Azure Synapse menggunakan Piping.
+### Contoh 3: Menghapus tipe informasi dan label sensitivitas kolom dalam kumpulan Azure Synapse SQL menggunakan Piping.
 ```powershell
 PS C:\> Get-AzSynapseSqlPool -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -Name ContosoSqlPool | Remove-AzSynapseSqlPoolSensitivityClassification -SchemaName schema -TableName table -ColumnName column
 ```
@@ -65,7 +65,7 @@ PS C:\> Get-AzSynapseSqlPool -ResourceGroupName ContosoResourceGroup -WorkspaceN
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClassificationObject
-Objek yang mewakili Klasifikasi Sensitivitas SQL Kolam Renang.
+Objek yang mewakili Klasifikasi Sensitivitas Kumpulan SQL.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.DataClassification.SqlPoolSensitivityClassificationModel
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 
 ### -PassThru
 Cmdlet ini tidak mengembalikan objek secara default.
-Jika sakelar ini ditentukan, maka true akan dikembalikan jika berhasil.
+Jika sakelar ini ditentukan, sakelar akan mengembalikan true jika berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlPoolName
-Nama SQL Tim.
+Nama Synapse SQL pool.
 
 ```yaml
 Type: System.String
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlPoolObject
-SQL input kolam renang, biasanya melewati saluran.
+SQL objek input pool, biasanya melewati pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSqlPool
@@ -215,7 +215,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -262,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

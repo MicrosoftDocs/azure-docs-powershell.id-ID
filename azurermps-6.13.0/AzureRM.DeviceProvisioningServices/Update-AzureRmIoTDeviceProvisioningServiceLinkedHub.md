@@ -5,17 +5,17 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DeviceProvisioningServices/Commands.DeviceProvisioningServices/help/Update-AzureRmIoTDeviceProvisioningServiceLinkedHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DeviceProvisioningServices/Commands.DeviceProvisioningServices/help/Update-AzureRmIoTDeviceProvisioningServiceLinkedHub.md
-ms.openlocfilehash: c8182d1a20be0114afdb48462c9bdd1ad23dd0580d0a0f27150fa3c2322b1765
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: b3cd05b286ddfef69228b8aae12e222e5fffd4d0
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140854896"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142141850"
 ---
 # Update-AzureRmIoTDeviceProvisioningServiceLinkedHub
 
 ## SYNOPSIS
-Memperbarui hub IoT tertaut dalam layanan penyediaan perangkat Azure IoT Hub.
+Perbarui hub IoT yang ditautkan dalam layanan penyediaan perangkat Azure IoT Hub.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -43,7 +43,7 @@ Update-AzureRmIoTDeviceProvisioningServiceLinkedHub [-ResourceId] <String> [-Lin
 ```
 
 ## DESCRIPTION
-Untuk pengenalan layanan penyediaan perangkat Azure IoT Hub, lihat https://docs.microsoft.com/en-us/azure/iot-dps/about-iot-dps.
+Untuk pengenalan Azure IoT Hub Layanan Penyediaan Perangkat, lihat https://docs.microsoft.com/en-us/azure/iot-dps/about-iot-dps.
 
 ## EXAMPLES
 
@@ -60,12 +60,12 @@ ApplyAllocationPolicy : True
 Location              : eastus
 ```
 
-Perbarui "myiothub.azure-devices.net" hub IoT Tertaut dalam layanan penyediaan perangkat Azure IoT Hub.
+Memperbarui "myiothub.azure-devices.net" hub IoT yang ditautkan dalam layanan penyediaan perangkat Azure IoT Hub.
 
 ## PARAMETERS
 
 ### -AllocationWeight
-Bobot alokasi Hub IoT
+Berat alokasi IoT Hub
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplyAllocationPolicy
-Menerapkan kebijakan alokasi untuk Hub IoT
+Menerapkan kebijakan alokasi ke IoT Hub
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -LinkedHubName
-Nama host Hub IoT tertaut
+Nama host IoT Hub tertaut
 
 ```yaml
 Type: System.String
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Layanan Penyediaan Perangkat Iot
+Id Sumber Daya Layanan Penyediaan Perangkat IoT
 
 ```yaml
 Type: System.String
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

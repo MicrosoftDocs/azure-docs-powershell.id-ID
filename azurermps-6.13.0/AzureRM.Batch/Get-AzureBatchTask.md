@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Get-AzureBatchTask.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Get-AzureBatchTask.md
 ms.openlocfilehash: 0229a44512aecc52b16650740d74ff177f83b9fb
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425476"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142100561"
 ---
 # Get-AzureBatchTask
 
 ## SYNOPSIS
-Mendapatkan tugas Kumpulan untuk sebuah pekerjaan.
+Mendapatkan tugas Kumpulan untuk pekerjaan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -43,14 +43,14 @@ Get-AzureBatchTask [[-Job] <PSCloudJob>] [-Filter <String>] [-MaxCount <Int32>] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureBatchTask** mendapatkan tugas Azure Batch untuk pekerjaan Kumpulan.
-Tentukan pekerjaan dengan parameter *JobId* atau *parameter Job.*
-Untuk mendapatkan tugas tunggal, tentukan parameter *Id.*
-Anda bisa menentukan *parameter Filter* untuk mendapatkan tugas yang cocok dengan filter Open Data Protocol (OData).
+Cmdlet **Get-AzureBatchTask** mendapatkan Azure Batch tugas untuk pekerjaan Batch.
+Tentukan pekerjaan dengan parameter *JobId* atau parameter *Job* .
+Untuk mendapatkan tugas tunggal, tentukan parameter *Id* .
+Anda bisa menentukan parameter *Filter* untuk mendapatkan tugas yang cocok dengan filter Open Data Protocol (OData).
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan tugas dengan ID
+### Contoh 1: Mendapatkan tugas menurut ID
 ```
 PS C:\>Get-AzureBatchTask -JobId "Job01" -Id "Task03" -BatchContext $Context
 AffinityInformation         : 
@@ -74,8 +74,8 @@ Statistics                  :
 Url                         : https://pfuller.westus.batch.azure.com/jobs/Job01/tasks/Task03
 ```
 
-Perintah ini mendapatkan tugas dengan ID Task03 di bawah pekerjaan Job01.
-Gunakan cmdlet Get-AzureRmBatchAccountKeys cmdlet untuk menetapkan konteks ke variabel $Context tersebut.
+Perintah ini mendapatkan tugas dengan ID Task03 di bawah job Job01.
+Gunakan cmdlet Get-AzureRmBatchAccountKeys untuk menetapkan konteks ke variabel $Context.
 
 ### Contoh 2: Mendapatkan semua tugas yang sudah selesai dari pekerjaan tertentu
 ```
@@ -119,13 +119,13 @@ Statistics                  :
 Url                         : https://pfuller.westus.batch.azure.com/jobs/Job02/tasks/Task27
 ```
 
-Perintah ini menyelesaikan tugas dari pekerjaan yang memiliki ID Job02.
+Perintah ini mendapatkan tugas yang sudah selesai dari pekerjaan yang memiliki ID Job02.
 
 ## PARAMETERS
 
 ### -BatchContext
-Menentukan contoh **BatchAccountContext** yang digunakan cmdlet untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -155,8 +155,8 @@ Accept wildcard characters: False
 ```
 
 ### -Perluas
-Menentukan klausul perluas OData.
-Tentukan nilai untuk parameter ini agar entitas terkait dari entitas utama dapat memperolehnya.
+Menentukan klausul perluasan OData.
+Tentukan nilai untuk parameter ini untuk mendapatkan entitas terkait dari entitas utama yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -171,8 +171,8 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Menentukan klausa filter OData untuk tugas.
-Jika Anda tidak menentukan filter, cmdlet ini mengembalikan semua tugas untuk akun batch atau pekerjaan.
+Menentukan klausul filter OData untuk tugas.
+Jika Anda tidak menentukan filter, cmdlet ini mengembalikan semua tugas untuk akun Batch atau pekerjaan.
 
 ```yaml
 Type: System.String
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID tugas yang akan dapatkan cmdlet ini.
+Menentukan ID tugas yang didapat cmdlet ini.
 Anda tidak bisa menentukan karakter wildcard.
 
 ```yaml
@@ -203,8 +203,8 @@ Accept wildcard characters: False
 ```
 
 ### -Job
-Menentukan pekerjaan berisi tugas yang akan didaurkan cmdlet ini.
-Untuk mendapatkan objek **PSCloudJob,** gunakan Get-AzureBatchJob cmdlet.
+Menentukan pekerjaan yang berisi tugas yang didapat cmdlet ini.
+Untuk mendapatkan objek **PSCloudJob** , gunakan cmdlet Get-AzureBatchJob.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSCloudJob
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobId
-Menentukan ID pekerjaan berisi tugas yang akan dapatkan cmdlet ini.
+Menentukan ID pekerjaan yang berisi tugas yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -251,8 +251,8 @@ Accept wildcard characters: False
 ```
 
 ### -Pilih
-Menentukan klausul pilih OData.
-Tentukan nilai untuk parameter ini agar mendapatkan properti tertentu dan bukan semua properti objek.
+Menentukan klausul pemilihan OData.
+Tentukan nilai untuk parameter ini untuk mendapatkan properti tertentu daripada semua properti objek.
 
 ```yaml
 Type: System.String
@@ -267,14 +267,14 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
 ### Microsoft.Azure.Commands.Batch.Models.PSCloudJob
-Parameter: Pekerjaan (ByValue)
+Parameter: Job (ByValue)
 
 ### Microsoft.Azure.Commands.Batch.BatchAccountContext
 Parameter: BatchContext (ByValue)
@@ -291,12 +291,12 @@ Parameter: BatchContext (ByValue)
 
 [Get-AzureBatchJob](./Get-AzureBatchJob.md)
 
-[New-AzureBatchTask](./New-AzureBatchTask.md)
+[AzureBatchTask Baru](./New-AzureBatchTask.md)
 
-[Remove-AzureBatchTask](./Remove-AzureBatchTask.md)
+[Hapus-AzureBatchTask](./Remove-AzureBatchTask.md)
 
 [Stop-AzureBatchTask](./Stop-AzureBatchTask.md)
 
-[Cmdlet Kumpulan Azure](./AzureRM.Batch.md)
+[Cmdlet Azure Batch](./AzureRM.Batch.md)
 
 

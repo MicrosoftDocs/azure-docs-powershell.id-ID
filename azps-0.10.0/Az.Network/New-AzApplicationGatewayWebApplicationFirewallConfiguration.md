@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/New-AzApplicationGatewayWebApplicationFirewallConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/New-AzApplicationGatewayWebApplicationFirewallConfiguration.md
 ms.openlocfilehash: bdfd9cb100b43f58326b9b94c4e15bb24561eadd
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424037"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142056683"
 ---
 # New-AzApplicationGatewayWebApplicationFirewallConfiguration
 
@@ -39,14 +39,14 @@ PS C:\> $disabledRuleGroup2 = New-AzApplicationGatewayFirewallDisabledRuleGroupC
 PS C:\> $firewallConfig = New-AzApplicationGatewayWebApplicationFirewallConfiguration -Enabled $true -FirewallMode "Prevention" -RuleSetType "OWASP" -RuleSetVersion "3.0" -DisabledRuleGroups $disabledRuleGroup1,$disabledRuleGroup2
 ```
 
-Perintah pertama membuat konfigurasi grup aturan baru yang dinonaktifkan untuk grup aturan bernama "REQUEST-942-APPLICATION-ATTACK-SQLI" dengan aturan 942130 dan aturan 942140 yang dinonaktifkan.
-Perintah kedua membuat konfigurasi grup aturan dinonaktifkan lainnya untuk grup aturan bernama "REQUEST-921-PROTOCOL-ATTACK". Tidak ada aturan yang secara khusus disampaikan dan dengan demikian semua aturan grup aturan akan dinonaktifkan.
-Perintah terakhir lalu membuat konfigurasi WAF dengan aturan firewall yang dinonaktifkan seperti yang dikonfigurasi $disabledRuleGroup 1 dan $disabledRuleGroup 2. Konfigurasi WAF baru disimpan di $firewallConfig baru.
+Perintah pertama membuat konfigurasi grup aturan baru yang dinonaktifkan untuk grup aturan bernama "REQUEST-942-APPLICATION-ATTACK-SQLI" dengan aturan 942130 dan aturan 942140 dinonaktifkan.
+Perintah kedua membuat konfigurasi grup aturan lain yang dinonaktifkan untuk grup aturan bernama "REQUEST-921-PROTOCOL-ATTACK". Tidak ada aturan yang diteruskan secara khusus dan dengan demikian semua aturan grup aturan akan dinonaktifkan.
+Perintah terakhir kemudian membuat konfigurasi WAF dengan aturan firewall yang dinonaktifkan seperti yang dikonfigurasi di $disabledRuleGroup 1 dan $disabledRuleGroup 2. Konfigurasi WAF baru disimpan dalam variabel $firewallConfig.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -75,7 +75,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Enabled
+### -Difungsikan
 Menunjukkan apakah WAF diaktifkan.
 
 ```yaml
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
