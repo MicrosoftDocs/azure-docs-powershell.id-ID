@@ -4,16 +4,16 @@ Module Name: Azs.Compute.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 06f2d231754fc422115cf800ef66189378e0cd4d
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136576951"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141814280"
 ---
 # Get-AzsDiskMigrationJob
 
 ## SYNOPSIS
-Mengembalikan daftar pekerjaan migrasi disk yang dikelola.
+Mengembalikan daftar pekerjaan migrasi disk terkelola.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Get-AzsDiskMigrationJob [-Status <String>] [-Location <String>] [<CommonParamete
 Get-AzsDiskMigrationJob -ResourceId <String> [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsDiskMigrationJob [-Location <String>] -Name <String> [<CommonParameters>]
 ```
@@ -42,14 +42,14 @@ Mengembalikan daftar pekerjaan migrasi disk.
 $migration = Get-AzsDiskMigrationJob -location local -Name "mymigrationName"
 ```
 
-Mendapatkan pekerjaan migrasi disk terkelola tertentu.
+Dapatkan pekerjaan migrasi disk terkelola tertentu.
 
 ### -------------------------- CONTOH 2 --------------------------
 ```
 $migration = Get-AzsDiskMigrationJob -location local
 ```
 
-Mengembalikan daftar pekerjaan migrasi disk yang dikelola di lokasi lokal.
+Mengembalikan daftar pekerjaan migrasi disk terkelola di lokasi lokal.
 
 ## PARAMETERS
 
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama guid pekerjaan migrasi.
+Nama panduan pekerjaan migrasi.
 
 ```yaml
 Type: String
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

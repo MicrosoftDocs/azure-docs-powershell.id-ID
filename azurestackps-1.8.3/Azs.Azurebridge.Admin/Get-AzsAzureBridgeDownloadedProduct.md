@@ -4,11 +4,11 @@ Module Name: Azs.AzureBridge.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: e1780eeb2f5d03fafd056c7987f648eae989b3dd
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136578158"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141770415"
 ---
 # Get-AzsAzureBridgeDownloadedProduct
 
@@ -23,7 +23,7 @@ Get-AzsAzureBridgeDownloadedProduct -ActivationName <String> -ResourceGroupName 
  [-Top <Int32>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsAzureBridgeDownloadedProduct -Name <String> -ActivationName <String> -ResourceGroupName <String>
  [<CommonParameters>]
@@ -44,14 +44,14 @@ Mengembalikan daftar produk yang diunduh dari Azure MarketPlace.
 Get-AzsAzureBridgeDownloadedProduct -ActivationName 'myActivation' -ResourceGroupName 'activationRG'
 ```
 
-Dapatkan daftar produk Unduhan Azure Bridge
+Dapatkan daftar produk Yang Diunduh Azure Bridge
 
 ### CONTOH 2
 ```
 Get-AzsAzureBridgeDownloadedProduct -Name 'microsoft.docker-arm.1.1.0' -ActivationName 'myActivation' -ResourceGroupName 'activationRG'
 ```
 
-Dapatkan Azure Bridge Produk yang Diunduh berdasarkan Nama
+Dapatkan Produk yang Diunduh Azure Bridge berdasarkan Nama
 
 ## PARAMETERS
 
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup sumber daya sumber daya yang berada di bawahnya.
+Grup sumber daya tempat sumber daya berada di bawah.
 
 ```yaml
 Type: String
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

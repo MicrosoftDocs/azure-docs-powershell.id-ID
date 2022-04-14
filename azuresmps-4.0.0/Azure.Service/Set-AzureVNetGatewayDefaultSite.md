@@ -4,16 +4,16 @@ ms.assetid: A34A2B01-A658-410E-8B68-98A6427DFC33
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: e8ccdb8443c1ec201eb27522c5e512827db72fff
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426524"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141815991"
 ---
 # Set-AzureVNetGatewayDefaultSite
 
 ## SYNOPSIS
-Mengatur situs default untuk lalu lintas yang memaksa.
+Mengatur situs default untuk lalu lintas terowongan paksa.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,15 +25,15 @@ Set-AzureVNetGatewayDefaultSite -VNetName <String> -DefaultSite <String> [-Profi
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureVNetGatewayDefaultSite** mengatur rute default ke situs lokal untuk lalu lintas paksa.
-Perintah ini mengatur rute di gateway Jaringan privat virtual Azure (VPN) untuk jaringan virtual.
+Cmdlet **Set-AzureVNetGatewayDefaultSite** mengatur rute default ke situs lokal untuk lalu lintas terowongan paksa.
+Perintah ini mengatur rute di gateway jaringan privat virtual (VPN) Azure untuk jaringan virtual.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -DefaultSite
-Menentukan nama situs jaringan lokal lokal untuk lalu lintas paksa.
+Menentukan nama situs jaringan lokal lokal untuk lalu lintas terowongan paksa.
 
 ```yaml
 Type: String
@@ -48,8 +48,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 
 ### -VNetName
 Menentukan jaringan virtual.
-Cmdlet ini mengatur rute default gateway VPN untuk lalu lintas paksa bagi jaringan virtual yang ditentukan parameter ini.
+Cmdlet ini mengatur rute default gateway VPN untuk lalu lintas terowongan paksa untuk jaringan virtual yang ditentukan parameter ini.
 
 ```yaml
 Type: String
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -90,4 +90,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Remove-AzureVNetGatewayDefaultSite](./Remove-AzureVNetGatewayDefaultSite.md)
+[Hapus-AzureVNetGatewayDefaultSite](./Remove-AzureVNetGatewayDefaultSite.md)

@@ -4,11 +4,11 @@ ms.assetid: 90C3DF13-0010-49B6-A8CD-C6AC34BC3EFA
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 694fa6ef5c438a0eec07d534b2843f9c59dd0fb2
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425062"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141815345"
 ---
 # Get-AzureStorageContainer
 
@@ -38,26 +38,26 @@ Cmdlet **Get-AzureStorageContainer** mencantumkan wadah penyimpanan yang terkait
 
 ## EXAMPLES
 
-### Contoh 1: Get Azure Storage blob by name
+### Contoh 1: Dapatkan Azure Storage blob menurut nama
 ```
 PS C:\>Get-AzureStorageContainer -Name container*
 ```
 
 Contoh ini menggunakan karakter wildcard untuk mengembalikan daftar semua wadah dengan nama yang dimulai dengan wadah.
 
-### Contoh 2: Dapatkan Azure Storage wadah menurut prefiks nama wadah
+### Contoh 2: Dapatkan kontainer Azure Storage menurut prefiks nama kontainer
 ```
 PS C:\>Get-AzureStorageContainer -Prefix "container"
 ```
 
-Contoh ini menggunakan parameter *Prefix* untuk mengembalikan daftar semua wadah dengan nama yang dimulai dengan wadah.
+Contoh ini menggunakan parameter *Prefiks* untuk mengembalikan daftar semua kontainer dengan nama yang dimulai dengan kontainer.
 
 ## PARAMETERS
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu yang habis di sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba permintaan.
-Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini akan mengembalikan kesalahan.
+Menentukan interval waktu habis pihak klien, dalam hitungan detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
 Type: Int32
@@ -72,11 +72,11 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan jumlah maksimum panggilan jaringan bersama.
-Anda dapat menggunakan parameter ini untuk membatasi konkurensi guna membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Menentukan maksimum panggilan jaringan serentak.
+Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
 Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
-Parameter ini bisa membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth yang rendah, seperti 100 kilobit per detik.
-Nilai default adalah 10.
+Parameter ini dapat membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth rendah, seperti 100 kilobit per detik.
+Nilai defaultnya adalah 10.
 
 ```yaml
 Type: Int32
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 
 ### -Konteks
 Menentukan konteks penyimpanan.
-Untuk membuatnya, Anda dapat menggunakan cmdlet New-AzureStorageContext baru.
+Untuk membuatnya, Anda bisa menggunakan cmdlet New-AzureStorageContext.
 
 ```yaml
 Type: IStorageContext
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContinuationToken
-Menentukan token lanjutan untuk daftar blob.
+Menentukan token kelanjutan untuk daftar blob.
 
 ```yaml
 Type: BlobContinuationToken
@@ -137,9 +137,9 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan wadah nama.
-Jika nama wadah kosong, cmdlet akan mencantumkan semua wadah.
-Jika tidak, daftar itu akan mencantumkan semua wadah yang cocok dengan nama yang ditentukan atau pola nama biasa.
+Menentukan nama wadah.
+Jika nama wadah kosong, cmdlet mencantumkan semua wadah.
+Jika tidak, daftar semua wadah yang cocok dengan nama yang ditentukan atau pola nama reguler.
 
 ```yaml
 Type: String
@@ -153,7 +153,7 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Prefix
+### -Prefiks
 Menentukan prefiks yang digunakan dalam nama wadah atau wadah yang ingin Anda dapatkan.
 Anda dapat menggunakan ini untuk menemukan semua wadah yang dimulai dengan string yang sama, seperti "saya" atau "uji".
 
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan interval waktu habis di sisi layanan, dalam detik, untuk permintaan.
+Menentukan interval batas waktu sisi layanan, dalam detik, untuk permintaan.
 Jika interval yang ditentukan berlalu sebelum layanan memproses permintaan, layanan penyimpanan mengembalikan kesalahan.
 
 ```yaml
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -196,9 +196,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureStorageContainer](./New-AzureStorageContainer.md)
+[AzureStorageContainer baru](./New-AzureStorageContainer.md)
 
-[Remove-AzureStorageContainer](./Remove-AzureStorageContainer.md)
+[Hapus-AzureStorageContainer](./Remove-AzureStorageContainer.md)
 
 [Set-AzureStorageContainerAcl](./Set-AzureStorageContainerAcl.md)
 

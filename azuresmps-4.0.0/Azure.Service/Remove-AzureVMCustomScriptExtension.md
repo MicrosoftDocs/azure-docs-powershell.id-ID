@@ -4,16 +4,16 @@ ms.assetid: 3DCA1502-9528-458D-A9EA-762A4BD2726B
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: f325f0c0978502de80b70543bc7729422e6f4fb7
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422461"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141816367"
 ---
 # Remove-AzureVMCustomScriptExtension
 
 ## SYNOPSIS
-Menghapus ekstensi skrip kustom dari komputer virtual.
+Menghapus ekstensi skrip kustom dari mesin virtual.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,30 +25,30 @@ Remove-AzureVMCustomScriptExtension -VM <IPersistentVM> [-Profile <AzureSMProfil
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureVMCustomScriptExtension** menghapus ekstensi skrip kustom dari komputer virtual.
+Cmdlet **Remove-AzureVMCustomScriptExtension** menghapus ekstensi skrip kustom dari mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus ekstensi skrip kustom mesin virtual
+### Contoh 1: Hapus ekstensi skrip kustom mesin virtual
 ```
 PS C:\> Remove-AzureVMCustomScriptExtension -VM $VM;
 ```
 
-Perintah ini menghapus ekstensi skrip kustom mesin virtual Azure dari komputer virtual tertentu seperti yang disimpan di variabel $VM.
+Perintah ini menghapus ekstensi skrip kustom mesin virtual Azure dari mesin virtual tertentu seperti yang disimpan dalam variabel $VM.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -78,8 +78,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

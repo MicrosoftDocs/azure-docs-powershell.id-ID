@@ -4,159 +4,159 @@ Module Guid: D48CF693-4125-4D2D-8790-1514F44CE325
 Download Help Link: https://go.microsoft.com/fwlink/?linkid=390762
 Help Version: 4.0.0.0
 Locale: en-US
-ms.openlocfilehash: a86212be83f8ab93ddc5b4b82ec8c0a360f6a06330b3fff539a7027808d5adfc
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 70a3dbf0d08ffbf2496a04e8f375016f05dac006
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132416737"
 ---
 # Modul AzureRM.KeyVault
 ## Deskripsi
-Topik ini menampilkan topik bantuan untuk Cmdlet Key Vault Azure.
+Topik ini menampilkan topik bantuan untuk Cmdlet Azure Key Vault.
 
 ## Cmdlet AzureRM.KeyVault
 ### [Add-AzureKeyVaultCertificate](Add-AzureKeyVaultCertificate.md)
-Menambahkan sertifikat ke kunci vault.
+Menambahkan sertifikat ke kubah kunci.
 
 ### [Add-AzureKeyVaultCertificateContact](Add-AzureKeyVaultCertificateContact.md)
 Menambahkan kontak untuk pemberitahuan sertifikat.
 
 ### [Add-AzureKeyVaultKey](Add-AzureKeyVaultKey.md)
-Membuat kunci di kunci vault atau mengimpor kunci ke kunci vault.
+Membuat kunci dalam kubah kunci atau mengimpor kunci ke dalam kubah kunci.
 
 ### [Add-AzureKeyVaultManagedStorageAccount](Add-AzureKeyVaultManagedStorageAccount.md)
-Menambahkan Akun Azure Storage yang sudah ada ke key vault tertentu agar kunci-kuncinya dikelola oleh layanan Key Vault.
+Menambahkan Akun Azure Storage yang sudah ada ke kubah kunci yang ditentukan agar kuncinya dikelola oleh layanan Key Vault.
 
 ### [Backup-AzureKeyVaultKey](Backup-AzureKeyVaultKey.md)
-Mencadangkan kunci di vault kunci.
+Mencadangkan kunci dalam kubah kunci.
 
 ### [Backup-AzureKeyVaultSecret](Backup-AzureKeyVaultSecret.md)
-Mencadangkan rahasia di kunci vault.
+Mencadangkan rahasia dalam kubah kunci.
 
 ### [Get-AzureKeyVaultCertificate](Get-AzureKeyVaultCertificate.md)
-Mendapatkan sertifikat dari kunci vault.
+Mendapatkan sertifikat dari kubah kunci.
 
 ### [Get-AzureKeyVaultCertificateContact](Get-AzureKeyVaultCertificateContact.md)
-Mendapatkan kontak yang terdaftar untuk pemberitahuan sertifikat untuk vault kunci.
+Mendapatkan kontak yang terdaftar untuk pemberitahuan sertifikat untuk kubah kunci.
 
 ### [Get-AzureKeyVaultCertificateIssuer](Get-AzureKeyVaultCertificateIssuer.md)
-Mendapatkan penerbit sertifikat untuk vault kunci.
+Mendapatkan penerbit sertifikat untuk kubah kunci.
 
 ### [Get-AzureKeyVaultCertificateOperation](Get-AzureKeyVaultCertificateOperation.md)
 Mendapatkan status operasi sertifikat.
 
 ### [Get-AzureKeyVaultCertificatePolicy](Get-AzureKeyVaultCertificatePolicy.md)
-Mendapatkan kebijakan untuk sertifikat di kunci vault.
+Mendapatkan kebijakan untuk sertifikat dalam kubah kunci.
 
 ### [Get-AzureKeyVaultKey](Get-AzureKeyVaultKey.md)
-Mendapatkan kunci Kunci Vault.
+Mendapatkan kunci Key Vault.
 
 ### [Get-AzureKeyVaultManagedStorageAccount](Get-AzureKeyVaultManagedStorageAccount.md)
-Mendapatkan kunci Vault yang Azure Storage Akun.
+Mendapatkan akun Azure Storage terkelola Key Vault.
 
 ### [Get-AzureKeyVaultManagedStorageSasDefinition](Get-AzureKeyVaultManagedStorageSasDefinition.md)
-Mendapatkan Key Vault yang dikelola Storage SAS Definitions.
+Dapatkan Key Vault dikelola Storage Definisi SAS.
 
 ### [Get-AzureKeyVaultSecret](Get-AzureKeyVaultSecret.md)
-Rahasianya ada di kunci vault.
+Mendapatkan rahasia dalam kubah kunci.
 
 ### [Get-AzureRmKeyVault](Get-AzureRmKeyVault.md)
-Dapatkan kunci vault.
+Mendapatkan kubah kunci.
 
-### [Import-AzureKeyVaultCertificate](Import-AzureKeyVaultCertificate.md)
-Mengimpor sertifikat ke kunci vault.
+### [Impor-AzureKeyVaultCertificate](Import-AzureKeyVaultCertificate.md)
+Mengimpor sertifikat ke kubah kunci.
 
 ### [New-AzureKeyVaultCertificateAdministratorDetails](New-AzureKeyVaultCertificateAdministratorDetails.md)
 Membuat objek detail administrator sertifikat dalam memori.
 
-### [New-AzureKeyVaultCertificateOrganizationDetails](New-AzureKeyVaultCertificateOrganizationDetails.md)
+### [Baru-AzureKeyVaultCertificateOrganizationDetails](New-AzureKeyVaultCertificateOrganizationDetails.md)
 Membuat objek detail organisasi sertifikat dalam memori.
 
 ### [New-AzureKeyVaultCertificatePolicy](New-AzureKeyVaultCertificatePolicy.md)
 Membuat objek kebijakan sertifikat dalam memori.
 
 ### [New-AzureRmKeyVault](New-AzureRmKeyVault.md)
-Membuat kunci vault.
+Membuat kubah kunci.
 
-### [Remove-AzureKeyVaultCertificate](Remove-AzureKeyVaultCertificate.md)
-Menghapus sertifikat dari kunci vault.
+### [Hapus-AzureKeyVaultCertificate](Remove-AzureKeyVaultCertificate.md)
+Menghapus sertifikat dari kubah kunci.
 
-### [Remove-AzureKeyVaultCertificateContact](Remove-AzureKeyVaultCertificateContact.md)
-Menghapus kontak yang terdaftar untuk pemberitahuan sertifikat dari kunci vault.
+### [Hapus-AzureKeyVaultCertificateContact](Remove-AzureKeyVaultCertificateContact.md)
+Menghapus kontak yang terdaftar untuk pemberitahuan sertifikat dari kubah kunci.
 
-### [Remove-AzureKeyVaultCertificateIssuer](Remove-AzureKeyVaultCertificateIssuer.md)
-Menghapus penerbit sertifikat dari kunci vault.
+### [Hapus-AzureKeyVaultCertificateIssuer](Remove-AzureKeyVaultCertificateIssuer.md)
+Menghapus penerbit sertifikat dari kubah kunci.
 
 ### [Remove-AzureKeyVaultCertificateOperation](Remove-AzureKeyVaultCertificateOperation.md)
-Menghapus operasi sertifikat dari kunci vault.
+Menghapus operasi sertifikat dari kubah kunci.
 
-### [Remove-AzureKeyVaultKey](Remove-AzureKeyVaultKey.md)
-Menghapus kunci di kunci vault.
+### [Hapus-AzureKeyVaultKey](Remove-AzureKeyVaultKey.md)
+Menghapus kunci dalam kubah kunci.
 
 ### [Remove-AzureKeyVaultManagedStorageAccount](Remove-AzureKeyVaultManagedStorageAccount.md)
-Menghapus kunci vault yang dikelola Azure Storage Dan semua definisi SAS terkait.
+Menghapus akun Azure Storage yang dikelola Key Vault dan semua definisi SAS terkait.
 
 ### [Remove-AzureKeyVaultManagedStorageSasDefinition](Remove-AzureKeyVaultManagedStorageSasDefinition.md)
-Menghapus definisi kunci vault Azure Storage SAS.
+Menghapus Key Vault dikelola Azure Storage definisi SAS.
 
-### [Remove-AzureKeyVaultSecret](Remove-AzureKeyVaultSecret.md)
-Menghapus rahasia di kunci vault.
+### [Hapus-AzureKeyVaultSecret](Remove-AzureKeyVaultSecret.md)
+Menghapus rahasia dalam kubah kunci.
 
-### [Remove-AzureRmKeyVault](Remove-AzureRmKeyVault.md)
-Menghapus kunci vault.
+### [Hapus-AzureRmKeyVault](Remove-AzureRmKeyVault.md)
+Menghapus kubah kunci.
 
-### [Remove-AzureRmKeyVaultAccessPolicy](Remove-AzureRmKeyVaultAccessPolicy.md)
-Menghapus semua izin untuk pengguna atau aplikasi dari kunci vault.
+### [Hapus-AzureRmKeyVaultAccessPolicy](Remove-AzureRmKeyVaultAccessPolicy.md)
+Menghapus semua izin untuk pengguna atau aplikasi dari kubah kunci.
 
-### [Restore-AzureKeyVaultKey](Restore-AzureKeyVaultKey.md)
-Membuat kunci di kunci vault dari tombol yang sudah dicadangkan.
+### [Pulihkan-AzureKeyVaultKey](Restore-AzureKeyVaultKey.md)
+Membuat kunci dalam kubah kunci dari tombol yang dicadangkan.
 
-### [Restore-AzureKeyVaultSecret](Restore-AzureKeyVaultSecret.md)
-Membuat rahasia di kunci vault dari rahasia cadangan.
+### [Pulihkan-AzureKeyVaultSecret](Restore-AzureKeyVaultSecret.md)
+Membuat rahasia dalam kubah kunci dari rahasia yang dicadangkan.
 
 ### [Set-AzureKeyVaultCertificateAttribute](Set-AzureKeyVaultCertificateAttribute.md)
 Mengubah atribut sertifikat yang dapat diedit.
 
 ### [Set-AzureKeyVaultCertificateIssuer](Set-AzureKeyVaultCertificateIssuer.md)
-Mengatur penerbit sertifikat dalam kunci vault.
+Mengatur penerbit sertifikat dalam kubah kunci.
 
 ### [Set-AzureKeyVaultCertificatePolicy](Set-AzureKeyVaultCertificatePolicy.md)
-Membuat atau memperbarui kebijakan untuk sertifikat di kunci vault.
+Membuat atau memperbarui kebijakan untuk sertifikat dalam kubah kunci.
 
 ### [Set-AzureKeyVaultKeyAttribute](Set-AzureKeyVaultKeyAttribute.md)
-Memperbarui atribut kunci di kunci vault.
+Memperbarui atribut kunci dalam kubah kunci.
 
 ### [Set-AzureKeyVaultManagedStorageSasDefinition](Set-AzureKeyVaultManagedStorageSasDefinition.md)
-Mengatur definisi Shared Access Signature (SAS) dengan Key Vault untuk Key Vault tertentu yang dikelola Azure Storage Tersebut.
+Mengatur definisi Tanda Tangan Akses Bersama (SAS) dengan Key Vault untuk akun Azure Storage yang dikelola Key Vault tertentu.
 
 ### [Set-AzureKeyVaultSecret](Set-AzureKeyVaultSecret.md)
-Membuat atau memperbarui rahasia di kunci vault.
+Membuat atau memperbarui rahasia dalam kubah kunci.
 
 ### [Set-AzureKeyVaultSecretAttribute](Set-AzureKeyVaultSecretAttribute.md)
-Memperbarui atribut rahasia di kunci vault.
+Memperbarui atribut rahasia dalam kubah kunci.
 
 ### [Set-AzureRmKeyVaultAccessPolicy](Set-AzureRmKeyVaultAccessPolicy.md)
-Memberikan atau mengubah izin yang sudah ada untuk pengguna, aplikasi, atau grup keamanan untuk melakukan operasi dengan kunci vault.
+Memberikan atau mengubah izin yang sudah ada untuk pengguna, aplikasi, atau grup keamanan untuk melakukan operasi dengan kubah kunci.
 
 ### [Stop-AzureKeyVaultCertificateOperation](Stop-AzureKeyVaultCertificateOperation.md)
-Membatalkan operasi sertifikat di kunci vault.
+Membatalkan operasi sertifikat dalam kubah kunci.
 
-### [Undo-AzureKeyVaultCertificateRemoval](Undo-AzureKeyVaultCertificateRemoval.md)
-Memulihkan sertifikat yang dihapus di kunci vault ke keadaan aktif.
+### [Batalkan-AzureKeyVaultCertificateRemoval](Undo-AzureKeyVaultCertificateRemoval.md)
+Memulihkan sertifikat yang dihapus dalam kubah kunci ke status aktif.
 
-### [Undo-AzureKeyVaultKeyRemoval](Undo-AzureKeyVaultKeyRemoval.md)
-Memulihkan kunci yang dihapus di kunci vault ke keadaan aktif.
+### [Batalkan-AzureKeyVaultKeyRemoval](Undo-AzureKeyVaultKeyRemoval.md)
+Memulihkan kunci yang dihapus dalam kubah kunci ke status aktif.
 
-### [Undo-AzureKeyVaultSecretRemoval](Undo-AzureKeyVaultSecretRemoval.md)
-Memulihkan rahasia yang telah dihapus di kunci vault ke keadaan aktif.
+### [Batalkan-AzureKeyVaultSecretRemoval](Undo-AzureKeyVaultSecretRemoval.md)
+Memulihkan rahasia yang dihapus dalam kubah kunci ke status aktif.
 
-### [Undo-AzureRmKeyVaultRemoval](Undo-AzureRmKeyVaultRemoval.md)
-Memulihkan kunci vault yang dihapus ke keadaan aktif.
+### [Batalkan-AzureRmKeyVaultRemoval](Undo-AzureRmKeyVaultRemoval.md)
+Memulihkan kubah kunci yang dihapus ke status aktif.
 
 ### [Update-AzureKeyVaultManagedStorageAccount](Update-AzureKeyVaultManagedStorageAccount.md)
-Memperbarui atribut yang dapat diedit dari Key Vault yang Azure Storage Anda.
+Memperbarui atribut akun Azure Storage yang dapat diedit dari akun Azure Storage yang dikelola Key Vault.
 
 ### [Update-AzureKeyVaultManagedStorageAccountKey](Update-AzureKeyVaultManagedStorageAccountKey.md)
-Meregenerasi kunci tertentu Kunci Vault yang dikelola Azure Storage Anda.
+Meregenerasi kunci akun Azure Storage terkelola Key Vault yang ditentukan.
 

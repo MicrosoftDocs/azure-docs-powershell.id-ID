@@ -2,12 +2,12 @@
 external help file: Microsoft.Azure.Commands.Profile.dll-Help.xml
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 514e813cd9726ed6167725291bab8c23fb857b59b7026f42f8ed57daae66aef0
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: b2da68229b50d97a735b457aa0e33cb3dd8b9262
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419176"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141815054"
 ---
 # Get-AzureRmTenant
 
@@ -23,7 +23,7 @@ Get-AzureRmTenant [[-TenantId] <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzureRmTenant mendapatkan izin penyewa untuk pengguna saat ini.
+Cmdlet Get-AzureRmTenant mendapatkan otorisasi penyewa untuk pengguna saat ini.
 
 ## EXAMPLES
 
@@ -39,7 +39,7 @@ TenantId : yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy
 Domain   : microsoft.com
 ```
 
-Contoh ini menunjukkan cara mendapatkan semua penyewa resmi akun Azure.
+Contoh ini memperlihatkan cara mendapatkan semua penyewa resmi akun Azure.
 
 ### Contoh 2: Mendapatkan penyewa tertentu
 ```
@@ -50,12 +50,12 @@ TenantId : xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 Domain   : microsoft.com
 ```
 
-Contoh ini menunjukkan cara untuk mendapatkan penyewa akun Azure resmi tertentu.
+Contoh ini memperlihatkan cara mendapatkan penyewa resmi akun Azure tertentu.
 
 ## PARAMETERS
 
 ### -TenantId
-Menentukan ID penyewa yang akan dapatkan cmdlet ini.
+Menentukan ID penyewa yang didapat cmdlet ini.
 
 ```yaml
 Type: String
@@ -70,14 +70,14 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
 ### PSAzureTenant
-Cmdlet ini mengembalikan ID penyewa dan informasi domain terkait untuk penyewa yang diizinkan untuk akun saat ini.
+Cmdlet ini mengembalikan ID penyewa dan informasi domain terkait untuk penyewa yang diotorisasi untuk akun saat ini.
 
 ## CATATAN
 

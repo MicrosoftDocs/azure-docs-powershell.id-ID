@@ -4,16 +4,16 @@ Module Name: Azs.Gallery.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.gallery.admin/get-azsgalleryitem
 schema: 2.0.0
 ms.openlocfilehash: 5523dd35ae91b9fea7db5f2451401793cb6059c2
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "132415472"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141770435"
 ---
 # Get-AzsGalleryItem
 
 ## SYNOPSIS
-Mendapatkan item galeri tertentu.
+Dapatkan item galeri tertentu.
 
 ## SYNTAX
 
@@ -22,7 +22,7 @@ Mendapatkan item galeri tertentu.
 Get-AzsGalleryItem [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsGalleryItem -Name <String> [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [-PassThru]
  [<CommonParameters>]
@@ -35,7 +35,7 @@ Get-AzsGalleryItem -InputObject <IGalleryIdentity> [-DefaultProfile <PSObject>] 
 ```
 
 ## DESCRIPTION
-Mendapatkan item galeri tertentu.
+Dapatkan item galeri tertentu.
 
 ## EXAMPLES
 
@@ -94,7 +94,7 @@ microsoft.vmss.7.1.7                       microsoft Microsoft             vmss 
 
 ```
 
-Mencantumkan semua item yang tersedia di galeri Tumpukan Azure.
+Mencantumkan semua item yang tersedia di galeri Azure Stack.
 
 ## PARAMETERS
 
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Gallery.Models.IGalleryIdentity
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 
 ### -Nama
 Identitas item galeri.
-Menyertakan nama penerbit, nama item, dan mungkin menyertakan versi yang dipisahkan oleh karakter periode.
+Menyertakan nama penerbit, nama item, dan mungkin menyertakan versi yang dipisahkan oleh karakter titik.
 
 ```yaml
 Type: System.String
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,8 +164,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -195,12 +195,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 INPUTOBJECT <IGalleryIdentity>: Parameter Identitas
-  - `[GalleryItemName <String>]`: Identitas item galeri. Menyertakan nama penerbit, nama item, dan mungkin menyertakan versi yang dipisahkan oleh karakter periode.
+  - `[GalleryItemName <String>]`: Identitas item galeri. Menyertakan nama penerbit, nama item, dan mungkin menyertakan versi yang dipisahkan oleh karakter titik.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

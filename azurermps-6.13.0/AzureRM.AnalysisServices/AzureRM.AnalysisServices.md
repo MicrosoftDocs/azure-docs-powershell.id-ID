@@ -6,11 +6,11 @@ Help Version: 0.0.1.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AnalysisServices/Commands.AnalysisServices/help/AzureRM.AnalysisServices.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AnalysisServices/Commands.AnalysisServices/help/AzureRM.AnalysisServices.md
-ms.openlocfilehash: d73116f882adf5c31b1a8697d7bb8b980cb8200dad362fa56895c87ec465d60e
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: bfe159a5356fc0a9eb12c74c0756370deec8da9e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132416583"
 ---
 # AzureRM.AnalysisServices Module
@@ -19,7 +19,7 @@ Topik ini menampilkan topik bantuan untuk cmdlet Azure AnalysisServices.
 
 ## Cmdlet AzureRM.AnalysisServices
 ### [Get-AzureRmAnalysisServicesServer](Get-AzureRmAnalysisServicesServer.md)
-Mendapatkan detail dari server Analysis Services.
+Mendapatkan detail server Analysis Services.
 
 ### [New-AzureRmAnalysisServicesFirewallConfig](New-AzureRmAnalysisServicesFirewallConfig.md)
 Membuat konfigurasi firewall Analysis Services baru 
@@ -30,7 +30,7 @@ Membuat aturan firewall Analysis Services baru
 ### [New-AzureRmAnalysisServicesServer](New-AzureRmAnalysisServicesServer.md)
 Membuat server Analysis Services baru
 
-### [Remove-AzureRmAnalysisServicesServer](Remove-AzureRmAnalysisServicesServer.md)
+### [Hapus-AzureRmAnalysisServicesServer](Remove-AzureRmAnalysisServicesServer.md)
 Menghapus contoh server Analysis Services
 
 ### [Resume-AzureRmAnalysisServicesServer](Resume-AzureRmAnalysisServicesServer.md)
@@ -42,6 +42,6 @@ Mengubah contoh server Analysis Services
 ### [Suspend-AzureRmAnalysisServicesServer](Suspend-AzureRmAnalysisServicesServer.md)
 Menangguhkan contoh server Analysis Services
 
-### [Test-AzureRmAnalysisServicesServer](Test-AzureRmAnalysisServicesServer.md)
+### [Uji-AzureRmAnalysisServicesServer](Test-AzureRmAnalysisServicesServer.md)
 Menguji keberadaan contoh server Analysis Services
 

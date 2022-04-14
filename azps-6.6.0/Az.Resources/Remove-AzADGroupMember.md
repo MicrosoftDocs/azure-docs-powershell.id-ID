@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADGroupMember.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADGroupMember.md
 ms.openlocfilehash: f0489633abb6d1ef52edd602ad10da1d5e527622
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140385143"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141796298"
 ---
 # Remove-AzADGroupMember
 
@@ -20,7 +20,7 @@ Menghapus pengguna dari grup AD.
 [!INCLUDE [msgraph-migration-banner](../../includes/msgraph-migration-banner.md)]
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/remove-azadgroupmember) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-azadgroupmember) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -71,7 +71,7 @@ Menghapus pengguna dari grup AD.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus pengguna dari grup berdasarkan id objek
+### Contoh 1: Menghapus pengguna dari grup menurut id objek
 
 ```powershell
 PS C:\> Remove-AzADGroupMember -MemberObjectId D9076BBC-D62C-4105-9C78-A7F5BC4A3405 -GroupObjectId 85F89C90-780E-4AA6-9F4F-6F268D322EEE
@@ -79,17 +79,17 @@ PS C:\> Remove-AzADGroupMember -MemberObjectId D9076BBC-D62C-4105-9C78-A7F5BC4A3
 
 Menghapus pengguna dengan id objek 'D9076BBC-D62C-4105-9C78-A7F5BC4A3405' dari grup dengan id objek '85F89C90-780E-4AA6-9F4F-6F268D322EEE'.
 
-### Contoh 2: Hapus pengguna dari grup dengan pemipaan
+### Contoh 2: Menghapus pengguna dari grup dengan pipa
 
 ```powershell
 PS C:\> Get-AzADGroup -ObjectId 85F89C90-780E-4AA6-9F4F-6F268D322EEE | Remove-AzADGroupMember -MemberObjectId D9076BBC-D62C-4105-9C78-A7F5BC4A3405
 ```
 
-Dapatkan grup dengan id objek '85F89C90-780E-4AA6-9F4F-6F268D322EEE' dan  pipes ke cmdlet Remove-AzADGroupMember untuk menghapus pengguna ke grup itu.
+Mendapatkan grup dengan id objek '85F89C90-780E-4AA6-9F4F-6F268D322EEE' dan menyalurkannya ke cmdlet Remove-AzADGroupMember untuk menghapus pengguna ke grup itu.
 
 ### Contoh 3
 
-Menghapus pengguna dari grup AD. (otomatisgenerated)
+Menghapus pengguna dari grup AD. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupObject
-Representasi objek grup yang akan dihapus anggotanya.
+Representasi objek grup untuk menghapus anggota.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ActiveDirectory.PSADGroup
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupObjectId
-Id objek grup yang akan dihapus anggotanya.
+Id objek grup untuk menghapus anggota.
 
 ```yaml
 Type: System.String
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -MemberUserPrincipalName
-UPN anggota untuk dihapus.
+UPN anggota yang akan dihapus.
 
 ```yaml
 Type: System.String[]
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -235,11 +235,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.ActiveDirectory.LINUXDGroup
+### Microsoft.Azure.Commands.ActiveDirectory.PSADGroup
 
 ## OUTPUTS
 

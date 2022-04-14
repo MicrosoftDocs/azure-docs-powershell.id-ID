@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseInstanceFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseInstanceFailoverGroup.md
 ms.openlocfilehash: f029f9fd429a08c3bc089f8d8d2d7c644a8faf4d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140245951"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141903999"
 ---
 # Get-AzSqlDatabaseInstanceFailoverGroup
 
 ## SYNOPSIS
-Mendapatkan atau mencantumkan Grup Failover Instance.
+Mendapatkan atau mencantumkan Grup Failover Instans.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqldatabaseinstancefailovergroup) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabaseinstancefailovergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,9 +28,9 @@ Get-AzSqlDatabaseInstanceFailoverGroup [[-Name] <String>] [-ResourceGroupName] <
 ```
 
 ## DESCRIPTION
-Mendapatkan Grup Failover Instans tertentu atau mencantumkan Grup Failover Instance di suatu kawasan di bawah langganan pengguna.
+Mendapatkan Grup Failover Instans tertentu atau mencantumkan Grup Failover Instans di wilayah di bawah langganan pengguna.
 
-Setiap kawasan dalam Grup Failover Contoh dapat digunakan untuk menjalankan perintah. Nilai yang dikembalikan akan mencerminkan status Instans Terkelola di kawasan tersebut yang terkait dengan Grup Failover Instans.
+Salah satu kawasan dalam Grup Failover Instans dapat digunakan untuk menjalankan perintah. Nilai yang dikembalikan akan mencerminkan status Instans Terkelola di wilayah tersebut sehubungan dengan Grup Failover Instans.
 
 ## EXAMPLES
 
@@ -55,7 +55,7 @@ Output:
 }
 ```
 
-Mencantumkan semua Grup Failover di kawasan ini
+Mencantumkan semua Grup Failover di kawasan
 
 ### Contoh 2
 ```
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Nama Kawasan Lokal untuk mengambil Contoh Grup Failover.
+Nama Kawasan Lokal tempat untuk mengambil Grup Failover Instans.
 
 ```yaml
 Type: System.String
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Grup Failover Contoh untuk diambil.
+Nama Grup Failover Instans untuk diambil.
 
 ```yaml
 Type: System.String
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -149,7 +149,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.sql.InstanceFailoverGroup.Model.AzureSqlInstanceFailoverGroupModel
+### Microsoft.Azure.Commands.Sql.InstanceFailoverGroup.Model.AzureSqlInstanceFailoverGroupModel
 
 ## CATATAN
 

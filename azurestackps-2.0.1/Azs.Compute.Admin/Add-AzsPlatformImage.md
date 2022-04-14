@@ -3,12 +3,12 @@ external help file: ''
 Module Name: Azs.Compute.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.compute.admin/add-azsplatformimage
 schema: 2.0.0
-ms.openlocfilehash: fcf7198f2714ef8f3dcd215fa47f19c460b1653d708d334df0a19f0d7409333a
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 127cbe1efb710fff04420590985e97ee72a196a9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416169"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141770443"
 ---
 # Add-AzsPlatformImage
 
@@ -25,7 +25,7 @@ Add-AzsPlatformImage -Offer <String> -Publisher <String> -Sku <String> -Version 
  [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Buat
+### Membuat
 ```
 Add-AzsPlatformImage -Offer <String> -Publisher <String> -Sku <String> -Version <String>
  -NewImage <IPlatformImageParameters> [-Location <String>] [-SubscriptionId <String>]
@@ -65,11 +65,11 @@ ProvisioningState : Succeeded
 #Type              : Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions
 ```
 
-Tambahkan Gambar Platform dari Storage Blob. Gunakan SasUri untuk menentukan lokasi PlatformImage, atau gunakan URL yang dapat diakses secara publik.
+Tambahkan Gambar Platform dari blob Storage. Gunakan SasUri untuk menentukan lokasi PlatformImage, atau gunakan URL yang dapat diakses secara publik.
 
 ## PARAMETERS
 
-### Exception.Message
+### Pengecualian.Pesan
 ```yaml
 Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -BillingPartNumber
-Nomor komponen digunakan untuk tagihan biaya perangkat lunak.
+Nomor komponen digunakan untuk menagih biaya perangkat lunak.
 
 ```yaml
 Type: System.String
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.IComputeAdminIdentity
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 
 ### -NewImage
 Parameter yang digunakan untuk membuat gambar platform baru.
-Untuk membuat, lihat bagian CATATAN untuk properti NEWIMAGE dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti NEWIMAGE dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20151201Preview.IPlatformImageParameters
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 
 ```
 
-### -Offer
+### -Penawaran
 Nama penawaran.
 
 ```yaml
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -OsType
-Jenis sistem operasi.
+Tipe sistem operasi.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Support.OSType
@@ -230,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### -OsUri
-Lokasi disk.
+Lokasi diska.
 
 ```yaml
 Type: System.String
@@ -294,8 +294,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -327,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -344,9 +344,9 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
-### Exception.Message
+### Pengecualian.Pesan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -362,7 +362,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -378,30 +378,30 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-DATADISKS <menggunakan IDataDisk[]>: Disk data yang digunakan oleh gambar platform.
+DATADISKS <IDataDisk[]>: Disk data yang digunakan oleh gambar platform.
   - `[Lun <Int32?>]`: Nomor unit logika.
   - `[Uri <String>]`: Lokasi templat disk.
 
-INPUTOBJECT <IComputeAdminIdentity> : Parameter Identitas
-  - `[DiskId <String>]`: Disk guid sebagai identitas.
+INPUTOBJECT <IComputeAdminIdentity>: Parameter Identitas
+  - `[DiskId <String>]`: Disk memandu sebagai identitas.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Lokasi sumber daya.
-  - `[MigrationId <String>]`: Nama guid pekerjaan migrasi.
+  - `[MigrationId <String>]`: Nama panduan pekerjaan migrasi.
   - `[Offer <String>]`: Nama penawaran.
   - `[Publisher <String>]`: Nama penerbit.
   - `[QuotaName <String>]`: Nama kuota.
   - `[Sku <String>]`: Nama SKU.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
-  - `[Type <String>]`: Tipe ekstensi.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+  - `[Type <String>]`: Jenis ekstensi.
   - `[Version <String>]`: Versi sumber daya.
 
-NEWIMAGE <IPlatformImageParameters> : Parameter yang digunakan untuk membuat gambar platform baru.
+NEWIMAGE <IPlatformImageParameters>: Parameter yang digunakan untuk membuat gambar platform baru.
   - `[DataDisk <IDataDisk[]>]`: Disk data yang digunakan oleh gambar platform.
     - `[Lun <Int32?>]`: Nomor unit logika.
     - `[Uri <String>]`: Lokasi templat disk.
-  - `[DetailBillingPartNumber <String>]`: Nomor komponen digunakan untuk tagihan biaya perangkat lunak.
+  - `[DetailBillingPartNumber <String>]`: Nomor bagian digunakan untuk menagih biaya perangkat lunak.
   - `[OSDiskOstype <OSType?>]`: Jenis sistem operasi.
   - `[OSDiskUri <String>]`: Lokasi disk.
   - `[ProvisioningState <ProvisioningState?>]`: Status penyediaan gambar platform.

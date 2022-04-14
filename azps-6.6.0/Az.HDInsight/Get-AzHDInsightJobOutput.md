@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightJobOutput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightJobOutput.md
 ms.openlocfilehash: 46b9a5ba4caaaf169527c2bab54ca7616e165933
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140310667"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141867650"
 ---
 # Get-AzHDInsightJobOutput
 
@@ -19,7 +19,7 @@ ms.locfileid: "140310667"
 Mendapatkan output log untuk pekerjaan dari akun penyimpanan yang terkait dengan kluster tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hdinsight/get-azhdinsightjoboutput) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/get-azhdinsightjoboutput) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,11 +31,11 @@ Get-AzHDInsightJobOutput [-ClusterName] <String> [-JobId] <String> [[-DefaultCon
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzHDInsightJobOutput** mendapatkan output log untuk pekerjaan dari akun Storage yang terkait dengan kluster Azure HDInsight.
+Cmdlet **Get-AzHDInsightJobOutput** mendapatkan output log untuk pekerjaan dari akun Storage yang terkait dengan cluster Azure HDInsight.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan output log untuk pekerjaan
+### Contoh 1: Dapatkan output log untuk pekerjaan
 ```
 PS C:\># Cluster info
 PS C:\> $clusterName = "your-hadoop-001"
@@ -55,7 +55,7 @@ PS C:\> New-AzHDInsightHiveJobDefinition -StatusFolder $statusFolder `
             -ClusterCredential $clusterCreds
 ```
 
-Perintah ini mendapatkan output log dari kluster yang bernama up-hadoop-001.
+Perintah ini mendapatkan output log dari kluster bernama your-hadoop-001.
 
 ## PARAMETERS
 
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultStorageAccountKey
-Menentukan pengaturan Storage akun default.
+Menentukan kunci akun Storage default.
 
 ```yaml
 Type: System.String
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultStorageAccountName
-Menentukan nama Storage default.
+Menentukan nama akun Storage default.
 
 ```yaml
 Type: System.String
@@ -153,8 +153,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpCredential
-Menentukan kredensial masuk kluster (HTTP) untuk kluster tersebut.
+### -HttpCredential
+Menentukan kredensial masuk kluster (HTTP) untuk kluster.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobId
-Menentukan ID pekerjaan pekerjaan yang outputnya akan diambil.
+Menentukan ID pekerjaan dari pekerjaan yang outputnya akan di ambil.
 
 ```yaml
 Type: System.String
@@ -199,11 +199,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

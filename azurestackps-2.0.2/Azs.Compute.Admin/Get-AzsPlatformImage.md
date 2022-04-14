@@ -3,17 +3,17 @@ external help file: ''
 Module Name: Azs.Compute.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.compute.admin/get-azsplatformimage
 schema: 2.0.0
-ms.openlocfilehash: 7fb868f649954c8bc3e79f21d3c467fb250172e7416a2967bac95aae30299345
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: d91e930c486fea5c7a17e5a8f7d8f8d30a88b351
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417493"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141769208"
 ---
 # Get-AzsPlatformImage
 
 ## SYNOPSIS
-Mengembalikan gambar platform tertentu yang cocok dengan publisher, offer, skus, dan versi.
+Mengembalikan penerbit, penawaran, sku, dan versi pencocokan gambar platform tertentu.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-AzsPlatformImage [-Location <String>] [-SubscriptionId <String[]>] [-Default
  [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsPlatformImage -Offer <String> -Publisher <String> -Sku <String> -Version <String> [-Location <String>]
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -35,7 +35,7 @@ Get-AzsPlatformImage -InputObject <IComputeAdminIdentity> [-DefaultProfile <PSOb
 ```
 
 ## DESCRIPTION
-Mengembalikan gambar platform tertentu yang cocok dengan publisher, offer, skus, dan versi.
+Mengembalikan penerbit, penawaran, sku, dan versi pencocokan gambar platform tertentu.
 
 ## EXAMPLES
 
@@ -58,7 +58,7 @@ Type              : Microsoft.Compute.Admin/locations/artifactTypes/publishers/o
 
 Dapatkan daftar semua Gambar Platform dengan membiarkan semua parameter kosong.
 
-### Contoh 2: Dapatkan gambar platform tertentu
+### Contoh 2: Dapatkan Gambar Platform Tertentu
 ```powershell
 PS C:\> Get-AzsPlatformImage -Offer ExampleOffer -Publisher ExamplePublisher -Location local -Sku ExampleSku -Version 1.0.0
 
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.IComputeAdminIdentity
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 
 ```
 
-### -Offer
+### -Penawaran
 Nama penawaran.
 
 ```yaml
@@ -176,8 +176,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -223,19 +223,19 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IComputeAdminIdentity> : Parameter Identitas
-  - `[DiskId <String>]`: Disk guid sebagai identitas.
+INPUTOBJECT <IComputeAdminIdentity>: Parameter Identitas
+  - `[DiskId <String>]`: Disk memandu sebagai identitas.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Lokasi sumber daya.
-  - `[MigrationId <String>]`: Nama guid pekerjaan migrasi.
+  - `[MigrationId <String>]`: Nama panduan pekerjaan migrasi.
   - `[Offer <String>]`: Nama penawaran.
   - `[Publisher <String>]`: Nama penerbit.
   - `[QuotaName <String>]`: Nama kuota.
   - `[Sku <String>]`: Nama SKU.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
-  - `[Type <String>]`: Tipe ekstensi.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+  - `[Type <String>]`: Jenis ekstensi.
   - `[Version <String>]`: Versi sumber daya.
 
 ## RELATED LINKS

@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Stop-AzureRmRecoveryServicesAsrJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Stop-AzureRmRecoveryServicesAsrJob.md
 ms.openlocfilehash: 14f24f9b9659b6668041b800462eca422fb67c97
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423293"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141882050"
 ---
 # Stop-AzureRmRecoveryServicesAsrJob
 
 ## SYNOPSIS
-Menghentikan pekerjaan Pemulihan Situs Azure.
+Menghentikan pekerjaan azure Site Recovery.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -34,7 +34,7 @@ Stop-AzureRmRecoveryServicesAsrJob -Name <String> [-DefaultProfile <IAzureContex
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzureRmRecoveryServicesAsrJob** menghentikan pekerjaan Pemulihan Situs Azure tertentu.
+Cmdlet **Stop-AzureRmRecoveryServicesAsrJob** menghentikan pekerjaan Site Recovery Azure yang ditentukan.
 
 ## EXAMPLES
 
@@ -43,7 +43,7 @@ Cmdlet **Stop-AzureRmRecoveryServicesAsrJob** menghentikan pekerjaan Pemulihan S
 PS C:\> $currentJob = Stop-AzureRmRecoveryServicesAsrJob -Job $Job
 ```
 
-Mencoba menghentikan pekerjaan tertentu dan mengembalikan objek pekerjaan ASR yang diperbarui.
+Berusaha menghentikan pekerjaan yang ditentukan dan mengembalikan objek pekerjaan ASR yang diperbarui.
 
 ## PARAMETERS
 
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Input: Menentukan objek pekerjaan ASR yang terkait dengan pekerjaan ASR yang akan dihentikan
+Objek Input: Tentukan objek pekerjaan ASR yang terkait dengan pekerjaan ASR yang akan dihentikan
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRJob
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Tentukan Pekerjaan ASR untuk dihentikan dengan nama pekerjaan ASR.
+Tentukan Tugas ASR yang akan dihentikan oleh nama pekerjaan ASR.
 
 ```yaml
 Type: System.String
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

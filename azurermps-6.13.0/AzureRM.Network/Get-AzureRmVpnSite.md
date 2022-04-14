@@ -6,18 +6,18 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmVpnSite.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmVpnSite.md
 ms.openlocfilehash: 0277e61a6b1b180691908b2e86c0050eb8d62b1d
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140855885"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141883436"
 ---
 # Get-AzureRmVpnSite
 
 ## SYNOPSIS
-Mendapatkan sumber daya Azure VpnSite menurut nama ATAU mencantumkan semua Situs Vpn dalam Grup Sumber Daya atau SubscriptionId. 
+Mendapatkan sumber daya Azure VpnSite menurut nama OR mencantumkan semua VpnSites dalam ResourceGroup atau SubscriptionId. 
 
-Ini adalah representasi RM cabang pelanggan yang diunggah ke Azure untuk konektivitas S2S dengan hub virtual Cortex.
+Ini adalah representasi RM dari cabang pelanggan yang diunggah ke Azure untuk konektivitas S2S dengan hub virtual Cortex.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -35,7 +35,7 @@ Get-AzureRmVpnSite -ResourceGroupName <String> [-Name <String>] [-DefaultProfile
 ```
 
 ## DESCRIPTION
-Mendapatkan sumber daya Azure VpnSite menurut nama ATAU mencantumkan semua Situs Vpn dalam Grup Sumber Daya atau SubscriptionId. 
+Mendapatkan sumber daya Azure VpnSite menurut nama OR mencantumkan semua VpnSites dalam ResourceGroup atau SubscriptionId. 
 
 ## EXAMPLES
 
@@ -62,11 +62,11 @@ Type              : Microsoft.Network/vpnSites
 ProvisioningState : Succeeded
 ```
 
-Langkah di atas akan membuat grup sumber daya, Virtual WAN di AS Barat dalam grup sumber daya "testRG" di Azure. 
+Hal di atas akan membuat grup sumber daya, Virtual WAN di AS Barat dalam grup sumber daya "testRG" di Azure. 
 
-Lalu membuat VpnSite untuk mewakili cabang pelanggan dan menautkannya ke Virtual WAN.
+Kemudian membuat VpnSite untuk mewakili cabang pelanggan dan menautkannya ke Virtual WAN.
 
-Setelah dibuat, situs akan mendapatkan situs menggunakan Get-AzureRmVpnSite baru.
+Setelah situs dibuat, situs akan mendapatkan situs menggunakan perintah Get-AzureRmVpnSite.
 
 ## PARAMETERS
 
@@ -116,15 +116,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Network.Models.PSVpnSite
+### Situs Microsoft.Azure.Commands.Network.Models.PSVpnSite
 
 ## CATATAN
 

@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.opera
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/OperationalInsights/Commands.OperationalInsights/help/Get-AzureRmOperationalInsightsWorkspaceSharedKeys.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/OperationalInsights/Commands.OperationalInsights/help/Get-AzureRmOperationalInsightsWorkspaceSharedKeys.md
-ms.openlocfilehash: 328854be0b81b2157e182fea32da397526f9395c7d79a3af9a8bdfd94fe2dc19
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 07d0834b89010ff533e1620f29904ea159d3dfea
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419448"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141882544"
 ---
 # Get-AzureRmOperationalInsightsWorkspaceSharedKeys
 
@@ -28,30 +28,30 @@ Get-AzureRmOperationalInsightsWorkspaceSharedKeys [-ResourceGroupName] <String> 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmOperationalInsightsWorkspaceSharedKeys** mencantumkan kunci bersama untuk ruang kerja.
-Kunci tersebut digunakan untuk menyambungkan agen-Insights Operasional ke ruang kerja.
+Cmdlet **Get-AzureRmOperationalInsightsWorkspaceSharedKeys mencantumkan** kunci bersama untuk ruang kerja.
+Kunci digunakan untuk menyambungkan agen Insights Operasional ke ruang kerja.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kunci bersama dengan nama ruang kerja
+### Contoh 1: Dapatkan kunci bersama menurut nama ruang kerja
 ```
 PS C:\>Get-AzureRmOperationalInsightsWorkspaceSharedKeys -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace"
 ```
 
-Perintah ini mendapatkan kunci bersama untuk ruang kerja yang bernama MyWorkspace dalam grup sumber daya bernama ContosoResourceGroup.
+Perintah ini mendapatkan kunci bersama untuk ruang kerja bernama MyWorkspace dalam grup sumber daya bernama ContosoResourceGroup.
 
-### Contoh 2: Get shared keys by using the pipeline
+### Contoh 2: Dapatkan kunci bersama menggunakan pipeline
 ```
 PS C:\>Get-AzureRmOperationalInsightsWorkspace -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace" | Get-AzureRmOperationalInsightsWorkspaceSharedKeys
 ```
 
-Perintah ini mengambil ruang kerja bernama MyWorkspace menggunakan cmdlet Get-AzureRmOperationalInsightsWorkspace, lalu meneruskan ruang kerja ke cmdlet **Get-AzureRmOperationalInsightsWorkspaceSharedKeys.**
-Perintah tersebut akan mendapatkan kunci bersama untuk ruang kerja tersebut.
+Perintah ini mendapatkan ruang kerja bernama MyWorkspace menggunakan cmdlet Get-AzureRmOperationalInsightsWorkspace, lalu meneruskan ruang kerja ke cmdlet **Get-AzureRmOperationalInsightsWorkspaceSharedKeys** .
+Perintah akan mendapatkan kunci bersama untuk ruang kerja tersebut.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -110,7 +110,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Cmdlet Azure Operational Insights](./AzureRM.OperationalInsights.md)
+[Cmdlet Insights Operasional Azure](./AzureRM.OperationalInsights.md)
 
 [Get-AzureRmOperationalInsightsWorkspace](./Get-AzureRmOperationalInsightsWorkspace.md)
 

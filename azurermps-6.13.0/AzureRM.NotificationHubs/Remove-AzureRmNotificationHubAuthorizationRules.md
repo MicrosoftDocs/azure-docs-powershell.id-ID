@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/NotificationHubs/Commands.NotificationHubs/help/Remove-AzureRmNotificationHubAuthorizationRules.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/NotificationHubs/Commands.NotificationHubs/help/Remove-AzureRmNotificationHubAuthorizationRules.md
 ms.openlocfilehash: 7e731052219c796b6e8453c64accd0cf8c25895a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428201"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141882533"
 ---
 # Remove-AzureRmNotificationHubAuthorizationRules
 
@@ -29,13 +29,13 @@ Remove-AzureRmNotificationHubAuthorizationRules [-ResourceGroup] <String> [-Name
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmNotificationHubAuthorizationRules** menghapus aturan otorisasi Shared Access Signature (SAS) dari hub pemberitahuan.
-Aturan otorisasi mengelola akses ke hub pemberitahuan Anda melalui pembuatan link, sebagai URI, berdasarkan pada tingkat izin yang berbeda.
-Tingkat izin bisa menjadi salah satu dari yang berikut: 
-- Dengarkan
-- Kirim
+Cmdlet **Hapus-AzureRmNotificationHubAuthorizationRules** menghapus aturan otorisasi Tanda Tangan Akses Bersama (SAS) dari hub pemberitahuan.
+Aturan otorisasi mengelola akses ke hub pemberitahuan Anda melalui pembuatan tautan, sebagai URI, berdasarkan tingkat izin yang berbeda.
+Tingkat izin bisa menjadi salah satu hal berikut ini: 
+- Mendengarkan
+- Mengirim
 - Kelola Klien diarahkan ke salah satu URI ini berdasarkan tingkat izin yang sesuai.
-Misalnya, klien yang diberikan izin Dengarkan akan diarahkan ke URI untuk izin tersebut.
+Misalnya, klien yang diberi izin Dengar akan diarahkan ke URI untuk izin tersebut.
 Menghapus aturan otorisasi juga menghapus izin pengguna terkait.
 
 ## EXAMPLES
@@ -45,8 +45,8 @@ Menghapus aturan otorisasi juga menghapus izin pengguna terkait.
 PS C:\>Remove-AzureRmNotificationHubAuthorizationRules -Namespace "ContosoNamespace" -NotificationHub "ContosoExternalHub" -ResourceGroup "ContosoNotificationsGroup" -AuthorizationRule "ListenRule"
 ```
 
-Perintah ini menghapus aturan otorisasi yang bernama ListenRule dari hub pemberitahuan yang bernama ContosoExternalHub.
-Saat Anda menjalankan perintah ini Anda harus menentukan ruang nama dan grup sumber daya yang ditetapkan hub.
+Perintah ini menghapus aturan otorisasi bernama ListenRule dari hub pemberitahuan bernama ContosoExternalHub.
+Ketika menjalankan perintah ini, Anda harus menentukan ruang nama dan grup sumber daya tempat hub ditetapkan.
 
 ## PARAMETERS
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -80,8 +80,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroup
 Menentukan grup sumber daya tempat hub pemberitahuan ditetapkan.
-Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu manajemen inventaris dan administrasi Azure.
+Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang hanya membantu manajemen inventaris dan administrasi Azure.
 
 ```yaml
 Type: System.String
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -190,7 +190,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmNotificationHubAuthorizationRules](./Get-AzureRmNotificationHubAuthorizationRules.md)
 
-[New-AzureRmNotificationHubAuthorizationRules](./New-AzureRmNotificationHubAuthorizationRules.md)
+[AzureRmNotificationHubAuthorizationRules baru](./New-AzureRmNotificationHubAuthorizationRules.md)
 
 [Set-AzureRmNotificationHubAuthorizationRules](./Set-AzureRmNotificationHubAuthorizationRules.md)
 

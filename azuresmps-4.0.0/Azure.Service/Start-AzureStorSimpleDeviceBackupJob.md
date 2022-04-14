@@ -3,17 +3,17 @@ external help file: Microsoft.WindowsAzure.Commands.StorSimple.dll-Help.xml
 ms.assetid: 76826524-480F-458E-A996-A9DBACB8BA9E
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 6f9f7e2f6579ff5003724154b62ce2ebf9f4aa6e513e7aa9814f89c2016446e4
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 8600d9f8da026f403b9ad366ea0d40dab4bb08ff
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417679"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141815974"
 ---
 # Start-AzureStorSimpleDeviceBackupJob
 
 ## SYNOPSIS
-Memulai pekerjaan baru yang membuat cadangan dari kebijakan pencadangan yang sudah ada.
+Memulai pekerjaan baru yang membuat cadangan dari kebijakan cadangan yang sudah ada.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -32,9 +32,9 @@ Start-AzureStorSimpleDeviceBackupJob -DeviceName <String> -BackupPolicyId <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzureStorSimpleDeviceBackupJob** memulai pekerjaan baru yang membuat cadangan dari kebijakan pencadangan yang sudah ada pada perangkat StorSimple.
+Cmdlet **Start-AzureStorSimpleDeviceBackupJob** memulai pekerjaan baru yang membuat cadangan dari kebijakan cadangan yang sudah ada di perangkat StorSimple.
 Secara default, cmdlet ini membuat cadangan snapshot lokal.
-Untuk membuat cadangan awan, tentukan nilai CloudSnapshot untuk parameter *BackupType.*
+Untuk membuat cadangan cloud, tentukan nilai CloudSnapshot untuk parameter *BackupType* .
 
 ## EXAMPLES
 
@@ -49,9 +49,9 @@ VERBOSE: Your backup operation has been submitted for processing. Use commandlet
 fb9acdca-ed6f-4b69-93f2-5c0bce0a1e08" to track status.
 ```
 
-Perintah ini membuat cadangan snapshot lokal untuk ID kebijakan yang ditentukan.
-Perintah ini memulai pekerjaan, lalu mengembalikan objek **TaskResponse.**
-Untuk melihat status pekerjaan, gunakan cmdlet **Get-AzureStorSimpleTask.**
+Perintah ini membuat cadangan snapshot lokal untuk ID kebijakan tertentu.
+Perintah ini memulai pekerjaan, lalu mengembalikan objek **TaskResponse** .
+Untuk melihat status pekerjaan, gunakan cmdlet **Get-AzureStorSimpleTask** .
 
 ### Contoh 2: Buat cadangan snapshot awan dan tunggu hingga selesai
 ```
@@ -66,13 +66,13 @@ StatusCode : OK
 RequestId  : f28ecf6cf75a7f128ca18e6ae14f9003
 ```
 
-Perintah ini akan membuat cadangan snapshot awan untuk ID kebijakan yang ditentukan.
-Perintah ini menentukan parameter *WaitForComplete,* sehingga perintah menyelesaikan tugas, lalu mengembalikan objek **TaskStatusInfo** untuk pekerjaan tersebut.
+Perintah ini membuat cadangan snapshot awan untuk ID kebijakan yang ditentukan.
+Perintah ini menentukan parameter *WaitForComplete* , sehingga perintah menyelesaikan tugas, lalu mengembalikan objek **TaskStatusInfo** untuk pekerjaan tersebut.
 
 ## PARAMETERS
 
 ### -BackupPolicyId
-Menentukan ID kebijakan pencadangan untuk digunakan untuk membuat cadangan.
+Menentukan ID kebijakan cadangan yang akan digunakan untuk membuat cadangan.
 
 ```yaml
 Type: String
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceName
-Menentukan nama perangkat StorSimple yang digunakan untuk memulai pekerjaan pencadangan.
+Menentukan nama perangkat StorSimple untuk memulai pekerjaan pencadangan.
 
 ```yaml
 Type: String
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -WaitForComplete
-Menunjukkan bahwa cmdlet ini menunggu hingga operasi selesai sebelum mengembalikan kontrol ke Windows PowerShell baru.
+Menunjukkan bahwa cmdlet ini menunggu operasi selesai sebelum mengembalikan kontrol ke konsol Windows PowerShell.
 
 ```yaml
 Type: SwitchParameter
@@ -148,17 +148,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
 ### TaskStatusInfo, TaskResponse
-Cmdlet ini mengembalikan objek **TaskStatusInfo** jika Anda menentukan parameter *WaitForComplete.*
-Jika Anda tidak menentukan parameter itu, parameter itu mengembalikan **objek TaskResponse.**
+Cmdlet ini mengembalikan objek **TaskStatusInfo** jika Anda menentukan parameter *WaitForComplete* .
+Jika Anda tidak menentukan parameter tersebut, maka akan mengembalikan objek **TaskResponse** .
 
 ## CATATAN
 

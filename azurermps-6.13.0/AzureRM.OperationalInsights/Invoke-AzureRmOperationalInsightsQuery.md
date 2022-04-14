@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.opera
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/OperationalInsights/Commands.OperationalInsights/help/Invoke-AzureRmOperationalInsightsQuery.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/OperationalInsights/Commands.OperationalInsights/help/Invoke-AzureRmOperationalInsightsQuery.md
-ms.openlocfilehash: 84c783361be177ac732ab82500bb72efdbd4a85b9e95afab3768e226071083b3
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 6672bb6f788b06896fdfe9cde44c68639077e5c5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140859464"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141882545"
 ---
 # Invoke-AzureRmOperationalInsightsQuery
 
@@ -50,18 +50,18 @@ PS C:\> $queryResults.Results
 ...
 ```
 
-Setelah diminta, $queryResults.Hasil akan berisi semua baris yang dihasilkan dari kueri Anda.
+Setelah diminta, $queryResults.Results akan berisi semua baris yang dihasilkan dari kueri Anda.
 
-### Contoh 2: Konversi $results. IEnumberable hasil ke array
+### Contoh 2: Convert $results. Hasil IEnumberable untuk array
 ```
 PS C:\> $queryResults = Invoke-AzureRmOperationalInsightsQuery -WorkspaceId "63613592-b6f7-4c3d-a390-22ba13102111" -Query "union * | take 10"
 PS C:\> $resultsArray = [System.Linq.Enumerable]::ToArray($results.Results)
 ...
 ```
 
-Beberapa kueri dapat menghasilkan kumpulan data yang sangat besar yang dikembalikan. Oleh karena itu, perilaku default cmdlet adalah mengembalikan IEnumerable untuk mengurangi biaya memori. Jika lebih memilih untuk mendapatkan hasil larik, Anda dapat menggunakan metode ekstensi LINQ Enumerable.ToArray() untuk mengonversi IEnumerable menjadi larik.
+Beberapa kueri dapat mengakibatkan kumpulan data yang sangat besar dikembalikan. Karena itu, perilaku default cmdlet adalah mengembalikan IEnumerable untuk mengurangi biaya memori. Jika Anda lebih suka memiliki array hasil, Anda bisa menggunakan metode ekstensi LINQ Enumerable.ToArray() untuk mengonversi IEnumerable menjadi array.
 
-### Contoh 3: Dapatkan hasil pencarian menggunakan kueri dalam jangka waktu tertentu
+### Contoh 3: Mendapatkan hasil pencarian menggunakan kueri melalui jangka waktu tertentu
 ```
 PS C:\> $queryResults = Invoke-AzureRmOperationalInsightsQuery -WorkspaceId "63613592-b6f7-4c3d-a390-22ba13102111" -Query "union * | take 10" -Timespan (New-TimeSpan -Hours 24)
 PS C:\> $queryResults.Results
@@ -70,7 +70,7 @@ PS C:\> $queryResults.Results
 
 Hasil dari kueri ini akan dibatasi hingga 24 jam terakhir.
 
-### Contoh 4: Sertakan & kueri dalam hasil kueri
+### Contoh 4: Sertakan statistik & render dalam hasil kueri
 ```
 PS C:\> $queryResults = Invoke-AzureRmOperationalInsightsQuery -WorkspaceId "63613592-b6f7-4c3d-a390-22ba13102111" -Query "union * | take 10" -IncludeRender -IncludeStatistics
 PS C:\> $queryResults.Results
@@ -81,12 +81,12 @@ PS C:\> $queryResults.Statistics
 ...
 ```
 
-Lihat [https://dev.loganalytics.io/documentation/Using-the-API/RequestOptions](https://dev.loganalytics.io/documentation/Using-the-API/RequestOptions) detail tentang info menyajikan dan statistik.
+Lihat [https://dev.loganalytics.io/documentation/Using-the-API/RequestOptions](https://dev.loganalytics.io/documentation/Using-the-API/RequestOptions) detail tentang informasi render dan statistik.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeRender
-Jika ditentukan, informasi penyajian untuk kueri metrik akan disertakan dalam respons.
+Jika ditentukan, penyajian informasi untuk kueri metrik akan disertakan dalam respons.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,8 +160,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Timespan
-Rentang waktu untuk terikat dengan kueri.
+### -Rentang waktu
+Rentang waktu untuk mengikat kueri.
 
 ```yaml
 Type: System.Nullable`1[System.TimeSpan]
@@ -176,8 +176,8 @@ Accept wildcard characters: False
 ```
 
 ### -Tunggu
-Memasukkan batas atas pada jumlah waktu yang dihabiskan server untuk memproses kueri.
-Lihat: https://dev.loganalytics.io/documentation/Using-the-API/Timeouts
+Meletakkan batas atas pada jumlah waktu yang akan dihabiskan server untuk memproses kueri.
+Melihat: https://dev.loganalytics.io/documentation/Using-the-API/Timeouts
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

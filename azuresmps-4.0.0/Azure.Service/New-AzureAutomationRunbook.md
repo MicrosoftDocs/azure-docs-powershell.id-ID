@@ -4,17 +4,17 @@ ms.assetid: 0B496085-670D-45F7-B989-D4541A3811FF
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 85121253c1ae84eb4e11e99dfce897dece785df8
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423226"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141816638"
 ---
 # New-AzureAutomationRunbook
 
 ## SYNOPSIS
 
-Membuat buku runbook.
+Membuat runbook.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -36,12 +36,12 @@ New-AzureAutomationRunbook -Path <String> [-Description <String>] [-Tags <String
 
 [!INCLUDE [aa-deprecation](../include/aa-deprecation.md)]
 
-Cmdlet **New-AzureAutomationRunbook** membuat buku kerja kosong Microsoft Azure otomatisasi yang baru.
-Tentukan nama untuk membuat buku jalankan baru.
+Cmdlet **New-AzureAutomationRunbook** membuat runbook Microsoft Azure Otomatisasi baru yang kosong.
+Tentukan nama untuk membuat runbook baru.
 
-Anda juga bisa menentukan jalur ke file Windows PowerShell script (.ps1 ) untuk mengimpor runbook.
-Skrip untuk mengimpor harus berisi satu definisi Windows PowerShell Kerja.
-Nama alur kerja Windows PowerShell Alur Kerja menjadi nama buku jalankan.
+Anda juga dapat menentukan jalur ke file skrip Windows PowerShell (.ps1) untuk mengimpor runbook.
+Skrip yang diimpor harus berisi definisi alur kerja Windows PowerShell tunggal.
+Nama alur kerja Windows PowerShell ini menjadi nama runbook.
 
 ## EXAMPLES
 
@@ -50,7 +50,7 @@ Nama alur kerja Windows PowerShell Alur Kerja menjadi nama buku jalankan.
 PS C:\> New-AzureAutomationRunbook -AutomationAccountName "Contoso17" -Name "Runbook02"
 ```
 
-Perintah ini membuat runbook baru bernama Runbook02 dalam akun Otomatisasi yang bernama Contoso17.
+Perintah ini membuat runbook baru bernama Runbook02 di akun Automation bernama Contoso17.
 
 ## PARAMETERS
 
@@ -99,7 +99,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Path
+### -Jalur
 Menentukan jalur.
 
 ```yaml
@@ -115,8 +115,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -130,7 +130,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tag
+### -Tags
 Menentukan tag untuk runbook.
 
 ```yaml
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -162,7 +162,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Publish-AzureAutomationRunbook](./Publish-AzureAutomationRunbook.md)
 
-[Remove-AzureAutomationRunbook](./Remove-AzureAutomationRunbook.md)
+[Hapus-AzureAutomationRunbook](./Remove-AzureAutomationRunbook.md)
 
 [Set-AzureAutomationRunbook](./Set-AzureAutomationRunbook.md)
 

@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmVpnConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmVpnConnection.md
 ms.openlocfilehash: 8b7d0845e6a8fce2d6c496573a493dfd187c34af
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140858405"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141883395"
 ---
 # New-AzureRmVpnConnection
 
 ## SYNOPSIS
-Membuat koneksi IPSec yang menyambungkan VpnGateway ke cabang pelanggan jarak jauh yang dinyatakan dalam RM sebagai VpnSite.
+Membuat koneksi IPSec yang menyambungkan VpnGateway ke cabang pelanggan jarak jauh yang dinyatakan dalam RM sebagai Situs Vpn.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -70,7 +70,7 @@ New-AzureRmVpnConnection -ParentResourceId <String> -Name <String> -VpnSiteId <S
 ```
 
 ## DESCRIPTION
-Membuat koneksi IPSec yang menyambungkan VpnGateway ke cabang pelanggan jarak jauh yang dinyatakan dalam RM sebagai VpnSite.
+Membuat koneksi IPSec yang menyambungkan VpnGateway ke cabang pelanggan jarak jauh yang dinyatakan dalam RM sebagai Situs Vpn.
 
 ## EXAMPLES
 
@@ -104,14 +104,14 @@ Etag                      : W/"4580a2e2-2fab-4cff-88eb-92013a76b5a8"
 Id                        : /subscriptions/{subscriptionId}/resourceGroups/ps9361/providers/Microsoft.Network/vpnGateways/testvpngw/vpnConnections/testConnection
 ```
 
-Langkah di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub, dan VpnSite di AS Barat dalam grup sumber daya "testRG" di Azure. Gateway VPN akan dibuat setelahnya di Virtual Hub dengan 2 unit skala.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual, dan Situs Vpn di AS Barat dalam grup sumber daya "testRG" di Azure. Gateway VPN akan dibuat setelahnya di Hub Virtual dengan 2 unit skala.
 
-Setelah gateway dibuat, gateway itu tersambung ke Situs Vpn menggunakan New-AzureRmVpnConnection jaringan.
+Setelah gateway dibuat, gateway tersambung ke VpnSite menggunakan perintah New-AzureRmVpnConnection.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionBandwidthInMbps
-Pita yang perlu ditangani dengan koneksi ini dalam mbps.
+Bandwith yang perlu ditangani oleh koneksi ini dalam mbps.
 
 ```yaml
 Type: System.UInt32
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableBgp
-Mengaktifkan BGP untuk koneksi ini
+Aktifkan BGP untuk koneksi ini
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpSecPolicy
-Pita yang perlu ditangani dengan koneksi ini dalam mbps.
+Bandwith yang perlu ditangani oleh koneksi ini dalam mbps.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSIpsecPolicy
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-VpnGateway induk untuk koneksi ini.
+VpnGateway induk untuk sambungan ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVpnGateway
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentResourceId
-Id sumber daya dari VpnGateway induk untuk koneksi ini.
+Id sumber daya dari induk VpnGateway untuk koneksi ini.
 
 ```yaml
 Type: System.String
@@ -261,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -SharedKey
-Kunci bersama diperlukan untuk menyetel koneksi ini.
+Kunci bersama diperlukan untuk menyetel sambungan ini.
 
 ```yaml
 Type: System.Security.SecureString
@@ -292,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnSite
-Situs vpn jarak jauh yang tersambung dengan koneksi jaringan virtual hub ini.
+Situs vpn jauh tempat koneksi jaringan maya hub ini tersambung.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVpnSite
@@ -307,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnSiteId
-Situs vpn jarak jauh yang tersambung dengan koneksi jaringan virtual hub ini.
+Situs vpn jauh tempat koneksi jaringan maya hub ini tersambung.
 
 ```yaml
 Type: System.String
@@ -322,7 +322,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -338,7 +338,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -353,7 +353,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticPool.md
 ms.openlocfilehash: 32fdff830b0c80f295407e53ef7a97330e8480c0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140245933"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141795830"
 ---
 # Get-AzSqlElasticPool
 
 ## SYNOPSIS
-Mendapatkan kolam renang elastis dan nilai propertinya dalam Azure SQL Database.
+Mendapatkan kumpulan elastis dan nilai propertinya dalam Azure SQL Database.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlelasticpool) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlelasticpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,12 +29,12 @@ Get-AzSqlElasticPool [[-ElasticPoolName] <String>] [-ServerName] <String> [-Reso
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlElasticPool mendapatkan** kolam renang elastis dan nilai propertinya.
-Tentukan nama pool elastis yang sudah ada untuk melihat nilai properti hanya untuk pool tersebut.
+Cmdlet **Get-AzSqlElasticPool** mendapatkan kolam elastis dan nilai propertinya.
+Tentukan nama kumpulan elastis yang sudah ada untuk melihat nilai properti hanya untuk kumpulan tersebut.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua kolam renang elastis
+### Contoh 1: Dapatkan semua kumpulan elastis
 ```
 PS C:\>Get-AzSqlElasticPool -ResourceGroupName "ResourceGroup01" -ServerName "Server01"
 ResourceId        : /subscriptions/00000000-0000-0000-0000-000000000001/resourceGroups/resourcegroup01/providers/Microsoft.Sql/servers/server01/elasticPools/elasticpool01
@@ -66,9 +66,9 @@ StorageMB         : 409600
 Tags              :
 ```
 
-Perintah ini akan mendapatkan semua kolam renang elastis di server bernama Server01.
+Perintah ini mendapatkan semua kumpulan elastis di server bernama Server01.
 
-### Contoh 2: Dapatkan kelompok elastis tertentu
+### Contoh 2: Dapatkan kumpulan elastis tertentu
 ```
 PS C:\>Get-AzSqlElasticPool -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -ElasticPoolName "ElasticPool27"
 ResourceId        : /subscriptions/00000000-0000-0000-0000-000000000001/resourceGroups/resourcegroup01/providers/Microsoft.Sql/servers/server01/elasticPools/elasticpool01
@@ -86,9 +86,9 @@ StorageMB         : 409600
 Tags              :
 ```
 
-Perintah ini mendapatkan pool elastis bernama ElastisPool0127 di server bernama Server01.
+Perintah ini mendapatkan kumpulan elastis bernama ElasticPool0127 di server bernama Server01.
 
-### Contoh 3: Dapatkan metrik untuk Azure SQL Database Elastis Pool
+### Contoh 3: Dapatkan metrik untuk Azure SQL Elastic Database Pool
 ```
 PS C:\>Get-AzSqlElasticPool -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -ElasticPoolName "ElasticPool01" | Get-AzMetric -TimeGrain 0:5:0 -MetricName storage_percent
 DimensionName  : 
@@ -147,9 +147,9 @@ TimeGrain      : 00:05:00
 Unit           : Percent
 ```
 
-Perintah ini mengembalikan metrik untuk azure penyimpanan database SQL elastis bernama ElastisPool01.
+Perintah ini mengembalikan metrik untuk kumpulan database elastis Azure SQL bernama ElasticPool01.
 
-### Contoh 4: Dapatkan semua kolam renang elastis menggunakan pemfilteran -ElastisPoolName "ElastisPool*"
+### Contoh 4: Dapatkan semua kumpulan elastis menggunakan pemfilteran -ElasticPoolName "ElasticPool*"
 ```
 PS C:\>Get-AzSqlElasticPool -ResourceGroupName "ResourceGroup01" -ServerName "Server01"
 ResourceId        : /subscriptions/00000000-0000-0000-0000-000000000001/resourceGroups/resourcegroup01/providers/Microsoft.Sql/servers/server01/elasticPools/elasticpool01
@@ -181,12 +181,12 @@ StorageMB         : 409600
 Tags              :
 ```
 
-Perintah ini akan mendapatkan semua kolam renang elastis di server bernama Server01 yang dimulai dengan "ElastisPool".
+Perintah ini mendapatkan semua kumpulan elastis di server bernama Server01 yang dimulai dengan "ElasticPool".
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -200,8 +200,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ElastisPoolName
-Menentukan nama kolam renang elastis yang didaurkan cmdlet ini.
+### -ElasticPoolName
+Menentukan nama kumpulan elastis yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -216,7 +216,7 @@ Accept wildcard characters: True
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi kelompok elastis yang didaurkan cmdlet ini.
+Menentukan nama grup sumber daya yang berisi kumpulan elastis yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server yang berisi kolam elastis yang didaurkan cmdlet ini.
+Menentukan nama server yang berisi kumpulan elastis yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -254,7 +254,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.sql.elastisPool.Model.AzureSqlElasticPoolModel
+### Microsoft.Azure.Commands.Sql.ElasticPool.Model.AzureSqlElasticPoolModel
 
 ## CATATAN
 

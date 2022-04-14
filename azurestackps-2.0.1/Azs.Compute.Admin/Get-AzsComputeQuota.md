@@ -3,17 +3,17 @@ external help file: ''
 Module Name: Azs.Compute.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.compute.admin/get-azscomputequota
 schema: 2.0.0
-ms.openlocfilehash: c270da45ad3bd53c75573edcf6742199b3cf4eb525b38744ea609dd53ae79008
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 81a7a64f1880e2ed9acb2fedd3f90df614f1619d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417793"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141770288"
 ---
 # Get-AzsComputeQuota
 
 ## SYNOPSIS
-Dapatkan Kuota Perhitungan yang sudah ada.
+Dapatkan Kuota Komputasi yang sudah ada.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-AzsComputeQuota [-Location <String>] [-SubscriptionId <String[]>] [-DefaultP
  [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsComputeQuota -Name <String> [-Location <String>] [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -35,11 +35,11 @@ Get-AzsComputeQuota -InputObject <IComputeAdminIdentity> [-DefaultProfile <PSObj
 ```
 
 ## DESCRIPTION
-Dapatkan Kuota Perhitungan yang sudah ada.
+Dapatkan Kuota Komputasi yang sudah ada.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan Semua Kuota Perhitungan
+### Contoh 1: Dapatkan Semua Kuota Komputasi
 ```powershell
 PS C:\> Get-AzsComputeQuota
 
@@ -56,9 +56,9 @@ VMScaleSetCount                    : 100
 VirtualMachineCount                : 100
 ```
 
-Jalankan `Get-AzsComputeQuota` tanpa parameter untuk mendapatkan daftar semua Kuota Perhitungan.
+Jalankan `Get-AzsComputeQuota` tanpa parameter untuk mendapatkan daftar semua Kuota Komputasi.
 
-### Contoh 2: Dapatkan Kuota Perhitungan menurut Nama
+### Contoh 2: Dapatkan Kuota Komputasi menurut Nama
 ```powershell
 PS C:\> Get-AzsComputeQuota -Name ExampleComputeQuotaWithDefaultParameters
 
@@ -75,7 +75,7 @@ VMScaleSetCount                    : 0
 VirtualMachineCount                : 100
 ```
 
-Tentukan nama Kuota di baris perintah untuk mendapatkan kuota tertentu.
+Tentukan nama Kuota pada baris perintah untuk mengambil kuota tertentu.
 
 ## PARAMETERS
 
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.IComputeAdminIdentity
@@ -144,8 +144,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -175,19 +175,19 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IComputeAdminIdentity> : Parameter Identitas
-  - `[DiskId <String>]`: Disk guid sebagai identitas.
+INPUTOBJECT <IComputeAdminIdentity>: Parameter Identitas
+  - `[DiskId <String>]`: Disk memandu sebagai identitas.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Lokasi sumber daya.
-  - `[MigrationId <String>]`: Nama guid pekerjaan migrasi.
+  - `[MigrationId <String>]`: Nama panduan pekerjaan migrasi.
   - `[Offer <String>]`: Nama penawaran.
   - `[Publisher <String>]`: Nama penerbit.
   - `[QuotaName <String>]`: Nama kuota.
   - `[Sku <String>]`: Nama SKU.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
-  - `[Type <String>]`: Tipe ekstensi.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+  - `[Type <String>]`: Jenis ekstensi.
   - `[Version <String>]`: Versi sumber daya.
 
 ## RELATED LINKS

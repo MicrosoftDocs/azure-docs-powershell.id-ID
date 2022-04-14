@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Get-AzureRmRecoveryServicesAsrPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Get-AzureRmRecoveryServicesAsrPolicy.md
 ms.openlocfilehash: aeceb76fe2f1faf6e7e1f2ddf09ee9262370e8ce
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422519"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141882175"
 ---
 # Get-AzureRmRecoveryServicesAsrPolicy
 
@@ -39,7 +39,7 @@ Get-AzureRmRecoveryServicesAsrPolicy -FriendlyName <String> [-DefaultProfile <IA
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmRecoveryServicesAsrPolicy** mendapatkan daftar kebijakan replikasi Pemulihan Situs Azure yang dikonfigurasi atau kebijakan replikasi tertentu menurut nama.
+Cmdlet **Get-AzureRmRecoveryServicesAsrPolicy** mendapatkan daftar kebijakan replikasi Azure Site Recovery yang dikonfigurasi atau kebijakan replikasi tertentu menurut nama.
 
 ## EXAMPLES
 
@@ -48,7 +48,7 @@ Cmdlet **Get-AzureRmRecoveryServicesAsrPolicy** mendapatkan daftar kebijakan rep
 PS C:\> $Policy = Get-AzureRmRecoveryServicesAsrPolicy
 ```
 
-Tunskan kembali daftar kebijakan replikasi
+Menyempurnakan daftar kebijakan replikasi
 
 ### Contoh 2
 ```
@@ -62,7 +62,7 @@ ReplicationProvider         : HyperVReplicaAzure
 ReplicationProviderSettings : Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRHyperVReplicaAzurePolicyDetails
 ```
 
-Kebijakan replikasi Retuns dengan nama.
+Menyempurnakan kebijakan replikasi dengan nama.
 
 ### Contoh 3
 ```
@@ -76,7 +76,7 @@ ReplicationProvider         : HyperVReplicaAzure
 ReplicationProviderSettings : Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRHyperVReplicaAzurePolicyDetails
 ```
 
-Mengembalikan kebijakan replikasi dengan nama yang bersahabat tertentu.
+Mengembalikan kebijakan replikasi dengan nama yang bersahabat yang ditentukan.
 
 ## PARAMETERS
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -FriendlyName
-Menentukan nama yang mudah dikenal dari kebijakan replikasi ASR.
+Menentukan nama yang mudah dikenali dari kebijakan replikasi ASR.
 
 ```yaml
 Type: System.String
@@ -127,15 +127,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
-### System.Collections.Generic.IEnumerable'1[[Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRPolicy, Microsoft.Azure.Commands.RecoveryServices.SiteRecovery, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.IEnumerable'1[[Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRPolicy, Microsoft.Azure.Commands.RecoveryServices.SiteRecovery, Version=4.0.0.0, Culture=netral, PublicKeyToken=null]]
 
 ## CATATAN
 

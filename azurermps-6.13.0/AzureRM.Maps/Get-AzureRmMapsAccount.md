@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Maps/Commands.Maps/help/Get-AzureRmMapsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Maps/Commands.Maps/help/Get-AzureRmMapsAccount.md
 ms.openlocfilehash: 68ccff91f6e233862ba1ee5aa94a3a3d0d8422b9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140853236"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141884013"
 ---
 # Get-AzureRmMapsAccount
 
@@ -39,7 +39,7 @@ Get-AzureRmMapsAccount [-ResourceId] <String> [-DefaultProfile <IAzureContextCon
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzureRmMapsAccount cmdlet mendapatkan akun Azure Peta yang disediakan, baik menurut grup dan nama sumber daya, atau menurut id sumber daya. Selain itu, cmdlet ini dapat mengembalikan daftar semua akun di Grup Sumber Daya, atau semua akun Azure Peta untuk langganan saat ini.
+Cmdlet Get-AzureRmMapsAccount mendapatkan akun Azure Maps yang disediakan, baik menurut nama dan grup sumber daya, atau menurut id sumber daya. Selain itu, cmdlet tersebut dapat mengembalikan daftar semua akun dalam ResourceGroup, atau semua akun Azure Maps untuk langganan saat ini.
 
 ## EXAMPLES
 
@@ -52,7 +52,7 @@ ResourceGroupName AccountName Id
 MyResourceGroup   MyAccount   /subscriptions/21a9967a-e8a9-4656-a70b-96ff1c4d05a0/resourceGroups/MyResourceGroup/providers/Microsoft.Maps/accounts/MyAccount
 ```
 
-Mendapatkan akun bernama MyAccount di grup sumber daya MyResourceGroup, jika ada.
+Mendapatkan akun bernama MyAccount dalam grup sumber daya MyResourceGroup, jika ada.
 
 ### Contoh 2
 ```powershell
@@ -64,7 +64,7 @@ MyResourceGroup   MyAccount   /subscriptions/21a9967a-e8a9-4656-a70b-96ff1c4d05a
 [...]
 ```
 
-Mendapatkan semua akun Azure Peta grup sumber daya MyResourceGroup.
+Mendapatkan semua akun Azure Maps dalam grup sumber daya MyResourceGroup.
 
 ### Contoh 3
 ```powershell
@@ -77,7 +77,7 @@ MyResourceGroup     MyAccount              /subscriptions/21a9967a-e8a9-4656-a70
 [...]
 ```
 
-Mendapatkan semua akun Azure Peta anda dalam langganan saat ini.
+Mendapatkan semua akun Azure Maps dalam langganan saat ini.
 
 ### Contoh 4
 ```powershell
@@ -88,7 +88,7 @@ ResourceGroupName AccountName Id
 MyResourceGroup   MyAccount   /subscriptions/21a9967a-e8a9-4656-a70b-96ff1c4d05a0/resourceGroups/MyResourceGroup/providers/Microsoft.Maps/accounts/MyAccount
 ```
 
-Dapatkan akun Peta yang ditentukan oleh Id Sumber Daya.
+Mendapatkan akun Peta yang ditentukan oleh Id Sumber Daya.
 
 ## PARAMETERS
 
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Peta Akun.
+Peta Nama Akun.
 
 ```yaml
 Type: System.String
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Peta ResourceId Akun.
+Peta Account ResourceId.
 
 ```yaml
 Type: System.String
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

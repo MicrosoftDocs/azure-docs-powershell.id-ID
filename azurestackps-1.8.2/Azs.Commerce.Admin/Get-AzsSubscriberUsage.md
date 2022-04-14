@@ -3,17 +3,17 @@ external help file: Azs.Commerce.Admin-help.xml
 Module Name: Azs.Commerce.Admin
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 4adbfaa0c79ec9d44d138e327cf9a4910320355aef9a8b36419877bbff5c0d24
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 4f45a90d4f8e8c3072393c5dc959885636b64dce
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417016"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141815036"
 ---
 # Get-AzsSubscriberUsage
 
 ## SYNOPSIS
-Dapatkan data penggunaan dari selama jangka waktu yang ditentukan.
+Dapatkan data penggunaan dari rentang waktu yang ditentukan.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ Get-AzsSubscriberUsage [[-SubscriberId] <String>] [-ReportedStartTime] <DateTime
 ```
 
 ## DESCRIPTION
-Dapatkan data penggunaan dari selama jangka waktu yang ditentukan.
+Dapatkan data penggunaan dari rentang waktu yang ditentukan.
 
 ## EXAMPLES
 
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReportedEndTime
-Waktu selesai yang dilaporkan (eksklusif).
+Waktu akhir yang dilaporkan (eksklusif).
 
 ```yaml
 Type: DateTime
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

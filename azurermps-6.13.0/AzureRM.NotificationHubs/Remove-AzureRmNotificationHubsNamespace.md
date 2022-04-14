@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/NotificationHubs/Commands.NotificationHubs/help/Remove-AzureRmNotificationHubsNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/NotificationHubs/Commands.NotificationHubs/help/Remove-AzureRmNotificationHubsNamespace.md
 ms.openlocfilehash: c574fd511bbdcb4c134a2cc99656ebb82614a12c
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428195"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141882540"
 ---
 # Remove-AzureRmNotificationHubsNamespace
 
@@ -28,25 +28,25 @@ Remove-AzureRmNotificationHubsNamespace [-ResourceGroup] <String> [-Namespace] <
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmNotificationHubsNamespace** menghapus ruang nama hub pemberitahuan dari penyebaran Anda.
+Cmdlet **Hapus-AzureRmNotificationHubsNamespace** menghapus ruang nama hub pemberitahuan dari penyebaran Anda.
 Ruang nama adalah wadah logis yang membantu Anda menata dan mengelola hub pemberitahuan.
-Cmdlet **Remove-AzureRmNotificationHubsNamespace** menghapus ruang nama hub pemberitahuan dari penyebaran Anda.
-Saat Anda menjalankan cmdlet ini, ruang nama yang ditentukan akan dihapus bersama dengan semua hub pemberitahuan yang berkaitan dengan ruang nama itu.
+Cmdlet **Hapus-AzureRmNotificationHubsNamespace** menghapus ruang nama hub pemberitahuan dari penyebaran Anda.
+Saat Anda menjalankan cmdlet ini, ruang nama yang ditentukan akan dihapus bersama dengan semua hub pemberitahuan yang terkait dengan ruang nama tersebut.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus ruang nama hub pemberitahuan
+### Contoh 1: Menghapus ruang nama hub pemberitahuan
 ```
 PS C:\>Remove-AzureRmNotificationHubsNamespace -Namespace "ContosoNamespace" -ResourceGroup "ContosoNotificationsGroup"
 ```
 
-Perintah ini menghapus ruang nama ContosoNamespace.
+Perintah ini menghapus ruang nama bernama ContosoNamespace.
 Anda harus menentukan grup sumber daya tempat ruang nama ditetapkan.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -60,8 +60,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroup
 Menentukan grup sumber daya tempat ruang nama ditetapkan.
-Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu manajemen inventaris dan administrasi Azure.
+Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang hanya membantu manajemen inventaris dan administrasi Azure.
 
 ```yaml
 Type: System.String
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -154,7 +154,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmNotificationHubsNamespace](./Get-AzureRmNotificationHubsNamespace.md)
 
-[New-AzureRmNotificationHubsNamespace](./New-AzureRmNotificationHubsNamespace.md)
+[Baru-AzureRmNotificationHubsNamespace](./New-AzureRmNotificationHubsNamespace.md)
 
 [Set-AzureRmNotificationHubsNamespace](./Set-AzureRmNotificationHubsNamespace.md)
 

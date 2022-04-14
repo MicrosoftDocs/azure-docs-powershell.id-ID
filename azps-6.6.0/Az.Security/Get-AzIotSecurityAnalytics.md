@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzIotSecurityAnalytics.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzIotSecurityAnalytics.md
 ms.openlocfilehash: be0e43129b3435e97a7dae6cb20034d08690c072
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140066483"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141795939"
 ---
 # Get-AzIotSecurityAnalytics
 
@@ -18,7 +18,7 @@ ms.locfileid: "140066483"
 Dapatkan analitik keamanan IoT
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/get-aziotsecurityanalytics) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.security/get-aziotsecurityanalytics) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzIotSecurityAnalytics -ResourceGroupName <String> -SolutionName <String> [-
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzIotSecurityAnalytics mengembalikan kumpulan analitik keamanan solusi keamanan tertentu
+Cmdlet Get-AzIotSecurityAnalytics mengembalikan sekumpulan analitik keamanan solusi keamanan iot tertentu
 
 ## EXAMPLES
 
@@ -115,7 +115,7 @@ MostPrevalentDeviceRecommendations: [
       }
 ```
 
-Dapatkan deafult IoT Security Analytics for Security Solution "MySolution" di grup reasource "MyResourceGroup"
+Dapatkan IoT Security Analytics tuna rungu untuk Solusi Keamanan "MySolution" dalam grup reasource "MyResourceGroup"
 
 ## PARAMETERS
 
@@ -180,11 +180,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayNatRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayNatRule.md
 ms.openlocfilehash: b824b773fda30716bdd163ab736aeb0afbcd5ca5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140251351"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141863366"
 ---
 # Get-AzVirtualNetworkGatewayNatRule
 
 ## SYNOPSIS
-Mendapatkan Gateway Jaringan Virtual NatRule.
+Mendapatkan Virtual Network Gateway NatRule.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azvirtualnetworkgatewaynatrule) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualnetworkgatewaynatrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Get-AzVirtualNetworkGatewayNatRule -ParentResourceId <String> [-Name <String>]
 ```
 
 ## DESCRIPTION
-**Cmdlet Get-AzVirtualNetworkGatewayNatRule** mengembalikan objek aturan nat gateway jaringan virtual dari gateway jaringan virtual Anda berdasarkan Nama dan ParentResourceName.
+Cmdlet **Get-AzVirtualNetworkGatewayNatRule** mengembalikan objek aturan nat gateway jaringan virtual gateway jaringan virtual Anda berdasarkan Nama dan ParentResourceName.
 
 ## EXAMPLES
 
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

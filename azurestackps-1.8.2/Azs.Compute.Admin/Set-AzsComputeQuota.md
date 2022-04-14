@@ -3,17 +3,17 @@ external help file: Azs.Compute.Admin-help.xml
 Module Name: Azs.Compute.Admin
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 64bcf81036109201ff77da7c68b09b5d6c0c68a14c56227548865e3a2ce437c9
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 8da912ed9751231a44c34b27df36abc62d55c4ab
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132415924"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141815018"
 ---
 # Set-AzsComputeQuota
 
 ## SYNOPSIS
-Perbarui kuota perhitungan yang ada menggunakan parameter yang disediakan.
+Perbarui kuota komputasi yang sudah ada menggunakan parameter yang disediakan.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Set-AzsComputeQuota [-AvailabilitySetCount <Int32>] [-CoresCount <Int32>] [-VmSc
 ```
 
 ## DESCRIPTION
-Perbarui kuota perhitungan yang sudah ada.
+Perbarui kuota komputasi yang sudah ada.
 
 ## EXAMPLES
 
@@ -50,12 +50,12 @@ Perbarui kuota perhitungan yang sudah ada.
 Set-AzsComputeQuota -Name Quota1 -VmScaleSetCount 20
 ```
 
-Memperbarui kuota perhitungan.
+Perbarui kuota komputasi.
 
 ## PARAMETERS
 
 ### -AvailabilitySetCount
-Jumlah kumpulan ketersediaan yang diizinkan.
+Jumlah kumpulan ketersediaan yang diperbolehkan.
 
 ```yaml
 Type: Int32
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Kemungkinan kuota perhitungan yang diubah dikembalikan bentuk Get-AzsComputeQuota.
+Kemungkinan kuota komputasi yang dikembalikan formulir Get-AzsComputeQuota.
 
 ```yaml
 Type: ComputeQuotaObject
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-The ARM compute quota id.
+Id kuota komputasi ARM.
 
 ```yaml
 Type: String
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualMachineCount
-Jumlah mesin virtual yang diizinkan.
+Jumlah mesin virtual yang diperbolehkan.
 
 ```yaml
 Type: Int32
@@ -189,7 +189,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -VmscaleSetCount
+### -VmScaleSetCount
 Jumlah kumpulan skala yang diperbolehkan.
 
 ```yaml
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -236,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

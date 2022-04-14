@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualHubBgpConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualHubBgpConnection.md
 ms.openlocfilehash: 277857406066e36cee98377e556a6e65c03bcda2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140104247"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141863438"
 ---
 # Get-AzVirtualHubBgpConnection
 
 ## SYNOPSIS
-Cmdlet Get-AzVirtualHubBgpConnection mendapatkan Koneksi BGP Virtual WAN Hub di Virtual WAN Hub atau mencantumkan semua Koneksi BGP Virtual WAN Hub di Virtual WAN Hub.
+Cmdlet Get-AzVirtualHubBgpConnection mendapatkan Virtual WAN Hub BGP Connection di Hub Virtual WAN atau mencantumkan semua Virtual WAN Hub BGP Connections di Hub Virtual WAN.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azvirtualhubbgpconnection) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualhubbgpconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Get-AzVirtualHubBgpConnection -ResourceId <String> [-DefaultProfile <IAzureConte
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzVirtualHubBgpConnection mendapatkan Koneksi BGP Virtual WAN Hub di Virtual WAN Hub atau mencantumkan semua Koneksi BGP Virtual WAN Hub di Virtual WAN Hub.
+Cmdlet Get-AzVirtualHubBgpConnection mendapatkan Virtual WAN Hub BGP Connection di Hub Virtual WAN atau mencantumkan semua Virtual WAN Hub BGP Connections di Hub Virtual WAN.
 
 ## EXAMPLES
 
@@ -66,9 +66,9 @@ PeerAsn                     : 20000
 PeerIp                      : 192.168.1.5
 ```
 
-Opsi di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual WAN Hub di AS Barat dan menyambungkan Virtual Network ke Virtual WAN Hub di grup sumber daya tersebut di Azure. Koneksi BGP Virtual WAN Hub akan dibuat setelah itu, yang akan membuat Virtual WAN Hub dengan peralatan jaringan yang digunakan di Jaringan Virtual.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual WAN Hub di AS Barat dan menyambungkan Virtual Network ke hub Virtual WAN dalam grup sumber daya tersebut di Azure. Koneksi BGP Hub Virtual WAN akan dibuat setelahnya yang akan mengintip Hub Virtual WAN dengan peralatan jaringan yang digunakan di Virtual Network.
 
-Setelah Koneksi BGP Virtual WAN Hub dibuat, Koneksi BGP akan mendapatkan Koneksi BGP menggunakan nama grup sumber dayanya, nama Virtual WAN Hub dan nama Koneksi BGP.
+Setelah Virtual WAN Hub BGP Connection dibuat, BGP Connection akan menggunakan nama grup sumber dayanya, nama hub Virtual WAN dan nama Koneksi BGP.
 
 ### Contoh 2
 
@@ -88,7 +88,7 @@ PeerAsn                     : 20000
 PeerIp                      : 192.168.1.6
 ```
 
-Cmdlet ini mencantumkan semua Koneksi BGP Virtual WAN Hub dimulai dengan "uji" menggunakan nama grup sumber daya dan nama Virtual WAN Hub.
+Cmdlet ini mencantumkan semua Virtual WAN Hub BGP Connections yang dimulai dengan "test" menggunakan nama grup sumber daya dan nama hub Virtual WAN.
 
 ## PARAMETERS
 
@@ -183,7 +183,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

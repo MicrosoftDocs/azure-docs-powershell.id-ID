@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/regis
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Register-AzAutomationScheduledRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Register-AzAutomationScheduledRunbook.md
-ms.openlocfilehash: 36c405d0dc0cf79d951fb06d787a5048362c2241
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d1bba98739eab93626937e9d5ae949dd6f55b2a0
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140373818"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141898965"
 ---
 # Register-AzAutomationScheduledRunbook
 
 ## SYNOPSIS
-Mengaitkan buku runbook ke jadwal.
+Mengaitkan runbook ke jadwal.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/register-azautomationscheduledrunbook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,16 +42,16 @@ Runbook dimulai berdasarkan jadwal yang Anda tentukan menggunakan parameter *Sch
 
 ## EXAMPLES
 
-### Contoh 1: Kaitkan runbook dengan jadwal
+### Contoh 1: Mengaitkan runbook dengan jadwal
 ```powershell
 PS C:\>Register-AzAutomationScheduledRunbook -AutomationAccountName "Contoso17" -Name "Runbk01" -ScheduleName "Sched01" -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini menghubungkan runbook yang bernama Runbk01 dengan jadwal bernama Sched01 dalam akun Otomatisasi Azure yang bernama Contoso17.
+Perintah ini mengaitkan runbook bernama Runbk01 dengan jadwal bernama Sched01 di akun Azure Automation bernama Contoso17.
 
 ### Contoh 2
 
-Mengaitkan buku runbook ke jadwal. (otomatisgenerated)
+Mengaitkan runbook ke jadwal. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -87,11 +90,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Parameter
+### -Parameters
 Menentukan tabel hash pasangan kunci/nilai.
-Kunci tersebut adalah nama parameter runbook.
-Nilai tersebut adalah nilai parameter runbook.
-Saat runbook mulai merespons jadwal terkait, parameter ini akan diberikan ke runbook.
+Kuncinya adalah nama parameter runbook.
+Nilainya adalah nilai parameter runbook.
+Ketika runbook dimulai sebagai respons terhadap jadwal terkait, parameter ini dikirimkan ke runbook.
 
 ```yaml
 Type: System.Collections.IDictionary
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunbookName
-Menentukan nama runbook yang mengaitkan cmdlet ini dengan jadwal.
+Menentukan nama runbook yang dikaitkan cmdlet ini dengan jadwal.
 
 ```yaml
 Type: System.String
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleName
-Menentukan nama jadwal mengaitkan cmdlet ini dengan runbook.
+Menentukan nama jadwal cmdlet ini mengaitkan runbook.
 
 ```yaml
 Type: System.String
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

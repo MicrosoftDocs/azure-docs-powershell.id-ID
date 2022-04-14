@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Get-AzWebPubSubSku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Get-AzWebPubSubSku.md
 ms.openlocfilehash: b86da37bfcf31ffae262d510fc3c1714e18a9de7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140303989"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141904665"
 ---
 # Get-AzWebPubSubSku
 
 ## SYNOPSIS
-Mencantumkan semua sku sumber daya yang tersedia.
+Cantumkan semua sku yang tersedia dari sumber daya.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.signalr/get-azwebpubsubsku) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.signalr/get-azwebpubsubsku) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +28,11 @@ Get-AzWebPubSubSku -ResourceGroupName <String> -ResourceName <String> [-Subscrip
 ```
 
 ## DESCRIPTION
-Mencantumkan semua sku sumber daya yang tersedia.
+Cantumkan semua sku yang tersedia dari sumber daya.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan semua SKU sumber daya PubSub Web yang tersedia
+### Contoh 1: Mencantumkan semua SKU yang tersedia dari sumber daya PubSub Web
 ```powershell
 PS C:\>  Get-AzWebPubSubSku -ResourceGroupName psdemo -ResourceName psdemo-wps | Format-List
 
@@ -61,8 +61,8 @@ SkuCapacity          :
 Tier                 : Standard
 ```
 
-Contoh tersebut mencantumkan SKU sumber daya PubSub Web, `Format-List` lalu mencantumkan hasil untuk melihat semua nilai properti dari hasil tersebut.
-Kita dapat melihat dari hasil bahwa ada dua SKU, satu Tingkatan "Gratis", dan yang lainnya "Standar".
+Contoh ini mencantumkan SKU sumber daya PubSub Web lalu menyalurkan hasil untuk `Format-List` melihat semua nilai properti hasil.
+Kita dapat melihat dari hasil bahwa ada dua SKU, Satu Tingkat adalah "Gratis", dan yang lainnya adalah "Standar".
 
 ## PARAMETERS
 
@@ -82,8 +82,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya tersebut.
-Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+Nama grup sumber daya yang berisi sumber daya.
+Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
 
 ```yaml
 Type: System.String
@@ -113,8 +113,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan Id langganan yang secara unik mengidentifikasi Microsoft Azure anda.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

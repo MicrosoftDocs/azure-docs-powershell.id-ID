@@ -4,16 +4,16 @@ ms.assetid: 383402B2-6B7C-41AB-AFF9-36C86156B0A9
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 1dcf2626a6bc288e1c97783d3410c674371782ea
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425815"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141815340"
 ---
 # New-AzureStorageContext
 
 ## SYNOPSIS
-Membuat Azure Storage konteks.
+Membuat konteks Azure Storage.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -31,13 +31,13 @@ New-AzureStorageContext [-StorageAccountName] <String> [-StorageAccountKey] <Str
  -Environment <String> [<CommonParameters>]
 ```
 
-### AnonymousAccount
+### AnonimAccount
 ```
 New-AzureStorageContext [-StorageAccountName] <String> [-Anonymous] [-Protocol <String>] [-Endpoint <String>]
  [<CommonParameters>]
 ```
 
-### AnonymousAccountEnvironment
+### AnonimAccountEnvironment
 ```
 New-AzureStorageContext [-StorageAccountName] <String> [-Anonymous] [-Protocol <String>] -Environment <String>
  [<CommonParameters>]
@@ -55,7 +55,7 @@ New-AzureStorageContext [-StorageAccountName] <String> -SasToken <String> -Envir
  [<CommonParameters>]
 ```
 
-### String Koneksi
+### ConnectionString
 ```
 New-AzureStorageContext -ConnectionString <String> [<CommonParameters>]
 ```
@@ -66,39 +66,39 @@ New-AzureStorageContext [-Local] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureStorageContext** membuat Azure Storage konteks.
+Cmdlet **New-AzureStorageContext** membuat konteks Azure Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Buat konteks dengan menentukan nama dan kunci akun penyimpanan
+### Contoh 1: Membuat konteks dengan menentukan nama dan kunci akun penyimpanan
 ```
 C:\PS>New-AzureStorageContext -StorageAccountName "ContosoGeneral" -StorageAccountKey "< Storage Key for ContosoGeneral ends with == >"
 ```
 
-Perintah ini akan membuat konteks untuk akun bernama ContosoGeneral yang menggunakan kunci tertentu.
+Perintah ini membuat konteks untuk akun bernama ContosoGeneral yang menggunakan kunci yang ditentukan.
 
 ### Contoh 2: Membuat konteks dengan menentukan string koneksi
 ```
 C:\PS>New-AzureStorageContext -ConnectionString "DefaultEndpointsProtocol=https;AccountName=ContosoGeneral;AccountKey=< Storage Key for ContosoGeneral ends with == >;"
 ```
 
-Perintah ini akan membuat konteks berdasarkan string koneksi yang ditentukan untuk akun ContosoGeneral.
+Perintah ini membuat konteks berdasarkan string koneksi yang ditentukan untuk akun ContosoGeneral.
 
-### Contoh 3: Buat konteks untuk akun penyimpanan anonim
+### Contoh 3: Membuat konteks untuk akun penyimpanan anonim
 ```
 C:\PS>New-AzureStorageContext -StorageAccountName "ContosoGeneral" -Anonymous -Protocol "http"
 ```
 
-Perintah ini akan membuat konteks untuk penggunaan anonim bagi akun bernama ContosoGeneral.
+Perintah ini membuat konteks untuk penggunaan anonim untuk akun bernama ContosoGeneral.
 Perintah menentukan HTTP sebagai protokol koneksi.
 
-### Contoh 4: Buat konteks menggunakan akun penyimpanan pengembangan lokal
+### Contoh 4: Membuat konteks menggunakan akun penyimpanan pengembangan lokal
 ```
 C:\PS>New-AzureStorageContext -Local
 ```
 
-Perintah ini akan membuat konteks menggunakan akun penyimpanan pengembangan lokal.
-Perintah menentukan *Parameter* lokal.
+Perintah ini membuat konteks dengan menggunakan akun penyimpanan pengembangan lokal.
+Perintah menentukan parameter *Lokal* .
 
 ### Contoh 5: Dapatkan wadah untuk akun penyimpanan pengembang lokal
 ```
@@ -106,7 +106,7 @@ C:\PS>New-AzureStorageContext -Local | Get-AzureStorageContainer
 ```
 
 Perintah ini membuat konteks dengan menggunakan akun penyimpanan pengembangan lokal, lalu meneruskan konteks baru ke cmdlet **Get-AzureStorageContainer** menggunakan operator pipeline.
-Perintah akan mendapatkan Azure Storage khusus untuk akun penyimpanan pengembang lokal.
+Perintah mendapatkan wadah Azure Storage untuk akun penyimpanan pengembang lokal.
 
 ### Contoh 6: Dapatkan beberapa wadah
 ```
@@ -119,14 +119,14 @@ Perintah pertama membuat konteks dengan menggunakan akun penyimpanan pengembanga
 
 Perintah kedua membuat konteks untuk akun bernama ContosoGeneral yang menggunakan kunci yang ditentukan, lalu menyimpan konteks tersebut dalam variabel $Context 02.
 
-Perintah terakhir mendapatkan wadah untuk konteks yang disimpan di $Context 01 dan $Context 02 dengan menggunakan **Get-AzureStorageContainer**.
+Perintah akhir mendapatkan wadah untuk konteks yang disimpan di $Context 01 dan $Context 02 dengan menggunakan **Get-AzureStorageContainer**.
 
 ### Contoh 7: Membuat konteks dengan titik akhir
 ```
 C:\PS>New-AzureStorageContext -StorageAccountName "ContosoGeneral" -StorageAccountKey "< Storage Key for ContosoGeneral ends with == >" -Endpoint "contosoaccount.core.windows.net"
 ```
 
-Perintah ini akan membuat Azure Storage yang memiliki titik akhir penyimpanan yang ditentukan.
+Perintah ini membuat konteks Azure Storage yang memiliki titik akhir penyimpanan tertentu.
 Perintah membuat konteks untuk akun bernama ContosoGeneral yang menggunakan kunci yang ditentukan.
 
 ### Contoh 8: Membuat konteks dengan lingkungan tertentu
@@ -134,27 +134,27 @@ Perintah membuat konteks untuk akun bernama ContosoGeneral yang menggunakan kunc
 C:\PS>New-AzureStorageContext -StorageAccountName "ContosoGeneral" -StorageAccountKey "< Storage Key for ContosoGeneral ends with == >" -Environment "AzureChinaCloud"
 ```
 
-Perintah ini akan membuat konteks penyimpanan Azure yang memiliki lingkungan Azure tertentu.
+Perintah ini membuat konteks penyimpanan Azure yang memiliki lingkungan Azure yang ditentukan.
 Perintah membuat konteks untuk akun bernama ContosoGeneral yang menggunakan kunci yang ditentukan.
 
-### Contoh 9: Membuat konteks dengan menggunakan token SAS
+### Contoh 9: Membuat konteks menggunakan token SAS
 ```
 C:\PS>$SasToken = New-AzureStorageContainerSASToken -Name "ContosoMain" -Permission "raud"
 PS C:\> $Context = New-AzureStorageContext -StorageAccountName "ContosoGeneral" -SasToken $SasToken
 PS C:\> $Context | Get-AzureStorageBlob -Container "ContosoMain"
 ```
 
-Perintah pertama menghasilkan token SAS menggunakan cmdlet **New-AzureStorageContainerSASToken** untuk wadah bernama ContosoMain, lalu menyimpan token tersebut di $SasToken pelanggan.
-Token tersebut untuk izin membaca, menambahkan, memperbarui, dan menghapus.
+Perintah pertama menghasilkan token SAS menggunakan cmdlet **New-AzureStorageContainerSASToken** untuk wadah bernama ContosoMain, lalu menyimpan token tersebut dalam variabel $SasToken.
+Token tersebut adalah untuk izin baca, tambahkan, perbarui, dan hapus.
 
-Perintah kedua membuat konteks untuk akun bernama ContosoGeneral yang menggunakan token SAS yang disimpan di $SasToken, lalu menyimpan konteks tersebut di variabel $Context mereka.
+Perintah kedua membuat konteks untuk akun bernama ContosoGeneral yang menggunakan token SAS yang disimpan di $SasToken, lalu menyimpan konteks tersebut dalam variabel $Context.
 
-Perintah akhir mencantumkan semua blob yang terkait dengan wadah bernama ContosoMain dengan menggunakan konteks yang disimpan dalam $Context.
+Perintah akhir mencantumkan semua blob yang terkait dengan wadah bernama ContosoMain menggunakan konteks yang disimpan di $Context.
 
 ## PARAMETERS
 
-### -Anonymous
-Mengindikasikan bahwa cmdlet ini membuat konteks Azure Storage untuk masuk anonim.
+### -Anonim
+Menunjukkan bahwa cmdlet ini membuat konteks Azure Storage untuk masuk anonim.
 
 ```yaml
 Type: SwitchParameter
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionString
-Menentukan string koneksi untuk Azure Storage konteks.
+Menentukan string koneksi untuk konteks Azure Storage.
 
 ```yaml
 Type: String
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -Titik akhir
-Menentukan titik akhir untuk Azure Storage konteks.
+Menentukan titik akhir untuk konteks Azure Storage.
 
 ```yaml
 Type: String
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ### -Lingkungan
 Menentukan lingkungan Azure.
 Nilai yang dapat diterima untuk parameter ini adalah: AzureCloud dan AzureChinaCloud.
-Untuk informasi selengkapnya, ketik `Get-Help Get-AzureEnvironment` .
+Untuk informasi selengkapnya, ketik .`Get-Help Get-AzureEnvironment`
 
 ```yaml
 Type: String
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokal
-Mengindikasikan bahwa cmdlet ini membuat konteks dengan menggunakan akun penyimpanan pengembangan lokal.
+Menunjukkan bahwa cmdlet ini membuat konteks dengan menggunakan akun penyimpanan pengembangan lokal.
 
 ```yaml
 Type: SwitchParameter
@@ -242,12 +242,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
-Menentukan protokol yang diizinkan untuk permintaan yang dibuat dengan akun SAS.
+### -Protokol
+Menentukan protokol yang diizinkan untuk permintaan yang dibuat dengan AKUN SAS.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - HttpsOnly
-- HttpsOrhttp
+- HttpsOrHttp
 
 Nilai defaultnya adalah HttpsOrHttp.
 
@@ -265,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### -SasToken
-Menentukan token Shared Access Signature (SAS) untuk konteksnya.
+Menentukan token Tanda Tangan Akses Bersama (SAS) untuk konteksnya.
 
 ```yaml
 Type: String
@@ -280,8 +280,8 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountKey
-Menentukan Azure Storage akun.
-Cmdlet ini akan membuat konteks untuk kunci yang ditentukan parameter ini.
+Menentukan kunci akun Azure Storage.
+Cmdlet ini membuat konteks untuk kunci yang ditentukan parameter ini.
 
 ```yaml
 Type: String
@@ -296,7 +296,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Menentukan nama Azure Storage akun.
+Menentukan nama akun Azure Storage.
 Cmdlet ini membuat konteks untuk akun yang ditentukan parameter ini.
 
 ```yaml
@@ -312,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -326,6 +326,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureStorageBlob](./Get-AzureStorageBlob.md)
 
-[New-AzureStorageContainerSASToken](./New-AzureStorageContainerSASToken.md)
+[AzureStorageContainerSASToken baru](./New-AzureStorageContainerSASToken.md)
 
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridDomainKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridDomainKey.md
 ms.openlocfilehash: 5943db1a9e686c49fd72f8c4b4dc3a244d5345bf
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140286295"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141867848"
 ---
 # Get-AzEventGridDomainKey
 
@@ -18,7 +18,7 @@ ms.locfileid: "140286295"
 Mendapatkan kunci akses bersama yang digunakan untuk menerbitkan acara ke domain Kisi Acara.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventgrid/get-azeventgriddomainkey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.eventgrid/get-azeventgriddomainkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ Mendapatkan kunci akses bersama yang digunakan untuk menerbitkan acara ke domain
 
 ### Contoh 1
 
-Mendapatkan kunci akses bersama domain Kisi Kejadian Domain1 \`di\` grup sumber daya \`MyResourceGroupName\`.
+Mendapatkan kunci akses bersama domain Kisi \`Kejadian Domain1\` dalam grup \`sumber daya MyResourceGroupName\`.
 
 ```powershell
 PS C:\> Get-AzEventGridDomainKey -ResourceGroup MyResourceGroupName -Name Domain1
@@ -59,7 +59,7 @@ Key1                                         Key2
 
 ### Contoh 2
 
-Mendapatkan kunci akses bersama domain Kisi Kejadian Domain1 \`di\` grup sumber daya \`MyResourceGroupName\`.
+Mendapatkan kunci akses bersama domain Kisi \`Kejadian Domain1\` dalam grup \`sumber daya MyResourceGroupName\`.
 
 ```powershell
 PS C:\> Get-AzEventGridDomain -ResourceGroup MyResourceGroupName -Name Domain1 | Get-AzEventGridDomainKey
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -DomainObject
-Objek EventGrid Domain.
+Objek Domain EventGrid.
 
 ```yaml
 Type: Microsoft.Azure.Commands.EventGrid.Models.PSDomain
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

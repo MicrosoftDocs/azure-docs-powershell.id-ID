@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmVirtualNetworkTap.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmVirtualNetworkTap.md
-ms.openlocfilehash: a97158cd9778525bfecb4deb6332c5198a8abc191ea044b94ae6fb4e22d16526
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: ff9ed8220cf2b30f2e652e207cb4d63db969a8dc
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140866190"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141883553"
 ---
 # Get-AzureRmVirtualNetworkTap
 
@@ -34,16 +34,16 @@ Get-AzureRmVirtualNetworkTap -ResourceId <String> [-DefaultProfile <IAzureContex
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmVirtualNetworkTap** mendapatkan ketuk jaringan virtual Azure atau daftar ketukan jaringan virtual Azure di grup sumber daya.
+Cmdlet **Get-AzureRmVirtualNetworkTap** mendapatkan ketukan jaringan virtual Azure atau daftar ketuk jaringan virtual Azure dalam grup sumber daya.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan ketukan jaringan virtual
+### Contoh 1: Dapatkan ketuk jaringan virtual
 ```
 PS C:\>Get-AzureRmVirtualNetworkTap -ResourceGroupName "ResourceGroup1" -Name "VirtualTap1"
 ```
 
-Perintah ini mendapatkan referensi ketuk VirtualNetwork untuk kata "VirtualTap1" dalam "ResourceGroup1".
+Perintah ini mendapatkan referensi ketuk VirtualNetwork untuk diberikan "VirtualTap1" di "ResourceGroup1".
 
 ## PARAMETERS
 
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya ketuk jaringan virtual.
+Nama grup sumber daya dari ketuk jaringan virtual.
 
 ```yaml
 Type: System.String
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

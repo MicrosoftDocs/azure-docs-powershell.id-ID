@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzBastion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzBastion.md
 ms.openlocfilehash: 8dccec088c8fb547bca4b99a6944222b63fdaa6e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140102195"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141863042"
 ---
 # Remove-AzBastion
 
 ## SYNOPSIS
-Menghapus sumber daya sdm.
+Menghapus sumber daya bastion.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azbastion) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azbastion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Remove-AzBastion -ResourceId <String> [-PassThru] [-Force] [-DefaultProfile <IAz
 ```
 
 ## DESCRIPTION
-Menghapus sumber daya sdm. Contoh1 menghapus properti menggunakan ResourceGroupName dan ResourceName. Contoh2 menghapus sempurna menggunakan objeknya dengan saluran. Contoh3 menghapus bintang menggunakan objeknya.
+Menghapus sumber daya bastion. Contoh1 menghapus bastion menggunakan ResourceGroupName dan ResourceName. Contoh2 menghapus bastion menggunakan objeknya dengan pipeline. Contoh3 menghapus bastion menggunakan objeknya.
 
 ## EXAMPLES
 
@@ -64,7 +64,7 @@ Remove-AzBastion -InputObject $bastion
 ## PARAMETERS
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -93,8 +93,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: SwitchParameter
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Aviasi akan dihapus.
+Objek Bastion yang akan dihapus.
 
 ```yaml
 Type: PSBastion
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama sumber daya eufesi yang akan dihapus.
+Nama sumber daya bastion yang akan dihapus.
 
 ```yaml
 Type: String
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item di mana operasi ini dijalankan.
+Mengembalikan objek yang mewakili item tempat operasi ini dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat folder ada.
+Nama grup sumber daya tempat bastion ada.
 
 ```yaml
 Type: String
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya Azure untuk Data yang akan dihapus.
+ID sumber daya Azure untuk Bastion dihapus.
 
 ```yaml
 Type: String
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

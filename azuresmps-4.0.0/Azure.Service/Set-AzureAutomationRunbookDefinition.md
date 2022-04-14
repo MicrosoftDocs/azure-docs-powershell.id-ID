@@ -3,18 +3,18 @@ external help file: Microsoft.Azure.Commands.Automation.dll-Help.xml
 ms.assetid: C583BECF-7FC2-4A1F-9788-5CB19E73956C
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 96c1d13385192ddfe135483b37908343d1eb965842301edd31d20c087d076ae5
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 744ebb672b846ac773f09bc92fdcfd55f4322b1f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417712"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141816296"
 ---
 # Set-AzureAutomationRunbookDefinition
 
 ## SYNOPSIS
 
-Memperbarui definisi draf runbook.
+Memperbarui definisi draf dari runbook.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -29,19 +29,19 @@ Set-AzureAutomationRunbookDefinition -Name <String> -Path <String> [-Overwrite] 
 
 [!INCLUDE [aa-deprecation](../include/aa-deprecation.md)]
 
-Cmdlet **Set-AzureAutomationRunbookDefinition** memperbarui definisi draf Microsoft Azure Automation runbook.
-Tentukan file Windows PowerShell skrip (.ps1) yang berisi runbook yang menjadi draft runbook.
+Cmdlet **Set-AzureAutomationRunbookDefinition** memperbarui definisi draf runbook Microsoft Azure Automation.
+Tentukan file skrip Windows PowerShell (.ps1) yang berisi runbook yang menjadi runbook draf.
 
-Jika definisi draf sudah ada, gunakan parameter *Overwrite* untuk memaksa cmdlet untuk menimpa draf yang sudah ada.
+Jika definisi draf sudah ada, gunakan parameter *Timpa* untuk memaksa cmdlet menimpa draf yang sudah ada.
 
 ## EXAMPLES
 
-### Contoh 1: Menimpa definisi draf buku kerja yang sudah ada
+### Contoh 1: Menimpa definisi draf yang sudah ada dari runbook
 ```
 PS C:\> Set-AzureAutomationRunbookDefinition -AutomationAccountName "Contoso17" -Name "Runbk01" -Path ".\App01.ps1" -Overwrite
 ```
 
-Perintah ini menimpa definisi draf buku runbook yang sudah ada.
+Perintah ini menimpa definisi draf yang sudah ada dari runbook.
 
 ## PARAMETERS
 
@@ -75,7 +75,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Overwrite
+### -Timpa
 Menunjukkan apakah akan menimpa definisi draf yang sudah ada.
 
 ```yaml
@@ -90,7 +90,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Path
+### -Jalur
 Menentukan jalur ke runbook.
 
 ```yaml
@@ -106,8 +106,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

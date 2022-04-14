@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Test-AzureRmPrivateIPAddressAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Test-AzureRmPrivateIPAddressAvailability.md
-ms.openlocfilehash: 920103cccb5f4a5ea4e8a83990f528b8371caab48c99eae0f584ff56380ac814
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 2367f57db4e028710dce18acacd5b644b41f335b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418909"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141882636"
 ---
 # Test-AzureRmPrivateIPAddressAvailability
 
 ## SYNOPSIS
-Menguji ketersediaan alamat IP privat di jaringan virtual.
+Uji ketersediaan alamat IP privat di jaringan virtual.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -35,22 +35,22 @@ Test-AzureRmPrivateIPAddressAvailability -ResourceGroupName <String> -VirtualNet
 ```
 
 ## DESCRIPTION
-Cmdlet **Test-AzureRmPrivateIPAddressAvailability** menguji apakah alamat IP privat tertentu tersedia di jaringan virtual.
+**Cmdlet Uji-AzureRmPrivateIPAddressAvailability** menguji apakah alamat IP privat tertentu tersedia di jaringan virtual.
 Cmdlet ini mengembalikan daftar alamat IP privat yang tersedia jika alamat IP privat yang diminta diambil.
 
 ## EXAMPLES
 
-### Contoh 1: Uji apakah alamat IP tersedia menggunakan saluran
+### Contoh 1: Menguji apakah alamat IP tersedia menggunakan pipeline
 ```
 PS C:\>Get-AzureRmVirtualNetwork -Name $vnetName -ResourceGroupName $rgname | Test-AzureRmPrivateIPAddressAvailability -IPAddress "10.0.1.10"
 ```
 
-Perintah ini mendapatkan jaringan virtual dan menggunakan operator pipeline untuk meneruskannya ke **Test-AzureRmPrivateIPAddressAvailability**, yang menguji apakah alamat IP privat tertentu tersedia.
+Perintah ini mendapatkan jaringan virtual dan menggunakan operator pipeline untuk mengirimkannya ke **Test-AzureRmPrivateIPAddressAvailability**, yang menguji apakah alamat IP privat tertentu tersedia.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -IPAddress
-Menentukan alamat IP untuk diuji.
+Menentukan alamat IP yang akan diuji.
 
 ```yaml
 Type: System.String
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetwork
-Menentukan objek **PSVirtualNetwork.**
+Menentukan objek **PSVirtualNetwork** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualNetwork
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkName
-Menentukan nama jaringan virtual.
+Menentukan nama jaringan maya.
 
 ```yaml
 Type: System.String
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

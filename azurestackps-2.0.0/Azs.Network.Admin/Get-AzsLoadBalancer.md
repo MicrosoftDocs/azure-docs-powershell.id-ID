@@ -4,16 +4,16 @@ Module Name: Azs.Network.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.network.admin/get-azsloadbalancer
 schema: 2.0.0
 ms.openlocfilehash: 1450a35252a3bd5e749a8ebdb60fda0e8ad35f88
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132414480"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141813470"
 ---
 # Get-AzsLoadBalancer
 
 ## SYNOPSIS
-Dapatkan daftar semua penyeimbang muat.
+Dapatkan daftar semua penyeimbang muatan.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-AzsLoadBalancer [-SubscriptionId <String[]>] [-Filter <String>] [-InlineCoun
 ```
 
 ## DESCRIPTION
-Dapatkan daftar semua penyeimbang muat.
+Dapatkan daftar semua penyeimbang muatan.
 
 ## EXAMPLES
 
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lewati
-Parameter lewati OData.
+OData lewati parameter.
 
 ```yaml
 Type: System.String
@@ -118,8 +118,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

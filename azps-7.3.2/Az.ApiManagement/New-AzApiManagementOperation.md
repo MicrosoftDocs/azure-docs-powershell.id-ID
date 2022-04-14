@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementOperation.md
-ms.openlocfilehash: 11b52fa3251fc35236785a7370f2f518186d71d0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c7695065294eab006017ce4a538810af0f0fe0c0
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140558122"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141899019"
 ---
 # New-AzApiManagementOperation
 
 ## SYNOPSIS
 Membuat operasi manajemen API.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementoperation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS
 New-AzApiManagementOperation -Context $apimContext -ApiId $APIId -OperationId "Operation001" -Name "Operation" -Method "GET" -UrlTemplate "/resource" -Description "Use this operation to get resource"
 ```
 
-Perintah ini akan membuat operasi manajemen API.
+Perintah ini membuat operasi manajemen API.
 
 ### Contoh 2: Membuat operasi manajemen API dengan detail permintaan dan respons
 ```powershell
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiRevision
-Pengidentifikasi Revisi API. Parameter ini bersifat opsional. Jika tidak ditentukan, operasi akan dilampirkan ke revisi api yang saat ini aktif.
+Pengidentifikasi Revisi API. Parameter ini bersifat opsional. Jika tidak ditentukan, operasi akan dilampirkan ke revisi api aktif saat ini.
 
 ```yaml
 Type: System.String
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -Method
-Menentukan metode HTTP operasi manajemen API yang baru.
+Menentukan metode HTTP dari operasi manajemen API baru.
 
 ```yaml
 Type: System.String
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama tampilan operasi manajemen API yang baru.
+Menentukan nama tampilan operasi manajemen API baru.
 
 ```yaml
 Type: System.String
@@ -210,7 +213,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Responses
+### -Respons
 Menentukan array kemungkinan respons operasi manajemen API.
 
 ```yaml
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateParameters
-Menentukan array parameter yang ditentukan dalam parameter *UrlTemplate*.
+Menentukan array parameter yang ditentukan dalam *UrlTemplate* parameter.
 Jika Anda tidak menentukan parameter ini, nilai default akan dihasilkan berdasarkan *UrlTemplate*.
 
 ```yaml
@@ -257,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
