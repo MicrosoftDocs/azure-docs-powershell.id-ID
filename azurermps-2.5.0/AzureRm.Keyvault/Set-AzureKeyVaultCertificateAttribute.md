@@ -5,11 +5,11 @@ ms.assetid: 3BD243C7-A40E-4061-93FF-DDE7DECAD0A7
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.keyvault/set-azurekeyvaultcertificateattribute
 schema: 2.0.0
 ms.openlocfilehash: 9f7c08f42026c6cc5d321ae78687a903c8393904
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132415061"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142146622"
 ---
 # Set-AzureKeyVaultCertificateAttribute
 
@@ -27,11 +27,11 @@ Set-AzureKeyVaultCertificateAttribute [-VaultName] <String> [-Name] <String> [[-
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureKeyVaultCertificateAttribute** memodifikasi atribut sertifikat yang bisa diedit.
+Cmdlet **Set-AzureKeyVaultCertificateAttribute** mengubah atribut sertifikat yang dapat diedit.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah tag yang terkait dengan sertifikat
+### Contoh 1: Memodifikasi tag yang terkait dengan sertifikat
 ```
 PS C:\>$Tags = @{ "Team" = "Azure" ; "Role" = "Engg" }
 PS C:\> Set-AzureKeyVaultCertificateAttribute -VaultName "ContosoKV01" -Name "TestCert01" -Tag $Tags
@@ -65,16 +65,16 @@ Created     : 7/28/2016 2:00:01 AM
 Updated     : 8/1/2016 5:37:48 PM
 ```
 
-Perintah pertama menetapkan pasangan kunci/nilai array ke $Tags nilai.
+Perintah pertama menetapkan array pasangan kunci/nilai ke variabel $Tags.
 
-Perintah kedua mengatur nilai tag sertifikat bernama TestCert01 yang $Tags.
+Perintah kedua mengatur nilai tag sertifikat bernama TestCert01 agar $Tags.
 
-Perintah final menampilkan sertifikat TestCert01 dengan menggunakan cmdlet Get-AzureKeyVaultCertificate untuk memverifikasi operasi.
+Perintah akhir menampilkan sertifikat TestCert01 dengan menggunakan cmdlet Get-AzureKeyVaultCertificate untuk memverifikasi operasi.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: IAzureContextContainer
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 
 ### -Aktifkan
 Menunjukkan apakah akan mengaktifkan atau menonaktifkan sertifikat.
-Tentukan $True untuk mengaktifkan atau $False menonaktifkannya.
+Tentukan $True untuk mengaktifkan atau $False untuk dinonaktifkan.
 
 ```yaml
 Type: Boolean
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama sertifikat untuk diubah. Cmdlet ini menyusun FQDN dari sertifikat berdasarkan nama kunci vault, lingkungan yang Anda pilih saat ini, nama sertifikat, dan versi sertifikat.
+Menentukan nama sertifikat yang akan diubah. Cmdlet ini menyusun FQDN sertifikat berdasarkan nama kubah kunci, lingkungan yang dipilih saat ini, nama sertifikat, dan versi sertifikat.
 
 ```yaml
 Type: String
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -153,8 +153,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kunci vault di mana cmdlet ini memodifikasi sertifikat.
-Cmdlet ini menyusun FQDN dari kunci vault berdasarkan nama dan lingkungan yang saat ini dipilih.
+Menentukan nama kubah kunci tempat cmdlet ini mengubah sertifikat.
+Cmdlet ini menyusun FQDN kubah kunci berdasarkan nama dan lingkungan yang dipilih saat ini.
 
 ```yaml
 Type: String
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 
 ### -Versi
 Menentukan versi sertifikat.
-Cmdlet ini menyusun FQDN dari sertifikat berdasarkan nama kunci vault, lingkungan yang Anda pilih saat ini, nama sertifikat, dan versi sertifikat.
+Cmdlet ini menyusun FQDN sertifikat berdasarkan nama kubah kunci, lingkungan yang dipilih saat ini, nama sertifikat, dan versi sertifikat.
 
 ```yaml
 Type: String
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

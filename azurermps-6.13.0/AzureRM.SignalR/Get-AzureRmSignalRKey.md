@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/SignalR/Commands.SignalR/help/Get-AzureRmSignalRKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/SignalR/Commands.SignalR/help/Get-AzureRmSignalRKey.md
 ms.openlocfilehash: 3eaef21cc9652ee7e5e4c52a51bcc3ab8bd5b1c8
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140865723"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142096456"
 ---
 # Get-AzureRmSignalRKey
 
@@ -43,7 +43,7 @@ Dapatkan kunci akses layanan SignalR.
 
 ## EXAMPLES
 
-### Mendapatkan kunci akses layanan SignalR tertentu
+### Mendapatkan kunci akses dari layanan SignalR tertentu
 ```powershell
 PS C:\> Get-AzureRmSignalRKey -ResourceGroupName myResourceGroup -Name mysignalr1
 
@@ -56,7 +56,7 @@ SecondaryConnectionString : Endpoint=https://mysignalr1.service.signalr.net;Acce
                             XSjN4C/YFQ=;
 ```
 
-### Dapatkan kunci akses dari objek layanan SignalR dalam pipa
+### Dapatkan kunci akses dari objek layanan SignalR di pipa
 
 ```powershell
 PS C:\> Get-AzureRmSignalR -ResourceGroupName myResourceGroup -Name mysignalr1 | Get-AzureRmSignalRKey
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya layanan SignalR.
+ID sumber daya layanan Signalr.
 
 ```yaml
 Type: System.String
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/FrontDoor/Commands.FrontDoor/help/New-AzureRmFrontDoorFrontendEndpointObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/FrontDoor/Commands.FrontDoor/help/New-AzureRmFrontDoorFrontendEndpointObject.md
 ms.openlocfilehash: 638617cfe55e01121b46c7fe283d3664948e76b5
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423335"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142098033"
 ---
 # New-AzureRmFrontDoorFrontendEndpointObject
 
 ## SYNOPSIS
-Membuat Objek PSFrontendEndpoint untuk pembuatan Pintu Depan
+Membuat Objek PSFrontendPoint untuk pembuatan Pintu Depan
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -30,7 +30,7 @@ New-AzureRmFrontDoorFrontendEndpointObject -Name <String> -HostName <String>
 ```
 
 ## DESCRIPTION
-Membuat Objek PSFrontendEndpoint untuk pembuatan Pintu Depan
+Membuat Objek PSFrontendPoint untuk pembuatan Pintu Depan
 
 ## EXAMPLES
 
@@ -58,7 +58,7 @@ Name                             : frontendendpoint1
 Type                             :
 ```
 
-Membuat Objek PSFrontendEndpoint untuk pembuatan Pintu Depan
+Membuat Objek PSFrontendPoint untuk pembuatan Pintu Depan
 
 ## PARAMETERS
 
@@ -110,8 +110,8 @@ Accept wildcard characters: False
 ```
 
 ### -HostName
-Nama host frontendEndpoint.
-Harus nama domain.
+Nama host frontendpoint.
+Harus berupa nama domain.
 
 ```yaml
 Type: System.String
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecretName
-Nama rahasia Key Vault mewakili sertifikat penuh PFX
+Nama rahasia Key Vault yang mewakili sertifikat lengkap PFX
 
 ```yaml
 Type: System.String
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecretVersion
-Versi rahasia Key Vault mewakili sertifikat penuh PFX
+Versi rahasia Key Vault yang mewakili sertifikat penuh PFX
 
 ```yaml
 Type: System.String
@@ -187,8 +187,8 @@ Accept wildcard characters: False
 ```
 
 ### -SessionAffinityEnabledState
-Apakah akan memperbolehkan sesi afiliasi pada host ini.
-Nilai default Dinonaktifkan
+Apakah memperbolehkan afinitas sesi pada host ini.
+Nilai default adalah Dinonaktifkan
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSEnabledState
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -SessionAffinityTtlInSeconds
-TTL yang digunakan dalam detik untuk afiliasi sesi, jika ada. Nilai default adalah 0
+TTL yang digunakan dalam detik untuk afinitas sesi, jika ada. Nilai defaultnya adalah 0
 
 ```yaml
 Type: System.Int32
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -Vault
-Key Vault berisi sertifikat SSL
+Key Vault yang berisi sertifikat SSL
 
 ```yaml
 Type: System.String
@@ -249,11 +249,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -263,5 +263,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmFrontDoor](./New-AzureRmFrontDoor.md) 
- [Set-AzureRmFrontDoor](./Set-AzureRmFrontDoor.md)
+[AzureRmFrontDoor](./New-AzureRmFrontDoor.md)
+ Baru [Set-AzureRmFrontDoor](./Set-AzureRmFrontDoor.md)

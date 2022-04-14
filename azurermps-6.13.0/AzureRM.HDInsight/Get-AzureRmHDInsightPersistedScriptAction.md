@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Get-AzureRmHDInsightPersistedScriptAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Get-AzureRmHDInsightPersistedScriptAction.md
 ms.openlocfilehash: 6305e9a312eb5ebb34de56bcef8a8894b1bd7dd0
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425140"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142097842"
 ---
 # Get-AzureRmHDInsightPersistedScriptAction
 
 ## SYNOPSIS
-Mendapatkan tindakan skrip yang tetap untuk kluster dan mencantumkannya dalam urutan kronologis, atau mendapatkan detail untuk tindakan skrip yang sudah ditentukan.
+Mendapatkan tindakan skrip tetap untuk sebuah kluster dan mencantumkannya dalam urutan kronologis, atau mendapatkan detail untuk tindakan skrip tetap tertentu.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,16 +28,16 @@ Get-AzureRmHDInsightPersistedScriptAction [-ClusterName] <String> [[-Name] <Stri
 ```
 
 ## DESCRIPTION
-**Cmdlet Get-AzureRmHDInsightPersistedScriptAction** mendapatkan tindakan skrip yang tetap untuk kluster Azure HDInsight dan mencantumkannya dalam urutan kronologis, atau mendapatkan detail untuk tindakan skrip yang sudah ditentukan.
+Cmdlet **Get-AzureRmHDInsistedScriptAction** mendapatkan tindakan skrip tetap untuk kluster Azure HDInsight dan mencantumkannya dalam urutan kronologis, atau mendapatkan detail untuk tindakan skrip tetap tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan tindakan skrip yang tetap pada kluster
+### Contoh 1: Mendapatkan tindakan skrip yang tetap di kluster
 ```
 PS C:\>Get-AzureRmHDInsightPersistedScriptAction -ClusterName "your-hadoop-001"
 ```
 
-Perintah ini akan menjalankan tindakan skrip tetap pada kluster yang bernama your-hadoop-001.
+Perintah ini mendapatkan tindakan skrip tetap pada kluster bernama your-hadoop-001.
 
 ## PARAMETERS
 
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama tindakan skrip yang sudah ada.
+Menentukan nama aksi skrip yang tetap.
 
 ```yaml
 Type: System.String
@@ -102,11 +102,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

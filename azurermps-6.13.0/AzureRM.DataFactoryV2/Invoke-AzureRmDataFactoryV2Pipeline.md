@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.dataf
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactoryV2/Commands.DataFactoryV2/help/Invoke-AzureRmDataFactoryV2Pipeline.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactoryV2/Commands.DataFactoryV2/help/Invoke-AzureRmDataFactoryV2Pipeline.md
-ms.openlocfilehash: cf08e45e405f1d9fa78abd4893fd279e71886386e306e2768b250068ee6a09f7
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: e7bfd0b72f5dffe4e5ff4d7e52394846d5f17afa
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140855031"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142099179"
 ---
 # Invoke-AzureRmDataFactoryV2Pipeline
 
 ## SYNOPSIS
-  Menjalankan pipeline untuk memulai proses untuknya.
+  Memanggil pipeline untuk memulai prosesnya.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -48,17 +48,17 @@ Invoke-AzureRmDataFactoryV2Pipeline [-ResourceGroupName] <String> [-DataFactoryN
 ```
 
 ## DESCRIPTION
-Perintah **Invoke-AzureRmDataFactoryV2Pipeline** memulai proses pada saluran yang ditentukan dan mengembalikan ID untuk proses tersebut. GUID ini dapat disampaikan ke **Get-AzureRmDataFactoryV2PipelineRun** atau **Get-AzureRmDataFactoryV2ActivityRun** untuk mendapatkan detail selengkapnya tentang proses ini.
+Perintah **Invoke-AzureRmDataFactoryV2Pipeline** memulai proses pada saluran tertentu dan mengembalikan ID untuk proses tersebut. GUID ini dapat dialihkan ke **Get-AzureRmDataFactoryV2PipelineRun** atau **Get-AzureRmDataFactoryV2ActivityRun** untuk mendapatkan detail lebih lanjut tentang proses ini.
 
 ## EXAMPLES
 
-### Contoh 1: Menjalankan pipeline untuk memulai proses
+### Contoh 1: Memanggil pipeline untuk memulai proses
 ```
 PS C:\> Invoke-AzureRmDataFactoryV2Pipeline -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -PipelineName "DPWikisample"
 867d9d9f-1efc-4fee-974d-d8e6320bfbcb
 ```
 
-Perintah ini memulai proses untuk saluran "DPWikisample" di pabrik "WikiADF".
+Perintah ini memulai proses untuk pipeline "DPWikisample" di pabrik "WikiADF".
 
 ## PARAMETERS
 
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -Parameter
-Parameter untuk menjalankan pipeline.
+Parameter untuk proses pipeline.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParameterFile
-Nama file dengan parameter untuk menjalankan alur.
+Nama file dengan parameter untuk proses pipeline.
 
 ```yaml
 Type: System.String
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

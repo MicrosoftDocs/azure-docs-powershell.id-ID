@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Get-AzDataLakeAnalyticsComputePolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Get-AzDataLakeAnalyticsComputePolicy.md
-ms.openlocfilehash: 9a2dff80e42e4d368ce6699a06bb89d8d82b5045
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 8b1c2ac94ebb7d1d9d0270aa643153c54a3ba755
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140001278"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141895130"
 ---
 # Get-AzDataLakeAnalyticsComputePolicy
 
 ## SYNOPSIS
-Mendapatkan kebijakan perhitungan Analitik Danau Data atau daftar kebijakan perhitungan.
+Mendapatkan Data Lake Analytics kebijakan komputasi atau daftar kebijakan komputasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/get-azdatalakeanalyticscomputepolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,28 +28,28 @@ Get-AzDataLakeAnalyticsComputePolicy [-ResourceGroupName <String>] [-Account] <S
 ```
 
 ## DESCRIPTION
-**Get-AzDataLakeAnalyticsComputePolicy** mendapatkan kebijakan perhitungan Analitik Danau Azure Data atau daftar kebijakan tertentu.
+**Get-AzDataLakeAnalyticsComputePolicy** mendapatkan kebijakan komputasi Azure Data Lake Analytics tertentu atau daftar kebijakan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kebijakan perhitungan tertentu
+### Contoh 1: Dapatkan kebijakan komputasi yang ditentukan
 ```
 PS C:\>Get-AzDataLakeAnalyticsComputePolicy -Account "contosoadla" -Name myPolicy
 ```
 
-Perintah ini mendapatkan kebijakan perhitungan tertentu dengan nama 'myPolicy' dalam akun 'contosoadla'.
+Perintah ini mendapatkan kebijakan komputasi yang ditentukan dengan nama 'myPolicy' dalam akun 'contosoadla'.
 
-### Contoh 2: Mendapatkan daftar semua kebijakan perhitungan di akun
+### Contoh 2: Dapatkan daftar semua kebijakan komputasi dalam akun
 ```
 PS C:\>Get-AzDataLakeAnalyticsComputePolicy -AccountName "contosoadla"
 ```
 
-Perintah ini mendapatkan daftar semua kebijakan perhitungan dalam akun "contosoadla"
+Perintah ini mendapatkan daftar semua kebijakan komputasi dalam akun "contosoadla"
 
 ## PARAMETERS
 
 ### -Akun
-Nama akun untuk mendapatkan kebijakan perhitungan atau kebijakan.
+Nama akun untuk mendapatkan kebijakan komputasi atau kebijakan.
 
 ```yaml
 Type: System.String
@@ -61,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama kebijakan perhitungan untuk mendapatkan.
+Nama kebijakan komputasi yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -91,8 +94,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat akun Anda berada.
-Opsional dan akan berusaha mencari tahu jika tidak diberikan.
+Nama grup sumber daya di mana Akun Anda sudah ada.
+Opsional dan akan mencoba untuk menemukan jika tidak disediakan.
 
 ```yaml
 Type: System.String
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

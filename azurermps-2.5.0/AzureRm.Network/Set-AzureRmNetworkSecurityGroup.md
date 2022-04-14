@@ -5,11 +5,11 @@ ms.assetid: 9F69DAEF-F2ED-449B-B75F-FCA7ED73D98F
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/set-azurermnetworksecuritygroup
 schema: 2.0.0
 ms.openlocfilehash: 348732794a0cf16233f9a139e86ed89658fc5ac2
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421940"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142145579"
 ---
 # Set-AzureRmNetworkSecurityGroup
 
@@ -26,7 +26,7 @@ Set-AzureRmNetworkSecurityGroup -NetworkSecurityGroup <PSNetworkSecurityGroup> [
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmNetworkSecurityGroup** mengatur status tujuan untuk grup keamanan jaringan Azure.
+Cmdlet **Set-AzureRmNetworkSecurityGroup** menetapkan status tujuan untuk grup keamanan jaringan Azure.
 
 ## EXAMPLES
 
@@ -35,13 +35,13 @@ Cmdlet **Set-AzureRmNetworkSecurityGroup** mengatur status tujuan untuk grup kea
 PS C:\>Get-AzureRmNetworkSecurityGroup -Name "Nsg1" -ResourceGroupName "Rg1" | Add-AzureRmNetworkSecurityRuleConfig -Name "Rdp-Rule" -Description "Allow RDP" -Access "Allow" -Protocol "Tcp" -Direction "Inbound" -Priority 100 -SourceAddressPrefix "Internet" -SourcePortRange "*" -DestinationAddressPrefix "*" -DestinationPortRange "3389" | Set-AzureRmNetworkSecurityGroup
 ```
 
-Perintah ini mendapatkan grup keamanan jaringan Azure bernama Nsg1, dan menambahkan aturan keamanan jaringan bernama Rdp-Rule untuk mengizinkan lalu lintas Internet di port 3389 ke objek grup keamanan jaringan yang diambil menggunakan Add-AzureRmNetworkSecurityRuleConfig.
-Perintah tetap berada pada grup keamanan jaringan Azure yang diubah menggunakan **Set-AzureRmNetworkSecurityGroup.**
+Perintah ini mendapatkan grup keamanan jaringan Azure bernama Nsg1, dan menambahkan aturan keamanan jaringan bernama Rdp-Rule untuk mengizinkan lalu lintas internet di port 3389 ke objek grup keamanan jaringan yang diambil menggunakan Add-AzureRmNetworkSecurityRuleConfig.
+Perintah tetap menggunakan grup keamanan jaringan Azure yang dimodifikasi menggunakan **Set-AzureRmNetworkSecurityGroup**.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -56,7 +56,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkSecurityGroup
-Objek grup keamanan jaringan mewakili status tujuan yang cmdlet seting grup keamanan jaringan.
+Objek grup keamanan jaringan yang mewakili status tujuan di mana cmdlet mengatur grup keamanan jaringan.
 
 ```yaml
 Type: PSNetworkSecurityGroup
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -105,6 +105,6 @@ Parameter 'NetworkSecurityGroup' menerima nilai tipe 'PSNetworkSecurityGroup' da
 
 [New-AzureRmNetworkSecurityGroup](./New-AzureRmNetworkSecurityGroup.md)
 
-[Remove-AzureRmNetworkSecurityGroup](./Remove-AzureRmNetworkSecurityGroup.md)
+[Hapus-AzureRmNetworkSecurityGroup](./Remove-AzureRmNetworkSecurityGroup.md)
 
 

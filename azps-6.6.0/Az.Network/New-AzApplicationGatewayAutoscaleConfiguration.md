@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayAutoscaleConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayAutoscaleConfiguration.md
 ms.openlocfilehash: bc479972ecb4c7b53a5d6f3c604b1099066d1404
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140070767"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142080751"
 ---
 # New-AzApplicationGatewayAutoscaleConfiguration
 
 ## SYNOPSIS
-Membuat Konfigurasi Skala Otomatis untuk Gateway Aplikasi.
+Membuat Konfigurasi Skala Otomatis untuk Application Gateway.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationgatewayautoscaleconfiguration) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayautoscaleconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-AzApplicationGatewayAutoscaleConfiguration -MinCapacity <Int32> [-MaxCapacit
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApplicationGatewayAutoscaleConfiguration** membuat Konfigurasi SkalaOtomatis untuk gateway aplikasi Azure.
+Cmdlet **New-AzApplicationGatewayAutoscaleConfiguration** membuat Konfigurasi Skala Otomatis untuk gateway aplikasi Azure.
 
 ## EXAMPLES
 
@@ -38,7 +38,7 @@ PS C:\> $autoscaleConfig = New-AzApplicationGatewayAutoscaleConfiguration -MinCa
 PS C:\> $gw = New-AzApplicationGateway -Name $appgwName -ResourceGroupName $rgname ..  -AutoscaleConfiguration $autoscaleConfig
 ```
 
-Perintah pertama membuat konfigurasi skala otomatis dengan kapasitas minimal 3.
+Perintah pertama membuat konfigurasi skala otomatis dengan kapasitas minimum 3.
 Perintah kedua membuat gateway aplikasi dengan konfigurasi skala otomatis.
 
 ### Contoh 2
@@ -50,10 +50,10 @@ PS C:\> $gw.AutoscaleConfiguration = New-AzApplicationGatewayAutoscaleConfigurat
 PS C:\> $gw = Set-AzApplicationGateway -ApplicationGateway $gw
 ```
 
-Perintah pertama mendapatkan konfigurasi Gateway Aplikasi ke dalam variabel.
-Perintah kedua mengosongkan variabel Kapasitas SKU agar konfigurasi Skala Otomatis dapat diatur.
-Perintah ketiga menentukan Konfigurasi Skala Otomatis baru untuk Gateway Aplikasi.
-Perintah keempat menerapkan konfigurasi baru ke Gateway Aplikasi.
+Perintah pertama akan memasukkan konfigurasi Application Gateway ke dalam variabel.
+Perintah kedua menghapus variabel Kapasitas SKU untuk memungkinkan Konfigurasi Skala Otomatis diatur.
+Perintah ketiga menentukan Konfigurasi SkalaOtomatis baru untuk Application Gateway.
+Perintah keempat menerapkan konfigurasi baru ke Application Gateway.
 
 ## PARAMETERS
 
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxCapacity
-Unit kapasitas maksimum yang akan selalu tersedia [dan dikenakan biaya] untuk gateway aplikasi.
+Unit kapasitas maksimum yang akan selalu tersedia [dan dikenai biaya] untuk gateway aplikasi.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinCapacity
-Unit kapasitas minimum yang akan selalu tersedia [dan dikenakan biaya] untuk gateway aplikasi. 
+Minimal unit kapasitas yang akan selalu tersedia [dan dikenakan biaya] untuk gateway aplikasi. 
 
 ```yaml
 Type: System.Int32
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,11 +134,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

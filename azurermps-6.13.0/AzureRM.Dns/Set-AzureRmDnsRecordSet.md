@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Dns/Commands.Dns/help/Set-AzureRmDnsRecordSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Dns/Commands.Dns/help/Set-AzureRmDnsRecordSet.md
 ms.openlocfilehash: d0a7451db664d80240250984fcc1c0f8e1aaefe9
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426634"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142098457"
 ---
 # Set-AzureRmDnsRecordSet
 
@@ -29,15 +29,15 @@ Set-AzureRmDnsRecordSet -RecordSet <DnsRecordSet> [-Overwrite] [-DefaultProfile 
 
 ## DESCRIPTION
 Cmdlet **Set-AzureRmDnsRecordSet** memperbarui kumpulan catatan di layanan DNS Azure dari objek **RecordSet** lokal.
-Anda bisa melewati **objek RecordSet** sebagai parameter atau dengan menggunakan operator saluran.
-Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
-Kumpulan catatan tidak diperbarui jika telah diubah di Azure DNS sejak objek **RecordSet** lokal diambil.
-Ini menyediakan perlindungan untuk perubahan serentak.
-Anda dapat menyembunyikan perilaku ini menggunakan parameter *Timpa,* yang memperbarui kumpulan rekaman terlepas dari perubahan serentak.
+Anda dapat melewati objek **RecordSet** sebagai parameter atau menggunakan operator pipeline.
+Anda dapat menggunakan variabel *Konfirmasi* parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
+Kumpulan catatan tidak diperbarui jika telah diubah di DNS Azure sejak objek **RecordSet** lokal diambil.
+Ini memberikan perlindungan untuk perubahan serentak.
+Anda bisa menyembunyikan perilaku ini menggunakan parameter *Timpa* , yang memperbarui kumpulan catatan terlepas dari perubahan bersamaan.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui kumpulan rekaman
+### Contoh 1: Memperbarui kumpulan catatan
 ```
 PS C:\>$RecordSet = Get-AzureRmDnsRecordSet -ResourceGroupName MyResourceGroup -ZoneName myzone.com -Name www -RecordType A
 PS C:\> Add-AzureRmDnsRecordConfig -RecordSet $RecordSet -Ipv4Address 172.16.0.0
@@ -49,25 +49,25 @@ PS C:\> Set-AzureRmDnsRecordSet -RecordSet $RecordSet
 PS C:\> Get-AzureRmDnsRecordSet -ResourceGroupName MyResourceGroup -ZoneName myzone.com -Name www -RecordType A | Add-AzureRmDnsRecordConfig -Ipv4Address 172.16.0.0 | Add-AzureRmDnsRecordConfig -Ipv4Address 172.31.255.255 | Set-AzureRmDnsRecordSet
 ```
 
-Perintah pertama menggunakan cmdlet Get-AzureRmDnsRecordSet cmdlet untuk mendapatkan kumpulan data tertentu, lalu menyimpannya dalam $RecordSet variabel.
-Perintah kedua dan ketiga adalah operasi yang tidak berjaga-sebentar untuk menambahkan dua data A ke kumpulan data.
+Perintah pertama menggunakan cmdlet Get-AzureRmDnsRecordSet untuk mendapatkan kumpulan rekaman yang ditentukan, lalu menyimpannya dalam variabel $RecordSet.
+Perintah kedua dan ketiga adalah operasi off-line untuk menambahkan dua rekaman A ke kumpulan catatan.
 Perintah terakhir menggunakan cmdlet **Set-AzureRmDnsRecordSet** untuk melakukan pembaruan.
 
-### Contoh 2: Memperbarui rekaman SOA
+### Contoh 2: Memperbarui catatan SOA
 ```
 PS C:\>$RecordSet = Get-AzureRmDnsRecordSet -Name "@" -RecordType SOA -Zone $Zone
 PS C:\> $RecordSet.Records[0].Email = "admin.myzone.com"
 PS C:\> Set-AzureRmDnsRecordSet -RecordSet $RecordSet
 ```
 
-Perintah pertama menggunakan cmdlet **Get-AzureRmDnsRecordset** untuk mendapatkan kumpulan data yang ditentukan, lalu menyimpannya dalam $RecordSet data.
-Perintah kedua memperbarui data SOA tertentu di $RecordSet.
-Perintah terakhir menggunakan cmdlet **Set-AzureRmDnsRecordSet** untuk menyebarkan pembaruan di $RecordSet.
+Perintah pertama menggunakan cmdlet **Get-AzureRmDnsRecordset** untuk mendapatkan kumpulan rekaman yang ditentukan, lalu menyimpannya dalam variabel $RecordSet.
+Perintah kedua memperbarui catatan SOA yang ditentukan dalam $RecordSet.
+Perintah terakhir menggunakan cmdlet **Set-AzureRmDnsRecordSet** untuk menyebarkan pembaruan dalam $RecordSet.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -81,11 +81,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Overwrite
+### -Timpa
 Menunjukkan untuk memperbarui kumpulan catatan terlepas dari perubahan serentak.
-Kumpulan catatan tidak akan diperbarui jika telah diubah di Azure DNS sejak objek **RecordSet** lokal diambil.
-Ini menyediakan perlindungan untuk perubahan serentak.
-Untuk menyembunyikan perilaku ini, Anda dapat menggunakan parameter *Overwrite,* yang menghasilkan kumpulan rekaman yang diperbarui terlepas dari perubahan serentak.
+Kumpulan catatan tidak akan diperbarui jika telah diubah di DNS Azure sejak objek **RecordSet** lokal diambil.
+Ini memberikan perlindungan untuk perubahan serentak.
+Untuk menyembunyikan perilaku ini, Anda bisa menggunakan parameter *Timpa* , yang menghasilkan kumpulan catatan yang diperbarui terlepas dari perubahan bersamaan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecordSet
-Menentukan **RecordSet untuk** diperbarui.
+Menentukan **Kumpulan Data** untuk diperbarui.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Dns.DnsRecordSet
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan. Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan. Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -158,9 +158,9 @@ Parameter: RecordSet (ByValue)
 
 ## CATATAN
 Anda dapat menggunakan parameter *Konfirmasi* untuk mengontrol apakah cmdlet ini meminta konfirmasi.
-Secara default, cmdlet akan meminta konfirmasi Anda jika $ConfirmPreference Windows PowerShell variabel memiliki nilai Sedang atau lebih rendah.
-Jika Anda menentukan *Konfirmasi* *atau Konfirmasi:$True*, cmdlet ini akan meminta konfirmasi sebelum dijalankan.
-Jika Anda menentukan *Confirm:$False*, cmdlet tidak akan meminta konfirmasi Anda. 
+Secara default, cmdlet meminta Konfirmasi jika variabel $ConfirmPreference Windows PowerShell memiliki nilai Sedang atau lebih rendah.
+Jika Anda menentukan *Konfirmasi* atau *Konfirmasi:$True*, cmdlet ini meminta anda untuk konfirmasi sebelum berjalan.
+Jika Anda menentukan *Konfirmasi:$False*, cmdlet tidak meminta konfirmasi kepada Anda. 
 
 ## RELATED LINKS
 

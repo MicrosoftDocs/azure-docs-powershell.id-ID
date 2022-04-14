@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactories/Commands.DataFactories/help/Get-AzureRmDataFactoryLinkedService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactories/Commands.DataFactories/help/Get-AzureRmDataFactoryLinkedService.md
 ms.openlocfilehash: 8a6553547bd75aeaaca8e96a85c9697d00ee65a1
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421706"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142099240"
 ---
 # Get-AzureRmDataFactoryLinkedService
 
@@ -35,22 +35,22 @@ Get-AzureRmDataFactoryLinkedService [-DataFactory] <PSDataFactory> [[-Name] <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmDataFactoryLinkedService mendapatkan** informasi tentang layanan tertaut di Azure Data Factory.
-Jika Anda menentukan nama layanan tertaut, cmdlet ini mendapatkan informasi tentang layanan tertaut tersebut.
+Cmdlet **Get-AzureRmDataFactoryLinkedService** mendapatkan informasi tentang layanan tertaut di Azure Data Factory.
+Jika Anda menentukan nama layanan yang ditautkan, cmdlet ini akan mendapatkan informasi tentang layanan tertaut tersebut.
 Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua layanan yang ditautkan di pabrik data.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan informasi tentang semua layanan tertaut
+### Contoh 1: Dapatkan informasi tentang semua layanan tertaut
 ```
 PS C:\>Get-AzureRmDataFactoryLinkedService -ResourceGroupName "ADF" -DataFactoryName "WikiADF" | Format-List
 ```
 
-Perintah ini mendapatkan informasi tentang semua layanan yang ditautkan di pabrik data yang bernama WikiADF, lalu meneruskan layanan tertaut ke cmdlet Format-List dengan menggunakan operator pipeline.
-Cmdlet tersebut memformat hasilnya.
-Untuk informasi selengkapnya, ketik `Get-Help Format-List` .
+Perintah ini mendapatkan informasi tentang semua layanan tertaut di pabrik data bernama WikiADF, lalu mengirimkan layanan tertaut ke cmdlet Format-List dengan menggunakan operator pipeline.
+Cmdlet itu memformat hasil.
+Untuk informasi selengkapnya, ketik .`Get-Help Format-List`
 
-### Contoh 2: Mendapatkan informasi tentang layanan tertaut tertentu
+### Contoh 2: Dapatkan informasi tentang layanan tertaut tertentu
 ```
 PS C:\>Get-AzureRmDataFactoryLinkedService -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -Name "HDILinkedService"
 LinkedServiceName   ResourceGroupName     DataFactoryName              Properties
@@ -58,7 +58,7 @@ LinkedServiceName   ResourceGroupName     DataFactoryName              Propertie
 HDILinkedService    ADF                   WikiADF                      Microsoft.DataFactories.HDInsightBYOCAsset
 ```
 
-Perintah ini mendapatkan informasi tentang layanan tertaut yang bernama HDILinkedService di pabrik data bernama WikiADF.
+Perintah ini mendapatkan informasi tentang layanan tertaut bernama HDILinkedService di pabrik data bernama WikiADF.
 
 ### Contoh 3: Dapatkan informasi tentang layanan tertaut tertentu dengan menentukan parameter DataFactory
 ```
@@ -66,15 +66,15 @@ PS C:\>$DataFactory = Get-AzureRmDataFactory -ResourceGroupName "ADF" -Name "Con
 PS C:\> Get-AzureRmDataFactoryLinkedService -DataFactory $DataFactory | Format-Table -Property LinkedServiceName, DataFactoryName, ResourceGroupName
 ```
 
-Perintah pertama menggunakan cmdlet Get-AzureRmDataFactory untuk mendapatkan pabrik data bernama ContosoFactory, lalu menyimpannya di $DataFactory lain.
-Perintah kedua mendapatkan informasi tentang layanan yang ditautkan untuk pabrik data yang disimpan di $DataFactory, lalu meneruskan informasi itu ke cmdlet Format-Table dengan menggunakan operator pipeline.
-**Format-Tabel** memformat output sebagai set data dengan properti yang ditentukan sebagai kolom set data.
+Perintah pertama menggunakan cmdlet Get-AzureRmDataFactory untuk mendapatkan pabrik data bernama ContosoFactory, lalu menyimpannya dalam variabel $DataFactory.
+Perintah kedua mendapatkan informasi tentang layanan tertaut untuk pabrik data yang disimpan di $DataFactory, lalu mengirimkan informasi tersebut ke cmdlet Format-Table dengan menggunakan operator pipeline.
+**Format-Tabel** memformat output sebagai kumpulan data dengan properti tertentu sebagai kolom kumpulan data.
 
 ## PARAMETERS
 
 ### -DataFactory
-Menentukan objek **PSDataFactory.**
-Cmdlet ini mendapatkan layanan tertaut yang termasuk dalam pabrik data yang ditentukan parameter ini.
+Menentukan objek **PSDataFactory** .
+Cmdlet ini mendapatkan layanan tertaut milik pabrik data yang ditentukan parameter ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataFactories.Models.PSDataFactory
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 
 ### -DataFactoryName
 Menentukan nama pabrik data.
-Cmdlet ini mendapatkan layanan tertaut yang termasuk dalam pabrik data yang ditentukan parameter ini.
+Cmdlet ini mendapatkan layanan tertaut milik pabrik data yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama layanan tertaut yang akan mendapatkan informasi.
+Menentukan nama layanan yang ditautkan tentang mana yang akan mendapatkan informasi.
 
 ```yaml
 Type: System.String
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -164,12 +164,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.DataFactories.Models.PSLinkedService
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, data, factories
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 
 [New-AzureRmDataFactoryLinkedService](./New-AzureRmDataFactoryLinkedService.md)
 
-[Remove-AzureRmDataFactoryLinkedService](./Remove-AzureRmDataFactoryLinkedService.md)
+[Hapus-AzureRmDataFactoryLinkedService](./Remove-AzureRmDataFactoryLinkedService.md)
 
 

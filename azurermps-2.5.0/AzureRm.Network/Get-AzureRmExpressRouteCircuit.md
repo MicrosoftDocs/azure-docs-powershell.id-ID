@@ -5,16 +5,16 @@ ms.assetid: C9954E3D-8645-473E-A6D4-86278C2F6BC1
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/get-azurermexpressroutecircuit
 schema: 2.0.0
 ms.openlocfilehash: cf15d39a8c1ec320b45e488ccaac7903c82e30f0
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132429173"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142146434"
 ---
 # Get-AzureRmExpressRouteCircuit
 
 ## SYNOPSIS
-Dapatkan sirkuit Azure ExpressRoute dari Azure.
+Mendapatkan sirkuit Azure ExpressRoute dari Azure.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -38,7 +38,7 @@ Get-AzureRmExpressRouteCircuit -Name $CircuitName -ResourceGroupName $rg | Remov
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -95,10 +95,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Move-AzureRmExpressRouteCircuit](Move-AzureRmExpressRouteCircuit.md)
+[Pindahkan-AzureRmExpressRouteCircuit](Move-AzureRmExpressRouteCircuit.md)
 
-[New-AzureRmExpressRouteCircuit](New-AzureRmExpressRouteCircuit.md)
+[Baru-AzureRmExpressRouteCircuit](New-AzureRmExpressRouteCircuit.md)
 
-[Remove-AzureRmExpressRouteCircuit](Remove-AzureRmExpressRouteCircuit.md)
+[Hapus-AzureRmExpressRouteCircuit](Remove-AzureRmExpressRouteCircuit.md)
 
 [Set-AzureRmExpressRouteCircuit](Set-AzureRmExpressRouteCircuit.md)

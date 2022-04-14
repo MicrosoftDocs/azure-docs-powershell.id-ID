@@ -5,11 +5,11 @@ ms.assetid: 5E9C02BE-9DCC-4865-95D2-6B69D373BE77
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/new-azurermexpressroutecircuitpeeringconfig
 schema: 2.0.0
 ms.openlocfilehash: 9b07574a1d8895d8504660784bf3bafe4ed891bd
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422785"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142145676"
 ---
 # New-AzureRmExpressRouteCircuitPeeringConfig
 
@@ -30,7 +30,7 @@ New-AzureRmExpressRouteCircuitPeeringConfig -Name <String> -PeeringType <String>
  [<CommonParameters>]
 ```
 
-### MicrosoftPeeringConfigroutFilterId
+### MicrosoftPeeringConfigRoutFilterId
 ```
 New-AzureRmExpressRouteCircuitPeeringConfig -Name <String> -PeeringType <String> -PeerASN <Int32>
  -PrimaryPeerAddressPrefix <String> -SecondaryPeerAddressPrefix <String> -VlanId <Int32> [-SharedKey <String>]
@@ -40,7 +40,7 @@ New-AzureRmExpressRouteCircuitPeeringConfig -Name <String> -PeeringType <String>
  [<CommonParameters>]
 ```
 
-### MicrosoftPeeringConfigroutFilter
+### MicrosoftPeeringConfigRoutFilter
 ```
 New-AzureRmExpressRouteCircuitPeeringConfig -Name <String> -PeeringType <String> -PeerASN <Int32>
  -PrimaryPeerAddressPrefix <String> -SecondaryPeerAddressPrefix <String> -VlanId <Int32> [-SharedKey <String>]
@@ -55,7 +55,7 @@ Cmdlet **New-AzureRmExpressRouteCircuitPeeringConfig** menambahkan konfigurasi p
 
 ## EXAMPLES
 
-### Contoh 1: Buat sirkuit ExpressRoute baru dengan konfigurasi peering
+### Contoh 1: Membuat sirkuit ExpressRoute baru dengan konfigurasi peering
 ```
 $parameters = @{
     Name = 'AzurePrivatePeering'
@@ -85,7 +85,7 @@ New-AzureRmExpressRouteCircuit @parameters
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -MicrosoftConfigAdvertisedPublicPrefixes
-Untuk PeeringType MicrosoftPeering, Anda harus menyediakan daftar semua prefiks yang Anda rencanakan untuk diiklankan melalui sesi BGP. Hanya prefiks alamat IP publik yang diterima. Anda bisa mengirim daftar yang dipisahkan koma jika Anda berencana mengirim rangkaian prefiks. Prefiks ini harus didaftarkan kepada Anda dalam Routing Registry Name (RIR / IRR).
+Untuk PeeringType microsoftPeering, Anda harus menyediakan daftar semua prefiks yang anda rencanakan untuk beriklan melalui sesi BGP. Hanya prefiks alamat IP publik yang diterima. Anda bisa mengirim daftar yang dipisahkan koma jika Anda berencana untuk mengirim sekumpulan prefiks. Prefiks ini harus didaftarkan kepada Anda dalam Nama Registri Perutean (RIR / IRR).
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -MicrosoftConfigCustomerAsn
-Jika Anda mengiklankan prefiks yang tidak terdaftar ke nomor peering AS, Anda bisa menentukan jumlah AS tempat mereka terdaftar.
+Jika Anda adalah prefiks iklan yang tidak terdaftar pada nomor PEERING AS, Anda dapat menentukan nomor AS yang didaftarkan.
 
 ```yaml
 Type: Int32
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -MicrosoftConfigRoutingRegistryName
-Nama Registri Perutean (RIR / IRR, Routing Registry Name) tempat angka dan prefiks AS didaftarkan.
+Nama Registri Perutean (RIR / IRR) tempat nomor dan prefiks AS didaftarkan.
 
 ```yaml
 Type: String
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeerASN
-Jumlah AS sirkuit ExpressRoute Anda. Ini harus menjadi ASN Publik ketika PeeringType adalah AzurePublicPeering.
+Nomor AS sirkuit ExpressRoute Anda. Ini harus menjadi ASN Publik ketika PeeringType adalah AzurePublicPeering.
 
 ```yaml
 Type: Int32
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeeringType
-Nilai yang dapat diterima untuk parameter ini adalah: `AzurePrivatePeering` , `AzurePublicPeering` , dan `MicrosoftPeering`
+Nilai yang dapat diterima untuk parameter ini adalah: `AzurePrivatePeering`, , `AzurePublicPeering`dan `MicrosoftPeering`
 
 ```yaml
 Type: String
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryPeerAddressPrefix
-Ini adalah rentang Alamat IP untuk jalur perutean utama dari hubungan peering ini. Hal ini harus termasuk subnet CIDR /30. Alamat bernomor ganjil pertama dalam subnet ini harus ditetapkan ke antarmuka perute Anda. Azure akan mengonfigurasi alamat bernomor genap berikutnya ke antarmuka perute Azure.
+Ini adalah rentang Alamat IP untuk jalur perutean utama hubungan peering ini. Ini harus berupa subnet CIDR /30. Alamat bernomor ganjil pertama dalam subnet ini harus ditetapkan ke antarmuka perute Anda. Azure akan mengonfigurasi alamat bernomor genjat berikutnya ke antarmuka perute Azure.
 
 ```yaml
 Type: String
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -RouteFilterId
-Ini adalah Id sumber daya dari objek RouteFilter yang sudah ada.
+Ini adalah ID sumber daya dari objek RouteFilter yang sudah ada.
 
 ```yaml
 Type: String
@@ -267,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecondaryPeerAddressPrefix
-Ini adalah rentang Alamat IP untuk jalur perutean sekunder dari hubungan peering ini. Hal ini harus termasuk subnet CIDR /30. Alamat bernomor ganjil pertama dalam subnet ini harus ditetapkan ke antarmuka perute Anda. Azure akan mengonfigurasi alamat bernomor genap berikutnya ke antarmuka perute Azure.
+Ini adalah rentang Alamat IP untuk jalur perutean sekunder dari hubungan peering ini. Ini harus berupa subnet CIDR /30. Alamat bernomor ganjil pertama dalam subnet ini harus ditetapkan ke antarmuka perute Anda. Azure akan mengonfigurasi alamat bernomor genjat berikutnya ke antarmuka perute Azure.
 
 ```yaml
 Type: String
@@ -282,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -SharedKey
-Ini adalah hash MD5 opsional yang digunakan sebagai kunci bersama untuk konfigurasi peering.
+Ini adalah hash MD5 opsional yang digunakan sebagai kunci pra-berbagi untuk konfigurasi peering.
 
 ```yaml
 Type: String
@@ -297,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -VlanId
-Ini adalah nomor Id VLAN yang ditetapkan untuk peering ini.
+Ini adalah nomor Id dari VLAN yang ditetapkan untuk peering ini.
 
 ```yaml
 Type: Int32
@@ -312,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Stop-AzureRmHDInsightJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Stop-AzureRmHDInsightJob.md
 ms.openlocfilehash: 7247a4f5e23bc4f0f3c520f909cec221ee03e1ac
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424524"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142097763"
 ---
 # Stop-AzureRmHDInsightJob
 
 ## SYNOPSIS
-Menghentikan pekerjaan berjalan tertentu pada kluster.
+Menghentikan pekerjaan yang berjalan tertentu pada kluster.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,11 +28,11 @@ Stop-AzureRmHDInsightJob [-ClusterName] <String> [-JobId] <String> [-HttpCredent
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzureRmHDInsightJob** menghentikan pekerjaan berjalan tertentu di kluster Azure HDInsight.
+Cmdlet **Stop-AzureRmHDInsightJob** menghentikan pekerjaan yang berjalan tertentu pada kluster Azure HDInsight.
 
 ## EXAMPLES
 
-### Contoh 1: Menghentikan pekerjaan pada kluster tertentu
+### Contoh 1: Menghentikan pekerjaan pada kluster yang ditentukan
 ```
 PS C:\># Cluster info
 PS C:\> $clusterName = "your-hadoop-001"
@@ -43,7 +43,7 @@ PS C:\> Stop-AzureRmHDInsightJob `
             -JobId $jobId
 ```
 
-Perintah ini menghentikan pekerjaan pada kluster yang bernama up-hadoop-001.
+Perintah ini menghentikan pekerjaan di kluster bernama your-hadoop-001.
 
 ## PARAMETERS
 
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -77,8 +77,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpCredential
-Menentukan kredensial masuk kluster (HTTP) untuk kluster tersebut.
+### -HttpCredential
+Menentukan kredensial masuk kluster (HTTP) untuk kluster.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -142,6 +142,6 @@ Parameter: JobId (ByValue)
 
 [Start-AzureRmHDInsightJob](./Start-AzureRmHDInsightJob.md)
 
-[Wait-AzureRmHDInsightJob](./Wait-AzureRmHDInsightJob.md)
+[Tunggu-AzureRmHDInsightJob](./Wait-AzureRmHDInsightJob.md)
 
 

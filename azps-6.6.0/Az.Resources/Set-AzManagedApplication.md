@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzManagedApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzManagedApplication.md
 ms.openlocfilehash: ec492ace233d0a15452a032ed5bb19958f6f168a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140277997"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142042373"
 ---
 # Set-AzManagedApplication
 
 ## SYNOPSIS
-Memperbarui aplikasi yang dikelola
+Pembaruan aplikasi terkelola
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/set-azmanagedapplication) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/set-azmanagedapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,11 +39,11 @@ Set-AzManagedApplication -Id <String> [-ManagedResourceGroupName <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzManagedApplication** cmdlet updates managed applications
+Cmdlet **Set-AzManagedApplication** memperbarui aplikasi terkelola
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui deskripsi definisi aplikasi terkelola
+### Contoh 1: Memperbarui deskripsi definisi aplikasi terkelola
 ```
 PS C:\>Set-AzManagedApplication -ResourceId "/subscriptions/mySubId/resourcegroups/myRG/Microsoft.Solutions/applications/myApp" -Description "Updated description here"
 ```
@@ -53,7 +53,7 @@ Perintah ini memperbarui deskripsi aplikasi yang dikelola
 ## PARAMETERS
 
 ### -ApiVersion
-Saat diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
+Ketika diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
 Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai versi terbaru yang tersedia.
 
 ```yaml
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -98,7 +98,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Kind
+### -Jenis
 Jenis aplikasi yang dikelola.
 Salah satu marketplace atau servicecatalog
 
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedApplicationDefinitionId
-Nama grup sumber daya yang dikelola.
+Nama grup sumber daya terkelola.
 
 ```yaml
 Type: System.String
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedResourceGroupName
-Nama grup sumber daya yang dikelola.
+Nama grup sumber daya terkelola.
 
 ```yaml
 Type: System.String
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -Parameter
-JSON memformat string parameter untuk aplikasi yang dikelola.
+String parameter yang diformat JSON untuk aplikasi terkelola.
 Ini bisa berupa jalur ke nama file atau uri yang berisi parameter, atau parameter sebagai string.
 
 ```yaml
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -Rencana
-Tabel hash yang menyatakan properti paket aplikasi terkelola.
+Tabel hash yang mewakili properti rencana aplikasi terkelola.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Saat diatur, cmdlet harus menggunakan versi API prari tamu ketika menentukan versi mana yang akan digunakan secara otomatis.
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -236,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -267,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

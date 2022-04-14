@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADGroup.md
 ms.openlocfilehash: 4a2a728ea9d2324c29b5bf860c71cd3c13f98ccb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140385150"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142042535"
 ---
 # Remove-AzADGroup
 
@@ -20,7 +20,7 @@ Menghapus grup direktori aktif.
 [!INCLUDE [msgraph-migration-banner](../../includes/msgraph-migration-banner.md)]
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/remove-azadgroup) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-azadgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ Menghapus grup direktori aktif.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus grup berdasarkan id objek
+### Contoh 1: Menghapus grup menurut id objek
 
 ```powershell
 PS C:\> Remove-AzADGroup -ObjectId 85F89C90-780E-4AA6-9F4F-6F268D322EEE
@@ -55,17 +55,17 @@ PS C:\> Remove-AzADGroup -ObjectId 85F89C90-780E-4AA6-9F4F-6F268D322EEE
 
 Menghapus grup dengan id objek '85F89C90-780E-4AA6-9F4F-6F268D322EEE' dari penyewa.
 
-### Contoh 2: Hapus grup dengan pemipaan
+### Contoh 2: Menghapus grup dengan pipa
 
 ```powershell
 PS C:\> Get-AzADGroup -ObjectId 85F89C90-780E-4AA6-9F4F-6F268D322EEE | Remove-AzADGroup
 ```
 
-Mendapatkan grup dengan id objek '85F89C90-780E-4AA6-9F4F-6F268D322EEE' dan pipa yang akan Remove-AzADGroup menghapus grup dari penyewa.
+Mendapatkan grup dengan id objek '85F89C90-780E-4AA6-9F4F-6F268D322EEE' dan pipa yang ke Remove-AzADGroup untuk menghapus grup dari penyewa.
 
 ### Contoh 3
 
-Menghapus grup direktori aktif. (otomatisgenerated)
+Menghapus grup direktori aktif. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -104,8 +104,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jika ditentukan, tidak minta konfirmasi untuk menghapus grup.
+### -Paksa
+Jika ditentukan, tidak meminta konfirmasi untuk menghapus grup.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -196,13 +196,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### Microsoft.Azure.Commands.ActiveDirectory.LINUXDGroup
+### Microsoft.Azure.Commands.ActiveDirectory.PSADGroup
 
 ## OUTPUTS
 

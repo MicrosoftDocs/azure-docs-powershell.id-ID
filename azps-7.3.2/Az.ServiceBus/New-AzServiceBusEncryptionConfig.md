@@ -5,17 +5,20 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusEncryptionConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusEncryptionConfig.md
-ms.openlocfilehash: a2d25845ac14431b0f6505c22996447c508a95dc
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 4dd89416e259325cd42894cc667f91e1f24b7f29
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140371082"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142027379"
 ---
 # New-AzServiceBusEncryptionConfig
 
 ## SYNOPSIS
-Membuat contoh objek dalam memori PSEncryptionConfigAttributes yang kemudian bisa diberikan sebagai input untuk New-AzServiceBusNamespace dan Set-AzServiceBusNamespace untuk mengaktifkan enkripsi 
+Membuat instans objek memori PSEncryptionConfigAttributes yang kemudian dapat diberikan sebagai input ke New-AzServiceBusNamespace dan Set-AzServiceBusNamespace untuk mengaktifkan enkripsi 
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/new-azservicebusencryptionconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzServiceBusEncryptionConfig [-KeyName] <String> [-KeyVaultUri] <String> [-K
 ```
 
 ## DESCRIPTION
-**New-AzServiceBusEncryptionConfig** membuat objek dalam memori. Perintah ini tidak melakukan panggilan atau perubahan apa pun ke server. 
+**New-AzServiceBusEncryptionConfig** membuat objek memori. Perintah ini tidak melakukan panggilan atau perubahan pada server. 
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ New-AzServiceBusEncryptionConfig [-KeyName] <String> [-KeyVaultUri] <String> [-K
 PS C:\> New-AzServiceBusEncryptionConfig -KeyName key1 -KeyVaultUri https://myvaultname.vault.azure.net -UserAssignedIdentity /subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/MSIName2
 ```
 
-Lihat dokumen untuk New-AzServiceBusNamespace dan Set-AzServiceBusNamespace tentang cara menggunakan ini lebih lanjut
+Lihat dokumen untuk New-AzServiceBusNamespace dan Set-AzServiceBusNamespace tentang cara menggunakannya lebih lanjut
 
 ## PARAMETERS
 
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultUri
-Uri Kunci Vault
+Key Vault Uri
 
 ```yaml
 Type: System.String
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVersion
-Versi Utama
+Versi Kunci
 
 ```yaml
 Type: System.String
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

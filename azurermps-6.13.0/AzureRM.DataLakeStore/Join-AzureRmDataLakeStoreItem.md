@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeStore/Commands.DataLakeStore/help/Join-AzureRmDataLakeStoreItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeStore/Commands.DataLakeStore/help/Join-AzureRmDataLakeStoreItem.md
 ms.openlocfilehash: 6e2a0e21f071f9496cce03f07a9b5c68da405e85
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422953"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142098928"
 ---
 # Join-AzureRmDataLakeStoreItem
 
@@ -43,7 +43,7 @@ Perintah ini menggabungkan File01.txt dan File02.txt untuk membuat file Combined
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Data Lake Store.
+Menentukan nama akun Penyimpanan Data Lake.
 
 ```yaml
 Type: System.String
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tujuan
-Menentukan jalur Data Lake Store untuk item yang tergabung, dimulai dengan direktori akar (/).
+Menentukan jalur Penyimpanan Data Lake untuk item yang digabungkan, dimulai dengan direktori akar (/).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -87,8 +87,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Menunjukkan bahwa operasi ini dapat menimpa file tujuan jika file sudah ada.
+### -Paksa
+Menunjukkan bahwa operasi ini dapat menimpa file tujuan jika sudah ada.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan larik jalur Data Lake Store dari file yang akan digabungkan, dimulai dengan direktori akar (/).
+Menentukan array jalur Penyimpanan Data Lake dari file yang akan digabungkan, dimulai dengan direktori akar (/).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance[]
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -164,7 +164,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ### System.String
-Jalur lengkap ke file yang dihasilkan dari file yang tergabung.
+Jalur lengkap ke file yang dihasilkan dari file yang digabungkan.
 
 ## CATATAN
 
@@ -172,14 +172,14 @@ Jalur lengkap ke file yang dihasilkan dari file yang tergabung.
 
 [Get-AzureRmDataLakeStoreItem](./Get-AzureRmDataLakeStoreItem.md)
 
-[Export-AzureRmDataLakeStoreItem](./Export-AzureRmDataLakeStoreItem.md)
+[Ekspor-AzureRmDataLakeStoreItem](./Export-AzureRmDataLakeStoreItem.md)
 
 [Import-AzureRmDataLakeStoreItem](./Import-AzureRmDataLakeStoreItem.md)
 
 [New-AzureRmDataLakeStoreItem](./New-AzureRmDataLakeStoreItem.md)
 
-[Remove-AzureRmDataLakeStoreItem](./Remove-AzureRmDataLakeStoreItem.md)
+[Hapus-AzureRmDataLakeStoreItem](./Remove-AzureRmDataLakeStoreItem.md)
 
-[Test-AzureRmDataLakeStoreItem](./Test-AzureRmDataLakeStoreItem.md)
+[Uji-AzureRmDataLakeStoreItem](./Test-AzureRmDataLakeStoreItem.md)
 
 

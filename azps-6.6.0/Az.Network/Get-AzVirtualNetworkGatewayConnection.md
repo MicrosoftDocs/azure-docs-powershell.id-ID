@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayConnection.md
 ms.openlocfilehash: 9697dc05796f56c757fa7566ebdd7124527f02e5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140104193"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142081129"
 ---
 # Get-AzVirtualNetworkGatewayConnection
 
 ## SYNOPSIS
-Mendapatkan Koneksi Gateway Jaringan Virtual
+Mendapatkan Koneksi Gateway Virtual Network
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azvirtualnetworkgatewayconnection) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualnetworkgatewayconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,30 +29,30 @@ Get-AzVirtualNetworkGatewayConnection [-Name <String>] -ResourceGroupName <Strin
 ```
 
 ## DESCRIPTION
-Virtual Network Gateway Connection adalah objek yang mewakili IPsec portal (Site-to-Site atau Vnet-to-Vnet) yang tersambung ke Virtual Network Gateway di Azure.
+Koneksi Gateway Virtual Network adalah objek yang mewakili terowongan IPsec (Site-to-Site atau Vnet-to-Vnet) yang tersambung ke Gateway Virtual Network Anda di Azure.
 Cmdlet **Get-AzVirtualNetworkGatewayConnection** mengembalikan objek koneksi Anda berdasarkan Nama dan Nama Grup Sumber Daya.
-Jika cmdlet **Get-AzVirtualNetworkGatewayConnection** diterbitkan tanpa menentukan parameter -Name, output tidak akan memperlihatkan detail ConnectionStatus dan SharedKey.
+Jika cmdlet **Get-AzVirtualNetworkGatewayConnection** dikeluarkan tanpa menentukan parameter -Name, output tidak akan memperlihatkan detail ConnectionStatus dan SharedKey.
 
 ## EXAMPLES
 
-### 1: Dapatkan Koneksi Gateway Jaringan Virtual
+### 1: Mendapatkan Koneksi Gateway Virtual Network
 ```
 Get-AzVirtualNetworkGatewayConnection -Name myTunnel -ResourceGroupName myRG
 ```
 
-Mengembalikan objek Koneksi Gateway Jaringan Virtual dengan nama "myTunnel" dalam grup sumber daya "myRG"
+Mengembalikan objek Virtual Network Gateway Connection dengan nama "myTunnel" dalam grup sumber daya "myRG"
 
-### 2: Mendapatkan semua Koneksi Gateway Jaringan Virtual menggunakan pemfilteran
+### 2: Dapatkan semua Koneksi Gateway Virtual Network menggunakan pemfilteran
 ```
 Get-AzVirtualNetworkGatewayConnection -Name myTunnel* -ResourceGroupName myRG
 ```
 
-Mengembalikan semua Koneksi Gateway Jaringan Virtual yang dimulai dengan "myTunnel" dalam grup sumber daya "myRG"
+Mengembalikan semua Virtual Network Gateway Connections yang dimulai dengan "myTunnel" dalam grup sumber daya "myRG"
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -93,7 +93,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

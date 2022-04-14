@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusGeoDRConfigurationBreakPair.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusGeoDRConfigurationBreakPair.md
-ms.openlocfilehash: a5db579c35c30aaeb1fdcf21d04ab8751d7973f2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 084d95635e55bd20962cc1e0f6788a93958d3720
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140554512"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142027271"
 ---
 # Set-AzServiceBusGeoDRConfigurationBreakPair
 
 ## SYNOPSIS
-Operasi ini menonaktifkan Pemulihan Bencana dan berhenti replikasi perubahan dari ruang nama utama ke sekunder
+Operasi ini menonaktifkan Pemulihan Bencana dan menghentikan replikasi perubahan dari ruang nama utama ke sekunder
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/set-azservicebusgeodrconfigurationbreakpair) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,14 +35,14 @@ Set-AzServiceBusGeoDRConfigurationBreakPair [-InputObject] <PSServiceBusDRConfig
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GeoDRConfigResourceIdParameterSet
+### GeodrConfigResourceIdParameterSet
 ```
 Set-AzServiceBusGeoDRConfigurationBreakPair [-ResourceId] <String> [-PassThru]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzServiceBusGeoDRConfigurationBreakPair** menonaktifkan Pemulihan Bencana dan berhenti mengggentikan perubahan dari ruang nama utama ke sekunder
+Cmdlet **Set-AzServiceBusGeoDRConfigurationBreakPair** menonaktifkan Pemulihan Bencana dan menghentikan replikasi perubahan dari ruang nama utama ke sekunder
 
 ## EXAMPLES
 
@@ -48,7 +51,7 @@ Cmdlet **Set-AzServiceBusGeoDRConfigurationBreakPair** menonaktifkan Pemulihan B
 PS C:\> Set-AzServiceBusGeoDRConfigurationBreakPair -ResourceGroupName "SampleResourceGroup" -Namespace "SampleNamespace_Primary" -Name "SampleDRConfigName"
 ```
 
-Operasi ini menonaktifkan Pemulihan Bencana dan berhenti replikasi perubahan dari ruang nama utama ke sekunder
+Operasi ini menonaktifkan Pemulihan Bencana dan menghentikan replikasi perubahan dari ruang nama utama ke sekunder
 
 ## PARAMETERS
 
@@ -68,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Bus Layanan Objek Konfigurasi GeoDR
+Objek Konfigurasi Geodr Bus Layanan
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceBus.Models.PSServiceBusDRConfigurationAttributes
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Kumpulan Nama - Ruang Nama Utama
+Nama Ruang Nama - Ruang Nama Utama
 
 ```yaml
 Type: System.String
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya GeoDRConfiguration
+Id Sumber Daya Konfigurasi Geodr
 
 ```yaml
 Type: System.String
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

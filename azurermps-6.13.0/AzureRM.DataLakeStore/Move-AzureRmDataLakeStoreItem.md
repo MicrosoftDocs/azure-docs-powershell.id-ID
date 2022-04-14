@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeStore/Commands.DataLakeStore/help/Move-AzureRmDataLakeStoreItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeStore/Commands.DataLakeStore/help/Move-AzureRmDataLakeStoreItem.md
 ms.openlocfilehash: 15c516e1d54b6e706176ceb28a1974e848945c47
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425895"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142098731"
 ---
 # Move-AzureRmDataLakeStoreItem
 
 ## SYNOPSIS
-Memindahkan atau mengganti nama file atau folder di Data Lake Store.
+Memindahkan atau mengganti nama file atau folder di Penyimpanan Data Lake.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,7 +29,7 @@ Move-AzureRmDataLakeStoreItem [-Account] <String> [-Path] <DataLakeStorePathInst
 ```
 
 ## DESCRIPTION
-Cmdlet **Move-AzureRmDataLakeStoreItem** memindahkan atau mengganti nama file atau folder di Data Lake Store.
+Cmdlet **Move-AzureRmDataLakeStoreItem** memindahkan atau mengganti nama file atau folder di Penyimpanan Data Lake.
 
 ## EXAMPLES
 
@@ -38,12 +38,12 @@ Cmdlet **Move-AzureRmDataLakeStoreItem** memindahkan atau mengganti nama file at
 PS C:\>Move-AzureRmDataLakeStoreItem -AccountName "ContosoADL" -Path "/Original/Path/File.txt" -Destination "/New/Path/RenamedFile.txt"
 ```
 
-Perintah ini mengganti nama item File.txt anda RenamedFile.txt dan memindahkannya ke folder lain.
+Perintah ini mengganti nama item File.txt menjadi RenamedFile.txt dan memindahkannya ke folder lain.
 
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Data Lake Store.
+Menentukan nama akun Penyimpanan Data Lake.
 
 ```yaml
 Type: System.String
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tujuan
-Menentukan jalur Data Lake Store untuk memindahkan item, dimulai dengan direktori akar (/).
+Menentukan jalur Penyimpanan Data Lake untuk memindahkan item, dimulai dengan direktori akar (/).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -87,8 +87,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Menunjukkan bahwa operasi ini dapat menimpa file tujuan jika file sudah ada.
+### -Paksa
+Menunjukkan bahwa operasi ini dapat menimpa file tujuan jika sudah ada.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -102,8 +102,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur Data Lake Store dari item yang akan dipindahkan atau diganti namanya, dimulai dengan direktori akar (/).
+### -Jalur
+Menentukan jalur Penyimpanan Data Lake item untuk memindahkan atau mengganti nama, dimulai dengan direktori akar (/).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -170,14 +170,14 @@ Jalur lengkap ke file atau folder yang dipindahkan.
 
 [Get-AzureRmDataLakeStoreItem](./Get-AzureRmDataLakeStoreItem.md)
 
-[Export-AzureRmDataLakeStoreItem](./Export-AzureRmDataLakeStoreItem.md)
+[Ekspor-AzureRmDataLakeStoreItem](./Export-AzureRmDataLakeStoreItem.md)
 
 [Import-AzureRmDataLakeStoreItem](./Import-AzureRmDataLakeStoreItem.md)
 
 [New-AzureRmDataLakeStoreItem](./New-AzureRmDataLakeStoreItem.md)
 
-[Remove-AzureRmDataLakeStoreItem](./Remove-AzureRmDataLakeStoreItem.md)
+[Hapus-AzureRmDataLakeStoreItem](./Remove-AzureRmDataLakeStoreItem.md)
 
-[Test-AzureRmDataLakeStoreItem](./Test-AzureRmDataLakeStoreItem.md)
+[Uji-AzureRmDataLakeStoreItem](./Test-AzureRmDataLakeStoreItem.md)
 
 

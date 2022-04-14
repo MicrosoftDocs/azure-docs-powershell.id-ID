@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.dataf
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactoryV2/Commands.DataFactoryV2/help/Set-AzureRmDataFactoryV2.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactoryV2/Commands.DataFactoryV2/help/Set-AzureRmDataFactoryV2.md
-ms.openlocfilehash: 75b1a24021e727b8e8f25eeac2e3637d04c6c9cdec95fb5d50a17ec33b807930
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: c50023cefbae9a9ba341eba22f40a421c37d12c5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140854204"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142099097"
 ---
 # Set-AzureRmDataFactoryV2
 
@@ -28,11 +28,11 @@ Set-AzureRmDataFactoryV2 [-ResourceGroupName] <String> [-Name] <String> [-Locati
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmDataFactoryV2 membuat** pabrik data dengan nama dan lokasi grup sumber daya yang ditentukan.
-Jalankan operasi ini dalam urutan berikut: -- Membuat pabrik data.
+Cmdlet **Set-AzureRmDataFactoryV2** membuat pabrik data dengan nama dan lokasi grup sumber daya yang ditentukan.
+Lakukan operasi ini dalam urutan berikut: -- Buat pabrik data.
 -- Buat layanan tertaut.
--- Membuat set data.
--- Buat saluran.
+-- Membuat kumpulan data.
+-- Buat pipa.
 
 ## EXAMPLES
 
@@ -49,12 +49,12 @@ PS C:\> Set-AzureRmDataFactoryV2 -ResourceGroupName "ADF" -Name "WikiADF" -Locat
     ProvisioningState : Succeeded
 ```
 
-Perintah ini membuat pabrik data yang bernama WikiADF di grup sumber daya yang bernama ADF di lokasi WestUS.
+Perintah ini membuat pabrik data bernama WikiADF dalam grup sumber daya bernama ADF di lokasi WestUS.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -68,7 +68,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Menjalankan cmdlet tanpa meminta konfirmasi.
 
 ```yaml
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Pabrik data dibuat di wilayah ini.
+Pabrik data dibuat di kawasan ini.
 
 ```yaml
 Type: System.String
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -187,10 +187,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, data, factories
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 
 [Get-AzureRmDataFactoryV2]()
 
-[Remove-AzureRmDataFactoryV2]()
+[Hapus-AzureRmDataFactoryV2]()

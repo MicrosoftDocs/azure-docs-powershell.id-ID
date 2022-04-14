@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Disable-AzIotSecurityAnalyticsAggregatedAlert.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Disable-AzIotSecurityAnalyticsAggregatedAlert.md
 ms.openlocfilehash: 1cb4d05af5f763397ca5ec9157eed2a5a245f15c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140329361"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142041959"
 ---
 # Disable-AzIotSecurityAnalyticsAggregatedAlert
 
@@ -18,7 +18,7 @@ ms.locfileid: "140329361"
 Mengabaikan pemberitahuan agregat Iot
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/disable-aziotsecurityanalyticsaggregatedalert) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.security/disable-aziotsecurityanalyticsaggregatedalert) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Disable-AzIotSecurityAnalyticsAggregatedAlert -ResourceId <String> [-PassThru]
 ```
 
 ## DESCRIPTION
-Cmdlet Disable-AzIotSecurityAnalyticsAggregatedAlert menghilangkan pemberitahuan aggragat tertentu pada perangkat hub iot. Nama agregat pemberitahuan adalah kombinasi dari tipe pemberitahuan dan tanggal aggragt pemberitahuan, dipisahkan oleh '/'.
+Cmdlet Disable-AzIotSecurityAnalyticsAggregatedAlert menghilangkan peringatan agregat tertentu pada perangkat hub iot. Nama pemberitahuan agregat adalah kombinasi dari tipe pemberitahuan dan tanggal peringatan yang memalukan, dipisahkan oleh '/'.
 
 ## EXAMPLES
 
@@ -50,14 +50,14 @@ Cmdlet Disable-AzIotSecurityAnalyticsAggregatedAlert menghilangkan pemberitahuan
 PS C:\> Disable-AzIotSecurityAnalyticsAggregatedAlert -ResourceGroupName "MyResourceGroup" -SolutionName "MySolutionName" -Name "IoT_SucessfulLocalLogin/2020-03-15"
 ```
 
-Menghilangkan pemberitahuan agregat "IoT_SucessfulLocalLogin/2020-03-15" (nama digabungkan dari tipe pemberitahuan dan tanggal agregatnya) dari solusi keamanan IoT "MySolutionName" di grup sumber daya "MyResourceGroup"
+Menghilangkan pemberitahuan agregat "IoT_SucessfulLocalLogin/2020-03-15" (nama digabungkan dari tipe peringatan dan tanggal agregatnya) dari solusi keamanan IoT "MySolutionName" dalam grup sumber daya "MyResourceGroup"
 
 ### Contoh 2
 ```powershell
 PS C:\> Disable-AzIotSecurityAnalyticsAggregatedAlert -ResourceId "/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/MyResourceGroup/providers/Microsoft.Security/iotSecuritySolutions/MySolutionName/analyticsModels/default/aggregatedAlerts/IoT_SucessfulLocalLogin/2020-03-15"
 ```
 
-Menghilangkan pemberitahuan agregat dengan Id sumber daya "/langganan/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/MyResourceGroup/providers/Microsoft.Security/iotSecuritySolutions/MySolutionName/analyticsModels/default/aggregatedAlerts/IoT_SucessfulLocalLogin/2020-03-15"
+Menghilangkan pemberitahuan agregat dengan Id sumber daya "/subscriptions/XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXXXX/resourceGroups/MyResourceGroup/providers/Microsoft.Security/iotSecuritySolutions/MySolutionName/analyticsModels/default/aggregatedAlerts/IoT_SucessfulLocalLogin/2020-03-15"
 
 ## PARAMETERS
 
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya keamanan yang ingin Anda perintahkan.
+ID sumber daya keamanan yang ingin Anda gunakan untuk meminta perintah.
 
 ```yaml
 Type: System.String
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

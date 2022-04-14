@@ -5,11 +5,11 @@ ms.assetid: EC798838-1850-4E88-B17F-D2F00F2D4EE9
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/set-azurermpublicipaddress
 schema: 2.0.0
 ms.openlocfilehash: d78e4d8e84508e9a737bb15dc31b0dad1c9bdedc
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423942"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142145584"
 ---
 # Set-AzureRmPublicIpAddress
 
@@ -41,9 +41,9 @@ PS C:\> Set-AzureRmPublicIpAddress -PublicIpAddress $publicIp
 PS C:\> $publicIp = Get-AzureRmPublicIpAddress -Name $publicIpName -ResourceGroupName $rgName
 ```
 
- Perintah pertama mendapatkan sumber daya alamat IP publik dengan nama $publicIPName dalam grup sumber daya $rgName.
+ Perintah pertama mendapatkan sumber daya alamat IP publik dengan nama $publicIPName dalam $rgName grup sumber daya.
 Perintah kedua mengatur metode alokasi objek alamat IP publik menjadi "Statis".
-Set-AzureRmPublicIPAddress umum memperbarui sumber daya alamat IP publik dengan objek yang diperbarui, dan mengubah metode alokasi menjadi 'Statis'. Alamat IP publik akan dialokasikan dengan segera.
+Set-AzureRmPublicIPAddress perintah memperbarui sumber daya alamat IP publik dengan objek yang diperbarui, dan mengubah metode alokasi menjadi 'Statis'. Alamat IP publik langsung dialokasikan.
 
 ### 2: Mengubah label domain DNS dari alamat IP publik
 ```
@@ -56,14 +56,14 @@ PS C:\> Set-AzureRmPublicIpAddress -PublicIpAddress $publicIp
 PS C:\> $publicIp = Get-AzureRmPublicIpAddress -Name $publicIpName -ResourceGroupName $rgName
 ```
 
-Perintah pertama mendapatkan sumber daya alamat IP publik dengan nama $publicIPName dalam grup sumber daya $rgName.
+Perintah pertama mendapatkan sumber daya alamat IP publik dengan nama $publicIPName dalam $rgName grup sumber daya.
 Perintah kedua mengatur properti DomainNameLabel ke prefiks dns yang diperlukan.
-Set-AzureRmPublicIPAddress ip publik memperbarui sumber daya alamat IP publik dengan objek yang diperbarui. DomainNameLabel & Fqdn dimodifikasi seperti yang diharapkan.
+Set-AzureRmPublicIPAddress perintah memperbarui sumber daya alamat IP publik dengan objek yang diperbarui. DomainNameLabel & Fqdn diubah seperti yang diharapkan.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddress
-Menentukan objek **PublicIpAddress** yang mewakili status tujuan yang harus ditetapkan alamat IP publik.
+Menentukan objek **PublicIpAddress** yang mewakili status tujuan untuk mengatur alamat IP publik.
 
 ```yaml
 Type: PSPublicIpAddress
@@ -108,12 +108,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSPublicIpAddress
-Parameter 'PublicIpAddress' menerima nilai tipe 'PSPublicIpAddress' dari saluran
+Parameter 'PublicIpAddress' menerima nilai tipe 'PSPublicIpAddress' dari pipeline
 
 ## OUTPUTS
 
@@ -125,8 +125,8 @@ Parameter 'PublicIpAddress' menerima nilai tipe 'PSPublicIpAddress' dari saluran
 
 [Get-AzureRmPublicIpAddress](./Get-AzureRmPublicIpAddress.md)
 
-[New-AzureRmPublicIpAddress](./New-AzureRmPublicIpAddress.md)
+[Baru-AzureRmPublicIpAddress](./New-AzureRmPublicIpAddress.md)
 
-[Remove-AzureRmPublicIpAddress](./Remove-AzureRmPublicIpAddress.md)
+[Hapus-AzureRmPublicIpAddress](./Remove-AzureRmPublicIpAddress.md)
 
 

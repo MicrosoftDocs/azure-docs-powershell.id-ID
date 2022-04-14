@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Set-AzureRmLoadBalancerInboundNatPoolConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Set-AzureRmLoadBalancerInboundNatPoolConfig.md
 ms.openlocfilehash: 3d2110b4d8f4caf75751745ef996cb18094ae7e6
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132415252"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142097543"
 ---
 # Set-AzureRmLoadBalancerInboundNatPoolConfig
 
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableFloatingIP
-Mengonfigurasi titik akhir mesin virtual untuk kapabilitas IP terapung yang diperlukan untuk mengonfigurasi Grup Ketersediaan AlwaysOn SQL. Pengaturan ini diperlukan saat menggunakan Grup Ketersediaan SQL AlwaysOn di SQL server. Pengaturan ini tidak dapat diubah setelah Anda membuat titik akhir.
+Mengonfigurasi titik akhir mesin virtual untuk kemampuan IP mengambang yang diperlukan untuk mengonfigurasi SQL Grup Ketersediaan AlwaysOn. Pengaturan ini diperlukan ketika menggunakan Grup Ketersediaan AlwaysOn SQL di server SQL. Pengaturan ini tidak dapat diubah setelah Anda membuat titik akhir.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableTcpReset
-Menerima Reset TCP dua arah pada waktu habis habis arus TCP atau pemutusan koneksi yang tidak diharapkan. Elemen ini hanya digunakan saat protokol diatur ke TCP.
+Terima Pengaturan Ulang TCP dua arah pada batas waktu diam aliran TCP atau pemutusan koneksi yang tidak diharapkan. Elemen ini hanya digunakan ketika protokol diatur ke TCP.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdleTimeoutInMinutes
-Waktu habis untuk koneksi idle TCP. Nilai dapat diatur antara 4 dan 30 menit. Nilai default adalah 4 menit. Elemen ini hanya digunakan saat protokol diatur ke TCP.
+Waktu habis untuk koneksi diam TCP. Nilai dapat diatur antara 4 dan 30 menit. Nilai defaultnya adalah 4 menit. Elemen ini hanya digunakan ketika protokol diatur ke TCP.
 
 ```yaml
 Type: System.Int32
@@ -202,7 +202,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
+### -Protokol
 ```yaml
 Type: System.String
 Parameter Sets: (All)
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -267,6 +267,6 @@ Parameter: LoadBalancer (ByValue)
 
 [New-AzureRmLoadBalancerInboundNatPoolConfig](./New-AzureRmLoadBalancerInboundNatPoolConfig.md)
 
-[Remove-AzureRmLoadBalancerInboundNatPoolConfig](./Remove-AzureRmLoadBalancerInboundNatPoolConfig.md)
+[Hapus-AzureRmLoadBalancerInboundNatPoolConfig](./Remove-AzureRmLoadBalancerInboundNatPoolConfig.md)
 
 

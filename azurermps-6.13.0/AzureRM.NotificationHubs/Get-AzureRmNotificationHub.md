@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/NotificationHubs/Commands.NotificationHubs/help/Get-AzureRmNotificationHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/NotificationHubs/Commands.NotificationHubs/help/Get-AzureRmNotificationHub.md
 ms.openlocfilehash: af2cc43b5f70c8a892e8b8fad0177a804689f007
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421610"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142097545"
 ---
 # Get-AzureRmNotificationHub
 
@@ -28,13 +28,13 @@ Get-AzureRmNotificationHub [-ResourceGroup] <String> [-Namespace] <String> [[-No
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmNotificationHub** mendapatkan informasi tentang hub pemberitahuan dalam ruang nama yang ditentukan dan ditetapkan ke grup sumber daya yang ditentukan.
-Misalnya, Anda bisa mendapatkan informasi untuk semua hub pemberitahuan dalam ruang nama ContosoNamespace dan ditetapkan ke grup sumber daya ContosoNotificationsGroup.
-Alternatifnya, Anda dapat menggunakan parameter *NotificationHub* untuk membatasi data yang dikembalikan menjadi informasi tentang hub pemberitahuan tertentu.
-Hub pemberitahuan digunakan untuk mengirimkan pemberitahuan push ke beberapa klien terlepas dari platform, seperti iOS, Android, Windows Phone 8, dan Windows Store, yang digunakan oleh klien tersebut.
-Hub tersebut kira-kira sama dengan aplikasi individu dan setiap aplikasi Anda biasanya akan memiliki hub pemberitahuannya sendiri.
+Cmdlet **Get-AzureRmNotificationHub** mendapatkan informasi tentang hub pemberitahuan dalam ruang nama tertentu dan ditetapkan ke grup sumber daya tertentu.
+Misalnya, Anda bisa mendapatkan informasi untuk semua hub pemberitahuan di ruang nama ContosoNamespace dan ditetapkan ke grup sumber daya ContosoNotificationsGroup.
+Atau, Anda dapat menggunakan parameter *NotificationHub* untuk membatasi data yang dikembalikan ke informasi tentang hub pemberitahuan tertentu.
+Hub pemberitahuan digunakan untuk mengirim pemberitahuan push ke beberapa klien terlepas dari platform, seperti iOS, Android, Windows Phone 8, dan Bursa Windows, yang digunakan oleh klien tersebut.
+Hub ini kira-kira setara dengan aplikasi individual dan setiap aplikasi Anda biasanya akan memiliki hub pemberitahuannya sendiri.
 Cmdlet ini hanya mendapatkan informasi tentang hub itu sendiri.
-Cmdlet lain, seperti Get-AzureRmNotificationHubAuthorizationRules, Get-AzureRmNotificationHubListKeys, dan Get-AzureRmificationHubPNSCredentials, diperlukan untuk mendapatkan informasi tentang aturan otorisasi hub, string koneksi, dan kredensial layanan pemberitahuan platform.
+Cmdlet lainnya, seperti Get-AzureRmNotificationHubAuthorizationRules, Get-AzureRmNotificationHubListKeys, dan Get-AzureRmNotificationHubPNSCredentials, diperlukan untuk mendapatkan informasi tentang aturan otorisasi hub, string koneksi, dan kredensial layanan pemberitahuan platform.
 
 ## EXAMPLES
 
@@ -43,12 +43,12 @@ Cmdlet lain, seperti Get-AzureRmNotificationHubAuthorizationRules, Get-AzureRmNo
 PS C:\>Get-AzureRmNotificationHub -Namespace "ContosoNamespace" -ResourceGroup "ContosoNotificationsGroup"
 ```
 
-Perintah ini mendapatkan informasi untuk semua hub pemberitahuan dalam ruang nama contosoNamespace yang telah ditetapkan ke grup sumber daya ContosoNotificationsGroup.
+Perintah ini mendapatkan informasi untuk semua hub pemberitahuan di ruang nama bernama ContosoNamespace yang telah ditetapkan ke grup sumber daya ContosoNotificationsGroup.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -NotificationHub
-Menentukan nama hub pemberitahuan yang akan dapatkan cmdlet ini.
+Menentukan nama hub pemberitahuan yang didapat cmdlet ini.
 Hub pemberitahuan digunakan untuk mengirim pemberitahuan push ke beberapa klien terlepas dari platform yang digunakan oleh klien tersebut.
 
 ```yaml
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroup
 Menentukan grup sumber daya tempat hub pemberitahuan ditetapkan.
-Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu manajemen inventaris dan administrasi Azure.
+Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang hanya membantu manajemen inventaris dan administrasi Azure.
 
 ```yaml
 Type: System.String
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -131,9 +131,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmNotificationHubPNSCredentials](./Get-AzureRmNotificationHubPNSCredentials.md)
 
-[New-AzureRmNotificationHub](./New-AzureRmNotificationHub.md)
+[Baru-AzureRmNotificationHub](./New-AzureRmNotificationHub.md)
 
-[Remove-AzureRmNotificationHub](./Remove-AzureRmNotificationHub.md)
+[Hapus-AzureRmNotificationHub](./Remove-AzureRmNotificationHub.md)
 
 [Set-AzureRmNotificationHub](./Set-AzureRmNotificationHub.md)
 

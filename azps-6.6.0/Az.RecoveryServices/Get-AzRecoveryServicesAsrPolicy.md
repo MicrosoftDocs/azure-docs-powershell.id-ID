@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrPolicy.md
 ms.openlocfilehash: 993b33a080f0beb543a850e720ba5b08f17a0340
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140068391"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142044209"
 ---
 # Get-AzRecoveryServicesAsrPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "140068391"
 Mendapatkan kebijakan replikasi ASR.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrpolicy) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Get-AzRecoveryServicesAsrPolicy -FriendlyName <String> [-DefaultProfile <IAzureC
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesAsrPolicy** mendapatkan daftar kebijakan replikasi Pemulihan Situs Azure yang dikonfigurasi atau kebijakan replikasi tertentu menurut nama.
+Cmdlet **Get-AzRecoveryServicesAsrPolicy** mendapatkan daftar kebijakan replikasi Azure Site Recovery yang dikonfigurasi atau kebijakan replikasi tertentu menurut nama.
 
 ## EXAMPLES
 
@@ -76,7 +76,7 @@ ReplicationProvider         : HyperVReplicaAzure
 ReplicationProviderSettings : Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRHyperVReplicaAzurePolicyDetails
 ```
 
-Mengembalikan kebijakan replikasi dengan nama yang bersahabat tertentu.
+Mengembalikan kebijakan replikasi dengan nama yang bersahabat yang ditentukan.
 
 ## PARAMETERS
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -FriendlyName
-Menentukan nama yang mudah dikenal dari kebijakan replikasi ASR.
+Menentukan nama yang mudah dikenali dari kebijakan replikasi ASR.
 
 ```yaml
 Type: System.String
@@ -127,11 +127,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
