@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Remove-AzLoadBalancerFrontendIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Remove-AzLoadBalancerFrontendIpConfig.md
 ms.openlocfilehash: b9782d56fb18f0f00c52e9ff37ef0d62a609f980
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425397"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142131299"
 ---
 # Remove-AzLoadBalancerFrontendIpConfig
 
 ## SYNOPSIS
-Menghapus konfigurasi IP front-end dari penyeimbang muat.
+Menghapus konfigurasi IP ujung depan dari penyeimbang beban.
 
 ## SYNTAX
 
@@ -26,24 +26,24 @@ Remove-AzLoadBalancerFrontendIpConfig [-Name <String>] -LoadBalancer <PSLoadBala
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzLoadBalancerFrontendIpConfig** menghapus konfigurasi IP ujung-depan dari penyeimbang muat Azure.
+Cmdlet **Remove-AzLoadBalancerFrontendIpConfig** menghapus konfigurasi IP front-end dari load balancer Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus konfigurasi IP front-end dari penyeimbang muat
+### Contoh 1: Menghapus konfigurasi IP ujung depan dari load balancer
 ```
 PS C:\>$loadbalancer = Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 PS C:> Remove-AzLoadBalancerFrontendIpConfig -Name "frontendName" -LoadBalancer $loadbalancer
 ```
 
-Perintah pertama mendapatkan penyeimbang muat yang terkait dengan konfigurasi IP front-end yang ingin Anda hapus, lalu menyimpannya di $loadbalancer variabel.
+Perintah pertama mendapatkan penyeimbang muatan yang terkait dengan konfigurasi IP ujung depan yang ingin Anda hapus, lalu menyimpannya dalam variabel $loadbalancer.
 
-Perintah kedua menghapus konfigurasi IP frontend yang terkait dari penyeimbang muat dalam $loadbalancer.
+Perintah kedua menghapus konfigurasi IP frontend terkait dari load balancer di $loadbalancer.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan penyeimbang muat yang berisi konfigurasi IP ujung-depan yang akan dihapus.
+Menentukan penyeimbang muatan yang berisi konfigurasi IP ujung depan untuk dihapus.
 
 ```yaml
 Type: PSLoadBalancer
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama konfigurasi alamat IP ujung-depan untuk dihapus.
+Menentukan nama konfigurasi alamat IP ujung depan yang akan dihapus.
 
 ```yaml
 Type: String
@@ -88,12 +88,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSLoadBalancer
-Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari saluran
+Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari pipeline
 
 ## OUTPUTS
 

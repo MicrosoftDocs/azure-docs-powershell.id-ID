@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Add-AzureRmApplicationGatewayHttpListenerCustomError.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Add-AzureRmApplicationGatewayHttpListenerCustomError.md
 ms.openlocfilehash: 23cb65073f25f65a4e09f3b4a28891cff4e49c59
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140859614"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142139421"
 ---
 # Add-AzureRmApplicationGatewayHttpListenerCustomError
 
 ## SYNOPSIS
-Menambahkan kesalahan kustom pada pendengar http gateway aplikasi.
+Menambahkan kesalahan kustom ke pendengar http gateway aplikasi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ Add-AzureRmApplicationGatewayHttpListenerCustomError -HttpListener <PSApplicatio
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureRmApplicationGatewayCustomError** menambahkan kesalahan kustom ke http pendengar gateway aplikasi.
+Cmdlet **Add-AzureRmApplicationGatewayCustomError** menambahkan kesalahan kustom ke pendengar http gateway aplikasi.
 
 ## EXAMPLES
 
@@ -43,7 +43,7 @@ Perintah ini menambahkan kesalahan kustom kode status http 502 ke pendengar http
 ## PARAMETERS
 
 ### -CustomErrorPageUrl
-URL halaman kesalahan kesalahan aplikasi gateway kesalahan pelanggan.
+URL halaman kesalahan kesalahan pelanggan gateway aplikasi.
 
 ```yaml
 Type: String
@@ -72,8 +72,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpListener
-Gateway Aplikasi http Pendengar
+### -HttpListener
+Pendengar Http Application Gateway
 
 ```yaml
 Type: PSApplicationGatewayHttpListener
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/restore-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Restore-AzSynapseSqlPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Restore-AzSynapseSqlPool.md
-ms.openlocfilehash: 0048c0c113423fb3c4f2ba1b4b23bac542853ed0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e2cea0190665c1911a35621175ad2e818bcaf920
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140390075"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141932253"
 ---
 # Restore-AzSynapseSqlPool
 
 ## SYNOPSIS
-Memulihkan Analitik Synapse dalam SQL sama.
+Memulihkan kumpulan SQL Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/restore-azsynapsesqlpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Restore-AzSynapseSqlPool [-FromBackup] [-ResourceGroupName <String>] -WorkspaceN
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RestoreFromBackupIdByParentObjectParameterSet
+### PemulihanFromBackupIdByByParentObjectParameterSet
 ```
 Restore-AzSynapseSqlPool [-FromBackup] -WorkspaceObject <PSSynapseWorkspace> -Name <String>
  -ResourceId <String> [-Tag <Hashtable>] [-StorageAccountType <String>] [-AsJob]
@@ -41,7 +44,7 @@ Restore-AzSynapseSqlPool [-FromRestorePoint] [-ResourceGroupName <String>] -Work
  [<CommonParameters>]
 ```
 
-### PulihkanFromRestorePointIdByParentObjectParameterSet
+### RestoreFromRestorePointIdByParentObjectParameterSet
 ```
 Restore-AzSynapseSqlPool [-FromRestorePoint] -WorkspaceObject <PSSynapseWorkspace> -Name <String>
  -PerformanceLevel <String> -ResourceId <String> -RestorePoint <DateTime> [-Tag <Hashtable>]
@@ -49,14 +52,14 @@ Restore-AzSynapseSqlPool [-FromRestorePoint] -WorkspaceObject <PSSynapseWorkspac
  [<CommonParameters>]
 ```
 
-### RestoreFromPoolppedSqlPoolByNameParameterSet
+### RestoreFromDroppedSqlPoolByNameParameterSet
 ```
 Restore-AzSynapseSqlPool [-FromDroppedSqlPool] [-ResourceGroupName <String>] -WorkspaceName <String>
  -Name <String> -ResourceId <String> -DeletionDate <DateTime> [-Tag <Hashtable>] [-StorageAccountType <String>]
  [-AsJob] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RestoreFromPoolPpedSqlPoolByParentObjectParameterSet
+### RestoreFromDroppedSqlPoolByParentObjectParameterSet
 ```
 Restore-AzSynapseSqlPool [-FromDroppedSqlPool] -WorkspaceObject <PSSynapseWorkspace> -Name <String>
  -ResourceId <String> -DeletionDate <DateTime> [-Tag <Hashtable>] [-StorageAccountType <String>] [-AsJob]
@@ -64,8 +67,8 @@ Restore-AzSynapseSqlPool [-FromDroppedSqlPool] -WorkspaceObject <PSSynapseWorksp
 ```
 
 ## DESCRIPTION
-Cmdlet **Restore-AzSynapseSqlPool** memulihkan grup SQL Analitik Azure Synapse dari cadangan geo berlebihan, cadangan pool SQL yang dihapus atau titik pemulihan dari setiap SQL lokal.
-Pool SQL yang dipulihkan dibuat sebagai sebuah SQL baru.
+Cmdlet **Restore-AzSynapseSqlPool** memulihkan kumpulan Azure Synapse Analytics SQL dari cadangan geo-redundan, cadangan kumpulan SQL yang dihapus atau titik pemulihan kumpulan SQL apa pun.
+Kumpulan SQL yang dipulihkan dibuat sebagai kumpulan SQL baru.
 
 ## EXAMPLES
 
@@ -85,7 +88,7 @@ PS C:\> # Restore to same workspace with source SQL pool
 PS C:\> $restoredPool = Restore-AzSynapseSqlPool -FromRestorePoint -RestorePoint $restorePoint.RestorePointCreationDate -TargetSqlPoolName ContosoRestoredSqlPool -ResourceGroupName $pool.ResourceGroupName -WorkspaceName $pool.WorkspaceName -ResourceId $databaseId -PerformanceLevel DW200c
 ```
 
-Perintah ini membuat azure Synapse Analytics SQL pool dengan memaksimalkan titik pemulihan dari semua SQL lokal yang sudah ada untuk memulihkan atau menyalin dari status sebelumnya.
+Perintah ini membuat kumpulan SQL Analitik Azure Synapse dengan memanfaatkan titik pemulihan dari kumpulan SQL yang sudah ada untuk memulihkan atau menyalin dari status sebelumnya.
 
 ### Contoh 2
 ```powershell
@@ -99,7 +102,7 @@ PS C:\> # Restore to same workspace with source SQL pool
 PS C:\> $restoredPool = Restore-AzSynapseSqlPool -FromBackup -TargetSqlPoolName ContosoRestoredSqlPool -ResourceGroupName $pool.ResourceGroupName -WorkspaceName $pool.WorkspaceName -ResourceId $databaseId
 ```
 
-Perintah ini membuat analitik Azure Synapse SQL lokal yang dipulihkan dari SQL cadangan pool.
+Perintah ini membuat kumpulan SQL Analitik Azure Synapse yang dipulihkan dari cadangan kumpulan SQL.
 
 ### Contoh 3
 ```powershell
@@ -112,7 +115,7 @@ PS C:\> # Restore to same workspace with source SQL pool
 PS C:\> $restoredPool = Restore-AzSynapseSqlPool -FromDroppedSqlPool -DeletionDate $pool.DeletionDate -TargetSqlPoolName ContosoRestoredSqlPool -ResourceGroupName $pool.ResourceGroupName -WorkspaceName $pool.WorkspaceName -ResourceId $poolId
 ```
 
-Perintah ini membuat analitik Azure Synapse SQL baru yang dipulihkan dari pencadangan SQL otomatis yang dihapus.
+Perintah ini membuat kumpulan SQL Analitik Azure Synapse yang dipulihkan dari cadangan kumpulan SQL yang dihapus.
 
 ### Contoh 4
 ```powershell
@@ -130,12 +133,12 @@ PS C:\> # Restore to same workspace with source SQL pool
 PS C:\> $restoredPool = Restore-AzSynapseSqlPool -FromRestorePoint -RestorePoint $restorePoint.RestorePointCreationDate -TargetSqlPoolName ContosoRestoredSqlPool -ResourceGroupName $pool.ResourceGroupName -WorkspaceName $pool.WorkspaceName -ResourceId $databaseId -PerformanceLevel DW200c -Tag @{"tagName" = "tagValue"} -StorageAccountType LRS
 ```
 
-Perintah ini membuat penyimpanan SQL Analitik Azure Synapse dengan tipe akun penyimpanan dan tag tertentu dengan memaksimalkan titik pemulihan dari setiap SQL lokal yang sudah ada untuk memulihkan atau menyalin dari status sebelumnya.
+Perintah ini membuat kumpulan SQL Analitik Azure Synapse dengan tipe akun penyimpanan dan tag tertentu dengan memanfaatkan titik pemulihan dari kumpulan SQL yang sudah ada untuk memulihkan atau menyalin dari status sebelumnya.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,8 +167,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DeletionDate
-Tanggal penghapusan program Azure Synaspe SQL Database mengambil cadangan, dengan presisi milidetik (misalnya 2016-02-23T00:21:22.847Z)
+### -PenghapusanDate
+Tanggal penghapusan Azure Synaspe SQL Database untuk mengambil cadangan, dengan presisi milidetik (misalnya 2016-02-23T00:21:22.847Z)
 
 ```yaml
 Type: System.DateTime
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -FromBackup
-Menunjukkan untuk memulihkan dari cadangan terbaru semua pengguna SQL anda dalam langganan ini.
+Menunjukkan untuk memulihkan dari cadangan terbaru kumpulan SQL apa pun dalam langganan ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,8 +197,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -FromIdrppedSqlPool
-Menunjukkan untuk memanfaatkan titik pemulihan dari setiap SQL lokal dalam langganan ini untuk memulihkan atau menyalin dari status sebelumnya.
+### -FromDroppedSqlPool
+Menunjukkan untuk memanfaatkan titik pemulihan dari kumpulan SQL apa pun dalam langganan ini untuk memulihkan atau menyalin dari status sebelumnya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -FromRestorePoint
-Menunjukkan untuk memanfaatkan titik pemulihan dari setiap SQL lokal dalam langganan ini untuk memulihkan atau menyalin dari status sebelumnya.
+Menunjukkan untuk memanfaatkan titik pemulihan dari kumpulan SQL apa pun dalam langganan ini untuk memulihkan atau menyalin dari status sebelumnya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama SQL Tim.
+Nama Synapse SQL pool.
 
 ```yaml
 Type: System.String
@@ -240,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -PerformanceLevel
-Tingkat SQL Layanan tingkat dan tingkat kinerja untuk ditetapkan ke SQL baru.
+Tingkat layanan SQL dan tingkat kinerja untuk ditetapkan ke kumpulan SQL.
 Misalnya, DW2000c.
 
 ```yaml
@@ -286,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestorePoint
-Waktu snapshot untuk dipulihkan.
+Jepretan layar waktu untuk memulihkan.
 
 ```yaml
 Type: System.DateTime
@@ -301,7 +304,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountType
-Tipe akun penyimpanan yang digunakan untuk menyimpan cadangan untuk sql pool. Nilai yang memungkinkan meliputi: 'GRS', 'LRS'.
+Tipe akun penyimpanan yang digunakan untuk menyimpan cadangan untuk kumpulan sql. Nilai yang memungkinkan meliputi: 'GRS', 'LRS'.
 
 ```yaml
 Type: System.String
@@ -316,7 +319,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Kamus string, kamus string dari tag yang terkait dengan sumber daya tersebut.
+String, kamus string tag yang terkait dengan sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -330,7 +333,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -361,7 +364,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -377,7 +380,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -392,7 +395,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

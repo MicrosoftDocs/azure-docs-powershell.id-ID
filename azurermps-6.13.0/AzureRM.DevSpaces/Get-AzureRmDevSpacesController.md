@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.devsp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DevSpaces/Commands.DevSpaces/help/Get-AzureRmDevSpacesController.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DevSpaces/Commands.DevSpaces/help/Get-AzureRmDevSpacesController.md
-ms.openlocfilehash: df32343752b864dc50984f1e09f426acd1b2545076a7ab656f7e32dada092a09
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: d0140af9d5345e9f3f68c212ae43403fc0f64280
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140857322"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142141971"
 ---
 # Get-AzureRmDevSpacesController
 
 ## SYNOPSIS
-Dapatkan atau  list pengontrol Azure DevSpaces.
+Dapatkan atau cantumkan pengontrol Azure DevSpaces.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -34,7 +34,7 @@ Get-AzureRmDevSpacesController [-ResourceGroupName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Dapatkan atau  list pengontrol Azure DevSpaces.
+Dapatkan atau cantumkan pengontrol Azure DevSpaces.
 
 ## EXAMPLES
 
@@ -47,7 +47,7 @@ Name        Resource Group  Location  Provisioning State
 devSpaceControllerName   devSpaceResourceGroup     eastus    Succeeded
 ```
 
-Daftar semua pengontrol dalam suatu langganan.
+Cantumkan semua pengontrol dalam langganan.
 
 ### Contoh 2
 ```powershell
@@ -120,11 +120,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

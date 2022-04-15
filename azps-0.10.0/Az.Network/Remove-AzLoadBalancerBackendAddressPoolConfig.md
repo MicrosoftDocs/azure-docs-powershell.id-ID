@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Remove-AzLoadBalancerBackendAddressPoolConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Remove-AzLoadBalancerBackendAddressPoolConfig.md
 ms.openlocfilehash: 30abb6f2d11eeae9749e7285a91ddeb93a1bf743
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426972"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141916329"
 ---
 # Remove-AzLoadBalancerBackendAddressPoolConfig
 
 ## SYNOPSIS
-Menghapus konfigurasi pool alamat backend dari penyeimbang muat.
+Menghapus konfigurasi kumpulan alamat backend dari penyeimbang muatan.
 
 ## SYNTAX
 
@@ -26,23 +26,23 @@ Remove-AzLoadBalancerBackendAddressPoolConfig [-Name <String>] -LoadBalancer <PS
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzLoadBalancerBackendAddressPoolConfig** menghapus pool alamat backend dari penyeimbang muat.
+Cmdlet **Remove-AzLoadBalancerBackendAddressPoolConfig** menghapus kumpulan alamat backend dari load balancer.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus konfigurasi pool alamat backend dari penyeimbang muat
+### Contoh 1: Menghapus konfigurasi kumpulan alamat backend dari penyeimbang muat
 ```
 PS C:\>Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup" | Remove-AzLoadBalancerBackendAddressPoolConfig -Name "BackendAddressPool02" | Set-AzLoadBalancer
 ```
 
-Perintah ini mendapatkan penyeimbang muat bernama MyLoadBalancer dan mengirimnya ke **Remove-AzLoadBalancerBackendAddressPoolConfig,** yang menghapus konfigurasi BackendAddressPool02 dari MyLoadBalancer.
-Terakhir, cmdlet Set-AzLoadBalancer pembaruan MyLoadBalancer.
-Perhatikan bahwa konfigurasi pool alamat backend harus ada sebelum Anda bisa menghapusnya.
+Perintah ini mendapatkan load balancer bernama MyLoadBalancer dan mengirimkannya ke **Remove-AzLoadBalancerBackendAddressPoolConfig**, yang menghapus konfigurasi BackendAddressPool02 dari MyLoadBalancer.
+Akhirnya, cmdlet Set-AzLoadBalancer memperbarui MyLoadBalancer.
+Perhatikan bahwa konfigurasi kumpulan alamat backend harus ada sebelum Anda dapat menghapusnya.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan penyeimbang muat yang berisi pool alamat backend untuk dihapus.
+Menentukan penyeimbang muatan yang berisi kumpulan alamat backend untuk dihapus.
 
 ```yaml
 Type: PSLoadBalancer
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama pool alamat backend yang dihapus cmdlet ini.
+Menentukan nama kumpulan alamat backend yang dihapus cmdlet ini.
 
 ```yaml
 Type: String
@@ -87,12 +87,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSLoadBalancer
-Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari saluran
+Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari pipeline
 
 ## OUTPUTS
 

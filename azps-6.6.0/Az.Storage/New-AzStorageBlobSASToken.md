@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageBlobSASToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageBlobSASToken.md
 ms.openlocfilehash: b4daea6cb50b836d6d83f95bba9610100c5529c2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140130705"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142118807"
 ---
 # New-AzStorageBlobSASToken
 
@@ -19,7 +19,7 @@ ms.locfileid: "140130705"
 Menghasilkan token SAS untuk blob penyimpanan Azure.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/new-azstorageblobsastoken) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azstorageblobsastoken) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,21 +60,21 @@ Cmdlet **New-AzStorageBlobSASToken** menghasilkan token Shared Access Signature 
 
 ## EXAMPLES
 
-### Contoh 1: Menghasilkan token SAS blob dengan izin blob penuh
+### Contoh 1: Menghasilkan token BLOB SAS dengan izin blob penuh
 ```
 PS C:\>New-AzStorageBlobSASToken -Container "ContainerName" -Blob "BlobName" -Permission rwd
 ```
 
-Contoh ini menghasilkan token blob SAS dengan izin blob penuh.
+Contoh ini menghasilkan token SAS blob dengan izin blob penuh.
 
-### Contoh 2: Menghasilkan token blob SAS dengan life time
+### Contoh 2: Menghasilkan token SAS blob dengan masa pakai
 ```
 PS C:\> $StartTime = Get-Date
 PS C:\> $EndTime = $startTime.AddHours(2.0)
 PS C:\> New-AzStorageBlobSASToken -Container "ContainerName" -Blob "BlobName" -Permission rwd -StartTime $StartTime -ExpiryTime $EndTime
 ```
 
-Contoh ini menghasilkan token blob SAS dengan masa pakai.
+Contoh ini menghasilkan token SAS blob dengan masa pakai.
 
 ### Contoh 3: Menghasilkan token SAS Identitas Pengguna dengan konteks penyimpanan berdasarkan autentikasi OAuth
 ```
@@ -84,7 +84,7 @@ PS C:\> $EndTime = $startTime.AddDays(6)
 PS C:\> New-AzStorageBlobSASToken -Container "ContainerName" -Blob "BlobName" -Permission rwd -StartTime $StartTime -ExpiryTime $EndTime -context $ctx
 ```
 
-Contoh ini menghasilkan token blob SAS Identitas Pengguna dengan konteks penyimpanan berdasarkan autentikasi OAuth
+Contoh ini menghasilkan token SAS blob Identitas Pengguna dengan konteks penyimpanan berdasarkan autentikasi OAuth
 
 ## PARAMETERS
 
@@ -134,7 +134,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Container
+### -Kontainer
 Menentukan nama wadah penyimpanan.
 
 ```yaml
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 
 ### -Konteks
 Menentukan konteks penyimpanan.
-Saat konteks penyimpanan didasarkan pada autentikasi OAuth, akan menghasilkan token blob Sas Identitas Pengguna.
+Ketika konteks penyimpanan didasarkan pada autentikasi OAuth, akan menghasilkan token SAS blob Identitas Pengguna.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 
 ### -ExpiryTime
 Menentukan kapan tanda tangan akses bersama kedaluwarsa.
-Saat konteks penyimpanan didasarkan pada autentikasi OAuth, waktu kedaluwarsa harus dalam 7 hari dari waktu saat ini, dan tidak boleh lebih awal dari waktu saat ini.
+Ketika konteks penyimpanan didasarkan pada autentikasi OAuth, waktu kedaluwarsa harus dalam 7 hari dari waktu saat ini, dan tidak boleh lebih awal dari waktu saat ini.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -FullUri
-Mengindikasikan bahwa cmdlet ini mengembalikan URI blob penuh dan token tanda tangan akses bersama.
+Menunjukkan bahwa cmdlet ini mengembalikan URI blob penuh dan token tanda tangan akses bersama.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -212,8 +212,8 @@ Accept wildcard characters: False
 ```
 
 ### -IPAddressOrRange
-Menentukan alamat IP atau rentang alamat IP untuk menerima permintaan, seperti 168.1.5.65 atau 168.1.5.60-168.1.5.70.
-Rentang bersifat inklusif.
+Menentukan alamat IP atau rentang alamat IP yang menerima permintaan, seperti 168.1.5.65 atau 168.1.5.60-168.1.5.70.
+Rentangnya inklusif.
 
 ```yaml
 Type: System.String
@@ -227,8 +227,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Permission
-Menentukan izin untuk blob penyimpanan. Penting untuk diingat bahwa ini adalah string, seperti (untuk `rwd` Baca, Tulis dan Hapus). 
+### -Izin
+Menentukan izin untuk blob penyimpanan. Penting untuk diperhatikan bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis, dan Hapus). 
 
 ```yaml
 Type: System.String
@@ -257,11 +257,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
+### -Protokol
 Menentukan protokol yang diizinkan untuk permintaan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 * HttpsOnly
-* HttpsOrHttp Nilai default adalah HttpsOrHttp.
+* HttpsOrHttp The default value is HttpsOrHttp.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Storage.SharedAccessProtocol]
@@ -277,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Menentukan waktu validnya tanda tangan akses bersama.
+Menentukan waktu ketika tanda tangan akses bersama menjadi valid.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -292,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -307,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -322,7 +322,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

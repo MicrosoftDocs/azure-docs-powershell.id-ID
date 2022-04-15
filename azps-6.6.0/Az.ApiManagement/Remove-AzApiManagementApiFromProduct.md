@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementApiFromProduct.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementApiFromProduct.md
 ms.openlocfilehash: d59102d6ab320b00409e2616bdb4365f3175a838
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140144342"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141961755"
 ---
 # Remove-AzApiManagementApiFromProduct
 
@@ -19,7 +19,7 @@ ms.locfileid: "140144342"
 Menghapus API dari produk.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementapifromproduct) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementapifromproduct) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Remove-AzApiManagementApiFromProduct -Context <PsApiManagementContext> -ProductI
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzApiManagementApiFromProduct** menghapus API Manajemen API Azure dari produk.
+Cmdlet **Remove-AzApiManagementApiFromProduct** menghapus API Azure API Management dari produk.
 
 ## EXAMPLES
 
@@ -39,12 +39,12 @@ PS C:\>$ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Defa
 PS C:\>Remove-AzApiManagementApiFromProduct -Context $ApiMgmtContext -ProductId "0123456789" -ApiId "0001" -PassThru
 ```
 
-Perintah ini akan menghapus API tertentu dari suatu produk.
+Perintah ini menghapus API tertentu dari produk.
 
 ## PARAMETERS
 
 ### -ApiId
-Menentukan ID API untuk dihapus dari produk.
+Menentukan ID API yang akan dihapus dari produk.
 
 ```yaml
 Type: System.String
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengindikasikan bahwa cmdlet ini mengembalikan nilai $True berhasil, atau $False sebaliknya.
+Menunjukkan bahwa cmdlet ini mengembalikan nilai $True jika berhasil, atau $False, jika tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProductId
-Menentukan ID produk yang akan dihapus APInya.
+Menentukan ID produk untuk menghapus API.
 
 ```yaml
 Type: System.String
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -137,6 +137,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Add-azApiManagementApiToProduct](./Add-AzApiManagementApiToProduct.md)
+[Add-AzApiManagementApiToProduct](./Add-AzApiManagementApiToProduct.md)
 
 

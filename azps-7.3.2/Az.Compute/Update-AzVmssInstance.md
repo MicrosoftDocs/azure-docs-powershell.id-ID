@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzVmssInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzVmssInstance.md
-ms.openlocfilehash: 34485a86df387e195f9ab95404863ee845fb0131
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: b8fa53ca18f1c47839f2ee3472534e854c3f30ac
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140545129"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142114703"
 ---
 # Update-AzVmssInstance
 
 ## SYNOPSIS
 Memulai pemutakhiran manual instans VMSS.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/update-azvmssinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,8 +29,8 @@ Update-AzVmssInstance [-ResourceGroupName] <String> [-VMScaleSetName] <String> [
 ```
 
 ## DESCRIPTION
-Cmdlet Update-AzVmssInstance memulai pemutakhiran manual instans Virtual Machine Scale Set (VMSS) yang ditentukan.
-Hal ini digunakan ketika kebijakan pemutakhiran pada VMSS Scale Set diatur ke manual.
+Cmdlet Update-AzVmssInstance memulai pemutakhiran manual instans Kumpulan Skala Mesin Virtual (VMSS) yang ditentukan.
+Ini digunakan saat kebijakan pemutakhiran pada Kumpulan Skala VMSS diatur ke manual.
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ Perintah ini memulai pemutakhiran VMSS bernama VMScaleSet001 yang memiliki ID in
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -56,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceId
-Menentukan, sebagai array string, ID atau ID instans untuk dimutakhirkan.
+Menentukan, sebagai array string, ID atau ID instans yang akan dimutakhirkan.
 
 ```yaml
 Type: System.String[]
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -163,6 +166,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Update-AzVmss](./Update-AzVmss.md)
+[Pembaruan-AzVms](./Update-AzVmss.md)
 
 

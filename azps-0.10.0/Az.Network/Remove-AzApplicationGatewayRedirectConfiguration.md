@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.network/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Remove-AzApplicationGatewayRedirectConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Remove-AzApplicationGatewayRedirectConfiguration.md
-ms.openlocfilehash: a92bc95f506317211224352d33fc54421bfe085c70dbf0110ec0bc3188a39da5
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: e965f2cdbd9909003a07ea6c6addd198110e456f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418412"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142131371"
 ---
 # Remove-AzApplicationGatewayRedirectConfiguration
 
 ## SYNOPSIS
-Menghapus konfigurasi pengalihan dari Gateway Aplikasi yang sudah ada.
+Menghapus konfigurasi pengalihan dari Application Gateway yang sudah ada.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-AzApplicationGatewayRedirectConfiguration -Name <String> -ApplicationGate
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzApplicationGatewayRedirectConfiguration** menghapus konfigurasi pengalihan dari Gateway Aplikasi yang sudah ada.
+Cmdlet **Remove-AzApplicationGatewayRedirectConfiguration** menghapus konfigurasi pengalihan dari Application Gateway yang sudah ada.
 
 ## EXAMPLES
 
@@ -35,9 +35,9 @@ PS C:\>$AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceG
 PS C:\>$AppGw = Remove-AzApplicationGatewayRedirectConfiguration -ApplicationGateway $AppGw -Name "Redirect01"
 ```
 
-Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam $AppGw baru.
+Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam variabel $AppGw.
 
-Perintah kedua menghapus konfigurasi pengalihan yang bernama Redirect01 dari gateway aplikasi yang disimpan di $AppGw.
+Perintah kedua menghapus konfigurasi pengalihan bernama Pengalihan01 dari gateway aplikasi yang disimpan di $AppGw.
 
 ## PARAMETERS
 
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

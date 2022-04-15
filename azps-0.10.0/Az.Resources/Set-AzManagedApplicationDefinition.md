@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/Set-AzManagedApplicationDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/Set-AzManagedApplicationDefinition.md
 ms.openlocfilehash: 3d6a5488e7e101c904e90d056c8b2ffc03e786fb
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132415286"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142055675"
 ---
 # Set-AzManagedApplicationDefinition
 
 ## SYNOPSIS
-Memperbarui definisi aplikasi yang dikelola
+Pembaruan definisi aplikasi terkelola
 
 ## SYNTAX
 
@@ -35,21 +35,21 @@ Set-AzManagedApplicationDefinition -Id <String> [-DisplayName <String>] [-Descri
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzManagedApplicationDefinition** memperbarui definisi aplikasi yang dikelola
+**Cmdlet Set-AzManagedApplicationDefinition** memperbarui definisi aplikasi terkelola
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui deskripsi definisi aplikasi terkelola
+### Contoh 1: Memperbarui deskripsi definisi aplikasi terkelola
 ```
 PS C:\>Set-AzManagedApplicationDefinition -ResourceId "/subscriptions/mySubId/resourcegroups/myRG/Microsoft.Solutions/applicationDefinitions/myAppDef" -Description "Updated description here"
 ```
 
-Perintah ini memperbarui deskripsi definisi aplikasi terkelola
+Perintah ini memperbarui deskripsi definisi aplikasi yang dikelola
 
 ## PARAMETERS
 
 ### -ApiVersion
-Saat diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
+Ketika diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
 Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai versi terbaru yang tersedia.
 
 ```yaml
@@ -64,7 +64,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Authorization
+### -Otorisasi
 Otorisasi definisi aplikasi terkelola.
 Pasangan otorisasi yang dipisahkan koma dalam format \<principalId\>:\<roleDefinitionId\>
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-ID definisi aplikasi terkelola yang sepenuhnya memenuhi syarat, termasuk langganan. misalnya /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName
+Id definisi aplikasi terkelola yang sepenuhnya memenuhi syarat, termasuk langganan. misalnya /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName
 
 ```yaml
 Type: System.String
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -PackageFileUri
-The managed application definition package file uri.
+Uri file paket definisi aplikasi terkelola.
 
 ```yaml
 Type: System.String
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Saat diatur, cmdlet harus menggunakan versi API prari tamu ketika menentukan versi mana yang akan digunakan secara otomatis.
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

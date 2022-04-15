@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmLoadBalancerOutboundRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmLoadBalancerOutboundRuleConfig.md
 ms.openlocfilehash: 1bcaab526ac2fbb82d696db7197bbc8d69c0078f
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140859590"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142138866"
 ---
 # Get-AzureRmLoadBalancerOutboundRuleConfig
 
 ## SYNOPSIS
-Mendapatkan konfigurasi aturan keluar dalam penyeimbang muat.
+Mendapatkan konfigurasi aturan keluar dalam penyeimbang beban.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,18 +27,18 @@ Get-AzureRmLoadBalancerOutboundRuleConfig -LoadBalancer <PSLoadBalancer> [-Name 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmLoadBalancerOutboundRuleConfig** mendapatkan konfigurasi aturan keluar atau daftar konfigurasi aturan keluar dalam penyeimbang muat.
+Cmdlet **Get-AzureRmLoadBalancerOutboundRuleConfig** mendapatkan konfigurasi aturan keluar atau daftar konfigurasi aturan keluar dalam load balancer.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan konfigurasi aturan keluar dalam penyeimbang muat
+### Contoh 1: Dapatkan konfigurasi aturan keluar di penyeimbang muat
 ```powershell
 PS C:\>$slb = Get-AzureRmLoadBalancer -ResourceGroupName "MyResourceGroup" -Name "MyLoadBalancer"
 PS C:\>Get-AzureRmLoadBalancerOutboundRuleConfig -LoadBalancer $slb -Name "MyRule"
 ```
 
-Perintah pertama mendapatkan penyeimbang muat bernama MyLoadBalancer, lalu menyimpannya di nilai $slb.
-Perintah kedua mendapatkan konfigurasi aturan keluar bernama MyRule yang terkait dengan penyeimbang muat tersebut.
+Perintah pertama mendapatkan load balancer bernama MyLoadBalancer, lalu menyimpannya dalam variabel $slb.
+Perintah kedua mendapatkan konfigurasi aturan keluar bernama MyRule yang terkait dengan penyeimbang muatan tersebut.
 
 ## PARAMETERS
 
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Referensi dari sumber daya penyeimbang muat.
+Referensi sumber daya load balancer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

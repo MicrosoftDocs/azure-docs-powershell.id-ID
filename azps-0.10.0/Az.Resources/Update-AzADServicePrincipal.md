@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/Update-AzADServicePrincipal.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/Update-AzADServicePrincipal.md
 ms.openlocfilehash: e2c8e8fea9f8f86f06a9808158c50cb63915106b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132413608"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142055603"
 ---
 # Update-AzADServicePrincipal
 
@@ -49,7 +49,7 @@ Update-AzADServicePrincipal -InputObject <PSADServicePrincipal> [-DisplayName <S
 ```
 
 ## DESCRIPTION
-Memperbarui prinsipal layanan azure active directory yang sudah ada. Untuk memperbarui kredensial yang terkait dengan prinsipal layanan ini, silakan New-AzADSpCredential cmdlet. Untuk memperbarui properti yang terkait dengan aplikasi yang mendasari, silakan Update-AzADApplication cmdlet.
+Memperbarui prinsipal layanan azure active directory yang sudah ada. Untuk memperbarui kredensial yang terkait dengan prinsipal layanan ini, silakan gunakan cmdlet New-AzADSpCredential. Untuk memperbarui properti yang terkait dengan aplikasi yang mendasar, silakan gunakan cmdlet Update-AzADApplication.
 
 ## EXAMPLES
 
@@ -61,18 +61,18 @@ PS C:\> Update-AzADServicePrincipal -ObjectId 784136ca-3ae2-4fdd-a388-89d793e7c7
 
 Memperbarui nama tampilan prinsipal layanan dengan id objek '784136ca-3ae2-4fdd-a388-89d793e7c780' menjadi 'MyNewDisplayName'.
 
-### Contoh 2 - Memperbarui nama tampilan prinsipal layanan menggunakan pemipaan
+### Contoh 2 - Memperbarui nama tampilan prinsipal layanan menggunakan piping
 
 ```
 PS C:\> Get-AzADServicePrincipal -ObjectId 784136ca-3ae2-4fdd-a388-89d793e7c780 | Update-AzADServicePrincipal -DisplayName MyNewDisplayName
 ```
 
-Dapatkan prinsipal layanan dengan id objek '784136ca-3ae2-4fdd-a388-89d793e7c780' dan pipa yang berada di cmdlet Update-AzADServicePrincipal untuk memperbarui nama tampilan prinsipal layanan menjadi "MyNewDisplayName".
+Mendapatkan prinsipal layanan dengan id objek '784136ca-3ae2-4fdd-a388-89d793e7c780' dan pipa yang ke cmdlet Update-AzADServicePrincipal untuk memperbarui nama tampilan prinsipal layanan menjadi "MyNewDisplayName".
 
 ## PARAMETERS
 
 ### -ApplicationId
-Id aplikasi prinsipal layanan untuk diperbarui.
+Id aplikasi dari prinsipal layanan untuk diperbarui.
 
 ```yaml
 Type: System.Guid
@@ -128,8 +128,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Homepage
-Laman prinsipal layanan.
+### -Laman
+Laman untuk prinsipal layanan.
 
 ```yaml
 Type: System.String
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyCredential
-Kredensial kunci untuk prinsipal layanan.
+Kredensial utama untuk prinsipal layanan.
 
 ```yaml
 Type: Microsoft.Azure.Graph.RBAC.Version1_6.Models.KeyCredential[]
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Id objek prinsipal layanan untuk diperbarui.
+Id objek dari prinsipal layanan untuk diperbarui.
 
 ```yaml
 Type: System.Guid
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalName
-SPN prinsipal layanan untuk pembaruan.
+SPN dari prinsipal layanan untuk diperbarui.
 
 ```yaml
 Type: System.String
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -250,7 +250,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -265,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -273,12 +273,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.DIRECTDServicePrincipal
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADServicePrincipal
 Parameter: InputObject (ByValue)
 
 ## OUTPUTS
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.DIRECTDServicePrincipal
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADServicePrincipal
 
 ## CATATAN
 

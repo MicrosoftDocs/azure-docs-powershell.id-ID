@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/New-AzLoadBalancerInboundNatRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/New-AzLoadBalancerInboundNatRuleConfig.md
 ms.openlocfilehash: 52aad9586840875cf63a27a8f27ff7296d080bd7
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422833"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142131498"
 ---
 # New-AzLoadBalancerInboundNatRuleConfig
 
 ## SYNOPSIS
-Membuat konfigurasi aturan NAT masuk untuk penyeimbang muat.
+Membuat konfigurasi aturan NAT masuk untuk penyeimbang beban.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ New-AzLoadBalancerInboundNatRuleConfig -Name <String>
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzLoadBalancerInboundNatRuleConfig membuat konfigurasi aturan penerjemahan alamat jaringan masuk (NAT, **In-AzLoadBalancerInboundNatRuleConfig)** yang membuat konfigurasi aturan penerjemahan alamat jaringan masuk (NAT) untuk penyeimbang muat Azure.
+Cmdlet **New-AzLoadBalancerInboundNatRuleConfig** membuat konfigurasi aturan terjemahan alamat jaringan masuk (NAT) untuk penyeimbang muatan Azure.
 
 ## EXAMPLES
 
@@ -47,18 +47,18 @@ PS C:\> $frontend = New-AzLoadBalancerFrontendIpConfig -Name "FrontendIpConfig01
 PS C:\> New-AzLoadBalancerInboundNatRuleConfig -Name "MyInboundNatRule" -FrontendIPConfiguration $frontend -Protocol "Tcp" -FrontendPort 3389 -BackendPort 3389
 ```
 
-Perintah pertama membuat alamat IP publik bernama MyPublicIP dalam grup sumber daya yang bernama MyResourceGroup, lalu menyimpannya di $publicip lokal.
+Perintah pertama membuat alamat IP publik bernama MyPublicIP dalam grup sumber daya bernama MyResourceGroup, lalu menyimpannya dalam variabel $publicip.
 
-Perintah kedua membuat konfigurasi IP ujung-depan bernama FrontendIpConfig01 menggunakan alamat IP publik di $publicip, lalu menyimpannya dalam variabel $frontend.
+Perintah kedua membuat konfigurasi IP front-end bernama FrontendIpConfig01 menggunakan alamat IP publik di $publicip, lalu menyimpannya dalam variabel $frontend.
 
-Perintah ketiga membuat konfigurasi aturan NAT masuk bernama MyInboundNatRule menggunakan objek front-end dalam $frontend.
-Protokol TCP ditentukan dan port ujung-depan adalah 3389, sama dengan port backend dalam kasus ini.
-Parameter *FrontendIpConfiguration*, *Procobasi*, *FrontendPort*, dan *BackendPort* semuanya diperlukan untuk membuat konfigurasi aturan NAT masuk.
+Perintah ketiga membuat konfigurasi aturan NAT masuk bernama MyInboundNatRule menggunakan objek ujung depan di $frontend.
+Protokol TCP ditentukan dan port ujung depan adalah 3389, sama seperti port backend dalam hal ini.
+Parameter *FrontendIpConfiguration*, *Procotol*, *FrontendPort*, dan *BackendPort* semuanya diperlukan untuk membuat konfigurasi aturan NAT masuk.
 
 ## PARAMETERS
 
 ### -BackendPort
-Menentukan port backend untuk lalu lintas yang sesuai dengan konfigurasi aturan ini.
+Menentukan port backend untuk lalu lintas yang cocok dengan konfigurasi aturan ini.
 
 ```yaml
 Type: Int32
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableFloatingIP
-Mengindikasikan bahwa cmdlet ini mengaktifkan alamat IP mengambang untuk konfigurasi aturan.
+Menunjukkan bahwa cmdlet ini memungkinkan alamat IP mengambang untuk konfigurasi aturan.
 
 ```yaml
 Type: SwitchParameter
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendIpConfiguration
-Menentukan daftar alamat IP ujung-depan untuk dikaitkan dengan konfigurasi aturan penyeimbang muat.
+Menentukan daftar alamat IP ujung-depan untuk dikaitkan dengan konfigurasi aturan penyeimbang muatan.
 
 ```yaml
 Type: PSFrontendIPConfiguration
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendIpConfigurationId
-Menentukan ID untuk konfigurasi alamat IP ujung-depan.
+Menentukan ID untuk konfigurasi alamat IP ujung depan.
 
 ```yaml
 Type: String
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendPort
-Menentukan port ujung-depan yang sesuai dengan konfigurasi aturan penyeimbang muat.
+Menentukan port ujung depan yang cocok dengan konfigurasi aturan penyeimbang muatan.
 
 ```yaml
 Type: Int32
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdleTimeoutInMinutes
-Menentukan durasi waktu, dalam menit, di mana status percakapan dipertahankan dalam penyeimbang muat.
+Menentukan durasi waktu, dalam menit, di mana status percakapan dipertahankan dalam penyeimbang beban.
 
 ```yaml
 Type: Int32
@@ -177,7 +177,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
+### -Protokol
 Menentukan protokol.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

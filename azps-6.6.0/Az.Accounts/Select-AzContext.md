@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Select-AzContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Select-AzContext.md
 ms.openlocfilehash: 38bc6be7cf39d064cca08883a3f9b3e248a562a1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140508009"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141962511"
 ---
 # Select-AzContext
 
 ## SYNOPSIS
-Pilih langganan dan akun untuk ditargetkan Azure PowerShell cmdlets
+Pilih langganan dan akun untuk ditargetkan dalam cmdlet Azure PowerShell
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.accounts/select-azcontext) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.accounts/select-azcontext) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,14 +28,14 @@ Select-AzContext -InputObject <PSAzureContext> [-Scope <ContextModificationScope
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SelectByName
+### PilihByName
 ```
 Select-AzContext [-Scope <ContextModificationScope>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf]
  [-Confirm] [-Name] <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Pilih langganan untuk menargetkan (atau akun atau penyewa) Azure PowerShell cmdlet.  Setelah cmdlet ini, cmdlet yang akan datang akan menargetkan konteks yang dipilih.
+Pilih langganan untuk ditargetkan (atau akun atau penyewa) dalam cmdlet Azure PowerShell.  Setelah cmdlet ini, cmdlet mendatang akan menargetkan konteks yang dipilih.
 
 ## EXAMPLES
 
@@ -48,11 +48,11 @@ Name    Account             SubscriptionName    Environment         TenantId
 Work    test@outlook.com    Subscription1       AzureCloud          xxxxxxxx-x...
 ```
 
-Targetkan cmdlet Azure PowerShell pelanggan di akun, penyewa, dan langganan dalam konteks 'Kerja'.
+Targetkan cmdlet Azure PowerShell mendatang di akun, penyewa, dan langganan dalam konteks 'Kerja'.
 
 ### Contoh 2
 
-Pilih langganan dan akun untuk menargetkan dalam Azure PowerShell cmdlets di sesi powershell ini. (otomatisgenerated)
+Pilih langganan dan akun untuk ditargetkan dalam cmdlet Azure PowerShell dalam sesi powershell ini. (autogenerasi)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Select-AzContext -Name TestEnvironment -Scope Process
@@ -61,7 +61,7 @@ Select-AzContext -Name TestEnvironment -Scope Process
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek konteks, biasanya melewati saluran.
+Objek konteks, biasanya melewati pipa.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Profile.Models.Core.PSAzureContext
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Menentukan lingkup perubahan konteks, misalnya, apakah perubahan diterapkan hanya pada proses saat ini, atau pada semua sesi yang dimulai oleh pengguna ini
+Menentukan lingkup perubahan konteks, misalnya, apakah perubahan hanya berlaku untuk proses saat ini, atau ke semua sesi yang dimulai oleh pengguna ini
 
 ```yaml
 Type: Microsoft.Azure.Commands.Profile.Common.ContextModificationScope
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

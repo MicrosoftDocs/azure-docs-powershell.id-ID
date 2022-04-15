@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/New-AzStorageQueue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/New-AzStorageQueue.md
 ms.openlocfilehash: 1ce3615d7eeef4986f1fefd20ec5be2ea1aaac7b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424440"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142055316"
 ---
 # New-AzStorageQueue
 
@@ -35,21 +35,21 @@ Cmdlet **New-AzStorageQueue** membuat antrean penyimpanan di Azure.
 PS C:\>New-AzStorageQueue -Name "queueabc"
 ```
 
-Contoh ini membuat antrean penyimpanan bernama queueabc.
+Contoh ini membuat antrean penyimpanan bernama antrean.
 
-### Contoh 2: Membuat beberapa antrean penyimpanan Azure
+### Contoh 2: Membuat beberapa antrean penyimpanan azure
 ```
 PS C:\>"queue1 queue2 queue3".split() | New-AzStorageQueue
 ```
 
 Contoh ini membuat beberapa antrean penyimpanan.
-Alur kerja menggunakan metode Terpisah dari kelas .NET String lalu melewati nama dalam saluran.
+Ini menggunakan metode Split dari kelas .NET String lalu meneruskan nama pada pipeline.
 
 ## PARAMETERS
 
 ### -Konteks
 Menentukan konteks penyimpanan Azure.
-Anda dapat membuatnya menggunakan cmdlet New-AzStorageContext baru.
+Anda dapat membuatnya menggunakan cmdlet New-AzStorageContext.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -104,14 +104,14 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.WindowsAzure.commands.common. Storage. ResourceModel.AzureStorageQueue
+### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureStorageQueue
 
 ## CATATAN
 
 ## RELATED LINKS
 
-[Get-AzStorageQueue](./Get-AzStorageQueue.md)
+[Antrean Get-AzStorage](./Get-AzStorageQueue.md)
 
-[Remove-AzStorageQueue](./Remove-AzStorageQueue.md)
+[Antrean Remove-AzStorage](./Remove-AzStorageQueue.md)
 
 

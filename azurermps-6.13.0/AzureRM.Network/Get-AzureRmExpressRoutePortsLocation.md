@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmExpressRoutePortsLocation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmExpressRoutePortsLocation.md
-ms.openlocfilehash: 70dd4382d5dcb46b7896acfec865471b5be90c4eb2b34f844f5e2f363fb562ad
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 5d077991e42da0709019df1dccdd83f03659ca49
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140867258"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142138963"
 ---
 # Get-AzureRmExpressRoutePortsLocation
 
 ## SYNOPSIS
-Dapatkan lokasi sumber daya ExpressRoutePort yang tersedia.
+Mendapatkan lokasi di mana sumber daya ExpressRoutePort tersedia.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Get-AzureRmExpressRoutePortsLocation [-LocationName <String>] [-DefaultProfile <
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmExpressRoutePortsLocation** digunakan untuk mengambil lokasi tempat sumber daya ExpressRoutePort tersedia. Jika lokasi tertentu sebagai input, cmdlet akan menampilkan detail lokasi tersebut seperti daftar bandwidth yang tersedia di lokasi tersebut.
+Cmdlet **Get-AzureRmExpressRoutePortsLocation** digunakan untuk mengambil lokasi di mana sumber daya ExpressRoutePort tersedia. Dengan lokasi tertentu sebagai input, cmdlet menampilkan detail lokasi tersebut, yaitu daftar bandwidth yang tersedia di lokasi tersebut.
 
 
 ## EXAMPLES
@@ -37,14 +37,14 @@ Cmdlet **Get-AzureRmExpressRoutePortsLocation** digunakan untuk mengambil lokasi
 PS C:\> Get-AzureRmExpressRoutePortsLocation
 ```
 
-Mencantumkan lokasi tempat sumber daya ExpressRoutePort tersedia.
+Mencantumkan lokasi sumber daya ExpressRoutePort yang tersedia.
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzureRmExpressRoutePortsLocation -LocationName $loc
 ```
 
-Mencantumkan bandwidth ExpressRoutePort yang tersedia di lokasi $loc.
+Mencantumkan bandwidth ExpressRoutePort yang tersedia di $loc lokasi.
 
 ## PARAMETERS
 
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

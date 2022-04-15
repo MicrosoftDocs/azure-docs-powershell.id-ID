@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorWafPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorWafPolicy.md
 ms.openlocfilehash: eee907eb6a23ec67bc2eab768206a4572a1a92af
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139939399"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141956346"
 ---
 # New-AzFrontDoorWafPolicy
 
 ## SYNOPSIS
-Membuat kebijakan WAF
+Buat kebijakan WAF
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorwafpolicy) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorwafpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ New-AzFrontDoorWafPolicy -ResourceGroupName <String> -Name <String> [-EnabledSta
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzFrontDoorWafPolicy membuat** kebijakan baru Azure WAF di grup sumber daya yang ditentukan di bawah langganan saat ini
+Cmdlet **New-AzFrontDoorWafPolicy** membuat kebijakan Azure WAF baru dalam grup sumber daya tertentu di bawah langganan saat ini
 
 ## EXAMPLES
 
@@ -43,12 +43,12 @@ Name         PolicyMode PolicyEnabledState RedirectUrl
 {policyName} Prevention            Enabled https://www.bing.com/
 ```
 
-Membuat kebijakan WAF
+Buat kebijakan WAF
 
 ## PARAMETERS
 
-### -CustomBlockResponseBlock
-Badan Respons Kustom
+### -CustomBlockResponseBody
+Isi Respons Kustom
 
 ```yaml
 Type: System.String
@@ -108,8 +108,8 @@ Accept wildcard characters: False
 ```
 
 ### -EnabledState
-Apakah kebijakan berada dalam status diaktifkan atau status dinonaktifkan.
-Kemungkinan nilai meliputi: 'Dinonaktifkan', 'Diaktifkan'
+Apakah kebijakan dalam status aktif atau status nonaktif.
+Nilai yang memungkinkan termasuk: 'Dinonaktifkan', 'Diaktifkan'
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSEnabledState
@@ -140,8 +140,8 @@ Accept wildcard characters: False
 ```
 
 ### -Mode
-Menjelaskan apakah mode itu ada dalam mode deteksi atau mode pencegahan di tingkat kebijakan.
-Nilai yang memungkinkan antara lain:'Pencegahan', 'Deteksi'
+Menjelaskan apakah mode tersebut berada dalam mode deteksi atau mode pencegahan pada tingkat kebijakan.
+Nilai yang memungkinkan termasuk:'Pencegahan', 'Deteksi'
 
 ```yaml
 Type: System.String
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama WebApplicationFireWallPolicy.
+WebApplicationFireWallPolicy name.
 
 ```yaml
 Type: System.String
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -RedirectUrl
-Alihkan URL
+Mengalihkan URL
 
 ```yaml
 Type: System.String
@@ -185,8 +185,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Request BodyCheck
-Menentukan apakah badan harus diperiksa oleh aturan terkelola. Nilai yang mungkin disertakan: 'Diaktifkan', 'Dinonaktifkan'
+### -RequestBodyCheck
+Menentukan apakah isi harus diperiksa oleh aturan terkelola. Nilai yang memungkinkan termasuk: 'Diaktifkan', 'Dinonaktifkan'
 
 ```yaml
 Type: System.String
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Sets Sku. Nilai yang mungkin termasuk: 'Classic_AzureFrontDoor', 'Standard_AzureFrontDoor', 'Premium_AzureFrontDoor'
+Mengatur Sku. Nilai yang memungkinkan termasuk: 'Classic_AzureFrontDoor', 'Standard_AzureFrontDoor', 'Premium_AzureFrontDoor'
 
 ```yaml
 Type: System.String
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -262,11 +262,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

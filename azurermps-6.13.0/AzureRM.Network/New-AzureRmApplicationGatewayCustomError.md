@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmApplicationGatewayCustomError.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmApplicationGatewayCustomError.md
-ms.openlocfilehash: a7d7b9ea735ffef377fd39dca2a0ddbe1a0ec419f79dc1f6ec61bc057098ac3f
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 9e05684f40223711db7a8a6aaaf1cfb684efced4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140856998"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142138521"
 ---
 # New-AzureRmApplicationGatewayCustomError
 
@@ -37,12 +37,12 @@ PS C:\> $customError403Url = "https://mycustomerrorpages.blob.core.windows.net/e
 PS C:\> $ce = New-AzureRmApplicationGatewayCustomError -StatusCode HttpStatus403 -CustomErrorPageUrl $customError403Url
 ```
 
-Perintah ini membuat kesalahan kustom dari kode status http 403.
+Perintah ini membuat kesalahan kustom kode status http 403.
 
 ## PARAMETERS
 
 ### -CustomErrorPageUrl
-URL halaman kesalahan kesalahan aplikasi gateway kesalahan pelanggan.
+URL halaman kesalahan kesalahan pelanggan gateway aplikasi.
 
 ```yaml
 Type: String
@@ -87,12 +87,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

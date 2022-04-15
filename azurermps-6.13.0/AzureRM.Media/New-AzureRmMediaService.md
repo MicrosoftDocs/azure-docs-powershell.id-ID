@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Media/Commands.Media/help/New-AzureRmMediaService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Media/Commands.Media/help/New-AzureRmMediaService.md
 ms.openlocfilehash: 353cccddea39d68c9eefa891e95eb06c6663d173
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427037"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142139716"
 ---
 # New-AzureRmMediaService
 
@@ -68,9 +68,9 @@ PS C:\> New-AzureRmMediaService -ResourceGroupName $ResourceGroupName -AccountNa
 ```
 
 Contoh ini memperlihatkan cara membuat layanan media dengan menentukan akun penyimpanan utama saja.
-Skrip ini menggunakan beberapa cmdlet lain.
+Skrip ini menggunakan beberapa cmdlet lainnya.
 
-### Contoh 2: Buat layanan media dengan beberapa penyimpanan
+### Contoh 2: Membuat layanan media dengan beberapa penyimpanan
 ```
 PS C:\># Variables
 
@@ -106,12 +106,12 @@ PS C:\> $StorageAccounts = @($PrimaryStorageAccount, $SecondaryStorageAccount)
 ## Create a media service.New-AzureRmMediaService -ResourceGroupName $ResourceGroupName -AccountName $MediaServiceName -Location $Location -StorageAccounts $StorageAccounts -Tags $Tags
 ```
 
-Contoh ini menunjukkan cara membuat layanan media dengan beberapa akun penyimpanan.
-Skrip ini menggunakan beberapa cmdlet lain.
+Contoh ini memperlihatkan cara membuat layanan media dengan beberapa akun penyimpanan.
+Skrip ini menggunakan beberapa cmdlet lainnya.
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Menentukan nama layanan media yang dibuat cmdlet ini.
 
 ```yaml
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccounts
-Menentukan array akun penyimpanan yang akan dikaitkan dengan layanan media.
+Menentukan array akun penyimpanan untuk dikaitkan dengan layanan media.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Media.Models.PSStorageAccount[]
@@ -217,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -266,7 +266,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmMediaService](./Get-AzureRmMediaService.md)
 
-[Remove-AzureRmMediaService](./Remove-AzureRmMediaService.md)
+[Hapus-AzureRmMediaService](./Remove-AzureRmMediaService.md)
 
 [Set-AzureRmMediaService](./Set-AzureRmMediaService.md)
 

@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMSqlServerExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMSqlServerExtension.md
 ms.openlocfilehash: 6fa3a29b3e0fc98794d0130a8d4dd800d7232589
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140109647"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142128401"
 ---
 # Remove-AzVMSqlServerExtension
 
 ## SYNOPSIS
-Menghapus ekstensi SQL Server dari komputer virtual.
+Menghapus ekstensi SQL Server dari mesin virtual.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/remove-azvmsqlserverextension) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/remove-azvmsqlserverextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,21 +29,21 @@ Remove-AzVMSqlServerExtension [-ResourceGroupName] <String> [-VMName] <String> [
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzVMSqlServerExtension** menghapus ekstensi AzureSQL Server dari komputer virtual.
+Cmdlet **Remove-AzVMSqlServerExtension** menghapus ekstensi AzureSQL Server dari mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus SQL Server ekstensi
+### Contoh 1: Menghapus ekstensi SQL Server
 ```
 PS C:\> Remove-AzVMSqlServerExtension -ResourceGroupName "ResourceGroup11" -VMName "ContosoVM22" -Name "SqlIaaSAgent"
 ```
 
-Perintah ini akan menghapus SQL Server otomatis dari komputer virtual bernama ContosoVM22.
+Perintah ini menghapus ekstensi SQL Server dari mesin virtual bernama ContosoVM22.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Memulai operasi dan segera mengembalikannya, sebelum operasi selesai. Untuk mengetahui apakah operasi berhasil diselesaikan, gunakan beberapa mekanisme lain.
+Memulai operasi dan segera kembali, sebelum operasi selesai. Untuk menentukan apakah operasi telah berhasil diselesaikan, gunakan beberapa mekanisme lain.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: System.String
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual asal cmdlet ini menghapus ekstensi SQL Server.
+Menentukan nama mesin virtual tempat cmdlet ini menghapus ekstensi SQL Server.
 
 ```yaml
 Type: System.String
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

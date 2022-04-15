@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlServerOutboundFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlServerOutboundFirewallRule.md
 ms.openlocfilehash: 178aef11dc411d093bd0feff08bfb907459c16c0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139931623"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141947859"
 ---
 # Remove-AzSqlServerOutboundFirewallRule
 
 ## SYNOPSIS
-Menghapus FQDN yang diperbolehkan dari daftar aturan firewall keluar (FQDN yang Diperbolehkan) dari server SQL Database.
+Menghapus FQDN yang diperbolehkan dari daftar aturan firewall keluar (FQDN yang Diizinkan) dari server SQL Database.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/remove-azsqlserveroutboundfirewallrule) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqlserveroutboundfirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Remove-AzSqlServerOutboundFirewallRule [-ResourceGroupName] <String> [-ServerNam
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzSqlServerOutboundFirewallRule** menghapus FQDN yang diizinkan dari daftar aturan firewall keluar (FQDN yang Diperbolehkan) dari server Azure SQL Database tertentu.
+Cmdlet **Remove-AzSqlServerOutboundFirewallRule** menghapus FQDN yang diperbolehkan tertentu dari daftar aturan firewall keluar (FQDN Yang Diizinkan) dari server Azure SQL Database yang ditentukan.
 
 ## EXAMPLES
 
@@ -42,7 +42,7 @@ ServerName        : Server01
 AllowedFQDN       : OutboundFirewallRule01
 ```
 
-Perintah ini menghapus FQDN yang diperbolehkan bernama OutboundFirewallRule01 dari daftar aturan firewall keluar pada server bernama Server01.
+Perintah ini menghapus FQDN yang diperbolehkan bernama OutboundFirewallRule01 dari daftar aturan firewall keluar di server bernama Server01.
 
 ## PARAMETERS
 
@@ -91,8 +91,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -AllowedFQDN
-Menentukan nama domain berkualifikasi penuh (FQDN, Fully Qualified Domain Name) yang diperbolehkan dalam daftar aturan firewall keluar.
+### -AllowedfQDN
+Menentukan nama domain yang diperbolehkan sepenuhnya memenuhi syarat (FQDN) dalam daftar aturan firewall keluar.
 
 ```yaml
 Type: System.String
@@ -106,8 +106,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -161,7 +161,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.sql.OutboundFirewallRules.Model.AzureSqlServerOutboundFirewallRulesModel
+### Microsoft.Azure.Commands.Sql.OutboundFirewallRules.Model.AzureSqlServerOutboundFirewallRulesModel
 
 ## CATATAN
 
@@ -171,4 +171,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzSqlServerOutboundFirewallRule](./New-AzSqlServerOutboundFirewallRule.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

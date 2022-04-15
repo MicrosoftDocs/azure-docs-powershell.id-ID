@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Add-AzureRmApplicationGatewaySslCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Add-AzureRmApplicationGatewaySslCertificate.md
 ms.openlocfilehash: fc4457e23f50dea3d70a3af2115a93e460dc6a1f
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427596"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142139426"
 ---
 # Add-AzureRmApplicationGatewaySslCertificate
 
@@ -33,19 +33,19 @@ Cmdlet **Add-AzureRmApplicationGatewaySslCertificate** menambahkan sertifikat SS
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan sertifikat SSL ke gateway aplikasi.
+### Contoh 1: Menambahkan sertifikat SSL ke gateway aplikasi.
 ```
 PS C:\> $AppGW = Get-AzureRmApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 PS C:\> $password = ConvertTo-SecureString "P@ssw0rd" -AsPlainText -Force
 PS C:\> $AppGW = Add-AzureRmApplicationGatewaySslCertificate -ApplicationGateway $AppGW -Name "Cert01" -CertificateFile "D:\cert01.pfx" -Password $password
 ```
 
-Perintah ini mendapatkan gateway aplikasi bernama ApplicationGateway01, lalu menambahkan sertifikat SSL bernama Cert01 ke dalamnya.
+Perintah ini mendapatkan gateway aplikasi bernama ApplicationGateway01 lalu menambahkan sertifikat SSL bernama Cert01 ke dalamnya.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan nama gateway aplikasi di mana cmdlet ini menambahkan sertifikat SSL.
+Menentukan nama gateway aplikasi tempat cmdlet ini menambahkan sertifikat SSL.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -CertificateFile
-Menentukan file .pfx sertifikat SSL yang tambahkan cmdlet ini.
+Menentukan file .pfx sertifikat SSL yang ditambahkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama sertifikat SSL yang cmdlet ini tambahkan.
+Menentukan nama sertifikat SSL yang ditambahkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -Password
-Menentukan kata sandi sertifikat SSL yang tambahkan cmdlet ini.
+Menentukan kata sandi sertifikat SSL yang ditambahkan cmdlet ini.
 
 ```yaml
 Type: System.Security.SecureString
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

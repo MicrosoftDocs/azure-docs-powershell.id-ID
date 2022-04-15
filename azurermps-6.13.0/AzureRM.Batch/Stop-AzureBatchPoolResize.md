@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Stop-AzureBatchPoolResize.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Stop-AzureBatchPoolResize.md
 ms.openlocfilehash: 8db1f11cfd434beb52eb32e4b175b2dab67ecbdb
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "132415737"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142143163"
 ---
 # Stop-AzureBatchPoolResize
 
 ## SYNOPSIS
-Menghentikan operasi pengubahan ukuran kolam.
+Menghentikan operasi pengunaan ukuran kolam renang.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,33 +28,33 @@ Stop-AzureBatchPoolResize [-Id] <String> -BatchContext <BatchAccountContext>
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzureBatchPoolResize** menghentikan operasi pengubahan ukuran Kumpulan Azure pada sebuah kumpulan.
+Cmdlet **Stop-AzureBatchPoolResize** menghentikan operasi Azure Batch mengubah ukuran pada kolam renang.
 
 ## EXAMPLES
 
-### Contoh 1: Berhentiizing a pool
+### Contoh 1: Berhenti mengubah ukuran kumpulan
 ```
 PS C:\>Stop-AzureBatchPoolResize -Id "ContosoPool06" -BatchContext $Context
 ```
 
-Perintah ini menghentikan operasi pengubahan ukuran di kolam yang memiliki ID ContosoPool06.
-Gunakan cmdlet Get-AzureRmBatchAccountKeys cmdlet untuk menetapkan konteks ke $Context variabel.
+Perintah ini menghentikan operasi ubah ukuran pada kumpulan yang memiliki ID ContosoPool06.
+Gunakan cmdlet Get-AzureRmBatchAccountKeys untuk menetapkan konteks ke variabel $Context.
 
-### Contoh 2: Berhenti menghentikan ukuran kolam menggunakan saluran
+### Contoh 2: Berhenti mengubah ukuran kumpulan menggunakan pipeline
 ```
 PS C:\>Get-AzureBatchPool -Id "ContosoPool06" -BatchContext $Context | Stop-AzureBatchPoolResize -BatchContext $Context
 ```
 
-Perintah ini berhentiizing a pool by using the pipeline operator.
-Perintah tersebut mendapatkan pool yang memiliki ID ContosoPool06 dengan menggunakan cmdlet Get-AzureBatchPool cmdlet.
-Perintah melewati objek pool itu ke cmdlet saat ini.
-Perintah menghentikan operasi pengubahan ukuran di pool tersebut.
+Perintah ini berhenti mengubah ukuran kumpulan menggunakan operator saluran.
+Perintah mendapatkan kolam yang memiliki ID ContosoPool06 dengan menggunakan cmdlet Get-AzureBatchPool.
+Perintah melewati objek pool tersebut ke cmdlet saat ini.
+Perintah menghentikan operasi ubah ukuran pada kumpulan tersebut.
 
 ## PARAMETERS
 
 ### -BatchContext
-Menentukan contoh **BatchAccountContext** yang digunakan cmdlet untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID pool di mana cmdlet ini menghentikan operasi resizing.
+Menentukan ID kumpulan tempat cmdlet ini menghentikan operasi pengunaan ukuran.
 
 ```yaml
 Type: System.String
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -122,6 +122,6 @@ Parameter: BatchContext (ByValue)
 
 [Start-AzureBatchPoolResize](./Start-AzureBatchPoolResize.md)
 
-[Cmdlet Kumpulan Azure](./AzureRM.Batch.md)
+[Cmdlet Azure Batch](./AzureRM.Batch.md)
 
 

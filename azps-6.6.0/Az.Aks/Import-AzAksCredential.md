@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Import-AzAksCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Import-AzAksCredential.md
 ms.openlocfilehash: fc8d13f7ac8e79016c612f6d4fde1d01753942c1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140110997"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141962349"
 ---
 # Import-AzAksCredential
 
 ## SYNOPSIS
-Import and merge Kubectl config for a managed K nodes Cluster.
+Mengimpor dan menggabungkan konfigurasi Kubectl untuk Kluster Kubernetes yang dikelola.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.aks/import-azakscredential) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.aks/import-azakscredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,11 +44,11 @@ Import-AzAksCredential [-Id] <String> [-Admin] [-ConfigPath <String>] [-Force] [
 ```
 
 ## DESCRIPTION
-Import and merge Kubectl config for a managed K nodes Cluster.
+Mengimpor dan menggabungkan konfigurasi Kubectl untuk Kluster Kubernetes yang dikelola.
 
 ## EXAMPLES
 
-### Mengimpor dan menggabungkan Kubectl config
+### Mengimpor dan menggabungkan konfigurasi Kubectl
 ```
 PS C:\> Import-AzAksCredential -ResourceGroupName group -Name myCluster
 ```
@@ -56,7 +56,7 @@ PS C:\> Import-AzAksCredential -ResourceGroupName group -Name myCluster
 ## PARAMETERS
 
 ### -Admin
-Dapatkan kubectl config 'clusterAdmin' dan bukan 'clusterUser' default.
+Dapatkan 'clusterAdmin' kubectl config dan bukan default 'clusterUser'.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -71,8 +71,8 @@ Accept wildcard characters: False
 ```
 
 ### -ConfigPath
-File kubectl config untuk membuat atau memperbarui.
-Gunakan '-' untuk mencetak YAML sebagai gantinya.
+Berkas konfigurasi kubectl untuk dibuat atau diperbarui.
+Gunakan '-' untuk mencetak YAML ke stdout.
 Default: %Home%/.kube/config.
 
 ```yaml
@@ -102,8 +102,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Impor K config meskipun default
+### -Paksa
+Impor konfigurasi Kubernetes meskipun merupakan default
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id kluster Grup terkelola
+Id dari kluster Kubernetes yang dikelola
 
 ```yaml
 Type: System.String
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek PSK terverifikasi, biasanya melewati saluran.
+Sebuah objek PSKubernetesCluster, biasanya melewati pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Aks.Models.PSKubernetesCluster
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama kluster Grup terkelola Anda
+Nama kluster Kubernetes terkelola Anda
 
 ```yaml
 Type: System.String
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengganti langganan hanya berlaku selama siklus hidup cmdlet saat ini. Langganan tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
+Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -241,11 +241,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Aks.Models.PSK azuresCluster
+### Microsoft.Azure.Commands.Aks.Models.PSKubernetesCluster
 
 ### System.String
 
