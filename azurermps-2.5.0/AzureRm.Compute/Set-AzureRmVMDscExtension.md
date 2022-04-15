@@ -5,16 +5,16 @@ ms.assetid: 04F58D88-53D6-42CA-852C-9E2A129898C7
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/set-azurermvmdscextension
 schema: 2.0.0
 ms.openlocfilehash: 187a039ccad7c09616f583b502760fce58ed3fbc
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428892"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142393671"
 ---
 # Set-AzureRmVMDscExtension
 
 ## SYNOPSIS
-Mengonfigurasi ekstensi DSC di komputer virtual.
+Mengonfigurasi ekstensi DSC pada mesin virtual.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -30,37 +30,37 @@ Set-AzureRmVMDscExtension [-ResourceGroupName] <String> [-VMName] <String> [-Nam
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmVMDscExtension** mengonfigurasi ekstensi Windows PowerShell Desired State Configuration (DSC) pada mesin virtual dalam grup sumber daya.
+Cmdlet **Set-AzureRmVMDscExtension mengonfigurasi** ekstensi Windows PowerShell Desired State Configuration (DSC) pada mesin virtual dalam grup sumber daya.
 
 ## EXAMPLES
 
-### Contoh 1: Atur ekstensi DSC
+### Contoh 1: Mengatur ekstensi DSC
 ```
 PS C:\> Set-AzureRmVMDscExtension -ResourceGroupName "ResourceGroup001" -VMName "VM07" -ArchiveBlobName "Sample.ps1.zip" -ArchiveStorageAccountName "Stg" -ConfigurationName "ConfigName" -Version "1.10" -Location "West US"
 ```
 
-Perintah ini mengatur ekstensi DSC pada komputer virtual yang bernama VM07 untuk diunduh Sample.ps1.zip dari akun penyimpanan yang bernama Stg dan wadah default.
-Perintah tersebut akan menjalankan konfigurasi bernama ConfigName.
-File Sample.ps1.zip sebelumnya diunggah dengan menggunakan **Publish-AzureRmVMDscConfiguration**.
+Perintah ini mengatur ekstensi DSC di mesin virtual bernama VM07 untuk mengunduh Sample.ps1.zip dari akun penyimpanan bernama Stg dan wadah default.
+Perintah akan memanggil konfigurasi bernama ConfigName.
+File Sample.ps1.zip sebelumnya diunggah menggunakan **Publish-AzureRmVMDscConfiguration**.
 
 ### Contoh 2: Mengatur ekstensi DSC dengan data konfigurasi
 ```
 PS C:\> Set-AzureRmVMDscExtension -ResourceGroupName "ResourceGroup001" -VMName "VM13" -ArchiveBlobName "Sample.ps1.zip" -ArchiveStorageAccountName "Stg" -ConfigurationName "ConfigName" -ConfigurationArgument "@{arg="val"}" -ArchiveContainerName "WindowsPowerShellDSC" -ConfigurationData "SampleData.psd1" -Version "1.10" -Location "West US"
 ```
 
-Perintah ini mengatur ekstensi pada mesin virtual bernama VM13 untuk diunduh dari akun Sample.ps1.zip penyimpanan bernama Stg dan wadah bernama WindowsPowerShellDSC.
-Perintah konfigurasi bernama ConfigName dan menentukan data dan argumen konfigurasi.
-File Sample.ps1.zip sebelumnya diunggah dengan menggunakan **Publish-AzureRmVMDscConfiguration**.
+Perintah ini mengatur ekstensi pada mesin virtual bernama VM13 untuk mengunduh Sample.ps1.zip dari akun penyimpanan bernama Stg dan wadah bernama WindowsPowerShellDSC.
+Perintah yang dinamai konfigurasi ConfigName dan menentukan data dan argumen konfigurasi.
+File Sample.ps1.zip sebelumnya diunggah menggunakan **Publish-AzureRmVMDscConfiguration**.
 
 ### Contoh 3: Mengatur ekstensi DSC dengan data konfigurasi yang memiliki pembaruan otomatis
 ```
 PS C:\> Set-AzureRmVMDscExtension -ResourceGroupName "ResourceGroup001" -VMName "VM22" -ArchiveBlobName "Sample.ps1.zip" -ArchiveStorageAccountName "Stg" -ConfigurationName "ConfigName" -ConfigurationArgument "@{arg="val"}" -ArchiveContainerName WindowsPowerShellDSC -ConfigurationData "SampleData.psd1" -Version "1.10" -Location "West US" -AutoUpdate
 ```
 
-Perintah ini mengatur ekstensi pada mesin virtual bernama VM22 untuk diunduh Sample.ps1.zip dari akun penyimpanan bernama Stg dan wadah bernama WindowsPowerShellDSC.
-Perintah tersebut akan meminta konfigurasi bernama ConfigName serta menentukan data dan argumen konfigurasi.
-Perintah ini juga mengaktifkan pembaruan otomatis penanganan ekstensi ke versi terbaru.
-Dokumen Sample.ps1.zip diunggah sebelumnya dengan menggunakan **Publish-AzureRmVMDscConfiguration**.
+Perintah ini mengatur ekstensi pada mesin virtual bernama VM22 untuk mengunduh Sample.ps1.zip dari akun penyimpanan bernama Stg dan wadah bernama WindowsPowerShellDSC.
+Perintah memanggil konfigurasi bernama ConfigName dan menentukan data dan argumen konfigurasi.
+Perintah ini juga memungkinkan pembaruan otomatis pengatur ekstensi ke versi terbaru.
+Sample.ps1.zip sebelumnya diunggah menggunakan **Publish-AzureRmVMDscConfiguration**.
 
 ## PARAMETERS
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -ArchiveContainerName
-Nama spesies tempat penyimpanan Azure tempat arsip konfigurasi berada.
+Nama spesies wadah penyimpanan Azure tempat arsip konfigurasi berada.
 
 ```yaml
 Type: String
@@ -125,7 +125,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -ArchiveStorageEndpointFix
+### -ArchiveStorageEndpointSuffix
 Menentukan akhiran titik akhir penyimpanan.
 
 ```yaml
@@ -141,9 +141,9 @@ Accept wildcard characters: False
 ```
 
 ### -AutoUpdate
-Menentukan versi penanganan ekstensi yang ditentukan oleh *Parameter* versi.
-Penanganan ekstensi secara default bukan pembaruan otomatis.
-Gunakan parameter *AutoUpdate* untuk mengaktifkan pembaruan otomatis penanganan ekstensi ke versi terbaru saat dan ketika sudah tersedia.
+Menentukan versi pengatur ekstensi yang ditentukan oleh parameter *Versi* .
+Secara default, pengatur ekstensi tidak diupdated otomatis.
+Gunakan parameter *PembaruanOtomatis* untuk mengaktifkan pembaruan otomatis pengatur ekstensi ke versi terbaru saat tersedia.
 
 ```yaml
 Type: SwitchParameter
@@ -157,7 +157,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ConfigurationA argumentment
+### -ConfigurationArgument
 Menentukan tabel hash yang berisi argumen untuk fungsi konfigurasi.
 
 ```yaml
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConfigurationName
-Menentukan nama konfigurasi yang diminta Ekstensi DSC.
+Menentukan nama konfigurasi yang dimunculkan Ekstensi DSC.
 
 ```yaml
 Type: String
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -234,8 +234,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: SwitchParameter
@@ -281,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: String
@@ -342,7 +342,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -359,7 +359,7 @@ Accept wildcard characters: False
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
 
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -374,11 +374,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS

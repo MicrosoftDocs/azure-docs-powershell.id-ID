@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.front
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/FrontDoor/Commands.FrontDoor/help/New-AzureRmFrontDoorMatchConditionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/FrontDoor/Commands.FrontDoor/help/New-AzureRmFrontDoorMatchConditionObject.md
-ms.openlocfilehash: b52c9f7a503ded94670056ab5190b290f2662e3ec20d89f6ccaba3154ce21ffb
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 70ab8b592c550280f424f9c0a4bfced877942edc
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417330"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142387692"
 ---
 # New-AzureRmFrontDoorMatchConditionObject
 
 ## SYNOPSIS
-Membuat Objek MatchCondition untuk pembuatan kebijakan WAF
+Buat Objek MatchCondition untuk pembuatan kebijakan WAF
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ New-AzureRmFrontDoorMatchConditionObject -MatchVariable <PSMatchVariable>
 ```
 
 ## DESCRIPTION
-Membuat Objek MatchCondition untuk pembuatan kebijakan WAF
+Buat Objek MatchCondition untuk pembuatan kebijakan WAF
 
 ## EXAMPLES
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 
 ### -MatchVariable
 Cocokkan Variabel.
-Kemungkinan nilai termasuk: 'RemoteAddr', 'RequestMethod', 'QueryString', 'PostArgs','RequestUri', 'RequestHeader', 'RequestString'
+Nilai yang memungkinkan termasuk: 'RemoteAddr', 'RequestMethod', 'QueryString', 'PostArgs','RequestUri', 'RequestHeader', 'RequestBody'
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSMatchVariable
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -NegateCondition
-Menjelaskan jika ini meniadakan kondisi atau nilai Default tidak salah
+Menjelaskan apakah ini meniadakan kondisi atau tidak Nilai default adalah false
 
 ```yaml
 Type: System.Boolean
@@ -111,8 +111,8 @@ Accept wildcard characters: False
 ```
 
 ### -OperatorProperty
-Menjelaskan operator yang akan cocok.
-Nilai yang memungkinkan antara lain: 'Any', 'IPMatch', 'GeoMatch', 'Equal', 'Contains', 'LessThan', 'GreaterThanOrEqual', 'GreaterThanOrEqual', 'BeginsWith', 'EndsWith''
+Menjelaskan operator yang akan dicocokkan.
+Nilai yang memungkinkan antara lain: 'Any', 'IPMatch', 'GeoMatch', 'Equal', 'Contains', 'LessThan', 'GreaterThan', 'LessThanOrEqual', 'GreaterThanOrEqual', 'BeginsWith', 'EndsWith''
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSOperatorProperty
@@ -127,8 +127,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pemilih
-Nama pemilih dalam RequestHeader atau RequestHeader agar sesuai
+### -Selector
+Nama pemilih di RequestHeader atau RequestBody agar cocok
 
 ```yaml
 Type: System.String
@@ -143,11 +143,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

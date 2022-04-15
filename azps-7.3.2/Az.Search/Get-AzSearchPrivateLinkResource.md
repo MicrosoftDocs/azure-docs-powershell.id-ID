@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.search/get-AzSea
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Get-AzSearchPrivateLinkResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Get-AzSearchPrivateLinkResource.md
-ms.openlocfilehash: 292d49086146ed7323d2bca286a0ac81408f79aa
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 22b03aab2dffadb4afdd27241772911ead437a39
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140570460"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142368143"
 ---
 # Get-AzSearchPrivateLinkResource
 
 ## SYNOPSIS
-Mendapatkan detail sumber daya tautan pribadi untuk layanan Pencarian Kognitif Azure.
+Mendapatkan detail sumber daya tautan pribadi untuk layanan Azure Cognitive Search.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.search/get-azsearchprivatelinkresource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzSearchPrivateLinkResource [-InputObject] <PSSearchService> [-DefaultProfil
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSearchPrivateLinkResource** mendapatkan detail sumber daya tautan pribadi untuk layanan Pencarian Kognitif Azure.
+Cmdlet **Get-AzSearchPrivateLinkResource** mendapatkan detail sumber daya tautan pribadi untuk layanan Azure Cognitive Search.
 
 ## EXAMPLES
 
@@ -90,7 +93,7 @@ PS C:\> Get-AzSearchPrivateLinkResource -ResourceGroupName arjagann -Name arjaga
 }
 ```
 
-Contoh tersebut memperlihatkan cara untuk mendapatkan detail sumber daya tautan pribadi (dalam formulir JSON demi kenyamanan) untuk layanan Pencarian Kognitif Azure.
+Contoh memperlihatkan cara mendapatkan detail sumber daya tautan pribadi (dalam formulir JSON untuk kenyamanan) untuk layanan Azure Cognitive Search.
 
 ## PARAMETERS
 
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Input Layanan Pencarian Kognitif Azure.
+Azure Cognitive Search Objek Input Layanan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Search.Models.PSSearchService
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Layanan Pencarian Kognitif Azure.
+Azure Cognitive Search Nama layanan.
 
 ```yaml
 Type: System.String
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Layanan Pencarian Kognitif Azure.
+Azure Cognitive Search Id Sumber Daya Layanan.
 
 ```yaml
 Type: System.String
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,11 +204,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

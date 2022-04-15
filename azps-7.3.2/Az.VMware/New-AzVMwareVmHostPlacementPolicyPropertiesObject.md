@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.VMware/new-AzVMw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareVmHostPlacementPolicyPropertiesObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareVmHostPlacementPolicyPropertiesObject.md
-ms.openlocfilehash: 30f877f727255933b795d16bafc364668d9eb8c5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 252b93fa74bf28244a88e8e15cf66763cc987e13
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140399958"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142395017"
 ---
 # New-AzVMwareVmHostPlacementPolicyPropertiesObject
 
 ## SYNOPSIS
-Buat objek dalam memori untuk VmHostPlacementPolicyProperties.
+Membuat objek dalam memori untuk VmHostPlacementPolicyProperties.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.vmware/new-azvmwarevmhostplacementpolicypropertiesobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ New-AzVMwareVmHostPlacementPolicyPropertiesObject -AffinityType <AffinityType> -
 ```
 
 ## DESCRIPTION
-Buat objek dalam memori untuk VmHostPlacementPolicyProperties.
+Membuat objek dalam memori untuk VmHostPlacementPolicyProperties.
 
 ## EXAMPLES
 
-### Contoh 1: Create an in-memory object for VmHostPlacementPolicyProperties.
+### Contoh 1: Membuat objek dalam memori untuk VmHostPlacementPolicyProperties.
 ```powershell
 PS C:\> New-AzVMwareVmHostPlacementPolicyPropertiesObject -AffinityType 'AntiAffinity' -HostMember @{"abc"="123"}  -Type 'VmHost' -VMMember @{"abc"="123"}
 
@@ -39,12 +42,12 @@ DisplayName ProvisioningState State AffinityType HostMember                     
                                     AntiAffinity {System.Collections.Hashtable} {System.Collections.Hashtable}
 ```
 
-Buat objek dalam memori untuk VmHostPlacementPolicyProperties.
+Membuat objek dalam memori untuk VmHostPlacementPolicyProperties.
 
 ## PARAMETERS
 
 ### -AffinityType
-tipe afiliasi kebijakan penempatan.
+tipe afeinitas kebijakan penempatan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.VMware.Support.AffinityType
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-tipe kebijakan penempatan.
+jenis kebijakan penempatan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.VMware.Support.PlacementPolicyType
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

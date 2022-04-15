@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactories/Commands.DataFactories/help/New-AzureRmDataFactoryEncryptValue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactories/Commands.DataFactories/help/New-AzureRmDataFactoryEncryptValue.md
 ms.openlocfilehash: 5de4c34281b2122880a683f070e771dc15d93c5a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140859185"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142388596"
 ---
 # New-AzureRmDataFactoryEncryptValue
 
@@ -49,33 +49,33 @@ PS C:\>$Value = ConvertTo-SecureString 'Data Source=ContosoServer;Initial Catalo
 PS C:\> New-AzureRmDataFactoryEncryptValue -GatewayName "WikiGateway" -DataFactoryName "WikiAdf" -Value $value -ResourceGroupName "ADF" -Type OnPremisesSqlLinkedService
 ```
 
-Perintah pertama menggunakan cmdlet ConvertTo-SecureString untuk mengonversi string koneksi yang ditentukan menjadi objek **SecureString** , lalu menyimpan objek tersebut dalam $Value variabel.
-Untuk informasi selengkapnya, ketik `Get-Help ConvertTo-SecureString`.
-Nilai yang diperbolehkan: SQL Server atau string koneksi Oracle.
-Perintah kedua membuat nilai terenkripsi untuk objek yang disimpan di $Value pabrik data, gateway, grup sumber daya, dan tipe layanan yang ditautkan yang ditentukan.
+Perintah pertama menggunakan cmdlet ConvertTo-SecureString untuk mengonversi string koneksi tertentu menjadi objek **SecureString** , lalu menyimpan objek tersebut dalam variabel $Value.
+Untuk informasi selengkapnya, ketik .`Get-Help ConvertTo-SecureString`
+Nilai yang diizinkan: SQL Server atau string koneksi Oracle.
+Perintah kedua membuat nilai terenkripsi untuk objek yang disimpan di $Value untuk tipe pabrik data, gateway, grup sumber daya, dan layanan tertaut yang ditentukan.
 
-### Contoh 2: Mengenkripsi string koneksi non-ODBC yang menggunakan Windows autentikasi.
+### Contoh 2: Enkripsi string koneksi non-ODBC yang menggunakan autentikasi Windows.
 ```
 PS C:\>$Value = ConvertTo-SecureString 'Data Source=ContosoServer;Initial Catalog=catelog;Integrated Security=True' -AsPlainText -Force
 PS C:\> $Credential = Get-Credential
 PS C:\> New-AzureRmDataFactoryEncryptValue -DataFactoryName "WikiADF" -GatewayName "WikiGateway" -ResourceGroupName "ADF" -Value $Value -Credential $Credential -Type OnPremisesSqlLinkedService $Value = ConvertTo-SecureString 'Data Source=ContosoServer;Initial Catalog=catelog;Integrated Security=True' -AsPlainText -Force
 ```
 
-Perintah pertama menggunakan **ConvertTo-SecureString** untuk mengonversi string koneksi yang ditentukan menjadi objek string aman, lalu menyimpan objek tersebut dalam $Value variabel.
-Perintah kedua menggunakan cmdlet Get-Credential untuk mengumpulkan autentikasi windows (nama pengguna dan kata sandi), lalu menyimpan objek **PSCredential** tersebut dalam $Credential variabel.
-Untuk informasi selengkapnya, ketik `Get-Help Get-Credential`.
-Perintah ketiga membuat nilai terenkripsi untuk objek yang disimpan di $Value dan $Credential untuk pabrik data, gateway, grup sumber daya, dan tipe layanan yang ditautkan yang ditentukan.
+Perintah pertama menggunakan **ConvertTo-SecureString** untuk mengonversi string koneksi tertentu menjadi objek string aman, lalu menyimpan objek tersebut dalam variabel $Value.
+Perintah kedua menggunakan cmdlet Get-Credential untuk mengumpulkan autentikasi windows (nama pengguna dan kata sandi), lalu menyimpan objek **PSCredential** tersebut dalam variabel $Credential.
+Untuk informasi selengkapnya, ketik .`Get-Help Get-Credential`
+Perintah ketiga membuat nilai terenkripsi untuk objek yang disimpan di $Value dan $Credential untuk pabrik data, gateway, grup sumber daya, dan tipe layanan tertaut yang ditentukan.
 
-### Contoh 3: Enkripsi nama server dan kredensial untuk Layanan tertaut sistem file
+### Contoh 3: Mengenkripsi nama server dan kredensial untuk layanan tertaut sistem file
 ```
 PS C:\>$Value = ConvertTo-SecureString '\\servername' -AsPlainText -Force
 PS C:\> $Credential = Get-Credential
 PS C:\> New-AzureRmDataFactoryEncryptValue -DataFactoryName "WikiADF" -GatewayName "WikiGateway" -ResourceGroupName "ADF" -Value $Value -Credential $Credential -Type OnPremisesFileSystemLinkedService
 ```
 
-Perintah pertama menggunakan **ConvertTo-SecureString** untuk mengonversi string yang ditentukan menjadi string aman, lalu menyimpan objek tersebut dalam $Value variabel.
-Perintah kedua menggunakan **Get-Credential** untuk mengumpulkan autentikasi windows (nama pengguna dan kata sandi), lalu menyimpan objek **PSCredential** tersebut $Credential variabel.
-Perintah ketiga membuat nilai terenkripsi untuk objek yang disimpan di $Value dan $Credential untuk pabrik data, gateway, grup sumber daya, dan tipe layanan yang ditautkan yang ditentukan.
+Perintah pertama menggunakan **ConvertTo-SecureString** untuk mengonversi string yang ditentukan menjadi string aman, lalu menyimpan objek tersebut dalam variabel $Value.
+Perintah kedua menggunakan **Get-Credential** untuk mengumpulkan autentikasi windows (nama pengguna dan kata sandi), lalu menyimpan objek **PSCredential** tersebut dalam variabel $Credential.
+Perintah ketiga membuat nilai terenkripsi untuk objek yang disimpan di $Value dan $Credential untuk pabrik data, gateway, grup sumber daya, dan tipe layanan tertaut yang ditentukan.
 
 ### Contoh 4: Mengenkripsi kredensial untuk layanan tertaut HDFS
 ```
@@ -85,10 +85,10 @@ $Credential = New-Object System.Management.Automation.PSCredential ($UserName, $
 New-AzureRmDataFactoryEncryptValue -DataFactoryName "MyDataFactory" -ResourceGroupName "MyResourceGroup" -GatewayName "MyDataManagementGateway" -Type HdfsLinkedService -AuthenticationType Windows -Credential $Credential -NonCredentialValue "http://server01.com:50070/webhdfs/v1/user/username"
 ```
 
-Perintah **ConvertTo-SecureString** mengonversi string yang ditentukan menjadi string aman.
-Perintah **Objek Baru** membuat objek PSCredential menggunakan nama pengguna dan string kata sandi yang aman.
-Sebaliknya, Anda bisa menggunakan perintah **Get-Credential** untuk mengumpulkan autentikasi windows (nama pengguna dan kata sandi), lalu menyimpan objek **PSCredential** yang dikembalikan di variabel $credential seperti yang diperlihatkan di contoh sebelumnya.
-Perintah **New-AzureRmDataFactoryEncryptValue** membuat nilai terenkripsi untuk objek yang disimpan di $Credential untuk pabrik data, gateway, grup sumber daya, dan tipe layanan yang ditautkan.
+Perintah **ConvertTo-SecureString** mengonversi string tertentu menjadi string aman.
+Perintah **Objek Baru** membuat objek PSCredential menggunakan string nama pengguna dan kata sandi yang aman.
+Sebagai gantinya, Anda dapat menggunakan perintah **Get-Credential** untuk mengumpulkan autentikasi windows (nama pengguna dan kata sandi), lalu menyimpan objek **PSCredential yang** dikembalikan dalam variabel $credential seperti yang diperlihatkan dalam contoh sebelumnya.
+Perintah **New-AzureRmDataFactoryEncryptValue** membuat nilai terenkripsi untuk objek yang disimpan di $Credential untuk tipe pabrik data, gateway, grup sumber daya, dan layanan tertaut yang ditentukan.
 
 ### Contoh 5: Mengenkripsi kredensial untuk layanan tertaut ODBC
 ```
@@ -96,8 +96,8 @@ PS C:\>$Content = ConvertTo-SecureString "UID=username@contoso;PWD=password;" -A
 New-AzureRmDataFactoryEncryptValue -ResourceGroupName $RGName -DataFactoryName $DFName -GatewayName $Gateway -Type OnPremisesOdbcLinkedService -AuthenticationType Basic -NonCredentialValue "Driver={SQL Server};Server=server01.database.contoso.net; Database=HDISScenarioTest;" -Value $content
 ```
 
-Perintah **ConvertTo-SecureString** mengonversi string yang ditentukan menjadi string aman.
-Perintah **New-AzureRmDataFactoryEncryptValue** membuat nilai terenkripsi untuk objek yang disimpan di $Value untuk pabrik data, gateway, grup sumber daya, dan tipe layanan yang ditautkan.
+Perintah **ConvertTo-SecureString** mengonversi string tertentu menjadi string aman.
+Perintah **New-AzureRmDataFactoryEncryptValue** membuat nilai terenkripsi untuk objek yang disimpan di $Value untuk tipe pabrik data, gateway, grup sumber daya, dan layanan tertaut yang ditentukan.
 
 ## PARAMETERS
 
@@ -121,8 +121,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Credential
-Menentukan lokasi Windows autentikasi (nama pengguna dan kata sandi) yang akan digunakan.
+### -Kredensial
+Menentukan kredensial autentikasi Windows (nama pengguna dan kata sandi) untuk digunakan.
 Cmdlet ini mengenkripsi data kredensial yang Anda tentukan di sini.
 
 ```yaml
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -Database
-Menentukan nama database dari layanan yang ditautkan.
+Menentukan nama database layanan yang ditautkan.
 
 ```yaml
 Type: System.String
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -Server
-Menentukan nama server dari layanan yang ditautkan.
+Menentukan nama server layanan yang ditautkan.
 
 ```yaml
 Type: System.String
@@ -264,7 +264,7 @@ Accept wildcard characters: False
 
 ### -Tipe
 Menentukan tipe layanan yang ditautkan.
-Cmdlet ini mengenkripsi data untuk tipe layanan yang ditautkan yang ditentukan parameter ini.
+Cmdlet ini mengenkripsi data untuk tipe layanan tertaut yang ditentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - OnPremisesSqlLinkedService 
 - OnPremisesFileSystemLinkedService 
@@ -291,9 +291,9 @@ Accept wildcard characters: False
 
 ### -Value
 Menentukan nilai untuk dienkripsi.
-Untuk layanan terkait SQL Server dan layanan tertaut Oracle lokal, gunakan string koneksi.
-Untuk layanan tertaut ODBC di tempat, gunakan bagian kredensial dari string koneksi.
-Untuk layanan tertaut sistem file lokal, jika sistem file ber lokal untuk komputer gateway, gunakan Local atau localhost, dan jika sistem file berada di server berbeda dari komputer gateway, \\\\gunakan nama server.
+Untuk layanan lokal SQL Server tertaut dan layanan tertaut Oracle lokal, gunakan string koneksi.
+Untuk layanan odbc lokal yang ditautkan, gunakan bagian kredensial string koneksi.
+Untuk layanan tertaut sistem file lokal, jika sistem file lokal ke komputer gateway, gunakan Lokal atau localhost, dan jika sistem file berada di server yang berbeda dari komputer gateway, gunakan \\\\nama server.
 
 ```yaml
 Type: System.Security.SecureString
@@ -308,7 +308,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -321,7 +321,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### System.String
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, data, factories
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 

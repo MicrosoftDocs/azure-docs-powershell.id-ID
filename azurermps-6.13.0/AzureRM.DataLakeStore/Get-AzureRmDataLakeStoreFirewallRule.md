@@ -7,17 +7,17 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeStore/Commands.DataLakeStore/help/Get-AzureRmDataLakeStoreFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeStore/Commands.DataLakeStore/help/Get-AzureRmDataLakeStoreFirewallRule.md
 ms.openlocfilehash: 191b1ebc1f83387a9cf1ac59f6fb3f7a55f115ac
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140864849"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142388275"
 ---
 # Get-AzureRmDataLakeStoreFirewallRule
 
 ## SYNOPSIS
-Mendapatkan aturan firewall tertentu di Data Lake Store yang ditentukan.
-Jika tidak ada aturan firewall yang ditentukan, daftar semua aturan firewall untuk akun tersebut.
+Mendapatkan aturan firewall tertentu dalam Data Lake Store yang ditentukan.
+Jika tidak ada aturan firewall yang ditentukan, maka daftar semua aturan firewall untuk akun tersebut.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,8 +29,8 @@ Get-AzureRmDataLakeStoreFirewallRule [-Account] <String> [[-Name] <String>] [[-R
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzureRmDataLakeStoreFirewallRule mendapatkan aturan firewall tertentu di Data Lake Store yang ditentukan.
-Jika tidak ada aturan firewall yang ditentukan, daftar semua aturan firewall untuk akun tersebut.
+Cmdlet Get-AzureRmDataLakeStoreFirewallRule mendapatkan aturan firewall yang ditentukan dalam Data Lake Store yang ditentukan.
+Jika tidak ada aturan firewall yang ditentukan, maka daftar semua aturan firewall untuk akun tersebut.
 
 ## EXAMPLES
 
@@ -51,7 +51,7 @@ Mengembalikan semua aturan firewall dalam akun "ContosoADL"
 ## PARAMETERS
 
 ### -Akun
-Akun Data Lake Store untuk mengambil aturan firewall darinya.
+Akun Data Lake Store untuk mengambil aturan firewall.
 
 ```yaml
 Type: System.String
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang ingin diambil aturan firewall tertentu dari akun tertentu.
+Nama grup sumber daya di mana ingin mengambil aturan firewall akun tertentu.
 
 ```yaml
 Type: System.String
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
