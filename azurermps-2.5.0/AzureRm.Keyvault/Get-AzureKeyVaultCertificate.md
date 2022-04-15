@@ -5,16 +5,16 @@ ms.assetid: 363FA51E-D075-4800-A4BE-BFF63FD25C90
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.keyvault/get-azurekeyvaultcertificate
 schema: 2.0.0
 ms.openlocfilehash: ed52e229f114666782cb24388db585fd08fa685b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132429197"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141928874"
 ---
 # Get-AzureKeyVaultCertificate
 
 ## SYNOPSIS
-Mendapatkan sertifikat dari kunci vault.
+Mendapatkan sertifikat dari kubah kunci.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -45,7 +45,7 @@ Get-AzureKeyVaultCertificate [-VaultName] <String> [[-Name] <String>] [-InRemove
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureKeyVaultCertificate** mendapatkan sertifikat tertentu atau versi sertifikat dari kunci vault di Azure Key Vault.
+Cmdlet **Get-AzureKeyVaultCertificate** mendapatkan sertifikat tertentu atau versi sertifikat dari kubah kunci di Azure Key Vault.
 
 ## EXAMPLES
 
@@ -78,27 +78,27 @@ Created     : 2/8/2016 11:21:45 PM
 Updated     : 2/8/2016 11:21:45 PM
 ```
 
-Perintah ini mendapatkan sertifikat yang bernama TestCert01 dari kunci vault bernama Contoso AZURE01.
+Perintah ini mendapatkan sertifikat bernama TestCert01 dari kubah kunci bernama ContosoKV01.
 
-### Contoh 2: Dapatkan semua sertifikat yang telah dihapus tetapi tidak di pembersihan untuk vault kunci ini.
+### Contoh 2: Dapatkan semua sertifikat yang telah dihapus tetapi tidak dibersihkan untuk kubah kunci ini.
 ```
 PS C:\>Get-AzureKeyVaultCertificate -VaultName 'Contoso' -InRemovedState
 ```
 
-Perintah ini mendapatkan semua sertifikat yang telah dihapus sebelumnya, namun tidak di pembersihan, di kunci vault bernama Contoso.
+Perintah ini mendapatkan semua sertifikat yang telah dihapus sebelumnya, tetapi tidak dibersihkan, dalam kubah kunci bernama Contoso.
 
-### Contoh 3: Mendapatkan sertifikat MyCert yang telah dihapus tetapi tidak di pembersihan untuk vault kunci ini.
+### Contoh 3: Mendapatkan sertifikat MyCert yang telah dihapus tetapi tidak dibersihkan untuk kubah kunci ini.
 ```
 PS C:\>Get-AzureKeyVaultCertificate -VaultName 'Contoso' -Name 'MyCert' -InRemovedState
 ```
 
-Perintah ini mendapatkan sertifikat yang bernama 'MyCert' yang telah dihapus sebelumnya, tetapi tidak dihapus, di kunci vault bernama Contoso.
-Perintah ini akan mengembalikan metadata seperti tanggal penghapusan, dan tanggal pembersihan terjadwal dari sertifikat yang dihapus ini.
+Perintah ini mendapatkan sertifikat bernama 'MyCert' yang telah dihapus sebelumnya, tetapi tidak dibersihkan, di kubah kunci bernama Contoso.
+Perintah ini akan mengembalikan metadata seperti tanggal penghapusan, dan tanggal pembersihan terjadwal sertifikat yang dihapus ini.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: IAzureContextContainer
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama sertifikat untuk mendapatkan.
+Menentukan nama sertifikat yang akan didapatkan.
 
 ```yaml
 Type: String
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kunci vault.
+Menentukan nama kubah kunci.
 
 ```yaml
 Type: String
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -216,8 +216,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Add-AzureKeyVaultCertificate](./Add-AzureKeyVaultCertificate.md)
 
-[Import-AzureKeyVaultCertificate](./Import-AzureKeyVaultCertificate.md)
+[Impor-AzureKeyVaultCertificate](./Import-AzureKeyVaultCertificate.md)
 
-[Remove-AzureKeyVaultCertificate](./Remove-AzureKeyVaultCertificate.md)
+[Hapus-AzureKeyVaultCertificate](./Remove-AzureKeyVaultCertificate.md)
 
 

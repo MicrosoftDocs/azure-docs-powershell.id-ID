@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Update-AzWvdHostPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Update-AzWvdHostPool.md
-ms.openlocfilehash: a5293a3d7d9a208ecd5dc54a643a6e8a35eeba89
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1d7d859ba592dce2bd4f4a72d1ad4f078da35429
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140381717"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142034813"
 ---
 # Update-AzWvdHostPool
 
 ## SYNOPSIS
-Perbarui host pool.
+Perbarui kumpulan host.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/update-azwvdhostpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,11 +48,11 @@ Update-AzWvdHostPool -InputObject <IDesktopVirtualizationIdentity> [-CustomRdpPr
 ```
 
 ## DESCRIPTION
-Perbarui host pool.
+Perbarui kumpulan host.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui Windows HostPool Desktop Virtual menurut nama
+### Contoh 1: Memperbarui Windows Virtual Desktop HostPool menurut nama
 ```powershell
 PS C:\> Update-AzWvdHostPool -ResourceGroupName ResourceGroupName `
                             -Name HostPoolName `
@@ -66,7 +69,7 @@ Location   Name                 Type
 eastus     HostPoolName Microsoft.DesktopVirtualization/hostpools
 ```
 
-Perintah ini memperbarui Windows HostPool Desktop Virtual di Grup Sumber Daya.
+Perintah ini memperbarui Windows Virtual Desktop HostPool dalam Grup Sumber Daya.
 
 ## PARAMETERS
 
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -FriendlyName
-Nama HostPool yang mudah bersahabat.
+Nama HostPool yang ramah.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IDesktopVirtualizationIdentity
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerType
-Tipe penyeimbang muat.
+Tipe penyeimbang beban.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.LoadBalancerType
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxSessionLimit
-Batas sesi maksimal HostPool.
+Batas maksimal sesi HostPool.
 
 ```yaml
 Type: System.Int32
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreferredAppGroupType
-Tipe grup aplikasi yang lebih disukai, default untuk Grup Aplikasi Desktop
+Tipe tipe grup aplikasi pilihan, default ke Grup Aplikasi Desktop
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.PreferredAppGroupType
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistrationInfoExpirationTime
-Waktu kedaluwarsa token pendaftaran.
+Waktu kedaluwarsa token registrasi.
 
 ```yaml
 Type: System.DateTime
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistrationInfoRegistrationTokenOperation
-Tipe token yang diatur ulang.
+Tipe pengaturan ulang token.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.RegistrationTokenOperation
@@ -252,7 +255,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -266,8 +269,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Ring
-Nomor dering HostPool.
+### -Cincin
+Nomor cincin HostPool.
 
 ```yaml
 Type: System.Int32
@@ -282,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### -SsoadfsAuthority
-URL ke server ADFS pelanggan untuk menandatangani sertifikat SSO WVD.
+URL ke server ADFS pelanggan untuk menandatangani sertifikat WVD SSO.
 
 ```yaml
 Type: System.String
@@ -297,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### -SsoClientId
-ClientId untuk Pihak Yang Mengandalkan yang terdaftar digunakan untuk menerbitkan sertifikat SSO WVD.
+ClientId untuk Relying Party terdaftar yang digunakan untuk menerbitkan sertifikat WVD SSO.
 
 ```yaml
 Type: System.String
@@ -327,7 +330,7 @@ Accept wildcard characters: False
 ```
 
 ### -SsoSecretType
-Tipe tanda tunggal di Tipe Rahasia.
+Tipe tanda tunggal pada Tipe Rahasia.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.SsoSecretType
@@ -417,7 +420,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -433,7 +436,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -448,7 +451,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -469,16 +472,16 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IDesktopVirtualizationIdentity>: Parameter Identitas
   - `[ApplicationGroupName <String>]`: Nama grup aplikasi
-  - `[ApplicationName <String>]`: Nama aplikasi di dalam grup aplikasi yang ditentukan
+  - `[ApplicationName <String>]`: Nama aplikasi dalam grup aplikasi yang ditentukan
   - `[DesktopName <String>]`: Nama desktop dalam grup desktop yang ditentukan
-  - `[HostPoolName <String>]`: Nama host pool dalam grup sumber daya yang ditentukan
+  - `[HostPoolName <String>]`: Nama kumpulan host dalam grup sumber daya yang ditentukan
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[MsixPackageFullName <String>]`: Nama lengkap paket versi tertentu dari paket MSIX di dalam hostpool tertentu
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
-  - `[ScalingPlanName <String>]`: Nama rencana penskalaan.
-  - `[SessionHostName <String>]`: Nama tuan rumah sesi dalam host pool yang ditentukan
+  - `[MsixPackageFullName <String>]`: Versi paket tertentu nama lengkap paket MSIX dalam hostpool tertentu
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ScalingPlanName <String>]`: Nama paket penskalaan.
+  - `[SessionHostName <String>]`: Nama host sesi dalam kumpulan host yang ditentukan
   - `[SubscriptionId <String>]`: ID langganan target.
-  - `[UserSessionId <String>]`: Nama sesi pengguna dalam sesi host yang ditentukan
+  - `[UserSessionId <String>]`: Nama sesi pengguna dalam host sesi yang ditentukan
   - `[WorkspaceName <String>]`: Nama ruang kerja
 
 ## RELATED LINKS

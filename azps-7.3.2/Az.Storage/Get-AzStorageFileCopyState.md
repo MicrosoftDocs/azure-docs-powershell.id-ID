@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageFileCopyState.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageFileCopyState.md
-ms.openlocfilehash: 7e921acb0df996571fadf28a040f6819da2a9dbf
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2caba9b98abad12d0c150f1a23253bc06d34c40f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140005671"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141932523"
 ---
 # Get-AzStorageFileCopyState
 
 ## SYNOPSIS
-Mendapatkan status operasi penyalinan.
+Mendapatkan status operasi salinan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstoragefilecopystate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,33 +38,33 @@ Get-AzStorageFileCopyState [-File] <CloudFile> [-WaitForComplete] [-ServerTimeou
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStorageFileCopyState** mendapatkan status operasi Azure Storage salinan file.
-Salinan harus berjalan pada file tujuan penyalinan.
+Cmdlet **Get-AzStorageFileCopyState** mendapatkan status operasi salinan file Azure Storage.
+File harus dijalankan pada file tujuan salinan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan status salinan dengan nama file
+### Contoh 1: Dapatkan status salinan menurut nama file
 ```
 PS C:\>Get-AzStorageFileCopyState -ShareName "ContosoShare" -FilePath "ContosoFile"
 ```
 
-Perintah ini mendapatkan status operasi penyalinan untuk file dengan nama yang ditentukan.
+Perintah ini mendapatkan status operasi salin untuk file yang memiliki nama yang ditentukan.
 
-### Contoh 2: Mulai Salin dan pipeline untuk mendapatkan status penyalinan
+### Contoh 2: Mulai Salin dan saluran untuk mendapatkan status salin
 ```
 C:\PS> $destfile = Start-AzStorageFileCopy -SrcShareName "contososhare" -SrcFilePath "contosofile" -DestShareName "contososhare2" -destfilepath "contosofile_copy"  
 
 C:\PS> $destfile | Get-AzStorageFileCopyState
 ```
 
-Perintah pertama memulai penyalinan file "contosofile" ke "contosofile_copy", dan output objek file destiantion. Perintah kedua pipeline objek file destiantion ke Get-AzStorageFileCopyState, untuk mendapatkan status penyalinan file.
+Perintah pertama memulai menyalin file "contosofile" ke "contosofile_copy", dan membuat output objek file destiansi. Perintah kedua memilah objek file destiansi ke Get-AzStorageFileCopyState, untuk mendapatkan status salinan file.
 
 ## PARAMETERS
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu yang habis di sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba permintaan.
-Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini akan mengembalikan kesalahan.
+Menentukan interval waktu habis pihak klien, dalam hitungan detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -76,11 +79,11 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan jumlah maksimum panggilan jaringan bersama.
-Anda dapat menggunakan parameter ini untuk membatasi konkurensi guna membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Menentukan maksimum panggilan jaringan serentak.
+Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
 Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
-Parameter ini bisa membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth yang rendah, seperti 100 kilobit per detik.
-Nilai default adalah 10.
+Parameter ini dapat membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth rendah, seperti 100 kilobit per detik.
+Nilai defaultnya adalah 10.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Menentukan Azure Storage konteks.
+Menentukan konteks Azure Storage.
 Untuk mendapatkan konteks, gunakan cmdlet [New-AzStorageContext](./New-AzStorageContext.md) .
 
 ```yaml
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 
 ### -File
 Menentukan objek **CloudFile** .
-Anda dapat membuat file awan atau mendapatkannya menggunakan cmdlet Get-AzStorageFile cmdlet.
+Anda dapat membuat file cloud atau mendapatkannya menggunakan cmdlet Get-AzStorageFile.
 
 ```yaml
 Type: Microsoft.Azure.Storage.File.CloudFile
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -FilePath
-Menentukan jalur file relatif terhadap file Azure Storage bersama.
+Menentukan jalur file relatif terhadap berbagi Azure Storage.
 
 ```yaml
 Type: System.String
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan lamanya periode waktu habis untuk bagian server dari permintaan.
+Menentukan lamanya periode batas waktu untuk bagian server dari permintaan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -WaitForComplete
-Menunjukkan bahwa cmdlet ini menunggu salinan selesai.
+Menunjukkan bahwa cmdlet ini menunggu hingga salinan selesai.
 Jika Anda tidak menentukan parameter ini, cmdlet ini akan segera mengembalikan hasil.
 
 ```yaml
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

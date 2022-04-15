@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageContainer.md
-ms.openlocfilehash: 7809c0b9c20cee78d22cece5256c0287e977906b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: bef38148300a40a4a2ce46c3a087d078dccaf904
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140370623"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141932433"
 ---
 # Remove-AzStorageContainer
 
 ## SYNOPSIS
-Menghapus wadah penyimpanan tertentu.
+Menghapus wadah penyimpanan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/remove-azstoragecontainer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,9 +45,9 @@ Contoh ini menghapus wadah bernama MyTestContainer.
 ## PARAMETERS
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu yang habis di sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba permintaan.
-Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini akan mengembalikan kesalahan.
+Menentukan interval waktu habis pihak klien, dalam hitungan detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -59,11 +62,11 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan jumlah maksimum panggilan jaringan bersama.
-Anda dapat menggunakan parameter ini untuk membatasi konkurensi guna membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Menentukan maksimum panggilan jaringan serentak.
+Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
 Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
-Parameter ini bisa membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth yang rendah, seperti 100 kilobit per detik.
-Nilai default adalah 10.
+Parameter ini dapat membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth rendah, seperti 100 kilobit per detik.
+Nilai defaultnya adalah 10.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 
 ### -Konteks
 Menentukan konteks untuk wadah yang ingin Anda hapus.
-Anda dapat menggunakan cmdlet New-AzStorageContext cmdlet untuk membuatnya.
+Anda dapat menggunakan cmdlet New-AzStorageContext untuk membuatnya.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -108,8 +111,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama wadah untuk dihapus.
+Menentukan nama wadah yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan bahwa cmdlet ini **mengembalikan Boolean** yang mencerminkan keberhasilan operasi.
+Menunjukkan bahwa cmdlet ini mengembalikan **Boolean** yang mencerminkan keberhasilan operasi.
 Secara default, cmdlet ini tidak mengembalikan nilai.
 
 ```yaml
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan interval waktu habis di sisi layanan, dalam detik, untuk permintaan.
+Menentukan interval batas waktu sisi layanan, dalam detik, untuk permintaan.
 Jika interval yang ditentukan berlalu sebelum layanan memproses permintaan, layanan penyimpanan mengembalikan kesalahan.
 
 ```yaml
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

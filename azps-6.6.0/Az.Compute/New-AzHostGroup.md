@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzHostGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzHostGroup.md
 ms.openlocfilehash: 1a2863ed38e8d0ab0cb19e468e527be36c53e219
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139942585"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142054325"
 ---
 # New-AzHostGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "139942585"
 Membuat grup host.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/new-azhostgroup) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azhostgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,12 +47,12 @@ Location                 : eastus
 Tags                     : {[key1, val1]}
 ```
 
-Perintah ini membuat grup host dalam lokasi dan zona tertentu.
+Perintah ini membuat grup host di lokasi dan zona tertentu.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlatformFaultDomain
-Menentukan jumlah domain kesalahan yang dapat span oleh grup host.  Nilai minimum adalah 1 dan nilai maksimum adalah 3.
+Menentukan jumlah domain kesalahan yang dapat diselenggarakan oleh grup host.  Nilai minimum adalah 1 dan nilai maksimum adalah 3.
 
 ```yaml
 Type: System.Int32
@@ -156,7 +156,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Zone
+### -Zona
 Menentukan Zona grup host.
 
 ```yaml
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 
 ### -SupportAutomaticPlacement
 Menentukan apakah HostGroup akan mengaktifkan penempatan otomatis vm.
-Penempatan otomatis berarti VM tersebut ditempatkan di host khusus, dipilih oleh Azure, di bawah grup host khusus.
+Penempatan otomatis berarti VM ini ditempatkan pada host khusus, yang dipilih oleh Azure, di bawah grup host khusus.
 Jika tidak ditentukan, nilai default akan false.
 
 ```yaml
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesReplicationStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesReplicationStatus.md
-ms.openlocfilehash: e57ad3f988430f9f439423b172f5ee6aea9907d4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a33e3c93427ade57cd5e900887b1b5187e12dd56
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140372414"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142032995"
 ---
 # Get-AzNetAppFilesReplicationStatus
 
 ## SYNOPSIS
-Mendapatkan status replikasi
+Dapatkan status replikasi
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/get-aznetappfilesreplicationstatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzNetAppFilesReplicationStatus -InputObject <PSNetAppFilesVolume>
 ```
 
 ## DESCRIPTION
-Mendapatkan status replikasi
+Dapatkan status replikasi
 
 ## EXAMPLES
 
@@ -59,7 +62,7 @@ Perintah ini mendapatkan status replikasi di MyVol
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun ANF dari volume tujuan replikasi
 
 ```yaml
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolName
-Nama gabungan ANF dari volume tujuan replikasi
+Nama kumpulan ANF dari volume tujuan replikasi
 
 ```yaml
 Type: System.String
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup sumber daya volume tujuan replikasi ANF
+Grup sumber daya dari volume tujuan replikasi ANF
 
 ```yaml
 Type: System.String
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/Get-AzTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/Get-AzTag.md
 ms.openlocfilehash: 1f2289351da276a0422828c082bb51d8dc267a20
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132415098"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142056287"
 ---
 # Get-AzTag
 
@@ -25,19 +25,19 @@ Get-AzTag [[-Name] <String>] [-Detailed] [-DefaultProfile <IAzureContextContaine
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzTag** mendapatkan tag Azure yang sudah ditentukan sebelumnya dalam langganan Anda.
+Cmdlet **Get-AzTag** akan mendapatkan tag Azure yang sudah ditentukan sebelumnya dalam langganan Anda.
 Cmdlet ini mengembalikan informasi dasar tentang tag atau informasi mendetail tentang tag dan nilainya.
-Semua objek output menyertakan properti Hitung yang mewakili jumlah sumber daya dan grup sumber daya di mana tag dan nilai telah diterapkan.
-Modul Tag Azure yang merupakan **bagian dari Get-AzTag** merupakan bagian darinya yang bisa membantu Anda mengelola tag Azure yang sudah ditentukan sebelumnya.
-Tag Azure adalah pasangan nilai nama yang dapat digunakan untuk mengategorikan sumber daya dan grup sumber daya Azure, seperti menurut departemen atau pusat biaya, atau untuk melacak catatan atau komentar tentang sumber daya dan grup.
-Anda bisa menetapkan dan menerapkan tag dalam satu langkah, tapi tag yang sudah ditentukan sebelumnya memungkinkan Anda menetapkan nama dan nilai standar, konsisten, dan yang bisa diprediksi untuk tag di langganan Anda.
-Untuk membuat tag yang sudah ditentukan sebelumnya, gunakan cmdlet New-AzTag cmdlet.
-Untuk menerapkan tag yang sudah ditentukan sebelumnya ke grup sumber daya, gunakan parameter *Tag* cmdlet New-AzTag cmdlet.
-Untuk mencari grup sumber daya untuk nama atau nama dan nilai tag tertentu, gunakan parameter *Tag* Get-AzResourceGroup cmdlet.
+Semua objek output menyertakan properti Count yang mewakili jumlah sumber daya dan grup sumber daya tempat tag dan nilai telah diterapkan.
+Modul Tag Azure yang **menjadi bagian dari Get-AzTag** dapat membantu Anda mengelola tag Azure yang sudah ditentukan sebelumnya.
+Tag Azure adalah pasangan nilai nama yang bisa Anda gunakan untuk mengategorikan sumber daya dan grup sumber daya Azure Anda, seperti menurut departemen atau pusat biaya, atau untuk melacak catatan atau komentar tentang sumber daya dan grup.
+Anda bisa menentukan dan menerapkan tag dalam satu langkah, tetapi tag yang sudah ditentukan sebelumnya memungkinkan Anda menetapkan nama dan nilai standar, konsisten, dan dapat diprediksi untuk tag dalam langganan Anda.
+Untuk membuat tag yang sudah ditentukan sebelumnya, gunakan cmdlet New-AzTag.
+Untuk menerapkan tag yang sudah ditentukan sebelumnya ke grup sumber daya, gunakan parameter *Tag* cmdlet New-AzTag.
+Untuk mencari grup sumber daya untuk nama atau nama dan nilai tag tertentu, gunakan parameter *Tag* cmdlet Get-AzResourceGroup.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua tag yang sudah ditentukan sebelumnya
+### Contoh 1: Dapatkan semua tag yang sudah ditentukan sebelumnya
 ```
 PS C:\>Get-AzTag
 
@@ -49,10 +49,10 @@ FY2015        2
 CostCenter   20
 ```
 
-Perintah ini akan mendapatkan semua tag yang sudah ditentukan sebelumnya dalam langganan.
-Properti Count memperlihatkan berapa kali tag diterapkan ke sumber daya dan grup sumber daya dalam langganan.
+Perintah ini mendapatkan semua tag yang sudah ditentukan sebelumnya dalam langganan.
+Properti Count memperlihatkan berapa kali tag telah diterapkan ke sumber daya dan grup sumber daya dalam langganan.
 
-### Contoh 2: Dapatkan tag dengan nama
+### Contoh 2: Mendapatkan tag menurut nama
 ```
 PS C:\>Get-AzTag -Name "Department"
 
@@ -70,7 +70,7 @@ Values:
 Perintah ini mendapatkan informasi mendetail tentang tag Departemen dan nilainya.
 Properti Count memperlihatkan berapa kali tag dan setiap nilainya telah diterapkan ke sumber daya dan grup sumber daya dalam langganan.
 
-### Contoh 3: Dapatkan nilai semua tag
+### Contoh 3: Mendapatkan nilai dari semua tag
 ```
 PS C:\>Get-AzTag -Detailed
 
@@ -101,13 +101,13 @@ Values:
         0003          5
 ```
 
-Perintah ini menggunakan *parameter Mendetail* untuk mendapatkan informasi detail tentang semua tag yang sudah ditentukan sebelumnya dalam langganan.
-Penggunaan *parameter Detail* setara dengan penggunaan parameter *Name* untuk setiap tag.
+Perintah ini menggunakan parameter *Detail* untuk mendapatkan informasi mendetail tentang semua tag yang sudah ditentukan sebelumnya dalam langganan.
+Menggunakan parameter *Detail* sama dengan menggunakan parameter *Nama* untuk setiap tag.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -137,9 +137,9 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama tag untuk mendapatkan.
-Secara default, **Get-AzTag** mendapatkan informasi dasar tentang semua tag yang ditentukan sebelumnya dalam langganan.
-Ketika Anda menentukan parameter *Name* , *parameter Detail* tidak memiliki efek.
+Menentukan nama tag yang akan didapatkan.
+Secara default, **Get-AzTag** mendapatkan informasi dasar tentang semua tag yang sudah ditentukan sebelumnya dalam langganan.
+Saat Anda menentukan parameter *Nama* , parameter *Detail* tidak berpengaruh.
 
 ```yaml
 Type: System.String
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -172,5 +172,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzTag](./New-AzTag.md)
 
-[Remove-AzTag](./Remove-AzTag.md)
+[Hapus-AzTag](./Remove-AzTag.md)
 

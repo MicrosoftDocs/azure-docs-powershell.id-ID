@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherConnectionMonitorReport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherConnectionMonitorReport.md
-ms.openlocfilehash: a42a9c42a1fcd3d59b444dd0816961dfa18af351
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 8b1ae02b374960ea33a04ca8053044f59ca56d08
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140555752"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142067125"
 ---
 # Get-AzNetworkWatcherConnectionMonitorReport
 
 ## SYNOPSIS
-Membuat kueri snapshot dari status koneksi terbaru.
+Membuat kueri snapshot status koneksi terbaru.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkwatcherconnectionmonitorreport) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,11 +53,11 @@ Get-AzNetworkWatcherConnectionMonitorReport -InputObject <PSConnectionMonitorRes
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzNetworkWatcherConnectionMonitorReport akan mengembalikan laporan di status koneksi terbaru.
+Cmdlet Get-AzNetworkWatcherConnectionMonitorReport mengembalikan laporan pada status koneksi terbaru.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan snapshot koneksi terbaru dari monitor koneksi berdasarkan nama di lokasi yang ditentukan
+### Contoh 1: Dapatkan snapshot koneksi terbaru dari monitor koneksi berdasarkan nama di lokasi yang ditentukan
 ```
 PS C:\> Get-AzNetworkWatcherConnectionMonitorReport -Location centraluseuap -Name cm
 
@@ -217,12 +220,12 @@ States : [
          ]
 ```
 
-Dalam contoh ini, kami meminta status koneksi terbaru dari monitor koneksi yang ditentukan.
+Dalam contoh ini, kami membuat kueri status koneksi terbaru dari monitor koneksi yang ditentukan.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -297,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengawas jaringan.
+Sumber daya pengamat jaringan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
@@ -342,7 +345,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID Sumber Daya monitor koneksi.
+ID sumber daya monitor koneksi.
 
 ```yaml
 Type: System.String
@@ -357,7 +360,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -372,7 +375,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSConnectionMonitorQueryResult
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, connectivity, management, manager, network, networking, network watcher, connection monitor
+Kata kunci: azure, azurerm, lengan, sumber daya, konektivitas, manajemen, manajer, jaringan, jaringan, pengamat jaringan, monitor koneksi
 
 ## RELATED LINKS
 
@@ -380,7 +383,7 @@ Kata kunci: azure, azurerm, arm, resource, connectivity, management, manager, ne
 
 [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md)
 
-[Remove-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
+[Hapus-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
 
 [Get-AzNetworkWatcherNextHop](./Get-AzNetworkWatcherNextHop.md)
 
@@ -424,8 +427,8 @@ Kata kunci: azure, azurerm, arm, resource, connectivity, management, manager, ne
 
 [Set-AzNetworkWatcherConfigFlowLog](./Set-AzNetworkWatcherConfigFlowLog.md)
 
-[Get-AzNetworkWatcherReachabilityReport](./Get-AzNetworkWatcherReachabilityReport.md)
+[Get-AzNetworkWatcherReacherReportability](./Get-AzNetworkWatcherReachabilityReport.md)
 
-[Get-AzNetworkWatcherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
+[Get-AzNetworkWatcherReacherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
 
 [Get-AzNetworkWatcherFlowLogStatus](./Get-AzNetworkWatcherFlowLogStatus.md)

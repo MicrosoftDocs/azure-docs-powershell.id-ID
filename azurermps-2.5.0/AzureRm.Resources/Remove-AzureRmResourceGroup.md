@@ -4,12 +4,12 @@ Module Name: AzureRM.Resources
 ms.assetid: 880D321E-30F2-4CAE-B14A-5F6DD8E1DB99
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.resources/remove-azurermresourcegroup
 schema: 2.0.0
-ms.openlocfilehash: e092c38a89c6117165ef9e3714e6075f14fb10366adcd21e80b8be67bb26fca1
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: d2038823b769a93d290b9685acf75bbfa86532de
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417772"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141970517"
 ---
 # Remove-AzureRmResourceGroup
 
@@ -34,7 +34,7 @@ Remove-AzureRmResourceGroup [-Id] <String> [-Force] [-AsJob] [-ApiVersion <Strin
 
 ## DESCRIPTION
 Cmdlet **Remove-AzureRmResourceGroup** menghapus grup sumber daya Azure dan sumber dayanya dari langganan saat ini.
-Untuk menghapus sumber daya, tetapi meninggalkan grup sumber daya, gunakan cmdlet Remove-AzureRmResource cmdlet.
+Untuk menghapus sumber daya, tetapi meninggalkan grup sumber daya, gunakan cmdlet Remove-AzureRmResource.
 
 ## EXAMPLES
 
@@ -43,18 +43,18 @@ Untuk menghapus sumber daya, tetapi meninggalkan grup sumber daya, gunakan cmdle
 PS C:\>Remove-AzureRmResourceGroup -Name "ContosoRG01"
 ```
 
-Perintah ini akan menghapus grup sumber daya ContosoRG01 dari langganan.
-Cmdlet meminta konfirmasi Anda dan tidak mengembalikan output.
+Perintah ini menghapus grup sumber daya ContosoRG01 dari langganan.
+Cmdlet meminta Konfirmasi dan tidak mengembalikan output.
 
-### Contoh 2: Hapus grup sumber daya tanpa konfirmasi
+### Contoh 2: Menghapus grup sumber daya tanpa konfirmasi
 ```
 PS C:\>Get-AzureRmResourceGroup -Name "ContosoRG01" | Remove-AzureRmResourceGroup -Verbose -Force
 ```
 
-Perintah ini menggunakan cmdlet Get-AzureRmResourceGroup sumber daya untuk mendapatkan grup sumber daya ContosoRG01, lalu meneruskannya ke **Remove-AzureRmResourceGroup** menggunakan operator pipeline.
-Parameter *umum Verbose* mendapatkan informasi status tentang operasi, dan parameter *Paksa* menyembunyikan perintah konfirmasi.
+Perintah ini menggunakan cmdlet Get-AzureRmResourceGroup untuk mendapatkan grup sumber daya ContosoRG01, lalu meneruskannya ke **Remove-AzureRmResourceGroup** menggunakan operator pipeline.
+Parameter umum *Verbose* mendapatkan informasi status tentang operasi, dan parameter *Force* menekankan perintah konfirmasi.
 
-### Contoh 3: Hapus semua grup sumber daya
+### Contoh 3: Menghapus semua grup sumber daya
 ```
 PS C:\>Get-AzureRmResourceGroup | Remove-AzureRmResourceGroup
 ```
@@ -65,7 +65,7 @@ Perintah ini menggunakan cmdlet **Get-AzureRmResourceGroup** untuk mendapatkan s
 
 ### -ApiVersion
 Menentukan versi API yang didukung oleh Penyedia sumber daya.
-Anda bisa menentukan versi yang berbeda dari versi default.
+Anda dapat menentukan versi yang berbeda dari versi default.
 
 ```yaml
 Type: System.String
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -109,8 +109,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama grup sumber daya yang akan dihapus.
+Menentukan nama grup sumber daya untuk dihapus.
 Karakter wildcard tidak diizinkan.
 
 ```yaml
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Mengindikasikan bahwa cmdlet ini mempertimbangkan versi API prari perilisan bila secara otomatis menentukan versi mana yang akan digunakan.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -215,7 +215,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmResourceGroup](./Get-AzureRmResourceGroup.md)
 
-[New-AzureRmResourceGroup](./New-AzureRmResourceGroup.md)
+[AzureRmResourceGroup baru](./New-AzureRmResourceGroup.md)
 
 [Set-AzureRmResourceGroup](./Set-AzureRmResourceGroup.md)
 

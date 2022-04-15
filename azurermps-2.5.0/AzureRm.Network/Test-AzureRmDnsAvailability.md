@@ -4,12 +4,12 @@ Module Name: AzureRM.Network
 ms.assetid: 556A9F12-DF72-468F-9C3F-A747CC70BD2F
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/test-azurermdnsavailability
 schema: 2.0.0
-ms.openlocfilehash: 1c42f440087fbd89265bd62f61d9bb07fb7517a00bb7e393aea3c9e6b8125633
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: afde9629b6f8197d6001340ca12f5cf664afcbd7
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140863046"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141970889"
 ---
 # Test-AzureRmDnsAvailability
 
@@ -36,7 +36,7 @@ Test-AzureRmDnsAvailability -DomainNameLabel <String> -Location <String>
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
