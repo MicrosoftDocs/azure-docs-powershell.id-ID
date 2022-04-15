@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.media
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Media/Commands.Media/help/Set-AzureRmMediaServiceKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Media/Commands.Media/help/Set-AzureRmMediaServiceKey.md
-ms.openlocfilehash: 3eba3fa5757e7d9ce7c14bb1e051958943a390a264c542d792ddd86cdab451ba
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 10de62fd77fa62f83373637e844edd436dd0681f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418543"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142356035"
 ---
 # Set-AzureRmMediaServiceKey
 
@@ -28,7 +28,7 @@ Set-AzureRmMediaServiceKey [-ResourceGroupName] <String> [-AccountName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmMediaServiceKey** meregenerasi kunci yang digunakan untuk mengakses titik akhir Representational State Transfer (REST) yang terkait dengan layanan media.
+Cmdlet **Set-AzureRmMediaServiceKey meregenerasi** kunci yang digunakan untuk mengakses titik akhir Representational State Transfer (REST) yang terkait dengan layanan media.
 
 ## EXAMPLES
 
@@ -37,19 +37,19 @@ Cmdlet **Set-AzureRmMediaServiceKey** meregenerasi kunci yang digunakan untuk me
 PS C:\>Set-AzureRmMediaServiceKey -ResourceGroupName "ResourceGroup004" -AccountName "MediaService001" -KeyType Primary
 ```
 
-Perintah ini meregenerasi kunci utama untuk layanan media yang bernama MediaService001 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup004.
+Perintah ini meregenerasi kunci utama untuk layanan media bernama MediaService001 yang termasuk dalam grup sumber daya bernama ResourceGroup004.
 
 ### Contoh 2: Meregenerasi kunci sekunder yang digunakan untuk mengakses Layanan Media
 ```
 PS C:\>Set-AzureRmMediaServiceKey -ResourceGroupName "Resourcegroup123" -AccountName "MediaService002" -KeyType Secondary
 ```
 
-Perintah ini meregenerasi kunci sekunder untuk layanan media bernama MediaService002 yang dimiliki oleh grup sumber daya yang bernama Resourcegroup123.
+Perintah ini meregenerasi kunci sekunder untuk layanan media bernama MediaService002 yang termasuk dalam grup sumber daya bernama Resourcegroup123.
 
 ## PARAMETERS
 
-### -Nama Akun
-Menentukan nama layanan media yang digenerasi cmdlet ini.
+### -AccountName
+Menentukan nama layanan media yang diregenerasi cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

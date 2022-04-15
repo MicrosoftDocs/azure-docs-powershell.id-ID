@@ -5,11 +5,11 @@ ms.assetid: 6250EC11-79CF-428B-A72F-9BD72C1751F0
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/get-azurermvm
 schema: 2.0.0
 ms.openlocfilehash: 832a7c81c9c7e8ffa5a5a6123162746d039ca71d
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428291"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142363202"
 ---
 # Get-AzureRmVM
 
@@ -43,28 +43,28 @@ Get-AzureRmVM [-Status] [-NextLink] <Uri> [-DefaultProfile <IAzureContextContain
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmVM** mendapatkan tampilan model dan tampilan contoh mesin virtual Azure.
-Tampilan model adalah properti komputer virtual yang ditentukan pengguna.
-Tampilan contoh adalah status tingkat contoh mesin virtual.
-Tentukan parameter *Status* untuk mendapatkan hanya tampilan contoh mesin virtual.
+Cmdlet **Get-AzureRmVM** mendapatkan tampilan model dan tampilan instans mesin virtual Azure.
+Tampilan model adalah properti mesin virtual yang ditentukan pengguna.
+Tampilan instans adalah status tingkat instans mesin virtual.
+Tentukan parameter *Status* untuk mendapatkan hanya tampilan instans mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan properti tampilan model dan contoh
+### Contoh 1: Dapatkan properti tampilan model dan instans
 ```
 PS C:\> Get-AzureRmVM -ResourceGroupName "ResourceGroup11" -Name "VirtualMachine07"
 ```
 
-Perintah ini mendapatkan tampilan model dan properti tampilan contoh dari mesin virtual bernama VirtualMachine07.
+Perintah ini mendapatkan properti tampilan model dan tampilan instans mesin virtual bernama VirtualMachine07.
 
-### Contoh 2: Mendapatkan properti tampilan contoh
+### Contoh 2: Dapatkan properti tampilan instans
 ```
 PS C:\> Get-AzureRmVM -ResourceGroupName "ResourceGroup11" -Name "VirtualMachine07" -Status
 ```
 
-Perintah ini mendapatkan properti dari mesin virtual bernama VirtualMachine07.
-Perintah ini menentukan *parameter Status.*
-Oleh karena itu, perintah hanya mendapatkan properti tampilan contoh.
+Perintah ini mendapatkan properti mesin virtual bernama VirtualMachine07.
+Perintah ini menentukan parameter *Status* .
+Oleh karena itu, perintah hanya mendapatkan properti tampilan instans.
 
 ### Contoh 3: Dapatkan properti untuk semua mesin virtual dalam grup sumber daya
 ```
@@ -73,17 +73,17 @@ PS C:\> Get-AzureRmVM -ResourceGroupName "ResourceGroup11"
 
 Perintah ini mendapatkan properti untuk semua mesin virtual dalam grup sumber daya bernama ResourceGroup11.
 
-### Contoh 4: Mendapatkan semua mesin virtual dalam langganan Anda
+### Contoh 4: Dapatkan semua mesin virtual dalam langganan Anda
 ```
 PS C:\> Get-AzureRmVM
 ```
 
-Perintah ini akan mendapatkan semua mesin virtual dalam langganan Anda.
+Perintah ini mendapatkan semua mesin virtual dalam langganan Anda.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -98,13 +98,13 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayHint
-Menentukan cara objek mesin virtual ditampilkan.
+Menentukan bagaimana objek mesin virtual ditampilkan.
 
-Nilai valid adalah:
+Nilai yang valid adalah:
 
 -- Ringkas: hanya menampilkan properti tingkat atas
 
--- Perluas: menampilkan semua properti dalam semua tingkat
+-- Perluas: menampilkan semua properti di semua tingkatan
 ```yaml
 Type: DisplayHintType
 Parameter Sets: GetVirtualMachineInResourceGroupParamSet
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama mesin virtual yang akan dapatkan.
+Menentukan nama mesin virtual yang akan didapatkan.
 
 ```yaml
 Type: String
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Mengindikasikan bahwa cmdlet ini hanya mendapatkan tampilan contoh mesin virtual.
+Menunjukkan bahwa cmdlet ini hanya mendapatkan tampilan instans mesin virtual.
 
 ```yaml
 Type: SwitchParameter
@@ -179,11 +179,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
@@ -196,9 +196,9 @@ Cmdlet ini tidak menerima input apa pun.
 
 ## RELATED LINKS
 
-[New-AzureRmVM](./New-AzureRmVM.md)
+[AzureRmVM Baru](./New-AzureRmVM.md)
 
-[Remove-AzureRmVM](./Remove-AzureRmVM.md)
+[Hapus-AzureRmVM](./Remove-AzureRmVM.md)
 
 [Mulai ulang-AzureRmVM](./Restart-AzureRmVM.md)
 
@@ -206,6 +206,6 @@ Cmdlet ini tidak menerima input apa pun.
 
 [Stop-AzureRmVM](./Stop-AzureRmVM.md)
 
-[Update-AzureRmVM](./Update-AzureRmVM.md)
+[Perbarui-AzureRmVM](./Update-AzureRmVM.md)
 
 

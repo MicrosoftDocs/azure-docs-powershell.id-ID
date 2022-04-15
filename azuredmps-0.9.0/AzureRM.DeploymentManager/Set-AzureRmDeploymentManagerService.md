@@ -4,11 +4,11 @@ Module Name: AzureRM.DeploymentManager
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.deploymentmanager/set-azurermdeploymentmanagerservice
 schema: 2.0.0
 ms.openlocfilehash: 2f4cab266cf63e1c33c35c051e9cc2b838f5b066
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428747"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142363337"
 ---
 # Set-AzureRmDeploymentManagerService
 
@@ -23,7 +23,7 @@ Set-AzureRmDeploymentManagerService [-Service] <PSServiceResource> [-DefaultProf
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmDeploymentManagerService** memperbarui layanan dengan objek layanan tertentu.
+Cmdlet **Set-AzureRmDeploymentManagerService** memperbarui layanan dengan objek layanan yang ditentukan.
 Cmdlet mengembalikan objek layanan yang diperbarui.
 
 ## EXAMPLES
@@ -33,8 +33,8 @@ Cmdlet mengembalikan objek layanan yang diperbarui.
 PS C:\> Set-AzureRmDeploymentManagerService -Service $serviceObject
 ```
 
-Perintah ini memperbarui layanan dengan nama, nama topologi layanan, dan ResourceGroup sesuai dengan nama, properti ServiceTopologyName dan ResourceGroupName $serviceObject, secara berurutan.
-Layanan akan diperbarui menjadi properti yang diatur dalam $serviceObject.
+Perintah ini memperbarui layanan dengan nama, nama topologi layanan, dan ResourceGroup yang masing-masing cocok dengan properti Name, ServiceTopologyName dan ResourceGroupName $serviceObject.
+Layanan akan diperbarui ke properti yang diatur dalam $serviceObject.
 
 ## PARAMETERS
 
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -117,4 +117,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmDeploymentManagerService](./Set-AzureRmDeploymentManagerService.md)
 
-[Remove-AzureRmDeploymentManagerService](./Remove-AzureRmDeploymentManagerService.md)
+[Hapus-AzureRmDeploymentManagerService](./Remove-AzureRmDeploymentManagerService.md)
