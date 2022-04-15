@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorLoadBalancingSettingObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorLoadBalancingSettingObject.md
-ms.openlocfilehash: 39031d1e1dfdf1763be27686670319682b282514
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0babdeda214b1c2f88cd5f2ea941cd5d3f3c263a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140402706"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142374227"
 ---
 # New-AzFrontDoorLoadBalancingSettingObject
 
 ## SYNOPSIS
-Membuat objek PSLoadBalancingSetting untuk pembuatan Pintu Depan
+Membuat PSLoadBalancingMenyiapkan objek untuk pembuatan Pintu Depan
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorloadbalancingsettingobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzFrontDoorLoadBalancingSettingObject -Name <String> [-SampleSize <Int32>]
 ```
 
 ## DESCRIPTION
-Membuat objek PSLoadBalancingSetting untuk pembuatan Pintu Depan
+Membuat PSLoadBalancingMenyiapkan objek untuk pembuatan Pintu Depan
 
 ## EXAMPLES
 
@@ -44,12 +47,12 @@ Name                          : loadbalancingsetting1
 Type                          :
 ```
 
-Membuat objek PSLoadBalancingSetting untuk pembuatan Pintu Depan
+Membuat PSLoadBalancingMenyiapkan objek untuk pembuatan Pintu Depan
 
 ## PARAMETERS
 
 ### -AdditionalLatencyInMilliseconds
-Latensi tambahan dalam milidetik agar belanda masuk ke dalam wadah latensi terendah. Nilai default adalah 0
+Latensi tambahan dalam milidetik untuk probe jatuh ke dalam ember latensi terendah. Nilai defaultnya adalah 0
 
 ```yaml
 Type: System.Int32
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-health health setting name.
+nama pengaturan pemeriksaan kesehatan.
 
 ```yaml
 Type: System.String
@@ -94,8 +97,8 @@ Accept wildcard characters: False
 ```
 
 ### -SampleSize
-Jumlah sampel yang dipertimbangkan untuk memuat keputusan keseimbangan.
-Nilai default adalah 4
+Jumlah sampel yang perlu dipertimbangkan untuk keputusan penyeimbangan beban.
+Nilai defaultnya adalah 4
 
 ```yaml
 Type: System.Int32
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -SuccessfulSamplesRequired
-Jumlah sampel dalam periode sampel yang harus berhasil nilai Default adalah 2
+Jumlah sampel dalam periode sampel yang harus berhasil Nilai default adalah 2
 
 ```yaml
 Type: System.Int32
@@ -125,11 +128,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

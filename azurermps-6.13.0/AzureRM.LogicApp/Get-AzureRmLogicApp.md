@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/LogicApp/Commands.LogicApp/help/Get-AzureRmLogicApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/LogicApp/Commands.LogicApp/help/Get-AzureRmLogicApp.md
 ms.openlocfilehash: 740ef9b21a2e2caa839880ff2c5e9dadc042351a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423656"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142386799"
 ---
 # Get-AzureRmLogicApp
 
@@ -29,11 +29,11 @@ Get-AzureRmLogicApp -ResourceGroupName <String> -Name <String> [-Version <String
 
 ## DESCRIPTION
 Cmdlet **Get-AzureRmLogicApp** mendapatkan aplikasi logika.
-Cmdlet ini mengembalikan objek **Alur** Kerja.
+Cmdlet ini mengembalikan objek **Alur Kerja** .
 Modul ini mendukung parameter dinamis.
 Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
-Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilai tersebut.
+Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
 ## EXAMPLES
 
@@ -66,7 +66,7 @@ Perintah ini mendapatkan aplikasi logika dari grup sumber daya bernama ResourceG
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama aplikasi logika yang akan dapatkan cmdlet ini.
+Menentukan nama aplikasi logika yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -142,9 +142,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmLogicApp](./New-AzureRmLogicApp.md)
+[AzureRmLogicApp baru](./New-AzureRmLogicApp.md)
 
-[Remove-AzureRmLogicApp](./Remove-AzureRmLogicApp.md)
+[Hapus-AzureRmLogicApp](./Remove-AzureRmLogicApp.md)
 
 [Set-AzureRmLogicApp](./Set-AzureRmLogicApp.md)
 

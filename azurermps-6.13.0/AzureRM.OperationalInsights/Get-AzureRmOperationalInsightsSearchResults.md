@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/OperationalInsights/Commands.OperationalInsights/help/Get-AzureRmOperationalInsightsSearchResults.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/OperationalInsights/Commands.OperationalInsights/help/Get-AzureRmOperationalInsightsSearchResults.md
 ms.openlocfilehash: 547988d2079f35b82af3638e3e4f09b101d8fbe4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132413738"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142384765"
 ---
 # Get-AzureRmOperationalInsightsSearchResults
 
@@ -42,14 +42,14 @@ Anda dapat mengambil hasil pencarian dari properti Nilai dari objek yang dikemba
 PS C:\>Get-AzureRmOperationalInsightsSearchResults -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "ContosoWorkspace" -Query "Type=Event" -Top 100
 ```
 
-Perintah ini mendapatkan semua hasil pencarian menggunakan kueri.
+Perintah ini mendapatkan semua hasil pencarian dengan menggunakan kueri.
 
-### Contoh 2: Dapatkan hasil pencarian menggunakan ID
+### Contoh 2: Mendapatkan hasil pencarian menggunakan ID
 ```
 PS C:\>Get-AzureRmOperationalInsightsSearchResults -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "ContosoWorkspace" -Id "ContosoSearchId"
 ```
 
-Perintah ini mendapatkan hasil pencarian menggunakan ID.
+Perintah ini mendapatkan hasil pencarian dengan menggunakan ID.
 
 ### Contoh 3: Tunggu hingga pencarian selesai sebelum menampilkan hasil
 ```
@@ -83,12 +83,12 @@ Write-Host "Returned " $response.Value.Count " documents"
 Write-Host $error
 ```
 
-Skrip ini memulai pencarian dan menunggu hingga selesai sebelum menampilkan hasil.
+Skrip ini memulai pencarian dan menunggu hingga selesai sebelum menampilkan hasilnya.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -End
-Akhir rentang waktu kueri.
+Akhir rentang waktu yang dikueri.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Jika id diberikan, hasil pencarian untuk id itu akan diambil menggunakan parameter kueri asli.
+Jika id diberikan, hasil pencarian untuk id tersebut akan diambil menggunakan parameter kueri asli.
 
 ```yaml
 Type: System.String
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -Query
-The search query that will be executed.
+Kueri pencarian yang akan dijalankan.
 
 ```yaml
 Type: System.String
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -Mulai
-Mulai rentang waktu kueri.
+Mulai rentang waktu yang dikueri.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-Jumlah maksimum hasil yang dikembalikan, terbatas hingga 5000.
+Jumlah hasil maksimum yang akan dikembalikan, terbatas hingga 5000.
 
 ```yaml
 Type: System.Int64
@@ -218,7 +218,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Menentukan nama ruang kerja.
 
 ```yaml
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -242,7 +242,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Int64
 
-### System.Nullable'1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 

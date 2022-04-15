@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Insights/Commands.Insights/help/Get-AzureRmActivityLogAlert.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Insights/Commands.Insights/help/Get-AzureRmActivityLogAlert.md
 ms.openlocfilehash: 875b261068f1431b33c99a407f5ac9dcb2f7e344
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425887"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142387338"
 ---
 # Get-AzureRmActivityLogAlert
 
 ## SYNOPSIS
-Mendapatkan satu atau beberapa sumber daya pemberitahuan log aktivitas.
+Mendapatkan satu atau beberapa sumber daya peringatan log aktivitas.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -35,35 +35,35 @@ Get-AzureRmActivityLogAlert [[-ResourceGroupName] <String>] [-DefaultProfile <IA
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmActivityLogAlert** mendapatkan satu atau beberapa sumber daya pemberitahuan log aktivitas.
+Cmdlet **Get-AzureRmActivityLogAlert** mendapatkan satu atau beberapa sumber daya peringatan log aktivitas.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pemberitahuan log aktivitas berdasarkan ID langganan
+### Contoh 1: Dapatkan pemberitahuan log aktivitas menurut ID langganan
 ```
 PS C:\>Get-AzureRmActivityLogAlert
 ```
 
 Perintah ini mencantumkan semua pemberitahuan log aktivitas untuk langganan saat ini.
 
-### Contoh 2: Dapatkan pemberitahuan log aktivitas untuk grup sumber daya yang diberikan
+### Contoh 2: Dapatkan pemberitahuan log aktivitas untuk grup sumber daya tertentu
 ```
 PS C:\>Get-AzureRmActivityLogAlert -ResourceGroupName "Default-activityLogAlerts"
 ```
 
-Perintah ini mencantumkan pemberitahuan log aktivitas untuk grup sumber daya yang diberikan.
+Perintah ini mencantumkan pemberitahuan log aktivitas untuk grup sumber daya tertentu.
 
 ### Contoh 3: Dapatkan pemberitahuan log aktivitas.
 ```
 PS C:\>Get-AzureRmActivityLogAlert -ResourceGroupName "Default-activityLogAlerts" -Name "alert1"
 ```
 
-Perintah ini mencantumkan satu (daftar dengan elemen tunggal) pemberitahuan log aktivitas.
+Perintah ini mencantumkan satu (daftar dengan satu elemen) pemberitahuan log aktivitas.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -93,8 +93,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya di mana sumber daya pemberitahuan ada.
-Jika Nama bukan nol atau kosong, parameter ini harus berisi dan string bukan kosong.
+Nama grup sumber daya tempat sumber daya peringatan ada.
+Jika Nama bukan nol atau kosong, parameter ini harus berisi dan string yang tidak kosong.
 
 ```yaml
 Type: System.String
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -137,6 +137,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzureRmActivityLogAlert](./Set-AzureRmActivityLogAlert.md)
 
-[Remove-AzureRmActivityLogAlert](./Remove-AzureRmActivityLogAlert.md)
+[Hapus-AzureRmActivityLogAlert](./Remove-AzureRmActivityLogAlert.md)
 
-[New-AzureRmActionGroup](./New-AzureRmActionGroup.md)
+[AzureRmActionGroup baru](./New-AzureRmActionGroup.md)

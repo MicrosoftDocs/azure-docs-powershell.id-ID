@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DevTestLabs/Commands.DevTestLabs/help/Get-AzureRmDtlAllowedVMSizesPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DevTestLabs/Commands.DevTestLabs/help/Get-AzureRmDtlAllowedVMSizesPolicy.md
 ms.openlocfilehash: db82ca43114a35921652424289fcc53f7761ab8d
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426641"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142388166"
 ---
 # Get-AzureRmDtlAllowedVMSizesPolicy
 
 ## SYNOPSIS
-Dapatkan kebijakan ukuran mesin virtual yang diperbolehkan dari sebuah lab di DevTest Labs.
+Dapatkan kebijakan ukuran mesin virtual yang diperbolehkan dari laboratorium di DevTest Labs.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ Get-AzureRmDtlAllowedVMSizesPolicy [-LabName] <String> [-ResourceGroupName] <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmDtlAllowedVMSizesPolicy** mendapatkan kebijakan ukuran mesin virtual yang diperbolehkan, yang memungkinkan Anda menentukan daftar ukuran mesin virtual yang diperbolehkan di lab.
+Cmdlet **Get-AzureRmDtlAllowedVMSizesPolicy** mendapatkan kebijakan ukuran mesin virtual yang diperbolehkan, yang memungkinkan Anda menentukan daftar ukuran mesin virtual yang diperbolehkan di laboratorium.
 Cmdlet mengembalikan status kebijakan yang diaktifkan atau dinonaktifkan dan daftar semua ukuran mesin virtual yang diperbolehkan yang telah Anda tetapkan dalam kebijakan yang ditentukan.
 
 ## EXAMPLES
@@ -36,7 +36,7 @@ Cmdlet mengembalikan status kebijakan yang diaktifkan atau dinonaktifkan dan daf
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -51,7 +51,7 @@ Accept wildcard characters: False
 ```
 
 ### -LabName
-Menentukan nama lab tempat cmdlet ini mendapatkan kebijakan ukuran mesin virtual.
+Menentukan nama lab di mana cmdlet ini mendapatkan kebijakan ukuran mesin virtual.
 
 ```yaml
 Type: System.String
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat lab dimiliki.
+Menentukan nama grup sumber daya tempat lab berada.
 
 ```yaml
 Type: System.String
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -97,6 +97,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzureRmDtlAllowedVMSizesPolicy](./Set-AzureRmDtlAllowedVMSizesPolicy.md)
 
-[Cmdlet Lab Pengujian Pengembangan Azure](./AzureRM.DevTestLabs.md)
+[Cmdlet Azure Development Test Lab](./AzureRM.DevTestLabs.md)
 
 

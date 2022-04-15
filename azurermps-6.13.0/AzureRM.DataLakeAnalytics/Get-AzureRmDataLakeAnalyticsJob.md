@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeAnalytics/Commands.DataLakeAnalytics/help/Get-AzureRmDataLakeAnalyticsJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeAnalytics/Commands.DataLakeAnalytics/help/Get-AzureRmDataLakeAnalyticsJob.md
 ms.openlocfilehash: 59ec07b253b30d9cc7f03153706afba20331022c
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132414981"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142388300"
 ---
 # Get-AzureRmDataLakeAnalyticsJob
 
 ## SYNOPSIS
-Mendapatkan pekerjaan Analitik Danau Data.
+Mendapatkan pekerjaan Data Lake Analytics.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -37,19 +37,19 @@ Get-AzureRmDataLakeAnalyticsJob [-Account] <String> [-JobId] <Guid> [[-Include] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmDataLakeAnalyticsJob** mendapatkan pekerjaan Azure Data Lake Analytics.
+Cmdlet **Get-AzureRmDataLakeAnalyticsJob** mendapatkan pekerjaan Data Lake Analytics Azure.
 Jika Anda tidak menentukan pekerjaan, cmdlet ini mendapatkan semua pekerjaan.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan pekerjaan tertentu
+### Contoh 1: Dapatkan pekerjaan yang ditentukan
 ```
 PS C:\>Get-AzureRmDataLakeAnalyticsJob -Account "contosoadla" -JobId $JobID01
 ```
 
-Perintah ini akan mendapatkan pekerjaan dengan ID yang ditentukan.
+Perintah ini mendapatkan pekerjaan dengan ID yang ditentukan.
 
-### Contoh 2: Mendapatkan pekerjaan yang dikirimkan dalam minggu lalu
+### Contoh 2: Mendapatkan pekerjaan yang dikirim dalam seminggu terakhir
 ```
 PS C:\>Get-AzureRmDataLakeAnalyticsJob -Account "contosoadla" -SubmittedAfter (Get-Date).AddDays(-7)
 ```
@@ -59,7 +59,7 @@ Perintah ini mendapatkan pekerjaan yang dikirimkan dalam seminggu terakhir.
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Analitik Danau Data.
+Menentukan nama akun Data Lake Analytics.
 
 ```yaml
 Type: System.String
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -89,9 +89,9 @@ Accept wildcard characters: False
 ```
 
 ### -Sertakan
-Menentukan opsi yang menunjukkan tipe informasi tambahan untuk diambil tentang pekerjaan itu.
+Menentukan opsi yang menunjukkan tipe informasi tambahan untuk mengambil pekerjaan.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Tidak ada
+- Tidak
 - DebugInfo
 - Statistik
 - Semua
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobId
-Menentukan ID pekerjaan untuk mendapatkan.
+Menentukan ID pekerjaan yang akan didapatkan.
 
 ```yaml
 Type: System.Guid
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ### -Nama
 Menentukan nama yang akan digunakan untuk memfilter hasil daftar pekerjaan.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Tidak ada
+- Tidak
 - DebugInfo
 - Statistik
 - Semua
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -PipelineId
-ID opsional yang menunjukkan hanya pekerjaan, bagian dari pipeline yang ditentukan yang akan dikembalikan.
+ID opsional yang menunjukkan hanya sebagian pekerjaan dari pipeline yang ditentukan yang harus dikembalikan.
 
 ```yaml
 Type: System.Nullable`1[System.Guid]
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecurrenceId
-ID opsional yang menunjukkan hanya pekerjaan, bagian dari pengulangan yang ditentukan harus dikembalikan.
+ID opsional yang menunjukkan hanya sebagian pekerjaan dari pengulangan yang ditentukan yang harus dikembalikan.
 
 ```yaml
 Type: System.Nullable`1[System.Guid]
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ### -Hasil
 Menentukan filter hasil untuk hasil pekerjaan.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Tidak ada
+- Tidak
 - Dibatalkan
 - Gagal
 - Berhasil
@@ -200,13 +200,13 @@ Menentukan filter status untuk hasil pekerjaan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Diterima
 - Baru
-- Mengumpulkan
+- Kompilasi
 - Penjadwalan
-- Diantrekan
-- Memulai
-- Dijeda
-- Berjalan
-- Diakhiri
+- Antri
+- Mulai
+- Berhenti
+- Menjalankan
+- Berakhir
 
 ```yaml
 Type: Microsoft.Azure.Management.DataLake.Analytics.Models.JobState[]
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 
 ### -SubmittedAfter
 Menentukan filter tanggal.
-Use this parameter to filter the job list result to jobs submitted after the specified date.
+Gunakan parameter ini untuk memfilter hasil daftar pekerjaan ke pekerjaan yang dikirim setelah tanggal yang ditentukan.
 
 ```yaml
 Type: System.Nullable`1[System.DateTimeOffset]
@@ -237,9 +237,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -SubmittedBefore
+### -DikirimBefore
 Menentukan filter tanggal.
-Gunakan parameter ini untuk memfilter hasil daftar pekerjaan untuk pekerjaan yang dikirimkan sebelum tanggal yang ditentukan.
+Gunakan parameter ini untuk memfilter hasil daftar pekerjaan ke pekerjaan yang dikirimkan sebelum tanggal yang ditentukan.
 
 ```yaml
 Type: System.Nullable`1[System.DateTimeOffset]
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 
 ### -Submitter
 Menentukan alamat email pengguna.
-Gunakan parameter ini untuk memfilter hasil daftar pekerjaan untuk pekerjaan yang dikirimkan oleh pengguna tertentu.
+Gunakan parameter ini untuk memfilter hasil daftar pekerjaan ke pekerjaan yang dikirimkan oleh pengguna tertentu.
 
 ```yaml
 Type: System.String
@@ -270,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-Nilai opsional yang menunjukkan jumlah pekerjaan untuk dikembalikan. Nilai default adalah 500
+Nilai opsional yang menunjukkan jumlah pekerjaan yang akan dikembalikan. Nilai defaultnya adalah 500
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -285,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -295,15 +295,15 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataLakeAnalytics.Models.DataLakeAnalyticsEnums+ExtendedJobData
 
-### System.Nullable'1[[System.DateTimeOffset, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.DateTimeOffset, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ### Microsoft.Azure.Management.DataLake.Analytics.Models.JobState[]
 
 ### Microsoft.Azure.Management.DataLake.Analytics.Models.JobResult[]
 
-### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
-### System.Nullable'1[[System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Guid, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 
@@ -315,8 +315,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Stop-AzureRmDataLakeAnalyticsJob](./Stop-AzureRmDataLakeAnalyticsJob.md)
 
-[Submit-AzureRmDataLakeAnalyticsJob](./Submit-AzureRmDataLakeAnalyticsJob.md)
+[Kirim-AzureRmDataLakeAnalyticsJob](./Submit-AzureRmDataLakeAnalyticsJob.md)
 
-[Wait-AzureRmDataLakeAnalyticsJob](./Wait-AzureRmDataLakeAnalyticsJob.md)
+[Tunggu-AzureRmDataLakeAnalyticsJob](./Wait-AzureRmDataLakeAnalyticsJob.md)
 
 

@@ -5,16 +5,16 @@ ms.assetid: BDF42420-3616-4A64-9562-1A896F828728
 online version: https://docs.microsoft.com/en-us/powershell/module/azure.storage/new-azurestoragesharesastoken
 schema: 2.0.0
 ms.openlocfilehash: dbfee49f6e6fcd083350a5ab818ac33309e4b672
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421553"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142394272"
 ---
 # New-AzureStorageShareSASToken
 
 ## SYNOPSIS
-Buat token Tanda Tangan Akses Bersama Azure Storage bagikan.
+Menghasilkan token Tanda Tangan Akses Bersama untuk berbagi Azure Storage.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -35,37 +35,37 @@ New-AzureStorageShareSASToken [-ShareName] <String> [-Permission <String>] [-Pro
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureStorageShareSASToken** menghasilkan token tanda tangan akses bersama untuk suatu Azure Storage bersama.
+Cmdlet **New-AzureStorageShareSASToken** menghasilkan token tanda tangan akses bersama untuk berbagi Azure Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Buat token tanda tangan akses bersama untuk berbagi
+### Contoh 1: Membuat token tanda tangan akses bersama untuk berbagi
 ```
 PS C:\>New-AzureStorageShareSASToken -ShareName "ContosoShare" -Permission "rwdl"
 ```
 
-Perintah ini akan membuat token tanda tangan akses bersama untuk berbagi bernama ContosoShare.
+Perintah ini membuat token tanda tangan akses bersama untuk berbagi bernama ContosoShare.
 
-### Contoh 2: Menghasilkan beberapa token tanda tangan akses bersama menggunakan saluran
+### Contoh 2: Menghasilkan beberapa token tanda tangan akses bersama menggunakan pipeline
 ```
 PS C:\>Get-AzureStorageShare -Prefix "test" | New-AzureStorageShareSASToken -Permission "rwdl"
 ```
 
-Perintah ini akan mendapatkan semua Storage yang cocok dengan uji prefiks.
-Perintah itu meneruskannya ke cmdlet saat ini dengan menggunakan operator pipeline.
-Cmdlet saat ini membuat token akses bersama untuk setiap Storage bersama yang memiliki izin yang ditentukan.
+Perintah ini mendapatkan semua Storage berbagi yang cocok dengan uji prefiks.
+Perintah meneruskannya ke cmdlet saat ini menggunakan operator pipeline.
+Cmdlet saat ini membuat token akses bersama untuk setiap Storage berbagi yang memiliki izin yang ditentukan.
 
-### Contoh 3: Buat token tanda tangan akses bersama yang menggunakan kebijakan akses bersama
+### Contoh 3: Membuat token tanda tangan akses bersama yang menggunakan kebijakan akses bersama
 ```
 PS C:\>New-AzureStorageShareSASToken -ShareName "ContosoShare" -Policy "ContosoPolicy03"
 ```
 
-Perintah ini akan membuat token tanda tangan akses bersama untuk Storage bersama bernama ContosoShare yang memiliki kebijakan bernama ContosoPolicy03.
+Perintah ini membuat token tanda tangan akses bersama untuk Storage berbagi bernama ContosoShare yang memiliki kebijakan bernama ContosoPolicy03.
 
 ## PARAMETERS
 
 ### -Konteks
-Menentukan Azure Storage konteks.
+Menentukan konteks Azure Storage.
 Untuk mendapatkan konteks, gunakan cmdlet New-AzureStorageContext.
 
 ```yaml
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpiryTime
-Menentukan waktu di mana tanda tangan akses bersama menjadi tidak valid.
+Menentukan waktu ketika tanda tangan akses bersama menjadi tidak valid.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -FullUri
-Mengindikasikan bahwa cmdlet ini mengembalikan URI blob penuh dan token tanda tangan akses bersama.
+Menunjukkan bahwa cmdlet ini mengembalikan URI blob penuh dan token tanda tangan akses bersama.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -126,8 +126,8 @@ Accept wildcard characters: False
 ```
 
 ### -IPAddressOrRange
-Menentukan alamat IP atau rentang alamat IP untuk menerima permintaan, seperti 168.1.5.65 atau 168.1.5.60-168.1.5.70.
-Rentang bersifat inklusif.
+Menentukan alamat IP atau rentang alamat IP yang menerima permintaan, seperti 168.1.5.65 atau 168.1.5.60-168.1.5.70.
+Rentangnya inklusif.
 
 ```yaml
 Type: System.String
@@ -141,9 +141,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Permission
-Menentukan izin di token untuk mengakses berbagi dan file di bawah berbagi.
-Penting untuk diingat bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis dan Hapus).
+### -Izin
+Menentukan izin dalam token untuk mengakses berbagi dan file di bawah berbagi.
+Penting untuk diperhatikan bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis, dan Hapus).
 
 ```yaml
 Type: System.String
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Menentukan kebijakan akses yang disimpan untuk sebuah berbagi.
+Menentukan kebijakan akses yang disimpan untuk berbagi.
 
 ```yaml
 Type: System.String
@@ -172,11 +172,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
+### -Protokol
 Menentukan protokol yang diizinkan untuk permintaan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 * HttpsOnly
-* HttpsOrHttp Nilai default adalah HttpsOrHttp.
+* HttpsOrHttp The default value is HttpsOrHttp.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.WindowsAzure.Storage.SharedAccessProtocol]
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShareName
-Menentukan nama dokumen Storage bersama.
+Menentukan nama berbagi Storage.
 
 ```yaml
 Type: System.String
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Menentukan waktu validnya tanda tangan akses bersama.
+Menentukan waktu ketika tanda tangan akses bersama menjadi valid.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -241,4 +241,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureStorageShare](./Get-AzureStorageShare.md)
 
-[New-AzureStorageFileSASToken](./New-AzureStorageFileSASToken.md)
+[AzureStorageFileSASToken Baru](./New-AzureStorageFileSASToken.md)

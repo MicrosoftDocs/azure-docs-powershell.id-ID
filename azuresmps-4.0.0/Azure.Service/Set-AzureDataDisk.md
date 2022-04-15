@@ -4,16 +4,16 @@ ms.assetid: 64EF867E-5142-4317-9552-8BC94117208D
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: b1f56f7064cec1e3cf8005134cc16453524c2097
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427450"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142381790"
 ---
 # Set-AzureDataDisk
 
 ## SYNOPSIS
-Memodifikasi host cache disk data yang sudah ada di komputer virtual Azure.
+Mengubah cache host disk data yang sudah ada di mesin virtual Azure.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,7 +25,7 @@ Set-AzureDataDisk [-HostCaching] <String> [-LUN] <Int32> -VM <IPersistentVM> [-P
  [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
 ```
 
-### Ubah ukuran
+### Mengubah ukuran
 ```
 Set-AzureDataDisk [-DiskName] <String> [-ResizedSizeInGB] <Int32> -VM <IPersistentVM>
  [-Profile <AzureSMProfile>] [-InformationAction <ActionPreference>] [-InformationVariable <String>]
@@ -33,35 +33,35 @@ Set-AzureDataDisk [-DiskName] <String> [-ResizedSizeInGB] <Int32> -VM <IPersiste
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureDataDisk** memodifikasi atribut cache dari disk data yang sudah ada di komputer virtual Azure.
-Tentukan disk data mana yang diperbarui dengan nomor unit logikanya (LUN).
+Cmdlet **Set-AzureDataDisk** mengubah atribut cache disk data yang sudah ada di mesin virtual Azure.
+Tentukan disk data mana yang akan diperbarui oleh nomor unit logikanya (LUN).
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah host cache untuk disk data
+### Contoh 1: Mengubah cache host untuk disk data
 ```
 PS C:\> Get-AzureVM "ContosoService" | Set-AzureDataDisk -VM "VirtualMachine07" -LUN 2 -HostCaching ReadOnly | Update-AzureVM
 ```
 
-Perintah ini mendapatkan mesin virtual yang dijalankan pada layanan bernama ContosoService menggunakan cmdlet **Get-AzureVM.**
-Perintah itu meneruskannya ke cmdlet saat ini dengan menggunakan operator pipeline.
-Cmdlet tersebut mengatur disk data di LUN 2 dari mesin virtual yang bernama VirtualMachine07 untuk menggunakan cache host ReadOnly.
-Perintah memperbarui mesin virtual agar mencerminkan perubahan Anda menggunakan cmdlet **Update-AzureVM.**
+Perintah ini mendapatkan mesin virtual yang berjalan pada layanan bernama ContosoService menggunakan cmdlet **Get-AzureVM** .
+Perintah meneruskannya ke cmdlet saat ini menggunakan operator pipeline.
+Cmdlet tersebut mengatur disk data di LUN 2 mesin virtual bernama VirtualMachine07 untuk menggunakan cache host ReadOnly.
+Perintah memperbarui mesin virtual untuk mencerminkan perubahan Anda menggunakan cmdlet **Update-AzureVM** .
 
-### Contoh 2: Modifikasi host cache untuk semua disk data pada komputer virtual
+### Contoh 2: Modifikasi cache host untuk semua disk data di mesin virtual
 ```
 PS C:\> Get-AzureVM "ContosoService" -Name "VirtualMachine07" | Get-AzureDataDisk | Set-AzureDataDisk -HostCaching ReadWrite | Update-AzureVM
 ```
 
-Perintah ini mendapatkan objek untuk mesin virtual bernama VirtualMachine07 di layanan awan ContosoService.
-Perintah itu meneruskannya ke cmdlet **Get-AzureDataDisk,** yang mendapatkan disk data untuk komputer virtual tersebut.
-Cmdlet saat ini lalu mengatur mode cache host dari setiap disk data ke ReadWrite.
+Perintah ini mendapatkan objek untuk mesin virtual bernama VirtualMachine07 pada layanan cloud ContosoService.
+Perintah mengirimkannya ke cmdlet **Get-AzureDataDisk** , yang mendapatkan disk data untuk mesin virtual tersebut.
+Cmdlet saat ini kemudian mengatur mode cache host dari setiap disk data ke ReadWrite.
 Perintah memperbarui mesin virtual untuk mencerminkan perubahan Anda.
 
 ## PARAMETERS
 
 ### -DiskName
-Menentukan nama konfigurasi disk data yang dimodifikasi cmdlet ini.
+Menentukan nama konfigurasi disk data yang diubah cmdlet ini.
 
 ```yaml
 Type: String
@@ -78,14 +78,14 @@ Accept wildcard characters: False
 ### -HostCaching
 
 > [!WARNING]
-> Disk Caching tidak didukung untuk disk 4 TiB dan lebih besar. Jika beberapa disk terpasang pada VM, setiap disk yang lebih kecil dari 4 TiB akan mendukung caching.
+> Cache Disk tidak didukung untuk disk 4 TiB dan lebih besar. Jika beberapa disk dilampirkan ke VM Anda, setiap disk yang lebih kecil dari 4 TiB akan mendukung cache.
 >
-> Mengubah pengaturan cache disk Azure akan melepaskan dan melampirkan kembali disk target. Jika vm adalah disk sistem operasi, VM akan dimulai ulang. Hentikan semua aplikasi/layanan yang mungkin terpengaruh oleh gangguan ini sebelum mengubah pengaturan singgahan disk. Tidak mengikuti rekomendasi tersebut dapat menyebabkan kerusakan data.
+> Mengubah pengaturan cache disk Azure akan dihapus dan melampirkan kembali disk target. Jika disk sistem operasi, VM akan dimulai ulang. Hentikan semua aplikasi/layanan yang mungkin terpengaruh oleh gangguan ini sebelum mengubah pengaturan cache disk. Tidak mengikuti rekomendasi tersebut dapat mengakibatkan kerusakan data.
 
-Menentukan pengaturan cache tingkat host di disk.
-Nilai valid adalah:
+Menentukan setelan cache tingkat host disk.
+Nilai yang valid adalah:
 
-- Tidak ada
+- Tidak
 - ReadOnly
 - ReadWrite
 
@@ -102,16 +102,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -141,8 +141,8 @@ Accept wildcard characters: False
 ```
 
 ### -LUN
-Menentukan LUN untuk drive data di komputer virtual.
-Nilai valid adalah: 0 sampai 15.
+Menentukan LUN untuk drive data di mesin virtual.
+Nilai yang valid adalah: 0 hingga 15.
 
 ```yaml
 Type: Int32
@@ -157,8 +157,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 
 ### -VM
 Menentukan objek mesin virtual yang dilampirkan ke disk data.
-Untuk mendapatkan objek mesin virtual, gunakan cmdlet **Get-AzureVM.**
+Untuk mendapatkan objek mesin virtual, gunakan cmdlet **Get-AzureVM** .
 
 ```yaml
 Type: IPersistentVM
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -221,8 +221,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureDataDisk](./Get-AzureDataDisk.md)
 
-[Remove-AzureDataDisk](./Remove-AzureDataDisk.md)
+[Hapus-AzureDataDisk](./Remove-AzureDataDisk.md)
 
-[Update-AzureVM](./Update-AzureVM.md)
+[Perbarui-AzureVM](./Update-AzureVM.md)
 
 

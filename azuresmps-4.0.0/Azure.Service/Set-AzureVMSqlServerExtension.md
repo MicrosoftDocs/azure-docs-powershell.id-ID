@@ -4,16 +4,16 @@ ms.assetid: 56C7B6F5-C2AC-4C5A-8930-645374694CC3
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 33e0a54ccbeda6ab5b60fe2af805dc24989ede8e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422452"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142381612"
 ---
 # Set-AzureVMSqlServerExtension
 
 ## SYNOPSIS
-Mengatur ekstensi SQL Server Azure di komputer virtual.
+Mengatur ekstensi Server Azure SQL pada mesin virtual.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -34,7 +34,7 @@ Set-AzureVMSqlServerExtension [[-ReferenceName] <String>] [[-Version] <String>] 
  [<CommonParameters>]
 ```
 
-### UninstallSqlServerExtension
+### Menghapus instalanSqlServerExtension
 ```
 Set-AzureVMSqlServerExtension [[-ReferenceName] <String>] [[-Version] <String>] [-Uninstall]
  -VM <IPersistentVM> [-Profile <AzureSMProfile>] [-InformationAction <ActionPreference>]
@@ -42,42 +42,42 @@ Set-AzureVMSqlServerExtension [[-ReferenceName] <String>] [[-Version] <String>] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureVMSqlServerExtension** mengatur ekstensi SQL Server Azure di komputer virtual.
+Cmdlet **Set-AzureVMSqlServerExtension** mengatur ekstensi server Azure SQL pada mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur pengaturan patching otomatis pada komputer virtual
+### Contoh 1: Mengatur pengaturan patching otomatis pada mesin virtual
 ```
 PS C:\> Get-AzureVM -ServiceName "ServiceName" -Name "VMName" | Set-AzureVMSqlServerExtension -AutoPatchingSettings $APS | Update-AzureVM
 ```
 
-Perintah ini mengatur pengaturan patching otomatis di komputer virtual Azure.
+Perintah ini mengatur pengaturan patching otomatis di mesin virtual Azure.
 
-### Contoh 2: Mengatur pengaturan pencadangan otomatis di komputer virtual
+### Contoh 2: Mengatur pengaturan cadangan otomatis pada mesin virtual
 ```
 PS C:\> Get-AzureVM -ServiceName "ServiceName" -Name "VMName" | Set-AzureVMSqlServerExtension -AutoBackupSettings $ABS | Update-AzureVM
 ```
 
-Perintah ini mengatur pengaturan pencadangan otomatis di komputer virtual Azure.
+Perintah ini mengatur pengaturan cadangan otomatis di mesin virtual Azure.
 
-### Contoh 3: Menonaktifkan SQL Server ekstensi pada komputer virtual
+### Contoh 3: Menonaktifkan ekstensi SQL Server di mesin virtual
 ```
 PS C:\> Get-AzureVM -ServiceName "Service" -Name "VMName" | Set-AzureVMSqlServerExtension -Disable
 ```
 
-Perintah ini akan SQL Server ekstensi mesin virtual pada komputer virtual tertentu.
+Perintah ini menonaktifkan SQL Server ekstensi mesin virtual pada mesin virtual tertentu.
 
-### Contoh 4: Menghapus SQL Server ekstensi pada komputer virtual tertentu
+### Contoh 4: Menghapus instalan ekstensi SQL Server pada mesin virtual tertentu
 ```
 PS C:\> Get-AzureVM -ServiceName "Service" -Name "VMName" | Set-AzureVMSqlServerExtension -Uninstall
 ```
 
-Perintah ini akan menghapus instalan SQL Server ekstensi mesin virtual pada komputer virtual bernama VMName.
+Perintah ini menghapus instalan SQL Server ekstensi mesin virtual pada mesin virtual bernama VMName.
 
 ## PARAMETERS
 
 ### -AutoBackupSettings
-Menentukan pengaturan pencadangan SQL Server otomatis.
+Menentukan setelan pencadangan SQL Server otomatis.
 
 ```yaml
 Type: AutoBackupSettings
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoPatchingSettings
-Menentukan pengaturan patch SQL Server otomatis.
+Menentukan pengaturan patching SQL Server otomatis.
 
 ```yaml
 Type: AutoPatchingSettings
@@ -106,8 +106,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Disable
-Mengindikasikan bahwa cmdlet ini menonaktifkan status ekstensi.
+### -Non-fungsikan
+Menunjukkan bahwa cmdlet ini menonaktifkan status ekstensi.
 
 ```yaml
 Type: SwitchParameter
@@ -122,16 +122,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultCredentialSettings
-Menentukan pengaturan kredensial penyimpanan kunci.
+Menentukan pengaturan kredensial kubah kunci.
 
 ```yaml
 Type: KeyVaultCredentialSettings
@@ -176,8 +176,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReferenceName
-Menentukan nama referensi dari SQL Server ekstensi.
+Menentukan nama referensi ekstensi SQL Server.
 
 ```yaml
 Type: String
@@ -206,8 +206,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Uninstall
-Menunjukkan bahwa cmdlet ini menghapus SQL Server ekstensi ekstensi dari komputer virtual.
+### -Hapus instalan
+Menunjukkan bahwa cmdlet ini menghapus instalan ekstensi SQL Server dari mesin virtual.
 
 ```yaml
 Type: SwitchParameter
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -Versi
-Menentukan versi ekstensi SQL Server yang Get-AzureVMSqlServerExtension mengambil pengaturannya.
+Menentukan versi ekstensi SQL Server yang Get-AzureVMSqlServerExtension mengambil pengaturan.
 
 ```yaml
 Type: String
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

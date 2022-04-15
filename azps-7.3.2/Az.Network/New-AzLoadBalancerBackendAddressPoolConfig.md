@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerBackendAddressPoolConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerBackendAddressPoolConfig.md
-ms.openlocfilehash: 55fde741c3c52797c4ce5e8a4554f276e0dc9469
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: b6782f6720603422f6c4144a4e1b5ea29fdf628c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140555519"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142371599"
 ---
 # New-AzLoadBalancerBackendAddressPoolConfig
 
 ## SYNOPSIS
-Membuat konfigurasi pool alamat backend untuk penyeimbang muat.
+Membuat konfigurasi kumpulan alamat backend untuk penyeimbang muatan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azloadbalancerbackendaddresspoolconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,18 +29,18 @@ New-AzLoadBalancerBackendAddressPoolConfig -Name <String> [-TunnelInterface <PST
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzLoadBalancerBackendAddressPoolConfig** membuat konfigurasi pool alamat backend untuk penyeimbang muat Azure.
+Cmdlet **New-AzLoadBalancerBackendAddressPoolConfig** membuat konfigurasi kumpulan alamat backend untuk penyeimbang muat Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat konfigurasi pool alamat backend untuk penyeimbang muat
+### Contoh 1: Membuat konfigurasi kumpulan alamat backend untuk penyeimbang muat
 ```
 PS C:\>New-AzLoadBalancerBackendAddressPoolConfig -Name "BackendAddressPool02"
 ```
 
-Perintah ini membuat konfigurasi pool alamat backend yang bernama BackendAddressPool02 untuk penyeimbang muat.
+Perintah ini membuat konfigurasi kumpulan alamat backend bernama BackendAddressPool02 untuk load balancer.
 
-### Contoh 2: Membuat konfigurasi pool alamat backend dengan antarmuka interface interface untuk penyeimbang muat
+### Contoh 2: Membuat konfigurasi kumpulan alamat backend dengan antarmuka tunnel untuk penyeimbang muatan
 ```powershell
 ## create with Gateway LoadBalancer TunnelInterface configuration
 PS C:\> $tunnelInterface1 = New-AzLoadBalancerBackendAddressPoolTunnelInterfaceConfig -Protocol 'Vxlan' -Type 'Internal' -Port 2000 -Identifier 800
@@ -48,7 +51,7 @@ PS C:\> New-AzLoadBalancerBackendAddressPool -ResourceGroupName $resourceGroup -
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -63,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama konfigurasi address pool untuk dibuat.
+Menentukan nama konfigurasi kumpulan alamat untuk dibuat.
 
 ```yaml
 Type: System.String
@@ -77,8 +80,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -FaceInterface
-Konfigurasi Penyedia Gateway LoadBalancer.
+### -TunnelInterface
+Konfigurasi Penyedia LoadBalancer Gateway.
 
 ```yaml
 Type: PSTunnelInterface[]
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,11 +126,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

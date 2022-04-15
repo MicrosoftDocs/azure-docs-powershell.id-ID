@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.datal
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeAnalytics/Commands.DataLakeAnalytics/help/Set-AzureRmDataLakeAnalyticsCatalogCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeAnalytics/Commands.DataLakeAnalytics/help/Set-AzureRmDataLakeAnalyticsCatalogCredential.md
-ms.openlocfilehash: 8a664b946af1f1708fe488e96c053948f80c82307b02248b999463b1ce4b0375
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 7e08c66798c76fe6e03fb26602b7895f49d12322
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140865422"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142388419"
 ---
 # Set-AzureRmDataLakeAnalyticsCatalogCredential
 
 ## SYNOPSIS
-Mengubah kata sandi kredensial katalog Azure Data Lake Analytics.
+Mengubah kata sandi kredensial azure Data Lake Analytics katalog.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -37,7 +37,7 @@ Set-AzureRmDataLakeAnalyticsCatalogCredential [-Account] <String> [-DatabaseName
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzureRmDataLakeAnalyticsCatalogCredential cmdlet mengubah kata sandi kredensial yang terkait dengan katalog Azure Data Lake Analytics.
+Cmdlet Set-AzureRmDataLakeAnalyticsCatalogCredential mengubah kata sandi kredensial yang terkait dengan katalog Data Lake Analytics Azure.
 
 ## EXAMPLES
 
@@ -51,12 +51,12 @@ PS C:\> Set-AzureRmDataLakeAnalyticsCatalogCredential -AccountName "ContosoAdlAc
                   -Host "example.contoso.com" -Port 8080
 ```
 
-Perintah ini mengatur kata sandi kredensial ke kata sandi yang ditentukan dalam NewPassword.
+Perintah ini mengatur kata sandi kredensial ke kata sandi yang ditentukan di NewPassword.
 
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Analitik Danau Data.
+Menentukan nama akun Data Lake Analytics.
 
 ```yaml
 Type: System.String
@@ -70,8 +70,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Credential
-Menentukan nama dan kata sandi saat ini dari kredensial untuk mengubah.
+### -Kredensial
+Menentukan nama dan kata sandi kredensial saat ini untuk diubah.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -CredentialName
-Menentukan nama kredensial untuk diubah
+Menentukan nama kredensial yang akan diubah
 
 ```yaml
 Type: System.String
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Menentukan nama database dalam akun Analitik Danau Data yang menyimpan kredensial.
+Menentukan nama database dalam akun Data Lake Analytics yang memegang kredensial.
 
 ```yaml
 Type: System.String
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Menentukan nomor port yang digunakan untuk menghubungkan ke DatabaseHost tertentu menggunakan kredensial ini.
+Menentukan nomor port yang digunakan untuk menyambungkan ke DatabaseHost tertentu menggunakan kredensial ini.
 
 ```yaml
 Type: System.Int32
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -Uri
-Menentukan Pengidentifikasi Sumber Daya Seragam (URI, Uniform Resource Identifier) penuh dari sumber data eksternal yang bisa tersambung dengan kredensial ini.
+Menentukan Uniform Resource Identifier (URI) lengkap dari sumber data eksternal tempat kredensial ini dapat tersambung.
 
 ```yaml
 Type: System.Uri
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

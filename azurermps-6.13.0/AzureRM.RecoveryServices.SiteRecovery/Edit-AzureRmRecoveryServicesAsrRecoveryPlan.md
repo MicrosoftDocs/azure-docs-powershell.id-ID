@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Edit-AzureRmRecoveryServicesAsrRecoveryPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Edit-AzureRmRecoveryServicesAsrRecoveryPlan.md
 ms.openlocfilehash: f60da52bffcc78e563863c79971beea8d45e398e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428185"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142384356"
 ---
 # Edit-AzureRmRecoveryServicesAsrRecoveryPlan
 
 ## SYNOPSIS
-Mengedit paket Pemulihan Situs.
+Mengedit paket Site Recovery.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Edit-AzureRmRecoveryServicesAsrRecoveryPlan -InputObject <ASRRecoveryPlan> [-App
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RemoveGroup
+### Hapus Grup
 ```
 Edit-AzureRmRecoveryServicesAsrRecoveryPlan -InputObject <ASRRecoveryPlan> -RemoveGroup <ASRRecoveryPlanGroup>
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -48,7 +48,7 @@ Edit-AzureRmRecoveryServicesAsrRecoveryPlan -InputObject <ASRRecoveryPlan> -Grou
 ```
 
 ## DESCRIPTION
-Cmdlet **Edit-AzureRmRecoveryServicesAsrRecoveryPlan** mengedit paket Pemulihan Situs Azure.
+Cmdlet **Edit-AzureRmRecoveryServicesAsrRecoveryPlan** mengedit paket Site Recovery Azure.
 
 ## EXAMPLES
 
@@ -57,12 +57,12 @@ Cmdlet **Edit-AzureRmRecoveryServicesAsrRecoveryPlan** mengedit paket Pemulihan 
 PS C:\> $RP = Edit-AzureRmRecoveryServicesAsrRecoveryPlan -RecoveryPlan $RP -AppendGroup
 ```
 
-Menambahkan grup ke paket pemulihan Situs Azure yang sudah ada dan mengembalikan paket pemulihan dalam memori yang diperbarui. 
+Menambahkan grup ke azure yang sudah ada Site Recovery rencana pemulihan dan mengembalikan paket pemulihan di memori yang diperbarui. 
 
 ## PARAMETERS
 
 ### -AddProtectedItem
-Daftar item replikasi ASR yang diproteksi untuk ditambahkan ke grup rencana pemulihan dalam objek rencana pemulihan.
+Daftar item yang dilindungi replikasi ASR untuk ditambahkan ke grup rencana pemulihan dalam objek rencana pemulihan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem[]
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppendGroup
-Alihkan parameter untuk menambahkan grup rencana pemulihan ke objek paket pemulihan.
+Alihkan parameter untuk menambahkan grup paket pemulihan ke objek rencana pemulihan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -Grup
-Menentukan grup paket pemulihan.
+Menentukan grup rencana pemulihan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRecoveryPlanGroup
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek rencana pemulihan ASR yang akan diedit (Dalam operasi memori. Untuk memperbarui paket pemulihan, jalankan Update-AzureRmASRRecoveryPlan dengan objek rencana pemulihan yang diedit.)
+Objek rencana pemulihan ASR yang akan diedit (Dalam operasi memori. Untuk memperbarui rencana pemulihan berjalan Update-AzureRmASRRecoveryPlan dengan objek rencana pemulihan yang diedit.)
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRecoveryPlan
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemoveProtectedItem
-Daftar item replikasi ASR yang diproteksi akan dihapus dari grup rencana pemulihan dalam objek rencana pemulihan.
+Daftar item yang dilindungi replikasi ASR untuk dihapus dari grup rencana pemulihan dalam objek rencana pemulihan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem[]
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

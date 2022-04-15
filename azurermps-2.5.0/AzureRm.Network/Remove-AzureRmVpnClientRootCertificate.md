@@ -5,11 +5,11 @@ ms.assetid: 5D857FF6-A27D-4031-948D-8A69D24B4AD4
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/remove-azurermvpnclientrootcertificate
 schema: 2.0.0
 ms.openlocfilehash: 66c026e3e1ec05d94b8dc19b2ceedd92d4fc0200
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420179"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142392498"
 ---
 # Remove-AzureRmVpnClientRootCertificate
 
@@ -29,10 +29,10 @@ Remove-AzureRmVpnClientRootCertificate -VpnClientRootCertificateName <String>
 ## DESCRIPTION
 Cmdlet **Remove-AzureRmVpnClientRootCertificate** menghapus sertifikat akar tertentu dari gateway jaringan virtual.
 Sertifikat akar adalah sertifikat X.509 yang mengidentifikasi Otoritas Sertifikasi Akar Anda: semua sertifikat lain yang digunakan di gateway mempercayai sertifikat akar.
-Jika Anda menghapus komputer sertifikat akar yang menggunakan sertifikat untuk tujuan autentikasi tidak akan bisa lagi menyambungkan ke gateway.
+Jika Anda menghapus komputer sertifikat akar yang menggunakan sertifikat untuk tujuan autentikasi tidak akan bisa lagi tersambung ke gateway.
 
-Saat menggunakan **Remove-AzureRmVpnClientRootCertificate,** Anda harus menyediakan nama sertifikat dan teks representasi data sertifikat.
-Untuk informasi selengkapnya tentang teks representasi sertifikat, lihat deskripsi parameter *PublicCertData.*
+Ketika menggunakan **Remove-AzureRmVpnClientRootCertificate**, Anda harus memasukkan nama sertifikat dan representasi teks data sertifikat.
+Untuk informasi selengkapnya tentang representasi teks sertifikat, lihat deskripsi parameter *PublicCertData* .
 
 ## EXAMPLES
 
@@ -43,19 +43,19 @@ PS C:\> $CertificateText = for ($i=1; $i -lt $Text.Length -1 ; $i++){$Text[$i]}
 PS C:\> Remove-AzureRmVpnClientRootCertificate -PublicCertData $CertificateText -ResourceGroupName "ContosoResourceGroup" -VirtualNetworkGatewayName "ContosoVirtualGateway"-VpnClientRootCertificateName "ContosoRootCertificate"
 ```
 
-Contoh ini menghapus sertifikat akar klien yang bernama ContosoRootCertificate dari gateway jaringan virtual ContosoVirtualGateway.
+Contoh ini menghapus sertifikat akar klien bernama ContosoRootCertificate dari gateway jaringan virtual ContosoVirtualGateway.
 
-Perintah pertama menggunakan cmdlet **Get-Content** untuk mendapatkan representasi teks sertifikat yang diekspor sebelumnya; representasi teks ini disimpan di dalam variabel yang bernama $Text.
+Perintah pertama menggunakan cmdlet **Get-Content** untuk mendapatkan representasi teks sertifikat yang diekspor sebelumnya; representasi teks ini disimpan dalam variabel bernama $Text.
 
-Lalu perintah kedua menggunakan pengulangan untuk mengekstrak semua teks dalam $Text kecuali untuk baris pertama dan baris terakhir.
-Teks yang diekstrak ini disimpan dalam variabel yang bernama $CertificateText.
+Perintah kedua kemudian menggunakan pengulangan untuk mengekstrak semua teks dalam $Text kecuali baris pertama dan baris terakhir.
+Teks yang diekstrak ini disimpan dalam variabel bernama $CertificateText.
 
-Perintah ketiga menggunakan informasi yang disimpan di variabel $CertificateText bersama dengan cmdlet **Remove-AzureRmVpnClientRootCertificate** untuk menghapus sertifikat dari gateway.
+Perintah ketiga menggunakan informasi yang disimpan dalam variabel $CertificateText bersama dengan cmdlet **Remove-AzureRmVpnClientRootCertificate** untuk menghapus sertifikat dari gateway.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -70,16 +70,16 @@ Accept wildcard characters: False
 ```
 
 ### -PublicCertData
-Menentukan representasi teks dari sertifikat akar yang akan dihapus.
-Untuk mendapatkan representasi teks, ekspor sertifikat Anda dalam format .cer (menggunakan pengodean Base64), lalu buka file yang dihasilkan di editor teks.
-Anda akan melihat output yang mirip dengan berikut ini (perhatikan bahwa output aktual akan berisi lebih banyak baris teks daripada sampel yang disingkat diperlihatkan di sini):
+Menentukan representasi teks sertifikat akar yang akan dihapus.
+Untuk mendapatkan representasi teks, ekspor sertifikat Anda dalam format .cer (menggunakan Base64), lalu buka file yang dihasilkan dalam editor teks.
+Anda akan melihat output yang mirip dengan yang berikut ini (perhatikan bahwa output aktual akan berisi lebih banyak baris teks daripada sampel singkatan yang diperlihatkan di sini):
 
------ BEGIN CERTIFICATE ----- MIIC13FAAXC3671Auij9HgUNEW8343NMJklo09982CVVFAw8w ----- END CERTIFICATE -----
+----- BEGIN CERTIFICATE ----- MIIC13FAAXC3671Auij9HHgUNEW8343NMJklo09982CVVFAw8w ----- END CERTIFICATE -----
 
-PublicCertData terdiri dari semua garis antara baris pertama (----- BEGIN CERTIFICATE -----) dan baris terakhir (----- END CERTIFICATE -----) dalam file.
-Anda bisa mengambil PublicCertData menggunakan Windows PowerShell yang mirip dengan ini:
+PublicCertData terdiri dari semua baris antara baris pertama (----- BEGIN CERTIFICATE -----) dan baris terakhir (----- END CERTIFICATE -----) dalam file.
+Anda dapat mengambil PublicCertData menggunakan perintah Windows PowerShell seperti ini:
 
-$Text = Get-Content -Path "C:\Azure\Certificates\ExportedCertficate.cer" $CertificateText = for ($i=1; $i -lt $Text.Length -1 ; $i++){$Text \[ $i \] }
+$Text = Get-Content -Path "C:\Azure\Certificates\ExportedCertficate.cer" $CertificateText = for ($i=1; $i -lt $Text.Length -1 ; $i++){$Text\[$i\]}
 
 ```yaml
 Type: String
@@ -94,9 +94,9 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang ditetapkan untuk gateway jaringan virtual.
+Menentukan nama grup sumber daya tempat gateway jaringan maya ditetapkan.
 
-Grup sumber daya mengkategorikan item untuk membantu menyederhanakan manajemen inventaris dan administrasi umum Azure.
+Grup sumber daya mengkategorikan item untuk membantu menyederhanakan manajemen inventaris dan administrasi Umum Azure.
 
 ```yaml
 Type: String
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

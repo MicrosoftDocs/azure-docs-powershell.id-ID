@@ -4,11 +4,11 @@ ms.assetid: A62D1A9D-C0EF-4305-B1F9-3AE68A79222D
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 2c3b5cea703d8962068f344f22af6a68d68655ee
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421122"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142381931"
 ---
 # Remove-AzureStorSimpleDeviceVolume
 
@@ -19,13 +19,13 @@ Menghapus volume dari perangkat StorSimple.
 
 ## SYNTAX
 
-### IdentifyByName
+### IdentifikasiByName
 ```
 Remove-AzureStorSimpleDeviceVolume -DeviceName <String> -VolumeName <String> [-WaitForComplete] [-Force]
  [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
 
-### IdentifyByObject
+### IdentifikasiByObject
 ```
 Remove-AzureStorSimpleDeviceVolume -DeviceName <String> -Volume <VirtualDisk> [-WaitForComplete] [-Force]
  [-Profile <AzureSMProfile>] [<CommonParameters>]
@@ -33,11 +33,11 @@ Remove-AzureStorSimpleDeviceVolume -DeviceName <String> -Volume <VirtualDisk> [-
 
 ## DESCRIPTION
 Cmdlet **Remove-AzureStorSimpleDeviceVolume** menghapus volume dari perangkat StorSimple.
-Cmdlet ini akan meminta konfirmasi kecuali Anda menentukan parameter *Paksa.*
+Cmdlet ini meminta konfirmasi kecuali Anda menentukan parameter *Paksa* .
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus volume dengan menggunakan saluran
+### Contoh 1: Menghapus volume menggunakan pipeline
 ```
 PS C:\>Get-AzureStorSimpleDeviceVolume -DeviceName "Contoso63-AppVm" -VolumeName "Volume18" | Remove-AzureStorSimpleDeviceVolume -DeviceName "Contoso63-AppVm"
 VERBOSE: ClientRequestId: 2933e24d-9564-42b5-9053-5f0bc4f59ea8_PS
@@ -57,10 +57,10 @@ VERBOSE: The delete task is submitted successfully. Please use the command Get-A
 VERBOSE: Volume with name: Volume18 is found.
 ```
 
-Perintah ini mendapatkan volume yang bernama Volume18 pada perangkat yang bernama Contoso63-AppVm, lalu meneruskan volume itu ke cmdlet saat ini menggunakan operator pipeline.
-Cmdlet saat ini memulai tugas yang menghapus volume, lalu mengembalikan objek **TaskResponse.**
-Untuk melihat status tugas, gunakan cmdlet **Get-AzureStorSimpleTask.**
-Perintah tidak menentukan parameter *Paksa,* jadi cmdlet akan meminta konfirmasi Anda.
+Perintah ini mendapatkan volume bernama Volume18 pada perangkat bernama Contoso63-AppVm, lalu meneruskan volume tersebut ke cmdlet saat ini menggunakan operator pipeline.
+Cmdlet saat ini memulai tugas yang menghapus volume, lalu mengembalikan objek **TaskResponse** .
+Untuk melihat status tugas, gunakan cmdlet **Get-AzureStorSimpleTask** .
+Perintah tidak menentukan parameter *Paksa* , sehingga cmdlet meminta konfirmasi kepada Anda.
 
 ### Contoh 2: Menghapus volume tanpa konfirmasi
 ```
@@ -75,13 +75,13 @@ VERBOSE: The delete task is submitted successfully. Please use the command Get-A
 483f8cb4-ebc3-46a9-a9e6-0989e25738a0 for tracking the task's status
 ```
 
-Perintah ini menghapus volume bernama Volume18 dari perangkat yang bernama Contoso63-AppVm.
-Perintah menentukan parameter *Paksa,* sehingga cmdlet tidak akan meminta konfirmasi Anda.
+Perintah ini menghapus volume bernama Volume18 dari perangkat bernama Contoso63-AppVm.
+Perintah menentukan parameter *Force* , sehingga cmdlet tidak meminta konfirmasi kepada Anda.
 
 ## PARAMETERS
 
 ### -DeviceName
-Menentukan nama perangkat StorSimple yang menjadi tempat volume dihapus.
+Menentukan nama perangkat StorSimple tempat volume yang dihapus ada.
 
 ```yaml
 Type: String
@@ -95,8 +95,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Mengindikasikan bahwa cmdlet ini tidak meminta konfirmasi Anda.
+### -Paksa
+Menunjukkan bahwa cmdlet ini tidak meminta konfirmasi kepada Anda.
 
 ```yaml
 Type: SwitchParameter
@@ -126,8 +126,8 @@ Accept wildcard characters: False
 ```
 
 ### -Volume
-Menentukan volume yang akan dihapus, sebagai objek **VirtualDisk.**
-Untuk mendapatkan objek **VirtualDisk,** gunakan cmdlet **Get-AzureStorSimpleDeviceVolume.**
+Menentukan volume yang akan dihapus, sebagai objek **VirtualDisk** .
+Untuk mendapatkan objek **VirtualDisk** , gunakan cmdlet **Get-AzureStorSimpleDeviceVolume** .
 
 ```yaml
 Type: VirtualDisk
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -WaitForComplete
-Menunjukkan bahwa cmdlet ini menunggu hingga operasi selesai sebelum mengembalikan kontrol ke Windows PowerShell konsol.
+Menunjukkan bahwa cmdlet ini menunggu operasi selesai sebelum mengembalikan kontrol ke konsol Windows PowerShell.
 
 ```yaml
 Type: SwitchParameter
@@ -172,17 +172,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### VirtualDisk
-Cmdlet ini menerima objek **VirtualDisk** untuk menghapus atau nama volume **VirtualDisk** yang akan dihapus.
+Cmdlet ini menerima objek **VirtualDisk** untuk dihapus atau nama volume **VirtualDisk** untuk dihapus.
 
 ## OUTPUTS
 
 ### TaskStatusInfo
-Cmdlet ini mengembalikan **objek TaskStatusInfo,** jika Anda menentukan parameter *WaitForComplete.*
+Cmdlet ini mengembalikan objek **TaskStatusInfo** , jika Anda menentukan parameter *WaitForComplete* .
 
 ## CATATAN
 

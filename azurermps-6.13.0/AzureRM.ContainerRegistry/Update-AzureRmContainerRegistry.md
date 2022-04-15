@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ContainerRegistry/Commands.ContainerRegistry/help/Update-AzureRmContainerRegistry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ContainerRegistry/Commands.ContainerRegistry/help/Update-AzureRmContainerRegistry.md
 ms.openlocfilehash: 10321e780532cd522e7cc1d4532baa360350c324
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424539"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142388646"
 ---
 # Update-AzureRmContainerRegistry
 
 ## SYNOPSIS
-Memperbarui registri wadah.
+Memperbarui registri kontainer.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -63,11 +63,11 @@ Update-AzureRmContainerRegistry [-Tag <Hashtable>] [-StorageAccountName <String>
 ```
 
 ## DESCRIPTION
-Cmdlet Update-AzureRmContainerRegistry memperbarui registri wadah.
+Cmdlet Update-AzureRmContainerRegistry memperbarui registri kontainer.
 
 ## EXAMPLES
 
-### Contoh 1: Mengaktifkan pengguna admin untuk registri wadah tertentu
+### Contoh 1: Mengaktifkan pengguna admin untuk registri kontainer tertentu
 ```powershell
 PS C:\>Update-AzureRmContainerRegistry -ResourceGroupName "MyResourceGroup" -Name "MyRegistry" -EnableAdminUser
 
@@ -79,9 +79,9 @@ Registry Name        Sku        LoginServer                    CreationDate     
 MyRegistry           Basic      myregistry.azurecr.io          11/20/2017 10:05:... Succeeded  True
 ```
 
-Perintah ini memungkinkan pengguna admin untuk registri wadah yang ditentukan.
+Perintah ini memungkinkan pengguna admin untuk registri kontainer tertentu.
 
-### Contoh 2: Mengatur akun penyimpanan yang digunakan dengan registri wadah tertentu
+### Contoh 2: Mengatur akun penyimpanan yang digunakan oleh registri kontainer tertentu
 ```powershell
 PS C:\>Update-AzureRmContainerRegistry -ResourceGroupName "MyResourceGroup" -Name "MyRegistry" -StorageAccountName "mystorageaccount"
 
@@ -93,12 +93,12 @@ Registry Name        Sku        LoginServer                    CreationDate     
 MyRegistry           Basic      myregistry.azurecr.io          11/20/2017 10:05:... Succeeded  True       mystorageaccount
 ```
 
-Perintah ini mengatur registri kontainer tertentu untuk menggunakan akun penyimpanan \` mystorageaccount yang sudah ada \` dalam langganan yang sama.
+Perintah ini mengatur registri kontainer yang ditentukan untuk menggunakan akun \`penyimpanan mystorageaccount\` yang sudah ada dalam langganan yang sama.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableAdminUser
-Aktifkan pengguna admin untuk registri wadah.
+Aktifkan pengguna admin untuk registri kontainer.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableAdminUser
-Aktifkan pengguna admin untuk registri wadah.
+Aktifkan pengguna admin untuk registri kontainer.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Container Registry Name.
+Nama Registri Kontainer.
 
 ```yaml
 Type: System.String
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Container registry resource id
+Id sumber daya registri kontainer
 
 ```yaml
 Type: System.String
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Container Registry SKU.
+Kontainer Registri SKU.
 
 ```yaml
 Type: System.String
@@ -259,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -275,7 +275,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -290,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -304,9 +304,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmContainerRegistry](New-AzureRmContainerRegistry.md)
+[AzureRmContainerRegistry baru](New-AzureRmContainerRegistry.md)
 
 [Get-AzureRmContainerRegistry](Get-AzureRmContainerRegistry.md)
 
-[Remove-AzureRmContainerRegistry](Remove-AzureRmContainerRegistry.md)
+[Hapus-AzureRmContainerRegistry](Remove-AzureRmContainerRegistry.md)
 

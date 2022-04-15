@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesVaultProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesVaultProperty.md
-ms.openlocfilehash: 2692302dae195a89c1b49350513376ba693c0d22
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: dcb4cddbeb15c3109ac435cd42551189999b10d3
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140184487"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142369673"
 ---
 # Set-AzRecoveryServicesVaultProperty
 
 ## SYNOPSIS
 Memperbarui properti Vault.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/set-azrecoveryservicesvaultproperty) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,21 +38,21 @@ Set-AzRecoveryServicesVaultProperty [-VaultId <String>] [-DefaultProfile <IAzure
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzRecoveryServicesVaultProperty** memperbarui properti vault layanan Pemulihan. Cmdlet ini dapat digunakan untuk mengaktifkan/menonaktifkan penghapusan sementara atau mengatur enkripsi CMK untuk vault dengan dua kumpulan parameter berbeda. 
-**Properti SoftDeleteFeatureState** dari vault dapat dinonaktifkan hanya jika tidak ada wadah terdaftar di vault. InfrastructurEncryption hanya dapat diatur saat pertama kali pengguna memperbarui vault CMK.
+Cmdlet **Set-AzRecoveryServicesVaultProperty** memperbarui properti kubah layanan Pemulihan. Cmdlet ini dapat digunakan untuk mengaktifkan/menonaktifkan penghapusan lunak atau mengatur enkripsi CMK untuk kubah dengan dua rangkaian parameter yang berbeda. 
+**Properti SoftDeleteFeatureState** dari kubah hanya dapat dinonaktifkan jika tidak ada kontainer terdaftar dalam kubah. InfrastructurEncryption hanya dapat diatur saat pertama kali pengguna memperbarui kubah CMK.
 
 ## EXAMPLES
 
-### Contoh 1: Update SoftDeleteFeatureState of a vault
+### Contoh 1: Memperbarui SoftDeleteFeatureState dari kubah
 ```
 PS C:\> $vault = Get-AzRecoveryServicesVault -ResourceGroupName "rgName" -Name "vaultName"
 PS C:\> $props = Set-AzRecoveryServicesVaultProperty -VaultId $vault.Id -SoftDeleteFeatureState Enable
 ```
 
-Perintah pertama akan mendapatkan objek Vault, lalu menyimpannya dalam $vault baru.
-Perintah kedua Memperbarui properti SoftDeleteFeatureState dari vault ke status "Diaktifkan".
+Perintah pertama mendapatkan objek Vault lalu menyimpannya dalam variabel $vault.
+Perintah kedua Memperbarui properti SoftDeleteFeatureState dari kubah ke status "Diaktifkan".
 
-### Contoh 2: Perbarui enkripsi CMK dari vault untuk menggunakan SystemAssigned MSIdentity
+### Contoh 2: Memperbarui enkripsi CMK kubah untuk menggunakan SystemAssigned MSIdentity
 
 ```
 PS C:\> $vault = Get-AzRecoveryServicesVault -ResourceGroupName "rgName" -Name "vaultName"
@@ -58,10 +61,10 @@ PS C:\> $key = Get-AzKeyVaultKey -VaultName "keyVaultName" -Name "keyName"
 PS C:\> Set-AzRecoveryServicesVaultProperty -EncryptionKeyId $key.ID -InfrastructureEncryption -VaultId $vault.ID -UseSystemAssignedIdentity $true
 ```
 
-Cmdlet pertama mendapatkan RSVault untuk memperbarui properti enkripsi. Cmdlet kedua mendapatkan azure key vault. Cmdlet ketiga mendapatkan kunci dari key vault.
-Cmdlet keempat memperbarui kunci enkripsi yang dikelola pelanggan dalam RSVault agar diakses melalui identitas SystemAssigned. Gunakan -InfrastructureEncryption param untuk mengaktifkan enkripsi infrastruktur untuk pembaruan pertama kalinya. 
+Cmdlet pertama mendapatkan RSVault untuk memperbarui properti enkripsi. Cmdlet kedua mendapatkan kubah tombol azure. Cmdlet ketiga mendapatkan kunci dari kubah kunci.
+Cmdlet keempat memperbarui kunci enkripsi yang dikelola pelanggan dalam RSVault untuk diakses melalui identitas SystemAssigned. Gunakan param -InfrastructureEncryption untuk mengaktifkan enkripsi infrastruktur untuk pembaruan pertama kalinya. 
 
-### Contoh 3: Perbarui enkripsi CMK dari vault untuk menggunakan userAssigned MSIdentity
+### Contoh 3: Memperbarui enkripsi CMK dari kubah untuk menggunakan userAssigned MSIdentity
 
 ```
 PS C:\> $vault = Get-AzRecoveryServicesVault -ResourceGroupName "rgName" -Name "vaultName"
@@ -70,13 +73,13 @@ PS C:\> $key = Get-AzKeyVaultKey -VaultName "keyVaultName" -Name "keyName"
 PS C:\> Set-AzRecoveryServicesVaultProperty -EncryptionKeyId $key.ID -VaultId $vault.ID -UseSystemAssignedIdentity $false -UserAssignedIdentity $vault.Identity.UserAssignedIdentities.Keys[0]
 ```
 
-Cmdlet pertama mendapatkan RSVault untuk memperbarui properti enkripsi. Cmdlet kedua mendapatkan azure key vault. Cmdlet ketiga mendapatkan kunci dari key vault.
-Cmdlet keempat memperbarui kunci enkripsi yang dikelola pelanggan dalam RSVault agar diakses melalui identitas UserAssigned.
+Cmdlet pertama mendapatkan RSVault untuk memperbarui properti enkripsi. Cmdlet kedua mendapatkan kubah tombol azure. Cmdlet ketiga mendapatkan kunci dari kubah kunci.
+Cmdlet keempat memperbarui kunci enkripsi yang dikelola pelanggan dalam RSVault untuk diakses melalui identitas UserAssigned.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionKeyId
-KeyId dari kunci enkripsi yang akan digunakan untuk CMK.
+KeyId kunci enkripsi yang akan digunakan untuk CMK.
 
 ```yaml
 Type: System.String
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -InfrastructureEncryption
-Mengaktifkan enkripsi infrastruktur di vault ini. Enkripsi infrastruktur harus diaktifkan saat mengonfigurasi enkripsi.
+Mengaktifkan enkripsi infrastruktur pada kubah ini. Enkripsi infrastruktur harus diaktifkan ketika mengonfigurasi enkripsi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultSubscriptionId
-Id Langganan Vault Utama.
+Id Langganan Key Vault.
 
 ```yaml
 Type: System.String
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -SoftDeleteFeatureState
-SoftDeleteFeatureState Vault Layanan Pemulihan.
+SoftDeleteFeatureState dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserAssignedIdentity
-ID ARM dari Identitas YangSigned Pengguna untuk digunakan untuk enkripsi CMK. Sediakan parameter ini jika UseSystemAssignedIdentity $false.
+ARM Id of UserAssigned Identity yang akan digunakan untuk enkripsi CMK. Berikan parameter ini jika UseSystemAssignedIdentity $false.
 
 ```yaml
 Type: System.String
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseSystemAssignedIdentity
-Bendera Boolean untuk menunjukkan apakah SystemAssigned Identity akan digunakan untuk enkripsi CMK. Accepted Camples: $true, $false
+Bendera Boolean untuk menunjukkan apakah SystemAssigned Identity akan digunakan untuk enkripsi CMK. Vaules yang Diterima: $true, $false
 
 ```yaml
 Type: System.Boolean
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -227,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

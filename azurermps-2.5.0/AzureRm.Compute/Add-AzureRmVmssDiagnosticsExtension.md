@@ -5,16 +5,16 @@ ms.assetid: 7A1B92F5-C698-4D5E-ACD7-4013F1BC6247
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/add-azurermvmssdiagnosticsextension
 schema: 2.0.0
 ms.openlocfilehash: 8e6a0ec7002f211e660c3ca71d190faf719bbd6c
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428851"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142394045"
 ---
 # Add-AzureRmVmssDiagnosticsExtension
 
 ## SYNOPSIS
-Menambahkan ekstensi diagnostik pada VMSS.
+Menambahkan ekstensi diagnostik ke VMSS.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,21 +28,21 @@ Add-AzureRmVmssDiagnosticsExtension [-VirtualMachineScaleSet] <VirtualMachineSca
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureRmVmssDiagnosticsExtension** menambahkan ekstensi diagnostik ke contoh Virtual Machine Scale Set (VMSS).
+Cmdlet **Add-AzureRmVmssDiagnosticsExtension** menambahkan ekstensi diagnostik ke instans Kumpulan Skala Mesin Virtual (VMSS).
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan ekstensi diagnostik ke VMSS
+### Contoh 1: Menambahkan ekstensi diagnostik ke VMSS
 ```
 PS C:\> Add-AzureRmVmssDiagnosticsExtension -VirtualMachineScaleSet $VMSS -SettingFilePath $publicConfigPath -ProtectedSettingFilePath $privateConfigPath -Name $extName -TypeHandlerVersion $typeVersion -AutoUpgradeMinorVersion $True -Force
 ```
 
-Perintah ini menambahkan ekstensi diagnostik pada VMSS.
+Perintah ini menambahkan ekstensi diagnostik ke VMSS.
 
 ## PARAMETERS
 
 ### -AutoUpgradeMinorVersion
-Menunjukkan apakah cmdlet ini memungkinkan agen tamu Azure untuk memperbarui ekstensi secara otomatis ke versi minor yang lebih baru.
+Menunjukkan apakah cmdlet ini memungkinkan agen tamu Azure memperbarui ekstensi secara otomatis ke versi minor yang lebih baru.
 
 ```yaml
 Type: Boolean
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -71,8 +71,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: SwitchParameter
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 
 ### -TypeHandlerVersion
 Menentukan versi ekstensi yang akan digunakan untuk VMSS ini.
-Untuk mendapatkan versi, jalankan cmdlet [Get-AzureRmVMExtensionImage](./Get-AzureRmVMExtensionImage.md) dengan nilai Microsoft.Azure.Diagnostics untuk parameter *PublisherName* dan IaaSDiagnostics untuk parameter *Type.*
+Untuk mendapatkan versi, jalankan cmdlet [Get-AzureRmVMExtensionImage](./Get-AzureRmVMExtensionImage.md) dengan nilai Microsoft.Azure.Diagnostics untuk parameter *PublisherName* dan IaaSDiagnostics untuk parameter *Tipe* .
 
 ```yaml
 Type: String
@@ -147,9 +147,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -VirtualMachinescaleSet
+### -VirtualMachineScaleSet
 Tentukan objek VMSS.
-Anda dapat menggunakan cmdlet [New-AzureRmVmssConfig](./New-AzureRmVmssConfig.md) untuk membuat objek.
+Anda dapat menggunakan cmdlet [New-AzureRmVmsConfig](./New-AzureRmVmssConfig.md) untuk membuat objek.
 
 ```yaml
 Type: VirtualMachineScaleSet
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -195,12 +195,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### VirtualMachinescaleSet
-Parameter 'VirtualMachineScaleSet' menerima nilai tipe 'VirtualMachineScaleSet' dari saluran
+### VirtualMachineScaleSet
+Parameter 'VirtualMachineScaleSet' menerima nilai tipe 'VirtualMachineScaleSet' dari pipeline
 
 ## OUTPUTS
 
@@ -213,6 +213,6 @@ Cmdlet ini tidak menghasilkan output apa pun.
 
 [Add-AzureRmVmssExtension](./Add-AzureRmVmssExtension.md)
 
-[Remove-AzureRmVmssDiagnosticsExtension](./Remove-AzureRmVmssDiagnosticsExtension.md)
+[Hapus-AzureRmVmssDiagnosticsExtension](./Remove-AzureRmVmssDiagnosticsExtension.md)
 
 [Set-AzureRmVMDiagnosticsExtension](./Set-AzureRMVMDiagnosticsExtension.md)

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Reservations/Commands.Reservations/help/Get-AzureRmReservationHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Reservations/Commands.Reservations/help/Get-AzureRmReservationHistory.md
 ms.openlocfilehash: 3149e2fa0ef748d11583919161555805d54f5efc
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140851689"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142384049"
 ---
 # Get-AzureRmReservationHistory
 
@@ -62,7 +62,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Reservation
+### -Reservasi
 Parameter objek pipa untuk `Reservation`s
 
 ```yaml
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReservationId
-ReservasiId `Reservation` riwayat mana yang akan ditampilkan
+ReservationId dari `Reservation` riwayat mana yang akan ditampilkan
 
 ```yaml
 Type: System.Guid
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReservationOrderId
-ReservationOrderId untuk `ReservationOrder` yang berisi `Reservation`
+ReservationOrderId untuk yang `ReservationOrder` berisi `Reservation`
 
 ```yaml
 Type: System.Guid
@@ -108,14 +108,14 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.Guid
 
 ### Microsoft.Azure.Commands.Reservations.Models.PSReservation
-Parameter: Reservation (ByValue)
+Parameter: Reservasi (ByValue)
 
 ## OUTPUTS
 
