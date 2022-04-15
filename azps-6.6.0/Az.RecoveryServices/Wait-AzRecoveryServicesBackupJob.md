@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Wait-AzRecoveryServicesBackupJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Wait-AzRecoveryServicesBackupJob.md
 ms.openlocfilehash: ce71d0fd834fcb3e0bf33ed18be322df18a93875
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140132433"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141949565"
 ---
 # Wait-AzRecoveryServicesBackupJob
 
@@ -20,7 +20,7 @@ ms.locfileid: "140132433"
 Menunggu pekerjaan Pencadangan selesai.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/wait-azrecoveryservicesbackupjob) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/wait-azrecoveryservicesbackupjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,10 +32,10 @@ Wait-AzRecoveryServicesBackupJob [-Job] <Object> [[-Timeout] <Int64>] [-VaultId 
 ## DESCRIPTION
 
 Cmdlet **Wait-AzRecoveryServicesBackupJob** menunggu pekerjaan Azure Backup selesai.
-Pekerjaan cadangan bisa memakan waktu lama.
-Jika Anda menjalankan pekerjaan cadangan sebagai bagian dari skrip, Anda mungkin ingin memaksa skrip untuk menunggu pekerjaan selesai sebelum melanjutkan ke tugas lain.
-Skrip yang menyertakan cmdlet ini bisa lebih sederhana daripada yang menjajaki layanan Pencadangan untuk status pekerjaan tersebut.
-Mengatur konteks vault menggunakan parameter -VaultId.
+Pencadangan dapat memakan waktu lama.
+Jika Anda menjalankan pekerjaan cadangan sebagai bagian dari skrip, Anda mungkin ingin memaksa skrip untuk menunggu pekerjaan selesai sebelum berlanjut ke tugas lain.
+Skrip yang menyertakan cmdlet ini bisa lebih sederhana daripada skrip yang menjajaki layanan Cadangan untuk status pekerjaan.
+Mengatur konteks kubah menggunakan parameter -VaultId.
 
 ## EXAMPLES
 
@@ -47,13 +47,13 @@ PS C:\> $Jobs = Get-AzRecoveryServicesBackupJob -Status InProgress -VaultId $vau
 PS C:\> Wait-AzRecoveryServicesBackupJob -Job $Jobs[0] -VaultId $vault.ID -Timeout 3600
 ```
 
-Skrip ini menjajaki pekerjaan pertama yang saat ini sedang berlangsung hingga pekerjaan telah selesai atau periode waktu habis dari 1 jam kedaluwarsa.
+Skrip ini menjajaki pekerjaan pertama yang saat ini sedang berlangsung hingga pekerjaan telah selesai atau jangka waktu habis 1 jam kedaluwarsa.
 
 ## PARAMETERS
 
 ### -DefaultProfile
 
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -84,10 +84,10 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Timeout
+### -Waktu habis
 
-Menentukan waktu maksimum, dalam detik, cmdlet ini menunggu hingga pekerjaan selesai.
-Disarankan untuk menentukan nilai waktu habis.
+Menentukan waktu maksimum, dalam detik, cmdlet ini menunggu pekerjaan selesai.
+Disarankan untuk menentukan nilai batas waktu.
 
 ```yaml
 Type: System.Nullable`1[System.Int64]
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 
 ### -VaultId
 
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

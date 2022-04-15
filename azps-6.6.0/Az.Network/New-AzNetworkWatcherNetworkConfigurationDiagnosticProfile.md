@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherNetworkConfigurationDiagnosticProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherNetworkConfigurationDiagnosticProfile.md
 ms.openlocfilehash: 02ad7405d0cfb3a92fead811e4517b3ff685f127
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139934467"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141952989"
 ---
 # New-AzNetworkWatcherNetworkConfigurationDiagnosticProfile
 
@@ -18,7 +18,7 @@ ms.locfileid: "139934467"
 Membuat objek profil diagnostik konfigurasi jaringan baru. Objek ini digunakan untuk membatasi konfigurasi jaringan selama sesi diagnostik menggunakan kriteria yang ditentukan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-aznetworkwatchernetworkconfigurationdiagnosticprofile) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-aznetworkwatchernetworkconfigurationdiagnosticprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,11 +29,11 @@ New-AzNetworkWatcherNetworkConfigurationDiagnosticProfile -Direction <String> -P
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzNetworkWatcherNetworkConfigurationDiagnosticProfile akan membuat objek profil diagnostik baru. Objek ini digunakan untuk membatasi konfigurasi jaringan selama sesi diagnostik konfigurasi jaringan menggunakan kriteria yang ditentukan.
+Cmdlet New-AzNetworkWatcherNetworkConfigurationDiagnosticProfile membuat objek profil diagnostik baru. Objek ini digunakan untuk membatasi konfigurasi jaringan selama sesi diagnostik konfigurasi jaringan menggunakan kriteria yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Invoke sesi diagnostik konfigurasi jaringan untuk VM dan profil jaringan tertentu
+### Contoh 1: Memanggil sesi diagnostik konfigurasi jaringan untuk VM dan profil jaringan yang ditentukan
 ```
 PS C:\> $profile = New-AzNetworkWatcherNetworkConfigurationDiagnosticProfile -Direction Inbound -Protocol Tcp -Source 10.1.1.4 -Destination * -DestinationPort 50
 PS C:\> Invoke-AzNetworkWatcherNetworkConfigurationDiagnostic -Location eastus -TargetResourceId /subscriptions/61cc8a98-a8be-4bfe-a04e-0b461f93fe35/resourceGroups/NwRgEastUS/providers/Microsoft.Compute/virtualMachines/vm1 -Profile $profile
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationPort
-Port tujuan lalu lintas.
+Pelabuhan tujuan lalu lintas.
 Nilai yang diterima adalah '*', port (misalnya, 3389) dan rentang port (misalnya, 80-100).
 
 ```yaml
@@ -133,8 +133,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Protocol
-Protokol yang akan diverifikasi.
+### -Protokol
+Protokol untuk diverifikasi pada.
 Nilai yang diterima adalah '*', TCP, UDP.
 
 ```yaml
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -177,7 +177,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkConfigurationDiagnosticProfile
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, network, networking, watcher, diagnostic, profile
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengawas, diagnostik, profil
 
 ## RELATED LINKS
 
@@ -185,7 +185,7 @@ Kata kunci: azure, azurerm, arm, resource, management, manager, network, network
 
 [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md)
 
-[Remove-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
+[Hapus-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
 
 [Get-AzNetworkWatcherNextHop](./Get-AzNetworkWatcherNextHop.md)
 
@@ -225,9 +225,9 @@ Kata kunci: azure, azurerm, arm, resource, management, manager, network, network
 
 [Get-AzNetworkWatcherTroubleshootingResult](./Get-AzNetworkWatcherTroubleshootingResult.md)
 
-[Get-AzNetworkWatcherReachabilityReport](./Get-AzNetworkWatcherReachabilityReport.md)
+[Get-AzNetworkWatcherReacherReportability](./Get-AzNetworkWatcherReachabilityReport.md)
 
-[Get-AzNetworkWatcherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
+[Get-AzNetworkWatcherReacherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
 
 [Get-AzNetworkWatcherFlowLogStatus](./Get-AzNetworkWatcherFlowLogStatus.md)
 

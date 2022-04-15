@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Invoke-AzDataFactoryV2DataFlowDebugSessionCommand.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Invoke-AzDataFactoryV2DataFlowDebugSessionCommand.md
 ms.openlocfilehash: 00760b93185b64e4beff1dd2ba751131b7d99ff0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140108369"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142052939"
 ---
 # Invoke-AzDataFactoryV2DataFlowDebugSessionCommand
 
 ## SYNOPSIS
-Menjalankan tindakan debug dalam sesi debug aliran data.
+Memanggil tindakan debug dalam sesi debug aliran data.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/invoke-azdatafactoryv2dataflowdebugsessioncommand) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/invoke-azdatafactoryv2dataflowdebugsessioncommand) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,8 +48,8 @@ Invoke-AzDataFactoryV2DataFlowDebugSessionCommand [-SessionId] <String> [-Comman
 ```
 
 ## DESCRIPTION
-Perintah ini menjalankan pratinjau data/pratinjau stats/ekspresi pratinjau untuk aliran data yang berbeda dalam sesi debug.
-Urutan perintah PowerShell untuk alur kerja debug aliran data harus:
+Perintah ini menjalankan pratinjau data/pratinjau statistik/pratinjau ekspresi untuk aliran data yang berbeda dalam sesi debug.
+Urutan perintah PowerShell untuk alur kerja debug alur data harus:
 1. Start-AzDataFactoryV2DataFlowDebugSession
 1. Add-AzDataFactoryV2DataFlowDebugSessionPackage
 1. Invoke-AzDataFactoryV2DataFlowDebugSessionCommand (ulangi langkah ini untuk perintah/target yang berbeda, atau ulangi langkah 2-3 untuk mengubah file paket)
@@ -86,12 +86,12 @@ PS C:\WINDOWS\system32> $output.output
 
 ```
 
-Contoh ini menjalankan perintah pratinjau data untuk sesi debug "fd76cd0d-8b37-4dc0-a370-3f9d43ac686d" di pabrik data "WiKiADF" lalu mengonversi output JSON menjadi string yang dapat dibaca.
+Contoh ini memanggil perintah pratinjau data untuk sesi debug "fd76cd0d-8b37-4dc0-a370-3f9d43ac686d" di pabrik data "WiKiADF" lalu konversi output JSON menjadi string yang dapat dibaca.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -Command
-Perintah debug aliran data. Opsional menjalankanPreviewQuery, executeStatisticsQuery dan executeExpressionQuery
+Perintah debug alur data. Opsional adalah executePreviewQuery, executeStatisticsQuery dan executeExpressionQuery
 
 ```yaml
 Type: System.String
@@ -241,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -SessionId
-ID sesi debug aliran data.
+ID sesi debug alur data.
 
 ```yaml
 Type: System.String
@@ -256,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### -StreamName
-Nama aliran aliran data untuk debug.
+Nama aliran data untuk proses debug.
 
 ```yaml
 Type: System.String
@@ -271,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -287,7 +287,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -302,7 +302,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -312,17 +312,17 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFlowDe azureSessionCommandResult
+### Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFlowDebugSessionCommandResult
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, data, factoriesKeywords: azure, azurerm, arm, resource, management, manager, data, factories
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrikKeywords: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 
-[Start-AzDataFactoryV2DataFlowDeflowSession](./Start-AzDataFactoryV2DataFlowDebugSession.md)
+[Start-AzDataFactoryV2DataFlowDebugSession](./Start-AzDataFactoryV2DataFlowDebugSession.md)
 
-[Get-AzDataFactoryV2DataFlowDeflowSession](./Get-AzDataFactoryV2DataFlowDebugSession.md)
+[Get-AzDataFactoryV2DataFlowDebugSession](./Get-AzDataFactoryV2DataFlowDebugSession.md)
 
-[Add-AzDataFactoryV2DataFlowDeflowSessionPackage](./Add-AzDataFactoryV2DataFlowDebugSessionPackage.md)
+[Add-AzDataFactoryV2DataFlowDebugSessionPackage](./Add-AzDataFactoryV2DataFlowDebugSessionPackage.md)
 
-[Stop-AzDataFactoryV2DataFlowDeflowSession](./Stop-AzDataFactoryV2DataFlowDebugSession.md)
+[Stop-AzDataFactoryV2DataFlowDebugSession](./Stop-AzDataFactoryV2DataFlowDebugSession.md)
