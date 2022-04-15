@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageServiceProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageServiceProperty.md
-ms.openlocfilehash: ff6a375b064b28917eb7baad029ec947c3c45b7f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2103bcc0ba6aa5dd8679d78858b63711147dbea2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140005651"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142365497"
 ---
 # Get-AzStorageServiceProperty
 
 ## SYNOPSIS
-Mendapatkan properti untuk Azure Storage baru.
+Mendapatkan properti untuk layanan Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageserviceproperty) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzStorageServiceProperty [-ServiceType] <StorageServiceType> [-Context <ISto
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStorageServiceProperty** mendapatkan properti untuk Azure Storage services.
+Cmdlet **Get-AzStorageServiceProperty** mendapatkan properti untuk layanan Azure Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Get Azure Storage services property of the Blob service
+### Contoh 1: Dapatkan properti layanan Azure Storage dari layanan Blob
 ```
 C:\PS>Get-AzStorageServiceProperty -ServiceType Blob
 
@@ -85,11 +88,11 @@ Accept wildcard characters: False
 
 ### -ServiceType
 Menentukan tipe layanan penyimpanan.
-Cmdlet ini mendapatkan properti pembuatan log untuk tipe layanan yang ditentukan oleh parameter ini.
+Cmdlet ini mendapatkan properti pembuatan log untuk tipe layanan yang ditentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Blob 
-- Tabel
-- Antrean
+- Gumpalan 
+- Meja
+- Antrian
 - File
 
 ```yaml
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

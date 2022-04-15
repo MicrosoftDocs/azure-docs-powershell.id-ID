@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.autom
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Update-AzureRmAutomationSourceControl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Update-AzureRmAutomationSourceControl.md
-ms.openlocfilehash: 60b5f721ddc3cdf3b06bbc86bbcbc9709b6aa1bd48d0ccd3781e1fab494fe74f
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 78308306e7bc46d4a9b3fadf4b00050cf9898f26
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140856440"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142390418"
 ---
 # Update-AzureRmAutomationSourceControl
 
 ## SYNOPSIS
-Memperbarui kontrol sumber Otomatisasi Azure.
+Memperbarui kontrol sumber Azure Automation.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,12 +29,12 @@ Update-AzureRmAutomationSourceControl -Name <String> [-AccessToken <SecureString
 ```
 
 ## DESCRIPTION
-Cmdlet Update-AzureRmAutomationSourceControl cmdlet mengubah nilai bidang dalam kontrol sumber dalam Azure Automation.
+Cmdlet Update-AzureRmAutomationSourceControl mengubah nilai bidang dalam kontrol sumber di Azure Automation.
 
 ## EXAMPLES
 
 ### Contoh 1
-Perintah ini mengatur bidang PublishRunbook menjadi false untuk kontrol sumber Otomatisasi Azure yang bernama VSTSNative dalam akun yang bernama devAccount.
+Perintah ini mengatur bidang PublishRunbook menjadi false untuk kontrol sumber Azure Automation bernama VSTSNative dalam akun bernama devAccount.
 
 
 ```powershell
@@ -95,7 +95,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Cabang
+### -Branch
 Cabang kontrol sumber.
 
 ```yaml
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

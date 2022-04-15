@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.event
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventHub/Commands.EventHub/help/Set-AzureRmEventHubNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventHub/Commands.EventHub/help/Set-AzureRmEventHubNamespace.md
-ms.openlocfilehash: c2e01186b561ea1c7e74ec917463ced168fdba2e9b5f3d83992d939f14e3651f
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 6fd3f000f7c91f0475cd18802dd6a9d096d35f5a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140853366"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142387877"
 ---
 # Set-AzureRmEventHubNamespace
 
 ## SYNOPSIS
-Memperbarui ruang nama Hub Acara yang ditentukan.
+Memperbarui ruang nama Hub Kejadian yang ditentukan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ Set-AzureRmEventHubNamespace [-ResourceGroupName] <String> [-Name] <String> [-Lo
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AutoInparameterSet
+### AutoInflateParameterSet
 ```
 Set-AzureRmEventHubNamespace [-ResourceGroupName] <String> [-Name] <String> [-Location] <String>
  [[-SkuName] <String>] [[-SkuCapacity] <Int32>] [[-State] <NamespaceState>] [[-Tag] <Hashtable>]
@@ -37,7 +37,7 @@ Set-AzureRmEventHubNamespace [-ResourceGroupName] <String> [-Name] <String> [-Lo
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzureRmEventHubNamespace memperbarui properti dari ruang nama Hub Kejadian yang ditentukan.
+Cmdlet Set-AzureRmEventHubNamespace memperbarui properti ruang nama Hub Kejadian yang ditentukan.
 
 ## EXAMPLES
 
@@ -46,14 +46,14 @@ Cmdlet Set-AzureRmEventHubNamespace memperbarui properti dari ruang nama Hub Kej
 PS C:\> Set-AzureRmEventHubNamespace -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -Location "WestUS" -State Created
 ```
 
-Memperbarui status ruang nama \`MyNamespaceName\` menjadi Dibuat.
+Memperbarui status ruang \`nama MyNamespaceName\` menjadi Dibuat .
 
 ### Contoh 2
 ```
 PS C:\> Set-AzureRmEventHubNamespace -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -Location "WestUS" -State Created -EnableAutoInflate -MaximumThroughputUnits 10
 ```
 
-Memperbarui status ruang nama \`MyNamespaceName\` dengan AutoIn protocole = enabled dan MaximumThroughputUnits = 10
+Memperbarui status namespace \`MyNamespaceName\` dengan AutoInflate = enabled dan MaximumThroughputUnits = 10
 
 ## PARAMETERS
 
@@ -72,8 +72,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -EnableAutoInotomatise
-Menunjukkan apakah PengaturanOtomatis diaktifkan
+### -EnableAutoInflate
+Menunjukkan apakah AutoInflate diaktifkan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaximumThroughputUnits
-Batas atas satuan throughput ketika FileOtomatis diaktifkan, nilai harus berada dalam 0 hingga 20 unit throughput.
+Batas atas unit throughput saat AutoInflate diaktifkan, nilai harus berada dalam 0 hingga 20 unit throughput.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Nama Ruang Nama Sku.
+Nama Sku Ruang Nama.
 
 ```yaml
 Type: System.String
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -241,15 +241,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
-### System.Nullable'1[[Microsoft.Azure.Commands.EventHub.Models.NamespaceState, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null]]
+### System.Nullable'1[[Microsoft.Azure.Commands.EventHub.Models.NamespaceState, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=netral, PublicKeyToken=null]]
 
 ### System.Collections.Hashtable
 

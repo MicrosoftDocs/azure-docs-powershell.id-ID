@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Set-AzureRmApplicationGatewayRedirectConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Set-AzureRmApplicationGatewayRedirectConfiguration.md
-ms.openlocfilehash: f3d7fadf12ce69787ba13fa35346e266d4fb3d416b4b87f5a7bdb1d7c11deaba
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: fe6c2ce03c238dadb53e8e0df88e4402d8f614d7
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140858324"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142385645"
 ---
 # Set-AzureRmApplicationGatewayRedirectConfiguration
 
 ## SYNOPSIS
-Mengatur konfigurasi pengalihan pada Gateway Aplikasi yang sudah ada.
+Mengatur konfigurasi pengalihan pada Application Gateway yang sudah ada.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -43,7 +43,7 @@ Set-AzureRmApplicationGatewayRedirectConfiguration -ApplicationGateway <PSApplic
 ```
 
 ## DESCRIPTION
-**Cmdlet Set-AzureRmApplicationGatewayRequestRoutingRule** mengubah konfigurasi pengalihan.
+Cmdlet **Set-AzureRmApplicationGatewayRequestRoutingRule** mengubah konfigurasi pengalihan.
 
 ## EXAMPLES
 
@@ -53,8 +53,8 @@ PS C:\>$AppGw = Get-AzureRmApplicationGateway -Name "ApplicationGateway01" -Reso
 PS C:\> $AppGw =  Set-AzureRmApplicationGatewayRedirectConfiguration -ApplicationGateway $appgw -Name "RedirectConfig01" -RedirectType Permanent -TargetUrl "https://www.contoso.com"
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dan menyimpannya dalam $AppGw variabel.
-Perintah kedua mengubah konfigurasi pengalihan untuk gateway aplikasi untuk mengalihkan tipe Permanen dan menggunakan url target.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dan menyimpannya dalam variabel $AppGw.
+Perintah kedua mengubah konfigurasi pengalihan gateway aplikasi untuk mengalihkan tipe Permanen dan menggunakan url target.
 
 ## PARAMETERS
 
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludePath
-Sertakan jalur di url yang dialihkan.
+Sertakan jalur dalam url yang dialihkan.
 Default adalah true.
 
 ```yaml
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeQueryString
-Sertakan string kueri di url yang dialihkan.
+Sertakan string kueri dalam url yang dialihkan.
 Default adalah true.
 
 ```yaml
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetUrl
-Pengalihan URL target
+Pengalihan fo URL target
 
 ```yaml
 Type: System.String
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

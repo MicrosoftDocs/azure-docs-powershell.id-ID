@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.profi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Profile/Commands.Profile/help/Resolve-AzureRmError.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Profile/Commands.Profile/help/Resolve-AzureRmError.md
-ms.openlocfilehash: 0d2df7888c31cc4a065e71a03b765de2aed21994b187d0d74dd1728912800c86
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 35e3904badd885be18268de0b0f61b14d59f7356
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140867006"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142384850"
 ---
 # Resolve-AzureRmError
 
 ## SYNOPSIS
-Tampilkan informasi mendetail tentang kesalahan PowerShell, dengan detail yang diperluas untuk Azure PowerShell kesalahan.
+Menampilkan informasi mendetail tentang kesalahan PowerShell, dengan detail yang diperluas untuk kesalahan Azure PowerShell.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -32,7 +32,7 @@ Resolve-AzureRmError [-Last] [-DefaultProfile <IAzureContextContainer>] [<Common
 ```
 
 ## DESCRIPTION
-Mengatasi dan menampilkan informasi mendetail tentang kesalahan di sesi PowerShell saat ini, termasuk di mana kesalahan terjadi dalam skrip, jejak tumpuk, dan semua pengecualian dalam dan agregat. Untuk Azure PowerShell ini menyediakan detail tambahan dalam masalah layanan penelusuran masalah, termasuk detail lengkap tentang permintaan dan respons server yang menyebabkan kesalahan.
+Mengatasi dan menampilkan informasi mendetail tentang kesalahan dalam sesi PowerShell saat ini, termasuk di mana kesalahan terjadi dalam skrip, jejak tumpukan, dan semua pengecualian dalam dan agregat. Untuk kesalahan Azure PowerShell menyediakan detail tambahan dalam masalah layanan debugging, termasuk detail lengkap tentang permintaan dan respons server yang menyebabkan kesalahan.
 
 ## EXAMPLES
 
@@ -62,7 +62,7 @@ HistoryId      : 3
 
 Dapatkan detail kesalahan terakhir.
 
-### Contoh 2: Mengatasi semua kesalahan dalam Sesi
+### Contoh 2: Mengatasi semua Kesalahan dalam Sesi
 ```
 PS C:\> Resolve-AzureRmError
 
@@ -128,7 +128,7 @@ Position       : At line:1 char:1
 HistoryId      : 5
 ```
 
-Dapatkan detail tentang semua kesalahan yang telah terjadi di sesi saat ini.
+Dapatkan detail semua kesalahan yang terjadi dalam sesi saat ini.
 
 ### Contoh 3: Mengatasi Kesalahan Tertentu
 ```
@@ -170,12 +170,12 @@ StackTrace     :    at Microsoft.Azure.Management.Storage.StorageAccountsOperati
 HistoryId      : 8
 ```
 
-Dapatkan detail kesalahan tertentu.
+Dapatkan detail kesalahan yang ditentukan.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -233,7 +233,7 @@ Parameter: Kesalahan (ByValue)
 
 ### Microsoft.Azure.Commands.Profile.Errors.AzureExceptionRecord
 
-### Microsoft.Azure.Commands.Profile.Errors.Azure Azure AzureExceptionRecord
+### Microsoft.Azure.Commands.Profile.Errors.AzureRestExceptionRecord
 
 ## CATATAN
 

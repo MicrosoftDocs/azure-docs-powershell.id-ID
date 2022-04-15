@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/FrontDoor/Commands.FrontDoor/help/New-AzureRmFrontDoorBackendPoolObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/FrontDoor/Commands.FrontDoor/help/New-AzureRmFrontDoorBackendPoolObject.md
 ms.openlocfilehash: 13b28d236e1c6e758c4f7883285c55017ce5a727
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132415262"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142387706"
 ---
 # New-AzureRmFrontDoorBackendPoolObject
 
@@ -55,7 +55,7 @@ Membuat objek PSBackendPool untuk pembuatan Pintu Depan
 ## PARAMETERS
 
 ### -Backend
-Kumpulan backend untuk kumpulan ini.
+Kumpulan backend untuk kolam ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSBackend[]
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -HealthProbeSettingsName
-Nama pengaturan layanan kesehatan untuk pool backend ini
+Nama pengaturan pemeriksaan kesehatan untuk kumpulan backend ini
 
 ```yaml
 Type: System.String
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancingSettingsName
-Nama pengaturan keseimbangan muat untuk pool backend ini
+Nama pengaturan penyeimbangan muatan untuk kumpulan backend ini
 
 ```yaml
 Type: System.String
@@ -160,11 +160,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -174,6 +174,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmFrontDoor](./New-AzureRmFrontDoor.md)
- [Set-AzureRmFrontDoor](./Set-AzureRmFrontDoor.md)
- [New-AzureRmFrontDoorBackendObject](./New-AzureRmFrontDoorBackendObject.md)
+[AzureRmFrontDoor](./New-AzureRmFrontDoor.md)
+ Baru [Set-AzureRmFrontDoor](./Set-AzureRmFrontDoor.md)
+ [Baru-AzureRmFrontDoorBackendObject](./New-AzureRmFrontDoorBackendObject.md)

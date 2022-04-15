@@ -6,16 +6,19 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/reset-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Reset-AzWebAppPublishingProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Reset-AzWebAppPublishingProfile.md
-ms.openlocfilehash: af64e1d75b8156977435435ae058e926a74035af
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2cf4374367c4ded3b2aba894c5223487dbbf09e4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140399838"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142394459"
 ---
 # Reset-AzWebAppPublishingProfile
 
 ## SYNOPSIS
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/reset-azwebapppublishingprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,13 +35,13 @@ Reset-AzWebAppPublishingProfile [-WebApp] <PSSite> [-DefaultProfile <IAzureConte
 ```
 
 ## DESCRIPTION
-Cmdlet **Reset-AzWebAppBlishingProfile** mereset profil penerbitan untuk Aplikasi Web tertentu.
+Cmdlet **Reset-AzWebAppPublishingProfile** mengatur ulang profil penerbitan untuk Aplikasi Web yang ditentukan.
 
 ## EXAMPLES
 
 ### Contoh 1
 
-Contoh berikut mereset profil penerbitan untuk IpRule Web App yang terkait dengan grup sumber daya MyResourceGroup.
+Contoh berikut mereset profil penerbitan untuk Web App IpRule yang terkait dengan grup sumber daya MyResourceGroup.
 
 ```powershell <!-- Aladdin Generated Example --> 
 Reset-AzWebAppPublishingProfile -Name IpRule -ResourceGroupName MyResourceGroup
@@ -47,7 +50,7 @@ Reset-AzWebAppPublishingProfile -Name IpRule -ResourceGroupName MyResourceGroup
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -107,13 +110,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## OUTPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzTenantDeploymentOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzTenantDeploymentOperation.md
-ms.openlocfilehash: 650eaa1ad0641783058a4ceea29289866a327328
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ebb3dbe19de4d10a10a78b2a61079e41f5d504d3
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140549272"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142464189"
 ---
 # Get-AzTenantDeploymentOperation
 
 ## SYNOPSIS
-Mendapatkan operasi penggunaan untuk penggunaan di lingkup penyewa
+Dapatkan operasi penyebaran untuk penyebaran di lingkup penyewa
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-aztenantdeploymentoperation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,23 +35,23 @@ Get-AzTenantDeploymentOperation -DeploymentObject <PSDeployment> [-Pre]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzTenantDeploymentOperation** mencantumkan semua operasi yang menjadi bagian penyebaran pada lingkup penyewa saat ini untuk membantu Anda mengidentifikasi dan memberikan informasi selengkapnya tentang operasi yang tepat yang gagal untuk penyebaran tertentu.
+Cmdlet **Get-AzTenantDeploymentOperation** mencantumkan semua operasi yang merupakan bagian dari penyebaran pada lingkup penyewa saat ini untuk membantu Anda mengidentifikasi dan memberikan informasi selengkapnya tentang operasi yang persis gagal untuk penyebaran tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan operasi penyebaran dengan nama penyebaran
+### Contoh 1: Dapatkan operasi penyebaran yang diberi nama penyebaran
 ```
 PS C:\>Get-AzTenantDeploymentOperation -DeploymentName Deploy01
 ```
 
-Mendapatkan operasi penyebaran dengan nama "Deploy01" pada lingkup penyewa saat ini.
+Mendapatkan operasi penyebaran dengan nama "Deploy01" di lingkup penyewa saat ini.
 
-### Contoh 2: Mendapatkan penyebaran dan mendapatkan operasi penyebaran
+### Contoh 2: Dapatkan penyebaran dan dapatkan operasi penyebarannya
 ```
 PS C:\>Get-AzTenantDeployment -Name Deploy01 | Get-AzTenantDeploymentOperation
 ```
 
-Perintah ini menerapkan "Deploy01" pada lingkup penyewa saat ini dan mendapatkan operasi penyebarannya.
+Perintah ini mendapatkan penyebaran "Deploy01" pada lingkup penyewa saat ini dan mendapatkan operasi penyebarannya.
 
 ## PARAMETERS
 
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Saat diatur, cmdlet harus menggunakan versi API prari tamu ketika menentukan versi mana yang akan digunakan secara otomatis.
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Get-AzureRmBatchApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Get-AzureRmBatchApplication.md
 ms.openlocfilehash: 2a1096d4424ff920c84c8fe7a2a4704496f95dfb
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425918"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142389815"
 ---
 # Get-AzureRmBatchApplication
 
 ## SYNOPSIS
-Mendapatkan informasi tentang aplikasi tertentu.
+Mendapatkan informasi tentang aplikasi yang ditentukan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,11 +28,11 @@ Get-AzureRmBatchApplication [-AccountName] <String> [-ResourceGroupName] <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmBatchApplication** mendapatkan informasi tentang aplikasi di akun Azure Batch.
+Cmdlet **Get-AzureRmBatchApplication** mendapatkan informasi tentang aplikasi dalam akun Azure Batch.
 
 ## EXAMPLES
 
-### Contoh 1: Menampilkan aplikasi dalam akun Kumpulan
+### Contoh 1: Menampilkan aplikasi dalam akun Batch
 ```
 PS C:\>Get-AzureRmBatchApplication -AccountName "ContosoBatch" -ResourceGroupName "ContosoBatchGroup"
 ApplicationId AllowUpdates DisplayName
@@ -42,12 +42,12 @@ ApplicationId AllowUpdates DisplayName
 litware       False        Litware Advanced Reticulator
 ```
 
-Perintah ini menampilkan semua aplikasi di akun ContosoBatch.
+Perintah ini menampilkan semua aplikasi dalam akun ContosoBatch.
 
 ## PARAMETERS
 
-### -Nama Akun
-Menentukan nama akun Kumpulan yang berisi aplikasi.
+### -AccountName
+Menentukan nama akun Batch yang berisi aplikasi.
 
 ```yaml
 Type: System.String
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi akun Kumpulan.
+Menentukan nama grup sumber daya yang berisi akun Batch.
 
 ```yaml
 Type: System.String
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -115,7 +115,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Batch.Models.PSApplication
+### Microsoft.Azure.Commands.Batch.Models.PSAplikasi
 
 ## CATATAN
 
@@ -123,14 +123,14 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmBatchApplicationPackage](./Get-AzureRmBatchApplicationPackage.md)
 
-[New-AzureRmBatchApplication](./New-AzureRmBatchApplication.md)
+[AzureRmBatchApplication baru](./New-AzureRmBatchApplication.md)
 
 [New-AzureRmBatchApplicationPackage](./New-AzureRmBatchApplicationPackage.md)
 
-[Remove-AzureRmBatchApplication](./Remove-AzureRmBatchApplication.md)
+[Hapus-AzureRmBatchAplikasi](./Remove-AzureRmBatchApplication.md)
 
 [Remove-AzureRmBatchApplicationPackage](./Remove-AzureRmBatchApplicationPackage.md)
 
-[Set-AzureRmBatchApplication](./Set-AzureRmBatchApplication.md)
+[Atur-AzureRmBatchAplikasi](./Set-AzureRmBatchApplication.md)
 
 

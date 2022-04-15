@@ -3,12 +3,12 @@ external help file: Azs.InfrastructureInsights.Admin-help.xml
 Module Name: Azs.Infrastructureinsights.Admin
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: f0ade164beff95e77b7990bd781f6e42ab77461390a2d15270044d51e319ee73
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: a3a64a045d988d59c2b1aefa650aa695ba09486f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416986"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142381247"
 ---
 # Get-AzsAlert
 
@@ -23,7 +23,7 @@ Get-AzsAlert [-Location <String>] [-ResourceGroupName <String>] [-Filter <String
  [-Skip <Int32>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsAlert [-Name] <String> [-Location <String>] [-ResourceGroupName <String>] [<CommonParameters>]
 ```
@@ -50,7 +50,7 @@ Dapatkan pemberitahuan berdasarkan Nama.
 Get-AzsAlert | Where State -EQ 'active' | select FaultTypeId, Title
 ```
 
-Dapatkan semua peringatan aktif serta tampilkan kesalahan dan jabatannya.
+Dapatkan semua peringatan aktif dan tampilkan kesalahan dan judulnya.
 
 ## PARAMETERS
 
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya pemberitahuan tersebut.
+Nama grup sumber daya pemberitahuan.
 
 ```yaml
 Type: String
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

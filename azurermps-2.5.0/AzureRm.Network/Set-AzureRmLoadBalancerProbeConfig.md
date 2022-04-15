@@ -5,16 +5,16 @@ ms.assetid: C8B91455-C1A7-43BD-9E63-A20E2694371F
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/set-azurermloadbalancerprobeconfig
 schema: 2.0.0
 ms.openlocfilehash: 902fa7e266583fe52c516ac3704bdc394215e2c7
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421948"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142392113"
 ---
 # Set-AzureRmLoadBalancerProbeConfig
 
 ## SYNOPSIS
-Mengatur status tujuan untuk konfigurasi konfigurasi konfigurasi configuration.
+Mengatur status tujuan untuk konfigurasi penyelidikan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,28 +27,28 @@ Set-AzureRmLoadBalancerProbeConfig -Name <String> -LoadBalancer <PSLoadBalancer>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmLoadBalancerProbeConfig** mengatur status tujuan untuk konfigurasi konfigurasi konfigurasi configuration.
+Cmdlet **Set-AzureRmLoadBalancerProbeConfig** mengatur status tujuan untuk konfigurasi probe.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah konfigurasi konfigurasi pemuatan
+### Contoh 1: Mengubah konfigurasi probe pada load balancer
 ```
 PS C:\>$slb = Get-AzureRmLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 PS C:\> $slb | Add-AzureRmLoadBalancerProbeConfig -Name "NewProbe" -Protocol "http" -Port 80 -IntervalInSeconds 15 -ProbeCount 2 -RequestPath "healthcheck.aspx" 
 PS C:\> $slb | Set-AzureRmLoadBalancerProbeConfig -Name "NewProbe" -Port 80 -IntervalInSeconds 15 -ProbeCount 2
 ```
 
-Perintah pertama mendapatkan loadbalancer bernama MyLoadBalancer, lalu menyimpannya dalam $slb variabel.
+Perintah pertama mendapatkan loadbalancer bernama MyLoadBalancer, lalu menyimpannya dalam variabel $slb.
 
-Perintah kedua menggunakan operator pipeline untuk menyampaikan penyeimbang muat di $slb ke Add-AzureRmLoadBalancerProbeConfig, yang menambahkan konfigurasi baru ke dalamnya.
+Perintah kedua menggunakan operator pipeline untuk mengirimkan penyeimbang muatan dalam $slb ke Add-AzureRmLoadBalancerProbeConfig, yang menambahkan konfigurasi probe baru ke dalamnya.
 
-Perintah ketiga melewati penyeimbang muat ke **Set-AzureRmLoadBalancerProbeConfig**, yang mengatur konfigurasi baru.
-Perlu menentukan beberapa parameter yang sama yang ditentukan dalam perintah sebelumnya karena parameter tersebut diperlukan oleh cmdlet saat ini.
+Perintah ketiga melewati load balancer ke **Set-AzureRmLoadBalancerProbeConfig**, yang mengatur konfigurasi baru.
+Perhatikan bahwa perlu menentukan beberapa parameter yang sama yang ditentukan dalam perintah sebelumnya karena diperlukan oleh cmdlet saat ini.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -IntervalInSeconds
-Menentukan interval, dalam detik, antar nilai ke setiap instans layanan dengan beban seimbang.
+Menentukan interval, dalam detik, antara probe untuk setiap instans layanan yang seimbang muat.
 
 ```yaml
 Type: Int32
@@ -78,8 +78,8 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan penyeimbang muat.
-Cmdlet ini mengatur status tujuan untuk konfigurasi konfigurasi konfigurasi untuk penyeimbang muat yang ditentukan parameter ini.
+Menentukan penyeimbang beban.
+Cmdlet ini mengatur status tujuan untuk konfigurasi probe untuk load balancer yang ditentukan parameter ini.
 
 ```yaml
 Type: PSLoadBalancer
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama konfigurasi konfigurasi konfigurasi konfigurasi ini yang ditetapkan cmdlet ini.
+Menentukan nama konfigurasi probe yang diatur cmdlet ini.
 
 ```yaml
 Type: String
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Menentukan port yang harus tersambung ke layanan berimbang muat.
+Menentukan port tempat probe harus tersambung ke layanan seimbang-muat.
 
 ```yaml
 Type: Int32
@@ -123,8 +123,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DipesanCount
-Menentukan jumlah kegagalan berturut-turut per instans untuk suatu instans dianggap tidak sehat.
+### -ProbeCount
+Menentukan jumlah kegagalan berturut-turut per instans yang dianggap tidak sehat.
 
 ```yaml
 Type: Int32
@@ -138,8 +138,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
-Menentukan protokol yang akan digunakan untuk probing.
+### -Protokol
+Menentukan protokol yang digunakan untuk menyelidikan.
 Nilai yang dapat diterima untuk parameter ini adalah: Tcp atau Http.
 
 ```yaml
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestPath
-Menentukan jalur dalam layanan berimbang muat untuk menetapkan kesehatan.
+Menentukan jalur dalam layanan load-balanced untuk pemeriksaan guna menentukan kesehatan.
 
 ```yaml
 Type: String
@@ -171,12 +171,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSLoadBalancer
-Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari saluran
+Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari pipeline
 
 ## OUTPUTS
 
@@ -194,6 +194,6 @@ Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari saluran
 
 [New-AzureRmLoadBalancerProbeConfig](./New-AzureRmLoadBalancerProbeConfig.md)
 
-[Remove-AzureRmLoadBalancerProbeConfig](./Remove-AzureRmLoadBalancerProbeConfig.md)
+[Hapus-AzureRmLoadBalancerProbeConfig](./Remove-AzureRmLoadBalancerProbeConfig.md)
 
 
