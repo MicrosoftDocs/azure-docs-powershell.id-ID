@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzIotSecuritySolution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzIotSecuritySolution.md
 ms.openlocfilehash: 6ac4468a98a490c01029527d0c5f0f303ea84d2a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140277349"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142300021"
 ---
 # Set-AzIotSecuritySolution
 
@@ -18,7 +18,7 @@ ms.locfileid: "140277349"
 Membuat atau memperbarui solusi keamanan IoT
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/set-aziotsecuritysolution) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.security/set-aziotsecuritysolution) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,8 +50,8 @@ Set-AzIotSecuritySolution -ResourceId <String> [-Tag <Hashtable>] -Location <Str
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzIotSecuritySolution membuat atau memperbarui solusi keamanan tertentu. Solusi keamanan IoT mengumpulkan data dan kejadian keamanan dari perangkat iot dan hub iot untuk membantu mencegah dan mendeteksi ancaman.
-Nama solusi keamanan iot harus sama persis dengan nama hub iot.
+Cmdlet Set-AzIotSecuritySolution membuat atau memperbarui solusi keamanan iot tertentu. Solusi keamanan IoT mengumpulkan data keamanan dan kejadian dari perangkat iot dan iot hub untuk membantu mencegah dan mendeteksi ancaman.
+Nama solusi keamanan iot harus identik dengan nama hub iot.
 
 ## EXAMPLES
 
@@ -93,7 +93,7 @@ UnmaskedIpLoggingStatus: "Enabled"
 Tags: {}
 ```
 
-Buat solusi keamanan "MySample" baru untuk hub IoT dengan id sumber daya "/subscriptions/XXXXXXXX-XXXX-XXXXX-XXXX-XXXXXXXXXXXX/resourceGroups/OperatorResourceGroup/providers/Microsoft.Devices/IotHubs/MySample" (nama solusi harus sama dengan nama hub IoT)
+Buat solusi keamanan iot baru "MySample" untuk hub IoT dengan id sumber daya "/subscriptions/XXXXXXXX-XXXXX-XXXX-XXXXXXXXXX/resourceGroups/MichalResourceGroup/providers/Microsoft.Devices/IotHubs/MySample" (nama solusi harus identik dengan nama hub IoT)
 
 ## PARAMETERS
 
@@ -166,8 +166,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Enabled
-Status .
+### -Difungsikan
+Status.
 
 ```yaml
 Type: System.Boolean
@@ -236,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotHub
-Hub Iot.
+Banyak hub.
 
 ```yaml
 Type: System.String[]
@@ -304,8 +304,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RecommendationsConfiguration
-Rekomendasi lain.
+### -RekomendasiKonfigurasi
+Rekomendasi konfigurasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Security.Models.IotSecuritySolutions.PSRecommendationConfiguration[]
@@ -347,7 +347,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya keamanan yang ingin Anda perintahkan.
+ID sumber daya keamanan yang ingin Anda gunakan untuk meminta perintah.
 
 ```yaml
 Type: System.String
@@ -362,7 +362,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag.
+Tags.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -389,7 +389,7 @@ Accept wildcard characters: False
 ```
 
 ### -UnmaskedIpLoggingStatus
-Status pembuatan log ip takmaser.
+Status pembuatan log ip yang tidak dimasuki.
 
 ```yaml
 Type: System.String
@@ -470,7 +470,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -486,7 +486,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -501,7 +501,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

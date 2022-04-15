@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzServiceEndpointPolicyDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzServiceEndpointPolicyDefinition.md
 ms.openlocfilehash: 9f347aa67f2bca127c4c89dda29b85feb2dd7429
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139973823"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142302289"
 ---
 # Add-AzServiceEndpointPolicyDefinition
 
 ## SYNOPSIS
-Menambahkan definisi kebijakan titik akhir layanan ke kebijakan yang ditentukan.
+Menambahkan definisi kebijakan titik akhir layanan ke kebijakan tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azserviceendpointpolicydefinition) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azserviceendpointpolicydefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Add-AzServiceEndpointPolicyDefinition -Name <String> -ServiceEndpointPolicy <PSS
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzServiceEndpointPolicyDefinition** menambahkan definisi kebijakan titik akhir layanan terhadap kebijakan tersebut.
+Cmdlet **Add-AzServiceEndpointPolicyDefinition** menambahkan definisi kebijakan titik akhir layanan ke kebijakan.
 
 ## EXAMPLES
 
@@ -38,7 +38,7 @@ Cmdlet **Add-AzServiceEndpointPolicyDefinition** menambahkan definisi kebijakan 
 $policydef= New-AzServiceEndpointPolicyDefinition -Name "ServiceEndpointPolicyDefinition1" -ResourceGroupName "ResourceGroup01" -Service "Microsoft.Storage" -ServiceResources "subscriptions/sub1" -Description "New Definition"
 ```
 
-Perintah ini memperbarui definisi kebijakan titik akhir layanan dengan nama ServiceEndpointPolicyDefinition1, layanan Microsoft. Storage, langganan/sub1 sumber daya layanan dan deskripsi "Definisi Baru" yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01 dan menyimpannya di $policydef sumber daya.
+Perintah ini memperbarui definisi kebijakan titik akhir layanan dengan nama ServiceEndpointPolicyDefinition1, layanan Microsoft. Storage, langganan/sub1 sumber daya layanan, dan deskripsi "Definisi Baru" yang termasuk dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $policydef.
 
 ## PARAMETERS
 
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Deskripsi definisi
+Penjabaran dari definisi
 
 ```yaml
 Type: System.String
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

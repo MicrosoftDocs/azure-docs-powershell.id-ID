@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzProviderPreviewFeature.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzProviderPreviewFeature.md
-ms.openlocfilehash: 6a7a191635b05c8feb7f68bf1b69f15d4dd36b2c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f4ccab13a7930b86cc37fd25c3b1da12c80e3562
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140006624"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142317659"
 ---
 # Get-AzProviderPreviewFeature
 
 ## SYNOPSIS
-Dapatkan pendaftaran fitur di akun Anda.
+Mendapatkan pendaftaran fitur di akun Anda.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azproviderpreviewfeature) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzProviderPreviewFeature [-Name <String>] -ProviderNamespace <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzProviderPreviewFeature** mendapatkan pendaftaran fitur di akun Anda.
+Cmdlet **Get-AzProviderPreviewFeature** mendapatkan registrasi fitur di akun Anda.
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ Cmdlet **Get-AzProviderPreviewFeature** mendapatkan pendaftaran fitur di akun An
 PS C:\>Get-AzProviderPreviewFeature -FeatureName AllowApplicationSecurityGroups -ProviderNamespace Microsoft.Network
 ```
 
-Hal ini akan mendapatkan fitur AllowApplicationSecurityGroups untuk Microsoft.Network dalam akun Anda.
+Tindakan ini akan mendapatkan fitur AllowApplicationSecurityGroups untuk Microsoft.Network di akun Anda.
 
 ## PARAMETERS
 
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

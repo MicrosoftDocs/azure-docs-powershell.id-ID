@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateReplicationProtectionIntent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateReplicationProtectionIntent.md
-ms.openlocfilehash: 35320ce5e394624b6781bcf2774e043ddd66267d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a78a072408f7c6716958aa17d1f9254a76f30340
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140571177"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142291759"
 ---
 # Get-AzMigrateReplicationProtectionIntent
 
 ## SYNOPSIS
 Mendapatkan detail tujuan perlindungan replikasi ASR.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.migrate/get-azmigratereplicationprotectionintent) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzMigrateReplicationProtectionIntent -ResourceGroupName <String> -ResourceNa
  [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzMigrateReplicationProtectionIntent -IntentObjectName <String> -ResourceGroupName <String>
  -ResourceName <String> [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.IMigrateIdentity
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -IntentObjectName
-Nama tujuan proteksi replikasi.
+Nama maksud proteksi replikasi.
 
 ```yaml
 Type: System.String
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat vault layanan pemulihan ada.
+Nama grup sumber daya tempat kubah layanan pemulihan ada.
 
 ```yaml
 Type: System.String
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceName
-Nama vault layanan pemulihan.
+Nama kubah layanan pemulihan.
 
 ```yaml
 Type: System.String
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipToken
-Token penomoran halaman.
+Token paginasi.
 
 ```yaml
 Type: System.String
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -204,43 +207,43 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IMigrateIdentity>: Parameter Identitas
-  - `[AccountName <String>]`: Jalankan sebagai nama arm akun.
+  - `[AccountName <String>]`: Jalankan sebagai nama ARM akun.
   - `[AlertSettingName <String>]`: Nama konfigurasi pemberitahuan email.
-  - `[ClusterName <String>]`: Nama ARM kluster.
-  - `[DatabaseInstanceName <String>]`: Nama unik contoh database di hub migrasi Azure.
+  - `[ClusterName <String>]`: Nama ARM Kluster.
+  - `[DatabaseInstanceName <String>]`: Nama unik instans database di hub migrasi Azure.
   - `[DatabaseName <String>]`: Nama unik database di hub migrasi Azure.
   - `[EventName <String>]`: Nama unik acara dalam proyek migrasi.
-  - `[FabricName <String>]`: Fabric name.
-  - `[HostName <String>]`: Nama host ARM.
+  - `[FabricName <String>]`: Nama kain.
+  - `[HostName <String>]`: Nama ARM host.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[IntentObjectName <String>]`: Nama tujuan proteksi replikasi.
+  - `[IntentObjectName <String>]`: Nama maksud proteksi replikasi.
   - `[JobName <String>]`: Nama ARM pekerjaan.
-  - `[LogicalNetworkName <String>]`: Nama jaringan logis.
-  - `[MachineName <String>]`: Nama ARM mesin.
-  - `[MappingName <String>]`: Proteksi Container mapping name.
-  - `[MigrateProjectName <String>]`: Nama proyek Azure Migrate.
+  - `[LogicalNetworkName <String>]`: Nama jaringan logika.
+  - `[MachineName <String>]`: Nama ARM Mesin.
+  - `[MappingName <String>]`: Nama pemetaan Kontainer Proteksi.
+  - `[MigrateProjectName <String>]`: Nama proyek Migrasi Azure.
   - `[MigrationItemName <String>]`: Nama item migrasi.
   - `[MigrationRecoveryPointName <String>]`: Nama titik pemulihan migrasi.
   - `[NetworkMappingName <String>]`: Nama pemetaan jaringan.
   - `[NetworkName <String>]`: Nama jaringan utama.
-  - `[OperationStatusName <String>]`: Nama ARM status operasi.
+  - `[OperationStatusName <String>]`: Status operasi NAMA ARM.
   - `[PolicyName <String>]`: Nama kebijakan replikasi.
   - `[ProtectableItemName <String>]`: Nama item yang dapat diproteksi.
-  - `[ProtectionContainerName <String>]`: Nama wadah proteksi.
+  - `[ProtectionContainerName <String>]`: Nama wadah perlindungan.
   - `[ProviderName <String>]`: Nama penyedia layanan pemulihan.
-  - `[RecoveryPlanName <String>]`: Nama paket pemulihan.
+  - `[RecoveryPlanName <String>]`: Nama rencana pemulihan.
   - `[RecoveryPointName <String>]`: Nama titik pemulihan.
-  - `[ReplicatedProtectedItemName <String>]`: Replikasi nama item yang diproteksi.
-  - `[ReplicationProtectedItemName <String>]`: Nama item terlindungi tempat agen akan diperbarui.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
-  - `[ResourceName <String>]`: Nama vault layanan pemulihan.
+  - `[ReplicatedProtectedItemName <String>]`: Nama item yang diproteksi replikasi.
+  - `[ReplicationProtectedItemName <String>]`: Nama item yang diproteksi di mana agen akan diperbarui.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceName <String>]`: Nama kubah layanan pemulihan.
   - `[SiteName <String>]`: Nama situs.
   - `[SolutionName <String>]`: Nama unik solusi migrasi dalam proyek migrasi.
-  - `[StorageClassificationMappingName <String>]`: Storage pemetaan klasifikasi.
-  - `[StorageClassificationName <String>]`: Storage klasifikasi.
+  - `[StorageClassificationMappingName <String>]`: Storage nama pemetaan klasifikasi.
+  - `[StorageClassificationName <String>]`: Storage nama klasifikasi.
   - `[SubscriptionId <String>]`: ID langganan target.
-  - `[VaultSettingName <String>]`: Nama pengaturan Vault.
-  - `[VcenterName <String>]`: VCenter NAMA ARM.
+  - `[VaultSettingName <String>]`: Nama pengaturan vault.
+  - `[VcenterName <String>]`: VCenter ARM name.
   - `[VirtualMachineName <String>]`: Nama Mesin Virtual.
 
 ## RELATED LINKS

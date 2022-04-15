@@ -3,12 +3,12 @@ external help file: Azs.Network.Admin-help.xml
 Module Name: Azs.Network.Admin
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: bc765b593c921c840503244412b8a47d5ce222bb68d4163d6cd4762638ad157e
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: af3edc04e7db61fa43aa4b192d4bc29d0ec47640
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416173"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142310685"
 ---
 # Get-AzsPublicIPAddress
 
@@ -32,7 +32,7 @@ Daftar alamat IP publik.
 Get-AzsPublicIPAddress
 ```
 
-Dapatkan daftar alamat ip publik, baik yang dialokasikan atau tidak dialokasikan.
+Dapatkan daftar alamat IP publik, baik dialokasikan atau tidak dialokasikan.
 
 ## PARAMETERS
 
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
