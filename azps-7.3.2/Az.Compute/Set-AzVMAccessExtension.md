@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMAccessExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMAccessExtension.md
-ms.openlocfilehash: c42fea9c873f0bb5a4e495a7c4d39423b481c91e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9f96f0c364d70911a7325643bdced8d297e26db8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140188449"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142377107"
 ---
 # Set-AzVMAccessExtension
 
 ## SYNOPSIS
 Menambahkan ekstensi VMAccess ke mesin virtual.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmaccessextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,21 +31,21 @@ Set-AzVMAccessExtension [-Credential <PSCredential>] [-ResourceGroupName] <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVMAccessExtension** menambahkan Virtual Machine Access (VMAccess) Virtual Machine VMAccess Extension ke mesin virtual. Ekstensi VMAccess dapat digunakan untuk mengatur kata sandi sementara dan kata sandi ini harus segera diubah setelah masuk ke komputer. Hal ini tidak didukung pada Windows Pengontrol Domain.
+Cmdlet **Set-AzVMAccessExtension** menambahkan Virtual Machine Access (VMAccess) Virtual Machine VMAccess Extension ke mesin virtual. Ekstensi VMAccess dapat digunakan untuk mengatur kata sandi sementara dan ini harus segera diubah setelah masuk ke komputer. Ini tidak didukung pada Windows Pengontrol Domain.
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan ekstensi VMAccess
+### Contoh 1: Menambahkan ekstensi VMAccess
 ```powershell
 Set-AzVMAccessExtension -ResourceGroupName "ResourceGroup11" -Location "Central US" -VMName "VirtualMachine07" -Name "ContosoTest" -TypeHandlerVersion "2.4" -UserName "PFuller" -Password "Password"
 ```
 
-Perintah ini menambahkan ekstensi VMAccess untuk komputer virtual bernama VirtualMachine07 di ResourceGroup11.
-Perintah menentukan versi penanganan tipe dan nama untuk VMAccess.
+Perintah ini menambahkan ekstensi VMAccess untuk mesin virtual bernama VirtualMachine07 di ResourceGroup11.
+Perintah menentukan nama dan versi pengatur tipe untuk VMAccess.
 
 ### Contoh 2
 
-Menambahkan ekstensi VMAccess ke mesin virtual. (otomatisgenerated)
+Menambahkan ekstensi VMAccess ke mesin virtual. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -51,11 +54,11 @@ Set-AzVMAccessExtension -Credential <PSCredential> -Location 'Central US' -Name 
 
 ## PARAMETERS
 
-### -Credential
-Menentukan nama pengguna dan kata sandi untuk komputer virtual sebagai objek **PSCredential** .
-Jika mengetik nama yang berbeda dengan akun administrator lokal saat ini pada VM, ekstensi VMAccess akan menambahkan akun administrator lokal dengan nama tersebut, dan menetapkan kata sandi yang ditentukan untuk akun tersebut. Jika akun administrator lokal pada VM Anda ada, vm akan mengatur ulang kata sandi dan jika akun dinonaktifkan, ekstensi VMAccess akan mengaktifkannya.
+### -Kredensial
+Menentukan nama pengguna dan kata sandi untuk mesin virtual sebagai objek **PSCredential** .
+Jika Anda mengetikkan nama yang berbeda dari akun administrator lokal saat ini di VM, ekstensi VMAccess akan menambahkan akun administrator lokal dengan nama tersebut, dan menetapkan kata sandi yang ditentukan ke akun tersebut. Jika akun administrator lokal di VM Anda ada, akun tersebut akan mereset kata sandi dan jika akun dinonaktifkan, ekstensi VMAccess mengaktifkannya.
 Untuk mendapatkan kredensial, gunakan cmdlet Get-Credential.
-Untuk informasi selengkapnya, ketik `Get-Help Get-Credential`.
+Untuk informasi selengkapnya, ketik .`Get-Help Get-Credential`
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -98,9 +101,9 @@ Accept wildcard characters: False
 ```
 
 ### -ForceRerun
-Mengindikasikan bahwa cmdlet ini memaksa jalankan ulang konfigurasi ekstensi yang sama pada mesin virtual tanpa menghapus instalasi dan menginstal ulang ekstensi.
-Nilai dapatlah string apa pun yang berbeda dari nilai saat ini.
-Jika forceUpdateTag tidak diubah, pembaruan pada pengaturan publik atau yang diproteksi masih diterapkan oleh penanganan.
+Menunjukkan bahwa cmdlet ini memaksa pengintaian ulang konfigurasi ekstensi yang sama pada mesin virtual tanpa menghapus instalan dan menginstal ulang ekstensi.
+Nilai dapat berupa string apa pun yang berbeda dari nilai saat ini.
+Jika forceUpdateTag tidak diubah, pembaruan untuk pengaturan publik atau terproteksi masih diterapkan oleh handler.
 
 ```yaml
 Type: System.String
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi mesin virtual.
+Menentukan lokasi mesin maya.
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama ekstensi yang tambahkan cmdlet ini.
+Menentukan nama ekstensi yang ditambahkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Memulai operasi dan segera mengembalikannya, sebelum operasi selesai. Untuk mengetahui apakah operasi berhasil diselesaikan, gunakan beberapa mekanisme lain.
+Memulai operasi dan segera kembali, sebelum operasi selesai. Untuk menentukan apakah operasi telah berhasil diselesaikan, gunakan beberapa mekanisme lain.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: System.String
@@ -175,8 +178,8 @@ Accept wildcard characters: False
 ```
 
 ### -TypeHandlerVersion
-Menentukan versi ekstensi untuk digunakan untuk komputer virtual ini.
-Untuk mendapatkan versi, jalankan cmdlet Get-AzVMExtensionImage dengan nilai Microsoft.Compute untuk parameter *PublisherName* dan VMAccessAgent untuk parameter *Type* . typeHandlerVersion harus 2.0 atau lebih besar, karena versi 1 sudah tidak berlaku.
+Menentukan versi ekstensi yang akan digunakan untuk mesin virtual ini.
+Untuk mendapatkan versi, jalankan cmdlet Get-AzVMExtensionImage dengan nilai Microsoft.Compute untuk parameter *PublisherName* dan VMAccessAgent untuk parameter *Tipe* . TypeHandlerVersion harus 2.0 atau lebih besar, karena versi 1 ditolak.
 
 ```yaml
 Type: System.String
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
