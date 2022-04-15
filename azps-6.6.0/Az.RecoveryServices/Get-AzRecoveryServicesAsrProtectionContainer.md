@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrProtectionContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrProtectionContainer.md
 ms.openlocfilehash: 294c51f4d1474bbde22eab0b6247a4bd60f4f994
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140462465"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141949767"
 ---
 # Get-AzRecoveryServicesAsrProtectionContainer
 
 ## SYNOPSIS
-Dapatkan wadah proteksi ASR di vault Layanan Pemulihan.
+Mendapatkan wadah perlindungan ASR dalam kubah Layanan Pemulihan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrprotectioncontainer) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrprotectioncontainer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,9 +41,9 @@ Get-AzRecoveryServicesAsrProtectionContainer -FriendlyName <String> -Fabric <ASR
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesAsrProtectionContainer** mendapatkan wadah proteksi Pemulihan Situs Azure di vault Layanan Pemulihan.
-Wadah proteksi adalah wadah logika untuk objek yang dapat diproteksi (ditemukan) dan dilindungi seperti mesin virtual.
-Kebijakan replikasi menentukan pengaturan replikasi untuk item yang diproteksi dan dapat dikaitkan dengan wadah proteksi dan diterapkan pada item yang dapat diproteksi.
+Cmdlet **Get-AzRecoveryServicesAsrProtectionContainer** mendapatkan wadah perlindungan azure Site Recovery dalam kubah Layanan Pemulihan.
+Wadah proteksi adalah wadah logika untuk objek yang dapat dilindungi(ditemukan) dan dilindungi seperti mesin virtual.
+Kebijakan replikasi menentukan pengaturan replikasi untuk item yang diproteksi dan dapat dikaitkan dengan wadah proteksi dan diterapkan ke item yang dapat diproteksi.
 
 ## EXAMPLES
 
@@ -52,7 +52,7 @@ Kebijakan replikasi menentukan pengaturan replikasi untuk item yang diproteksi d
 PS C:\> $ProtectionContainers = Get-AzRecoveryServicesAsrProtectionContainer -Fabric $fabric
 ```
 
-List of protection container in fabric $fabric.
+Daftar wadah perlindungan dalam $fabric kain.
 
 ### Contoh 2
 ```
@@ -68,7 +68,7 @@ AvailablePolicies           : {V2aTestPolicy, v2ahydra, v2aswag-failback, v2aswa
 ProtectionContainerMappings : {pcmmapping, v2aPowerold, 636569dc-79bc-4f50-b83d-89f58717f0b2, df7aa204-b0ef-4d62-943e-324551030e5b}
 ```
 
-Protection container in fabric $fabric with name.
+Wadah perlindungan dalam $fabric kain dengan nama.
 
 ### Contoh 3
 ```
@@ -84,7 +84,7 @@ AvailablePolicies           : {V2aTestPolicy, v2ahydra, v2aswag-failback, v2aswa
 ProtectionContainerMappings : {pcmmapping, v2aPowerold, 636569dc-79bc-4f50-b83d-89f58717f0b2, df7aa204-b0ef-4d62-943e-324551030e5b}
 ```
 
-Protection container in fabric $fabric with friendly Name.
+Wadah perlindungan dalam $fabric kain dengan Nama yang ramah.
 
 ## PARAMETERS
 
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -Fabric
-Look for the protection container in the specified ASR fabric.
+Cari wadah perlindungan dalam kain ASR yang ditentukan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRFabric
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -FriendlyName
-Menentukan nama proteksi ASR yang mudah dikenal untuk mencarinya.
+Menentukan nama wadah proteksi ASR yang mudah dicari.
 
 ```yaml
 Type: System.String
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama wadah proteksi ASR untuk mencari.
+Menentukan nama wadah proteksi ASR untuk dicari.
 
 ```yaml
 Type: System.String
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

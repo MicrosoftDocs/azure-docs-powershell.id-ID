@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayCustomError.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayCustomError.md
 ms.openlocfilehash: 0a3adaa676c293c7cbb8744aa2d988a623bf5ae7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140465507"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141954411"
 ---
 # Get-AzApplicationGatewayCustomError
 
@@ -18,7 +18,7 @@ ms.locfileid: "140465507"
 Mendapatkan kesalahan kustom dari gateway aplikasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azapplicationgatewaycustomerror) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewaycustomerror) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,19 +37,19 @@ Cmdlet **Get-AzApplicationGatewayCustomError** mendapatkan kesalahan kustom dari
 PS C:\> $ce = Get-AzApplicationGatewayCustomError -ApplicationGateway $appgw -StatusCode HttpStatus502
 ```
 
-Perintah ini mendapatkan dan mengembalikan kesalahan kustom http kode status 502 dari gateway aplikasi $appgw.
+Perintah ini mendapatkan dan mengembalikan kesalahan kustom kode status http 502 dari gateway aplikasi $appgw.
 
 ### Contoh 2: Mendapatkan daftar semua kesalahan kustom di gateway aplikasi
 ```powershell
 PS C:\> $ces = Get-AzApplicationGatewayCustomError -ApplicationGateway $appgw
 ```
 
-Perintah ini akan mendapatkan dan mengembalikan daftar semua kesalahan kustom dari gateway aplikasi $appgw.
+Perintah ini mendapatkan dan mengembalikan daftar semua kesalahan kustom dari gateway aplikasi $appgw.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Gateway Aplikasi
+Application Gateway
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

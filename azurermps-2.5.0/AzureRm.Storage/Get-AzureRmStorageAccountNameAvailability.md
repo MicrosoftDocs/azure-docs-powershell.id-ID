@@ -4,17 +4,17 @@ Module Name: AzureRM.Storage
 ms.assetid: F6EA099A-D588-49AE-9D2C-865BC32685BA
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.storage/get-azurermstorageaccountnameavailability
 schema: 2.0.0
-ms.openlocfilehash: eb994465b00ae183e18afb9ddf8e6f235755e6eff68d707f32c244e4d38282b7
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 5371b5c54cfaff4b1c48dd8a8643e0cc51b1e00e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418584"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141970501"
 ---
 # Get-AzureRmStorageAccountNameAvailability
 
 ## SYNOPSIS
-Memeriksa ketersediaan akun email Storage Anda.
+Memeriksa ketersediaan nama akun Storage.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -30,7 +30,7 @@ Cmdlet **Get-AzureRmStorageAccountNameAvailability** memeriksa apakah nama akun 
 
 ## EXAMPLES
 
-### Contoh 1: Periksa ketersediaan akun Storage nama akun
+### Contoh 1: Memeriksa ketersediaan nama akun Storage
 ```
 PS C:\>Get-AzureRmStorageAccountNameAvailability -Name 'contosostorage03'
 ```
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

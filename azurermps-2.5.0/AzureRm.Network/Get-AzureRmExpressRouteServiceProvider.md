@@ -5,11 +5,11 @@ ms.assetid: 009F6E65-0268-4505-AEC1-FF379CB96804
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/get-azurermexpressrouteserviceprovider
 schema: 2.0.0
 ms.openlocfilehash: 7e4febe620b8a440d1f9a5eb0c9432da9ff47c74
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132413585"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141971250"
 ---
 # Get-AzureRmExpressRouteServiceProvider
 
@@ -25,7 +25,7 @@ Get-AzureRmExpressRouteServiceProvider [-DefaultProfile <IAzureContextContainer>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmExpressRouteServiceProvider** mengambil daftar penyedia layanan ExpressRoute dan atributnya. Atribut meliputi opsi lokasi dan bandwidth.
+Cmdlet **Get-AzureRmExpressRouteServiceProvider** mengambil daftar penyedia layanan ExpressRoute dan atributnya. Atribut menyertakan opsi lokasi dan bandwidth.
 
 ## EXAMPLES
 
@@ -39,7 +39,7 @@ Get-AzureRmExpressRouteServiceProvider |
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -54,7 +54,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

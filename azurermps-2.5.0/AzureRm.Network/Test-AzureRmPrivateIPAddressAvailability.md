@@ -5,16 +5,16 @@ ms.assetid: 0780CB09-9C3B-468A-A718-3A646FE3D152
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/test-azurermprivateipaddressavailability
 schema: 2.0.0
 ms.openlocfilehash: 73924c1d1308a4cf457033e27e49ad7f9e19392e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132414458"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141970782"
 ---
 # Test-AzureRmPrivateIPAddressAvailability
 
 ## SYNOPSIS
-Menguji ketersediaan alamat IP privat di jaringan virtual.
+Uji ketersediaan alamat IP privat di jaringan virtual.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -33,22 +33,22 @@ Test-AzureRmPrivateIPAddressAvailability -ResourceGroupName <String> -VirtualNet
 ```
 
 ## DESCRIPTION
-Cmdlet **Test-AzureRmPrivateIPAddressAvailability** menguji apakah alamat IP privat tertentu tersedia di jaringan virtual.
+**Cmdlet Uji-AzureRmPrivateIPAddressAvailability** menguji apakah alamat IP privat tertentu tersedia di jaringan virtual.
 Cmdlet ini mengembalikan daftar alamat IP privat yang tersedia jika alamat IP privat yang diminta diambil.
 
 ## EXAMPLES
 
-### Contoh 1: Uji apakah alamat IP tersedia menggunakan saluran
+### Contoh 1: Menguji apakah alamat IP tersedia menggunakan pipeline
 ```
 PS C:\>Get-AzureRmVirtualNetwork -Name $vnetName -ResourceGroupName $rgname | Test-AzureRmPrivateIPAddressAvailability -IPAddress "10.0.1.10"
 ```
 
-Perintah ini akan mendapatkan jaringan virtual dan menggunakan operator pipeline untuk meneruskannya ke **Test-AzureRmPrivateIPAddressAvailability**, yang menguji apakah alamat IP privat tertentu tersedia.
+Perintah ini mendapatkan jaringan virtual dan menggunakan operator pipeline untuk mengirimkannya ke **Test-AzureRmPrivateIPAddressAvailability**, yang menguji apakah alamat IP privat tertentu tersedia.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -IPAddress
-Menentukan alamat IP untuk diuji.
+Menentukan alamat IP yang akan diuji.
 
 ```yaml
 Type: String
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkName
-Menentukan nama jaringan virtual.
+Menentukan nama jaringan maya.
 
 ```yaml
 Type: String
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

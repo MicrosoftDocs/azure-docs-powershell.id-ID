@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayIPConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayIPConfiguration.md
 ms.openlocfilehash: c164232750f4b6b1ea5f0ff9a75accc9263113f9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140134809"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141954645"
 ---
 # Add-AzApplicationGatewayIPConfiguration
 
@@ -19,7 +19,7 @@ ms.locfileid: "140134809"
 Menambahkan konfigurasi IP ke gateway aplikasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azapplicationgatewayipconfiguration) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azapplicationgatewayipconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,13 +51,13 @@ PS C:\> $AppGw = Add-AzApplicationGatewayIPConfiguration -ApplicationGateway $Ap
 
 Perintah pertama mendapatkan jaringan virtual.
 Perintah kedua mendapatkan subnet menggunakan jaringan virtual yang dibuat sebelumnya.
-Perintah ketiga mendapatkan gateway aplikasi dan menyimpannya di $AppGw baru.
+Perintah ketiga mendapatkan gateway aplikasi dan menyimpannya dalam variabel $AppGw.
 Perintah keempat menambahkan konfigurasi IP ke gateway aplikasi yang disimpan di $AppGw.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan gateway aplikasi tempat cmdlet menambahkan konfigurasi IP.
+Menentukan gateway aplikasi tempat cmdlet ini menambahkan konfigurasi IP.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

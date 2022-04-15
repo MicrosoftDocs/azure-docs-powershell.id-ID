@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/stop
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Stop-AzDataFactoryV2Trigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Stop-AzDataFactoryV2Trigger.md
-ms.openlocfilehash: 8e62291676fd06b96600711676e9b752a65a6ede
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ed4f78b7926b52e0e2a142b737bda5db5496123f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140201062"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141940407"
 ---
 # Stop-AzDataFactoryV2Trigger
 
 ## SYNOPSIS
 Menghentikan pemicu di pabrik data.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/stop-azdatafactoryv2trigger) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Stop-AzDataFactoryV2Trigger [-ResourceId] <String> [-Force] [-DefaultProfile <IA
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzDataFactoryV2Trigger** menghentikan pemicu di pabrik data. Jika pemicu berada dalam status 'Dimulai', cmdlet akan menghentikan pemicu dan tidak lagi menjalankan saluran. Jika pemicu sudah berada dalam status 'Dihentikan', cmdlet ini tidak memiliki pengaruh. Jika parameter Force ditentukan, cmdlet tidak akan meminta sebelum menghentikan pemicu.
+Cmdlet **Stop-AzDataFactoryV2Trigger** menghentikan pemicu di pabrik data. Jika pemicu berada dalam status 'Dimulai', cmdlet akan menghentikan pemicu dan tidak lagi memanggil saluran. Jika pemicu sudah berada dalam status 'Dihentikan', cmdlet ini tidak berpengaruh. Jika parameter Paksa ditentukan, cmdlet tidak meminta sebelum menghentikan pemicu.
 
 ## EXAMPLES
 
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -86,7 +89,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Menjalankan cmdlet tanpa meminta konfirmasi.
 
 ```yaml
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Memicu objek untuk dimulai.
+Memicu objek untuk memulai.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

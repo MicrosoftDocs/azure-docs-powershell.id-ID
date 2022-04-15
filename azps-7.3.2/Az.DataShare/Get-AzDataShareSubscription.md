@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareSubscription.md
-ms.openlocfilehash: 1d842b0f6d566bcc6430b78f6f2d01871287159d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e6079d23339446c7d19efccd1d6142fd38d71867
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140550202"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142035281"
 ---
 # Get-AzDataShareSubscription
 
 ## SYNOPSIS
 Mendapatkan informasi tentang berbagi langganan di akun berbagi data.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datashare/get-azdatasharesubscription) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzDataShareSubscription -ResourceId <String> [-DefaultProfile <IAzureContext
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataShareSubscription** menyediakan informasi tentang berbagi langganan dalam akun berbagi data. Jika nama langganan tersedia, cmdlet akan memberikan informasi tentang langganan berbagi tertentu. Jika tidak, cmdlet menyediakan daftar langganan bersama dalam akun berbagi data.
+Cmdlet **Get-AzDataShareSubscription** menyediakan informasi tentang berbagi langganan dalam akun berbagi data. Jika berbagi nama langganan disediakan, cmdlet memberikan informasi tentang langganan berbagi tertentu. Jika tidak, cmdlet menyediakan daftar langganan berbagi di akun berbagi data.
 
 ## EXAMPLES
 
@@ -56,11 +59,11 @@ Name                    : AdsShareSubscription
 Type                    : Microsoft.DataShare/ShareSubscriptions
 ```
 
-Perintah ini menyediakan informasi tentang berbagi langganan AdsShareSubscription dalam berbagi data akun WikiAds.
+Perintah ini menyediakan informasi tentang berbagi langganan AdsShareSubscription di akun berbagi data WikiAds.
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun berbagi data Azure
 
 ```yaml
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya akun berbagi data Azure
+Nama grup sumber daya dari akun berbagi data azure
 
 ```yaml
 Type: System.String
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya langganan berbagi data Azure
+Id sumber daya langganan berbagi data azure
 
 ```yaml
 Type: System.String
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

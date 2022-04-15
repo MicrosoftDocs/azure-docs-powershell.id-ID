@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringService.md
 ms.openlocfilehash: bc707a75975859059020ed5cb9f038fcf6eca242
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140100737"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141950667"
 ---
 # Get-AzPeeringService
 
@@ -18,7 +18,7 @@ ms.locfileid: "140100737"
 Dapatkan daftar objek layanan peering dari satu objek.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.peering/get-azpeeringservice) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.peering/get-azpeeringservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ Get-AzPeeringService [-ResourceId] <String> [-DefaultProfile <IAzureContextConta
 ```
 
 ## DESCRIPTION
-Mendapatkan layanan peering untuk sebuah langganan
+Mendapatkan layanan peering untuk langganan
 
 ## EXAMPLES
 
@@ -83,7 +83,7 @@ Id                     : /subscriptions/resourceGroups/Building40/providers/Micr
 Type                   : Microsoft.Peering/peeringServices
 ```
 
-Mendapatkan layanan peering untuk grup dan nama sumber daya
+Mendapatkan layanan peering untuk grup sumber daya dan nama
 
 ### Contoh 3
 ```powershell
@@ -99,7 +99,7 @@ Id                     : /subscriptions/resourceGroups/Building40/providers/Micr
 Type                   : Microsoft.Peering/peeringServices
 ```
 
-Mendapatkan layanan peering berdasarkan id sumber daya
+Mendapatkan layanan peering menurut id sumber daya
 
 ## PARAMETERS
 
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Buat atau gunakan nama grup sumber daya yang sudah ada.
+Membuat atau menggunakan nama grup sumber daya yang sudah ada.
 
 ```yaml
 Type: System.String
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

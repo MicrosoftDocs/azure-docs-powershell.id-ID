@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualNetwork.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualNetwork.md
 ms.openlocfilehash: 7bb47ade565844103edd9dde3cb535c842126dc7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139972545"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141952773"
 ---
 # New-AzVirtualNetwork
 
@@ -19,7 +19,7 @@ ms.locfileid: "139972545"
 Membuat jaringan virtual.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azvirtualnetwork) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvirtualnetwork) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ $backendSubnet  = New-AzVirtualNetworkSubnetConfig -Name backendSubnet  -Address
 New-AzVirtualNetwork -Name MyVirtualNetwork -ResourceGroupName TestResourceGroup -Location centralus -AddressPrefix "10.0.0.0/16" -Subnet $frontendSubnet,$backendSubnet
 ```
 
-Contoh ini membuat jaringan virtual dengan dua subnet. Pertama, grup sumber daya baru dibuat di kawasan pusat. Lalu, contoh membuat representasi dalam memori dari dua subnet. Cmdlet New-AzVirtualNetworkSubnetConfig tidak akan membuat subnet apa pun di sisi server. Ada satu subnet yang disebut frontendSubnet dan satu subnet yang disebut backendSubnet. Cmdlet New-AzVirtualNetwork lalu membuat jaringan virtual menggunakan CIDR 10.0.0.0/16 sebagai prefiks alamat dan dua subnet.
+Contoh ini membuat jaringan virtual dengan dua subnet. Pertama, grup sumber daya baru dibuat di kawasan pusat. Lalu, contoh membuat representasi dalam memori dari dua subnet. Cmdlet New-AzVirtualNetworkSubnetConfig tidak akan membuat subnet apa pun di sisi server. Ada satu subnet yang disebut frontendSubnet dan satu subnet yang disebut backendSubnet. Cmdlet New-AzVirtualNetwork kemudian membuat jaringan virtual menggunakan CIDR 10.0.0.0/16 sebagai awalan alamat dan dua subnet.
 
 ### Contoh 2: Membuat jaringan virtual dengan pengaturan DNS
 ```powershell
@@ -53,9 +53,9 @@ $backendSubnet  = New-AzVirtualNetworkSubnetConfig -Name backendSubnet  -Address
 New-AzVirtualNetwork -Name MyVirtualNetwork -ResourceGroupName TestResourceGroup -Location centralus -AddressPrefix "10.0.0.0/16" -Subnet $frontendSubnet,$backendSubnet -DnsServer 10.0.1.5,10.0.1.6
 ```
 
-Contoh ini membuat jaringan virtual dengan dua subnet dan dua server DNS. Efek menentukan server DNS pada jaringan virtual adalah bahwa NICs/VM yang digunakan ke dalam jaringan virtual ini mewarisi server DNS ini sebagai default. Default ini bisa ditimpa per NIC melalui pengaturan tingkat NIC. Jika tidak ada server DNS yang ditentukan di VNET dan tidak ada server DNS di NICs, maka server Azure DNS default digunakan untuk resolusi DNS.
+Contoh ini membuat jaringan virtual dengan dua subnet dan dua server DNS. Efek menentukan server DNS di jaringan virtual adalah bahwa NIC/VM yang digunakan ke jaringan virtual ini mewarisi server DNS ini sebagai default. Default ini dapat ditimpa per NIC melalui pengaturan tingkat NIC. Jika tidak ada server DNS yang ditentukan di VNET dan tidak ada server DNS di NIC, maka server DNS Azure default digunakan untuk resolusi DNS.
 
-### Contoh 3: Membuat jaringan virtual dengan referensi subnet yang menjadi grup keamanan jaringan
+### Contoh 3: Membuat jaringan virtual dengan subnet yang mereferensikan grup keamanan jaringan
 ```powershell
 New-AzResourceGroup -Name TestResourceGroup -Location centralus
 $rdpRule              = New-AzNetworkSecurityRuleConfig -Name rdp-rule -Description "Allow RDP" -Access Allow -Protocol Tcp -Direction Inbound -Priority 100 -SourceAddressPrefix Internet -SourcePortRange * -DestinationAddressPrefix * -DestinationPortRange 3389
@@ -65,7 +65,7 @@ $backendSubnet        = New-AzVirtualNetworkSubnetConfig -Name backendSubnet  -A
 New-AzVirtualNetwork -Name MyVirtualNetwork -ResourceGroupName TestResourceGroup -Location centralus -AddressPrefix "10.0.0.0/16" -Subnet $frontendSubnet,$backendSubnet
 ```
 
-Contoh ini membuat jaringan virtual dengan subnet yang mereferensikan grup keamanan jaringan. Pertama, contoh membuat grup sumber daya sebagai wadah untuk sumber daya yang akan dibuat. Lalu, grup keamanan jaringan dibuat yang memungkinkan akses RDP masuk, tapi memberlakukan aturan grup keamanan jaringan default. Cmdlet New-AzVirtualNetworkSubnetConfig membuat representasi dalam memori dari dua subnet yang mereferensikan grup keamanan jaringan yang dibuat. Perintah New-AzVirtualNetwork lalu membuat jaringan virtual.
+Contoh ini membuat jaringan virtual dengan subnet yang mereferensikan grup keamanan jaringan. Pertama, contoh membuat grup sumber daya sebagai wadah untuk sumber daya yang akan dibuat. Lalu, grup keamanan jaringan dibuat yang memungkinkan akses RDP masuk, tetapi sebaliknya memberlakukan aturan grup keamanan jaringan default. Cmdlet New-AzVirtualNetworkSubnetConfig kemudian membuat representasi dalam memori dari dua subnet yang mereferensikan grup keamanan jaringan yang dibuat. Perintah New-AzVirtualNetwork kemudian membuat jaringan virtual.
 
 ## PARAMETERS
 
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -BgpCommunity
-Komunitas BGP yang diiklankan melalui ExpressRoute.
+Komunitas BGP diiklankan melalui ExpressRoute.
 
 ```yaml
 Type: System.String
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -DdosProtectionPlanId
-Referensi ke sumber daya rencana proteksi DDoS yang terkait dengan jaringan virtual.
+Referensi ke sumber daya paket proteksi DDoS yang terkait dengan jaringan virtual.
 
 ```yaml
 Type: System.String
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -EdgeZone
-{{ Fill EdgeZone Description }}
+{{ Fill Edge Deskripsi Zona }}
 
 ```yaml
 Type: System.String
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableDdosProtection
-Parameter sakelar yang menyatakan apakah proteksi DDoS diaktifkan atau tidak.
+Parameter sakelar yang menunjukkan apakah proteksi DDoS diaktifkan atau tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -FlowTimeout
-FlowTimeout memungkinkan pelacakan koneksi untuk aliran intra-VM. Nilai harus berada antara 4 dan 30 menit (inklusif) untuk mengaktifkan pelacakan, atau null untuk menonaktifkan pelacakan.
+FlowTimeout memungkinkan pelacakan koneksi untuk aliran intra-VM. Nilai harus antara 4 dan 30 menit (inklusif) untuk mengaktifkan pelacakan, atau null untuk menonaktifkan pelacakan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -204,8 +204,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpAllocation
-Menentukan LokasiSlokasi untuk jaringan virtual.
+Menentukan IpAllocations untuk jaringan virtual.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSIpAllocation[]
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan kawasan untuk jaringan virtual.
+Menentukan kawasan untuk jaringan maya.
 
 ```yaml
 Type: System.String
@@ -310,7 +310,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -326,7 +326,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -341,7 +341,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -367,4 +367,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzVirtualNetwork](./Set-AzVirtualNetwork.md)
 
-[New-azddosProtectionPlan](./New-AzDdosProtectionPlan.md)
+[New-AzDdosProtectionPlan](./New-AzDdosProtectionPlan.md)

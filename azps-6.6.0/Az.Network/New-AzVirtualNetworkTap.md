@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualNetworkTap.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualNetworkTap.md
 ms.openlocfilehash: 98370ab8130d13a6b2841b92d237a0a0cf8eda93
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140070273"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141952708"
 ---
 # New-AzVirtualNetworkTap
 
@@ -18,7 +18,7 @@ ms.locfileid: "140070273"
 Membuat sumber daya VirtualNetworkTap.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azvirtualnetworktap) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvirtualnetworktap) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,9 +50,9 @@ PS C:\>New-AzVirtualNetworkTap -Name "VirtualNetworkTap1" -ResourceGroupName "Re
 ```
 
 Perintah ini membuat ketuk jaringan virtual bernama "VirtualNetworkTap1" yang memiliki detail konfigurasi VM tujuan (DestinationIpConfiguration, DestinationPort).
-Semua lalu lintas VM yang dikonfigurasi sumber akan dirutekan ke IP Tujuan + Port ini.
+Semua ketuk sumber mengonfigurasi lalu lintas VM akan dirutekan ke IP Tujuan + Port ini.
 
-### Contoh 2: Membuat ketukan jaringan virtual Azure menggunakan IP LoadBalancer
+### Contoh 2: Buat ketuk jaringan virtual Azure menggunakan IP LoadBalancer
 ```
 # Create LoadBalancer
 PS C:\>$frontend = New-AzLoadBalancerFrontendIpConfig -Name $frontendName -PublicIpAddress $publicip
@@ -60,12 +60,12 @@ PS C:\>New-AzVirtualNetworkTap -Name "VirtualNetworkTap1" -ResourceGroupName "Re
 ```
 
 Perintah ini membuat ketuk jaringan virtual bernama "VirtualNetworkTap1" yang memiliki detail konfigurasi VM tujuan (FrontEndIpConfiguration).
-Semua lalu lintas VM yang dikonfigurasi ketuk sumber akan dirutekan ke IpConfiguration LoadBalancer ini. Port Tujuan Default adalah 4789.
+Semua ketuk sumber mengonfigurasi lalu lintas VM akan dirutekan ke LoadBalancer IpConfiguration ini. Port Tujuan Default adalah 4789.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationLoadBalancerFrontEndIPConfiguration
-Referensi sumber daya konfigurasi IP ujung depan pengimbang muat tujuan.
+Referensi sumber daya konfigurasi IP ujung depan penyeimbang muatan tujuan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSFrontendIPConfiguration
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationLoadBalancerFrontEndIPConfigurationId
-Referensi sumber daya konfigurasi IP ujung depan pengimbang muat tujuan.
+Referensi sumber daya konfigurasi IP ujung depan penyeimbang muatan tujuan.
 
 ```yaml
 Type: System.String
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationPort
-Port Tujuan paket paket
+Pelabuhan Tujuan dari kolektor paket
 
 ```yaml
 Type: System.Int32
@@ -169,8 +169,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi jika Anda ingin menimpa sumber daya
+### -Paksa
+Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi.
+Lokasinya.
 
 ```yaml
 Type: System.String
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya ketuk jaringan virtual.
+Nama grup sumber daya dari ketuk jaringan virtual.
 
 ```yaml
 Type: System.String
@@ -230,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable yang mewakili tag sumber daya.
+Sebuah hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -245,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -261,7 +261,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -276,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapsePipeline.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapsePipeline.md
 ms.openlocfilehash: df362695bf1a5515576ff5c7cea99efaae1297de
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140302639"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141945249"
 ---
 # Set-AzSynapsePipeline
 
 ## SYNOPSIS
-Membuat saluran di ruang kerja.
+Membuat alur dalam ruang kerja.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/set-azsynapsepipeline) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/set-azsynapsepipeline) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Set-AzSynapsePipeline -WorkspaceObject <PSSynapseWorkspace> -Name <String> -Defi
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSynapsePipeline membuat** saluran di ruang kerja.
+Cmdlet **Set-AzSynapsePipeline** membuat alur di ruang kerja.
 
 ## EXAMPLES
 
@@ -44,8 +44,8 @@ Cmdlet **Set-AzSynapsePipeline membuat** saluran di ruang kerja.
 PS C:\> Set-AzSynapsePipeline -WorkspaceName ContosoWorkspace -Name ContosoPipeline -DefinitionFile "C:\pipeline.json"
 ```
 
-Perintah ini membuat pipeline yang bernama ContosoPipeline dalam ruang kerja yang bernama ContosoWorkspace.
-Perintah tersebut mendasarkan informasi pipeline dalam file pipeline.json.
+Perintah ini membuat alur bernama ContosoPipeline di ruang kerja bernama ContosoWorkspace.
+Perintah mendasarkan pipeline pada informasi dalam file pipeline.json.
 File ini menyertakan informasi tentang aktivitas.
 
 ### Contoh 2
@@ -54,14 +54,14 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Set-AzSynapsePipeline -Name ContosoPipeline -DefinitionFile "C:\pipeline.json"
 ```
 
-Perintah ini membuat pipeline yang bernama ContosoPipeline dalam ruang kerja yang bernama ContosoWorkspace melalui pipeline.
-Perintah tersebut mendasarkan informasi pipeline dalam file pipeline.json.
+Perintah ini membuat alur bernama ContosoPipeline di ruang kerja bernama ContosoWorkspace melalui pipeline.
+Perintah mendasarkan pipeline pada informasi dalam file pipeline.json.
 File ini menyertakan informasi tentang aktivitas.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -120,7 +120,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnSiteLinkConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnSiteLinkConnection.md
 ms.openlocfilehash: e588faf44af2108dce32c3a2b849c24ef633b390
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140464430"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141952737"
 ---
 # New-AzVpnSiteLinkConnection
 
@@ -18,7 +18,7 @@ ms.locfileid: "140464430"
 Membuat objek Azure VpnSiteLinkConnection.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azvpnsitelinkconnection) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvpnsitelinkconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,14 +56,14 @@ PS C:\> $vpnSiteLinkConnection = New-AzVpnSiteLinkConnection -Name "testLinkConn
 PS C:\> New-AzVpnConnection -ResourceGroupName $vpnGateway.ResourceGroupName -ParentResourceName $vpnGateway.Name -Name "testConnection" -VpnSite $vpnSite -VpnSiteLinkConnection @($vpnSiteLinkConnection)
 ```
 
-Langkah di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub, dan VpnSite dengan 1 VpnSiteLinks di AS Barat dalam grup sumber daya "testRG" di Azure.
-Gateway VPN akan dibuat setelahnya di Virtual Hub.
-Setelah gateway dibuat, gateway tersambung ke Situs Vpn menggunakan perintah New-AzVpnConnection dengan 1 VpnSiteLinkConnections ke VpnSiteLink dari Situs Vpn.
+Di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual dan VpnSite dengan 1 VpnSiteLinks di AS Barat dalam grup sumber daya "testRG" di Azure.
+Gateway VPN akan dibuat setelahnya di Hub Virtual.
+Setelah gateway dibuat, gateway tersambung ke VpnSite menggunakan perintah New-AzVpnConnection dengan 1 VpnSiteLinkConnections ke VpnSiteLink dari VpnSite.
 
 ## PARAMETERS
 
 ### -ConnectionBandwidth
-Bandwidth yang perlu ditangani dengan koneksi link ini dalam mbps.
+Bandwidth yang perlu ditangani oleh koneksi tautan ini dalam mbps.
 
 ```yaml
 Type: System.UInt32
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -EgressNatRule
-Daftar aturan NAT keluar yang terkait dengan link Koneksi ini.
+Daftar aturan KELUAR NAT yang terkait dengan link Connection ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSResourceId[]
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableBgp
-Aktifkan BGP untuk koneksi link ini
+Aktifkan BGP untuk koneksi tautan ini
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -IngressNatRule
-Daftar aturan NAT yang terkait dengan link Koneksi ini.
+Daftar aturan NAT ingress yang terkait dengan link Connection ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSResourceId[]
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpSecPolicy
-Kebijakan IpSec untuk dipertimbangkan untuk koneksi link ini.
+Kebijakan IpSec untuk dipertimbangkan untuk sambungan tautan ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSIpsecPolicy
@@ -167,8 +167,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RoutingWeight
-Bobot Perutean
+### -PeruteanWeight
+Berat Perutean
 
 ```yaml
 Type: System.UInt32
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -SharedKey
-Kunci bersama diperlukan untuk menyetel sambungan link ini.
+Kunci bersama diperlukan untuk menyetel sambungan tautan ini.
 
 ```yaml
 Type: System.Security.SecureString
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseLocalAzureIpAddress
-Gunakan alamat ip Azure lokal sebagai ip sumber untuk koneksi tautan ini.
+Gunakan alamat azure ip lokal sebagai ip sumber untuk koneksi tautan ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -UsePolicyBasedTrafficSelectors
-Gunakan pemilih lalu lintas berbasis kebijakan untuk koneksi link ini.
+Gunakan pemilih lalu lintas berbasis kebijakan untuk koneksi tautan ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnLinkConnectionMode
-Mode koneksi untuk koneksi link ini.
+Mode koneksi untuk koneksi tautan ini.
 
 ```yaml
 Type: System.String
@@ -272,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

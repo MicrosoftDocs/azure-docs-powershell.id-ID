@@ -7,20 +7,20 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Backup-AzRecoveryServicesBackupItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Backup-AzRecoveryServicesBackupItem.md
 ms.openlocfilehash: cbbd4c532bec378b7733f51cc4ee70c4482aa14d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140248147"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141949785"
 ---
 # Backup-AzRecoveryServicesBackupItem
 
 ## SYNOPSIS
 
-Memulai pencadangan untuk item Cadangan.
+Memulai cadangan untuk item Cadangan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/backup-azrecoveryservicesbackupitem) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/backup-azrecoveryservicesbackupitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Backup-AzRecoveryServicesBackupItem -Item <ItemBase> [-ExpiryDateTimeUTC <DateTi
 
 ## DESCRIPTION
 
-Cmdlet **Backup-AzRecoveryServicesBackupItem** mengambil cadangan adhoc dari item cadangan Azure yang diproteksi. Menggunakan cmdlet ini, Anda dapat melakukan pencadangan awal segera setelah mengaktifkan proteksi atau memulai cadangan jika pencadangan terjadwal gagal. Cmdlet ini juga dapat digunakan untuk penyimpanan kustom dengan atau tanpa tanggal kedaluwarsa, teks bantuan parameter referensi untuk detail selengkapnya. 
+Cmdlet **Backup-AzRecoveryServicesBackupItem** mengambil cadangan adhoc item cadangan Azure yang dilindungi. Menggunakan cmdlet ini, Anda dapat melakukan pencadangan awal segera setelah mengaktifkan proteksi atau memulai pencadangan jika cadangan terjadwal gagal. Cmdlet ini juga dapat digunakan untuk penyimpanan kustom dengan atau tanpa tanggal kedaluwarsa - merujuk teks bantuan parameter untuk detail selengkapnya. 
 
 ## EXAMPLES
 
@@ -49,13 +49,13 @@ Operation        Status               StartTime            EndTime              
 pstestv2vm1      Backup               InProgress           4/23/2016 5:00:30 PM      cf4b3ef5-2fac-4c8e-a215-d2eba4124f27
 ```
 
-Perintah pertama mendapatkan wadah Cadangan tipe AzureVM bernama pstestv2vm1, lalu menyimpannya dalam $NamedContainer baru.
-Perintah kedua mendapatkan item Cadangan yang terkait dengan wadah di $NamedContainer, lalu menyimpannya dalam variabel $Item diinginkan.
-Perintah terakhir memicu pekerjaan pencadangan untuk item Cadangan dalam $Item.
+Perintah pertama mendapatkan kontainer Cadangan tipe AzureVM bernama pstestv2vm1, lalu menyimpannya dalam variabel $NamedContainer.
+Perintah kedua mendapatkan item Cadangan yang terkait dengan wadah di $NamedContainer, lalu menyimpannya dalam variabel $Item.
+Perintah terakhir memicu pekerjaan cadangan untuk item Cadangan dalam $Item.
 
 ### Contoh 2
 
-Memulai pencadangan untuk item Cadangan. (otomatisgenerated)
+Memulai cadangan untuk item Cadangan. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -66,7 +66,7 @@ Backup-AzRecoveryServicesBackupItem -ExpiryDateTimeUTC <DateTime> -Item $Item -V
 
 ### -BackupType
 
-Tipe cadangan yang akan dijalankan
+Tipe pencadangan yang akan dilakukan
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.BackupType
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 
 ### -DefaultProfile
 
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 
 ### -ExpiryDateTimeUTC
 
-Menentukan waktu kedaluwarsa untuk titik Pemulihan sebagai objek DateTime, jika tidak ada yang memberinya nilai default 30 hari. Berlaku untuk VM, SQL (hanya untuk tipe salin-saja-penuh cadangan), item cadangan AFS.
+Menentukan waktu kedaluwarsa untuk titik Pemulihan sebagai objek DateTime, jika tidak ada yang diberikan memerlukan nilai default 30 hari. Berlaku untuk VM, SQL (hanya untuk tipe cadangan penuh Salin saja), item cadangan AFS.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 
 ### -Item
 
-Menentukan item Cadangan ketika cmdlet ini memulai operasi pencadangan.
+Menentukan item Cadangan di mana cmdlet ini memulai operasi pencadangan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ItemBase
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 
 ### -VaultId
 
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 
 ### -Konfirmasi
 
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,13 +194,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ItemBase
 
-### System.Nullable'1[[System.DateTime, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.DateTime, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### System.String
 

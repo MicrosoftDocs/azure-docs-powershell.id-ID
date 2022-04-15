@@ -5,16 +5,16 @@ ms.assetid: 40198C86-A4EB-494A-86D5-DF632518EB95
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/add-azurermapplicationgatewayfrontendport
 schema: 2.0.0
 ms.openlocfilehash: 7c4684dd2461446d2e04b1bca3f835647101c960
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132429188"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141971655"
 ---
 # Add-AzureRmApplicationGatewayFrontendPort
 
 ## SYNOPSIS
-Menambahkan port ujung-depan ke gateway aplikasi.
+Menambahkan port ujung depan ke gateway aplikasi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -26,23 +26,23 @@ Add-AzureRmApplicationGatewayFrontendPort -ApplicationGateway <PSApplicationGate
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureRmApplicationGatewayFrontendPort** menambahkan port ujung-depan ke gateway aplikasi.
+Cmdlet **Add-AzureRmApplicationGatewayFrontendPort** menambahkan port ujung depan ke gateway aplikasi.
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan port ujung-depan ke gateway aplikasi
+### Contoh 1: Menambahkan port ujung depan ke gateway aplikasi
 ```
 PS C:\>$AppGw = Get-AzureRmApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 PS C:\> $ AppGw = Add-AzureRmApplicationGatewayFrontendPort -ApplicationGateway $AppGw -Name "FrontEndPort01" -Port 80
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01 dan menyimpannya di $AppGw sumber daya.
-Perintah kedua menambahkan port 80 sebagai port ujung-depan untuk gateway aplikasi yang disimpan di $AppGw dan memberi nama port FrontEndPort01.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 milik grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw.
+Perintah kedua menambahkan port 80 sebagai port ujung depan untuk gateway aplikasi yang disimpan di $AppGw dan memberi nama port FrontEndPort01.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan gateway aplikasi tempat cmdlet menambahkan port ujung-depan.
+Menentukan gateway aplikasi tempat cmdlet ini menambahkan port ujung depan.
 
 ```yaml
 Type: PSApplicationGateway
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Menentukan nomor port.
+Menentukan nomor porta.
 
 ```yaml
 Type: Int32
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -120,7 +120,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmApplicationGatewayFrontendPort](./New-AzureRmApplicationGatewayFrontendPort.md)
 
-[Remove-AzureRmApplicationGatewayFrontendPort](./Remove-AzureRmApplicationGatewayFrontendPort.md)
+[Hapus-AzureRmApplicationGatewayFrontendPort](./Remove-AzureRmApplicationGatewayFrontendPort.md)
 
 [Set-AzureRmApplicationGatewayFrontendPort](./Set-AzureRmApplicationGatewayFrontendPort.md)
 

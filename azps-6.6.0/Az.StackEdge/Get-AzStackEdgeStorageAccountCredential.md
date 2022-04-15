@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeStorageAccountCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeStorageAccountCredential.md
 ms.openlocfilehash: e56b81ce8290fcfaacfc8656fb9cb3fa256f4e92
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139966929"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142075495"
 ---
 # Get-AzStackEdgeStorageAccountCredential
 
 ## SYNOPSIS
-Dapatkan kredensial akun penyimpanan yang terkait dengan akun penyimpanan pada perangkat.
+Mendapatkan kredensial akun penyimpanan yang terkait dengan akun penyimpanan di perangkat.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.stackedge/get-azstackedgestorageaccountcredential) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/get-azstackedgestorageaccountcredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ Get-AzStackEdgeStorageAccountCredential [[-Name] <String>] [-DefaultProfile <IAz
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStackEdgeStorageAccountCredential** mendapatkan kredensial akun penyimpanan untuk akun penyimpanan terkait pada perangkat Stack Edge. Anda bisa menentukan parameter Nama, Nama Grup Sumber Daya dan Nama Perangkat untuk mendapatkan informasi tentang kredensial akun penyimpanan tertentu.
+Cmdlet **Get-AzStackEdgeStorageAccountCredential** mendapatkan kredensial akun penyimpanan untuk akun penyimpanan terkait di perangkat Stack Edge. Anda dapat menentukan parameter Nama, Nama Grup Sumber Daya, dan Nama Perangkat untuk mendapatkan informasi tentang kredensial akun penyimpanan tertentu.
 
 ## EXAMPLES
 
@@ -164,15 +164,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PS StackEdgeDevice
+### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeDevice
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PS StackEdgeStorageAccountCredential
+### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeStorageAccountCredential
 
 ## CATATAN
 

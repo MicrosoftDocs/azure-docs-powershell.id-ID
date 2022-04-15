@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualNetworkGatewayDefaultSite.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualNetworkGatewayDefaultSite.md
 ms.openlocfilehash: 6f708be0760d76c4ef83bdd7d28eceb2b0388161
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139971951"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141952143"
 ---
 # Remove-AzVirtualNetworkGatewayDefaultSite
 
@@ -19,7 +19,7 @@ ms.locfileid: "139971951"
 Menghapus situs default dari gateway jaringan virtual.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azvirtualnetworkgatewaydefaultsite) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvirtualnetworkgatewaydefaultsite) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,11 +29,11 @@ Remove-AzVirtualNetworkGatewayDefaultSite -VirtualNetworkGateway <PSVirtualNetwo
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzVirtualNetworkGatewayDefaultSite** menghapus situs default paksa dari gateway jaringan virtual.
-Paksa membantu menyediakan cara Anda mengalihkan lalu lintas terikat Internet dari mesin virtual Azure ke jaringan lokal; ini memungkinkan Anda untuk memeriksa dan mengaudit lalu lintas sebelum merilisnya.
-Upaya paksa dilakukan menggunakan vpn jaringan privat virtual (VPN, Virtual Private Network) vpn; dasbor ini memerlukan situs default, gateway lokal tempat semua lalu lintas terikat Internet Azure dialihkan.
-**Remove-AzVirtualNetworkGatewayDefaultSite** menghapus situs default yang ditetapkan untuk gateway.
-Jika Anda melakukan hal ini Anda akan perlu menggunakan Set-AzVirtualNetworkGatewayDefaultSite untuk menetapkan situs default baru sebelum gateway bisa digunakan untuk paksa bekerja.
+Cmdlet **Remove-AzVirtualNetworkGatewayDefaultSite** menghapus situs default tunneling paksa dari gateway jaringan virtual.
+Terowongan paksa menyediakan cara bagi Anda untuk mengalihkan lalu lintas terikat internet dari mesin virtual Azure ke jaringan lokal Anda; hal ini memungkinkan Anda memeriksa dan mengaudit lalu lintas sebelum merilisnya.
+Terowongan paksa dilakukan dengan menggunakan terowongan jaringan privat virtual (VPN); terowongan ini memerlukan situs default, gateway lokal di mana semua lalu lintas Azure yang terikat internet diarahkan ulang.
+**Remove-AzVirtualNetworkGatewayDefaultSite** menghapus situs default yang ditetapkan ke gateway.
+Jika Anda melakukan ini, Anda perlu menggunakan Set-AzVirtualNetworkGatewayDefaultSite untuk menetapkan situs default baru sebelum gateway bisa digunakan untuk pembuatan terowongan paksa.
 
 ## EXAMPLES
 
@@ -43,14 +43,14 @@ PS C:\>$Gateway = Get-AzVirtualNetworkGateway -Name "ContosoVirtualGateway"
 PS C:\> Remove-AzVirtualNetworkGatewayDefaultSite -VirtualNetworkGateway $Gateway
 ```
 
-Contoh ini menghapus situs default yang saat ini ditetapkan ke gateway jaringan virtual yang bernama ContosoVirtualGateway.
-Perintah pertama menggunakan **Get-AzVirtualNetworkGateway** untuk membuat referensi objek ke gateway; referensi objek ini disimpan dalam variabel yang bernama $Gateway.
-Perintah kedua lalu menggunakan **Remove-AzVirtualNetworkGatewayDefaultSite** untuk menghapus situs default yang ditetapkan untuk gateway itu.
+Contoh ini menghapus situs default yang saat ini ditetapkan ke gateway jaringan virtual bernama ContosoVirtualGateway.
+Perintah pertama menggunakan **Get-AzVirtualNetworkGateway** untuk membuat referensi objek ke gateway; referensi objek ini disimpan dalam variabel bernama $Gateway.
+Perintah kedua kemudian menggunakan **Remove-AzVirtualNetworkGatewayDefaultSite** untuk menghapus situs default yang ditetapkan ke gateway tersebut.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

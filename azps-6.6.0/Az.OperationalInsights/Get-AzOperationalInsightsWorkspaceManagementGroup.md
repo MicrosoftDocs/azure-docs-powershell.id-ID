@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsWorkspaceManagementGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsWorkspaceManagementGroup.md
 ms.openlocfilehash: d1f97b835ef395a8af5bf952da62f687b5652743
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140133405"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141951045"
 ---
 # Get-AzOperationalInsightsWorkspaceManagementGroup
 
@@ -19,7 +19,7 @@ ms.locfileid: "140133405"
 Mendapatkan detail grup manajemen yang tersambung ke ruang kerja.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightsworkspacemanagementgroup) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightsworkspacemanagementgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,24 +33,24 @@ Cmdlet **Get-AzOperationalInsightsWorkspaceManagementGroup** mencantumkan grup m
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan grup manajemen menurut nama ruang kerja
+### Contoh 1: Mendapatkan grup manajemen menurut nama ruang kerja
 ```
 PS C:\>Get-AzOperationalInsightsWorkspaceManagementGroup -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace"
 ```
 
-Perintah ini mendapatkan grup manajemen untuk ruang kerja yang bernama MyWorkspace dalam grup sumber daya bernama ContosoResourceGroup.
+Perintah ini mendapatkan grup manajemen untuk ruang kerja bernama MyWorkspace dalam grup sumber daya bernama ContosoResourceGroup.
 
-### Contoh 2: Mendapatkan grup manajemen dengan menggunakan saluran
+### Contoh 2: Dapatkan grup manajemen dengan menggunakan saluran
 ```
 PS C:\>Get-AzOperationalInsightsWorkspace -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace" | Get-AzOperationalInsightsWorkspaceManagementGroup
 ```
 
-Perintah ini menggunakan cmdlet Get-AzOperationalInsightsWorkspace untuk mendapatkan ruang kerja bernama MyWorkspace, lalu menyampaikan ruang kerja ke cmdlet saat ini, yang mendapatkan grup manajemen untuk ruang kerja tersebut.
+Perintah ini menggunakan cmdlet Get-AzOperationalInsightsWorkspace untuk mendapatkan ruang kerja bernama MyWorkspace, lalu meneruskan ruang kerja ke cmdlet saat ini, yang mendapatkan grup manajemen untuk ruang kerja tersebut.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

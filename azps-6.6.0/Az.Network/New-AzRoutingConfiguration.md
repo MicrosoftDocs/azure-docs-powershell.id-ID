@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzRoutingConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzRoutingConfiguration.md
 ms.openlocfilehash: a3f761833b73d08b4d39fccd6cc1c12bb3ed35bd
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140281669"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141952827"
 ---
 # New-AzRoutingConfiguration
 
 ## SYNOPSIS
-Membuat objek RoutingConfiguration.
+Membuat objek Konfigurasi Perutean.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azroutingconfiguration) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azroutingconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ New-AzRoutingConfiguration -AssociatedRouteTable <String> -Label <String[]> -Id 
 ```
 
 ## DESCRIPTION
-Membuat objek RoutingConfiguration.
+Membuat objek Konfigurasi Perutean.
 
 ## EXAMPLES
 
@@ -65,7 +65,7 @@ VnetRoutes            : {
                         }
 ```
 
-Perintah di atas akan membuat objek RoutingConfiguration yang kemudian bisa ditambahkan ke sumber daya koneksi. Rute statis hanya diperbolehkan dengan objek HubVirtualNetworkConnection. 
+Perintah di atas akan membuat objek Konfigurasi Perutean yang kemudian dapat ditambahkan ke sumber daya koneksi. Rute statis hanya diperbolehkan dengan objek HubVirtualNetworkConnection. 
 
 ## PARAMETERS
 
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssociatedRouteTable
-Tabel rute hub terkait dengan konfigurasi perutean ini.
+Tabel rute hub yang terkait dengan konfigurasi perutean ini.
 
 ```yaml
 Type: String
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Daftar id sumber daya dari semua tabel rute hub untuk mengiklankan rute untuk properti PropagatedRouteTables.
+Daftar id sumber daya dari semua tabel rute hub untuk mengiklankan rute ke properti PropagatedRouteTables.
 
 ```yaml
 Type: String[]
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -StaticRoute
-Daftar rute yang mengontrol perutean dari VirtualHub ke dalam koneksi jaringan virtual.
+Daftar rute yang mengontrol perutean dari VirtualHub ke koneksi jaringan virtual.
 
 ```yaml
 Type: PSStaticRoute[]
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
