@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeJob.md
 ms.openlocfilehash: fd6050d525e005216b03609e0c56b8afd794b960
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140131245"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142265065"
 ---
 # Get-AzStackEdgeJob
 
 ## SYNOPSIS
-Dapatkan pekerjaan yang dijadwalkan pada perangkat.
+Mendapatkan pekerjaan yang dijadwalkan di perangkat.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.stackedge/get-azstackedgejob) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/get-azstackedgejob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ Get-AzStackEdgeJob [-Name] <String> [-DefaultProfile <IAzureContextContainer>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStackEdgeJob** mendapatkan pekerjaan aktif pada perangkat Stack Edge. Anda dapat menyebutkan parameter Nama untuk mendapatkan detail pekerjaan tertentu.
+Cmdlet **Get-AzStackEdgeJob** mendapatkan pekerjaan aktif di perangkat Stack Edge. Anda dapat menyebutkan parameter Nama untuk mendapatkan detail pekerjaan tertentu.
 
 ## EXAMPLES
 
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Pekerjaan, Biasanya GUID
+Nama Pekerjaan, Umumnya GUID
 
 ```yaml
 Type: System.String
@@ -145,15 +145,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PS StackEdgeDevice
+### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeDevice
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PS StackEdgeJob
+### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeJob
 
 ## CATATAN
 

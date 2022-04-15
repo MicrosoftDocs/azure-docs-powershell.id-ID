@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseSensitivityRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseSensitivityRecommendation.md
 ms.openlocfilehash: f0f052d654b3ade730a28dcd3198b6227d30c50e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140098163"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142265857"
 ---
 # Get-AzSqlDatabaseSensitivityRecommendation
 
@@ -19,7 +19,7 @@ ms.locfileid: "140098163"
 Mendapatkan tipe informasi yang direkomendasikan dan label sensitivitas kolom dalam database.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqldatabasesensitivityrecommendation) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabasesensitivityrecommendation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -99,7 +99,7 @@ SensitivityLabels : {{
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseObject
-Objek SQL database.
+Objek database SQL.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-SQL server baru.
+SQL nama server.
 
 ```yaml
 Type: System.String
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -197,10 +197,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.sql.DataClassification.Model.SqlDatabaseSensitivityClassificationModel
+### Microsoft.Azure.Commands.Sql.DataClassification.Model.SqlDatabaseSensitivityClassificationModel
 
 ## CATATAN
 
 ## RELATED LINKS
 
-[Pelajari selengkapnya tentang Azure SQL Database klasifikasi dan penemuan data](https://docs.microsoft.com/azure/sql-database/sql-database-data-discovery-and-classification)
+[Pelajari selengkapnya tentang Azure SQL Database penemuan dan klasifikasi data](https://docs.microsoft.com/azure/sql-database/sql-database-data-discovery-and-classification)

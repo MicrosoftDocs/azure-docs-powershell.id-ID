@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseSparkPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseSparkPool.md
 ms.openlocfilehash: 76492e18e5774669d5f5bbfdfd019d70c218bc99
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140095283"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142296565"
 ---
 # New-AzSynapseSparkPool
 
 ## SYNOPSIS
-Membuat pool Grafik Api Analitik Synapse.
+Membuat kumpulan Synapse Analytics Spark.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/new-azsynapsesparkpool) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapsesparkpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,7 +55,7 @@ New-AzSynapseSparkPool -WorkspaceObject <PSSynapseWorkspace> -Name <String> [-Ta
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSynapseSparkPool** membuat pool Azure Synapse Analytics Spark.
+Cmdlet **New-AzSynapseSparkPool** membuat kumpulan Azure Synapse Analytics Spark.
 
 ## EXAMPLES
 
@@ -64,21 +64,21 @@ Cmdlet **New-AzSynapseSparkPool** membuat pool Azure Synapse Analytics Spark.
 PS C:\> New-AzSynapseSparkPool -WorkspaceName ContosoWorkspace -Name ContosoSparkPool -NodeCount 3 -SparkVersion 2.4 -NodeSize Small
 ```
 
-Perintah ini akan membuat pool Grafik Api Analitik Azure Synapse.
+Perintah ini membuat kumpulan Azure Synapse Analytics Spark.
 
 ### Contoh 2
 ```powershell
 PS C:\> New-AzSynapseSparkPool -WorkspaceName ContosoWorkspace -Name ContosoSparkPool -AutoScaleMinNodeCount 3 -AutoScaleMaxNodeCount 10 -SparkVersion 2.4 -NodeSize Small
 ```
 
-Perintah ini akan membuat ruang grafik spark Analitik Azure Synapse dengan skala otomatis yang diaktifkan.
+Perintah ini membuat kumpulan Azure Synapse Analytics Spark dengan skala otomatis diaktifkan.
 
 ### Contoh 3
 ```powershell
 PS C:\> New-AzSynapseSparkPool -WorkspaceName ContosoWorkspace -Name ContosoSparkPool -NodeCount 3 -SparkVersion 2.4 -NodeSize Small -SparkConfigFilePath "c:\sparkproperties.txt"
 ```
 
-Perintah ini akan membuat penyimpanan Grafik Apik Analitik Azure Synapse dan mengunggah file konfigurasi grafik api.
+Perintah ini membuat kumpulan Azure Synapse Analytics Spark dan mengunggah file konfigurasi percikan api.
 
 ### Contoh 4
 ```powershell
@@ -86,7 +86,7 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | New-AzSynapseSparkPool -Name ContosoSparkPool -NodeCount 3 -SparkVersion 2.4 -NodeSize Small
 ```
 
-Perintah ini membuat azure Synapse Analytics Spark pool melalui pipeline.
+Perintah ini membuat kumpulan Azure Synapse Analytics Spark melalui pipeline.
 
 ### Contoh 5
 ```powershell
@@ -94,12 +94,12 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | New-AzSynapseSparkPool -Name ContosoSparkPool -AutoScaleMinNodeCount 3 -AutoScaleMaxNodeCount 10 -SparkVersion 2.4 -NodeSize Small
 ```
 
-Perintah ini membuat ruang grafik grafik Analitik Azure Synapse dengan skala otomatis yang diaktifkan melalui saluran.
+Perintah ini membuat kumpulan Azure Synapse Analytics Spark dengan skala otomatis diaktifkan melalui pipeline.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoPauseDelayInMinute
-Jumlah menit yang diam. Parameter ini harus ditentukan ketika Jeda otomatis diaktifkan.
+Jumlah menit diam. Parameter ini harus ditentukan ketika Jeda otomatis diaktifkan.
 
 ```yaml
 Type: System.Int32
@@ -129,8 +129,8 @@ Accept wildcard characters: False
 ```
 
 ### -AutoScaleMaxNodeCount
-Jumlah node maksimum yang akan dialokasikan di pool Spark yang ditentukan.
-Parameter ini harus ditentukan ketika Skala-otomatis diaktifkan.
+Jumlah maksimum node yang akan dialokasikan dalam kumpulan Spark yang ditentukan.
+Parameter ini harus ditentukan ketika Skala otomatis diaktifkan.
 
 ```yaml
 Type: System.Int32
@@ -145,8 +145,8 @@ Accept wildcard characters: False
 ```
 
 ### -AutoScaleMinNodeCount
-Jumlah minimum node yang akan dialokasikan di pool Spark yang ditentukan.
-Parameter ini harus ditentukan ketika Skala-otomatis diaktifkan.
+Jumlah minimum node yang akan dialokasikan dalam kumpulan Spark yang ditentukan.
+Parameter ini harus ditentukan ketika Skala otomatis diaktifkan.
 
 ```yaml
 Type: System.Int32
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama pool Grafik Apik Synapse.
+Nama kolam renang Synapse Spark.
 
 ```yaml
 Type: System.String
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeCount
-Jumlah simpul yang akan dialokasikan di pool Spark yang ditentukan.
+Jumlah node yang akan dialokasikan dalam kumpulan Spark yang ditentukan.
 
 ```yaml
 Type: System.Int32
@@ -221,8 +221,8 @@ Accept wildcard characters: False
 ```
 
 ### -NodeSize
-Jumlah inti dan memori yang akan digunakan untuk simpul yang dialokasikan di pool Spark yang ditentukan.
-Parameter ini harus ditentukan ketika Skala-otomatis dinonaktifkan
+Jumlah inti dan memori yang akan digunakan untuk simpul yang dialokasikan dalam kumpulan Spark yang ditentukan.
+Parameter ini harus ditentukan ketika Skala otomatis dinonaktifkan
 
 ```yaml
 Type: System.String
@@ -253,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### -SparkConfigFilePath
-File konfigurasi properti spark pool.
+File konfigurasi properti kumpulan kilau.
 
 ```yaml
 Type: System.String
@@ -268,7 +268,7 @@ Accept wildcard characters: False
 ```
 
 ### -SparkVersion
-Apache Spark version.
+Versi Apache Spark.
 Nilai yang diperbolehkan: 2,4
 
 ```yaml
@@ -284,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Kamus string, kamus string dari tag yang terkait dengan sumber daya tersebut.
+String, kamus string tag yang terkait dengan sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -298,7 +298,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -329,7 +329,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -345,7 +345,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -360,7 +360,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

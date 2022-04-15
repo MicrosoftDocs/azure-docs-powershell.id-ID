@@ -5,16 +5,16 @@ ms.assetid: 67AD15B0-94EB-486F-8C17-606EA5F702D3
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/new-azurermloadbalancerbackendaddresspoolconfig
 schema: 2.0.0
 ms.openlocfilehash: 367e5d74b9d2c1d29199a7af3c132e147b5ae620
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421970"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142285640"
 ---
 # New-AzureRmLoadBalancerBackendAddressPoolConfig
 
 ## SYNOPSIS
-Membuat konfigurasi pool alamat backend untuk penyeimbang muat.
+Membuat konfigurasi kumpulan alamat backend untuk penyeimbang muatan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -26,21 +26,21 @@ New-AzureRmLoadBalancerBackendAddressPoolConfig -Name <String> [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmLoadBalancerBackendAddressPoolConfig** membuat konfigurasi pool alamat backend untuk penyeimbang muat Azure.
+Cmdlet **New-AzureRmLoadBalancerBackendAddressPoolConfig** membuat konfigurasi kumpulan alamat backend untuk penyeimbang muat Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat konfigurasi pool alamat backend untuk penyeimbang muat
+### Contoh 1: Membuat konfigurasi kumpulan alamat backend untuk penyeimbang muat
 ```
 PS C:\>New-AzureRmLoadBalancerBackendAddressPoolConfig -Name "BackendAddressPool02"
 ```
 
-Perintah ini membuat konfigurasi pool alamat backend yang bernama BackendAddressPool02 untuk penyeimbang muat.
+Perintah ini membuat konfigurasi kumpulan alamat backend bernama BackendAddressPool02 untuk load balancer.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -55,7 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama konfigurasi address pool untuk dibuat.
+Menentukan nama konfigurasi kumpulan alamat untuk dibuat.
 
 ```yaml
 Type: String
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

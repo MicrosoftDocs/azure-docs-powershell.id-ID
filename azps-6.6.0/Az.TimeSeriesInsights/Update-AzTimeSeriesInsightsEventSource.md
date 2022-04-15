@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Update-AzTimeSeriesInsightsEventSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Update-AzTimeSeriesInsightsEventSource.md
 ms.openlocfilehash: 792a25e2d89f3f72183584fa6933e961d7254d53
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140128959"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142296097"
 ---
 # Update-AzTimeSeriesInsightsEventSource
 
 ## SYNOPSIS
-Memperbarui sumber kejadian dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan yang ditentukan.
+Memperbarui sumber kejadian dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.timeseriesinsights/update-aztimeseriesinsightseventsource) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.timeseriesinsights/update-aztimeseriesinsightseventsource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Update-AzTimeSeriesInsightsEventSource -InputObject <ITimeSeriesInsightsIdentity
 ```
 
 ## DESCRIPTION
-Memperbarui sumber kejadian dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan yang ditentukan.
+Memperbarui sumber kejadian dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan tertentu.
 
 ## EXAMPLES
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnvironmentName
-Nama lingkungan Rangkaian Waktu Insights dengan grup sumber daya yang ditentukan.
+Nama lingkungan Insights Time Series yang terkait dengan grup sumber daya tertentu.
 
 ```yaml
 Type: System.String
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.TimeSeriesInsights.Models.ITimeSeriesInsightsIdentity
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Rangkaian Waktu dari sumber Insights terkait dengan lingkungan tertentu.
+Nama sumber kejadian Insights Time Series yang terkait dengan lingkungan yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dari properti tambahan untuk sumber kejadian.
+Pasangan nilai kunci properti tambahan untuk sumber kejadian.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -240,7 +240,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <ITimeSeriesInsightsIdentity>: Parameter Identitas
   - `[AccessPolicyName <String>]`: Nama kebijakan akses.
   - `[EnvironmentName <String>]`: Nama lingkungan
-  - `[EventSourceName <String>]`: Nama Sumber waktu yang Insights terkait dengan lingkungan tertentu.
+  - `[EventSourceName <String>]`: Nama sumber kejadian Insights Time Series yang terkait dengan lingkungan yang ditentukan.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ReferenceDataSetName <String>]`: Nama kumpulan data referensi.
   - `[ResourceGroupName <String>]`: Nama grup Sumber Daya Azure.

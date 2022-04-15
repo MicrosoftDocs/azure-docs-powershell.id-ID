@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/Get-AzStorageUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/Get-AzStorageUsage.md
 ms.openlocfilehash: edf78ad4022b29251d78e976ff7e5d66ae67bb69
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132415082"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142276421"
 ---
 # Get-AzStorageUsage
 
 ## SYNOPSIS
-Mendapatkan layanan Storage sumber daya langganan saat ini.
+Mendapatkan Storage penggunaan sumber daya langganan saat ini.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-AzStorageUsage [-DefaultProfile <IAzureContextContainer>] [<CommonParameters
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStorageUsage** mendapatkan penggunaan sumber daya untuk Azure Storage langganan saat ini.
+Cmdlet **Get-AzStorageUsage** mendapatkan penggunaan sumber daya untuk Azure Storage untuk langganan saat ini.
 
 ## EXAMPLES
 
@@ -34,7 +34,7 @@ Cmdlet **Get-AzStorageUsage** mendapatkan penggunaan sumber daya untuk Azure Sto
 PS C:\>Get-AzStorageUsage
 ```
 
-Perintah ini memberikan Storage sumber daya langganan saat ini.
+Perintah ini mendapatkan Storage penggunaan sumber daya langganan saat ini.
 
 ## PARAMETERS
 
@@ -54,11 +54,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -68,6 +68,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[cmdlet Azure Storage Manager](./Az.Storage.md)
+[Cmdlet Manajer Azure Storage](./Az.Storage.md)
 
 

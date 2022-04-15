@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Connect-AzAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Connect-AzAccount.md
 ms.openlocfilehash: 12865bc837352de64f85d9c529533fe77d899e39
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140145375"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142275775"
 ---
 # Connect-AzAccount
 
 ## SYNOPSIS
-Koneksi ke Azure dengan akun terautentikasi untuk digunakan dengan cmdlet dari modul Az PowerShell.
+Koneksi ke Azure dengan akun yang diautentikasi untuk digunakan dengan cmdlet dari modul Az PowerShell.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.accounts/connect-azaccount) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.accounts/connect-azaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,7 +55,7 @@ Connect-AzAccount [-Environment <String>] -CertificateThumbprint <String> -Appli
  [<CommonParameters>]
 ```
 
-### ClientApertionParameterSet
+### ClientAssertionParameterSet
 ```
 Connect-AzAccount [-Environment <String>] -ApplicationId <String> [-ServicePrincipal] -Tenant <String>
  [-Subscription <String>] [-ContextName <String>] [-SkipContextPopulation] [-MaxContextPopulation <Int32>]
@@ -91,14 +91,14 @@ Connect-AzAccount [-Environment <String>] [-Tenant <String>] [-AccountId <String
 
 ## DESCRIPTION
 
-Cmdlet `Connect-AzAccount` menghubungkan ke Azure dengan akun terautentikasi untuk digunakan dengan cmdlet dari modul Az PowerShell. Anda dapat menggunakan akun terautentikasi ini hanya dengan permintaan Azure Resource Manager. Untuk menambahkan akun terautentikasi untuk digunakan dengan Manajemen Layanan, gunakan `Add-AzureAccount` cmdlet dari Azure PowerShell modul. Jika tidak ada konteks untuk pengguna saat ini, daftar konteks pengguna akan diisi dengan konteks untuk setiap 25 langganan pertama mereka.
-Daftar konteks yang dibuat untuk pengguna bisa ditemukan dengan menjalankan `Get-AzContext -ListAvailable`. Untuk melewati populasi konteks ini, tentukan parameter **sakelar SkipContextPopulation** . Setelah menjalankan cmdlet ini, Anda dapat memutuskan sambungan dari akun Azure menggunakan `Disconnect-AzAccount`.
+`Connect-AzAccount` Cmdlet tersambung ke Azure dengan akun terautentikasi untuk digunakan dengan cmdlet dari modul Az PowerShell. Anda hanya dapat menggunakan akun terautentikasi ini dengan permintaan Resource Manager Azure. Untuk menambahkan akun terautentikasi untuk digunakan dengan Manajemen Layanan, gunakan `Add-AzureAccount` cmdlet dari modul Azure PowerShell. Jika tidak ada konteks yang ditemukan untuk pengguna saat ini, daftar konteks pengguna diisi dengan konteks untuk masing-masing dari 25 langganan pertama mereka.
+Daftar konteks yang dibuat untuk pengguna dapat ditemukan dengan menjalankan `Get-AzContext -ListAvailable`. Untuk melewati populasi konteks ini, tentukan parameter **sakelar SkipContextPopulation** . Setelah menjalankan cmdlet ini, Anda dapat memutuskan koneksi dari akun Azure menggunakan `Disconnect-AzAccount`.
 
 ## EXAMPLES
 
 ### Contoh 1: Koneksi ke akun Azure
 
-Contoh ini terhubung ke akun Azure. Anda harus menyediakan akun Microsoft atau kredensial ID organisasi. Jika multi-factor authentication diaktifkan untuk kredensial, Anda harus masuk menggunakan opsi interaktif atau menggunakan autentikasi prinsipal layanan.
+Contoh ini tersambung ke akun Azure. Anda harus menyediakan akun Microsoft atau kredensial ID organisasi. Jika multi-factor authentication diaktifkan untuk kredensial Anda, Anda harus masuk menggunakan opsi interaktif atau menggunakan autentikasi prinsipal layanan.
 
 ```powershell
 Connect-AzAccount
@@ -112,7 +112,7 @@ azureuser@contoso.com  Subscription1    xxxx-xxxx-xxxx-xxxx     AzureCloud
 
 ### Contoh 2: Koneksi ke Azure menggunakan kredensial ID organisasi
 
-Skenario ini hanya berfungsi jika pengguna tidak mengaktifkan multi-factor auth. Perintah pertama meminta kredensial pengguna dan menyimpannya dalam `$Credential` variabel. Perintah kedua tersambung ke akun Azure menggunakan kredensial yang disimpan di `$Credential`. Akun ini mengautentikasi dengan Azure menggunakan kredensial ID organisasi.
+Skenario ini hanya berfungsi ketika pengguna tidak mengaktifkan multi-factor auth. Perintah pertama meminta kredensial pengguna dan menyimpannya dalam `$Credential` variabel. Perintah kedua tersambung ke akun Azure menggunakan kredensial yang disimpan di `$Credential`. Akun ini mengautentikasi dengan Azure menggunakan kredensial ID organisasi.
 
 ```powershell
 $Credential = Get-Credential
@@ -127,7 +127,7 @@ azureuser@contoso.com  Subscription1    xxxx-xxxx-xxxx-xxxx     AzureCloud
 
 ### Contoh 3: Koneksi ke Azure menggunakan akun prinsipal layanan
 
-Perintah pertama menyimpan kredensial prinsipal layanan dalam `$Credential` variabel. Perintah kedua menyambungkan penyewa Azure tertentu menggunakan kredensial prinsipal layanan yang disimpan dalam `$Credential` variabel. Parameter **sakelar ServicePrincipal** menunjukkan bahwa akun diautentikasi sebagai prinsipal layanan.
+Perintah pertama menyimpan kredensial prinsipal layanan dalam `$Credential` variabel. Perintah kedua menghubungkan penyewa Azure yang ditentukan menggunakan kredensial utama layanan yang disimpan dalam `$Credential` variabel. Parameter sakelar **ServicePrincipal** menunjukkan bahwa akun diautentikasi sebagai prinsipal layanan.
 
 ```powershell
 $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $ApplicationId, $SecuredPassword
@@ -140,9 +140,9 @@ Account                SubscriptionName TenantId                Environment
 xxxx-xxxx-xxxx-xxxx    Subscription1    xxxx-xxxx-xxxx-xxxx     AzureCloud
 ```
 
-### Contoh 4: Gunakan masuk interaktif untuk menyambungkan ke penyewa dan langganan tertentu
+### Contoh 4: Menggunakan login interaktif untuk menyambungkan ke penyewa dan langganan tertentu
 
-Contoh ini terhubung ke akun Azure dengan penyewa dan langganan tertentu.
+Contoh ini tersambung ke akun Azure dengan penyewa dan langganan tertentu.
 
 ```powershell
 Connect-AzAccount -Tenant 'xxxx-xxxx-xxxx-xxxx' -SubscriptionId 'yyyy-yyyy-yyyy-yyyy'
@@ -156,7 +156,7 @@ azureuser@contoso.com  Subscription1    xxxx-xxxx-xxxx-xxxx     AzureCloud
 
 ### Contoh 5: Koneksi menggunakan Identitas Layanan Terkelola
 
-Contoh ini tersambung menggunakan lingkungan host Managed Service Identity (MSI). Misalnya, Anda masuk ke Azure dari komputer virtual yang memiliki MSI yang ditetapkan.
+Contoh ini tersambung menggunakan Managed Service Identity (MSI) lingkungan host. Misalnya, Anda masuk ke Azure dari mesin virtual yang memiliki MSI yang ditetapkan.
 
 ```powershell
 Connect-AzAccount -Identity
@@ -168,9 +168,9 @@ Account                SubscriptionName TenantId                Environment
 MSI@50342              Subscription1    xxxx-xxxx-xxxx-xxxx     AzureCloud
 ```
 
-### Contoh 6: Koneksi menggunakan login Managed Service Identity dan ClientId
+### Contoh 6: Koneksi menggunakan login Dan ClientId Identitas Layanan Terkelola
 
-Contoh ini tersambung menggunakan Managed Service Identity of **myUserAssignedIdentity**. Tambahkan identitas yang ditetapkan pengguna ke komputer virtual, lalu tersambung menggunakan ClientId identitas yang ditetapkan pengguna. Untuk informasi selengkapnya, [lihat Mengonfigurasi identitas terkelola untuk sumber daya Azure pada Azure VM](/azure/active-directory/managed-identities-azure-resources/qs-configure-powershell-windows-vm).
+Contoh ini tersambung menggunakan Identitas Layanan Terkelola **myUserAssignedIdentity**. Ini menambahkan identitas yang ditetapkan pengguna ke mesin virtual, lalu menyambungkan menggunakan ClientId identitas pengguna yang ditetapkan. Untuk informasi selengkapnya, lihat [Mengonfigurasi identitas terkelola untuk sumber daya Azure di Azure VM](/azure/active-directory/managed-identities-azure-resources/qs-configure-powershell-windows-vm).
 
 ```powershell
 $identity = Get-AzUserAssignedIdentity -ResourceGroupName 'myResourceGroup' -Name 'myUserAssignedIdentity'
@@ -209,8 +209,8 @@ Environment      : AzureCloud
 ```
 
 ### Contoh 8: Koneksi dengan AuthScope
-AuthScope digunakan untuk mendukung skenario bahwa sumber daya bidang data memiliki autentikasi yang disempurnakan daripada sumber daya ARM, misalnya penyimpanan memerlukan MFA tetapi ARM tidak.
-Setelah AuthScope ditentukan, misalnya Storage, `https://storage.azure.com/`Connect-AzAccount masuk terlebih dahulu dengan lingkup penyimpanan , lalu secara diam-diam memerlukan token untuk ARM.
+AuthScope digunakan untuk mendukung skenario bahwa sumber daya pesawat data telah meningkatkan autentikasi daripada sumber daya ARM, misalnya penyimpanan membutuhkan MFA tetapi ARM tidak.
+Setelah AuthScope ditentukan, misalnya Storage, Connect-AzAccount akan masuk terlebih dahulu dengan lingkup `https://storage.azure.com/`penyimpanan , lalu diam-diam memerlukan token untuk ARM.
 
 ```powershell
 Connect-AzAccount -AuthScope Storage
@@ -247,7 +247,7 @@ xxxxxxxx-xxxx-xxxx-xxxxxxxx Subscription1    yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyy Azu
 Menentukan token akses.
 
 > [!CAUTION]
-> Token akses merupakan satu jenis kredensial. Anda harus melakukan tindakan pengamanan yang sesuai untuk menjaga kerahasiaannya. Token akses juga dapat membuat waktu habis dan mungkin mencegah penyelesaian tugas yang berjalan lama.
+> Token akses adalah tipe kredensial. Anda harus mengambil tindakan pencegahan keamanan yang sesuai untuk menjaga kerahasiaannya. Token akses juga kehabisan waktu dan mungkin mencegah penyelesaian tugas yang berjalan lama.
 
 ```yaml
 Type: System.String
@@ -263,8 +263,8 @@ Accept wildcard characters: False
 
 ### -AccountId
 
-ID Akun untuk token akses di **kumpulan parameter AccessToken** . ID Akun untuk layanan terkelola dalam **kumpulan parameter ManagedService** . Can be a managed service resource ID, or the associated client ID.
-Untuk menggunakan identitas yang ditetapkan sistem, biarkan bidang ini kosong.
+ID Akun untuk token akses dalam kumpulan parameter **AccessToken** . ID Akun untuk layanan terkelola di kumpulan parameter **ManagedService** . Dapat berupa ID sumber daya layanan terkelola, atau ID klien terkait.
+Untuk menggunakan identitas sistem yang ditetapkan, biarkan bidang ini kosong.
 
 ```yaml
 Type: System.String
@@ -292,7 +292,7 @@ Accept wildcard characters: False
 
 ### -ApplicationId
 
-ID Aplikasi prinsipal layanan.
+ID aplikasi prinsipal layanan.
 
 ```yaml
 Type: System.String
@@ -307,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### -AuthScope
-Lingkup OAuth opsional untuk masuk, nilai yang didukung sebelumnya: AadGraph, AnalysisServices, Attestation, Batch, DataLake, KeyVault, OperationalInsights, Storage, Synapse. Id sumber daya juga mendukung id sumber daya seperti `https://storage.azure.com/`.
+Lingkup OAuth opsional untuk masuk, nilai yang telah ditentukan sebelumnya yang didukung: AadGraph, AnalysisServices, Attestation, Batch, DataLake, KeyVault, OperationalInsights, Storage, Synapse. Ini juga mendukung id sumber daya seperti `https://storage.azure.com/`.
 
 ```yaml
 Type: System.String
@@ -322,7 +322,7 @@ Accept wildcard characters: False
 ```
 
 ### -CertificatePassword
-Kata sandi yang diperlukan untuk mengakses file sertifikat pkcs#12.
+Kata sandi diperlukan untuk mengakses file sertifikat pkcs#12.
 
 ```yaml
 Type: System.Security.SecureString
@@ -337,7 +337,7 @@ Accept wildcard characters: False
 ```
 
 ### -CertificatePath
-Jalur file sertifikat dalam format pkcs#12.
+Jalur file sertficate dalam format pkcs#12.
 
 ```yaml
 Type: System.String
@@ -353,7 +353,7 @@ Accept wildcard characters: False
 
 ### -CertificateThumbprint
 
-Hash Sertifikat atau Thumbprint.
+Sertifikat Hash atau Thumbprint.
 
 ```yaml
 Type: System.String
@@ -369,7 +369,7 @@ Accept wildcard characters: False
 
 ### -ContextName
 
-Nama konteks default Azure untuk masuk ini. Untuk informasi selengkapnya tentang konteks Azure, lihat [Azure PowerShell konteks objek](/powershell/azure/context-persistence).
+Nama konteks Azure default untuk masuk ini. Untuk informasi selengkapnya tentang konteks Azure, lihat [Azure PowerShell objek konteks](/powershell/azure/context-persistence).
 
 ```yaml
 Type: System.String
@@ -383,9 +383,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Credential
+### -Kredensial
 
-Menentukan objek **PSCredential** . Untuk informasi selengkapnya tentang **objek PSCredential** , ketik `Get-Help Get-Credential`. Objek **PSCredential** menyediakan ID pengguna dan kata sandi untuk kredensial ID organisasi, atau ID aplikasi dan rahasia untuk kredensial prinsipal layanan.
+Menentukan objek **PSCredential** . Untuk informasi selengkapnya tentang objek **PSCredential**, ketik .`Get-Help Get-Credential` Objek **PSCredential** menyediakan ID pengguna dan kata sandi untuk kredensial ID organisasi, atau ID aplikasi dan rahasia untuk kredensial utama layanan.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -432,10 +432,10 @@ Accept wildcard characters: False
 ```
 
 ### -FederatedToken
-Menentukan token yang disediakan oleh penyedia identitas lain. Penerbit dan subjek dalam token ini harus dikonfigurasi terlebih dahulu agar dapat dipercaya oleh ApplicationId.
+Menentukan token yang disediakan oleh penyedia identitas lain. Penerbit dan subjek dalam token ini harus terlebih dahulu dikonfigurasi agar dapat dipercaya oleh ApplicationId.
 
 > [!CAUTION]
-> Token gabungan adalah jenis kredensial. Anda harus melakukan tindakan pengamanan yang sesuai untuk menjaga kerahasiaannya. Token gabungan juga akan habis waktu dan mungkin mencegah penyelesaian tugas yang lama.
+> Token gabungan adalah tipe kredensial. Anda harus mengambil tindakan pencegahan keamanan yang sesuai untuk menjaga kerahasiaannya. Token gabungan juga waktu habis dan mungkin mencegah tugas yang berjalan lama selesai.
 
 ```yaml
 Type: System.String
@@ -449,9 +449,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 
-Timpa konteks yang sudah ada dengan nama yang sama tanpa memberikan perintah.
+Timpa konteks yang sudah ada dengan nama yang sama tanpa meminta.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -467,7 +467,7 @@ Accept wildcard characters: False
 
 ### -GraphAccessToken
 
-AccessToken untuk Graph Baru.
+AccessToken untuk Layanan Graph.
 
 ```yaml
 Type: System.String
@@ -481,7 +481,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Identity
+### -Identitas
 
 Masuk menggunakan Identitas Layanan Terkelola.
 
@@ -499,7 +499,7 @@ Accept wildcard characters: False
 
 ### -KeyVaultAccessToken
 
-AccessToken untuk KeyVault Service.
+AccessToken untuk Layanan KeyVault.
 
 ```yaml
 Type: System.String
@@ -515,7 +515,7 @@ Accept wildcard characters: False
 
 ### -MaxContextPopulation
 
-Max nomor langganan untuk mengisi konteks setelah masuk. Defaultnya adalah 25. Untuk mengisi semua langganan ke konteks, atur ke -1.
+Nomor langganan maks untuk mengisi konteks setelah masuk. Defaultnya adalah 25. Untuk mengisi semua langganan ke konteks, atur ke -1.
 
 ```yaml
 Type: System.Int32
@@ -531,7 +531,7 @@ Accept wildcard characters: False
 
 ### -Lingkup
 
-Menentukan lingkup perubahan konteks, misalnya, apakah perubahan diterapkan hanya pada proses saat ini, atau untuk semua sesi yang dimulai oleh pengguna ini.
+Menentukan lingkup perubahan konteks, misalnya, apakah perubahan hanya berlaku untuk proses saat ini, atau ke semua sesi yang dimulai oleh pengguna ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Profile.Common.ContextModificationScope
@@ -547,7 +547,7 @@ Accept wildcard characters: False
 ```
 
 ### -SendCertificateChain
-Menentukan apakah klaim x5c (kunci publik sertifikat) harus dikirimkan ke STS untuk mendapatkan peluncuran sertifikat yang mudah di Azure AD.
+Menentukan apakah klaim x5c (kunci publik sertifikat) harus dikirim ke STS untuk mendapatkan peluncuran sertifikat yang mudah di Azure AD.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -563,7 +563,7 @@ Accept wildcard characters: False
 
 ### -ServicePrincipal
 
-Menunjukkan bahwa akun ini mengautentikasi dengan menyediakan kredensial prinsipal layanan.
+Menunjukkan bahwa akun ini mengautentikasi dengan menyediakan kredensial utama layanan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -591,7 +591,7 @@ Accept wildcard characters: False
 
 ### -SkipContextPopulation
 
-Melewatkan populasi konteks jika tidak ada konteks yang ditemukan.
+Lewati populasi konteks jika tidak ada konteks yang ditemukan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -623,7 +623,7 @@ Accept wildcard characters: False
 
 ### -Langganan
 
-Nama Langganan atau ID.
+Nama langganan atau ID.
 
 ```yaml
 Type: System.String
@@ -639,10 +639,10 @@ Accept wildcard characters: False
 
 ### -Penyewa
 
-Nama penyewa atau ID opsional.
+Nama penyewa atau ID penyewa opsional.
 
 > [!NOTE]
-> Karena batasan API saat ini, Anda harus menggunakan ID penyewa, bukan nama penyewa saat menyambungkan dengan akun bisnis ke bisnis (B2B).
+> Karena keterbatasan API saat ini, Anda harus menggunakan ID penyewa dan bukan nama penyewa saat menyambungkan dengan akun business-to-business (B2B).
 
 ```yaml
 Type: System.String
@@ -670,7 +670,7 @@ Accept wildcard characters: False
 
 ### -UseDeviceAuthentication
 
-Gunakan autentikasi kode perangkat dan bukan kontrol browser.
+Gunakan autentikasi kode perangkat, bukan kontrol browser.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -686,7 +686,7 @@ Accept wildcard characters: False
 
 ### -Konfirmasi
 
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -702,7 +702,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -717,7 +717,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

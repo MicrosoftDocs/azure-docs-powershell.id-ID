@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorRulesEngineRuleObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorRulesEngineRuleObject.md
 ms.openlocfilehash: 7d3f0b86d9b414068933edd5a597fca9c04d9c37
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140254862"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142305151"
 ---
 # New-AzFrontDoorRulesEngineRuleObject
 
 ## SYNOPSIS
-Membuat objek PSRulesEngineRule untuk pembuatan Rules Engine.
+Buat objek PSRulesEngineRule untuk pembuatan Mesin Aturan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorrulesengineruleobject) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorrulesengineruleobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,10 +29,10 @@ New-AzFrontDoorRulesEngineRuleObject -Name <String> -Priority <Int32> -Action <P
 ```
 
 ## DESCRIPTION
-Membuat objek PSRulesEngineRule untuk pembuatan Rules Engine.
+Buat objek PSRulesEngineRule untuk pembuatan Mesin Aturan.
 
-Gunakan cmdlet "New-AzFrontDoorRulesEngineActionObject" untuk membuat objek PSRulesEngineAction masuk ke dalam parameter "-Action".
-Gunakan cmdlet "New-AzFrontDoorRulesEngineMatchConditionObject" untuk membuat objek PSRulesEngineMatchCondition yang akan masuk ke parameter "-MatchCondition".
+Gunakan cmdlet "New-AzFrontDoorRulesEngineActionObject" untuk membuat objek PSRulesEngineAction untuk masuk ke parameter "-Action".
+Gunakan cmdlet "New-AzFrontDoorRulesEngineMatchConditionObject" untuk membuat objek PSRulesEngineMatchCondition untuk masuk ke parameter "-MatchCondition".
 
 ## EXAMPLES
 
@@ -63,7 +63,7 @@ NegateCondition          : False
 Transforms               : {Lowercase, Uppercase}
 ```
 
-Buat objek PSRulesEngineRule baru dan mendemonstrasikan cara melihat subfield.
+Buat objek PSRulesEngineRule baru dan demonstrasikan cara melihat subfield.
 
 ### Contoh 2
 ```powershell
@@ -76,12 +76,12 @@ At line:1 char:81
 + FullyQualifiedErrorId : ParameterArgumentValidationError,Microsoft.Azure.Commands.FrontDoor.Cmdlets.NewFrontDoorRulesEngineRuleObject
 ```
 
-Diharapkan output saat meneruskan nilai prioritas yang tidak valid.
+Mengharapkan output ketika melewati dalam nilai prioritas yang tidak valid.
 
 ## PARAMETERS
 
 ### -Tindakan
-Tindakan yang dilakukan pada permintaan dan respons jika semua kondisi kecocokan terpenuhi.
+Tindakan untuk dilakukan atas permintaan dan respons jika semua kondisi kecocokan terpenuhi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSRulesEngineAction
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -MatchCondition
-Daftar kondisi kecocokan yang harus dipenuhi agar tindakan dari aturan ini dapat dijalankan. Jika tidak memiliki kondisi yang cocok, tindakan akan selalu berjalan.
+Daftar kondisi kecocokan yang harus dipenuhi agar tindakan aturan ini berjalan. Tidak memiliki kondisi yang cocok berarti tindakan akan selalu berjalan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSRulesEngineMatchCondition[]
@@ -125,10 +125,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -MatchProcessingBeprocessior
+### -MatchProcessingBehavior
 Jika aturan ini cocok jika mesin aturan terus menjalankan aturan yang tersisa atau berhenti.
-Nilai yang mungkin adalah Lanjutkan dan Berhenti.
-Jika tidak ada, defaultnya adalah Lanjutkan.
+Nilai yang memungkinkan adalah Lanjutkan dan Hentikan.
+Jika tidak ada, default ke Lanjutkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSMatchProcessingBehavior
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama untuk merujuk pada aturan khusus ini.
+Nama untuk merujuk ke aturan tertentu ini.
 
 ```yaml
 Type: System.String
@@ -159,8 +159,8 @@ Accept wildcard characters: False
 ```
 
 ### -Prioritas
-Prioritas ditetapkan untuk aturan ini.
-Tidak boleh negatif.
+Prioritas yang ditetapkan untuk aturan ini.
+Tidak bisa negatif.
 
 ```yaml
 Type: System.Int32
@@ -175,11 +175,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

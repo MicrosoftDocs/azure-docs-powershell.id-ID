@@ -4,12 +4,12 @@ Module Name: AzureRM.Network
 ms.assetid: 355DF798-6233-45C6-9416-8AB0E0D7DC02
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/set-azurermloadbalancerinboundnatpoolconfig
 schema: 2.0.0
-ms.openlocfilehash: 6353cf44d0974abf3c5f8190111da35f4566c27afae656cad16876d755f6733c
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 6f4981469bf9468de7fd05ec79b1d3d2b28daa93
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419350"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142285395"
 ---
 # Set-AzureRmLoadBalancerInboundNatPoolConfig
 
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -152,7 +152,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
+### -Protokol
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -167,12 +167,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSLoadBalancer
-Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari saluran
+Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari pipeline
 
 ## OUTPUTS
 
@@ -188,6 +188,6 @@ Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari saluran
 
 [New-AzureRmLoadBalancerInboundNatPoolConfig](./New-AzureRmLoadBalancerInboundNatPoolConfig.md)
 
-[Remove-AzureRmLoadBalancerInboundNatPoolConfig](./Remove-AzureRmLoadBalancerInboundNatPoolConfig.md)
+[Hapus-AzureRmLoadBalancerInboundNatPoolConfig](./Remove-AzureRmLoadBalancerInboundNatPoolConfig.md)
 
 

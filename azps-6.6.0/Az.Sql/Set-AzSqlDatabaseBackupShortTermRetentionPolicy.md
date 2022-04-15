@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseBackupShortTermRetentionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseBackupShortTermRetentionPolicy.md
 ms.openlocfilehash: 9e76e42899c82c11a0765a324ddf6516f2b55d67
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140097047"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142265479"
 ---
 # Set-AzSqlDatabaseBackupShortTermRetentionPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "140097047"
 Mengatur kebijakan penyimpanan jangka pendek cadangan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqldatabasebackupshorttermretentionpolicy) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqldatabasebackupshorttermretentionpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Set-AzSqlDatabaseBackupShortTermRetentionPolicy [-RetentionDays <Int32>] [-DiffB
 
 ## DESCRIPTION
 Cmdlet **Set-AzSqlDatabaseBackupShortTermRetentionPolicy** mengatur kebijakan penyimpanan jangka pendek untuk database ini.
-Kebijakannya adalah periode penyimpanan, dalam hari, untuk pencadangan pemulihan titik waktu dan frekuensi pencadangan yang berbeda, dalam jam.
+Kebijakan ini adalah periode penyimpanan, dalam hari, untuk pencadangan pemulihan point-in-time dan frekuensi pencadangan disensial, dalam jam.
 
 ## EXAMPLES
 
@@ -56,7 +56,7 @@ ResourceGroupName ServerName DatabaseName RetentionDays DiffBackupIntervalInHour
 resourcegroup01   server01   database01   6             24
 ```
 
-Perintah ini mengatur kebijakan penyimpanan jangka pendek untuk database01 hingga 6 hari penyimpanan dan 24 jam interval pencadangan yang berbeda.
+Perintah ini mengatur kebijakan penyimpanan jangka pendek untuk database01 hingga 6 hari penyimpanan dan 24 jam interval cadangan disendata.
 
 ### Contoh 2
 ```powershell
@@ -66,7 +66,7 @@ ResourceGroupName ServerName DatabaseName RetentionDays DiffBackupIntervalInHour
 resourcegroup01   server01   database01   5             12
 ```
 
-Perintah ini mengatur kebijakan penyimpanan jangka pendek untuk database01 hingga 5 hari penyimpanan dan 12 jam interval pencadangan berbeda melalui pemipaan dalam objek database.
+Perintah ini mengatur kebijakan penyimpanan jangka pendek untuk database01 hingga 5 hari penyimpanan dan 12 jam interval cadangan disendata melalui pipa dalam objek database.
 
 ### Contoh 3
 ```powershell
@@ -81,7 +81,7 @@ Perintah ini mengatur kebijakan penyimpanan jangka pendek untuk database01 hingg
 ## PARAMETERS
 
 ### -AzureSqlDatabaseObject
-Objek database yang akan mendapatkan kebijakannya.
+Objek database untuk mendapatkan kebijakan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Nama nama Azure SQL Database digunakan.
+Nama Azure SQL Database untuk digunakan.
 
 ```yaml
 Type: System.String
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiffBackupIntervalInHours
-Perbedaan frekuensi pencadangan dalam jam.
+Frekuensi pencadangan dibingkai dalam jam.
 
 ```yaml
 Type: System.Int32
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetentionDays
-Pengaturan penyimpanan cadangan, dalam hari.
+Pengaturan penyimpanan cadangan, dalam beberapa hari.
 
 ```yaml
 Type: System.Int32
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama azure SQL Server database berada.
+Nama Server Azure SQL tempat database berada.
 
 ```yaml
 Type: System.String
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -217,7 +217,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/New-AzDeploymentManagerArtifactSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/New-AzDeploymentManagerArtifactSource.md
 ms.openlocfilehash: 0453310cb8f46c7cead05462bcb545495cd8662d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139940587"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142305889"
 ---
 # New-AzDeploymentManagerArtifactSource
 
 ## SYNOPSIS
-Membuat sumber artifak.
+Membuat sumber artefak.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.deploymentmanager/new-azdeploymentmanagerartifactsource) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.deploymentmanager/new-azdeploymentmanagerartifactsource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,12 +29,12 @@ New-AzDeploymentManagerArtifactSource -ResourceGroupName <String> -Name <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDeploymentManagerArtifactSource** membuat sumber artifak.
-Tentukan Nama *,* *ResourceGroupName, dan* properti yang diperlukan.
+Cmdlet **New-AzDeploymentManagerArtifactSource** menciptakan sumber artefak.
+Tentukan *Nama*, *ResourceGroupName* dan properti yang diperlukan.
 
-Anda dapat mengubah objek yang dikembalikan secara lokal, lalu menerapkan perubahan ke sumber artifak menggunakan cmdlet Set-AzDeploymentManagerArtifactSource.
+Anda dapat mengubah objek yang dikembalikan secara lokal lalu menerapkan perubahan ke sumber artefak menggunakan cmdlet Set-AzDeploymentManagerArtifactSource.
 
-Cmdlet mengembalikan objek ArtifactSource yang memiliki ResourceId yang dapat direferensikan di cmdlet New-AzDeploymentManagerServiceTopology sehingga artifak yang diperlukan untuk sumber daya ServiceUnit, file Templat dan Parameter, dapat dirujuk dari lokasi ini.
+Cmdlet mengembalikan objek ArtifactSource yang memiliki ResourceId yang dapat direferensikan dalam cmdlet New-AzDeploymentManagerServiceTopology sehingga artefak diperlukan untuk sumber daya ServiceUnit, file Templat dan Parameter, dapat dirujuk dari lokasi ini.
 
 ## EXAMPLES
 
@@ -43,12 +43,12 @@ Cmdlet mengembalikan objek ArtifactSource yang memiliki ResourceId yang dapat di
 PS C:\> New-AzDeploymentManagerArtifactSource -ResourceGroupName ContosoResourceGroup -Name ContosoArtifactSource -Location "Central US" -SasUri "https://ContosoStorage.blob.core.windows.net/ContosoArtifacts?sasParameters"
 ```
 
-Membuat sumber artifak di ContosoResourceGroup dengan nama ContosoArtifactSource dengan AS Tengah sebagai lokasi sumber daya. Properti SasUri menyediakan sebuah Azure Storage SAS Uri ke tempat penyimpanan artifak disimpan.
+Membuat sumber artefak di ContosoResourceGroup dengan nama ContosoArtifactSource dengan CENTRAL US sebagai lokasi sumber daya. Properti SasUri menyediakan Azure Storage SAS Uri untuk wadah penyimpanan tempat artefak disimpan.
 
 ## PARAMETERS
 
 ### -ArtifactRoot
-Offset direktori opsional di bawah wadah penyimpanan untuk artifak.
+Offset direktori opsional di bawah wadah penyimpanan untuk artefak.
 
 ```yaml
 Type: System.String
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama sumber artifak.
+Nama sumber artefak.
 
 ```yaml
 Type: System.String
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -SasUri
-SAS Uri ke wadah penyimpanan Azure tempat artifak disimpan.
+SAS Uri ke wadah penyimpanan Azure tempat artefak disimpan.
 
 ```yaml
 Type: System.String
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

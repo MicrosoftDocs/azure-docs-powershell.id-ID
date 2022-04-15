@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticPoolDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticPoolDatabase.md
 ms.openlocfilehash: b96e01cc98d4e93234a4c4217d2dae41bad4c73e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140097911"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142265828"
 ---
 # Get-AzSqlElasticPoolDatabase
 
 ## SYNOPSIS
-Mendapatkan database elastis dalam kolam elastis dan nilai propertinya.
+Mendapatkan database elastis dalam kumpulan elastis dan nilai propertinya.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlelasticpooldatabase) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlelasticpooldatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,29 +30,29 @@ Get-AzSqlElasticPoolDatabase [-ElasticPoolName] <String> [-DatabaseName <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlElasticPoolDatabase** mendapatkan database elastis dalam kolam elastis dan nilai propertinya.
-Anda dapat menentukan nama database elastis di Azure SQL Database untuk melihat nilai properti hanya untuk database itu.
+Cmdlet **Get-AzSqlElasticPoolDatabase** mendapatkan database elastis dalam kumpulan elastis dan nilai propertinya.
+Anda dapat menentukan nama database elastis dalam Azure SQL Database untuk melihat nilai properti hanya untuk database tersebut.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua database dalam pool elastis
+### Contoh 1: Dapatkan semua database dalam kumpulan elastis
 ```
 PS C:\> Get-AzSqlElasticPoolDatabase -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -ElasticPoolName "ElasticPool01"
 ```
 
-Perintah ini akan mendapatkan semua database dalam kolam elastis bernama ElastisPool01.
+Perintah ini mendapatkan semua database dalam kumpulan elastis bernama ElasticPool01.
 
-### Contoh 2: Mendapatkan semua database dalam pool elastis menggunakan pemfilteran
+### Contoh 2: Dapatkan semua database dalam kumpulan elastis menggunakan pemfilteran
 ```
 PS C:\> Get-AzSqlElasticPoolDatabase -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -ElasticPoolName "ElasticPool01" -DatabaseName "Database*"
 ```
 
-Perintah ini mendapatkan semua database dalam kolam elastis bernama ElastisPool01 yang dimulai dengan "Database".
+Perintah ini mendapatkan semua database dalam kumpulan elastis bernama ElasticPool01 yang dimulai dengan "Database".
 
 ## PARAMETERS
 
 ### -DatabaseName
-Menentukan nama perusahaan yang SQL Database cmdlet ini dapatkan.
+Menentukan nama SQL Database yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -67,7 +67,7 @@ Accept wildcard characters: True
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -81,8 +81,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ElastisPoolName
-Menentukan nama kolam renang elastis.
+### -ElasticPoolName
+Menentukan nama kumpulan elastis.
 
 ```yaml
 Type: System.String
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat kelompok elastis ditetapkan.
+Menentukan nama grup sumber daya tempat kumpulan elastis ditetapkan.
 
 ```yaml
 Type: System.String
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server yang berisi kolam elastis.
+Menentukan nama server yang berisi kumpulan elastis.
 
 ```yaml
 Type: System.String
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

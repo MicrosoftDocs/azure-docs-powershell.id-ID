@@ -6,23 +6,23 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Revoke-AzStorageAccountUserDelegationKeys.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Revoke-AzStorageAccountUserDelegationKeys.md
 ms.openlocfilehash: 25cfe377680119bce5503eae498d891a94836803
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140130471"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142264309"
 ---
 # Revoke-AzStorageAccountUserDelegationKeys
 
 ## SYNOPSIS
-Mencabut semua kunci Delegasi Pengguna dari Storage pengguna.
+Cabut semua kunci Delegasi Pengguna akun Storage.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/revoke-azstorageaccountuserdelegationkeys) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/revoke-azstorageaccountuserdelegationkeys) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Nama Akun (Default)
+### AccountName (Default)
 ```
 Revoke-AzStorageAccountUserDelegationKeys [-ResourceGroupName] <String> [-StorageAccountName] <String>
  [-PassThru] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -41,16 +41,16 @@ Revoke-AzStorageAccountUserDelegationKeys [-ResourceId] <String> [-PassThru]
 ```
 
 ## DESCRIPTION
-Cmdlet **Revoke-AzStorageAccountUserDelegationKeys** mencabut semua kunci Delegasi Pengguna dari akun Storage, sehingga semua token Identity SAS dari akun Storage juga akan dicabut.
+Cmdlet **Revoke-AzStorageAccountUserDelegationKeys** mencabut semua kunci Delegasi Pengguna akun Storage, sehingga semua token IDENTITY SAS akun Storage juga akan dicabut.
 
 ## EXAMPLES
 
-### Contoh 1: Cabut semua kunci Delegasi Pengguna dari Storage pengguna
+### Contoh 1: Mencabut semua kunci Delegasi Pengguna dari akun Storage
 ```powershell
 PS C:\>Revoke-AzStorageAccountUserDelegationKeys -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount"
 ```
 
-Contoh ini mencabut semua kunci Delegasi Pengguna dari akun Storage, sehingga semua token Identity SAS yang dihasilkan dari kunci Delegasi Pengguna juga akan dicabut.
+Contoh ini mencabut semua kunci Delegasi Pengguna akun Storage, sehingga semua token IDENTITAS SAS yang dihasilkan dari kunci Delegasi Pengguna juga akan dicabut.
 
 ## PARAMETERS
 
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Biasanya cmdlet ini tidak mengembalikan output setelah penyelesaian yang berhasil, parameter ini memaksa cmdlet untuk mengembalikan nilai ($true) setelah penyelesaian berhasil.
+Biasanya cmdlet ini tidak mengembalikan output pada penyelesaian yang berhasil, parameter ini memaksa cmdlet untuk mengembalikan nilai ($true) pada penyelesaian yang berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Storage Sumber Daya Akun.
+id sumber daya akun Storage.
 
 ```yaml
 Type: System.String
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

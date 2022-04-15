@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Disable-AzTrafficManagerProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Disable-AzTrafficManagerProfile.md
 ms.openlocfilehash: a79df7df030fb349724d25b48be5f2dfc526ef38
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140275061"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142295989"
 ---
 # Disable-AzTrafficManagerProfile
 
@@ -19,7 +19,7 @@ ms.locfileid: "140275061"
 Menonaktifkan profil Traffic Manager.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.trafficmanager/disable-aztrafficmanagerprofile) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.trafficmanager/disable-aztrafficmanagerprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,42 +29,42 @@ Disable-AzTrafficManagerProfile -Name <String> -ResourceGroupName <String> [-For
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Object
+### Objek
 ```
 Disable-AzTrafficManagerProfile -TrafficManagerProfile <TrafficManagerProfile> [-Force]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Disable-AzTrafficManagerProfile** menonaktifkan profil Azure Traffic Manager Anda.
-Anda dapat menentukan objek profil menggunakan saluran atau sebagai nilai parameter.
-Alternatifnya, Anda bisa menentukan profil dengan menggunakan parameter *Name* dan *ResourceGroupName* .
+Cmdlet **Disable-AzTrafficManagerProfile** menonaktifkan profil Azure Traffic Manager.
+Anda dapat menentukan objek profil menggunakan pipeline atau sebagai nilai parameter.
+Atau, Anda dapat menentukan profil menggunakan parameter *Name* and *ResourceGroupName* .
 
 ## EXAMPLES
 
-### Contoh 1: Menonaktifkan profil yang ditentukan berdasarkan nama
+### Contoh 1: Menonaktifkan profil yang ditentukan menurut nama
 ```
 PS C:\>Disable-AzTrafficManagerProfile -Name "ContosoProfile" -ResourceGroupName "ResourceGroup11"
 ```
 
-Perintah ini menonaktifkan profil bernama ContosoProfile dalam ResourceGroup11.
-Perintah akan meminta konfirmasi Anda.
+Perintah ini menonaktifkan profil bernama ContosoProfile di ResourceGroup11.
+Perintah meminta konfirmasi kepada Anda.
 
-### Contoh 2: Menonaktifkan profil dengan menggunakan saluran
+### Contoh 2: Menonaktifkan profil dengan menggunakan pipeline
 ```
 PS C:\>Get-AzTrafficManagerProfile -Name "ContosoProfile" -ResourceGroupName "ResourceGroup11" | Disable-AzTrafficManagerProfile -Force
 ```
 
-Perintah ini mendapatkan profil bernama ContosoProfile dalam ResourceGroup11.
-Perintah tersebut lalu meneruskan profil itu ke cmdlet **Disable-AzTrafficManagerProfile** dengan menggunakan operator pipeline.
-Cmdlet tersebut menonaktifkan profil tersebut.
+Perintah ini mendapatkan profil bernama ContosoProfile di ResourceGroup11.
+Perintah kemudian meneruskan profil tersebut ke cmdlet **Disable-AzTrafficManagerProfile** menggunakan operator pipeline.
+Cmdlet itu menonaktifkan profil itu.
 Perintah menentukan parameter *Paksa* .
-Oleh karena itu, kami tidak meminta konfirmasi Anda.
+Oleh karena itu, tindakan ini tidak meminta konfirmasi kepada Anda.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -78,8 +78,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

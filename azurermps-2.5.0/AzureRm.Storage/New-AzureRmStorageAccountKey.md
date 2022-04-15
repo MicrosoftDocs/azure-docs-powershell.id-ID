@@ -5,16 +5,16 @@ ms.assetid: FDD2CE98-6C7E-4B95-BA5B-B03B6AC6EAEF
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.storage/new-azurermstorageaccountkey
 schema: 2.0.0
 ms.openlocfilehash: 7ea3847c011582d9be809f030a638b09b6cf9532
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422767"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142285312"
 ---
 # New-AzureRmStorageAccountKey
 
 ## SYNOPSIS
-Meregenerasi kunci penyimpanan untuk Azure Storage tersebut.
+Meregenerasi kunci penyimpanan untuk akun Azure Storage.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -30,12 +30,12 @@ Cmdlet **New-AzureRmStorageAccountKey** meregenerasi kunci penyimpanan untuk aku
 
 ## EXAMPLES
 
-### Contoh 1: Regenerasi kunci penyimpanan
+### Contoh 1: Meregenerasi kunci penyimpanan
 ```
 PS C:\>New-AzureRmStorageKey -ResourceGroupName "MyResourceGroup" -Name "mystorageaccount" -KeyName "key1"
 ```
 
-Perintah ini meregenerasi kunci penyimpanan untuk akun Storage tertentu.
+Perintah ini meregenerasi kunci penyimpanan untuk akun Storage yang ditentukan.
 
 ## PARAMETERS
 
@@ -55,10 +55,10 @@ Accept wildcard characters: False
 ```
 
 ### -KeyName
-Menentukan kunci mana yang harus digenerasi.
+Menentukan kunci mana yang akan diregenerasi.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - tombol1
-- tombol2
+- key2
 
 ```yaml
 Type: System.String
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama akun Storage di mana untuk meregenerasi kunci penyimpanan.
+Menentukan nama akun Storage untuk meregenerasi kunci penyimpanan.
 
 ```yaml
 Type: System.String
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi akun Storage tersebut.
+Menentukan nama grup sumber daya yang berisi akun Storage.
 
 ```yaml
 Type: System.String
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

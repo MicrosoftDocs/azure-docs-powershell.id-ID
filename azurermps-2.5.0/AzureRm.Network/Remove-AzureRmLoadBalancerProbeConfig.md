@@ -5,16 +5,16 @@ ms.assetid: 2B15B224-E36C-454B-B6C2-F2BE032AE962
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/remove-azurermloadbalancerprobeconfig
 schema: 2.0.0
 ms.openlocfilehash: bed9eebb8812c0bd75eb19c3e8666d6a3b418a13
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423943"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142285576"
 ---
 # Remove-AzureRmLoadBalancerProbeConfig
 
 ## SYNOPSIS
-Menghapus konfigurasi konfigurasi konfigurasi konfigurasi konfigurasi dari penyeimbang muat.
+Menghapus konfigurasi probe dari load balancer.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -26,24 +26,24 @@ Remove-AzureRmLoadBalancerProbeConfig [-Name <String>] -LoadBalancer <PSLoadBala
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmLoadBalancerProbeConfig** menghapus konfigurasi konfigurasi cmdlet dari penyeimbang muat.
+Cmdlet **Remove-AzureRmLoadBalancerProbeConfig** menghapus konfigurasi probe dari load balancer.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus konfigurasi konfigurasi konfigurasi konfigurasi dari penyeimbang muat
+### Contoh 1: Menghapus konfigurasi probe dari load balancer
 ```
 PS C:\>$loadbalancer = Get-AzureRmLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 PS C:> Remove-AzureRmLoadBalancerProbeConfig -Name "MyProbe" -LoadBalancer $loadbalancer
 ```
 
-Perintah pertama mendapatkan penyeimbang muat bernama MyLoadBalancer, lalu menyimpannya di $loadbalancer variabel.
+Perintah pertama mendapatkan load balancer bernama MyLoadBalancer, lalu menyimpannya dalam variabel $loadbalancer.
 
-Perintah kedua menghapus konfigurasi yang bernama MyProbe dari penyeimbang muat dalam $loadbalancer.
+Perintah kedua menghapus konfigurasi bernama MyProbe dari load balancer di $loadbalancer.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan penyeimbang muat yang berisi konfigurasi cmdlet ini.
+Menentukan penyeimbang beban yang berisi konfigurasi probe yang dihapus cmdlet ini.
 
 ```yaml
 Type: PSLoadBalancer
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama konfigurasi konfigurasi ini yang dihapus cmdlet ini.
+Menentukan nama konfigurasi probe yang dihapus cmdlet ini.
 
 ```yaml
 Type: String
@@ -88,12 +88,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSLoadBalancer
-Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari saluran
+Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari pipeline
 
 ## OUTPUTS
 

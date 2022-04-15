@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridTopicKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridTopicKey.md
 ms.openlocfilehash: 68cb96c30f7c63e9a9bf2c8bf5a6a199d1aa873c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140482161"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142305421"
 ---
 # Get-AzEventGridTopicKey
 
 ## SYNOPSIS
-Mendapatkan tombol akses bersama yang digunakan untuk menerbitkan acara ke topik Kisi Acara.
+Mendapatkan kunci akses bersama yang digunakan untuk menerbitkan acara ke topik Kisi Acara.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventgrid/get-azeventgridtopickey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.eventgrid/get-azeventgridtopickey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzEventGridTopicKey [-ResourceGroupName] <String> [-Name] <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### TopicInputObjectParameterSet
+### TopikInputObjectParameterSet
 ```
 Get-AzEventGridTopicKey [-InputObject] <PSTopic> [-DefaultProfile <IAzureContextContainer>]
  [<CommonParameters>]
@@ -40,7 +40,7 @@ Get-AzEventGridTopicKey [-ResourceId] <String> [-DefaultProfile <IAzureContextCo
 ```
 
 ## DESCRIPTION
-Mendapatkan tombol akses bersama yang digunakan untuk menerbitkan acara ke topik Kisi Acara.
+Mendapatkan kunci akses bersama yang digunakan untuk menerbitkan acara ke topik Kisi Acara.
 
 ## EXAMPLES
 
@@ -49,19 +49,19 @@ Mendapatkan tombol akses bersama yang digunakan untuk menerbitkan acara ke topik
 PS C:\> Get-AzEventGridTopicKey -ResourceGroup MyResourceGroupName -Name Topic1
 ```
 
-Mendapatkan tombol akses bersama topik Kisi Kejadian Topic1 \`di grup\` sumber daya \`MyResourceGroupName\`.
+Mendapatkan kunci akses bersama topik \`Kisi Acara Topik1\` dalam grup \`sumber daya MyResourceGroupName\`.
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzEventGridTopic -ResourceGroup MyResourceGroupName -Name Topic1 | Get-AzEventGridTopicKey
 ```
 
-Mendapatkan tombol akses bersama topik Kisi Kejadian Topic1 \`di grup\` sumber daya \`MyResourceGroupName\`.
+Mendapatkan kunci akses bersama topik \`Kisi Acara Topik1\` dalam grup \`sumber daya MyResourceGroupName\`.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek EventGrid Topic.
+Objek Topik EventGrid.
 
 ```yaml
 Type: Microsoft.Azure.Commands.EventGrid.Models.PSTopic
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi Sumber Daya yang mewakili Topik Kisi Acara.
+Pengidentifikasi Sumber Daya yang mewakili Topik Kisi Kejadian.
 
 ```yaml
 Type: System.String
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

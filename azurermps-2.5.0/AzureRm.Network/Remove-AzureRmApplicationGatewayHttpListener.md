@@ -5,11 +5,11 @@ ms.assetid: 6C90AF6C-3193-4D75-A78F-3EC315C6D7DF
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/remove-azurermapplicationgatewayhttplistener
 schema: 2.0.0
 ms.openlocfilehash: a60fa54e5d705a71407f2c56986200c897b838e3
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420545"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142285581"
 ---
 # Remove-AzureRmApplicationGatewayHttpListener
 
@@ -30,15 +30,15 @@ Cmdlet **Remove-AzureRmApplicationGatewayHttpListener** menghapus pendengar HTTP
 
 ## EXAMPLES
 
-### Contoh 1: Hapus gateway aplikasi Pendengar HTTP
+### Contoh 1: Menghapus pendengar HTTP gateway aplikasi
 ```
 PS C:\>$AppGw = Get-AzureRmApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 PS C:\> Remove-AzureRmApplicationGatewayHttpListener -ApplicationGateway $AppGw -Name "Listener02"
 ```
 
-Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam $AppGw baru.
+Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam variabel $AppGw.
 
-Perintah kedua menghapus pendengar HTTP yang bernama Listener02 dari gateway aplikasi yang disimpan di $AppGw.
+Perintah kedua menghapus pendengar HTTP bernama Listener02 dari gateway aplikasi yang disimpan di $AppGw.
 
 ## PARAMETERS
 
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
