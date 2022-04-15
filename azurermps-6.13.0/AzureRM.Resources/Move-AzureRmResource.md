@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Move-AzureRmResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Move-AzureRmResource.md
 ms.openlocfilehash: 4e08654ce66ad2bc8ff0a8213e95495ff6a95176
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428149"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142314897"
 ---
 # Move-AzureRmResource
 
 ## SYNOPSIS
-Memindahkan sumber daya ke grup atau langganan sumber daya yang berbeda.
+Memindahkan sumber daya ke grup sumber daya atau langganan yang berbeda.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -30,8 +30,8 @@ Move-AzureRmResource -DestinationResourceGroupName <String> [-DestinationSubscri
 ```
 
 ## DESCRIPTION
-Cmdlet **Move-AzureRmResource memindahkan** sumber daya yang sudah ada ke grup sumber daya lain.
-Grup sumber daya tersebut bisa berada di langganan berbeda.
+Cmdlet **Move-AzureRmResource** memindahkan sumber daya yang sudah ada ke grup sumber daya yang berbeda.
+Grup sumber daya tersebut bisa berada dalam langganan yang berbeda.
 
 ## EXAMPLES
 
@@ -41,9 +41,9 @@ PS C:\>$Resource = Get-AzureRmResource -ResourceType "Microsoft.ClassicCompute/s
 PS C:\> Move-AzureRmResource -ResourceId $Resource.ResourceId -DestinationResourceGroupName "ResourceGroup14"
 ```
 
-Perintah pertama mendapatkan sumber daya bernama ContosoStorageAccount dengan menggunakan cmdlet Get-AzureRmResource, lalu menyimpan sumber daya tersebut dalam $Resource sumber daya.
+Perintah pertama mendapatkan sumber daya bernama ContosoStorageAccount menggunakan cmdlet Get-AzureRmResource, lalu menyimpan sumber daya tersebut dalam variabel $Resource.
 Perintah kedua memindahkan sumber daya tersebut ke dalam grup sumber daya bernama ResourceGroup14.
-Perintah mengidentifikasi sumber daya yang akan dipindahkan menggunakan **properti ResourceId** $Resource.
+Perintah mengidentifikasi sumber daya untuk dipindahkan menggunakan properti **ResourceId** $Resource.
 
 ## PARAMETERS
 
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationSubscriptionId
-Menentukan ID langganan di mana cmdlet ini memindahkan sumber daya .
+Menentukan ID langganan tempat cmdlet ini memindahkan sumber daya .
 
 ```yaml
 Type: System.Nullable`1[System.Guid]
@@ -108,8 +108,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -124,14 +124,14 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: System.Management.Automation.ActionPreference
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Mengindikasikan bahwa cmdlet ini mempertimbangkan versi API prari perilisan bila secara otomatis menentukan versi mana yang akan digunakan.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan array ID dari sumber daya yang di pindahkan cmdlet ini.
+Menentukan array ID sumber daya yang dipindahkan cmdlet ini.
 
 ```yaml
 Type: System.String[]
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -235,9 +235,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmResource](./Get-AzureRmResource.md)
 
-[New-AzureRmResource](./New-AzureRmResource.md)
+[AzureRmResource baru](./New-AzureRmResource.md)
 
-[Remove-AzureRmResource](./Remove-AzureRmResource.md)
+[Hapus-AzureRmResource](./Remove-AzureRmResource.md)
 
 [Set-AzureRmResource](./Set-AzureRmResource.md)
 

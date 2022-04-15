@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/Storage/Commands.Storage/help/Get-AzureStorageServiceLoggingProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/Storage/Commands.Storage/help/Get-AzureStorageServiceLoggingProperty.md
 ms.openlocfilehash: b622f117549a77c54a24964240cd6d17a084993d
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425182"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142283917"
 ---
 # Get-AzureStorageServiceLoggingProperty
 
 ## SYNOPSIS
-Mendapatkan properti pembuatan log untuk Azure Storage baru.
+Mendapatkan properti pembuatan log untuk layanan Azure Storage.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,11 +28,11 @@ Get-AzureStorageServiceLoggingProperty [-ServiceType] <StorageServiceType> [-Con
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureStorageServiceLoggingProperty** mendapatkan properti pembuatan log untuk Azure Storage baru.
+Cmdlet **Get-AzureStorageServiceLoggingProperty** mendapatkan properti pembuatan log untuk layanan Azure Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan properti pembuatan log untuk layanan Blob
+### Contoh 1: Dapatkan properti pembuatan log untuk layanan Blob
 ```
 C:\PS>Get-AzureStorageServiceLoggingProperty -ServiceType Blob
 ```
@@ -74,11 +74,11 @@ Accept wildcard characters: False
 
 ### -ServiceType
 Menentukan tipe layanan penyimpanan.
-Cmdlet ini mendapatkan properti pembuatan log untuk tipe layanan yang ditentukan oleh parameter ini.
+Cmdlet ini mendapatkan properti pembuatan log untuk tipe layanan yang ditentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Blob 
-- Tabel
-- Antrean
+- Gumpalan 
+- Meja
+- Antrian
 - File Nilai File saat ini tidak didukung.
 
 ```yaml
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -109,7 +109,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureStorageContext](./New-AzureStorageContext.md)
+[AzureStorageContext baru](./New-AzureStorageContext.md)
 
 [Set-AzureStorageServiceLoggingProperty](./Set-AzureStorageServiceLoggingProperty.md)
 

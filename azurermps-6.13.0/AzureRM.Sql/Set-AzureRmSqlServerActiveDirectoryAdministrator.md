@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.sql/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Set-AzureRmSqlServerActiveDirectoryAdministrator.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Set-AzureRmSqlServerActiveDirectoryAdministrator.md
-ms.openlocfilehash: f37a46f0863e37dfa4ac914b47dc7db6a23999c431ae07507326bd5315602bca
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: f801d3e36fabf0fcd0b5829ed01ad0410517a0c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419240"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142314515"
 ---
 # Set-AzureRmSqlServerActiveDirectoryAdministrator
 
@@ -31,13 +31,13 @@ Set-AzureRmSqlServerActiveDirectoryAdministrator [-DisplayName] <String> [[-Obje
 ## DESCRIPTION
 Cmdlet **Set-AzureRmSqlServerActiveDirectoryAdministrator** menyediakan administrator Azure Active Directory (Azure AD) untuk AzureSQL Server dalam langganan saat ini.
 Anda hanya bisa menyediakan satu administrator dalam satu waktu.
-Anggota Azure AD berikut ini dapat ditetapkan sebagai administrator SQL Server baru:
+Anggota Azure AD berikut ini dapat ditetapkan sebagai administrator SQL Server:
 - Anggota asli Azure AD 
 - Anggota gabungan Azure AD 
-- Anggota yang diimpor dari Azure AD lain yang merupakan anggota asli atau gabungan 
-- Grup Azure AD yang dibuat sebagai akun Microsoft grup keamanan, seperti akun di Outlook.com, Hotmail.com, atau Live.com eksternal, tidak didukung sebagai administrator.
-Akun tamu lainnya, seperti yang ada di Gmail.com atau Yahoo.com tamu, tidak didukung sebagai administrator.
-Kami menyarankan Anda menyediakan grup Khusus Azure AD sebagai administrator.
+- Anggota yang diimpor dari AZURE AD lain yang merupakan anggota asli atau gabungan 
+- Azure AD grup yang dibuat sebagai grup keamanan akun Microsoft, seperti yang ada di domain Outlook.com, Hotmail.com, atau Live.com, tidak didukung sebagai administrator.
+Akun tamu lain, seperti yang ada di domain Gmail.com atau Yahoo.com, tidak didukung sebagai administrator.
+Kami menyarankan agar Anda menyediakan grup Azure AD khusus sebagai administrator.
 
 ## EXAMPLES
 
@@ -62,7 +62,7 @@ resourcegroup01   server01   David Chew  11E95548-B179-4FE1-9AF4-ACA49D13ABB9
 
 Perintah ini menyediakan pengguna Azure AD sebagai administrator untuk server bernama Server01.
 
-### Contoh 3: Provisi grup administrator dengan menentukan ID-nya
+### Contoh 3: Menyediakan grup administrator dengan menentukan ID-nya
 ```
 PS C:\>Set-AzureRmSqlServerActiveDirectoryAdministrator -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DisplayName "DBAs" -ObjectId "40b79501-b343-44ed-9ce7-da4c8cc7353b"
 ResourceGroupName ServerName DisplayName ObjectId 
@@ -71,13 +71,13 @@ ResourceGroup01   Server01   DBAs        40b79501-b343-44ed-9ce7-da4c8cc7353b
 ```
 
 Perintah ini menyediakan grup administrator Azure AD bernama DBAs untuk server bernama Server01.
-Perintah menentukan ID untuk parameter *ObjectId.*
+Perintah menentukan ID untuk parameter *ObjectId* .
 Ini memastikan bahwa perintah berhasil meskipun nama tampilan grup tidak unik.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Menentukan nama tampilan administrator Azure AD yang ditentukan cmdlet ini.
+Menentukan nama tampilan administrator Azure AD yang ditetapkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Menentukan ID unik administrator Azure AD yang ditentukan cmdlet ini.
+Menentukan ID unik administrator Azure AD yang ditetapkan cmdlet ini.
 Jika nama tampilan tidak unik, Anda harus menentukan nilai untuk parameter ini.
 
 ```yaml
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama perusahaan SQL Server cmdlet ini menyediakan administrator.
+Menentukan nama SQL Server tempat cmdlet ini menyediakan administrator.
 
 ```yaml
 Type: System.String
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -194,7 +194,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.sql.ServerActiveDirectoryAdministrator.Model.AzureSqlServerActiveDirectoryAdministratorModel
+### Microsoft.Azure.Commands.Sql.ServerActiveDirectoryAdministrator.Model.AzureSqlServerActiveDirectoryAdministratorModel
 
 ## CATATAN
 
@@ -204,6 +204,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Remove-AzureRmSqlServerActiveDirectoryAdministrator](./Remove-AzureRmSqlServerActiveDirectoryAdministrator.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 
 

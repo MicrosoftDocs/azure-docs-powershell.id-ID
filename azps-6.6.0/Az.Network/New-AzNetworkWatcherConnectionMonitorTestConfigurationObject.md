@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherConnectionMonitorTestConfigurationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherConnectionMonitorTestConfigurationObject.md
 ms.openlocfilehash: 6a969d35e6ac128b660d61716aa0710529b8f121
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140102591"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142300885"
 ---
 # New-AzNetworkWatcherConnectionMonitorTestConfigurationObject
 
@@ -18,7 +18,7 @@ ms.locfileid: "140102591"
 Membuat konfigurasi uji monitor koneksi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-aznetworkwatcherconnectionmonitortestconfigurationobject) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-aznetworkwatcherconnectionmonitortestconfigurationobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ PS C:\>$httpProtocolConfiguration = New-AzNetworkWatcherConnectionMonitorProtoco
 PS C:\>$httpTestConfiguration = New-AzNetworkWatcherConnectionMonitorTestConfigurationObject -Name httpTC -TestFrequencySec 120 -ProtocolConfiguration $httpProtocolConfiguration -SuccessThresholdChecksFailedPercent 20 -SuccessThresholdRoundTripTimeMs 30
 ```
 
-Nama : httpTC TestFrequencySec : 120 PreferredIPVersion : ProtocolConfiguration : { "Port": 443, "Method": "GET", "RequestHeaders": [ { "Name": "Allow", "Value": "GET" } ], "ValidStatusCodeRanges": [ "2xx", "300-308" ], "PreferHTTPS": true } SuccessThreshold : { "ChecksFailedPercent": 20, "RoundTripTimeMs": 30 } 
+Nama : httpTC TestFrequencySec : 120 PreferredIPVersion : ProtocolConfiguration : { "Port": 443, "Metode": "GET", "RequestHeaders": [ { "Name": "Allow", "Value": "GET" } ], "ValidStatusCodeRanges": [ "2xx", "300-308" ], "PreferHTTPS": true } SuccessThreshold : { "ChecksFailedPercent": 20, "RoundTripTimeMs": 30 } 
 
 ## PARAMETERS
 
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreferredIPVersion
-Versi IP pilihan untuk digunakan dalam evaluasi pengujian. Monitor koneksi mungkin memilih untuk menggunakan versi yang berbeda bergantung pada parameter lainnya.
+Versi IP pilihan untuk digunakan dalam evaluasi uji. Monitor koneksi mungkin memilih untuk menggunakan versi lain tergantung pada parameter lainnya.
 
 ```yaml
 Type: System.String
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtocolConfiguration
-Parameter yang digunakan untuk melakukan evaluasi uji atas beberapa protokol.
+Parameter yang digunakan untuk melakukan evaluasi pengujian melalui beberapa protokol.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcherConnectionMonitorProtocolConfiguration
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -SuccessThresholdChecksFailedPercent
-Persentase maksimum dari pemeriksaan gagal yang diizinkan untuk pengujian agar berhasil dievaluasi.
+Persentase maksimum dari pemeriksaan yang gagal diizinkan untuk pengujian dievaluasi sesukses mungkin.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -SuccessThresholdRoundTripTimeMs
-Waktu maksimum perjalanan pulang pergi dalam milidetik yang diizinkan untuk percobaan mengevaluasi sebagai berhasil.
+Waktu pulang pergi maksimum dalam milidetik diizinkan untuk ujian agar berhasil dievaluasi.
 
 ```yaml
 Type: System.Nullable`1[System.Double]
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -TestFrequencySec
-Frekuensi evaluasi uji, dalam detik.
+Frekuensi evaluasi pengujian, dalam hitungan detik.
 
 ```yaml
 Type: System.Int32
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,11 +182,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

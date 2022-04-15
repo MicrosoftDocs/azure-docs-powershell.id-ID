@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteConfig.md
 ms.openlocfilehash: 89eebb3c73303675a7405c635cd0e7f7d9ba67c6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140070929"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142301376"
 ---
 # Get-AzRouteConfig
 
 ## SYNOPSIS
-Mendapatkan rute dari tabel rute.
+Mendapatkan rute dari meja rute.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azrouteconfig) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azrouteconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Get-AzRouteConfig -RouteTable <PSRouteTable> [-Name <String>] [-DefaultProfile <
 
 ## DESCRIPTION
 Cmdlet **Get-AzRouteConfig** mendapatkan rute dari tabel rute Azure.
-Anda bisa menentukan rute menurut nama.
+Anda dapat menentukan rute menurut nama.
 
 ## EXAMPLES
 
@@ -46,14 +46,14 @@ NextHopType       : VnetLocal
 NextHopIpAddress  :
 ```
 
-Perintah ini mendapatkan tabel rute bernama RouteTable01 dengan menggunakan cmdlet **Get-AzRouteTable** .
-Perintah itu meneruskan tabel itu ke cmdlet saat ini dengan menggunakan operator pipeline.
-Cmdlet saat ini mendapatkan rute yang bernama Route07 dalam tabel rute yang bernama RouteTable01.
+Perintah ini mendapatkan tabel rute bernama RouteTable01 menggunakan cmdlet **Get-AzRouteTable** .
+Perintah melewati tabel tersebut ke cmdlet saat ini menggunakan operator pipeline.
+Cmdlet saat ini mendapatkan rute bernama Route07 di tabel rute bernama RouteTable01.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama rute yang akan didaangkan cmdlet ini.
+Menentukan nama rute yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -RouteTable
-Menentukan tabel rute asal cmdlet mendapatkan rute.
+Menentukan tabel rute tempat cmdlet ini mendapatkan rute.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSRouteTable
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

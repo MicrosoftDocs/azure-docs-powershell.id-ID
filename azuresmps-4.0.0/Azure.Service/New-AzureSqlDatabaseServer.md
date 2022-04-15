@@ -4,11 +4,11 @@ ms.assetid: A0C674FC-A1D8-4068-8CAB-2EE0AECB8E68
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 296033d8b7d201c569e878e4826c5c339094e91e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428058"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142313060"
 ---
 # New-AzureSqlDatabaseServer
 
@@ -25,7 +25,7 @@ New-AzureSqlDatabaseServer -AdministratorLogin <String> -AdministratorLoginPassw
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureSqlDatabaseServer** membuat instans Server Azure SQL Database di langganan saat ini.
+Cmdlet **New-AzureSqlDatabaseServer** membuat contoh Azure SQL Database Server dalam langganan saat ini.
 
 ## EXAMPLES
 
@@ -34,7 +34,7 @@ Cmdlet **New-AzureSqlDatabaseServer** membuat instans Server Azure SQL Database 
 PS C:\>New-AzureSqlDatabaseServer -Location "East US" -AdministratorLogin "AdminLogin" -AdministratorLoginPassword "AdminPassword"
 ```
 
-Perintah ini akan membuat server Azure SQL Database versi 11.
+Perintah ini membuat server Azure SQL Database versi 11.
 
 ### Contoh 2: Membuat server versi 12
 ```
@@ -61,9 +61,9 @@ Accept wildcard characters: False
 ```
 
 ### -AdministratorLoginPassword
-Menentukan kata sandi akun administrator untuk Azure SQL Database server.
+Menentukan kata sandi akun administrator untuk server Azure SQL Database.
 Anda harus menentukan kata sandi yang kuat.
-Untuk informasi selengkapnya, lihat [Kata Sandi Yang](https://go.microsoft.com/fwlink/p/?LinkId=154152) Kuat ( di Microsoft Developer https://go.microsoft.com/fwlink/p/?LinkId=154152) Network.
+Untuk informasi selengkapnya, lihat [Kata Sandi Kuat](https://go.microsoft.com/fwlink/p/?LinkId=154152) (https://go.microsoft.com/fwlink/p/?LinkId=154152) di Jaringan Pengembang Microsoft.
 
 ```yaml
 Type: String
@@ -77,8 +77,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: SwitchParameter
@@ -93,8 +93,8 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi pusat data di mana cmdlet ini membuat server.
-Untuk informasi selengkapnya, [lihat Azure Regions](https://azure.microsoft.com/regions/) ( https://azure.microsoft.com/regions/#services) di pustaka Azure.
+Menentukan lokasi pusat data tempat cmdlet ini membuat server.
+Untuk informasi selengkapnya, lihat [Kawasan Azure](https://azure.microsoft.com/regions/) (https://azure.microsoft.com/regions/#services) di pustaka Azure.
 
 ```yaml
 Type: String
@@ -109,8 +109,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 
 ### -Versi
 Menentukan versi server baru.
-Nilai valid adalah: 2.0 dan 12.0.
+Nilai yang valid adalah: 2,0 dan 12,0.
 
 ```yaml
 Type: Single
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -188,11 +188,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Buat Server](https://msdn.microsoft.com/en-us/library/azure/dn505699.aspx)
 
-[Operasi untuk Database SQL Azure](https://msdn.microsoft.com/en-us/library/azure/dn505719.aspx)
+[Operasi untuk Database Azure SQL](https://msdn.microsoft.com/en-us/library/azure/dn505719.aspx)
 
 [Get-AzureSqlDatabaseServer](./Get-AzureSqlDatabaseServer.md)
 
-[Remove-AzureSqlDatabaseServer](./Remove-AzureSqlDatabaseServer.md)
+[Hapus-AzureSqlDatabaseServer](./Remove-AzureSqlDatabaseServer.md)
 
 [Set-AzureSqlDatabaseServer](./Set-AzureSqlDatabaseServer.md)
 

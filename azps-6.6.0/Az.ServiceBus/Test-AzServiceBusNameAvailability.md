@@ -6,36 +6,36 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Test-AzServiceBusNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Test-AzServiceBusNameAvailability.md
 ms.openlocfilehash: de3c236f265e03e3e61e8fff86542d2517787744
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139968837"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142299751"
 ---
 # Test-AzServiceBusNameAvailability
 
 ## SYNOPSIS
-Memeriksa Ketersediaan Antrean atau Nama topik yang diberikan
+Memeriksa Ketersediaan Nama Antrean atau Topik tertentu
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/test-azservicebusnameavailability) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/test-azservicebusnameavailability) untuk informasi terbaru.
 
 ## SYNTAX
 
-### QueueCheckNameAvailabilitySet (Default)
+### AntreanCheckNameAvailabilitySet (Default)
 ```
 Test-AzServiceBusNameAvailability [-ResourceGroupName] <String> [-Namespace] <String> [-Name] <String> [-Queue]
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### TopicCheckNameAvailabilitySet
+### TopikCheckNameAvailabilitySet
 ```
 Test-AzServiceBusNameAvailability [-ResourceGroupName] <String> [-Namespace] <String> [-Name] <String> [-Topic]
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Test-AzServiceBusAvailability** Check Availability of the provided Name of Queue or Topic
+**Cmdlet Test-AzServiceBusNameAvailability** Memeriksa Ketersediaan Nama Antrean atau Topik yang disediakan
 
 ## EXAMPLES
 
@@ -45,7 +45,7 @@ Test-AzServiceBusNameAvailability -ResourceGroupName $resourceGroupName -Namespa
 True
 ```
 
-Mengembalikan True jika nama $nameQueue Provided tersedia atau mengembalikan False jika Nama $nameQueue tidak tersedia
+Mengembalikan True jika nama $nameQueue yang Disediakan adalah Availabile atau mengembalikan False jika Nama $nameQueue disediakan tidak tersedia
 
 ### Contoh 2
 ```powershell
@@ -53,7 +53,7 @@ Test-AzServiceBusNameAvailability -ResourceGroupName $resourceGroupName -Namespa
 True
 ```
 
-Mengembalikan True jika nama $nameTopic Yang Disediakan adalah Kesederuan atau mengembalikan False jika $nameTopic nama tidak tersedia
+Mengembalikan True jika nama $nameTopic yang Disediakan adalah Availabile atau mengembalikan False jika Nama $nameTopic disediakan tidak tersedia
 
 ## PARAMETERS
 
@@ -132,8 +132,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Topic
-To Check Name Availability for Topic Name
+### -Topik
+Untuk Memeriksa Ketersediaan Nama untuk Nama Topik
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

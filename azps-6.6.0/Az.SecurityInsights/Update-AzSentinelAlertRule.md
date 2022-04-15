@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Update-AzSentinelAlertRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Update-AzSentinelAlertRule.md
 ms.openlocfilehash: 1d52a0293459add942755236b72f4755ac87bfd2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139969179"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142299913"
 ---
 # Update-AzSentinelAlertRule
 
 ## SYNOPSIS
-Memperbarui Aturan Analitik (Aturan Pemberitahuan).
+Memperbarui Aturan Analitik (Aturan Peringatan).
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.securityinsights/update-azsentinelalertrule) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/update-azsentinelalertrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -62,9 +62,9 @@ Update-AzSentinelAlertRule [-AlertRuleTemplateName <String>] [-Enabled] [-Disabl
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzSentinelAlertRule** memperbarui Aturan Analitik (Pemberitahuan) di ruang kerja tertentu.
-Anda bisa menggunakan -InputObject atau -ResourceId atau -AlertId.  Anda dapat memperbarui 1 atau beberapa parameter properti.
-Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
+Cmdlet **Update-AzSentinelAlertRule** memperbarui Aturan Analitik (Peringatan) di ruang kerja yang ditentukan.
+Anda dapat menggunakan -InputObject atau -ResourceId atau -AlertId.  Anda dapat memperbarui 1 parameter properti atau lebih.
+Anda dapat menggunakan variabel *Konfirmasi* parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
 
 ## EXAMPLES
 
@@ -73,7 +73,7 @@ Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Window
 PS C:\> Update-AzSentinelAlertRule -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -AlertRuleId "MyAlertRuleId" -Disabled -DisplayName "Disabled-AlertRuleDisplayName"
 ```
 
-Contoh ini memperbarui pengaturan **AlertRule** menjadi *Dinonaktifkan dan* mengganti nama AlertRule menjadi *Disabled-AlertRuleDisplayName*.  Semua properti lainnya akan tetap sama.
+Contoh ini memperbarui pengaturan **AlertRule** menjadi *Nonaktif* dan mengganti nama AlertRule menjadi *Disabled-AlertRuleDisplayName*.  Semua properti lainnya akan tetap sama.
 
 ### Contoh 2
 ```powershell
@@ -81,7 +81,7 @@ PS C:\> $AlertRule = Get-AzSentinelAlertRule -ResourceGroupName "MyResourceGroup
 PS C:\> Update-AzSentinelAlertRule -InputObject $AlertRule -Disabled
 ```
 
-Contoh ini memperbarui **AlertRule** menggunakan pengaturan InputObject menjadi *Dinonaktifkan*.  Semua properti lainnya akan tetap sama.
+Contoh ini memperbarui **AlertRule** menggunakan pengaturan InputObject menjadi *Nonaktif*.  Semua properti lainnya akan tetap sama.
 
 ### Contoh 3
 ```powershell
@@ -93,12 +93,12 @@ $ruleToDisable = Get-AzSentinelAlertRule @SentinelConnection | Where-Object {$_.
 Update-AzSentinelAlertRule @SentinelConnection -AlertRuleId $ruleToDisable.Name -Disabled
 ```
 
-Contoh ini menggunakan objek koneksi untuk melewati resourceGroupName dan workspaceName. Aturan kemudian akan memberikan Aturan Pemberitahuan khusus berdasarkan nama tampilan dan menonaktifkan aturan.
+Contoh ini menggunakan objek koneksi untuk melewati resourceGroupName dan workspaceName. Lalu mendapatkan AlertRule tertentu berdasarkan nama tampilan dan menonaktifkan aturan.
 
 ## PARAMETERS
 
 ### -AlertRuleId
-Id Aturan Pemberitahuan.
+Id Aturan Peringatan.
 
 ```yaml
 Type: System.String
@@ -157,8 +157,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Dinonaktifkan
-Aturan Pemberitahuan Dinonaktifkan.
+### -Nonaktif
+Aturan Peringatan Dinonaktifkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayNamesExcludeFilter
-Pemberitahuan Aturan Menampilkan Nama Kecualikan Filter.
+Nama Tampilan Aturan Pemberitahuan Tidak Termasuk Filter.
 
 ```yaml
 Type: System.Collections.Generic.IList`1[System.String]
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayNamesFilter
-Aturan Pemberitahuan Menampilkan Filter Nama.
+Filter Nama Tampilan Aturan Pemberitahuan.
 
 ```yaml
 Type: System.Collections.Generic.IList`1[System.String]
@@ -217,8 +217,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Enabled
-Aturan Pemberitahuan Diaktifkan.
+### -Difungsikan
+Aturan Peringatan Diaktifkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProductFilter
-Pemberitahuan Aturan Filter Produk.
+Filter Produk Aturan Peringatan.
 
 ```yaml
 Type: System.String
@@ -339,7 +339,7 @@ Accept wildcard characters: False
 ```
 
 ### -SeveritiesFilter
-Filter Keparahan Aturan Pemberitahuan.
+Filter Tingkat Keparahan Aturan Peringatan.
 
 ```yaml
 Type: System.Collections.Generic.IList`1[System.String]
@@ -369,7 +369,7 @@ Accept wildcard characters: False
 ```
 
 ### -SuppressionDisabled
-Penekanan Aturan Pemberitahuan Dinonaktifkan.
+Peredaman Aturan Peringatan Dinonaktifkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -384,7 +384,7 @@ Accept wildcard characters: False
 ```
 
 ### -SuppressionDuration
-Durasi Penekanan Aturan Pemberitahuan.
+Durasi Peredaman Aturan Peringatan.
 
 ```yaml
 Type: System.TimeSpan
@@ -399,7 +399,7 @@ Accept wildcard characters: False
 ```
 
 ### -SuppressionEnabled
-Penekanan Aturan Pemberitahuan Diaktifkan.
+Peredaman Aturan Peringatan Diaktifkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -413,8 +413,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Diobesi
-Peringatan Aturan Aturan Aturan.
+### -Taktik
+Taktik Aturan Peringatan.
 
 ```yaml
 Type: System.Collections.Generic.IList`1[System.String]
@@ -428,8 +428,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TriggerOperator
-Operator Pemicu Aturan Pemberitahuan.
+### -Triggeroperator
+Operator Pemicu Aturan Peringatan.
 
 ```yaml
 Type: Microsoft.Azure.Management.SecurityInsights.Models.TriggerOperator
@@ -445,7 +445,7 @@ Accept wildcard characters: False
 ```
 
 ### -TriggerThreshold
-Ambang Pemicu Aturan Pemberitahuan.
+Ambang Pemicu Aturan Peringatan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -459,7 +459,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama Ruang Kerja.
 
 ```yaml
@@ -475,7 +475,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -491,7 +491,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -506,7 +506,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

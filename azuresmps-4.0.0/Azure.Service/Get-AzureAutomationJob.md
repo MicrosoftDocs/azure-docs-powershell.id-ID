@@ -4,23 +4,23 @@ ms.assetid: 6527FF45-9C16-47E8-8E70-619A0581D2F8
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 50a80f823981bb6946e3e93f838da610b3ae964b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426556"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142313575"
 ---
 # Get-AzureAutomationJob
 
 ## SYNOPSIS
 
-Mendapatkan satu atau beberapa pekerjaan runbook Otomatisasi Azure.
+Mendapatkan satu atau beberapa pekerjaan runbook Azure Automation.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
 ## SYNTAX
 
-### SecaraSemua (Default)
+### ByAll (Default)
 ```
 Get-AzureAutomationJob [-Status <String>] [-StartTime <DateTimeOffset>] [-EndTime <DateTimeOffset>]
  -AutomationAccountName <String> [-Profile <AzureSMProfile>] [<CommonParameters>]
@@ -42,35 +42,35 @@ Get-AzureAutomationJob -RunbookName <String> [-Status <String>] [-StartTime <Dat
 
 [!INCLUDE [aa-deprecation](../include/aa-deprecation.md)]
 
-Cmdlet **Get-AzureAutomationJob** mendapatkan satu atau beberapa pekerjaan runbook dalam Microsoft Azure Otomatisasi.
+Cmdlet **Get-AzureAutomationJob** mendapatkan satu atau beberapa pekerjaan runbook di Microsoft Azure Automation.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan pekerjaan runbook tertentu
+### Contoh 1: Dapatkan pekerjaan runbook tertentu
 ```
 PS C:\> Get-AzureAutomationJob -AutomationAccountName "Contoso17" -Id 2989b069-24fe-40b9-b3bd-cb7e5eac4b647
 ```
 
-Perintah ini mendapatkan pekerjaan dengan GUID tertentu.
+Perintah ini mendapatkan pekerjaan yang memiliki GUID yang ditentukan.
 
-### Contoh 2: Mendapatkan semua pekerjaan untuk runbook
+### Contoh 2: Dapatkan semua pekerjaan untuk runbook
 ```
 PS C:\> Get-AzureAutomationJob -AutomationAccountName "Contoso17" -RunbookName "MyRunbook"
 ```
 
 Perintah ini mendapatkan semua pekerjaan yang terkait dengan runbook bernama MyRunbook.
 
-### Contoh 2: Mendapatkan semua pekerjaan yang sedang berjalan
+### Contoh 2: Dapatkan semua pekerjaan yang berjalan
 ```
 PS C:\> Get-AzureAutomationJob -AutomationAccountName "Contoso17" -Status "Running"
 ```
 
-Perintah ini akan menjalankan semua pekerjaan dalam akun otomatisasi dengan nama Contoso17.
+Perintah ini mendapatkan semua pekerjaan yang berjalan di akun otomatisasi dengan nama Contoso17.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi Azure.
+Menentukan nama akun Azure Automation.
 
 ```yaml
 Type: String
@@ -115,8 +115,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -162,16 +162,16 @@ Accept wildcard characters: False
 
 ### -Status
 Menentukan status pekerjaan.
-Cmdlet ini mendapatkan pekerjaan dengan status yang cocok dengan parameter ini.
-Nilai valid adalah: 
+Cmdlet ini mendapatkan pekerjaan yang memiliki status yang cocok dengan parameter ini.
+Nilai yang valid adalah: 
 
 - Selesai
 - Gagal
-- Diantrekan
-- Memulai
+- Antri
+- Mulai
 - Melanjutkan
-- Berjalan
-- Dihentikan
+- Menjalankan
+- Berhenti
 - Menghentikan
 - Ditangguhkan
 - Menangguhkan
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

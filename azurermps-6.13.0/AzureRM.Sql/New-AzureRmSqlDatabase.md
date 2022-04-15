@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/New-AzureRmSqlDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/New-AzureRmSqlDatabase.md
 ms.openlocfilehash: 7eaa753b973b887cbbddc132b998d05f3e374e3a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420632"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142314779"
 ---
 # New-AzureRmSqlDatabase
 
@@ -41,8 +41,8 @@ New-AzureRmSqlDatabase -DatabaseName <String> [-CollationName <String>] [-Catalo
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmSqlDatabase** membuat database Azure SQL baru.
-Anda juga bisa membuat database elastis dengan mengatur parameter *ElastisPoolName* ke pool elastis yang sudah ada.
+Cmdlet **New-AzureRmSqlDatabase** membuat database Azure SQL.
+Anda juga dapat membuat database elastis dengan mengatur parameter *ElasticPoolName* ke kumpulan elastis yang sudah ada.
 
 ## EXAMPLES
 
@@ -72,7 +72,7 @@ Tags                          :
 
 Perintah ini membuat database bernama Database01 di server Server01.
 
-### Contoh 2: Membuat database elastis di server yang ditentukan
+### Contoh 2: Membuat database elastis di server tertentu
 ```
 PS C:\>New-AzureRmSqlDatabase -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -ElasticPoolName "ElasticPool01"
 ResourceGroupName             : ResourceGroup01
@@ -96,7 +96,7 @@ LicenseType                   :
 Tags                          :
 ```
 
-Perintah ini membuat database bernama Database02 dalam kolam elastis yang bernama ElastisPool01 di server Server01.
+Perintah ini membuat database bernama Database02 dalam kumpulan elastis bernama ElasticPool01 di server Server01.
 
 ### Contoh 3: Membuat database Vcore di server tertentu
 ```
@@ -125,7 +125,7 @@ Perintah ini membuat database Vcore bernama Database03 di server Server01.
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -CatalogCollation
-Menentukan nama katalog SQL database kami.
+Menentukan nama kolase katalog database SQL.
 
 ```yaml
 Type: System.String
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -CollationName
-Menentukan nama database SQL collation.
+Menentukan nama kolase database SQL.
 
 ```yaml
 Type: System.String
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeGeneration
-Pembuatan perhitungan untuk ditetapkan.
+Generasi komputasi untuk ditetapkan.
 
 ```yaml
 Type: System.String
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -214,15 +214,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Edition
+### -Edisi
 Menentukan edisi untuk ditetapkan ke database. Nilai yang dapat diterima untuk parameter ini adalah:
-- Tidak ada
+- Tidak
 - Dasar
 - Standar
 - Premium
-- DataWarehouse
+- Gudang Data
 - Gratis
-- Regang
+- Stretch
 - GeneralPurpose
 - BusinessCritical
 
@@ -250,8 +250,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ElastisPoolName
-Menentukan nama kolam elastis tempat database diletakkan.
+### -ElasticPoolName
+Menentukan nama kumpulan elastis untuk meletakkan database.
 
 ```yaml
 Type: System.String
@@ -281,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxSizeBytes
-Menentukan ukuran maksimal database dalam byte.
+Menentukan ukuran maksimum database dalam byte.
 
 ```yaml
 Type: System.Int64
@@ -342,7 +342,7 @@ Accept wildcard characters: False
 ```
 
 ### -SampleName
-Nama skema sampel yang akan diterapkan saat membuat database ini.
+Nama skema sampel untuk diterapkan saat membuat database ini.
 
 ```yaml
 Type: System.String
@@ -358,7 +358,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server yang menjadi host database.
+Menentukan nama server yang menghosting database.
 
 ```yaml
 Type: System.String
@@ -372,8 +372,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Tag
-Menentukan kamus pasangan Nilai kunci dalam bentuk tabel hash yang terkait dengan database baru oleh cmdlet ini. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+### -Tags
+Menentukan kamus pasangan Nilai kunci dalam bentuk tabel hash yang dikaitkan cmdlet ini dengan database baru. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -403,7 +403,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneRedundant
-Kelebihan zona untuk dikaitkan dengan Database Azure Sql
+Redundansi zona untuk dikaitkan dengan Database Azure Sql
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -418,7 +418,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -434,7 +434,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -449,7 +449,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -467,9 +467,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmSqlElasticPool](./New-AzureRmSqlElasticPool.md)
 
-[New-AzureRmSqlServer](./New-AzureRmSqlServer.md)
+[AzureRmSqlServer baru](./New-AzureRmSqlServer.md)
 
-[Remove-AzureRmSqlDatabase](./Remove-AzureRmSqlDatabase.md)
+[Hapus-AzureRmSqlDatabase](./Remove-AzureRmSqlDatabase.md)
 
 [Resume-AzureRmSqlDatabase](./Resume-AzureRmSqlDatabase.md)
 
@@ -477,5 +477,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Suspend-AzureRmSqlDatabase](./Suspend-AzureRmSqlDatabase.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 

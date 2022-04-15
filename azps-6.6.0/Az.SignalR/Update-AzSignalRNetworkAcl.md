@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Update-AzSignalRNetworkAcl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Update-AzSignalRNetworkAcl.md
 ms.openlocfilehash: de0200856a523b46c847f2ef0c36a256ab263a9f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140303827"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142299121"
 ---
 # Update-AzSignalRNetworkAcl
 
 ## SYNOPSIS
-Memperbarui ACL Jaringan dari layanan SignalR.
+Perbarui ACL Jaringan layanan SignalR.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.signalr/update-azsignalrnetworkacl) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.signalr/update-azsignalrnetworkacl) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,11 +44,11 @@ Update-AzSignalRNetworkAcl -InputObject <PSSignalRResource> [-AsJob] [-DefaultAc
 ```
 
 ## DESCRIPTION
-Memperbarui ACL Jaringan dari layanan SignalR, termasuk tindakan default dan ACL jaringan untuk koneksi publik dan privat.
+Perbarui ACL Jaringan layanan SignalR, termasuk tindakan default dan akselerasi jaringan untuk koneksi publik dan privat.
 
 ## EXAMPLES
 
-### Perbolehkan RESTAPI,ClientConnection untuk jaringan publik dan atur tindakan default untuk Tolak
+### Izinkan RESTAPI,ClientConnection untuk jaringan publik dan atur tindakan default ke Tolak
 ```powershell
 PS C:\> $networkAcl = Update-AzSignalRNetworkAcl -Name pssignalr -ResourceGroupName test_resource_group -DefaultAction Deny -PublicNetwork -Allow RESTAPI,ClientConnection
 
@@ -75,15 +75,15 @@ Name                                           Allow                            
 pssignalr.70197ffc-d138-49a5-a336-98b21a8d04d1 {ServerConnection, ClientConnection} {}
 ```
 
-### Menolak koneksi klien untuk jaringan publik dan koneksi titik akhir privat
+### Tolak koneksi klien untuk jaringan publik dan koneksi titik akhir privat
 ```powershell
 PS C:\>$networkAcl = Update-AzSignalRNetworkAcl -Name pssignalr -ResourceGroupName test_resource_group -PrivateEndpointName pssignalr.70197ffc-d138-49a5-a336-98b21a8d04d1  -PublicNetwork -Deny ClientConnection
 ```
 
 ## PARAMETERS
 
-### -Allow
-ACL jaringan yang diperbolehkan
+### -Izinkan
+AKL jaringan yang diperbolehkan
 
 ```yaml
 Type: System.String[]
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultAction
-Tindakan Default ACL jaringan SignalR, baik memperbolehkan atau menolak. Ini memutuskan apakah tolak ACL jaringan atau memperbolehkan ACL jaringan diterapkan. Misalnya, jika tindakan default tersebut memperbolehkan, maka hanya tolak ACL yang penting.
+Aksi Default AKL jaringan SignalR, baik memperbolehkan atau menolak. Ini memutuskan apakah tolak AKL jaringan atau izinkan AKL jaringan diterapkan. Misalnya, jika tindakan default diperbolehkan, maka hanya ACL yang ditolak yang penting.
 
 ```yaml
 Type: System.String
@@ -144,8 +144,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Deny
-ACL jaringan yang ditolak
+### -Tolak
+AKL jaringan yang ditolak
 
 ```yaml
 Type: System.String[]
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetwork
-Memperbarui ACL jaringan publik
+Memperbarui AKL jaringan publik
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Pengaturan default akan digunakan jika tidak ditentukan.
+Default akan digunakan jika tidak ditentukan.
 
 ```yaml
 Type: System.String
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya layanan SignalR.
+ID sumber daya layanan Signalr.
 
 ```yaml
 Type: System.String
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -268,7 +268,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -283,7 +283,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

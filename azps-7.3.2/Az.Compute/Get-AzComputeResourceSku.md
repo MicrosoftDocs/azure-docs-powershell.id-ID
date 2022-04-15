@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azco
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzComputeResourceSku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzComputeResourceSku.md
-ms.openlocfilehash: fed78524d3cc16eaf3e260c67798e39d72bd2a06
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e437f8fc6d650a330b4a2aa7a88b6b491832bd0e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140202230"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142320701"
 ---
 # Get-AzComputeResourceSku
 
 ## SYNOPSIS
-Daftar semua Sku sumber daya perhitungan
+Mencantumkan semua sku sumber daya komputasi
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azcomputeresourcesku) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Get-AzComputeResourceSku [[-Location] <String>] [-DefaultProfile <IAzureContextC
 ```
 
 ## DESCRIPTION
-Daftar semua Sku sumber daya perhitungan
+Mencantumkan semua sku sumber daya komputasi
 
 ## EXAMPLES
 
@@ -33,12 +36,12 @@ Daftar semua Sku sumber daya perhitungan
 Get-AzComputeResourceSku "westus";
 ```
 
-Daftar semua sku sumber daya yang dihitung di kawasan AS Barat
+Daftar semua sku sumber daya komputasi di kawasan AS Barat
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -53,7 +56,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi dari daftar sku yang tersedia.
+Menentukan lokasi daftar skus yang tersedia.
 
 ```yaml
 Type: System.String
@@ -68,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

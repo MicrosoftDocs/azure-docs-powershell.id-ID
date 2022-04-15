@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/New-AzureRmSqlDatabaseImport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/New-AzureRmSqlDatabaseImport.md
 ms.openlocfilehash: 4ea8a6aca74634e8105026e45c25b861e8c060f2
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132415234"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142314729"
 ---
 # New-AzureRmSqlDatabaseImport
 
@@ -31,8 +31,8 @@ New-AzureRmSqlDatabaseImport -DatabaseName <String> -Edition <DatabaseEdition> -
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmSqlDatabaseImport** mengimpor file bacpac dari akun penyimpanan Azure ke akun Azure SQL Database.
-Permintaan status impor dapat dikirim untuk mengambil informasi status permintaan ini.
+Cmdlet **New-AzureRmSqlDatabaseImport** mengimpor file bacpac dari akun penyimpanan Azure ke Azure SQL Database baru.
+Permintaan status dapatkan database impor mungkin dikirim untuk mengambil informasi status untuk permintaan ini.
 
 ## EXAMPLES
 
@@ -94,11 +94,11 @@ Parameter ini default untuk SQL jika tidak ada tipe autentikasi yang diatur.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - SQL.
 SQL autentikasi.
-Set the *AdministratorLogin* and *AdministratorLoginPassword* parameters to the SQL administrator username and password. 
-- ADPassword.
+Atur *parameter AdministratorLogin* dan *AdministratorLoginPassword* ke nama pengguna dan kata sandi administrator SQL. 
+- AdPassword.
 Azure Active Directory autentikasi.
-Atur *AdministratorLogin* dan *AdministratorLoginPassword ke* nama pengguna Azure Active Directory pengguna dan kata sandi administrator Anda.
-Parameter ini hanya tersedia di server SQL Database V12.
+Atur *AdministratorLogin* dan *AdministratorLoginPassword* ke nama pengguna dan kata sandi administrator Azure Active Directory.
+Parameter ini hanya tersedia di server V12 SQL Database.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.ImportExport.Model.AuthenticationType
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -158,13 +158,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Edition
+### -Edisi
 Menentukan edisi database baru untuk diimpor.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Premium
 - Dasar
 - Standar
-- DataWarehouse
+- Gudang Data
 - Gratis
 
 ```yaml
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceObjectiveName
-Menentukan nama tujuan layanan untuk ditetapkan kepada Azure SQL Database.
+Menentukan nama tujuan layanan untuk ditetapkan ke Azure SQL Database.
 
 ```yaml
 Type: System.String
@@ -246,7 +246,7 @@ Nilai yang dapat diterima untuk parameter ini adalah:
 - StorageAccessKey.
 Menggunakan kunci akun penyimpanan. 
 - SharedAccessKey.
-Menggunakan kunci Shared Access Signature (SAS).
+Menggunakan tombol Tanda Tangan Akses Bersama (SAS).
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.ImportExport.Model.StorageKeyType
@@ -277,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -293,7 +293,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -308,7 +308,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -319,7 +319,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Sql.ImportExport.Model.AzureSqlDatabaseImportExportBaseModel
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, sql, database, mssql
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, database, mssql
 
 ## RELATED LINKS
 
@@ -327,5 +327,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmSqlDatabaseExport](./New-AzureRmSqlDatabaseExport.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementAuthorizationServerClientSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementAuthorizationServerClientSecret.md
 ms.openlocfilehash: 58455ae860175606821df5c0d8555a693ef03c8b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140110871"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142308013"
 ---
 # Get-AzApiManagementAuthorizationServerClientSecret
 
 ## SYNOPSIS
-Mendapatkan rahasia klien otorisasi Manajemen API server.
+Mendapatkan rahasia klien server otorisasi API Management.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementauthorizationserverclientsecret) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementauthorizationserverclientsecret) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,17 +35,17 @@ Get-AzApiManagementAuthorizationServerClientSecret [-ServerId <String>] -Resourc
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApiManagementAuthorizationServerClientSecret** mendapatkan rahasia klien server otorisasi Manajemen API Azure.
+Cmdlet **Get-AzApiManagementAuthorizationServerClientSecret** mendapatkan rahasia klien server otorisasi Azure API Management.
 
 ## EXAMPLES
 
-### Contoh 1: Get a specified authorization server client secret by id
+### Contoh 1: Dapatkan rahasia klien server otorisasi tertentu menurut id
 ```
 PS C:\>$ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzApiManagementAuthorizationServerClientSecret -Context $ApiMgmtContext -ServerId "0123456789"
 ```
 
-Perintah ini merahasiakan rahasia server otorisasi tertentu.
+Perintah ini mendapatkan rahasia kient server otorisasi yang ditentukan.
 
 ## PARAMETERS
 
@@ -81,8 +81,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Arm Resource Identifier dari server otorisasi.
-Jika ditentukan akan mencoba menemukan server otorisasi berdasarkan pengidentifikasi.
+Arm Resource Identifier server otorisasi.
+Jika ditentukan akan mencoba menemukan server otorisasi oleh pengidentifikasi.
 Parameter ini diperlukan.
 
 ```yaml
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 
 ### -ServerId
 Pengidentifikasi server otorisasi.
-Jika ditentukan akan menemukan server otorisasi menurut pengidentifikasi.
+Jika ditentukan akan menemukan server otorisasi oleh pengidentifikasi.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

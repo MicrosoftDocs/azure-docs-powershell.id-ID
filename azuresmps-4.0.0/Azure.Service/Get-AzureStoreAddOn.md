@@ -4,16 +4,16 @@ ms.assetid: 61CF7F95-F0BB-4282-A971-537CB73708B1
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 22a5b201288a396f8ffbfbed97975aaf062db026
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421570"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142313395"
 ---
 # Get-AzureStoreAddOn
 
 ## SYNOPSIS
-Dapatkan add-on Azure Store yang tersedia.
+Mendapatkan add-on Azure Store yang tersedia.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -30,10 +30,10 @@ Get-AzureStoreAddOn [-Name <String>] [-Profile <AzureSMProfile>] [<CommonParamet
 ```
 
 ## DESCRIPTION
-Topik ini menguraikan cmdlet dalam modul Microsoft Azure PowerShell versi 0.8.10.
-Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Topik ini menjelaskan cmdlet dalam versi 0.8.10 modul Microsoft Azure PowerShell.
+Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik .`(Get-Module -Name Azure).Version`
 
-Mendapatkan semua add-on yang tersedia untuk pembelian dari Azure Store, atau mendapatkan contoh add-on yang ada untuk langganan saat ini.
+Mendapatkan semua add-on yang tersedia untuk dibeli dari Azure Store, atau mendapatkan contoh add-on yang sudah ada untuk langganan saat ini.
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ Contoh ini mendapatkan semua contoh add-on yang dibeli untuk langganan saat ini.
 PS C:\> Get-AzureStoreAddOn -ListAvailable
 ```
 
-Contoh ini mendapatkan semua add-on yang tersedia untuk pembelian di Amerika Serikat dari Bursa Azure.
+Contoh ini mendapatkan semua add-on yang tersedia untuk dibeli di Amerika Serikat dari Azure Store.
 
 ### Contoh 3
 ```
@@ -61,8 +61,8 @@ Contoh ini mendapatkan add-on bernama MyAddOn dari contoh add-on yang dibeli dal
 ## PARAMETERS
 
 ### -Negara
-Jika ditentukan, hanya mengembalikan instans add-on Azure Store yang tersedia di negara tertentu.
-Defaultnya adalah "AS".
+Jika ditentukan, hanya mengembalikan instans add-on Azure Store yang tersedia di negara yang ditentukan.
+Defaultnya adalah "US".
 
 ```yaml
 Type: String
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -ListAvailable
-Jika ditentukan, akan tersedia add-on untuk pembelian dari Bursa Azure.
+Jika ditentukan, dapatkan add-on yang tersedia untuk dibeli dari Azure Store.
 
 ```yaml
 Type: SwitchParameter
@@ -107,8 +107,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -133,9 +133,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureStoreAddOn](./New-AzureStoreAddOn.md)
+[AzureStoreAddOn baru](./New-AzureStoreAddOn.md)
 
-[Remove-AzureStoreAddOn](./Remove-AzureStoreAddOn.md)
+[Hapus-AzureStoreAddOn](./Remove-AzureStoreAddOn.md)
 
 [Set-AzureStoreAddOn](./Set-AzureStoreAddOn.md)
 

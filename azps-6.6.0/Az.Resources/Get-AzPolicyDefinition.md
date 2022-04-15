@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzPolicyDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzPolicyDefinition.md
 ms.openlocfilehash: bcd353e35e12f4d069d80949b1455dc352f7bf08
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140247123"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142300427"
 ---
 # Get-AzPolicyDefinition
 
@@ -19,7 +19,7 @@ ms.locfileid: "140247123"
 Mendapatkan definisi kebijakan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azpolicydefinition) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azpolicydefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -69,21 +69,21 @@ Cmdlet **Get-AzPolicyDefinition** mendapatkan kumpulan definisi kebijakan atau d
 PS C:\> Get-AzPolicyDefinition
 ```
 
-Perintah ini akan mendapatkan semua definisi kebijakan.
+Perintah ini mendapatkan semua definisi kebijakan.
 
 ### Contoh 2: Dapatkan definisi kebijakan dari langganan saat ini menurut nama
 ```
 PS C:\> Get-AzPolicyDefinition -Name 'VMPolicyDefinition'
 ```
 
-Perintah ini mendapatkan definisi kebijakan yang bernama VMPolicyDefinition dari langganan default saat ini.
+Perintah ini mendapatkan definisi kebijakan bernama VMPolicyDefinition dari langganan default saat ini.
 
 ### Contoh 3: Dapatkan definisi kebijakan dari grup manajemen menurut nama
 ```
 PS C:\> Get-AzPolicyDefinition -Name 'VMPolicyDefinition' -ManagementGroupName 'Dept42'
 ```
 
-Perintah ini mendapatkan definisi kebijakan yang bernama VMPolicyDefinition dari grup manajemen yang bernama Dept42.
+Perintah ini mendapatkan definisi kebijakan bernama VMPolicyDefinition dari grup manajemen bernama Dept42.
 
 ### Contoh 4: Dapatkan semua definisi kebijakan bawaan dari langganan
 ```
@@ -97,7 +97,7 @@ Perintah ini mendapatkan semua definisi kebijakan bawaan dari langganan dengan I
 PS C:\> Get-AzPolicyDefinition | where-object {$_.Properties.metadata.category -eq "Virtual Machine"}
 ```
 
-Perintah ini mendapatkan semua definisi kebijakan dalam kategori "Komputer Virtual".
+Perintah ini mendapatkan semua definisi kebijakan dalam kategori "Mesin Virtual".
 
 ## PARAMETERS
 
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Builtin
-Daftar batas hasil hanya untuk definisi kebijakan bawaan.
+Membatasi daftar hasil hanya untuk definisi kebijakan bawaan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kustom
-Daftar hasil batasan untuk definisi kebijakan kustom saja.
+Membatasi daftar hasil hanya untuk definisi kebijakan kustom.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID sumber daya yang sepenuhnya memenuhi syarat untuk definisi kebijakan yang akan dapatkan cmdlet ini.
+Menentukan ID sumber daya yang sepenuhnya memenuhi syarat untuk definisi kebijakan yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementGroupName
-Nama grup manajemen definisi kebijakan yang akan mendapatkan.
+Nama grup manajemen definisi kebijakan yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama definisi kebijakan yang akan dapatkan cmdlet ini.
+Menentukan nama definisi kebijakan yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Cmdlet ini mempertimbangkan versi API prari release ketika cmdlet menentukan versi mana yang akan digunakan secara otomatis.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan definisi kebijakan untuk mendapatkan.
+ID langganan definisi kebijakan yang akan didapatkan.
 
 ```yaml
 Type: System.Nullable`1[System.Guid]
@@ -262,13 +262,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 

@@ -4,11 +4,11 @@ ms.assetid: 7B2D9768-919B-4F54-BBC7-8882CC2C973A
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 3fc7c4138722e0f95fc4542f2a6ac3f97302605f
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419504"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142313629"
 ---
 # Get-AzureAutomationAccount
 
@@ -29,13 +29,13 @@ Get-AzureAutomationAccount [-Name <String>] [-Location <String>] [-Profile <Azur
 
 [!INCLUDE [aa-deprecation](../include/aa-deprecation.md)]
 
-Cmdlet **Get-AzureAutomationAccount** mendapatkan Microsoft Azure Otomatisasi untuk langganan Anda.
+Cmdlet **Get-AzureAutomationAccount** mendapatkan akun Microsoft Azure Otomatisasi untuk langganan Anda.
 Akun Otomatisasi adalah wadah untuk sumber daya Otomatisasi yang diisolasi dari sumber daya akun Otomatisasi lainnya.
-Sumber daya otomatisasi meliputi runbooks, pekerjaan, dan aset.
+Sumber daya otomatisasi mencakup runbook, pekerjaan, dan aset.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan akun Otomatisasi
+### Contoh 1: Dapatkan akun Otomatisasi
 ```
 PS C:\> Get-AzureAutomationAccount -Name "Contoso17"
 ```
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama akun Otomatisasi Azure.
+Menentukan nama akun Azure Automation.
 
 ```yaml
 Type: String
@@ -75,8 +75,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -103,8 +103,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureAutomationAccount](./New-AzureAutomationAccount.md)
+[AzureAutomationAccount Baru](./New-AzureAutomationAccount.md)
 
-[Remove-AzureAutomationAccount](./Remove-AzureAutomationAccount.md)
+[Hapus-AzureAutomationAccount](./Remove-AzureAutomationAccount.md)
 
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Set-AzureRmSqlDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Set-AzureRmSqlDatabase.md
 ms.openlocfilehash: 283b12ca63f92086369f273b1f04d5e3f0cd1716
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426300"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142314604"
 ---
 # Set-AzureRmSqlDatabase
 
@@ -39,7 +39,7 @@ Set-AzureRmSqlDatabase [-DatabaseName] <String> [-MaxSizeBytes <Int64>] [-Editio
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Ganti Nama
+### Ubah nama
 ```
 Set-AzureRmSqlDatabase [-DatabaseName] <String> -NewName <String> [-AsJob] [-ServerName] <String>
  [-ResourceGroupName] <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
@@ -47,7 +47,7 @@ Set-AzureRmSqlDatabase [-DatabaseName] <String> -NewName <String> [-AsJob] [-Ser
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmSqlDatabase** mengatur properti untuk database di Azure SQL Database. Cmdlet ini dapat mengubah tingkat layanan (*Edition*), tingkat kinerja (*RequestedServiceObjectiveName*), dan ukuran maks penyimpanan (*MaxSizeBytes*) untuk database.  Selain itu, Anda dapat menentukan parameter *ElastisPoolName* untuk memindahkan database ke dalam kolam elastis. Jika database sudah dalam pool elastis, Anda dapat menggunakan parameter *RequestedServiceObjectiveName* untuk memindahkan database dari pool elastis dan ke tingkat kinerja untuk database tunggal.
+Cmdlet **Set-AzureRmSqlDatabase** mengatur properti untuk database dalam Azure SQL Database. Cmdlet ini dapat mengubah tingkat layanan (*Edisi*), tingkat kinerja (*RequestedServiceObjectiveName*), dan ukuran maksimum penyimpanan (*MaxSizeBytes*) untuk database.  Selain itu, Anda dapat menentukan parameter *ElasticPoolName* untuk memindahkan database ke dalam kumpulan elastis. Jika database sudah ada dalam kumpulan elastis, Anda dapat menggunakan parameter *RequestedServiceObjectiveName* untuk memindahkan database keluar dari kumpulan elastis dan ke tingkat kinerja untuk database tunggal.
 
 ## EXAMPLES
 
@@ -74,9 +74,9 @@ EarliestRestoreDate           :
 Tags                          :
 ```
 
-Perintah ini memperbarui database yang bernama Database01 ke database S2 Standar di server yang bernama Server01.
+Perintah ini memperbarui database bernama Database01 ke database S2 Standar di server bernama Server01.
 
-### Contoh 2: Menambahkan database ke pool elastis
+### Contoh 2: Menambahkan database ke kumpulan elastis
 ```
 PS C:\>Set-AzureRmSqlDatabase -ResourceGroupName "ResourceGroup01" -DatabaseName "Database01" -ServerName "Server01" -ElasticPoolName "ElasticPool01"
 ResourceGroupName             : ResourceGroup01
@@ -99,9 +99,9 @@ EarliestRestoreDate           :
 Tags                          :
 ```
 
-Perintah ini menambahkan database bernama Database01 ke kolam elastis bernama ElastisPool01 yang dihosting di server bernama Server01.
+Perintah ini menambahkan database bernama Database01 ke kumpulan elastis bernama ElasticPool01 yang dihosting di server bernama Server01.
 
-### Contoh 3: Mengubah ukuran maksimum penyimpanan database
+### Contoh 3: Memodifikasi ukuran maksimal penyimpanan database
 ```
 PS C:\>Set-AzureRmSqlDatabase -ResourceGroupName "ResourceGroup01" -DatabaseName "Database01" -ServerName "Server01" -MaxSizeBytes 1099511627776
 ResourceGroupName             : ResourceGroup01
@@ -129,7 +129,7 @@ Perintah ini memperbarui database bernama Database01 untuk mengatur ukuran maksi
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeGeneration
-Pembuatan perhitungan untuk ditetapkan.
+Generasi komputasi untuk ditetapkan.
 
 ```yaml
 Type: System.String
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -188,16 +188,16 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Edition
+### -Edisi
 Menentukan edisi untuk database.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Tidak ada
+- Tidak
 - Dasar
 - Standar
 - Premium
-- DataWarehouse
+- Gudang Data
 - Gratis
-- Regang
+- Stretch
 - GeneralPurpose
 - BusinessCritical
 
@@ -213,8 +213,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ElastisPoolName
-Menentukan nama kolam elastis tempat untuk memindahkan database.
+### -ElasticPoolName
+Menentukan nama kumpulan elastis untuk memindahkan database.
 
 ```yaml
 Type: System.String
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxSizeBytes
-Ukuran maksimal Azure SQL Database byte.
+Ukuran maksimum Azure SQL Database dalam byte.
 
 ```yaml
 Type: System.Int64
@@ -290,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestedServiceObjectiveName
-Menentukan nama tujuan layanan untuk ditetapkan ke database. Untuk informasi tentang tujuan layanan, [lihat Azure SQL Database Tingkat Layanan dan Tingkat Kinerja](https://msdn.microsoft.com/en-us/library/azure/dn741336.aspx) di Pustaka Jaringan Pengembang Microsoft.
+Menentukan nama tujuan layanan untuk ditetapkan ke database. Untuk informasi tentang tujuan layanan, lihat [Azure SQL Database Tingkat Layanan dan Tingkat Kinerja](https://msdn.microsoft.com/en-us/library/azure/dn741336.aspx) di Pustaka Jaringan Pengembang Microsoft.
 
 ```yaml
 Type: System.String
@@ -320,7 +320,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server yang menjadi host database.
+Menentukan nama server yang menghosting database.
 
 ```yaml
 Type: System.String
@@ -334,7 +334,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Tag
+### -Tags
 Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
@@ -365,7 +365,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneRedundant
-Kelebihan zona untuk dikaitkan dengan Database Azure Sql
+Redundansi zona untuk dikaitkan dengan Database Azure Sql
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -380,7 +380,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -396,7 +396,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -411,7 +411,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -429,10 +429,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmSqlDatabase](./New-AzureRmSqlDatabase.md)
 
-[Remove-AzureRmSqlDatabase](./Remove-AzureRmSqlDatabase.md)
+[Hapus-AzureRmSqlDatabase](./Remove-AzureRmSqlDatabase.md)
 
 [Resume-AzureRmSqlDatabase](./Resume-AzureRmSqlDatabase.md)
 
 [Suspend-AzureRmSqlDatabase](./Suspend-AzureRmSqlDatabase.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

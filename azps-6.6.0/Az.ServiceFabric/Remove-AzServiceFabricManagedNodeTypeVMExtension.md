@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricManagedNodeTypeVMExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricManagedNodeTypeVMExtension.md
 ms.openlocfilehash: 6955fdc10cb301aba45abc7048039b1bfa72c2d5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140304061"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142299409"
 ---
 # Remove-AzServiceFabricManagedNodeTypeVMExtension
 
 ## SYNOPSIS
-Hapus ekstensi vm dari tipe node.
+Hapus ekstensi vm dari tipe simpul.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/remove-azservicefabricmanagednodetypevmextension) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/remove-azservicefabricmanagednodetypevmextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Remove-AzServiceFabricManagedNodeTypeVMExtension [-ResourceGroupName] <String> [
 ```
 
 ## DESCRIPTION
-Hapus ekstensi vm dari tipe node menurut nama. Gunakan [Get-AzServiceFabricManagedNodeType](./Get-AzServiceFabricManagedNodeType.md) dan lihat properti VmExtensions untuk melihat ekstensi saat ini pada tipe node.
+Hapus ekstensi vm dari tipe simpul menurut nama. Gunakan [Get-AzServiceFabricManagedNodeType](./Get-AzServiceFabricManagedNodeType.md) dan lihat properti VmExtensions untuk melihat ekstensi saat ini pada tipe node.
 
 ## EXAMPLES
 
@@ -48,7 +48,7 @@ $NodeTypeName = "nt1"
 Remove-AzServiceFabricManagedNodeTypeVMExtension -ResourceGroupName $rgName -ClusterName $clusterName -NodeTypeName $NodeTypeName -Name MyExtensionName
 ```
 
-Hapus ekstensi dari tipe node menurut nama.
+Hapus ekstensi dari tipe simpul menurut nama.
 
 ### Contoh 2
 ```powershell
@@ -60,12 +60,12 @@ $nodeType = Get-AzServiceFabricManagedNodeType -ResourceGroupName $rgName -Clust
 $nodeType | Remove-AzServiceFabricManagedNodeTypeVMExtension -Name MyExtensionName
 ```
 
-Hapus ekstensi dari tipe node menurut nama, dengan pemipaan.
+Hapus ekstensi dari tipe simpul menurut nama, dengan pipa.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Sumber daya tipe node
+Sumber daya tipe simpul
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.PSManagedNodeType
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeTypeName
-Tentukan nama tipe node.
+Tentukan nama tipe simpul.
 
 ```yaml
 Type: System.String
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

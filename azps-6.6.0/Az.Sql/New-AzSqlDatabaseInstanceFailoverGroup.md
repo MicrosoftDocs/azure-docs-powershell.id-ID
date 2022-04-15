@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseInstanceFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseInstanceFailoverGroup.md
 ms.openlocfilehash: 7b31261d8420fa43e332cba0a4ed3979a4b91202
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139931839"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142298797"
 ---
 # New-AzSqlDatabaseInstanceFailoverGroup
 
 ## SYNOPSIS
-Perintah ini akan membuat Grup Azure SQL Database Failover Instance baru.
+Perintah ini membuat Grup Failover Instans Azure SQL Database baru.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqldatabaseinstancefailovergroup) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqldatabaseinstancefailovergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,11 +31,11 @@ New-AzSqlDatabaseInstanceFailoverGroup [-Name] <String> [-PartnerResourceGroupNa
 ```
 
 ## DESCRIPTION
-Membuat grup Azure SQL Database Contoh Failover baru di antara kawasan tertentu dengan pasangan Instans Terkelola yang tidak bernama.
+Membuat Grup Failover Instans Azure SQL Database baru di antara wilayah tertentu dengan pasangan Instans Terkelola yang dicatat.
 
-Dua Azure SQL Database titik akhir TDS dibuat di Name.SqlDatabaseDns Queryfix (misalnya, Name.database.windows.net) dan Name.secondary.SqlDatabaseDnsFixfix. Titik akhir ini mungkin digunakan untuk terhubung ke wilayah utama dan sekunder dari Grup Failover. Jika kawasan utama terpengaruh oleh pemadaman, failover otomatis titik akhir dan database akan dipicu oleh pendiktean oleh kebijakan failover dan masa tenggang Instance Failover Group.
+Dua titik akhir TDS Azure SQL Database dibuat di Name.SqlDatabaseDnsSuffix (misalnya, Name.database.windows.net) dan Name.secondary.SqlDatabaseDnsSuffix. Titik akhir ini dapat digunakan untuk menyambungkan ke wilayah utama dan sekunder grup Failover. Jika wilayah utama dipengaruhi oleh pemadaman, failover otomatis titik akhir dan database akan dipicu sebagaimana ditentukan oleh kebijakan failover dan masa tenggang Grup Failover Instans.
 
-Selama pratinjau fitur Grup Failover Contoh, hanya nilai yang lebih besar dari atau sama dengan 1 jam yang didukung untuk parameter '-GracePeriodWithDataLossHours'.
+Selama pratinjau fitur Grup Failover Instans, hanya nilai yang lebih besar dari atau sama dengan 1 jam yang didukung untuk parameter '-GracePeriodWithDataLossHours'.
 
 ## EXAMPLES
 
@@ -58,7 +58,7 @@ ReadOnlyFailoverPolicy                : Disabled
 Id                                    : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg/providers/Microsoft.Sql/locations/eastus/instanceFailoverGroups/fg
 ```
 
-Perintah ini akan membuat Grup Failover Instans baru dengan kebijakan failover 'Otomatis' untuk pasangan Instans Terkelola.
+Perintah ini membuat Grup Failover Instans baru dengan kebijakan failover 'Otomatis' untuk pasangan Instans Terkelola.
 
 ### Contoh 2
 ```powershell
@@ -79,11 +79,11 @@ ReadOnlyFailoverPolicy                : Disabled
 Id                                    : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg/providers/Microsoft.Sql/locations/eastus/instanceFailoverGroups/fg
 ```
 
-Perintah ini akan membuat Grup Failover Instans baru dengan 'Manual' kebijakan failover untuk pasangan Instans Terkelola.
+Perintah ini membuat Grup Failover Instans baru dengan kebijakan failover 'Manual' untuk pasangan Instans Terkelola.
 
 ### Contoh 3
 
-Perintah ini akan membuat Grup Azure SQL Database Failover Instance baru. (otomatisgenerated)
+Perintah ini membuat Grup Failover Instans Azure SQL Database baru. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -93,7 +93,7 @@ New-AzSqlDatabaseInstanceFailoverGroup -FailoverPolicy Automatic -GracePeriodWit
 ## PARAMETERS
 
 ### -AllowReadOnlyFailoverToPrimary
-Apakah pemadaman pada server sekunder akan memicu failover otomatis titik akhir baca-saja.
+Apakah pemadaman di server sekunder harus memicu failover otomatis titik akhir baca-saja.
 
 ```yaml
 Type: System.String
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -FailoverPolicy
-Kebijakan failover Grup Failover Contoh.
+Kebijakan failover Grup Failover Instans.
 
 ```yaml
 Type: System.String
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -GracePeriodWithDataLossHours
-Interval sebelum failover otomatis dimulai jika terjadi pemadaman di server utama dan failover tidak dapat diselesaikan tanpa kehilangan data.
+Interval sebelum failover otomatis dimulai jika terjadi pemadaman pada server utama dan failover tidak dapat diselesaikan tanpa kehilangan data.
 
 ```yaml
 Type: System.Int32
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Nama Kawasan Lokal untuk mengambil Contoh Grup Failover.
+Nama Kawasan Lokal tempat untuk mengambil Grup Failover Instans.
 
 ```yaml
 Type: System.String
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama grup Azure SQL Database Failover untuk dibuat.
+Nama Grup failover Azure SQL Database untuk dibuat.
 
 ```yaml
 Type: System.String
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerManagedInstanceName
-Nama Instans Terkelola di kawasan mitra untuk ditambahkan ke Grup Failover Instans.
+Nama Instans Terkelola di kawasan mitra yang akan ditambahkan ke Grup Failover Instans.
 
 ```yaml
 Type: System.String
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerRegion
-Nama wilayah mitra dari Grup Failover Contoh.
+Nama wilayah mitra grup Failover Instans.
 
 ```yaml
 Type: System.String
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerResourceGroupName
-Nama grup sumber daya sekunder dari Grup Failover Contoh.
+Nama grup sumber daya sekunder dari Grup Failover Instans.
 
 ```yaml
 Type: System.String
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerSubscriptionId
-Id langganan Instans Terkelola sekunder dari Grup Failover Instance. Parameter ini hanya diperlukan untuk penyiapan lintas langganan
+Id langganan Instans Terkelola sekunder dari Grup Failover Instans. Parameter ini hanya diperlukan untuk penyiapan lintas langganan
 
 ```yaml
 Type: System.String
@@ -243,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryManagedInstanceName
-Nama Instans Terkelola di kawasan lokal yang akan ditambahkan ke Grup Failover Instans.
+Nama Instans Terkelola di wilayah lokal yang akan ditambahkan ke Grup Failover Instans.
 
 ```yaml
 Type: System.String
@@ -273,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -289,7 +289,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -304,7 +304,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -312,7 +312,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.sql.InstanceFailoverGroup.Model.AzureSqlInstanceFailoverGroupModel
+### Microsoft.Azure.Commands.Sql.InstanceFailoverGroup.Model.AzureSqlInstanceFailoverGroupModel
 
 ## CATATAN
 

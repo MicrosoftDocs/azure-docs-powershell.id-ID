@@ -4,11 +4,11 @@ ms.assetid: 8EED9813-5106-4D6C-B869-97BCBD7845AC
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: aedae85d848e382ace2324b27669282e9438ae12
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422928"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142313485"
 ---
 # Get-AzureSchedulerJob
 
@@ -25,8 +25,8 @@ Get-AzureSchedulerJob -Location <String> -JobCollectionName <String> [-JobName <
 ```
 
 ## DESCRIPTION
-Topik ini menguraikan cmdlet dalam modul Microsoft Azure PowerShell versi 0.8.10.
-Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Topik ini menjelaskan cmdlet dalam versi 0.8.10 modul Microsoft Azure PowerShell.
+Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik .`(Get-Module -Name Azure).Version`
 
 Cmdlet **Get-AzureSchedulerJobCollection** mendapatkan daftar pekerjaan penjadwal atau pekerjaan penjadwal tertentu.
 
@@ -37,26 +37,26 @@ Cmdlet **Get-AzureSchedulerJobCollection** mendapatkan daftar pekerjaan penjadwa
 PS C:\> Get-AzureSchedulerJob -Location "North Central US" -JobCollectionName "JobCollection01"
 ```
 
-Perintah ini mendapatkan pekerjaan penjadwal yang merupakan bagian dari kumpulan pekerjaan bernama JobCollection01.
+Perintah ini mendapatkan pekerjaan penjadwal yang merupakan bagian dari koleksi pekerjaan bernama JobCollection01.
 
-### Contoh 2: Mendapatkan pekerjaan bernama
+### Contoh 2: Dapatkan pekerjaan bernama
 ```
 PS C:\> Get-AzureSchedulerJob -Location "North Central US" -JobCollectionName "JobCollection01" -JobName "Job01"
 ```
 
-Perintah ini mendapatkan pekerjaan yang bernama Job01 dari kumpulan bernama JobCollection01 di lokasi yang ditentukan.
+Perintah ini mendapatkan pekerjaan bernama Job01 dari koleksi bernama JobCollection01 di lokasi yang ditentukan.
 
-### Contoh 3: Mendapatkan pekerjaan dinonaktifkan dalam koleksi
+### Contoh 3: Mendapatkan pekerjaan yang dinonaktifkan dalam koleksi
 ```
 PS C:\> Get-AzureSchedulerJobCollection -Location "North Central US" -JobCollectionName "JobCollection01" -JobState "Disabled"
 ```
 
-Perintah ini akan menonaktifkan semua pekerjaan penjadwal yang merupakan bagian dari JobCollection01 dalam lokasi yang ditentukan.
+Perintah ini mendapatkan semua pekerjaan penjadwal yang dinonaktifkan yang merupakan bagian dari JobCollection01 di lokasi yang ditentukan.
 
 ## PARAMETERS
 
 ### -JobCollectionName
-Menentukan nama koleksi yang berisi tugas penjadwal yang akan datang.
+Menentukan nama kumpulan yang berisi tugas penjadwal untuk didapatkan.
 
 ```yaml
 Type: String
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobName
-Menentukan nama pekerjaan penjadwal yang akan mendapatkan.
+Menentukan nama pekerjaan penjadwal yang akan didapatkan.
 
 ```yaml
 Type: String
@@ -86,12 +86,12 @@ Accept wildcard characters: False
 ```
 
 ### -JobState
-Menentukan status pekerjaan penjadwal untuk mendapatkan.
+Menentukan status pekerjaan penjadwal yang akan didapatkan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Diaktifkan
-- Dinonaktifkan
-- Disalahkan
+- Tamu penyandang cacat
+- Gagal
 - Selesai
 
 ```yaml
@@ -110,9 +110,9 @@ Accept wildcard characters: False
 Menentukan nama lokasi yang menjadi host layanan awan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
-- Asia mana pun
-- Eropa di mana saja
-- US di mana saja
+- Di mana saja Asia
+- Di mana saja Eropa
+- Di mana saja AS
 - Asia Timur
 - AS Timur
 - As Tengah Utara
@@ -135,8 +135,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -161,6 +161,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Remove-AzureSchedulerJob](./Remove-AzureSchedulerJob.md)
+[Hapus-AzureSchedulerJob](./Remove-AzureSchedulerJob.md)
 
 
