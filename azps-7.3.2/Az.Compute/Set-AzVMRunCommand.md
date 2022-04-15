@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMRunCommand.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMRunCommand.md
-ms.openlocfilehash: 653a56e05004fd60af520407e478faf465e22b8a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: b6e1d8011c346aa5f21bded189015018622997d1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140188407"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142320017"
 ---
 # Set-AzVMRunCommand
 
 ## SYNOPSIS
 Operasi untuk membuat atau memperbarui perintah jalankan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmruncommand) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Location Name             Type
 eastus   firstruncommand2 Microsoft.Compute/virtualMachines/runCommands
 ```
 
-Perintah pembaruan cmdlet Set-AzVMRunCommand untuk perintah jalankan yang sudah ada atau menambahkan perintah jalankan baru ke mesin virtual.
+Cmdlet Set-AzVMRunCommand memperbarui properti untuk perintah jalankan yang sudah ada atau menambahkan perintah jalankan baru ke mesin virtual.
 
 ## PARAMETERS
 
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -ErrorBlobUri
-Menentukan blob penyimpanan Azure tempat aliran kesalahan skrip akan diunggah.
+Menentukan blob penyimpanan Azure tempat streaming kesalahan skrip akan diunggah.
 
 ```yaml
 Type: System.String
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -OutputBlobUri
-Menentukan blob penyimpanan Azure tempat aliran output skrip akan diunggah.
+Menentukan blob penyimpanan Azure tempat streaming output skrip akan diunggah.
 
 ```yaml
 Type: System.String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 
 ### -Parameter
 Parameter yang digunakan oleh skrip.
-Untuk membuat, lihat bagian CATATAN untuk properti PARAMETER dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti PARAMETER dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Compute.Models.Api20210701.IRunCommandInputParameter[]
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 
 ### -ProtectedParameter
 Parameter yang digunakan oleh skrip.
-Untuk membuat, lihat bagian CATATAN untuk properti PROTECTEDPARAMETER dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti PROTECTEDPARAMETER dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Compute.Models.Api20210701.IRunCommandInputParameter[]
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunAsUser
-Menentukan akun pengguna pada VM saat menjalankan perintah jalankan.
+Menentukan akun pengguna pada VM ketika menjalankan perintah jalankan.
 
 ```yaml
 Type: System.String
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunCommandName
-Nama perintah mesin virtual yang dijalankan.
+Nama perintah jalankan mesin virtual.
 
 ```yaml
 Type: System.String
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceCommandId
-Menentukan perintahId skrip bawaan yang sudah ditentukan sebelumnya.
+Menentukan perintahId dari skrip bawaan yang sudah ditentukan sebelumnya.
 
 ```yaml
 Type: System.String
@@ -292,8 +295,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -353,7 +356,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -369,7 +372,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -384,7 +387,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

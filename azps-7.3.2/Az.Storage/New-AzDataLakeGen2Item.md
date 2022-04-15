@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzDataLakeGen2Item.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzDataLakeGen2Item.md
-ms.openlocfilehash: 1a779391596a0b09c35d59abe6d78e4a0e19dc3a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2d73ff1efa5e27c9a682e27d609942bf2dbfe1da
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140183101"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142338569"
 ---
 # New-AzDataLakeGen2Item
 
 ## SYNOPSIS
-Membuat file atau direktori dalam filesystem.
+Membuat file atau direktori dalam sistem file.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azdatalakegen2item) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,12 +39,12 @@ New-AzDataLakeGen2Item [-FileSystem] <String> [-Path] <String> [-Directory] [-Um
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataLakeGen2Item** membuat file atau direktori di Filesystem dalam akun penyimpanan Azure.
-Cmdlet ini hanya berfungsi jika Ruang Nama Hierarki diaktifkan untuk Storage tersebut. Jenis akun ini dapat dibuat dengan menjalankan cmdlet "New-AzStorageAccount" dengan "-EnableHierarchicalNamespace $true".
+Cmdlet **New-AzDataLakeGen2Item** membuat file atau direktori dalam Filesystem di akun penyimpanan Azure.
+Cmdlet ini hanya berfungsi jika Ruang Nama Hierarki diaktifkan untuk akun Storage. Akun semacam ini dapat dibuat dengan menjalankan cmdlet "New-AzStorageAccount" dengan "-EnableHierarchicalNamespace $true".
 
 ## EXAMPLES
 
-### Contoh 1: Membuat direktori dengan izin tertentu, Umask, properti, dan metadata
+### Contoh 1: Membuat direktori dengan izin, Umask, properti, dan metadata yang ditentukan
 ```
 PS C:\>New-AzDataLakeGen2Item -FileSystem "testfilesystem" -Path "dir1/dir2/" -Directory -Permission rwxrwxrwx -Umask ---rw---- -Property @{"CacheControl" = "READ"; "ContentDisposition" = "True"} -Metadata  @{"tag1" = "value1"; "tag2" = "value2" }
 
@@ -52,9 +55,9 @@ Path                 IsDirectory  Length          LastModified         Permissio
 dir1/dir2            True                         2020-03-23 09:15:56Z rwx---rwx    $superuser           $superuser
 ```
 
-Perintah ini membuat direktori dengan Izin, Umask, properti, dan metadata tertentu
+Perintah ini membuat direktori dengan Izin, Umask, properti, dan metadata yang ditentukan
 
-### Contoh 2: Buat(unggah) file data danau dari file sumber lokal, dan cmdlet berjalan di latar belakang
+### Contoh 2: Membuat(mengunggah) file data lake dari file sumber lokal, dan cmdlet berjalan di latar belakang
 ```
 PS C:\> $task = New-AzDataLakeGen2Item  -FileSystem "testfilesystem" -Path "dir1/dir2/file1" -Source "c:\sourcefile.txt" -Force -asjob
 PS C:\> $task | Wait-Job
@@ -67,12 +70,12 @@ Path                 IsDirectory  Length          LastModified         Permissio
 dir1/dir2/file1      False        14400000        2020-03-23 09:19:13Z rw-r-----    $superuser           $superuser
 ```
 
-Perintah ini akan membuat(mengunggah) file data danau dari file sumber lokal, dan cmdlet berjalan di latar belakang.
+Perintah ini membuat(mengunggah) file data lake dari file sumber lokal, dan cmdlet berjalan di latar belakang.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Jumlah total tugas bersama. Nilai default adalah 10.
+Jumlah total tugas asinkron serentak. Nilai defaultnya adalah 10.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Azure Storage Konteks
+Objek Konteks Azure Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -Direktori
-Menunjukkan bahwa item baru ini merupakan direktori dan bukan file.
+Menunjukkan bahwa item baru ini adalah direktori dan bukan file.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,8 +164,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Force
-Jika lolos, item baru akan dibuat tanpa perintah
+### -Paksa
+Jika lolos, item baru akan dibuat tanpa perintah apa pun
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -191,9 +194,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
+### -Jalur
 Jalur dalam Filesystem tertentu yang harus dibuat.
-Bisa merupakan file atau direktori Dalam format 'directory/file.txt' atau 'directory1/directory2/'
+Dapat berupa file atau direktori Dalam format 'directory/file.txt' atau 'directory1/directory2/'
 
 ```yaml
 Type: System.String
@@ -207,9 +210,9 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Permission
+### -Izin
 Mengatur izin akses POSIX untuk pemilik file, grup pemilik file, dan lainnya.
-Setiap kelas dapat diberi izin membaca, menulis, atau menjalankan.
+Setiap kelas dapat diberi izin baca, tulis, atau jalankan.
 Symbolic (rwxrw-rw-) didukung.
 
 ```yaml
@@ -273,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -289,7 +292,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -304,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -314,7 +317,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.WindowsAzure.commands.common. Storage. ResourceModel.AzureDataLakeGen2Item
+### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureDataLakeGen2Item
 
 ## CATATAN
 

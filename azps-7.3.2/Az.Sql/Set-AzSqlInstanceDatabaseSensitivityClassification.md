@@ -6,21 +6,24 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstanceDatabaseSensitivityClassification.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstanceDatabaseSensitivityClassification.md
-ms.openlocfilehash: 592008f7534a7ced181271e26122a8c60d9c871c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c7ef4dc9da62a66c9c6a6a03ae70177c97465c61
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140548579"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142339451"
 ---
 # Set-AzSqlInstanceDatabaseSensitivityClassification
 
 ## SYNOPSIS
-Mengatur tipe informasi dan label sensitivitas kolom di database Azure SQL Managed Instance.
+Mengatur tipe informasi dan label sensitivitas kolom dalam database Azure SQL Managed Instance.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqlinstancedatabasesensitivityclassification) untuk informasi terbaru.
 
 ## SYNTAX
 
-### ClassificationObjectParameterSet (Default)
+### KlasifikasiObjectParameterSet (Default)
 ```
 Set-AzSqlInstanceDatabaseSensitivityClassification
  -ClassificationObject <ManagedDatabaseSensitivityClassificationModel> [-PassThru] [-AsJob]
@@ -43,21 +46,21 @@ Set-AzSqlInstanceDatabaseSensitivityClassification [-SensitivityLabel <String>] 
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzSqlInstanceDatabaseSensitivityClassification mengatur tipe informasi dan label sensitivitas kolom di database Azure SQL Instans Terkelola.
+Cmdlet Set-AzSqlInstanceDatabaseSensitivityClassification mengatur tipe informasi dan label sensitivitas kolom dalam database Azure SQL Managed Instance.
 
 ## EXAMPLES
 
-### Contoh 1: Setel tipe informasi dan label sensitivitas kolom di database Azure SQL Managed Instance.
+### Contoh 1: Mengatur tipe informasi dan label sensitivitas kolom dalam database Azure SQL Managed Instance.
 ```powershell
 PS C:\> Set-AzSqlInstanceDatabaseSensitivityClassification -ResourceGroupName resourceGroup -InstanceName managedInstance -DatabaseName database -SchemaName schema -TableName table -ColumnName column -InformationType informationType -SensitivityLabel label
 ```
 
-### Contoh 2: Atur tipe informasi yang direkomendasikan dan label sensitivitas kolom di database Azure SQL Instans Terkelola.
+### Contoh 2: Mengatur tipe informasi yang direkomendasikan dan label sensitivitas kolom dalam database Azure SQL Managed Instance.
 ```powershell
 PS C:\> Get-AzSqlInstanceDatabaseSensitivityRecommendation -ResourceGroupName resourceGroup -InstanceName managedInstance -DatabaseName database | Set-AzSqlInstanceDatabaseSensitivityClassification
 ```
 
-### Contoh 3: Atur tipe informasi dan label sensitivitas kolom dalam database Azure SQL Managed Instance menggunakan pemipaan.
+### Contoh 3: Mengatur tipe informasi dan label sensitivitas kolom dalam database Azure SQL Managed Instance, menggunakan pipa.
 ```powershell
 PS C:\> Get-AzSqlInstanceDatabase -ResourceGroupName resourceGroup -InstanceName managedInstance -DatabaseName database | Set-AzSqlInstanceDatabaseSensitivityClassification -SchemaName schema -TableName table -ColumnName column -InformationType informationType -SensitivityLabel label
 ```
@@ -65,7 +68,7 @@ PS C:\> Get-AzSqlInstanceDatabase -ResourceGroupName resourceGroup -InstanceName
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClassificationObject
-Objek mewakili klasifikasi SQL Sensitivitas Database Terkelola.
+Objek yang mewakili Klasifikasi Sensitivitas Database SQL Managed Instance.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.DataClassification.Model.ManagedDatabaseSensitivityClassificationModel
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Nama database Azure SQL Instans Terkelola.
+Nama database Azure SQL Managed Instance.
 
 ```yaml
 Type: System.String
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-Azure SQL Instans Terkelola.
+Azure SQL Managed Instance nama.
 
 ```yaml
 Type: System.String
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menentukan apakah akan membuat output model klasifikasi sensitivitas pada akhir eksekusi cmdlet
+Menentukan apakah akan menghasilkan model klasifikasi sensitivitas di akhir eksekusi cmdlet
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -SensitivityLabel
-Nama yang menjelaskan sensitivitas data yang disimpan di kolom.
+Nama yang menjelaskan sensitivitas data yang disimpan dalam kolom.
 
 ```yaml
 Type: System.String
@@ -260,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -275,7 +278,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -290,7 +293,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -304,4 +307,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Pelajari selengkapnya tentang Azure SQL Database klasifikasi dan penemuan data](https://docs.microsoft.com/azure/sql-database/sql-database-data-discovery-and-classification)
+[Pelajari selengkapnya tentang Azure SQL Database penemuan dan klasifikasi data](https://docs.microsoft.com/azure/sql-database/sql-database-data-discovery-and-classification)

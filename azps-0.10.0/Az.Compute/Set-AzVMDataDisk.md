@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Set-AzVMDataDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Set-AzVMDataDisk.md
 ms.openlocfilehash: b927e9b61e4d76795e35f2356b900b959a94e082
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132414092"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142351457"
 ---
 # Set-AzVMDataDisk
 
@@ -20,7 +20,7 @@ Mengubah properti disk data mesin virtual.
 
 ## SYNTAX
 
-### ChangeWithName
+### UbahWithName
 ```
 Set-AzVMDataDisk [-VM] <PSVirtualMachine> [-Name] <String> [[-Caching] <CachingTypes>]
  [[-DiskSizeInGB] <Int32>] [-StorageAccountType <StorageAccountTypes>] [-WriteAccelerator]
@@ -35,7 +35,7 @@ Set-AzVMDataDisk [-VM] <PSVirtualMachine> [-Lun] <Int32> [[-Caching] <CachingTyp
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVMDataDisk** memodifikasi properti disk data mesin virtual.
+Cmdlet **Set-AzVMDataDisk** mengubah properti disk data mesin virtual.
 
 ## EXAMPLES
 
@@ -46,23 +46,23 @@ PS C:\> Set-AzVMDataDisk -VM $VM -Name "DataDisk01" -Caching ReadWrite | Update-
 ```
 
 Perintah pertama mendapatkan mesin virtual bernama ContosoVM07 dengan menggunakan **Get-AzVM**.
-Perintah menyimpannya di $VM variabel.
+Perintah menyimpannya dalam variabel $VM.
 
-Perintah kedua memodifikasi mode cache untuk disk data yang bernama DataDisk01 di komputer virtual dalam $VM.
+Perintah kedua mengubah mode cache untuk disk data bernama DataDisk01 pada mesin virtual di $VM.
 Perintah melewati hasil ke cmdlet Update-AzVM, yang mengimplementasikan perubahan Anda.
-Perubahan pada mode kas menyebabkan mesin virtual memulai ulang.
+Perubahan pada mode kas menyebabkan mesin virtual dimulai ulang.
 
 ## PARAMETERS
 
 ### -Caching
-Menentukan mode cache disk.
+Menentukan mode cache diska.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - ReadOnly
 - ReadWrite
 
 Nilai defaultnya adalah ReadWrite.
-Mengubah nilai ini menyebabkan mesin virtual memulai ulang.
+Mengubah nilai ini menyebabkan mesin virtual dimulai ulang.
 
 Pengaturan ini mempengaruhi konsistensi dan kinerja disk.
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lun
-Menentukan nomor unit logika (LUN) disk data yang dimodifikasi cmdlet ini.
+Menentukan nomor unit logika (LUN) disk data yang diubah cmdlet ini.
 
 ```yaml
 Type: Int32
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama disk data yang dimodifikasi cmdlet ini.
+Menentukan nama disk data yang diubah cmdlet ini.
 
 ```yaml
 Type: String
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountType
-Tipe akun disk terkelola mesin virtual.
+Tipe akun disk yang dikelola mesin virtual.
 
 ```yaml
 Type: StorageAccountTypes
@@ -156,8 +156,8 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan mesin virtual yang digunakan cmdlet ini untuk memodifikasi disk data.
-Untuk mendapatkan objek mesin virtual, gunakan Get-AzVM cmdlet.
+Menentukan mesin virtual di mana cmdlet ini mengubah disk data.
+Untuk mendapatkan objek mesin virtual, gunakan cmdlet Get-AzVM.
 
 ```yaml
 Type: PSVirtualMachine
@@ -187,12 +187,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSVirtualMachine
-Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari saluran
+Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari pipeline
 
 ## OUTPUTS
 
@@ -202,8 +202,8 @@ Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari saluran
 
 ## RELATED LINKS
 
-[Get-azvm](./Get-AzVM.md)
+[Get-AzVM](./Get-AzVM.md)
 
-[Update-azvm](./Update-AzVM.md)
+[Perbarui-AzVM](./Update-AzVM.md)
 
 

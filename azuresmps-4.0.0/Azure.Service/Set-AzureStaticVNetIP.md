@@ -4,11 +4,11 @@ ms.assetid: E54E4D16-DB2A-4626-B543-773C187B2E08
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 64489e3fef338c58c7b7a6e4f4f75e68b8da9524
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423189"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142334781"
 ---
 # Set-AzureStaticVNetIP
 
@@ -29,7 +29,7 @@ Cmdlet **Set-AzureStaticVNetIP** mengatur informasi alamat IP jaringan virtual s
 
 ## EXAMPLES
 
-### Contoh 1: Menyetel alamat IP jaringan virtual yang terkait dengan mesin virtual
+### Contoh 1: Atur alamat IP jaringan virtual yang terkait dengan mesin virtual
 ```
 PS C:\> # Prerequisite: VNet has been set up with SubNet
           # Set-AzureVNetConfig -ConfigurationPath $vnetConfigPath;
@@ -42,27 +42,27 @@ PS C:\> # Prerequisite: VNet has been set up with SubNet
 
 Perintah pertama mengatur jalur konfigurasi untuk jaringan virtual.
 
-Perintah kedua akan membuat konfigurasi mesin virtual.
+Perintah kedua membuat konfigurasi mesin virtual.
 
-Perintah ketiga mengatur subnet untuk komputer virtual.
+Perintah ketiga mengatur subnet untuk mesin virtual.
 
-Perintah keempat mengatur alamat IP untuk komputer virtual.
+Perintah keempat mengatur alamat IP untuk mesin virtual.
 
 Perintah kelima membuat mesin virtual menggunakan mesin virtual.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -107,8 +107,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan objek mesin virtual tetap yang untuk menyetel alamat IP VNet statis.
+Menentukan objek mesin virtual persisten untuk mengatur alamat IP VNet statis.
 
 ```yaml
 Type: IPersistentVM
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -150,6 +150,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureStaticVNetIP](./Get-AzureStaticVNetIP.md)
 
-[Test-AzureStaticVNetIP](./Test-AzureStaticVNetIP.md)
+[Uji-AzureStaticVNetIP](./Test-AzureStaticVNetIP.md)
 
 

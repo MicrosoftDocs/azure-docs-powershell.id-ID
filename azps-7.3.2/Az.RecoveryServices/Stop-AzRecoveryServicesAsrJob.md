@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Stop-AzRecoveryServicesAsrJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Stop-AzRecoveryServicesAsrJob.md
-ms.openlocfilehash: 4e92711127614e5e016f9619d31180e30386c40a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 06dd3c616cbe13d5443959c2911ddb44a390d911
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139999062"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142342727"
 ---
 # Stop-AzRecoveryServicesAsrJob
 
 ## SYNOPSIS
-Menghentikan pekerjaan Pemulihan Situs Azure.
+Menghentikan pekerjaan azure Site Recovery.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/stop-azrecoveryservicesasrjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Stop-AzRecoveryServicesAsrJob -Name <String> [-DefaultProfile <IAzureContextCont
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzRecoveryServicesAsrJob** menghentikan pekerjaan Pemulihan Situs Azure tertentu.
+Cmdlet **Stop-AzRecoveryServicesAsrJob** menghentikan pekerjaan Site Recovery Azure yang ditentukan.
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ Cmdlet **Stop-AzRecoveryServicesAsrJob** menghentikan pekerjaan Pemulihan Situs 
 PS C:\> $currentJob = Stop-AzRecoveryServicesAsrJob -Job $Job
 ```
 
-Mencoba menghentikan pekerjaan tertentu dan mengembalikan objek pekerjaan ASR yang diperbarui.
+Berusaha menghentikan pekerjaan yang ditentukan dan mengembalikan objek pekerjaan ASR yang diperbarui.
 
 ## PARAMETERS
 
@@ -62,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Input: Menentukan objek pekerjaan ASR yang terkait dengan pekerjaan ASR yang akan dihentikan
+Objek Input: Tentukan objek pekerjaan ASR yang terkait dengan pekerjaan ASR yang akan dihentikan
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRJob
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Tentukan Pekerjaan ASR untuk dihentikan dengan nama pekerjaan ASR.
+Tentukan Tugas ASR yang akan dihentikan oleh nama pekerjaan ASR.
 
 ```yaml
 Type: System.String
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -138,6 +141,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzRecoveryServicesAsrJob](./Get-AzRecoveryServicesAsrJob.md)
 
-[Restart-AzRecoveryServicesAsrJob](./Restart-AzRecoveryServicesAsrJob.md)
+[Mulai ulang-AzRecoveryServicesAsrJob](./Restart-AzRecoveryServicesAsrJob.md)
 
 [Resume-AzRecoveryServicesAsrJob](./Resume-AzRecoveryServicesAsrJob.md)

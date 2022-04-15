@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.websi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/Remove-AzureRmWebAppBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/Remove-AzureRmWebAppBackup.md
-ms.openlocfilehash: beb34e1ccfa9ee0f1f04fa9d31f8632cf3d8e1dca3f9ef01407a9dd8128dc786
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 98ded2967c364955ab8b9dd38f316021649d0fc8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140855288"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142314247"
 ---
 # Remove-AzureRmWebAppBackup
 
@@ -34,7 +34,7 @@ Remove-AzureRmWebAppBackup [-BackupId] <String> [-WebApp] <PSSite> [-DefaultProf
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmWebAppBackup** menghapus cadangan tertentu dari Azure Web App.
+Cmdlet **Hapus-AzureRmWebAppBackup** menghapus cadangan Azure Web App yang ditentukan.
 
 ## EXAMPLES
 
@@ -43,12 +43,12 @@ Cmdlet **Remove-AzureRmWebAppBackup** menghapus cadangan tertentu dari Azure Web
 PS C:\>Remove-AzureRmWebAppBackup -ResourceGroupName "Default-Web-WestUS" -Name "WebAppStandard" -BackupId "12345"
 ```
 
-Perintah ini menghapus cadangan dengan ID "12345" dari Web App yang bernama WebAppStandard yang termasuk dalam grup sumber daya Default-Web-WestUS.
+Perintah ini menghapus cadangan dengan cadangan dengan ID "12345" dari Web App bernama WebAppStandard yang termasuk dalam grup sumber daya Default-Web-WestUS.
 
 ## PARAMETERS
 
 ### -BackupId
-ID Cadangan
+Id Cadangan
 
 ```yaml
 Type: System.String
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

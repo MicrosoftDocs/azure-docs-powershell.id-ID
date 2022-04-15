@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageEncryptionScope.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageEncryptionScope.md
-ms.openlocfilehash: 9c4639ae9d33e43a5b7f71ff8dbbdcc4a4ccd6fc
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e33b1a91df5de72a88fd2586dad12801144bfa28
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140005684"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142338785"
 ---
 # Get-AzStorageEncryptionScope
 
 ## SYNOPSIS
-Mendapatkan atau mencantumkan lingkup enkripsi dari akun Storage Anda.
+Dapatkan atau cantumkan lingkup enkripsi dari akun Storage.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageencryptionscope) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Nama Akun (Default)
+### AccountName (Default)
 ```
 Get-AzStorageEncryptionScope [-ResourceGroupName] <String> [-StorageAccountName] <String>
  [-EncryptionScopeName <String>] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -32,11 +35,11 @@ Get-AzStorageEncryptionScope -StorageAccount <PSStorageAccount> [-EncryptionScop
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStorageEncryptionScope** mendapatkan atau mencantumkan lingkup enkripsi dari Storage Anda.
+Cmdlet **Get-AzStorageEncryptionScope** mendapatkan atau mencantumkan cakupan enkripsi dari akun Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan satu lingkup enkripsi
+### Contoh 1: Dapatkan lingkup enkripsi tunggal
 ```
 PS C:\> Get-AzStorageEncryptionScope -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount" -EncryptionScopeName $scopename
 
@@ -48,9 +51,9 @@ Name      State    Source             KeyVaultKeyUri
 testscope Disabled Microsoft.Keyvault https://keyvalutname.vault.azure.net:443/keys/keyname
 ```
 
-Perintah ini memiliki satu lingkup enkripsi.
+Perintah ini mendapatkan satu lingkup enkripsi.
 
-### Contoh 2: Mencantumkan semua lingkup enkripsi akun Storage Anda
+### Contoh 2: Mencantumkan semua lingkup enkripsi akun Storage
 ```
 PS C:\> Get-AzStorageEncryptionScope -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount" 
 
@@ -63,7 +66,7 @@ testscope Disabled Microsoft.Keyvault https://keyvalutname.vault.azure.net:443/k
 scope2    Enabled  Microsoft.Storage
 ```
 
-Perintah ini mencantumkan semua lingkup enkripsi akun Storage Anda.
+Perintah ini mencantumkan semua lingkup enkripsi akun Storage.
 
 ## PARAMETERS
 
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionScopeName
-Azure Storage EncryptionScope
+nama Azure Storage EncryptionScope
 
 ```yaml
 Type: System.String
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage objek akun
+objek akun Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Storage Akun.
+Storage Nama Akun.
 
 ```yaml
 Type: System.String
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

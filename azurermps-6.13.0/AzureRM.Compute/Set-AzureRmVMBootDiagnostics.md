@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Set-AzureRmVMBootDiagnostics.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Set-AzureRmVMBootDiagnostics.md
 ms.openlocfilehash: 290c726c53ea4479c4bd1f3cb9b2c607c04f20cc
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428428"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142358597"
 ---
 # Set-AzureRmVMBootDiagnostics
 
 ## SYNOPSIS
-Mengubah properti diagnostik komputer virtual untuk boot.
+Mengubah properti diagnostik boot mesin virtual.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -35,25 +35,25 @@ Set-AzureRmVMBootDiagnostics [-VM] <PSVirtualMachine> [-Disable] [-DefaultProfil
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmVMBootDiagnostics** mengubah properti diagnostik boot komputer virtual.
+Cmdlet **Set-AzureRmVMBootDiagnostics** mengubah properti diagnostik boot mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Mengaktifkan diagnostik boot
+### Contoh 1: Aktifkan diagnostik boot
 ```
 PS C:\> $VM = Get-AzureRmVM -ResourceGroupName "ResourceGroup11" -Name "ContosoVM07"
 PS C:\> Set-AzureRmVMBootDiagnostics -VM $VM -Enable -ResourceGroupName "ResourceGroup11" -StorageAccountName "DiagnosticStorage"
 ```
 
-Perintah pertama mendapatkan mesin virtual bernama ContosoVM07 dengan menggunakan **Get-AzureRmVM.**
-Perintah menyimpannya di $VM berbeda.
-Perintah kedua memungkinkan diagnostik boot untuk komputer virtual di $VM.
-Data diagnostik disimpan di akun yang ditentukan.
+Perintah pertama mendapatkan mesin virtual bernama ContosoVM07 menggunakan **Get-AzureRmVM**.
+Perintah menyimpannya dalam variabel $VM.
+Perintah kedua memungkinkan diagnostik boot untuk mesin virtual di $VM.
+Data diagnostik disimpan dalam akun tertentu.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -67,8 +67,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Disable
-Mengindikasikan bahwa cmdlet ini menonaktifkan diagnostik boot untuk komputer virtual.
+### -Non-fungsikan
+Menunjukkan bahwa cmdlet ini menonaktifkan diagnostik boot untuk mesin virtual.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -Aktifkan
-Menunjukkan bahwa cmdlet ini mengaktifkan diagnostik boot untuk komputer virtual.
+Menunjukkan bahwa cmdlet ini mengaktifkan diagnostik boot untuk mesin virtual.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: System.String
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

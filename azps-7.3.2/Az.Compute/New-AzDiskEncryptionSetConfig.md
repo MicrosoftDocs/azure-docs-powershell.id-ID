@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzDiskEncryptionSetConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzDiskEncryptionSetConfig.md
-ms.openlocfilehash: ba568ada7198972b1270295ce3a93e00f8becf65
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d554dd35203efae16ffb18555b79dec2019375c3
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140188644"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142348019"
 ---
 # New-AzDiskEncryptionSetConfig
 
 ## SYNOPSIS
 Membuat objek kumpulan enkripsi disk yang dapat dikonfigurasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azdiskencryptionsetconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ $config = New-AzDiskEncryptionSetConfig -Location 'westcentralus' -KeyUrl "https
 $config | New-AzDiskEncryptionSet -ResourceGroupName 'rg1' -Name 'enc1'
 ```
 
-Membuat kumpulan enkripsi disk menggunakan kunci aktif yang diberikan di kunci vault.
+Membuat kumpulan enkripsi disk menggunakan kunci aktif yang diberikan dalam kubah kunci.
 
 ## PARAMETERS
 
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionType
-Gunakan ini untuk mengatur tipe enkripsi dari kumpulan enkripsi disk. Nilai yang tersedia adalah: 'EncryptionAtKeyWithPlatformKey', 'EncryptionAtCustomerKey'.
+Gunakan ini untuk mengatur tipe enkripsi kumpulan enkripsi disk. Nilai yang tersedia adalah: 'EncryptionAtRestWithPlatformKey', 'EncryptionAtRestWithCustomerKey'.
 
 ```yaml
 Type: System.String
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyUrl
-Url mengarah ke kunci aktif dalam KeyVault
+Url menunjuk ke kunci aktif di KeyVault
 
 ```yaml
 Type: System.String
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -RotationToLatestKeyVersionEnabled
-Mendapatkan atau mengatur bendera ini ke true untuk mengaktifkan pembaruan otomatis enkripsi disk ini
+Dapatkan atau setel bendera ini ke true untuk mengaktifkan pembaruan otomatis enkripsi disk ini
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceVaultId
-Id sumber daya KeyVault yang berisi kunci aktif.
+Id sumber daya keyVault yang berisi kunci aktif.
 
 ```yaml
 Type: System.String
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

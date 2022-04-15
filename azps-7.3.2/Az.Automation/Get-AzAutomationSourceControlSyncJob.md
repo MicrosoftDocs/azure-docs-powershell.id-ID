@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationSourceControlSyncJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationSourceControlSyncJob.md
-ms.openlocfilehash: c0776600a93162a01cb1f32198b6dcc2293d3b71
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f62cbe3f780b1a862970237b03c87da0b9f46ea7
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140202886"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142321817"
 ---
 # Get-AzAutomationSourceControlSyncJob
 
 ## SYNOPSIS
-Mendapatkan pekerjaan sinkronisasi kontrol sumber Otomatisasi Azure.
+Mendapatkan pekerjaan sinkronisasi kontrol sumber Azure Automation.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationsourcecontrolsyncjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,12 +28,12 @@ Get-AzAutomationSourceControlSyncJob -SourceControlName <String> [-JobId <Guid>]
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzAutomationSourceControlSyncJob mendapatkan pekerjaan sinkronisasi kontrol sumber Azure Automation. Untuk mendapatkan pekerjaan sinkronisasi kontrol sumber tertentu, tentukan id-nya.
+Cmdlet Get-AzAutomationSourceControlSyncJob mendapatkan Azure Automation pekerjaan sinkronisasi kontrol sumber. Untuk mendapatkan pekerjaan sinkronisasi kontrol sumber tertentu, tentukan idnya.
 
 ## EXAMPLES
 
 ### Contoh 1
-Perintah ini mendapatkan semua pekerjaan sinkronisasi kontrol sumber Otomatisasi untuk VSTSNative kontrol sumber.
+Perintah ini mendapatkan semua pekerjaan sinkronisasi kontrol sumber otomatisasi untuk kontrol sumber VSTSNative.
 
 
 ```powershell
@@ -61,7 +64,7 @@ Failed FullSync There were errors while syncing the user runbooks. Please see er
 
 ### Contoh 3
 
-Mendapatkan pekerjaan sinkronisasi kontrol sumber Otomatisasi Azure. (otomatisgenerated)
+Mendapatkan pekerjaan sinkronisasi kontrol sumber Azure Automation. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceControlName
-Nama kontrol sumber pekerjaan.
+Nama kontrol sumber dari pekerjaan tersebut.
 
 ```yaml
 Type: System.String
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

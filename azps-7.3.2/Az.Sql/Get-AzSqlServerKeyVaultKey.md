@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerKeyVaultKey.md
-ms.openlocfilehash: fbac0eba9b61af44bea770169b675fc5d2e2894d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 39433c496c0d28fa257662117766066200dd0933
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140400671"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142339856"
 ---
 # Get-AzSqlServerKeyVaultKey
 
 ## SYNOPSIS
-Dapatkan kunci Key Vault SQL server.
+Mendapatkan kunci Key Vault server SQL.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlserverkeyvaultkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,31 +28,31 @@ Get-AzSqlServerKeyVaultKey [[-KeyId] <String>] [-ServerName] <String> [-Resource
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzSqlServerKeyVaultKey mendapatkan informasi tentang tombol Key Vault di server SQL.
-Anda dapat menampilkan semua tombol di server atau melihat kunci tertentu dengan menyediakan KeyId.
+Cmdlet Get-AzSqlServerKeyVaultKey mendapatkan informasi tentang kunci Key Vault di server SQL.
+Anda dapat melihat semua kunci di server atau melihat kunci tertentu dengan menyediakan KeyId.
 
 ## EXAMPLES
 
-### Contoh 1: Get all Key Vault keys
+### Contoh 1: Dapatkan semua kunci Key Vault
 ```
 PS C:\> Get-AzSqlServerKeyVaultKey -ServerName 'ContosoServer' -ResourceGroupName 'ContosoResourceGroup'
 ```
 
-Perintah ini akan memasukkan semua tombol Key Vault di SQL server.
-ResourceGroupName : ContosoResourceGroup ServerName : ContosoServer ServerKeyName : Tipe contoso_contosokey_01234567890123456789012345678901: AzureKeyVault Uri : https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901 Thumbprint : 1122334455667788990011223344556677889900 CreationDate : 1/1/2017 12:00:00 AM ResourceGroupName : ContosoResourceGroup ServerName : ContosoServer ServerKeyName : Contoso_contosokey2_01234567890123456789012345678901 Type : AzureKeyVault Uri               : https://contoso.vault.azure.net/keys/contosokey2/09876543210987654321098765432109 Thumbprint : 0099887766554433221100998877665544332211 Tanggal Pembuatan : 01/01/2017 00.00
+Perintah ini mendapatkan semua kunci Key Vault di server SQL.
+ResourceGroupName : ContosoResourceGroup ServerName        : ContosoServer ServerKeyName     : contoso_contosokey_01234567890123456789012345678901 Type              : AzureKeyVault Uri               : https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901 Thumbprint        : 1122334455667788990011223344556677889900 CreationDate      : 1/1/2017 12:00:00 AM ResourceGroupName : ContosoResourceGroup ServerName        : ContosoServer ServerKeyName     : contoso_contosokey2_01234567890123456789012345678901 Type              : AzureKeyVault Uri               : https://contoso.vault.azure.net/keys/contosokey2/09876543210987654321098765432109 Cap jempol : 0099887766554433221100998877665544332211 CreationDate : 1/1/2017 12:00:00 AM
 
 ### Contoh 2: Dapatkan kunci Key Vault tertentu
 ```
 PS C:\> $MyServerKeyVaultKey = Get-AzSqlServerKeyVaultKey -KeyId 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' -ServerName 'ContosoServer' -ResourceGroupName 'ContosoResourceGroup'
 ```
 
-Perintah ini akan memasukkan kunci Key Vault dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901', lalu menyimpannya di $MyServerKeyVaultKey variabel.
-Anda dapat memeriksa properti $MyServerKeyVaultKey untuk mendapatkan detail tentang kunci vault.
+Perintah ini mendapatkan kunci Key Vault dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901', lalu menyimpannya dalam variabel $MyServerKeyVaultKey.
+Anda dapat memeriksa properti $MyServerKeyVaultKey untuk mendapatkan detail tentang kubah kunci.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -64,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyId
-KeyId Azure Key Vault.
+Azure Key Vault KeyId.
 
 ```yaml
 Type: System.String
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -148,10 +151,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.sql.ServerKeyVaultKey.Model.AzureSqlServerKeyVaultKeyModel
+### Microsoft.Azure.Commands.Sql.ServerKeyVaultKey.Model.AzureSqlServerKeyVaultKeyModel
 
 ## CATATAN
 
 ## RELATED LINKS
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

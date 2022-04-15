@@ -3,12 +3,12 @@ external help file: Azs.AzureBridge.Admin-help.xml
 Module Name: Azs.AzureBridge.Admin
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 8e14b6c2fe32178c9c128f8f723e0bce7ec4d3079c62eae201b582ee8978de4b
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 48b7cc2211df4fd8b9d65c3e93483a485a10ae32
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416768"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142352645"
 ---
 # Get-AzsAzureBridgeDownloadedProduct
 
@@ -23,7 +23,7 @@ Get-AzsAzureBridgeDownloadedProduct -ActivationName <String> -ResourceGroupName 
  [-Top <Int32>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsAzureBridgeDownloadedProduct -Name <String> -ActivationName <String> -ResourceGroupName <String>
  [<CommonParameters>]
@@ -44,14 +44,14 @@ Mengembalikan daftar produk yang diunduh dari Azure MarketPlace.
 Get-AzsAzureBridgeDownloadedProduct -ActivationName 'myActivation' -ResourceGroupName 'activationRG'
 ```
 
-Dapatkan daftar produk Unduhan Azure Bridge
+Dapatkan daftar produk Yang Diunduh Azure Bridge
 
 ### -------------------------- CONTOH 2 --------------------------
 ```
 Get-AzsAzureBridgeDownloadedProduct -Name 'microsoft.docker-arm.1.1.0' -ActivationName 'myActivation' -ResourceGroupName 'activationRG'
 ```
 
-Dapatkan Azure Bridge Produk yang Diunduh berdasarkan Nama
+Dapatkan Produk yang Diunduh Azure Bridge berdasarkan Nama
 
 ## PARAMETERS
 
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup sumber daya sumber daya yang berada di bawahnya.
+Grup sumber daya tempat sumber daya berada di bawah.
 
 ```yaml
 Type: System.Management.Automation.PSObject
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

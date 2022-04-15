@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/disable-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Disable-AzBatchJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Disable-AzBatchJob.md
-ms.openlocfilehash: bc7daa950a9ce6477b06b1fc86be0a0b7ffb0f1b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: bcdc6808310ddcf561c785ed9fb9af93f1869eb3
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140550572"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142349369"
 ---
 # Disable-AzBatchJob
 
 ## SYNOPSIS
-Menonaktifkan pekerjaan Kumpulan.
+Menonaktifkan pekerjaan Batch.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.batch/disable-azbatchjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,26 +30,26 @@ Disable-AzBatchJob [-Id] <String> [-DisableJobOption] <DisableJobOption> -BatchC
 
 ## DESCRIPTION
 Cmdlet **Disable-AzBatchJob** menonaktifkan pekerjaan Azure Batch.
-Setelah mengaktifkan pekerjaan, tugas baru dapat dijalankan.
+Setelah Anda mengaktifkan pekerjaan, tugas baru bisa berjalan.
 Pekerjaan yang dinonaktifkan tidak menjalankan tugas baru.
 Anda dapat mengaktifkan pekerjaan yang dinonaktifkan nanti.
 
 ## EXAMPLES
 
-### Contoh 1: Menonaktifkan pekerjaan Kumpulan
+### Contoh 1: Menonaktifkan pekerjaan Batch
 ```powershell
 Disable-AzBatchJob -Id "Job-000001" -DisableJobOption "Terminate" -BatchContext $Context
 ```
 
 Perintah ini menonaktifkan pekerjaan yang memiliki ID Job-000001.
 Perintah mengakhiri tugas aktif untuk pekerjaan tersebut.
-Gunakan cmdlet **Get-AzBatchAccountKey** untuk menetapkan konteks ke $Context variabel.
+Gunakan cmdlet **Get-AzBatchAccountKey** untuk menetapkan konteks ke variabel $Context.
 
 ## PARAMETERS
 
 ### -BatchContext
-Menentukan contoh **BatchAccountContext** yang digunakan cmdlet untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -61,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -77,9 +80,9 @@ Accept wildcard characters: False
 
 ### -DisableJobOption
 Menentukan apa yang harus dilakukan dengan tugas aktif yang terkait dengan pekerjaan yang dinonaktifkan cmdlet ini.
-Nilai valid adalah:
-- Requeue
-- Akhiri
+Nilai yang valid adalah:
+- Antrean ulang
+- Mengakhiri
 - Tunggu
 
 ```yaml
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -139,4 +142,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Stop-AzBatchJob](./Stop-AzBatchJob.md)
 
-[Cmdlet Kumpulan Azure](/powershell/module/Az.Batch/)
+[Cmdlet Azure Batch](/powershell/module/Az.Batch/)

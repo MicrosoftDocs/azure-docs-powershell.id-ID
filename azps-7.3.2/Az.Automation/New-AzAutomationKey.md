@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationKey.md
-ms.openlocfilehash: 9b23eb0f8516f147167be44312707b49c55bbfeb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: b95ced4d9027260163d6777207e4c44e5e735aff
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140387130"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142321835"
 ---
 # New-AzAutomationKey
 
 ## SYNOPSIS
 Meregenerasi kunci registrasi untuk akun Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/new-azautomationkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,21 +29,21 @@ New-AzAutomationKey [-KeyType] <String> [-ResourceGroupName] <String> [-Automati
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzAutomationKey** meregenerasi kunci registrasi untuk akun Azure Automation.
+Cmdlet **New-AzAutomationKey meregenerasi** kunci pendaftaran untuk akun Azure Automation.
 
 ## EXAMPLES
 
-### Contoh 1: Regenerasi kunci untuk akun Otomatisasi
+### Contoh 1: Meregenerasi kunci untuk akun Otomatisasi
 ```
 PS C:\>New-AzAutomationKey -KeyType Primary -ResourceGroup "ResourceGroup01" -AutomationAccountName "AutomationAccount01"
 ```
 
-Perintah ini meregenerasi kunci utama untuk akun Otomatisasi Azure yang bernama AutomationAccount01 dalam grup sumber daya yang bernama ResourceGroup01.
+Perintah ini meregenerasi kunci utama untuk akun Azure Automation bernama AutomationAccount01 dalam grup sumber daya bernama ResourceGroup01.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang meregenerasi kunci cmdlet ini.
+Menentukan nama akun Otomatisasi tempat cmdlet ini meregenerasi kunci.
 
 ```yaml
 Type: System.String
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -70,8 +73,8 @@ Accept wildcard characters: False
 ```
 
 ### -KeyType
-Menentukan tipe kunci pendaftaran agen.
-Nilai valid adalah: 
+Menentukan tipe kunci registrasi agen.
+Nilai yang valid adalah: 
 - Utama 
 - Sekunder
 
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

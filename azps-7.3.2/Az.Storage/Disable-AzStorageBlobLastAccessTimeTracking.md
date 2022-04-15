@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/disable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Disable-AzStorageBlobLastAccessTimeTracking.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Disable-AzStorageBlobLastAccessTimeTracking.md
-ms.openlocfilehash: 985ef58e6c34053054fab2a6b7c4773b9e324289
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: bfbbc069c927032e63c6bde6ba6523c56d13479f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140570360"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142338983"
 ---
 # Disable-AzStorageBlobLastAccessTimeTracking
 
 ## SYNOPSIS
-Menonaktifkan pelacakan waktu akses terakhir untuk Azure Storage Blob Anda.
+Nonaktifkan pelacakan waktu akses terakhir untuk layanan blob Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/disable-azstoragebloblastaccesstimetracking) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Nama Akun (Default)
+### AccountName (Default)
 ```
 Disable-AzStorageBlobLastAccessTimeTracking [-ResourceGroupName] <String> [-StorageAccountName] <String>
  [-PassThru] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -32,7 +35,7 @@ Disable-AzStorageBlobLastAccessTimeTracking -StorageAccount <PSStorageAccount> [
 ```
 
 ## DESCRIPTION
-Cmdlet **Disable-AzStorageBlobDeleteRetentionPolicy** menonaktifkan kebijakan penyimpanan penghapusan untuk layanan Azure Storage Blob.
+Cmdlet **Disable-AzStorageBlobDeleteRetentionPolicy** menonaktifkan kebijakan penghapusan penyimpanan untuk layanan Azure Storage Blob.
 
 ## EXAMPLES
 
@@ -61,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Display ServiceProperties
+Menampilkan ServiceProperties
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage objek akun
+objek akun Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Storage Akun.
+Storage Nama Akun.
 
 ```yaml
 Type: System.String
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

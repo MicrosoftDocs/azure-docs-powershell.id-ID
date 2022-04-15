@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventGrid/Commands.EventGrid/help/Update-AzureRmEventGridSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventGrid/Commands.EventGrid/help/Update-AzureRmEventGridSubscription.md
 ms.openlocfilehash: d036ba2df289b0b2f84430f01000632a887ec20e
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140850864"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142357083"
 ---
 # Update-AzureRmEventGridSubscription
 
@@ -53,7 +53,7 @@ Update-AzureRmEventGridSubscription [-EventSubscriptionName] <String> [-Resource
 ```
 
 ## DESCRIPTION
-Perbarui properti langganan acara Kisi Acara. Ini dapat digunakan untuk memperbarui filter, tujuan, atau label langganan acara yang sudah ada.
+Perbarui properti langganan acara Kisi Acara. Hal ini dapat digunakan untuk memperbarui filter, tujuan, atau label langganan acara yang sudah ada.
 
 ## EXAMPLES
 
@@ -62,21 +62,21 @@ Perbarui properti langganan acara Kisi Acara. Ini dapat digunakan untuk memperba
 PS C:\> Update-AzureRmEventGridSubscription -EventSubscriptionName ES1 -TopicName Topic1 -ResourceGroup MyResourceGroupName -Endpoint https://requestb.in/1kxxoui1
 ```
 
-Memperbarui titik akhir langganan acara \`ES1 untuk topik Topic1 \`\` di grup\` sumber daya \`MyResourceGroupName\` untuk\`https://requestb.in/1kxxoui1\`
+Memperbarui titik akhir langganan acara ES1\` untuk topik \`Topik1\` dalam grup \`sumber daya MyResourceGroupName\` menjadi \`\`https://requestb.in/1kxxoui1\`
 
 ### Contoh 2
 ```
 PS C:\> Get-AzureRmEventGridSubscription -EventSubscriptionName ES1 -TopicName Topic1 -ResourceGroup MyResourceGroupName | Update-AzureRmEventGridSubscription -Endpoint https://requestb.in/1kxxoui1
 ```
 
-Memperbarui titik akhir langganan acara \`ES1 untuk topik Topic1 \`\` di grup\` sumber daya \`MyResourceGroupName\` untuk\`https://requestb.in/1kxxoui1\`
+Memperbarui titik akhir langganan acara ES1\` untuk topik \`Topik1\` dalam grup \`sumber daya MyResourceGroupName\` menjadi \`\`https://requestb.in/1kxxoui1\`
 
 ### Contoh 3
 ```
 PS C:\> Update-AzureRmEventGridSubscription -EventSubscriptionName ES1 -ResourceId "/subscriptions/55f3dcd4-cac7-43b4-990b-a139d62a1eb2/resourceGroups/TestRG/providers/Microsoft.EventHub/namespaces/ContosoNamespace" -Endpoint https://requestb.in/1kxxoui1 -SubjectEndsWith "jpg"
 ```
 
-Memperbarui properti langganan acara ES1\` untuk ruang nama EventHub ContosoNamespace \`https://requestb.in/1kxxoui1\dengan titik akhir baru sebagai ' dan filter SubjectEndsWith baru sebagai \`jpg \`\`
+Memperbarui properti langganan \`acara ES1\` untuk ruang nama EventHub ContosoNamespace dengan titik akhir baru sebagaihttps://requestb.in/1kxxoui1\\` ' dan SubjectEndsWith filter baru sebagai \`jpg\`
 
 ### Contoh 4
 ```
@@ -84,12 +84,12 @@ PS C:\> $labels = "Finance", "HR"
 PS C:\> Update-AzureRmEventGridSubscription -EventSubscriptionName ES1 -ResourceGroup MyResourceGroupName -Label $labels
 ```
 
-Memperbarui properti ES1\` langganan kejadian \`untuk grup sumber daya \`MyResourceGroupName\` dengan label baru $labels.
+Memperbarui properti langganan \`acara ES1\` untuk grup \`sumber daya MyResourceGroupName\` dengan label baru $labels.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 
 ### -Titik akhir
 Titik akhir tujuan langganan acara.
-Ini dapat menjadi URL webhook atau ID sumber daya Azure dari EventHub.
+Ini bisa berupa URL webhook atau ID sumber daya Azure dari EventHub.
 
 ```yaml
 Type: System.String
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 
 ### -EndpointType
 Tipe Titik Akhir.
-Ini dapat menjadi webhook atau eventhub
+Ini bisa berupa webhook atau eventhub
 
 ```yaml
 Type: System.String
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya tempat langganan kejadian dibuat.
+Pengidentifikasi sumber daya tempat langganan acara dibuat.
 
 ```yaml
 Type: System.String
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubjectEndsWith
-Filter yang menentukan bahwa hanya kejadian yang cocok dengan akhiran subjek yang ditentukan yang akan disertakan.
+Filter yang menentukan bahwa hanya kejadian yang cocok dengan akhiran subjek tertentu yang akan disertakan.
 Jika tidak ditentukan, kejadian dengan semua akhiran subjek akan disertakan.
 
 ```yaml
@@ -271,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -TopicName
-Nama topik tempat langganan acara akan dibuat.
+Nama topik tempat langganan acara harus dibuat.
 
 ```yaml
 Type: System.String
@@ -286,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -302,7 +302,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -317,7 +317,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

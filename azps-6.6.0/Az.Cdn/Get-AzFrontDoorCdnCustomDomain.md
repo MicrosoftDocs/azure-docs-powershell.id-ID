@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzFrontDoorCdnCustomDomain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzFrontDoorCdnCustomDomain.md
 ms.openlocfilehash: 5e99fc9f72070f461085e8c01e3549677dd01617
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139944186"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142324709"
 ---
 # Get-AzFrontDoorCdnCustomDomain
 
@@ -18,7 +18,7 @@ ms.locfileid: "139944186"
 Mendapatkan domain kustom.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/get-azfrontdoorcdncustomdomain) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cdn/get-azfrontdoorcdncustomdomain) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,7 +55,7 @@ Mendapatkan domain kustom.
 ## PARAMETERS
 
 ### -CustomDomainName
-Nama domain kustom Azure Front Pintu.
+Nama domain kustom Azure Front Door.
 
 ```yaml
 Type: String
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Objek profil Azure Front Pintu.
+Objek profil Pintu Depan Azure.
 
 ```yaml
 Type: PSAfdProfile
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProfileName
-Nama profil Pintu Depan Azure.
+Nama profil Azure Front Door.
 
 ```yaml
 Type: String
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

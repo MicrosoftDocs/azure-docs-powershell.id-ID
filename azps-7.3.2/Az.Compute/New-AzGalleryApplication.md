@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azga
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzGalleryApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzGalleryApplication.md
-ms.openlocfilehash: 450e8b62fe03753def07c833f4a80aa1f0fdc7d8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3c9fb08c5e8170faaef92f13a232b04059a790e2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140382081"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142348000"
 ---
 # New-AzGalleryApplication
 
 ## SYNOPSIS
-Buat atau perbarui galeri Definisi Aplikasi.
+Membuat atau memperbarui Galeri Definisi Aplikasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azgalleryapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ New-AzGalleryApplication -GalleryName <String> -Name <String> -ResourceGroupName
 ```
 
 ## DESCRIPTION
-Buat atau perbarui galeri Definisi Aplikasi.
+Membuat atau memperbarui Galeri Definisi Aplikasi.
 
 ## EXAMPLES
 
-### Contoh 1: Buat aplikasi galeri 
+### Contoh 1: Membuat aplikasi galeri 
 ```powershell
 New-AzGalleryApplication -ResourceGroupName $rgName -Location EastUS -GalleryName $galleryName -Name $name -SupportedOSType Windows
 
@@ -71,8 +74,8 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Deskripsi dari galeri sumber daya Definisi Aplikasi.
-Properti ini dapat diketahui.
+Deskripsi sumber daya Definisi Aplikasi galeri ini.
+Properti ini dapat diperbarui.
 
 ```yaml
 Type: System.String
@@ -117,8 +120,8 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Definisi Aplikasi galeri yang akan dibuat atau diperbarui.
-Karakter yang diperbolehkan adalah alfabet dan angka dengan titik, garis putus-putus, dan titik yang diperbolehkan di tengah.
+Nama Galeri Definisi Aplikasi yang akan dibuat atau diperbarui.
+Karakter yang diperbolehkan adalah abjad dan angka dengan titik-titik, garis putus-putus, dan titik yang diperbolehkan di tengah.
 Panjang maksimum adalah 80 karakter.
 
 ```yaml
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,8 +167,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -180,10 +183,10 @@ Accept wildcard characters: False
 ```
 
 ### -SupportedOSType
-Properti ini memungkinkan Anda menentukan tipe OS yang didukung untuk aplikasi yang digunakan.
+Properti ini memungkinkan Anda menentukan tipe OS yang didukung untuk aplikasi yang dibuat.
 
 
- Nilai yang mungkin adalah:
+ Nilai yang memungkinkan adalah:
 
  **Windows**
 
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

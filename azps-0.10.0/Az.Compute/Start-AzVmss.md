@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Start-AzVmss.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Start-AzVmss.md
 ms.openlocfilehash: d3677191bb3a196b97dcb8ff6c5b62b4aafd3a8b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424077"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142351241"
 ---
 # Start-AzVmss
 
 ## SYNOPSIS
-Memulai VMSS atau kumpulan komputer virtual dalam VMSS.
+Memulai VMSS atau sekumpulan mesin virtual dalam VMSS.
 
 ## SYNTAX
 
@@ -26,29 +26,29 @@ Start-AzVmss [-ResourceGroupName] <String> [-VMScaleSetName] <String> [[-Instanc
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzVmss** memulai semua mesin virtual dalam Virtual Machine Scale Set (VMSS) atau kumpulan mesin virtual.
-Anda dapat menggunakan parameter *InstanceId* untuk memilih satu set mesin virtual.
+Cmdlet **Start-AzVmss** memulai semua mesin virtual dalam Virtual Machine Scale Set (VMSS) atau sekumpulan mesin virtual.
+Anda dapat menggunakan parameter *InstanceId* untuk memilih sekumpulan mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Memulai kumpulan komputer virtual tertentu dalam VMSS
+### Contoh 1: Memulai sekumpulan mesin virtual tertentu dalam VMSS
 ```
 PS C:\> Start-AzVmss -ResourceGroupName "ContosOrg" -VMScaleSetName "ContosoVMSS"-InstanceId "0", "1"
 ```
 
-Perintah ini memulai satu set mesin virtual tertentu yang ditentukan oleh larik string ID instans yang termasuk dalam VMSS bernama ContosoVMSS.
+Perintah ini memulai sekumpulan mesin virtual tertentu yang ditentukan oleh array string ID instans yang termasuk dalam VMSS bernama ContosoVMSS.
 
-### Contoh 2: Memulai semua mesin virtual dalam VMSS
+### Contoh 2: Mulai semua mesin virtual dalam VMSS
 ```
 PS C:\> Start-AzVmss -ResourceGroupName "ContosOrg" -VMScaleSetName "ContosoVMSS"
 ```
 
-Perintah ini memulai semua mesin virtual yang termasuk dalam VMSS bernama ContosoVMSS.
+Perintah ini memulai semua mesin virtual milik VMSS bernama ContosoVMSS.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
 
 ```yaml
 Type: SwitchParameter
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceId
-Menentukan, sebagai array string, ID atau ID contoh yang dimulai cmdlet.
+Menentukan, sebagai array string, ID atau ID instans yang cmdlet mulai.
 Misalnya: `-InstanceId "0", "3"`
 
 ```yaml
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMScaleSetName
-Menentukan nama VMSS yang memulai mesin virtual ini.
+Menentukan nama VMSS yang cmdlet ini memulai mesin virtual.
 
 ```yaml
 Type: String
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -154,11 +154,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
@@ -174,14 +174,14 @@ Cmdlet ini tidak menghasilkan output apa pun.
 
 [New-AzVmss](./New-AzVmss.md)
 
-[Remove-AzVmss](./Remove-AzVmss.md)
+[Hapus-AzVms](./Remove-AzVmss.md)
 
-[Mulai Ulang AzVmss](./Restart-AzVmss.md)
+[Mulai ulang-AzVms](./Restart-AzVmss.md)
 
-[Set-AzVmss](./Set-AzVmss.md)
+[Set-AzVms](./Set-AzVmss.md)
 
 [Stop-AzVmss](./Stop-AzVmss.md)
 
-[Update-AzVmss](./Update-AzVmss.md)
+[Pembaruan-AzVms](./Update-AzVmss.md)
 
 

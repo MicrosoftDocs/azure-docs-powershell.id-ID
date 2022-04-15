@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Websites/Websites/help/Stop-AzWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Websites/Websites/help/Stop-AzWebApp.md
 ms.openlocfilehash: 073c98abe9db8b8a8d52c6d9bb06e64b028d379b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423971"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142327744"
 ---
 # Stop-AzWebApp
 
 ## SYNOPSIS
-Menghentikan Aplikasi Azure Web.
+Menghentikan Azure Web App.
 
 ## SYNTAX
 
@@ -36,17 +36,17 @@ Cmdlet **Stop-AzWebApp** menghentikan Azure Web App.
 
 ## EXAMPLES
 
-### Contoh 1: Menghentikan Web App
+### Contoh 1: Menghentikan Aplikasi Web
 ```
 PS C:\>Stop-AzWebApp -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp"
 ```
 
-Perintah ini menghentikan Aplikasi Web bernama ContosoWebApp yang dimiliki oleh grup sumber daya yang bernama Default-Web-WestUS.
+Perintah ini menghentikan Aplikasi Web bernama ContosoWebApp yang termasuk dalam grup sumber daya bernama Default-Web-WestUS.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -123,9 +123,9 @@ Parameter 'WebApp' menerima nilai tipe 'Situs' dari saluran
 
 [New-AzWebApp](./New-AzWebApp.md)
 
-[Remove-AzWebApp](./Remove-AzWebApp.md)
+[Hapus-AzWebApp](./Remove-AzWebApp.md)
 
-[Restart-AzWebApp](./Restart-AzWebApp.md)
+[Mulai ulang-AzWebApp](./Restart-AzWebApp.md)
 
 [Start-AzWebApp](./Start-AzWebApp.md)
 

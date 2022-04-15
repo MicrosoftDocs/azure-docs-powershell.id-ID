@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Get-AzureRmVMUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Get-AzureRmVMUsage.md
 ms.openlocfilehash: 22f77bfc5802527103dd0e391a11e16833696abd
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "132415418"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142358963"
 ---
 # Get-AzureRmVMUsage
 
 ## SYNOPSIS
-Dapatkan penggunaan jumlah inti mesin virtual untuk suatu lokasi.
+Mendapatkan penggunaan hitungan inti mesin virtual untuk lokasi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,21 +27,21 @@ Get-AzureRmVMUsage [-Location] <String> [-DefaultProfile <IAzureContextContainer
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmVMUsage** mendapatkan penggunaan jumlah inti mesin virtual untuk suatu lokasi.
+Cmdlet **Get-AzureRmVMUsage** mendapatkan penggunaan hitungan inti mesin virtual untuk lokasi.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan penggunaan jumlah inti untuk suatu lokasi
+### Contoh 1: Dapatkan penggunaan hitungan inti untuk lokasi
 ```
 PS C:\> Get-AzureRmVMUsage -Location "Central US"
 ```
 
-Perintah ini akan menggunakan jumlah inti mesin virtual untuk lokasi AS Pusat.
+Perintah ini mendapatkan penggunaan hitungan inti mesin virtual untuk lokasi As Tengah.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -56,7 +56,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi di mana cmdlet ini mendapatkan penggunaan jumlah inti mesin virtual.
+Menentukan lokasi di mana cmdlet ini mendapatkan penggunaan hitungan inti mesin virtual.
 
 ```yaml
 Type: System.String
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

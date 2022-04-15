@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzA
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzAllowedConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzAllowedConnection.md
-ms.openlocfilehash: 77512879992c7f7570968831aa7938c6a673811f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 4c58452cf4b2fb2d7dce27a4c46f5d3aa5ce55cc
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140401223"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142341359"
 ---
 # Get-AzAllowedConnection
 
 ## SYNOPSIS
 Digunakan untuk menampilkan lalu lintas yang diperbolehkan antar sumber daya untuk langganan
 
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azallowedconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzAllowedConnection -ResourceId <String> [-DefaultProfile <IAzureContextCont
 ```
 
 ## DESCRIPTION
-Mendapatkan daftar semua lalu lintas yang memungkinkan antara sumber daya untuk langganan dan lokasi, berdasarkan tipe koneksi.
+Mendapatkan daftar semua kemungkinan lalu lintas antara sumber daya untuk langganan dan lokasi, berdasarkan tipe koneksi.
 
 ## EXAMPLES
 
@@ -62,7 +65,7 @@ CalculatedDateTime: 03-Jun-20 3:03:48 PM
 ConnectableResources:   /subscriptions/3eeab341-f466-499c-a8be-85427e154baf7612f869/resourceGroups/myService1/providers/Microsoft.Compute/virtualMachines/myvm
 ```
 
-Mendapatkan daftar semua lalu lintas yang memungkinkan antara sumber daya untuk langganan dan lokasi, berdasarkan tipe koneksi.
+Mendapatkan daftar semua kemungkinan lalu lintas antara sumber daya untuk langganan dan lokasi, berdasarkan tipe koneksi.
 
 ## PARAMETERS
 
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya keamanan yang ingin Anda perintahkan.
+ID sumber daya keamanan yang ingin Anda gunakan untuk meminta perintah.
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

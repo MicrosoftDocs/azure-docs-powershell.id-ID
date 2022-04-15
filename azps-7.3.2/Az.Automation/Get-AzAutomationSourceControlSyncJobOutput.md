@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationSourceControlSyncJobOutput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationSourceControlSyncJobOutput.md
-ms.openlocfilehash: ec5c6fed2c0e84afaea51fca474189c69a650dbb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5aee6a9103a1c9f96621273bcf412b7458558573
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140202870"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142349530"
 ---
 # Get-AzAutomationSourceControlSyncJobOutput
 
 ## SYNOPSIS
-Mendapatkan output pekerjaan sinkronisasi kontrol sumber Otomatisasi Azure.
+Mendapatkan output dari pekerjaan sinkronisasi kontrol sumber Azure Automation.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationsourcecontrolsyncjoboutput) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzAutomationSourceControlSyncJobOutput -SourceControlName <String> -JobId <G
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzAutomationSourceControlSyncJobOutput** mendapatkan output untuk pekerjaan sinkronisasi kontrol sumber Otomatisasi Azure.
+Cmdlet **Get-AzAutomationSourceControlSyncJobOutput** mendapatkan output untuk pekerjaan sinkronisasi kontrol sumber Azure Automation.
 
 ## EXAMPLES
 
@@ -153,8 +156,8 @@ Accept wildcard characters: False
 ```
 
 ### -Stream
-Tipe aliran.
-Default untuk Semua.
+Tipe streaming.
+Defaults to Any.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Automation.Common.SourceControlSyncJobStreamType
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -StreamId
-The stream id.
+Id streaming.
 
 ```yaml
 Type: System.String
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

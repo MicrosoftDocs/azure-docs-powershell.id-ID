@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-aza
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzAppServiceEnvironmentInboundServices.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzAppServiceEnvironmentInboundServices.md
-ms.openlocfilehash: d405938c7bdc342a366e1f396dedabad2805857c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 87c0e7cc1982d09e5d70ac0021fe5b202fd28ea5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140182527"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142394729"
 ---
 # New-AzAppServiceEnvironmentInboundServices
 
 ## SYNOPSIS
-Membuat layanan masuk untuk Lingkungan Layanan Aplikasi. Untuk ASEv2 ILB, ini akan membuat Zona DNS Privat Azure dan catatan untuk di memetakan ke IP internal. Untuk ASEv3, selain itu, pastikan subnet memiliki Kebijakan Jaringan yang dinonaktifkan dan akan membuat titik akhir privat.
+Membuat layanan masuk untuk Lingkungan App Service. Untuk ASEv2 ILB, tindakan ini akan membuat Azure Private DNS Zone dan rekaman untuk dipetakan ke IP internal. Untuk ASEv3, subnet akan dinonaktifkan dan akan membuat titik akhir privat.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/new-azappserviceenvironmentinboundservices) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,33 +36,33 @@ New-AzAppServiceEnvironmentInboundServices [-ResourceGroupName] <String> [-Name]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzAppServiceEnvironmentInboundServices** membuat layanan masuk untuk Lingkungan Layanan Aplikasi.
+Cmdlet **New-AzAppServiceEnvironmentInboundServices** menciptakan layanan masuk untuk Lingkungan App Service.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Zona DNS Privat dan rekaman untuk ASEv2
+### Contoh 1: Membuat Zona DNS Pribadi dan catatan untuk ASEv2
 ```powershell
 PS C:\> New-AzAppServiceEnvironmentInboundServices -ResourceGroupName AseResourceGroup -Name AseV2Name
 -VirtualNetworkName MyVirtualNetwork -SubnetName InboundSubnet
 ```
 
-Membuat Zona DNS Privat dan catatan untuk ASEv2
+Membuat Zona DNS Pribadi dan catatan untuk ASEv2
 
-### Contoh 2: Buat titik akhir privat, Zona DNS Privat dan rekaman untuk ASEv3
+### Contoh 2: Membuat titik akhir privat, Zona DNS Pribadi dan catatan untuk ASEv3
 ```powershell
 PS C:\> New-AzAppServiceEnvironmentInboundServices -ResourceGroupName AseResourceGroup -Name AseV2Name
 -VirtualNetworkName MyVirtualNetwork -SubnetName InboundSubnet
 ```
 
-Membuat titik akhir privat, Zona DNS Privat dan rekaman untuk ASEv3
+Membuat titik akhir pribadi, Zona DNS Pribadi, dan catatan untuk ASEv3
 
-### Contoh 3: Buat titik akhir privat untuk ASEv3
+### Contoh 3: Membuat titik akhir privat untuk ASEv3
 ```powershell
 PS C:\> New-AzAppServiceEnvironmentInboundServices -ResourceGroupName AseResourceGroup -Name AseV2Name
 -VirtualNetworkName MyVirtualNetwork -SubnetName InboundSubnet -SkipDns
 ```
 
-Buat titik akhir privat untuk AsEv3
+Membuat titik akhir privat untuk ASEv3
 
 ## PARAMETERS
 
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Status pengembalian.
+Mengembalikan status.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipDns
-Jangan membuat Zona DNS Privat Azure dan catatan.
+Jangan buat Azure Private DNS Zone dan rekaman.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetId
-Subnet id.
+Id subnet.
 
 ```yaml
 Type: System.String
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetName
-Nama subnet. Digunakan dalam kombinasi dengan -VirtualNetworkName dan harus dalam grup sumber daya yang sama dengan ASE. Jika tidak, gunakan -SubnetId
+Nama subnet. Digunakan dalam kombinasi dengan -VirtualNetworkName dan harus berada dalam grup sumber daya yang sama dengan ASE. Jika tidak, gunakan -SubnetId
 
 ```yaml
 Type: System.String
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -215,11 +218,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

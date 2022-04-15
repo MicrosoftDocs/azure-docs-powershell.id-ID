@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.iothu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/IotHub/Commands.IotHub/help/Get-AzureRmIotHubEventHubConsumerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/IotHub/Commands.IotHub/help/Get-AzureRmIotHubEventHubConsumerGroup.md
-ms.openlocfilehash: 79d2d8dd87ae1a7d70fbaa750e8b6505874f15b4193f051a3c997f3ec453b267
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 507787df7215efcd1b275f481b638aa80f979498
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140864378"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142356844"
 ---
 # Get-AzureRmIotHubEventHubConsumerGroup
 
 ## SYNOPSIS
-Mendapatkan semua grup konsumen eventhub.
+Mendapatkan semua grup pelanggan eventhub.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,28 +27,28 @@ Get-AzureRmIotHubEventHubConsumerGroup [-ResourceGroupName] <String> [-Name] <St
 ```
 
 ## DESCRIPTION
-Mendapatkan semua grup konsumen eventhub untuk EventHubs lain yang digunakan oleh IotHub.
+Mendapatkan semua grup pelanggan eventhub untuk Berbagai EventHubs yang digunakan oleh IotHub.
 
 ## EXAMPLES
 
-### Contoh 1 Mendapatkan semua grup konsumen eventhub untuk eventhub telemetri
+### Contoh 1 Mendapatkan semua grup pelanggan genap untuk eventhub telemetri
 ```
 PS C:\> Get-AzureRmIotHubEventHubConsumerGroup -ResourceGroupName "myresourcegroup" -Name "myiothub" -EventHubEndpointName "events"
 ```
 
-Mendapatkan semua grup konsumen eventhub untuk eventhub telemetri untuk iothub yang bernama myiothub
+Mendapatkan semua grup pelanggan eventhub untuk eventhub telemetri untuk iothub bernama myiothub
 
-### Contoh 2 Mendapatkan semua grup konsumen eventhub untuk operationsmonitoring eventhub
+### Contoh 2 Mendapatkan semua grup konsumen eventhub untuk eventhub operationsmonitoring
 ```
 PS C:\> Get-AzureRmIotHubEventHubConsumerGroup -ResourceGroupName "myresourcegroup" -Name "myiothub" -EventHubEndpointName "operationsMonitoringEvents"
 ```
 
-Mendapatkan semua grup konsumen eventhub untuk operasiMonitoringEvents eventhub untuk iothub yang bernama myiothub
+Mendapatkan semua grup pelanggan eventhub untuk operasiMonitoringEvents eventhub untuk iothub bernama myiothub
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventHubEndpointName
-Nama titik akhir Hub Acara.
+Nama titik akhir Hub Kejadian.
 Kemungkinan kejadian nilai, operasiMonitoringEvents
 
 ```yaml
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

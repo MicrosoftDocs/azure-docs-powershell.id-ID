@@ -4,11 +4,11 @@ Module Name: Azs.Compute.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.compute.admin/stop-azsdiskmigrationjob
 schema: 2.0.0
 ms.openlocfilehash: 5ace755f0c30a60d081aba685a43f831aab3e223
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136580045"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142352141"
 ---
 # Stop-AzsDiskMigrationJob
 
@@ -32,7 +32,7 @@ Membatalkan pekerjaan migrasi disk.
 Stop-AzsDiskMigrationJob -Name TestJob
 ```
 
-Waktu Pembuatan : 26/2/2020 11:06:40 Am EndTime : 26/2/2020 11:07:24 AM ID : /subscriptions/627fecef-520e-4c18-94e0-8f0665ba86a7/providers/Microsoft.Compute.Admin/locations/redmond/diskmigrati onjobs/TestJob Location : redmond MigrationId : TestJob Name : redmond/TestJob StartTime : 26/2/2020 11:06:40 AM Status : Canceled Subtask : {47774498-6bc7-4ce2-98ca-738739ded2fc, b09ac623-f71d-480c-98bc-88fa3f603f2c} TargetShare : \\ SU1FileServer.s31r1801.masd.stbtest.microsoft.com\SU1_ObjStore_4 Waktu : Microsoft.Compute.Admin/locations/diskmigrationjobs
+CreationTime : 26/2/2020 11:06:40 AM EndTime : 2/26/2020 11:07:24 AM Id : //subscriptions/627fecef-520e-4c18-94e0-8f0665ba86a7/providers/Microsoft.Compute.Admin/locations/redmond/diskmigrati onjobs/TestJob Lokasi : redmond MigrationId : TestJob Name : redmond/TestJob StartTime : 2/2/2020 11:206:40 Status : Subtugas Dibatalkan : {47774498-6bc7-4ce2-98ca-738739ded2fc, b09ac623-f71d-480c-98bc-88fa3f603f2c} TargetShare : \\ SU1FileServer.s31r1801.masd.stbtest.microsoft.com\SU1_ObjStore_4 Tipe : Microsoft.Compute.Admin/locations/diskmigrationjobs
 
 ## PARAMETERS
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama guid pekerjaan migrasi.
+Nama panduan pekerjaan migrasi.
 
 ```yaml
 Type: System.String
@@ -82,8 +82,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

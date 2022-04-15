@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azau
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzAutoscaleHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzAutoscaleHistory.md
-ms.openlocfilehash: ce3a1a2a72922c5fb7867064ddf7d7bc5577113d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 68ebfd29cbcf80e6ee22c5b578e3c24f17e2da71
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140401878"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142291381"
 ---
 # Get-AzAutoscaleHistory
 
 ## SYNOPSIS
-Mendapatkan riwayat Skala Otomatis.
+Mendapatkan riwayat Autoscale.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azautoscalehistory) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,16 +29,16 @@ Get-AzAutoscaleHistory [-ResourceId <String>] [-StartTime <DateTime>] [-EndTime 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzAutoscaleHistory** mendapatkan riwayat acara yang terkait dengan pengaturan Skala Otomatis.
+Cmdlet **Get-AzAutoscaleHistory** mendapatkan riwayat kejadian yang terkait dengan pengaturan Skala Otomatis.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua acara yang terkait dengan langganan
+### Contoh 1: Dapatkan semua acara yang terkait dengan langganan
 ```
 PS C:\>Get-AzAutoscaleHistory -StartTime 2015-02-09T18:35:00 -EndTime 2015-02-09T18:40:00 -DetailedOutput
 ```
 
-Perintah ini akan mendapatkan semua acara terkait Skala Otomatis yang terkait dengan langganan saat ini.
+Perintah ini mendapatkan semua kejadian terkait Skala Otomatis yang terkait dengan langganan saat ini.
 
 ### Contoh 2: GetAutoscaleHistory untuk sumber daya tertentu
 ```
@@ -174,11 +177,11 @@ SubscriptionId       : b93fb07a-6f93-30be-bf3e-4f0deca15f4f
 SubStatus            :
 ```
 
-Perintah ini mendapatkan semua kejadian terkait SkalaOtomatis yang terkait dengan sumber daya tertentu yang diidentifikasi dengan ID sumber daya (pada dasarnya, ResourceUri).
+Perintah ini mendapatkan semua kejadian terkait skala otomatis yang terkait dengan sumber daya tertentu yang diidentifikasi oleh ID sumber daya (pada dasarnya, ResourceUri).
 
 ## PARAMETERS
 
-### -Caller
+### -Penelepon
 Menentukan penelepon.
 
 ```yaml
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -208,9 +211,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DetailOutput
-Menunjukkan bahwa operasi ini menyertakan output detail.
-Jika Anda tidak menentukan parameter ini, output diringkas.
+### -DetailedOutput
+Menunjukkan bahwa operasi ini menyertakan output mendetail.
+Jika Anda tidak menentukan parameter ini, output akan diringkas.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -241,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan ID sumber daya yang dikaitkan dengan pengaturan skala otomatis.
+Menentukan ID sumber daya tempat pengaturan skala otomatis dikaitkan.
 
 ```yaml
 Type: System.String
@@ -275,7 +278,7 @@ Accept wildcard characters: False
 ### -Status
 Menentukan filter menurut status.
 Parameter ini bersifat opsional.
-Kesalahannya adalah string kosong (yaitu tidak ada filter)
+Kesalahan adalah string kosong (misalnya tidak ada filter)
 
 ```yaml
 Type: System.String
@@ -290,13 +293,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.DateTime, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.DateTime, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### System.Management.Automation.SwitchParameter
 
