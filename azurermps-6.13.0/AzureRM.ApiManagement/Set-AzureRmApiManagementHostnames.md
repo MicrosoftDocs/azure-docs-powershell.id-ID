@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Set-AzureRmApiManagementHostnames.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Set-AzureRmApiManagementHostnames.md
 ms.openlocfilehash: 7093b51ffee3f0ad635da7a6c0b63d26e93e5f2a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132414453"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142390874"
 ---
 # Set-AzureRmApiManagementHostnames
 
 ## SYNOPSIS
-Mengatur konfigurasi nama host kustom untuk proksi atau portal layanan Manajemen API.
+Mengatur konfigurasi nama host kustom untuk proksi atau portal layanan API Management.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -37,11 +37,11 @@ Set-AzureRmApiManagementHostnames -ApiManagement <PsApiManagement> [-PassThru]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmApiManagementHostnames** menerapkan konfigurasi nama host kustom untuk proksi atau portal layanan Manajemen API.
+Cmdlet **Set-AzureRmApiManagementHostnames** menerapkan konfigurasi nama host kustom untuk proksi layanan atau portal API Management.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur konfigurasi hostname kustom untuk proksi dan portal
+### Contoh 1: Mengatur konfigurasi nama host kustom untuk proksi dan portal
 ```
 PS C:\>Set-AzureRmApiManagementHostnames -Name ContosoApi -ResourceGroupName Contoso -PortalHostnameConfiguration $portalHostnameConf -ProxyHostnameConfiguration $proxyHostnameConf
 ```
@@ -58,12 +58,12 @@ PS C:\> Set-AzureRmApiManagementHostnames -Name "ContosoApi" -ResourceGroupName 
 ```
 
 Contoh ini mengonfigurasi nama host kustom untuk proksi dan portal.
-Anda harus mengimpor sertifikat terkait lalu menerapkan nama host kustom.
+Anda perlu mengimpor sertifikat terkait lalu menerapkan nama host kustom.
 
 ## PARAMETERS
 
 ### -ApiManagement
-Menentukan instans **PsApiManagement** bahwa cmdlet ini mendapatkan parameter *PortalHostnameConfiguration* dan *ProxyHostnameConfiguration* .
+Menentukan **instans PsApiManagement** yang cmdlet ini mendapatkan parameter *PortalHostnameConfiguration* dan *ProxyHostnameConfiguration* .
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama instans Manajemen API.
+Menentukan nama instans API Management.
 
 ```yaml
 Type: System.String
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 
 ### -ProxyHostnameConfiguration
 Menentukan konfigurasi nama host proksi kustom.
-Memberikan $null mengatur nama host default.
+Passing $null mengatur nama host default.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementHostnameConfiguration
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana instans Manajemen API ada.
+Menentukan nama grup sumber daya di mana instans API Management ada.
 
 ```yaml
 Type: System.String
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -190,8 +190,8 @@ Parameter: ApiManagement (ByValue)
 
 ## RELATED LINKS
 
-[Import-AzureRmApiManagementHostnameCertificate](./Import-AzureRmApiManagementHostnameCertificate.md)
+[Impor-AzureRmApiManagementHostnameCertificate](./Import-AzureRmApiManagementHostnameCertificate.md)
 
-[New-AzureRmApiManagementHostnameConfiguration](./New-AzureRmApiManagementHostnameConfiguration.md)
+[Baru-AzureRmApiManagementHostnameConfiguration](./New-AzureRmApiManagementHostnameConfiguration.md)
 
 

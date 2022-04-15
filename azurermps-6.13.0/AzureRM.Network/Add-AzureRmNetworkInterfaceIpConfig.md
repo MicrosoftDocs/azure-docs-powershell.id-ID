@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Add-AzureRmNetworkInterfaceIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Add-AzureRmNetworkInterfaceIpConfig.md
 ms.openlocfilehash: 46c08913b36958bb9cd0bd75393b87ed887a0f1d
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422531"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142386461"
 ---
 # Add-AzureRmNetworkInterfaceIpConfig
 
@@ -51,7 +51,7 @@ Cmdlet **Add-AzureRmNetworkInterfaceIpConfig** menambahkan konfigurasi IP antarm
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan konfigurasi IP baru dengan grup keamanan aplikasi
+### Contoh 1: Menambahkan konfigurasi IP baru dengan grup keamanan aplikasi
 ```
 $subnet = New-AzureRmVirtualNetworkSubnetConfig -Name MySubnet -AddressPrefix 10.0.1.0/24
 $vnet = New-AzureRmvirtualNetwork -Name MyVNET -ResourceGroupName MyResourceGroup -Location "West US" -AddressPrefix 10.0.0.0/16 -Subnet $subnet
@@ -65,7 +65,7 @@ $nic | Set-AzureRmNetworkInterfaceIpConfig -Name $nic.IpConfigurations[0].Name -
 $nic | Add-AzureRmNetworkInterfaceIpConfig -Name MyNewIpConfig -Subnet $vnet.Subnets[0] -ApplicationSecurityGroup $asg  | Set-AzureRmNetworkInterface
 ```
 
-Dalam contoh ini, kami membuat antarmuka jaringan baru MyNetworkInterface yang dimiliki oleh subnet dalam jaringan virtual myVNET yang baru. Kami juga membuat grup keamanan aplikasi kosong MyASG untuk dikaitkan dengan konfigurasi IP di antarmuka jaringan. Setelah kedua objek dibuat, kami menautkan konfigurasi IP default ke objek MyASG. Pada akhirnya, kami membuat konfigurasi IP baru di antarmuka jaringan juga yang ditautkan ke objek grup keamanan aplikasi.
+Dalam contoh ini, kami membuat antarmuka jaringan baru MyNetworkInterface yang termasuk dalam subnet di jaringan virtual baru MyVNET. Kami juga membuat grup keamanan aplikasi kosong MyASG untuk mengaitkan dengan konfigurasi IP di antarmuka jaringan. Setelah kedua objek dibuat, kami menautkan konfigurasi IP default ke objek MyASG. Akhirnya, kami membuat konfigurasi IP baru di antarmuka jaringan yang juga terkait dengan objek grup keamanan aplikasi.
 
 ## PARAMETERS
 
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationSecurityGroup
-Menentukan kumpulan referensi grup keamanan aplikasi tempat konfigurasi IP antarmuka jaringan ini dimiliki.
+Menentukan kumpulan referensi grup keamanan aplikasi tempat konfigurasi IP antarmuka jaringan ini berada.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Network.Models.PSApplicationSecurityGroup]
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationSecurityGroupId
-Menentukan kumpulan referensi grup keamanan aplikasi tempat konfigurasi IP antarmuka jaringan ini dimiliki.
+Menentukan kumpulan referensi grup keamanan aplikasi tempat konfigurasi IP antarmuka jaringan ini berada.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerBackendAddressPool
-Menentukan kumpulan referensi kumpulan alamat backend penyeimbang muat tempat konfigurasi IP antarmuka jaringan ini berada.
+Menentukan kumpulan referensi kumpulan alamat backend load balancer tempat konfigurasi IP antarmuka jaringan ini berada.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Network.Models.PSBackendAddressPool]
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerBackendAddressPoolId
-Menentukan kumpulan referensi kumpulan alamat backend penyeimbang muat tempat konfigurasi IP antarmuka jaringan ini berada.
+Menentukan kumpulan referensi kumpulan alamat backend load balancer tempat konfigurasi IP antarmuka jaringan ini berada.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerInboundNatRule
-Menentukan kumpulan referensi aturan penyeimbang alamat jaringan masuk (NAT, Inbound Network Address Translation) yang digunakan untuk memasukkan konfigurasi IP antarmuka jaringan ini.
+Menentukan kumpulan referensi aturan terjemahan alamat jaringan masuk (NAT) penyeimbang muat tempat konfigurasi IP antarmuka jaringan ini berada.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Network.Models.PSInboundNatRule]
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerInboundNatRuleId
-Menentukan kumpulan referensi aturan NAT masuk untuk memasukkan konfigurasi IP antarmuka jaringan ini.
+Menentukan kumpulan referensi aturan NAT masuk penyeimbang muatan tempat konfigurasi IP antarmuka jaringan ini berada.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkInterface
-Menentukan objek **NetworkInterface.**
+Menentukan objek **NetworkInterface** .
 Cmdlet ini menambahkan konfigurasi IP antarmuka jaringan ke objek yang ditentukan parameter ini.
 
 ```yaml
@@ -235,7 +235,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Utama
+### -Primer
 ```yaml
 Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
@@ -283,7 +283,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddress
-Menentukan objek **PublicIPAddress.**
+Menentukan objek **PublicIPAddress** .
 Cmdlet ini membuat referensi ke Alamat IP publik untuk dikaitkan dengan konfigurasi IP antarmuka jaringan ini.
 
 ```yaml
@@ -314,8 +314,8 @@ Accept wildcard characters: False
 ```
 
 ### -Subnet
-Menentukan objek **Subnet.**
-Cmdlet ini membuat referensi ke subnet di mana konfigurasi IP antarmuka jaringan ini dibuat.
+Menentukan objek **Subnet** .
+Cmdlet ini membuat referensi ke subnet tempat konfigurasi IP antarmuka jaringan ini dibuat.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSSubnet
@@ -330,7 +330,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetId
-Cmdlet ini membuat referensi ke subnet di mana konfigurasi IP antarmuka jaringan ini dibuat.
+Cmdlet ini membuat referensi ke subnet tempat konfigurasi IP antarmuka jaringan ini dibuat.
 
 ```yaml
 Type: System.String
@@ -345,29 +345,29 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkInterface
 Parameter: NetworkInterface (ByValue)
 
-### System.Collections.Generic.List'1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Collections.Generic.List'1[[System.String, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSBackendAddressPool, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSBackendAddressPool, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=netral, PublicKeyToken=null]]
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSInboundNatRule, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSInboundNatRule, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=netral, PublicKeyToken=null]]
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayBackendAddressPool, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayBackendAddressPool, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=netral, PublicKeyToken=null]]
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSApplicationSecurityGroup, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSApplicationSecurityGroup, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=netral, PublicKeyToken=null]]
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkInterface
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, network, networking
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan
 
 ## RELATED LINKS
 
@@ -375,7 +375,7 @@ Parameter: NetworkInterface (ByValue)
 
 [New-AzureRmNetworkInterfaceIpConfig](./New-AzureRmNetworkInterfaceIpConfig.md)
 
-[Remove-AzureRmNetworkInterfaceIpConfig](./Remove-AzureRmNetworkInterfaceIpConfig.md)
+[Hapus-AzureRmNetworkInterfaceIpConfig](./Remove-AzureRmNetworkInterfaceIpConfig.md)
 
 [Set-AzureRmNetworkInterfaceIpConfig](./Set-AzureRmNetworkInterfaceIpConfig.md)
 

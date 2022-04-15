@@ -5,11 +5,11 @@ ms.assetid: BA40BD11-8167-48D7-AC71-72B2FD9924F2
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.resources/new-azurermpolicyassignment
 schema: 2.0.0
 ms.openlocfilehash: 6183d4b8da931836a1ec613c113b32c71871bbf2
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132429111"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142391813"
 ---
 # New-AzureRmPolicyAssignment
 
@@ -67,7 +67,7 @@ New-AzureRmPolicyAssignment -Name <String> -Scope <String> [-NotScope <String[]>
 
 ## DESCRIPTION
 Cmdlet **New-AzureRmPolicyAssignment** membuat penetapan kebijakan.
-Menentukan kebijakan dan lingkup.
+Tentukan kebijakan dan lingkup.
 
 ## EXAMPLES
 
@@ -78,11 +78,11 @@ PS C:\> $Policy = Get-AzureRmPolicyDefinition -Name 'VirtualMachinePolicy'
 PS C:\> New-AzureRmPolicyAssignment -Name 'VirtualMachinePolicyAssignment' -PolicyDefinition $Policy -Scope $ResourceGroup.ResourceId
 ```
 
-Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 dengan menggunakan cmdlet Get-AzureRMResourceGroup dan menyimpannya di $ResourceGroup sumber daya.
-Perintah kedua mendapatkan definisi kebijakan bernama VirtualMachinePolicy menggunakan cmdlet Get-AzureRmPolicyDefinition dan menyimpannya dalam $Policy variabel.
-Perintah terakhir menetapkan kebijakan dalam $Policy tingkat grup sumber daya yang diidentifikasi oleh properti **ResourceId** dari $ResourceGroup.
+Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 dengan menggunakan cmdlet Get-AzureRMResourceGroup dan menyimpannya dalam variabel $ResourceGroup.
+Perintah kedua mendapatkan definisi kebijakan bernama VirtualMachinePolicy dengan menggunakan cmdlet Get-AzureRmPolicyDefinition dan menyimpannya dalam variabel $Policy.
+Perintah akhir menetapkan kebijakan dalam $Policy pada tingkat grup sumber daya yang diidentifikasi oleh properti **ResourceId** $ResourceGroup.
 
-### Contoh 2: Penetapan kebijakan di tingkat grup sumber daya dengan objek parameter kebijakan
+### Contoh 2: Penetapan kebijakan pada tingkat grup sumber daya dengan objek parameter kebijakan
 ```
 PS C:\> $ResourceGroup = Get-AzureRmResourceGroup -Name 'ResourceGroup11'
 PS C:\> $Policy = Get-AzureRmPolicyDefinition -BuiltIn | Where-Object {$_.Properties.DisplayName -eq 'Allowed locations'}
@@ -91,17 +91,17 @@ PS C:\> $AllowedLocations = @{'listOfAllowedLocations'=($Locations.location)}
 PS C:\> New-AzureRmPolicyAssignment -Name 'RestrictLocationPolicyAssignment' -PolicyDefinition $Policy -Scope $ResourceGroup.ResourceId -PolicyParameterObject $AllowedLocations
 ```
 
-Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 dengan menggunakan cmdlet Get-AzureRMResourceGroup cmdlet.
-Perintah menyimpan objek tersebut dalam $ResourceGroup variabel.
-Perintah kedua mendapatkan definisi kebijakan bawaan untuk lokasi yang diperbolehkan menggunakan cmdlet Get-AzureRmPolicyDefinition cmdlet.
-Perintah menyimpan objek tersebut dalam $Policy variabel.
-Perintah ketiga dan keempat membuat objek yang berisi semua kawasan Azure dengan "timur" dalam namanya.
-Perintah menyimpan objek tersebut dalam $AllowedLocations variabel.
-Perintah terakhir menetapkan kebijakan dalam $Policy tingkat grup sumber daya menggunakan objek parameter kebijakan dalam $AllowedLocations.
-Properti **ResourceId** dari $ResourceGroup mengidentifikasi grup sumber daya.
+Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 menggunakan cmdlet Get-AzureRMResourceGroup.
+Perintah menyimpan objek tersebut dalam variabel $ResourceGroup.
+Perintah kedua mendapatkan definisi kebijakan bawaan untuk lokasi yang diperbolehkan dengan menggunakan cmdlet Get-AzureRmPolicyDefinition.
+Perintah menyimpan objek tersebut dalam variabel $Policy.
+Perintah ketiga dan keempat membuat objek yang berisi semua kawasan Azure dengan "timur" dalam nama.
+Perintah menyimpan objek tersebut dalam variabel $AllowedLocations.
+Perintah akhir menetapkan kebijakan dalam $Policy pada tingkat grup sumber daya menggunakan objek parameter kebijakan di $AllowedLocations.
+Properti **ResourceId** $ResourceGroup mengidentifikasi grup sumber daya.
 
-### Contoh 3: Penetapan kebijakan di tingkat grup sumber daya dengan file parameter kebijakan
-Buat file yang disebut _AllowedLocations.json_ di direktori kerja lokal dengan konten berikut.
+### Contoh 3: Penetapan kebijakan pada tingkat grup sumber daya dengan file parameter kebijakan
+Buat file yang disebut _AllowedLocations.json_ di direktori kerja lokal dengan konten berikut ini.
 
 ```
 {
@@ -121,9 +121,9 @@ PS C:\> $Policy = Get-AzureRmPolicyDefinition -BuiltIn | Where-Object {$_.Proper
 PS C:\> New-AzureRmPolicyAssignment -Name 'RestrictLocationPolicyAssignment' -PolicyDefinition $Policy -Scope $ResourceGroup.ResourceId -PolicyParameter .\AllowedLocations.json
 ```
 
-Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 dengan menggunakan cmdlet Get-AzureRMResourceGroup dan menyimpannya di $ResourceGroup sumber daya.
-Perintah kedua mendapatkan definisi kebijakan bawaan untuk lokasi yang diperbolehkan menggunakan cmdlet Get-AzureRmPolicyDefinition dan menyimpannya dalam $Policy variabel.
-Perintah terakhir menetapkan kebijakan dalam $Policy di grup sumber daya yang diidentifikasi dengan properti **ResourceId** $ResourceGroup menggunakan file parameter kebijakan AllowedLocations.json dari direktori kerja lokal.
+Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 dengan menggunakan cmdlet Get-AzureRMResourceGroup dan menyimpannya dalam variabel $ResourceGroup.
+Perintah kedua mendapatkan definisi kebijakan bawaan untuk lokasi yang diperbolehkan dengan menggunakan cmdlet Get-AzureRmPolicyDefinition dan menyimpannya dalam variabel $Policy.
+Perintah akhir menetapkan kebijakan dalam $Policy di grup sumber daya yang diidentifikasi oleh properti **ResourceId** dari $ResourceGroup menggunakan file parameter kebijakan AllowedLocations.json dari direktori kerja lokal.
 
 ### Contoh 4: Penetapan kebijakan dengan identitas terkelola
 ```
@@ -132,9 +132,9 @@ PS C:\> $Policy = Get-AzureRmPolicyDefinition -Name 'VirtualMachinePolicy'
 PS C:\> New-AzureRmPolicyAssignment -Name 'VirtualMachinePolicyAssignment' -PolicyDefinition $Policy -Scope $ResourceGroup.ResourceId -Location 'eastus' -AssignIdentity 
 ```
 
-Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 dengan menggunakan cmdlet Get-AzureRMResourceGroup dan menyimpannya di $ResourceGroup sumber daya.
-Perintah kedua mendapatkan definisi kebijakan bernama VirtualMachinePolicy menggunakan cmdlet Get-AzureRmPolicyDefinition dan menyimpannya dalam $Policy variabel.
-Perintah terakhir menetapkan kebijakan di $Policy ke grup sumber daya. Identitas terkelola secara otomatis dibuat dan ditetapkan untuk penetapan kebijakan.
+Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 dengan menggunakan cmdlet Get-AzureRMResourceGroup dan menyimpannya dalam variabel $ResourceGroup.
+Perintah kedua mendapatkan definisi kebijakan bernama VirtualMachinePolicy dengan menggunakan cmdlet Get-AzureRmPolicyDefinition dan menyimpannya dalam variabel $Policy.
+Perintah akhir menetapkan kebijakan dalam $Policy ke grup sumber daya. Identitas terkelola secara otomatis dibuat dan ditetapkan ke penetapan kebijakan.
 
 ## PARAMETERS
 
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignIdentity
-Buat dan tetapkan Identitas Azure Active Directory untuk penetapan kebijakan ini. Identitas akan digunakan saat menjalankan penyebaran untuk kebijakan 'deployIfNotExists'. Lokasi diperlukan saat menetapkan identitas.
+Membuat dan menetapkan identitas Azure Active Directory untuk penetapan kebijakan ini. Identitas akan digunakan saat menjalankan penyebaran untuk kebijakan 'deployIfNotExists'. Lokasi diperlukan saat menetapkan identitas.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -215,14 +215,14 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: System.Management.Automation.ActionPreference
@@ -297,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -NotScope
-The not scopes for policy assignment.
+Tidak ada lingkup untuk penetapan kebijakan.
 
 ```yaml
 Type: System.String[]
@@ -420,7 +420,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Mengindikasikan bahwa cmdlet ini mempertimbangkan versi API prari perilisan bila secara otomatis menentukan versi mana yang akan digunakan.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -435,8 +435,8 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Menentukan lingkup penetapan kebijakan.
-Misalnya, untuk menetapkan kebijakan ke grup sumber daya, tentukan hal berikut ini: `/subscriptions/` nama grup sumber daya ID `/resourcegroups/` langganan
+Menentukan lingkup untuk menetapkan kebijakan.
+Misalnya, untuk menetapkan kebijakan ke grup sumber daya, tentukan hal berikut: `/subscriptions/`nama grup IDresource`/resourcegroups/` langganan
 
 ```yaml
 Type: System.String
@@ -451,7 +451,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Tabel hash yang menyatakan properti SKU. Default untuk SKU Gratis dengan nilai: `@{Name = 'A0'; Tier = 'Free'}` . Untuk menggunakan SKU Standar, gunakan nilai: `@{Name = 'A1'; Tier = 'Standard'}` .
+Tabel hash yang mewakili properti SKU. Default ke SKU Gratis dengan nilai: `@{Name = 'A0'; Tier = 'Free'}`. Untuk menggunakan SKU Standar, gunakan nilai: `@{Name = 'A1'; Tier = 'Standard'}`.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -466,7 +466,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -480,7 +480,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmPolicyAssignment](./Get-AzureRmPolicyAssignment.md)
 
-[Remove-AzureRmPolicyAssignment](./Remove-AzureRmPolicyAssignment.md)
+[Hapus-AzureRmPolicyAssignment](./Remove-AzureRmPolicyAssignment.md)
 
 [Set-AzureRmPolicyAssignment](./Set-AzureRmPolicyAssignment.md)
 

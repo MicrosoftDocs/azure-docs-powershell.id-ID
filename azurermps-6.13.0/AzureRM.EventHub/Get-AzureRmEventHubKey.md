@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventHub/Commands.EventHub/help/Get-AzureRmEventHubKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventHub/Commands.EventHub/help/Get-AzureRmEventHubKey.md
 ms.openlocfilehash: c22bb41702bb4e338d0548be6c7544d597ef0230
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140854857"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142387865"
 ---
 # Get-AzureRmEventHubKey
 
 ## SYNOPSIS
-Dapatkan detail kunci utama dari aturan otorisasi Hub Kejadian yang ditentukan.
+Mendapatkan detail kunci utama dari aturan otorisasi Hub Kejadian yang ditentukan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,11 +40,11 @@ Get-AzureRmEventHubKey [-ResourceGroupName] <String> [-Namespace] <String> [-Ali
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzureRmEventHubKey mengembalikan detail string dan tombol koneksi Utama dan Sekunder dari aturan otorisasi NameSpace/Event Hub/Alias yang ditentukan.
+Cmdlet Get-AzureRmEventHubKey mengembalikan detail koneksi Utama dan Sekunder serta detail kunci aturan otorisasi NameSpace/Event Hubs/Alias yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1 - Kumpulan Nama
+### Contoh 1 - Ruang nama
 ```
 PS C:\> Get-AzureRmEventHubKey -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -AuthorizationRuleName MyAuthRuleName
 ```
@@ -54,14 +54,14 @@ PS C:\> Get-AzureRmEventHubKey -ResourceGroupName MyResourceGroupName -Namespace
 PS C:\> Get-AzureRmEventHubKey -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName -AuthorizationRuleName MyAuthRuleName
 ```
 
-Dapatkan detail string dan tombol koneksi Utama dan Sekunder untuk aturan otorisasi \`MyAuthRuleName\`.
+Mendapatkan detail kunci dan sambungan Utama dan Sekunder untuk aturan \`otorisasi MyAuthRuleName\`.
 
 ### Contoh 3 - Alias (Konfigurasi GeoRecovery)
 ```
 PS C:\> Get-AzureRmEventHubKey -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName -AliasName MyAliasName -Name MyAuthRuleName
 ```
 
-Mendapatkan detail string dan tombol koneksi Utama, Sekunder, AliasPrimary dan AliasSecstringry untuk aturan otorisasi \`MyAuthRuleName\`.
+Mendapatkan detail koneksi Primer, Sekunder, AliasPrimary dan AliasSecondary dan kunci untuk aturan \`otorisasi MyAuthRuleName\`.
 
 ## PARAMETERS
 
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

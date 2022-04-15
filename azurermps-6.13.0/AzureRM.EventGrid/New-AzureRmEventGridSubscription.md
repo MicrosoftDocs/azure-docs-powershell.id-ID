@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventGrid/Commands.EventGrid/help/New-AzureRmEventGridSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventGrid/Commands.EventGrid/help/New-AzureRmEventGridSubscription.md
 ms.openlocfilehash: ae88bb4458880b23e8e41ae9218f9c7a29a9897f
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140857247"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142387860"
 ---
 # New-AzureRmEventGridSubscription
 
 ## SYNOPSIS
-Membuat Langganan Acara Kisi Acara Azure baru pada topik, sumber daya Azure, langganan Azure, atau Grup Sumber Daya.
+Membuat Langganan Acara Azure Event Grid baru untuk topik, sumber daya Azure, langganan Azure, atau Grup Sumber Daya.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -54,11 +54,11 @@ New-AzureRmEventGridSubscription [-EventSubscriptionName] <String> [-Endpoint] <
 ```
 
 ## DESCRIPTION
-Buat langganan acara baru ke topik Kisi Acara Azure, sumber daya Azure yang didukung, langganan Azure, atau Grup Sumber Daya.
+Buat langganan acara baru untuk topik Azure Event Grid, sumber daya Azure yang didukung, langganan Azure, atau Grup Sumber Daya.
 Untuk membuat langganan acara ke langganan Azure yang saat ini dipilih, tentukan nama langganan acara dan titik akhir tujuan.
 Untuk membuat langganan acara ke grup sumber daya, tentukan nama grup sumber daya selain nama langganan acara dan titik akhir tujuan.
-Untuk membuat langganan acara ke topik Kisi Acara Azure, tentukan juga nama topik.
-Untuk membuat langganan kejadian ke sumber daya Azure yang didukung, tentukan ID sumber daya lengkap dari sumber daya tersebut. Untuk menampilkan daftar tipe yang didukung, jalankan cmdlet Get-AzureRmEventGridTopicType.
+Untuk membuat langganan acara ke topik Azure Event Grid, tentukan juga nama topik.
+Untuk membuat langganan acara ke sumber daya Azure yang didukung, tentukan ID sumber daya lengkap sumber daya. Untuk menampilkan daftar tipe yang didukung, jalankan cmdlet Get-AzureRmEventGridTopicType.
 
 ## EXAMPLES
 
@@ -67,21 +67,21 @@ Untuk membuat langganan kejadian ke sumber daya Azure yang didukung, tentukan ID
 PS C:\> New-AzureRmEventGridSubscription -ResourceGroup MyResourceGroup -TopicName Topic1 -Endpoint https://requestb.in/19qlscd1 -EventSubscriptionName EventSubscription1
 ```
 
-Membuat langganan acara baru \`EventSubscription1\` ke topik Kisi Acara Azure \`Topic1 \`\` di grup sumber daya MyResourceGroupName\` dengan titik akhir tujuan `https://requestb.in/19qlscd1`webhook . Langganan acara ini menggunakan filter default.
+Membuat langganan \`acara baru EventSubscription1\` ke topik \`Azure Event Grid Topik1\` dalam grup \`sumber daya MyResourceGroupName\` dengan titik `https://requestb.in/19qlscd1`akhir tujuan webhook . Langganan acara ini menggunakan filter default.
 
 ### Contoh 2
 ```
 PS C:\> New-AzureRmEventGridSubscription -ResourceGroup MyResourceGroupName -Endpoint https://requestb.in/19qlscd1 -EventSubscriptionName EventSubscription1
 ```
 
-Membuat langganan kejadian baru \`EventSubscription1\` ke grup sumber daya \`MyResourceGroupName\` dengan titik akhir tujuan `https://requestb.in/19qlscd1`webhook. Langganan acara ini menggunakan filter default.
+Membuat langganan \`acara baru EventSubscription1\` ke grup \`sumber daya MyResourceGroupName\` dengan titik `https://requestb.in/19qlscd1`akhir tujuan webhook. Langganan acara ini menggunakan filter default.
 
 ### Contoh 3
 ```
 PS C:\> New-AzureRmEventGridSubscription -Endpoint https://requestb.in/19qlscd1 -EventSubscriptionName EventSubscription1
 ```
 
-Membuat langganan acara baruSubscription1 \`untuk\` langganan Azure yang saat ini dipilih dengan titik akhir tujuan webhook `https://requestb.in/19qlscd1`. Langganan acara ini menggunakan filter default.
+Membuat langganan \`acara baru Berlangganan acara1\` ke langganan Azure yang saat ini dipilih dengan titik `https://requestb.in/19qlscd1`akhir tujuan webhook. Langganan acara ini menggunakan filter default.
 
 ### Contoh 4
 ```
@@ -90,26 +90,26 @@ PS C:\> $labels = "Finance", "HR"
 PS C:\> New-AzureRmEventGridSubscription -Endpoint https://requestb.in/19qlscd1 -EventSubscriptionName EventSubscription1 -SubjectBeginsWith "TestPrefix" -SubjectEndsWith "TestSuffix" -IncludedEventType $includedEventTypes -Label $labels
 ```
 
-Membuat langganan acara baruSubscription1 \`untuk\` langganan Azure yang saat ini dipilih dengan titik akhir tujuan webhook `https://requestb.in/19qlscd1`. Langganan acara ini menentukan filter tambahan untuk tipe dan subjek acara, dan hanya acara yang cocok dengan filter tersebut yang akan dikirimkan ke titik akhir tujuan.
+Membuat langganan \`acara baru Berlangganan acara1\` ke langganan Azure yang saat ini dipilih dengan titik `https://requestb.in/19qlscd1`akhir tujuan webhook. Langganan acara ini menentukan filter tambahan untuk tipe kejadian dan subjek, dan hanya kejadian yang cocok dengan filter tersebut yang akan dikirimkan ke titik akhir tujuan.
 
 ### Contoh 5
 ```
 PS C:\> New-AzureRmEventGridSubscription -EventSubscriptionName EventSubscription1 -EndpointType "eventhub" -Endpoint "/subscriptions/55f3dcd4-cac7-43b4-990b-a139d62a1eb2/resourceGroups/TestRG/providers/Microsoft.EventHub/namespaces/ContosoNamespace/eventhubs/EH1"
 ```
 
-Membuat langganan acara baruSubscription1 \`\` untuk langganan Azure yang saat ini dipilih dengan hub acara yang ditentukan sebagai tujuan acara. Langganan acara ini menggunakan filter default.
+Membuat langganan \`acara baru Langganan acaraSubscription1\` ke langganan Azure yang saat ini dipilih dengan hub kejadian yang ditentukan sebagai tujuan acara. Langganan acara ini menggunakan filter default.
 
 ### Contoh 6
 ```
 PS C:\> New-AzureRmEventGridSubscription -ResourceId "/subscriptions/55f3dcd4-cac7-43b4-990b-a139d62a1eb2/resourceGroups/TestRG/providers/Microsoft.EventHub/namespaces/ContosoNamespace" -Endpoint https://requestb.in/19qlscd1 -EventSubscriptionName EventSubscription1
 ```
 
-Membuat langganan acara baru \`EventSubscription1\` ke ruang nama EventHub dengan titik akhir tujuan webhigu yang ditentukan `https://requestb.in/19qlscd1`. Langganan acara ini menggunakan filter default.
+Membuat langganan \`acara baru EventSubscription1\` ke ruang nama EventHub dengan titik `https://requestb.in/19qlscd1`akhir tujuan webhhok yang ditentukan. Langganan acara ini menggunakan filter default.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 
 ### -Titik akhir
 Titik akhir tujuan langganan acara.
-Ini dapat menjadi URL webhook atau ID sumber daya Azure dari EventHub.
+Ini bisa berupa URL webhook atau ID sumber daya Azure dari EventHub.
 
 ```yaml
 Type: System.String
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 
 ### -EndpointType
 Tipe Titik Akhir.
-Ini dapat menjadi webhook atau eventhub
+Ini bisa berupa webhook atau eventhub
 
 ```yaml
 Type: System.String
@@ -236,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek EventGrid Topic.
+Objek Topik EventGrid.
 
 ```yaml
 Type: Microsoft.Azure.Commands.EventGrid.Models.PSTopic
@@ -305,7 +305,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya tempat langganan kejadian harus dibuat.
+Pengidentifikasi sumber daya tempat langganan acara harus dibuat.
 
 ```yaml
 Type: System.String
@@ -348,8 +348,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubjectCaseSensitive
-Filter yang menentukan bahwa bidang subjek harus dibandingkan dengan cara peka huruf besar kecil.
-Jika tidak ditentukan, subjek akan dibandingkan dengan cara peka huruf besar kecil.
+Filter yang menentukan bahwa bidang subjek harus dibandingkan dengan cara yang peka huruf besar kecil.
+Jika tidak ditentukan, subjek akan dibandingkan dalam kasus yang tidak peka.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -364,7 +364,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubjectEndsWith
-Filter yang menentukan bahwa hanya kejadian yang cocok dengan akhiran subjek yang ditentukan yang akan disertakan.
+Filter yang menentukan bahwa hanya kejadian yang cocok dengan akhiran subjek tertentu yang akan disertakan.
 Jika tidak ditentukan, kejadian dengan semua akhiran subjek akan disertakan.
 
 ```yaml
@@ -392,7 +392,7 @@ Accept wildcard characters: False
 ```
 
 ### -TopicName
-Nama topik tempat langganan acara akan dibuat.
+Nama topik tempat langganan acara harus dibuat.
 
 ```yaml
 Type: System.String
@@ -407,7 +407,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -423,7 +423,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -438,7 +438,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

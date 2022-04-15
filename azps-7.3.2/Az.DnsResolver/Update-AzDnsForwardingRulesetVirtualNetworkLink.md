@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Update-AzDnsForwardingRulesetVirtualNetworkLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Update-AzDnsForwardingRulesetVirtualNetworkLink.md
-ms.openlocfilehash: 4225a576f7fc6325d4c7243bdfcbc34b5a3779f4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3f12e735ae2c8ef2c43f4a0690a82c210d683799
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140186993"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142374857"
 ---
 # Update-AzDnsForwardingRulesetVirtualNetworkLink
 
 ## SYNOPSIS
-Memperbarui link jaringan virtual ke perangkat aturan penerusan DNS.
+Memperbarui tautan jaringan virtual ke aturan penerusan DNS.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.dnsresolver/update-azdnsforwardingrulesetvirtualnetworklink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,11 +37,11 @@ Update-AzDnsForwardingRulesetVirtualNetworkLink -InputObject <IDnsResolverIdenti
 ```
 
 ## DESCRIPTION
-Memperbarui link jaringan virtual ke perangkat aturan penerusan DNS.
+Memperbarui tautan jaringan virtual ke aturan penerusan DNS.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui link jaringan virtual berdasarkan nama (menambahkan metadata)
+### Contoh 1: Perbarui tautan jaringan virtual menurut nama (menambahkan metadata)
 ```powershell
 Update-AzDnsForwardingRulesetVirtualNetworkLink -DnsForwardingRulesetName sampleDnsForwardingRuleset -Name sampleVnetLink -Metadata @{"value0" = "value1"}
 ```
@@ -49,9 +52,9 @@ Name         Type                                             Etag
 sampleVnetLink Microsoft.Network/dnsForwardingRuleset/virtualNetworkLinks "02001eab-0000-0800-0000-60e792500000"
 ```
 
-Perintah ini memperbarui link jaringan virtual berdasarkan nama (menambahkan metadata)
+Perintah ini memperbarui tautan jaringan virtual menurut nama (menambahkan metadata)
 
-### Contoh 2: Perbarui link jaringan virtual melalui identitas (menambahkan metadata)
+### Contoh 2: Memperbarui tautan jaringan virtual melalui identitas (menambahkan metadata)
 ```powershell
 $inputObject = Get-AzDnsForwardingRulesetVirtualNetworkLink -DnsResolverName pstestdnsresolvername -Name samplevnetLink1 -ResourceGroupName powershell-test-rg
 Update-AzDnsForwardingRulesetVirtualNetworkLink -InputObject $inputObject -Metadata @{"value0" = "value1"}
@@ -114,8 +117,8 @@ Accept wildcard characters: False
 
 ### -IfMatch
 ETag sumber daya.
-Menghilangkan nilai ini agar selalu menimpa sumber daya saat ini.
-Tentukan nilai ETag yang terakhir dilihat untuk mencegah secara tidak sengaja menimpa perubahan konklar apa pun.
+Hilangkan nilai ini untuk selalu menimpa sumber daya saat ini.
+Tentukan nilai ETag yang terakhir dilihat untuk mencegah timpa perubahan bersamaan secara tidak sengaja.
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DnsResolver.Models.IDnsResolverIdentity
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -Metadata
-Metadata yang dilampirkan ke link jaringan virtual.
+Metadata yang dilampirkan ke tautan jaringan virtual.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama link jaringan virtual.
+Nama tautan jaringan virtual.
 
 ```yaml
 Type: System.String
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -252,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -272,15 +275,15 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IDnsResolverIdentity>: Parameter Identitas
-  - `[DnsForwardingRulesetName <String>]`: Nama daftar aturan penerusan DNS.
-  - `[DnsResolverName <String>]`: Nama resolver DNS.
+  - `[DnsForwardingRulesetName <String>]`: Nama aturan penerusan DNS.
+  - `[DnsResolverName <String>]`: Nama penuntas DNS.
   - `[ForwardingRuleName <String>]`: Nama aturan penerusan.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[InboundEndpointName <String>]`: Nama titik akhir masuk untuk resolver DNS.
-  - `[OutboundEndpointName <String>]`: Nama titik akhir keluar untuk resolver DNS.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[InboundEndpointName <String>]`: Nama titik akhir masuk untuk penyelesaian DNS.
+  - `[OutboundEndpointName <String>]`: Nama titik akhir keluar untuk penyelesaian DNS.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
-  - `[VirtualNetworkLinkName <String>]`: Nama link jaringan virtual.
+  - `[VirtualNetworkLinkName <String>]`: Nama tautan jaringan virtual.
   - `[VirtualNetworkName <String>]`: Nama jaringan virtual.
 
 ## RELATED LINKS

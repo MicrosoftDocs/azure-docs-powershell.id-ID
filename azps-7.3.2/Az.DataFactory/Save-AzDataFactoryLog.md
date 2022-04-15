@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/save
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Save-AzDataFactoryLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Save-AzDataFactoryLog.md
-ms.openlocfilehash: f9843e505e93659438c44a6efd8970fb5569c10a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3d6f746bc55cfa9cd12d3eae6ffc4ff06cf85b44
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140544722"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142376027"
 ---
 # Save-AzDataFactoryLog
 
 ## SYNOPSIS
 Mengunduh file log dari pemrosesan Azure HDInsight.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/save-azdatafactorylog) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,11 +36,11 @@ Save-AzDataFactoryLog [-DataFactory] <PSDataFactory> [-Id] <String> [-DownloadLo
 ```
 
 ## DESCRIPTION
-Cmdlet **Save-AzDataFactoryLog** mengunduh file log yang terkait dengan pemrosesan Azure HDInsight proyek Pig atau Hive atau untuk aktivitas kustom ke hard drive lokal Anda.
-Jalankan cmdlet Get-AzDataFactoryRun terlebih dahulu untuk mendapatkan ID bagi aktivitas yang dijalankan untuk potongan data, lalu gunakan ID tersebut untuk mengambil file log dari penyimpanan objek besar biner (BLOB) yang terkait dengan kluster HDInsight.
-Jika Anda tidak menentukan parameter *DownloadLogs* , cmdlet cukup mengembalikan lokasi file log.
-Jika Anda menentukan *DownloadLogs* tanpa menentukan direktori output (*Parameter output* ), file log diunduh ke folder Dokumen default.
-Jika Anda menentukan *DownloadLogs* bersama dengan folder output (*Output*), file log diunduh ke folder yang ditentukan.
+Cmdlet **Save-AzDataFactoryLog** mengunduh file log yang terkait dengan pemrosesan Azure HDInsight proyek Babi atau Sarang atau untuk aktivitas kustom ke hard drive lokal Anda.
+Anda terlebih dahulu menjalankan cmdlet Get-AzDataFactoryRun untuk mendapatkan ID untuk aktivitas yang dijalankan untuk sepotong data, lalu gunakan ID tersebut untuk mengambil file log dari penyimpanan objek besar biner (BLOB) yang terkait dengan kluster HDInsight.
+Jika Anda tidak menentukan parameter *DownloadLogs* , cmdlet hanya mengembalikan lokasi file log.
+Jika Anda menentukan *DownloadLogs* tanpa menentukan direktori output (Parameter *output* ), file log diunduh ke folder Dokumen default.
+Jika Anda menentukan *DownloadLogs* bersama dengan folder output (*Output*), file log diunduh ke folder tertentu.
 
 ## EXAMPLES
 
@@ -46,17 +49,17 @@ Jika Anda menentukan *DownloadLogs* bersama dengan folder output (*Output*), fil
 PS C:\>Save-AzDataFactoryLog -ResourceGroupName "ADF" -DataFactoryName "LogProcessingFactory" -Id "841b77c9-d56c-48d1-99a3-8c16c3e77d39" -DownloadLogs -Output "C:\Test"
 ```
 
-Perintah ini menyimpan file log untuk aktivitas yang dijalankan dengan ID 841b77c9-d56c-48d1-99a3-8c16c3e77d39, tempat aktivitas berada dalam saluran di pabrik data yang bernama LogProcessingFactory dalam grup sumber daya yang bernama ADF.
-File log akan disimpan ke folder C:\Test.
+Perintah ini menyimpan file log untuk aktivitas yang dijalankan dengan ID 841b77c9-d56c-48d1-99a3-8c16c3e77d39 tempat aktivitas tersebut termasuk dalam pipeline di pabrik data bernama LogProcessingFactory dalam grup sumber daya bernama ADF.
+File log disimpan ke folder C:\Test.
 
-### Contoh 2: Simpan file log ke folder dokumen default
+### Contoh 2: Menyimpan file log ke folder Dokumen default
 ```
 PS C:\>Save-AzDataFactoryLog -ResourceGroupName "ADF" -DataFactoryName "LogProcessingFactory" -Id "841b77c9-d56c-48d1-99a3-8c16c3e77d39" -DownloadLogs
 ```
 
 Perintah ini menyimpan file log ke folder Dokumen (default).
 
-### Contoh 3: Dapatkan lokasi file log
+### Contoh 3: Mendapatkan lokasi file log
 ```
 PS C:\>Save-AzDataFactoryLog -ResourceGroupName "ADF" -DataFactoryName "LogProcessingFactory" -Id "841b77c9-d56c-48d1-99a3-8c16c3e77d39"
 ```
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 
 ### -DownloadLogs
 Menunjukkan bahwa cmdlet ini mengunduh file log ke komputer lokal Anda.
-Jika *folder* Output tidak ditentukan, file disimpan ke folder Dokumen di bawah subfolder.
+Jika folder *Output* tidak ditentukan, file disimpan ke folder Dokumen di bawah subfolder.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,8 +132,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID aktivitas yang dijalankan untuk potongan data.
-Gunakan cmdlet Get-AzDataFactoryRun tersebut untuk mendapatkan ID.
+Menentukan ID aktivitas yang dijalankan untuk pemisah data.
+Gunakan cmdlet Get-AzDataFactoryRun untuk mendapatkan ID.
 
 ```yaml
 Type: System.String
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya Azure.
-Cmdlet ini membuat pabrik data milik grup yang ditentukan parameter ini.
+Cmdlet ini membuat pabrik data yang termasuk dalam grup yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -189,7 +192,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.DataFactories.Models.PSRunLogInfo
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, data, factories
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 
@@ -199,7 +202,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzDataFactoryPipeline](./New-AzDataFactoryPipeline.md)
 
-[Remove-AzDataFactoryPipeline](./Remove-AzDataFactoryPipeline.md)
+[Hapus-AzDataFactoryPipeline](./Remove-AzDataFactoryPipeline.md)
 
 [Set-AzDataFactoryPipelineActivePeriod](./Set-AzDataFactoryPipelineActivePeriod.md)
 

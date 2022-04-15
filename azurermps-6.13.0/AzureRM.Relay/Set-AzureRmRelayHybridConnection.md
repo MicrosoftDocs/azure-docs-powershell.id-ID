@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Relay/Commands.Relay/help/Set-AzureRmRelayHybridConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Relay/Commands.Relay/help/Set-AzureRmRelayHybridConnection.md
 ms.openlocfilehash: 9542b5af753a94e952ad2407df9ddd80f51aeb0b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140853030"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142384158"
 ---
 # Set-AzureRmRelayHybridConnection
 
 ## SYNOPSIS
-Memperbarui deskripsi dari ruang nama HybridConnection dalam ruang nama Relay yang ditentukan.
+Memperbarui deskripsi HibridConnection dalam ruang nama Relai yang ditentukan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -74,7 +74,7 @@ Name                        : TestHybirdConnection1
 Type                        : Microsoft.Relay/HybridConnections
 ```
 
-Memperbarui HybridConnection yang ditentukan dengan deskripsi baru dalam ruang nama yang ditentukan.
+Memperbarui HybridConnection tertentu dengan deskripsi baru dalam ruang nama yang ditentukan.
 Contoh ini memperbarui properti UserMetadata dengan nilai baru.
 
 ## PARAMETERS
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserMetadata
-Mendapatkan atau mengatur usermetadata adalah tempat penampung untuk menyimpan data string yang ditentukan pengguna untuk titik akhir HybridConnection. misalnya informasi ini dapat digunakan untuk menyimpan data deskriptif, seperti daftar tim dan informasi kontak mereka, juga pengaturan konfigurasi yang ditentukan oleh pengguna yang dapat disimpan.
+Gets or sets usermetadata is a placeholder to store user-defined string data for the HybridConnection endpoint.e.g. ini dapat digunakan untuk menyimpan data deskriptif, seperti daftar tim dan informasi kontak mereka juga pengaturan konfigurasi yang ditentukan pengguna dapat disimpan.
 
 ```yaml
 Type: System.String
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,18 +201,18 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
-Microsoft.Azure.Commands.Relay.Models.PSHybridConnectionAcantikbutes
+Microsoft.Azure.Commands.Relay.Models.PSHybridConnectionAttibutes
 
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Relay.Models.PSHybridConnectionAcantikbutes
+### Microsoft.Azure.Commands.Relay.Models.PSHybridConnectionAttibutes
 
 
 ## CATATAN

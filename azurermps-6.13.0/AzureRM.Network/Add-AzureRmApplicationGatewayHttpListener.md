@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Add-AzureRmApplicationGatewayHttpListener.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Add-AzureRmApplicationGatewayHttpListener.md
 ms.openlocfilehash: 571739c72b42e07070a3882ef696388a4a923196
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425862"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142386631"
 ---
 # Add-AzureRmApplicationGatewayHttpListener
 
@@ -44,27 +44,27 @@ Cmdlet **Add-AzureRmApplicationGatewayHttpListener** menambahkan pendengar HTTP 
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan pendengar HTTP
+### Contoh 1: Menambahkan pendengar HTTP
 ```
 PS C:\>$AppGw = Get-AzureRmApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 PS C:\> $Appgw = Add-AzureRmApplicationGatewayHttpListener -ApplicationGateway $AppGw -Name "listener01" -Protocol "Http" -FrontendIpConfiguration $FIP01 -FrontendPort $FP01
 ```
 
-Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam $AppGw baru. Perintah kedua menambahkan pendengar HTTP ke gateway aplikasi.
+Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam variabel $AppGw. Perintah kedua menambahkan pendengar HTTP ke gateway aplikasi.
 
-### Contoh 2: Tambahkan pendengar HTTPS dengan SSL
+### Contoh 2: Menambahkan pendengar HTTPS dengan SSL
 ```
 PS C:\>$AppGw = Get-AzureRmApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 PS C:\> $AppGw = Add-AzureRmApplicationGatewayHttpListener -ApplicationGateway $AppGw -Name "Listener01" -Protocol "Https" -FrontendIpConfiguration $FIP01 -FrontendPort $FP01 -SslCertificate $SSLCert01
 ```
 
-Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam $AppGw baru.
+Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam variabel $AppGw.
 Perintah kedua menambahkan pendengar, yang menggunakan protokol HTTPS, ke gateway aplikasi.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan gateway aplikasi tempat cmdlet menambahkan pendengar HTTP.
+Menentukan gateway aplikasi tempat cmdlet ini menambahkan pendengar HTTP.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendIPConfiguration
-Menentukan objek sumber daya IP front-end gateway aplikasi.
+Menentukan objek sumber daya IP ujung-depan gateway aplikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFrontendIPConfiguration
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendIPConfigurationId
-Menentukan ID IP front-end gateway aplikasi.
+Menentukan ID IP ujung-depan gateway aplikasi.
 
 ```yaml
 Type: System.String
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendPort
-Menentukan objek port front-end gateway aplikasi.
+Menentukan objek port ujung depan gateway aplikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFrontendPort
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendPortId
-Menentukan ID port front-end gateway aplikasi.
+Menentukan ID port ujung-depan gateway aplikasi.
 
 ```yaml
 Type: System.String
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostName
-Menentukan nama host yang menambahkan pendengar HTTP.
+Menentukan nama host tempat cmdlet ini menambahkan pendengar HTTP.
 
 ```yaml
 Type: System.String
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama port ujung-depan yang penambahan perintah ini.
+Menentukan nama port ujung-depan yang ditambahkan perintah ini.
 
 ```yaml
 Type: System.String
@@ -183,9 +183,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
+### -Protokol
 Menentukan protokol pendengar HTTP.
-HTTP dan HTTPS didukung.
+Baik HTTP maupun HTTPS didukung.
 
 ```yaml
 Type: System.String
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -SslCertificate
-Menentukan sertifikat SSL dari pendengar HTTP.
+Menentukan sertifikat SSL pendengar HTTP.
 Harus ditentukan jika HTTPS dipilih sebagai protokol pendengar.
 
 ```yaml
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -SslCertificateId
-Menentukan ID sertifikat SSL dari pendengar HTTP.
+Menentukan ID sertifikat SSL pendengar HTTP.
 Harus ditentukan jika HTTPS dipilih sebagai protokol pendengar.
 
 ```yaml
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

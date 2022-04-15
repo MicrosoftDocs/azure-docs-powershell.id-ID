@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Remove-AzureRmApiManagementRegion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Remove-AzureRmApiManagementRegion.md
 ms.openlocfilehash: 9ccd7379a07b83b3ed45eff5f8095b950868810c
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427074"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142390941"
 ---
 # Remove-AzureRmApiManagementRegion
 
 ## SYNOPSIS
-Menghapus kawasan penyebaran yang ada dari contoh PsApiManagement.
+Menghapus wilayah penyebaran yang sudah ada dari instans PsApiManagement.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,31 +28,31 @@ Remove-AzureRmApiManagementRegion -ApiManagement <PsApiManagement> -Location <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmApiManagementRegion** menghapus instans tipe **Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementRegion** dari kumpulan **AdditionalRegions** yang disediakan instans tipe **Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement**.
-Cmdlet ini tidak memodifikasi penyebaran dengan sendirinya, namun memperbarui contoh **in-memory PsApiManagement.**
-Untuk memperbarui penyebaran Manajemen API, ubah **PsApiManagementInstance ke** **Update-AzureRmApiManagement.**
+Cmdlet **Remove-AzureRmApiManagementRegion** menghapus contoh tipe **Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementRegion** dari kumpulan **AdditionalRegions** yang disediakan contoh tipe **Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement**.
+Cmdlet ini tidak mengubah penyebaran dengan sendirinya tetapi memperbarui contoh **PsApiManagement** dalam memori.
+Untuk memperbarui penyebaran API Management, **kirimkan PsApiManagementInstance** yang dimodifikasi ke **Update-AzureRmApiManagement**.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus kawasan dari contoh PsApiManagement
+### Contoh 1: Menghapus kawasan dari instans PsApiManagement
 ```
 PS C:\>Remove-AzureRmApiManagementRegion -ApiManagement $ApiManagement -Location "East US"
 ```
 
-Perintah ini menghapus kawasan AS Timur dari contoh **PsApiManagement.**
+Perintah ini menghapus kawasan bernama AS Timur dari **instans PsApiManagement** .
 
-### Contoh 2: Menghapus kawasan dari contoh PsApiManagement menggunakan serangkaian perintah
+### Contoh 2: Menghapus kawasan dari instans PsApiManagement menggunakan serangkaian perintah
 ```
 PS C:\>Get-AzureRmApiManagement -ResourceGroupName "Contoso" -Name ContosoApi | Remove-AzureRmApiManagementRegion -Location "East US" | Update-AzureRmApiManagementDeployment
 ```
 
-Perintah pertama ini mendapatkan contoh **PsApiManagement dari** grup sumber daya bernama Contoso bernama ContosoApi.
-Perintah terakhir lalu menghapus kawasan YANG bernama AS Timur dari contoh tersebut, lalu memperbarui penyebarannya.
+Perintah pertama ini mendapatkan contoh **PsApiManagement** dari grup sumber daya bernama Contoso Bernama ContosoApi.
+Perintah terakhir kemudian menghapus kawasan bernama AS Timur dari instans tersebut lalu memperbarui penyebaran.
 
 ## PARAMETERS
 
 ### -ApiManagement
-Menentukan instans **PsApiManagement** yang dihapus cmdlet ini dari wilayah penyebaran tambahan.
+Menentukan **instans PsApiManagement** tempat cmdlet ini menghapus area penyebaran tambahan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement
@@ -81,9 +81,9 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi wilayah yang dihapus cmdlet ini.
-Menentukan lokasi wilayah penyebaran baru di antara kawasan yang didukung untuk layanan Manajemen Api.
-Untuk mendapatkan lokasi yang valid, gunakan cmdlet Get-AzureRmResourceProvider -ProviderNamespace "Microsoft.ApiManagement" | di mana {$_. ResourceTypes[0]. ResourceTypeName -eq "service"} | Select-Object Lokasi
+Menentukan lokasi kawasan yang dihapus cmdlet ini.
+Menentukan lokasi kawasan penyebaran baru di antara kawasan yang didukung untuk layanan Manajemen Api.
+Untuk mendapatkan lokasi yang valid, gunakan cmdlet Get-AzureRmResourceProvider -ProviderNamespace "Microsoft.ApiManagement" | di mana {$_. ResourceTypes[0]. ResourceTypeName -eq "service"} | Lokasi Select-Object
 
 ```yaml
 Type: System.String
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

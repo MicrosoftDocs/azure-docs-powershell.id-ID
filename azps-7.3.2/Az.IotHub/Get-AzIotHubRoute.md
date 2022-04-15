@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubRoute.md
-ms.openlocfilehash: b0d949dce7469dd8caa4bc913f298bd89febddf6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c7f849454c7252ea847b0297d5d7402459e17479
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140186684"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142373687"
 ---
 # Get-AzIotHubRoute
 
 ## SYNOPSIS
-Dapatkan informasi tentang rute dalam IoT Hub
+Dapatkan informasi tentang rute di IoT Hub
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubroute) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzIotHubRoute [-ResourceId] <String> [-RouteName <String>] [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Dapatkan informasi tentang rute. Anda dapat memperoleh semua rute dari Hub IoT, mendapatkan rute ke tipe titik akhir atau mendapatkan rute ke titik akhir tertentu.
+Dapatkan informasi tentang rute. Anda bisa mendapatkan semua rute dari IoT Hub, mendapatkan rute ke jenis titik akhir atau mendapatkan rute ke titik akhir tertentu.
 
 ## EXAMPLES
 
@@ -52,7 +55,7 @@ R1        DeviceMessages   events        False
 R2        TwinChangeEvents E1            True
 ```
 
-Dapatkan semua rute dari Hub IoT "myiothub".
+Dapatkan semua rute dari IoT Hub "myiothub".
 
 ### Contoh 2
 ```
@@ -65,7 +68,7 @@ Condition     : true
 IsEnabled     : False
 ```
 
-Dapatkan informasi rute dari Hub IoT "myiothub".
+Dapatkan informasi rute dari IoT Hub "myiothub".
 
 ## PARAMETERS
 
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

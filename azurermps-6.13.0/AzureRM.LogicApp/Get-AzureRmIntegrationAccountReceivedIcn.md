@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/LogicApp/Commands.LogicApp/help/Get-AzureRmIntegrationAccountReceivedIcn.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/LogicApp/Commands.LogicApp/help/Get-AzureRmIntegrationAccountReceivedIcn.md
 ms.openlocfilehash: b9defadc92619d136c82302203d296d6b71318ee
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423659"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142386673"
 ---
 # Get-AzureRmIntegrationAccountReceivedIcn
 
 ## SYNOPSIS
-Cmdlet ini mengambil nomor kontrol pertukaran tertentu yang diterima per perjanjian dan nilai nomor kontrol.
+Cmdlet ini mengambil nomor kontrol per pertukaran yang diterima tertentu per perjanjian dan nilai angka kontrol.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,8 +28,8 @@ Get-AzureRmIntegrationAccountReceivedIcn -ResourceGroupName <String> -Name <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet ini dimaksudkan untuk digunakan dalam skenario pemulihan bencana untuk memvalidasi kehadiran nomor kontrol pertukaran yang diterima dan secara opsional untuk menghapus entitas itu dengan Remove-AzureRmIntegrationAccountReceivedIcn.
-Harap sediakan parameter "-AgreementType" untuk menentukan apakah angka kontrol X12 atau Edifact akan dikembalikan
+Cmdlet ini dimaksudkan untuk digunakan dalam skenario pemulihan bencana untuk memvalidasi kehadiran nomor kontrol pertukaran yang diterima dan secara opsional untuk menghapus entitas tersebut dengan Remove-AzureRmegrationAccountReceivedIcn.
+Harap sediakan parameter "-AgreementType" untuk menentukan apakah nomor kontrol X12 atau Edifact akan dikembalikan
 
 ## EXAMPLES
 
@@ -41,7 +41,7 @@ ControlNumberChangedTime : 2/15/2017 12:36:00 AM
 IsMessageProcessingFailed: False
 ```
 
-Perintah ini mendapatkan akun integrasi X12 yang diterima nomor kontrol pertukaran berdasarkan nama perjanjian dan nilai nomor kontrol.
+Perintah ini mendapatkan akun integrasi X12 yang diterima pertukaran nomor kontrol menurut nama perjanjian dan nilai nomor kontrol.
 
 ### Contoh 2
 ```
@@ -51,7 +51,7 @@ ControlNumberChangedTime : 2/15/2017 12:36:00 AM
 IsMessageProcessingFailed: False
 ```
 
-Perintah ini mendapatkan akun integrasi Edifact yang diterima nomor kontrol pertukaran dengan nama perjanjian dan nilai nomor kontrol.
+Perintah ini mendapatkan akun integrasi Edifact menerima nomor kontrol pertukaran menurut nama perjanjian dan nilai nomor kontrol.
 
 ## PARAMETERS
 
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -163,4 +163,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzureRmIntegrationAccountReceivedIcn](./Set-AzureRmIntegrationAccountReceivedIcn.md)
 
-[Remove-AzureRmIntegrationAccountReceivedIcn](./Remove-AzureRmIntegrationAccountReceivedIcn.md)
+[Hapus-AzureRmIntegrationAccountReceivedIcn](./Remove-AzureRmIntegrationAccountReceivedIcn.md)

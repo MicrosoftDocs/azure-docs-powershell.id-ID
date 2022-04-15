@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/LogicApp/Commands.LogicApp/help/Get-AzureRmIntegrationAccountCallbackUrl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/LogicApp/Commands.LogicApp/help/Get-AzureRmIntegrationAccountCallbackUrl.md
 ms.openlocfilehash: 1a279eecfad19fc35bae7c9f1b3bf828a07913e4
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423672"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142386745"
 ---
 # Get-AzureRmIntegrationAccountCallbackUrl
 
 ## SYNOPSIS
-Mendapatkan URL integrasi akun integrasi.
+Mendapatkan URL panggilan balik akun integrasi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,29 +28,29 @@ Get-AzureRmIntegrationAccountCallbackUrl -ResourceGroupName <String> -Name <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmIntegrationAccountCallbackUrl** mendapatkan URL integration account cmdlet dari grup sumber daya.
-Cmdlet ini mengembalikan objek **Cmdlet Cmdlet yang** mewakili URL integration account integration.
+Cmdlet **Get-AzureRmIntegrationAccountCallbackUrl** mendapatkan URL panggilan balik akun integrasi dari grup sumber daya.
+Cmdlet ini mengembalikan objek **CallbackUrl** yang mewakili URL callback akun integrasi.
 Tentukan nama akun integrasi dan nama grup sumber daya.
 Modul ini mendukung parameter dinamis.
 Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
-Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilai tersebut.
+Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
 ## EXAMPLES
 
-### Contoh 1: URL integrasi akun integrasi
+### Contoh 1: Dapatkan URL callback akun integrasi
 ```
 PS C:\>Get-AzureRmIntegrationAccountCallbackUrl -ResourceGroupName "ResourceGroup11" -Name "IntegrationAccount31" -NotAfter "03/25/2016 18:23:22"
 CallBackUrl : https://<baseurl>/integrationAccounts/8811f0155a364b5e9618ba28f7180601?api-version=2015-08-01-preview&se=2016-03
               -25T18%3A23%3A22.0000000Z&sp=%2F%2Fread&sv=1.0&sig=<value>
 ```
 
-Perintah ini mendapatkan URL tujuan akun integrasi.
+Perintah ini mendapatkan URL panggilan balik akun integrasi.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -NotAfter
-Menentukan tanggal kedaluwarsa untuk URL properti.
+Menentukan tanggal kedaluwarsa untuk URL callback.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -118,7 +118,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Management.Logic.Models.Url
+### Microsoft.Azure.Management.Logic.Models.CallbackUrl
 
 ## CATATAN
 

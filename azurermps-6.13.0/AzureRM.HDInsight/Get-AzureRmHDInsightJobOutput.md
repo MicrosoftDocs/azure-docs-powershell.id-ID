@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Get-AzureRmHDInsightJobOutput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Get-AzureRmHDInsightJobOutput.md
 ms.openlocfilehash: 94bd90b644b12723a36266dea34d9b5e9417b45b
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140864582"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142387475"
 ---
 # Get-AzureRmHDInsightJobOutput
 
@@ -30,11 +30,11 @@ Get-AzureRmHDInsightJobOutput [-ClusterName] <String> [-JobId] <String> [[-Defau
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmHDInsightJobOutput** mendapatkan output log untuk pekerjaan dari Storage yang terkait dengan kluster Azure HDInsight.
+Cmdlet **Get-AzureRmHDInsightJobOutput** mendapatkan output log untuk pekerjaan dari akun Storage yang terkait dengan cluster Azure HDInsight.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan output log untuk pekerjaan
+### Contoh 1: Dapatkan output log untuk pekerjaan
 ```
 PS C:\># Cluster info
 PS C:\> $clusterName = "your-hadoop-001"
@@ -54,7 +54,7 @@ PS C:\> New-AzureRmHDInsightHiveJobDefinition -StatusFolder $statusFolder `
             -ClusterCredential $clusterCreds
 ```
 
-Perintah ini mendapatkan output log dari kluster yang bernama up-hadoop-001.
+Perintah ini mendapatkan output log dari kluster bernama your-hadoop-001.
 
 ## PARAMETERS
 
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultStorageAccountKey
-Menentukan pengaturan Storage akun default.
+Menentukan kunci akun Storage default.
 
 ```yaml
 Type: System.String
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultStorageAccountName
-Menentukan nama Storage default.
+Menentukan nama akun Storage default.
 
 ```yaml
 Type: System.String
@@ -152,8 +152,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpCredential
-Menentukan kredensial masuk kluster (HTTP) untuk kluster tersebut.
+### -HttpCredential
+Menentukan kredensial masuk kluster (HTTP) untuk kluster.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobId
-Menentukan ID pekerjaan pekerjaan yang outputnya akan diambil.
+Menentukan ID pekerjaan dari pekerjaan yang outputnya akan di ambil.
 
 ```yaml
 Type: System.String
@@ -198,11 +198,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -212,7 +212,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmHDInsightHiveJobDefinition](./New-AzureRmHDInsightHiveJobDefinition.md)
+[Baru-AzureRmHDInsightHiveJobDefinition](./New-AzureRmHDInsightHiveJobDefinition.md)
 
 [Start-AzureRmHDInsightJob](./Start-AzureRmHDInsightJob.md)
 
