@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/get-azrela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Get-AzRelayHybridConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Get-AzRelayHybridConnection.md
-ms.openlocfilehash: 4ffaf6338a0a539d5c0a8c3c930e831a37ff6ed3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: df1d77146816ce3782dcf6913d6fb2a31ae41dcc
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140371199"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142317821"
 ---
 # Get-AzRelayHybridConnection
 
 ## SYNOPSIS
-Mendapatkan deskripsi untuk ruang nama HybridConnection yang ditentukan dalam ruang nama Relay.
+Mendapatkan deskripsi untuk HybridConnection tertentu dalam ruang nama Relai.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.relay/get-azrelayhybridconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzRelayHybridConnection [-ResourceGroupName] <String> [-Namespace] <String> 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzIguyHybridConnection** mendapatkan deskripsi untuk ruang nama HybridConnection tertentu dalam ruang nama Relay.
+Cmdlet **Get-AzRelayHybridConnection** mendapatkan deskripsi untuk HybridConnection tertentu dalam ruang nama Relay.
 
 ## EXAMPLES
 
@@ -44,7 +47,7 @@ Name                        : TestHybridConnection
 Type                        : Microsoft.Relay/HybridConnections
 ```
 
-Mengembalikan deskripsi HybridConnection.
+Mengembalikan deskripsi HibridConnection.
 
 ## PARAMETERS
 
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

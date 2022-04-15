@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/add-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssGalleryApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssGalleryApplication.md
-ms.openlocfilehash: afca40f7d3c6fb1c40da4e8f62e2270d578925f9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e4cd7939938398b510eddec8cc2c1484e1ea942a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140001622"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142348235"
 ---
 # Add-AzVmssGalleryApplication
 
 ## SYNOPSIS
 Menambahkan objek GalleryApplication ke objek PSVirtualMachineProfile.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/add-azvmssgalleryapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -GalleryApplication
-VM Gallery Application Object.
+Objek Aplikasi Galeri VM.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSVMGalleryApplication
@@ -86,7 +89,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -virtualMachinescaleSetvm
+### -VirtualMachineScaleSetVM
 Objek PSVirtualMachineScaleSetVMProfile untuk menambahkan ID Referensi Aplikasi Galeri.
 
 ```yaml
@@ -102,11 +105,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

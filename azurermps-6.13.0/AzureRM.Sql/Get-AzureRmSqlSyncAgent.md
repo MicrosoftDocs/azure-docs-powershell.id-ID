@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlSyncAgent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlSyncAgent.md
 ms.openlocfilehash: 8b590e6ba8329ba6e0c45d30f7163c637d90f79e
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "132415365"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142314784"
 ---
 # Get-AzureRmSqlSyncAgent
 
 ## SYNOPSIS
-Mengembalikan informasi tentang Azure SQL Agen Sinkronisasi.
+Mengembalikan informasi tentang agen sinkronisasi Azure SQL.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,12 +27,12 @@ Get-AzureRmSqlSyncAgent [[-Name] <String>] [-ServerName] <String> [-ResourceGrou
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmSqlSyncAgent** mengembalikan informasi tentang satu atau beberapa Azure SQL Sync Agent.
+Cmdlet **Get-AzureRmSqlSyncAgent** mengembalikan informasi tentang satu atau beberapa agen sinkronisasi Azure SQL.
 Tentukan nama agen sinkronisasi untuk melihat informasi hanya untuk agen sinkronisasi tersebut.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua instans Azure SQL Sync Agent yang ditetapkan ke azure SQL Server
+### Contoh 1: Dapatkan semua contoh Agen Sinkronisasi Azure SQL yang ditetapkan ke Server Azure SQL
 ```
 PS C:\>Get-AzureRmSqlSyncAgent -ResourceGroupName "ResourceGroup01" -ServerName "Server01" | Format-List
 ResourceId                  : subscriptions/{subscriptionId}/resourceGroups/{ResourceGroup01}/servers/{Server01}/syncAgents/{SyncAgent01}
@@ -60,9 +60,9 @@ ExpiryTime                  :
 State                       : Online
 ```
 
-Perintah ini mendapatkan informasi tentang semua Agen Sinkronisasi Azure SQL yang ditetapkan ke Azure SQL Server.
+Perintah ini mendapatkan informasi tentang semua Agen Sinkronisasi Azure SQL yang ditetapkan ke Server Azure SQL.
 
-### Contoh 2: Dapatkan informasi tentang Azure SQL Sync Agent
+### Contoh 2: Dapatkan informasi tentang agen sinkronisasi Azure SQL
 ```
 PS C:\>Get-AzureRmSqlSyncAgent -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -Name "SyncAgent01" | Format-List
 ResourceId                  : subscriptions/{subscriptionId}/resourceGroups/{ResourceGroup01}/servers/{Server01}/syncAgents/{SyncAgent01}
@@ -78,12 +78,12 @@ ExpiryTime                  :
 State                       : Online
 ```
 
-Perintah ini mendapatkan informasi tentang Azure SQL Database Agen Sinkronisasi dengan nama "SyncAgent01"
+Perintah ini mendapatkan informasi tentang Agen Sinkronisasi Azure SQL Database dengan nama "SyncAgent01"
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama azure SQL Server agen sinkronisasi sudah masuk.
+Nama Server Azure SQL tempat agen sinkronisasi berada.
 
 ```yaml
 Type: System.String
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

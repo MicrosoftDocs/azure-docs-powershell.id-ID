@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azho
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzHostGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzHostGroup.md
-ms.openlocfilehash: 4dc325d39b08ce7b107e1d45ad3332e95f078131
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 8437f37fb4be91e9884ef843713913150d57bbda
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140557462"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142348145"
 ---
 # Get-AzHostGroup
 
 ## SYNOPSIS
-Dapatkan atau  list hosts.
+Dapatkan atau daftar host.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azhostgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,9 +34,9 @@ Get-AzHostGroup [-ResourceId] <String> [-DefaultProfile <IAzureContextContainer>
 ```
 
 ## DESCRIPTION
-Cmdlet ini akan mendapatkan grup host.
+Cmdlet ini akan mendapatkan grup tuan rumah.
 Cmdlet ini juga mencantumkan semua grup host dalam grup sumber daya jika nama grup host tidak diberikan.
-Cmdlet ini juga mencantumkan semua grup host dalam langganan jika nama grup host atau nama grup sumber daya tidak diberikan.
+Cmdlet ini juga mencantumkan semua grup host dalam langganan jika nama grup host maupun nama grup sumber daya tidak diberikan.
 
 ## EXAMPLES
 
@@ -67,7 +70,7 @@ myrg01                     myhostgroup01   eastus {[key1, val1]}       1
 myrg01                     myhostgroup02   eastus {[key1, val1]}       2
 ```
 
-Perintah ini mengembalikan semua grup host dalam grup sumber daya yang diberikan.
+Perintah ini mengembalikan semua grup host dalam grup sumber daya tertentu.
 
 ### Contoh 3
 ```powershell
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceView
-Perluas objek yang dikembalikan untuk juga mencantumkan tampilan contoh host. 
+Perluas objek yang dikembalikan untuk juga mencantumkan tampilan instans host. 
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

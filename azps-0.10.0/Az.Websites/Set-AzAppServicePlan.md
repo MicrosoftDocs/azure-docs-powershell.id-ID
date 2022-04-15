@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Websites/Websites/help/Set-AzAppServicePlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Websites/Websites/help/Set-AzAppServicePlan.md
 ms.openlocfilehash: b679b98e84f389e35e7dc291822049e554d40a9a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424908"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142327805"
 ---
 # Set-AzAppServicePlan
 
 ## SYNOPSIS
-Mengatur paket Layanan Aplikasi Azure.
+Mengatur paket Azure App Service.
 
 ## SYNTAX
 
@@ -35,20 +35,20 @@ Set-AzAppServicePlan [-AppServicePlan] <AppServicePlan> [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzAppServicePlan** mengatur paket Layanan Aplikasi Azure.
+Cmdlet **Set-AzAppServicePlan** mengatur rencana Azure App Service.
 
 ## EXAMPLES
 
-### 1: Mengubah paket Layanan Aplikasi
+### 1: Mengubah paket App Service
 ```
 PS C:\>Set-AzAppServicePlan -ResourceGroupName "Default-Web-WestUS" -Name "ContosoASP" -PerSiteScaling $true
 ```
 
-Perintah ini mengatur opsi PerSiteScaling menjadi true pada paket Layanan Aplikasi bernama ContosoASP yang termasuk dalam grup sumber daya bernama Default-Web-WestUS.
+Perintah ini mengatur opsi PerSiteScaling menjadi true pada paket App Service bernama ContosoASP yang termasuk dalam grup sumber daya bernama Default-Web-WestUS.
 
 ## PARAMETERS
 
-### -AdminSiteName
+### -AdminsiteName
 Nama Situs Admin
 
 ```yaml
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppServicePlan
-Objek Paket Layanan Aplikasi
+Objek Rencana App Service
 
 ```yaml
 Type: AppServicePlan
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Paket Layanan Aplikasi
+Nama Rencana App Service
 
 ```yaml
 Type: String
@@ -123,8 +123,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PerSiteScaling
-Boolean Penskalaan Per Situs
+### -Persitescaling
+Per Boolean Penskalaan Situs
 
 ```yaml
 Type: Boolean
@@ -153,7 +153,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tier
+### -Tingkat
 Tier
 
 ```yaml
@@ -185,7 +185,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -200,12 +200,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### ServerFarmWithRichSku
-Parameter 'AppServicePlan' menerima nilai tipe 'ServerFarmWithRichSku' dari saluran
+### ServerFarmWithRichsku
+Parameter 'AppServicePlan' menerima nilai tipe 'ServerFarmWithRichSku' dari pipeline
 
 ## OUTPUTS
 
@@ -219,9 +219,9 @@ Parameter 'AppServicePlan' menerima nilai tipe 'ServerFarmWithRichSku' dari salu
 
 [New-AzWebApp](./New-AzWebApp.md)
 
-[Remove-AzWebApp](./Remove-AzWebApp.md)
+[Hapus-AzWebApp](./Remove-AzWebApp.md)
 
-[Restart-AzWebApp](./Restart-AzWebApp.md)
+[Mulai ulang-AzWebApp](./Restart-AzWebApp.md)
 
 [Start-AzWebApp](./Start-AzWebApp.md)
 

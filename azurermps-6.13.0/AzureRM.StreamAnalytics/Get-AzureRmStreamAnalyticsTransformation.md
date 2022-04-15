@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/StreamAnalytics/Commands.StreamAnalytics/help/Get-AzureRmStreamAnalyticsTransformation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/StreamAnalytics/Commands.StreamAnalytics/help/Get-AzureRmStreamAnalyticsTransformation.md
 ms.openlocfilehash: d83038d521e562ec835324dd50740ec929fb5893
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424156"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142314372"
 ---
 # Get-AzureRmStreamAnalyticsTransformation
 
 ## SYNOPSIS
-Mendapatkan informasi tentang transformasi pekerjaan Analitik Stream.
+Mendapatkan informasi tentang transformasi pekerjaan Stream Analytics.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,11 +28,11 @@ Get-AzureRmStreamAnalyticsTransformation [-JobName] <String> [-Name] <String> [-
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmStreamAnalyticsTransformation** mendapatkan informasi tentang transformasi yang ditetapkan pada pekerjaan Analitik Stream.
+Cmdlet **Get-AzureRmStreamAnalyticsTransformation** mendapatkan informasi tentang transformasi yang ditentukan pada pekerjaan Stream Analytics.
 
 ## EXAMPLES
 
-### CONTOH 1: Mendapatkan informasi tentang transformasi Analitik Streaming
+### CONTOH 1: Mendapatkan informasi tentang transformasi Stream Analytics
 ```
 PS C:\>Get-AzureRmStreamAnalyticsTransformation -ResourceGroupName "StreamAnalytics-Default-West-US" -JobName "StreamingJob" -Name "StreamingJob"
 ```
@@ -42,7 +42,7 @@ Perintah ini mengembalikan informasi tentang transformasi yang disebut Streaming
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobName
-Menentukan nama pekerjaan Analitik Azure Stream tempat transformasi Analitik Azure Stream berada.
+Menentukan nama pekerjaan Azure Stream Analytics tempat transformasi Azure Stream Analytics berada.
 
 ```yaml
 Type: System.String
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama transformasi Analitik Azure Stream untuk diambil.
+Menentukan nama transformasi Azure Stream Analytics untuk diambil.
 
 ```yaml
 Type: System.String
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat transformasi Analitik Azure Stream berada.
+Menentukan nama grup sumber daya tempat transformasi Azure Stream Analytics berada.
 
 ```yaml
 Type: System.String
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
