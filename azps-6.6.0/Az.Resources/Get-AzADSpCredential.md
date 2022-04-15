@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADSpCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADSpCredential.md
 ms.openlocfilehash: 3f27cf41123b5ff8a9fe14aacf38fb2d492f4224
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140389811"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142300479"
 ---
 # Get-AzADSpCredential
 
@@ -21,7 +21,7 @@ Mengambil daftar kredensial yang terkait dengan prinsipal layanan.
 [!INCLUDE [msgraph-migration-banner](../../includes/msgraph-migration-banner.md)]
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azadspcredential) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azadspcredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,12 +48,12 @@ Get-AzADSpCredential -ServicePrincipalObject <PSADServicePrincipal> [-DefaultPro
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzADSpCredential ini dapat digunakan untuk mengambil daftar kredensial yang terkait dengan prinsipal layanan.
+Cmdlet Get-AzADSpCredential dapat digunakan untuk mengambil daftar kredensial yang terkait dengan prinsipal layanan.
 Perintah ini akan mengambil semua properti kredensial (tetapi bukan nilai kredensial) yang terkait dengan prinsipal layanan.
 
 ## EXAMPLES
 
-### Contoh 1: Kredensial daftar dengan SPN
+### Contoh 1: Daftar kredensial menurut SPN
 
 ```powershell
 PS C:\> Get-AzADSpCredential -ServicePrincipalName http://test12345
@@ -61,26 +61,26 @@ PS C:\> Get-AzADSpCredential -ServicePrincipalName http://test12345
 
 Mengembalikan daftar kredensial yang terkait dengan prinsipal layanan dengan SPN 'http://test12345'.
 
-### Contoh 2: Kredensial daftar berdasarkan id objek
+### Contoh 2: Daftar kredensial menurut id objek
 
 ```powershell
 PS C:\> Get-AzADSpCredential -ObjectId 58e28616-99cc-4da4-b705-7672130e1047
 ```
 
-Mengembalikan daftar kredensial yang terkait dengan prinsipal layanan dengan id objek "58e28616-99cc-4da4-b705-7672130e1047".
+Mengembalikan daftar kredensial yang terkait dengan prinsipal layanan dengan object id "58e28616-99cc-4da4-b705-7672130e1047".
 
-### Contoh 3: Kredensial daftar dengan pemipaan
+### Contoh 3: Mencantumkan kredensial dengan pipa
 
 ```powershell
 PS C:\> Get-AzADServicePrincipal -ObjectId 58e28616-99cc-4da4-b705-7672130e1047 | Get-AzADSpCredential
 ```
 
-Dapatkan prinsipal layanan dengan id objek "58e28616-99cc-4da4-b705-7672130e1047" dan  pipes ke cmdlet Get-AzADSpCredential untuk mencantumkan semua kredensial untuk prinsipal layanan tersebut.
+Mendapatkan prinsipal layanan dengan id objek "58e28616-99cc-4da4-b705-7672130e1047" dan menyalurkannya ke cmdlet Get-AzADSpCredential untuk mencantumkan semua kredensial untuk prinsipal layanan tersebut.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Id objek prinsipal layanan untuk mengambil kredensial dari.
+Id objek dari prinsipal layanan untuk mengambil kredensial dari.
 
 ```yaml
 Type: System.String
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalName
-Nama (SPN) prinsipal layanan untuk mengambil kredensial dari.
+Nama (SPN) pokok layanan untuk mengambil kredensial dari.
 
 ```yaml
 Type: System.String
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalObject
-Objek prinsipal layanan untuk mengambil kredensial dari.
+Objek pokok layanan untuk mengambil kredensial dari.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ActiveDirectory.PSADServicePrincipal
@@ -155,17 +155,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### Microsoft.Azure.Commands.ActiveDirectory.LINUXDServicePrincipal
+### Microsoft.Azure.Commands.ActiveDirectory.PSADServicePrincipal
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.ActiveDirectory.LINUXDCredential
+### Microsoft.Azure.Commands.ActiveDirectory.PSADCredential
 
 ## CATATAN
 

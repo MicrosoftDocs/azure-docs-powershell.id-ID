@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricManagedClusterService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricManagedClusterService.md
 ms.openlocfilehash: 25edbeedf27d79c9e6c47b274dc01c70c45312b6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140458970"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142299481"
 ---
 # New-AzServiceFabricManagedClusterService
 
 ## SYNOPSIS
-Create new service fabric managed service under the specified application and cluster.
+Buat servis servis baru yang dikelola kain di bawah aplikasi dan kluster yang ditentukan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/new-azservicefabricmanagedclusterservice) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/new-azservicefabricmanagedclusterservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -95,7 +95,7 @@ New-AzServiceFabricManagedClusterService [-ResourceGroupName] <String> [-Cluster
 ```
 
 ## DESCRIPTION
-Cmdlet ini memungkinkan pembuatan layanan yang dikelola secara stateless atau stateful di bawah aplikasi yang ditentukan. Layanan harus keluar di manifes aplikasi dan tipenya harus sama dengan yang ada di manifes. Nama aplikasi harus merupakan prefiks nama layanan.
+Cmdlet ini memungkinkan untuk membuat layanan yang terkelola tanpa status atau stateful di bawah aplikasi yang ditentukan. Layanan harus keluar dalam manifes aplikasi dan tipenya harus sama dengan yang ada di manifes. Nama aplikasi harus berupa prefiks nama layanan.
 
 ## EXAMPLES
 
@@ -110,7 +110,7 @@ PS C:\> $statelessServiceMetric = New-Object -TypeName "Microsoft.Azure.Commands
 PS C:\> New-AzServiceFabricManagedClusterService -ResourceGroupName $resourceGroupName -ClusterName $clusterName -ApplicationName $appName -Name $serviceName -Type $serviceTypeName -Stateless -InstanceCount -1 -PartitionSchemaSingleton -Metric @($statelessServiceMetric) -Verbose
 ```
 
-Contoh ini akan membuat layanan terkelola tanpa status baru "testService1" dengan jumlah instans -1 (di semua node).
+Contoh ini akan membuat layanan terkelola tanpa status baru "testService1" dengan hitungan instans -1 (di semua node).
 
 ### Contoh 2
 ```powershell
@@ -126,7 +126,7 @@ PS C:\> $statefulServiceMetric = New-Object -TypeName "Microsoft.Azure.Commands.
 PS C:\> New-AzServiceFabricManagedClusterService -ResourceGroupName $resourceGroupName -ClusterName $clusterName -ApplicationName $appName -Name $serviceName -Type $serviceTypeName -Stateful -TargetReplicaSetSize 5 -MinReplicaSetSize 3 -Metric @($statefulServiceMetric) -PartitionSchemeUniformInt64 -PartitionCount $partitionCount -LowKey $partitionLowKey -HighKey $partitionHighKey -Verbose
 ```
 
-Contoh ini akan membuat layanan terkelola baru "testService2" dengan target 5 node.
+Contoh ini akan membuat "testService2" layanan terkelola status baru dengan target 5 node.
 
 ### Contoh 3
 ```powershell
@@ -146,7 +146,7 @@ Contoh ini akan membuat layanan terkelola tanpa status baru "testService3".
 ## PARAMETERS
 
 ### -ApplicationName
-Tentukan nama dari aplikasi yang dikelola.
+Tentukan nama aplikasi yang dikelola.
 
 ```yaml
 Type: System.String
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,8 +190,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Korelasi
-Menentukan batasan penempatan layanan terkelola sebagai string.
+### -Korlasi
+Tentukan batasan penempatan layanan terkelola, sebagai string.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.PSServiceCorrelation[]
@@ -206,8 +206,8 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultMoveCost
-Tentukan biaya default untuk pemindahan.
-Biaya yang lebih tinggi semakin kecil kemungkinan Pengelola Sumber Daya Kluster akan memindahkan replika saat mencoba menyeimbangkan kluster tersebut
+Tentukan biaya default untuk perpindahan.
+Biaya yang lebih tinggi memperkecil kemungkinan cluster Resource Manager akan memindahkan replika ketika mencoba menyeimbangkan kluster
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.MoveCostEnum
@@ -237,7 +237,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Lanjutkan tanpa perintah
 
 ```yaml
@@ -253,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### -HasPersistedState
-Menentukan ukuran rangkaian replika target untuk layanan terkelola
+Menentukan ukuran kumpulan replika target untuk layanan terkelola
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -283,7 +283,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceCount
-Menentukan jumlah instans untuk layanan yang dikelola
+Menentukan hitungan instans untuk layanan terkelola
 
 ```yaml
 Type: System.Int32
@@ -312,8 +312,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Metric
-Menentukan batasan penempatan layanan terkelola sebagai string.
+### -Metrik
+Tentukan batasan penempatan layanan terkelola, sebagai string.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.PSServiceMetric[]
@@ -328,7 +328,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinInstanceCount
-Menentukan jumlah instans minimum untuk layanan terkelola
+Menentukan hitungan instans minimum untuk layanan yang dikelola
 
 ```yaml
 Type: System.Int32
@@ -343,7 +343,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinInstancePercentage
-Menentukan persentase contoh minimum untuk layanan terkelola
+Menentukan persentase instans minimum untuk layanan yang dikelola
 
 ```yaml
 Type: System.Int32
@@ -358,7 +358,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinReplicaSetSize
-Menentukan ukuran rangkaian replika menit untuk layanan terkelola
+Menentukan ukuran kumpulan replika min untuk layanan yang dikelola
 
 ```yaml
 Type: System.Int32
@@ -388,7 +388,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartitionCount
-Menentukan jumlah partisi.
+Tentukan jumlah partisi.
 
 ```yaml
 Type: System.Int32
@@ -403,7 +403,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartitionName
-Menunjukkan bahwa layanan menggunakan skema partisi bernama. Layanan yang menggunakan model ini biasanya berisi data yang dapat di bucketed, di dalam sebuah kumpulan terikat. Beberapa contoh umum bidang data yang digunakan sebagai kunci partisi bernama akan menjadi kawasan, kode pos, grup pelanggan, atau batas bisnis lainnya.
+Menunjukkan bahwa layanan menggunakan skema partisi bernama. Layanan yang menggunakan model ini biasanya memiliki data yang dapat di-bucket, dalam rangkaian terikat. Beberapa contoh umum bidang data yang digunakan sebagai kunci partisi bernama adalah kawasan, kode pos, grup pelanggan, atau batas bisnis lainnya.
 
 ```yaml
 Type: System.String[]
@@ -419,8 +419,8 @@ Accept wildcard characters: False
 
 ### -PartitionSchemeNamed
 Menunjukkan bahwa layanan menggunakan skema partisi bernama.
-Layanan yang menggunakan model ini biasanya berisi data yang dapat di bucketed, di dalam sebuah kumpulan terikat.
-Beberapa contoh umum bidang data yang digunakan sebagai kunci partisi bernama akan menjadi kawasan, kode pos, grup pelanggan, atau batas bisnis lainnya.
+Layanan yang menggunakan model ini biasanya memiliki data yang dapat di-bucket, dalam rangkaian terikat.
+Beberapa contoh umum bidang data yang digunakan sebagai kunci partisi bernama adalah kawasan, kode pos, grup pelanggan, atau batas bisnis lainnya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -435,8 +435,8 @@ Accept wildcard characters: False
 ```
 
 ### -PartitionSchemeSingleton
-Menunjukkan bahwa layanan menggunakan skema partisi tunggal.
-Partisi tunggal biasanya digunakan saat layanan tidak memerlukan perutean tambahan apa pun.
+Menunjukkan bahwa layanan menggunakan skema partisi singleton.
+Partisi singleton biasanya digunakan ketika layanan tidak memerlukan perutean tambahan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -452,7 +452,7 @@ Accept wildcard characters: False
 
 ### -PartitionSchemeUniformInt64
 Menunjukkan bahwa layanan menggunakan skema partisi UniformInt64.
-Ini berarti bahwa setiap partisi memiliki rentang tombol int64.
+Ini berarti bahwa setiap partisi memiliki rentang kunci int64.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -467,7 +467,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlacementConstraint
-Menentukan batasan penempatan layanan terkelola sebagai string.
+Tentukan batasan penempatan layanan terkelola, sebagai string.
 
 ```yaml
 Type: System.String
@@ -481,9 +481,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -EkslosLossWaitDuration
-Tentukan durasi tunggu kerugian jangka waktu untuk layanan yang dikelola.
-Durasi yang dinyatakan dalam format ISO 8601 'hh:mm:ss'
+### -QuorumLossWaitDuration
+Tentukan durasi tunggu kehilangan kuorum untuk layanan yang dikelola.
+Durasi dinyatakan dalam format ISO 8601 'hh:mm:ss'
 
 ```yaml
 Type: System.TimeSpan
@@ -499,7 +499,7 @@ Accept wildcard characters: False
 
 ### -ReplicaRestartWaitDuration
 Tentukan durasi tunggu mulai ulang replika untuk layanan yang dikelola.
-Durasi yang dinyatakan dalam format ISO 8601 'hh:mm:ss'
+Durasi dinyatakan dalam format ISO 8601 'hh:mm:ss'
 
 ```yaml
 Type: System.TimeSpan
@@ -529,8 +529,8 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePackageActivationMode
-Tentukan biaya default untuk pemindahan.
-Biaya yang lebih tinggi semakin kecil kemungkinan Pengelola Sumber Daya Kluster akan memindahkan replika saat mencoba menyeimbangkan kluster tersebut
+Tentukan biaya default untuk perpindahan.
+Biaya yang lebih tinggi memperkecil kemungkinan cluster Resource Manager akan memindahkan replika ketika mencoba menyeimbangkan kluster
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.ServicePackageActivationModeEnum
@@ -546,8 +546,8 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePlacementTimeLimit
-Tentukan batas waktu penempatan layanan untuk layanan terkelola.
-Durasi yang dinyatakan dalam format ISO 8601 'hh:mm:ss'
+Tentukan batas waktu penempatan layanan untuk layanan yang dikelola.
+Durasi dinyatakan dalam format ISO 8601 'hh:mm:ss'
 
 ```yaml
 Type: System.TimeSpan
@@ -562,8 +562,8 @@ Accept wildcard characters: False
 ```
 
 ### -StandByReplicaKeepDuration
-Tentukan durasi replika untuk layanan terkelola.
-Durasi yang dinyatakan dalam format ISO 8601 'hh:mm:ss'
+Tentukan durasi tribun demi replika untuk layanan yang dikelola.
+Durasi dinyatakan dalam format ISO 8601 'hh:mm:ss'
 
 ```yaml
 Type: System.TimeSpan
@@ -578,7 +578,7 @@ Accept wildcard characters: False
 ```
 
 ### -Stateful
-Gunakan untuk layanan yang jelas
+Gunakan untuk layanan bernegara
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -623,7 +623,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetReplicaSetSize
-Menentukan ukuran rangkaian replika target untuk layanan terkelola
+Menentukan ukuran kumpulan replika target untuk layanan terkelola
 
 ```yaml
 Type: System.Int32
@@ -638,7 +638,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Tentukan nama jenis layanan dari aplikasi yang dikelola, harus ada di manifes aplikasi.
+Tentukan nama tipe layanan aplikasi yang dikelola, harus ada dalam manifes aplikasi.
 
 ```yaml
 Type: System.String
@@ -653,7 +653,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -669,7 +669,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -684,7 +684,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

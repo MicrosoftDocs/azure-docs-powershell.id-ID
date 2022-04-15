@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateDiscoveredServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateDiscoveredServer.md
-ms.openlocfilehash: de449283246792bc863ebecdda5403eabf843952
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6e36bf7efaee31760200488890dd2fe33e1b8d90
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140556102"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142291831"
 ---
 # Get-AzMigrateDiscoveredServer
 
 ## SYNOPSIS
 Dapatkan Semua server yang ditemukan dalam proyek migrasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.migrate/get-azmigratediscoveredserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzMigrateDiscoveredServer -ProjectName <String> -ResourceGroupName <String> 
  [-SubscriptionId <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzMigrateDiscoveredServer -Name <String> -ProjectName <String> -ResourceGroupName <String>
  [-SubscriptionId <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
@@ -37,7 +40,7 @@ Get-AzMigrateDiscoveredServer -ApplianceName <String> -Name <String> -ProjectNam
  -ResourceGroupName <String> [-SubscriptionId <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### ListInSite
+### Situs Web ListIn
 ```
 Get-AzMigrateDiscoveredServer -ApplianceName <String> -ProjectName <String> -ResourceGroupName <String>
  [-DisplayName <String>] [-SubscriptionId <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
@@ -67,7 +70,7 @@ idclab-a360-fareast-corp-micros-86617dcf-effe-59ad-8c3a-cdd3ea7300d3_5029cc18-ef
 
 ```
 
-Dapatkan Semua server dalam proyek migrasi.
+Dapatkan Semua server dalam proyek yang dimigrasikan.
 
 ### Contoh 2: Dapatkan
 ```powershell
@@ -79,10 +82,10 @@ idclab-a360-fareast-corp-micros-86617dcf-effe-59ad-8c3a-cdd3ea7300d3_5029e62c-31
 
 ```
 
-Dapatkan server dalam proyek migrasi menurut nama.
-Nama adalah paramenter yang unik untuk server.
+Dapatkan server dalam migrasi proyek menurut nama.
+Nama adalah penerjun unik untuk server.
 
-### Contoh 3: List in an appliance
+### Contoh 3: Daftar dalam alat
 ```powershell
 PS C:\> Get-AzMigrateDiscoveredServer  -ApplianceName BBVMwareAVS -SubscriptionId xxx-xxx-xxx -ResourceGroupName julytest -ProjectName julytest
 
@@ -101,7 +104,7 @@ idclab-a360-fareast-corp-micros-86617dcf-effe-59ad-8c3a-cdd3ea7300d3_5029cc18-ef
 
 ```
 
-Daftar semua server untuk peralatan dalam sebuah proyek.
+Mencantumkan semua server untuk peralatan dalam sebuah proyek.
 
 ### Contoh 4: Get in an appliance
 ```powershell
@@ -114,7 +117,7 @@ idclab-a360-fareast-corp-micros-86617dcf-effe-59ad-8c3a-cdd3ea7300d3_5029e62c-31
 ```
 
 Dapatkan server untuk peralatan dalam proyek.
-Nama adalah paramenter yang unik untuk server.
+Nama adalah penerjun unik untuk server.
 
 ### Contoh 5: Daftar dan filter menurut nama tampilan
 ```powershell
@@ -132,9 +135,9 @@ ContosoAppSrv1                10-150-8-52-b090bef3-b733-5e34-bc8f-eb6f2701432a_5
 
 ```
 
-Server daftar di proyek migrasi dan memfilter respons dengan nama tampilan.
+Server daftar dalam proyek yang dimigrasikan dan filter respons dengan nama tampilan.
 
-### Contoh 6: List in an appliance and filter by display name
+### Contoh 6: Daftar dalam alat dan filter menurut nama tampilan
 ```powershell
 PS C:\> PS /src/Migrate [Az.Migrate]> Get-AzMigrateDiscoveredServer  -SubscriptionId xxx-xxx-xxx -ResourceGroupName BugBashAVSVMware -ProjectName BugBashAVSVMware -ApplianceName BBVMwareAVS -DisplayName Contoso | Format-Table DisplayName,Name,Type
 
@@ -150,12 +153,12 @@ ContosoAppSrv1                10-150-8-52-b090bef3-b733-5e34-bc8f-eb6f2701432a_5
 Contoso-DataTier3             10-150-8-52-b090bef3-b733-5e34-bc8f-eb6f2701432a_500986e5-7720-471e-11d7-d4e8ae9edc45 Microsoft.OffAzure/VMwareSites/machines
 ```
 
-Server daftar untuk alat dalam proyek migrasi dan memfilter respons dengan nama tampilan.
+Server daftar untuk peralatan dalam migrasi proyek dan memfilter respons dengan nama tampilan.
 
 ## PARAMETERS
 
 ### -ApplianceName
-Menentukan nama perlengkapan.
+Menentukan nama alat.
 Ini secara internal memetakan ke situs.
 
 ```yaml
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama komputer VMware.
+Menentukan nama mesin VMware.
 Ini adalah Nama internal.
 Untuk pengguna, gunakan nama tampilan.
 
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProjectName
-Menentukan nama proyek migrasi.
+Menentukan nama proyek yang dimigrasikan.
 
 ```yaml
 Type: System.String
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

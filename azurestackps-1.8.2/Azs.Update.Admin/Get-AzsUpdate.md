@@ -3,12 +3,12 @@ external help file: Azs.Update.Admin-help.xml
 Module Name: Azs.Update.Admin
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: f8819e4593c79d38e23354b4439bfe3146d1ae19333ea30c75c751772bc1af7d
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 87bab7bc266a77d9459bb0a3166d09f2b7d6c7de
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418252"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142310353"
 ---
 # Get-AzsUpdate
 
@@ -23,7 +23,7 @@ Get-AzsUpdate [-Location <String>] [-ResourceGroupName <String>] [-Skip <Int32>]
  [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsUpdate [-Name] <String> [-Location <String>] [-ResourceGroupName <String>] [<CommonParameters>]
 ```
@@ -34,7 +34,7 @@ Get-AzsUpdate -ResourceId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Dapatkan daftar pembaruan yang tersedia. Pembaruan yang dikembalikan dari modul ini mungkin disambung ke 'Install-AzsUpdate', jika ada.
+Dapatkan daftar pembaruan yang tersedia. Pembaruan yang dikembalikan dari modul ini mungkin disalurkan ke 'Install-AzsUpdate', jika ada.
 
 ## EXAMPLES
 
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup sumber daya sumber daya yang berada di bawahnya.
+Grup sumber daya tempat sumber daya berada di bawah.
 
 ```yaml
 Type: String
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

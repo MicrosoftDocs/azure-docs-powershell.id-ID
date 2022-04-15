@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementProduct.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementProduct.md
 ms.openlocfilehash: 1111412abbfb1790843809a6745af640d783c3af
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140314099"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142307833"
 ---
 # Get-AzApiManagementProduct
 
@@ -19,7 +19,7 @@ ms.locfileid: "140314099"
 Mendapatkan daftar atau produk tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementproduct) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementproduct) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -58,20 +58,20 @@ PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default
 PS C:\>Get-AzApiManagementProduct -Context $apimContext
 ```
 
-Perintah ini akan mendapatkan semua produk Manajemen API.
+Perintah ini mendapatkan semua produk Manajemen API.
 
-### Contoh 2: Dapatkan produk menurut ID
+### Contoh 2: Dapatkan produk berdasarkan ID
 ```
 PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzApiManagementProduct -Context $apimContext -ProductId "0123456789"
 ```
 
-Perintah ini mendapatkan produk Manajemen API menurut ID.
+Perintah ini mendapatkan produk Manajemen API berdasarkan ID.
 
 ## PARAMETERS
 
 ### -ApiId
-ApiId Dari Api untuk menemukan produk korelasi. Parameter ini bersifat opsional.
+ApiId api untuk menemukan produk yang berkorelasi. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -131,8 +131,8 @@ Accept wildcard characters: False
 ```
 
 ### -Judul
-Menentukan judul produk untuk mencari.
-Jika ditentukan, cmdlet akan berusaha mendapatkan produk menurut judul.
+Menentukan judul produk yang akan dicari.
+Jika ditentukan, cmdlet berusaha mendapatkan produk berdasarkan judul.
 
 ```yaml
 Type: System.String
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

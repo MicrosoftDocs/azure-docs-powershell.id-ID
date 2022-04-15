@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/New-AzVmssIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/New-AzVmssIpConfig.md
 ms.openlocfilehash: 41b176d5952e9a33d0d0868b97fc71a14d6b43d8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132414142"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142309039"
 ---
 # New-AzVmssIpConfig
 
@@ -29,8 +29,8 @@ New-AzVmssIpConfig [[-Name] <String>] [[-Id] <String>] [[-SubnetId] <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzVmssIpConfig** membuat objek konfigurasi IP untuk antarmuka jaringan Virtual Machine Scale Set (VMSS).
-Tentukan konfigurasi dari cmdlet ini sebagai parameter *IPConfiguration* cmdlet Add-AzVmssNetworkInterfaceConfiguration cmdlet.
+Cmdlet **New-AzVmsIpConfig** membuat objek konfigurasi IP untuk antarmuka jaringan Kumpulan Skala Mesin Virtual (VMSS).
+Tentukan konfigurasi dari cmdlet ini sebagai parameter *KONFIGURASI IP* cmdlet Add-AzVmssNetworkInterfaceConfiguration.
 
 ## EXAMPLES
 
@@ -41,24 +41,24 @@ PS C:\> $IPConfiguration = New-AzVmssIPConfig -Name "ContosoVmssInterface02" -Su
 
 Perintah ini membuat objek konfigurasi IP bernama ContosoVmssInterface02.
 Perintah menggunakan ID subnet yang ditentukan sebelumnya yang disimpan di $SubnetId.
-Perintah menyimpan pengaturan konfigurasi di variabel $IPConfiguration untuk digunakan nanti dengan **Add-AzVmssNetworkInterfaceConfiguration**.
+Perintah menyimpan pengaturan konfigurasi dalam variabel $IPConfiguration untuk digunakan nanti dengan **Add-AzVmssNetworkInterfaceConfiguration**.
 
-### Contoh 2: Buat objek konfigurasi IP yang mencakup pengaturan pool NAT
+### Contoh 2: Membuat objek konfigurasi IP yang menyertakan pengaturan kumpulan NAT
 ```
 PS C:\> $IPConfiguration = New-AzVmssIPConfig -Name "ContosoVmssInterface03" -LoadBalancerInboundNatPoolsId $expectedLb.InboundNatPools[0].Id -LoadBalancerBackendAddressPoolsId $expectedLb.BackendAddressPools[0].Id -SubnetId $SubnetId
 ```
 
-Perintah ini akan membuat objek konfigurasi IP bernama ContosoVmssInterface03, lalu menyimpannya dalam variabel $IPConfiguration untuk digunakan nanti.
+Perintah ini membuat objek konfigurasi IP bernama ContosoVmssInterface03, lalu menyimpannya dalam variabel $IPConfiguration untuk digunakan nanti.
 Perintah menggunakan ID subnet yang ditentukan sebelumnya yang disimpan di $SubnetId.
-Perintah menyimpan pengaturan konfigurasi di variabel $IPConfiguration digunakan nanti.
+Perintah menyimpan pengaturan konfigurasi dalam variabel $IPConfiguration untuk digunakan nanti.
 Perintah menentukan nilai untuk parameter *LoadBalancerInboundNatPoolsId* dan *LoadBalancerBackendAddressPoolsId* .
 
 ## PARAMETERS
 
 ### -ApplicationGatewayBackendAddressPoolsId
-Menentukan array referensi ke alamat backend yang memuat keseimbangan.
-Kumpulan skala bisa merujuk ke kolam renang alamat backend dari satu publik dan satu penyeimbang muat internal.
-Beberapa kumpulan skala tidak dapat menggunakan penyeimbang muat yang sama.
+Menentukan array referensi ke kumpulan alamat backend dari load balancer.
+Kumpulan skala dapat mereferensikan kumpulan alamat backend dari satu publik dan satu penyeimbang muatan internal.
+Beberapa kumpulan skala tidak dapat menggunakan penyeimbang muatan yang sama.
 
 ```yaml
 Type: String[]
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -89,8 +89,8 @@ Accept wildcard characters: False
 
 ### -DnsSetting
 Pengaturan dns yang akan diterapkan pada alamat publicIP.
-Label nama domain dari pengaturan Dns yang akan diterapkan pada alamat publicIP.
-Penggabungan label nama domain dan indeks vm akan menjadi label nama domain dari sumber daya Alamat IP Publik yang akan dibuat.
+Label nama domain pengaturan Dns yang akan diterapkan pada alamat publicIP.
+Penggambatan label nama domain dan indeks vm akan menjadi label nama domain sumber daya Alamat IP Publik yang akan dibuat.
 
 ```yaml
 Type: String
@@ -120,9 +120,9 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerBackendAddressPoolsId
-Menentukan array referensi ke kolam renang nat alamat jaringan masuk (NAT, Incoming Network Address Translation) dari keseimbangan muat.
-Kumpulan skala dapat merujuk ke kolam renang NAT yang masuk dari satu publik dan satu penyeimbang muat internal.
-Beberapa kumpulan skala tidak dapat menggunakan penyeimbang muat yang sama.
+Menentukan array referensi ke kumpulan penerjemahan alamat jaringan masuk (NAT) dari penyeimbang muatan.
+Kumpulan skala dapat mereferensikan kumpulan NAT masuk dari satu publik dan satu penyeimbang muatan internal.
+Beberapa kumpulan skala tidak dapat menggunakan penyeimbang muatan yang sama.
 
 ```yaml
 Type: String[]
@@ -137,9 +137,9 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerInboundNatPoolsId
-Menentukan array referensi ke kolam renang NAT yang masuk dari keseimbangan muat.
-Kumpulan skala dapat merujuk ke kolam renang NAT yang masuk dari satu publik dan satu penyeimbang muat internal.
-Beberapa kumpulan skala tidak dapat menggunakan penyeimbang muat yang sama.
+Menentukan array referensi ke kumpulan NAT masuk dari penyeimbang muatan.
+Kumpulan skala dapat mereferensikan kumpulan NAT masuk dari satu publik dan satu penyeimbang muatan internal.
+Beberapa kumpulan skala tidak dapat menggunakan penyeimbang muatan yang sama.
 
 ```yaml
 Type: String[]
@@ -168,7 +168,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Utama
+### -Primer
 Menentukan Konfigurasi IP utama jika antarmuka jaringan memiliki lebih dari satu Konfigurasi IP.
 
 ```yaml
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateIPAddressVersion
-Tentukan konfigurasi ip adalah IPv4 atau IPv6. Default dianggap sebagai IPv4.  Nilai yang mungkin adalah: 'IPv4' dan 'IPv6'.
+Tentukan konfigurasi ip adalah IPv4 atau IPv6. Default diambil sebagai IPv4.  Nilai yang memungkinkan adalah: 'IPv4' dan 'IPv6'.
 
 ```yaml
 Type: String
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIPAddressConfigurationIdleTimeoutInMinutes
-Waktu diam habis dari alamat IP publik.
+Waktu habis menganggur alamat IP publik.
 
 ```yaml
 Type: Int32
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetId
-Menentukan ID subnet yang digunakan untuk membuat antarmuka jaringan VMSS.
+Menentukan ID subnet tempat konfigurasi membuat antarmuka jaringan VMSS.
 
 ```yaml
 Type: String
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -259,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -274,11 +274,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS

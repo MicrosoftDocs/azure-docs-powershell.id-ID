@@ -3,17 +3,17 @@ external help file: Azs.Compute.Admin-help.xml
 Module Name: Azs.Compute.Admin
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: fbecbcb981b17c2e1291d57c9582bbd12265302fd2af4581a4db3e108099cd56
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 819cdc45e75c15c38c9ae28c583ac3c73e54f4ac
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417011"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142310875"
 ---
 # Get-AzsComputeQuota
 
 ## SYNOPSIS
-Mengembalikan kuota yang menentukan batas kuota untuk objek perhitungan.
+Mengembalikan kuota yang menentukan batas kuota untuk objek komputasi.
 
 ## SYNTAX
 
@@ -22,7 +22,7 @@ Mengembalikan kuota yang menentukan batas kuota untuk objek perhitungan.
 Get-AzsComputeQuota [-Location <String>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsComputeQuota [-Name] <String> [-Location <String>] [<CommonParameters>]
 ```
@@ -33,7 +33,7 @@ Get-AzsComputeQuota -ResourceId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Mendapatkan daftar kuota yang ada.
+Dapatkan daftar kuota yang sudah ada.
 
 ## EXAMPLES
 
@@ -42,19 +42,19 @@ Mendapatkan daftar kuota yang ada.
 Get-AzsComputeQuota -Location 'local'
 ```
 
-Dapatkan semua kuota perhitungan di lokasi tertentu.
+Dapatkan semua kuota komputasi di lokasi yang ditentukan.
 
 ### -------------------------- CONTOH 2 --------------------------
 ```
 Get-AzsComputeQuota 'Default Quota'
 ```
 
-Dapatkan kuota perhitungan tertentu.
+Dapatkan kuota komputasi tertentu.
 
 ## PARAMETERS
 
 ### -Lokasi
-{{fill location description}}
+{{Fill Location Description}}
 
 ```yaml
 Type: String
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
