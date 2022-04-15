@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.attestation/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Get-AzAttestationPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Get-AzAttestationPolicy.md
-ms.openlocfilehash: 51082540d551b4cd1b90f3f66e073848f0f40634
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6effaccdb16675721605405d731d7ae67d75d278
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140189260"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142321900"
 ---
 # Get-AzAttestationPolicy
 
 ## SYNOPSIS
-Dapatkan kebijakan dari penyewa di Azure Attestation.
+Mendapatkan kebijakan dari penyewa di Azure Attestation.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.attestation/get-azattestationpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -67,7 +70,7 @@ JwtLength  : 1129
 Algorithm  : none
 ```
 
-Mendapatkan kebijakan untuk *Pshtest Penyedia Attestation untuk* Tipe *SgxEnclave*.
+Mendapatkan kebijakan untuk Penyedia Pengesahan *pshtest* untuk tipe Tee *SgxEnclave*.
 
 ### Contoh 2
 ```powershell
@@ -89,7 +92,7 @@ JwtLength  : 907
 Algorithm  : none
 ```
 
-Mendapatkan kebijakan untuk Penyedia Default Attestation dari Location *UK South* untuk Type *SgxEnclave*.
+Mendapatkan kebijakan untuk Penyedia Default Pengesahan dari Location *UK South* untuk tipe Tee *SgxEnclave*.
 
 ## PARAMETERS
 
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProvider
-Menentukan ini adalah permintaan ke penyedia attestation default.
+Menentukan ini adalah permintaan ke penyedia pengesahan default.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan Lokasi penyedia attestation default.
+Menentukan Lokasi penyedia penetapan default.
 
 ```yaml
 Type: System.String
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 
 ### -Nama
 Menentukan nama penyewa.
-Cmdlet ini mendapatkan kebijakan attestation untuk penyewa yang ditentukan parameter ini.
+Cmdlet ini mendapatkan kebijakan penetapan untuk penyewa yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya dari penyedia attestation.
+Menentukan nama grup sumber daya penyedia pengesahan.
 
 ```yaml
 Type: System.String
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan ResourceID dari penyedia attestation.
+Menentukan RESOURCEID penyedia atestation.
 
 ```yaml
 Type: System.String
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 
 ### -Tee
 Menentukan tipe Lingkungan Eksekusi Tepercaya.
-Kami mendukung empat tipe lingkungan: SgxEnclave, OpenEnclave, CyResComponent dan VBSEnclave.
+Kami mendukung empat jenis lingkungan: SgxEnclave, OpenEnclave, CyResComponent dan VBSEnclave.
 
 ```yaml
 Type: System.String
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

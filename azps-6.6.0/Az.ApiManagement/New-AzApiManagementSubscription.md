@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementSubscription.md
 ms.openlocfilehash: 07ff2f5f70a1f6648d78838538fb5202e253893f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139945537"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142377377"
 ---
 # New-AzApiManagementSubscription
 
@@ -19,7 +19,7 @@ ms.locfileid: "139945537"
 Membuat langganan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementsubscription) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementsubscription) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +48,7 @@ PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default
 PS C:\>New-AzApiManagementSubscription -Context $apimContext -UserId "777" -ProductId "999"
 ```
 
-Perintah ini berlangganan pengguna yang sudah ada ke sebuah produk.
+Perintah ini berlangganan pengguna yang sudah ada ke produk.
 
 ### Contoh 2: Membuat langganan untuk semua Lingkup Api
 ```powershell
@@ -65,7 +65,7 @@ PS C:\>New-AzApiManagementSubscription -Context $context -Scope "/products/start
 ## PARAMETERS
 
 ### -AllowTracing
-Bendera yang menentukan apakah Penelusuran bisa diaktifkan di Tingkat Langganan. Parameter ini opsional dan defaultnya $null.
+Benderai yang menentukan apakah Penelusuran dapat diaktifkan di Tingkat Langganan. Ini adalah parameter opsional dan defaultnya $null.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -125,9 +125,9 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryKey
-Menentukan kunci primer langganan.
+Menentukan kunci utama langganan.
 Jika parameter ini tidak ditentukan, kunci akan dihasilkan secara otomatis.
-Parameter ini harus memiliki panjang 1 hingga 300 karakter.
+Parameter ini harus panjangnya 1 hingga 300 karakter.
 
 ```yaml
 Type: System.String
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProductId
-Menentukan ID produk untuk berlangganan.
+Menentukan ID produk yang akan berlangganan.
 
 ```yaml
 Type: System.String
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Cakupan Langganan, baik Itu Lingkup Api /apis/{apiId} atau Cakupan Produk /products/{productId} atau Lingkup API Global /api atau Lingkup global /. Parameter ini diperlukan.
+Lingkup Langganan, baik itu Lingkup Api /apis/{apiId} atau Cakupan Produk /products/{productId} atau Cakupan API Global /apis atau lingkup Global /. Parameter ini diperlukan.
 
 ```yaml
 Type: System.String
@@ -173,8 +173,8 @@ Accept wildcard characters: False
 
 ### -SecondaryKey
 Menentukan kunci sekunder langganan.
-Parameter ini dihasilkan secara otomatis jika parameter tidak ditentukan.
-Parameter ini harus memiliki panjang 1 hingga 300 karakter.
+Parameter ini dihasilkan secara otomatis jika tidak ditentukan.
+Parameter ini harus panjangnya 1 hingga 300 karakter.
 
 ```yaml
 Type: System.String
@@ -249,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -257,7 +257,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Nullable'1[[Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementSubscriptionState, Microsoft.Azure.PowerShell.Cmdlets.ApiManagement.ServiceManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+### System.Nullable'1[[Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementSubscriptionState, Microsoft.Azure.PowerShell.Cmdlets.ApiManagement.ServiceManagement, Version=1.0.0.0, Culture=netral, PublicKeyToken=null]]
 
 ## OUTPUTS
 

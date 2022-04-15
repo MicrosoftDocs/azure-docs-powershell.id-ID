@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Set-AzSnapshotUpdateDiskEncryptionKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Set-AzSnapshotUpdateDiskEncryptionKey.md
 ms.openlocfilehash: c427c63e6d7e954e2ce832b3d6e5fe3bf7c4a851
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132414096"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142351529"
 ---
 # Set-AzSnapshotUpdateDiskEncryptionKey
 
@@ -26,7 +26,7 @@ Set-AzSnapshotUpdateDiskEncryptionKey [-SnapshotUpdate] <PSSnapshotUpdate> [[-Se
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSnapshotUpdateDiskEncryptionKey** mengatur properti kunci enkripsi disk pada objek pembaruan snapshot.
+**Cmdlet Set-AzSnapshotUpdateDiskEncryptionKey** mengatur properti kunci enkripsi disk pada objek pembaruan snapshot.
 
 ## EXAMPLES
 
@@ -42,14 +42,14 @@ PS C:\> $snapshotupdateconfig = Set-AzSnapshotUpdateKeyEncryptionKey -SnapshotUp
 PS C:\> Update-AzSnapshot -ResourceGroupName 'ResourceGroup01' -SnapshotName 'Snapshot01' -SnapshotUpdate $snapshotupdateconfig;
 ```
 
-Perintah pertama membuat objek pembaruan snapshot kosong lokal dengan ukuran 10GB di Premium_LRS akun penyimpanan.  Sistem juga mengatur Windows OS dan mengaktifkan pengaturan enkripsi.
-Perintah kedua dan ketiga mengatur kunci enkripsi disk dan pengaturan kunci enkripsi kunci untuk objek pembaruan snapshot.
-Perintah terakhir mengambil objek pembaruan snapshot dan memperbarui snapshot yang sudah ada dengan nama 'Snapshot01' di grup sumber daya 'ResourceGroup01'.
+Perintah pertama membuat objek pembaruan snapshot kosong lokal dengan ukuran 10GB dalam tipe akun penyimpanan Premium_LRS.  Ini juga mengatur tipe OS Windows dan mengaktifkan pengaturan enkripsi.
+Perintah kedua dan ketiga mengatur pengaturan kunci enkripsi disk dan kunci enkripsi kunci untuk objek pembaruan snapshot.
+Perintah terakhir mengambil objek pembaruan snapshot dan memperbarui snapshot yang sudah ada dengan nama 'Snapshot01' dalam grup sumber daya 'ResourceGroup01'.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -63,8 +63,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SecretUrl
-Url rahasia.
+### -Sekretaris
+Berspekulasi url rahasia.
 
 ```yaml
 Type: String
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceVaultId
-Menentukan ID penyimpanan sumber.
+Menentukan ID kubah sumber.
 
 ```yaml
 Type: String
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

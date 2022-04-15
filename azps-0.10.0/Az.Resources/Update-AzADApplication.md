@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/Update-AzADApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/Update-AzADApplication.md
 ms.openlocfilehash: 8eb01ccfa16b1d3610468f98117ee650376d4b6c
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "132414853"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142378151"
 ---
 # Update-AzADApplication
 
@@ -42,7 +42,7 @@ Update-AzADApplication -InputObject <PSADApplication> [-DisplayName <String>] [-
 
 ## DESCRIPTION
 Memperbarui aplikasi azure active directory yang sudah ada.
-Untuk memperbarui kredensial yang terkait dengan aplikasi ini, silakan gunakan cmdlet New-AzADAppCredential cmdlet.
+Untuk memperbarui kredensial yang terkait dengan aplikasi ini, silakan gunakan cmdlet New-AzADAppCredential.
 
 ## EXAMPLES
 
@@ -62,13 +62,13 @@ PS C:\> Update-AzADApplication -ObjectId fb7b3405-ca44-4b5b-8584-12392f5d96d7 -D
 
 Memperbarui properti aplikasi dengan id objek 'fb7b3405-ca44-4b5b-8584-12392f5d96d7'.
 
-### Contoh 3 - Memperbarui nama tampilan aplikasi menggunakan pemipaan
+### Contoh 3 - Memperbarui nama tampilan aplikasi menggunakan perpipaan
 
 ```
 PS C:\> Get-AzADApplication -ObjectId fb7b3405-ca44-4b5b-8584-12392f5d96d7 | Update-AzADApplication -DisplayName MyNewDisplayName
 ```
 
-Dapatkan aplikasi dengan id objek 'fb7b3405-ca44-4b5b-8584-12392f5d96d7' dan pipa yang ke cmdlet Update-AzADApplication untuk memperbarui nama tampilan aplikasi menjadi "MyNewDisplayName".
+Mendapatkan aplikasi dengan id objek 'fb7b3405-ca44-4b5b-8584-12392f5d96d7' dan pipa yang ke cmdlet Update-AzADApplication untuk memperbarui nama tampilan aplikasi ke "MyNewDisplayName".
 
 ## PARAMETERS
 
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Nama tampilan aplikasi untuk diperbarui.
+Nama tampilan untuk diperbarui oleh aplikasi.
 
 ```yaml
 Type: System.String
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Id objek aplikasi yang akan diperbarui.
+Id objek aplikasi untuk diperbarui.
 
 ```yaml
 Type: System.Guid
@@ -241,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplyUrl
-Menentukan URL yang dikirimkan token pengguna untuk masuk, atau URI pengalihan yang dikirimkan ke kode otorisasi dan token akses OAuth 2.0.
+Menentukan URL tempat token pengguna dikirim untuk masuk, atau URL pengalihan tempat kode otorisasi dan token akses OAuth 2.0 dikirim.
 
 ```yaml
 Type: System.String[]
@@ -268,7 +268,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -284,7 +284,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -299,13 +299,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.Guid
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.FOLDApplication
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADAplikasi
 Parameter: InputObject (ByValue)
 
 ### System.String
@@ -316,7 +316,7 @@ Parameter: InputObject (ByValue)
 
 ## OUTPUTS
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.FOLDApplication
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADAplikasi
 
 ## CATATAN
 

@@ -4,16 +4,16 @@ Module Name: AzureRM.Network
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/test-azurermnetworkwatcheripflow
 schema: 2.0.0
 ms.openlocfilehash: 6147697826dbc475c5871acab1f037af21c2b84d
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421050"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142361795"
 ---
 # Test-AzureRmNetworkWatcherIPFlow
 
 ## SYNOPSIS
-Mengembalikan apakah paket diizinkan atau ditolak untuk atau dari tujuan tertentu.
+Mengembalikan apakah paket diperbolehkan atau ditolak ke atau dari tujuan tertentu.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -36,11 +36,11 @@ Test-AzureRmNetworkWatcherIPFlow -NetworkWatcherName <String> -ResourceGroupName
 ```
 
 ## DESCRIPTION
-Cmdlet Test-AzureRmNetworkWatcherIPFlow, untuk sumber daya VM yang ditentukan dan paket dengan arah yang ditentukan menggunakan lokal dan jarak jauh, alamat IP, dan port, mengembalikan apakah paket diperbolehkan atau ditolak.
+Cmdlet Test-AzureRmNetworkWatcherIPFlow, untuk sumber daya VM tertentu dan paket dengan arah tertentu menggunakan lokal dan jarak jauh, alamat IP dan port, mengembalikan apakah paket diperbolehkan atau ditolak.
 
 ## EXAMPLES
 
-### --- Contoh 1: Jalankan Test-AzureRmNetworkWatcherIPFlow ---
+### contoh --- 1: Menjalankan Test-AzureRmNetworkWatcherIPFlow ---
 ```
 $nw = Get-AzurermResource | Where {$_.ResourceType -eq "Microsoft.Network/networkWatchers" -and $_.Location -eq "WestCentralUS" } 
 $networkWatcher = Get-AzureRmNetworkWatcher -Name $nw.Name -ResourceGroupName $nw.ResourceGroupName 
@@ -50,12 +50,12 @@ $Nics = Get-AzureRmNetworkInterface | Where {$_.Id -eq $vm.NetworkInterfaceIDs.F
 Test-AzureRmNetworkWatcherIPFlow -NetworkWatcher $networkWatcher -TargetVirtualMachineId $VM.Id -Direction Outbound -Protocol TCP -LocalIPAddress $nics[0].IpConfigurations[0].PrivateIpAddress -LocalPort 6895 -RemoteIPAddress 204.79.197.200 -RemotePort 80
 ```
 
-Dapatkan Network Watcher di West Central AS untuk langganan ini, lalu dapatkan VM dan Antarmuka Jaringan yang terkait. Lalu untuk Antarmuka Jaringan pertama, dijalankan Test-AzureRmNetworkWatcherIPFlow IP pertama dari Antarmuka Jaringan pertama untuk koneksi keluar ke IP di internet.
+Dapatkan Network Watcher di West Central US untuk langganan ini, lalu dapatkan VM dan Antarmuka Jaringan terkait. Lalu untuk Antarmuka Jaringan pertama, berjalan Test-AzureRmNetworkWatcherIPFlow menggunakan IP pertama dari Antarmuka Jaringan pertama untuk koneksi keluar ke IP di internet.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -LocalPort
-Port Lokal.
+Pelabuhan Lokal.
 
 ```yaml
 Type: String
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengawas jaringan.
+Sumber daya pengamat jaringan.
 
 ```yaml
 Type: PSNetworkWatcher
@@ -160,7 +160,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Protocol
+### -Protokol
 Protokol.
 
 ```yaml
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -264,15 +264,15 @@ System.String
 ### Microsoft.Azure.Commands.Network.Models.PSIPFlowVerifyResult
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, network, networking, network watcher, flow, ip 
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, aliran, ip 
 
 ## RELATED LINKS
 
-[New-AzureRmNetworkWatcher](./New-AzureRmNetworkWatcher.md)
+[AzureRmNetworkWatcher baru](./New-AzureRmNetworkWatcher.md)
 
 [Get-AzureRmNetworkWatcher](./Get-AzureRmNetworkWatcher.md)
 
-[Remove-AzureRmNetworkWatcher](./Remove-AzureRmNetworkWatcher.md)
+[Hapus-AzureRmNetworkWatcher](./Remove-AzureRmNetworkWatcher.md)
 
 [Get-AzureRmNetworkWatcherNextHop](./Get-AzureRmNetworkWatcherNextHop.md)
 
@@ -282,12 +282,12 @@ Kata kunci: azure, azurerm, arm, resource, management, manager, network, network
 
 [Start-AzureRmNetworkWatcherResourceTroubleshooting](./Start-AzureRmNetworkWatcherResourceTroubleshooting.md)
 
-[New-AzureRmNetworkWatcherPacketCapture](./New-AzureRmNetworkWatcherPacketCapture.md)
+[Baru-AzureRmNetworkWatcherPacketCapture](./New-AzureRmNetworkWatcherPacketCapture.md)
 
 [New-AzureRmPacketCaptureFilterConfig](./New-AzureRmPacketCaptureFilterConfig.md)
 
 [Get-AzureRmNetworkWatcherPacketCapture](./Get-AzureRmNetworkWatcherPacketCapture.md)
 
-[Remove-AzureRmNetworkWatcherPacketCapture](./Remove-AzureRmNetworkWatcherPacketCapture.md)
+[Hapus-AzureRmNetworkWatcherPacketCapture](./Remove-AzureRmNetworkWatcherPacketCapture.md)
 
 [Stop-AzureRmNetworkWatcherPacketCapture](./Stop-AzureRmNetworkWatcherPacketCapture.md)

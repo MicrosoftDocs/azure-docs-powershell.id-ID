@@ -4,11 +4,11 @@ ms.assetid: 5EE936CA-DD9A-4BC6-B835-E22AE633B46D
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: da0cefa416ee461a5aab8b5faf93dbb3f3596864
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427419"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142334528"
 ---
 # Start-AzureSqlDatabaseImport
 
@@ -35,9 +35,9 @@ Start-AzureSqlDatabaseImport -SqlConnectionContext <ISqlServerConnectionInformat
 
 ## DESCRIPTION
 Cmdlet **Start-AzureSqlDatabaseImport** memulai operasi impor dari penyimpanan Azure Blob ke Azure SQL Database.
-Jika database tidak ada, cmdlet ini akan membuatnya menggunakan nilai ukuran dan edisi yang Anda tentukan.
-Operasi memerlukan konteks koneksi server database.
-Gunakan cmdlet Get-AzureSqlDatabaseImportExportStatus cmdlet untuk mendapatkan status operasi impor.
+Jika database tidak ada, cmdlet ini akan membuatnya menggunakan ukuran dan nilai edisi yang Anda tentukan.
+Operasi ini memerlukan konteks koneksi server database.
+Gunakan cmdlet Get-AzureSqlDatabaseImportExportStatus untuk mendapatkan status operasi impor.
 
 ## EXAMPLES
 
@@ -50,12 +50,12 @@ PS C:\> $Container = Get-AzureStorageContainer -Name $ContainerName -Context $St
 PS C:\> $ImportRequest = Start-AzureSqlDatabaseImport -SqlConnectionContext $SqlContext -StorageContainer $Container -DatabaseName $DatabaseName -BlobName $BlobName
 ```
 
-Contoh ini memulai proses impor dari penyimpanan Blob di variabel $BlobName ke variabel Azure SQL Database bernama DatabaseName.
+Contoh ini memulai proses impor dari penyimpanan Blob dalam variabel $BlobName ke dalam Azure SQL Database bernama DatabaseName.
 
 ## PARAMETERS
 
 ### -BlobName
-Menentukan nama penyimpanan Blob Azure tempat database ini diimpor oleh cmdlet ini.
+Menentukan nama penyimpanan Azure Blob tempat cmdlet ini mengimpor database.
 
 ```yaml
 Type: String
@@ -71,8 +71,8 @@ Accept wildcard characters: False
 
 ### -DatabaseMaxSize
 Menentukan ukuran maksimum, dalam gigabyte, untuk database.
-Jika database tidak ada, cmdlet ini akan membuatnya berdasarkan ukuran maksimum ini.
-Nilai yang dapat diterima berbeda-beda berdasarkan edisi.
+Jika database tidak ada, cmdlet ini membuatnya berdasarkan ukuran maksimum ini.
+Nilai yang dapat diterima berbeda berdasarkan edisi.
 
 ```yaml
 Type: Int32
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 
 ### -DatabaseName
 Menentukan nama untuk database.
-Jika database tidak ada, cmdlet ini akan membuatnya, dan menetapkan nama yang ditentukan oleh parameter ini.
+Jika database tidak ada, cmdlet ini akan membuatnya, dan menetapkan nama yang ditentukan parameter ini.
 
 ```yaml
 Type: String
@@ -102,12 +102,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Edition
+### -Edisi
 Menentukan edisi database.
 Jika database tidak ada, cmdlet ini akan membuatnya sebagai edisi ini.
-Nilai valid adalah: 
+Nilai yang valid adalah: 
 
-- Tidak ada
+- Tidak
 - Web 
 - Bisnis 
 - Dasar
@@ -129,8 +129,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlConnectionContext
-Menentukan konteks koneksi dari server yang berisi database.
+Menentukan konteks koneksi server yang berisi database.
 
 ```yaml
 Type: ISqlServerConnectionInformation
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -219,7 +219,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Azure SQL Database](https://azure.microsoft.com/en-us/services/sql-database/)
 
-[Impor Database](https://msdn.microsoft.com/en-us/library/azure/dn781284.aspx)
+[Mengimpor Database](https://msdn.microsoft.com/en-us/library/azure/dn781284.aspx)
 
 [Operasi untuk Database Azure SQL](https://msdn.microsoft.com/en-us/library/azure/dn505719.aspx)
 

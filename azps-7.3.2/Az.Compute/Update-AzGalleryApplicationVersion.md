@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzGalleryApplicationVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzGalleryApplicationVersion.md
-ms.openlocfilehash: 77f5846e0eefe9b1b05954eed041fb30ff7eee05
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 23ecac51870dca54e6bfcb40dc6410174ad422a3
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140188267"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142376999"
 ---
 # Update-AzGalleryApplicationVersion
 
 ## SYNOPSIS
-Perbarui galeri Versi Aplikasi.
+Memperbarui Versi Aplikasi galeri.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/update-azgalleryapplicationversion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,11 +42,11 @@ Update-AzGalleryApplicationVersion -InputObject <IComputeIdentity> -PackageFileL
 ```
 
 ## DESCRIPTION
-Perbarui galeri Versi Aplikasi.
+Memperbarui Versi Aplikasi galeri.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui Jumlah Replika Versi Aplikasi Galeri
+### Contoh 1: Perbarui Replika Hitungan Versi Aplikasi Galeri
 ```powershell
 $ctx = New-AzStorageContext -StorageAccountName $storAccName
 $SASToken = new-azstorageblobsastoken -Context $ctx -Container $containerName -blob $blobName -Permission r
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 
 ### -DefaultConfigFileLink
 Opsional.
-DefaultConfigurationLink artifak, harus blob halaman penyimpanan yang dapat dibaca.
+DefaultConfigurationLink dari artefak, harus berupa gumpalan halaman penyimpanan yang dapat dibaca.
 
 ```yaml
 Type: System.String
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -GalleryApplicationName
-Nama definisi Aplikasi galeri tempat Versi Aplikasi akan diperbarui.
+Nama Galeri Definisi Aplikasi di mana Versi Aplikasi akan diperbarui.
 
 ```yaml
 Type: System.String
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -GalleryName
-Nama Galeri Aplikasi Bersama di mana Definisi Aplikasi berada.
+Nama Galeri Aplikasi Bersama tempat Definisi Aplikasi berada.
 
 ```yaml
 Type: System.String
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Compute.Models.IComputeIdentity
@@ -151,9 +154,9 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama galeri Versi Aplikasi yang akan diperbarui.
-Harus mengikuti pola nama versi semantik: Karakter yang diperbolehkan adalah digit dan titik.
-Digit harus berada di dalam rentang bilangan bulat 32-bit.
+Nama Versi Aplikasi galeri yang akan diperbarui.
+Perlu mengikuti pola nama versi semantik: Karakter yang diperbolehkan adalah digit dan titik.
+Digit harus berada dalam rentang bilangan bulat 32-bit.
 Format: \<MajorVersion\>.\<MinorVersion\>.\<Patch\>
 
 ```yaml
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 
 ### -PackageFileLink
 Diperlukan.
-MediaLink artifak, harus blob halaman penyimpanan yang dapat dibaca.
+MediaLink dari artefak, harus berupa gumpakan halaman penyimpanan yang dapat dibaca.
 
 ```yaml
 Type: System.String
@@ -200,9 +203,9 @@ Accept wildcard characters: False
 ```
 
 ### -PublishingProfileEndOfLifeDate
-Tanggal berakhir dari versi gambar galeri.
-Properti ini dapat digunakan untuk tujuan pencocokan.
-Properti ini dapat diketahui.
+Tanggal berakhirnya versi gambar galeri.
+Properti ini dapat digunakan untuk tujuan penolakan.
+Properti ini dapat diperbarui.
 
 ```yaml
 Type: System.DateTime
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublishingProfileExcludeFromLatest
-Jika diatur ke benar, Mesin Virtual yang digunakan dari versi terbaru Definisi Gambar tidak akan menggunakan Versi Gambar ini.
+Jika diatur ke true, Virtual Machines yang disebarkan dari versi terbaru Definisi Gambar tidak akan menggunakan Versi Gambar ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -233,8 +236,8 @@ Accept wildcard characters: False
 
 ### -ReplicaCount
 Jumlah replika Versi Gambar yang akan dibuat per kawasan.
-Properti ini akan berlaku untuk kawasan ketikaReplicaCount kawasan tidak ditentukan.
-Properti ini dapat diketahui.
+Properti ini akan berlaku untuk kawasan ketika regionalReplicaCount tidak ditentukan.
+Properti ini dapat diperbarui.
 
 ```yaml
 Type: System.Int32
@@ -264,8 +267,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -296,7 +299,7 @@ Accept wildcard characters: False
 
 ### -TargetRegion
 Wilayah target tempat Versi Gambar akan direplikasi.
-Properti ini dapat diketahui.
+Properti ini dapat diperbarui.
 Untuk membuat, lihat bagian CATATAN untuk properti TARGETREGION dan membuat tabel hash.
 
 ```yaml
@@ -312,7 +315,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -328,7 +331,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -343,7 +346,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -364,28 +367,28 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IComputeIdentity>: Parameter Identitas
   - `[CommandId <String>]`: Id perintah.
-  - `[GalleryApplicationName <String>]`: Nama galeri Definisi Aplikasi yang akan dibuat atau diperbarui. Karakter yang diperbolehkan adalah alfabet dan angka dengan titik, garis putus-putus, dan titik yang diperbolehkan di tengah. Panjang maksimum adalah 80 karakter.
-  - `[GalleryApplicationVersionName <String>]`: Nama galeri Versi Aplikasi yang akan dibuat. Harus mengikuti pola nama versi semantik: Karakter yang diperbolehkan adalah digit dan titik. Digit harus berada di dalam rentang bilangan bulat 32-bit. Format: <MajorVersion>.<MinorVersion>.<Patch>
-  - `[GalleryImageName <String>]`: Nama definisi gambar galeri yang akan dibuat atau diperbarui. Karakter yang diperbolehkan adalah alfabet dan angka dengan titik, garis putus-putus, dan titik yang diperbolehkan di tengah. Panjang maksimum adalah 80 karakter.
-  - `[GalleryImageVersionName <String>]`: Nama versi gambar galeri yang akan dibuat. Harus mengikuti pola nama versi semantik: Karakter yang diperbolehkan adalah digit dan titik. Digit harus berada di dalam rentang bilangan bulat 32-bit. Format: <MajorVersion>.<MinorVersion>.<Patch>
-  - `[GalleryName <String>]`: Nama Galeri Gambar Bersama. Karakter yang diperbolehkan adalah alfabet dan angka dengan titik dan titik yang diperbolehkan di tengah. Panjang maksimum adalah 80 karakter.
+  - `[GalleryApplicationName <String>]`: Nama Galeri Definisi Aplikasi yang akan dibuat atau diperbarui. Karakter yang diperbolehkan adalah abjad dan angka dengan titik-titik, garis putus-putus, dan titik yang diperbolehkan di tengah. Panjang maksimum adalah 80 karakter.
+  - `[GalleryApplicationVersionName <String>]`: Nama Galeri Versi Aplikasi yang akan dibuat. Perlu mengikuti pola nama versi semantik: Karakter yang diperbolehkan adalah digit dan titik. Digit harus berada dalam rentang bilangan bulat 32-bit. Format: <MajorVersion>.<MinorVersion>.<Patch>
+  - `[GalleryImageName <String>]`: Nama definisi gambar galeri yang akan dibuat atau diperbarui. Karakter yang diperbolehkan adalah abjad dan angka dengan titik-titik, garis putus-putus, dan titik yang diperbolehkan di tengah. Panjang maksimum adalah 80 karakter.
+  - `[GalleryImageVersionName <String>]`: Nama versi gambar galeri yang akan dibuat. Perlu mengikuti pola nama versi semantik: Karakter yang diperbolehkan adalah digit dan titik. Digit harus berada dalam rentang bilangan bulat 32-bit. Format: <MajorVersion>.<MinorVersion>.<Patch>
+  - `[GalleryName <String>]`: Nama Shared Image Gallery. Karakter yang diperbolehkan adalah alfabet dan angka dengan titik dan titik yang diperbolehkan di tengah. Panjang maksimum adalah 80 karakter.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[InstanceId <String>]`: ID contoh mesin virtual.
-  - `[Location <String>]`: Lokasi tempat menjalankan kueri perintah.
+  - `[InstanceId <String>]`: ID instans mesin virtual.
+  - `[Location <String>]`: Lokasi di mana perintah jalankan dikueri.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
-  - `[RunCommandName <String>]`: Nama perintah mesin virtual yang dijalankan.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[RunCommandName <String>]`: Nama perintah jalankan mesin virtual.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
   - `[VMName <String>]`: Nama mesin virtual tempat perintah jalankan harus dibuat atau diperbarui.
   - `[VMScaleSetName <String>]`: Nama kumpulan skala VM.
 
-TARGETREGION <ITargetRegion[]>: Wilayah target tempat Versi Gambar akan direplikasi. Properti ini dapat diketahui.
+TARGETREGION <ITargetRegion[]>: Wilayah target tempat Versi Gambar akan direplikasi. Properti ini dapat diperbarui.
   - `Name <String>`: Nama kawasan.
   - `[EncryptionDataDiskImage <IDataDiskImageEncryption[]>]`: Daftar spesifikasi enkripsi untuk gambar disk data.
-    - `Lun <Int32>`: Properti ini menentukan nomor unit logika disk data. Nilai ini digunakan untuk mengidentifikasi disk data di dalam Komputer Virtual, dan oleh karena itu harus unik untuk setiap disk data yang terhubung ke Komputer Virtual.
-    - `[DiskEncryptionSetId <String>]`: URI relatif berisi ID sumber daya dari kumpulan enkripsi disk.
-  - `[OSDiskImageDiskEncryptionSetId <String>]`: URI relatif berisi ID sumber daya dari kumpulan enkripsi disk.
-  - `[RegionalReplicaCount <Int32?>]`: Jumlah replika Versi Gambar yang akan dibuat per kawasan. Properti ini dapat diketahui.
-  - `[StorageAccountType <StorageAccountType?>]`: Menentukan tipe akun penyimpanan yang akan digunakan untuk menyimpan gambar. Properti ini tidak dapat updatable.
+    - `Lun <Int32>`: Properti ini menentukan nomor unit logika disk data. Nilai ini digunakan untuk mengidentifikasi disk data di dalam Mesin Virtual dan oleh karena itu harus unik untuk setiap disk data yang dilampirkan ke Mesin Virtual.
+    - `[DiskEncryptionSetId <String>]`: URI relatif yang berisi ID sumber daya kumpulan enkripsi disk.
+  - `[OSDiskImageDiskEncryptionSetId <String>]`: URI relatif yang berisi ID sumber daya kumpulan enkripsi disk.
+  - `[RegionalReplicaCount <Int32?>]`: Jumlah replika Versi Gambar yang akan dibuat per kawasan. Properti ini dapat diperbarui.
+  - `[StorageAccountType <StorageAccountType?>]`: Menentukan tipe akun penyimpanan yang akan digunakan untuk menyimpan gambar. Properti ini tidak dapat diperbarui.
 
 ## RELATED LINKS
 

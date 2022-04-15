@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ManagementPartner/Commands.Partner/help/Get-AzureRmManagementPartner.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ManagementPartner/Commands.Partner/help/Get-AzureRmManagementPartner.md
 ms.openlocfilehash: d291814a2683388fd6c8fa7b26e06195e9cfa09d
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427040"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142356037"
 ---
 # Get-AzureRmManagementPartner
 
 ## SYNOPSIS
-Mendapatkan ID Jaringan Mitra Microsoft (MPN) dari prinsipal layanan atau pengguna yang diautentikasi saat ini. 
+Mendapatkan ID Jaringan Mitra Microsoft (MPN) dari pengguna atau prinsipal layanan yang diautentikasi saat ini. 
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Get-AzureRmManagementPartner [[-PartnerId] <String>] [-DefaultProfile <IAzureCon
 ```
 
 ## DESCRIPTION
-Mendapatkan ID Jaringan Mitra Microsoft (MPN) dari prinsipal layanan atau pengguna yang diautentikasi saat ini. 
+Mendapatkan ID Jaringan Mitra Microsoft (MPN) dari pengguna atau prinsipal layanan yang diautentikasi saat ini. 
 
 ## EXAMPLES
 
@@ -53,7 +53,7 @@ ObjectId    : aa67f786-0552-423e-8849-244ed12bf581
 State       : Active
 ```
 
-Dapatkan id mitra manajemen saat ini menggunakan id mitra, jika tidak cocok, id akan gagal
+Dapatkan id mitra manajemen saat ini menggunakan id mitra, jika tidak cocok, id tersebut akan gagal
 
 ## PARAMETERS
 
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerId
-Id mitra manajemen, merupakan angka 6 digit
+Id mitra manajemen, itu adalah angka 6 digit
 
 ```yaml
 Type: System.String
@@ -88,11 +88,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -102,8 +102,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Remove-AzureRmManagementPartner](./Remove-AzureRmManagementPartner.md)
+[Hapus-AzureRmManagementPartner](./Remove-AzureRmManagementPartner.md)
 
-[New-AzureRmManagementPartner](./New-AzureRmManagementPartner.md)
+[AzureRmManagementPartner Baru](./New-AzureRmManagementPartner.md)
 
 [Update-AzureRmManagementPartner](./Update-AzureRmManagementPartner.md)

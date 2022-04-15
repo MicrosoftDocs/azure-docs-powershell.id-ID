@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azcdnori
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnOrigin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnOrigin.md
-ms.openlocfilehash: 0a4bd8a41ac4b2ea8efd60ef9d21e4885da15d7b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e5868dfaaf8a73d0779949f261e4a5a55b3cc377
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140386991"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142348775"
 ---
 # New-AzCdnOrigin
 
 ## SYNOPSIS
-Membuat origin CDN baru
+Membuat asal CDN baru
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cdn/new-azcdnorigin) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ New-AzCdnOrigin -CdnOrigin <PSOrigin> [-DefaultProfile <IAzureContextContainer>]
 ```
 
 ## DESCRIPTION
-Pengguna New-AzCdnOrigin membuat asal baru CDN titik akhir yang ditentukan.
+New-AzCdnOrigin akan membuat CDN asal baru dalam titik akhir yang ditentukan.
 
 ## EXAMPLES
 
@@ -52,12 +55,12 @@ Pengguna New-AzCdnOrigin membuat asal baru CDN titik akhir yang ditentukan.
 New-AzCdnOrigin -ResourceGroupName $resourceGroupName -ProfileName $profileName -EndpointName $endpointName -OriginName $originName -HostName $hostName
 ```
 
-Cmdlet ini akan membuat folder baru CDN origin untuk titik akhir yang ditentukan. Hostname akan menggunakan nama host yang disediakan sebagai origin. 
+Cmdlet ini akan membuat asal CDN baru untuk titik akhir yang ditentukan. Ini akan menggunakan nama host yang disediakan sebagai asalnya. 
 
 ## PARAMETERS
 
 ### -CdnOrigin
-Objek CDN origin.
+Objek asal CDN.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Cdn.Models.Origin.PSOrigin
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndpointName
-Azure CDN titik akhir.
+Azure CDN nama titik akhir.
 
 ```yaml
 Type: System.String
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostName
-Azure CDN host origin.
+Azure CDN nama host asal.
 
 ```yaml
 Type: System.String
@@ -116,8 +119,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpPort
-Azure CDN origin http port.
+### -HttpPort
+Azure CDN port http origin.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginHostHeader
-Azure CDN header host origin.
+Azure CDN header host asal.
 
 ```yaml
 Type: System.String
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginName
-Azure CDN origin.
+Azure CDN nama asal.
 
 ```yaml
 Type: System.String
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -Prioritas
-Azure CDN origin baru.
+Azure CDN prioritas asal.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkApprovalMessage
-Pesan kustom yang akan disertakan dalam permintaan persetujuan untuk menyambungkan ke Tautan Pribadi.
+Pesan kustom yang akan disertakan dalam permintaan persetujuan untuk menyambungkan ke Private Link.
 
 ```yaml
 Type: System.String
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkLocation
-Azure CDN link privat origin.
+Azure CDN lokasi tautan pribadi origin.
 
 ```yaml
 Type: System.String
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkResourceId
-Azure CDN sumber daya tautan privat origin.
+Azure CDN origin private link resource id.
 
 ```yaml
 Type: System.String
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProfileName
-Azure CDN profil.
+Azure CDN nama profil.
 
 ```yaml
 Type: System.String
@@ -252,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup sumber daya profil Azure CDN sumber daya.
+Grup sumber daya profil Azure CDN.
 
 ```yaml
 Type: System.String
@@ -266,8 +269,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Bobot
-Azure CDN origin.
+### -Berat
+Azure CDN berat asal.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -282,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -297,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -312,11 +315,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -4,22 +4,22 @@ ms.assetid: CD119EBE-E1A4-4E9D-B3BA-FDAF89BF0DDB
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 3f2ba0cb03b4819c444f43a59f5556cf2ec8c17a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421992"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142362714"
 ---
 # Add-AzureRmDnsRecordConfig
 
 ## SYNOPSIS
-Menambahkan catatan DNS ke objek set catatan lokal.
+Menambahkan catatan DNS ke objek kumpulan catatan lokal.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
 ## SYNTAX
 
-### A
+### J
 ```
 Add-AzureRmDnsRecordConfig -RecordSet <DnsRecordSet> -Ipv4Address <String> [<CommonParameters>]
 ```
@@ -62,17 +62,17 @@ Add-AzureRmDnsRecordConfig -RecordSet <DnsRecordSet> -Cname <String> [<CommonPar
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureRmDnsRecordConfig** menambahkan catatan Domain Name System (DNS) ke **objek RecordSet.**
-Objek **RecordSet** merupakan objek offline, dan perubahan pada objek tersebut tidak mengubah respons DNS hingga Anda menjalankan cmdlet Set-AzureRmDnsRecordSet untuk tetap menyimpan perubahan ke Microsoft Azure DNS.
+Cmdlet **Add-AzureRmDnsRecordConfig** menambahkan catatan Domain Name System (DNS) ke objek **RecordSet** .
+Objek **RecordSet** adalah objek offline, dan perubahannya tidak mengubah respons DNS hingga Anda menjalankan cmdlet Set-AzureRmDnsRecordSet untuk tetap melakukan perubahan ke layanan MICROSOFT AZURE DNS.
 
 Catatan SOA dibuat saat zona DNS dibuat, dan dihapus saat zona DNS dihapus.
 Anda tidak bisa menambahkan atau menghapus catatan SOA, tapi Anda bisa mengeditnya.
 
-Anda dapat menyampaikan **objek RecordSet** ke cmdlet ini sebagai parameter atau menggunakan operator pipeline.
+Anda dapat mengirimkan objek **RecordSet** ke cmdlet ini sebagai parameter atau menggunakan operator pipeline.
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan rekaman A ke kumpulan catatan
+### Contoh 1: Menambahkan catatan A ke kumpulan catatan
 ```
 PS C:\> $RecordSet = Get-AzureRmDnsRecordSet -Name www -RecordType A -ResouceGroupName MyResourceGroup -ZoneName myzone.com
 PS C:\> Add-AzureRmDnsRecordConfig -RecordSet $RecordSet -Ipv4Address 1.2.3.4
@@ -83,7 +83,7 @@ PS C:\> Set-AzureRmDnsRecordSet -RecordSet $RecordSet
 PS C:\> Get-AzureRmDnsRecordSet -Name www -RecordType A -ResouceGroupName MyResourceGroup -ZoneName myzone.com | Add-AzureRmDnsRecordConfig -Ipv4Address 1.2.3.4 | Set-AzureRmDnsRecordSet
 ```
 
-Contoh ini menambahkan data A ke kumpulan data yang sudah ada.
+Contoh ini menambahkan catatan A ke kumpulan catatan yang sudah ada.
 
 ### Contoh 2: Menambahkan catatan AAAA ke kumpulan catatan
 ```
@@ -98,7 +98,7 @@ PS C:\> Get-AzureRmDnsRecordSet -Name www -RecordType AAAA -ResouceGroupName MyR
 
 Contoh ini menambahkan catatan AAAA ke kumpulan catatan yang sudah ada.
 
-### Contoh 3: Menambahkan data CNAME ke kumpulan data
+### Contoh 3: Menambahkan catatan CNAME ke kumpulan catatan
 ```
 PS C:\>$RecordSet = Get-AzureRmDnsRecordSet -Name www -RecordType CNAME -ResouceGroupName MyResourceGroup -ZoneName myzone.com
 PS C:\> Add-AzureRmDnsRecordConfig -RecordSet $RecordSet -Cname contoso.com
@@ -109,10 +109,10 @@ PS C:\> Set-AzureRmDnsRecordSet -RecordSet $RecordSet
 PS C:\> Get-AzureRmDnsRecordSet -Name www -RecordType CNAME -ResouceGroupName MyResourceGroup -ZoneName myzone.com | Add-AzureRmDnsRecordConfig -Cname contoso.com | Set-AzureRmDnsRecordSet
 ```
 
-Contoh ini menambahkan data CNAME ke kumpulan data yang sudah ada.
-Karena kumpulan data CNAME bisa berisi paling banyak satu catatan, awalnya data harus kosong, atau catatan yang sudah ada harus dihapus menggunakan Remove-AzureRmDnsRecordConfig.
+Contoh ini menambahkan catatan CNAME ke kumpulan catatan yang sudah ada.
+Karena kumpulan catatan CNAME dapat berisi paling banyak satu catatan, kumpulan data awalnya harus kosong, atau rekaman yang sudah ada harus dihapus menggunakan Remove-AzureRmDnsRecordConfig.
 
-### Contoh 4: Menambahkan rekaman MX ke kumpulan catatan
+### Contoh 4: Menambahkan catatan MX ke kumpulan catatan
 ```
 PS C:\> $RecordSet = Get-AzureRmDnsRecordSet -Name "@" -RecordType MX -ResouceGroupName MyResourceGroup -ZoneName myzone.com
 PS C:\> Add-AzureRmDnsRecordConfig -Exchange mail.microsoft.com -Preference 5 -RecordSet $RecordSet
@@ -123,8 +123,8 @@ PS C:\> Set-AzureRmDnsRecordSet -RecordSet $RecordSet
 PS C:\> Get-AzureRmDnsRecordSet -Name "@" -RecordType MX -ResouceGroupName MyResourceGroup -ZoneName myzone.com | Add-AzureRmDnsRecordConfig -Exchange mail.microsoft.com -Preference 5 | Set-AzureRmDnsRecordSet
 ```
 
-Contoh ini menambahkan rekaman MX ke kumpulan catatan yang sudah ada.
-Nama catatan "@" menunjukkan kumpulan data pada zona apex.
+Contoh ini menambahkan catatan MX ke kumpulan catatan yang sudah ada.
+Nama catatan "@" menunjukkan kumpulan catatan di zona apex.
 
 ### Contoh 5: Menambahkan catatan NS ke kumpulan catatan
 ```
@@ -137,7 +137,7 @@ PS C:\> Set-AzureRmDnsRecordSet -RecordSet $RecordSet
 PS C:\> Get-AzureRmDnsRecordSet -Name abc -RecordType NS -ResouceGroupName MyResourceGroup -ZoneName myzone.com | Add-AzureRmDnsRecordConfig -Nsdname ns1.myzone.com | Set-AzureRmDnsRecordSet
 ```
 
-Contoh ini menambahkan catatan NS ke kumpulan data yang sudah ada.
+Contoh ini menambahkan catatan NS ke kumpulan catatan yang sudah ada.
 
 ### Contoh 6: Menambahkan catatan PTR ke kumpulan catatan
 ```
@@ -150,7 +150,7 @@ PS C:\> Set-AzureRmDnsRecordSet -RecordSet $RecordSet
 PS C:\> Get-AzureRmDnsRecordSet -Name 4 -RecordType PTR -ResouceGroupName MyResourceGroup -ZoneName 3.2.1.in-addr.arpa | Add-AzureRmDnsRecordConfig -Ptrdname www.contoso.com | Set-AzureRmDnsRecordSet
 ```
 
-Contoh ini menambahkan rekaman PTR ke kumpulan catatan yang ada.
+Contoh ini menambahkan catatan PTR ke kumpulan catatan yang sudah ada.
 
 ### Contoh 7: Menambahkan catatan SRV ke kumpulan catatan
 ```
@@ -165,7 +165,7 @@ PS C:\> Get-AzureRmDnsRecordSet -Name _sip._tcp -RecordType SRV -ResouceGroupNam
 
 Contoh ini menambahkan catatan SRV ke kumpulan catatan yang sudah ada.
 
-### Contoh 8: Menambahkan rekaman TXT ke kumpulan catatan
+### Contoh 8: Menambahkan catatan TXT ke kumpulan catatan
 ```
 PS C:\>$RecordSet = Get-AzureRmDnsRecordSet -Name text -RecordType TXT -ResouceGroupName MyResourceGroup -ZoneName myzone.com
 PS C:\> Add-AzureRmDnsRecordConfig -RecordSet $RecordSet -Value "This is a TXT Record"
@@ -176,7 +176,7 @@ PS C:\> Set-AzureRmDnsRecordSet -RecordSet $RecordSet
 PS C:\> Get-AzureRmDnsRecordSet -Name text -RecordType TXT -ResouceGroupName MyResourceGroup -ZoneName myzone.com | Add-AzureRmDnsRecordConfig -Value "This is a TXT Record" | Set-AzureRmDnsRecordSet
 ```
 
-Contoh ini menambahkan rekaman TXT ke kumpulan catatan yang sudah ada.
+Contoh ini menambahkan catatan TXT ke kumpulan catatan yang sudah ada.
 
 ## PARAMETERS
 
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -Exchange
-Menentukan nama server mail exchange untuk rekaman mail exchange (MX).
+Menentukan nama server mail exchange untuk catatan mail exchange (MX).
 
 ```yaml
 Type: String
@@ -256,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Menentukan port untuk catatan layanan (SRV).
+Menentukan port untuk data layanan (SRV).
 
 ```yaml
 Type: UInt16
@@ -301,7 +301,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ptrdname
-Menentukan nama domain target dari catatan sumber daya penunjuk (PTR).
+Menentukan nama domain target catatan sumber daya penunjuk (PTR).
 
 ```yaml
 Type: String
@@ -346,7 +346,7 @@ Accept wildcard characters: False
 ```
 
 ### -Value
-Menentukan nilai untuk rekaman TXT.
+Menentukan nilai untuk catatan TXT.
 
 ```yaml
 Type: String
@@ -360,7 +360,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Bobot
+### -Berat
 Menentukan bobot untuk catatan SRV.
 
 ```yaml
@@ -376,19 +376,19 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.Dns.DnsRecordSet
-Anda dapat pipa objek **RecordSet** ke cmdlet ini.
-Ini adalah representasi offline **RecordSet**, dan perubahannya tidak mengubah respons DNS hingga Anda menjalankan cmdlet Set-AzureRmDnsRecordSet baru.
+Anda dapat menyalurkan objek **RecordSet** ke cmdlet ini.
+Ini adalah representasi offline dari **RecordSet**, dan perubahannya tidak mengubah respons DNS hingga Anda menjalankan cmdlet Set-AzureRmDnsRecordSet.
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Dns.DnsRecordSet
-Cmdlet ini mengembalikan objek **RecordSet yang** diubah.
-Selain itu, objek yang melintas di diubah secara langsung.
+Cmdlet ini mengembalikan objek **RecordSet** yang diubah.
+Selain itu, objek yang dilewati diubah secara langsung.
 
 ## CATATAN
 
@@ -396,6 +396,6 @@ Selain itu, objek yang melintas di diubah secara langsung.
 
 [Get-AzureRmDnsRecordSet](./Get-AzureRmDnsRecordSet.md)
 
-[Remove-AzureRmDnsRecordConfig](./Remove-AzureRmDnsRecordConfig.md)
+[Hapus-AzureRmDnsRecordConfig](./Remove-AzureRmDnsRecordConfig.md)
 
 [Set-AzureRmDnsRecordSet](./Set-AzureRmDnsRecordSet.md)

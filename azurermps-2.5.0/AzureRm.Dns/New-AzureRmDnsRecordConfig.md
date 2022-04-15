@@ -4,11 +4,11 @@ ms.assetid: AD97BCAF-69BA-4C16-8B57-AB243D796B71
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 6368cffa168772a384deb99f5a8388aef84f85b2
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428780"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142362645"
 ---
 # New-AzureRmDnsRecordConfig
 
@@ -19,7 +19,7 @@ Membuat objek lokal catatan DNS baru.
 
 ## SYNTAX
 
-### A
+### J
 ```
 New-AzureRmDnsRecordConfig -Ipv4Address <String> [<CommonParameters>]
 ```
@@ -62,11 +62,11 @@ New-AzureRmDnsRecordConfig -Cname <String> [<CommonParameters>]
 
 ## DESCRIPTION
 Cmdlet **New-AzureRmDnsRecordConfig** membuat objek **DnsRecord** lokal.
-Array objek ini akan diteruskan ke cmdlet New-AzureRmDnsRecordSet menggunakan parameter *DnsRecords* untuk menentukan rekaman untuk dibuat dalam kumpulan rekaman.
+Array objek ini diteruskan ke cmdlet New-AzureRmDnsRecordSet menggunakan parameter *DnsRecords* untuk menentukan rekaman yang akan dibuat dalam kumpulan catatan.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Set Rekaman tipe A
+### Contoh 1: Membuat Kumpulan Rekaman tipe A
 ```
 PS C:\> $Records = @()
 PS C:\> $Records += New-AzureRmDnsRecordConfig -IPv4Address 1.2.3.4
@@ -85,102 +85,102 @@ PS C:\> $Records += New-AzureRmDnsRecordConfig -IPv4Address 5.6.7.8
 PS C:\> $RecordSet = New-AzureRmDnsRecordSet -Name "www" -RecordType A -ResourceGroupName "MyResourceGroup" -TTL 3600 -ZoneName "myzone.com" -DnsRecords $Records
 ```
 
-Contoh ini membuat **RecordSet bernama** www dalam zona myzone.com.
-Kumpulan catatan berjenis A dan memiliki TTL 1 jam (3600 detik).
-Daftar ini berisi satu catatan DNS.
+Contoh ini membuat **RecordSet** bernama www di zona myzone.com.
+Kumpulan catatan adalah tipe A dan memiliki TTL 1 jam (3600 detik).
+Ini berisi satu catatan DNS.
 
-### Contoh 2: Membuat RecordSet tipe AAAA
+### Contoh 2: Membuat Kumpulan Rekaman dari tipe AAAA
 ```
 PS C:\> $Records = @()
 PS C:\> $Records += New-AzureRmDnsRecordConfig -Ipv6Address 2001:db8::1
 PS C:\> $RecordSet = New-AzureRmDnsRecordSet -Name "www" -RecordType AAAA -ResourceGroupName "MyResourceGroup" -TTL 3600 -ZoneName "myzone.com" -DnsRecords $Records
 ```
 
-Contoh ini membuat **RecordSet bernama** www dalam zona myzone.com.
-Kumpulan catatan merupakan tipe AAAA dan memiliki TTL 1 jam (3600 detik).
-Daftar ini berisi satu catatan DNS.
+Contoh ini membuat **RecordSet** bernama www di zona myzone.com.
+Kumpulan catatan adalah tipe AAAA dan memiliki TTL 1 jam (3600 detik).
+Ini berisi satu catatan DNS.
 
-Untuk membuat Kumpulan **Rekaman** menggunakan hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
+Untuk membuat **Kumpulan Rekaman** hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa catatan, lihat Contoh 1.
 
-### Contoh 3: Membuat RecordSet tipe CNAME
+### Contoh 3: Membuat Kumpulan Rekaman tipe CNAME
 ```
 PS C:\> $Records = @()
 PS C:\> $Records += New-AzureRmDnsRecordConfig -Cname www.contoso.com
 PS C:\> $RecordSet = New-AzureRmDnsRecordSet -Name "www" -RecordType CNAME -ResourceGroupName "MyResourceGroup" -TTL 3600 -ZoneName "myzone.com" -DnsRecords $Records
 ```
 
-Contoh ini membuat **RecordSet bernama** www dalam zona myzone.com.
-Kumpulan catatan merupakan tipe CNAME dan memiliki TTL 1 jam (3600 detik).
-Daftar ini berisi satu catatan DNS.
+Contoh ini membuat **RecordSet** bernama www di zona myzone.com.
+Kumpulan catatan adalah tipe CNAME dan memiliki TTL 1 jam (3600 detik).
+Ini berisi satu catatan DNS.
 
-Untuk membuat Kumpulan **Rekaman** menggunakan hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
+Untuk membuat **Kumpulan Rekaman** hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa catatan, lihat Contoh 1.
 
-### Contoh 4: Membuat Set Rekaman tipe MX
+### Contoh 4: Membuat RecordSet tipe MX
 ```
 PS C:\> $Records = @()
 PS C:\> $Records += New-AzureRmDnsRecordConfig -Exchange "mail.microsoft.com" -Preference 5
 PS C:\> $RecordSet = New-AzureRmDnsRecordSet -Name "www" -RecordType AAAA -ResourceGroupName "MyResourceGroup" -TTL 3600 -ZoneName "myzone.com" -DnsRecords $Records
 ```
 
-Perintah ini akan membuat **RecordSet** bernama www dalam zona myzone.com.
-Kumpulan catatan berjenis MX dan memiliki TTL 1 jam (3600 detik).
-Daftar ini berisi satu catatan DNS.
+Perintah ini membuat **RecordSet** bernama www di zona myzone.com.
+Kumpulan catatan adalah tipe MX dan memiliki TTL 1 jam (3600 detik).
+Ini berisi satu catatan DNS.
 
-Untuk membuat Kumpulan **Rekaman** menggunakan hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
+Untuk membuat **Kumpulan Rekaman** hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa catatan, lihat Contoh 1.
 
-### Contoh 5: Membuat Set Rekaman tipe NS
+### Contoh 5: Membuat Kumpulan Data tipe NS
 ```
 PS C:\> $Records = @()
 PS C:\> $Records += New-AzureRmDnsRecordConfig -Nsdname ns1-01.azure-dns.com
 PS C:\> $RecordSet = New-AzureRmDnsRecordSet -Name "ns1" -RecordType NS -ResourceGroupName "MyResourceGroup" -TTL 3600 -ZoneName "myzone.com" -DnsRecords $Records
 ```
 
-Perintah ini membuat **RecordSet bernama** ns1 dalam zona myzone.com.
-Kumpulan rekaman berjenis NS dan memiliki TTL 1 jam (3600 detik).
-Daftar ini berisi satu catatan DNS.
+Perintah ini membuat **RecordSet** bernama ns1 di zona myzone.com.
+Kumpulan catatan adalah tipe NS dan memiliki TTL 1 jam (3600 detik).
+Ini berisi satu catatan DNS.
 
-Untuk membuat Kumpulan **Rekaman** menggunakan hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
+Untuk membuat **Kumpulan Rekaman** hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa catatan, lihat Contoh 1.
 
-### Contoh 6: Membuat Set Rekaman tipe PTR
+### Contoh 6: Membuat RecordSet tipe PTR
 ```
 PS C:\> $Records = @()
 PS C:\> $Records += New-AzureRmDnsRecordConfig -Ptrdname www.contoso.com
 PS C:\> $RecordSet = New-AzureRmDnsRecordSet -Name "4" -RecordType PTR -ResourceGroupName "MyResourceGroup" -TTL 3600 -ZoneName "3.2.1.in-addr.arpa" -DnsRecords $Records
 ```
 
-Perintah ini membuat **RecordSet bernama** 4 dalam zona 3.2.1.in-addr.arpa.
-Kumpulan catatan merupakan tipe PTR dan memiliki TTL 1 jam (3600 detik).
-Daftar ini berisi satu catatan DNS.
+Perintah ini membuat **RecordSet** bernama 4 di zona 3.2.1.in-addr.arpa.
+Kumpulan rekor adalah tipe PTR dan memiliki TTL 1 jam (3600 detik).
+Ini berisi satu catatan DNS.
 
-Untuk membuat Kumpulan **Rekaman** menggunakan hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
+Untuk membuat **Kumpulan Rekaman** hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa catatan, lihat Contoh 1.
 
-### Contoh 7: Membuat RecordSet tipe SRV
+### Contoh 7: Membuat Kumpulan Data tipe SRV
 ```
 PS C:\> $Records = @()
 PS C:\> $Records += New-AzureRmDnsRecordConfig -Priority 0 -Weight 5 -Port 8080 -Target sipservice.contoso.com
 PS C:\> $RecordSet = New-AzureRmDnsRecordSet -Name "_sip._tcp" -RecordType SRV -ResourceGroupName "MyResourceGroup" -TTL 3600 -ZoneName "myzone.com" -DnsRecords $Records
 ```
 
-Perintah ini membuat **RecordSet bernama** _sip._tcp dalam zona myzone.com.
-Kumpulan catatan berjenis SRV dan memiliki TTL 1 jam (3600 detik).
-Daftar ini berisi satu catatan DNS, mengarahkan ke alamat IP 2001.2.3.4.
+Perintah ini membuat **RecordSet** bernama _sip._tcp di myzone.com zona.
+Kumpulan catatan adalah tipe SRV dan memiliki TTL 1 jam (3600 detik).
+Ini berisi satu catatan DNS, mengarah ke alamat IP 2001.2.3.4.
 
 Layanan (sip) dan protokol (tcp) ditentukan sebagai bagian dari nama kumpulan catatan, bukan sebagai bagian dari data rekaman.
 
-Untuk membuat Kumpulan **Rekaman** menggunakan hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
+Untuk membuat **Kumpulan Rekaman** hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa catatan, lihat Contoh 1.
 
-### Contoh 8: Buat RecordSet tipe TXT
+### Contoh 8: Membuat Kumpulan Data tipe TXT
 ```
 PS C:\> $Records = @()
 PS C:\> $Records += New-AzureRmDnsRecordConfig -Value "This is a TXT Record"
 PS C:\> $RecordSet = New-AzureRmDnsRecordSet -Name "text" -RecordType TXT -ResourceGroupName "MyResourceGroup" -TTL 3600 -ZoneName "myzone.com" -DnsRecords $Records
 ```
 
-Perintah ini akan membuat **teks bernama RecordSet** dalam zona myzone.com.
-Kumpulan catatan merupakan tipe TXT dan memiliki TTL 1 jam (3600 detik).
-Daftar ini berisi satu catatan DNS.
+Perintah ini membuat teks **bernama RecordSet** di zona myzone.com.
+Kumpulan catatan adalah tipe TXT dan memiliki TTL 1 jam (3600 detik).
+Ini berisi satu catatan DNS.
 
-Untuk membuat Kumpulan **Rekaman** menggunakan hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
+Untuk membuat **Kumpulan Rekaman** hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa catatan, lihat Contoh 1.
 
 ## PARAMETERS
 
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -Exchange
-Menentukan nama server mail exchange untuk rekaman mail exchange (MX).
+Menentukan nama server mail exchange untuk catatan mail exchange (MX).
 
 ```yaml
 Type: String
@@ -260,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Menentukan port untuk catatan layanan (SRV).
+Menentukan port untuk data layanan (SRV).
 
 ```yaml
 Type: UInt16
@@ -305,7 +305,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ptrdname
-Menentukan nama domain target dari catatan sumber daya penunjuk (PTR).
+Menentukan nama domain target catatan sumber daya penunjuk (PTR).
 
 ```yaml
 Type: String
@@ -335,7 +335,7 @@ Accept wildcard characters: False
 ```
 
 ### -Value
-Menentukan nilai untuk rekaman TXT.
+Menentukan nilai untuk catatan TXT.
 
 ```yaml
 Type: String
@@ -349,7 +349,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Bobot
+### -Berat
 Menentukan bobot untuk catatan SRV.
 
 ```yaml
@@ -365,11 +365,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada.
+### Tidak.
 
 ## OUTPUTS
 
@@ -383,4 +383,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmDnsRecordSet](./New-AzureRmDnsRecordSet.md)
 
-[Remove-AzureRmDnsRecordConfig](./Remove-AzureRmDnsRecordConfig.md)
+[Hapus-AzureRmDnsRecordConfig](./Remove-AzureRmDnsRecordConfig.md)

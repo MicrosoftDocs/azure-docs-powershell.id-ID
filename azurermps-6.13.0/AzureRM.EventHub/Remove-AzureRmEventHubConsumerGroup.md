@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.event
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventHub/Commands.EventHub/help/Remove-AzureRmEventHubConsumerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventHub/Commands.EventHub/help/Remove-AzureRmEventHubConsumerGroup.md
-ms.openlocfilehash: d695a9f40f1f350b1e40977486c14aac0489801af205ec4489f8f792765806b0
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 2ef6227acf398b228d6ca5ffe4fad3d39ec75723
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140857235"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142357066"
 ---
 # Remove-AzureRmEventHubConsumerGroup
 
 ## SYNOPSIS
-Menghapus grup konsumen Hub Acara yang ditentukan.
+Menghapus grup konsumen Hub Kejadian tertentu.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -41,7 +41,7 @@ Remove-AzureRmEventHubConsumerGroup [-ResourceId] <String> [-PassThru] [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzureRmEventHubConsumerGroup menghapus grup konsumen tertentu dari Hub Acara tertentu.
+Cmdlet Remove-AzureRmEventHubConsumerGroup menghapus dan menghapus grup konsumen tertentu dari Hub Acara tertentu.
 
 ## EXAMPLES
 
@@ -50,7 +50,7 @@ Cmdlet Remove-AzureRmEventHubConsumerGroup menghapus grup konsumen tertentu dari
 PS C:\> Remove-AzureRmEventHubConsumerGroup -ResourceGroupName MyResourceGroupName -Namespace MyNamespaceName -EventHub MyEventHubName -Name MyConsumerGroupName
 ```
 
-Menghapus grup konsumen \`MyConsumerGroupName\` dari Event Hub \`MyEventHubName\`, yang lingkupnya \`ruang nama MyNamespaceName\` .
+Menghapus grup konsumen MyConsumerGroupName\` dari Hub \`Kejadian MyEventHubName\`, yang dilingkupkan ke \`ruang nama MyNamespaceName\`.\`
 
 ### Contoh 2.1 - InputObject - Menggunakan Variabel
 ```
@@ -63,7 +63,7 @@ PS C:\> Remove-AzureRmEventHubConsumerGroup -InputObject $inputobject
 PS C:\> Get-AzureRmEventHubConsumerGroup <params> | Remove-AzureRmEventHubConsumerGroup
 ```
 
-### Contoh 3.1 - ResourceId Using Vairable
+### Contoh 3.1 - ResourceId Menggunakan Vairable
 ```
 PS C:\> $resourceid = Get-AzureRmEventHubConsumerGroup <params>
 PS C:\> Remove-AzureRmEventHubConsumerGroup -ResourceId $resourceid.Id
@@ -77,7 +77,7 @@ PS C:\> Remove-AzureRmEventHubConsumerGroup -ResourceId "/subscriptions/xxx-xxxx
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -243,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

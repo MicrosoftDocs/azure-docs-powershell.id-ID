@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.botservice/initi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BotService/help/Initialize-AzBotServicePrepareDeploy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BotService/help/Initialize-AzBotServicePrepareDeploy.md
-ms.openlocfilehash: 0e342b5829c707740e42569162827b6895a47da4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ebd9dace679cd0f075cc90412a742eee4fc1e781
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140001821"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142348955"
 ---
 # Initialize-AzBotServicePrepareDeploy
 
 ## SYNOPSIS
 Mengembalikan BotService yang ditentukan oleh parameter.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.botservice/initialize-azbotservicepreparedeploy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,13 +32,13 @@ Mengembalikan BotService yang ditentukan oleh parameter.
 
 ## EXAMPLES
 
-### Contoh 1: Memulai Project FileFolder
+### Contoh 1: Inisialisasi Project FileFolder
 ```powershell
 Initialize-AzBotServicePrepareDeploy -CodeDir D:\zips\MyEchoBot -ProjFileName MyEchoBot.csproj
 
 ```
 
-Memulai Menyiapkan sumber daya untuk digunakan, dan mengaturnya ke status default
+Menginisialisasi Menyiapkan sumber daya untuk digunakan, dan mengaturnya ke status default
 
 ## PARAMETERS
 
@@ -69,7 +72,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Language
+### -Bahasa
 
 
 ```yaml
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

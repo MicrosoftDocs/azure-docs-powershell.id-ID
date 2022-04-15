@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerProbeConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerProbeConfig.md
-ms.openlocfilehash: 572537f7f13a5b3a494d7e52fd898b5b66bc3df4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 8d047f8b25f6cea6cebf7b078b00732dad4537ca
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140392830"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142372247"
 ---
 # Get-AzLoadBalancerProbeConfig
 
 ## SYNOPSIS
-Mendapatkan konfigurasi configuration configuration for a load balancer.
+Mendapatkan konfigurasi probe untuk penyeimbang beban.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azloadbalancerprobeconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,23 +29,23 @@ Get-AzLoadBalancerProbeConfig -LoadBalancer <PSLoadBalancer> [-Name <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzLoadBalancerProbeConfig** mendapatkan satu atau beberapa konfigurasi untuk penyeimbang muat.
+Cmdlet **Get-AzLoadBalancerProbeConfig** mendapatkan satu atau beberapa konfigurasi probe untuk load balancer.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan konfigurasi konfigurasi pemuatan
+### Contoh 1: Dapatkan konfigurasi probe dari load balancer
 ```
 PS C:\>$slb = Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 PS C:\> Get-AzLoadBalancerProbeConfig -Name "MyProbe" -LoadBalancer $slb
 ```
 
-Perintah pertama mendapatkan penyeimbang muat bernama MyLoadBalancer, lalu menyimpannya di nilai $slb.
-Perintah kedua mendapatkan konfigurasi konfigurasi konfigurasi konfigurasi terkait bernama MyProbe dari penyeimbang muat di $slb.
+Perintah pertama mendapatkan load balancer bernama MyLoadBalancer, lalu menyimpannya dalam variabel $slb.
+Perintah kedua mendapatkan konfigurasi probe terkait bernama MyProbe dari load balancer dalam $slb.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan penyeimbang muat yang terkait dengan konfigurasi utama untuk mendapatkan.
+Menentukan penyeimbang muatan yang terkait dengan konfigurasi probe yang akan didapatkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama konfigurasi konfigurasi untuk mendapatkan.
+Menentukan nama konfigurasi probe yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
