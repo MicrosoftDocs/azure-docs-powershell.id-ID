@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/restore
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Restore-AzKeyVaultManagedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Restore-AzKeyVaultManagedStorageAccount.md
-ms.openlocfilehash: ece312bd8768ddb24f01da5d30a9a75469d43516
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 7e8b2febe453dcafa6bf5ba3056004743bfccc63
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140393790"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142256551"
 ---
 # Restore-AzKeyVaultManagedStorageAccount
 
 ## SYNOPSIS
-Memulihkan akun penyimpanan terkelola di vault kunci dari file cadangan.
+Memulihkan akun penyimpanan terkelola dalam kubah kunci dari file cadangan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/restore-azkeyvaultmanagedstorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,12 +41,12 @@ Restore-AzKeyVaultManagedStorageAccount [-ResourceId] <String> [-InputFile] <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Restore-AzKeyVaultManagedStorageAccount** membuat akun penyimpanan terkelola di penyimpanan kunci tertentu dari file cadangan.
-Akun penyimpanan terkelola ini adalah replika akun penyimpanan terkelola yang dicadangkan di file input dan memiliki nama yang sama seperti aslinya.
-Jika kunci vault telah berisi akun penyimpanan terkelola dengan nama yang sama, cmdlet ini akan gagal, bukan menimpa yang asli.
-Kunci vault tempat Anda memulihkan akun penyimpanan terkelola mungkin berbeda dari key vault yang Anda cadangkan akun penyimpanan terkelolanya.
-Namun, kunci vault harus menggunakan langganan yang sama dan berada di kawasan Azure di geografi yang sama (misalnya, Amerika Utara).
-Lihat Microsoft Azure Kepercayaan Lokal (https://azure.microsoft.com/support/trust-center/) untuk pemetaan wilayah Azure ke geografi.
+Cmdlet **Restore-AzKeyVaultManagedStorageAccount** membuat akun penyimpanan terkelola dalam kubah kunci tertentu dari file cadangan.
+Akun penyimpanan terkelola ini adalah replika dari akun penyimpanan terkelola yang dicadangkan dalam file input dan memiliki nama yang sama dengan aslinya.
+Jika kubah kunci sudah berisi akun penyimpanan terkelola dengan nama yang sama, cmdlet ini gagal dan bukan menimpa yang asli.
+Kubah kunci yang Anda pulihkan ke akun penyimpanan terkelola dapat berbeda dari kubah kunci tempat Anda mencadangkan akun penyimpanan terkelola.
+Namun, kubah kunci harus menggunakan langganan yang sama dan berada di kawasan Azure dalam geografi yang sama (misalnya, Amerika Utara).
+Lihat Pusat Kepercayaan Microsoft Azure (https://azure.microsoft.com/support/trust-center/) untuk pemetaan kawasan Azure ke geografis.
 
 ## EXAMPLES
 
@@ -65,7 +68,7 @@ Updated             : 5/21/2018 11:55:58 PM
 Tags                :
 ```
 
-Perintah ini memulihkan akun penyimpanan terkelola, termasuk semua versinya, dari file cadangan yang bernama Backup.blob ke dalam kunci vault yang bernama MyKeyVault.
+Perintah ini memulihkan akun penyimpanan terkelola, termasuk semua versinya, dari file cadangan bernama Backup.blob ke dalam kubah kunci bernama MyKeyVault.
 
 ## PARAMETERS
 
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 
 ### -InputFile
 File input.
-File input berisi blob cadangan
+File input yang berisi gumpalan yang dicadangkan
 
 ```yaml
 Type: System.String
@@ -131,8 +134,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama Vault.
-Cmdlet menyusun FQDN dari vault berdasarkan nama dan lingkungan yang saat ini dipilih.
+Nama kubah.
+Cmdlet menyusun FQDN kubah berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

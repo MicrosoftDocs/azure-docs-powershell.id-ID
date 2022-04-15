@@ -5,17 +5,20 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Set-AzKeyVaultKeyRotationPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Set-AzKeyVaultKeyRotationPolicy.md
-ms.openlocfilehash: 6298b29959ac59ff482c29bbd3d5933dbc4793d7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9ecdf2a3915a5cf2c985c99ee158b39265908211
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140556322"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142256353"
 ---
 # Set-AzKeyVaultKeyRotationPolicy
 
 ## SYNOPSIS
-Mengatur kebijakan rotasi tombol untuk tombol tertentu di Key Vault.
+Mengatur kebijakan rotasi kunci untuk kunci yang ditentukan dalam Key Vault.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/set-azkeyvaultkeyrotationpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,11 +43,11 @@ Set-AzKeyVaultKeyRotationPolicy [-ExpiresIn <TimeSpan>]
 ```
 
 ## DESCRIPTION
-Cmdlet ini memerlukan izin pembaruan utama. Opsi ini akan mengembalikan kebijakan rotasi tombol untuk tombol yang ditentukan.
+Cmdlet ini memerlukan izin pembaruan kunci. Mengembalikan kebijakan rotasi kunci untuk kunci yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur waktu kedaluwarsa kebijakan rotasi tombol
+### Contoh 1: Mengatur waktu kedaluwarsa kebijakan rotasi kunci
 ```powershell
 $t = New-TimeSpan -Days 50
 Set-AzKeyVaultKeyRotationPolicy -VaultName test-kv -Name test-key -ExpiresIn $t
@@ -60,9 +63,9 @@ CreatedOn       : 12/10/2021 3:21:51 AM +00:00
 UpdatedOn       : 12/10/2021 3:22:14 AM +00:00
 ```
 
-Cmdlet ini mengatur kebijakan rotasi utama kedaluwarsa waktu uji kunci sebagai 50 hari.
+Cmdlet ini mengatur kebijakan rotasi kunci kedaluwarsa waktu uji kunci sebagai 50 hari.
 
-### Contoh 2: Mengatur kebijakan rotasi tombol dengan InputObject
+### Contoh 2: Mengatur kebijakan rotasi kunci oleh InputObject
 ```powershell
 $key = Get-AzKeyVaultKey -VaultName test-kv -Name test-key
 $action = [Microsoft.Azure.Commands.KeyVault.Models.PSKeyRotationLifetimeAction]::new()
@@ -82,9 +85,9 @@ CreatedOn       : 12/10/2021 3:21:51 AM +00:00
 UpdatedOn       : 12/14/2021 5:26:28 AM +00:00
 ```
 
-Cmdlet ini mengatur kebijakan rotasi utama kedaluwarsa waktu uji kunci sebagai 50 hari.
+Cmdlet ini mengatur kebijakan rotasi kunci kedaluwarsa waktu uji kunci sebagai 50 hari.
 
-### Contoh 3: Mengatur kebijakan rotasi tombol dengan objek PSKeyRotationPolicy
+### Contoh 3: Mengatur kebijakan rotasi kunci oleh objek PSKeyRotationPolicy
 ```powershell
 $key = Get-AzKeyVaultKey -VaultName test-kv -Name test-key
 $policy = Get-AzKeyVaultKeyRotationPolicy $key
@@ -100,12 +103,12 @@ CreatedOn       : 12/10/2021 3:21:51 AM +00:00
 UpdatedOn       : 12/14/2021 5:34:00 AM +00:00
 ```
 
-Cmdlet ini mengatur kebijakan rotasi utama kedaluwarsa waktu uji kunci sebagai 50 hari.
+Cmdlet ini mengatur kebijakan rotasi kunci kedaluwarsa waktu uji kunci sebagai 50 hari.
 
 ## PARAMETERS
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -134,9 +137,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ExpiresIn
-Rentang waktu ketika kebijakan rotasi tombol akan kedaluwarsa.
-Setidaknya harus 28 hari.
+### -KedaluwarsaIn
+Rentang waktu ketika kebijakan rotasi kunci akan kedaluwarsa.
+Harus setidaknya 28 hari.
 
 ```yaml
 Type: TimeSpan
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek utama
+Objek kunci
 
 ```yaml
 Type: PSKeyVaultKeyIdentityItem
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama Vault.
+Nama kubah.
 
 ```yaml
 Type: String
@@ -227,7 +230,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -242,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

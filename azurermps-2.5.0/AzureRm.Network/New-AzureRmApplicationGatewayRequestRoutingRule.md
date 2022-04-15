@@ -5,11 +5,11 @@ ms.assetid: 622FE9AC-1CC4-489C-BB17-9D6B9D1C151D
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/new-azurermapplicationgatewayrequestroutingrule
 schema: 2.0.0
 ms.openlocfilehash: 2f4b1abc5d6cd6d55eef3c45c01a2939842e32c6
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422795"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142285706"
 ---
 # New-AzureRmApplicationGatewayRequestRoutingRule
 
@@ -39,7 +39,7 @@ New-AzureRmApplicationGatewayRequestRoutingRule -Name <String> -RuleType <String
 ```
 
 ## DESCRIPTION
-**Cmdlet Add-AzureRmApplicationGatewayRequestRoutingRule** membuat aturan perutean permintaan untuk gateway aplikasi Azure.
+Cmdlet **Add-AzureRmApplicationGatewayRequestRoutingRule** membuat aturan perutean permintaan untuk gateway aplikasi Azure.
 
 ## EXAMPLES
 
@@ -48,12 +48,12 @@ New-AzureRmApplicationGatewayRequestRoutingRule -Name <String> -RuleType <String
 PS C:\>$Rule = New-AzureRmApplicationGatewayRequestRoutingRule -Name "Rule01" -RuleType Basic -BackendHttpSettings $Setting -HttpListener $Listener -BackendAddressPool $Pool
 ```
 
-Perintah ini membuat aturan perutean permintaan dasar bernama Rule01 dan menyimpan hasilnya dalam variabel yang bernama $Rule.
+Perintah ini membuat aturan perutean permintaan dasar bernama Rule01 dan menyimpan hasil dalam variabel bernama $Rule.
 
 ## PARAMETERS
 
 ### -BackendAddressPool
-Menentukan kumpulan alamat ujung belakang, sebagai objek, untuk aturan perutean permintaan agar dibuat.
+Menentukan kumpulan alamat ujung-belakang, sebagai objek, agar aturan perutean permintaan dibuat.
 
 ```yaml
 Type: PSApplicationGatewayBackendAddressPool
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendAddressPoolId
-Menentukan ID kumpulan alamat ujung belakang dari aturan perutean permintaan untuk dibuat.
+Menentukan ID kumpulan alamat ujung-belakang dari aturan perutean permintaan untuk dibuat.
 
 ```yaml
 Type: String
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendHttpSettings
-Menentukan pengaturan HTTP ujung belakang, sebagai objek, untuk aturan perutean permintaan agar dibuat.
+Menentukan pengaturan HTTP ujung-belakang, sebagai objek, agar aturan perutean permintaan dibuat.
 
 ```yaml
 Type: PSApplicationGatewayBackendHttpSettings
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendHttpSettingsId
-Menentukan ID pengaturan HTTP ujung belakang dari aturan perutean permintaan untuk dibuat.
+Menentukan ID pengaturan HTTP ujung-belakang dari aturan perutean permintaan untuk dibuat.
 
 ```yaml
 Type: String
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -127,8 +127,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpListener
-Menentukan pendengar HTTP ujung-belakang untuk aturan perutean permintaan yang akan dibuat.
+### -HttpListener
+Menentukan pendengar HTTP ujung-belakang untuk membuat aturan perutean permintaan.
 
 ```yaml
 Type: PSApplicationGatewayHttpListener
@@ -142,8 +142,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpListenerId
-Menentukan ID pendengar HTTP backend untuk aturan perutean permintaan yang akan dibuat.
+### -HttpListenerId
+Menentukan ID pendengar HTTP backend untuk membuat aturan perutean permintaan.
 
 ```yaml
 Type: String
@@ -172,8 +172,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RedirectConfiguration
-Application gateway RedirectConfiguration
+### -Konfigurasi Ulang
+Konfigurasi Ulang gateway aplikasi
 
 ```yaml
 Type: PSApplicationGatewayRedirectConfiguration
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -RedirectConfigurationId
-ID gateway aplikasi RedirectConfiguration
+ID konfigurasi ulang gateway aplikasi
 
 ```yaml
 Type: String
@@ -245,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -263,7 +263,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmApplicationGatewayRequestRoutingRule](./Get-AzureRmApplicationGatewayRequestRoutingRule.md)
 
-[Remove-AzureRmApplicationGatewayRequestRoutingRule](./Remove-AzureRmApplicationGatewayRequestRoutingRule.md)
+[Hapus-AzureRmApplicationGatewayRequestRoutingRule](./Remove-AzureRmApplicationGatewayRequestRoutingRule.md)
 
 [Set-AzureRmApplicationGatewayRequestRoutingRule](./Set-AzureRmApplicationGatewayRequestRoutingRule.md)
 

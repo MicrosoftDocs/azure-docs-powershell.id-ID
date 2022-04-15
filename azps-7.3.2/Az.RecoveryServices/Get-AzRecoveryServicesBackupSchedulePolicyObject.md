@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupSchedulePolicyObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupSchedulePolicyObject.md
-ms.openlocfilehash: eff9eafd5dbd073aab40cfe065597e54fe98dfa9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: db1a69b65b1c831d3d9674d011aa928e083fd18e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140380835"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142288879"
 ---
 # Get-AzRecoveryServicesBackupSchedulePolicyObject
 
 ## SYNOPSIS
 Mendapatkan objek kebijakan jadwal dasar.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupschedulepolicyobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,13 +30,13 @@ Get-AzRecoveryServicesBackupSchedulePolicyObject [-WorkloadType] <WorkloadType>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesBackupSchedulePolicyObject** mendapatkan cmdlet **dasar AzureRMRecoveryServicesSchedulePolicyObject**.
-Objek ini tidak tetap ada dalam sistem.
-Objek ini adalah objek sementara yang dapat Anda manipulasi dan gunakan dengan cmdlet New-AzRecoveryServicesBackupProtectionPolicy untuk membuat kebijakan perlindungan cadangan baru.
+Cmdlet **Get-AzRecoveryServicesBackupSchedulePolicyObject** mendapatkan basis **AzureRMRecoveryServicesSchedulePolicyObject**.
+Obyek ini tidak tetap ada dalam sistem.
+Ini adalah objek sementara yang dapat Anda manipulasi dan gunakan dengan cmdlet New-AzRecoveryServicesBackupProtectionPolicy untuk membuat kebijakan perlindungan cadangan baru.
 
 ## EXAMPLES
 
-### Contoh 1: Atur frekuensi jadwal ke mingguan
+### Contoh 1: Mengatur frekuensi jadwal ke mingguan
 ```
 PS C:\>$RetPol = Get-AzRecoveryServicesBackupRetentionPolicyObject -WorkloadType "AzureVM" 
 PS C:\> $SchPol = Get-AzRecoveryServicesBackupSchedulePolicyObject -WorkloadType "AzureVM" 
@@ -41,12 +44,12 @@ PS C:\> $SchPol.ScheduleRunFrequency = "Weekly"
 PS C:\> New-AzRecoveryServicesBackupProtectionPolicy -Name "NewPolicy" -WorkloadType AzureVM -RetentionPolicy $RetPol -SchedulePolicy $SchPol
 ```
 
-Perintah pertama mendapatkan objek kebijakan penyimpanan, lalu menyimpannya di $RetPol penyimpanan.
-Perintah kedua mendapatkan objek kebijakan jadwal, lalu menyimpannya di $SchPol variabel.
-Perintah ketiga mengubah frekuensi untuk kebijakan jadwal menjadi mingguan.
+Perintah pertama mendapatkan objek kebijakan penyimpanan, lalu menyimpannya dalam variabel $RetPol.
+Perintah kedua mendapatkan objek kebijakan jadwal, lalu menyimpannya dalam variabel $SchPol.
+Perintah ketiga mengubah frekuensi kebijakan jadwal menjadi mingguan.
 Perintah terakhir membuat kebijakan proteksi cadangan dengan jadwal yang diperbarui.
 
-### Contoh 2: Mengatur waktu pencadangan
+### Contoh 2: Atur waktu pencadangan
 ```
 PS C:\>$SchPol = Get-AzRecoveryServicesBackupSchedulePolicyObject -WorkloadType "AzureVM" 
 PS C:\> $SchPol.ScheduleRunTimes.RemoveAll()
@@ -55,14 +58,14 @@ PS C:\> $SchPol.ScheduleRunTimes.Add($DT.ToUniversalTime())
 PS C:\> New-AzRecoveryServicesBackupProtectionPolicy -Name "NewPolicy" -WorkloadType AzureVM -RetentionPolicy $RetPol -SchedulePolicy $SchPol
 ```
 
-Perintah pertama mendapatkan objek kebijakan jadwal, lalu menyimpannya di $SchPol variabel.
+Perintah pertama mendapatkan objek kebijakan jadwal, lalu menyimpannya dalam variabel $SchPol.
 Perintah kedua menghapus semua waktu jalankan terjadwal dari $SchPol.
-Perintah ketiga mendapatkan tanggal dan waktu saat ini, lalu menyimpannya dalam $DT variabel.
-Perintah keempat menggantikan waktu jalankan yang dijadwalkan dengan waktu saat ini.
-Anda hanya bisa mencadangkan AzureVM sekali per hari, jadi untuk mereset waktu pencadangan Anda harus mengganti jadwal aslinya.
+Perintah ketiga mendapatkan tanggal dan waktu saat ini, lalu menyimpannya dalam variabel $DT.
+Perintah keempat menggantikan waktu jalankan terjadwal dengan waktu saat ini.
+Anda hanya dapat mencadangkan AzureVM sekali per hari, jadi untuk mengatur ulang waktu pencadangan, Anda harus mengganti jadwal asli.
 Perintah terakhir membuat kebijakan proteksi cadangan menggunakan jadwal baru.
 
-### Contoh 3: Dapatkan jadwal per jam untuk kebijakan berbagi file 
+### Contoh 3: Dapatkan jadwal per jam untuk kebijakan filehare 
 ```powershell
 PS C:\> $schedulePolicy = Get-AzRecoveryServicesBackupSchedulePolicyObject -WorkloadType AzureFiles -BackupManagementType AzureStorage -ScheduleRunFrequency Hourly
 PS C:\> $timeZone = Get-TimeZone
@@ -73,9 +76,9 @@ PS C:\> $schedulePolicy.ScheduleInterval = 6
 PS C:\> $schedulePolicy.ScheduleWindowDuration = 14
 ```
 
-Perintah pertama mendapatkan **SchedulePolicyObject basis jam**, lalu menyimpannya dalam $schedulePolicy per jam.
-Perintah kedua dan ketiga mengambil zona waktu dan memperbarui zona waktu pada $schedulePolicy.
-Perintah keempat dan kelima memulai waktu mulai jendela jadwal dan memperbarui $schedulePolicy. Harap diperhatikan bahwa waktu mulai harus dalam UTC meskipun zona waktu tidak UTC. Perintah keenam dan ketujuh memperbarui interval (dalam jam) setelah itu cadangan akan dibuat ulang di hari yang sama, durasi (dalam jam) di mana jadwal akan dijalankan.
+Perintah pertama mendapatkan **SchedulePolicyObject** basis jam, lalu menyimpannya dalam variabel $schedulePolicy.
+Perintah kedua dan ketiga mengambil zona waktu dan memperbarui zona waktu dalam $schedulePolicy.
+Perintah keempat dan kelima menginisialisasi waktu mulai jendela jadwal dan memperbarui $schedulePolicy. Harap diperhatikan bahwa waktu mulai harus berada di UTC meskipun zona waktunya tidak UTC. Perintah keenam dan ketujuh memperbarui interval (dalam jam) setelah itu cadangan akan diambil pada hari yang sama, durasi (dalam jam) yang jadwalnya akan berjalan.
 
 ## PARAMETERS
 
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -150,11 +153,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

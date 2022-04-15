@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupWorkloadRecoveryConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupWorkloadRecoveryConfig.md
-ms.openlocfilehash: 0e3725ae43438bbb41d6fa833475911f2575ef5b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9cbf6218d4f0f3f234cc1fc2ce127bf116ccbe8c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140184529"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142288843"
 ---
 # Get-AzRecoveryServicesBackupWorkloadRecoveryConfig
 
 ## SYNOPSIS
-Perintah ini membangun konfigurasi pemulihan dari item yang dicadangkan seperti yang SQL DB. Objek konfigurasi menyimpan semua detail seperti mode pemulihan, tujuan target untuk pemulihan dan parameter aplikasi tertentu seperti jalur fisik target untuk SQL.
+Perintah ini menyusun konfigurasi pemulihan item yang dicadangkan seperti SQL DB. Objek konfigurasi menyimpan semua detail seperti mode pemulihan, tujuan target untuk pemulihan dan parameter spesifik aplikasi seperti jalur fisik target untuk SQL.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupworkloadrecoveryconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzRecoveryServicesBackupWorkloadRecoveryConfig [[-PointInTime] <DateTime>]
 ```
 
 ## DESCRIPTION
-Perintah tersebut mengembalikan konfigurasi pemulihan untuk item AzureWorkload yang disampaikan ke cmdlet pemulihan.
+Perintah mengembalikan konfigurasi pemulihan untuk item AzureWorkload yang dikirimkan ke cmdlet pemulihan.
 
 ## EXAMPLES
 
@@ -48,14 +51,14 @@ PS C:\> $SQLRecoveryObject = Get-AzRecoveryServicesBackupRecoveryPoint -Item $SQ
 PS C:\> $SQLRecoveryObject = Get-AzRecoveryServicesBackupRecoveryPoint -Item $SQLBkpItem $startdate $enddate | Get-AzRecoveryServicesWorkloadRecoveryConfig -AlternateWorkloadRestore -TargetItem $SQLProtItem -TargetContainer $targetVMContainer
 ```
 
-Cmdlet pertama digunakan untuk mendapatkan objek poin Pemulihan.
+Cmdlet pertama digunakan untuk mendapatkan objek titik Pemulihan.
 Cmdlet kedua membuat rencana pemulihan untuk pemulihan lokasi asli.
-Cmdlet ketiga THe membuat rencana pemulihan untuk pemulihan lokasi alternatif.
-Catatan: Parameter -TargetContainer wajib dilakukan jika ada AlternateLocationRestore atau RestoreAsFiles.
+Cmdlet ketiga menciptakan rencana pemulihan untuk pemulihan lokasi alternatif.
+Catatan: Parameter -TargetContainer wajib dilakukan jika terdapat AlternateLocationRestore atau RestoreAsFiles.
 
 ### Contoh 2
 
-Perintah ini membangun konfigurasi pemulihan dari item yang dicadangkan seperti yang SQL DB. (otomatisgenerated)
+Perintah ini menyusun konfigurasi pemulihan item yang dicadangkan seperti SQL DB. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -64,7 +67,7 @@ Get-AzRecoveryServicesBackupWorkloadRecoveryConfig -AlternateWorkloadRestore -Re
 
 ## PARAMETERS
 
-### -AlternateWorkloadRestore
+### -AlternatifWorkloadRestore
 Menentukan bahwa DB yang dicadangkan harus dipulihkan ke server lain yang dipilih.
 
 ```yaml
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -FilePath
-Menentukan jalur file yang digunakan untuk operasi pemulihan.
+Menentukan jalur berkas yang digunakan untuk operasi pemulihan.
 
 ```yaml
 Type: System.String
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -Item
-Menentukan item cadangan tempat operasi pemulihan sedang dilakukan.
+Menentukan unsur cadangan di mana operasi pemulihan sedang dilakukan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ItemBase
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginalWorkloadRestore
-Menentukan bahwa DB yang dicadangkan akan ditimpa dengan informasi DB yang ada di titik pemulihan.
+Menentukan bahwa DB yang dicadangkan akan ditimpa dengan informasi DB yang ada dalam titik pemulihan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -PointInTime
-Waktu akhir rentang Waktu yang titik pemulihannya perlu diambil
+Waktu akhir rentang Waktu yang titik pemulihannya perlu didapatkan
 
 ```yaml
 Type: System.DateTime
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetContainer
-Menentukan komputer target tempat File DB perlu dipulihkan. TargetContainer wajib dilakukan dalam kasus AlternateLocationRestore atau RestoreAsFiles.
+Menentukan mesin target tempat Berkas DB perlu dipulihkan. TargetContainer wajib dilakukan dalam kasus AlternateLocationRestore atau RestoreAsFiles.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ContainerBase
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetItem
-Menentukan target pemulihan DB. Untuk SQL, tipe item yang dapat diproteksi hanya SQLInstance.
+Menentukan target di mana DB perlu dipulihkan. Untuk pemulihan SQL, item hanya perlu dilindungi tipe SQLInstance.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ProtectableItemBase
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -245,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

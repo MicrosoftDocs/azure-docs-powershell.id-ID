@@ -3,17 +3,17 @@ external help file: Microsoft.Azure.Commands.Network.dll-Help.xml
 Module Name: AzureRM.Network
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/new-azurermapplicationgatewayfirewalldisabledrulegroupconfig
 schema: 2.0.0
-ms.openlocfilehash: 2192e8c0a4d394df7c5f9c13b9bde54eb72b02e66a1801e56261fccd6c2bb4c9
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 4e62a6c8820f9a9e6465c74746d589b343d99898
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140865656"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142285765"
 ---
 # New-AzureRmApplicationGatewayFirewallDisabledRuleGroupConfig
 
 ## SYNOPSIS
-Membuat konfigurasi grup aturan dinonaktifkan yang baru.
+Membuat konfigurasi grup aturan baru yang dinonaktifkan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -26,7 +26,7 @@ New-AzureRmApplicationGatewayFirewallDisabledRuleGroupConfig -RuleGroupName <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmApplicationGatewayFirewallDisabledRuleGroupConfig** membuat konfigurasi grup aturan dinonaktifkan baru.
+Cmdlet **New-AzureRmApplicationGatewayFirewallDisabledRuleGroupConfig** membuat konfigurasi grup aturan baru yang dinonaktifkan.
 
 ## EXAMPLES
 
@@ -35,12 +35,12 @@ Cmdlet **New-AzureRmApplicationGatewayFirewallDisabledRuleGroupConfig** membuat 
 PS C:\> $disabledRuleGroup1 = New-AzureRmApplicationGatewayFirewallDisabledRuleGroupConfig -RuleGroupName "REQUEST-942-APPLICATION-ATTACK-SQLI" -Rules 942130,942140
 ```
 
-Perintah membuat konfigurasi grup aturan dinonaktifkan baru untuk grup aturan bernama "REQUEST-942-APPLICATION-ATTACK-SQLI" dengan aturan 942130 dan aturan 942140 yang dinonaktifkan. Konfigurasi grup aturan dinonaktifkan yang baru disimpan di $disabledRuleGroup 1.
+Perintah membuat konfigurasi grup aturan baru yang dinonaktifkan untuk grup aturan bernama "REQUEST-942-APPLICATION-ATTACK-SQLI" dengan aturan 942130 dan aturan 942140 dinonaktifkan. Konfigurasi grup aturan baru yang dinonaktifkan disimpan di $disabledRuleGroup 1.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -86,11 +86,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

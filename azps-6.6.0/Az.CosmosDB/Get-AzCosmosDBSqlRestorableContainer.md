@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlRestorableContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlRestorableContainer.md
 ms.openlocfilehash: 28ceaa60bce7c8d83070044e2a2d8ae4fb19d23b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140311369"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142307293"
 ---
 # Get-AzCosmosDBSqlRestorableContainer
 
 ## SYNOPSIS
-Mencantumkan semua wadah Azure Cosmos DB SQL yang dapat dikembalikan yang tersedia untuk database tertentu.
+Mencantumkan semua wadah Azure Cosmos DB SQL yang dapat disembuhkan yang tersedia untuk database tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbsqlrestorablecontainer) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbsqlrestorablecontainer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,9 +35,9 @@ Get-AzCosmosDBSqlRestorableContainer -InputObject <PSRestorableSqlDatabaseGetRes
 ```
 
 ## DESCRIPTION
-Mencantumkan semua wadah Azure Cosmos DB SQL yang dapat dikembalikan yang tersedia untuk database tertentu.
-Daftar akan memiliki entri yang terkait dengan membuat, mengganti dan menghapus acara dari semua wadah langsung dan dihapus di bawah database.
-Daftar ini berguna untuk mengidentifikasi timestamp pemulihan berdasarkan perubahan pada wadah. Misalnya, jika pengguna ingin memulihkan akun database menjadi timestamp saat wadah tertentu dihapus, pengguna bisa menemukan acara hapus kumpulan terkait dari daftar ini, dan pilih timestamp sebelum menghapus acara untuk dipulihkan.
+Mencantumkan semua wadah Azure Cosmos DB SQL yang dapat disembuhkan yang tersedia untuk database tertentu.
+Daftar akan memiliki entri yang terkait untuk membuat, mengganti, dan menghapus kejadian semua kontainer langsung dan dihapus di bawah database.
+Daftar ini berguna untuk mengidentifikasi stempel waktu pemulihan berdasarkan perubahan dalam wadah. Misalnya, jika pengguna ingin memulihkan akun database ke stempel waktu ketika wadah tertentu dihapus, pengguna dapat menemukan kejadian penghapusan koleksi yang terkait dari daftar ini, dan memilih cap waktu sebelum acara penghapusan untuk dipulihkan.
 
 ## EXAMPLES
 
@@ -79,12 +79,12 @@ OwnerResourceId : Ts0YAP+RbG0=
 Container       : Microsoft.Azure.Management.CosmosDB.Models.PSRestorableSqlContainerPropertiesResourceContainer
 ```
 
-Objek sumber daya berisi properti sumber daya wadah
+Objek sumber daya berisi properti sumber daya kontainer
 
 ## PARAMETERS
 
 ### -DatabaseAccountInstanceId
-Contoh Id dari akun database CosmosDB.
+Id instans akun database CosmosDB.
 (Ini dikembalikan sebagai bagian dari properti akun database).
 
 ```yaml
@@ -160,11 +160,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

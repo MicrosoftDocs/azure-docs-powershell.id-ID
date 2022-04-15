@@ -5,16 +5,16 @@ ms.assetid: 7688CE56-0A25-4409-9676-BF1B67C3F05F
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/get-azurermvirtualnetworksubnetconfig
 schema: 2.0.0
 ms.openlocfilehash: ceb009dba1984f69e7da3e04a9ae57a9da14c067
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428874"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142285778"
 ---
 # Get-AzureRmVirtualNetworkSubnetConfig
 
 ## SYNOPSIS
-Mendapatkan subnet dalam jaringan virtual.
+Mendapatkan subnet di jaringan virtual.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -26,7 +26,7 @@ Get-AzureRmVirtualNetworkSubnetConfig [-Name <String>] -VirtualNetwork <PSVirtua
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmVirtualNetworkSubnetConfig** mendapatkan satu atau beberapa konfigurasi subnet di jaringan virtual Azure.
+Cmdlet **Get-AzureRmVirtualNetworkSubnetConfig** mendapatkan satu atau beberapa konfigurasi subnet dalam jaringan virtual Azure.
 
 ## EXAMPLES
 
@@ -40,12 +40,12 @@ New-AzureRmResourceGroup -Name TestResourceGroup -Location centralus
     Get-AzureRmVirtualNetworkSubnetConfig -Name frontendSubnet -VirtualNetwork $virtualNetwork
 ```
 
-Contoh ini membuat grup sumber daya dan jaringan virtual dengan subnet tunggal dalam grup sumber daya tersebut. Subnet tersebut kemudian mengambil data tentang subnet itu.
+Contoh ini membuat grup sumber daya dan jaringan virtual dengan subnet tunggal dalam grup sumber daya tersebut. Lalu mengambil data tentang subnet tersebut.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama konfigurasi subnet yang akan didaurkan cmdlet ini.
+Menentukan nama konfigurasi subnet yang didapatkan cmdlet ini.
 
 ```yaml
 Type: String
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetwork
-Menentukan objek **VirtualNetwork** yang berisi konfigurasi subnet yang akan didaangkan cmdlet ini.
+Menentukan objek **VirtualNetwork** yang berisi konfigurasi subnet yang didapatkan cmdlet ini.
 
 ```yaml
 Type: PSVirtualNetwork
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
