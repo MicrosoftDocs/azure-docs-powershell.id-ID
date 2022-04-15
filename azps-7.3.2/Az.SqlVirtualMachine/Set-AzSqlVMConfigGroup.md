@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sqlvirtualmachin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Set-AzSqlVMConfigGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Set-AzSqlVMConfigGroup.md
-ms.openlocfilehash: 4523a389da7c4f0d5cf0d182776acc72766734bf
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 71e029b7cfbc31163a618301b165364e46404434
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140554009"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142398977"
 ---
 # Set-AzSqlVMConfigGroup
 
 ## SYNOPSIS
-Atur informasi relatif terhadap grup mesin virtual sql dalam konfigurasi mesin virtual sql.
+Set the information relative to a sql virtual machine group in a sql virtual machine configuration.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sqlvirtualmachine/set-azsqlvmconfiggroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Set-AzSqlVMConfigGroup [-SqlVM] <AzureSqlVMModel> [-SqlVMGroup] <AzureSqlVMGroup
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzSqlVMConfigGroup cmdlet mengatur informasi yang diperlukan untuk bergabung dalam grup mesin virtual sql untuk konfigurasi mesin virtual sql.
+Cmdlet Set-AzSqlVMConfigGroup mengatur informasi yang diperlukan untuk bergabung dengan grup mesin virtual sql untuk konfigurasi mesin virtual sql.
 
 ## EXAMPLES
 
@@ -36,7 +39,7 @@ Cmdlet Set-AzSqlVMConfigGroup cmdlet mengatur informasi yang diperlukan untuk be
 PS C:\> $config = Set-AzSqlVMConfigGroup -SqlVM $config -SqlVMGroup $group -ClusterOperatorAccountPassword 'password' -SqlServiceAccountPassword 'password'
 ```
 
-Perbarui informasi grup dari konfigurasi mesin virtual sql.
+Perbarui informasi grup konfigurasi mesin virtual sql.
 
 ## PARAMETERS
 
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlServiceAccountPassword
-Kata sandi untuk akun SQL layanan baru
+Kata sandi untuk akun layanan SQL
 
 ```yaml
 Type: System.Security.SecureString
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlVM
-Konfigurasi SQL mesin virtual tempat keanggotaan grup akan ditambahkan
+Konfigurasi mesin virtual SQL tempat keanggotaan grup akan ditambahkan
 
 ```yaml
 Type: Microsoft.Azure.Commands.SqlVirtualMachine.SqlVirtualMachine.Model.AzureSqlVMModel
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlVMGroup
-Grup tempat SQL virtual akan menjadi bagian dari
+Grup mesin virtual SQL akan menjadi bagian dari
 
 ```yaml
 Type: Microsoft.Azure.Commands.SqlVirtualMachine.SqlVirtualMachine.Model.AzureSqlVMGroupModel
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

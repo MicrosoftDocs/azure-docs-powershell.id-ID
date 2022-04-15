@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeStorageAccount.md
-ms.openlocfilehash: 894ef3cc1db1a1271aec24a24a262d90cb232e80
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ec9f3f0f7beaf7a4dcac22231bf3e0684a332b00
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140183269"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142398887"
 ---
 # Get-AzStackEdgeStorageAccount
 
 ## SYNOPSIS
-Dapatkan akun Storage Edge pada perangkat.
+Mendapatkan akun Storage Edge di perangkat.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/get-azstackedgestorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Get-AzStackEdgeStorageAccount [[-Name] <String>] [-DefaultProfile <IAzureContext
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-Az StackEdgeStorageAccount** mendapatkan akun Storage Edge tersedia pada perangkat Stack Edge. Anda dapat menentukan Nama sebagai parameter dalam cmdlet untuk mendapatkan informasi tentang akun Storage Edge tertentu.
+Cmdlet **Get-AzStackEdgeStorageAccount** mendapatkan akun Storage Edge yang tersedia di perangkat Stack Edge. Anda dapat menentukan Nama sebagai parameter dalam cmdlet untuk mendapatkan informasi akun Storage Edge tertentu.
 
 ## EXAMPLES
 
@@ -192,17 +195,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PS StackEdgeDevice
+### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeDevice
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PS StackEdgeStorageAccount
+### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeStorageAccount
 
 ## CATATAN
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/reset-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Reset-AzSynapseSqlAuditSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Reset-AzSynapseSqlAuditSetting.md
-ms.openlocfilehash: d9a9217f0b8d7da957d07fa02ec0d5b2f3361fad
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 888611dcfa943758ee5cf05007df113fd5fbbebe
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139997972"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142395989"
 ---
 # Reset-AzSynapseSqlAuditSetting
 
 ## SYNOPSIS
-Menghapus pengaturan audit ruang kerja Analitik Azure Synapse.
+Menghapus pengaturan pengaudungan Azure Synapse Ruang Kerja Analitik.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/reset-azsynapsesqlauditsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,20 +28,20 @@ Reset-AzSynapseSqlAuditSetting [[-ResourceGroupName] <String>] [-WorkspaceName] 
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### WorkspaceObjectParameterSet
+### Ruang KerjaObjectParameterSet
 ```
 Reset-AzSynapseSqlAuditSetting -WorkspaceObject <PSSynapseWorkspace> [-AsJob]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### WorkspaceResourceIdParameterSetName
+### Ruang KerjaResourceIdParameterSetName
 ```
 Reset-AzSynapseSqlAuditSetting -ResourceId <String> [-AsJob] [-DefaultProfile <IAzureContextContainer>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Reset-AzSynapseSqlAuditSetting** menghapus pengaturan audit ruang kerja Azure Synapse Analytics.
+Cmdlet **Pengaturan Ulang-AzSynapseSqlAuditSetting** menghapus pengaturan pengauditan ruang kerja analitik Azure Synapse.
 
 ## EXAMPLES
 
@@ -47,19 +50,19 @@ Cmdlet **Reset-AzSynapseSqlAuditSetting** menghapus pengaturan audit ruang kerja
 PS C:\> Reset-AzSynapseSqlAuditSetting -WorkspaceName ContosoWorkspace
 ```
 
-Perintah ini menghapus pengaturan audit Ruang Kerja Analitik Azure Synapse yang bernama ContosoWorkspace.
+Perintah ini menghapus pengaturan audit ruang kerja analitik Azure Synapse bernama ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzSynapseWorkspace -Name ContosoWorkspace | Reset-AzSynapseSqlAuditSetting
 ```
 
-Perintah ini menghapus pengaturan pengauditan ruang kerja Analitik Azure Synapse yang bernama ContosoWorkspace melalui pipeline.
+Perintah ini menghapus pengaturan audit ruang kerja analitik Azure Synapse bernama ContosoWorkspace melalui pipeline.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -118,7 +121,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseSecondary.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseSecondary.md
-ms.openlocfilehash: 3e2921484874626dc567889477b477e48065905a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5924e888ce5703f30a5711364482156df048df8b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140005891"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142399337"
 ---
 # Set-AzSqlDatabaseSecondary
 
 ## SYNOPSIS
-Mengalihkan database sekunder menjadi database utama untuk memulai failover.
+Mengalihkan database sekunder menjadi utama untuk memulai failover.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqldatabasesecondary) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,11 +38,11 @@ Set-AzSqlDatabaseSecondary [-DatabaseName] <String> -PartnerResourceGroupName <S
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSqlDatabaseSec cmdlet mengubah** database sekunder menjadi database primer untuk memulai failover.
-Cmdlet ini didesain sebagai perintah konfigurasi umum, tetapi saat ini terbatas untuk memulai failover.
-Tentukan parameter *AllowDataLoss* untuk memulai force failover selama pemadaman.
-Anda tidak perlu menentukan parameter ini saat melakukan operasi yang direncanakan, seperti drill pemulihan.
-Dalam kasus yang terakhir ini, database sekunder disinkronkan dengan database utama sebelum dialihkan.
+Cmdlet **Set-AzSqlDatabaseSecondary** mengalihkan database sekunder menjadi utama untuk memulai failover.
+Cmdlet ini dirancang sebagai perintah konfigurasi umum, tetapi saat ini terbatas pada memulai failover.
+Tentukan parameter *AllowDataLoss* untuk memulai failover paksa selama pemadaman.
+Anda tidak perlu menentukan parameter ini saat Anda melakukan operasi yang direncanakan, seperti bor pemulihan.
+Dalam kasus terakhir, database sekunder disinkronkan dengan database utama sebelum dialihkan.
 
 ## EXAMPLES
 
@@ -49,7 +52,7 @@ $database = Get-AzSqlDatabase -DatabaseName $databaseName -ResourceGroupName $se
 $database | Set-AzSqlDatabaseSecondary -PartnerResourceGroupName $primaryResourceGroupName -Failover
 ```
 
-### Contoh 2: Memulai failover yang paksa (dengan potensi kehilangan data)
+### Contoh 2: Memulai failover paksa (dengan potensi kehilangan data)
 ```powershell
 $database = Get-AzSqlDatabase -DatabaseName $databaseName -ResourceGroupName $secondaryResourceGroupName -ServerName $secondaryServerName
 $database | Set-AzSqlDatabaseSecondary -PartnerResourceGroupName $primaryResourceGroupName -Failover -AllowDataLoss
@@ -58,7 +61,7 @@ $database | Set-AzSqlDatabaseSecondary -PartnerResourceGroupName $primaryResourc
 ## PARAMETERS
 
 ### -AllowDataLoss
-Menunjukkan bahwa operasi failover ini mengizinkan hilangnya data.
+Menunjukkan bahwa operasi failover ini memungkinkan hilangnya data.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama grup yang menjadi SQL Server menjadi host Azure SQL Database Sekunder.
+Menentukan nama SQL Server yang menjadi host Azure SQL Database Sekunder.
 
 ```yaml
 Type: System.String
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -223,8 +226,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzSqlDatabaseSecbasery](./New-AzSqlDatabaseSecondary.md)
+[New-AzSqlDatabaseSecondary](./New-AzSqlDatabaseSecondary.md)
 
-[Remove-AzSqlDatabaseSecbasery](./Remove-AzSqlDatabaseSecondary.md)
+[Remove-AzSqlDatabaseSecondary](./Remove-AzSqlDatabaseSecondary.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewaySslCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewaySslCertificate.md
-ms.openlocfilehash: 9dd286f27cfb010734e15a2fd87c91ad4768aa3c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 443382a095c949cb8f407b2b2f5e2f15a05e28ed
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140555332"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142371041"
 ---
 # Remove-AzApplicationGatewaySslCertificate
 
 ## SYNOPSIS
 Menghapus sertifikat SSL dari gateway aplikasi Azure.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azapplicationgatewaysslcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,8 +40,8 @@ PS C:\> Remove-AzApplicationGatewaySslCertificate -ApplicationGateway $AppGW -Na
 PS C:\> Set-AzApplicationGateway -ApplicationGateway $AppGw
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dan menyimpan hasilnya di variabel yang bernama $AppGW.
-Perintah kedua menghapus sertifikat SSL yang bernama Cert02 dari gateway aplikasi yang disimpan di $AppGW ini.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dan menyimpan hasil dalam variabel bernama $AppGW.
+Perintah kedua menghapus sertifikat SSL bernama Cert02 dari gateway aplikasi yang disimpan dalam variabel $AppGW.
 Perintah terakhir memperbarui gateway aplikasi.
 
 ## PARAMETERS
@@ -59,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

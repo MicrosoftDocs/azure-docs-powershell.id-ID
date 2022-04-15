@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy.md
-ms.openlocfilehash: 3e64f3bfcd47f55df73b8a3caf71f813560fdc5d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c6ac2421f8baf03a8fcc6e9945d8a748f9d05cc7
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140548602"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142399265"
 ---
 # Set-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy
 
 ## SYNOPSIS
-Cmdlet **Set-AzSqlInstanceDatabaseLongTermRetentionBackup** mengatur kebijakan penyimpanan jangka panjang database terkelola.
+Cmdlet **Set-AzSqlInstanceDatabaseLongTermRetentionBackup** menetapkan kebijakan penyimpanan jangka panjang database terkelola.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqlinstancedatabasebackuplongtermretentionpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,14 +36,14 @@ Set-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy [-RemovePolicy] [-Instanc
  [-Confirm] [<CommonParameters>]
 ```
 
-### MonthlyRetentionRequired
+### BulananRetentionRequired
 ```
 Set-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy [-WeeklyRetention <String>] -MonthlyRetention <String>
  [-InstanceName] <String> [-DatabaseName] <String> [-ResourceGroupName] <String>
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### YearlyRetentionRequired
+### TahunanRetentionRequired
 ```
 Set-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy [-WeeklyRetention <String>] [-MonthlyRetention <String>]
  -YearlyRetention <String> -WeekOfYear <Int32> [-InstanceName] <String> [-DatabaseName] <String>
@@ -49,7 +52,7 @@ Set-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy [-WeeklyRetention <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy** mengatur kebijakan penyimpanan jangka panjang untuk database yang dikelola ini.
+Cmdlet **Set-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy** mengatur kebijakan penyimpanan jangka panjang untuk database terkelola ini.
 
 ## EXAMPLES
 
@@ -89,7 +92,7 @@ Perintah ini menghapus kebijakan penyimpanan jangka panjang dari database.
 
 ### Contoh 3
 
-Cmdlet Set-AzSqlInstanceDatabaseLongTermRetentionBackup mengatur kebijakan penyimpanan jangka panjang database terkelola. (otomatisgenerated)
+Cmdlet Set-AzSqlInstanceDatabaseLongTermRetentionBackup mengatur kebijakan penyimpanan jangka panjang database terkelola. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -99,7 +102,7 @@ Set-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy -DatabaseName target1 -In
 ## PARAMETERS
 
 ### -DatabaseName
-Nama Database Terkelola Azure yang akan digunakan.
+Nama Database Terkelola Azure untuk digunakan.
 
 ```yaml
 Type: System.String
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-Nama Instans Terkelola Azure tempat database dimiliki.
+Nama Instans Terkelola Azure tempat database berada.
 
 ```yaml
 Type: System.String
@@ -145,8 +148,8 @@ Accept wildcard characters: False
 
 ### -MonthlyRetention
 Penyimpanan Bulanan.
-Jika hanya angka yang lolos dan bukan string ISO 8601, hari akan diasumsikan sebagai unit.
-Terdapat minimal 7 hari dan maksimal 10 tahun.
+Jika hanya angka yang dilewatkan, bukan string ISO 8601, hari akan diasumsikan sebagai satuan.
+Minimal ada 7 hari dan maksimal 10 tahun.
 
 ```yaml
 Type: System.String
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemovePolicy
-Jika tersedia, kebijakan untuk database akan dihapus.
+Jika disediakan, kebijakan untuk database akan dikosongkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -203,9 +206,9 @@ Accept wildcard characters: False
 ```
 
 ### -WeeklyRetention
-Penyimpanan mingguan.
-Jika hanya angka yang lolos dan bukan string ISO 8601, hari akan diasumsikan sebagai unit.
-Terdapat minimal 7 hari dan maksimal 10 tahun.
+Retensi Mingguan.
+Jika hanya angka yang dilewatkan, bukan string ISO 8601, hari akan diasumsikan sebagai satuan.
+Minimal ada 7 hari dan maksimal 10 tahun.
 
 ```yaml
 Type: System.String
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -WeekOfYear
-Minggu dalam Tahun, 1 hingga 52, untuk menyimpan untuk Penyimpanan Tahunan.
+Minggu Dalam Tahun, 1 hingga 52, untuk menyimpan untuk Penyimpanan Tahunan.
 
 ```yaml
 Type: System.Int32
@@ -248,8 +251,8 @@ Accept wildcard characters: False
 
 ### -YearlyRetention
 Penyimpanan Tahunan.
-Jika hanya angka yang lolos dan bukan string ISO 8601, hari akan diasumsikan sebagai unit.
-Terdapat minimal 7 hari dan maksimal 10 tahun.
+Jika hanya angka yang dilewatkan, bukan string ISO 8601, hari akan diasumsikan sebagai satuan.
+Minimal ada 7 hari dan maksimal 10 tahun.
 
 ```yaml
 Type: System.String
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -280,7 +283,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -295,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -317,4 +320,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Remove-AzSqlInstanceDatabaseLongTermRetentionBackup](./Remove-AzSqlInstanceDatabaseLongTermRetentionBackup.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

@@ -4,16 +4,16 @@ Module Name: Azs.Infrastructureinsights.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 752bd7f183bf5a5bdad7950e6567024cbe5b8dec
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136580538"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142380707"
 ---
 # Get-AzsRPHealth
 
 ## SYNOPSIS
-Mengembalikan daftar dari setiap kesehatan layanan.
+Mengembalikan daftar kesehatan setiap layanan.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-AzsRPHealth [-Location <String>] [-ResourceGroupName <String>] [-Filter <Str
  [-Top <Int32>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsRPHealth [-Name] <String> [-Location <String>] [-ResourceGroupName <String>] [<CommonParameters>]
 ```
@@ -34,7 +34,7 @@ Get-AzsRPHealth -ResourceId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Mengembalikan daftar dari setiap kesehatan layanan. Properti AlertSummary mencakup detail tentang jumlah peringatan/kesalahan.
+Mengembalikan daftar kesehatan setiap layanan. Properti AlertSummary mencakup detail tentang jumlah peringatan/kesalahan.
 
 ## EXAMPLES
 
@@ -43,7 +43,7 @@ Mengembalikan daftar dari setiap kesehatan layanan. Properti AlertSummary mencak
 Get-AzsRPHealth
 ```
 
-Mengembalikan daftar dari setiap kesehatan layanan.
+Mengembalikan daftar kesehatan setiap layanan.
 
 ### CONTOH 2
 ```
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

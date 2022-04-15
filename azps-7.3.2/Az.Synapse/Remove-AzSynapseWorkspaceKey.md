@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseWorkspaceKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseWorkspaceKey.md
-ms.openlocfilehash: c7f040766766f8b5c3136f9cb399c253c07ab797
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ee15b5f31d1ecb60f4c3f1f09a422b943f33fc0f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140005214"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142396061"
 ---
 # Remove-AzSynapseWorkspaceKey
 
 ## SYNOPSIS
 Menghapus kunci ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/remove-azsynapseworkspacekey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ Remove-AzSynapseWorkspaceKey -ResourceId <String> [-PassThru] [-AsJob] [-Force]
 PS C:\> Remove-AzSynapseWorkspaceKey -WorkspaceName ContosoWorkspace -Name ContosoKeyName
 ```
 
-Perintah ini menghapus kunci ruang kerja di bawah ruang kerja Azure Synapse Analytics.
+Perintah ini menghapus kunci ruang kerja di bawah ruang kerja analitik Azure Synapse.
 
 ### Contoh 2
 ```powershell
@@ -61,19 +64,19 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Remove-AzSynapseWorkspaceKey -Name ContosoKeyName
 ```
 
-Perintah ini menghapus kunci ruang kerja di bawah ruang kerja Analitik Azure Synapse melalui pipeline.
+Perintah ini menghapus kunci ruang kerja di bawah ruang kerja Azure Synapse Analytics melalui pipeline.
 
 ### Contoh 3
 ```powershell
 PS C:\> Remove-AzSynapseWorkspaceKey -ResourceId /subscriptions/21686af7-58ec-4f4d-9c68-f431f4db4edd/resourceGroups/ContosoResourceGroup/providers/Microsoft.Synapse/workspaces/ContosoWorkspace/keys/ContosoKeyName
 ```
 
-Perintah ini menghapus tombol ruang kerja Analitik Azure Synapse melalui saluran dengan ID sumber daya yang ditentukan.
+Perintah ini menghapus kunci ruang kerja Azure Synapse Analytics melalui pipeline dengan ID sumber daya yang ditentukan.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -102,8 +105,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek input kunci ruang kerja, biasanya melewati saluran.
+Objek input tombol ruang kerja, biasanya melewati pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.WorkspaceKey.PSWorkspaceKey
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 
 ### -PassThru
 Cmdlet ini tidak mengembalikan objek secara default.
-Jika sakelar ini ditentukan, maka true akan dikembalikan jika berhasil.
+Jika sakelar ini ditentukan, sakelar akan mengembalikan true jika berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya dari Synapse SQL Pool.
+Pengidentifikasi sumber daya Synapse SQL Pool.
 
 ```yaml
 Type: System.String
@@ -193,7 +196,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -224,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -240,7 +243,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -255,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
