@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchAccount.md
 ms.openlocfilehash: 95e1e2aaba452c1f54d6b018ce4c44ba24cd8fc8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140258781"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142274263"
 ---
 # New-AzBatchAccount
 
 ## SYNOPSIS
-Membuat akun Kumpulan.
+Membuat akun Batch.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/new-azbatchaccount) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.batch/new-azbatchaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ New-AzBatchAccount [-AccountName] <String> [-Location] <String> [-ResourceGroupN
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzBatchAccount** membuat akun Kumpulan Azure untuk grup dan lokasi sumber daya yang ditentukan.
+Cmdlet **New-AzBatchAccount** membuat akun Azure Batch untuk grup sumber daya dan lokasi yang ditentukan.
 
 ## EXAMPLES
 
@@ -49,11 +49,11 @@ Tags                         :
 TaskTenantUrl                : https://cmdletexample.westus.batch.azure.com
 ```
 
-Perintah ini membuat akun Kumpulan yang bernama pfuller menggunakan grup sumber daya ResourceGroup03 di lokasi AS Barat.
+Perintah ini membuat akun Batch bernama pfuller menggunakan grup sumber daya ResourceGroup03 di lokasi AS Barat.
 
 ### Contoh 2
 
-Membuat akun Kumpulan. (otomatisgenerated)
+Membuat akun Batch. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -62,9 +62,9 @@ New-AzBatchAccount -AccountName 'pfuller' -AutoStorageAccountId <String> -Locati
 
 ## PARAMETERS
 
-### -Nama Akun
-Menentukan nama akun Kumpulan yang dibuat cmdlet ini.
-Nama akun kumpulan harus panjang antara 3 hingga 24 karakter dan hanya berisi angka dan huruf kecil.
+### -AccountName
+Menentukan nama akun Batch yang dibuat cmdlet ini.
+Nama akun batch harus panjangnya antara 3 dan 24 karakter dan hanya berisi angka dan huruf kecil.
 
 ```yaml
 Type: System.String
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultId
-ID sumber daya azure key vault yang terkait dengan akun Batch.
+ID sumber daya kubah kunci Azure yang terkait dengan akun Batch.
 
 ```yaml
 Type: System.String
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultUrl
-URL penyimpanan kunci Azure yang terkait dengan akun Kumpulan.
+URL kubah kunci Azure yang terkait dengan akun Batch.
 
 ```yaml
 Type: System.String
@@ -155,8 +155,8 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan kawasan tempat cmdlet membuat akun tersebut.
-Untuk informasi selengkapnya, [lihat Azure Regions](https://azure.microsoft.com/en-us/regions).
+Menentukan kawasan tempat cmdlet ini membuat akun.
+Untuk informasi selengkapnya, lihat [Kawasan Azure](https://azure.microsoft.com/en-us/regions).
 
 ```yaml
 Type: System.String
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolAllocationMode
-Mode alokasi untuk membuat kolam renang dalam akun Kumpulan.
+Mode alokasi untuk membuat kumpulan dalam akun Batch.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Management.Batch.Models.PoolAllocationMode]
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini membuat akun tersebut.
+Menentukan nama grup sumber daya tempat cmdlet ini membuat akun.
 
 ```yaml
 Type: System.String
@@ -233,13 +233,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[Microsoft.Azure.Management.Batch.Models.PoolAllocationMode, Microsoft.Azure.Management.Batch, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.Batch.Models.PoolAllocationMode, Microsoft.Azure.Management.Batch, Version=9.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
 ### System.Collections.Hashtable
 
@@ -253,8 +253,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzBatchAccount](./Get-AzBatchAccount.md)
 
-[Remove-AzBatchAccount](./Remove-AzBatchAccount.md)
+[Hapus-AzBatchAccount](./Remove-AzBatchAccount.md)
 
 [Set-AzBatchAccount](./Set-AzBatchAccount.md)
 
-[Cmdlet Kumpulan Azure](/powershell/module/Az.Batch/)
+[Cmdlet Azure Batch](/powershell/module/Az.Batch/)

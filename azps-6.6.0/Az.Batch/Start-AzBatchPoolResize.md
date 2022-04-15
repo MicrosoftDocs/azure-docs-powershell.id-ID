@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Start-AzBatchPoolResize.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Start-AzBatchPoolResize.md
 ms.openlocfilehash: a9351f4ca3b417f2b9993563cd4de4bb9f222c36
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140468675"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142274029"
 ---
 # Start-AzBatchPoolResize
 
@@ -19,7 +19,7 @@ ms.locfileid: "140468675"
 Mulai mengubah ukuran kolam renang.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/start-azbatchpoolresize) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.batch/start-azbatchpoolresize) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,37 +31,37 @@ Start-AzBatchPoolResize [-Id] <String> [-TargetDedicatedComputeNodes <Int32>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzBatchPoolResize** memulai operasi pengubahan ukuran Kumpulan Azure pada kumpulan.
+Cmdlet **Start-AzBatchPoolResize** memulai operasi pengulangan ukuran Azure Batch pada kolam renang.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah ukuran pool ke 12 node
+### Contoh 1: Mengubah ukuran kumpulan menjadi 12 node
 ```
 PS C:\>Start-AzBatchPoolResize -Id "ContosoPool06" -TargetDedicatedComputeNodes 12 -BatchContext $Context
 ```
 
-Perintah ini memulai operasi pengubahan ukuran pada pool yang memiliki ID ContosoPool06.
-Target untuk operasi adalah 12 node perhitungan khusus.
-Gunakan cmdlet Get-AzBatchAccountKey cmdlet untuk menetapkan konteks ke $Context variabel.
+Perintah ini memulai operasi ubah ukuran pada kumpulan yang memiliki ID ContosoPool06.
+Target untuk operasi ini adalah 12 node komputasi khusus.
+Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
 
-### Contoh 2: Ubah ukuran pool menggunakan opsi deallocation
+### Contoh 2: Mengubah ukuran kumpulan menggunakan opsi penawaran
 ```
 PS C:\>Get-AzBatchPool -Id "ContosoPool06" -BatchContext $Context | Start-AzBatchPoolResize -TargetDedicatedComputeNodes 5 -ResizeTimeout ([TimeSpan]::FromHours(1)) -ComputeNodeDeallocationOption ([Microsoft.Azure.Batch.Common.ComputeNodeDeallocationOption]::Terminate) -BatchContext $Context
 ```
 
-Cmdlet ini mengubah ukuran satu pool menjadi lima node perhitungan khusus.
-Perintah tersebut mendapatkan pool yang memiliki ID ContosoPool06 dengan menggunakan cmdlet Get-AzBatchPool cmdlet.
-Perintah itu melewati objek pool itu ke cmdlet saat ini dengan menggunakan operator pipeline.
-Perintah tersebut memulai operasi pengubahan ukuran pada pool.
-Targetnya adalah lima node perhitungan khusus.
-Perintah menentukan periode waktu habis dari satu jam.
-Perintah menentukan opsi lokasisiasi dari Hentikan.
+Cmdlet ini mengubah ukuran kolam menjadi lima node komputasi khusus.
+Perintah mendapatkan kolam yang memiliki ID ContosoPool06 dengan menggunakan cmdlet Get-AzBatchPool.
+Perintah melewati objek pool tersebut ke cmdlet saat ini menggunakan operator pipeline.
+Perintah memulai operasi ubah ukuran pada kumpulan.
+Targetnya adalah lima node komputasi khusus.
+Perintah menentukan periode batas waktu satu jam.
+Perintah menentukan opsi deallocation Dari Hentikan.
 
 ## PARAMETERS
 
 ### -BatchContext
-Menentukan contoh **BatchAccountContext** yang digunakan cmdlet untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -75,8 +75,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ComputeNodeDeallocationOption
-Menentukan opsi lokasi penawaran untuk operasi ukuran yang dijalankan cmdlet ini.
+### -ComputeNodeAllocationOption
+Menentukan opsi deallokasi untuk operasi pengulangan ukuran yang dimulai cmdlet ini.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Batch.Common.ComputeNodeDeallocationOption]
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID pool yang diubah ukurannya cmdlet ini.
+Menentukan ID kumpulan yang diubah ukuran cmdletnya.
 
 ```yaml
 Type: System.String
@@ -122,8 +122,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResizeTimeout
-Menentukan periode waktu habis untuk operasi resizing.
-Jika jumlah kolom tidak mencapai ukuran target saat ini, operasi pengubah ukuran akan berhenti.
+Menentukan periode waktu habis untuk operasi pengubahan ukuran.
+Jika pool tidak mencapai ukuran target saat ini, operasi ubah ukuran berhenti.
 
 ```yaml
 Type: System.Nullable`1[System.TimeSpan]
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetDedicatedComputeNodes
-Jumlah node hitung khusus target.
+Jumlah node komputasi khusus target.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetLowPriorityComputeNodes
-Jumlah node perhitungan berprioritas rendah target.
+Jumlah node komputasi prioritas rendah target.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -190,4 +190,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Stop-AzBatchPoolResize](./Stop-AzBatchPoolResize.md)
 
-[Cmdlet Kumpulan Azure](/powershell/module/Az.Batch/)
+[Cmdlet Azure Batch](/powershell/module/Az.Batch/)

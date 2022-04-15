@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementPolicy.md
 ms.openlocfilehash: d6b9655aa332365de0dd6237a328c8da5a3b055c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139945303"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142274875"
 ---
 # Set-AzApiManagementPolicy
 
 ## SYNOPSIS
-Menetapkan kebijakan lingkup tertentu untuk Manajemen API.
+Mengatur kebijakan lingkup tertentu untuk API Management.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementpolicy) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,11 +52,11 @@ Set-AzApiManagementPolicy -Context <PsApiManagementContext> [-Format <String>] -
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApiManagementPolicy** mengatur kebijakan lingkup tertentu untuk Manajemen API.
+Cmdlet **Set-AzApiManagementPolicy** mengatur kebijakan lingkup yang ditentukan untuk API Management.
 
 ## EXAMPLES
 
-### Contoh 1: Atur kebijakan tingkat penyewa
+### Contoh 1: Mengatur kebijakan tingkat penyewa
 ```powershell
 PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Set-AzApiManagementPolicy -Context $apimContext -PolicyFilePath "C:\contoso\policies\tenantpolicy.xml"
@@ -64,13 +64,13 @@ PS C:\>Set-AzApiManagementPolicy -Context $apimContext -PolicyFilePath "C:\conto
 
 Perintah ini mengatur kebijakan tingkat penyewa dari file bernama tenantpolicy.xml.
 
-### Contoh 2: Menetapkan kebijakan lingkup produk
+### Contoh 2: Mengatur kebijakan lingkup produk
 ```powershell
 PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Set-AzApiManagementPolicy -Context $apimContext -ProductId "0123456789" -Policy $PolicyString
 ```
 
-Perintah ini mengatur kebijakan lingkup produk untuk Manajemen API.
+Perintah ini mengatur kebijakan lingkup produk untuk API Management.
 
 ### Contoh 3: Mengatur kebijakan lingkup API
 ```powershell
@@ -78,7 +78,7 @@ PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default
 PS C:\>Set-AzApiManagementPolicy -Context $apimContext -ApiId "9876543210" -Policy $PolicyString
 ```
 
-Perintah ini mengatur kebijakan lingkup API untuk Manajemen API.
+Perintah ini mengatur kebijakan lingkup API untuk API Management.
 
 ### Contoh 4: Mengatur kebijakan lingkup operasi
 ```powershell
@@ -86,7 +86,7 @@ PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default
 PS C:\>Set-AzApiManagementPolicy -Context $apimContext -ApiId "9876543210" -OperationId "777" -Policy $PolicyString
 ```
 
-Perintah ini mengatur kebijakan lingkup operasi untuk Manajemen API.
+Perintah ini mengatur kebijakan lingkup operasi untuk API Management.
 
 ## PARAMETERS
 
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiRevision
-Pengidentifikasi Revisi API. Parameter ini bersifat opsional. Jika tidak ditentukan, kebijakan akan diperbarui dalam revisi api yang saat ini aktif.
+Pengidentifikasi Revisi API. Parameter ini bersifat opsional. Jika tidak ditentukan, kebijakan akan diperbarui dalam revisi api aktif saat ini.
 
 ```yaml
 Type: System.String
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -Format
-Menentukan format kebijakan. Saat menggunakan `application/vnd.ms-azure-apim.policy+xml`, ekspresi yang terdapat di dalam kebijakan harus di escape XML. Ketika menggunakannya `application/vnd.ms-azure-apim.policy.raw+xml` , **tidak perlu** untuk kebijakan untuk di escape-XML.
+Menentukan format kebijakan. Saat menggunakan `application/vnd.ms-azure-apim.policy+xml`, ekspresi yang terdapat dalam kebijakan harus dilewati XML. Saat menggunakannya `application/vnd.ms-azure-apim.policy.raw+xml` **, kebijakan tidak** perlu dilewati XML.
 Nilai defaultnya adalah `application/vnd.ms-azure-apim.policy+xml`.
 Parameter ini bersifat opsional.
 
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 
 ### -OperationId
 Menentukan pengidentifikasi operasi yang sudah ada.
-Jika ApiId ditentukan akan menetapkan kebijakan lingkup operasi.
+Jika ditentukan dengan ApiId akan mengatur kebijakan lingkup operasi.
 Parameter ini diperlukan.
 
 ```yaml
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 
 ### -PolicyFilePath
 Menentukan jalur file dokumen kebijakan.
-Parameter ini diperlukan jika *parameter Kebijakan* tidak ditentukan.
+Parameter ini diperlukan jika parameter *Kebijakan* tidak ditentukan.
 
 ```yaml
 Type: System.String
@@ -264,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

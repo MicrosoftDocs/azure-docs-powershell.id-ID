@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Get-AzureRmApiManagementGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Get-AzureRmApiManagementGroup.md
 ms.openlocfilehash: d18de5494912900be4a73414e8741badb097d188
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425506"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142283214"
 ---
 # Get-AzureRmApiManagementGroup
 
@@ -57,9 +57,9 @@ PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-De
 PS C:\>Get-AzureRmApiManagementGroup -Context $apimContext
 ```
 
-Perintah ini akan mendapatkan semua grup.
+Perintah ini mendapatkan semua grup.
 
-### Contoh 2: Dapatkan grup dengan ID
+### Contoh 2: Mendapatkan grup menurut ID
 ```
 PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzureRmApiManagementGroup -Context $apimContext -GroupId "0123456789"
@@ -67,7 +67,7 @@ PS C:\>Get-AzureRmApiManagementGroup -Context $apimContext -GroupId "0123456789"
 
 Perintah ini mendapatkan ID grup bernama 0123456789.
 
-### Contoh 3: Dapatkan grup berdasarkan nama
+### Contoh 3: Mendapatkan grup menurut nama
 ```
 PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzureRmApiManagementGroup -Context $apimContext -Name "Group0002"
@@ -75,13 +75,13 @@ PS C:\>Get-AzureRmApiManagementGroup -Context $apimContext -Name "Group0002"
 
 Perintah ini mendapatkan grup bernama Group0002.
 
-### Contoh 4: Mendapatkan semua grup pengguna
+### Contoh 4: Dapatkan semua grup pengguna
 ```
 PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzureRmApiManagementGroup -Context $apimContext -UserId "0123456789"
 ```
 
-Perintah ini mendapatkan semua grup pengguna dengan ID pengguna yang bernama 0123456789.
+Perintah ini mendapatkan semua grup pengguna dengan ID pengguna bernama 0123456789.
 
 ## PARAMETERS
 
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 
 ### -GroupId
 Menentukan ID grup.
-Jika ditentukan, cmdlet akan berusaha menemukan grup berdasarkan pengidentifikasi.
+Jika ditentukan, cmdlet berusaha menemukan grup oleh pengidentifikasi.
 
 ```yaml
 Type: System.String
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 
 ### -UserId
 Menentukan pengidentifikasi produk yang sudah ada.
-Jika ditentukan, cmdlet akan mengembalikan semua grup tempat produk ditetapkan.
+Jika ditentukan cmdlet akan mengembalikan semua grup tempat produk ditetapkan.
 
 ```yaml
 Type: System.String
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -196,9 +196,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmApiManagementGroup](./New-AzureRmApiManagementGroup.md)
+[Baru-AzureRmApiManagementGroup](./New-AzureRmApiManagementGroup.md)
 
-[Remove-AzureRmApiManagementGroup](./Remove-AzureRmApiManagementGroup.md)
+[Hapus-AzureRmApiManagementGroup](./Remove-AzureRmApiManagementGroup.md)
 
 [Set-AzureRmApiManagementGroup](./Set-AzureRmApiManagementGroup.md)
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Get-AzureRmApiManagementApiRelease.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Get-AzureRmApiManagementApiRelease.md
 ms.openlocfilehash: 5e72606d1e4c6208a8b57cd2ff5540896d9842af
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425183"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142283231"
 ---
 # Get-AzureRmApiManagementApiRelease
 
@@ -27,11 +27,11 @@ Get-AzureRmApiManagementApiRelease -Context <PsApiManagementContext> -ApiId <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmApiManagementApiRelease** mendapatkan satu atau beberapa rilis API Manajemen API Azure.
+Cmdlet **Get-AzureRmApiManagementApiRelease** mendapatkan satu atau beberapa rilis API azure API Management.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua rilis API
+### Contoh 1: Dapatkan semua rilis API
 ```powershell
 PS C:\>$ApiMgmtContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzureRmApiManagementApiRelease -Context $ApiMgmtContext -ApiId 5adf6fbf0faadf3ad8558065
@@ -45,9 +45,9 @@ ResourceGroupName : Api-Default-WestUS
 ServiceName       : contos
 ```
 
-Perintah ini akan mendapatkan semua rilis `echo-api` API untuk konteks yang ditentukan.
+Perintah ini mendapatkan semua rilis `echo-api` API untuk konteks yang ditentukan.
 
-### Contoh 2: Mendapatkan informasi rilis RILIS API tertentu
+### Contoh 2: Dapatkan informasi rilis rilis API tertentu
 ```powershell
 PS C:\>$ApiMgmtContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzureRmApiManagementApiRelease -Context $ApiMgmtContext -ApiId 5adf6fbf0faadf3ad8558065 -ReleaseId 5afccaf6b89fd067426d402e
@@ -63,13 +63,13 @@ ResourceGroupName : Api-Default-WestUS
 ServiceName       : contos
 ```
 
-Perintah ini mendapatkan informasi rilis API tertentu denganID rilis tertentu.
+Perintah ini mendapatkan informasi rilis API tertentu dengan releaseId yang ditentukan.
 
 ## PARAMETERS
 
 ### -ApiId
-Pengidentifikasi API untuk mencarinya.
-Jika ditentukan akan mencoba mendapatkan API tersebut dengan Id.
+PENGIDENTIFIKASI API untuk dicari.
+Jika ditentukan akan mencoba mendapatkan API dengan Id.
 
 ```yaml
 Type: System.String
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -148,5 +148,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmApiManagementApiRelease](./Get-AzureRmApiManagementApiRelease.md)
 
-[Remove-AzureRmApiManagementApiRelease](./Remove-AzureRmApiManagementApiRelease.md)
+[Hapus-AzureRmApiManagementApiRelease](./Remove-AzureRmApiManagementApiRelease.md)
 

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.analy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AnalysisServices/Commands.AnalysisServices/help/Test-AzureRmAnalysisServicesServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AnalysisServices/Commands.AnalysisServices/help/Test-AzureRmAnalysisServicesServer.md
-ms.openlocfilehash: 69800b598a3622b8362ca6b96c3d5d9009ef63e30b5d53af87ccd431e11445d6
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 7f47d800fd0eab51edae321f9d21260f50075b0e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140855582"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142283422"
 ---
 # Test-AzureRmAnalysisServicesServer
 
@@ -27,7 +27,7 @@ Test-AzureRmAnalysisServicesServer [-Name] <String> [[-ResourceGroupName] <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet Test-AzureRmAnalysisServicesServer cmdlet menguji keberadaan suatu instans server Analysis Services
+Cmdlet Test-AzureRmAnalysisServicesServer menguji keberadaan contoh server Analysis Services
 
 ## EXAMPLES
 
@@ -36,12 +36,12 @@ Cmdlet Test-AzureRmAnalysisServicesServer cmdlet menguji keberadaan suatu instan
 PS C:\> Test-AzureRmAnalysisServicesServer -Name "testserver" -ResourceGroupName "testgroup"
 ```
 
-Perintah ini akan menguji apakah ada server bernama testserver dalam grup uji resourcegroup
+Perintah ini akan menguji jika ada server bernama testserver dalam grup uji grup sumber daya
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya Azure tempat server dimiliki
+Nama grup sumber daya Azure tempat server berada
 
 ```yaml
 Type: System.String
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -103,4 +103,4 @@ Alias: Test-AzureAs
 
 [Get-AzureRmAnalysisServicesServer](./Get-AzureRmAnalysisServicesServer.md)
 
-[Remove-AzureRmAnalysisServicesServer](./Remove-AzureRmAnalysisServicesServer.md)
+[Hapus-AzureRmAnalysisServicesServer](./Remove-AzureRmAnalysisServicesServer.md)

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Update-AzApiManagementCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Update-AzApiManagementCache.md
 ms.openlocfilehash: dbf93db606ac8396d9b0afa69fcfb63988f5f5ef
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140313523"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142274713"
 ---
 # Update-AzApiManagementCache
 
 ## SYNOPSIS
-memperbarui singgahan di layanan Manajemen Api.
+memperbarui cache di layanan Manajemen Api.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/update-azapimanagementcache) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/update-azapimanagementcache) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,11 +44,11 @@ Update-AzApiManagementCache -ResourceId <String> [-ConnectionString <String>] [-
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzApiManagementCache** memperbarui singgahan dalam layanan ApiManagement.
+Cmdlet **Update-AzApiManagementCache** memperbarui cache dalam layanan ApiManagement.
 
 ## EXAMPLES
 
-### Contoh 1 : Memperbarui Deskripsi Cache di centralus
+### Contoh 1 : Memperbarui Deskripsi Singgahan di centralus
 ```powershell
 PS D:\github\azure-powershell> $context=New-AzApiManagementContext -ResourceGroupName Api-Default-Central-US -ServiceName contoso
 PS D:\github\azure-powershell> Update-AzApiManagementCache -Context $context -CacheId centralus -Description "Team new cache" -PassThru
@@ -64,12 +64,12 @@ ResourceGroupName    : Api-Default-Central-US
 ServiceName          : contoso
 ```
 
-Memperbarui deskripsi Singgahan di As Tengah.
+Memperbarui deskripsi Singgahan di AS Tengah.
 
 ## PARAMETERS
 
 ### -AzureRedisResourceId
-Arm ResourceId instans Cache Azure Redis.
+Arm ResourceId dari instans Cache Azure Redis.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -CacheId
-Pengidentifikasi cache baru.
+Pengidentifikasi singgahan baru.
 Parameter ini diperlukan.
 
 ```yaml
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionString
-Redis Connection String.
+Redis String Koneksi.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika ditentukan maka instans Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementCache mewakili singgahan yang dimodifikasi akan ditulis untuk output.
+Jika ditentukan, contoh Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementCache type yang mewakili cache yang dimodifikasi akan ditulis ke output.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Arm ResourceId of Cache.
+Arm ResourceId dari Cache.
 Parameter ini diperlukan.
 
 ```yaml
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -242,7 +242,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -257,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

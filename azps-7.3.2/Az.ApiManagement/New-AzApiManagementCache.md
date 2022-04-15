@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementCache.md
-ms.openlocfilehash: 4052ad789ffc1100df03d05376b0d2e66823fdc7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c7e883416e44c3b7eee7259c3a1d17ea0fee3ded
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140374019"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142295017"
 ---
 # New-AzApiManagementCache
 
 ## SYNOPSIS
-Membuat entitas Cache baru
+Membuat entitas Singgahan baru
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementcache) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzApiManagementCache -Context <PsApiManagementContext> [-CacheId <String>] -
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApiManagementCache** membuat entitas singgahan baru dalam layanan Manajemen Api.
+Cmdlet **New-AzApiManagementCache** membuat entitas cache baru dalam layanan Manajemen Api.
 
 ## EXAMPLES
 
@@ -46,12 +49,12 @@ ResourceGroupName : Api-Default-WestUS
 ServiceName       : contoso
 ```
 
-Cmdlets membuat entitas singgahan baru di lokasi master layanan Manajemen Api.
+Cmdlet membuat entitas cache baru di lokasi master layanan Manajemen Api.
 
 ## PARAMETERS
 
 ### -AzureRedisResourceId
-Arm ResourceId instans Cache Azure Redis. Parameter ini bersifat opsional.
+Arm ResourceId dari instans Cache Azure Redis. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String
@@ -66,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -CacheId
-Pengidentifikasi cache baru.
+Pengidentifikasi singgahan baru.
 Parameter ini bersifat opsional.
 Jika tidak ditentukan akan dihasilkan.
 
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionString
-Redis Connection String.
+Redis String Koneksi.
 Parameter ini diperlukan.
 
 ```yaml
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

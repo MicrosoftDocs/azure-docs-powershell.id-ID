@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Get-AzureRmApiManagementApiRevision.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Get-AzureRmApiManagementApiRevision.md
 ms.openlocfilehash: f57a95e97c0ec74e7e45338e15a028feab60849b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422570"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142283228"
 ---
 # Get-AzureRmApiManagementApiRevision
 
 ## SYNOPSIS
-Mendapatkan detail mengenai semua Revisi API API
+Mendapatkan detail semua Revisi API api
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -31,7 +31,7 @@ Cmdlet **Get-AzureRmApiManagementApiRevision** mendapatkan detail semua revisi A
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua Revisi API API
+### Contoh 1: Dapatkan semua Revisi API api
 ```powershell
 PS C:\>$ApiMgmtContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzureRmApiManagementApiRevision -Context $ApiMgmtContext -ApiId "5adf6fbf0faadf3ad8558065"
@@ -64,12 +64,12 @@ IsOnline        : True
 IsCurrent       : False
 ```
 
-Perintah ini akan mendapatkan semua revisi API dari API yang ditentukan untuk Konteks ApiManagement tertentu.
+Perintah ini mendapatkan semua revisi API dari API tertentu untuk Konteks ApiManagement tertentu.
 
 ## PARAMETERS
 
 ### -ApiId
-Pengidentifikasi API yang revisinya ingin kami list.
+PENGIDENTIFIKASI API yang revisinya ingin kami cantumkan.
 Parameter ini diperlukan.
 
 ```yaml
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

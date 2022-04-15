@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementUser.md
-ms.openlocfilehash: b8a81ca36ba9af6b06f2f40187702dac32a361ff
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f668a5f7c524a5dbd7a339a705cc2966502693c5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140550812"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142295125"
 ---
 # Get-AzApiManagementUser
 
 ## SYNOPSIS
-Mendapatkan satu atau beberapa pengguna.
+Mendapatkan pengguna atau pengguna.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementuser) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,15 +47,15 @@ Cmdlet **Get-AzApiManagementUser** mendapatkan pengguna tertentu, atau semua pen
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua pengguna
+### Contoh 1: Dapatkan semua pengguna
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementUser -Context $apimContext
 ```
 
-Perintah ini akan memberikan semua pengguna.
+Perintah ini akan mendapatkan semua pengguna.
 
-### Contoh 2: Dapatkan pengguna dengan ID
+### Contoh 2: Mendapatkan pengguna menurut ID
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementUser -Context $apimContext -UserId "0123456789"
@@ -60,13 +63,13 @@ Get-AzApiManagementUser -Context $apimContext -UserId "0123456789"
 
 Perintah ini mendapatkan pengguna menurut ID.
 
-### Contoh 3: Dapatkan pengguna menurut nama belakang
+### Contoh 3: Mendapatkan pengguna menurut nama belakang
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementUser -Context $apimContext -LastName "Fuller"
 ```
 
-Perintah ini akan memberikan pengguna dengan nama belakang yang ditentukan, Lebih Lengkap.
+Perintah ini memberi pengguna yang memiliki nama belakang tertentu, Fuller.
 
 ### Contoh 4: Mendapatkan pengguna berdasarkan alamat email
 ```powershell
@@ -74,7 +77,7 @@ $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS
 Get-AzApiManagementUser -Context $apimContext -Email "user@contoso.com"
 ```
 
-Perintah ini akan mendapatkan pengguna dengan alamat email yang ditentukan.
+Perintah ini mendapatkan pengguna yang memiliki alamat email tertentu.
 
 ### Contoh 5: Mendapatkan semua pengguna dalam grup
 ```powershell
@@ -82,7 +85,7 @@ $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS
 Get-AzApiManagementUser -Context $apimContext -GroupId "0001"
 ```
 
-Perintah ini membuat semua pengguna berada dalam grup yang ditentukan.
+Perintah ini akan membuat semua pengguna berada dalam grup yang ditentukan.
 
 ## PARAMETERS
 
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 
 ### -Email
 Menentukan alamat email pengguna.
-Jika parameter ini ditentukan, cmdlet ini menemukan pengguna melalui email.
+Jika parameter ini ditentukan, cmdlet ini akan menemukan pengguna melalui email.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 
 ### -FirstName
 Menentukan nama depan pengguna.
-Jika parameter ini ditentukan, cmdlet ini menemukan pengguna dengan nama depan.
+Jika parameter ini ditentukan, cmdlet ini akan menemukan pengguna berdasarkan nama depan.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 
 ### -GroupId
 Menentukan pengidentifikasi grup.
-Jika ditentukan, cmdlet ini menemukan semua pengguna di dalam grup yang ditentukan.
+Jika ditentukan, cmdlet ini akan menemukan semua pengguna dalam grup yang ditentukan.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 
 ### -LastName
 Menentukan nama belakang pengguna.
-Jika ditentukan, cmdlet ini menemukan pengguna menurut nama belakang.
+Jika ditentukan, cmdlet ini akan menemukan pengguna menurut nama belakang.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 
 ### -Negara Bagian
 Menentukan status pengguna.
-Jika ditentukan, cmdlet ini menemukan pengguna dalam status ini.
+Jika ditentukan, cmdlet ini akan menemukan pengguna dalam status ini.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -228,7 +231,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Nullable'1[[Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementUserState, Microsoft.Azure.PowerShell.Cmdlets.ApiManagement.ServiceManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+### System.Nullable'1[[Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementUserState, Microsoft.Azure.PowerShell.Cmdlets.ApiManagement.ServiceManagement, Version=1.0.0.0, Culture=netral, PublicKeyToken=null]]
 
 ## OUTPUTS
 

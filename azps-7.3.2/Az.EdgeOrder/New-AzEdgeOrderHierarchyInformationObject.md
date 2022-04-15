@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.EdgeOrder/new-Az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderHierarchyInformationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderHierarchyInformationObject.md
-ms.openlocfilehash: c148066457e34a67bd8841eddc8f2aed2cab6426
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: cb7d8c4d479e1348e435125adb94d39d1e3dfcab
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140549989"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142293973"
 ---
 # New-AzEdgeOrderHierarchyInformationObject
 
 ## SYNOPSIS
-Membuat objek di memori untuk HierarchyInformation.
+Membuat objek dalam memori untuk HierarchyInformation.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.edgeorder/new-azedgeorderhierarchyinformationobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzEdgeOrderHierarchyInformationObject [-ConfigurationName <String>] [-Produc
 ```
 
 ## DESCRIPTION
-Membuat objek di memori untuk HierarchyInformation.
+Membuat objek dalam memori untuk HierarchyInformation.
 
 ## EXAMPLES
 
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProductLineName
-Mewakili nama baris produk yang mengidentifikasi lini produk secara unik.
+Mewakili nama baris produk yang mengidentifikasi baris produk secara unik.
 
 ```yaml
 Type: System.String
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

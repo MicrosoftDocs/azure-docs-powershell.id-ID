@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Test-AzAppConfigurationStoreNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Test-AzAppConfigurationStoreNameAvailability.md
 ms.openlocfilehash: 7d4bd78551e256156e635d4be33c24a26b0a3f82
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140313307"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142274617"
 ---
 # Test-AzAppConfigurationStoreNameAvailability
 
 ## SYNOPSIS
-Memeriksa apakah nama penyimpanan konfigurasi tersedia untuk digunakan.
+Memeriksa apakah nama bursa konfigurasi tersedia untuk digunakan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.appconfiguration/test-azappconfigurationstorenameavailability) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.appconfiguration/test-azappconfigurationstorenameavailability) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +28,11 @@ Test-AzAppConfigurationStoreNameAvailability -Name <String> [-SubscriptionId <St
 ```
 
 ## DESCRIPTION
-Memeriksa apakah nama penyimpanan konfigurasi tersedia untuk digunakan.
+Memeriksa apakah nama bursa konfigurasi tersedia untuk digunakan.
 
 ## EXAMPLES
 
-### Contoh 1: Uji ketersediaan nama penyimpanan konfigurasi aplikasi
+### Contoh 1: Uji ketersediaan nama bursa konfigurasi aplikasi
 
 ```powershell
 PS C:\> Test-AzAppConfigurationStoreNameAvailability -Name appconfig-test01
@@ -42,7 +42,7 @@ Message                               NameAvailable Reason
 The specified name is already in use. False         AlreadyExists
 ```
 
-Perintah ini menguji ketersediaan nama penyimpanan konfigurasi aplikasi.
+Perintah ini menguji ketersediaan nama bursa konfigurasi aplikasi.
 
 ## PARAMETERS
 
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama tersebut untuk memeriksa ketersediaan.
+Nama untuk memeriksa ketersediaan.
 
 ```yaml
 Type: System.String
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID Microsoft Azure langganan.
+ID langganan Microsoft Azure.
 
 ```yaml
 Type: System.String
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

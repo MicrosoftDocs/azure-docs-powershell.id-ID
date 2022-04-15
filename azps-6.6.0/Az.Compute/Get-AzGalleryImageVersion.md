@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzGalleryImageVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzGalleryImageVersion.md
 ms.openlocfilehash: 920ecbaef53e86be1061f6109f73e584ce0d91db
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139943107"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142272769"
 ---
 # Get-AzGalleryImageVersion
 
 ## SYNOPSIS
-Dapatkan atau galeri daftar versi gambar.
+Dapatkan atau cantumkan versi gambar galeri.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/get-azgalleryimageversion) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azgalleryimageversion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Get-AzGalleryImageVersion [-ResourceId] <String> [-ExpandReplicationStatus]
 ```
 
 ## DESCRIPTION
-Dapatkan atau galeri daftar versi gambar.
+Dapatkan atau cantumkan versi gambar galeri.
 
 ## EXAMPLES
 
@@ -324,7 +324,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

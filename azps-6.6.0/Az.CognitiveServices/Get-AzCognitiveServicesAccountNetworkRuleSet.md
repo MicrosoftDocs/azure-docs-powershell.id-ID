@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Get-AzCognitiveServicesAccountNetworkRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Get-AzCognitiveServicesAccountNetworkRuleSet.md
 ms.openlocfilehash: e6b56ded8e3fd5b584ebf92c676e5a0d8bb19bae
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139943395"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142273183"
 ---
 # Get-AzCognitiveServicesAccountNetworkRuleSet
 
 ## SYNOPSIS
-Mendapatkan properti NetworkRule dari akun Layanan Kognitif
+Dapatkan properti NetworkRule dari akun Cognitive Services
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cognitiveservices/get-azcognitiveservicesaccountnetworkruleset) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cognitiveservices/get-azcognitiveservicesaccountnetworkruleset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,16 +28,16 @@ Get-AzCognitiveServicesAccountNetworkRuleSet [-ResourceGroupName] <String> [-Nam
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCognitiveServicesAccountNetworkRuleSet** mendapatkan properti NetworkRule dari akun Layanan Kognitif
+Cmdlet **Get-AzCognitiveServicesAccountNetworkRuleSet** mendapatkan properti NetworkRule dari akun Cognitive Services
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan properti NetworkRule dari akun Layanan Kognitif yang ditentukan
+### Contoh 1: Dapatkan properti NetworkRule dari akun Cognitive Services tertentu
 ```
 PS C:\> Get-AzCognitiveServicesAccountNetworkRuleSet  -ResourceGroupName "rg1" -Name "myaccount"
 ```
 
-Perintah ini mendapatkan properti NetworkRule dari akun Layanan Kognitif yang ditentukan
+Perintah ini mendapatkan properti NetworkRule dari akun Cognitive Services tertentu
 
 ## PARAMETERS
 
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

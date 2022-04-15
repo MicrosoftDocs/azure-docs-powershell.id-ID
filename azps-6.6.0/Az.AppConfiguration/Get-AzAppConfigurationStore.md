@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Get-AzAppConfigurationStore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Get-AzAppConfigurationStore.md
 ms.openlocfilehash: be145507991fb22a5807cb30c6f3425f92130131
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140313433"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142274749"
 ---
 # Get-AzAppConfigurationStore
 
 ## SYNOPSIS
-Dapatkan atau  list app configuration stores.
+Dapatkan atau cantumkan bursa konfigurasi aplikasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.appconfiguration/get-azappconfigurationstore) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.appconfiguration/get-azappconfigurationstore) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Dapatkan atau  list app configuration stores.
 Get-AzAppConfigurationStore [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzAppConfigurationStore -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -46,11 +46,11 @@ Get-AzAppConfigurationStore -ResourceGroupName <String> [-SubscriptionId <String
 ```
 
 ## DESCRIPTION
-Dapatkan atau  list app configuration stores.
+Dapatkan atau cantumkan bursa konfigurasi aplikasi.
 
 ## EXAMPLES
 
-### Contoh 1:  List all app configuration stores under a subscription
+### Contoh 1: Mencantumkan semua penyimpanan konfigurasi aplikasi di bawah langganan
 ```powershell
 PS C:\> Get-AzAppConfigurationStore
 
@@ -60,9 +60,9 @@ eastus   appconfig-test01   Microsoft.AppConfiguration/configurationStores
 eastus   contoso-app-config Microsoft.AppConfiguration/configurationStores
 ```
 
-Perintah ini mencantumkan semua konfigurasi aplikasi yang menyimpan di bawah langganan.
+Perintah ini mencantumkan semua penyimpanan konfigurasi aplikasi di bawah langganan.
 
-### Contoh 2:  List all app configuration stores under a resource group
+### Contoh 2: Mencantumkan semua penyimpanan konfigurasi aplikasi di bawah grup sumber daya
 ```powershell
 PS C:\> Get-AzAppConfigurationStore -ResourceGroupName azpwsh-manual-test
 
@@ -72,7 +72,7 @@ eastus   appconfig-test01 Microsoft.AppConfiguration/configurationStores
 eastus   appconfig-test02 Microsoft.AppConfiguration/configurationStores
 ```
 
-Perintah ini mencantumkan semua konfigurasi aplikasi yang menyimpan di bawah grup sumber daya.
+Perintah ini mencantumkan semua penyimpanan konfigurasi aplikasi di bawah grup sumber daya.
 
 ### Contoh 3: Dapatkan penyimpanan konfigurasi aplikasi menurut nama
 ```powershell
@@ -83,7 +83,7 @@ Location Name             Type
 eastus   appconfig-test01 Microsoft.AppConfiguration/configurationStores
 ```
 
-Perintah ini menyimpan konfigurasi aplikasi berdasarkan nama.
+Perintah ini mendapatkan penyimpanan konfigurasi aplikasi berdasarkan nama.
 
 ### Contoh 4: Dapatkan penyimpanan konfigurasi aplikasi menurut saluran
 ```powershell
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.AppConfiguration.Models.IAppConfigurationIdentity
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat wadah registri berada.
+Nama grup sumber daya tempat registri kontainer berada.
 
 ```yaml
 Type: System.String
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID Microsoft Azure langganan.
+ID langganan Microsoft Azure.
 
 ```yaml
 Type: System.String[]
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -195,11 +195,11 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IAppConfigurationIdentity>: Parameter Identitas
   - `[ConfigStoreName <String>]`: Nama penyimpanan konfigurasi.
-  - `[GroupName <String>]`: Nama grup sumber daya tautan privat.
+  - `[GroupName <String>]`: Nama grup sumber daya tautan pribadi.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat wadah registri t dimiliki.
-  - `[SubscriptionId <String>]`: Microsoft Azure ID langganan.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat registri kontainer berada.
+  - `[SubscriptionId <String>]`: ID langganan Microsoft Azure.
 
 ## RELATED LINKS
 

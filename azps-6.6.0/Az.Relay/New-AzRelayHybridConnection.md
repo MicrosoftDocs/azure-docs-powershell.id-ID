@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/New-AzRelayHybridConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/New-AzRelayHybridConnection.md
 ms.openlocfilehash: c155d529a474a6c6c4167c37806c57a88b633e45
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140330063"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142266361"
 ---
 # New-AzRelayHybridConnection
 
 ## SYNOPSIS
-Membuat Ruang nama HybridConnection dalam ruang nama Relay yang ditentukan.
+Membuat HybridConnection di ruang nama Relay tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.relay/new-azrelayhybridconnection) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.relay/new-azrelayhybridconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,7 +60,7 @@ Name                        : TestHybirdConnection2
 Type                        : Microsoft.Relay/HybridConnections
 ```
 
-Membuat HygieConnection \`TestHy birdConnection2\` dalam ruang nama Relay yang \`ditentukan TestNameSpace-HygieConnection\`.
+Membuat HybirdConnection \`TestHybirdConnection2\` baru dalam ruang \`nama Relay yang ditentukan TestNameSpace-HybirdConnection\`.
 
 ### Contoh 2 - Properti
 ```
@@ -78,7 +78,7 @@ Name                        : TestHybirdConnection1
 Type                        : Microsoft.Relay/HybridConnections
 ```
 
-Membuat HygieConnection \`TestHy birdConnection1\` dalam ruang nama Relay ditentukan \`TestNameSpace-HygieConnection\`.
+Membuat HybirdConnection \`TestHybirdConnection1\` baru dalam ruang \`nama Relai yang ditentukan TestNameSpace-HybirdConnection\`.
 
 ## PARAMETERS
 
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserMetadata
-Mendapatkan atau mengatur usermetadata adalah tempat penampung untuk menyimpan data string yang ditentukan pengguna untuk titik akhir HybridConnection. misalnya informasi ini dapat digunakan untuk menyimpan data deskriptif, seperti daftar tim dan informasi kontak mereka, juga pengaturan konfigurasi yang ditentukan oleh pengguna yang dapat disimpan.
+Gets or sets usermetadata is a placeholder to store user-defined string data for the HybridConnection endpoint.e.g. ini dapat digunakan untuk menyimpan data deskriptif, seperti daftar tim dan informasi kontak mereka juga pengaturan konfigurasi yang ditentukan pengguna dapat disimpan.
 
 ```yaml
 Type: System.String
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -227,7 +227,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Relay.Models.PSHybridConnectionAttributes
 
-### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 
