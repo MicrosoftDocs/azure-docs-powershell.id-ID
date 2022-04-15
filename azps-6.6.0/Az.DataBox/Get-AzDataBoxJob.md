@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/Get-AzDataBoxJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/Get-AzDataBoxJob.md
 ms.openlocfilehash: 85b414ed58165bcafd096888483d378455d4a6a8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140484897"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141959307"
 ---
 # Get-AzDataBoxJob
 
 ## SYNOPSIS
-Mendapatkan informasi tentang pekerjaan tertentu.
+Mendapatkan informasi tentang pekerjaan yang ditentukan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.databox/get-azdataboxjob) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.databox/get-azdataboxjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzDataBoxJob [-SubscriptionId <String[]>] [-SkipToken <String>] [-DefaultPro
  [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzDataBoxJob -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>] [-Expand <String>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -41,11 +41,11 @@ Get-AzDataBoxJob -ResourceGroupName <String> [-SubscriptionId <String[]>] [-Skip
 ```
 
 ## DESCRIPTION
-Mendapatkan informasi tentang pekerjaan tertentu.
+Mendapatkan informasi tentang pekerjaan yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: {{ Mendapat pekerjaan tertentu }}
+### Contoh 1: {{ Gets a particular job }}
 ```powershell
 PS C:\> Get-AzDataBoxJob -Name "Powershell10" -ResourceGroupName "resourceGroupName"  -SubscriptionId "SubscriptionId"
 
@@ -56,7 +56,7 @@ Powershell10 WestUS   DeviceOrdered ImportToAzure DataBox None         NonSchedu
 
 {{ Mendapatkan pekerjaan tertentu }}
 
-### Contoh 2: {{ List all job under a subscription }}
+### Contoh 2: {{ Daftar semua pekerjaan di bawah langganan }}
 ```powershell
 PS C:\>  Get-AzDataBoxJob -SubscriptionId "SubscriptionId"
 
@@ -66,9 +66,9 @@ brtestdbd  brazilsouth   DeviceOrdered ImportToAzure   DataBoxDisk None         
 testorder  uksouth       Cancelled     ImportToAzure   DataBoxDisk None          NonScheduled Microsoft.Azure.PowerShell.Cmdlets.DataBox.Models.Api20210301.DataBoxDiskJobDetails
 ```
 
-{{ Mencantumkan semua pekerjaan di bawah langganan }}
+{{ Cantumkan semua pekerjaan di bawah langganan }}
 
-### Contoh 3: {{ List all job under a resourcegroup }}
+### Contoh 3: {{ Daftar semua pekerjaan di bawah grup sumber daya }}
 ```powershell
 PS C:\>  Get-AzDataBoxJob -ResourceGroupName "resourceGroupName"
 
@@ -79,7 +79,7 @@ abcbnkndnkndn-Clone    westus   DeviceOrdered ImportToAzure   DataBox None      
 abcOrder               westus   Cancelled     ImportToAzure   DataBox None           NonScheduled Microsoft.Azure.PowerShell.Cmdlets.DataBox.Models.Api20210301.DataBoxJobDetails
 ```
 
-{{ Mencantumkan semua pekerjaan di bawah grup sumber daya }}
+{{ Cantumkan semua pekerjaan di bawah grup sumber daya }}
 
 ## PARAMETERS
 
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -Perluas
-$expand didukung pada parameter detail untuk pekerjaan, yang menyediakan detail mengenai tahapan pekerjaan.
+$expand didukung pada parameter detail untuk pekerjaan, yang menyediakan detail tentang tahapan pekerjaan.
 
 ```yaml
 Type: System.String
@@ -114,8 +114,8 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Sumber Daya pekerjaan di dalam grup sumber daya yang ditentukan.
-nama kerja harus panjang antara 3 dan 24 karakter dan gunakan alfanumerik dan garis bawah saja
+Nama sumber daya pekerjaan dalam grup sumber daya yang ditentukan.
+nama pekerjaan harus panjangnya antara 3 dan 24 karakter dan hanya menggunakan alfanumerik dan garis bawah
 
 ```yaml
 Type: System.String
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipToken
-$skipToken didukung pada Daftar pekerjaan, yang menyediakan halaman berikutnya dalam daftar pekerjaan.
+$skipToken didukung di Dapatkan daftar pekerjaan, yang menyediakan halaman berikutnya dalam daftar pekerjaan.
 
 ```yaml
 Type: System.String
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

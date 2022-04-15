@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Get-AzureBatchComputeNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Get-AzureBatchComputeNode.md
 ms.openlocfilehash: ceeed4609c2b0dbd122ec967403be6d43422ff14
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428441"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142143383"
 ---
 # Get-AzureBatchComputeNode
 
 ## SYNOPSIS
-Dapatkan Kumpulan menghitung node dari kumpulan.
+Dapatkan simpul komputasi batch dari kolam renang.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -41,14 +41,14 @@ Get-AzureBatchComputeNode [[-Pool] <PSCloudPool>] [-Filter <String>] [-MaxCount 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureBatchComputeNode** mendapatkan node perhitungan Azure Batch dari kumpulan.
-Tentukan parameter *PoolID* *atau Pool.*
-Tentukan parameter *Id* untuk mendapatkan node perhitungan tunggal.
-Tentukan parameter *Filter* untuk mendapatkan node perhitungan yang cocok dengan filter Open Data Protocol (OData).
+Cmdlet **Get-AzureBatchComputeNode** mendapatkan Azure Batch menghitung node dari kolam renang.
+Tentukan parameter *PoolID* atau *Pool* .
+Tentukan parameter *Id* untuk mendapatkan node komputasi tunggal.
+Tentukan parameter *Filter* untuk mendapatkan node komputasi yang cocok dengan filter Open Data Protocol (OData).
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan node perhitungan menurut ID
+### Contoh 1: Dapatkan node komputasi menurut ID
 ```
 PS C:\>Get-AzureBatchComputeNode -PoolId "Pool06" -Id "tvm-2316545714_1-20150725t213220z" -BatchContext $Context
 Id                    : tvm-2316545714_1-20150725t213220z
@@ -68,10 +68,10 @@ CertificateReferences :
 Errors                :
 ```
 
-Perintah ini mendapatkan node hitung yang memiliki ID tvm-2316545714_1-20150725t213220z dari pool yang memiliki ID Pool06.
-Gunakan cmdlet Get-AzureRmBatchAccountKeys cmdlet untuk menetapkan konteks ke variabel $Context tersebut.
+Perintah ini mendapatkan node komputasi yang memiliki ID tvm-2316545714_1-20150725t213220z dari pool yang memiliki ID Pool06.
+Gunakan cmdlet Get-AzureRmBatchAccountKeys untuk menetapkan konteks ke variabel $Context.
 
-### Contoh 2: Dapatkan semua node perhitungan diam dari kolam
+### Contoh 2: Dapatkan semua node komputasi menganggur dari pool
 ```
 PS C:\>Get-AzureBatchComputeNode -PoolId "Pool06" -Filter "state eq 'idle'" -BatchContext $Context
 Id                    : tvm-2316545714_1-20150725t213220z
@@ -107,10 +107,10 @@ CertificateReferences :
 Errors                :
 ```
 
-Perintah ini akan mendapatkan semua node hitung diam yang terdapat dalam pool yang memiliki ID Pool06.
-Perintah menentukan status diam dengan menggunakan *parameter Filter.*
+Perintah ini mendapatkan semua simpul komputasi menganggur yang terdapat dalam kumpulan yang memiliki ID Pool06.
+Perintah menentukan status menganggur menggunakan parameter *Filter* .
 
-### Contoh 3: Dapatkan semua node perhitungan dalam pool yang ditentukan
+### Contoh 3: Dapatkan semua node komputasi dalam kumpulan tertentu
 ```
 PS C:\>Get-AzureBatchPool -Id "Pool07" -BatchContext $Context | Get-AzureBatchComputeNode -BatchContext $Context
 Id                    : tvm-2316545714_1-20150725t213220z
@@ -148,15 +148,15 @@ CertificateReferences :
 Errors                :
 ```
 
-Perintah ini mendapatkan pool yang memiliki ID Pool07 dengan menggunakan cmdlet Get-AzureBatchPool cmdlet.
-Perintah itu melewati pool itu ke cmdlet saat ini dengan menggunakan operator pipeline.
-Cmdlet tersebut mendapatkan semua node perhitungan dari pool itu.
+Perintah ini mendapatkan pool yang memiliki ID Pool07 dengan menggunakan cmdlet Get-AzureBatchPool.
+Perintah melewati kumpulan tersebut ke cmdlet saat ini dengan menggunakan operator pipeline.
+Cmdlet itu mendapatkan semua node komputasi dari kolam itu.
 
 ## PARAMETERS
 
 ### -BatchContext
-Menentukan contoh **BatchAccountContext** yang digunakan cmdlet untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -187,8 +187,8 @@ Accept wildcard characters: False
 
 ### -Filter
 Menentukan klausul filter OData.
-Cmdlet ini mengembalikan node perhitungan yang sesuai dengan filter yang ditentukan parameter ini.
-Jika Anda tidak menentukan filter, cmdlet ini mengembalikan semua node perhitungan untuk pool.
+Cmdlet ini mengembalikan node komputasi yang cocok dengan filter yang ditentukan parameter ini.
+Jika Anda tidak menentukan filter, cmdlet ini mengembalikan semua node komputasi untuk kumpulan.
 
 ```yaml
 Type: System.String
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID node perhitungan yang dapatkan cmdlet ini dari pool.
+Menentukan ID simpul komputasi yang didapat cmdlet ini dari pool.
 Anda tidak bisa menentukan karakter wildcard.
 
 ```yaml
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxCount
-Menentukan jumlah maksimum node perhitungan untuk dikembalikan.
+Menentukan jumlah maksimum node komputasi untuk dikembalikan.
 Jika Anda menentukan nilai nol (0) atau kurang, cmdlet tidak menggunakan batas atas.
 Nilai defaultnya adalah 1000.
 
@@ -235,9 +235,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pool
-Menentukan kolam renang, sebagai objek **PSCloudPool,** yang berisi node perhitungan.
-Untuk mendapatkan objek **PSCloudPool,** gunakan cmdlet Get-AzureBatchPool.
+### -Kolam Renang
+Menentukan kumpulan, sebagai objek **PSCloudPool** , yang berisi node komputasi.
+Untuk mendapatkan objek **PSCloudPool** , gunakan cmdlet Get-AzureBatchPool.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSCloudPool
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolId
-Menentukan ID pool yang berisi node perhitungan.
+Menentukan ID kumpulan yang berisi node komputasi.
 
 ```yaml
 Type: System.String
@@ -267,8 +267,8 @@ Accept wildcard characters: False
 ```
 
 ### -Pilih
-Menentukan klausul pilih OData.
-Tentukan nilai untuk parameter ini agar mendapatkan properti tertentu dan bukan semua properti objek.
+Menentukan klausul pemilihan OData.
+Tentukan nilai untuk parameter ini untuk mendapatkan properti tertentu daripada semua properti objek.
 
 ```yaml
 Type: System.String
@@ -283,7 +283,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -313,8 +313,8 @@ Parameter: BatchContext (ByValue)
 
 [Reset-AzureBatchComputeNode](./Reset-AzureBatchComputeNode.md)
 
-[Mulai Ulang-AzureBatchComputeNode](./Restart-AzureBatchComputeNode.md)
+[Mulai ulang-AzureBatchComputeNode](./Restart-AzureBatchComputeNode.md)
 
-[Cmdlet Kumpulan Azure](./AzureRM.Batch.md)
+[Cmdlet Azure Batch](./AzureRM.Batch.md)
 
 

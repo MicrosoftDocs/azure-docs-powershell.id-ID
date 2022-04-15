@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/MachineLearning/Commands.MachineLearning/help/Get-AzureRmMlCommitmentPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/MachineLearning/Commands.MachineLearning/help/Get-AzureRmMlCommitmentPlan.md
 ms.openlocfilehash: f0b081911d1bcd2a2b195d3185eb3b36505060c4
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140867348"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142140040"
 ---
 # Get-AzureRmMlCommitmentPlan
 
@@ -28,11 +28,11 @@ Get-AzureRmMlCommitmentPlan [-ResourceGroupName <String>] [-Name <String>]
 
 ## DESCRIPTION
 Mengambil informasi rencana komitmen.
-Depending on the paramenters passed, the cmdlet returns the specific commitment plan, a collection of commitment plans for a specified resource group within the current subscription, or a collection of commitment plans within the current subscription.
+Tergantung pada paramenter yang lolos, cmdlet mengembalikan rencana komitmen tertentu, kumpulan rencana komitmen untuk grup sumber daya tertentu dalam langganan saat ini, atau kumpulan rencana komitmen dalam langganan saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan paket komitmen tertentu
+### Contoh 1: Dapatkan rencana komitmen tertentu
 ```
 Get-AzureRmMlCommitmentPlan -ResourceGroupName "MyResourceGroup" -Name "MyCommitmentPlanName"
 ```
@@ -42,7 +42,7 @@ Get-AzureRmMlCommitmentPlan -ResourceGroupName "MyResourceGroup" -Name "MyCommit
 Get-AzureRmMlCommitmentPlan
 ```
 
-### Contoh 3: Dapatkan semua rencana komitmen di langganan saat ini dan grup sumber daya yang diberikan
+### Contoh 3: Dapatkan semua rencana komitmen dalam langganan saat ini dan grup sumber daya yang diberikan
 ```
 Get-AzureRmMlCommitmentPlan -ResourceGroupName "MyResourceGroup"
 ```
@@ -50,7 +50,7 @@ Get-AzureRmMlCommitmentPlan -ResourceGroupName "MyResourceGroup"
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya untuk Rencana ML Azure.
+Nama grup sumber daya untuk rencana komitmen Azure ML.
 
 ```yaml
 Type: System.String
@@ -95,17 +95,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Management.MachineLearning.CommitmentPlans.Models.CommitmentPlan
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, machine, machine learning, azureml
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, mesin, pembelajaran mesin, azureml
 
 ## RELATED LINKS

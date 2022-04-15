@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/New-AzVirtualNetworkGatewayIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/New-AzVirtualNetworkGatewayIpConfig.md
 ms.openlocfilehash: 8def7a737bd3d97cb4250cb9be0a1d7bcc781d50
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426187"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142131425"
 ---
 # New-AzVirtualNetworkGatewayIpConfig
 
 ## SYNOPSIS
-Membuat Konfigurasi IP untuk Gateway Jaringan Virtual
+Membuat Konfigurasi IP untuk Gateway Virtual Network
 
 ## SYNTAX
 
@@ -33,21 +33,21 @@ New-AzVirtualNetworkGatewayIpConfig -Name <String> [-PrivateIpAddress <String>] 
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzVirtualNetworkGatewayIpConfig** membuat konfigurasi yang ditetapkan ke Gateway Jaringan Virtual dengan Alamat IP Publik (yang sebelumnya dibuat) berdasarkan ID Subnet.
+Cmdlet **New-AzVirtualNetworkGatewayIpConfig** membuat konfigurasi yang ditetapkan ke Gateway Virtual Network dengan Alamat IP Publik (yang sebelumnya dibuat) berdasarkan ID Subnet.
 
 ## EXAMPLES
 
-### 1: Membuat Konfigurasi IP untuk Gateway Jaringan Virtual
+### 1: Membuat Konfigurasi IP untuk Gateway Virtual Network
 ```
 $gwIpConfig = New-AzVirtualNetworkGatewayIpConfig -Name myGWIpConfig -SubnetId $myGWsubnet.Id -PublicIpAddressId $myGWpip.Id
 ```
 
-Mengonfigurasi Gateway Jaringan Virtual dengan Alamat IP Publik. Variabel $myGWsubnet diperoleh menggunakan cmdlet **Get-AzVirtualNetworkSubnetConfig** di "GatewaySubnet" di dalam Jaringan Virtual yang Anda maksudkan untuk membuat Gateway Jaringan Virtual. Jumlah variabel $myGWpip diperoleh menggunakan cmdlet **New-AzPublicIpAddress.**
+Mengonfigurasi Gateway Virtual Network dengan Alamat IP Publik. Variabel $myGWsubnet diperoleh menggunakan cmdlet **Get-AzVirtualNetworkSubnetConfig** pada "GatewaySubnet" dalam Virtual Network yang ingin Anda buat gateway Virtual Network. Variabel $myGWpip diperoleh menggunakan cmdlet **New-AzPublicIpAddress** .
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

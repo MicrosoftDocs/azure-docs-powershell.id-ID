@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/NotificationHubs/Commands.NotificationHubs/help/Set-AzureRmNotificationHubsNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/NotificationHubs/Commands.NotificationHubs/help/Set-AzureRmNotificationHubsNamespace.md
 ms.openlocfilehash: 2fb349628a686bb96df5685bff8a4329c0173212
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420324"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142136845"
 ---
 # Set-AzureRmNotificationHubsNamespace
 
@@ -29,16 +29,16 @@ Set-AzureRmNotificationHubsNamespace [-ResourceGroup] <String> [-Namespace] <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmNotificationHubsNamespace** mengatur nilai properti dari ruang nama hub pemberitahuan yang ada.
+Cmdlet **Set-AzureRmNotificationHubsNamespace** mengatur nilai properti ruang nama hub pemberitahuan yang sudah ada.
 Ruang nama adalah wadah logis yang membantu Anda menata dan mengelola hub pemberitahuan.
-Anda setidaknya harus memiliki satu ruang nama hub pemberitahuan.
+Anda harus memiliki setidaknya satu ruang nama hub pemberitahuan.
 Selain itu, semua hub pemberitahuan harus memiliki ruang nama yang ditetapkan.
 Cmdlet ini terutama digunakan untuk mengaktifkan dan menonaktifkan ruang nama.
-Saat ruang nama dinonaktifkan, pengguna tidak bisa tersambung ke salah satu hub pemberitahuan dalam ruang nama, juga tidak bisa administrator menggunakan hub tersebut untuk mengirim pemberitahuan push.
-Untuk mengaktifkan kembali ruang nama yang dinonaktifkan, gunakan cmdlet ini untuk mengatur **properti Status** kumpulan nama ke Aktif.
-Anda juga bisa menggunakan cmdlet ini untuk menandai ruang nama sebagai sangat penting.
+Ketika ruang nama dinonaktifkan, pengguna tidak dapat tersambung ke hub pemberitahuan apa pun di ruang nama, administrator juga tidak dapat menggunakan hub tersebut untuk mengirim pemberitahuan push.
+Untuk mengaktifkan kembali ruang nama yang dinonaktifkan, gunakan cmdlet ini untuk mengatur properti **Status** ruang nama ke Aktif.
+Anda juga bisa menggunakan cmdlet ini untuk menandai ruang nama sebagai penting.
 Ini mencegah ruang nama dihapus.
-Untuk menghapus ruang nama penting, Anda harus terlebih dahulu menghapus tag Sangat Penting.
+Untuk menghapus ruang nama penting, Anda harus menghapus tag Penting terlebih dahulu.
 
 ## EXAMPLES
 
@@ -47,19 +47,19 @@ Untuk menghapus ruang nama penting, Anda harus terlebih dahulu menghapus tag San
 PS C:\>Set-AzureRmNotificationHubsNamespace -Namespace "ContosoPartners" -Location "West US" -ResourceGroup "ContosoNotificationsGroup" -State "Disabled"
 ```
 
-Perintah ini menonaktifkan ruang nama ContosoPartners yang terletak di pusat data As Barat dan ditetapkan ke grup sumber daya ContosoNotificationsGroup.
+Perintah ini menonaktifkan ruang nama bernama ContosoPartners yang terletak di pusat data AS Barat dan ditetapkan ke grup sumber daya ContosoNotificationsGroup.
 
 ### Contoh 2: Mengaktifkan ruang nama
 ```
 PS C:\>Set-AzureRmNotificationHubsNamespace -Namespace "ContosoPartners" -Location "West US" -ResourceGroup "ContosoNotificationsGroup" -State "Active"
 ```
 
-Perintah ini mengaktifkan ruang nama ContosoPartners yang terletak di pusat data As Barat dan ditetapkan ke grup sumber daya ContosoNotificationsGroup.
+Perintah ini memungkinkan ruang nama bernama ContosoPartners yang terletak di pusat data AS Barat dan ditetapkan ke grup sumber daya ContosoNotificationsGroup.
 
 ## PARAMETERS
 
 ### -Kritis
-Menunjukkan apakah ruang nama merupakan ruang nama penting.
+Menunjukkan apakah ruang nama adalah ruang nama yang penting.
 Ruang nama penting tidak bisa dihapus.
 Untuk menghapus ruang nama penting, Anda harus mengatur nilai properti ini ke False untuk menandai ruang nama sebagai non-kritis.
 
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -90,8 +90,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -106,9 +106,9 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan nama tampilan datacenter yang menjadi host ruang nama.
-Meskipun parameter ini dapat ditetapkan ke lokasi Azure yang valid, Anda harus menggunakan datacenter yang terletak di dekat mayoritas pengguna.
-Untuk mendapatkan daftar lokasi Azure terkini, jalankan perintah berikut: `Get-AzureLocation | Select-Object DisplayName`
+Menentukan nama tampilan pusat data yang menjadi host ruang nama.
+Meskipun Anda dapat mengatur parameter ini ke lokasi Azure apa pun yang valid, untuk kinerja optimal, Anda harus menggunakan pusat data yang terletak di dekat sebagian besar pengguna.
+Untuk mendapatkan daftar terbaru lokasi Azure, jalankan perintah berikut: `Get-AzureLocation | Select-Object DisplayName`
 
 ```yaml
 Type: System.String
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Menentukan ruang nama yang dimodifikasi cmdlet ini.
+Menentukan ruang nama yang diubah cmdlet ini.
 Ruang nama menyediakan cara untuk mengelompokkan dan mengkategorikan hub pemberitahuan.
 
 ```yaml
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroup
 Menentukan grup sumber daya tempat ruang nama ditetapkan.
-Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu manajemen inventaris dan administrasi Azure.
+Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang hanya membantu manajemen inventaris dan administrasi Azure.
 
 ```yaml
 Type: System.String
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuTier
-Sku tier dari ruang nama
+Tingkat Sku dari ruang nama
 
 ```yaml
 Type: System.String
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -Negara Bagian
-Menentukan status saat ini dari ruang nama.
+Menentukan status ruang nama saat ini.
 Nilai yang dapat diterima untuk parameter ini adalah: Aktif dan Dinonaktifkan.
 
 ```yaml
@@ -187,12 +187,12 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Menentukan pasangan nilai nama yang dapat digunakan untuk mengategorikan dan menata item Azure.
-Fungsi tag yang sama dengan kata kunci, dan beroperasi pada penyebaran.
-Misalnya, jika Anda mencari semua item dengan tag Departemen:IT, pencarian akan mengembalikan semua item Azure yang memiliki tag tersebut, terlepas dari hal-hal seperti tipe item, lokasi, atau grup sumber daya.
-Tag individu terdiri dari dua bagian: *Nama* dan (opsional) *Nilai.*
-Misalnya, di Departemen:IT, nama tag adalah Departemen dan nilai tag adalah IT.
-Untuk menambahkan tag, gunakan sintaks tabel hash seperti ini, yang membuat tag CalendarYear:2016: -Tag @{Name="CalendarYear"; Value="2016"} Untuk menambahkan beberapa tag dalam perintah yang sama, pisahkan tag individu tersebut menggunakan koma: -Tag @{Name="CalendarYear"; Value="2016"}, @{Name="FiscalYear"; Value="2017"}
+Menentukan pasangan nilai nama yang dapat digunakan untuk mengkategorikan dan menata item Azure.
+Fungsi tag mirip dengan kata kunci, dan beroperasi di seluruh penyebaran.
+Misalnya, jika Anda mencari semua item dengan tag Departemen:TI, pencarian akan mengembalikan semua item Azure yang memiliki tag tersebut, terlepas dari hal-hal seperti tipe item, lokasi, atau grup sumber daya.
+Tag individual terdiri dari dua bagian: *Nama* dan (opsional) *Nilai*.
+Misalnya, di Departemen:TI, nama tag adalah Departemen dan nilai tagnya adalah TI.
+Untuk menambahkan tag, gunakan sintaks tabel hash seperti ini, yang membuat tag CalendarYear:2016: -Tags @{Name="CalendarYear"; Value="2016"} Untuk menambahkan beberapa tag dalam perintah yang sama, pisahkan tag individual dengan menggunakan tanda koma: -Tag @{Name="CalendarYear"; Value="2016"}, @{Name="FiscalYear"; Value="2017"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -259,8 +259,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmNotificationHubsNamespace](./Get-AzureRmNotificationHubsNamespace.md)
 
-[New-AzureRmNotificationHubsNamespace](./New-AzureRmNotificationHubsNamespace.md)
+[Baru-AzureRmNotificationHubsNamespace](./New-AzureRmNotificationHubsNamespace.md)
 
-[Remove-AzureRmNotificationHubsNamespace](./Remove-AzureRmNotificationHubsNamespace.md)
+[Hapus-AzureRmNotificationHubsNamespace](./Remove-AzureRmNotificationHubsNamespace.md)
 
 

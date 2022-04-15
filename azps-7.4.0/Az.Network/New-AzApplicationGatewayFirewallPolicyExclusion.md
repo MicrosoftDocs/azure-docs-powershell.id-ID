@@ -1,0 +1,146 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.Network.dll-Help.xml
+Module Name: Az.Network
+online version: https://docs.microsoft.com/powershell/module/az.network/new-azapplicationgatewayfirewallpolicyexclusion
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallPolicyExclusion.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallPolicyExclusion.md
+ms.openlocfilehash: 3847179dbfbd3c71765cc36e78157fefb0bd4d3e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142176677"
+---
+# New-AzApplicationGatewayFirewallPolicyExclusion
+
+## SYNOPSIS
+Membuat pengecualian pada Kebijakan Firewall
+
+## SYNTAX
+
+```
+New-AzApplicationGatewayFirewallPolicyExclusion -MatchVariable <String> -SelectorMatchOperator <String>
+ -Selector <String> [-ExclusionManagedRuleSet <PSApplicationGatewayFirewallPolicyExclusionManagedRuleSet[]>]
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **New-AzApplicationGatewayFirewallPolicyExclusion** daftar aturan pengecualian baru untuk kebijakan firewall.
+
+## EXAMPLES
+
+### Contoh 1
+```powershell
+$exclusionEntry = New-AzApplicationGatewayFirewallPolicyExclusion -MatchVariable "RequestHeaderNames" -SelectorMatchOperator "StartsWith" -Selector "xyz"
+```
+
+Perintah ini membuat exclusion-entry baru untuk variabel bernama RequestHeaderNames dan operator bernama StartsWith dan Selector bernama xyz. Entri pengecualian disimpan di $exclusionEntry.
+
+### Contoh 2
+```powershell
+$exclusionEntry = New-AzApplicationGatewayFirewallPolicyExclusion -MatchVariable "RequestHeaderKeys" -SelectorMatchOperator "Contains" -Selector "abc"
+```
+
+Perintah ini membuat exclusion-entry baru untuk variabel bernama RequestHeaderKeys dan operator bernama Contains dan Selector bernama abc. Entri pengecualian disimpan di $exclusionEntry.
+
+### Contoh 3
+```powershell
+$exclusionEntry = New-AzApplicationGatewayFirewallPolicyExclusion -MatchVariable "RequestHeaderNames" -SelectorMatchOperator "StartsWith" -Selector "xyz" -ExclusionManagedRuleSet $exclusionManagedRuleSet
+```
+
+Perintah ini membuat exclusion-entry baru untuk variabel bernama RequestHeaderNames dan operator bernama StartsWith, Selector bernama xyz dan ExclusionManagedRuleSet bernama $exclusionManagedRuleSet. Entri pengecualian disimpan di $exclusionEntry.
+
+## PARAMETERS
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MatchVariable
+Variabel yang akan dikecualikan.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+Accepted values: RequestHeaderNames, RequestCookieNames, RequestArgNames, RequestHeaderKeys, RequestCookieKeys, RequestArgKeys, RequestHeaderValues, RequestCookieValues, RequestArgValues
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Selector
+Ketika variabel adalah kumpulan, operator yang digunakan untuk menentukan elemen mana dalam kumpulan pengecualian ini berlaku.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SelectorMatchOperator
+Ketika variabel adalah koleksi, beroperasi pada pemilih untuk menentukan elemen mana dalam pengumpulan pengecualian ini berlaku.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+Accepted values: Equals, Contains, StartsWith, EndsWith, EqualsAny
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExclusionManagedRuleSet
+Daftar Kumpulan aturan terkelola Pengecualian.
+
+```yaml
+Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFirewallPolicyExclusionManagedRuleSet[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### Tidak
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFirewallPolicyExclusion
+
+## CATATAN
+
+## RELATED LINKS

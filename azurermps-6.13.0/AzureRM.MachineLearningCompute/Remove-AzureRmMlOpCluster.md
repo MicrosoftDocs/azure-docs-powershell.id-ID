@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/MachineLearningCompute/Commands.MachineLearningCompute/help/Remove-AzureRmMlOpCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/MachineLearningCompute/Commands.MachineLearningCompute/help/Remove-AzureRmMlOpCluster.md
 ms.openlocfilehash: 5619b9ca4e7f5593a20baf04951d0d5594b31215
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140868055"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142139777"
 ---
 # Remove-AzureRmMlOpCluster
 
 ## SYNOPSIS
-Menghapus kluster operasi.
+Menghapus kluster operasionalisasi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,7 +40,7 @@ Remove-AzureRmMlOpCluster -ResourceId <String> [-IncludeAllResources]
 ```
 
 ## DESCRIPTION
-Menghapus kluster operasi. Beberapa sumber daya yang terkait dengan kluster mungkin tidak semuanya dihapus. Misalnya, layanan wadah Azure akan dihapus, tapi VM terkait tidak. Akun penyimpanan, registri wadah, dan wawasan aplikasi tidak dihapus untuk informasi diagnostik.
+Menghapus kluster operasionalisasi. Beberapa sumber daya yang terkait dengan kluster mungkin tidak semuanya dihapus. Misalnya, layanan kontainer Azure akan dihapus, tetapi VM terkait tidak. Akun penyimpanan, registri kontainer, dan wawasan aplikasi tidak dihapus untuk informasi diagnostik.
 
 ## EXAMPLES
 
@@ -57,7 +57,7 @@ PS C:\> Get-AzureRmMlOpCluster -ResourceGroupName my-group -Name my-cluster | Re
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek kluster operasional.
+Objek kluster operasionalisasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.MachineLearningCompute.Models.PSOperationalizationCluster
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama kluster operasional.
+Nama kluster operasionalisasi.
 
 ```yaml
 Type: System.String
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya untuk kluster operasional.
+Nama grup sumber daya untuk kluster operasionalisasi.
 
 ```yaml
 Type: System.String
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya Azure untuk kluster operasi.
+Id sumber daya Azure untuk kluster operasionalisasi.
 
 ```yaml
 Type: System.String
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

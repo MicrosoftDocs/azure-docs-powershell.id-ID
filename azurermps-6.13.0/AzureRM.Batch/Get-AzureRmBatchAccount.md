@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Get-AzureRmBatchAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Get-AzureRmBatchAccount.md
 ms.openlocfilehash: ddc3bab48e766f80375fdf98add15e16e0086fee
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425921"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142143338"
 ---
 # Get-AzureRmBatchAccount
 
 ## SYNOPSIS
-Mendapatkan akun Kumpulan dalam langganan saat ini.
+Mendapatkan akun Batch dalam langganan saat ini.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,11 +28,11 @@ Get-AzureRmBatchAccount [[-AccountName] <String>] [[-ResourceGroupName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmBatchAccount** mendapatkan akun Azure Batch dalam langganan saat ini. Anda bisa menggunakan parameter *AccountName* untuk mendapatkan akun tunggal, atau Anda bisa menggunakan parameter *ResourceGroupName* untuk mendapatkan akun di bawah grup sumber daya itu.
+Cmdlet **Get-AzureRmBatchAccount** mendapatkan akun Azure Batch dalam langganan saat ini. Anda dapat menggunakan parameter *AccountName* untuk mendapatkan satu akun, atau menggunakan parameter *ResourceGroupName* untuk mendapatkan akun di bawah grup sumber daya tersebut.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan batch account by name
+### Contoh 1: Dapatkan akun batch berdasarkan nama
 ```
 PS C:\>Get-AzureRmBatchAccount -AccountName "pfuller"
 AccountName                  : pfuller
@@ -45,7 +45,7 @@ Tags                         :
 TaskTenantUrl                : https://pfuller.westus.batch.azure.com
 ```
 
-Perintah ini mendapatkan akun kumpulan yang bernama pfuller.
+Perintah ini mendapatkan akun batch bernama pfuller.
 
 ### Contoh 2: Dapatkan akun kumpulan yang terkait dengan grup sumber daya
 ```
@@ -68,13 +68,13 @@ Tags                         :
 TaskTenantUrl                : https://cmdletexample.westus.batch.azure.com
 ```
 
-Perintah ini akan menerima akun kumpulan yang terkait dengan grup sumber daya CmdletExampleRG.
+Perintah ini mendapatkan akun kumpulan yang terkait dengan grup sumber daya CmdletExampleRG.
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Menentukan nama akun.
-Jika Anda menentukan nama akun, cmdlet ini hanya mengembalikan akun itu.
+Jika Anda menentukan nama akun, cmdlet ini hanya mengembalikan akun tersebut.
 
 ```yaml
 Type: System.String
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya.
-Jika Anda menentukan grup sumber daya, cmdlet ini mendapatkan akun di bawah grup sumber daya tertentu.
+Jika Anda menentukan grup sumber daya, cmdlet ini akan mendapatkan akun di bawah grup sumber daya tertentu.
 
 ```yaml
 Type: System.String
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"} Cmdlet ini mendapatkan akun berisi tag yang ditentukan parameter ini.
+Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"} Cmdlet ini mendapatkan akun yang berisi tag yang ditentukan parameter ini.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -151,10 +151,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmBatchAccount](./New-AzureRmBatchAccount.md)
+[AzureRmBatchAccount baru](./New-AzureRmBatchAccount.md)
 
-[Remove-AzureRmBatchAccount](./Remove-AzureRmBatchAccount.md)
+[Hapus-AzureRmBatchAccount](./Remove-AzureRmBatchAccount.md)
 
 [Set-AzureRmBatchAccount](./Set-AzureRmBatchAccount.md)
 
-[Cmdlet Kumpulan Azure](./AzureRM.Batch.md)
+[Cmdlet Azure Batch](./AzureRM.Batch.md)

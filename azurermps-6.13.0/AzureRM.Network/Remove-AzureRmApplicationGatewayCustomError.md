@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmApplicationGatewayCustomError.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmApplicationGatewayCustomError.md
-ms.openlocfilehash: 9f40d08c5b48f168c773d989862748946245011b79dd186afc065755759f5a5d
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: cc1f6b487d0faf58999a0326a77e01bea74d8c91
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140867159"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142137963"
 ---
 # Remove-AzureRmApplicationGatewayCustomError
 
@@ -36,12 +36,12 @@ Cmdlet **Remove-AzureRmApplicationGatewayCustomError** menghapus kesalahan kusto
 PS C:\> $updatedgateway = Remove-AzureRmApplicationGatewayCustomError -ApplicationGateway $appgw -StatusCode HttpStatus502
 ```
 
-Perintah ini menghapus kesalahan kustom http kode status 502 dari gateway aplikasi $appgw, dan mengembalikan gateway yang diperbarui.
+Perintah ini menghapus kesalahan kustom kode status http 502 dari gateway aplikasi $appgw, dan mengembalikan gateway yang diperbarui.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Gateway Aplikasi
+Application Gateway
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

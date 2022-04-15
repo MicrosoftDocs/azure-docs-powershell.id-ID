@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.keyva
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/KeyVault/Commands.KeyVault/help/Backup-AzureKeyVaultManagedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/KeyVault/Commands.KeyVault/help/Backup-AzureKeyVaultManagedStorageAccount.md
-ms.openlocfilehash: aa3ebdeab6897f52dffa45aa0cbcd2241c6353979fe3fd8043cc81bc7744caad
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 1520acb94ffe587fb96eaa9c2ba565bcf31cc87e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140854763"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142140595"
 ---
 # Backup-AzureKeyVaultManagedStorageAccount
 
@@ -35,14 +35,14 @@ Backup-AzureKeyVaultManagedStorageAccount [-InputObject] <PSKeyVaultManagedStora
 ```
 
 ## DESCRIPTION
-Cmdlet **Backup-AzureKeyVaultManagedStorageAccount** mencadangkan akun penyimpanan terkelola tertentu di kunci vault dengan mengunduh dan menyimpannya dalam file.
-Karena dienkripsi, konten yang diunduh tidak dapat digunakan di luar Azure Key Vault.
-Anda dapat memulihkan akun penyimpanan yang dicadangkan ke vault kunci apa pun dalam langganan yang menjadi sumber cadangan, selama vault tersebut berada di Azure geography yang sama.
+Cmdlet **Backup-AzureKeyVaultManagedStorageAccount** mencadangkan akun penyimpanan terkelola tertentu dalam kubah kunci dengan mengunduhnya dan menyimpannya dalam file.
+Karena konten yang diunduh dienkripsi, konten tidak dapat digunakan di luar Azure Key Vault.
+Anda dapat memulihkan akun penyimpanan yang dicadangkan ke setiap kubah kunci dalam langganan tempat penyimpanan dicadangkan, selama kubah berada dalam geografi Azure yang sama.
 Alasan umum untuk menggunakan cmdlet ini adalah: 
-- Anda ingin mempertahankan salinan offline akun penyimpanan jika anda tidak sengaja menghapus file asli dari vault.
+- Anda ingin menyimpan salinan offline akun penyimpanan jika Anda secara tidak sengaja menghapus yang asli dari kubah.
  
-- Anda membuat akun penyimpanan terkelola menggunakan Key Vault dan sekarang ingin kloning objek ke kawasan Azure yang berbeda, sehingga Anda dapat menggunakannya dari semua contoh aplikasi yang didistribusikan.
-Gunakan cmdlet **Backup-AzureKeyVaultManagedStorageAccount** untuk mengambil akun penyimpanan terkelola dalam format terenkripsi, lalu gunakan cmdlet **Restore-AzureKeyVaultManagedStorageAccount** dan menentukan penyimpanan kunci di kawasan kedua.
+- Anda membuat akun penyimpanan terkelola menggunakan Key Vault dan sekarang ingin mengkloning objek ke kawasan Azure yang berbeda, sehingga Anda dapat menggunakannya dari semua contoh aplikasi yang didistribusikan.
+Gunakan cmdlet **Backup-AzureKeyVaultManagedStorageAccount** untuk mengambil akun penyimpanan terkelola dalam format terenkripsi, lalu gunakan cmdlet **Restore-AzureKeyVaultManagedStorageAccount** dan tentukan kubah kunci di kawasan kedua.
 
 ## EXAMPLES
 
@@ -53,7 +53,7 @@ PS C:\Users\username\> Backup-AzureKeyVaultManagedStorageAccount -VaultName 'MyK
 C:\Users\username\mykeyvault-mymsak-1527029447.01191
 ```
 
-Perintah ini mengambil akun penyimpanan terkelola bernama MyMSAK dari penyimpanan kunci bernama MyKeyVault dan menyimpan cadangan akun penyimpanan terkelola itu ke file yang diberi nama secara otomatis untuk Anda, dan menampilkan nama file tersebut.
+Perintah ini mengambil akun penyimpanan terkelola bernama MyMSAK dari kubah kunci bernama MyKeyVault dan menyimpan cadangan akun penyimpanan terkelola tersebut ke file yang secara otomatis dinamai untuk Anda, dan menampilkan nama file.
 
 ### Contoh 2: Mencadangkan akun penyimpanan terkelola ke nama file tertentu
 ```powershell
@@ -62,9 +62,9 @@ PS C:\> Backup-AzureKeyVaultKey -VaultName 'MyKeyVault' -Name 'MyMSAK' -OutputFi
 C:\Backup.blob
 ```
 
-Perintah ini mengambil akun penyimpanan terkelola bernama MyMSAK dari penyimpanan kunci bernama MyKeyVault dan menyimpan cadangan akun penyimpanan yang dikelola itu ke file bernama Backup.blob.
+Perintah ini mengambil akun penyimpanan terkelola bernama MyMSAK dari kubah kunci bernama MyKeyVault dan menyimpan cadangan akun penyimpanan terkelola tersebut ke file bernama Backup.blob.
 
-### Contoh 3:  Mencadangkan akun penyimpanan terkelola yang sebelumnya diambil ke nama file tertentu, menimpa file tujuan tanpa meminta.
+### Contoh 3: Cadangkan akun penyimpanan terkelola yang sebelumnya diambil ke nama file tertentu, menimpa file tujuan tanpa meminta.
 ```powershell
 PS C:\> $msak = Get-AzureKeyVaultManagedStorageAccount -VaultName 'MyKeyVault' -Name 'MyMSAK'
 PS C:\> Backup-AzureKeyVaultManagedStorageAccount -StorageAccount $msak -OutputFile 'C:\Backup.blob' -Force
@@ -72,7 +72,7 @@ PS C:\> Backup-AzureKeyVaultManagedStorageAccount -StorageAccount $msak -OutputF
 C:\Backup.blob
 ```
 
-Perintah ini membuat cadangan akun penyimpanan terkelola yang dinamai $msak. Nama di vault bernama $msak. VaultName ke file bernama Backup.blob, akan menimpa file tanpa masalah jika file sudah ada.
+Perintah ini membuat cadangan akun penyimpanan terkelola bernama $msak. Nama dalam kubah bernama $msak. VaultName ke file bernama Backup.blob, menimpa file secara diam-diam jika sudah ada.
 
 ## PARAMETERS
 
@@ -91,8 +91,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Menimpa file tertentu jika ada
+### -Paksa
+Timpa file yang diberikan jika ada
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Storage akun Anda dicadangkan, dibuat salurannya dari output panggilan pengambilan.
+Storage bundel akun yang akan dicadangkan, disalurkan dari output panggilan pengambilan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultManagedStorageAccountIdentityItem
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 
 ### -Nama
 Nama rahasia.
-Cmdlet menyusun FQDN rahasia dari nama vault, lingkungan yang saat ini dipilih dan nama rahasia.
+Cmdlet menyusun FQDN rahasia dari nama kubah, lingkungan yang saat ini dipilih dan nama rahasia.
 
 ```yaml
 Type: System.String
@@ -138,9 +138,9 @@ Accept wildcard characters: False
 ```
 
 ### -OutputFile
-File output.
+Berkas output.
 File output untuk menyimpan cadangan akun penyimpanan.
-Jika tidak ditentukan, nama file default akan dibuat.
+Jika tidak ditentukan, nama file default akan dihasilkan.
 
 ```yaml
 Type: System.String
@@ -155,8 +155,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama Vault.
-Cmdlet menyusun FQDN dari vault berdasarkan nama dan lingkungan yang saat ini dipilih.
+Nama kubah.
+Cmdlet menyusun FQDN kubah berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

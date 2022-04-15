@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/LogicApp/Commands.LogicApp/help/Set-AzureRmLogicApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/LogicApp/Commands.LogicApp/help/Set-AzureRmLogicApp.md
 ms.openlocfilehash: 8fc0a244e893c370d157429d284d7c1790b8a1af
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427047"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142140145"
 ---
 # Set-AzureRmLogicApp
 
@@ -30,7 +30,7 @@ Set-AzureRmLogicApp -ResourceGroupName <String> -Name <String> [-UseConsumptionM
  [<CommonParameters>]
 ```
 
-### PaketHosting
+### HostingPlan
 ```
 Set-AzureRmLogicApp -ResourceGroupName <String> -Name <String> [-AppServicePlan <String>] [-State <String>]
  [-Definition <Object>] [-DefinitionFilePath <String>] [-IntegrationAccountId <String>] [-Parameters <Object>]
@@ -40,20 +40,20 @@ Set-AzureRmLogicApp -ResourceGroupName <String> -Name <String> [-AppServicePlan 
 
 ## DESCRIPTION
 Cmdlet **Set-AzureRmLogicApp** mengubah aplikasi logika menggunakan fitur Aplikasi Logika.
-Aplikasi logika adalah kumpulan tindakan atau pemicu yang ditetapkan dalam definisi Aplikasi Logika.
-Cmdlet ini mengembalikan objek **Alur** Kerja.
+Aplikasi logika adalah kumpulan tindakan atau pemicu yang ditentukan dalam definisi Aplikasi Logika.
+Cmdlet ini mengembalikan objek **Alur Kerja** .
 Anda dapat mengubah aplikasi logika dengan menentukan nama, lokasi, definisi Aplikasi Logika, grup sumber daya, dan rencana.
 Definisi dan parameter Aplikasi Logika diformat dalam JavaScript Object Notation (JSON).
 Anda dapat menggunakan aplikasi logika sebagai templat untuk definisi dan parameter.
 Modul ini mendukung parameter dinamis.
 Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
-Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilai tersebut.
-Nilai file parameter templat yang Anda tentukan di baris perintah diutamakan lebih dari nilai parameter templat dalam objek parameter templat.
+Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
+Nilai file parameter templat yang Anda tentukan di baris perintah lebih diutamakan daripada nilai parameter templat dalam objek parameter templat.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah aplikasi logika
+### Contoh 1: Memodifikasi aplikasi logika
 ```
 PS C:\>Set-AzureRmLogicApp -ResourceGroupName "ResourceGroup11" -Name "LogicApp17" -State "Enabled" -AppServicePlan "ServicePlan01" -DefinitionFilePath "d:\workflows\Definition17.json" -ParameterFilePath "d:\workflows\Parameters17.json"
 Id                           : /subscriptions/57b7034d-72d4-433d-ace2-a7460aed6a99/resourceGroups/LogicAppCmdletTest/providers/Microsoft.Logic/workflows/LogicApp1
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -111,7 +111,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Definition
+### -Definisi
 Menentukan definisi aplikasi logika sebagai objek atau string dalam format JavaScript Object Notation (JSON).
 
 ```yaml
@@ -141,8 +141,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParameterFilePath
-Menentukan jalur file parameter yang diformat JSON.
+Menentukan jalur file parameter JSON yang diformat.
 
 ```yaml
 Type: System.String
@@ -201,9 +201,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Parameter
+### -Parameters
 Menentukan objek kumpulan parameter untuk Aplikasi Logika.
-Menentukan tabel hash, \<string\> Kamus, atau Kamus \<string, WorkflowParameter\> .
+Tentukan tabel hash, Kamus\<string\>, atau Kamus\<string, WorkflowParameter\>.
 
 ```yaml
 Type: System.Object
@@ -250,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseConsumptionModel
-Menunjukkan bahwa tagihan aplikasi logika menggunakan model berbasis pemakaian.
+Menunjukkan bahwa tagihan aplikasi logika menggunakan model berbasis konsumsi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -265,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -281,7 +281,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -296,7 +296,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -312,9 +312,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmLogicApp](./Get-AzureRmLogicApp.md)
 
-[New-AzureRmLogicApp](./New-AzureRmLogicApp.md)
+[AzureRmLogicApp baru](./New-AzureRmLogicApp.md)
 
-[Remove-AzureRmLogicApp](./Remove-AzureRmLogicApp.md)
+[Hapus-AzureRmLogicApp](./Remove-AzureRmLogicApp.md)
 
 [Start-AzureRmLogicApp](./Start-AzureRmLogicApp.md)
 

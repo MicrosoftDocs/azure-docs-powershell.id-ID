@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/MachineLearningCompute/Commands.MachineLearningCompute/help/Get-AzureRmMlOpCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/MachineLearningCompute/Commands.MachineLearningCompute/help/Get-AzureRmMlOpCluster.md
 ms.openlocfilehash: 746dde8dd3460add5eb6a20e4a9b771873dac0e5
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140850636"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142139779"
 ---
 # Get-AzureRmMlOpCluster
 
 ## SYNOPSIS
-Mendapatkan objek kluster operasional.
+Mendapatkan objek kluster operasionalisasi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -34,7 +34,7 @@ Get-AzureRmMlOpCluster [-ResourceGroupName <String>] [-DefaultProfile <IAzureCon
 ```
 
 ## DESCRIPTION
-Mendapatkan objek kluster operasional berdasarkan nama, atau menurut grup sumber daya, atau menurut langganan.
+Mendapatkan objek kluster operasionalisasi berdasarkan nama, atau menurut grup sumber daya, atau menurut langganan.
 
 ## EXAMPLES
 
@@ -43,26 +43,26 @@ Mendapatkan objek kluster operasional berdasarkan nama, atau menurut grup sumber
 PS C:\> Get-AzureRmMlOpCluster -ResourceGroupName my-group -Name my-cluster
 ```
 
-Mendapatkan kluster operasiisasi tertentu menurut nama.
+Mendapatkan kluster operasionalisasi tertentu berdasarkan nama.
 
 ### Contoh 2
 ```
 PS C:\> Get-AzureRmMlOpCluster -ResourceGroupName my-group
 ```
 
-Mendapatkan semua kluster operasiisasi dalam grup sumber daya.
+Mendapatkan semua kluster operasionalisasi dalam grup sumber daya.
 
 ### Contoh 3
 ```
 PS C:\> Get-AzureRmMlOpCluster
 ```
 
-Mendapatkan semua kluster operasiisasi dalam suatu langganan.
+Mendapatkan semua kluster operasionalisasi dalam langganan.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama kluster operasional.
+Nama kluster operasionalisasi.
 
 ```yaml
 Type: System.String
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya untuk kluster operasional.
+Nama grup sumber daya untuk kluster operasionalisasi.
 
 ```yaml
 Type: System.String
@@ -119,11 +119,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Set-AzureRmApiManagementSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Set-AzureRmApiManagementSubscription.md
 ms.openlocfilehash: c747d85f87e88c3f72ae86c8bcef771b3e42c91a
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132415019"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142143783"
 ---
 # Set-AzureRmApiManagementSubscription
 
@@ -30,17 +30,17 @@ Set-AzureRmApiManagementSubscription -Context <PsApiManagementContext> -Subscrip
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmApiManagementSubscription mengatur** detail langganan yang sudah ada.
+Cmdlet **Set-AzureRmApiManagementSubscription** mengatur detail langganan yang sudah ada.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur status dan tombol utama dan sekunder untuk langganan
+### Contoh 1: Mengatur kunci status dan utama dan sekunder untuk langganan
 ```
 PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Set-AzureRmApiManagementSubscription -Context $apimContext -SubscriptionId -0123456789 -PrimaryKey "80450f7d0b6d481382113073f67822c1" -SecondaryKey "97d6112c3a8f48d5bf0266b7a09a761c" -State "Active"
 ```
 
-Perintah ini mengatur tombol utama dan sekunder untuk langganan dan mengaktifkannya.
+Perintah ini mengatur kunci utama dan sekunder untuk langganan dan mengaktifkannya.
 
 ## PARAMETERS
 
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -74,7 +74,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kedaluwarsa Pada
+### -KedaluwarsaOn
 Menentukan tanggal kedaluwarsa langganan.
 Nilai default parameter ini adalah $Null.
 
@@ -121,9 +121,9 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryKey
-Menentukan kunci primer langganan.
+Menentukan kunci utama langganan.
 Parameter ini dihasilkan secara otomatis jika tidak ditentukan.
-Parameter ini harus memiliki panjang 1 hingga 300 karakter.
+Parameter ini harus panjangnya 1 hingga 300 karakter.
 
 ```yaml
 Type: System.String
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ### -SecondaryKey
 Menentukan kunci sekunder langganan.
 Parameter ini dihasilkan secara otomatis jika tidak ditentukan.
-Parameter ini harus memiliki panjang 1 hingga 300 karakter.
+Parameter ini harus panjangnya 1 hingga 300 karakter.
 
 ```yaml
 Type: System.String
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -213,7 +213,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Nullable'1[[Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementSubscriptionState, Microsoft.Azure.Commands.ApiManagement.ServiceManagement, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null]]
 
-### System.Nullable'1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ### System.Management.Automation.SwitchParameter
 
@@ -227,7 +227,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmApiManagementSubscription](./Get-AzureRmApiManagementSubscription.md)
 
-[New-AzureRmApiManagementSubscription](./New-AzureRmApiManagementSubscription.md)
+[AzureRmApiManagementSubscription baru](./New-AzureRmApiManagementSubscription.md)
 
 [Remove-AzureRmApiManagementSubscription](./Remove-AzureRmApiManagementSubscription.md)
 

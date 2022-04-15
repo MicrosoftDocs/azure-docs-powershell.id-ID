@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Remove-AzVMDataDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Remove-AzVMDataDisk.md
 ms.openlocfilehash: 3529ca1d26504558036f3496c9bc75ec10e666ea
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420596"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142131731"
 ---
 # Remove-AzVMDataDisk
 
@@ -30,19 +30,19 @@ Cmdlet **Remove-AzVMDataDisk** menghapus disk data dari mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus disk data dari komputer virtual
+### Contoh 1: Menghapus disk data dari mesin virtual
 ```
 PS C:\> $VirtualMachine = Get-AzVM -ResourceGroupName "ResourceGroup11" -Name "VirtualMachine07" 
 PS C:\> Remove-AzVMDataDisk -VM $VirtualMachine -Name "Disk3"
 PS C:\> Update-AzVM -ResourceGroupName "ResourceGroup11" -VM $VirtualMachine
 ```
 
-Perintah pertama mendapatkan mesin virtual bernama VirtualMachine07 menggunakan cmdlet **Get-AzVM.**
-Perintah menyimpan mesin virtual di $VirtualMachine variabel.
+Perintah pertama mendapatkan mesin virtual bernama VirtualMachine07 dengan menggunakan cmdlet **Get-AzVM** .
+Perintah menyimpan mesin virtual dalam variabel $VirtualMachine.
 
-Perintah kedua menghapus disk data yang bernama Disk3 dari mesin virtual yang disimpan di $VirtualMachine.
+Perintah kedua menghapus disk data bernama Disk3 dari mesin virtual yang disimpan di $VirtualMachine.
 
-Perintah terakhir memperbarui status mesin virtual yang disimpan di komputer $VirtualMachine ResourceGroup11.
+Perintah terakhir memperbarui status mesin virtual yang disimpan di $VirtualMachine di ResourceGroup11.
 
 ## PARAMETERS
 
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
@@ -121,12 +121,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSVirtualMachine
-Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari saluran
+Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari pipeline
 
 ## OUTPUTS
 
@@ -136,8 +136,8 @@ Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari saluran
 
 ## RELATED LINKS
 
-[Add-AzvMDataDisk](./Add-AzVMDataDisk.md)
+[Add-AzVMDataDisk](./Add-AzVMDataDisk.md)
 
-[Get-azvm](./Get-AzVM.md)
+[Get-AzVM](./Get-AzVM.md)
 
 

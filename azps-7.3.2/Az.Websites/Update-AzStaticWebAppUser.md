@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Update-AzStaticWebAppUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Update-AzStaticWebAppUser.md
-ms.openlocfilehash: 5a2a035d8c1baee9a70eeb9c3711fab97857c875
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1dc09ecf603ac692e7f4eba8c0ab9776b20aa60f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139997835"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142204111"
 ---
 # Update-AzStaticWebAppUser
 
 ## SYNOPSIS
-Deskripsi untuk Memperbarui entri pengguna dengan peran terdaftar
+Deskripsi untuk Memperbarui entri pengguna dengan peran yang tercantum
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/update-azstaticwebappuser) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,11 +36,11 @@ Update-AzStaticWebAppUser -InputObject <IWebsitesIdentity> [-Kind <String>] [-Ro
 ```
 
 ## DESCRIPTION
-Deskripsi untuk Memperbarui entri pengguna dengan peran terdaftar
+Deskripsi untuk Memperbarui entri pengguna dengan peran yang tercantum
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui entri pengguna dengan peran terdaftar
+### Contoh 1: Memperbarui entri pengguna dengan peran yang tercantum
 ```powershell
 PS C:\> Update-AzStaticWebAppUser -ResourceGroupName azure-rg-test -Name staticweb-portal01 -Authprovider 'github' -Userid 'fa4eba85fa9f4a42b5300dc4c7bb45aa' -Role 'contributor'
 
@@ -46,9 +49,9 @@ Kind Name                             Type
      fa4eba85fa9f4a42b5300dc4c7bb45aa Microsoft.Web/staticSites/users
 ```
 
-Perintah ini memperbarui entri pengguna dengan peran tercantum.
+Perintah ini memperbarui entri pengguna dengan peran yang tercantum.
 
-### Contoh 2: Memperbarui entri pengguna dengan peran tercantum menurut saluran
+### Contoh 2: Memperbarui entri pengguna dengan peran yang tercantum menurut saluran
 ```powershell
 PS C:\> Get-AzStaticWebAppUser -ResourceGroupName azure-rg-test -Name staticweb-portal01 -Authprovider 'all'  | Update-AzStaticWebAppUser -Role 'contributor'
 
@@ -58,7 +61,7 @@ Kind Name                             Type
      8bcf2cef5f3c4c8e9a58386d62bba7c3 Microsoft.Web/staticSites/users
 ```
 
-Perintah ini memperbarui entri pengguna dengan peran tercantum menurut saluran.
+Perintah ini memperbarui entri pengguna dengan peran yang tercantum menurut saluran.
 
 ## PARAMETERS
 
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Websites.Models.IWebsitesIdentity
@@ -107,7 +110,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Kind
+### -Jenis
 Jenis sumber daya.
 
 ```yaml
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat sumber daya tersebut berada.
+Nama grup sumber daya tempat sumber daya berada.
 
 ```yaml
 Type: System.String
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -Peran
-Peran untuk pengguna situs statis, dalam format string bebas
+Peran untuk pengguna situs statis, dalam format string bentuk bebas
 
 ```yaml
 Type: System.String
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -250,15 +253,15 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IWebsitesIdentity>: Parameter Identitas
-  - `[Authprovider <String>]`: Penyedia layanan auth untuk pengguna.
+  - `[Authprovider <String>]`: Penyedia auth untuk pengguna.
   - `[DomainName <String>]`: Nama domain kustom.
   - `[EnvironmentName <String>]`: Pengidentifikasi situs tahapan.
   - `[FunctionAppName <String>]`: Nama aplikasi fungsi yang terdaftar dengan build situs statis.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: Lokasi tempat Anda berencana membuat situs statis.
+  - `[Location <String>]`: Lokasi tempat Anda berencana untuk membuat situs statis.
   - `[Name <String>]`: Nama situs statis.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat sumber daya tersebut berada.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat sumber daya berada.
   - `[SubscriptionId <String>]`: ID langganan Azure Anda. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000).
   - `[Userid <String>]`: Id pengguna pengguna.
 

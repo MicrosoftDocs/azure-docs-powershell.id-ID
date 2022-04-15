@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Set-AzureBatchJobSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Set-AzureBatchJobSchedule.md
 ms.openlocfilehash: 5e26bd47c9c53b88442505aeb66d81a96c137b1a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428427"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142143178"
 ---
 # Set-AzureBatchJobSchedule
 
@@ -28,15 +28,15 @@ Set-AzureBatchJobSchedule [-JobSchedule] <PSCloudJobSchedule> -BatchContext <Bat
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureBatchJobSchedule** menetapkan jadwal pekerjaan dalam layanan Azure Batch.
+Cmdlet **Set-AzureBatchJobSchedule** mengatur jadwal pekerjaan dalam layanan Azure Batch.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -BatchContext
-Menentukan contoh **BatchAccountContext** yang digunakan cmdlet untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -51,7 +51,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 
 ### -JobSchedule
 Menentukan objek **PSCloudJobSchedule** yang mewakili jadwal pekerjaan.
-Untuk mendapatkan objek **PSCloudJobSchedule,** gunakan Get-AzureBatchJobSchedule cmdlet.
+Untuk mendapatkan objek **PSCloudJobSchedule** , gunakan cmdlet Get-AzureBatchJobSchedule.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSCloudJobSchedule
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -100,15 +100,15 @@ Parameter: BatchContext (ByValue)
 
 ## RELATED LINKS
 
-[Disable-AzureBatchJobSchedule](./Disable-AzureBatchJobSchedule.md)
+[Nonaktifkan-AzureBatchJobSchedule](./Disable-AzureBatchJobSchedule.md)
 
 [Enable-AzureBatchJobSchedule](./Enable-AzureBatchJobSchedule.md)
 
 [Get-AzureBatchJobSchedule](./Get-AzureBatchJobSchedule.md)
 
-[New-AzureBatchJobSchedule](./New-AzureBatchJobSchedule.md)
+[AzureBatchJobSchedule baru](./New-AzureBatchJobSchedule.md)
 
-[Remove-AzureBatchJobSchedule](./Remove-AzureBatchJobSchedule.md)
+[Hapus-AzureBatchJobSchedule](./Remove-AzureBatchJobSchedule.md)
 
 [Stop-AzureBatchJobSchedule](./Stop-AzureBatchJobSchedule.md)
 

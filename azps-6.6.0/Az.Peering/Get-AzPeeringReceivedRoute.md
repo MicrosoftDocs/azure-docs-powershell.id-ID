@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringReceivedRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringReceivedRoute.md
 ms.openlocfilehash: 2856a77ded9ce25431f7920738522372d0b47548
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140069165"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142226376"
 ---
 # Get-AzPeeringReceivedRoute
 
@@ -18,7 +18,7 @@ ms.locfileid: "140069165"
 Mencantumkan rute yang diterima untuk Peering.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.peering/get-azpeeringreceivedroute) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.peering/get-azpeeringreceivedroute) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Daftar rute yang diterima dari Peering
 
 ## EXAMPLES
 
-### Mencantumkan 100 rute teratas yang diterima untuk peering
+### Daftar 100 rute teratas yang diterima untuk peering
 ```powershell
 PS C:\> Get-AzPeeringReceivedRoute -ResourceGroupName $resourceGroupName -Name $peeringName
 ```
@@ -60,14 +60,14 @@ Mencantumkan semua rute yang diterima untuk peering dengan filter di AS
 PS C:\> Get-AzPeeringReceivedRoute -ResourceGroupName $resourceGroupName -Name $peeringName -RPKIValidationState "Valid"
 ```
 
-Mencantumkan semua rute yang diterima untuk peering dengan filter pada RPKIValidationState
+Mencantumkan semua rute yang diterima untuk peering dengan filter di RPKIValidationState
 
 ### Filter menurut OriginAsValidationState
 ```powershell
 PS C:\> Get-AzPeeringReceivedRoute -ResourceGroupName $resourceGroupName -Name $peeringName -OriginAsValidationState "Valid"
 ```
 
-Mencantumkan semua rute yang diterima untuk peering dengan filter pada OriginAsValidationState
+Mencantumkan semua rute yang diterima untuk peering dengan filter di OriginAsValidationState
 
 ## PARAMETERS
 
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginAsValidationState
-Filter menurut asal status validasi AS.
+Filter menurut status validasi AS asal.
 
 ```yaml
 Type: System.String
@@ -132,7 +132,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Prefix
+### -Prefiks
 Filter menurut prefiks.
 
 ```yaml
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Buat atau gunakan nama grup sumber daya yang sudah ada.
+Membuat atau menggunakan nama grup sumber daya yang sudah ada.
 
 ```yaml
 Type: System.String
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Get-AzIoTDeviceProvisioningServiceRegistration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Get-AzIoTDeviceProvisioningServiceRegistration.md
 ms.openlocfilehash: 80234ff78830303ff9f87038ee68bc5421cb9cf1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140255599"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141957255"
 ---
 # Get-AzIoTDeviceProvisioningServiceRegistration
 
 ## SYNOPSIS
-Dapatkan status pendaftaran perangkat.
+Dapatkan status registrasi perangkat.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.deviceprovisioningservices/get-aziotdeviceprovisioningserviceregistration) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.deviceprovisioningservices/get-aziotdeviceprovisioningserviceregistration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Get-AzIoTDeviceProvisioningServiceRegistration [-ResourceId] <String> [-Registra
 ```
 
 ## DESCRIPTION
-Dapatkan status registrasi perangkat atau status pendaftaran perangkat di bawah grup pendaftaran dalam Layanan Penyediaan Perangkat Azure IoT Hub.
+Dapatkan status pendaftaran perangkat atau status pendaftaran perangkat di bawah pendaftaranGroup dalam Layanan Penyediaan Perangkat Azure IoT Hub.
 
 ## EXAMPLES
 
@@ -59,7 +59,7 @@ Dapatkan detail status pendaftaran perangkat dalam Layanan Penyediaan Perangkat 
 PS C:\> Get-AzIoTDeviceProvisioningServiceRegistration -ResourceGroupName "myresourcegroup" -DpsName "mydps" -EnrollmentId "grp-enroll1"
 ```
 
-Daftarkan semua status pendaftaran perangkat dalam grup pendaftaran ini.
+Cantumkan semua status pendaftaran perangkat dalam pendaftaran iniGroup.
 
 ## PARAMETERS
 
@@ -78,7 +78,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ServerName
+### -DpsName
 Nama Layanan Penyediaan Perangkat IoT
 
 ```yaml
@@ -93,7 +93,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Object
+### -DpsObject
 Objek Layanan Penyediaan Perangkat IoT
 
 ```yaml
@@ -108,7 +108,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -EnrollmentId
+### -Id Pendaftaran
 ID grup pendaftaran.
 
 ```yaml
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Query
-Kueri sql.
+Kueri Sql.
 
 ```yaml
 Type: System.String
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistrationId
-ID registrasi perangkat.
+ID pendaftaran perangkat.
 
 ```yaml
 Type: System.String
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Layanan Penyediaan Perangkat Iot
+Id Sumber Daya Layanan Penyediaan Perangkat IoT
 
 ```yaml
 Type: System.String
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

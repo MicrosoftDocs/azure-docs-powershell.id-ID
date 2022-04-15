@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/Get-AzureRmRecoveryServicesBackupRetentionPolicyObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/Get-AzureRmRecoveryServicesBackupRetentionPolicyObject.md
 ms.openlocfilehash: 83eeeec861452407dae1a9d92e5bc900b98d6512
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428187"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142136381"
 ---
 # Get-AzureRmRecoveryServicesBackupRetentionPolicyObject
 
@@ -29,9 +29,9 @@ Get-AzureRmRecoveryServicesBackupRetentionPolicyObject [-WorkloadType] <Workload
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmRecoveryServicesBackupRetentionPolicyObject** mendapatkan cmdlet **dasar AzureRMRecoveryServicesRetentionPolicyObject**.
-Objek ini tidak tetap ada dalam sistem.
-Objek ini adalah objek sementara yang dapat Anda manipulasi dan gunakan dengan cmdlet New-AzureRmRecoveryServicesBackupProtectionPolicy untuk membuat kebijakan pencadangan baru.
+Cmdlet **Get-AzureRmRecoveryServicesBackupRetentionPolicyObject** mendapatkan basis **AzureRMRecoveryServicesRetentionPolicyObject**.
+Obyek ini tidak tetap ada dalam sistem.
+Ini adalah objek sementara yang dapat Anda manipulasi dan gunakan dengan cmdlet New-AzureRmRecoveryServicesBackupProtectionPolicy untuk membuat kebijakan cadangan baru.
 
 ## EXAMPLES
 
@@ -43,9 +43,9 @@ PS C:\> $SchPol = Get-AzureRmRecoveryServicesBackupSchedulePolicyObject -Workloa
 PS C:\> New-AzureRmRecoveryServicesBackupProtectionPolicy -Name "NewPolicy" -WorkloadType AzureVM -RetentionPolicy $RetPol -SchedulePolicy $SchPol
 ```
 
-Perintah pertama mendapatkan objek kebijakan penyimpanan, lalu menyimpannya di $RetPol penyimpanan.
-Perintah kedua mengatur durasi untuk objek kebijakan penyimpanan ke 365 hari.
-Perintah ketiga mendapatkan objek kebijakan jadwal, lalu menyimpannya di $SchPol variabel.
+Perintah pertama mendapatkan objek kebijakan penyimpanan, lalu menyimpannya dalam variabel $RetPol.
+Perintah kedua mengatur durasi untuk objek kebijakan penyimpanan menjadi 365 hari.
+Perintah ketiga mendapatkan objek kebijakan jadwal, lalu menyimpannya dalam variabel $SchPol.
 Perintah terakhir membuat kebijakan proteksi cadangan menggunakan kebijakan penyimpanan dan kebijakan jadwal yang dibuat dengan perintah sebelumnya.
 
 ## PARAMETERS
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -106,11 +106,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

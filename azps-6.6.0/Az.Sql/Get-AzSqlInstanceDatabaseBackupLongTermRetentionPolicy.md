@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy.md
 ms.openlocfilehash: b931a4d6dc8c9fff50763a5336cb44fdd5c3894d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140480199"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141948273"
 ---
 # Get-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "140480199"
 Mendapatkan kebijakan penyimpanan jangka panjang database terkelola
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlinstancedatabasebackuplongtermretentionpolicy) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlinstancedatabasebackuplongtermretentionpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,8 +29,8 @@ Get-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy [-InstanceName] <String> 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy** mendapatkan kebijakan penyimpanan jangka panjang yang didaftarkan ke database yang dikelola ini.
-Kebijakan tersebut adalah sumber daya Azure Backup yang digunakan untuk menentukan kebijakan penyimpanan cadangan.
+Cmdlet **Get-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy** mendapatkan kebijakan penyimpanan jangka panjang yang didaftarkan ke database terkelola ini.
+Kebijakan ini merupakan sumber daya Azure Backup yang digunakan untuk menentukan kebijakan penyimpanan cadangan.
 
 ## EXAMPLES
 
@@ -49,12 +49,12 @@ WeekOfYear          : 0
 Location            :
 ```
 
-Mendapatkan versi saat ini dari kebijakan penyimpanan jangka panjang untuk database
+Mendapatkan versi kebijakan penyimpanan jangka panjang untuk database saat ini
 
 ## PARAMETERS
 
 ### -DatabaseName
-Nama Database Terkelola Azure yang akan digunakan.
+Nama Database Terkelola Azure untuk digunakan.
 
 ```yaml
 Type: System.String
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-Nama Instans Terkelola Azure tempat database dimiliki.
+Nama Instans Terkelola Azure tempat database berada.
 
 ```yaml
 Type: System.String
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -165,4 +165,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy](./Set-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

@@ -6,16 +6,19 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/restore
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Restore-AzWebAppBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Restore-AzWebAppBackup.md
-ms.openlocfilehash: 9b942d56fe3d79d6cdb36b193214c854b4d7dfab
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 8d99297b2a53ba6e4969cc3a30c31ccea433014f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139997852"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142204219"
 ---
 # Restore-AzWebAppBackup
 
 ## SYNOPSIS
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/restore-azwebappbackup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,11 +47,11 @@ Cmdlet **Restore-AzWebAppBackup** memulihkan Cadangan Azure Web App.
 PS C:\> Restore-AzWebAppBackup -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -StorageAccountUrl "https://storageaccount.file.core.windows.net" -BlobName "myBlob"
 ```
 
-Memulihkan cadangan aplikasi tertentu ContosoWebApp yang ada di dalam grup sumber daya Default-Web-WestUS di blob "myBlob" yang terletak di https://storageaccount.file.core.windows.net
+Memulihkan cadangan aplikasi tertentu ContosoWebApp yang berada dalam grup sumber daya Default-Web-WestUS dalam blob "myBlob" yang terletak di https://storageaccount.file.core.windows.net
 
 ### Contoh 2
 
-Cmdlet Restore-AzWebAppBackup memulihkan Cadangan Azure Web App. (otomatisgenerated)
+Cmdlet Restore-AzWebAppBackup memulihkan Cadangan Azure Web App. (autogenerasi)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Restore-AzWebAppBackup -BlobName 'myBlob' -Name 'ContosoWebApp' -Overwrite -ResourceGroupName 'Default-Web-WestUS' -StorageAccountUrl 'https://storageaccount.file.core.windows.net'
@@ -57,7 +60,7 @@ Restore-AzWebAppBackup -BlobName 'myBlob' -Name 'ContosoWebApp' -Overwrite -Reso
 ## PARAMETERS
 
 ### -AppServicePlan
-Nama Paket Layanan Aplikasi untuk aplikasi yang dipulihkan. Jika dibiarkan kosong, Paket Layanan Aplikasi saat ini digunakan.
+Nama paket App Service untuk aplikasi yang dipulihkan. Jika dibiarkan kosong, Paket App Service aplikasi saat ini digunakan.
 
 ```yaml
 Type: System.String
@@ -86,7 +89,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Database
+### -Databases
 Database tipe DatabaseBackupSetting[]
 
 ```yaml
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -IgnoreConflictingHostNames
-Abaikan Opsi Nama Host yang Berkonflik
+Opsi Abaikan Nama Host yang Berkonflik
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -146,7 +149,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Overwrite
+### -Timpa
 Opsi Timpa
 
 ```yaml
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountUrl
-Url Akun Storage Baru
+URL Akun Storage
 
 ```yaml
 Type: System.String
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -232,7 +235,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Management.Automation.SwitchParameter
 
-### Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## OUTPUTS
 

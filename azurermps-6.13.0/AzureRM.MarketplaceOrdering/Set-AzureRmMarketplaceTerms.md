@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.marke
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/MarketplaceOrdering/Commands.MarketplaceOrdering/help/Set-AzureRmMarketplaceTerms.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/MarketplaceOrdering/Commands.MarketplaceOrdering/help/Set-AzureRmMarketplaceTerms.md
-ms.openlocfilehash: 04a8169df15a28749d57f5a02cb717fa0377260140918ba704842ce0140d029c
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 7932a733fcd672d8ee92e6452765745281ee0a2f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140860637"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142139711"
 ---
 # Set-AzureRmMarketplaceTerms
 
 ## SYNOPSIS
-Terima atau tolak persyaratan untuk publisher id(Publisher), offer id(Product) dan plan id(Name) yang diberikan. Silakan gunakan Get-AzureRmMarketplaceTerms untuk mendapatkan ketentuan perjanjian.
+Menerima atau menolak ketentuan untuk id penerbit tertentu(Publisher), id penawaran(Produk) dan id rencana(Nama). Silakan gunakan Get-AzureRmMarketplaceTerms untuk mendapatkan ketentuan perjanjian.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -48,7 +48,7 @@ Set-AzureRmMarketplaceTerms [-Reject] [-InputObject] <PSAgreementTerms>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmMarketplaceTerms** menyimpan objek istilah untuk objek publisher id(Publisher), offer id(Product) dan plan id(Name) tuple tertentu.
+Cmdlet **Set-AzureRmMarketplaceTerms** menyimpan objek persyaratan untuk rangkap id(Publisher) penerbit tertentu, id penawaran(Produk) dan id rencana(Nama).
 
 ## EXAMPLES
 
@@ -59,7 +59,7 @@ PS C:\> Get-AzureRmMarketplaceTerms -Publisher "microsoft-ads" -Product "windows
 ```
 
 ### Contoh 2
-Atur perjanjian penerbit ke 'Terima'. Dapatkan nilai untuk parameter 'Terms' dari cmdlet 'Get-AzureRmMarketplaceTerms'
+Atur perjanjian penerbit ke 'Terima'. Dapatkan nilai untuk parameter 'Persyaratan' dari cmdlet 'Get-AzureRmMarketplaceTerms'
 ```
 PS C:\> Set-AzureRmMarketplaceTerms -Publisher "microsoft-ads" -Product "windows-data-science-vm" -Name "windows2016" -Terms $agreementTerms -Accept
 ```
@@ -68,7 +68,7 @@ PS C:\> Set-AzureRmMarketplaceTerms -Publisher "microsoft-ads" -Product "windows
 ## PARAMETERS
 
 ### -Terima
-Proses ini harus diterima sesuai ketentuan hukum.
+Berikan ini untuk menerima ketentuan hukum.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Terms yang dikembalikan Get-AzureRmMarketplaceTerms cmdlet. This is a mandatory parameter if Accepted paramter is true.
+Objek istilah yang dikembalikan dalam cmdlet Get-AzureRmMarketplaceTerms. Ini adalah parameter wajib jika paramter yang diterima adalah benar.
 
 ```yaml
 Type: Microsoft.Azure.Commands.MarketplaceOrdering.Models.PSAgreementTerms
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Rencanakan string pengidentifikasi gambar yang sedang digunakan.
+String gambar pengidentifikasi rencana sedang digunakan.
 
 ```yaml
 Type: System.String
@@ -127,8 +127,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Product
-Menawarkan string pengidentifikasi gambar yang sedang digunakan.
+### -Produk
+Menawarkan string gambar pengidentifikasi yang sedang digunakan.
 
 ```yaml
 Type: System.String
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -Publisher
-Publisher pengidentifikasi string gambar yang sedang digunakan.
+Publisher string pengidentifikasi gambar yang sedang digunakan.
 
 ```yaml
 Type: System.String
@@ -157,8 +157,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Reject
-Lewati langkah ini untuk menolak syarat hukum.
+### -Tolak
+Berikan ini untuk menolak ketentuan hukum.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,8 +172,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Ketentuan
-Objek Terms yang dikembalikan Get-AzureRmMarketplaceTerms cmdlet. This is a mandatory parameter if Accepted paramter is true.
+### -Persyaratan
+Objek istilah yang dikembalikan dalam cmdlet Get-AzureRmMarketplaceTerms. Ini adalah parameter wajib jika paramter yang diterima adalah benar.
 
 ```yaml
 Type: Microsoft.Azure.Commands.MarketplaceOrdering.Models.PSAgreementTerms
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

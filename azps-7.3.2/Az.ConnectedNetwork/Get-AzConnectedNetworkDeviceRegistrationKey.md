@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectednetwork
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/Get-AzConnectedNetworkDeviceRegistrationKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/Get-AzConnectedNetworkDeviceRegistrationKey.md
-ms.openlocfilehash: dfb888907755f36bf07764bf5e28f829c3a2eea8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: fab0e978cb069d1dc622adddd6c88c63edd4ed0b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140545062"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142036289"
 ---
 # Get-AzConnectedNetworkDeviceRegistrationKey
 
 ## SYNOPSIS
-Buat daftar kunci pendaftaran untuk perangkat tersebut.
+Cantumkan kunci registrasi untuk perangkat.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.connectednetwork/get-azconnectednetworkdeviceregistrationkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzConnectedNetworkDeviceRegistrationKey -DeviceName <String> -ResourceGroupN
 ```
 
 ## DESCRIPTION
-Buat daftar kunci pendaftaran untuk perangkat tersebut.
+Cantumkan kunci registrasi untuk perangkat.
 
 ## EXAMPLES
 
@@ -36,18 +39,18 @@ PS C:\> Get-AzConnectedNetworkDeviceRegistrationKey -DeviceName myMecDevice -Res
 eyJNZWNEZXZpY2VUcmFuc2llbnRBdXRoS2V5IjoiMTIzNCIsIk1lY0RldmljZUF1dGhLZXlTdGFydFRpbWUiOiIyMDIxLTExLTIyVDA5OjQ2OjQwLjY0ODExOTFaIiwiU2VydmljZUJ1c1F1ZXVlTmFtZSI6ImFiY2QtMTIzNCIsIkFBREVuZHBvaW50IjpudWxsLCJBQURBdWRpZW5jZSI6bnVsbCwiQXJtUmVzb3VyY2VJZCI6bnVsbCwiTWVjQ29udHJvbGxlckVuZHBvaW50IjoiaHR0cHM6Ly93ZXN0Y2VudHJhbHVzLXByb2QubWVjZGV2aWNlLmF6dXJlLmNvbTo0NDMiLCJEYmVEZXZpY2VJZCI6bnVsbCwiUmVzb3VyY2VVbmlxdWVJZCI6IjEyMy1hYmMtMTIzIiwiU3Vic2NyaXB0aW9uSWQiOiJ4eHh4LTEyMzQteHh4eC0xMjM0IiwiUmVzb3VyY2VHcm91cE5hbWUiOiJzYW1wbGVSR25hbWUiLCJQcm92aWRlck5hbWVzcGFjZSI6Ik1pY3Jvc29mdC5IeWJyaWROZXR3b3JrIiwiUmVzb3VyY2VUeXBlIjoiRGV2aWNlcyIsIlJlc291cmNlVHlwZU5hbWUiOiJJREMtRGV2aWNlNC1XZXN0Q2VudHJhbCJ9
 ```
 
-Mendapatkan kunci registrasi untuk perangkat NFM di grup sumber daya myResources dengan nama sumber daya myMecDevice.
-Untuk mendaftarkan perangkat, gunakan commandlet Invoke-MecRegister dengan kunci pendaftaran di sesi minishell.
+Mendapatkan kunci pendaftaran untuk perangkat NFM dalam grup sumber daya myResources dengan nama sumber daya myMecDevice.
+Untuk mendaftarkan perangkat, gunakan commandlet Invoke-MecRegister dengan kunci pendaftaran dalam sesi minishell.
 
-### Contoh 2: Get-AzConnectedNetworkDeviceRegistrationKey Grup Sumber Daya, Nama sumber daya, dan Id Langganan
+### Contoh 2: Get-AzConnectedNetworkDeviceRegistrationKey menggunakan Grup Sumber Daya, Nama sumber daya dan Id Langganan
 ```powershell
 PS C:\> Get-AzConnectedNetworkDeviceRegistrationKey -DeviceName myMecDevice -ResourceGroupName myResources -SubscriptionId xxxxx-00000-xxxxx-00000
 
 eyJNZWNEZXZpY2VUcmFuc2llbnRBdXRoS2V5IjoiMTIzNCIsIk1lY0RldmljZUF1dGhLZXlTdGFydFRpbWUiOiIyMDIxLTExLTIyVDA5OjQ2OjQwLjY0ODExOTFaIiwiU2VydmljZUJ1c1F1ZXVlTmFtZSI6ImFiY2QtMTIzNCIsIkFBREVuZHBvaW50IjpudWxsLCJBQURBdWRpZW5jZSI6bnVsbCwiQXJtUmVzb3VyY2VJZCI6bnVsbCwiTWVjQ29udHJvbGxlckVuZHBvaW50IjoiaHR0cHM6Ly93ZXN0Y2VudHJhbHVzLXByb2QubWVjZGV2aWNlLmF6dXJlLmNvbTo0NDMiLCJEYmVEZXZpY2VJZCI6bnVsbCwiUmVzb3VyY2VVbmlxdWVJZCI6IjEyMy1hYmMtMTIzIiwiU3Vic2NyaXB0aW9uSWQiOiJ4eHh4LTEyMzQteHh4eC0xMjM0IiwiUmVzb3VyY2VHcm91cE5hbWUiOiJzYW1wbGVSR25hbWUiLCJQcm92aWRlck5hbWVzcGFjZSI6Ik1pY3Jvc29mdC5IeWJyaWROZXR3b3JrIiwiUmVzb3VyY2VUeXBlIjoiRGV2aWNlcyIsIlJlc291cmNlVHlwZU5hbWUiOiJJREMtRGV2aWNlNC1XZXN0Q2VudHJhbCJ9
 ```
 
-Mendapatkan kunci registrasi untuk perangkat NFM di grup sumber daya myResources dengan nama sumber daya myMecDevice.
-Untuk mendaftarkan perangkat, gunakan commandlet Invoke-MecRegister dengan kunci pendaftaran di sesi minishell.
+Mendapatkan kunci pendaftaran untuk perangkat NFM dalam grup sumber daya myResources dengan nama sumber daya myMecDevice.
+Untuk mendaftarkan perangkat, gunakan commandlet Invoke-MecRegister dengan kunci pendaftaran dalam sesi minishell.
 
 ## PARAMETERS
 
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

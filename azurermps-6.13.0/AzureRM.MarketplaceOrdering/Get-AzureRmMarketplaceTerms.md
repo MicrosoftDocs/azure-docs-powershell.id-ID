@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.marke
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/MarketplaceOrdering/Commands.MarketplaceOrdering/help/Get-AzureRmMarketplaceTerms.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/MarketplaceOrdering/Commands.MarketplaceOrdering/help/Get-AzureRmMarketplaceTerms.md
-ms.openlocfilehash: c8768fa0642ad49e5d1570f666e8f185f02ca46977e0e2807a99eb49051ff5cd
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: f23912ed21105015e69b94b27c5c5cc7899ed044
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140850584"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142139714"
 ---
 # Get-AzureRmMarketplaceTerms
 
 ## SYNOPSIS
-Dapatkan persyaratan perjanjian untuk publisher id(Publisher), offer id(Product) dan plan id(Name) yang diberikan. Objek istilah yang dikembalikan oleh perintah ini harus disampaikan ke Set-AzureRmMarketplaceTerms menerima persyaratan hukum.
+Dapatkan ketentuan perjanjian untuk id penerbit tertentu(Publisher), id penawaran(Produk) dan id rencana(Nama). Objek istilah yang dikembalikan oleh perintah ini harus dialihkan ke Set-AzureRmMarketplaceTerms untuk menerima ketentuan hukum.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Get-AzureRmMarketplaceTerms -Publisher <String> -Product <String> -Name <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmMarketplaceTerms** mengembalikan persyaratan untuk tupel publisher id(Publisher), offer id(Product) dan plan id(Name) tertentu.
+Cmdlet **Get-AzureRmMarketplaceTerms** mengembalikan persyaratan untuk rangkap id(Publisher) penerbit tertentu, id penawaran(Produk) dan id rencana(Nama).
 
 ## EXAMPLES
 
@@ -47,7 +47,7 @@ RetrieveDatetime  : <RetrieveDatetime>
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Rencanakan string pengidentifikasi gambar yang sedang digunakan.
+String gambar pengidentifikasi rencana sedang digunakan.
 
 ```yaml
 Type: System.String
@@ -76,8 +76,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Product
-Menawarkan string pengidentifikasi gambar yang sedang digunakan.
+### -Produk
+Menawarkan string gambar pengidentifikasi yang sedang digunakan.
 
 ```yaml
 Type: System.String
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Publisher
-Publisher pengidentifikasi string gambar yang sedang digunakan.
+Publisher string pengidentifikasi gambar yang sedang digunakan.
 
 ```yaml
 Type: System.String
@@ -107,11 +107,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

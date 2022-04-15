@@ -6,18 +6,18 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.media
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Media/Commands.Media/help/Get-AzureRmMediaServiceNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Media/Commands.Media/help/Get-AzureRmMediaServiceNameAvailability.md
-ms.openlocfilehash: 8d061604b5d5b1c4848c8d2f3152c8a25b937802f072bfa8cc846f52039e0a35
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 8de8b9f389f8d57d844c17d92dd492390fbf1884
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418225"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142139712"
 ---
 # Get-AzureRmMediaServiceNameAvailability
 
 ## SYNOPSIS
 Memeriksa apakah nama layanan media tersedia.
-Nama layanan media ber unik secara global.
+Nama layanan media unik secara global.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -30,7 +30,7 @@ Get-AzureRmMediaServiceNameAvailability [-DefaultProfile <IAzureContextContainer
 
 ## DESCRIPTION
 Cmdlet **Get-AzureRmMediaServiceNameAvailability** memeriksa apakah nama layanan media tersedia.
-Nama layanan media ber unik secara global.
+Nama layanan media unik secara global.
 
 ## EXAMPLES
 
@@ -43,8 +43,8 @@ Perintah ini memeriksa apakah nama MediaService1 tersedia.
 
 ## PARAMETERS
 
-### -Nama Akun
-Menentukan nama layanan media yang akan didaurkan cmdlet ini.
+### -AccountName
+Menentukan nama layanan media yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -74,11 +74,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -90,9 +90,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmMediaService](./Get-AzureRmMediaService.md)
 
-[New-AzureRmMediaService](./New-AzureRmMediaService.md)
+[Baru-AzureRmMediaService](./New-AzureRmMediaService.md)
 
-[Remove-AzureRmMediaService](./Remove-AzureRmMediaService.md)
+[Hapus-AzureRmMediaService](./Remove-AzureRmMediaService.md)
 
 [Set-AzureRmMediaService](./Set-AzureRmMediaService.md)
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/Get-AzElasticTagRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/Get-AzElasticTagRule.md
 ms.openlocfilehash: f25fccc141f81d37ebbc10c20b29e79ce60920a4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140255401"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141956859"
 ---
 # Get-AzElasticTagRule
 
 ## SYNOPSIS
-Mendapatkan kumpulan aturan tag untuk sumber daya monitor tertentu.
+Dapatkan kumpulan aturan tag untuk sumber daya monitor tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.elastic/get-azelastictagrule) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.elastic/get-azelastictagrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,11 +34,11 @@ Get-AzElasticTagRule -InputObject <IElasticIdentity> [-DefaultProfile <PSObject>
 ```
 
 ## DESCRIPTION
-Mendapatkan kumpulan aturan tag untuk sumber daya monitor tertentu.
+Dapatkan kumpulan aturan tag untuk sumber daya monitor tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan kumpulan aturan tag untuk sumber daya monitor tertentu
+### Contoh 1: Dapatkan kumpulan aturan tag untuk sumber daya monitor tertentu
 ```powershell
 PS C:\> Get-AzElasticTagRule -ResourceGroupName azure-elastic-test -MonitorName elastic-pwsh02
 
@@ -49,7 +49,7 @@ default Succeeded         azure-elastic-test
 
 Perintah ini mendapatkan kumpulan aturan tag untuk sumber daya monitor tertentu.
 
-### Contoh 2: Dapatkan kumpulan aturan tag untuk sumber daya monitor menurut saluran
+### Contoh 2: Dapatkan kumpulan aturan tag untuk sumber daya monitor tertentu menurut pipeline
 ```powershell
 PS C:\> New-AzElasticTagRule -ResourceGroupName azps-elastic-test -MonitorName elastic-pwsh02 | Get-AzElasticTagRule
 
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Elastic.Models.IElasticIdentity
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonitorName
-Memantau nama sumber daya
+Pantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat sumber daya Elastis dimiliki.
+Nama grup sumber daya tempat sumber daya Elastis berada.
 
 ```yaml
 Type: System.String
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 ID langganan Azure.
-Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-00000000000)
+Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
 
 ```yaml
 Type: System.String[]
@@ -139,15 +139,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Elastis.Models.IElasticIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.Elastic.Models.IElasticIdentity
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Elastis.Models.Api20200701.IMonitoringTagRules
+### Microsoft.Azure.PowerShell.Cmdlets.Elastic.Models.Api20200701.IMonitoringTagRules
 
 ## CATATAN
 
@@ -161,9 +161,9 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <IElasticIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat sumber daya Elastis dimiliki.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat sumber daya Elastis berada.
   - `[RuleSetName <String>]`: Nama sumber daya Kumpulan Aturan Tag
-  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-00000000000)
+  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
 
 ## RELATED LINKS
 

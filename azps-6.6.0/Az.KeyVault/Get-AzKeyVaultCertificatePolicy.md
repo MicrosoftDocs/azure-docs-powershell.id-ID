@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultCertificatePolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultCertificatePolicy.md
 ms.openlocfilehash: e8d0f7a6c216e4d2267be97eb97c03734dfdb980
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140503167"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142231363"
 ---
 # Get-AzKeyVaultCertificatePolicy
 
 ## SYNOPSIS
-Mendapatkan kebijakan untuk sertifikat di kunci vault.
+Mendapatkan kebijakan untuk sertifikat dalam kubah kunci.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultcertificatepolicy) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultcertificatepolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,11 +36,11 @@ Get-AzKeyVaultCertificatePolicy [-InputObject] <PSKeyVaultCertificateIdentityIte
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzKeyVaultCertificatePolicy** mendapatkan kebijakan untuk sertifikat di kunci vault di Azure Key Vault.
+Cmdlet **Get-AzKeyVaultCertificatePolicy** mendapatkan kebijakan untuk sertifikat dalam kubah kunci di Azure Key Vault.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan kebijakan sertifikat
+### Contoh 1: Dapatkan kebijakan sertifikat
 ```powershell
 PS C:\ >Get-AzKeyVaultCertificatePolicy -VaultName "ContosoKV01" -Name "TestCert01"
 
@@ -64,12 +64,12 @@ Created                         : 2/8/2016 11:10:29 PM
 Updated                         : 2/8/2016 11:10:29 PM
 ```
 
-Perintah ini mendapatkan kebijakan sertifikat untuk sertifikat TestCert01 dalam kunci vault ContosoVAULT01.
+Perintah ini mendapatkan kebijakan sertifikat untuk sertifikat TestCert01 dalam kubah kunci ContosoKV01.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Certificate Object.
+Objek Sertifikat.
 
 ```yaml
 Type: Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultCertificateIdentityItem
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kunci vault.
+Menentukan nama kubah kunci.
 
 ```yaml
 Type: System.String
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

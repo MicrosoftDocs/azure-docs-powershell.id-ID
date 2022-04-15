@@ -4,11 +4,11 @@ ms.assetid: B98FCF46-A5D6-4CC9-B82A-60B429A21A8B
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: edbca06719d41a407315398ceefda5ae030ec7b3
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428046"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142135696"
 ---
 # Remove-AzureVMExtension
 
@@ -32,14 +32,14 @@ Remove-AzureVMExtension [-ReferenceName] <String> -VM <IPersistentVM> [-Profile 
  [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
 ```
 
-### RemoveAll
+### Hapus Semua
 ```
 Remove-AzureVMExtension [-RemoveAll] -VM <IPersistentVM> [-Profile <AzureSMProfile>]
  [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureVMExtension** menghapus ekstensi sumber daya dari komputer virtual.
+Cmdlet **Remove-AzureVMExtension** menghapus ekstensi sumber daya dari mesin virtual.
 
 ## EXAMPLES
 
@@ -48,14 +48,14 @@ Cmdlet **Remove-AzureVMExtension** menghapus ekstensi sumber daya dari komputer 
 PS C:\> $VM = Remove-AzureVMExtension -VM $VM -ExtensionName $EXT -Publisher $PUB;
 ```
 
-Perintah ini akan menghapus ekstensi dengan nama dan penerbit yang ditentukan.
+Perintah ini menghapus ekstensi dengan nama dan penerbit yang ditentukan.
 
-### Contoh 2: Menghapus semua ekstensi dari komputer virtual tertentu
+### Contoh 2: Hapus semua ekstensi dari mesin virtual tertentu
 ```
 PS C:\> $VM = Remove-AzureVMExtension -VM $VM -RemoveAll;
 ```
 
-Perintah ini akan menghapus semua ekstensi dari komputer virtual tertentu seperti yang disimpan dalam variabel $VM.
+Perintah ini menghapus semua ekstensi dari mesin virtual tertentu seperti yang disimpan dalam variabel $VM.
 
 ## PARAMETERS
 
@@ -75,16 +75,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -114,8 +114,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemoveAll
-Mengindikasikan bahwa cmdlet ini menghapus semua ekstensi sumber daya dari komputer virtual.
+Menunjukkan bahwa cmdlet ini menghapus semua ekstensi sumber daya dari mesin virtual.
 
 ```yaml
 Type: SwitchParameter
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

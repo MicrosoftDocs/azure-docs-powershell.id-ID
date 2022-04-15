@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.search/get-azsea
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Get-AzSearchQueryKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Get-AzSearchQueryKey.md
-ms.openlocfilehash: 2434dcf3de06ec94a400b36703e9fc3976965293
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c1a07eab4f01408022a582c25734ffb38ae7d39b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140570457"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142209493"
 ---
 # Get-AzSearchQueryKey
 
 ## SYNOPSIS
-Mendapatkan kunci kueri dari layanan Pencarian Kognitif Azure.
+Mendapatkan kunci kueri dari layanan Azure Cognitive Search.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.search/get-azsearchquerykey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzSearchQueryKey [-ParentResourceId] <String> [-DefaultProfile <IAzureContex
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSearchQueryKey** mendapatkan kunci kueri dari layanan Pencarian Kognitif Azure.
+Cmdlet **Get-AzSearchQueryKey** mendapatkan kunci kueri dari layanan Azure Cognitive Search.
 
 ## EXAMPLES
 
@@ -51,7 +54,7 @@ Name Key
      896AA09C167541072D404E1BE0442CE9
 ```
 
-Contoh tersebut mendapatkan semua kunci kueri dari layanan Pencarian Kognitif Azure.
+Contoh ini mendapatkan semua kunci kueri layanan Azure Cognitive Search.
 
 ## PARAMETERS
 
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Objek Input Layanan Pencarian Kognitif Azure.
+Azure Cognitive Search Objek Input Layanan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Search.Models.PSSearchService
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentResourceId
-Id Sumber Daya Layanan Pencarian Kognitif Azure.
+Azure Cognitive Search Id Sumber Daya Layanan.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Nama Layanan Pencarian Kognitif Azure.
+Azure Cognitive Search Nama layanan.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
