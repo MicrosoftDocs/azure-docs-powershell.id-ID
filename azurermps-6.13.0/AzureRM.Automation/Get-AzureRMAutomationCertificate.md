@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRMAutomationCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRMAutomationCertificate.md
 ms.openlocfilehash: f68a7d29f71d51a25713310a1bf3288df316a34f
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132415002"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142390697"
 ---
 # Get-AzureRmAutomationCertificate
 
@@ -22,7 +22,7 @@ Mendapatkan sertifikat Otomatisasi.
 
 ## SYNTAX
 
-### SecaraSemua (Default)
+### ByAll (Default)
 ```
 Get-AzureRmAutomationCertificate [-ResourceGroupName] <String> [-AutomationAccountName] <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -41,14 +41,14 @@ Tentukan nama sertifikat untuk mendapatkan sertifikat tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua sertifikat
+### Contoh 1: Dapatkan semua sertifikat
 ```
 PS C:\>Get-AzureRmAutomationCertificate -ResourceGroupName "ResourceGroup07" -AutomationAccountName "Contoso17"
 ```
 
-Perintah ini mendapatkan metadata untuk semua sertifikat dalam akun Otomatisasi yang bernama Contoso17.
+Perintah ini mendapatkan metadata untuk semua sertifikat dalam akun Otomatisasi bernama Contoso17.
 
-### Contoh 2: Mendapatkan sertifikat
+### Contoh 2: Dapatkan sertifikat
 ```
 PS C:\>Get-AzureRmAutomationCertificate -ResourceGroupName "ResourceGroup07" -AutomationAccountName "Contoso17" -Name "ContosoCertificate"
 ```
@@ -58,7 +58,7 @@ Perintah ini mendapatkan metadata untuk sertifikat bernama ContosoCertificate.
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi di mana cmdlet ini mengambil sertifikat.
+Menentukan nama akun Otomatisasi tempat cmdlet ini mengambil sertifikat.
 
 ```yaml
 Type: System.String
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama sertifikat untuk diambil.
+Menentukan nama sertifikat yang akan diambil.
 
 ```yaml
 Type: System.String
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -132,9 +132,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmAutomationCertificate](./New-AzureRMAutomationCertificate.md)
+[AzureRmAutomation BaruPenerima](./New-AzureRMAutomationCertificate.md)
 
-[Remove-AzureRmAutomationCertificate](./Remove-AzureRMAutomationCertificate.md)
+[Hapus-AzureRmAutomationCertificate](./Remove-AzureRMAutomationCertificate.md)
 
 [Set-AzureRmAutomationCertificate](./Set-AzureRMAutomationCertificate.md)
 

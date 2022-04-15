@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.conta
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ContainerInstance/Commands.ContainerInstance/help/New-AzureRmContainerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ContainerInstance/Commands.ContainerInstance/help/New-AzureRmContainerGroup.md
-ms.openlocfilehash: 91d1d5d4a6afb5ca2382f139043868e60456bf411b816aaec84b8453c32a7729
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 1823759b72bdb3162164068732f3a8201fcfb589
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140854272"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142388990"
 ---
 # New-AzureRmContainerGroup
 
@@ -42,7 +42,7 @@ New-AzureRmContainerGroup [-ResourceGroupName] <String> [-Name] <String> [-Image
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmContainerGroup** membuat grup wadah.
+Cmdlet **AzureRmContainerGroup Baru** membuat grup wadah.
 
 ## EXAMPLES
 
@@ -68,7 +68,7 @@ State                    : Running
 Events                   : {}
 ```
 
-Perintah ini membuat grup kontainer menggunakan gambar nginx terbaru dan meminta alamat IP publik dengan membuka port 8000.
+Perintah ini membuat grup kontainer menggunakan gambar nginx terbaru dan meminta alamat IP publik dengan port pembukaan 8000.
 
 ### Contoh 2
 ```
@@ -92,9 +92,9 @@ State                    : Running
 Events                   : {}
 ```
 
-Perintah ini akan membuat grup wadah dan menjalankan skrip kustom dalam wadah.
+Perintah ini membuat grup wadah dan menjalankan skrip kustom di dalam wadah.
 
-### Contoh 3: Membuat grup wadah run-to-completion.
+### Contoh 3: Membuat grup kontainer run-to-completion.
 ```
 PS C:\> New-AzureRmContainerGroup -ResourceGroupName demo -Name mycontainer -Image alpine -OsType Linux -Command "echo hello" -RestartPolicy Never
 
@@ -116,7 +116,7 @@ State                    : Running
 Events                   : {}
 ```
 
-Perintah ini membuat grup wadah yang mencetak 'halo' dan perhentian.
+Perintah ini membuat grup wadah yang mencetak 'halo' dan berhenti.
 
 ### Contoh 4: Membuat grup wadah menggunakan gambar di Azure Container Registry
 ```
@@ -168,9 +168,9 @@ State                    : Running
 Events                   : {}
 ```
 
-Perintah ini membuat grup wadah menggunakan gambar kustom dari registri wadah gambar kustom.
+Perintah ini membuat grup wadah menggunakan gambar kustom dari registri gambar wadah kustom.
 
-### Contoh 6: Membuat grup wadah yang terpasang volume File Azure
+### Contoh 6: Membuat grup kontainer yang memasang volume File Azure
 ```
 PS C:\> $secpasswd = ConvertTo-SecureString "PlainTextPassword" -AsPlainText -Force
 PS C:\> $mycred = New-Object System.Management.Automation.PSCredential ("username", $secpasswd)
@@ -194,12 +194,12 @@ State                    : Running
 Events                   : {}
 ```
 
-Perintah ini membuat grup wadah yang memasang berbagi File Azure yang disediakan ke `/mnt/azfile`.
+Perintah ini membuat grup kontainer yang memasang berbagi File Azure yang disediakan ke `/mnt/azfile`.
 
 ## PARAMETERS
 
 ### -AzureFileVolumeAccountCredential
-Kredensial akun penyimpanan berbagi File Azure terpasang di tempat nama pengguna adalah nama akun penyimpanan dan kunci tersebut adalah kunci akun penyimpanan.
+Kredensial akun penyimpanan berbagi File Azure untuk dipasang di mana nama pengguna adalah nama akun penyimpanan dan kuncinya adalah kunci akun penyimpanan.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureFileVolumeMountPath
-Jalur naik untuk volume File Azure.
+Jalur kait untuk volume File Azure.
 
 ```yaml
 Type: System.String
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureFileVolumeShareName
-Nama berbagi File Azure yang terpasang.
+Nama berbagi File Azure untuk dikaitkan.
 
 ```yaml
 Type: System.String
@@ -275,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -305,7 +305,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnvironmentVariable
-Variabel lingkungan wadah.
+Variabel lingkungan kontainer.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -319,7 +319,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Image
+### -Gambar
 Gambar wadah.
 
 ```yaml
@@ -383,7 +383,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Wadah nama grup.
+Nama grup wadah.
 
 ```yaml
 Type: System.String
@@ -398,7 +398,7 @@ Accept wildcard characters: False
 ```
 
 ### -OsType
-Tipe OS wadah.
+Tipe OS kontainer.
 Default: Linux
 
 ```yaml
@@ -415,7 +415,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Port untuk dibuka. Default: [80]
+Porta yang akan dibuka. Default: [80]
 
 ```yaml
 Type: System.Int32[]
@@ -445,7 +445,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistryServerDomain
-Server masuk registri wadah kustom.
+Server masuk registri kontainer kustom.
 
 ```yaml
 Type: System.String
@@ -475,7 +475,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestartPolicy
-Kebijakan mulai ulang wadah. Default: Selalu
+Kebijakan mulai ulang kontainer. Default: Selalu
 
 ```yaml
 Type: System.String
@@ -506,7 +506,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -522,7 +522,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -537,7 +537,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
