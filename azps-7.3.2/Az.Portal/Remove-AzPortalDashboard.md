@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.portal/remove-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Portal/help/Remove-AzPortalDashboard.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Portal/help/Remove-AzPortalDashboard.md
-ms.openlocfilehash: 7f96b72da91fb78c22cf4755e7d9f6bc2594ffa3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 96d788f7df1571780a1435272d0b44a22c64c56c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140007114"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142343519"
 ---
 # Remove-AzPortalDashboard
 
 ## SYNOPSIS
 Menghapus Dasbor.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.portal/remove-azportaldashboard) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,14 +44,14 @@ Menghapus Dasbor.
 PS C:\td\> Remove-AzPortalDashboard -ResourceGroupName my-rg -DashboardName dashbase02
 ```
 
-Hapus Tanda Hubung menggunakan nama grup sumber daya dan nama dasbor.
+Hapus Dashbaord menggunakan nama grup sumber daya dan nama dasbor.
 
-### Contoh 2: Menghapus Dasbor menggunakan saluran
+### Contoh 2: Menghapus Dasbor menggunakan pipeline
 ```powershell
 PS C:\> Get-AzPortalDashboard -ResourceGroupName my-rg -DashboardName dashbase02 | Remove-AzPortalDashboard
 ```
 
-Hapus dasbor yang dikembalikan dari Get-AzDashboard panggilan.
+Hapus dasbor yang dikembalikan dari panggilan Get-AzDashboard.
 
 ## PARAMETERS
 
@@ -68,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Portal.Models.IPortalIdentity
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 ID langganan Azure.
-Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-00000000000)
+Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
 
 ```yaml
 Type: System.String
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -198,7 +201,7 @@ INPUTOBJECT <IPortalIdentity>: Parameter Identitas
   - `[DashboardName <String>]`: Nama dasbor.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
-  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-00000000000)
+  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
 
 ## RELATED LINKS
 

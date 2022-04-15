@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactoryV2/Commands.DataFactoryV2/help/Get-AzureRmDataFactoryV2TriggerRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactoryV2/Commands.DataFactoryV2/help/Get-AzureRmDataFactoryV2TriggerRun.md
 ms.openlocfilehash: caa3cd25db706a3d025ee439aebb6dbb5491f7d7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140852310"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142357906"
 ---
 # Get-AzureRmDataFactoryV2TriggerRun
 
@@ -36,11 +36,11 @@ Get-AzureRmDataFactoryV2TriggerRun [-Name] <String> [-TriggerRunStartedAfter] <D
 ```
 
 ## DESCRIPTION
-Perintah **Get-AzureRmDataFactoryV2TriggerRun** mengembalikan informasi mendetail tentang pemicu yang dijalankan untuk pemicu yang ditentukan dalam jangka waktu yang ditentukan.
+Perintah **Get-AzureRmDataFactoryV2TriggerRun** mengembalikan informasi mendetail tentang pemicu yang dijalankan untuk pemicu tertentu dalam jangka waktu tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan informasi tentang trigger run
+### Contoh 1: Dapatkan informasi tentang pemicu jalankan
 ```
 PS C:\> Get-AzureRmDataFactoryV2TriggerRun -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -TriggerName "WikiTrigger" -TriggerRunStartedAfter "2017-09-01" -TriggerRunStartedBefore "2019-09-30"
 
@@ -53,7 +53,7 @@ PS C:\> Get-AzureRmDataFactoryV2TriggerRun -ResourceGroupName "ADF" -DataFactory
     Status              : Succeeded
 ```
 
-Perintah ini memperlihatkan informasi tentang berjalan untuk "WikiTrigger" di pabrik "WikiADF" yang dimulai antara "2017-09-01" dan "2019-09-30".
+Perintah ini memperlihatkan informasi tentang jalankan untuk "WikiTrigger" di pabrik "WikiADF" yang dimulai antara "2017-09-01" dan "2019-09-30".
 
 ## PARAMETERS
 
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -132,8 +132,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -TriggerRunStartedAfter
-Waktu di atau setelahnya pemicu berjalan untuk dijalankan dalam format ISO8601.
+### -TriggerRunstartedAfter
+Waktu di atau setelah pemicu dijalankan mulai dijalankan dalam format ISO8601.
 
 ```yaml
 Type: System.DateTime
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -TriggerRunStartedBefore
-Waktu pada atau sebelum pemicu dijalankan mulai dijalankan dalam format ISO8601.
+Waktu di atau sebelum pemicu dijalankan mulai dijalankan dalam format ISO8601.
 
 ```yaml
 Type: System.DateTime
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

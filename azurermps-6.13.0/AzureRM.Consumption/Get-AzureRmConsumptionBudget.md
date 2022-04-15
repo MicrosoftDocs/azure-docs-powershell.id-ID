@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Consumption/Commands.Consumption/help/Get-AzureRmConsumptionBudget.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Consumption/Commands.Consumption/help/Get-AzureRmConsumptionBudget.md
 ms.openlocfilehash: 7793dfe2f5d83e0975a5a8c200d19b48d8c4d9f6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140867672"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142358557"
 ---
 # Get-AzureRmConsumptionBudget
 
 ## SYNOPSIS
-Dapatkan daftar anggaran dalam langganan atau grup sumber daya.
+Dapatkan daftar anggaran baik dalam langganan maupun grup sumber daya.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,11 +27,11 @@ Get-AzureRmConsumptionBudget [-DefaultProfile <IAzureContextContainer>] [-Resour
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzureRmConsumptionBudget cmdlet mendapatkan daftar anggaran dalam grup langganan atau sumber daya.
+Cmdlet Get-AzureRmConsumptionBudget mendapatkan daftar anggaran baik dalam langganan atau grup sumber daya.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan daftar anggaran di tingkat langganan
+### Contoh 1: Dapatkan daftar anggaran pada tingkat langganan
 ```powershell
 PS C:\> Get-AzureRmConsumptionBudget
 Amount:  60     
@@ -59,7 +59,7 @@ TimePeriod:  EndDate:  11/1/2018 12:00:00 AM
 Type:  Microsoft.Consumption/budgets
 ```
 
-### Contoh 3: Dapatkan anggaran dengan nama anggaran di tingkat langganan
+### Contoh 3: Dapatkan anggaran dengan nama anggaran pada tingkat langganan
 ```powershell
 PS C:\> Get-AzureRmConsumptionBudget -Name PSBudget
 Amount:  60     
@@ -135,11 +135,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

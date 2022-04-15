@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.datal
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeAnalytics/Commands.DataLakeAnalytics/help/Set-AzureRmDataLakeAnalyticsFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeAnalytics/Commands.DataLakeAnalytics/help/Set-AzureRmDataLakeAnalyticsFirewallRule.md
-ms.openlocfilehash: 808f588c8a29504be09ca212cb29e58907e89dcf279ea94b33926e432193c97c
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: b7140570ecf6464483d0dc7da67e10f8b4ed5d70
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140854974"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142357683"
 ---
 # Set-AzureRmDataLakeAnalyticsFirewallRule
 
@@ -28,7 +28,7 @@ Set-AzureRmDataLakeAnalyticsFirewallRule [-Account] <String> [-Name] <String> [[
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmDataLakeAnalyticsFirewallRule** memperbarui aturan firewall dalam akun Azure Data Lake Analytics.
+Cmdlet **Set-AzureRmDataLakeAnalyticsFirewallRule** memperbarui aturan firewall di akun Data Lake Analytics Azure.
 
 ## EXAMPLES
 
@@ -37,12 +37,12 @@ Cmdlet **Set-AzureRmDataLakeAnalyticsFirewallRule** memperbarui aturan firewall 
 PS C:\>Set-AzureRmDataLakeAnalyticsFirewallRule -Account "ContosoAdlAcct" -Name "My firewall rule" -StartIpAddress 127.0.0.1 -EndIpAddress 127.0.0.10
 ```
 
-Perintah ini memperbarui aturan firewall bernama "aturan firewall saya" dalam akun "ContosoAdlAcct" untuk memiliki rentang IP baru: 127.0.0.1 - 127.0.0.10
+Perintah ini memperbarui aturan firewall bernama "my firewall rule" dalam akun "ContosoAdlAcct" agar memiliki rentang IP baru: 127.0.0.1 - 127.0.0.10
 
 ## PARAMETERS
 
 ### -Akun
-Akun Analitik Danau Data untuk memperbarui aturan firewall dalam
+Akun Data Lake Analytics untuk memperbarui aturan firewall di
 
 ```yaml
 Type: System.String
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactories/Commands.DataFactories/help/Set-AzureRmDataFactorySliceStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactories/Commands.DataFactories/help/Set-AzureRmDataFactorySliceStatus.md
 ms.openlocfilehash: ce1d81fc0226c7c44682d67cb666e3e63dfd5816
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420361"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142358380"
 ---
 # Set-AzureRmDataFactorySliceStatus
 
 ## SYNOPSIS
-Mengatur status potongan untuk kumpulan data di Azure Data Factory.
+Mengatur status irisan untuk kumpulan data dalam Azure Data Factory.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -37,26 +37,26 @@ Set-AzureRmDataFactorySliceStatus [[-EndDateTime] <DateTime>] [-Status] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmDataFactorySgroupStatus** mengatur status potongan untuk kumpulan data di Azure Data Factory.
+Cmdlet **Set-AzureRmDataFactorySliceStatus** mengatur status irisan untuk kumpulan data di Azure Data Factory.
 
 ## EXAMPLES
 
-### Contoh 1: Atur status dari semua potongan
+### Contoh 1: Mengatur status semua irisan
 ```
 PS C:\>Set-AzureRmDataFactorySliceStatus -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -DatasetName "DAWikiAggregatedData" -StartDateTime 2014-05-21T16:00:00Z -EndDateTime 2014-05-21T20:00:00Z -Status "Waiting" -UpdateType "UpstreamInPipeline"
 True
 ```
 
-Perintah ini mengatur status semua potongan untuk kumpulan data yang bernama DAWikiAggregatedData menjadi Menunggu di pabrik data bernama WikiADF.
-Parameter *UpdateType* memiliki nilai UpstreamInPipeline, sehingga perintah mengatur status setiap potongan untuk kumpulan data dan semua kumpulan data dependen.
-Set data dependen digunakan sebagai set data input untuk aktivitas dalam saluran.
-Perintah ini mengembalikan nilai dari $True.
+Perintah ini mengatur status semua irisan untuk kumpulan data bernama DAWikiAggregatedData menjadi Menunggu di pabrik data bernama WikiADF.
+Parameter *UpdateType* memiliki nilai UpstreamInPipeline, sehingga perintah mengatur status setiap potong untuk kumpulan data dan semua kumpulan data dependen.
+Kumpulan data dependen digunakan sebagai kumpulan data input untuk aktivitas dalam pipeline.
+Perintah ini mengembalikan nilai $True.
 
 ## PARAMETERS
 
 ### -DataFactory
-Menentukan objek **PSDataFactory.**
-Cmdlet ini mengubah status potongan yang termasuk dalam pabrik data yang ditentukan parameter ini.
+Menentukan objek **PSDataFactory** .
+Cmdlet ini mengubah status irisan yang termasuk dalam pabrik data yang ditentukan parameter ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataFactories.Models.PSDataFactory
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 
 ### -DataFactoryName
 Menentukan nama pabrik data.
-Cmdlet ini mengubah status potongan yang termasuk dalam pabrik data yang ditentukan parameter ini.
+Cmdlet ini mengubah status irisan yang termasuk dalam pabrik data yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatasetName
-Menentukan nama set data yang akan digunakan cmdlet ini untuk memodifikasi potongan.
+Menentukan nama kumpulan data tempat cmdlet ini mengubah irisan.
 
 ```yaml
 Type: System.String
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -117,10 +117,10 @@ Accept wildcard characters: False
 ```
 
 ### -EndDateTime
-Menentukan akhir periode waktu sebagai objek **DateTime.**
-Kali ini adalah akhir dari potongan data.
-Untuk informasi selengkapnya tentang **objek DateTime,** ketik `Get-Help Get-Date` .
-*EndDateTime* harus ditentukan dalam format ISO8601 seperti dalam contoh berikut: 2015-01-01Z 2015-01-01T00:00:00Z 2015-01- 01T00:00:00.000Z (UTC) 2015-01-01T00:00:00-08:00 (Waktu Standar Pasifik) Penanda zona waktu default adalah UTC.
+Menentukan akhir periode waktu sebagai objek **DateTime** .
+Kali ini adalah akhir dari pemungkusan data.
+Untuk informasi selengkapnya tentang objek **DateTime**, ketik .`Get-Help Get-Date`
+*EndDateTime* harus ditentukan dalam format ISO8601 seperti dalam contoh berikut: 2015-01-01Z 2015-01-01T00:00:00Z 2015-01-01-0101T00:00:00.000Z (UTC) 2015-01-01T00:00:00-08:00 (Waktu Standar Pasifik) Pendesain zona waktu default adalah UTC.
 
 ```yaml
 Type: System.DateTime
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya Azure.
-Cmdlet ini mengubah status potongan yang termasuk dalam grup yang ditentukan parameter ini.
+Cmdlet ini mengubah status irisan yang termasuk dalam grup yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -151,8 +151,8 @@ Accept wildcard characters: False
 ```
 
 ### -StartDateTime
-Menentukan awal periode waktu sebagai objek **DateTime.**
-Kali ini adalah awal dari potongan data.
+Menentukan awal periode waktu sebagai objek **DateTime** .
+Kali ini adalah awal dari pemungkusan data.
 
 ```yaml
 Type: System.DateTime
@@ -167,18 +167,18 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Menentukan status untuk ditetapkan ke potongan data.
+Menentukan status untuk ditetapkan ke pemungkas data.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Menunggu.
-Potongan data menunggu validasi terhadap kebijakan validasi sebelum diproses. 
+Pemisah data menunggu validasi terhadap kebijakan validasi sebelum diproses. 
 - Siap.
-Pemrosesan data telah selesai dan potongan data siap.
+Pemrosesan data telah selesai dan pemisah data sudah siap.
 - InProgress.
 Pemrosesan data sedang berlangsung. 
 - Gagal.
 Pemrosesan data gagal.
-- Terlewatkan.
-Melewatkan pemrosesan potongan data.
+- Melewatkan.
+Melewati pemrosesan poong data.
 
 ```yaml
 Type: System.String
@@ -194,12 +194,12 @@ Accept wildcard characters: False
 ```
 
 ### -UpdateType
-Menentukan tipe pembaruan ke potongan.
+Menentukan tipe pembaruan untuk iringan.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Individual.
-Mengatur status setiap potongan untuk kumpulan data dalam rentang waktu yang ditentukan. 
+- Individu.
+Mengatur status setiap pemangkasan untuk kumpulan data dalam rentang waktu yang ditentukan. 
 - UpstreamInPipeline.
-Mengatur status setiap potongan untuk kumpulan data dan semua kumpulan data dependen, yang digunakan sebagai kumpulan data input untuk aktivitas dalam saluran.
+Mengatur status setiap pemangkasan untuk kumpulan data dan semua kumpulan data dependen, yang digunakan sebagai kumpulan data input untuk aktivitas dalam pipeline.
 
 ```yaml
 Type: System.String
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -228,10 +228,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### System.Boolean
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, data, factories
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 
-[Get-AzureRmDataFactoryS azure](./Get-AzureRmDataFactorySlice.md)
+[Get-AzureRmDataFactorySlice](./Get-AzureRmDataFactorySlice.md)
 
 

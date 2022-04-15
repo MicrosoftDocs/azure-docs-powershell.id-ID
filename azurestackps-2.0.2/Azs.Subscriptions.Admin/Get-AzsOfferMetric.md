@@ -4,16 +4,16 @@ Module Name: Azs.Subscriptions.Admin
 online version: https://docs.microsoft.com/en-us/powershell/module/azs.subscriptions.admin/get-azsoffermetric
 schema: 2.0.0
 ms.openlocfilehash: 515cf3d9c26c9ca4ed59178e49854e23edfea84c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132413662"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142331243"
 ---
 # Get-AzsOfferMetric
 
 ## SYNOPSIS
-Dapatkan penawaran metrik.
+Dapatkan metrik penawaran.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-AzsOfferMetric -OfferName <String> -ResourceGroupName <String> [-Subscriptio
 ```
 
 ## DESCRIPTION
-Dapatkan penawaran metrik.
+Dapatkan metrik penawaran.
 
 ## EXAMPLES
 
@@ -37,7 +37,7 @@ EndTime               MetricUnit StartTime            TimeGrain
 3/13/2020 12:04:33 AM Count      3/6/2020 12:00:00 AM P1D
 ```
 
-Dapatkan penawaran metrik.
+Dapatkan metrik penawaran.
 
 ## PARAMETERS
 
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup sumber daya sumber daya yang berada di bawahnya.
+Grup sumber daya tempat sumber daya berada di bawah.
 
 ```yaml
 Type: System.String
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

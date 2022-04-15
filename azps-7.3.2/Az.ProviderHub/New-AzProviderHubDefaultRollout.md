@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/New-AzProviderHubDefaultRollout.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/New-AzProviderHubDefaultRollout.md
-ms.openlocfilehash: 4344f8d7fc9e60a778e79c5e16954fe11dbba356
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f8b4f388b7c5bc263d1552107ebeb906e942a611
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140371391"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142343159"
 ---
 # New-AzProviderHubDefaultRollout
 
 ## SYNOPSIS
 Membuat atau memperbarui detail peluncuran.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.providerhub/new-azproviderhubdefaultrollout) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Name                      Type
 defaultRollout2021w10     Microsoft.ProviderHub/providerRegistrations/defaultRollouts
 ```
 
-Membuat/Memperbarui peluncuran default penyedia sumber daya.
+Buat/Perbarui peluncuran default penyedia sumber daya.
 
 ## PARAMETERS
 
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -277,7 +280,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RestOfTheWorldGrouptwoRegion
+### -RestOfTheWorldGroupTwoRegion
 .
 
 ```yaml
@@ -292,7 +295,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RestOfTheWorldGrouptwoWaitDuration
+### -RestOfTheWorldgrouptwoWaitDuration
 .
 
 ```yaml
@@ -324,7 +327,7 @@ Accept wildcard characters: False
 
 ### -SpecificationProviderRegistration
 .
-Untuk membuat, lihat bagian CATATAN untuk SPESIFIKASI PROPERTIPROVIDERREGISTRATION dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti SPECIFICATIONPROVIDERREGISTRATION dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.IProviderRegistration
@@ -445,7 +448,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -461,7 +464,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -476,7 +479,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

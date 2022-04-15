@@ -3,17 +3,17 @@ external help file: ''
 Module Name: Azs.Subscriptions.Admin
 online version: https://docs.microsoft.com/en-us/powershell/module/azs.subscriptions.admin/new-azsplan
 schema: 2.0.0
-ms.openlocfilehash: c0f23faade015316a8ea0f80516155e423ce99b3e9ce69a8d03f6d1568766239
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 213ae5a86675f6aea43377d298d339a00b37856d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417386"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142331261"
 ---
 # New-AzsPlan
 
 ## SYNOPSIS
-Buat atau perbarui rencana tersebut.
+Buat atau perbarui rencana.
 
 ## SYNTAX
 
@@ -25,14 +25,14 @@ New-AzsPlan -Name <String> -ResourceGroupName <String> -QuotaIds <String[]> [-Su
  [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Buat
+### Membuat
 ```
 New-AzsPlan -Name <String> -ResourceGroupName <String> -PlanDefinition <IPlan> [-SubscriptionId <String>]
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Buat atau perbarui rencana tersebut.
+Buat atau perbarui rencana.
 
 ## EXAMPLES
 
@@ -54,7 +54,7 @@ Tags                : Microsoft.Azure.PowerShell.Cmdlets.SubscriptionsAdmin.Mode
 Type                : Microsoft.Subscriptions.Admin/plans
 ```
 
-Membuat rencana baru
+Membuat paket baru
 
 ## PARAMETERS
 
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Deskripsi rencana tersebut.
+Deskripsi rencana.
 
 ```yaml
 Type: System.String
@@ -155,9 +155,9 @@ Accept wildcard characters: False
 ```
 
 ### -PlanDefinition
-Paket mewakili paket kuota dan kapabilitas yang ditawarkan penyewa.
-Penyewa bisa memperoleh paket ini melalui penawaran untuk memutakhirkan aksesnya ke layanan awan yang mendasarinya.
-Untuk membuat, lihat bagian CATATAN untuk properti PLANDEFINITION dan membuat tabel hash.
+Rencana mewakili paket kuota dan kapabilitas yang ditawarkan penyewa.
+Penyewa dapat memperoleh rencana ini melalui penawaran untuk memutakhirkan aksesnya ke layanan cloud yang mendasar.
+Untuk membangun, lihat bagian CATATAN untuk properti PLANDEFINITION dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.SubscriptionsAdmin.Models.Api20151101.IPlan
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup sumber daya sumber daya yang berada di bawahnya.
+Grup sumber daya tempat sumber daya berada di bawah.
 
 ```yaml
 Type: System.String
@@ -253,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure Anda. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -269,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -286,7 +286,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -302,7 +302,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -316,9 +316,9 @@ ALIAS
 
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-PLANDEFINITION <IPlan> : Paket mewakili paket kuota dan kapabilitas yang ditawarkan penyewa. Penyewa bisa memperoleh paket ini melalui penawaran untuk memutakhirkan aksesnya ke layanan awan yang mendasarinya.
+PLANDEFINITION <IPlan>: Sebuah rencana mewakili paket kuota dan kapabilitas yang ditawarkan penyewa. Penyewa dapat memperoleh rencana ini melalui penawaran untuk memutakhirkan aksesnya ke layanan cloud yang mendasar.
   - `[Location <String>]`: Lokasi sumber daya
   - `[Description <String>]`: Deskripsi rencana.
   - `[DisplayName <String>]`: Nama tampilan.

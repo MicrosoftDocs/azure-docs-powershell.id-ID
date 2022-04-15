@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstancePool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstancePool.md
-ms.openlocfilehash: ec75a77c1ea1aa58e58efd65a456c59ded00c4f8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d01b013af4b5701e8e2b02d5d454a71860a9efb4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140390742"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142366109"
 ---
 # Remove-AzSqlInstancePool
 
 ## SYNOPSIS
-Menghapus azure SQL Instance.
+Menghapus kumpulan Instans Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqlinstancepool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,27 +41,27 @@ Remove-AzSqlInstancePool [-ResourceId] <String> [-DefaultProfile <IAzureContextC
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzSqlInstancePool** menghapus cmdlet Azure SQL Instance.
+Cmdlet **Remove-AzSqlInstancePool** menghapus kumpulan Instans Azure SQL.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus instance pool
+### Contoh 1: Menghapus kumpulan instans
 ```powershell
 PS C:\> Remove-AzSqlInstancePool -ResourceGroup resourcegroup01 -Name instancePool0
 ```
 
-### Contoh 2: Hapus sebuah instance pool berdasarkan pengidentifikasi sumber dayanya
+### Contoh 2: Menghapus kumpulan instans menurut pengidentifikasi sumber dayanya
 ```powershell
 PS C:\> Remove-AzSqlInstancePool -ResourceId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Sql/instancePools/instancePool0"
 ```
 
-### Contoh 3: Menghapus instance pool dengan objek instance pool
+### Contoh 3: Menghapus kumpulan instans menurut objek kumpulan instans
 ```powershell
 PS C:\> Get-AzSqlInstancePool -ResourceGroup resourcegroup01 -Name instancePool0
 PS C:\> Remove-AzSqlInstancePool -InputObject $instancePool
 ```
 
-Perintah ini menghapus sebuah instance pool bernama instancePool0.
+Perintah ini menghapus kumpulan instans bernama instancePool0.
 
 ## PARAMETERS
 
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek instance pool untuk dihapus.
+Objek kumpulan instans untuk dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Instance_Pools.Model.AzureSqlInstancePoolModel
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama instance pool.
+Nama kumpulan instans.
 
 ```yaml
 Type: System.String
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Instance pool resource id untuk dihapus.
+Id sumber daya kumpulan instans untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

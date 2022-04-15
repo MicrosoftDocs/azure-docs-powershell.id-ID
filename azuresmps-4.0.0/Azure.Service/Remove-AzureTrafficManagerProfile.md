@@ -4,11 +4,11 @@ ms.assetid: B96A64DD-9005-4B04-A720-6FCF33797E8D
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 33e019a4b1542d307588f9b52203a579e0284960
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426261"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142334786"
 ---
 # Remove-AzureTrafficManagerProfile
 
@@ -29,24 +29,24 @@ Cmdlet **Remove-AzureTrafficManagerProfile** menghapus profil Microsoft Azure Tr
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus Traffic Manager profil
+### Contoh 1: Menghapus profil Traffic Manager
 ```
 PS C:\>Remove-AzureTrafficManagerProfile -Name "MyProfile"
 ```
 
-Perintah ini akan menghapus Traffic Manager bernama MyProfile.
+Perintah ini menghapus profil Traffic Manager bernama MyProfile.
 
-### Contoh 2: Menghapus Traffic Manager profil
+### Contoh 2: Menghapus profil Traffic Manager
 ```
 PS C:\>Remove-AzureTrafficManagerProfile -Name "MyProfile" -Force -PassThru
 ```
 
-Perintah ini akan menghapus Traffic Manager bernama MyProfile tanpa meminta konfirmasi Anda, dan mengembalikan hasilnya.
+Perintah ini menghapus profil Traffic Manager bernama MyProfile tanpa meminta konfirmasi, dan mengembalikan hasilnya.
 
 ## PARAMETERS
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: SwitchParameter
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama profil pengguna Traffic Manager dihapus.
+Menentukan nama profil Traffic Manager untuk dihapus.
 
 ```yaml
 Type: String
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini. Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca. Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -107,21 +107,21 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
 ### System.Boolean
-Cmdlet ini menghasilkan $True $False.
-Jika operasi berhasil dan jika Anda menentukan parameter *PassThru,* cmdlet ini akan mengembalikan nilai $True.
+Cmdlet ini menghasilkan $True atau $False.
+Jika operasi berhasil dan jika Anda menentukan parameter *PassThru* , cmdlet ini mengembalikan nilai $True.
 
 ## CATATAN
 
 ## RELATED LINKS
 
-[Disable-AzureTrafficManagerProfile](./Disable-AzureTrafficManagerProfile.md)
+[Nonaktifkan-AzureTrafficManagerProfile](./Disable-AzureTrafficManagerProfile.md)
 
 [Enable-AzureTrafficManagerProfile](./Enable-AzureTrafficManagerProfile.md)
 

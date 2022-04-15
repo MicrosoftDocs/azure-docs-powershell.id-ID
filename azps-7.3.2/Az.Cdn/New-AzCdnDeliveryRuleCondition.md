@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azcdndel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnDeliveryRuleCondition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnDeliveryRuleCondition.md
-ms.openlocfilehash: eee5a1ec1b99d9e1fecc62a733e854fae7ad05b9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: fb80cea469f02c836e07388135d08e900dcafb54
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140560532"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142348847"
 ---
 # New-AzCdnDeliveryRuleCondition
 
 ## SYNOPSIS
 Membuat kondisi aturan pengiriman.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cdn/new-azcdndeliveryrulecondition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzCdnDeliveryRuleCondition -MatchVariable <String> -Operator <String> [-Sele
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzCdnDeliveryRule** membuat aturan pengiriman untuk CDN titik akhir.
+**Cmdlet New-AzCdnDeliveryRule** membuat aturan pengiriman untuk pembuatan titik akhir CDN.
 
 ## EXAMPLES
 
@@ -44,7 +47,7 @@ NegateCondition : False
 Transfroms      :
 ```
 
-Membuat kondisi sederhana.
+Buat kondisi sederhana.
 
 ## PARAMETERS
 
@@ -64,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -MatchValue
-Daftar kemungkinan nilai yang cocok.
+Daftar nilai yang mungkin cocok.
 
 ```yaml
 Type: System.String[]
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -MatchVariable
-Cocokkan variabel kondisi.
+Variabel kecocokan kondisi.
 
 ```yaml
 Type: System.String
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -NegateCondition
-Menjelaskan jika hasil kondisi ini harus negatif.
+Menjelaskan jika hasil dari kondisi ini harus dinegasikan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +126,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pemilih
+### -Selector
 Nama Pemilih yang akan dicocokkan
 
 ```yaml
@@ -138,9 +141,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Transform
-Ubah untuk diterapkan sebelum mencocokkan.
-Nilai yang mungkin adalah Huruf kecil dan Huruf besar
+### -Transformasi
+Transformasi untuk diterapkan sebelum mencocokkan.
+Nilai yang mungkin adalah Huruf Kecil dan Huruf Besar
 
 ```yaml
 Type: System.String
@@ -155,11 +158,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.datam
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataMigration/Commands.DataMigration/help/New-AzureRmDataMigrationTask.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataMigration/Commands.DataMigration/help/New-AzureRmDataMigrationTask.md
-ms.openlocfilehash: a4752400ed62492b74d305ccf44995e031d8a2085503e6927f79c4a10601d398
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 8352f7a63e40986e27c4b521dca58aaf003679bc
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140860805"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142357685"
 ---
 # New-AzureRmDataMigrationTask
 
 ## SYNOPSIS
-Membuat dan memulai tugas migrasi data di Layanan Migrasi Database Azure.
+Membuat dan memulai tugas migrasi data di Azure Database Migration Service.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -41,7 +41,7 @@ New-AzureRmDataMigrationTask [-ResourceId] <String> -TaskType <TaskTypeEnum> -Na
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzureRmDataMigrationTask membuat tugas migrasi data. Cmdlet ini berisi parameter untuk enumerator Tipe Tugas, Grup Sumber Daya Azure, nama Layanan Migrasi Database Azure terkait dan Project sebagai input. 
+Cmdlet New-AzureRmDataMigrationTask membuat tugas migrasi data. Cmdlet ini mengambil parameter untuk enumerator Tipe Tugas, Azure Resource Group, nama Azure Database Migration Service terkait dan Project sebagai input. 
 
 ## EXAMPLES
 
@@ -50,12 +50,12 @@ Cmdlet New-AzureRmDataMigrationTask membuat tugas migrasi data. Cmdlet ini beris
 PS C:\> New-AzureRmDmsTask -TaskType MigrateSqlServerSqlDb -ResourceGroupName myResourceGroup -ServiceName TestService -ProjectName myDMSProject -TaskName MyMigrationTask -SourceConnection $sourceConnInfo -SourceCred $sourceCred -TargetConnection $targetConnInfo -TargetCred $targetCred -SelectedDatabase  $selectedDbs
 ```
 
-Contoh skrip ini memperlihatkan cara membuat Tugas Migrasi Data baru yang bernama MyMigrationTask dalam proyek yang bernama myDMSProject dan layanan bernama TestService. 
+Skrip contoh ini memperlihatkan cara membuat Tugas Migrasi Data baru bernama MyMigrationTask dalam proyek bernama myDMSProject dan layanan bernama TestService. 
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Project Sumber Daya.
+Project Id Sumber Daya.
 
 ```yaml
 Type: System.String
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Nama Layanan Migrasi Database.
+nama Database Migration Service.
 
 ```yaml
 Type: System.String
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

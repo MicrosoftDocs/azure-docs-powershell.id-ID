@@ -4,16 +4,16 @@ ms.assetid: CE1C6576-234E-4891-9158-FA45B64B786C
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: d84ca3bed1e7a17c80a701193b7dc2ca33e3bc97
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425830"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142334778"
 ---
 # Set-AzureStorSimpleVirtualDevice
 
 ## SYNOPSIS
-Membuat atau memperbarui konfigurasi perangkat dari perangkat virtual StorSimple.
+Membuat atau memperbarui konfigurasi perangkat perangkat virtual StorSimple.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,7 +25,7 @@ Set-AzureStorSimpleVirtualDevice -DeviceName <String> -SecretKey <String> -Admin
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureStorSimpleVirtualDevice** membuat atau memperbarui konfigurasi perangkat dari perangkat virtual Azure StorSimple.
+Cmdlet **Set-AzureStorSimpleVirtualDevice** membuat atau memperbarui konfigurasi perangkat perangkat virtual Azure StorSimple.
 
 ## EXAMPLES
 
@@ -71,9 +71,9 @@ WebProxy                       : Microsoft.WindowsAzure.Management.StorSimple.Mo
 VERBOSE: Successfully updated configuration for device Contoso23 with id d369ebb4-8b9a-47fc-9a6b-60f371e123ae
 ```
 
-Perintah pertama menggunakan kelas **System.TimeZoneInfo** .NET dan sintaks standar untuk mendapatkan zona Waktu Standar Pasifik, dan menyimpan objek tersebut dalam $TimeZoneInfo variabel.
+Perintah pertama menggunakan class .NET **System.TimeZoneInfo** dan sintaks standar untuk mendapatkan Zona Waktu Standar Pasifik, dan menyimpan objek tersebut dalam variabel $TimeZoneInfo.
 
-Perintah kedua memperbarui perangkat yang bernama Contoso23 untuk menggunakan zona waktu yang ditentukan $TimeZoneInfo.
+Perintah kedua memperbarui perangkat bernama Contoso23 untuk menggunakan zona waktu yang ditentukan dalam $TimeZoneInfo.
 Perintah memerlukan kunci rahasia untuk mengakses konfigurasi perangkat virtual.
 
 ### Contoh 2: Memperbarui perangkat virtual menggunakan operator pipeline
@@ -81,14 +81,14 @@ Perintah memerlukan kunci rahasia untuk mengakses konfigurasi perangkat virtual.
 PS C:\> [System.TimeZoneInfo]::GetSystemTimeZones() | where { $_.Id -eq "Pacific Standard Time" } | Set-AzureStorSimpleVirtualDevice -DeviceName "Contoso23" -SecretKey "wcZBlBGpCMf4USdSKyt/SQ=="
 ```
 
-Perintah ini memperbarui perangkat yang bernama Contoso23 guna menggunakan zona waktu yang dibuat oleh perintah tersebut.
+Perintah ini memperbarui perangkat bernama Contoso23 untuk menggunakan zona waktu yang dibuat perintah.
 Perintah memerlukan kunci rahasia untuk mengakses konfigurasi perangkat virtual.
-Perintah ini bekerja dengan cara yang sama seperti contoh sebelumnya, kecuali perintah itu melewati zona waktu ke cmdlet saat ini dengan menggunakan operator pipeline.
+Perintah ini bekerja dengan cara yang sama seperti contoh sebelumnya, kecuali bahwa perintah melewati zona waktu ke cmdlet saat ini menggunakan operator pipeline.
 
 ## PARAMETERS
 
 ### -AdministratorPassword
-Menentukan kata sandi administrator perangkat virtual untuk dikonfigurasi.
+Menentukan kata sandi administrator perangkat maya untuk dikonfigurasi.
 
 ```yaml
 Type: String
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceName
-Menentukan nama perangkat virtual untuk dikonfigurasi.
+Menentukan nama perangkat maya yang akan dikonfigurasi.
 
 ```yaml
 Type: String
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 
 ### -SecretKey
 Menentukan kunci enkripsi layanan untuk perangkat virtual.
-Kunci ini dihasilkan saat perangkat fisik pertama didaftarkan dengan sumber daya.
+Kunci ini dihasilkan ketika perangkat fisik pertama didaftarkan dengan sumber daya.
 
 ```yaml
 Type: String
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -SnapshotManagerPassword
-Menentukan kata sandi pengelola jepretan layar.
+Menentukan kata sandi pengelola snapshot.
 
 ```yaml
 Type: String
@@ -164,8 +164,8 @@ Accept wildcard characters: False
 ```
 
 ### -Zona Waktu
-Menentukan zona waktu untuk perangkat tersebut.
-Anda dapat membuat **objek TimeZoneInfo** menggunakan metode **GetSystemTimeZone().**
+Menentukan zona waktu untuk perangkat.
+Anda dapat membuat objek **TimeZoneInfo** menggunakan metode **GetSystemTimeZone().**
 Misalnya, perintah ini membuat objek informasi zona waktu untuk Waktu Standar Pasifik: `\[System.TimeZoneInfo\]::GetSystemTimeZones() | where { $_.Id -eq "Pacific Standard Time" }`
 
 ```yaml
@@ -181,12 +181,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### TimeZoneInfo
-Anda dapat pipa objek **TimeZoneInfo** ke cmdlet ini.
+Anda dapat menyalurkan objek **TimeZoneInfo** ke cmdlet ini.
 
 ## OUTPUTS
 

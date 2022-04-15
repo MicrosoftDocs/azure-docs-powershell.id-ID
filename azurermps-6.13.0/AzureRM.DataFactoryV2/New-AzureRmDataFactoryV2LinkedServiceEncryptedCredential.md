@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.dataf
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactoryV2/Commands.DataFactoryV2/help/New-AzureRmDataFactoryV2LinkedServiceEncryptedCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactoryV2/Commands.DataFactoryV2/help/New-AzureRmDataFactoryV2LinkedServiceEncryptedCredential.md
-ms.openlocfilehash: b2f827791e0bbb0846f54a102dd3e6b660469200aebb98d7e69560b463a19120
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 765bd2c75a377204ab4566f47d0498deaf127953
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140855013"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142357909"
 ---
 # New-AzureRmDataFactoryV2LinkedServiceEncryptedCredential
 
 ## SYNOPSIS
-Enkripsi kredensial dalam layanan tertaut dengan runtime integrasi tertentu.
+Enkripsi kredensial dalam layanan tertaut dengan runtime integrasi yang ditentukan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -36,16 +36,16 @@ New-AzureRmDataFactoryV2LinkedServiceEncryptedCredential [-IntegrationRuntimeNam
 ```
 
 ## DESCRIPTION
-Kredensial enkripsi cmdlet New-AzureRmDataFactoryV2LinkedServiceEncryptCredential dalam layanan tertaut dengan runtime integrasi tertentu.
+Cmdlet New-AzureRmDataFactoryV2LinkedServiceEncryptCredential mengenkripsi kredensial dalam layanan tertaut dengan runtime integrasi yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Mengenkripsikan kreadentials dalam layanan yang ditautkan
+### Contoh 1: Mengenkripsi kredensial dalam layanan tertaut
 ```
 PS C:\> New-AzureRmDataFactoryV2LinkedServiceEncryptCredential -ResourceGroupName resourceGroup -DataFactoryName myDataFactory -IntegrationRuntimeName myIR -File D:\sql.json
 ```
 
-Perintah ini mengenkripsi kredensial dalam file D:\sql.json dengan runtime integrasi yang bernama myIR.
+Perintah ini mengenkripsi kredensial dalam file D:\sql.json dengan runtime integrasi bernama myIR.
 
 ## PARAMETERS
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -109,7 +109,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Menjalankan cmdlet tanpa meminta konfirmasi.
 
 ```yaml
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

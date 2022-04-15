@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Remove-AzKeyVaultCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Remove-AzKeyVaultCertificate.md
 ms.openlocfilehash: b2e7264b5c0f54f18e295a86f9abb1cbd51dc4b8
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420584"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142328975"
 ---
 # Remove-AzKeyVaultCertificate
 
 ## SYNOPSIS
-Menghapus sertifikat dari kunci vault.
+Menghapus sertifikat dari kubah kunci.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Remove-AzKeyVaultCertificate [-VaultName] <String> [-Name] <String> [-Force] [-I
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzKeyVaultCertificate** menghapus sertifikat dari kunci vault.
+Cmdlet **Remove-AzKeyVaultCertificate** menghapus sertifikat dari kubah kunci.
 
 ## EXAMPLES
 
@@ -42,22 +42,22 @@ Created     : 2/8/2016 11:29:33 PM
 Updated     : 2/8/2016 11:29:33 PM
 ```
 
-Perintah ini menghapus sertifikat yang bernama SelfSigned01 dari penyimpanan kunci yang bernama Contoso CONTOSO CONTOSO01.
-Perintah ini menentukan parameter *Force.*
-Oleh karena itu, cmdlet tidak meminta konfirmasi Anda.
+Perintah ini menghapus sertifikat bernama SelfSigned01 dari kubah kunci bernama ContosoKV01.
+Perintah ini menentukan parameter *Paksa* .
+Oleh karena itu, cmdlet tidak meminta anda untuk konfirmasi.
 
-### Contoh 3: Membersihkan sertifikat yang dihapus dari kunci vault secara permanen
+### Contoh 3: Membersihkan sertifikat yang dihapus dari kubah kunci secara permanen
 ```
 PS C:\>Remove-AzKeyVaultCertificate -VaultName 'Contoso' -Name 'MyCert' -InRemovedState
 ```
 
-Perintah ini secara permanen menghapus sertifikat yang bernama 'MyCert' dari kunci vault bernama 'Contoso'.
-Menjalankan cmdlet ini memerlukan izin 'pembersihan', yang harus sebelumnya dan secara eksplisit diberikan kepada pengguna di vault kunci ini.
+Perintah ini menghapus sertifikat bernama 'MyCert' secara permanen dari kubah kunci bernama 'Contoso'.
+Menjalankan cmdlet ini memerlukan izin 'pembersihan', yang harus telah diberikan secara eksplisit dan sebelumnya kepada pengguna pada kubah kunci ini.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: IAzureContextContainer
@@ -71,8 +71,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: SwitchParameter
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -InRemovedState
-Jika ada, menghapus sertifikat yang dihapus sebelumnya secara permanen
+Jika ada, menghapus sertifikat yang sebelumnya dihapus secara permanen
 
 ```yaml
 Type: SwitchParameter
@@ -102,8 +102,8 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama sertifikat yang dihapus cmdlet ini dari key vault.
-Cmdlet ini menyusun nama domain (FQDN) yang sepenuhnya memenuhi syarat dari sertifikat berdasarkan nama yang ditentukan parameter ini, nama kunci vault, dan lingkungan Anda saat ini.
+Menentukan nama sertifikat yang dihapus cmdlet ini dari kubah kunci.
+Cmdlet ini menyusun nama domain yang sepenuhnya memenuhi syarat (FQDN) sertifikat berdasarkan nama yang ditentukan parameter ini, nama kubah kunci, dan lingkungan Anda saat ini.
 
 ```yaml
 Type: String
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -134,8 +134,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kunci vault tempat cmdlet ini menghapus sertifikat.
-Cmdlet ini menyusun FQDN dari kunci vault berdasarkan nama yang ditentukan parameter ini dan lingkungan Anda saat ini.
+Menentukan nama kubah kunci tempat cmdlet ini menghapus sertifikat.
+Cmdlet ini menyusun FQDN kubah kunci berdasarkan nama yang ditentukan parameter ini dan lingkungan Anda saat ini.
 
 ```yaml
 Type: String
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -166,8 +166,8 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan. Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan. Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -182,11 +182,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
@@ -201,6 +201,6 @@ Cmdlet ini tidak menerima input apa pun.
 
 [Get-AzKeyVaultCertificate](./Get-AzKeyVaultCertificate.md)
 
-[Import-AzKeyVaultCertificate](./Import-AzKeyVaultCertificate.md)
+[Impor-AzKeyVaultCertificate](./Import-AzKeyVaultCertificate.md)
 
-[Undo-AzKeyVaultCertificateRemoval](./Undo-AzKeyVaultCertificateRemoval.md)
+[Batalkan-AzKeyVaultCertificateRemoval](./Undo-AzKeyVaultCertificateRemoval.md)

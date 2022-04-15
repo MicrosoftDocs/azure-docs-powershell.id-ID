@@ -4,16 +4,16 @@ Module Name: Azs.Fabric.Admin
 online version: https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/stop-azsscaleunitnode
 schema: 2.0.0
 ms.openlocfilehash: 3f5adef6382038fdaf8c17620508b4a450ff74bc
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132415310"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142331459"
 ---
 # Stop-AzsScaleUnitNode
 
 ## SYNOPSIS
-Mematikan simpul unit skala.
+Matikan simpul unit skala.
 
 ## SYNTAX
 
@@ -24,27 +24,27 @@ Stop-AzsScaleUnitNode -Name <String> [-Location <String>] [-ResourceGroupName <S
  [-WhatIf] [<CommonParameters>]
 ```
 
-### PowerOffViaIdentity
+### PowerOffViaidentity
 ```
 Stop-AzsScaleUnitNode -InputObject <IFabricAdminIdentity> [-Force] [-DefaultProfile <PSObject>] [-AsJob]
  [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Penutupan
+### Shutdown
 ```
 Stop-AzsScaleUnitNode -Name <String> [-Location <String>] [-ResourceGroupName <String>]
  [-SubscriptionId <String>] [-Force] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm]
  [-WhatIf] [<CommonParameters>]
 ```
 
-### PenutupanViaIdentity
+### ShutdownViaIdentity
 ```
 Stop-AzsScaleUnitNode -InputObject <IFabricAdminIdentity> [-Force] [-DefaultProfile <PSObject>] [-AsJob]
  [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Mematikan simpul unit skala.
+Matikan simpul unit skala.
 
 ## EXAMPLES
 
@@ -53,14 +53,14 @@ Mematikan simpul unit skala.
 PS C:\> Stop-AzsScaleUnitNode -Name "HC1n25r2236"
 ```
 
-Menurunkan simpul unit skala.
+Mematikan simpul unit skala.
 
 ### Contoh 2:
 ```powershell
 PS C:\> Stop-AzsScaleUnitNode -Name "HC1n25r2236" -AsJob
 ```
 
-Menurunkan simpul unit skala. Sebagai pekerjaan.
+Mematikan simpul unit skala. Sebagai pekerjaan.
 
 ## PARAMETERS
 
@@ -96,8 +96,8 @@ Accept wildcard characters: False
 
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.IFabricAdminIdentity
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama instans peran infrastruktur.
+Nama contoh peran infrastruktur.
 
 ```yaml
 Type: System.String
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama node unit skala.
+Nama simpul unit skala.
 
 ```yaml
 Type: System.String
@@ -209,8 +209,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -243,7 +243,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -259,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -271,30 +271,30 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 INPUTOBJECT <IFabricAdminIdentity>: Parameter Identitas
   - `[Drive <String>]`: Nama drive penyimpanan.
   - `[EdgeGateway <String>]`: Nama gateway tepi.
-  - `[EdgeGatewayPool <String>]`: Nama gateway pool tepi.
-  - `[FabricLocation <String>]`: Fabric location.
-  - `[FileShare <String>]`: Fabric file share name.
-  - `[IPPool <String>]`: NAMA ip pool.
+  - `[EdgeGatewayPool <String>]`: Nama kolam gateway tepi.
+  - `[FabricLocation <String>]`: Lokasi fabric.
+  - `[FileShare <String>]`: Nama berbagi file fabric.
+  - `[IPPool <String>]`: Nama kumpulan IP.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[InfraRole <String>]`: Nama peran infrastruktur.
-  - `[InfraRoleInstance <String>]`: Nama instans peran infrastruktur.
+  - `[InfraRoleInstance <String>]`: Nama contoh peran infrastruktur.
   - `[Location <String>]`: Lokasi sumber daya.
-  - `[LogicalNetwork <String>]`: Nama jaringan logis.
+  - `[LogicalNetwork <String>]`: Nama jaringan logika.
   - `[LogicalSubnet <String>]`: Nama subnet logika.
-  - `[MacAddressPool <String>]`: Nama grup alamat MAC.
+  - `[MacAddressPool <String>]`: Nama kumpulan alamat MAC.
   - `[Operation <String>]`: Pengidentifikasi operasi.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
   - `[ScaleUnit <String>]`: Nama unit skala.
-  - `[ScaleUnitNode <String>]`: Nama node unit skala.
+  - `[ScaleUnitNode <String>]`: Nama simpul unit skala.
   - `[SlbMuxInstance <String>]`: Nama instans MUX SLB.
-  - `[StoragePool <String>]`: Storage pool.
+  - `[StoragePool <String>]`: Storage nama pool.
   - `[StorageSubSystem <String>]`: Nama sistem penyimpanan.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
   - `[Volume <String>]`: Nama volume penyimpanan.
 
 ## RELATED LINKS

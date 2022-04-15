@@ -6,21 +6,21 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Update-AzStreamAnalyticsInput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Update-AzStreamAnalyticsInput.md
 ms.openlocfilehash: 7a690dccf287065d58cc73452f7b04910d00d487
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140065223"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142322267"
 ---
 # Update-AzStreamAnalyticsInput
 
 ## SYNOPSIS
 Memperbarui input yang sudah ada di bawah pekerjaan streaming yang sudah ada.
-Ini dapat digunakan untuk memperbarui sebagian (mis.
-perbarui satu atau dua properti) input tanpa memengaruhi definisi pekerjaan atau input lainnya.
+Hal ini dapat digunakan untuk memperbarui sebagian (yaitu.
+memperbarui satu atau dua properti) input tanpa memengaruhi sisa pekerjaan atau definisi input.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.streamanalytics/update-azstreamanalyticsinput) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/update-azstreamanalyticsinput) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,8 +39,8 @@ Update-AzStreamAnalyticsInput -File <String> -InputObject <IStreamAnalyticsIdent
 
 ## DESCRIPTION
 Memperbarui input yang sudah ada di bawah pekerjaan streaming yang sudah ada.
-Ini dapat digunakan untuk memperbarui sebagian (mis.
-perbarui satu atau dua properti) input tanpa memengaruhi definisi pekerjaan atau input lainnya.
+Hal ini dapat digunakan untuk memperbarui sebagian (yaitu.
+memperbarui satu atau dua properti) input tanpa memengaruhi sisa pekerjaan atau definisi input.
 
 ## EXAMPLES
 
@@ -55,7 +55,7 @@ input-01 Microsoft.StreamAnalytics/streamingjobs/inputs 72d568f9-f4be-455b-bab8-
 
 Perintah ini memperbarui input dari file EventHub.json.
 
-### Contoh 2: Memperbarui input pekerjaan dengan definisi dari file menurut saluran
+### Contoh 2: Memperbarui input pekerjaan dengan definisi dari file menurut pipeline
 ```powershell
 PS C:\> Get-AzStreamAnalyticsInput -ResourceGroupName azure-rg-test -JobName sajob-01-pwsh -Name input-01 | Update-AzStreamAnalyticsInput -File .\test\template-json\IotHub.json
 
@@ -64,7 +64,7 @@ Name     Type                                           ETag
 input-01 Microsoft.StreamAnalytics/streamingjobs/inputs 29787d67-5274-4f31-a190-30182ebcecda
 ```
 
-Perintah ini memperbarui input dari file IotHub.json menurut saluran.
+Perintah ini memperbarui input dari file IotHub.json menurut pipeline.
 
 ## PARAMETERS
 
@@ -100,8 +100,8 @@ Accept wildcard characters: False
 
 ### -IfMatch
 ETag input.
-Menghilangkan nilai ini agar selalu menimpa input saat ini.
-Tentukan nilai ETag yang terakhir dilihat untuk mencegah secara tidak sengaja menimpa perubahan bersama.
+Hilangkan nilai ini untuk selalu menimpa input saat ini.
+Tentukan nilai ETag yang terakhir terlihat untuk mencegah timpa perubahan bersamaan secara tidak sengaja.
 
 ```yaml
 Type: System.String
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.StreamAnalytics.Models.IStreamAnalyticsIdentity
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -250,11 +250,11 @@ INPUTOBJECT <IStreamAnalyticsIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[InputName <String>]`: Nama input.
   - `[JobName <String>]`: Nama pekerjaan streaming.
-  - `[Location <String>]`: Kawasan untuk mengambil informasi kuota langganan. Anda dapat mencari tahu wilayah mana Azure Stream Analytics didukung di sini: https://azure.microsoft.com/en-us/regions/
+  - `[Location <String>]`: Kawasan tempat untuk mengambil informasi kuota langganan. Anda dapat mengetahui kawasan mana Azure Stream Analytics didukung di sini: https://azure.microsoft.com/en-us/regions/
   - `[OutputName <String>]`: Nama output.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
-  - `[TransformationName <String>]`: Nama transformasi tersebut.
+  - `[TransformationName <String>]`: Nama transformasi.
 
 ## RELATED LINKS
 

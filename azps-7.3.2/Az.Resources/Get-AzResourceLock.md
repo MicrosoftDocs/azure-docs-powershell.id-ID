@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzResourceLock.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzResourceLock.md
-ms.openlocfilehash: 7c8fd431d47e2c5150ef823a8cd0441748361cb0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a20fcceb9592152cddf102c9a65a566ec57e0217
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140196038"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142341845"
 ---
 # Get-AzResourceLock
 
 ## SYNOPSIS
-Dapatkan kunci sumber daya.
+Mendapatkan kunci sumber daya.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azresourcelock) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -69,12 +72,12 @@ PS C:\>Get-AzResourceLock -LockName "ContosoSiteLock" -ResourceName "ContosoSite
 
 Perintah ini mendapatkan kunci sumber daya bernama ContosoSiteLock.
 
-### Contoh 2: Dapatkan kunci pada tingkat grup sumber daya atau yang lebih tinggi
+### Contoh 2: Dapatkan kunci di tingkat grup sumber daya atau yang lebih tinggi
 ```
 PS C:\> Get-AzResourceLock -ResourceGroupName "ResourceGroup11" -AtScope
 ```
 
-Perintah ini akan mengunci sumber daya pada grup sumber daya atau langganan.
+Perintah ini mendapatkan kunci sumber daya pada grup sumber daya atau langganan.
 
 ## PARAMETERS
 
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 
 ### -AtScope
 Menunjukkan bahwa cmdlet ini mengembalikan semua kunci pada atau di atas lingkup yang ditentukan.
-Jika Anda tidak menentukan parameter ini, cmdlet akan mengembalikan semua kunci, di atas, atau di bawah lingkup.
+Jika Anda tidak menentukan parameter ini, cmdlet mengembalikan semua kunci pada, di atas, atau di bawah lingkup.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -LockId
-Menentukan ID kunci yang akan dapatkan cmdlet ini.
+Menentukan ID kunci yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -LockName
-Menentukan nama kunci yang akan dapatkan cmdlet ini.
+Menentukan nama kunci yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Cmdlet ini mempertimbangkan versi API prari release ketika cmdlet menentukan versi mana yang akan digunakan secara otomatis.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,8 +190,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceName
-Menentukan nama sumber daya untuk menerapkan kunci ini.
-Cmdlet ini terkunci untuk sumber daya ini.
+Menentukan nama sumber daya yang berlaku untuk kunci ini.
+Cmdlet ini akan mengunci sumber daya ini.
 
 ```yaml
 Type: System.String
@@ -203,8 +206,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceType
-Menentukan tipe sumber daya dari sumber daya yang diterapkan oleh kunci ini.
-Cmdlet ini terkunci untuk sumber daya ini.
+Menentukan tipe sumber daya tempat kunci ini diterapkan.
+Cmdlet ini akan mengunci sumber daya ini.
 
 ```yaml
 Type: System.String
@@ -219,8 +222,8 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Menentukan lingkup berlakunya kunci.
-Cmdlet akan terkunci untuk lingkup ini.
+Menentukan lingkup yang diterapkan kunci.
+Cmdlet mendapatkan kunci untuk lingkup ini.
 
 ```yaml
 Type: System.String
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -251,7 +254,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzResourceLock](./New-AzResourceLock.md)
 
-[Remove-AzResourceLock](./Remove-AzResourceLock.md)
+[Hapus-AzResourceLock](./Remove-AzResourceLock.md)
 
 [Set-AzResourceLock](./Set-AzResourceLock.md)
 

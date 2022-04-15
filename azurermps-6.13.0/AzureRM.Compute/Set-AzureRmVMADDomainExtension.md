@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Set-AzureRmVMADDomainExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Set-AzureRmVMADDomainExtension.md
 ms.openlocfilehash: e0d36e8ddc239d1d075b79e0c91df645d671c6a3
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425453"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142358607"
 ---
 # Set-AzureRmVMADDomainExtension
 
@@ -30,17 +30,17 @@ Set-AzureRmVMADDomainExtension -DomainName <String> [-OUPath <String>] [-JoinOpt
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmVMADDomainExtension** menambahkan ekstensi mesin virtual domain Azure Active Directory (AD) ke komputer virtual.
-Ekstensi ini memungkinkan mesin virtual Anda bergabung dalam sebuah domain.
+Cmdlet **Set-AzureRmVMADDomainExtension** menambahkan ekstensi mesin virtual domain Azure Active Directory (AD) ke mesin virtual.
+Ekstensi ini memungkinkan mesin virtual Anda bergabung dengan domain.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -Credential
-Menentukan nama pengguna dan kata sandi untuk komputer virtual sebagai objek **PSCredential.**
+### -Kredensial
+Menentukan nama pengguna dan kata sandi untuk mesin virtual sebagai objek **PSCredential** .
 Untuk mendapatkan kredensial, gunakan cmdlet Get-Credential.
-Untuk informasi selengkapnya, ketik `Get-Help Get-Credential` .
+Untuk informasi selengkapnya, ketik .`Get-Help Get-Credential`
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -55,7 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableAutoUpgradeMinorVersion
-Mengindikasikan bahwa cmdlet ini menonaktifkan pemutakhiran otomatis versi minor ekstensi tersebut.
+Menunjukkan bahwa cmdlet ini menonaktifkan pemutakhiran otomatis dari versi minor ekstensi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -100,9 +100,9 @@ Accept wildcard characters: False
 ```
 
 ### -ForceRerun
-Mengindikasikan bahwa cmdlet ini memaksa jalankan ulang konfigurasi ekstensi yang sama pada mesin virtual tanpa menghapus instalasi dan menginstal ulang ekstensi.
-Nilai dapatlah string apa pun yang berbeda dari nilai saat ini.
-Jika forceUpdateTag tidak diubah, pembaruan pada pengaturan publik atau yang diproteksi masih diterapkan oleh penanganan.
+Menunjukkan bahwa cmdlet ini memaksa pengintaian ulang konfigurasi ekstensi yang sama pada mesin virtual tanpa menghapus instalan dan menginstal ulang ekstensi.
+Nilai dapat berupa string apa pun yang berbeda dari nilai saat ini.
+Jika forceUpdateTag tidak diubah, pembaruan untuk pengaturan publik atau terproteksi masih diterapkan oleh handler.
 
 ```yaml
 Type: System.String
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -JoinOption
-Menentukan opsi gabung. Untuk opsi bergabung lihat [fJoinOptions](https://docs.microsoft.com/en-us/windows/desktop/api/lmjoin/nf-lmjoin-netjoindomain)
+Menentukan opsi gabungan. Untuk opsi gabungan, lihat [fJoinOptions](https://docs.microsoft.com/en-us/windows/desktop/api/lmjoin/nf-lmjoin-netjoindomain)
 
 ```yaml
 Type: System.Nullable`1[System.UInt32]
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi mesin virtual.
+Menentukan lokasi mesin maya.
 
 ```yaml
 Type: System.String
@@ -163,8 +163,8 @@ Accept wildcard characters: False
 
 ### -OUPath
 Menentukan unit organisasi (OU) untuk akun domain.
-Masukkan nama lengkap OU dalam tanda kutip.
-Nilai defaultnya adalah OU default untuk objek mesin pada domain.
+Masukkan nama lengkap OU yang dibedakan dalam tanda kutip.
+Nilai defaultnya adalah OU default untuk objek mesin dalam domain.
 
 ```yaml
 Type: System.String
@@ -193,9 +193,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Mulai ulang
-Mengindikasikan bahwa cmdlet ini memulai ulang mesin virtual.
-Sering kali, mulai ulang diperlukan untuk membuat perubahan efektif.
+### -Hidupkan ulang
+Menunjukkan bahwa cmdlet ini memulai ulang mesin virtual.
+Mulai ulang seringkali diperlukan untuk membuat perubahan efektif.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -256,7 +256,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -271,13 +271,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.UInt32, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ### System.Management.Automation.PSCredential
 

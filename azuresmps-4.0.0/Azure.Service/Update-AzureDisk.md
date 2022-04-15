@@ -4,11 +4,11 @@ ms.assetid: 849714BC-8B19-453E-B790-A9C38F9D48CB
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 5dbacc1b010b01fe07adcf3bbebedb2284e12f90
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427410"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142334315"
 ---
 # Update-AzureDisk
 
@@ -19,7 +19,7 @@ Mengubah label disk di penyimpanan disk Azure.
 
 ## SYNTAX
 
-### Ubah ukuran
+### Mengubah ukuran
 ```
 Update-AzureDisk [-DiskName] <String> [[-Label] <String>] [-ResizedSizeInGB] <Int32>
  [-Profile <AzureSMProfile>] [-InformationAction <ActionPreference>] [-InformationVariable <String>]
@@ -33,7 +33,7 @@ Update-AzureDisk [-DiskName] <String> [-Label] <String> [-Profile <AzureSMProfil
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzureDisk** mengubah label yang terkait dengan disk dalam penyimpanan disk langganan Azure saat ini.
+Cmdlet **Update-AzureDisk** mengubah label yang terkait dengan disk di penyimpanan disk langganan Azure saat ini.
 
 ## EXAMPLES
 
@@ -47,7 +47,7 @@ Perintah ini mengubah label disk bernama ContosoOSDisk menjadi DoNotUse.
 ## PARAMETERS
 
 ### -DiskName
-Menentukan nama disk yang dimodifikasi cmdlet ini.
+Menentukan nama diska yang diubah cmdlet ini.
 
 ```yaml
 Type: String
@@ -62,16 +62,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -Label
-Menentukan label baru untuk disk.
+Menentukan label baru untuk diska.
 
 ```yaml
 Type: String
@@ -128,8 +128,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -175,6 +175,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureDisk](./Get-AzureDisk.md)
 
-[Remove-AzureDisk](./Remove-AzureDisk.md)
+[Hapus-AzureDisk](./Remove-AzureDisk.md)
 
 

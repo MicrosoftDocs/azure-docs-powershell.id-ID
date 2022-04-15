@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Stop-AzVmss.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Stop-AzVmss.md
 ms.openlocfilehash: 6669952330d82fc7c5dac8f564b34de7c896511c
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425813"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142329605"
 ---
 # Stop-AzVmss
 
 ## SYNOPSIS
-Hentikan VMSS atau beberapa mesin virtual dalam VMSS.
+Menghentikan VMSS atau sekumpulan mesin virtual dalam VMSS.
 
 ## SYNTAX
 
@@ -34,29 +34,29 @@ Stop-AzVmss [-ResourceGroupName] <String> [-VMScaleSetName] <String> [[-Instance
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzVmss** menghentikan semua mesin virtual dalam Virtual Machine Scale Set (VMSS) atau kumpulan mesin virtual.
-Anda dapat menggunakan parameter *InstanceId* untuk memilih satu set mesin virtual.
+Cmdlet **Stop-AzVms** menghentikan semua mesin virtual dalam Rangkaian Skala Mesin Virtual (VMSS) atau sekumpulan mesin virtual.
+Anda dapat menggunakan parameter *InstanceId* untuk memilih sekumpulan mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Menghentikan semua mesin virtual dalam VMSS
+### Contoh 1: Hentikan semua mesin virtual dalam VMSS
 ```
 PS C:\> Stop-AzVmss -ResourceGroupName "ContosoGroup" -VMScaleSetName "ContosoVMSS"
 ```
 
-Perintah ini menghentikan semua mesin virtual yang tergabung dalam VMSS bernama ContosoVMSS.
+Perintah ini menghentikan semua mesin virtual milik VMSS bernama ContosoVMSS.
 
-### Contoh 2: Menghentikan serangkaian mesin virtual tertentu dalam VMSS
+### Contoh 2: Menghentikan sekumpulan mesin virtual tertentu dalam VMSS
 ```
 PS C:\> Stop-AzVmss -ResourceGroupName "ContosoGroup" -VMScaleSetName "ContosoVMSS" -InstanceId "3","5"
 ```
 
-Perintah ini menghentikan serangkaian mesin virtual tertentu yang ditentukan oleh larik string ID instans yang termasuk dalam VMSS bernama ContosoVMSS.
+Perintah ini menghentikan sekumpulan mesin virtual tertentu yang ditentukan oleh array string ID instans yang termasuk dalam VMSS bernama ContosoVMSS.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
 
 ```yaml
 Type: SwitchParameter
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -85,8 +85,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: SwitchParameter
@@ -101,8 +101,8 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceId
-Menentukan, sebagai array string, ID atau ID instans mesin virtual yang dihentikan cmdlet ini.
-Misalnya: `-InstanceId "0", "3"` .
+Menentukan, sebagai array string, ID atau ID instans mesin virtual yang cmdlet ini berhenti.
+Misalnya: `-InstanceId "0", "3"`.
 
 ```yaml
 Type: String[]
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -StayProvisioned
-Jika ditentukan, mesin virtual akan memasukkan status berhenti. Jika tidak ditentukan, mesin virtual akan memasukkan status berhenti menangani. Pengguna masih dikenakan biaya untuk VM dalam keadaan berhenti tetapi tidak untuk VM dalam keadaan berhenti ditangani.
+Jika ditentukan, mesin virtual akan memasuki status berhenti. Jika tidak ditentukan, mesin virtual akan memasuki status stop-deallocated. Pengguna masih dikenai biaya untuk VM dalam status berhenti tetapi tidak untuk VM dalam status berhenti ditangani.
 
 
 ```yaml
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMScaleSetName
-Menentukan nama VMSS yang menghentikan cmdlet ini pada mesin virtual.
+Menentukan nama VMSS tempat cmdlet ini menghentikan mesin virtual.
 
 ```yaml
 Type: String
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -193,11 +193,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
@@ -212,14 +212,14 @@ Cmdlet ini tidak menerima input apa pun.
 
 [New-AzVmss](./New-AzVmss.md)
 
-[Remove-AzVmss](./Remove-AzVmss.md)
+[Hapus-AzVms](./Remove-AzVmss.md)
 
-[Mulai Ulang AzVmss](./Restart-AzVmss.md)
+[Mulai ulang-AzVms](./Restart-AzVmss.md)
 
-[Set-AzVmss](./Set-AzVmss.md)
+[Set-AzVms](./Set-AzVmss.md)
 
 [Start-AzVmss](./Start-AzVmss.md)
 
-[Update-AzVmss](./Update-AzVmss.md)
+[Pembaruan-AzVms](./Update-AzVmss.md)
 
 

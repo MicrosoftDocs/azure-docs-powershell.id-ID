@@ -4,11 +4,11 @@ ms.assetid: A1E143A8-70F2-4158-9A10-F2082AD62A73
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 42536092e072783230acb4d43b6f0ff2396a550f
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427418"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142334451"
 ---
 # Stop-AzureStorSimpleJob
 
@@ -25,19 +25,19 @@ Stop-AzureStorSimpleJob -InstanceId <String> [-Force] [-Profile <AzureSMProfile>
 
 ## DESCRIPTION
 Cmdlet **Stop-AzureStorSimpleJob** menghentikan pekerjaan StorSimple yang sedang berlangsung.
-Anda dapat menentukan pekerjaan dengan menyediakan ID instans atau nama pekerjaan.
+Anda dapat menentukan pekerjaan dengan memasukkan ID instans atau nama pekerjaan.
 
 ## EXAMPLES
 
-### Contoh 1: Hentikan pekerjaan untuk perangkat
+### Contoh 1: Menghentikan pekerjaan untuk perangkat
 ```
 PS C:\>Get-AzureStorSimpleJob -DeviceName "Device07" | Stop-AzureStorSimpleJob -Force
 ```
 
-Perintah ini mendapatkan pekerjaan untuk perangkat bernama Device07, dengan menggunakan cmdlet **Get-AzureStorSimpleJob.**
-Perintah itu menyampaikan pekerjaan ke cmdlet saat ini dengan menggunakan operator pipeline.
-Cmdlet saat ini menghentikan pekerjaan yang dilakukan perintah.
-Perintah menentukan parameter *Paksa,* dan, oleh karena itu, perintah tidak akan meminta konfirmasi Anda sebelum perintah itu menghentikan pekerjaan.
+Perintah ini mendapatkan pekerjaan untuk perangkat bernama Device07, dengan menggunakan cmdlet **Get-AzureStorSimpleJob** .
+Perintah meneruskan pekerjaan ke cmdlet saat ini menggunakan operator pipeline.
+Cmdlet saat ini menghentikan pekerjaan apa pun yang dilewati perintah.
+Perintah menentukan parameter *Paksa* , dan, jadi, perintah tersebut tidak meminta konfirmasi sebelum menghentikan pekerjaan.
 
 ### Contoh 2: Menghentikan pekerjaan tertentu
 ```
@@ -48,8 +48,8 @@ Perintah ini menghentikan pekerjaan yang memiliki ID instans tertentu.
 
 ## PARAMETERS
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: SwitchParameter
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceId
-Menentukan ID pekerjaan perangkat untuk dihentikan.
+Menentukan ID dari tugas perangkat yang akan dihentikan.
 
 ```yaml
 Type: String
@@ -94,16 +94,16 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
 ### DeviceJobDetails
-Cmdlet ini mendapatkan detail **DeviceJob bahwa** cmdlet ini berhenti.
+Cmdlet ini mendapatkan detail **DeviceJob** yang cmdlet ini berhenti.
 
 ## CATATAN
 

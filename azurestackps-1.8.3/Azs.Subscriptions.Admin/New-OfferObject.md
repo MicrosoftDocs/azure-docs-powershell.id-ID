@@ -4,16 +4,16 @@ Module Name: Azs.Subscriptions.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 5526ccd8fe050f9aa81974c8ea4ae1872125c087
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136578242"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142353365"
 ---
 # New-OfferObject
 
 ## SYNOPSIS
-Mewakili penawaran layanan yang mana langganan bisa dibuat.
+Mewakili penawaran layanan dengan langganan yang dapat dibuat.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-OfferObject [[-Tags] <System.Collections.Generic.Dictionary`2[System.String,
 ```
 
 ## DESCRIPTION
-Mewakili penawaran layanan yang mana langganan bisa dibuat.
+Mewakili penawaran layanan dengan langganan yang dapat dibuat.
 
 ## EXAMPLES
 
@@ -35,12 +35,12 @@ Mewakili penawaran layanan yang mana langganan bisa dibuat.
 PS C:\> {{ Add example code here }}
 ```
 
-{{ Tambahkan contoh deskripsi di sini }}
+{{ Tambahkan deskripsi contoh di sini }}
 
 ## PARAMETERS
 
 ### -AddonPlanDefinition
-Referensi untuk paket add-on yang bisa didapatkan penyewa secara opsional sebagai bagian dari penawaran.
+Referensi ke paket add-on yang dapat diperoleh penyewa secara opsional sebagai bagian dari penawaran.
 
 ```yaml
 Type: AddonPlanDefinition[]
@@ -55,7 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -BasePlanIds
-Pengidentifikasi paket dasar yang menjadi tersedia untuk penyewa segera ketika penyewa berlangganan penawaran.
+Pengidentifikasi rencana dasar yang langsung tersedia untuk penyewa saat penyewa berlangganan penawaran.
 
 ```yaml
 Type: String[]
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi tempat sumber daya adalah lokasi.
+Lokasi lokasi sumber daya.
 
 ```yaml
 Type: String
@@ -204,7 +204,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tag
+### -Tags
 Daftar pasangan nilai kunci.
 
 ```yaml
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

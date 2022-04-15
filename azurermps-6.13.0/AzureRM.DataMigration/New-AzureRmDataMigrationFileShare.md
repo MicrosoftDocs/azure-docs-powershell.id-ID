@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataMigration/Commands.DataMigration/help/New-AzureRmDataMigrationFileShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataMigration/Commands.DataMigration/help/New-AzureRmDataMigrationFileShare.md
 ms.openlocfilehash: b34665f9402186a1e07671e614d91fee59f565d5
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140850942"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142357677"
 ---
 # New-AzureRmDataMigrationFileShare
 
 ## SYNOPSIS
-Membuat objek FileShare untuk Layanan Migrasi Database Azure, yang menentukan berbagi jaringan lokal untuk melakukan pencadangan database sumber.
+Membuat objek FileShare untuk Azure Database Migration Service, yang menentukan berbagi jaringan lokal untuk mengambil cadangan database sumber.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ New-AzureRmDataMigrationFileShare -Path <String> -Credential <PSCredential>
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzureRmDataMigrationFileShare membuat objek FileShare yang menentukan berbagi jaringan lokal tempat Layanan Migrasi Database Azure dapat melakukan pencadangan database sumber. Akun layanan yang menjalankan sumber SQL Server harus memiliki hak istimewa menulis di jaringan bersama ini.
+Cmdlet New-AzureRmDataMigrationFileShare membuat objek FileShare yang menentukan berbagi jaringan lokal yang Azure Database Migration Service bisa mengambil cadangan database sumber. Akun layanan yang menjalankan instans SQL Server sumber harus memiliki hak istimewa penulisan pada berbagi jaringan ini.
 
 ## EXAMPLES
 
@@ -42,7 +42,7 @@ domain\user testadmin123 \\fileshare\folder1
 
 ## PARAMETERS
 
-### -Credential
+### -Kredensial
 Kredensial untuk mengakses berbagi file.
 
 ```yaml
@@ -72,7 +72,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
+### -Jalur
 Jalur berbagi file.
 
 ```yaml
@@ -88,11 +88,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricManagedClusterApplicationType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricManagedClusterApplicationType.md
-ms.openlocfilehash: a9b12dc94f7cfc63a2417675149e7378d1a45a18
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 38b2316d1c827a4f35524874acc5387c20990326
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140380527"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142367243"
 ---
 # Remove-AzServiceFabricManagedClusterApplicationType
 
 ## SYNOPSIS
-Menghapus tipe aplikasi terkelola dari kluster. Ini akan menghapus semua versi tipe di bawah sumber daya ini. Hanya mendukung tipe aplikasi yang disebarkan ARM.
+Menghapus tipe aplikasi yang dikelola dari kluster. Tindakan ini akan menghapus semua versi tipe di bawah sumber daya ini. Hanya mendukung ARM tipe aplikasi yang digunakan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/remove-azservicefabricmanagedclusterapplicationtype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Remove-AzServiceFabricManagedClusterApplicationType -InputObject <PSManagedAppli
 ```
 
 ## DESCRIPTION
-Cmdlet ini menghapus formulir tipe aplikasi terkelola kluster dan akan menghapus semua versi tipe di bawah sumber daya ini, tetapi semua aplikasi di bawahnya harus dihapus sebelum menjalankan perintah ini.
+Cmdlet ini menghapus tipe aplikasi yang dikelola dari kluster dan akan menghapus semua versi tipe di bawah sumber daya ini, tetapi semua aplikasi di bawahnya harus dihapus sebelum menjalankan perintah ini.
 
 ## EXAMPLES
 
@@ -51,7 +54,7 @@ PS C:\> $appTypeName = "testAppType"
 PS C:\> Remove-AzServiceFabricManagedClusterApplicationType -ResourceGroupName $resourceGroupName -ClusterName $clusterName -Name $appTypeName -Verbose
 ```
 
-This example will remove the managed application type "testAppType" and all the version under it. Jika ada aplikasi yang dibuat dengan tipe ini, perintah akan memberikan pengecualian.
+Contoh ini akan menghapus tipe aplikasi terkelola "testAppType" dan semua versi di bawahnya. Jika ada aplikasi yang dibuat dengan tipe ini, perintah akan memberikan pengecualian.
 
 ### Contoh 2
 ```powershell
@@ -62,7 +65,7 @@ PS C:\> $appType = Get-AzServiceFabricManagedClusterApplicationType -ResourceGro
 PS C:\> $appType | Remove-AzServiceFabricManagedClusterApplicationType -Verbose
 ```
 
-This example will remove the managed application type "testAppType" and all the version under it. Jika ada aplikasi yang dibuat dengan tipe ini, perintah akan memberikan pengecualian.
+Contoh ini akan menghapus tipe aplikasi terkelola "testAppType" dan semua versi di bawahnya. Jika ada aplikasi yang dibuat dengan tipe ini, perintah akan memberikan pengecualian.
 
 ### Contoh 3
 ```powershell
@@ -104,8 +107,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Menghapus tanpa perintah.
+### -Paksa
+Hapus tanpa perintah.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Sumber daya tipe aplikasi yang dikelola.
+Sumber daya tipe aplikasi terkelola.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.PSManagedApplicationType
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Tentukan nama dari tipe aplikasi yang dikelola.
+Tentukan nama tipe aplikasi yang dikelola.
 
 ```yaml
 Type: System.String
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

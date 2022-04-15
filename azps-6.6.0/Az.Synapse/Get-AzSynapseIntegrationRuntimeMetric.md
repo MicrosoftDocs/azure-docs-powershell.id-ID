@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseIntegrationRuntimeMetric.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseIntegrationRuntimeMetric.md
 ms.openlocfilehash: 7a4f4a30ab7ee8bb25e8a882efe24eed3c32bf22
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140275745"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142322177"
 ---
 # Get-AzSynapseIntegrationRuntimeMetric
 
 ## SYNOPSIS
-Mendapatkan metrik data untuk runtime integrasi. 
+Mendapatkan data metrik untuk runtime integrasi. 
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapseintegrationruntimemetric) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapseintegrationruntimemetric) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ Get-AzSynapseIntegrationRuntimeMetric -InputObject <PSIntegrationRuntime>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseIntegrationRuntimeMetric** mendapatkan metrik data tentang runtime integrasi di dalam ruang kerja.
+Cmdlet **Get-AzSynapseIntegrationRuntimeMetric** mendapatkan data metrik tentang runtime integrasi dalam ruang kerja.
 
 ## EXAMPLES
 
@@ -56,7 +56,7 @@ Cmdlet **Get-AzSynapseIntegrationRuntimeMetric** mendapatkan metrik data tentang
 PS C:\> Get-AzSynapseIntegrationRuntimeMetric -WorkspaceName ContosoWorkspace -Name 'test-selfhost-ir'
 ```
 
-Perintah ini menampilkan data metrik tentang runtime integrasi yang bernama 'test-selfhost-ir' di ruang kerja yang bernama ContosoWorkspace.
+Perintah ini menampilkan data metrik tentang runtime integrasi bernama 'test-selfhost-ir' di ruang kerja bernama ContosoWorkspace.
 
 ## PARAMETERS
 
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya dari runtime integrasi Synapse.
+Pengidentifikasi sumber daya runtime integrasi Synapse.
 
 ```yaml
 Type: System.String
@@ -135,7 +135,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

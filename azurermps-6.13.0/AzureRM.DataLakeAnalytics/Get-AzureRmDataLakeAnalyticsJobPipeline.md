@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeAnalytics/Commands.DataLakeAnalytics/help/Get-AzureRmDataLakeAnalyticsJobPipeline.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeAnalytics/Commands.DataLakeAnalytics/help/Get-AzureRmDataLakeAnalyticsJobPipeline.md
 ms.openlocfilehash: c17a58cee2b5f13345997b97ce00792a8b9c9a0f
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140853753"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142357895"
 ---
 # Get-AzureRmDataLakeAnalyticsJobPipeline
 
 ## SYNOPSIS
-Mendapatkan pipeline atau pipeline Job Analitik Danau Data.
+Mendapatkan pipa atau saluran Pekerjaan Data Lake Analytics.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -35,28 +35,28 @@ Get-AzureRmDataLakeAnalyticsJobPipeline [-Account] <String> [-PipelineId] <Guid>
 ```
 
 ## DESCRIPTION
-**Get-AzureRmDataLakeAnalyticsJobPipeline** memiliki pipeline Job Analytics Azure Data Lake Analytics atau daftar saluran tertentu.
+**Get-AzureRmDataLakeAnalyticsJobPipeline** mendapatkan pipeline Azure Data Lake Analytics Job atau daftar saluran tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pipeline yang ditentukan
+### Contoh 1: Dapatkan pipeline tertentu
 ```
 PS C:\>Get-AzureRmDataLakeAnalyticsJobPipeline -Account "contosoadla" -PipelineId 83cb7ad2-3523-4b82-b909-d478b0d8aea3
 ```
 
 Perintah ini mendapatkan pipeline yang ditentukan dengan id '83cb7ad2-3523-4b82-b909-d478b0d8aea3' dalam akun 'contosoadla'.
 
-### Contoh 2: Mendapatkan daftar semua saluran dalam akun
+### Contoh 2: Dapatkan daftar semua saluran dalam akun
 ```
 PS C:\>Get-AzureRmDataLakeAnalyticsJobPipeline -AccountName "contosoadla"
 ```
 
-Perintah ini mendapatkan daftar semua saluran dalam akun "contosoadla"
+Perintah ini mendapatkan daftar semua alur dalam akun "contosoadla"
 
 ## PARAMETERS
 
 ### -Akun
-Nama nama akun Analitik Danau Data di bawah yang ingin diambil alur kerjanya.
+Nama nama akun Data Lake Analytics yang ingin diambil alur pekerjaannya.
 
 ```yaml
 Type: System.String
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -PipelineId
-ID dari pipeline pekerjaan tertentu untuk mengembalikan informasi.
+ID pipeline pekerjaan tertentu untuk mengembalikan informasi.
 
 ```yaml
 Type: System.Guid
@@ -115,8 +115,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -SubmittedBefore
-Filter opsional yang mengembalikan alur kerja hanya dikirimkan sebelum waktu yang ditentukan.
+### -DikirimBefore
+Filter opsional yang mengembalikan pipeline pekerjaan hanya dikirimkan sebelum waktu yang ditentukan.
 
 ```yaml
 Type: System.Nullable`1[System.DateTimeOffset]
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -139,7 +139,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Guid
 
-### System.Nullable'1[[System.DateTimeOffset, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.DateTimeOffset, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 

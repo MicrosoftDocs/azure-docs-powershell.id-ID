@@ -4,16 +4,16 @@ Module Name: Azs.Update.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.update.admin/get-azsupdatelocation
 schema: 2.0.0
 ms.openlocfilehash: 0aa8e2358a5af4a5f73339a1068b0668914eef6e
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132415299"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142330955"
 ---
 # Get-AzsUpdateLocation
 
 ## SYNOPSIS
-Dapatkan pembaruan lokasi berdasarkan nama.
+Dapatkan lokasi pembaruan berdasarkan nama.
 
 ## SYNTAX
 
@@ -35,11 +35,11 @@ Get-AzsUpdateLocation [-ResourceGroupName <String>] [-SubscriptionId <String[]>]
 ```
 
 ## DESCRIPTION
-Dapatkan pembaruan lokasi berdasarkan nama.
+Dapatkan lokasi pembaruan berdasarkan nama.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua lokasi pembaruan
+### Contoh 1: Dapatkan Semua Lokasi Pembaruan
 ```powershell
 PS C:\> Get-AzsUpdateLocation
 
@@ -59,7 +59,7 @@ Name                 CurrentVersion       CurrentOemVersion    State
 northwest            1.1912.0.30          2.1.1907.4           AppliedSuccessfully
 ```
 
-Akan mengambil semua lokasi pembaruan yang sesuai dengan parameter Nama yang ditentukan
+Akan mengambil semua lokasi pembaruan yang cocok dengan parameter Nama yang ditentukan
 
 ## PARAMETERS
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Models.IUpdateAdminIdentity
@@ -128,8 +128,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -159,13 +159,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 INPUTOBJECT <IUpdateAdminIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
-  - `[RunName <String>]`: Perbarui jalankan pengidentifikasi.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.  ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[RunName <String>]`: Perbarui pengidentifikasi jalankan.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.  ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
   - `[UpdateLocation <String>]`: Nama lokasi pembaruan.
   - `[UpdateName <String>]`: Nama pembaruan.
 

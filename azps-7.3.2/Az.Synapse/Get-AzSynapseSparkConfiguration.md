@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSparkConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSparkConfiguration.md
-ms.openlocfilehash: 475cc6978154c8ddb4481d5b0e1fb39621a5cc72
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e24c934a0304997d13d253ce3f273656c03a7276
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139998112"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142364435"
 ---
 # Get-AzSynapseSparkConfiguration
 
 ## SYNOPSIS
-Mendapatkan informasi tentang konfigurasi grafik api di ruang kerja.
+Mendapatkan informasi tentang konfigurasi percikan api dalam ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsesparkconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzSynapseSparkConfiguration -WorkspaceObject <PSSynapseWorkspace> [-Name <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseSparkConfiguration** mendapatkan informasi tentang konfigurasi grafik api di dalam ruang kerja. Jika Anda menentukan nama konfigurasi grafik api, cmdlet mendapatkan informasi tentang konfigurasi grafik api tersebut. Jika Anda tidak menentukan nama, cmdlet mendapatkan informasi tentang semua konfigurasi grafik api di ruang kerja.
+Cmdlet **Get-AzSynapseSparkConfiguration** mendapatkan informasi tentang konfigurasi percikan api dalam ruang kerja. Jika Anda menentukan nama konfigurasi percikan api, cmdlet akan mendapatkan informasi tentang konfigurasi percikan tersebut. Jika Anda tidak menentukan nama, cmdlet mendapatkan informasi tentang semua konfigurasi percikan di ruang kerja.
 
 ## EXAMPLES
 
@@ -41,14 +44,14 @@ Cmdlet **Get-AzSynapseSparkConfiguration** mendapatkan informasi tentang konfigu
 PS C:\> Get-AzSynapseSparkConfiguration -WorkspaceName ContosoWorkspace
 ```
 
-Mendapatkan daftar semua konfigurasi grafik api di ruang kerja ContosoWorkspace.
+Mendapatkan daftar semua konfigurasi percikan api di ruang kerja ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzSynapseSparkConfiguration -WorkspaceName ContosoWorkspace -Name ContosoSparkConfiguration
 ```
 
-Mendapatkan konfigurasi grafik api tunggal yang disebut ContosoSparkConfiguration di ruang kerja ContosoWorkspace.
+Mendapatkan konfigurasi percikan api tunggal yang disebut ContosoSparkConfiguration di ruang kerja ContosoWorkspace.
 
 ### Contoh 3
 ```powershell
@@ -56,7 +59,7 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Get-AzSynapseSparkConfiguration -Name ContosoSparkConfiguration
 ```
 
-Mendapatkan konfigurasi grafik api tunggal yang disebut ContosoSparkConfiguration di ruang kerja ContosoWorkspace melalui pipeline.
+Mendapatkan konfigurasi percikan api tunggal yang disebut ContosoSparkConfiguration di ruang kerja ContosoWorkspace melalui pipeline.
 
 ## PARAMETERS
 
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Konfigurasi Grafik Api.
+Nama Konfigurasi Spark.
 
 ```yaml
 Type: System.String
@@ -90,7 +93,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

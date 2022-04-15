@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPool.md
-ms.openlocfilehash: fa0d6b00600c0c471b5d1b5578bb947ebcb7f255
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5a84dc7d7ccfde6ad285c2f8c5d62f79667065a6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140380270"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142337129"
 ---
 # Get-AzSynapseSqlPool
 
 ## SYNOPSIS
-Mendapatkan fitur Analitik Synapse SQL sama.
+Dapatkan kumpulan SQL Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsesqlpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzSynapseSqlPool [-Version <Int32>] -ResourceId <String> [-DefaultProfile <I
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseSqlPool** mendapatkan informasi tentang azure Synapse Analytics SQL sama.
+Cmdlet **Get-AzSynapseSqlPool** mendapatkan informasi tentang Azure Synapse kumpulan SQL Analytics.
 
 ## EXAMPLES
 
@@ -47,14 +50,14 @@ Cmdlet **Get-AzSynapseSqlPool** mendapatkan informasi tentang azure Synapse Anal
 PS C:\> Get-AzSynapseSqlPool -WorkspaceName ContosoWorkspace
 ```
 
-Perintah ini akan mendapatkan SQL kolam renang di bawah ruang kerja.
+Perintah ini mendapatkan semua kumpulan SQL di bawah ruang kerja.
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzSynapseSqlPool -WorkspaceName ContosoWorkspace -Name ContosoSqlPool
 ```
 
-Perintah ini akan SQL bersama dengan ruang kerja ContosoWorkspace dengan nama ContosoSqlPool.
+Perintah ini mendapatkan kumpulan SQL di bawah ruang kerja ContosoWorkspace dengan nama ContosoSqlPool.
 
 ### Contoh 3
 ```powershell
@@ -62,14 +65,14 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Get-AzSynapseSqlPool
 ```
 
-Perintah ini akan mendapatkan semua SQL kolam renang di bawah ruang kerja melalui saluran.
+Perintah ini mendapatkan semua kumpulan SQL di bawah ruang kerja melalui pipeline.
 
 ### Contoh 4
 ```powershell
 PS C:\> Get-AzSynapseSqlPool -ResourceId "/subscriptions/21686af7-58ec-4f4d-9c68-f431f4db4edd/resourceGroups/ContosoResourceGroup/providers/Microsoft.Synapse/workspaces/ContosoWorkspace/sqlPools/ContosoSqlPool"
 ```
 
-Perintah ini akan mendapatkan SQL sumber daya dengan ID sumber daya yang ditentukan.
+Perintah ini mendapatkan kumpulan SQL dengan ID sumber daya yang ditentukan.
 
 ## PARAMETERS
 
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama SQL Tim.
+Nama Synapse SQL pool.
 
 ```yaml
 Type: System.String
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya dari Synapse SQL Pool.
+Pengidentifikasi sumber daya Synapse SQL Pool.
 
 ```yaml
 Type: System.String
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -Versi
-[Fitur ini berada dalam pratinjau terbatas, awalnya hanya dapat diakses untuk langganan tertentu.] Versi Synapse SQL pool. Misalnya, 2 atau 3.
+[Fitur ini berada dalam pratinjau terbatas, awalnya hanya dapat diakses oleh langganan tertentu.] Versi Synapse SQL pool. Misalnya, 2 atau 3.
 
 ```yaml
 Type: System.Int32
@@ -148,7 +151,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

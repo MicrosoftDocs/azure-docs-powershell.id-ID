@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/new-azkust
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/New-AzKustoDatabasePrincipalAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/New-AzKustoDatabasePrincipalAssignment.md
-ms.openlocfilehash: fcbdcd76638346c546436a99bdb0e18125ef6c3e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a7dbccbe08ec4027cd64f393b1ed86c5c10edfb5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140186404"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142373417"
 ---
 # New-AzKustoDatabasePrincipalAssignment
 
 ## SYNOPSIS
-Membuat prinsipal database kluster KustoAssignment.
+Membuat Kusto database cluster principalAssignment.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.kusto/new-azkustodatabaseprincipalassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ New-AzKustoDatabasePrincipalAssignment -ClusterName <String> -DatabaseName <Stri
 ```
 
 ## DESCRIPTION
-Membuat prinsipal database kluster KustoAssignment.
+Membuat Kusto database cluster principalAssignment.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat prinsipal database kluster Kusto
+### Contoh 1: Membuat Kusto prinsipal database clusterAssignment
 ```powershell
 PS C:\> New-AzKustoDatabasePrincipalAssignment -ResourceGroupName testrg -ClusterName testnewkustocluster -DatabaseName mykustodatabase -PrincipalAssignmentName kustoprincipal1 -PrincipalId "7e1cb39f-d2cb-4f0d-801a-c9ea1f376e96" -PrincipalType App -Role Admin
 
@@ -40,7 +43,7 @@ Name                                                Type
 testnewkustocluster/mykustodatabase/kustoprincipal1 Microsoft.Kusto/Clusters/Databases/PrincipalAssignments
 ```
 
-Perintah di atas membuat prinsipal database kluster Kusto
+Perintah di atas membuat Kusto prinsipal database database principalAssignment
 
 ## PARAMETERS
 
@@ -60,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterName
-Nama kluster Kusto.
+Nama klaster Kusto.
 
 ```yaml
 Type: System.String
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Nama database dalam kluster Kusto.
+Nama database dalam klaster Kusto.
 
 ```yaml
 Type: System.String
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalAssignmentName
-Nama principalAssignment Kusto.
+Nama Kusto principalAssignment.
 
 ```yaml
 Type: System.String
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 
 ### -PrincipalId
 ID utama yang ditetapkan ke prinsipal database.
-Ini bisa menjadi email pengguna, ID aplikasi, atau nama grup keamanan.
+Ini bisa berupa email pengguna, ID aplikasi, atau nama grup keamanan.
 
 ```yaml
 Type: System.String
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalType
-Tipe pokok.
+Tipe prinsipal.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Kusto.Support.PrincipalType
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi kluster Kusto.
+Nama grup sumber daya yang berisi klaster Kusto.
 
 ```yaml
 Type: System.String
@@ -196,8 +199,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-Id penyewa pokok
+Id penyewa dari prinsipal
 
 ```yaml
 Type: System.String
@@ -227,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -258,13 +261,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Kusto.Models.Api202101.IDatabasePrincipalAssignment
+### Microsoft.Azure.PowerShell.Cmdlets. Kusto. Models.Api202101.IDatabasePrincipalAssignment
 
 ## CATATAN
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzFirewallPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzFirewallPolicy.md
-ms.openlocfilehash: 82adf41b335c179fbd0feb137b66c259bec5ca8d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0845a213f19bb6662a877a7688262879eaf9ea83
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140392314"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142344203"
 ---
 # Set-AzFirewallPolicy
 
 ## SYNOPSIS
-Menyimpan kebijakan firewall Azure yang diubah
+Menyimpan kebijakan firewall azure yang dimodifikasi
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azfirewallpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -82,7 +85,7 @@ Contoh ini mengatur kebijakan firewall dengan daftar putih intel ancaman baru
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -BasePolicy
-Kebijakan dasar yang diwariskan
+Kebijakan dasar untuk mewarisi
 
 ```yaml
 Type: System.String
@@ -141,8 +144,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Identity
-Identitas Kebijakan Firewall akan ditetapkan ke Kebijakan Firewall.
+### -Identitas
+Identitas Kebijakan Firewall untuk ditetapkan ke Kebijakan Firewall.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSManagedServiceIdentity
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -IntrusionDetection
-Pengaturan deteksi penyusup
+Pengaturan Deteksi Intrusi
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSAzureFirewallPolicyIntrusionDetection
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-lokasi.
+Lokasi.
 
 ```yaml
 Type: System.String
@@ -298,7 +301,7 @@ Accept wildcard characters: True
 ```
 
 ### -SkuTier
-Kebijakan firewall sku tier
+Tingkat sku kebijakan firewall
 
 ```yaml
 Type: System.String
@@ -329,7 +332,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable yang mewakili tag sumber daya.
+Sebuah hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -359,7 +362,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -ThreatIntelGoldlist
+### -ThreatIntelWhitelist
 Daftar putih untuk Threat Intelligence
 
 ```yaml
@@ -375,7 +378,7 @@ Accept wildcard characters: False
 ```
 
 ### -TransportSecurityKeyVaultSecretId
-Id Rahasia dari (base-64 encoded unencrypted pfx) 'Secret' atau 'Certificate' object stored in KeyVault
+Secret Id of (base-64 encoded unencrypted pfx) 'Secret' atau 'Certificate' object stored in KeyVault
 
 ```yaml
 Type: System.String
@@ -390,7 +393,7 @@ Accept wildcard characters: False
 ```
 
 ### -TransportSecurityName
-Nama keamanan transpor
+Nama keamanan transportasi
 
 ```yaml
 Type: System.String
@@ -405,7 +408,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserAssignedIdentityId
-ResourceId identitas yang ditetapkan pengguna untuk ditetapkan ke Kebijakan Firewall.
+ResourceId dari identitas pengguna yang ditetapkan untuk ditetapkan ke Kebijakan Firewall.
 
 ```yaml
 Type: System.String
@@ -420,7 +423,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -436,7 +439,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -451,7 +454,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

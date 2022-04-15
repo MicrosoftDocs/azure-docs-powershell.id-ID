@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageAccountSASToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageAccountSASToken.md
-ms.openlocfilehash: 0bb8267f057972b40e18de09fe5d81dac6474aa7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 4d05dadfeeb5065dbf2225fdc97874a9c1ddadd7
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140178411"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142338443"
 ---
 # New-AzStorageAccountSASToken
 
 ## SYNOPSIS
 Membuat token SAS tingkat akun.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azstorageaccountsastoken) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,31 +31,31 @@ New-AzStorageAccountSASToken -Service <SharedAccessAccountServices>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzStorageAccountSASToken** membuat token tanda tangan akses bersama (SAS, Shared Access Signature) tingkat akun untuk akun Azure Storage tersebut.
-Anda dapat menggunakan token SAS untuk mendelegasikan izin untuk beberapa layanan, atau untuk mendelegasikan izin untuk layanan yang tidak tersedia dengan token SAS tingkat objek.
+Cmdlet **New-AzStorageAccountSASToken** membuat token shared access signature (SAS) tingkat akun untuk akun Azure Storage.
+Anda bisa menggunakan token SAS untuk mendelegasikan izin untuk beberapa layanan, atau untuk mendelegasikan izin untuk layanan yang tidak tersedia dengan token SAS tingkat objek.
 
 ## EXAMPLES
 
-### Contoh 1: Buat token SAS tingkat akun dengan izin penuh
+### Contoh 1: Membuat token SAS tingkat akun dengan izin penuh
 ```
 PS C:\> New-AzStorageAccountSASToken -Service Blob,File,Table,Queue -ResourceType Service,Container,Object -Permission "racwdlup"
 ```
 
 Perintah ini membuat token SAS tingkat akun dengan izin penuh.
 
-### Contoh 2: Buat token SAS tingkat akun untuk rentang alamat IP
+### Contoh 2: Membuat token SAS tingkat akun untuk rentang alamat IP
 ```
 PS C:\> New-AzStorageAccountSASToken -Service Blob,File,Table,Queue -ResourceType Service,Container,Object -Permission "racwdlup" -Protocol HttpsOnly -IPAddressOrRange 168.1.5.60-168.1.5.70
 ```
 
-Perintah ini membuat token SAS tingkat akun untuk permintaan HTTPS-saja dari rentang alamat IP yang ditentukan.
+Perintah ini membuat token SAS tingkat akun untuk permintaan HTTPS saja dari rentang alamat IP tertentu.
 
-### Contoh 3: Buat token SAS tingkat akun yang berlaku selama 24 jam
+### Contoh 3: Membuat token SAS tingkat akun yang valid selama 24 jam
 ```
 PS C:\> New-AzStorageAccountSASToken -Service Blob -ResourceType Service,Container,Object -Permission "rl" -ExpiryTime (Get-Date).AddDays(1)
 ```
 
-Perintah ini membuat token SAS tingkat akun baca-saja yang berlaku selama 24 jam. 
+Perintah ini membuat token SAS tingkat akun baca-saja yang valid selama 24 jam. 
 
 ## PARAMETERS
 
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpiryTime
-Menentukan waktu di mana tanda tangan akses bersama menjadi tidak valid.
+Menentukan waktu ketika tanda tangan akses bersama menjadi tidak valid.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -103,8 +106,8 @@ Accept wildcard characters: False
 ```
 
 ### -IPAddressOrRange
-Menentukan alamat IP atau rentang alamat IP untuk menerima permintaan, seperti 168.1.5.65 atau 168.1.5.60-168.1.5.70.
-Rentang bersifat inklusif.
+Menentukan alamat IP atau rentang alamat IP yang menerima permintaan, seperti 168.1.5.65 atau 168.1.5.60-168.1.5.70.
+Rentangnya inklusif.
 
 ```yaml
 Type: System.String
@@ -118,11 +121,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Permission
-Menentukan izin untuk Storage Anda.
-Izin hanya valid jika sesuai dengan tipe sumber daya yang ditentukan.
-Penting untuk diingat bahwa ini adalah string, seperti (untuk `rwd` Baca, Tulis dan Hapus).
-Untuk informasi selengkapnya tentang nilai izin yang dapat diterima, lihat Membangun SAS Akun http://go.microsoft.com/fwlink/?LinkId=799514
+### -Izin
+Menentukan izin untuk akun Storage.
+Izin hanya valid jika cocok dengan tipe sumber daya yang ditentukan.
+Penting untuk diperhatikan bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis, dan Hapus).
+Untuk informasi selengkapnya tentang nilai izin yang dapat diterima, lihat Menyusun Akun SAS http://go.microsoft.com/fwlink/?LinkId=799514
 
 ```yaml
 Type: System.String
@@ -136,11 +139,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
-Menentukan protokol yang diizinkan untuk permintaan yang dibuat dengan akun SAS.
+### -Protokol
+Menentukan protokol yang diizinkan untuk permintaan yang dibuat dengan AKUN SAS.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - HttpsOnly
-- HttpsOrHttp Nilai default adalah HttpsOrHttp.
+- HttpsOrHttp The default value is HttpsOrHttp.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Storage.SharedAccessProtocol]
@@ -158,10 +161,10 @@ Accept wildcard characters: False
 ### -ResourceType
 Menentukan tipe sumber daya yang tersedia dengan token SAS.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Tidak ada
+- Tidak
 - Layanan
-- Container
-- Object
+- Wadah
+- Objek
 
 ```yaml
 Type: Microsoft.Azure.Storage.SharedAccessAccountResourceTypes
@@ -179,11 +182,11 @@ Accept wildcard characters: False
 ### -Layanan
 Menentukan layanan.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Tidak ada
-- Blob
+- Tidak
+- Gumpalan
 - File
-- Antrean
-- Tabel
+- Antrian
+- Meja
 
 ```yaml
 Type: Microsoft.Azure.Storage.SharedAccessAccountServices
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Menentukan waktu, sebagai objek **DateTime** , ketika SAS menjadi valid.
+Menentukan waktu, sebagai objek **DateTime** , di mana SAS menjadi valid.
 Untuk mendapatkan objek **DateTime** , gunakan cmdlet Get-Date.
 
 ```yaml
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

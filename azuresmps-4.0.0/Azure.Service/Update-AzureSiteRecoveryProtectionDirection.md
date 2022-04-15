@@ -3,17 +3,17 @@ external help file: Microsoft.Azure.Commands.RecoveryServicesRdfe.dll-Help.xml
 ms.assetid: 870EE77E-57D9-4B52-9F80-CB24D642E6E7
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: a53ddd6ab836a79e3570fa61c725560cdacdf8d94a9a46105ac56d06d2151d05
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 7a9cb30822ea782e4992a3ce67137f843721c6b4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417666"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142334323"
 ---
 # Update-AzureSiteRecoveryProtectionDirection
 
 ## SYNOPSIS
-Memperbarui server sumber dan target untuk perlindungan objek Pemulihan Situs.
+Memperbarui server sumber dan target untuk perlindungan objek Site Recovery.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -44,11 +44,11 @@ Update-AzureSiteRecoveryProtectionDirection -ProtectionEntity <ASRProtectionEnti
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzureSiteRecoveryProtectionDirection** memperbarui server sumber dan target untuk proteksi objek Pemulihan Situs Azure setelah operasi failover tindakan selesai.
+Cmdlet **Update-AzureSiteRecoveryProtectionDirection** memperbarui server sumber dan target untuk perlindungan objek Azure Site Recovery setelah operasi failover selesai.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah arah untuk objek yang diproteksi dalam wadah
+### Contoh 1: Memodifikasi arah untuk objek yang diproteksi dalam wadah
 ```
 PS C:\> $Container = Get-AzureSiteRecoveryProtectionContainer 
 PS C:\> $Protected = Get-AzureSiteRecoveryProtectionEntity -ProtectionContainer $Container  
@@ -65,12 +65,12 @@ Tasks            : {}
 Errors           : {}
 ```
 
-Perintah pertama mendapatkan wadah yang diproteksi di vault Pemulihan Situs Azure saat ini menggunakan cmdlet **Get-AzureSiteRecoveryProtectionContainer,** lalu menyimpannya dalam variabel $Container baru.
+Perintah pertama mendapatkan wadah yang dilindungi di azure saat ini Site Recovery kubah dengan menggunakan cmdlet **Get-AzureSiteRecoveryProtectionContainer**, lalu menyimpannya dalam variabel $Container.
 
-Perintah kedua mendapatkan mesin virtual yang termasuk dalam wadah yang disimpan di $Container menggunakan cmdlet **Get-AzureSiteRecoveryProtectionEntity.**
-Perintah menyimpan hasil dalam $Protected variabel.
+Perintah kedua mendapatkan mesin virtual milik wadah yang disimpan di $Container menggunakan cmdlet **Get-AzureSiteRecoveryProtectionEntity** .
+Perintah menyimpan hasil dalam variabel $Protected.
 
-Perintah terakhir mengatur arah ke RecoverToPrimary untuk objek yang disimpan dalam $Protected.
+Perintah akhir mengatur arah ke RecoverToPrimary untuk objek yang disimpan di $Protected.
 
 ## PARAMETERS
 
@@ -94,8 +94,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -110,8 +110,8 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionContainerId
-Menentukan ID dari wadah yang diproteksi.
-Cmdlet ini mengubah arah untuk komputer virtual dilindungi yang termasuk dalam wadah yang ditentukan oleh parameter ini.
+Menentukan ID wadah yang diproteksi.
+Cmdlet ini mengubah arah untuk mesin virtual terproteksi yang termasuk dalam wadah yang ditentukan parameter ini.
 
 ```yaml
 Type: String
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionEntity
-Menentukan objek entitas proteksi.
+Menentukan objek entitas perlindungan.
 
 ```yaml
 Type: ASRProtectionEntity
@@ -141,8 +141,8 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionEntityId
-Menentukan ID mesin virtual yang diproteksi.
-Cmdlet ini mengubah arah untuk mesin virtual terproteksi yang ditentukan parameter ini.
+Menentukan ID mesin virtual yang dilindungi.
+Cmdlet ini mengubah arah untuk mesin virtual yang dilindungi yang ditentukan parameter ini.
 
 ```yaml
 Type: String
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -WaitForCompletion
-Menunjukkan bahwa cmdlet menunggu hingga operasi selesai sebelum mengembalikan kontrol ke Windows PowerShell konsol.
+Menunjukkan bahwa cmdlet menunggu operasi selesai sebelum mengembalikan kontrol ke konsol Windows PowerShell.
 
 ```yaml
 Type: SwitchParameter
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

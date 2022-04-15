@@ -6,28 +6,28 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blockchain/help/Get-AzBlockchainMember.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blockchain/help/Get-AzBlockchainMember.md
 ms.openlocfilehash: 1aefd37348b587c4080e9daa3d301592d878369d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139979565"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142325195"
 ---
 # Get-AzBlockchainMember
 
 ## SYNOPSIS
-Dapatkan detail tentang anggota grup.
+Dapatkan detail tentang anggota blockchain.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.blockchain/get-azblockchainmember) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.blockchain/get-azblockchainmember) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Daftar1 (Default)
+### List1 (Default)
 ```
 Get-AzBlockchainMember [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzBlockchainMember -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -45,11 +45,11 @@ Get-AzBlockchainMember -ResourceGroupName <String> [-SubscriptionId <String[]>] 
 ```
 
 ## DESCRIPTION
-Dapatkan detail tentang anggota grup.
+Dapatkan detail tentang anggota blockchain.
 
 ## EXAMPLES
 
-### Contoh 1: List members
+### Contoh 1: Daftar anggota blockchain
 ```powershell
 PS C:\> Get-AzBlockchainMember 
 
@@ -61,9 +61,9 @@ eastus   myblockchaine0f3ol Microsoft.Blockchain/blockchainMembers
 eastus   myblockchainuvbqdl Microsoft.Blockchain/blockchainMembers
 ```
 
-Perintah ini mencantumkan anggota audiens di bawah langganan.
+Perintah ini mencantumkan anggota blockchain di bawah langganan.
 
-### Contoh 2: List members
+### Contoh 2: Daftar anggota blockchain
 ```powershell
 PS C:\> Get-AzBlockchainMember -ResourceGroupName testgroup
 
@@ -73,9 +73,9 @@ eastus   dolauli001 Microsoft.Blockchain/blockchainMembers
 eastus   dolauli002 Microsoft.Blockchain/blockchainMembers
 ```
 
-Perintah ini mencantumkan anggota audiens di bawah grup sumber daya.
+Perintah ini mencantumkan anggota blockchain di bawah grup sumber daya.
 
-### Contoh 3: Get a templat member
+### Contoh 3: Dapatkan anggota blockchain
 ```powershell
 PS C:\> Get-AzBlockchainMember -Name dolauli001 -ResourceGroupName testgroup
 
@@ -84,9 +84,9 @@ Location Name       Type
 eastus   dolauli001 Microsoft.Blockchain/blockchainMembers
 ```
 
-Perintah ini mendapatkan anggota terkemuka di bawah grup sumber daya.
+Perintah ini mendapatkan anggota blockchain di bawah grup sumber daya.
 
-### Contoh 4: Get a templat member
+### Contoh 4: Dapatkan anggota blockchain
 ```powershell
 PS C:\> $member = Get-AzBlockchainMember -ResourceGroupName blockchain-rg -Name myblockchaine0f3ol
 PS C:\> Get-AzBlockchainMember -InputObject $membe 
@@ -96,7 +96,7 @@ Location Name               Type
 eastus   myblockchaine0f3ol Microsoft.Blockchain/blockchainMembers
 ```
 
-Perintah ini mendapatkan anggota terkemuka di bawah grup sumber daya.
+Perintah ini mendapatkan anggota blockchain di bawah grup sumber daya.
 
 ## PARAMETERS
 
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Blockchain.Models.IBlockchainIdentity
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama anggota Blokir.
+Nama anggota Blockchain.
 
 ```yaml
 Type: System.String
@@ -146,8 +146,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya tersebut.
-Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+Nama grup sumber daya yang berisi sumber daya.
+Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
 
 ```yaml
 Type: System.String
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+ID langganan adalah bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -178,15 +178,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Cmdlets.Cmdlets.Models.IBlockchainIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.Blockchain.Models.IBlockchainIdentity
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Cmdlets.Cmdlets.Models.Api20180601Preview.IBlockchainMember
+### Microsoft.Azure.PowerShell.Cmdlets.Blockchain.Models.Api20180601Preview.IBlockchainMember
 
 ## CATATAN
 
@@ -198,13 +198,13 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IBlockchainIdentity>: Parameter Identitas
-  - `[BlockchainMemberName <String>]`: Nama anggota Server 365.
+  - `[BlockchainMemberName <String>]`: Nama anggota Blockchain.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama lokasi.
-  - `[OperationId <String>]`: Id Operasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya tersebut. Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
-  - `[SubscriptionId <String>]`: Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
-  - `[TransactionNodeName <String>]`: Nama node transaksi.
+  - `[OperationId <String>]`: Operation Id.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
+  - `[SubscriptionId <String>]`: Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan adalah bagian dari URI untuk setiap panggilan layanan.
+  - `[TransactionNodeName <String>]`: Nama simpul transaksi.
 
 ## RELATED LINKS
 

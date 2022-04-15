@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.iothu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/IotHub/Commands.IotHub/help/Update-AzureRmIotHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/IotHub/Commands.IotHub/help/Update-AzureRmIotHub.md
-ms.openlocfilehash: 9a28c5a494d08427d5423bb3bf73da18bcb5b276caf0d5f877cf3091a0c1f869
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 6a71c2318a709eb8d4b3fe2fe68a760919097aca
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140868187"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142356859"
 ---
 # Update-AzureRmIotHub
 
 ## SYNOPSIS
-Memperbarui Hub Azure IoT.
+Memperbarui Azure IoT Hub.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -45,7 +45,7 @@ Properties     : Microsoft.Azure.Commands.Management.IotHub.Models.PSIotHubPrope
 Sku            : Microsoft.Azure.Commands.Management.IotHub.Models.PSIotHubSkuInfo
 ```
 
-Tambahkan "@tags" ke Tag "myiotdps" Azure IoT Hub".
+Tambahkan "@tags" ke Tag "myiotdps" Azure IoT Hub.
 
 ## PARAMETERS
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -Reset
-Mengatur ulang tag IotHub
+Mengatur ulang Tag IoTHub
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Kumpulan Tag IoTHub
+Koleksi Tag IoTHub
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

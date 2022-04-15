@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DevTestLabs/Commands.DevTestLabs/help/Get-AzureRmDtlAutoShutdownPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DevTestLabs/Commands.DevTestLabs/help/Get-AzureRmDtlAutoShutdownPolicy.md
 ms.openlocfilehash: 04b226a623a31c73ddd92c858f9ab610a533886f
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426640"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142357203"
 ---
 # Get-AzureRmDtlAutoShutdownPolicy
 
 ## SYNOPSIS
-Mendapatkan kebijakan penutupan otomatis sebuah lab di Lab DevTest.
+Mendapatkan kebijakan shutdown otomatis lab di DevTest Labs.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,15 +28,15 @@ Get-AzureRmDtlAutoShutdownPolicy [-LabName] <String> [-ResourceGroupName] <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmDtlAutoShutdownPolicy** mendapatkan kebijakan penutupan otomatis sebuah lab, yang memungkinkan Anda untuk mematikan secara otomatis semua mesin virtual di lab pada waktu tertentu dalam sehari.
-Cmdlet akan mengembalikan apakah status kebijakan diaktifkan, dan waktu hari yang telah Anda tetapkan untuk mematikan mesin virtual lab secara otomatis.
+Cmdlet **Get-AzureRmDtlAutoShutdownPolicy** mendapatkan kebijakan matikan otomatis sebuah lab, yang memungkinkan Anda mematikan semua mesin virtual di lab secara otomatis pada waktu yang ditentukan pada hari tersebut.
+Cmdlet mengembalikan apakah status kebijakan diaktifkan, dan waktu yang telah Anda atur untuk mematikan mesin virtual lab secara otomatis.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -51,7 +51,7 @@ Accept wildcard characters: False
 ```
 
 ### -LabName
-Tentukan nama lab tempat cmdlet ini mendapatkan kebijakan penutupan otomatis.
+Menentukan nama lab tempat cmdlet ini mendapatkan kebijakan matikan otomatis.
 
 ```yaml
 Type: System.String
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat lab dimiliki.
+Menentukan nama grup sumber daya tempat lab berada.
 
 ```yaml
 Type: System.String
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
