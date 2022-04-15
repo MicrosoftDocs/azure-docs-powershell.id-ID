@@ -4,11 +4,11 @@ ms.assetid: 7D39F4C9-F37A-4BBE-BF02-1F036A9FC5E8
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 6f238ae0238d4707ac16af0d175283e0e592c430
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427414"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142243149"
 ---
 # Stop-AzureWebsiteJob
 
@@ -34,7 +34,7 @@ Cmdlet **Stop-AzureWebsiteJob** menghentikan pekerjaan web untuk situs web.
 PS C:\> Stop-AzureWebsiteJob -Name MyWebsite -JobName MyWebJob
 ```
 
-Menghentikan pekerjaan web bernama MyWebJob untuk MyWebSite.
+Menghentikan pekerjaan web bernama MyWebJob for MyWebSite.
 
 ## PARAMETERS
 
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan nilai boolean yang mengindikasikan bahwa pekerjaan berhenti dengan sukses.
+Mengembalikan nilai boolean yang mengindikasikan bahwa pekerjaan berhasil dihentikan.
 Secara default, cmdlet ini tidak mengembalikan output apa pun.
 
 ```yaml
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -123,13 +123,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Stop-AzureWebsite](./Stop-AzureWebsite.md)
+[Berhenti-AzureSitus Web](./Stop-AzureWebsite.md)
 
 [Get-AzureWebsiteJob](./Get-AzureWebsiteJob.md)
 
-[New-AzureWebsiteJob](./New-AzureWebsiteJob.md)
+[AzureWebsiteJob Baru](./New-AzureWebsiteJob.md)
 
-[Remove-AzureWebsiteJob](./Remove-AzureWebsiteJob.md)
+[Hapus-AzureWebsiteJob](./Remove-AzureWebsiteJob.md)
 
 [Start-AzureWebsiteJob](./Start-AzureWebsiteJob.md)
 

@@ -6,29 +6,29 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsJob.md
 ms.openlocfilehash: 5115365374cc41ad4e064ee2abef85905ea6fc5e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139965903"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142297195"
 ---
 # Get-AzStreamAnalyticsJob
 
 ## SYNOPSIS
-Dapatkan detail tentang pekerjaan streaming tertentu.
+Mendapatkan detail tentang pekerjaan streaming yang ditentukan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.streamanalytics/get-azstreamanalyticsjob) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/get-azstreamanalyticsjob) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Daftar1 (Default)
+### List1 (Default)
 ```
 Get-AzStreamAnalyticsJob [-SubscriptionId <String[]>] [-Expand <String>] [-DefaultProfile <PSObject>]
  [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzStreamAnalyticsJob -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-Expand <String>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -47,11 +47,11 @@ Get-AzStreamAnalyticsJob -ResourceGroupName <String> [-SubscriptionId <String[]>
 ```
 
 ## DESCRIPTION
-Dapatkan detail tentang pekerjaan streaming tertentu.
+Mendapatkan detail tentang pekerjaan streaming yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan informasi tentang semua pekerjaan dalam langganan
+### Contoh 1: Dapatkan informasi tentang semua pekerjaan dalam langganan
 ```powershell
 PS C:\> Get-AzStreamAnalyticsJob
 
@@ -63,7 +63,7 @@ West Central US sajob-01-pwsh Microsoft.StreamAnalytics/streamingjobs
 
 Perintah ini mengembalikan informasi tentang semua pekerjaan Stream Analytics dalam langganan Azure.
 
-### Contoh 2: Mendapatkan informasi tentang semua pekerjaan dalam grup sumber daya
+### Contoh 2: Dapatkan informasi tentang semua pekerjaan dalam grup sumber daya
 ```powershell
 PS C:\> Get-AzStreamAnalyticsJob -ResourceGroupName azure-rg-test
 
@@ -115,8 +115,8 @@ Accept wildcard characters: False
 ```
 
 ### -Perluas
-Parameter $expand kueri OData.
-Ini adalah daftar properti streaming tambahan yang dipisahkan koma untuk disertakan dalam respons, di luar kumpulan default yang dikembalikan saat parameter ini absen.
+Parameter kueri OData $expand.
+Ini adalah daftar properti pekerjaan streaming tambahan yang dipisahkan koma untuk disertakan dalam respons, di luar kumpulan default yang dikembalikan ketika parameter ini tidak ada.
 Kumpulan default adalah semua properti pekerjaan streaming selain 'input', 'transformasi', 'output', dan 'fungsi'.
 
 ```yaml
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.StreamAnalytics.Models.IStreamAnalyticsIdentity
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -218,11 +218,11 @@ INPUTOBJECT <IStreamAnalyticsIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[InputName <String>]`: Nama input.
   - `[JobName <String>]`: Nama pekerjaan streaming.
-  - `[Location <String>]`: Kawasan untuk mengambil informasi kuota langganan. Anda dapat mencari tahu wilayah mana Azure Stream Analytics didukung di sini: https://azure.microsoft.com/en-us/regions/
+  - `[Location <String>]`: Kawasan tempat untuk mengambil informasi kuota langganan. Anda dapat mengetahui kawasan mana Azure Stream Analytics didukung di sini: https://azure.microsoft.com/en-us/regions/
   - `[OutputName <String>]`: Nama output.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
-  - `[TransformationName <String>]`: Nama transformasi tersebut.
+  - `[TransformationName <String>]`: Nama transformasi.
 
 ## RELATED LINKS
 

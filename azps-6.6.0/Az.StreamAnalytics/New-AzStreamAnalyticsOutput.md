@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/New-AzStreamAnalyticsOutput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/New-AzStreamAnalyticsOutput.md
 ms.openlocfilehash: 40adf62edfe8f268280b895324b76d5c6de71356
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139965777"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142297159"
 ---
 # New-AzStreamAnalyticsOutput
 
@@ -18,7 +18,7 @@ ms.locfileid: "139965777"
 Membuat output atau mengganti output yang sudah ada di bawah pekerjaan streaming yang sudah ada.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.streamanalytics/new-azstreamanalyticsoutput) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/new-azstreamanalyticsoutput) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,9 +42,9 @@ Name      Type                                            ETag
 output-01 Microsoft.StreamAnalytics/streamingjobs/outputs 3819fb65-07f5-4dc3-83e1-d3149596f8d0
 ```
 
-Perintah ini akan membuat output baru dalam pekerjaan analitik streaming.
+Perintah ini membuat output baru dalam pekerjaan analitik stream.
 
-(di bawah ini adalah contoh untuk "Account.json") { "properti": { "serialisasi": { "type": "Json", "properti": { "encoding": "UTF8", "format": "LineSeparated" } }, "datasource": { "type": "Microsoft.Storage /Blob", "properti": { "storageAccounts": [ { "accountName": "xxxxxxxxxxxxxxx", "accountKey": "xxxxxxxxxxxxxxxx" } ], "container": "xxxxxxxxxxxxxxxxx", "pathPattern": "cluster1/{client_id}", "dateFormat": "yyyy/MM/dd", "timeFormat": "HH", "authenticationMode": "ConnectionString" } } }
+(di bawah ini adalah contoh untuk "StroageAccount.json") { "properties": { "serialization": { "type": "Json", "properties": { "encoding": "UTF8", "format": "LineSeparated" } }, "datasource": { "type": "Microsoft.Storage /Blob", "properties": { "storageAccounts": [ { "accountName": "xxxx", "accountKey": "xxxxx" } ], "container": "xxxxxxxx", "pathPattern": "cluster1/{client_id}", "dateFormat": "yyyy/MM/dd", "timeFormat": "HH", "authenticationMode": "ConnectionString" } } } } }
 
 ## PARAMETERS
 
@@ -80,8 +80,8 @@ Accept wildcard characters: False
 
 ### -IfMatch
 ETag output.
-Menghilangkan nilai ini agar selalu menimpa output saat ini.
-Tentukan nilai ETag yang terakhir dilihat untuk mencegah secara tidak sengaja menimpa perubahan bersama.
+Hilangkan nilai ini untuk selalu menimpa output saat ini.
+Tentukan nilai ETag yang terakhir terlihat untuk mencegah timpa perubahan bersamaan secara tidak sengaja.
 
 ```yaml
 Type: System.String
@@ -96,8 +96,8 @@ Accept wildcard characters: False
 ```
 
 ### -IfNoneMatch
-Atur ke '*' untuk memungkinkan output baru dibuat, tapi untuk mencegah memperbarui output yang sudah ada.
-Nilai lainnya akan menghasilkan respons Gagal Pra-Kondisi 412.
+Atur ke '*' untuk memperbolehkan output baru dibuat, tetapi untuk mencegah pembaruan output yang sudah ada.
+Nilai lain akan menghasilkan respons Gagal Pra-kondisi 412.
 
 ```yaml
 Type: System.String
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

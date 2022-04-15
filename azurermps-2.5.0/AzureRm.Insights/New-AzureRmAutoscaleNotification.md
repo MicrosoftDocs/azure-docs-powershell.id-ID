@@ -5,11 +5,11 @@ ms.assetid: B5B5F494-D912-40D0-99E2-A62FAACA3EC9
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.insights/new-azurermautoscalenotification
 schema: 2.0.0
 ms.openlocfilehash: 51a5c01c28471cf85617b8ab629c2f79b366d555
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "132414537"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142285787"
 ---
 # New-AzureRmAutoscaleNotification
 
@@ -36,19 +36,19 @@ Cmdlet **New-AzureRmAutoscaleNotification** membuat pemberitahuan email untuk Sk
 PS C:\>New-AzureRmAutoscaleNotification -CustomEmails "pattif@contoso.com, davidchew@contoso.net"
 ```
 
-Perintah ini akan membuat pemberitahuan email Skala Otomatis untuk dua alamat yang ditentukan.
+Perintah ini membuat pemberitahuan email Skala Otomatis untuk dua alamat tertentu.
 
-### Contoh 2: Buat pemberitahuan email Skala Otomatis untuk administrator langganan
+### Contoh 2: Membuat pemberitahuan email Skala Otomatis untuk administrator langganan
 ```
 PS C:\>New-AzureRmAutoscaleNotification -SendEmailToSubscriptionAdministrator
 ```
 
-Perintah ini akan membuat pemberitahuan email Skala Otomatis untuk administrator langganan.
+Perintah ini membuat pemberitahuan email Skala Otomatis untuk administrator langganan.
 
 ## PARAMETERS
 
 ### -CustomEmail
-Menentukan daftar alamat email yang dipisahkan tanda koma.
+Menentukan daftar alamat email yang dipisahkan koma.
 
 ```yaml
 Type: System.String[]
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -SendEmailToSubscriptionAdministrator
-Menunjukkan bahwa operasi ini mengirimkan pemberitahuan email ke administrator langganan.
+Menunjukkan bahwa operasi ini mengirim pemberitahuan email ke administrator langganan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -SendEmailToSubscriptionCoAdministrator
-Menunjukkan bahwa operasi ini mengirimkan pemberitahuan email ke administrator bersama langganan.
+Menunjukkan bahwa operasi ini mengirim pemberitahuan email ke rekan administrator langganan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -Webhook
-Menentukan daftar web skala otomatis yang dipisahkan koma.
+Menentukan daftar webhook Skala Otomatis yang dipisahkan koma.
 
 ```yaml
 Type: Microsoft.Azure.Management.Monitor.Management.Models.WebhookNotification[]
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -141,6 +141,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmAutoscaleWebhook](./New-AzureRmAutoscaleWebhook.md)
+[Baru-AzureRmAutoscaleWebhook](./New-AzureRmAutoscaleWebhook.md)
 
 
