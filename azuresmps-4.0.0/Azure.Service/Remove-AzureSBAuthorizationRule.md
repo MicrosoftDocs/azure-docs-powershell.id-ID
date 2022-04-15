@@ -4,11 +4,11 @@ ms.assetid: E246C177-EAEE-4D7A-A544-664F47862FC7
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 1154ec37b4229e9aa969f1262ec09c3a6d6b49e8
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "132414783"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142335036"
 ---
 # Remove-AzureSBAuthorizationRule
 
@@ -25,7 +25,7 @@ Remove-AzureSBAuthorizationRule -Name <String> -Namespace <String> -EntityName <
  -EntityType <ServiceBusEntityType> [-PassThru] [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
 
-### Kumpulan nama
+### NamespaceSAS
 ```
 Remove-AzureSBAuthorizationRule -Name <String> -Namespace <String> [-PassThru] [-Profile <AzureSMProfile>]
  [<CommonParameters>]
@@ -38,24 +38,24 @@ Menghapus aturan otorisasi Bus Layanan yang sudah ada.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus aturan otorisasi di tingkat ruang nama
+### Contoh 1: Menghapus aturan otorisasi pada tingkat ruang nama
 ```
 PS C:\> Remove-AzureSBAuthorizationRule -Name MyRule -Namespace MyNamespace
 ```
 
 Menghapus aturan otorisasi MyRule dari MyNamespace.
 
-### Contoh 2: Hapus aturan otorisasi untuk Antrean
+### Contoh 2: Menghapus aturan otorisasi untuk Antrean
 ```
 PS C:\> Remove-AzureSBAuthorizationRule -Name MyRule -Namespace MyNamespace -EntityName MyEntity -EntityType Queue
 ```
 
-Menghapus aturan otorisasi yang disebut MyRule untuk MyEntity Queue di MyNamespace.
+Menghapus aturan otorisasi yang disebut MyRule untuk Antrean MyEntity di MyNamespace.
 
 ## PARAMETERS
 
 ### -EntityName
-Nama entitas untuk diterapkan aturan di.
+Nama entitas untuk menerapkan aturan pada.
 
 ```yaml
 Type: String
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -EntityType
-Tipe entitas (Queue, Topic, Relay, NotificationHub).
+Tipe entitas (Antrean, Topik, Relay, NotificationHub).
 
 ```yaml
 Type: ServiceBusEntityType
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan bahwa cmdlet ini mengembalikan objek yang mewakili item tempat operasinya.
+Menunjukkan bahwa cmdlet ini mengembalikan objek yang mewakili item tempatnya beroperasi.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -132,8 +132,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -160,7 +160,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureSBAuthorizationRule](./Get-AzureSBAuthorizationRule.md)
 
-[New-AzureSBAuthorizationRule](./New-AzureSBAuthorizationRule.md)
+[AzureSBAuthorizationRule baru](./New-AzureSBAuthorizationRule.md)
 
 [Set-AzureSBAuthorizationRule](./Set-AzureSBAuthorizationRule.md)
 

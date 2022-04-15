@@ -4,16 +4,16 @@ ms.assetid: DFD4BA63-A7DE-49DD-878C-68062EF17873
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 6942072ad7f5aa0ef5ff13fcee8d5e6f8f1c69ec
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424123"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142335221"
 ---
 # New-AzureServiceADDomainExtensionConfig
 
 ## SYNOPSIS
-Menghasilkan konfigurasi ekstensi domain AD untuk layanan awan.
+Menghasilkan konfigurasi untuk ekstensi domain AD untuk layanan awan.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -37,7 +37,7 @@ New-AzureServiceADDomainExtensionConfig [[-Role] <String[]>] [[-X509Certificate]
  [-InformationVariable <String>] [<CommonParameters>]
 ```
 
-### WorkGroupName
+### Nama GrupKerja
 ```
 New-AzureServiceADDomainExtensionConfig [[-Role] <String[]>] [[-X509Certificate] <X509Certificate2>]
  [[-ThumbprintAlgorithm] <String>] [-WorkgroupName] <String> [-Restart] [[-Credential] <PSCredential>]
@@ -76,7 +76,7 @@ Cmdlet **New-AzureServiceADDomainExtensionConfig** menghasilkan konfigurasi untu
 
 ## EXAMPLES
 
-### Contoh 1: Menentukan konfigurasi domain AD
+### Contoh 1: Tentukan konfigurasi domain AD
 ```
 PS C:\> $ExtensionCfg = New-AzureServiceADDomainExtensionConfig -Role WorkerRole1 -DomainName $Domain -Credential $Cred -JoinOption 35;
 
@@ -88,9 +88,9 @@ Perintah ini menghasilkan konfigurasi untuk ekstensi domain AD.
 ## PARAMETERS
 
 ### -CertificateThumbprint
-Menentukan thumbprint sertifikat yang akan digunakan untuk mengenkripsi konfigurasi privat.
+Menentukan sidik jari sertifikat untuk digunakan untuk mengenkripsi konfigurasi privat.
 Sertifikat ini harus sudah ada di penyimpanan sertifikat.
-Jika Anda tidak menentukan sertifikat, cmdlet ini membuat sertifikat.
+Jika Anda tidak menentukan sertifikat, cmdlet ini akan membuat sertifikat.
 
 ```yaml
 Type: String
@@ -104,8 +104,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Credential
-Menentukan kredensial yang akan digunakan untuk bergabung dengan domain AD.
+### -Kredensial
+Menentukan kredensial yang akan digunakan untuk bergabung dalam domain AD.
 Kredensial menyertakan nama pengguna dan kata sandi.
 
 ```yaml
@@ -151,16 +151,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -JoinOption
-Menentukan enumerasi opsi gabung.
+Menentukan enumerasi opsi gabungan.
 
 ```yaml
 Type: UInt32
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -Opsi
-Menentukan opsi gabung bilangan bulat yang tidak ditandatangani.
+Menentukan opsi gabungan bilangan bulat yang tidak ditandatangani.
 
 ```yaml
 Type: JoinOptions
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -OUPath
-Menentukan jalur unit organisasi (OU) untuk operasi bergabung dengan domain AD.
+Menentukan jalur unit organisasi (OU) untuk operasi gabungan domain AD.
 
 ```yaml
 Type: String
@@ -235,8 +235,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -250,8 +250,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Mulai ulang
-Menentukan apakah akan memulai ulang komputer jika operasi bergabung berhasil.
+### -Hidupkan ulang
+Menentukan apakah akan memulai ulang komputer jika operasi gabungan berhasil.
 
 ```yaml
 Type: SwitchParameter
@@ -282,8 +282,8 @@ Accept wildcard characters: False
 ```
 
 ### -ThumbprintAlgorithm
-Menentukan algoritma hash tanda jempol yang digunakan dengan thumbprint untuk mengidentifikasi sertifikat.
-Parameter ini bersifat opsional dan defaultnya adalah bayangan1.
+Menentukan algoritma hash sidik jari yang digunakan dengan sidik jari untuk mengidentifikasi sertifikat.
+Parameter ini opsional dan defaultnya adalah sha1.
 
 ```yaml
 Type: String
@@ -298,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### -UnjoinDomainCredential
-Menentukan kredensial (nama pengguna dan kata sandi) untuk membuka domain AD.
+Menentukan kredensial (nama pengguna dan kata sandi) untuk membatalkan bergabung dalam domain AD.
 
 ```yaml
 Type: PSCredential
@@ -343,7 +343,7 @@ Accept wildcard characters: False
 ```
 
 ### -X509Certificate
-Menentukan sertifikat X.509 yang secara otomatis diunggah ke layanan awan dan digunakan untuk mengenkripsi konfigurasi privat ekstensi.
+Menentukan sertifikat X.509 yang diunggah secara otomatis ke layanan awan dan digunakan untuk mengenkripsi konfigurasi pribadi ekstensi.
 
 ```yaml
 Type: X509Certificate2
@@ -358,7 +358,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -4,11 +4,11 @@ ms.assetid: BB216903-B2BB-4948-AC28-408ED6C768F2
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 72471666251daffefef14320f961ea81e619f726
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421137"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142335239"
 ---
 # New-AzureService
 
@@ -36,7 +36,7 @@ New-AzureService [-ServiceName] <String> [-Location] <String> [[-Label] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureService** membuat layanan Azure baru di langganan saat ini.
+Cmdlet **New-AzureService** membuat layanan Azure baru dalam langganan saat ini.
 
 ## EXAMPLES
 
@@ -45,20 +45,20 @@ Cmdlet **New-AzureService** membuat layanan Azure baru di langganan saat ini.
 PS C:\> New-AzureService -ServiceName "MySvc01" -Label "MyTestService" -Location "South Central US"
 ```
 
-Perintah ini membuat layanan baru bernama MySvc01 di lokasi AS Pusat Selatan.
+Perintah ini membuat layanan baru bernama MySvc01 di lokasi South Central US.
 
-### Contoh 2: Membuat layanan dalam grup afiliasi
+### Contoh 2: Membuat layanan dalam grup affinity
 ```
 PS C:\> New-AzureService -ServiceName "MySvc01" -AffinityGroup NorthRegion
 ```
 
-Perintah ini membuat layanan baru bernama MySvc01 menggunakan grup afiliasi NorthRegion.
+Perintah ini membuat layanan baru bernama MySvc01 menggunakan grup affinity NorthRegion.
 
 ## PARAMETERS
 
 ### -AffinityGroup
-Menentukan grup afiliasi yang terkait dengan langganan.
-Jika Anda tidak menentukan parameter *Lokasi,* grup affinity diperlukan.
+Menentukan grup affinity yang terkait dengan langganan.
+Jika Anda tidak menentukan parameter *Lokasi* , grup affinity diperlukan.
 
 ```yaml
 Type: String
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 
 ### -Deskripsi
 Menentukan deskripsi untuk layanan.
-Deskripsi dapat memiliki hingga 1024 karakter.
+Panjang deskripsi mungkin hingga 1024 karakter.
 
 ```yaml
 Type: String
@@ -89,16 +89,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 
 ### -Label
 Menentukan label untuk layanan.
-Label mungkin memiliki panjang hingga 100 karakter.
+Panjang label mungkin hingga 100 karakter.
 
 ```yaml
 Type: String
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 
 ### -Lokasi
 Menentukan lokasi untuk layanan.
-Lokasi diperlukan jika tidak ada Grup Affinity yang ditentukan.
+Lokasi diperlukan jika tidak ada Grup Affinity tertentu.
 
 ```yaml
 Type: String
@@ -160,8 +160,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReverseDnsFqdn
-Menentukan nama domain yang sepenuhnya memenuhi syarat untuk DNS terbalik.
+Menentukan nama domain yang sepenuhnya memenuhi syarat untuk membalik DNS.
 
 ```yaml
 Type: String
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

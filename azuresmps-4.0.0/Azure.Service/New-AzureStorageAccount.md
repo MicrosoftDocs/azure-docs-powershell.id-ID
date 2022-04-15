@@ -4,16 +4,16 @@ ms.assetid: 931BC75D-B8EF-463D-8FCE-A822093CB05A
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 726b38e2b362006ba24dc16c7bd37bf0e88e5b8a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420249"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142335037"
 ---
 # New-AzureStorageAccount
 
 ## SYNOPSIS
-Membuat akun penyimpanan baru di langganan Azure.
+Membuat akun penyimpanan baru dalam langganan Azure.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -35,30 +35,30 @@ New-AzureStorageAccount [-StorageAccountName] <String> [-Label <String>] [-Descr
 
 ## DESCRIPTION
 Cmdlet **New-AzureStorageAccount** membuat akun yang menyediakan akses ke layanan penyimpanan Azure.
-Akun penyimpanan adalah sumber daya yang unik secara global di dalam sistem penyimpanan.
+Akun penyimpanan adalah sumber daya yang unik secara global dalam sistem penyimpanan.
 Akun adalah ruang nama induk untuk layanan Blob, Antrean, dan Tabel.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat akun penyimpanan untuk grup afiliasi tertentu
+### Contoh 1: Membuat akun penyimpanan untuk grup affinity tertentu
 ```
 PS C:\> New-AzureStorageAccount -StorageAccountName "azure01" -Label "AzureOne" -AffinityGroup "prodapps"
 ```
 
-Perintah ini akan membuat akun penyimpanan untuk grup afiliasi tertentu.
+Perintah ini membuat akun penyimpanan untuk grup affinity tertentu.
 
 ### Contoh 2: Membuat akun penyimpanan di lokasi tertentu
 ```
 PS C:\> New-AzureStorageAccount -StorageAccountName "azure02" -Label "AzureTwo" -Location "North Central US"
 ```
 
-Perintah ini akan membuat akun penyimpanan di lokasi tertentu.
+Perintah ini membuat akun penyimpanan di lokasi tertentu.
 
 ## PARAMETERS
 
 ### -AffinityGroup
-Menentukan nama grup afiliasi yang sudah ada di langganan saat ini.
-Anda bisa menentukan parameter *Location* atau *AffinityGroup,* tapi tidak keduanya.
+Menentukan nama grup affinity yang sudah ada dalam langganan saat ini.
+Anda dapat menentukan parameter *Location* atau *AffinityGroup* , tetapi tidak keduanya.
 
 ```yaml
 Type: String
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 
 ### -Deskripsi
 Menentukan deskripsi untuk akun penyimpanan.
-Deskripsi dapat memiliki hingga 1024 karakter.
+Panjang deskripsi mungkin hingga 1024 karakter.
 
 ```yaml
 Type: String
@@ -89,16 +89,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 
 ### -Label
 Menentukan label untuk akun penyimpanan.
-Label mungkin memiliki panjang hingga 100 karakter.
+Panjang label mungkin hingga 100 karakter.
 
 ```yaml
 Type: String
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 
 ### -Lokasi
 Menentukan lokasi pusat data Azure tempat akun penyimpanan dibuat.
-Anda bisa menyertakan parameter *Location* atau *AffinityGroup,* tapi tidak keduanya.
+Anda dapat menyertakan parameter *Lokasi* atau *AffinityGroup* , tetapi tidak keduanya.
 
 ```yaml
 Type: String
@@ -160,8 +160,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 
 ### -StorageAccountName
 Menentukan nama untuk akun penyimpanan.
-Nama akun penyimpanan harus unik untuk Azure dan panjangnya harus antara 3 hingga 24 karakter dan hanya gunakan huruf kecil dan angka.
+Nama akun penyimpanan harus unik untuk Azure dan panjangnya harus antara 3 dan 24 karakter dan hanya menggunakan huruf kecil dan angka.
 
 ```yaml
 Type: String
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 
 ### -Tipe
 Menentukan tipe akun penyimpanan.
-Nilai valid adalah:
+Nilai yang valid adalah:
 
 - Standard_LRS
 - Standard_ZRS
@@ -201,9 +201,9 @@ Nilai valid adalah:
 - Standard_RAGRS
 - Premium_LRS
 
-Jika parameter ini tidak ditentukan, nilai default akan Standard_GRS.
+Jika parameter ini tidak ditentukan, nilai defaultnya Standard_GRS.
 
-Standard_ZRS atau Premium_LRS akun tidak dapat diubah ke tipe akun lain, dan sebaliknya.
+Standard_ZRS atau akun Premium_LRS tidak dapat diubah ke tipe akun lain, dan sebaliknya.
 
 ```yaml
 Type: String
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

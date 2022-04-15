@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/test-azn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Test-AzNetworkWatcherConnectivity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Test-AzNetworkWatcherConnectivity.md
-ms.openlocfilehash: cfc2b1851002f051698325caabb7a733f2a7df51
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: bdf82fff7c2785d219052974eb18ec9bce1cc5ae
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140185075"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142318217"
 ---
 # Test-AzNetworkWatcherConnectivity
 
 ## SYNOPSIS
-Mengembalikan informasi konektivitas untuk VM sumber yang ditentukan dan tujuan.
+Mengembalikan informasi konektivitas untuk VM sumber tertentu dan tujuan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/test-aznetworkwatcherconnectivity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,11 +47,11 @@ Test-AzNetworkWatcherConnectivity -Location <String> -SourceId <String> [-Source
 ```
 
 ## DESCRIPTION
-Cmdlet Test-AzNetworkWatcherConnectivity mengembalikan informasi konektivitas untuk VM sumber yang ditentukan dan tujuan. Jika konektivitas antara sumber dan tujuan tidak dapat dibuat, cmdlet akan mengembalikan detail tentang masalah tersebut.
+Cmdlet Test-AzNetworkWatcherConnectivity mengembalikan informasi konektivitas untuk VM sumber tertentu dan tujuan. Jika konektivitas antara sumber dan tujuan tidak dapat dibuat, cmdlet mengembalikan detail tentang masalah tersebut.
 
 ## EXAMPLES
 
-### Contoh 1: Uji Konektivitas Pengawas Jaringan dari VM ke situs web
+### Contoh 1: Uji konektivitas Network Watcher dari VM ke situs web
 ```powershell
 Test-AzNetworkWatcherConnectivity -NetworkWatcherName NetworkWatcher -ResourceGroupName NetworkWatcherRG -SourceId "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/ContosoRG/providers/Microsoft.Compute/virtualMachines/MultiTierApp0" -DestinationAddress "bing.com" -DestinationPort 80
 
@@ -81,11 +84,11 @@ Hops             : [
                    ]
 ```
 
-Dalam contoh ini, kami menguji konektivitas dari VM dalam Azure www.bing.com.
+Dalam contoh ini, kami menguji konektivitas dari VM di Azure ke www.bing.com.
 
 ### Contoh 2
 
-Mengembalikan informasi konektivitas untuk VM sumber yang ditentukan dan tujuan. (otomatisgenerated)
+Mengembalikan informasi konektivitas untuk VM sumber tertentu dan tujuan. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -95,7 +98,7 @@ Test-AzNetworkWatcherConnectivity -DestinationAddress 'bing.com' -DestinationPor
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationAddress
-Alamat IP atau URI sumber daya yang akan digunakan untuk percobaan koneksi.
+Alamat IP atau URI sumber daya tempat upaya koneksi akan dilakukan.
 
 ```yaml
 Type: System.String
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationId
-ID sumber daya tempat percobaan koneksi akan dilakukan.
+ID sumber daya tempat upaya koneksi akan dilakukan.
 
 ```yaml
 Type: System.String
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationPort
-Port yang menjalankan konektivitas pemeriksaan yang akan dijalankan.
+Port di mana konektivitas pemeriksaan akan dijalankan.
 
 ```yaml
 Type: System.Int32
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengawas jaringan.
+Sumber daya pengamat jaringan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtocolConfiguration
-Konfigurasi protokol yang menjalankan konektivitas periksa akan dijalankan.
+Konfigurasi protokol tempat konektivitas pemeriksaan akan dijalankan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcherProtocolConfiguration
@@ -245,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceId
-ID sumber daya di mana pemeriksaan konektivitas akan dimulai.
+ID sumber daya tempat pemeriksaan konektivitas akan dimulai.
 
 ```yaml
 Type: System.String
@@ -275,7 +278,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -290,13 +293,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSConnectivityInformation
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, connectivity, management, manager, network, networking, network watcher
+Kata kunci: azure, azurerm, lengan, sumber daya, konektivitas, manajemen, manajer, jaringan, jaringan, pengawas jaringan
 
 ## RELATED LINKS
 
 [New-AzNetworkWatcher](./New-AzNetworkWatcher.md)
  [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md)
- [Remove-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
+ [Hapus-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
 
 [Get-AzNetworkWatcherNextHop](./Get-AzNetworkWatcherNextHop.md)
  [Get-AzNetworkWatcherSecurityGroupView](./Get-AzNetworkWatcherSecurityGroupView.md)
@@ -320,8 +323,8 @@ Kata kunci: azure, azurerm, arm, resource, connectivity, management, manager, ne
  [Set-AzNetworkWatcherConfigFlowLog](./Set-AzNetworkWatcherConfigFlowLog.md)
  [Remove-AzNetworkWatcherConnectionMonitor](./Remove-AzNetworkWatcherConnectionMonitor.md)
  [New-AzNetworkWatcherConnectionMonitor](./New-AzNetworkWatcherConnectionMonitor.md)
- [Get-AzNetworkWatcherReachabilityReport](./Get-AzNetworkWatcherReachabilityReport.md)
- [Get-AzNetworkWatcherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
+ [Get-AzNetworkWatcherReacherReportability](./Get-AzNetworkWatcherReachabilityReport.md)
+ [Get-AzNetworkWatcherReacherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
  [Get-AzNetworkWatcherFlowLogStatus](./Get-AzNetworkWatcherFlowLogStatus.md)
  [Get-AzNetworkWatcherConnectionMonitorReport](./Get-AzNetworkWatcherConnectionMonitorReport.md)
  [Get-AzNetworkWatcherConnectionMonitor](./Get-AzNetworkWatcherConnectionMonitor.md)

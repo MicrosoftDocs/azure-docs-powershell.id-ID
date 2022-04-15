@@ -4,11 +4,11 @@ ms.assetid: 98AC0FAA-4786-4172-908E-FEB8588B0D74
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 1eae51b014c2c5dd9f9ed44b59205775157c162e
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "132414793"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142335033"
 ---
 # Remove-AzureApplicationGatewaySslCertificate
 
@@ -25,7 +25,7 @@ Remove-AzureApplicationGatewaySslCertificate -Name <String> -CertificateName <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureApplicationGatewaySslCertificate** menghapus sertifikat Lapisan Soket Aman (SSL) dari gateway aplikasi.
+Cmdlet **Remove-AzureApplicationGatewaySslCertificate** menghapus sertifikat Secure Sockets Layer (SSL) dari gateway aplikasi.
 
 ## EXAMPLES
 
@@ -34,7 +34,7 @@ Cmdlet **Remove-AzureApplicationGatewaySslCertificate** menghapus sertifikat Lap
 PS C:\> Remove-AzureApplicationGatewaySslCertificate -Name "ApplicationGateway08" -CertificateName "SslCertificate13"
 ```
 
-Perintah ini menghapus sertifikat SSL yang bernama SslCertificate13 dari gateway aplikasi yang bernama ApplicationGateway08.
+Perintah ini menghapus sertifikat SSL bernama SslCertificate13 dari gateway aplikasi bernama ApplicationGateway08.
 
 ## PARAMETERS
 
@@ -55,7 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama gateway aplikasi di mana cmdlet ini menghapus sertifikat SSL.
+Menentukan nama gateway aplikasi tempat cmdlet ini menghapus sertifikat SSL.
 
 ```yaml
 Type: String
@@ -70,8 +70,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

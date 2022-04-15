@@ -2,23 +2,23 @@
 external help file: Microsoft.Azure.Commands.Profile.dll-Help.xml
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 264d9e6fc89cdf4479f43930c2f10576e9cc2cddc8ae163d9e034385ea0e20c5
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: f58c83b3f4c7496c5a27b59bdbacc42b8a13f695
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417628"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142311091"
 ---
 # Set-AzureRmContext
 
 ## SYNOPSIS
-Mengatur penyewa, langganan, dan lingkungan untuk cmdlet yang akan digunakan dalam sesi saat ini.
+Mengatur penyewa, langganan, dan lingkungan untuk cmdlet yang digunakan dalam sesi saat ini.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
 ## SYNTAX
 
-### Nama Subscription (Default)
+### NamaLangganan (Default)
 ```
 Set-AzureRmContext [-SubscriptionName <String>] [-TenantId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -34,12 +34,12 @@ Set-AzureRmContext [-TenantId <String>] [-SubscriptionId <String>] [-WhatIf] [-C
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzureRmContext menetapkan informasi autentikasi untuk cmdlet yang Anda jalankan di sesi saat ini.
+Cmdlet Set-AzureRmContext mengatur informasi autentikasi untuk cmdlet yang Anda jalankan dalam sesi saat ini.
 Konteksnya mencakup penyewa, langganan, dan informasi lingkungan.
 
 ## EXAMPLES
 
-### Contoh 1: Atur konteks langganan
+### Contoh 1: Mengatur konteks langganan
 ```
 PS C:\>Set-AzureRmContext -SubscriptionId "xxxx-xxxx-xxxx-xxxx"
 
@@ -49,7 +49,7 @@ Subscription : xxxx-xxxx-xxxx-xxxx
 Tenant       : yyyy-yyyy-yyyy-yyyy
 ```
 
-Perintah ini mengatur konteks untuk menggunakan langganan yang ditentukan.
+Perintah ini mengatur konteks untuk menggunakan langganan tertentu.
 
 ## PARAMETERS
 
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Menentukan ID langganan untuk konteks yang ditetapkan cmdlet untuk sesi saat ini.
+Menentukan ID langganan untuk konteks yang ditetapkan cmdlet ini untuk sesi saat ini.
 
 ```yaml
 Type: String
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionName
-Menentukan nama langganan untuk konteks yang ditetapkan cmdlet untuk sesi saat ini.
+Menentukan nama langganan untuk konteks yang ditetapkan cmdlet ini untuk sesi saat ini.
 
 ```yaml
 Type: String
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

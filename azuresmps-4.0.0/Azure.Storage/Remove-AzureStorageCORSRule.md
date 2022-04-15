@@ -4,16 +4,16 @@ ms.assetid: 26E06BA3-C550-40A5-B8E3-FEC8E9BF3867
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: a0607d7893279ed7d322783542a33c01d0320ef3
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423561"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142311155"
 ---
 # Remove-AzureStorageCORSRule
 
 ## SYNOPSIS
-Menghapus CORS untuk layanan Storage baru.
+Menghapus CORS untuk layanan Storage.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -26,13 +26,13 @@ Remove-AzureStorageCORSRule [-ServiceType] <StorageServiceType> [-Context <IStor
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureStorageCORSRule** menghapus Berbagi Sumber Daya Lintas Asal (CORS) untuk layanan Azure Storage.
-Cmdlet ini menghapus semua aturan CORS dalam suatu Storage layanan baru.
+Cmdlet **Remove-AzureStorageCORSRule** menghapus Cross-Origin Resource Sharing (CORS) untuk layanan Azure Storage.
+Cmdlet ini menghapus semua aturan CORS dalam tipe layanan Storage.
 Tipe layanan penyimpanan untuk cmdlet ini adalah Blob, Tabel, Antrean, dan File.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus aturan CORS untuk layanan blob
+### Contoh 1: Menghapus aturan CORS untuk layanan blob
 ```
 PS C:\>Remove-AzureStorageCORSRule -ServiceType Blob
 ```
@@ -42,9 +42,9 @@ Perintah ini menghapus aturan CORS untuk tipe layanan Blob.
 ## PARAMETERS
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu yang habis di sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba permintaan.
-Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini akan mengembalikan kesalahan.
+Menentukan interval waktu habis pihak klien, dalam hitungan detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
 Type: Int32
@@ -59,11 +59,11 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan jumlah maksimum panggilan jaringan bersama.
-Anda dapat menggunakan parameter ini untuk membatasi konkurensi guna membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Menentukan maksimum panggilan jaringan serentak.
+Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
 Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
-Parameter ini bisa membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth yang rendah, seperti 100 kilobit per detik.
-Nilai default adalah 10.
+Parameter ini dapat membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth rendah, seperti 100 kilobit per detik.
+Nilai defaultnya adalah 10.
 
 ```yaml
 Type: Int32
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 
 ### -Konteks
 Menentukan konteks penyimpanan Azure.
-Untuk mendapatkan konteks penyimpanan, cmdlet New-AzureStorageContext cmdlet.
+Untuk mendapatkan konteks penyimpanan, cmdlet New-AzureStorageContext.
 
 ```yaml
 Type: IStorageContext
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan lamanya periode waktu habis untuk bagian server dari permintaan.
+Menentukan lamanya periode batas waktu untuk bagian server dari permintaan.
 
 ```yaml
 Type: Int32
@@ -109,12 +109,12 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceType
-Menentukan jenis Azure Storage layanan baru yang telah dihapus cmdlet ini.
+Menentukan tipe layanan Azure Storage yang mana cmdlet ini menghapus aturan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
-- Blob 
-- Tabel 
-- Antrean 
+- Gumpalan 
+- Meja 
+- Antrian 
 - File
 
 ```yaml
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

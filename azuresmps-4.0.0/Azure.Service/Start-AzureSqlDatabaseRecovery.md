@@ -3,12 +3,12 @@ external help file: Microsoft.WindowsAzure.Commands.SqlDatabase.dll-Help.xml
 ms.assetid: F63769D6-9A31-4A67-972A-1E0428853C86
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 1c69f3e4f66c4e3250d77aed1bf644995230e930009a33778cfcda30c7eb4228
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 00ce7cd468b8325cf51327ded69fcd13b4d49378
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417683"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142311701"
 ---
 # Start-AzureSqlDatabaseRecovery
 
@@ -32,12 +32,12 @@ Start-AzureSqlDatabaseRecovery -SourceDatabase <RecoverableDatabase> [-TargetSer
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzureSqlDatabaseRecovery** memulai permintaan pemulihan untuk database langsung atau database yang rusak.
+Cmdlet **Start-AzureSqlDatabaseRecovery** memulai permintaan pemulihan untuk database langsung atau yang dihapus.
 Cmdlet ini mendukung pemulihan dasar yang menggunakan cadangan terakhir yang tersedia untuk database.
 Operasi pemulihan membuat database baru.
-Jika Anda memulihkan database langsung di server yang sama, Anda harus menentukan nama yang berbeda untuk database baru tersebut.
+Jika Memulihkan database langsung di server yang sama, Anda harus menentukan nama yang berbeda untuk database baru.
 
-Untuk melakukan titik pemulihan waktu bagi database, gunakan cmdlet **Start-AzureSqlDatabaseRestore** sebagai gantinya.
+Untuk melakukan pemulihan waktu untuk database, gunakan cmdlet **Start-AzureSqlDatabaseRestore** sebagai gantinya.
 
 ## EXAMPLES
 
@@ -47,23 +47,23 @@ PS C:\> $Database = Get-AzureSqlRecoverableDatabase -ServerName "Server01" -Data
 PS C:\> $Operation = Start-AzureSqlDatabaseRecovery -SourceDatabase $Database -TargetDatabaseName "DatabaseRestored"
 ```
 
-Perintah pertama mendapatkan objek database menggunakan cmdlet **Get-AzureSqlRecoverableDatabase.**
-Perintah menyimpan objek tersebut dalam $Database variabel.
+Perintah pertama mendapatkan objek database menggunakan cmdlet **Get-AzureSqlRecoverableDatabase** .
+Perintah menyimpan objek tersebut dalam variabel $Database.
 
-Perintah kedua akan memulihkan database yang disimpan di $Database.
+Perintah kedua memulihkan database yang disimpan di $Database.
 
-### Contoh 2: Pulihkan database yang ditentukan berdasarkan nama
+### Contoh 2: Memulihkan database yang ditentukan menurut nama
 ```
 PS C:\> $Operation = Start-AzureSqlDatabaseRecovery -SourceServerName "Server01" -SourceDatabaseName "Database17" -TargetDatabaseName "DatabaseRestored"
 ```
 
-Perintah ini akan memulihkan database menggunakan nama database.
+Perintah ini memulihkan database menggunakan nama database.
 
 ## PARAMETERS
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceServerName
-Menentukan nama server di mana database sumber berada dan berjalan, atau di mana database sumber dijalankan sebelum dihapus.
+Menentukan nama server tempat database sumber dijalankan, atau tempat database sumber dijalankan sebelum database tersebut dihapus.
 
 ```yaml
 Type: String
@@ -139,8 +139,8 @@ Accept wildcard characters: False
 ```
 
 ### -TargetServerName
-Menentukan nama server untuk memulihkan database.
-Anda bisa memulihkan database ke server yang sama atau ke server berbeda.
+Menentukan nama server yang akan dipulihkan databasenya.
+Anda bisa memulihkan database ke server yang sama atau ke server lain.
 
 ```yaml
 Type: String
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -166,7 +166,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.WindowsAzure.Management.Sql.Models.RecoverDatabaseOperation
 
 ## CATATAN
-* Anda harus menggunakan autentikasi berbasis sertifikat untuk menjalankan cmdlet ini. Jalankan perintah berikut di komputer tempat Anda menjalankan cmdlet ini: 
+* Anda harus menggunakan autentikasi berbasis sertifikat untuk menjalankan cmdlet ini. Jalankan perintah berikut ini di komputer tempat Anda menjalankan cmdlet ini: 
 
 `PS C:\\\> $subId = \<Subscription ID\>`
 `PS C:\\\> $thumbprint = \<Certificate Thumbprint\>`
@@ -180,7 +180,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Buat Permintaan Pemulihan Database](https://msdn.microsoft.com/en-us/library/dn800986.aspx)
 
-[Replikasi Geo di Azure SQL Database](https://azure.microsoft.com/en-us/documentation/articles/sql-database-business-continuity-scenarios/)
+[Geo-Replikasi di Azure SQL Database](https://azure.microsoft.com/en-us/documentation/articles/sql-database-business-continuity-scenarios/)
 
 [Operasi untuk Database Azure SQL](https://msdn.microsoft.com/en-us/library/azure/dn505719.aspx)
 

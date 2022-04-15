@@ -3,12 +3,12 @@ external help file: Microsoft.WindowsAzure.Commands.ServiceManagement.dll-Help.x
 ms.assetid: 1F76C63E-5289-4F88-9522-3FF4EF732908
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 80c322b0749e320152838f5bf696770c1acc5364ced32ae42341694da5c7187b
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: e6d294dcc89e724ab92313a754c64b767025fb6d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419218"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142335167"
 ---
 # New-AzureServiceDiagnosticsExtensionConfig
 
@@ -48,26 +48,26 @@ Cmdlet **New-AzureServiceDiagnosticsExtensionConfig** menghasilkan konfigurasi u
 
 ## EXAMPLES
 
-### Contoh 1: Buat ekstensi Azure Diagnostics untuk semua peran di layanan cloud
+### Contoh 1: Membuat ekstensi Diagnostik Azure untuk semua peran dalam layanan awan
 ```
 PS C:\> $WadConfig = New-AzureServiceDiagnosticExtensionConfig -StorageContext $StorageContext -DiagnosticsConfigurationPath $WadConfigXML
 ```
 
-Perintah ini akan membuat ekstensi Azure Diagnostics untuk semua peran di layanan cloud.
+Perintah ini membuat ekstensi Diagnostik Azure untuk semua peran dalam layanan awan.
 
-### Contoh 2: Buat ekstensi Azure Diagnostics untuk sebuah peran
+### Contoh 2: Membuat ekstensi Diagnostik Azure untuk peran
 ```
 PS C:\> $WadConfig = New-AzureServiceDiagnosticExtensionConfig -StorageContext $StorageContext -DiagnosticsConfigurationPath $WadConfigXML -Role "WebRole1"
 ```
 
-Perintah ini akan membuat ekstensi Azure Diagnostics untuk peran WebRole01 di layanan awan.
+Perintah ini membuat ekstensi Diagnostik Azure untuk peran WebRole01 di layanan awan.
 
 ## PARAMETERS
 
 ### -CertificateThumbprint
-Menentukan thumbprint sertifikat yang akan digunakan untuk mengenkripsi konfigurasi privat.
+Menentukan sidik jari sertifikat untuk digunakan untuk mengenkripsi konfigurasi privat.
 Sertifikat ini harus sudah ada di penyimpanan sertifikat.
-Jika Anda tidak menentukan sertifikat, cmdlet ini membuat sertifikat.
+Jika Anda tidak menentukan sertifikat, cmdlet ini akan membuat sertifikat.
 
 ```yaml
 Type: String
@@ -112,16 +112,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -151,8 +151,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 
 ### -Peran
 Menentukan array peran opsional untuk menentukan konfigurasi diagnostik.
-Jika konfigurasi diagnostik tidak ditentukan akan diterapkan sebagai konfigurasi default untuk semua peran.
+Jika tidak ditentukan, konfigurasi diagnostik diterapkan sebagai konfigurasi default untuk semua peran.
 
 ```yaml
 Type: String[]
@@ -243,8 +243,8 @@ Accept wildcard characters: False
 ```
 
 ### -ThumbprintAlgorithm
-Menentukan algoritma hashing thumbprint yang digunakan dengan thumbprint untuk mengidentifikasi sertifikat.
-Parameter ini bersifat opsional dan defaultnya adalah bayangan1.
+Menentukan algoritma hash sidik jari yang digunakan dengan sidik jari untuk mengidentifikasi sertifikat.
+Parameter ini opsional dan defaultnya adalah sha1.
 
 ```yaml
 Type: String
@@ -259,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### -X509Certificate
-Menentukan sertifikat X.509 yang secara otomatis diunggah ke layanan awan dan digunakan untuk mengenkripsi konfigurasi privat ekstensi.
+Menentukan sertifikat X.509 yang diunggah secara otomatis ke layanan awan dan digunakan untuk mengenkripsi konfigurasi pribadi ekstensi.
 
 ```yaml
 Type: X509Certificate2
@@ -274,7 +274,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

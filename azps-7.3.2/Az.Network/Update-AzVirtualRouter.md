@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVirtualRouter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVirtualRouter.md
-ms.openlocfilehash: 569ca17df778f74b2078a6d2d7745e80fd032937
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5693b01497c49ff678495b83fe766a0552c9d697
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140380975"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142318181"
 ---
 # Update-AzVirtualRouter
 
 ## SYNOPSIS
 Memperbarui Router Virtual. 
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azvirtualrouter) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Update-AzVirtualRouter [-AllowBranchToBranchTraffic] -ResourceId <String>
 ```
 
 ## DESCRIPTION
-Pembaruan Virtual Router untuk mengaktifkan atau menonaktifkan lalu lintas cabang ke cabang.
+Update Virtual Router untuk mengaktifkan atau menonaktifkan cabang ke lalu lintas cabang.
 
 ## EXAMPLES
 
@@ -41,19 +44,19 @@ Pembaruan Virtual Router untuk mengaktifkan atau menonaktifkan lalu lintas caban
 PS C:\> Update-AzVirtualRouter -ResourceGroupName $rgname -RouterName $virtualRouterName -AllowBranchToBranchTraffic
 ```
 
-Memperbarui Router Virtual untuk memperbolehkan lalu lintas cabang
+Memperbarui Virtual Router untuk memungkinkan cabang untuk cabang lalu lintas cabang
 
 ### Contoh 2
 ```powershell
 PS C:\> Update-AzVirtualRouter -ResourceGroupName $rgname -RouterName $virtualRouterName
 ```
 
-Memperbarui Router Virtual untuk memblokir lalu lintas cabang ke cabang
+Memperbarui Virtual Router untuk memblokir cabang ke lalu lintas cabang
 
 ## PARAMETERS
 
 ### -AllowBranchToBranchTraffic
-Bendera untuk memperbolehkan lalu lintas cabang untuk router virtual.
+Tandai untuk mengizinkan cabang untuk cabang lalu lintas untuk router virtual.
 
 ```yaml
 Type: SwitchParameter
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -RouterName
-Nama router virtual.
+Nama perute virtual.
 
 ```yaml
 Type: String
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

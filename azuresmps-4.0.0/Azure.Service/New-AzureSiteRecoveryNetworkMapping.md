@@ -4,11 +4,11 @@ ms.assetid: 6802F2E9-5925-4E92-AEB8-827B5A303617
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 80602cff61c2acaff55c9a382f61e3133fc7961c
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423602"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142335091"
 ---
 # New-AzureSiteRecoveryNetworkMapping
 
@@ -32,7 +32,7 @@ New-AzureSiteRecoveryNetworkMapping -PrimaryNetwork <ASRNetwork> -AzureSubscript
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureSiteRecoveryNetworkMapping** membuat pemetaan antara dua jaringan virtual dan mengembalikan pekerjaan Pemulihan Situs Azure untuk melacaknya.
+Cmdlet **New-AzureSiteRecoveryNetworkMapping** membuat pemetaan antara dua jaringan virtual dan mengembalikan pekerjaan Azure Site Recovery untuk melacaknya.
 
 ## EXAMPLES
 
@@ -43,15 +43,15 @@ PS C:\> $Networks = Get-AzureSiteRecoveryNetwork -Server $Servers[0]
 PS C:\> New-AzureSiteRecoveryNetworkMapping -PrimaryNetwork $Networks[0] -RecoveryNetwork $Networks[1]
 ```
 
-Cmdlet perintah pertama mendapatkan server untuk penyimpanan Pemulihan Situs Azure saat ini menggunakan cmdlet **Get-AzureSiteRecoveryServer.**
-Perintah menyimpan server Pemulihan Situs di $Servers array terpisah.
+Cmdlet perintah pertama mendapatkan server untuk brankas Azure Site Recovery saat ini menggunakan cmdlet **Get-AzureSiteRecoveryServer**.
+Perintah menyimpan server Site Recovery dalam variabel array $Servers.
 
-Perintah kedua mendapatkan jaringan pemulihan situs untuk server pertama dalam $Servers dengan menggunakan cmdlet **Get-AzureSiteRecoveryNetwork.**
-Perintah menyimpan jaringan dalam variabel $Networks jaringan.
+Perintah kedua mendapatkan jaringan pemulihan situs untuk server pertama dalam array $Servers menggunakan cmdlet **Get-AzureSiteRecoveryNetwork** .
+Perintah menyimpan jaringan dalam variabel $Networks.
 
-Perintah terakhir membuat pemetaan antara jaringan utama dan jaringan pemulihan.
-Perintah menentukan jaringan utama sebagai elemen pertama dalam $Networks.
-Perintah tersebut menentukan jaringan pemulihan sebagai elemen kedua dari $Networks.
+Perintah akhir membuat pemetaan antara jaringan utama dan jaringan pemulihan.
+Perintah menentukan jaringan utama sebagai elemen pertama $Networks.
+Perintah menentukan jaringan pemulihan sebagai elemen kedua $Networks.
 
 ## PARAMETERS
 
@@ -101,8 +101,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -146,6 +146,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureSiteRecoveryServer](./Get-AzureSiteRecoveryServer.md)
 
-[Remove-AzureSiteRecoveryNetworkMapping](./Remove-AzureSiteRecoveryNetworkMapping.md)
+[Hapus-AzureSiteRecoveryNetworkMapping](./Remove-AzureSiteRecoveryNetworkMapping.md)
 
 
