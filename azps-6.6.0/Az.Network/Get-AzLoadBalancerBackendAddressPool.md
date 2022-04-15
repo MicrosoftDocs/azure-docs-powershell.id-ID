@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerBackendAddressPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerBackendAddressPool.md
 ms.openlocfilehash: f3db16de5768a59e85f12e288a88adfe20168caf
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140331359"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142125449"
 ---
 # Get-AzLoadBalancerBackendAddressPool
 
 ## SYNOPSIS
-Get-AzLoadBalancerBackendAddressPool menggunakan satu atau beberapa alamat backend yang terkait dengan penyeimbang muat. 
+Get-AzLoadBalancerBackendAddressPool mengambil satu atau beberapa kumpulan alamat backend yang terkait dengan load balancer. 
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azloadbalancerbackendaddresspool) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azloadbalancerbackendaddresspool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Get-AzLoadBalancerBackendAddressPool -ResourceId <String> [-DefaultProfile <IAzu
 ```
 
 ## DESCRIPTION
-Get-AzLoadBalancerBackendAddressPool menggunakan satu atau beberapa alamat backend yang terkait dengan penyeimbang muat.
+Get-AzLoadBalancerBackendAddressPool mengambil satu atau beberapa kumpulan alamat backend yang terkait dengan load balancer.
 
 ## EXAMPLES
 
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerName
-Nama penyeimbang muat.
+Nama penyeimbang beban.
 
 ```yaml
 Type: String
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama pool alamat backend.
+Nama kumpulan alamat backend.
 
 ```yaml
 Type: String
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

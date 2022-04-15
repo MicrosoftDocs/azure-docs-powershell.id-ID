@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Remove-AzOperationalInsightsStorageInsight.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Remove-AzOperationalInsightsStorageInsight.md
 ms.openlocfilehash: 3e1cb5f562c000dabef14904d89e83eb524fea80
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140279851"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142123541"
 ---
 # Remove-AzOperationalInsightsStorageInsight
 
 ## SYNOPSIS
-Menghapus Storage Insight.
+Menghapus Wawasan Storage.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/remove-azoperationalinsightsstorageinsight) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/remove-azoperationalinsightsstorageinsight) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Remove-AzOperationalInsightsStorageInsight [-Workspace] <PSWorkspace> [-Name] <S
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzOperationalInsightsStorageInsight** menghapus Storage Insight dari ruang kerja.
+Cmdlet **Remove-AzOperationalInsightsStorageInsight** menghapus wawasan Storage dari ruang kerja.
 
 ## EXAMPLES
 
@@ -45,22 +45,22 @@ Cmdlet **Remove-AzOperationalInsightsStorageInsight** menghapus Storage Insight 
 PS C:\>Remove-AzOperationalInsightsStorageInsight -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "MyWorkspace" -Name "MyStorageInsight"
 ```
 
-Perintah ini menghapus wawasan Storage bernama MyStorageInsight dari ruang kerja yang bernama MyWorkspace dalam grup sumber daya yang ditentukan.
-Perintah tidak menentukan parameter *Paksa*, sehingga akan meminta konfirmasi Anda sebelum menghapus Storage Insight.
+Perintah ini menghapus Storage Insight bernama MyStorageInsight dari ruang kerja bernama MyWorkspace dalam grup sumber daya tertentu.
+Perintah tidak menentukan parameter *Paksa*, sehingga perintah meminta konfirmasi sebelum menghapus Storage Insight.
 
-### Contoh 2: Hapus Storage Insight tanpa konfirmasi
+### Contoh 2: Menghapus Storage Insight tanpa konfirmasi
 ```
 PS C:\>$Workspace = Get-AzOperationalInsightsWorkspace -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace"
 
 PS C:\>Remove-AzOperationalInsightsStorageInsight -Workspace $Workspace -Name "MyStorageInsight" -Force
 ```
 
-Perintah pertama menggunakan cmdlet Get-AzOperationalInsightsWorkspace untuk mendapatkan ruang kerja bernama MyWorkspace, lalu menyimpannya dalam $Workspace variabel. Perintah kedua menghapus wawasan penyimpanan yang bernama MyStorageInsight $Workspace tanpa meminta konfirmasi Anda.
+Perintah pertama menggunakan cmdlet Get-AzOperationalInsightsWorkspace untuk mendapatkan ruang kerja bernama MyWorkspace, lalu menyimpannya dalam variabel $Workspace. Perintah kedua menghapus wawasan penyimpanan bernama MyStorageInsight dari $Workspace tanpa meminta konfirmasi kepada Anda.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -74,8 +74,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,8 +134,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
-Menentukan nama ruang kerja yang berisi wawasan Storage.
+### -Nama Ruang Kerja
+Menentukan nama ruang kerja yang berisi Storage Insight.
 
 ```yaml
 Type: System.String
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

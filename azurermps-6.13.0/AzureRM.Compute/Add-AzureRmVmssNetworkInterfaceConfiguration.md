@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Add-AzureRmVmssNetworkInterfaceConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Add-AzureRmVmssNetworkInterfaceConfiguration.md
 ms.openlocfilehash: 6789b2a0f3309e8011cc6e87a27dbf9f28579d05
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420369"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142142341"
 ---
 # Add-AzureRmVmssNetworkInterfaceConfiguration
 
 ## SYNOPSIS
-Menambahkan konfigurasi antarmuka jaringan pada VMSS.
+Menambahkan konfigurasi antarmuka jaringan ke VMSS.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -31,21 +31,21 @@ Add-AzureRmVmssNetworkInterfaceConfiguration [-VirtualMachineScaleSet] <PSVirtua
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureRmVmssNetworkInterfaceConfiguration** menambahkan konfigurasi antarmuka jaringan ke Virtual Machine Scale Set (VMSS).
+Cmdlet **Add-AzureRmVmssNetworkInterfaceConfiguration** menambahkan konfigurasi antarmuka jaringan ke Kumpulan Skala Mesin Virtual (VMSS).
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan konfigurasi antarmuka jaringan ke VMSS
+### Contoh 1: Menambahkan konfigurasi antarmuka jaringan ke VMSS
 ```
 PS C:\> Add-AzureRmVmssNetworkInterfaceConfiguration -VirtualMachineScaleSet $VMSS -Name "Test" -Primary $True -IPConfiguration $IPCfg
 ```
 
-Perintah ini menambahkan konfigurasi antarmuka jaringan pada VMSS.
+Perintah ini menambahkan konfigurasi antarmuka jaringan ke VMSS.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableAcceleratedNetworking
-Menentukan apakah antarmuka jaringan dipercepat jaringan diaktifkan.
+Menentukan apakah antarmuka jaringan dipercepat diaktifkan oleh jaringan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID Sumber Daya komputer virtual.
+Menentukan ID Sumber Daya mesin virtual.
 
 ```yaml
 Type: System.String
@@ -164,8 +164,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Utama
-Menunjukkan apakah antarmuka jaringan yang dibuat dari konfigurasi antarmuka jaringan akan menjadi pusat informasi jaringan utama (NIC) dari komputer virtual.
+### -Primer
+Menunjukkan apakah antarmuka jaringan yang dibuat dari konfigurasi antarmuka jaringan akan menjadi pusat informasi jaringan utama (NIC) mesin virtual.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -179,9 +179,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -VirtualMachinescaleSet
+### -VirtualMachineScaleSet
 Menentukan objek VMSS.
-Anda dapat menggunakan cmdlet [New-AzureRmVmssConfig](./New-AzureRmVmssConfig.md) untuk membuat objek.
+Anda dapat menggunakan cmdlet [New-AzureRmVmsConfig](./New-AzureRmVmssConfig.md) untuk membuat objek.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -234,7 +234,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ### Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetIPConfiguration[]
 

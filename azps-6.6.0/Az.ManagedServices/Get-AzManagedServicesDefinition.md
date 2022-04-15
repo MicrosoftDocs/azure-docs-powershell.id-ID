@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/ManagedServices/help/Get-AzManagedServicesDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/ManagedServices/help/Get-AzManagedServicesDefinition.md
 ms.openlocfilehash: dd789faa1d3082635e9c6b26acf20b4c1f63ae12
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140501997"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142126961"
 ---
 # Get-AzManagedServicesDefinition
 
 ## SYNOPSIS
-Mendapatkan definisi registrasi tertentu atau daftar definisi registrasi.
+Mendapatkan definisi pendaftaran tertentu atau daftar definisi pendaftaran.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.managedservices/get-azmanagedservicesdefinition) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.managedservices/get-azmanagedservicesdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-AzManagedServicesDefinition [-Scope <String>] [-DefaultProfile <IAzureContex
 ```
 
 ## DESCRIPTION
-Mendapatkan definisi registrasi tertentu atau daftar definisi registrasi.
+Mendapatkan definisi pendaftaran tertentu atau daftar definisi pendaftaran.
 
 ## EXAMPLES
 
@@ -63,7 +63,7 @@ Name                                 Id                                         
 PS C:\>
 ```
 
-Mendapatkan definisi registrasi menurut nama pada lingkup default.
+Mendapatkan definisi pendaftaran berdasarkan nama pada lingkup default.
 
 ### Contoh 3
 ```
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama unik Definisi Registrasi.
+Nama unik Definisi Pendaftaran.
 
 ```yaml
 Type: System.String
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Lingkup di mana definisi registrasi dibuat.
+Lingkup di mana definisi pendaftaran dibuat.
 
 ```yaml
 Type: System.String
@@ -126,11 +126,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 ## OUTPUTS
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ManagedServices.Models.PSRegistrationDefinition

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeStore/Commands.DataLakeStore/help/Import-AzureRmDataLakeStoreItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeStore/Commands.DataLakeStore/help/Import-AzureRmDataLakeStoreItem.md
 ms.openlocfilehash: 91e7969600f387a95f46cad02f87cf6466f2c642
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426324"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142142085"
 ---
 # Import-AzureRmDataLakeStoreItem
 
 ## SYNOPSIS
-Mengunggah file atau direktori lokal ke Data Lake Store.
+Mengunggah file atau direktori lokal ke Penyimpanan Data Lake.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,7 +29,7 @@ Import-AzureRmDataLakeStoreItem [-Account] <String> [-Path] <String> [-Destinati
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SertakanDiagnosticLogging
+### IncludeDiagnosticLogging
 ```
 Import-AzureRmDataLakeStoreItem [-Account] <String> [-Path] <String> [-Destination] <DataLakeStorePathInstance>
  [-Recurse] [-Resume] [-ForceBinary] [-Force] [-Concurrency <Int32>] [-DiagnosticLogLevel <LogLevel>]
@@ -38,7 +38,7 @@ Import-AzureRmDataLakeStoreItem [-Account] <String> [-Path] <String> [-Destinati
 ```
 
 ## DESCRIPTION
-Cmdlet **Import-AzureRmDataLakeStoreItem** mengunggah file atau direktori lokal ke Data Lake Store.
+Cmdlet **Impor-AzureRmDataLakeStoreItem** mengunggah file atau direktori lokal ke Penyimpanan Data Lake.
 
 ## EXAMPLES
 
@@ -47,12 +47,12 @@ Cmdlet **Import-AzureRmDataLakeStoreItem** mengunggah file atau direktori lokal 
 PS C:\>Import-AzureRmDataLakeStoreItem -AccountName "ContosoADL" -Path "C:\SrcFile.csv" -Destination "/MyFiles/File.csv" -Concurrency 4
 ```
 
-Perintah ini mengunggah file SrcFile.csv dan menambahkannya ke folder MyFiles di Data Lake Store sebagai File.csv dengan konkurensi 4.
+Perintah ini mengunggah file SrcFile.csv dan menambahkannya ke folder MyFiles di Penyimpanan Data Lake sebagai File.csv dengan konkurensi 4.
 
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Data Lake Store.
+Menentukan nama akun Penyimpanan Data Lake.
 
 ```yaml
 Type: System.String
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konkurensi
-Menunjukkan jumlah file atau bagian yang akan diunggah secara paralel. Default akan dihitung sebagai usaha terbaik berdasarkan spesifikasi sistem.
+Menunjukkan jumlah file atau potongan untuk diunggah secara paralel. Default akan dihitung sebagai upaya terbaik berdasarkan spesifikasi sistem.
 
 ```yaml
 Type: System.Int32
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tujuan
-Menentukan jalur Data Lake Store untuk mengunggah file atau folder, dimulai dengan direktori akar (/).
+Menentukan jalur Penyimpanan Data Lake tempat mengunggah file atau folder, dimulai dengan direktori akar (/).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiagnosticLogLevel
-Secara opsional menunjukkan tingkat log diagnostik yang digunakan untuk merekam kejadian selama impor file atau folder. Defaultnya adalah Kesalahan.
+Secara opsional menunjukkan tingkat log diagnostik untuk digunakan untuk merekam kejadian selama impor file atau folder. Defaultnya adalah Kesalahan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.LogLevel
@@ -142,8 +142,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Menunjukkan bahwa operasi ini dapat menimpa file tujuan jika file sudah ada.
+### -Paksa
+Menunjukkan bahwa operasi ini dapat menimpa file tujuan jika sudah ada.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceBinary
-Menunjukkan bahwa file yang sedang disalin harus disalin tanpa adanya masalah untuk mempertahankan baris baru pada penambahan.
+Menunjukkan bahwa file yang sedang disalin harus disalin tanpa perlu khawatir dengan pelestarian baris baru di seluruh penamaan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,8 +172,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur lokal file atau folder untuk diunggah.
+### -Jalur
+Menentukan jalur lokal file atau folder yang akan diunggah.
 
 ```yaml
 Type: System.String
@@ -187,8 +187,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Recurse
-Menunjukkan bahwa operasi ini harus mengunggah semua item dalam semua subfolder.
+### -Berulang
+Menunjukkan bahwa operasi ini harus mengunggah semua item di semua subfolder.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,8 +202,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Resume
-Menunjukkan bahwa file yang sedang disalin merupakan lanjutan dari unggahan sebelumnya. Hal ini akan menyebabkan sistem mencoba melanjutkan dari file terakhir yang belum sepenuhnya diunggah.
+### -Lanjutkan
+Menunjukkan bahwa file yang sedang disalin adalah kelanjutan dari unggahan sebelumnya. Ini akan menyebabkan sistem mencoba melanjutkan dari file terakhir yang tidak sepenuhnya diunggah.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -249,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -266,7 +266,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ### System.String
-Jalur lengkap dalam akun Data Lake Store ke file atau folder yang diunggah.
+Jalur lengkap di akun Data Lake Store ke file atau folder yang diunggah.
 
 ## CATATAN
 
@@ -274,7 +274,7 @@ Jalur lengkap dalam akun Data Lake Store ke file atau folder yang diunggah.
 
 [Get-AzureRmDataLakeStoreItem](./Get-AzureRmDataLakeStoreItem.md)
 
-[Export-AzureRmDataLakeStoreItem](./Export-AzureRmDataLakeStoreItem.md)
+[Ekspor-AzureRmDataLakeStoreItem](./Export-AzureRmDataLakeStoreItem.md)
 
 [Join-AzureRmDataLakeStoreItem](./Join-AzureRmDataLakeStoreItem.md)
 
@@ -282,8 +282,8 @@ Jalur lengkap dalam akun Data Lake Store ke file atau folder yang diunggah.
 
 [New-AzureRmDataLakeStoreItem](./New-AzureRmDataLakeStoreItem.md)
 
-[Remove-AzureRmDataLakeStoreItem](./Remove-AzureRmDataLakeStoreItem.md)
+[Hapus-AzureRmDataLakeStoreItem](./Remove-AzureRmDataLakeStoreItem.md)
 
-[Test-AzureRmDataLakeStoreItem](./Test-AzureRmDataLakeStoreItem.md)
+[Uji-AzureRmDataLakeStoreItem](./Test-AzureRmDataLakeStoreItem.md)
 
 
