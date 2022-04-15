@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.media/get-azmedi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Get-AzMediaService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Get-AzMediaService.md
-ms.openlocfilehash: 174a23fc293b89b8841992d38ec8ac394428db71
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 19aa58e8415ddd443232904a1dc8b82a2cb5046d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140401955"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142488725"
 ---
 # Get-AzMediaService
 
 ## SYNOPSIS
 Mendapatkan informasi tentang layanan media.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.media/get-azmediaservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,19 +45,19 @@ Cmdlet **Get-AzMediaService** mendapatkan informasi tentang layanan media.
 PS C:\>Get-AzMediaService -ResourceGroupName "ResourceGroup001"
 ```
 
-Perintah ini mendapatkan properti untuk semua layanan media di grup sumber daya bernama ResourceGroup001.
+Perintah ini mendapatkan properti untuk semua layanan media dalam grup sumber daya bernama ResourceGroup001.
 
 ### Contoh 2: Dapatkan properti layanan media
 ```
 PS C:\>Get-AzMediaService -ResourceGroupName "ResourceGroup002" -AccountName "MediaService1"
 ```
 
-Perintah ini mendapatkan properti layanan media bernama MediaService1 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup002.
+Perintah ini mendapatkan properti layanan media bernama MediaService1 yang termasuk dalam grup sumber daya bernama ResourceGroup002.
 
 ## PARAMETERS
 
-### -Nama Akun
-Menentukan nama layanan media yang akan didaurkan cmdlet ini.
+### -AccountName
+Menentukan nama layanan media yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -115,7 +118,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzMediaService](./New-AzMediaService.md)
 
-[Remove-AzMediaService](./Remove-AzMediaService.md)
+[Hapus-AzMediaService](./Remove-AzMediaService.md)
 
 [Set-AzMediaService](./Set-AzMediaService.md)
 

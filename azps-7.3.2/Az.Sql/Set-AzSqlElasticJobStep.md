@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/set-Azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticJobStep.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticJobStep.md
-ms.openlocfilehash: d06be42139a05efec5da8bd6ffc419922e01d008
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2a79dfdd742e4051505fec09699169af8c428de9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140390670"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142482011"
 ---
 # Set-AzSqlElasticJobStep
 
 ## SYNOPSIS
-Memperbarui langkah kerja
+Memperbarui langkah pekerjaan
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqlelasticjobstep) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Set-AzSqlElasticJobStep [-ResourceGroupName] <String> [-ServerName] <String> [-A
  [<CommonParameters>]
 ```
 
-### WithAddOutput
+### DenganAddOutput
 ```
 Set-AzSqlElasticJobStep [-ResourceGroupName] <String> [-ServerName] <String> [-AgentName] <String>
  [-JobName] <String> -Name <String> -OutputDatabaseResourceId <String> [-OutputCredentialName <String>]
@@ -70,7 +73,7 @@ Set-AzSqlElasticJobStep [-InputObject] <AzureSqlElasticJobStepModel> [-RemoveOut
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### WithAddOutputUsingParentObject
+### DenganAddOutputUsingParentObject
 ```
 Set-AzSqlElasticJobStep [-InputObject] <AzureSqlElasticJobStepModel> -OutputDatabaseResourceId <String>
  [-OutputCredentialName <String>] [-OutputTableName <String>] [-OutputSchemaName <String>]
@@ -110,7 +113,7 @@ Set-AzSqlElasticJobStep [-ResourceId] <String> -OutputDatabaseResourceId <String
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzSqlElasticJobStep cmdlet memperbarui langkah kerja
+Cmdlet Set-AzSqlElasticJobStep memperbarui langkah pekerjaan
 
 ## EXAMPLES
 
@@ -124,7 +127,7 @@ JobName StepName StepId TargetGroupName CredentialName Output ExecutionOptions  
 job1    step1    1      tg2             cred1                 (43200,10,1,120,2) SELECT 1
 ```
 
-### Contoh 2: Memperbarui skrip T-SQL pekerjaan untuk pekerjaan
+### Contoh 2: Memperbarui skrip T-SQL langkah pekerjaan untuk pekerjaan
 ```powershell
 PS C:\> $jobStep = Get-AzSqlElasticJobStep -ResourceGroupName rg -ServerName elasticjobserver -AgentName agent -JobName job1 -StepName step1
 $jobStep | Set-AzSqlElasticJobStep -CommandText "SELECT 2"
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -InitialRetryIntervalSeconds
-Detik interval coba lagi awal
+Interval interval awal coba detik
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaximumRetryIntervalSeconds
-Detik interval coba lagi maksimum
+Interval pengulangan maksimum detik
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -356,7 +359,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemoveOutput
-Bendera untuk mengindikasikan apakah akan menghapus output
+Bendera untuk menunjukkan apakah akan menghapus output
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -400,8 +403,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -TryAttempts
-Coba lagi attemps
+### -RetryAttempts
+Attemp coba lagi
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -416,7 +419,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetryIntervalBackoffMultiplier
-Pengali interval coba lagi backoff
+Perkalian backoff interval coba lagi
 
 ```yaml
 Type: System.Nullable`1[System.Double]
@@ -491,7 +494,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -507,7 +510,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -522,15 +525,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Sql.ElastisJobs.Model.AzureSqlElasticJobStepModel
+### Microsoft.Azure.Commands.Sql.ElasticJobs.Model.AzureSqlElasticJobStepModel
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Sql.ElastisJobs.Model.AzureSqlElasticJobStepModel
+### Microsoft.Azure.Commands.Sql.ElasticJobs.Model.AzureSqlElasticJobStepModel
 
 ## CATATAN
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/New-AzWvdScalingPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/New-AzWvdScalingPlan.md
 ms.openlocfilehash: cada9a36e50422dd2f4357d885b5e749148891d1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140286583"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142475855"
 ---
 # New-AzWvdScalingPlan
 
 ## SYNOPSIS
-Membuat atau memperbarui rencana penskalaan.
+Membuat atau memperbarui paket penskalakan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.desktopvirtualization/new-azwvdscalingplan) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/new-azwvdscalingplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,11 +34,11 @@ New-AzWvdScalingPlan -Name <String> -ResourceGroupName <String> [-SubscriptionId
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui rencana penskalaan.
+Membuat atau memperbarui paket penskalakan.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Windows Skala Desktop Virtual
+### Contoh 1: Membuat Windows Paket Penskalhan Desktop Virtual
 ```powershell
 PS C:\> New-AzWvdScalingPlan `
             -ResourceGroupName ResourceGroupName `
@@ -82,7 +82,7 @@ Location      Name         Type
 westcentralus scalingPlan1 Microsoft.DesktopVirtualization/scalingplans 
 ```
 
-Perintah ini membuat rencana Windows Skala Desktop Virtual baru dalam Grup Sumber Daya.
+Perintah ini membuat Windows Rencana Penskalhan Desktop Virtual baru dalam Grup Sumber Daya.
 
 ## PARAMETERS
 
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Deskripsi rencana skala.
+Deskripsi rencana penskalaan.
 
 ```yaml
 Type: System.String
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -FriendlyName
-Nama rencana skala yang ramah pengguna.
+Nama paket penskalaan yang mudah dikenali.
 
 ```yaml
 Type: System.String
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 
 ### -HostPoolReference
 Daftar definisi ScalingHostPoolReference.
-Untuk membuat, lihat bagian CATATAN untuk properti HOSTPOOLREFERENCE dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti HOSTPOOLREFERENCE dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210712.IScalingHostPoolReference[]
@@ -192,9 +192,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kind
-Metadata digunakan oleh portal/tooling/etc untuk menyajikan pengalaman UX yang berbeda untuk sumber daya dengan tipe yang sama; mis. ApiApps merupakan jenis jenis Microsoft.Web/sites.
-Jika didukung, penyedia sumber daya harus memvalidasi dan mempertahankan nilai ini.
+### -Jenis
+Metadata yang digunakan oleh portal/tooling/etc untuk menyajikan pengalaman UX yang berbeda untuk sumber daya dengan tipe yang sama; misalnya ApiApps adalah jenis tipe Microsoft.Web/sites.
+Jika didukung, penyedia sumber daya harus memvalidasi dan tetap memiliki nilai ini.
 
 ```yaml
 Type: System.String
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi geo-location di mana sumber daya berada
+Lokasi geografis tempat sumber daya berada
 
 ```yaml
 Type: System.String
@@ -225,8 +225,8 @@ Accept wildcard characters: False
 
 ### -ManagedBy
 ID sumber daya yang sepenuhnya memenuhi syarat dari sumber daya yang mengelola sumber daya ini.
-Menunjukkan apakah sumber daya ini dikelola oleh sumber daya Azure lain.
-Jika ada, penyebaran mode lengkap tidak akan menghapus sumber daya jika sumber daya dihapus dari templat karena dikelola oleh sumber daya lain.
+Menunjukkan apakah sumber daya ini dikelola oleh sumber daya Azure lainnya.
+Jika ada, penyebaran mode lengkap tidak akan menghapus sumber daya jika dihapus dari templat karena dikelola oleh sumber daya lain.
 
 ```yaml
 Type: System.String
@@ -241,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama rencana skala.
+Nama paket penskalaan.
 
 ```yaml
 Type: System.String
@@ -256,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlanName
-Pengguna menentukan nama Artifak Pihak Ke-3 yang sedang di pengadaan.
+Pengguna mendefinisikan nama Artefak Pihak ke-3 yang sedang diakui.
 
 ```yaml
 Type: System.String
@@ -271,10 +271,10 @@ Accept wildcard characters: False
 ```
 
 ### -PlanProduct
-Artifak Pihak Ke-3 yang sedang di pengadaan.
-Misalnya
+Artefak Partai ke-3 yang sedang dijadikan pengadaan.
+Misalnya.
 NewRelic.
-Peta produk ke OfferID yang ditentukan untuk artifak pada saat onboarding Pasar Data.
+Peta produk untuk OfferID yang ditentukan untuk artefak pada saat onboarding Data Market.
 
 ```yaml
 Type: System.String
@@ -289,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlanPromotionCode
-Penerbit menyediakan kode promosi seperti yang disediakan di Pasar Data untuk produk/artifak yang dikatakan.
+Penerbit menyediakan kode promosi sebagaimana ditetapkan di Pasar Data untuk produk/artefak tersebut.
 
 ```yaml
 Type: System.String
@@ -304,8 +304,8 @@ Accept wildcard characters: False
 ```
 
 ### -PlanPublisher
-Penerbit Artifak Pihak Ketiga yang sedang dibeli.
-Misalnya
+Penerbit Artefak Pihak ke-3 yang sedang dibeli.
+Misalnya.
 NewRelic
 
 ```yaml
@@ -321,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlanVersion
-Versi produk/artifak yang diinginkan.
+Versi produk/artefak yang diinginkan.
 
 ```yaml
 Type: System.String
@@ -337,7 +337,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -351,9 +351,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Schedule
+### -Jadwal
 Daftar definisi ScalingSchedule.
-Untuk membuat, lihat bagian CATATAN untuk properti JADWAL dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti SCHEDULE dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210712.IScalingSchedule[]
@@ -368,8 +368,8 @@ Accept wildcard characters: False
 ```
 
 ### -SkuCapacity
-Jika SKU mendukung skala keluar/masuk maka bilangan bulat kapasitas akan disertakan.
-Jika skala/in tidak dimungkinkan untuk sumber daya, hal ini mungkin dihilangkan.
+Jika SKU mendukung penskalaan keluar/masuk maka bilangan bulat kapasitas harus disertakan.
+Jika skala keluar/masuk tidak dimungkinkan untuk sumber daya ini mungkin dihilangkan.
 
 ```yaml
 Type: System.Int32
@@ -384,7 +384,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuFamily
-Jika layanan memiliki beberapa generasi perangkat keras, untuk SKU yang sama, fitur tersebut dapat diambil di sini.
+Jika layanan memiliki generasi perangkat keras yang berbeda, untuk SKU yang sama, maka yang dapat ditangkap di sini.
 
 ```yaml
 Type: System.String
@@ -400,8 +400,8 @@ Accept wildcard characters: False
 
 ### -SkuName
 Nama SKU.
-Misalnya - P3.
-Kode ini biasanya adalah kode huruf+angka
+Bekas - P3.
+Biasanya berupa kode huruf+angka
 
 ```yaml
 Type: System.String
@@ -415,9 +415,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SkuSize
+### -Skusize
 Ukuran SKU.
-Jika bidang nama merupakan kombinasi tingkatan dan beberapa nilai lain, ini akan menjadi kode mandiri.
+Ketika bidang nama adalah kombinasi tingkat dan beberapa nilai lainnya, ini akan menjadi kode mandiri.
 
 ```yaml
 Type: System.String
@@ -432,7 +432,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuTier
-Bidang ini harus diterapkan oleh Penyedia Sumber Daya jika layanan memiliki lebih dari satu tingkatan, tetapi tidak diperlukan pada PUT.
+Bidang ini diperlukan untuk diterapkan oleh Penyedia Sumber Daya jika layanan memiliki lebih dari satu tingkat, tetapi tidak diperlukan pada PUT.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.SkuTier
@@ -477,7 +477,7 @@ Accept wildcard characters: False
 ```
 
 ### -Zona Waktu
-Zona waktu rencana skala.
+Zona waktu rencana penskalaan.
 
 ```yaml
 Type: System.String
@@ -492,7 +492,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -508,7 +508,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -523,7 +523,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -541,28 +541,28 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 HOSTPOOLREFERENCE <IScalingHostPoolReference[]>: Daftar definisi ScalingHostPoolReference.
-  - `[HostPoolArmPath <String>]`: Jalur arm dari hostpool yang dirujuk.
-  - `[ScalingPlanEnabled <Boolean?>]`: Adalah rencana skala yang diaktifkan untuk hostpool ini.
+  - `[HostPoolArmPath <String>]`: Jalur lengan hostpool yang dirujuk.
+  - `[ScalingPlanEnabled <Boolean?>]`: Apakah paket penskalaan diaktifkan untuk hostpool ini.
 
 JADWAL <IScalingSchedule[]>: Daftar definisi ScalingSchedule.
-  - `[DaysOfWeek <String[]>]`: Kumpulan hari dalam seminggu saat jadwal ini aktif.
+  - `[DaysOfWeek <String[]>]`: Kumpulan hari dalam seminggu di mana jadwal ini aktif.
   - `[Name <String>]`: Nama jadwal penskalaan.
-  - `[OffPeakLoadBalancingAlgorithm <SessionHostLoadBalancingAlgorithm?>]`: Memuat menyeimbangkan algoritma untuk periode di luar puncak.
-  - `[OffPeakStartTime <DateTime?>]`: Waktu mulai di luar periode sibuk.
-  - `[PeakLoadBalancingAlgorithm <SessionHostLoadBalancingAlgorithm?>]`: Memuat algoritma keseimbangan untuk periode puncak.
+  - `[OffPeakLoadBalancingAlgorithm <SessionHostLoadBalancingAlgorithm?>]`: Algoritma keseimbangan beban untuk periode off-peak.
+  - `[OffPeakStartTime <DateTime?>]`: Waktu mulai untuk periode off-peak.
+  - `[PeakLoadBalancingAlgorithm <SessionHostLoadBalancingAlgorithm?>]`: Algoritma penyeimbangan beban untuk periode puncak.
   - `[PeakStartTime <DateTime?>]`: Waktu mulai untuk periode puncak.
-  - `[RampDownCapacityThresholdPct <Int32?>]`: Ambang batas kapasitas untuk periode peningkatan.
-  - `[RampDownForceLogoffUser <Boolean?>]`: Sebaiknya pengguna keluar secara paksa dari host.
-  - `[RampDownLoadBalancingAlgorithm <SessionHostLoadBalancingAlgorithm?>]`: Memuat menyeimbangkan algoritma untuk periode waktu turun.
-  - `[RampDownMinimumHostsPct <Int32?>]`: Persentase host minimum untuk periode penurunan tingkat.
-  - `[RampDownNotificationMessage <String>]`: Pesan pemberitahuan untuk pengguna selama periode penurunan.
-  - `[RampDownStartTime <DateTime?>]`: Waktu mulai untuk periode penurunan jalan.
-  - `[RampDownStopHostsWhen <StopHostsWhen?>]`: Menentukan kapan untuk menghentikan host selama periode penurunan sementara.
-  - `[RampDownWaitTimeMinute <Int32?>]`: Jumlah menit untuk menunggu untuk menghentikan host selama periode penurunan sementara.
+  - `[RampDownCapacityThresholdPct <Int32?>]`: Ambang batas kapasitas untuk periode ramp down.
+  - `[RampDownForceLogoffUser <Boolean?>]`: Jika pengguna harus keluar secara paksa dari host.
+  - `[RampDownLoadBalancingAlgorithm <SessionHostLoadBalancingAlgorithm?>]`: Algoritma penyeimbangan beban untuk periode ramp down.
+  - `[RampDownMinimumHostsPct <Int32?>]`: Persentase host minimum untuk periode ramp down.
+  - `[RampDownNotificationMessage <String>]`: Pesan pemberitahuan untuk pengguna selama periode ramp down.
+  - `[RampDownStartTime <DateTime?>]`: Waktu mulai untuk periode ramp down.
+  - `[RampDownStopHostsWhen <StopHostsWhen?>]`: Menentukan kapan menghentikan host selama periode ramp down.
+  - `[RampDownWaitTimeMinute <Int32?>]`: Jumlah menit untuk menunggu untuk menghentikan host selama periode ramp down.
   - `[RampUpCapacityThresholdPct <Int32?>]`: Ambang batas kapasitas untuk periode peningkatan.
-  - `[RampUpLoadBalancingAlgorithm <SessionHostLoadBalancingAlgorithm?>]`: Memuat menyeimbangkan algoritma untuk periode waktu yang lama.
-  - `[RampUpMinimumHostsPct <Int32?>]`: Persentase host minimum untuk periode meningkatkan tingkat.
-  - `[RampUpStartTime <DateTime?>]`: Waktu mulai untuk periode meningkatkan jalan.
+  - `[RampUpLoadBalancingAlgorithm <SessionHostLoadBalancingAlgorithm?>]`: Algoritma load balancing untuk periode ramp up.
+  - `[RampUpMinimumHostsPct <Int32?>]`: Persentase host minimum untuk periode naik.
+  - `[RampUpStartTime <DateTime?>]`: Waktu mulai untuk periode ramp up.
 
 ## RELATED LINKS
 

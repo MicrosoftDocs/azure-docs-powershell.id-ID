@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Update-AzDigitalTwinsInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Update-AzDigitalTwinsInstance.md
 ms.openlocfilehash: 3ccacd36039e3b273592477af7c23104822dddd3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139939867"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142475459"
 ---
 # Update-AzDigitalTwinsInstance
 
 ## SYNOPSIS
-Perbarui metadata DigitalTwinsInstance.
+Memperbarui metadata DigitalTwinsInstance.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.digitaltwins/update-azdigitaltwinsinstance) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.digitaltwins/update-azdigitaltwinsinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Update-AzDigitalTwinsInstance -ResourceGroupName <String> -ResourceName <String>
  [-Tag <Hashtable>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Perbarui
+### Update
 ```
 Update-AzDigitalTwinsInstance -ResourceGroupName <String> -ResourceName <String>
  -DigitalTwinsPatchDescription <IDigitalTwinsPatchDescription> [-SubscriptionId <String>]
@@ -49,7 +49,7 @@ Update-AzDigitalTwinsInstance -InputObject <IDigitalTwinsIdentity> [-Tag <Hashta
 ```
 
 ## DESCRIPTION
-Perbarui metadata DigitalTwinsInstance.
+Memperbarui metadata DigitalTwinsInstance.
 
 ## EXAMPLES
 
@@ -64,7 +64,7 @@ eastus   youriDigitalTwinsTest Microsoft.DigitalTwins/digitalTwinsInstances
 
 Memperbarui DigitalTwinsInstance yang ditentukan oleh ResourceGroupName
 
-### Contoh 2: Update the AzDigitalTwinsInstance by another AzDigitalTwinsInstance
+### Contoh 2: Memperbarui AzDigitalTwinsInstance oleh AzDigitalTwinsInstance lain
 ```powershell
 PS C:\> $updateDigitalTwinInstance1 = Update-AzDigitalTwinsInstance -ResourcegroupName youritemp -ResourceName youriDigitalTwin1 -Tag @{"dtt"="002"}
 Update-AzDigitalTwinsInstance -ResourceGroupName youritemp -ResourceName youriDigitalTwinsTest -DigitalTwinsPatchDescription $updateDigitalTwinInstance1
@@ -74,7 +74,7 @@ Location Name                  Type
 eastus   youriDigitalTwinsTest Microsoft.DigitalTwins/digitalTwinsInstances
 ```
 
-Perbarui AzDigitalTwinsInstance oleh azdigitalTwinsInstance lainnya
+Memperbarui AzDigitalTwinsInstance oleh AzDigitalTwinsInstance lainnya
 
 ## PARAMETERS
 
@@ -94,8 +94,8 @@ Accept wildcard characters: False
 ```
 
 ### -DigitalTwinsPatchDescription
-Deskripsi layanan DigitalTwins.
-Untuk membuat, lihat bagian CATATAN untuk properti DIGITALTWINSPATCHDESCRIPTION dan membuat tabel hash.
+Penjabaran dari layanan DigitalTwins.
+Untuk membangun, lihat bagian CATATAN untuk properti DIGITALTWINSPATCHDESCRIPTION dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DigitalTwins.Models.Api20201031.IDigitalTwinsPatchDescription
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DigitalTwins.Models.IDigitalTwinsIdentity
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag contoh
+Tag instans
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -238,7 +238,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 DIGITALTWINSPATCHDESCRIPTION <IDigitalTwinsPatchDescription>: Deskripsi layanan DigitalTwins.
-  - `[Tag <IDigitalTwinsPatchDescriptionTags>]`: Tag contoh
+  - `[Tag <IDigitalTwinsPatchDescriptionTags>]`: Tag instans
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 
 INPUTOBJECT <IDigitalTwinsIdentity>: Parameter Identitas
