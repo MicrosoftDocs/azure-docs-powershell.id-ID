@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventHub/Commands.EventHub/help/Get-AzureRmEventHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventHub/Commands.EventHub/help/Get-AzureRmEventHub.md
 ms.openlocfilehash: 6ae26d1d5061989ac93756812cf48494e9101978
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140860761"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142141633"
 ---
 # Get-AzureRmEventHub
 
 ## SYNOPSIS
-Dapatkan detail tentang satu Hub Acara, atau dapatkan daftar Hub Acara.
+Mendapatkan detail hub acara tunggal, atau mendapatkan daftar Hub Acara.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,25 +27,25 @@ Get-AzureRmEventHub [-ResourceGroupName] <String> [-Namespace] <String> [[-Name]
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzureRmEventHub akan mengembalikan detail Hub Kejadian, atau daftar semua Hub Acara dalam ruang nama saat ini.
-Jika nama Hub Acara disediakan, detail dari sebuah Hub Acara akan dikembalikan.
-Jika nama Hub Acara tidak disediakan, daftar semua Hub Acara di ruang nama yang ditentukan akan dikembalikan.
+Cmdlet Get-AzureRmEventHub mengembalikan detail Hub Acara, atau daftar semua Hub Acara dalam ruang nama saat ini.
+Jika nama Hub Acara disediakan, detail hub acara tunggal akan dikembalikan.
+Jika nama Hub Kejadian tidak disediakan, daftar semua Hub Acara dalam ruang nama tertentu dikembalikan.
 
 ## EXAMPLES
 
-### Contoh 1 - EventHub ditentukan
+### Contoh 1 - EventHub yang ditentukan
 ```
 PS C:\> Get-AzureRmEventHub -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName
 ```
 
-Mengembalikan detail Event Hub \`MyEventHubName\`.
+Mengembalikan detail Hub \`Kejadian MyEventHubName\`.
 
-### Contoh 2 - Daftar EventHub dalam Namespace yang ditentukan
+### Contoh 2 - Daftar EventHub di Ruang Nama tertentu
 ```
 PS C:\> Get-AzureRmEventHub -ResourceGroup MyResourceGroupName -NamespaceName MyNamespaceName
 ```
 
-Mengembalikan daftar Hub Acara di ruang nama MyNamespaceName\`\`.
+Mengembalikan daftar Hub Acara di ruang \`nama MyNamespaceName\`.
 
 ## PARAMETERS
 
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxCount
-Menentukan jumlah maksimum EventHubs untuk dikembalikan.
+Tentukan jumlah maksimum EventHubs yang akan dikembalikan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/FrontDoor/Commands.FrontDoor/help/New-AzureRmFrontDoorRoutingRuleObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/FrontDoor/Commands.FrontDoor/help/New-AzureRmFrontDoorRoutingRuleObject.md
 ms.openlocfilehash: c03a76943857e3615269a9584a3975ae6ab86666
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427599"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142141476"
 ---
 # New-AzureRmFrontDoorRoutingRuleObject
 
 ## SYNOPSIS
-Membuat kreasi PSRoutingRuleObject untuk Pintu Depan
+Membuat PSRoutingRuleObject untuk pembuatan Pintu Depan
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -31,11 +31,11 @@ New-AzureRmFrontDoorRoutingRuleObject -ResourceGroupName <String> -FrontDoorName
 ```
 
 ## DESCRIPTION
-Membuat kreasi PSRoutingRuleObject untuk Pintu Depan
+Membuat PSRoutingRuleObject untuk pembuatan Pintu Depan
 
 ## EXAMPLES
 
-### Contoh 1: Membuat PSRoutingRuleObject untuk pembuatan Pintu Depan
+### Contoh 1: Buat PSRoutingRuleObject untuk pembuatan Pintu Depan
 ```powershell
 PS C:\> New-AzureRmFrontDoorRoutingRuleObject -Name $routingRuleName -FrontDoorName $frontDoorName -ResourceGroupName  -FrontendEndpointName "frontendEndpoint1" -BackendPoolName "backendPool1" 
 
@@ -58,13 +58,13 @@ Name                         : routingrule1
 Type                         :
 ```
 
-Membuat kreasi PSRoutingRuleObject untuk Pintu Depan
+Membuat PSRoutingRuleObject untuk pembuatan Pintu Depan
 
 ## PARAMETERS
 
 ### -AcceptedProtocol
-Skema protokol yang sesuai dengan aturan ini.
-Nilai default adalah {Https, Http}
+Skema protokol agar cocok dengan aturan ini.
+Nilai defaultnya adalah {Https, Http}
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSProtocol[]
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendPoolName
-Id sumber daya BackendPool yang di rutekan aturan ini
+Id sumber daya BackendPool yang dirutekan aturan ini
 
 ```yaml
 Type: System.String
@@ -126,8 +126,8 @@ Accept wildcard characters: False
 ```
 
 ### -DynamicCompression
-Apakah akan mengaktifkan pemadatan dinamis untuk konten singgahan saat caching diaktifkan.
-Nilai default Diaktifkan
+Apakah mengaktifkan pemadatan dinamis untuk konten singgahan saat cache diaktifkan.
+Nilai default diaktifkan
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSEnabledState
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 
 ### -EnabledState
 Apakah akan mengaktifkan penggunaan aturan ini.
-Nilai default Diaktifkan
+Nilai default diaktifkan
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSEnabledState
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForwardingProtocol
-Protokol yang akan digunakan aturan ini ketika meneruskan lalu lintas ke nilai default backends adalah MatchRequest.
+Protokol yang akan digunakan aturan ini saat meneruskan lalu lintas ke backend Nilai default adalah MatchRequest.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSForwardingProtocol
@@ -236,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -PatternToMatch
-Pola rute aturan, Tidak Boleh memiliki * apa pun kecuali mungkin setelah / akhir / di akhir jalur. Nilai default adalah /*
+Pola rute aturan, Tidak Boleh memiliki * kecuali mungkin setelah akhir / di akhir jalur. Nilai defaultnya adalah /*
 
 ```yaml
 Type: System.String[]
@@ -251,8 +251,8 @@ Accept wildcard characters: False
 ```
 
 ### -QueryParameterStripDirective
-The treatment of URL query terms when forming the cache key.
-Nilai default adalah StripAll
+Perlakuan istilah kueri URL saat membentuk kunci cache.
+Nilai defaultnya adalah StripAll
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSQueryParameterStripDirective
@@ -283,11 +283,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -297,5 +297,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmFrontDoor](./New-AzureRmFrontDoor.md) 
- [Set-AzureRmFrontDoor](./Set-AzureRmFrontDoor.md)
+[AzureRmFrontDoor](./New-AzureRmFrontDoor.md)
+ Baru [Set-AzureRmFrontDoor](./Set-AzureRmFrontDoor.md)

@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/IotHub/Commands.IotHub/help/Get-AzureRmIotHubValidSku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/IotHub/Commands.IotHub/help/Get-AzureRmIotHubValidSku.md
 ms.openlocfilehash: d1c52cef6548f8762f972789a1fd9d47e8cc92aa
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140864333"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142140719"
 ---
 # Get-AzureRmIotHubValidSku
 
 ## SYNOPSIS
-Mendapatkan semua sku yang valid yang dapat dialihkan oleh IotHub ini.
+Mendapatkan semua sku valid yang dapat ditransisikan oleh IotHub ini.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,12 +27,12 @@ Get-AzureRmIotHubValidSku [-ResourceGroupName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Mendapatkan semua sku valid yang dapat dialihkan oleh IotHub ini.
-IotHub tidak bisa melakukan transisi antara sku gratis dan berbayar dan sebaliknya. Anda harus menghapus dan membuat ulang iothub jika ingin mendapatkannya.
+Mendapatkan semua sku valid yang dapat ditransisikan oleh IotHub ini.
+IotHub tidak dapat bertransisi antara skus gratis dan berbayar dan sebaliknya. Anda harus menghapus dan membuat ulang iothub jika Anda ingin mencapai ini.
 
 ## EXAMPLES
 
-### Contoh 1 Dapatkan sku yang valid
+### Contoh 1 Dapatkan skus yang valid
 ```
 PS C:\> Get-AzureRmIotHubValidSku -ResourceGroupName "myresourcegroup" -Name "myiothub"
 ```
@@ -42,7 +42,7 @@ Mendapatkan daftar semua sku untuk IotHub bernama "myiothub"
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

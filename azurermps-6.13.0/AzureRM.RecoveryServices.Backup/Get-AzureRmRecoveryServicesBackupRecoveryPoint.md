@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/Get-AzureRmRecoveryServicesBackupRecoveryPoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/Get-AzureRmRecoveryServicesBackupRecoveryPoint.md
 ms.openlocfilehash: d9c53d550f64b17a7ee821b43322dd974b7b5676
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421604"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142136380"
 ---
 # Get-AzureRmRecoveryServicesBackupRecoveryPoint
 
 ## SYNOPSIS
-Dapatkan poin pemulihan untuk item yang dicadangkan.
+Mendapatkan titik pemulihan untuk item yang dicadangkan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -42,13 +42,13 @@ Get-AzureRmRecoveryServicesBackupRecoveryPoint [-Item] <ItemBase> [-RecoveryPoin
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmRecoveryServicesBackupRecoveryPoint** mendapatkan titik pemulihan untuk item Cadangan Azure yang dicadangkan.
+Cmdlet **Get-AzureRmRecoveryServicesBackupRecoveryPoint** mendapatkan titik pemulihan untuk item Azure Backup yang dicadangkan.
 Setelah item dicadangkan, objek **AzureRmRecoveryServicesBackupRecoveryPoint** memiliki satu atau beberapa titik pemulihan.
-Mengatur konteks vault menggunakan cmdlet Set-AzureRmRecoveryServicesVaultContext cmdlet sebelum Anda menggunakan cmdlet saat ini.
+Mengatur konteks kubah menggunakan cmdlet Set-AzureRmRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan poin pemulihan dari minggu lalu untuk sebuah item
+### Contoh 1: Dapatkan poin pemulihan dari minggu lalu untuk item
 ```
 PS C:\> $StartDate = (Get-Date).AddDays(-7) 
 PS C:\> $EndDate = Get-Date 
@@ -57,16 +57,16 @@ PS C:\> $BackupItem = Get-AzureRmRecoveryServicesBackupItem -ContainerType Azure
 PS C:\> $RP = Get-AzureRmRecoveryServicesBackupRecoveryPoint -Item $BackupItem -StartDate $Startdate.ToUniversalTime() -EndDate $Enddate.ToUniversalTime()
 ```
 
-Perintah pertama mendapatkan tanggal dari tujuh hari yang lalu, lalu menyimpannya dalam $StartDate variabel.
-Perintah kedua mendapatkan tanggal hari ini, lalu menyimpannya di $EndDate variabel.
-Perintah ketiga mendapatkan wadah cadangan AzureVM, dan menyimpannya dalam $Containers variabel.
-Perintah keempat mendapatkan item cadangan bernama V2VM, lalu menyimpannya dalam $BackupItem baru.
-Perintah terakhir mendapatkan array poin pemulihan untuk item di $BackupItem, lalu menyimpannya dalam variabel $RP pemulihan.
+Perintah pertama mendapatkan tanggal dari tujuh hari yang lalu, lalu menyimpannya dalam variabel $StartDate.
+Perintah kedua mendapatkan tanggal hari ini, lalu menyimpannya dalam variabel $EndDate.
+Perintah ketiga mendapatkan wadah cadangan AzureVM, dan menyimpannya dalam variabel $Containers.
+Perintah keempat mendapatkan item cadangan bernama V2VM, lalu menyimpannya dalam variabel $BackupItem.
+Perintah terakhir mendapatkan array titik pemulihan untuk item dalam $BackupItem, lalu menyimpannya dalam variabel $RP.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-Menentukan akhir dari rentang tanggal.
+Menentukan akhir rentang tanggal.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -96,8 +96,8 @@ Accept wildcard characters: False
 ```
 
 ### -Item
-Menentukan item di mana cmdlet ini mendapatkan poin pemulihan.
-Untuk mendapatkan objek **AzureRmRecoveryServicesBackupItem,** gunakan cmdlet Get-AzureRmRecoveryServicesBackupItem cmdlet.
+Menentukan item di mana cmdlet ini mendapatkan titik pemulihan.
+Untuk mendapatkan objek **AzureRmRecoveryServicesBackupItem** , gunakan cmdlet Get-AzureRmRecoveryServicesBackupItem.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ItemBase
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -172,12 +172,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ItemBase
-Parameter: Item (MenurutNilai)
+Parameter: Item (ByValue)
 
 ### System.String
 Parameter: VaultId (ByValue)

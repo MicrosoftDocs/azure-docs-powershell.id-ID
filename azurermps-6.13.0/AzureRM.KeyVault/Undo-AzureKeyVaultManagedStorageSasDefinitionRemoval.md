@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.keyva
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/KeyVault/Commands.KeyVault/help/Undo-AzureKeyVaultManagedStorageSasDefinitionRemoval.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/KeyVault/Commands.KeyVault/help/Undo-AzureKeyVaultManagedStorageSasDefinitionRemoval.md
-ms.openlocfilehash: 53424f3143b497d7cd646b5386d6616bfc82e2f94848b4588a15af970f603774
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 51fde6c5dd92a2b542dbe49522d372084540ea99
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140854731"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142140371"
 ---
 # Undo-AzureKeyVaultManagedStorageSasDefinitionRemoval
 
@@ -35,7 +35,7 @@ Undo-AzureKeyVaultManagedStorageSasDefinitionRemoval [-AccountName] <String>
 ```
 
 ## DESCRIPTION
-Perintah **Undo-AzureKeyVaultManagedStorageSasDefinitionRemoval** memulihkan definisi SAS penyimpanan terkelola yang dihapus sebelumnya, asalkan penghapusan sementara diaktifkan untuk vault ini, dan bahwa upaya pemulihan terjadi selama interval pemulihan.
+Perintah **Undo-AzureKeyVaultManagedStorageSasDefinitionRemoval** memulihkan definisi SAS penyimpanan terkelola yang dihapus sebelumnya, asalkan penghapusan lunak diaktifkan untuk kubah ini, dan bahwa upaya untuk memulihkan terjadi selama interval pemulihan.
 
 ## EXAMPLES
 
@@ -56,13 +56,13 @@ Updated     : 5/24/2018 9:11:08 PM
 Tags        :
 ```
 
-Urutan perintah ini menentukan apakah definisi SAS penyimpanan tertentu ada di vault pada status dihapus; perintah berikutnya memulihkan definisi sas yang dihapus, membuatnya kembali menjadi status aktif.
+Urutan perintah ini menentukan apakah definisi SAS penyimpanan tertentu ada dalam kubah dalam keadaan dihapus; perintah berikutnya memulihkan definisi sas yang dihapus, mengembalikannya ke status aktif.
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun penyimpanan yang dikelola KeyVault.
-Cmdlet membangun FQDN dari definisi SAS penyimpanan terkelola dari nama vault, lingkungan yang saat ini dipilih, dan nama akun penyimpanan terkelola.
+Cmdlet menyusun FQDN definisi SAS penyimpanan terkelola dari nama kubah, lingkungan yang saat ini dipilih, dan nama akun penyimpanan terkelola.
 
 ```yaml
 Type: System.String
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 
 ### -Nama
 Nama definisi SAS penyimpanan yang dikelola KeyVault.
-Cmdlet membangun FQDN target dari nama vault, lingkungan yang dipilih saat ini, nama akun penyimpanan terkelola, dan nama definisi SAS.
+Cmdlet menyusun FQDN target dari nama kubah, lingkungan yang saat ini dipilih, nama akun penyimpanan terkelola dan nama definisi SAS.
 
 ```yaml
 Type: System.String
@@ -123,8 +123,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama Vault.
-Cmdlet menyusun FQDN dari vault berdasarkan nama dan lingkungan yang saat ini dipilih.
+Nama kubah.
+Cmdlet menyusun FQDN kubah berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

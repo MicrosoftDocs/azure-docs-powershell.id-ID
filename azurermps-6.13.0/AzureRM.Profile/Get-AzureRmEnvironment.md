@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Profile/Commands.Profile/help/Get-AzureRmEnvironment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Profile/Commands.Profile/help/Get-AzureRmEnvironment.md
 ms.openlocfilehash: ef42490d18702682413fd2c0a19e301614ce4d94
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426602"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142136404"
 ---
 # Get-AzureRmEnvironment
 
@@ -39,7 +39,7 @@ Name       Resource Manager Url          ActiveDirectory Authority
 AzureCloud https://management.azure.com/ https://login.microsoftonline.com/
 ```
 
-Contoh ini menunjukkan cara mendapatkan titik akhir dan metadata untuk lingkungan AzureCloud (default).
+Contoh ini memperlihatkan cara mendapatkan titik akhir dan metadata untuk lingkungan AzureCloud (default).
 
 ### Contoh 2: Mendapatkan lingkungan AzureChinaCloud
 ```
@@ -77,12 +77,12 @@ Name              Resource Manager Url                  ActiveDirectory Authorit
 AzureUSGovernment https://management.usgovcloudapi.net/ https://login.microsoftonline.us/
 ```
 
-Contoh ini menunjukkan cara mendapatkan titik akhir dan metadata untuk lingkungan AzureUSGovernment.
+Contoh ini memperlihatkan cara mendapatkan titik akhir dan metadata untuk lingkungan AzureUSGovernment.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama instans Azure yang akan dapatkan.
+Menentukan nama instans Azure yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -128,7 +128,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Add-AzureRMEnvironment](./Add-AzureRMEnvironment.md)
 
-[Remove-AzureRMEnvironment](./Remove-AzureRMEnvironment.md)
+[Hapus-AzureRMEnvironment](./Remove-AzureRMEnvironment.md)
 
 [Set-AzureRMEnvironment](./Set-AzureRMEnvironment.md)
 
