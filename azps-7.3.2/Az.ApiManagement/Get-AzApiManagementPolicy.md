@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementPolicy.md
-ms.openlocfilehash: 5d92116e94bd48b3c549c0628fbb7a124757c701
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: efcdfc8df4632a334c7dd62ccdeab52e4d05e493
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140374070"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142074829"
 ---
 # Get-AzApiManagementPolicy
 
 ## SYNOPSIS
-Mendapatkan kebijakan lingkup tertentu.
+Mendapatkan kebijakan lingkup yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Get-AzApiManagementPolicy -Context <PsApiManagementContext> [-Format <String>] [
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApiManagementPolicy** mendapatkan kebijakan lingkup tertentu.
+Cmdlet **Get-AzApiManagementPolicy** mendapatkan kebijakan lingkup yang ditentukan.
 
 ## EXAMPLES
 
@@ -60,7 +63,7 @@ Get-AzApiManagementPolicy -Context $apimContext -SaveAs "C:\contoso\policies\ten
 
 Perintah ini mendapatkan kebijakan tingkat penyewa dan menyimpannya ke file bernama tenantpolicy.xml.
 
-### Contoh 2: Mendapatkan kebijakan cakupan produk
+### Contoh 2: Dapatkan kebijakan lingkup produk
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementPolicy -Context $apimContext -ProductId "0123456789"
@@ -68,7 +71,7 @@ Get-AzApiManagementPolicy -Context $apimContext -ProductId "0123456789"
 
 Perintah ini mendapatkan kebijakan lingkup produk
 
-### Contoh 3: Mendapatkan kebijakan lingkup API
+### Contoh 3: Dapatkan kebijakan lingkup API
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementPolicy -Context $apimContext -ApiId "9876543210"
@@ -76,7 +79,7 @@ Get-AzApiManagementPolicy -Context $apimContext -ApiId "9876543210"
 
 Perintah ini mendapatkan kebijakan lingkup API.
 
-### Contoh 4: Mendapatkan kebijakan lingkup operasi
+### Contoh 4: Dapatkan kebijakan lingkup operasi
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementPolicy -Context $apimContext -ApiId "9876543210" -OperationId "777"
@@ -122,13 +125,13 @@ Get-AzApiManagementPolicy -Context $apimContext -Format rawxml
 </policies>
 ```
 
-Perintah ini mendapatkan kebijakan lingkup penyewa dalam format non-Xml yang di escape.
+Perintah ini mendapatkan kebijakan lingkup penyewa dalam format escaped Non-Xml.
 
 ## PARAMETERS
 
 ### -ApiId
 Menentukan pengidentifikasi API yang sudah ada.
-Jika Anda menentukan parameter ini, cmdlet akan mengembalikan kebijakan lingkup API.
+Jika Anda menentukan parameter ini cmdlet mengembalikan kebijakan lingkup API.
 
 ```yaml
 Type: System.String
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -187,7 +190,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 ps_force
 
 ```yaml
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 
 ### -OperationId
 Menentukan pengidentifikasi operasi API yang sudah ada.
-Jika Anda menentukan parameter ini dengan *ApiId* , cmdlet akan mengembalikan kebijakan lingkup operasi.
+Jika Anda menentukan parameter ini dengan *ApiId* , cmdlet mengembalikan kebijakan lingkup operasi.
 
 ```yaml
 Type: System.String
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 
 ### -ProductId
 Menentukan pengidentifikasi produk yang sudah ada.
-Jika Anda menentukan parameter ini, cmdlet akan mengembalikan kebijakan lingkup produk.
+Jika Anda menentukan parameter ini cmdlet mengembalikan kebijakan lingkup produk.
 
 ```yaml
 Type: System.String
@@ -252,7 +255,7 @@ Accept wildcard characters: False
 
 ### -SaveAs
 Menentukan jalur file untuk menyimpan hasilnya.
-Jika Anda tidak menentukan parameter ini, hasilnya akan saluran sebagai sting.
+Jika Anda tidak menentukan parameter ini, hasilnya akan disalurkan sebagai sengatan.
 
 ```yaml
 Type: System.String
@@ -267,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -282,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -297,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

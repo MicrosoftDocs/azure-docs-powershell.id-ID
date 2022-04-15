@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectednetwork
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/Get-AzConnectedNetworkFunctionVendor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/Get-AzConnectedNetworkFunctionVendor.md
-ms.openlocfilehash: f55f45ef129c91ea0896d1d306539249a6b51208
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 874919fac0611c564f9038d4e486de15bfffe12f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140395182"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142036253"
 ---
 # Get-AzConnectedNetworkFunctionVendor
 
 ## SYNOPSIS
-Mencantumkan semua informasi sku dan vendor yang tersedia.
+Mencantumkan semua informasi vendor dan sku yang tersedia.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.connectednetwork/get-azconnectednetworkfunctionvendor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzConnectedNetworkFunctionVendor [-SubscriptionId <String[]>] [-DefaultProfi
 ```
 
 ## DESCRIPTION
-Mencantumkan semua informasi sku dan vendor yang tersedia.
+Mencantumkan semua informasi vendor dan sku yang tersedia.
 
 ## EXAMPLES
 
@@ -40,7 +43,7 @@ SkuList                                                                         
 {vendor2-sku1}                                                                                  myVendor2
 ```
 
-Mendapatkan informasi tentang vendor dan skunya
+Mendapatkan informasi tentang vendor dan sku mereka
 
 ### Contoh 2: Get-AzConnectedNetworkFunctionVendor melalui Id Langganan
 ```powershell
@@ -52,7 +55,7 @@ SkuList                                                                         
 {vendor2-sku1}                                                                                  myVendor2
 ```
 
-Mendapatkan informasi tentang vendor dan skunya dalam langganan tertentu.
+Mendapatkan informasi tentang vendor dan sku mereka dalam langganan tertentu.
 
 ## PARAMETERS
 
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

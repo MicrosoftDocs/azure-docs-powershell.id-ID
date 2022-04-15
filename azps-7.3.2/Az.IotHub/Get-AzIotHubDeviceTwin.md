@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDeviceTwin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDeviceTwin.md
-ms.openlocfilehash: 0f734e7e22b86223f96cbbbed5931b676b1789d0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 65f20d52eac2f229bc82fdd5ce216f5b76c891b0
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140402466"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142033751"
 ---
 # Get-AzIotHubDeviceTwin
 
 ## SYNOPSIS
-Mendapatkan perangkat dari perangkat lain.
+Mendapatkan perangkat kembar.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubdevicetwin) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzIotHubDeviceTwin [-ResourceId] <String> [-DeviceId] <String> [-DefaultProf
 ```
 
 ## DESCRIPTION
-Mendapatkan perangkat dari perangkat lain. Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-device-twins untuk informasi selengkapnya.
+Mendapatkan perangkat kembar. Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-device-twins untuk informasi selengkapnya.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Mendapatkan perangkat dari perangkat lain. Lihat https://docs.microsoft.com/azur
 PS C:\> Get-AzIotHubDeviceTwin -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -DeviceId "myDevice1"
 ```
 
-Mengembalikan objek device object.
+Mengembalikan objek kembar perangkat.
 
 ## PARAMETERS
 
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

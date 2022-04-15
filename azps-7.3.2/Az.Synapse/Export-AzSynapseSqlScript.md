@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/export-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Export-AzSynapseSqlScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Export-AzSynapseSqlScript.md
-ms.openlocfilehash: 776187752c22b49e72a83f5dd038b5dfca473afa
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f4a6a4d1f56b459150da03f1c41349c3b9849395
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140182834"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142024121"
 ---
 # Export-AzSynapseSqlScript
 
 ## SYNOPSIS
 Mengekspor skrip sql dari ruang kerja Synapse.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/export-azsynapsesqlscript) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Export-AzSynapseSqlScript -InputObject <PSSqlScriptResource> -OutputFolder <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Export-AzSynapseSqlScript** mengekspor skrip sql Azure Synapse ke file SQL Server query(.sql). Jika Anda menentukan nama skrip sql, cmdlet akan mengekspor skrip sql yang ditentukan. Jika Anda tidak menentukan nama, ekspor semua skrip sql di ruang kerja.
+Cmdlet **Export-AzSynapseSqlScript** mengekspor skrip Azure Synapse sql ke file kueri SQL Server(.sql). Jika Anda menentukan nama skrip sql, cmdlet akan mengekspor skrip sql yang ditentukan. Jika Anda tidak menentukan nama, cmdlet mengekspor semua skrip sql di ruang kerja.
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ Mengekspor semua skrip sql di ruang kerja ContosoWorkspace ke folder "C:\sqlscri
 PS C:\> Export-AzSynapseSqlScript -WorkspaceName ContosoWorkspace -OutputFolder "C:\sqlscript" -Name "ContosoSqlScript"
 ```
 
-Mengekspor satu skrip sql bernama ContosoSqlScript di ruang kerja ContosoWorkspace ke folder "C:\sqlscript".
+Mengekspor skrip sql tunggal bernama ContosoSqlScript di ruang kerja ContosoWorkspace ke folder "C:\sqlscript".
 
 ### Contoh 3
 ```powershell
@@ -62,7 +65,7 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Export-AzSynapseSqlScript -Name ContosoSqlScript -OutputFolder "C:\sqlscript"
 ```
 
-Mengekspor satu skrip sql bernama ContosoSqlScript di ruang kerja ContosoWorkspace ke folder "C:\sqlscript" melalui pipeline.
+Mengekspor skrip sql tunggal yang disebut ContosoSqlScript di ruang kerja ContosoWorkspace ke folder "C:\sqlscript" melalui pipeline.
 
 ### Contoh 4
 ```powershell
@@ -70,7 +73,7 @@ PS C:\> $sqlscript = Get-AzSynapseSqlScript  -WorkspaceName ContosoWorkspace -Na
 PS C:\> $sqlscript | Export-AzSynapseSqlScript -OutputFolder "C:\sqlscript"
 ```
 
-Mengekspor satu skrip sql bernama ContosoSqlScript di ruang kerja ContosoWorkspace ke folder "C:\sqlscript" melalui pipeline.
+Mengekspor skrip sql tunggal yang disebut ContosoSqlScript di ruang kerja ContosoWorkspace ke folder "C:\sqlscript" melalui pipeline.
 
 ## PARAMETERS
 
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -OutputFolder
-Folder tempat skrip sql harus diletakkan.
+Folder tempat skrip sql harus ditempatkan.
 
 ```yaml
 Type: System.String
@@ -134,7 +137,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

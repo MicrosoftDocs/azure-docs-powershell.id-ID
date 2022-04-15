@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/New-AzContainerRegistry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/New-AzContainerRegistry.md
-ms.openlocfilehash: 4f0857dcc85e97f2188789a0646390432ecfb518
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a33d548dcd4f634ec6d4a213d9a602c4bb152142
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140180034"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142035821"
 ---
 # New-AzContainerRegistry
 
 ## SYNOPSIS
-Membuat registri wadah.
+Membuat registri kontainer.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/new-azcontainerregistry) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Cmdlet New-AzContainerRegistry membuat registri wadah.
 
 ## EXAMPLES
 
-### Contoh 1: Buat registri wadah dengan akun penyimpanan baru.
+### Contoh 1: Buat registri kontainer dengan akun penyimpanan baru.
 ```powershell
 PS C:\>New-AzContainerRegistry -ResourceGroupName "MyResourceGroup" -Name "MyRegistry" -Sku "Basic"
 
@@ -42,9 +45,9 @@ Registry Name     Sku        LoginServer               CreationDate             
 myregistry        Premium    myregistry.azurecr.io     10/31/2017 6:49:31 PM      Succeeded  True
 ```
 
-Perintah ini membuat registri wadah dengan akun penyimpanan baru di grup sumber daya \`MyResourceGroup\`.
+Perintah ini membuat registri kontainer dengan akun penyimpanan baru dalam grup \`sumber daya MyResourceGroup\`.
 
-### Contoh 2: Buat registri wadah dengan pengguna admin diaktifkan.
+### Contoh 2: Membuat registri kontainer dengan pengguna admin diaktifkan.
 ```powershell
 PS C:\>New-AzContainerRegistry -ResourceGroupName "MyResourceGroup" -Name "MyRegistry" -Sku "Basic" -EnableAdminUser
 
@@ -56,12 +59,12 @@ Registry Name     Sku        LoginServer               CreationDate             
 myregistry        Premium    myregistry.azurecr.io     10/31/2017 6:49:31 PM      Succeeded  True
 ```
 
-Perintah ini membuat registri wadah dengan pengguna admin diaktifkan.
+Perintah ini membuat registri kontainer dengan pengguna admin diaktifkan.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableAdminUser
-Aktifkan pengguna admin untuk registri wadah.
+Aktifkan pengguna admin untuk registri kontainer.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Container Registry Location.
+Lokasi Registri Kontainer.
 Default ke lokasi grup sumber daya.
 
 ```yaml
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Container Registry Name.
+Nama Registri Kontainer.
 
 ```yaml
 Type: System.String
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Container Registry SKU.
+Kontainer Registri SKU.
 
 ```yaml
 Type: System.String
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Container Registry Tags.Key-value pairs dalam bentuk tabel hash.
+Container Registry Tags.Key-value pairs in the form of a hash table.
 Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

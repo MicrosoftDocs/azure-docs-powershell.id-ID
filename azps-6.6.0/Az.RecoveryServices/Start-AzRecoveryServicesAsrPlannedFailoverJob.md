@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrPlannedFailoverJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrPlannedFailoverJob.md
 ms.openlocfilehash: b6e5122c5d7aa0e9b176bf238d1409befa24bcd3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140481423"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141949587"
 ---
 # Start-AzRecoveryServicesAsrPlannedFailoverJob
 
@@ -18,7 +18,7 @@ ms.locfileid: "140481423"
 Memulai operasi failover yang direncanakan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/start-azrecoveryservicesasrplannedfailoverjob) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/start-azrecoveryservicesasrplannedfailoverjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,8 +48,8 @@ Start-AzRecoveryServicesAsrPlannedFailoverJob -ReplicationProtectedItem <ASRRepl
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzRecoveryServicesAsrPlannedFailoverJob** memulai failover yang direncanakan untuk item terproteksi replikasi Situs Azure atau paket pemulihan.
-Anda dapat memeriksa apakah pekerjaan berhasil dengan menggunakan cmdlet Get-AzRecoveryServicesAsrJob cmdlet.
+Cmdlet **Start-AzRecoveryServicesAsrPlannedFailoverJob** memulai failover yang direncanakan untuk item terproteksi replikasi Azure Site Recovery atau rencana pemulihan.
+Anda dapat memeriksa apakah pekerjaan berhasil menggunakan cmdlet Get-AzRecoveryServicesAsrJob.
 
 ## EXAMPLES
 
@@ -58,12 +58,12 @@ Anda dapat memeriksa apakah pekerjaan berhasil dengan menggunakan cmdlet Get-AzR
 PS C:\> $currentJob = Start-AzRecoveryServicesAsrPlannedFailoverJob -RecoveryPlan $RP -Direction PrimaryToRecovery
 ```
 
-Memulai failover yang direncanakan untuk paket pemulihan ASR tertentu dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Memulai failover yang direncanakan untuk rencana pemulihan ASR yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ## PARAMETERS
 
 ### -CreateVmIfNotFound
-Buat mesin virtual jika tidak ditemukan saat gagal kembali ke kawasan utama (digunakan di pemulihan lokasi alternatif.) Nilai yang dapat diterima untuk parameter ini adalah:
+Buat mesin virtual jika tidak ditemukan saat gagal kembali ke kawasan utama (digunakan dalam pemulihan lokasi alternatif.) Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Ya
 - Tidak
@@ -96,7 +96,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DataEncryptionSeccryptryCertFile
+### -DataEncryptionSecondaryCertFile
 Menentukan file sertifikat sekunder.
 
 ```yaml
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -MultiVmSyncPoint
-Menentukan apakah akan mengaktifkan poin sinkronisasi multi VM untuk failover dari VM sync multi VM yang diaktifkan (Hanya berlaku untuk skenario replikasi VMware ke Azure).
+Menentukan apakah akan mengaktifkan titik sinkronisasi multi VM untuk kegagalan sinkronisasi multi VM yang diaktifkan VM (Berlaku hanya untuk VMware ke skenario replikasi Azure).
 
 ```yaml
 Type: System.String
@@ -164,21 +164,21 @@ Accept wildcard characters: False
 ```
 
 ### -Optimize
-Menentukan apa yang akan dioptimalkan.
-Parameter ini berlaku ketika failover dilakukan dari situs Azure ke situs lokal yang memerlukan sinkronisasi data penting.
-Nilai valid adalah:
+Menentukan apa yang harus dioptimalkan.
+Parameter ini berlaku ketika failover dilakukan dari situs Azure ke situs lokal yang memerlukan sinkronisasi data yang besar.
+Nilai yang valid adalah:
 
-- ForDowntime
+- Untuk Waktu Henti
 - ForSynchronization
 
-Saat **ForDowntime** ditentukan, ini menunjukkan bahwa data disinkronkan sebelum failover untuk meminimalkan waktu henti.
+Ketika **ForDowntime** ditentukan, ini menunjukkan bahwa data disinkronkan sebelum failover untuk meminimalkan waktu henti.
 Sinkronisasi dilakukan tanpa mematikan mesin virtual.
 Setelah sinkronisasi selesai, pekerjaan ditangguhkan.
 Lanjutkan pekerjaan untuk melakukan operasi sinkronisasi tambahan yang mematikan mesin virtual.
 
-Saat **ForSynchronization** ditentukan, ini menunjukkan bahwa data disinkronkan selama failover saja sehingga sinkronisasi data diminimalkan.
-Dengan pengaturan ini diaktifkan, mesin virtual akan langsung mematikan.
-Sinkronisasi dimulai setelah penutupan untuk menyelesaikan operasi failover.
+Ketika **ForSynchronization** ditentukan, ini menunjukkan bahwa data hanya disinkronkan selama failover sehingga sinkronisasi data diminimalkan.
+Dengan mengaktifkan pengaturan ini, mesin virtual langsung dimatikan.
+Sinkronisasi dimulai setelah shutdown untuk menyelesaikan operasi failover.
 
 ```yaml
 Type: System.String
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryPlan
-Menentukan objek paket Pemulihan ASR yang terkait dengan rencana pemulihan yang akan gagal berakhir.
+Menentukan objek rencana Pemulihan ASR yang terkait dengan rencana pemulihan yang gagal.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRecoveryPlan
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryTag
-Menentukan tag pemulihan: RecoveryTagApplicationConsistent, RecoveryTagCrashConsistent (Hanya berlaku untuk VMware ke skenario replikasi Azure).
+Menentukan tag pemulihan: RecoveryTagApplicationConsistent, RecoveryTagCrashConsistent (Berlaku hanya untuk VMware ke skenario replikasi Azure).
 
 ```yaml
 Type: System.String
@@ -225,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicationProtectedItem
-Menentukan objek item dilindungi replikasi ASR yang terkait dengan item replikasi yang diproteksi yang akan gagal atas.
+Menentukan objek item terproteksi replikasi ASR yang terkait dengan item yang diproteksi replikasi untuk gagal.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicesProvider
-Mengidentifikasi host untuk membuat mesin virtual saat kegagalan ke lokasi alternatif dengan menentukan objek penyedia layanan ASR terkait dengan penyedia layanan ASR yang berjalan pada host.
+Mengidentifikasi host tempat untuk membuat mesin virtual saat gagal ke lokasi alternatif dengan menentukan objek penyedia layanan ASR yang terkait dengan penyedia layanan ASR yang berjalan di host.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRecoveryServicesProvider
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -270,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -285,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

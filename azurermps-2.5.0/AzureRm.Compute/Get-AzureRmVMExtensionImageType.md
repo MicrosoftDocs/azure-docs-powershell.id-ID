@@ -5,16 +5,16 @@ ms.assetid: 45F35BDD-969E-4521-9E8D-3499A15434A6
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/get-azurermvmextensionimagetype
 schema: 2.0.0
 ms.openlocfilehash: 3a310588b77888851684638911f88af95d600db7
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428281"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141972005"
 ---
 # Get-AzureRmVMExtensionImageType
 
 ## SYNOPSIS
-Mendapatkan jenis ekstensi Azure.
+Mendapatkan tipe ekstensi Azure.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -35,12 +35,12 @@ Cmdlet **Get-AzureRmVMExtensionImageType** mendapatkan tipe ekstensi Azure.
 PS C:\> Get-AzureRmVMExtensionImageType -Location "Central US" -PublisherName "Fabrikam"
 ```
 
-Perintah ini akan mendapatkan tipe gambar ekstensi untuk penerbit dan lokasi yang ditentukan.
+Perintah ini mendapatkan tipe gambar ekstensi untuk penerbit dan lokasi yang ditentukan.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -56,7 +56,7 @@ Accept wildcard characters: False
 
 ### -Lokasi
 Menentukan lokasi ekstensi.
-Cmdlet ini mendapatkan tipe ekstensi pada lokasi yang ditentukan parameter ini.
+Cmdlet ini mendapatkan tipe ekstensi di lokasi yang ditentukan parameter ini.
 
 ```yaml
 Type: String
@@ -88,11 +88,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS

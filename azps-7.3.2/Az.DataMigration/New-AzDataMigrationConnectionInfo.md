@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/Ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationConnectionInfo.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationConnectionInfo.md
-ms.openlocfilehash: 647658f2a16015d26421143c462f071d1fcc3df2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: cd2537740dee87e8308d7d6f6a050db1120faff6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140571540"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141940011"
 ---
 # New-AzDataMigrationConnectionInfo
 
 ## SYNOPSIS
-Membuat objek Info Koneksi baru yang menentukan tipe server dan nama untuk koneksi.
+Membuat objek Info Koneksi baru yang menentukan tipe dan nama server untuk koneksi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationconnectioninfo) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzDataMigrationConnectionInfo -ServerType <ServerTypeEnum> [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzDataMigrationConnectionInfo membuat objek Baru Info Koneksi yang menentukan tipe server untuk koneksi. 
+Cmdlet New-AzDataMigrationConnectionInfo membuat objek Info Koneksi baru yang menentukan tipe server untuk koneksi. 
 
 ## EXAMPLES
 
@@ -34,12 +37,12 @@ Cmdlet New-AzDataMigrationConnectionInfo membuat objek Baru Info Koneksi yang me
 PS C:\> New-AzDmsConnInfo -ServerType SQL -DataSource mySourceServer -AuthType SqlAuthentication -TrustServerCertificate:$true
 ```
 
-Contoh sebelumnya membuat objek Connection Info baru yang menyediakan SQL sebagai parameter ServerType.
+Contoh sebelumnya membuat objek Info Koneksi baru yang menyediakan SQL sebagai parameter ServerType.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -54,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerType
-Enum yang menjelaskan tipe server yang akan disambungkan. Nilai yang didukung saat ini SQL untuk SQL Server, Azure SQL Managed Instance, SandboxoDb, CosmosDb, dan Azure SQL Database. 
+Enum yang menjelaskan tipe server untuk disambungkan. Nilai yang didukung saat ini SQL untuk SQL Server, Azure SQL Managed Instance, MongoDb, CosmosDb, dan Azure SQL Database. 
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataMigration.Models.ServerTypeEnum
@@ -70,11 +73,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

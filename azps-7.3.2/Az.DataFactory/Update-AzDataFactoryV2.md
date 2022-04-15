@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Update-AzDataFactoryV2.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Update-AzDataFactoryV2.md
-ms.openlocfilehash: d3d101c0a76236452b53c881d4cf93e6c1bb5c90
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d587689c21630264026465b2671b04b44f9df662
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140394695"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141940353"
 ---
 # Update-AzDataFactoryV2
 
 ## SYNOPSIS
 Memperbarui properti pabrik data.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/update-azdatafactoryv2) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -70,12 +73,12 @@ Identity          :
 ProvisioningState : Succeeded
 ```
 
-Perintah ini memperbarui tag untuk WikiADF pabrik ke kamus yang berisi tag myNewTagName dengan nilai myTagValue.
+Perintah ini memperbarui tag untuk pabrik WikiADF menjadi kamus yang berisi tag bernama myNewTagName dengan nilai myTagValue.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionKeyVersion
-Versi kunci yang digunakan untuk CMK. Jika tidak tersedia, versi terbaru akan digunakan.
+Versi kunci yang digunakan untuk CMK. Jika tidak disediakan, versi terbaru akan digunakan.
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionUserAssignedIdentity
-Pengguna menetapkan identitas untuk digunakan melakukan autentikasi ke vault kunci pelanggan. Jika tidak diberikan Identitas Layanan Terkelola akan digunakan.
+Identitas yang ditetapkan pengguna untuk digunakan untuk mengautentikasi kubah kunci pelanggan. Jika tidak diberikan Identitas Layanan Terkelola akan digunakan.
 
 ```yaml
 Type: System.String
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionVaultBaseUrl
-Url Azure Key Vault yang digunakan untuk enkripsi dengan CMK.
+Url Azure Key Vault digunakan untuk enkripsi dengan CMK.
 
 ```yaml
 Type: System.String
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Tipe Identitas yang akan dikaitkan dengan DataFactory Anda. Opsi adalah 'SystemAssigned', 'UserAssigned' atau 'SystemAssigned,UserAssigned'
+Tipe Identitas yang akan dikaitkan dengan DataFactory Anda. Opsinya adalah 'SystemAssigned', 'UserAssigned' atau 'SystemAssigned,UserAssigned'
 
 ```yaml
 Type: System.String
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccess
-Apakah akses jaringan publik diperbolehkan atau tidak untuk pabrik data. Opsi 'Diaktifkan' atau 'Dinonaktifkan'
+Apakah akses jaringan publik diperbolehkan atau tidak untuk pabrik data. Opsinya adalah 'Diaktifkan' atau 'Dinonaktifkan'
 
 ```yaml
 Type: System.String
@@ -254,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserAssignedIdentity
-Kamus yang berisi identitas pabrik data yang ditetapkan pengguna.
+Kamus yang berisi identitas yang ditetapkan pengguna dari pabrik data.
 
 ```yaml
 Type: System.Collections.Generic.IDictionary`2[System.String,System.Object]
@@ -269,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -284,7 +287,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -299,7 +302,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

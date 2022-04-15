@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.subscription/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Subscription/Subscription/help/New-AzSubscriptionAlias.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Subscription/Subscription/help/New-AzSubscriptionAlias.md
-ms.openlocfilehash: 8b2a647b72bca2a2f877c2ab60d793d967819445
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 8f04c1af6b8b3ae1e740e8749276b2e4b6bcc7e5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140195287"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142024265"
 ---
 # New-AzSubscriptionAlias
 
 ## SYNOPSIS
 Membuat alias dan langganan baru
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.subscription/new-azsubscriptionalias) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzSubscriptionAlias -AliasName <String> [-BillingScope <String>] [-Workload 
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSubscriptionAlias** membuat alias dan langganan baru
+Cmdlet **New-AzSubscriptionAlias membuat alias** dan langganan baru
 
 ## EXAMPLES
 
@@ -35,7 +38,7 @@ Cmdlet **New-AzSubscriptionAlias** membuat alias dan langganan baru
 PS C:\> New-AzSubscriptionAlias -AliasName "NewAlias1" -SubscriptionName "Subscription1" -BillingScope $BillingScope -Workload Production
 ```
 
-Membuat alias dan langganan EA baru
+Membuat alias baru dan langganan EA
 
 ### Contoh 2
 ```powershell
@@ -63,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Id Langganan Yang Sudah Ada
+Id Langganan yang Sudah Ada
 
 ```yaml
 Type: System.String
@@ -152,7 +155,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Beban Kerja
+### -Beban kerja
 Tipe Beban Kerja
 
 ```yaml
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -199,11 +202,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareDataSetMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareDataSetMapping.md
-ms.openlocfilehash: c36ec30ec181a6f7e751631781db7c11afda2c5e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: fce8ebe28c9846cc050108dd8e9b49357c6ce3f3
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140550212"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141939543"
 ---
 # Get-AzDataShareDataSetMapping
 
 ## SYNOPSIS
-Mendapatkan informasi tentang pemetaan set data dalam langganan bersama
+Mendapatkan informasi tentang pemetaan kumpulan data dalam langganan berbagi
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datashare/get-azdatasharedatasetmapping) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzDataShareDataSetMapping -ResourceId <String> [-DefaultProfile <IAzureConte
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataShareDataSetMapping** mendapatkan informasi tentang pemetaan set data tertentu jika nama ditentukan. Jika tidak, program akan mendapatkan informasi tentang semua pemetaan set data dalam langganan bersama. 
+Cmdlet **Get-AzDataShareDataSetMapping** mendapatkan informasi tentang pemetaan kumpulan data tertentu jika nama ditentukan. Jika tidak, aplikasi akan mendapatkan informasi tentang semua pemetaan kumpulan data dalam langganan berbagi. 
 
 ## EXAMPLES
 
@@ -52,11 +55,11 @@ Name                 : dsm
 Type                 : Microsoft.DataShare/DataSetMappings
 ```
 
- Perintah ini menampilkan informasi tentang semua pemetaan set data dalam langganan berbagi.
+ Perintah ini menampilkan informasi tentang semua pemetaan kumpulan data dalam langganan berbagi.
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun berbagi data Azure.
 
 ```yaml
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya akun berbagi data Azure.
+Nama grup sumber daya akun berbagi data azure.
 
 ```yaml
 Type: System.String
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya pemetaan kumpulan data Azure.
+Id sumber daya pemetaan kumpulan data azure.
 
 ```yaml
 Type: System.String
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

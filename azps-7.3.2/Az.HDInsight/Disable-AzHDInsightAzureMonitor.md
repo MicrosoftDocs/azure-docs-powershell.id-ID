@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/disabl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Disable-AzHDInsightAzureMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Disable-AzHDInsightAzureMonitor.md
-ms.openlocfilehash: a202bd4ec87c023da5283a502ae113c1cfd1a8fa
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 7576e7c66c9d73cad2438edf80100a073c3c71de
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140571377"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142033985"
 ---
 # Disable-AzHDInsightAzureMonitor
 
 ## SYNOPSIS
-Menonaktifkan Azure Monitor dalam kluster HDInsight yang ditentukan.
+Menonaktifkan Azure Monitor dalam kluster HDInsight tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/disable-azhdinsightazuremonitor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Disable-AzHDInsightAzureMonitor [-InputObject] <AzureHDInsightCluster>
 ```
 
 ## DESCRIPTION
-Cmdlet **Disable-AzHDInsightAzureMonitor** menonaktifkan Azure Monitor dalam kluster HDInsight tertentu.
+Cmdlet **Disable-AzHDInsightAzureMonitor** ini menonaktifkan Azure Monitor dalam kluster HDInsight tertentu.
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ PS C:\> $resourceGroupName = "Group"
 PS C:\> Disable-AzHDInsightAzureMonitor -ClusterName $clusterName -ResourceGroup $resourceGroupName
 ```
 
-Cmdlet ini menonaktifkan monitor Azure dalam kluster HDInsight yang ditentukan.
+Cmdlet ini menonaktifkan azure monitor dalam kluster HDInsight tertentu.
 
 ### Contoh 2
 ```powershell
@@ -60,7 +63,7 @@ PS C:\> $cluster=Get-AzHDInsightCluster -ClusterName $clusterName
 PS C:\> $cluster | Disable-AzHDInsightAzureMonitor
 ```
 
-Cmdlet ini menonaktifkan monitor Azure dalam kluster HDInsight tertentu dengan pipeline.
+Cmdlet ini menonaktifkan azure monitor dalam kluster HDInsight tertentu dengan pipeline.
 
 ## PARAMETERS
 
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

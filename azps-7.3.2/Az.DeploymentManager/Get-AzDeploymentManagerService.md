@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Get-AzDeploymentManagerService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Get-AzDeploymentManagerService.md
-ms.openlocfilehash: 2aca0bcfd4bc8d8379dbcca961f3ccf2acaec8f4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c3c825a4f9f77f2445dc72a148b36f29baefa504
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140200631"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142035137"
 ---
 # Get-AzDeploymentManagerService
 
 ## SYNOPSIS
 Mendapatkan layanan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.deploymentmanager/get-azdeploymentmanagerservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,10 +54,10 @@ Get-AzDeploymentManagerService [-InputObject] <PSServiceResource> [-DefaultProfi
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDeploymentManagerService** mendapatkan layanan di bawah topologi layanan, dan mengembalikan objek yang mewakili layanan itu.
-Tentukan layanan berdasarkan namanya, topologi layanan yang ada di dalamnya dan nama grup sumber daya. Alternatifnya, Anda dapat menyediakan objek Layanan atau ResourceId.
+Cmdlet **Get-AzDeploymentManagerService** mendapatkan layanan di bawah topologi layanan, dan mengembalikan objek yang mewakili layanan tersebut.
+Tentukan layanan berdasarkan namanya, topologi layanan di dalamnya dan nama grup sumber daya. Alternatifnya, Anda bisa menyediakan objek Layanan atau ResourceId.
 
-Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan pada layanan menggunakan cmdlet Set-AzDeploymentManagerService cmdlet.
+Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan pada layanan menggunakan cmdlet Set-AzDeploymentManagerService.
 
 ## EXAMPLES
 
@@ -63,21 +66,21 @@ Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan pada layan
 PS C:\> Get-AzDeploymentManagerService -ResourceGroupName ContosoResourceGroup -ServiceTopologyName ContosoServiceTopology -Name ContosoService1
 ```
 
-Perintah ini mendapatkan layanan bernama ContosoService1 dalam topologi layanan yang bernama ContosoServiceTopology di ContosoResourceGroup.
+Perintah ini mendapatkan layanan bernama ContosoService1 dalam topologi layanan bernama ContosoServiceTopology di ContosoResourceGroup.
 
 ### Contoh 2: Dapatkan layanan menggunakan pengidentifikasi sumber daya.
 ```powershell
 PS C:\> Get-AzDeploymentManagerService -ResourceId "/subscriptions/subscriptionId/resourcegroups/ContosoResourceGroup/providers/Microsoft.DeploymentManager/serviceTopologies/ContosoServiceTopology/services/ContosoService1"
 ```
 
-Perintah ini mendapatkan layanan bernama ContosoService1 dalam topologi layanan yang bernama ContosoServiceTopology di ContosoResourceGroup.
+Perintah ini mendapatkan layanan bernama ContosoService1 dalam topologi layanan bernama ContosoServiceTopology di ContosoResourceGroup.
 
-### Contoh 3: Get a service using the service object.
+### Contoh 3: Dapatkan layanan menggunakan objek layanan.
 ```powershell
 PS C:\> Get-AzDeploymentManagerService -InputObject $serviceObject
 ```
 
-Perintah ini akan mendapatkan layanan dengan nama, nama topologi layanan, dan ResourceGroup yang sesuai dengan nama, properti ServiceTopologyName dan ResourceGroupName $serviceObject, secara berurutan.
+Perintah ini mendapatkan layanan yang namanya, nama topologi layanan dan ResourceGroup masing-masing cocok dengan properti Name, ServiceTopologyName dan ResourceGroupName $serviceObject.
  
 
 ## PARAMETERS
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceTopologyObject
-Objek topologi layanan tempat layanan akan dibuat.
+Objek topologi layanan tempat layanan harus dibuat.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DeploymentManager.Models.PSServiceTopologyResource
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementIdentityProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementIdentityProvider.md
-ms.openlocfilehash: 120b1d558319a1b5fb795e4af2f72c6633750b90
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 577fe7d094828bde7b1fc6973aeb2df7813c711b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140189499"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142074757"
 ---
 # New-AzApiManagementIdentityProvider
 
 ## SYNOPSIS
 Membuat konfigurasi Penyedia Identitas baru.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementidentityprovider) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,16 +35,16 @@ Membuat konfigurasi Penyedia Identitas baru.
 
 ## EXAMPLES
 
-### Contoh 1: Mengonfigurasi Facebook sebagai penyedia identitas untuk Portal Pengembang Masuk
+### Contoh 1: Mengonfigurasi Facebook sebagai Penyedia identitas untuk Login Portal Pengembang
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 New-AzApiManagementIdentityProvider -Context $apimContext -Type 'Facebook' -ClientId 'sdfsfwerwerw' -ClientSecret 'sdgsdfgfst43tewfewrf'
 ```
 
 Perintah ini mengonfigurasi Identitas Facebook sebagai Penyedia Identitas yang diterima di Portal Pengembang layanan ApiManagement.
-Ini akan mengambil input ClientId dan ClientSecret dari aplikasi Facebook.
+Ini akan menjadi input ClientId dan ClientSecret dari aplikasi Facebook.
 
-### Contoh 2: Mengonfigurasi adB2C sebagai Penyedia identitas untuk Portal Pengembang Masuk
+### Contoh 2: Mengonfigurasi adB2C sebagai Penyedia identitas untuk Login Portal Pengembang
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 New-AzApiManagementIdentityProvider -Context $context -Type AadB2C -ClientId 6b1fc750-9e68-450c-97d2-ba6acd0fbc20 -ClientSecret "foobar" -AllowedTenants 'samirtestbc.onmicrosoft.com' -SignupPolicyName B2C_1_signup-policy
@@ -63,7 +66,7 @@ ServiceName              : contoso
 ```
 
 Perintah ini mengonfigurasi Identitas Facebook sebagai Penyedia Identitas yang diterima di Portal Pengembang layanan ApiManagement.
-Ini akan mengambil input ClientId dan ClientSecret dari aplikasi Facebook.
+Ini akan menjadi input ClientId dan ClientSecret dari aplikasi Facebook.
 
 ## PARAMETERS
 
@@ -82,8 +85,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Authority
-OpenID Koneksi nama host titik akhir untuk AAD atau AAD B2C. Parameter ini bersifat opsional.
+### -Otoritas
+OpenID Koneksi menemukan nama host titik akhir untuk AAD atau AAD B2C. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 
 ### -ClientId
 Id Klien Aplikasi di Penyedia Identitas eksternal.
-Id Aplikasi untuk login Facebook, ID Klien untuk masuk ke Google, ID Aplikasi untuk Microsoft.
+Id Aplikasi untuk masuk Facebook, ID Klien untuk masuk Google, ID Aplikasi untuk Microsoft.
 
 ```yaml
 Type: System.String
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 
 ### -ClientSecret
 Rahasia klien Aplikasi di Penyedia Identitas eksternal, digunakan untuk mengautentikasi permintaan masuk.
-For example, it is App Secret for Facebook login, API Key for Google login, Public Key for Microsoft.
+Misalnya, ini adalah Rahasia Aplikasi untuk masuk Facebook, Kunci API untuk masuk Google, Kunci Publik untuk Microsoft.
 
 ```yaml
 Type: System.String
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -PasswordResetPolicyName
-Nama Kebijakan Reset Kata Sandi. Hanya berlaku untuk AAD Penyedia Identitas B2C. Parameter ini bersifat opsional.
+Nama Kebijakan Pengaturan Ulang Kata Sandi. Hanya berlaku untuk AAD Penyedia Identitas B2C. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -SigninTenant
-Penyewa Masuk untuk menimpa AAD B2C, bukan `common` Penyewa
+Penyewa Masuk untuk menimpa di AAD B2C, bukan `common` Penyewa
 
 ```yaml
 Type: System.String
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 
 ### -Tipe
 Pengidentifikasi Penyedia Identitas.
-Jika ditentukan akan mencoba menemukan konfigurasi penyedia identitas menurut pengidentifikasi.
+Jika ditentukan akan mencoba menemukan konfigurasi penyedia identitas oleh pengidentifikasi.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -254,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -269,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -284,7 +287,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

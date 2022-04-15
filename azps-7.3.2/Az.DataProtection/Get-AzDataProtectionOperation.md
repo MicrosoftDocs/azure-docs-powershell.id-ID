@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Get-AzDataProtectionOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Get-AzDataProtectionOperation.md
-ms.openlocfilehash: 26f7568cf1e70002ddb2f8f46965bc796af78e4d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 476728b1411da1a03a6f83466f0817083708b0bd
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140556779"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142035299"
 ---
 # Get-AzDataProtectionOperation
 
 ## SYNOPSIS
 Mengembalikan daftar operasi yang tersedia.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/get-azdataprotectionoperation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Mengembalikan daftar operasi yang tersedia.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan daftar operasi yang tersedia
+### Contoh 1: Dapatkan daftar operasi yang tersedia
 ```powershell
 PS C:\> Get-AzDataProtectionOperation
 
@@ -88,7 +91,7 @@ IsDataAction Name                                                               
              Microsoft.DataProtection/operations/read                                                            user
 ```
 
-Perintah di atas berisi daftar operasi yang tersedia.
+Perintah di atas mendapatkan daftar operasi yang tersedia.
 
 ## PARAMETERS
 
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

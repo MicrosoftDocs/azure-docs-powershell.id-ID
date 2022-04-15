@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2ActivityRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2ActivityRun.md
-ms.openlocfilehash: b7e97bd9d6e7ca83a324908cc0eaeca67d373ab1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c6c430cc489998a7c26a49fc3f0325d13a8b03b7
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140571740"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141940920"
 ---
 # Get-AzDataFactoryV2ActivityRun
 
 ## SYNOPSIS
-Mendapatkan informasi tentang aktivitas yang berjalan untuk menjalankan pipeline.
+Mendapatkan informasi tentang aktivitas yang dijalankan untuk proses saluran.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2activityrun) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,11 +37,11 @@ Get-AzDataFactoryV2ActivityRun [-PipelineRunId] <String> [-RunStartedAfter] <Dat
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataFactoryV2ActivityRun** mendapatkan informasi tentang berjalan di Azure Data Factory untuk menjalankan saluran tertentu yang terjadi dalam jangka waktu yang ditentukan. Selain itu, Anda dapat menentukan filter untuk nama aktivitas, nama layanan tertaut yang dijalankan, dan status proses.
+Cmdlet **Get-AzDataFactoryV2ActivityRun** mendapatkan informasi tentang berjalan di Azure Data Factory untuk proses saluran tertentu yang terjadi dalam jangka waktu tertentu. Selain itu, Anda dapat menentukan filter untuk nama aktivitas, nama layanan tertaut yang menjalankan proses, dan status proses.
 
 ## EXAMPLES
 
-### Contoh 1: Get all activity runs for a pipeline run
+### Contoh 1: Mendapatkan semua aktivitas yang dijalankan untuk proses pipeline
 ```
 PS C:\> Get-AzDataFactoryV2ActivityRun -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -PipelineRunId "f288712d-fb08-4cb8-96ef-82d3b9b30621" -RunStartedAfter "2017-09-01" -RunStartedBefore "2017-09-30"
 
@@ -56,7 +59,7 @@ PS C:\> Get-AzDataFactoryV2ActivityRun -ResourceGroupName "ADF" -DataFactoryName
     Error             : {errorCode, message, failureType, target}
 ```
 
-Perintah ini mendapatkan detail tentang semua aktivitas yang berjalan dalam saluran yang dijalankan dengan ID "f288712d-fb08-4cb8-96ef-82d3b9b30621" yang terjadi antara "2017-09-01" dan "2017-09-30".
+Perintah ini mendapatkan detail tentang semua aktivitas yang dijalankan dalam alur berjalan dengan ID "f288712d-fb08-4cb8-96ef-82d3b9b30621" yang terjadi antara "2017-09-01" dan "2017-09-30".
 
 ## PARAMETERS
 
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -PipelineRunId
-Run ID dari pipeline.
+ID Jalankan dari pipeline.
 
 ```yaml
 Type: System.String
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunStartedAfter
-Waktu di atau setelah itu pipeline berjalan untuk dijalankan.
+Waktu di atau setelah pipeline dijalankan mulai dijalankan.
 
 ```yaml
 Type: System.DateTime
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunStartedBefore
-Waktu di atau sebelum di mana pipeline berjalan untuk dijalankan.
+Waktu di atau sebelum alur dijalankan mulai dijalankan.
 
 ```yaml
 Type: System.DateTime
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Status pipeline berjalan.
+Status alur berjalan.
 
 ```yaml
 Type: System.String
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

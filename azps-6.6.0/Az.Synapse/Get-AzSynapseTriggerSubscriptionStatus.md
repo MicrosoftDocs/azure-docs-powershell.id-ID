@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseTriggerSubscriptionStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseTriggerSubscriptionStatus.md
 ms.openlocfilehash: 9df8d83ceb5f4e74105914144fe432b8a1c6d805
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140458602"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141945753"
 ---
 # Get-AzSynapseTriggerSubscriptionStatus
 
 ## SYNOPSIS
-Dapatkan status langganan untuk pemicu kejadian ke kejadian layanan eksternal tertentu.
+Dapatkan status langganan untuk pemicu acara ke acara layanan eksternal yang ditentukan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapsetriggersubscriptionstatus) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsetriggersubscriptionstatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +50,7 @@ Cmdlet **Get-AzSynapseTriggerSubscriptionStatus** mendapatkan status langganan u
 PS C:\> Get-AzSynapseTriggerSubscriptionStatus -WorkspaceName ContosoWorkspace -Name ContosoTrigger
 ```
 
-Perintah ini akan mendapatkan status berlangganan untuk pemicu yang disebut ContosoTrigger pada kejadian layanan eksternal.
+Perintah ini akan mendapatkan status langganan untuk pemicu yang disebut ContosoTrigger ke kejadian layanan eksternal.
 
 ### Contoh 2
 ```powershell
@@ -58,7 +58,7 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Get-AzSynapseTriggerSubscriptionStatus -Name ContosoTrigger
 ```
 
-Perintah ini akan mendapatkan status berlangganan untuk pemicu yang disebut ContosoTrigger to the external service events through pipeline.
+Perintah ini akan mendapatkan status langganan untuk pemicu yang disebut ContosoTrigger ke kejadian layanan eksternal melalui pipeline.
 
 ### Contoh 3
 ```powershell
@@ -66,7 +66,7 @@ PS C:\> $trigger = Get-AzSynapseTrigger -WorkspaceName ContosoWorkspace -Name Co
 PS C:\> $trigger | Get-AzSynapseTriggerSubscriptionStatus
 ```
 
-Perintah ini akan mendapatkan status berlangganan untuk pemicu yang disebut ContosoTrigger to the external service events through pipeline.
+Perintah ini akan mendapatkan status langganan untuk pemicu yang disebut ContosoTrigger ke kejadian layanan eksternal melalui pipeline.
 
 ## PARAMETERS
 
@@ -115,7 +115,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

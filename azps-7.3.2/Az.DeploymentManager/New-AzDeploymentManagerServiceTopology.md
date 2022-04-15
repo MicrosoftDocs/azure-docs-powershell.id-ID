@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/New-AzDeploymentManagerServiceTopology.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/New-AzDeploymentManagerServiceTopology.md
-ms.openlocfilehash: 1230106cb9eed408521a299b45c199a63cb2f74c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9a77158cf9b1eab4ae633856370ed49f29cc183d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140550129"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142035065"
 ---
 # New-AzDeploymentManagerServiceTopology
 
 ## SYNOPSIS
 Membuat topologi layanan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.deploymentmanager/new-azdeploymentmanagerservicetopology) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,12 +29,12 @@ New-AzDeploymentManagerServiceTopology -ResourceGroupName <String> -Name <String
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDeploymentManagerServiceTopology** membuat topologi layanan.
+Cmdlet **New-AzDeploymentManagerServiceTopology** menciptakan topologi layanan.
 
-Anda dapat mengubah objek ServiceTopology yang dikembalikan secara lokal, lalu menerapkan perubahan pada topologi menggunakan cmdlet Set-AzDeploymentManagerServiceTopology cmdlet.
+Anda dapat mengubah objek ServiceTopology yang dikembalikan secara lokal, lalu menerapkan perubahan pada topologi menggunakan cmdlet Set-AzDeploymentManagerServiceTopology.
 Objek yang dikembalikan 
 
-Objek yang dikembalikan memiliki bidang ResourceId yang dapat direferensikan dalam sumber daya peluncuran untuk menunjukkan bahwa layanan yang dideklarasikan dalam topologi layanan ini akan disebarkan dalam peluncuran.
+Objek yang dikembalikan memiliki bidang ResourceId yang dapat dirujuk dalam sumber daya peluncuran untuk menunjukkan bahwa layanan yang dideklarasikan dalam topologi layanan ini akan digunakan dalam peluncuran.
 
 ## EXAMPLES
 
@@ -40,19 +43,19 @@ Objek yang dikembalikan memiliki bidang ResourceId yang dapat direferensikan dal
 PS C:\> New-AzDeploymentManagerServiceTopology -ResourceGroupName ContosoResourceGroup -Name ContosoServiceTopology -Location "Central US" -ArtifactSourceId "/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourcegroups/ContosoResourceGroup/providers/Microsoft.DeploymentManager/artifactSources/ContosoArtifactSource"
 ```
 
-Cmdlet ini membuat topologi layanan baru di grup sumber daya ContosoResourceGroup dengan nama ContosoServiceTopology dan di lokasi AS Pusat. Sumber artifak ResourceId menunjukkan bahwa artifak yang diperlukan untuk definisi unit layanan dalam topologi ini perlu dibaca dari sumber artifak yang ditentukan.
+Cmdlet ini membuat topologi layanan baru dalam grup sumber daya ContosoResourceGroup dengan nama ContosoServiceTopology dan di lokasi As Tengah. Sumber artefak ResourceId menunjukkan bahwa artefak yang diperlukan untuk definisi unit layanan dalam topologi ini perlu dibaca dari sumber artefak yang ditentukan.
 
 ### Contoh 2
 ```powershell
 PS C:\> New-AzDeploymentManagerServiceTopology -ResourceGroupName ContosoResourceGroup -Name ContosoServiceTopology -Location "Central US"
 ```
 
-Cmdlet ini membuat topologi layanan baru di grup sumber daya ContosoResourceGroup dengan nama ContosoServiceTopology dan di lokasi AS Pusat. Tidak adanya referensi sumber artifak menunjukkan bahwa artifak yang diperlukan untuk definisi unit layanan dalam topologi ini akan disediakan sebagai URI absolut dalam unit layanan.
+Cmdlet ini membuat topologi layanan baru dalam grup sumber daya ContosoResourceGroup dengan nama ContosoServiceTopology dan di lokasi As Tengah. Tidak adanya referensi sumber artefak menunjukkan bahwa artefak yang diperlukan untuk definisi unit layanan dalam topologi ini akan disediakan sebagai URI SAS absolut dalam unit layanan.
 
 ## PARAMETERS
 
 ### -ArtifactSourceId
-Pengidentifikasi sumber artifak, tempat artifak yang membuat topologi disimpan.
+Pengidentifikasi sumber artefak, di mana artefak yang menyusun topologi disimpan.
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

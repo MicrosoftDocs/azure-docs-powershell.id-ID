@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ContainerInstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerInstanceVolumeMountObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerInstanceVolumeMountObject.md
-ms.openlocfilehash: b1da834871c3f9c80e1f59a8eb0166d1e508d226
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: b299d9c5241e7b9bb4bb18993be552a858484ed4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140201815"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142035911"
 ---
 # New-AzContainerInstanceVolumeMountObject
 
 ## SYNOPSIS
-Membuat objek dalam memori untuk Jumlah Volume
+Membuat objek dalam memori untuk VolumeMount
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.containerinstance/new-azcontainerinstancevolumemountobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ New-AzContainerInstanceVolumeMountObject -MountPath <String> -Name <String> [-Re
 ```
 
 ## DESCRIPTION
-Membuat objek dalam memori untuk Jumlah Volume
+Membuat objek dalam memori untuk VolumeMount
 
 ## EXAMPLES
 
-### Contoh 1: Menentukan volume yang terpasang pada contoh wadah
+### Contoh 1: Tentukan dudukan volume yang tersedia untuk instans kontainer
 ```powershell
 New-AzContainerInstanceVolumeMountObject -Name 
 "mnt" -MountPath "/mnt/azfile" -ReadOnly $true
@@ -41,13 +44,13 @@ MountPath   Name ReadOnly
 /mnt/azfile mnt  True
 ```
 
-Perintah ini menentukan volume yang tersedia pada contoh wadah
+Perintah ini menentukan dudukan volume yang tersedia untuk sebuah instance container
 
 ## PARAMETERS
 
 ### -MountPath
-Jalur di dalam wadah tempat volume akan terpasang.
-Tidak boleh berisi titik dua (:).
+Jalur dalam wadah tempat volume harus dikaitkan.
+Tidak boleh mengandung titik dua (:).
 
 ```yaml
 Type: System.String
@@ -62,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama volume yang naik.
+Nama dudukan volume.
 
 ```yaml
 Type: System.String
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReadOnly
-Bendera yang menunjukkan apakah volume naik merupakan baca-saja.
+Bendera menunjukkan apakah dudukan volume bersifat baca-saja.
 
 ```yaml
 Type: System.Boolean
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

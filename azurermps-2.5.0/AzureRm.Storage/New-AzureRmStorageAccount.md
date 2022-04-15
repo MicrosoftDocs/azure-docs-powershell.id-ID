@@ -5,16 +5,16 @@ ms.assetid: A3DA1205-B8FB-4B4C-9C40-AD303D038EDF
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.storage/new-azurermstorageaccount
 schema: 2.0.0
 ms.openlocfilehash: 83afe8e0857ec401af213f029a9af0cef7321416
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419822"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141970637"
 ---
 # New-AzureRmStorageAccount
 
 ## SYNOPSIS
-Membuat akun Storage Anda.
+Membuat akun Storage.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,32 +28,32 @@ New-AzureRmStorageAccount [-ResourceGroupName] <String> [-Name] <String> [-SkuNa
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmStorageAccount** membuat Azure Storage Anda.
+Cmdlet **New-AzureRmStorageAccount** membuat akun Azure Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Buat Storage baru
+### Contoh 1: Membuat akun Storage
 ```
 PS C:\>New-AzureRmStorageAccount -ResourceGroupName MyResourceGroup -AccountName mystorageaccount -Location westus -SkuName Standard_GRS
 ```
 
 Perintah ini membuat akun Storage untuk nama grup sumber daya MyResourceGroup.
 
-### Contoh 2: Buat akun Storage BlobStorage dengan Jenis BlobStorage dan hot AccessTier
+### Contoh 2: Buat akun blob Storage dengan BlobStorage Kind dan hot AccessTier
 ```
 PS C:\>New-AzureRmStorageAccount -ResourceGroupName MyResourceGroup -AccountName mystorageaccount -Location westus -SkuName Standard_GRS -Kind BlobStorage -AccessTier Hot
 ```
 
-Perintah ini membuat akun Storage Blobstorage dengan Jenis BlobStorage dan hot AccessTier
+Perintah ini membuat akun blob Storage dengan BlobStorage Kind dan Hot AccessTier
 
-### Contoh 3: Buat akun Storage dengan Kind StorageV2, lalu Buat dan Tetapkan Identitas untuk Azure KeyVault.
+### Contoh 3: Buat akun Storage dengan Kind StorageV2, dan Buat dan Tetapkan Identitas untuk Azure KeyVault.
 ```
 PS C:\>New-AzureRmStorageAccount -ResourceGroupName MyResourceGroup -AccountName mystorageaccount -Location westus -SkuName Standard_GRS -Kind StorageV2 -AssignIdentity
 ```
 
-Perintah ini membuat akun Storage dengan Kind StorageV2.  Pernyataan ini juga menghasilkan dan menetapkan identitas yang dapat digunakan untuk mengelola kunci akun melalui Azure KeyVault.
+Perintah ini membuat akun Storage dengan Kind StorageV2.  Ini juga menghasilkan dan menetapkan identitas yang dapat digunakan untuk mengelola kunci akun melalui Azure KeyVault.
 
-### Contoh 4: Membuat Storage dengan NetworkRuleSet dari JSON
+### Contoh 4: Membuat akun Storage dengan NetworkRuleSet dari JSON
 ```
 PS C:\>New-AzureRmStorageAccount -ResourceGroupName MyResourceGroup -AccountName mystorageaccount -Location westus -Type Standard_LRS -NetworkRuleSet (@{bypass="Logging,Metrics";
     ipRules=(@{IPAddressOrRange="20.11.0.0/16";Action="allow"},
@@ -63,14 +63,14 @@ PS C:\>New-AzureRmStorageAccount -ResourceGroupName MyResourceGroup -AccountName
     defaultAction="Deny"})
 ```
 
-Perintah ini akan membuat Storage pengguna yang memiliki properti NetworkRuleSet dari JSON
+Perintah ini membuat akun Storage yang memiliki properti NetworkRuleSet dari JSON
 
 ## PARAMETERS
 
 ### -AccessTier
-Menentukan tingkatan akses akun Storage yang dibuat cmdlet ini.
-Nilai yang dapat diterima untuk parameter ini adalah: Hot dan Cool.
-Jika Anda menentukan nilai BlobStorage untuk parameter *Kind,* Anda harus menentukan nilai untuk parameter *AccessTier.* Jika Anda menentukan nilai yang Storage untuk parameter *Kind* ini, jangan tentukan parameter *AccessTier.*
+Menentukan tingkat akses akun Storage yang dibuat cmdlet ini.
+Nilai yang dapat diterima untuk parameter ini adalah: Panas dan Keren.
+Jika Anda menentukan nilai BlobStorage untuk parameter *Kind* , Anda harus menentukan nilai untuk parameter *AccessTier* . Jika Anda menentukan nilai Storage untuk parameter *Jenis* ini, jangan tentukan parameter *AccessTier*.
 
 ```yaml
 Type: System.String
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignIdentity
-Buat dan tetapkan Identitas akun Storage baru untuk akun Storage ini untuk digunakan dengan layanan manajemen kunci seperti Azure KeyVault.
+Buat dan tetapkan identitas akun Storage baru untuk akun Storage ini untuk digunakan dengan layanan manajemen utama seperti Azure KeyVault.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomDomainName
-Menentukan nama domain kustom dari akun Storage tersebut.
+Menentukan nama domain kustom akun Storage.
 Nilai defaultnya adalah Storage.
 
 ```yaml
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableHttpsTrafficOnly
-Menunjukkan apakah akun Storage hanya mengaktifkan lalu lintas HTTPS.
+Menunjukkan apakah akun Storage hanya mengaktifkan lalu lintas HTTPS atau tidak.
 
 ```yaml
 Type: System.Boolean
@@ -161,12 +161,12 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Kind
+### -Jenis
 Menentukan jenis akun Storage yang dibuat cmdlet ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Storage. Akun tujuan Storage yang mendukung penyimpanan Blob, Tabel, Antrean, File dan Disk.
-- StorageV2. Akun Storage Tujuan Umum Versi 2 (GPv2) yang mendukung Blob, Tabel, Antrean, File, dan Disk, dengan fitur tingkat lanjut seperti tingkatan data.
-- BlobStorage. Akun Storage Blob yang mendukung penyimpanan Blob saja.
+- Storage. Tujuan umum Storage akun yang mendukung penyimpanan Blob, Tabel, Antrean, File dan Disk.
+- StorageV2. Akun Storage Tujuan Umum Versi 2 (GPv2) yang mendukung Blob, Tabel, Antrean, File, dan Disk, dengan fitur tingkat lanjut seperti tingkat data.
+- Blobstorage. Akun blob Storage yang hanya mendukung penyimpanan Blob.
 Nilai defaultnya adalah Storage.
 
 ```yaml
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama akun Storage yang akan dibuat.
+Menentukan nama akun Storage untuk dibuat.
 
 ```yaml
 Type: System.String
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkRuleSet
-NetworkRuleSet digunakan untuk menetapkan serangkaian aturan konfigurasi untuk firewall dan jaringan virtual, serta untuk mengatur nilai untuk properti jaringan seperti layanan yang diperbolehkan untuk melewati aturan dan cara menangani permintaan yang tidak cocok dengan salah satu aturan yang ditentukan.
+NetworkRuleSet digunakan untuk menentukan sekumpulan aturan konfigurasi untuk firewall dan jaringan virtual, serta untuk mengatur nilai untuk properti jaringan seperti layanan yang diizinkan untuk melewati aturan dan cara menangani permintaan yang tidak cocok dengan aturan yang ditentukan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSNetworkRuleSet
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya untuk menambahkan Storage tersebut.
+Menentukan nama grup sumber daya untuk menambahkan akun Storage.
 
 ```yaml
 Type: System.String
@@ -246,10 +246,10 @@ Accept wildcard characters: False
 Menentukan nama SKU akun Storage yang dibuat cmdlet ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Standard_LRS. Penyimpanan lokal yang berlebihan.
-- Standard_ZRS. Penyimpanan tidak berlebihan zona.
-- Standard_GRS. Penyimpanan geo berlebihan.
-- Standard_RAGRS. Baca mengakses penyimpanan geo berlebihan.
-- Premium_LRS. Premium yang berlebihan secara lokal.
+- Standard_ZRS. Penyimpanan berlemak zona.
+- Standard_GRS. Penyimpanan geo-berlebihan.
+- Standard_RAGRS. Membaca penyimpanan geo-redundan akses.
+- Premium_LRS. Premium penyimpanan lokal yang berlebihan.
 
 ```yaml
 Type: System.String
@@ -280,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseSubDomain
-Menunjukkan apakah akan mengaktifkan validasi CName tidak langsung.
+Menunjukkan apakah mengaktifkan validasi CName tidak langsung.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -295,7 +295,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -313,6 +313,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmStorageAccount](./Get-AzureRmStorageAccount.md)
 
-[Remove-AzureRmStorageAccount](./Remove-AzureRmStorageAccount.md)
+[Hapus-AzureRmstorageAccount](./Remove-AzureRmStorageAccount.md)
 
 [Set-AzureRmStorageAccount](./Set-AzureRmStorageAccount.md)
