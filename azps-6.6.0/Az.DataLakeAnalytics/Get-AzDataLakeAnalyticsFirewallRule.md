@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Get-AzDataLakeAnalyticsFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Get-AzDataLakeAnalyticsFirewallRule.md
 ms.openlocfilehash: 2a74fe0ec8202d2955d09613f46734d03891b89f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140484555"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142271725"
 ---
 # Get-AzDataLakeAnalyticsFirewallRule
 
 ## SYNOPSIS
-Mengambil aturan firewall atau daftar aturan firewall dari akun Analitik Danau Data.
+Mengambil aturan firewall atau daftar aturan firewall dari akun Data Lake Analytics.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakeanalytics/get-azdatalakeanalyticsfirewallrule) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/get-azdatalakeanalyticsfirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,16 +28,16 @@ Get-AzDataLakeAnalyticsFirewallRule [-Account] <String> [[-Name] <String>] [[-Re
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataLakeAnalyticsFirewallRule** mengambil aturan firewall atau daftar aturan firewall dari akun Analitik Danau Azure Data.
+Cmdlet **Get-AzDataLakeAnalyticsFirewallRule** mengambil aturan firewall atau daftar aturan firewall dari akun azure Data Lake Analytics.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan aturan firewall
+### Contoh 1: Dapatkan aturan firewall
 ```
 PS C:\>Get-AzDataLakeAnalyticsFirewallRule -Account "ContosoAdlAcct" -Name "My firewall rule"
 ```
 
-Perintah ini mendapatkan aturan firewall yang bernama "aturan firewall saya" dari akun "ContosoAdlAcct"
+Perintah ini mendapatkan aturan firewall bernama "my firewall rule" dari akun "ContosoAdlAcct"
 
 ### Contoh 2: Mencantumkan semua aturan firewall
 ```
@@ -49,7 +49,7 @@ Perintah ini mendapatkan semua aturan firewall dari akun "ContosoAdlAcct"
 ## PARAMETERS
 
 ### -Akun
-Akun Analitik Danau Data untuk mendapatkan aturan firewall
+Akun Data Lake Analytics untuk mendapatkan aturan firewall
 
 ```yaml
 Type: System.String
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationProject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationProject.md
 ms.openlocfilehash: 7e65fc8cd259e2be45555c0ffd06fe01c418c6ff
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140107937"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142271221"
 ---
 # Get-AzDataMigrationProject
 
 ## SYNOPSIS
-Mengambil properti dari proyek Migrasi Database Azure.
+Mengambil properti proyek Migrasi Database Azure.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datamigration/get-azdatamigrationproject) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/get-azdatamigrationproject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Get-AzDataMigrationProject [-ResourceId] <String> [-Name <String>] [-DefaultProf
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzDataMigrationProject ini mengambil properti dari proyek Migrasi Database Azure.
+Cmdlet Get-AzDataMigrationProject mengambil properti proyek Migrasi Database Azure.
 
 ## EXAMPLES
 
@@ -57,12 +57,12 @@ Contoh di atas mengambil proyek Migrasi Database Azure bernama TestProject dalam
 PS C:\> Get-AzDataMigrationProject -InputObject $myService
 ```
 
-Contoh di atas mengambil proyek Migrasi Database Azure berdasarkan parameter input objek PSProject yang disampaikan di. 
+Contoh di atas mengambil proyek Migrasi Database Azure berdasarkan parameter input objek PSProject yang diteruskan. 
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek PSDataMigrationService.
+PSDataMigrationService Object.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataMigration.Models.PSDataMigrationService
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-DataMigrationService Resource Id.
+Id Sumber Daya DataMigrationService.
 
 ```yaml
 Type: System.String
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Nama Layanan Migrasi Database.
+nama Database Migration Service.
 
 ```yaml
 Type: System.String
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

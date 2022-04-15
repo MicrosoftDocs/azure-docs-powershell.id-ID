@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzDisk.md
 ms.openlocfilehash: 394b382f654cf3f6ec398e00570cda9a6efc04fa
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140485743"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142272427"
 ---
 # New-AzDisk
 
@@ -19,7 +19,7 @@ ms.locfileid: "140485743"
 Membuat disk terkelola.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/new-azdisk) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azdisk) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ New-AzDisk [-ResourceGroupName] <String> [-DiskName] <String> [-Disk] <PSDisk> [
 
 ## DESCRIPTION
 
-Cmdlet **New-AzDisk** membuat disk terkelola.
+Cmdlet **New-AzDisk** membuat disk yang dikelola.
 
 ## EXAMPLES
 
@@ -47,9 +47,9 @@ PS C:\> $diskconfig = Set-AzDiskKeyEncryptionKey -Disk $diskconfig -KeyUrl $keyU
 PS C:\> New-AzDisk -ResourceGroupName 'ResourceGroup01' -DiskName 'Disk01' -Disk $diskconfig;
 ```
 
-Perintah pertama membuat objek disk kosong lokal dengan ukuran 5GB dalam Standard_LRS akun penyimpanan. Sistem juga mengatur Windows OS dan mengaktifkan pengaturan enkripsi.
-Perintah kedua dan ketiga mengatur kunci enkripsi disk dan pengaturan kunci enkripsi kunci untuk objek disk.
-Perintah terakhir mengambil objek disk dan membuat disk dengan nama 'Disk01' di grup sumber daya 'ResourceGroup01'.
+Perintah pertama membuat objek disk kosong lokal dengan ukuran 5GB dalam tipe akun penyimpanan Standard_LRS. Ini juga mengatur tipe OS Windows dan mengaktifkan pengaturan enkripsi.
+Perintah kedua dan ketiga mengatur pengaturan kunci enkripsi disk dan kunci enkripsi kunci untuk objek disk.
+Perintah terakhir mengambil objek disk dan membuat disk dengan nama 'Disk01' dalam grup sumber daya 'ResourceGroup01'.
 
 ### Contoh 2
 
@@ -82,9 +82,9 @@ PS C:\> $diskConfig.EncryptionSettingsCollection.EncryptionSettings += $encrypti
 PS C:\> New-AzDisk -ResourceGroupName 'ResourceGroup01' -DiskName 'Disk01' -Disk $diskconfig;
 ```
 
-Perintah di atas akan membuat disk dengan dua pengaturan enkripsi.
+Perintah di atas membuat disk dengan dua pengaturan enkripsi.
 
-### Contoh 3: Ekspor versi gambar galeri ke disk.
+### Contoh 3: Mengekspor versi gambar galeri ke disk.
 
 ```
 PS C:\> $galleryImageVersionID = "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myImageRG/providers/Microsoft.Compute/galleries/myGallery/images/myImage/versions/1.0.0"
@@ -105,13 +105,13 @@ PS C:\> $dataDiskConfig = New-AzDiskConfig -Location $location -CreateOption "Fr
 PS C:\> New-AzDisk -ResourceGroupName $rgName -DiskName $myDiskName -Disk $dataDiskConfig
 ```
 
-Contoh ini mengekspor disk dari versi gambar. Untuk mengekspor disk data dari versi gambar, sertakan nomor LUN disk data yang akan diekspor dari versi gambar.
+Contoh ini mengekspor disk dari versi gambar. Untuk mengekspor disk data dari versi gambar, sertakan nomor LUN disk data untuk diekspor dari versi gambar.
 
 ## PARAMETERS
 
 ### -AsJob
 
-Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 
 ### -DefaultProfile
 
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 
 ### -DiskName
 
-Menentukan nama disk.
+Menentukan nama diska.
 
 ```yaml
 Type: System.String
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 
 ### -Konfirmasi
 
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 ### -WhatIf
 
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 
 ### CommonParameters
 
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

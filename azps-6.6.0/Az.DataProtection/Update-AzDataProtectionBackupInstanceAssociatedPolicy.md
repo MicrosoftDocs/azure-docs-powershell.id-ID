@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Update-AzDataProtectionBackupInstanceAssociatedPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Update-AzDataProtectionBackupInstanceAssociatedPolicy.md
 ms.openlocfilehash: f2dc94b9458c8b5609efe347e868007db0cc1b2e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140483799"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142270969"
 ---
 # Update-AzDataProtectionBackupInstanceAssociatedPolicy
 
 ## SYNOPSIS
-Memperbarui kebijakan terkait untuk instans cadangan tertentu
+Pembaruan kebijakan terkait untuk instans cadangan tertentu
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dataprotection/update-azdataprotectionbackupinstanceassociatedpolicy) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/update-azdataprotectionbackupinstanceassociatedpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,11 +29,11 @@ Update-AzDataProtectionBackupInstanceAssociatedPolicy -BackupInstanceName <Strin
 ```
 
 ## DESCRIPTION
-Memperbarui kebijakan terkait untuk instans cadangan tertentu
+Pembaruan kebijakan terkait untuk instans cadangan tertentu
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui Kebijakan terkait contoh cadangan
+### Contoh 1: Memperbarui kebijakan terkait instans cadangan
 ```powershell
 PS C:\> $sub = "xxxx-xxxx-xxxx"
 PS C:\> $instance = Get-AzDataProtectionBackupInstance -SubscriptionId $sub -ResourceGroupName sarath-rg -VaultName sarath-vault
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupInstanceName
-Nama Unik instans cadangan yang diproteksi
+Nama unik dari instans cadangan yang diproteksi
 
 ```yaml
 Type: System.String
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup Sumber Daya vault cadangan
+Grup Sumber Daya dari kubah cadangan
 
 ```yaml
 Type: System.String
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Id Langganan vault
+Id Langganan kubah
 
 ```yaml
 Type: System.String
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama vault cadangan
+Nama kubah cadangan
 
 ```yaml
 Type: System.String
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

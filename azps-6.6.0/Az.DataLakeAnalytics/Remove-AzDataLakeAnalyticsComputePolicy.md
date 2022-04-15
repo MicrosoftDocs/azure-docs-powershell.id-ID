@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Remove-AzDataLakeAnalyticsComputePolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Remove-AzDataLakeAnalyticsComputePolicy.md
 ms.openlocfilehash: 27a54fa6f64c68183db19c7e541158684ec7b393
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139977783"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142271581"
 ---
 # Remove-AzDataLakeAnalyticsComputePolicy
 
 ## SYNOPSIS
-Menghapus kebijakan perhitungan Analitik Danau Data Azure Data tertentu
+Menghapus kebijakan komputasi Azure Data Lake Analytics yang ditentukan
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakeanalytics/remove-azdatalakeanalyticscomputepolicy) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/remove-azdatalakeanalyticscomputepolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,21 +28,21 @@ Remove-AzDataLakeAnalyticsComputePolicy [-ResourceGroupName <String>] [-Account]
 ```
 
 ## DESCRIPTION
-**Remove-AzDataLakeAnalyticsComputePolicy** menghapus kebijakan perhitungan Analitik Danau Azure Data yang ditentukan.
+**Remove-AzDataLakeAnalyticsComputePolicy** menghapus kebijakan komputasi Azure Data Lake Analytics tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus kebijakan perhitungan
+### Contoh 1: Menghapus kebijakan komputasi
 ```
 PS C:\>Remove-AzDataLakeAnalyticsComputePolicy -Account "contosoadla" -Name myPolicy
 ```
 
-Perintah ini menghapus kebijakan perhitungan tertentu dengan nama 'myPolicy' dalam akun 'contosoadla'.
+Perintah ini menghapus kebijakan komputasi yang ditentukan dengan nama 'myPolicy' dalam akun 'contosoadla'.
 
 ## PARAMETERS
 
 ### -Akun
-Nama akun untuk menghapus kebijakan perhitungannya.
+Nama akun yang akan dihapus kebijakan komputasinya.
 
 ```yaml
 Type: System.String
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama kebijakan perhitungan untuk dihapus.
+Nama kebijakan komputasi untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -102,8 +102,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat akun Anda berada.
-Opsional dan akan berusaha mencari tahu jika tidak diberikan.
+Nama grup sumber daya di mana Akun Anda sudah ada.
+Opsional dan akan mencoba untuk menemukan jika tidak disediakan.
 
 ```yaml
 Type: System.String
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

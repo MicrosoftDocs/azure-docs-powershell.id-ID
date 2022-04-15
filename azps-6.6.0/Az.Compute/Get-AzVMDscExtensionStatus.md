@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMDscExtensionStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMDscExtensionStatus.md
 ms.openlocfilehash: 298834e5d6b9a24f01c87f459420fb5f23e86f11
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140142639"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142272715"
 ---
 # Get-AzVMDscExtensionStatus
 
 ## SYNOPSIS
-Mendapatkan status penanganan ekstensi DSC untuk komputer virtual.
+Mendapatkan status pengatur ekstensi DSC untuk mesin virtual.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/get-azvmdscextensionstatus) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmdscextensionstatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,14 +36,14 @@ Get-AzVMDscExtensionStatus [-VM <PSVirtualMachine>] [-DefaultProfile <IAzureCont
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVMDscExtensionStatus** mendapatkan status penanganan ekstensi Desired State Configuration (DSC) untuk mesin virtual dalam grup sumber daya.
-Jika konfigurasi diterapkan, cmdlet ini menghasilkan output yang konsisten dengan cmdlet Start-DscConfiguration cmdlet.
+Cmdlet **Get-AzVMDscExtensionStatus** mendapatkan status handler ekstensi Konfigurasi Negara Yang Diinginkan (DSC) untuk mesin virtual dalam grup sumber daya.
+Ketika konfigurasi diterapkan cmdlet ini menghasilkan output yang konsisten dengan cmdlet Start-DscConfiguration.
 
 ## EXAMPLES
 
 ### Contoh 1
 
-Mendapatkan status penanganan ekstensi DSC untuk komputer virtual. (otomatisgenerated)
+Mendapatkan status pengatur ekstensi DSC untuk mesin virtual. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -53,7 +53,7 @@ Get-AzVMDscExtensionStatus -Name 'AgentPool01' -ResourceGroupName myresourcegrou
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -69,8 +69,8 @@ Accept wildcard characters: False
 
 ### -Nama
 Menentukan nama sumber daya Azure Resource Manager yang mewakili ekstensi.
-Cmdlet Set-AzVMDscExtension mengatur nama ini menjadi Microsoft.Powershell.DSC, yang merupakan nilai yang sama untuk digunakan oleh **Get-AzVMDscExtensionStatus**.
-Tentukan parameter ini hanya jika Anda mengubah nama default dalam cmdlet Set atau menggunakan nama sumber daya lain di templat Manajer Sumber Daya.
+Cmdlet Set-AzVMDscExtension mengatur nama ini ke Microsoft.Powershell.DSC, yang merupakan nilai yang sama yang digunakan oleh **Get-AzVMDscExtensionStatus**.
+Tentukan parameter ini hanya jika Anda mengubah nama default dalam cmdlet Atur atau menggunakan nama sumber daya yang berbeda dalam templat Resource Manager.
 
 ```yaml
 Type: System.String
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: System.String
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan objek mesin virtual tempat ekstensi berada.
+Menentukan objek mesin maya tempat ekstensi diaktifkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual di mana cmdlet ini mendapatkan status ekstensi DSC.
+Menentukan nama mesin virtual tempat cmdlet ini mendapatkan status ekstensi DSC.
 
 ```yaml
 Type: System.String
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
