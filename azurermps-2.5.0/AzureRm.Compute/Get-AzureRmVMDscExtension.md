@@ -5,16 +5,16 @@ ms.assetid: 5B7A1BE6-F5F5-4968-BE32-7743D0E25FE3
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/get-azurermvmdscextension
 schema: 2.0.0
 ms.openlocfilehash: 0954bcb395cf4a0dcf64dac178b1168ee1abd59b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132429269"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141930002"
 ---
 # Get-AzureRmVMDscExtension
 
 ## SYNOPSIS
-Dapatkan pengaturan ekstensi DSC di komputer virtual tertentu.
+Mendapatkan pengaturan ekstensi DSC pada mesin virtual tertentu.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -26,7 +26,7 @@ Get-AzureRmVMDscExtension [-ResourceGroupName] <String> [-VMName] <String> [[-Na
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmVMDscExtension** mendapatkan pengaturan ekstensi Konfigurasi Status Yang Diinginkan (DSC, Desired State Configuration) di komputer virtual tertentu.
+Cmdlet **Get-AzureRmVMDscExtension** mendapatkan pengaturan ekstensi Konfigurasi Status Yang Diinginkan (DSC) pada mesin virtual tertentu.
 
 ## EXAMPLES
 
@@ -35,12 +35,12 @@ Cmdlet **Get-AzureRmVMDscExtension** mendapatkan pengaturan ekstensi Konfigurasi
 PS C:\> Get-AzureRmVMDscExtension -ResourceGroupName "ResourceGroup002" -VMName "VM07" -Name "DSC"
 ```
 
-Perintah ini mendapatkan pengaturan ekstensi yang bernama DSC pada komputer virtual bernama VM07.
+Perintah ini mendapatkan pengaturan ekstensi bernama DSC pada mesin virtual bernama VM07.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -56,8 +56,8 @@ Accept wildcard characters: False
 
 ### -Nama
 Menentukan nama sumber daya Azure Resource Manager yang mewakili ekstensi.
-Cmdlet Set-AzureRmVMDscExtension mengatur nama ini menjadi Microsoft.Powershell.DSC, yang merupakan nilai yang sama dengan yang digunakan oleh **Get-AzureRmVMDscExtension**.
-Tentukan parameter ini hanya jika Anda mengubah nama default dalam cmdlet **Set-AzureRmVMDscExtension** atau menggunakan nama sumber daya lain di templat Manajer Sumber Daya.
+Cmdlet Set-AzureRmVMDscExtension mengatur nama ini ke Microsoft.Powershell.DSC, yang merupakan nilai yang sama yang digunakan oleh **Get-AzureRmVMDscExtension**.
+Tentukan parameter ini hanya jika Anda mengubah nama default dalam cmdlet **Set-AzureRmVMDscExtension** atau menggunakan nama sumber daya yang berbeda dalam templat Resource Manager.
 
 ```yaml
 Type: String
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: String
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Mengindikasikan bahwa cmdlet ini mendapatkan tampilan contoh ekstensi DSC.
+Menunjukkan bahwa cmdlet ini mendapatkan tampilan instans ekstensi DSC.
 
 ```yaml
 Type: SwitchParameter
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual yang akan mendapatkan ekstensi DSC dari cmdlet ini.
+Menentukan nama mesin virtual di mana cmdlet ini mendapatkan ekstensi DSC.
 
 ```yaml
 Type: String
@@ -117,11 +117,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS

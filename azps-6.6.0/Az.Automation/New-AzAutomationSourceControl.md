@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationSourceControl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationSourceControl.md
 ms.openlocfilehash: 52e598eb2bef6afef3d9d7a44867e51aa7006760
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139980537"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142054613"
 ---
 # New-AzAutomationSourceControl
 
@@ -18,7 +18,7 @@ ms.locfileid: "139980537"
 Membuat kontrol sumber Otomatisasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/new-azautomationsourcecontrol) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/new-azautomationsourcecontrol) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,12 +30,12 @@ New-AzAutomationSourceControl -Name <String> -RepoUrl <Uri> -SourceType <String>
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzAutomationSourceControl membuat konfigurasi untuk menautkan akun Azure Automation dengan VSTS TFVC, VSTS Git atau GitHub.
+Cmdlet New-AzAutomationSourceControl membuat konfigurasi untuk menautkan akun Azure Automation saya dengan TFVC VSTS, Git VSTS, atau GitHub saya.
 
 ## EXAMPLES
 
 ### Contoh 1
-Buat konfigurasi kontrol sumber untuk menautkan akun Azure Automation dengan proyek VSTS TFVC saya. Proyek TFVC tidak memiliki cabang, dan oleh karena itu, parameter Cabang tidak ditentukan.
+Buat konfigurasi kontrol sumber untuk menautkan akun Azure Automation saya dengan proyek TFVC VSTS saya. Proyek TFVC tidak memiliki cabang, dan oleh karena itu, parameter Cabang tidak ditentukan.
 
 ```powershell
 PS C:\> # VSTS Personal access token
@@ -55,7 +55,7 @@ VSTSNative  VsoTfvc            /Runbooks True     True           https://dev.azu
 ```
 
 ### Contoh 2
-Buat konfigurasi kontrol sumber untuk menautkan akun Azure Automation dengan proyek VSTS Git saya.
+Buat konfigurasi kontrol sumber untuk menautkan akun Azure Automation saya dengan proyek Git VSTS saya.
 
 
 ```powershell
@@ -77,7 +77,7 @@ VSTSGit VsoGit     Development /          True     True           https://dev.az
 ```
 
 ### Contoh 3
-Buat konfigurasi kontrol sumber untuk menautkan akun Azure Automation dengan proyek GitHub saya.
+Buat konfigurasi kontrol sumber untuk menautkan akun Azure Automation saya dengan proyek GitHub saya.
 
 
 ```powershell
@@ -130,7 +130,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Cabang
+### -Branch
 Cabang kontrol sumber.
 
 ```yaml
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 
 ### -DoNotPublishRunbook
 Properti publishRunbook kontrol sumber.
-Jika DoNotPublishRunbook diatur, ini berarti buku kerja pengguna akan diimpor sebagai 'Draf'.
+Jika DoNotPublishRunbook diatur, artinya runbook pengguna akan diimpor sebagai 'Draf'.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -283,7 +283,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -299,7 +299,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -314,7 +314,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

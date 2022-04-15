@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzAvailabilitySet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzAvailabilitySet.md
 ms.openlocfilehash: 2a1e787335cd7676c031e5a64e2d5d733ec1f8c9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140486066"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141960837"
 ---
 # Get-AzAvailabilitySet
 
@@ -19,7 +19,7 @@ ms.locfileid: "140486066"
 Mendapatkan kumpulan ketersediaan Azure dalam grup sumber daya.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/get-azavailabilityset) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azavailabilityset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,11 +30,11 @@ Get-AzAvailabilitySet [[-ResourceGroupName] <String>] [[-Name] <String>]
 
 ## DESCRIPTION
 Cmdlet **Get-AzAvailabilitySet** mendapatkan kumpulan ketersediaan Azure dalam grup sumber daya.
-Anda dapat menentukan nama ketersediaan tertentu yang akan didafkahi.
+Anda dapat menentukan nama kumpulan ketersediaan tertentu untuk didapatkan.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan kumpulan ketersediaan tertentu
+### Contoh 1: Dapatkan kumpulan ketersediaan tertentu
 ```
 PS C:\> Get-AzAvailabilitySet -ResourceGroupName "ResourceGroup11" -Name "AvailabilitySet03"
 
@@ -55,9 +55,9 @@ Statuses                  : []
 VirtualMachinesReferences : []
 ```
 
-Perintah ini mendapatkan ketersediaan yang diatur bernama AvailabilitySet03 dalam grup sumber daya bernama ResourceGroup11.
+Perintah ini mendapatkan kumpulan ketersediaan bernama AvailabilitySet03 dalam grup sumber daya bernama ResourceGroup11.
 
-### Contoh 2: Mendapatkan semua kumpulan ketersediaan
+### Contoh 2: Dapatkan semua kumpulan ketersediaan
 ```
 PS C:\> Get-AzAvailabilitySet -ResourceGroupName "ResourceGroup11"
 
@@ -113,7 +113,7 @@ VirtualMachinesReferences : []
 
 Perintah ini mendapatkan semua kumpulan ketersediaan dalam grup sumber daya bernama ResourceGroup11.
 
-### Contoh 3: Mendapatkan semua kumpulan ketersediaan dengan pemfilteran
+### Contoh 3: Dapatkan semua kumpulan ketersediaan dengan pemfilteran
 ```
 PS C:\> Get-AzAvailabilitySet -ResourceGroupName "ResourceGroup1*" -Name "AvailabilitySet0*"
 
@@ -153,7 +153,7 @@ VirtualMachinesReferences : []
 
 Perintah ini mendapatkan semua kumpulan ketersediaan dalam grup sumber daya bernama ResourceGroup11 yang dimulai dengan "AvailabilitySet0".
 
-### Contoh 4: Mendapatkan semua kumpulan ketersediaan dengan nama dimulai dengan AvailabilitySet0
+### Contoh 4: Dapatkan semua kumpulan ketersediaan dengan nama yang dimulai dengan AvailabilitySet0
 ```
 PS C:\> Get-AzAvailabilitySet -Name AvailabilitySet0*
 
@@ -196,7 +196,7 @@ Perintah ini mendapatkan semua kumpulan ketersediaan yang dimulai dengan "Availa
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama kumpulan ketersediaan yang akan dapatkan cmdlet ini.
+Menentukan nama kumpulan ketersediaan yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -241,7 +241,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

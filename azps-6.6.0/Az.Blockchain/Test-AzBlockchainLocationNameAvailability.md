@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blockchain/help/Test-AzBlockchainLocationNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blockchain/help/Test-AzBlockchainLocationNameAvailability.md
 ms.openlocfilehash: 1d34fdf7cfbeffed2f977c31ae2435147c2ad47c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139979493"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141961377"
 ---
 # Test-AzBlockchainLocationNameAvailability
 
@@ -18,7 +18,7 @@ ms.locfileid: "139979493"
 Untuk memeriksa apakah nama sumber daya tersedia.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.blockchain/test-azblockchainlocationnameavailability) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.blockchain/test-azblockchainlocationnameavailability) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Untuk memeriksa apakah nama sumber daya tersedia.
 
 ## EXAMPLES
 
-### Contoh 1: Periksa apakah nama sumber daya tersedia
+### Contoh 1: Memeriksa apakah nama sumber daya tersedia
 ```powershell
 PS C:\> Test-AzBlockchainLocationNameAvailability -Location eastus -Name erw123 -type Microsoft.Blockchain/blockchainMembers
 
@@ -41,9 +41,9 @@ Message NameAvailable Reason
         True          NotSpecified
 ```
 
-Perintah akan memeriksa apakah nama sumber daya tersedia.
+Perintah memeriksa apakah nama sumber daya tersedia.
 
-### Contoh 2: Periksa apakah nama sumber daya tersedia
+### Contoh 2: Memeriksa apakah nama sumber daya tersedia
 ```powershell
 PS C:\> Test-AzBlockchainLocationNameAvailability -Location eastus -Name 123 -Type Microsoft.Blockchain/blockchainMembers
 
@@ -52,7 +52,7 @@ Message                                                                         
 The blockchain member name is invalid. It can contain only lowercase letters and numbers. The first character must be a letter. The value must be between 2 and 20 characters long. False         Invalid
 ```
 
-Perintah akan memeriksa apakah nama sumber daya tersedia.
+Perintah memeriksa apakah nama sumber daya tersedia.
 
 ## PARAMETERS
 
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+ID langganan adalah bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,13 +164,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Cmdlets.Cmdlets.Models.Api20180601Preview.INameAvailability
+### Microsoft.Azure.PowerShell.Cmdlets.Blockchain.Models.Api20180601Preview.INameAvailability
 
 ## CATATAN
 

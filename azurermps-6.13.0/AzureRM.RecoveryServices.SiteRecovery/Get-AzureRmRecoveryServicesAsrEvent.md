@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.recov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Get-AzureRmRecoveryServicesAsrEvent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Get-AzureRmRecoveryServicesAsrEvent.md
-ms.openlocfilehash: 7f2271e8f22497e8d360adda5d010c8c665a7dea86fc9b3fff5521909db83037
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: b9933a3dd5b5fd370f6ba603809ad428dc9585c3
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140851791"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142136405"
 ---
 # Get-AzureRmRecoveryServicesAsrEvent
 
 ## SYNOPSIS
-Dapatkan detail acara Pemulihan Situs Azure di vault.
+Mendapatkan detail acara azure Site Recovery di kubah.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -48,7 +48,7 @@ Get-AzureRmRecoveryServicesAsrEvent -Name <String> [-DefaultProfile <IAzureConte
 ```
 
 ## DESCRIPTION
-**Get-AzureRmRecoveryServicesAsrEvent** mendapatkan daftar kejadian di vault berdasarkan filter pilihan yang ditentukan.
+**Get-AzureRmRecoveryServicesAsrEvent** mendapatkan daftar acara dalam kubah berdasarkan filter pilihan yang ditentukan.
 
 ## EXAMPLES
 
@@ -77,21 +77,21 @@ Severity                     : Critical
 TimeOfOccurence              : 8/17/2017 12:31:43 PM
 ```
 
-Dapatkan acara menurut nama.
+Dapatkan acara berdasarkan nama.
 
 ### Contoh 3
 ```
 PS C:\> Get-AzureRmRecoveryServicesAsrEvent -AffectedObjectName xxxxxxxxxxxxx
 ```
 
-Daftar kejadian untuk Objek yang terpengaruh.
+Daftar acara untuk Objek yang terpengaruh.
 
 ### Contoh 4
 ```
 PS C:\> Get-AzureRmRecoveryServicesAsrEvent -AffectedObjectName xxxxxxxxxxxx -StartTime "8/17/2017 12:31:40 PM" -EndTime "8/17/2017 12:31:44 PM" -Severity Critical -EventType VmHealth
 ```
 
-Daftar kejadian antara waktu mulai dan waktu berakhir , tingkat keparahan kritis dan tipe kesehatan VmHealth.
+Daftar acara antara waktu mulai waktu dan waktu akhir , jenis VmHealth kritis dan kesehatan yang keparahan.
 
 ## PARAMETERS
 
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventType
-Memfilter acara menurut tipe acara.
+Memfilter kejadian menurut tipe kejadian.
 
 ```yaml
 Type: System.String
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Fabric
-Filter events by the specified fabric.
+Memfilter kejadian menurut kain tertentu.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRFabric
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -FabricId
-Specifies the fabricId to filter.
+Menentukan fabricId untuk difilter.
 
 ```yaml
 Type: System.String
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Spesifikasi acara ReourceId acara.
+Menspekuifikasikan acara ReourceId acara.
 
 ```yaml
 Type: System.String
@@ -217,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -Keparahan
-Keparahan kejadian untuk memfilter.
+Tingkat keparahan kejadian untuk difilter.
 
 ```yaml
 Type: System.String
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Menentukan waktu mulai jendela pencarian. Gunakan parameter ini untuk mendapatkan hanya kejadian yang telah terjadi setelah waktu tertentu.
+Menentukan waktu mulai jendela pencarian. Gunakan parameter ini untuk mendapatkan hanya kejadian yang telah terjadi setelah waktu yang ditentukan.
 
 ```yaml
 Type: System.DateTime
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -256,7 +256,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### System.Collections.Generic.IEnumerable'1[[Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASREvent, Microsoft.Azure.Commands.RecoveryServices.SiteRecovery, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.IEnumerable'1[[Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASREvent, Microsoft.Azure.Commands.RecoveryServices.SiteRecovery, Version=0.1.0.0, Culture=netral, PublicKeyToken=null]]
 
 ## CATATAN
 

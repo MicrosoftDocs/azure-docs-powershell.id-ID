@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/Az.websites/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Websites/Websites/help/Set-AzWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Websites/Websites/help/Set-AzWebApp.md
-ms.openlocfilehash: 5b20f6b6a731f48775dd96bee834ef71dbe63066fdcf43e0c1156e02859de5da
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 4478083a2ee98eceda08012b4346f3ece1657963
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418699"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141962710"
 ---
 # Set-AzWebApp
 
@@ -50,12 +50,12 @@ Cmdlet **Set-AzWebApp** mengatur Azure Web App.
 PS C:\> Set-AzWebApp -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -HttpLoggingEnabled $true
 ```
 
-Perintah ini mengatur HttpLoggingEnabled ke true untuk Web App ContosoWebApp terkait dengan grup sumber daya Default-Web-WestUS
+Perintah ini mengatur HttpLoggingEnabled ke true untuk Web App ContosoWebApp yang terkait dengan grup sumber daya Default-Web-WestUS
 
 ## PARAMETERS
 
 ### -AppServicePlan
-Nama Paket Layanan Aplikasi
+Nama Rencana App Service
 
 ```yaml
 Type: String
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppSettings
-Tabel Pengaturan HashTable
+HashTable Pengaturan Aplikasi
 
 ```yaml
 Type: Hashtable
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignIdentity
-Mengaktifkan/menonaktifkan MSI di azure webapp atau functionapp yang sudah ada [PREVIEW]
+Aktifkan/nonaktifkan MSI di azure webapp atau functionapp [PRATINJAU] yang sudah ada
 
 ```yaml
 Type: Boolean
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoSwapSlotName
-Nama slot tujuan untuk tukar otomatis
+Nama slot tujuan untuk pentukaran otomatis
 
 ```yaml
 Type: String
@@ -129,7 +129,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -String Koneksi
+### -ConnectionStrings
 HashTable String Koneksi
 
 ```yaml
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultDocuments
-Larik String Dokumen Default
+Array String Dokumen Default
 
 ```yaml
 Type: String[]
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -DetailedErrorLoggingEnabled
-Boolean Berkemampuan Pembuatan Log Kesalahan Mendetail
+Pencatatan Log Kesalahan Mendetail Diaktifkan Boolean
 
 ```yaml
 Type: Boolean
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostNames
-Larik String Nama Host WebApp
+WebApp HostNames String Array
 
 ```yaml
 Type: String[]
@@ -234,8 +234,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpsOnly
-Aktifkan/nonaktifkan pengalihan semua lalu lintas ke HTTPS di aplikasi atau functionapp Azure Web yang sudah ada
+### -HttpsOnly
+Mengaktifkan/menonaktifkan pengalihan semua lalu lintas ke HTTPS di azure webapp atau functionapp yang sudah ada
 
 ```yaml
 Type: Boolean
@@ -355,7 +355,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Use32BitWorkerProcess
+### -Use32BitWorkerProcesss
 Menggunakan Boolean Proses Pekerja 32-bit
 
 ```yaml
@@ -401,12 +401,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Int32
-Parameter 'NumberOfWorkers' menerima nilai tipe 'Int32' dari saluran
+Parameter 'NumberOfWorkers' menerima nilai tipe 'Int32' dari pipeline
 
 ### Situs
 Parameter 'WebApp' menerima nilai tipe 'Situs' dari saluran
@@ -421,9 +421,9 @@ Parameter 'WebApp' menerima nilai tipe 'Situs' dari saluran
 
 [New-AzWebApp](./New-AzWebApp.md)
 
-[Remove-AzWebApp](./Remove-AzWebApp.md)
+[Hapus-AzWebApp](./Remove-AzWebApp.md)
 
-[Restart-AzWebApp](./Restart-AzWebApp.md)
+[Mulai ulang-AzWebApp](./Restart-AzWebApp.md)
 
 [Start-AzWebApp](./Start-AzWebApp.md)
 

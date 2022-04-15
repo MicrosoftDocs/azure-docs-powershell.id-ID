@@ -5,11 +5,11 @@ ms.assetid: 49D17667-35C3-4A79-A0C8-C197DAA5CD90
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/get-azurermvmaddomainextension
 schema: 2.0.0
 ms.openlocfilehash: 01a5a69053cfd05186abae45d5b53fff0b022b98
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428908"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141929996"
 ---
 # Get-AzureRmVMADDomainExtension
 
@@ -38,7 +38,7 @@ Cmdlet **Get-AzureRmVMADDomainExtension** mendapatkan informasi tentang ekstensi
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Mengindikasikan bahwa cmdlet ini mendapatkan tampilan contoh ekstensi domain.
+Menunjukkan bahwa cmdlet ini mendapatkan tampilan instans ekstensi domain.
 
 ```yaml
 Type: SwitchParameter
@@ -113,11 +113,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS

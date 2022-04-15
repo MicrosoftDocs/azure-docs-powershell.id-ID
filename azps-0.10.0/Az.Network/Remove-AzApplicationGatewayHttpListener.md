@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Remove-AzApplicationGatewayHttpListener.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Remove-AzApplicationGatewayHttpListener.md
 ms.openlocfilehash: c3bc83f3f38c8a9b3c34e990e5729648a3677dd8
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426192"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141916473"
 ---
 # Remove-AzApplicationGatewayHttpListener
 
@@ -30,15 +30,15 @@ Cmdlet **Remove-AzApplicationGatewayHttpListener** menghapus pendengar HTTP dari
 
 ## EXAMPLES
 
-### Contoh 1: Hapus gateway aplikasi Pendengar HTTP
+### Contoh 1: Menghapus pendengar HTTP gateway aplikasi
 ```
 PS C:\>$AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 PS C:\> Remove-AzApplicationGatewayHttpListener -ApplicationGateway $AppGw -Name "Listener02"
 ```
 
-Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam $AppGw variabel.
+Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam variabel $AppGw.
 
-Perintah kedua menghapus pendengar HTTP yang bernama Listener02 dari gateway aplikasi yang disimpan di $AppGw.
+Perintah kedua menghapus pendengar HTTP bernama Listener02 dari gateway aplikasi yang disimpan di $AppGw.
 
 ## PARAMETERS
 
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -104,7 +104,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Add-AzApplicationGatewayHttpListener](./Add-AzApplicationGatewayHttpListener.md)
 
-[Get-AzApplicationGatewayhttpListener](./Get-AzApplicationGatewayHttpListener.md)
+[Get-AzApplicationGatewayHttpListener](./Get-AzApplicationGatewayHttpListener.md)
 
 [New-AzApplicationGatewayHttpListener](./New-AzApplicationGatewayHttpListener.md)
 

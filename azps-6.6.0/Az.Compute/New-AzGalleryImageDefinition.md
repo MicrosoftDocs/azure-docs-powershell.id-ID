@@ -6,20 +6,20 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzGalleryImageDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzGalleryImageDefinition.md
 ms.openlocfilehash: e56a76d74b6f6875ada3555b875edb4b5e57f6e7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140485725"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141960657"
 ---
 # New-AzGalleryImageDefinition
 
 ## SYNOPSIS
 
-Buat definisi gambar galeri.
+Membuat definisi gambar galeri.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/new-azgalleryimagedefinition) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azgalleryimagedefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ New-AzGalleryImageDefinition [-ResourceGroupName] <String> [-GalleryName] <Strin
 
 ## DESCRIPTION
 
-Buat definisi gambar galeri.
+Membuat definisi gambar galeri.
 
 ## EXAMPLES
 
@@ -54,7 +54,7 @@ $description = "My gallery"
 PS C:\> New-AzGalleryImageDefinition -ResourceGroupName $rgName -GalleryName $galleryName -Name $galleryImageDefinitionName -Location $location -Publisher $publisherName -Offer $offerName -Sku $skuName -OsState "Specialized" -OsType "Linux" -Description $description
 ```
 
-Membuat definisi gambar galeri untuk memuat versi gambar untuk gambar linux khusus.
+Membuat definisi gambar galeri untuk berisi versi gambar untuk gambar linux khusus.
 
 ### Contoh 2: Membuat definisi gambar untuk gambar linux umum
 
@@ -70,7 +70,7 @@ $description = "My gallery"
 PS C:\> New-AzGalleryImageDefinition -ResourceGroupName $rgName -GalleryName $galleryName -Name $galleryImageDefinitionName -Location $location -Publisher $publisherName -Offer $offerName -Sku $skuName -OsState "Generalized" -OsType "Linux" -Description $description
 ```
 
-Membuat definisi gambar galeri untuk memuat versi gambar untuk gambar linux yang umum.
+Membuat definisi gambar galeri untuk berisi versi gambar untuk gambar linux umum.
 
 ### Contoh 3: Membuat definisi gambar untuk gambar jendela khusus
 
@@ -86,7 +86,7 @@ $description = "My gallery"
 PS C:\> New-AzGalleryImageDefinition -ResourceGroupName $rgName -GalleryName $galleryName -Name $galleryImageDefinitionName -Location $location -Publisher $publisherName -Offer $offerName -Sku $skuName -OsState "Specialized" -OsType "Windows" -Description $description
 ```
 
-Membuat definisi gambar galeri untuk memuat versi gambar untuk gambar jendela khusus.
+Membuat definisi gambar galeri agar berisi versi gambar untuk gambar jendela khusus.
 
 ### Contoh 4: Membuat definisi gambar untuk gambar jendela umum
 
@@ -102,7 +102,7 @@ $description = "My gallery"
 PS C:\> New-AzGalleryImageDefinition -ResourceGroupName $rgName -GalleryName $galleryName -Name $galleryImageDefinitionName -Location $location -Publisher $publisherName -Offer $offerName -Sku $skuName -OsState "Generalized" -OsType "Windows" -Description $description
 ```
 
-Membuat definisi gambar galeri untuk memuat versi gambar untuk gambar jendela umum.
+Membuat definisi gambar galeri agar berisi versi gambar untuk gambar jendela umum.
 
 ### Contoh 5: Membuat definisi gambar dengan informasi rencana
 
@@ -120,9 +120,9 @@ $purchasePlanPublisher = "myPlanPublisher"
 PS C:\> New-AzGalleryImageDefinition -ResourceGroupName $rgName -GalleryName $galleryName -Name $galleryImageDefinitionName -Location $location -Publisher $publisherName -Offer $offerName -Sku $skuName -OsState "Generalized" -OsType "Linux" -PurchasePlanName $purchasePlanName -PurchasePlanProduct $purchasePlanProduct -PurchasePlanPublisher $purchasePlanPublisher
 ```
 
-Membuat definisi gambar galeri untuk gambar linux yang disosialisasikan dan menentukan nama rencana, produk, dan penerbit. Hanya versi gambar yang cocok dengan informasi rencana yang bisa ditambahkan ke definisi ini.
+Membuat definisi gambar galeri untuk gambar umum linux dan menentukan nama rencana, produk, dan penerbit. Hanya versi gambar yang cocok dengan informasi rencana yang dapat ditambahkan ke definisi ini.
 
-### Contoh 6: Membuat definisi gambar dan menunjukkan tanggal masa berakhir
+### Contoh 6: Membuat definisi gambar dan menunjukkan tanggal berakhirnya masa pakai
 
 ```powershell
 $rgName = "myResourceGroup"
@@ -136,9 +136,9 @@ $endOfLifeDate = "2024-08-02T00:00:00+00:00"
 PS C:\> New-AzGalleryImageDefinition -ResourceGroupName $rgName -GalleryName $galleryName -Name $galleryImageDefinitionName -Location $location -Publisher $publisherName -Offer $offerName -Sku $skuName -OsState "Generalized" -OsType "Linux" -EndOfLifeDate $endOfLifeDate
 ```
 
-Contoh ini memiliki tanggal masa berakhir untuk definisi gambar yang diatur ke 2 Agustus 2024 pada UTC mignight. Tanggal masa berakhir dapat ditentukan untuk definisi gambar dan versi gambar. Definisi gambar masih dapat digunakan setelah tanggal berakhir.
+Contoh ini memiliki tanggal akhir masa pakai untuk definisi gambar yang diatur ke 2 Agustus 2024 di mignight UTC. Tanggal akhir masa pakai dapat ditentukan untuk definisi gambar dan versi gambar. Definisi gambar masih dapat digunakan setelah tanggal masa berakhir.
 
-### Contoh 7: Buat definisi gambar dan rekomendasikan CPU dan maksimum CPU dan memori (GB)
+### Contoh 7: Membuat definisi gambar dan merekomendasikan CPU dan memori minimum dan maksimum (GB)
 
 ```powershell
 $rgName = "myResourceGroup"
@@ -155,9 +155,9 @@ $maxVCPU = 8
 PS C:\> New-AzGalleryImageDefinition -ResourceGroupName $rgName -GalleryName $galleryName -Name $galleryImageDefinitionName -Location $location -Publisher $publisherName -Offer $offerName -Sku $skuName -OsState "Generalized" -OsType "Linux" -MinimumMemory $minMemory -MaximumMemory $maxMemory -MinimumVCPU $minVCPU -MaximumVCPU $maxVCPU
 ```
 
-Membuat definisi gambar galeri dan menyarankan rentang minimum dan maksimum untuk CPU dan memori yang didukung oleh versi gambar di definisi gambar ini. Versi gambar masih dapat digunakan untuk membuat mesin virtual dengan pengaturan memori dan vCPU di luar rentang yang disarankan.
+Membuat definisi gambar galeri dan merekomendasikan rentang minimum dan maksimum untuk CPU dan memori yang didukung versi gambar dalam definisi gambar ini. Versi gambar masih dapat digunakan untuk membuat mesin virtual dengan memori dan pengaturan vCPU di luar rentang yang direkomendasikan.
 
-### Contoh 8: Buat definisi gambar dan indikasikan tipe disk OS mana yang tidak direkomendasikan untuk gambar
+### Contoh 8: Membuat definisi gambar dan menunjukkan tipe disk OS mana yang tidak disarankan untuk gambar
 
 ```powershell
 $rgName = "myResourceGroup"
@@ -171,9 +171,9 @@ $disallowedDiskTypes = @("Standard_LRS")
 PS C:\> New-AzGalleryImageDefinition -ResourceGroupName $rgName -GalleryName $galleryName -Name $galleryImageDefinitionName -Location $location -Publisher $publisherName -Offer $offerName -Sku $skuName -OsState "Generalized" -OsType "Linux" -DisallowedDiskType $disallowedDiskTypes
 ```
 
-Membuat definisi gambar galeri dan menunjukkan tipe disk OS mana yang mungkin tidak kompatibel dengan versi gambar dalam definisi gambar ini. Versi gambar masih dapat digunakan untuk membuat mesin virtual dengan disk OS yang merupakan salah satu tipe disk yang tidak diizinkan.
+Membuat definisi gambar galeri dan menunjukkan tipe disk OS mana yang mungkin tidak kompatibel dengan versi gambar dalam definisi gambar ini. Versi gambar masih dapat digunakan untuk membuat mesin virtual dengan disk OS yang merupakan salah satu tipe disk yang tidak diperbolehkan.
 
-### Contoh 9: Buat definisi gambar dan sediakan EULA, URI pernyataan privasi, dan URI catatan rilis
+### Contoh 9: Membuat definisi gambar dan menyediakan EULA, URI pernyataan privasi, dan catatan rilis URI
 
 ```powershell
 $rgName = "myResourceGroup"
@@ -189,13 +189,13 @@ $releaseNoteUri = "https://myreleasenotes"
 PS C:\> New-AzGalleryImageDefinition -ResourceGroupName $rgName -GalleryName $galleryName -Name $galleryImageDefinitionName -Location $location -Publisher $publisherName -Offer $offerName -Sku $skuName -OsState "Generalized" -OsType "Linux" -Eula $eula -PrivacyStatementUri $privacyStatementUri -ReleaseNoteUri $releaseNoteUri
 ```
 
-Membuat definisi gambar galeri untuk gambar umum linux dan menentukan string atau jalur ke perjanjian EULA, pernyataan privasi, dan catatan rilis yang terikat dengan semua versi gambar dalam definisi gambar.
+Membuat definisi gambar galeri untuk gambar umum linux dan menentukan string atau jalur ke perjanjian EULA, pernyataan privasi, dan catatan rilis yang terkait dengan semua versi gambar dalam definisi gambar.
 
 ## PARAMETERS
 
 ### -AsJob
 
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 
 ### -Deskripsi
 
-Deskripsi sumber daya Definisi gambar galeri.
+Deskripsi sumber daya definisi gambar galeri.
 
 ```yaml
 Type: System.String
@@ -243,7 +243,7 @@ Accept wildcard characters: False
 
 ### -DisallowedDiskType
 
-Tipe disk yang tidak diizinkan.
+Tipe disk yang tidak diperbolehkan.
 
 ```yaml
 Type: System.String[]
@@ -259,7 +259,7 @@ Accept wildcard characters: False
 
 ### -EndOfLifeDate
 
-Tanggal masa berakhir galeri Definisi Gambar
+Tanggal berakhirnya masa pakai galeri Definisi Gambar
 
 ```yaml
 Type: System.DateTime
@@ -307,7 +307,7 @@ Accept wildcard characters: False
 
 ### -HyperVGeneration
 
-Hypervisor Generation dari Mesin Virtual. Berlaku untuk disk OS saja. Nilai yang diperbolehkan adalah V1 dan V2.
+Generasi hypervisor dari Mesin Virtual. Hanya berlaku untuk disk OS. Nilai yang diperbolehkan adalah V1 dan V2.
 
 ```yaml
 Type: System.String
@@ -337,9 +337,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Maximum Maximum Maksimal
+### -MaximumMemory
 
-Jumlah maksimal memori yang direkomendasikan
+Maksimum memori yang disarankan
 
 ```yaml
 Type: System.Int32
@@ -355,7 +355,7 @@ Accept wildcard characters: False
 
 ### -MaximumVCPU
 
-Jumlah maksimal inti CPU yang direkomendasikan
+Maksimum inti CPU yang direkomendasikan
 
 ```yaml
 Type: System.Int32
@@ -369,9 +369,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Minimum Minimum MinimumMal
+### -MinimumMemory
 
-Minimum memori yang direkomendasikan
+Minimum memori yang disarankan
 
 ```yaml
 Type: System.Int32
@@ -417,9 +417,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Offer
+### -Penawaran
 
-Nama galeri Penawaran Definisi Gambar.
+Nama penawaran Definisi Gambar galeri.
 
 ```yaml
 Type: System.String
@@ -469,7 +469,7 @@ Accept wildcard characters: False
 
 ### -PrivacyStatementUri
 
-Uri pernyataan privasi.
+Pernyataan privasi uri.
 
 ```yaml
 Type: System.String
@@ -485,7 +485,7 @@ Accept wildcard characters: False
 
 ### -Publisher
 
-Nama penerbit Definisi Gambar galeri.
+Nama galeri penerbit Definisi Gambar.
 
 ```yaml
 Type: System.String
@@ -549,7 +549,7 @@ Accept wildcard characters: False
 
 ### -ReleaseNoteUri
 
-Uri catatan rilis.
+Catatan rilis uri.
 
 ```yaml
 Type: System.String
@@ -613,7 +613,7 @@ Accept wildcard characters: False
 
 ### -Konfirmasi
 
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -630,7 +630,7 @@ Accept wildcard characters: False
 ### -WhatIf
 
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -646,7 +646,7 @@ Accept wildcard characters: False
 
 ### CommonParameters
 
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

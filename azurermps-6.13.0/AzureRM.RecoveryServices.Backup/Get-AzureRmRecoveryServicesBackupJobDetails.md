@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/Get-AzureRmRecoveryServicesBackupJobDetails.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/Get-AzureRmRecoveryServicesBackupJobDetails.md
 ms.openlocfilehash: 7d39ce49a76d8519f2eacf0649c52051290274f0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132414429"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142136406"
 ---
 # Get-AzureRmRecoveryServicesBackupJobDetails
 
@@ -36,25 +36,25 @@ Get-AzureRmRecoveryServicesBackupJobDetails [-JobId] <String> [-VaultId <String>
 
 ## DESCRIPTION
 Cmdlet **Get-AzureRmRecoveryServicesBackupJobDetails** mendapatkan detail pekerjaan Azure Backup untuk pekerjaan tertentu.
-Mengatur konteks vault menggunakan cmdlet Set-AzureRmRecoveryServicesVaultContext cmdlet sebelum Anda menggunakan cmdlet saat ini.
+Mengatur konteks kubah menggunakan cmdlet Set-AzureRmRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan detail pekerjaan Cadangan untuk pekerjaan yang gagal
+### Contoh 1: Dapatkan detail pekerjaan Cadangan untuk pekerjaan yang gagal
 ```
 PS C:\>$Jobs = Get-AzureRmRecoveryServicesBackupJob -Status Failed
 PS C:\> $JobDetails = Get-AzureRmRecoveryServicesBackupJobDetails -Job $Jobs[0]
 PS C:\> $JobDetails.ErrorDetails
 ```
 
-Perintah pertama mendapatkan larik pekerjaan yang gagal dalam vault, lalu menyimpannya di $Jobs larik.
-Perintah kedua mendapatkan detail pekerjaan untuk pekerjaan yang gagal dalam $Jobs, lalu menyimpannya dalam variabel $JobDetails tersebut.
-Perintah terakhir menampilkan detail kesalahan untuk pekerjaan yang gagal.
+Perintah pertama mendapatkan array pekerjaan yang gagal di kubah, lalu menyimpannya di array $Jobs.
+Perintah kedua mendapatkan detail pekerjaan untuk pekerjaan yang gagal di $Jobs, lalu menyimpannya dalam variabel $JobDetails.
+Perintah akhir menampilkan detail kesalahan untuk pekerjaan yang gagal.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -Job
-Menentukan pekerjaan yang akan didaekan.
+Menentukan pekerjaan yang akan didapatkan.
 Untuk mendapatkan objek **BackupJob** , gunakan cmdlet Get-AzureRmRecoveryServicesBackupJob.
 
 ```yaml
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

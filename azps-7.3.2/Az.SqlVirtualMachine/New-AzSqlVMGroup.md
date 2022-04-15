@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sqlvirtualmachin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/New-AzSqlVMGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/New-AzSqlVMGroup.md
-ms.openlocfilehash: 68657c478779797b5164c4e739e64bfb0c2ec5ce
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e228c9e0fc71c04d137e7cd79e763f4dd1be4dfb
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140400419"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142025741"
 ---
 # New-AzSqlVMGroup
 
 ## SYNOPSIS
-Membuat grup mesin virtual sql yang baru.
+Membuat grup mesin virtual sql baru.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sqlvirtualmachine/new-azsqlvmgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Name       ResourceGroupName  Sku       Offer
 test-group ResourceGroup01    Developer SQL2017-WS2016
 ```
 
-Membuat grup mesin virtual Azure SQL baru dengan test-group vm dalam grup sumber daya ResourceGroup01.
+Membuat grup mesin virtual Azure SQL baru dengan vm grup uji dalam grup sumber daya ResourceGroup01.
 $profile adalah objek tipe Microsoft.Azure.Management.SqlVirtualMachine.Models.WsfcDomainProfile
 
 ## PARAMETERS
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterOperatorAccount
-Nama yang digunakan untuk kluster operasi
+Nama yang digunakan untuk kluster pengoperasian
 
 ```yaml
 Type: System.String
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -FileShareWitnessPath
-Jalur opsional untuk menyaksikan berbagi file
+Jalur opsional untuk saksi filehare
 
 ```yaml
 Type: System.String
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-SQL grup mesin virtual.
+SQL lokasi grup mesin virtual.
 
 ```yaml
 Type: System.String
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-SQL grup mesin virtual.
+SQL nama grup mesin virtual.
 
 ```yaml
 Type: System.String
@@ -169,8 +172,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Offer
-SQL grup mesin virtual.
+### -Penawaran
+SQL penawaran grup mesin virtual.
 
 ```yaml
 Type: System.String
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -OuPath
-Jalur Unit Organisasi tempat simpul dan kluster akan hadir
+Jalur Unit Organisasi tempat simpul dan klaster akan hadir
 
 ```yaml
 Type: System.String
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-SQL edisi grup mesin virtual.
+SQL tipe grup mesin virtual.
 
 ```yaml
 Type: System.String
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlServiceAccount
-Nama layanan yang SQL akan dijalankan di semua komputer virtual SQL yang berpartisipasi dalam kluster
+Nama di mana layanan SQL akan berjalan pada semua mesin virtual SQL yang berpartisipasi dalam kluster
 
 ```yaml
 Type: System.String
@@ -245,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountPrimaryKey
-Kunci utama akun penyimpanan menyaksikan
+Kunci utama akun penyimpanan saksi
 
 ```yaml
 Type: System.Security.SecureString
@@ -260,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountUrl
-Kunci utama akun penyimpanan menyaksikan
+Kunci utama akun penyimpanan saksi
 
 ```yaml
 Type: System.String
@@ -275,7 +278,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag untuk dikaitkan dengan SQL mesin virtual Anda.
+Tag yang akan dikaitkan dengan grup mesin virtual SQL.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -290,7 +293,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -306,7 +309,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -321,7 +324,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
