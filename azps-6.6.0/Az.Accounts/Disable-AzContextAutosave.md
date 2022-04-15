@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Disable-AzContextAutosave.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Disable-AzContextAutosave.md
 ms.openlocfilehash: c628bbf96ae183daf6e77bae3cd245739d7f1cf1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139946329"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142308535"
 ---
 # Disable-AzContextAutosave
 
 ## SYNOPSIS
-Nonaktifkan penyimpanan otomatis kredensial Azure.  Informasi masuk Anda akan lupa saat berikutnya Anda membuka jendela PowerShell
+Nonaktifkan penyimpanan otomatis kredensial Azure.  Informasi masuk Anda akan terlupakan pada kali berikutnya Anda membuka jendela PowerShell
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.accounts/disable-azcontextautosave) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.accounts/disable-azcontextautosave) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +28,11 @@ Disable-AzContextAutosave [-Scope <ContextModificationScope>] [-DefaultProfile <
 ```
 
 ## DESCRIPTION
-Nonaktifkan penyimpanan otomatis kredensial Azure.  Informasi masuk Anda akan lupa saat berikutnya Anda membuka jendela PowerShell
+Nonaktifkan penyimpanan otomatis kredensial Azure.  Informasi masuk Anda akan terlupakan pada kali berikutnya Anda membuka jendela PowerShell
 
 ## EXAMPLES
 
-### Contoh 1: Menonaktifkan pengarsipan otomatis konteks
+### Contoh 1: Menonaktifkan penyimpanan otomatis konteks
 ```powershell
 PS C:\> Disable-AzContextAutosave
 ```
@@ -41,7 +41,7 @@ Menonaktifkan simpan otomatis untuk pengguna saat ini.
 
 ### Contoh 2
 
-Nonaktifkan kredensial Azure otomatis di sesi powershell ini. (otomatisgenerated)
+Nonaktifkan penyimpanan otomatis kredensial Azure dalam sesi powershell ini. (autogenerasi)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Disable-AzContextAutosave -Scope Process
@@ -50,7 +50,7 @@ Disable-AzContextAutosave -Scope Process
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Menentukan lingkup perubahan konteks, misalnya, apakah perubahan diterapkan hanya pada proses saat ini, atau pada semua sesi yang dimulai oleh pengguna ini
+Menentukan lingkup perubahan konteks, misalnya, apakah perubahan hanya berlaku untuk proses saat ini, atau ke semua sesi yang dimulai oleh pengguna ini
 
 ```yaml
 Type: Microsoft.Azure.Commands.Profile.Common.ContextModificationScope
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -112,11 +112,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

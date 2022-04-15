@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Remove-AzContainerServiceAgentPoolProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Remove-AzContainerServiceAgentPoolProfile.md
 ms.openlocfilehash: 75e019b9c60a45c1bed8e830d9810b1c6a58e732
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420606"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142309057"
 ---
 # Remove-AzContainerServiceAgentPoolProfile
 
 ## SYNOPSIS
-Menghapus profil agen pool dari layanan penampung.
+Menghapus profil kumpulan agen dari layanan kontainer.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Remove-AzContainerServiceAgentPoolProfile [-ContainerService] <PSContainerServic
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzContainerServiceAgentPoolProfile** menghapus profil agen pool dari layanan penampung.
+Cmdlet **Remove-AzContainerServiceAgentPoolProfile** menghapus profil kumpulan agen dari layanan kontainer.
 
 ## EXAMPLES
 
@@ -36,15 +36,15 @@ PS C:\> $Container = Get-AzContainerService -ResourceGroupName "ResourceGroup17"
 PS C:\> Remove-AzContainerServiceAgentPoolProfile -ContainerService $Container -Name "AgentPool01"
 ```
 
-Perintah pertama mendapatkan layanan wadah bernama CSResourceGroup17 dengan menggunakan cmdlet Get-AzContainerService cmdlet.
-Perintah menyimpan layanan dalam variabel $Container baru.
+Perintah pertama mendapatkan layanan kontainer bernama CSResourceGroup17 dengan menggunakan cmdlet Get-AzContainerService.
+Perintah menyimpan layanan dalam variabel $Container.
 
-Perintah kedua menghapus profil yang bernama AgentPool01 dari layanan penampung di $Container.
+Perintah kedua menghapus profil bernama AgentPool01 dari layanan kontainer di $Container.
 
 ## PARAMETERS
 
 ### -ContainerService
-Menentukan objek layanan kontainer tempat cmdlet ini menghapus profil agen pool.
+Menentukan objek layanan kontainer tempat cmdlet ini menghapus profil kumpulan agen.
 
 ```yaml
 Type: PSContainerService
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama profil agen pool yang dihapus cmdlet ini.
+Menentukan nama profil kumpulan agen yang dihapus cmdlet ini.
 
 ```yaml
 Type: String
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -119,12 +119,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### ContainerService
-Parameter 'ContainerService' menerima nilai tipe 'ContainerService' dari saluran
+Parameter 'ContainerService' menerima nilai tipe 'ContainerService' dari pipeline
 
 ## OUTPUTS
 
