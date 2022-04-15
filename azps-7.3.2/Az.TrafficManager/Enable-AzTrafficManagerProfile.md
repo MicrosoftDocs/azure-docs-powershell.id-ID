@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/e
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Enable-AzTrafficManagerProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Enable-AzTrafficManagerProfile.md
-ms.openlocfilehash: d8e241ee18d71ff7edd292c25d353560e5f00fd0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1bfd771d8d96353ab42595c5e2d20cc7989dd72a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140182611"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142395359"
 ---
 # Enable-AzTrafficManagerProfile
 
 ## SYNOPSIS
-Mengaktifkan profil Traffic Manager Anda.
+Mengaktifkan profil Traffic Manager.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.trafficmanager/enable-aztrafficmanagerprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,39 +29,39 @@ Enable-AzTrafficManagerProfile -Name <String> -ResourceGroupName <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### Object
+### Objek
 ```
 Enable-AzTrafficManagerProfile -TrafficManagerProfile <TrafficManagerProfile>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Enable-AzTrafficManagerProfile** mengaktifkan Azure Traffic Manager profil.
-Anda dapat menentukan objek profil menggunakan saluran atau sebagai nilai parameter.
-Alternatifnya, Anda bisa menentukan profil dengan menggunakan parameter *Name* dan *ResourceGroupName* .
+Cmdlet **Enable-AzTrafficManagerProfile** memungkinkan profil Azure Traffic Manager.
+Anda dapat menentukan objek profil menggunakan pipeline atau sebagai nilai parameter.
+Atau, Anda dapat menentukan profil menggunakan parameter *Name* and *ResourceGroupName* .
 
 ## EXAMPLES
 
-### Contoh 1: Mengaktifkan profil yang ditentukan berdasarkan nama
+### Contoh 1: Aktifkan profil yang ditentukan menurut nama
 ```
 PS C:\>Enable-AzTrafficManagerProfile -Name "ContosoProfile" -ResourceGroupName "ResourceGroup11"
 ```
 
-Perintah ini mengaktifkan profil yang bernama ContosoProfile dalam ResourceGroup11.
+Perintah ini mengaktifkan profil bernama ContosoProfile di ResourceGroup11.
 
-### Contoh 2: Mengaktifkan profil menggunakan saluran
+### Contoh 2: Mengaktifkan profil menggunakan pipeline
 ```
 PS C:\>Get-AzTrafficManagerProfile -Name "ContosoProfile" -ResourceGroupName "ResourceGroup11" | Enable-AzTrafficManagerProfile
 ```
 
-Perintah ini mendapatkan profil bernama ContosoProfile dalam ResourceGroup11.
-Perintah tersebut lalu meneruskan profil itu ke cmdlet **Enable-AzTrafficManagerProfile** menggunakan operator pipeline.
-Cmdlet tersebut mengaktifkan profil tersebut.
+Perintah ini mendapatkan profil bernama ContosoProfile di ResourceGroup11.
+Perintah kemudian meneruskan profil tersebut ke cmdlet **Enable-AzTrafficManagerProfile** menggunakan operator pipeline.
+Cmdlet itu memungkinkan profil tersebut.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama profil Traffic Manager yang cmdlet ini aktifkan.
+Menentukan nama profil Traffic Manager yang diaktifkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya.
-Cmdlet ini mengaktifkan Traffic Manager profil dalam grup yang ditentukan parameter ini.
+Cmdlet ini memungkinkan profil Traffic Manager dalam grup yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

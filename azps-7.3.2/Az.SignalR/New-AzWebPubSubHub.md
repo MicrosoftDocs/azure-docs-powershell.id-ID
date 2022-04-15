@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/new-azwe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/New-AzWebPubSubHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/New-AzWebPubSubHub.md
-ms.openlocfilehash: 0f09ce4f164c8ea220222bf7470b6d6a0f62e651
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2a17cc61c2b4691ea7c298312aec1e4d2d0eef07
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140183703"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142401569"
 ---
 # New-AzWebPubSubHub
 
 ## SYNOPSIS
-Buat atau perbarui pengaturan hub.
+Membuat atau memperbarui pengaturan hub.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.signalr/new-azwebpubsubhub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ New-AzWebPubSubHub -Name <String> -ResourceGroupName <String> -ResourceName <Str
 ```
 
 ## DESCRIPTION
-Buat atau perbarui pengaturan hub.
+Membuat atau memperbarui pengaturan hub.
 
 ## EXAMPLES
 
-### Contoh 1: Buat pengaturan hub
+### Contoh 1: Membuat pengaturan hub
 ```powershell
 PS C:\> $eventHandler = @{UrlTemplate = 'http://example.com/api/{hub}/connect/{event}' ; AuthType = 'None' ; SystemEvent = 'connect' ; }
 
@@ -41,14 +44,14 @@ Name    AnonymousConnectPolicy
 testHub deny
 ```
 
-Contoh pertama membuat daftar tabel hash yang berisi dua pengaturan penanganan kejadian, satu untuk kejadian sistem dan yang lain untuk kejadian pengguna.
-Kemudian, aplikasi akan membuat hub dengan penanganan acara.
+Contoh pertama membuat daftar tabel hash yang berisi dua pengaturan pengatur kejadian, satu untuk kejadian sistem dan yang lainnya untuk acara pengguna.
+Lalu membuat hub dengan pengatur acara.
 
 ## PARAMETERS
 
 ### -AnonymousConnectPolicy
 Pengaturan untuk mengonfigurasi jika koneksi anonim diperbolehkan untuk hub ini: "izinkan" atau "tolak".
-Default untuk "menolak".
+Default ke "tolak".
 
 ```yaml
 Type: System.String
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 
 ### -EventHandler
 Penanganan kejadian hub.
-Untuk membuat, lihat bagian CATATAN untuk properti EVENTHANDLER dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti EVENTHANDLER dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.WebPubSub.Models.Api20211001.IEventHandler[]
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -139,8 +142,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya tersebut.
-Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+Nama grup sumber daya yang berisi sumber daya.
+Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
 
 ```yaml
 Type: System.String
@@ -170,8 +173,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan Id langganan yang secara unik mengidentifikasi Microsoft Azure anda.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -234,12 +237,12 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-EVENTHANDLER <IEventHandler[]>: Penanganan kejadian sebuah hub.
-  - `UrlTemplate <String>`: Mendapatkan atau mengatur templat URL EventHandler. Anda bisa menggunakan parameter {hub} dan {event} yang sudah ditentukan sebelumnya di dalam templat, nilai URL EventHandler dihitung secara dinamis saat permintaan klien masuk.         Misalnya, UrlTemplate dapat adalah `http://example.com/api/{hub}/{event}`. Bagian host tidak bisa berisi parameter.
-  - `[AuthType <UpstreamAuthType?>]`: Mendapatkan atau mengatur tipe auth. Tidak ada atau Identitas Terkelola kini didukung.
-  - `[ManagedIdentityResource <String>]`: Sumber daya yang menunjukkan URI ID Aplikasi dari sumber daya target.         Itu juga muncul dalam klaim aud (audiens) untuk token yang dikeluarkan.
-  - `[SystemEvent <String[]>]`: Mendapatkan ot mengatur daftar kejadian sistem. Nilai yang valid berisi: 'sambungkan', 'tersambung', 'terputus'.
-  - `[UserEventPattern <String>]`: Mendapatkan atau mengatur pola yang cocok untuk nama acara.         Ada 3 jenis pola yang didukung: 1. "*", agar sesuai dengan nama acara 2. Gabungkan beberapa acara dengan ",", misalnya "acara1,acara2", yang cocok dengan acara "acara1" dan "acara2" 3. Nama acara tunggal, misalnya, "acara1", cocok dengan "acara1"
+EVENTHANDLER <IEventHandler[]>: Pengatur acara hub.
+  - `UrlTemplate <String>`: Mendapatkan atau mengatur templat URL EventHandler. Anda dapat menggunakan parameter yang sudah ditentukan sebelumnya {hub} dan {event} di dalam templat, nilai URL EventHandler dihitung secara dinamis saat permintaan klien masuk.         Misalnya, UrlTemplate dapat berupa `http://example.com/api/{hub}/{event}`. Bagian host tidak dapat berisi parameter.
+  - `[AuthType <UpstreamAuthType?>]`: Mendapatkan atau mengatur tipe auth. Tidak ada atau ManagedIdentity yang didukung sekarang.
+  - `[ManagedIdentityResource <String>]`: Sumber Daya yang menunjukkan URI ID Aplikasi dari sumber daya target.         Hal ini juga muncul dalam klaim aud (audiens) dari token yang dikeluarkan.
+  - `[SystemEvent <String[]>]`: Mendapatkan rangkaian ot daftar kejadian sistem. Nilai yang valid berisi: 'hubungkan', 'tersambung', 'terputus'.
+  - `[UserEventPattern <String>]`: Mendapatkan atau mengatur pola yang cocok untuk nama acara.         Ada 3 jenis pola yang didukung: 1. "*", sesuai dengan nama acara 2. Gabungkan beberapa acara dengan ",", misalnya "event1,event2", acara cocok dengan acara "event1" dan "event2" 3. Nama acara tunggal, misalnya, "event1", cocok dengan "event1"
 
 ## RELATED LINKS
 

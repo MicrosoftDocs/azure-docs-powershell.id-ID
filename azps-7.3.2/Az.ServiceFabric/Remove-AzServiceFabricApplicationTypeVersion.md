@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricApplicationTypeVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricApplicationTypeVersion.md
-ms.openlocfilehash: 8ad4b0978cb16ed464ffbbe7050a5589b3037b60
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0fca20ae0c8b4da91a23f886f10f6a5a82f58180
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140570377"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142402019"
 ---
 # Remove-AzServiceFabricApplicationTypeVersion
 
 ## SYNOPSIS
-Remove Service fabric an application type version from the cluster. Hanya mendukung versi tipe aplikasi yang disebarkan ARM.
+Hapus Service fabric versi tipe aplikasi dari kluster. Hanya mendukung ARM versi tipe aplikasi yang digunakan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/remove-azservicefabricapplicationtypeversion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Remove-AzServiceFabricApplicationTypeVersion -InputObject <PSApplicationTypeVers
 ```
 
 ## DESCRIPTION
-Cmdlet ini akan menghapus Service fabric an application type version from the cluster. Semua aplikasi di bawah sumber daya ini harus dihapus sebelum menjalankan perintah ini.
+Cmdlet ini akan menghapus kain Service versi tipe aplikasi dari kluster. Semua aplikasi di bawah sumber daya ini harus dihapus sebelum menjalankan perintah ini.
 
 ## EXAMPLES
 
@@ -52,7 +55,7 @@ PS C:\> $version = "v1"
 PS C:\> Remove-AzServiceFabricApplicationTypeVersion -ResourceGroupName $resourceGroupName -ClusterName $clusterName -Name $appTypeName -Version $version -Force -PassThru -Verbose
 ```
 
-Contoh ini akan menghapus versi "v1" di bawah tipe "testAppType". It there are any applications under this resource the command will throw an exception.
+Contoh ini akan menghapus versi "v1" di bawah tipe "testAppType". Ini ada aplikasi apa pun di bawah sumber daya ini perintah akan memberikan pengecualian.
 
 ## PARAMETERS
 
@@ -86,8 +89,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Menghapus tanpa perintah.
+### -Paksa
+Hapus tanpa perintah.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{fill passThru Description}}
+{{Fill PassThru Description}}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

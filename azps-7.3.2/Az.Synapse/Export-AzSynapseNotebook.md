@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/export-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Export-AzSynapseNotebook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Export-AzSynapseNotebook.md
-ms.openlocfilehash: df7b2debb6b99a4c82c542e27b97904b01019a78
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 8091db033f51fe4ecf4dd3324a033fb80eba9295
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140178326"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142364633"
 ---
 # Export-AzSynapseNotebook
 
 ## SYNOPSIS
-Mengekspor buku catatan.
+Mengekspor notbook.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/export-azsynapsenotebook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Export-AzSynapseNotebook -InputObject <PSNotebookResource> -OutputFolder <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Export-AzSynapseNotebook** mengekspor buku catatan Azure Synapse ke file buku catatan (.ipynb). Nama buku catatan menjadi nama file yang diekspor. Jika Anda menentukan nama buku catatan, cmdlet mengekspor buku catatan itu. Jika Anda tidak menentukan nama, cmdlet akan mengekspor semua buku catatan dalam ruang kerja.
+Cmdlet **Export-AzSynapseNotebook** mengekspor buku catatan Azure Synapse ke file buku catatan (.ipynb). Nama buku catatan menjadi nama file yang diekspor. Jika Anda menentukan nama buku catatan, cmdlet akan mengekspor buku catatan tersebut. Jika Anda tidak menentukan nama, cmdlet mengekspor semua buku catatan dalam ruang kerja.
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ Mengekspor semua buku catatan di ruang kerja ContosoWorkspace ke folder "C:\Note
 PS C:\> Export-AzSynapseNotebook -WorkspaceName ContosoWorkspace -Name ContosoNotebook -OutputFolder "C:\Notebook"
 ```
 
-Mengekspor buku catatan tunggal bernama ContosoNotebook di ruang kerja ContosoWorkspace ke folder "C:\Notebook".
+Mengekspor satu buku catatan bernama ContosoNotebook di ruang kerja ContosoWorkspace ke folder "C:\Notebook".
 
 ### Contoh 3
 ```powershell
@@ -62,7 +65,7 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Export-AzSynapseNotebook -Name ContosoNotebook -OutputFolder "C:\Notebook"
 ```
 
-Mengekspor buku catatan tunggal yang disebut ContosoNotebook di ruang kerja ContosoWorkspace ke folder "C:\Notebook" melalui saluran.
+Mengekspor satu buku catatan yang disebut ContosoNotebook di ruang kerja ContosoWorkspace ke folder "C:\Notebook" melalui pipeline.
 
 ### Contoh 4
 ```powershell
@@ -70,12 +73,12 @@ PS C:\> $notebook = Get-AzSynapseNotebook -WorkspaceName ContosoWorkspace -Name 
 PS C:\> $notebook | Export-AzSynapseNotebook -OutputFolder "C:\Notebook"
 ```
 
-Mengekspor buku catatan tunggal yang disebut ContosoNotebook di ruang kerja ContosoWorkspace ke folder "C:\Notebook" melalui saluran.
+Mengekspor satu buku catatan yang disebut ContosoNotebook di ruang kerja ContosoWorkspace ke folder "C:\Notebook" melalui pipeline.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -OutputFolder
-Folder tempat buku catatan harus diletakkan.
+Folder tempat buku catatan harus ditempatkan.
 
 ```yaml
 Type: System.String
@@ -149,7 +152,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

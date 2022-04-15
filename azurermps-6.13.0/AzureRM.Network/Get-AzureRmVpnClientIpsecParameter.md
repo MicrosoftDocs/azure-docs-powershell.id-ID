@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmVpnClientIpsecParameter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmVpnClientIpsecParameter.md
 ms.openlocfilehash: 539ae515d664aaeb01ca824603cd8ee3ed38f0fb
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140864252"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142386265"
 ---
 # Get-AzureRmVpnClientIpsecParameter
 
 ## SYNOPSIS
-Menyetel parameter Ipsec vpn di Gateway Jaringan Virtual untuk Koneksi situs Arahkan ke.
+Mendapatkan parameter vpn Ipsec yang diatur di Virtual Network Gateway untuk Koneksi titik ke situs.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,17 +27,17 @@ Get-AzureRmVpnClientIpsecParameter [-Name <String>] -ResourceGroupName <String>
 ```
 
 ## DESCRIPTION
-Gateway Jaringan Virtual adalah objek yang mewakili gateway Anda di Azure.
-Cmdlet **Get-AzureRmVpnClientIpsecParameter** mengembalikan objek parameter ipsec vpn Anda yang diatur di gateway di Azure berdasarkan Nama Gateway dan Nama Grup Sumber Daya.
+Gateway Virtual Network adalah objek yang mewakili gateway Anda di Azure.
+Cmdlet **Get-AzureRmVpnClientIpsecParameter** mengembalikan objek parameter ipsec vpn yang diatur di gateway di Azure berdasarkan Nama Gateway dan Nama Grup Sumber Daya.
 
 ## EXAMPLES
 
-### 1: Menyetel parameter Ipsec vpn di Gateway Jaringan Virtual untuk Mengarah ke koneksi situs.
+### 1: Mendapatkan parameter vpn Ipsec yang diatur di Virtual Network Gateway untuk Koneksi titik ke situs.
 ```
 PS C:\> $VpnClientIPsecParameters = Get-AzureRmVpnClientIpsecParameter -Name myGateway -ResourceGroupName myRG
 ```
 
-Mengembalikan objek parameter ipsec vpn yang diatur di Gateway Jaringan Virtual dengan nama "myGateway" dalam grup sumber daya "myRG"
+Mengembalikan objek parameter ipsec vpn yang diatur di gateway Virtual Network dengan nama "myGateway" dalam grup sumber daya "myRG"
 
 ## PARAMETERS
 
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

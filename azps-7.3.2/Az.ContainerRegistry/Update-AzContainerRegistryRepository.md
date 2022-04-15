@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Update-AzContainerRegistryRepository.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Update-AzContainerRegistryRepository.md
-ms.openlocfilehash: b0f0cd926231ff391d5b53579cf0daf1ea17fce0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 7a907c1de82fe3109814ed79e8c2a90a89f487fe
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140179979"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142473443"
 ---
 # Update-AzContainerRegistryRepository
 
 ## SYNOPSIS
 Perbarui penyimpanan ACR.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/update-azcontainerregistryrepository) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ TagCount             : 1
 ChangeableAttributes : Microsoft.Azure.Commands.ContainerRegistry.Models.PSChangeableAttribute
 ```
 
-Perbarui atribut untuk penyimpanan alpine di bawah registri.
+Perbarui atribut untuk repositori alpine di bawah registri.
 
 ## PARAMETERS
 
@@ -63,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeleteEnabled
-Hapus aktif.
+Hapus aktifkan.
 
 ```yaml
 Type: System.Boolean
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReadEnabled
-Baca diaktifkan.
+Baca aktifkan.
 
 ```yaml
 Type: System.Boolean
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistryName
-Nama Registri Azure Container.
+nama Azure Container Registry.
 
 ```yaml
 Type: System.String
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -WriteEnabled
-Menulis diaktifkan.
+Aktifkan penulisan.
 
 ```yaml
 Type: System.Boolean
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
