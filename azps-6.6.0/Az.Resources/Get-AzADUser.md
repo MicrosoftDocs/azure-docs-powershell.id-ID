@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADUser.md
 ms.openlocfilehash: bac24d9ef3bd45fa4f5cb5ebfffb7dd494187638
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140210941"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142300480"
 ---
 # Get-AzADUser
 
@@ -21,7 +21,7 @@ Memfilter pengguna direktori aktif.
 [!INCLUDE [msgraph-migration-banner](../../includes/msgraph-migration-banner.md)]
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azaduser) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azaduser) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -66,7 +66,7 @@ Memfilter pengguna direktori aktif.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan semua pengguna
+### Contoh 1: Daftar semua pengguna
 
 ```powershell
 PS C:\> Get-AzADUser
@@ -74,23 +74,23 @@ PS C:\> Get-AzADUser
 
 Mencantumkan semua pengguna AD dalam penyewa.
 
-### Contoh 2:  List all users using paging
+### Contoh 2: Mencantumkan semua pengguna menggunakan halaman
 
 ```powershell
 PS C:\> Get-AzADUser -First 100
 ```
 
-Mencantumkan 100 pengguna AD pertama dalam penyewa.
+Mencantumkan 100 pengguna ad pertama dalam penyewa.
 
-### Contoh 3: Mendapatkan pengguna AD menurut nama prinsipal pengguna
+### Contoh 3: Dapatkan pengguna AD menurut nama prinsipal pengguna
 
 ```powershell
 PS C:\> Get-AzADUser -UserPrincipalName foo@domain.com
 ```
 
-Mendapatkan pengguna AD dengan nama prinsipal pengguna "foo@domain.com".
+Mendapatkan pengguna AD dengan nama utama pengguna "foo@domain.com".
 
-### Contoh 4: Daftar berdasarkan string pencarian
+### Contoh 4: Daftar menurut string pencarian
 
 ```powershell
 PS C:\> Get-AzADUser -SearchString Joe
@@ -101,7 +101,7 @@ Mencantumkan semua pengguna AD yang nama tampilannya dimulai dengan "Joe".
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeTotalCount
-Melaporkan jumlah objek dalam set data. Saat ini, parameter ini tidak melakukan apa-apa.
+Melaporkan jumlah objek dalam kumpulan data. Saat ini, parameter ini tidak melakukan apa-apa.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lewati
-Mengabaikan objek N pertama, lalu mendapatkan objek yang tersisa.
+Mengabaikan objek N pertama lalu mendapatkan objek yang tersisa.
 
 ```yaml
 Type: System.UInt64
@@ -232,8 +232,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -First
-Jumlah maksimum objek untuk dikembalikan.
+### -Pertama
+Jumlah maksimum objek yang akan dikembalikan.
 
 ```yaml
 Type: System.UInt64
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -256,7 +256,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.ActiveDirectory.LINUXDUser
+### Microsoft.Azure.Commands.ActiveDirectory.PSADUser
 
 ## CATATAN
 
@@ -266,5 +266,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Update-AzADUser](./Update-AzADUser.md)
 
-[Remove-AzADUser](./Remove-AzADUser.md)
+[Hapus-AzADUser](./Remove-AzADUser.md)
 

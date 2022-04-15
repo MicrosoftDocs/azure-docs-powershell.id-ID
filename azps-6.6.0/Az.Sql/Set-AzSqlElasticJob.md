@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticJob.md
 ms.openlocfilehash: 48f1a0b25cf2a5c3b1b3615adb97ef5ea44c7b70
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140096867"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142298233"
 ---
 # Set-AzSqlElasticJob
 
@@ -18,7 +18,7 @@ ms.locfileid: "140096867"
 Memperbarui pekerjaan
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqlelasticjob) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqlelasticjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -88,7 +88,7 @@ Cmdlet Set-AzSqlElasticJob memperbarui pekerjaan
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui pekerjaan untuk memulai jam dari sekarang dan mengulangi setiap 1 jam
+### Contoh 1: Memperbarui pekerjaan untuk memulai satu jam dari sekarang dan mengulangi setiap 1 jam
 ```powershell
 PS C:\> $job = Get-AzSqlElasticJob -ResourceGroupName rg -ServerName elasticjobserver -AgentName agent -Name job1
 $job | Set-AzSqlElasticJob -IntervalType Hour -IntervalCount 1 -StartTime (Get-Date).AddHours(1) -Enable
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -Aktifkan
-Bendera untuk menunjukkan pelanggan menginginkan pekerjaan ini diaktifkan.
+Bendera untuk menunjukkan pelanggan ingin pekerjaan ini diaktifkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndTime
-Waktu selesai jadwal pekerjaan
+Waktu berakhir jadwal pekerjaan
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -IntervalType
-Tipe interval jadwal berulang - Dapat adalah Menit, Jam, Hari, Minggu, Bulan
+Tipe interval jadwal berulang - Dapat berupa Menit, Jam, Hari, Minggu, Bulan
 
 ```yaml
 Type: System.String
@@ -305,7 +305,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Waktu mulai jadwal kerja
+Waktu mulai jadwal pekerjaan
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -320,7 +320,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -336,7 +336,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -351,15 +351,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Sql.ElastisJobs.Model.AzureSqlElasticJobModel
+### Microsoft.Azure.Commands.Sql.ElasticJobs.Model.AzureSqlElasticJobModel
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Sql.ElastisJobs.Model.AzureSqlElasticJobModel
+### Microsoft.Azure.Commands.Sql.ElasticJobs.Model.AzureSqlElasticJobModel
 
 ## CATATAN
 

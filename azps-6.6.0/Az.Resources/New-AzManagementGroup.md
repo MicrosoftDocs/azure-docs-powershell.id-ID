@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzManagementGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzManagementGroup.md
 ms.openlocfilehash: 5ae15d4536e06796031311d62eae573a17f6b7e4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140099225"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142300429"
 ---
 # New-AzManagementGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "140099225"
 Membuat Grup Manajemen
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/new-azmanagementgroup) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azmanagementgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,7 +55,7 @@ ParentName        : 14307de0-5e6f-46cf-b2ba-64a062964d30
 ParentDisplayName : 14307de0-5e6f-46cf-b2ba-64a062964d30
 ```
 
-Pembuatan grup baru dengan dan `DisplayName` mengatur `ParentId` ke `null`. The `DisplayName` will be same as the `GroupName` and the parent of the group will be the tenant.  
+Pembuatan grup baru dengan `DisplayName` dan `ParentId` atur ke `null`. Yang `DisplayName` akan sama dengan `GroupName` dan induk grup akan menjadi penyewa.  
 
 ### Contoh 2: Membuat Grup Manajemen dengan nama tampilan
 ```
@@ -73,9 +73,9 @@ ParentName        : 14307de0-5e6f-46cf-b2ba-64a062964d30
 ParentDisplayName : 14307de0-5e6f-46cf-b2ba-64a062964d30
 ```
 
-Dalam kasus ini, induk grup akan menjadi penyewa dan akan `DisplayName` diatur ke nilai yang diberikan.
+Dalam hal ini, induk grup akan menjadi penyewa dan `DisplayName` akan diatur ke nilai yang diberikan.
 
-### Contoh 3: Buat Grup Manajemen dengan induk dan nama tampilan
+### Contoh 3: Membuat Grup Manajemen dengan induk dan nama tampilan
 ```
 PS C:\> New-AzManagementGroup -GroupName "TestGroup" -DisplayName "TestGroupDisplayName" -ParentId "/providers/Microsoft.Management/managementGroups/TestGroupParent"
 
@@ -91,7 +91,7 @@ ParentName        : TestGroupParent
 ParentDisplayName : TestGroupParent
 ```
 
-### Contoh 4: Buat Grup Manajemen dengan induk (menggunakan objek induk)
+### Contoh 4: Membuat Grup Manajemen dengan induk (menggunakan objek induk)
 ```
 PS C:\> $parentObject = Get-AzManagementGroup -GroupName "TestGroupParent"
 PS C:\> New-AzManagementGroup -GroupName "TestGroup" -ParentObject $parentObject
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Tampilkan Nama grup manajemen
+Nama Tampilan grup manajemen
 
 ```yaml
 Type: System.String
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -217,11 +217,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

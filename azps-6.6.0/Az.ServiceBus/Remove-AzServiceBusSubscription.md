@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusSubscription.md
 ms.openlocfilehash: ba2c797e846116c7cb034771d15d38649b81787f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139969035"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142299877"
 ---
 # Remove-AzServiceBusSubscription
 
 ## SYNOPSIS
-Menghapus langganan ke topik dari ruang nama Bus Layanan ditentukan.
+Menghapus langganan topik dari ruang nama Bus Layanan yang ditentukan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/remove-azservicebussubscription) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/remove-azservicebussubscription) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ Remove-AzServiceBusSubscription [-ResourceId] <String> [-PassThru] [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzServiceBusSubscription** menghapus langganan ke topik dari kumpulan nama Bus Layanan tertentu.
+Cmdlet **Remove-AzServiceBusSubscription** menghapus langganan topik dari ruang nama Bus Layanan yang ditentukan.
 
 ## EXAMPLES
 
@@ -51,9 +51,9 @@ Cmdlet **Remove-AzServiceBusSubscription** menghapus langganan ke topik dari kum
 PS C:\> Remove-AzServiceBusSubscription -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1 -TopicName SB-Topic_exampl1 -SubscriptionName SB-TopicSubscription-Example1
 ```
 
-Menghapus langganan ke `SB-TopicSubscription-Example1` topik dalam ruang `SB-Topic_exampl1` nama Bus Layanan tertentu `SB-Example1`.
+Menghapus langganan `SB-TopicSubscription-Example1` ke topik `SB-Topic_exampl1` dalam ruang `SB-Example1`nama Bus Layanan yang ditentukan.
 
-### Contoh 2: InputObject - Menggunakan Variabel:
+### Contoh 2: InputObject - Using Variable:
 ```powershell
 PS C:\> $inputobject = Get-AzServiceBusSubscription <params>
 PS C:\> Remove-AzServiceBusSubscription -InputObject $inputobject
@@ -75,12 +75,12 @@ PS C:\> Remove-AzServiceBusSubscription -ResourceId $resourceid.Id
 PS C:\> Remove-AzServiceBusSubscription -ResourceId "/subscriptions/Subscriptionid/resourceGroups/ResourceGroup/providers/Microsoft.ServiceBus/namespaces/NamespaceName/topics/TopicName/subscriptions/SubscriptionName"
 ```
 
-Menghapus langganan yang disediakan melalui ID ARM di $resourceid/string untuk parameter -ResourceId 
+Menghapus langganan yang disediakan melalui ID ARM dalam $resourceid/string untuk parameter -ResourceId 
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Bus Layanan Berlangganan
+Objek Langganan Bus Layanan
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceBus.Models.PSSubscriptionAttributes
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-id sumber daya Bus Layanan langganan
+ID Sumber Daya Langganan Bus Layanan
 
 ```yaml
 Type: System.String
@@ -199,7 +199,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Topic
+### -Topik
 Nama Topik
 
 ```yaml
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
