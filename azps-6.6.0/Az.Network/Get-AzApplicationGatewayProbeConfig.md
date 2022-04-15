@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayProbeConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayProbeConfig.md
 ms.openlocfilehash: c6dcbe58808a42e309caec7ad1dcb4e156a0fc7e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140104499"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142301983"
 ---
 # Get-AzApplicationGatewayProbeConfig
 
 ## SYNOPSIS
-Mendapatkan konfigurasi konfigurasi konfigurasi konfigurasi kesehatan yang sudah ada dari Gateway Aplikasi.
+Mendapatkan konfigurasi pemeriksaan kesehatan yang sudah ada dari Application Gateway.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azapplicationgatewayprobeconfig) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayprobeconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,21 +28,21 @@ Get-AzApplicationGatewayProbeConfig [-Name <String>] -ApplicationGateway <PSAppl
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzApplicationGatewayProbeConfig mendapatkan konfigurasi konfigurasi utama kesehatan yang sudah ada dari Gateway Aplikasi.
+Cmdlet Get-AzApplicationGatewayProbeConfig mendapatkan konfigurasi pemeriksaan kesehatan yang sudah ada dari Application Gateway.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan log log yang sudah ada dari gateway aplikasi
+### Contoh 1: Mendapatkan probe yang sudah ada dari gateway aplikasi
 ```
 PS C:\>Get-AzApplicationGatewayProbeConfig -ApplicationGateway Gateway -Name "Probe02"
 ```
 
-Perintah ini mendapatkan perintah kesehatan yang bernama Cloud02 dari gateway aplikasi yang bernama Gateway.
+Perintah ini mendapatkan pemeriksaan kesehatan bernama Probe02 dari gateway aplikasi bernama Gateway.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan gateway aplikasi tempat cmdlet ini mendapatkan konfigurasi utama.
+Menentukan gateway aplikasi tempat cmdlet ini mendapatkan konfigurasi probe.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama negara tersebut.
+Menentukan nama probe.
 
 ```yaml
 Type: System.String
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -101,7 +101,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Tambahkan default ke gateway aplikasi yang sudah ada](https://azure.microsoft.com/en-us/documentation/articles/application-gateway-create-probe-ps/#add-a-probe-to-an-existing-application-gateway)
+[Menambahkan probe ke gateway aplikasi yang sudah ada](https://azure.microsoft.com/en-us/documentation/articles/application-gateway-create-probe-ps/#add-a-probe-to-an-existing-application-gateway)
 
 [Add-AzApplicationGatewayProbeConfig](./Add-AzApplicationGatewayProbeConfig.md)
 

@@ -6,18 +6,18 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayVpnClientConnectionHealth.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayVpnClientConnectionHealth.md
 ms.openlocfilehash: 659838640824a6f034af94735724416c909b51bf
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140465309"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142301245"
 ---
 # Get-AzVirtualNetworkGatewayVpnClientConnectionHealth
 
-## SYNOPSIS Dapatkan daftar kesehatan koneksi klien vpn gateway jaringan virtual Azure untuk per koneksi klien vpn
+## SYNOPSIS Dapatkan daftar kesehatan koneksi klien vpn gateway jaringan virtual Azure untuk koneksi klien per vpn
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azvirtualnetworkgatewayvpnclientconnectionhealth) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualnetworkgatewayvpnclientconnectionhealth) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -62,11 +62,11 @@ IngressBytesTransferred   : 67968
 MaxPacketsPerSecond       : 1
 ```
 
-Untuk gateway jaringan virtual Azure yang bernama nama gateway dalam sumber daya grup sumber daya, mengambil koneksi klien vpn yang tersambung saat ini dengan menggunakan OpenVpn. 
+Untuk gateway jaringan virtual Azure bernama gatewayname dalam sumber daya grup sumber dayaGroup, mengambil koneksi klien vpn yang saat ini tersambung menggunakan OpenVpn. 
 
 ### Contoh 2
 
-Dapatkan daftar kesehatan koneksi klien vpn dari gateway jaringan virtual Azure untuk per koneksi klien vpn. (otomatisgenerated)
+Dapatkan daftar kesehatan koneksi klien vpn gateway jaringan virtual Azure untuk koneksi klien per vpn. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

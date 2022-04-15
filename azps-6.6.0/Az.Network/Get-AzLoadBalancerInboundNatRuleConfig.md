@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerInboundNatRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerInboundNatRuleConfig.md
 ms.openlocfilehash: 9bead1bb5e7bbd57a2ad933107178890d3902765
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140104391"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142301713"
 ---
 # Get-AzLoadBalancerInboundNatRuleConfig
 
 ## SYNOPSIS
-Mendapatkan konfigurasi aturan NAT masuk untuk penyeimbang muat.
+Mendapatkan konfigurasi aturan NAT masuk untuk penyeimbang beban.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azloadbalancerinboundnatruleconfig) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azloadbalancerinboundnatruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,23 +29,23 @@ Get-AzLoadBalancerInboundNatRuleConfig -LoadBalancer <PSLoadBalancer> [-Name <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzLoadBalancerInboundNatRuleConfig** mendapatkan satu atau beberapa aturan penerjemahan alamat jaringan masuk (NAT, InboundNatRuleConfig) di penyeimbang muat Azure.
+Cmdlet **Get-AzLoadBalancerInboundNatRuleConfig** mendapatkan satu atau beberapa aturan terjemahan alamat jaringan masuk (NAT) dalam penyeimbang muatan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan konfigurasi aturan NAT masuk
+### Contoh 1: Dapatkan konfigurasi aturan NAT masuk
 ```
 PS C:\>$slb = Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 PS C:\> Get-AzLoadBalancerInboundNatRuleConfig -Name "MyInboundNatRule1" -LoadBalancer $slb
 ```
 
-Perintah pertama mendapatkan penyeimbang muat bernama MyLoadBalancer, dan menyimpannya dalam variabel $slb.
-Perintah kedua mendapatkan aturan NAT terkait yang bernama MyInboundNatRule1 dari penyeimbang muat dalam $slb.
+Perintah pertama mendapatkan load balancer bernama MyLoadBalancer, dan menyimpannya dalam variabel $slb.
+Perintah kedua mendapatkan aturan NAT terkait bernama MyInboundNatRule1 dari load balancer di $slb.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan penyeimbang muat yang terkait dengan konfigurasi aturan NAT masuk untuk masuk.
+Menentukan penyeimbang muatan yang terkait dengan konfigurasi aturan NAT masuk yang akan didapatkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama konfigurasi aturan NAT masuk untuk masuk.
+Menentukan nama konfigurasi aturan NAT masuk yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCrossConnectionRouteTableSummary.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCrossConnectionRouteTableSummary.md
 ms.openlocfilehash: 517a9d15714a180999f3254d5fddc4fe07709347
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139973589"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142301839"
 ---
 # Get-AzExpressRouteCrossConnectionRouteTableSummary
 
 ## SYNOPSIS
-Mendapatkan ringkasan tabel rute dari koneksi silang ExpressRoute.
+Mendapatkan ringkasan tabel rute koneksi silang ExpressRoute.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azexpressroutecrossconnectionroutetablesummary) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azexpressroutecrossconnectionroutetablesummary) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ Get-AzExpressRouteCrossConnectionRouteTableSummary -ExpressRouteCrossConnection 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzExpressRouteCrossConnectionRouteTableSummary** mengambil ringkasan informasi sekitar BGP untuk konteks perutean tertentu. Informasi ini berguna untuk menentukan berapa lama konteks perutean telah dibuat dan jumlah prefiks rute yang diiklankan oleh perute peering.
+Cmdlet **Get-AzExpressRouteCrossConnectionRouteTableSummary** mengambil ringkasan informasi tetangga BGP untuk konteks perutean tertentu. Informasi ini berguna untuk menentukan berapa lama konteks perutean telah ditetapkan dan jumlah prefiks rute yang diiklankan oleh router peering.
 
 ## EXAMPLES
 
@@ -50,7 +50,7 @@ Get-AzExpressRouteCrossConnectionRouteTableSummary -ResourceGroupName $RG -Expre
 ## PARAMETERS
 
 ### -CrossConnectionName
-Nama Koneksi Silang Rute Ekspres
+Nama Express Route Cross Connection
 
 ```yaml
 Type: System.String
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpressRouteCrossConnection
-Koneksi Silang Rute Ekspres
+The Express Route Cross Connection
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSExpressRouteCrossConnection
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeeringType
-Nilai yang dapat diterima untuk parameter ini adalah: `AzurePrivatePeering`, `AzurePublicPeering`, dan `MicrosoftPeering`
+Nilai yang dapat diterima untuk parameter ini adalah: `AzurePrivatePeering`, , `AzurePublicPeering`dan `MicrosoftPeering`
 
 ```yaml
 Type: System.String
@@ -142,11 +142,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
