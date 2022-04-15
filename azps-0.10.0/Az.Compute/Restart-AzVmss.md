@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Restart-AzVmss.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Restart-AzVmss.md
 ms.openlocfilehash: b0e01f462bfb7576e942138cb42b3171fb6660b3
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420235"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142490565"
 ---
 # Restart-AzVmss
 
@@ -26,29 +26,29 @@ Restart-AzVmss [-ResourceGroupName] <String> [-VMScaleSetName] <String> [[-Insta
 ```
 
 ## DESCRIPTION
-Cmdlet **Mulai Ulang-AzVmss** memulai ulang Virtual Machine Scale Set (VMSS).
-Cmdlet ini juga dapat digunakan untuk memulai ulang mesin virtual tertentu dalam VMSS menggunakan parameter *InstanceId.*
+Cmdlet **Restart-AzVmss** memulai ulang Kumpulan Skala Mesin Virtual (VMSS).
+Cmdlet ini juga dapat digunakan untuk memulai ulang mesin virtual tertentu di dalam VMSS menggunakan parameter *InstanceId* .
 
 ## EXAMPLES
 
-### Contoh 1: Mulai ulang VMSS
+### Contoh 1: Hidupkan ulang VMSS
 ```
 PS C:\> Restart-AzVmss -ResourceGroupName "Group001" -VMScaleSetName "VMSS001";
 ```
 
-Perintah ini memulai ulang VMSS yang bernama VMSS001 yang dimiliki oleh grup sumber daya yang bernama Group001.
+Perintah ini memulai ulang VMSS bernama VMSS001 yang termasuk dalam grup sumber daya bernama Group001.
 
-### Contoh 2: Mulai ulang mesin virtual tertentu dalam VMSS
+### Contoh 2: Hidupkan ulang mesin virtual tertentu dalam VMSS
 ```
 PS C:\> Restart-AzVmss -ResourceGroupName "Group004" -VMScaleSetName "VMSS001" -InstanceId "1"
 ```
 
-Perintah ini memulai ulang mesin virtual yang memiliki ID contoh 1 dalam VMSS bernama VMSS001 yang termasuk dalam grup sumber daya bernama Group001.
+Perintah ini memulai ulang mesin virtual yang memiliki ID instans 1 dalam VMSS bernama VMSS001 yang termasuk dalam grup sumber daya bernama Group001.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
 
 ```yaml
 Type: SwitchParameter
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMScaleSetName
-Spesies nama VMSS yang dimulai ulang cmdlet ini.
+Spesies nama VMSS yang cmdlet ini mulai ulang.
 
 ```yaml
 Type: String
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -153,11 +153,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
@@ -173,14 +173,14 @@ Cmdlet ini tidak menghasilkan output apa pun.
 
 [New-AzVmss](./New-AzVmss.md)
 
-[Remove-AzVmss](./Remove-AzVmss.md)
+[Hapus-AzVms](./Remove-AzVmss.md)
 
-[Set-AzVmss](./Set-AzVmss.md)
+[Set-AzVms](./Set-AzVmss.md)
 
 [Start-AzVmss](./Start-AzVmss.md)
 
 [Stop-AzVmss](./Stop-AzVmss.md)
 
-[Update-AzVmss](./Update-AzVmss.md)
+[Pembaruan-AzVms](./Update-AzVmss.md)
 
 

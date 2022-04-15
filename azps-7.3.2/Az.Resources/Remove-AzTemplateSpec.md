@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzTemplateSpec.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzTemplateSpec.md
-ms.openlocfilehash: daee3ab273e4918b32a655010a3e5925299a0220
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9750983c3a0e92fe7105cc8302f327850b043403
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140195879"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142463796"
 ---
 # Remove-AzTemplateSpec
 
 ## SYNOPSIS
 Menghapus Spesifikasi Templat
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-aztemplatespec) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,37 +35,37 @@ Remove-AzTemplateSpec [-Force] [[-Version] <String>] [-ResourceId] <String>
 ```
 
 ## DESCRIPTION
-Menghapus Spesifikasi Templat tertentu. Jika versi **-Version** parameter disediakan, hanya versi tertentu yang akan dihapus. Jika tidak ada versi tertentu yang disediakan, Template Spec dan semua versinya akan dihapus. Jika **-Force** flag ada, tidak ada permintaan konfirmasi untuk penghapusan.
+Menghapus Spesifikasi Templat tertentu. Jika parameter versi **-Version** disediakan, hanya versi yang ditentukan yang akan dihapus. Jika tidak ada versi tertentu yang disediakan, Spesifikasi Templat dan semua versinya akan dihapus. Jika bendera **-Force** ada tidak akan ada permintaan konfirmasi untuk penghapusan.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus versi tertentu berdasarkan nama
+### Contoh 1: Menghapus versi tertentu menurut nama
 ```powershell
 PS C:\> Remove-AzTemplateSpec -ResourceGroupName 'myRG' -Name 'MyTemplateSpec' -Version 'v1.0'
 ```
 
 Menghapus versi 'v1.0' dari Spesifikasi Templat bernama 'MyTemplateSpec' dalam grup sumber daya 'myRG'.
 
-### Contoh 2: Menghapus versi tertentu dengan id sumber daya
+### Contoh 2: Menghapus versi tertentu menurut id sumber daya
 ```powershell
 PS C:\> Remove-AzTemplateSpec -ResourceId '/subscriptions/{subId}/resourceGroups/myRG/providers/Microsoft.Resources/templateSpecs/MyTemplateSpec' -Version 'v1.0'
 ```
 
-Menghapus versi 'v1.0' dari Spesifikasi Templat bernama 'MyTemplateSpec' dalam grup sumber daya 'myRG' dari subId \{langganan\}.
+Menghapus versi 'v1.0' dari Spesifikasi Templat bernama 'MyTemplateSpec' dalam grup sumber daya 'myRG' subId\} langganan\{.
 
 ### Contoh 3: Menghapus Spesifikasi Templat dan semua versi menurut nama
 ```powershell
 PS C:\> Remove-AzTemplateSpec -ResourceGroupName 'myRG' -Name 'MyTemplateSpec'
 ```
 
-Menghapus Spesifikasi Templat yang bernama 'MyTemplateSpec' dan semua versinya dalam grup sumber daya 'myRG'.
+Menghapus Spesifikasi Templat bernama 'MyTemplateSpec' dan semua versinya dalam grup sumber daya 'myRG'.
 
-### Contoh 4: Menghapus Spesifikasi Templat dan semua versi berdasarkan id sumber daya
+### Contoh 4: Menghapus Spesifikasi Templat dan semua versi menurut id sumber daya
 ```powershell
 PS C:\> Remove-AzTemplateSpec -ResourceId '/subscriptions/{subId}/resourceGroups/myRG/providers/Microsoft.Resources/templateSpecs/MyTemplateSpec' -ResourceGroupName 'myRG'
 ```
 
-Menghapus Spesifikasi Templat bernama 'MyTemplateSpec' dan semua versinya dalam grup sumber daya 'myRG' dari subId \{langganan\}.
+Menghapus Spesifikasi Templat bernama 'MyTemplateSpec' dan semua versinya dalam grup sumber daya 'myRG' subId\} langganan\{.
 
 ## PARAMETERS
 
@@ -81,8 +84,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderDistributorObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderDistributorObject.md
 ms.openlocfilehash: e81e31eab904e3a475000b05c4782abc109b547d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139975821"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142474109"
 ---
 # New-AzImageBuilderDistributorObject
 
@@ -18,7 +18,7 @@ ms.locfileid: "139975821"
 Objek distribusi generik
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.imagebuilder/new-azimagebuilderdistributorobject) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.imagebuilder/new-azimagebuilderdistributorobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +46,7 @@ Objek distribusi generik
 
 ## EXAMPLES
 
-### Contoh 1: Create a managed image distributor
+### Contoh 1: Membuat distributor gambar terkelola
 ```powershell
 PS C:\> New-AzImageBuilderDistributorObject -ManagedImageDistributor  -ArtifactTag @{tag='lucasManage'} -ImageId /subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/wyunchi-imagebuilder/providers/Microsoft.Compute/images/lucas-linux-imageshare -RunOutputName luacas-runout -Location eastus
 
@@ -57,7 +57,7 @@ luacas-runout ManagedImage /subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/r
 
 Perintah ini membuat distributor gambar terkelola.
 
-### Contoh 2: Membuat VHD distributor
+### Contoh 2: Membuat distributor VHD
 ```powershell
 PS C:\> New-AzImageBuilderDistributorObject -ArtifactTag @{tag='vhd'} -VhdDistributor -RunOutputName image-vhd
 
@@ -83,7 +83,7 @@ Perintah ini membuat distributor gambar bersama.
 ## PARAMETERS
 
 ### -ArtifactTag
-Tag yang akan diterapkan pada artifak setelah dibuat/diperbarui oleh distributor.
+Tag yang akan diterapkan ke artefak setelah dibuat/diperbarui oleh distributor.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -98,8 +98,8 @@ Accept wildcard characters: False
 ```
 
 ### -ExcludeFromLatest
-Bendera yang menunjukkan apakah versi gambar yang dibuat harus dikecualikan dari versi terbaru.
-Mit untuk menggunakan default (false).
+Bendera yang menunjukkan apakah versi gambar yang dibuat harus dikecualikan dari yang terbaru.
+Hilangkan untuk menggunakan default (false).
 
 ```yaml
 Type: System.Boolean
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -GalleryImageId
-Id Sumber Daya dari gambar Galeri Gambar Bersama.
+Id Sumber Daya gambar Shared Image Gallery.
 
 ```yaml
 Type: System.String
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImageId
-Id Sumber Daya dari Gambar Disk yang Dikelola.
+Id Sumber Daya dari Citra Disk terkelola.
 
 ```yaml
 Type: System.String
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi Azure untuk gambar, harus cocok jika gambar sudah ada.
+Lokasi Azure untuk gambar, akan cocok jika gambar sudah ada.
 
 ```yaml
 Type: System.String
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedImageDistributor
-Distribusikan sebagai Gambar Disk terkelola.
+Distribusikan sebagai Citra Disk terkelola.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -SharedImageDistributor
-Distribusikan melalui Galeri Gambar Bersama.
+Distribusikan melalui Shared Image Gallery.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -219,8 +219,8 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountType
-Storage akun baru yang akan digunakan untuk menyimpan gambar bersama.
-Mit untuk menggunakan pengaturan default (Standard_LRS).
+Storage tipe akun yang akan digunakan untuk menyimpan gambar bersama.
+Hilangkan untuk menggunakan default (Standard_LRS).
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ImageBuilder.Support.SharedImageStorageAccountType
@@ -250,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Enable-AzHDInsightAzureMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Enable-AzHDInsightAzureMonitor.md
 ms.openlocfilehash: 3473b980b582a98124fbf4b35953609b87bd310e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139939129"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142474397"
 ---
 # Enable-AzHDInsightAzureMonitor
 
 ## SYNOPSIS
-Mengaktifkan Azure Monitor dalam kluster HDInsight yang ditentukan.
+Mengaktifkan Azure Monitor dalam kluster HDInsight tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hdinsight/enable-azhdinsightazuremonitor) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/enable-azhdinsightazuremonitor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Enable-AzHDInsightAzureMonitor [-InputObject] <AzureHDInsightCluster> [-Workspac
 ```
 
 ## DESCRIPTION
-Cmdlet **Enable-AzHDInsightAzureMonitor** mengaktifkan Azure Monitor dalam kluster HDInsight tertentu.
+Cmdlet **Enable-AzHDInsightAzureMonitor** ini memungkinkan Azure Monitor dalam kluster HDInsight tertentu.
 
 ## EXAMPLES
 
@@ -55,7 +55,7 @@ PS C:\> $primaryKey = "your-primary-key"
 PS C:\> Enable-AzHDInsightAzureMonitor -ClusterName $clusterName -ResourceGroup $resourceGroupName -WorkspaceId $workspaceId -PrimaryKey $primaryKey
 ```
 
-Cmdlet ini mengaktifkan monitor Azure dalam kluster HDInsight yang ditentukan.
+Cmdlet ini memungkinkan monitor azure dalam kluster HDInsight tertentu.
 
 ### Contoh 2
 ```powershell
@@ -67,7 +67,7 @@ PS C:\> $primaryKey = "your-primary-key"
 PS C:\> $cluster | Enable-AzHDInsightAzureMonitor -WorkspaceId $workspaceId -PrimaryKey $primaryKey
 ```
 
-Cmdlet ini mengaktifkan monitor Azure dalam kluster HDInsight tertentu dengan pipeline.
+Cmdlet ini memungkinkan monitor azure dalam kluster HDInsight tertentu dengan pipeline.
 
 ## PARAMETERS
 
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryKey
-Dapat mengatur kunci utama ruang kerja Analitik Log.
+Mengatur kunci utama ruang kerja Analitik Log.
 
 ```yaml
 Type: System.String
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

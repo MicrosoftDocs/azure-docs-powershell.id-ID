@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRewriteRuleHeaderConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRewriteRuleHeaderConfiguration.md
-ms.openlocfilehash: 36429efe3c02a877fd7609849a5708a257556c81
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 16a980e996b62cf4503211c553f7e9168fd8e91f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140372114"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142469717"
 ---
 # New-AzApplicationGatewayRewriteRuleHeaderConfiguration
 
 ## SYNOPSIS
-Membuat konfigurasi header aturan tulis ulang untuk gateway aplikasi.
+Membuat konfigurasi header aturan penulisan ulang untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayrewriteruleheaderconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzApplicationGatewayRewriteRuleHeaderConfiguration -HeaderName <String> [-He
 ```
 
 ## DESCRIPTION
-**Cmdlet AzApplicationGatewayRewriteRuleHeaderConfiguration** membuat kumpulan tindakan aturan tulis ulang untuk gateway aplikasi Azure.
+Cmdlet **AzApplicationGatewayRewriteRuleHeaderConfiguration** membuat kumpulan tindakan aturan penulisan ulang untuk gateway aplikasi Azure.
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ New-AzApplicationGatewayRewriteRuleHeaderConfiguration -HeaderName <String> [-He
 PS C:\> $hc = New-AzApplicationGatewayRewriteRuleHeaderConfiguration -HeaderName abc -HeaderValue def
 ```
 
-Perintah ini membuat konfigurasi header aturan tulis ulang dan menyimpan hasilnya dalam variabel yang bernama $hc.
+Perintah ini membuat konfigurasi header aturan penulisan ulang dan menyimpan hasil dalam variabel bernama $hc.
 
 ## PARAMETERS
 
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -HeaderValue
-Nilai header ke kumpulan untuk nama header yang diberikan.
+Nilai header ke kumpulan untuk nama header tertentu.
 Header akan dihapus jika dihilangkan
 
 ```yaml
@@ -85,11 +88,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.quota/get-azquot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Quota/help/Get-AzQuotaOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Quota/help/Get-AzQuotaOperation.md
-ms.openlocfilehash: a9804dbec5902651b802a6fa5bfa4fdd5d4cd714
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 09405d88a4ebd465647609041efc2e190f9d36f7
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140371382"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142465433"
 ---
 # Get-AzQuotaOperation
 
 ## SYNOPSIS
-Daftar semua operasi yang didukung oleh penyedia sumber daya Microsoft.Quota.
+Cantumkan semua operasi yang didukung oleh penyedia sumber daya Microsoft.Quota.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.quota/get-azquotaoperation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Get-AzQuotaOperation [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Daftar semua operasi yang didukung oleh penyedia sumber daya Microsoft.Quota.
+Cantumkan semua operasi yang didukung oleh penyedia sumber daya Microsoft.Quota.
 
 ## EXAMPLES
 
@@ -64,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

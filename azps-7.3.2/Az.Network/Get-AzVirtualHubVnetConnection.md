@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualHubVnetConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualHubVnetConnection.md
-ms.openlocfilehash: 91dd06360b47361584e1caf213966f2e5f030441
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d0479bcbd007905eaa49726b09cd26355511321a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140179166"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142494601"
 ---
 # Get-AzVirtualHubVnetConnection
 
 ## SYNOPSIS
-Mendapatkan Koneksi Jaringan Virtual di hub virtual atau mencantumkan semua koneksi jaringan virtual di hub virtual.
+Mendapatkan koneksi Virtual Network di hub virtual atau mencantumkan semua koneksi jaringan virtual di hub virtual.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualhubvnetconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzVirtualHubVnetConnection -ParentResourceId <String> [-Name <String>]
 ```
 
 ## DESCRIPTION
-Mendapatkan Koneksi Jaringan Virtual di hub virtual atau mencantumkan semua koneksi jaringan virtual di hub virtual.
+Mendapatkan koneksi Virtual Network di hub virtual atau mencantumkan semua koneksi jaringan virtual di hub virtual.
 
 ## EXAMPLES
 
@@ -77,9 +80,9 @@ RoutingConfiguration : {
                         }
 ```
 
-Langkah di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub di AS Tengah dalam grup sumber daya tersebut di Azure. Koneksi Jaringan Virtual akan dibuat setelahnya, yang akan peer Jaringan Virtual ke Virtual Hub.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual di AS Tengah dalam grup sumber daya tersebut di Azure. Koneksi Virtual Network akan dibuat setelahnya yang akan mengintip Virtual Network ke Hub Virtual.
 
-Setelah koneksi jaringan virtual hub dibuat, hub mendapatkan koneksi jaringan virtual hub menggunakan nama grup sumber dayanya, nama hub dan nama koneksi.
+Setelah koneksi jaringan virtual hub dibuat, ia mendapatkan koneksi jaringan virtual hub menggunakan nama grup sumber dayanya, nama hub dan nama koneksi.
 
 ### Contoh 2
 
@@ -115,9 +118,9 @@ RoutingConfiguration : {
                         }
 ```
 
-Langkah di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub di AS Tengah dalam grup sumber daya tersebut di Azure. Koneksi Jaringan Virtual akan dibuat setelahnya, yang akan peer Jaringan Virtual ke Virtual Hub.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual di AS Tengah dalam grup sumber daya tersebut di Azure. Koneksi Virtual Network akan dibuat setelahnya yang akan mengintip Virtual Network ke Hub Virtual.
 
-Setelah koneksi jaringan virtual hub dibuat, hub mencantumkan semua koneksi jaringan virtual hub menggunakan nama grup sumber daya dan nama hub.
+Setelah koneksi jaringan virtual hub dibuat, hub ini mencantumkan semua koneksi jaringan virtual hub menggunakan nama grup sumber daya dan nama hub.
 
 ### Contoh 3
 
@@ -167,7 +170,7 @@ RoutingConfiguration : {
                         }
 ```
 
-Cmdlet ini mencantumkan semua koneksi jaringan virtual hub yang dimulai dengan "test" menggunakan nama grup sumber daya dan nama hub.
+Cmdlet ini mencantumkan semua koneksi jaringan virtual hub yang dimulai dengan "uji" menggunakan nama grup sumber daya dan nama hub.
 
 ## PARAMETERS
 
@@ -262,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

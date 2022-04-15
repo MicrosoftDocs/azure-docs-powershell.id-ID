@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/new-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVaultCertificatePolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVaultCertificatePolicy.md
-ms.openlocfilehash: 01fd4faf5b41f0310054386516b66484c0827ec6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c714f094a69c1987ad00b25de2bb2423ebf88051
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140000622"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142489967"
 ---
 # New-AzKeyVaultCertificatePolicy
 
 ## SYNOPSIS
 Membuat objek kebijakan sertifikat dalam memori.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/new-azkeyvaultcertificatepolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ New-AzKeyVaultCertificatePolicy [-IssuerName] <String> [-SubjectName] <String>
  [-Curve <String>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DNSNames
+### Nama DNS
 ```
 New-AzKeyVaultCertificatePolicy [-IssuerName] <String> [[-SubjectName] <String>]
  [-DnsName] <System.Collections.Generic.List`1[System.String]> [-RenewAtNumberOfDaysBeforeExpiry <Int32>]
@@ -76,11 +79,11 @@ Created                         :
 Updated                         :
 ```
 
-Perintah ini membuat kebijakan sertifikat yang valid selama enam bulan dan menggunakan kembali kunci untuk memperbarui sertifikat.
+Perintah ini membuat kebijakan sertifikat yang berlaku selama enam bulan dan menggunakan kembali kunci untuk memperpanjang sertifikat.
 
 ### Contoh 2
 
-Membuat objek kebijakan sertifikat dalam memori. (otomatisgenerated)
+Membuat objek kebijakan sertifikat dalam memori. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -120,7 +123,7 @@ Contoh ini membuat sertifikat SAN dengan 3 nama DNS.
 ## PARAMETERS
 
 ### -CertificateTransparency
-Menunjukkan apakah transparansi sertifikat diaktifkan untuk sertifikat/penerbit ini; jika tidak ditentukan, defaultnya adalah 'true'
+Menunjukkan apakah transparansi sertifikat diaktifkan untuk sertifikat/penerbit ini; jika tidak dispesifikasikan, defaultnya adalah 'true'
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -CertificateType
-Menentukan tipe sertifikat untuk penerbit.
+Menentukan tipe sertifikat kepada penerbit.
 
 ```yaml
 Type: System.String
@@ -149,8 +152,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Curve
-Menentukan nama kurva elliptik dari kunci sertifikat.
+### -Kurva
+Menentukan nama kurva eliptik kunci sertifikat.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - P-256
 - P-384
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -186,7 +189,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Dinonaktifkan
+### -Nonaktif
 Menunjukkan bahwa kebijakan sertifikat dinonaktifkan.
 
 ```yaml
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -DnsName
-Menentukan nama DNS dalam sertifikat. Nama Alternatif Subjek (SAN) dapat ditentukan sebagai nama DNS.
+Menentukan nama DNS dalam sertifikat. Nama Alternatif Subjek (PIN) dapat ditentukan sebagai nama DNS.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ekus
-Menentukan penggunaan tombol (EKU) yang disempurnakan dalam sertifikat.
+Menentukan penggunaan kunci yang disempurnakan (EKUs) dalam sertifikat.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmailAtNumberOfDaysBeforeExpiry
-Menentukan berapa hari sebelum proses pemberitahuan otomatis dimulai.
+Menentukan berapa hari sebelum proses pemberitahuan otomatis kedaluwarsa dimulai.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -261,7 +264,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -IssuerName
+### -NamaPengguna
 Menentukan nama penerbit untuk sertifikat.
 
 ```yaml
@@ -277,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyNotExportable
-Menunjukkan bahwa kunci tersebut tidak dapat diekspor.
+Menunjukkan bahwa kunci tidak dapat diekspor.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -315,7 +318,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyType
-Menentukan tipe kunci dari kunci yang mengembalikan sertifikat.
+Menentukan tipe kunci kunci yang mengembalikan sertifikat.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - RSA
 - RSA-HSM
@@ -382,7 +385,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReuseKeyOnRenewal
-Menunjukkan bahwa sertifikat menggunakan kembali kunci tersebut selama perpanjangan.
+Menunjukkan bahwa sertifikat menggunakan kembali kunci selama perpanjangan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -397,9 +400,9 @@ Accept wildcard characters: False
 ```
 
 ### -SecretContentType
-Menentukan tipe konten rahasia vault kunci yang baru.
+Menentukan tipe konten rahasia kubah kunci baru.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- application/x-pkcs12
+- aplikasi/x-pkcs12
 - application/x-pem-file
 
 ```yaml
@@ -419,7 +422,7 @@ Accept wildcard characters: False
 Menentukan nama subjek sertifikat. 
 
 > [!NOTE]
-> Jika harus menggunakan koma (,) atau tanda titik (.) `SubjectName` dalam properti dalam parameter, Anda harus menyertakan bidang properti dalam tanda kutip. Misalnya, Anda dapat menggunakan O="Contoso, Ltd." dalam bidang Nama Organisasi.
+> Jika Anda harus menggunakan tanda koma (,) atau tanda titik (.) dalam properti dalam `SubjectName` parameter, Anda harus mengapit bidang properti dalam tanda kutip. Misalnya, Anda dapat menggunakan O="Contoso, Ltd." dalam bidang Nama Organisasi.
 
 ```yaml
 Type: System.String
@@ -461,7 +464,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -477,7 +480,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -492,15 +495,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Collections.Generic.List'1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Collections.Generic.List'1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### System.Management.Automation.SwitchParameter
 

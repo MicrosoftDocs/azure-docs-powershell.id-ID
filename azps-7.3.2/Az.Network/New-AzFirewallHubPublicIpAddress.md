@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallHubPublicIpAddress.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallHubPublicIpAddress.md
-ms.openlocfilehash: c195a6d75c59409e708a6db01be88259408f7330
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d13c6bc4e9351a40b2c76533491dad84ffc9aceb
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140570907"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142469465"
 ---
 # New-AzFirewallHubPublicIpAddress
 
 ## SYNOPSIS
-Ip publik yang terkait dengan firewall di hub virtual
+Ip Publik diasoicated ke firewall di hub virtual
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewallhubpublicipaddress) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzFirewallHubPublicIpAddress [-Count <Int32>] [-Addresses <PSAzureFirewallPu
 ```
 
 ## DESCRIPTION
-Ip publik yang terkait dengan firewall di hub virtual
+Ip Publik diasoicated ke firewall di hub virtual
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ Ip publik yang terkait dengan firewall di hub virtual
 PS C:\> New-AzFirewallHubPublicIpAddress -Count 2
 ```
 
-Ini akan membuat 2 ip publik pada firewall yang dilampirkan ke hub virtual. Ini akan membuat alamat ip di backend. Kami tidak dapat menyediakan ipads secara eksplisit untuk firewall baru.
+Ini akan membuat 2 ip publik di firewall yang terpasang ke hub virtual. Tindakan ini akan membuat alamat ip di backend. Kami tidak dapat menyediakan ipaddress secara eksplisit untuk firewall baru.
 
 ### Contoh 2
 ```powershell
@@ -43,12 +46,12 @@ PS C:\> $publicIp2 = New-AzFirewallPublicIpAddress -Address 20.56.37.46
 PS C:\> New-AzFirewallHubPublicIpAddress -Count 3 -Addresses $publicIp1, $publicIp2
 ```
 
-Ini akan membuat 1 ip publik baru pada firewall dengan mempertahankan $publicIp 1, $publicIp 2 yang sudah ada di firewall.
+Ini akan membuat 1 ip publik baru di firewall dengan mempertahankan $publicIp 1, $publicIp 2 yang sudah ada di firewall.
 
 ## PARAMETERS
 
-### -Addresses
-Alamat IP Publik Firewall dilampirkan ke hub
+### -Alamat
+Alamat IP Publik firewall yang dilampirkan ke hub
 
 ```yaml
 Type: PSAzureFirewallPublicIpAddress[]
@@ -63,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -Count
-Jumlah alamat Ip publik
+Hitungan alamat IP publik
 
 ```yaml
 Type: Int32
@@ -93,11 +96,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

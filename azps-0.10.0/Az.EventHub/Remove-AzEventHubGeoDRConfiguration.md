@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/EventHub/EventHub/help/Remove-AzEventHubGeoDRConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/EventHub/EventHub/help/Remove-AzEventHubGeoDRConfiguration.md
 ms.openlocfilehash: 5bdc6e29ad55efd774f267af10b0f0652e513e43
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132414014"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142490111"
 ---
 # Remove-AzEventHubGeoDRConfiguration
 
 ## SYNOPSIS
-Menghapus Alias(Konfigurasi Pemulihan Bencana)
+Menghapus Alias(konfigurasi Pemulihan Bencana)
 
 ## SYNTAX
 
@@ -31,14 +31,14 @@ Remove-AzEventHubGeoDRConfiguration [-InputObject] <PSEventHubDRConfigurationAtt
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GeoDRConfigResourceIdParameterSet
+### GeodrConfigResourceIdParameterSet
 ```
 Remove-AzEventHubGeoDRConfiguration [-ResourceId] <String> [-PassThru] [-AsJob]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzEventHubGeoDRConfiguration** menghapus Alias(Konfigurasi Pemulihan Bencana)
+Cmdlet **Remove-AzEventHubGeoDRConfiguration** menghapus Alias(konfigurasi Pemulihan Bencana)
 
 ## EXAMPLES
 
@@ -47,12 +47,12 @@ Cmdlet **Remove-AzEventHubGeoDRConfiguration** menghapus Alias(Konfigurasi Pemul
 PS C:\>Remove-AzEventHubGeoDRConfiguration -ResourceGroupName "SampleResourceGroup" -Namespace "SampleNamespace_Secondary" -Name "SampleDRConfigName"
 ```
 
-Menghapus Alias (Konfigurasi Pemulihan Bencana)
+Menghapus Alias (konfigurasi Pemulihan Bencana)
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Konfigurasi Eventhub GeoDR
+Objek Konfigurasi Geodr Eventhub
 
 ```yaml
 Type: Microsoft.Azure.Commands.EventHub.Models.PSEventHubDRConfigurationAttributes
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya GeoDRConfiguration
+Id Sumber Daya Konfigurasi Geodr
 
 ```yaml
 Type: System.String
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

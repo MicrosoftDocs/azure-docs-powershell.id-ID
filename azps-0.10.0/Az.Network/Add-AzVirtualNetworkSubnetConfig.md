@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Add-AzVirtualNetworkSubnetConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Add-AzVirtualNetworkSubnetConfig.md
 ms.openlocfilehash: 01116d3a2ad2636776fe29a0e36e34568624f2c9
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425406"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142494809"
 ---
 # Add-AzVirtualNetworkSubnetConfig
 
@@ -50,7 +50,7 @@ New-AzResourceGroup -Name TestResourceGroup -Location centralus
     $virtualNetwork | Set-AzVirtualNetwork
 ```
 
-  Contoh ini terlebih dahulu membuat grup sumber daya sebagai wadah sumber daya yang akan dibuat. Lalu membuat konfigurasi subnet dan menggunakannya untuk membuat jaringan virtual. Fungsi Add-AzVirtualNetworkSubnetConfig digunakan untuk menambahkan subnet ke representasi dalam memori jaringan virtual. Perintah Set-AzVirtualNetwork memperbarui jaringan virtual yang sudah ada dengan subnet baru.
+  Contoh ini terlebih dahulu membuat grup sumber daya sebagai wadah sumber daya yang akan dibuat. Lalu membuat konfigurasi subnet dan menggunakannya untuk membuat jaringan virtual. Add-AzVirtualNetworkSubnetConfig kemudian digunakan untuk menambahkan subnet ke representasi dalam memori jaringan virtual. Perintah Set-AzVirtualNetwork memperbarui jaringan virtual yang sudah ada dengan subnet baru.
 
 ## PARAMETERS
 
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkSecurityGroup
-Menentukan objek **NetworkSecurityGroup.**
+Menentukan objek **NetworkSecurityGroup** .
 Cmdlet ini menambahkan konfigurasi subnet jaringan virtual ke objek yang ditentukan parameter ini.
 
 ```yaml
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -206,8 +206,8 @@ Parameter 'VirtualNetwork' menerima nilai tipe 'PSVirtualNetwork' dari pipeline
 
 [New-AzVirtualNetworkSubnetConfig](./New-AzVirtualNetworkSubnetConfig.md)
 
-[Remove-AzVirtualNetworksubnetConfig](./Remove-AzVirtualNetworkSubnetConfig.md)
+[Remove-AzVirtualNetworkSubnetConfig](./Remove-AzVirtualNetworkSubnetConfig.md)
 
-[Set-azVirtualNetworkSubnetConfig](./Set-AzVirtualNetworkSubnetConfig.md)
+[Set-AzVirtualNetworkSubnetConfig](./Set-AzVirtualNetworkSubnetConfig.md)
 
 

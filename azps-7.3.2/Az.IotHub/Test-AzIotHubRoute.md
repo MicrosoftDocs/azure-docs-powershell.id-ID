@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/test-azio
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Test-AzIotHubRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Test-AzIotHubRoute.md
-ms.openlocfilehash: 93b6a0f2fad72c688f6824b6af990a8e8d4de6f5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 4911244c68c6e4b13bdb91f8d69de299b75c916e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140556409"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142490021"
 ---
 # Test-AzIotHubRoute
 
 ## SYNOPSIS
-Menguji rute dalam Hub IoT
+Menguji rute di IoT Hub
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/test-aziothubroute) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -66,7 +69,7 @@ Test-AzIotHubRoute [-ResourceId] <String> [-Source] <PSRoutingSource> [-Body <St
 ```
 
 ## DESCRIPTION
-Menguji rute tertentu.
+Uji rute tertentu.
 
 ## EXAMPLES
 
@@ -89,7 +92,7 @@ PS C:\> Test-AzIotHubRoute -ResourceGroupName "myresourcegroup" -Name "myiothub"
 Result : true
 ```
 
-Menguji rute tertentu.
+Uji rute tertentu.
 
 ### Contoh 3
 ```
@@ -100,7 +103,7 @@ ErrorMessage  Severity LocationStartLine LocationStartColumn LocationEndLine Loc
 Syntax error. error    1                 29                  1               30
 ```
 
-Menguji rute tertentu dan memperlihatkan alasan kegagalan.
+Uji rute tertentu dan tunjukkan alasan kegagalan.
 
 ### Contoh 4
 ```
@@ -113,7 +116,7 @@ PS C:\> Test-AzIotHubRoute -ResourceGroupName "myresourcegroup" -Name "myiothub"
 Result : true
 ```
 
-Menguji rute tertentu dengan AppProperty dan SystemProperty.
+Uji rute tertentu dengan AppProperty dan SystemProperty.
 
 ## PARAMETERS
 
@@ -132,7 +135,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Body
+### -Isi
 Isi pesan rute
 
 ```yaml
@@ -269,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### -SystemProperty
-Properti sistem pesan rute
+Properti sistem dari pesan rute
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -284,7 +287,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

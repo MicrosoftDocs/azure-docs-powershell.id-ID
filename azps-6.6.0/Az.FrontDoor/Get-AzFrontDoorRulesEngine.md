@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Get-AzFrontDoorRulesEngine.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Get-AzFrontDoorRulesEngine.md
 ms.openlocfilehash: 4e64c9ed824cc22005a373e329d3d9e82288215e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140106263"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142474685"
 ---
 # Get-AzFrontDoorRulesEngine
 
@@ -18,7 +18,7 @@ ms.locfileid: "140106263"
 Dapatkan konfigurasi Rules Engine.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.frontdoor/get-azfrontdoorrulesengine) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/get-azfrontdoorrulesengine) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Name         RulesEngineRules
 rulesEngine3 {rules1}
 ```
 
-Mendapatkan konfigurasi mesin aturan tertentu.
+Dapatkan konfigurasi mesin aturan tertentu.
 
 ### Contoh 2
 
@@ -69,7 +69,7 @@ At line:1 char:1
 + FullyQualifiedErrorId : Microsoft.Azure.Commands.FrontDoor.Cmdlets.GetFrontDoorRulesEngine
 ```
 
-Output yang diharapkan saat mendapatkan mesin aturan yang tidak konsisten. 
+Output yang diharapkan ketika mendapatkan mesin aturan yang tidak ada. 
 
 ## PARAMETERS
 
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama mesin aturan.
+Aturan nama mesin.
 
 ```yaml
 Type: System.String
@@ -134,11 +134,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallPolicySetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallPolicySetting.md
-ms.openlocfilehash: 04e78c93b8a8a00306c774e4719903f83ea09271
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d6a53e52b101081c3c3c4a84f38f976dd53dc5f5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140179124"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142469735"
 ---
 # New-AzApplicationGatewayFirewallPolicySetting
 
 ## SYNOPSIS
 Membuat pengaturan kebijakan untuk kebijakan firewall
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayfirewallpolicysetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,8 +38,8 @@ New-AzApplicationGatewayFirewallPolicySetting [-Mode <String>] [-State <String>]
 PS C:\> $condition = New-AzApplicationGatewayFirewallPolicySetting -State $enabledState -Mode $enabledMode -DisableRequestBodyCheck -MaxFileUploadInMb $fileUploadLimitInMb -MaxRequestBodySizeInKb $maxRequestBodySizeInKb
 ```
 
-Perintah membuat pengaturan kebijakan dengan status sebagai $enabledState, mode sebagai $enabledMode, RequestHargaCheck sebagai false, FileUploadLimitInMb sebagai $fileUploadLimitInMb dan MaxRequestRequestRequestSizeInKb sebagai $$maxRequestBodySizeInKb.
-Pengaturan kebijakan baru disimpan ke $condition.
+Perintah membuat pengaturan kebijakan dengan status sebagai $enabledState, mode sebagai $enabledMode, RequestBodyCheck sebagai false, FileUploadLimitInMb sebagai $fileUploadLimitInMb dan MaxRequestBodySizeInKb sebagai $$maxRequestBodySizeInKb.
+Kebijakan baruSettings disimpan ke $condition.
 
 ## PARAMETERS
 
@@ -55,8 +58,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DisableRequestRequestCheck
-Dapat dilakukan dalam pengaturan request BodyCheck dalam pengaturan kebijakan kebijakan firewall.
+### -DisableRequestBodyCheck
+Diables the requestBodyCheck in policy settings of the firewall policy.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxFileUploadInMb
-Maximum fileUpload size in MB.
+Ukuran maksimal fileUpload dalam MB.
 
 ```yaml
 Type: System.Int32
@@ -85,8 +88,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -MaxRequestRequestSizeInKb
-MaxRequestRequestSizeInKb dalam pengaturan kebijakan kebijakan firewall.
+### -MaxRequestBodySizeInKb
+MaxRequestBodySizeInKb dalam pengaturan kebijakan kebijakan firewall.
 
 ```yaml
 Type: System.Int32
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -Mode
-Mode Firewall dalam pengaturan kebijakan kebijakan firewall.
+Mode Firewall dalam pengaturan kebijakan kebijakan kebijakan firewall.
 
 ```yaml
 Type: System.String
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -Negara Bagian
-Variabel negara bagian dalam pengaturan kebijakan kebijakan firewall.
+Variabel status dalam pengaturan kebijakan kebijakan firewall.
 
 ```yaml
 Type: System.String
@@ -133,11 +136,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/export
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Export-AzTemplateSpec.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Export-AzTemplateSpec.md
-ms.openlocfilehash: 607aef23c66527fbb3c7a3cf336c5dcd30596462
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5db0a2f7d90f3f047bc7f2baf75b8cdfe044d4d8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140006691"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142464371"
 ---
 # Export-AzTemplateSpec
 
 ## SYNOPSIS
-Mengekspor Spesifikasi Templat ke filesystem lokal
+Mengekspor Spesifikasi Templat ke sistem file lokal
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/export-aztemplatespec) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Export-AzTemplateSpec [-ResourceId] <String> -Version <String> -OutputFolder <St
 ```
 
 ## DESCRIPTION
-Mengekspor versi Spesifikasi Templat tertentu ke filesystem lokal.
+Mengekspor versi Spesifikasi Templat tertentu ke sistem file lokal.
 
 ## EXAMPLES
 
@@ -41,14 +44,14 @@ Mengekspor versi Spesifikasi Templat tertentu ke filesystem lokal.
 PS C:\> Export-AzTemplateSpec -ResourceGroupName 'myRG' -Name 'MyTemplateSpec' -Version 'v1.0' -OutputFolder 'v1'
 ```
 
-Mengekspor versi 'v1.0' Spesifikasi Templat bernama 'MyTemplateSpec' di dalam grup sumber daya 'myRG' ke folder output lokal "v1".
+Mengekspor versi 'v1.0' dari Spesifikasi Templat bernama 'MyTemplateSpec' dalam grup sumber daya 'myRG' ke folder output lokal "v1".
 
 ### Contoh 2: Ekspor menurut id sumber daya
 ```powershell
 PS C:\> Export-AzTemplateSpec -ResourceId '/subscriptions/{subId}/resourceGroups/myRG/providers/Microsoft.Resources/templateSpecs/MyTemplateSpec' -Version 'v1.0' -OutputFolder 'v1'
 ```
 
-Mengekspor versi 'v1.0' spesifikasi Templat bernama 'MyTemplateSpec' di dalam grup sumber daya 'myRG' \{dari subId\} langganan ke folder output lokal "v1".
+Mengekspor versi 'v1.0' dari Spesifikasi Templat bernama 'MyTemplateSpec' dalam grup sumber daya 'myRG' subId\} langganan \{ke folder output lokal "v1".
 
 ## PARAMETERS
 
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -OutputFolder
-Jalur ke folder tempat versi spesifikasi templat akan dihasilkan.
+Jalur ke folder tempat versi spesifikasi templat akan menjadi output.
 
 ```yaml
 Type: System.String
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -Versi
-Versi spesifikasi templat yang akan diekspor.
+Versi spesifikasi templat untuk diekspor.
 
 ```yaml
 Type: System.String
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

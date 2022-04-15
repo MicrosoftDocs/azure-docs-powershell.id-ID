@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualWan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualWan.md
-ms.openlocfilehash: 7c2baabf84d212076f0a46be89fff79932039673
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 53976a6021c8bcf4caecc4941cd9674553d217bc
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140371943"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142468997"
 ---
 # New-AzVirtualWan
 
 ## SYNOPSIS
-Membuat Azure Virtual WAN.
+Membuat Virtual WAN Azure.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvirtualwan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,11 +49,11 @@ Type                       : Microsoft.Network/virtualWans
 ProvisioningState          : Succeeded
 ```
 
-Langkah di atas akan membuat grup sumber daya "testRG" di kawasan "West US" dan Azure Virtual WAN dengan lalu lintas cabang yang diperbolehkan dalam grup sumber daya tersebut di Azure.
+Hal di atas akan membuat grup sumber daya "testRG" di kawasan "AS Barat" dan Azure Virtual WAN dengan lalu lintas cabang ke cabang yang diizinkan dalam grup sumber daya tersebut di Azure.
 
 ### Contoh 2
 
-Membuat Azure Virtual WAN. (otomatisgenerated)
+Membuat Virtual WAN Azure. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -60,7 +63,7 @@ New-AzVirtualWan -AllowBranchToBranchTraffic -AllowVnetToVnetTraffic -Location '
 ## PARAMETERS
 
 ### -AllowBranchToBranchTraffic
-Perbolehkan lalu lintas cabang untuk VirtualWan.
+Izinkan cabang untuk cabang lalu lintas untuk VirtualWan.
 
 ```yaml
 Type: SwitchParameter
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowVnetToVnetTraffic
-Memperbolehkan lalu lintas vnet untuk VirtualWan.
+Izinkan vnet untuk vnet lalu lintas untuk VirtualWan.
 
 ```yaml
 Type: SwitchParameter
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable yang mewakili tag sumber daya.
+Sebuah hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: Hashtable
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualWANType
-Tipe Virtual Wan.
+Tipe Wan Virtual.
 
 ```yaml
 Type: String
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -226,11 +229,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -242,6 +245,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzVirtualWan](./Get-AzVirtualWan.md)
 
-[Remove-AzVirtualWan](./Remove-AzVirtualWan.md)
+[Hapus-AzVirtualWan](./Remove-AzVirtualWan.md)
 
 [Update-AzVirtualWan](./Update-AzVirtualWan.md)
