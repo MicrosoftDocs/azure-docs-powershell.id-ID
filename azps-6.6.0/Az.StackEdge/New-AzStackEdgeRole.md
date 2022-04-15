@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/New-AzStackEdgeRole.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/New-AzStackEdgeRole.md
 ms.openlocfilehash: fbdcbb2dc106854700facff52d72be658896a99e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139966821"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141947499"
 ---
 # New-AzStackEdgeRole
 
@@ -18,7 +18,7 @@ ms.locfileid: "139966821"
 Membuat Peran baru untuk perangkat
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.stackedge/new-azstackedgerole) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/new-azstackedgerole) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -58,7 +58,7 @@ iotrole ehub.azure-devices.net Linux    Enabled iotEdgeDeviceId   iotDeviceId  r
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotDeviceId
-Id Perangkat dari Perangkat Iot
+Id Perangkat perangkat Perangkat Iot
 
 ```yaml
 Type: System.String
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotEdgeDeviceAccessKey
-Kunci Access dari perangkat Iot Edge
+Tombol akses perangkat Iot Edge
 
 ```yaml
 Type: System.Security.SecureString
@@ -238,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotHostHub
-Alamat Hosthub
+Alamat hosthub
 
 ```yaml
 Type: System.String
@@ -298,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleStatus
-Aktifkan/nonaktifkan status
+Sediakan status aktif/nonaktifkan
 
 ```yaml
 Type: System.String
@@ -313,7 +313,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -328,7 +328,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -343,15 +343,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PS StackEdgeRole
+### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeRole
 
 ## CATATAN
 

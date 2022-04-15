@@ -4,16 +4,16 @@ Module Name: Azs.Subscriptions.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 78c0e9d2796cd6edf1a2d094cc6dd3b37614e3aa
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136580174"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142134629"
 ---
 # New-AzsOfferDelegation
 
 ## SYNOPSIS
-Membuat delegasi penawaran baru.
+Buat delegasi penawaran baru.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ New-AzsOfferDelegation [-Name] <String> [-OfferName] <String> [-SubscriptionId] 
 ```
 
 ## DESCRIPTION
-Membuat delegasi penawaran baru.
+Buat delegasi penawaran baru.
 
 ## EXAMPLES
 
@@ -32,7 +32,7 @@ Membuat delegasi penawaran baru.
 New-AzsOfferDelegation -OfferName offer1 -ResourceGroupName rg1 -Name delegate1 -SubscriptionId "c90173b1-de7a-4b1d-8600-b832b0e65946"
 ```
 
-Membuat delegasi penawaran baru.
+Buat delegasi penawaran baru.
 
 ## PARAMETERS
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup sumber daya sumber daya yang berada di bawahnya.
+Grup sumber daya tempat sumber daya berada di bawah.
 
 ```yaml
 Type: String
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

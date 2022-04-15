@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.polic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/PolicyInsights/Commands.PolicyInsights/help/Remove-AzureRmPolicyRemediation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/PolicyInsights/Commands.PolicyInsights/help/Remove-AzureRmPolicyRemediation.md
-ms.openlocfilehash: 17d09e45af448004b485d25892f0f0d1082f185ca0f4408f29296e3871daf9a4
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: ec5becd714b034789aeeb8449a63012232c99d5e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140867042"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142136791"
 ---
 # Remove-AzureRmPolicyRemediation
 
@@ -45,32 +45,32 @@ Cmdlet **Remove-AzureRmPolicyRemediation** menghapus perbaikan kebijakan.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus perbaikan kebijakan pada lingkup grup sumber daya
+### Contoh 1: Menghapus perbaikan kebijakan di lingkup grup sumber daya
 ```
 PS C:\> Remove-AzureRmPolicyRemediation -ResourceGroupName "myRG" -Name "remediation1"
 ```
 
-Perintah ini akan menghapus perbaikan yang bernama 'remediation1' dalam grup sumber daya 'myRG'.
+Perintah ini menghapus remediasi bernama 'remediation1' dalam grup sumber daya 'myRG'.
 
-### Contoh 2: Hapus perbaikan grup manajemen melalui pemipaan
+### Contoh 2: Menghapus pemulihan grup manajemen melalui perpipaan
 ```
 PS C:\> $remediation = Get-AzureRmPolicyRemediation -ManagementGroupName "mg1" -Name "remediation1"
 PS C:\> $remediation | Remove-AzureRmPolicyRemediation -Confirm
 ```
 
-Perintah ini menghapus perbaikan bernama 'remediation1' dari grup manajemen 'mg1'. Perintah konfirmasi akan diberikan sebelum menghapus sumber daya.
+Perintah ini menghapus perbaikan bernama 'remediation1' dari grup manajemen 'mg1'. Perintah konfirmasi akan disajikan sebelum menghapus sumber daya.
 
 ### Contoh 3: Membatalkan dan menghapus perbaikan kebijakan
 ```
 PS C:\> Remove-AzureRmPolicyRemediation -ResourceGroupName "myRG" -Name "remediation1" -AllowStop
 ```
 
-Perintah ini akan menghapus perbaikan yang bernama 'remediation1' dalam grup sumber daya 'myRG'. Jika perbaikan sedang berlangsung, perbaikan akan dibatalkan sebelum dihapus.
+Perintah ini menghapus remediasi bernama 'remediation1' dalam grup sumber daya 'myRG'. Jika remediasi sedang berlangsung, pemulihan akan dibatalkan sebelum dihapus.
 
 ## PARAMETERS
 
 ### -AllowStop
-Izinkan pemulihan untuk dibatalkan jika proses sedang berlangsung.
+Izinkan perbaikan dibatalkan jika sedang berlangsung.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Remediation.
+Objek Remediasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.PolicyInsights.Models.Remediation.PSRemediation
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 
 ### -Lingkup
 Lingkup sumber daya.
-Misalnya
+Misalnya.
 '/subscriptions/{subscriptionId}/resourceGroups/{rgName}'.
 
 ```yaml
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -238,7 +238,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -253,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

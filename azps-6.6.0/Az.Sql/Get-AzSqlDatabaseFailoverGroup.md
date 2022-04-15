@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseFailoverGroup.md
 ms.openlocfilehash: 228e17bf38b4634ff9779169cd2623ff2cfa1526
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140501079"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141948525"
 ---
 # Get-AzSqlDatabaseFailoverGroup
 
 ## SYNOPSIS
-Mendapatkan atau mendaftar Azure SQL Database Grup Failover.
+Mendapatkan atau mencantumkan Azure SQL Database Grup Failover.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqldatabasefailovergroup) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabasefailovergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,8 +28,8 @@ Get-AzSqlDatabaseFailoverGroup [-ServerName] <String> [[-FailoverGroupName] <Str
 ```
 
 ## DESCRIPTION
-Mendapatkan versi Azure SQL Database Failover Group atau mencantumkan Grup Failover di server.
-Server dalam Grup Failover mungkin digunakan untuk menjalankan perintah. Nilai yang dikembalikan akan mencerminkan status server tertentu terkait dengan Grup Failover.
+Mendapatkan Grup Azure SQL Database Failover tertentu atau mencantumkan Grup Failover di server.
+Salah satu server dalam Grup Failover mungkin digunakan untuk menjalankan perintah. Nilai yang dikembalikan akan mencerminkan status server yang ditentukan sehubungan dengan Grup Failover.
 
 ## EXAMPLES
 
@@ -57,7 +57,7 @@ Dapatkan semua grup failover di server yang dimulai dengan "fg".
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -FailoverGroupName
-Nama grup Azure SQL Database Failover yang akan diambil.
+Nama Grup Azure SQL Database Failover untuk diambil.
 
 ```yaml
 Type: System.String
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama Server Azure SQL Database untuk mengambil Failover Group.
+Nama Server Azure SQL Database tempat untuk mengambil Grup Failover.
 
 ```yaml
 Type: System.String
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -143,4 +143,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Remove-AzSqlDatabaseFailoverGroup](./Remove-AzSqlDatabaseFailoverGroup.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

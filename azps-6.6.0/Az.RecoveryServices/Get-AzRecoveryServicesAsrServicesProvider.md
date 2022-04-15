@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrServicesProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrServicesProvider.md
 ms.openlocfilehash: 620bcba060e77adf2e19c96aae3a626cd25d9d77
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140068301"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141949713"
 ---
 # Get-AzRecoveryServicesAsrServicesProvider
 
 ## SYNOPSIS
-Dapatkan detail penyedia layanan pemulihan ASR yang terdaftar di vault Layanan Pemulihan.
+Mendapatkan detail penyedia layanan pemulihan ASR yang terdaftar pada kubah Layanan Pemulihan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrservicesprovider) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrservicesprovider) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Get-AzRecoveryServicesAsrServicesProvider -FriendlyName <String> -Fabric <ASRFab
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesAsrServicesProvider** mendapatkan informasi tentang penyedia Pemulihan Situs Azure di vault.
+Cmdlet **Get-AzRecoveryServicesAsrServicesProvider** mendapatkan informasi tentang penyedia Azure Site Recovery di kubah.
 
 ## EXAMPLES
 
@@ -50,11 +50,11 @@ Cmdlet **Get-AzRecoveryServicesAsrServicesProvider** mendapatkan informasi tenta
 PS C:\> $RSPs = Get-AzRecoveryServicesAsrFabric | Get-AzRecoveryServicesAsrServicesProvider
 ```
 
-List all ASR replication services providers registered to the Recovery Services vault corresponding to the specified fabric.
+Cantumkan semua penyedia layanan replikasi ASR yang terdaftar pada kubah Layanan Pemulihan yang terkait dengan kain yang ditentukan.
 
 ### Contoh 2
 
-Dapatkan detail penyedia layanan pemulihan ASR yang terdaftar di vault Layanan Pemulihan. (otomatisgenerated)
+Mendapatkan detail penyedia layanan pemulihan ASR yang terdaftar pada kubah Layanan Pemulihan. (autogenerasi)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Get-AzRecoveryServicesAsrServicesProvider -Fabric $Fabric
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -FriendlyName
-Tentukan nama mudah dari penyedia layanan pemulihan ASR untuk mendapatkan detailnya.
+Menentukan nama yang mudah dikenali dari penyedia layanan pemulihan ASR untuk mendapatkan detailnya.
 
 ```yaml
 Type: System.String
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Tentukan nama penyedia layanan pemulihan ASR untuk mendapatkan detailnya.
+Menentukan nama penyedia layanan pemulihan ASR untuk mendapatkan detailnya.
 
 ```yaml
 Type: System.String
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

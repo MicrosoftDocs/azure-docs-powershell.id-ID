@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Set-AzApplicationGatewayHttpListener.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Set-AzApplicationGatewayHttpListener.md
 ms.openlocfilehash: ea07f3b9f2dd1e79f59b3369f3f8d3a8c1434deb
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424933"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142131209"
 ---
 # Set-AzApplicationGatewayHttpListener
 
 ## SYNOPSIS
-Mengubah pendengar HTTP untuk gateway aplikasi.
+Memodifikasi pendengar HTTP untuk gateway aplikasi.
 
 ## SYNTAX
 
@@ -38,24 +38,24 @@ Set-AzApplicationGatewayHttpListener -ApplicationGateway <PSApplicationGateway> 
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApplicationGatewayHttpListener** mengubah pendengar HTTP untuk gateway aplikasi Azure.
+Cmdlet **Set-AzApplicationGatewayHttpListener** memodifikasi pendengar HTTP untuk gateway aplikasi Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Atur pendengar HTTP
+### Contoh 1: Mengatur pendengar HTTP
 ```
 PS C:\>$AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 PS C:\> $AppGw = Set-AzApplicationGatewayHttpListener -ApplicationGateway $AppGw -Name "Listener01" -Protocol Http -FrontendIpConfiguration $FIP01 -FrontendPort 80
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01 dan menyimpannya di $AppGw sumber daya.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 milik grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw.
 
-Perintah kedua mengatur pendengar HTTP untuk gateway agar menggunakan konfigurasi front-end yang disimpan di $FIP 01 dengan protokol HTTP pada port 80.
+Perintah kedua mengatur pendengar HTTP untuk gateway agar menggunakan konfigurasi ujung depan yang disimpan di $FIP 01 dengan protokol HTTP pada port 80.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan gateway aplikasi yang menghubungkan cmdlet ini dengan pendengar HTTP.
+Menentukan gateway aplikasi tempat cmdlet ini mengaitkan pendengar HTTP.
 
 ```yaml
 Type: PSApplicationGateway
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendIPConfiguration
-Menentukan alamat IP ujung-depan gateway aplikasi.
+Menentukan alamat IP ujung depan gateway aplikasi.
 
 ```yaml
 Type: PSApplicationGatewayFrontendIPConfiguration
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendPort
-Menentukan port ujung-depan gateway aplikasi.
+Menentukan port terdepan gateway aplikasi.
 
 ```yaml
 Type: PSApplicationGatewayFrontendPort
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendPortId
-Menentukan ID port front-end gateway aplikasi.
+Menentukan ID port ujung-depan gateway aplikasi.
 
 ```yaml
 Type: String
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostName
-Menentukan nama host yang dikirim cmdlet ini kepada pendengar HTTP.
+Menentukan nama host tempat cmdlet ini mengirim pendengar HTTP.
 
 ```yaml
 Type: String
@@ -174,7 +174,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
+### -Protokol
 Menentukan protokol yang digunakan pendengar HTTP.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -SslCertificate
-Menentukan sertifikat SSL dari pendengar HTTP.
+Menentukan sertifikat SSL pendengar HTTP.
 
 ```yaml
 Type: PSApplicationGatewaySslCertificate
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -SslCertificateId
-Menentukan ID sertifikat Secure Socket Layer (SSL) dari pendengar HTTP.
+Menentukan ID sertifikat Secure Socket Layer (SSL) pendengar HTTP.
 
 ```yaml
 Type: String
@@ -242,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -258,10 +258,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Add-AzApplicationGatewayHttpListener](./Add-AzApplicationGatewayHttpListener.md)
 
-[Get-AzApplicationGatewayhttpListener](./Get-AzApplicationGatewayHttpListener.md)
+[Get-AzApplicationGatewayHttpListener](./Get-AzApplicationGatewayHttpListener.md)
 
 [New-AzApplicationGatewayHttpListener](./New-AzApplicationGatewayHttpListener.md)
 
-[Remove-AzApplicationGatewayhttpListener](./Remove-AzApplicationGatewayHttpListener.md)
+[Remove-AzApplicationGatewayHttpListener](./Remove-AzApplicationGatewayHttpListener.md)
 
 

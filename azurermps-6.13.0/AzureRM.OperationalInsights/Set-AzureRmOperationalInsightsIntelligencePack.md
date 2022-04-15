@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.opera
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/OperationalInsights/Commands.OperationalInsights/help/Set-AzureRmOperationalInsightsIntelligencePack.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/OperationalInsights/Commands.OperationalInsights/help/Set-AzureRmOperationalInsightsIntelligencePack.md
-ms.openlocfilehash: 233df8daf32e4d4e485b08751f60b2781478c212b6acee367012e5f0d0fca616
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 0e8335476fc1cb511aaddb5294ea508832a04003
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416130"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142136862"
 ---
 # Set-AzureRmOperationalInsightsIntelligencePack
 
 ## SYNOPSIS
-Mengaktifkan atau menonaktifkan Paket Kecerdasan tertentu.
+Mengaktifkan atau menonaktifkan Paket Kecerdasan yang ditentukan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,21 +29,21 @@ Set-AzureRmOperationalInsightsIntelligencePack [-ResourceGroupName] <String> [-W
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmOperationalInsightsIntelligencePack** mengaktifkan Paket Kecerdasan tertentu jika *Diaktifkan* diatur ke $True dan menonaktifkannya jika *Diaktifkan* diatur ke $False.
+Cmdlet **Set-AzureRmOperationalInsightsIntelligencePack** memungkinkan Paket *Kecerdasan* tertentu jika Diaktifkan diatur ke $True dan menonaktifkannya jika *Diaktifkan* diatur ke $False.
 
 ## EXAMPLES
 
-### Contoh 1: Set Intelligence Packs
+### Contoh 1: Atur Paket Kecerdasan
 ```
 PS C:\>Set-AzureOperationalInsightsIntelligencePack -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "ContosoWorkspace" -IntelligencePackName "ContosoWorkspace" -Enabled $True
 ```
 
-Perintah ini mengaktifkan Paket Kecerdasan tertentu.
+Perintah ini mengaktifkan Paket Kecerdasan yang ditentukan.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -57,7 +57,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Enabled
+### -Difungsikan
 ```yaml
 Type: System.Boolean
 Parameter Sets: (All)
@@ -100,7 +100,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Menentukan nama ruang kerja.
 
 ```yaml
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -132,6 +132,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Cmdlet Azure Operational Insights](./AzureRM.OperationalInsights.md)
+[Cmdlet Insights Operasional Azure](./AzureRM.OperationalInsights.md)
 
 

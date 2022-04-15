@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.resources/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/Remove-AzADGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/Remove-AzADGroup.md
-ms.openlocfilehash: 9feda8c0f2d4efac588d35bdb858d0015cfcc3a0bbde228c17e3b833048442c2
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 4d285471632c9c4bc952b2dcdc0e4ce5147fac12
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417467"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142056213"
 ---
 # Remove-AzADGroup
 
@@ -42,7 +42,7 @@ Menghapus grup direktori aktif.
 
 ## EXAMPLES
 
-### Contoh 1 - Menghapus grup berdasarkan id objek
+### Contoh 1 - Menghapus grup menurut id objek
 
 ```
 PS C:\> Remove-AzADGroup -ObjectId 85F89C90-780E-4AA6-9F4F-6F268D322EEE
@@ -50,13 +50,13 @@ PS C:\> Remove-AzADGroup -ObjectId 85F89C90-780E-4AA6-9F4F-6F268D322EEE
 
 Menghapus grup dengan id objek '85F89C90-780E-4AA6-9F4F-6F268D322EEE' dari penyewa.
 
-### Contoh 2 - Hapus grup dengan pemipaan
+### Contoh 2 - Menghapus grup dengan pipa
 
 ```
 PS C:\> Get-AzADGroup -ObjectId 85F89C90-780E-4AA6-9F4F-6F268D322EEE | Remove-AzADGroup
 ```
 
-Mendapatkan grup dengan id objek '85F89C90-780E-4AA6-9F4F-6F268D322EEE' dan pipa yang Remove-AzADGroup untuk menghapus grup dari penyewa.
+Mendapatkan grup dengan id objek '85F89C90-780E-4AA6-9F4F-6F268D322EEE' dan pipa yang ke Remove-AzADGroup untuk menghapus grup dari penyewa.
 
 ## PARAMETERS
 
@@ -90,8 +90,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jika ditentukan, tidak minta konfirmasi untuk menghapus grup.
+### -Paksa
+Jika ditentukan, tidak meminta konfirmasi untuk menghapus grup.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,13 +182,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.Guid
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.DIRECTDGroup
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADGroup
 Parameter: InputObject (ByValue)
 
 ## OUTPUTS

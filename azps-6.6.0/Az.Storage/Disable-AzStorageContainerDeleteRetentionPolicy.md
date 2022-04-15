@@ -6,23 +6,23 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Disable-AzStorageContainerDeleteRetentionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Disable-AzStorageContainerDeleteRetentionPolicy.md
 ms.openlocfilehash: 1b991dc509145b790ca13ea3ce5c1cafa57e18fc
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140244349"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141947175"
 ---
 # Disable-AzStorageContainerDeleteRetentionPolicy
 
 ## SYNOPSIS
-Nonaktifkan kebijakan penyimpanan penghapusan Azure Storage contatiners blob.
+Nonaktifkan kebijakan penghapusan penyimpanan untuk Azure Storage kontatiner blob.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/disable-azstoragecontainerdeleteretentionpolicy) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/disable-azstoragecontainerdeleteretentionpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Nama Akun (Default)
+### AccountName (Default)
 ```
 Disable-AzStorageContainerDeleteRetentionPolicy [-ResourceGroupName] <String> [-StorageAccountName] <String>
  [-PassThru] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -41,7 +41,7 @@ Disable-AzStorageContainerDeleteRetentionPolicy [-ResourceId] <String> [-PassThr
 ```
 
 ## DESCRIPTION
-Cmdlet **Disable-AzStorageContainerDeleteRetentionPolicy** menonaktifkan kebijakan penyimpanan untuk Azure Storage blob Contatiner.
+Cmdlet **Disable-AzStorageContainerDeleteRetentionPolicy** menonaktifkan kebijakan penghapusan penyimpanan untuk Azure Storage blob Contatiner.
 
 ## EXAMPLES
 
@@ -54,7 +54,7 @@ Enabled Days
   False
 ```
 
-Perintah ini menonaktifkan kebijakan penyimpanan penghapusan untuk wadah blob.
+Perintah ini menonaktifkan kebijakan penghapusan penyimpanan untuk wadah blob.
 
 ## PARAMETERS
 
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Display ServiceProperties
+Menampilkan ServiceProperties
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Masukkan Id sumber Storage akun, atau Id Sumber Daya properti layanan Blob.
+Masukkan Id Sumber Daya akun Storage, atau Id Sumber Daya properti layanan Blob.
 
 ```yaml
 Type: System.String
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage objek akun
+objek akun Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Storage Akun.
+Storage Nama Akun.
 
 ```yaml
 Type: System.String
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

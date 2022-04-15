@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Get-AzReservationOrder.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Get-AzReservationOrder.md
 ms.openlocfilehash: 7e7a23f70b5fad91d6fd8eb7ae0a0cec84bd8171
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140278699"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141949443"
 ---
 # Get-AzReservationOrder
 
 ## SYNOPSIS
-Dapatkan `ReservationOrder`
+Mendapatkan `ReservationOrder`
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.reservations/get-azreservationorder) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.reservations/get-azreservationorder) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzReservationOrder [-ReservationOrderId <Guid>] [-DefaultProfile <IAzureCont
 ```
 
 ## DESCRIPTION
-Daftar semua s `ReservationOrder`yang dapat diakses pengguna dalam penyewa saat ini. Jika parameter ReservationOrderId sudah diatur, dapatkan ReservationOrder spesifik.
+Daftar semua `ReservationOrder`s bahwa pengguna memiliki akses ke dalam penyewa saat ini. Jika parameter ReservationOrderId diatur, dapatkan ReservationOrder tertentu.
 
 ## EXAMPLES
 
@@ -44,7 +44,7 @@ Mencantumkan semua `ReservationOrder` yang dapat diakses pengguna dalam penyewa 
 PS C:\> Get-AzReservationOrder -ReservationOrderId "00000000-ffff-ffff-0000-00000fffff"
 ```
 
-Menggunakan `ReservationOrder` ReservationOrderId yang ditentukan
+Dapatkan `ReservationOrder` dengan ReservationOrderId yang ditentukan
 
 ## PARAMETERS
 
@@ -79,11 +79,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/disable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Disable-AzStorageBlobDeleteRetentionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Disable-AzStorageBlobDeleteRetentionPolicy.md
-ms.openlocfilehash: 63b954fe9c73ab940f170cfc1e6d8273eff9a115
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c37fcfc16fe817d213ffe187c25a54f30b252f11
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140380373"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142025111"
 ---
 # Disable-AzStorageBlobDeleteRetentionPolicy
 
 ## SYNOPSIS
-Menonaktifkan kebijakan penyimpanan penghapusan untuk Azure Storage Blob Anda.
+Nonaktifkan kebijakan penghapusan penyimpanan untuk layanan Azure Storage Blob.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/disable-azstorageblobdeleteretentionpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Nama Akun (Default)
+### AccountName (Default)
 ```
 Disable-AzStorageBlobDeleteRetentionPolicy [-ResourceGroupName] <String> [-StorageAccountName] <String>
  [-PassThru] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -38,7 +41,7 @@ Disable-AzStorageBlobDeleteRetentionPolicy [-ResourceId] <String> [-PassThru]
 ```
 
 ## DESCRIPTION
-Cmdlet **Disable-AzStorageBlobDeleteRetentionPolicy** menonaktifkan kebijakan penyimpanan penghapusan untuk layanan Azure Storage Blob.
+Cmdlet **Disable-AzStorageBlobDeleteRetentionPolicy** menonaktifkan kebijakan penghapusan penyimpanan untuk layanan Azure Storage Blob.
 
 ## EXAMPLES
 
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Display ServiceProperties
+Menampilkan ServiceProperties
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Masukkan Id sumber Storage akun, atau Id Sumber Daya properti layanan Blob.
+Masukkan Id Sumber Daya akun Storage, atau Id Sumber Daya properti layanan Blob.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage objek akun
+objek akun Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Storage Akun.
+Storage Nama Akun.
 
 ```yaml
 Type: System.String
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

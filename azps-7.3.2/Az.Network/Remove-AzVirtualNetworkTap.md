@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualNetworkTap.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualNetworkTap.md
-ms.openlocfilehash: 20f47de9370fda74584dd556b5618013ae166e5b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 57220c2022be663485e95c04e55dbb8ad59130c1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140392362"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142031321"
 ---
 # Remove-AzVirtualNetworkTap
 
 ## SYNOPSIS
-Menghapus ketukan jaringan virtual.
+Menghapus ketuk jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvirtualnetworktap) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,18 +45,18 @@ Cmdlet **Remove-AzVirtualNetworkTap** menghapus ketukan jaringan virtual Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus ketukan jaringan virtual
+### Contoh 1: Menghapus ketuk jaringan virtual
 ```
 PS C:\>Remove-AzNetworkInterface -Name "VirtualNetworkTap1" -ResourceGroup "ResourceGroup1"
 ```
 
-Perintah ini menghapus VirtualNetworkTap1 di grup sumber daya ResourceGroup1.
-Karena *parameter Paksa* tidak digunakan, pengguna akan diminta untuk mengonfirmasi tindakan ini.
+Perintah ini menghapus VirtualNetworkTap1 dalam grup sumber daya ResourceGroup1.
+Karena parameter *Paksa* tidak digunakan, pengguna akan diminta untuk mengonfirmasi tindakan ini.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -82,8 +85,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi jika Anda ingin menghapus sumber daya
+### -Paksa
+Jangan meminta konfirmasi jika Anda ingin menghapus sumber daya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Referensi ke Sumber daya VirtualNetworkTap
+Referensi ke sumber daya VirtualNetworkTap
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkTap
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya ketuk jaringan virtual.
+Nama grup sumber daya dari ketuk jaringan virtual.
 
 ```yaml
 Type: System.String
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-VirtualNetworkTap resourceId
+Sumber daya VirtualNetworkTap
 
 ```yaml
 Type: System.String
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Connect-AzContainerRegistry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Connect-AzContainerRegistry.md
 ms.openlocfilehash: ca4462b163a75559b9c77416ef6b0a298ce05e2f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140467496"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142053911"
 ---
 # Connect-AzContainerRegistry
 
 ## SYNOPSIS
-Masuk ke registri azure container.
+Masuk ke registri kontainer azure.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerregistry/connect-azcontainerregistry) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/connect-azcontainerregistry) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Connect-AzContainerRegistry -Name <String> -UserName <String> -Password <String>
 ```
 
 ## DESCRIPTION
-Masuk ke registri azure container.
+Masuk ke registri kontainer azure.
 
 ## EXAMPLES
 
@@ -43,21 +43,21 @@ Masuk ke registri azure container.
 PS C:\> Connect-AzContainerRegistry -Name $RegistryName
 ```
 
-Masuk ke ACR tanpa kredensial ketika sudah masuk ke akun azure.
+Masuk ke ACR tanpa kredensial saat sudah masuk ke akun azure.
 
 ### Contoh 2
 ```powershell
 PS C:\> Connect-AzContainerRegistry -Name $RegistryName -UserName $RegistryName -Password $AdminPassWord
 ```
 
-Masuk ke ACR dengan nama pengguna/kata sandi admin ketika pengguna admin diaktifkan.
+Masuk ke ACR dengan nama pengguna/kata sandi admin saat pengguna admin diaktifkan.
 
 ### Contoh 3
 ```powershell
 PS C:\> Connect-AzContainerRegistry -Name $RegistryName -UserName $ServicePrincipal -Password $ServicePrincipalPassword
 ```
 
-Masuk ke ACR dengan ID aplikasi prinsipal layanan dan kata sandi.
+Masuk ke ACR dengan ID dan kata sandi aplikasi utama layanan.
 
 ## PARAMETERS
 
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Registri Azure Container.
+nama Azure Container Registry.
 
 ```yaml
 Type: System.String
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Password
-Kata sandi untuk Registri Azure Container.
+Kata sandi untuk Azure Container Registry.
 
 ```yaml
 Type: System.String
@@ -106,8 +106,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -UserName
-Nama pengguna untuk registri Azure Container.
+### -NamaPengguna
+Nama Pengguna Untuk Azure Container Registry.
 
 ```yaml
 Type: System.String
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

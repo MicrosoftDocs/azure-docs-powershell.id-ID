@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscNodeConfigurationDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscNodeConfigurationDeployment.md
 ms.openlocfilehash: 3a326bc47a0cadc783d65add95b139ad798da5bb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140259271"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142054739"
 ---
 # Get-AzAutomationDscNodeConfigurationDeployment
 
@@ -19,11 +19,11 @@ ms.locfileid: "140259271"
 Mendapatkan penyebaran konfigurasi Node DSC dalam Otomatisasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/get-azautomationdscnodeconfigurationdeployment) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationdscnodeconfigurationdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
-### SecaraSemua (Default)
+### ByAll (Default)
 ```
 Get-AzAutomationDscNodeConfigurationDeployment [-Status <String>] [-StartTime <DateTimeOffset>]
  [-EndTime <DateTimeOffset>] [-ResourceGroupName] <String> [-AutomationAccountName] <String>
@@ -37,11 +37,11 @@ Get-AzAutomationDscNodeConfigurationDeployment -JobId <Guid> [-ResourceGroupName
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzAutomationDscNodeConfigurationDeployment** menggunakan konfigurasi node APS Desired State Configuration (DSC) dalam Otomatisasi Azure.
+Cmdlet **Get-AzAutomationDscNodeConfigurationDeployment** menyebarkan konfigurasi node APS Desired State Configuration (DSC) dalam Azure Automation.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan penyebaran konfigurasi simpul
+### Contoh 1: Dapatkan penyebaran konfigurasi simpul
 ```
 PS C:\> $deployment = Get-AzAutomationDscNodeConfigurationDeployment `
                          -JobId 35b14eb4-52b7-4a1d-ad62-8e9f84adc657 `
@@ -67,12 +67,12 @@ WebServer2 Pending
 WebServer3 Compliant
 ```
 
-Perintah di atas akan menggunakan konfigurasi node DSC yang bernama "Config01.Node1" ke array dua dimensi nama Node yang diberikan. Penyebaran dilakukan secara tahapan.
+Perintah di atas menyebarkan konfigurasi node DSC bernama "Config01.Node1" ke array dua dimensi Nama Node tertentu. Penyebaran terjadi secara bertahap.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang berisi konfigurasi DSC yang disusun cmdlet ini.
+Menentukan nama akun Otomatisasi yang berisi konfigurasi DSC yang dikompilasi cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobId
-Menentukan id Pekerjaan dari pekerjaan penempatan yang sudah ada.
+Menentukan id Pekerjaan dari pekerjaan penyebaran yang sudah ada.
 
 ```yaml
 Type: System.Guid
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini menyusun konfigurasi.
+Menentukan nama grup sumber daya tempat cmdlet ini menyusun konfigurasi.
 
 ```yaml
 Type: System.String
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

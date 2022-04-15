@@ -6,20 +6,20 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Test-AzStreamAnalyticsFunction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Test-AzStreamAnalyticsFunction.md
 ms.openlocfilehash: 6e2b1ddae974bc58fcecc2e53f4bfbbf64fa17c7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139965687"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141946131"
 ---
 # Test-AzStreamAnalyticsFunction
 
 ## SYNOPSIS
-Menguji apakah informasi yang disediakan untuk sebuah fungsi valid.
-Rentang ini dapat dilakukan untuk menguji koneksi ke layanan web yang mendasari di belakang fungsi atau memastikan kode fungsi yang disediakan benar secara sinonim.
+Menguji apakah informasi yang disediakan untuk fungsi valid.
+Hal ini dapat berkisar dari menguji koneksi ke layanan web yang mendasar di belakang fungsi atau memastikan kode fungsi yang disediakan secara syntactically benar.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.streamanalytics/test-azstreamanalyticsfunction) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/test-azstreamanalyticsfunction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,12 +29,12 @@ Test-AzStreamAnalyticsFunction -JobName <String> -Name <String> -ResourceGroupNa
 ```
 
 ## DESCRIPTION
-Menguji apakah informasi yang disediakan untuk sebuah fungsi valid.
-Rentang ini dapat dilakukan untuk menguji koneksi ke layanan web yang mendasari di belakang fungsi atau memastikan kode fungsi yang disediakan benar secara sinonim.
+Menguji apakah informasi yang disediakan untuk fungsi valid.
+Hal ini dapat berkisar dari menguji koneksi ke layanan web yang mendasar di belakang fungsi atau memastikan kode fungsi yang disediakan secara syntactically benar.
 
 ## EXAMPLES
 
-### Contoh 1: Menguji fungsi Analitik Streaming
+### Contoh 1: Menguji fungsi Stream Analytics
 ```powershell
 PS C:\> Test-AzStreamAnalyticsFunction -ResourceGroupName azure-rg-test -JobName sajob-01-pwsh -Name mlsfunction-01
 
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

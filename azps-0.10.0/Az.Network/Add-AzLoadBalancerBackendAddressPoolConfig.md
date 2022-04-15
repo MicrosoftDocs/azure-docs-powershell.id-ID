@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Add-AzLoadBalancerBackendAddressPoolConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Add-AzLoadBalancerBackendAddressPoolConfig.md
 ms.openlocfilehash: e97e8f3ed5769e4f81175b29f097aa4946d28881
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426991"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141916941"
 ---
 # Add-AzLoadBalancerBackendAddressPoolConfig
 
 ## SYNOPSIS
-Menambahkan konfigurasi pool alamat backend ke penyeimbang muat.
+Menambahkan konfigurasi kumpulan alamat backend ke penyeimbang muatan.
 
 ## SYNTAX
 
@@ -26,21 +26,21 @@ Add-AzLoadBalancerBackendAddressPoolConfig -Name <String> -LoadBalancer <PSLoadB
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzLoadBalancerBackend** menambahkan pool alamat backend ke penyeimbang muat Azure.
+Cmdlet **Add-AzLoadBalancerBackend** menambahkan kumpulan alamat backend ke penyeimbang muat Azure.
 
 ## EXAMPLES
 
-### Contoh 1 Menambahkan konfigurasi pool alamat backend ke penyeimbang muat
+### Contoh 1 Tambahkan konfigurasi kumpulan alamat backend ke penyeimbang muat
 ```
 PS C:\>Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "myrg" | Add-AzLoadBalancerBackendAddressPoolConfig -Name "BackendAddressPool02" | Set-AzLoadBalancer
 ```
 
-Perintah ini mendapatkan penyeimbang muat bernama MyLoadBalancer, menambahkan kumpulan alamat backend bernama BackendAddressPool02 ke MyLoadBalancer, lalu menggunakan cmdlet **Set-AzLoadBalancer** untuk memperbarui MyLoadBalancer.
+Perintah ini mendapatkan load balancer bernama MyLoadBalancer, menambahkan kumpulan alamat backend bernama BackendAddressPool02 ke MyLoadBalancer, lalu menggunakan cmdlet **Set-AzLoadBalancer** untuk memperbarui MyLoadBalancer.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -55,7 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan objek **LoadBalancer.**
+Menentukan objek **LoadBalancer** .
 
 ```yaml
 Type: PSLoadBalancer
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama konfigurasi pool alamat backend untuk ditambahkan.
+Menentukan nama konfigurasi kumpulan alamat backend untuk ditambahkan.
 
 ```yaml
 Type: String
@@ -85,12 +85,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSLoadBalancer
-Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari saluran
+Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari pipeline
 
 ## OUTPUTS
 

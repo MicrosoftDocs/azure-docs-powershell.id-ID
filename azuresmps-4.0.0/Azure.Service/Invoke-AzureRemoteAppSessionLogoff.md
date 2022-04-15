@@ -4,16 +4,16 @@ ms.assetid: 87163619-DEA4-4183-BB11-2D7B16F4BE8A
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: a1cfe5615fda0e342d6f63764522bf2c279e4234
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427510"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142135707"
 ---
 # Invoke-AzureRemoteAppSessionLogoff
 
 ## SYNOPSIS
-Segera log sesi Azure RemoteApp.
+Segera keluar dari sesi Azure RemoteApp.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,16 +25,16 @@ Invoke-AzureRemoteAppSessionLogoff [-CollectionName] <String> [-UserUpn] <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Invoke-AzureRemoteAppSessionLogoff** segera menghapus pengguna dari sesi jarak jauh yang berjalan di Azure RemoteApp.
+Cmdlet **Invoke-AzureRemoteAppSessionLogoff** langsung mengeluarkan pengguna dari sesi jarak jauh yang berjalan di Azure RemoteApp.
 
 ## EXAMPLES
 
-### Contoh 1: Menonaktifkan pengguna
+### Contoh 1: Keluar dari pengguna
 ```
 PS C:\> Invoke-AzureRemoteAppSessionLogoff -CollectionName ContosoApps -UserUpn PattiFuller@contoso.com
 ```
 
-Perintah ini menonaktifkan pengguna yang UPN-nya PattiFuller@contoso.com adalah .
+Perintah ini keluar dari pengguna yang UPN-nya .PattiFuller@contoso.com
 
 ## PARAMETERS
 
@@ -54,8 +54,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserUpn
-Spesifikasi Nama Prinsipal pengguna (UPN) pengguna, misalnya, PattiFuller@contoso.com .
+Menspesifikasikan Nama Pokok Pengguna (UPN) pengguna, misalnya, PattiFuller@contoso.com.
 
 ```yaml
 Type: String
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -128,7 +128,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Add-AzureRemoteAppUser](./Add-AzureRemoteAppUser.md)
 
-[Disconnect-AzureRemoteAppSession](./Disconnect-AzureRemoteAppSession.md)
+[Putuskan sambungan-AzureRemoteAppSession](./Disconnect-AzureRemoteAppSession.md)
 
 [Get-AzureRemoteAppSession](./Get-AzureRemoteAppSession.md)
 

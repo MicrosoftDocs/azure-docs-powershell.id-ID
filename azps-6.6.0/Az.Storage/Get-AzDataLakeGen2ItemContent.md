@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzDataLakeGen2ItemContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzDataLakeGen2ItemContent.md
 ms.openlocfilehash: e129fcaedfaabd8fc0aac791cbd5c0d5842eb2e9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139966524"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141947085"
 ---
 # Get-AzDataLakeGen2ItemContent
 
 ## SYNOPSIS
-Unduh file.
+Mengunduh file.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azdatalakegen2itemcontent) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azdatalakegen2itemcontent) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,8 +37,8 @@ Get-AzDataLakeGen2ItemContent -InputObject <AzureDataLakeGen2Item> [-Destination
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataLakeGen2ItemContent** mengunduh file di Filesystem dalam akun penyimpanan Azure.
-Cmdlet ini hanya berfungsi jika Ruang Nama Hierarki diaktifkan untuk Storage tersebut. Jenis akun ini dapat dibuat dengan menjalankan cmdlet "New-AzStorageAccount" dengan "-EnableHierarchicalNamespace $true".
+Cmdlet **Get-AzDataLakeGen2ItemContent** mengunduh file dalam Filesystem di akun penyimpanan Azure.
+Cmdlet ini hanya berfungsi jika Ruang Nama Hierarki diaktifkan untuk akun Storage. Akun semacam ini dapat dibuat dengan menjalankan cmdlet "New-AzStorageAccount" dengan "-EnableHierarchicalNamespace $true".
 
 ## EXAMPLES
 
@@ -55,7 +55,7 @@ dir1/file1           False        1024            2020-03-23 09:29:18Z rwx---rwx
 
 Perintah ini mengunduh file ke file lokal tanpa perintah.
 
-### Contoh 2: Dapatkan file, lalu saluran untuk mengunduh file ke file lokal
+### Contoh 2: Dapatkan file, lalu pipeline untuk mengunduh file ke file lokal
 ```
 PS C:\> Get-AzDataLakeGen2Item -FileSystem "filesystem1" -Path "dir1/file1" |  Get-AzDataLakeGen2ItemContent -Destination $localDestFile 
 
@@ -66,12 +66,12 @@ Path                 IsDirectory  Length          LastModified         Permissio
 dir1/file1           False        1024            2020-03-23 09:29:18Z rwx---rwx    $superuser           $superuser
 ```
 
-Perintah ini akan mendapatkan file terlebih dahulu, lalu saluran untuk mengunduh file ke file lokal.
+Perintah ini terlebih dahulu mendapatkan file, lalu pipeline untuk mengunduh file ke file lokal.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -101,8 +101,8 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Jumlah total tugas bersama.
-Nilai default adalah 10.
+Jumlah total tugas asinkron serentak.
+Nilai defaultnya adalah 10.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Azure Storage Konteks
+Objek Konteks Azure Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -176,8 +176,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Force
-Paksa untuk menimpa file atau blob yang sudah ada
+### -Paksa
+Memaksa untuk menimpa blob atau file yang sudah ada
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -206,9 +206,9 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Path
-Jalur dalam Filesystem tertentu yang akan dihapus.
-Bisa merupakan file atau direktori Dalam format 'directory/file.txt' atau 'directory1/directory2/'
+### -Jalur
+Jalur dalam Filesystem tertentu yang harus dihapus.
+Dapat berupa file atau direktori Dalam format 'directory/file.txt' atau 'directory1/directory2/'
 
 ```yaml
 Type: System.String
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -254,19 +254,19 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### Microsoft.WindowsAzure.commands.common. Storage. ResourceModel.AzureDataLakeGen2Item
+### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureDataLakeGen2Item
 
 ### Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
 
 ## OUTPUTS
 
-### Microsoft.WindowsAzure.commands.common. Storage. ResourceModel.AzureDataLakeGen2Item
+### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureDataLakeGen2Item
 
 ## CATATAN
 

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/Unregister-AzureRmRecoveryServicesBackupContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/Unregister-AzureRmRecoveryServicesBackupContainer.md
 ms.openlocfilehash: 817f22343697d888ba1ce9a568ed0ce218b284e3
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420652"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142136403"
 ---
 # Unregister-AzureRmRecoveryServicesBackupContainer
 
 ## SYNOPSIS
-Pisahkan server Windows atau wadah lain dari vault.
+Membatalkan pendaftaran server Windows atau wadah lain dari kubah.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,27 +28,27 @@ Unregister-AzureRmRecoveryServicesBackupContainer [-Container] <ContainerBase> [
 ```
 
 ## DESCRIPTION
-Cmdlet **Unregister-AzureRmRecoveryServicesBackupContainer** membatalkan pendaftaran Windows Server atau wadah Pencadangan lain dari vault.
-Cmdlet ini menghapus referensi ke wadah dari vault.
-Sebelum dapat membatalkan pendaftaran wadah, Anda harus menghapus data yang diproteksi yang terkait dengan wadah tersebut.
-Mengatur konteks vault menggunakan cmdlet Set-AzureRmRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
+Cmdlet **Unregister-AzureRmRecoveryServicesBackupContainer** membatalkan pendaftaran server Windows atau kontainer Cadangan lainnya dari kubah.
+Cmdlet ini menghapus referensi ke wadah dari kubah.
+Sebelum dapat membatalkan pendaftaran wadah, Anda harus menghapus semua data yang diproteksi yang terkait dengan wadah tersebut.
+Mengatur konteks kubah menggunakan cmdlet Set-AzureRmRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Pisahkan Windows Server dari vault
+### Contoh 1: Batalkan pendaftaran Server Windows dari kubah
 ```
 PS C:\>$Cont = Get-AzureRmRecoveryServicesBackupContainer -ContainerType "Windows" -BackupManagementType MARS -Name "server01.contoso.com"
 PS C:\> Unregister-AzureRmRecoveryServicesBackupContainer -Container $Cont
 ```
 
-Perintah pertama mendapatkan Windows wadah bernama server01.contoso.com yang terdaftar di vault, lalu menyimpannya di $Cont baru.
-Perintah kedua membatalkan pendaftaran Server Windows tertentu dari vault Azure Backup.
+Perintah pertama mendapatkan wadah Windows bernama server01.contoso.com yang terdaftar dalam kubah, lalu menyimpannya dalam variabel $Cont.
+Perintah kedua membatalkan pendaftaran Server Windows yang ditentukan dari kubah Azure Backup.
 
 ## PARAMETERS
 
-### -Container
-Menentukan objek wadah Cadangan untuk membatalkan pendaftaran.
-Untuk mendapatkan objek **BackupContainer,** gunakan Get-AzureRmRecoveryServicesBackupContainer cmdlet.
+### -Kontainer
+Menentukan objek Kontainer Cadangan untuk membatalkan pendaftaran.
+Untuk mendapatkan objek **BackupContainer** , gunakan cmdlet Get-AzureRmRecoveryServicesBackupContainer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ContainerBase
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Kembalikan wadah yang akan dihapus.
+Mengembalikan wadah yang akan dihapus.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

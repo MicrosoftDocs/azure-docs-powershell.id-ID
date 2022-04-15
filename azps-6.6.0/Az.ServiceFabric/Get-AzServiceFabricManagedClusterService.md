@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricManagedClusterService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricManagedClusterService.md
 ms.openlocfilehash: 49090c375180b577ec3d0d1504b8b085eae9385a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139968711"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141948957"
 ---
 # Get-AzServiceFabricManagedClusterService
 
 ## SYNOPSIS
-Dapatkan Service Fabric layanan terkelola dalam aplikasi dan kluster yang ditentukan. Hanya mendukung layanan ARM yang disebarkan.
+Dapatkan detail layanan terkelola Service Fabric di bawah aplikasi dan kluster yang ditentukan. Hanya mendukung layanan arm yang disebarkan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/get-azservicefabricmanagedclusterservice) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/get-azservicefabricmanagedclusterservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Get-AzServiceFabricManagedClusterService -ResourceId <String> [-DefaultProfile <
 ```
 
 ## DESCRIPTION
-Cmdlet ini akan mendapatkan detail layanan terkelola dalam aplikasi dan kluster yang ditentukan.
+Cmdlet ini akan mendapatkan detail layanan yang dikelola dalam aplikasi dan kluster yang ditentukan.
 
 ## EXAMPLES
 
@@ -72,12 +72,12 @@ PS C:\> $resourceId = "/subscriptions/13ad2c84-84fa-4798-ad71-e70c07af873f/resou
 PS C:\> Get-AzServiceFabricManagedClusterService -ResourceId $resourceId
 ```
 
-Contoh ini akan mendapatkan detail layanan yang dikelola dengan ID Sumber Daya ARM yang ditentukan, jika tidak menemukan sumber daya, hal itu akan pengecualian.
+Contoh ini akan mendapatkan detail layanan terkelola dengan ID Sumber Daya ARM yang ditentukan, jika tidak menemukan sumber daya yang akan dikecualikan.
 
 ## PARAMETERS
 
 ### -ApplicationName
-Tentukan nama dari aplikasi yang dikelola.
+Tentukan nama aplikasi yang dikelola.
 
 ```yaml
 Type: System.String
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

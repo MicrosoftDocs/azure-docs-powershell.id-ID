@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/New-AzNetAppFilesVolume.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/New-AzNetAppFilesVolume.md
 ms.openlocfilehash: 334ee2170e9e59efd63bf3a6a48aec6d22f1c5db
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140501565"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141954861"
 ---
 # New-AzNetAppFilesVolume
 
 ## SYNOPSIS
-Membuat volume File Azure NetApp (ANF) baru.
+Membuat volume Azure NetApp Files (ANF) baru.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.netappfiles/new-aznetappfilesvolume) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/new-aznetappfilesvolume) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,7 +52,7 @@ New-AzNetAppFilesVolume -Name <String> -UsageThreshold <Int64> -SubnetId <String
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzNetAppFilesVolume** membuat volume ANF.
+Cmdlet **New-AzNetAppFilesVolume** menciptakan volume ANF.
 
 ## EXAMPLES
 
@@ -79,7 +79,7 @@ Perintah ini membuat volume ANF baru "MyAnfVolume" di dalam pool "MyAnfPool".
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun ANF
 
 ```yaml
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -AvsDataStore
-Menentukan apakah volume diaktifkan untuk tujuan penyimpanan data Azure VMware Solution (AVS) (Diaktifkan, Dinonaktifkan)
+Menentukan apakah volume diaktifkan untuk tujuan Azure VMware Solution (AVS) datastore (Diaktifkan, Dinonaktifkan)
 
 ```yaml
 Type: System.String
@@ -109,8 +109,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Backup
-Larik hashtable yang mewakili objek cadangan
+### -Cadangan
+Array hashtable yang mewakili objek cadangan
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesVolumeBackupProperties
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupId
-ID Cadangan. UUID v4 atau pengidentifikasi sumber daya digunakan untuk mengidentifikasi Backup
+ID Cadangan. UUID v4 atau pengidentifikasi sumber daya yang digunakan untuk mengidentifikasi Cadangan
 
 ```yaml
 Type: System.String
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -CoolnessPeriod
-Menentukan jumlah hari setelah data yang tidak diakses oleh klien akan di tingkatan (minimal 7, maksimum 63).
+Menentukan jumlah hari setelah data yang tidak diakses oleh klien akan berjenjang (minimal 7, maksimum 63).
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultGroupQuotaInKiB
-Kuota grup default untuk volume di KiBs. Jika isDefaultQuotaEnabled diatur, nilai minimum 4 KiBs berlaku.
+Kuota grup default untuk volume dalam KiB. JikaDefaultQuotaEnabled diatur, nilai minimum 4 KiB berlaku.
 
 ```yaml
 Type: System.Nullable`1[System.Int64]
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultUserQuotaInKiB
-Kuota pengguna default untuk volume di KiBs. Jika isDefaultQuotaEnabled diatur, nilai minimum 4 KiBs berlaku.
+Kuota pengguna default untuk volume dalam KiB. JikaDefaultQuotaEnabled diatur, nilai minimum 4 KiB berlaku.
 
 ```yaml
 Type: System.Nullable`1[System.Int64]
@@ -230,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExportPolicy
-Larik hashtable yang menyatakan kebijakan ekspor
+Array hashtable yang mewakili kebijakan ekspor
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesVolumeExportPolicy
@@ -320,7 +320,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkFeature
-Fitur jaringan dasar, atau Standar tersedia untuk volume (Dasar, Standar).
+Jaringan dasar, atau Fitur standar tersedia untuk volume (Basic, Standard).
 
 ```yaml
 Type: System.String
@@ -335,7 +335,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkSiblingSetId
-ID Rangkaian Saudara Jaringan (GUID) untuk grup contoh sumber daya jaringan berbagi volume (9760acf5-4638-11e7-9bdb-020073ca3333).
+Network Sibling Set ID (GUID) untuk contoh sumber daya jaringan berbagi volume (9760acf5-4638-11e7-9bdb-020073ca33333).
 
 ```yaml
 Type: System.String
@@ -350,7 +350,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolName
-Nama pool ANF
+Nama kumpulan ANF
 
 ```yaml
 Type: System.String
@@ -365,7 +365,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolObject
-The pool for the new volume object
+Kumpulan untuk objek volume baru
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesPool
@@ -380,7 +380,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtocolType
-Larik hashtable yang menyatakan kebijakan ekspor
+Array hashtable yang mewakili kebijakan ekspor
 
 ```yaml
 Type: System.String[]
@@ -425,7 +425,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecurityStyle
-Gaya keamanan volume. Nilai yang mungkin termasuk: 'ntfs', 'unix'
+Gaya keamanan volume. Nilai yang memungkinkan termasuk: 'ntfs', 'unix'
 
 ```yaml
 Type: System.String
@@ -454,8 +454,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SmbContinuouslyAvailable
-Mengaktifkan properti berbagi yang tersedia secara terus menerus untuk volume SMB. Hanya berlaku untuk volume SMB.
+### -SmbContinuousLyAvailable
+Mengaktifkan properti berbagi yang terus tersedia untuk volume SMB. Hanya berlaku untuk volume SMB.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -470,7 +470,7 @@ Accept wildcard characters: False
 ```
 
 ### -SmbEncryption
-Mengaktifkan enkripsi untuk data smb3 dalam pesawat. Hanya berlaku untuk volume SMB/DualProtocol.
+Mengaktifkan enkripsi untuk data smb3 dalam penerbangan. Hanya berlaku untuk volume SMB/DualProtocol.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -485,7 +485,7 @@ Accept wildcard characters: False
 ```
 
 ### -Snapshot
-Sebuah array hashtable yang mewakili objek snapshot
+Array hashtable yang mewakili objek snapshot
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesVolumeSnapshot
@@ -500,7 +500,7 @@ Accept wildcard characters: False
 ```
 
 ### -SnapshotDirectoryVisible
-Jika diaktifkan (benar), volume akan berisi direktori .snapshot baca-saja yang menyediakan akses ke setiap snapshot volume (default ke true)
+Jika diaktifkan (true) volume akan berisi direktori .snapshot baca-saja yang menyediakan akses ke setiap snapshot volume (default ke true)
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -515,7 +515,7 @@ Accept wildcard characters: False
 ```
 
 ### -SnapshotId
-Membuat volume dari snapshot. UUID v4 atau pengidentifikasi sumber daya digunakan untuk mengidentifikasi Snapshot
+Membuat volume dari snapshot. UUID v4 atau pengidentifikasi sumber daya yang digunakan untuk mengidentifikasi Snapshot
 
 ```yaml
 Type: System.String
@@ -530,7 +530,7 @@ Accept wildcard characters: False
 ```
 
 ### -SnapshotPolicyId
-ResourceId Kebijakan Snapshot digunakan untuk menerapkan kebijakan snapshot ke volume
+Snapshot Policy ResourceId digunakan untuk menerapkan kebijakan snapshot ke volume
 
 ```yaml
 Type: System.String
@@ -545,7 +545,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetId
-URI Sumber Daya Azure untuk subnet yang didelegasikan
+Azure Resource URI untuk subnet yang didelegasikan
 
 ```yaml
 Type: System.String
@@ -560,7 +560,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable yang mewakili tag sumber daya
+Sebuah hashtable yang mewakili tag sumber daya
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -575,7 +575,7 @@ Accept wildcard characters: False
 ```
 
 ### -ThroughputMibps
-Throughput maksimum dalam Mibps yang dapat dicapai oleh volume ini
+Throughput maksimum dalam Mibps yang dapat dicapai dengan volume ini
 
 ```yaml
 Type: System.Nullable`1[System.Double]
@@ -590,7 +590,7 @@ Accept wildcard characters: False
 ```
 
 ### -UnixPermissions
-UNIX untuk volume NFS diterima dalam format 4 digit oktal. Digit pertama memilih atribut set user ID(4), set group ID (2) dan sticky (1). Digit kedua memilih izin untuk pemilik file: baca (4), tulis (2) dan jalankan (1). Ketiga memilih izin untuk pengguna lain dalam grup yang sama. keempat untuk pengguna lain yang tidak berada dalam grup. 0755 - memberikan izin baca/tulis/jalankan kepada pemilik dan baca/jalankan untuk grup dan pengguna lain.
+UNIX izin untuk volume NFS yang diterima dalam format oktal 4 digit. Digit pertama memilih atribut set user ID(4), set group ID (2) dan sticky (1). Digit kedua memilih izin untuk pemilik file: baca (4), tulis (2) dan jalankan (1). Ketiga memilih izin untuk pengguna lain dalam grup yang sama. yang keempat untuk pengguna lain yang tidak berada dalam grup. 0755 - memberikan izin baca/tulis/jalankan kepada pemilik dan baca/jalankan ke grup dan pengguna lain.
 
 ```yaml
 Type: System.String
@@ -635,7 +635,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -651,7 +651,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -666,7 +666,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

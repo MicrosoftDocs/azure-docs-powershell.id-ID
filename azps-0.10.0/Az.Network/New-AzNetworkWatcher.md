@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/New-AzNetworkWatcher.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/New-AzNetworkWatcher.md
 ms.openlocfilehash: cace33dd9831dcfcc01f2a57eefb5f28367966d9
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422429"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142131407"
 ---
 # New-AzNetworkWatcher
 
 ## SYNOPSIS
-Membuat sumber daya Pengawas Jaringan baru.
+Membuat sumber daya Network Watcher baru.
 
 ## SYNTAX
 
@@ -25,11 +25,11 @@ New-AzNetworkWatcher -Name <String> -ResourceGroupName <String> -Location <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzNetworkWatcher membuat sumber daya Pengawas Jaringan baru.
+Cmdlet New-AzNetworkWatcher membuat sumber daya Network Watcher baru.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Pengawas Jaringan
+### Contoh 1: Membuat Network Watcher
 ```
 New-AzResourceGroup -Name NetworkWatcherRG -Location westcentralus
 New-AzNetworkWatcher -Name NetworkWatcher_westcentralus -ResourceGroup NetworkWatcherRG
@@ -42,12 +42,12 @@ Tags              :
 ProvisioningState : Succeeded
 ```
 
-Contoh ini membuat Pengawas Jaringan baru di dalam Grup Sumber Daya yang baru dibuat. Perhatikan bahwa hanya satu Pengawas Jaringan yang dapat dibuat per kawasan per langganan.
+Contoh ini membuat Network Watcher baru di dalam Grup Sumber Daya yang baru dibuat. Perhatikan bahwa hanya satu Network Watcher yang dapat dibuat per kawasan per langganan.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -167,13 +167,13 @@ System.Collections.Hashtable
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, network, networking, network watcher
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengawas jaringan
 
 ## RELATED LINKS
 
 [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md)
 
-[Remove-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
+[Hapus-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
 
 [New-AzNetworkWatcherPacketCapture](./New-AzNetworkWatcherPacketCapture.md)
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayRedirectConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayRedirectConfiguration.md
 ms.openlocfilehash: 321a1bd508c150dce41ec74db312061e40cdcd1c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139936250"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142125575"
 ---
 # Get-AzApplicationGatewayRedirectConfiguration
 
 ## SYNOPSIS
-Mendapatkan konfigurasi pengalihan yang sudah ada dari Gateway Aplikasi.
+Mendapatkan konfigurasi pengalihan yang sudah ada dari Application Gateway.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azapplicationgatewayredirectconfiguration) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayredirectconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzApplicationGatewayRedirectConfiguration [-Name <String>] -ApplicationGatew
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApplicationGatewayRedirectConfiguration** mendapatkan konfigurasi pengalihan yang sudah ada dari Gateway Aplikasi.
+Cmdlet **Get-AzApplicationGatewayRedirectConfiguration** mendapatkan konfigurasi pengalihan yang sudah ada dari Application Gateway.
 
 ## EXAMPLES
 
@@ -38,8 +38,8 @@ PS C:\>$AppGW = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceG
 PS C:\> $RedirectConfig = Get-AzApplicationGatewayRedirectConfiguration -Name "Redirect01" -ApplicationGateway $AppGW
 ```
 
-Perintah pertama mendapatkan Gateway Aplikasi bernama ApplicationGateway01 dan menyimpan hasilnya dalam variabel yang bernama $AppGW.
-Perintah kedua mendapatkan konfigurasi pengalihan yang bernama Redirect01 dari Gateway Aplikasi yang disimpan di variabel yang bernama $AppGW.
+Perintah pertama mendapatkan Application Gateway bernama ApplicationGateway01 dan menyimpan hasilnya dalam variabel bernama $AppGW.
+Perintah kedua mendapatkan konfigurasi pengalihan bernama Pengalihan01 dari Application Gateway yang disimpan dalam variabel bernama $AppGW.
 
 ## PARAMETERS
 
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

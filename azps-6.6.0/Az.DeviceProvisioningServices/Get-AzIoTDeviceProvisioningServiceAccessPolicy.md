@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Get-AzIoTDeviceProvisioningServiceAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Get-AzIoTDeviceProvisioningServiceAccessPolicy.md
 ms.openlocfilehash: 792b2866d8b73cf8c073e4794f6137b902d478f7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140106713"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141957273"
 ---
 # Get-AzIoTDeviceProvisioningServiceAccessPolicy
 
 ## SYNOPSIS
-Daftar semua atau tampilkan detail kebijakan akses bersama dalam layanan penyediaan perangkat Azure IoT Hub.
+Cantumkan semua atau perlihatkan detail kebijakan akses bersama dalam layanan penyediaan perangkat Azure IoT Hub.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.deviceprovisioningservices/get-aziotdeviceprovisioningserviceaccesspolicy) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.deviceprovisioningservices/get-aziotdeviceprovisioningserviceaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Get-AzIoTDeviceProvisioningServiceAccessPolicy [-ResourceId] <String> [-KeyName 
 ```
 
 ## DESCRIPTION
-Untuk pengenalan layanan penyediaan perangkat Azure IoT Hub, lihat https://docs.microsoft.com/azure/iot-dps/about-iot-dps.
+Untuk pengenalan Azure IoT Hub Layanan Penyediaan Perangkat, lihat https://docs.microsoft.com/azure/iot-dps/about-iot-dps.
 
 ## EXAMPLES
 
@@ -55,7 +55,7 @@ mypolicy1   ServiceConfig, DeviceConnect, EnrollmentWrite
 mypolicy2   EnrollmentWrite
 ```
 
-Membuat daftar semua kebijakan akses bersama dalam "myiotdps".
+Cantumkan semua kebijakan akses bersama di "myiotdps".
 
 ### Contoh 2
 ```
@@ -88,7 +88,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Object
+### -DpsObject
 Objek Layanan Penyediaan Perangkat IoT
 
 ```yaml
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Layanan Penyediaan Perangkat Iot
+Id Sumber Daya Layanan Penyediaan Perangkat IoT
 
 ```yaml
 Type: System.String
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJobTargetExecution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJobTargetExecution.md
 ms.openlocfilehash: 086f314cefd1a9b71257ac2577afdb2933a413bf
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140097947"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142120283"
 ---
 # Get-AzSqlElasticJobTargetExecution
 
@@ -18,7 +18,7 @@ ms.locfileid: "140097947"
 Mendapatkan satu atau beberapa eksekusi target pekerjaan
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlelasticjobtargetexecution) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlelasticjobtargetexecution) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +49,7 @@ Cmdlet Get-AzSqlElasticJobTargetExecution mendapatkan satu atau beberapa eksekus
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan satu atau beberapa eksekusi target pekerjaan dari satu eksekusi pekerjaan
+### Contoh 1: Mendapatkan satu atau beberapa eksekusi target pekerjaan dari eksekusi pekerjaan
 ```powershell
 PS C:\> $je = Get-AzSqlElasticJobExecution -ResourceGroupName rg -ServerName elasticjobserver -AgentName agent -JobName job1 -JobExecutionId 3bcfc912-20b2-411d-a2b7-6265d13fe272
 $je | Get-AzSqlElasticJobTargetExecution -Count 2
@@ -59,7 +59,7 @@ job1    1          step2    1      ea0a870b-dfe3-427e-9f95-d229d7815b65 Succeede
 job1    1          step1    1      ea0a870b-dfe3-427e-9f95-d229d7815b65 Succeeded       s1               db1                6/1/2018 10:11:44 PM 6/1/2018 10:11:47 PM
 ```
 
-### Contoh 2: Mendapatkan satu atau beberapa eksekusi target pekerjaan dari eksekusi pekerjaan - memfilter menurut nama langkah
+### Contoh 2: Mendapatkan satu atau beberapa eksekusi target pekerjaan dari eksekusi pekerjaan - pemfilteran menurut nama langkah
 ```powershell
 PS C:\> $je = Get-AzSqlElasticJobExecution -ResourceGroupName rg -ServerName elasticjobserver -AgentName agent -JobName job1 -JobExecutionId 3bcfc912-20b2-411d-a2b7-6265d13fe272
 $je | Get-AzSqlElasticJobTargetExecution -Count 2 -StepName step2
@@ -73,7 +73,7 @@ Mendapatkan satu atau beberapa eksekusi target pekerjaan
 ## PARAMETERS
 
 ### -Aktif
-Benderai untuk memfilter menurut eksekusi aktif.
+Tandai untuk memfilter menurut eksekusi aktif.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreateTimeMax
-Memfilter menurut buat maks waktu
+Memfilter dengan maks waktu pembuatan
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreateTimeMin
-Memfilter dengan membuat min waktu
+Memfilter menurut waktu min
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndTimeMax
-Memfilter menurut waktu akhir maks.
+Memfilter menurut maks waktu akhir.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndTimeMin
-Memfilter menurut menit waktu akhir.
+Filter menurut waktu akhir menit.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -298,15 +298,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Sql.ElastisJobs.Model.AzureSqlElasticJobExecutionModel
+### Microsoft.Azure.Commands.Sql.ElasticJobs.Model.AzureSqlElasticJobExecutionModel
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Sql.ElastisJobs.Model.AzureSqlElasticJobExecutionModel
+### Microsoft.Azure.Commands.Sql.ElasticJobs.Model.AzureSqlElasticJobExecutionModel
 
 ## CATATAN
 

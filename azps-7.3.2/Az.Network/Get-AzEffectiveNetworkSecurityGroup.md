@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azef
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzEffectiveNetworkSecurityGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzEffectiveNetworkSecurityGroup.md
-ms.openlocfilehash: 956015b2e8f1798c9ca7766ab6e568c0503e689e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 20159902def8c405d49dec77d35f420185e49602
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140392883"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142032419"
 ---
 # Get-AzEffectiveNetworkSecurityGroup
 
 ## SYNOPSIS
 Mendapatkan grup keamanan jaringan yang efektif dari antarmuka jaringan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azeffectivenetworksecuritygroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,17 +33,17 @@ Cmdlet **Get-AzEffectiveNetworkSecurityGroup** mengembalikan grup keamanan jarin
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan grup keamanan jaringan yang efektif pada antarmuka jaringan
+### Contoh 1: Dapatkan grup keamanan jaringan yang efektif di antarmuka jaringan
 ```
 PS C:\>Get-AzEffectiveNetworkSecurityGroup -NetworkInterfaceName "MyNetworkInterface" -ResourceGroupName "myResourceGroup"
 ```
 
-Perintah ini mendapatkan semua aturan keamanan jaringan efektif yang terkait dengan antarmuka jaringan yang bernama MyNetworkInterface dalam grup sumber daya yang bernama myResourceGroup.
+Perintah ini mendapatkan semua aturan keamanan jaringan efektif yang terkait dengan antarmuka jaringan bernama MyNetworkInterface dalam grup sumber daya bernama myResourceGroup.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkInterfaceName
-Tentukan nama antarmuka jaringan.
+Menentukan nama antarmuka jaringan.
 
 ```yaml
 Type: System.String
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

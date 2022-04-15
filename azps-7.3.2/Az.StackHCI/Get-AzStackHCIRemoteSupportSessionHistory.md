@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/get-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Get-AzStackHCIRemoteSupportSessionHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Get-AzStackHCIRemoteSupportSessionHistory.md
-ms.openlocfilehash: b5a1dfafea6121f47753b25b5329a4833e333dc3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 92741a0ee07d229226066f72610240ebe47a6a6e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139998342"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142025209"
 ---
 # Get-AzStackHCIRemoteSupportSessionHistory
 
 ## SYNOPSIS
-Mendapatkan detail riwayat sesi dukungan jarak jauh.
+Mendapatkan Detail Riwayat Sesi Dukungan Jarak Jauh.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.stackhci/get-azstackhciremotesupportsessionhistory) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzStackHCIRemoteSupportSessionHistory [[-SessionId] <String>] [-IncludeSessi
 ```
 
 ## DESCRIPTION
-Riwayat sesi mewakili semua akses jarak jauh yang dibuat oleh Dukungan Microsoft untuk Diagnostik atauRepair Diagnostik berdasarkan Tingkat Akses yang diberikan.
+Riwayat sesi mewakili semua akses jarak jauh yang dibuat oleh Dukungan Microsoft baik untuk Diagnostik atau DiagnostikRepair berdasarkan Tingkat Akses yang diberikan.
 
 ## EXAMPLES
 
@@ -37,7 +40,7 @@ PS C:\> Get-AzStackHCIRemoteSupportSessionHistory -SessionId 467e3234-13f4-42f2-
 ## PARAMETERS
 
 ### -FromDate
-Menunjukkan tanggal dari tempat memulai sesi daftar dari sampai sekarang.
+Menunjukkan tanggal dari mana mulai mencantumkan sesi hingga sekarang.
 
 ```yaml
 Type: System.DateTime
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -SessionId
-Id Sesi untuk mendapatkan detail untuk sesi tertentu. Jika dihilangkan, mencantumkan semua sesi dimulai dari tanggal 'FromDate'.
+Session Id untuk mendapatkan detail sesi tertentu. Jika dihilangkan, maka daftar semua sesi dimulai dari tanggal 'FromDate'.
 
 ```yaml
 Type: System.String
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightMetastore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightMetastore.md
 ms.openlocfilehash: d70694bad629b51829f9ebadc0aba47c6a61ff1e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139939165"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141956067"
 ---
 # Add-AzHDInsightMetastore
 
 ## SYNOPSIS
-Menambahkan SQL Database berfungsi sebagai metastore Hive atau Oozie ke objek konfigurasi kluster.
+Menambahkan SQL Database untuk berfungsi sebagai metastore Hive atau Oozie ke objek konfigurasi kluster.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hdinsight/add-azhdinsightmetastore) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/add-azhdinsightmetastore) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,8 +30,8 @@ Add-AzHDInsightMetastore [-Config] <AzureHDInsightConfig> [-MetastoreType] <Azur
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzHDInsightMetastore** menambahkan metaStore Hive atau Oozie ke objek konfigurasi HDInsight yang dibuat oleh cmdlet New-AzHDInsightClusterConfig cmdlet.
-Metastore adalah sebuah SQL Database yang dapat digunakan untuk menyimpan metadata untuk Hive, Oozie, atau keduanya.
+Cmdlet **Add-AzHDInsightMetastore** menambahkan metastore Hive atau Oozie ke objek konfigurasi HDInsight yang dibuat oleh cmdlet New-AzHDInsightClusterConfig.
+Metastore adalah SQL Database yang dapat digunakan untuk menyimpan metadata untuk Sarang, Oozie, atau keduanya.
 
 ## EXAMPLES
 
@@ -90,9 +90,9 @@ PS C:\> New-AzHDInsightClusterConfig  `
                 -StorageContainer $storageContainer
 ```
 
-Perintah ini menambahkan metastore database SQL ke kluster yang bernama your-hadoop-001.
+Perintah ini menambahkan metastore database SQL ke kluster bernama your-hadoop-001.
 
-### Contoh 2: Tambahkan database Ambari kustom ke objek konfigurasi kluster
+### Contoh 2: Menambahkan database Ambari kustom ke objek konfigurasi kluster
 ```
 PS C:\># Primary storage account info
 PS C:\> $storageAccountResourceGroupName = "Group"
@@ -137,12 +137,12 @@ PS C:\> New-AzHDInsightClusterConfig  `
                 -StorageContainer $storageContainer
 ```
 
-Perintah ini menambahkan database Ambari kustom ke kluster yang bernama your-hadoop-002.
+Perintah ini menambahkan database Ambari kustom ke kluster bernama your-hadoop-002.
 
 ## PARAMETERS
 
 ### -Config
-Menentukan objek konfigurasi kluster HDInsight yang dimodifikasi cmdlet ini.
+Menentukan objek konfigurasi kluster HDInsight yang diubah cmdlet ini.
 Objek ini dibuat oleh cmdlet **New-AzHDInsightClusterConfig** .
 
 ```yaml
@@ -157,7 +157,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Credential
+### -Kredensial
 Menentukan kredensial yang akan digunakan untuk database AzureSQL Server.
 
 ```yaml
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Menentukan database pada instans AzureSQL Server yang akan digunakan untuk metastore ini.
+Menentukan database pada instans AzureSQL Server untuk digunakan untuk metastore ini.
 
 ```yaml
 Type: System.String
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 
 ### -MetastoreType
 Menentukan tipe metastore.
-Kemungkinan nilai adalah HiveMetastore atau OozieMetastore.
+Nilai yang memungkinkan adalah HiveMetastore atau OozieMetastore.
 
 ```yaml
 Type: Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightMetastoreType
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlAzureServerName
-Menentukan instans AzureSQL Server yang akan digunakan untuk metastore ini.
+Menentukan instans AzureSQL Server untuk digunakan untuk metastore ini.
 
 ```yaml
 Type: System.String
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

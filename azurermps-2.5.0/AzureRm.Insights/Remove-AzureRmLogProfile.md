@@ -5,11 +5,11 @@ ms.assetid: DDA137FD-4EB3-4FB7-A202-978922038AFC
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.insights/remove-azurermlogprofile
 schema: 2.0.0
 ms.openlocfilehash: 78d2bff42382564bb07f680b5db8db39707ffb97
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428715"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141929111"
 ---
 # Remove-AzureRmLogProfile
 
@@ -26,15 +26,15 @@ Remove-AzureRmLogProfile -Name <String> [-PassThru] [-DefaultProfile <IAzureCont
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmLogProfile** menghapus profil log.
-Cmdlet ini menerapkan pola ShouldProcess, misalnya meminta konfirmasi dari pengguna sebelum benar-benar membuat, mengubah, atau menghapus sumber daya.
+Cmdlet **Remove-AzureRmProfile** menghapus profil log.
+Cmdlet ini menerapkan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar membuat, mengubah, atau menghapus sumber daya.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -49,7 +49,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama profil log yang akan dihapus.
+Menentukan nama profil log untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{fill passThru Description}}
+{{Fill PassThru Description}}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

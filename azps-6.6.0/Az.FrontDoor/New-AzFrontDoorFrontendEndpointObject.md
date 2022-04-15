@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorFrontendEndpointObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorFrontendEndpointObject.md
 ms.openlocfilehash: 1ec5bec23af843b8fa0780d6c1e3956c4f0099c9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140255005"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141956373"
 ---
 # New-AzFrontDoorFrontendEndpointObject
 
 ## SYNOPSIS
-Membuat Objek PSFrontendEndpoint untuk pembuatan Pintu Depan
+Membuat Objek PSFrontendPoint untuk pembuatan Pintu Depan
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorfrontendendpointobject) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorfrontendendpointobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ New-AzFrontDoorFrontendEndpointObject -Name <String> -HostName <String>
 ```
 
 ## DESCRIPTION
-Membuat Objek PSFrontendEndpoint untuk pembuatan Pintu Depan
+Membuat Objek PSFrontendPoint untuk pembuatan Pintu Depan
 
 ## EXAMPLES
 
@@ -110,8 +110,8 @@ Accept wildcard characters: False
 ```
 
 ### -HostName
-Nama host frontendEndpoint.
-Harus nama domain.
+Nama host frontendpoint.
+Harus berupa nama domain.
 
 ```yaml
 Type: System.String
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinimumTlsVersion
-Versi TLS minimal diperlukan dari klien untuk menetapkan handshake SSL dengan Front Door.
+Versi TLS minimum yang diperlukan dari klien untuk membuat jabat tangan SSL dengan Pintu Depan.
 
 ```yaml
 Type: System.String
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecretName
-Nama rahasia Key Vault mewakili sertifikat penuh PFX
+Nama rahasia Key Vault yang mewakili sertifikat lengkap PFX
 
 ```yaml
 Type: System.String
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecretVersion
-Versi rahasia Key Vault mewakili sertifikat penuh PFX
+Versi rahasia Key Vault yang mewakili sertifikat penuh PFX
 
 ```yaml
 Type: System.String
@@ -201,8 +201,8 @@ Accept wildcard characters: False
 ```
 
 ### -SessionAffinityEnabledState
-Apakah akan memperbolehkan sesi afiliasi pada host ini.
-Nilai default Dinonaktifkan
+Apakah memperbolehkan afinitas sesi pada host ini.
+Nilai default adalah Dinonaktifkan
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSEnabledState
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -SessionAffinityTtlInSeconds
-TTL yang digunakan dalam detik untuk afiliasi sesi, jika ada. Nilai default adalah 0
+TTL yang digunakan dalam detik untuk afinitas sesi, jika ada. Nilai defaultnya adalah 0
 
 ```yaml
 Type: System.Int32
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -Vault
-Key Vault berisi sertifikat SSL
+Key Vault yang berisi sertifikat SSL
 
 ```yaml
 Type: System.String
@@ -263,11 +263,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.FrontDoor.Models.PSFrontendEndpoint

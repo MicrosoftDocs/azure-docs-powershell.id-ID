@@ -4,11 +4,11 @@ Module Name: Azs.Network.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 3f5fbef7c67676f16793b63a8448517ca24aa7e5
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132415153"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142135367"
 ---
 # Get-AzsNetworkAdminOverview
 
@@ -22,7 +22,7 @@ Get-AzsNetworkAdminOverview [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Dapatkan gambaran umum status penyedia sumber daya jaringan. Properti individu menyediakan jumlah mendetail penggunaan dan kesehatan sumber daya menurut komponen.
+Dapatkan gambaran umum status penyedia sumber daya jaringan. Properti individual menyediakan jumlah mendetail penggunaan sumber daya dan kesehatan menurut komponen.
 
 ## EXAMPLES
 
@@ -38,12 +38,12 @@ Dapatkan gambaran umum admin jaringan.
 (Get-AzsNetworkAdminOverview).PublicIpAddressUsage
 ```
 
-Dapatkan penggunaan alamat ip publik.
+Dapatkan penggunaan alamat IP publik.
 
 ## PARAMETERS
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

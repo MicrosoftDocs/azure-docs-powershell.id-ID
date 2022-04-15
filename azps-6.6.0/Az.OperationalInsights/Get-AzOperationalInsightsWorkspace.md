@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsWorkspace.md
 ms.openlocfilehash: d47eae5b0145b16f6e1315cb5d893b850a8d3bb0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140280031"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141951027"
 ---
 # Get-AzOperationalInsightsWorkspace
 
@@ -19,7 +19,7 @@ ms.locfileid: "140280031"
 Mendapatkan informasi tentang ruang kerja.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightsworkspace) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightsworkspace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Get-AzOperationalInsightsWorkspace [[-ResourceGroupName] <String>] [[-Name] <Str
 
 ## DESCRIPTION
 Cmdlet **Get-AzOperationalInsightsWorkspace** mendapatkan informasi tentang ruang kerja yang sudah ada.
-Jika Anda menentukan nama ruang kerja, cmdlet ini mendapatkan informasi tentang ruang kerja itu.
+Jika Anda menentukan nama ruang kerja, cmdlet ini akan mendapatkan informasi tentang ruang kerja tersebut.
 Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua ruang kerja dalam grup sumber daya.
 Jika Anda tidak menentukan nama dan grup sumber daya, cmdlet ini mendapatkan informasi tentang semua ruang kerja dalam langganan.
 
@@ -41,12 +41,12 @@ Jika Anda tidak menentukan nama dan grup sumber daya, cmdlet ini mendapatkan inf
 PS C:\>Get-AzOperationalInsightsWorkspace -Name "MyWorkspace" -ResourceGroupName "ContosoResourceGroup"
 ```
 
-Perintah ini mendapatkan ruang kerja yang bernama MyWorkspace dalam grup sumber daya bernama ContosoResourceGroup.
+Perintah ini mendapatkan ruang kerja bernama MyWorkspace dalam grup sumber daya bernama ContosoResourceGroup.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

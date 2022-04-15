@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Invoke-AzDataBoxEdgeDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Invoke-AzDataBoxEdgeDevice.md
 ms.openlocfilehash: 5ad5c4ebab8e94661fb4dcd1db5316af9302a478
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140078111"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142053155"
 ---
 # Invoke-AzDataBoxEdgeDevice
 
 ## SYNOPSIS
-Menjalankan tindakan tertentu pada perangkat.
+Memanggil tindakan tertentu pada perangkat.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.databoxedge/invoke-azdataboxedgedevice) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/invoke-azdataboxedgedevice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -77,7 +77,7 @@ Invoke-AzDataBoxEdgeDevice -DeviceObject <PSDataBoxEdgeDevice> [-InstallUpdate] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Invoke-AzDataBoxEdgeDevice** menjalankan tindakan untuk memindai, mengunduh dan menginstal pembaruan pada perangkat Microsoft Edge Kotak Data. Pemindaian otomatis berjalan di perangkat setiap hari, Anda dapat memicu pindaian secara eksplisit dengan menjalankan cmdlet ini.
+Cmdlet **Invoke-AzDataBoxEdgeDevice** meminta tindakan untuk memindai, mengunduh, dan menginstal pembaruan di perangkat Data Box Edge. Pemindaian otomatis berjalan pada perangkat setiap hari, Anda dapat memicu pemindaian secara eksplisit dengan menjalankan cmdlet ini.
 
 ## EXAMPLES
 
@@ -99,7 +99,7 @@ PS C:\> Invoke-AzDataBoxEdgeDevice -ResourceGroupName resourceGroupName -Name de
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -FetchUpdate
-Mengunduh pembaruan pada kotak data tepi/perangkat gateway
+Mengunduh pembaruan pada perangkat edge/gateway kotak data
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstallUpdate
-Menginstal pembaruan pada kotak data tepi/perangkat gateway
+Menginstal pembaruan pada perangkat edge/gateway kotak data
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScanForUpdate
-Memindai pembaruan pada kotak data tepi/perangkat gateway.
+Memindai pembaruan di perangkat edge/gateway kotak data.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -249,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -264,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -279,11 +279,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

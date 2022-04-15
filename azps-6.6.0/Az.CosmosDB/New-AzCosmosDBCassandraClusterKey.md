@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBCassandraClusterKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBCassandraClusterKey.md
 ms.openlocfilehash: 28532cf1a1cf91b72ea4c65778751c51d6846606
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140257633"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142053749"
 ---
 # New-AzCosmosDBCassandraClusterKey
 
 ## SYNOPSIS
-Membuat Kunci Kluster CosmosDB Baru.
+Membuat Kunci Kluster CosmosDB Cassandra yang baru.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbcassandraclusterkey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbcassandraclusterkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-AzCosmosDBCassandraClusterKey -Name <String> -OrderBy <String> [-DefaultProf
 ```
 
 ## DESCRIPTION
-**New-AzCosmosDBCass clusterClusterKey** membuat kunci kluster CosmosDB Failover baru.
+**New-AzCosmosDBCassandraClusterKey** menciptakan Kunci Kluster CosmosDB Cassandra yang baru.
 
 ## EXAMPLES
 
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Kunci Kluster Failover.
+Nama Kunci Kluster Cassandra.
 
 ```yaml
 Type: System.String
@@ -74,8 +74,8 @@ Accept wildcard characters: False
 ```
 
 ### -OrderBy
-Pemesanan kunci KlusterBular.
-Nilai yang memungkinkan antara lain: 'Asc', 'Desc'
+Urutan kunci Kluster Cassandra.
+Nilai yang memungkinkan termasuk: 'Asc', 'Desc'
 
 ```yaml
 Type: System.String
@@ -90,11 +90,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

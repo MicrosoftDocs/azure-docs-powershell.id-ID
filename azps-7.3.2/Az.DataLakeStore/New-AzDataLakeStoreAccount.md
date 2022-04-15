@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/New-AzDataLakeStoreAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/New-AzDataLakeStoreAccount.md
-ms.openlocfilehash: 2557b91ce98c80c5f9b4b3330a6699ddd63765f1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 173d9b7718844c97a1164b09ad2491975038eda6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140009571"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142035569"
 ---
 # New-AzDataLakeStoreAccount
 
 ## SYNOPSIS
-Membuat akun Data Lake Store baru.
+Membuat akun Baru Penyimpanan Data Lake.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/new-azdatalakestoreaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,11 +39,11 @@ New-AzDataLakeStoreAccount [-ResourceGroupName] <String> [-Name] <String> [-Loca
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataLakeStoreAccount** membuat akun Data Lake Store baru.
+Cmdlet **New-AzDataLakeStoreAccount** membuat akun Baru Data Lake Store.
 
 ## EXAMPLES
 
-### Contoh 1: Buat akun
+### Contoh 1: Membuat akun
 ```
 PS C:\>New-AzDataLakeStoreAccount -Name "ContosoADL" -ResourceGroupName "ContosoOrg" -Location "East US 2"
 ```
@@ -65,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableEncryption
-Menunjukkan bahwa akun tidak akan menerapkan enkripsi pada akun.
+Menunjukkan bahwa akun tidak akan memiliki bentuk enkripsi apa pun yang diterapkan padanya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -94,7 +97,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Encryption
+### -Enkripsi
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Management.DataLake.Store.Models.EncryptionConfigType]
 Parameter Sets: UserOrSystemAssignedEncryption
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi akun tersebut.
+Menentukan nama grup sumber daya yang berisi akun.
 
 ```yaml
 Type: System.String
@@ -210,8 +213,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Tier
-Tingkat komitmen yang diinginkan untuk akun ini digunakan.
+### -Tingkat
+Tingkat komitmen yang diinginkan untuk digunakan akun ini.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Management.DataLake.Store.Models.TierType]
@@ -227,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -235,11 +238,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Hashtable
 
-### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Store.Models.EncryptionConfigType, Microsoft.Azure.Management.DataLake.Store, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Store.Models.EncryptionConfigType, Microsoft.Azure.Management.DataLake.Store, Version=2.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
 ### System.Management.Automation.SwitchParameter
 
-### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Store.Models.TierType, Microsoft.Azure.Management.DataLake.Store, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Store.Models.TierType, Microsoft.Azure.Management.DataLake.Store, Version=2.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
 ## OUTPUTS
 

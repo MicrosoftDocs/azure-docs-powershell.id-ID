@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PolicyInsights/PolicyInsights/help/Get-AzPolicyStateSummary.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PolicyInsights/PolicyInsights/help/Get-AzPolicyStateSummary.md
 ms.openlocfilehash: 83bb215a1bad2144236725d10acc57a32f71e174
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140306581"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141950343"
 ---
 # Get-AzPolicyStateSummary
 
 ## SYNOPSIS
-Mendapatkan ringkasan kondisi kepatuhan kebijakan terbaru untuk sumber daya.
+Mendapatkan ringkasan status kepatuhan kebijakan terbaru untuk sumber daya.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.policyinsights/get-azpolicystatesummary) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.policyinsights/get-azpolicystatesummary) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -69,129 +69,129 @@ Get-AzPolicyStateSummary [-SubscriptionId <String>] -ResourceGroupName <String> 
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### ResourceScope
+### Cakupan Sumber Daya
 ```
 Get-AzPolicyStateSummary -ResourceId <String> [-Top <Int32>] [-From <DateTime>] [-To <DateTime>]
  [-Filter <String>] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Mendapatkan tampilan ringkasan nomor status kepatuhan kebijakan terbaru dalam berbagai lingkup, yang diputuskan ke dalam penetapan kebijakan dan definisi kebijakan. Ini hanya menyertakan negara-negara kebijakan yang tidak patuh.
+Mendapatkan tampilan ringkasan tentang nomor status kepatuhan kebijakan terbaru pada berbagai lingkup, diuraikan ke dalam penetapan kebijakan dan definisi kebijakan. Ini hanya menyertakan status kebijakan yang tidak sesuai.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan ringkasan status kebijakan terbaru yang tidak patuh dalam lingkup langganan saat ini
+### Contoh 1: Dapatkan ringkasan status kebijakan terbaru yang tidak sesuai dalam lingkup langganan saat ini
 ```powershell
 PS C:\> Get-AzPolicyStateSummary
 ```
 
 Mendapatkan tampilan ringkasan status kepatuhan kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini.
 
-### Contoh 2: Mendapatkan ringkasan kondisi kebijakan terbaru yang tidak patuh dalam lingkup langganan tertentu
+### Contoh 2: Dapatkan ringkasan status kebijakan terbaru yang tidak sesuai dalam lingkup langganan tertentu
 ```powershell
 PS C:\> Get-AzPolicyStateSummary -SubscriptionId "fff10b27-fff3-fff5-fff8-fffbe01e86a5"
 ```
 
-Mendapatkan tampilan ringkasan laporan kepatuhan kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya di dalam langganan yang ditentukan.
+Mendapatkan tampilan ringkasan status kepatuhan kebijakan terbaru yang dihasilkan pada hari terakhir untuk semua sumber daya dalam langganan yang ditentukan.
 
-### Contoh 3: Dapatkan ringkasan kondisi kebijakan terbaru yang tidak patuh dalam lingkup grup manajemen
+### Contoh 3: Dapatkan ringkasan status kebijakan yang tidak sesuai terbaru dalam lingkup grup manajemen
 ```powershell
 PS C:\> Get-AzPolicyStateSummary -ManagementGroupName "myManagementGroup"
 ```
 
-Mendapatkan tampilan ringkasan laporan kepatuhan kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya di dalam grup manajemen yang ditentukan.
+Mendapatkan tampilan ringkasan status kepatuhan kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya dalam grup manajemen yang ditentukan.
 
-### Contoh 4: Dapatkan ringkasan status kebijakan terbaru yang tidak patuh dalam lingkup grup sumber daya dalam langganan saat ini
+### Contoh 4: Dapatkan ringkasan status kebijakan terbaru yang tidak sesuai dalam lingkup grup sumber daya dalam langganan saat ini
 ```powershell
 PS C:\> Get-AzPolicyStateSummary -ResourceGroupName "myResourceGroup"
 ```
 
-Mendapatkan tampilan ringkasan status kepatuhan kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya di dalam grup sumber daya yang ditentukan (dalam langganan dalam konteks sesi saat ini).
+Mendapatkan tampilan ringkasan status kepatuhan kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya dalam grup sumber daya tertentu (dalam langganan dalam konteks sesi saat ini).
 
-### Contoh 5: Dapatkan ringkasan kondisi kebijakan terbaru yang tidak patuh dalam lingkup grup sumber daya dalam langganan yang ditentukan
+### Contoh 5: Dapatkan ringkasan status kebijakan terbaru yang tidak sesuai dalam lingkup grup sumber daya dalam langganan tertentu
 ```powershell
 PS C:\> Get-AzPolicyStateSummary -SubscriptionId "fff10b27-fff3-fff5-fff8-fffbe01e86a5" -ResourceGroupName "myResourceGroup"
 ```
 
-Mendapatkan tampilan ringkasan laporan kepatuhan kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya di dalam grup sumber daya yang ditentukan (dalam langganan yang ditentukan).
+Mendapatkan tampilan ringkasan status kepatuhan kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya dalam grup sumber daya tertentu (dalam langganan yang ditentukan).
 
-### Contoh 6: Dapatkan ringkasan kondisi kebijakan terbaru yang tidak patuh untuk sumber daya
+### Contoh 6: Dapatkan ringkasan status kebijakan terbaru yang tidak sesuai untuk sumber daya
 ```powershell
 PS C:\> Get-AzPolicyStateSummary -ResourceId "/subscriptions/fff10b27-fff3-fff5-fff8-fffbe01e86a5/resourceGroups/myResourceGroup/providers/Microsoft.EventHub/namespaces/myns1/eventhubs/eh1/consumergroups/cg1"
 ```
 
-Mendapatkan tampilan ringkasan laporan kepatuhan kebijakan terbaru yang dihasilkan di hari terakhir untuk sumber daya yang ditentukan.
+Mendapatkan tampilan ringkasan status kepatuhan kebijakan terbaru yang dihasilkan pada hari terakhir untuk sumber daya yang ditentukan.
 
-### Contoh 7: Dapatkan ringkasan status kebijakan terbaru yang tidak patuh untuk definisi kumpulan kebijakan dalam langganan saat ini
+### Contoh 7: Dapatkan ringkasan status kebijakan terbaru yang tidak sesuai untuk definisi kumpulan kebijakan dalam langganan saat ini
 ```powershell
 PS C:\> Get-AzPolicyStateSummary -PolicySetDefinitionName "fff58873-fff8-fff5-fffc-fffbe7c9d697"
 ```
 
-Mendapatkan tampilan ringkasan status kepatuhan kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya (dalam penyewa dalam konteks sesi saat ini) yang dihasilkan oleh definisi kumpulan kebijakan yang ditentukan (yang ada dalam langganan dalam konteks sesi saat ini).
+Mendapatkan tampilan ringkasan status kepatuhan kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang diberlakukan oleh definisi kumpulan kebijakan yang ditentukan (yang ada dalam langganan dalam konteks sesi saat ini).
 
-### Contoh 8: Dapatkan ringkasan kondisi kebijakan terbaru yang tidak patuh untuk definisi kumpulan kebijakan di langganan yang ditentukan
+### Contoh 8: Dapatkan ringkasan status kebijakan terbaru yang tidak sesuai untuk definisi kumpulan kebijakan dalam langganan yang ditentukan
 ```powershell
 PS C:\> Get-AzPolicyStateSummary -SubscriptionId "fff10b27-fff3-fff5-fff8-fffbe01e86a5" -PolicySetDefinitionName "fff58873-fff8-fff5-fffc-fffbe7c9d697"
 ```
 
-Mendapatkan tampilan ringkasan status kepatuhan kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang dihasilkan oleh definisi kumpulan kebijakan yang ditentukan (yang ada di dalam langganan tertentu).
+Mendapatkan tampilan ringkasan status kepatuhan kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang diberlakukan oleh definisi kumpulan kebijakan yang ditentukan (yang ada dalam langganan yang ditentukan).
 
-### Contoh 9: Dapatkan ringkasan status kebijakan terbaru yang tidak patuh untuk definisi kebijakan dalam langganan saat ini
+### Contoh 9: Dapatkan ringkasan status kebijakan terbaru yang tidak sesuai untuk definisi kebijakan dalam langganan saat ini
 ```powershell
 PS C:\> Get-AzPolicyStateSummary -PolicyDefinitionName "fff58873-fff8-fff5-fffc-fffbe7c9d697"
 ```
 
-Mendapatkan tampilan ringkasan status kepatuhan kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang dihasilkan oleh definisi kebijakan yang ditentukan (yang ada dalam langganan dalam konteks sesi saat ini).
+Mendapatkan tampilan ringkasan status kepatuhan kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang diberlakukan oleh definisi kebijakan yang ditentukan (yang ada dalam langganan dalam konteks sesi saat ini).
 
-### Contoh 10: Dapatkan ringkasan kondisi kebijakan terbaru yang tidak patuh untuk definisi kebijakan dalam langganan yang ditentukan
+### Contoh 10: Dapatkan ringkasan status kebijakan terbaru yang tidak sesuai untuk definisi kebijakan dalam langganan yang ditentukan
 ```powershell
 PS C:\> Get-AzPolicyStateSummary -SubscriptionId "fff10b27-fff3-fff5-fff8-fffbe01e86a5" -PolicyDefinitionName "fff58873-fff8-fff5-fffc-fffbe7c9d697"
 ```
 
-Mendapatkan tampilan ringkasan status kepatuhan kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang dihasilkan oleh definisi kebijakan yang ditentukan (yang ada dalam langganan yang ditentukan).
+Mendapatkan tampilan ringkasan status kepatuhan kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang diberlakukan oleh definisi kebijakan yang ditentukan (yang ada dalam langganan yang ditentukan).
 
-### Contoh 11: Mendapatkan ringkasan status kebijakan terbaru yang tidak patuh untuk penetapan kebijakan di langganan saat ini
+### Contoh 11: Dapatkan ringkasan status kebijakan terbaru yang tidak sesuai untuk penetapan kebijakan dalam langganan saat ini
 ```powershell
 PS C:\> Get-AzPolicyStateSummary -PolicyAssignmentName "ddd8ef92e3714a5ea3d208c1"
 ```
 
-Mendapatkan tampilan ringkasan status kepatuhan kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya (dalam penyewa dalam konteks sesi saat ini) yang dihasilkan oleh penetapan kebijakan yang ditentukan (yang ada dalam langganan dalam konteks sesi saat ini).
+Mendapatkan tampilan ringkasan status kepatuhan kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang dipenrpengaruh oleh penetapan kebijakan yang ditentukan (yang ada dalam langganan dalam konteks sesi saat ini).
 
-### Contoh 12: Mendapatkan ringkasan kondisi kebijakan terbaru yang tidak patuh untuk penetapan kebijakan di langganan yang ditentukan
+### Contoh 12: Dapatkan ringkasan status kebijakan terbaru yang tidak sesuai untuk penetapan kebijakan dalam langganan yang ditentukan
 ```powershell
 PS C:\> Get-AzPolicyStateSummary -SubscriptionId "fff10b27-fff3-fff5-fff8-fffbe01e86a5" -PolicyAssignmentName "ddd8ef92e3714a5ea3d208c1"
 ```
 
-Mendapatkan tampilan ringkasan status kepatuhan kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya (dalam penyewa dalam konteks sesi saat ini) yang dihasilkan oleh penetapan kebijakan yang ditentukan (yang ada dalam langganan tertentu).
+Mendapatkan tampilan ringkasan status kepatuhan kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang dipenrpengaruh oleh penetapan kebijakan yang ditentukan (yang ada dalam langganan yang ditentukan).
 
-### Contoh 13: Dapatkan ringkasan status kebijakan terbaru yang tidak patuh untuk penetapan kebijakan di grup sumber daya tertentu dalam langganan saat ini
+### Contoh 13: Dapatkan ringkasan status kebijakan terbaru yang tidak sesuai untuk penetapan kebijakan dalam grup sumber daya tertentu dalam langganan saat ini
 ```powershell
 PS C:\> Get-AzPolicyStateSummary -ResourceGroupName "myResourceGroup" -PolicyAssignmentName "ddd8ef92e3714a5ea3d208c1"
 ```
 
-Mendapatkan tampilan ringkasan status kepatuhan kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya (dalam penyewa dalam konteks sesi saat ini) yang dihasilkan oleh penetapan kebijakan yang ditentukan (yang ada di grup sumber daya dalam langganan dalam konteks sesi saat ini).
+Mendapatkan tampilan ringkasan status kepatuhan kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang diberlakukan oleh penetapan kebijakan yang ditentukan (yang ada dalam grup sumber daya dalam langganan dalam konteks sesi saat ini).
 
-### Contoh 14: Mendapatkan ringkasan status kebijakan terbaru yang tidak patuh dalam lingkup langganan saat ini, dengan opsi Kueri teratas
+### Contoh 14: Dapatkan ringkasan status kebijakan terbaru yang tidak sesuai dalam lingkup langganan saat ini, dengan opsi Kueri teratas
 ```powershell
 PS C:\> Get-AzPolicyStateSummary -Top 5
 ```
 
-Mendapatkan tampilan ringkasan status kepatuhan kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini. The command orders the policy assignment summaries in the results by non-compliant resource counts in descending order, and takes only top 5 of those policy assignment summaries.
+Mendapatkan tampilan ringkasan status kepatuhan kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini. Perintah mengurutkan ringkasan penetapan kebijakan dalam hasil menurut jumlah sumber daya yang tidak sesuai dalam urutan menurun, dan hanya mengambil 5 ringkasan penetapan kebijakan teratas.
 
-### Contoh 15: Dapatkan ringkasan status kebijakan terbaru yang tidak patuh dalam lingkup langganan saat ini, dengan opsi kueri Dari dan Kepada
+### Contoh 15: Dapatkan ringkasan status kebijakan terbaru yang tidak sesuai dalam lingkup langganan saat ini, dengan opsi kueri Dari dan Ke
 ```powershell
 PS C:\> Get-AzPolicyStateSummary -From "2018-03-08 00:00:00Z" -To "2018-03-15 00:00:00Z"
 ```
 
 Mendapatkan tampilan ringkasan status kepatuhan kebijakan terbaru yang dihasilkan dalam rentang tanggal yang ditentukan untuk semua sumber daya dalam langganan dalam konteks sesi saat ini.
 
-### Contoh 16: Dapatkan ringkasan status kebijakan terbaru yang tidak patuh dalam lingkup langganan saat ini, dengan opsi Filter kueri
+### Contoh 16: Dapatkan ringkasan status kebijakan terbaru yang tidak sesuai dalam lingkup langganan saat ini, dengan opsi Filter kueri
 ```powershell
 PS C:\> Get-AzPolicyStateSummary -Filter "(PolicyDefinitionAction eq 'deny' or PolicyDefinitionAction eq 'audit') and ResourceLocation ne 'eastus'"
 ```
 
 Mendapatkan tampilan ringkasan status kepatuhan kebijakan terbaru yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini.
-Perintah tersebut membatasi hasil yang dikembalikan oleh pemfilteran berdasarkan tindakan definisi kebijakan (termasuk tindakan tolak atau audit), dan lokasi sumber daya (tidak termasuk lokasi eastus).
+Perintah membatasi hasil yang dikembalikan dengan pemfilteran berdasarkan tindakan definisi kebijakan (termasuk tindakan penolakan atau audit), dan lokasi sumber daya (tidak termasuk lokasi eastus).
 
 ## PARAMETERS
 
@@ -226,8 +226,8 @@ Accept wildcard characters: False
 ```
 
 ### -Dari
-Timestamp yang diformat ISO 8601 yang menentukan waktu mulai interval ke kueri.
-Ketika tidak ditentukan, default nilai parameter 'To' dikurangi 1 hari.
+Stempel waktu yang diformat ISO 8601 menentukan waktu mulai interval ke kueri.
+Ketika tidak ditentukan, default ke nilai parameter 'Kepada' dikurangi 1 hari.
 
 ```yaml
 Type: System.DateTime
@@ -346,9 +346,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Ke
-Timestamp yang diformat ISO 8601 yang menentukan waktu akhir interval ke kueri.
-Bila tidak ditentukan, defaultnya adalah waktu permintaan.
+### -Kepada
+Stempel waktu yang diformat ISO 8601 menentukan waktu akhir interval ke kueri.
+Ketika tidak ditentukan, default ke waktu permintaan.
 
 ```yaml
 Type: System.DateTime
@@ -363,7 +363,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-Jumlah rekaman maksimum yang dikembalikan.
+Jumlah maksimum rekaman yang akan dikembalikan.
 
 ```yaml
 Type: System.Int32
@@ -378,7 +378,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

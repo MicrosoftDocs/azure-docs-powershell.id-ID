@@ -4,17 +4,17 @@ Module Name: AzureRM.Compute
 ms.assetid: BB6AFC7D-7E74-4D39-B336-A011B98D0682
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/get-azurermvmsssku
 schema: 2.0.0
-ms.openlocfilehash: 6972ecc61a9fa5522393df278653dc23e2fbbe1c13366c44c5d5d5c0583767c6
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 307b9852f506368e1e13c02fac4532dab4d2ddd2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416443"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141929904"
 ---
 # Get-AzureRmVmssSku
 
 ## SYNOPSIS
-Dapatkan SKU yang tersedia untuk VMSS.
+Mendapatkan SKU yang tersedia untuk VMSS.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -26,21 +26,21 @@ Get-AzureRmVmssSku [-ResourceGroupName] <String> [-VMScaleSetName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmVmssSku** mendapatkan SKU yang tersedia untuk Virtual Machine Scale Set (VMSS).
+Cmdlet **Get-AzureRmVmssSku** mendapatkan SKU yang tersedia untuk Kumpulan Skala Mesin Virtual (VMSS).
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua SKU yang tersedia dari VMSS
+### Contoh 1: Dapatkan semua SKU yang tersedia dari VMSS
 ```
 PS C:\> Get-AzureRmVmssSku -ResourceGroupName "ContosoGroup" -VMScaleSetName "ContosoVMSS"
 ```
 
-Perintah ini mendapatkan semua SKU yang tersedia dari VMSS bernama ContosoVMSS yang dimiliki oleh grup sumber daya bernama ContosoGroup.
+Perintah ini mendapatkan semua SKU yang tersedia dari VMSS bernama ContosoVMSS yang termasuk dalam grup sumber daya bernama ContosoGroup.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -85,11 +85,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
@@ -100,6 +100,6 @@ Cmdlet ini tidak menerima input apa pun.
 
 ## RELATED LINKS
 
-[Get-AzureRmVmss](./Get-AzureRmVmss.md)
+[Get-AzureRmVms](./Get-AzureRmVmss.md)
 
 

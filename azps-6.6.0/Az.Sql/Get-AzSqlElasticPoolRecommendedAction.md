@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticPoolRecommendedAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticPoolRecommendedAction.md
 ms.openlocfilehash: 56e0907e280cdcdc698316d78a0bdfe4a1c510cc
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140097875"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141948381"
 ---
 # Get-AzSqlElasticPoolRecommendedAction
 
 ## SYNOPSIS
-Dapatkan satu atau beberapa tindakan yang disarankan untuk Azure SQL Elastis Pool Advisor.
+Mendapatkan satu atau beberapa tindakan yang direkomendasikan untuk Azure SQL Elastic Pool Advisor.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlelasticpoolrecommendedaction) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlelasticpoolrecommendedaction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,11 +30,11 @@ Get-AzSqlElasticPoolRecommendedAction [-RecommendedActionName <String>] -ServerN
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlElasticPoolRecommendedAction** mendapatkan satu atau beberapa tindakan yang direkomendasikan untuk Penasihat Pool Elastis Azure SQL.
+Cmdlet **Get-AzSqlElasticPoolRecommendedAction** mendapatkan satu atau beberapa tindakan yang direkomendasikan untuk Azure SQL Elastic Pool Advisor.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan semua tindakan yang disarankan untuk Penasihat
+### Contoh 1: Mencantumkan semua tindakan yang direkomendasikan untuk Penasihat
 ```
 PS C:\>Get-AzSqlElasticPoolRecommendedAction -ResourceGroupName "WIRunnersProd" -ServerName "wi-runner-australia-east" -ElasticPoolName "WIRunnerPool" -AdvisorName "CreateIndex"
 ElasticPoolName            : WIRunnerPool
@@ -128,9 +128,9 @@ TimeSeries                 : {}
 ValidSince                 : 4/21/2016 3:24:47 PM
 ```
 
-Perintah ini mendapatkan daftar semua tindakan penasihat yang disarankan bernama CreateIndex tersedia untuk kolam elastis yang bernama WIRunnerPool.
+Perintah ini mendapatkan daftar semua tindakan yang direkomendasikan dari Penasihat bernama CreateIndex yang tersedia untuk kumpulan elastis bernama WIRunnerPool.
 
-### Contoh 2: Mendapatkan satu tindakan yang disarankan untuk Penasihat
+### Contoh 2: Dapatkan satu tindakan yang direkomendasikan untuk Penasihat
 ```
 PS C:\>Get-AzSqlElasticPoolRecommendedAction -ResourceGroupName "WIRunnersProd" -ServerName "wi-runner-australia-east" -ElasticPoolName "WIRunnerPool" -AdvisorName "CreateIndex" -RecommendedActionName "IR_[test_schema]_[test_table_0.0361551]_6C7AE8CC9C87E7FD5893"
 ElasticPoolName            : WIRunnerPool
@@ -164,12 +164,12 @@ TimeSeries                 : {}
 ValidSince                 : 4/21/2016 3:24:47 PM
 ```
 
-Perintah ini mendapatkan tindakan yang disarankan bernama IR_\[test_schema\]_\[test_table_0.0361551\]_6C7AE8CC9C87E7FD5893 dari Penasihat bernama CreateIndex.
+Perintah ini mendapatkan tindakan yang direkomendasikan bernama IR_\[test_schema\]_\[test_table_0.0361551\]_6C7AE8CC9C87E7FD5893 dari Penasihat bernama CreateIndex.
 
 ## PARAMETERS
 
 ### -AdvisorName
-Menentukan nama penasihat di mana cmdlet meminta tindakan yang disarankan.
+Menentukan nama penasihat yang meminta tindakan yang disarankan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -198,8 +198,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ElastisPoolName
-Menentukan nama pool elastis di mana cmdlet meminta tindakan yang direkomendasikan.
+### -ElasticPoolName
+Menentukan nama kumpulan elastis di mana cmdlet ini meminta tindakan yang direkomendasikan.
 
 ```yaml
 Type: System.String
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecommendedActionName
-Menentukan nama tindakan yang disarankan yang akan cmdlet dapatkan.
+Menentukan nama tindakan yang disarankan yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya server yang berisi kelompok elastis ini.
+Menentukan nama grup sumber daya server yang berisi kumpulan elastis ini.
 
 ```yaml
 Type: System.String
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server tempat kolam elastis berada.
+Menentukan nama server tempat kumpulan elastis berada.
 
 ```yaml
 Type: System.String
@@ -259,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -270,7 +270,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Sql.RecommendedAction.Model.AzureSqlElasticPoolRecommendedActionModel
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, sql, elastispool, mssql, advisor, recommendedaction
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, elastispool, mssql, penasihat, rekomendasi
 
 ## RELATED LINKS
 
@@ -282,4 +282,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzSqlElasticPoolRecommendedActionState](./Set-AzSqlElasticPoolRecommendedActionState.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseCopy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseCopy.md
-ms.openlocfilehash: 44591a57ac2517497ac3051db6144e82e3cbe042
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2bb24c7c270ec301d8df47831ffd5979f7361cae
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140400623"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142026299"
 ---
 # New-AzSqlDatabaseCopy
 
 ## SYNOPSIS
-Membuat salinan data SQL Database yang menggunakan snapshot pada saat ini.
+Membuat salinan SQL Database yang menggunakan snapshot pada saat ini.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqldatabasecopy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,15 +42,15 @@ New-AzSqlDatabaseCopy [-DatabaseName] <String> [-Tags <Hashtable>] [-CopyResourc
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSqlDatabaseCopy** membuat salinan Azure SQL Database yang menggunakan snapshot data saat ini. Gunakan cmdlet ini, Start-AzSqlDatabaseCopy cmdlet untuk membuat salinan database satu kali. Cmdlet ini mengembalikan objek **Database** salinan.
-Catatan: Gunakan cmdlet New-AzSqlDatabaseSecondary cmdlet untuk mengonfigurasi geo-replication untuk database.
+Cmdlet **New-AzSqlDatabaseCopy** membuat salinan Azure SQL Database yang menggunakan snapshot data saat ini. Gunakan cmdlet ini, bukan cmdlet Start-AzSqlDatabaseCopy untuk membuat salinan database satu kali. Cmdlet ini mengembalikan objek **Database** dari salinan.
+Catatan: Gunakan cmdlet New-AzSqlDatabaseSecondary untuk mengonfigurasi geo-replikasi untuk database.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
 ## EXAMPLES
 
 ### Contoh 1
 
-Membuat salinan data SQL Database yang menggunakan snapshot pada saat ini. (otomatisgenerated)
+Membuat salinan SQL Database yang menggunakan snapshot pada saat ini. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -56,7 +59,7 @@ New-AzSqlDatabaseCopy -CopyDatabaseName <String> -CopyResourceGroupName <String>
 
 ### Contoh 2
 
-Membuat salinan data SQL Database yang menggunakan snapshot pada saat ini. (otomatisgenerated)
+Membuat salinan SQL Database yang menggunakan snapshot pada saat ini. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 
@@ -68,7 +71,7 @@ New-AzSqlDatabaseCopy -CopyDatabaseName <String> -CopyResourceGroupName <String>
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupStorageRedundancy
-Kelebihan penyimpanan Cadangan digunakan untuk menyimpan cadangan untuk SQL Database. Opsinya adalah: Lokal, Zona dan Geo.
+Redundansi penyimpanan Cadangan digunakan untuk menyimpan cadangan untuk SQL Database. Opsinya adalah: Lokal, Zona dan Geo.
 
 ```yaml
 Type: System.String
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeGeneration
-Pembuatan perhitungan untuk ditetapkan ke salinan baru.
+Pembuatan komputasi untuk ditetapkan ke salinan baru.
 
 ```yaml
 Type: System.String
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -CopyDatabaseName
-Menentukan nama SQL Database salin.
+Menentukan nama salinan SQL Database.
 
 ```yaml
 Type: System.String
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -CopyResourceGroupName
-Menentukan nama Grup Sumber Daya Azure untuk menetapkan salinan tersebut.
+Menentukan nama Grup Sumber Daya Azure tempat untuk menetapkan salinan.
 
 ```yaml
 Type: System.String
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -CopyServerName
-Menentukan nama grup yang SQL Server menjadi host salinan tersebut.
+Menentukan nama SQL Server yang menjadi host salinan.
 
 ```yaml
 Type: System.String
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Menentukan nama dokumen SQL Database disalin.
+Menentukan nama SQL Database untuk disalin.
 
 ```yaml
 Type: System.String
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -188,8 +191,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ElastisPoolName
-Menentukan nama pool elastis di mana untuk menetapkan salinan.
+### -ElasticPoolName
+Menentukan nama kumpulan elastis untuk menetapkan salinan.
 
 ```yaml
 Type: System.String
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama dokumen SQL Server berisi database untuk disalin.
+Menentukan nama SQL Server yang berisi database untuk disalin.
 
 ```yaml
 Type: System.String
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceObjectiveName
-Menentukan nama layanan yang ditetapkan untuk salinan tersebut.
+Menentukan nama tujuan layanan untuk ditetapkan ke salinan.
 
 ```yaml
 Type: System.String
@@ -263,8 +266,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tag
-Menentukan pasangan Nilai kunci dalam bentuk tabel hash untuk dikaitkan dengan Azure SQL Database nilai. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+### -Tags
+Menentukan pasangan Nilai kunci dalam bentuk tabel hash untuk dikaitkan dengan salinan Azure SQL Database. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -VCore
-Angka Vcore dari salinan Database Azure Sql.
+Nomor Vcore dari salinan Database Azure Sql.
 
 ```yaml
 Type: System.Int32
@@ -294,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneRedundant
-Kelebihan zona untuk dikaitkan dengan Database Azure Sql. Properti ini hanya dapat diatur untuk database edisi Hyperscale.
+Redundansi zona untuk dikaitkan dengan Database Azure Sql. Properti ini hanya dapat diatur untuk database edisi Hyperscale.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -309,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -325,7 +328,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -340,7 +343,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -354,6 +357,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzSqlDatabaseSecbasery](./New-AzSqlDatabaseSecondary.md)
+[New-AzSqlDatabaseSecondary](./New-AzSqlDatabaseSecondary.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

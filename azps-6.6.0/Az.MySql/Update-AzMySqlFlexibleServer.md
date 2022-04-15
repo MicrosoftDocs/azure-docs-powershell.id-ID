@@ -6,21 +6,21 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlFlexibleServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlFlexibleServer.md
 ms.openlocfilehash: 80356b65dcc830fe47e68e2bc5d81623493452d5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140308023"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142048439"
 ---
 # Update-AzMySqlFlexibleServer
 
 ## SYNOPSIS
 Memperbarui server fleksibel MySQL yang sudah ada.
 Isi permintaan dapat berisi satu hingga banyak properti yang ada dalam definisi server normal.
-Gunakan Update-AzMySqlFlexibleServerConfiguration ini jika Anda ingin memperbarui parameter server seperti wait_timeout atau net_retry_count.
+Gunakan Update-AzMySqlFlexibleServerConfiguration jika Anda menginginkan parameter server pembaruan seperti wait_timeout atau net_retry_count.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mysql/update-azmysqlflexibleserver) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.mysql/update-azmysqlflexibleserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Update-AzMySqlFlexibleServer -InputObject <IMySqlIdentity> [-AdministratorLoginP
 ## DESCRIPTION
 Memperbarui server fleksibel MySQL yang sudah ada.
 Isi permintaan dapat berisi satu hingga banyak properti yang ada dalam definisi server normal.
-Gunakan Update-AzMySqlFlexibleServerConfiguration ini jika Anda ingin memperbarui parameter server seperti wait_timeout atau net_retry_count.
+Gunakan Update-AzMySqlFlexibleServerConfiguration jika Anda menginginkan parameter server pembaruan seperti wait_timeout atau net_retry_count.
 
 ## EXAMPLES
 
@@ -60,7 +60,7 @@ mysql-test   West US 2 Standard_D2ds_v4 GeneralPurpose admin              5.7   
 
 Cmdlet ini memperbarui server MySql menurut grup sumber daya dan nama server.
 
-### Contoh 2: Perbarui server MySql berdasarkan identitas.
+### Contoh 2: Update MySql server by identity.
 ```powershell
 PS C:\> Get-AzMySqlFlexibleServer -ResourceGroupName PowershellMySqlTest -ServerName mysql-test | Update-AzMySqlFlexibleServer -BackupRetentionDay 23 -StorageInMb 10240
 
@@ -69,12 +69,12 @@ Name                 Location  SkuName          SkuTier        AdministratorLogi
 mysql-test   West US 2 Standard_D2ds_v4 GeneralPurpose admin              5.7     32
 ```
 
-Cmdlet ini memperbarui server MySql berdasarkan identitas.
+Cmdlet ini memperbarui server MySql menurut identitas.
 
 ## PARAMETERS
 
 ### -AdministratorLoginPassword
-Kata sandi administrator masuk.
+Kata sandi log masuk administrator.
 
 ```yaml
 Type: System.Security.SecureString
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan.
+Jalankan perintah sebagai pekerjaan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -104,8 +104,8 @@ Accept wildcard characters: False
 ```
 
 ### -BackupRetentionDay
-Pencadangan hari penyimpanan untuk server.
-Hitungan hari antara 7 dan 35.
+Mencadangkan hari penyimpanan untuk server.
+Hitungan hari adalah antara 7 dan 35.
 
 ```yaml
 Type: System.Int32
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 
 ### -HighAvailability
 Mengaktifkan atau menonaktifkan fitur ketersediaan tinggi.
-Nilai default adalah Dinonaktifkan.
+Nilai defaultnya adalah Nonaktif.
 Default: Dinonaktifkan.
 
 ```yaml
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Parameter Identitas.
-Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.IMySqlIdentity
@@ -169,8 +169,8 @@ Accept wildcard characters: False
 
 ### -MaintenanceWindow
 Periode waktu (UTC) yang ditetapkan untuk pemeliharaan.
-Contoh: "Min:23:30" untuk menjadwalkan pada hari Minggu, 23.30 UTC.
-Untuk mengatur kembali ke pas default dalam "Dinonaktifkan"
+Contoh: "Sun:23:30" to schedule on Sunday, 11:30pm UTC.
+Untuk mengatur kembali ke pass default dalam "Nonaktif"
 
 ```yaml
 Type: System.String
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicationRole
-Replikasi peran server.
+Peran replikasi server.
 
 ```yaml
 Type: System.String
@@ -230,8 +230,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya tersebut.
-Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+Nama grup sumber daya yang berisi sumber daya.
+Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
 
 ```yaml
 Type: System.String
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Nama sku, biasanya, tier + keluarga + inti, misalnya Burstable_B1ms, Standard_D2ds_v4
+Nama sku, biasanya, tingkat + keluarga + inti, misalnya Burstable_B1ms, Standard_D2ds_v4
 
 ```yaml
 Type: System.String
@@ -261,9 +261,9 @@ Accept wildcard characters: False
 ```
 
 ### -SkuTier
-Tingkatan SKU tertentu.
-Nilai yang diterima: Rentetan, GeneralPurpose, Memory Optimized.
-Default: Rentetan.
+Tingkat SKU tertentu.
+Nilai yang diterima: Burstable, GeneralPurpose, Memory Optimized.
+Default: Burstable.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Support.SkuTier
@@ -278,8 +278,8 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAutogrow
-Aktifkan atau nonaktifkan Storage Auto Grow.
-Nilai default Dinonaktifkan
+Mengaktifkan atau menonaktifkan Storage Pertumbuhan Otomatis.
+Nilai defaultnya adalah Nonaktif
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Support.StorageAutogrow
@@ -294,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageInMb
-Penyimpanan maks diperbolehkan untuk server.
+Penyimpanan maks yang diperbolehkan untuk server.
 
 ```yaml
 Type: System.Int32
@@ -339,7 +339,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -355,7 +355,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -370,7 +370,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -396,7 +396,7 @@ INPUTOBJECT <IMySqlIdentity>: Parameter Identitas.
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

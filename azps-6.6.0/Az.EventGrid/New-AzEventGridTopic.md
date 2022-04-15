@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/New-AzEventGridTopic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/New-AzEventGridTopic.md
 ms.openlocfilehash: 48d2f91e767ce10c49f467272be18bffb9202990
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140286205"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141956877"
 ---
 # New-AzEventGridTopic
 
 ## SYNOPSIS
-Membuat Topik Kisi Acara Azure yang baru.
+Membuat Topik Azure Event Grid baru.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventgrid/new-azeventgridtopic) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.eventgrid/new-azeventgridtopic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ New-AzEventGridTopic [-ResourceGroupName] <String> [-Name] <String> [-Location] 
 ```
 
 ## DESCRIPTION
-Membuat Topik Kisi Acara Azure yang baru. Setelah topik dibuat, aplikasi dapat menerbitkan kejadian ke titik akhir topik.
+Membuat Topik Azure Event Grid baru. Setelah topik dibuat, aplikasi dapat menerbitkan acara ke titik akhir topik.
 
 ## EXAMPLES
 
@@ -39,19 +39,19 @@ Membuat Topik Kisi Acara Azure yang baru. Setelah topik dibuat, aplikasi dapat m
 PS C:\> New-AzEventGridTopic -ResourceGroupName MyResourceGroupName -Name Topic1 -Location westus2
 ```
 
-Membuat topik Kisi Acara Topic1 \`\` di lokasi geografis tertentu \`westus2\`, di grup sumber daya \`MyResourceGroupName\`.
+Membuat topik \`Kisi Kejadian1\` di lokasi \`geografis yang ditentukan westus2\`, dalam grup \`sumber daya MyResourceGroupName\`.
 
 ### Contoh 2
 ```powershell
 PS C:\> New-AzEventGridTopic -ResourceGroupName MyResourceGroupName -Name Topic1 -Location westus2 -Tag @{ Department="Finance"; Environment="Test" }
 ```
 
-Membuat topik Kisi Acara \`Topic1\` \`di lokasi geografis tertentu westus2\`, \`di grup sumber daya MyResourceGroupName\` dengan tag "Departemen" dan "Lingkungan" yang ditentukan.
+Membuat topik \`Kisi Kejadian1\` di lokasi \`geografis yang ditentukan westus2\`, dalam grup \`sumber daya MyResourceGroupName\` dengan tag tertentu "Departemen" dan "Lingkungan".
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -InboundIpRule
-Hashtable yang mewakili daftar aturan IP masuk. Setiap aturan menentukan Alamat IP dalam notasi CIDR, misalnya 10.0.0.0/8 beserta Tindakan terkait yang akan dijalankan berdasarkan kecocokan atau tidak ada kecocokan ipMask. Nilai Tindakan yang Mungkin menyertakan Hanya perbolehkan
+Hashtable yang mewakili daftar aturan IP masuk. Setiap aturan menentukan Alamat IP dalam notasi CIDR misalnya, 10.0.0.0/8 bersama dengan Tindakan terkait yang akan dilakukan berdasarkan kecocokan atau tidak ada kecocokan IpMask. Nilai Tindakan yang Mungkin menyertakan Perbolehkan saja
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputMappingDefaultValue
-Hashtable mewakili bidang pemetaan input dengan nilai default dalam format tombol yang dipisahkan spasi = nilai. Nama kunci yang diperbolehkan adalah: subjek, tipedata, dan versidata. Ini digunakan saat InputSchemaHelp adalah customeventschema saja.
+Hashtable yang mewakili bidang pemetaan input dengan nilai default dalam spasi yang dipisahkan kunci = format nilai. Nama kunci yang diizinkan adalah: subjek, tipe kejadian, dan dataversi. Ini digunakan ketika InputSchemaHelp hanya merupakan customeventschema.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputMappingField
-Hashtable yang menyatakan bidang pemetaan input dalam format nilai kunci yang dipisahkan spasi. Nama kunci yang diperbolehkan adalah: id, topik, waktu acara, subjek, tipedata, danversi data. Ini digunakan saat InputSchemaHelp adalah customeventschema saja.
+Hashtable yang mewakili bidang pemetaan input dalam spasi yang dipisahkan kunci = format nilai. Nama kunci yang diizinkan adalah: id, topik, waktu kejadian, subjek, tipe kejadian, dan dataversi. Ini digunakan ketika InputSchemaHelp hanya merupakan customeventschema.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputSchema
-Skema kejadian input untuk topik. Nilai yang diperbolehkan adalah: eventgridschema, customeventschema, atau cloudeventv01Schema. Nilai default adalah eventgridschema. Perlu diperhatikan bahwa jika customeventschema ditentukan, maka parameter InputMappingField atau/dan InputMappingDefaultValue juga perlu ditentukan.
+Skema kejadian input untuk topik tersebut. Nilai yang diizinkan adalah: eventgridschema, customeventschema, atau cloudeventv01Schema. Nilai defaultnya adalah eventgridschema. Perhatikan bahwa jika customeventschema ditentukan, parameter InputMappingField atau/dan InputMappingDefaultValue perlu ditentukan juga.
 
 ```yaml
 Type: System.String
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccess
-Ini menentukan jika lalu lintas diperbolehkan melalui jaringan publik. Secara default fitur ini diaktifkan. Anda bisa selanjutnya membatasi untuk IP tertentu dengan mengonfigurasi parameter InboundIpRule. Nilai yang diperbolehkan akan dinonaktifkan dan diaktifkan.
+Ini menentukan apakah lalu lintas diperbolehkan melalui jaringan publik. Secara default diaktifkan. Anda dapat membatasi lebih lanjut ke IP tertentu dengan mengonfigurasi parameter InboundIpRule. Nilai yang diperbolehkan dinonaktifkan dan diaktifkan.
 
 ```yaml
 Type: System.String
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup sumber daya di mana topik harus dibuat.
+Grup sumber daya tempat topik harus dibuat.
 
 ```yaml
 Type: System.String
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
