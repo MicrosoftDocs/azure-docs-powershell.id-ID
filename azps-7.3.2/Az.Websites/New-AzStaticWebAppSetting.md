@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzStaticWebAppSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzStaticWebAppSetting.md
-ms.openlocfilehash: 37f9cd32792056a9baa3dc74e01c20bc338bb1f3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9e84c62f8f53ba96ff5134d2c59f45d1c877e935
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140560092"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142204489"
 ---
 # New-AzStaticWebAppSetting
 
 ## SYNOPSIS
 Deskripsi untuk Membuat atau memperbarui pengaturan aplikasi situs statis.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/new-azstaticwebappsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Kind Name        Type
      appsettings Microsoft.Web/staticSites/config
 ```
 
-Perintah ini akan membuat atau memperbarui pengaturan aplikasi situs statis.
+Perintah ini membuat atau memperbarui pengaturan aplikasi situs statis.
 
 ### Contoh 2: Membuat atau memperbarui pengaturan aplikasi situs statis menurut saluran.
 ```powershell
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Websites.Models.IWebsitesIdentity
@@ -106,7 +109,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Kind
+### -Jenis
 Jenis sumber daya.
 
 ```yaml
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat sumber daya tersebut berada.
+Nama grup sumber daya tempat sumber daya berada.
 
 ```yaml
 Type: System.String
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -219,15 +222,15 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IWebsitesIdentity>: Parameter Identitas
-  - `[Authprovider <String>]`: Penyedia layanan auth untuk pengguna.
+  - `[Authprovider <String>]`: Penyedia auth untuk pengguna.
   - `[DomainName <String>]`: Nama domain kustom.
   - `[EnvironmentName <String>]`: Pengidentifikasi situs tahapan.
   - `[FunctionAppName <String>]`: Nama aplikasi fungsi yang terdaftar dengan build situs statis.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: Lokasi tempat Anda berencana membuat situs statis.
+  - `[Location <String>]`: Lokasi tempat Anda berencana untuk membuat situs statis.
   - `[Name <String>]`: Nama situs statis.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat sumber daya tersebut berada.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat sumber daya berada.
   - `[SubscriptionId <String>]`: ID langganan Azure Anda. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000).
   - `[Userid <String>]`: Id pengguna pengguna.
 

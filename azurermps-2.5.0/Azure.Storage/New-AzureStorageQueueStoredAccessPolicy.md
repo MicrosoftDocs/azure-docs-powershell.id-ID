@@ -5,16 +5,16 @@ ms.assetid: 351145AC-7C1E-4EB7-A17D-B8B7D8ED8DAB
 online version: https://docs.microsoft.com/en-us/powershell/module/azure.storage/new-azurestoragequeuestoredaccesspolicy
 schema: 2.0.0
 ms.openlocfilehash: 054a5d979a13f5592f062f729e4c8c393a35134a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421054"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141930530"
 ---
 # New-AzureStorageQueueStoredAccessPolicy
 
 ## SYNOPSIS
-Membuat kebijakan akses tersimpan untuk antrean penyimpanan Azure.
+Membuat kebijakan akses yang disimpan untuk antrean penyimpanan Azure.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,16 +27,16 @@ New-AzureStorageQueueStoredAccessPolicy [-Queue] <String> [-Policy] <String> [-P
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureStorageQueueStoredAccessPolicy** membuat kebijakan akses tersimpan untuk antrean penyimpanan Azure.
+Cmdlet **New-AzureStorageQueueStoredAccessPolicy** membuat kebijakan akses yang disimpan untuk antrean penyimpanan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat kebijakan akses tersimpan di antrean penyimpanan
+### Contoh 1: Membuat kebijakan akses yang disimpan dalam antrean penyimpanan
 ```
 PS C:\>New-AzureStorageQueueStoredAccessPolicy -Queue "MyQueue" -Policy "Policy01"
 ```
 
-Perintah ini membuat kebijakan akses bernama Policy01 dalam antrean penyimpanan yang bernama MyQueue.
+Perintah ini membuat kebijakan akses bernama Policy01 dalam antrean penyimpanan bernama Antrean Saya.
 
 ## PARAMETERS
 
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpiryTime
-Menentukan waktu di mana kebijakan akses tersimpan menjadi tidak valid.
+Menentukan waktu ketika kebijakan akses yang disimpan menjadi tidak valid.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -86,9 +86,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Permission
-Menentukan izin dalam kebijakan akses tersimpan untuk mengakses antrean penyimpanan.
-Penting untuk diingat bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis dan Hapus).
+### -Izin
+Menentukan izin dalam kebijakan akses yang disimpan untuk mengakses antrean penyimpanan.
+Penting untuk diperhatikan bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis, dan Hapus).
 
 ```yaml
 Type: System.String
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Menentukan waktu di mana kebijakan akses tersimpan menjadi valid.
+Menentukan waktu di mana kebijakan akses yang disimpan menjadi valid.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -166,7 +166,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureStorageQueueStoredAccessPolicy](./Get-AzureStorageQueueStoredAccessPolicy.md)
 
-[New-AzureStorageContext](./New-AzureStorageContext.md)
+[AzureStorageContext baru](./New-AzureStorageContext.md)
 
 [Remove-AzureStorageQueueStoredAccessPolicy](./Remove-AzureStorageQueueStoredAccessPolicy.md)
 

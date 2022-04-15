@@ -1,59 +1,51 @@
 ---
 external help file: ''
-Module Name: Az.Websites
-online version: https://docs.microsoft.com/powershell/module/az.websites/remove-azstaticwebapp
+Module Name: Az.ConfidentialLedger
+online version: https://docs.microsoft.com/powershell/module/az.confidentialledger/remove-azconfidentialledger
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Remove-AzStaticWebApp.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Remove-AzStaticWebApp.md
-ms.openlocfilehash: d3c362e5fc75c2ce41358d636c61620fe97a4d9e
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConfidentialLedger/help/Remove-AzConfidentialLedger.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConfidentialLedger/help/Remove-AzConfidentialLedger.md
+ms.openlocfilehash: 23bb5558f2b69bead89c61ceddec1ed3f52f7e85
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 04/14/2022
-ms.locfileid: "142204363"
+ms.locfileid: "142173387"
 ---
-# Remove-AzStaticWebApp
+# Remove-AzConfidentialLedger
 
 ## SYNOPSIS
-Deskripsi untuk Menghapus situs statis.
-
-> [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/remove-azstaticwebapp) untuk informasi terbaru.
+Menghapus Buku Besar Rahasia yang sudah ada.
 
 ## SYNTAX
 
 ### Hapus (Default)
 ```
-Remove-AzStaticWebApp -Name <String> -ResourceGroupName <String> [-SubscriptionId <String>]
+Remove-AzConfidentialLedger -Name <String> -ResourceGroupName <String> [-SubscriptionId <String>]
  [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-AzStaticWebApp -InputObject <IWebsitesIdentity> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-AzConfidentialLedger -InputObject <IConfidentialLedgerIdentity> [-DefaultProfile <PSObject>] [-AsJob]
+ [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Deskripsi untuk Menghapus situs statis.
+Menghapus Buku Besar Rahasia yang sudah ada.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus situs statis
+### Contoh 1: Menghapus Buku Besar Rahasia
 ```powershell
-PS C:\> Remove-AzStaticWebApp -ResourceGroupName azure-rg-test -Name staticweb01
+PS C:\> Remove-AzConfidentialLedger `
+  -Name test-ledger `
+  -ResourceGroupName rg-000
 
+# No output
 ```
 
-Perintah ini menghapus situs statis.
-
-### Contoh 2: Menghapus situs statis menurut saluran
-```powershell
-PS C:\> Get-AzStaticWebApp -ResourceGroupName azure-rg-test -Name staticweb02 | Remove-AzStaticWebApp
-
-```
-
-Perintah ini menghapus situs statis menurut saluran.
+Menghapus Buku Kas Rahasia yang ditentukan.
 
 ## PARAMETERS
 
@@ -91,7 +83,7 @@ Accept wildcard characters: False
 Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.Websites.Models.IWebsitesIdentity
+Type: Microsoft.Azure.PowerShell.Cmdlets.ConfidentialLedger.Models.IConfidentialLedgerIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -103,12 +95,12 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama situs statis untuk dihapus.
+Nama Buku Besar Rahasia
 
 ```yaml
 Type: System.String
 Parameter Sets: Delete
-Aliases:
+Aliases: LedgerName
 
 Required: True
 Position: Named
@@ -148,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat sumber daya berada.
+Nama grup sumber daya.
 
 ```yaml
 Type: System.String
@@ -163,8 +155,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan Azure Anda.
-Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000).
+ID langganan Azure.
+Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
 
 ```yaml
 Type: System.String
@@ -214,7 +206,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Websites.Models.IWebsitesIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.ConfidentialLedger.Models.IConfidentialLedgerIdentity
 
 ## OUTPUTS
 
@@ -229,18 +221,11 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IWebsitesIdentity>: Parameter Identitas
-  - `[Authprovider <String>]`: Penyedia auth untuk pengguna.
-  - `[DomainName <String>]`: Nama domain kustom.
-  - `[EnvironmentName <String>]`: Pengidentifikasi situs tahapan.
-  - `[FunctionAppName <String>]`: Nama aplikasi fungsi yang terdaftar dengan build situs statis.
+INPUTOBJECT <IConfidentialLedgerIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: Lokasi tempat Anda berencana untuk membuat situs statis.
-  - `[Name <String>]`: Nama situs statis.
-  - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat sumber daya berada.
-  - `[SubscriptionId <String>]`: ID langganan Azure Anda. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000).
-  - `[Userid <String>]`: Id pengguna pengguna.
+  - `[LedgerName <String>]`: Nama Buku Besar Rahasia
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya.
+  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
 
 ## RELATED LINKS
 

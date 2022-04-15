@@ -1,60 +1,48 @@
 ---
 external help file: ''
-Module Name: Az.VMware
-online version: https://docs.microsoft.com/powershell/module/az.vmware/remove-azvmwarecloudlink
+Module Name: Az.Synapse
+online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-azsynapsekustopool
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Remove-AzVMwareCloudLink.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Remove-AzVMwareCloudLink.md
-ms.openlocfilehash: 31901b703dd8908b588fde3067da9fcd62bc62f1
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseKustoPool.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseKustoPool.md
+ms.openlocfilehash: d8b8d092198e8cd9bd5877e94364c8789d0485eb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 04/14/2022
-ms.locfileid: "141932073"
+ms.locfileid: "142164289"
 ---
-# Remove-AzVMwareCloudLink
+# Remove-AzSynapseKustoPool
 
 ## SYNOPSIS
-Menghapus link awan di awan privat
-
-> [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.vmware/remove-azvmwarecloudlink) untuk informasi terbaru.
+Menghapus kumpulan Kusto.
 
 ## SYNTAX
 
 ### Hapus (Default)
 ```
-Remove-AzVMwareCloudLink -Name <String> -PrivateCloudName <String> -ResourceGroupName <String>
+Remove-AzSynapseKustoPool -Name <String> -ResourceGroupName <String> -WorkspaceName <String>
  [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-AzVMwareCloudLink -InputObject <IVMwareIdentity> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
+Remove-AzSynapseKustoPool -InputObject <ISynapseIdentity> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
  [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Menghapus link awan di awan privat
+Menghapus kumpulan Kusto.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus tautan awan
+### Contoh 1: Menghapus kumpulan Kusto yang sudah ada menurut nama
 ```powershell
-PS C:\> Remove-AzVMwareCloudLink -Name azps_test_cloudlink -PrivateCloudName azps_test_cloud -ResourceGroupName azps_test_group
-
+Remove-AzSynapseKustoPool -ResourceGroupName testrg -WorkspaceName testws -Name testnewkustopool
 ```
 
-Menghapus tautan awan
-
-### Contoh 2: Menghapus tautan awan
-```powershell
-PS C:\> Get-AzVMwareCloudLink -PrivateCloudName azps_test_cloud -ResourceGroupName azps_test_group -Name azps_test_cloudlink | Remove-AzVMwareCloudLink
-
-```
-
-Menghapus tautan awan
+Perintah di atas menghapus kumpulan Kusto bernama "testnewkustopool" di ruang kerja "testws".
 
 ## PARAMETERS
 
@@ -92,7 +80,7 @@ Accept wildcard characters: False
 Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.IVMwareIdentity
+Type: Microsoft.Azure.PowerShell.Cmdlets.Synapse.Models.ISynapseIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -104,12 +92,12 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama sumber daya tautan awan
+Nama kumpulan Kusto.
 
 ```yaml
 Type: System.String
 Parameter Sets: Delete
-Aliases: CloudLinkName
+Aliases: KustoPoolName
 
 Required: True
 Position: Named
@@ -148,21 +136,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PrivateCloudName
-Nama awan pribadi
-
-```yaml
-Type: System.String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResourceGroupName
 Nama grup sumber daya.
 Nama ini tidak peka huruf besar kecil.
@@ -190,6 +163,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: (Get-AzContext).Subscription.Id
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Nama Ruang Kerja
+Nama ruang kerja
+
+```yaml
+Type: System.String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -230,7 +218,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.IVMwareIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.Synapse.Models.ISynapseIdentity
 
 ## OUTPUTS
 
@@ -245,32 +233,17 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IVMwareIdentity>: Parameter Identitas
-  - `[AddonName <String>]`: Nama add-on untuk awan pribadi
-  - `[AuthorizationName <String>]`: Nama Otorisasi Sirkuit ExpressRoute di awan pribadi
-  - `[CloudLinkName <String>]`: Nama sumber daya tautan awan
-  - `[ClusterName <String>]`: Nama kluster di cloud pribadi
-  - `[DatastoreName <String>]`: Nama datastore di kluster cloud privat
-  - `[DhcpId <String>]`: Pengidentifikasi DHCP NSX. Umumnya sama dengan nama tampilan DHCP
-  - `[DnsServiceId <String>]`: Pengidentifikasi Layanan DNS NSX. Umumnya sama dengan nama tampilan Layanan DNS
-  - `[DnsZoneId <String>]`: Pengidentifikasi Zona DNS NSX. Umumnya sama dengan nama tampilan Zona DNS
-  - `[GatewayId <String>]`: Pengidentifikasi Gateway NSX. Umumnya sama dengan nama tampilan Gateway
-  - `[GlobalReachConnectionName <String>]`: Nama koneksi jangkauan global di awan pribadi
-  - `[HcxEnterpriseSiteName <String>]`: Nama Situs HCX Enterprise di awan pribadi
+INPUTOBJECT <ISynapseIdentity>: Parameter Identitas
+  - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database yang dilampirkan.
+  - `[DataConnectionName <String>]`: Nama koneksi data.
+  - `[DatabaseName <String>]`: Nama database dalam kumpulan Kusto.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: Kawasan Azure
-  - `[PlacementPolicyName <String>]`: Nama kebijakan penempatan VMware vSphere Distributed Resource Scheduler (DRS)
-  - `[PortMirroringId <String>]`: Pengidentifikasi Pencerminan Port NSX. Umumnya sama dengan nama tampilan Port Mirroring
-  - `[PrivateCloudName <String>]`: Nama awan pribadi
-  - `[PublicIPId <String>]`: Pengidentifikasi Blok IP Publik NSX. Umumnya sama dengan nama tampilan Blok IP Publik
+  - `[KustoPoolName <String>]`: Nama kumpulan Kusto.
+  - `[Location <String>]`: Nama kawasan Azure.
+  - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
-  - `[ScriptCmdletName <String>]`: Nama sumber daya cmdlet skrip dalam paket skrip di awan pribadi
-  - `[ScriptExecutionName <String>]`: Nama sumber eksekusi skrip yang diminta pengguna
-  - `[ScriptPackageName <String>]`: Nama paket skrip di awan pribadi
-  - `[SegmentId <String>]`: Pengidentifikasi Segmen NSX. Umumnya sama dengan nama tampilan Segmen
   - `[SubscriptionId <String>]`: ID langganan target.
-  - `[VMGroupId <String>]`: Pengidentifikasi Grup VM NSX. Umumnya sama dengan nama tampilan Grup VM
-  - `[VirtualMachineId <String>]`: Pengidentifikasi Mesin Virtual
+  - `[WorkspaceName <String>]`: Nama ruang kerja
 
 ## RELATED LINKS
 
