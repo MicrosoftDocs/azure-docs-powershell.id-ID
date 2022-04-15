@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSparkJobDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSparkJobDefinition.md
-ms.openlocfilehash: 6ba47b1e747bd809ff14961f13ff60c3c110b09f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 804efbd3bb70910f6bbea8f4502c8cc8ef34c69a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140390130"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142364075"
 ---
 # Remove-AzSynapseSparkJobDefinition
 
 ## SYNOPSIS
-Menghapus definisi pekerjaan Grafik Spark dari ruang kerja.
+Menghapus definisi pekerjaan Spark dari ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/remove-azsynapsesparkjobdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzSynapseSparkJobDefinition -InputObject <PSSparkJobDefinitionResource> [
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzSynapseSparkJobDefinition** menghapus definisi pekerjaan Grafik Spark dari ruang kerja.
+Cmdlet **Remove-AzSynapseSparkJobDefinition** menghapus definisi pekerjaan Spark dari ruang kerja.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Cmdlet **Remove-AzSynapseSparkJobDefinition** menghapus definisi pekerjaan Grafi
 PS C:\> Remove-AzSynapseSparkJobDefinition -WorkspaceName ContosoWorkspace -Name ContosoSparkJobDefinition
 ```
 
-Cmdlet ini menghapus definisi pekerjaan Spark yang bernama ContosoSparkJobDefinition dari ruang kerja yang bernama ContosoWorkspace.
+Cmdlet ini menghapus definisi pekerjaan Spark bernama ContosoSparkJobDefinition dari ruang kerja bernama ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
@@ -55,7 +58,7 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Remove-AzSynapseSparkJobDefinition -Name ContosoSparkJobDefinition
 ```
 
-Cmdlet ini menghapus definisi pekerjaan Spark yang bernama ContosoSparkJobDefinition dari ruang kerja yang bernama ContosoWorkspace melalui pipeline.
+Cmdlet ini menghapus definisi pekerjaan Spark bernama ContosoSparkJobDefinition dari ruang kerja bernama ContosoWorkspace melalui pipeline.
 
 ### Contoh 3
 ```powershell
@@ -63,12 +66,12 @@ PS C:\> $sparkJobDefinition = Get-AzSynapseSparkJobDefinition -WorkspaceName Con
 PS C:\> $sparkJobDefinition | Remove-AzSynapseSparkJobDefinition
 ```
 
-Cmdlet ini menghapus definisi pekerjaan Spark yang bernama ContosoSparkJobDefinition dari ruang kerja yang bernama ContosoWorkspace melalui pipeline.
+Cmdlet ini menghapus definisi pekerjaan Spark bernama ContosoSparkJobDefinition dari ruang kerja bernama ContosoWorkspace melalui pipeline.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -97,8 +100,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Definisi pekerjaan grafik apik.
+Objek definisi pekerjaan Spark.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSparkJobDefinitionResource
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama definisi pekerjaan Grafik Apik.
+Nama definisi pekerjaan Spark.
 
 ```yaml
 Type: System.String
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 
 ### -PassThru
 Cmdlet ini tidak mengembalikan objek secara default.
-Jika sakelar ini ditentukan, maka true akan dikembalikan jika berhasil.
+Jika sakelar ini ditentukan, sakelar akan mengembalikan true jika berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +161,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

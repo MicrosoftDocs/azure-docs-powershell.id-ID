@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Set-AzureRmPolicyDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Set-AzureRmPolicyDefinition.md
 ms.openlocfilehash: 4f71814790d5c543a867ad4de0aaac37c98079a7
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425110"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142383243"
 ---
 # Set-AzureRmPolicyDefinition
 
 ## SYNOPSIS
-Memodifikasi definisi kebijakan.
+Mengubah definisi kebijakan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -65,8 +65,8 @@ PS C:\> $PolicyDefinition = Get-AzureRmPolicyDefinition -Name 'VMPolicyDefinitio
 PS C:\> Set-AzureRmPolicyDefinition -Id $PolicyDefinition.ResourceId -Description 'Updated policy to not allow virtual machine creation'
 ```
 
-Perintah pertama mendapatkan definisi kebijakan bernama VMPolicyDefinition dengan menggunakan cmdlet Get-AzureRmPolicyDefinition cmdlet.
-Perintah menyimpan objek tersebut dalam $PolicyDefinition variabel.
+Perintah pertama mendapatkan definisi kebijakan bernama VMPolicyDefinition dengan menggunakan cmdlet Get-AzureRmPolicyDefinition.
+Perintah menyimpan objek tersebut dalam variabel $PolicyDefinition.
 Perintah kedua memperbarui deskripsi definisi kebijakan yang diidentifikasi oleh properti **ResourceId** $PolicyDefinition.
 
 ### Contoh 2: Memperbarui mode definisi kebijakan
@@ -74,7 +74,7 @@ Perintah kedua memperbarui deskripsi definisi kebijakan yang diidentifikasi oleh
 PS C:\> Set-AzureRmPolicyDefinition -Name 'VMPolicyDefinition' -Mode 'All'
 ```
 
-Perintah ini memperbarui definisi kebijakan yang bernama VMPolicyDefinition dengan menggunakan cmdlet Set-AzureRmPolicyDefinition untuk mengatur properti mode menjadi 'All'.
+Perintah ini memperbarui definisi kebijakan bernama VMPolicyDefinition dengan menggunakan cmdlet Set-AzureRmPolicyDefinition untuk mengatur properti modenya ke 'Semua'.
 
 ## PARAMETERS
 
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID sumber daya yang sepenuhnya memenuhi syarat untuk definisi kebijakan yang ditentukan cmdlet ini.
+Menentukan ID sumber daya yang sepenuhnya memenuhi syarat untuk definisi kebijakan yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -155,14 +155,14 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: System.Management.Automation.ActionPreference
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementGroupName
-Nama grup manajemen definisi kebijakan untuk memperbarui.
+Nama grup manajemen definisi kebijakan untuk diperbarui.
 
 ```yaml
 Type: System.String
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama definisi kebijakan yang ditentukan cmdlet ini.
+Menentukan nama definisi kebijakan yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -Parameter
-Deklarasi parameter untuk definisi kebijakan. Anda dapat menggunakan jalur ke nama file atau uri yang berisi deklarasi parameter, atau deklarasi parameter sebagai string.
+Deklarasi parameter untuk definisi kebijakan. Ini bisa berupa jalur ke nama file atau uri yang berisi deklarasi parameter, atau deklarasi parameter sebagai string.
 
 ```yaml
 Type: System.String
@@ -283,7 +283,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Mengindikasikan bahwa cmdlet ini mempertimbangkan versi API prari perilisan bila secara otomatis menentukan versi mana yang akan digunakan.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -313,7 +313,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -325,8 +325,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmPolicyDefinition](./Get-AzureRmPolicyDefinition.md)
 
-[New-AzureRmPolicyDefinition](./New-AzureRmPolicyDefinition.md)
+[AzureRmPolicyDefinition Baru](./New-AzureRmPolicyDefinition.md)
 
-[Remove-AzureRmPolicyDefinition](./Remove-AzureRmPolicyDefinition.md)
+[Hapus-AzureRmPolicyDefinition](./Remove-AzureRmPolicyDefinition.md)
 
 

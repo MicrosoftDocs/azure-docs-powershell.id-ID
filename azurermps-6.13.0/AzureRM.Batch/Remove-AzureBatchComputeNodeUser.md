@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Remove-AzureBatchComputeNodeUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Remove-AzureBatchComputeNodeUser.md
 ms.openlocfilehash: e4ca1d8fe8db34579a8442ed77ce70d320947a70
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420368"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142389697"
 ---
 # Remove-AzureBatchComputeNodeUser
 
 ## SYNOPSIS
-Menghapus akun pengguna dari node perhitungan Batch.
+Menghapus akun pengguna dari simpul komputasi Kumpulan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,25 +29,25 @@ Remove-AzureBatchComputeNodeUser [-PoolId] <String> [-ComputeNodeId] <String> [-
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureBatchComputeNodeUser** menghapus akun pengguna dari node perhitungan Azure Batch.
+Cmdlet **Remove-AzureBatchComputeNodeUser** menghapus akun pengguna dari simpul komputasi Azure Batch.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus pengguna dari node perhitungan tanpa konfirmasi
+### Contoh 1: Menghapus pengguna dari simpul komputasi tanpa konfirmasi
 ```
 PS C:\>Remove-AzureBatchComputeNodeUser -PoolId "Pool01" -ComputeNodeId "ComputeNode01" -Name "User14" -Force -BatchContext $Context
 ```
 
-Perintah ini menghapus pengguna yang bernama User14 dari node hitung bernama ComputeNode01.
-Node perhitungan berada di pool bernama Pool01.
-Perintah ini menentukan parameter *Force.*
-Oleh karena itu, perintah tidak akan meminta konfirmasi Anda.
+Perintah ini menghapus pengguna bernama User14 dari node komputasi bernama ComputeNode01.
+Simpul komputasi berada di kolam renang bernama Pool01.
+Perintah ini menentukan parameter *Paksa* .
+Oleh karena itu, perintah tidak meminta konfirmasi kepada Anda.
 
 ## PARAMETERS
 
 ### -BatchContext
-Menentukan contoh **BatchAccountContext** yang digunakan cmdlet untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeNodeId
-Menentukan ID node perhitungan di mana cmdlet ini menghapus akun pengguna.
+Menentukan ID simpul komputasi tempat cmdlet ini menghapus akun pengguna.
 
 ```yaml
 Type: System.String
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolId
-Menentukan ID pool yang berisi node perhitungan untuk menghapus akun pengguna.
+Menentukan ID kumpulan yang berisi simpul komputasi untuk menghapus akun pengguna.
 
 ```yaml
 Type: System.String
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -171,10 +171,10 @@ Parameter: BatchContext (ByValue)
 
 ## RELATED LINKS
 
-[New-AzureBatchComputeNodeUser](./New-AzureBatchComputeNodeUser.md)
+[AzureBatchComputeNodeUser Baru](./New-AzureBatchComputeNodeUser.md)
 
 [Get-AzureRmBatchAccountKeys](./Get-AzureRmBatchAccountKeys.md)
 
-[Cmdlet Kumpulan Azure](./AzureRM.Batch.md)
+[Cmdlet Azure Batch](./AzureRM.Batch.md)
 
 

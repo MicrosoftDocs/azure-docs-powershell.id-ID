@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageTableStoredAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageTableStoredAccessPolicy.md
-ms.openlocfilehash: 536d09c856b0c504d582a60d85e1073bba16efaa
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f22ebb717183683cc549d52fba190c8979024a8d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140548302"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142365191"
 ---
 # Remove-AzStorageTableStoredAccessPolicy
 
 ## SYNOPSIS
-Menghapus kebijakan akses tersimpan dari tabel penyimpanan Azure.
+Menghapus kebijakan akses yang disimpan dari tabel penyimpanan Azure.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/remove-azstoragetablestoredaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Remove-AzStorageTableStoredAccessPolicy [-Table] <String> [-Policy] <String> [-P
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzStorageTableStoredAccessPolicy** menghapus kebijakan akses tersimpan dari tabel penyimpanan Azure.
+Cmdlet **Remove-AzStorageTableStoredAccessPolicy** menghapus kebijakan akses yang disimpan dari tabel penyimpanan Azure.
 
 ## EXAMPLES
 
@@ -36,7 +39,7 @@ Cmdlet **Remove-AzStorageTableStoredAccessPolicy** menghapus kebijakan akses ter
 PS C:\>Remove-AzStorageTableStoredAccessPolicy -Table "MyTable" -Policy "Policy05"
 ```
 
-Perintah ini menghapus kebijakan yang bernama Policy05 dari tabel penyimpanan yang bernama MyTable.
+Perintah ini menghapus kebijakan bernama Policy05 dari tabel penyimpanan bernama MyTable.
 
 ## PARAMETERS
 
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-dengan Azure.
+komunikasi dengan Azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan bahwa cmdlet ini **mengembalikan Boolean** yang mencerminkan keberhasilan operasi.
+Menunjukkan bahwa cmdlet ini mengembalikan **Boolean** yang mencerminkan keberhasilan operasi.
 Secara default, cmdlet ini tidak mengembalikan nilai.
 
 ```yaml
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

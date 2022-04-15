@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/New-AzureRmContainerService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/New-AzureRmContainerService.md
 ms.openlocfilehash: 9dd2018fe6f84ff4657da799fbcba720e8523bde
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422546"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142358959"
 ---
 # New-AzureRmContainerService
 
 ## SYNOPSIS
-Membuat layanan wadah.
+Membuat layanan kontainer.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -30,7 +30,7 @@ New-AzureRmContainerService [-ResourceGroupName] <String> [-Name] <String>
 
 ## DESCRIPTION
 Cmdlet **New-AzureRmContainerService** membuat layanan kontainer.
-Tentukan objek layanan kontainer yang dapat Anda buat menggunakan cmdlet New-AzureRmContainerServiceConfig.
+Tentukan objek layanan kontainer yang bisa Anda buat dengan menggunakan cmdlet New-AzureRmContainerServiceConfig.
 
 ## EXAMPLES
 
@@ -42,16 +42,16 @@ PS C:\> New-AzureRmContainerService -ResourceGroupName "ResourceGroup17" -Name "
 ```
 
 Perintah pertama membuat grup sumber daya bernama ResourceGroup17 di lokasi yang ditentukan.
-Untuk informasi selengkapnya, lihat New-AzureRmResourceGroup cmdlet.
-Perintah kedua membuat wadah, lalu menyimpannya di variabel $Container baru.
-Untuk informasi selengkapnya, lihat New-AzureRmContainerServiceConfig cmdlet.
-Perintah terakhir membuat layanan wadah untuk wadah yang disimpan di $Container.
-Layanan bernama csResourceGroup17.
+Untuk informasi selengkapnya, lihat cmdlet New-AzureRmResourceGroup.
+Perintah kedua membuat wadah, lalu menyimpannya dalam variabel $Container.
+Untuk informasi selengkapnya, lihat cmdlet New-AzureRmContainerServiceConfig.
+Perintah akhir membuat layanan kontainer untuk wadah yang disimpan di $Container.
+Layanan ini bernama csResourceGroup17.
 
 ## PARAMETERS
 
 ### -AsJob
-Cmdlet RRun di latar belakang dan mengembalikan Pekerjaan untuk melacak kemajuan.
+Cmdlet RRun di latar belakang dan kembalikan Job untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -66,8 +66,8 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerService
-Menentukan objek layanan penampung yang berisi properti untuk layanan baru.
-Untuk mendapatkan objek **ContainerService,** gunakan cmdlet New-AzureRmContainerServiceConfig.
+Menentukan objek layanan kontainer yang berisi properti untuk layanan baru.
+Untuk mendapatkan objek **ContainerService** , gunakan cmdlet New-AzureRmContainerServiceConfig.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSContainerService
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan grup sumber daya di mana cmdlet ini menggunakan layanan wadah.
+Menentukan grup sumber daya tempat cmdlet ini menyebarkan layanan kontainer.
 
 ```yaml
 Type: System.String
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -179,8 +179,8 @@ Parameter: ContainerService (ByValue)
 
 [New-AzureRmContainerServiceConfig](./New-AzureRmContainerServiceConfig.md)
 
-[Remove-AzureRmContainerService](./Remove-AzureRmContainerService.md)
+[Hapus-AzureRmContainerService](./Remove-AzureRmContainerService.md)
 
-[Update-AzureRmContainerService](./Update-AzureRmContainerService.md)
+[Pembaruan-AzureRmContainerService](./Update-AzureRmContainerService.md)
 
 

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/Enable-AzureRmRecoveryServicesBackupProtection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/Enable-AzureRmRecoveryServicesBackupProtection.md
 ms.openlocfilehash: 357256d1c1a754915cbebc978e5c4ccf4440ccf4
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421607"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142384405"
 ---
 # Enable-AzureRmRecoveryServicesBackupProtection
 
 ## SYNOPSIS
-Mengaktifkan pencadangan untuk item dengan kebijakan Proteksi pencadangan tertentu.
+Mengaktifkan pencadangan untuk item dengan kebijakan proteksi Cadangan yang ditentukan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -42,7 +42,7 @@ Enable-AzureRmRecoveryServicesBackupProtection [-Policy] <PolicyBase> [-Name] <S
  [-Confirm] [<CommonParameters>]
 ```
 
-### ModifyProtection
+### Ubah Proteksi
 ```
 Enable-AzureRmRecoveryServicesBackupProtection [-Policy] <PolicyBase> [-Item] <ItemBase> [-VaultId <String>]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -50,11 +50,11 @@ Enable-AzureRmRecoveryServicesBackupProtection [-Policy] <PolicyBase> [-Item] <I
 
 ## DESCRIPTION
 Cmdlet **Enable-AzureRmRecoveryServicesBackupProtection** mengatur kebijakan proteksi Azure Backup pada item.
-Mengatur konteks vault menggunakan cmdlet Set-AzureRmRecoveryServicesVaultContext cmdlet sebelum Anda menggunakan cmdlet saat ini.
+Mengatur konteks kubah menggunakan cmdlet Set-AzureRmRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Mengaktifkan Proteksi cadangan untuk item
+### Contoh 1: Aktifkan proteksi Pencadangan untuk item
 ```
 PS C:\> $Pol = Get-AzureRmRecoveryServicesBackupProtectionPolicy -Name "DefaultPolicy"
 PS C:\> Enable-AzureRmRecoveryServicesBackupProtection -Policy $Pol -Name "V2VM" -ResourceGroupName "RGName1"
@@ -63,13 +63,13 @@ WorkloadName    Operation        Status          StartTime                  EndT
 co03-vm         ConfigureBackup  Completed       11-Apr-16 12:19:49 PM      11-Apr-16 12:19:54 PM
 ```
 
-Cmdlet pertama mendapatkan objek kebijakan default, lalu menyimpannya dalam $Pol variabel.
-Cmdlet kedua mengatur Kebijakan proteksi cadangan untuk komputer virtual ARM bernama V2VM menggunakan kebijakan dalam $Pol.
+Cmdlet pertama mendapatkan objek kebijakan default, lalu menyimpannya dalam variabel $Pol.
+Cmdlet kedua mengatur kebijakan perlindungan Cadangan untuk mesin virtual ARM bernama V2VM menggunakan kebijakan di $Pol.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -84,8 +84,8 @@ Accept wildcard characters: False
 ```
 
 ### -Item
-Menentukan item Cadangan yang memungkinkan proteksi oleh cmdlet ini.
-Untuk mendapatkan **AzureRmRecoveryServicesBackupItem,** gunakan cmdlet Get-AzureRmRecoveryServicesBackupItem cmdlet.
+Menentukan item Cadangan di mana cmdlet ini mengaktifkan proteksi.
+Untuk mendapatkan cmdlet **AzureRmRecoveryServicesBackupItem**, gunakan cmdlet Get-AzureRmRecoveryServicesBackupItem.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ItemBase
@@ -115,8 +115,8 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Menentukan kebijakan proteksi bahwa cmdlet ini terkait dengan item.
-Untuk mendapatkan objek **AzureRmRecoveryServicesBackupProtectionPolicy,** gunakan cmdlet Get-AzureRmRecoveryServicesBackupProtectionPolicy cmdlet.
+Menentukan kebijakan proteksi yang terkait dengan cmdlet ini dengan item.
+Untuk mendapatkan objek **AzureRmRecoveryServicesBackupProtectionPolicy** , gunakan cmdlet Get-AzureRmRecoveryServicesBackupProtectionPolicy.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.PolicyBase
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -231,7 +231,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 Parameter: VaultId (ByValue)
 
 ### Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ItemBase
-Parameter: Item (MenurutNilai)
+Parameter: Item (ByValue)
 
 ## OUTPUTS
 

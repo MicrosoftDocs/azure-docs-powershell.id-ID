@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.autom
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Start-AzureRmAutomationSourceControlSyncJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Start-AzureRmAutomationSourceControlSyncJob.md
-ms.openlocfilehash: a5e9eccf464997caf427ed59e081aeb20a0da308bdbccfa751db29507e39b082
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 4a5864e9572a21442a5333232fe5f705fb1b5687
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140865152"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142390466"
 ---
 # Start-AzureRmAutomationSourceControlSyncJob
 
 ## SYNOPSIS
-Memulai pekerjaan sinkronisasi kontrol sumber Otomatisasi Azure.
+Memulai pekerjaan sinkronisasi kontrol sumber Azure Automation.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ Start-AzureRmAutomationSourceControlSyncJob -SourceControlName <String> [-JobId 
 ```
 
 ## DESCRIPTION
-Cmdlet Start-AzureRmAutomationSourceControlSyncJob memulai pekerjaan sinkronisasi kontrol sumber Azure Automation untuk nama kontrol sumber tertentu.
+Cmdlet Start-AzureRmAutomationSourceControlSyncJob memulai pekerjaan sinkronisasi kontrol Azure Automation souce untuk nama kontrol sumber tertentu.
 
 ## EXAMPLES
 
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

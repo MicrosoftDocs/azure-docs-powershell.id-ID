@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.batch
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Remove-AzureBatchCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Remove-AzureBatchCertificate.md
-ms.openlocfilehash: b04e7fda98a706ce7ff6100739b9f7a7c221ff1b7207cd565e0917ab9eaf6f73
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 7e8159a7a17276d749adb89ea4e1b82118f9b2bd
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419001"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142359516"
 ---
 # Remove-AzureBatchCertificate
 
@@ -38,24 +38,24 @@ Cmdlet **Remove-AzureBatchCertificate** menghapus sertifikat dari akun Azure Bat
 PS C:\>Remove-AzureBatchCertificate -ThumbprintAlgorithm "sha1" -Thumbprint "c1e494a415149c5f211c4778b52f2e834a07247c" -BatchContext $Context
 ```
 
-Perintah ini akan menghapus sertifikat dengan thumbprint yang ditentukan.
+Perintah ini menghapus sertifikat yang memiliki sidik jari yang ditentukan.
 
-### Contoh 2:Menghapus semua sertifikat aktif
+### Contoh 2:Hapus semua sertifikat aktif
 ```
 PS C:\>Get-AzureBatchCertificate -Filter "state eq 'active'" -BatchContext $Context | Remove-AzureBatchCertificate -Force -BatchContext $Context
 ```
 
-Perintah ini mendapatkan semua sertifikat yang aktif dengan menggunakan Get-AzureBatchCertificate cmdlet.
-Perintah ini memberikan sertifikat aktif ke cmdlet saat ini menggunakan operator pipeline.
-Cmdlet tersebut akan menghapus setiap sertifikat.
-Perintah menentukan parameter *Paksa.*
-Oleh karena itu, perintah tidak akan meminta konfirmasi Anda.
+Perintah ini mendapatkan semua sertifikat yang aktif dengan menggunakan cmdlet Get-AzureBatchCertificate.
+Perintah melewati sertifikat aktif ke cmdlet saat ini menggunakan operator pipeline.
+Cmdlet itu menghapus setiap sertifikat.
+Perintah menentukan parameter *Paksa* .
+Oleh karena itu, perintah tidak meminta konfirmasi kepada Anda.
 
 ## PARAMETERS
 
 ### -BatchContext
-Menentukan contoh **BatchAccountContext** yang digunakan cmdlet untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -84,8 +84,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Thumbprint
-Menentukan thumbprint sertifikat yang dihapus cmdlet ini.
+### -Sidik jari
+Menentukan sidik jari sertifikat yang dihapus cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -100,8 +100,8 @@ Accept wildcard characters: False
 ```
 
 ### -ThumbprintAlgorithm
-Menentukan algoritma yang digunakan untuk mendapatkan parameter *Thumbprint.*
-Saat ini, satu-satunya nilai valid adalah bayangan1.
+Menentukan algoritma yang digunakan untuk mendapatkan parameter *Thumbprint* .
+Saat ini, satu-satunya nilai yang valid adalah sha1.
 
 ```yaml
 Type: System.String
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -168,10 +168,10 @@ Parameter: BatchContext (ByValue)
 
 [Get-AzureRmBatchAccountKeys](./Get-AzureRmBatchAccountKeys.md)
 
-[New-AzureBatchCertificate](./New-AzureBatchCertificate.md)
+[AzureBatchCertificate baru](./New-AzureBatchCertificate.md)
 
 [Stop-AzureBatchCertificateDeletion](./Stop-AzureBatchCertificateDeletion.md)
 
-[Cmdlet Kumpulan Azure](./AzureRM.Batch.md)
+[Cmdlet Azure Batch](./AzureRM.Batch.md)
 
 

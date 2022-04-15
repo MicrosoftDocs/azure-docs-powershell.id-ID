@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Cdn/Commands.Cdn/help/Set-AzureRmCdnOrigin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Cdn/Commands.Cdn/help/Set-AzureRmCdnOrigin.md
 ms.openlocfilehash: 395ee4b20ae2c26d05ad66489b3c643d0f4245a0
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426655"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142359514"
 ---
 # Set-AzureRmCdnOrigin
 
 ## SYNOPSIS
-Memperbarui server CDN origin.
+Memperbarui server asal CDN.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,14 +27,14 @@ Set-AzureRmCdnOrigin -CdnOrigin <PSOrigin> [-DefaultProfile <IAzureContextContai
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmCdnOrigin** memperbarui server origin Azure Content Delivery Network (CDN).
+**Cmdlet Set-AzureRmCdnOrigin** memperbarui server asal Azure Content Delivery Network (CDN).
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -CdnOrigin
-Menentukan server origin yang diperbarui cmdlet ini.
+Menentukan server asal yang diperbarui cmdlet ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Cdn.Models.Origin.PSOrigin
@@ -49,7 +49,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

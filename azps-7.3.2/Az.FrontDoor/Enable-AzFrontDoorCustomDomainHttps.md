@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/enable
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Enable-AzFrontDoorCustomDomainHttps.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Enable-AzFrontDoorCustomDomainHttps.md
-ms.openlocfilehash: 71a4690b9dacfee5656ba516696ed4916fa42dcf
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 94afc593cd79c6ef4fb84882a0d130c0a67c7183
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140000829"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142374321"
 ---
 # Enable-AzFrontDoorCustomDomainHttps
 
 ## SYNOPSIS
-Mengaktifkan HTTPS untuk domain kustom menggunakan sertifikat terkelola Front Pintu atau menggunakan sertifikat sendiri dari Azure Key Vault.
+Aktifkan HTTPS untuk domain kustom menggunakan sertifikat terkelola Pintu Depan atau menggunakan sertifikat sendiri dari Azure Key Vault.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/enable-azfrontdoorcustomdomainhttps) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -65,7 +68,7 @@ Enable-AzFrontDoorCustomDomainHttps -InputObject <PSFrontendEndpoint> -VaultId <
 
 ## EXAMPLES
 
-### Contoh 1: Aktifkan HTTPS untuk domain kustom dengan FrontDoorName dan ResourceGroupName menggunakan sertifikat yang dikelola Front Pintu.
+### Contoh 1: Aktifkan HTTPS untuk domain kustom dengan FrontDoorName dan ResourceGroupName menggunakan sertifikat terkelola Pintu Depan.
 ```powershell
 PS C:\> Enable-AzFrontDoorCustomDomainHttps -ResourceGroupName "resourcegroup1" -FrontDoorName "frontdoor1" -FrontendEndpointName "frontendpointname1-custom-xyz" -MinimumTlsVersion "1.2"
 
@@ -93,7 +96,7 @@ Type                             : Microsoft.Network/frontdoors/frontendendpoint
 
 Aktifkan HTTPS untuk domain kustom "frontendpointname1-custom-xyz" yang merupakan bagian dari Pintu Depan "frontdoor1" dalam grup sumber daya "resourcegroup1" menggunakan sertifikat terkelola Pintu Depan.
 
-### Contoh 2: Aktifkan HTTPS untuk domain kustom dengan FrontDoorName dan ResourceGroupName menggunakan sertifikat pelanggan sendiri di Key Vault dengan versi khusus.
+### Contoh 2: Aktifkan HTTPS untuk domain kustom dengan FrontDoorName dan ResourceGroupName menggunakan sertifikat pelanggan sendiri di Key Vault dengan versi tertentu.
 ```powershell
 PS C:\> $vaultId = (Get-AzKeyVault -VaultName $vaultName).ResourceId
 PS C:\> Enable-AzFrontDoorCustomDomainHttps -ResourceGroupName "resourcegroup1" -FrontDoorName "frontdoor1" -FrontendEndpointName "frontendpointname1-custom-xyz" -Vault $vaultId -secretName $secretName -SecretVersion $secretVersion -MinimumTlsVersion "1.0"
@@ -120,9 +123,9 @@ Name                             : frontendpointname1-custom-xyz
 Type                             : Microsoft.Network/frontdoors/frontendendpoints
 ```
 
-Aktifkan HTTPS untuk domain kustom "frontendpointname1-custom-xyz" yang merupakan bagian dari "frontdoor1" pintu depan dalam grup sumber daya "resourcegroup1" menggunakan sertifikat milik pelanggan di Key Vault dengan versi tertentu.
+Aktifkan HTTPS untuk domain kustom "frontendpointname1-custom-xyz" yang merupakan bagian dari Pintu Depan "frontdoor1" dalam grup sumber daya "resourcegroup1" menggunakan sertifikat pelanggan sendiri di Key Vault dengan versi tertentu.
 
-### Contoh 3: Enable HTTPS for a custom domain with PSFrontendEndpoint object using Front Door managed certificate.
+### Contoh 3: Aktifkan HTTPS untuk domain kustom dengan objek PSFrontendEndpoint menggunakan sertifikat terkelola Pintu Depan.
 ```powershell
 PS C:\> Get-AzFrontDoorFrontendEndpoint -ResourceGroupName "resourcegroup1" -FrontDoorName "frontdoor1" -Name "frontendpointname1-custom-xyz" | Enable-AzFrontDoorCustomDomainHttps 
 
@@ -176,7 +179,7 @@ Name                             : frontendpointname1-custom-xyz
 Type                             : Microsoft.Network/frontdoors/frontendendpoints
 ```
 
-Aktifkan HTTPS untuk domain kustom "frontendpointname1-custom-xyz" dengan id sumber daya $resourceId menggunakan sertifikat yang dikelola Front Pintu.
+Aktifkan HTTPS untuk domain kustom "frontendpointname1-custom-xyz" dengan id sumber daya $resourceId menggunakan sertifikat terkelola Pintu Depan.
 
 ### Contoh 5: Aktifkan HTTPS untuk domain kustom dengan FrontDoorName dan ResourceGroupName menggunakan sertifikat pelanggan sendiri di Key Vault dengan versi terbaru untuk mengaktifkan rotasi otomatis sertifikat.
 ```powershell
@@ -205,7 +208,7 @@ Name                             : frontendpointname1-custom-xyz
 Type                             : Microsoft.Network/frontdoors/frontendendpoints
 ```
 
-Aktifkan HTTPS untuk domain kustom "frontendpointname1-custom-xyz" yang merupakan bagian dari "frontdoor1" pintu depan dalam grup sumber daya "resourcegroup1" menggunakan sertifikat milik pelanggan di Key Vault dengan versi terbaru untuk mengaktifkan rotasi otomatis sertifikat.
+Aktifkan HTTPS untuk domain kustom "frontendpointname1-custom-xyz" yang merupakan bagian dari Pintu Depan "frontdoor1" dalam grup sumber daya "resourcegroup1" menggunakan sertifikat pelanggan sendiri di Key Vault dengan versi terbaru untuk mengaktifkan rotasi otomatis sertifikat.
 
 ## PARAMETERS
 
@@ -270,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinimumTlsVersion
-Versi TLS minimal diperlukan dari klien untuk menetapkan handshake SSL dengan Front Door.
+Versi TLS minimum yang diperlukan dari klien untuk membuat jabat tangan SSL dengan Pintu Depan.
 
 ```yaml
 Type: System.String
@@ -300,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya dari titik akhir Pintu Depan untuk mengaktifkan https
+Id Sumber Daya titik akhir Pintu Depan untuk mengaktifkan https
 
 ```yaml
 Type: System.String
@@ -315,7 +318,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecretName
-Nama rahasia Key Vault mewakili sertifikat penuh PFX
+Nama rahasia Key Vault yang mewakili sertifikat lengkap PFX
 
 ```yaml
 Type: System.String
@@ -330,8 +333,8 @@ Accept wildcard characters: False
 ```
 
 ### -SecretVersion
-Versi rahasia Key Vault mewakili sertifikat penuh PFX.
-Jika tidak ditentukan, versi 'Terbaru' akan selalu digunakan dan sertifikat yang digunakan akan otomatis diputar ke versi terbaru ketika versi sertifikat yang lebih baru tersedia.
+Versi rahasia Key Vault yang mewakili sertifikat lengkap PFX.
+Jika tidak ditentukan, versi 'Terbaru' akan selalu digunakan dan sertifikat yang digunakan akan diputar secara otomatis ke versi terbaru saat versi sertifikat yang lebih baru tersedia.
 
 ```yaml
 Type: System.String
@@ -346,7 +349,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-Id Key Vault berisi sertifikat SSL
+Id Key Vault yang berisi sertifikat SSL
 
 ```yaml
 Type: System.String
@@ -361,7 +364,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -376,7 +379,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -391,7 +394,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

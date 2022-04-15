@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Update-AzureRmVirtualHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Update-AzureRmVirtualHub.md
-ms.openlocfilehash: a163e06fcec193f0c6e5f9005e8efce2105dbaef9928d63ede53f950c5784859
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 188d449e47155739b4bc532c12b0e9193781c7c6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140856890"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142385077"
 ---
 # Update-AzureRmVirtualHub
 
 ## SYNOPSIS
-Memperbarui Virtual Hub ke status tujuan yang dimaksudkan.
+Memperbarui Hub Virtual ke status tujuan yang dimaksud.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -46,7 +46,7 @@ Update-AzureRmVirtualHub -InputObject <PSVirtualHub> [-AddressPrefix <String>]
 ```
 
 ## DESCRIPTION
-Memperbarui Virtual Hub ke status tujuan yang dimaksudkan.
+Memperbarui Hub Virtual ke status tujuan yang dimaksud.
 
 ## EXAMPLES
 
@@ -70,7 +70,7 @@ Type                      : Microsoft.Network/virtualHubs
 ProvisioningState         : Succeeded
 ```
 
-Langkah di atas akan membuat grup sumber daya "testRG", Virtual WAN, dan Virtual Hub di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki ruang alamat "10.0.1.0/24".
+Hal di atas akan membuat grup sumber daya "testRG", Virtual WAN, dan Hub Virtual di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki ruang alamat "10.0.1.0/24".
 
 ### Contoh 2
 
@@ -95,7 +95,7 @@ Type                      : Microsoft.Network/virtualHubs
 ProvisioningState         : Succeeded
 ```
 
-Langkah di atas akan membuat grup sumber daya "testRG", Virtual WAN, dan Virtual Hub di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki ruang alamat "10.0.1.0/24".
+Hal di atas akan membuat grup sumber daya "testRG", Virtual WAN, dan Hub Virtual di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki ruang alamat "10.0.1.0/24".
 Contoh ini mirip dengan Contoh 1, tetapi juga melampirkan tabel rute ke hub virtual.
 
 ## PARAMETERS
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -HubVnetConnection
-Koneksi jaringan virtual hub terkait dengan Virtual Hub ini.
+Koneksi jaringan virtual hub yang terkait dengan Hub Virtual ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSHubVirtualNetworkConnection[]
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Hub virtual yang akan dimodifikasi.
+Objek hub virtual yang akan diubah.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualHub
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -RouteTable
-Tabel rute yang berkaitan dengan Virtual Hub ini.
+Tabel rute yang terkait dengan Hub Virtual ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualHubRouteTable
@@ -236,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable yang mewakili tag sumber daya.
+Sebuah hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -251,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -267,7 +267,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -282,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

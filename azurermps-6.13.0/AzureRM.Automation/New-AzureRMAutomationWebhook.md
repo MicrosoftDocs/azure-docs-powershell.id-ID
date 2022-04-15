@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/New-AzureRMAutomationWebhook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/New-AzureRMAutomationWebhook.md
 ms.openlocfilehash: 97b9c37613563f269ba035062ba557de810e9ec3
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419592"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142390519"
 ---
 # New-AzureRmAutomationWebhook
 
 ## SYNOPSIS
-Membuat webhook untuk buku kerja Otomatisasi.
+Membuat webhook untuk runbook Otomatisasi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -31,22 +31,22 @@ New-AzureRmAutomationWebhook [-Name] <String> [-RunbookName] <String> [-IsEnable
 
 ## DESCRIPTION
 Cmdlet **New-AzureRmAutomationWebhook** membuat webhook untuk runbook Azure Automation.
-Pastikan untuk menyimpan URL webhook yang dikembalikan cmdlet ini, karena tidak dapat diperoleh lagi.
+Pastikan untuk menyimpan URL webhook yang dikembalikan cmdlet ini, karena cmdlet ini tidak dapat diambil kembali.
 
 ## EXAMPLES
 
-### Contoh 1: Create a webhook
+### Contoh 1: Membuat webhook
 ```
 PS C:\>$Webhook = New-AzureRmAutomationWebhook -Name "Webhook06" -IsEnabled $True -ExpiryTime "10/2/2016" -RunbookName "ContosoRunbook" -ResourceGroup "ResourceGroup01" -AutomationAccountName "AutomationAccount01" -Force
 ```
 
-Perintah ini membuat webhook yang bernama Webhook06 untuk runbook yang bernama ContosoRunbook dalam akun Otomatisasi yang bernama AutomationAccount01.
-Perintah menyimpan webhook di $Webhook berbeda.
+Perintah ini membuat webhook bernama Webhook06 untuk runbook bernama ContosoRunbook di akun Automation bernama AutomationAccount01.
+Perintah menyimpan webhook dalam variabel $Webhook.
 Webhook diaktifkan.
 Webhook kedaluwarsa pada waktu yang ditentukan.
 Perintah ini tidak menyediakan nilai apa pun untuk parameter webhook.
-Perintah ini menentukan parameter *Force.*
-Oleh karena itu, kami tidak meminta konfirmasi Anda.
+Perintah ini menentukan parameter *Paksa* .
+Oleh karena itu, tindakan ini tidak meminta konfirmasi kepada Anda.
 
 ### Contoh 2: Membuat webhook dengan parameter
 ```
@@ -55,13 +55,13 @@ PS C:\> $Webhook = New-AzureRmAutomationWebhook -Name "Webhook11" -Parameters $P
 ```
 
 Perintah pertama membuat kamus parameter, dan menyimpannya dalam variabel $Params.
-Perintah kedua membuat webhook yang bernama Webhook11 untuk runbook yang bernama ContosoRunbook dalam akun Otomatisasi yang bernama AutomationAccount01.
+Perintah kedua membuat webhook bernama Webhook11 untuk runbook bernama ContosoRunbook di akun Automation bernama AutomationAccount01.
 Perintah menetapkan parameter dalam $Params ke webhook.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi di mana cmdlet ini membuat webhook.
+Menentukan nama akun Otomatisasi tempat cmdlet ini membuat webhook.
 
 ```yaml
 Type: System.String
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -91,8 +91,8 @@ Accept wildcard characters: False
 ```
 
 ### -ExpiryTime
-Menentukan waktu kedaluwarsa untuk webhook sebagai objek **DateTimeOffset.**
-Anda bisa menentukan string atau **DateTime** yang bisa dikonversi menjadi **DateTimeOffset** yang valid.
+Menentukan waktu kedaluwarsa untuk webhook sebagai objek **DateTimeOffset** .
+Anda dapat menentukan string atau **DateTime** yang dapat dikonversi menjadi **DateTimeOffset** yang valid.
 
 ```yaml
 Type: System.DateTimeOffset
@@ -106,7 +106,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 ps_force
 
 ```yaml
@@ -151,11 +151,11 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Parameter
+### -Parameters
 Menentukan kamus pasangan kunci/nilai.
-Kunci tersebut adalah nama parameter runbook.
-Nilai tersebut adalah nilai parameter runbook.
-Saat runbook mulai merespons webhook, parameter ini akan disampaikan ke runbook.
+Kuncinya adalah nama parameter runbook.
+Nilainya adalah nilai parameter runbook.
+Ketika runbook dimulai sebagai respons terhadap webhook, parameter ini dikirimkan ke runbook.
 
 ```yaml
 Type: System.Collections.IDictionary
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini membuat webhook.
+Menentukan nama grup sumber daya tempat cmdlet ini membuat webhook.
 
 ```yaml
 Type: System.String
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunbookName
-Menentukan nama runbook untuk dikaitkan ke webhook.
+Menentukan nama runbook yang akan dikaitkan ke webhook.
 
 ```yaml
 Type: System.String
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -266,7 +266,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmAutomationWebhook](./Get-AzureRMAutomationWebhook.md)
 
-[Remove-AzureRmAutomationWebhook](./Remove-AzureRMAutomationWebhook.md)
+[Hapus-AzureRmAutomationWebhook](./Remove-AzureRMAutomationWebhook.md)
 
 [Set-AzureRmAutomationWebhook](./Set-AzureRMAutomationWebhook.md)
 

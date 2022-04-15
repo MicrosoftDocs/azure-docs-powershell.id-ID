@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Websites/Websites/help/Get-AzWebAppSlotPublishingProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Websites/Websites/help/Get-AzWebAppSlotPublishingProfile.md
 ms.openlocfilehash: cedaf16333d69a25dce0ce2657640e723767aece
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "132414843"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142350161"
 ---
 # Get-AzWebAppSlotPublishingProfile
 
@@ -34,7 +34,7 @@ Get-AzWebAppSlotPublishingProfile [[-OutputFile] <String>] [[-Format] <String>] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzWebAppSlotPublishingProfile** mendapatkan profil penerbitan Web App untuk slot yang ditentukan.
+Cmdlet **Get-AzWebAppSlotPublishingProfile** mendapatkan profil penerbitan Aplikasi Web untuk slot yang ditentukan.
 
 ## EXAMPLES
 
@@ -43,12 +43,12 @@ Cmdlet **Get-AzWebAppSlotPublishingProfile** mendapatkan profil penerbitan Web A
 PS C:\> Get-AzWebAppSlotPublishingProfile -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -Slot "slot001" -Format "Ftp" -OutputFile "C:\Users\contoso\outputfile"
 ```
 
-Perintah ini mendapatkan profil penerbitan dalam format Ftp untuk slot Slot001 yang terkait dengan Web App ContosoWebApp terkait dengan grup sumber daya Default-Web-WestUS dan menyimpannya dalam file output yang ditentukan.
+Perintah ini mendapatkan profil penerbitan dalam format Ftp untuk slot Slot001 yang berkaitan dengan Web App ContosoWebApp yang terkait dengan grup sumber daya Default-Web-WestUS dan menyimpannya dalam file output yang ditentukan.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -Format
-Memformat
+Format
 
 ```yaml
 Type: String
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -169,6 +169,6 @@ Parameter 'WebApp' menerima nilai tipe 'Situs' dari saluran
 
 [Reset-AzWebAppSlotPublishingProfile](./Reset-AzWebAppSlotPublishingProfile.md)
 
-[Get-AzWebAppslot](./Get-AzWebAppSlot.md)
+[Get-AzWebAppSlot](./Get-AzWebAppSlot.md)
 
 [Get-AzWebApp](./Get-AzWebApp.md)
