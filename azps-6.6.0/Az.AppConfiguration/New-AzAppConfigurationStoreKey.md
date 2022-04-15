@@ -6,23 +6,23 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/New-AzAppConfigurationStoreKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/New-AzAppConfigurationStoreKey.md
 ms.openlocfilehash: 80f9b381ac4f6c9acfae040e84112dd1aabd5468
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140313379"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142274695"
 ---
 # New-AzAppConfigurationStoreKey
 
 ## SYNOPSIS
-Meregenerasi kunci akses untuk penyimpanan konfigurasi yang ditentukan.
+Meregenerasi kunci akses untuk penyimpanan konfigurasi tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.appconfiguration/new-azappconfigurationstorekey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.appconfiguration/new-azappconfigurationstorekey) untuk informasi terbaru.
 
 ## SYNTAX
 
-### RegenerasiExpanded (Default)
+### RegenerateExpanded (Default)
 ```
 New-AzAppConfigurationStoreKey -Name <String> -ResourceGroupName <String> -Id <String>
  [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
@@ -35,11 +35,11 @@ New-AzAppConfigurationStoreKey -InputObject <IAppConfigurationIdentity> -Id <Str
 ```
 
 ## DESCRIPTION
-Meregenerasi kunci akses untuk penyimpanan konfigurasi yang ditentukan.
+Meregenerasi kunci akses untuk penyimpanan konfigurasi tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Regenerasi kunci dari penyimpanan konfigurasi aplikasi
+### Contoh 1: Meregenerasi kunci penyimpanan konfigurasi aplikasi
 ```powershell
 PS C:\> $keys= Get-AzAppConfigurationStoreKey -Name appconfig-test01 -ResourceGroupName azpwsh-manual-test
 PS C:\> New-AzAppConfigurationStoreKey -Name appconfig-test01 -ResourceGroupName azpwsh-manual-test -Id $keys[0].id
@@ -49,9 +49,9 @@ ConnectionString                                                                
 Endpoint=https://appconfig-test01.azconfig.io;Id=09pv-l0-s0:opFCQMC6+9485xJgN5Ws;Secret=GcoE9e9t7GLRNJ910M46IrbHO/Vg0tt4HujRdsaCoTY= 5/8/2020 5:47:15 AM Secondary False    GcoE9e9t7GLRNJ910M46IrbHO/Vg0tt4HujRdsaCoTY=
 ```
 
-Perintah ini meregenerasi kunci dari penyimpanan konfigurasi aplikasi.
+Perintah ini meregenerasi kunci penyimpanan konfigurasi aplikasi.
 
-### Contoh 2: Regenerasi kunci dari penyimpanan konfigurasi aplikasi menurut objek
+### Contoh 2: Meregenerasi kunci penyimpanan konfigurasi aplikasi menurut objek
 ```powershell
 PS C:\> $app= New-AzAppConfigurationStore -Name appconfig-test10 -ResourceGroupName azpwsh-manual-test
 PS C:\> $keys= Get-AzAppConfigurationStoreKey -Name appconfig-test01 -ResourceGroupName azpwsh-manual-test
@@ -61,7 +61,7 @@ ConnectionString                                                                
 Endpoint=https://appconfig-test01.azconfig.io;Id=09pv-l0-s0:opFCQMC6+9485xJgN5Ws;Secret=GcoE9e9t7GLRNJ910M46IrbHO/Vg0tt4HujRdsaCoTY= 5/8/2020 5:47:15 AM Secondary False    GcoE9e9t7GLRNJ910M46IrbHO/Vg0tt4HujRdsaCoTY=
 ```
 
-Perintah ini meregenerasi kunci konfigurasi aplikasi yang disimpan menurut objek.
+Perintah ini meregenerasi kunci penyimpanan konfigurasi aplikasi menurut objek.
 
 ## PARAMETERS
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id kunci untuk meregenerasi.
+Id kunci untuk regenerasi.
 
 ```yaml
 Type: System.String
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.AppConfiguration.Models.IAppConfigurationIdentity
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat wadah registri berada.
+Nama grup sumber daya tempat registri kontainer berada.
 
 ```yaml
 Type: System.String
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID Microsoft Azure langganan.
+ID langganan Microsoft Azure.
 
 ```yaml
 Type: System.String
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -208,11 +208,11 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IAppConfigurationIdentity>: Parameter Identitas
   - `[ConfigStoreName <String>]`: Nama penyimpanan konfigurasi.
-  - `[GroupName <String>]`: Nama grup sumber daya tautan privat.
+  - `[GroupName <String>]`: Nama grup sumber daya tautan pribadi.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat wadah registri t dimiliki.
-  - `[SubscriptionId <String>]`: Microsoft Azure ID langganan.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat registri kontainer berada.
+  - `[SubscriptionId <String>]`: ID langganan Microsoft Azure.
 
 ## RELATED LINKS
 

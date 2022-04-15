@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualHubBgpConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualHubBgpConnection.md
-ms.openlocfilehash: cad4c441159a5f19dee2fcaef84d81b5d62e3c85
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: dec07c1e48cf060969dd87e1f24f111b61835706
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140197190"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142255543"
 ---
 # Remove-AzVirtualHubBgpConnection
 
 ## SYNOPSIS
-Cmdlet Remove-AzVirtualHubBgpConnection menghapus sumber daya HubBgpConnection yang menghubungkan Router Azure Virtual WAN Hub dengan peer yang didukung BGP di jaringan virtual yang tersambung ke Virtual WAN Hub.
+Cmdlet Remove-AzVirtualHubBgpConnection menghapus sumber daya HubBgpConnection yang mengintip Azure Virtual WAN Hub Router dengan peer berkemampuan BGP dalam jaringan virtual yang tersambung ke Hub Virtual WAN.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvirtualhubbgpconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Remove-AzVirtualHubBgpConnection -ResourceId <String> [-AsJob] [-Force] [-PassTh
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzVirtualHubBgpConnection menghapus sumber daya HubBgpConnection yang merupakan peers Azure Virtual WAN Hub Router dengan peer yang didukung BGP di jaringan virtual yang tersambung ke Virtual WAN Hub.
+Cmdlet Remove-AzVirtualHubBgpConnection menghapus sumber daya HubBgpConnection yang rekan Azure Virtual WAN Hub Router dengan peer berkemampuan BGP di jaringan virtual yang tersambung ke Hub Virtual WAN.
 
 ## EXAMPLES
 
@@ -53,14 +56,14 @@ Cmdlet Remove-AzVirtualHubBgpConnection menghapus sumber daya HubBgpConnection y
 PS C:\> Remove-AzVirtualHubBgpConnection -ResourceGroupName "testRG" -VirtualHubName "testHub" -Name "testBgpConnection"
 ```
 
-Opsi di atas akan menghapus Koneksi BGP Virtual WAN Hub menggunakan nama grup sumber dayanya, nama Virtual WAN Hub dan nama Koneksi.
+Hal di atas akan menghapus Koneksi BGP Hub Virtual WAN menggunakan nama grup sumber dayanya, nama hub Virtual WAN dan nama Koneksi.
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzVirtualHubBgpConnection -ResourceGroupName "testRG" -VirtualHubName "testHub" -Name "testBgpConnection" | Remove-AzVirtualHubBgpConnection
 ```
 
-Opsi di atas akan menghapus Koneksi BGP Virtual WAN Hub menggunakan pemipaan powershell pada output dari Get-AzVirtualHubBgpConnection.
+Hal di atas akan menghapus Virtual WAN Hub BGP Connection menggunakan powershell piping pada output dari Get-AzVirtualHubBgpConnection.
 
 ### Contoh 3
 ```powershell
@@ -68,12 +71,12 @@ PS C:\> $bgpConnectionId = "/subscriptions/{subscriptionId}/resourceGroups/{reso
 PS C:\> Remove-AzVirtualHubBgpConnection -ResourceId $bgpConnectionId
 ```
 
-Opsi di atas akan menghapus Koneksi BGP Virtual WAN Hub menggunakan id sumber daya Koneksi BGP.
+Hal di atas akan menghapus Virtual WAN Hub BGP Connection menggunakan id sumber daya Koneksi BGP.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -102,8 +105,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi jika Anda ingin menimpa sumber daya
+### -Paksa
+Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item di mana operasi ini dijalankan.
+Mengembalikan objek yang mewakili item tempat operasi ini dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -239,7 +242,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -254,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

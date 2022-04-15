@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Reset-AzVpnSiteLinkConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Reset-AzVpnSiteLinkConnection.md
 ms.openlocfilehash: 9f6785738fb6d8930f513db2bc6147220ed72409
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140464049"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142227367"
 ---
 # Reset-AzVpnSiteLinkConnection
 
 ## SYNOPSIS
-Mereset Koneksi Link Situs VPN
+Mereset Koneksi Tautan Situs VPN
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/reset-azvpnsitelinkconnection) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/reset-azvpnsitelinkconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ Reset-AzVpnSiteLinkConnection -ResourceId <String> [-AsJob] [-DefaultProfile <IA
 ```
 
 ## DESCRIPTION
-Cmdlet **Reset-AzVpnSiteLinkConnection** mengatur ulang Koneksi Link VPN Anda berdasarkan Nama Koneksi Link Situs VPN, Nama Koneksi VPN, Nama Gateway VPN dan Nama Grup Sumber Daya.
+Cmdlet **Reset-AzVpnSiteLinkConnection** mereset Vpn Link Connection Anda berdasarkan Vpn Site Link Connection Name, VPN Connection Name, VPN Gateway Name and Resource Group Name.
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ Cmdlet **Reset-AzVpnSiteLinkConnection** mengatur ulang Koneksi Link VPN Anda be
 PS C:\> Reset-AzVpnSiteLinkConnection -ResourceGroupName test-rg -VpnGatewayName test-gateway -VpnConnectionName test-connection -ResourceName test-linkConnection
 ```
 
-Mereset Koneksi Link Situs VPN dengan nama "test-linkConnection" di dalam grup sumber daya "test-rg"
+Mereset Vpn Site Link Connection dengan nama "test-linkConnection" dalam grup sumber daya "test-rg"
 
 ## PARAMETERS
 
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya Azure dari koneksi tautan situs VPN yang harus diatur ulang.
+ID sumber daya Azure dari koneksi tautan situs Vpn yang harus direset.
 
 ```yaml
 Type: String
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

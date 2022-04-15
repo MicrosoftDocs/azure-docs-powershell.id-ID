@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesVaultProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesVaultProperty.md
-ms.openlocfilehash: 9b03a45e97702e61828b8758aeea1d8a1ec2120c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d9ea173dbda1f64e639130edd0cca46508c211d1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140391762"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142254643"
 ---
 # Get-AzRecoveryServicesVaultProperty
 
 ## SYNOPSIS
 Mengembalikan properti Vault Layanan Pemulihan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesvaultproperty) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,24 +29,24 @@ Get-AzRecoveryServicesVaultProperty [-VaultId <String>] [-DefaultProfile <IAzure
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesVaultProperty** mengembalikan properti vault layanan Pemulihan.
+Cmdlet **Get-AzRecoveryServicesVaultProperty** mengembalikan properti kubah layanan Pemulihan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan Properti vault
+### Contoh 1: Dapatkan Properti kubah
 ```
 PS C:\> $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
 PS C:\> $vaultProperty = Get-AzRecoveryServicesVaultProperty -VaultId $vault.Id
 PS C:\> $vaultProperty.encryptionProperties
 ```
 
-Perintah pertama akan mendapatkan objek Vault, lalu menyimpannya dalam $vault baru.
-Perintah kedua Mendapatkan Properti Vault. Berikutnya kita mengakses enkripsiProperties vault.
+Perintah pertama mendapatkan objek Vault lalu menyimpannya dalam variabel $vault.
+Perintah kedua Mendapatkan Properti Vault. Selanjutnya kita mengakses enkripsiProperties dari kubah.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -58,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

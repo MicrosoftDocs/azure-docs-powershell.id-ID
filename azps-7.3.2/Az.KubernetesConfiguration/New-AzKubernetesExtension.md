@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kubernetesconfig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/New-AzKubernetesExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/New-AzKubernetesExtension.md
-ms.openlocfilehash: 4a33bd80140fe72e5debbfa04846227811bc5447
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5a629b16a49e98847b18ae9172b54b66be636586
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140556299"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142292641"
 ---
 # New-AzKubernetesExtension
 
 ## SYNOPSIS
-Membuat Ekstensi Kluster Kjadwal baru.
+Buat Ekstensi Kluster Kubernetes baru.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.kubernetesconfiguration/new-azkubernetesextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,11 +33,11 @@ New-AzKubernetesExtension -ClusterName <String> -ClusterType <String> -Name <Str
 ```
 
 ## DESCRIPTION
-Membuat Ekstensi Kluster Kjadwal baru.
+Buat Ekstensi Kluster Kubernetes baru.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Ekstensi Kluster Kjadwal baru.
+### Contoh 1: Create a new Kubernetes Cluster Extension.
 ```powershell
 PS C:\> New-AzKubernetesExtension -ClusterName azps_test_cluster -ClusterType ConnectedClusters -Name azps_test_extension -ResourceGroupName azps_test_group -ExtensionType Microsoft.Arcdataservices
 
@@ -43,7 +46,7 @@ Name                ExtensionType             Version      ProvisioningState Aut
 azps_test_extension microsoft.arcdataservices 1.0.16701001 Succeeded         True                    Stable       azps_test_group
 ```
 
-Membuat Ekstensi Kluster Kjadwal baru.
+Buat Ekstensi Kluster Kubernetes baru.
 
 ## PARAMETERS
 
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoUpgradeMinorVersion
-Benderai untuk diingat jika ekstensi ini berpartisipasi dalam pemutakhiran otomatis versi minor, atau tidak.
+Benderai untuk diperhatikan jika ekstensi ini berpartisipasi dalam pemutakhiran otomatis versi minor, atau tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterName
-Nama kluster k ada.
+Nama kluster kubernetes.
 
 ```yaml
 Type: System.String
@@ -108,8 +111,8 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterReleaseNamespace
-Ruang nama tempat Ekstensi Rilis harus ditempatkan, untuk ekstensi lingkup Kluster.
-Jika ruang nama ini tidak ada, kumpulan nama akan dibuat
+Ruang nama tempat Rilis ekstensi harus diletakkan, untuk ekstensi Kluster yang tercakup.
+Jika ruang nama ini tidak ada, ruang nama ini akan dibuat
 
 ```yaml
 Type: System.String
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterType
-Nama sumber daya kluster Kjadwal, baik managedClusters (untuk kluster AKS) maupun connectedClusters (untuk kluster OnPrem K8S).
+Nama sumber daya kluster Kubernetes - baik managedClusters (untuk kluster AKS) atau ConnectedClusters (untuk kluster OnPrem K8S).
 
 ```yaml
 Type: System.String
@@ -184,8 +187,8 @@ Accept wildcard characters: False
 ```
 
 ### -ExtensionType
-Tipe Ekstensi, yang sumber daya ini merupakan contohnya.
-Ini harus salah satu dari Tipe Ekstensi yang didaftarkan dengan Microsoft.Kconfiguration oleh penerbit Ekstensi.
+Tipe Ekstensi, di mana sumber daya ini merupakan contohnya.
+Ini harus menjadi salah satu Tipe Ekstensi yang terdaftar di Microsoft.KubernetesConfiguration oleh penerbit Ekstensi.
 
 ```yaml
 Type: System.String
@@ -230,8 +233,8 @@ Accept wildcard characters: False
 ```
 
 ### -NamespaceTargetNamespace
-Ruang nama tempat ekstensi akan dibuat untuk ekstensi ruang nama yang di lingkup.
-Jika ruang nama ini tidak ada, kumpulan nama akan dibuat
+Ruang nama tempat ekstensi akan dibuat untuk ekstensi ruang nama yang dilingkup.
+Jika ruang nama ini tidak ada, ruang nama ini akan dibuat
 
 ```yaml
 Type: System.String
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReleaseTrain
-ReleaseTrain this extension participates in for auto-upgrade (e.g. Stable, Preview, etc.) - only if autoUpgradeMinorVersion is 'true'.
+ReleaseTrain ekstensi ini berpartisipasi untuk pemutakhiran otomatis (misalnya Stabil, Pratinjau, dll.) - hanya jika autoUpgradeMinorVersion adalah 'true'.
 
 ```yaml
 Type: System.String
@@ -277,7 +280,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -293,7 +296,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 ID langganan Azure.
-Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-00000000000)
+Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
 
 ```yaml
 Type: System.String
@@ -324,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -340,7 +343,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -355,13 +358,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.K cmdletsConfiguration.Models.Api20210901.IExtension
+### Microsoft.Azure.PowerShell.Cmdlets.KubernetesConfiguration.Models.Api20210901.IExtension
 
 ## CATATAN
 

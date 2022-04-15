@@ -4,11 +4,11 @@ ms.assetid: 67890A2A-7922-4E4A-96B4-B58CF532D2DE
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 7f95f07f005c588ba74cd380042cc60ddea55c2d
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427408"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142243112"
 ---
 # Update-AzureRemoteAppCollection
 
@@ -25,9 +25,9 @@ Update-AzureRemoteAppCollection [-CollectionName] <String> [-ImageName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzureRemoteAppCollection** memperbarui kumpulan Azure RemoteApp dengan gambar templat baru.
-Setelah pembaruan selesai, pengguna dengan sesi yang ada memiliki satu jam untuk keluar sebelum mereka secara otomatis keluar. Saat mereka masuk lagi, mereka tersambung ke koleksi yang baru diperbarui.
-Untuk memaksa pengguna untuk segera keluar segera setelah kumpulan diperbarui, tentukan parameter *ForceLogoffWhenUpdateComplete.*
+Cmdlet **Update-AzureRemoteAppCollection** memperbarui koleksi Azure RemoteApp dengan gambar templat baru.
+Setelah pembaruan selesai, pengguna dengan sesi yang sudah ada memiliki waktu satu jam untuk keluar sebelum mereka keluar secara otomatis. Saat mereka masuk lagi, mereka tersambung ke koleksi yang baru diperbarui.
+Untuk memaksa pengguna segera keluar setelah koleksi diperbarui, tentukan parameter *ForceLogoffWhenUpdateComplete* .
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceLogoffWhenUpdateComplete
-Mengindikasikan bahwa cmdlet ini mengeluarkan pengguna dari sesi mereka yang sudah ada segera setelah pembaruan selesai.
+Menunjukkan bahwa cmdlet ini menandatangani pengguna dari sesi yang sudah ada segera setelah pembaruan selesai.
 Saat pengguna masuk lagi, mereka tersambung ke koleksi yang baru diperbarui.
 
 ```yaml
@@ -80,8 +80,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -154,7 +154,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRemoteAppCollection](./Get-AzureRemoteAppCollection.md)
 
-[New-AzureRemoteAppCollection](./New-AzureRemoteAppCollection.md)
+[AzureRemoteAppCollection baru](./New-AzureRemoteAppCollection.md)
 
 [Set-AzureRemoteAppCollection](./Set-AzureRemoteAppCollection.md)
 

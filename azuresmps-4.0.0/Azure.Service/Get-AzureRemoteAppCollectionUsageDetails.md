@@ -4,11 +4,11 @@ ms.assetid: 0E5F05B3-F2B0-479C-8222-927C34140416
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: bb768d8dd515353cf885253fe2bad0653783c6b9
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419929"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142245709"
 ---
 # Get-AzureRemoteAppCollectionUsageDetails
 
@@ -25,7 +25,7 @@ Get-AzureRemoteAppCollectionUsageDetails [-CollectionName] <String> [[-UsageMont
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRemoteAppCollectionUsageDetails** mengambil detail penggunaan untuk kumpulan Azure RemoteApp.
+Cmdlet **Get-AzureRemoteAppCollectionUsageDetails** mengambil detail penggunaan untuk koleksi Azure RemoteApp.
 
 ## EXAMPLES
 
@@ -39,7 +39,7 @@ Perintah ini mendapatkan detail penggunaan untuk bulan Desember pada tahun 2014,
 ## PARAMETERS
 
 ### -AsJob
-Cmdlet berjalan di latar belakang sebagai Windows PowerShell pekerjaan.
+Menunjukkan bahwa cmdlet berjalan di latar belakang sebagai pekerjaan Windows PowerShell.
 
 ```yaml
 Type: SwitchParameter
@@ -69,8 +69,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -UsageMonth
-Menentukan angka dua digit untuk bulan yang akan mendapatkan detail penggunaan.
+Menentukan angka dua digit untuk bulan untuk mendapatkan detail penggunaan.
 
 ```yaml
 Type: String
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -UsageYear
-Menentukan empat digit tahun untuk mendapatkan detail penggunaan.
+Menentukan tahun empat digit untuk mendapatkan detail penggunaan.
 
 ```yaml
 Type: String
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecuritySubAssessment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecuritySubAssessment.md
-ms.openlocfilehash: da33b08b179af758631a4bbf832bf95077d1bdbf
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: cf71f8c1a8a4bb09be6a47923f5da35669eb4927
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140183926"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142253509"
 ---
 # Get-AzSecuritySubAssessment
 
 ## SYNOPSIS
-Mendapatkan hasil sub-penilaian dalam langganan.
+Mendapatkan hasil sub penilaian dalam langganan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azsecuritysubassessment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Get-AzSecuritySubAssessment -ResourceId <String> [-DefaultProfile <IAzureContext
 ```
 
 ## DESCRIPTION
-Mendapatkan hasil sub-penilaian dalam langganan.
+Mendapatkan hasil sub penilaian dalam langganan.
 
 ## EXAMPLES
 
@@ -59,12 +62,12 @@ Mendapatkan hasil sub-penilaian dalam langganan.
 PS C:\> Get-AzSecuritySubAssessment
 ```
 
-Mendapatkan semua hasil sub-penilaian dalam langganan.
+Mendapatkan semua hasil sub penilaian dalam langganan.
 
 ## PARAMETERS
 
 ### -AssessedResourceId
-ID sumber daya lengkap dari sumber daya yang digunakan untuk penilaian.
+ID sumber daya lengkap sumber daya yang dihitung penilaiannya.
 
 ```yaml
 Type: String
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya keamanan yang ingin Anda perintahkan.
+ID sumber daya keamanan yang ingin Anda gunakan untuk meminta perintah.
 
 ```yaml
 Type: String
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

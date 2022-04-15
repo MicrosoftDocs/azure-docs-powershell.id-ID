@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Reset-AzBatchComputeNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Reset-AzBatchComputeNode.md
 ms.openlocfilehash: ae6aa735dd6b85a84cbf8f54b67dab4345d709c1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139979925"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142274245"
 ---
 # Reset-AzBatchComputeNode
 
 ## SYNOPSIS
-Menginstal ulang sistem operasi pada node perhitungan yang ditentukan.
+Menginstal ulang sistem operasi pada simpul komputasi yang ditentukan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/reset-azbatchcomputenode) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.batch/reset-azbatchcomputenode) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,30 +36,30 @@ Reset-AzBatchComputeNode [[-ComputeNode] <PSComputeNode>] [-ReimageOption <Compu
 ```
 
 ## DESCRIPTION
-Cmdlet **Reset-AzBatchComputeNode** menginstal ulang sistem operasi pada node perhitungan yang ditentukan.
+Cmdlet **Reset-AzBatchComputeNode** menginstal ulang sistem operasi pada simpul komputasi yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Mengganti simpul
+### Contoh 1: Reimage a node
 ```
 PS C:\>Reset-AzBatchComputeNode -PoolId "MyPool" -Id "tvm-3257026573_2-20150813t200938z" -BatchContext $Context
 ```
 
-Perintah ini akan mengulangi node perhitungan dengan ID "tvm-3257026573_2-20150813t200938z" di pool bernama MyPool.
-Gunakan cmdlet Get-AzBatchAccountKey cmdlet untuk menetapkan konteks ke $Context variabel.
+Perintah ini mereimage simpul komputasi dengan ID "tvm-3257026573_2-20150813t200938z" di kolam renang bernama MyPool.
+Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
 
-### Contoh 2: Mengganti semua simpul dalam sebuah pool
+### Contoh 2: Reimage all node in a pool
 ```
 PS C:\>Get-AzBatchComputeNode -PoolId "MyPool" -BatchContext $Context | Reset-AzBatchComputeNode -BatchContext $Context
 ```
 
-Perintah ini akan mengulangi setiap node perhitungan dalam pool yang bernama MyPool.
+Perintah ini mereimensikan setiap node komputasi di kolam bernama MyPool.
 
 ## PARAMETERS
 
 ### -BatchContext
-Menentukan contoh **BatchAccountContext** yang digunakan cmdlet untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeNode
-Menentukan objek **PSComputeNode** yang mewakili node perhitungan untuk mengganti.
+Menentukan objek **PSComputeNode** yang mewakili node komputasi untuk direimage.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSComputeNode
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID node hitung untuk mengganti.
+Menentukan ID simpul komputasi untuk direimage.
 
 ```yaml
 Type: System.String
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolId
-Menentukan ID pool yang berisi node perhitungan.
+Menentukan ID kumpulan yang berisi simpul komputasi.
 
 ```yaml
 Type: System.String
@@ -134,8 +134,8 @@ Accept wildcard characters: False
 ```
 
 ### -ReimageOption
-Menentukan kapan mengganti simpul dan apa yang harus dilakukan dengan tugas yang sedang berjalan.
-Defaultnya adalah Requeue.
+Menentukan waktu untuk mengolah ulang simpul dan apa yang harus dilakukan dengan tugas yang sedang berjalan saat ini.
+Defaultnya adalah Antrean Ulang.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Batch.Common.ComputeNodeReimageOption]
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -169,6 +169,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzBatchComputeNode](./Get-AzBatchComputeNode.md)
 
-[Restart-AzBatchComputeNode](./Restart-AzBatchComputeNode.md)
+[Mulai ulang-AzBatchComputeNode](./Restart-AzBatchComputeNode.md)
 
-[Cmdlet Kumpulan Azure](/powershell/module/Az.Batch/)
+[Cmdlet Azure Batch](/powershell/module/Az.Batch/)

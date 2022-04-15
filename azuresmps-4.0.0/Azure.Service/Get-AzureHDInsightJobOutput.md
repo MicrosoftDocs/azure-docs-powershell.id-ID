@@ -4,11 +4,11 @@ ms.assetid: 0B194605-F6B2-4FBC-ABF8-E49876EC7CFD
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: c8580f99bab6658fabcc225ee069dcfbbd6e8abf
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423234"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142245745"
 ---
 # Get-AzureHDInsightJobOutput
 
@@ -27,20 +27,20 @@ Get-AzureHDInsightJobOutput [-Certificate <X509Certificate2>] [-HostedService <S
 ```
 
 ## DESCRIPTION
-Versi Azure PowerShell HDInsight ini sudah tidak berlaku.
-Cmdlets ini akan dihapus pada 1 Januari 2017.
-Silakan gunakan versi yang lebih baru Azure PowerShell HDInsight.
+Versi Azure PowerShell HDInsight ini sudah tidak digunakan lagi.
+Cmdlet ini akan dihapus pada 1 Januari 2017.
+Silakan gunakan versi Azure PowerShell HDInsight yang lebih baru.
 
-Untuk informasi tentang cara menggunakan HDInsight baru untuk membuat kluster, lihat Membuat kluster berbasis Linux di [HDInsight menggunakan Azure PowerShell](https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-create-linux-clusters-azure-powershell/).
-Untuk informasi tentang cara mengirimkan pekerjaan menggunakan Azure PowerShell dan pendekatan lain, lihat [Mengirimkan pekerjaan Hadoop di HDInsight](https://azure.microsoft.com/en-us/documentation/articles/hdinsight-submit-hadoop-jobs-programmatically/).
-Untuk informasi referensi tentang Azure PowerShell HDInsight, [lihat Cmdlet Azure HDInsight](/powershell/module/servicemanagement/azure.service/?view=azuresmps-4.0.0#hd-insights).
+Untuk informasi tentang cara menggunakan HDInsight baru untuk membuat kluster, lihat Membuat kluster berbasis Linux dalam [HDInsight menggunakan Azure PowerShell](https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-create-linux-clusters-azure-powershell/).
+Untuk informasi tentang cara mengirimkan pekerjaan dengan menggunakan Azure PowerShell dan pendekatan lain, lihat [Mengirimkan pekerjaan Hadoop di HDInsight](https://azure.microsoft.com/en-us/documentation/articles/hdinsight-submit-hadoop-jobs-programmatically/).
+Untuk informasi referensi tentang Azure PowerShell HDInsight, lihat [Cmdlet Azure HDInsight](/powershell/module/servicemanagement/azure.service/?view=azuresmps-4.0.0#hd-insights).
 
 Cmdlet **Get-AzureHDInsightJobOutput** mendapatkan output log untuk pekerjaan dari akun penyimpanan yang terkait dengan kluster.
-Anda bisa mendapatkan beragam tipe log pekerjaan termasuk output standar, kesalahan standar, log tugas, dan ringkasan log tugas.
+Anda bisa mendapatkan berbagai tipe log pekerjaan termasuk output standar, kesalahan standar, log tugas, dan ringkasan log tugas.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan output pekerjaan
+### Contoh 1: Dapatkan output pekerjaan
 ```
 PS C:\>$SubId = (Get-AzureSubscription -Current).SubscriptionId
 PS C:\> $ClusterName = "MyCluster"
@@ -50,17 +50,17 @@ PS C:\> $WordCountJob = New-AzureHDInsightMapReduceJobDefinition -JarFile "/Exam
     | Get-AzureHDInsightJobOutput -Cluster $ClusterName -StandardError
 ```
 
-Perintah pertama mendapatkan ID langganan saat ini, lalu menyimpannya di $SubId variabel.
+Perintah pertama mendapatkan ID langganan saat ini, lalu menyimpannya dalam variabel $SubId.
 
-Perintah kedua menyimpan nama MyCluster dalam $Clustername pengguna.
+Perintah kedua menyimpan nama MyCluster dalam variabel $Clustername.
 
-Perintah ketiga membuat definisi pekerjaan MapReduce, lalu menyimpannya di $WordCountJob baru.
-Perintah tersebut lolos tugas di $WordCountJob cmdlet **Start-AzureHDInsightJob** untuk memulai pekerjaan.
-Alat ini juga $WordCountJob cmdlet **Wait-AzureHDInsightJob** untuk menunggu pekerjaan selesai, kemudian menggunakan **Get-AzureHDInsightJobOutput** untuk mendapatkan output pekerjaan.
+Perintah ketiga membuat definisi pekerjaan MapReduce, lalu menyimpannya dalam variabel $WordCountJob.
+Perintah akan meneruskan pekerjaan dalam $WordCountJob ke cmdlet **Start-AzureHDInsightJob** untuk memulai pekerjaan.
+Ini juga melewati $WordCountJob ke cmdlet **Wait-AzureHDInsightJob** untuk menunggu pekerjaan selesai, lalu menggunakan **Get-AzureHDInsightJobOutput** untuk mendapatkan output pekerjaan.
 
 ## PARAMETERS
 
-### -Certificate
+### -Sertifikat
 Menentukan sertifikat manajemen untuk langganan Azure.
 
 ```yaml
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -DownloadTaskLogs
-Mengindikasikan bahwa cmdlet ini mendapatkan log tugas untuk sebuah pekerjaan.
+Menunjukkan bahwa cmdlet ini mendapatkan log tugas untuk pekerjaan.
 
 ```yaml
 Type: SwitchParameter
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Titik akhir
-Menentukan titik akhir yang akan digunakan untuk menyambungkan ke Azure.
+Menentukan titik akhir untuk digunakan untuk menyambungkan ke Azure.
 Jika Anda tidak menentukan parameter ini, cmdlet ini menggunakan titik akhir default.
 
 ```yaml
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobId
-Menentukan ID pekerjaan untuk mendapatkan.
+Menentukan ID pekerjaan yang akan didapatkan.
 
 ```yaml
 Type: String
@@ -168,8 +168,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -StandardError
-Mengindikasikan bahwa cmdlet ini mendapatkan output StdErr dari pekerjaan.
+Menunjukkan bahwa cmdlet ini mendapatkan output StdErr dari pekerjaan.
 
 ```yaml
 Type: SwitchParameter
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -StandardOutput
-Mengindikasikan bahwa cmdlet ini mendapatkan output SdtOut dari pekerjaan.
+Menunjukkan bahwa cmdlet ini mendapatkan output SdtOut dari pekerjaan.
 
 ```yaml
 Type: SwitchParameter
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -Langganan
-Menentukan langganan yang berisi kluster HDInsight yang akan mendapatkannya.
+Menentukan langganan yang berisi kluster HDInsight untuk didapatkan.
 
 ```yaml
 Type: String
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -TaskSummary
-Mengindikasikan bahwa cmdlet ini mendapatkan ringkasan log tugas.
+Menunjukkan bahwa cmdlet ini mendapatkan ringkasan log tugas.
 
 ```yaml
 Type: SwitchParameter
@@ -259,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -269,8 +269,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureHDInsightMapReduceJobDefinition](./New-AzureHDInsightMapReduceJobDefinition.md)
+[Baru-AzureHDInsightMapReduceJobDefinition](./New-AzureHDInsightMapReduceJobDefinition.md)
 
 [Start-AzureHDInsightJob](./Start-AzureHDInsightJob.md)
 
-[Wait-AzureHDInsightJob](./Wait-AzureHDInsightJob.md)
+[Tunggu-AzureHDInsightJob](./Wait-AzureHDInsightJob.md)

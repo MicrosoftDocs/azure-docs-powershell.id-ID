@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.imagebuilder/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/Get-AzImageBuilderTemplate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/Get-AzImageBuilderTemplate.md
-ms.openlocfilehash: 2b34a033f0a89e4403e44f2cf3a7eb109bf17881
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: bb343fa7e76fbf6f3e499cbb738ff79bb0d78500
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140199750"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142293541"
 ---
 # Get-AzImageBuilderTemplate
 
 ## SYNOPSIS
 Dapatkan informasi tentang templat gambar mesin virtual
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.imagebuilder/get-azimagebuildertemplate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Dapatkan informasi tentang templat gambar mesin virtual
 Get-AzImageBuilderTemplate [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzImageBuilderTemplate -ImageTemplateName <String> -ResourceGroupName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -47,7 +50,7 @@ Dapatkan informasi tentang templat gambar mesin virtual
 
 ## EXAMPLES
 
-### Contoh 1: Daftar semua templat di bawah langganan
+### Contoh 1: Mencantumkan semua templat di bawah langganan
 ```powershell
 PS C:\> Get-AzImageBuilderTemplate
 
@@ -60,7 +63,7 @@ eastus   test-imagebuilder         Microsoft.VirtualMachineImages/imageTemplates
 
 Perintah ini mencantumkan semua templat di bawah langganan.
 
-### Contoh 2: Daftar semua templat di bawah grup sumber daya
+### Contoh 2: Mencantumkan semua templat di bawah grup sumber daya
 ```powershell
 PS C:\> Get-AzImageBuilderTemplate -ResourceGroupName wyunchi-imagebuilder
 
@@ -79,7 +82,7 @@ eastus   tmpl-shareimg-managedimg   Microsoft.VirtualMachineImages/imageTemplate
 
 Perintah ini mencantumkan semua templat di bawah grup sumber daya.
 
-### Contoh 3: Dapatkan templat di bawah grup sumber daya
+### Contoh 3: Mendapatkan templat di bawah grup sumber daya
 ```powershell
 PS C:\> Get-AzImageBuilderTemplate -ImageTemplateName lucas-imagetemplate -ResourceGroupName wyunchi-imagebuilder
 
@@ -90,7 +93,7 @@ eastus   lucas-imagetemplate Microsoft.VirtualMachineImages/imageTemplates
 
 Perintah ini mendapatkan templat di bawah grup sumber daya.
 
-### Contoh 4: Dapatkan templat di bawah grup sumber daya
+### Contoh 4: Mendapatkan templat di bawah grup sumber daya
 ```powershell
 PS C:\> $template = Get-AzImageBuilderTemplate -ResourceGroupName wyunchi-imagebuilder -ImageTemplateName template-name-ep5z7v
 PS C:\> Get-AzImageBuilderTemplate -InputObject $template
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ImageBuilder.Models.IImageBuilderIdentity
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
 Id langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

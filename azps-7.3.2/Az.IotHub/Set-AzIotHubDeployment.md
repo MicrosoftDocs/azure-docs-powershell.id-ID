@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/set-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHubDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHubDeployment.md
-ms.openlocfilehash: f6066dbc9045f2c5bc3e82a8c6a349aecd9de202
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: da9cf9050489a04daf8d765e61796786e9123ff9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140402430"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142293163"
 ---
 # Set-AzIotHubDeployment
 
 ## SYNOPSIS
-Memperbarui bidang penyebaran IoT Edge yang bisa dimatikan.
+Perbarui bidang yang dapat dibisukan dari penyebaran IoT Edge.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/set-aziothubdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,8 +44,8 @@ Set-AzIotHubDeployment [-ResourceId] <String> -Name <String> [-Priority <Int32>]
 ```
 
 ## DESCRIPTION
-Memperbarui properti penyebaran IoT Edge tertentu.
-Catatan: Konten konfigurasi dapat tetap tersedia. Properti konfigurasi yang bisa diperbarui adalah 'label', 'metrik', 'prioritas' dan 'targetCondition'.
+Memperbarui properti tertentu dari penyebaran IoT Edge.
+Catatan: Konten konfigurasi tidak dapat berubah. Properti konfigurasi yang dapat diperbarui adalah 'label', 'metrik', 'prioritas' dan 'targetCondition'.
 Lihat https://docs.microsoft.com/azure/iot-edge/module-deployment-monitoring  untuk informasi selengkapnya.
 
 ## EXAMPLES
@@ -82,8 +85,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memungkinkan penyebaran objek untuk diganti meskipun telah diperbarui sejak diambil terakhir kali.
+### -Paksa
+Memungkinkan objek penyebaran diganti bahkan jika diperbarui sejak diambil terakhir kali.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -Label
-Peta label yang akan diterapkan untuk penggunaan target.
+Peta label yang akan diterapkan ke penempatan target.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -142,7 +145,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Metric
+### -Metrik
 Kumpulan kueri untuk definisi metrik penyebaran IoT Edge.
 
 ```yaml
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -Prioritas
-Bobot penyebaran jika ada aturan yang bersaing (kemenangan tertinggi).
+Berat penyebaran dalam kasus aturan bersaing (kemenangan tertinggi).
 
 ```yaml
 Type: System.Int32
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetCondition
-Kondisi target untuk menerapkan penyebaran Edge.
+Kondisi target tempat penerapan Edge diterapkan.
 
 ```yaml
 Type: System.String
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

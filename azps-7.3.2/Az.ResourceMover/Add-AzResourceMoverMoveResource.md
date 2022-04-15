@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcemover/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Add-AzResourceMoverMoveResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Add-AzResourceMoverMoveResource.md
-ms.openlocfilehash: aceecf674b0bd5b5b2cc73b38f8859b3aa765632
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ae9ffb9d1694a95a2bc537ffcad421e1bf7ea850
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140184305"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142254085"
 ---
 # Add-AzResourceMoverMoveResource
 
 ## SYNOPSIS
-Membuat atau memperbarui Sumber Daya Pemindahan dalam kumpulan pemindahan.
+Membuat atau memperbarui Pindahkan Sumber Daya dalam kumpulan pemindahan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resourcemover/add-azresourcemovermoveresource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ Add-AzResourceMoverMoveResource -MoveCollectionName <String> -Name <String> -Res
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui Sumber Daya Pemindahan dalam kumpulan pemindahan.
+Membuat atau memperbarui Pindahkan Sumber Daya dalam kumpulan pemindahan.
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan sumber daya ke Kumpulan Pemindahan.
+### Contoh 1: Menambahkan sumber daya ke Koleksi Pemindahan.
 ```powershell
 PS C:\> Add-AzResourceMoverMoveResource -ResourceGroupName "RG-MoveCollection-demoRMS" -MoveCollectionName "PS-centralus-westcentralus-demoRMS" -SourceId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/PSDemoRM/providers/Microsoft.Compute/virtualMachines/PSDemoVM" -Name "PSDemoVM" -ResourceSetting $targetResourceSettingsObj
 
@@ -71,9 +74,9 @@ $targetResourceSettingsObj.TargetResourceName = "PSDemoVM"
 
 ```
 
-Tambahkan sumber daya ke Kumpulan Pemindahan.
+Tambahkan sumber daya ke Pindahkan Koleksi.
 
-### Contoh 2: Tambahkan sumber daya ke Kumpulan Pemindahan yang memiliki sumber daya target yang ada.
+### Contoh 2: Tambahkan sumber daya ke Kumpulan Pemindahan yang memiliki sumber daya target yang sudah ada.
 ```powershell
 PS C:\> Add-AzResourceMoverMoveResource -ResourceGroupName "RG-MoveCollection-demoRMS"  -MoveCollectionName "PS-centralus-westcentralus-demoRMS" -SourceId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourcegroups/psdemorm"  -Name "psdemorm"  -ExistingTargetId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourcegroups/PSDemoRM-target"
 
@@ -188,8 +191,8 @@ Accept wildcard characters: False
 ```
 
 ### -DependsOnOverride
-Mendapatkan atau mengatur penggantian dependensi sumber daya pemindahan.
-Untuk membangun, lihat bagian CATATAN untuk properti DEPENDSONOVERRIDE dan membuat tabel hash.
+Mendapatkan atau mengatur pemindahan dependensi sumber daya akan menimpa.
+Untuk membuat, lihat bagian CATATAN untuk properti DEPENDSONOVERRIDE dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ResourceMover.Models.Api20210801.IMoveResourceDependencyOverride[]
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExistingTargetId
-Mendapatkan atau mengatur Id target ARM sumber daya yang ada.
+Mendapatkan atau mengatur ID ARM target sumber daya yang sudah ada.
 
 ```yaml
 Type: System.String
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -MoveCollectionName
-Pindahkan nama koleksi.
+Nama Pindahkan Koleksi.
 
 ```yaml
 Type: System.String
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Pindahkan Nama Sumber Daya.
+Nama Pindahkan Sumber Daya.
 
 ```yaml
 Type: System.String
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya.
+Nama Grup Sumber Daya.
 
 ```yaml
 Type: System.String
@@ -280,7 +283,7 @@ Accept wildcard characters: False
 
 ### -ResourceSetting
 Mendapatkan atau mengatur pengaturan sumber daya.
-Untuk membuat, lihat bagian CATATAN untuk properti RESOURCESETTING dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti RESOURCESETTING dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ResourceMover.Models.Api20210801.IResourceSettings
@@ -295,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceId
-Mendapatkan atau mengatur Id Source ARM dari sumber daya.
+Mendapatkan atau mengatur Id ARM Sumber sumber sumber daya.
 
 ```yaml
 Type: System.String
@@ -325,7 +328,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -341,7 +344,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -356,7 +359,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -375,13 +378,13 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-DEPENDSONOVERRIDE <IMoveResourceDependencyOverride[]>: Gets atau mengatur penggantian dependensi sumber daya pindahkan.
-  - `[Id <String>]`: Mendapatkan atau mengatur ID ARM dari sumber daya dependen.
-  - `[TargetId <String>]`: Mendapatkan atau mengatur id sumber daya ARM baik dari MoveResource maupun ID sumber daya ARM dari sumber daya dependen.
+DEPENDSONOVERRIDE <IMoveResourceDependencyOverride[]>: Mendapatkan atau mengatur pengesampingan dependensi pemindahan sumber daya.
+  - `[Id <String>]`: Mendapatkan atau mengatur ID ARM sumber daya dependen.
+  - `[TargetId <String>]`: Mendapatkan atau mengatur id ARM sumber daya dari MoveResource atau ID ARM sumber daya dari sumber daya dependen.
 
 RESOURCESETTING <IResourceSettings>: Mendapatkan atau mengatur pengaturan sumber daya.
-  - `ResourceType <String>`: Tipe sumber daya. Misalnya, nilai dapat menjadi Microsoft.Compute/virtualMachines.
-  - `TargetResourceName <String>`: Mendapatkan atau mengatur nama Sumber Daya target.
+  - `ResourceType <String>`: Tipe sumber daya. Misalnya, nilai dapat berupa Microsoft.Compute/virtualMachines.
+  - `TargetResourceName <String>`: Mendapatkan atau menetapkan nama sumber daya target.
 
 ## RELATED LINKS
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/New-AzApplicationInsightsApiKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/New-AzApplicationInsightsApiKey.md
 ms.openlocfilehash: 7ee1ea1230171d5d9294db5fe6aca914de78acdb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140110295"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142274597"
 ---
 # New-AzApplicationInsightsApiKey
 
@@ -18,7 +18,7 @@ ms.locfileid: "140110295"
 Membuat kunci api wawasan aplikasi untuk sumber daya wawasan aplikasi
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.applicationinsights/new-azapplicationinsightsapikey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/new-azapplicationinsightsapikey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,11 +42,11 @@ New-AzApplicationInsightsApiKey [-ResourceId] <String> [-Permissions] <String[]>
 ```
 
 ## DESCRIPTION
-Membuat tombol api wawasan aplikasi untuk sumber daya wawasan aplikasi
+Membuat kunci api wawasan aplikasi untuk sumber daya wawasan aplikasi
 
 ## EXAMPLES
 
-### Contoh 1 Buat Kunci Api baru untuk sumber daya wawasan aplikasi
+### Contoh 1 Membuat Kunci Api baru untuk sumber daya wawasan aplikasi
 ```
 PS C:\>$apiKeyDescription="testapiKey"
 PS C:\>$permissions = @("ReadTelemetry", "WriteAnnotations")
@@ -59,12 +59,12 @@ Permissions : {ReadTelemetry, WriteAnnotations}
 Description : testapiKey
 ```
 
-Buat deskripsi kunci api wawasan aplikasi sebagai "testapiKey" dengan izin "ReadTelemetry", "WriteAnnotations" untuk "uji" sumber daya dalam grup sumber daya "testGroup".
+Buat deskripsi kunci api wawasan aplikasi sebagai "testapiKey" dengan izin "ReadTelemetry", "WriteAnnotations" untuk sumber daya "uji" dalam grup sumber daya "testGroup".
 
 ## PARAMETERS
 
 ### -ApplicationInsightsComponent
-Application Insights Component Object.
+Objek Komponen Insights Aplikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApplicationInsights.Models.PSApplicationInsightsComponent
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -123,8 +123,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Permissions
-Izin yang boleh dilakukan oleh kunci API adalah aplikasi.
+### -Izin
+Izin yang diperbolehkan oleh kunci API untuk dilakukan oleh aplikasi.
 
 ```yaml
 Type: System.String[]
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Application Insights Component Resource Id.
+Id Sumber Daya Komponen Insights Aplikasi.
 
 ```yaml
 Type: System.String
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

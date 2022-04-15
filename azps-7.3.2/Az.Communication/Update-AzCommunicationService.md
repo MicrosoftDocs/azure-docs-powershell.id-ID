@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.communication/up
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/Update-AzCommunicationService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/Update-AzCommunicationService.md
-ms.openlocfilehash: c3c6703382e050eb1a5bd873531da5307a5bc541
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 90afdef3b9726612e7ab91a961be51cee9bfc697
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140572067"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142259395"
 ---
 # Update-AzCommunicationService
 
 ## SYNOPSIS
 Operasi untuk memperbarui CommunicationService yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.communication/update-azcommunicationservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,12 +52,12 @@ Location Name           Type                                          AzureAsync
 Global   ContosoAcsResource1 Microsoft.Communication/communicationServices
 ```
 
-Melampirkan tag tertentu ke sumber daya ACS yang ditentukan.
+Melampirkan tag yang diberikan ke sumber daya ACS yang ditentukan.
 
 ## PARAMETERS
 
-### -LokasiData
-Lokasi tempat layanan komunikasi menyimpan datanya.
+### -DataLocation
+Lokasi tempat layanan komunikasi menyimpan datanya saat beristirahat.
 
 ```yaml
 Type: System.String
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Communication.Models.ICommunicationIdentity
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi Azure tempat CommunicationService dijalankan.
+Lokasi Azure tempat CommunicationService berjalan.
 
 ```yaml
 Type: System.String
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama sumber daya Layanan Komunikasi.
+Nama sumber daya CommunicationService.
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag layanan yang merupakan daftar pasangan nilai kunci yang menjelaskan sumber daya tersebut.
+Tag layanan yang merupakan daftar pasangan nilai kunci yang menjelaskan sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -226,9 +229,9 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <ICommunicationIdentity>: Parameter Identitas
-  - `[CommunicationServiceName <String>]`: Nama sumber daya Layanan Komunikasi.
+  - `[CommunicationServiceName <String>]`: Nama sumber daya CommunicationService.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS
