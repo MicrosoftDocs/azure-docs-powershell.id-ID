@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeBandwidthSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeBandwidthSchedule.md
-ms.openlocfilehash: 7d35d3bc99e0af5d56456f5c345486db9bed1e2b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 316dfef9ccc2a6827cf46ed4918390a52a10df2e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139998412"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142398941"
 ---
 # Get-AzStackEdgeBandwidthSchedule
 
 ## SYNOPSIS
 Mendapatkan informasi tentang jadwal Bandwidth
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/get-azstackedgebandwidthschedule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Get-AzStackEdgeBandwidthSchedule [[-Name] <String>] [-DefaultProfile <IAzureCont
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStackEdgeBandwidthSchedule** mendapatkan informasi tentang Jadwal Bandwidth. Anda dapat menentukan Nama Jadwal bersama dengan nama Grup Sumber Daya dan Nama perangkat untuk mendapatkan informasi tentang jadwal Bandwidth tertentu
+Cmdlet **Get-AzStackEdgeBandwidthSchedule** mendapatkan informasi tentang Jadwal Bandwidth. Anda bisa menentukan Nama Jadwal bersama dengan nama Grup Sumber Daya dan Nama perangkat untuk mendapatkan informasi tentang jadwal Bandwidth tertentu
 
 ## EXAMPLES
 
@@ -173,15 +176,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PS StackEdgeDevice
+### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeDevice
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PS StackEdgeBandWidthSchedule
+### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeBandWidthSchedule
 
 ## CATATAN
 

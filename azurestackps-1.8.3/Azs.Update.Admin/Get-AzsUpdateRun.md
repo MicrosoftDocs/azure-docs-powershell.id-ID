@@ -4,11 +4,11 @@ Module Name: Azs.Update.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 0bbd694fff313f4c7b8983521dee8cd1c01f7561
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136579684"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142380311"
 ---
 # Get-AzsUpdateRun
 
@@ -23,7 +23,7 @@ Get-AzsUpdateRun -UpdateName <String> [-Location <String>] [-ResourceGroupName <
  [-Top <Int32>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsUpdateRun -Name <String> -UpdateName <String> [-Location <String>] [-ResourceGroupName <String>]
  [<CommonParameters>]
@@ -35,7 +35,7 @@ Get-AzsUpdateRun -ResourceId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Dapatkan daftar pembaruan yang berjalan. Contoh objek UpdateRun yang dikembalikan bisa disambung ke Mulai Ulang-AzsUpdateRun, bila ada.
+Dapatkan daftar pembaruan yang berjalan. Instans objek UpdateRun yang dikembalikan dapat disalurkan ke Restart-AzsUpdateRun, jika berlaku.
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ Dapatkan daftar semua upaya untuk menerapkan pembaruan tertentu.
 ## PARAMETERS
 
 ### -Nama
-Perbarui menjalankan pengidentifikasi.
+Perbarui pengidentifikasi jalankan.
 
 ```yaml
 Type: String
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup sumber daya sumber daya yang berada di bawahnya.
+Grup sumber daya tempat sumber daya berada di bawah.
 
 ```yaml
 Type: String
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

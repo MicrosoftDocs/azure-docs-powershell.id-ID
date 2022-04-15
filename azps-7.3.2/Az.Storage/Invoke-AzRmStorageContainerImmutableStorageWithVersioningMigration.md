@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/invoke-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Invoke-AzRmStorageContainerImmutableStorageWithVersioningMigration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Invoke-AzRmStorageContainerImmutableStorageWithVersioningMigration.md
-ms.openlocfilehash: cb21a27acdc2bc6f701a90faedae6b8bec29bbc4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 73948f1afeafe31230f9cefebd8faea6d2a5722c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140548389"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142398257"
 ---
 # Invoke-AzRmStorageContainerImmutableStorageWithVersioningMigration
 
 ## SYNOPSIS
-Melakukan migrasi penampung blob Storage yang sudah ada untuk mengaktifkan fitur yang dapat Storage dengan pengelompokan.
+Migrasikan wadah blob Storage yang sudah ada untuk mengaktifkan Storage yang tidak dapat berubah dengan penerapan versi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/invoke-azrmstoragecontainerimmutablestoragewithversioningmigration) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Nama Akun (Default)
+### AccountName (Default)
 ```
 Invoke-AzRmStorageContainerImmutableStorageWithVersioningMigration [-ResourceGroupName] <String>
  [-StorageAccountName] <String> -Name <String> [-AsJob] [-DefaultProfile <IAzureContextContainer>] [-WhatIf]
@@ -40,26 +43,26 @@ Invoke-AzRmStorageContainerImmutableStorageWithVersioningMigration -InputObject 
 ```
 
 ## DESCRIPTION
-Cmdlet **Invoke-AzRmStorageContainerImmutableStorageWithVersioningMigration** melakukan migrasi wadah blob Storage yang sudah ada untuk mengaktifkan penyimpanan yang Storage dengan versioning.
-Cmdlet hanya berfungsi ketika akun Storage telah mengaktifkan penerapan versi blob, dan kontainer telah memiliki ImmutabilityPolicy.
+Cmdlet **Invoke-AzRmStorageContainerImmutableStorageWithVersioningMigration** memigrasikan wadah blob Storage yang sudah ada untuk mengaktifkan Storage yang tidak dapat diubah dengan penerapan versi.
+Cmdlet hanya berfungsi ketika akun Storage telah mengaktifkan penerapan versi blob, dan kontainer sudah memiliki ImmutabilityPolicy.
 
 ## EXAMPLES
 
-### Contoh 1: Melakukan migrasi wadah blob Storage yang sudah ada untuk mengaktifkan fitur yang tidak Storage dengan versi.
+### Contoh 1: Melakukan migrasi wadah blob Storage yang sudah ada untuk mengaktifkan Storage yang tidak dapat berubah dengan penerapan versi.
 ```
 PS C:\> $t = Invoke-AzRmStorageContainerImmutableStorageWithVersioningMigration -ResourceGroupName "myResourceGroup" -AccountName "mystorageaccount" -Name testcontainer -asjob
 
 PS C:\> $t | Wait-Job
 ```
 
-Perintah ini melakukan migrasi wadah blob Storage yang sudah ada untuk mengaktifkan fitur yang tidak Storage dengan versi.
-Perintah hanya berfungsi ketika akun Storage telah mengaktifkan penerapan versi blob, dan kontainer telah memiliki ImmutabilityPolicy.
-Karena perintah akan dijalankan untuk waktu yang lama, Anda dapat menjalankannya secara asinkron dengan '-Asjob'.
+Perintah ini memigrasikan wadah blob Storage yang sudah ada untuk mengaktifkan Storage yang tidak dapat berubah dengan penerapan versi.
+Perintah hanya berfungsi ketika akun Storage telah mengaktifkan penerapan versi blob, dan kontainer sudah memiliki ImmutabilityPolicy.
+Karena perintah ini akan berjalan untuk waktu yang lama, Anda dapat menjalankannya secara asinkron dengan '-Asjob'.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Storage wadah objek
+objek kontainer Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSContainer
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage objek akun
+objek akun Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Storage Akun.
+Storage Nama Akun.
 
 ```yaml
 Type: System.String
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

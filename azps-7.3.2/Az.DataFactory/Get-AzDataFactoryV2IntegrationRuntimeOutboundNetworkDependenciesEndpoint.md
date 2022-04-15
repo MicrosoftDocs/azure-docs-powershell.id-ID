@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2IntegrationRuntimeOutboundNetworkDependenciesEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2IntegrationRuntimeOutboundNetworkDependenciesEndpoint.md
-ms.openlocfilehash: c9df6b2a605b716107ea43ab13ae02c9ca0bd1db
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: b73e263c905554b7078c7a4cec31f4d56ffc0ece
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140544729"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142376261"
 ---
 # Get-AzDataFactoryV2IntegrationRuntimeOutboundNetworkDependenciesEndpoint
 
 ## SYNOPSIS
 Mendapatkan daftar dependensi jaringan keluar untuk runtime integrasi Azure-SSIS tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2integrationruntimeoutboundnetworkdependenciesendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Get-AzDataFactoryV2IntegrationRuntimeOutboundNetworkDependenciesEndpoint [-Input
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzDataFactoryV2IntegrationRuntimeOutboundNetworkDependenciesEndpoint menyediakan daftar dependensi jaringan keluar untuk runtime integrasi SSIS di Azure Data Factory yang menggabungkan jaringan virtual.
+Cmdlet Get-AzDataFactoryV2IntegrationRuntimeOutboundNetworkDependenciesEndpoint menyediakan daftar dependensi jaringan keluar untuk runtime integrasi SSIS di Azure Data Factory yang bergabung dalam jaringan virtual.
 
 ## EXAMPLES
 
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -160,7 +163,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntimeOutboundNetworkDependenciesCategoryEndpoint, Microsoft.Azure.PowerShell.Cmdlets.DataFactoryV2, Version=1.13.1.0, Culture=neutral, PublicKeyToken=null]]
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, data, factories, copy, activities, integration runtime
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik, salinan, aktivitas, runtime integrasi
 
 ## RELATED LINKS
 

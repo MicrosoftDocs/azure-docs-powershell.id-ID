@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Set-AzureRmVMAEMExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Set-AzureRmVMAEMExtension.md
 ms.openlocfilehash: c006c06d03e1f1c120ed62f38ea8b3e451d8fa21
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425452"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142358647"
 ---
 # Set-AzureRmVMAEMExtension
 
 ## SYNOPSIS
-Mengaktifkan dukungan untuk pemantauan sistem SAP.
+Mengaktifkan dukungan untuk pemantauan untuk sistem SAP.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,23 +29,23 @@ Set-AzureRmVMAEMExtension [-ResourceGroupName] <String> [-VMName] <String> [-Ena
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmVMAEMExtension** memperbarui konfigurasi komputer virtual untuk mengaktifkan atau memperbarui dukungan untuk pemantauan untuk sistem SAP yang diinstal di komputer virtual.
+Cmdlet **Set-AzureRmVMAEMExtension** memperbarui konfigurasi mesin virtual untuk mengaktifkan atau memperbarui dukungan untuk pemantauan sistem SAP yang diinstal pada mesin virtual.
 Cmdlet menginstal ekstensi Azure Enhanced Monitoring (AEM) yang mengumpulkan data kinerja dan membuatnya dapat ditemukan untuk sistem SAP.
 
 ## EXAMPLES
 
-### Contoh 1: Gunakan ekstensi AEM
+### Contoh 1: Menggunakan ekstensi AEM
 ```
 PS C:\> Set-AzureRmVMAEMExtension -ResourceGroupName "ResourceGroup11" -VMName "contoso-server" -WADStorageAccountName "stdstorage"
 ```
 
 Perintah ini mengonfigurasi mesin virtual bernama contoso-server untuk menggunakan ekstensi AEM.
-Perintah menentukan akun penyimpanan yang bernama stdstorage.
+Perintah menentukan akun penyimpanan bernama stdstorage.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -59,8 +59,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Enable PER
-Jika parameter ini disediakan, commandlet akan mengaktifkan Windows Azure Diagnostics untuk komputer virtual ini.
+### -EnableWAD
+Jika parameter ini disediakan, commandlet akan mengaktifkan Windows Azure Diagnostics untuk mesin virtual ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -OSType
-Menentukan tipe sistem operasi dari disk sistem operasi.
+Menentukan tipe sistem operasi disk sistem operasi.
 Jika disk sistem operasi tidak memiliki tipe, Anda harus menentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah: Windows dan Linux.
 
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya mesin virtual yang dimodifikasi cmdlet ini.
+Menentukan nama grup sumber daya mesin virtual yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipStorage
-Mengindikasikan bahwa cmdlet ini melompati konfigurasi penyimpanan.
+Menunjukkan bahwa cmdlet ini melewati konfigurasi penyimpanan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -137,7 +137,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -PERTStorageAccountName
+### -WADStorageAccountName
 Menentukan nama akun penyimpanan yang digunakan cmdlet ini untuk mengonfigurasi ekstensi LinuxDiagnostics atau IaaSDiagnostics.
 Jika mesin virtual tidak menggunakan akun penyimpanan standar, Anda harus menentukan nilai untuk parameter ini.
 
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -170,8 +170,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmVMAEMExtension](./Get-AzureRmVMAEMExtension.md)
 
-[Remove-AzureRmVMAEMExtension](./Remove-AzureRmVMAEMExtension.md)
+[Hapus-AzureRmVMAEMExtension](./Remove-AzureRmVMAEMExtension.md)
 
-[Test-AzureRmVMAEMExtension](./Test-AzureRmVMAEMExtension.md)
+[Uji-AzureRmVMAEMExtension](./Test-AzureRmVMAEMExtension.md)
 
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageAccountKey.md
-ms.openlocfilehash: eb61d3ae0e56887e6e04bc16fe003226d0f2ed94
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: db510fc0b343bc4a0b78aa460baddf2838654e1c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140183129"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142365641"
 ---
 # Get-AzStorageAccountKey
 
 ## SYNOPSIS
-Mendapatkan kunci akses untuk akun Azure Storage Anda.
+Mendapatkan kunci akses untuk akun Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageaccountkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,18 +29,18 @@ Get-AzStorageAccountKey [-ResourceGroupName] <String> [-Name] <String> [-ListKer
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStorageAccountKey** mendapatkan kunci akses untuk akun Azure Storage Anda.
+Cmdlet **Get-AzStorageAccountKey** mendapatkan kunci akses untuk akun Azure Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kunci akses untuk Storage anda
+### Contoh 1: Dapatkan kunci akses untuk akun Storage
 ```
 PS C:\>Get-AzStorageAccountKey -ResourceGroupName "RG01" -AccountName "mystorageaccount"
 ```
 
-Perintah ini menentukan tombol untuk akun Azure Storage tersebut.
+Perintah ini mendapatkan kunci untuk akun Azure Storage yang ditentukan.
 
-### Contoh 2: Mendapatkan kunci akses tertentu untuk Storage tersebut
+### Contoh 2: Dapatkan kunci akses tertentu untuk akun Storage
 ```
 This command gets a specific key for a Storage account. This command works for Azure PowerShell version 1.4, and later versions.
 PS C:\>(Get-AzStorageAccountKey -ResourceGroupName "RG01" -AccountName "mystorageaccount")| Where-Object {$_.KeyName -eq "key1"}
@@ -46,12 +49,12 @@ This command gets a specific key for a Storage account. This command works for A
 PS C:\>(Get-AzStorageAccountKey -ResourceGroupName "RG01" -AccountName "mystorageaccount").Key1
 ```
 
-### Contoh 3: Mencantumkan kunci akses untuk akun Storage Anda, sertakan tombol Kerberos (jika direktori aktif diaktifkan)
+### Contoh 3: Mencantumkan kunci akses untuk akun Storage, sertakan kunci Kerberos (jika direktori aktif diaktifkan)
 ```
 PS C:\>Get-AzStorageAccountKey -ResourceGroupName "RG01" -AccountName "mystorageaccount" -ListKerbKey
 ```
 
-Perintah ini menentukan tombol untuk akun Azure Storage tersebut.
+Perintah ini mendapatkan kunci untuk akun Azure Storage yang ditentukan.
 
 ## PARAMETERS
 
@@ -71,8 +74,8 @@ Accept wildcard characters: False
 ```
 
 ### -ListKerbKey
-Mencantumkan tombol Kerberos (jika direktori aktif diaktifkan) untuk akun penyimpanan tertentu.
-Tombol Kerberos dihasilkan per akun penyimpanan untuk autentikasi berbasis identitas File Azure baik dengan Azure Active Directory Domain Service (Azure AD DS) atau Active Directory Domain Service (AD DS). Ini digunakan sebagai kata sandi dari identitas yang terdaftar di layanan domain yang mewakili akun penyimpanan. Tombol Kerberos tidak menyediakan izin akses untuk melakukan operasi baca dan tulis kontrol atau bidang data apa pun terhadap akun penyimpanan.
+Mencantumkan kunci Kerberos (jika direktori aktif diaktifkan) untuk akun penyimpanan tertentu.
+Kunci Kerberos dihasilkan per akun penyimpanan untuk Azure Files autentikasi berbasis identitas baik dengan Azure Active Directory Domain Service (Azure AD DS) atau Active Directory Domain Service (AD DS). Ini digunakan sebagai kata sandi identitas yang terdaftar di layanan domain yang mewakili akun penyimpanan. Kunci Kerberos tidak menyediakan izin akses untuk melakukan kontrol atau operasi pembacaan atau penulisan bidang data terhadap akun penyimpanan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama akun Storage yang mendapatkan kunci cmdlet ini.
+Menentukan nama akun Storage tempat cmdlet ini mendapatkan kunci.
 
 ```yaml
 Type: System.String
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi akun Storage tersebut.
+Menentukan nama grup sumber daya yang berisi akun Storage.
 
 ```yaml
 Type: System.String
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

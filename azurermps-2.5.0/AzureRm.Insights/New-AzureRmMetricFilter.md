@@ -5,16 +5,16 @@ ms.assetid: B5F2388E-0136-4F8A-8577-67CE2A45671E
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.insights/new-azurermmetricfilter
 schema: 2.0.0
 ms.openlocfilehash: 42633beddee9e6681e68ce1ba61e71d276abf478
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132415070"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142393421"
 ---
 # New-AzureRmMetricFilter
 
 ## SYNOPSIS
-Membuat filter dimensi metrik yang dapat digunakan untuk metrik kueri.
+Membuat filter dimensi metrik yang bisa digunakan untuk metrik kueri.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -26,7 +26,7 @@ New-AzureRmMetricFilter [-Dimension] <String> [-Operator] <String> [-Value] <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmMetricFilter** membuat filter dimensi metrik yang dapat digunakan untuk metrik kueri.
+Cmdlet **AzureRmMetricFilter Baru** membuat filter dimensi metrik yang dapat digunakan untuk metrik kueri.
 
 ## EXAMPLES
 
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

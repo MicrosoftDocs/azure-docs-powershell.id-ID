@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmNetworkSecurityRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmNetworkSecurityRuleConfig.md
 ms.openlocfilehash: d6ca2ac1e091e3576af51ba8f1a2f50676994ce1
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421628"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142385534"
 ---
 # Remove-AzureRmNetworkSecurityRuleConfig
 
@@ -39,14 +39,14 @@ PS C:\> $nsg = New-AzureRmNetworkSecurityGroup -ResourceGroupName "TestRG" -Loca
 PS C:\> Remove-AzureRmNetworkSecurityRuleConfig -Name "rdp-rule" -NetworkSecurityGroup $nsg
 ```
 
-Perintah pertama membuat konfigurasi aturan keamanan jaringan bernama rdp-rule, lalu menyimpannya di $rule 1 jaringan.
-Perintah kedua membuat grup keamanan jaringan menggunakan aturan di $rule 1, lalu menyimpan grup keamanan jaringan di $nsg jaringan.
-Perintah ketiga menghapus konfigurasi aturan keamanan jaringan yang bernama rdp-rule dari grup keamanan jaringan dalam $nsg.
+Perintah pertama membuat konfigurasi aturan keamanan jaringan bernama rdp-rule, lalu menyimpannya dalam variabel $rule 1.
+Perintah kedua membuat grup keamanan jaringan menggunakan aturan di $rule 1, lalu menyimpan grup keamanan jaringan dalam variabel $nsg.
+Perintah ketiga menghapus konfigurasi aturan keamanan jaringan bernama rdp-rule dari grup keamanan jaringan dalam $nsg.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -76,8 +76,8 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkSecurityGroup
-Menentukan objek **NetworkSecurityGroup.**
-Objek ini berisi konfigurasi aturan keamanan jaringan yang akan dihapus.
+Menentukan objek **NetworkSecurityGroup** .
+Objek ini berisi konfigurasi aturan keamanan jaringan untuk dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkSecurityGroup
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

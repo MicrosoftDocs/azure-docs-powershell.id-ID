@@ -5,11 +5,11 @@ ms.assetid: 919B3755-81D4-43FB-AE8C-B071329A61D9
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/get-azurermapplicationgatewaysslcertificate
 schema: 2.0.0
 ms.openlocfilehash: 6e2dceadf11323eb1798435df426c063f4d58858
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132429178"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142392839"
 ---
 # Get-AzureRmApplicationGatewaySslCertificate
 
@@ -36,9 +36,9 @@ PS C:\>$AppGW = Get-AzureRmApplicationGateway -Name "ApplicationGateway01" -Reso
 PS C:\> $Cert = Get-AzureRmApplicationGatewaySslCertificate -Name "Cert01" -ApplicationGateway $AppGW
 ```
 
-Perintah pertama mendapatkan Gateway Aplikasi bernama ApplicationGateway01 dan menyimpan hasilnya dalam variabel yang bernama $AppGW.
-Perintah kedua mendapatkan sertifikat SSL yang bernama Cert01 dari gateway aplikasi yang disimpan di variabel yang bernama $AppGW.
-Perintah menyimpan sertifikat di variabel yang bernama $Cert.
+Perintah pertama mendapatkan Application Gateway bernama ApplicationGateway01 dan menyimpan hasilnya dalam variabel bernama $AppGW.
+Perintah kedua mendapatkan sertifikat SSL bernama Cert01 dari gateway aplikasi yang disimpan dalam variabel bernama $AppGW.
+Perintah menyimpan sertifikat dalam variabel bernama $Cert.
 
 ### Contoh 2: Mendapatkan daftar sertifikat SSL
 ```
@@ -46,9 +46,9 @@ PS C:\>$AppGW = Get-AzureRmApplicationGateway -Name "ApplicationGateway01" -Reso
 PS C:\> $Certs = Get-AzureRmApplicationGatewaySslCertificate -ApplicationGateway $AppGW
 ```
 
-Perintah pertama mendapatkan Gateway Aplikasi bernama ApplicationGateway01 dan menyimpan hasilnya dalam variabel yang bernama $AppGW.
-Perintah kedua ini mendapatkan daftar sertifikat SSL dari gateway aplikasi yang disimpan di variabel yang bernama $AppGW.
-Perintah lalu menyimpan hasil di variabel yang bernama $Certs.
+Perintah pertama mendapatkan Application Gateway bernama ApplicationGateway01 dan menyimpan hasilnya dalam variabel bernama $AppGW.
+Perintah kedua ini mendapatkan daftar sertifikat SSL dari gateway aplikasi yang disimpan dalam variabel bernama $AppGW.
+Perintah kemudian menyimpan hasil dalam variabel bernama $Certs.
 
 ## PARAMETERS
 
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama ssl certificate pool yang akan dapatkan cmdlet ini.
+Menentukan nama kumpulan sertifikat SSL yang didapat cmdlet ini.
 
 ```yaml
 Type: String
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

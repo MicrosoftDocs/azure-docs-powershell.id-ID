@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sqlvirtualmachin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Get-AzAvailabilityGroupListener.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Get-AzAvailabilityGroupListener.md
-ms.openlocfilehash: 042ab4ca8d15be69723841070cae5e92c7bbdef6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 21f0ef706a68e6653d9c307b0508415c302c4bc9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140005831"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142399067"
 ---
 # Get-AzAvailabilityGroupListener
 
 ## SYNOPSIS
-Dapatkan satu atau beberapa Listeners Grup Ketersediaan di SQL Virtual Machine Group.
+Dapatkan satu atau beberapa Pendengar Grup Ketersediaan dalam grup Mesin Virtual SQL.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sqlvirtualmachine/get-azavailabilitygrouplistener) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzAvailabilityGroupListener [-ResourceId] <String> [-DefaultProfile <IAzureC
 ```
 
 ## DESCRIPTION
-Alat Get-AzAvailabilityGroupListener mendapatkan satu atau lebih Pendengar Grup Ketersediaan dari SQL Komputer Virtual.
+Get-AzAvailabilityGroupListener mendapatkan satu atau beberapa Pendengar Grup Ketersediaan dari SQL Grup Mesin Virtual.
 
 ## EXAMPLES
 
@@ -47,22 +50,22 @@ Alat Get-AzAvailabilityGroupListener mendapatkan satu atau lebih Pendengar Grup 
 PS C:\> Get-AzAvailabilityGroupListener -ResourceGroupName ResourceGroup01 -SqlVMGroupName SqlVmGroup01 -Name AgListener01
 ```
 
-Name ResourceGroupName GroupName AvailabilityGroupName
+Nama ResourceGroupName GroupName AvailabilityGroupName
 ----         ----------------- ---------    ---------------------
 AgListener01 ResourceGroup01 SqlVmGroup01 AvailabilityGroup01
 
-Perintah ini mendapatkan informasi tentang AgListener Grup Ketersediaan01 di grup SQL Virtual Machine SqlVmGroup01 dan Resource Group ResourceGroup01.
+Perintah ini mendapatkan informasi tentang Availability Group Listener AgListener01 di SQL Virtual Machine Group SqlVmGroup01 dan Resource Group ResourceGroup01.
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzAvailabilityGroupListener -ResourceGroupName ResourceGroup01 -SqlVMGroupName SqlVmGroup01
 ```
 
-Name ResourceGroupName GroupName AvailabilityGroupName
+Nama ResourceGroupName GroupName AvailabilityGroupName
 ----         ----------------- ---------    ---------------------
 AgListener01 ResourceGroup01 SqlVmGroup01 AvailabilityGroup01 AgListener02 ResourceGroup01 SqlVmGroup01 AvailabilityGroup01
 
-Perintah ini mendapatkan informasi tentang semua Listener Grup Ketersediaan di SQL Virtual Machine Group SqlVmGroup01 dan Resource Group ResourceGroup01.
+Perintah ini mendapatkan informasi tentang semua Pendengar Grup Ketersediaan di SQL Grup Mesin Virtual SqlVmGroup01 dan Resource Group ResourceGroup01.
 
 ### Contoh 3
 ```powershell
@@ -70,7 +73,7 @@ PS C:\> $SqlVmGroupObject = Get-AzSqlVMGroup -ResourceGroupName ResourceGroup01 
 PS C:\> Get-AzAvailabilityGroupListener -Name AgListener01 -SqlVMGroupObject $SqlVmGroupObject
 ```
 
-Name ResourceGroupName GroupName AvailabilityGroupName
+Nama ResourceGroupName GroupName AvailabilityGroupName
 ----         ----------------- ---------    ---------------------
 AgListener01 ResourceGroup01 SqlVmGroup01 AvailabilityGroup01
 
@@ -136,8 +139,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -SqlvMGroupName
-SQL grup mesin virtual.
+### -SqlVMGroupName
+SQL nama grup mesin virtual.
 
 ```yaml
 Type: System.String
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlVMGroupObject
-SQL grup mesin virtual.
+SQL objek Grup mesin virtual.
 
 ```yaml
 Type: Microsoft.Azure.Commands.SqlVirtualMachine.SqlVirtualMachine.Model.AzureSqlVMGroupModel
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

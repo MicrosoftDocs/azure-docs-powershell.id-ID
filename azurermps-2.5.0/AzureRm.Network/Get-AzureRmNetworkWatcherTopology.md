@@ -4,16 +4,16 @@ Module Name: AzureRM.Network
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/get-azurermnetworkwatchertopology
 schema: 2.0.0
 ms.openlocfilehash: 54186adcc1b8605ee9b468b59aeef9c25b2f3f46
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421539"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142392727"
 ---
 # Get-AzureRmNetworkWatcherTopology
 
 ## SYNOPSIS
-Mendapatkan tampilan tingkat jaringan sumber daya dan hubungannya di grup sumber daya.
+Mendapatkan tampilan tingkat jaringan sumber daya dan hubungannya dalam grup sumber daya.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -32,11 +32,11 @@ Get-AzureRmNetworkWatcherTopology -NetworkWatcherName <String> -ResourceGroupNam
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzureRmNetworkWatcherTopology cmdlet tingkat jaringan dari sumber daya dan hubungannya dalam grup sumber daya. Catatan: Jika sumber daya dari beberapa kawasan berada dalam grup sumber daya, hanya sumber daya di kawasan yang sama dengan Pengawas Jaringan yang akan disertakan dalam output JSON.
+Cmdlet Get-AzureRmNetworkWatcherTopology tampilan tingkat jaringan sumber daya dan hubungannya dalam grup sumber daya. Catatan: Jika sumber daya dari beberapa kawasan berada di grup sumber daya, hanya sumber daya di kawasan yang sama dengan Network Watcher yang akan disertakan dalam output JSON.
 
 ## EXAMPLES
 
-### -------------------------- Contoh 1: Dapatkan dukungan Azure Topology --------------------------
+### -------------------------- Contoh 1: Mendapatkan -------------------------- Azure Topology
 ```
 $networkWatcher = Get-AzureRmNetworkWatcher -Name NetworkWatcher_westcentralus -ResourceGroup NetworkWatcherRG 
 Get-AzureRmNetworkWatcherTopology -NetworkWatcher $networkWatcher -ResourceGroupName testresourcegroup
@@ -139,7 +139,7 @@ Dalam contoh ini, kami menjalankan cmdlet Get-AzureRmNetworkWatcherTopology pada
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengawas jaringan.
+Sumber daya pengamat jaringan.
 
 ```yaml
 Type: PSNetworkWatcher
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -226,27 +226,27 @@ System.String
 ### Microsoft.Azure.Commands.Network.Models.PSTopology
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, network, networking, network watcher, topology, view 
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, topologi, melihat 
 
 ## RELATED LINKS
 
-[New-AzureRmNetworkWatcher](./New-AzureRmNetworkWatcher.md)
+[AzureRmNetworkWatcher baru](./New-AzureRmNetworkWatcher.md)
 
 [Get-AzureRmNetworkWatcher](./Get-AzureRmNetworkWatcher.md)
 
-[Remove-AzureRmNetworkWatcher](./Remove-AzureRmNetworkWatcher.md)
+[Hapus-AzureRmNetworkWatcher](./Remove-AzureRmNetworkWatcher.md)
 
-[New-AzureRmNetworkWatcherPacketCapture](./New-AzureRmNetworkWatcherPacketCapture.md)
+[Baru-AzureRmNetworkWatcherPacketCapture](./New-AzureRmNetworkWatcherPacketCapture.md)
 
 [New-AzureRmPacketCaptureFilterConfig](./New-AzureRmPacketCaptureFilterConfig.md)
 
 [Get-AzureRmNetworkWatcherPacketCapture](./Get-AzureRmNetworkWatcherPacketCapture.md)
 
-[Remove-AzureRmNetworkWatcherPacketCapture](./Remove-AzureRmNetworkWatcherPacketCapture.md)
+[Hapus-AzureRmNetworkWatcherPacketCapture](./Remove-AzureRmNetworkWatcherPacketCapture.md)
 
 [Stop-AzureRmNetworkWatcherPacketCapture](./Stop-AzureRmNetworkWatcherPacketCapture.md)
 
-[Test-AzureRmNetworkWatcherIPFlow](./Test-AzureRmNetworkWatcherIPFlow.md)
+[Uji-AzureRmNetworkWatcherIPFlow](./Test-AzureRmNetworkWatcherIPFlow.md)
 
 [Get-AzureRmNetworkWatcherNextHop](./Get-AzureRmNetworkWatcherNextHop.md)
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmFirewallNatRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmFirewallNatRule.md
 ms.openlocfilehash: 0bad5133dd57ec0bee88949fbc9536a6389d6112
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419568"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142385870"
 ---
 # New-AzureRmFirewallNatRule
 
@@ -36,17 +36,17 @@ Cmdlet **New-AzureRmFirewallNatRule** membuat aturan NAT untuk Azure Firewall.
 
 ## EXAMPLES
 
-### 1: Buat aturan ke TCP semua lalu lintas TCP dari 10.0.0.0/24 dengan tujuan 10.1.2.3:80 ke tujuan 10.4.5.6:8080
+### 1: Buat aturan untuk DNAT semua lalu lintas TCP dari 10.0.0.0/24 dengan tujuan 10.1.2.3:80 ke tujuan 10.4.5.6:8080
 ```
 New-AzureRmFirewallNatRule -Name "dnat-rule" -Protocol "TCP" -SourceAddress "10.0.0.0/24" -DestinationAddress "10.1.2.3" -DestinationPort "80" -TranslatedAddress "10.4.5.6" -TranslatedPort "8080"
 ```
 
-Contoh ini membuat aturan yang akan MENYEBABKAN SEMUA lalu lintas berasal dari 10.0.0.0/24 dengan tujuan 10.1.2.3:80 hingga 10.4.5.6:8080
+Contoh ini membuat aturan yang akan DNAT semua lalu lintas berasal dari 10.0.0.0/24 dengan tujuan 10.1.2.3:80 hingga 10.4.5.6:8080
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Menentukan deskripsi opsional dari aturan ini.
+Menentukan deskripsi opsional aturan ini.
 
 ```yaml
 Type: System.String
@@ -120,7 +120,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
+### -Protokol
 Menentukan tipe lalu lintas yang akan difilter menurut aturan ini.
 Protokol yang didukung adalah TCP dan UDP.
 Nilai khusus "Apa pun" diperbolehkan, yang berarti akan cocok dengan TCP dan UDP, tetapi tidak ada protokol lain.
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -TranslatedAddress
-Menentukan hasil penerjemahan alamat yang diinginkan
+Menentukan hasil terjemahan alamat yang diinginkan
 
 ```yaml
 Type: System.String
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -215,11 +215,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS

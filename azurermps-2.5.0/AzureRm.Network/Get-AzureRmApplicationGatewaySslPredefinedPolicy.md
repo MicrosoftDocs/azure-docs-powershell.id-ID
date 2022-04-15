@@ -4,16 +4,16 @@ Module Name: AzureRM.Network
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/get-azurermapplicationgatewaysslpredefinedpolicy
 schema: 2.0.0
 ms.openlocfilehash: a977de2b4a60f0fc5ae93e175d521d398d40f850
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140851122"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142392737"
 ---
 # Get-AzureRmApplicationGatewaySslPredefinedPolicy
 
 ## SYNOPSIS
-Mendapatkan Kebijakan SSL yang Sudah Ditentukan Sebelumnya yang disediakan oleh Gateway Aplikasi.
+Mendapatkan Kebijakan SSL yang Sudah Ditentukan sebelumnya yang disediakan oleh Application Gateway.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -25,7 +25,7 @@ Get-AzureRmApplicationGatewaySslPredefinedPolicy [-Name <String>] [-DefaultProfi
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmApplicationGatewaySslPredefinedPolicy** mendapatkan Kebijakan SSL yang Sudah Ditentukan Sebelumnya yang disediakan oleh Gateway Aplikasi.
+Cmdlet **Get-AzureRmApplicationGatewaySslPredefinedPolicy** mendapatkan Kebijakan SSL yang Sudah Ditentukan sebelumnya yang disediakan oleh Application Gateway.
 
 ## EXAMPLES
 
@@ -46,7 +46,7 @@ Perintah ini mengembalikan kebijakan yang sudah ditentukan sebelumnya dengan nam
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -76,15 +76,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewaySsslPredefinedPolicy
+### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewaySslPredefinedPolicy
 System.Collections.Generic.IEnumerable'1[[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewaySslPredefinedPolicy, Microsoft.Azure.Commands.Network, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null]]
 
 ## CATATAN

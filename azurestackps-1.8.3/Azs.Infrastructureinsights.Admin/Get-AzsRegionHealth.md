@@ -4,16 +4,16 @@ Module Name: Azs.Infrastructureinsights.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 2d07aad989b08909228aebca7538b007f36bfcab
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136578004"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142380671"
 ---
 # Get-AzsRegionHealth
 
 ## SYNOPSIS
-Mengembalikan daftar status kesehatan wilayah.
+Mengembalikan daftar status kesehatan kawasan.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-AzsRegionHealth [-ResourceGroupName <String>] [-Filter <String>] [-Top <Int3
  [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsRegionHealth [-Location] <String> [-ResourceGroupName <String>] [<CommonParameters>]
 ```
@@ -34,7 +34,7 @@ Get-AzsRegionHealth -ResourceId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Mengembalikan daftar status kesehatan wilayah.
+Mengembalikan daftar status kesehatan kawasan.
 
 ## EXAMPLES
 
@@ -43,7 +43,7 @@ Mengembalikan daftar status kesehatan wilayah.
 Get-AzsRegionHealth
 ```
 
-Mengembalikan daftar status kesehatan wilayah.
+Mengembalikan daftar status kesehatan kawasan.
 
 ## PARAMETERS
 
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
