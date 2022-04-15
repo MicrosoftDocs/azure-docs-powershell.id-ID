@@ -4,11 +4,11 @@ ms.assetid: FA98E64B-D589-4653-9ACC-86573FAF4550
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 9bf6987ced18bb8d844d33615ba5585121cbbe54
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421098"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142311260"
 ---
 # Set-AzureStorageFileContent
 
@@ -26,7 +26,7 @@ Set-AzureStorageFileContent [-ShareName] <String> [-Source] <String> [[-Path] <S
  [-ConcurrentTaskCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Bagikan
+### Berbagi
 ```
 Set-AzureStorageFileContent [-Share] <CloudFileShare> [-Source] <String> [[-Path] <String>] [-PassThru]
  [-Force] [-ServerTimeoutPerRequest <Int32>] [-ClientTimeoutPerRequest <Int32>] [-ConcurrentTaskCount <Int32>]
@@ -41,7 +41,7 @@ Set-AzureStorageFileContent [-Directory] <CloudFileDirectory> [-Source] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureStorageFileContent** mengunggah konten file ke file pada berbagi yang ditentukan.
+Cmdlet **Set-AzureStorageFileContent** mengunggah konten file ke file pada berbagi tertentu.
 
 ## EXAMPLES
 
@@ -50,7 +50,7 @@ Cmdlet **Set-AzureStorageFileContent** mengunggah konten file ke file pada berba
 PS C:\>Set-AzureStorageFileContent -ShareName "ContosoShare06" -Source "DataFile37" -Path "ContosoWorkingFolder/CurrentDataFile"
 ```
 
-Perintah ini mengunggah file yang bernama DataFile37 dalam folder saat ini sebagai file yang bernama CurrentDataFile dalam folder bernama ContosoWorkingFolder.
+Perintah ini mengunggah file yang bernama DataFile37 dalam folder saat ini sebagai file yang dinamai CurrentDataFile dalam folder bernama ContosoWorkingFolder.
 
 ### Contoh 2: Upload semua file dalam folder saat ini
 ```
@@ -62,24 +62,24 @@ PS C:\> Get-ChildItem -Recurse | Where-Object { $_.GetType().Name -eq "FileInfo"
 }
 ```
 
-Contoh ini menggunakan beberapa cmdlet Windows PowerShell umum dan cmdlet saat ini untuk mengunggah semua file dari folder saat ini ke folder akar wadah ContosoShare06.
+Contoh ini menggunakan beberapa cmdlet umum Windows PowerShell dan cmdlet saat ini untuk mengunggah semua file dari folder saat ini ke folder akar kontainer ContosoShare06.
 
-Perintah pertama mendapatkan nama folder saat ini dan menyimpannya dalam variabel $CurrentFolder baru.
+Perintah pertama mendapatkan nama folder saat ini dan menyimpannya dalam variabel $CurrentFolder.
 
-Perintah kedua menggunakan cmdlet **Get-AzureStorageShare** untuk mendapatkan berbagi file bernama ContosoShare06, lalu menyimpannya dalam $Container baru.
+Perintah kedua menggunakan cmdlet **Get-AzureStorageShare** untuk mendapatkan berbagi file bernama ContosoShare06, lalu menyimpannya dalam variabel $Container.
 
-Perintah terakhir mendapatkan konten folder saat ini dan meneruskannya ke cmdlet Where-Object dengan menggunakan operator pipeline.
-Cmdlet tersebut memfilter objek yang bukan file, lalu meneruskan file ke cmdlet ForEach-Object cmdlet.
-Cmdlet tersebut menjalankan blok skrip untuk setiap file yang membuat jalur yang sesuai untuknya, lalu menggunakan cmdlet saat ini untuk mengunggah file.
-Hasilnya memiliki nama yang sama dan posisi relatif yang sama berkaitan dengan file lain yang diunggah contoh ini.
-Untuk informasi selengkapnya tentang blok skrip, ketik `Get-Help about_Script_Blocks` .
+Perintah akhir mendapatkan konten folder saat ini dan meneruskan masing-masing ke cmdlet Where-Object menggunakan operator pipeline.
+Cmdlet tersebut memfilter objek yang bukan file, lalu meneruskan file ke cmdlet ForEach-Object.
+Cmdlet tersebut menjalankan blok skrip untuk setiap file yang membuat jalur yang sesuai untuknya lalu menggunakan cmdlet saat ini untuk mengunggah file.
+Hasilnya memiliki nama yang sama dan posisi relatif yang sama sehubungan dengan file lain yang diunggah contoh ini.
+Untuk informasi selengkapnya tentang blok skrip, ketik .`Get-Help about_Script_Blocks`
 
 ## PARAMETERS
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu yang habis di sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba permintaan.
-Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini akan mengembalikan kesalahan.
+Menentukan interval waktu habis pihak klien, dalam hitungan detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
 Type: Int32
@@ -94,11 +94,11 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan jumlah maksimum panggilan jaringan bersama.
-Anda dapat menggunakan parameter ini untuk membatasi konkurensi guna membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Menentukan maksimum panggilan jaringan serentak.
+Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
 Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
-Parameter ini bisa membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth yang rendah, seperti 100 kilobit per detik.
-Nilai default adalah 10.
+Parameter ini dapat membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth rendah, seperti 100 kilobit per detik.
+Nilai defaultnya adalah 10.
 
 ```yaml
 Type: Int32
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 
 ### -Konteks
 Menentukan konteks penyimpanan Azure.
-Untuk mendapatkan konteks penyimpanan, gunakan cmdlet [New-AzureStorageContext.](./New-AzureStorageContext.md)
+Untuk mendapatkan konteks penyimpanan, gunakan cmdlet [New-AzureStorageContext](./New-AzureStorageContext.md) .
 
 ```yaml
 Type: IStorageContext
@@ -129,10 +129,10 @@ Accept wildcard characters: False
 ```
 
 ### -Direktori
-Menentukan folder sebagai objek **CloudFileDirectory.**
+Menentukan folder sebagai objek **CloudFileDirectory** .
 Cmdlet ini mengunggah file ke folder yang ditentukan parameter ini.
 Untuk mendapatkan direktori, gunakan cmdlet New-AzureStorageDirectory.
-Anda juga dapat menggunakan cmdlet Get-AzureStorageFile cmdlet untuk mendapatkan direktori.
+Anda juga dapat menggunakan cmdlet Get-AzureStorageFile untuk mendapatkan direktori.
 
 ```yaml
 Type: CloudFileDirectory
@@ -146,7 +146,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Menunjukkan bahwa cmdlet ini menimpa file penyimpanan Azure yang sudah ada.
 
 ```yaml
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan bahwa cmdlet ini mengembalikan objek **AzureStorageFile** yang dibuat atau diunggah.
+Menunjukkan bahwa cmdlet ini mengembalikan objek **AzureStorageFile** yang dibuat atau diunggahnya.
 
 ```yaml
 Type: SwitchParameter
@@ -176,16 +176,16 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
+### -Jalur
 Menentukan jalur file atau folder.
-Cmdlet ini mengunggah konten ke file yang ditentukan oleh parameter ini, atau ke file dalam folder yang ditentukan oleh parameter ini.
+Cmdlet ini mengunggah konten ke file yang ditentukan parameter ini, atau ke file dalam folder yang ditentukan parameter ini.
 Jika Anda menentukan folder, cmdlet ini akan membuat file yang memiliki nama yang sama dengan file sumber.
 
-Jika Anda menentukan jalur file yang tidak ada, cmdlet ini membuat file itu dan menyimpan konten ke file itu.
-Jika Anda menentukan file yang sudah ada, dan Anda menentukan parameter _Paksa,_ cmdlet ini menimpa konten file.
-Jika Anda menentukan file yang sudah ada dan Anda tidak menentukan _Paksa,_ cmdlet ini tidak melakukan perubahan, dan akan mengembalikan kesalahan.
+Jika Anda menentukan jalur file yang tidak ada, cmdlet ini akan membuat file tersebut dan menyimpan konten ke file tersebut.
+Jika Anda menentukan file yang sudah ada, dan Anda menentukan parameter _Force_ , cmdlet ini menimpa konten file.
+Jika Anda menentukan file yang sudah ada dan Anda tidak menentukan _Force_, cmdlet ini tidak membuat perubahan, dan mengembalikan kesalahan.
 
-Jika Anda menentukan jalur folder yang tidak ada, cmdlet ini tidak melakukan perubahan, dan mengembalikan kesalahan.
+Jika Anda menentukan jalur folder yang tidak ada, cmdlet ini tidak membuat perubahan, dan mengembalikan kesalahan.
 
 
 ```yaml
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan lamanya periode waktu habis untuk bagian server dari permintaan.
+Menentukan lamanya periode batas waktu untuk bagian server dari permintaan.
 
 ```yaml
 Type: Int32
@@ -216,11 +216,11 @@ Accept wildcard characters: False
 ```
 
 ### -Bagikan
-Menentukan objek **CloudFileShare.**
-Cmdlet ini mengunggah ke file dalam berbagi file yang ditentukan parameter ini.
-Untuk mendapatkan objek **CloudFileShare,** gunakan cmdlet Get-AzureStorageShare baru.
+Menentukan objek **CloudFileShare** .
+Cmdlet ini mengunggah ke file dalam file yang dibagikan parameter ini.
+Untuk mendapatkan objek **CloudFileShare** , gunakan cmdlet Get-AzureStorageShare.
 Objek ini berisi konteks penyimpanan.
-Jika Anda menentukan parameter ini, jangan tentukan parameter *Konteks.*
+Jika Anda menentukan parameter ini, jangan tentukan parameter *Konteks* .
 
 ```yaml
 Type: CloudFileShare
@@ -235,8 +235,8 @@ Accept wildcard characters: False
 ```
 
 ### -ShareName
-Menentukan nama berbagi file.
-Cmdlet ini mengunggah ke file dalam berbagi file yang ditentukan parameter ini.
+Menentukan nama file yang dibagikan.
+Cmdlet ini mengunggah ke file dalam file yang dibagikan parameter ini.
 
 ```yaml
 Type: String
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 
 ### -Source
 Menentukan file sumber yang diunggah cmdlet ini.
-Jika Anda menentukan file yang tidak ada, cmdlet ini akan mengembalikan kesalahan.
+Jika Anda menentukan file yang tidak ada, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
 Type: String
@@ -267,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -283,7 +283,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -298,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -308,8 +308,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Remove-AzureStorageDirectory](./Remove-AzureStorageDirectory.md)
+[Hapus-AzureStorageDirectory](./Remove-AzureStorageDirectory.md)
 
-[New-AzureStorageDirectory](./New-AzureStorageDirectory.md)
+[AzureStorageDirectory baru](./New-AzureStorageDirectory.md)
 
 [Get-AzureStorageFileContent](./Get-AzureStorageFileContent.md)

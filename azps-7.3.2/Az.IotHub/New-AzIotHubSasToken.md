@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/new-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/New-AzIotHubSasToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/New-AzIotHubSasToken.md
-ms.openlocfilehash: b786ad5b5be2a41a2f09124f2952c5b691df777c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2b5dbea9d2065aae50e6846b524e792276c69670
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140402442"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142319945"
 ---
 # New-AzIotHubSasToken
 
 ## SYNOPSIS
-Buat token SAS untuk hub IoT target, perangkat, atau modul.
+Buat token SAS untuk IoT Hub target, perangkat, atau modul.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/new-aziothubsastoken) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,8 +44,8 @@ New-AzIotHubSasToken [-ResourceId] <String> [-DeviceId <String>] [-ModuleId <Str
 ```
 
 ## DESCRIPTION
-Untuk token SAS perangkat, parameter kebijakan digunakan untuk mengakses registri perangkat saja. Oleh karena itu kebijakan harus memiliki akses baca ke registri.
-Untuk token IoT Hub, kebijakan tersebut adalah bagian dari SAS.
+Untuk token SAS perangkat, parameter kebijakan hanya digunakan untuk mengakses registri perangkat. Oleh karena itu kebijakan harus memiliki akses baca ke registri.
+Untuk token IoT Hub, kebijakan adalah bagian dari SAS.
 
 ## EXAMPLES
 
@@ -51,14 +54,14 @@ Untuk token IoT Hub, kebijakan tersebut adalah bagian dari SAS.
 PS C:\> New-AzIotHubSasToken -ResourceGroupName "myresourcegroup" -IotHubName "myiothub"
 ```
 
-Buat token SAS IoT Hub menggunakan kebijakan iothubowner dan kunci utama.
+Buat token SAS IoT Hub menggunakan kebijakan iothubowner dan kunci primer.
 
 ### Contoh 2
 ```powershell
 PS C:\> New-AzIotHubSasToken -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -KeyName "registryRead" -KeyType "secondary"
 ```
 
-Buat token SAS IoT Hub menggunakan kebijakan registryRead dan kunci sekunder.
+Buat token SAS IoT Hub menggunakan kebijakan registriRead dan kunci sekunder.
 
 ### Contoh 3
 ```powershell
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Durasi
-Masa berlaku (dalam detik) token yang akan dihasilkan.
+Masa mendatang kedaluwarsa (dalam detik) dari token yang akan dihasilkan.
 Defaultnya adalah 3600.
 
 ```yaml
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyName
-Nama kunci Access.
+Nama kunci access.
 
 ```yaml
 Type: System.String
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -245,7 +248,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -260,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

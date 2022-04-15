@@ -4,11 +4,11 @@ ms.assetid: D767F017-6545-4BC6-927E-E7A99A08D5D2
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: fc35509fc5e492d36537d0c3f28618880c5630e8
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424144"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142335839"
 ---
 # Add-AzureEndpoint
 
@@ -61,44 +61,44 @@ Cmdlet **Add-AzureEndpoint** menambahkan titik akhir ke objek mesin virtual Azur
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan titik akhir
+### Contoh 1: Menambahkan titik akhir
 ```
 PS C:\> Get-AzureVM -ServiceName "ContosoService" -Name "VirutalMachine01" | Add-AzureEndpoint -Name "HttpIn" -Protocol "tcp" -PublicPort 80 -LocalPort 8080 | Update-AzureVM
 ```
 
-Perintah ini mengambil konfigurasi mesin virtual bernama VirtualMachine01 menggunakan cmdlet **Get-AzureVM.**
-Perintah itu meneruskannya ke cmdlet saat ini dengan menggunakan operator pipeline.
-Cmdlet ini menambahkan titik akhir yang bernama HttpIn.
+Perintah ini mengambil konfigurasi mesin virtual bernama VirtualMachine01 menggunakan cmdlet **Get-AzureVM** .
+Perintah meneruskannya ke cmdlet saat ini menggunakan operator pipeline.
+Cmdlet ini menambahkan titik akhir bernama HttpIn.
 Titik akhir memiliki port publik 80 dan port lokal 8080.
-Perintah melewati objek mesin virtual ke cmdlet **Update-AzureVM,** yang menerapkan perubahan Anda.
+Perintah melewati objek mesin virtual ke cmdlet **Update-AzureVM** , yang mengimplementasikan perubahan Anda.
 
-### Contoh 2: Tambahkan titik akhir yang termasuk dalam grup seimbang muatan
+### Contoh 2: Menambahkan titik akhir yang tergabung dalam grup seimbang beban
 ```
 PS C:\> Get-AzureVM -ServiceName "LoadBalancedService" -Name "VirtualMachine12" | Add-AzureEndpoint -Name "HttpIn" -Protocol "tcp" -PublicPort 80 -LocalPort 8080 -LBSetName "WebFarm" -ProbePort 80 -ProbeProtocol "http" -ProbePath '/' | Update-AzureVM
 ```
 
-Perintah ini mengambil konfigurasi komputer virtual bernama VirtualMachine07.
-Cmdlet saat ini menambahkan titik akhir yang bernama HttpIn.
+Perintah ini mengambil konfigurasi mesin virtual bernama VirtualMachine07.
+Cmdlet saat ini menambahkan titik akhir bernama HttpIn.
 Titik akhir memiliki port publik 80 dan port lokal 8080.
-Titik akhir termasuk dalam grup pemuatan seimbang bersama yang bernama WebFarm.
-Http autodiscover pada port 80 dengan jalur '/' memantau ketersediaan titik akhir.
-Perintah akan menerapkan perubahan Anda.
+Titik akhir termasuk dalam grup muatan bersama yang seimbang bernama WebFarm.
+Probe HTTP pada port 80 dengan jalur '/' memantau ketersediaan titik akhir.
+Perintah mengimplementasikan perubahan Anda.
 
 ### Contoh 3: Mengaitkan IP virtual ke titik akhir
 ```
 PS C:\> Get-AzureVM -ServiceName "ContosoService" -Name "VirtualMachine25" | Add-AzureEndpoint -Name "HttpIn" -Protocol "tcp" -LocalPort 8080 -PublicPort 80 -VirtualIPName "ContosoVip11" | Update-AzureVM
 ```
 
-Perintah ini mengambil konfigurasi komputer virtual bernama VirtualMachine25.
-Cmdlet saat ini menambahkan titik akhir yang bernama HttpIn.
+Perintah ini mengambil konfigurasi mesin virtual bernama VirtualMachine25.
+Cmdlet saat ini menambahkan titik akhir bernama HttpIn.
 Titik akhir memiliki port publik 80 dan port lokal 8080.
-Perintah ini menghubungkan IP virtual ke titik akhir.
-Perintah akan menerapkan perubahan Anda.
+Perintah ini mengaitkan IP virtual ke titik akhir.
+Perintah mengimplementasikan perubahan Anda.
 
 ## PARAMETERS
 
 ### -ACL
-Menentukan objek konfigurasi daftar kontrol akses (ACL, Access Control List) untuk titik akhir.
+Menentukan objek konfigurasi daftar kontrol akses (ACL) untuk titik akhir.
 
 ```yaml
 Type: NetworkAclObject
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProbe
-Menunjukkan bahwa cmdlet ini menggunakan pengaturan default default default.
+Menunjukkan bahwa cmdlet ini menggunakan pengaturan probe default.
 
 ```yaml
 Type: SwitchParameter
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 
 ### -DirectServerReturn
 Menentukan apakah cmdlet ini mengaktifkan pengembalian server langsung.
-Tentukan $True diaktifkan, atau $False dinonaktifkan.
+Tentukan $True untuk diaktifkan, atau $False untuk dinonaktifkan.
 
 ```yaml
 Type: Boolean
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdleTimeoutInMinutes
-Menentukan periode waktu habis tcp diam, dalam menit, untuk titik akhir.
+Menentukan periode waktu habis diam TCP, dalam menit, untuk titik akhir.
 
 ```yaml
 Type: Int32
@@ -159,16 +159,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -InternalLoadBalancerName
-Menentukan nama penyeimbang muat internal.
+Menentukan nama penyeimbang muatan internal.
 
 ```yaml
 Type: String
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -LBSetName
-Menentukan nama penyeimbang muat yang diatur untuk titik akhir.
+Menentukan nama kumpulan load balancer untuk titik akhir.
 
 ```yaml
 Type: String
@@ -228,17 +228,17 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerDistribution
-Menentukan distribusi algoritma penyeimbang muat.
-Nilai valid adalah: 
+Menentukan algoritma distribusi penyeimbang beban.
+Nilai yang valid adalah: 
 
 - sourceIP.
-A two tuple affinity: Source IP, Destination IP 
+Affinity dua rangkap: IP Sumber, IP Tujuan 
 - sourceIPProtocol.
-Tiga daftar alamat: IP Sumber, IP Tujuan, Protokol 
-- tidak ada.
-Lima daftar alamat: IP Sumber, Port Sumber, IP Tujuan, Port Tujuan, Port Tujuan, Protokol 
+Affinity tiga rangkap: IP Sumber, IP Tujuan, Protokol 
+- Tidak.
+Affinity five tuple: Source IP, Source Port, Destination IP, Destination Port, Protocol 
 
-Nilai default adalah tidak ada.
+Nilai default tidak ada.
 
 ```yaml
 Type: String
@@ -253,8 +253,8 @@ Accept wildcard characters: False
 ```
 
 ### -LocalPort
-Menentukan port lokal dan privat yang digunakan titik akhir ini.
-Aplikasi dalam mesin virtual mendengarkan pada port ini untuk permintaan input layanan untuk titik akhir ini.
+Menentukan port lokal, privat, yang digunakan titik akhir ini.
+Aplikasi dalam mesin virtual mendengarkan port ini untuk permintaan input layanan untuk titik akhir ini.
 
 ```yaml
 Type: Int32
@@ -284,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoProbe
-Menunjukkan bahwa cmdlet ini menggunakan pengaturan no cmdlet.
+Menunjukkan bahwa cmdlet ini menggunakan pengaturan tanpa probe.
 
 ```yaml
 Type: SwitchParameter
@@ -298,8 +298,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -AllahIntervalInSeconds
-Menentukan interval polling belanda, dalam detik, untuk titik akhir.
+### -ProbeIntervalInSeconds
+Menentukan interval polling probe, dalam detik, untuk titik akhir.
 
 ```yaml
 Type: Int32
@@ -313,8 +313,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur relatif ke http http http.
+### -ProbePath
+Menentukan jalur relatif ke probe HTTP.
 
 ```yaml
 Type: String
@@ -328,7 +328,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SportPort
+### -ProbePort
 Menentukan port yang digunakan titik akhir.
 
 ```yaml
@@ -343,11 +343,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Yamaprotocol
-Menentukan protokol port.
-Nilai valid adalah: 
+### -ProbeProtocol
+Menentukan protokol porta.
+Nilai yang valid adalah: 
 
-- tcp 
+- Tcp 
 - http
 
 ```yaml
@@ -362,8 +362,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -AmanTimeoutInSeconds
-Menentukan periode waktu pemungutan suara dalam hitungan detik.
+### -ProbeTimeoutInSeconds
+Menentukan periode batas waktu polling probe dalam hitungan detik.
 
 ```yaml
 Type: Int32
@@ -378,8 +378,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -393,12 +393,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
+### -Protokol
 Menentukan protokol titik akhir.
-Nilai valid adalah: 
+Nilai yang valid adalah: 
 
-- tcp 
-- udp
+- Tcp 
+- Udp
 
 ```yaml
 Type: String
@@ -429,9 +429,9 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualIPName
-Menentukan nama alamat IP virtual yang terkait dengan Azure ke titik akhir.
-Layanan Anda bisa memiliki beberapa IP virtual.
-Untuk membuat IP virtual, gunakan cmdlet **Add-AzureVirtualIP.**
+Menentukan nama alamat IP virtual yang dikaitkan Azure ke titik akhir.
+Layanan Anda dapat memiliki beberapa IP virtual.
+Untuk membuat IP virtual, gunakan cmdlet **Add-AzureVirtualIP** .
 
 ```yaml
 Type: String
@@ -446,7 +446,7 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan mesin virtual tempat titik akhir tersebut berada.
+Menentukan mesin virtual tempat titik akhir berada.
 
 ```yaml
 Type: IPersistentVM
@@ -461,7 +461,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -479,10 +479,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureVM](./Get-AzureVM.md)
 
-[Remove-AzureEndpoint](./Remove-AzureEndpoint.md)
+[Hapus-AzureEndpoint](./Remove-AzureEndpoint.md)
 
 [Set-AzureEndpoint](./Set-AzureEndpoint.md)
 
-[Update-AzureVM](./Update-AzureVM.md)
+[Perbarui-AzureVM](./Update-AzureVM.md)
 
 

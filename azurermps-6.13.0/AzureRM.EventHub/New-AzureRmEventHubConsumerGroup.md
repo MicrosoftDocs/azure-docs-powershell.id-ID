@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventHub/Commands.EventHub/help/New-AzureRmEventHubConsumerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventHub/Commands.EventHub/help/New-AzureRmEventHubConsumerGroup.md
 ms.openlocfilehash: 34a59f0530ed036397523e3810d68175e7ee2d3b
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140866490"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142357077"
 ---
 # New-AzureRmEventHubConsumerGroup
 
 ## SYNOPSIS
-Membuat grup konsumen baru untuk Hub Acara yang ditentukan.
+Membuat grup konsumen baru untuk Hub Kejadian tertentu.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ New-AzureRmEventHubConsumerGroup [-ResourceGroupName] <String> [-Namespace] <Str
 ```
 
 ## DESCRIPTION
-Membuat grup konsumen baru untuk Hub Acara yang ditentukan.
+Membuat grup konsumen baru untuk Hub Kejadian tertentu.
 
 ## EXAMPLES
 
@@ -37,7 +37,7 @@ Membuat grup konsumen baru untuk Hub Acara yang ditentukan.
 PS C:\> New-AzureRmEventHubConsumerGroup -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName -ConsumerGroupName MyConsumerGroupName
 ```
 
-Membuat grup konsumen \`MyConsumerGroupName\` di Event Hub \`MyEventHubName\`, scoped to the namespace \`MyNamespaceName\`, dengan grup sumber \`daya MyResourceGroupName\`.
+Membuat grup \`konsumen MyConsumerGroupName\` di Hub \`Kejadian MyEventHubName\`, yang tercakup ke ruang \`nama MyNamespaceName\`, dengan grup \`sumber daya MyResourceGroupName\`.
 
 ## PARAMETERS
 
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserMetadata
-Metadata Pengguna untuk Grup Konsumen
+Metadata Pengguna untuk ConsumerGroup
 
 ```yaml
 Type: System.String
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

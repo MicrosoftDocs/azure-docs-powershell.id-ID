@@ -4,16 +4,16 @@ ms.assetid: A736738A-C6B3-4E5A-B9BA-D6559A27A667
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 579b436ee4cbb758609dd3d08d6acf5619240895
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423615"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142335609"
 ---
 # Get-AzureStorSimpleLegacyVolumeContainerStatus
 
 ## SYNOPSIS
-Mendapatkan status migrasi kontainer volume.
+Mendapatkan status migrasi wadah volume.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,12 +25,12 @@ Get-AzureStorSimpleLegacyVolumeContainerStatus -LegacyConfigId <String> [-Legacy
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureStorSimpleLegacyVolumeContainerStatus** mendapatkan status migrasi dari wadah volume.
-Cmdlet ini mengembalikan informasi status yang mencakup apakah migrasi wadah volume masih dalam proses, selesai, atau gagal.
+Cmdlet **Get-AzureStorSimpleLegacyVolumeContainerStatus** mendapatkan status migrasi wadah volume.
+Cmdlet ini mengembalikan informasi status yang mencakup apakah migrasi kontainer volume masih berlangsung, selesai, atau gagal.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan status untuk migrasi yang gagal
+### Contoh 1: Dapatkan status untuk migrasi yang gagal
 ```
 PS C:\>Get-AzureStorSimpleLegacyVolumeContainerStatus -LegacyConfigId "dcddbb51-2ab2-4d22-8204-fefdbd6b7ba4" -LegacyContainerNames "OneSDKAzureCloud"
 ConfigId             : dcddbb51-2ab2-4d22-8204-fefdbd6b7ba4
@@ -43,10 +43,10 @@ MigrationFailed      : Cloud Configuration Name: OneSDKAzureCloud
                        No Backup sets found
 ```
 
-Perintah ini mendapatkan status migrasi untuk wadah warisan yang bernama.
+Perintah ini mendapatkan status migrasi untuk kontainer warisan bernama.
 Hasilnya menunjukkan bahwa migrasi gagal.
 
-### Contoh 2: Mendapatkan status untuk migrasi yang sedang berlangsung
+### Contoh 2: Dapatkan status untuk migrasi yang sedang berlangsung
 ```
 PS C:\>Get-AzureStorSimpleLegacyVolumeContainerStatus -LegacyConfigId "dcddbb51-2ab2-4d22-8204-fefdbd6b7ba4" -LegacyContainerNames "OneSDKAzureCloud"
 ConfigId             : 5a83ec88-9e0a-4722-9fb0-9131caa7387a
@@ -60,10 +60,10 @@ MigrationNotStarted  : No Cloud Configuration(s) are found to be in NotStarted s
 MigrationFailed      : No Cloud Configuration(s) are found to be in Failed state of Migration
 ```
 
-Perintah ini mendapatkan status migrasi untuk wadah warisan yang bernama.
+Perintah ini mendapatkan status migrasi untuk kontainer warisan bernama.
 Hasilnya menunjukkan bahwa migrasi sedang berlangsung.
 
-### Contoh 3: Mendapatkan status untuk migrasi yang selesai
+### Contoh 3: Dapatkan status untuk migrasi yang sudah selesai
 ```
 PS C:\>Get-AzureStorSimpleLegacyVolumeContainerStatus -LegacyConfigId dcddbb51-2ab2-4d22-8204-fefdbd6b7ba4 -LegacyContainerNames OneSDKAzureCloud
 ConfigId             : 5a83ec88-9e0a-4722-9fb0-9131caa7387a
@@ -79,13 +79,13 @@ MigrationNotStarted  : No Cloud Configuration(s) are found to be in NotStarted s
 MigrationFailed      : No Cloud Configuration(s) are found to be in Failed state of Migration
 ```
 
-Perintah ini mendapatkan status migrasi untuk wadah warisan yang bernama.
+Perintah ini mendapatkan status migrasi untuk kontainer warisan bernama.
 Hasilnya menunjukkan bahwa migrasi telah selesai.
 
 ## PARAMETERS
 
 ### -LegacyConfigId
-Menentukan ID unik konfigurasi alat warisan.
+Menentukan ID unik konfigurasi peralatan warisan.
 
 ```yaml
 Type: String
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -LegacyContainerNames
-Menentukan array nama kontainer volume tempat rencana migrasi diterapkan.
+Menentukan array nama kontainer volume tempat paket migrasi diterapkan.
 
 ```yaml
 Type: String[]
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -140,7 +140,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Confirm-AzureStorSimpleLegacyVolumeContainerStatus](./Confirm-AzureStorSimpleLegacyVolumeContainerStatus.md)
+[Konfirmasi-AzureStorSimpleLegacyVolumeContainerStatus](./Confirm-AzureStorSimpleLegacyVolumeContainerStatus.md)
 
 [Get-AzureStorSimpleLegacyVolumeContainerConfirmStatus](./Get-AzureStorSimpleLegacyVolumeContainerConfirmStatus.md)
 

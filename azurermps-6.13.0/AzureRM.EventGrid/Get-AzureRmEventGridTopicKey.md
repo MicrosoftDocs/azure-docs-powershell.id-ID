@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventGrid/Commands.EventGrid/help/Get-AzureRmEventGridTopicKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventGrid/Commands.EventGrid/help/Get-AzureRmEventGridTopicKey.md
 ms.openlocfilehash: 8bd28b3bbe043663a451b235abf46c3a42e235e7
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140850884"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142357095"
 ---
 # Get-AzureRmEventGridTopicKey
 
 ## SYNOPSIS
-Mendapatkan tombol akses bersama yang digunakan untuk menerbitkan acara ke topik Kisi Acara.
+Mendapatkan kunci akses bersama yang digunakan untuk menerbitkan acara ke topik Kisi Acara.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Get-AzureRmEventGridTopicKey [-ResourceGroupName] <String> [-Name] <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### TopicInputObjectParameterSet
+### TopikInputObjectParameterSet
 ```
 Get-AzureRmEventGridTopicKey [-InputObject] <PSTopic> [-DefaultProfile <IAzureContextContainer>]
  [<CommonParameters>]
@@ -40,7 +40,7 @@ Get-AzureRmEventGridTopicKey [-ResourceId] <String> [-DefaultProfile <IAzureCont
 ```
 
 ## DESCRIPTION
-Mendapatkan tombol akses bersama yang digunakan untuk menerbitkan acara ke topik Kisi Acara.
+Mendapatkan kunci akses bersama yang digunakan untuk menerbitkan acara ke topik Kisi Acara.
 
 ## EXAMPLES
 
@@ -49,19 +49,19 @@ Mendapatkan tombol akses bersama yang digunakan untuk menerbitkan acara ke topik
 PS C:\> Get-AzureRmEventGridTopicKey -ResourceGroup MyResourceGroupName -Name Topic1
 ```
 
-Mendapatkan tombol akses bersama topik Kisi Kejadian Topic1 \`di grup\` sumber daya \`MyResourceGroupName\`.
+Mendapatkan kunci akses bersama topik \`Kisi Acara Topik1\` dalam grup \`sumber daya MyResourceGroupName\`.
 
 ### Contoh 2
 ```
 PS C:\> Get-AzureRmEventGridTopic -ResourceGroup MyResourceGroupName -Name Topic1 | Get-AzureRmEventGridTopicKey
 ```
 
-Mendapatkan tombol akses bersama topik Kisi Kejadian Topic1 \`di grup\` sumber daya \`MyResourceGroupName\`.
+Mendapatkan kunci akses bersama topik \`Kisi Acara Topik1\` dalam grup \`sumber daya MyResourceGroupName\`.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek EventGrid Topic.
+Objek Topik EventGrid.
 
 ```yaml
 Type: Microsoft.Azure.Commands.EventGrid.Models.PSTopic
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi Sumber Daya yang mewakili Topik Kisi Acara.
+Pengidentifikasi Sumber Daya yang mewakili Topik Kisi Kejadian.
 
 ```yaml
 Type: System.String
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -3,12 +3,12 @@ external help file: Microsoft.Azure.Commands.Automation.dll-Help.xml
 ms.assetid: 9CED6E53-B65C-4D55-8AC7-9E8A8B143544
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: b68ade6d938f55ddf85fb909f52a260774aa895a01a0fe1dc4766f23f9304416
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: bf6837a0211e6c7d51b4433c871e094a6c094f1a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417713"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142334858"
 ---
 # Set-AzureAutomationModule
 
@@ -30,7 +30,7 @@ Set-AzureAutomationModule -Name <String> [-Tags <IDictionary>] [-ContentLinkUri 
 
 [!INCLUDE [aa-deprecation](../include/aa-deprecation.md)]
 
-Cmdlet **Set-AzureAutomationModule** mengimpor versi baru modul atau mengubah konfigurasi modul dalam Otomatisasi Azure.
+Cmdlet **Set-AzureAutomationModule** mengimpor versi modul baru atau mengubah konfigurasi modul dalam Azure Automation.
 
 ## EXAMPLES
 
@@ -39,7 +39,7 @@ Cmdlet **Set-AzureAutomationModule** mengimpor versi baru modul atau mengubah ko
 PS C:\> Set-AzureAutomationModule -AutomationAccountName "Contoso17" -Name "ContosoModule" -ContentLinkUri ".\ContosoModule.zip" -ContentLinkVersion "1.1"
 ```
 
-Perintah ini mengimpor versi terbaru modul yang sudah ada yang bernama ContosoModule ke akun Otomatisasi Azure yang bernama Contoso17.
+Perintah ini mengimpor versi terbaru modul yang sudah ada bernama ContosoModule ke akun Azure Automation bernama Contoso17.
 
 ## PARAMETERS
 
@@ -104,8 +104,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -119,7 +119,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tag
+### -Tags
 Menentukan tag untuk modul.
 
 ```yaml
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -149,8 +149,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureAutomationModule](./Get-AzureAutomationModule.md)
 
-[New-AzureAutomationModule](./New-AzureAutomationModule.md)
+[AzureAutomationModule Baru](./New-AzureAutomationModule.md)
 
-[Remove-AzureAutomationModule](./Remove-AzureAutomationModule.md)
+[Hapus-AzureAutomationModule](./Remove-AzureAutomationModule.md)
 
 

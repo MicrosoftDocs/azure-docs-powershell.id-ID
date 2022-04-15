@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzInsightsPrivateLinkScope.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzInsightsPrivateLinkScope.md
-ms.openlocfilehash: cccef30a0fbb4e68c063d164cfc2e164a59f9e78
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a00d58e456aad05a0cbd3aeb22bbbc82d49f500f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140008241"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142319189"
 ---
 # Get-AzInsightsPrivateLinkScope
 
 ## SYNOPSIS
-Dapatkan lingkup tautan pribadi
+Dapatkan lingkup tautan privat
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azinsightsprivatelinkscope) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzInsightsPrivateLinkScope -ResourceId <String> [-DefaultProfile <IAzureCont
 ```
 
 ## DESCRIPTION
-Daftar atau dapatkan lingkup tautan pribadi 
+Daftar atau dapatkan lingkup tautan privat 
 
 ## EXAMPLES
 
@@ -47,14 +50,14 @@ Daftar atau dapatkan lingkup tautan pribadi
 Get-AzInsightsPrivateLinkScope -ResourceGroupName "rg_name"
 ```
 
-Daftar lingkup link privat di bawah grup sumber daya "rg_name"
+Mencantumkan lingkup tautan privat di bawah grup sumber daya "rg_name"
 
 ### Contoh 2
 ```powershell
 Get-AzInsightsPrivateLinkScope -ResourceGroupName "rg_name" -Name "scope_name"
 ```
 
-Dapatkan lingkup link privat dengan nama "scope_name" di bawah grup sumber daya "rg_name"
+Dapatkan lingkup tautan privat dengan nama "scope_name" di bawah grup sumber daya "rg_name"
 
 ## PARAMETERS
 
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Lingkup Tautan Pribadi
+Nama Lingkup Private Link
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/New-AzureRmSqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/New-AzureRmSqlServer.md
 ms.openlocfilehash: 208d72607397cb61e098052cd1835f44d4e0e4a5
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423273"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142314696"
 ---
 # New-AzureRmSqlServer
 
@@ -45,12 +45,12 @@ ServerVersion            : 12.0
 Tags                     :
 ```
 
-Perintah ini akan membuat server Azure SQL Database versi 12.
+Perintah ini membuat server Azure SQL Database versi 12.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi pusat data di mana cmdlet ini membuat server.
+Menentukan lokasi pusat data tempat cmdlet ini membuat server.
 
 ```yaml
 Type: System.String
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerVersion
-Menentukan versi server baru. Nilai yang dapat diterima untuk parameter ini adalah: 2.0 dan 12.0.
+Menentukan versi server baru. Nilai yang dapat diterima untuk parameter ini adalah: 2,0 dan 12,0.
 Tentukan 2.0 untuk membuat server versi 11, atau 12.0 untuk membuat server versi 12.
 
 ```yaml
@@ -156,8 +156,8 @@ Accept wildcard characters: False
 ```
 
 ### -SqlAdministratorCredentials
-Menentukan SQL Database administrator server untuk server baru. Untuk mendapatkan objek **PSCredential,** gunakan cmdlet Get-Credential. Untuk informasi selengkapnya, ketik `Get-Help
-Get-Credential` .
+Menentukan kredensial administrator server SQL Database untuk server baru. Untuk mendapatkan objek **PSCredential** , gunakan cmdlet Get-Credential. Untuk informasi selengkapnya, ketik .`Get-Help
+Get-Credential`
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -171,7 +171,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tag
+### -Tags
 Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -234,10 +234,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmSqlServer](./Get-AzureRmSqlServer.md)
 
-[Remove-AzureRmSqlServer](./Remove-AzureRmSqlServer.md)
+[Hapus-AzureRmSqlServer](./Remove-AzureRmSqlServer.md)
 
 [Set-AzureRmSqlServer](./Set-AzureRmSqlServer.md)
 
-[New-AzureRmSqlServerFirewallRule](./New-AzureRmSqlServerFirewallRule.md)
+[Baru-AzureRmSqlServerFirewallRule](./New-AzureRmSqlServerFirewallRule.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

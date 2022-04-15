@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeStore/Commands.DataLakeStore/help/Export-AzureRmDataLakeStoreChildItemProperties.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeStore/Commands.DataLakeStore/help/Export-AzureRmDataLakeStoreChildItemProperties.md
 ms.openlocfilehash: faaf8a0c614a1243a3e3812cd0b6e1202cc7e75b
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140860832"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142357680"
 ---
 # Export-AzureRmDataLakeStoreChildItemProperties
 
 ## SYNOPSIS
-Mengekspor properti (Penggunaan disk dan Acl) untuk seluruh pohon dari jalur yang ditentukan ke jalur ouput
+Mengekspor properti (Penggunaan disk dan Acl) untuk seluruh pohon dari jalur tertentu ke jalur ouput
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -46,18 +46,18 @@ Export-AzureRmDataLakeStoreChildItemProperties [-Account] <String> [-Path] <Data
 ```
 
 ## DESCRIPTION
-**Export-AzureRmDataLakeStoreChildItemProperties** digunakan untuk melaporkan penggunaan ruang ADLS atau/dan penggunaan ACL untuk direktori tertentu dan merupakan sub direktori dan file.
+**Ekspor-AzureRmDataLakeStoreChildItemProperties** digunakan untuk melaporkan penggunaan ruang ADLS atau/dan penggunaan ACL untuk direktori tertentu serta sub direktori dan file.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan penggunaan disk dan penggunaan ACL untuk semua subarah dan file
+### Contoh 1: Dapatkan penggunaan disk dan penggunaan ACL untuk semua subdirektori dan file
 ```
 PS C:\> Export-AzureRmDataLakeStoreChildItemProperties -Account ContosoADL -Path /a -OutputPath "C:\Users\contoso\Desktop\DumpFile.txt" -GetAcl -GetDiskUsage -IncludeFile
 ```
 
-Dapatkan penggunaan disk dan penggunaan ACL untuk semua subarah dan file di bawah /a. IncludeFile memastikan penggunaan juga dilaporkan untuk file
+Dapatkan penggunaan disk dan penggunaan ACL untuk semua subdirektori dan file di bawah /a. IncludeFile memastikan penggunaan juga dilaporkan untuk file
 
-### Contoh 2: Dapatkan penggunaan ACL untuk semua subarah dan file dengan ACL tersembunyi konsisten
+### Contoh 2: Dapatkan penggunaan ACL untuk semua subdirektori dan file dengan ACL yang konsisten tersembunyi
 ```
 PS C:\> $fullAcl="user:contoso-userid:--x|user::rwx|other::---|group::rwx"
 PS C:\> $newFullAcl = $fullAcl.Split("{|}");
@@ -66,7 +66,7 @@ PS C:\> Set-AzureRmDataLakeStoreItemAcl -Account ContosoADL -Path /a -Acl $newFu
 PS C:\> Export-AzureRmDataLakeStoreChildItemProperties -Account ContosoADL -Path /a -OutputPath "C:\Users\contoso\Desktop\DumpFile.txt" -GetAcl -HideConsistentAcl -IncludeFile
 ```
 
-Dapatkan penggunaan ACL untuk semua subarah dan file di bawah /a. IncludeFile memastikan penggunaan juga dilaporkan untuk file. HideconsistentAcl dalam hal ini akan memperlihatkan Acl /a, bukan anak-anak karena semua anak memiliki acl yang sama dengan /a. Bendera ini melewati subtree acl ouput jika semua acl sama seperti akarnya.
+Dapatkan penggunaan ACL untuk semua subdirektori dan file di bawah /a. IncludeFile memastikan penggunaan juga dilaporkan untuk file. HideconsistentAcl dalam hal ini akan memperlihatkan Acl dari /a, bukan anak-anak karena semua anak memiliki acl yang sama dengan /a. Bendera ini melewati ouput acl subtree jika semua itu sama dengan akarnya.
 
 ## PARAMETERS
 
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -GetAcl
-Mengambil acl yang dimulai dari jalur akar
+Mengambil acl dimulai dari jalur akar
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -GetDiskUsage
-Mengambil penggunaan disk yang dimulai dari jalur akar
+Mengambil kembali penggunaan disk dimulai dari jalur akar
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -HideConsistentAcl
-Do not show directory subtree if the ACL are the same throughout subtree. Ini memudahkan untuk melihat hanya jalur yang berbeda aCL. Misalnya, jika semua file dan folder dalam /a/b sama, jangan tampilkan subtreeunder /a/b, dan cukup output /a/b dengan 'True' dalam kolom ACL KonsistenTidak dapat diatur jika IncludeFiles tidak diatur, karena Acl konsisten tidak dapat ditentukan tanpa mengambil acl untuk file tersebut.
+Jangan perlihatkan subtree direktori jika AKL sama di seluruh subtree. Ini memudahkan untuk melihat hanya jalur yang berbeda dengan AF. Misalnya jika semua file dan folder di bawah /a/b sama, jangan perlihatkan subtreeunder /a/b, dan hanya output /a/b dengan 'True' di kolom ACL KonsistenCannot diatur jika IncludeFiles tidak diatur, karena Acl yang konsisten tidak dapat ditentukan tanpa mengambil aksel untuk file tersebut.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeFile
-Memperlihatkan stats pada tingkat file (defaultnya adalah untuk memperlihatkan info tingkat direktori saja)
+Perlihatkan statistik pada tingkat file (defaultnya hanya memperlihatkan info tingkat direktori)
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -OutputPath
-Jalur ke file output. Bisa merupakan Jalur lokal atau Jalur Adl. Secara default default berdampak pada lokal. Jika SaveToAdl diper pecified maka merupakan jalur ADL dalam akun yang sama
+Jalur ke file output. Dapat berupa Jalur lokal atau Jalur Adl. Secara default bersifat lokal. Jika SaveToAdl dipatokkan, jalur tersebut adalah jalur ADL di akun yang sama
 
 ```yaml
 Type: System.String
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan respons boolean harus dikembalikan, mengindikasikan hasil operasi penghapusan.
+Menunjukkan respons boolean harus dikembalikan yang mengindikasikan hasil operasi penghapusan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -221,9 +221,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Path
-Jalur dalam akun Data Lake yang akan diambil.
-Bisa merupakan file atau folder Dalam format '/folder/file.txt', di mana '/' pertama setelah DNS menunjukkan akar sistem file.
+### -Jalur
+Jalur dalam akun Data Lake tertentu yang harus diambil.
+Bisa berupa file atau folder Dalam format '/folder/file.txt', di mana '/' pertama setelah DNS menunjukkan akar sistem file.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -238,8 +238,8 @@ Accept wildcard characters: False
 ```
 
 ### -SaveToAdl
-Jika lolos, kemudian simpan file buang ke ADL.
-Dalam hal itu, BuangFile akan menjadi jalur ADL
+Jika lolos, simpan file dump ke ADL.
+DumpFile akan menjadi jalur ADL dalam kasus tersebut
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -270,7 +270,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -285,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

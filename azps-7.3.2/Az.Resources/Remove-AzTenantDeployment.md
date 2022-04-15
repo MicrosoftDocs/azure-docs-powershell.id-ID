@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzTenantDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzTenantDeployment.md
-ms.openlocfilehash: 6a8398619c2e9354d573c150552c2b40570b55f7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d42f9288b1c140f98accf7a91517a09b92f85e6e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140184164"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142341629"
 ---
 # Remove-AzTenantDeployment
 
 ## SYNOPSIS
-Menghapus penyebaran dalam lingkup penyewa dan setiap operasi terkait
+Menghapus penyebaran pada lingkup penyewa dan semua operasi terkait
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-aztenantdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzTenantDeployment -InputObject <PSDeployment> [-AsJob] [-PassThru] [-Pre
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzTenantDeployment** menghapus penyebaran Azure pada lingkup penyewa saat ini dan setiap operasi terkait.
+Cmdlet **Remove-AzTenantDeployment** menghapus penyebaran Azure di lingkup penyewa saat ini dan semua operasi terkait.
 
 ## EXAMPLES
 
@@ -49,7 +52,7 @@ PS C:\>Remove-AzTenantDeployment -Name "RolesDeployment"
 
 Perintah ini menghapus penyebaran "RolesDeployment" pada lingkup penyewa saat ini.
 
-### Contoh 2: Mendapatkan penyebaran dan menghapusnya
+### Contoh 2: Dapatkan penyebaran dan hapus
 ```
 PS C:\>Get-AzTenantDeployment -Name "RolesDeployment" | Remove-AzTenantDeployment
 ```
@@ -59,7 +62,7 @@ Perintah ini mendapatkan penyebaran "RolesDeployment" pada lingkup penyewa saat 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id sumber daya penyebaran yang sepenuhnya memenuhi syarat.
+Id sumber daya yang sepenuhnya memenuhi syarat dari penyebaran.
 contoh: /providers/Microsoft.Resources/deployments/{deploymentName}
 
 ```yaml
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Saat diatur, cmdlet harus menggunakan versi API prari tamu ketika menentukan versi mana yang akan digunakan secara otomatis.
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

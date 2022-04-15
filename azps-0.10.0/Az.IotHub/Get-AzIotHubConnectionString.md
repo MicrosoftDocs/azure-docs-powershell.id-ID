@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/IotHub/IotHub/help/Get-AzIotHubConnectionString.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/IotHub/IotHub/help/Get-AzIotHubConnectionString.md
 ms.openlocfilehash: 92d1e3f2ef1ba87a5e9683f7ac6617e31bb8a055
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "132414879"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142329071"
 ---
 # Get-AzIotHubConnectionString
 
 ## SYNOPSIS
-Mendapatkan string koneksi IotHub.
+Mendapatkan iotHub connectionstrings.
 
 ## SYNTAX
 
@@ -25,29 +25,29 @@ Get-AzIotHubConnectionString [-ResourceGroupName] <String> [-Name] <String> [[-K
 ```
 
 ## DESCRIPTION
-Mendapatkan string koneksi IotHub.
-Anda bisa mendapatkan string koneksi untuk semua tombol atau memfilternya dengan nama kunci tertentu.
+Mendapatkan iotHub connectionstrings.
+Anda bisa mendapatkan connectionstring untuk semua kunci atau memfilternya dengan nama kunci tertentu.
 
 ## EXAMPLES
 
-### Contoh 1 Dapatkan Semua string koneksi IotHub
+### Contoh 1 Dapatkan Semua sambungan IotHub
 ```
 PS C:\> Get-AzIotHubConnectionString -ResourceGroupName "myresourcegroup" -Name "myiothub"
 ```
 
-Mendapatkan string koneksi untuk semua tombol untuk iothub yang bernama "myiothub"
+Mendapatkan connectionstrings untuk semua kunci untuk iothub bernama "myiothub"
 
-### Contoh 2 Mendapatkan string koneksi IotHub untuk tombol tertentu
+### Contoh 2 Dapatkan alas koneksi IotHub untuk kunci tertentu
 ```
 PS C:\> Get-AzIotHubConnectionString -ResourceGroupName "myresourcegroup" -Name "myiothub" -KeyName "mykey"
 ```
 
-Mendapatkan string koneksi untuk kunci yang bernama "mykey" untuk iothub yang bernama "myiothub"
+Mendapatkan connectionstrings untuk kunci bernama "mykey" untuk iothub bernama "myiothub"
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzI
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzIotSecurityAnalyticsAggregatedRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzIotSecurityAnalyticsAggregatedRecommendation.md
-ms.openlocfilehash: 3ebf35de61b2696d7c2ad0e495d15c3376a9041f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 321df13dd0efc203330ca211bfbe10044894b26c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140183983"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142341341"
 ---
 # Get-AzIotSecurityAnalyticsAggregatedRecommendation
 
 ## SYNOPSIS
-Mendapatkan rekomendasi agregat keamanan IoT
+Dapatkan rekomendasi agregat keamanan IoT
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.security/get-aziotsecurityanalyticsaggregatedrecommendation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ Description: "Found a listening endpoint on the device."
 LogAnalyticsQuery: "SecurityRecommendation | where tolower(AssessedResourceId) == tolower('/subscriptions/075423e9-7d33-4166-8bdf-3920b04e3735/resourcegroups/iot-hub-demo/providers/microsoft.devices/iothubs/ascforiot-demo') and tolower(RecommendationName) == tolower('IoT_OpenPorts') and TimeGenerated  < now()"
 ```
 
-Dapatkan agregat rekomendasi "IoT_OpenPorts" dalam solusi keamanan "MySolution" dan grup sumber daya "MyResourceGroup"
+Dapatkan rekomendasi agregat "IoT_OpenPorts" dalam solusi keamanan "MySolution" dan grup sumber daya "MyResourceGroup"
 
 ### Contoh 2
 ```powershell
@@ -129,11 +132,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
