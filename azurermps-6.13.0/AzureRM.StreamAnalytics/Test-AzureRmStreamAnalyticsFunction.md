@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/StreamAnalytics/Commands.StreamAnalytics/help/Test-AzureRmStreamAnalyticsFunction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/StreamAnalytics/Commands.StreamAnalytics/help/Test-AzureRmStreamAnalyticsFunction.md
 ms.openlocfilehash: c62d829da193ae36f10a64149260cf34c6bc20ee
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428124"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142280275"
 ---
 # Test-AzureRmStreamAnalyticsFunction
 
@@ -28,21 +28,21 @@ Test-AzureRmStreamAnalyticsFunction [-JobName] <String> [-Name] <String> [-Resou
 ```
 
 ## DESCRIPTION
-Cmdlet **Test-AzureRmStreamAnalyticsFunction** menguji apakah Analitik Azure Stream dapat tersambung ke suatu fungsi.
+Cmdlet **Test-AzureRmStreamAnalyticsFunction** menguji apakah Azure Stream Analytics dapat tersambung ke fungsi.
 
 ## EXAMPLES
 
-### Contoh 1: Menguji fungsi Analitik Streaming
+### Contoh 1: Menguji fungsi Stream Analytics
 ```
 PS C:\>Test-AzureRmStreamAnalyticsFunction -ResourceGroupName "StreamAnalytics-Default-West-US" -JobName "StreamJob22" -Name "ScoreTweet"
 ```
 
-Perintah ini menguji status koneksi dari fungsi yang bernama ScoreTweet dalam pekerjaan bernama StreamJob22.
+Perintah ini menguji status koneksi fungsi bernama ScoreTweet dalam pekerjaan bernama StreamJob22.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobName
-Menentukan nama pekerjaan Analitik Stream tempat fungsi dimiliki.
+Menentukan nama pekerjaan Stream Analytics tempat fungsi berada.
 
 ```yaml
 Type: System.String
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama fungsi Analitik Stream yang menguji cmdlet ini.
+Menentukan nama fungsi Stream Analytics yang diuji cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat fungsi Analitik Stream dimiliki.
+Menentukan nama grup sumber daya tempat fungsi Stream Analytics berada.
 Cmdlet ini menguji fungsi dalam grup sumber daya yang ditentukan parameter ini.
 
 ```yaml
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -117,10 +117,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzureRmStreamAnalyticsFunction](./Get-AzureRmStreamAnalyticsFunction.md)
+[Get-AzureRmStreamAnalyticsFungsi](./Get-AzureRmStreamAnalyticsFunction.md)
 
-[New-AzureRmStreamAnalyticsFunction](./New-AzureRmStreamAnalyticsFunction.md)
+[New-AzureRmStreamAnalyticsFungsi](./New-AzureRmStreamAnalyticsFunction.md)
 
-[Remove-AzureRmStreamAnalyticsFunction](./Remove-AzureRmStreamAnalyticsFunction.md)
+[Remove-AzureRmStreamAnalyticsFungsi](./Remove-AzureRmStreamAnalyticsFunction.md)
 
 

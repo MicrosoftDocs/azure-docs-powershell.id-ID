@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/TrafficManager/Commands.TrafficManager2/help/Remove-AzureRmTrafficManagerEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/TrafficManager/Commands.TrafficManager2/help/Remove-AzureRmTrafficManagerEndpoint.md
 ms.openlocfilehash: da42677edbb9083df3c9a5a11b4d4910eda7dc84
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426283"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142280101"
 ---
 # Remove-AzureRmTrafficManagerEndpoint
 
@@ -29,7 +29,7 @@ Remove-AzureRmTrafficManagerEndpoint -Name <String> -Type <String> -ProfileName 
  [<CommonParameters>]
 ```
 
-### Object
+### Objek
 ```
 Remove-AzureRmTrafficManagerEndpoint -TrafficManagerEndpoint <TrafficManagerEndpoint> [-Force]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -38,12 +38,12 @@ Remove-AzureRmTrafficManagerEndpoint -TrafficManagerEndpoint <TrafficManagerEndp
 ## DESCRIPTION
 Cmdlet **Remove-AzureRmTrafficManagerEndpoint** menghapus titik akhir dari Azure Traffic Manager.
 
-Cmdlet ini commits each change to the Traffic Manager service.
-Untuk menghapus beberapa titik akhir dari objek Traffic Manager profil lokal dan melakukan perubahan dalam satu operasi, gunakan cmdlet Remove-AzureRmTrafficManagerEndpointConfig cmdlet.
+Cmdlet ini melakukan setiap perubahan pada layanan Traffic Manager.
+Untuk menghapus beberapa titik akhir dari objek profil Traffic Manager lokal dan melakukan perubahan dalam satu operasi, gunakan cmdlet Remove-AzureRmTrafficManagerEndpointConfig.
 
-Anda bisa menggunakan operator pipeline untuk mengirim objek **TrafficManagerEndpoint** ke cmdlet ini, atau Anda bisa menentukan objek **TrafficManagerEndpoint** dengan menggunakan parameter *TrafficManagerEndpoint.*
+Anda dapat menggunakan operator pipeline untuk mengirimkan objek **TrafficManagerEndpoint** ke cmdlet ini, atau menentukan objek **TrafficManagerEndpoint** menggunakan parameter *TrafficManagerEndpoint* .
 
-Alternatifnya, Anda bisa menentukan nama titik  akhir dan mengetik dengan menggunakan parameter Nama dan *Tipe,* bersama dengan parameter *ProfileName* *dan ResourceGroupName.*
+Atau, Anda dapat menentukan nama titik akhir dan mengetik menggunakan parameter *Nama* dan *Tipe* , bersama-sama dengan parameter *ProfileName* dan *ResourceGroupName* .
 
 ## EXAMPLES
 
@@ -52,12 +52,12 @@ Alternatifnya, Anda bisa menentukan nama titik  akhir dan mengetik dengan menggu
 PS C:\>Remove-AzureRmTrafficManagerEndpoint -Name "contoso" -ProfileName "ContosoProfile" -ResourceGroupName "ResourceGroup11" -Type AzureEndpoints
 ```
 
-Perintah ini menghapus titik akhir Azure yang bernama contoso dari profil yang bernama ContosoProfile dalam grup sumber daya yang bernama ResourceGroup11.
+Perintah ini menghapus titik akhir Azure bernama contoso dari profil bernama ContosoProfile dalam grup sumber daya bernama ResourceGroup11.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -71,8 +71,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProfileName
-Menentukan nama profil Traffic Manager asal cmdlet ini menghapus titik akhir.
+Menentukan nama profil Traffic Manager tempat cmdlet ini menghapus titik akhir.
 Untuk mendapatkan profil, gunakan cmdlet Get-AzureRmTrafficManagerProfile.
 
 ```yaml
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya.
-Cmdlet ini menghapus Traffic Manager titik akhir dari profil Traffic Manager dalam grup yang ditentukan parameter ini.
+Cmdlet ini menghapus titik akhir Traffic Manager dari profil Traffic Manager dalam grup yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -134,8 +134,8 @@ Accept wildcard characters: False
 ```
 
 ### -TrafficManagerEndpoint
-Menentukan titik Traffic Manager titik akhir yang dihapus cmdlet ini.
-Untuk mendapatkan objek **TrafficManagerEndpoint,** gunakan cmdlet Get-AzureRmTrafficManagerEndpoint.
+Menentukan titik akhir Traffic Manager yang dihapus cmdlet ini.
+Untuk mendapatkan objek **TrafficManagerEndpoint** , gunakan cmdlet Get-AzureRmTrafficManagerEndpoint.
 
 ```yaml
 Type: Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerEndpoint
@@ -150,8 +150,8 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Menentukan tipe titik akhir yang tambahkan cmdlet ini ke Traffic Manager profil.
-Nilai valid adalah: 
+Menentukan tipe titik akhir yang ditambahkan cmdlet ini ke profil Traffic Manager.
+Nilai yang valid adalah: 
 
 - AzureEndpoints
 - ExternalEndpoints
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,12 +202,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### TrafficManagerEndpoint
-Parameter 'TrafficManagerEndpoint' menerima nilai tipe 'TrafficManagerEndpoint' dari saluran
+Parameter 'TrafficManagerEndpoint' menerima nilai tipe 'TrafficManagerEndpoint' dari pipeline
 
 ## OUTPUTS
 
@@ -223,7 +223,7 @@ Parameter 'TrafficManagerEndpoint' menerima nilai tipe 'TrafficManagerEndpoint' 
 
 [New-AzureRmTrafficManagerEndpoint](./New-AzureRmTrafficManagerEndpoint.md)
 
-[Remove-AzureRmTrafficManagerEndpointConfig](./Remove-AzureRmTrafficManagerEndpointConfig.md)
+[Hapus-AzureRmTrafficManagerEndpointConfig](./Remove-AzureRmTrafficManagerEndpointConfig.md)
 
 [Set-AzureRmTrafficManagerProfile](./Set-AzureRmTrafficManagerProfile.md)
 

@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.sql/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Set-AzureRmSqlInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Set-AzureRmSqlInstance.md
-ms.openlocfilehash: 923a7ae287e89235249c70aefa7dea6145dbf172e466eb6b4e44769712bbf7d1
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 1e992e33591f5c993bfdda1bf9934245b2f5f2c8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140868079"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142280491"
 ---
 # Set-AzureRmSqlInstance
 
 ## SYNOPSIS
-Mengatur properti untuk Instans Azure SQL Database Terkelola.
+Mengatur properti untuk Instans terkelola Azure SQL Database.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -45,11 +45,11 @@ Set-AzureRmSqlInstance [-ResourceId] <String> [-AdministratorPassword <SecureStr
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmSqlInstance** mengubah properti instans Azure SQL Database Dikelola.
+Cmdlet **Set-AzureRmSqlInstance** mengubah properti instans yang dikelola Azure SQL Database.
 
 ## EXAMPLES
 
-### Contoh 1: Atur contoh yang sudah ada menggunakan nilai baru untuk -AdministratorPassword, -LicenseType, -StorageSizeInGB dan -VCore
+### Contoh 1: Mengatur instans yang sudah ada menggunakan nilai baru untuk -AdministratorPassword, -LicenseType, -StorageSizeInGB dan -VCore
 ```
 PS C:\>$InstancePassword = "Newpassword1234"
 PS C:\> $SecureString = ConvertTo-SecureString $InstancePassword -AsPlainText -Force
@@ -70,12 +70,12 @@ VCores                   : 16
 StorageSizeInGB          : 1024
 ```
 
-Perintah ini mengatur contoh yang sudah ada menggunakan nilai baru untuk -AdministratorPassword, -LicenseType, -StorageSizeInGB dan -VCore
+Perintah ini mengatur instans yang sudah ada menggunakan nilai baru untuk -AdministratorPassword, -LicenseType, -StorageSizeInGB dan -VCore
 
 ## PARAMETERS
 
 ### -AdministratorPassword
-Kata sandi SQL administrator baru untuk contohnya.
+Kata sandi administrator SQL baru untuk contoh tersebut.
 
 ```yaml
 Type: SecureString
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignIdentity
-Buat dan tetapkan Azure Active Directory Identity untuk instans ini untuk digunakan dengan layanan manajemen kunci seperti Azure KeyVault.
+Buat dan tetapkan identitas Azure Active Directory untuk instans ini untuk digunakan dengan layanan manajemen utama seperti Azure KeyVault.
 
 ```yaml
 Type: SwitchParameter
@@ -119,8 +119,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Edition
-Edisi yang ditetapkan ke instans.
+### -Edisi
+Edisi untuk ditetapkan ke instans.
 
 ```yaml
 Type: String
@@ -134,7 +134,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Lewati pesan konfirmasi untuk melakukan tindakan
 
 ```yaml
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek AzureSqlManagedInstanceModel yang akan dihapus
+Objek AzureSqlManagedInstanceModel untuk dihapus
 
 ```yaml
 Type: AzureSqlManagedInstanceModel
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -LicenseType
-Menentukan Tipe Lisensi instans mana yang digunakan
+Menentukan Tipe Lisensi instans mana yang akan digunakan
 
 ```yaml
 Type: String
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama contoh.
+Nama instans.
 
 ```yaml
 Type: String
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya contoh yang dihapus
+Id sumber daya instans untuk dihapus
 
 ```yaml
 Type: String
@@ -225,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageSizeInGB
-Menentukan seberapa Storage besar untuk dikaitkan dengan instans
+Menentukan berapa banyak ukuran Storage untuk dikaitkan dengan instans
 
 ```yaml
 Type: Int32
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -VCore
-Menentukan seberapa banyak VCore dikaitkan dengan contoh
+Menentukan berapa banyak VCore untuk dikaitkan dengan instance
 
 ```yaml
 Type: Int32
@@ -270,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -286,7 +286,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -301,7 +301,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

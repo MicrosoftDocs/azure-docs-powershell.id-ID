@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.sql/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Stop-AzureRmSqlDatabaseExecuteIndexRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Stop-AzureRmSqlDatabaseExecuteIndexRecommendation.md
-ms.openlocfilehash: 6303041089024dcda7dcec7cb8254939e4235bd505578f2f446378666916b6a4
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 2922edf4f7b7cfd0d814a5559bb1e6e7bb9ef3ca
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418894"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142280380"
 ---
 # Stop-AzureRmSqlDatabaseExecuteIndexRecommendation
 
@@ -43,7 +43,7 @@ Perintah ini berhenti menjalankan rekomendasi indeks.
 ## PARAMETERS
 
 ### -DatabaseName
-Menentukan nama database di mana cmdlet ini menghentikan alur kerja.
+Menentukan nama database tempat cmdlet ini menghentikan alur kerja.
 
 ```yaml
 Type: System.String
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -IndexRecommendationName
-Menentukan nama rekomendasi indeks bahwa cmdlet ini berhenti.
+Menentukan nama rekomendasi indeks yang dihentikan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan server yang menjadi host database di mana cmdlet ini menghentikan alur kerja.
+Menentukan server yang menghosting database tempat cmdlet ini menghentikan alur kerja.
 
 ```yaml
 Type: System.String
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -136,6 +136,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Start-AzureRmSqlDatabaseExecuteIndexRecommendation](./Start-AzureRmSqlDatabaseExecuteIndexRecommendation.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 
 

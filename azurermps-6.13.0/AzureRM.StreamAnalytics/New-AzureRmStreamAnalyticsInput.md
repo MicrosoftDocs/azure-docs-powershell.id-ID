@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/StreamAnalytics/Commands.StreamAnalytics/help/New-AzureRmStreamAnalyticsInput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/StreamAnalytics/Commands.StreamAnalytics/help/New-AzureRmStreamAnalyticsInput.md
 ms.openlocfilehash: 2cce01f444566a91a7bc3b4b2395e1d4e3dacddc
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423619"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142280339"
 ---
 # New-AzureRmStreamAnalyticsInput
 
@@ -29,10 +29,10 @@ New-AzureRmStreamAnalyticsInput [-JobName] <String> [[-Name] <String>] [-File] <
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmStreamAnalyticsInput** membuat input dalam pekerjaan Analitik Stream atau memperbarui input yang sudah ada.
+Cmdlet **New-AzureRmStreamAnalyticsInput** membuat input dalam pekerjaan Stream Analytics atau memperbarui input yang sudah ada.
 Nama input dapat ditentukan dalam file JSON atau di baris perintah.
-Jika keduanya ditentukan, nama di baris perintah harus sesuai dengan nama dalam file.
-Jika Anda menentukan input yang sudah ada dan tidak menentukan parameter *Paksa,* cmdlet akan menanyakan apakah akan mengganti input yang sudah ada atau tidak.
+Jika keduanya ditentukan, nama pada baris perintah harus sesuai dengan nama dalam file.
+Jika Anda menentukan input yang sudah ada dan tidak menentukan parameter *Force* , cmdlet akan menanyakan apakah input yang sudah ada akan diganti atau tidak.
 Jika Anda menentukan parameter *Paksa* dan menentukan nama input yang sudah ada, input akan diganti tanpa konfirmasi.
 
 ## EXAMPLES
@@ -42,7 +42,7 @@ Jika Anda menentukan parameter *Paksa* dan menentukan nama input yang sudah ada,
 PS C:\>New-AzureRmStreamAnalyticsInput -ResourceGroupName "StreamAnalytics-Default-West-US" -JobName "StreamingJob" -File "C:\Input.json"
 ```
 
-Perintah ini akan membuat input dari file Input.json.
+Perintah ini membuat input dari file Input.json.
 Jika input yang sudah ada dengan nama yang ditentukan dalam file definisi input sudah ditentukan, cmdlet akan menanyakan apakah akan menggantinya atau tidak.
 
 ### CONTOH 2: Membuat input pekerjaan
@@ -50,7 +50,7 @@ Jika input yang sudah ada dengan nama yang ditentukan dalam file definisi input 
 PS C:\>New-AzureRmStreamAnalyticsInput -ResourceGroupName "StreamAnalytics-Default-West-US" -JobName "StreamingJob" -File "C:\Input.json" -Name "EntryStream"
 ```
 
-Perintah ini akan membuat input baru pada pekerjaan bernama EntryStream.
+Perintah ini membuat input baru pada pekerjaan yang disebut EntryStream.
 Jika input yang sudah ada dengan nama ini sudah ditentukan, cmdlet akan menanyakan apakah akan menggantinya atau tidak.
 
 ### CONTOH 3: Mengganti input pekerjaan dengan definisi dari file
@@ -63,7 +63,7 @@ Perintah ini menggantikan definisi sumber input yang sudah ada yang disebut Entr
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -File
-Menentukan jalur ke file JSON yang berisi representasi JSON dari input Analitik Azure Stream yang akan dibuat.
+Menentukan jalur ke file JSON yang berisi representasi JSON dari input Azure Stream Analytics untuk dibuat.
 
 ```yaml
 Type: System.String
@@ -92,8 +92,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobName
-Menentukan nama pekerjaan Analitik Azure Stream untuk membuat input Analitik Azure Stream.
+Menentukan nama pekerjaan Azure Stream Analytics untuk membuat input Azure Stream Analytics.
 
 ```yaml
 Type: System.String
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama input Analitik Azure Stream untuk dibuat.
+Menentukan nama input Azure Stream Analytics untuk dibuat.
 
 ```yaml
 Type: System.String
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya untuk membuat input Azure Streaming.
+Menentukan nama grup sumber daya tempat untuk membuat input Azure Streaming.
 
 ```yaml
 Type: System.String
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -200,8 +200,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmStreamAnalyticsInput](./Get-AzureRmStreamAnalyticsInput.md)
 
-[Remove-AzureRmStreamAnalyticsInput](./Remove-AzureRmStreamAnalyticsInput.md)
+[Hapus-AzureRmStreamAnalyticsInput](./Remove-AzureRmStreamAnalyticsInput.md)
 
-[Test-AzureRmStreamAnalyticsInput](./Test-AzureRmStreamAnalyticsInput.md)
+[Uji-AzureRmStreamAnalyticsInput](./Test-AzureRmStreamAnalyticsInput.md)
 
 
