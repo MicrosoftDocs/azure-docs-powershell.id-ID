@@ -4,16 +4,16 @@ ms.assetid: E7F6EEF0-8896-4639-89A8-810F19161211
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: cfe80a5fd8798ed1b105ee7068cda884077b875b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421123"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142277625"
 ---
 # Restart-AzureWebsite
 
 ## SYNOPSIS
-Berhenti, lalu mulai ulang situs web tertentu.
+Berhenti lalu memulai ulang situs web yang ditentukan.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,10 +25,10 @@ Restart-AzureWebsite [-PassThru] [-Name <String>] [-Slot <String>] [-Profile <Az
 ```
 
 ## DESCRIPTION
-Topik ini menguraikan cmdlet dalam modul Microsoft Azure PowerShell versi 0.8.10.
-Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Topik ini menjelaskan cmdlet dalam versi 0.8.10 modul Microsoft Azure PowerShell.
+Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik .`(Get-Module -Name Azure).Version`
 
-Cmdlet **Mulai Ulang-AzureWebsite** berhenti lalu memulai ulang situs web tertentu.
+Cmdlet **Mulai Ulang-AzureWebsite** berhenti lalu memulai ulang situs web yang ditentukan.
 
 ## EXAMPLES
 
@@ -37,12 +37,12 @@ Cmdlet **Mulai Ulang-AzureWebsite** berhenti lalu memulai ulang situs web terten
 PS C:\> Restart-AzureWebsite -Name MyWebsite
 ```
 
-Contoh ini memulai ulang situs web bernama SitusWebSaya.
+Contoh ini memulai ulang situs web bernama Situs Saya.
 
 ## PARAMETERS
 
 ### -Nama
-Menentukan nama situs web Azure untuk dimulai ulang.
+Menentukan nama situs web Azure untuk memulai ulang.
 
 ```yaml
 Type: String
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -73,8 +73,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -114,12 +114,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzureWebsite](./Get-AzureWebsite.md)
+[Dapatkan-AzureWebsite](./Get-AzureWebsite.md)
 
-[New-AzureWebsite](./New-AzureWebsite.md)
+[Baru-AzureSitus Web](./New-AzureWebsite.md)
 
-[Remove-AzureWebsite](./Remove-AzureWebsite.md)
+[Hapus-AzureSitus Web](./Remove-AzureWebsite.md)
 
-[Start-AzureWebsite](./Start-AzureWebsite.md)
+[Mulai AzureSitus Web](./Start-AzureWebsite.md)
 
 

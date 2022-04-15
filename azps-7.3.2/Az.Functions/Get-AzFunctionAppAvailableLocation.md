@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Get-AzFunctionAppAvailableLocation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Get-AzFunctionAppAvailableLocation.md
-ms.openlocfilehash: 78837677cdf1a2d6f1ca72ff5fa5cd143c35fcd9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0a82dc95bc9515c1da8078e23c70ccdbb0b9db21
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140200007"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142257271"
 ---
 # Get-AzFunctionAppAvailableLocation
 
 ## SYNOPSIS
-Mendapatkan lokasi di mana aplikasi fungsi untuk os dan tipe paket tertentu tersedia.
+Mendapatkan lokasi di mana aplikasi fungsi untuk tipe os dan rencana tertentu tersedia.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.functions/get-azfunctionappavailablelocation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzFunctionAppAvailableLocation [[-SubscriptionId] <String[]>] [[-PlanType] <
 ```
 
 ## DESCRIPTION
-Mendapatkan lokasi di mana aplikasi fungsi untuk os dan tipe paket tertentu tersedia.
+Mendapatkan lokasi di mana aplikasi fungsi untuk tipe os dan rencana tertentu tersedia.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan lokasi tempat Premium baru tersedia untuk Windows. Jika tidak ada parameter yang ditentukan, PlanType diatur ke 'Premium' dan OSType diatur ke 'Windows'.
+### Contoh 1: Dapatkan lokasi tempat Premium tersedia untuk Windows. Jika tidak ada parameter yang ditentukan, PlanType diatur ke 'Premium' dan OSType diatur ke 'Windows'.
 ```powershell
 PS C:\> Get-AzFunctionAppAvailableLocation
 
@@ -102,9 +105,9 @@ France Central
 Norway East
 ```
 
-Perintah ini mendapatkan lokasi tempat Premium tersedia untuk Linux.
+Perintah ini mendapatkan lokasi di mana Premium tersedia untuk Linux.
 
-### Contoh 3: Dapatkan lokasi tempat Pemakaian tersedia untuk Windows.
+### Contoh 3: Dapatkan lokasi di mana Konsumsi tersedia untuk Windows.
 ```powershell
 PS C:\> Get-AzFunctionAppAvailableLocation -PlanType Consumption -OSType Windows
 
@@ -146,7 +149,7 @@ Switzerland North
 Germany West Central
 ```
 
-Perintah ini mendapatkan lokasi tempat Pemakaian tersedia untuk Windows.
+Perintah ini mendapatkan lokasi di mana Konsumsi tersedia untuk Windows.
 
 ## PARAMETERS
 
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlanType
-Tipe rencana.
+Tipe paket.
 Input yang valid: Konsumsi atau Premium
 
 ```yaml
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

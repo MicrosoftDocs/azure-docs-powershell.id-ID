@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Get-AzFunctionApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Get-AzFunctionApp.md
-ms.openlocfilehash: d01fb92c074ab544bbaeef63fbbf3939654f301a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 681c6628585f80809e357393d1ba65536709e73f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140402675"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142257379"
 ---
 # Get-AzFunctionApp
 
 ## SYNOPSIS
 Mendapatkan aplikasi fungsi dalam langganan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.functions/get-azfunctionapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -92,7 +95,7 @@ Functions1-Windows-DoNet Running Windows DotNet  Central US CentralUSPlan  Funct
 
 
 
-### Contoh 5: Dapatkan aplikasi fungsi menurut lokasi.
+### Contoh 5: Dapatkan aplikasi fungsi berdasarkan lokasi.
 ```powershell
 PS C:\> Get-AzFunctionApp -Location "Central US"
 
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeSlot
-Gunakan untuk menentukan apakah akan menyertakan slot penggunaan di hasil.
+Gunakan untuk menentukan apakah akan menyertakan slot penyebaran dalam hasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

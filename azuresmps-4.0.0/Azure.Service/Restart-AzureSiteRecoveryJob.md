@@ -4,16 +4,16 @@ ms.assetid: AE26EA0F-9D92-4FDF-92EF-CA33BF06C0DB
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 802092bf9f738fa7e0b42af09c76ff13bef899dc
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420245"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142244117"
 ---
 # Restart-AzureSiteRecoveryJob
 
 ## SYNOPSIS
-Memulai ulang pekerjaan Pemulihan Situs.
+Memulai ulang pekerjaan Site Recovery.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -30,7 +30,7 @@ Restart-AzureSiteRecoveryJob -Id <String> [-Profile <AzureSMProfile>] [<CommonPa
 ```
 
 ## DESCRIPTION
-Cmdlet **Mulai Ulang AzureSiteRecoveryJob** memulai ulang pekerjaan Pemulihan Situs Azure.
+Cmdlet **Restart-AzureSiteRecoveryJob** memulai ulang pekerjaan Site Recovery Azure.
 
 ## EXAMPLES
 
@@ -50,12 +50,12 @@ Tasks            : {Prerequisites check for enabling protection , Identifying re
 Errors           : {CreateProtectionTargetTask}
 ```
 
-Perintah ini memulai ulang pekerjaan dengan ID tertentu.
+Perintah ini memulai ulang pekerjaan yang memiliki ID yang ditentukan.
 
 ## PARAMETERS
 
 ### -Id
-Menentukan ID pekerjaan untuk dimulai ulang.
+Menentukan ID pekerjaan yang akan dimulai ulang.
 
 ```yaml
 Type: String
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -Job
-Menentukan pekerjaan untuk dimulai ulang.
+Menentukan tugas untuk memulai ulang.
 
 ```yaml
 Type: ASRJob
@@ -85,8 +85,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

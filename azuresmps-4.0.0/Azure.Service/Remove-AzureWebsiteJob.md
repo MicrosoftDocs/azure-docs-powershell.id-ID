@@ -4,16 +4,16 @@ ms.assetid: 545CAB1C-F08C-4472-A41A-1FE900D2EDA5
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 2636fe1039c0fc66e74fae98079234fc272cf087
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423594"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142244121"
 ---
 # Remove-AzureWebsiteJob
 
 ## SYNOPSIS
-Menghapus pekerjaan web yang ada untuk situs web.
+Menghapus pekerjaan web yang sudah ada untuk situs web.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,7 +25,7 @@ Remove-AzureWebsiteJob -JobName <String> -JobType <WebJobType> [-Force] [-Name <
 ```
 
 ## DESCRIPTION
-Menghapus pekerjaan web yang ada untuk situs web.
+Menghapus pekerjaan web yang sudah ada untuk situs web.
 
 ## EXAMPLES
 
@@ -34,12 +34,12 @@ Menghapus pekerjaan web yang ada untuk situs web.
 PS C:\> Remove-AzureWebsiteJob -Name MyWebsite -JobName MyWebJob -JobType Continuous
 ```
 
-Menghapus pekerjaan web yang disebut MyWebJob untuk SitusWebSaya.
+Menghapus pekerjaan web yang disebut MyWebJob for MyWebSite.
 
 ## PARAMETERS
 
-### -Force
-Mengindikasikan bahwa cmdlet ini menghapus pekerjaan web tanpa meminta konfirmasi Anda.
+### -Paksa
+Menunjukkan bahwa cmdlet ini menghapus pekerjaan web tanpa meminta konfirmasi kepada Anda.
 
 ```yaml
 Type: SwitchParameter
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 
 ### -JobType
 Tipe pekerjaan web.
-Dapat dipicu atau terus-menerus.
+Dapat dipicu atau terus menerus.
 
 ```yaml
 Type: WebJobType
@@ -100,8 +100,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -141,11 +141,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Remove-AzureWebsite](./Remove-AzureWebsite.md)
+[Hapus-AzureSitus Web](./Remove-AzureWebsite.md)
 
 [Get-AzureWebsiteJob](./Get-AzureWebsiteJob.md)
 
-[New-AzureWebsiteJob](./New-AzureWebsiteJob.md)
+[AzureWebsiteJob Baru](./New-AzureWebsiteJob.md)
 
 [Start-AzureWebsiteJob](./Start-AzureWebsiteJob.md)
 

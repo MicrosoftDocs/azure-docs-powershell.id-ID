@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightScriptActionHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightScriptActionHistory.md
-ms.openlocfilehash: 5269a560ff5bb99aa01c09863d174dacb26aba3b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 46b626a8c3d70c7352f4de0f756ae70628213f5d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140372786"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142215145"
 ---
 # Get-AzHDInsightScriptActionHistory
 
 ## SYNOPSIS
 Mendapatkan riwayat tindakan skrip untuk kluster dan mencantumkannya dalam urutan kronologis terbalik, atau mendapatkan detail tindakan skrip yang dijalankan sebelumnya.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/get-azhdinsightscriptactionhistory) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,12 +33,12 @@ Cmdlet **Get-AzHDInsightScriptActionHistory** mendapatkan riwayat tindakan skrip
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan riwayat eksekusi tindakan skrip untuk kluster
+### Contoh 1: Dapatkan riwayat eksekusi tindakan skrip untuk kluster
 ```
 PS C:\>Get-AzHDInsightScriptActionHistory -ClusterName "your-hadoop-001"
 ```
 
-Perintah ini mendapatkan riwayat tindakan skrip untuk kluster your-hadoop-001.
+Perintah ini mendapatkan riwayat tindakan skrip untuk cluster your-hadoop-001.
 
 ## PARAMETERS
 
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScriptExecutionId
-Menentukan ID eksekusi tindakan skrip yang dijalankan.
+Menentukan ID eksekusi aksi skrip yang dijalankan.
 
 ```yaml
 Type: System.Nullable`1[System.Int64]
@@ -100,11 +103,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

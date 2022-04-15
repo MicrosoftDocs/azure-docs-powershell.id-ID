@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorRulesEngine.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorRulesEngine.md
-ms.openlocfilehash: 9bc6715a9ed38119d94d78667daef8ea4bdd28a1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 22ac532ed41f2a044192106c5f99f7f5655af865
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140394191"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142215361"
 ---
 # New-AzFrontDoorRulesEngine
 
 ## SYNOPSIS
-Membuat konfigurasi mesin aturan baru untuk pintu depan yang ditentukan. 
+Buat konfigurasi mesin aturan baru untuk pintu depan tertentu. 
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorrulesengine) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,9 +29,9 @@ New-AzFrontDoorRulesEngine -ResourceGroupName <String> -FrontDoorName <String> -
 ```
 
 ## DESCRIPTION
-Membuat konfigurasi mesin aturan baru untuk pintu depan yang ditentukan. 
+Buat konfigurasi mesin aturan baru untuk pintu depan tertentu. 
 
-Gunakan cmdlet "New-AzFrontDoorRulesEngineRule" untuk membuat aturan mesin aturan agar masuk ke dalam parameter "-Aturan" dari cmdlet ini.
+Gunakan cmdlet "New-AzFrontDoorRulesEngineRule" untuk menyusun aturan mesin aturan untuk masuk ke parameter "-Aturan" cmdlet ini.
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ Name          RulesEngineRules
 myRulesEngine {rules1}
 ```
 
-Buat konfigurasi mesin aturan baru untuk pintu depan yang ditentukan.
+Buat konfigurasi mesin aturan baru untuk pintu depan tertentu.
 
 ## PARAMETERS
 
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama mesin aturan.
+Aturan nama mesin.
 
 ```yaml
 Type: System.String
@@ -105,8 +108,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Rule
-Daftar aturan yang menetapkan Konfigurasi Mesin Aturan tertentu.
+### -Aturan
+Daftar aturan yang menentukan Konfigurasi Mesin Aturan tertentu.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSRulesEngineRule[]
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -151,11 +154,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

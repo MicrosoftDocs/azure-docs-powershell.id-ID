@@ -4,16 +4,16 @@ ms.assetid: 8C735528-3844-452F-983B-41AC5CD4E414
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 6295aec29c0dca1c2be516dabdba5e64b56951d1
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427465"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142277583"
 ---
 # Remove-AzureVMBGInfoExtension
 
 ## SYNOPSIS
-Menghapus ekstensi BGInfo yang diterapkan pada komputer virtual.
+Menghapus ekstensi BGInfo yang diterapkan pada mesin virtual.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,30 +25,30 @@ Remove-AzureVMBGInfoExtension -VM <IPersistentVM> [-Profile <AzureSMProfile>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureVMBGInfoExtension** menghapus ekstensi BGInfo yang diterapkan di komputer virtual.
+Cmdlet **Remove-AzureVMBGInfoExtension** menghapus ekstensi BGInfo yang diterapkan pada mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus ekstensi BGInfo di komputer virtual
+### Contoh 1: Hapus ekstensi BGInfo di mesin virtual
 ```
 PS C:\> Remove-AzureVMBGInfoExtension -VM $VM;
 ```
 
-Perintah ini akan menghapus ekstensi BGInfo yang diterapkan di komputer virtual.
+Perintah ini menghapus ekstensi BGInfo yang diterapkan pada mesin virtual.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -78,8 +78,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

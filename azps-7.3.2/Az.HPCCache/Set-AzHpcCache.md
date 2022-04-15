@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hpccache/set-azh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/Set-AzHpcCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/Set-AzHpcCache.md
-ms.openlocfilehash: 0a2f57b737788918ff4f63281c677cf27fa5eaff
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f56e8ddc2d4971f675c06481f06845b161a1339b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140186797"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142257235"
 ---
 # Set-AzHpcCache
 
 ## SYNOPSIS
-Memperbarui tag pada Cache HPC.
+Memperbarui tag pada HPC Cache.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hpccache/set-azhpccache) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Set-AzHpcCache -InputObject <PSHPCCache> [-AsJob] [-DefaultProfile <IAzureContex
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzHpcCache** memperbarui tag Singgahan Azure HPC.
+Cmdlet **Set-AzHpcCache** memperbarui tag Azure HPC Cache.
 
 ## EXAMPLES
 
@@ -44,7 +47,7 @@ PS C:\> Set-AzHpcCache -ResourceGroupName testRG -CacheName testCache -Tag @{"ta
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek cache yang diperbarui.
+Objek cache untuk diperbarui.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.HPCCache.Models.PSHPCCache
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag yang akan dikaitkan dengan Cache HPC. 
+Tag yang akan dikaitkan dengan HPC Cache. 
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

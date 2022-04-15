@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/new-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateReplicationPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateReplicationPolicy.md
-ms.openlocfilehash: 59c2a5151a20ab66314fb9188b189c0fb8bda556
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 7b4ad38c2f61fe63eccfd7bc87ab7de75a00f24c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140381348"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142214443"
 ---
 # New-AzMigrateReplicationPolicy
 
 ## SYNOPSIS
 Operasi untuk membuat kebijakan replikasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.migrate/new-azmigratereplicationpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 
 ### -ProviderSpecificInput
 The ReplicationProviderSettings.
-Untuk membuat, lihat bagian CATATAN untuk properti PROVIDERSPECIFICINPUT dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti PROVIDERSPECIFICINPUT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IPolicyProviderSpecificInput
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat vault layanan pemulihan ada.
+Nama grup sumber daya tempat kubah layanan pemulihan ada.
 
 ```yaml
 Type: System.String
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceName
-Nama vault layanan pemulihan.
+Nama kubah layanan pemulihan.
 
 ```yaml
 Type: System.String
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

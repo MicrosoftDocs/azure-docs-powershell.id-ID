@@ -3,12 +3,12 @@ external help file: Microsoft.Azure.Commands.Automation.dll-Help.xml
 ms.assetid: F80F20B6-21CB-4A37-9CBC-277F6EE99D4B
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: a64f246500854cb2dc2578b57035daa44a441c66b87413697d3314520f3bdb2b
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 94cc77b0f62ed084f3d65c0f14b8303d2533c637
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417715"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142277493"
 ---
 # Set-AzureAutomationConnectionFieldValue
 
@@ -29,7 +29,7 @@ Set-AzureAutomationConnectionFieldValue -Name <String> -ConnectionFieldName <Str
 
 [!INCLUDE [aa-deprecation](../include/aa-deprecation.md)]
 
-Cmdlet **Set-AzureAutomationConnectionFieldValue** mengubah nilai untuk bidang untuk koneksi dalam Otomatisasi Azure.
+Cmdlet **Set-AzureAutomationConnectionFieldValue** mengubah nilai untuk bidang untuk koneksi di Azure Automation.
 
 ## EXAMPLES
 
@@ -51,7 +51,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionFieldName
-Menentukan nama untuk bidang.
+Menentukan nama untuk bidang tersebut.
 
 ```yaml
 Type: String
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama untuk koneksi.
+Menentukan nama untuk sambungan tersebut.
 
 ```yaml
 Type: String
@@ -81,8 +81,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -Value
-Menentukan nilai yang akan disimpan dalam bidang koneksi.
+Menentukan nilai untuk disimpan dalam bidang koneksi.
 
 ```yaml
 Type: Object
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -124,8 +124,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureAutomationConnection](./Get-AzureAutomationConnection.md)
 
-[New-AzureAutomationConnection](./New-AzureAutomationConnection.md)
+[Baru-AzureAutomationConnection](./New-AzureAutomationConnection.md)
 
-[Remove-AzureAutomationConnection](./Remove-AzureAutomationConnection.md)
+[Hapus-AzureAutomationConnection](./Remove-AzureAutomationConnection.md)
 
 

@@ -4,11 +4,11 @@ ms.assetid: 47650E39-758C-4D3C-9653-B70576CA0979
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 5deaac344c1fafa215b5243fff69aa5d76c6ea45
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421124"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142244366"
 ---
 # Remove-AzureStorSimpleDeviceBackup
 
@@ -19,13 +19,13 @@ Menghapus objek cadangan.
 
 ## SYNTAX
 
-### IdentifyById (Default)
+### IdentifiById (Default)
 ```
 Remove-AzureStorSimpleDeviceBackup -DeviceName <String> -BackupId <String> [-Force] [-WaitForComplete]
  [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
 
-### IdentifyByObject
+### IdentifikasiByObject
 ```
 Remove-AzureStorSimpleDeviceBackup -DeviceName <String> -Backup <Backup> [-Force] [-WaitForComplete]
  [-Profile <AzureSMProfile>] [<CommonParameters>]
@@ -33,7 +33,7 @@ Remove-AzureStorSimpleDeviceBackup -DeviceName <String> -Backup <Backup> [-Force
 
 ## DESCRIPTION
 Cmdlet **Remove-AzureStorSimpleDeviceBackup** menghapus satu objek cadangan.
-Jika Anda berusaha menghapus cadangan yang telah dihapus, cmdlet ini akan mengembalikan kesalahan.
+Jika Anda mencoba menghapus cadangan yang telah dihapus, cmdlet ini mengembalikan kesalahan.
 
 ## EXAMPLES
 
@@ -44,11 +44,11 @@ The remove job is submitted successfully. Please use the command Get-AzureStorSi
 9a4e-857e128dc216 for tracking the job status
 ```
 
-Perintah ini akan menghapus cadangan yang memiliki ID tertentu untuk perangkat bernama Contoso63-AppVm.
-Perintah ini memulai operasi yang menghapus objek **Backup,** lalu mengembalikan objek **TaskResponse.**
-Untuk melihat status tugas, gunakan cmdlet **Get-AzureStorSimpleTask.**
+Perintah ini menghapus cadangan yang memiliki ID tertentu untuk perangkat bernama Contoso63-AppVm.
+Perintah memulai operasi yang menghapus objek **Cadangan** , lalu mengembalikan objek **TaskResponse** .
+Untuk melihat status tugas, gunakan cmdlet **Get-AzureStorSimpleTask** .
 
-### Contoh 2: Menghapus cadangan pertama untuk perangkat menggunakan ID-nya
+### Contoh 2: Hapus cadangan pertama untuk perangkat dengan menggunakan ID-nya
 ```
 PS C:\>$Backup = Get-AzureStorSimpleDeviceBackup -DeviceName "Contoso63-AppVm"
 PS C:\> Remove-AzureStorSimpleDeviceBackup -DeviceName "Contoso63-AppVm" -BackupId $Backup[0].InstanceId -WaitForComplete
@@ -62,11 +62,11 @@ StatusCode : OK
 RequestId  : f4411f38d07f68b88095682dbeedd9e9
 ```
 
-Perintah pertama mendapatkan cadangan untuk perangkat bernama Contoso63-AppVm, lalu menyimpannya dalam $Backup bidang.
+Perintah pertama mendapatkan cadangan untuk perangkat bernama Contoso63-AppVm, lalu menyimpannya dalam variabel $Backup.
 
 Perintah kedua menghapus cadangan dari perangkat bernama Contoso63-AppVm.
-Perintah menggunakan notasi titik standar untuk merujuk ke properti **InstanceId** dari elemen pertama elemen $Backup array.
-Perintah ini menentukan parameter *WaitForComplete,* dan oleh karena itu, perintah akan menunggu hingga operasi selesai, lalu mengembalikan objek **TaskStatusInfo.**
+Perintah menggunakan notasi titik standar untuk merujuk ke properti **InstanceId** elemen pertama array $Backup.
+Perintah ini menentukan parameter *WaitForComplete* , dan oleh karena itu, perintah menunggu hingga operasi selesai, lalu mengembalikan objek **TaskStatusInfo** .
 
 ### Contoh 3: Menghapus cadangan pertama untuk perangkat dengan menggunakan saluran
 ```
@@ -82,17 +82,17 @@ StatusCode : OK
 RequestId  : e1753f3bf68e6e44ab719436b5111e41
 ```
 
-Perintah pertama mendapatkan cadangan untuk perangkat bernama Contoso63-AppVm, lalu menyimpannya dalam $Backup bidang.
+Perintah pertama mendapatkan cadangan untuk perangkat bernama Contoso63-AppVm, lalu menyimpannya dalam variabel $Backup.
 
-Perintah kedua melewati objek pertama yang disimpan dalam $Backup array ke cmdlet saat ini.
-Cmdlet tersebut menghapus cadangan itu dari perangkat yang bernama Contoso63-AppVm.
-Perintah ini menentukan parameter *WaitForComplete,* dan oleh karena itu, perintah akan menunggu hingga operasi selesai, lalu mengembalikan objek **TaskStatusInfo.**
+Perintah kedua melewati objek pertama yang disimpan dalam array $Backup ke cmdlet saat ini.
+Cmdlet itu menghapus cadangan dari perangkat bernama Contoso63-AppVm.
+Perintah ini menentukan parameter *WaitForComplete* , dan oleh karena itu, perintah menunggu hingga operasi selesai, lalu mengembalikan objek **TaskStatusInfo** .
 
 ## PARAMETERS
 
-### -Backup
-Menentukan objek **Cadangkan** untuk dihapus.
-Untuk mendapatkan objek **Cadangan,** gunakan cmdlet **Get-AzureStorSimpleDeviceBackup.**
+### -Cadangan
+Menentukan objek **Cadangan** untuk dihapus.
+Untuk mendapatkan objek **Cadangan** , gunakan cmdlet **Get-AzureStorSimpleDeviceBackup** .
 
 ```yaml
 Type: Backup
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceName
-Menentukan nama perangkat StorSimple yang digunakan untuk menghapus cadangan.
+Menentukan nama perangkat StorSimple untuk menghapus cadangan.
 
 ```yaml
 Type: String
@@ -136,8 +136,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Mengindikasikan bahwa cmdlet ini tidak meminta konfirmasi Anda.
+### -Paksa
+Menunjukkan bahwa cmdlet ini tidak meminta konfirmasi kepada Anda.
 
 ```yaml
 Type: SwitchParameter
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -WaitForComplete
-Menunjukkan bahwa cmdlet ini menunggu hingga operasi selesai sebelum mengembalikan kontrol ke Windows PowerShell baru.
+Menunjukkan bahwa cmdlet ini menunggu operasi selesai sebelum mengembalikan kontrol ke konsol Windows PowerShell.
 
 ```yaml
 Type: SwitchParameter
@@ -182,16 +182,16 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Pencadangan
+### Cadangan
 
 ## OUTPUTS
 
 ### TaskStatusInfo, TaskResponse
-Cmdlet ini mengembalikan objek **TaskStatusInfo** jika Anda menentukan parameter *WaitForComplete* Jika tidak menentukan parameter tersebut, parameter tersebut akan mengembalikan objek **TaskResponse.**
+Cmdlet ini mengembalikan objek **TaskStatusInfo** jika Anda menentukan parameter *WaitForComplete* Jika Anda tidak menentukan parameter tersebut, maka akan mengembalikan objek **TaskResponse** .
 
 ## CATATAN
 

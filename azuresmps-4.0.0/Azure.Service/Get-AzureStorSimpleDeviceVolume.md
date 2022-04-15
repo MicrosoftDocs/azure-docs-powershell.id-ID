@@ -4,28 +4,28 @@ ms.assetid: 79EE846E-D5BE-4808-BC6F-E3B16A308AB0
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: abd7d74374df9662b5688f821ecd0b9d5b6abbd4
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428329"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142245557"
 ---
 # Get-AzureStorSimpleDeviceVolume
 
 ## SYNOPSIS
-Dapatkan volume di perangkat.
+Mendapatkan volume di perangkat.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
 ## SYNTAX
 
-### IdentifyByParentObject
+### IdentifiByParentObject
 ```
 Get-AzureStorSimpleDeviceVolume -DeviceName <String> -VolumeContainer <DataContainer>
  [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
 
-### IdentifyByName
+### IdentifikasiByName
 ```
 Get-AzureStorSimpleDeviceVolume -DeviceName <String> -VolumeName <String> [-Profile <AzureSMProfile>]
  [<CommonParameters>]
@@ -47,12 +47,12 @@ Objek yang dikembalikan berisi properti berikut ini:
 - **Nama**
 - **Online**
 - **OperationInProgress**
-- **SizeInBytes**
+- **SizeInByte**
 - **VSN**
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan volume dalam wadah tertentu
+### Contoh 1: Mendapatkan volume dalam wadah tertentu
 ```
 PS C:\>Get-AzureStorSimpleDeviceVolumeContainer -DeviceName "Contoso63-AppVm" -VolumeContainerName "Container03" | Get-AzureStorSimpleDeviceVolume -DeviceName "Contoso63-AppVm"
 InstanceId             : BA-1503262017214433280-ade42af6-dabb-449d-b66b-4f5d06891d4c
@@ -95,11 +95,11 @@ IsMonitoringEnabled    : False
 VSN                    : SS-VOL-2180be94-36f1-473e-a42b-a3ebd2cdb481
 ```
 
-Perintah ini mengambil wadah volume bernama Container03 pada perangkat yang bernama Contoso63-AppVm dengan menggunakan cmdlet **Get-AzureStorSimpleDeviceVolumeContainer.**
-Perintah tersebut menggunakan operator pipeline untuk meneruskan wadah itu ke cmdlet saat ini.
-Cmdlet tersebut mendapatkan semua volume di wadah tersebut untuk perangkat bernama Contoso63-AppVm.
+Perintah ini mendapatkan wadah volume bernama Container03 di perangkat yang bernama Contoso63-AppVm menggunakan cmdlet **Get-AzureStorSimpleDeviceVolumeContainer** .
+Perintah menggunakan operator pipeline untuk meneruskan kontainer tersebut ke cmdlet saat ini.
+Cmdlet itu mendapatkan semua volume dalam wadah tersebut untuk perangkat bernama Contoso63-AppVm.
 
-### Contoh 2: Mendapatkan volume menggunakan namanya
+### Contoh 2: Dapatkan volume menggunakan namanya
 ```
 PS C:\>Get-AzureStorSimpleDeviceVolume -DeviceName "Contoso63-AppVm" -VolumeName "Volume18"
 InstanceId             : SS-VOL-c75e9636-1dcf-43db-92df-3af1ecf3f18a
@@ -116,12 +116,12 @@ IsMonitoringEnabled    : False
 VSN                    : SS-VOL-c75e9636-1dcf-43db-92df-3af1ecf3f18a
 ```
 
-Perintah ini mendapatkan volume yang bernama Volume18 di perangkat bernama Contoso63-AppVm.
+Perintah ini mendapatkan volume bernama Volume18 di perangkat bernama Contoso63-AppVm.
 
 ## PARAMETERS
 
 ### -DeviceName
-Menentukan nama perangkat StorSimple yang digunakan untuk mendapatkan volume.
+Menentukan nama perangkat StorSimple untuk mendapatkan volume.
 
 ```yaml
 Type: String
@@ -151,8 +151,8 @@ Accept wildcard characters: False
 ```
 
 ### -VolumeContainer
-Menentukan wadah volume, sebagai objek **DataContainer,** yang menyertakan volume yang akan masuk.
-Untuk mendapatkan **DataContainer,** gunakan cmdlet **Get-AzureStorSimpleDeviceVolumeContainer.**
+Menentukan wadah volume, sebagai objek **DataContainer** , yang menyertakan volume yang akan didapatkan.
+Untuk mendapatkan **DataContainer**, gunakan cmdlet **Get-AzureStorSimpleDeviceVolumeContainer** .
 
 ```yaml
 Type: DataContainer
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -VolumeName
-Menentukan nama volume yang akan dapatkan.
+Menentukan nama volume yang akan didapatkan.
 
 ```yaml
 Type: String
@@ -182,18 +182,18 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### DataContainer
-Cmdlet ini menerima **objek DataContainer** yang berisi volume yang akan dapatkan.
+Cmdlet ini menerima objek **DataContainer** yang berisi volume yang akan didapatkan.
 
 ## OUTPUTS
 
 ### VirtualDisk, IList\<VirtualDisk\>
-Cmdlet ini mengembalikan objek **VirtualDisk** jika Anda menentukan parameter *VolumeName.*
-Jika Anda menentukan *VolumeContainer,* cmdlet ini mengembalikan **objek IList. \<VirtualDisk\>**
+Cmdlet ini mengembalikan objek **VirtualDisk** jika Anda menentukan parameter *VolumeName* .
+Jika Anda menentukan *VolumeContainer*, cmdlet ini mengembalikan objek **IList\<VirtualDisk\>** .
 
 ## CATATAN
 
@@ -201,7 +201,7 @@ Jika Anda menentukan *VolumeContainer,* cmdlet ini mengembalikan **objek IList. 
 
 [New-AzureStorSimpleDeviceVolume](./New-AzureStorSimpleDeviceVolume.md)
 
-[Remove-AzureStorSimpleDeviceVolume](./Remove-AzureStorSimpleDeviceVolume.md)
+[Hapus-AzureStorSimpleDeviceVolume](./Remove-AzureStorSimpleDeviceVolume.md)
 
 [Set-AzureStorSimpleDeviceVolume](./Set-AzureStorSimpleDeviceVolume.md)
 

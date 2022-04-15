@@ -4,11 +4,11 @@ ms.assetid: 2BDB255A-EFB3-4580-BE95-187008DB208C
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 847a6f088704436b0c8cdb62aa5de27f5429b3cf
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422903"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142245435"
 ---
 # New-AzureDeployment
 
@@ -31,9 +31,9 @@ New-AzureDeployment [-ServiceName] <String> [-Package] <String> [-Configuration]
 ## DESCRIPTION
 Cmdlet **New-AzureDeployment** membuat penyebaran Azure dari layanan yang terdiri dari peran web dan peran pekerja.
 Cmdlet ini membuat penyebaran berdasarkan file paket (.cspkg) dan file konfigurasi layanan (.cscfg).
-Menentukan nama yang unik dalam lingkungan penyebaran.
+Tentukan nama yang unik dalam lingkungan penyebaran.
 
-Gunakan cmdlet **New-AzureVM** untuk membuat penyebaran berdasarkan komputer virtual Azure.
+Gunakan cmdlet **New-AzureVM** untuk membuat penyebaran berdasarkan mesin virtual Azure.
 
 ## EXAMPLES
 
@@ -44,15 +44,15 @@ PS C:\> New-AzureDeployment -ServiceName "ContosoService" -Slot "Production" -Pa
 
 Perintah ini membuat penyebaran produksi berdasarkan paket bernama ContosoPackage.cspkg dan konfigurasi bernama ContosoConfiguration.cscfg.
 Perintah menentukan label untuk penyebaran.
-Nama tidak menentukan nama.
-Cmdlet ini membuat GUID sebagai namanya.
+Ini tidak menentukan nama.
+Cmdlet ini membuat GUID sebagai nama.
 
-### Contoh 2: Membuat penggunaan berdasarkan konfigurasi ekstensi
+### Contoh 2: Membuat penyebaran berdasarkan konfigurasi ekstensi
 ```
 PS C:\> New-AzureDeployment -ServiceName "ContosoService" -Slot "Production" -Package "https://contosostorage.blob.core.windows.net/container06/ContosoPackage.cspkg" -Configuration "C:\packages\ContosoConfiguration.cscfg" -ExtensionConfiguration "C:\packages\ContosoExtensionConfig.cscfg"
 ```
 
-Perintah ini akan membuat penyebaran produksi berdasarkan paket dan konfigurasi.
+Perintah ini membuat penyebaran produksi berdasarkan paket dan konfigurasi.
 Perintah menentukan konfigurasi ekstensi bernama ContosoExtensionConfig.cscfg.
 Cmdlet ini membuat GUID sebagai nama dan label.
 
@@ -88,7 +88,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ExtensionConfiguration
+### -EkstensiKonfigurasi
 Menentukan array objek konfigurasi ekstensi.
 
 ```yaml
@@ -104,16 +104,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -190,8 +190,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 
 ### -Slot
 Menentukan lingkungan tempat cmdlet ini membuat penyebaran.
-Nilai yang valid adalah: Rusa dan Produksi.
+Nilai yang valid adalah: Pementasan dan Produksi.
 Nilai defaultnya adalah Produksi.
 
 ```yaml
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -268,11 +268,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureDeploymentEvent](./Get-AzureDeploymentEvent.md)
 
-[Move-AzureDeployment](./Move-AzureDeployment.md)
+[Pindahkan-AzureDeployment](./Move-AzureDeployment.md)
 
-[New-AzureVM](./New-AzureVM.md)
+[AzureVM baru](./New-AzureVM.md)
 
-[Remove-AzureDeployment](./Remove-AzureDeployment.md)
+[Hapus-AzureDeployment](./Remove-AzureDeployment.md)
 
 [Set-AzureDeployment](./Set-AzureDeployment.md)
 
