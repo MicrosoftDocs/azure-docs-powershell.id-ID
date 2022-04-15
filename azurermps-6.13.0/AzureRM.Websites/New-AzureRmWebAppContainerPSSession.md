@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.websi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/New-AzureRmWebAppContainerPSSession.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/New-AzureRmWebAppContainerPSSession.md
-ms.openlocfilehash: b8aa6fd7fe145a4aa13c662c69a044441160469b82707c24fb1732f8cbeea13c
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 3c5efcd51a8b546acb5fa9b8ed3623c40ddfb1e0
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140863298"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142314169"
 ---
 # New-AzureRmWebAppContainerPSSession
 
 ## SYNOPSIS
-New-AzureRmWebAppContainerPSSession akan membuat Sesi PowerShell jarak jauh baru ke dalam wadah windows yang ditentukan dalam situs atau slot dan grup sumber daya yang ditentukan
+New-AzureRmWebAppContainerPSSession akan membuat Sesi PowerShell jarak jauh baru ke dalam wadah jendela yang ditentukan dalam situs atau slot tertentu dan grup sumber daya tertentu
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -34,7 +34,7 @@ New-AzureRmWebAppContainerPSSession [-Force] [-WebApp] <PSSite> [-DefaultProfile
 ```
 
 ## DESCRIPTION
-New-AzureRmWebAppContainerPSSession akan membuat Sesi PowerShell jarak jauh baru ke dalam wadah windows yang ditentukan dalam situs atau slot dan grup sumber daya yang ditentukan
+New-AzureRmWebAppContainerPSSession akan membuat Sesi PowerShell jarak jauh baru ke dalam wadah jendela yang ditentukan dalam situs atau slot tertentu dan grup sumber daya tertentu
 
 ## EXAMPLES
 
@@ -44,7 +44,7 @@ PS C:\> $s = New-AzureRmWebAppContainerPSSession -ResourceGroupName "Default-Web
 PS C:\> Invoke-Command -Session $s -ScriptBlock{Get-Process}
 ```
 
-Ini akan membuat Sesi PowerShell jarak jauh baru ke dalam aplikasi wadah windows ContosoASP dan memperlihatkan proses yang berjalan pada wadah ContosoASP
+Ini akan membuat Sesi PowerShell jarak jauh baru ke aplikasi kontainer windows ContosoASP dan memperlihatkan proses yang berjalan di kontainer ContosoASP
 
 ## PARAMETERS
 
@@ -63,7 +63,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Buat sesi PowerShell tanpa meminta konfirmasi.
 
 ```yaml
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -169,12 +169,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
-### Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
 ## OUTPUTS
 
 ### System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mixedreality/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/New-AzSpatialAnchorsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/New-AzSpatialAnchorsAccount.md
-ms.openlocfilehash: 78073a87d8eaafa075f5f77918c478d7a364a121
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3cf18ff4d14f7fdfad72dff4598bb7ed1a06588a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140556069"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142319242"
 ---
 # New-AzSpatialAnchorsAccount
 
 ## SYNOPSIS
-Buat Akun Jangkar Spasial
+Membuat Akun Jangkar Spasial
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.mixedreality/new-azspatialanchorsaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzSpatialAnchorsAccount -ResourceGroupName <String> -Name <String> -Location
 ```
 
 ## DESCRIPTION
-Buat Akun Jangkar Spasial baru dalam Langganan, Grup Sumber Daya, dan Kawasan tertentu.
+Buat Akun Jangkar Spasial baru di Langganan, Grup Sumber Daya, dan Kawasan tertentu.
 
 ## EXAMPLES
 
@@ -44,12 +47,12 @@ Name                : example
 Type                : Microsoft.MixedReality/SpatialAnchorsAccounts
 ```
 
-Buat Akun Jangkar Spasis Spasial "contoh" baru di Langganan, Grup Sumber Daya "rg1" dan AS Tengah.
+Buat "contoh" Akun Jangkar Spasial baru dalam Langganan saat ini, Grup Sumber Daya "rg1" dan AS Pusat.
 
 ## PARAMETERS
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -140,12 +143,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

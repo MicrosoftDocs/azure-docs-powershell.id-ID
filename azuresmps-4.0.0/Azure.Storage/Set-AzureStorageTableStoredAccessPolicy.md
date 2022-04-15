@@ -3,17 +3,17 @@ external help file: Microsoft.WindowsAzure.Commands.Storage.dll-Help.xml
 ms.assetid: FF2BFE34-4A12-49F9-9BE5-4084A36BC272
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: e08cf153f89339b5a9b0db0182144936ac2538f6d99956db7bec812273ea9f03
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 5853a46dabf20b147a9b4b4298f6d015f13b85fa
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419193"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142311169"
 ---
 # Set-AzureStorageTableStoredAccessPolicy
 
 ## SYNOPSIS
-Mengatur kebijakan akses tersimpan untuk tabel penyimpanan Azure.
+Mengatur kebijakan akses yang disimpan untuk tabel penyimpanan Azure.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -26,16 +26,16 @@ Set-AzureStorageTableStoredAccessPolicy [-Table] <String> [-Policy] <String> [-P
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureStorageTableStoredAccessPolicy** menetapkan kebijakan akses tersimpan untuk tabel penyimpanan Azure.
+Cmdlet **Set-AzureStorageTableStoredAccessPolicy** mengatur kebijakan akses yang disimpan untuk tabel penyimpanan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur kebijakan akses yang disimpan di tabel dengan izin penuh
+### Contoh 1: Mengatur kebijakan akses yang disimpan dalam tabel dengan izin penuh
 ```
 PS C:\>Set-AzureStorageTableStoredAccessPolicy -Table "MyTable" -Policy "Policy08"
 ```
 
-Perintah ini mengatur kebijakan akses yang bernama Policy08 untuk tabel penyimpanan bernama MyTable.
+Perintah ini mengatur kebijakan akses bernama Policy08 untuk tabel penyimpanan bernama MyTable.
 
 ## PARAMETERS
 
@@ -56,7 +56,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpiryTime
-Menentukan waktu kedaluwarsanya kebijakan akses yang disimpan.
+Menentukan waktu kedaluwarsa kebijakan akses yang disimpan.
 
 ```yaml
 Type: DateTime
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoStartTime
-Menunjukkan bahwa waktu mulai diatur untuk $Null.
+Menunjukkan bahwa waktu mulai diatur ke $Null.
 
 ```yaml
 Type: SwitchParameter
@@ -100,7 +100,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Permission
+### -Izin
 Menentukan tingkat akses publik ke tabel penyimpanan ini.
 
 ```yaml
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Menentukan kebijakan akses tersimpan, yang mencakup izin untuk token SAS ini.
+Menentukan kebijakan akses tersimpan, yang menyertakan izin untuk token SAS ini.
 
 ```yaml
 Type: String
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Menentukan waktu di mana kebijakan akses tersimpan menjadi valid.
+Menentukan waktu di mana kebijakan akses yang disimpan menjadi valid.
 
 ```yaml
 Type: DateTime
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -203,7 +203,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureStorageTableStoredAccessPolicy](./Get-AzureStorageTableStoredAccessPolicy.md)
 
-[New-AzureStorageContext](./New-AzureStorageContext.md)
+[AzureStorageContext baru](./New-AzureStorageContext.md)
 
 [New-AzureStorageTableStoredAccessPolicy](./New-AzureStorageTableStoredAccessPolicy.md)
 

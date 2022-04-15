@@ -4,16 +4,16 @@ ms.assetid: 2480FA03-09C6-4A4F-8DDD-01F6AFF6117E
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 736069a5cd835b7d455402327ef52cd5bebf0e7b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423242"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142313665"
 ---
 # Disable-AzureWebsiteDebug
 
 ## SYNOPSIS
-Menonaktifkan penelusuran kesalahan situs web.
+Menonaktifkan proses debug situs web.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,16 +25,16 @@ Disable-AzureWebsiteDebug [-PassThru] [-Name <String>] [-Slot <String>] [-Profil
 ```
 
 ## DESCRIPTION
-Menonaktifkan penelusuran kesalahan situs web dalam Visual Studio.
+Menonaktifkan proses debug situs web di Visual Studio.
 
 ## EXAMPLES
 
-### -------------- Menonaktifkan proses penelusuran kesalahan --------------
+### -------------- Menonaktifkan -------------- debugging situs web
 ```
 PS C:\> Disable-AzureWebsiteDebug -Name MyWebsite
 ```
 
-Menonaktifkan penelusuran kesalahan situs web pada situs web MyWebsite
+Menonaktifkan proses debug situs web di situs web Situs Saya
 
 ## PARAMETERS
 
@@ -54,7 +54,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -70,8 +70,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -111,14 +111,14 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Enable-AzureWebsiteDe azure](./Enable-AzureWebsiteDebug.md)
+[Enable-AzureWebsiteDebug](./Enable-AzureWebsiteDebug.md)
 
-[Get-AzureWebsite](./Get-AzureWebsite.md)
+[Dapatkan-AzureWebsite](./Get-AzureWebsite.md)
 
-[New-AzureWebsite](./New-AzureWebsite.md)
+[Baru-AzureSitus Web](./New-AzureWebsite.md)
 
-[Remove-AzureWebsite](./Remove-AzureWebsite.md)
+[Hapus-AzureSitus Web](./Remove-AzureWebsite.md)
 
-[Start-AzureWebsite](./Start-AzureWebsite.md)
+[Mulai AzureSitus Web](./Start-AzureWebsite.md)
 
 

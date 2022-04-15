@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/TrafficManager/Commands.TrafficManager2/help/Remove-AzureRmTrafficManagerCustomHeaderFromEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/TrafficManager/Commands.TrafficManager2/help/Remove-AzureRmTrafficManagerCustomHeaderFromEndpoint.md
 ms.openlocfilehash: 452e252b7bf9368ea89e81f2d37fd5a80ab079b8
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426563"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142314265"
 ---
 # Remove-AzureRmTrafficManagerCustomHeaderFromEndpoint
 
@@ -29,11 +29,11 @@ Remove-AzureRmTrafficManagerCustomHeaderFromEndpoint -Name <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmTrafficManagerCustomHeaderFromEndpoint** menghapus informasi header kustom dari objek titik akhir Azure Traffic Manager lokal.
-Anda dapat memperoleh titik akhir menggunakan cmdlet New-AzureRmTrafficManagerEndpoint Get-AzureRmTrafficManagerEndpoint baru.
+Cmdlet **Remove-AzureRmTrafficManagerCustomHeaderFromEndpoint** menghapus informasi header kustom dari objek titik akhir lokal Azure Traffic Manager.
+Anda bisa mendapatkan titik akhir dengan menggunakan cmdlet New-AzureRmTrafficManagerEndpoint atau Get-AzureRmTrafficManagerEndpoint.
 
 Cmdlet ini beroperasi pada objek titik akhir lokal.
-Lakukan perubahan anda ke titik akhir Traffic Manager dengan menggunakan cmdlet Set-AzureRmTrafficManagerEndpoint.
+Lakukan perubahan anda ke titik akhir untuk Traffic Manager dengan menggunakan cmdlet Set-AzureRmTrafficManagerEndpoint.
 
 ## EXAMPLES
 
@@ -44,14 +44,14 @@ PS C:\> Remove-AzureRmTrafficManagerCustomHeaderFromEndpoint -TrafficManagerEndp
 PS C:\> Set-AzureRmTrafficManagerEndpoint -TrafficManagerEndpoint $TrafficManagerEndpoint
 ```
 
-Perintah pertama mendapatkan titik akhir Azure yang bernama contoso dari profil yang bernama ContosoProfile dalam grup sumber daya yang bernama ResourceGroup11, lalu menyimpan objek tersebut dalam $TrafficManagerEndpoint sumber daya.
+Perintah pertama mendapatkan titik akhir Azure bernama contoso dari profil bernama ContosoProfile dalam grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut dalam variabel $TrafficManagerEndpoint.
 Perintah kedua menghapus informasi header kustom dari titik akhir yang disimpan di $TrafficManagerEndpoint.
-Perintah terakhir memperbarui titik akhir di Traffic Manager sesuai dengan nilai lokal dalam $TrafficManagerEndpoint.
+Perintah terakhir memperbarui titik akhir di Traffic Manager agar sesuai dengan nilai lokal dalam $TrafficManagerEndpoint.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ### -TrafficManagerEndpoint
 Menentukan objek **TrafficManagerEndpoint** lokal.
 Cmdlet ini mengubah objek lokal ini.
-Untuk mendapatkan objek **TrafficManagerEndpoint,** gunakan cmdlet Get-AzureRmTrafficManagerEndpoint atau New-AzureRmTrafficManagerEndpoint cmdlet.
+Untuk mendapatkan objek **TrafficManagerEndpoint** , gunakan cmdlet Get-AzureRmTrafficManagerEndpoint atau New-AzureRmTrafficManagerEndpoint.
 
 ```yaml
 Type: Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerEndpoint
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -128,17 +128,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.Network.TrafficManagerEndpoint
-Cmdlet ini menerima objek **TrafficManagerEndpoint** ke cmdlet ini.
+Cmdlet ini menerima objek **TrafficManagerEndpoint** untuk cmdlet ini.
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Network.TrafficManagerEndpoint
-Cmdlet ini mengembalikan objek TrafficManagerEndpoint yang diubah.
+Cmdlet ini mengembalikan objek TrafficManagerEndpoint yang dimodifikasi.
 
 ## CATATAN
 

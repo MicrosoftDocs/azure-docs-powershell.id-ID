@@ -2,12 +2,12 @@
 external help file: Microsoft.Azure.Commands.Profile.dll-Help.xml
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 93b023f18fce49f9505ea9f688f24af342d50ac7510fa5f02b77b5df66efb173
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: e9b4bb86afd42638714722771a3a88aa5b696785
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419177"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142334005"
 ---
 # Get-AzureRmEnvironment
 
@@ -52,7 +52,7 @@ AzureDataLakeAnalyticsCatalogAndJobEndpointSuffix : azuredatalakeanalytics.net
 AzureKeyVaultServiceEndpointResourceId            : https://vault.azure.net
 ```
 
-Contoh ini menunjukkan cara mendapatkan titik akhir dan metadata untuk lingkungan AzureCloud (default).
+Contoh ini memperlihatkan cara mendapatkan titik akhir dan metadata untuk lingkungan AzureCloud (default).
 
 ### Contoh 2: Mendapatkan lingkungan AzureChinaCloud
 ```
@@ -106,12 +106,12 @@ AzureDataLakeAnalyticsCatalogAndJobEndpointSuffix :
 AzureKeyVaultServiceEndpointResourceId            : https://vault.usgovcloudapi.net
 ```
 
-Contoh ini menunjukkan cara mendapatkan titik akhir dan metadata untuk lingkungan AzureUSGovernment.
+Contoh ini memperlihatkan cara mendapatkan titik akhir dan metadata untuk lingkungan AzureUSGovernment.
 
 ## PARAMETERS
 
 ### -Nama
-Menentukan nama instans Azure yang akan dapatkan.
+Menentukan nama instans Azure yang akan didapatkan.
 
 ```yaml
 Type: String
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -140,7 +140,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Add-AzureRMEnvironment]()
 
-[Remove-AzureRMEnvironment]()
+[Hapus-AzureRMEnvironment]()
 
 [Set-AzureRMEnvironment]()
 
