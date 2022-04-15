@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Start-AzureBatchComputeNodeServiceLogUpload.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Start-AzureBatchComputeNodeServiceLogUpload.md
 ms.openlocfilehash: 8f171b42e3f1e1f087890ec451d5a3ff13cb8c57
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140856026"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142389650"
 ---
 # Start-AzureBatchComputeNodeServiceLogUpload
 
 ## SYNOPSIS
-Upload layanan node menghitung file log ke Azure Storage layanan node.
+Upload file log layanan simpul komputasi ke wadah Azure Storage.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -43,7 +43,7 @@ Start-AzureBatchComputeNodeServiceLogUpload [-ComputeNode] <PSComputeNode> [-Con
 ```
 
 ## DESCRIPTION
-Cmdlet ini mengumpulkan file log layanan Azure Batch dari node perhitungan jika Anda mengalami kesalahan dan ingin meningkatkannya ke dukungan Azure. File log layanan Azure Batch akan dibagikan dengan dukungan Azure untuk membantu dalam masalah penelusuran masalah dengan layanan Batch. 
+Cmdlet ini mengumpulkan file log layanan Azure Batch dari simpul komputasi jika Anda mengalami kesalahan dan ingin meningkatkan ke dukungan Azure. File log layanan Azure Batch harus dibagikan dengan dukungan Azure untuk membantu dalam men-debug masalah dengan layanan Batch. 
 
 ## EXAMPLES
 
@@ -61,7 +61,7 @@ NumberOfFilesUploaded VirtualDirectoryName
                     4 contosobatch-22F48D278AD60CC2/contosopool/tvm-1612030122_1-20180405t234700z/bc3dd583-19a5-4665-aa83-87e4e1237d35
 ```
 
-Upload log layanan node perhitungan ditulis pada atau setelah 1 Januari 2018 tengah malam, yang diperoleh dari node hitung, dengan id pool dari pool tempat node hitung berada, dan menghitung id node.
+Upload log layanan node komputasi yang ditulis pada atau setelah 1 Januari 2018 tengah malam, yang diperoleh dari simpul komputasi, diberikan id pool dari pool tempat simpul komputasi berada, dan id node komputasi.
 
 ### Contoh 2
 
@@ -77,7 +77,7 @@ NumberOfFilesUploaded VirtualDirectoryName
                     2 contosobatch-22F48D278AD60CC2/contosopool/tvm-1612030122_1-20180405t234700z/bc3dd583-19a5-4665-aa83-87e4e1237d35
 ```
 
-Upload log layanan node hitung ditulis pada atau setelah 1 Januari 2018 tengah malam dan sebelum 10 Januari 2018 tengah malam, yang diperoleh dari node perhitungan, id pool yang diberikan dari pool tempat node perhitungan berada, dan menghitung id node.
+Upload log layanan node komputasi yang ditulis pada atau setelah 1 Januari 2018 tengah malam dan sebelum 10 Januari 2018 tengah malam, yang diperoleh dari simpul komputasi, diberikan id kumpulan dari kumpulan tempat simpul komputasi berada, dan id node komputasi.
 
 ### Contoh 3
 
@@ -93,15 +93,15 @@ NumberOfFilesUploaded VirtualDirectoryName
                     2 contosobatch-22F48D278AD60CC2/contosopool/tvm-1612030122_1-20180405t234700z/bc3dd583-19a5-4665-aa83-87e4e1237d35
 ```
 
-Upload layanan node hitung yang ditulis pada atau setelah 1 Januari 2018 tengah malam dan sebelum 10 Januari 2018 tengah malam, yang diperoleh dari objek node perhitungan.
+Upload log layanan node komputasi yang ditulis pada atau setelah 1 Januari 2018 tengah malam dan sebelum 10 Januari 2018 tengah malam, yang diperoleh dari objek simpul komputasi.
 
 ## PARAMETERS
 
 ### -BatchContext
-Contoh BatchAccountContext untuk digunakan ketika berinteraksi dengan layanan Batch.
+Contoh BatchAccountContext untuk digunakan saat berinteraksi dengan layanan Batch.
 Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch.
-Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi.
-Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default.
+Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi.
+Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default.
 Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeNodeId
-Id node perhitungan.
+Id simpul komputasi.
 
 ```yaml
 Type: System.String
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerUrl
-Url kontainer ke Azure Storage.
+Url kontainer untuk Azure Storage.
 
 ```yaml
 Type: System.String
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndTime
-Waktu akhir layanan log yang akan diunggah (opsional).
+Waktu akhir log layanan yang akan diunggah (opsional).
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolId
-Id pool yang berisi node perhitungan.
+Id kumpulan yang berisi simpul komputasi.
 
 ```yaml
 Type: System.String
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Waktu mulai log layanan yang akan diunggah.
+Waktu mulai log layanan untuk diunggah.
 
 ```yaml
 Type: System.DateTime
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

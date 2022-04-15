@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseIndexRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseIndexRecommendation.md
-ms.openlocfilehash: a60a2092d3e86d76f667ee52e01f68f60141ed80
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a3720aeff58b52ac44082cc3cde61861c73651e2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140548782"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142400759"
 ---
 # Get-AzSqlDatabaseIndexRecommendation
 
 ## SYNOPSIS
 Mendapatkan operasi indeks yang direkomendasikan untuk server atau database.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabaseindexrecommendation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,16 +30,16 @@ Get-AzSqlDatabaseIndexRecommendation -ServerName <String> [-DatabaseName <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlDatabaseIndexRecommendation** mendapatkan operasi indeks yang direkomendasikan untuk server Azure SQL Database database.
+Cmdlet **Get-AzSqlDatabaseIndexRecommendation** mendapatkan operasi indeks yang direkomendasikan untuk server atau database Azure SQL Database.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan rekomendasi indeks untuk semua database di server
+### Contoh 1: Dapatkan rekomendasi indeks untuk semua database di server
 ```
 PS C:\>Get-AzSqlDatabaseIndexRecommendation -ResourceGroupName "ResourceGroup01" -ServerName "Server01"
 ```
 
-Perintah ini mengembalikan rekomendasi indeks untuk semua database di server01.
+Perintah ini mengembalikan rekomendasi indeks untuk semua database di server server01.
 
 ### Contoh 2: Mendapatkan rekomendasi indeks untuk database tertentu
 ```
@@ -45,7 +48,7 @@ PS C:\>Get-AzSqlDatabaseIndexRecommendation -ResourceGroupName "ResourceGroup01"
 
 Perintah ini mengembalikan rekomendasi indeks untuk database tertentu.
 
-### Contoh 3: Dapatkan indeks tunggal rekomendasi menurut nama
+### Contoh 3: Mendapatkan rekomendasi indeks tunggal berdasarkan nama
 ```
 PS C:\>Get-AzSqlDatabaseIndexRecommendation -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -IndexRecommendationName "INDEX_NAME"
 ```
@@ -55,7 +58,7 @@ Perintah ini mengembalikan rekomendasi indeks tunggal menurut nama.
 ## PARAMETERS
 
 ### -DatabaseName
-Menentukan nama database di mana cmdlet ini mendapatkan rekomendasi indeks.
+Menentukan nama database tempat cmdlet ini mendapatkan rekomendasi indeks.
 
 ```yaml
 Type: System.String
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -IndexRecommendationName
-Menentukan nama rekomendasi indeks yang mendapatkan cmdlet ini.
+Menentukan nama rekomendasi indeks yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -100,8 +103,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang ditetapkan untuk server.
-Cmdlet ini mendapatkan indeks rekomendasi untuk database yang dihosting oleh server ini.
+Menentukan nama grup sumber daya tempat server ditetapkan.
+Cmdlet ini mendapatkan rekomendasi indeks untuk database yang dihosting oleh server ini.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan server yang menginangi database di mana cmdlet ini mendapatkan rekomendasi indeks.
+Menentukan server yang menghosting database tempat cmdlet ini mendapatkan rekomendasi indeks.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -TableName
-Menentukan nama tabel SQL Azure.
+Menentukan nama tabel Azure SQL.
 
 ```yaml
 Type: System.String
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
