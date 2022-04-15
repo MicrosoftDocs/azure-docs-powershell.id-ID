@@ -3,12 +3,12 @@ external help file: Azs.Fabric.Admin-help.xml
 Module Name: Azs.Fabric.Admin
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 2e00e71e146a3e8b4fc0d7a15e8de65f39a09720370d2bec3acbd3e04830e993
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 88d9fc8456c86f0806313bb0234e145b7f4d727a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418621"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142241965"
 ---
 # Get-AzsLogicalNetwork
 
@@ -23,7 +23,7 @@ Get-AzsLogicalNetwork [-Location <String>] [-ResourceGroupName <String>] [-Filte
  [-Top <Int32>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsLogicalNetwork [-Name] <String> [-Location <String>] [-ResourceGroupName <String>] [<CommonParameters>]
 ```
@@ -43,19 +43,19 @@ Mengembalikan daftar semua jaringan logika di suatu lokasi.
 Get-AzsLogicalNetwork
 ```
 
-Mendapatkan semua jaringan logika di satu lokasi.
+Dapatkan semua jaringan logika di suatu lokasi.
 
 ### CONTOH 2
 ```
 Get-AzsLogicalNetwork -Name "bb6c6f28-bad9-441b-8e62-57d2be255904"
 ```
 
-Dapatkan jaringan logika tertentu pada lokasi berdasarkan nama.
+Dapatkan jaringan logika tertentu di lokasi berdasarkan nama.
 
 ## PARAMETERS
 
 ### -Nama
-Nama jaringan logis.
+Nama jaringan logika.
 
 ```yaml
 Type: String
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

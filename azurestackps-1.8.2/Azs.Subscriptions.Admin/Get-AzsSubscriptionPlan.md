@@ -3,17 +3,17 @@ external help file: Azs.Subscriptions.Admin-help.xml
 Module Name: Azs.Subscriptions.Admin
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 125b955f37effa5ec2b3cbe154ca8dbe4252ace151ef806470b28a2ff6a63084
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: b2cb2886e84b42d499fb04693757cee333458f9b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416929"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142241263"
 ---
 # Get-AzsSubscriptionPlan
 
 ## SYNOPSIS
-Dapatkan kumpulan semua paket perolehan yang bisa diakses oleh langganan.
+Dapatkan kumpulan semua paket yang diperoleh yang memiliki akses ke langganan.
 
 ## SYNTAX
 
@@ -22,7 +22,7 @@ Dapatkan kumpulan semua paket perolehan yang bisa diakses oleh langganan.
 Get-AzsSubscriptionPlan -TargetSubscriptionId <Guid> [-Top <Int32>] [-Skip <Int32>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsSubscriptionPlan -AcquisitionId <Guid> -TargetSubscriptionId <Guid> [<CommonParameters>]
 ```
@@ -33,7 +33,7 @@ Get-AzsSubscriptionPlan -ResourceId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Dapatkan kumpulan semua paket perolehan yang bisa diakses oleh langganan.
+Dapatkan kumpulan semua paket yang diperoleh yang memiliki akses ke langganan.
 
 ## EXAMPLES
 
@@ -42,12 +42,12 @@ Dapatkan kumpulan semua paket perolehan yang bisa diakses oleh langganan.
 Get-AzsSubscriptionPlan -TargetSubscriptionId "c90173b1-de7a-4b1d-8600-b832b0e65946"
 ```
 
-Dapatkan kumpulan semua paket perolehan yang bisa diakses oleh langganan.
+Dapatkan kumpulan semua paket yang diperoleh yang memiliki akses ke langganan.
 
 ## PARAMETERS
 
 ### -AcquisitionId
-Pengidentifikasi akuisisi rencana
+Pengenal akuisisi rencana
 
 ```yaml
 Type: Guid
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

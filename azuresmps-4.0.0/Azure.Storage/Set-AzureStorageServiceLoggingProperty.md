@@ -3,17 +3,17 @@ external help file: Microsoft.WindowsAzure.Commands.Storage.dll-Help.xml
 ms.assetid: 5422429E-C609-4C1F-A021-E2A085B5F74E
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 9acc747e72435e5995745225fad37cbeb7d8d906294899295f697426d523a212
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: fab9fb909420faa477e88eadafdf5f6289f400fc
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419195"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142242745"
 ---
 # Set-AzureStorageServiceLoggingProperty
 
 ## SYNOPSIS
-Memodifikasi pembuatan log untuk Azure Storage tambahan.
+Mengubah pembuatan log untuk layanan Azure Storage.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -26,7 +26,7 @@ Set-AzureStorageServiceLoggingProperty [-ServiceType] <StorageServiceType> [-Ver
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureStorageServiceLoggingProperty** mengubah pembuatan log untuk Azure Storage baru.
+Cmdlet **Set-AzureStorageServiceLoggingProperty** mengubah pembuatan log untuk layanan Azure Storage.
 
 ## EXAMPLES
 
@@ -35,9 +35,9 @@ Cmdlet **Set-AzureStorageServiceLoggingProperty** mengubah pembuatan log untuk A
 C:\PS>Set-AzureStorageServiceLoggingProperty -ServiceType Blob -LoggingOperations Read,Write -PassThru -RetentionDays 10 -Version 1.0
 ```
 
-Perintah ini memodifikasi pembuatan log versi 1.0 untuk penyimpanan blob agar menyertakan operasi baca dan tulis.
-Azure Storage log layanan mempertahankan entri selama 10 hari.
-Karena perintah ini menentukan parameter *PassThru,* perintah menampilkan properti pembuatan log yang diubah.
+Perintah ini mengubah pembuatan log versi 1.0 untuk penyimpanan blob untuk menyertakan operasi baca dan tulis.
+Azure Storage pembuatan log layanan mempertahankan entri selama 10 hari.
+Karena perintah ini menentukan parameter *PassThru* , perintah menampilkan properti pembuatan log yang diubah.
 
 ## PARAMETERS
 
@@ -58,14 +58,14 @@ Accept wildcard characters: False
 ```
 
 ### -LoggingOperations
-Menentukan larik Azure Storage layanan.
-Azure Storage ini mencatat operasi yang ditentukan parameter ini.
+Menentukan array operasi layanan Azure Storage.
+Azure Storage layanan mencatat operasi yang ditentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
-- Tidak ada
-- Baca
+- Tidak
+- Membaca
 - Menulis
-- Hapus
+- Menghapus
 - Semua
 
 ```yaml
@@ -114,12 +114,12 @@ Accept wildcard characters: False
 
 ### -ServiceType
 Menentukan tipe layanan penyimpanan.
-Cmdlet ini memodifikasi properti pembuatan log untuk tipe layanan yang ditentukan oleh parameter ini.
+Cmdlet ini mengubah properti pembuatan log untuk tipe layanan yang ditentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
-- Blob 
-- Tabel
-- Antrean
+- Gumpalan 
+- Meja
+- Antrian
 - File
 
 Nilai File saat ini tidak didukung.
@@ -138,8 +138,8 @@ Accept wildcard characters: False
 ```
 
 ### -Versi
-Menentukan versi pembuatan log Azure Storage.
-Nilai default adalah 1,0.
+Menentukan versi pembuatan log layanan Azure Storage.
+Nilai defaultnya adalah 1,0.
 
 ```yaml
 Type: Double
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -166,6 +166,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureStorageServiceLoggingProperty](./Get-AzureStorageServiceLoggingProperty.md)
 
-[New-AzureStorageContext](./New-AzureStorageContext.md)
+[AzureStorageContext baru](./New-AzureStorageContext.md)
 
 

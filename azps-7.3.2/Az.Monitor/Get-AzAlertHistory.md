@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azal
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzAlertHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzAlertHistory.md
-ms.openlocfilehash: c03ccba043eeabf26095dfdb0d391b000abed642
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e989f63f2d32a4e6ac33425c869a1c6c81ba3a94
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140401890"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142214245"
 ---
 # Get-AzAlertHistory
 
 ## SYNOPSIS
-Mendapatkan riwayat aturan pemberitahuan klasik.
+Mendapatkan riwayat aturan peringatan klasik.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azalerthistory) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Get-AzAlertHistory [-ResourceId <String>] [-StartTime <DateTime>] [-EndTime <Dat
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzAlertHistory** mendapatkan riwayat aturan pemberitahuan klasik saat aturan tersebut diaktifkan, dinonaktifkan, dipecat, diatasi, dan sebagainya.
+Cmdlet **Get-AzAlertHistory** mendapatkan riwayat aturan peringatan klasik saat diaktifkan, dinonaktifkan, dipecat, diatasi, dan lain sebagainya.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan riwayat pemberitahuan
+### Contoh 1: Dapatkan riwayat peringatan
 ```
 PS C:\>Get-AzAlertHistory -StartTime 2015-02-11T11:00:00 -EndTime 2015-02-11T12:00:00 -DetailedOutput
 Authorization        :
@@ -170,9 +173,9 @@ SubscriptionId       : b93fb07a-6f93-30be-bf3e-4f0deca15f4f
 SubStatus            :
 ```
 
-Perintah ini mendapatkan riwayat pemberitahuan untuk jangka waktu yang ditentukan bagi langganan saat ini.
+Perintah ini mendapatkan riwayat peringatan untuk jangka waktu tertentu untuk langganan saat ini.
 
-### Contoh 2: Dapatkan riwayat pemberitahuan untuk sumber daya yang ditentukan
+### Contoh 2: Mendapatkan riwayat peringatan untuk sumber daya tertentu
 ```
 PS C:\>Get-AzAlertHistory -StartTime 2015-02-11T11:00:00 -EndTime 2015-02-11T12:00:00 -ResourceId "/subscriptions/b93fb07a-6f93-30be-bf3e-4f0deca15f4f/resourceGroups/Default-Web-EastUS/providers/Microsoft.Insights/alertrules/checkrule3-4b135401-a30c-4224-ae21-fa53a5bd253d" -DetailedOutput
 
@@ -268,11 +271,11 @@ SubscriptionId       : b93fb07a-6f93-30be-bf3e-4f0deca15f4f
 SubStatus            :
 ```
 
-Perintah ini mendapatkan pemberitahuan kejadian terkait aturan untuk sumber daya yang ditentukan.
+Perintah ini mendapatkan pemberitahuan kejadian terkait aturan untuk sumber daya tertentu.
 
 ## PARAMETERS
 
-### -Caller
+### -Penelepon
 Menentukan penelepon.
 
 ```yaml
@@ -288,7 +291,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -302,7 +305,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DetailOutput
+### -DetailedOutput
 Menampilkan detail lengkap dalam output.
 
 ```yaml
@@ -334,7 +337,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan ID sumber daya yang terkait dengan aturan.
+Menentukan ID sumber daya yang dikaitkan dengan aturan.
 
 ```yaml
 Type: System.String
@@ -380,13 +383,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.DateTime, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.DateTime, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### System.Management.Automation.SwitchParameter
 
@@ -404,6 +407,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzAlertRule](./Get-AzAlertRule.md)
 
-[Remove-AzAlertRule](./Remove-AzAlertRule.md)
+[Hapus-AzAlertRule](./Remove-AzAlertRule.md)
 
 

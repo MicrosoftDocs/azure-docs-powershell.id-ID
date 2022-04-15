@@ -2,12 +2,12 @@
 external help file: Microsoft.Azure.Commands.Profile.dll-Help.xml
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 76b5e3abb032ae273aaba75330a1636d584c8a417fef31bbadf31a98919bfc4e
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 63b59b61ce99c0fa9c44c46d3385749205b3af10
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419173"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142242428"
 ---
 # Send-Feedback
 
@@ -32,13 +32,13 @@ Send-Feedback
 PS C:\> {{ Add example code here }}
 ```
 
-{{ Tambahkan contoh deskripsi di sini }}
+{{ Tambahkan deskripsi contoh di sini }}
 
 ## PARAMETERS
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 
 ## OUTPUTS

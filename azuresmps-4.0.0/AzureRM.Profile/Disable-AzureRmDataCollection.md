@@ -2,17 +2,17 @@
 external help file: Microsoft.Azure.Commands.Profile.dll-Help.xml
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: b6d907230a5bf7fb19e2b99ffa6f7fc0b24346a469e3cebb28773503203d3956
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: d0aaa631bcaade8fef0454adf9c2429d0e1563e8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417642"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142242829"
 ---
 # Disable-AzureRmDataCollection
 
 ## SYNOPSIS
-Memilih untuk tidak mengumpulkan data untuk meningkatkan cmdlet AzurePowerShell. Data tidak dikumpulkan kecuali Anda memilih untuk ikut serta secara eksplisit.
+Menolak pengumpulan data untuk menyempurnakan cmdlet AzurePowerShell. Data tidak dikumpulkan kecuali Anda memilih untuk ikut serta secara eksplisit.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -23,13 +23,13 @@ Disable-AzureRmDataCollection [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Anda dapat meningkatkan pengalaman menggunakan Microsoft Cloud dan Azure PowerShell dengan memilih ikut serta dalam pengumpulan data.
-Azure PowerShell tidak mengumpulkan data tanpa persetujuan Anda - Anda harus secara eksplisit memilih dengan menjalankan Enable-AzureRmDataCollection, atau dengan menjawab ya ketika Azure PowerShell meminta Anda tentang mengumpulkan data saat pertama kali Anda menjalankan cmdlet.
-Microsoft menggabungkan data yang dikumpulkan untuk mengidentifikasi pola penggunaan, guna mengidentifikasi masalah-masalah umum dan untuk meningkatkan pengalaman penggunaan Azure PowerShell.
-Microsoft Azure PowerShell tidak mengumpulkan data pribadi apa pun, atau informasi pengenal pribadi apa pun.
+Anda dapat meningkatkan pengalaman menggunakan Microsoft Cloud dan Azure PowerShell dengan memilih pengumpulan data.
+Azure PowerShell tidak mengumpulkan data tanpa persetujuan Anda - Anda harus secara eksplisit ikut serta dengan menjalankan Enable-AzureRmDataCollection, atau dengan menjawab ya ketika Azure PowerShell meminta Anda mengumpulkan data pada kali pertama Anda menjalankan cmdlet.
+Microsoft menggabungkan data yang dikumpulkan untuk mengidentifikasi pola penggunaan, mengidentifikasi masalah umum dan meningkatkan pengalaman menggunakan Azure PowerShell.
+Microsoft Azure PowerShell tidak mengumpulkan data pribadi apa pun, atau informasi pribadi apa pun.
 
-Jalankan cmdlet Disable-AzureRMDataCollection cmdlet untuk menonaktifkan pengumpulan data bagi pengguna saat ini.
-Tindakan ini akan mencegah pengguna saat ini ditanya tentang pengumpulan data saat cmdlet pertama kali dijalankan.
+Jalankan cmdlet Disable-AzureRMDataCollection untuk menonaktifkan pengumpulan data bagi pengguna saat ini.
+Ini akan mencegah pengguna saat ini diminta tentang pengumpulan data pada cmdlet pertama kali dijalankan.
 
 Untuk mengaktifkan pengumpulan data bagi pengguna saat ini, jalankan cmdlet Enable-AzureRmDataCollection.
 
@@ -45,7 +45,7 @@ Contoh ini memperlihatkan cara menonaktifkan pengumpulan data untuk pengguna saa
 ## PARAMETERS
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -75,13 +75,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
-### Tidak ada
+### Tidak
 
 ## CATATAN
 

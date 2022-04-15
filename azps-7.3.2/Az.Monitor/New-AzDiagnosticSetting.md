@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzDiagnosticSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzDiagnosticSetting.md
-ms.openlocfilehash: 6df60a66be7bfb62ba9daa25b20aa3d028760bc9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d9ed0f19c8ac71ed116f9d608f25e990c7d0344c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140008181"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142214119"
 ---
 # New-AzDiagnosticSetting
 
 ## SYNOPSIS
 Buat objek PSServiceDiagnosticSettings.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azdiagnosticsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ New-AzDiagnosticSetting -Name <String> [-StorageAccountId <String>] [-ServiceBus
 
 ## DESCRIPTION
 Buat objek PSServiceDiagnosticSettings.
-Ini bisa digunakan sebagai parameter `-InputObject` untuk `Set-AzDiagnosticSetting`
+Ini dapat digunakan sebagai parameter `-InputObject` untuk `Set-AzDiagnosticSetting`
 
 ## EXAMPLES
 
@@ -83,7 +86,7 @@ Buat objek PSServiceDiagnosticSettings. Dan buat pengaturan diagnostik untuk sum
 ## PARAMETERS
 
 ### -DedicatedLogAnalyticsDestinationType
-Nilai yang menunjukkan apakah akan mengekspor (ke ODS) ke sumber daya tertentu (jika ada) atau ke AzureDiagnostics (default, tidak ada)
+Nilai yang mengindikasikan apakah akan mengekspor (ke ODS) ke sumber daya tertentu (jika ada) atau ke AzureDiagnostics (default, tidak ada)
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventHubAuthorizationRuleId
-Id aturan hub kejadian
+Id aturan hub acara
 
 ```yaml
 Type: System.String
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 
 ### -Nama
 Nama pengaturan diagnostik.
-Default untuk 'layanan'
+Default ke 'layanan'
 
 ```yaml
 Type: System.String
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceId
-Id sumber daya dari ruang kerja Analitik Log untuk mengirim log/metrik ke
+Id sumber daya ruang kerja Analitik Log untuk mengirim log/metrik ke
 
 ```yaml
 Type: System.String
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -4,16 +4,16 @@ ms.assetid: BB139312-A536-4B61-A005-6CAF02BE1637
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: f93c74e9d7e00087e2145c691e962aff3a61bca7
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419494"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142242957"
 ---
 # New-AzureStorageFileSASToken
 
 ## SYNOPSIS
-Menghasilkan token tanda tangan akses bersama untuk file Storage Anda.
+Menghasilkan token tanda tangan akses bersama untuk file Storage.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -50,14 +50,14 @@ Cmdlet **New-AzureStorageFileSASToken** menghasilkan token tanda tangan akses be
 
 ## EXAMPLES
 
-### Contoh 1: Buat token tanda tangan akses bersama yang memiliki izin file penuh
+### Contoh 1: Membuat token tanda tangan akses bersama yang memiliki izin file penuh
 ```
 PS C:\> New-AzureStorageFileSASToken -ShareName "ContosoShare" -Path "FilePath" -Permission "rwd"
 ```
 
 Perintah ini menghasilkan token tanda tangan akses bersama yang memiliki izin penuh untuk file yang bernama FilePath.
 
-### Contoh 2: Buat token tanda tangan akses bersama yang memiliki batas waktu
+### Contoh 2: Menghasilkan token tanda tangan akses bersama yang memiliki batas waktu
 ```
 PS C:\> $StartTime = Get-Date
 PS C:\> $EndTime = $StartTime.AddHours(2.0)
@@ -65,19 +65,19 @@ PS C:\> New-AzureStorageFileSASToken -ShareName "ContosoShare" -Path "FilePath" 
 ```
 
 Perintah pertama membuat objek **DateTime** menggunakan cmdlet Get-Date.
-Perintah menyimpan waktu saat ini dalam variabel $StartTime baru.
+Perintah menyimpan waktu saat ini dalam variabel $StartTime.
 
-Perintah kedua menambahkan dua jam ke objek $StartTime, lalu menyimpan hasilnya dalam $EndTime variabel.
+Perintah kedua menambahkan dua jam ke objek dalam $StartTime, lalu menyimpan hasilnya dalam variabel $EndTime.
 Objek ini adalah waktu dua jam di masa mendatang.
 
-Perintah ketiga menghasilkan token tanda tangan akses bersama yang memiliki izin tertentu.
-Token ini berlaku pada saat ini.
-Token tersebut tetap berlaku hingga waktu yang disimpan di $EndTime.
+Perintah ketiga menghasilkan token tanda tangan akses bersama yang memiliki izin yang ditentukan.
+Token ini menjadi valid pada saat ini.
+Token tetap berlaku hingga waktu yang disimpan di $EndTime.
 
 ## PARAMETERS
 
 ### -Konteks
-Menentukan Azure Storage konteks.
+Menentukan konteks Azure Storage.
 Untuk mendapatkan konteks, gunakan cmdlet New-AzureStorageContext.
 
 ```yaml
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpiryTime
-Menentukan waktu di mana tanda tangan akses bersama menjadi tidak valid.
+Menentukan waktu ketika tanda tangan akses bersama menjadi tidak valid.
 
 ```yaml
 Type: DateTime
@@ -108,8 +108,8 @@ Accept wildcard characters: False
 ```
 
 ### -File
-Menentukan objek **CloudFile.**
-Anda dapat membuat file awan atau mendapatkannya menggunakan cmdlet Get-AzureStorageFile cmdlet.
+Menentukan objek **CloudFile** .
+Anda dapat membuat file cloud atau mendapatkannya menggunakan cmdlet Get-AzureStorageFile.
 
 ```yaml
 Type: CloudFile
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -FullUri
-Mengindikasikan bahwa cmdlet ini mengembalikan URI blob penuh dan token tanda tangan akses bersama.
+Menunjukkan bahwa cmdlet ini mengembalikan URI blob penuh dan token tanda tangan akses bersama.
 
 ```yaml
 Type: SwitchParameter
@@ -139,8 +139,8 @@ Accept wildcard characters: False
 ```
 
 ### -IPAddressOrRange
-Menentukan alamat IP atau rentang alamat IP untuk menerima permintaan, seperti 168.1.5.65 atau 168.1.5.60-168.1.5.70.
-Rentang bersifat inklusif.
+Menentukan alamat IP atau rentang alamat IP yang menerima permintaan, seperti 168.1.5.65 atau 168.1.5.60-168.1.5.70.
+Rentangnya inklusif.
 
 ```yaml
 Type: String
@@ -154,8 +154,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur file relatif terhadap file yang Storage bersama.
+### -Jalur
+Menentukan jalur file relatif terhadap berbagi Storage.
 
 ```yaml
 Type: String
@@ -169,7 +169,7 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Permission
+### -Izin
 Menentukan izin untuk file Storage.
 
 ```yaml
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Menentukan kebijakan akses yang disimpan untuk file.
+Menentukan kebijakan akses yang disimpan untuk suatu file.
 
 ```yaml
 Type: String
@@ -199,11 +199,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
+### -Protokol
 Menentukan protokol yang diizinkan untuk permintaan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 * HttpsOnly
-* HttpsOrhttp
+* HttpsOrHttp
 
 Nilai defaultnya adalah HttpsOrHttp.
 
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShareName
-Menentukan nama dokumen Storage bersama.
+Menentukan nama berbagi Storage.
 
 ```yaml
 Type: String
@@ -236,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Menentukan waktu validnya tanda tangan akses bersama.
+Menentukan waktu ketika tanda tangan akses bersama menjadi valid.
 
 ```yaml
 Type: DateTime
@@ -251,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -261,6 +261,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureStorageContext](./New-AzureStorageContext.md)
+[AzureStorageContext baru](./New-AzureStorageContext.md)
 
-[New-AzureStorageShareSASToken](./New-AzureStorageShareSASToken.md)
+[AzureStorageshareSASToken baru](./New-AzureStorageShareSASToken.md)

@@ -3,12 +3,12 @@ external help file: Microsoft.WindowsAzure.Commands.Storage.dll-Help.xml
 ms.assetid: 22975A89-CAFF-4F18-8DCE-B695413FBAC7
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: d4cd3cbdf3d0ee432d5d50fba611b700b7eb92d629cf7d2fecfcd40b7aeeacb7
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 0a673366444c7b616e1f8b0ca5407a9791d3c3a9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419207"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142242708"
 ---
 # Remove-AzureStorageQueue
 
@@ -25,11 +25,11 @@ Remove-AzureStorageQueue [-Name] <String> [-Force] [-PassThru] [-Context <IStora
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureStorageQueue** menghapus antrean penyimpanan.
+Cmdlet **Hapus-AzureStorageQueue** menghapus antrean penyimpanan.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus antrean penyimpanan menurut nama
+### Contoh 1: Menghapus antrean penyimpanan menurut nama
 ```
 PS C:\>Remove-AzureStorageQueue "ContosoQueue01"
 ```
@@ -47,7 +47,7 @@ Perintah ini menghapus semua antrean dengan nama yang dimulai dengan Contoso.
 
 ### -Konteks
 Menentukan konteks penyimpanan Azure.
-Untuk mendapatkan konteks penyimpanan, New-AzureStorageContext cmdlet.
+Untuk mendapatkan konteks penyimpanan, cmdlet New-AzureStorageContext.
 
 ```yaml
 Type: IStorageContext
@@ -61,8 +61,8 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: SwitchParameter
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan bahwa cmdlet ini **mengembalikan Boolean** yang mencerminkan keberhasilan operasi.
+Menunjukkan bahwa cmdlet ini mengembalikan **Boolean** yang mencerminkan keberhasilan operasi.
 Secara default, cmdlet ini tidak mengembalikan nilai.
 
 ```yaml
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -149,6 +149,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzureStorageQueue](./Get-AzureStorageQueue.md)
+[Dapatkan-AzureStorageQueue](./Get-AzureStorageQueue.md)
 
-[New-AzureStorageQueue](./New-AzureStorageQueue.md)
+[Antrean AzureStorage Baru](./New-AzureStorageQueue.md)
