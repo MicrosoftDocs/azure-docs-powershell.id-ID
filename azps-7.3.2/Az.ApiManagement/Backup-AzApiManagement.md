@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ba
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Backup-AzApiManagement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Backup-AzApiManagement.md
-ms.openlocfilehash: fd645686f757d7b6c08e84399511880e68588b82
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2c3ee81effca9c618c6639209ddba0646e3c27e0
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140560839"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142295413"
 ---
 # Backup-AzApiManagement
 
 ## SYNOPSIS
-Mencadangkan layanan Manajemen API.
+Mencadangkan layanan API Management.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/backup-azapimanagement) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,12 +30,12 @@ Backup-AzApiManagement -ResourceGroupName <String> -Name <String> -StorageContex
 ```
 
 ## DESCRIPTION
-Cmdlet **Backup-AzApiManagement** mencadangkan instans layanan Manajemen API Azure.
-Cmdlet ini menyimpan cadangan sebagai cadangan Azure Storage blob.
+Cmdlet **Backup-AzApiManagement** mencadangkan instans layanan API Management Azure.
+Cmdlet ini menyimpan cadangan sebagai blob Azure Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Mencadangkan layanan Manajemen API
+### Contoh 1: Mencadangkan layanan API Management
 ```powershell
 New-AzStorageAccount -StorageAccountName "ContosoStorage" -Location $location -ResourceGroupName "ContosoGroup02" -Type Standard_LRS
 $storageKey = (Get-AzStorageAccountKey -ResourceGroupName "ContosoGroup02" -StorageAccountName "ContosoStorage")[0].Value
@@ -40,12 +43,12 @@ $storageContext = New-AzStorageContext -StorageAccountName "ContosoStorage" -Sto
 Backup-AzApiManagement -ResourceGroupName "ContosoGroup02" -Name "ContosoApi" -StorageContext $StorageContext -TargetContainerName "ContosoBackups" -TargetBlobName "ContosoBackup.apimbackup"
 ```
 
-Perintah ini mencadangkan layanan Manajemen API ke penyedia Storage blob.
+Perintah ini mencadangkan layanan API Management ke blob Storage.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -60,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama penyebaran Manajemen API yang mencadangkan cmdlet ini.
+Menentukan nama penyebaran API Management yang dicadangkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengindikasikan bahwa cmdlet ini mengembalikan objek **PsApiManagement yang dicadangkan** , jika operasi berhasil.
+Menunjukkan bahwa cmdlet ini mengembalikan objek **PsApiManagement** yang dicadangkan, jika operasi berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana penyebaran Manajemen API ada.
+Menentukan nama grup sumber daya di mana penyebaran API Management ada.
 
 ```yaml
 Type: System.String
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 
 ### -TargetContainerName
 Menentukan nama wadah blob untuk cadangan.
-Jika wadah tidak ada, cmdlet ini yang membuatnya.
+Jika wadah tidak ada, cmdlet ini akan membuatnya.
 
 ```yaml
 Type: System.String
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -173,7 +176,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzApiManagement](./New-AzApiManagement.md)
 
-[Remove-AzApiManagement](./Remove-AzApiManagement.md)
+[Hapus-AzApiManagement](./Remove-AzApiManagement.md)
 
 [Restore-AzApiManagement](./Restore-AzApiManagement.md)
 

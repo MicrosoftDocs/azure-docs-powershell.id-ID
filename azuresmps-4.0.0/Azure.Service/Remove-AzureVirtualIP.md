@@ -4,11 +4,11 @@ ms.assetid: B107D789-8F66-4D7D-B126-08ACB0364826
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 92455aba5160be2f59fd6828e5080fadc4a2576a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424104"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142277592"
 ---
 # Remove-AzureVirtualIP
 
@@ -26,7 +26,7 @@ Remove-AzureVirtualIP [-ServiceName] <String> [-VirtualIPName] <String> [-Force]
 
 ## DESCRIPTION
 Cmdlet **Remove-AzureVirtualIP** menghapus IP virtual (VIP) dari layanan Azure.
-Operasi hanya berhasil jika IP virtual tidak memiliki titik akhir yang terkait dengan IP virtual tersebut.
+Operasi hanya berhasil jika IP virtual tidak memiliki titik akhir yang terkait dengannya.
 
 ## EXAMPLES
 
@@ -35,12 +35,12 @@ Operasi hanya berhasil jika IP virtual tidak memiliki titik akhir yang terkait d
 PS C:\> Remove-AzureVirtualIP -VirtualIPName "Vip01" -ServiceName "ContosoService03"
 ```
 
-Perintah ini akan menghapus alamat IP virtual dari layanan.
+Perintah ini menghapus alamat IP virtual dari layanan.
 
 ## PARAMETERS
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: SwitchParameter
@@ -55,16 +55,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -94,8 +94,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

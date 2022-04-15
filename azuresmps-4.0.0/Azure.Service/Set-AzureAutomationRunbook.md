@@ -4,11 +4,11 @@ ms.assetid: C24CFC83-3151-452D-A7B9-E78466493474
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: a4bec73b7e877b875c949da7f3e21772102d9f9d
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "132414759"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142277071"
 ---
 # Set-AzureAutomationRunbook
 
@@ -29,7 +29,7 @@ Set-AzureAutomationRunbook -Name <String> [-Description <String>] [-Tags <String
 
 [!INCLUDE [aa-deprecation](../include/aa-deprecation.md)]
 
-Cmdlet **Set-AzureAutomationRunbook** mengubah konfigurasi buku kerja Microsoft Azure Otomatisasi.
+Cmdlet **Set-AzureAutomationRunbook** mengubah konfigurasi runbook Microsoft Azure Automation.
 
 ## EXAMPLES
 
@@ -38,7 +38,7 @@ Cmdlet **Set-AzureAutomationRunbook** mengubah konfigurasi buku kerja Microsoft 
 PS C:\> Set-AzureAutomationRunbook -AutomationAccountName "Contoso17" -Name "MyRunbook" -LogVerbose $True
 ```
 
-Perintah ini memungkinkan pembuatan log verbose untuk pekerjaan dari runbook yang ditentukan dalam akun Otomatisasi bernama Contoso17.
+Perintah ini memungkinkan pembuatan log verbose untuk pekerjaan runbook tertentu di akun Automation bernama Contoso17.
 
 ## PARAMETERS
 
@@ -116,8 +116,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -131,7 +131,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tag
+### -Tags
 Menentukan array tag.
 
 ```yaml
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -161,11 +161,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureAutomationRunbook](./Get-AzureAutomationRunbook.md)
 
-[New-AzureAutomationRunbook](./New-AzureAutomationRunbook.md)
+[AzureAutomationRunbook Baru](./New-AzureAutomationRunbook.md)
 
 [Publish-AzureAutomationRunbook](./Publish-AzureAutomationRunbook.md)
 
-[Remove-AzureAutomationRunbook](./Remove-AzureAutomationRunbook.md)
+[Hapus-AzureAutomationRunbook](./Remove-AzureAutomationRunbook.md)
 
 [Start-AzureAutomationRunbook](./Start-AzureAutomationRunbook.md)
 

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Import-AzureRmAutomationDscConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Import-AzureRmAutomationDscConfiguration.md
 ms.openlocfilehash: 98e7875297e55660615607eef91c4187e8144fa1
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420382"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142283058"
 ---
 # Import-AzureRmAutomationDscConfiguration
 
 ## SYNOPSIS
-Mengimpor konfigurasi DSC ke otomatisasi.
+Mengimpor konfigurasi DSC ke Dalam Otomatisasi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,22 +29,22 @@ Import-AzureRmAutomationDscConfiguration -SourcePath <String> [-Tags <IDictionar
 ```
 
 ## DESCRIPTION
-Cmdlet **Import-AzureRmAutomationDscConfiguration** mengimpor konfigurasi APS Desired State Configuration (DSC) ke Azure Automation.
+Cmdlet **Import-AzureRmAutomationDscConfiguration** mengimpor konfigurasi APS Desired State Configuration (DSC) ke dalam Azure Automation.
 Tentukan jalur skrip APS yang berisi konfigurasi DSC tunggal.
 
 ## EXAMPLES
 
-### Contoh 1: Mengimpor konfigurasi DSC ke otomatisasi
+### Contoh 1: Mengimpor konfigurasi DSC ke Dalam Otomatisasi
 ```
 PS C:\>Import-AzureRmAutomationDscConfiguration -AutomationAccountName "Contoso17"-ResourceGroupName "ResourceGroup01" -SourcePath "C:\DSC\client.ps1" -Force
 ```
 
-Perintah ini mengimpor konfigurasi DSC dalam file yang bernama client.ps1 ke akun Otomatisasi yang bernama Contoso17. Perintah menentukan parameter *Paksa.* Jika ada konfigurasi DSC yang sudah ada, perintah ini akan menggantikannya.
+Perintah ini mengimpor konfigurasi DSC dalam file bernama client.ps1 ke akun Otomatisasi bernama Contoso17. Perintah menentukan parameter *Paksa* . Jika ada konfigurasi DSC yang sudah ada, perintah ini akan menggantikannya.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi tempat cmdlet mengimpor konfigurasi DSC.
+Menentukan nama akun Otomatisasi tempat cmdlet ini mengimpor konfigurasi DSC.
 
 ```yaml
 Type: System.String
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -88,8 +88,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Mengindikasikan bahwa cmdlet ini menggantikan konfigurasi DSC yang sudah ada dalam Otomatisasi.
+### -Paksa
+Menunjukkan bahwa cmdlet ini menggantikan konfigurasi DSC yang sudah ada dalam Otomatisasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogVerbose
-Menentukan apakah cmdlet ini mengaktifkan atau menonaktifkan pembuatan log verbose untuk pekerjaan kompilasi konfigurasi DSC ini. Tentukan nilai yang $True mengaktifkan atau menonaktifkan pembuatan log verbose $False untuk menonaktifkannya.
+Menentukan apakah cmdlet ini mengaktifkan atau menonaktifkan pembuatan log verbose untuk pekerjaan kompilasi konfigurasi DSC ini. Tentukan nilai $True untuk mengaktifkan atau $False pembuatan log secara verbose untuk menonaktifkannya.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -118,8 +118,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Published
-Mengindikasikan bahwa cmdlet ini mengimpor konfigurasi DSC dalam status yang diterbitkan.
+### -Dipublikasikan
+Menunjukkan bahwa cmdlet ini mengimpor konfigurasi DSC dalam status yang diterbitkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini mengimpor konfigurasi DSC.
+Menentukan nama grup sumber daya tempat cmdlet ini mengimpor konfigurasi DSC.
 
 ```yaml
 Type: System.String
@@ -163,7 +163,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Tag
+### -Tags
 Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -218,7 +218,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.IDictionary
 
-### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 
@@ -228,6 +228,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Export-AzureRmAutomationDscConfiguration](./Export-AzureRmAutomationDscConfiguration.md)
+[Ekspor-AzureRmAutomationDscConfiguration](./Export-AzureRmAutomationDscConfiguration.md)
 
 [Get-AzureRmAutomationDscConfiguration](./Get-AzureRmAutomationDscConfiguration.md)

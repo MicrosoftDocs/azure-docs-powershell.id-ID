@@ -4,16 +4,16 @@ ms.assetid: 7259C717-250C-454A-B0DF-738B70747FF8
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 70ce9c68095544b86ad3a14ee245bd1a841580a6
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "132414753"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142276892"
 ---
 # Set-AzureLoadBalancedEndpoint
 
 ## SYNOPSIS
-Mengubah semua titik akhir dalam penyeimbang muat dalam layanan Azure.
+Mengubah semua titik akhir dalam penyeimbang beban yang diatur dalam layanan Azure.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -49,29 +49,29 @@ Set-AzureLoadBalancedEndpoint -LBSetName <String> [-Protocol <String>] [-LocalPo
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureLoadBalancedEndpoint** mengubah semua titik akhir dalam kumpulan keseimbangan muat dalam layanan Azure.
+Cmdlet **Set-AzureLoadBalancedEndpoint** mengubah semua titik akhir dalam kumpulan load balancer dalam layanan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Ubah titik akhir dalam kumpulan penyeimbang muat
+### Contoh 1: Mengubah titik akhir dalam kumpulan penyeimbang beban
 ```
 PS C:\> Set-AzureLoadBalancedEndpoint -ServiceName "ContosoService" -LBSetName "LBSet01" -Protocol "TCP" -LocalPort 80 -ProbeProtocolTCP -ProbePort 8080
 ```
 
-Perintah ini mengubah semua titik akhir dalam set penyeimbang muat bernama LBSet01 untuk menggunakan protokol TCP dan port pribadi 80.
-Perintah mengatur port penyeimbang muat untuk menggunakan protokol TCP pada port 8080.
+Perintah ini mengubah semua titik akhir dalam kumpulan load balancer bernama LBSet01 untuk menggunakan protokol TCP dan port privat 80.
+Perintah mengatur probe load balancer untuk menggunakan protokol TCP pada port 8080.
 
-### Contoh 2: Menentukan IP virtual berbeda
+### Contoh 2: Tentukan IP virtual yang berbeda
 ```
 PS C:\> Set-AzureLoadBalancedEndpoint -ServiceName "ContosoService" -LBSetName "LBSet02" -VirtualIPName "Vip01"
 ```
 
-Perintah ini mengubah penyeimbang muat yang mengatur nama penyeimbang muat untuk menggunakan IP virtual bernama Vip01.
+Perintah ini mengubah load balancer yang memiliki nama set load balancer untuk menggunakan IP virtual bernama Vip01.
 
 ## PARAMETERS
 
 ### -ACL
-Menentukan objek konfigurasi daftar kontrol akses (ACL, Access Control List) yang diterapkan cmdlet ini ke titik akhir.
+Menentukan objek konfigurasi daftar kontrol akses (ACL) yang diterapkan cmdlet ini ke titik akhir.
 
 ```yaml
 Type: NetworkAclObject
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 
 ### -DirectServerReturn
 Menentukan apakah cmdlet ini mengaktifkan pengembalian server langsung.
-Tentukan $True untuk mengaktifkan, atau $False menonaktifkannya.
+Tentukan $True untuk diaktifkan, atau $False untuk dinonaktifkan.
 
 ```yaml
 Type: Boolean
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdleTimeoutInMinutes
-Menentukan periode waktu habis tcp diam, dalam menit, untuk titik akhir.
+Menentukan periode waktu habis diam TCP, dalam menit, untuk titik akhir.
 
 ```yaml
 Type: Int32
@@ -117,16 +117,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -InternalLoadBalancerName
-Menentukan nama penyeimbang muat internal yang dimuat cmdlet ini dalam konfigurasi.
+Menentukan nama penyeimbang muatan internal yang disertakan cmdlet ini dalam konfigurasi.
 
 ```yaml
 Type: String
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -LBSetName
-Menentukan nama penyeimbang muat yang diperbarui cmdlet ini.
+Menentukan nama kumpulan penyeimbang muat yang diperbarui cmdlet ini.
 
 ```yaml
 Type: String
@@ -186,17 +186,17 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerDistribution
-Menentukan distribusi algoritma penyeimbang muat.
-Nilai valid adalah: 
+Menentukan algoritma distribusi penyeimbang beban.
+Nilai yang valid adalah: 
 
 - sourceIP.
-A two tuple affinity: Source IP, Destination IP 
+Affinity dua rangkap: IP Sumber, IP Tujuan 
 - sourceIPProtocol.
-Tiga daftar alamat: IP Sumber, IP Tujuan, Protokol 
-- tidak ada.
-Lima daftar alamat: IP Sumber, Port Sumber, IP Tujuan, Port Tujuan, Port Tujuan, Protokol 
+Affinity tiga rangkap: IP Sumber, IP Tujuan, Protokol 
+- Tidak.
+Affinity five tuple: Source IP, Source Port, Destination IP, Destination Port, Protocol 
 
-Nilai default adalah tidak ada.
+Nilai default tidak ada.
 
 ```yaml
 Type: String
@@ -211,8 +211,8 @@ Accept wildcard characters: False
 ```
 
 ### -LocalPort
-Menentukan port lokal, privat yang digunakan titik akhir ini.
-Aplikasi di komputer virtual mendengarkan pada port ini untuk permintaan input layanan untuk titik akhir ini.
+Menentukan port lokal, privat, yang digunakan titik akhir ini.
+Aplikasi di mesin virtual mendengarkan port ini untuk permintaan input layanan untuk titik akhir ini.
 
 ```yaml
 Type: Int32
@@ -226,8 +226,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -AllahIntervalInSeconds
-Menentukan interval polling belanda, dalam detik, untuk titik akhir.
+### -ProbeIntervalInSeconds
+Menentukan interval polling probe, dalam detik, untuk titik akhir.
 
 ```yaml
 Type: Int32
@@ -241,8 +241,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur relatif dari Http Http Path.
+### -ProbePath
+Menentukan jalur relatif dari Probe HTTP.
 
 ```yaml
 Type: String
@@ -256,8 +256,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SportPort
-Menentukan port yang digunakan penyiimbang muat port.
+### -ProbePort
+Menentukan port yang digunakan oleh penyeimbang muatan.
 
 ```yaml
 Type: Int32
@@ -271,8 +271,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Https://https
-Menentukan bahwa titik akhir penyeimbang muat menggunakan Http Data.
+### -ProbeProtocolHTTP
+Menentukan bahwa titik akhir penyeimbang muatan menggunakan Probe HTTP.
 
 ```yaml
 Type: SwitchParameter
@@ -286,8 +286,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -LagaProtocolTCP
-Menentukan bahwa titik akhir penyeimbang muat menggunakan Tcp Tcp.
+### -ProbeProtocolTCP
+Menentukan bahwa titik akhir load balancer menggunakan Probe TCP.
 
 ```yaml
 Type: SwitchParameter
@@ -301,8 +301,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -AmanTimeoutInSeconds
-Menentukan waktu pemungutan suara hanya dalam hitungan detik.
+### -ProbeTimeoutInSeconds
+Menentukan waktu polling probe dalam hitungan detik.
 
 ```yaml
 Type: Int32
@@ -317,8 +317,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -332,9 +332,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
+### -Protokol
 Menentukan protokol titik akhir.
-Nilai valid adalah: 
+Nilai yang valid adalah: 
 
 - TCP 
 - UDP
@@ -368,7 +368,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Menentukan nama layanan Azure yang berisi titik akhir yang dimodifikasi cmdlet ini.
+Menentukan nama layanan Azure yang berisi titik akhir yang diubah cmdlet ini.
 
 ```yaml
 Type: String
@@ -383,7 +383,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualIPName
-Menentukan nama alamat IP virtual yang terkait dengan Azure ke titik akhir.
+Menentukan nama alamat IP virtual yang dikaitkan Azure ke titik akhir.
 Untuk menambahkan IP virtual ke layanan Anda, gunakan cmdlet **Add-AzureVirtualIP** .
 
 ```yaml
@@ -399,7 +399,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Remove-AzureRMAutomationWebhook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Remove-AzureRMAutomationWebhook.md
 ms.openlocfilehash: 5f90f80c9ec0ebcb506e1a7f7a506a000224c142
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428457"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142283080"
 ---
 # Remove-AzureRmAutomationWebhook
 
 ## SYNOPSIS
-Menghapus webhook dari buku runbook Otomatisasi.
+Menghapus webhook dari runbook Otomatisasi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,24 +29,24 @@ Remove-AzureRmAutomationWebhook [-Name] <String> [-ResourceGroupName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmAutomationWebhook** menghapus webhook dari runbook Otomatisasi Azure.
-Webhook telah dihapus.
+Cmdlet **Remove-AzureRmAutomationWebhook** menghapus webhook dari runbook Azure Automation.
+Webhook dihapus.
 
 ## EXAMPLES
 
-### Contoh 1: Remove a webhook
+### Contoh 1: Menghapus webhook
 ```
 PS C:\>Remove-AzureRmAutomationWebhook -Name "Webhook11" -ResourceGroup "ResourceGroup01" -AutomationAccountName "AutomationAccount01" -Force
 ```
 
-Perintah ini menghapus webhook yang bernama Webhook11 dalam akun Otomatisasi yang bernama AutomationAccount01.
-Perintah menentukan parameter *Paksa.*
-Oleh karena itu, kami tidak meminta konfirmasi Anda.
+Perintah ini menghapus webhook bernama Webhook11 di akun Otomatisasi bernama AutomationAccount01.
+Perintah menentukan parameter *Paksa* .
+Oleh karena itu, tindakan ini tidak meminta konfirmasi kepada Anda.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang darinya cmdlet ini menghapus webhook.
+Menentukan nama akun Otomatisasi tempat cmdlet ini menghapus webhook.
 
 ```yaml
 Type: System.String
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini menghapus webhook.
+Menentukan nama grup sumber daya tempat cmdlet ini menghapus webhook.
 
 ```yaml
 Type: System.String
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -153,7 +153,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmAutomationWebhook](./Get-AzureRMAutomationWebhook.md)
 
-[New-AzureRmAutomationWebhook](./New-AzureRMAutomationWebhook.md)
+[Baru-AzureRmAutomationWebhook](./New-AzureRMAutomationWebhook.md)
 
 [Set-AzureRmAutomationWebhook](./Set-AzureRMAutomationWebhook.md)
 

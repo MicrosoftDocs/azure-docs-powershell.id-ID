@@ -4,16 +4,16 @@ ms.assetid: C19A1DC0-47FA-4687-B81F-315EA04AD4A8
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: e2598f32f9660f662add4acb9950bf9f4d7f49bb
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422468"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142277588"
 ---
 # Remove-AzureVMSqlServerExtension
 
 ## SYNOPSIS
-Menghapus ekstensi SQL Server mesin virtual Azure dari objek mesin virtual.
+Menghapus mesin virtual Azure SQL Server ekstensi dari objek mesin virtual.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,7 +25,7 @@ Remove-AzureVMSqlServerExtension -VM <IPersistentVM> [-Profile <AzureSMProfile>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureVMSqlServerExtension** menghapus ekstensi SQL Server virtual Azure dari objek mesin virtual.
+Cmdlet **Remove-AzureVMSqlServerExtension** menghapus mesin virtual Azure SQL Server ekstensi dari objek mesin virtual.
 
 ## EXAMPLES
 
@@ -37,16 +37,16 @@ Cmdlet **Remove-AzureVMSqlServerExtension** menghapus ekstensi SQL Server virtua
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -76,8 +76,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan objek mesin virtual tetap tempat cmdlet menghapus ekstensi.
+Menentukan objek mesin virtual persisten tempat cmdlet ini menghapus ekstensi.
 
 ```yaml
 Type: IPersistentVM
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Set-AzureRMAutomationRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Set-AzureRMAutomationRunbook.md
 ms.openlocfilehash: 26f3214cf98e43a805aab99eb3ad1b92f289b2bc
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425161"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142283074"
 ---
 # Set-AzureRmAutomationRunbook
 
 ## SYNOPSIS
-Memodifikasi buku runbook.
+Mengubah runbook.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,7 +29,7 @@ Set-AzureRmAutomationRunbook [-Name] <String> [-Description <String>] [-Tag <IDi
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmAutomationRunbook** memodifikasi konfigurasi runbook Azure Automation di APS.
+Cmdlet **Set-AzureRmAutomationRunbook** mengubah konfigurasi runbook Azure Automation di APS.
 
 ## EXAMPLES
 
@@ -38,12 +38,12 @@ Cmdlet **Set-AzureRmAutomationRunbook** memodifikasi konfigurasi runbook Azure A
 PS C:\>Set-AzureRmAutomationRunbook -AutomationAccountName "Contoso17" -Name "Runbook02" -LogVerbose $True -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini memungkinkan pembuatan log verbose untuk pekerjaan dari runbook yang ditentukan dalam akun Azure Automation bernama Contoso17.
+Perintah ini memungkinkan pembuatan log verbose untuk pekerjaan runbook tertentu di akun Azure Automation bernama Contoso17.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi di mana cmdlet ini memodifikasi runbook.
+Menentukan nama akun Otomatisasi di mana cmdlet ini mengubah runbook.
 
 ```yaml
 Type: System.String
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogVerbose
-Menentukan apakah pembuatan log menyertakan informasi detail.
+Menentukan apakah pembuatan log menyertakan informasi mendetail.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama runbook yang akan dimodifikasi cmdlet ini.
+Menentukan nama runbook yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini memodifikasi runbook.
+Menentukan nama grup sumber daya di mana cmdlet ini mengubah runbook.
 
 ```yaml
 Type: System.String
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -171,7 +171,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.IDictionary
 
-### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 
@@ -181,19 +181,19 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Export-AzureRmAutomationRunbook](./Export-AzureRMAutomationRunbook.md)
+[Ekspor-AzureRmAutomationRunbook](./Export-AzureRMAutomationRunbook.md)
 
 [Get-AzureRmAutomationRunbook](./Get-AzureRMAutomationRunbook.md)
 
-[Import-AzureRmAutomationRunbook](./Import-AzureRMAutomationRunbook.md)
+[Impor-AzureRmAutomationRunbook](./Import-AzureRMAutomationRunbook.md)
 
-[New-AzureRmAutomationRunbook](./New-AzureRMAutomationRunbook.md)
+[AzureRmAutomationRunbook baru](./New-AzureRMAutomationRunbook.md)
 
-[New-AzureRmAutomationRunbook](./New-AzureRMAutomationRunbook.md)
+[AzureRmAutomationRunbook baru](./New-AzureRMAutomationRunbook.md)
 
 [Publish-AzureRmAutomationRunbook](./Publish-AzureRMAutomationRunbook.md)
 
-[Remove-AzureRmAutomationRunbook](./Remove-AzureRMAutomationRunbook.md)
+[Hapus-AzureRmAutomationRunbook](./Remove-AzureRMAutomationRunbook.md)
 
 [Start-AzureRmAutomationRunbook](./Start-AzureRMAutomationRunbook.md)
 

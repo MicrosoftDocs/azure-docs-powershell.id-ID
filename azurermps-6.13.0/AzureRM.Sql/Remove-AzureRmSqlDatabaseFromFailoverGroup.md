@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Remove-AzureRmSqlDatabaseFromFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Remove-AzureRmSqlDatabaseFromFailoverGroup.md
 ms.openlocfilehash: a8f147b4e2c8a1f4525585f8622b7195ed759022
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424481"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142280734"
 ---
 # Remove-AzureRmSqlDatabaseFromFailoverGroup
 
 ## SYNOPSIS
-Menghapus satu atau beberapa database dari Azure SQL Database Failover Group.
+Menghapus satu atau beberapa database dari Grup Failover Azure SQL Database.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,8 +29,8 @@ Remove-AzureRmSqlDatabaseFromFailoverGroup [-ServerName] <String> [-FailoverGrou
 ```
 
 ## DESCRIPTION
-Menghapus satu atau beberapa database dari grup Azure SQL Database Failover Group yang ditentukan. Database dan hubungan replikasi akan tetap utuh, tetapi tidak akan dapat diakses lagi melalui titik akhir Failover Group.
-Untuk mendapatkan objek database yang akan digunakan untuk mengisi parameter '-Database', gunakan (misalnya) Get-AzureRmSqlDatabase cmdlet.
+Menghapus satu atau beberapa database dari Grup Failover Azure SQL Database yang ditentukan. Database dan hubungan replikasi dibiarkan tetap utuh, tetapi tidak lagi dapat diakses melalui titik akhir Grup Failover.
+Untuk mendapatkan objek database yang digunakan untuk mengisi parameter '-Database', gunakan (misalnya) cmdlet Get-AzureRmSqlDatabase.
 Server utama Grup Failover harus digunakan untuk menjalankan perintah.
 
 ## EXAMPLES
@@ -40,7 +40,7 @@ Server utama Grup Failover harus digunakan untuk menjalankan perintah.
 PS C:\> $failoverGroup = Get-AzureRmSqlDatabase -ResourceGroupName rg -ServerName primaryserver -DatabaseName db1 | Remove-AzureRmSqlDatabaseFromFailoverGroup -ResourceGroupName rg -ServerName primaryserver -FailoverGroupName fg
 ```
 
-Perintah ini menghapus satu database dari Grup Failover dengan cara pemipaannya.
+Perintah ini menghapus satu database dari Grup Failover dengan memilahnya.
 
 ### Contoh 2
 ```
@@ -48,7 +48,7 @@ PS C:\> $primaryServer = Get-AzureRmSqlServer -ResourceGroupName rg -ServerName 
 PS C:\> $failoverGroup = $primaryServer | Remove-AzureRmSqlDatabaseFromFailoverGroup -FailoverGroupName fg -Database ($primaryServer | Get-AzureRmSqlDatabase)
 ```
 
-Perintah ini akan menghapus semua database dari Grup Failover.
+Perintah ini menghapus semua database dari Grup Failover.
 
 ### Contoh 3
 ```
@@ -57,12 +57,12 @@ PS C:\> $databases = Get-AzureRmSqlElasticPoolDatabase -ResourceGroupName rg -Se
 PS C:\> $failoverGroup = $failoverGroup | Remove-AzureRMSqlDatabaseFromFailoverGroup -Database $databases
 ```
 
-Perintah ini menghapus semua database dalam Kelompok Elastis dari Grup Failover.
+Perintah ini menghapus semua database dalam Kumpulan Elastis dari Grup Failover.
 
 ## PARAMETERS
 
 ### -Database
-Satu atau beberapa database SQL Database Azure di server utama Grup Failover akan dihapus dari Grup Failover.
+Satu atau beberapa Database Azure SQL di server utama Grup Failover yang akan dihapus dari Grup Failover.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel]
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -FailoverGroupName
-Nama grup Azure SQL Database Failover.
+Nama Grup failover Azure SQL Database.
 
 ```yaml
 Type: System.String
@@ -106,8 +106,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Lewati pesan konfirmasi untuk menjalankan tindakan.
+### -Paksa
+Lewati pesan konfirmasi untuk melakukan tindakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama server utama Azure SQL Database Dari Grup Failover.
+Nama Server Azure SQL Database utama Grup Failover.
 
 ```yaml
 Type: System.String
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -208,6 +208,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Switch-AzureRmSqlDatabaseFailoverGroup](./Switch-AzureRmSqlDatabaseFailoverGroup.md)
 
-[Remove-AzureRmSqlDatabaseFailoverGroup](./Remove-AzureRmSqlDatabaseFailoverGroup.md)
+[Hapus-AzureRmSqlDatabaseFailoverGroup](./Remove-AzureRmSqlDatabaseFailoverGroup.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

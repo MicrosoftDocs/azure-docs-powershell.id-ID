@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.analysisservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/New-AzAnalysisServicesFirewallConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/New-AzAnalysisServicesFirewallConfig.md
-ms.openlocfilehash: 652f18cbff85954b13b33a4f7d76901f31ba6910
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ecdad954d6feb2f2193eca21b51dd474b3179323
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140203255"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142295467"
 ---
 # New-AzAnalysisServicesFirewallConfig
 
 ## SYNOPSIS
 Membuat konfigurasi firewall Analysis Services baru 
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.analysisservices/new-azanalysisservicesfirewallconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzAnalysisServicesFirewallConfig [-EnablePowerBIService]
 ```
 
 ## DESCRIPTION
-Opsi New-AzAnalysisServicesFirewallConfig membuat objek konfigurasi firewall baru
+New-AzAnalysisServicesFirewallConfig membuat objek konfigurasi firewall baru
 
 ## EXAMPLES
 
@@ -37,7 +40,7 @@ $rule2 = New-AzAnalysisServicesFirewallRule -FirewallRuleName rule2 -RangeStart 
 $config = New-AzAnalysisServicesFirewallConfig -EnablePowerBIService -FirewallRule $rule1,$rule2
 ```
 
-Membuat objek konfigurasi firewall dengan dua aturan sekaligus mengaktifkan akses dari Power BI lain.
+Membuat objek konfigurasi firewall dengan dua aturan sekaligus mengaktifkan akses dari layanan Power BI.
 
 ## PARAMETERS
 
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnablePowerBIService
-Bendera untuk mengindikasikan apakah firewall mengizinkan akses dari Power BI
+Bendera untuk menunjukkan apakah firewall mengizinkan akses dari Power BI
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -87,11 +90,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.AnalysisServices.Models.PsAzureAnalysisServicesFirewallRule, Microsoft.Azure.PowerShell.Cmdlets.AnalysisServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.AnalysisServices.Models.PsAzureAnalysisServicesFirewallRule, Microsoft.Azure.PowerShell.Cmdlets.AnalysisServices, Version=1.0.0.0, Culture=netral, PublicKeyToken=null]]
 
 ## OUTPUTS
 

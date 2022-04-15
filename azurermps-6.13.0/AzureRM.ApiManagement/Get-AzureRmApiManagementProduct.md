@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Get-AzureRmApiManagementProduct.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Get-AzureRmApiManagementProduct.md
 ms.openlocfilehash: 10b17f60ae100004c23a16f341924de6de11b0eb
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425495"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142283083"
 ---
 # Get-AzureRmApiManagementProduct
 
@@ -51,20 +51,20 @@ PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-De
 PS C:\>Get-AzureRmApiManagementProduct -Context $apimContext
 ```
 
-Perintah ini akan mendapatkan semua produk Manajemen API.
+Perintah ini mendapatkan semua produk API Management.
 
-### Contoh 2: Dapatkan produk menurut ID
+### Contoh 2: Dapatkan produk berdasarkan ID
 ```
 PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzureRmApiManagementProduct -Context $apimContext -ProductId "0123456789"
 ```
 
-Perintah ini mendapatkan produk Manajemen API menurut ID.
+Perintah ini mendapatkan produk API Management berdasarkan ID.
 
 ## PARAMETERS
 
 ### -Konteks
-Menentukan contoh objek **PsApiManagementContext.**
+Menentukan contoh objek **PsApiManagementContext** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -109,8 +109,8 @@ Accept wildcard characters: False
 ```
 
 ### -Judul
-Menentukan judul produk untuk mencari.
-Jika ditentukan, cmdlet akan berusaha mendapatkan produk menurut judul.
+Menentukan judul produk yang akan dicari.
+Jika ditentukan, cmdlet berusaha mendapatkan produk berdasarkan judul.
 
 ```yaml
 Type: System.String
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -141,9 +141,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmApiManagementProduct](./New-AzureRmApiManagementProduct.md)
+[Baru-AzureRmApiManagementProduct](./New-AzureRmApiManagementProduct.md)
 
-[Remove-AzureRmApiManagementProduct](./Remove-AzureRmApiManagementProduct.md)
+[Hapus-AzureRmApiManagementProduct](./Remove-AzureRmApiManagementProduct.md)
 
 [Set-AzureRmApiManagementProduct](./Set-AzureRmApiManagementProduct.md)
 

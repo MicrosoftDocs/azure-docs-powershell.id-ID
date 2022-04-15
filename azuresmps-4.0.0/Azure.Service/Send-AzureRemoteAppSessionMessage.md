@@ -4,11 +4,11 @@ ms.assetid: 6236AD2C-D54D-4013-9977-AD1E6EAC2F21
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 2d868169a3d46b6284b5fcd5220e97c16b85c43d
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423583"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142277627"
 ---
 # Send-AzureRemoteAppSessionMessage
 
@@ -25,7 +25,7 @@ Send-AzureRemoteAppSessionMessage [-CollectionName] <String> [-UserUpn] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Send-AzureRemoteAppSessionMessage** mengirim pesan ke pengguna yang tersambung ke sesi Azure RemoteApp.
+Cmdlet **Send-AzureRemoteAppSessionMessage** mengirim pesan kepada pengguna yang tersambung ke sesi Azure RemoteApp.
 
 ## EXAMPLES
 
@@ -34,7 +34,7 @@ Cmdlet **Send-AzureRemoteAppSessionMessage** mengirim pesan ke pengguna yang ter
 PS C:\> Send-AzureRemoteAppSessionMessage -CollectionName "ContosoApps" -UserUpn "PattiFuller@contoso.com" -Message "The system will be going down for maintenance soon.  Please save your work and close your RemoteApps."
 ```
 
-Perintah ini mengirim pesan ke pengguna yang UPN-nya PattiFuller@contoso.com adalah .
+Perintah ini mengirim pesan kepada pengguna yang UPN-nya .PattiFuller@contoso.com
 
 ## PARAMETERS
 
@@ -69,8 +69,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserUpn
-Menentukan Nama Prinsipal Pengguna (UPN, User Principal Name) pengguna, misalnya, PattiFuller@contoso.com .
+Menentukan Nama Pokok Pengguna (UPN) pengguna, misalnya, PattiFuller@contoso.com.
 
 ```yaml
 Type: String
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

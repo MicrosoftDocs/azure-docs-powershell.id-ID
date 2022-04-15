@@ -4,16 +4,16 @@ ms.assetid: 9CD39F1C-D858-4275-A6DE-10901DC962FE
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 3e4e6b7764a99d0fcc46f839179bcecc838dd609
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422889"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142276673"
 ---
 # Set-AzureVMImageOSDiskConfig
 
 ## SYNOPSIS
-Mengatur properti disk sistem operasi pada gambar mesin virtual.
+Mengatur properti disk sistem operasi pada citra mesin virtual.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -33,7 +33,7 @@ Set-AzureVMImageOSDiskConfig [-DiskConfig] <VirtualMachineImageDiskConfigSet> [[
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureVMImageOSDiskConfig** mengatur properti disk sistem operasi pada gambar komputer virtual.
+Cmdlet **Set-AzureVMImageOSDiskConfig** mengatur properti disk sistem operasi pada gambar mesin virtual.
 
 ## EXAMPLES
 
@@ -45,12 +45,12 @@ PS C:\> $Disk = Set-AzureDataDiskConfig -DiskConfig $Disk -Name "Test" -HostCach
 PS C:\> Update-AzureVMImage -ImageName "Image2" -Label "Test1" -Description "Test1" -DiskConfigSet $Disk;
 ```
 
-Contoh ini mengatur properti disk sistem operasi pada gambar mesin virtual.
+Contoh ini mengatur properti disk sistem operasi pada citra mesin virtual.
 
 ## PARAMETERS
 
 ### -DiskConfig
-Menentukan objek konfigurasi disk yang encapsulates disk sistem operasi dan objek Disk Data.
+Menentukan objek konfigurasi disk yang merangkum disk sistem operasi dan objek Disk Data.
 
 ```yaml
 Type: VirtualMachineImageDiskConfigSet
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ### -HostCaching
 Menentukan atribut cache host untuk disk sistem operasi.
 
-Nilai valid adalah:
+Nilai yang valid adalah:
 
 --ReadOnly --ReadWrite
 
@@ -84,16 +84,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ### -OS
 Menentukan sistem operasi konfigurasi disk.
 
-Nilai valid adalah:
+Nilai yang valid adalah:
 
 - Windows
 - Linux
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ### -OSState
 Menentukan status sistem operasi untuk gambar mesin virtual
 
-Nilai valid adalah:
+Nilai yang valid adalah:
 
 - Generalized
 - Khusus
@@ -180,13 +180,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
-### Microsoft.WindowsAzure.commands.ServiceManagement.Model.VirtualMachineImageDiskConfigSet
+### Microsoft.WindowsAzure.Commands.ServiceManagement.Model.VirtualMachineImageDiskConfigSet
 
 ## CATATAN
 

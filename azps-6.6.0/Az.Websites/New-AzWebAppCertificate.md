@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppCertificate.md
 ms.openlocfilehash: fe5134ba8efd66541e2d2f8d7d57317c6670082c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140274611"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142295701"
 ---
 # New-AzWebAppCertificate
 
 ## SYNOPSIS
-Membuat sertifikat yang dikelola layanan Aplikasi untuk Azure Web App. 
+Membuat sertifikat terkelola layanan Aplikasi untuk Azure Web App. 
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/new-azwebappcertificate) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/new-azwebappcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-AzWebAppCertificate [-ResourceGroupName] <String> [-WebAppName] <String> [-N
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzWebAppCertificate** membuat Sertifikat yang Dikelola Layanan Aplikasi Azure
+Cmdlet **New-AzWebAppCertificate** membuat Sertifikat yang Dikelola Azure App Service
 ## EXAMPLES
 
 ### Contoh 1
@@ -37,21 +37,21 @@ Cmdlet **New-AzWebAppCertificate** membuat Sertifikat yang Dikelola Layanan Apli
 PS C:\> New-AzWebAppCertificate -ResourceGroupName Default-Web-WestUS -WebAppName "ContosoSite" -Name "ContosoCert" -HostName "www.ContosoSite.net"
 ```
 
-Perintah ini membuat Sertifikat Yang Dikelola Layanan Aplikasi untuk WebApp
+Perintah ini membuat Sertifikat terkelola App Service untuk WebApp yang diberikan
 
 ### Contoh 2
 ```powershell
 PS C:\> New-AzWebAppCertificate -ResourceGroupName Default-Web-WestUS -WebAppName "ContosoSite" -Name "ContosoCert" -HostName "www.ContosoSite.net" -Slot "test" -AddCertBinding
 ```
 
-Perintah ini membuat Sertifikat yang Dikelola Layanan Aplikasi dan mengikat ke Slot WebApp yang diberikan.
+Perintah ini membuat Sertifikat terkelola App Service dan mengikat ke Slot WebApp tertentu.
 
 ### Contoh 3
 ```powershell
 PS C:\> New-AzWebAppCertificate -ResourceGroupName Default-Web-WestUS -WebAppName "ContosoSite" -Name "ContosoCert" -HostName "www.ContosoSite.net" -AddBinding
 ```
 
-Perintah ini membuat Sertifikat yang Dikelola Layanan Aplikasi dan mengikatnya ke WebApp yang diberikan.
+Perintah ini membuat Sertifikat terkelola App Service dan mengikat ke WebApp tertentu.
 
 ## PARAMETERS
 
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostName
-Nama host kustom terkait dengan aplikasi/slot web.
+Nama host kustom yang terkait dengan aplikasi/slot web.
 
 ```yaml
 Type: String
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ### -SslState
 Opsi status ssl.
 Gunakan 'SniEnabled' atau 'IpBasedEnabled'.
-Opsi defaultnya adalah 'SniEnabled'.
+Opsi default adalah 'SniEnabled'.
 
 ```yaml
 Type: SslState
@@ -179,11 +179,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

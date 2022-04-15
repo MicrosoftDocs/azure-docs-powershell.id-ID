@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/disable-azak
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Disable-AzAksAddOn.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Disable-AzAksAddOn.md
-ms.openlocfilehash: 003b7a46f5b6c5561510249b0f981cc42f791385
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3097228999cf37e4eec0b7649ff68114bcfbb143
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140395614"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142295629"
 ---
 # Disable-AzAksAddOn
 
 ## SYNOPSIS
-Nonaktifkan add-on untuk aks.
+Nonaktifkan add-on untuk ak.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.aks/disable-azaksaddon) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Disable-AzAksAddOn -ClusterObject <PSKubernetesCluster> [-Name <String[]>]
 ```
 
 ## DESCRIPTION
-Nonaktifkan add-on untuk aks.
+Nonaktifkan add-on untuk ak.
 
 ## EXAMPLES
 
@@ -43,12 +46,12 @@ Nonaktifkan add-on untuk aks.
 Get-AzAks -ResourceGroupName group -Name myCluster | Disable-AzAksAddon -Name HttpApplicationRouting,Monitoring,AzurePolicy,VirtualNode,KubeDashboard
 ```
 
-Menonaktifkan add-on `HttpApplicationRouting`, `Monitoring`, `AzurePolicy`, `VirtualNode` dan `KubeDashboard` untuk tinta.
+Nonaktifkan add-on `HttpApplicationRouting`, `Monitoring`, `AzurePolicy`, `VirtualNode` dan `KubeDashboard` untuk ak.
 
 ## PARAMETERS
 
 ### -ClusterName
-K nodes managed cluster Name.
+Nama kluster terkelola Kubernetes.
 
 ```yaml
 Type: System.String
@@ -63,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterObject
-Objek PSK terverifikasi, biasanya melewati saluran.
+Sebuah objek PSKubernetesCluster, biasanya melewati pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Aks.Models.PSKubernetesCluster
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-K nodes managed cluster Name.
+Nama kluster terkelola Kubernetes.
 
 ```yaml
 Type: System.String[]
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengganti langganan hanya berlaku selama siklus hidup cmdlet saat ini. Langganan tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
+Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,17 +174,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Aks.Models.PSK azuresCluster
+### Microsoft.Azure.Commands.Aks.Models.PSKubernetesCluster
 
 ### System.String
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Aks.Models.PSK azuresCluster
+### Microsoft.Azure.Commands.Aks.Models.PSKubernetesCluster
 
 ## CATATAN
 
