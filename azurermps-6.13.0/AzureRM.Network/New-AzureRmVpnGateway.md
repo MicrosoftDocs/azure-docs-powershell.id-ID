@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmVpnGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmVpnGateway.md
 ms.openlocfilehash: b29b57ea7d7a5182a25cb05ae05e6d1644a5c18b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140860457"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142138093"
 ---
 # New-AzureRmVpnGateway
 
 ## SYNOPSIS
-Membuat skala VPN Gateway.
+Membuat VPN Gateway yang Dapat Diskalakan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -44,11 +44,11 @@ New-AzureRmVpnGateway -ResourceGroupName <String> -Name <String> -VpnGatewayScal
 
 ## DESCRIPTION
 
-New-AzureRmVpnGateway membuat skala VPN Gateway. Ini adalah perangkat lunak yang ditentukan konektivitas untuk situs ke koneksi situs di dalam VirtualHub. 
+New-AzureRmVpnGateway membuat VPN Gateway yang dapat diskalakan. Ini adalah konektivitas yang ditentukan perangkat lunak untuk koneksi situs ke situs di dalam VirtualHub. 
 
-Gateway ini mengubah ukuran dan skala berdasarkan unit skala yang ditentukan dalam cmdlet Set-AzureRmVpnGateway cmdlet. 
+Gateway ini mengubah ukuran dan skala berdasarkan unit skala yang ditentukan dalam cmdlet Set-AzureRmVpnGateway ini. 
 
-Koneksi disetel dari cabang/Situs yang dikenal sebagai Situs VPN ke gateway yang dapat disesuaikan. Setiap koneksi terdiri dari 2 Active-Active sambungan.
+Koneksi disetel dari cabang/Situs yang dikenal sebagai VPNSitus ke gateway yang dapat diskalakan. Setiap koneksi terdiri dari 2 terowongan Active-Active.
 
 VpnGateway akan berada di lokasi yang sama dengan VirtualHub yang dirujuk.
 
@@ -73,12 +73,12 @@ Type                : Microsoft.Network/vpnGateways
 ProvisioningState   : Succeeded
 ```
 
-Langkah di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub di AS Barat dalam grup sumber daya "testRG" di Azure. Gateway VPN akan dibuat setelahnya di Virtual Hub dengan 2 unit skala.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual di AS Barat dalam grup sumber daya "testRG" di Azure. Gateway VPN akan dibuat setelahnya di Hub Virtual dengan 2 unit skala.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable yang mewakili tag sumber daya.
+Sebuah hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualHub
-VirtualHub vpnGateway ini harus dikaitkan dengannya.
+VirtualHub VpnGateway ini perlu dikaitkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualHub
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualHubId
-Id VirtualHub yang digunakan oleh VpnGateway ini harus terkait.
+Id VirtualHub yang perlu dikaitkan dengan VpnGateway ini.
 
 ```yaml
 Type: System.String
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualHubName
-Id VirtualHub yang digunakan oleh VpnGateway ini harus terkait.
+Id VirtualHub yang perlu dikaitkan dengan VpnGateway ini.
 
 ```yaml
 Type: System.String
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnConnection
-Daftar VpnConnections yang harus memiliki VpnGateway ini.
+Daftar VpnConnections yang perlu dimiliki VpnGateway ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVpnConnection[]
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -259,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

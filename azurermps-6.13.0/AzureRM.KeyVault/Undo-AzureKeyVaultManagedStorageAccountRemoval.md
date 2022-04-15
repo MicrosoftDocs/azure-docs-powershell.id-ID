@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.keyva
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/KeyVault/Commands.KeyVault/help/Undo-AzureKeyVaultManagedStorageAccountRemoval.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/KeyVault/Commands.KeyVault/help/Undo-AzureKeyVaultManagedStorageAccountRemoval.md
-ms.openlocfilehash: 279125d8ec4f7b876e7e876c54f16ad8535ab34c143ac88f79c0c01c97e4614b
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: a8e8bb9a4a006c30275f1de959181ad640a04f88
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140868154"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142140415"
 ---
 # Undo-AzureKeyVaultManagedStorageAccountRemoval
 
 ## SYNOPSIS
-Memulihkan akun penyimpanan yang dikelola KeyVault yang sebelumnya dihapus.
+Memulihkan akun penyimpanan terkelola KeyVault yang sebelumnya dihapus.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -35,7 +35,7 @@ Undo-AzureKeyVaultManagedStorageAccountRemoval
 ```
 
 ## DESCRIPTION
-Perintah **Undo-AzureKeyVaultManagedStorageAccountRemoval** memulihkan akun penyimpanan terkelola yang dihapus sebelumnya, asalkan penghapusan sementara diaktifkan untuk vault ini, dan bahwa upaya untuk memulihkan terjadi selama interval pemulihan.
+Perintah **Batalkan-AzureKeyVaultManagedStorageAccountRemoval** memulihkan akun penyimpanan terkelola yang dihapus sebelumnya, asalkan penghapusan lunak diaktifkan untuk kubah ini, dan upaya untuk memulihkan terjadi selama interval pemulihan.
 
 ## EXAMPLES
 
@@ -58,7 +58,7 @@ Updated             : 4/25/2018 1:50:32 AM
 Tags                :
 ```
 
-Urutan perintah ini menentukan apakah akun penyimpanan tertentu ada di vault dalam status dihapus; perintah berikutnya memulihkan akun penyimpanan yang dihapus, mengembalikannya ke status aktif.
+Urutan perintah ini menentukan apakah akun penyimpanan tertentu ada dalam kubah dalam status dihapus; perintah berikutnya memulihkan akun penyimpanan yang dihapus, mengembalikannya ke status aktif.
 
 ## PARAMETERS
 
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 
 ### -Nama
 Nama akun penyimpanan terkelola KeyVault.
-Cmdlet menyusun FQDN target dari nama vault, lingkungan yang saat ini dipilih dan nama akun penyimpanan yang dikelola.
+Cmdlet menyusun FQDN target dari nama kubah, lingkungan yang saat ini dipilih, dan nama akun penyimpanan terkelola.
 
 ```yaml
 Type: System.String
@@ -109,8 +109,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama Vault.
-Cmdlet menyusun FQDN dari vault berdasarkan nama dan lingkungan yang saat ini dipilih.
+Nama kubah.
+Cmdlet menyusun FQDN kubah berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

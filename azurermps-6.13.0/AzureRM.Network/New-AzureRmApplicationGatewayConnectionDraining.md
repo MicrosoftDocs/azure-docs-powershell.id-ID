@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmApplicationGatewayConnectionDraining.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmApplicationGatewayConnectionDraining.md
 ms.openlocfilehash: b0f459d6884c9588036668743edc58333ecc1275
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423323"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142138526"
 ---
 # New-AzureRmApplicationGatewayConnectionDraining
 
 ## SYNOPSIS
-Membuat koneksi baru dengan cepat konfigurasi untuk pengaturan HTTP ujung belakang.
+Membuat konfigurasi pengeringan koneksi baru untuk pengaturan HTTP ujung-belakang.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ New-AzureRmApplicationGatewayConnectionDraining -Enabled <Boolean> -DrainTimeout
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmApplicationGatewayConnectionD cmdlet membuat** koneksi baru yang menghabiskan konfigurasi untuk pengaturan HTTP ujung belakang.
+Cmdlet **New-AzureRmApplicationGatewayConnectionDraining** membuat konfigurasi pengeringan koneksi baru untuk pengaturan HTTP ujung belakang.
 
 ## EXAMPLES
 
@@ -36,12 +36,12 @@ Cmdlet **New-AzureRmApplicationGatewayConnectionD cmdlet membuat** koneksi baru 
 PS C:\> $connectionDraining = New-AzureRmApplicationGatewayConnectionDraining -Enabled $True -DrainTimeoutInSec 42
 ```
 
-Perintah membuat konfigurasi koneksi baru dengan Enabled yang diatur ke True dan DrainTimeoutInSec diatur ke 42 detik dan menyimpannya dalam $connectionDraining.
+Perintah membuat konfigurasi pengurasan koneksi baru dengan Diaktifkan diatur ke True dan DrainTimeoutInSec diatur ke 42 detik dan menyimpannya di $connectionDraining.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -56,7 +56,7 @@ Accept wildcard characters: False
 ```
 
 ### -DrainTimeoutInSec
-Jumlah koneksi detik yang menghabiskan waktu aktif.
+Jumlah detik pengurasan koneksi aktif.
 Nilai yang dapat diterima adalah dari 1 detik hingga 3600 detik.
 
 ```yaml
@@ -71,8 +71,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Enabled
-Apakah penguringan koneksi diaktifkan atau tidak.
+### -Difungsikan
+Apakah koneksi menguras daya diaktifkan atau tidak.
 
 ```yaml
 Type: System.Boolean
@@ -87,23 +87,23 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayConnectionD adaptering
+### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayConnectionDraining
 
 ## CATATAN
 
 ## RELATED LINKS
 
-[Get-AzureRmApplicationGatewayConnectionDsapping](./Get-AzureRmApplicationGatewayConnectionDraining.md)
+[Get-AzureRmApplicationGatewayConnectionDraining](./Get-AzureRmApplicationGatewayConnectionDraining.md)
 
-[Remove-AzureRmApplicationGatewayConnectionDsapping](./Remove-AzureRmApplicationGatewayConnectionDraining.md)
+[Remove-AzureRmApplicationGatewayConnectionDraining](./Remove-AzureRmApplicationGatewayConnectionDraining.md)
 
-[Set-AzureRmApplicationGatewayConnectionDsapping](./Set-AzureRmApplicationGatewayConnectionDraining.md)
+[Set-AzureRmApplicationGatewayConnectionDraining](./Set-AzureRmApplicationGatewayConnectionDraining.md)
 

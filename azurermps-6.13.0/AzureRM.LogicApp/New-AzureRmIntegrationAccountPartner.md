@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/LogicApp/Commands.LogicApp/help/New-AzureRmIntegrationAccountPartner.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/LogicApp/Commands.LogicApp/help/New-AzureRmIntegrationAccountPartner.md
 ms.openlocfilehash: f59c3e1896fd60dd70c1708a66ca8bbf360342ad
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421668"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142140143"
 ---
 # New-AzureRmIntegrationAccountPartner
 
@@ -32,11 +32,11 @@ New-AzureRmIntegrationAccountPartner -ResourceGroupName <String> -Name <String> 
 Cmdlet **New-AzureRmIntegrationAccountPartner** membuat mitra akun integrasi.
 Cmdlet ini mengembalikan objek yang mewakili mitra akun integrasi.
 Tentukan nama akun integrasi, nama grup sumber daya, nama mitra, dan identitas mitra.
-Nilai file parameter templat yang Anda tentukan di baris perintah diutamakan lebih dari nilai parameter templat dalam objek parameter templat.
+Nilai file parameter templat yang Anda tentukan di baris perintah lebih diutamakan daripada nilai parameter templat dalam objek parameter templat.
 Modul ini mendukung parameter dinamis.
 Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
-Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilai tersebut.
+Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
 ## EXAMPLES
 
@@ -57,9 +57,9 @@ Perintah ini membuat mitra akun integrasi bernama IntegrationAccountPartner22 da
 
 ## PARAMETERS
 
-### -BusinessIdentities
+### -BisnisIdentitas
 Menentukan identitas bisnis untuk mitra akun integrasi.
-Menentukan tabel hash.
+Tentukan tabel hash.
 
 ```yaml
 Type: System.Object
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -213,7 +213,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmIntegrationAccountPartner](./Get-AzureRmIntegrationAccountPartner.md)
 
-[Remove-AzureRmIntegrationAccountPartner](./Remove-AzureRmIntegrationAccountPartner.md)
+[Hapus-AzureRmIntegrationAccountPartner](./Remove-AzureRmIntegrationAccountPartner.md)
 
 [Set-AzureRmIntegrationAccountPartner](./Set-AzureRmIntegrationAccountPartner.md)
 

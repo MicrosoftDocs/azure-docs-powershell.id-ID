@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppSSLBinding.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppSSLBinding.md
-ms.openlocfilehash: 7f7b2438ab003f828a1b349b3d900d8e1a96ee6e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6ae8f8b3841e3bfbead2c40ba0a238fc7a436edf
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140553389"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142204453"
 ---
 # New-AzWebAppSSLBinding
 
 ## SYNOPSIS
-Membuat pengikatan sertifikat SSL untuk Azure Web App.
+Membuat penjilidan sertifikat SSL untuk Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/new-azwebappsslbinding) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,16 +51,16 @@ New-AzWebAppSSLBinding [-WebApp] <PSSite> [-Name] <String> [[-SslState] <SslStat
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzWebAppSSLBinding** membuat pengikatan sertifikat Secure Socket Layer (SSL) untuk Azure Web App.
-Cmdlet membuat pengikatan SSL dalam dua cara: 
-- Anda bisa mengikat Web App ke sertifikat yang sudah ada.
-- Anda bisa mengunggah sertifikat baru lalu mengikat Aplikasi Web ke sertifikat baru ini.
-Terlepas dari pendekatan mana yang Anda gunakan, sertifikat dan Aplikasi Web harus dikaitkan dengan grup sumber daya Azure yang sama.
-Jika Anda memiliki Aplikasi Web di Grup Sumber Daya A dan Anda ingin mengikat Aplikasi Web itu ke sertifikat di Grup Sumber Daya B, satu-satunya cara untuk melakukan itu adalah dengan mengunggah salinan sertifikat ke Grup Sumber Daya A. Jika Anda mengunggah sertifikat baru, ingatlah persyaratan berikut untuk sertifikat Azure SSL: 
+Cmdlet **New-AzWebAppSSLBinding** membuat penjilidan Secure Socket Layer (SSL) untuk Azure Web App.
+Cmdlet membuat pengikat SSL dengan dua cara: 
+- Anda bisa mengikat Aplikasi Web ke sertifikat yang sudah ada.
+- Anda bisa mengunggah sertifikat baru lalu mengikat Web App ke sertifikat baru ini.
+Terlepas dari pendekatan yang Anda gunakan, sertifikat dan Web App harus dikaitkan dengan grup sumber daya Azure yang sama.
+Jika Anda memiliki Aplikasi Web di Grup Sumber Daya A dan Anda ingin mengikat Aplikasi Web tersebut ke sertifikat di Grup Sumber Daya B, satu-satunya cara untuk melakukannya adalah dengan mengunggah salinan sertifikat ke Grup Sumber Daya A. Jika Anda mengunggah sertifikat baru, ingatlah persyaratan berikut untuk sertifikat SSL Azure: 
 - Sertifikat harus berisi kunci privat. 
-- Sertifikat harus menggunakan format Informasi Pribadi Exchange (PFX). 
-- Nama subjek sertifikat harus sesuai dengan domain yang digunakan untuk mengakses Web App. 
-- Sertifikat harus menggunakan enkripsi minimal 2048-bit.
+- Sertifikat harus menggunakan format Exchange Informasi Pribadi (PFX). 
+- Nama subjek sertifikat harus cocok dengan domain yang digunakan untuk mengakses Web App. 
+- Sertifikat harus menggunakan enkripsi minimum 2048-bit.
 
 ## EXAMPLES
 
@@ -66,11 +69,11 @@ Jika Anda memiliki Aplikasi Web di Grup Sumber Daya A dan Anda ingin mengikat Ap
 PS C:\>New-AzWebAppSSLBinding -ResourceGroupName "ContosoResourceGroup" -WebAppName "ContosoWebApp" -Thumbprint "E3A38EBA60CAA1C162785A2E1C44A15AD450199C3" -Name "www.contoso.com"
 ```
 
-Perintah ini mengikat sertifikat Azure yang sudah ada (sertifikat dengan Thumbprint E3A38EBA60CAA1C162785A2E1C44A15AD450199C3) ke aplikasi web bernama ContosoWebApp.
+Perintah ini mengikat sertifikat Azure yang sudah ada (sertifikat dengan Cetak Mini E3A38EBA60CAA1C162785A2E1C44A15AD450199C3) ke aplikasi web bernama ContosoWebApp.
 
 ### Contoh 2
 
-Membuat pengikatan sertifikat SSL untuk Azure Web App. (otomatisgenerated)
+Membuat penjilidan sertifikat SSL untuk Azure Web App. (autogenerasi)
 
 ```powershell <!-- Aladdin Generated Example --> 
 New-AzWebAppSSLBinding -Name 'www.contoso.com' -ResourceGroupName 'ContosoResourceGroup' -SslState Disabled -Thumbprint 'E3A38EBA60CAA1C162785A2E1C44A15AD450199C3' -WebAppName 'ContosoWebApp'
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama Aplikasi Web.
+Menentukan nama Web App.
 
 ```yaml
 Type: System.String
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya tempat sertifikat ditetapkan.
-Anda tidak bisa menggunakan parameter *ResourceGroupName* dan parameter *WebApp* di perintah yang sama.
+Anda tidak dapat menggunakan parameter *ResourceGroupName* dan parameter *WebApp* dalam perintah yang sama.
 
 ```yaml
 Type: System.String
@@ -165,10 +168,10 @@ Accept wildcard characters: False
 ```
 
 ### -Slot
-Menentukan nama slot penggunaan Web App.
+Menentukan nama slot penyebaran Web App.
 Anda dapat menggunakan cmdlet Get-AzWebAppSlot untuk mendapatkan slot.
-Slot penyebaran menyediakan cara untuk Anda melakukan tahapan dan memvalidasi aplikasi web tanpa aplikasi itu bisa diakses melalui internet.
-Umumnya, Anda akan menyebarkan perubahan ke situs pengaturan, memvalidasi perubahan tersebut, lalu menyebarkannya ke situs produksi (yang mudah diakses internet).
+Slot penyebaran menyediakan cara bagi Anda untuk menggelar dan memvalidasi aplikasi web tanpa aplikasi tersebut dapat diakses melalui internet.
+Biasanya Anda akan menyebarkan perubahan Anda ke situs pementasan, memvalidasi perubahan tersebut, lalu menyebarkan ke situs produksi (mudah diakses internet).
 
 ```yaml
 Type: System.String
@@ -199,7 +202,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Thumbprint
+### -Sidik jari
 Menentukan pengidentifikasi unik untuk sertifikat.
 
 ```yaml
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ### -WebApp
 Menentukan Aplikasi Web.
 Untuk mendapatkan Web App, gunakan cmdlet Get-AzWebApp.
-Anda tidak bisa menggunakan parameter *WebApp* di perintah yang sama seperti parameter *ResourceGroupName* dan/atau *WebAppName*.
+Anda tidak dapat menggunakan parameter *WebApp* dalam perintah yang sama seperti parameter *ResourceGroupName* dan/atau *WebAppName*.
 
 ```yaml
 Type: Microsoft.Azure.Commands.WebApps.Models.PSSite
@@ -232,8 +235,8 @@ Accept wildcard characters: False
 ```
 
 ### -WebAppName
-Menentukan nama Aplikasi Web di mana pengikat SSL baru akan dibuat.
-Anda tidak bisa menggunakan parameter *WebAppName* dan parameter *WebApp* di perintah yang sama.
+Menentukan nama Web App tempat pengikatan SSL baru sedang dibuat.
+Anda tidak dapat menggunakan parameter *WebAppName* dan parameter *WebApp* dalam perintah yang sama.
 
 ```yaml
 Type: System.String
@@ -248,11 +251,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## OUTPUTS
 
@@ -266,7 +269,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Remove-AzWebAppSSLBinding](./Remove-AzWebAppSSLBinding.md)
 
-[Get-AzWebAppslot](./Get-AzWebAppSlot.md)
+[Get-AzWebAppSlot](./Get-AzWebAppSlot.md)
 
 [Get-AzWebApp](./Get-AzWebApp.md)
 

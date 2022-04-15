@@ -4,16 +4,16 @@ Module Name: Azs.Infrastructureinsights.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 4285a7423390f5d9b5384faa63f95c4206840d71
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "132415531"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142135349"
 ---
 # Get-AzsRegistrationHealth
 
 ## SYNOPSIS
-Mengembalikan daftar dari setiap kesehatan sumber daya di bawah layanan.
+Mengembalikan daftar kesehatan setiap sumber daya di bawah layanan.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-AzsRegistrationHealth -ServiceRegistrationId <String> [-Location <String>] [
  [-Filter <String>] [-Top <Int32>] [-Skip <Int32>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsRegistrationHealth -ServiceRegistrationId <String> -ResourceRegistrationId <String> [-Location <String>]
  [-ResourceGroupName <String>] [-Filter <String>] [<CommonParameters>]
@@ -35,7 +35,7 @@ Get-AzsRegistrationHealth -ResourceId <String> [-Filter <String>] [<CommonParame
 ```
 
 ## DESCRIPTION
-Mengembalikan daftar dari setiap kesehatan sumber daya di bawah layanan.
+Mengembalikan daftar kesehatan setiap sumber daya di bawah layanan.
 
 ## EXAMPLES
 
@@ -44,19 +44,19 @@ Mengembalikan daftar dari setiap kesehatan sumber daya di bawah layanan.
 Get-AzsRegistrationHealth -ServiceRegistrationId e56bc7b8-c8b5-4e25-b00c-4f951effb22c
 ```
 
-Mengembalikan daftar dari setiap kesehatan sumber daya di bawah layanan.
+Mengembalikan daftar kesehatan setiap sumber daya di bawah layanan.
 
 ### CONTOH 2
 ```
 Get-AzsRPHealth | Where {$_.NamespaceProperty -eq 'Microsoft.Fabric.Admin'} | % { Get-AzsRegistrationHealth -ServiceRegistrationId $_.RegistrationId } | select ResourceName, HealthState
 ```
 
-Mengembalikan status kesehatan di bawah a for Microsoft.Fabric.Admin.
+Mengembalikan status kesehatan di bawah Microsoft.Fabric.Admin.
 
 ## PARAMETERS
 
 ### -ServiceRegistrationId
-ID pendaftaran layanan.
+Id pendaftaran layanan.
 
 ```yaml
 Type: String
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

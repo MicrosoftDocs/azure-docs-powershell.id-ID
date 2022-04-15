@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmFirewallFqdnTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmFirewallFqdnTag.md
 ms.openlocfilehash: 33482ff6686409c62a2aeffbf616f62074b1984e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420691"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142138951"
 ---
 # Get-AzureRmFirewallFqdnTag
 
 ## SYNOPSIS
-Dapatkan Tag Fqdn Azure Firewall yang tersedia.
+Dapatkan Azure Firewall Fqdn Tag yang tersedia.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Get-AzureRmFirewallFqdnTag [-DefaultProfile <IAzureContextContainer>] [<CommonPa
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmFirewallFqdnTag** mendapatkan daftar Tag FQDN yang bisa digunakan untuk Aturan Aplikasi Azure Firewall
+Cmdlet **Get-AzureRmFirewallFqdnTag** mendapatkan daftar Tag FQDN yang dapat digunakan untuk Aturan Aplikasi Azure Firewall
 
 ## EXAMPLES
 
@@ -38,7 +38,7 @@ Get-AzureRmFirewallFqdnTag
 
 Contoh ini mengambil semua Tag FQDN yang tersedia.
 
-### 2: Menggunakan Tag FQDN yang tersedia pertama kali dalam Aturan Aplikasi
+### 2: Menggunakan Tag FQDN pertama yang tersedia dalam Aturan Aplikasi
 ```
 $fqdnTags = Get-AzureRmFirewallFqdnTag
 New-AzureRmFirewallApplicationRule -Name AR -SourceAddress * -FqdnTag $fqdnTags[0].FqdnTagName
@@ -49,7 +49,7 @@ Contoh ini membuat Aturan Aplikasi Firewall menggunakan Tag FQDN pertama yang te
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -64,11 +64,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS

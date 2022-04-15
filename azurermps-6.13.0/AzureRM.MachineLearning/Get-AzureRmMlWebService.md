@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.machi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/MachineLearning/Commands.MachineLearning/help/Get-AzureRmMlWebService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/MachineLearning/Commands.MachineLearning/help/Get-AzureRmMlWebService.md
-ms.openlocfilehash: a229c5dd75854f8ab38fd3ab38bcc20776d58e6de5317dc56f26014583b8e0b4
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 5632de726797dd36af377f76b5919590c5826606
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140866370"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142140035"
 ---
 # Get-AzureRmMlWebService
 
@@ -27,12 +27,12 @@ Get-AzureRmMlWebService [-ResourceGroupName <String>] [-Name <String>] [-Region 
 ```
 
 ## DESCRIPTION
-Mengambil informasi definsi layanan web.
-Bergantung pada paramenter yang lolos, cmdlet mengembalikan penetapan untuk layanan web tertentu, kumpulan defini untuk layanan web untuk grup sumber daya yang ditentukan dalam langganan saat ini, atau kumpulan penetapan untuk layanan web di dalam langganan saat ini.
+Mengambil informasi pendefinisian layanan web.
+Bergantung pada paramenter yang lolos, cmdlet mengembalikan pendefinisian untuk layanan web tertentu, kumpulan pendefinisian untuk layanan web untuk grup sumber daya tertentu dalam langganan saat ini, atau kumpulan pendefinisian untuk layanan web dalam langganan saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan detail tentang layanan web tertentu
+### Contoh 1: Dapatkan detail layanan web tertentu
 ```
 Get-AzureRmMlWebService -ResourceGroupName "myresourcegroup" -Name "mywebservicename"
 ```
@@ -50,7 +50,7 @@ Get-AzureRmMlWebService -ResourceGroupName "myresourcegroup"
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kawasan
-Nama reka ulang
+Nama regio
 
 ```yaml
 Type: System.String
@@ -110,17 +110,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Management.MachineLearning.WebServices.Models.WebService
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, machine, machine learning, azureml
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, mesin, pembelajaran mesin, azureml
 
 ## RELATED LINKS

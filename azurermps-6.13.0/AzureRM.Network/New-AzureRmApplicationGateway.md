@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmApplicationGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmApplicationGateway.md
 ms.openlocfilehash: 67da94a783d932501413008523c744f6695f6024
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422933"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142138527"
 ---
 # New-AzureRmApplicationGateway
 
@@ -46,15 +46,15 @@ New-AzureRmApplicationGateway -Name <String> -ResourceGroupName <String> -Locati
 
 ## DESCRIPTION
 Cmdlet **New-AzureRmApplicationGateway** membuat gateway aplikasi Azure.
-Gateway aplikasi memerlukan yang berikut ini:
+Gateway aplikasi memerlukan hal berikut:
 - Grup sumber daya.
 - Jaringan virtual.
-- Sebuah pool server back-end, yang berisi alamat IP dari server ujung-belakang.
-- Pengaturan pool server ujung-belakang. Setiap pool memiliki pengaturan seperti port, protokol dan afiliasi berbasis cookie, yang diterapkan ke semua server dalam pool.
-- Alamat IP ujung-depan, yang merupakan alamat IP yang dibuka di gateway aplikasi. Alamat IP ujung-depan dapat merupakan alamat IP publik atau alamat IP internal.
-- Port ujung-depan, yang merupakan port publik yang dibuka di gateway aplikasi. Lalu lintas yang mencapai port ini diarahkan ke server ujung belakang.
-- Aturan perutean permintaan yang mengikat pendengar dan kumpulan server ujung-belakang. Aturan menentukan kelompok lalu lintas server ujung-belakang mana yang harus diarahkan ketika mencapai pendengar tertentu.
-Pendengar memiliki port ujung-depan, alamat IP front-end, protokol (HTTP atau HTTPS) dan nama sertifikat Secure Sockets Layer (SSL) (jika mengonfigurasi offload SSL).
+- Kumpulan server ujung-belakang, yang berisi alamat IP server back-end.
+- Pengaturan kumpulan server ujung-belakang. Setiap pool memiliki pengaturan seperti port, protokol dan affinity berbasis cookie, yang diterapkan ke semua server dalam pool.
+- Alamat IP ujung-depan, yang merupakan alamat IP yang dibuka di gateway aplikasi. Alamat IP front-end bisa berupa alamat IP publik atau alamat IP internal.
+- Port ujung depan, yang merupakan port publik yang dibuka di gateway aplikasi. Lalu lintas yang mengenai port ini dialihkan ke server ujung belakang.
+- Aturan perutean permintaan yang mengikat pendengar dan kumpulan server ujung-belakang. Aturan ini menentukan kumpulan server ujung-belakang mana yang harus diarahkan ke lalu lintas ketika menyentuh pendengar tertentu.
+Pendengar memiliki port ujung depan, alamat IP ujung depan, protokol (HTTP atau HTTPS) dan nama sertifikat Secure Sockets Layer (SSL) (jika mengonfigurasi offload SSL).
 
 ## EXAMPLES
 
@@ -78,23 +78,23 @@ PS C:\> $Sku = New-AzureRmApplicationGatewaySku -Name "Standard_Small" -Tier Sta
 PS C:\> $Gateway = New-AzureRmApplicationGateway -Name "AppGateway01" -ResourceGroupName "ResourceGroup01" -Location "West US" -BackendAddressPools $Pool -BackendHttpSettingsCollection $PoolSetting -FrontendIpConfigurations $FrontEndIpConfig  -GatewayIpConfigurations $GatewayIpConfig -FrontendPorts $FrontEndPort -HttpListeners $Listener -RequestRoutingRules $Rule -Sku $Sku
 ```
 
-Contoh berikut membuat gateway aplikasi dengan terlebih dahulu membuat grup sumber daya dan jaringan virtual, serta yang berikut ini:
-- Sebuah pool server ujung-belakang
-- Pengaturan pool server ujung-belakang
-- Port ujung-depan
+Contoh berikut ini membuat gateway aplikasi dengan membuat grup sumber daya dan jaringan virtual terlebih dahulu, serta yang berikut ini:
+- Kumpulan server ujung-belakang
+- Pengaturan kumpulan server ujung-belakang
+- Port ujung depan
 - Alamat IP ujung-depan
-- Aturan perutean permintaan Keempat perintah ini membuat jaringan virtual.
+- Aturan perutean permintaan Empat perintah ini membuat jaringan virtual.
 Perintah pertama membuat konfigurasi subnet.
 Perintah kedua membuat jaringan virtual.
 Perintah ketiga memverifikasi konfigurasi subnet dan perintah keempat memverifikasi bahwa jaringan virtual berhasil dibuat.
-Perintah berikut membuat gateway aplikasi.
-Perintah pertama membuat konfigurasi IP yang bernama GatewayIp01 untuk subnet yang dibuat sebelumnya.
-Perintah kedua membuat sebuah server ujung-belakang yang bernama Pool01 dengan daftar alamat IP ujung-belakang dan menyimpan pool dalam $Pool lain.
-Perintah ketiga membuat pengaturan untuk pool server back-end dan menyimpan pengaturan di $PoolSetting ini.
-Perintah maju membuat port ujung-depan pada port 80, memberi nama FrontEndPort01, dan menyimpan port di $FrontEndPort variabel.
-Perintah kelima membuat alamat IP publik dengan menggunakan New-AzureRmPublicIpAddress.
-Perintah keenam membuat konfigurasi IP ujung-depan menggunakan $PublicIp, memberi nama FrontEndPortConfig01, dan menyimpannya di variabel $FrontEndIpConfig baru.
-Perintah ketujuh membuat pendengar menggunakan perintah yang sebelumnya $FrontEndIpConfig $FrontEndPort.
+Perintah berikut ini membuat gateway aplikasi.
+Perintah pertama membuat konfigurasi IP bernama GatewayIp01 untuk subnet yang dibuat sebelumnya.
+Perintah kedua membuat kumpulan server back-end bernama Pool01 dengan daftar alamat IP ujung-belakang dan menyimpan kumpulan dalam variabel $Pool.
+Perintah ketiga membuat pengaturan untuk kumpulan server back-end dan menyimpan pengaturan dalam variabel $PoolSetting.
+Perintah keempat membuat port ujung depan pada port 80, menamainya FrontEndPort01, dan menyimpan port dalam variabel $FrontEndPort.
+Perintah kelima membuat alamat IP publik menggunakan New-AzureRmPublicIpAddress.
+Perintah keenam membuat konfigurasi IP ujung depan menggunakan $PublicIp, menamainya FrontEndPortConfig01, dan menyimpannya dalam variabel $FrontEndIpConfig.
+Perintah ketujuh membuat pendengar menggunakan $FrontEndIpConfig $FrontEndPort yang dibuat sebelumnya.
 Perintah kedelapan membuat aturan untuk pendengar.
 Perintah kesembilan mengatur SKU.
 Perintah kesepuluh membuat gateway menggunakan objek yang diatur oleh perintah sebelumnya.
@@ -102,7 +102,7 @@ Perintah kesepuluh membuat gateway menggunakan objek yang diatur oleh perintah s
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendAddressPools
-Menentukan daftar kolam renang ujung belakang untuk gateway aplikasi.
+Menentukan daftar kumpulan alamat ujung-belakang untuk gateway aplikasi.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayBackendAddressPool]
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -206,7 +206,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -EnableHttp2
+### -AktifkanHttp2
 Apakah HTTP2 diaktifkan.
 
 ```yaml
@@ -221,8 +221,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendIPConfigurations
-Menentukan daftar konfigurasi IP ujung-depan untuk gateway aplikasi.
+Menentukan daftar konfigurasi IP ujung depan untuk gateway aplikasi.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFrontendIPConfiguration]
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendPorts
-Menentukan daftar port ujung-depan untuk gateway aplikasi.
+Menentukan daftar port ujung depan untuk gateway aplikasi.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFrontendPort]
@@ -282,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -HttpListeners
-Menentukan daftar dengarkan HTTP untuk gateway aplikasi.
+Menentukan daftar pendengar HTTP untuk gateway aplikasi.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayHttpListener]
@@ -297,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan kawasan untuk membuat gateway aplikasi.
+Menentukan kawasan tempat untuk membuat gateway aplikasi.
 
 ```yaml
 Type: System.String
@@ -326,8 +326,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Ser
-Menentukan default untuk gateway aplikasi.
+### -Probes
+Menentukan probe untuk gateway aplikasi.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayProbe]
@@ -387,7 +387,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Menentukan unit penyimpukan saham (SKU) gateway aplikasi.
+Menentukan unit penyimpanan stok (SKU) gateway aplikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewaySku
@@ -491,8 +491,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Zone
-Daftar zona ketersediaan berisi anotasi dari mana gateway aplikasi harus berasal.
+### -Zona
+Daftar zona ketersediaan yang mencantumkan asal gateway aplikasi.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -507,7 +507,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -523,7 +523,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -538,7 +538,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -548,29 +548,29 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewaySslPolicy
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayIPConfiguration, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayIPConfiguration, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=netral, PublicKeyToken=null]]
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewaySslCertificate, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewaySslCertificate, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=netral, PublicKeyToken=null]]
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayAuthenticationCertificate, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayAuthenticationCertificate, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=netral, PublicKeyToken=null]]
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFrontendIPConfiguration, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFrontendIPConfiguration, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=netral, PublicKeyToken=null]]
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFrontendPort, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFrontendPort, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=netral, PublicKeyToken=null]]
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayProbe, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayProbe, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=netral, PublicKeyToken=null]]
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayBackendAddressPool, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayBackendAddressPool, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=netral, PublicKeyToken=null]]
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayBackendHttpSettings, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayBackendHttpSettings, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=netral, PublicKeyToken=null]]
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayHttpListener, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayHttpListener, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=netral, PublicKeyToken=null]]
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayUrlPathMap, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayUrlPathMap, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=netral, PublicKeyToken=null]]
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayRequestRoutingRule, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayRequestRoutingRule, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=netral, PublicKeyToken=null]]
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayRedirectConfiguration, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayRedirectConfiguration, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=netral, PublicKeyToken=null]]
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayWebApplicationFirewallConfiguration
 
@@ -598,7 +598,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmApplicationGatewayRequestRoutingRule](./New-AzureRmApplicationGatewayRequestRoutingRule.md)
 
-[New-AzureRmApplicationGatewaySku](./New-AzureRmApplicationGatewaySku.md)
+[New-AzureRmApplicationGatewaysku](./New-AzureRmApplicationGatewaySku.md)
 
 [New-AzureRmVirtualNetwork](./New-AzureRmVirtualNetwork.md)
 

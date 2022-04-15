@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmVirtualHubVnetConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmVirtualHubVnetConnection.md
-ms.openlocfilehash: 9e178431724231a2f4f918838cef9b0d53bbdfaf1a88e5900bb2f6e3b4101d18
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 8aeb992b08e2749168ef3da2db6c264158c6a9ea
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140853132"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142138879"
 ---
 # Get-AzureRmVirtualHubVnetConnection
 
 ## SYNOPSIS
-Mendapatkan Koneksi Jaringan Virtual di hub virtual atau mencantumkan semua koneksi jaringan virtual di hub virtual.
+Mendapatkan koneksi Virtual Network di hub virtual atau mencantumkan semua koneksi jaringan virtual di hub virtual.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,7 +40,7 @@ Get-AzureRmVirtualHubVnetConnection -ParentResourceId <String> [-Name <String>]
 ```
 
 ## DESCRIPTION
-Mendapatkan Koneksi Jaringan Virtual di hub virtual atau mencantumkan semua koneksi jaringan virtual di hub virtual.
+Mendapatkan koneksi Virtual Network di hub virtual atau mencantumkan semua koneksi jaringan virtual di hub virtual.
 
 ## EXAMPLES
 
@@ -63,9 +63,9 @@ RemoteVirtualNetwork : /subscriptions/{subscriptionId}/resourceGroups/testRG/pro
 ProvisioningState    : Succeeded
 ```
 
-Langkah di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub di AS Tengah dalam grup sumber daya tersebut di Azure. Koneksi Jaringan Virtual akan dibuat setelahnya, yang akan peer Jaringan Virtual ke Virtual Hub.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual di AS Tengah dalam grup sumber daya tersebut di Azure. Koneksi Virtual Network akan dibuat setelahnya yang akan mengintip Virtual Network ke Hub Virtual.
 
-Setelah koneksi jaringan virtual hub dibuat, hub mendapatkan koneksi jaringan virtual hub menggunakan nama grup sumber dayanya, nama hub dan nama koneksi.
+Setelah koneksi jaringan virtual hub dibuat, ia mendapatkan koneksi jaringan virtual hub menggunakan nama grup sumber dayanya, nama hub dan nama koneksi.
 
 ### Contoh 2
 
@@ -85,9 +85,9 @@ RemoteVirtualNetwork : /subscriptions/{subscriptionId}/resourceGroups/testRG/pro
 ProvisioningState    : Succeeded
 ```
 
-Langkah di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub di AS Tengah dalam grup sumber daya tersebut di Azure. Koneksi Jaringan Virtual akan dibuat setelahnya, yang akan peer Jaringan Virtual ke Virtual Hub.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual di AS Tengah dalam grup sumber daya tersebut di Azure. Koneksi Virtual Network akan dibuat setelahnya yang akan mengintip Virtual Network ke Hub Virtual.
 
-Setelah koneksi jaringan virtual hub dibuat, hub mencantumkan semua koneksi jaringan virtual hub menggunakan nama grup sumber daya dan nama hub.
+Setelah koneksi jaringan virtual hub dibuat, hub ini mencantumkan semua koneksi jaringan virtual hub menggunakan nama grup sumber daya dan nama hub.
 
 ## PARAMETERS
 
@@ -182,11 +182,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
