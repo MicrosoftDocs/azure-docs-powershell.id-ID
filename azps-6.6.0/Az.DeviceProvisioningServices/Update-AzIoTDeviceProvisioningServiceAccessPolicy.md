@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Update-AzIoTDeviceProvisioningServiceAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Update-AzIoTDeviceProvisioningServiceAccessPolicy.md
 ms.openlocfilehash: a424dbb3b40ccda5eed88eeb9ecc9ba97eb65781
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140255617"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142475495"
 ---
 # Update-AzIoTDeviceProvisioningServiceAccessPolicy
 
 ## SYNOPSIS
-Memperbarui kebijakan akses bersama dalam layanan penyediaan perangkat Azure IoT Hub.
+Perbarui kebijakan akses bersama dalam layanan penyediaan perangkat Azure IoT Hub.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.deviceprovisioningservices/update-aziotdeviceprovisioningserviceaccesspolicy) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.deviceprovisioningservices/update-aziotdeviceprovisioningserviceaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Update-AzIoTDeviceProvisioningServiceAccessPolicy [-ResourceId] <String> [-KeyNa
 ```
 
 ## DESCRIPTION
-Untuk pengenalan layanan penyediaan perangkat Azure IoT Hub, lihat https://docs.microsoft.com/azure/iot-dps/about-iot-dps.
+Untuk pengenalan Azure IoT Hub Layanan Penyediaan Perangkat, lihat https://docs.microsoft.com/azure/iot-dps/about-iot-dps.
 
 ## EXAMPLES
 
@@ -59,7 +59,7 @@ SecondaryKey        : vbIwGCBQCIbS5BKFKdddM6uZHLhNTuz9r8CZYgmTmpY=
 Rights              : EnrollmentWrite
 ```
 
-Perbarui kebijakan akses "mypolicy" dalam layanan penyediaan perangkat Azure IoT Hub dengan hak EnrollmentWrite.
+Kebijakan akses pembaruan "mypolicy" dalam layanan penyediaan perangkat Azure IoT Hub dengan PendaftaranMengakhirkan dengan benar.
 
 ### Contoh 1
 ```
@@ -73,7 +73,7 @@ SecondaryKey        : vbIwGCBQCIbS5BKFKdddM6uZHLhNTuz9r8CZYgmTmpY=
 Rights              : EnrollmentWrite
 ```
 
-Perbarui kebijakan akses "mypolicy" dalam layanan penyediaan perangkat Azure IoT Hub dengan EnrollmentWrite langsung menggunakan pipeline.
+Kebijakan akses pembaruan "mypolicy" dalam layanan penyediaan perangkat Azure IoT Hub dengan PendaftaranMengakhirkan langsung menggunakan pipeline.
 
 ## PARAMETERS
 
@@ -137,7 +137,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Permissions
+### -Izin
 Izin kebijakan akses Layanan Penyediaan Perangkat IoT
 
 ```yaml
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Layanan Penyediaan Perangkat Iot
+Id Sumber Daya Layanan Penyediaan Perangkat IoT
 
 ```yaml
 Type: System.String
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

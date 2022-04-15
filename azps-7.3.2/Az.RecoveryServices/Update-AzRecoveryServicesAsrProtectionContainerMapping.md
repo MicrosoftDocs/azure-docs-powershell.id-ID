@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesAsrProtectionContainerMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesAsrProtectionContainerMapping.md
-ms.openlocfilehash: 9ab7396a0cccfdc0b532facfa5f2cd997ab42fad
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a771687b90f733d31df360f9425e7a7c075897f4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140006811"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142465037"
 ---
 # Update-AzRecoveryServicesAsrProtectionContainerMapping
 
 ## SYNOPSIS
-Perbarui pemetaan wadah proteksi pemulihan situs Azure.
+Perbarui pemetaan wadah perlindungan pemulihan situs Azure.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/update-azrecoveryservicesasrprotectioncontainermapping) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Update-AzRecoveryServicesAsrProtectionContainerMapping -InputObject <ASRProtecti
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzRecoveryServicesAsrProtectionContainerMapping** memperbarui pemetaan penampung proteksi Situs Azure yang ditentukan.
+Cmdlet **Update-AzRecoveryServicesAsrProtectionContainerMapping memperbarui** pemetaan wadah perlindungan Azure Site Recovery yang ditentukan.
 
 ## EXAMPLES
 
@@ -43,19 +46,19 @@ Cmdlet **Update-AzRecoveryServicesAsrProtectionContainerMapping** memperbarui pe
 PS C:> Update-AzRecoveryServicesAsrProtectionContainerMapping -InputObject $ASRProtectionContainerMapping -AzureToAzure -DisableAutoUpdate
 ```
 
-Mulai operasi untuk menonaktifkan pembaruan otomatis untuk wadah.
+Mulai operasi untuk menonaktifkan pembaruan otomatis untuk kontainer.
 
 ### Contoh 2
 ```powershell
 PS C:> Update-AzRecoveryServicesAsrProtectionContainerMapping -InputObject $ASRProtectionContainerMapping  -AzureToAzure -EnableAutoUpdate -AutomationAccountId $automationAccountId
 ```
 
-Mulai operasi untuk menonaktifkan aktifkan pembaruan otomatis untuk wadah.
+Mulai operasi untuk menonaktifkan aktifkan pembaruan otomatis untuk kontainer.
 
 ## PARAMETERS
 
 ### -AutomationAccountId
-Menentukan otomatisasi accountId yang digunakan untuk udpate otomatis.
+Menentukan id akun otomatisasi yang digunakan untuk auto udpate.
 
 ```yaml
 Type: System.String
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureToAzure
-Menentukan Azure untuk wadah perlindungan Azure.
+Menentukan kontainer proteksi Azure ke Azure.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek untuk pemetaan wadah proteksi.
+Objek untuk pemetaan wadah perlindungan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRProtectionContainerMapping
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

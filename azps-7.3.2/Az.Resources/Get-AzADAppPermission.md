@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADAppPermission.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADAppPermission.md
-ms.openlocfilehash: 72345bb517af1c10b79f45de5623a95c26ab8c60
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2bc17bcbe92e55d7904a0c7c2080769454965a8d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139998918"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142464353"
 ---
 # Get-AzADAppPermission
 
 ## SYNOPSIS
-Mencantumkan izin API yang telah diminta aplikasi.
+Mencantumkan izin API yang telah diminta oleh aplikasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azadapppermission) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Get-AzADAppPermission -ApplicationId <Guid> [-DefaultProfile <PSObject>] [<Commo
 ```
 
 ## DESCRIPTION
-Mencantumkan izin API yang telah diminta aplikasi.
+Mencantumkan izin API yang telah diminta oleh aplikasi.
 
 ## EXAMPLES
 
@@ -44,7 +47,7 @@ ApiId                                Id                                   Type
 00000003-0000-0000-c000-000000000000 5b567255-7703-4780-807c-7be8301ae99b Scope
 ```
 
-Mengambil semua izin API objek Azure AD 18797549-86a9-4906-b2a9-54f08cd3c427
+Mengambil semua izin API dari objek Azure AD 18797549-86a9-4906-b2a9-54f08cd3c427
 
 ## PARAMETERS
 
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

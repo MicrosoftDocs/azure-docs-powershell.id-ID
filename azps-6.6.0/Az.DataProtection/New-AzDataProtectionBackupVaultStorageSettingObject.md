@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionBackupVaultStorageSettingObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionBackupVaultStorageSettingObject.md
 ms.openlocfilehash: cfe76391cc27ce8d02fd0ff7291e3a49e4ff4a82
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139940983"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142476233"
 ---
 # New-AzDataProtectionBackupVaultStorageSettingObject
 
@@ -18,7 +18,7 @@ ms.locfileid: "139940983"
 Dapatkan objek pengaturan penyimpanan Vault Cadangan
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dataprotection/new-azdataprotectionbackupvaultstoragesettingobject) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/new-azdataprotectionbackupvaultstoragesettingobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Dapatkan objek pengaturan penyimpanan Vault Cadangan
 
 ## EXAMPLES
 
-### Contoh 1: Membuat objek pengaturan penyimpanan vault baru
+### Contoh 1: Membuat objek pengaturan penyimpanan kubah baru
 ```powershell
 PS C:\> New-AzDataProtectionBackupVaultStorageSettingObject -Type GeoRedundant -DataStoreType VaultStore
 
@@ -41,12 +41,12 @@ DatastoreType Type
 VaultStore    GeoRedundant
 ```
 
-Perintah ini akan membuat objek pengaturan penyimpanan vault baru yang digunakan untuk membuat cadangan vault.
+Perintah ini membuat objek pengaturan penyimpanan kubah baru yang digunakan untuk membuat kubah cadangan.
 
 ## PARAMETERS
 
 ### -DataStoreType
-Tipe Penyimpanan Data vault
+Tipe DataStore dari kubah
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Support.DataStoreType
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Storage Tipe vault
+Storage Tipe kubah
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Support.StorageSettingType
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

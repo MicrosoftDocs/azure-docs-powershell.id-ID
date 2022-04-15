@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/IotHub/IotHub/help/New-AzIotHubKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/IotHub/IotHub/help/New-AzIotHubKey.md
 ms.openlocfilehash: 7ec2ac54f6fc212dba11a0c761dd0f9d76a6ee53
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "132414859"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142495439"
 ---
 # New-AzIotHubKey
 
 ## SYNOPSIS
-Menghasilkan kunci Azure IoT Hub.
+Buat kunci Azure IoT Hub.
 
 ## SYNTAX
 
@@ -32,11 +32,11 @@ New-AzIotHubKey [-HubId] <String> [-KeyName] <String> [-RenewKey] <String>
 ```
 
 ## DESCRIPTION
-Menghasilkan kunci Azure IoT Hub.
+Buat kunci Azure IoT Hub.
 
 ## EXAMPLES
 
-### Contoh 1 Regenerasi kunci utama
+### Contoh 1 Meregenerasi kunci primer
 ```
 PS C:\> New-AzIotHubKey -ResourceGroupName "myresourcegroup" -Name "myiothub" -KeyName "testKey" -RenewKey "primary"
 
@@ -45,9 +45,9 @@ KeyName     PrimaryKey                                      SecondaryKey        
 test        SXSdm31aT+i3939xSnA191f8g3uRhIUCTsO26b9s/nE=    6JqGKGUTL0mhQwvcOeIRT7OnT6noK/tie6jBY77sJTE=        ServiceConnect
 ```
 
-Kunci utama yang digenerasi untuk kebijakan otorisasi "testKey" dari hub azure iot.
+Kunci utama yang diregenerasi untuk kebijakan otorisasi "testKey" hub azure iot.
 
-### Contoh 2 Kunci swapping
+### Contoh 2 Tombol swapping
 ```
 PS C:\> New-AzIotHubKey -ResourceGroupName "myresourcegroup" -Name "myiothub" -KeyName "testKey" -RenewKey "swap"
 
@@ -56,12 +56,12 @@ KeyName     PrimaryKey                                      SecondaryKey        
 test        6JqGKGUTL0mhQwvcOeIRT7OnT6noK/tie6jBY77sJTE=    SXSdm31aT+i3939xSnA191f8g3uRhIUCTsO26b9s/nE=        ServiceConnect
 ```
 
-Menukar kunci untuk kebijakan otorisasi "testKey" dari azure iot hub.
+Swapping keys for the authorization policy "testKey" of an azure iot hub.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -RenewKey
-Kunci Regenerasi.
+Regenerasi Kunci.
 
 ```yaml
 Type: System.String
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

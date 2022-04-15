@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Monitor/Monitor/help/New-AzScheduledQueryRuleTriggerCondition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Monitor/Monitor/help/New-AzScheduledQueryRuleTriggerCondition.md
 ms.openlocfilehash: 53331c82a2ea1ac16b67c32f67545fec7d08e3dd
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132415296"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142494917"
 ---
 # New-AzScheduledQueryRuleTriggerCondition
 
 ## SYNOPSIS
-Membuat objek dari tipe Kondisi Pemicu
+Membuat objek dengan tipe Kondisi Pemicu
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ New-AzScheduledQueryRuleTriggerCondition -ThresholdOperator <String> -Threshold 
 
 ## DESCRIPTION
 Membuat objek dengan tipe Kondisi Pemicu.
-Objek ini akan diteruskan ke perintah yang membuat objek Tindakan Pemberitahuan
+Objek ini akan dialihkan ke perintah yang membuat objek Tindakan Peringatan
 
 ## EXAMPLES
 
@@ -68,8 +68,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Ambang Batas
-Ambang di atas pemberitahuan yang dipecat
+### -Ambang batas
+Ambang batas di atas yang peringatan akan ditembakkan
 
 ```yaml
 Type: System.Double
@@ -83,8 +83,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ThresholdOperator
-Operator ambang batas : GreaterTerterka, LessTerama atau Sama
+### -Ambang BatasOperator
+Operator ambang batas : GreaterThan, LessThan atau Equal
 
 ```yaml
 Type: System.String
@@ -99,11 +99,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

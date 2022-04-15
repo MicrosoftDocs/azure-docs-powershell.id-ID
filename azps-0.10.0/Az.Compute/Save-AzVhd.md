@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Save-AzVhd.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Save-AzVhd.md
 ms.openlocfilehash: f178b6aca1cf3747bc53807290585c01b91f3c2e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132414112"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142495673"
 ---
 # Save-AzVhd
 
@@ -36,14 +36,14 @@ Save-AzVhd [-StorageKey] <String> [-SourceUri] <Uri> [-LocalFilePath] <FileInfo>
 
 ## DESCRIPTION
 Cmdlet **Save-AzVhd** menyimpan gambar .vhd dari blob tempat gambar disimpan ke file.
-Anda dapat menentukan jumlah utas topik yang digunakan oleh proses dan apakah akan mengganti file yang sudah ada.
+Anda dapat menentukan jumlah utas pengunduh yang digunakan proses dan apakah akan mengganti file yang sudah ada.
 
-Cmdlet ini mengunduh konten apa pun.
-Ini tidak menerapkan konversi format Hard Disk Virtual (VHD).
+Cmdlet ini mengunduh konten apa adanya.
+Ini tidak menerapkan konversi format Virtual Hard Disk (VHD).
 
 ## EXAMPLES
 
-### Contoh 1: Unduh gambar
+### Contoh 1: Mengunduh gambar
 ```
 PS C:\> Save-AzVhd -SourceUri "http://contosoaccount.blob.core.windows.net/vhdstore/win7baseimage.vhd" -LocalFilePath "C:\vhd\Win7Image.vhd" -ResourceGroupName "rgname"
 ```
@@ -55,16 +55,16 @@ Perintah ini mengunduh file .vhd, dan menyimpannya di jalur lokal C:\vhd\Win7Ima
 PS C:\> Save-AzVhd -SourceUri "http://contosoaccount.blob.core.windows.net/vhdstore/win7baseimage.vhd" -LocalFilePath "C:\vhd\Win7Image.vhd" -Overwrite -ResourceGroupName "rgname"
 ```
 
-Perintah ini akan mengunduh file .vhd, lalu menyimpannya dalam jalur lokal.
-Perintah menyertakan parameter *Overwrite* .
-Oleh karena itu, jika C:\vhd\Win7Image.vhd sudah ada, perintah ini akan menggantikannya.
+Perintah ini mengunduh file .vhd, dan menyimpannya di jalur lokal.
+Perintah menyertakan parameter *Timpa* .
+Oleh karena itu, jika C:\vhd\Win7Image.vhd sudah ada, perintah ini menggantikannya.
 
 ### Contoh 3: Mengunduh gambar menggunakan jumlah utas yang ditentukan
 ```
 PS C:\> Save-AzVhd -SourceUri "http://contosoaccount.blob.core.windows.net/vhdstore/win7baseimage.vhd" -LocalFilePath "C:\vhd\Win7Image.vhd" -NumberOfThreads 32 -ResourceGroupName "rgname"
 ```
 
-Perintah ini akan mengunduh file .vhd, lalu menyimpannya dalam jalur lokal.
+Perintah ini mengunduh file .vhd, dan menyimpannya di jalur lokal.
 Perintah menentukan nilai 32 untuk parameter *NumberOfThreads* .
 Oleh karena itu, cmdlet menggunakan 32 utas untuk tindakan ini.
 
@@ -73,12 +73,12 @@ Oleh karena itu, cmdlet menggunakan 32 utas untuk tindakan ini.
 PS C:\> Save-AzVhd -SourceUri "http://contosoaccount.blob.core.windows.net/vhdstore/win7baseimage.vhd" -LocalFilePath "C:\vhd\Win7Image.vhd" -StorageKey "zNvcH0r5vAGmC5AbwEtpcyWCMyBd3eMDbdaa4ua6kwxq6vTZH3Y+sw==" -ResourceGroupName "rgname"
 ```
 
-Perintah ini akan mengunduh file .vhd dan menentukan kunci penyimpanan.
+Perintah ini mengunduh file .vhd dan menentukan kunci penyimpanan.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
 
 ```yaml
 Type: SwitchParameter
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -137,8 +137,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -OverWrite
-Cmdlet ini menggantikan file yang ditentukan oleh file *LocalFilePath* jika ada.
+### -Timpa
+Menunjukkan bahwa cmdlet ini menggantikan file yang ditentukan oleh file *LocalFilePath* jika ada.
 
 ```yaml
 Type: SwitchParameter
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceUri
-Menentukan Uniform Resource Identifier (URI) dari blob di `Azure`.
+Menentukan Uniform Resource Identifier (URI) blob dalam `Azure`.
 
 ```yaml
 Type: Uri
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 
 ### -StorageKey
 Menentukan kunci penyimpanan akun penyimpanan blob.
-Jika Anda tidak menentukan kunci, cmdlet ini akan berusaha menentukan kunci penyimpanan akun tersebut di *SourceUri* dari Azure.
+Jika Anda tidak menentukan kunci, cmdlet ini akan mencoba menentukan kunci penyimpanan akun di *SourceUri* dari Azure.
 
 ```yaml
 Type: String
@@ -199,11 +199,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
@@ -214,6 +214,6 @@ Cmdlet ini tidak menerima input apa pun.
 
 ## RELATED LINKS
 
-[Add-Azvhd](./Add-AzVhd.md)
+[Add-AzVhd](./Add-AzVhd.md)
 
 

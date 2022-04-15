@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/set-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHubDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHubDevice.md
-ms.openlocfilehash: 9b70256eb87e902c55da5ed60036befaa4b27847
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c253fced2c7d7cd8822257bc913cd723b2fc30be
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140199542"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142490075"
 ---
 # Set-AzIotHubDevice
 
 ## SYNOPSIS
 Memperbarui perangkat IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/set-aziothubdevice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -92,19 +95,19 @@ Aktifkan kemampuan edge untuk perangkat.
 PS C:\> Set-AzIotHubDevice -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -DeviceId "myDevice1" -Status Disabled
 ```
 
-Nonaktifkan status perangkat.
+Menonaktifkan status perangkat.
 
 ### Contoh 3
 ```powershell
 PS C:\> Set-AzIotHubDevice -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -DeviceId "myDevice1" -AuthMethod "x509_ca"
 ```
 
-Perbarui tipe otorisasi dari perangkat Hub Iot.
+Perbarui tipe otorisasi perangkat Iot Hub.
 
 ## PARAMETERS
 
 ### -AuthMethod
-Tipe otorisasi entitas akan dibuat dengan.
+Otorisasi mengetik entitas yang akan dibuat dengannya.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.IotHub.Models.PSDeviceAuthType
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -EdgeEnabled
-Bendera menunjukkan tepi diaktifkan.
+Bendera menunjukkan pengaktifan edge.
 
 ```yaml
 Type: System.Boolean
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryThumbprint
-Thumbprint sertifikat yang ditandatangani sendiri eksplisit untuk digunakan untuk kunci utama.
+Sidik jari sertifikat yang ditandatangani sendiri secara eksplisit untuk digunakan untuk kunci utama.
 
 ```yaml
 Type: System.String
@@ -240,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecondaryThumbprint
-Thumbprint sertifikat yang ditandatangani sendiri eksplisit untuk digunakan untuk tombol sekunder.
+Sidik jari sertifikat yang ditandatangani sendiri secara eksplisit untuk digunakan untuk kunci sekunder.
 
 ```yaml
 Type: System.String
@@ -255,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Mengatur status perangkat pada saat pembuatan.
+Atur status perangkat saat pembuatan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.IotHub.Models.PSDeviceStatus
@@ -286,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -302,7 +305,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -317,7 +320,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

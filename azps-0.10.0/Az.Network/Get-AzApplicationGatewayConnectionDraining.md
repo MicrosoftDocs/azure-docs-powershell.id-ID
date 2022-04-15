@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzApplicationGatewayConnectionDraining.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzApplicationGatewayConnectionDraining.md
 ms.openlocfilehash: 842ac402becd78decb00333c39a4a8247d543987
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424993"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142494737"
 ---
 # Get-AzApplicationGatewayConnectionDraining
 
 ## SYNOPSIS
-Dapatkan koneksi dengan menghabiskan konfigurasi objek pengaturan HTTP ujung belakang.
+Mendapatkan koneksi menguras konfigurasi objek pengaturan HTTP ujung-belakang.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-AzApplicationGatewayConnectionDraining -BackendHttpSettings <PSApplicationGa
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApplicationGatewayConnectionDriging** mendapatkan konfigurasi koneksi menghabiskan konfigurasi objek pengaturan HTTP ujung belakang.
+Cmdlet **Get-AzApplicationGatewayConnectionDraining** mendapatkan koneksi menguras konfigurasi objek pengaturan HTTP ujung belakang.
 
 ## EXAMPLES
 
@@ -36,14 +36,14 @@ PS C:\> $Settings  = Get-AzApplicationGatewayBackendHttpSetting -Name "Settings0
 PS C:\> $ConnectionDraining = Get-AzApplicationGatewayConnectionDraining -BackendHttpSettings $Settings
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya yang bernama ResourceGroup01 dan menyimpannya dalam $AppGw sumber daya.
-Perintah kedua mendapatkan pengaturan HTTP ujung belakang yang bernama Settings01 untuk $AppGw dan menyimpan pengaturan dalam variabel $Pengaturan.
-Perintah terakhir mendapatkan konfigurasi koneksi dengan cepat dari pengaturan HTTP ujung belakang $Pengaturan dan menyimpannya di $ConnectionDraining akhir.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw.
+Perintah kedua mendapatkan pengaturan HTTP ujung-belakang bernama Pengaturan01 untuk $AppGw dan menyimpan pengaturan dalam variabel $Pengaturan.
+Perintah terakhir mendapatkan konfigurasi pengurasan koneksi dari pengaturan HTTP ujung-belakang $Pengaturan dan menyimpannya dalam variabel $ConnectionDraining.
 
 ## PARAMETERS
 
 ### -BackendHttpSettings
-Pengaturan backend http
+Pengaturan http backend
 
 ```yaml
 Type: PSApplicationGatewayBackendHttpSettings
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -81,7 +81,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayConnectionD adaptering
+### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayConnectionDraining
 
 ## CATATAN
 
@@ -91,8 +91,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzApplicationGatewayBackendHttpSetting](./Get-AzApplicationGatewayBackendHttpSetting.md)
 
-[New-AzApplicationGatewayConnectionDriging](./New-AzApplicationGatewayConnectionDraining.md)
+[New-AzApplicationGatewayConnectionDraining](./New-AzApplicationGatewayConnectionDraining.md)
 
-[Remove-AzApplicationGatewayConnectionDriging](./Remove-AzApplicationGatewayConnectionDraining.md)
+[Remove-AzApplicationGatewayConnectionDraining](./Remove-AzApplicationGatewayConnectionDraining.md)
 
-[Set-AzApplicationGatewayConnectionDriging](./Set-AzApplicationGatewayConnectionDraining.md)
+[Set-AzApplicationGatewayConnectionDraining](./Set-AzApplicationGatewayConnectionDraining.md)

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/new-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVaultRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVaultRoleAssignment.md
-ms.openlocfilehash: 1d245785dce93194d41dc58777f9267a2cfd6191
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 75a9cbaf5d13fad7f9457d5048f1cdd555695a89
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140008731"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142489877"
 ---
 # New-AzKeyVaultRoleAssignment
 
 ## SYNOPSIS
-Menetapkan peran RBAC tertentu untuk pokok tertentu, pada lingkup yang ditentukan.
+Menetapkan peran RBAC tertentu ke prinsipal yang ditentukan, pada lingkup yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/new-azkeyvaultroleassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,15 +59,15 @@ New-AzKeyVaultRoleAssignment [-HsmName] <String> [-Scope <String>] -RoleDefiniti
 ```
 
 ## DESCRIPTION
-Gunakan perintah `New-AzKeyVaultRoleAssignment` untuk memberikan akses.
-Access diberikan dengan menetapkan peran RBAC yang sesuai kepada mereka di lingkup yang tepat.
+`New-AzKeyVaultRoleAssignment` Gunakan perintah untuk memberikan akses.
+Akses diberikan dengan menetapkan peran RBAC yang sesuai untuk mereka pada lingkup yang tepat.
 Subjek tugas harus ditentukan.
-Untuk menentukan pengguna, gunakan parameter SignInName atau Azure AD ObjectId.
-Untuk menentukan grup keamanan, gunakan parameter Azure AD ObjectId.
+Untuk menentukan pengguna, gunakan SignInName atau parameter ObjectId Azure AD.
+Untuk menentukan grup keamanan, gunakan parameter ObjectId Azure AD.
 Dan untuk menentukan aplikasi Azure AD, gunakan parameter ApplicationId atau ObjectId.
-Peran yang sedang ditetapkan harus ditentukan menggunakan parameter RoleDefinitionName pr RoleDefinitionId. Lingkup di mana akses sedang diberikan mungkin ditentukan. Pengaturan defaultnya adalah langganan yang dipilih.
+Peran yang sedang ditetapkan harus ditentukan menggunakan parameter RoleDefinitionName pr RoleDefinitionId. Lingkup akses yang diberikan mungkin ditentukan. Ini secara default ke langganan yang dipilih.
 
-Cmdlet dapat memanggil di bawah API Graph Microsoft sesuai dengan parameter input:
+Cmdlet dapat memanggil di bawah Api Graph Microsoft sesuai dengan parameter input:
 
 - GET /directoryObjects/{id}
 - GET /users/{id}
@@ -79,7 +82,7 @@ Cmdlet dapat memanggil di bawah API Graph Microsoft sesuai dengan parameter inpu
 PS C:\> New-AzKeyVaultRoleAssignment -HsmName bez-hsm -RoleDefinitionName "Managed Hsm Crypto User" -ObjectId xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 ```
 
-Contoh ini menetapkan peran "Managed Hsm Crypto User" kepada pengguna "xxxxxxxx-xxxx-xxxx-xxxxxxxxxxxx" di lingkup atas. Jika pengguna ingin melakukan operasi pada tombol. Peran "Crypto Hsm *" yang dikelola diperlukan untuk pengguna tersebut.
+Contoh ini menetapkan peran "Managed Hsm Crypto User" kepada pengguna "xxxxxxxx-xxxx-xxxx-xxxx" di lingkup teratas. Jika pengguna ingin melakukan operasi pada kunci. Peran "Managed Hsm Crypto *" diperlukan untuk pengguna tersebut.
 
 ### Contoh 2
 ```powershell
@@ -95,7 +98,7 @@ Contoh ini menetapkan peran "Administrator Kebijakan HSM terkelola" untuk penggu
 ## PARAMETERS
 
 ### -ApplicationId
-SPN aplikasi.
+Aplikasi SPN.
 
 ```yaml
 Type: System.String
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-ID objek pengguna atau grup.
+Id objek pengguna atau grup.
 
 ```yaml
 Type: System.String
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleDefinitionId
-Id Peran pokok ditugaskan kepada.
+Role Id tempat pokok ditetapkan.
 
 ```yaml
 Type: System.String
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleDefinitionName
-Nama peran RBAC untuk menetapkan pokoknya.
+Nama peran RBAC untuk menetapkan prinsipal dengan.
 
 ```yaml
 Type: System.String
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Lingkup di mana penetapan peran atau definisi berlaku, misalnya '/' atau '/keys' atau '/keys/{keyName}'.
+Lingkup tempat penetapan peran atau definisi diterapkan, misalnya '/' atau '/keys' atau '/keys/{keyName}'.
 '/' digunakan ketika dihilangkan.
 
 ```yaml
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -247,11 +250,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Update-AzVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Update-AzVM.md
 ms.openlocfilehash: 8dd18c97a1636e4b6422d58fa7aca28d8798001b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425402"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142490344"
 ---
 # Update-AzVM
 
@@ -58,13 +58,13 @@ PS C:\> Update-AzVM -ResourceGroupName "ResourceGroup11" -VM $VirtualMachine
 ```
 
 Perintah ini memperbarui mesin virtual, $VirtualMachine, di ResourceGroup11.
-Perintah memperbaruinya menggunakan objek mesin virtual yang disimpan dalam $VirtualMachine variabel.
-Untuk mendapatkan objek mesin virtual, gunakan cmdlet **Get-AzVM.**
+Perintah memperbaruinya dengan menggunakan objek mesin virtual yang disimpan dalam variabel $VirtualMachine.
+Untuk mendapatkan objek mesin virtual, gunakan cmdlet **Get-AzVM** .
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
 
 ```yaml
 Type: SwitchParameter
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignIdentity
-Tentukan identitas yang ditetapkan sistem untuk komputer virtual.
+Tentukan identitas sistem yang ditetapkan untuk mesin maya.
 
 ```yaml
 Type: SwitchParameter
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID Sumber Daya komputer virtual.
+Menentukan ID Sumber Daya mesin virtual.
 
 ```yaml
 Type: String
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 
 ### -IdentityId
 Menentukan daftar identitas pengguna yang terkait dengan kumpulan skala mesin virtual.
-Referensi identitas pengguna akan menjadi ID sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
+Referensi identitas pengguna akan berupa id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
 
 ```yaml
 Type: String[]
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -OsDiskWriteAccelerator
-Menentukan apakah WriteAccelerator harus diaktifkan atau dinonaktifkan di disk OS.
+Menentukan apakah WriteAccelerator harus diaktifkan atau dinonaktifkan pada disk OS.
 
 ```yaml
 Type: Boolean
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: String
@@ -186,9 +186,9 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Menentukan sumber daya dan grup sumber daya dapat ditandai dengan kumpulan pasangan nama nilai.
-Menambahkan tag ke sumber daya memungkinkan Anda mengelompokkan sumber daya bersama-sama di seluruh grup sumber daya dan untuk membuat tampilan Anda sendiri.
-Setiap grup sumber daya atau sumber daya dapat memiliki maksimal 15 tag.
+Menentukan sumber daya dan grup sumber daya bisa ditandai dengan sekumpulan pasangan nilai nama.
+Menambahkan tag ke sumber daya memungkinkan Anda mengelompokkan sumber daya bersama di seluruh grup sumber daya dan membuat tampilan Anda sendiri.
+Setiap sumber daya atau grup sumber daya dapat memiliki maksimal 15 tag.
 
 ```yaml
 Type: Hashtable
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
 
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -252,12 +252,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSVirtualMachine
-Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari saluran
+Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari pipeline
 
 ## OUTPUTS
 
@@ -267,18 +267,18 @@ Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari saluran
 
 ## RELATED LINKS
 
-[Get-azvm](./Get-AzVM.md)
+[Get-AzVM](./Get-AzVM.md)
 
-[New-azvm](./New-AzVM.md)
+[AzVM baru](./New-AzVM.md)
 
-[Remove-azvm](./Remove-AzVM.md)
+[Hapus-AzVM](./Remove-AzVM.md)
 
-[Mulai ulang-azvm](./Restart-AzVM.md)
+[Mulai ulang-AzVM](./Restart-AzVM.md)
 
-[Start-azvm](./Start-AzVM.md)
+[Start-AzVM](./Start-AzVM.md)
 
-[Stop-azvm](./Stop-AzVM.md)
+[Stop-AzVM](./Stop-AzVM.md)
 
-[New-azvmConfig](./New-AzVMConfig.md)
+[New-AzVMConfig](./New-AzVMConfig.md)
 
 

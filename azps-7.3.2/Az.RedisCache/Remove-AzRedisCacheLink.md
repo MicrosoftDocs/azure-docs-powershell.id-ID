@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Remove-AzRedisCacheLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Remove-AzRedisCacheLink.md
-ms.openlocfilehash: d5cceeccca8f65ef8bb28aa84b64fdaee51d532a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e33e8a4f42b90be53f3970c221970830429d95d6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140006764"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142464875"
 ---
 # Remove-AzRedisCacheLink
 
 ## SYNOPSIS
-Hapus tautan replikasi geo di antara dua Cache Redis.
+Hapus tautan replikasi geografis antara dua Singgahan Redis.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.rediscache/remove-azrediscachelink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,21 +28,21 @@ Remove-AzRedisCacheLink -PrimaryServerName <String> -SecondaryServerName <String
 ```
 
 ## DESCRIPTION
-Hapus tautan replikasi geo di antara dua Cache Redis.
+Hapus tautan replikasi geografis antara dua Singgahan Redis.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus link replikasi geo
+### Contoh 1: Menghapus tautan replikasi geografis
 ```
 PS C:\>Remove-AzRedisCacheLink -PrimaryServerName "mycache1" -SecondaryServerName "mycache2"
 ```
 
-Perintah ini menghapus tautan replikasi geo- di mana Cache Redis yang bernama mycache1 adalah cache utama dan Cache Redis yang bernama mycache2 sekunder.
+Perintah ini menghapus link geo-replikasi di mana Redis Cache bernama mycache1 adalah utama dan Redis Cache bernama mycache2 adalah sekunder.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -54,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{fill passThru Description}}
+{{Fill PassThru Description}}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryServerName
-Nama tautan dalam cache utama akan disimpan.
+Nama cache redis utama dalam tautan.
 
 ```yaml
 Type: System.String
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecondaryServerName
-Nama cache dalam daftar merah sekunder ada di tautan.
+Nama cache redis sekunder dalam tautan.
 
 ```yaml
 Type: System.String
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -152,6 +155,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzRedisCache](./New-AzRedisCache.md)
 
-[Remove-AzRedisCache](./Remove-AzRedisCache.md)
+[Hapus-AzRedisCache](./Remove-AzRedisCache.md)
 
 [Set-AzRedisCache](./Set-AzRedisCache.md)

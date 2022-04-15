@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/enable-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlInstanceDatabaseSensitivityRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlInstanceDatabaseSensitivityRecommendation.md
-ms.openlocfilehash: 03100654971281671a71fe410cf5ed548f0d6f55
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5687ed977f303c4d1844eef0d26bc1198cae62b4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140183633"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142482119"
 ---
 # Enable-AzSqlInstanceDatabaseSensitivityRecommendation
 
 ## SYNOPSIS
-Memungkinkan rekomendasi sensitivitas pada kolom (rekomendasi diaktifkan secara default pada semua kolom) di database Azure SQL Managed Instance.
+Mengaktifkan rekomendasi sensitivitas pada kolom (rekomendasi diaktifkan secara default pada semua kolom) dalam database Azure SQL Managed Instance.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/enable-azsqlinstancedatabasesensitivityrecommendation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,12 +49,12 @@ Cmdlet Enable-AzSqlInstanceDatabaseSensitivityRecommendation memungkinkan rekome
 
 ## EXAMPLES
 
-### Contoh 1: Mengaktifkan rekomendasi sensitivitas pada kolom tertentu dalam database Azure SQL Instans Terkelola.
+### Contoh 1: Aktifkan rekomendasi sensitivitas pada kolom tertentu dalam database Azure SQL Managed Instance.
 ```powershell
 PS C:\> Enable-AzSqlInstanceDatabaseSensitivityRecommendation -ResourceGroupName resourceGroup -InstanceName managedInstance -DatabaseName database -SchemaName schema -TableName table -ColumnName column
 ```
 
-### Contoh 2: Mengaktifkan rekomendasi sensitivitas pada kolom tertentu dalam database Azure SQL Managed Instance dengan Piping.
+### Contoh 2: Aktifkan rekomendasi sensitivitas pada kolom tertentu dalam database Azure SQL Managed Instance dengan Piping.
 ```powershell
 PS C:\> Get-AzSqlInstanceDatabase -ResourceGroupName resourceGroup -InstanceName managedInstance -Name database | Remove-AzSqlInstanceDatabaseSensitivityClassification -SchemaName schema -TableName table -ColumnName column
 ```
@@ -59,7 +62,7 @@ PS C:\> Get-AzSqlInstanceDatabase -ResourceGroupName resourceGroup -InstanceName
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Nama database Azure SQL Instans Terkelola.
+Nama database Azure SQL Managed Instance.
 
 ```yaml
 Type: System.String
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek mewakili klasifikasi SQL Sensitivitas Database Terkelola.
+Objek yang mewakili Klasifikasi Sensitivitas Database SQL Managed Instance.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.DataClassification.Model.ManagedDatabaseSensitivityClassificationModel
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-Azure SQL Instans Terkelola.
+Azure SQL Managed Instance nama.
 
 ```yaml
 Type: System.String
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menentukan apakah akan membuat output model klasifikasi sensitivitas pada akhir eksekusi cmdlet
+Menentukan apakah akan menghasilkan model klasifikasi sensitivitas di akhir eksekusi cmdlet
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -224,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -239,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -254,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -268,4 +271,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Pelajari selengkapnya tentang Azure SQL Database klasifikasi dan penemuan data](https://docs.microsoft.com/azure/sql-database/sql-database-data-discovery-and-classification)
+[Pelajari selengkapnya tentang Azure SQL Database penemuan dan klasifikasi data](https://docs.microsoft.com/azure/sql-database/sql-database-data-discovery-and-classification)

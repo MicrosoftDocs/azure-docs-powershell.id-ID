@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricCluster.md
-ms.openlocfilehash: 02c8223299d598a251571204872edec7d13671e0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1efe4c825da9b31399ebeebb2a5db764686c6cd4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140385551"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142483055"
 ---
 # Get-AzServiceFabricCluster
 
 ## SYNOPSIS
 Dapatkan detail sumber daya kluster.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/get-azservicefabriccluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Get-AzServiceFabricCluster [-ResourceGroupName] <String> [-Name] <String>
 PS C:\> Get-AzServiceFabricCluster -ResourceGroupName 'Group1' -ClusterName 'Contoso01SFCluster'
 ```
 
-Perintah ini akan mendapatkan detail sumber daya kluster untuk 'myCluster' kluster.
+Perintah ini akan mendapatkan detail sumber daya kluster untuk kluster 'myCluster'.
 
 ## PARAMETERS
 
@@ -66,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama kluster
+Tentukan nama kluster
 
 ```yaml
 Type: System.String
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

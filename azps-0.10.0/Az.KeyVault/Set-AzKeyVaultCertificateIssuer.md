@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Set-AzKeyVaultCertificateIssuer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Set-AzKeyVaultCertificateIssuer.md
 ms.openlocfilehash: 97faf51b25ee2ae36b028e4a6b992416949a219f
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "132415450"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142495358"
 ---
 # Set-AzKeyVaultCertificateIssuer
 
 ## SYNOPSIS
-Mengatur penerbit sertifikat dalam kunci vault.
+Mengatur penerbit sertifikat dalam kubah kunci.
 
 ## SYNTAX
 
@@ -34,16 +34,16 @@ Set-AzKeyVaultCertificateIssuer [-VaultName] <String> [-Name] <String> -Issuer <
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzKeyVaultCertificateIssuer menetapkan penerbit sertifikat dalam kunci vault.
+Cmdlet Set-AzKeyVaultCertificateIssuer mengatur penerbit sertifikat dalam kubah kunci.
 
 ## EXAMPLES
 
-### Contoh 1: Menetapkan penerbit sertifikat
+### Contoh 1: Mengatur penerbit sertifikat
 ```
 PS C:\>$Issuer = Set-AzKeyVaultCertificateIssuer -VaultName "Contosokv01" -Name "TestIssuer01" -IssuerProvider "Test" -AccountId "555" -ApiKey $Password -OrganizationDetails $OrgDetails -PassThru
 ```
 
-Perintah ini mengatur properti untuk penerbit sertifikat, lalu menyimpannya dalam $Issuer variabel.
+Perintah ini mengatur properti untuk penerbit sertifikat, lalu menyimpannya dalam variabel $Issuer.
 
 ## PARAMETERS
 
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: IAzureContextContainer
@@ -92,7 +92,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Issuer
+### -Penerbit
 Menentukan penerbit sertifikat untuk diperbarui.
 
 ```yaml
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kunci vault.
+Menentukan nama kubah kunci.
 
 ```yaml
 Type: String
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -215,11 +215,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS

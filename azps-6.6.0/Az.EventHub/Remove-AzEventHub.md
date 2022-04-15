@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Remove-AzEventHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Remove-AzEventHub.md
 ms.openlocfilehash: 33591b9a5b3ec0afb88e708e460f5db03a4d08ec
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139976397"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142474883"
 ---
 # Remove-AzEventHub
 
 ## SYNOPSIS
-Menghapus Hub Acara yang ditentukan.
+Menghapus Hub Kejadian tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventhub/remove-azeventhub) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/remove-azeventhub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Remove-AzEventHub [-ResourceId] <String> [-PassThru] [-AsJob] [-DefaultProfile <
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzEventHub menghapus Hub Kejadian yang ditentukan dari ruang nama tertentu.
+Cmdlet Remove-AzEventHub menghapus dan menghapus Hub Kejadian tertentu dari ruang nama tertentu.
 
 ## EXAMPLES
 
@@ -50,15 +50,15 @@ Cmdlet Remove-AzEventHub menghapus Hub Kejadian yang ditentukan dari ruang nama 
 PS C:\> Remove-AzEventHub -ResourceGroupName MyResourceGroupName -Namespace MyNamespaceName -Name MyEventHubName
 ```
 
-Menghapus Event Hub \`MyEventHubName\`.
+Menghapus Hub \`Kejadian MyEventHubName\`.
 
-### Contoh 2: InputObject - Menggunakan Variabel:
+### Contoh 2: InputObject - Using Variable:
 ```powershell
 PS C:\> $inputobject = Get-AzEventHub <params>
 PS C:\> Remove-AzEventHub -InputObject $inputobject
 ```
 
-### Contoh 3: InputObject menggunakan Piping:
+### Contoh 3: InputObject Menggunakan Piping:
 ```powershell
 PS C:\> Get-AzEventHub <params> | Remove-AzEventHub
 ```
@@ -69,7 +69,7 @@ PS C:\> $resourceid = Get-AzEventHub <params>
 PS C:\> Remove-AzEventHub -ResourceId $resourceid.Id
 ```
 
-### Contoh 5: ResourceId - Menggunakan string:
+### Contoh 5: ResourceId - Using string:
 ```powershell
 PS C:\> Remove-AzEventHub -ResourceId "/subscriptions/xxxx-xxxxx-xxxxxx-xxxxxx/resourceGroups/ResourceGroupName/providers/Microsoft.EventHub/namespaces/NamespaceName/eventhubs/EventHubName"
 ```
@@ -77,7 +77,7 @@ PS C:\> Remove-AzEventHub -ResourceId "/subscriptions/xxxx-xxxxx-xxxxxx-xxxxxx/r
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

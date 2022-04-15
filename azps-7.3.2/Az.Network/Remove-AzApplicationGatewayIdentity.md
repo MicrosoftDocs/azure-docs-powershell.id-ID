@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayIdentity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayIdentity.md
-ms.openlocfilehash: 11159222ab3708985a21f199d4cb54f781710c3a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: fe7183933de7e9108491a454bdca99ce8ddcf4ca
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140385791"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142468835"
 ---
 # Remove-AzApplicationGatewayIdentity
 
 ## SYNOPSIS
 Menghapus identitas dari gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azapplicationgatewayidentity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Remove-AzApplicationGatewayIdentity -ApplicationGateway <PSApplicationGateway>
 ```
 
 ## DESCRIPTION
-**Cmdlet Remove-AzApplicationGatewayIdentity** menghapus identitas dari gateway aplikasi.
+Cmdlet **Remove-AzApplicationGatewayIdentity** menghapus identitas dari gateway aplikasi.
 
 ## EXAMPLES
 
@@ -36,7 +39,7 @@ PS C:\> $updatedgateway = Set-AzApplicationGateway -ApplicationGateway $appgw
 ```
 
 Dalam contoh ini, kami menghapus identitas dari gateway aplikasi yang sudah ada.
-Catatan: Jika gateway merujuk rahasia keyvault, maka penting juga untuk menghapus referensi sertifikat ssl tersebut selama operasi ini.
+Catatan: Jika gateway mereferensikan rahasia keyvault, maka penting juga untuk menghapus referensi sertifikat ssl tersebut di sepanjang operasi ini.
 
 ## PARAMETERS
 
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

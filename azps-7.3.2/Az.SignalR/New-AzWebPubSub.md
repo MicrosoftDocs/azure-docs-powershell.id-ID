@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/new-azwe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/New-AzWebPubSub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/New-AzWebPubSub.md
-ms.openlocfilehash: 073564cc96cb0edbc856b5849ac946e7e75741c1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3332891bebf6dcdc082fa6b23f34ce6578eee55c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139998749"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142482623"
 ---
 # New-AzWebPubSub
 
 ## SYNOPSIS
 Membuat atau memperbarui sumber daya.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.signalr/new-azwebpubsub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ psdemo-wps          eastus        Standard_S1
 
 
 
-### Contoh 2: Membuat sumber daya PubSub Web dengan parameter lainnya dan memperlihatkan hasilnya
+### Contoh 2: Membuat sumber daya PubSub Web dengan lebih banyak parameter dan memperlihatkan hasilnya
 ```powershell
 PS C:\> $wps = New-AzWebPubSub -ResourceGroupName psdemo -Name psdemo-wps `
 -Location eastus -SkuName Standard_S1 -IdentityType SystemAssigned -LiveTraceEnabled true `
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableAadAuth
-DisableLocalAuthEnable atau menonaktifkan aad authKetika diatur sebagai true, koneksi dengan AuthType=aad tidak akan berfungsi.
+DisableLocalAuthEnable atau disable aad authWhen diatur sebagai true, koneksi dengan AuthType=aad tidak akan berfungsi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableLocalAuth
-DisableLocalAuthEnable atau menonaktifkan auth lokal dengan AccessKeyKetika diatur sebagai true, koneksi dengan AccessKey=xxx tidak akan berfungsi.
+DisableLocalAuthEnable atau menonaktifkan auth lokal dengan AccessKeyWhen diatur sebagai true, koneksi dengan AccessKey=xxx tidak akan berfungsi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableTlsClientCert
-Meminta sertifikat klien selama TLS handshake jika diaktifkan
+Minta sertifikat klien selama jabat tangan TLS jika diaktifkan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Menunjukkan tipe identitas: systemAssigned, userAssigned, None
+Mewakili tipe identitas: systemAssigned, userAssigned, None
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.WebPubSub.Support.ManagedIdentityType
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 
 ### -LiveTraceCategory
 Mendapatkan atau mengatur daftar konfigurasi kategori.
-Untuk membuat, lihat bagian CATATAN untuk properti LIVETRACECATEGORY dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti LIVETRACECATEGORY dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.WebPubSub.Models.Api20211001.ILiveTraceCategory[]
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -LiveTraceEnabled
-Menunjukkan apakah mengaktifkan atau tidak mengaktifkan jejak langsung. Bila diatur ke benar, klien jejak langsung bisa tersambung ke layanan. Jika tidak, klien jejak langsung tidak bisa tersambung ke layanan, sehingga Anda tidak dapat menerima log apa pun, apa pun yang Anda konfigurasi dalam "kategori". Nilai yang tersedia: true, false. Peka huruf besar/huruf.
+Menunjukkan apakah jejak langsung diaktifkan atau tidak. Ketika diatur ke true, klien jejak langsung dapat tersambung ke layanan. Jika tidak, klien jejak langsung tidak dapat tersambung ke layanan, sehingga Anda tidak dapat menerima log apa pun, apa pun yang Anda konfigurasi dalam "kategori". Nilai yang tersedia: true, false. Tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 
 ### -Lokasi
 Lokasi GEO sumber daya.
-mis. negara bagian Barat | Negara bagian | | Amerika | AS Tengah Selatan.
+misalnya | AS Barat | AS Timur | As Tengah Utara Selatan Tengah AS.
 
 ```yaml
 Type: System.String
@@ -258,7 +261,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -NetworkAclDefaultAction
+### -NetworkAcLDefaultAction
 Tindakan default ketika tidak ada aturan lain yang cocok
 
 ```yaml
@@ -274,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -289,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateEndpointAcl
-ACL untuk permintaan dari titik akhir privat Untuk dibuat, lihat bagian CATATAN untuk properti PRIVATEENDPOINTACL dan buat tabel hash.
+AKL untuk permintaan dari titik akhir privat Untuk membangun, lihat bagian CATATAN untuk properti PRIVATEENDPOINTACL dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.WebPubSub.Models.Api20211001.IPrivateEndpointAcl[]
@@ -305,7 +308,7 @@ Accept wildcard characters: False
 
 ### -PublicNetworkAccess
 Mengaktifkan atau menonaktifkan akses jaringan publik.
-Default ke "Diaktifkan". Ketika Diaktifkan, ACL jaringan masih berlaku. Ketika Dinonaktifkan, akses jaringan publik selalu dinonaktifkan apa pun yang Anda atur dalam ACL jaringan.
+Default ke "Diaktifkan". Saat Diaktifkan, AKL jaringan masih berlaku. Saat Dinonaktifkan, akses jaringan publik selalu dinonaktifkan apa pun yang Anda atur di AKL jaringan.
 
 ```yaml
 Type: System.String
@@ -320,8 +323,8 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAllow
-Tipe permintaan yang diperbolehkan.
-Nilai dapatlah salah satu atau beberapa dari: ClientConnection, ServerConnection, RESTAPI.
+Tipe permintaan yang diizinkan.
+Nilainya bisa berupa satu atau beberapa dari: ClientConnection, ServerConnection, RESTAPI.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.WebPubSub.Support.WebPubSubRequestType[]
@@ -337,7 +340,7 @@ Accept wildcard characters: False
 
 ### -PublicNetworkDeny
 Tipe permintaan yang ditolak.
-Nilai dapatlah salah satu atau beberapa dari: ClientConnection, ServerConnection, RESTAPI.
+Nilainya bisa berupa satu atau beberapa dari: ClientConnection, ServerConnection, RESTAPI.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.WebPubSub.Support.WebPubSubRequestType[]
@@ -352,8 +355,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya tersebut.
-Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+Nama grup sumber daya yang berisi sumber daya.
+Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
 
 ```yaml
 Type: System.String
@@ -369,7 +372,7 @@ Accept wildcard characters: False
 
 ### -ResourceLogCategory
 Mendapatkan atau mengatur daftar konfigurasi kategori.
-Untuk membuat, lihat bagian CATATAN untuk properti RESOURCELOGCATEGORY dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti RESOURCELOGCATEGORY dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.WebPubSub.Models.Api20211001.IResourceLogCategory[]
@@ -402,7 +405,7 @@ Accept wildcard characters: False
 
 ### -SkuName
 Nama SKU.
-Nilai yang diizinkan: Standard_S1, Free_F1
+Nilai yang diperlukan.Diizinkan: Standard_S1, Free_F1
 
 ```yaml
 Type: System.String
@@ -417,9 +420,9 @@ Accept wildcard characters: False
 ```
 
 ### -SkuTier
-Tingkatan opsional dari SKU tertentu ini.
+Tingkat opsional SKU khusus ini.
 'Standar' atau 'Gratis'.
-`Basic` sudah tidak berlaku, gunakan sebagai gantinya `Standard` .
+`Basic` tidak digunakan lagi, gunakan `Standard` sebagai gantinya.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.WebPubSub.Support.WebPubSubSkuTier
@@ -434,8 +437,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan Id langganan yang secara unik mengidentifikasi Microsoft Azure anda.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -450,7 +453,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag layanan yang merupakan daftar pasangan nilai kunci yang menjelaskan sumber daya tersebut.
+Tag layanan yang merupakan daftar pasangan nilai kunci yang menjelaskan sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -480,7 +483,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -496,7 +499,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -511,7 +514,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -529,17 +532,17 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 LIVETRACECATEGORY <ILiveTraceCategory[]>: Mendapatkan atau mengatur daftar konfigurasi kategori.
-  - `[Enabled <String>]`: Menunjukkan apakah kategori jejak langsung diaktifkan atau tidak.         Nilai yang tersedia: true, false.         Peka huruf besar/huruf.
-  - `[Name <String>]`: Mendapatkan atau mengatur nama kategori jejak langsung.         Nilai yang tersedia: ConnectivityLogs, MessagingLogs.         Peka huruf besar/huruf.
+  - `[Enabled <String>]`: Menunjukkan apakah atau kategori jejak langsung diaktifkan.         Nilai yang tersedia: true, false.         Tidak peka huruf besar kecil.
+  - `[Name <String>]`: Mendapatkan atau mengatur nama kategori jejak langsung.         Nilai yang tersedia: ConnectivityLogs, MessagingLogs.         Tidak peka huruf besar kecil.
 
-PRIVATEENDPOINTACL <IPrivateEndpointAcl[]>: ACL untuk permintaan dari titik akhir privat
+PRIVATEENDPOINTACL <IPrivateEndpointAcl[]>: ABI untuk permintaan dari titik akhir privat
   - `Name <String>`: Nama koneksi titik akhir privat
-  - `[Allow <WebPubSubRequestType[]>]`: Tipe permintaan yang diperbolehkan. Nilai dapatlah salah satu atau beberapa dari: ClientConnection, ServerConnection, RESTAPI.
-  - `[Deny <WebPubSubRequestType[]>]`: Tipe permintaan yang ditolak. Nilai dapatlah salah satu atau beberapa dari: ClientConnection, ServerConnection, RESTAPI.
+  - `[Allow <WebPubSubRequestType[]>]`: Tipe permintaan yang diizinkan. Nilainya bisa berupa satu atau beberapa dari: ClientConnection, ServerConnection, RESTAPI.
+  - `[Deny <WebPubSubRequestType[]>]`: Tipe permintaan yang ditolak. Nilainya bisa berupa satu atau beberapa dari: ClientConnection, ServerConnection, RESTAPI.
 
 RESOURCELOGCATEGORY <IResourceLogCategory[]>: Mendapatkan atau mengatur daftar konfigurasi kategori.
-  - `[Enabled <String>]`: Menunjukkan apakah kategori log sumber daya diaktifkan atau tidak.         Nilai yang tersedia: true, false.         Peka huruf besar/huruf.
-  - `[Name <String>]`: Mendapatkan atau mengatur nama kategori log sumber daya.         Nilai yang tersedia: ConnectivityLogs, MessagingLogs.         Peka huruf besar/huruf.
+  - `[Enabled <String>]`: Menunjukkan apakah atau kategori log sumber daya diaktifkan.         Nilai yang tersedia: true, false.         Tidak peka huruf besar kecil.
+  - `[Name <String>]`: Mendapatkan atau mengatur nama kategori log sumber daya.         Nilai yang tersedia: ConnectivityLogs, MessagingLogs.         Tidak peka huruf besar kecil.
 
 ## RELATED LINKS
 

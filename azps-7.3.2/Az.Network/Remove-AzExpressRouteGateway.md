@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzExpressRouteGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzExpressRouteGateway.md
-ms.openlocfilehash: 27bacf6abdc7686224adb8bbe885dc31c56fd337
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 478d04430da3bee3e44edd5af96ba31a8356315d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140179069"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142468655"
 ---
 # Remove-AzExpressRouteGateway
 
 ## SYNOPSIS
-Cmdlet Remove-AzExpressRouteGateway menghapus gateway Azure ExpressRoute. Ini adalah gateway khusus untuk perangkat lunak Azure Virtual WAN konektivitas yang ditentukan.
+Cmdlet Remove-AzExpressRouteGateway menghapus gateway Azure ExpressRoute. Ini adalah gateway khusus untuk konektivitas yang ditentukan perangkat lunak Azure Virtual WAN.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azexpressroutegateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzExpressRouteGateway -ResourceId <String> [-PassThru] [-Force]
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzExpressRouteGateway menghapus gateway Azure ExpressRoute. Ini adalah gateway khusus untuk perangkat lunak Azure Virtual WAN konektivitas yang ditentukan.
+Cmdlet Remove-AzExpressRouteGateway menghapus gateway Azure ExpressRoute. Ini adalah gateway khusus untuk konektivitas yang ditentukan perangkat lunak Azure Virtual WAN.
 
 ## EXAMPLES
 
@@ -52,8 +55,8 @@ PS C:\> New-AzExpressRouteGateway -ResourceGroupName "testRG" -Name "testExpress
 PS C:\> Remove-AzExpressRouteGateway -ResourceGroupName "testRG" -Name "testExpressRoutegw" -Passthru
 ```
 
-Contoh ini membuat grup Sumber Daya, Virtual WAN, Virtual Hub, gateway ExpressRoute yang dapat disesuaikan di AS Tengah lalu segera menghapusnya. Untuk menyembunyikan perintah saat menghapus Gateway Virtual, gunakan bendera -Paksa.
-Ini akan menghapus ExpressRouteGateway dan semua ExpressRouteConnections yang terhubung ke dalamnya.
+Contoh ini membuat grup Sumber Daya, Virtual WAN, Hub Virtual, gateway ExpressRoute yang dapat diskalakan di AS Tengah lalu langsung menghapusnya. Untuk menyembunyikan perintah saat menghapus Gateway Virtual, gunakan bendera -Force.
+Tindakan ini akan menghapus ExpressRouteGateway dan semua ExpressRouteConnections yang terlampir di dalamnya.
 
 ### Contoh 2
 
@@ -65,9 +68,9 @@ PS C:\> New-AzExpressRouteGateway -ResourceGroupName "testRG" -Name "testExpress
 PS C:\> Get-AzExpressRouteGateway -ResourceGroupName "testRG" -Name "testExpressRoutegw" | Remove-AzExpressRouteGateway-Passthru
 ```
 
-Contoh ini membuat grup Sumber Daya, Virtual WAN, Virtual Hub, gateway ExpressRoute yang dapat disesuaikan di AS Pusat Barat, lalu segera menghapusnya. Penghapusan ini terjadi menggunakan pemipaan powershell, yang menggunakan objek ExpressRouteGateway yang dikembalikan oleh Get-AzExpressRouteGateway perintah.
-Untuk menyembunyikan perintah saat menghapus Gateway Virtual, gunakan bendera -Paksa.
-Ini akan menghapus ExpressRouteGateway dan semua ExpressRouteConnections yang terhubung ke dalamnya.
+Contoh ini membuat grup Sumber Daya, Virtual WAN, Hub Virtual, gateway ExpressRoute yang dapat diskalakan di AS Tengah Barat lalu langsung menghapusnya. Penghapusan ini terjadi menggunakan perpipaan powershell, yang menggunakan objek ExpressRouteGateway yang dikembalikan oleh perintah Get-AzExpressRouteGateway.
+Untuk menyembunyikan perintah saat menghapus Gateway Virtual, gunakan bendera -Force.
+Tindakan ini akan menghapus ExpressRouteGateway dan semua ExpressRouteConnections yang terlampir di dalamnya.
 
 ## PARAMETERS
 
@@ -86,8 +89,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya Azure untuk ExpressRouteGateway akan dihapus.
+ID sumber daya Azure untuk ExpressRouteGateway dihapus.
 
 ```yaml
 Type: System.String
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

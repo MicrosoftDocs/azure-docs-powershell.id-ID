@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/new-azkust
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/New-AzKustoClusterPrincipalAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/New-AzKustoClusterPrincipalAssignment.md
-ms.openlocfilehash: a805569f1206ad4b488138a7e2dae1b65c5183b5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0afca33d495911355647d3873bcdb87946a0b661
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140186432"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142489481"
 ---
 # New-AzKustoClusterPrincipalAssignment
 
 ## SYNOPSIS
-Membuat principalAssignment kluster Kusto.
+Buat Kusto cluster principalAssignment.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.kusto/new-azkustoclusterprincipalassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ New-AzKustoClusterPrincipalAssignment -ClusterName <String> -PrincipalAssignment
 ```
 
 ## DESCRIPTION
-Membuat principalAssignment kluster Kusto.
+Buat Kusto cluster principalAssignment.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat principalAssignment kluster Kusto
+### Contoh 1: Membuat Kusto cluster principalAssignment
 ```powershell
 PS C:\> New-AzKustoClusterPrincipalAssignment -ResourceGroupName testrg -ClusterName testnewkustocluster -PrincipalAssignmentName kustoprincipal1 -PrincipalId "7e1cb39f-d2cb-4f0d-801a-c9ea1f376e96" -PrincipalType App -Role AllDatabasesAdmin
 
@@ -40,7 +43,7 @@ Name                                Type
 testnewkustocluster/kustoprincipal1 Microsoft.Kusto/Clusters/PrincipalAssignments
 ```
 
-Perintah di atas membuat prinsipal kluster Kusto
+Perintah di atas membuat Kusto cluster principalAssignment
 
 ## PARAMETERS
 
@@ -60,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterName
-Nama kluster Kusto.
+Nama klaster Kusto.
 
 ```yaml
 Type: System.String
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalAssignmentName
-Nama principalAssignment Kusto.
+Nama Kusto principalAssignment.
 
 ```yaml
 Type: System.String
@@ -120,8 +123,8 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalId
-ID utama yang ditetapkan ke prinsipal kluster.
-Ini bisa menjadi email pengguna, ID aplikasi, atau nama grup keamanan.
+ID pokok yang ditetapkan pada prinsipal kluster.
+Ini bisa berupa email pengguna, ID aplikasi, atau nama grup keamanan.
 
 ```yaml
 Type: System.String
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalType
-Tipe pokok.
+Tipe prinsipal.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Kusto.Support.PrincipalType
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi kluster Kusto.
+Nama grup sumber daya yang berisi klaster Kusto.
 
 ```yaml
 Type: System.String
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -Peran
-Peran utama kluster.
+Peran pokok kluster.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Kusto.Support.ClusterPrincipalRole
@@ -181,8 +184,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-Id penyewa pokok
+Id penyewa dari prinsipal
 
 ```yaml
 Type: System.String
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -243,13 +246,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Kusto.Models.Api202101.IClusterPrincipalAssignment
+### Microsoft.Azure.PowerShell.Cmdlets. Kusto. Models.Api202101.IClusterPrincipalAssignment
 
 ## CATATAN
 

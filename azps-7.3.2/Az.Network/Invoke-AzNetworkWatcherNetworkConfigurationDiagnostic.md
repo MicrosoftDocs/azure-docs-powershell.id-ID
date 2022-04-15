@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/invoke-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Invoke-AzNetworkWatcherNetworkConfigurationDiagnostic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Invoke-AzNetworkWatcherNetworkConfigurationDiagnostic.md
-ms.openlocfilehash: d9c5099fa73d38fbddf51a7cf416932782e69853
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 325798f7e0a71d0a7790c51850c5bc7001c6e1ac
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139999861"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142495907"
 ---
 # Invoke-AzNetworkWatcherNetworkConfigurationDiagnostic
 
 ## SYNOPSIS
-Menjalankan sesi diagnostik konfigurasi jaringan untuk profil jaringan tertentu pada sumber daya target.
+Memanggil sesi diagnostik konfigurasi jaringan untuk profil jaringan tertentu pada sumber daya target.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/invoke-aznetworkwatchernetworkconfigurationdiagnostic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,11 +55,11 @@ Invoke-AzNetworkWatcherNetworkConfigurationDiagnostic -ResourceId <String> -Targ
 ```
 
 ## DESCRIPTION
-Cmdlet Invoke-AzNetworkWatcherNetworkConfigurationDiagnostic menjalankan sesi diagnostik konfigurasi jaringan untuk profil jaringan tertentu pada sumber daya target.
+Cmdlet Invoke-AzNetworkWatcherNetworkConfigurationDiagnostic memanggil sesi diagnostik konfigurasi jaringan untuk profil jaringan tertentu pada sumber daya target.
 
 ## EXAMPLES
 
-### Contoh 1: Invoke sesi diagnostik konfigurasi jaringan untuk VM dan profil jaringan tertentu
+### Contoh 1: Memanggil sesi diagnostik konfigurasi jaringan untuk VM dan profil jaringan yang ditentukan
 ```
 PS C:\> $profile = New-AzNetworkWatcherNetworkConfigurationDiagnosticProfile -Direction Inbound -Protocol Tcp -Source 10.1.1.4 -Destination * -DestinationPort 50
 PS C:\> Invoke-AzNetworkWatcherNetworkConfigurationDiagnostic -Location eastus -TargetResourceId /subscriptions/61cc8a98-a8be-4bfe-a04e-0b461f93fe35/resourceGroups/NwRgEastUS/providers/Microsoft.Compute/virtualMachines/vm1 -Profile $profile
@@ -94,7 +97,7 @@ Results : [
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengawas jaringan.
+Sumber daya pengamat jaringan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 
 ### -TargetResourceId
 ID sumber daya target untuk melakukan diagnostik konfigurasi jaringan.
-Opsi yang valid adalah VM, NetworkInterface, VMSS/NetworkInterface, dan Application Gateway.
+Opsi yang valid adalah VM, NetworkInterface, VMSS/NetworkInterface dan Application Gateway.
 
 ```yaml
 Type: System.String
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -VerbosityLevel
-Tingkat banyak kata.
+Tingkat verbositas.
 Nilai yang diterima adalah 'Normal', 'Minimum', 'Penuh'.
 
 ```yaml
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -259,7 +262,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkConfigurationDiagnosticResponse
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, network, networking, watcher, diagnostic, profile
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengawas, diagnostik, profil
 
 ## RELATED LINKS
 
@@ -267,7 +270,7 @@ Kata kunci: azure, azurerm, arm, resource, management, manager, network, network
 
 [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md)
 
-[Remove-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
+[Hapus-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
 
 [Get-AzNetworkWatcherNextHop](./Get-AzNetworkWatcherNextHop.md)
 
@@ -307,9 +310,9 @@ Kata kunci: azure, azurerm, arm, resource, management, manager, network, network
 
 [Get-AzNetworkWatcherTroubleshootingResult](./Get-AzNetworkWatcherTroubleshootingResult.md)
 
-[Get-AzNetworkWatcherReachabilityReport](./Get-AzNetworkWatcherReachabilityReport.md)
+[Get-AzNetworkWatcherReacherReportability](./Get-AzNetworkWatcherReachabilityReport.md)
 
-[Get-AzNetworkWatcherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
+[Get-AzNetworkWatcherReacherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
 
 [Get-AzNetworkWatcherFlowLogStatus](./Get-AzNetworkWatcherFlowLogStatus.md)
 

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/Set-AzCurrentStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/Set-AzCurrentStorageAccount.md
 ms.openlocfilehash: 87a24efbd5fca423d700ab01dd78765fd6d595bc
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132413800"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142496519"
 ---
 # Set-AzCurrentStorageAccount
 
 ## SYNOPSIS
-Mengubah akun langganan Storage langganan tertentu saat ini.
+Mengubah akun Storage saat ini dari langganan yang ditentukan.
 
 ## SYNTAX
 
@@ -26,19 +26,19 @@ Set-AzCurrentStorageAccount -ResourceGroupName <String> -Name <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### UsingStorageContext
+### MenggunakanStorageContext
 ```
 Set-AzCurrentStorageAccount -Context <IStorageContext> [-DefaultProfile <IAzureContextContainer>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzCurrentStorageAccount** memodifikasi akun Azure Storage langganan Azure tertentu dalam Azure PowerShell.
-Akun Storage saat ini digunakan sebagai default saat Anda mengakses Storage tanpa menentukan nama Storage pengguna.
+Cmdlet **Set-AzCurrentStorageAccount** mengubah akun Azure Storage saat ini dari langganan Azure yang ditentukan di Azure PowerShell.
+Akun Storage saat ini digunakan sebagai default saat Anda mengakses Storage tanpa menentukan nama akun Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Atur akun Storage ini
+### Contoh 1: Mengatur akun Storage saat ini
 ```
 PS C:\>Set-AzCurrentStorageAccount -ResourceGroupName "RG01" -AccountName "mystorageaccount"
 ```
@@ -49,7 +49,7 @@ Perintah ini mengatur akun Storage default untuk langganan yang ditentukan.
 
 ### -Konteks
 Menentukan objek **AzureStorageContext** untuk akun Storage saat ini.
-Untuk mendapatkan objek konteks penyimpanan, gunakan cmdlet New-AzStorageContext tersebut.
+Untuk mendapatkan objek konteks penyimpanan, gunakan cmdlet New-AzStorageContext.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama akun Storage yang dimodifikasi cmdlet ini.
+Menentukan nama akun Storage yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan grup sumber daya yang berisi Storage sumber daya untuk diubah.
+Menentukan grup sumber daya yang berisi akun Storage untuk diubah.
 
 ```yaml
 Type: System.String
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

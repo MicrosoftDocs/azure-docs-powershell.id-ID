@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallHubIpAddress.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallHubIpAddress.md
-ms.openlocfilehash: de9531747df94942d5f28d4c0945457920190f42
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 344defeacafc207ad8952f34797cdc63fe56ef3b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140570910"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142495727"
 ---
 # New-AzFirewallHubIpAddress
 
 ## SYNOPSIS
-Alamat ip yang terkait dengan firewall di hub virtual
+Alamat IP diasoicated ke firewall di hub virtual
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewallhubipaddress) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzFirewallHubIpAddress [-PrivateIPAddress <String>] [-PublicIPs <PSAzureFire
 ```
 
 ## DESCRIPTION
-Alamat ip yang berkaitan dengan firewall di hub virtual. Alamat bisa jadi publik dan privat
+Ip addresses assoicated to the firewall on virtual hub. Alamat ini dapat berupa alamat publik dan privat
 
 ## EXAMPLES
 
@@ -35,7 +38,7 @@ PS C:\> $fwpips = New-AzFirewallHubPublicIpAddress -Count 2
 PS C:\> New-AzFirewallHubIpAddress -PublicIPs $fwpips
 ```
 
-Contoh ini membuat objek alamat Ip Hub dengan hitungan 2 IP publik. Objek HubIPAddress dissosiliasi ke firewall pada hub virtual.
+Contoh ini membuat objek alamat Ip Hub dengan jumlah 2 IP publik. Objek HubIPAddress diasosiasikan ke firewall di hub virtual.
 
 ## PARAMETERS
 
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateIPAddress
-Alamat Ip privat Firewall yang dilampirkan ke Hub
+Alamat Ip pribadi Firewall yang dilampirkan ke Hub
 
 ```yaml
 Type: String
@@ -69,7 +72,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PublicIps
+### -PublicIPs
 Alamat IP Firewall yang dilampirkan ke hub
 
 ```yaml
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -115,11 +118,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
