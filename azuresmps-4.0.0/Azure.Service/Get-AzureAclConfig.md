@@ -4,16 +4,16 @@ ms.assetid: 0A32348E-C38D-4555-8F7C-6515F4EE7F23
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 590664f649f87e1ce3184ff366a025ba2a2502d5
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426560"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142279391"
 ---
 # Get-AzureAclConfig
 
 ## SYNOPSIS
-Mendapatkan objek konfigurasi ACL dari komputer virtual Azure.
+Mendapatkan objek konfigurasi ACL dari mesin virtual Azure.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,19 +25,19 @@ Get-AzureAclConfig [[-EndpointName] <String>] -VM <IPersistentVM> [-Profile <Azu
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureAclConfig** mendapatkan objek konfigurasi daftar kontrol akses (ACL, Access Control List) dari komputer virtual Azure yang sudah ada.
+Cmdlet **Get-AzureAclConfig** mendapatkan objek konfigurasi daftar kontrol akses (ACL) dari mesin virtual Azure yang sudah ada.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan objek konfigurasi ACL untuk titik akhir mesin virtual
+### Contoh 1: Dapatkan objek konfigurasi ACL untuk titik akhir mesin virtual
 ```
 PS C:\> $Acl = Get-AzureVM -ServiceName "ContosoService" -Name "VirtualMachine07" | Get-AzureAclConfig -EndpointName "Web"
 ```
 
-Perintah pertama mendapatkan mesin virtual bernama VirtualMachine07 dalam layanan yang bernama ContosoService menggunakan cmdlet **Get-AzureVM.**
-Perintah melewati objek itu ke cmdlet **Get-AzureAclConfig** menggunakan operator pipeline.
-Cmdlet tersebut mendapatkan konfigurasi ACL untuk titik akhir yang bernama Web.
-Perintah menyimpan objek konfigurasi ACL di $Acl variabel.
+Perintah pertama mendapatkan mesin virtual bernama VirtualMachine07 dalam layanan bernama ContosoService dengan menggunakan cmdlet **Get-AzureVM** .
+Perintah melewati objek tersebut ke cmdlet **Get-AzureAclConfig** menggunakan operator pipeline.
+Cmdlet tersebut mendapatkan konfigurasi ACL untuk titik akhir bernama Web.
+Perintah menyimpan objek konfigurasi ACL dalam variabel $Acl.
 
 ## PARAMETERS
 
@@ -57,16 +57,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -96,8 +96,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -139,9 +139,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureVM](./Get-AzureVM.md)
 
-[New-AzureAclConfig](./New-AzureAclConfig.md)
+[AzureAclConfig Baru](./New-AzureAclConfig.md)
 
-[Remove-AzureAclConfig](./Remove-AzureAclConfig.md)
+[Hapus-AzureAclConfig](./Remove-AzureAclConfig.md)
 
 [Set-AzureAclConfig](./Set-AzureAclConfig.md)
 

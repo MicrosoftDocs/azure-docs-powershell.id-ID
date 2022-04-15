@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseDataFlow.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseDataFlow.md
 ms.openlocfilehash: 21fe95e9219b5e83c2010eef8253fcbf9d564a8d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140498433"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142263517"
 ---
 # Set-AzSynapseDataFlow
 
 ## SYNOPSIS
-Membuat atau memperbarui alur data di dalam ruang kerja.
+Membuat atau memperbarui alur data di ruang kerja.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/set-azsynapsedataflow) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/set-azsynapsedataflow) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Set-AzSynapseDataFlow -WorkspaceObject <PSSynapseWorkspace> -Name <String> -Defi
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSynapseDataFlow** membuat alur data atau memperbarui alur data yang sudah ada di dalam ruang kerja.
+Cmdlet **Set-AzSynapseDataFlow** membuat aliran data atau memperbarui alur data yang sudah ada di ruang kerja.
 
 ## EXAMPLES
 
@@ -44,13 +44,13 @@ Cmdlet **Set-AzSynapseDataFlow** membuat alur data atau memperbarui alur data ya
 PS C:\> Set-AzSynapseDataFlow -WorkspaceName ContosoWorkspace -Name ContosoDataFlow -DefinitionFile "C:\\samples\\DataFlow.json"
 ```
 
-Perintah ini membuat alur data yang bernama ContosoDataFlow dalam ruang kerja yang bernama ContosoWorkspace.
-Perintah mendasarkan aliran data pada informasi di file DataFlow.json.
+Perintah ini membuat alur data bernama ContosoDataFlow di ruang kerja bernama ContosoWorkspace.
+Perintah mendasarkan aliran data pada informasi dalam file DataFlow.json.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -109,7 +109,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

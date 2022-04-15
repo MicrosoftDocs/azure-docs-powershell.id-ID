@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Remove-AzWvdRegistrationInfo.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Remove-AzWvdRegistrationInfo.md
-ms.openlocfilehash: f3bba1c92aef5d0b5a92c74102f91c99f493bda7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ab9c3c0733edab9d3084285f932448780ae0e4f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140381726"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142258243"
 ---
 # Remove-AzWvdRegistrationInfo
 
 ## SYNOPSIS
-Hapus informasi Windows pendaftaran desktop virtual Anda.
+Hapus info registrasi desktop virtual Windows.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/remove-azwvdregistrationinfo) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,16 +28,16 @@ Remove-AzWvdRegistrationInfo -HostPoolName <String> -ResourceGroupName <String> 
 ```
 
 ## DESCRIPTION
-Hapus informasi Windows pendaftaran desktop virtual Anda.
+Hapus info registrasi desktop virtual Windows.
 
 ## EXAMPLES
 
-### Contoh 1: Delete a Windows Virtual Desktop Registration Token
+### Contoh 1: Hapus Token Registrasi Desktop Virtual Windows
 ```powershell
 PS C:\> Remove-AzWvdRegistrationInfo -ResourceGroupName ResourceGroupName -HostPoolName HostPoolName
 ```
 
-Perintah ini menghapus Windows Token Registrasi Desktop Virtual di Kolam Host.
+Perintah ini menghapus Token Registrasi Desktop Virtual Windows di Kumpulan Host.
 
 ## PARAMETERS
 
@@ -54,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostPoolName
-Nama Host Pool
+Nama Pool Host
 
 ```yaml
 Type: System.String
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

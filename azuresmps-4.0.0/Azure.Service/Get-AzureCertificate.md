@@ -4,11 +4,11 @@ ms.assetid: 7BEFA810-685C-4553-BED8-4CD6BCF8A5FE
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 952a342c7a7f63d0dd4a521c19b76802ec7a761e
-ms.sourcegitcommit: eee5eb6b2ada4199d09ad670bcb86b942b48df40
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "132419484"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142279249"
 ---
 # Get-AzureCertificate
 
@@ -37,28 +37,28 @@ Cmdlet **Get-AzureCertificate** mendapatkan objek sertifikat dari layanan Azure.
 PS C:\> $AzureCert = Get-AzureCertificate -ServiceName "ContosoService"
 ```
 
-Perintah ini mendapatkan objek sertifikat dari layanan bernama ContosoService, lalu menyimpannya dalam $AzureCert sertifikat.
+Perintah ini mendapatkan objek sertifikat dari layanan bernama ContosoService, lalu menyimpannya dalam variabel $AzureCert.
 
 ### Contoh 2: Mendapatkan sertifikat dari layanan
 ```
 PS C:\> $AzureCert = Get-AzureCertificate -ServiceName "ContosoService" -Thumbprint '5383CE0343CB6563281CA97C1D4D712209CFFA97'
 ```
 
-Perintah ini mendapatkan objek sertifikat yang diidentifikasi dengan thumbprint tertentu dari layanan bernama ContosoService, lalu menyimpannya dalam $AzureCert valid.
+Perintah ini mendapatkan objek sertifikat yang diidentifikasi oleh sidik jari tertentu dari layanan bernama ContosoService, lalu menyimpannya dalam variabel $AzureCert.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -88,8 +88,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Menentukan nama layanan Azure yang mendapatkan sertifikat oleh cmdlet ini.
+Menentukan nama layanan Azure tempat cmdlet ini mendapatkan sertifikat.
 
 ```yaml
 Type: String
@@ -118,8 +118,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Thumbprint
-Menentukan thumbprint sertifikat yang didaurkan cmdlet ini.
+### -Sidik jari
+Menentukan sidik jari sertifikat yang didapat cmdlet ini.
 
 ```yaml
 Type: String
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -ThumbprintAlgorithm
-Menentukan algoritma yang digunakan untuk membuat sertifikat yang dicetak.
+Menentukan algoritma yang digunakan untuk membuat sidik jari sertifikat.
 
 ```yaml
 Type: String
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -163,8 +163,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Add-AzureCertificate](./Add-AzureCertificate.md)
 
-[New-AzureCertificateSetting](./New-AzureCertificateSetting.md)
+[AzureCertificateSetting baru](./New-AzureCertificateSetting.md)
 
-[Remove-AzureCertificate](./Remove-AzureCertificate.md)
+[Hapus-AzureCertificate](./Remove-AzureCertificate.md)
 
 

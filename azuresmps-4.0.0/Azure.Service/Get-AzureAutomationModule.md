@@ -4,23 +4,23 @@ ms.assetid: 73F90276-FABD-414A-B29D-83F371C1ED21
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: a26955c50650a744851e7a6256af432c7c7e8879
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421167"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142279267"
 ---
 # Get-AzureAutomationModule
 
 ## SYNOPSIS
 
-Dapatkan modul Otomatisasi Azure.
+Dapatkan modul Azure Automation.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
 ## SYNTAX
 
-### SecaraSemua (Default)
+### ByAll (Default)
 ```
 Get-AzureAutomationModule -AutomationAccountName <String> [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
@@ -35,8 +35,8 @@ Get-AzureAutomationModule -Name <String> -AutomationAccountName <String> [-Profi
 
 [!INCLUDE [aa-deprecation](../include/aa-deprecation.md)]
 
-Cmdlet **Get-AzureAutomationModule** mendapatkan satu atau beberapa Microsoft Azure modul Otomatisasi.
-Secara default, semua modul akan dikembalikan.
+Cmdlet **Get-AzureAutomationModule** mendapatkan satu atau beberapa modul Otomatisasi Microsoft Azure.
+Secara default, semua modul dikembalikan.
 Untuk mendapatkan modul tertentu, tentukan namanya.
 
 ## EXAMPLES
@@ -53,7 +53,7 @@ Perintah ini mendapatkan semua modul dalam akun Azure Automation bernama Contoso
 PS C:\> Get-AzureAutomationModule -AutomationAccountName "Contoso17" -Name "ContosoModule"
 ```
 
-Perintah ini memiliki modul bernama ContosoModule dalam akun Azure Automation yang bernama Contoso17.
+Perintah ini mendapatkan modul bernama ContosoModule di akun Azure Automation bernama Contoso17.
 
 ## PARAMETERS
 
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama modul untuk diambil.
+Menentukan nama modul yang akan diambil.
 
 ```yaml
 Type: String
@@ -88,8 +88,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -116,9 +116,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureAutomationModule](./New-AzureAutomationModule.md)
+[AzureAutomationModule Baru](./New-AzureAutomationModule.md)
 
-[Remove-AzureAutomationModule](./Remove-AzureAutomationModule.md)
+[Hapus-AzureAutomationModule](./Remove-AzureAutomationModule.md)
 
 [Set-AzureAutomationModule](./Set-AzureAutomationModule.md)
 
