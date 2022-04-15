@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.analy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AnalysisServices/Commands.AnalysisServices.Dataplane/help/Export-AzureAnalysisServicesInstanceLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AnalysisServices/Commands.AnalysisServices.Dataplane/help/Export-AzureAnalysisServicesInstanceLog.md
-ms.openlocfilehash: 9db091632094341ee43de4075f21e1c1b442b7ac9fc79b8ead1d79090b83b005
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: dad0e14b72c256706456ed3c923b966323fd7dad
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140856494"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142283919"
 ---
 # Export-AzureAnalysisServicesInstanceLog
 
 ## SYNOPSIS
-Mengekspor log dari contoh server Analysis Services di Lingkungan yang saat ini dicatat dalam lingkungan seperti yang ditentukan Add-AzureAnalysisServicesAccount manajemen
+Mengekspor log dari contoh server Analysis Services di Lingkungan yang saat ini masuk seperti yang ditentukan dalam perintah Add-AzureAnalysisServicesAccount
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -36,11 +36,11 @@ Cmdlet Export-AzureAnalysisServicesInstance mengekspor log dari contoh server Az
 PS C:\>Export-AzureAnalysisServicesInstanceLog -Instance testserver -OuptutPath C:\path\to\log\testserver.log
 ```
 
-Perintah ini akan mengekspor log dari 'testserver' server di lingkungan yang ditentukan dalam perintah Add-AzureAnalysisServicesAccount lalu menyimpannya ke file yang ditentukan di OutputPath 'C:\path\to\log\testserver.log'
+Perintah ini akan mengekspor log dari server 'testserver' dalam lingkungan yang ditentukan dalam perintah Add-AzureAnalysisServicesAccount dan menyimpannya ke file yang ditentukan dalam OutputPath 'C:\path\to\log\testserver.log'
 
 ## PARAMETERS
 
-### -Force
+### -Paksa
 Timpa file jika ada tanpa bertanya
 
 ```yaml
@@ -56,7 +56,7 @@ Accept wildcard characters: False
 ```
 
 ### -Instance
-Nama contoh server Analysis Services
+Nama instans server Analysis Services
 
 ```yaml
 Type: System.String
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -116,11 +116,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
