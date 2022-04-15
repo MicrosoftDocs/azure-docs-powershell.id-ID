@@ -1,50 +1,51 @@
 ---
 external help file: ''
-Module Name: Az.Communication
-online version: https://docs.microsoft.com/powershell/module/az.communication/remove-azcommunicationservice
+Module Name: Az.ConnectedMachine
+online version: https://docs.microsoft.com/powershell/module/az.connectedmachine/remove-azconnectedprivatelinkscope
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/Remove-AzCommunicationService.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/Remove-AzCommunicationService.md
-ms.openlocfilehash: dd717a78a2a06867565c4ae3eb713b32b10e9017
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Remove-AzConnectedPrivateLinkScope.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Remove-AzConnectedPrivateLinkScope.md
+ms.openlocfilehash: eb3450e0c5efd01f10870572e3d1ca072ab07172
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 04/14/2022
-ms.locfileid: "142036793"
+ms.locfileid: "142179927"
 ---
-# Remove-AzCommunicationService
+# Remove-AzConnectedPrivateLinkScope
 
 ## SYNOPSIS
-Operasi untuk menghapus LayananKomunikasi.
-
-> [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.communication/remove-azcommunicationservice) untuk informasi terbaru.
+Menghapus Azure Arc PrivateLinkScope.
 
 ## SYNTAX
 
 ### Hapus (Default)
 ```
-Remove-AzCommunicationService -Name <String> -ResourceGroupName <String> [-SubscriptionId <String>]
+Remove-AzConnectedPrivateLinkScope -ResourceGroupName <String> -ScopeName <String> [-SubscriptionId <String>]
  [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-AzCommunicationService -InputObject <ICommunicationIdentity> [-DefaultProfile <PSObject>] [-AsJob]
- [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-AzConnectedPrivateLinkScope -InputObject <IConnectedMachineIdentity> [-DefaultProfile <PSObject>]
+ [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Operasi untuk menghapus LayananKomunikasi.
+Menghapus Azure Arc PrivateLinkScope.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus sumber daya Azure Communication yang ditentukan
+### Contoh 1: Menghapus lingkup tautan privat dalam langganan menurut nama
 ```powershell
-Remove-AzCommunicationService -Name ContosoAcsResource1 -ResourceGroupName ContosoResourceProvider1
+Remove-AzConnectedPrivateLinkScope -ResourceGroupName $resourceGroupName -ScopeName $scopeName
 ```
 
-Hapus / Hapus sumber daya Azure Communication.
+```output
+<None>
+```
+
+Menghapus lingkup link privat dalam langganan menurut nama
 
 ## PARAMETERS
 
@@ -82,7 +83,7 @@ Accept wildcard characters: False
 Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.Communication.Models.ICommunicationIdentity
+Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedMachine.Models.IConnectedMachineIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -90,21 +91,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Nama
-Nama sumber daya CommunicationService.
-
-```yaml
-Type: System.String
-Parameter Sets: Delete
-Aliases: CommunicationServiceName
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -141,6 +127,21 @@ Accept wildcard characters: False
 ### -ResourceGroupName
 Nama grup sumber daya.
 Nama ini tidak peka huruf besar kecil.
+
+```yaml
+Type: System.String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ScopeName
+Nama sumber daya Azure Arc PrivateLinkScope.
 
 ```yaml
 Type: System.String
@@ -205,7 +206,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Communication.Models.ICommunicationIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.ConnectedMachine.Models.IConnectedMachineIdentity
 
 ## OUTPUTS
 
@@ -220,10 +221,16 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICommunicationIdentity>: Parameter Identitas
-  - `[CommunicationServiceName <String>]`: Nama sumber daya CommunicationService.
+INPUTOBJECT <IConnectedMachineIdentity>: Parameter Identitas
+  - `[ExtensionName <String>]`: Nama ekstensi mesin.
+  - `[GroupName <String>]`: Nama sumber daya tautan privat.
   - `[Id <String>]`: Jalur identitas sumber daya
+  - `[Location <String>]`: Lokasi sumber daya target.
+  - `[MachineName <String>]`: Nama mesin hibrid.
+  - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
+  - `[PrivateLinkScopeId <String>]`: Id (Guid) sumber daya PrivateLinkScope Azure Arc.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ScopeName <String>]`: Nama sumber daya Azure Arc PrivateLinkScope.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS

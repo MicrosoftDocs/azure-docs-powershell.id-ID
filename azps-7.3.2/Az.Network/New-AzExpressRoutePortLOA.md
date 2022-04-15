@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzExpressRoutePortLOA.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzExpressRoutePortLOA.md
-ms.openlocfilehash: 007f04b6614f80911c3da94e94e65c9c30fd9ef3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1cfd910051eecfa6333d1395848f86007679e2bf
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140007574"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142032239"
 ---
 # New-AzExpressRoutePortLOA
 
 ## SYNOPSIS
-Unduh surat otorisasi dokumen untuk port rute ekspres.
+Unduh surat dokumen otorisasi untuk port rute ekspres.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azexpressrouteportloa) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ New-AzExpressRoutePortLOA -Id <String> -CustomerName <String> [-Destination <Str
 ```
 
 ## DESCRIPTION
-New-AzExpressRoutePortLOA cmdlet mengunduh surat otorisasi dokumen dalam format PDF untuk port rute ekspres.
+New-AzExpressRoutePortLOA cmdlet mengunduh surat otorisasi dokumen dalam format PDF untuk port rute kilat.
 
 
 ## EXAMPLES
@@ -48,11 +51,11 @@ New-AzExpressRoutePortLOA cmdlet mengunduh surat otorisasi dokumen dalam format 
 PS C:\> New-AzExpressRoutePortLOA -ResourceGroupName myRg -PortName myPort -CustomerName Contoso -Destination loa.pdf
 ```
 
-Unduh surat otorisasi dokumen untuk port rute ekspres 'myPort' dan simpan dalam file 'loa.pdf'.
+Unduh surat dokumen otorisasi untuk port rute kilat 'myPort' dan simpan dalam file 'loa.pdf'.
 
 ### Contoh 2
 
-Unduh surat otorisasi dokumen untuk port rute ekspres. (otomatisgenerated)
+Unduh surat dokumen otorisasi untuk port rute ekspres. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -62,7 +65,7 @@ New-AzExpressRoutePortLOA -CustomerName Contoso -Destination loa.pdf -ExpressRou
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomerName
-Nama pelanggan kepada siapa Port Rute Ekspres ini ditetapkan.
+Nama pelanggan tempat Express Route Port ditetapkan.
 
 ```yaml
 Type: System.String
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tujuan
-The output filepath to store the Letter of Authorization to.
+Output filepath untuk menyimpan Surat Otorisasi ke.
 
 ```yaml
 Type: System.String
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan. Secara default, cmdlet ini tidak menghasilkan output apa pun.
+Mengembalikan objek yang mewakili item tempat Anda bekerja. Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

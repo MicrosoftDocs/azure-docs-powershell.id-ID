@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualHubVnetConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualHubVnetConnection.md
-ms.openlocfilehash: 1948e7ad05370459b07a4031468e01c5ff996853
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 28924c544cbb853f7c59e7bc56953172fe91d517
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140385875"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142032023"
 ---
 # New-AzVirtualHubVnetConnection
 
 ## SYNOPSIS
-Cmdlet New-AzVirtualHubVnetConnection membuat sumber daya HubVirtualNetworkConnection yang menghubungkan Jaringan Virtual ke Azure Virtual Hub.
+Cmdlet New-AzVirtualHubVnetConnection membuat sumber daya HubVirtualNetworkConnection yang mengintip Virtual Network ke Azure Virtual Hub.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvirtualhubvnetconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -68,7 +71,7 @@ New-AzVirtualHubVnetConnection -ParentResourceId <String> -Name <String> -Remote
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzVirtualHubVnetConnection membuat sumber daya HubVirtualNetworkConnection yang menghubungkan Jaringan Virtual ke Azure Virtual Hub.
+Cmdlet New-AzVirtualHubVnetConnection membuat sumber daya HubVirtualNetworkConnection yang mengintip Virtual Network ke Azure Virtual Hub.
 
 ## EXAMPLES
 
@@ -106,11 +109,11 @@ RoutingConfiguration : {
                         }
 ```
 
-Langkah di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub di AS Tengah dalam grup sumber daya tersebut di Azure. Koneksi Jaringan Virtual akan dibuat setelahnya, yang akan peer Jaringan Virtual ke Virtual Hub.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual di AS Tengah dalam grup sumber daya tersebut di Azure. Koneksi Virtual Network akan dibuat setelahnya yang akan mengintip Virtual Network ke Hub Virtual.
 
 ### Contoh 2
 
-Cmdlet New-AzVirtualHubVnetConnection membuat sumber daya HubVirtualNetworkConnection yang menghubungkan Jaringan Virtual ke Azure Virtual Hub. (otomatisgenerated)
+Cmdlet New-AzVirtualHubVnetConnection membuat sumber daya HubVirtualNetworkConnection yang mengintip Virtual Network ke Azure Virtual Hub. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -155,12 +158,12 @@ VnetRoutes            : {
                         }
 PS C:\> New-AzVirtualHubVnetConnection -ResourceGroupName $rgName -VirtualHubName $virtualHubName -Name "testvnetconnection" -RemoteVirtualNetwork $remoteVirtualNetwork -RoutingConfiguration $routingconfig
 ```
-The above will create a new routing configuration and create static routes in the routing config with the next hop as a specified IP address. Konfigurasi perutean ini kemudian bisa disampaikan ke New-AzVirtualHubVnetConnection sebagai parameter -RoutingConfiguration.
+Hal di atas akan membuat konfigurasi perutean baru dan membuat rute statis dalam konfigurasi perutean dengan hop berikutnya sebagai alamat IP tertentu. Konfigurasi perutean ini kemudian dapat dimasukkan ke perintah New-AzVirtualHubVnetConnection sebagai parameter -RoutingConfiguration.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableInternetSecurity
-Aktifkan keamanan internet untuk koneksi ini
+Fungsikan keamanan internet untuk koneksi ini
 
 ```yaml
 Type: SwitchParameter
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableInternetSecurityFlag
-Aktifkan keamanan internet untuk koneksi ini
+Fungsikan keamanan internet untuk koneksi ini
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -280,7 +283,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemoteVirtualNetwork
-Jaringan virtual jarak jauh yang tersambung dengan koneksi jaringan virtual hub ini.
+Jaringan maya jauh tempat koneksi jaringan maya hub ini tersambung.
 
 ```yaml
 Type: PSVirtualNetwork
@@ -295,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemoteVirtualNetworkId
-Jaringan virtual jarak jauh yang tersambung dengan koneksi jaringan virtual hub ini.
+Jaringan maya jauh tempat koneksi jaringan maya hub ini tersambung.
 
 ```yaml
 Type: String
@@ -340,7 +343,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -356,7 +359,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -371,7 +374,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -391,4 +394,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Remove-AzVirtualHubVnetConnection](./Remove-AzVirtualHubVnetConnection.md)
 
-[New-AzRoutingConfiguration](./New-AzRoutingConfiguration.md)
+[Konfigurasi AzRouting Baru](./New-AzRoutingConfiguration.md)

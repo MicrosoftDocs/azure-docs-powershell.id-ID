@@ -1,50 +1,55 @@
 ---
 external help file: ''
-Module Name: Az.Communication
-online version: https://docs.microsoft.com/powershell/module/az.communication/remove-azcommunicationservice
+Module Name: Az.MySql
+online version: https://docs.microsoft.com/powershell/module/az.mysql/start-azmysqlflexibleserver
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/Remove-AzCommunicationService.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/Remove-AzCommunicationService.md
-ms.openlocfilehash: dd717a78a2a06867565c4ae3eb713b32b10e9017
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Start-AzMySqlFlexibleServer.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Start-AzMySqlFlexibleServer.md
+ms.openlocfilehash: e6f5f384be348ff996f52075636eb3abc1dba021
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 04/14/2022
-ms.locfileid: "142036793"
+ms.locfileid: "142168094"
 ---
-# Remove-AzCommunicationService
+# Start-AzMySqlFlexibleServer
 
 ## SYNOPSIS
-Operasi untuk menghapus LayananKomunikasi.
-
-> [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.communication/remove-azcommunicationservice) untuk informasi terbaru.
+Memulai server.
 
 ## SYNTAX
 
-### Hapus (Default)
+### Mulai (Default)
 ```
-Remove-AzCommunicationService -Name <String> -ResourceGroupName <String> [-SubscriptionId <String>]
+Start-AzMySqlFlexibleServer -Name <String> -ResourceGroupName <String> [-SubscriptionId <String>]
  [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### StartViaIdentity
 ```
-Remove-AzCommunicationService -InputObject <ICommunicationIdentity> [-DefaultProfile <PSObject>] [-AsJob]
- [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Start-AzMySqlFlexibleServer -InputObject <IMySqlIdentity> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Operasi untuk menghapus LayananKomunikasi.
+Memulai server.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus sumber daya Azure Communication yang ditentukan
+### Contoh 1: Memulai server menurut nama sumber daya
 ```powershell
-Remove-AzCommunicationService -Name ContosoAcsResource1 -ResourceGroupName ContosoResourceProvider1
+Start-AzMySqlFlexibleServer -ResourceGroupName PowershellMySqlTest -Name mysql-test
 ```
 
-Hapus / Hapus sumber daya Azure Communication.
+Memulai server menurut nama
+
+### Contoh 2: Memulai server menurut identitas
+```powershell
+$ID = "/subscriptions/<SubscriptionId>/resourceGroups/PowershellMySqlTest/providers/Microsoft.DBforMySQL/flexibleServers/mysql-test/start"
+Start-AzMySqlFlexibleServer -InputObject $ID
+```
+
+Memulai server menurut identitas
 
 ## PARAMETERS
 
@@ -82,8 +87,8 @@ Accept wildcard characters: False
 Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.Communication.Models.ICommunicationIdentity
-Parameter Sets: DeleteViaIdentity
+Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.IMySqlIdentity
+Parameter Sets: StartViaIdentity
 Aliases:
 
 Required: True
@@ -94,12 +99,12 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama sumber daya CommunicationService.
+Nama server.
 
 ```yaml
 Type: System.String
-Parameter Sets: Delete
-Aliases: CommunicationServiceName
+Parameter Sets: Start
+Aliases: ServerName
 
 Required: True
 Position: Named
@@ -144,7 +149,7 @@ Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
-Parameter Sets: Delete
+Parameter Sets: Start
 Aliases:
 
 Required: True
@@ -159,7 +164,7 @@ ID langganan target.
 
 ```yaml
 Type: System.String
-Parameter Sets: Delete
+Parameter Sets: Start
 Aliases:
 
 Required: False
@@ -205,7 +210,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Communication.Models.ICommunicationIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.IMySqlIdentity
 
 ## OUTPUTS
 
@@ -220,11 +225,18 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICommunicationIdentity>: Parameter Identitas
-  - `[CommunicationServiceName <String>]`: Nama sumber daya CommunicationService.
+INPUTOBJECT <IMySqlIdentity>: Parameter Identitas
+  - `[BackupName <String>]`: Nama cadangan.
+  - `[ConfigurationName <String>]`: Nama konfigurasi server.
+  - `[DatabaseName <String>]`: Nama database.
+  - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
+  - `[LocationName <String>]`: Nama lokasi.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
+  - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.
+  - `[VirtualNetworkRuleName <String>]`: Nama aturan jaringan virtual.
 
 ## RELATED LINKS
 
