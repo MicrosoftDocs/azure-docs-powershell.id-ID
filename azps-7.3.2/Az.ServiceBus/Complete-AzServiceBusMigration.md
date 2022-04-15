@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/compl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Complete-AzServiceBusMigration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Complete-AzServiceBusMigration.md
-ms.openlocfilehash: 9444539b13ffb7fbf47146c2ea0b2331ebe4e43f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 82ee3b64f8833b4aae85d75a8240ca42a02aafc4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140554529"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142402307"
 ---
 # Complete-AzServiceBusMigration
 
 ## SYNOPSIS
-Cmdlet mengatur Migrasi dari ruang nama Standar ke premium sebagai selesai dan string koneksi dari ruang nama standar sekarang arahkan ke Premium nama
+Cmdlet mengatur ruang nama Migrasi dari Standar ke premium sebagai string lengkap dan koneksi ruang nama standar kini mengarah ke ruang nama Premium
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/complete-azservicebusmigration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Complete-AzServiceBusMigration [-ResourceId] <String> [-PassThru] [-DefaultProfi
 ```
 
 ## DESCRIPTION
-Cmdlet **Complete-AzServiceBusMigration** mengatur migrasi dari ruang nama Standar ke premium sebagai selesai dan string koneksi dari kumpulan nama standar sekarang arahkan ke Premium nama
+Cmdlet **Complete-AzServiceBusMigration** mengatur Migrasi dari Standar ke ruang nama premium sebagai string lengkap dan koneksi ruang nama standar kini mengarah ke Premium ruang nama
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Cmdlet **Complete-AzServiceBusMigration** mengatur migrasi dari ruang nama Stand
 PS C:\> Complete-AzServiceBusMigration -ResourceGroupName ResourceGroup -Name NamespaceStandardMigration
 ```
 
-Mengatur migrasi ruang nama 'NamespaceStandardMigration' sebagai selesai.
+Mengatur Migrasi ruang nama 'NamespaceStandardMigration' sebagai selesai.
 
 ## PARAMETERS
 
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Bus Layanan migrasi - Objek Kumpulan Nama Standar
+konfigurasi Bus Layanan Migrasi - Objek Ruang Nama Standar
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceBus.Models.PSServiceBusDRConfigurationAttributes
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Bus Layanan Migrasi - Id Sumber Daya Ruang Nama Standar
+Migrasi Bus Layanan - Id Sumber Daya Ruang Nama Standar
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

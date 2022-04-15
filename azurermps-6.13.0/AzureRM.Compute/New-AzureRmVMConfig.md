@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/New-AzureRmVMConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/New-AzureRmVMConfig.md
 ms.openlocfilehash: 6809088110944648781fc2264bd2c56f98cbee1a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425463"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142389162"
 ---
 # New-AzureRmVMConfig
 
@@ -44,7 +44,7 @@ New-AzureRmVMConfig [-VMName] <String> [-VMSize] <String> [[-AvailabilitySetId] 
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmVMConfig** membuat objek mesin virtual lokal yang dapat dikonfigurasikan untuk Azure.
+Cmdlet **New-AzureRmVMConfig** membuat objek mesin virtual lokal yang dapat dikonfigurasi untuk Azure.
 Cmdlet lain dapat digunakan untuk mengonfigurasi objek mesin virtual, seperti Set-AzureRmVMOperatingSystem, Set-AzureRmVMSourceImage, Add-AzureRmVMNetworkInterface, dan Set-AzureRmVMOSDisk.
 
 ## EXAMPLES
@@ -55,15 +55,15 @@ PS C:\> $AvailabilitySet = Get-AzureRmAvailabilitySet -ResourceGroupName "Resour
 PS C:\> $VirtualMachine = New-AzureRmVMConfig -VMName "VirtualMachine07" -VMSize "Standard_A1" -AvailabilitySetID $AvailabilitySet.Id
 ```
 
-Perintah pertama mendapatkan kumpulan ketersediaan bernamaAblityAblitySet03 dalam grup sumber daya yang bernama ResourceGroup11, lalu menyimpan objek tersebut dalam $AvailabilitySet sumber daya.
-Perintah kedua membuat objek mesin virtual, lalu menyimpannya di $VirtualMachine variabel.
-Perintah menetapkan nama dan ukuran ke komputer virtual.
-Mesin virtual tersebut merupakan bagian dari ketersediaan yang telah diatur untuk $AvailabilitySet.
+Perintah pertama mendapatkan kumpulan ketersediaan bernama AvailablitySet03 dalam grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut dalam variabel $AvailabilitySet.
+Perintah kedua membuat objek mesin virtual, lalu menyimpannya dalam variabel $VirtualMachine.
+Perintah menetapkan nama dan ukuran ke mesin virtual.
+Mesin virtual termasuk dalam kumpulan ketersediaan yang disimpan di $AvailabilitySet.
 
 ## PARAMETERS
 
 ### -AssignIdentity
-Tentukan identitas yang ditetapkan sistem untuk komputer virtual.
+Tentukan identitas sistem yang ditetapkan untuk mesin maya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 
 ### -AvailabilitySetId
 Menentukan ID kumpulan ketersediaan.
-Untuk mendapatkan objek kumpulan ketersediaan, gunakan cmdlet Get-AzureRmAvailabilitySet ketersediaan.
+Untuk mendapatkan objek kumpulan ketersediaan, gunakan cmdlet Get-AzureRmAvailabilitySet.
 Objek set ketersediaan berisi properti ID.
 
 ```yaml
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -109,9 +109,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -EnableUltraSSD
-Memungkinkan kemampuan untuk memiliki satu atau beberapa disk data terkelola dengan jenis UltraSSD_LRS penyimpanan vm.
-Disk terkelola dengan tipe akun UltraSSD_LRS dapat ditambahkan ke mesin virtual hanya jika properti ini diaktifkan.
+### -EnableUltrassd
+Memungkinkan kemampuan untuk memiliki satu atau beberapa disk data terkelola dengan tipe akun penyimpanan UltraSSD_LRS pada VM.
+Disk terkelola dengan tipe akun penyimpanan UltraSSD_LRS dapat ditambahkan ke mesin virtual hanya jika properti ini diaktifkan.
 
 
 ```yaml
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 
 ### -IdentityId
 Menentukan daftar identitas pengguna yang terkait dengan kumpulan skala mesin virtual.
-Referensi identitas pengguna akan menjadi ID sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
+Referensi identitas pengguna akan berupa id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
 
 ```yaml
 Type: System.String[]
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -LicenseType
-Tipe lisensi, yang akan membawa skenario lisensi Anda sendiri.
+Tipe lisensi, yang ditujukan untuk membawa skenario lisensi Anda sendiri.
 
 ```yaml
 Type: System.String
@@ -173,7 +173,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tag
+### -Tags
 Tag yang dilampirkan ke sumber daya.
 
 ```yaml
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama untuk mesin virtual.
+Menentukan nama untuk mesin maya.
 
 ```yaml
 Type: System.String
@@ -218,8 +218,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Zone
-Menentukan daftar zona untuk mesin virtual.
+### -Zona
+Menentukan daftar zona untuk mesin maya.
 
 ```yaml
 Type: System.String[]
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -252,7 +252,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Update-AzureRmVM](./Update-AzureRmVM.md)
+[Perbarui-AzureRmVM](./Update-AzureRmVM.md)
 
 [Set-AzureRmVMOperatingSystem](./Set-AzureRmVMOperatingSystem.md)
 

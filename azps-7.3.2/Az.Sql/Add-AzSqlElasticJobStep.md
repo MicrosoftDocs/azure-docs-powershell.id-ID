@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/add-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlElasticJobStep.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlElasticJobStep.md
-ms.openlocfilehash: 74cb87c91ac9afe385999e254f0792c1bb34fe80
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: dae32c9a2a260b8ef1476ce6726229ad6e201e2c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140385534"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142401209"
 ---
 # Add-AzSqlElasticJobStep
 
 ## SYNOPSIS
 Menambahkan langkah pekerjaan ke pekerjaan
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/add-azsqlelasticjobstep) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -InitialRetryIntervalSeconds
-Detik interval coba lagi awal
+Interval interval awal coba detik
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaximumRetryIntervalSeconds
-Detik interval coba lagi maksimum
+Interval pengulangan maksimum detik
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -367,8 +370,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TryAttempts
-Percobaan percobaan kembali
+### -RetryAttempts
+Upaya coba lagi
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -383,7 +386,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetryIntervalBackoffMultiplier
-Interval coba lagi kembali ke pengali
+Interval coba kembali nonaktif pengali
 
 ```yaml
 Type: System.Nullable`1[System.Double]
@@ -455,7 +458,7 @@ Accept wildcard characters: False
 ```
 
 ### -TimeoutSeconds
-Waktu habis dalam detik
+Waktu habis detik
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -470,7 +473,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -486,7 +489,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -501,15 +504,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Sql.ElastisJobs.Model.AzureSqlElasticJobModel
+### Microsoft.Azure.Commands.Sql.ElasticJobs.Model.AzureSqlElasticJobModel
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Sql.ElastisJobs.Model.AzureSqlElasticJobStepModel
+### Microsoft.Azure.Commands.Sql.ElasticJobs.Model.AzureSqlElasticJobStepModel
 
 ## CATATAN
 

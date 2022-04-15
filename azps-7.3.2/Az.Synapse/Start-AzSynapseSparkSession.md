@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Start-AzSynapseSparkSession.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Start-AzSynapseSparkSession.md
-ms.openlocfilehash: 4502f7abd6c5128a182cc8067321b88d049e9834
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: be38cdab323996b1562cd960538734804642fa02
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140553579"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142395809"
 ---
 # Start-AzSynapseSparkSession
 
 ## SYNOPSIS
-Memulai sesi Grafik Apik Analitik Synapse.
+Memulai sesi Synapse Analytics Spark.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/start-azsynapsesparksession) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Start-AzSynapseSparkSession -SparkPoolObject <PSSynapseSparkPool> [-Language <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzSynapseSparkSession** memulai sesi Grafik Web Analitik Synapse.
+Cmdlet **Start-AzSynapseSparkSession** memulai sesi Synapse Analytics Spark.
 
 ## EXAMPLES
 
@@ -43,7 +46,7 @@ Cmdlet **Start-AzSynapseSparkSession** memulai sesi Grafik Web Analitik Synapse.
 PS C:\> Start-AzSynapseSparkSession -WorkspaceName ContosoWorkspace -SparkPoolName ContosoSparkPool -Name ContosoSessionName -ExecutorCount 3 -ExecutorSize Small
 ```
 
-Perintah ini memulai sesi Grafik Apik Analitik Azure Synapse.
+Perintah ini memulai sesi Azure Synapse Analytics Spark.
 
 ### Contoh 2
 ```powershell
@@ -51,12 +54,12 @@ PS C:\> $pool = Get-AzSynapseSparkPool -WorkspaceName ContosoWorkspace -Name Con
 PS C:\> $pool | Start-AzSynapseSparkSession -Name ContosoSessionName -ExecutorCount 3 -ExecutorSize Small
 ```
 
-Perintah ini memulai sesi Grafik Spark Analitik Azure Synapse melalui pipeline.
+Perintah ini memulai sesi Azure Synapse Analytics Spark melalui pipeline.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -Configuration
-Properti konfigurasi grafik api.
+Properti konfigurasi percikan api.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExecutorCount
-Jumlah eksekusi yang akan dialokasikan di pool Spark yang ditentukan untuk pekerjaan tersebut.
+Jumlah pelaksana yang akan dialokasikan dalam kumpulan Spark tertentu untuk pekerjaan tersebut.
 
 ```yaml
 Type: System.Int32
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExecutorSize
-Jumlah inti dan memori yang akan digunakan untuk mengeksekusi yang dialokasikan di pool Spark yang ditentukan untuk pekerjaan.
+Jumlah inti dan memori yang akan digunakan untuk pelaksana yang dialokasikan dalam kumpulan Spark tertentu untuk pekerjaan tersebut.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Language
+### -Bahasa
 Bahasa kode eksekusi.
 
 ```yaml
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama sesi Grafik Apik.
+Nama sesi Spark.
 
 ```yaml
 Type: System.String
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -SparkPoolName
-Nama pool Grafik Apik Synapse.
+Nama kolam renang Synapse Spark.
 
 ```yaml
 Type: System.String
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -SparkPoolObject
-Objek input spark pool, biasanya melewati saluran.
+Objek input spark pool, biasanya melewati pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSparkPool
@@ -207,7 +210,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

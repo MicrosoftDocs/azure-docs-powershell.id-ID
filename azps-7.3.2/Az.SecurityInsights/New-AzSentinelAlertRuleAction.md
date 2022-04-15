@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelAlertRuleAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelAlertRuleAction.md
-ms.openlocfilehash: 3745fa5577796fb0041b5cddbd1d92eb9049db0e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 05e7f36ada22ae55e47943ba36deaad57e7e4fde
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140549019"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142402505"
 ---
 # New-AzSentinelAlertRuleAction
 
 ## SYNOPSIS
 Menambahkan Respons Otomatis ke Aturan Analitik.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/new-azsentinelalertruleaction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,9 +29,9 @@ New-AzSentinelAlertRuleAction -ResourceGroupName <String> -WorkspaceName <String
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSentinelAlertRuleAction** membuat Respons Otomatis untuk Aturan Pemberitahuan dalam ruang kerja yang ditentukan.
-Anda harus menyediakan ResourceId Aplikasi Logika dan Uri Pemicu yang dapat ditemukan menggunakan [Azure Logic Apps PowerShell tersebut](https://docs.microsoft.com/en-us/powershell/module/az.logicapp/get-azlogicapp?view=azps-5.6.0).
-Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
+Cmdlet **New-AzSentinelAlertRuleAction** membuat Respons Otomatis untuk Aturan Peringatan di ruang kerja yang ditentukan.
+Anda harus menyediakan Logic App ResourceId dan Trigger Uri yang dapat ditemukan menggunakan [modul Azure Logic Apps PowerShell](https://docs.microsoft.com/en-us/powershell/module/az.logicapp/get-azlogicapp?view=azps-5.6.0).
+Anda dapat menggunakan variabel *Konfirmasi* parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
 
 ## EXAMPLES
 
@@ -39,8 +42,8 @@ $LogicAppTriggerUri = Get-AzLogicAppTriggerCallbackUrl -ResourceGroupName "MyRes
 $AlertRuleAction = New-AzSentinelAlertRuleAction -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -AlertRuleId "MyAlertRuleId" -LogicAppResourceId ($LogicAppResourceId.Id) -TriggerUri ($LogicAppTriggerUri.Value)
 ```
 
-Contoh ini membuat fungsi AlertRuleAction untuk Aturan Pemberitahuan yang ditentukan menggunakan properti Aplikasi Logika, lalu menyimpannya di $AlertRuleAction logika.<br/>
-Lalu kami menggunakan cmdlet New-AzSentinelAlertRuleAction untuk menambahkan Aplikasi Logika sebagai tindakan ke AlertRule spesifikasifc.
+Contoh ini membuat AlertRuleAction untuk Aturan Peringatan tertentu menggunakan properti Aplikasi Logika, lalu menyimpannya dalam variabel $AlertRuleAction.<br/>
+Lalu kami menggunakan cmdlet New-AzSentinelAlertRuleAction untuk menambahkan Aplikasi Logika sebagai tindakan ke AlertRule spekifc.
 
 ### Contoh 2
 ```powershell
@@ -60,8 +63,8 @@ $AnalyticsRule = Get-AzSentinelAlertRule @SentinelConnection | Where-Object {$PS
 $AlertRuleAction = New-AzSentinelAlertRuleAction @SentinelConnection -AlertRuleId $AnalyticsRule.Name -LogicAppResourceId ($LogicAppResourceId.Id) -TriggerUri ($LogicAppTriggerUri.Value)
 ```
 
-Contoh ini menggunakan 2 objek koneksi untuk tersambung dengan Azure Sentinel dan untuk mendapatkan Aplikasi Logika tertentu. <br/>
-Kemudian Aturan Analitik tertentu, berdasarkan nama tampilan, diambil dan digunakan dalam cmdlet final **New-AzSentinelAlertRuleAction** untuk menambahkan Aplikasi Logika ke Aturan Analitik.
+Contoh ini menggunakan 2 objek koneksi untuk terhubung dengan Azure Sentinel dan untuk mendapatkan Aplikasi Logika tertentu. <br/>
+Kemudian Aturan Analitik tertentu, berdasarkan nama tampilan, diambil dan digunakan dalam cmdlet **Final New-AzSentinelAlertRuleAction** untuk menambahkan Aplikasi Logika ke Aturan Analitik.
 
 ## PARAMETERS
 
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -AlertRuleId
-Id Aturan Pemberitahuan.
+Id Aturan Peringatan.
 
 ```yaml
 Type: System.String
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -TriggerUri
-Uri Pemicu Aplikasi Logika Tindakan.
+Aplikasi Logika Tindakan Memicu Uri.
 
 ```yaml
 Type: System.String
@@ -155,7 +158,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama Ruang Kerja.
 
 ```yaml
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,11 +204,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.SecurityInsights.Models.Actions.PSSentinelActionResponse

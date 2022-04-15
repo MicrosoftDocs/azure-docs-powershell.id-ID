@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecuritySecureScoreControlDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecuritySecureScoreControlDefinition.md
-ms.openlocfilehash: e0b4d9863a50abcb31a7f7b01dffcf774c4d81b3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9874d59b5e082122943920e49a6429d5dec435be
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140006394"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142402775"
 ---
 # Get-AzSecuritySecureScoreControlDefinition
 
 ## SYNOPSIS
-Mendapatkan definisi kontrol skor yang aman pada langganan
+Mendapatkan definisi kontrol skor aman keamanan pada langganan
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azsecuritysecurescorecontroldefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Get-AzSecuritySecureScoreControlDefinition -Name <String> [-DefaultProfile <IAzu
 ```
 
 ## DESCRIPTION
-The Get-AzSecuritySecureScoreControlDefinition comlet gets security secure score control definitions on a subscription.
+Komplet Get-AzSecuritySecureScoreControlDefinition mendapatkan definisi kontrol skor aman keamanan pada langganan.
 
 ## EXAMPLES
 
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
