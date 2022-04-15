@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Get-AzTimeSeriesInsightsEventSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Get-AzTimeSeriesInsightsEventSource.md
-ms.openlocfilehash: 6054faea72742db804938efc6515d2dda7cbe981
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 37ec92f2d769d331f3bb77721baa5150791989e7
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140005085"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142287367"
 ---
 # Get-AzTimeSeriesInsightsEventSource
 
 ## SYNOPSIS
-Dapatkan sumber acara dengan nama yang ditentukan dalam lingkungan tertentu.
+Mendapatkan sumber kejadian dengan nama yang ditentukan dalam lingkungan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.timeseriesinsights/get-aztimeseriesinsightseventsource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzTimeSeriesInsightsEventSource -EnvironmentName <String> -ResourceGroupName
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzTimeSeriesInsightsEventSource -EnvironmentName <String> -Name <String> -ResourceGroupName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -38,11 +41,11 @@ Get-AzTimeSeriesInsightsEventSource -InputObject <ITimeSeriesInsightsIdentity> [
 ```
 
 ## DESCRIPTION
-Dapatkan sumber acara dengan nama yang ditentukan dalam lingkungan tertentu.
+Mendapatkan sumber kejadian dengan nama yang ditentukan dalam lingkungan yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan semua sumber acara di bawah lingkungan yang ditentukan
+### Contoh 1: Mencantumkan semua sumber kejadian di bawah lingkungan yang ditentukan
 ```powershell
 PS C:\> Get-AzTimeSeriesInsightsEventSource -ResourceGroupName testgroup -EnvironmentName tsitest001
 
@@ -75,9 +78,9 @@ TimestampPropertyName :
 Type                  : Microsoft.TimeSeriesInsights/Environments/EventSources
 ```
 
-Perintah ini mencantumkan semua sumber kejadian di bawah lingkungan yang ditentukan.
+Perintah ini mencantumkan semua sumber kejadian di bawah lingkungan tertentu.
 
-### Contoh 2: Dapatkan sumber acara tertentu menurut nama
+### Contoh 2: Dapatkan sumber kejadian tertentu menurut nama
 ```powershell
 PS C:\> Get-AzTimeSeriesInsightsEventSource -ResourceGroupName testgroup -EnvironmentName tsitest001 -Name iots001
 
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnvironmentName
-Nama lingkungan Rangkaian Waktu Insights dengan grup sumber daya yang ditentukan.
+Nama lingkungan Insights Time Series yang terkait dengan grup sumber daya tertentu.
 
 ```yaml
 Type: System.String
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.TimeSeriesInsights.Models.ITimeSeriesInsightsIdentity
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Rangkaian Waktu dari sumber Insights terkait dengan lingkungan tertentu.
+Nama sumber kejadian Insights Time Series yang terkait dengan lingkungan yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -233,7 +236,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <ITimeSeriesInsightsIdentity>: Parameter Identitas
   - `[AccessPolicyName <String>]`: Nama kebijakan akses.
   - `[EnvironmentName <String>]`: Nama lingkungan
-  - `[EventSourceName <String>]`: Nama Sumber waktu yang Insights terkait dengan lingkungan tertentu.
+  - `[EventSourceName <String>]`: Nama sumber kejadian Insights Time Series yang terkait dengan lingkungan yang ditentukan.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ReferenceDataSetName <String>]`: Nama kumpulan data referensi.
   - `[ResourceGroupName <String>]`: Nama grup Sumber Daya Azure.

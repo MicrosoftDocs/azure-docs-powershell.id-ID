@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseRoleAssignment.md
-ms.openlocfilehash: af7f4ccffa169ec1d73d6fcacff3d18cb8f1c886
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: be173833f8e4134da8949b774d7f2814bc8ebfc6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140005301"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142249705"
 ---
 # New-AzSynapseRoleAssignment
 
 ## SYNOPSIS
 Membuat penetapan peran Analitik Synapse.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapseroleassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -78,7 +81,7 @@ New-AzSynapseRoleAssignment -WorkspaceObject <PSSynapseWorkspace> -RoleDefinitio
 ## DESCRIPTION
 Cmdlet **New-AzSynapseRoleAssignment** membuat penetapan peran Analitik Azure Synapse.
 
-Cmdlet dapat memanggil di bawah API Graph Microsoft sesuai dengan parameter input:
+Cmdlet dapat memanggil di bawah Api Graph Microsoft sesuai dengan parameter input:
 
 * GET /users/{id}
 * GET /servicePrincipals/{id}
@@ -90,21 +93,21 @@ Cmdlet dapat memanggil di bawah API Graph Microsoft sesuai dengan parameter inpu
 PS C:\> New-AzSynapseRoleAssignment -WorkspaceName ContosoWorkspace -RoleDefinitionName ContosoRole -SignInName ContosoName
 ```
 
-Perintah ini menetapkan ContosoRole kepada pengguna dengan nama utama ContosoName.
+Perintah ini menetapkan ContosoRole kepada pengguna yang nama pokoknya adalah ContosoName.
 
 ### Contoh 2
 ```powershell
 PS C:\> New-AzSynapseRoleAssignment -WorkspaceName ContosoWorkspace -RoleDefinitionName ContosoRole -SignInName ContosoName -ItemType ContosoItemType -Item ContosoItem
 ```
 
-Perintah ini menetapkan ContosoRole ke pengguna dengan nama utama ContosoName dan tipe item adalah ContosoItemType, item adalah ContosoItem.
+Perintah ini menetapkan ContosoRole kepada pengguna yang nama utamanya adalah ContosoName dan tipe item adalah ContosoItemType, item adalah ContosoItem.
 
 ### Contoh 3
 ```powershell
 PS C:\> New-AzSynapseRoleAssignment -WorkspaceName ContosoWorkspace -RoleDefinitionName ContosoRole -SignInName ContosoName -ItemType ContosoItemType -Item ContosoItem
 ```
 
-Perintah ini menetapkan ContosoRole ke pengguna dengan nama utama ContosoName dan tipe item adalah ContosoItemType, item adalah ContosoItem.
+Perintah ini menetapkan ContosoRole kepada pengguna yang nama utamanya adalah ContosoName dan tipe item adalah ContosoItemType, item adalah ContosoItem.
 
 ### Contoh 4
 ```powershell
@@ -112,12 +115,12 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | New-AzSynapseRoleAssignment -RoleDefinitionName ContosoRole -SignInName ContosoName
 ```
 
-Perintah ini menetapkan ContosoRole ke pengguna dengan nama utama ContosoName melalui pipeline.
+Perintah ini menetapkan ContosoRole kepada pengguna yang nama utamanya adalah ContosoName melalui pipeline.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-ObjectId Azure AD dari Prinsipal Pengguna, Grup atau Layanan.
+ObjectId Azure AD Dari Prinsipal Pengguna, Grup, atau Layanan.
 
 ```yaml
 Type: System.String
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleDefinitionId
-Id Peran yang ditetapkan kepada pokok.
+Id dari Peran yang ditetapkan untuk pokok.
 
 ```yaml
 Type: System.String
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleDefinitionName
-Nama Peran yang ditetapkan kepada pokok.
+Nama Peran yang ditetapkan untuk pokok.
 
 ```yaml
 Type: System.String
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalName
-ServicePrincipalName prinsipal layanan.
+ServicePrincipalName dari prinsipal layanan.
 
 ```yaml
 Type: System.String
@@ -252,7 +255,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -283,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -299,7 +302,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -314,7 +317,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

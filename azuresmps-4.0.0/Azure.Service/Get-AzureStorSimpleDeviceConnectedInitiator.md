@@ -3,28 +3,28 @@ external help file: Microsoft.WindowsAzure.Commands.StorSimple.dll-Help.xml
 ms.assetid: 9436E1AB-870F-4717-ABE0-55A90C07F7E4
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 198db31945cc1d8eb0144cb72b90855ffbd1b5861da0c13412eb2d1288b804f1
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: c76f170a0f2a0fe974d2c3b6aaeca1d320d22a88
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418651"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142278663"
 ---
 # Get-AzureStorSimpleDeviceConnectedInitiator
 
 ## SYNOPSIS
-Mendapatkan koneksi iSCSI yang tersedia untuk perangkat StorSimple.
+Dapatkan koneksi iSCSI yang tersedia untuk perangkat StorSimple.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
 ## SYNTAX
 
-### IdentifyById
+### IdentifikasiById
 ```
 Get-AzureStorSimpleDeviceConnectedInitiator -DeviceId <String> [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
 
-### IdentifyByName
+### IdentifikasiByName
 ```
 Get-AzureStorSimpleDeviceConnectedInitiator -DeviceName <String> [-Profile <AzureSMProfile>]
  [<CommonParameters>]
@@ -37,7 +37,7 @@ Objek koneksi iSCSI yang dikembalikan cmdlet ini berisi properti berikut:
 - **AcrInstanceId**
 - **AcrName**
 - **AllowedVolumeNames**
-- **InitiatorAddress**
+- **InisiatorAddress**
 - **Antarmuka**
 - **Iqn**
 - **IscsiConnectionId**
@@ -47,7 +47,7 @@ Secara default, koneksi dinonaktifkan.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua koneksi untuk perangkat
+### Contoh 1: Dapatkan semua koneksi untuk perangkat
 ```
 PS C:\>Get-AzureStorSimpleDeviceConnectedInitiator -DeviceName "Contoso63-AppVm"
 VERBOSE: ClientRequestId: bec615b9-79ab-4671-88b0-287adeb6bf68_PS
@@ -67,7 +67,7 @@ VERBOSE: 1 Iscsi Connection found!
 ```
 
 Perintah ini mendapatkan semua koneksi iSCSI untuk perangkat bernama Contoso63-AppVm.
-Perintah ini mengembalikan koneksi hanya jika koneksi diaktifkan untuk perangkat tersebut.
+Perintah ini mengembalikan koneksi hanya jika koneksi diaktifkan untuk perangkat.
 
 ## PARAMETERS
 
@@ -117,11 +117,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -131,7 +131,7 @@ Cmdlet ini mengembalikan objek koneksi iSCSI yang berisi properti berikut:
 - **AcrInstanceId**
 - **AcrName**
 - **AllowedVolumeNames**
-- **InitiatorAddress**
+- **InisiatorAddress**
 - **Antarmuka**
 - **Iqn**
 - **IscsiConnectionId**

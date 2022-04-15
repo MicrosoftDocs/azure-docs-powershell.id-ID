@@ -4,11 +4,11 @@ ms.assetid: 383DD041-78DC-4170-9529-1FD6F13BC178
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 98cbe46b8081ae34837704729e29e142c2c48c33
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421125"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142244413"
 ---
 # Remove-AzureSqlDatabaseServerFirewallRule
 
@@ -25,7 +25,7 @@ Remove-AzureSqlDatabaseServerFirewallRule -ServerName <String> -RuleName <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureSqlDatabaseServerFirewallRule** menghapus aturan firewall dari suatu Azure SQL Database Server dalam langganan saat ini.
+Cmdlet **Remove-AzureSqlDatabaseServerFirewallRule** menghapus aturan firewall dari contoh Azure SQL Database Server dalam langganan saat ini.
 
 ## EXAMPLES
 
@@ -38,8 +38,8 @@ Perintah ini menghapus aturan firewall bernama FirewallRule24 dari server Azure 
 
 ## PARAMETERS
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: SwitchParameter
@@ -54,8 +54,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -146,13 +146,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Azure SQL Database](https://azure.microsoft.com/en-us/services/sql-database/)
 
-[Menghapus Aturan Firewall](https://msdn.microsoft.com/en-us/library/azure/dn505706.aspx)
+[Hapus Aturan Firewall](https://msdn.microsoft.com/en-us/library/azure/dn505706.aspx)
 
 [Operasi untuk Database Azure SQL](https://msdn.microsoft.com/en-us/library/azure/dn505719.aspx)
 
 [Get-AzureSqlDatabaseServerFirewallRule](./Get-AzureSqlDatabaseServerFirewallRule.md)
 
-[New-AzureSqlDatabaseServerFirewallRule](./New-AzureSqlDatabaseServerFirewallRule.md)
+[Baru-AzureSqlDatabaseServerFirewallRule](./New-AzureSqlDatabaseServerFirewallRule.md)
 
 [Set-AzureSqlDatabaseServerFirewallRule](./Set-AzureSqlDatabaseServerFirewallRule.md)
 

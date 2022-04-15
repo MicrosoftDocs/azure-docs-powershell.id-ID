@@ -4,11 +4,11 @@ ms.assetid: D28DD808-E8EF-4C71-A353-8BF1E458DF6F
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: a17e34947251e387891de9a6ccdff7e204b5eb30
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423611"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142278115"
 ---
 # New-AzureAutomationSchedule
 
@@ -44,7 +44,7 @@ New-AzureAutomationSchedule -Name <String> -StartTime <DateTimeOffset> [-Descrip
 
 [!INCLUDE [aa-deprecation](../include/aa-deprecation.md)]
 
-Cmdlet **New-AzureAutomationSchedule** membuat jadwal dalam Microsoft Azure Automation.
+Cmdlet **New-AzureAutomationSchedule** membuat jadwal dalam Microsoft Azure Otomatisasi.
 
 ## EXAMPLES
 
@@ -53,7 +53,7 @@ Cmdlet **New-AzureAutomationSchedule** membuat jadwal dalam Microsoft Azure Auto
 PS C:\> New-AzureAutomationSchedule -AutomationAccountName "Contoso17" -Name "Schedule01" -StartTime "23:00" -OneTime
 ```
 
-Perintah berikut membuat jadwal yang berjalan satu kali di tanggal saat ini pada pukul 23.00.
+Perintah berikut membuat jadwal yang berjalan satu kali pada tanggal saat ini pada pukul 23.00.
 
 ### Contoh 2: Membuat jadwal berulang
 ```
@@ -62,7 +62,7 @@ PS C:\> $EndTime = $StartTime.AddYears(1)
 PS C:\> New-AzureAutomationSchedule -AutomationAccountName "Contoso17" -Name "Schedule02" -StartTime $StartTime -ExpiryTime $EndTime -DailyInterval 1
 ```
 
-Perintah berikut ini membuat jadwal baru yang berjalan pukul 13.00 setiap hari selama satu tahun yang dimulai pada hari ini.
+Perintah berikut membuat jadwal baru yang berjalan pada pukul 13.00 setiap hari selama satu tahun yang dimulai pada hari ini.
 
 ## PARAMETERS
 
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 
 ### -ExpiryTime
 Menentukan waktu kedaluwarsa jadwal.
-String bisa disediakan jika bisa dikonversi menjadi **DateTime** yang valid.
+String dapat disediakan jika string dapat dikonversi menjadi **DateTime** yang valid.
 
 ```yaml
 Type: DateTimeOffset
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama untuk jadwal tersebut.
+Menentukan nama untuk jadwal.
 
 ```yaml
 Type: String
@@ -173,8 +173,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -189,8 +189,8 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Menentukan waktu mulai sebuah jadwal.
-String bisa disediakan jika bisa dikonversi menjadi **DateTime** yang valid.
+Menentukan waktu mulai jadwal.
+String dapat disediakan jika string dapat dikonversi menjadi **DateTime** yang valid.
 
 ```yaml
 Type: DateTimeOffset
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -219,8 +219,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureAutomationSchedule](./Get-AzureAutomationSchedule.md)
 
-[Remove-AzureAutomationSchedule](./Remove-AzureAutomationSchedule.md)
+[Hapus-AzureAutomationSchedule](./Remove-AzureAutomationSchedule.md)
 
-[Set-AzureAutomationSchedule](./Set-AzureAutomationSchedule.md)
+[Atur-AzureAutomationSchedule](./Set-AzureAutomationSchedule.md)
 
 

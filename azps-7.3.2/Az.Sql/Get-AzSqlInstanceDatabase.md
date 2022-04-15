@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceDatabase.md
-ms.openlocfilehash: 2e102afdc5b790f575800f0a1f4d58bc1338f223
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 211096515e8f79dc8169af81c890dd07892beecf
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140006014"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142252441"
 ---
 # Get-AzSqlInstanceDatabase
 
 ## SYNOPSIS
-Mengembalikan informasi tentang database Azure SQL Instans Terkelola.
+Mengembalikan informasi tentang database Azure SQL Managed Instance.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlinstancedatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ Get-AzSqlInstanceDatabase [[-Name] <String>] [-InstanceObject] <AzureSqlManagedI
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlInstanceDatabase** mendapatkan satu atau beberapa database Azure SQL dari Azure SQL Database Terkelola.
+Cmdlet **Get-AzSqlInstanceDatabase** mendapatkan satu atau beberapa database Azure SQL dari Instans terkelola Azure SQL Database.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua database pada sebuah contoh
+### Contoh 1: Dapatkan semua database pada instans
 ```
 PS C:\>Get-AzSqlInstanceDatabase -InstanceName "managedInstance1" -ResourceGroupName "resourcegroup01"
 ResourceGroupName        : resourcegroup01
@@ -111,7 +114,7 @@ FailoverGroupId          :
 
 Perintah ini mendapatkan database bernama managedDatabase1 dari instans bernama managedInstance1.
 
-### Contoh 3: Mendapatkan semua database pada contoh menggunakan pemfilteran
+### Contoh 3: Mendapatkan semua database pada instans menggunakan pemfilteran
 ```
 PS C:\> Get-AzSqlInstanceDatabase -InstanceName "managedInstance1" -ResourceGroupName "resourcegroup01" -Name "managedDatabase*"
 ResourceGroupName        : resourcegroup01
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceObject
-Objek contoh yang digunakan untuk mendapatkan database contoh
+Objek instans yang akan digunakan untuk mendapatkan database instans
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.ManagedInstance.Model.AzureSqlManagedInstanceModel
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceResourceId
-Id sumber daya dari objek contoh yang akan
+Id sumber daya objek instans untuk mendapatkan
 
 ```yaml
 Type: System.String
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Database Contoh SQL Azure untuk diambil.
+Nama Database Instans Azure SQL untuk diambil.
 
 ```yaml
 Type: System.String
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

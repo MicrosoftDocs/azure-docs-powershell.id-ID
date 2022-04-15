@@ -4,17 +4,17 @@ ms.assetid: 1F875179-E3CA-4BBB-822A-600777B2D980
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: b8b88a85e024898dedfae51309c0d75d7a603819
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422920"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142278205"
 ---
 # New-AzureAutomationModule
 
 ## SYNOPSIS
 
-Mengimpor modul ke dalam Otomatisasi.
+Mengimpor modul ke Dalam Otomatisasi.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -30,7 +30,7 @@ New-AzureAutomationModule -Name <String> -ContentLink <Uri> [-Tags <IDictionary>
 [!INCLUDE [aa-deprecation](../include/aa-deprecation.md)]
 
 Cmdlet **New-AzureAutomationModule** mengimpor modul ke Azure Automation.
-Modul adalah file terkompresi, dengan .zip otomatis, berisi folder yang menyertakan salah satu tipe file berikut ini:
+Modul adalah file yang dipadatkan, dengan ekstensi .zip, yang berisi folder yang menyertakan salah satu tipe file berikut:
 
 - Modul Windows PowerShell (file psm1). 
 
@@ -38,7 +38,7 @@ Modul adalah file terkompresi, dengan .zip otomatis, berisi folder yang menyerta
 
 - Perakitan (file dll).
 
-Nama file zip, folder dalam file zip, dan file dalam folder (.psm1, psd.1, atau .dll) harus sesuai.
+Nama file zip, folder dalam file zip, dan file dalam folder (.psm1, psd.1, atau .dll) harus cocok.
 
 ## EXAMPLES
 
@@ -47,8 +47,8 @@ Nama file zip, folder dalam file zip, dan file dalam folder (.psm1, psd.1, atau 
 PS C:\> New-AzureAutomationModule -AutomationAccountName "Contoso17" -Name "ContosoModule" -ContentLink "http://contosostorage.blob.core.windows.net/modules/ContosoModule.zip"
 ```
 
-Perintah ini mengimpor modul yang bernama ContosoModule ke akun Otomatisasi yang bernama Contoso17.
-Modul ini disimpan di Azure blob dalam akun penyimpanan yang bernama contosostorage dan wadah yang bernama modul.
+Perintah ini mengimpor modul bernama ContosoModule ke akun Otomatisasi bernama Contoso17.
+Modul disimpan dalam blob Azure di akun penyimpanan bernama contosostorage dan kontainer bernama modul.
 
 ## PARAMETERS
 
@@ -99,8 +99,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -114,7 +114,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tag
+### -Tags
 Menentukan satu atau beberapa tag yang terkait dengan modul.
 
 ```yaml
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -144,7 +144,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureAutomationModule](./Get-AzureAutomationModule.md)
 
-[Remove-AzureAutomationModule](./Remove-AzureAutomationModule.md)
+[Hapus-AzureAutomationModule](./Remove-AzureAutomationModule.md)
 
 [Set-AzureAutomationModule](./Set-AzureAutomationModule.md)
 

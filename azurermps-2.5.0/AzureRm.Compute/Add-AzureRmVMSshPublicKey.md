@@ -5,16 +5,16 @@ ms.assetid: 3CE367B1-7685-4046-8E9C-CE680B5AE03F
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/add-azurermvmsshpublickey
 schema: 2.0.0
 ms.openlocfilehash: c8109a1fa13bff2a2a527bb7e1f9cb232d0e61c3
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422011"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142286377"
 ---
 # Add-AzureRmVMSshPublicKey
 
 ## SYNOPSIS
-Menambahkan kunci publik UNTUK KEYS untuk komputer virtual.
+Menambahkan kunci publik untuk SSH untuk mesin virtual.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -26,7 +26,7 @@ Add-AzureRmVMSshPublicKey [-VM] <PSVirtualMachine> [[-KeyData] <String>] [[-Path
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureRmVMSshPublicKey** menambahkan kunci publik yang dapat Anda gunakan untuk menyambungkan ke komputer virtual melalui Secure Shell (SHELL).
+Cmdlet **Add-AzureRmVMSshPublicKey** menambahkan kunci publik yang dapat Digunakan untuk menyambungkan ke mesin virtual melalui Secure Shell (SSH).
 
 ## EXAMPLES
 
@@ -36,15 +36,15 @@ PS C:\> $VirtualMachine = Get-AzureRmVM -ResourceGroupName "ResourceGroup11" -Na
 PS C:\> $VirtualMachine = Add-AzureRmVMSshPublicKey -VM $VirtualMachine -KeyData "MIIDszCCApugAwIBAgIJALBV9YJCF/tAMA0GCSq12Ib3DQEB21QUAMEUxCzAJBgNV" -Path "/home/admin/.ssh/authorized_keys"
 ```
 
-Perintah pertama mendapatkan mesin virtual bernama VirtualMachine07 menggunakan cmdlet **Get-AzureRmVM.**
-Perintah menyimpan mesin virtual di $VirtualMachine variabel.
+Perintah pertama mendapatkan mesin virtual bernama VirtualMachine07 menggunakan cmdlet **Get-AzureRmVM** .
+Perintah menyimpan mesin virtual dalam variabel $VirtualMachine.
 
 Perintah kedua menambahkan kunci publik ke lokasi di VirtualMachine07 yang ditentukan parameter Jalur.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -59,8 +59,8 @@ Accept wildcard characters: False
 ```
 
 ### -KeyData
-Menentukan pengodean basis 64 dari kunci publik.
-Anda dapat menyambungkan ke mesin virtual dengan MENGGUNAKANJAWAB atau menggunakan kunci yang ditentukan parameter ini.
+Menentukan pengodean basis 64 kunci publik.
+Anda dapat menyambungkan ke mesin virtual menggunakan SSH atau menggunakan kunci yang ditentukan parameter ini.
 
 ```yaml
 Type: String
@@ -74,9 +74,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur lengkap file, di komputer virtual, tempat cmdlet ini menyimpan kunci publik JPG.
-Jika file sudah ada, cmdlet ini akan menambahkan kunci ke file.
+### -Jalur
+Menentukan jalur lengkap file, di mesin virtual, di mana cmdlet ini menyimpan kunci publik SSH.
+Jika file sudah ada, cmdlet ini menambahkan kunci ke file.
 
 ```yaml
 Type: String
@@ -91,8 +91,8 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan objek mesin virtual yang telah dimodifikasi cmdlet ini.
-Untuk mendapatkan objek mesin virtual, gunakan cmdlet [Get-AzureRmVM.](./Get-AzureRmVM.md)
+Menentukan objek mesin virtual yang diubah cmdlet ini.
+Untuk mendapatkan objek mesin virtual, gunakan cmdlet [Get-AzureRmVM](./Get-AzureRmVM.md) .
 Anda dapat menggunakan cmdlet [New-AzureRmVMConfig](./New-AzureRmVMConfig.md) untuk membuat objek mesin virtual.
 
 ```yaml
@@ -108,12 +108,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSVirtualMachine
-Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari saluran
+Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari pipeline
 
 ## OUTPUTS
 
@@ -125,4 +125,4 @@ Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari saluran
 
 [Get-AzureRmVM](./Get-AzureRmVM.md)
 
-[New-AzureRmVMConfig](./New-AzureRmVMConfig.md)
+[AzureRmVMConfig Baru](./New-AzureRmVMConfig.md)

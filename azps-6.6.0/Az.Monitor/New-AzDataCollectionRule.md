@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzDataCollectionRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzDataCollectionRule.md
 ms.openlocfilehash: 9ad114e674d6ef39e92159eb3403a3c618ea3bdb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140308543"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142269979"
 ---
 # New-AzDataCollectionRule
 
@@ -18,7 +18,7 @@ ms.locfileid: "140308543"
 Membuat aturan pengumpulan data.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/new-azdatacollectionrule) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azdatacollectionrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,17 +40,17 @@ New-AzDataCollectionRule
 ## DESCRIPTION
 Cmdlet **New-AzDataCollectionRule** membuat aturan pengumpulan data.
 
-Aturan Pengumpulan Data (DCR, Data Collection Rules) menentukan data yang akan masuk ke Azure Monitor dan menentukan tempat data harus dikirimkan atau disimpan. Berikut adalah artikel gambaran [umum DCR lengkap](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection-rule-overview).
+Aturan Pengumpulan Data (DCR) menentukan data yang masuk ke Azure Monitor dan menentukan di mana data tersebut harus dikirim atau disimpan. Berikut adalah [artikel gambaran umum DCR](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection-rule-overview) lengkap.
 
-Untuk menggunakan parameter -RuleFile, buat file json yang berisi tiga properti: dataSources, tujuan, alur data (lihat Contoh #1)
+Untuk menggunakan parameter -RuleFile, buat file json yang berisi tiga properti: dataSources, tujuan, dataFlows (lihat Contoh #1)
 
-Anda mungkin menemukan detail [skema di sini](https://docs.microsoft.com/rest/api/monitor/datacollectionrules/create).
+Anda mungkin menemukan [detail skema](https://docs.microsoft.com/rest/api/monitor/datacollectionrules/create) di sini.
 
-Output DCR yang disialisasi dengan cmdlet ConvertTo-Json juga didukung (lihat Contoh #2).
+Output DCR yang diserialisasi dengan cmdlet ConvertTo-Json juga didukung (lihat Contoh #2).
 
 ## EXAMPLES
 
-### Contoh 1: Buat aturan pengumpulan data, JSON dari API Rest
+### Contoh 1: Membuat aturan pengumpulan data, JSON dari Rest API
 ```powershell
 PS C:\>New-AzDataCollectionRule -Location 'East US 2 EUAP' -ResourceGroupName 'testdcr' `
                                 -RuleName 'newDcrEx1' -RuleFile 'C:\samples\dcrEx1.json' `
@@ -111,7 +111,7 @@ Perintah ini membuat aturan pengumpulan data untuk langganan saat ini.
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

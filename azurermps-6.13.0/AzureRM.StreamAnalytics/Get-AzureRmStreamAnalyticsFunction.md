@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/StreamAnalytics/Commands.StreamAnalytics/help/Get-AzureRmStreamAnalyticsFunction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/StreamAnalytics/Commands.StreamAnalytics/help/Get-AzureRmStreamAnalyticsFunction.md
 ms.openlocfilehash: cd947a29a9312c056133e5e7e302b130623bd698
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426293"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142280376"
 ---
 # Get-AzureRmStreamAnalyticsFunction
 
 ## SYNOPSIS
-Mendapatkan fungsi dalam pekerjaan Analitik Stream.
+Dapatkan fungsi dalam pekerjaan Stream Analytics.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,18 +28,18 @@ Get-AzureRmStreamAnalyticsFunction [-JobName] <String> [[-Name] <String>] [-Reso
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmStreamAnalyticsFunction** mendapatkan daftar fungsi yang ditetapkan dalam pekerjaan Analitik Azure Stream atau informasi tentang fungsi tertentu.
+Cmdlet **Get-AzureRmStreamAnalyticsFunction** mendapatkan daftar fungsi yang ditentukan dalam pekerjaan Azure Stream Analytics atau informasi tentang fungsi tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua fungsi Analitik Streaming
+### Contoh 1: Dapatkan semua fungsi Stream Analytics
 ```
 PS C:\>Get-AzureRmStreamAnalyticsFunction -ResourceGroupName "StreamAnalytics-Default-West-US" -JobName "StreamJob22"
 ```
 
-Perintah ini menetapkan fungsi pada pekerjaan bernama StreamJob22.
+Perintah ini mendapatkan fungsi yang ditentukan pada pekerjaan bernama StreamJob22.
 
-### Contoh 2: Mendapatkan fungsi Analitik Streaming tertentu
+### Contoh 2: Dapatkan fungsi Stream Analytics tertentu
 ```
 PS C:\>Get-AzureRmStreamAnalyticsFunction -ResourceGroupName "StreamAnalytics-Default-West-US" -JobName "StreamJob22" -Name "ScoreTweet"
 ```
@@ -49,7 +49,7 @@ Perintah ini mendapatkan informasi tentang fungsi bernama ScoreTweet yang ditent
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobName
-Menentukan nama pekerjaan Stream Analytics untuk fungsi yang digunakan.
+Menentukan nama pekerjaan Stream Analytics tempat fungsi tersebut berada.
 Cmdlet ini mendapatkan fungsi untuk pekerjaan yang ditentukan parameter ini.
 
 ```yaml
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama fungsi Analitik Stream yang akan dapatkan cmdlet ini.
+Menentukan nama fungsi Stream Analytics yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat fungsi Analitik Stream berada.
+Menentukan nama grup sumber daya tempat fungsi Stream Analytics berada.
 Cmdlet ini mendapatkan fungsi untuk grup yang ditentukan parameter ini.
 
 ```yaml
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -119,16 +119,16 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.StreamAnalytics.Models.PSFunction
+### Microsoft.Azure.Commands.StreamAnalytics.Models.PSFungsi
 
 ## CATATAN
 
 ## RELATED LINKS
 
-[New-AzureRmStreamAnalyticsFunction](./New-AzureRmStreamAnalyticsFunction.md)
+[New-AzureRmStreamAnalyticsFungsi](./New-AzureRmStreamAnalyticsFunction.md)
 
-[Remove-AzureRmStreamAnalyticsFunction](./Remove-AzureRmStreamAnalyticsFunction.md)
+[Remove-AzureRmStreamAnalyticsFungsi](./Remove-AzureRmStreamAnalyticsFunction.md)
 
-[Test-AzureRmStreamAnalyticsFunction](./Test-AzureRmStreamAnalyticsFunction.md)
+[Uji-AzureRmStreamAnalyticsFungsi](./Test-AzureRmStreamAnalyticsFunction.md)
 
 

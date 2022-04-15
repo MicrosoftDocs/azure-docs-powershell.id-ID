@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPoolRestorePoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPoolRestorePoint.md
-ms.openlocfilehash: e1a5a5d693cbfd667e52cc3905f9fdd103d77bd6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 08cc7ffc7bf20fb777e9e1b0dbb609179ade291b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140548099"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142249939"
 ---
 # Get-AzSynapseSqlPoolRestorePoint
 
 ## SYNOPSIS
-Mengambil titik pemulihan berbeda di mana synapse Analytics SQL lain bisa dipulihkan.
+Mengambil titik pemulihan yang berbeda dari mana kumpulan SQL Analitik Synapse dapat dipulihkan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsesqlpoolrestorepoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Get-AzSynapseSqlPoolRestorePoint -ResourceId <String> [-DefaultProfile <IAzureCo
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseSqlPoolRestorePoint** mengambil titik pemulihan berbeda yang dapat dipulihkan oleh SQL Analitik Azure Synapse.
+Cmdlet **Get-AzSynapseSqlPoolRestorePoint** mengambil titik pemulihan yang berbeda dari kumpulan SQL Analitik Azure Synapse dapat dipulihkan.
 
 ## EXAMPLES
 
@@ -53,7 +56,7 @@ Cmdlet **Get-AzSynapseSqlPoolRestorePoint** mengambil titik pemulihan berbeda ya
 PS C:\> Get-AzSynapseSqlPoolRestorePoint -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -Name ContosoSqlPool
 ```
 
-Perintah ini mengembalikan semua titik pemulihan yang tersedia untuk azure Synapse Analytics SQL bernama ContosoSqlPool.
+Perintah ini mengembalikan semua titik pemulihan yang tersedia untuk kumpulan SQL Azure Synapse Analytics bernama ContosoSqlPool.
 
 ## PARAMETERS
 
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-SQL input kolam renang, biasanya melewati saluran.
+SQL objek input pool, biasanya melewati pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSqlPool
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama SQL Tim.
+Nama Synapse SQL pool.
 
 ```yaml
 Type: System.String
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya dari Synapse SQL Pool.
+Pengidentifikasi sumber daya Synapse SQL Pool.
 
 ```yaml
 Type: System.String
@@ -132,7 +135,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

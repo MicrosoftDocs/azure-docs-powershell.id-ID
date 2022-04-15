@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ManagedServices/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/New-AzManagedServicesAuthorizationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/New-AzManagedServicesAuthorizationObject.md
-ms.openlocfilehash: 3dbc06c571f0228aaa1ce45e247dd7cd42962fd8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: b7f00c96aa36a75835b8b39d56a7080c4cb6d337
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140000365"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142214749"
 ---
 # New-AzManagedServicesAuthorizationObject
 
 ## SYNOPSIS
-Buat objek dalam memori untuk Otorisasi.
+Membuat objek dalam memori untuk Otorisasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.managedservices/new-azmanagedservicesauthorizationobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ New-AzManagedServicesAuthorizationObject -PrincipalId <String> -RoleDefinitionId
 ```
 
 ## DESCRIPTION
-Buat objek dalam memori untuk Otorisasi.
+Membuat objek dalam memori untuk Otorisasi.
 
 ## EXAMPLES
 
-### Contoh 1: Buat objek Otorisasi Mercusuar Azure yang baru untuk digunakan dengan definisi Registrasi
+### Contoh 1: Membuat objek Otorisasi Azure Lighthouse baru untuk digunakan dengan Definisi registrasi
 ```powershell
 PS C:\> New-AzManagedServicesAuthorizationObject -PrincipalId "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" -RoleDefinitionId "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" -PrincipalIdDisplayName "Test user"
 
@@ -38,9 +41,9 @@ DelegatedRoleDefinitionId PrincipalId                          PrincipalIdDispla
                           xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx Test user              xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 ```
 
-Membuat objek otorisasi Mercusuar Azure baru untuk digunakan dengan definisi Registrasi.
+Membuat objek otorisasi Azure Lighthouse baru untuk digunakan dengan definisi Registrasi.
 
-### Contoh 2: Membuat objek Azure Lighthouse Authorization baru dengan delegatedRoleDefinitionIds
+### Contoh 2: Membuat objek Azure Lighthouse Authorization baru dengan delegasiRoleDefinitionIds
 ```powershell
 PS C:\> New-AzManagedServicesAuthorizationObject -PrincipalId "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" -RoleDefinitionId "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" -PrincipalIdDisplayName "Test user" -DelegatedRoleDefinitionId "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 
@@ -49,13 +52,13 @@ DelegatedRoleDefinitionId                                                    Pri
 {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx, xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx} xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx Test user              xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 ```
 
-Membuat objek otorisasi Mercusuar Azure baru dengan pendelegasikanRoleDefinitionIds.
+Membuat objek otorisasi Azure Lighthouse baru dengan DelegatedRoleDefinitionIds.
 
 ## PARAMETERS
 
 ### -DelegatedRoleDefinitionId
-Bidang delegatedRoleDefinitionIds diperlukan saat peranDefinitionId merujuk pada Peran Administrator Akses Pengguna.
-Ini adalah daftar id definisi peran yang menetapkan semua izin yang bisa ditetapkan pengguna ke prinsipal lain dalam otorisasi.
+Bidang delegasiRoleDefinitionIds diperlukan saat roleDefinitionId merujuk ke Peran Administrator Akses Pengguna.
+Ini adalah daftar id definisi peran yang menentukan semua izin yang dapat ditetapkan pengguna dalam otorisasi ke prinsipal lain.
 
 ```yaml
 Type: System.String[]
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalId
-Pengidentifikasi dari Azure Active Directory pokok.
+Pengidentifikasi prinsipal Azure Active Directory.
 
 ```yaml
 Type: System.String
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalIdDisplayName
-Nama tampilan pokok Azure Active Directory.
+Nama tampilan prinsipal Azure Active Directory.
 
 ```yaml
 Type: System.String
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleDefinitionId
-Pengidentifikasi peran bawaan Azure yang menentukan izin yang akan tersedia Azure Active Directory utamanya pada lingkup yang diproyeksikan.
+Pengidentifikasi peran bawaan Azure yang menentukan izin yang akan dimiliki prinsipal Azure Active Directory pada lingkup yang diproyeksikan.
 
 ```yaml
 Type: System.String
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

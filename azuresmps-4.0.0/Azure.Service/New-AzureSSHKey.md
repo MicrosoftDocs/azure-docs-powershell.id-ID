@@ -3,17 +3,17 @@ external help file: Microsoft.WindowsAzure.Commands.ServiceManagement.dll-Help.x
 ms.assetid: AA58B897-EFA0-4321-9246-ED8E11AB3538
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 83bab34bea06b65f1f824c03694b1fc570a2dfc761333516334802d361b52987
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 99c011e61b4381e7241d3f5fdcfde43572e6d685
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419220"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142245152"
 ---
 # New-AzureSSHKey
 
 ## SYNOPSIS
-Membuat objek Kunci LINUX untuk menyisipkan sertifikat yang sudah ada ke komputer virtual Azure berbasis Linux baru.
+Membuat objek Kunci SSH untuk menyisipkan sertifikat yang sudah ada ke mesin virtual Azure berbasis Linux yang baru.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,16 +25,16 @@ New-AzureSSHKey [-KeyPair] [-Fingerprint] <String> [-Path] <String> [-Informatio
  [-InformationVariable <String>] [<CommonParameters>]
 ```
 
-### publickey
+### kunci publik
 ```
 New-AzureSSHKey [-PublicKey] [-Fingerprint] <String> [-Path] <String> [-InformationAction <ActionPreference>]
  [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureSSHKey** membuat objek Key CMDLETSINDAH UNTUK sertifikat yang telah ditambahkan ke Azure.
-Objek Kunci ROUTER ini kemudian dapat digunakan oleh **New-AzureProvisioningConfig** ketika membuat objek konfigurasi untuk mesin virtual baru menggunakan **New-AzureVM**, atau saat membuat mesin virtual baru dengan **New-AzureQuickVM**.
-Ketika disertakan sebagai bagian dari skrip pembuatan mesin virtual, langkah ini akan menambahkan Kunci Publik SHELL atau Key Pair yang ditentukan ke mesin virtual baru.
+Cmdlet **AzureSSHKey Baru** membuat objek Kunci SSH untuk sertifikat yang telah ditambahkan ke Azure.
+Objek Kunci SSH ini kemudian dapat digunakan oleh **New-AzureProvisioningConfig** saat membuat objek konfigurasi untuk mesin virtual baru menggunakan **New-AzureVM**, atau saat membuat mesin virtual baru dengan **New-AzureQuickVM**.
+Ketika disertakan sebagai bagian dari skrip pembuatan mesin virtual, ini menambahkan Kunci Publik SSH atau Pasangan Kunci tertentu ke mesin virtual baru.
 
 ## EXAMPLES
 
@@ -54,11 +54,11 @@ New-AzureVMConfig -Name "MyVM2" -InstanceSize Small -ImageName $LxImage `
           | New-AzureVM -ServiceName "MySvc"
 ```
 
-Perintah ini menambahkan sertifikat ke layanan Azure, lalu membuat mesin virtual Linux baru yang menggunakan sertifikat tersebut.
+Perintah ini menambahkan sertifikat ke layanan Azure, lalu membuat mesin virtual Linux baru yang menggunakan sertifikat.
 
 ## PARAMETERS
 
-### -Fingerprint
+### -Sidik jari
 Menentukan sidik jari sertifikat.
 
 ```yaml
@@ -74,16 +74,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyPair
-Menentukan bahwa cmdlet ini membuat objek untuk menyisipkan Pasangan Tombol CMDLET CMDLET ke dalam konfigurasi mesin virtual yang baru.
+Menentukan bahwa cmdlet ini membuat objek untuk menyisipkan Pasangan Tombol SSH ke konfigurasi mesin virtual baru.
 
 ```yaml
 Type: SwitchParameter
@@ -127,8 +127,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur untuk menyimpan Kunci Publik DAN Key Pair CHROME.
+### -Jalur
+Menentukan jalur untuk menyimpan Kunci Publik SSH atau Pasangan Kunci.
 
 ```yaml
 Type: String
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicKey
-Menentukan bahwa cmdlet ini membuat objek untuk menyisipkan Kunci Publik CMDLETS ke konfigurasi mesin virtual yang baru.
+Menentukan bahwa cmdlet ini membuat objek untuk menyisipkan Kunci Publik SSH ke konfigurasi mesin virtual baru.
 
 ```yaml
 Type: SwitchParameter
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -170,9 +170,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Add-AzureProvisioningConfig](./Add-AzureProvisioningConfig.md)
 
-[New-AzureVMConfig](./New-AzureVMConfig.md)
+[AzureVMConfig baru](./New-AzureVMConfig.md)
 
-[New-AzureVM](./New-AzureVM.md)
+[AzureVM baru](./New-AzureVM.md)
 
 [New-AzureQuickVM](./New-AzureQuickVM.md)
 

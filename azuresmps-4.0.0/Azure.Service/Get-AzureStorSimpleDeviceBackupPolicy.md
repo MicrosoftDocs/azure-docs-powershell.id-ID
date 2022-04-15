@@ -4,16 +4,16 @@ ms.assetid: 8C7551CD-0222-44D1-AA1B-647669B01853
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 11b2c27d4eac62a860d8da2f70de64aa0dd22d94
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428082"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142278691"
 ---
 # Get-AzureStorSimpleDeviceBackupPolicy
 
 ## SYNOPSIS
-Mendapatkan kebijakan pencadangan.
+Mendapatkan kebijakan cadangan.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,8 +25,8 @@ Get-AzureStorSimpleDeviceBackupPolicy -DeviceName <String> [-BackupPolicyName <S
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureStorSimpleDeviceBackupPolicy** mendapatkan kebijakan pencadangan.
-Cmdlet ini mengembalikan **objek BackupPolicy** atau daftar semua objek **BackupPolicy** yang termasuk dalam perangkat.
+Cmdlet **Get-AzureStorSimpleDeviceBackupPolicy** mendapatkan kebijakan cadangan.
+Cmdlet ini mengembalikan objek **BackupPolicy** atau daftar semua objek **BackupPolicy** yang dimiliki perangkat.
 Objek kebijakan cadangan berisi properti berikut ini: 
 
 - **Nama**
@@ -36,11 +36,11 @@ Objek kebijakan cadangan berisi properti berikut ini:
 - **NextBackup**
 - **SchedulesCount**
 - **SSMHostName**
-- **VolumeSCount**
+- **VolumesCount**
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan detail untuk kebijakan
+### Contoh 1: Dapatkan detail untuk kebijakan
 ```
 PS C:\>Get-AzureStorSimpleDeviceBackupPolicy -DeviceName "Contoso63-AppVm" -BackupPolicyName "GeneralBackupPolicy07"
 VERBOSE: ClientRequestId: 2a878cd6-8432-4646-8be8-a0cb0750958e_PS
@@ -63,9 +63,9 @@ OperationInProgress      : None
 VERBOSE: BackupPolicy with id 84140a6a-9254-4fff-8d09-ae40e9f1bc7d found!
 ```
 
-Perintah ini mendapatkan objek **BackupPolicyDetails** yang bernama GeneralBackupPolicy07 pada perangkat yang bernama Contoso63-AppVm.
+Perintah ini mendapatkan objek **BackupPolicyDetails** bernama GeneralBackupPolicy07 di perangkat bernama Contoso63-AppVm.
 
-### Contoh 2: Mendapatkan daftar kebijakan pencadangan
+### Contoh 2: Dapatkan daftar kebijakan pencadangan
 ```
 PS C:\>Get-AzureStorSimpleDeviceBackupPolicy -DeviceName "Contoso63-AppVm"
 InstanceId                           Name                               SchedulesCount VolumesCount                       BackupPolicyCreationType          LastBackup                        NextBackup                        SSMHostName                      
@@ -84,7 +84,7 @@ Perintah ini mencantumkan objek **BackupPolicy** di perangkat bernama Contoso63-
 ## PARAMETERS
 
 ### -BackupPolicyName
-Menentukan nama kebijakan pencadangan untuk mendapatkan.
+Menentukan nama kebijakan cadangan yang akan didapatkan.
 Jika Anda tidak menentukan parameter ini, cmdlet ini akan mendapatkan semua kebijakan.
 
 ```yaml
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceName
-Tentukan nama perangkat StorSimple yang digunakan untuk membuat kebijakan pencadangan.
+Menentukan nama perangkat StorSimple untuk membuat kebijakan cadangan.
 
 ```yaml
 Type: String
@@ -130,25 +130,25 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
-### IList \<BackupPolicy\> , BackupPolicyDetails
-Cmdlet ini mengembalikan objek **BackupPolicyDetails,** jika Anda menentukan parameter *BackupPolicyName.*
-Jika Anda tidak menentukan parameter itu, maka akan mengembalikan **objek IList. \<BackupPolicy\>**
+### IList\<BackupPolicy\>, BackupPolicyDetails
+Cmdlet ini mengembalikan objek **BackupPolicyDetails** , jika Anda menentukan parameter *BackupPolicyName* .
+Jika Anda tidak menentukan parameter tersebut, maka akan mengembalikan objek **IList\<BackupPolicy\>** .
 
 ## CATATAN
 
 ## RELATED LINKS
 
-[New-AzureStorSimpleDeviceBackupPolicy](./New-AzureStorSimpleDeviceBackupPolicy.md)
+[Baru-AzureStorSimpleDeviceBackupPolicy](./New-AzureStorSimpleDeviceBackupPolicy.md)
 
-[Remove-AzureStorSimpleDeviceBackupPolicy](./Remove-AzureStorSimpleDeviceBackupPolicy.md)
+[Hapus-AzureStorSimpleDeviceBackupPolicy](./Remove-AzureStorSimpleDeviceBackupPolicy.md)
 
 [Set-AzureStorSimpleDeviceBackupPolicy](./Set-AzureStorSimpleDeviceBackupPolicy.md)
 

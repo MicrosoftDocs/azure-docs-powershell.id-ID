@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/Get-AzureRmDeletedWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/Get-AzureRmDeletedWebApp.md
 ms.openlocfilehash: 75ad4e1fabb511ee4ca3cff024389a8e826aeadd
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422485"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142280100"
 ---
 # Get-AzureRmDeletedWebApp
 
 ## SYNOPSIS
-Akan dihapus aplikasi web dalam langganan.
+Mendapatkan aplikasi web yang dihapus dalam langganan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Get-AzureRmDeletedWebApp [[-ResourceGroupName] <String>] [[-Name] <String>] [[-S
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmDeletedWebApp** mengembalikan semua aplikasi web yang dihapus dalam langganan. Aplikasi yang dihapus secara opsional dapat difilter menurut grup, nama, dan slot sumber daya. Bisa terdapat lebih dari satu aplikasi yang dihapus dengan nama dan grup sumber daya yang sama. Periksa Waktu Penghapusan untuk membedakan aplikasi terhapus yang memiliki nama yang sama.
+Cmdlet **Get-AzureRmDeletedWebApp** mengembalikan semua aplikasi web yang dihapus dalam langganan. Aplikasi yang dihapus secara opsional dapat difilter menurut grup sumber daya, nama, dan slot. Ada lebih dari satu aplikasi yang dihapus dengan nama dan grup sumber daya yang sama. Periksa DeletionTime untuk membedakan aplikasi yang dihapus yang memiliki nama yang sama.
 
 ## EXAMPLES
 
@@ -36,7 +36,7 @@ Cmdlet **Get-AzureRmDeletedWebApp** mengembalikan semua aplikasi web yang dihapu
 PS C:\> Get-AzureRmDeletedWebApp -ResourceGroupName "Default-Web-WestUS" -Name "ContosoSite"
 ```
 
-Perintah ini memberikan aplikasi yang dihapus bernama ContosoSite milik grup sumber daya Default-Web-WestUS.
+Perintah ini mendapatkan aplikasi yang dihapus bernama ContosoSite milik grup sumber daya Default-Web-WestUS.
 
 ## PARAMETERS
 
@@ -101,12 +101,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
-Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -116,4 +116,4 @@ Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsof
 
 ## RELATED LINKS
 
-[Restore-AzureRmDeletedWebApp](./Restore-AzureRmDeletedWebApp.md)
+[Pulihkan-AzureRmDeletedWebApp](./Restore-AzureRmDeletedWebApp.md)

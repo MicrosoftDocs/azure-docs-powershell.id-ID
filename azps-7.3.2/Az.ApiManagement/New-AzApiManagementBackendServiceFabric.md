@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementBackendServiceFabric.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementBackendServiceFabric.md
-ms.openlocfilehash: ba1857c403349274f98cbff707a6d022969ad924
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 56e7c61e3d42508a2d2db4168aa1d259c5082fac
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140189526"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142261483"
 ---
 # New-AzApiManagementBackendServiceFabric
 
 ## SYNOPSIS
-Membuat objek dari `PsApiManagementServiceFabric`
+Membuat objek `PsApiManagementServiceFabric`
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementbackendservicefabric) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ New-AzApiManagementBackendServiceFabric -ManagementEndpoint <String[]> [-ClientC
 
 ## DESCRIPTION
 
-Cmdlet **New-AzApiManagementBackendServiceFabric** `PsApiManagementServiceFabric` membuat objek untuk digunakan dalam cmdlet **New-AzApiManagementBackend** **dan Set-AzApiManagementBackend**.
+Cmdlet **New-AzApiManagementBackendServiceFabric** menciptakan objek `PsApiManagementServiceFabric` yang akan digunakan dalam cmdlet **New-AzApiManagementBackend** dan **Set-AzApiManagementBackend**.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat backend Service Fabric In-Memory Objek
+### Contoh 1: Membuat Objek Service Fabric In-Memory Backend
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 $ManagementEndpoints = 'https://sfbackend-01.net:443', 'https://sfbackend-02.net:443'
@@ -41,12 +44,12 @@ $serviceFabric = New-AzApiManagementBackendServiceFabric -ManagementEndpoint  $M
 $backend = New-AzApiManagementBackend -Context  $apimContext -BackendId 123 -Url 'https://contoso.com/awesomeapi' -Protocol http -ServiceFabricCluster $serviceFabric -Description "service fabric backend" -PassThru
 ```
 
-Membuat Backend Service Fabric Contract
+Membuat Kontrak Service Fabric Backend
 
 ## PARAMETERS
 
 ### -ClientCertificateId
-ID Sertifikat Klien untuk titik akhir manajemen. Parameter ini bersifat opsional.
+Id Sertifikat Klien untuk titik akhir manajemen. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String
@@ -61,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientCertificateThumbprint
-Client Certificate Thumbprint untuk titik akhir manajemen.
+Sidik Jari Sertifikat Klien untuk titik akhir manajemen.
 Parameter ini diperlukan.
 
 ```yaml
@@ -108,8 +111,8 @@ Accept wildcard characters: False
 ```
 
 ### -MaxPartitionResolutionRetry
-Jumlah maksimum perekanan ketika Service Fabric partisi.
-Parameter ini bersifat opsional dan nilai default adalah 5.
+Jumlah maksimum percobaan ulang ketika menyelesaikan partisi Service Fabric.
+Parameter ini opsional dan nilai defaultnya adalah 5.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerCertificateThumbprint
-Pencetakan sertifikat layanan manajemen kluster menggunakan tls communication. Parameter ini bersifat opsional.
+Sidik jari layanan manajemen kluster sertifikat digunakan untuk komunikasi tls. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String[]
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

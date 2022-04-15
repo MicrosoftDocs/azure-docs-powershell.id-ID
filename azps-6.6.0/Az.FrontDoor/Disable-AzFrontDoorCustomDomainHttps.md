@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Disable-AzFrontDoorCustomDomainHttps.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Disable-AzFrontDoorCustomDomainHttps.md
 ms.openlocfilehash: 84877bfbbb9446fc55115677abb68bab21d04673
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139939579"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142232407"
 ---
 # Disable-AzFrontDoorCustomDomainHttps
 
@@ -18,7 +18,7 @@ ms.locfileid: "139939579"
 Menonaktifkan HTTPS untuk domain kustom
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.frontdoor/disable-azfrontdoorcustomdomainhttps) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/disable-azfrontdoorcustomdomainhttps) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +46,7 @@ Disable-AzFrontDoorCustomDomainHttps -InputObject <PSFrontendEndpoint>
 
 ## EXAMPLES
 
-### Contoh 1: Menonaktifkan HTTPS untuk domain kustom dengan FrontDoorName dan ResourceGroupName.
+### Contoh 1: Nonaktifkan HTTPS untuk domain kustom dengan FrontDoorName dan ResourceGroupName.
 ```powershell
 PS C:\> Disable-AzFrontDoorCustomDomainHttps -ResourceGroupName "resourcegroup1" -FrontDoorName "frontdoor1" -FrontendEndpointName "frontendpointname1-custom-xyz"
 
@@ -72,7 +72,7 @@ Type                             : Microsoft.Network/frontdoors/frontendendpoint
 
 Nonaktifkan HTTPS untuk domain kustom "frontendpointname1-custom-xyz" dengan FrontDoorName sebagai "frontdoor1" dan ResourceGroupName sebagai "resourcegroup1".
 
-### Contoh 2: Menonaktifkan HTTPS untuk domain kustom dengan objek PSFrontendEndpoint.
+### Contoh 2: Nonaktifkan HTTPS untuk domain kustom dengan objek PSFrontendEndpoint.
 ```powershell
 PS C:\> Get-AzFrontDoorFrontendEndpoint -ResourceGroupName "resourcegroup1" -FrontDoorName "frontdoor1" -FrontendEndpointName "frontendpointname1-custom-xyz" | Disable-AzFrontDoorCustomDomainHttps -InputObject $frontendEndpointObj 
 
@@ -96,9 +96,9 @@ Name                             : frontendpointname1-custom-xyz
 Type                             : Microsoft.Network/frontdoors/frontendendpoints
 ```
 
-Menonaktifkan HTTPS untuk domain kustom dengan objek PSFrontendEndpoint.
+Nonaktifkan HTTPS untuk domain kustom dengan objek PSFrontendEndpoint.
 
-### Contoh 3: Menonaktifkan HTTPS untuk domain kustom dengan ResourceId.
+### Contoh 3: Nonaktifkan HTTPS untuk domain kustom dengan ResourceId.
 ```powershell
 PS C:\> Disable-AzFrontDoorCustomDomainHttps -ResourceId $resourceId 
 
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya dari titik akhir Pintu Depan untuk menonaktifkan https
+Id Sumber Daya titik akhir Pintu Depan untuk menonaktifkan https
 
 ```yaml
 Type: System.String
@@ -217,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationVariable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationVariable.md
-ms.openlocfilehash: 075a2e5427984e31d7906ec7324d8f4f33614111
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 182dc105a47febe1eb0ed52fd750f35781359729
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140382566"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142260565"
 ---
 # Set-AzAutomationVariable
 
 ## SYNOPSIS
-Memodifikasi variabel Otomatisasi.
+Mengubah variabel Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/set-azautomationvariable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,10 +36,10 @@ Set-AzAutomationVariable [-Name] <String> -Description <String> [-ResourceGroupN
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzAutomationVariable** memodifikasi nilai atau deskripsi variabel dalam Otomatisasi Azure.
-Untuk mengenkripsi variabel, tentukan parameter *Encrypted* .
-Anda tidak bisa mengubah status variabel yang dienkripsi setelah pembuatan.
-Menentukan *Dienkripsi untuk* variabel yang sudah ada dan tidak dienkripsi akan gagal.
+Cmdlet **Set-AzAutomationVariable** mengubah nilai atau deskripsi variabel dalam Azure Automation.
+Untuk mengenkripsi variabel, *tentukan parameter Terenkripsi* .
+Anda tidak dapat mengubah status variabel terenkripsi setelah pembuatan.
+Menentukan *Terenkripsi* untuk variabel yang sudah ada dan tidak terenkripsi gagal.
 
 ## EXAMPLES
 
@@ -45,12 +48,12 @@ Menentukan *Dienkripsi untuk* variabel yang sudah ada dan tidak dienkripsi akan 
 PS C:\>Set-AzAutomationVariable -AutomationAccountName "Contoso17" -Name "StringVariable22" -ResourceGroupName "ResourceGroup01" -Value "New Value" -Encrypted $False
 ```
 
-Perintah ini menetapkan nilai baru untuk variabel bernama StringVariable22 dalam akun Otomatisasi Azure yang bernama Contoso17.
+Perintah ini mengatur nilai baru untuk variabel bernama StringVariable22 dalam akun Azure Automation bernama Contoso17.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang variabelnya disimpan.
+Menentukan nama akun Otomatisasi tempat variabel disimpan.
 
 ```yaml
 Type: System.String
@@ -65,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Menentukan deskripsi untuk variabel.
+Menentukan deskripsi untuk variabel tersebut.
 
 ```yaml
 Type: System.String
@@ -94,7 +97,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Encrypted
+### -Terenkripsi
 Menentukan apakah cmdlet mengenkripsi nilai variabel untuk penyimpanan.
 
 ```yaml
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama variabel yang cmdlet ubah.
+Menentukan nama variabel yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan grup sumber daya di mana cmdlet ini memodifikasi variabel.
+Menentukan grup sumber daya di mana cmdlet ini mengubah variabel.
 
 ```yaml
 Type: System.String
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -Value
-Menentukan nilai untuk variabel tersebut.
+Menentukan nilai untuk variabel.
 
 ```yaml
 Type: System.Object
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

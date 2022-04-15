@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Remove-AzureRmSqlDatabaseSecondary.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Remove-AzureRmSqlDatabaseSecondary.md
 ms.openlocfilehash: f1bc8fcc019f25b4337dc88ac55965b8d988e753
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422490"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142247895"
 ---
 # Remove-AzureRmSqlDatabaseSecondary
 
@@ -29,16 +29,16 @@ Remove-AzureRmSqlDatabaseSecondary [-DatabaseName] <String> -PartnerResourceGrou
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmSqlDatabaseSec azurery** memaksa pemutusan tautan replikasi geo.
-Cmdlet ini menggantikan cmdlet Stop-AzureSqlDatabaseCopy cmdlet.
-Tidak ada sinkronisasi replikasi sebelum berakhirnya program.
+Cmdlet **Remove-AzureRmSqlDatabaseSecondary** memaksa penghentian tautan geo-replikasi.
+Cmdlet ini menggantikan cmdlet Stop-AzureSqlDatabaseCopy.
+Tidak ada sinkronisasi replikasi sebelum penghentian.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -DatabaseName
-Menentukan nama objek utama Azure SQL Database memiliki tautan replikasi yang dihapus cmdlet ini.
+Menentukan nama Azure SQL Database utama yang memiliki tautan replikasi yang dihapus cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -53,7 +53,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerServerName
-Menentukan nama mitra SQL Server.
+Menentukan nama SQL Server mitra.
 
 ```yaml
 Type: System.String
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang terkait dengan link replikasi untuk dihapus.
+Menentukan nama grup sumber daya yang terkait dengan tautan replikasi untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama karakter SQL Server memiliki tautan replikasi untuk dihapus.
+Menentukan nama SQL Server yang memiliki tautan replikasi untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -173,8 +173,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmSqlDatabaseSecbasery](./New-AzureRmSqlDatabaseSecondary.md)
+[New-AzureRmSqlDatabaseSecondary](./New-AzureRmSqlDatabaseSecondary.md)
 
-[Set-AzureRmSqlDatabaseSecbasery](./Set-AzureRmSqlDatabaseSecondary.md)
+[Set-AzureRmSqlDatabaseSecondary](./Set-AzureRmSqlDatabaseSecondary.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

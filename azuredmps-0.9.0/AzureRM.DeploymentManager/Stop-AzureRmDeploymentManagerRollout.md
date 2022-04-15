@@ -3,12 +3,12 @@ external help file: Microsoft.Azure.Commands.DeploymentManager.dll-Help.xml
 Module Name: AzureRM.DeploymentManager
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.deploymentmanager/stop-azurermdeploymentmanagerrollout
 schema: 2.0.0
-ms.openlocfilehash: cb4d3d5ece6d3efb46757258fb2633a375e5d2598feee1972187dde9aa417762
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 3c4f221fc00187c4faea2dbcc1a5014822c476c8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419291"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142286431"
 ---
 # Stop-AzureRmDeploymentManagerRollout
 
@@ -36,10 +36,10 @@ Stop-AzureRmDeploymentManagerRollout [-Rollout] <PSRollout> [-Force] [-DefaultPr
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzureRmDeploymentManagerRollout** menghentikan peluncuran yang sedang berlangsung dan mengembalikan objek yang menyatakan status peluncuran saat ini.
-Tentukan peluncuran berdasarkan namanya dan nama grup sumber daya. Alternatifnya, Anda bisa menyediakan objek Rollout atau ResourceId.
+Cmdlet **Stop-AzureRmDeploymentManagerRollout** menghentikan peluncuran yang sedang berlangsung dan mengembalikan objek yang mewakili status peluncuran saat ini.
+Tentukan peluncuran menurut nama dan nama grup sumber dayanya. Alternatifnya, Anda dapat menyediakan objek Rollout atau ResourceId.
 
-Perhatikan bahwa begitu peluncuran dihentikan, peluncuran tidak dapat dilanjutkan atau dimulai ulang. Anda hanya dapat membuat peluncuran baru.
+Perhatikan bahwa setelah peluncuran dihentikan, peluncuran tidak dapat dilanjutkan atau dimulai ulang. Anda hanya dapat membuat peluncuran baru.
 
 ## EXAMPLES
 
@@ -57,12 +57,12 @@ PS C:\> Restart-AzureRmDeploymentManagerRollout -ResourceId "/subscriptions/subs
 
 Perintah ini menghentikan peluncuran bernama ContosoRollout di ContosoResourceGroup.
 
-### Contoh 3: Menghentikan peluncuran menggunakan objek rollout.
+### Contoh 3: Menghentikan peluncuran menggunakan objek peluncuran.
 ```powershell
 PS C:\> Get-AzureRmDeploymentManagerRollout -Rollout $rolloutObject
 ```
 
-Perintah ini menghentikan peluncuran yang nama dan Grup Sumber Dayanya sesuai dengan properti Nama dan ResourceGroupName $rolloutObject grup.
+Perintah ini menghentikan peluncuran yang namanya dan ResourceGroup masing-masing cocok dengan properti Nama dan ResourceGroupName $rolloutObject.
 
 ## PARAMETERS
 
@@ -81,8 +81,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,7 +141,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Rollout
+### -Peluncuran
 Sumber daya yang akan dihapus.
 
 ```yaml
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -203,6 +203,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmDeploymentManagerRollout](./Get-AzureRmDeploymentManagerRollout.md)
 
-[Restart-AzureRmDeploymentManagerRollout](./Restart-AzureRmDeploymentManagerRollout.md)
+[Mulai ulang-AzureRmDeploymentManagerRollout](./Restart-AzureRmDeploymentManagerRollout.md)
 
-[Remove-AzureRmDeploymentManagerRollout](./Remove-AzureRmDeploymentManagerRollout.md)
+[Hapus-AzureRmDeploymentManagerRollout](./Remove-AzureRmDeploymentManagerRollout.md)
