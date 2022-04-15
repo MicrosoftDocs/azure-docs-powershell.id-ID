@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Export-AzureRmApiManagementApi.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Export-AzureRmApiManagementApi.md
 ms.openlocfilehash: 7dc06f280595551a9e054c251339e96163b798b2
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428492"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142390861"
 ---
 # Export-AzureRmApiManagementApi
 
@@ -37,11 +37,11 @@ Export-AzureRmApiManagementApi -Context <PsApiManagementContext> -ApiId <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Export-AzureRmApiManagementApi** mengekspor API Manajemen API Azure ke file dalam salah satu format yang didukung.
+Cmdlet **Ekspor-AzureRmApiManagementApi** mengekspor API Azure API Management ke file dalam salah satu format yang didukung.
 
 ## EXAMPLES
 
-### Contoh 1: Mengekspor API dalam format Bahasa Deskripsi Aplikasi Web (WADL, Web Application Description Language)
+### Contoh 1: Mengekspor API dalam format Web Application Description Language (WADL)
 ```powershell
 PS C:\>$ApiMgmtContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Export-AzureRmApiManagementApi -Context $ApiMgmtContext -ApiId "0123456789" -SpecificationFormat "Wadl" -SaveAs "C:\contoso\specifications\0123456789.wadl"
@@ -52,7 +52,7 @@ Perintah ini mengekspor API ke file WADL.
 ## PARAMETERS
 
 ### -ApiId
-Menentukan ID API untuk diekspor.
+Menentukan ID API yang akan diekspor.
 
 ```yaml
 Type: System.String
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiRevision
-Pengidentifikasi Revisi API. Parameter ini bersifat opsional. Jika tidak ditentukan, ekspor akan dilakukan untuk revisi api yang saat ini aktif.
+Pengidentifikasi Revisi API. Parameter ini bersifat opsional. Jika tidak ditentukan, ekspor akan dilakukan untuk revisi api aktif saat ini.
 
 ```yaml
 Type: System.String
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Menentukan objek **PsApiManagementContext.**
+Menentukan objek **PsApiManagementContext** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -111,7 +111,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Menunjukkan bahwa operasi ini menimpa file dengan nama yang sama jika sudah ada.
 
 ```yaml
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan bahwa operasi ini $True jika API berhasil diekspor, atau $False sebaliknya.
+Menunjukkan bahwa operasi ini mengembalikan $True jika API berhasil diekspor, atau $False sebaliknya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -228,11 +228,11 @@ Cmdlet ini mengembalikan konten API yang diekspor sebagai string.
 
 [Get-AzureRmApiManagementApi](./Get-AzureRmApiManagementApi.md)
 
-[Import-AzureRmApiManagementApi](./Import-AzureRmApiManagementApi.md)
+[Impor-AzureRmApiManagementApi](./Import-AzureRmApiManagementApi.md)
 
 [New-AzureRmApiManagementApi](./New-AzureRmApiManagementApi.md)
 
-[Remove-AzureRmApiManagementApi](./Remove-AzureRmApiManagementApi.md)
+[Hapus-AzureRmApiManagementApi](./Remove-AzureRmApiManagementApi.md)
 
 [Set-AzureRmApiManagementApi](./Set-AzureRmApiManagementApi.md)
 

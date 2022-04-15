@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/New-AzureRmBatchApplicationPackage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/New-AzureRmBatchApplicationPackage.md
 ms.openlocfilehash: bbe3dbc5a929040bfa10efac952b3500529a075d
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423699"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142389725"
 ---
 # New-AzureRmBatchApplicationPackage
 
@@ -29,7 +29,7 @@ New-AzureRmBatchApplicationPackage [-AccountName] <String> [-ResourceGroupName] 
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### AktifkanSesering
+### ActivateOnly
 ```
 New-AzureRmBatchApplicationPackage [-AccountName] <String> [-ResourceGroupName] <String>
  [-ApplicationId] <String> [-ApplicationVersion] <String> [-Format] <String> [-ActivateOnly]
@@ -37,7 +37,7 @@ New-AzureRmBatchApplicationPackage [-AccountName] <String> [-ResourceGroupName] 
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmBatchApplicationPackage** membuat paket aplikasi di akun Azure Batch.
+Cmdlet **New-AzureRmBatchApplicationPackage** membuat paket aplikasi dalam akun Azure Batch.
 
 ## EXAMPLES
 
@@ -46,12 +46,12 @@ Cmdlet **New-AzureRmBatchApplicationPackage** membuat paket aplikasi di akun Azu
 PS C:\>New-AzureRmBatchApplicationPackage -AccountName "ContosoBatch" -ResourceGroupName "ContosoBatchGroup" -ApplicationId "Litware" -ApplicationVersion "1.0" -FilePath "litware.1.0.zip" -Format "zip"
 ```
 
-Perintah ini akan membuat dan mengaktifkan versi 1.0 aplikasi Litware, dan mengunggah konten litware.1.0.zip sebagai konten paket aplikasi.
+Perintah ini membuat dan mengaktifkan aplikasi Litware versi 1.0, dan mengunggah konten litware.1.0.zip sebagai konten paket aplikasi.
 
 ## PARAMETERS
 
-### -Nama Akun
-Menentukan nama akun Kumpulan tempat cmdlet menambahkan paket aplikasi.
+### -AccountName
+Menentukan nama akun Batch tempat cmdlet ini menambahkan paket aplikasi.
 
 ```yaml
 Type: System.String
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi akun Kumpulan.
+Menentukan nama grup sumber daya yang berisi akun Batch.
 
 ```yaml
 Type: System.String
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -191,12 +191,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmBatchApplicationPackage](./Get-AzureRmBatchApplicationPackage.md)
 
-[New-AzureRmBatchApplication](./New-AzureRmBatchApplication.md)
+[AzureRmBatchApplication baru](./New-AzureRmBatchApplication.md)
 
-[Remove-AzureRmBatchApplication](./Remove-AzureRmBatchApplication.md)
+[Hapus-AzureRmBatchAplikasi](./Remove-AzureRmBatchApplication.md)
 
 [Remove-AzureRmBatchApplicationPackage](./Remove-AzureRmBatchApplicationPackage.md)
 
-[Set-AzureRmBatchApplication](./Set-AzureRmBatchApplication.md)
+[Atur-AzureRmBatchAplikasi](./Set-AzureRmBatchApplication.md)
 
 

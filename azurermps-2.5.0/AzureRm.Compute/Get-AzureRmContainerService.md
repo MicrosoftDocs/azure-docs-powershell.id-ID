@@ -5,11 +5,11 @@ ms.assetid: AFF75E0B-CB88-45ED-9067-7F43E2BA485C
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/get-azurermcontainerservice
 schema: 2.0.0
 ms.openlocfilehash: 5db21871b84801d57deebf98e27bbe153285631a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420190"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142363205"
 ---
 # Get-AzureRmContainerService
 
@@ -26,8 +26,8 @@ Get-AzureRmContainerService [[-ResourceGroupName] <String>] [[-Name] <String>]
 ```
 
 ## DESCRIPTION
-**Cmdlet Get-AzureRmContainerService** mendapatkan layanan kontainer.
-Anda dapat menampilkan properti layanan kontainer, yang menyertakan status, jumlah master dan agen, serta nama domain master dan agen yang sepenuhnya memenuhi syarat.
+Cmdlet **Get-AzureRmContainerService** mendapatkan layanan kontainer.
+Anda bisa menampilkan properti layanan kontainer, yang mencakup status, jumlah master dan agen, dan nama domain master dan agen yang sepenuhnya memenuhi syarat.
 
 ## EXAMPLES
 
@@ -41,7 +41,7 @@ Perintah ini mendapatkan layanan kontainer bernama CSResourceGroup17.
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -56,7 +56,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama layanan kontainer yang akan didaangkan cmdlet ini.
+Menentukan nama layanan kontainer yang didapat cmdlet ini.
 
 ```yaml
 Type: String
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan grup sumber daya layanan kontainer yang akan didapsum cmdlet ini.
+Menentukan grup sumber daya layanan kontainer yang didapatkan cmdlet ini.
 
 ```yaml
 Type: String
@@ -86,11 +86,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
@@ -101,10 +101,10 @@ Cmdlet ini tidak menerima input apa pun.
 
 ## RELATED LINKS
 
-[New-AzureRmContainerService](./New-AzureRmContainerService.md)
+[Baru-AzureRmContainerService](./New-AzureRmContainerService.md)
 
-[Remove-AzureRmContainerService](./Remove-AzureRmContainerService.md)
+[Hapus-AzureRmContainerService](./Remove-AzureRmContainerService.md)
 
-[Update-AzureRmContainerService](./Update-AzureRmContainerService.md)
+[Pembaruan-AzureRmContainerService](./Update-AzureRmContainerService.md)
 
 

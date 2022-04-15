@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseKustoPoolDataConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseKustoPoolDataConnection.md
-ms.openlocfilehash: 286e6647cfffdbebcd52eded9026030a34b3a9ea
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d6221d5bbfc11098d06bb4386d00fbd3ac13085d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140178298"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142396889"
 ---
 # Get-AzSynapseKustoPoolDataConnection
 
 ## SYNOPSIS
 Mengembalikan koneksi data.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsekustopooldataconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzSynapseKustoPoolDataConnection -DatabaseName <String> -KustoPoolName <Stri
  [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzSynapseKustoPoolDataConnection -DatabaseName <String> -DataConnectionName <String>
  -KustoPoolName <String> -ResourceGroupName <String> -WorkspaceName <String> [-SubscriptionId <String[]>]
@@ -44,7 +47,7 @@ Mengembalikan koneksi data.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat daftar semua koneksi data dalam database tertentu
+### Contoh 1: Mencantumkan semua koneksi data dalam database tertentu
 ```powershell
 PS C:\> Get-AzSynapseKustoPoolDataConnection -ResourceGroupName testrg -WorkspaceName testws -KustoPoolName testkustopool -DatabaseName mykustodatabase
 
@@ -53,9 +56,9 @@ Kind     Location  Name
 EventHub East US 2 testws/testkustopool/mykustodatabase/eventhubdc
 ```
 
-Perintah di atas mengembalikan semua koneksi Kusto dalam ruang kerja "testws" yang ditemukan dalam grup sumber daya "testrg".
+Perintah di atas mengembalikan semua koneksi Kusto di ruang kerja "testws" yang ditemukan dalam grup sumber daya "testrg".
 
-### Contoh 2: Dapatkan koneksi data tertentu menurut nama
+### Contoh 2: Mendapatkan koneksi data tertentu berdasarkan nama
 ```powershell
 PS C:\> Get-AzSynapseKustoPoolDataConnection -ResourceGroupName testrg -WorkspaceName testws -KustoPoolName testkustopool -DatabaseName mykustodatabase -DataConnectionName mykustodataconnection
 
@@ -69,7 +72,7 @@ Perintah di atas mengembalikan koneksi data bernama "mykustodataconnection" dala
 ## PARAMETERS
 
 ### -DatabaseName
-Nama database di dalam kolam Kusto.
+Nama database dalam kumpulan Kusto.
 
 ```yaml
 Type: System.String
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Synapse.Models.ISynapseIdentity
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -KustoPoolName
-Nama pool Kusto.
+Nama kumpulan Kusto.
 
 ```yaml
 Type: System.String
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -174,7 +177,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja
 
 ```yaml
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -212,12 +215,12 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <ISynapseIdentity>: Parameter Identitas
   - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database yang dilampirkan.
   - `[DataConnectionName <String>]`: Nama koneksi data.
-  - `[DatabaseName <String>]`: Nama database di kolam Kusto.
+  - `[DatabaseName <String>]`: Nama database dalam kumpulan Kusto.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[KustoPoolName <String>]`: Nama kolam Kusto.
+  - `[KustoPoolName <String>]`: Nama kumpulan Kusto.
   - `[Location <String>]`: Nama kawasan Azure.
-  - `[PrincipalAssignmentName <String>]`: Nama principalAssignment Kusto.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[WorkspaceName <String>]`: Nama ruang kerja
 

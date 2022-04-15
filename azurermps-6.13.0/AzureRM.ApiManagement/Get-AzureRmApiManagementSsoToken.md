@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Get-AzureRmApiManagementSsoToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Get-AzureRmApiManagementSsoToken.md
 ms.openlocfilehash: e0bce4f579b2000bc970e35ceb03da03fdffb211
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "132415755"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142390862"
 ---
 # Get-AzureRmApiManagementSsoToken
 
 ## SYNOPSIS
-Mendapatkan link dengan token SSO ke portal manajemen yang digunakan dari layanan Manajemen API.
+Mendapatkan tautan dengan token SSO ke portal manajemen yang disebarkan dari layanan API Management.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,21 +28,21 @@ Get-AzureRmApiManagementSsoToken -ResourceGroupName <String> -Name <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmApiManagementSsoToken** mengembalikan tautan (URL) yang berisi token masuk tunggal (SSO) ke portal manajemen yang disebarkan dari layanan Manajemen API.
+Cmdlet **Get-AzureRmApiManagementSsoToken** mengembalikan tautan (URL) yang berisi token masuk tunggal (SSO) ke portal manajemen yang digunakan dari layanan API Management.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan token SSO dari layanan Manajemen API
+### Contoh 1: Dapatkan token SSO dari layanan API Management
 ```
 PS C:\>Get-AzureRmApiManagementSsoToken -ResourceGroupName "Contoso" -Name "ContosoApi"
 ```
 
-Perintah ini mendapatkan token SSO dari layanan Manajemen API.
+Perintah ini mendapatkan token SSO layanan API Management.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama instans Manajemen API.
+Menentukan nama instans API Management.
 
 ```yaml
 Type: System.String
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana Manajemen API ada.
+Menentukan nama grup sumber daya di mana API Management ada.
 
 ```yaml
 Type: System.String
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

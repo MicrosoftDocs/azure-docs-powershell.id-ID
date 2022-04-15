@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Get-AzureRmAvailabilitySet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Get-AzureRmAvailabilitySet.md
 ms.openlocfilehash: 685dafeb72693a617ca627aa1abcae19c5e24389
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425160"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142389359"
 ---
 # Get-AzureRmAvailabilitySet
 
@@ -29,18 +29,18 @@ Get-AzureRmAvailabilitySet [[-ResourceGroupName] <String>] [[-Name] <String>]
 
 ## DESCRIPTION
 Cmdlet **Get-AzureRmAvailabilitySet** mendapatkan kumpulan ketersediaan Azure dalam grup sumber daya.
-Anda dapat menentukan nama ketersediaan tertentu yang akan didafkahi.
+Anda dapat menentukan nama kumpulan ketersediaan tertentu untuk didapatkan.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan kumpulan ketersediaan tertentu
+### Contoh 1: Dapatkan kumpulan ketersediaan tertentu
 ```
 PS C:\> Get-AzureRmAvailabilitySet -ResourceGroupName "ResourceGroup11" -Name "AvailabilitySet03"
 ```
 
-Perintah ini memiliki kumpulan ketersediaan bernamaAblityAblitySet03 dalam grup sumber daya yang bernama ResourceGroup11.
+Perintah ini mendapatkan kumpulan ketersediaan bernama AvailablitySet03 dalam grup sumber daya bernama ResourceGroup11.
 
-### Contoh 2: Mendapatkan semua kumpulan ketersediaan
+### Contoh 2: Dapatkan semua kumpulan ketersediaan
 ```
 PS C:\> Get-AzureRmAvailabilitySet -ResourceGroupName "ResourceGroup11"
 ```
@@ -50,7 +50,7 @@ Perintah ini mendapatkan semua kumpulan ketersediaan dalam grup sumber daya bern
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama kumpulan ketersediaan yang akan dapatkan cmdlet ini.
+Menentukan nama kumpulan ketersediaan yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -109,8 +109,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmAvailabilitySet](./New-AzureRmAvailabilitySet.md)
+[AzureRmAvailabilitySet baru](./New-AzureRmAvailabilitySet.md)
 
-[Remove-AzureRmAvailabilitySet](./Remove-AzureRmAvailabilitySet.md)
+[Hapus-AzureRmAvailabilitySet](./Remove-AzureRmAvailabilitySet.md)
 
 

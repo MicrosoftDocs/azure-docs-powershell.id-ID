@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/New-AzDataShareDataSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/New-AzDataShareDataSet.md
-ms.openlocfilehash: ca04dda0e85da5171e6675cffaab6f14ee2e2119
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a6ceaebb35379086ed193e298f11af87139c10f3
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140009404"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142375397"
 ---
 # New-AzDataShareDataSet
 
 ## SYNOPSIS
-Menambahkan kumpulan data ke berbagi data Azure.
+Menambahkan kumpulan data ke berbagi data azure.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datashare/new-azdatasharedataset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ New-AzDataShareDataSet -ResourceGroupName <String> -AccountName <String> -ShareN
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataShareDataSet** menambahkan kumpulan data di berbagi data Azure akun berbagi data. Anda dapat menambahkan kumpulan data tipe Blob, ADLS Gen2, dan ADLS Gen1.
+Cmdlet **New-AzDataShareDataSet** menambahkan kumpulan data dalam berbagi data azure dari akun berbagi data. Anda dapat menambahkan kumpulan data tipe Blob, ADLS Gen2, dan ADLS Gen1.
 
 ## EXAMPLES
 
@@ -63,11 +66,11 @@ Name           : AdsDataSet
 Type           : Microsoft.DataShare/DataSets
 ```
 
-Perintah ini menambahkan sebuah set data bernama AdsDataSet dari tipe wadah blob ke berbagi data Azure AdsShare.
+Perintah ini menambahkan kumpulan data bernama AdsDataSet dari kontainer blob tipe ke data Azure berbagi AdsShare.
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun berbagi data Azure
 
 ```yaml
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -AdlsGen1FolderPath
-Jalur folder azure penyimpanan ADLS gen1
+Jalur folder ADLS gen1 penyimpanan Azure
 
 ```yaml
 Type: System.String
@@ -97,8 +100,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Container
-Nama wadah akun penyimpanan Azure
+### -Kontainer
+Nama kontainer akun penyimpanan Azure
 
 ```yaml
 Type: System.String
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -NamaFile
-Nama file Azure storage ADLS gen1
+Nama file ADLS gen1 penyimpanan Azure
 
 ```yaml
 Type: System.String
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya akun berbagi data Azure
+Nama grup sumber daya dari akun berbagi data azure
 
 ```yaml
 Type: System.String
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountResourceId
-ResourceId akun penyimpanan Azure
+Sumber daya akun penyimpanan Azure
 
 ```yaml
 Type: System.String
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

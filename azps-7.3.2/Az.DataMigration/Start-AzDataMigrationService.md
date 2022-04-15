@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/St
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Start-AzDataMigrationService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Start-AzDataMigrationService.md
-ms.openlocfilehash: c1f401917038c1d42933780317ddd404f8adf518
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: db7c3f987ec58f2140371d50805ce125e631ca40
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140550262"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142375433"
 ---
 # Start-AzDataMigrationService
 
 ## SYNOPSIS
-Memulai contoh Layanan Migrasi Database Azure dalam keadaan berhenti. 
+Memulai contoh Azure Database Migration Service dalam status berhenti. 
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/start-azdatamigrationservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Start-AzDataMigrationService [-ResourceId] <String> [-PassThru] [-DefaultProfile
 ```
 
 ## DESCRIPTION
-Cmdlet Start-AzDataMigrationService memulai contoh Layanan Migrasi Database Azure dalam keadaan berhenti. 
+Cmdlet Start-AzDataMigrationService memulai contoh Azure Database Migration Service dalam keadaan berhenti. 
 
 ## EXAMPLES
 
@@ -47,19 +50,19 @@ Cmdlet Start-AzDataMigrationService memulai contoh Layanan Migrasi Database Azur
 PS C:\> Start-AzDataMigrationService -ResourceGroupName MyResourceGroup -ServiceName TestService
 ```
 
-Contoh di atas memulai contoh Layanan Migrasi Database Azure bernama Layanan Uji dalam status berhenti berdasarkan nama layanan yang disampaikan sebagai input
+Contoh di atas memulai instans Azure Database Migration Service bernama Layanan Uji dalam status berhenti berdasarkan nama layanan yang dilewatkan sebagai input
 
 ### Contoh 2
 ```
 PS C:\> Start-AzDataMigrationService -InputObject $TestService
 ```
 
-Contoh di atas memulai contoh Layanan Migrasi Database Azure berdasarkan PSDataMigrationService yang disampaikan sebagai parameter input
+Contoh di atas memulai contoh Azure Database Migration Service berdasarkan PSDataMigrationService yang dilewatkan sebagai parameter input
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek PSDataMigrationService.
+PSDataMigrationService Object.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataMigration.Models.PSDataMigrationService
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Layanan Migrasi Database.
+nama Database Migration Service.
 
 ```yaml
 Type: System.String
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-DataMigrationService Resource Id.
+Id Sumber Daya DataMigrationService.
 
 ```yaml
 Type: System.String
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

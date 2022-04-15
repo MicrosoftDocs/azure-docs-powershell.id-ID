@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseKustoPoolPrincipalAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseKustoPoolPrincipalAssignment.md
-ms.openlocfilehash: e6bfc4d42a571bafbb57d8f841fef4766356e3a9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2118939bc4837dc31df44ce4ac457b2b7353041e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140385246"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142396835"
 ---
 # Get-AzSynapseKustoPoolPrincipalAssignment
 
 ## SYNOPSIS
-Mendapatkan prinsipal kusto poolAssignment.
+Mendapatkan pokok Kusto pool principalAssignment.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsekustopoolprincipalassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzSynapseKustoPoolPrincipalAssignment -KustoPoolName <String> -ResourceGroup
  -WorkspaceName <String> [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzSynapseKustoPoolPrincipalAssignment -KustoPoolName <String> -PrincipalAssignmentName <String>
  -ResourceGroupName <String> -WorkspaceName <String> [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>]
@@ -39,11 +42,11 @@ Get-AzSynapseKustoPoolPrincipalAssignment -InputObject <ISynapseIdentity> [-Defa
 ```
 
 ## DESCRIPTION
-Mendapatkan prinsipal kusto poolAssignment.
+Mendapatkan pokok Kusto pool principalAssignment.
 
 ## EXAMPLES
 
-### Contoh 1: List all Kusto principalAssignments
+### Contoh 1: Mencantumkan semua Kusto prinsipalAssignments
 ```powershell
 PS C:\> Get-AzSynapseKustoPoolPrincipalAssignment -ResourceGroupName testrg -WorkspaceName testws -KustoPoolName testkustopool
 
@@ -52,9 +55,9 @@ Name                                 Type
 testws/testkustopool/kustoprincipal1 Microsoft.Synapse/workspaces/kustoPools/PrincipalAssignments
 ```
 
-Perintah di atas mencantumkan semua penetapan prinsipal dalam ruang kerja "testws".
+Perintah di atas mencantumkan semua penetapan pokok dalam ruang kerja "testws".
 
-### Contoh 2: Gets a Kusto principalAssignment by name
+### Contoh 2: Mendapatkan Kusto principalAssignment menurut nama
 ```powershell
 PS C:\> Get-AzSynapseKustoPoolPrincipalAssignment -ResourceGroupName testrg -WorkspaceName testws -KustoPoolName testkustopool -PrincipalAssignmentName kustoprincipal1
 
@@ -63,7 +66,7 @@ Name                                 Type
 testws/testkustopool/kustoprincipal1 Microsoft.Synapse/workspaces/kustoPools/PrincipalAssignments
 ```
 
-Perintah di atas mengembalikan kusto principalAssignment yang bernama "kustoprincipal1" dalam ruang kerja "testws".
+Perintah di atas mengembalikan Kusto principalAssignment bernama "kustoprincipal1" di ruang kerja "testws".
 
 ## PARAMETERS
 
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Synapse.Models.ISynapseIdentity
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -KustoPoolName
-Nama pool Kusto.
+Nama kumpulan Kusto.
 
 ```yaml
 Type: System.String
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalAssignmentName
-Nama principalAssignment Kusto.
+Nama Kusto principalAssignment.
 
 ```yaml
 Type: System.String
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -158,7 +161,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja
 
 ```yaml
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -196,12 +199,12 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <ISynapseIdentity>: Parameter Identitas
   - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database yang dilampirkan.
   - `[DataConnectionName <String>]`: Nama koneksi data.
-  - `[DatabaseName <String>]`: Nama database di kolam Kusto.
+  - `[DatabaseName <String>]`: Nama database dalam kumpulan Kusto.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[KustoPoolName <String>]`: Nama kolam Kusto.
+  - `[KustoPoolName <String>]`: Nama kumpulan Kusto.
   - `[Location <String>]`: Nama kawasan Azure.
-  - `[PrincipalAssignmentName <String>]`: Nama principalAssignment Kusto.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[WorkspaceName <String>]`: Nama ruang kerja
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/New-AzureRMAutomationSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/New-AzureRMAutomationSchedule.md
 ms.openlocfilehash: 0672e7ab292046b79ceaad61446c30c210bcb535
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422559"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142390553"
 ---
 # New-AzureRmAutomationSchedule
 
@@ -74,14 +74,14 @@ Cmdlet **New-AzureRmAutomationSchedule** membuat jadwal dalam Azure Automation.
 
 ## EXAMPLES
 
-### Contoh 1: Buat jadwal satu kali dalam waktu lokal
+### Contoh 1: Membuat jadwal satu kali dalam waktu lokal
 ```
 PS C:\> $TimeZone = ([System.TimeZoneInfo]::Local).Id
 PS C:\> New-AzureRmAutomationSchedule -AutomationAccountName "Contoso17" -Name "Schedule01" -StartTime "23:00" -OneTime -ResourceGroupName "ResourceGroup01" -TimeZone $TimeZone
 ```
 
-Perintah pertama mendapatkan ID zona waktu dari sistem dan menyimpannya di $TimeZone variabel.
-Perintah kedua membuat jadwal yang berjalan satu kali di tanggal saat ini pada pukul 23.00 dalam zona waktu yang ditentukan.
+Perintah pertama mendapatkan ID zona waktu dari sistem dan menyimpannya dalam variabel $TimeZone.
+Perintah kedua membuat jadwal yang berjalan satu kali pada tanggal saat ini pada pukul 23.00 dalam zona waktu yang ditentukan..
 
 ### Contoh 2: Membuat jadwal berulang
 ```
@@ -90,9 +90,9 @@ PS C:\> $EndTime = $StartTime.AddYears(1)
 PS C:\> New-AzureRmAutomationSchedule -AutomationAccountName "Contoso17" -Name "Schedule02" -StartTime $StartTime -ExpiryTime $EndTime -DayInterval 1 -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah pertama membuat objek tanggal dengan menggunakan cmdlet **Get-Date,** lalu menyimpan objek dalam $StartDate variabel.
+Perintah pertama membuat objek tanggal menggunakan cmdlet **Get-Date** , lalu menyimpan objek dalam variabel $StartDate.
 Tentukan waktu yang setidaknya lima menit di masa mendatang.
-Perintah kedua membuat objek tanggal menggunakan cmdlet **Get-Date,** lalu menyimpan objek dalam $EndDate variabel.
+Perintah kedua membuat objek tanggal menggunakan cmdlet **Get-Date** , lalu menyimpan objek dalam variabel $EndDate.
 Perintah menentukan waktu yang akan datang.
 Perintah terakhir membuat jadwal harian bernama Schedule02 untuk dimulai pada waktu yang disimpan di $StartDate dan kedaluwarsa pada waktu yang disimpan di $EndDate.
 
@@ -103,14 +103,14 @@ PS C:\> [System.DayOfWeek[]]$WeekDays = @([System.DayOfWeek]::Monday..[System.Da
 PS C:\> New-AzureRmAutomationSchedule -AutomationAccountName "Contoso17" -Name "Schedule03" -StartTime $StartTime - WeekInterval 1 -DaysOfWeek $WeekDays -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah pertama membuat objek tanggal dengan menggunakan cmdlet **Get-Date,** lalu menyimpan objek dalam $StartDate variabel.
-Perintah kedua membuat array hari dalam seminggu yang berisi Senin, Selasa, Rabu, Kamis, dan Jumat.
-Perintah terakhir membuat jadwal harian bernama Schedule03 yang akan berjalan Senin hingga Jumat setiap minggu pada pukul 13:00. Jadwal tidak akan pernah kedaluwarsa.
+Perintah pertama membuat objek tanggal menggunakan cmdlet **Get-Date** , lalu menyimpan objek dalam variabel $StartDate.
+Perintah kedua membuat array hari minggu yang berisi Senin, Selasa, Rabu, Kamis, dan Jumat.
+Perintah terakhir membuat jadwal harian bernama Schedule03 yang akan dijalankan senin hingga Jumat setiap minggu pada pukul 13.00. Jadwal tidak akan pernah kedaluwarsa.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang membuat jadwal cmdlet ini.
+Menentukan nama akun Otomatisasi tempat cmdlet ini membuat jadwal.
 
 ```yaml
 Type: System.String
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 
 ### -DayInterval
 Menentukan interval, dalam hari, untuk jadwal.
-Jika Anda tidak menentukan parameter ini, dan Anda tidak menentukan parameter *OneTime,* nilai default-nya adalah satu (1).
+Jika Anda tidak menentukan parameter ini, dan Anda tidak menentukan parameter *OneTime* , nilai defaultnya adalah satu (1).
 
 ```yaml
 Type: System.Byte
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -DayOfWeekOccurrence
-Menentukan kemunculan minggu dalam bulan di mana jadwal berjalan.
+Menentukan kemunculan minggu dalam sebulan jadwal berjalan.
 psdx_paramvalues
 - 1
 - 2
@@ -165,10 +165,10 @@ psdx_paramvalues
 - 4
 - -1
 - Pertama
-- Detik
+- Kedua
 - Ketiga
-- Fourth
-- LastDay
+- Keempat
+- Hari Terakhir
 
 ```yaml
 Type: Microsoft.Azure.Commands.Automation.Cmdlet.DayOfWeekOccurrence
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Menentukan deskripsi untuk jadwal tersebut.
+Menentukan deskripsi untuk jadwal.
 
 ```yaml
 Type: System.String
@@ -246,8 +246,8 @@ Accept wildcard characters: False
 ```
 
 ### -ExpiryTime
-Menentukan waktu kedaluwarsa jadwal sebagai objek **DateTimeOffest.**
-Anda bisa menentukan string yang bisa dikonversi menjadi **DateTimeOffset** yang valid.
+Menentukan waktu kedaluwarsa jadwal sebagai objek **DateTimeOffest** .
+Anda dapat menentukan string yang dapat dikonversi menjadi **DateTimeOffset** yang valid.
 
 ```yaml
 Type: System.DateTimeOffset
@@ -307,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama untuk jadwal tersebut.
+Menentukan nama untuk jadwal.
 
 ```yaml
 Type: System.String
@@ -337,7 +337,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini membuat jadwal.
+Menentukan nama grup sumber daya tempat cmdlet ini membuat jadwal.
 
 ```yaml
 Type: System.String
@@ -352,9 +352,9 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Menentukan waktu mulai jadwal sebagai objek **DateTimeOffset.**
-Anda bisa menentukan string yang bisa dikonversi menjadi **DateTimeOffset** yang valid.
-Jika *parameter Zona* Waktu ditentukan, offset akan diabaikan dan zona waktu yang ditentukan digunakan.
+Menentukan waktu mulai jadwal sebagai objek **DateTimeOffset** .
+Anda dapat menentukan string yang dapat dikonversi menjadi **DateTimeOffset** yang valid.
+Jika parameter *Zona Waktu* ditentukan, offset akan diabaikan dan zona waktu yang ditentukan digunakan.
 
 ```yaml
 Type: System.DateTimeOffset
@@ -369,8 +369,8 @@ Accept wildcard characters: False
 ```
 
 ### -Zona Waktu
-Menentukan zona waktu untuk jadwal tersebut.
-String ini bisa menjadi ID IANA atau Windows ID Zona Waktu.
+Menentukan zona waktu untuk jadwal.
+String ini dapat berupa ID IANA atau ID Zona Waktu Windows.
 
 ```yaml
 Type: System.String
@@ -400,7 +400,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -418,8 +418,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmAutomationSchedule](./Get-AzureRMAutomationSchedule.md)
 
-[Remove-AzureRmAutomationSchedule](./Remove-AzureRMAutomationSchedule.md)
+[Hapus-AzureRmAutomationSchedule](./Remove-AzureRMAutomationSchedule.md)
 
-[Set-AzureRmAutomationSchedule](./Set-AzureRMAutomationSchedule.md)
+[Atur-AzureRmAutomationSchedule](./Set-AzureRMAutomationSchedule.md)
 
 

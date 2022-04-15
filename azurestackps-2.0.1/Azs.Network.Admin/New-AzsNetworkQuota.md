@@ -3,12 +3,12 @@ external help file: ''
 Module Name: Azs.Network.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.network.admin/new-azsnetworkquota
 schema: 2.0.0
-ms.openlocfilehash: ac1f32e62b13d95c3670a5221df0614d9f46451aac631915d4fe69655e612838
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 554ebe0e6c4ef8a4b0d262071595c0dc6336f482
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418429"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142352825"
 ---
 # New-AzsNetworkQuota
 
@@ -27,7 +27,7 @@ New-AzsNetworkQuota -Name <String> [-Location <String>] [-SubscriptionId <String
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Buat
+### Membuat
 ```
 New-AzsNetworkQuota -Name <String> -Quota <IQuota> [-Location <String>] [-SubscriptionId <String>]
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
@@ -58,13 +58,13 @@ Membuat atau memperbarui kuota.
 New-AzsNetworkQuota -Name NetworkQuotaDefaultValues
 ```
 
-Membuat kuota jaringan baru dengan semua nilai default.
+Buat kuota jaringan baru dengan semua nilai default.
 
 ### -------------------------- CONTOH 2 --------------------------
 ```
 New-AzsNetworkQuota -Name NetworkQuota1 -MaxNicsPerSubscription 150 -MaxPublicIpsPerSubscription 150
 ```
-Membuat kuota jaringan baru dengan nilai non default untuk kuota.
+Buat kuota jaringan baru dengan nilai non default untuk kuota.
 
 
 
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.NetworkAdmin.Models.INetworkAdminIdentity
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxLoadBalancersPerSubscription
-Jumlah maksimum penyeimbang muat yang bisa ditetapkan langganan penyewa.
+Jumlah maksimum penyeimbang muatan yang dapat disediakan langganan penyewa.
 
 ```yaml
 Type: System.Int64
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxNicsPerSubscription
-Jumlah maksimum NICs yang dapat ditetapkan langganan penyewa.
+Jumlah maksimum NIC yang dapat disediakan langganan penyewa.
 
 ```yaml
 Type: System.Int64
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxPublicIpsPerSubscription
-Jumlah maksimum alamat IP publik yang bisa disediakan langganan penyewa.
+Jumlah maksimum alamat IP publik yang dapat disediakan langganan penyewa.
 
 ```yaml
 Type: System.Int64
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxSecurityGroupsPerSubscription
-Jumlah maksimum grup keamanan yang dapat disediakan oleh langganan penyewa.
+Jumlah maksimum grup keamanan yang dapat disediakan langganan penyewa.
 
 ```yaml
 Type: System.Int64
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxVirtualNetworkGatewayConnectionsPerSubscription
-Jumlah maksimum gateway jaringan virtual Koneksi yang bisa disediakan langganan penyewa.
+Jumlah maksimum gateway jaringan virtual Koneksi langganan penyewa bisa menyediakan.
 
 ```yaml
 Type: System.Int64
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 
 ```
 
-### -MaxVirtualNetworkGatewayPerSubscription
+### -MaxVirtualNetworkGatewaysPerSubscription
 Jumlah maksimum gateway jaringan virtual yang bisa disediakan langganan penyewa.
 
 ```yaml
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxVnetsPerSubscription
-Jumlah maksimum jaringan virtual yang bisa disediakan langganan penyewa.
+Jumlah maksimum jaringan virtual yang dapat disediakan langganan penyewa.
 
 ```yaml
 Type: System.Int64
@@ -246,9 +246,9 @@ Accept wildcard characters: False
 
 ```
 
-### -Quota
+### -Kuota
 Sumber daya kuota jaringan.
-Untuk membuat, lihat bagian CATATAN untuk properti KUOTA dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti KUOTA dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.NetworkAdmin.Models.Api20150615.IQuota
@@ -264,8 +264,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -297,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -314,7 +314,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -330,7 +330,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -346,24 +346,24 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT <INetworkAdminIdentity> : Parameter Identitas
+INPUTOBJECT <INetworkAdminIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Lokasi sumber daya.
   - `[ResourceName <String>]`: Nama sumber daya.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
-KUOTA <IQuota> : Sumber daya kuota jaringan.
+QUOTA <IQuota>: Sumber daya kuota jaringan.
   - `[Tag <IResourceTags>]`: Daftar pasangan nilai kunci.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
-  - `[MaxLoadBalancersPerSubscription <Int64?>]`: Jumlah maksimum penyeimbang muat yang dapat ditetapkan langganan penyewa.
-  - `[MaxNicsPerSubscription <Int64?>]`: Jumlah maksimum NICs yang dapat ditetapkan langganan penyewa.
-  - `[MaxPublicIpsPerSubscription <Int64?>]`: Jumlah maksimum alamat IP publik yang dapat ditetapkan langganan penyewa.
-  - `[MaxSecurityGroupsPerSubscription <Int64?>]`: Jumlah maksimum grup keamanan yang dapat ditetapkan langganan penyewa.
-  - `[MaxVirtualNetworkGatewayConnectionsPerSubscription <Int64?>]`: Jumlah maksimum gateway jaringan virtual Connections yang bisa disediakan oleh langganan penyewa.
-  - `[MaxVirtualNetworkGatewaysPerSubscription <Int64?>]`: Jumlah maksimum gateway jaringan virtual yang bisa disediakan oleh langganan penyewa.
-  - `[MaxVnetsPerSubscription <Int64?>]`: Jumlah maksimum jaringan virtual yang dapat disediakan oleh langganan penyewa.
+  - `[MaxLoadBalancersPerSubscription <Int64?>]`: Jumlah maksimum penyeimbang muatan yang dapat disediakan langganan penyewa.
+  - `[MaxNicsPerSubscription <Int64?>]`: Maksimum jumlah NIC yang dapat disediakan langganan penyewa.
+  - `[MaxPublicIpsPerSubscription <Int64?>]`: Jumlah maksimum alamat IP publik yang dapat disediakan langganan penyewa.
+  - `[MaxSecurityGroupsPerSubscription <Int64?>]`: Jumlah maksimum grup keamanan yang dapat disediakan langganan penyewa.
+  - `[MaxVirtualNetworkGatewayConnectionsPerSubscription <Int64?>]`: Jumlah maksimum gateway jaringan virtual Koneksi langganan penyewa bisa menyediakan.
+  - `[MaxVirtualNetworkGatewaysPerSubscription <Int64?>]`: Jumlah maksimum gateway jaringan virtual yang dapat disediakan langganan penyewa.
+  - `[MaxVnetsPerSubscription <Int64?>]`: Jumlah maksimum jaringan virtual yang dapat disediakan langganan penyewa.
 
 ## RELATED LINKS
 

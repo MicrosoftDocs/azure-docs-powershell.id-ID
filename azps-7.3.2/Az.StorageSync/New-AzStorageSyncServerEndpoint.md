@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storagesync/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/New-AzStorageSyncServerEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/New-AzStorageSyncServerEndpoint.md
-ms.openlocfilehash: ad38d1261359c5b09386b648bce8ee1a2f4e3ebd
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: bde445f0dbb0e3dba795958c51358c84345c6def
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140400071"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142364939"
 ---
 # New-AzStorageSyncServerEndpoint
 
 ## SYNOPSIS
-Perintah ini membuat titik akhir server baru pada server yang terdaftar. Proses ini mengaktifkan jalur tertentu di server untuk mulai menyinkronkan file dengan titik akhir lain dalam grup sinkronisasi.
+Perintah ini membuat titik akhir server baru di server terdaftar. Ini memungkinkan jalur tertentu di server untuk mulai menyinkronkan file dengan titik akhir lain dalam grup sinkronisasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/new-azstoragesyncserverendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ New-AzStorageSyncServerEndpoint [-ParentResourceId] <String> -Name <String> -Ser
 ```
 
 ## DESCRIPTION
-Perintah ini membuat titik akhir server baru pada server yang terdaftar. Proses ini mengaktifkan jalur tertentu di server untuk mulai menyinkronkan file dengan titik akhir lain dalam grup sinkronisasi. Jika file di titik akhir lain dalam grup sinkronisasi dan lokasi yang baru saja ditambahkan ini juga berisi file, proses rekonsiliasi akan mencoba menentukan apakah file tersebut sebenarnya sama dengan file yang ada di folder yang sama seperti di titik akhir lainnya. Kumpulan nama akan digabungkan dan direkonsiliasi membantu mencegah file yang berkonflik. Jika ada file di titik akhir server lain biasanya lebih baik memulai dengan lokasi kosong di server ini, sehingga file dari awan masuk ke server dalam proses otomatis yang disebut pemulihan bencana cepat. Metadata ruang nama akan disinkronkan terlebih dahulu, lalu streaming data dari setiap file diunduh. Jika file diminta oleh pengguna atau aplikasi dari urutan pengunduhan, file tersebut akan ditarik kembali dengan prioritas untuk memenuhi permintaan akses. Secara opsional, Anda dapat menggunakan cloud tiering pada titik akhir server ini untuk menentukan apakah titik akhir ini seharusnya menjadi cache dari serangkaian lengkap file dari awan. Jika cloud tiering digunakan, maka pengunduhan konten file akan berhenti pada titik yang ditetapkan oleh kebijakan tingkatan awan yang dapat Anda atur.
+Perintah ini membuat titik akhir server baru di server terdaftar. Ini memungkinkan jalur tertentu di server untuk mulai menyinkronkan file dengan titik akhir lain dalam grup sinkronisasi. Jika sudah ada file di titik akhir lain dalam grup sinkronisasi dan lokasi yang baru ditambahkan ini juga berisi file, proses rekonsiliasi akan mencoba menentukan apakah file sebenarnya sama dalam folder yang sama seperti di titik akhir lainnya. Ruang nama akan menggabungkan dan rekonsiliasi membantu mencegah file yang berkonflik. Jika ada file di titik akhir server lain seringkali lebih baik untuk memulai dengan lokasi kosong di server ini, sehingga file dari awan turun ke server dalam proses otomatis yang disebut pemulihan bencana cepat. Metadata ruang nama akan disinkronkan terlebih dahulu, lalu aliran data setiap file diunduh. Jika file diminta oleh pengguna atau aplikasi di luar pesanan unduhan, file tersebut akan ditarik kembali dengan prioritas untuk memenuhi permintaan akses. Anda dapat menggunakan tingkat cloud secara opsional di titik akhir server ini untuk menentukan apakah titik akhir ini seharusnya menjadi cache kumpulan file lengkap dari awan. Jika tingkat cloud digunakan, unduhan konten file akan berhenti pada titik yang ditentukan oleh kebijakan tingkat awan yang bisa Anda atur.
 
 ## EXAMPLES
 
@@ -55,12 +58,12 @@ PS C:\> $RegisteredServer = Get-AzStorageSyncServer -ResourceGroupName "myResour
 PS C:\> New-AzStorageSyncServerEndpoint -ResourceGroupName "myResourceGroup" -StorageSyncServiceName "myStorageSyncServiceName" -SyncGroupName "mySyncGroupName" -Name "myServerEndpointName" -ServerResourceId $RegisteredServer.ResourceId -ServerLocalPath "myServerLocalPath" -CloudTiering -TierFilesOlderThanDays "myTierFilesOlderThanDays"
 ```
 
-Perintah ini akan membuat titik akhir server baru pada server yang terdaftar dan menyisipkannya ke dalam grup sinkronisasi. Cara ini merupakan bagian dari topologi titik akhir serta metadata file dan konten akan segera mulai menyinkronkan antar semua lokasi yang direferensikan sebagai titik akhir dalam grup sinkronisasi.
+Perintah ini membuat titik akhir server baru di server terdaftar dan menyisipkannya ke dalam grup sinkronisasi. Cara ini merupakan bagian dari topologi titik akhir dan metadata file serta konten lainnya akan segera mulai disinkronkan di antara semua lokasi yang dirujuk sebagai titik akhir dalam grup sinkronisasi.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -CloudTiering
-Cloud Tiering Parameter
+Parameter Tingkat Cloud
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -InitialDownloadPolicy
-Parameter kebijakan unduhan awal
+Parameter kebijakan pengunduhan awal
 
 ```yaml
 Type: System.String
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -InitialUploadPolicy
-Parameter kebijakan pengunggahan awal
+Parameter kebijakan unggahan awal
 
 ```yaml
 Type: System.String
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Objek SyncGroup, biasanya melewati parameter.
+SyncGroup Object, biasanya melewati parameter.
 
 ```yaml
 Type: Microsoft.Azure.Commands.StorageSync.Models.PSSyncGroup
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentResourceId
-SyncGroup Parent Resource Id
+Sinkronkan Id Sumber Daya Induk Grup
 
 ```yaml
 Type: System.String
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerResourceId
-Id Sumber Daya Server Terdaftar
+Id Sumber Daya RegisteredServer
 
 ```yaml
 Type: System.String
@@ -258,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -SyncGroupName
-Nama GrupSinkronisasi.
+Nama GrupSinkronkan.
 
 ```yaml
 Type: System.String
@@ -272,8 +275,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TierFilesOlderTermal
-File tingkatan yang lebih lama dari parameter hari
+### -TierFilesOlderThanDays
+Tier Files Older Than Days Parameter
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -303,7 +306,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -318,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -333,7 +336,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
