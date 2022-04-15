@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/get-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/help/Get-AzPurviewDefaultAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/help/Get-AzPurviewDefaultAccount.md
-ms.openlocfilehash: db0398c348904dc0f499271886937c927f93d877
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a7726072c3d7d7fca97859e732271ea2bb18517e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140006921"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142289491"
 ---
 # Get-AzPurviewDefaultAccount
 
 ## SYNOPSIS
-Dapatkan akun default untuk lingkup tersebut.
+Dapatkan akun default untuk lingkup.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.purview/get-azpurviewdefaultaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzPurviewDefaultAccount -ScopeTenantId <String> -ScopeType <ScopeType> [-Sco
 ```
 
 ## DESCRIPTION
-Dapatkan akun default untuk lingkup tersebut.
+Dapatkan akun default untuk lingkup.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan akun default untuk lingkup Penyewa.
+### Contoh 1: Dapatkan akun default untuk penyewa lingkup.
 ```powershell
 PS C:\> Get-AzPurviewDefaultAccount -ScopeTenantId xxxxxxxx-38d6-4fb2-bad9-b7b93a3e9c5a -ScopeType Tenant
 
@@ -58,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Id objek lingkup, misalnya jika lingkup adalah "Langganan" maka ID langganan tersebut.
+Id objek lingkup, misalnya jika lingkupnya adalah "Langganan" maka id langganan tersebut adalah ID.
 
 ```yaml
 Type: System.String
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScopeType
-Lingkup akun default.
+Lingkup untuk akun default.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purview.Support.ScopeType
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

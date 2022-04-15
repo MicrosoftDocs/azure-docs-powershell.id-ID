@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsPurgeWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsPurgeWorkspace.md
-ms.openlocfilehash: 19bc32b0627ecec3e26ef7fc91b60d6887cc67be
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f4563c432630164e50df1325dd5ed8e9aefacc2b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140570620"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142289707"
 ---
 # New-AzOperationalInsightsPurgeWorkspace
 
 ## SYNOPSIS
-Membersihkan data di ruang kerja Analitik Log dengan serangkaian filter yang ditentukan pengguna
+Membersihkan data dalam ruang kerja Analitik Log menurut sekumpulan filter yang ditentukan pengguna
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightspurgeworkspace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ New-AzOperationalInsightsPurgeWorkspace [-ResourceGroupName] <String> [-Workspac
 ```
 
 ## DESCRIPTION
-Membersihkan data di ruang kerja Analitik Log dengan serangkaian filter yang ditentukan pengguna
+Membersihkan data dalam ruang kerja Analitik Log menurut sekumpulan filter yang ditentukan pengguna
 
 ## EXAMPLES
 
@@ -43,12 +46,12 @@ Membersihkan data di ruang kerja Analitik Log dengan serangkaian filter yang dit
 PS C:\> New-AzOperationalInsightsPurgeWorkspace -ResourceGroupName dabenham-dev -WorkspaceName dabenham-troubleShootingE2E -Column "Column_Name" -OperatorProperty "Operator" -Value "Value" -key "Key" -Table "Table_Name"
 ```
 
-Membersihkan data di tabel ruang kerja Analitik Log
+Membersihkan data dalam tabel ruang kerja Analitik Log
 
 ## PARAMETERS
 
 ### -Column
-Kolom tabel tempat kueri akan dijalankan
+Kolom tabel tempat kueri tertentu harus dijalankan
 
 ```yaml
 Type: System.String
@@ -77,8 +80,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,8 +126,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Purge Body
-Menentukan tabel dan filter yang akan di membersihkan.
+### -PurgeBody
+Menentukan tabel dan filter yang akan dibersihkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspacePurgeBody
@@ -181,8 +184,8 @@ Accept wildcard characters: False
 ```
 
 ### -Value
-nilai untuk operator agar berfungsi.
-Dapat juga angka (misalnya, \> 100), string (timestamp \>= '2017-09-01') atau array nilai.
+nilai bagi operator untuk berfungsi di atasnya.
+Ini bisa berupa angka (misalnya \> 100), string (cap \>waktu = '2017-09-01') atau array nilai.
 
 ```yaml
 Type: System.Object
@@ -196,8 +199,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
-Nama ruang kerja untuk membersihkan.
+### -Nama Ruang Kerja
+Nama ruang kerja yang akan dibersangkan.
 
 ```yaml
 Type: System.String
@@ -224,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -240,7 +243,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -255,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -263,7 +266,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Object
 
-### Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspacePurge Body
+### Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspacePurgeBody
 
 ## OUTPUTS
 

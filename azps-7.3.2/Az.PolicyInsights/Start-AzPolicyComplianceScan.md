@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.policyinsights/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PolicyInsights/PolicyInsights/help/Start-AzPolicyComplianceScan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PolicyInsights/PolicyInsights/help/Start-AzPolicyComplianceScan.md
-ms.openlocfilehash: efc8016e1a75dc0bc683dc47e38aa0a08701e41f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f06142a6eb16459fa8af38a6dfbc94cf54cb4913
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140385654"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142289671"
 ---
 # Start-AzPolicyComplianceScan
 
 ## SYNOPSIS
-Memicu evaluasi kepatuhan kebijakan untuk semua sumber daya dalam langganan atau grup sumber daya.
+Memicu evaluasi kepatuhan kebijakan untuk semua sumber daya dalam grup sumber daya atau langganan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.policyinsights/start-azpolicycompliancescan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,31 +28,31 @@ Start-AzPolicyComplianceScan [-ResourceGroupName <String>] [-AsJob] [-PassThru]
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzPolicyComplianceScan** memulai evaluasi kepatuhan kebijakan untuk langganan atau grup sumber daya. Semua sumber daya dalam lingkup tersebut akan memiliki status kepatuhan mereka yang dievaluasi terhadap semua kebijakan yang ditetapkan.
+Cmdlet **Start-AzPolicyComplianceScan** memulai evaluasi kepatuhan kebijakan untuk langganan atau grup sumber daya. Semua sumber daya dalam lingkup tersebut akan memiliki status kepatuhan yang dievaluasi terhadap semua kebijakan yang ditetapkan.
 
 ## EXAMPLES
 
-### Contoh 1: Mulai pemindaian kepatuhan di lingkup langganan
+### Contoh 1: Memulai pemindaian kepatuhan pada lingkup langganan
 ```
 PS C:\> Start-AzPolicyComplianceScan
 ```
 
 Perintah ini memulai evaluasi kepatuhan kebijakan untuk langganan aktif.
 
-### Contoh 2: Mulai pemindaian kepatuhan pada lingkup grup sumber daya
+### Contoh 2: Memulai pemindaian kepatuhan di lingkup grup sumber daya
 ```
 PS C:\> Start-AzPolicyComplianceScan -ResourceGroupName "myRG"
 ```
 
 Perintah ini memulai evaluasi kepatuhan kebijakan untuk grup sumber daya "myRG" dalam langganan aktif.
 
-### Contoh 3: Mulai pemindaian kepatuhan dan tunggu hingga selesai di latar belakang
+### Contoh 3: Mulai pemindaian kepatuhan dan tunggu hingga pemindaian selesai di latar belakang
 ```
 PS C:\> $job = Start-AzPolicyComplianceScan -AsJob
 PS C:\> $job | Wait-Job
 ```
 
-Perintah ini memulai evaluasi kepatuhan kebijakan untuk langganan aktif. Proses ini akan menunggu hingga pindaian selesai.
+Perintah ini memulai evaluasi kepatuhan kebijakan untuk langganan aktif. Pemindaian akan menunggu hingga pemindaian selesai.
 
 ## PARAMETERS
 
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
