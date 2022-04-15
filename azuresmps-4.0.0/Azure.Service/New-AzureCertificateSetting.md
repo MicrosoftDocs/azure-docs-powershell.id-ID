@@ -4,16 +4,16 @@ ms.assetid: 11919623-9EDF-42A3-93FE-54E93D76D3D0
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: ea7ba95e023308ccef6f1c19ce874dfcadcfb9d2
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422907"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142278085"
 ---
 # New-AzureCertificateSetting
 
 ## SYNOPSIS
-Membuat objek pengaturan sertifikat untuk sertifikat berada di layanan.
+Membuat objek pengaturan sertifikat untuk sertifikat berada dalam layanan.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -29,9 +29,9 @@ New-AzureCertificateSetting [[-StoreName] <String>] [-Thumbprint] <String>
 ## DESCRIPTION
 Cmdlet **New-AzureCertificateSetting** membuat objek pengaturan sertifikat untuk sertifikat yang ada di layanan Azure.
 
-Anda dapat menggunakan objek pengaturan sertifikat untuk membuat objek konfigurasi menggunakan cmdlet **Add-AzureProvisioningConfig.**
-Gunakan objek konfigurasi untuk membuat mesin virtual menggunakan cmdlet **New-AzureVM.**
-Anda dapat menggunakan objek pengaturan sertifikat untuk membuat mesin virtual menggunakan cmdlet **New-AzureQuickVM.**
+Anda dapat menggunakan objek pengaturan sertifikat untuk membuat objek konfigurasi menggunakan cmdlet **Add-AzureProvisioningConfig** .
+Gunakan objek konfigurasi untuk membuat mesin virtual menggunakan cmdlet **New-AzureVM** .
+Anda dapat menggunakan objek pengaturan sertifikat untuk membuat mesin virtual menggunakan cmdlet **New-AzureQuickVM** .
 
 ## EXAMPLES
 
@@ -42,7 +42,7 @@ PS C:\> New-AzureCertificateSetting -Thumbprint "D7BECD4D63EBAF86023BB41FA5FBF5C
 
 Perintah ini membuat objek pengaturan sertifikat untuk sertifikat yang sudah ada.
 
-### Contoh 2: Buat mesin virtual yang menggunakan objek pengaturan konfigurasi
+### Contoh 2: Membuat mesin virtual yang menggunakan objek pengaturan konfigurasi
 ```
 PS C:\> Add-AzureCertificate -ServiceName "ContosoService" -CertToDeploy "C:\temp\ContosoCert.cer"
 PS C:\> $CertificateSetting = New-AzureCertificateSetting -Thumbprint "D7BECD4D63EBAF86023BB41FA5FBF5C2C924902A" -StoreName "My" 
@@ -50,31 +50,31 @@ PS C:\> $Image = Get-AzureVMImage -ImageName "ContosoStandard"
 PS C:\> New-AzureVMConfig -Name "VirtualMachine17" -InstanceSize Small -ImageName $Image | Add-AzureProvisioningConfig -Windows -Certificates $CertificateSetting -Password "password" | New-AzureVM -ServiceName "ContosoService"
 ```
 
-Perintah pertama menambahkan sertifikat ContosoCert.cer ke layanan bernama ContosoService dengan menggunakan cmdlet **Add-AzureCertificate.**
+Perintah pertama menambahkan sertifikat ContosoCert.cer ke layanan bernama ContosoService menggunakan cmdlet **Add-AzureCertificate** .
 
-Perintah kedua membuat objek pengaturan sertifikat, lalu menyimpannya di $CertificateSetting variabel.
+Perintah kedua membuat objek pengaturan sertifikat, lalu menyimpannya dalam variabel $CertificateSetting.
 
-Perintah ketiga mendapatkan gambar dari penyimpanan gambar dengan menggunakan cmdlet **Get-AzureVMImage.**
-Perintah ini menyimpan gambar dalam $Image variabel.
+Perintah ketiga mendapatkan gambar dari repositori gambar menggunakan cmdlet **Get-AzureVMImage** .
+Perintah ini menyimpan gambar dalam variabel $Image.
 
-Perintah terakhir membuat objek konfigurasi mesin virtual berdasarkan gambar di $Image dengan menggunakan cmdlet **New-AzureVMConfig.**
-Perintah melewati objek itu ke cmdlet **Add-AzureProvisioningConfig** menggunakan operator pipeline.
+Perintah akhir membuat objek konfigurasi mesin virtual berdasarkan gambar di $Image menggunakan cmdlet **New-AzureVMConfig** .
+Perintah melewati objek tersebut ke cmdlet **Add-AzureProvisioningConfig** menggunakan operator pipeline.
 Cmdlet tersebut menambahkan informasi penyediaan ke konfigurasi.
-Perintah meneruskan objek ke cmdlet **New-AzureVM,** yang membuat mesin virtual.
+Perintah melewati objek ke cmdlet **New-AzureVM** , yang membuat mesin virtual.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -105,13 +105,13 @@ Accept wildcard characters: False
 
 ### -StoreName
 Menentukan penyimpanan sertifikat untuk meletakkan sertifikat.
-Nilai valid adalah: 
+Nilai yang valid adalah: 
 
-- Buku Alamat
+- Addressbook
 - AuthRoot
-- CertificateAuthority
-- Tidak diizinkan
-- My
+- SertifikatAuthority
+- Batasan
+- Saya
 - Akar
 - TrustedPeople
 - TrustedPublisher
@@ -128,8 +128,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Thumbprint
-Menentukan thumbprint sertifikat.
+### -Sidik jari
+Menentukan sidik jari sertifikat.
 
 ```yaml
 Type: String
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -164,8 +164,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureQuickVM](./New-AzureQuickVM.md)
 
-[New-AzureVM](./New-AzureVM.md)
+[AzureVM baru](./New-AzureVM.md)
 
-[Remove-AzureCertificate](./Remove-AzureCertificate.md)
+[Hapus-AzureCertificate](./Remove-AzureCertificate.md)
 
 

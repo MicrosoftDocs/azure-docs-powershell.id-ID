@@ -4,16 +4,16 @@ ms.assetid: 97E1A3FF-E479-44CD-8147-15408DF3F79A
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 7859e40663b1c38a7547be7d359893c67636e3ea
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421146"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142278565"
 ---
 # Get-AzureVMDiagnosticsExtension
 
 ## SYNOPSIS
-Dapatkan pengaturan ekstensi Azure Diagnostics di komputer virtual.
+Mendapatkan pengaturan ekstensi Diagnostik Azure di mesin virtual.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,30 +25,30 @@ Get-AzureVMDiagnosticsExtension -VM <IPersistentVM> [-Profile <AzureSMProfile>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureVMDiagnosticsExtension** mendapatkan pengaturan ekstensi Microsoft Azure Diagnostics di komputer virtual.
+Cmdlet **Get-AzureVMDiagnosticsExtension** mendapatkan pengaturan ekstensi Diagnostik Microsoft Azure pada mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Terapkan ekstensi diagnostik ke komputer virtual
+### Contoh 1: Dapatkan ekstensi diagnostik yang diterapkan ke mesin virtual
 ```
 PS C:\> Get-AzureVMDiagnosticsExtension -VM $VM
 ```
 
-Perintah ini akan menerapkan ekstensi diagnostik ke komputer virtual yang ditentukan seperti yang tersimpan di variabel $VM.
+Perintah ini akan menerapkan ekstensi diagnostik ke mesin virtual tertentu seperti yang disimpan dalam variabel $VM.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -78,8 +78,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

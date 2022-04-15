@@ -4,11 +4,11 @@ ms.assetid: 86438393-8D5A-46A0-B467-6A4434E18011
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: af42c1b7ce4dea8fc92f35eddd44ed97eeac987a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428097"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142279021"
 ---
 # Get-AzureService
 
@@ -27,45 +27,45 @@ Get-AzureService [[-ServiceName] <String>] [-Profile <AzureSMProfile>] [-Informa
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureService** mengembalikan objek daftar dengan semua layanan awan Azure yang terkait dengan langganan saat ini.
-Jika Anda menentukan parameter *ServiceName,* **Get-AzureService mengembalikan** informasi hanya pada layanan yang cocok.
+Cmdlet **Get-AzureService** mengembalikan objek daftar dengan semua layanan cloud Azure yang terkait dengan langganan saat ini.
+Jika Anda menentukan parameter *ServiceName* , **Get-AzureService** mengembalikan informasi hanya pada layanan yang cocok.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan informasi tentang semua layanan
+### Contoh 1: Dapatkan informasi tentang semua layanan
 ```
 PS C:\> Get-AzureService
 ```
 
 Perintah ini mengembalikan objek yang berisi informasi tentang semua layanan Azure yang terkait dengan langganan saat ini.
 
-### Contoh 2: Mendapatkan informasi tentang layanan tertentu
+### Contoh 2: Dapatkan informasi tentang layanan tertentu
 ```
 PS C:\> Get-AzureService -ServiceName $MySvc
 ```
 
-Perintah ini mengembalikan informasi tentang $MySvc ini.
+Perintah ini mengembalikan informasi tentang layanan $MySvc.
 
 ### Contoh 3: Menampilkan metode dan properti yang tersedia
 ```
 PS C:\> Get-AzureService | Get-Member
 ```
 
-Perintah ini menampilkan properti dan metode yang tersedia dari cmdlet **Get-AzureService.**
+Perintah ini menampilkan properti dan metode yang tersedia dari cmdlet **Get-AzureService** .
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -95,8 +95,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -138,7 +138,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureService](./New-AzureService.md)
+[AzureService baru](./New-AzureService.md)
 
 [Set-AzureService](./Set-AzureService.md)
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/New-AzTimeSeriesInsightsReferenceDataSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/New-AzTimeSeriesInsightsReferenceDataSet.md
-ms.openlocfilehash: 0fa613bee4d619298d2de2747c18b8a3b686f895
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c04dbae0459d5b6c49748fd0c33be474dc3db729
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140005069"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142287277"
 ---
 # New-AzTimeSeriesInsightsReferenceDataSet
 
 ## SYNOPSIS
-Membuat atau memperbarui kumpulan data referensi dalam lingkungan yang ditentukan.
+Membuat atau memperbarui kumpulan data referensi di lingkungan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.timeseriesinsights/new-aztimeseriesinsightsreferencedataset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzTimeSeriesInsightsReferenceDataSet -EnvironmentName <String> -Name <String
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui kumpulan data referensi dalam lingkungan yang ditentukan.
+Membuat atau memperbarui kumpulan data referensi di lingkungan yang ditentukan.
 
 ## EXAMPLES
 
@@ -45,10 +48,10 @@ Perintah ini membuat kumpulan data referensi untuk lingkungan tertentu.
 
 ## PARAMETERS
 
-### -DataStringComparisonBestringior
+### -DataStringComparisonBehavior
 Perilaku perbandingan kunci kumpulan data referensi dapat diatur menggunakan properti ini.
-Secara default, nilainya adalah 'Ordinal' - yang berarti perbandingan kunci peka huruf besar kecil akan dijalankan saat menggabungkan data referensi dengan kejadian atau saat menambahkan data referensi baru.
-Ketika 'OrdinalIgnoreCase' diatur, perbandingan insensitif huruf besar kecil akan digunakan.
+Secara default, nilainya adalah 'Ordinal' - yang berarti perbandingan kunci peka huruf besar kecil akan dilakukan saat menggabungkan data referensi dengan kejadian atau saat menambahkan data referensi baru.
+Ketika 'OrdinalIgnoreCase' diatur, perbandingan yang tidak peka huruf besar kecil akan digunakan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.TimeSeriesInsights.Support.DataStringComparisonBehavior
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnvironmentName
-Nama lingkungan Rangkaian Waktu Insights dengan grup sumber daya yang ditentukan.
+Nama lingkungan Insights Time Series yang terkait dengan grup sumber daya tertentu.
 
 ```yaml
 Type: System.String
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 
 ### -KeyProperty
 Daftar properti kunci untuk kumpulan data referensi.
-Untuk membuat, lihat bagian CATATAN untuk properti KEYPROPERTY dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti KEYPROPERTY dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.TimeSeriesInsights.Models.Api20200515.IReferenceDataSetKeyProperty[]
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dari properti tambahan untuk sumber daya.
+Pasangan nilai kunci properti tambahan untuk sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

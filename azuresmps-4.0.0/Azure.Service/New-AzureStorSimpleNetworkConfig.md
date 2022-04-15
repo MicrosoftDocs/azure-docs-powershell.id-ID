@@ -4,16 +4,16 @@ ms.assetid: 99D9EFA6-3506-4B0E-ACB5-C6EDBCB5A130
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: b30f6d6c316a596810cc6439d5a7556bee68be0f
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419913"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142278017"
 ---
 # New-AzureStorSimpleNetworkConfig
 
 ## SYNOPSIS
-Mempersiapkan objek konfigurasi jaringan.
+Menyiapkan objek konfigurasi jaringan.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -27,9 +27,9 @@ New-AzureStorSimpleNetworkConfig -InterfaceAlias <String> [-EnableIscsi <Boolean
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureStorSimpleNetworkConfig** menyiapkan objek konfigurasi jaringan untuk masuk ke cmdlet **Set-AzureStorSimpleDevice.**
-Atur parameter *Controller0IPAddress* dan parameter *Controller1IPAddress* hanya pada antarmuka Data0.
-Data0 hanya mendukung tiga pengaturan: *Controller0IPAddress*, *Controller1IPAdress*, *dan EnableIscsi*.
+Cmdlet **New-AzureStorSimpleNetworkConfig** menyiapkan objek konfigurasi jaringan untuk lolos ke cmdlet **Set-AzureStorSimpleDevice** .
+Atur parameter *Controller0IPAddress* dan *parameter Controller1IPAddress* hanya pada antarmuka Data0.
+Data0 hanya mendukung tiga pengaturan: *Controller0IPAddress*, *Controller1IPAdress*, dan *EnableIscsi*.
 
 ## EXAMPLES
 
@@ -53,11 +53,11 @@ InterfaceAlias         : Data0
 VERBOSE: Successfully created a StorSimple Network Configuration for interface Data0
 ```
 
-Perintah ini akan membuat konfigurasi jaringan untuk antarmuka Data0.
-Perintah ini menentukan parameter *Controller0IPv4Address*, *Controller1IPv4Address*, *dan EnableIscsi.*
-Cmdlet ini hanya dapat mengonfigurasi Data0 untuk tiga parameter ini.
+Perintah ini membuat konfigurasi jaringan untuk antarmuka Data0.
+Perintah ini menentukan parameter *Controller0IPv4Address*, *Controller1IPv4Address*, dan *EnableIscsi* .
+Cmdlet ini hanya dapat mengonfigurasi Data0 untuk ketiga parameter ini.
 
-### Contoh 2: Mengonfigurasi antarmuka selain Data0
+### Contoh 2: Mengonfigurasi antarmuka selain Data0 an
 ```
 PS C:\>New-AzureStorSimpleNetworkConfig -InterfaceAlias Data1 -EnableIscsi $True -EnableCloud $True -IPv6Gateway "db8:421e:9a8::a4:1c50" -IPv4Gateway "10.67.64.1" -IPv4Address "10.67.64.48" -IPv6Prefix "2001:db8:a::123/64" -IPv4Netmask "255.255.0.0"
 VERBOSE: ClientRequestId: 3a15ff0e-b769-4329-9147-676b1e0acd7d_PS
@@ -98,13 +98,13 @@ VERBOSE: Successfully updated configuration for device newDeviceName with id 865
 ```
 
 Perintah pertama membuat konfigurasi jaringan untuk antarmuka Data0.
-Perintah ini menentukan parameter *Controller0IPv4Address*, *Controller1IPv4Address*, *dan EnableIscsi.*
-Perintah menyimpan hasilnya dalam $NetworkConfigData 0 variabel.
+Perintah ini menentukan parameter *Controller0IPv4Address*, *Controller1IPv4Address*, dan *EnableIscsi* .
+Perintah menyimpan hasil dalam variabel $NetworkConfigData 0.
 
-Perintah kedua menggunakan cmdlet **Get-AzureStorSimpleDevice** dan cmdlet inti **Where-Object** untuk mendapatkan perangkat StorSimple online, lalu menyimpannya dalam variabel $OnlineDevice baru.
+Perintah kedua menggunakan cmdlet **Get-AzureStorSimpleDevice** dan cmdlet inti **Where-Object** untuk mendapatkan perangkat StorSimple online, lalu menyimpannya dalam variabel $OnlineDevice.
 
-Perintah terakhir mengubah konfigurasi untuk perangkat yang memiliki ID perangkat tertentu dengan menggunakan cmdlet **Set-AzureStorSimpleDevice.**
-Perintah menggunakan objek konfigurasi yang dibuat cmdlet saat ini di perintah pertama.
+Perintah akhir mengubah konfigurasi untuk perangkat yang memiliki ID perangkat tertentu menggunakan cmdlet **Set-AzureStorSimpleDevice** .
+Perintah menggunakan objek konfigurasi yang dibuat cmdlet saat ini dalam perintah pertama.
 
 ## PARAMETERS
 
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableCloud
-Menunjukkan apakah akan mengaktifkan antarmuka di awan.
+Menunjukkan apakah akan mengaktifkan antarmuka cloud.
 
 ```yaml
 Type: Boolean
@@ -171,8 +171,8 @@ Accept wildcard characters: False
 ```
 
 ### -InterfaceAlias
-Menentukan alias antarmuka di mana pengaturan cmdlet ini menyuplai pengaturan.
-Nilai valid adalah dari Data0 hingga Data5.
+Menentukan alias antarmuka yang menyediakan pengaturan cmdlet ini.
+Nilai yang valid adalah dari Data0 ke Data5.
 
 ```yaml
 Type: String
@@ -277,11 +277,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

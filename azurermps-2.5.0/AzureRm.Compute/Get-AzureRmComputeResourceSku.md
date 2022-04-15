@@ -3,17 +3,17 @@ external help file: Microsoft.Azure.Commands.Compute.dll-Help.xml
 Module Name: AzureRM.Compute
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/get-azurermcomputeresourcesku
 schema: 2.0.0
-ms.openlocfilehash: 188cfc652df4d485d77f8e0592676be9b10e8795ca9ee8f8eed884cf0b55d5da
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: e7ebc6a8e6b59679757f559ff2d09ebaa8c5475f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140866799"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142286304"
 ---
 # Get-AzureRmComputeResourceSku
 
 ## SYNOPSIS
-Daftar semua Sku sumber daya perhitungan
+Mencantumkan semua sku sumber daya komputasi
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -24,7 +24,7 @@ Get-AzureRmComputeResourceSku [-DefaultProfile <IAzureContextContainer>] [<Commo
 ```
 
 ## DESCRIPTION
-Daftar semua Sku sumber daya perhitungan
+Mencantumkan semua sku sumber daya komputasi
 
 ## EXAMPLES
 
@@ -33,12 +33,12 @@ Daftar semua Sku sumber daya perhitungan
 PS C:\> PS C:\> Get-AzureRmComputeResourceSku | where {$_.Locations.Contains("westus")};
 ```
 
-Daftar semua sku sumber daya yang dihitung di kawasan AS Barat
+Daftar semua sku sumber daya komputasi di kawasan AS Barat
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -53,11 +53,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

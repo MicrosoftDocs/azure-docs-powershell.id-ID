@@ -4,11 +4,11 @@ ms.assetid: D88C6B17-5D0E-4E23-9C5C-DB38DED9061C
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 840a9a838ef09d55034ed57205a4e348a08ff74b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423609"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142278090"
 ---
 # New-AzureAutomationVariable
 
@@ -29,7 +29,7 @@ New-AzureAutomationVariable -Name <String> -Encrypted <Boolean> [-Description <S
 
 [!INCLUDE [aa-deprecation](../include/aa-deprecation.md)]
 
-Cmdlet **New-AzureAutomationVariable** membuat variabel dalam proses Microsoft Azure Automation.
+Cmdlet **New-AzureAutomationVariable** membuat variabel dalam Microsoft Azure Automation.
 
 ## EXAMPLES
 
@@ -38,7 +38,7 @@ Cmdlet **New-AzureAutomationVariable** membuat variabel dalam proses Microsoft A
 PS C:\> New-AzureAutomationVariable -AutomationAccountName "Contoso17" -Name "MyStringVariable" -Encrypted $False -Value "My String"
 ```
 
-Perintah ini membuat variabel baru bernama MyStringVariable dengan nilai string dalam akun Otomatisasi Azure bernama Contoso17.
+Perintah ini membuat variabel baru bernama MyStringVariable dengan nilai string di akun Azure Automation bernama Contoso17.
 
 ### Contoh 2: Membuat variabel baru dengan nilai kompleks
 ```
@@ -46,8 +46,8 @@ PS C:\> $vm = Get-AzureVM -ServiceName "MyVM" -Name "MyVM"
 PS C:\> New-AzureAutomationVariable -AutomationAccountName "Contoso17" -Name "MyComplexVariable" -Encrypted $False -Value $vm
 ```
 
-Perintah ini membuat variabel baru yang disebut MyComplexVariable dalam akun Otomatisasi yang bernama Contoso17.
-Objek kompleks digunakan untuk nilainya, dalam kasus ini objek mesin virtual.
+Perintah ini membuat variabel baru yang disebut MyComplexVariable di akun Otomatisasi bernama Contoso17.
+Objek kompleks digunakan untuk nilainya, dalam hal ini objek mesin virtual.
 
 ## PARAMETERS
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Menentukan deskripsi untuk variabel.
+Menentukan deskripsi untuk variabel tersebut.
 
 ```yaml
 Type: String
@@ -81,8 +81,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Encrypted
-Menunjukkan apakah nilai variabel harus disimpan terenkripsi.
+### -Terenkripsi
+Menunjukkan apakah nilai variabel harus disimpan dienkripsi.
 
 ```yaml
 Type: Boolean
@@ -112,8 +112,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -157,7 +157,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureAutomationVariable](./Get-AzureAutomationVariable.md)
 
-[Remove-AzureAutomationVariable](./Remove-AzureAutomationVariable.md)
+[Hapus-AzureAutomationVariable](./Remove-AzureAutomationVariable.md)
 
 [Set-AzureAutomationVariable](./Set-AzureAutomationVariable.md)
 

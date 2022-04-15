@@ -4,11 +4,11 @@ ms.assetid: 4661C479-6E3B-425D-B9D2-B36D7A83130C
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 1435fe734074cee3c44adee735fc347651c05d97
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427518"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142278781"
 ---
 # Get-AzureSqlDatabaseImportExportStatus
 
@@ -33,8 +33,8 @@ Get-AzureSqlDatabaseImportExportStatus -Request <ImportExportRequest> [-Profile 
 
 ## DESCRIPTION
 Cmdlet **Get-AzureSqlDatabaseImportExportStatus** mendapatkan status permintaan impor atau ekspor.
-Perintah Start-AzureSqlDatabaseImport cmdlet Start-AzureSqlDatabaseExport memulai permintaan.
-Anda bisa menentukan objek permintaan dengan menggunakan *parameter* Permintaan, atau Anda bisa mengidentifikasi permintaan dengan menggunakan parameter *RequestId* dan parameter *Username*, *Password*, *dan ServerName.*
+Cmdlet Start-AzureSqlDatabaseImport atau Start-AzureSqlDatabaseExport memulai permintaan.
+Anda bisa menentukan objek permintaan dengan menggunakan parameter *Permintaan* , atau Anda bisa mengidentifikasi permintaan dengan menggunakan parameter *RequestId* dan parameter *NamaPengguna*, *Kata Sandi*, dan *ServerName* .
 
 ## EXAMPLES
 
@@ -44,15 +44,15 @@ PS C:\> $ExportRequest = Start-AzureSqlDatabaseExport -SqlConnectionContext $Sql
 PS C:\> Get-AzureSqlDatabaseImportExportStatus -Request $ExportRequest
 ```
 
-Perintah pertama membuat permintaan ekspor, lalu menyimpannya di variabel $ExportRequest ekspor.
+Perintah pertama membuat permintaan ekspor, lalu menyimpannya dalam variabel $ExportRequest.
 
 Perintah kedua mendapatkan status permintaan ekspor yang disimpan di $ExportRequest.
 
 ## PARAMETERS
 
 ### -Password
-Menentukan kata sandi yang diperlukan untuk menyambungkan ke server Azure SQL Database.
-Anda harus menentukan parameter ini jika sudah menentukan parameter *RequestId.*
+Menentukan kata sandi yang diperlukan untuk tersambung ke server Azure SQL Database.
+Anda harus menentukan parameter ini jika Anda menentukan parameter *RequestId* .
 
 ```yaml
 Type: String
@@ -67,8 +67,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -83,8 +83,8 @@ Accept wildcard characters: False
 ```
 
 ### -Request
-Menentukan objek **ImportExportRequest.**
-Untuk mendapatkan objek permintaan impor atau ekspor, gunakan cmdlet Start-AzureSqlDatabaseImport Start-AzureSqlDatabaseExport cmdlet.
+Menentukan objek **ImportExportRequest** .
+Untuk mendapatkan objek permintaan impor atau ekspor, gunakan cmdlet Start-AzureSqlDatabaseImport atau Start-AzureSqlDatabaseExport.
 
 ```yaml
 Type: ImportExportRequest
@@ -99,8 +99,8 @@ Accept wildcard characters: False
 ```
 
 ### -RequestId
-Menentukan GUID operasi impor atau ekspor yang mendapatkan status cmdlet ini.
-Jika Anda menentukan parameter ini, Anda harus menentukan parameter *UserName*, *Password*, *dan ServerName.*
+Menentukan GUID operasi impor atau ekspor tempat cmdlet ini mendapatkan status.
+Jika Anda menentukan parameter ini, Anda harus menentukan parameter *UserName*, *Password*, dan *ServerName* .
 
 ```yaml
 Type: String
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 
 ### -ServerName
 Menentukan nama server Azure SQL Database.
-Anda harus menentukan parameter ini jika sudah menentukan parameter *RequestId.*
+Anda harus menentukan parameter ini jika Anda menentukan parameter *RequestId* .
 
 ```yaml
 Type: String
@@ -131,8 +131,8 @@ Accept wildcard characters: False
 ```
 
 ### -Nama pengguna
-Menentukan nama pengguna yang diperlukan untuk menyambungkan ke server Azure SQL Database.
-Anda harus menentukan parameter ini jika sudah menentukan parameter *RequestId.*
+Menentukan nama pengguna yang diperlukan untuk tersambung ke server Azure SQL Database.
+Anda harus menentukan parameter ini jika Anda menentukan parameter *RequestId* .
 
 ```yaml
 Type: String
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -161,9 +161,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Azure SQL Database](https://azure.microsoft.com/en-us/services/sql-database/)
 
-[Dapatkan Status Impor Ekspor Database](https://msdn.microsoft.com/en-us/library/azure/dn781289.aspx)
+[Dapatkan Status Ekspor Database Impor](https://msdn.microsoft.com/en-us/library/azure/dn781289.aspx)
 
-[Operasi untuk Database SQL Azure](https://msdn.microsoft.com/en-us/library/azure/dn505719.aspx)
+[Operasi untuk Database Azure SQL](https://msdn.microsoft.com/en-us/library/azure/dn505719.aspx)
 
 [Start-AzureSqlDatabaseExport](./Start-AzureSqlDatabaseExport.md)
 

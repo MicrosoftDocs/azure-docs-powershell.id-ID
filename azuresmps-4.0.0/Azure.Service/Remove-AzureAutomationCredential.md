@@ -4,11 +4,11 @@ ms.assetid: 4D87DD30-4AEF-4269-93B2-AE5964334AC8
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: e84118201fad14c6e0105e31224ee4aff88768d4
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421135"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142277815"
 ---
 # Remove-AzureAutomationCredential
 
@@ -29,16 +29,16 @@ Remove-AzureAutomationCredential -Name <String> [-Force] -AutomationAccountName 
 
 [!INCLUDE [aa-deprecation](../include/aa-deprecation.md)]
 
-Cmdlet **Remove-AzureAutomationCredential** menghapus kredensial dari Microsoft Azure Automation.
+Cmdlet **Remove-AzureAutomationCredential** menghapus kredensial dari Microsoft Azure Otomatisasi.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus kredensial
+### Contoh 1: Menghapus kredensial
 ```
 PS C:\> Remove-AzureAutomationCredential -AutomationAccountName "Contoso17" -Name "MyCredential"
 ```
 
-Perintah ini menghapus kredensial bernama MyCredential dalam akun Otomatisasi yang bernama Contoso17.
+Perintah ini menghapus kredensial bernama MyCredential dalam akun Otomatisasi bernama Contoso17.
 
 ## PARAMETERS
 
@@ -57,8 +57,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: SwitchParameter
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama kredensial untuk dihapus.
+Menentukan nama kredensial yang akan dihapus.
 
 ```yaml
 Type: String
@@ -88,8 +88,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -116,7 +116,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureAutomationCredential](./Get-AzureAutomationCredential.md)
 
-[New-AzureAutomationCredential](./New-AzureAutomationCredential.md)
+[AzureAutomationCredential Baru](./New-AzureAutomationCredential.md)
 
 [Set-AzureAutomationCredential](./Set-AzureAutomationCredential.md)
 

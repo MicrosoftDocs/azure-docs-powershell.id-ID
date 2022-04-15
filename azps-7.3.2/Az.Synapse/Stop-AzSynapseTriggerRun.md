@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/stop-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapseTriggerRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapseTriggerRun.md
-ms.openlocfilehash: cbc7e3de6a0fda8b9a8393e3f1c6d490cad82e6f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 029b85b7f89ee092415ab603659f4a89ce56bb7d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140005150"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142287583"
 ---
 # Stop-AzSynapseTriggerRun
 
 ## SYNOPSIS
-Menghentikan pemicu yang dijalankan di ruang kerja synapse.
+Menghentikan pemicu berjalan di ruang kerja sinapsis.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/stop-azsynapsetriggerrun) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Stop-AzSynapseTriggerRun -WorkspaceObject <PSSynapseWorkspace> -Name <String> -T
 ```
 
 ## DESCRIPTION
-Cmdlet Stop-AzSynapseTriggerRun menghentikan pemicu dijalankan di ruang kerja synapse yang ditentukan dengan nama pemicu dan ID jalankan pemicu. Saat ini hanya didukung untuk TumblingWindowTriggers dalam WaitingOnDependency State.
+Cmdlet Stop-AzSynapseTriggerRun menghentikan pemicu berjalan di ruang kerja sinapsis yang ditentukan dengan nama pemicu dan ID proses pemicu. Saat ini hanya didukung untuk TumblingWindowTriggers di WaitingOnDependency State.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Cmdlet Stop-AzSynapseTriggerRun menghentikan pemicu dijalankan di ruang kerja sy
 PS C:\> Stop-AzSynapseTriggerRun -WorkspaceName ContosoWorkspace -Name ContosoTrigger -TriggerRunId 000111222333abc
 ```
 
-Perintah ini menghentikan pemicu dijalankan dengan id '00011122333abc' di ruang kerja Synapse ContosoWorkspace.
+Perintah ini menghentikan pemicu berjalan dengan id '000111222333abc' di ruang kerja Synapse ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
@@ -55,7 +58,7 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Stop-AzSynapseTriggerRun -Name ContosoTrigger -TriggerRunId 000111222333abc
 ```
 
-Menghentikan pemicu dijalankan dengan id '000111222333abc' di ruang kerja Synapse ContosoWorkspace melalui pipeline.
+Menghentikan proses pemicu dengan id '000111222333abc' di ruang kerja Synapse ContosoWorkspace melalui pipeline.
 
 ### Contoh 3
 ```powershell
@@ -63,7 +66,7 @@ PS C:\> $triggerun = Get-AzSynapseTriggerRun -WorkspaceName ContosoWorkspace -Na
 PS C:\> $triggerun | Stop-AzSynapseTriggerRun
 ```
 
-Menghentikan pemicu dijalankan di ruang kerja Synapse ContosoWorkspace melalui saluran.
+Menghentikan pemicu berjalan di ruang kerja Synapse ContosoWorkspace melalui pipeline.
 
 ## PARAMETERS
 
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Informasi mengenai pemicu berjalan.
+Informasi tentang pemicu berjalan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSTriggerRun
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Cmdlet ini tidak mengembalikan objek secara default. Jika sakelar ini ditentukan, maka true akan dikembalikan jika berhasil.
+Cmdlet ini tidak mengembalikan objek secara default. Jika sakelar ini ditentukan, sakelar akan mengembalikan true jika berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -TriggerRunId
-Id Jalankan dari pemicu.
+ID Jalankan pemicu.
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -3,12 +3,12 @@ external help file: Microsoft.WindowsAzure.Commands.ServiceManagement.Network.dl
 ms.assetid: 128AD64D-709A-4B59-B233-4221A9120AE1
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 43bb2ebe95c3712bb2232f6a9eb192e1ace572bbd9d2d0651394424b7ae44ed7
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 95ca7c9f4bf29a50f480bac603d224f4ff498025
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418192"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142277843"
 ---
 # Remove-AzureApplicationGateway
 
@@ -28,12 +28,12 @@ Cmdlet **Remove-AzureApplicationGateway** menghapus gateway aplikasi.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus gateway aplikasi
+### Contoh 1: Menghapus gateway aplikasi
 ```
 PS C:\> Remove-AzureApplicationGateway -Name "ApplicationGateway06"
 ```
 
-Perintah ini akan menghapus gateway aplikasi bernama ApplicationGateway06.
+Perintah ini menghapus gateway aplikasi bernama ApplicationGateway06.
 
 ## PARAMETERS
 
@@ -53,7 +53,7 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini. Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca. Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -84,7 +84,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureApplicationGateway](./Get-AzureApplicationGateway.md)
 
-[New-AzureApplicationGateway](./New-AzureApplicationGateway.md)
+[AzureApplicationGateway baru](./New-AzureApplicationGateway.md)
 
 [Start-AzureApplicationGateway](./Start-AzureApplicationGateway.md)
 

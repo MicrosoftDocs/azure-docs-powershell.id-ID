@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/new-azvmw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwarePrivateCloud.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwarePrivateCloud.md
-ms.openlocfilehash: 268793bed0295e9e7b25676982d49bd010d94ce5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e115c5cd0d93cc46fb38dcd68191eec698f3c378
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140389938"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142286737"
 ---
 # New-AzVMwarePrivateCloud
 
 ## SYNOPSIS
 Membuat atau memperbarui awan pribadi
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.vmware/new-azvmwareprivatecloud) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Membuat atau memperbarui awan pribadi
 
 ## EXAMPLES
 
-### Contoh 1: Membuat awan privat
+### Contoh 1: Membuat awan pribadi
 ```powershell
 PS C:\> New-AzVMwarePrivateCloud -Name azps_test_cloud -ResourceGroupName azps_test_group -NetworkBlock 192.168.48.0/22 -Sku av36 -ManagementClusterSize 3 -Location australiaeast
 
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama awan privat
+Nama awan pribadi
 
 ```yaml
 Type: System.String
@@ -150,8 +153,8 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkBlock
-Blok alamat harus unik di seluruh VNet di langganan Anda serta di tempat.
-Pastikan format CIDR sesuai dengan (A.B.C.D/X) dengan A,B,C,D antara 0 dan 255, dan X antara 0 dan 22
+Blok alamat harus unik di seluruh VNet dalam langganan Serta lokal.
+Pastikan format CIDR sesuai dengan (A.B.C.D/X) di mana A,B,C,D berada di antara 0 dan 255, dan X berada di antara 0 dan 22
 
 ```yaml
 Type: System.String
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -NsxtPassword
-Secara opsional, atur kata sandi NSX-T Manager saat awan privat dibuat
+Secara opsional, atur kata sandi Pengelola NSX-T saat awan privat dibuat
 
 ```yaml
 Type: System.String
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -257,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### -VcenterPassword
-Secara opsional, atur kata sandi admin vCenter saat awan pribadi dibuat
+Secara opsional, atur kata sandi admin vCenter saat awan privat dibuat
 
 ```yaml
 Type: System.String
@@ -272,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -288,7 +291,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -303,7 +306,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

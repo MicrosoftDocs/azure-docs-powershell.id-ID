@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupJobDetail.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupJobDetail.md
-ms.openlocfilehash: 3540366c1018a21b682425bc19f8e7b2452ac9db
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9655499578b97e3502fbbe264c8115352d004a53
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140006861"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142254661"
 ---
 # Get-AzRecoveryServicesBackupJobDetail
 
 ## SYNOPSIS
 
 Mendapatkan detail untuk pekerjaan Pencadangan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupjobdetail) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,13 +39,13 @@ Get-AzRecoveryServicesBackupJobDetail [-JobId] <String> [-UseSecondaryRegion] [-
 ## DESCRIPTION
 
 Cmdlet **Get-AzRecoveryServicesBackupJobDetail** mendapatkan detail pekerjaan Azure Backup untuk pekerjaan tertentu.
-Mengatur konteks vault menggunakan parameter -VaultId.
+Mengatur konteks kubah menggunakan parameter -VaultId.
 
-Peringatan: Alias **Get-AzRecoveryServicesBackupJobDetails** akan dihapus di rilis perubahan yang akan datang.
+Peringatan: **Get-AzRecoveryServicesBackupJobDetails** alias akan dihapus dalam rilis perubahan yang akan datang.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan detail pekerjaan Cadangan untuk pekerjaan yang gagal
+### Contoh 1: Dapatkan detail pekerjaan Cadangan untuk pekerjaan yang gagal
 
 ```powershell
 PS C:\> $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
@@ -51,15 +54,15 @@ PS C:\> $JobDetails = Get-AzRecoveryServicesBackupJobDetail -Job $Jobs[0] -Vault
 PS C:\> $JobDetails.ErrorDetails
 ```
 
-Perintah pertama mengambil vault yang relevan. Perintah kedua mendapatkan larik pekerjaan yang gagal dalam vault, lalu menyimpannya di $Jobs larik.
-Perintah ketiga mendapatkan detail pekerjaan untuk pekerjaan pertama yang gagal di $Jobs, lalu menyimpannya di $JobDetails lain.
-Perintah terakhir menampilkan detail kesalahan untuk pekerjaan yang gagal.
+Perintah pertama mengambil kubah yang relevan. Perintah kedua mendapatkan array pekerjaan yang gagal di kubah, lalu menyimpannya di array $Jobs.
+Perintah ketiga mendapatkan detail pekerjaan untuk pekerjaan pertama yang gagal di $Jobs, lalu menyimpannya dalam variabel $JobDetails.
+Perintah akhir menampilkan detail kesalahan untuk pekerjaan yang gagal.
 
 ## PARAMETERS
 
 ### -DefaultProfile
 
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 
 ### -Job
 
-Menentukan pekerjaan yang akan didaekan.
+Menentukan pekerjaan yang akan didapatkan.
 Untuk mendapatkan objek **BackupJob** , gunakan cmdlet **Get-AzRecoveryServicesBackupJob** .
 
 ```yaml
@@ -107,8 +110,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -UseSecirisanryRegion
-Filter dari Wilayah Sekunder untuk Pemulihan Lintas Wilayah
+### -UseSecondaryRegion
+Filter dari Kawasan Sekunder untuk Pemulihan Lintas Kawasan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 
 ### -VaultId
 
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

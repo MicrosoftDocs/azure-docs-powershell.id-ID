@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzRouteConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzRouteConfig.md
-ms.openlocfilehash: fad09d180ccd3ea34483a712b2227fa82a5905ab
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 46c94c9197be3c4590cbecf42db3310711cb604c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140196934"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142255183"
 ---
 # Set-AzRouteConfig
 
 ## SYNOPSIS
 Memperbarui konfigurasi rute untuk tabel rute.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azrouteconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Cmdlet **Set-AzRouteConfig** memperbarui konfigurasi rute untuk tabel rute.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah rute
+### Contoh 1: Memodifikasi rute
 ```powershell
 PS C:\>Get-AzRouteTable -ResourceGroupName "ResourceGroup11" -Name "RouteTable01" | Set-AzRouteConfig -Name "Route02" -AddressPrefix 10.4.0.0/16 -NextHopType VnetLocal | Set-AzRouteTable
 Name              : Routetable01
@@ -67,21 +70,21 @@ Routes            : [
 Subnets           : []
 ```
 
-Perintah ini mendapatkan tabel rute yang bernama RouteTable01 dengan menggunakan cmdlet Get-AzRouteTable cmdlet.
-Perintah itu meneruskan tabel itu ke cmdlet saat ini dengan menggunakan operator pipeline.
-Cmdlet saat ini mengubah rute yang bernama Route02, lalu meneruskan hasilnya ke cmdlet **Set-AzRouteTable** , yang memperbarui tabel agar mencerminkan perubahan Anda.
+Perintah ini mendapatkan tabel rute bernama RouteTable01 menggunakan cmdlet Get-AzRouteTable.
+Perintah melewati tabel tersebut ke cmdlet saat ini menggunakan operator pipeline.
+Cmdlet saat ini mengubah rute bernama Route02, lalu meneruskan hasil ke cmdlet **Set-AzRouteTable** , yang memperbarui tabel untuk mencerminkan perubahan Anda.
 
 ### Contoh 2: Mengubah rute menggunakan Tag Layanan (Pratinjau Publik)
 ```powershell
 Set-AzRouteConfig -Name "Route02" -AddressPrefix "AppService" -NextHopType "VirtualAppliance" -NextHopIpAddress "10.0.2.4"
 ```
 
-Perintah ini mengubah rute yang bernama Route02, menyediakan Tag Layanan sebagai parameter AddressPrefix.
+Perintah ini mengubah rute bernama Route02, yang menyediakan Tag Layanan sebagai parameter AddressPrefix.
 
 ## PARAMETERS
 
 ### -AddressPrefix
-Menentukan tujuan, dalam format Classless Interdomain Routing (CIDR), ke mana rute tersebut diterapkan. Anda juga bisa menentukan Tag Layanan di sini (fitur ini berada di Pratinjau Publik).
+Menentukan tujuan, dalam format Classless Interdomain Routing (CIDR), tempat rute diterapkan. Anda juga bisa menentukan Tag Layanan di sini (fitur ini ada di Pratinjau Publik).
 
 ```yaml
 Type: System.String
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama rute yang akan memodifikasi cmdlet ini.
+Menentukan nama rute yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -126,8 +129,8 @@ Accept wildcard characters: False
 ```
 
 ### -NextHopIpAddress
-Menentukan alamat IP dari alat virtual yang Anda tambahkan ke jaringan virtual Azure Anda.
-Ini merutekan paket ke alamat itu.
+Menentukan alamat IP alat virtual yang Anda tambahkan ke jaringan virtual Azure Anda.
+Rute ini meneruskan paket ke alamat tersebut.
 Tentukan parameter ini hanya jika Anda menentukan nilai VirtualAppliance untuk parameter *NextHopType* .
 
 ```yaml
@@ -146,16 +149,16 @@ Accept wildcard characters: False
 Menentukan cara rute ini meneruskan paket.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Internet.
-Gateway internet default yang disediakan oleh Azure. 
-- Tidak ada.
+Gateway Internet default yang disediakan oleh Azure. 
+- Tidak.
 Jika Anda menentukan nilai ini, rute tidak meneruskan paket. 
 - VirtualAppliance.
-Sebuah alat virtual yang Anda tambahkan ke jaringan virtual Azure Anda. 
+Alat virtual yang Anda tambahkan ke jaringan virtual Azure Anda. 
 - VirtualNetworkGateway.
 Gateway jaringan privat virtual Azureserver-to-server. 
 - VnetLocal.
 Jaringan virtual lokal.
-Jika Anda memiliki dua subnet, 10.1.0.0/16 dan 10.2.0.0/16 di jaringan virtual yang sama, pilih nilai VnetLocal untuk setiap subnet untuk diteruskan ke subnet lain.
+Jika Anda memiliki dua subnet, 10.1.0.0/16 dan 10.2.0.0/16 di jaringan virtual yang sama, pilih nilai VnetLocal untuk setiap subnet untuk meneruskan ke subnet lainnya.
 
 ```yaml
 Type: System.String
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -RouteTable
-Menentukan tabel rute yang terkait dengan rute ini.
+Menentukan tabel rute yang rutenya terkait.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSRouteTable
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

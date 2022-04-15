@@ -3,17 +3,17 @@ external help file: Microsoft.WindowsAzure.Commands.ServiceManagement.dll-Help.x
 ms.assetid: 5F827BFB-492E-48A2-9610-0CB5FBDD1F9E
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: f0f7369753e643e37f868e054f56da2062a4a00f7202f0b7315690e0b4106be1
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: bd661bdcc3fcfbf485e12f4cf588f7db20dc7e41
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419228"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142278344"
 ---
 # Get-AzureWinRMUri
 
 ## SYNOPSIS
-Dapatkan URI ke winRM https listener ke komputer virtual atau daftar mesin virtual di layanan yang dihosting.
+Mendapatkan URI ke WinRM https listener ke mesin virtual atau daftar mesin virtual dalam layanan yang dihosting.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,37 +25,37 @@ Get-AzureWinRMUri [-ServiceName] <String> [[-Name] <String>] [-Profile <AzureSMP
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureWinRMUri** mendapatkan URI dari pendengar https Manajemen Jarak Jauh Windows (WinRM) ke mesin virtual atau daftar mesin virtual pada layanan yang dihosting.
+Cmdlet **Get-AzureWinRMUri** mendapatkan URI dari Windows Remote Management (WinRM) https listener ke mesin virtual atau daftar mesin virtual dalam layanan yang dihosting.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan URI dari pendengar https WinRM ke mesin virtual
+### Contoh 1: Dapatkan URI pendengar WinRM https ke mesin virtual
 ```
 PS C:\> Get-AzureWinRMUri -ServiceName MyService -Name MyVM
 ```
 
-Perintah ini memberikan UIR pendengar https WinRM ke komputer virtual.
+Perintah ini mendapatkan UIR pendengar WinRM https ke mesin virtual.
 
-### Contoh 2: Mendapatkan URI dari pendengar https WinRM ke mesin virtual layanan tertentu
+### Contoh 2: Dapatkan URI dari pendengar WinRM https ke mesin virtual layanan tertentu
 ```
 PS C:\> Get-AzureWinRMUri -ServiceName MyService
 ```
 
-Perintah ini memberikan UIR pendengar https WinRM ke komputer virtual.
+Perintah ini mendapatkan UIR pendengar WinRM https ke mesin virtual.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama mesin virtual tempat URI WinRM dihasilkan.
+Menentukan nama mesin virtual tempat WinRM URI dihasilkan.
 
 ```yaml
 Type: String
@@ -100,8 +100,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Menentukan nama layanan Microsoft Azure meng host komputer virtual.
+Menentukan nama layanan Microsoft Azure yang menghosting mesin virtual.
 
 ```yaml
 Type: String
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -141,7 +141,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureVM](./New-AzureVM.md)
+[AzureVM baru](./New-AzureVM.md)
 
 [New-AzureQuickVM](./New-AzureQuickVM.md)
 
