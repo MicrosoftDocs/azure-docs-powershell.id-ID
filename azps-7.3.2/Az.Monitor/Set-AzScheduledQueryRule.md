@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/set-azsc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Set-AzScheduledQueryRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Set-AzScheduledQueryRule.md
-ms.openlocfilehash: 00e4a5f7763f774a84a427175fbe09d422c0df06
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 7f89099f1b0d67dfc3b296bff5e8447b0f9c6128
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140381292"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142290931"
 ---
 # Set-AzScheduledQueryRule
 
 ## SYNOPSIS
-Memperbarui Aturan Pemberitahuan Log
+Memperbarui Aturan Peringatan Log
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/set-azscheduledqueryrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,11 +47,11 @@ Set-AzScheduledQueryRule -ResourceId <String> -Source <PSScheduledQueryRuleSourc
 ```
 
 ## DESCRIPTION
-Memperbarui Aturan Pemberitahuan Log oleh semantik PUT
+Memperbarui Aturan Peringatan Log dengan semantik PUT
 
 ## EXAMPLES
 
-### Contoh 1: Setel menurut nama aturan
+### Contoh 1: Atur menurut nama aturan
 ```powershell
 PS C:\> Set-AzScheduledQueryRule -ResourceGroupName "MyResourceGroup" -Name "LogAlertRule1" -Enabled $true -Location "centralindia" -Action $alertingAction -Description "log alert description" -Schedule $schedule -Source $source
 
@@ -66,7 +69,7 @@ Location          : centralindia
 Tags              : {[hidden-link:/subscriptions/ad825170-845c-47db-8f00-11978947b089/resourceGroups/MyResourceGroup/providers/Microsoft.OperationalInsights/workspaces/MyWorkspace, Resource]}
 ```
 
-### Contoh 2: Atur menurut objek Input
+### Contoh 2: Atur menurut Objek Input
 ```powershell
 PS C:\> Set-AzScheduledQueryRule -InputObject $sqr -Description "changed description"
 
@@ -84,7 +87,7 @@ Location          : centralindia
 Tags              : {[hidden-link:/subscriptions/ad825170-845c-47db-8f00-11978947b089/resourceGroups/MyResourceGroup/providers/Microsoft.OperationalInsights/workspaces/MyWorkspace, Resource]}
 ```
 
-### Contoh 3: Set by resource Id
+### Contoh 3: Atur menurut Id sumber daya
 ```powershell
 PS C:\> Set-AzScheduledQueryRule -ResourceId "/subscriptions/ad825170-845c-47db-8f00-11978947b089/resourceGroups/MyResourceGroup/providers/Microsoft.Insights/scheduledqueryrules/LogAlertRule1" -Enabled $true -Location "centralindia" -Action $alertingAction -Description "change description again" -Schedule $schedule -Source $source
 
@@ -105,7 +108,7 @@ Tags              : {[hidden-link:/subscriptions/ad825170-845c-47db-8f00-1197894
 ## PARAMETERS
 
 ### -Tindakan
-Tindakan Pemberitahuan aturan kueri terjadwal
+Aturan kueri terjadwal Tindakan Peringatan
 
 ```yaml
 Type: Microsoft.Azure.Commands.Insights.OutputClasses.PSScheduledQueryRuleAlertingAction
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -176,8 +179,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Enabled
-Status pemberitahuan Azure - nilai yang valid - $true, $false
+### -Difungsikan
+Status peringatan azure - nilai yang valid - $true, $false
 
 ```yaml
 Type: System.Boolean
@@ -278,7 +281,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Schedule
+### -Jadwal
 Jadwal aturan kueri terjadwal
 
 ```yaml
@@ -336,7 +339,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -352,7 +355,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -367,7 +370,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

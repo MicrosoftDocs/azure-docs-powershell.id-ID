@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azal
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzAlertRuleEmail.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzAlertRuleEmail.md
-ms.openlocfilehash: fde7c6676b50fd35a58fb1bb0583906429181e5c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a0be9621c0b4d7f7583879b1b95eba7496120bed
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140401847"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142291273"
 ---
 # New-AzAlertRuleEmail
 
 ## SYNOPSIS
 Membuat tindakan email untuk aturan pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azalertruleemail) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,30 +29,30 @@ New-AzAlertRuleEmail [[-CustomEmail] <String[]>] [-SendToServiceOwner]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzAlertRuleEmail** membuat tindakan email untuk aturan pemberitahuan.
+Cmdlet **New-AzAlertRuleEmail** membuat tindakan email untuk aturan peringatan.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat tindakan email aturan pemberitahuan untuk pemilik layanan
+### Contoh 1: Membuat tindakan email aturan peringatan untuk pemilik layanan
 ```
 PS C:\>New-AzAlertRuleEmail -SendToServiceOwners
 ```
 
-Perintah ini membuat tindakan email aturan pemberitahuan untuk dikirim bagi pemilik layanannya ketika aturan pemberitahuan dipecat.
+Perintah ini membuat tindakan email aturan pemberitahuan untuk dikirimkan bagi pemilik layanannya saat aturan peringatan ditembakkan.
 
-### Contoh 2: Membuat tindakan email aturan pemberitahuan untuk pemilik non-layanan
+### Contoh 2: Membuat tindakan email aturan peringatan untuk pemilik non-layanan
 ```
 PS C:\>New-AzAlertRuleEmail -CustomEmail pattif@contoso.com,davidchew@contoso.net
 ```
 
-Perintah ini akan membuat tindakan email aturan pemberitahuan untuk alamat email yang ditentukan, tetapi tidak untuk pemilik layanan.
+Perintah ini membuat tindakan email aturan pemberitahuan untuk alamat email tertentu, tetapi tidak untuk pemilik layanan.
 
-### Contoh 3: Buat tindakan email aturan pemberitahuan untuk pemilik layanan dan pemilik non-layanan
+### Contoh 3: Membuat tindakan email aturan peringatan untuk pemilik layanan dan pemilik non-layanan
 ```
 PS C:\>New-AzAlertRuleEmail -CustomEmail pattif@contoso.net -SendToServiceOwners
 ```
 
-Perintah ini akan membuat tindakan email aturan pemberitahuan untuk alamat yang ditentukan dan untuk pemilik layanannya.
+Perintah ini membuat tindakan email aturan pemberitahuan untuk alamat yang ditentukan dan untuk pemilik layanannya.
 
 ## PARAMETERS
 
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -SendToServiceOwner
-Menunjukkan bahwa operasi ini mengirim email ke pemilik layanan saat aturan tersebut berlaku.
+Menunjukkan bahwa operasi ini mengirim email ke pemilik layanan ketika aturan diterapkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

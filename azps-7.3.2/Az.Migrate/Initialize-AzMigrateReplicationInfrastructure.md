@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/initiali
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Initialize-AzMigrateReplicationInfrastructure.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Initialize-AzMigrateReplicationInfrastructure.md
-ms.openlocfilehash: 6f3b7bed6f93674e44d1662c845b321cf87b30d9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 00d910a024f1a5bd72737b7404d8d0fdc12656b4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140401919"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142291723"
 ---
 # Initialize-AzMigrateReplicationInfrastructure
 
 ## SYNOPSIS
-Inisial adalah infrastruktur untuk proyek migrasi.
+Menginisialisasi infrastruktur untuk migrasi proyek.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.migrate/initialize-azmigratereplicationinfrastructure) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,18 +29,18 @@ Initialize-AzMigrateReplicationInfrastructure -ProjectName <String> -ResourceGro
 ```
 
 ## DESCRIPTION
-Inisial Initialize-AzMigrateReplicationInfrastructure cmdlet adalah infrastruktur untuk proyek migrasi.
+Cmdlet Initialize-AzMigrateReplicationInfrastructure menginisiasi infrastruktur untuk migrasi proyek.
 
 ## EXAMPLES
 
-### Contoh 1: Inisial adalah infrastruktur untuk proyek migrasi.
+### Contoh 1: Menginisialisasi infrastruktur untuk migrasi proyek.
 ```powershell
 PS C:\> Initialize-AzMigrateReplicationInfrastructure.ps1 -ResourceGroupName TestRG  -ProjectName TestProject -Vmwareagentless -TargetRegion centralus
 
 True
 ```
 
-Inisial adalah infrastruktur untuk proyek migrasi.
+Menginisialisasi infrastruktur untuk migrasi proyek.
 
 ## PARAMETERS
 
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan Grup Sumber Daya Migrasi Azure Project langganan saat ini.
+Menentukan Grup Sumber Daya Azure Melakukan migrasi Project dalam langganan saat ini.
 
 ```yaml
 Type: System.String
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -Skenario
-Menentukan skenario migrasi server di mana infrastruktur replikasi perlu diinialisasi.
+Menentukan skenario migrasi server di mana infrastruktur replikasi perlu diinisialisasi.
 
 ```yaml
 Type: System.String
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateJob.md
-ms.openlocfilehash: 05bab56847933bc3105857afef5fb477d7844c54
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 42178774f99befb2c65d1a1d8e6d4321008df0e5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140008311"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142291813"
 ---
 # Get-AzMigrateJob
 
 ## SYNOPSIS
-Mengambil status pekerjaan Azure Migrate.
+Mengambil status pekerjaan Migrasi Azure.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.migrate/get-azmigratejob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,11 +52,11 @@ Get-AzMigrateJob -ProjectID <String> -ResourceGroupID <String> [-SubscriptionId 
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzMigrateJob cmdlet tersebut mencoba kembali status pekerjaan Azure Migrate.
+Cmdlet Get-AzMigrateJob mengupahkan status pekerjaan Migrasi Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Get by job id
+### Contoh 1: Get By Job Id
 ```powershell
 PS C:\> Get-AzMigrateJob -JobID "/Subscriptions/xxx-xxx-xxx/resourceGroups/azmigratepwshtestasr13072020/providers/Microsoft.RecoveryServices/vaults/AzMigrateTestProjectPWSH02aarsvault/replicationJobs/997e2a92-5afe-49c7-a81a-89660aec9b7b" 
 
@@ -79,9 +82,9 @@ Task                             : {CloudPairingPrerequisitesCheck, CloudPairing
 Type                             : Microsoft.RecoveryServices/vaults/replicationJobs
 ```
 
-Hal ini mendapatkan pekerjaan dengan ID-nya.
+Ini mengambil pekerjaan dengan id itu.
 
-### Contoh 2:  List by resource group and project
+### Contoh 2: Daftar menurut grup sumber daya dan proyek
 ```powershell
 PS C:\> Get-AzMigrateJob -ResourceGroupName 'azmigratepwshtestasr13072020' -ProjectName 'AzMigrateTestProjectPWSH'
 
@@ -107,9 +110,9 @@ Task                             : {}
 Type                             : Microsoft.RecoveryServices/vaults/replicationJobs
 ```
 
-Ini mendapatkan semua pekerjaan dalam satu proyek.
+Ini mendapatkan semua pekerjaan dalam sebuah proyek.
 
-### Contoh 3: Dapatkan menurut grup sumber daya, nama proyek dan pekerjaan
+### Contoh 3: Dapatkan menurut grup sumber daya, proyek dan nama pekerjaan
 ```powershell
 PS C:\> Get-AzMigrateJob -ResourceGroupName 'azmigratepwshtestasr13072020' -ProjectName 'AzMigrateTestProjectPWSH' -JobName 7ae1ee7c-442c-499d-8b0e-81d52a42b71e
 
@@ -135,7 +138,7 @@ Task                             : {AddProtectionProfilePreflightsCheckTask, Add
 Type                             : Microsoft.RecoveryServices/vaults/replicationJobs
 ```
 
-Ini mendapatkan pekerjaan khusus.
+Ini mendapatkan pekerjaan tertentu.
 
 ## PARAMETERS
 
@@ -170,8 +173,8 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Menentukan objek pekerjaan server yang replikasi.
-Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Menentukan objek pekerjaan server replikasi.
+Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IJob
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobID
-Menentukan id pekerjaan yang akan diambil detailnya.
+Menentukan id pekerjaan yang detailnya perlu diambil.
 
 ```yaml
 Type: System.String
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProjectID
-Menentukan lokasi migrasi Azure Project replikasi server.
+Menentukan Project Azure Migrasi server yang sedang direplikasi.
 
 ```yaml
 Type: System.String
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupID
-Menentukan Grup Sumber Daya Migrasi Azure Project langganan saat ini.
+Menentukan Grup Sumber Daya Azure Melakukan migrasi Project dalam langganan saat ini.
 
 ```yaml
 Type: System.String
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat vault layanan pemulihan ada.
+Nama grup sumber daya tempat kubah layanan pemulihan ada.
 
 ```yaml
 Type: System.String
@@ -291,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -308,18 +311,18 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IJob>: Menentukan objek pekerjaan dari server yang replikasi.
+INPUTOBJECT <IJob>: Menentukan objek pekerjaan server replikasi.
   - `[Location <String>]`: Lokasi Sumber Daya
   - `[ActivityId <String>]`: Id aktivitas.
-  - `[AllowedAction <String[]>]`: Tindakan yang diperbolehkan untuk pekerjaan.
+  - `[AllowedAction <String[]>]`: Tindakan yang diizinkan untuk pekerjaan.
   - `[CustomDetailAffectedObjectDetail <IJobDetailsAffectedObjectDetails>]`: Properti objek yang terpengaruh seperti server sumber, awan sumber, server target, awan target dll. berdasarkan detail objek alur kerja.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
-  - `[EndTime <DateTime?>]`: Waktu selesai.
+  - `[EndTime <DateTime?>]`: Waktu akhir.
   - `[Error <IJobErrorDetails[]>]`: Kesalahan.
-    - `[CreationTime <DateTime?>]`: Kesalahan waktu pembuatan pekerjaan.
-    - `[ErrorLevel <String>]`: Tingkat kesalahan.
-    - `[ProviderErrorDetailErrorCode <Int32?>]`: Kode kesalahan.
-    - `[ProviderErrorDetailErrorId <String>]`: Id kesalahan penyedia.
+    - `[CreationTime <DateTime?>]`: Waktu pembuatan kesalahan pekerjaan.
+    - `[ErrorLevel <String>]`: Tingkat kesalahan kesalahan.
+    - `[ProviderErrorDetailErrorCode <Int32?>]`: Kode Kesalahan.
+    - `[ProviderErrorDetailErrorId <String>]`: Id kesalahan Penyedia.
     - `[ProviderErrorDetailErrorMessage <String>]`: Pesan Kesalahan.
     - `[ProviderErrorDetailPossibleCaus <String>]`: Kemungkinan penyebab kesalahan.
     - `[ProviderErrorDetailRecommendedAction <String>]`: Tindakan yang disarankan untuk mengatasi kesalahan.
@@ -329,26 +332,26 @@ INPUTOBJECT <IJob>: Menentukan objek pekerjaan dari server yang replikasi.
     - `[ServiceErrorDetailPossibleCaus <String>]`: Kemungkinan penyebab kesalahan.
     - `[ServiceErrorDetailRecommendedAction <String>]`: Tindakan yang disarankan untuk mengatasi kesalahan.
     - `[TaskId <String>]`: Id tugas.
-  - `[FriendlyName <String>]`: DisplayName.
-  - `[ScenarioName <String>]`: ScenarioName.
+  - `[FriendlyName <String>]`: NamaPajangan.
+  - `[ScenarioName <String>]`: Nama Skenario.
   - `[StartTime <DateTime?>]`: Waktu mulai.
-  - `[State <String>]`: Status Pekerjaan. Ini adalah salah satu nilai ini - NotStarted, InProgress, Succeeded, Failed, Cancelled, Suspended atau Other.
-  - `[StateDescription <String>]`: Deskripsi status Pekerjaan. Misalnya - Untuk status Berhasil, deskripsi dapat Diselesaikan, PartiallySucceed, CompletedWithInformation atau Skipped.
-  - `[TargetInstanceType <String>]`: Tipe objek yang terpengaruh yang merupakan pengguna Microsoft.Azure.SiteRecovery.V2015_11_10.AffectedObjectType.
+  - `[State <String>]`: Status Pekerjaan. Ini adalah salah satu nilai ini - NotStarted, InProgress, Berhasil, Gagal, Dibatalkan, Ditangguhkan atau Lainnya.
+  - `[StateDescription <String>]`: Penjabaran status Pekerjaan. Misalnya - Untuk status Berhasil, deskripsi dapat Diselesaikan, Diukur Sebagian, CompletedWithInformation atau Dilewati.
+  - `[TargetInstanceType <String>]`: Tipe objek yang terpengaruh yang merupakan kelas Microsoft.Azure.SiteRecovery.V2015_11_10.AffectedObjectType.
   - `[TargetObjectId <String>]`: Id Objek yang terpengaruh.
   - `[TargetObjectName <String>]`: Nama objek yang terpengaruh.
   - `[Task <IAsrTask[]>]`: Tugas.
     - `[AllowedAction <String[]>]`: Status/tindakan yang berlaku pada tugas ini.
     - `[CustomDetailInstanceType <String>]`: Tipe detail tugas.
-    - `[EndTime <DateTime?>]`: Waktu selesai.
+    - `[EndTime <DateTime?>]`: Waktu akhir.
     - `[Error <IJobErrorDetails[]>]`: Detail kesalahan tugas.
     - `[FriendlyName <String>]`: Nama.
     - `[GroupTaskCustomDetailChildTask <IAsrTask[]>]`: Tugas anak.
     - `[GroupTaskCustomDetailInstanceType <String>]`: Tipe detail tugas.
-    - `[Name <String>]`: Nama Tugas unik.
+    - `[Name <String>]`: Nama Tugas yang unik.
     - `[StartTime <DateTime?>]`: Waktu mulai.
-    - `[State <String>]`: Negara Bagian. Ini adalah salah satu nilai ini - NotStarted, InProgress, Succeeded, Failed, Cancelled, Suspended atau Other.
-    - `[StateDescription <String>]`: Deskripsi status tugas. Misalnya - Untuk status Berhasil, deskripsi dapat Diselesaikan, PartiallySucceed, CompletedWithInformation atau Skipped.
+    - `[State <String>]`: Negara Bagian. Ini adalah salah satu nilai ini - NotStarted, InProgress, Berhasil, Gagal, Dibatalkan, Ditangguhkan atau Lainnya.
+    - `[StateDescription <String>]`: Penjabaran dari status tugas. Misalnya - Untuk Status berhasil, deskripsi dapat Diselesaikan, Dididik Sebagian, SelesaiWithInformation atau Dilewati.
     - `[TaskId <String>]`: Id.
     - `[TaskType <String>]`: Tipe tugas. Detail dalam properti CustomDetails bergantung pada tipe ini.
 

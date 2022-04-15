@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.media/set-azmedi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Set-AzMediaService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Set-AzMediaService.md
-ms.openlocfilehash: 716be769480a631b8948aa6237673e25ab8bfa2d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 34e526b2ed76bb3a71464ebad10d8eddd21e2177
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140008301"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142291849"
 ---
 # Set-AzMediaService
 
 ## SYNOPSIS
 Mengubah properti tertentu dari layanan media yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.media/set-azmediaservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,14 +40,14 @@ PS C:\>$Tags = @{"tag1" = "value1"; "tag2" = "value2"}
 Set-AzMediaService -ResourceGroupName "ResourceGroup123" -AccountName "MediaService001" -Tag $Tags -StorageAccounts $StorageAccounts
 ```
 
-Perintah pertama membuat serangkaian tag dan menyimpan tag tersebut di variabel yang bernama $Tags.
-Perintah kedua ini memperbarui layanan media bernama MediaService001 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup123 dengan tag yang disimpan $Tags variabel.
-Perintah juga menggunakan array objek konfigurasi penyimpanan yang disimpan dalam $StorageAccounts penyimpanan.
+Perintah pertama membuat serangkaian tag dan menyimpan tag tersebut dalam variabel bernama $Tags.
+Perintah kedua ini memperbarui layanan media bernama MediaService001 yang termasuk dalam grup sumber daya bernama ResourceGroup123 dengan tag yang disimpan dalam variabel $Tags.
+Perintah ini juga menggunakan array objek konfigurasi penyimpanan yang disimpan dalam variabel $StorageAccounts.
 
 ## PARAMETERS
 
-### -Nama Akun
-Menentukan nama layanan media yang ditentukan cmdlet ini.
+### -AccountName
+Menentukan nama layanan media yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -59,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccounts
-Menentukan array akun penyimpanan yang terkait dengan layanan media ini.
+Menentukan array akun penyimpanan yang dikaitkan cmdlet ini dengan layanan media.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Media.Models.PSStorageAccount[]
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -172,6 +175,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzMediaService](./New-AzMediaService.md)
 
-[Remove-AzMediaService](./Remove-AzMediaService.md)
+[Hapus-AzMediaService](./Remove-AzMediaService.md)
 
 
