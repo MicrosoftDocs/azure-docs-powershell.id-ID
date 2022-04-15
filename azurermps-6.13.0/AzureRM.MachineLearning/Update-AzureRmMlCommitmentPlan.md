@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/MachineLearning/Commands.MachineLearning/help/Update-AzureRmMlCommitmentPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/MachineLearning/Commands.MachineLearning/help/Update-AzureRmMlCommitmentPlan.md
 ms.openlocfilehash: 38228cd8f7618d3dfeec1836621d2eeffc5ecb4b
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140866394"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142139717"
 ---
 # Update-AzureRmMlCommitmentPlan
 
 ## SYNOPSIS
-Pembaruan properti dari sumber daya rencana komitmen yang ada.
+Memperbarui properti sumber daya rencana komitmen yang sudah ada.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,11 +28,11 @@ Update-AzureRmMlCommitmentPlan -ResourceGroupName <String> -Name <String> -SkuNa
 ```
 
 ## DESCRIPTION
-Memperbarui sumber daya rencana komitmen yang sudah ada. Perhatikan bahwa sebagian besar properti dari paket komitmen dapat terus diperbarui dan tidak bisa dimodifikasi. Properti yang bisa dimodifikasi meliputi Sku (memungkinkan Anda untuk melakukan migrasi rencana komitmen dari satu SKU ke yang lain) dan Tag.
+Memperbarui sumber daya rencana komitmen yang sudah ada. Perhatikan bahwa sebagian besar properti paket komitmen tidak dapat diubah dan tidak dapat diubah. Properti yang dapat dimodifikasi meliputi Sku (memungkinkan Anda untuk melakukan migrasi rencana komitmen dari satu SKU ke SKU lainnya) dan Tag.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui paket komitmen
+### Contoh 1: Memperbarui rencana komitmen
 ```
 Update-AzureRmMlCommitmentPlan -ResourceGroupName "MyResourceGroup" -Name "MyCommitmentPlanName" -Tags @{'MyTagKey'='MyTagValue'}
 ```
@@ -40,7 +40,7 @@ Update-AzureRmMlCommitmentPlan -ResourceGroupName "MyResourceGroup" -Name "MyCom
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -54,8 +54,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama paket komitmen ML Azure.
+Nama rencana komitmen Azure ML.
 
 ```yaml
 Type: System.String
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya untuk Rencana ML Azure.
+Nama grup sumber daya untuk rencana komitmen Azure ML.
 
 ```yaml
 Type: System.String
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuCapacity
-Kapasitas SKU yang akan digunakan ketika memperbarui Paket ML Azure.
+Kapasitas SKU untuk digunakan saat memperbarui rencana komitmen Azure ML.
 
 ```yaml
 Type: System.Int32
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Nama SKU yang akan digunakan ketika memperbarui Paket ML Azure.
+Nama SKU yang akan digunakan saat memperbarui rencana komitmen Azure ML.
 
 ```yaml
 Type: System.String
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuTier
-Tingkatan SKU yang akan digunakan ketika memperbarui Azure ML rencana komitmen.
+Tingkat SKU yang digunakan saat memperbarui rencana komitmen Azure ML.
 
 ```yaml
 Type: System.String
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,17 +190,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Management.MachineLearning.CommitmentPlans.Models.CommitmentPlan
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, machine, machine learning, azureml
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, mesin, pembelajaran mesin, azureml
 
 ## RELATED LINKS

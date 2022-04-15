@@ -4,11 +4,11 @@ ms.assetid: 42C669B6-B621-454C-B897-262E1C8E76E3
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 3bd5958ff5457f7b2087d03a270eae5246a38188
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422441"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142242938"
 ---
 # New-AzureStorageQueueSASToken
 
@@ -49,7 +49,7 @@ Contoh ini menghasilkan token SAS antrean dengan izin penuh.
 
 ### -Konteks
 Menentukan konteks penyimpanan Azure.
-Anda dapat membuatnya dengan New-AzureStorageContext cmdlet.
+Anda dapat membuatnya dengan cmdlet New-AzureStorageContext.
 
 ```yaml
 Type: IStorageContext
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -FullUri
-Mengindikasikan bahwa cmdlet ini mengembalikan URI blob penuh dan token tanda tangan akses bersama.
+Menunjukkan bahwa cmdlet ini mengembalikan URI blob penuh dan token tanda tangan akses bersama.
 
 ```yaml
 Type: SwitchParameter
@@ -94,8 +94,8 @@ Accept wildcard characters: False
 ```
 
 ### -IPAddressOrRange
-Menentukan alamat IP atau rentang alamat IP untuk menerima permintaan, seperti 168.1.5.65 atau 168.1.5.60-168.1.5.70.
-Rentang bersifat inklusif.
+Menentukan alamat IP atau rentang alamat IP yang menerima permintaan, seperti 168.1.5.65 atau 168.1.5.60-168.1.5.70.
+Rentangnya inklusif.
 
 ```yaml
 Type: String
@@ -124,7 +124,7 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Permission
+### -Izin
 Menentukan izin untuk antrean penyimpanan.
 
 ```yaml
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Menentukan kebijakan akses Azure yang disimpan.
+Menentukan kebijakan akses azure yang disimpan.
 
 ```yaml
 Type: String
@@ -154,11 +154,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
+### -Protokol
 Menentukan protokol yang diizinkan untuk permintaan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 * HttpsOnly
-* HttpsOrhttp
+* HttpsOrHttp
 
 Nilai defaultnya adalah HttpsOrHttp.
 
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

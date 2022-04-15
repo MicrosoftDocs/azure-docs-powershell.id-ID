@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.insig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Insights/Commands.Insights/help/New-AzureRmAutoscaleProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Insights/Commands.Insights/help/New-AzureRmAutoscaleProfile.md
-ms.openlocfilehash: fbad9ecfd2945a15be93a46fa3fbe08db5098e2dbe6b6a69e7aa451c91eb3c87
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 1d860c713c29fd10ba502150561e041c46a213aa
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416516"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142141268"
 ---
 # New-AzureRmAutoscaleProfile
 
@@ -68,10 +68,10 @@ Rules      : {Microsoft.Azure.Management.Insights.Models.ScaleRule,
              Microsoft.Azure.Management.Insights.Models.ScaleRule}
 ```
 
-Perintah pertama membuat aturan Skala Otomatis bernama Permintaan, lalu menyimpannya dalam $Rule simpan.
-Perintah kedua membuat profil bernama Profile01 dengan tanggal tetap menggunakan aturan di $Rule.
+Perintah pertama membuat aturan Skala Otomatis bernama Permintaan, lalu menyimpannya dalam variabel $Rule.
+Perintah kedua membuat profil bernama Profile01 dengan tanggal tetap menggunakan aturan dalam $Rule.
 
-### Contoh 2: Buat profil dengan jadwal
+### Contoh 2: Membuat profil dengan jadwal
 ```
 PS C:\>$Rule = New-AzureRmAutoscaleRule -MetricName "Requests" -MetricResourceId "/subscriptions/b93fb07a-6f93-30be-bf3e-4f0deca15f4f/resourceGroups/Default-Web-EastUS/providers/microsoft.web/sites/mywebsite" -Operator GreaterThan -MetricStatistic Average -Threshold 10 -TimeGrain 00:01:00 -ScaleActionCooldown 00:05:00 -ScaleActionDirection Increase -ScaleActionScaleType ChangeCount -ScaleActionValue "1" 
 
@@ -84,7 +84,7 @@ Rules      : {Microsoft.Azure.Management.Insights.Models.ScaleRule,
              Microsoft.Azure.Management.Insights.Models.ScaleRule}
 ```
 
-Perintah pertama membuat aturan Skala Otomatis bernama Permintaan, lalu menyimpannya dalam $Rule simpan.
+Perintah pertama membuat aturan Skala Otomatis bernama Permintaan, lalu menyimpannya dalam variabel $Rule.
 Perintah kedua membuat profil bernama SecondProfileName dengan jadwal berulang menggunakan aturan di $Rule.
 
 ### Contoh 3: Membuat profil dengan dua aturan
@@ -110,9 +110,9 @@ Rules      : {Microsoft.Azure.Management.Insights.Models.ScaleRule,
              Microsoft.Azure.Management.Insights.Models.ScaleRule}
 ```
 
-Dua perintah pertama membuat aturan, dan menyimpannya dalam variabel $Rule 1 dan $Rule 2.
-Perintah ketiga membuat profil bernama ProfileName menggunakan aturan di Rule1 dan Rule2, lalu menyimpannya di $Profile 1.
-Perintah terakhir membuat profil bernama SecondProfileName menggunakan aturan di Rule1 dan Rule2, lalu menyimpannya di $Profile 2 tersebut.
+Dua perintah pertama membuat aturan, dan menyimpannya masing-masing dalam variabel $Rule 1 dan $Rule 2.
+Perintah ketiga membuat profil bernama ProfileName menggunakan aturan di Rule1 dan Rule2, lalu menyimpannya dalam variabel $Profile 1.
+Perintah akhir membuat profil bernama SecondProfileName menggunakan aturan di Rule1 dan Rule2, lalu menyimpannya dalam variabel $Profile 2.
 
 ### Contoh 4: Membuat profil tanpa jadwal atau tanggal tetap
 ```
@@ -121,8 +121,8 @@ PS C:\>$Rule = New-AzureRmAutoscaleRule -MetricName "Requests" -MetricResourceId
 PS C:\> $Profile = New-AzureRmAutoscaleProfile -DefaultCapacity "1" -MaximumCapacity "10" -MinimumCapacity "1" -Rule $Rule -Name "ProfileName"
 ```
 
-Perintah pertama membuat aturan Skala Otomatis bernama Permintaan, lalu menyimpannya dalam $Rule simpan.
-Perintah kedua membuat profil tanpa jadwal atau tanggal tetap, lalu menyimpannya di $Profile variabel.
+Perintah pertama membuat aturan Skala Otomatis bernama Permintaan, lalu menyimpannya dalam variabel $Rule.
+Perintah kedua membuat profil tanpa jadwal atau tanggal tetap, lalu menyimpannya dalam variabel $Profile.
 
 ## PARAMETERS
 
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -171,7 +171,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -MaximumCapacity
+### -MaksimumKapasitas
 Menentukan kapasitas maksimum.
 
 ```yaml
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama profil untuk dibuat.
+Menentukan nama profil yang akan dibuat.
 
 ```yaml
 Type: System.String
@@ -216,11 +216,11 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -PengulanganFrequency
+### -RecurrenceFrequency
 Menentukan frekuensi pengulangan.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Tidak ada
-- Detik
+- Tidak
+- Kedua
 - Menit
 - Jam
 - Hari
@@ -241,7 +241,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Rule
+### -Aturan
 Menentukan daftar aturan untuk ditambahkan ke profil.
 
 ```yaml
@@ -257,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleDay
-Menentukan hari terjadwal.
+Menentukan hari yang dijadwalkan.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -272,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleHour
-Menentukan jam terjadwal.
+Menentukan jam yang dijadwalkan.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.Nullable`1[System.Int32]]
@@ -332,7 +332,7 @@ Accept wildcard characters: False
 ```
 
 ### -TimeWindowTimeZone
-Menentukan zona waktu dari jendela waktu.
+Menentukan zona waktu jendela waktu.
 
 ```yaml
 Type: System.String
@@ -347,7 +347,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -357,11 +357,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Monitor.Management.Models.RecurrenceFrequency
 
-### System.Collections.Generic.List'1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Collections.Generic.List'1[[System.String, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
-### System.Collections.generic.List `1[[System.Nullable` 1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Collections.Generic.List1`1[[System.Nullable`[[System.Int32, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=netral, PublicKeyToken=null]]
 
 ## OUTPUTS
 
@@ -377,8 +377,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmAutoscaleSetting](./Get-AzureRmAutoscaleSetting.md)
 
-[New-AzureRmAutoscaleRule](./New-AzureRmAutoscaleRule.md)
+[Baru-AzureRmAutoscaleRule](./New-AzureRmAutoscaleRule.md)
 
-[Remove-AzureRmAutoscaleSetting](./Remove-AzureRmAutoscaleSetting.md)
+[Hapus-AzureRmAutoscaleSetting](./Remove-AzureRmAutoscaleSetting.md)
 
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzManagedCassandraCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzManagedCassandraCluster.md
-ms.openlocfilehash: 23db280db75976ae651e452d4491f1a8026db4be
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 061ed6be9ecb5740ccbe763d13c6de09f5f3dfe8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140386794"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142216855"
 ---
 # Get-AzManagedCassandraCluster
 
 ## SYNOPSIS
-Mendapatkan Azure Managed Instances untuk kluster Apache Instances.
+Mendapatkan Instans Terkelola Azure untuk kluster Apache Cassandra.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azmanagedcassandracluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzManagedCassandraCluster -ResourceId <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzManagedCass clusterCluster** mengambil properti kluster Cmdlet Terkelola Yang sudah ada.
+**Cmdlet Get-AzManagedCassandraCluster** mengambil properti dari kluster Cassandra yang dikelola yang sudah ada.
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ PS C:\> $clusterResource | Get-AzManagedCassandraCluster
 ## PARAMETERS
 
 ### -ClusterName
-Nama kluster Properti terkelola.
+Nama kluster Cassandra yang dikelola.
 
 ```yaml
 Type: System.String
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya dari kluster Failover yang dikelola.
+Id sumber daya dari kluster Cassandra yang dikelola.
 
 ```yaml
 Type: System.String
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
