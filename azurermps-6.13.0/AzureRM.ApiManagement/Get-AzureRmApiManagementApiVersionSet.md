@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Get-AzureRmApiManagementApiVersionSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Get-AzureRmApiManagementApiVersionSet.md
 ms.openlocfilehash: 2a3b2e56f4cf3a03d0ce36a3102242dfdbf45a19
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422566"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142283222"
 ---
 # Get-AzureRmApiManagementApiVersionSet
 
@@ -27,13 +27,13 @@ Get-AzureRmApiManagementApiVersionSet -Context <PsApiManagementContext> [-ApiVer
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmApiManagementApiVersionSet** mendapatkan detail Kumpulan Versi API yang dikonfigurasi dalam konteks Manajemen API.
+Cmdlet **Get-AzureRmApiManagementApiVersionSet** mendapatkan detail Kumpulan Versi API yang dikonfigurasi dalam konteks API Management.
 
 ## EXAMPLES
 
 ### Contoh 1
 
-### Contoh 1: Mendapatkan semua kumpulan versi API
+### Contoh 1: Dapatkan semua Set Versi API
 ```powershell
 PS C:\>$ApiMgmtContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzureRmApiManagementApiVersionSet -Context $ApiMgmtContext
@@ -72,7 +72,7 @@ ServiceName       : contoso
 
 Perintah ini mendapatkan semua kumpulan Versi API untuk konteks yang ditentukan.
 
-### Contoh 2: Mendapatkan Kumpulan Versi API berdasarkan ID
+### Contoh 2: Dapatkan VERSI API yang Diatur oleh ID
 ```powershell
 PS C:\>$ApiMgmtContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzureRmApiManagementApiVersionSet -Context $ApiMgmtContext -ApiVersionSetId $ApiVersionSetId
@@ -88,13 +88,13 @@ ResourceGroupName : Api-Default-WestUS
 ServiceName       : contoso
 ```
 
-Perintah ini akan mendapatkan Kumpulan Versi API dengan ID yang ditentukan.
+Perintah ini mendapatkan SET Versi API dengan ID yang ditentukan.
 
 ## PARAMETERS
 
 ### -ApiVersionSetId
-Pengidentifikasi API untuk mencarinya.
-Jika ditentukan akan mencoba mendapatkan API tersebut dengan Id.
+PENGIDENTIFIKASI API untuk dicari.
+Jika ditentukan akan mencoba mendapatkan API dengan Id.
 
 ```yaml
 Type: System.String
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -158,6 +158,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmApiManagementApiVersionSet](./New-AzureRmApiManagementApiVersionSet.md)
 
-[Remove-AzureRmApiManagementApiSet](./Remove-AzureRmApiManagementApiVersionSet.md)
+[Hapus-AzureRmApiManagementApiSet](./Remove-AzureRmApiManagementApiVersionSet.md)
 
 [Set-AzureRmApiManagementApiVersionSet](./Set-AzureRmApiManagementApiVersionSet.md)

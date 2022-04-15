@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlobTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlobTag.md
 ms.openlocfilehash: 0d8a7de96169bc9a3ed2343dc31533d1b8b87e13
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139966389"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142264615"
 ---
 # Get-AzStorageBlobTag
 
 ## SYNOPSIS
-Mendapatkan tag blob spesifik blob.
+Dapatkan tag blob dari blob tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azstorageblobtag) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageblobtag) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,11 +47,11 @@ Get-AzStorageBlobTag -CloudBlobContainer <CloudBlobContainer> [-Blob] <String> [
 ```
 
 ## DESCRIPTION
-**Get-AzStorageBlobTag** mendapatkan tag blob tertentu blob.
+**Get-AzStorageBlobTag** mendapatkan tag blob dari blob tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan tag blob tertentu
+### Contoh 1: Dapatkan tag blob pada blob tertentu
 ```
 PS C:\> Get-AzStorageBlobTag -Container "containername" -Blob testblob
 
@@ -61,9 +61,9 @@ tag1                           value1
 tag2                           value2
 ```
 
-Perintah ini akan menambahkan tag blob tertentu pada blob tertentu.
+Perintah ini mendapatkan tag blob pada blob tertentu.
 
-### Contoh 2: Mendapatkan tag blob pada blob tertentu dengan kondisi tag
+### Contoh 2: Dapatkan tag blob pada blob tertentu dengan kondisi tag
 ```
 PS C:\> Get-AzStorageBlobTag -Container "containername" -Blob testblob -TagCondition """tag1""='value1'"
 
@@ -73,13 +73,13 @@ tag1                           value1
 tag2                           value2
 ```
 
-Perintah ini akan membuat tag blob pada blob tertentu dengan kondisi tag.
-Cmdlet hanya akan berhasil jika blob berisi tag dengan nama "tag1" dan nilai "value1", cmdlet lain akan gagal dengan kode kesalahan 412.
+Perintah ini mendapatkan tag blob pada blob tertentu dengan kondisi tag.
+Cmdlet hanya akan berhasil ketika blob berisi tag dengan nama "tag1" dan nilai "value1", selain itu cmdlet akan gagal dengan kode kesalahan 412.
 
 ## PARAMETERS
 
 ### -Blob
-Nama Blob
+Nama blob
 
 ```yaml
 Type: System.String
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientTimeoutPerRequest
-Waktu eksekusi maksimal sisi klien untuk setiap permintaan dalam detik.
+Waktu eksekusi maksimum sisi klien untuk setiap permintaan dalam hitung detik.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -139,8 +139,8 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Jumlah total tugas bersama.
-Nilai default adalah 10.
+Jumlah total tugas asinkron serentak.
+Nilai defaultnya adalah 10.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -154,7 +154,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Container
+### -Kontainer
 Nama kontainer
 
 ```yaml
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Azure Storage Konteks
+Objek Konteks Azure Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Waktu server habis untuk setiap permintaan dalam hitungan detik.
+Waktu server habis untuk setiap permintaan dalam hitung detik.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -TagCondition
-Pernyataan ekspresi Tag opsional untuk memeriksa kecocokan kondisi. Permintaan blob akan gagal ketika tag blob tidak cocok dengan ekspresi tertentu.
+Pernyataan ekspresi Tag Opsional untuk memeriksa kondisi kecocokan. Permintaan blob akan gagal ketika tag blob tidak cocok dengan ekspresi tertentu.
 Lihat detail di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
 
 ```yaml
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -262,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

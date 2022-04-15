@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ADDomainServices/help/New-AzADDomainServiceReplicaSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ADDomainServices/help/New-AzADDomainServiceReplicaSet.md
 ms.openlocfilehash: 25eaf8a0a670990ebe3dc4997b2c2f59b5fe3164
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140145393"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142275811"
 ---
 # New-AzADDomainServiceReplicaSet
 
 ## SYNOPSIS
-Membuat objek dalam memori untuk ReplikaSet
+Membuat objek dalam memori untuk ReplicaSet
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.addomainservices/new-azaddomainservicereplicaset) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.addomainservices/new-azaddomainservicereplicaset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +27,11 @@ New-AzADDomainServiceReplicaSet [-Location <String>] [-SubnetId <String>] [<Comm
 ```
 
 ## DESCRIPTION
-Membuat objek dalam memori untuk ReplikaSet
+Membuat objek dalam memori untuk ReplicaSet
 
 ## EXAMPLES
 
-### Contoh 1: Membuat ReplikaSet untuk AdDomain
+### Contoh 1: Create ReplicaSet for AdDomain
 ```powershell
 PS C:\> New-AzADDomainServiceReplicaSet -Location eastus -SubnetId /subscriptions/**********-****-****-****-****-**********/resourceGroups/youriADDomain-rg-test/providers/Microsoft.Network/virtualNetworks/yourinttest/subnets/default
 
@@ -41,7 +41,7 @@ DomainControllerIPAddress ExternalAccessIPAddress HealthLastEvaluated Location S
                                                                       ****-****-****-****-**********/resourceGroups/youriADDomain-rg-test/providers/M…
 ```
 
-Membuat ReplikaSet untuk AdDomain
+Membuat ReplicaSet untuk AdDomain
 
 ## PARAMETERS
 
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

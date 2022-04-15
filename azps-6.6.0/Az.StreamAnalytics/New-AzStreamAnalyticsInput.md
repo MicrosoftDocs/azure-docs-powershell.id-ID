@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/New-AzStreamAnalyticsInput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/New-AzStreamAnalyticsInput.md
 ms.openlocfilehash: 36d5c4a939473211d7b57a0b1255059eb1674be0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139965831"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142263985"
 ---
 # New-AzStreamAnalyticsInput
 
 ## SYNOPSIS
-Membuat input atau mengganti input yang sudah ada di bawah pekerjaan streaming yang sudah ada.
+Membuat input atau menggantikan input yang sudah ada di bawah pekerjaan streaming yang sudah ada.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.streamanalytics/new-azstreamanalyticsinput) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/new-azstreamanalyticsinput) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-AzStreamAnalyticsInput -File <String> -JobName <String> -Name <String> -Reso
 ```
 
 ## DESCRIPTION
-Membuat input atau mengganti input yang sudah ada di bawah pekerjaan streaming yang sudah ada.
+Membuat input atau menggantikan input yang sudah ada di bawah pekerjaan streaming yang sudah ada.
 
 ## EXAMPLES
 
@@ -44,7 +44,7 @@ input-01 Microsoft.StreamAnalytics/streamingjobs/inputs 6c9f5122-44b9-45bf-81c9-
 
 Perintah ini membuat input dari file EventHub.json.
 
-(di bawah ini adalah contoh untuk "EventHub.json") { "properti": { "type": "Stream", "serialization": { "type": "Json", "properties": { "encoding": "UTF8" } }, "compression": { "type": "None" }, "datasource": { "type": "Microsoft.EventHub/EventHub", "properti": { "serviceBusNamespace": "xxxxxxxxxxxxxx", "sharedAccessPolicyName": "xxxxxxxxxxxxxxxx", "sharedAccessPolicyKey": "xxxxxxxxxxxxxxxxxxx", "authenticationMode": "ConnectionString", "eventHubName": "xxxxxxxxxxxxxxxx", "consumerGroupName": "xxxxxxxxxxxxxxxx" } } }
+(di bawah ini adalah contoh untuk "EventHub.json") { "properties": { "type": "Stream", "serialisasi": { "type": "Json", "properties": { "encoding": "UTF8" } }, "compression": { "type": "None" }, "datasource": { "type": "Microsoft.EventHub/EventHub", "properties": { "serviceBusNamespace": "xxxxxx", "sharedAccessPolicyName": "xxxxx", "sharedAccessPolicyKey": "xxxxx", "xxxxx", "xxx," authenticationMode": "ConnectionString", "eventHubName": "xxxxx", "consumerGroupName": "xxxxxxx" } } } }
 
 ### Contoh 2: Membuat input pekerjaan dengan definisi dari file
 ```powershell
@@ -57,7 +57,7 @@ input-01 Microsoft.StreamAnalytics/streamingjobs/inputs 6c9f5122-44b9-45bf-81c9-
 
 Perintah ini membuat input dari file IotHub.json.
 
-(di bawah ini adalah contoh untuk "IotHub.json") { "properti": { "type": "Stream", "serialization": { "type": "Json", "properties": { "encoding": "UTF8" } }, "compression": { "type": "None" }, "partitionKey": "", "datasource": { "type": "Microsoft.Devices/IotHubs", "properties": { "iotHubNamespace": "xxxxxxxxxxx", "sharedAccessPolicyName": "xxxxxxxxxxxxxx", "sharedAccessPolicyKey": "xxxxxxxxxxxxxxxxx", "consumerGroupName": "$Default", "endpoint": "messages/events" } } }
+(di bawah ini adalah contoh untuk "IotHub.json") { "properties": { "type": "Stream", "serialization": { "type": "Json", "properties": { "encoding": "UTF8" } }, "compression": { "type": "None" }, "partitionKey": "", "datasource": { "type": "Microsoft.Devices/IotHubs", "properties": { "iotHubNamespace": "xxxxxxxx", "sharedAccessPolicyName": "xxxxxxx", "sharedAccessPolicyKey": "xxxxxxx", "consumerGroupName": "$Default", "titik akhir": "pesan/kejadian" } } } }
 
 ## PARAMETERS
 
@@ -93,8 +93,8 @@ Accept wildcard characters: False
 
 ### -IfMatch
 ETag input.
-Menghilangkan nilai ini agar selalu menimpa input saat ini.
-Tentukan nilai ETag yang terakhir dilihat untuk mencegah secara tidak sengaja menimpa perubahan bersama.
+Hilangkan nilai ini untuk selalu menimpa input saat ini.
+Tentukan nilai ETag yang terakhir terlihat untuk mencegah timpa perubahan bersamaan secara tidak sengaja.
 
 ```yaml
 Type: System.String
@@ -109,8 +109,8 @@ Accept wildcard characters: False
 ```
 
 ### -IfNoneMatch
-Atur ke '*' agar input baru dapat dibuat, tetapi jangan perbarui input yang sudah ada.
-Nilai lainnya akan menghasilkan respons Gagal Pra-Kondisi 412.
+Atur ke '*' untuk memperbolehkan input baru dibuat, tetapi untuk mencegah pembaruan input yang sudah ada.
+Nilai lain akan menghasilkan respons Gagal Pra-kondisi 412.
 
 ```yaml
 Type: System.String
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -217,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

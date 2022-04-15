@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementCustomHostnameConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementCustomHostnameConfiguration.md
 ms.openlocfilehash: 379bfa603a6b181df373feae8d113d1e7ea3e9e1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140259829"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142275379"
 ---
 # New-AzApiManagementCustomHostnameConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "140259829"
 Membuat contoh `PsApiManagementCustomHostNameConfiguration`.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementcustomhostnameconfiguration) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementcustomhostnameconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,21 +44,21 @@ New-AzApiManagementCustomHostnameConfiguration -Hostname <String> -HostnameType 
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApiManagementCustomHostnameConfiguration** adalah perintah bantuan yang membuat instans **PsApiManagementCustomHostNameConfiguration**.
-Perintah ini digunakan dengan cmdlet New-AzApiManagement Set-AzApiManagement.
+Cmdlet **New-AzApiManagementCustomHostnameConfiguration** adalah perintah penolong yang membuat contoh **PsApiManagementCustomHostNameConfiguration**.
+Perintah ini digunakan dengan cmdlet New-AzApiManagement dan Set-AzApiManagement.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat dan memulai contoh PsApiManagementCustomHostNameConfiguration menggunakan Sertifikat Ssl dari file
+### Contoh 1: Membuat dan menginisialisasi contoh PsApiManagementCustomHostNameConfiguration menggunakan Sertifikat Ssl dari file
 ```powershell
 PS C:\>$portal = New-AzApiManagementCustomHostnameConfiguration -Hostname "portal.contoso.com" -HostnameType Portal -PfxPath "C:\contoso\certificates\apimanagement.pfx" -PfxPassword "1111" -DefaultSslBinding
 PS C:\>$customConfig = @($portal)
 PS C:\>New-AzApiManagement -ResourceGroupName "ContosoGroup" -Location "West US" -Name "ContosoApi" -Organization Contoso -AdminEmail admin@contoso.com -CustomHostnameConfiguration $customConfig
 ```
 
-Perintah ini akan membuat dan memulai instans **PsApiManagementCustomHostNameConfiguration** untuk Portal. Lalu akan membuat layanan ApiManagement baru dengan konfigurasi nama host kustom.
+Perintah ini membuat dan menginisialisasi contoh **PsApiManagementCustomHostNameConfiguration** untuk Portal. Lalu membuat layanan ApiManagement baru dengan konfigurasi nama host kustom.
 
-### Contoh 2: Membuat dan memulai contoh PsApiManagementCustomHostNameConfiguration menggunakan Rahasia dari Sumber Daya KeyVault
+### Contoh 2: Membuat dan menginisialisasi contoh PsApiManagementCustomHostNameConfiguration menggunakan Secret dari KeyVault Resource
 ```powershell
 PS C:\>$portal = New-AzApiManagementCustomHostnameConfiguration -Hostname "portal.contoso.com" -HostnameType Portal -KeyVaultId "https://apim-test-keyvault.vault.azure.net/secrets/api-portal-custom-ssl.pfx"
 
@@ -66,7 +66,7 @@ PS C:\>$customConfig = @($portal)
 PS C:\>New-AzApiManagement -ResourceGroupName "ContosoGroup" -Location "West US" -Name "ContosoApi" -Organization Contoso -AdminEmail admin@contoso.com -CustomHostnameConfiguration $customConfig -SystemAssignedIdentity
 ```
 
-Perintah ini membuat dan memulai instans **PsApiManagementCustomHostNameConfiguration**.
+Perintah ini membuat dan menginisialisasi contoh **PsApiManagementCustomHostNameConfiguration**.
 
 ## PARAMETERS
 
@@ -86,9 +86,9 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultSslBinding
-Menentukan apakah nilainya rahasia dan harus dienkripsi atau tidak.
+Menentukan apakah nilai adalah rahasia dan harus dienkripsi atau tidak.
 Parameter ini bersifat opsional.
-Nilai default adalah false.
+Nilai Default adalah false.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultId
-KeyVaultId sebagai rahasia menyimpan Sertifikat SSL Kustom.
+KeyVaultId ke rahasia menyimpan Sertifikat SSL Kustom.
 
 ```yaml
 Type: System.String
@@ -179,9 +179,9 @@ Accept wildcard characters: False
 ```
 
 ### -NegotiateClientCertificate
-Menentukan apakah nilainya rahasia dan harus dienkripsi atau tidak.
+Menentukan apakah nilai adalah rahasia dan harus dienkripsi atau tidak.
 Parameter ini bersifat opsional.
-Nilai default adalah false.
+Nilai Default adalah false.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

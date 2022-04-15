@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/enable-azcdn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Enable-AzCdnCustomDomainHttps.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Enable-AzCdnCustomDomainHttps.md
-ms.openlocfilehash: 6b67cf5523339256e418eb63cdff50c0dc63ca7d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: cb5195781ab971e7e407b04443d63ff5e82594c8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140001822"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142259773"
 ---
 # Enable-AzCdnCustomDomainHttps
 
 ## SYNOPSIS
 Mengaktifkan HTTPS kustom.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cdn/enable-azcdncustomdomainhttps) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Enable-AzCdnCustomDomainHttps -ResourceId <String> [-PassThru] [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Cmdlet **Enable-AzCdnCustomDomainHttps** mengaktifkan pengiriman HTTPS aman dari domain CDN kustom.
+**Cmdlet Enable-AzCdnCustomDomainHttps** memungkinkan pengiriman HTTPS aman dari domain kustom CDN.
 
 ## EXAMPLES
 
@@ -48,12 +51,12 @@ Cmdlet **Enable-AzCdnCustomDomainHttps** mengaktifkan pengiriman HTTPS aman dari
 Enable-AzCdnCustomDomainHttps -ResourceGroupName $resourceGroupName -ProfileName $profileName -EndpointName $endpointName -CustomDomainName $customDomainName
 ```
 
-Mengaktifkan pengiriman aman dari domain kustom.
+Aktifkan pengiriman domain kustom yang aman.
 
 ## PARAMETERS
 
 ### -CustomDomainName
-Azure CDN tampilan domain kustom.
+Azure CDN nama tampilan domain kustom.
 
 ```yaml
 Type: System.String
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndpointName
-Azure CDN titik akhir.
+Azure CDN nama titik akhir.
 
 ```yaml
 Type: System.String
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Objek yang dikembalikan jika ditentukan.
+Mengembalikan objek jika ditentukan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProfileName
-Azure CDN profil.
+Azure CDN nama profil.
 
 ```yaml
 Type: System.String
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

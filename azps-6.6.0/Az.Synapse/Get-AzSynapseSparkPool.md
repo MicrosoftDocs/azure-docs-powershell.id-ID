@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSparkPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSparkPool.md
 ms.openlocfilehash: 71ec04e56eb1be03ecab9cd8d601c5310444de93
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140498883"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142263751"
 ---
 # Get-AzSynapseSparkPool
 
 ## SYNOPSIS
-Mendapatkan pool Apache Spark dalam Azure Synapse Analytics.
+Dapatkan kumpulan Apache Spark di Azure Synapse Analytics.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapsesparkpool) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsesparkpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ Get-AzSynapseSparkPool -ResourceId <String> [-DefaultProfile <IAzureContextConta
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseSparkPool** mendapatkan informasi tentang kolam Renang Apache Spark dalam Analitik Azure Synapse.
+Cmdlet **Get-AzSynapseSparkPool** mendapatkan informasi tentang kumpulan Apache Spark di Azure Synapse Analytics.
 
 ## EXAMPLES
 
@@ -49,14 +49,14 @@ Cmdlet **Get-AzSynapseSparkPool** mendapatkan informasi tentang kolam Renang Apa
 PS C:\> Get-AzSynapseSparkPool -WorkspaceName ContosoWorkspace
 ```
 
-Perintah ini menggunakan semua kolam renang Grafik Api di bawah ruang kerja.
+Perintah ini mendapatkan semua kumpulan Spark di bawah ruang kerja.
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzSynapseSparkPool -WorkspaceName ContosoWorkspace -Name ContosoSparkPool
 ```
 
-Perintah ini mendapatkan spark pool di bawah ruang kerja ContosoWorkspace dengan nama ContosoSparkPool.
+Perintah ini mendapatkan kumpulan Spark di bawah ruang kerja ContosoWorkspace dengan nama ContosoSparkPool.
 
 ### Contoh 3
 ```powershell
@@ -64,14 +64,14 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Get-AzSynapseSparkPool
 ```
 
-Perintah ini menggunakan semua kolam renang Grafik Kecil di bawah ruang kerja melalui saluran.
+Perintah ini mendapatkan semua kumpulan Spark di bawah ruang kerja melalui pipeline.
 
 ### Contoh 4
 ```powershell
 PS C:\> Get-AzSynapseSparkPool -ResourceId "/subscriptions/21686af7-58ec-4f4d-9c68-f431f4db4edd/resourceGroups/ContosoResourceGroup/providers/Microsoft.Synapse/workspaces/ContosoWorkspace/bigDataPools/ContosoSparkPool"
 ```
 
-Perintah ini mendapatkan Spark pool dengan ID sumber daya yang ditentukan.
+Perintah ini mendapatkan kumpulan Spark dengan ID sumber daya tertentu.
 
 ## PARAMETERS
 
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama pool Grafik Apik Synapse.
+Nama kolam renang Synapse Spark.
 
 ```yaml
 Type: System.String
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya dari pool Spark Synapse.
+Pengidentifikasi sumber daya kumpulan Synapse Spark.
 
 ```yaml
 Type: System.String
@@ -135,7 +135,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

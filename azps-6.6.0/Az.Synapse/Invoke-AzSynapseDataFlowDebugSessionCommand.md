@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Invoke-AzSynapseDataFlowDebugSessionCommand.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Invoke-AzSynapseDataFlowDebugSessionCommand.md
 ms.openlocfilehash: d9576f834482d0e09842b2770758cec70d2e9d4c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140275529"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142263571"
 ---
 # Invoke-AzSynapseDataFlowDebugSessionCommand
 
 ## SYNOPSIS
-Menjalankan tindakan debug dalam sesi debug aliran data.
+Memanggil tindakan debug dalam sesi debug aliran data.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/invoke-azsynapsedataflowdebugsessioncommand) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/invoke-azsynapsedataflowdebugsessioncommand) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Invoke-AzSynapseDataFlowDebugSessionCommand -WorkspaceObject <PSSynapseWorkspace
 ```
 
 ## DESCRIPTION
-Perintah ini menjalankan pratinjau data/pratinjau stats/ekspresi pratinjau untuk aliran data yang berbeda dalam sesi debug. Urutan perintah PowerShell untuk alur kerja debug aliran data harus:
+Perintah ini menjalankan pratinjau data/pratinjau statistik/pratinjau ekspresi untuk aliran data yang berbeda dalam sesi debug. Urutan perintah PowerShell untuk alur kerja debug alur data harus:
 
 Start-AzSynapseDataFlowDebugSession  
 Add-AzSynapseDataFlowDebugSessionPackage  
@@ -68,7 +68,7 @@ PS C:\> $output.output
     }
 ```
 
-Contoh ini menjalankan perintah pratinjau data untuk sesi debug "3afb278e-ac5f-469f-a0b6-2f04c3ab59bc" di ruang kerja Synapse "ContosoWorkspace" lalu mengonversi output JSON menjadi string yang dapat dibaca.
+Contoh ini menjalankan perintah pratinjau data untuk sesi debug "3afb278e-ac5f-469f-a0b6-2f04c3ab59bc" dalam ruang kerja Synapse "ContosoWorkspace" lalu konversi output JSON menjadi string yang dapat dibaca.
 
 ### Contoh 2
 ```powershell
@@ -76,12 +76,12 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Invoke-AzSynapseDataFlowDebugSessionCommand -Command executePreviewQuery -SessionId 3afb278e-ac5f-469f-a0b6-2f04c3ab59bc -StreamName source1 -RowLimit 100
 ```
 
-Contoh ini menjalankan perintah pratinjau data untuk sesi debug "3afb278e-ac5f-469f-a0b6-2f04c3ab59bc" di ruang kerja Synapse "ContosoWorkspace" melalui saluran. 
+Contoh ini menjalankan perintah pratinjau data untuk sesi debug "3afb278e-ac5f-469f-a0b6-2f04c3ab59bc" dalam ruang kerja Synapse "ContosoWorkspace" melalui pipeline. 
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -Column
-Daftar kolom untuk pratinjau statistik aliran data.
+Daftar kolom untuk pratinjau statistik alur data.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -111,8 +111,8 @@ Accept wildcard characters: False
 ```
 
 ### -Command
-Perintah debug aliran data.
-Opsional dijalankanPreviewQuery, executeStatisticsQuery dan executeExpressionQuery.
+Perintah debug alur data.
+Opsional adalah executePreviewQuery, executeStatisticsQuery dan executeExpressionQuery.
 
 ```yaml
 Type: System.String
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -SessionId
-Pengidentifikasi untuk sesi debug aliran data Synapse.
+Pengidentifikasi untuk sesi debug alur data Synapse.
 
 ```yaml
 Type: System.String
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -StreamName
-Nama aliran aliran data untuk debug.
+Nama aliran data untuk proses debug.
 
 ```yaml
 Type: System.String
@@ -201,7 +201,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -263,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -271,7 +271,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Synapse.Models.PSDataFlowDemicrosoftCommandResponse
+### Microsoft.Azure.Commands.Synapse.Models.PSDataFlowDebugCommandResponse
 
 ## CATATAN
 
