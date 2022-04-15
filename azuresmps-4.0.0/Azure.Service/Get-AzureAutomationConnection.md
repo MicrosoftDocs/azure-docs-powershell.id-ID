@@ -4,11 +4,11 @@ ms.assetid: DD881317-7366-4B55-B1CC-6AF0286F1C5D
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 00465acd6f9c778b9bbbc0ec448b2f344b044f03
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426558"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142313611"
 ---
 # Get-AzureAutomationConnection
 
@@ -20,7 +20,7 @@ Mendapatkan koneksi Azure Automation.
 
 ## SYNTAX
 
-### SecaraSemua (Default)
+### ByAll (Default)
 ```
 Get-AzureAutomationConnection -AutomationAccountName <String> [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
@@ -41,26 +41,26 @@ Get-AzureAutomationConnection -ConnectionTypeName <String> -AutomationAccountNam
 
 [!INCLUDE [aa-deprecation](../include/aa-deprecation.md)]
 
-Cmdlet **Get-AzureAutomationConnection** mendapatkan satu atau beberapa koneksi Microsoft Azure Otomatisasi.
+Cmdlet **Get-AzureAutomationConnection** mendapatkan satu atau beberapa koneksi Otomatisasi Microsoft Azure.
 Secara default, semua koneksi dikembalikan.
 Untuk mendapatkan koneksi tertentu, tentukan namanya.
-Untuk mendapatkan semua koneksi tipe tertentu, tentukan nama tipe koneksi.
+Untuk mendapatkan semua koneksi dari tipe tertentu, tentukan nama tipe koneksi.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua koneksi
+### Contoh 1: Dapatkan semua koneksi
 ```
 PS C:\> Get-AzureAutomationConnection -AutomationAccountName "Contoso17"
 ```
 
-Perintah ini mendapatkan semua koneksi dalam akun Otomatisasi bernama Contoso17.
+Perintah ini mendapatkan semua koneksi di akun Otomatisasi bernama Contoso17.
 
-### Contoh 2: Mendapatkan semua koneksi tipe
+### Contoh 2: Dapatkan semua koneksi tipe
 ```
 PS C:\> Get-AzureAutomationConnection -AutomationAccountName "Contoso17" -ConnectionTypeName "Azure"
 ```
 
-Perintah ini mendapatkan semua koneksi Azure dalam akun Otomatisasi bernama Contoso17.
+Perintah ini mendapatkan semua koneksi Azure di akun Otomatisasi bernama Contoso17.
 
 ### Contoh 3: Dapatkan koneksi
 ```
@@ -72,7 +72,7 @@ Perintah ini mendapatkan koneksi bernama MyConnection.
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun otomatisasi dengan koneksi untuk diambil.
+Menentukan nama akun otomatisasi dengan koneksi yang akan diambil.
 
 ```yaml
 Type: String
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionTypeName
-Menentukan nama tipe koneksi untuk diambil koneksi.
+Menentukan nama tipe koneksi untuk sambungan yang akan diambil.
 
 ```yaml
 Type: String
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama koneksi untuk diambil.
+Menentukan nama sambungan yang akan diambil.
 
 ```yaml
 Type: String
@@ -117,8 +117,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -145,9 +145,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureAutomationConnection](./New-AzureAutomationConnection.md)
+[Baru-AzureAutomationConnection](./New-AzureAutomationConnection.md)
 
-[Remove-AzureAutomationConnection](./Remove-AzureAutomationConnection.md)
+[Hapus-AzureAutomationConnection](./Remove-AzureAutomationConnection.md)
 
 [Set-AzureAutomationConnectionFieldValue](./Set-AzureAutomationConnectionFieldValue.md)
 

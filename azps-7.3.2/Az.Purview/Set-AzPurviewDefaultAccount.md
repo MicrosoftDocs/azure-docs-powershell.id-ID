@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/set-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/help/Set-AzPurviewDefaultAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/help/Set-AzPurviewDefaultAccount.md
-ms.openlocfilehash: 546687e5b02ed1b5e33eef8640bb5a192d85c002
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c99e927d6b7e3fb39b8c86014a13812cb7f65af4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140006911"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142289419"
 ---
 # Set-AzPurviewDefaultAccount
 
 ## SYNOPSIS
-Mengatur akun default untuk lingkup tersebut.
+Mengatur akun default untuk lingkup.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.purview/set-azpurviewdefaultaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Set-AzPurviewDefaultAccount -AccountName <String> -ResourceGroupName <String> -S
 ```
 
 ## DESCRIPTION
-Mengatur akun default untuk lingkup tersebut.
+Mengatur akun default untuk lingkup.
 
 ## EXAMPLES
 
@@ -39,11 +42,11 @@ AccountName ResourceGroupName Scope                                ScopeTenantId
 test-pa      test-rg            xxxxxxxx-38d6-4fb2-bad9-b7b93a3e9c5a xxxxxxxx-38d6-4fb2-bad9-b7b93a3e9c5a Tenant    xxxxxxxx-1bf0-4dda-aec3
 ```
 
-Mengatur `test-pa` sebagai akun default untuk lingkup.
+`test-pa` Mengatur sebagai akun default untuk lingkup.
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun yang diatur sebagai default.
 
 ```yaml
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-LINGKUP ID objek.
+ID objek lingkup.
 Misalnya, sub ID atau ID penyewa.
 
 ```yaml
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScopeTenantId
-Lingkup penyewa di mana akun default diatur.
+Penyewa lingkup tempat akun default diatur.
 
 ```yaml
 Type: System.String
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

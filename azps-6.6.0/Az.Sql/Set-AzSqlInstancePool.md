@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstancePool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstancePool.md
 ms.openlocfilehash: 4c4ad3451748a200aafd2da28113b8fb27ce2d27
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140479713"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142298149"
 ---
 # Set-AzSqlInstancePool
 
 ## SYNOPSIS
-Mengatur properti untuk kumpulan Azure SQL Instance.
+Mengatur properti untuk kumpulan Instans Azure SQL.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqlinstancepool) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqlinstancepool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,11 +41,11 @@ Set-AzSqlInstancePool [-ResourceId] <String> [-LicenseType <String>] [-Tag <Hash
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSqlInstancePool** mengubah properti kumpulan Instance Azure SQL.
+Cmdlet **Set-AzSqlInstancePool** memodifikasi properti kumpulan Instans Azure SQL.
 
 ## EXAMPLES
 
-### Contoh 1 : Mengatur tipe lisensi kumpulan contoh
+### Contoh 1 : Atur tipe lisensi kumpulan instans
 ```powershell
 PS C:\> Set-AzSqlInstancePool -ResourceGroupName resourcegroup01 -Name instancePool0 -LicenseType LicenseIncluded
 ResourceGroupName : resourcegroup01
@@ -62,9 +62,9 @@ Location          : canadacentral
 LicenseType       : LicenseIncluded
 ```
 
-Perintah ini mengatur tipe lisensi dan/atau tag untuk kumpulan instans bernamaPool0.
+Perintah ini mengatur tipe lisensi dan/atau tag untuk kumpulan instans bernama instancePool0.
 
-### Contoh 2 : Mengatur tipe lisensi kumpulan contoh menggunakan objek instance pool
+### Contoh 2 : Mengatur tipe lisensi kumpulan instans menggunakan objek kumpulan instans
 ```powershell
 PS C:\> $instancePool = Get-AzSqlInstancePool -ResourceGroupName resourcegroup01 -Name instancePool0
 PS C:\> Set-AzSqlInstancePool -InputObject $instancePool -LicenseType LicenseIncluded
@@ -82,9 +82,9 @@ Location          : canadacentral
 LicenseType       : LicenseIncluded
 ```
 
-Perintah ini mengatur tipe lisensi dan/atau tag untuk kumpulan contoh menggunakan objek instance pool.
+Perintah ini mengatur tipe lisensi dan/atau tag untuk kumpulan instans menggunakan objek kumpulan instans.
 
-### Contoh 3: Mengatur tipe lisensi kumpulan contoh menggunakan id sumber daya kumpulan contoh
+### Contoh 3 : Atur tipe lisensi kumpulan instans menggunakan id sumber daya kumpulan instans
 ```powershell
 PS C:\> Set-AzSqlInstancePool -ResourceId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Sql/instancePools/instancePool0" -LicenseType LicenseIncluded
 ResourceGroupName : resourcegroup01
@@ -101,12 +101,12 @@ Location          : canadacentral
 LicenseType       : LicenseIncluded
 ```
 
-Perintah ini mengatur tipe lisensi dan/atau tag untuk kumpulan instans bernamaPool0.
+Perintah ini mengatur tipe lisensi dan/atau tag untuk kumpulan instans bernama instancePool0.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek input pool instance.
+Objek input instance pool.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Instance_Pools.Model.AzureSqlInstancePoolModel
@@ -151,8 +151,8 @@ Accept wildcard characters: False
 ```
 
 ### -LicenseType
-Menentukan Tipe Lisensi mana yang digunakan.
-Kemungkinan nilai adalah BasePrice (dengan diskon AHB) dan LicenseIncluded (tanpa diskon AHB).
+Menentukan Tipe Lisensi mana yang akan digunakan.
+Nilai yang memungkinkan adalah BasePrice (dengan diskon AHB) dan LicenseIncluded (tanpa diskon AHB).
 
 ```yaml
 Type: System.String
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama instance pool.
+Nama kumpulan instans.
 
 ```yaml
 Type: System.String
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya pool instans.
+Pengidentifikasi sumber daya kumpulan instans.
 
 ```yaml
 Type: System.String
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag untuk dikaitkan dengan contoh
+Tag yang akan dikaitkan dengan instans
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -243,7 +243,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -258,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

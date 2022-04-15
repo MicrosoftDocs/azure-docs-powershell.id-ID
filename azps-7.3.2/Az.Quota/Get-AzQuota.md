@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.quota/get-azquot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Quota/help/Get-AzQuota.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Quota/help/Get-AzQuota.md
-ms.openlocfilehash: 83e271570167d0b42832267b0a0d1c498bda2d8b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 376c8fa84709d8e65d5a5339ff418ec15db69c80
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140401679"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142289311"
 ---
 # Get-AzQuota
 
 ## SYNOPSIS
 Dapatkan batas kuota sumber daya.
-Respons dapat digunakan untuk menentukan sisa kuota untuk menghitung batas kuota baru yang bisa dikirimkan dengan permintaan PUT.
+Respons dapat digunakan untuk menentukan sisa kuota untuk menghitung batas kuota baru yang dapat dikirimkan dengan permintaan PUT.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.quota/get-azquota) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Respons dapat digunakan untuk menentukan sisa kuota untuk menghitung batas kuota
 Get-AzQuota -Scope <String> [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzQuota -ResourceName <String> -Scope <String> [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
@@ -37,7 +40,7 @@ Get-AzQuota -InputObject <IQuotaIdentity> [-DefaultProfile <PSObject>] [<CommonP
 
 ## DESCRIPTION
 Dapatkan batas kuota sumber daya.
-Respons dapat digunakan untuk menentukan sisa kuota untuk menghitung batas kuota baru yang bisa dikirimkan dengan permintaan PUT.
+Respons dapat digunakan untuk menentukan sisa kuota untuk menghitung batas kuota baru yang dapat dikirimkan dengan permintaan PUT.
 
 ## EXAMPLES
 
@@ -67,7 +70,7 @@ MinPublicIpInterNetworkPrefixLength Public IPv4 Prefix Length Count
 ```
 
 Perintah ini mendapatkan batas kuota sumber daya.
-Respons dapat digunakan untuk menentukan sisa kuota untuk menghitung batas kuota baru yang bisa dikirimkan dengan permintaan PUT.
+Respons dapat digunakan untuk menentukan sisa kuota untuk menghitung batas kuota baru yang dapat dikirimkan dengan permintaan PUT.
 
 ## PARAMETERS
 
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Quota.Models.IQuotaIdentity
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 Nama sumber daya untuk penyedia sumber daya tertentu.
 Misalnya:
 - Nama SKU untuk Microsoft.Compute
-- SKU atau TotalLowPriorityCores untuk Microsoft.MachineLearningServices For Microsoft.Network PublicIPAddresses.
+- SKU atau TotalLowPriorityCores untuk Microsoft.MachineLearningServices Untuk Microsoft.Network PublicIPAddresses.
 
 ```yaml
 Type: System.String
@@ -120,10 +123,10 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-URI sumber daya Azure target.
+Target URI sumber daya Azure.
 Misalnya, `/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/`.
-Ini adalah URI sumber daya Azure target untuk operasi GET Daftar.
-Jika ditambahkan `{resourceName}` setelah `/quotas`, itu adalah URI sumber daya Azure target dalam operasi DAPATKAN untuk sumber daya tertentu.
+Ini adalah URI sumber daya Azure target untuk operasi List GET.
+Jika ditambahkan `{resourceName}` setelah `/quotas`, maka ini adalah URI sumber daya Azure target dalam operasi GET untuk sumber daya tertentu.
 
 ```yaml
 Type: System.String
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -160,8 +163,8 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <IQuotaIdentity>: Parameter Identitas
   - `[Id <String>]`: ID permintaan kuota.
   - `[Id1 <String>]`: Jalur identitas sumber daya
-  - `[ResourceName <String>]`: Nama sumber daya untuk penyedia sumber daya tertentu. Misalnya: - Nama SKU untuk Microsoft.Compute - SKU atau TotalLowPriorityCores untuk Microsoft.MachineLearningServices For Microsoft.Network PublicIPAddresses.
-  - `[Scope <String>]`: URI sumber daya Azure target. Misalnya, `/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/`. Ini adalah URI sumber daya Azure target untuk operasi GET Daftar. Jika ditambahkan `{resourceName}` setelah `/quotas`, itu adalah URI sumber daya Azure target dalam operasi DAPATKAN untuk sumber daya tertentu.
+  - `[ResourceName <String>]`: Nama sumber daya untuk penyedia sumber daya tertentu. Misalnya: - Nama SKU untuk Microsoft.Compute - SKU atau TotalLowPriorityCores untuk Microsoft.MachineLearningServices Untuk Microsoft.Network PublicIPAddresses.
+  - `[Scope <String>]`: Target URI sumber daya Azure. Misalnya, `/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/`. Ini adalah URI sumber daya Azure target untuk operasi List GET. Jika ditambahkan `{resourceName}` setelah `/quotas`, maka ini adalah URI sumber daya Azure target dalam operasi GET untuk sumber daya tertentu.
 
 ## RELATED LINKS
 

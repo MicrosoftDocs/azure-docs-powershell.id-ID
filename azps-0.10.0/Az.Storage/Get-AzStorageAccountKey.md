@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/Get-AzStorageAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/Get-AzStorageAccountKey.md
 ms.openlocfilehash: e44ad10adf9e07a1e8096469be4c82c88b1dbe0c
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426969"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142308733"
 ---
 # Get-AzStorageAccountKey
 
 ## SYNOPSIS
-Dapatkan kunci akses untuk akun Azure Storage Anda.
+Mendapatkan kunci akses untuk akun Azure Storage.
 
 ## SYNTAX
 
@@ -26,18 +26,18 @@ Get-AzStorageAccountKey [-ResourceGroupName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStorageAccountKey** mendapatkan kunci akses untuk akun Azure Storage Anda.
+Cmdlet **Get-AzStorageAccountKey** mendapatkan kunci akses untuk akun Azure Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kunci akses untuk Storage anda
+### Contoh 1: Dapatkan kunci akses untuk akun Storage
 ```
 PS C:\>Get-AzStorageAccountKey -ResourceGroupName "RG01" -AccountName "mystorageaccount"
 ```
 
-Perintah ini mendapatkan tombol untuk akun Azure Storage tertentu.
+Perintah ini mendapatkan kunci untuk akun Azure Storage yang ditentukan.
 
-### Contoh 2: Dapatkan kunci akses tertentu untuk Storage Anda
+### Contoh 2: Dapatkan kunci akses tertentu untuk akun Storage
 ```
 This command gets a specific key for a Storage account. This command works for Azure PowerShell version 1.4, and later versions.
 PS C:\>(Get-AzStorageAccountKey -ResourceGroupName "RG01" -AccountName "mystorageaccount").Value[0]
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama akun Storage yang mendapatkan kunci cmdlet ini.
+Menentukan nama akun Storage tempat cmdlet ini mendapatkan kunci.
 
 ```yaml
 Type: System.String
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi akun Storage tersebut.
+Menentukan nama grup sumber daya yang berisi akun Storage.
 
 ```yaml
 Type: System.String
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -3,12 +3,12 @@ external help file: Microsoft.Azure.Commands.Websites.dll-Help.xml
 Module Name: AzureRM.WebSites
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.websites/restore-azurermwebappsnapshot
 schema: 2.0.0
-ms.openlocfilehash: 64e3ad14fad14e4cda1958b1c23317d1003de21684e94332315cefa57525837a
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 0719210cae275dc7e250e7fd14e622c51014d7c2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140857538"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142283918"
 ---
 # Restore-AzureRmWebAppSnapshot
 
@@ -34,7 +34,7 @@ Restore-AzureRmWebAppSnapshot [-RecoverConfiguration] [-Force] [-AsJob] [-WebApp
 ```
 
 ## DESCRIPTION
-Memulihkan snapshot aplikasi web ke aplikasi web. Memulihkan snapshot menimpa semua file di aplikasi web dengan file yang terdapat dalam snapshot. Untuk memulihkan pengaturan juga, gunakan parameter sakelar RecoverConfiguration. Snapshot dari satu aplikasi web dapat dipulihkan ke aplikasi web lainnya dalam langganan yang sama.
+Memulihkan snapshot aplikasi web ke aplikasi web. Memulihkan snapshot menimpa semua file di aplikasi web dengan file yang terdapat dalam snapshot. Untuk memulihkan pengaturan juga, gunakan parameter sakelar PemulihanKonfigurasi. Snapshot dari satu aplikasi web dapat dipulihkan ke aplikasi web lainnya dalam langganan yang sama.
 
 ## EXAMPLES
 
@@ -44,12 +44,12 @@ PS C:\> $snapshot = (Get-AzureRmWebAppSnapshot -ResourceGroupName "Default-Web-W
 PS C:\> Restore-AzureRmWebAppSnapshot -ResourceGroupName "Default-Web-WestUS" -Name "ContosoApp" -Slot "Restore" -InputObject $snapshot -RecoverConfiguration
 ```
 
-Dapatkan snapshot terbaru dari aplikasi web yang bernama "ContosoApp" dengan slot bernama "Pengembangan" di grup sumber daya "Default-Web-WestUS". Memulihkan jepretan layar ke slot "Pulihkan" aplikasi web.
+Mendapatkan snapshot terbaru aplikasi web bernama "ContosoApp" dengan slot bernama "Staging" dalam grup sumber daya "Default-Web-WestUS". Memulihkan snapshot ke slot "Pulihkan" aplikasi web.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -78,8 +78,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memungkinkan aplikasi web asli untuk ditimpa tanpa menampilkan peringatan.
+### -Paksa
+Memungkinkan aplikasi web asli ditimpa tanpa menampilkan peringatan.
 
 ```yaml
 Type: SwitchParameter
@@ -121,8 +121,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -RecoverConfiguration
-Memulihkan konfigurasi aplikasi web selain file.
+### -PemulihanKonfigurasi
+Pulihkan konfigurasi aplikasi web selain file.
 
 ```yaml
 Type: SwitchParameter
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

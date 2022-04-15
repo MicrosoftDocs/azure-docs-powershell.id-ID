@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlDatabaseRestorePoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlDatabaseRestorePoint.md
 ms.openlocfilehash: dda5f19e6ff7c33722b680fccb3998b3b6268f27
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140245177"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142298527"
 ---
 # Remove-AzSqlDatabaseRestorePoint
 
 ## SYNOPSIS
-Menghapus titik pemulihan tertentu dari SQL Database.
+Menghapus titik pemulihan yang diberikan dari SQL Database.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/remove-azsqldatabaserestorepoint) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqldatabaserestorepoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Remove-AzSqlDatabaseRestorePoint -RestorePointCreationDate <DateTime> [-PassThru
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzSqlDatabaseRestorePoint** menghapus titik pemulihan tertentu dari titik Azure SQL Database.
+Cmdlet **Remove-AzSqlDatabaseRestorePoint** menghapus titik pemulihan tertentu dari Azure SQL Database.
 Cmdlet ini saat ini didukung oleh layanan SQL Server Datawarehouse di Azure SQL Database.
 
 ## EXAMPLES
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{fill passThru Description}}
+{{Fill PassThru Description}}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestorePointCreationDate
-Menentukan tanggal pembuatan poin pemulihan.
+Menentukan tanggal pembuatan titik pemulihan.
 
 ```yaml
 Type: System.DateTime
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama AzureSQL Server yang menjadi host database.
+Menentukan nama AzureSQL Server yang menghosting database.
 
 ```yaml
 Type: System.String
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

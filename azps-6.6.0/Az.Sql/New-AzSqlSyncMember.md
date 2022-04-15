@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlSyncMember.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlSyncMember.md
 ms.openlocfilehash: c744eec45cc5e823842bb20161be38adfde28c7a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140097335"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142298671"
 ---
 # New-AzSqlSyncMember
 
 ## SYNOPSIS
-Membuat anggota Azure SQL Database Sinkronisasi.
+Membuat Anggota Sinkronisasi Azure SQL Database.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqlsyncmember) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqlsyncmember) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,11 +50,11 @@ New-AzSqlSyncMember -Name <String> -MemberDatabaseType <String> -SqlServerDataba
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSqlSyncMember** membuat Azure SQL Database Sinkronisasi Terbaru.
+Cmdlet **New-AzSqlSyncMember** membuat Anggota Sinkronisasi Azure SQL Database.
 
 ## EXAMPLES
 
-### Contoh 1: Buat anggota sinkronisasi untuk database Azure SQL baru.
+### Contoh 1: Membuat anggota sinkronisasi untuk database Azure SQL.
 ```
 PS C:\> $credential = Get-Credential
 PS C:\> New-AzSqlSyncMember -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -SyncGroupName "SyncGroup01" -Name "SyncMember01" -SyncDirection "OneWayMemberToHub"
@@ -76,9 +76,9 @@ MemberDatabasePassword      :
 SyncState                   : UnProvisioned
 ```
 
-Perintah ini membuat anggota sinkronisasi untuk database Azure SQL baru.
+Perintah ini membuat anggota sinkronisasi untuk database Azure SQL.
 
-### Contoh 2: Buat anggota sinkronisasi untuk database SQL Server lokal
+### Contoh 2: Membuat anggota sinkronisasi untuk database SQL Server lokal
 ```
 PS C:\> $credential = Get-Credential
 PS C:\> New-AzSqlSyncMember -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -SyncGroupName "SyncGroup01" -Name "SyncMember01" -SyncDirection "OneWayMemberToHub"
@@ -106,7 +106,7 @@ Perintah ini membuat anggota sinkronisasi untuk database SQL lokal.
 ## PARAMETERS
 
 ### -DatabaseName
-Nama nama Azure SQL Database.
+Nama Azure SQL Database.
 
 ```yaml
 Type: System.String
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -MemberDatabaseType
-Tipe database dari database anggota.
+Tipe database database anggota.
 
 ```yaml
 Type: System.String
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -MemberServerName
-Database Azure SQL Server Nama anggota.
+Nama Server Azure SQL database anggota.
 
 ```yaml
 Type: System.String
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama azure SQL Server.
+Nama Server Azure SQL.
 
 ```yaml
 Type: System.String
@@ -272,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### -SyncAgentResourceGroupName
-Nama grup sumber daya tempat agen sinkronisasi berada.
+Nama grup sumber daya di mana agen sinkronisasi berada di bawahnya.
 
 ```yaml
 Type: System.String
@@ -302,7 +302,7 @@ Accept wildcard characters: False
 ```
 
 ### -SyncAgentServerName
-Nama azure SQL Server tempat agen sinkronisasi berada.
+Nama Server Azure SQL tempat agen sinkronisasi berada.
 
 ```yaml
 Type: System.String
@@ -363,7 +363,7 @@ Accept wildcard characters: False
 ```
 
 ### -UsePrivateLinkConnection
-Gunakan koneksi tautan pribadi saat menyambungkan ke anggota sinkronisasi ini.
+Gunakan koneksi tautan privat saat menyambungkan ke anggota sinkronisasi ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -378,7 +378,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -394,7 +394,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -409,7 +409,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlInstanceDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlInstanceDatabase.md
 ms.openlocfilehash: 96dfa85e9b2db52e4ef17dc13467a5bab3f643f6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140097425"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142298653"
 ---
 # New-AzSqlInstanceDatabase
 
 ## SYNOPSIS
-Membuat database Azure SQL Instans Terkelola.
+Membuat database Azure SQL Managed Instance.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqlinstancedatabase) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqlinstancedatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ New-AzSqlInstanceDatabase [-Name] <String> [-Collation <String>] [-Tag <Hashtabl
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSqlInstanceDatabase** membuat database azure SQL contoh yang dikelola.
+Cmdlet **New-AzSqlInstanceDatabase** membuat database instans terkelola Azure SQL.
 
 ## EXAMPLES
 
@@ -71,12 +71,12 @@ SourceDatabaseId         :
 FailoverGroupId          :
 ```
 
-Perintah ini membuat database contoh bernama Database01 di contoh managedInstance1.
+Perintah ini membuat database instans bernama Database01 pada instans managedInstance1.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -Collation
-Collation of the Azure SQL Instance Database collation to use.
+Kolatasi kolatasi Database Instans Azure SQL untuk digunakan.
 
 ```yaml
 Type: System.String
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceObject
-Objek instance
+Objek instans
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.ManagedInstance.Model.AzureSqlManagedInstanceModel
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceResourceId
-Id sumber daya contoh
+Id sumber daya instans
 
 ```yaml
 Type: System.String
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Database Azure SQL Instance untuk dibuat.
+Nama Database Instans Azure SQL untuk dibuat.
 
 ```yaml
 Type: System.String
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag yang akan dikaitkan dengan Database Azure Sql Instance
+Tag yang akan dikaitkan dengan Database Instans Azure Sql
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -242,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
