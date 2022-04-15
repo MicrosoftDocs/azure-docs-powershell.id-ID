@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Get-AzDeploymentManagerArtifactSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Get-AzDeploymentManagerArtifactSource.md
-ms.openlocfilehash: b868cba904fd2fa2472c008499a36cfc85474a50
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0d6cfe8d460f3b0bd0297f85d8ca1858e842c4be
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140009331"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142471769"
 ---
 # Get-AzDeploymentManagerArtifactSource
 
 ## SYNOPSIS
 
-Dapatkan sumber Artifak.
+Mendapatkan sumber Artefak.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.deploymentmanager/get-azdeploymentmanagerartifactsource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,31 +42,31 @@ Get-AzDeploymentManagerArtifactSource [-InputObject] <PSArtifactSource>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDeploymentManagerArtifactSource** mendapatkan sumber artifak, dan mengembalikan objek yang menyatakan sumber artifak itu.
-Tentukan sumber artifak menurut namanya dan nama grup sumber daya. Alternatifnya, Anda dapat menyediakan objek ArtifactSource atau ResourceId.
+Cmdlet **Get-AzDeploymentManagerArtifactSource** mendapatkan sumber artefak, dan mengembalikan objek yang mewakili sumber artefak tersebut.
+Tentukan sumber artefak menurut nama dan nama grup sumber dayanya. Alternatifnya, Anda dapat menyediakan objek ArtifactSource atau ResourceId.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan sumber artifak
+### Contoh 1: Dapatkan sumber artefak
 ```powershell
 PS C:\> Get-AzDeploymentManagerArtifactSource -ResourceGroupName "ContosoResourceGroup" -Name "ContosoArtifactSource"
 ```
 
-Perintah ini mendapatkan sumber artifak bernama ContosoArtifactSource di ContosoResourceGroup.
+Perintah ini mendapatkan sumber artefak bernama ContosoArtifactSource di ContosoResourceGroup.
 
-### Contoh 2: Dapatkan sumber artifak menggunakan pengidentifikasi sumber daya
+### Contoh 2: Dapatkan sumber artefak menggunakan pengidentifikasi sumber daya
 ```powershell
 PS C:\> Get-AzDeploymentManagerArtifactSource -ResourceId "/subscriptions/subscriptionId/resourcegroups/ContosoResourceGroup/providers/Microsoft.DeploymentManager/artifactSources/ContosoArtifactSource"
 ```
 
-Perintah ini mendapatkan sumber artifak bernama ContosoArtifactSource di ContosoResourceGroup.
+Perintah ini mendapatkan sumber artefak bernama ContosoArtifactSource di ContosoResourceGroup.
 
-### Contoh 3: Dapatkan sumber artifak menggunakan objek yang dikembalikan oleh New-AzDeploymentManagerArtifactSource
+### Contoh 3: Mendapatkan sumber artefak menggunakan objek yang dikembalikan oleh New-AzDeploymentManagerArtifactSource
 ```powershell
 PS C:\> Get-AzDeploymentManagerArtifactSource -InputObject $artifactSourceObject
 ```
 
-Perintah ini mendapatkan sumber artifak yang namanya dan Grup Sumber Dayanya sesuai dengan properti Nama dan ResourceGroupName $artifactSourceObject, secara berurutan.
+Perintah ini mendapatkan sumber artefak yang nama dan ResourceGroupnya masing-masing cocok dengan properti Nama dan ResourceGroupName $artifactSourceObject.
 
 ## PARAMETERS
 
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Sumber Artifak.
+Objek Sumber Artefak.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DeploymentManager.Models.PSArtifactSource
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama sumber artifak.
+Nama sumber artefak.
 
 ```yaml
 Type: System.String
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

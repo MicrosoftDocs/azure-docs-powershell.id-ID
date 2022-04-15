@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azna
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNatGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNatGateway.md
-ms.openlocfilehash: cd0eb560d4f358d5b22de88c899c191a4322c9bd
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 659047e178b3c54f5af05d192d63a59119895598
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140007431"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142467575"
 ---
 # Set-AzNatGateway
 
 ## SYNOPSIS
-Perbarui Sumber Daya Gateway Nat dengan Alamat Ip Publik, Prefiks Ip Publik dan IdleTimeoutInMinutes.
+Perbarui Sumber Daya Nat Gateway dengan Alamat Ip Publik, Prefiks Ip Publik, dan IdleTimeoutInMinutes.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/set-aznatgateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Set-AzNatGateway -InputObject <PSNatGateway> [-PublicIpAddress <PSResourceId[]>]
 ```
 
 ## DESCRIPTION
-Perbarui Sumber Daya Gateway Nat dengan Alamat Ip Publik, Prefiks Ip Publik dan IdleTimeoutInMinutes.
+Perbarui Sumber Daya Nat Gateway dengan Alamat Ip Publik, Prefiks Ip Publik, dan IdleTimeoutInMinutes.
 
 ## EXAMPLES
 
@@ -57,7 +60,7 @@ PS C:\> $natUpdate = Set-AzNatGateway -ResourceId "natgateway_id" -PublicIpAddre
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdleTimeoutInMinutes
-Waktu diam habis dari gateway nat.
+Waktu habis menganggur gateway nat.
 
 ```yaml
 Type: System.Int32
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpPrefix
-Array prefiks ip publik terkait dengan sumber daya gateway nat.
+Array prefiks ip publik yang terkait dengan sumber daya gateway nat.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSResourceId[]
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

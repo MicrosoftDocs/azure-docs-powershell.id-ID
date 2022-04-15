@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.monitor/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Monitor/Monitor/help/New-AzMetricAlertRuleV2Criteria.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Monitor/Monitor/help/New-AzMetricAlertRuleV2Criteria.md
-ms.openlocfilehash: f62b343138ef828a2f05b70a09512ec88c517bc67389dafd33a942d8f8ce102d
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: bb72a50c2db43a8db053d273c601ca51e96402f0
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132415900"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142493501"
 ---
 # New-AzMetricAlertRuleV2Criteria
 
@@ -35,7 +35,7 @@ New-AzMetricAlertRuleV2Criteria [-DynamicThreshold] -MetricName <String> [-Metri
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzMetricAlertRuleV2Criteria** membuat objek kriteria metrik lokal untuk digunakan sebagai cmdlet Add-AzMetricAlertRuleV2 input yang membuat aturan pemberitahuan metrik baru.
+Cmdlet **New-AzMetricAlertRuleV2Criteria** membuat objek kriteria metrik lokal untuk digunakan sebagai cmdlet Add-AzMetricAlertRuleV2 input yang membuat aturan peringatan metrik baru.
 
 ## EXAMPLES
 
@@ -74,9 +74,9 @@ TimeAggregation      : Average
 Dimensions           :
 ```
 
-Perintah ini membuat kriteria Peringatan metrik dinamis yang dapat digunakan dalam aturan pemberitahuan metrik
+Perintah ini membuat kriteria pemberitahuan metrik dinamis yang bisa digunakan dalam aturan pemberitahuan metrik
 
-### Contoh 3: Membuat kriteria peringatan metrik yang lebih kompleks
+### Contoh 3: Membuat kriteria pemberitahuan metrik yang lebih kompleks
 
 ```powershell
 PS C:\>New-AzMetricAlertRuleV2DimensionSelection -DimensionName "availabilityResult/name" -ValuesToInclude "gdtest" | New-AzMetricAlertRuleV2Criteria -MetricName "availabilityResults/availabilityPercentage" -TimeAggregation Average -Operator GreaterThan -Threshold 2
@@ -91,7 +91,7 @@ TimeAggregation      : Average
 Dimensions           : {availabilityResult/name}
 ```
 
-Kumpulan perintah ini membuat kriteria peringatan metrik yang lebih kompleks, yang mencakup pemilihan dimensi
+Kumpulan perintah ini membuat kriteria peringatan metrik yang lebih kompleks yang menyertakan pilihan dimensi
 
 ## PARAMETERS
 
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -DynamicThreshold
-Beralih parameter untuk menggunakan Tipe Ambang Batas Dinamis
+Beralih parameter untuk menggunakan Tipe Ambang Dinamis
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExaminedAggregatedPointCount
-Jumlah Total poin yang diperiksa
+Jumlah total poin yang diperiksa
 
 ```yaml
 Type: System.Int32
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -MetricNamespace
-Kumpulan nama metrik
+Ruang Nama metrik
 
 ```yaml
 Type: System.String
@@ -215,8 +215,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Ambang Batas
-Ambang untuk kondisi aturan
+### -Ambang batas
+Ambang batas untuk kondisi aturan
 
 ```yaml
 Type: System.Double
@@ -230,7 +230,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ThresholdSensitivity
+### -Ambang BatasSensitivitas
 Sensitivitas untuk kondisi aturan
 
 ```yaml
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -TimeAggregation
-Operasi agregasi digunakan untuk menggulung beberapa nilai metrik di seluruh interval jendela
+Operasi agregasi yang digunakan untuk menggulung beberapa nilai metrik di sepanjang interval jendela
 
 ```yaml
 Type: System.String
@@ -261,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -ViolationCount
-Jumlah minimum pelanggaran yang diperlukan dalam jendela waktu pengembalian yang dipilih diperlukan untuk menaikkan pemberitahuan
+Jumlah minimum pelanggaran yang diperlukan dalam jendela waktu pengembalian yang dipilih diperlukan untuk menaikkan peringatan
 
 ```yaml
 Type: System.Int32
@@ -276,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

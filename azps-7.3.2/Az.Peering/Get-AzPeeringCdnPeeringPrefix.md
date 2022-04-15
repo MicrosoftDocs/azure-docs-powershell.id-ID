@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/get-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringCdnPeeringPrefix.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringCdnPeeringPrefix.md
-ms.openlocfilehash: 3d43858c0b938ebad1490bc121c15ca8cd1653ac
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: adb2ca697075ecd5584cdb6ed3024bbdbcdde0dd
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140196695"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142486133"
 ---
 # Get-AzPeeringCdnPeeringPrefix
 
 ## SYNOPSIS
-Mencantumkan semua prefiks yang diiklankan untuk cdn di lokasi peering tertentu
+Mencantumkan semua prefiks yang diiklankan untuk cdn di lokasi peering yang ditentukan
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.peering/get-azpeeringcdnpeeringprefix) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzPeeringCdnPeeringPrefix [-PeeringLocation] <String> [-DefaultProfile <IAzu
 ```
 
 ## DESCRIPTION
-Mencantumkan semua prefiks yang diiklankan untuk cdn di lokasi peering tertentu
+Mencantumkan semua prefiks yang diiklankan untuk cdn di lokasi peering yang ditentukan
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ Mencantumkan semua prefiks yang diiklankan untuk cdn di lokasi peering tertentu
 PS C:\> Get-AzPeeringCdnPeeringPrefix -PeeringLocation "Seattle"
 ```
 
-Mencantumkan semua prefiks yang diiklankan untuk cdn di lokasi peering fisik yang ditentukan
+Mencantumkan semua prefiks yang diiklankan untuk cdn di lokasi peering fisik tertentu
 
 ## PARAMETERS
 
@@ -54,8 +57,8 @@ Accept wildcard characters: False
 ```
 
 ### -PeeringLocation
-Lokasi Fisik Berbeda dari Azure Region.
-Gunakan Get-AzPeeringLocation -Jenis \<kind\> gunakan Nama Kota sebagai kunci untuk memeriksa apakah lokasi peering ada atau Gunakan Get-AzPeeringLocation -Kind \<kind\> untuk mendapatkan semua lokasi peering untuk dipilih.
+Lokasi Fisik Berbeda dari Kawasan Azure.
+Gunakan Get-AzPeeringLocation -Kind \<kind\> gunakan Nama kota sebagai kunci untuk memeriksa apakah lokasi peering ada atau Gunakan Get-AzPeeringLocation -Kind \<kind\> untuk mendapatkan semua lokasi peering untuk memilih.
 
 ```yaml
 Type: System.String
@@ -70,11 +73,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

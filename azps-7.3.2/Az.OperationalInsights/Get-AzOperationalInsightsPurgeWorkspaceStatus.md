@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsPurgeWorkspaceStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsPurgeWorkspaceStatus.md
-ms.openlocfilehash: 0d910157f5b051825f6c70aebcce4ef901a1f76f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f441da88640df2305933e75adb532dc0eae4bffd
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140555149"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142486565"
 ---
 # Get-AzOperationalInsightsPurgeWorkspaceStatus
 
 ## SYNOPSIS
 Mendapatkan status operasi pembersihan yang sedang berlangsung.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightspurgeworkspacestatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Mendapatkan status operasi pembersihan yang sedang berlangsung.
 PS C:\> Get-AzOperationalInsightsPurgeWorkspaceStatus -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "MyWorkspace" -PurgeId "cd944bc7-ba11-447e-910c-c6393ac020a9"
 ```
 
-Perintah ini mendapatkan status operasi pembersihan yang sedang berlangsung dengan nama grup sumber daya, nama ruang kerja, dan id pembersihan yang dikembalikan dari New-AzOperationalInsightsPurgeWorkspace grup.
+Perintah ini mendapatkan status operasi pembersihan berkelanjutan menurut nama grup sumber daya, nama ruang kerja dan id pembersihan yang dikembalikan dari perintah New-AzOperationalInsightsPurgeWorkspace.
 
 ## PARAMETERS
 
@@ -83,7 +86,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja yang berisi tabel.
 
 ```yaml
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

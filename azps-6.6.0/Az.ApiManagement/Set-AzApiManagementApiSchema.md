@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementApiSchema.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementApiSchema.md
 ms.openlocfilehash: 2905089a29ee0da40662bcf450f2245f23ff5db5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140313631"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142480481"
 ---
 # Set-AzApiManagementApiSchema
 
@@ -18,7 +18,7 @@ ms.locfileid: "140313631"
 Mengubah Skema API
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementapischema) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementapischema) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Set-AzApiManagementApiSchema -ResourceId <String> [-SchemaDocumentContentType <S
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApiManagementApiSchema** mengubah Skema API Manajemen Azure API.
+Cmdlet **Set-AzApiManagementApiSchema** mengubah Skema API Azure API Management.
 
 ## EXAMPLES
 
@@ -58,7 +58,7 @@ Contoh memperbarui Skema Api
 
 ### Contoh 2
 
-Mengubah Skema API. (otomatisgenerated)
+Mengubah Skema API. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika instans Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApi ditentukan mewakili API yang ditetapkan.
+Jika ditentukan, contoh Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApi tipe mewakili API yang ditetapkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Arm ResourceId dari Skema Diagnostik atau Api. Parameter ini diperlukan.
+Arm ResourceId of Diagnostic atau Api Schema. Parameter ini diperlukan.
 
 ```yaml
 Type: System.String
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -SchemaDocumentContentType
-ContentType skema api. Parameter ini bersifat opsional.
+ContentType dari api Schema. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -SchemaDocumentFilePath
-Api schema document file path. Parameter ini diperlukan adalah -SchemaDocument tidak ditentukan.
+Jalur file dokumen skema api. Parameter ini diperlukan adalah -SchemaDocument tidak ditentukan.
 
 ```yaml
 Type: System.String
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

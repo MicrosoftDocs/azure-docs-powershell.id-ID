@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsSavedSearch.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsSavedSearch.md
-ms.openlocfilehash: f5b71f1e3fb26c663a15ed935404984ea8225d85
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 514a6b4e854836fb91c10c0b35688945c059d695
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140196742"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142486385"
 ---
 # New-AzOperationalInsightsSavedSearch
 
 ## SYNOPSIS
-Membuat pencarian baru yang disimpan dengan parameter tertentu.
+Membuat pencarian tersimpan baru dengan parameter yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightssavedsearch) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ New-AzOperationalInsightsSavedSearch [-ResourceGroupName] <String> [-WorkspaceNa
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzOperationalInsightsSavedSearch** membuat pencarian baru yang disimpan dengan parameter tertentu untuk ruang kerja.
+Cmdlet **New-AzOperationalInsightsSavedSearch** membuat pencarian tersimpan baru dengan parameter tertentu untuk ruang kerja.
 
 ## EXAMPLES
 
@@ -37,7 +40,7 @@ Cmdlet **New-AzOperationalInsightsSavedSearch** membuat pencarian baru yang disi
 PS C:\>New-AzOperationalInsightsSavedSearch -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "ContosoWorkspace" -SavedSearchId "ContosoSavedSearchId" -DisplayName "ContosoSavedSearchDisplayName" -Category "ContosoSavedSearchCategory" -Query "*" -Version $Version -Force
 ```
 
-Perintah ini akan membuat pencarian baru yang disimpan.
+Perintah ini membuat pencarian baru yang disimpan.
 
 ## PARAMETERS
 
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -86,8 +89,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -FunctionAlias
-Alias fungsi jika kueri bertindak sebagai fungsi.
+Alias fungsi jika kueri berfungsi sebagai fungsi.
 
 ```yaml
 Type: System.String
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -FunctionParameter
-Parameter fungsi opsional jika kueri bertindak sebagai fungsi. Nilai harus dalam format berikut: 'param-name1:type1 = default_value1, param-name2:type2 = default_value2'. Untuk contoh dan sintaks yang tepat selengkapnya, silakan merujuk ke https://docs.microsoft.com/azure/kusto/query/functions/user-defined-functions.
+Parameter fungsi opsional jika kueri berfungsi sebagai fungsi. Nilai harus dalam format berikut: 'param-name1:type1 = default_value1, param-name2:type2 = default_value2'. Untuk contoh dan sintaks yang tepat, silakan lihat https://docs.microsoft.com/azure/kusto/query/functions/user-defined-functions.
 
 ```yaml
 Type: System.String
@@ -206,7 +209,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Menentukan nama ruang kerja.
 
 ```yaml
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

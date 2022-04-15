@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.monitor/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Monitor/Monitor/help/Set-AzScheduledQueryRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Monitor/Monitor/help/Set-AzScheduledQueryRule.md
-ms.openlocfilehash: 89f46977f5b7318900f73e705c48a7b6d04cc6d0f99636afa3deb56e403144fe
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 5a1ae00f13494c73c6e27aa6aeeeda391d17a512
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416453"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142493365"
 ---
 # Set-AzScheduledQueryRule
 
 ## SYNOPSIS
-Memperbarui Aturan Pemberitahuan Log
+Memperbarui Aturan Peringatan Log
 
 ## SYNTAX
 
@@ -44,11 +44,11 @@ Set-AzScheduledQueryRule -ResourceId <String> -Source <PSScheduledQueryRuleSourc
 ```
 
 ## DESCRIPTION
-Memperbarui Aturan Pemberitahuan Log oleh semantik PUT
+Memperbarui Aturan Peringatan Log dengan semantik PUT
 
 ## EXAMPLES
 
-### Contoh 1 - Tetapkan menurut nama aturan
+### Contoh 1 - Atur menurut nama aturan
 ```powershell
 PS C:\> Set-AzScheduledQueryRule -ResourceGroupName "MyResourceGroup" -Name "LogAlertRule1" -Enabled $true -Location "centralindia" -Action $alertingAction -Description "log alert description" -Schedule $schedule -Source $source
 
@@ -66,7 +66,7 @@ Location          : centralindia
 Tags              : {[hidden-link:/subscriptions/ad825170-845c-47db-8f00-11978947b089/resourceGroups/MyResourceGroup/providers/Microsoft.OperationalInsights/workspaces/MyWorkspace, Resource]}
 ```
 
-### Contoh 2 - Atur menurut Objek Input
+### Contoh 2 - Diatur menurut Objek Input
 ```powershell
 PS C:\> Set-AzScheduledQueryRule -InputObject $sqr -Description "changed description"
 
@@ -84,7 +84,7 @@ Location          : centralindia
 Tags              : {[hidden-link:/subscriptions/ad825170-845c-47db-8f00-11978947b089/resourceGroups/MyResourceGroup/providers/Microsoft.OperationalInsights/workspaces/MyWorkspace, Resource]}
 ```
 
-### Contoh 3 - Atur menurut Id sumber daya
+### Contoh 3 - Diatur menurut Id sumber daya
 ```powershell
 PS C:\> Set-AzScheduledQueryRule -ResourceId "/subscriptions/ad825170-845c-47db-8f00-11978947b089/resourceGroups/MyResourceGroup/providers/microsoft.insights/scheduledqueryrules/LogAlertRule1" -Enabled $true -Location "centralindia" -Action $alertingAction -Description "change description again" -Schedule $schedule -Source $source
 
@@ -105,7 +105,7 @@ Tags              : {[hidden-link:/subscriptions/ad825170-845c-47db-8f00-1197894
 ## PARAMETERS
 
 ### -Tindakan
-Tindakan Pemberitahuan aturan kueri terjadwal
+Aturan kueri terjadwal Tindakan Peringatan
 
 ```yaml
 Type: Microsoft.Azure.Commands.Insights.OutputClasses.PSScheduledQueryRuleAlertingAction
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -176,8 +176,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Enabled
-Status pemberitahuan Azure - nilai yang valid - $true, $false
+### -Difungsikan
+Status peringatan azure - nilai yang valid - $true, $false
 
 ```yaml
 Type: System.Boolean
@@ -278,7 +278,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Schedule
+### -Jadwal
 Jadwal aturan kueri terjadwal
 
 ```yaml
@@ -336,7 +336,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -352,7 +352,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -367,7 +367,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

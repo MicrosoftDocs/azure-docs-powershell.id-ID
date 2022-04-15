@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryRun.md
-ms.openlocfilehash: f8b68d3758315e0e0dae5d956f2e8d82398fe90f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d7ac367e28f262f69e2b92fe6a749308f745fcfb
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140201254"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142473065"
 ---
 # Get-AzDataFactoryRun
 
 ## SYNOPSIS
-Dijalankan untuk potongan dataset data di Azure Data Factory.
+Menjalankan kumpulan data dalam Azure Data Factory.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryrun) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,19 +36,19 @@ Get-AzDataFactoryRun [-DataFactory] <PSDataFactory> [-DatasetName] <String> [-St
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataFactoryRun** dijalankan untuk potongan dataset data di Azure Data Factory.
-Sebuah set data dalam pabrik data terdiri dari potongan di sepanjang sumbu waktu.
-Lebar potongan ditentukan oleh jadwal, baik setiap jam atau harian.
-Proses adalah unit pemrosesan untuk potongan.
-Mungkin ada satu atau beberapa yang berjalan untuk irisan dalam kasus perretries atau jika Anda menjalankan ulang potongan karena kegagalan.
-Potongan diidentifikasi menurut waktu mulainya.
-Untuk mendapatkan waktu mulai potongan, gunakan cmdlet Get-AzDataFactorySlice baru.
-Misalnya, untuk memulai untuk potongan berikut, gunakan waktu mulai 2015-04-02T20:00:00.
-ResourceGroupName : ADF DataFactoryName : SPDataFactory0924 DatasetName : MarketingCampaignEffectivenessBlobDataset Mulai : 5/2/2014 8:00:00 PM End : 5/3/2014 8:00:00 PMTryCount : 0 Status : Ready LatencyStatus :
+Cmdlet **Get-AzDataFactoryRun** akan menjalankan sepoting data kumpulan data dalam Azure Data Factory.
+Kumpulan data di pabrik data terdiri dari irisan selama sumbu waktu.
+Lebar ikatan ditentukan oleh jadwal, baik per jam maupun harian.
+Sebuah proses adalah satuan pemrosesan untuk sepotong.
+Mungkin ada satu atau beberapa pemangkasan jika anda mencoba kembali atau seandainya Anda menjalankan kembali pemangkasan anda karena kegagalan.
+Poban diidentifikasi dengan waktu mulainya.
+Untuk mendapatkan waktu mulai sepoting, gunakan cmdlet Get-AzDataFactorySlice.
+Misalnya, untuk mendapatkan jalankan bagi ikatan berikut, gunakan waktu mulai 2015-04-02T20:00:00.
+ResourceGroupName : ADF DataFactoryName : SPDataFactory0924 DatasetName : MarketingCampaignEffectivenessBlobDataset Mulai : 5/2/201 8:00:00 PM End : 5/3/2014 8:00:00 PM RetryCount : 0 Status : Ready LatencyStatus :
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan set data
+### Contoh 1: Mendapatkan kumpulan data
 ```
 PS C:\>Get-AzDataFactoryRun -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -DatasetName "DAWikiAggregatedData" -StartDateTime 2014-05-21T16:00:00Z
 Id                  : a7c4913c-9623-49b3-ae1e-3e45e2b68819
@@ -68,13 +71,13 @@ Properties          : {[errors, ]}
 ErrorMessage        :
 ```
 
-Perintah ini dijalankan untuk potongan set data yang bernama DAWikiAggregatedData dalam pabrik data yang bernama WikiADF yang dimulai dari pukul 16.00 GMT pada 21/05/2014.
+Perintah ini menjalankan semua irisan kumpulan data bernama DAWikiAggregatedData di pabrik data bernama WikiADF yang dimulai dari 4 PM GMT pada 21/05/2014.
 
 ## PARAMETERS
 
 ### -DataFactory
 Menentukan objek **PSDataFactory** .
-Cmdlet ini dijalankan untuk potongan yang termasuk dalam pabrik data yang ditentukan parameter ini.
+Cmdlet ini dijalankan untuk irisan yang termasuk dalam pabrik data yang ditentukan parameter ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataFactories.Models.PSDataFactory
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 
 ### -DataFactoryName
 Menentukan nama pabrik data.
-Cmdlet ini dijalankan untuk potongan yang termasuk dalam pabrik data yang ditentukan parameter ini.
+Cmdlet ini dijalankan untuk irisan yang termasuk dalam pabrik data yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -105,8 +108,8 @@ Accept wildcard characters: False
 ```
 
 ### -DatasetName
-Menentukan nama set data.
-Cmdlet ini akan dijalankan untuk potongan yang termasuk dalam kelompok data yang ditentukan parameter ini.
+Menentukan nama kumpulan data.
+Cmdlet ini dijalankan untuk irisan yang termasuk dalam kumpulan data yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya Azure.
-Cmdlet ini dijalankan pabrik untuk potongan yang termasuk dalam grup yang ditentukan parameter ini.
+Cmdlet ini akan menjalankan pabrik untuk irisan yang termasuk dalam grup yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -153,8 +156,8 @@ Accept wildcard characters: False
 
 ### -StartDateTime
 Menentukan awal periode waktu sebagai objek **DateTime** .
-Cmdlet ini akan berjalan untuk potongan data yang cocok dengan periode waktu ini.
-*StartDateTime* harus ditentukan dalam format ISO8601, seperti dalam contoh berikut: 2015-01-01Z 2015-01-01T00:00:00Z 2015-01-01T00:00:00.000Z (UTC) 2015-01-01T00:00:00-08:00 (Waktu Standar Pasifik) Penanda zona waktu default adalah UTC.
+Cmdlet ini dijalankan untuk irisan data yang cocok dengan periode waktu ini.
+*StartDateTime* harus ditentukan dalam format ISO8601, seperti dalam contoh berikut: 2015-01-01Z 2015-01-01T00:00:00Z 2015-01-01-01 01T00:00:00.000Z (UTC) 2015-01-01T00:00:00-08:00 (Waktu Standar Pasifik) Pendesain zona waktu default adalah UTC.
 
 ```yaml
 Type: System.DateTime
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -179,13 +182,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.DataFactories.Models.PSDataSfactorRun
+### Microsoft.Azure.Commands.DataFactories.Models.PSDataSliceRun
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, data, factories
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 
-[Get-AzDataFactorySfactory](./Get-AzDataFactorySlice.md)
+[Get-AzDataFactorySlice](./Get-AzDataFactorySlice.md)
 
 

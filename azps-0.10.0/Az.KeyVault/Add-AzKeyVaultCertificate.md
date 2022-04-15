@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Add-AzKeyVaultCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Add-AzKeyVaultCertificate.md
 ms.openlocfilehash: 4984ce5dde65be9e715a7e34a10e5671902b53cc
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420229"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142499327"
 ---
 # Add-AzKeyVaultCertificate
 
 ## SYNOPSIS
-Menambahkan sertifikat ke kunci vault.
+Menambahkan sertifikat ke kubah kunci.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Add-AzKeyVaultCertificate [-VaultName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzKeyVaultCertificate** memulai proses pendaftaran sertifikat di kunci vault di Azure Key Vault.
+Cmdlet **Add-AzKeyVaultCertificate** memulai proses pendaftaran sertifikat dalam kubah kunci di Azure Key Vault.
 
 ## EXAMPLES
 
@@ -81,18 +81,18 @@ Created     : 2/8/2016 11:21:45 PM
 Updated     : 2/8/2016 11:21:45 PM
 ```
 
-Perintah pertama menggunakan cmdlet New-AzKeyVaultCertificatePolicy cmdlet untuk membuat kebijakan sertifikat, lalu menyimpannya di $Policy variabel.
+Perintah pertama menggunakan cmdlet New-AzKeyVaultCertificatePolicy untuk membuat kebijakan sertifikat, lalu menyimpannya dalam variabel $Policy.
 
 Perintah kedua menggunakan **Add-AzKeyVaultCertificate** untuk memulai proses untuk membuat sertifikat.
 
-Perintah ketiga menggunakan cmdlet Get-AzKeyVaultCertificateOperation cmdlet untuk melakukan polling pada operasi untuk memverifikasi bahwa proses telah selesai.
+Perintah ketiga menggunakan cmdlet Get-AzKeyVaultCertificateOperation untuk melakukan polling operasi untuk memverifikasi bahwa proses selesai.
 
-Perintah final menggunakan cmdlet Get-AzKeyVaultCertificate cmdlet untuk mendapatkan sertifikat.
+Perintah terakhir menggunakan cmdlet Get-AzKeyVaultCertificate untuk mendapatkan sertifikat.
 
 ## PARAMETERS
 
 ### -CertificatePolicy
-Menentukan objek **KeyVaultCertificatePolicy.**
+Menentukan objek **KeyVaultCertificatePolicy** .
 
 ```yaml
 Type: KeyVaultCertificatePolicy
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: IAzureContextContainer
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama sertifikat untuk ditambahkan.
+Menentukan nama sertifikat yang akan ditambahkan.
 
 ```yaml
 Type: String
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kunci vault.
+Menentukan nama kubah kunci.
 
 ```yaml
 Type: String
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -200,11 +200,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
@@ -217,6 +217,6 @@ Cmdlet ini tidak menerima input apa pun.
 
 [Get-AzKeyVaultCertificate](./Get-AzKeyVaultCertificate.md)
 
-[Import-AzKeyVaultCertificate](./Import-AzKeyVaultCertificate.md)
+[Impor-AzKeyVaultCertificate](./Import-AzKeyVaultCertificate.md)
 
-[Remove-AzKeyVaultCertificate](./Remove-AzKeyVaultCertificate.md)
+[Hapus-AzKeyVaultCertificate](./Remove-AzKeyVaultCertificate.md)

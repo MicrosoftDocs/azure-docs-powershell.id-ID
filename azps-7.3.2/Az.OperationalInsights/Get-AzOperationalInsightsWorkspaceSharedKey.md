@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsWorkspaceSharedKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsWorkspaceSharedKey.md
-ms.openlocfilehash: 4503d58083d3ef9b93cd9c0b10ce5b2e7ec83d0d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: df992135e8619530bb4fe62c689acee46a233372
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140570657"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142486475"
 ---
 # Get-AzOperationalInsightsWorkspaceSharedKey
 
 ## SYNOPSIS
 Mendapatkan kunci bersama untuk ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightsworkspacesharedkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,30 +29,30 @@ Get-AzOperationalInsightsWorkspaceSharedKey [-ResourceGroupName] <String> [-Name
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzOperationalInsightsWorkspaceSharedKey** mencantumkan kunci bersama untuk ruang kerja.
-Kunci tersebut digunakan untuk menyambungkan agen-Insights Operasional ke ruang kerja.
+Cmdlet **Get-AzOperationalInsightsWorkspaceSharedKey mencantumkan** kunci bersama untuk ruang kerja.
+Kunci digunakan untuk menyambungkan agen Insights Operasional ke ruang kerja.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kunci bersama dengan nama ruang kerja
+### Contoh 1: Dapatkan kunci bersama menurut nama ruang kerja
 ```
 PS C:\>Get-AzOperationalInsightsWorkspaceSharedKey -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace"
 ```
 
-Perintah ini mendapatkan kunci bersama untuk ruang kerja yang bernama MyWorkspace dalam grup sumber daya bernama ContosoResourceGroup.
+Perintah ini mendapatkan kunci bersama untuk ruang kerja bernama MyWorkspace dalam grup sumber daya bernama ContosoResourceGroup.
 
-### Contoh 2: Get shared keys by using the pipeline
+### Contoh 2: Dapatkan kunci bersama menggunakan pipeline
 ```
 PS C:\>Get-AzOperationalInsightsWorkspace -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace" | Get-AzOperationalInsightsWorkspaceSharedKey
 ```
 
-Perintah ini mendapatkan ruang kerja bernama MyWorkspace menggunakan cmdlet Get-AzOperationalInsightsWorkspace, lalu meneruskan ruang kerja ke cmdlet **Get-AzOperationalInsightsWorkspaceSharedKey** .
-Perintah tersebut akan mendapatkan kunci bersama untuk ruang kerja tersebut.
+Perintah ini mendapatkan ruang kerja bernama MyWorkspace menggunakan cmdlet Get-AzOperationalInsightsWorkspace, lalu mengirimkan ruang kerja ke cmdlet **Get-AzOperationalInsightsWorkspaceSharedKey** .
+Perintah akan mendapatkan kunci bersama untuk ruang kerja tersebut.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

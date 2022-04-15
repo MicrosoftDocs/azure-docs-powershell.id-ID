@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsDataExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsDataExport.md
-ms.openlocfilehash: 05c10cf105245423279d7f558f845fd2fd4b8b68
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 64a10ea27303bc9ad364ba0dfe80f41063dc4c37
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140555172"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142486583"
 ---
 # Get-AzOperationalInsightsDataExport
 
 ## SYNOPSIS
-Dapatkan atau  list ekspor data untuk ruang kerja.
+Mendapatkan atau mencantumkan ekspor data untuk ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightsdataexport) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzOperationalInsightsDataExport -ResourceId <String> [-DefaultProfile <IAzur
 ```
 
 ## DESCRIPTION
-Mendapatkan ekspor Data ruang kerja berdasarkan nama atau semua ekspor data ruang kerja yang ada.
+Mendapatkan ekspor data ruang kerja berdasarkan nama atau semua ekspor data ruang kerja yang sudah ada.
 
 ## EXAMPLES
 
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 
 ### -ResourceId
 ID sumber daya tujuan.
-Ini dapat disalin dari entri Properti dari sumber daya tujuan di Azure.
+Ini dapat disalin dari entri Properti sumber daya tujuan di Azure.
 
 ```yaml
 Type: System.String
@@ -144,7 +147,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja yang akan berisi wawasan penyimpanan.
 
 ```yaml
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Add-AzLoadBalancerFrontendIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Add-AzLoadBalancerFrontendIpConfig.md
 ms.openlocfilehash: 80324e1d6fa87959edb0da8e7aa72f3b2a42a3b6
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426989"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142493124"
 ---
 # Add-AzLoadBalancerFrontendIpConfig
 
 ## SYNOPSIS
-Menambahkan konfigurasi IP front-end ke penyeimbang muat.
+Menambahkan konfigurasi IP ujung depan ke penyeimbang beban.
 
 ## SYNTAX
 
@@ -49,43 +49,43 @@ Add-AzLoadBalancerFrontendIpConfig -Name <String> -LoadBalancer <PSLoadBalancer>
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzLoadBalancerFrontipConifg** menambahkan konfigurasi IP ujung-depan ke penyeimbang muat Azure.
+Cmdlet **Add-AzLoadBalancerFrontendIpConifg** menambahkan konfigurasi IP ujung depan ke penyeimbang muatan Azure.
 
 ## EXAMPLES
 
-### Contoh 1 Tambahkan konfigurasi IP ujung-depan dengan alamat IP dinamis
+### Contoh 1 Menambahkan konfigurasi IP ujung depan dengan alamat IP dinamis
 ```
 PS C:\>$Subnet = Get-AzVirtualNetwork -Name "MyVnet" -ResourceGroupName "MyRg" | Get-AzVirtualNetworkSubnetConfig -Name "MySubnet"
 PS C:\> Get-AzLoadBalancer -Name "MyLB" -ResourceGroupName "NrpTest" | Add-AzLoadBalancerFrontendIpConfig -Name "FrontendName" -Subnet $Subnet | Set-AzLoadBalancer
 ```
 
-Perintah pertama mendapatkan jaringan virtual Azure bernama MyVnet dan melewati hasilnya menggunakan saluran ke cmdlet **Get-AzVirtualNetworkSubnetConfig** untuk mendapatkan subnet bernama MySubnet.
-Perintah lalu menyimpan hasilnya di variabel yang bernama $Subnet.
-Perintah kedua mendapatkan penyeimbang muat bernama MyLB dan memberikan hasil ke cmdlet **Add-AzLoadBalancerFrontendIpConfig** yang menambahkan konfigurasi IP ujung-depan ke penyeimbang muat dengan alamat IP privat dinamis dari subnet yang disimpan dalam variabel yang bernama $MySubnet.
+Perintah pertama mendapatkan jaringan virtual Azure bernama MyVnet dan meneruskan hasilnya menggunakan pipeline ke cmdlet **Get-AzVirtualNetworkSubnetConfig** untuk mendapatkan subnet bernama MySubnet.
+Perintah kemudian menyimpan hasil dalam variabel bernama $Subnet.
+Perintah kedua mendapatkan load balancer bernama MyLB dan meneruskan hasil ke cmdlet **Add-AzLoadBalancerFrontendIpConfig** yang menambahkan konfigurasi IP front-end ke load balancer dengan alamat IP privat dinamis dari subnet yang disimpan dalam variabel bernama $MySubnet.
 
-### Contoh 2 Menambahkan konfigurasi IP ujung-depan dengan alamat IP statis
+### Contoh 2 Tambahkan konfigurasi IP ujung depan dengan alamat IP statis
 ```
 PS C:\>$Subnet = Get-AzVirtualNetwork -Name "MyVnet" -ResourceGroupName "RG001" | Get-AzVirtualNetworkSubnetConfig -Name "MySubnet"
 PS C:\> Get-AzLoadBalancer -Name "MyLB" -ResourceGroupName "NrpTest" | Add-AzLoadBalancerFrontendIpConfig -Name "FrontendName" -Subnet $Subnet -PrivateIpAddress "10.0.1.6" | Set-AzLoadBalancer
 ```
 
-Perintah pertama mendapatkan jaringan virtual Azure bernama MyVnet dan melewati hasilnya menggunakan saluran ke cmdlet **Get-AzVirtualNetworkSubnetConfig** untuk mendapatkan subnet bernama MySubnet.
-Perintah lalu menyimpan hasilnya di variabel yang bernama $Subnet.
-Perintah kedua mendapatkan penyeimbang muat bernama MyLB dan menyampaikan hasilnya ke cmdlet **Add-AzLoadBalancerFrontendIpConfig** yang menambahkan konfigurasi IP ujung-depan ke penyeimbang muat dengan alamat IP privat statis dari subnet yang disimpan dalam variabel yang bernama $Subnet.
+Perintah pertama mendapatkan jaringan virtual Azure bernama MyVnet dan meneruskan hasilnya menggunakan pipeline ke cmdlet **Get-AzVirtualNetworkSubnetConfig** untuk mendapatkan subnet bernama MySubnet.
+Perintah kemudian menyimpan hasil dalam variabel bernama $Subnet.
+Perintah kedua mendapatkan load balancer bernama MyLB dan meneruskan hasil ke cmdlet **Add-AzLoadBalancerFrontendIpConfig** yang menambahkan konfigurasi IP ujung depan ke load balancer dengan alamat IP pribadi statis dari subnet yang disimpan dalam variabel bernama $Subnet.
 
-### Contoh 3 Menambahkan konfigurasi IP ujung-depan dengan alamat IP publik
+### Contoh 3 Menambahkan konfigurasi IP ujung depan dengan alamat IP publik
 ```
 PS C:\>$PublicIp = Get-AzPublicIpAddress -ResourceGroupName "myRG" -Name "MyPub"
 PS C:\> Get-AzLoadBalancer -Name "MyLB" -ResourceGroupName "NrpTest" | Add-AzLoadBalancerFrontendIpConfig -Name "FrontendName" -PublicIpAddress $PublicIp | Set-AzLoadBalancer
 ```
 
-Perintah pertama mendapatkan alamat IP publik Azure bernama MyPub dan menyimpan hasilnya dalam variabel yang bernama $PublicIp.
-Perintah kedua mendapatkan penyeimbang muat bernama MyLB dan menyampaikan hasilnya ke cmdlet **Add-AzLoadBalancerFrontendIpConfig** yang menambahkan konfigurasi IP ujung-depan ke penyeimbang muat dengan alamat IP publik yang disimpan di variabel yang bernama $PublicIp.
+Perintah pertama mendapatkan alamat IP publik Azure bernama MyPub dan menyimpan hasilnya dalam variabel bernama $PublicIp.
+Perintah kedua mendapatkan load balancer bernama MyLB dan meneruskan hasil ke cmdlet **Add-AzLoadBalancerFrontendIpConfig** yang menambahkan konfigurasi IP front-end ke load balancer dengan alamat IP publik yang disimpan dalam variabel bernama $PublicIp.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -100,8 +100,8 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan objek **LoadBalancer.**
-Cmdlet ini menambahkan konfigurasi IP front-end ke penyeimbang muat yang ditentukan parameter ini.
+Menentukan objek **LoadBalancer** .
+Cmdlet ini menambahkan konfigurasi IP ujung depan ke load balancer yang ditentukan parameter ini.
 
 ```yaml
 Type: PSLoadBalancer
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateIpAddress
-Menentukan alamat IP privat yang akan dikaitkan dengan konfigurasi IP ujung-depan.
+Menentukan alamat IP privat untuk dikaitkan dengan konfigurasi IP front-end.
 
 ```yaml
 Type: String
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddress
-Menentukan alamat IP publik yang akan dikaitkan dengan konfigurasi IP ujung-depan.
+Menentukan alamat IP publik untuk dikaitkan dengan konfigurasi IP ujung depan.
 
 ```yaml
 Type: PSPublicIpAddress
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddressId
-Spesifikasi ID alamat IP publik untuk menambahkan konfigurasi IP ujung-depan.
+Specifes the ID of the public IP address in which to add a front-end IP configuration.
 
 ```yaml
 Type: String
@@ -205,8 +205,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Zone
-Daftar zona ketersediaan mencantumkan IP yang dialokasikan untuk sumber daya yang diperlukan.
+### -Zona
+Daftar zona ketersediaan yang mencantumkan IP yang dialokasikan untuk sumber daya yang diperlukan.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -221,12 +221,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSLoadBalancer
-Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari saluran
+Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari pipeline
 
 ## OUTPUTS
 

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Get-AzKeyVaultCertificatePolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Get-AzKeyVaultCertificatePolicy.md
 ms.openlocfilehash: d525a47dde9551e5d48c7c316cf6844323b75e81
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132413624"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142493505"
 ---
 # Get-AzKeyVaultCertificatePolicy
 
 ## SYNOPSIS
-Mendapatkan kebijakan untuk sertifikat di kunci vault.
+Mendapatkan kebijakan untuk sertifikat dalam kubah kunci.
 
 ## SYNTAX
 
@@ -26,11 +26,11 @@ Get-AzKeyVaultCertificatePolicy [-VaultName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzKeyVaultCertificatePolicy** mendapatkan kebijakan untuk sertifikat di kunci vault di Azure Key Vault.
+Cmdlet **Get-AzKeyVaultCertificatePolicy** mendapatkan kebijakan untuk sertifikat dalam kubah kunci di Azure Key Vault.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan kebijakan sertifikat
+### Contoh 1: Dapatkan kebijakan sertifikat
 ```
 PS C:\>Get-AzKeyVaultCertificatePolicy -VaultName "ContosoKV01" -Name "TestCert01"
 SecretContentType               : application/x-pkcs12
@@ -51,12 +51,12 @@ Created                         : 2/8/2016 11:10:29 PM
 Updated                         : 2/8/2016 11:10:29 PM
 ```
 
-Perintah ini mendapatkan kebijakan sertifikat untuk sertifikat TestCert01 dalam kunci vault ContosoVAULT01.
+Perintah ini mendapatkan kebijakan sertifikat untuk sertifikat TestCert01 dalam kubah kunci ContosoKV01.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: IAzureContextContainer
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kunci vault.
+Menentukan nama kubah kunci.
 
 ```yaml
 Type: String
@@ -101,11 +101,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS

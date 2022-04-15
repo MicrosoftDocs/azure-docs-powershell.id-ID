@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzNetworkVirtualAppliance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzNetworkVirtualAppliance.md
-ms.openlocfilehash: 1d20a5829a2a7fd0ed93e707b448e6f5a405ae26
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 8cdf56f6d899d7369d518ad3038daee068425219
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140570720"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142486835"
 ---
 # Update-AzNetworkVirtualAppliance
 
 ## SYNOPSIS
-Memperbarui atau Mengubah sumber daya Alat Virtual Jaringan.
+Memperbarui atau Mengubah sumber daya Peralatan Virtual Jaringan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/update-aznetworkvirtualappliance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Update-AzNetworkVirtualAppliance -Name <String> -ResourceGroupName <String>
 ```
 
 ## DESCRIPTION
-Sumber Update-AzNetworkVirtualAppliance memodifikasi sumber daya Alat Virtual Jaringan.
+Update-AzNetworkVirtualAppliance mengubah sumber daya Network Virtual Appliance.
 
 ## EXAMPLES
 
@@ -35,11 +38,11 @@ Sumber Update-AzNetworkVirtualAppliance memodifikasi sumber daya Alat Virtual Ja
 PS C:\> Update-AzNetworkVirtualAppliance -ResourceGroupName testrg -Name nva -VirtualApplianceAsn 1234
 ```
 
-Memodifikasi nomor ASN Alat Virtual.
+Ubah nomor ASN Alat Virtual.
 
 ### Contoh 2
 
-Memperbarui atau Mengubah sumber daya Alat Virtual Jaringan. (otomatisgenerated)
+Memperbarui atau Mengubah sumber daya Peralatan Virtual Jaringan. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -49,7 +52,7 @@ Update-AzNetworkVirtualAppliance -Name nva -ResourceGroupName testrg -Sku <PSVir
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -78,8 +81,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi jika Anda ingin menimpa sumber daya
+### -Paksa
+Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable yang mewakili tag sumber daya.
+Sebuah hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualApplianceAsn
-Nomor ASN Alat Virtual.
+Nomor ASN dari Peralatan Virtual.
 
 ```yaml
 Type: System.Int32
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

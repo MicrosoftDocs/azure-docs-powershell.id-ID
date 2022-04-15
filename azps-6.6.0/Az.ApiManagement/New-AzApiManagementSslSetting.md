@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementSslSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementSslSetting.md
 ms.openlocfilehash: d3cda1f856610c48f670b73ba14a4a8616f9c519
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140313793"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142480589"
 ---
 # New-AzApiManagementSslSetting
 
@@ -18,7 +18,7 @@ ms.locfileid: "140313793"
 Membuat contoh PsApiManagementSslSetting
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementsslsetting) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementsslsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,12 +29,12 @@ New-AzApiManagementSslSetting [-FrontendProtocol <Hashtable>] [-BackendProtocol 
 ```
 
 ## DESCRIPTION
-Perintah bantuan untuk membuat contoh PsApiManagementSslSetting.
-Perintah ini akan digunakan dengan New-AzApiManagement perintah.
+Perintah Helper untuk membuat contoh PsApiManagementSslSetting.
+Perintah ini akan digunakan dengan perintah New-AzApiManagement.
 
 ## EXAMPLES
 
-### Contoh 1: Buat Pengaturan SSL untuk mengaktifkan TLS 1.0 pada Backend dan Frontend
+### Contoh 1: Buat Pengaturan SSL untuk mengaktifkan TLS 1.0 di Backend dan Frontend
 ```powershell
 PS D:\github\azure-powershell\artifacts\Debug\Az.ApiManagement> $enableTls=@{"Tls10" = "True"}
 PS D:\github\azure-powershell\artifacts\Debug\Az.ApiManagement> New-AzApiManagementSslSetting -FrontendProtocol $enableTls -BackendProtocol $enableTls
@@ -44,13 +44,13 @@ FrontendProtocols BackendProtocols CipherSuites ServerProtocols
 {Tls10}           {Tls10}
 ```
 
-Buat contoh baru PsApiManagementSslSetting untuk Mengaktifkan TLSv 1.0 di Frontend (antara klien dan APIM) dan Backend (antara APIM dan Backend) dari Gateway ApiManagement.
+Buat contoh baru PsApiManagementSslSetting untuk Mengaktifkan TLSv 1.0 di Frontend (antara klien dan APIM) dan Backend (antara APIM dan Backend) ApiManagement Gateway.
 
 ## PARAMETERS
 
 ### -BackendProtocol
 Pengaturan protokol Keamanan Backend. Parameter ini bersifat opsional.
-Protokol yang valid Pengaturan adalah `Tls11` - Tls 1.1 `Tls10` - Tls 1.0 `Ssl30` - SSL 3.0
+Pengaturan Protokol yang valid adalah `Tls11` - Tls 1.1 `Tls10` - Tls 1.0 `Ssl30` - SSL 3.0
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -65,8 +65,8 @@ Accept wildcard characters: False
 ```
 
 ### -CipherSuite
-Pengaturan ssl cipher suites dalam urutan yang ditentukan. Parameter ini bersifat opsional.
-Tanggal valid Pengaturan adalah `TripleDes168` - Aktifkan / Nonaktifkan Tripe Des 168
+Pengaturan rangkaian sandi Ssl dalam urutan yang ditentukan. Parameter ini bersifat opsional.
+Pengaturan yang valid adalah `TripleDes168` - Aktifkan / Nonaktifkan Tripe Des 168
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 
 ### -FrontendProtocol
 Pengaturan protokol Keamanan Frontend. Parameter ini bersifat opsional.
-Protokol yang valid Pengaturan adalah `Tls11` - Tls 1.1 `Tls10` - Tls 1.0 `Ssl30` - SSL 3.0
+Pengaturan Protokol yang valid adalah `Tls11` - Tls 1.1 `Tls10` - Tls 1.0 `Ssl30` - SSL 3.0
 
 
 ```yaml
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 
 ### -ServerProtocol
 Pengaturan protokol server seperti Http2. Parameter ini bersifat opsional.
-Opsi yang Pengaturan adalah `Http2` - Aktifkan Http 2.0
+Pengaturan yang valid adalah `Http2` - Aktifkan Http 2.0
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -129,15 +129,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementSsslSettings
+### Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementSslSettings
 
 ## CATATAN
 

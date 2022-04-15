@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionRetentionLifeCycleClientObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionRetentionLifeCycleClientObject.md
-ms.openlocfilehash: e2c57a5d8140f7f7659c8d7fe501bb37d48137a3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 01951d22c613a6c2292a7d57188ad5b643489ee8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140556739"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142472543"
 ---
 # New-AzDataProtectionRetentionLifeCycleClientObject
 
 ## SYNOPSIS
 Membuat objek Siklus Hidup baru
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/new-azdataprotectionretentionlifecycleclientobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,9 +44,9 @@ SourceDataStoreType        : OperationalStore
 TargetDataStoreCopySetting :
 ```
 
-Perintah ini membuat objek siklus hidup yang menyimpan data cadangan di penyimpanan operasional selama 30 hari.
+Perintah ini membuat objek siklus hidup yang menyimpan data cadangan dalam penyimpanan operasional selama 30 hari.
 
-### Contoh 2: Buat siklus hidup penyimpanan mingguan.
+### Contoh 2: Membuat siklus hidup penyimpanan mingguan.
 ```powershell
 PS C:\> New-AzDataProtectionRetentionLifeCycleClientObject -SourceDataStore OperationalStore -SourceRetentionDurationType Weeks -SourceRetentionDurationCount 20
 
@@ -54,7 +57,7 @@ SourceDataStoreType        : OperationalStore
 TargetDataStoreCopySetting :
 ```
 
-Perintah ini membuat objek siklus hidup yang menyimpan data cadangan di toko operasional selama 20 minggu.
+Perintah ini membuat objek siklus hidup yang menyimpan data cadangan dalam penyimpanan operasional selama 20 minggu.
 
 ## PARAMETERS
 
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceDataStore
-Penyimpanan Data Sumber
+Sumber Datastore
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Support.DataStoreType
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetDataStore
-Penyimpanan Data Target
+Target Datastore
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Support.DataStoreType
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
