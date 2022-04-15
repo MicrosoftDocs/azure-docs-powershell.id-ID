@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.recov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Start-AzureRmRecoveryServicesAsrResynchronizeReplicationJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Start-AzureRmRecoveryServicesAsrResynchronizeReplicationJob.md
-ms.openlocfilehash: 0cea7b86688061e319033db0a1293e5215f0955990b326a77829d5ff37d883ee
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 6ee25231b7bb8861a1294537e2f42a0bf914b994
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140860274"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142135963"
 ---
 # Start-AzureRmRecoveryServicesAsrResynchronizeReplicationJob
 
 ## SYNOPSIS
-Memulai replikasi resynchronization.
+Memulai resinkronisasi replikasi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -35,7 +35,7 @@ Start-AzureRmRecoveryServicesAsrResynchronizeReplicationJob -ResourceId <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzureRmRecoveryServicesAsrResynchronizeReplicationJob** mulai menyinkronkan ulang replikasi untuk item terproteksi tertentu jika item yang diproteksi berada dalam status resynchronization yang diperlukan.
+**Cmdlet Start-AzureRmRecoveryServicesAsrResynchronizeReplicationJob** memulai resinkronisasi replikasi untuk item yang diproteksi tertentu jika yang diproteksi berada dalam status resinkronisasi yang diperlukan.
 
 ## EXAMPLES
 
@@ -44,12 +44,12 @@ Cmdlet **Start-AzureRmRecoveryServicesAsrResynchronizeReplicationJob** mulai men
 PS C:\> Start-AzureRmRecoveryServicesAsrResynchronizeReplicationJob -ReplicationProtectedItem $rpi
 ```
 
-Memulai pekerjaan untuk menyinkronkan ulang replikasi pada replikasi item yang diproteksi yang dilewati.
+Memulai pekerjaan untuk menyinkronkan ulang replikasi pada item yang dilindungi replikasi yang dikirim.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicationProtectedItem
-Replikasi ASR replikasi item yang diproteksi untuk menyinkronkan ulang replikasi untuk.
+Item dilindungi replikasi ASR untuk menyinkronkan ulang replikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya dari replikasi item yang diproteksi untuk disinkronkan kembali.
+Id sumber daya item yang dilindungi replikasi untuk disinkronkan ulang.
 
 ```yaml
 Type: System.String
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

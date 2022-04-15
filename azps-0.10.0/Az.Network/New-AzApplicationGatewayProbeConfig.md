@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/New-AzApplicationGatewayProbeConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/New-AzApplicationGatewayProbeConfig.md
 ms.openlocfilehash: 43c74d2edd2cfd07f65b7d5437bf1cf5c0dfca9f
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "132414571"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141916761"
 ---
 # New-AzApplicationGatewayProbeConfig
 
 ## SYNOPSIS
-Membuat health healthkese.
+Membuat pemeriksaan kesehatan.
 
 ## SYNTAX
 
@@ -27,21 +27,21 @@ New-AzApplicationGatewayProbeConfig -Name <String> -Protocol <String> [-HostName
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzApplicationGatewayProbeConfig membuat cmdlet kesehatan cmdlet.
+Cmdlet New-AzApplicationGatewayProbeConfig menciptakan pemeriksaan kesehatan.
 
 ## EXAMPLES
 
-### Contoh1: Create a healthbes
+### Contoh1: Membuat pemeriksaan kesehatan
 ```
 PS C:\>New-AzApplicationGatewayProbeConfig -Name "Probe03" -Protocol Http -HostName "contoso.com" -Path "/path/custompath.htm" -Interval 30 -Timeout 120 -UnhealthyThreshold 8
 ```
 
-Perintah ini membuat health protocol bernama Protocol3, dengan protokol HTTP, interval 30 detik, waktu habis 120 detik, dan ambang batas 8 retries yang tidak sehat.
+Perintah ini membuat pemeriksaan kesehatan bernama Probe03, dengan protokol HTTP, interval 30 detik, waktu habis 120 detik, dan ambang batas 8 percobaan yang tidak sehat.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -56,7 +56,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostName
-Menentukan nama host yang dikirim cmdlet cmdlet ini ke cmdlet tersebut.
+Menentukan nama host yang dikirim cmdlet ini ke probe.
 
 ```yaml
 Type: String
@@ -71,9 +71,9 @@ Accept wildcard characters: False
 ```
 
 ### -Interval
-Menentukan interval interval dalam detik.
-Ini adalah interval waktu antara dua negara berturut-turut.
-Nilai ini berada antara 1 detik dan 86400 detik.
+Menentukan interval probe dalam detik.
+Ini adalah interval waktu antara dua probe berturut-turut.
+Nilai ini antara 1 detik dan 86400 detik.
 
 ```yaml
 Type: Int32
@@ -87,8 +87,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Cocokkan
-Isi yang harus dimuat dalam respons kesehatan.
+### -Cocok
+Tubuh yang harus dikandung dalam respons kesehatan.
 Nilai default kosong
 
 ```yaml
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 
 ### -MinServers
 Jumlah minimum server yang selalu ditandai sehat.
-Nilai default adalah 0
+Nilai defaultnya adalah 0
 
 ```yaml
 Type: Int32
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama negara tersebut.
+Menentukan nama probe.
 
 ```yaml
 Type: String
@@ -134,10 +134,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur relatif of path.
+### -Jalur
+Menentukan jalur relatif probe.
 Jalur yang valid dimulai dengan karakter garis miring (/).
-Thebes dikirim ke \<Protocol\>://\<host\>:\<port\>\<path\>.
+Probe dikirim ke \<Protocol\>://\<host\>:\<port\>\<path\>.
 
 ```yaml
 Type: String
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -PickHostNameFromBackendHttpSettings
-Apakah header host harus dipilih dari pengaturan backend http.
+Apakah header host harus dipilih dari pengaturan http backend.
 Nilai default adalah false
 
 ```yaml
@@ -167,8 +167,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
-Menentukan protokol yang digunakan untuk mengirim protocol.
+### -Protokol
+Menentukan protokol yang digunakan untuk mengirim probe.
 
 ```yaml
 Type: String
@@ -183,10 +183,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Timeout
-Menentukan waktu habis dalam hitungan detik.
-Cmdlet ini menandai cmdlet sebagai gagal jika respons yang valid tidak diterima dengan periode waktu habis ini.
-Nilai valid adalah antara 1 detik dan 86400 detik.
+### -Waktu habis
+Menentukan waktu probe habis dalam detik.
+Cmdlet ini menandai pemeriksaan gagal jika respons valid tidak diterima dengan periode waktu habis ini.
+Nilai yang valid adalah antara 1 detik dan 86400 detik.
 
 ```yaml
 Type: Int32
@@ -201,9 +201,9 @@ Accept wildcard characters: False
 ```
 
 ### -UnhealthyThreshold
-Menentukan jumlah coba lagi untuk orang tersebut.
-Server backend ditandai ke bawah setelah jumlah kegagalan berturut-turut mencapai ambang batas yang tidak sehat.
-Nilai valid adalah antara 1 detik dan 20 detik.
+Menentukan jumlah percobaan ulang probe.
+Server backend ditandai turun setelah jumlah kegagalan penyelidikan berturut-turut mencapai ambang batas yang tidak sehat.
+Nilai yang valid adalah antara 1 detik dan 20 detik.
 
 ```yaml
 Type: Int32
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -230,7 +230,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Membuat custom cloud untuk Application Gateway menggunakan PowerShell untuk Azure Resource Manager](https://azure.microsoft.com/en-us/documentation/articles/application-gateway-create-probe-ps/#)
+[Membuat probe kustom untuk Application Gateway menggunakan PowerShell untuk Azure Resource Manager](https://azure.microsoft.com/en-us/documentation/articles/application-gateway-create-probe-ps/#)
 
 [Add-AzApplicationGatewayProbeConfig]()
 

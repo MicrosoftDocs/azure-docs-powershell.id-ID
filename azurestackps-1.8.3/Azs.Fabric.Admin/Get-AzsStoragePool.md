@@ -4,16 +4,16 @@ Module Name: Azs.Fabric.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: bcc4dbfdd4634c53835c588947a77c4c2e773af4
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136581014"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142240489"
 ---
 # Get-AzsStoragePool
 
 ## SYNOPSIS
-Mengembalikan daftar semua kolam renang penyimpanan untuk lokasi.
+Mengembalikan daftar semua kumpulan penyimpanan untuk suatu lokasi.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-AzsStoragePool -StorageSystem <String> [-Location <String>] [-ResourceGroupN
  [-Filter <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsStoragePool -Name <String> -StorageSystem <String> [-Location <String>] [-ResourceGroupName <String>]
  [<CommonParameters>]
@@ -35,7 +35,7 @@ Get-AzsStoragePool -ResourceId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Mengembalikan daftar semua kolam renang penyimpanan untuk lokasi.
+Mengembalikan daftar semua kumpulan penyimpanan untuk suatu lokasi.
 
 ## EXAMPLES
 
@@ -44,19 +44,19 @@ Mengembalikan daftar semua kolam renang penyimpanan untuk lokasi.
 Get-AzsStoragePool -StorageSystem S-Cluster.azurestack.local
 ```
 
-Dapatkan semua kolam renang penyimpanan di lokasi tertentu.
+Dapatkan semua kumpulan penyimpanan di lokasi tertentu.
 
 ### CONTOH 2
 ```
 Get-AzsStoragePool -StorageSystem S-Cluster.azurestack.local -Name "SU1_Pool"
 ```
 
-Dapatkan kolam renang penyimpanan di lokasi tertentu dengan nama kolam penyimpanan.
+Dapatkan kumpulan penyimpanan di lokasi tertentu yang diberi nama kumpulan penyimpanan.
 
 ## PARAMETERS
 
 ### -Nama
-Storage pool.
+Storage nama pool.
 
 ```yaml
 Type: String
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageSystem
-Nama Storage Sub Sistem.
+Nama Sub Sistem Storage.
 
 ```yaml
 Type: String
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

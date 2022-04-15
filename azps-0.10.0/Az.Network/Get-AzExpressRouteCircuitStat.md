@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzExpressRouteCircuitStat.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzExpressRouteCircuitStat.md
 ms.openlocfilehash: 48136f033a75cfb49d05f5af76b1688ac6f68463
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425807"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142131587"
 ---
 # Get-AzExpressRouteCircuitStat
 
 ## SYNOPSIS
-Dapatkan statistik penggunaan sirkuit ExpressRoute.
+Mendapatkan statistik penggunaan sirkuit ExpressRoute.
 
 ## SYNTAX
 
@@ -26,11 +26,11 @@ Get-AzExpressRouteCircuitStat -ResourceGroupName <String> -ExpressRouteCircuitNa
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzExpressRouteCircuitStat** mengambil statistik lalu lintas untuk sirkuit ExpressRoute. Statistik menyertakan jumlah byte yang dikirim dan diterima melalui rute utama dan sekunder.
+Cmdlet **Get-AzExpressRouteCircuitStat** mengambil statistik lalu lintas untuk sirkuit ExpressRoute. Statistik ini mencakup jumlah byte yang dikirim dan diterima baik melalui rute utama maupun sekunder.
 
 ## EXAMPLES
 
-### Contoh 1: Menampilkan statistik lalu lintas untuk rekan ExpressRoute
+### Contoh 1: Menampilkan statistik lalu lintas untuk peer ExpressRoute
 ```
 Get-AzExpressRouteCircuitStat -ResourceGroupName $RG -ExpressRouteCircuitName $CircuitName -PeeringType 'AzurePrivatePeering'
 ```
@@ -38,7 +38,7 @@ Get-AzExpressRouteCircuitStat -ResourceGroupName $RG -ExpressRouteCircuitName $C
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -53,7 +53,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpressRouteCircuitName
-Nama sirkuit ExpressRoute yang akan diperiksa.
+Nama sirkuit ExpressRoute sedang diperiksa.
 
 ```yaml
 Type: String
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeeringType
-Nilai yang dapat diterima untuk parameter ini adalah: `AzurePrivatePeering` , `AzurePublicPeering` , dan `MicrosoftPeering`
+Nilai yang dapat diterima untuk parameter ini adalah: `AzurePrivatePeering`, , `AzurePublicPeering`dan `MicrosoftPeering`
 
 ```yaml
 Type: String
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

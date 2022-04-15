@@ -4,16 +4,16 @@ Module Name: Azs.Fabric.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 07cb5e675003eccc9fad54e723e80a0ddb73ff9a
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136576968"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142240507"
 ---
 # Get-AzsScaleUnitNode
 
 ## SYNOPSIS
-Mengembalikan daftar semua node unit skala di suatu lokasi.
+Mengembalikan daftar semua simpul unit skala di lokasi.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-AzsScaleUnitNode [-Location <String>] [-ResourceGroupName <String>] [-Filter
  [-Top <Int32>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsScaleUnitNode [-Name] <String> [-Location <String>] [-ResourceGroupName <String>] [<CommonParameters>]
 ```
@@ -34,7 +34,7 @@ Get-AzsScaleUnitNode -ResourceId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Mengembalikan daftar semua node unit skala di suatu lokasi.
+Mengembalikan daftar semua simpul unit skala di lokasi.
 
 ## EXAMPLES
 
@@ -43,19 +43,19 @@ Mengembalikan daftar semua node unit skala di suatu lokasi.
 Get-AzsScaleUnitNode
 ```
 
-Dapatkan semua simpul unit skala di satu lokasi.
+Dapatkan semua simpul unit skala di suatu lokasi.
 
 ### CONTOH 2
 ```
 Get-AzsScaleUnitNode -Name "HC1n25r2231"
 ```
 
-Dapatkan node unit skala tertentu pada lokasi yang diberi nama.
+Dapatkan simpul unit skala tertentu di lokasi yang diberi nama.
 
 ## PARAMETERS
 
 ### -Nama
-Nama node unit skala.
+Nama simpul unit skala.
 
 ```yaml
 Type: String
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

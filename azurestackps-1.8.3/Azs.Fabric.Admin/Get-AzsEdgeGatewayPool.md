@@ -4,16 +4,16 @@ Module Name: Azs.Fabric.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: a1f1be36f51aab748ec790c56aea7092f1d3d877
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136576881"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142240597"
 ---
 # Get-AzsEdgeGatewayPool
 
 ## SYNOPSIS
-Mengembalikan objek gateway pool pada satu lokasi.
+Mengembalikan objek kumpulan gateway di suatu lokasi.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-AzsEdgeGatewayPool [-Location <String>] [-ResourceGroupName <String>] [-Filt
  [-Top <Int32>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsEdgeGatewayPool [-Name] <String> [-Location <String>] [-ResourceGroupName <String>] [<CommonParameters>]
 ```
@@ -34,7 +34,7 @@ Get-AzsEdgeGatewayPool -ResourceId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Mengembalikan objek edge gateway pool pada satu lokasi.
+Mengembalikan objek kumpulan gateway tepi di suatu lokasi.
 
 ## EXAMPLES
 
@@ -43,19 +43,19 @@ Mengembalikan objek edge gateway pool pada satu lokasi.
 Get-AzsEdgeGatewayPool
 ```
 
-Dapatkan daftar semua kolam renang Edge Gateway.
+Dapatkan daftar semua kumpulan Gateway Edge.
 
 ### CONTOH 2
 ```
 Get-AzsEdgeGatewayPool -Name "AzS-Gwy01"
 ```
 
-Dapatkan gateway pool tepi tertentu.
+Dapatkan kolam gateway tepi tertentu.
 
 ## PARAMETERS
 
 ### -Nama
-Nama tepi gateway pool.
+Nama kolam gateway tepi.
 
 ```yaml
 Type: String
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
