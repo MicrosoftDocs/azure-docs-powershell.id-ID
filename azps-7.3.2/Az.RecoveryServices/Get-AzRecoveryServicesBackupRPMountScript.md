@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRPMountScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRPMountScript.md
-ms.openlocfilehash: 5d4eb78e942d01d14ab29fd82ade1b74f84d9f4d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: b8d91dbf983dedef3419d64016f41256e7b2b3be
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140391786"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142288987"
 ---
 # Get-AzRecoveryServicesBackupRPMountScript
 
 ## SYNOPSIS
 Mengunduh skrip untuk memasang semua file titik pemulihan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackuprpmountscript) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzRecoveryServicesBackupRPMountScript [-RecoveryPoint] <RecoveryPointBase> [
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzRecoveryServicesBackupRPMountScript mengunduh skrip yang terpasang pada volume titik pemulihan di komputer tempat skrip dijalankan.
+Cmdlet Get-AzRecoveryServicesBackupRPMountScript mengunduh skrip yang memasang volume titik pemulihan pada mesin tempatnya dijalankan.
 
 ## EXAMPLES
 
@@ -46,11 +49,11 @@ OsType  Password        Filename
 Windows e3632984e51f496 V2VM_wus2_8287309959960546283_451516692429_cbd6061f7fc543c489f1974d33659fed07a6e0c2e08740.exe
 ```
 
-Saat skrip dijalankan, skrip akan memasangkan file titik pemulihan dan $rp\[ 0\]
+Ketika skrip dijalankan, skrip akan me-mount file titik pemulihan $rp\[ 0\]
 
 ### Contoh 2
 
-Mengunduh skrip untuk memasang semua file titik pemulihan. (otomatisgenerated)
+Mengunduh skrip untuk memasang semua file titik pemulihan. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -60,7 +63,7 @@ Get-AzRecoveryServicesBackupRPMountScript -RecoveryPoint $rp[0] -VaultId $vault.
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -74,8 +77,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Lokasi tempat file harus diunduh dalam kasus pemulihan file. Jika -Path tidak disediakan, file skrip akan diunduh dalam direktori saat ini.
+### -Jalur
+Lokasi tempat file harus diunduh dalam kasus pemulihan file. Jika -Path tidak disediakan, maka berkas skrip akan diunduh dalam direktori saat ini.
 
 ```yaml
 Type: System.String
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

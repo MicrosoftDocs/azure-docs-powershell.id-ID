@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupManagementServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupManagementServer.md
-ms.openlocfilehash: 4b5e8299e645f23b1b3d2dfdf4fb3aceb335709a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c4e23d0cd16b4ef442fe312d2eb4d8211a4084b9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140554932"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142289041"
 ---
 # Get-AzRecoveryServicesBackupManagementServer
 
 ## SYNOPSIS
-Mendapatkan server manajemen SCDPM dan Azure Backup.
+Mendapatkan SCDPM dan server manajemen Azure Backup.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupmanagementserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,24 +29,24 @@ Get-AzRecoveryServicesBackupManagementServer [[-Name] <String>] [-VaultId <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesBackupManagementServer** mendapatkan daftar Server manajemen cadangan yang terdaftar di vault.
-Ada dua tipe server manajemen Pencadangan: Server manajemen Pencadangan Pusat Sistem (SCDPM) dan Azure Backup.
-Server manajemen cadangan diinstal secara terpisah untuk mengelola  Backup orchestration.
-Mengatur konteks vault menggunakan cmdlet Set-AzRecoveryServicesVaultContext cmdlet sebelum Anda menggunakan cmdlet saat ini.
+Cmdlet **Get-AzRecoveryServicesBackupManagementServer** mendapatkan daftar server manajemen cadangan yang terdaftar dalam kubah.
+Ada dua tipe server manajemen cadangan: System Center Data Protection Manager (SCDPM) dan server manajemen Azure Backup.
+Server manajemen cadangan diinstal secara terpisah untuk mengelola orkestrasi Cadangan.
+Mengatur konteks kubah menggunakan cmdlet Set-AzRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Get all Backup management servers
+### Contoh 1: Dapatkan semua server manajemen pencadangan
 ```
 PS C:\>Get-AzRecoveryServicesBackupManagementServer
 ```
 
-Perintah ini akan mendaftarkan semua server manajemen Pencadangan bersama vault.
+Perintah ini membuat semua server manajemen cadangan terdaftar dengan kubah.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -58,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama Server manajemen cadangan untuk mendapatkannya.
+Menentukan nama server manajemen Cadangan untuk didapatkan.
 
 ```yaml
 Type: System.String
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
