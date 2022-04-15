@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricApplicationType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricApplicationType.md
-ms.openlocfilehash: b94929f31104489515608fbd80c33247cca77c91
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 7ba7f933c20b981a75748163ecf78fe45bdfca51
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140183745"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142483091"
 ---
 # Get-AzServiceFabricApplicationType
 
 ## SYNOPSIS
-Dapatkan Service Fabric jenis aplikasi. Hanya mendukung tipe aplikasi yang disebarkan ARM.
+Dapatkan detail tipe aplikasi Service Fabric. Hanya mendukung ARM tipe aplikasi yang digunakan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/get-azservicefabricapplicationtype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzServiceFabricApplicationType -ResourceId <String> [-DefaultProfile <IAzure
 ```
 
 ## DESCRIPTION
-Gunakan cmdlet ini untuk mendapatkan detail tipe aplikasi dalam grup dan kluster sumber daya yang ditentukan.
+Gunakan cmdlet ini untuk mendapatkan detail tipe aplikasi dalam grup sumber daya dan kluster yang ditentukan.
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ PS C:\> $appTypeName = "testAppType"
 PS C:\> Get-AzServiceFabricApplicationType -ResourceGroupName $resourceGroupName -ClusterName $clusterName -Name $appTypeName
 ```
 
-Contoh ini akan mendapatkan detail tipe aplikasi dengan parameter yang ditentukan, jika tidak menemukan sumber daya, hal itu akan pengecualian.
+Contoh ini akan mendapatkan detail tipe aplikasi dengan parameter yang ditentukan, jika tidak menemukan sumber daya yang akan dikecualikan.
 
 ### Contoh 2
 ```powershell
@@ -59,7 +62,7 @@ PS C:\> $clusterName = "testCluster"
 PS C:\> Get-AzServiceFabricApplicationType -ResourceGroupName $resourceGroupName -ClusterName $clusterName
 ```
 
-Contoh ini akan mendapatkan daftar tipe aplikasi yang ditentukan di bawah kluster tertentu.
+Contoh ini akan mendapatkan daftar tipe aplikasi yang ditentukan di bawah kluster yang ditentukan.
 
 ## PARAMETERS
 
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama tipe aplikasi
+Tentukan nama tipe aplikasi
 
 ```yaml
 Type: System.String
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Arm ResourceId tipe aplikasi.
+Arm ResourceId dari tipe aplikasi.
 
 ```yaml
 Type: System.String
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

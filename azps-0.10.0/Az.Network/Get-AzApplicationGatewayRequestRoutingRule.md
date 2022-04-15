@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzApplicationGatewayRequestRoutingRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzApplicationGatewayRequestRoutingRule.md
 ms.openlocfilehash: 402084acc332102c8a2f003e31e140b175b6f22f
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424990"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142494719"
 ---
 # Get-AzApplicationGatewayRequestRoutingRule
 
@@ -26,27 +26,27 @@ Get-AzApplicationGatewayRequestRoutingRule [-Name <String>] -ApplicationGateway 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApplicationGatewayRequestRoutingRule** mendapatkan aturan perutean permintaan dari gateway aplikasi.
+Cmdlet **Get-AzApplicationGatewayRequestRoutingRule** mendapatkan aturan perutean permintaan gateway aplikasi.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan aturan perutean permintaan tertentu
+### Contoh 1: Dapatkan aturan perutean permintaan tertentu
 ```
 PS C:\>$AppGW = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 PS C:\> $Rule = Get-AzApplicationGatewayRequestRoutingRule -"Rule01" -ApplicationGateway $AppGW
 ```
 
-Perintah pertama mendapatkan Gateway Aplikasi bernama ApplicationGateway01 dan menyimpan hasilnya di variabel yang bernama $AppGW.
-Perintah kedua mendapatkan aturan perutean permintaan yang bernama Rule01 dari Gateway Aplikasi yang disimpan di variabel yang bernama $AppGW.
+Perintah pertama mendapatkan Application Gateway bernama ApplicationGateway01 dan menyimpan hasilnya dalam variabel bernama $AppGW.
+Perintah kedua mendapatkan aturan perutean permintaan bernama Rule01 dari Application Gateway yang disimpan dalam variabel bernama $AppGW.
 
-### Contoh 2: Mendapatkan daftar aturan perutean permintaan
+### Contoh 2: Dapatkan daftar aturan perutean permintaan
 ```
 PS C:\>$AppGW = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 PS C:\> $Rules = Get-AzApplicationGatewayRequestRoutingRule -ApplicationGateway $AppGW
 ```
 
-Perintah pertama mendapatkan Gateway Aplikasi bernama ApplicationGateway01 dan menyimpan hasilnya di variabel yang bernama $AppGW.
-Perintah kedua mendapatkan daftar aturan perutean permintaan dari Gateway Aplikasi yang disimpan di variabel yang bernama $AppGW.
+Perintah pertama mendapatkan Application Gateway bernama ApplicationGateway01 dan menyimpan hasilnya dalam variabel bernama $AppGW.
+Perintah kedua mendapatkan daftar aturan perutean permintaan dari Application Gateway yang disimpan dalam variabel bernama $AppGW.
 
 ## PARAMETERS
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama aturan perutean permintaan yang akan dapatkan cmdlet ini.
+Menentukan nama aturan perutean permintaan yang didapatkan cmdlet ini.
 
 ```yaml
 Type: String
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

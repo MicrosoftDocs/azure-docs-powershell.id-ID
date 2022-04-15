@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzVpnClientConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzVpnClientConfiguration.md
 ms.openlocfilehash: 63b044c4a9736aca72e9713cd8ec5833e7b056ab
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "132415438"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142497131"
 ---
 # Get-AzVpnClientConfiguration
 
 ## SYNOPSIS
-Memungkinkan pengguna untuk mengunduh paket Profil Vpn yang dihasilkan menggunakan commandlet New-AzVpnClientConfiguration dengan mudah.
+Memungkinkan pengguna mengunduh paket Profil Vpn yang dihasilkan dengan mudah menggunakan commandlet New-AzVpnClientConfiguration.
 
 ## SYNTAX
 
@@ -36,12 +36,12 @@ PS C:\> New-AzVpnClientConfiguration -VirtualNetworkGatewayName "ContosoVirtualN
 PS C:\> Get-AzVpnClientConfiguration -VirtualNetworkGatewayName "ContosoVirtualNetworkGateway" -ResourceGroupName "ContosoResourceGroup"
 ```
 
-Mendapatkan URL untuk mengunduh profil VpnClient yang sebelumnya dihasilkan menggunakan New-AzVpnClientConfiguration default.
+Mendapatkan URL untuk mengunduh profil VpnClient yang telah dibuat sebelumnya menggunakan perintah New-AzVpnClientConfiguration.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 ```yaml
 Type: IAzureContextContainer
 Parameter Sets: (All)
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

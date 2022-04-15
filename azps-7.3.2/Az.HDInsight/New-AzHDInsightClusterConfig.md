@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightClusterConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightClusterConfig.md
-ms.openlocfilehash: f051e5ad9209feab6249116847ed9d3c4dd7d3f3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: df41be533d6a49955d5255f5db25035f1fc77951
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140186866"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142471211"
 ---
 # New-AzHDInsightClusterConfig
 
 ## SYNOPSIS
 Membuat objek konfigurasi kluster yang tidak tetap yang menjelaskan konfigurasi kluster Azure HDInsight.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/new-azhdinsightclusterconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ New-AzHDInsightClusterConfig [-StorageAccountResourceId <String>] [-StorageAccou
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzHDInsightClusterConfig** membuat objek tidak tetap yang menjelaskan konfigurasi kluster Azure HDInsight.
+Cmdlet **New-AzHDInsightClusterConfig** membuat objek non-persisted yang menjelaskan konfigurasi kluster Azure HDInsight.
 
 ## EXAMPLES
 
@@ -75,7 +78,7 @@ PS C:\> New-AzHDInsightClusterConfig `
                 -StorageContainer $storageContainer
 ```
 
-Perintah ini akan membuat objek konfigurasi kluster.
+Perintah ini membuat objek konfigurasi kluster.
 
 ## PARAMETERS
 
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -CertificateFileContents
-Menentukan konten file dari sertifikat yang akan digunakan saat mengakses Azure Data Lake Store.
+Menentukan konten file sertifikat yang akan digunakan saat mengakses Azure Data Lake Store.
 
 ```yaml
 Type: System.Byte[]
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 
 ### -CertificateFilePath
 Menentukan jalur file ke sertifikat yang akan digunakan untuk mengautentikasi sebagai Prinsipal Layanan.
-Kluster ini akan digunakan saat mengakses Azure Data Lake Store.
+Kluster akan menggunakannya saat mengakses Azure Data Lake Store.
 
 ```yaml
 Type: System.String
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 
 ### -CertificatePassword
 Menentukan kata sandi untuk sertifikat yang akan digunakan untuk mengautentikasi sebagai Prinsipal Layanan.
-Kluster ini akan digunakan saat mengakses Azure Data Lake Store.
+Kluster akan menggunakannya saat mengakses Azure Data Lake Store.
 
 ```yaml
 Type: System.String
@@ -172,11 +175,11 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterTier
-Menentukan tingkatan kluster HDInsight.
+Menentukan tingkat kluster HDInsight.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Standar
 - Premium Nilai defaultnya adalah Standar.
-Tingkatan Premium hanya dapat digunakan dengan kluster Linux, dan memungkinkan penggunaan beberapa fitur baru.
+Tingkat Premium hanya dapat digunakan dengan kluster Linux, dan memungkinkan penggunaan beberapa fitur baru.
 
 ```yaml
 Type: System.String
@@ -196,10 +199,10 @@ Menentukan tipe kluster yang akan dibuat.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Hadoop
 - HBase
-- Storm
-- Grafik Api
-- INTERACTIVEHIVE
-- Jerukka
+- Badai
+- Spark
+- INTERAKTIF
+- Kafka
 - RServer
 
 ```yaml
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionAtHost
-Mendapatkan atau mengatur bendera yang menunjukkan apakah mengaktifkan enkripsi pada host atau tidak.
+Mendapatkan atau mengatur bendera yang menunjukkan apakah mengaktifkan enkripsi di host atau tidak.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -276,7 +279,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionInTransit
-Mendapatkan atau mengatur bendera yang menunjukkan apakah mengaktifkan enkripsi saat transit atau tidak.
+Mendapatkan atau mengatur bendera yang menunjukkan apakah mengaktifkan enkripsi dalam transit atau tidak.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -321,7 +324,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionVaultUri
-Mendapatkan atau mengatur uri enkripsi vault.
+Mendapatkan atau mengatur uri kubah enkripsi.
 
 ```yaml
 Type: System.String
@@ -336,7 +339,7 @@ Accept wildcard characters: False
 ```
 
 ### -HeadNodeSize
-Menentukan ukuran mesin virtual untuk Simpul kepala.
+Menentukan ukuran mesin virtual untuk simpul Kepala.
 Gunakan Get-AzVMSize untuk ukuran VM yang dapat diterima, dan lihat halaman harga HDInsight.
 
 ```yaml
@@ -352,7 +355,7 @@ Accept wildcard characters: False
 ```
 
 ### -HiveMetastore
-Menentukan metastore untuk menyimpan metadata Hive.
+Menentukan metastore untuk menyimpan metadata Sarang.
 Anda juga dapat menggunakan cmdlet Add-AzHDInsightMetastore.
 
 ```yaml
@@ -383,8 +386,8 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Menentukan ID objek Azure AD (GUID) Prinsipal Layanan Azure AD yang mewakili kluster.
-Kluster ini akan digunakan saat mengakses Azure Data Lake Store.
+Menentukan ID objek Azure AD (GUID) dari Azure AD Service Principal yang mewakili kluster.
+Kluster akan menggunakannya saat mengakses Azure Data Lake Store.
 
 ```yaml
 Type: System.Guid
@@ -461,7 +464,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkerNodeSize
-Menentukan ukuran mesin virtual untuk node Pekerja.
+Menentukan ukuran mesin virtual untuk simpul Pekerja.
 Gunakan Get-AzVMSize untuk ukuran VM yang dapat diterima, dan lihat halaman harga HDInsight.
 
 ```yaml
@@ -476,10 +479,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Penjaga Kebun BinatangNodeSize
-Menentukan ukuran mesin virtual untuk simpul Penjaga Binatang.
+### -ZookeeperNodeSize
+Menentukan ukuran mesin virtual untuk simpul Zookeeper.
 Gunakan Get-AzVMSize untuk ukuran VM yang dapat diterima, dan lihat halaman harga HDInsight.
-Parameter ini hanya valid untuk kluster HBase atau Storm.
+Parameter ini hanya berlaku untuk kluster HBase atau Storm.
 
 ```yaml
 Type: System.String
@@ -494,11 +497,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

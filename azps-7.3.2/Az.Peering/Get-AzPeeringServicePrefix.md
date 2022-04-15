@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/get-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringServicePrefix.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringServicePrefix.md
-ms.openlocfilehash: aa4dd03946945db26c89546d860ac7fdac4122ed
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 42906fbdc7926d21fa0732df34e17c2534e87f8f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140392007"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142485989"
 ---
 # Get-AzPeeringServicePrefix
 
 ## SYNOPSIS
 Mendapatkan daftar prefiks layanan peering untuk langganan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.peering/get-azpeeringserviceprefix) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzPeeringServicePrefix [-ResourceId] <String> [-Expand] [-DefaultProfile <IA
 ```
 
 ## DESCRIPTION
-Membuat prefiks layanan peering untuk objek layanan peering
+Daftar prefiks layanan peering untuk objek layanan peering
 
 ## EXAMPLES
 
@@ -65,7 +68,7 @@ Id                    : /subscriptions/resourceGroups/Building40/providers/Micro
 Type                  : Microsoft.Peering/peeringServices/prefixes
 ```
 
-Dapatkan prefiks untuk layanan peering berdasarkan perintah pemipaan.
+Mendapatkan prefiks untuk layanan peering berdasarkan perintah perpipaan.
 
 ### Contoh 2
 ```powershell
@@ -81,7 +84,7 @@ Id                    : /subscriptions/resourceGroups/Building40/providers/Micro
 Type                  : Microsoft.Peering/peeringServices/prefixes
 ```
 
-Mendapatkan prefiks tertentu untuk layanan peering berdasarkan id sumber daya.
+Mendapatkan prefiks tertentu untuk layanan peering menurut id sumber daya.
 
 ### Contoh 3
 ```powershell
@@ -97,7 +100,7 @@ Id                    : /subscriptions/resourceGroups/Building40/providers/Micro
 Type                  : Microsoft.Peering/peeringServices/prefixes
 ```
 
-Mendapatkan prefiks tertentu untuk layanan peering berdasarkan id sumber daya.
+Mendapatkan prefiks tertentu untuk layanan peering menurut id sumber daya.
 
 ### Contoh 4
 ```powershell
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -Perluas
-Menampilkan kejadian prefiks layanan peering
+Menampilkan acara untuk prefiks layanan peering
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeeringServiceName
-Nama layanan peering. Gunakan New-AzPeeringService cmdlet untuk layanan peering baru atau Get-AzPeeringService bagi daftar.
+Nama layanan peering. Gunakan cmdlet New-AzPeeringService untuk layanan peering baru atau Get-AzPeeringService untuk daftar.
 
 ```yaml
 Type: System.String
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Buat atau gunakan nama grup sumber daya yang sudah ada.
+Membuat atau menggunakan nama grup sumber daya yang sudah ada.
 
 ```yaml
 Type: System.String
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

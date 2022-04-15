@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerBackendAddressPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerBackendAddressPool.md
-ms.openlocfilehash: f66fe351acb793dc27a032a260b262bfa5a1d2ad
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 7cbfb61552fcc4cb2b6c97a05edb49b72d613e31
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140185606"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142469393"
 ---
 # New-AzLoadBalancerBackendAddressPool
 
 ## SYNOPSIS
-Membuat pool alamat backend pada loadbalancer. 
+Membuat kumpulan alamat backend pada loadbalancer. 
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azloadbalancerbackendaddresspool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ New-AzLoadBalancerBackendAddressPool -LoadBalancer <PSLoadBalancer> -Name <Strin
 ```
 
 ## DESCRIPTION
-Membuat pool alamat backend pada loadbalancer. Memungkinkan spesifikasi array PSLoadBalancerBackendAddress. 
+Membuat kumpulan alamat backend pada loadbalancer. Memungkinkan untuk melakukan specifiying array PSLoadBalancerBackendAddress. 
 ## EXAMPLES
 
 ### Contoh 1
@@ -67,7 +70,7 @@ PS C:\> New-AzLoadBalancerBackendAddressPool -ResourceGroupName $resourceGroup -
 PS C:\> New-AzLoadBalancerBackendAddressPool -ResourceGroupName $resourceGroup -LoadBalancerName $loadBalancerName -Name $backendPool3 -LoadBalancerBackendAddress $ips
 ```
 
-### Contoh 5: Membuat konfigurasi pool alamat backend dengan antarmuka interface interface untuk penyeimbang muat
+### Contoh 5: Membuat konfigurasi kumpulan alamat backend dengan antarmuka tunnel untuk load balancer
 ```powershell
 ## create with Gateway LoadBalancer TunnelInterface configuration
 PS C:\> $tunnelInterface1 = New-AzLoadBalancerBackendAddressPoolTunnelInterfaceConfig -Protocol 'Vxlan' -Type 'Internal' -Port 2000 -Identifier 800
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Sumber daya penyeimbang muat.
+Sumber daya penyeimbang beban.
 
 ```yaml
 Type: PSLoadBalancer
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerName
-Nama penyeimbang muat.
+Nama penyeimbang beban.
 
 ```yaml
 Type: String
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama backend pool.
+Nama kolam backend.
 
 ```yaml
 Type: String
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.quota/get-azquot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Quota/help/Get-AzQuotaUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Quota/help/Get-AzQuotaUsage.md
-ms.openlocfilehash: 5fce43d0bf8b7f5233652bb5ea59f13dae56db6c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 588a10a2884f9b35087871179e475a46af282233
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140006894"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142484909"
 ---
 # Get-AzQuotaUsage
 
 ## SYNOPSIS
 Dapatkan penggunaan sumber daya saat ini.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.quota/get-azquotausage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Dapatkan penggunaan sumber daya saat ini.
 Get-AzQuotaUsage -Scope <String> [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzQuotaUsage -Name <String> -Scope <String> [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 Nama sumber daya untuk penyedia sumber daya tertentu.
 Misalnya:
 - Nama SKU untuk Microsoft.Compute
-- SKU atau TotalLowPriorityCores untuk Microsoft.MachineLearningServices For Microsoft.Network PublicIPAddresses.
+- SKU atau TotalLowPriorityCores untuk Microsoft.MachineLearningServices Untuk Microsoft.Network PublicIPAddresses.
 
 ```yaml
 Type: System.String
@@ -106,10 +109,10 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-URI sumber daya Azure target.
+Target URI sumber daya Azure.
 Misalnya, `/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/`.
-Ini adalah URI sumber daya Azure target untuk operasi GET Daftar.
-Jika ditambahkan `{resourceName}` setelah `/quotas`, itu adalah URI sumber daya Azure target dalam operasi DAPATKAN untuk sumber daya tertentu.
+Ini adalah URI sumber daya Azure target untuk operasi List GET.
+Jika ditambahkan `{resourceName}` setelah `/quotas`, maka ini adalah URI sumber daya Azure target dalam operasi GET untuk sumber daya tertentu.
 
 ```yaml
 Type: System.String
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

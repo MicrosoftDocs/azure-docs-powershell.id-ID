@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datadog/get-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Get-AzDatadogMonitorLinkedResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Get-AzDatadogMonitorLinkedResource.md
-ms.openlocfilehash: 9775b4222d0b3d97b98d82ebac9850eb1e02e21c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 4635197618cc5d86af7db53950e303f006e42b63
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140009364"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142471895"
 ---
 # Get-AzDatadogMonitorLinkedResource
 
 ## SYNOPSIS
-Daftar semua sumber daya Azure yang terkait ke organisasi Datadog yang sama sebagai sumber daya target.
+Cantumkan semua sumber daya Azure yang terkait dengan organisasi Datadog yang sama dengan sumber daya target.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datadog/get-azdatadogmonitorlinkedresource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzDatadogMonitorLinkedResource -Name <String> -ResourceGroupName <String> [-
 ```
 
 ## DESCRIPTION
-Daftar semua sumber daya Azure yang terkait ke organisasi Datadog yang sama sebagai sumber daya target.
+Cantumkan semua sumber daya Azure yang terkait dengan organisasi Datadog yang sama dengan sumber daya target.
 
 ## EXAMPLES
 
-### Contoh 1: Daftar semua sumber daya Azure yang terkait ke organisasi Datadog yang sama sebagai sumber daya target
+### Contoh 1: Mencantumkan semua sumber daya Azure yang terkait dengan organisasi Datadog yang sama dengan sumber daya target
 ```powershell
 PS C:\> Get-AzDatadogMonitorLinkedResource -ResourceGroupName azure-rg-Datadog -Name lucasDatadog
 
@@ -46,7 +49,7 @@ Id
 /SUBSCRIPTIONS/xxxxxxxxxxxxxx-xxxxxxx-xxxxxx/RESOURCEGROUPS/PROD-MUL-ACR-012774705865/PROVIDERS/MICROSOFT.Datadog/MONITORS/LIFTR-ACR2-E2560749186
 ```
 
-Perintah ini mencantumkan semua sumber daya Azure yang terkait ke organisasi Datadog yang sama sebagai sumber daya target.
+Perintah ini mencantumkan semua sumber daya Azure yang terkait dengan organisasi Datadog yang sama dengan sumber daya target.
 
 ## PARAMETERS
 
@@ -66,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Memantau nama sumber daya
+Pantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

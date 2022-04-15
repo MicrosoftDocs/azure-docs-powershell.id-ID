@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzManagementGroupDeploymentOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzManagementGroupDeploymentOperation.md
-ms.openlocfilehash: f4541176fd89758b361009c7e3d2ab1c11e5e254
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d5c1cbd95c2d6a7363455fa0909a00424315e1bc
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140391426"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142464101"
 ---
 # Get-AzManagementGroupDeploymentOperation
 
 ## SYNOPSIS
-Mendapatkan operasi penyebaran untuk manajemen penyebaran grup
+Dapatkan operasi penyebaran untuk penyebaran grup manajemen
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azmanagementgroupdeploymentoperation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,19 +35,19 @@ Get-AzManagementGroupDeploymentOperation -DeploymentObject <PSDeployment> [-Pre]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzManagementGroupDeploymentOperation** mencantumkan semua operasi yang menjadi bagian dari penyebaran grup manajemen untuk membantu Anda mengidentifikasi dan memberi informasi selengkapnya tentang operasi yang tepat yang gagal untuk penyebaran tertentu.
-Ini adalah informasi yang sama yang disediakan dalam detail penggunaan di portal.
+Cmdlet **Get-AzManagementGroupDeploymentOperation** mencantumkan semua operasi yang merupakan bagian dari penyebaran grup manajemen untuk membantu Anda mengidentifikasi dan memberikan informasi selengkapnya tentang operasi persis yang gagal untuk penggunaan tertentu.
+Ini adalah informasi yang sama yang disediakan dalam detail penyebaran di portal.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan operasi penyebaran dengan nama penyebaran
+### Contoh 1: Dapatkan operasi penyebaran yang diberi nama penyebaran
 ```
 PS C:\>Get-AzManagementGroupDeploymentOperation -ManagementGroupId myMG -DeploymentName Deploy01
 ```
 
-Dapatkan operasi penyebaran dengan nama "Deploy01" di grup manajemen "myMG".
+Mendapatkan operasi penyebaran dengan nama "Deploy01" di grup manajemen "myMG".
 
-### Contoh 2: Mendapatkan penyebaran dan mendapatkan operasi penyebaran
+### Contoh 2: Dapatkan penyebaran dan dapatkan operasi penyebarannya
 ```
 PS C:\>Get-AzManagementGroupDeployment -ManagementGroupId myMG -Name Deploy01 | Get-AzManagementGroupDeploymentOperation
 ```
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Saat diatur, cmdlet harus menggunakan versi API prari tamu ketika menentukan versi mana yang akan digunakan secara otomatis.
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

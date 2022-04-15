@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteFilter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteFilter.md
-ms.openlocfilehash: 57e80973a6de185e058102117bf64779d8fe6f02
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 26a336b060355dec5910d474f7c94df2cb2d5b68
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140386062"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142470293"
 ---
 # Get-AzRouteFilter
 
 ## SYNOPSIS
 Mendapatkan filter rute.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azroutefilter) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzRouteFilter [-Name <String>] [-ResourceGroupName <String>] [-DefaultProfil
  [<CommonParameters>]
 ```
 
-### Perluas
+### Memperluas
 ```
 Get-AzRouteFilter -Name <String> -ResourceGroupName <String> -ExpandResource <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -52,7 +55,7 @@ Rules             : []
 Peerings          : []
 ```
 
-Perintah ini mendapatkan filter rute bernama RouteFilter01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01.
+Perintah ini mendapatkan filter rute bernama RouteFilter01 milik grup sumber daya bernama ResourceGroup01.
 
 ### Contoh 2
 ```powershell
@@ -81,12 +84,12 @@ Rules             : []
 Peerings          : []
 ```
 
-Perintah ini akan mendapatkan semua filter rute yang dimulai dengan "RouteFilter".
+Perintah ini mendapatkan semua filter rute yang dimulai dengan "RouteFilter".
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -170,7 +173,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -184,9 +187,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzRouteFilter](./New-AzRouteFilter.md)
+[Filter AzRoute Baru](./New-AzRouteFilter.md)
 
-[Remove-AzRouteFilter](./Remove-AzRouteFilter.md)
+[Hapus-AzRouteFilter](./Remove-AzRouteFilter.md)
 
 [Set-AzRouteFilter](./Set-AzRouteFilter.md)
 

@@ -5,17 +5,20 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubEncryptionConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubEncryptionConfig.md
-ms.openlocfilehash: ce4780b5e9ad5c5e06e67a6b22f8a645b506e260
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 411238fe4f098c37a5f870a9c2e616832bd353e8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140372870"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142471193"
 ---
 # New-AzEventHubEncryptionConfig
 
 ## SYNOPSIS
-Membuat contoh objek dalam memori PSEncryptionConfigAttributes yang kemudian bisa diberikan sebagai input untuk New-AzEventHubNamespace dan Set-AzEventHubNamespace untuk mengaktifkan enkripsi 
+Membuat instans objek memori PSEncryptionConfigAttributes yang kemudian dapat diberikan sebagai input ke New-AzEventHubNamespace dan Set-AzEventHubNamespace untuk mengaktifkan enkripsi 
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/new-azeventhubencryptionconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzEventHubEncryptionConfig [-KeyName] <String> [-KeyVaultUri] <String> [-Key
 ```
 
 ## DESCRIPTION
-**New-AzEventHubEncryptionConfig** membuat objek dalam memori. Perintah ini tidak melakukan panggilan atau perubahan apa pun ke server. 
+**New-AzEventHubEncryptionConfig** membuat objek memori. Perintah ini tidak melakukan panggilan atau perubahan pada server. 
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ New-AzEventHubEncryptionConfig [-KeyName] <String> [-KeyVaultUri] <String> [-Key
 PS C:\> New-AzEventHubEncryptionConfig -KeyName key1 -KeyVaultUri https://myvaultname.vault.azure.net -UserAssignedIdentity /subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/MSIName2
 ```
 
-Lihat dokumen untuk New-AzEventHubNamespace dan Set-AzEventHubNamespace tentang cara menggunakan ini lebih lanjut
+Lihat dokumen untuk New-AzEventHubNamespace dan Set-AzEventHubNamespace tentang cara menggunakannya lebih lanjut
 
 ## PARAMETERS
 
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultUri
-Uri Kunci Vault
+Key Vault Uri
 
 ```yaml
 Type: System.String
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVersion
-Versi Utama
+Versi Kunci
 
 ```yaml
 Type: System.String
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

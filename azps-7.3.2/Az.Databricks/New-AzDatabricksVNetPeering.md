@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databricks/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/New-AzDatabricksVNetPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/New-AzDatabricksVNetPeering.md
-ms.openlocfilehash: 5eadda503e7c853918f9c6bff4737e99fe23f27d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6649f8e64feb8566517de8ebcd3090adfb62e5ce
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140403078"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142472057"
 ---
 # New-AzDatabricksVNetPeering
 
 ## SYNOPSIS
 Membuat vNet Peering untuk ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.databricks/new-azdatabricksvnetpeering) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Membuat vNet Peering untuk ruang kerja.
 
 ## EXAMPLES
 
-### Contoh 1: Create a vnet peering for databricks
+### Contoh 1: Membuat peering vnet untuk databricks
 ```powershell
 PS C:\> New-AzDatabricksVNetPeering -Name vnetpeering-t01 -WorkspaceName databricks-test01 -ResourceGroupName lucas-manual-test -RemoteVirtualNetworkId '/subscriptions/xxxxxx-xxxx-xxx-xxx/resourceGroups/azure-manual-test/providers/Microsoft.Network/virtualNetworks/vnet-test01'
 
@@ -41,12 +44,12 @@ Name            Type
 vnetpeering-t01
 ```
 
-Perintah ini membuat peering vnet untuk databricks.
+Perintah ini membuat peering vnet untuk trik data.
 
 ## PARAMETERS
 
 ### -AllowForwardedTraffic
-Apakah lalu lintas yang diteruskan dari VM di jaringan virtual lokal akan diperbolehkan/tidak diperbolehkan dalam jaringan virtual jarak jauh.
+Apakah lalu lintas yang diteruskan dari VM di jaringan virtual lokal akan diperbolehkan/tidak diizinkan dalam jaringan virtual jarak jauh.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowVirtualNetworkAccess
-Apakah VM dalam ruang jaringan virtual lokal akan bisa mengakses VM dalam ruang jaringan virtual jarak jauh.
+Apakah VM di ruang jaringan virtual lokal akan dapat mengakses VM dalam ruang jaringan virtual jarak jauh.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabricksAddressSpacePrefix
-Daftar blok alamat khusus untuk jaringan virtual ini dalam notasi CIDR.
+Daftar blok alamat yang dicadangkan untuk jaringan virtual ini dalam notasi CIDR.
 
 ```yaml
 Type: System.String[]
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabricksVirtualNetworkId
-Id jaringan virtual berdata.
+Id jaringan virtual databricks.
 
 ```yaml
 Type: System.String
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama ruang kerja vNet peering.
+Nama ruang kerja peering vNet.
 
 ```yaml
 Type: System.String
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemoteAddressSpacePrefix
-Daftar blok alamat khusus untuk jaringan virtual ini dalam notasi CIDR.
+Daftar blok alamat yang dicadangkan untuk jaringan virtual ini dalam notasi CIDR.
 
 ```yaml
 Type: System.String[]
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -242,9 +245,9 @@ Accept wildcard characters: False
 ```
 
 ### -UseRemoteGateway
-Jika gateway jarak jauh bisa digunakan pada jaringan virtual ini.
-Jika bendera diatur ke benar, dan allowGatewayTransit pada peering jarak jauh juga benar, jaringan virtual akan menggunakan gateway jaringan virtual jarak jauh untuk transit.
-Hanya satu peering yang dapat menyetel bendera ini ke true.
+Jika gateway jarak jauh bisa digunakan pada jaringan maya ini.
+Jika bendera diatur ke true, dan allowGatewayTransit pada peering jarak jauh juga benar, jaringan virtual akan menggunakan gateway jaringan virtual jarak jauh untuk transit.
+Hanya satu peering yang dapat mengatur bendera ini ke true.
 Bendera ini tidak bisa diatur jika jaringan virtual sudah memiliki gateway.
 
 ```yaml
@@ -259,7 +262,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja.
 
 ```yaml
@@ -275,7 +278,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -291,7 +294,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -306,7 +309,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/New-AzDnsForwardingRuleset.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/New-AzDnsForwardingRuleset.md
-ms.openlocfilehash: 37f13caff2320f0be340ecebf113e002019a8be8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1c2ec087cbffa16be3f786c169a816e93cfc494c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140394335"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142471445"
 ---
 # New-AzDnsForwardingRuleset
 
 ## SYNOPSIS
-Membuat atau memperbarui perangkat aturan penerusan DNS.
+Membuat atau memperbarui aturan penerusan DNS.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.dnsresolver/new-azdnsforwardingruleset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ New-AzDnsForwardingRuleset -Name <String> -ResourceGroupName <String> -Location 
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui perangkat aturan penerusan DNS.
+Membuat atau memperbarui aturan penerusan DNS.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat perangkat aturan penerusan DNS
+### Contoh 1: Membuat aturan penerusan DNS
 ```powershell
 New-AzDnsResolverOutboundEndpoint -DnsResolverName sampleResolver -Name sampleOutboundEndpoint -ResourceGroupName sampleRG -SubscriptionId ea40042d-63d8-4d02-9261-fb31450e6c67 -SubnetId "/subscriptions/0e5a46b1-de0b-4ec3-a5d7-dda908b4e076/resourceGroups/powershell-test-08b4e076/resourceGroups/sampleRG/providers/Microsoft.Network/virtualNetworks/psvirtualnetworkname16y71mjc/subnets/test-subnet" -Location westus2
 New-AzDnsForwardingRuleset -Name dnsForwardingRuleset -ResourceGroupName sampleRG -Location westus2 -DnsResolverOutboundEndpoint  @{id = "/subscriptions/ea40042d-63d8-4d02-9261-fb31450e6c64/resourceGroups/sampleRG/providers/Microsoft.Network/dnsResolvers/sampleResolver/outboundEndpoints/sampleOutboundEndpoint";}
@@ -43,7 +46,7 @@ Location Name                 Type                                    Etag
 westus2  dnsForwardingRuleset Microsoft.Network/dnsForwardingRulesets "04005592-0000-0800-0000-60e7ec170000"
 ```
 
-Cmdlet ini membuatet aturan penerusan DNS.
+Cmdlet ini membuat aturan penerusan DNS.
 
 ### Contoh 2: Membuat aturan penerusan DNS dengan tag
 ```powershell
@@ -92,8 +95,8 @@ Accept wildcard characters: False
 ```
 
 ### -DnsResolverOutboundEndpoint
-Referensi ke titik akhir keluar resolver DNS yang digunakan untuk merutekan kueri DNS yang cocok dengan aturan penerusan dalam ruleset ke server DNS target.
-Untuk membuat, lihat bagian CATATAN untuk properti DNSRESOLVEROUTBOUNDENDPOINT dan membuat tabel hash.
+Referensi ke titik akhir keluar pemecah DNS yang digunakan untuk merutekan kueri DNS yang cocok dengan aturan penerusan di ruleset ke server DNS target.
+Untuk membangun, lihat bagian CATATAN untuk properti DNSRESOLVEROUTBOUNDENDPOINT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DnsResolver.Models.Api20200401Preview.ISubResource[]
@@ -109,8 +112,8 @@ Accept wildcard characters: False
 
 ### -IfMatch
 ETag sumber daya.
-Menghilangkan nilai ini agar selalu menimpa sumber daya saat ini.
-Tentukan nilai ETag yang terakhir dilihat untuk mencegah secara tidak sengaja menimpa perubahan konklar apa pun.
+Hilangkan nilai ini untuk selalu menimpa sumber daya saat ini.
+Tentukan nilai ETag yang terakhir dilihat untuk mencegah timpa perubahan bersamaan secara tidak sengaja.
 
 ```yaml
 Type: System.String
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -IfNoneMatch
-Atur ke '*' untuk memungkinkan sumber daya baru dibuat, tetapi untuk mencegah pembaruan sumber daya yang sudah ada.
+Atur ke '*' untuk memperbolehkan sumber daya baru dibuat, tetapi untuk mencegah pembaruan sumber daya yang sudah ada.
 Nilai lain akan diabaikan.
 
 ```yaml
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi geo-location di mana sumber daya berada
+Lokasi geografis tempat sumber daya berada
 
 ```yaml
 Type: System.String
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -263,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -280,7 +283,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-DNSRESOLVEROUTBOUNDENDPOINT <ISubResource[]>: Referensi ke titik akhir keluar resolver DNS yang digunakan untuk merutekan kueri DNS yang cocok dengan aturan penerusan diet aturan ke server DNS target.
+DNSRESOLVEROUTBOUNDENDPOINT <ISubResource[]>: Referensi ke titik akhir keluar dns resolver yang digunakan untuk merutekan kueri DNS yang cocok dengan aturan penerusan di ruleset ke server DNS target.
   - `[Id <String>]`: ID Sumber Daya.
 
 ## RELATED LINKS

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Invoke-AzDataFactoryV2Pipeline.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Invoke-AzDataFactoryV2Pipeline.md
 ms.openlocfilehash: babeb25f148e3fdcdc332321c5f524155d05b957
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140465741"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142476935"
 ---
 # Invoke-AzDataFactoryV2Pipeline
 
 ## SYNOPSIS
-  Menjalankan pipeline untuk memulai proses untuknya.
+  Memanggil pipeline untuk memulai prosesnya.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/invoke-azdatafactoryv2pipeline) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/invoke-azdatafactoryv2pipeline) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,21 +53,21 @@ Invoke-AzDataFactoryV2Pipeline [-ResourceGroupName] <String> [-DataFactoryName] 
 ```
 
 ## DESCRIPTION
-Perintah **Invoke-AzDataFactoryV2Pipeline** memulai proses pada saluran yang ditentukan dan mengembalikan ID untuk proses tersebut. GUID ini dapat disampaikan ke **Get-AzDataFactoryV2PipelineRun** atau **Get-AzDataFactoryV2ActivityRun** untuk mendapatkan detail selengkapnya tentang proses ini.
+Perintah **Invoke-AzDataFactoryV2Pipeline** memulai proses pada pipeline tertentu dan mengembalikan ID untuk proses tersebut. GUID ini dapat diteruskan ke **Get-AzDataFactoryV2PipelineRun** atau **Get-AzDataFactoryV2ActivityRun** untuk mendapatkan detail lebih lanjut tentang proses ini.
 
 ## EXAMPLES
 
-### Contoh 1: Menjalankan pipeline untuk memulai proses
+### Contoh 1: Memanggil pipeline untuk memulai proses
 ```powershell
 PS C:\> Invoke-AzDataFactoryV2Pipeline -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -PipelineName "DPWikisample"
 867d9d9f-1efc-4fee-974d-d8e6320bfbcb
 ```
 
-Perintah ini memulai proses untuk saluran "DPWikisample" di pabrik "WikiADF".
+Perintah ini memulai proses untuk pipeline "DPWikisample" di pabrik "WikiADF".
 
 ### Contoh 2
 
-Menjalankan pipeline untuk memulai proses untuknya. (otomatisgenerated)
+Memanggil pipeline untuk memulai prosesnya. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsRecovery
-Bendera mode pemulihan. Jika mode pemulihan diatur ke true, saluran referensi yang ditentukan berjalan dan proses baru akan dikelompokkan di bawah groupId yang sama.
+Bendera mode pemulihan. Jika mode pemulihan diatur ke true, alur yang dirujuk yang ditentukan berjalan dan proses baru akan dikelompokkan di bawah groupId yang sama.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -Parameter
-Parameter untuk menjalankan pipeline.
+Parameter untuk proses pipeline.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParameterFile
-Nama file dengan parameter untuk menjalankan alur.
+Nama file dengan parameter untuk proses pipeline.
 
 ```yaml
 Type: System.String
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReferencePipelineRunId
-Pipeline menjalankan ID untuk dijalankan kembali. Jika ID jalankan ditentukan, parameter dari proses yang ditentukan akan digunakan untuk membuat jalankan baru.
+ID jalankan saluran untuk dijalankan ulang. Jika RUN ID ditentukan, parameter dari run yang ditentukan akan digunakan untuk membuat run baru.
 
 ```yaml
 Type: System.String
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartActivityName
-Dalam mode pemulihan, jalan ulang akan dimulai dari aktivitas ini. Jika tidak ditentukan, semua aktivitas akan berjalan.
+Dalam mode pemulihan, rerun akan dimulai dari aktivitas ini. Jika tidak ditentukan, semua aktivitas akan berjalan.
 
 ```yaml
 Type: System.String
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartFromFailure
-Mulai jalankan ulang dari bendera aktivitas yang gagal. Dalam mode pemulihan, jika ditentukan, jalan ulang akan dimulai dari aktivitas yang gagal.
+Mulai jalankan ulang dari bendera aktivitas yang gagal. Dalam mode pemulihan, jika ditentukan, tayangan ulang akan dimulai dari aktivitas yang gagal.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -242,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -272,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

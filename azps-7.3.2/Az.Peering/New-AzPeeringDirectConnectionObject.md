@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/new-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeeringDirectConnectionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeeringDirectConnectionObject.md
-ms.openlocfilehash: 99775766370d0fe029ef1bc2e729655ecc58fd64
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5b96d8517b5b63e268e3ad626199a7c511f6cd34
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140007161"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142485845"
 ---
 # New-AzPeeringDirectConnectionObject
 
 ## SYNOPSIS
-Membuat dalam memori PSObject untuk digunakan untuk membuat atau memodifikasi Peering.
+Membuat PSObject dalam memori yang akan digunakan untuk membuat atau mengubah Peering.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.peering/new-azpeeringdirectconnectionobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ New-AzPeeringDirectConnectionObject [-PeeringDBFacilityId] <Int32> [-MicrosoftPr
 ```
 
 ## DESCRIPTION
-Membuat di memori PSObject 
+Membuat PSObject dalam memori 
 
 ## EXAMPLES
 
@@ -85,7 +88,7 @@ SessionStateV4         :
 SessionStateV6         :
 ```
 
-Membuat koneksi peering langsung dengan penggunaan untuk layanan peering yang diaktifkan dan Alamat IP peer yang disediakan
+Membuat koneksi peering langsung dengan penggunaan untuk peering service enabled and peer provided IP Addresses
 
 ### Contoh 4
 ```powershell
@@ -98,12 +101,12 @@ ConnectionIdentifier   : 920f128a-c9d8-4514-a2e0-c533ab1a550c
 BandwidthInMbps        : 30000
 ```
 
-Buat koneksi peering langsung tanpa alamat IP sesi bgp. Peer-nya harus menetapkan alamat IP sebelum sesi bgp dapat dikonfigurasi.
+Buat koneksi peering langsung tanpa alamat IP sesi bgp. Peer harus mengatur alamat IP sebelum sesi bgp dapat dikonfigurasi.
 
 ## PARAMETERS
 
-### -BandwidthIn Mbps
-Bandwidth yang ditawarkan di lokasi ini dalam Mbps.
+### -BandwidthInMbps
+Bandwidth yang ditawarkan di lokasi ini di Mbps.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxPrefixesAdvertisedIPv4
-Maksimum yang diiklankan IPv4
+IPv4 maksimum yang diiklankan
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -MD5AuthenticationKey
-Tombol autentikasi MD5 untuk sesi.
+Kunci autentikasi MD5 untuk sesi.
 
 ```yaml
 Type: System.String
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeeringDBFacilityId
-Id fasilitas peering yang ditemukan pada https://peeringdb.com
+Fasilitas peering Id ditemukan pada https://peeringdb.com
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -253,11 +256,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

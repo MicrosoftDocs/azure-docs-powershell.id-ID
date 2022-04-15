@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDeployment.md
-ms.openlocfilehash: 0aab69073a1b37bc7dc99caba19df31d3508a6d3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: cb46d040be46aa3a67f4db2be5e5816806f15c86
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140381488"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142470581"
 ---
 # Get-AzIotHubDeployment
 
 ## SYNOPSIS
 Mencantumkan semua atau penyebaran IoT Edge tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzIotHubDeployment [-ResourceId] <String> [-Name <String>] [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Dapatkan detail penyebaran IoT Edge atau Daftar penyebaran IoT Edge dalam Hub IoT.
+Dapatkan detail penggunaan IoT Edge atau Penyebaran IoT Edge Daftar dalam IoT Hub.
 Lihat https://docs.microsoft.com/azure/iot-edge/module-deployment-monitoring untuk informasi selengkapnya.
 
 ## EXAMPLES
@@ -55,7 +58,7 @@ Dapatkan detail penyebaran IoT Edge.
 PS C:\> Get-AzIotHubDeployment -ResourceGroupName "myresourcegroup" -IotHubName "myiothub"
 ```
 
-Mencantumkan semua penyebaran IoT Edge dalam Hub IoT.
+Cantumkan semua penyebaran IoT Edge dalam IoT Hub.
 
 ## PARAMETERS
 
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

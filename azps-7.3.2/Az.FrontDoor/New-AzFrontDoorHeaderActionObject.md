@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorHeaderActionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorHeaderActionObject.md
-ms.openlocfilehash: 67d4d8b9a05808f9c93a1e47f0214101b2dce5de
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 31dafa04d155cfd89a7685e2e31b7fe40b582a40
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140000805"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142471265"
 ---
 # New-AzFrontDoorHeaderActionObject
 
 ## SYNOPSIS
 Membuat objek PSHeaderAction.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorheaderactionobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -HeaderActionType
-Tipe manipulasi mana yang diterapkan pada header.
+Tipe manipulasi mana yang diterapkan ke header.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSHeaderActionType
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -HeaderName
-Nama header yang akan diterapkan tindakan ini.
+Nama header tempat tindakan ini akan diterapkan.
 
 ```yaml
 Type: System.String
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -Value
-Nilai untuk memperbarui nama header yang diberikan.
+Nilai untuk memperbarui nama header tertentu dengan.
 Nilai ini tidak digunakan jika actionType adalah Delete.
 
 ```yaml
@@ -103,11 +106,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Register-AzWvdApplicationGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Register-AzWvdApplicationGroup.md
 ms.openlocfilehash: 91fb0250c64128b86ac97d3e1516968ffd13cb7a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140286565"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142475837"
 ---
 # Register-AzWvdApplicationGroup
 
 ## SYNOPSIS
-Daftarkan Windows aplikasi desktop virtual Anda.
+Daftarkan grup aplikasi desktop virtual Windows.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.desktopvirtualization/register-azwvdapplicationgroup) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/register-azwvdapplicationgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,11 +29,11 @@ Register-AzWvdApplicationGroup -ApplicationGroupPath <String> -ResourceGroupName
 ```
 
 ## DESCRIPTION
-Daftarkan Windows aplikasi desktop virtual Anda.
+Daftarkan grup aplikasi desktop virtual Windows.
 
 ## EXAMPLES
 
-### Contoh 1: Daftarkan Windows Grup Aplikasi Desktop Virtual
+### Contoh 1: Daftarkan Grup Aplikasi Desktop Virtual Windows
 ```powershell
 PS C:\> Register-AzWvdApplicationGroup -ResourceGroupName ResourceGroupName `
                                     -WorkspaceName WorkspaceName `
@@ -44,12 +44,12 @@ Location   Name                 Type
 eastus     WorkspaceName Microsoft.DesktopVirtualization/workspaces
 ```
 
-Perintah ini mendaftarkan Windows Aplikasi Desktop Virtual ke Ruang Kerja.
+Perintah ini mendaftarkan Grup Aplikasi Desktop Virtual Windows ke Ruang Kerja.
 
 ## PARAMETERS
 
 ### -ApplicationGroupPath
-ApplicationGroupPath Path
+Jalur ApplicationGroupPath
 
 ```yaml
 Type: System.String
@@ -108,7 +108,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama Ruang Kerja
 
 ```yaml
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzExpressRouteGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzExpressRouteGateway.md
-ms.openlocfilehash: 86ae1fac2ed79fa66e2de32acdb4d794bf991f8c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5dd949300b07e16c1049a5e3b434af65f10fdb7c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140372087"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142491210"
 ---
 # New-AzExpressRouteGateway
 
 ## SYNOPSIS
-Membuat Gateway ExpressRoute yang Dapat Disesuaikan.
+Membuat Gateway ExpressRoute yang Dapat Diskalakan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azexpressroutegateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,13 +45,13 @@ New-AzExpressRouteGateway -ResourceGroupName <String> -Name <String> -MinScaleUn
 
 ## DESCRIPTION
 
-New-AzExpressRouteGateway gateway ExpressRoute yang dapat disesuaikan. This is software defined connectivity for on premise to Azure inside the VirtualHub. 
+New-AzExpressRouteGateway membuat Gateway ExpressRoute yang dapat diskalakan. Ini adalah konektivitas yang ditentukan perangkat lunak untuk azure lokal di dalam VirtualHub. 
 
-Gateway ini dapat diskalakan berdasarkan unit skala yang ditentukan dalam cmdlet Set-AzExpressRouteGateway cmdlet. 
+Gateway ini bisa diskalakan berdasarkan unit skala yang ditentukan dalam cmdlet Set-AzExpressRouteGateway ini. 
 
-Koneksi disetel dari sirkuit ExpressRoute lokal ke gateway yang dapat disesuaikan.
+Koneksi disiapkan dari sirkuit ExpressRoute lokal ke gateway yang dapat diskalakan.
 
-ExpressRouteGateway akan berada di lokasi yang sama dengan VirtualHub yang direferensikan.
+ExpressRouteGateway akan berada di lokasi yang sama dengan VirtualHub yang dirujuk.
 
 ## EXAMPLES
 
@@ -71,11 +74,11 @@ Type                : Microsoft.Network/expressRouteGateways
 ProvisioningState   : Succeeded
 ```
 
-Opsi di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub di AS Barat dalam grup sumber daya "testRG" di Azure. Gateway ExpressRoute akan dibuat setelahnya di Virtual Hub dengan 2 unit skala.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual di AS Barat dalam grup sumber daya "testRG" di Azure. Gateway ExpressRoute akan dibuat setelahnya di Hub Virtual dengan 2 unit skala.
 
 ### Contoh 2
 
-Membuat Gateway ExpressRoute yang Dapat Disesuaikan. (otomatisgenerated)
+Membuat Gateway ExpressRoute yang Dapat Diskalakan. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -85,7 +88,7 @@ New-AzExpressRouteGateway -MaxScaleUnits <UInt32> -MinScaleUnits 2 -Name 'testEx
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable yang mewakili tag sumber daya.
+Sebuah hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualHub
-VirtualHub vpnGateway ini harus dikaitkan dengannya.
+VirtualHub VpnGateway ini perlu dikaitkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualHub
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualHubId
-Id VirtualHub yang digunakan oleh VpnGateway ini harus terkait.
+Id VirtualHub yang perlu dikaitkan dengan VpnGateway ini.
 
 ```yaml
 Type: System.String
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualHubName
-Id VirtualHub yang digunakan oleh VpnGateway ini harus terkait.
+Id VirtualHub yang perlu dikaitkan dengan VpnGateway ini.
 
 ```yaml
 Type: System.String
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -266,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
