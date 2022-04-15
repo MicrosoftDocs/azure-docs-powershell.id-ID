@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrStorageClassification.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrStorageClassification.md
-ms.openlocfilehash: 07c72674613f58e318db5b9671422fbe1d66acb0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 99ddff4f80d132f375b7d5b91a116826e63f8c44
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139999150"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142318078"
 ---
 # Get-AzRecoveryServicesAsrStorageClassification
 
 ## SYNOPSIS
-Dapatkan klasifikasi penyimpanan ASR yang tersedia(ditemukan) di vault Layanan Pemulihan.
+Mendapatkan klasifikasi penyimpanan ASR yang tersedia(ditemukan) dalam kubah Layanan Pemulihan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrstorageclassification) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzRecoveryServicesAsrStorageClassification -FriendlyName <String> -Fabric <A
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesAsrStorageClassification** mendapatkan detail klasifikasi penyimpanan ASR yang ditemukan di vault Layanan Pemulihan.
+Cmdlet **Get-AzRecoveryServicesAsrStorageClassification** mendapatkan detail klasifikasi penyimpanan ASR yang ditemukan dalam kubah Layanan Pemulihan.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Cmdlet **Get-AzRecoveryServicesAsrStorageClassification** mendapatkan detail kla
 PS C:\> $StorageClassifications = Get-AzRecoveryServicesAsrStorageClassification -Fabric $Fabric
 ```
 
-List the discovered storage classifications corresponding to the specified ASR fabric. 
+Cantumkan klasifikasi penyimpanan yang ditemukan yang terkait dengan kain ASR yang ditentukan. 
 
 ## PARAMETERS
 
@@ -68,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -Fabric
-Menentukan objek kain ASR. The cmdlet gets the details of discovered storage classifications corresponding to the specified ASR fabric. 
+Menentukan objek kain ASR. Cmdlet mendapatkan detail klasifikasi penyimpanan yang ditemukan terkait dengan kain ASR yang ditentukan. 
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRFabric
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -FriendlyName
-Menentukan nama objek klasifikasi penyimpanan yang mudah digunakan.
+Menentukan nama objek klasifikasi penyimpanan yang mudah didapatkan.
 
 ```yaml
 Type: System.String
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama objek klasifikasi penyimpanan yang akan dapatkan.
+Menentukan nama objek klasifikasi penyimpanan untuk didapatkan.
 
 ```yaml
 Type: System.String
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

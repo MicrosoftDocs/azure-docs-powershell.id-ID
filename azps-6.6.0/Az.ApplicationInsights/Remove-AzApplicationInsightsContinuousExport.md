@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Remove-AzApplicationInsightsContinuousExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Remove-AzApplicationInsightsContinuousExport.md
 ms.openlocfilehash: ac242cae15d153571801f71c0e77bc46c4ad7335
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140313253"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142326599"
 ---
 # Remove-AzApplicationInsightsContinuousExport
 
@@ -18,7 +18,7 @@ ms.locfileid: "140313253"
 Menghapus konfigurasi ekspor berkelanjutan dalam sumber daya wawasan aplikasi
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.applicationinsights/remove-azapplicationinsightscontinuousexport) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/remove-azapplicationinsightscontinuousexport) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,12 +53,12 @@ PS C:\> Remove-AzApplicationInsightsContinuousExport -ResourceGroupName "testgro
 True
 ```
 
-Menghapus konfigurasi ekspor berkelanjutan wawasan aplikasi dengan id ekspor "uGOqs0jQsyEs3IdQ83Q4QsNr4=" untuk sumber daya bernama "uji" di grup sumber daya "grupuji"
+Hapus konfigurasi ekspor berkelanjutan wawasan aplikasi dengan id ekspor "uGOoki0jQsyEs3IdQ83Q4QsNr4=" untuk sumber daya bernama "test" dalam grup sumber daya "testgroup"
 
 ## PARAMETERS
 
 ### -ApplicationInsightsComponent
-Application Insights Component Object.
+Objek Komponen Insights Aplikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApplicationInsights.Models.PSApplicationInsightsComponent
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExportId
-Application Insights Continuous Export ID.
+ID Ekspor Berkelanjutan Insights Aplikasi.
 
 ```yaml
 Type: System.String
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Aplikasi Insights Komponen.
+Nama Komponen Insights Aplikasi.
 
 ```yaml
 Type: System.String
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika ditentukan akan menuliskan true dalam kasus operasi berhasil. Parameter ini bersifat opsional. Nilai default adalah false.
+Jika ditentukan akan menulis true dalam kasus operasi berhasil. Parameter ini bersifat opsional. Nilai default adalah false.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Application Insights Component Resource Id.
+Id Sumber Daya Komponen Insights Aplikasi.
 
 ```yaml
 Type: System.String
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

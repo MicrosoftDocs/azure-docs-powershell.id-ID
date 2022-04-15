@@ -4,16 +4,16 @@ Module Name: Azs.Fabric.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 793bf4a4b5b9dfb448c5b2a1baf9d74af592a23e
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136576937"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142310209"
 ---
 # Get-AzsEdgeGateway
 
 ## SYNOPSIS
-Mengembalikan daftar semua gateway tepi di lokasi tertentu.
+Mengembalikan daftar semua gateway edge di lokasi tertentu.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-AzsEdgeGateway [-Location <String>] [-ResourceGroupName <String>] [-Filter <
  [-Top <Int32>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsEdgeGateway [-Name] <String> [-Location <String>] [-ResourceGroupName <String>] [<CommonParameters>]
 ```
@@ -34,7 +34,7 @@ Get-AzsEdgeGateway -ResourceId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Mengembalikan daftar semua gateway tepi di lokasi tertentu.
+Mengembalikan daftar semua gateway edge di lokasi tertentu.
 
 ## EXAMPLES
 
@@ -43,7 +43,7 @@ Mengembalikan daftar semua gateway tepi di lokasi tertentu.
 Get-AzsEdgeGateway
 ```
 
-Dapatkan daftar semua gateway tepi.
+Dapatkan daftar semua gateway edge.
 
 ### CONTOH 2
 ```
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

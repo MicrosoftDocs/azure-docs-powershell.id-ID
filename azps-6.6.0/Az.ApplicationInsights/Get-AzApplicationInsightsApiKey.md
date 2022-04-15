@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Get-AzApplicationInsightsApiKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Get-AzApplicationInsightsApiKey.md
 ms.openlocfilehash: 7cce77e9029438964ac2e63ef085d5d682addc8a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140288725"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142326725"
 ---
 # Get-AzApplicationInsightsApiKey
 
 ## SYNOPSIS
-Dapatkan tombol api wawasan aplikasi untuk sumber daya wawasan aplikasi
+Dapatkan kunci api wawasan aplikasi untuk sumber daya wawasan aplikasi
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.applicationinsights/get-azapplicationinsightsapikey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/get-azapplicationinsightsapikey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,11 +41,11 @@ Get-AzApplicationInsightsApiKey [-ResourceId] <String> [[-ApiKeyId] <String>]
 ```
 
 ## DESCRIPTION
-Dapatkan tombol api wawasan aplikasi untuk sumber daya wawasan aplikasi
+Dapatkan kunci api wawasan aplikasi untuk sumber daya wawasan aplikasi
 
 ## EXAMPLES
 
-### Contoh 1 Dapatkan Tombol Api untuk sumber daya wawasan aplikasi
+### Contoh 1 Dapatkan Kunci Api untuk sumber daya wawasan aplikasi
 ```
 PS C:\>  Get-AzApplicationInsightsApiKey -ResourceGroupName "testGroup" -Name "test"
 
@@ -56,7 +56,7 @@ Id                                   Description Permissions                    
 82549f39-f3ae-492e-8f94-f7aada75fa57 test3  ReadTelemetry                     Wed, 18 Oct 2017 22:30:23 GMT
 ```
 
-Dapatkan tombol api wawasan aplikasi untuk "uji" sumber daya dalam grup sumber daya "testGroup".
+Dapatkan kunci api wawasan aplikasi untuk sumber daya "uji" dalam grup sumber daya "testGroup".
 
 ### Contoh 2 Dapatkan kunci API tertentu untuk sumber daya wawasan aplikasi
 ```
@@ -69,12 +69,12 @@ Permissions : {ReadTelemetry}
 Description : test1
 ```
 
-Dapatkan kunci api wawasan aplikasi tertentu dengan id "dd173f38-4fd1-4c75-8af5-9 9c29aa0f867" untuk "uji" sumber daya di grup sumber daya "testGroup".
+Dapatkan kunci api wawasan aplikasi tertentu yang id adalah "dd173f38-4fd1-4c75-8af5-9 9c29aa0f867" untuk sumber daya "uji" dalam grup sumber daya "testGroup".
 
 ## PARAMETERS
 
 ### -ApiKeyId
-Application Insights Api Key Id.
+Id Kunci Api Insights Aplikasi.
 
 ```yaml
 Type: System.String
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationInsightsComponent
-Application Insights Component Object.
+Objek Komponen Insights Aplikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApplicationInsights.Models.PSApplicationInsightsComponent
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Aplikasi Insights Komponen.
+Nama Komponen Insights Aplikasi.
 
 ```yaml
 Type: System.String
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Application Insights Component Resource Id.
+Id Sumber Daya Komponen Insights Aplikasi.
 
 ```yaml
 Type: System.String
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

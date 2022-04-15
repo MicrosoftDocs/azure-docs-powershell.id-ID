@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrInMageAzureV2DiskInput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrInMageAzureV2DiskInput.md
-ms.openlocfilehash: 80e62be4277b6a651b32becee1c022735a224435
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: b10909ee1ec6f1fe185ef4c5f6d0316d7b02f13f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140006851"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142317947"
 ---
 # New-AzRecoveryServicesAsrInMageAzureV2DiskInput
 
 ## SYNOPSIS
-Membuat objek pemetaan disk untuk disk mesin virtual vMWare agar direplikasi.
+Membuat objek pemetaan disk agar disk mesin virtual vMWare dapat direplikasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesasrinmageazurev2diskinput) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Membuat objek pemetaan disk yang memetakan disk mesin virtual vMWare ke akun pen
 PS C:> New-AzRecoveryServicesAsrInMageAzureV2DiskInput -DiskId $diskId -LogStorageAccountId $logStorageAccountId -DiskType $diskType
 ```
 
-Buat objek pemetaan disk untuk disk mesin virtual vMWare agar direplikasi. Digunakan selama perlindungan yang diaktifkan untuk komputer vMWare.
+Buat objek pemetaan disk agar disk mesin virtual vMWare dapat direplikasi. Digunakan selama mengaktifkan perlindungan untuk mesin vMWare.
 
 ## PARAMETERS
 
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionSetId
-Menentukan Id sumber daya dari kumpulan enkripsi disk, untuk digunakan untuk enkripsi disk yang dikelola.
+Menentukan ID sumber daya kumpulan enkripsi disk, yang akan digunakan untuk enkripsi disk yang dikelola.
 
 ```yaml
 Type: System.String
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskId
-Tentukan DiskId dari disk yang sesuai dengan pemetaan ini.
+Tentukan DiskId diska yang terkait dengan pemetaan ini.
 
 ```yaml
 Type: System.String
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -146,11 +149,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
