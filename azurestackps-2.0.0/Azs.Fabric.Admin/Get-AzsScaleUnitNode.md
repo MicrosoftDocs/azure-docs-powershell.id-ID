@@ -3,12 +3,12 @@ external help file: ''
 Module Name: Azs.Fabric.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.fabric.admin/get-azsscaleunitnode
 schema: 2.0.0
-ms.openlocfilehash: 19b13e0b33f30422719d68ad9f7905841bbfda6493622626fb92b3ae3ab23123
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: d1534c7cfacbcc70c2fe822676d67142401f9ff9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417804"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142239500"
 ---
 # Get-AzsScaleUnitNode
 
@@ -23,7 +23,7 @@ Get-AzsScaleUnitNode [-Location <String>] [-ResourceGroupName <String>] [-Subscr
  [-Filter <String>] [-DefaultProfile <PSObject>] [-PassThru] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsScaleUnitNode -Name <String> [-Location <String>] [-ResourceGroupName <String>]
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [-PassThru] [<CommonParameters>]
@@ -47,7 +47,7 @@ PS C:\> Get-AzsScaleUnitNode
 A list of all scale unit nodes at a location.
 ```
 
-Dapatkan semua simpul unit skala di satu lokasi.
+Dapatkan semua simpul unit skala di suatu lokasi.
 
 ### Contoh 2:
 ```powershell
@@ -56,7 +56,7 @@ PS C:\> Get-AzsScaleUnitNode -Name "HC1n25r2231"
 A specific scale unit node at a location given a name.
 ```
 
-Dapatkan node unit skala tertentu pada lokasi yang diberi nama.
+Dapatkan simpul unit skala tertentu di lokasi yang diberi nama.
 
 ## PARAMETERS
 
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.IFabricAdminIdentity
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -203,29 +203,29 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IFabricAdminIdentity> : 
+INPUTOBJECT <IFabricAdminIdentity>: 
   - `[Drive <String>]`: Nama drive penyimpanan.
   - `[EdgeGateway <String>]`: Nama gateway tepi.
-  - `[EdgeGatewayPool <String>]`: Nama gateway pool tepi.
-  - `[FabricLocation <String>]`: Fabric location.
-  - `[FileShare <String>]`: Fabric file share name.
-  - `[IPPool <String>]`: NAMA ip pool.
+  - `[EdgeGatewayPool <String>]`: Nama kolam gateway tepi.
+  - `[FabricLocation <String>]`: Lokasi fabric.
+  - `[FileShare <String>]`: Nama berbagi file fabric.
+  - `[IPPool <String>]`: Nama kumpulan IP.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[InfraRole <String>]`: Nama peran infrastruktur.
-  - `[InfraRoleInstance <String>]`: Nama instans peran infrastruktur.
+  - `[InfraRoleInstance <String>]`: Nama contoh peran infrastruktur.
   - `[Location <String>]`: Lokasi sumber daya.
-  - `[LogicalNetwork <String>]`: Nama jaringan logis.
+  - `[LogicalNetwork <String>]`: Nama jaringan logika.
   - `[LogicalSubnet <String>]`: Nama subnet logika.
-  - `[MacAddressPool <String>]`: Nama grup alamat MAC.
+  - `[MacAddressPool <String>]`: Nama kumpulan alamat MAC.
   - `[Operation <String>]`: Pengidentifikasi operasi.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
   - `[ScaleUnit <String>]`: Nama unit skala.
-  - `[ScaleUnitNode <String>]`: Nama node unit skala.
+  - `[ScaleUnitNode <String>]`: Nama simpul unit skala.
   - `[SlbMuxInstance <String>]`: Nama instans MUX SLB.
   - `[StorageSubSystem <String>]`: Nama sistem penyimpanan.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
   - `[Volume <String>]`: Nama volume penyimpanan.
 
 ## RELATED LINKS

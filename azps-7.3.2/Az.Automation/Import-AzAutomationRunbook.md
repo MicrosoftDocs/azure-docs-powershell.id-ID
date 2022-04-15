@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/impor
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Import-AzAutomationRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Import-AzAutomationRunbook.md
-ms.openlocfilehash: fa21a8ca2b22d74ea3fd6e79744dcd0baeee7f7a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 58068693edfc62d48a282b4f62e064adb7254f50
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140373830"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142219447"
 ---
 # Import-AzAutomationRunbook
 
 ## SYNOPSIS
-Mengimpor buku jalankan Otomatisasi.
+Mengimpor runbook Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/import-azautomationrunbook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,23 +31,23 @@ Import-AzAutomationRunbook [-Path] <String> [-Description <String>] [-Name <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Import-AzAutomationRunbook** mengimpor runbook Azure Automation. Tentukan jalur ke file skrip wps_2 (.ps1) untuk diimpor ke runbooks wps_2 dan Alur Kerja wps_2, file (.graphrunbook) untuk runbooks grafis, atau file (.py) untuk python 2 runbooks. Untuk wps_2 runbooks Alur Kerja, skrip harus berisi satu wps_2 definisi Alur Kerja yang cocok dengan nama file.
+Cmdlet **Import-AzAutomationRunbook** mengimpor runbook Azure Automation. Tentukan jalur ke file skrip wps_2 (.ps1) untuk diimpor untuk runbook alur kerja wps_2 dan wps_2, file (.graphrunbook) untuk file runbook grafis, atau (.py) untuk runbook python 2. Untuk runbook Alur Kerja wps_2, skrip harus berisi definisi alur kerja wps_2 tunggal yang cocok dengan nama file.
 
 ## EXAMPLES
 
-### Contoh 1: Mengimpor buku jalankan dari file
+### Contoh 1: Mengimpor runbook dari file
 ```powershell
 PS C:\> $Tags = @{"tag01"="value01"; "tag02"="value02"}
 PS C:\> Import-AzAutomationRunbook -Path .\GraphicalRunbook06.graphrunbook -Tags $Tags -ResourceGroup "ResourceGroup01" -AutomationAccountName "AutomationAccount01" -Type GraphicalPowershell
 ```
 
-Perintah pertama menetapkan dua pasangan kunci/nilai ke $Tags nilai.
-Perintah kedua mengimpor buku jalankan grafis yang disebut GraphicalRunbook06 ke dalam akun Otomatisasi yang bernama AutomationAccount01.
+Perintah pertama menetapkan dua pasangan kunci/nilai ke variabel $Tags.
+Perintah kedua mengimpor runbook grafis yang disebut GraphicalRunbook06 ke akun Automation bernama AutomationAccount01.
 Perintah juga menetapkan tag yang disimpan di $Tags.
 
 ### Contoh 2
 
-Mengimpor buku jalankan Otomatisasi. (otomatisgenerated)
+Mengimpor runbook Otomatisasi. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 
@@ -56,7 +59,7 @@ Import-AzAutomationRunbook -AutomationAccountName 'AutomationAccount01' -Name 'C
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang menjadi tempat cmdlet mengimpor runbook.
+Menentukan nama akun Otomatisasi tempat cmdlet ini mengimpor runbook.
 
 ```yaml
 Type: System.String
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Menentukan deskripsi untuk buku jalankan yang diimpor.
+Menentukan deskripsi untuk runbook yang diimpor.
 
 ```yaml
 Type: System.String
@@ -100,7 +103,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 ps_force
 
 ```yaml
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogVerbose
-Menentukan apakah log runbook detail informasi.
+Menentukan apakah log runbook mendetail informasi.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -160,8 +163,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur file .ps1 .graphrunbook yang diimpor cmdlet ini.
+### -Jalur
+Menentukan jalur file .ps1 atau .graphrunbook yang diimpor cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -175,7 +178,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Published
+### -Dipublikasikan
 Menunjukkan bahwa cmdlet ini menerbitkan runbook yang diimpornya.
 
 ```yaml
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang akan diimpor cmdlet ini sebagai runbook.
+Menentukan nama grup sumber daya tempat cmdlet ini mengimpor runbook.
 
 ```yaml
 Type: System.String
@@ -205,7 +208,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Tag
+### -Tags
 Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
@@ -222,14 +225,14 @@ Accept wildcard characters: False
 
 ### -Tipe
 Menentukan tipe runbook yang dibuat cmdlet ini.
-Nilai valid adalah:
-- PowerShell
+Nilai yang valid adalah:
+- Powershell
 - GraphicalPowerShell
 - PowerShellWorkflow
 - GraphicalPowerShellWorkflow
 - Graph
-- Python2 Nilai Graph sudah tidak t fungsi.
-Ini sama dengan GraphicalPowerShellWorkflow.
+- Python2 Nilai Graph sudah tidak terpakai.
+Ini setara dengan GraphicalPowerShellWorkflow.
 
 ```yaml
 Type: System.String
@@ -245,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -276,7 +279,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -284,7 +287,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.IDictionary
 
-### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 

@@ -4,16 +4,16 @@ Module Name: Azs.Subscriptions
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 66e8e58b84c0ea1ca0e71999dad56bcf464d6a0f
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136577931"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142239607"
 ---
 # Get-AzsDelegatedProviderOffer
 
 ## SYNOPSIS
-Dapatkan daftar penawaran untuk penyedia yang didelegasikan tertentu.
+Dapatkan daftar penawaran untuk penyedia yang didelegasikan yang ditentukan.
 
 ## SYNTAX
 
@@ -22,14 +22,14 @@ Dapatkan daftar penawaran untuk penyedia yang didelegasikan tertentu.
 Get-AzsDelegatedProviderOffer -DelegatedProviderId <String> [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsDelegatedProviderOffer -OfferName <String> -DelegatedProviderId <String> [-Skip <Int32>] [-Top <Int32>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Dapatkan daftar penawaran untuk penyedia yang didelegasikan tertentu.
+Dapatkan daftar penawaran untuk penyedia yang didelegasikan yang ditentukan.
 
 ## EXAMPLES
 
@@ -38,7 +38,7 @@ Dapatkan daftar penawaran untuk penyedia yang didelegasikan tertentu.
 Get-AzsDelegatedProviderOffer -DelegatedProviderId 4b763321-23f5-4a45-a44d-9ccfdd705a3d | fl
 ```
 
-Dapatkan daftar penawaran untuk penyedia yang didelegasikan tertentu.
+Dapatkan daftar penawaran untuk penyedia yang didelegasikan yang ditentukan.
 
 ## PARAMETERS
 
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
