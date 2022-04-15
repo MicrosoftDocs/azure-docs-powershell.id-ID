@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Get-AzCognitiveServicesAccountCommitmentPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Get-AzCognitiveServicesAccountCommitmentPlan.md
-ms.openlocfilehash: 9f16bb854b54267acad97c2f124a4719afcee095
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 881c7ed8d2bb435902d76cc1bc0804d145addeb6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140386938"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141943449"
 ---
 # Get-AzCognitiveServicesAccountCommitmentPlan
 
 ## SYNOPSIS
-Dapatkan Rencana Komitmen dari akun Layanan Kognitif
+Dapatkan CommitmentPlan dari akun Cognitive Services
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cognitiveservices/get-azcognitiveservicesaccountcommitmentplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzCognitiveServicesAccountCommitmentPlan [-ResourceId] <String> [-DefaultPro
 ```
 
 ## DESCRIPTION
-Dapatkan Rencana Komitmen dari akun Layanan Kognitif
+Dapatkan CommitmentPlan dari akun Cognitive Services
 
 ## EXAMPLES
 
@@ -41,11 +44,11 @@ Dapatkan Rencana Komitmen dari akun Layanan Kognitif
 Get-AzCognitiveServicesAccountCommitmentPlan -ResourceGroupName cognitive-services-resource-group -AccountName resource-name
 ```
 
-Dapatkan Rencana Komitmen dari akun Layanan Kognitif
+Dapatkan CommitmentPlan dari akun Cognitive Services
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama Akun Layanan Kognitif.
 
 ```yaml
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

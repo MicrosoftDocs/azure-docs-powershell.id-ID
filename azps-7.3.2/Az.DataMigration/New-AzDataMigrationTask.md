@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/Ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationTask.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationTask.md
-ms.openlocfilehash: 802efd8d9562413f7ada151c1af53214e5aba678
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5c55fa64dbfbfe516a4416a260bca387a8ccfee9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140009511"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141939813"
 ---
 # New-AzDataMigrationTask
 
 ## SYNOPSIS
-Membuat dan memulai tugas migrasi data di Layanan Migrasi Database Azure.
+Membuat dan memulai tugas migrasi data di Azure Database Migration Service.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationtask) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ New-AzDataMigrationTask [-ResourceId] <String> -TaskType <TaskTypeEnum> -Name <S
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzDataMigrationTask membuat tugas migrasi data. Cmdlet ini berisi parameter untuk enumerator Tipe Tugas, Grup Sumber Daya Azure, nama Layanan Migrasi Database Azure terkait dan Project sebagai input. 
+Cmdlet New-AzDataMigrationTask membuat tugas migrasi data. Cmdlet ini mengambil parameter untuk enumerator Tipe Tugas, Azure Resource Group, nama Azure Database Migration Service terkait dan Project sebagai input. 
 
 ## EXAMPLES
 
@@ -48,12 +51,12 @@ Cmdlet New-AzDataMigrationTask membuat tugas migrasi data. Cmdlet ini berisi par
 PS C:\> New-AzDmsTask -TaskType MigrateSqlServerSqlDb -ResourceGroupName myResourceGroup -ServiceName TestService -ProjectName myDMSProject -TaskName MyMigrationTask -SourceConnection $sourceConnInfo -SourceCred $sourceCred -TargetConnection $targetConnInfo -TargetCred $targetCred -SelectedDatabase  $selectedDbs -MigrationValidation $validationTask
 ```
 
-Contoh skrip ini memperlihatkan cara membuat Tugas Migrasi Data baru yang bernama MyMigrationTask dalam proyek yang bernama myDMSProject dan layanan bernama TestService. 
+Skrip contoh ini memperlihatkan cara membuat Tugas Migrasi Data baru bernama MyMigrationTask dalam proyek bernama myDMSProject dan layanan bernama TestService. 
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Project Sumber Daya.
+Project Id Sumber Daya.
 
 ```yaml
 Type: System.String
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Nama Layanan Migrasi Database.
+nama Database Migration Service.
 
 ```yaml
 Type: System.String
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tunggu
-Apakah harus menunggu hingga tugas selesai. Jika bendera diatur, periksa setiap satu detik hingga tugas selesai dan kembali ke pengguna properti tugas tempat output atau kesalahan dapat diperiksa. 
+Apakah menunggu tugas selesai. Jika bendera diatur, periksa setiap satu detik hingga tugas selesai dan kembali ke pengguna properti tugas tempat output atau kesalahan dapat diperiksa. 
 
 
 ```yaml
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

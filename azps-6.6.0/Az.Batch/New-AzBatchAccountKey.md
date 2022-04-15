@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchAccountKey.md
 ms.openlocfilehash: 25ce70ad9063e3b6cf36c1a6c140a306be5b5c6b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140288041"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142090635"
 ---
 # New-AzBatchAccountKey
 
 ## SYNOPSIS
-Meregenerasi kunci akun Kumpulan.
+Meregenerasi kunci akun Batch.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/new-azbatchaccountkey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.batch/new-azbatchaccountkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,8 +29,8 @@ New-AzBatchAccountKey [-AccountName] <String> [-ResourceGroupName <String>] -Key
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzBatchAccountKey** meregenerasi kunci primer atau sekunder dari akun Azure Batch.
-Cmdlet mengembalikan objek **BatchAccountContext yang** memiliki properti **PrimaryAccountKey dan** **SecondaryAccountKey saat** ini.
+Cmdlet **New-AzBatchAccountKey** meregenerasi kunci utama atau sekunder akun Azure Batch.
+Cmdlet mengembalikan objek **BatchAccountContext** yang memiliki properti **PrimaryAccountKey** dan **SecondaryAccountKey** saat ini.
 
 ## EXAMPLES
 
@@ -48,12 +48,12 @@ Tags                         :
 TaskTenantUrl                : https://cmdletexample.westus.batch.azure.com
 ```
 
-Perintah ini meregenerasi kunci akun utama pada akun Kumpulan yang bernama pfuller.
+Perintah ini meregenerasi kunci akun utama di akun Batch bernama pfuller.
 
 ## PARAMETERS
 
-### -Nama Akun
-Menentukan nama akun Kumpulan di mana cmdlet meregenerasi kunci.
+### -AccountName
+Menentukan nama akun Batch tempat cmdlet ini meregenerasi kunci.
 
 ```yaml
 Type: System.String
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -83,8 +83,8 @@ Accept wildcard characters: False
 ```
 
 ### -KeyType
-Menentukan tipe kunci yang digenerasi cmdlet ini.
-Nilai valid adalah:
+Menentukan tipe kunci yang diregenerasi cmdlet ini.
+Nilai yang valid adalah:
 - Utama
 - Sekunder
 
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan grup sumber daya akun di mana cmdlet meregenerasi kunci.
+Menentukan grup sumber daya akun di mana cmdlet ini meregenerasi kunci.
 
 ```yaml
 Type: System.String
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -133,4 +133,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzBatchAccountKey](./Get-AzBatchAccountKey.md)
 
-[Cmdlet Kumpulan Azure](/powershell/module/Az.Batch/)
+[Cmdlet Azure Batch](/powershell/module/Az.Batch/)

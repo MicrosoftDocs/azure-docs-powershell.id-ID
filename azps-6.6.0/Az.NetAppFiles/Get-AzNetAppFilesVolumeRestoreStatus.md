@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesVolumeRestoreStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesVolumeRestoreStatus.md
 ms.openlocfilehash: edcf9ca208f4dc524668513f63ba37ec5d2c089e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140332295"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142048385"
 ---
 # Get-AzNetAppFilesVolumeRestoreStatus
 
@@ -18,7 +18,7 @@ ms.locfileid: "140332295"
 Dapatkan status pemulihan volume
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.netappfiles/get-aznetappfilesvolumerestorestatus) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/get-aznetappfilesvolumerestorestatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ Get-AzNetAppFilesVolumeRestoreStatus -InputObject <PSNetAppFilesVolume>
 ```
 
 ## DESCRIPTION
-Cmd **Get-AzNetAppFilesVolumeRestoreStatus** Cmd mendapatkan status pemulihan dari cadangan volume
+CmdLet **Get-AzNetAppFilesVolumeRestoreStatus** mendapatkan status pemulihan dari cadangan volume
 
 ## EXAMPLES
 
@@ -56,11 +56,11 @@ Cmd **Get-AzNetAppFilesVolumeRestoreStatus** Cmd mendapatkan status pemulihan da
 PS C:\> Get-AzNetAppFilesVolumeRestoreStatus -ResourceGroupName MyGroup -AccountName MyAccount -PoolName MyPool -Name MyVolume
 ```
 
-Perintah ini mendapatkan status pemulihan dari pencadangan volume bernama "MyVolume".
+Perintah ini mendapatkan status pemulihan dari cadangan volume bernama "MyVolume".
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun ANF
 
 ```yaml
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolName
-Nama pool ANF
+Nama kumpulan ANF
 
 ```yaml
 Type: System.String
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolObject
-Objek pool berisi volume untuk mengembalikan status pemulihan untuk
+Objek pool yang berisi volume untuk mengembalikan status pemulihan untuk
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesPool
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

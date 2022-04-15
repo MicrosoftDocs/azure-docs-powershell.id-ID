@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Set-AzNetAppFilesAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Set-AzNetAppFilesAccount.md
 ms.openlocfilehash: c1f4885dc9f8e9c1e6372ef8fa76c7430183b6c7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140332259"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141954717"
 ---
 # Set-AzNetAppFilesAccount
 
 ## SYNOPSIS
-Memperbarui akun Azure NetApp Files (ANF) dengan kumpulan data baru. Berguna untuk penghapusan direktori aktif yang terkait.
+Memperbarui akun Azure NetApp Files (ANF) dengan kumpulan data baru. Berguna untuk penghapusan direktori aktif terkait.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.netappfiles/set-aznetappfilesaccount) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/set-aznetappfilesaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Cmdlet **Set-AzNetAppFilesAccount** mengubah akun ANF.
 
 ## EXAMPLES
 
-### Contoh 1 : Mengubah akun ANF
+### Contoh 1 : Memodifikasi akun ANF
 ```
 PS C:\>Set-AzNetAppFilesAccount -ResourceGroupName "MyRG" -l "westus2" -Name "MyAnfAccount"
 
@@ -61,12 +61,12 @@ ActiveDirectories : {}
 ProvisioningState : Succeeded
 ```
 
-Perintah ini menjalankan pembaruan pada akun tertentu. Ketiadaan direktori aktif berarti direktori aktif akan dihapus dari akun tersebut.
+Perintah ini melakukan pembaruan pada akun tertentu. Tidak adanya direktori aktif berarti direktori tersebut akan dihapus dari akun.
 
 ## PARAMETERS
 
 ### -ActiveDirectory
-Larik hashtable yang mewakili direktori aktif
+Array hashtable yang mewakili direktori aktif
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesActiveDirectory[]
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable yang mewakili tag sumber daya
+Sebuah hashtable yang mewakili tag sumber daya
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

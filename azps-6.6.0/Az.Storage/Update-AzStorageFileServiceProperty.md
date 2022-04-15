@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzStorageFileServiceProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzStorageFileServiceProperty.md
 ms.openlocfilehash: 2076ee9819579ce100f1bf45e2ad79eebc7d572c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140243485"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141946491"
 ---
 # Update-AzStorageFileServiceProperty
 
@@ -18,11 +18,11 @@ ms.locfileid: "140243485"
 Mengubah properti layanan untuk layanan Azure Storage File.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/update-azstoragefileserviceproperty) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/update-azstoragefileserviceproperty) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Nama Akun (Default)
+### AccountName (Default)
 ```
 Update-AzStorageFileServiceProperty [-ResourceGroupName] <String> [-StorageAccountName] <String>
  [-EnableShareDeleteRetentionPolicy <Boolean>] [-ShareRetentionDays <Int32>] [-EnableSmbMultichannel <Boolean>]
@@ -50,11 +50,11 @@ Update-AzStorageFileServiceProperty [-ResourceId] <String> [-EnableShareDeleteRe
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzStorageFileServiceProperty** mengubah properti layanan untuk layanan Azure Storage File.
+Cmdlet **Update-AzStorageFileServiceProperty** memodifikasi properti layanan untuk layanan File Azure Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Aktifkan File share softdelete
+### Contoh 1: Aktifkan File berbagi softdelete
 ```powershell
 PS C:\> Update-AzStorageFileServiceProperty -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount" -EnableShareDeleteRetentionPolicy $true -ShareRetentionDays 5
 
@@ -69,9 +69,9 @@ ProtocolSettings.Smb.KerberosTicketEncryption :
 ProtocolSettings.Smb.ChannelEncryption        :
 ```
 
-Perintah ini mengaktifkan hapus softdelete berbagi File dengan hari penyimpanan sebagai 5
+Perintah ini mengaktifkan penghapusan softdelete berbagi file dengan hari penyimpanan sebagai 5
 
-### Contoh 2: Mengaktifkan Smb Multichannel
+### Contoh 2: Enable Smb Multichannel
 ```powershell
 PS C:\> Update-AzStorageFileServiceProperty -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount" -EnableSmbMultichannel $true
 
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableShareDeleteRetentionPolicy
-Aktifkan Berbagi Kebijakan Penyimpanan Hapus untuk akun penyimpanan dengan mengatur ke $true, nonaktifkan berbagi Hapus Kebijakan Penyimpanan dengan mengatur ke $false.
+Aktifkan Kebijakan Penyimpanan Penghapusan berbagi untuk akun penyimpanan dengan diatur ke $true, nonaktifkan bagikan Kebijakan Penyimpanan Hapus dengan diatur ke $false.
 
 ```yaml
 Type: System.Boolean
@@ -162,8 +162,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -EnableSmbMulti channel
-Aktifkan Multichannel dengan mengatur ke $true, nonaktifkan Multichannel dengan mengatur ke $false. Berlaku untuk Premium FileStorage saja.
+### -EnableSmbMultichannel
+Aktifkan Multisaluran dengan diatur ke $true, nonaktifkan Multisaluran dengan diatur ke $false. Berlaku untuk Premium FileStorage saja.
 
 ```yaml
 Type: System.Boolean
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Memasukkan id Storage sumber daya akun, atau Id Sumber Daya properti layanan File.
+Masukkan Id Sumber Daya akun Storage, atau Properti layanan File Id Sumber Daya.
 
 ```yaml
 Type: System.String
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 
 ### -ShareRetentionDays
 Mengatur jumlah hari penyimpanan untuk berbagi DeleteRetentionPolicy.
-Nilai hanya boleh diatur ketika mengaktifkan berbagi Kebijakan Penyimpanan Penghapusan.
+Nilai seharusnya hanya diatur ketika mengaktifkan Berbagi Kebijakan Penyimpanan Penghapusan.
 
 ```yaml
 Type: System.Int32
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -SmbChannelEncryption
-Mendapatkan atau mengatur enkripsi saluran SMB yang didukung oleh server. Nilai valid adalah AES-128-CCM, AES-128-GCM, AES-256-GCM.
+Mendapatkan atau mengatur enkripsi saluran SMB yang didukung oleh server. Nilai yang valid adalah AES-128-CCM, AES-128-GCM, AES-256-GCM.
 
 ```yaml
 Type: System.String[]
@@ -272,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### -SmbProtocolVersion
-Mendapatkan atau mengatur versi protokol SMB yang didukung oleh server. Nilai valid adalah SMB2.1, SMB3.0, SMB3.1.1.
+Mendapatkan atau mengatur versi protokol SMB yang didukung oleh server. Nilai yang valid adalah SMB2.1, SMB3.0, SMB3.1.1.
 
 ```yaml
 Type: System.String[]
@@ -288,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage objek akun
+objek akun Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -303,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Storage Akun.
+Storage Nama Akun.
 
 ```yaml
 Type: System.String
@@ -318,7 +318,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -334,7 +334,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -349,7 +349,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

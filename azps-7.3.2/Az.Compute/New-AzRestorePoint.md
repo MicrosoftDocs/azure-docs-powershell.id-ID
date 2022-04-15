@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azre
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzRestorePoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzRestorePoint.md
-ms.openlocfilehash: 93a2388e128e529f45f6ae4e74118ba62127bb95
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 04cc06e319f5c67a0e1adab3ee7c33bb3bba739f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140001566"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141943089"
 ---
 # New-AzRestorePoint
 
 ## SYNOPSIS
 Cmdlet ini dapat membuat Titik Pemulihan Baru
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azrestorepoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisksToExclude
-Daftar id sumber daya disk yang ingin dikecualikan oleh pelanggan dari titik pemulihan. Jika tidak ada disk yang ditentukan, semua disk akan disertakan.
+Daftar id sumber daya disk yang ingin dikecualikan pelanggan dari titik pemulihan. Jika tidak ada disk yang ditentukan, semua disk akan disertakan.
 
 ```yaml
 Type: String[]
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestorePointCollectionName
-Pulihkan Nama Kumpulan Poin
+Nama Koleksi Titik Pemulihan
 
 ```yaml
 Type: String
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

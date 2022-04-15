@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/Get-AzImportExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/Get-AzImportExport.md
 ms.openlocfilehash: 781bacd6854b282c9c07a54fe313507d259f7811
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140254141"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141955509"
 ---
 # Get-AzImportExport
 
@@ -18,7 +18,7 @@ ms.locfileid: "140254141"
 Mendapatkan informasi tentang pekerjaan yang sudah ada.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.importexport/get-azimportexport) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.importexport/get-azimportexport) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzImportExport [-SubscriptionId <String[]>] [-Filter <String>] [-Top <Int32>
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzImportExport -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-AcceptLanguage <String>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -51,7 +51,7 @@ Mendapatkan informasi tentang pekerjaan yang sudah ada.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan pekerjaan ImportExport dengan konteks default
+### Contoh 1: Dapatkan pekerjaan ImportExport dengan konteks default
 ```powershell
 PS C:\> Get-AzImportExport
 Location Name     Type
@@ -61,7 +61,7 @@ East US  test-job Microsoft.ImportExport/jobs
 
 Cmdlet ini mendapatkan pekerjaan ImportExport dengan konteks default.
 
-### Contoh 2: Mendapatkan pekerjaan ImportExport berdasarkan grup sumber daya dan nama pekerjaan
+### Contoh 2: Dapatkan pekerjaan ImportExport menurut grup sumber daya dan nama pekerjaan
 ```powershell
 PS C:\> Get-AzImportExport -Name test-job -ResourceGroupName ImportTestRG
 Location Name     Type
@@ -81,7 +81,7 @@ East US  test-job Microsoft.ImportExport/jobs
 
 Cmdlet ini mencantumkan semua pekerjaan ImportExport dalam grup sumber daya tertentu.
 
-### Contoh 4: Dapatkan pekerjaan ImportExport berdasarkan identitas
+### Contoh 4: Dapatkan pekerjaan ImportExport menurut identitas
 ```powershell
 PS C:\> $Id = "/subscriptions/<SubscriptionId>/resourceGroups/ImportTestRG/providers/Microsoft.ImportExport/jobs/test-job"
 PS C:\> Get-AzImportExport -InputObject $Id
@@ -90,12 +90,12 @@ Location Name     Type
 East US  test-job Microsoft.ImportExport/jobs
 ```
 
-Daftar cmdlet ini mendapatkan pekerjaan ImportExport berdasarkan identitas.
+Daftar cmdlet ini mendapatkan pekerjaan ImportExport menurut identitas.
 
 ## PARAMETERS
 
 ### -AcceptLanguage
-Menentukan bahasa pilihan untuk respons tersebut.
+Menentukan bahasa pilihan untuk respons.
 
 ```yaml
 Type: System.String
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Dapat digunakan untuk membatasi hasil dengan kondisi tertentu.
+Dapat digunakan untuk membatasi hasil ke kondisi tertentu.
 
 ```yaml
 Type: System.String
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ImportExport.Models.IImportExportIdentity
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-Sebuah nilai bilangan bulat yang menentukan berapa banyak pekerjaan yang harus dikembalikan.
+Nilai bilangan bulat yang menentukan berapa banyak pekerjaan yang paling banyak harus dikembalikan.
 Nilai tidak boleh melebihi 100.
 
 ```yaml
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

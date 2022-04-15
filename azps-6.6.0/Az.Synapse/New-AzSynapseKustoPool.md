@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseKustoPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseKustoPool.md
 ms.openlocfilehash: 0af2b9261185983c84754396a93bdb906e5e098b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140095427"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141945699"
 ---
 # New-AzSynapseKustoPool
 
 ## SYNOPSIS
-Buat atau perbarui kusto pool.
+Membuat atau memperbarui kumpulan Kusto.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/new-azsynapsekustopool) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapsekustopool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,11 +31,11 @@ New-AzSynapseKustoPool -Name <String> -ResourceGroupName <String> -WorkspaceName
 ```
 
 ## DESCRIPTION
-Buat atau perbarui kusto pool.
+Membuat atau memperbarui kumpulan Kusto.
 
 ## EXAMPLES
 
-### Contoh 1: Create a new Kusto pool
+### Contoh 1: Membuat kumpulan Kusto baru
 ```powershell
 PS C:\> New-AzSynapseKustoPool -ResourceGroupName testrg -WorkspaceName testws -Name testnewkustopool -Location 'East US' -SkuName "Storage optimized" -SkuSize Medium
 
@@ -44,7 +44,7 @@ Location  Name                    Type                                    Etag
 East US 2 testws/testnewkustopool Microsoft.Synapse/workspaces/kustoPools 
 ```
 
-Perintah di atas membuat kolam Kusto baru bernama "testnewkustopool" di ruang kerja "testws".
+Perintah di atas membuat kumpulan Kusto baru bernama "testnewkustopool" di ruang kerja "testws".
 
 ## PARAMETERS
 
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableStreamingIngest
-Nilai boolean yang menunjukkan jika streaming yang paling aktif.
+Nilai boolean yang menunjukkan jika penyetelan streaming diaktifkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -109,9 +109,9 @@ Accept wildcard characters: False
 ```
 
 ### -IfMatch
-ETag Pool Kusto.
-Mit this value to always overwrite the current Kusto Pool.
-Tentukan nilai ETag yang terakhir dilihat untuk mencegah secara tidak sengaja menimpa perubahan bersama.
+ETag Kusto Pool.
+Hilangkan nilai ini untuk selalu menimpa Kumpulan Kusto saat ini.
+Tentukan nilai ETag yang terakhir terlihat untuk mencegah timpa perubahan bersamaan secara tidak sengaja.
 
 ```yaml
 Type: System.String
@@ -126,8 +126,8 @@ Accept wildcard characters: False
 ```
 
 ### -IfNoneMatch
-Atur ke '*' untuk memperbolehkan Kusto Pool baru dibuat, tetapi untuk mencegah pembaruan Kusto Pool yang sudah ada.
-Nilai lainnya akan menghasilkan respons Gagal Pra-Kondisi 412.
+Atur ke '*' untuk mengizinkan Kusto Pool baru dibuat, tetapi untuk mencegah pembaruan Kusto Pool yang sudah ada.
+Nilai lain akan menghasilkan respons Gagal Pra-kondisi 412.
 
 ```yaml
 Type: System.String
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi geo-location di mana sumber daya berada
+Lokasi geografis tempat sumber daya berada
 
 ```yaml
 Type: System.String
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama pool Kusto.
+Nama kumpulan Kusto.
 
 ```yaml
 Type: System.String
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -OptimizedAutoscaleIsEnabled
-Nilai boolean yang mengindikasikan apakah fitur skala otomatis yang dioptimalkan diaktifkan atau tidak.
+Nilai boolean yang menunjukkan apakah fitur skala otomatis yang dioptimalkan diaktifkan atau tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -OptimizedAutoscaleMaximum
-Jumlah maksimum yang diperbolehkan.
+Jumlah instans maksimum yang diperbolehkan.
 
 ```yaml
 Type: System.Int32
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -292,7 +292,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SkuSize
+### -Skusize
 Ukuran SKU.
 
 ```yaml
@@ -337,7 +337,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja
 
 ```yaml
@@ -353,7 +353,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -369,7 +369,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -384,7 +384,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
