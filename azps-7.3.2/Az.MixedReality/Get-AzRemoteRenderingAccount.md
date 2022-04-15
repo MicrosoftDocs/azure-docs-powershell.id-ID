@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mixedreality/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/Get-AzRemoteRenderingAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/Get-AzRemoteRenderingAccount.md
-ms.openlocfilehash: 80b7c004e92250fc7ad66fbb86faf96b00aae922
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ae1bb2fce4a2885336b692ae3fa27b1744a48284
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140008244"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142345895"
 ---
 # Get-AzRemoteRenderingAccount
 
 ## SYNOPSIS
-Dapatkan akun penyajian jarak jauh
+Dapatkan Akun Remote Rendering
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.mixedreality/get-azremoterenderingaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzRemoteRenderingAccount -ResourceId <String>
 ```
 
 ## DESCRIPTION
-Dapatkan atau  list Akun Penyajian Jarak Jauh di Grup Langganan dan Sumber Daya tertentu.
+Dapatkan atau cantumkan Akun Remote Rendering dalam Grup Langganan dan Sumber Daya tertentu.
 
 ## EXAMPLES
 
@@ -77,7 +80,7 @@ Name                : foobar
 Type                : Microsoft.MixedReality/RemoteRenderingAccounts
 ```
 
-List all Remote Render Account in Resource Group "rg1". 
+Cantumkan semua Akun Remote Rendering di Grup Sumber Daya "rg1". 
 
 ### Contoh 2
 ```powershell
@@ -94,7 +97,7 @@ Name                : example
 Type                : Microsoft.MixedReality/RemoteRenderingAccounts
 ```
 
-Dapatkan "example" Akun Penyajian Jarak Jauh dalam Resource Group "rg1". 
+Dapatkan "contoh" Akun Remote Rendering di Grup Sumber Daya "rg1". 
 
 ## PARAMETERS
 
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama akun penyajian jarak jauh.
+Remote Rendering Nama Akun.
 
 ```yaml
 Type: String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID Sumber Daya dari Akun Penyajian Jarak Jauh.
+ID sumber daya akun Remote Rendering.
 
 ```yaml
 Type: String
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

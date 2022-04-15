@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmApplicationGatewayHttpListenerCustomError.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmApplicationGatewayHttpListenerCustomError.md
-ms.openlocfilehash: f257ddceb8a0ee0a93e9a362e08d1b0da10280d100ec2cd99a99c733a669e6d5
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 89e323bd8e8dedbaa3c7716a6c10119a6fb69365
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140867276"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142356078"
 ---
 # Get-AzureRmApplicationGatewayHttpListenerCustomError
 
@@ -28,23 +28,23 @@ Get-AzureRmApplicationGatewayHttpListenerCustomError [-StatusCode <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmApplicationGatewayCustomError** mendapatkan kesalahan kustom dari http pendengar gateway aplikasi.
+Cmdlet **Get-AzureRmApplicationGatewayCustomError** mendapatkan kesalahan kustom dari pendengar http gateway aplikasi.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan kesalahan kustom pada pendengar http
+### Contoh 1: Mendapatkan kesalahan kustom di pendengar http
 ```powershell
 PS C:\> $ce = Get-AzureRmApplicationGatewayCustomError -HttpListener $listener01 -StatusCode HttpStatus502
 ```
 
 Perintah ini mendapatkan dan mengembalikan kesalahan kustom kode status http 502 dari pendengar http $listener 01.
 
-### Contoh 2: Mendapatkan daftar semua kesalahan kustom pada pendengar http
+### Contoh 2: Mendapatkan daftar semua kesalahan kustom di pendengar http
 ```powershell
 PS C:\> $ces = Get-AzureRmApplicationGatewayCustomError -HttpListener $listener01
 ```
 
-Perintah ini akan mendapatkan dan mengembalikan daftar semua kesalahan kustom dari pendengar http $listener 01.
+Perintah ini mendapatkan dan mengembalikan daftar semua kesalahan kustom dari pendengar http $listener 01.
 
 ## PARAMETERS
 
@@ -63,8 +63,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpListener
-Gateway Aplikasi http Pendengar
+### -HttpListener
+Pendengar Http Application Gateway
 
 ```yaml
 Type: PSApplicationGatewayHttpListener
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

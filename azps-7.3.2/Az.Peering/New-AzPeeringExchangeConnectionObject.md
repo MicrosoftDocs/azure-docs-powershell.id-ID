@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/new-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeeringExchangeConnectionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeeringExchangeConnectionObject.md
-ms.openlocfilehash: 2e115f214aafd12958ad6460c42a01a334c0a659
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6201fcd68bddeeac8a745ec923cc428680aae14c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140007154"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142370051"
 ---
 # New-AzPeeringExchangeConnectionObject
 
 ## SYNOPSIS
-Membuat dalam memori PSObject untuk digunakan untuk membuat atau memodifikasi Peering.
+Membuat PSObject dalam memori yang akan digunakan untuk membuat atau mengubah Peering.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.peering/new-azpeeringexchangeconnectionobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ New-AzPeeringExchangeConnectionObject [-PeeringDBFacilityId] <Int32> -PeerSessio
 ```
 
 ## DESCRIPTION
-Membuat di memori PSObject 
+Membuat PSObject dalam memori 
 
 ## EXAMPLES
 
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxPrefixesAdvertisedIPv4
-Maksimum yang diiklankan IPv4
+IPv4 maksimum yang diiklankan
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -MD5AuthenticationKey
-Tombol autentikasi MD5 untuk sesi.
+Kunci autentikasi MD5 untuk sesi.
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeeringDBFacilityId
-Id fasilitas peering yang ditemukan pada https://peeringdb.com
+Fasilitas peering Id ditemukan pada https://peeringdb.com
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -165,11 +168,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Update-AzOperationalInsightsWorkspaceSharedKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Update-AzOperationalInsightsWorkspaceSharedKey.md
-ms.openlocfilehash: cf93d64a816fc690c2e589967b6ef630b65ea5b3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0853bdf9cc8aa5430ec9d769710377c4be39887e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140371583"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142370177"
 ---
 # Update-AzOperationalInsightsWorkspaceSharedKey
 
 ## SYNOPSIS
-Meregenerasi kunci bersama untuk Ruang Kerja Analitik Log. Kunci ini digunakan untuk menyambungkan agen-Insights Microsoft Operational ke ruang kerja.
+Meregenerasi kunci bersama untuk Ruang Kerja Analitik Log. Kunci ini digunakan untuk menyambungkan agen Insights Operasional Microsoft ke ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/update-azoperationalinsightsworkspacesharedkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Update-AzOperationalInsightsWorkspaceSharedKey [-ResourceGroupName] <String> [-N
 ```
 
 ## DESCRIPTION
-Meregenerasi kunci bersama untuk Ruang Kerja Analitik Log. Kunci ini digunakan untuk menyambungkan agen-Insights Microsoft Operational ke ruang kerja.
+Meregenerasi kunci bersama untuk Ruang Kerja Analitik Log. Kunci ini digunakan untuk menyambungkan agen Insights Operasional Microsoft ke ruang kerja.
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ Meregenerasi kunci bersama untuk Ruang Kerja Analitik Log. Kunci ini digunakan u
 PS C:\> Update-AzOperationalInsightsWorkspaceSharedKey -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace"
 ```
 
-Meregenerasi kunci bersama untuk Ruang Kerja Analitik Log. mengembalikan tombol bersama Utama dan Sekunder
+Meregenerasi kunci bersama untuk Ruang Kerja Analitik Log. mengembalikan kunci bersama Utama dan Sekunder
 
 ## PARAMETERS
 
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

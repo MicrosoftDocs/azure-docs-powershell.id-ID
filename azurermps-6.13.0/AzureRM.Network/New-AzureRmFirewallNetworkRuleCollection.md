@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmFirewallNetworkRuleCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmFirewallNetworkRuleCollection.md
 ms.openlocfilehash: 79ead5ac618b4631c3ec790156fe1a75e4169882
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424196"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142354820"
 ---
 # New-AzureRmFirewallNetworkRuleCollection
 
 ## SYNOPSIS
-Membuat Aturan Jaringan Kumpulan Jaringan Azure Firewall.
+Membuat Azure Firewall Kumpulan Jaringan aturan Jaringan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,10 +40,10 @@ $rule2 = New-AzureRmFirewallNetworkRule -Name "partial-tcp-rule" -Description "R
 New-AzureRmFirewallNetworkRuleCollection -Name RC1 -Priority 100 -Rule $rule1, $rule2 -ActionType "Allow"
 ```
 
-Contoh ini membuat kumpulan yang akan mengizinkan semua lalu lintas yang cocok dengan salah satu dari dua aturan.
+Contoh ini membuat koleksi yang akan memungkinkan semua lalu lintas yang cocok dengan salah satu dari dua aturan.
 Aturan pertama adalah untuk semua lalu lintas UDP.
 Aturan kedua adalah untuk lalu lintas TCP dari 10.0.0.0 hingga 60.1.5.0:4040.
-Jika ada kumpulan aturan Jaringan dengan prioritas lebih tinggi (angka yang lebih kecil) yang juga cocok dengan lalu lintas yang diidentifikasi dalam $rule 1 atau $rule 2, tindakan kumpulan aturan dengan prioritas lebih tinggi akan berlaku sebagai gantinya. 
+Jika terdapat kumpulan aturan Jaringan lain dengan prioritas yang lebih tinggi (angka yang lebih kecil) yang juga cocok dengan lalu lintas yang diidentifikasi dalam $rule 1 atau $rule 2, tindakan pengumpulan aturan dengan prioritas yang lebih tinggi akan diterapkan sebagai gantinya. 
 
 ### 2: Menambahkan aturan ke kumpulan aturan
 ```
@@ -54,7 +54,7 @@ $rule2 = New-AzureRmFirewallNetworkRule -Name "partial-tcp-rule" -Description "R
 $ruleCollection.AddRule($rule2)
 ```
 
-Contoh ini membuat kumpulan aturan jaringan baru dengan satu aturan, lalu menambahkan aturan kedua ke kumpulan aturan menggunakan metode AddRule pada objek kumpulan aturan. Setiap nama aturan dalam kumpulan aturan harus memiliki nama yang unik dan peka huruf besar/ku.
+Contoh ini membuat kumpulan aturan jaringan baru dengan satu aturan lalu menambahkan aturan kedua ke kumpulan aturan menggunakan metode AddRule pada objek kumpulan aturan. Setiap nama aturan dalam kumpulan aturan tertentu harus memiliki nama yang unik dan tidak peka huruf besar kecil.
 
 ### 3: Mendapatkan aturan dari kumpulan aturan
 ```
@@ -63,7 +63,7 @@ $ruleCollection = New-AzureRmFirewallNetworkRuleCollection -Name "MyNetworkRuleC
 $getRule=$ruleCollection.GetRuleByName("ALL-UDP-traffic")
 ```
 
-Contoh ini membuat kumpulan aturan jaringan baru dengan satu aturan lalu mendapatkan aturan menurut nama, metode panggilan GetRuleByName pada objek kumpulan aturan. Nama aturan untuk metode GetRuleByName ber sifatnya insensitif.
+Contoh ini membuat kumpulan aturan jaringan baru dengan satu aturan lalu mendapatkan aturan berdasarkan nama, metode panggilan GetRuleByName pada objek kumpulan aturan. Nama aturan untuk metode GetRuleByName tidak peka huruf besar kecil.
 
 ### 4: Menghapus aturan dari kumpulan aturan
 ```
@@ -73,12 +73,12 @@ $ruleCollection = New-AzureRmFirewallNetworkRuleCollection -Name "MyNetworkRuleC
 $ruleCollection.RemoveRuleByName("ALL-udp-traffic")
 ```
 
-Contoh ini membuat kumpulan aturan jaringan baru dengan dua aturan lalu menghapus aturan pertama dari kumpulan aturan dengan metode panggilan RemoveRuleByName pada objek kumpulan aturan. Nama aturan untuk metode RemoveRuleByName ber sifatnya insensitif.
+Contoh ini membuat kumpulan aturan jaringan baru dengan dua aturan lalu menghapus aturan pertama dari kumpulan aturan dengan metode panggilan RemoveRuleByName pada objek kumpulan aturan. Nama aturan untuk metode RemoveRuleByName tidak peka huruf besar kecil.
 
 ## PARAMETERS
 
 ### -ActionType
-Menentukan tindakan yang akan diambil untuk kondisi kecocokan lalu lintas dari aturan ini. Tindakan yang diterima adalah "Perbolehkan" atau "Tolak".
+Menentukan tindakan yang akan diambil untuk kondisi pencocokan lalu lintas aturan ini. Tindakan yang diterima adalah "Izinkan" atau "Tolak".
 
 ```yaml
 Type: String
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Prioritas
-Menentukan prioritas kumpulan aturan ini. Prioritas adalah angka antara 100 dan 65000. Makin kecil angkanya, semakin tinggi prioritasnya.
+Menentukan prioritas kumpulan aturan ini. Prioritas adalah angka antara 100 dan 65000. Semakin kecil angkanya, semakin tinggi prioritasnya.
 
 ```yaml
 Type: UInt32
@@ -138,7 +138,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Rule
+### -Aturan
 Menentukan daftar aturan yang akan dikelompokkan di bawah kumpulan ini.
 
 ```yaml
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -185,11 +185,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
@@ -200,7 +200,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ## RELATED LINKS
 
-[New-AzureRmFirewallNetworkRule](./New-AzureRmFirewallNetworkRule.md)
+[Baru-AzureRmFirewallNetworkRule](./New-AzureRmFirewallNetworkRule.md)
 
 [New-AzureRmFirewall](./New-AzureRmFirewall.md)
 

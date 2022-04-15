@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADUser.md
-ms.openlocfilehash: d112d5f97fb9bef8cde9fc29e2be0d9d3fa69ec0
-ms.sourcegitcommit: b346b2fbd8b25f54759984e75ddbee3304921c43
+ms.openlocfilehash: add1bf74e114b01363546c3e733f530e49462d99
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "140664309"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142368773"
 ---
 # Get-AzADUser
 
@@ -18,6 +18,9 @@ ms.locfileid: "140664309"
 Mencantumkan entitas dari pengguna atau mendapatkan entitas dari pengguna menurut kunci
 
 [!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azaduser) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Get-AzADUser [-Expand <String[]>] [-Select <String[]>] [-First <UInt64>] [-Skip 
  [-DefaultProfile <PSObject>] -DisplayName <String> [<CommonParameters>]
 ```
 
-### StartsWithParameterSet
+### MulaiWithParameterSet
 ```
 Get-AzADUser [-Expand <String[]>] [-Select <String[]>] [-First <UInt64>] [-Skip <UInt64>] [-AppendSelected]
  [-DefaultProfile <PSObject>] -StartsWith <String> [<CommonParameters>]
@@ -76,14 +79,14 @@ PS C:\> Get-AzADUser -SignedIn
 
 Dapatkan pengguna masuk
 
-### Contoh 2:  List users
+### Contoh 2: Daftar pengguna
 ```powershell
 PS C:\> Get-AzADUser -First 10 -Select 'City' -AppendSelected
 ```
 
-10 pengguna pertama mencantumkan dan menambahkan properti 'City' setelah properti default: 'DisplayName', 'Id', 'DeletedDateTime', 'UserPrincipalName', 'UsageLocation', 'GivenName', 'SurName', 'AccountEnabled', 'MailNickName', 'Mail'
+Daftar 10 pengguna pertama dan tambahkan properti 'Kota' setelah properti default: 'DisplayName', 'Id', 'DeletedDateTime', 'UserPrincipalName', 'UsageLocation', 'GivenName', 'SurName', 'AccountEnabled', 'MailNickName', 'Mail'
 
-### Contoh 3: Dapatkan pengguna dengan nama tampilan
+### Contoh 3: Mendapatkan pengguna dengan nama tampilan
 ```powershell
 PS C:\> Get-AzADUser -DisplayName $name
 ```
@@ -93,7 +96,7 @@ Mendapatkan pengguna dengan nama tampilan
 ## PARAMETERS
 
 ### -AppendSelected
-Tambahkan properti yang dipilih dengan properti default saat sakelar ini diaktifkan, hanya bekerja dengan parameter '-Pilih'.
+Tambahkan properti yang dipilih dengan properti default saat sakelar ini aktif, hanya berfungsi dengan parameter '-Select'.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -107,9 +110,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ConsistencyLevel
+### -KonsistensiLevel
 Menunjukkan tingkat konsistensi yang diminta.
-URL Dokumentasi: https://developer.microsoft.com/en-us/office/blogs/microsoft-graph-advanced-queries-for-directory-objects-are-now-generally-available/
+URL dokumentasi: https://developer.microsoft.com/en-us/office/blogs/microsoft-graph-advanced-queries-for-directory-objects-are-now-generally-available/
 
 ```yaml
 Type: System.String
@@ -289,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserPrincipalName
-nama prinsipal pengguna
+nama pokok pengguna
 
 ```yaml
 Type: System.String
@@ -304,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lewati
-Mengabaikan objek 'n' pertama, lalu mendapatkan objek yang tersisa.
+Mengabaikan objek 'n' pertama lalu mendapatkan objek yang tersisa.
 
 ```yaml
 Type: System.UInt64
@@ -318,7 +321,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -First
+### -Pertama
 Hanya mendapatkan objek 'n' pertama.
 
 ```yaml
@@ -334,7 +337,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

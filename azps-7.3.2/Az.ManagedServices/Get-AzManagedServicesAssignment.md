@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.managedservices/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/Get-AzManagedServicesAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/Get-AzManagedServicesAssignment.md
-ms.openlocfilehash: 071221525234b4ee3c2fd52a9e9d69a544f47596
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 4e51067eb0c6aa92ccefa97bcc1ec2d4decdbda7
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140000366"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142346291"
 ---
 # Get-AzManagedServicesAssignment
 
 ## SYNOPSIS
 Mendapatkan detail penetapan pendaftaran yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.managedservices/get-azmanagedservicesassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzManagedServicesAssignment [-Scope <String>] [-ExpandRegistrationDefinition
  [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzManagedServicesAssignment -Name <String> [-Scope <String>] [-ExpandRegistrationDefinition]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -42,7 +45,7 @@ Mendapatkan detail penetapan pendaftaran yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan semua tugas pendaftaran Mercusuar Azure dalam langganan
+### Contoh 1: Mencantumkan semua tugas pendaftaran Azure Lighthouse dalam langganan
 ```powershell
 PS C:\> Get-AzManagedServicesAssignment
 
@@ -53,9 +56,9 @@ xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx Microsoft.ManagedServices/registrationAssig
 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx Microsoft.ManagedServices/registrationAssignments
 ```
 
-Mencantumkan semua tugas pendaftaran Mercusuar Azure dalam langganan tertentu dalam konteks.
+Mencantumkan semua tugas pendaftaran Azure Lighthouse dalam langganan tertentu dalam konteks.
 
-### Contoh 2: Dapatkan pendaftaran pendaftaran Azure Lighthouse berdasarkan nama dengan properti yang dipilih
+### Contoh 2: Dapatkan penetapan pendaftaran Azure Lighthouse berdasarkan nama dengan properti yang dipilih
 ```powershell
 PS C:\> Get-AzManagedServicesAssignment -Name xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx | Format-List -Property Id, Name, Type, RegistrationDefinitionId, ProvisioningState
 
@@ -66,9 +69,9 @@ RegistrationDefinitionId : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/p
 ProvisioningState        : Succeeded
 ```
 
-Mendapatkan pendaftaran Azure Lighthouse berdasarkan nama dengan properti yang dipilih.
+Mendapatkan tugas pendaftaran Azure Lighthouse berdasarkan nama dengan properti yang dipilih.
 
-### Contoh 3: Mencantumkan semua tugas pendaftaran Mercusuar Azure menurut lingkup
+### Contoh 3: Cantumkan semua tugas pendaftaran Azure Lighthouse menurut lingkup
 ```powershell
 PS C:\>  Get-AzManagedServicesAssignment -Scope /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx | Format-List -Property Id, Name, Type, RegistrationDefinitionId, ProvisioningState
 
@@ -91,7 +94,7 @@ RegistrationDefinitionId : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/p
 ProvisioningState        : Succeeded
 ```
 
-Mencantumkan semua tugas pendaftaran Mercusuar Azure dalam lingkup grup langganan atau sumber daya tertentu.
+Mencantumkan semua tugas pendaftaran Azure Lighthouse dalam lingkup grup sumber daya atau langganan tertentu.
 
 ## PARAMETERS
 
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpandRegistrationDefinition
-Bendera menunjukkan apakah akan mengembalikan detail definisi pendaftaran bersama dengan detail penetapan pendaftaran.
+Bendera yang mengindikasikan apakah akan mengembalikan detail definisi pendaftaran beserta detail penetapan pendaftaran.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ManagedServices.Models.IManagedServicesIdentity
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-GUID penetapan pendaftaran.
+GUID tugas pendaftaran.
 
 ```yaml
 Type: System.String
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -192,9 +195,9 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IManagedServicesIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[MarketplaceIdentifier <String>]`: Pengidentifikasi Azure Marketplace. Format yang diharapkan: {publisher}. {product[-preview]}. {planName}. {version} atau {publisher}. {product[-preview]}. {planName} atau {publisher}. {product[-preview]} atau {publisher}).
-  - `[RegistrationAssignmentId <String>]`: GUID penetapan pendaftaran.
-  - `[RegistrationDefinitionId <String>]`: GUID definisi registrasi.
+  - `[MarketplaceIdentifier <String>]`: Pengidentifikasi Marketplace Azure. Format yang diharapkan: {publisher}. {product[-preview]}. {planName}. {version} atau {publisher}. {product[-preview]}. {planName} atau {publisher}. {product[-preview]} atau {publisher}).
+  - `[RegistrationAssignmentId <String>]`: GUID penugasan pendaftaran.
+  - `[RegistrationDefinitionId <String>]`: GUID definisi pendaftaran.
   - `[Scope <String>]`: Lingkup sumber daya.
 
 ## RELATED LINKS

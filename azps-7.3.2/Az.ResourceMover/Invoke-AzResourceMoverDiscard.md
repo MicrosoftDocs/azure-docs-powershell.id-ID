@@ -5,19 +5,22 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcemover/in
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Invoke-AzResourceMoverDiscard.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Invoke-AzResourceMoverDiscard.md
-ms.openlocfilehash: e4b9bc7bc451cbc64ccd4d220f671bf45829edab
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0d8dee26dbe4932c2dc6bbebdd4136ce8899e715
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140196087"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142368935"
 ---
 # Invoke-AzResourceMoverDiscard
 
 ## SYNOPSIS
-Membuang kumpulan sumber daya yang disertakan dalam badan permintaan.
-Operasi buang dipicu pada moveResources di moveState 'CommitPending' atau 'DiscardFailed', setelah berhasil menyelesaikan moveResource moveState melakukan transisi ke MovePending.
-Untuk membantu pengguna agar prasyarat operasi klien bisa memanggil operasi dengan properti validateOnly yang diatur ke true.
+Membuang kumpulan sumber daya yang disertakan dalam isi permintaan.
+Operasi buang dipicu pada moveResources dalam moveState 'CommitPending' atau 'DiscardFailed', pada penyelesaian yang berhasil, moveResource moveState melakukan transisi ke MovePending.
+Untuk membantu pengguna prasyarat operasi klien dapat menghubungi operasi dengan properti validateOnly diatur ke true.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resourcemover/invoke-azresourcemoverdiscard) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,13 +31,13 @@ Invoke-AzResourceMoverDiscard -Name <String> -ResourceGroupName <String> -MoveRe
 ```
 
 ## DESCRIPTION
-Membuang kumpulan sumber daya yang disertakan dalam badan permintaan.
-Operasi buang dipicu pada moveResources di moveState 'CommitPending' atau 'DiscardFailed', setelah berhasil menyelesaikan moveResource moveState melakukan transisi ke MovePending.
-Untuk membantu pengguna agar prasyarat operasi klien bisa memanggil operasi dengan properti validateOnly yang diatur ke true.
+Membuang kumpulan sumber daya yang disertakan dalam isi permintaan.
+Operasi buang dipicu pada moveResources dalam moveState 'CommitPending' atau 'DiscardFailed', pada penyelesaian yang berhasil, moveResource moveState melakukan transisi ke MovePending.
+Untuk membantu pengguna prasyarat operasi klien dapat menghubungi operasi dengan properti validateOnly diatur ke true.
 
 ## EXAMPLES
 
-### Contoh 1: Memvalidasi dependecies sebelum Buang sumber daya.
+### Contoh 1: Memvalidasi dependek sebelum Membuang sumber daya.
 ```powershell
 PS C:\> Invoke-AzResourceMoverInitiateMove -ResourceGroupName "RG-MoveCollection-demoRMS" -MoveCollectionName "PS-centralus-westcentralus-demoRMS"  -MoveResource $('psdemorm-vnet') -MoveResourceInputType "MoveResourceId" -ValidateOnly
 
@@ -52,9 +55,9 @@ Status         : Succeeded
 
 ```
 
-Validasi dependensi sebelum Buang sumber daya.
+Memvalidasi dependek sebelum Membuang sumber daya.
 
-### Contoh 2: Membuang pemindahan sumber daya menggunakan "Nama MoveResource" sebagai input.
+### Contoh 2: Membuang perpindahan sumber daya menggunakan "Nama MoveResource" sebagai input.
 ```powershell
 PS C:\> Invoke-AzResourceMoverDiscard -ResourceGroupName "RG-MoveCollection-demoRMS" -MoveCollectionName "PS-centralus-westcentralus-demoRMS"  -MoveResource $('psdemorm-vnet') -MoveResourceInputType "MoveResourceId"
 
@@ -93,7 +96,7 @@ Status         : Succeeded
 
 ```
 
-Membuang pemindahan sumber daya menggunakan "SourceARMID" sebagai input.
+Membuang perpindahan sumber daya menggunakan "SourceARMID" sebagai input.
 
 ## PARAMETERS
 
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -MoveResource
-Mendapatkan atau mengatur daftar Id sumber daya, secara default id itu menerima id pemindahan sumber daya kecuali tipe input dialihkan melalui properti moveResourceInputType.
+Mendapatkan atau mengatur daftar id sumber daya, secara default id sumber daya menerima id sumber daya pindah kecuali tipe input dialihkan melalui properti moveResourceInputType.
 
 ```yaml
 Type: System.String[]
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -MoveResourceInputType
-Menentukan tipe input pindahkan sumber daya.
+Menentukan tipe input pemindahan sumber daya.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ResourceMover.Support.MoveResourceInputType
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Pindahkan nama koleksi.
+Nama Pindahkan Koleksi.
 
 ```yaml
 Type: System.String
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya.
+Nama Grup Sumber Daya.
 
 ```yaml
 Type: System.String
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

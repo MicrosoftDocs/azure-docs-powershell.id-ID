@@ -3,17 +3,17 @@ external help file: Microsoft.Azure.Commands.ResourceManager.Cmdlets.dll-Help.xm
 Module Name: AzureRM.Resources
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.resources/get-azurermmanagedapplication
 schema: 2.0.0
-ms.openlocfilehash: 194110b221ed9239f0d80c697f08827f9158d6b14bbacf4743fa07262c33dd8f
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 482bf9a2158fc299d78c993255e390dc480245a3
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140865368"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142361627"
 ---
 # Get-AzureRmManagedApplication
 
 ## SYNOPSIS
-Aplikasi yang dikelola
+Mendapatkan aplikasi terkelola
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -38,28 +38,28 @@ Get-AzureRmManagedApplication -Id <String> [-ApiVersion <String>] [-Pre]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmManagedApplication** mendapatkan aplikasi terkelola
+Cmdlet **Get-AzureRmManagedApplication** mendapatkan aplikasi yang dikelola
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua aplikasi yang dikelola di bawah grup sumber daya
+### Contoh 1: Dapatkan semua aplikasi terkelola di bawah grup sumber daya
 ```
 PS C:\>Get-AzureRmManagedApplication -ResourceGroupName "MyRG"
 ```
 
-Perintah ini akan mengelola aplikasi di bawah grup sumber daya "MyRG"
+Perintah ini mendapatkan aplikasi terkelola di bawah grup sumber daya "MyRG"
 
-### Contoh 2: Dapatkan semua aplikasi yang dikelola
+### Contoh 2: Dapatkan semua aplikasi terkelola
 ```
 PS C:\>Get-AzureRmManagedApplication
 ```
 
-Perintah ini mendapatkan semua aplikasi yang dikelola di bawah langganan saat ini
+Perintah ini mendapatkan semua aplikasi terkelola di bawah langganan saat ini
 
 ## PARAMETERS
 
 ### -ApiVersion
-Saat diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
+Ketika diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
 Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai versi terbaru yang tersedia.
 
 ```yaml
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Saat diatur, cmdlet harus menggunakan versi API prari tamu ketika menentukan versi mana yang akan digunakan secara otomatis.
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
 
 ```yaml
 Type: SwitchParameter
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

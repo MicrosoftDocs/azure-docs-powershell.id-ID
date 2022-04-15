@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmExpressRouteCircuitRouteTableSummary.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmExpressRouteCircuitRouteTableSummary.md
 ms.openlocfilehash: aa3d229ec14118b87c960e234a00cf82f85754c3
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421651"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142355487"
 ---
 # Get-AzureRmExpressRouteCircuitRouteTableSummary
 
 ## SYNOPSIS
-Mendapatkan ringkasan tabel rute dari sirkuit ExpressRoute.
+Mendapatkan ringkasan tabel rute sirkuit ExpressRoute.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,7 +29,7 @@ Get-AzureRmExpressRouteCircuitRouteTableSummary -ResourceGroupName <String> -Exp
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmExpressRouteCircuitRouteTableSummary** mengambil ringkasan informasi sekitar BGP untuk konteks perutean tertentu. Informasi ini berguna untuk menentukan berapa lama konteks perutean telah dibuat dan jumlah prefiks rute yang diiklankan oleh perute peering.
+Cmdlet **Get-AzureRmExpressRouteCircuitRouteTableSummary** mengambil ringkasan informasi tetangga BGP untuk konteks perutean tertentu. Informasi ini berguna untuk menentukan berapa lama konteks perutean telah ditetapkan dan jumlah prefiks rute yang diiklankan oleh router peering.
 
 ## EXAMPLES
 
@@ -41,7 +41,7 @@ Get-AzureRmExpressRouteCircuitRouteTableSummary -ResourceGroupName $RG -ExpressR
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpressRouteCircuitName
-Nama sirkuit ExpressRoute yang akan diperiksa.
+Nama sirkuit ExpressRoute sedang diperiksa.
 
 ```yaml
 Type: System.String
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeeringType
-Nilai yang dapat diterima untuk parameter ini adalah: `AzurePrivatePeering` , `AzurePublicPeering` , dan `MicrosoftPeering`
+Nilai yang dapat diterima untuk parameter ini adalah: `AzurePrivatePeering`, , `AzurePublicPeering`dan `MicrosoftPeering`
 
 ```yaml
 Type: System.String
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
