@@ -5,16 +5,16 @@ ms.assetid: 3C046A0A-A2B6-413C-8D3B-8991A1FC4926
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/new-azurermapplicationgatewayfrontendport
 schema: 2.0.0
 ms.openlocfilehash: f8b9d6b981300c32badbe69ec153865c04814dd6
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428864"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142392698"
 ---
 # New-AzureRmApplicationGatewayFrontendPort
 
 ## SYNOPSIS
-Membuat port ujung-depan untuk gateway aplikasi.
+Membuat port ujung depan untuk gateway aplikasi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -26,21 +26,21 @@ New-AzureRmApplicationGatewayFrontendPort -Name <String> -Port <Int32>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmApplicationGatewayFrontendPort** membuat port ujung-depan untuk gateway aplikasi Azure.
+Cmdlet **New-AzureRmApplicationGatewayFrontendPort** membuat port ujung depan untuk gateway aplikasi Azure.
 
 ## EXAMPLES
 
-### Contoh1: Membuat port front-end
+### Contoh1: Membuat port ujung depan
 ```
 PS C:\>$FrontEndPort = New-AzureRmApplicationGatewayFrontendPort -Name "FrontEndPort01" -Port 80
 ```
 
-Perintah ini membuat port ujung-depan bernama FrontEndPort01 di port 80 dan menyimpan hasilnya dalam variabel yang bernama $FrontEndPort.
+Perintah ini membuat port ujung depan bernama FrontEndPort01 pada port 80 dan menyimpan hasilnya dalam variabel bernama $FrontEndPort.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -55,7 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama port ujung-depan yang dibuat cmdlet ini.
+Menentukan nama port ujung depan yang dibuat cmdlet ini.
 
 ```yaml
 Type: String
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -103,7 +103,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmApplicationGatewayFrontendPort](./Get-AzureRmApplicationGatewayFrontendPort.md)
 
-[Remove-AzureRmApplicationGatewayFrontendPort](./Remove-AzureRmApplicationGatewayFrontendPort.md)
+[Hapus-AzureRmApplicationGatewayFrontendPort](./Remove-AzureRmApplicationGatewayFrontendPort.md)
 
 [Set-AzureRmApplicationGatewayFrontendPort](./Set-AzureRmApplicationGatewayFrontendPort.md)
 

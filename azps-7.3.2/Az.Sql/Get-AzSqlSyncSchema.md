@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlsyn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlSyncSchema.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlSyncSchema.md
-ms.openlocfilehash: df1a712619c7a5eea5d0f0afa5c8deb556e199e1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 8533aa912fe79ce80cf7782f8ff8ef5fc6a3324f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140390855"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142400111"
 ---
 # Get-AzSqlSyncSchema
 
 ## SYNOPSIS
 Mengembalikan informasi tentang skema sinkronisasi database anggota atau database hub.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlsyncschema) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Tables                     LastUpdateTime
 {dbo.Table_1, dbo.Table_2} 6/13/2017 10:03:44 AM
 ```
 
-Perintah ini mendapatkan skema sinkronisasi untuk database hub di grup sinkronisasi syncGroup01.
+Perintah ini mendapatkan skema sinkronisasi untuk database hub dalam sinkronisasi grup sinkronisasiGroup01.
 
 ### Contoh 2: Dapatkan skema sinkronisasi untuk database hub, dan perluas Tabel
 ```powershell
@@ -56,7 +59,7 @@ Name       : dbo.Table_2
 QuotedName : [dbo].[Table_2]
 ```
 
-Perintah ini mendapatkan skema sinkronisasi untuk database hub di grup sinkronisasi syncGroup01 dan memperluas properti Tabel.
+Perintah ini mendapatkan skema sinkronisasi untuk database hub dalam sinkronisasi grup sinkronisasiGroup01 dan memperluas properti Tabel.
 
 ### Contoh 3: Dapatkan skema sinkronisasi untuk database anggota
 ```powershell
@@ -69,7 +72,7 @@ Perintah ini mendapatkan skema sinkronisasi untuk database anggota dalam sinkron
 ## PARAMETERS
 
 ### -DatabaseName
-Nama nama Azure SQL Database.
+Nama Azure SQL Database.
 
 ```yaml
 Type: System.String
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama azure SQL Server.
+Nama Server Azure SQL.
 
 ```yaml
 Type: System.String
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmDelegation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmDelegation.md
 ms.openlocfilehash: 9912d41cd9e2600c55d378fbb88510a0defaaa85
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420335"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142385755"
 ---
 # New-AzureRmDelegation
 
@@ -27,7 +27,7 @@ New-AzureRmDelegation -Name <String> -ServiceName <String> [-DefaultProfile <IAz
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmDelegation** membuat delegasi layanan yang bisa ditambahkan ke subnet.
+Cmdlet **New-AzureRmDelegation** membuat delegasi layanan yang dapat ditambahkan ke subnet.
 
 ## EXAMPLES
 
@@ -40,7 +40,7 @@ PS C:\> $subnet.Delegations.Add($delegation)
 PS C:\> Set-AzureRmVirtualNetwork $vnet
 ```
 
-Cmdlet pertama membuat delegasi yang bisa ditambahkan ke subnet, dan menyimpannya di $delegation baru. Cmdlet kedua dan ketiga mengambil subnet untuk didelegasikan. Cmdlet keempat menambahkan delegasi yang dibuat ke subnet yang menarik, dan cmdlet terakhir mengirim konfigurasi yang diperbarui ke server.
+Cmdlet pertama membuat delegasi yang dapat ditambahkan ke subnet, dan menyimpannya dalam variabel $delegation. Cmdlet kedua dan ketiga mengambil subnet untuk didelegasikan. Cmdlet keempat menambahkan delegasi yang dibuat ke subnet minat, dan cmdlet akhir mengirimkan konfigurasi yang diperbarui ke server.
 
 ## PARAMETERS
 
@@ -90,8 +90,8 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
-Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -104,9 +104,9 @@ Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsof
 ## CATATAN
 
 ## RELATED LINKS
-[Add-AzureRmDelegation](./Add-AzureRmDelegation.md) 
- [Get-AzureRmDelegation](./Get-AzureRmDelegation.md) 
- [Remove-AzureRmDelegation](./Remove-AzureRmDelegation.md) 
- [Get-AzureRmVirtualNetwork](./Get-AzureRmVirtualNetwork.md) 
- [Get-AzureRmVirtualNetworkSubnetConfig](./Get-AzureRmVirtualNetworkSubnetConfig.md) 
+[Add-AzureRmDelegation](./Add-AzureRmDelegation.md)
+ [Get-AzureRmDelegation](./Get-AzureRmDelegation.md)
+ [Hapus-AzureRmDelegation](./Remove-AzureRmDelegation.md)
+ [Get-AzureRmVirtualNetwork](./Get-AzureRmVirtualNetwork.md)
+ [Get-AzureRmVirtualNetworkSubnetConfig](./Get-AzureRmVirtualNetworkSubnetConfig.md)
  [Set-AzureRmVirtualNetwork](./Set-AzureRmVirtualNetwork.md)

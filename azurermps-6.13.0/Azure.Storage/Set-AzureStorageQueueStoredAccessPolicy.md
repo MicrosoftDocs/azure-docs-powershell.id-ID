@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azure.storage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/Storage/Commands.Storage/help/Set-AzureStorageQueueStoredAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/Storage/Commands.Storage/help/Set-AzureStorageQueueStoredAccessPolicy.md
-ms.openlocfilehash: d74963a33c59ac86f38bc3744c5984c3b081c77f680808aca2b11bd8b186c7b3
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: e20caedc23dcd4d06336f3dddf80fdaf4a84cbcc
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140857502"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142391454"
 ---
 # Set-AzureStorageQueueStoredAccessPolicy
 
 ## SYNOPSIS
-Menetapkan kebijakan akses tersimpan untuk antrean penyimpanan Azure.
+Mengatur kebijakan akses yang disimpan untuk antrean penyimpanan Azure.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,16 +29,16 @@ Set-AzureStorageQueueStoredAccessPolicy [-Queue] <String> [-Policy] <String> [-P
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureStorageQueueStoredAccessPolicy** mengatur kebijakan akses tersimpan untuk antrean penyimpanan Azure.
+Cmdlet **Set-AzureStorageQueueStoredAccessPolicy** mengatur kebijakan akses yang disimpan untuk antrean penyimpanan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Menetapkan kebijakan akses yang disimpan dalam antrean dengan izin penuh
+### Contoh 1: Mengatur kebijakan akses yang disimpan dalam antrean dengan izin penuh
 ```
 PS C:\> Set-AzureStorageQueueStoredAccessPolicy -Queue "MyQueue" -Policy "Policy07" -Permission arup
 ```
 
-Perintah ini mengatur kebijakan akses bernama Policy07 untuk antrean penyimpanan yang bernama MyQueue.
+Perintah ini mengatur kebijakan akses bernama Policy07 untuk antrean penyimpanan bernama Antrean Saya.
 
 ## PARAMETERS
 
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpiryTime
-Menentukan waktu di mana kebijakan akses tersimpan menjadi tidak valid.
+Menentukan waktu ketika kebijakan akses yang disimpan menjadi tidak valid.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoStartTime
-Mengindikasikan bahwa cmdlet ini mengatur waktu mulai yang $Null.
+Menunjukkan bahwa cmdlet ini mengatur waktu mulai menjadi $Null.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -118,9 +118,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Permission
-Menentukan izin dalam kebijakan akses tersimpan untuk mengakses antrean penyimpanan.
-Penting untuk diingat bahwa ini adalah string, seperti (untuk `rwd` Baca, Tulis dan Hapus).
+### -Izin
+Menentukan izin dalam kebijakan akses yang disimpan untuk mengakses antrean penyimpanan.
+Penting untuk diperhatikan bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis, dan Hapus).
 
 ```yaml
 Type: System.String
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Menentukan waktu di mana kebijakan akses tersimpan menjadi valid.
+Menentukan waktu di mana kebijakan akses yang disimpan menjadi valid.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

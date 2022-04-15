@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzStorageServiceProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzStorageServiceProperty.md
-ms.openlocfilehash: 774637cab56646125f178b2e545c61ac405d72a0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6f7195948734e2dce3c8566fcc4e07464c981dab
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140195335"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142397627"
 ---
 # Update-AzStorageServiceProperty
 
 ## SYNOPSIS
-Mengubah properti untuk layanan Azure Storage baru.
+Mengubah properti untuk layanan Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/update-azstorageserviceproperty) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,16 +29,16 @@ Update-AzStorageServiceProperty [-ServiceType] <StorageServiceType> [-DefaultSer
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzStorageServiceProperty** mengubah properti untuk layanan Azure Storage tersebut.
+Cmdlet **Update-AzStorageServiceProperty** memodifikasi properti untuk layanan Azure Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Set Blob Service DefaultServiceVersion to 2017-04-17
+### Contoh 1: Atur Blob Service DefaultServiceVersion ke 2017-04-17
 ```
 C:\PS>Update-AzStorageServiceProperty -ServiceType Blob -DefaultServiceVersion 2017-04-17
 ```
 
-Perintah ini Mengatur DefaultServiceVersion Layanan Blob ke 2017-04-17
+Perintah ini Mengatur DefaultServiceVersion layanan Blob ke 2017-04-17
 
 ## PARAMETERS
 
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultServiceVersion
-DefaultServiceVersion menunjukkan versi default yang digunakan untuk permintaan ke layanan Blob jika versi permintaan masuk tidak ditentukan. Nilai yang memungkinkan meliputi versi 2008-10-27 dan semua versi terbaru yang lebih baru.
+DefaultServiceVersion menunjukkan versi default yang digunakan untuk permintaan ke layanan Blob jika versi permintaan masuk tidak ditentukan. Nilai yang memungkinkan mencakup versi 2008-10-27 dan semua versi terbaru.
 Lihat detail selengkapnya di https://docs.microsoft.com/rest/api/storageservices/versioning-for-the-azure-storage-services
 
 ```yaml
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Display ServiceProperties
+Menampilkan ServiceProperties
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,11 +106,11 @@ Accept wildcard characters: False
 
 ### -ServiceType
 Menentukan tipe layanan penyimpanan.
-Cmdlet ini mendapatkan properti pembuatan log untuk tipe layanan yang ditentukan oleh parameter ini.
+Cmdlet ini mendapatkan properti pembuatan log untuk tipe layanan yang ditentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Blob
-- Tabel
-- Antrean
+- Gumpalan
+- Meja
+- Antrian
 - File
 
 ```yaml
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

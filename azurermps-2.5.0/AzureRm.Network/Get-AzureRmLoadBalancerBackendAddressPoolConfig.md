@@ -5,16 +5,16 @@ ms.assetid: F421174A-B138-45EB-AF84-CB3CE5870F27
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/get-azurermloadbalancerbackendaddresspoolconfig
 schema: 2.0.0
 ms.openlocfilehash: 4bfae8947661f21441d67d6d82dbc8751f3128d2
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428703"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142392735"
 ---
 # Get-AzureRmLoadBalancerBackendAddressPoolConfig
 
 ## SYNOPSIS
-Mendapatkan konfigurasi pool alamat backend untuk penyeimbang muat.
+Mendapatkan konfigurasi kumpulan alamat backend untuk penyeimbang beban.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -26,24 +26,24 @@ Get-AzureRmLoadBalancerBackendAddressPoolConfig [-Name <String>] -LoadBalancer <
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmLoadBalancerBackendAddressPoolConfig** mendapatkan satu pool alamat backend atau daftar kolam renang alamat backend dalam penyeimbang muat.
+Cmdlet **Get-AzureRmLoadBalancerBackendAddressPoolConfig** mendapatkan satu kumpulan alamat backend atau daftar kumpulan alamat backend dalam load balancer.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pool alamat backend
+### Contoh 1: Dapatkan kumpulan alamat backend
 ```
 PS C:\>$loadbalancer = Get-AzureRmLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 PS C:\> Get-AzureRmLoadBalancerBackendAddressPoolConfig -Name "BackendAddressPool02" -LoadBalancer $loadbalancer
 ```
 
-Perintah pertama mendapatkan penyeimbang muat yang sudah ada bernama MyLoadBalancer dalam grup sumber daya yang bernama MyResourceGroup, lalu menyimpannya di $loadbalancer lokal.
+Perintah pertama mendapatkan load balancer yang sudah ada bernama MyLoadBalancer dalam grup sumber daya bernama MyResourceGroup, lalu menyimpannya dalam variabel $loadbalancer.
 
-Perintah kedua mendapatkan konfigurasi pool alamat backend terkait bernama BackendAddressPool02 untuk penyeimbang muat dalam $loadbalancer.
+Perintah kedua mendapatkan konfigurasi kumpulan alamat backend terkait bernama BackendAddressPool02 untuk penyeimbang muatan di $loadbalancer.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan penyeimbang muat yang terkait dengan pool alamat backend untuk mendapatkan.
+Menentukan penyeimbang muatan yang terkait dengan kumpulan alamat backend yang akan didapatkan.
 
 ```yaml
 Type: PSLoadBalancer
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama penyeimbang muat yang berisi pool alamat backend untuk mendapatkan.
+Menentukan nama penyeimbang muatan yang berisi kumpulan alamat backend untuk didapatkan.
 
 ```yaml
 Type: String
@@ -88,12 +88,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSLoadBalancer
-Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari saluran
+Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari pipeline
 
 ## OUTPUTS
 

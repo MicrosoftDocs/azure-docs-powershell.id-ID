@@ -5,16 +5,16 @@ ms.assetid: 9CBF592E-734B-4A0C-A45D-358C226D08C7
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/get-azurermvirtualnetworkgateway
 schema: 2.0.0
 ms.openlocfilehash: 1700ec112767397653201ff16608afbfb4af8f3e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425368"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142392706"
 ---
 # Get-AzureRmVirtualNetworkGateway
 
 ## SYNOPSIS
-Mendapatkan Gateway Jaringan Virtual
+Mendapatkan Gateway Virtual Network
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -26,23 +26,23 @@ Get-AzureRmVirtualNetworkGateway [-Name <String>] -ResourceGroupName <String>
 ```
 
 ## DESCRIPTION
-Gateway Jaringan Virtual adalah objek yang mewakili gateway Anda di Azure.
+Gateway Virtual Network adalah objek yang mewakili gateway Anda di Azure.
 
 Cmdlet **Get-AzureRmVirtualNetworkGateway** mengembalikan objek gateway Anda di Azure berdasarkan Nama dan Nama Grup Sumber Daya.
 
 ## EXAMPLES
 
-### 1: Dapatkan Gateway Jaringan Virtual
+### 1: Mendapatkan Gateway Virtual Network
 ```
 Get-AzureRmVirtualNetworkGateway -Name myGateway -ResourceGroupName myRG
 ```
 
-Mengembalikan objek Gateway Jaringan Virtual dengan nama "myGateway" di dalam grup sumber daya "myRG"
+Mengembalikan objek gateway Virtual Network dengan nama "myGateway" dalam grup sumber daya "myRG"
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

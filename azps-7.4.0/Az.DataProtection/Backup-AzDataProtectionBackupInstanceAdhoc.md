@@ -1,0 +1,286 @@
+---
+external help file: ''
+Module Name: Az.DataProtection
+online version: https://docs.microsoft.com/powershell/module/az.dataprotection/backup-azdataprotectionbackupinstanceadhoc
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Backup-AzDataProtectionBackupInstanceAdhoc.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Backup-AzDataProtectionBackupInstanceAdhoc.md
+ms.openlocfilehash: 5d67ab0b65bb3299418ab336b94cf1daaaad0f7b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142432819"
+---
+# Backup-AzDataProtectionBackupInstanceAdhoc
+
+## SYNOPSIS
+Memicu cadangan adhoc
+
+## SYNTAX
+
+### BackupExpanded (Default)
+```
+Backup-AzDataProtectionBackupInstanceAdhoc -BackupInstanceName <String> -ResourceGroupName <String>
+ -VaultName <String> -BackupRuleOptionRuleName <String> [-SubscriptionId <String>]
+ [-TriggerOptionRetentionTagOverride <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### BackupViaIdentityExpanded
+```
+Backup-AzDataProtectionBackupInstanceAdhoc -InputObject <IDataProtectionIdentity>
+ -BackupRuleOptionRuleName <String> [-TriggerOptionRetentionTagOverride <String>] [-DefaultProfile <PSObject>]
+ [-AsJob] [-NoWait] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Memicu cadangan adhoc
+
+## EXAMPLES
+
+### Contoh 1: Mencadangkan instans cadangan yang diproteksi
+```powershell
+$instance = Get-AzDataProtectionBackupInstance -SubscriptionId "xxxx-xxx-xxx" -ResourceGroupName "MyResourceGroup" -VaultName "MyVault"
+Backup-AzDataProtectionBackupInstanceAdhoc -BackupInstanceName $instance.Name -ResourceGroupName "MyResourceGroup" -SubscriptionId "xxxx-xxx-xxxx" -VaultName "MyVault" -BackupRuleOptionRuleName "BackupWeekly" -TriggerOptionRetentionTagOverride "Default"
+```
+
+Perintah Ini Memicu Pencadangan untuk instans cadangan tertentu.
+
+### Contoh 2: Mencadangkan instans cadangan yang diproteksi
+```powershell
+$instance = Get-AzDataProtectionBackupInstance -SubscriptionId "xxxx-xxx-xxx" -ResourceGroupName "MyResourceGroup" -VaultName "MyVault"
+$policy = Get-AzDataProtectionBackupPolicy -SubscriptionId $sub -VaultName "MyVault" -ResourceGroupName "MyResourceGroup" | Where-Object {$_.Name -eq "policyName"}
+$backupJob = Backup-AzDataProtectionBackupInstanceAdhoc -BackupInstanceName $instance.Name -ResourceGroupName "MyResourceGroup" -SubscriptionId "xxxx-xxx-xxxx" -VaultName "MyVault" -BackupRuleOptionRuleName $policy.Property.PolicyRule[0].Name -TriggerOptionRetentionTagOverride $policy.Property.PolicyRule[0].Trigger.TaggingCriterion[0].TagInfoTagName
+$jobid = $backupJob.JobId.Split("/")[-1]
+$jobstatus = "InProgress"
+while($jobstatus -ne "Completed")
+{
+    Start-Sleep -Seconds 10
+    $currentjob = Get-AzDataProtectionJob -Id $jobid -SubscriptionId $sub -ResourceGroupName $rgName -VaultName $vaultName
+    $jobstatus = $currentjob.Status
+}
+```
+
+Perintah Ini Memicu Pencadangan untuk instans cadangan tertentu menggunakan kebijakan proteksi yang digunakan untuk melindungi instans cadangan.
+Lalu kita melacak pekerjaan cadangan secara berulang sampai selesai.
+
+## PARAMETERS
+
+### -AsJob
+Menjalankan perintah sebagai pekerjaan
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BackupInstanceName
+Nama instans cadangan
+
+```yaml
+Type: System.String
+Parameter Sets: BackupExpanded
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BackupRuleOptionRuleName
+.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: System.Management.Automation.PSObject
+Parameter Sets: (All)
+Aliases: AzureRMContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InputObject
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.IDataProtectionIdentity
+Parameter Sets: BackupViaIdentityExpanded
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -NoWait
+Jalankan perintah secara asinkron
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Nama grup sumber daya tempat kubah cadangan ada.
+
+```yaml
+Type: System.String
+Parameter Sets: BackupExpanded
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SubscriptionId
+Id langganan.
+
+```yaml
+Type: System.String
+Parameter Sets: BackupExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: (Get-AzContext).Subscription.Id
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TriggerOptionRetentionTagOverride
+.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -VaultName
+Nama kubah cadangan.
+
+```yaml
+Type: System.String
+Parameter Sets: BackupExpanded
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Konfirmasi
+Meminta konfirmasi sebelum menjalankan cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Cmdlet tidak dijalankan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.IDataProtectionIdentity
+
+## OUTPUTS
+
+### Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.IOperationJobExtendedInfo
+
+## CATATAN
+
+ALIAS
+
+PROPERTI PARAMETER KOMPLEKS
+
+Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+
+
+INPUTOBJECT <IDataProtectionIdentity>: Parameter Identitas
+  - `[BackupInstanceName <String>]`: Nama instans cadangan
+  - `[BackupPolicyName <String>]`: 
+  - `[Id <String>]`: Jalur identitas sumber daya
+  - `[JobId <String>]`: ID Pekerjaan. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000).
+  - `[Location <String>]`: Lokasi di mana keunikan akan diverifikasi.
+  - `[OperationId <String>]`: 
+  - `[RecoveryPointId <String>]`: 
+  - `[RequestName <String>]`: 
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat kubah cadangan ada.
+  - `[ResourceGuardsName <String>]`: Nama ResourceGuard
+  - `[SubscriptionId <String>]`: Id langganan.
+  - `[VaultName <String>]`: Nama kubah cadangan.
+
+## RELATED LINKS
+

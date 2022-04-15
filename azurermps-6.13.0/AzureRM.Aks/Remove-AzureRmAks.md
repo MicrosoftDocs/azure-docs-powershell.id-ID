@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.aks/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Aks/Commands.Aks/help/Remove-AzureRmAks.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Aks/Commands.Aks/help/Remove-AzureRmAks.md
-ms.openlocfilehash: 9cf97c8419bac435950c32fb9ef2c576b7d603fce0c465a6fc462689ba2dc1e7
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 909121a78d09db7d15591a93db9479d0ccc8381b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140852598"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142391021"
 ---
 # Remove-AzureRmAks
 
 ## SYNOPSIS
-Menghapus kluster Grup terkelola.
+Hapus kluster Kubernetes terkelola.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,11 +40,11 @@ Remove-AzureRmAks [-Id] <String> [-PassThru] [-AsJob] [-Force] [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Menghapus kluster Grup terkelola.
+Hapus kluster Kubernetes terkelola.
 
 ## EXAMPLES
 
-### Menghapus kluster Grup terkelola yang sudah ada
+### Hapus kluster Kubernetes terkelola yang sudah ada
 ```
 PS C:\> Remove-AzureRmAks -ResourceGroupName group -Name myCluster
 ```
@@ -52,7 +52,7 @@ PS C:\> Remove-AzureRmAks -ResourceGroupName group -Name myCluster
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -81,8 +81,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Menghapus kluster Kluster Kelola tanpa perintah
+### -Paksa
+Hapus kluster Kubernetes yang dikelola tanpa prompt
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id kluster Grup terkelola
+Id dari kluster Kubernetes yang dikelola
 
 ```yaml
 Type: System.String
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek PSK terverifikasi, biasanya melewati saluran.
+Sebuah objek PSKubernetesCluster, biasanya melewati pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Aks.Models.PSKubernetesCluster
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama kluster Grup terkelola Anda
+Nama kluster Kubernetes terkelola Anda
 
 ```yaml
 Type: System.String
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -203,11 +203,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Aks.Models.PSK azuresCluster
+### Microsoft.Azure.Commands.Aks.Models.PSKubernetesCluster
 Parameter: InputObject (ByValue)
 
 ### System.String

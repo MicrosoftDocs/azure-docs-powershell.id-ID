@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/suspend-azsq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Suspend-AzSqlDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Suspend-AzSqlDatabase.md
-ms.openlocfilehash: f7dd43e028191c2a288422d6ff32ac47bac5347a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 143516e6f4667bc52c912d229a6edbd43ba6c6c7
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140400443"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142399157"
 ---
 # Suspend-AzSqlDatabase
 
 ## SYNOPSIS
-Menangguhkan sebuah SQL Database Gudang Data.
+Menangguhkan database SQL Data Warehouse.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/suspend-azsqldatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Suspend-AzSqlDatabase [-ServerName] <String> -DatabaseName <String> [-AsJob] [-R
 ```
 
 ## DESCRIPTION
-Cmdlet **Suspend-AzSqlDatabase** menangguhkan database Azure SQL Gudang Data.
+**Cmdlet Suspend-AzSqlDatabase** menangguhkan database Gudang Data Azure SQL.
 
 ## EXAMPLES
 
-### Contoh 1: Menangguhkan database Gudang SQL Azure
+### Contoh 1: Menangguhkan database Azure SQL Data Warehouse
 ```
 PS C:\>Suspend-AzSqlDatabase -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01"
 ```
@@ -40,7 +43,7 @@ Perintah ini menangguhkan database Gudang Data Azure SQL aktif.
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -157,7 +160,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel
 
 ## CATATAN
-* Cmdlet **Suspend-AzSqlDatabase** hanya berfungsi di Azure SQL database Gudang Data. Operasi ini tidak didukung di Azure SQL Database Basic, Standard dan Premium edition.
+* **Cmdlet Suspend-AzSqlDatabase** hanya berfungsi pada database Data Warehouse Azure SQL. Operasi ini tidak didukung pada edisi Azure SQL Database Basic, Standard, dan Premium.
 
 ## RELATED LINKS
 
@@ -171,6 +174,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzSqlDatabase](./Set-AzSqlDatabase.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 
 
