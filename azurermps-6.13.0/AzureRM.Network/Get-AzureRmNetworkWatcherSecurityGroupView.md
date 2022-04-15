@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmNetworkWatcherSecurityGroupView.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmNetworkWatcherSecurityGroupView.md
 ms.openlocfilehash: 8cc17374350300bc14582deea7fcf8e8dc1caa1e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428384"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142355311"
 ---
 # Get-AzureRmNetworkWatcherSecurityGroupView
 
 ## SYNOPSIS
-Lihat aturan grup keamanan jaringan yang dikonfigurasi dan efektif yang diterapkan pada VM.
+Menampilkan aturan grup keamanan jaringan yang dikonfigurasi dan efektif yang diterapkan pada VM.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,11 +40,11 @@ Get-AzureRmNetworkWatcherSecurityGroupView -Location <String> -TargetVirtualMach
 ```
 
 ## DESCRIPTION
-Dengan Get-AzureRmNetworkWatcherSecurityGroupView Anda dapat melihat aturan grup keamanan jaringan yang dikonfigurasi dan efektif yang diterapkan pada VM.
+Get-AzureRmNetworkWatcherSecurityGroupView memungkinkan Anda menampilkan aturan grup keamanan jaringan yang dikonfigurasi dan efektif yang diterapkan pada VM.
 
 ## EXAMPLES
 
-### Contoh 1: Melakukan panggilan Tampilan Grup Keamanan pada VM
+### Contoh 1: Melakukan panggilan Tampilan Grup Keamanan di VM
 ```
 $nw = Get-AzurermResource | Where {$_.ResourceType -eq "Microsoft.Network/networkWatchers" -and $_.Location -eq "WestCentralUS" } 
 $networkWatcher = Get-AzureRmNetworkWatcher -Name $nw.Name -ResourceGroupName $nw.ResourceGroupName 
@@ -52,12 +52,12 @@ $VM = Get-AzurermVM -ResourceGroupName ContosoResourceGroup -Name VM0
 Get-AzureRmNetworkWatcherSecurityGroupView -NetworkWatcher $networkWatcher -TargetVirtualMachineId $VM.Id
 ```
 
-Dalam contoh di atas, kami terlebih dahulu mendapatkan Network Watcher kawasan, lalu VM di kawasan tersebut. Kemudian, kami akan melakukan panggilan Security Group View menggunakan VM yang ditentukan.
+Dalam contoh di atas, kami terlebih dahulu mendapatkan Network Watcher regional, lalu VM di kawasan tersebut. Lalu kami membuat panggilan Tampilan Grup Keamanan pada VM yang ditentukan.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengawas jaringan.
+Sumber daya pengamat jaringan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -177,15 +177,15 @@ Parameter: NetworkWatcherName (ByValue)
 ### Microsoft.Azure.Commands.Network.Models.PSSecurityGroupViewResult
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, network, networking, network watcher, flow, ip 
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, aliran, ip 
 
 ## RELATED LINKS
 
-[New-AzureRmNetworkWatcher](./New-AzureRmNetworkWatcher.md)
+[AzureRmNetworkWatcher baru](./New-AzureRmNetworkWatcher.md)
 
 [Get-AzureRmNetworkWatcher](./Get-AzureRmNetworkWatcher.md)
 
-[Remove-AzureRmNetworkWatcher](./Remove-AzureRmNetworkWatcher.md)
+[Hapus-AzureRmNetworkWatcher](./Remove-AzureRmNetworkWatcher.md)
 
 [Get-AzureRmNetworkWatcherNextHop](./Get-AzureRmNetworkWatcherNextHop.md)
 
@@ -195,21 +195,21 @@ Kata kunci: azure, azurerm, arm, resource, management, manager, network, network
 
 [Start-AzureRmNetworkWatcherResourceTroubleshooting](./Start-AzureRmNetworkWatcherResourceTroubleshooting.md)
 
-[New-AzureRmNetworkWatcherPacketCapture](./New-AzureRmNetworkWatcherPacketCapture.md)
+[Baru-AzureRmNetworkWatcherPacketCapture](./New-AzureRmNetworkWatcherPacketCapture.md)
 
 [New-AzureRmPacketCaptureFilterConfig](./New-AzureRmPacketCaptureFilterConfig.md)
 
 [Get-AzureRmNetworkWatcherPacketCapture](./Get-AzureRmNetworkWatcherPacketCapture.md)
 
-[Remove-AzureRmNetworkWatcherPacketCapture](./Remove-AzureRmNetworkWatcherPacketCapture.md)
+[Hapus-AzureRmNetworkWatcherPacketCapture](./Remove-AzureRmNetworkWatcherPacketCapture.md)
 
 [Stop-AzureRmNetworkWatcherPacketCapture](./Stop-AzureRmNetworkWatcherPacketCapture.md)
 
 [New-AzureRmNetworkWatcherProtocolConfiguration](./New-AzureRmNetworkWatcherProtocolConfiguration.md)
 
-[Test-AzureRmNetworkWatcherIPFlow](./Test-AzureRmNetworkWatcherIPFlow.md)
+[Uji-AzureRmNetworkWatcherIPFlow](./Test-AzureRmNetworkWatcherIPFlow.md)
 
-[Test-AzureRmNetworkWatcherConnectivity](./Test-AzureRmNetworkWatcherConnectivity.md)
+[Uji-AzureRmNetworkWatcherConnectivity](./Test-AzureRmNetworkWatcherConnectivity.md)
 
 [Stop-AzureRmNetworkWatcherConnectionMonitor](./Stop-AzureRmNetworkWatcherConnectionMonitor.md)
 
@@ -219,7 +219,7 @@ Kata kunci: azure, azurerm, arm, resource, management, manager, network, network
 
 [Set-AzureRmNetworkWatcherConfigFlowLog](./Set-AzureRmNetworkWatcherConfigFlowLog.md)
 
-[Remove-AzureRmNetworkWatcherConnectionMonitor](./Remove-AzureRmNetworkWatcherConnectionMonitor.md)
+[Hapus-AzureRmNetworkWatcherConnectionMonitor](./Remove-AzureRmNetworkWatcherConnectionMonitor.md)
 
 [New-AzureRmNetworkWatcherConnectionMonitor](./New-AzureRmNetworkWatcherConnectionMonitor.md)
 

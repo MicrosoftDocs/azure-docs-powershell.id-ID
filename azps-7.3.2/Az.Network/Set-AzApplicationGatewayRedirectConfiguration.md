@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayRedirectConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayRedirectConfiguration.md
-ms.openlocfilehash: f39d88fe9b42307757a0fd962b833bcc004a3d61
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 72e9445640313dbfbdfb2ddf264aae627c4bf512
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140555232"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142344365"
 ---
 # Set-AzApplicationGatewayRedirectConfiguration
 
 ## SYNOPSIS
-Mengatur konfigurasi pengalihan pada Gateway Aplikasi yang sudah ada.
+Mengatur konfigurasi pengalihan pada Application Gateway yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewayredirectconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Set-AzApplicationGatewayRedirectConfiguration -ApplicationGateway <PSApplication
 ```
 
 ## DESCRIPTION
-**Cmdlet Set-AzApplicationGatewayRequestRoutingRule** mengubah konfigurasi pengalihan.
+Cmdlet **Set-AzApplicationGatewayRequestRoutingRule** mengubah konfigurasi pengalihan.
 
 ## EXAMPLES
 
@@ -51,12 +54,12 @@ PS C:\>$AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceG
 PS C:\> $AppGw =  Set-AzApplicationGatewayRedirectConfiguration -ApplicationGateway $appgw -Name "RedirectConfig01" -RedirectType Permanent -TargetUrl "https://www.contoso.com"
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dan menyimpannya dalam $AppGw variabel.
-Perintah kedua mengubah konfigurasi pengalihan untuk gateway aplikasi untuk mengalihkan tipe Permanen dan menggunakan url target.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dan menyimpannya dalam variabel $AppGw.
+Perintah kedua mengubah konfigurasi pengalihan gateway aplikasi untuk mengalihkan tipe Permanen dan menggunakan url target.
 
 ### Contoh 2
 
-Mengatur konfigurasi pengalihan pada Gateway Aplikasi yang sudah ada. (otomatisgenerated)
+Mengatur konfigurasi pengalihan pada Application Gateway yang sudah ada. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludePath
-Sertakan jalur di url yang dialihkan.
+Sertakan jalur dalam url yang dialihkan.
 Default adalah true.
 
 ```yaml
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeQueryString
-Sertakan string kueri di url yang dialihkan.
+Sertakan string kueri dalam url yang dialihkan.
 Default adalah true.
 
 ```yaml
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetUrl
-Pengalihan URL target
+Pengalihan fo URL target
 
 ```yaml
 Type: System.String
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

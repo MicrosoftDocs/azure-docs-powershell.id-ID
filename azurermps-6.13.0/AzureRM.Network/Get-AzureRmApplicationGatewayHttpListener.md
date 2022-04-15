@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmApplicationGatewayHttpListener.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmApplicationGatewayHttpListener.md
 ms.openlocfilehash: 0cb29f9ad00c2412d9ab492bba780e977ef6b571
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428218"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142356014"
 ---
 # Get-AzureRmApplicationGatewayHttpListener
 
 ## SYNOPSIS
-Mendapatkan pendengar HTTP dari gateway aplikasi.
+Mendapatkan pendengar HTTP gateway aplikasi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ Get-AzureRmApplicationGatewayHttpListener [-Name <String>] -ApplicationGateway <
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmApplicationGatewayHttpListener** mendapatkan pendengar HTTP dari gateway aplikasi.
+Cmdlet **Get-AzureRmApplicationGatewayHttpListener** mendapatkan pendengar HTTP gateway aplikasi.
 
 ## EXAMPLES
 
@@ -40,13 +40,13 @@ PS C:\> $Listener = Get-AzureRmApplicationGatewayHttpListener -Name "Listener01"
 
 Perintah ini mendapatkan pendengar HTTP bernama Listener01.
 
-### Contoh 2: Mendapatkan daftar dengarkan HTTP
+### Contoh 2: Dapatkan daftar pendengar HTTP
 ```
 PS C:\>$Appgw = Get-AzureRmApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 PS C:\> $Listeners = Get-AzureRmApplicationGatewayHttpListener -ApplicationGateway $Appgw
 ```
 
-Perintah ini mendapatkan daftar dengarkan HTTP.
+Perintah ini mendapatkan daftar pendengar HTTP.
 
 ## PARAMETERS
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama pendengar HTTP yang didaurkan cmdlet ini.
+Menentukan nama pendengar HTTP yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

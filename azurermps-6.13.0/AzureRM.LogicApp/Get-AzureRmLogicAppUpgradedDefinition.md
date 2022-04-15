@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.logic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/LogicApp/Commands.LogicApp/help/Get-AzureRmLogicAppUpgradedDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/LogicApp/Commands.LogicApp/help/Get-AzureRmLogicAppUpgradedDefinition.md
-ms.openlocfilehash: ebb459a528d306e8e72c267ca44d8773f5cbbc6091fdd14ce6eaa7b291e8cb8e
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: b0f4569c123a483db1cceffbcdfd68ef8835a31b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418566"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142356381"
 ---
 # Get-AzureRmLogicAppUpgradedDefinition
 
 ## SYNOPSIS
-Mendapatkan definisi yang ditingkatkan untuk aplikasi logika.
+Mendapatkan definisi yang dimutakhirkan untuk aplikasi logika.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -34,11 +34,11 @@ Tentukan nama grup sumber daya, nama aplikasi logika, dan versi skema target.
 Modul ini mendukung parameter dinamis.
 Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
-Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilai tersebut.
+Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan definisi aplikasi logika yang dimutakhirkan
+### Contoh 1: Dapatkan definisi pemutakhiran aplikasi logika
 ```
 PS C:\>$UpgradedDefinition = Get-AzureRmLogicAppUpgradedDefinition -ResourceGroupName "ResourceGroup11" -Name "LogicApp01" -TargetSchemaVersion "2016-06-01"
 $UpgradedDefinition.ToString()
@@ -185,14 +185,14 @@ $UpgradedDefinition.ToString()
 }
 ```
 
-Perintah pertama mendapatkan definisi dari aplikasi logika yang dimutakhirkan ke versi skema target yang ditentukan.
-Perintah menyimpan definisi dalam $UpgradedDefinition variabel.
-Perintah kedua menampilkan konten dari $UpgradedDefinition sebagai string.
+Perintah pertama mendapatkan definisi untuk aplikasi logika yang dimutakhirkan ke versi skema target yang ditentukan.
+Perintah menyimpan definisi dalam variabel $UpgradedDefinition.
+Perintah kedua menampilkan konten $UpgradedDefinition sebagai string.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

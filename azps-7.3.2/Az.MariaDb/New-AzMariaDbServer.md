@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mariadb/new-azma
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/New-AzMariaDbServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/New-AzMariaDbServer.md
-ms.openlocfilehash: 890f88f44b286d879830e6110539f333dd5cab14
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 302d78d1040c52fe3baeeaf87b43c8bc1137be64
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140008374"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142346129"
 ---
 # New-AzMariaDbServer
 
 ## SYNOPSIS
 Membuat MariaDB baru.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.mariadb/new-azmariadbserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ Perintah ini membuat MariaDB baru.
 ## PARAMETERS
 
 ### -AdministratorLoginPassword
-Kata sandi administrator, harus menggunakan SecureString.
+Kata sandi administrator, harus berupa SecureString.
 
 ```yaml
 Type: System.Security.SecureString
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupRetentionDay
-Pencadangan hari penyimpanan untuk server.
+Mencadangkan hari penyimpanan untuk server.
 
 ```yaml
 Type: System.Int32
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-DefaultParameters Kawasan Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+kawasan DefaultParameters Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
 
 ```yaml
 Type: System.Management.Automation.PSObject
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -GeoRedundantBackup
-Aktifkan Geo-redundan atau bukan untuk pencadangan server.
+Aktifkan Geo-redundant atau tidak untuk cadangan server.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Support.GeoRedundantBackup
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya tersebut.
+Nama grup sumber daya yang berisi sumber daya.
 
 ```yaml
 Type: System.String
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Nama sku, biasanya, tier + keluarga + inti, misalnya B_Gen4_1, GP_Gen5_8.
+Nama sku, biasanya, tingkat + family + core, misalnya B_Gen4_1, GP_Gen5_8.
 
 ```yaml
 Type: System.String
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -SslEnforcement
-Aktifkan penerapan ssl atau jangan saat tersambung ke server.
+Aktifkan penerapan ssl atau tidak saat tersambung ke server.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Support.SslEnforcementEnum
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAutogrow
-Aktifkan Storage Auto Grow.
+Aktifkan Storage Pertumbuhan Otomatis.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Support.StorageAutogrow
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageInMb
-Penyimpanan maks diperbolehkan untuk server.
+Penyimpanan maks yang diperbolehkan untuk server.
 
 ```yaml
 Type: System.Int32
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan
+ID langganan adalah bagian dari URI untuk setiap panggilan layanan
 
 ```yaml
 Type: System.String
@@ -306,7 +309,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -322,7 +325,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -337,7 +340,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

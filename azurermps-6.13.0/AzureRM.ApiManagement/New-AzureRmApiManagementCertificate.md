@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/New-AzureRmApiManagementCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/New-AzureRmApiManagementCertificate.md
 ms.openlocfilehash: f97f6c59bc1888f511d84ed49e6d1d49a5d7f57f
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420390"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142360386"
 ---
 # New-AzureRmApiManagementCertificate
 
 ## SYNOPSIS
-Membuat sertifikat Manajemen API untuk digunakan selama Autentikasi dengan Backend.
+Membuat sertifikat API Management yang akan digunakan selama Autentikasi dengan Backend.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -35,7 +35,7 @@ New-AzureRmApiManagementCertificate -Context <PsApiManagementContext> [-Certific
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmApiManagementCertificate** membuat sertifikat Manajemen API Azure.
+Cmdlet **AzureRmApiManagementCertificate baru** membuat sertifikat API Management Azure.
 
 ## EXAMPLES
 
@@ -50,8 +50,8 @@ Perintah ini mengunggah sertifikat ke Manajemen Api. Sertifikat ini bisa digunak
 ## PARAMETERS
 
 ### -CertificateId
-Menentukan ID sertifikat untuk dibuat.
-Jika Anda tidak menentukan parameter ini, ID dihasilkan untuk Anda.
+Menentukan ID sertifikat yang akan dibuat.
+Jika Anda tidak menentukan parameter ini, ID akan dibuat untuk Anda.
 
 ```yaml
 Type: System.String
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Menentukan objek **PsApiManagementContext.**
+Menentukan objek **PsApiManagementContext** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 
 ### -PfxBytes
 Menentukan array byte file sertifikat dalam format .pfx.
-Parameter ini diperlukan jika Anda tidak menentukan parameter *PfxFilePath.*
+Parameter ini diperlukan jika Anda tidak menentukan parameter *PfxFilePath* .
 
 ```yaml
 Type: System.Byte[]
@@ -112,8 +112,8 @@ Accept wildcard characters: False
 ```
 
 ### -PfxFilePath
-Menentukan jalur ke file sertifikat dalam format .pfx untuk membuat dan mengunggah.
-Parameter ini diperlukan jika Anda tidak menentukan parameter *PfxBytes.*
+Menentukan jalur ke file sertifikat dalam format .pfx untuk dibuat dan diunggah.
+Parameter ini diperlukan jika Anda tidak menentukan parameter *PfxBytes* .
 
 ```yaml
 Type: System.String
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -163,7 +163,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmApiManagementCertificate](./Get-AzureRmApiManagementCertificate.md)
 
-[Remove-AzureRmApiManagementCertificate](./Remove-AzureRmApiManagementCertificate.md)
+[Hapus-AzureRmApiManagementCertificate](./Remove-AzureRmApiManagementCertificate.md)
 
 [Set-AzureRmApiManagementCertificate](./Set-AzureRmApiManagementCertificate.md)
 

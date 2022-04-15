@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBAccount.md
-ms.openlocfilehash: 9382a15cf070f04ca41fea0072d4a8684c9df01b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: b13a1d9929a246dc2c6e9ede8160f4796e66f5bb
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140395151"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142376675"
 ---
 # Get-AzCosmosDBAccount
 
 ## SYNOPSIS
 Dapatkan Akun CosmosDB.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,7 +63,7 @@ NetworkAclBypass              : None
 NetworkAclBypassResourceIds   : {}
 ```
 
-Dapatkan akun database CosmosDB dengan nama databaseAccountName di ResourceGroup resourceGroupName.
+Dapatkan akun database CosmosDB dengan database namaAccountName di ResourceGroup resourceGroupName.
 
 ## PARAMETERS
 
@@ -125,11 +128,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

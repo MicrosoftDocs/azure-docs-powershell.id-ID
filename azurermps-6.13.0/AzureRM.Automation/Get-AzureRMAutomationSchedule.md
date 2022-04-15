@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRMAutomationSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRMAutomationSchedule.md
 ms.openlocfilehash: 78e34c5d3d94a964fbff6d0cbaa74c9dd3dd2177
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423365"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142360210"
 ---
 # Get-AzureRmAutomationSchedule
 
@@ -22,7 +22,7 @@ Mendapatkan jadwal Otomatisasi.
 
 ## SYNTAX
 
-### SecaraSemua (Default)
+### ByAll (Default)
 ```
 Get-AzureRmAutomationSchedule [-ResourceGroupName] <String> [-AutomationAccountName] <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -44,12 +44,12 @@ Cmdlet **Get-AzureRmAutomationSchedule** mendapatkan jadwal Azure Automation.
 PS C:\>Get-AzureRmAutomationSchedule -AutomationAccountName "Contoso17" -Name "DailySchedule08" -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini mendapatkan jadwal bernama DailySchedule08.
+Perintah ini mendapatkan jadwal yang bernama DailySchedule08.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang akan mendapatkan jadwal dari cmdlet ini.
+Menentukan nama akun Otomatisasi tempat cmdlet ini mendapatkan jadwal.
 
 ```yaml
 Type: System.String
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama jadwal yang akan didaangkan cmdlet ini.
+Menentukan nama jadwal yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -123,10 +123,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmAutomationSchedule](./New-AzureRMAutomationSchedule.md)
+[AzureRmAutomationSchedule Baru](./New-AzureRMAutomationSchedule.md)
 
-[Remove-AzureRmAutomationSchedule](./Remove-AzureRMAutomationSchedule.md)
+[Hapus-AzureRmAutomationSchedule](./Remove-AzureRMAutomationSchedule.md)
 
-[Set-AzureRmAutomationSchedule](./Set-AzureRMAutomationSchedule.md)
+[Atur-AzureRmAutomationSchedule](./Set-AzureRMAutomationSchedule.md)
 
 
