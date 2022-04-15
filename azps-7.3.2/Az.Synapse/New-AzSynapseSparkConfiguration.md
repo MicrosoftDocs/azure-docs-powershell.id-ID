@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseSparkConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseSparkConfiguration.md
-ms.openlocfilehash: b9ac5488f033a06d18293eebd1ba82ba18fe18ac
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1dab382b8aace84cd17844707acc1babc32ca7bf
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140005293"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142396511"
 ---
 # New-AzSynapseSparkConfiguration
 
 ## SYNOPSIS
-Membuat atau memperbarui konfigurasi grafik api di ruang kerja.
+Membuat atau memperbarui konfigurasi percikan api dalam ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapsesparkconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,8 +35,8 @@ New-AzSynapseSparkConfiguration -WorkspaceObject <PSSynapseWorkspace> [-Name <St
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSynapseSparkConfiguration** membuat atau memperbarui konfigurasi grafik api di dalam ruang kerja.
-Jika Anda menentukan nama konfigurasi grafik api, konfigurasi grafik api baru akan diberi nama seperti yang ditentukan, jika Anda tidak menentukan namanya, konfigurasi grafik api baru akan menjadi nama yang sama dengan file definisi.
+Cmdlet **New-AzSynapseSparkConfiguration** membuat atau memperbarui konfigurasi percikan api dalam ruang kerja.
+Jika Anda menentukan nama konfigurasi percikan api, konfigurasi percikan baru akan dinamai sebagai yang ditentukan, jika Anda tidak menentukan nama, konfigurasi percikan baru akan sama dengan nama file definisi.
 
 ## EXAMPLES
 
@@ -42,14 +45,14 @@ Jika Anda menentukan nama konfigurasi grafik api, konfigurasi grafik api baru ak
 PS C:\> New-AzSynapseSparkConfiguration -WorkspaceName ContosoWorkspace -DefinitionFile "C:\\samples\\sparkconfiguration.json"
 ```
 
-Perintah ini membuat atau memperbarui konfigurasi grafik api dari file sparkconfiguration.json di ruang kerja yang bernama ContosoWorkspace.
+Perintah ini membuat atau memperbarui konfigurasi percikan api dari file sparkconfiguration.json di ruang kerja bernama ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
 PS C:\> New-AzSynapseSparkConfiguration -WorkspaceName ContosoWorkspace -Name ContosoSparkConfiguration -DefinitionFile "C:\\samples\\sparkconfiguration.json"
 ```
 
-Perintah ini membuat atau memperbarui konfigurasi grafik api bernama ContosoSparkConfiguration dari file sparkconfiguration.json di ruang kerja yang bernama ContosoWorkspace.
+Perintah ini membuat atau memperbarui konfigurasi percikan api bernama ContosoSparkConfiguration dari file sparkconfiguration.json di ruang kerja bernama ContosoWorkspace.
 
 ### Contoh 3
 ```powershell
@@ -57,12 +60,12 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | New-AzSynapseSparkConfiguration -DefinitionFile "C:\\samples\\sparkconfiguration.json"
 ```
 
-Perintah ini membuat atau memperbarui konfigurasi grafik api dari file sparkconfiguration.json di ruang kerja yang bernama ContosoWorkspace melalui pipeline.
+Perintah ini membuat atau memperbarui konfigurasi percikan api dari file sparkconfiguration.json di ruang kerja bernama ContosoWorkspace melalui pipeline.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Konfigurasi Grafik Api.
+Nama Konfigurasi Spark.
 
 ```yaml
 Type: System.String
@@ -121,7 +124,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

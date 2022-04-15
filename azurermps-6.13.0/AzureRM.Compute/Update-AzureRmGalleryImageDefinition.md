@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Update-AzureRmGalleryImageDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Update-AzureRmGalleryImageDefinition.md
-ms.openlocfilehash: a0a36780781c28e0243657d73828cfe1d78f3d6f0f5963002593a63fa0350807
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 445029c41e27cce14bff2ac14d826adf28f3c9ce
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140865496"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142358608"
 ---
 # Update-AzureRmGalleryImageDefinition
 
@@ -66,7 +66,7 @@ Memperbarui definisi gambar galeri.
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Deskripsi sumber daya Definisi gambar galeri. 
+Deskripsi sumber daya definisi gambar galeri. 
 
 ```yaml
 Type: System.String
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisallowedDiskType
-Tipe disk yang tidak diizinkan.
+Tipe disk yang tidak diperbolehkan.
 
 ```yaml
 Type: System.String[]
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndOfLifeDate
-Tanggal masa berakhir galeri Definisi Gambar
+Tanggal berakhirnya masa pakai galeri Definisi Gambar
 
 ```yaml
 Type: System.DateTime
@@ -185,8 +185,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Maximum Maximum Maksimal
-Jumlah maksimal memori yang direkomendasikan
+### -MaximumMemory
+Maksimum memori yang disarankan
 
 ```yaml
 Type: System.Int32
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaximumVCPU
-Jumlah maksimal inti CPU yang direkomendasikan
+Maksimum inti CPU yang direkomendasikan
 
 ```yaml
 Type: System.Int32
@@ -215,8 +215,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Minimum Minimum MinimumMal
-Minimum memori yang direkomendasikan
+### -MinimumMemory
+Minimum memori yang disarankan
 
 ```yaml
 Type: System.Int32
@@ -261,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivacyStatementUri
-Uri pernyataan privasi.
+Pernyataan privasi uri.
 
 ```yaml
 Type: System.String
@@ -321,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReleaseNoteUri
-Uri catatan rilis.
+Catatan rilis uri.
 
 ```yaml
 Type: System.String
@@ -381,7 +381,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -397,7 +397,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -412,7 +412,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

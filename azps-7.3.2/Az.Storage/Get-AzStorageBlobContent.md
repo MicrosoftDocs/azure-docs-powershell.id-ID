@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlobContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlobContent.md
-ms.openlocfilehash: c96ae4964d926a17c762f735002826f9ac1fe384
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 4c9398dfb8ec4407b8bb4ddfd95d0923972207b7
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140385282"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142338857"
 ---
 # Get-AzStorageBlobContent
 
 ## SYNOPSIS
 Mengunduh blob penyimpanan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageblobcontent) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Get-AzStorageBlobContent [-Destination <String>] -AbsoluteUri <String> [-Force] 
 
 ## DESCRIPTION
 Cmdlet **Get-AzStorageBlobContent** mengunduh blob penyimpanan tertentu.
-Jika nama blob tidak valid untuk komputer lokal, cmdlet ini akan secara otomatis mengatasinya jika memungkinkan.
+Jika nama blob tidak valid untuk komputer lokal, cmdlet ini akan otomatis mengatasinya jika memungkinkan.
 
 ## EXAMPLES
 
@@ -65,7 +68,7 @@ Jika nama blob tidak valid untuk komputer lokal, cmdlet ini akan secara otomatis
 PS C:\>Get-AzStorageBlobContent -Container "ContainerName" -Blob "Blob" -Destination "C:\test\"
 ```
 
-Perintah ini mengunduh blob menurut nama.
+Perintah ini mengunduh blob berdasarkan nama.
 
 ### Contoh 2: Unduh konten blob menggunakan pipeline
 ```
@@ -74,32 +77,32 @@ PS C:\>Get-AzStorageBlob -Container containername -Blob blobname | Get-AzStorage
 
 Perintah ini menggunakan pipeline untuk menemukan dan mengunduh konten blob.
 
-### Contoh 3: Unduh konten blob menggunakan saluran dan karakter wildcard
+### Contoh 3: Mengunduh konten blob menggunakan pipeline dan karakter wildcard
 ```
 PS C:\>Get-AzStorageContainer container* | Get-AzStorageBlobContent -Blob "cbox.exe" -Destination "C:\test"
 ```
 
 Contoh ini menggunakan karakter wildcard tanda bintang dan saluran untuk menemukan dan mengunduh konten blob.
 
-### Contoh 4: Mendapatkan objek blob dan menyimpannya dalam variabel, lalu mengunduh konten blob dengan objek blob
+### Contoh 4: Dapatkan objek blob dan simpan dalam variabel, lalu unduh konten blob dengan objek blob
 ```
 PS C:\>$blob = Get-AzStorageBlob -Container containername -Blob blobname 
 PS C:\>Get-AzStorageBlobContent -CloudBlob $blob.ICloudBlob -Destination "C:\test"
 ```
 
-Contoh ini pertama mendapatkan objek blob dan menyimpannya dalam variabel, lalu mengunduh konten blob dengan objek blob. 
+Contoh ini terlebih dahulu mendapatkan objek blob dan menyimpannya dalam variabel, lalu mengunduh konten blob dengan objek blob. 
 
 ### Contoh 5: Unduh konten blob dengan blob Uri
 ```
 PS C:\>Get-AzStorageBlobContent -Uri $blobUri -Destination "C:\test" -Force
 ```
 
-Contoh ini akan mengunduh konten blob dengan Uri, Uri dapat menjadi token Uri dengan Sas. Jika blob berada di akun disk terkelola, dan server memerlukan token beruang di samping Sas Uri untuk diunduh, cmdlet akan mencoba membuat token beruang dengan audiens yang dikembalikan server dan pengguna AAD masuk, lalu mengunduh blob dengan sas Uri dan token beruang.
+Contoh ini akan mengunduh konten blob dengan Uri, Uri dapat berupa Uri dengan token Sas. Jika blob berada di akun disk yang dikelola, dan server memerlukan token bearer selain Sas Uri untuk diunduh, cmdlet akan mencoba menghasilkan token pembawa dengan audiens yang dikembalikan server dan kredensial AAD pengguna login, lalu unduh blob dengan sas Uri dan token bearer.
 
 ## PARAMETERS
 
 ### -AbsoluteUri
-Blob uri untuk mengunduhnya.
+Blob uri untuk diunduh.
 
 ```yaml
 Type: System.String
@@ -174,9 +177,9 @@ Accept wildcard characters: False
 ```
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu yang habis di sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba permintaan.
-Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini akan mengembalikan kesalahan.
+Menentukan interval waktu habis pihak klien, dalam hitungan detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 
 ### -CloudBlobContainer
 Menentukan objek **CloudBlobContainer** dari pustaka klien penyimpanan Azure.
-Anda dapat membuatnya atau menggunakan Get-AzStorageContainer cmdlet.
+Anda dapat membuatnya atau menggunakan cmdlet Get-AzStorageContainer.
 
 ```yaml
 Type: Microsoft.Azure.Storage.Blob.CloudBlobContainer
@@ -223,11 +226,11 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan jumlah maksimum panggilan jaringan bersama.
-Anda dapat menggunakan parameter ini untuk membatasi konkurensi guna membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Menentukan maksimum panggilan jaringan serentak.
+Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
 Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
-Parameter ini bisa membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth yang rendah, seperti 100 kilobit per detik.
-Nilai default adalah 10.
+Parameter ini dapat membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth rendah, seperti 100 kilobit per detik.
+Nilai defaultnya adalah 10.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -241,7 +244,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Container
+### -Kontainer
 Menentukan nama wadah yang memiliki blob yang ingin Anda unduh.
 
 ```yaml
@@ -257,8 +260,8 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Menentukan akun penyimpanan Azure yang ingin Anda unduh konten blobnya.
-Anda dapat menggunakan cmdlet New-AzStorageContext tersebut untuk membuat konteks penyimpanan.
+Menentukan akun penyimpanan Azure tempat Anda ingin mengunduh konten blob.
+Anda dapat menggunakan cmdlet New-AzStorageContext untuk membuat konteks penyimpanan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -302,7 +305,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Menimpa file yang sudah ada tanpa konfirmasi.
 
 ```yaml
@@ -318,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan interval waktu habis di sisi layanan, dalam detik, untuk permintaan.
+Menentukan interval batas waktu sisi layanan, dalam detik, untuk permintaan.
 Jika interval yang ditentukan berlalu sebelum layanan memproses permintaan, layanan penyimpanan mengembalikan kesalahan.
 
 ```yaml
@@ -334,7 +337,7 @@ Accept wildcard characters: False
 ```
 
 ### -TagCondition
-Pernyataan ekspresi Tag opsional untuk memeriksa kecocokan kondisi. Permintaan blob akan gagal ketika tag blob tidak cocok dengan ekspresi tertentu.
+Pernyataan ekspresi Tag Opsional untuk memeriksa kondisi kecocokan. Permintaan blob akan gagal ketika tag blob tidak cocok dengan ekspresi tertentu.
 Lihat detail di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
 
 ```yaml
@@ -350,7 +353,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -366,7 +369,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -381,7 +384,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -393,10 +396,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.WindowsAzure.commands.common. Storage. ResourceModel.AzureStorageBlob
+### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureStorageBlob
 
 ## CATATAN
-* Jika nama blob tidak valid untuk komputer lokal, cmdlet autoresolves ini akan menjalankannya, jika memungkinkan.
+* Jika nama blob tidak valid untuk komputer lokal, cmdlet ini akan otomatis melakukannya, jika memungkinkan.
 
 ## RELATED LINKS
 

@@ -4,11 +4,11 @@ Module Name: AzureRM.DeploymentManager
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.deploymentmanager/set-azurermdeploymentmanagerservicetopology
 schema: 2.0.0
 ms.openlocfilehash: 6387e5a2938bdef99e4aea5e93248a0ecf8e8da7
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422017"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142363319"
 ---
 # Set-AzureRmDeploymentManagerServiceTopology
 
@@ -23,7 +23,7 @@ Set-AzureRmDeploymentManagerServiceTopology [-ServiceTopology] <PSServiceTopolog
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmDeploymentManagerServiceTopology** memperbarui topologi layanan dengan objek topologi layanan tertentu.
+Cmdlet **Set-AzureRmDeploymentManagerServiceTopology** memperbarui topologi layanan dengan objek topologi layanan yang ditentukan.
 Cmdlet mengembalikan objek topologi layanan yang diperbarui.
 
 ## EXAMPLES
@@ -33,7 +33,7 @@ Cmdlet mengembalikan objek topologi layanan yang diperbarui.
 PS C:\> Set-AzureRmDeploymentManagerService -ServiceTopology $serviceTopologyObject
 ```
 
-Perintah ini memperbarui topologi layanan yang namanya dan ResourceGroup sesuai dengan properti Nama dan ResourceGroupName $serviceTopologyObject akan diperbarui.
+Perintah ini memperbarui topologi layanan yang nama dan ResourceGroupnya masing-masing cocok dengan properti Nama dan ResourceGroupName $serviceTopologyObject.
 Perintah mengembalikan objek topologi layanan yang diperbarui.
 
 ## PARAMETERS
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

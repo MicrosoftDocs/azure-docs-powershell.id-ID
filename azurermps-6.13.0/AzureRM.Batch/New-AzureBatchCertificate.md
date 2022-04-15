@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/New-AzureBatchCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/New-AzureBatchCertificate.md
 ms.openlocfilehash: 7038f6c23273153a11aeccc8cbd12fdc6f629c28
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421286"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142389743"
 ---
 # New-AzureBatchCertificate
 
 ## SYNOPSIS
-Menambahkan sertifikat ke akun Kumpulan yang ditentukan.
+Menambahkan sertifikat ke akun Batch tertentu.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -44,22 +44,22 @@ Cmdlet **New-AzureBatchCertificate** menambahkan sertifikat ke akun Azure Batch 
 PS C:\>New-AzureBatchCertificate -FilePath "E:\Certificates\MyCert.cer" -BatchContext $Context
 ```
 
-Perintah ini menambahkan sertifikat ke akun Batch yang ditentukan dengan menggunakan file E:\Certificates\MyCert.cer.
+Perintah ini menambahkan sertifikat ke akun Batch yang ditentukan menggunakan file E:\Certificates\MyCert.cer.
 
-### Contoh 2: Tambahkan sertifikat dari data mentah
+### Contoh 2: Menambahkan sertifikat dari data mentah
 ```
 PS C:\>$RawData = [System.IO.File]::ReadAllBytes("E:\Certificates\MyCert.pfx")
 PS C:\> New-AzureBatchCertificate -RawData $RawData -Password "Password1234" -BatchContext $Context
 ```
 
-Perintah pertama membaca data dari file bernama MyCert.pfx ke dalam $RawData variabel.
-Perintah kedua menambahkan sertifikat ke akun Batch yang ditentukan menggunakan data mentah yang disimpan dalam $RawData.
+Perintah pertama membaca data dari file bernama MyCert.pfx ke dalam variabel $RawData.
+Perintah kedua menambahkan sertifikat ke akun Batch tertentu menggunakan data mentah yang disimpan di $RawData.
 
 ## PARAMETERS
 
 ### -BatchContext
-Menentukan contoh **BatchAccountContext** yang digunakan cmdlet untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -Password
-Menentukan kata sandi untuk mengakses sertifikat kunci privat.
+Menentukan kata sandi untuk mengakses kunci privat sertifikat.
 Anda harus menentukan parameter ini jika Anda menentukan sertifikat dalam format .pfx.
 
 ```yaml
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -RawData
-Menentukan data sertifikat mentah baik dalam format .cer atau .pfx.
+Menentukan data sertifikat mentah dalam format .cer atau .pfx.
 
 ```yaml
 Type: System.Byte[]
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -157,8 +157,8 @@ Parameter: BatchContext (ByValue)
 
 [Get-AzureRmBatchAccountKeys](./Get-AzureRmBatchAccountKeys.md)
 
-[Remove-AzureBatchCertificate](./Remove-AzureBatchCertificate.md)
+[Hapus-AzureBatchCertificate](./Remove-AzureBatchCertificate.md)
 
-[Cmdlet Kumpulan Azure](./AzureRM.Batch.md)
+[Cmdlet Azure Batch](./AzureRM.Batch.md)
 
 

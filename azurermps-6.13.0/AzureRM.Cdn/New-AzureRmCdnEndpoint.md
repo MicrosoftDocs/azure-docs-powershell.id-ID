@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Cdn/Commands.Cdn/help/New-AzureRmCdnEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Cdn/Commands.Cdn/help/New-AzureRmCdnEndpoint.md
 ms.openlocfilehash: 62a4859b5a64003956a4975411f809176f2917e3
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424561"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142389465"
 ---
 # New-AzureRmCdnEndpoint
 
 ## SYNOPSIS
-Membuat CDN akhir.
+Membuat titik akhir CDN.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -52,7 +52,7 @@ Cmdlet **New-AzureRmCdnEndpoint** membuat titik akhir Azure Content Delivery Net
 ## PARAMETERS
 
 ### -CdnProfile
-Menentukan objek CDN profil tempat titik akhir ditambahkan.
+Menentukan objek profil CDN tempat titik akhir ditambahkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Cdn.Models.Profile.PSProfile
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContentTypesToCompress
-Menentukan array tipe konten untuk dikompresi dari simpul tepi ke klien.
+Menentukan array tipe konten untuk dipadatkan dari simpul tepi ke klien.
 
 ```yaml
 Type: System.String[]
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -GeoFilters
-Daftar filter geo yang berlaku pada titik akhir ini.
+Daftar filter geografis yang berlaku untuk titik akhir ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Cdn.Models.Endpoint.PSGeoFilter[]
@@ -141,7 +141,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpPort
+### -HttpPort
 Menentukan nomor port HTTP pada server asal.
 
 ```yaml
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -HttpsPort
-Menentukan nomor port HTTPS pada server origin.
+Menentukan nomor port HTTPS pada server asal.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -186,7 +186,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -IshttpAllowed
+### -IsHttpAllowed
 Menunjukkan apakah titik akhir mengaktifkan lalu lintas HTTP.
 
 ```yaml
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -OptimizationType
-Menentukan optimisasi apa pun yang memiliki titik akhir ini.
+Menentukan optimasi apa pun yang dimiliki titik akhir ini.
 
 ```yaml
 Type: System.String
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginHostHeader
-Menentukan kepala host origin titik akhir.
+Menentukan kepala host asal titik akhir.
 
 ```yaml
 Type: System.String
@@ -262,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginHostName
-Menentukan nama host server origin.
+Menentukan nama host server asal.
 
 ```yaml
 Type: System.String
@@ -277,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginName
-Menentukan nama sumber daya server origin.
+Menentukan nama sumber daya server asal.
 
 ```yaml
 Type: System.String
@@ -292,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginPath
-Menentukan jalur server origin.
+Menentukan jalur server asal.
 
 ```yaml
 Type: System.String
@@ -306,8 +306,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur grafis untuk Akselerasi Situs Dinamis
+### -ProbePath
+Menentukan jalur probe untuk Akselerasi Situs Dinamis
 
 ```yaml
 Type: System.String
@@ -336,8 +336,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -QueryStringCachingBestringior
-Menentukan perilaku titik akhir CDN saat string kueri ada dalam URL permintaan.
+### -QueryStringCachingBehavior
+Menentukan perilaku titik akhir CDN saat string kueri berada di URL permintaan.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.Cdn.Models.Endpoint.PSQueryStringCachingBehavior]
@@ -368,7 +368,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag yang akan dikaitkan dengan Azure CDN titik akhir.
+Tag yang akan dikaitkan dengan titik akhir Azure CDN.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -383,7 +383,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -399,7 +399,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -414,7 +414,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -431,7 +431,7 @@ Parameter: CdnProfile (ByValue)
 
 [Get-AzureRmCdnEndpoint](./Get-AzureRmCdnEndpoint.md)
 
-[Remove-AzureRmCdnEndpoint](./Remove-AzureRmCdnEndpoint.md)
+[Hapus-AzureRmCdnEndpoint](./Remove-AzureRmCdnEndpoint.md)
 
 [Set-AzureRmCdnEndpoint](./Set-AzureRmCdnEndpoint.md)
 

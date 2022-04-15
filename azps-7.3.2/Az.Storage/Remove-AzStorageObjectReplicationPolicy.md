@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageObjectReplicationPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageObjectReplicationPolicy.md
-ms.openlocfilehash: 5eeb0256dfc7abac2e9ec9a525c09a14c032a315
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5e4a12c3404dd9907b3e040d952ace517bbe37ec
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140195462"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142338245"
 ---
 # Remove-AzStorageObjectReplicationPolicy
 
 ## SYNOPSIS
-Menghapus kebijakan replikasi objek tertentu dari Storage tersebut.
+Menghapus kebijakan replikasi objek tertentu dari akun Storage.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/remove-azstorageobjectreplicationpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Nama Akun (Default)
+### AccountName (Default)
 ```
 Remove-AzStorageObjectReplicationPolicy [-ResourceGroupName] <String> [-StorageAccountName] <String>
  -PolicyId <String> [-PassThru] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
@@ -39,7 +42,7 @@ Remove-AzStorageObjectReplicationPolicy -InputObject <PSObjectReplicationPolicy>
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzStorageObjectReplicationPolicy** menghapus kebijakan replikasi objek tertentu dari Storage mereka.
+Cmdlet **Remove-AzStorageObjectReplicationPolicy** menghapus kebijakan replikasi objek tertentu dari akun Storage.
 
 ## EXAMPLES
 
@@ -68,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Kebijakan Replikasi Objek untuk Dihapus.
+Objek Kebijakan Replikasi objek untuk Menghapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSObjectReplicationPolicy
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{fill passThru Description}}
+{{Fill PassThru Description}}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage objek akun
+objek akun Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Storage Akun.
+Storage Nama Akun.
 
 ```yaml
 Type: System.String
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -4,11 +4,11 @@ ms.assetid: 17065902-97EA-4F5F-926B-B7CBEE3EAF84
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 9af140f35cfa0619c5347ae20e2c62e6b26f1df3
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424105"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142334841"
 ---
 # Set-AzureSBAuthorizationRule
 
@@ -26,7 +26,7 @@ Set-AzureSBAuthorizationRule -Name <String> [-Permission <AccessRights[]>] -Name
  [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
 
-### Kumpulan nama
+### NamespaceSAS
 ```
 Set-AzureSBAuthorizationRule -Name <String> [-Permission <AccessRights[]>] -Namespace <String>
  [-PrimaryKey <String>] [-SecondaryKey <String>] [-Profile <AzureSMProfile>] [<CommonParameters>]
@@ -39,12 +39,12 @@ Memperbarui aturan otorisasi Bus Layanan yang sudah ada.
 
 ## EXAMPLES
 
-### Contoh 1: Perpanjang kunci utama untuk aturan otorisasi di tingkat ruang nama
+### Contoh 1: Memperpanjang kunci utama untuk aturan otorisasi pada tingkat ruang nama
 ```
 PS C:\> Set-AzureSBAuthorizationRule -Name MyRule -Namespace MyNamespace -Permission $("Send")
 ```
 
-Kunci primer diperpanjang.
+Kunci utama diperpanjang.
 
 ### Contoh 2: Perbarui izin aturan otorisasi
 ```
@@ -56,7 +56,7 @@ Memperbarui izin.
 ## PARAMETERS
 
 ### -EntityName
-Nama entitas untuk diterapkan aturan di.
+Nama entitas untuk menerapkan aturan pada.
 
 ```yaml
 Type: String
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -EntityType
-Tipe entitas (Queue, Topic, Relay, NotificationHub).
+Tipe entitas (Antrean, Topik, Relay, NotificationHub).
 
 ```yaml
 Type: ServiceBusEntityType
@@ -116,7 +116,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Permission
+### -Izin
 Izin otorisasi (Kirim, Kelola, Dengarkan).
 
 ```yaml
@@ -148,8 +148,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecondaryKey
-Tombol sekunder Tanda Tangan Akses Bersama.
+Kunci sekunder Tanda Tangan Akses Bersama.
 
 ```yaml
 Type: String
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -191,8 +191,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureSBAuthorizationRule](./Get-AzureSBAuthorizationRule.md)
 
-[New-AzureSBAuthorizationRule](./New-AzureSBAuthorizationRule.md)
+[AzureSBAuthorizationRule baru](./New-AzureSBAuthorizationRule.md)
 
-[Remove-AzureSBAuthorizationRule](./Remove-AzureSBAuthorizationRule.md)
+[Hapus-AzureSBAuthorizationRule](./Remove-AzureSBAuthorizationRule.md)
 
 

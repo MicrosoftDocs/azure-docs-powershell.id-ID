@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/copy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Copy-AzMarketplacePrivateStoreCollectionOffer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Copy-AzMarketplacePrivateStoreCollectionOffer.md
-ms.openlocfilehash: 3c20ca47c9fe14137906aaf4de6d0bbf8c363f95
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ff00eb11156c41470e3e7db1ad165572f6ad9e66
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140179334"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142346021"
 ---
 # Copy-AzMarketplacePrivateStoreCollectionOffer
 
 ## SYNOPSIS
-mentransfer penawaran (menyalin atau memindahkan) dari kumpulan sumber ke kumpulan target
+mentransfer penawaran (menyalin atau memindahkan) dari kumpulan sumber ke koleksi target
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.marketplace/copy-azmarketplaceprivatestorecollectionoffer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Copy-AzMarketplacePrivateStoreCollectionOffer -CollectionId <String> -PrivateSto
  -Payload <ITransferOffersProperties> [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### TransferViaIdentity
+### TransferViaIdentitas
 ```
 Copy-AzMarketplacePrivateStoreCollectionOffer -InputObject <IMarketplaceIdentity>
  -Payload <ITransferOffersProperties> [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
@@ -46,11 +49,11 @@ Copy-AzMarketplacePrivateStoreCollectionOffer -InputObject <IMarketplaceIdentity
 ```
 
 ## DESCRIPTION
-mentransfer penawaran (menyalin atau memindahkan) dari kumpulan sumber ke kumpulan target
+mentransfer penawaran (menyalin atau memindahkan) dari kumpulan sumber ke koleksi target
 
 ## EXAMPLES
 
-### Contoh 1: Salin penawaran dari kumpulan sumber ke kumpulan target.
+### Contoh 1: Salin penawaran dari kumpulan sumber ke koleksi target.
 ```powershell
 PS C:\> $payload = @{OfferIdsList = "aumatics.azure_managedservices"; Operation = "Copy"; TargetCollection = "3ac32d8c-e888-4dc6-b4ff-be4d755af13a"}
 PS C:\>  Copy-AzMarketplacePrivateStoreCollectionOffer -PrivateStoreId 3ac32d8c-e888-4dc6-b4ff-be4d755af13a -CollectionId fdb889a1-cf3e-49f0-95b8-2bb012fa01f1 -Payload $payload
@@ -60,7 +63,7 @@ Failed Succeeded
 {}     {DefaultCollection}
 ```
 
-Salinan perintah ini menawarkan dari kumpulan sumber ke kumpulan target.
+Salinan perintah ini menawarkan dari kumpulan sumber ke koleksi target.
 
 ## PARAMETERS
 
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Marketplace.Models.IMarketplaceIdentity
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -OfferIdList
-Menawarkan daftar id untuk ditransfer dari kumpulan sumber ke kumpulan target
+Menawarkan daftar id untuk ditransfer dari koleksi sumber ke koleksi target
 
 ```yaml
 Type: System.String[]
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -Operasi
-Operasi untuk dilakukan (Misalnya: Menyalin atau Memindahkan)
+Operasi untuk dijalankan (Misalnya: Salin atau Pindahkan)
 
 ```yaml
 Type: System.String
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetCollection
-Id kumpulan target
+Id koleksi target
 
 ```yaml
 Type: System.String[]
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -238,17 +241,17 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IMarketplaceIdentity>: Parameter Identitas
-  - `[AdminRequestApprovalId <String>]`: ID persetujuan permintaan admin untuk mendapatkan buat atau perbarui
+  - `[AdminRequestApprovalId <String>]`: ID persetujuan permintaan admin untuk membuat atau memperbarui
   - `[CollectionId <String>]`: ID koleksi
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[OfferId <String>]`: ID penawaran untuk memperbarui atau menghapus
   - `[PrivateStoreId <String>]`: ID bursa - harus menggunakan ID penyewa
-  - `[RequestApprovalId <String>]`: ID persetujuan permintaan untuk mendapatkan buat atau perbarui
+  - `[RequestApprovalId <String>]`: ID persetujuan permintaan untuk membuat atau memperbarui
 
 PAYLOAD <ITransferOffersProperties>: Transfer menawarkan properti
-  - `[OfferIdsList <String[]>]`: Menawarkan daftar id untuk ditransfer dari kumpulan sumber ke kumpulan target
-  - `[Operation <String>]`: Operasi untuk dilakukan (Misalnya: Menyalin atau Memindahkan)
-  - `[TargetCollection <String[]>]`: Id kumpulan target
+  - `[OfferIdsList <String[]>]`: Menawarkan daftar id untuk ditransfer dari koleksi sumber ke koleksi target
+  - `[Operation <String>]`: Operasi untuk dijalankan (Misalnya: Salin atau Pindahkan)
+  - `[TargetCollection <String[]>]`: Id koleksi target
 
 ## RELATED LINKS
 

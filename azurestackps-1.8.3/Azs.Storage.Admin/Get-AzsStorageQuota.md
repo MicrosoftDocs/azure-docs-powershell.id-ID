@@ -4,11 +4,11 @@ Module Name: Azs.Storage.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 687838573459c09ceaf08c0d1c3335caa4a99769
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136579264"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142333097"
 ---
 # Get-AzsStorageQuota
 
@@ -22,7 +22,7 @@ Mengembalikan daftar kuota penyimpanan di lokasi tertentu.
 Get-AzsStorageQuota [-Location <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsStorageQuota [-Name] <String> [-Location <String>] [<CommonParameters>]
 ```
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

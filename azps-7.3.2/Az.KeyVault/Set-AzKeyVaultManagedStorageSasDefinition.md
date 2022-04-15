@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/set-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Set-AzKeyVaultManagedStorageSasDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Set-AzKeyVaultManagedStorageSasDefinition.md
-ms.openlocfilehash: d203b1a0c97d79a51d44ebec983496ec289f1bbf
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0b8de598b45f08c4e31ac41438c86b355e43aa94
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140402346"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142346723"
 ---
 # Set-AzKeyVaultManagedStorageSasDefinition
 
 ## SYNOPSIS
-Mengatur definisi Shared Access Signature (SAS) dengan Key Vault untuk Key Vault tertentu yang dikelola Azure Storage Tersebut.
+Mengatur definisi Tanda Tangan Akses Bersama (SAS) dengan Key Vault untuk akun Azure Storage yang dikelola Key Vault tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/set-azkeyvaultmanagedstoragesasdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,12 +38,12 @@ Set-AzKeyVaultManagedStorageSasDefinition [-InputObject] <PSKeyVaultManagedStora
 ```
 
 ## DESCRIPTION
-Mengatur definisi Shared Access Signature (SAS) dengan Key Vault tertentu yang dikelola Azure Storage Anda. Fungsi ini juga menetapkan rahasia yang dapat digunakan untuk mendapatkan token SAS per definisi SAS ini.
-Token SAS dihasilkan menggunakan parameter ini dan kunci aktif Key Vault yang dikelola Azure Storage Mereka.
+Mengatur definisi Tanda Tangan Akses Bersama (SAS) dengan Key Vault akun Azure Storage yang dikelola. Ini juga mengatur rahasia yang dapat digunakan untuk mendapatkan token SAS per definisi SAS ini.
+Token SAS dibuat menggunakan parameter ini dan kunci aktif akun Azure Storage yang dikelola Key Vault.
 
 ## EXAMPLES
 
-### Contoh 1: Atur definisi SAS tipe akun, dan dapatkan token SAS saat ini berdasarkan definisinya
+### Contoh 1: Atur definisi SAS tipe akun, dan dapatkan token SAS saat ini berdasarkan definisi tersebut
 ```powershell
 PS C:\> $sa = Get-AzStorageAccount -Name mysa -ResourceGroupName myrg
 PS C:\> $kv = Get-AzKeyVault -VaultName mykv
@@ -53,19 +56,19 @@ PS C:\> $sas = Set-AzKeyVaultManagedStorageSasDefinition -AccountName $sa.Storag
 PS C:\> Get-AzKeyVaultSecret -VaultName $kv.VaultName -Name $sas.Sid.Substring($sas.Sid.LastIndexOf('/')+1)
 ```
 
-Mengatur definisi SAS akun 'accountsas' di akun penyimpanan yang dikelola KeyVault 'mysa' di vault 'my vault'. Secara spesifik, urutan di atas melakukan hal berikut:
-  - mendapatkan akun penyimpanan (yang telah ada sebelumnya)
-  - mendapatkan kunci vault (yang sudah ada sebelumnya)
-  - menambahkan akun penyimpanan yang dikelola KeyVault ke vault, mengatur Key1 sebagai kunci aktif, dan dengan periode regenerasi 180 hari
+Mengatur 'account SAS definition 'accountsas' pada akun penyimpanan yang dikelola KeyVault 'mysa' dalam vault 'mykv'. Secara khusus, urutan di atas melakukan hal berikut:
+  - mendapatkan akun penyimpanan (yang sudah ada sebelumnya)
+  - mendapatkan kubah kunci (yang sudah ada sebelumnya)
+  - menambahkan akun penyimpanan yang dikelola KeyVault ke kubah, mengatur Key1 sebagai kunci aktif, dan dengan periode regenerasi 180 hari
   - mengatur konteks penyimpanan untuk akun penyimpanan tertentu, dengan Key1
-  - membuat token akun SAS untuk layanan Blob, File, Tabel, dan Antrean, untuk tipe sumber daya Layanan, Wadah dan Objek, dengan semua izin, melalui https dan dengan tanggal mulai dan berakhir yang ditentukan
-  - mengatur definisi SAS penyimpanan yang dikelola KeyVault dalam vault, dengan uri templat sebagai token SAS yang dibuat di atas, tipe 'akun' SAS dan berlaku selama 30 hari
-  - mengambil token akses sebenarnya dari rahasia KeyVault terkait dengan definisi SAS
+  - membuat token SAS akun untuk layanan Blob, File, Tabel dan Antrean, untuk tipe sumber daya Service, Container dan Object, dengan semua izin, melalui https dan dengan tanggal mulai dan berakhir yang ditentukan
+  - mengatur definisi SAS penyimpanan yang dikelola KeyVault dalam kubah, dengan uri templat sebagai token SAS yang dibuat di atas, dari tipe SAS 'akun' dan berlaku selama 30 hari
+  - mengambil token akses aktual dari rahasia KeyVault yang terkait dengan definisi SAS
 
 ## PARAMETERS
 
-### -Nama Akun
-Nama akun penyimpanan terkelola Key Vault. Cmdlet membangun FQDN dari nama akun penyimpanan terkelola dari nama vault, lingkungan yang saat ini dipilih dan nama akun penyimpanan tertentu.
+### -AccountName
+Key Vault nama akun penyimpanan terkelola. Cmdlet menyusun FQDN nama akun penyimpanan terkelola dari nama kubah, lingkungan yang saat ini dipilih, dan nama akun penyimpanan yang ditukar.
 
 ```yaml
 Type: System.String
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -94,7 +97,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Disable
+### -Non-fungsikan
 Menonaktifkan penggunaan definisi sas untuk generasi token sas.
 
 ```yaml
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Storage sas definition name. Cmdlet membangun FQDN dari definisi sas penyimpanan dari nama vault, lingkungan yang saat ini dipilih, nama akun penyimpanan dan nama definisi sas.
+Storage nama definisi sas. Cmdlet menyusun FQDN definisi sas penyimpanan dari nama kubah, lingkungan yang saat ini dipilih, nama akun penyimpanan dan nama definisi sas.
 
 ```yaml
 Type: System.String
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -SasType
-Storage SAS.
+Storage tipe SAS.
 
 ```yaml
 Type: System.String
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateUri
-Storage uri templat definisi SAS.
+Storage uri template definisi SAS.
 
 ```yaml
 Type: System.String
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -ValidityPeriod
-Periode validitas yang akan digunakan untuk mengatur waktu kedaluwarsa token sas mulai saat token tersebut dibuat
+Periode validitas yang akan terbiasa untuk mengatur waktu kedaluwarsa token sas dari waktu yang dihasilkan
 
 ```yaml
 Type: System.Nullable`1[System.TimeSpan]
@@ -200,8 +203,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama Vault.
-Cmdlet menyusun FQDN dari vault berdasarkan nama dan lingkungan yang saat ini dipilih.
+Nama kubah.
+Cmdlet menyusun FQDN kubah berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -261,4 +264,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Azure...RM.â€€Key...Vault](/powershell/module/az.keyvault/)
+[Azureâ€‹RM.â€‹Keyâ€‹Vault](/powershell/module/az.keyvault/)
