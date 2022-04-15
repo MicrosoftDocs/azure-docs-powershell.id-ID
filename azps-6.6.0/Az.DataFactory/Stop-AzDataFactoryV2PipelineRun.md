@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Stop-AzDataFactoryV2PipelineRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Stop-AzDataFactoryV2PipelineRun.md
 ms.openlocfilehash: c5713f6798061bd65e0114fd38830915f4d9c8fb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140256859"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142271959"
 ---
 # Stop-AzDataFactoryV2PipelineRun
 
 ## SYNOPSIS
-Menghentikan saluran yang berjalan dalam pabrik data.
+Menghentikan alur yang dijalankan di pabrik data.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/stop-azdatafactoryv2pipelinerun) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/stop-azdatafactoryv2pipelinerun) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +57,7 @@ Are you sure you want to stop pipeline run 'b9730a13-aa12-4926-a8b3-8e3a974ab0bd
 true
 ```
 
-Perintah ini menghentikan saluran yang dijalankan dengan id b9730a13-aa12-4926-a8b3-8e3a974ab0bd di pabrik WikiADF.
+Perintah ini menghentikan proses pipeline dengan id b9730a13-aa12-4926-a8b3-8e3a974ab0bd di pabrik WikiADF.
 
 ## PARAMETERS
 
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Run ID dari pipeline.
+ID Jalankan dari pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipelineRun
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika cmdlet menulis true jika operasi berhasil.
+Jika ditentukan cmdlet menulis true dalam hal operasi berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -PipelineRunId
-Run ID dari pipeline.
+ID Jalankan dari pipeline.
 
 ```yaml
 Type: System.String
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

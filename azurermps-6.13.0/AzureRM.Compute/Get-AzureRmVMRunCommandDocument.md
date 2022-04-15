@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Get-AzureRmVMRunCommandDocument.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Get-AzureRmVMRunCommandDocument.md
 ms.openlocfilehash: 070fe50f74db08caab375a97d4d8ff6be3e970ae
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140853867"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142282556"
 ---
 # Get-AzureRmVMRunCommandDocument
 
 ## SYNOPSIS
-Dapatkan jalankan dokumen perintah.
+Dapatkan dokumen perintah jalankan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Get-AzureRmVMRunCommandDocument [-Location] <String> [[-CommandId] <String>]
 ```
 
 ## DESCRIPTION
-Dapatkan jalankan dokumen perintah.
+Dapatkan dokumen perintah jalankan.
 
 ## EXAMPLES
 
@@ -36,8 +36,8 @@ Dapatkan jalankan dokumen perintah.
 PS C:\> Get-AzureRmVMRunCommandDocument -Location 'westus' -CommandId 'RunPowerShellScript'
 ```
 
-Dapatkan dokumen perintah jalankan tertentu untuk 'RunPowerShellScript' di 'westus'.
-Get-AzureRmVMRunCommandDocument -Location $loc
+Mendapatkan dokumen perintah jalankan tertentu untuk 'RunPowerShellScript' di 'westus'.
+Get-AzureRmVMRunCommandDocument -lokasi $loc
 
 ### Contoh 2
 ```
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi tempat menjalankan kueri perintah.
+Lokasi di mana perintah jalankan dikueri.
 
 ```yaml
 Type: System.String
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

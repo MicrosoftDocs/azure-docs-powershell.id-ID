@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBGremlinGraph.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBGremlinGraph.md
 ms.openlocfilehash: 85c2838956004d5d04d5cf662a48aea92b4b319b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140311549"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142272013"
 ---
 # Get-AzCosmosDBGremlinGraph
 
 ## SYNOPSIS
-Dapatkan Graph CosmosDB Database.
+Dapatkan Graph CosmosDB Gremlin.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbgremlingraph) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbgremlingraph) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-AzCosmosDBGremlinGraph [-Name <String>] -ParentObject <PSGremlinDatabaseGetR
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCosmosDBGremlinGraph cmdlet Get-AzCosmosDBGremlinGraph** memiliki properti Graph CosmosDB.
+Cmdlet **Get-AzCosmosDBGremlinGraph** mendapatkan properti Graph Gremlin CosmosDB.
 
 ## EXAMPLES
 
@@ -51,7 +51,7 @@ Objek Sumber Daya berisi IndexingPolicy, PartitionKey, DefaultTtl, UniqueKeyPoli
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun database Cosmos DB.
 
 ```yaml
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Jackmlin Graph Nama.
+Gremlin Graph Nama.
 
 ```yaml
 Type: System.String
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Objek Database Database.
+Objek Database Gremlin.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSGremlinDatabaseGetResults
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

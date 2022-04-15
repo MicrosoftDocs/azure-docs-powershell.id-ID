@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ContainerInstance/Commands.ContainerInstance/help/Get-AzureRmContainerInstanceLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ContainerInstance/Commands.ContainerInstance/help/Get-AzureRmContainerInstanceLog.md
 ms.openlocfilehash: 08a4ab0f0d937f06ee0ac958aa57a2f0eed5e4a3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140854290"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142281855"
 ---
 # Get-AzureRmContainerInstanceLog
 
 ## SYNOPSIS
-Mendapatkan log contoh wadah dalam grup wadah.
+Dapatkan log contoh kontainer dalam grup kontainer.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,11 +40,11 @@ Get-AzureRmContainerInstanceLog -ResourceId <String> [-Name <String>] [-Tail <In
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmContainerInstanceLog** mendapatkan log wadah dalam grup wadah.
+Cmdlet **Get-AzureRmContainerInstanceLog** mendapatkan log kontainer dalam grup wadah.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan log arah contoh wadah
+### Contoh 1: Dapatkan log ekor dari instans kontainer
 ```
 PS C:\> Get-AzureRmContainerInstanceLog -ResourceGroupName demo -ContainerGroupName mycontainer -Name container1
 
@@ -54,9 +54,9 @@ Log line 3.
 Log line 4.
 ```
 
-Dapatkan log dari grup `container1` wadah `mycontainer`. Secara default, akan mengembalikan hingga 4MB konten log.
+Dapatkan log dari `container1` dalam grup `mycontainer`kontainer . Secara default, konten log akan dikembalikan hingga 4MB.
 
-### Contoh 2: Mendapatkan log arah contoh wadah yang memiliki nama yang sama dengan grup wadah
+### Contoh 2: Dapatkan log ekor dari instans kontainer yang memiliki nama yang sama dengan grup kontainer
 ```
 PS C:\> Get-AzureRmContainerInstanceLog -ResourceGroupName demo -ContainerGroupName mycontainer
 
@@ -66,9 +66,9 @@ Log line 3.
 Log line 4.
 ```
 
-Dapatkan log dari grup `mycontainer` wadah `mycontainer`. Secara default, akan mengembalikan hingga 4MB konten log.
+Dapatkan log dari `mycontainer` dalam grup `mycontainer`kontainer . Secara default, konten log akan dikembalikan hingga 4MB.
 
-### Contoh 3: Mendapatkan arah 2 baris log dari contoh wadah
+### Contoh 3: Dapatkan 2 baris ekor log instans kontainer
 ```
 PS C:\> Get-AzureRmContainerInstanceLog -ResourceGroupName demo -ContainerGroupName mycontainer -Name container1 -Tail 2
 
@@ -76,9 +76,9 @@ Log line 3.
 Log line 4.
 ```
 
-Dapatkan arah 2 baris log dari dalam `container1` grup wadah `mycontainer`.
+Dapatkan 2 baris ekor log dari `container1` dalam grup `mycontainer`kontainer .
 
-### Contoh 4: Mendapatkan log arah contoh wadah dalam grup pipa dalam wadah
+### Contoh 4: Dapatkan log ekor dari contoh kontainer dalam piped dalam grup kontainer
 ```
 PS C:\> Get-AzureRmContainerGroup -ResourceGroupName demo -Name mycontainer | Get-AzureRmContainerInstanceLog
 
@@ -88,12 +88,12 @@ Log line 3.
 Log line 4.
 ```
 
-Dapatkan log dari dalam `mycontainer` grup wadah di pipa `mycontainer`. Secara default, akan mengembalikan hingga 4MB konten log.
+Dapatkan log dari `mycontainer` dalam grup `mycontainer`kontainer . Secara default, konten log akan dikembalikan hingga 4MB.
 
 ## PARAMETERS
 
 ### -ContainerGroupName
-Wadah nama grup.
+Nama grup wadah.
 
 ```yaml
 Type: System.String
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -138,8 +138,8 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Contoh nama wadah dalam grup wadah.
-Default: sama seperti nama grup wadah
+Nama contoh kontainer dalam grup wadah.
+Default: sama seperti nama grup kontainer
 
 ```yaml
 Type: System.String
@@ -184,8 +184,8 @@ Accept wildcard characters: False
 ```
 
 ### -Tail
-Jumlah baris untuk ekor log.
-Jika tidak ditentukan, cmdlet akan mengembalikan hingga 4MB log arah
+Jumlah garis untuk membuntuti log.
+Jika tidak menentukan, cmdlet akan mengembalikan hingga 4MB log berekor
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

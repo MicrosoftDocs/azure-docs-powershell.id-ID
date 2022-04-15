@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ContainerInstance/Commands.ContainerInstance/help/Remove-AzureRmContainerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ContainerInstance/Commands.ContainerInstance/help/Remove-AzureRmContainerGroup.md
 ms.openlocfilehash: f1971f8bf0e7d8e779743739b8dd041effe3ba5b
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140862725"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142281827"
 ---
 # Remove-AzureRmContainerGroup
 
@@ -40,7 +40,7 @@ Remove-AzureRmContainerGroup -ResourceId <String> [-PassThru] [-DefaultProfile <
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmContainerGroup** menghapus grup wadah.
+Cmdlet **Remove-AzureRmContainerGroup** menghapus grup kontainer.
 
 ## EXAMPLES
 
@@ -49,16 +49,16 @@ Cmdlet **Remove-AzureRmContainerGroup** menghapus grup wadah.
 PS C:\> Remove-AzureRmContainerGroup -ResourceGroupName MyResourceGroup -Name MyContainer
 ```
 
-Perintah ini menghapus grup wadah tertentu.
+Perintah ini menghapus grup wadah yang ditentukan.
 
-### Contoh 2: Menghapus grup wadah dengan pemipaan
+### Contoh 2: Menghapus grup wadah dengan mempipa
 ```
 PS C:\> Get-AzureRmContainerGroup -ResourceGroupName MyResourceGroup -Name MyContainer | Remove-AzureRmContainerGroup
 ```
 
-Perintah ini menghapus grup wadah dengan pemipaan.
+Perintah ini menghapus grup wadah dengan pipa.
 
-### Contoh 3: Menghapus grup wadah berdasarkan Id sumber daya.
+### Contoh 3: Menghapus grup kontainer menurut Id sumber daya.
 ```
 PS C:\> Find-AzureRmResource -ResourceGroupEquals MyResourceGroup -ResourceNameEquals MyContainer | Remove-AzureRmContainerGroup
 ```
@@ -68,7 +68,7 @@ Perintah ini menghapus grup wadah menurut Id sumber daya.
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Wadah nama grup.
+Nama grup wadah.
 
 ```yaml
 Type: System.String
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{fill passThru Description}}
+{{Fill PassThru Description}}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

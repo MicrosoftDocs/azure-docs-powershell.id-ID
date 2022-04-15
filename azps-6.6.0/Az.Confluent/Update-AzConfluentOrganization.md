@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Confluent/help/Update-AzConfluentOrganization.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Confluent/help/Update-AzConfluentOrganization.md
 ms.openlocfilehash: 01d0954c7ee2dabab16058c1d679c65bf58ab757
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140334905"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142272049"
 ---
 # Update-AzConfluentOrganization
 
 ## SYNOPSIS
-Perbarui Sumber daya Organisasi
+Perbarui sumber daya Organisasi
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.confluent/update-azconfluentorganization) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.confluent/update-azconfluentorganization) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,11 +35,11 @@ Update-AzConfluentOrganization -InputObject <IConfluentIdentity> [-Tag <Hashtabl
 ```
 
 ## DESCRIPTION
-Perbarui Sumber daya Organisasi
+Perbarui sumber daya Organisasi
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui organisasi dengan nama
+### Contoh 1: Memperbarui organisasi konferensi menurut nama
 ```powershell
 PS C:\> pdate-AzConfluentOrganization -ResourceGroupName azure-rg-test -Name confluentorg-02-pwsh -Tag @{"key01" = "value01"}
 
@@ -48,9 +48,9 @@ Location Name                 Type
 eastus   confluentorg-02-pwsh Microsoft.Confluent/organizations
 ```
 
-Perintah ini memperbarui organisasi terbatas menurut nama.
+Perintah ini memperbarui organisasi konferensi berdasarkan nama.
 
-### Contoh 2: Perbarui organisasi terbatas menurut saluran
+### Contoh 2: Memperbarui organisasi konferensi menurut saluran
 ```powershell
 PS C:\> Get-AzConfluentOrganization -ResourceGroupName azure-rg-test -Name confluentorg-02-pwsh | Update-AzConfluentOrganization -Tag @{"key01" = "value01"; "key02"="value02"}
 
@@ -59,7 +59,7 @@ Location Name                 Type
 eastus   confluentorg-02-pwsh Microsoft.Confluent/organizations
 ```
 
-Perintah ini memperbarui organisasi terbatas menurut saluran.
+Perintah ini memperbarui organisasi konferensi menurut saluran.
 
 ## PARAMETERS
 
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Confluent.Models.IConfluentIdentity
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Microsoft Azure id langganan
+id langganan Microsoft Azure
 
 ```yaml
 Type: System.String
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -208,7 +208,7 @@ INPUTOBJECT <IConfluentIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[OrganizationName <String>]`: Nama sumber daya organisasi
   - `[ResourceGroupName <String>]`: Nama grup sumber daya
-  - `[SubscriptionId <String>]`: Microsoft Azure id langganan
+  - `[SubscriptionId <String>]`: id langganan Microsoft Azure
 
 ## RELATED LINKS
 

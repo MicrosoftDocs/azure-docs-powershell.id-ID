@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultCertificate.md
-ms.openlocfilehash: fceafa1ff6c135691fc011a86360d433aa37f0e2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 89ab42de082ee71cc8d9761155110d4c61c09fa6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140549662"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142292911"
 ---
 # Remove-AzKeyVaultCertificate
 
 ## SYNOPSIS
-Menghapus sertifikat dari kunci vault.
+Menghapus sertifikat dari kubah kunci.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Remove-AzKeyVaultCertificate [-InputObject] <PSKeyVaultCertificateIdentityItem> 
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzKeyVaultCertificate** menghapus sertifikat dari kunci vault.
+Cmdlet **Remove-AzKeyVaultCertificate** menghapus sertifikat dari kubah kunci.
 
 ## EXAMPLES
 
@@ -77,22 +80,22 @@ Version            : 968c3920884a435abf8faea11f565456
 Id                 : https://contosokv01.vault.azure.net:443/certificates/selfsigned01/968c3920884a435abf8faea11f565456
 ```
 
-Perintah ini menghapus sertifikat yang bernama SelfSigned01 dari penyimpanan kunci yang bernama Contoso CONTOSO CONTOSO01.
-Perintah ini menentukan parameter *Force* .
-Oleh karena itu, cmdlet tidak meminta konfirmasi Anda.
+Perintah ini menghapus sertifikat bernama SelfSigned01 dari kubah kunci bernama ContosoKV01.
+Perintah ini menentukan parameter *Paksa* .
+Oleh karena itu, cmdlet tidak meminta anda untuk konfirmasi.
 
-### Contoh 2: Membersihkan sertifikat yang dihapus dari kunci vault secara permanen
+### Contoh 2: Membersihkan sertifikat yang dihapus dari kubah kunci secara permanen
 ```powershell
 PS C:\> Remove-AzKeyVaultCertificate -VaultName 'Contoso' -Name 'MyCert' -InRemovedState
 ```
 
-Perintah ini secara permanen menghapus sertifikat yang bernama 'MyCert' dari kunci vault bernama 'Contoso'.
-Menjalankan cmdlet ini memerlukan izin 'pembersihan', yang harus sebelumnya dan secara eksplisit diberikan kepada pengguna di vault kunci ini.
+Perintah ini menghapus sertifikat bernama 'MyCert' secara permanen dari kubah kunci bernama 'Contoso'.
+Menjalankan cmdlet ini memerlukan izin 'pembersihan', yang harus telah diberikan secara eksplisit dan sebelumnya kepada pengguna pada kubah kunci ini.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -106,8 +109,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Certificate Object.
+Objek Sertifikat.
 
 ```yaml
 Type: Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultCertificateIdentityItem
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -InRemovedState
-Jika ada, menghapus sertifikat yang dihapus sebelumnya secara permanen
+Jika ada, menghapus sertifikat yang sebelumnya dihapus secara permanen
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,8 +155,8 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama sertifikat yang dihapus cmdlet ini dari key vault.
-Cmdlet ini menyusun nama domain (FQDN) yang sepenuhnya memenuhi syarat dari sertifikat berdasarkan nama yang ditentukan parameter ini, nama kunci vault, dan lingkungan Anda saat ini.
+Menentukan nama sertifikat yang dihapus cmdlet ini dari kubah kunci.
+Cmdlet ini menyusun nama domain yang sepenuhnya memenuhi syarat (FQDN) sertifikat berdasarkan nama yang ditentukan parameter ini, nama kubah kunci, dan lingkungan Anda saat ini.
 
 ```yaml
 Type: System.String
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -184,8 +187,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kunci vault tempat cmdlet ini menghapus sertifikat.
-Cmdlet ini menyusun FQDN dari kunci vault berdasarkan nama yang ditentukan parameter ini dan lingkungan Anda saat ini.
+Menentukan nama kubah kunci tempat cmdlet ini menghapus sertifikat.
+Cmdlet ini menyusun FQDN kubah kunci berdasarkan nama yang ditentukan parameter ini dan lingkungan Anda saat ini.
 
 ```yaml
 Type: System.String
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,8 +219,8 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan. Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan. Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -250,6 +253,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzKeyVaultCertificate](./Get-AzKeyVaultCertificate.md)
 
-[Import-AzKeyVaultCertificate](./Import-AzKeyVaultCertificate.md)
+[Impor-AzKeyVaultCertificate](./Import-AzKeyVaultCertificate.md)
 
-[Undo-AzKeyVaultCertificateRemoval](./Undo-AzKeyVaultCertificateRemoval.md)
+[Batalkan-AzKeyVaultCertificateRemoval](./Undo-AzKeyVaultCertificateRemoval.md)

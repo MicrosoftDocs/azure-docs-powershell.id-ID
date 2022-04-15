@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementSsoToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementSsoToken.md
-ms.openlocfilehash: 4ce3d695049b2fb4c24cadce403673418f9bb442
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: fd3c0500f7744bb9eb2bb62da27fb740336236a9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140382837"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142295179"
 ---
 # Get-AzApiManagementSsoToken
 
 ## SYNOPSIS
-Mendapatkan link dengan token SSO ke portal manajemen yang digunakan dari layanan Manajemen API.
+Mendapatkan tautan dengan token SSO ke portal manajemen yang disebarkan dari layanan API Management.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementssotoken) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,21 +36,21 @@ Get-AzApiManagementSsoToken -InputObject <PsApiManagement> [-DefaultProfile <IAz
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApiManagementSsoToken** mengembalikan tautan (URL) yang berisi token masuk tunggal (SSO) ke portal manajemen layanan Manajemen API yang disebarkan.
+Cmdlet **Get-AzApiManagementSsoToken** mengembalikan tautan (URL) yang berisi token masuk tunggal (SSO) ke portal manajemen yang digunakan dari layanan API Management.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan token SSO dari layanan Manajemen API
+### Contoh 1: Dapatkan token SSO dari layanan API Management
 ```powershell
 Get-AzApiManagementSsoToken -ResourceGroupName "Contoso" -Name "ContosoApi"
 ```
 
-Perintah ini mendapatkan token SSO dari layanan Manajemen API.
+Perintah ini mendapatkan token SSO layanan API Management.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama instans Manajemen API.
+Menentukan nama instans API Management.
 
 ```yaml
 Type: System.String
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana Manajemen API ada.
+Menentukan nama grup sumber daya di mana API Management ada.
 
 ```yaml
 Type: System.String
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

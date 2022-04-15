@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementApiRevision.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementApiRevision.md
 ms.openlocfilehash: e7f0defc7d9f807f518aa9b19b4d98f97138517a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139980789"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142274893"
 ---
 # Set-AzApiManagementApiRevision
 
 ## SYNOPSIS
-Memodifikasi Revisi API
+Mengubah Revisi API
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementapirevision) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementapirevision) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,17 +43,17 @@ Set-AzApiManagementApiRevision -InputObject <PsApiManagementApi> [-Name <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApiManagementApiRevision** mengubah Revisi API Manajemen API Azure.
+Cmdlet **Set-AzApiManagementApiRevision** mengubah Revisi API Azure API Management.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah Revisi API
+### Contoh 1: Modifikasi Revisi API
 ```powershell
 PS C:\>$ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Set-AzApiManagementApiRevision -Context $ApiMgmtContext -ApiId "echo-api" -ApiRevision "2" -Name "EchoApi" -ServiceUrl "https://contoso.com/apis/echo" -Protocols @('https') -Description "Responds with what was sent" -Path "echo"
 ```
 
-Cmdlet memperbarui revisi `2` API dengan deskripsi `echo-api` , protokol, dan jalur baru.
+Cmdlet memperbarui `2` revisi API `echo-api` dengan deskripsi, protokol, dan jalur baru.
 
 ## PARAMETERS
 
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -AuthorizationServerId
-Pengidentifikasi server otorisasi OAuth.
+Pengidentifikasi server oauth otorisasi.
 Parameter ini bersifat opsional.
 Nilai default adalah $null.
 Harus ditentukan jika AuthorizationScope ditentukan.
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -BearerTokenSendingMethod
-Mekanisme server otorisasi OpenId yang mana token akses diberikan ke API. https://datatracker.ietf.org/doc/html/rfc6749#section-4Lihat . Parameter ini bersifat opsional. Nilai default adalah $null.
+Mekanisme server otorisasi OpenId di mana token akses dikirimkan ke API. https://datatracker.ietf.org/doc/html/rfc6749#section-4Lihat . Parameter ini bersifat opsional. Nilai default adalah $null.
 
 ```yaml
 Type: System.String[]
@@ -201,8 +201,8 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama WEB API.
-Nama publik API seperti yang akan muncul di portal pengembang dan admin.
+Nama API Web.
+Nama publik API seperti yang akan muncul di portal admin dan pengembang.
 Parameter ini diperlukan.
 
 ```yaml
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika instans Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApi ditentukan mewakili API yang ditetapkan.
+Jika ditentukan, contoh Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApi tipe mewakili API yang ditetapkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -247,11 +247,11 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Path
-Jalur Web API.
-Bagian terakhir DARI URL publik API.
-URL ini akan digunakan oleh konsumen API untuk mengirimkan permintaan ke layanan web.
-Harus memiliki panjang 1 hingga 400 karakter.
+### -Jalur
+Jalur API Web.
+Bagian terakhir URL publik API.
+URL ini akan digunakan oleh konsumen API untuk mengirim permintaan ke layanan web.
+Panjangnya harus 1 hingga 400 karakter.
 Parameter ini bersifat opsional.
 Nilai default adalah $null.
 
@@ -267,9 +267,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Protocols
-Protokol WEB API (http, https).
-Protokol yang mana API akan tersedia.
+### -Protokol
+Protokol API Web (http, https).
+Protokol di mana API tersedia.
 Parameter ini diperlukan.
 Nilai default adalah $null.
 
@@ -287,9 +287,9 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceUrl
-URL layanan web yang memperlihatkan API.
-URL ini hanya akan digunakan oleh Manajemen API Azure, dan tidak akan dibuat untuk publik.
-Harus memiliki panjang 1 hingga 2000 karakter.
+URL layanan web yang mengekspos API.
+URL ini hanya akan digunakan oleh Azure API Management, dan tidak akan diumumkan ke publik.
+Panjangnya harus 1 hingga 2000 karakter.
 Parameter ini diperlukan.
 
 ```yaml
@@ -305,7 +305,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionKeyHeaderName
-Nama header kunci langganan.
+Nama header tombol langganan.
 Parameter ini bersifat opsional.
 Nilai default adalah $null.
 
@@ -339,7 +339,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionRequired
-Benderai untuk memberlakukan LanggananSeser yang diminta untuk permintaan ke Api. Parameter ini bersifat opsional.
+Bendera untuk memberlakukan LanggananPerlukan permintaan ke Api. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -354,7 +354,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -370,7 +370,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -385,7 +385,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

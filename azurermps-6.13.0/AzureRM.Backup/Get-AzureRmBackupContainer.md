@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/Get-AzureRmBackupContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/Get-AzureRmBackupContainer.md
 ms.openlocfilehash: e20276d8a2dfec8ffb39665e5122cfe4be74dc42
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421290"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142282651"
 ---
 # Get-AzureRmBackupContainer
 
 ## SYNOPSIS
-Mendapatkan wadah Cadangan.
+Mendapatkan pencadangan kontainer.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,18 +29,18 @@ Get-AzureRmBackupContainer [-Name <String>] -Type <AzureBackupContainerType>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmBackupContainer** mendapatkan wadah Azure Backup.
-**AzureBackupContainer** encapsulates sumber data, item yang diproteksi, dan titik pemulihan.
-**AzureBackupContainer** dapat menjadi salah satu dari yang berikut: 
-- Komputer Windows Server
-- Server System Center Data Protection Manager (SCDPM) 
-- Mesin virtual Azure sebagai mesin virtual Layanan (IaaS) Sebelum Pencadangan dapat mencadangkan sumber data atau item, Anda harus mendaftarkan wadah yang menyimpannya dengan layanan Azure Backup.
-Wadah harus diautentikasi untuk mengirimkan data cadangan ke vault Cadangan.
-Untuk Windows Server dan server SCDPM, pendaftaran dilakukan dengan nama domain server yang sepenuhnya memenuhi syarat.
+Cmdlet **Get-AzureRmBackupContainer mendapatkan kontainer** Azure Backup.
+**AzureBackupContainer** merangkum sumber data, item yang diproteksi, dan titik pemulihan.
+**AzureBackupContainer** dapat berupa salah satu hal berikut ini: 
+- Komputer Server Windows
+- Server Manajer Perlindungan Data Pusat Sistem (SCDPM, System Center Data Protection Manager) 
+- Mesin virtual Azure infrastructure as a service (IaaS) Sebelum Backup dapat mencadangkan sumber data atau item, Anda harus mendaftarkan wadah yang menampungnya dengan layanan Azure Backup.
+Kontainer harus diautentikasi untuk mengirim data cadangan ke kubah Cadangan.
+Untuk komputer server Windows dan server SCDPM, pendaftaran diadakan dengan nama domain server yang sepenuhnya memenuhi syarat.
 
 ## EXAMPLES
 
-### Contoh 1: Menampilkan semua server yang terdaftar di vault
+### Contoh 1: Menampilkan semua server yang terdaftar ke kubah
 ```
 PS C:\>$Vault = Get-AzureRmBackupVault -Name "Vault03"
 PS C:\> Get-AzureRmBackupContainer -Vault $Vault -Type Windows
@@ -50,9 +50,9 @@ SERVER01.CONTOSO.COM          Windows            Registered
 SERVER02.CONTOSO.COM          Windows            Registered
 ```
 
-Perintah pertama mengambil vault bernama Vault03 menggunakan cmdlet **Get-AzureRmBackupVault.**
-Perintah menyimpan objek tersebut dalam $Vault variabel.
-Perintah kedua berisi semua wadah tipe Windows dari vault di $Vault.
+Perintah pertama mendapatkan kubah bernama Vault03 menggunakan cmdlet **Get-AzureRmBackupVault** .
+Perintah menyimpan objek tersebut dalam variabel $Vault.
+Perintah kedua mendapatkan semua wadah tipe Windows dari kubah di $Vault.
 
 ### Contoh 2: Mendapatkan wadah tertentu
 ```
@@ -63,7 +63,7 @@ DPMSERVER.CONTOSO.COM        SCDPM              Registered
 ```
 
 Perintah ini mendapatkan wadah bernama DPMSERVER. CONTOSO.COM.
-Perintah menentukan vault dalam $Vault dan tipe wadah.
+Perintah menentukan kubah dalam $Vault dan tipe wadah.
 
 ### Contoh 3: Menampilkan semua mesin virtual Azure yang terdaftar
 ```
@@ -73,12 +73,12 @@ Name                         Type               Status
 co03-vm                      AzureVM            Registered
 ```
 
-Perintah ini mendapatkan mesin virtual terdaftar dari vault di $Vault.
+Perintah ini mendapatkan mesin virtual terdaftar dari kubah di $Vault.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -93,8 +93,8 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedResourceGroupName
-Menentukan nama grup sumber daya yang terkait dengan wadah tersebut.
-Nama ini adalah nilai yang sama dengan yang Anda tentukan *untuk* parameter *ServiceName atau ResourceGroupName* cmdlet Register-AzureRmBackupContainer cmdlet.
+Menentukan nama grup sumber daya yang terkait dengan wadah.
+Nama ini adalah nilai yang sama dengan yang Anda tentukan untuk parameter *ServiceName* atau *ResourceGroupName* cmdlet Register-AzureRmBackupContainer.
 
 ```yaml
 Type: System.String
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama wadah yang akan didaangkan cmdlet ini.
+Menentukan nama wadah yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Menentukan status kontainer saat ini yang akan didapkan cmdlet ini.
+Menentukan status kontainer saat ini yang didapatkan cmdlet ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - NotRegistered 
 - Terdaftar 
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Menentukan tipe wadah yang akan didaurkan cmdlet ini.
+Menentukan tipe wadah yang didapat cmdlet ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.AzureBackup.Models.AzureBackupContainerType
@@ -160,8 +160,8 @@ Accept wildcard characters: False
 ```
 
 ### -Vault
-Menentukan penyimpanan Cadangan tempat cmdlet ini mendapatkan wadah.
-Untuk mendapatkan **AzureRmBackupVault,** gunakan cmdlet Get-AzureRmBackupVault.
+Menentukan kubah Cadangan tempat cmdlet ini mendapatkan kontainer.
+Untuk mendapatkan **AzureRmBackupVault**, gunakan cmdlet Get-AzureRmBackupVault.
 
 ```yaml
 Type: Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupVault
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -188,14 +188,14 @@ Parameter: Vault (ByValue)
 ### Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupContainer
 
 ## CATATAN
-* Tidak ada
+* Tidak
 
 ## RELATED LINKS
 
 [Get-AzureRmBackupVault](./Get-AzureRmBackupVault.md)
 
-[Register-AzureRmBackupContainer](./Register-AzureRmBackupContainer.md)
+[Daftarkan-AzureRmBackupContainer](./Register-AzureRmBackupContainer.md)
 
-[Unregister-AzureRmBackupContainer](./Unregister-AzureRmBackupContainer.md)
+[Batalkan pendaftaran-AzureRmBackupContainer](./Unregister-AzureRmBackupContainer.md)
 
 

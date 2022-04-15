@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Set-AzureRMVMSqlServerExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Set-AzureRMVMSqlServerExtension.md
 ms.openlocfilehash: b6af72558b8854f6716493698a30efe323eb266d
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420719"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142282278"
 ---
 # Set-AzureRmVMSqlServerExtension
 
 ## SYNOPSIS
-Mengatur ekstensi SQL Server Azure di komputer virtual.
+Mengatur ekstensi Server Azure SQL pada mesin virtual.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -30,56 +30,56 @@ Set-AzureRmVMSqlServerExtension [[-Version] <String>] [-ResourceGroupName] <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmVMSqlServerExtension** mengatur ekstensi AzureSQL Server di komputer virtual.
+Cmdlet **Set-AzureRmVMSqlServerExtension** mengatur ekstensi AzureSQL Server pada mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Setel pengaturan patching otomatis pada komputer virtual
+### Contoh 1: Mengatur pengaturan patch otomatis pada mesin virtual
 ```
 PS C:\> $AutoPatchingConfig = New-AzureVMSqlServerAutoPatchingConfig -Enable -DayOfWeek "Thursday" -MaintenanceWindowStartingHour 11 -MaintenanceWindowDuration 120 -PatchCategory "Important"
 PS C:\> Get-AzureRmVM -ServiceName "Service02" -Name "VirtualMachine11" | Set-AzureRmVMSqlServerExtension -AutoPatchingSettings $AutoPatchingConfig | Update-AzureRmVM
 ```
 
-Perintah pertama membuat objek konfigurasi menggunakan cmdlet **New-AzureVMSqlServerAutoPatchingConfig.**
-Perintah menyimpan konfigurasi di $AutoPatchingConfig lain.
-Perintah kedua mendapatkan mesin virtual bernama VirtualMachine11 di layanan yang bernama Service02 menggunakan cmdlet Get-AzureRmVM baru.
-Perintah melewati objek itu ke cmdlet saat ini dengan menggunakan operator pipeline.
-Cmdlet saat ini mengatur pengaturan patching otomatis $AutoPatchingConfig untuk komputer virtual.
-Perintah tersebut akan melewati mesin virtual ke Update-AzureRmVM cmdlet.
+Perintah pertama membuat objek konfigurasi menggunakan cmdlet **New-AzureVMSqlServerAutoPatchingConfig** .
+Perintah menyimpan konfigurasi dalam variabel $AutoPatchingConfig.
+Perintah kedua mendapatkan mesin virtual bernama VirtualMachine11 pada layanan bernama Service02 dengan menggunakan cmdlet Get-AzureRmVM.
+Perintah melewati objek tersebut ke cmdlet saat ini menggunakan operator pipeline.
+Cmdlet saat ini mengatur pengaturan patch otomatis di $AutoPatchingConfig untuk mesin virtual.
+Perintah melewati mesin virtual ke cmdlet Update-AzureRmVM.
 
-### Contoh 2: Mengatur pengaturan pencadangan otomatis di komputer virtual
+### Contoh 2: Mengatur pengaturan pencadangan otomatis pada mesin virtual
 ```
 PS C:\> $AutoBackupConfig = New-AzureVMSqlServerAutoBackupConfig -Enable -RetentionPeriod 10 -StorageUri $StorageUrl -StorageKey $StorageAccountKeySecure
 PS C:\> Get-AzureRmVM -ServiceName "Service02" -Name "VirtualMachine11" | Set-AzureRmVMSqlServerExtension -AutoBackupSettings $AutoBackupConfig | Update-AzureRmVM
 ```
 
-Perintah pertama membuat objek konfigurasi menggunakan cmdlet **New-AzureVMSqlServerAutoBackupConfig.**
-Perintah menyimpan konfigurasi di $AutoBackupConfig baru.
-Perintah kedua mendapatkan mesin virtual bernama VirtualMachine11 di layanan yang bernama Service02, lalu meneruskannya ke cmdlet saat ini.
-Cmdlet saat ini mengatur pengaturan pencadangan otomatis di $AutoBackupConfig untuk mesin virtual.
-Perintah tersebut akan melewati mesin virtual ke Update-AzureRmVM cmdlet.
+Perintah pertama membuat objek konfigurasi menggunakan cmdlet **New-AzureVMSqlServerAutoBackupConfig** .
+Perintah menyimpan konfigurasi dalam variabel $AutoBackupConfig.
+Perintah kedua mendapatkan mesin virtual bernama VirtualMachine11 pada layanan bernama Service02, lalu meneruskannya ke cmdlet saat ini.
+Cmdlet saat ini mengatur pengaturan cadangan otomatis di $AutoBackupConfig untuk mesin virtual.
+Perintah melewati mesin virtual ke cmdlet Update-AzureRmVM.
 
-### Contoh 3: Menonaktifkan SQL Server ekstensi di komputer virtual
+### Contoh 3: Menonaktifkan ekstensi SQL Server di mesin virtual
 ```
 PS C:\> Get-AzureRmVM -ServiceName "Service03" -Name "VirtualMachine08" | Set-AzureRmVMSqlServerExtension -Disable
 ```
 
-Perintah ini mendapatkan mesin virtual bernama VirtualMachine08 di Service03, lalu meneruskannya ke cmdlet saat ini.
-Perintah akan menonaktifkan SQL Server ekstensi mesin virtual pada komputer virtual tersebut.
+Perintah ini mendapatkan mesin virtual bernama VirtualMachine08 di Service03, lalu mengirimkannya ke cmdlet saat ini.
+Perintah menonaktifkan SQL Server ekstensi mesin virtual pada mesin virtual tersebut.
 
-### Contoh 4: Menghapus instalan SQL Server ekstensi di komputer virtual tertentu
+### Contoh 4: Menghapus instalan ekstensi SQL Server di mesin virtual tertentu
 ```
 PS C:\> Get-AzureRmVM -ServiceName "Service03" -Name "VirtualMachine08" | Set-AzureRmVMSqlServerExtension -Uninstall
 ```
 
-Perintah ini mendapatkan mesin virtual bernama VirtualMachine08 di Service03, lalu meneruskannya ke cmdlet saat ini.
-Perintah akan menghapus instalan SQL Server ekstensi mesin virtual tersebut di komputer virtual tersebut.
+Perintah ini mendapatkan mesin virtual bernama VirtualMachine08 di Service03, lalu mengirimkannya ke cmdlet saat ini.
+Perintah menghapus instalan SQL Server ekstensi mesin virtual pada mesin virtual tersebut.
 
 ## PARAMETERS
 
 ### -AutoBackupSettings
-Menentukan pengaturan pencadangan SQL Server otomatis.
-Untuk membuat objek **AutoBackupSettings,** gunakan cmdlet New-AzureVMSqlServerAutoBackupConfig cmdlet.
+Menentukan setelan pencadangan SQL Server otomatis.
+Untuk membuat objek **AutoBackupSettings** , gunakan cmdlet New-AzureVMSqlServerAutoBackupConfig.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.AutoBackupSettings
@@ -94,8 +94,8 @@ Accept wildcard characters: False
 ```
 
 ### -AutoPatchingSettings
-Menentukan pengaturan patch SQL Server otomatis.
-Untuk membuat objek **AutoPatchingSettings,** gunakan cmdlet New-AzureVMSqlServerAutoPatchingConfig cmdlet.
+Menentukan pengaturan patching SQL Server otomatis.
+Untuk membuat objek **AutoPatchingSettings** , gunakan cmdlet New-AzureVMSqlServerAutoPatchingConfig.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.AutoPatchingSettings
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi mesin virtual.
+Menentukan lokasi mesin maya.
 
 ```yaml
 Type: System.String
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: System.String
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual tempat cmdlet ini mengatur SQL Server ekstensi.
+Menentukan nama mesin virtual tempat cmdlet ini mengatur ekstensi SQL Server.
 
 ```yaml
 Type: System.String
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -241,6 +241,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Remove-AzureRmVMSqlServerExtension](./Remove-AzureRMVMSqlServerExtension.md)
 
-[Update-AzureRmVM](./Update-AzureRmVM.md)
+[Perbarui-AzureRmVM](./Update-AzureRmVM.md)
 
 

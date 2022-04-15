@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/set-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccountBatchConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccountBatchConfiguration.md
-ms.openlocfilehash: 004231b0d711a52c1728c49922818683c284386e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 8e6736e5297d26e0e597755d431fed5603d69109
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140008531"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142292281"
 ---
 # Set-AzIntegrationAccountBatchConfiguration
 
 ## SYNOPSIS
 Mengubah konfigurasi kumpulan akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/set-azintegrationaccountbatchconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -84,7 +87,7 @@ Set-AzIntegrationAccountBatchConfiguration -ResourceId <String> [-BatchGroupName
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzIntegrationAccountBatchConfiguration** mengubah konfigurasi kumpulan akun integrasi.
+Cmdlet **Set-AzIntegrationAccountBatchConfiguration** mengubah konfigurasi batch akun integrasi.
 
 ## EXAMPLES
 
@@ -101,7 +104,7 @@ Tags       :
 
 ```
 
-Ubah konfigurasi kumpulan yang bernama "sampleBatchConfig" menggunakan file lokal yang terletak di jalur file yang dimuat dalam "$batchConfigurationFilePath".
+Ubah konfigurasi kumpulan bernama "sampleBatchConfig" menggunakan file lokal yang terletak di jalur file yang terdapat dalam "$batchConfigurationFilePath".
 
 ### Contoh 2: Mengubah konfigurasi kumpulan menggunakan string JSON
 ```powershell
@@ -116,7 +119,7 @@ Tags       :
 
 ```
 
-Mengubah konfigurasi kumpulan bernama "sampleBatchConfig" menggunakan string JSON yang terdapat di "$batchConfigurationContent".
+Ubah konfigurasi kumpulan bernama "sampleBatchConfig" menggunakan string JSON yang terdapat dalam "$batchConfigurationContent".
 
 ### Contoh 3: Mengubah konfigurasi kumpulan menggunakan parameter
 ```powershell
@@ -131,7 +134,7 @@ Tags       :
 
 ```
 
-Modifikasi konfigurasi kumpulan yang bernama "sampleBatchConfig" dengan menyediakan semua parameter yang diperlukan secara manual.
+Ubah konfigurasi kumpulan bernama "sampleBatchConfig" dengan menyediakan semua parameter yang diperlukan secara manual.
 
 ## PARAMETERS
 
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -BatchSize
-Ukuran kumpulan konfigurasi akun integrasi.
+Ukuran kumpulan konfigurasi kumpulan akun integrasi.
 
 ```yaml
 Type: System.Int32
@@ -315,7 +318,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -JadwalFrequency
+### -ScheduleFrequency
 Frekuensi jadwal konfigurasi kumpulan akun integrasi.
 
 ```yaml
@@ -347,7 +350,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleStartTime
-Waktu mulai konfigurasi kumpulan akun integrasi.
+Waktu mulai jadwal konfigurasi kumpulan akun integrasi.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -377,7 +380,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -392,7 +395,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -407,7 +410,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

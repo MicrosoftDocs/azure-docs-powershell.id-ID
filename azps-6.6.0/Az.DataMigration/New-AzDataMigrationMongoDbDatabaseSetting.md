@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationMongoDbDatabaseSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationMongoDbDatabaseSetting.md
 ms.openlocfilehash: 394fc70797d0e336093dca96ff244b073cb606b0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140484177"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142271239"
 ---
 # New-AzDataMigrationMongoDbDatabaseSetting
 
 ## SYNOPSIS
-Membuat pengaturan database untuk migrasi untuk migrasi azureoDb
+Membuat pengaturan database untuk migrasi untuk migrasi mongoDb
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationmongodbdatabasesetting) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationmongodbdatabasesetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,8 +27,8 @@ New-AzDataMigrationMongoDbDatabaseSetting  -Name <Name> [-RU <RU>] -CollectionSe
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzDataMigrationMongoDbDatabaseSetting membuat objek pengaturan migrasi yang menentukan perilaku throughput dan penghapusan.
-Output adalah pasangan nilai kunci dengan nama kumpulan dan nilai pengaturan, yang dapat digunakan dalam menjalankan tugas migrasi.
+Cmdlet New-AzDataMigrationMongoDbDatabaseSetting membuat objek pengaturan migrasi yang menentukan throughput dan menghapus perilaku.
+Output adalah pasangan nilai kunci dengan nama kumpulan dan nilai pengaturan, yang dapat digunakan dalam memanggil tugas migrasi.
 
 ## EXAMPLES
 
@@ -59,7 +59,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 ### -TargetRequestUnit
-Nilai unit permintaan tingkat database khusus. Jika belum ditetapkan, kumpulan itu menggunakan database bersama RU.
+Nilai satuan permintaan tingkat database khusus. Jika tidak diatur, kumpulan tersebut menggunakan database bersama RU.
 
 ```yaml
 Type: System.Int32
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -Koleksi
-Larik objek pengaturan kumpulan SkoroDb dikembalikan oleh New-AzureRmDmsMongoDbDatabaseSetting panggilan.
+Array pengaturan kumpulan MongoDb objek yang dikembalikan oleh panggilan New-AzureRmDmsMongoDbDatabaseSetting.
 
 ```yaml
 Type: System.Collections.Generic.KeyValuePair<string, MongoDbCollectionSettings>[]
@@ -89,15 +89,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.DataMigration.Models.DatabaseoDbDatabaseSetting
+### Microsoft.Azure.Commands.DataMigration.Models.MongoDbDatabaseSetting
 
 ## CATATAN
 

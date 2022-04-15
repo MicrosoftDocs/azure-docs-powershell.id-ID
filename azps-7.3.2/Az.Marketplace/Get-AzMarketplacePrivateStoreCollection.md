@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplacePrivateStoreCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplacePrivateStoreCollection.md
-ms.openlocfilehash: cc8b6b8b8ea5b272af8c8184e595df61d64eb93d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6ae17f27f5a4473d629b22fb5fd4dd9b2e53113b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140008351"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142292135"
 ---
 # Get-AzMarketplacePrivateStoreCollection
 
 ## SYNOPSIS
-Dapatkan koleksi bursa pribadi
+Mendapatkan koleksi bursa pribadi
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.marketplace/get-azmarketplaceprivatestorecollection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzMarketplacePrivateStoreCollection -PrivateStoreId <String> [-DefaultProfil
  [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzMarketplacePrivateStoreCollection -CollectionId <String> -PrivateStoreId <String>
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -38,7 +41,7 @@ Get-AzMarketplacePrivateStoreCollection -InputObject <IMarketplaceIdentity> [-De
 ```
 
 ## DESCRIPTION
-Dapatkan koleksi bursa pribadi
+Mendapatkan koleksi bursa pribadi
 
 ## EXAMPLES
 
@@ -53,7 +56,7 @@ Name                                 SystemDataCreatedAt  SystemDataCreatedBy Sy
 
 ```
 
-Perintah ini berisi daftar koleksi bursa pribadi
+Perintah ini mendapatkan daftar koleksi bursa pribadi
 
 ## PARAMETERS
 
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Marketplace.Models.IMarketplaceIdentity
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -140,12 +143,12 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IMarketplaceIdentity>: Parameter Identitas
-  - `[AdminRequestApprovalId <String>]`: ID persetujuan permintaan admin untuk mendapatkan buat atau perbarui
+  - `[AdminRequestApprovalId <String>]`: ID persetujuan permintaan admin untuk membuat atau memperbarui
   - `[CollectionId <String>]`: ID koleksi
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[OfferId <String>]`: ID penawaran untuk memperbarui atau menghapus
   - `[PrivateStoreId <String>]`: ID bursa - harus menggunakan ID penyewa
-  - `[RequestApprovalId <String>]`: ID persetujuan permintaan untuk mendapatkan buat atau perbarui
+  - `[RequestApprovalId <String>]`: ID persetujuan permintaan untuk membuat atau memperbarui
 
 ## RELATED LINKS
 

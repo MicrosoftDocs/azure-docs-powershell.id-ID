@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/star
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Start-AzLabServicesVMRedeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Start-AzLabServicesVMRedeployment.md
-ms.openlocfilehash: 42224bc1fff185440911a3cf3a0ac56953ac308b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 21b4476cbcfbad8316613f28c97db1622c6d2fc5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140000493"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142292425"
 ---
 # Start-AzLabServicesVMRedeployment
 
 ## SYNOPSIS
-Tindakan untuk memindahkan kembali mesin virtual lab ke simpul perhitungan berbeda.
-Untuk konektivitas pemecahan masalah.
+Tindakan untuk mendeploy ulang mesin virtual lab ke simpul komputasi yang berbeda.
+Untuk pemecahan masalah konektivitas.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.labservices/start-azlabservicesvmredeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,18 +37,18 @@ Start-AzLabServicesVMRedeployment -LabName <String> -ResourceGroupName <String> 
 ```
 
 ## DESCRIPTION
-Tindakan untuk memindahkan kembali mesin virtual lab ke simpul perhitungan berbeda.
-Untuk konektivitas pemecahan masalah.
+Tindakan untuk mendeploy ulang mesin virtual lab ke simpul komputasi yang berbeda.
+Untuk pemecahan masalah konektivitas.
 
 ## EXAMPLES
 
-### Contoh 1: Redeploy the specific Virtual machine.
+### Contoh 1: Redeploy mesin Virtual tertentu.
 ```powershell
 PS C:\> Start-AzLabServicesVMRedeployment -LabName "Lab Name" -ResourceGroupName "Group Name" -VirtualMachineName 1
 
 ```
 
-The Redeploy removes the machine and creates a new one.
+Redeploy menghapus mesin dan membuat yang baru.
 
 ## PARAMETERS
 
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -LabName
-Nama lab yang secara unik mengidentifikasinya di dalam berisi akun lab.
+Nama lab yang mengidentifikasinya secara unik di dalamnya berisi akun lab.
 Digunakan dalam URI sumber daya.
 
 ```yaml
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualMachineName
-ID mesin virtual yang mengidentifikasinya secara unik di dalam lab berisi.
+ID mesin virtual yang mengidentifikasinya secara unik di dalam lab yang berisi.
 Digunakan dalam URI sumber daya.
 
 ```yaml
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

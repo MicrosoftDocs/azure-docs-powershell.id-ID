@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreFirewallRule.md
 ms.openlocfilehash: 2484db86d0e67292a612522f929508ae0cc0716e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140256355"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142271257"
 ---
 # Set-AzDataLakeStoreFirewallRule
 
 ## SYNOPSIS
-Mengubah aturan firewall tertentu di Data Lake Store yang ditentukan.
+Mengubah aturan firewall yang ditentukan dalam Data Lake Store yang ditentukan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakestore/set-azdatalakestorefirewallrule) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/set-azdatalakestorefirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,11 +30,11 @@ Set-AzDataLakeStoreFirewallRule [-Account] <String> [-Name] <String> [[-StartIpA
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzDataLakeStoreFirewallRule** mengubah aturan firewall tertentu di Data Lake Store yang ditentukan.
+Cmdlet **Set-AzDataLakeStoreFirewallRule** mengubah aturan firewall tertentu dalam Data Lake Store yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui rentang IP awal dan akhir untuk aturan firewall
+### Contoh 1: Memperbarui rentang IP mulai dan akhir untuk aturan firewall
 ```
 PS C:\> Set-AzDataLakeStoreFirewallRule -AccountName "ContosoADL" -Name MyFirewallRule -StartIpAddress "127.0.0.1" -EndIpAddress "127.0.0.2"
 ```
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

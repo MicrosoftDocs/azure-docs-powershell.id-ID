@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/get-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultRoleDefinition.md
-ms.openlocfilehash: 800c1ab164c270fd5d8e34fd7de981c6f528a282
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 534b82208a7010064ef2a568ab21379a1f00f99c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140000630"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142293001"
 ---
 # Get-AzKeyVaultRoleDefinition
 
 ## SYNOPSIS
-Mencantumkan definisi peran HSM terkelola yang diberikan pada lingkup tertentu.
+Mencantumkan definisi peran dari HSM yang dikelola tertentu pada lingkup tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultroledefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzKeyVaultRoleDefinition [-HsmName] <String> [-Scope <String>] [-DefaultProf
  [<CommonParameters>]
 ```
 
-### CustomOnly
+### KustomOnly
 ```
 Get-AzKeyVaultRoleDefinition [-HsmName] <String> [-Scope <String>] [-Custom]
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -38,7 +41,7 @@ Get-AzKeyVaultRoleDefinition [-HsmName] <String> [-Scope <String>] -RoleDefiniti
 ```
 
 ## DESCRIPTION
-Mencantumkan definisi peran HSM terkelola yang diberikan pada lingkup tertentu.
+Mencantumkan definisi peran dari HSM yang dikelola tertentu pada lingkup tertentu.
 
 ## EXAMPLES
 
@@ -57,7 +60,7 @@ Managed HSM Crypto Service Encryption             1 permission(s)
 Managed HSM Backup                                1 permission(s)
 ```
 
-Contoh mencantumkan semua peran di lingkup "/tombol".
+Contoh ini mencantumkan semua peran di lingkup "/keys".
 
 ### Contoh 2
 ```powershell
@@ -76,14 +79,14 @@ Microsoft.KeyVault/managedHsm/backup/status/action
 Microsoft.KeyVault/managedHsm/keys/backup/action
 ```
 
-Contoh ini mendapatkan peran "Pencadangan HSM terkelola" dan memeriksa izinnya.
+Contoh ini mendapatkan peran "Cadangan HSM terkelola" dan memeriksa izinnya.
 
 ### Contoh 3
 ```powershell
 Get-AzKeyVaultRoleDefinition -HsmName myHsm -Custom
 ```
 
-Contoh ini mencantumkan semua definisi peran kustom menjadi bagian dari "myHsm".
+Contoh ini mencantumkan semua definisi peran kustom milik "myHsm".
 
 ## PARAMETERS
 
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleDefinitionName
-Nama definisi peran untuk mendapatkan.
+Nama definisi peran yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Lingkup di mana penetapan peran atau definisi berlaku, misalnya '/' atau '/keys' atau '/keys/{keyName}'.
+Lingkup tempat penetapan peran atau definisi diterapkan, misalnya '/' atau '/keys' atau '/keys/{keyName}'.
 '/' digunakan ketika dihilangkan.
 
 ```yaml
@@ -164,11 +167,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
