@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzRmStorageContainerLegalHold.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzRmStorageContainerLegalHold.md
-ms.openlocfilehash: b916c88e656d3370a6b08e898e35eca56bd7edfb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 23cb19a6618bceb921f0094fa2f1f85df35aa051
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140005591"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142398059"
 ---
 # Remove-AzRmStorageContainerLegalHold
 
 ## SYNOPSIS
-Menghapus tag perlindungan hukum dari Storage blob
+Menghapus tag penahanan legal dari wadah blob Storage
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/remove-azrmstoragecontainerlegalhold) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Nama Akun (Default)
+### AccountName (Default)
 ```
 Remove-AzRmStorageContainerLegalHold [-ResourceGroupName] <String> [-StorageAccountName] <String>
  -Name <String> -Tag <String[]> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
@@ -39,36 +42,36 @@ Remove-AzRmStorageContainerLegalHold -Container <PSContainer> -Tag <String[]>
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzRmStorageContainerLegalHold** menghapus tag penyimpanan hukum dari Storage blob
+Cmdlet **Remove-AzRmStorageContainerLegalHold** menghapus tag legal hold dari wadah blob Storage
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus tag perlindungan hukum dari Storage blob dengan nama Storage dan nama wadah akun
+### Contoh 1: Hapus tag penahanan legal dari wadah blob Storage dengan nama akun Storage dan nama kontainer
 ```
 PS C:\>Remove-AzRmStorageContainerLegalHold -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" -Tag  tag1
 ```
 
-Perintah ini menghapus tag perlindungan hukum dari wadah Storage blob dengan nama Storage dan wadah akun.
+Perintah ini menghapus tag penahanan legal dari wadah blob Storage dengan nama akun dan nama kontainer Storage.
 
-### Contoh 2: Menghapus tag perlindungan hukum dari wadah Storage blob dengan Storage dan nama wadah akun
+### Contoh 2: Menghapus tag penahanan legal dari wadah blob Storage dengan objek akun Storage dan nama kontainer
 ```
 PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount"
 PS C:\>Remove-AzRmStorageContainerLegalHold -StorageAccount $accountObject -ContainerName "myContainer"  -Tag  tag1,tag2
 ```
 
-Perintah ini menghapus tag perlindungan hukum dari wadah blob Storage dengan nama Storage dan wadah akun.
+Perintah ini menghapus tag penahanan legal dari wadah blob Storage dengan objek akun Storage dan nama kontainer.
 
-### Contoh 3: Menghapus tag perlindungan hukum Storage penampung blob dalam Storage dengan saluran
+### Contoh 3: Hapus tag penahanan legal dari semua wadah blob Storage dalam akun Storage dengan pipeline
 ```
 PS C:\>Get-AzStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" | Remove-AzRmStorageContainerLegalHold -Tag  tag1
 ```
 
-Perintah ini menghapus tag perlindungan hukum dari Storage wadah blob dalam Storage dengan saluran.
+Perintah ini menghapus tag penahanan legal dari semua wadah blob Storage dalam akun Storage dengan pipeline.
 
 ## PARAMETERS
 
-### -Container
-Storage wadah objek
+### -Kontainer
+objek kontainer Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSContainer
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage objek akun
+objek akun Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Storage Akun.
+Storage Nama Akun.
 
 ```yaml
 Type: System.String
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Container LegalHold Tag
+Container LegalHold Tags
 
 ```yaml
 Type: System.String[]
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

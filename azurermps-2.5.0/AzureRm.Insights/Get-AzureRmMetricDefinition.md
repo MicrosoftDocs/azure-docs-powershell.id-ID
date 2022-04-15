@@ -5,11 +5,11 @@ ms.assetid: 7915A7AC-5A47-4868-B846-2896BCEBFAB2
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.insights/get-azurermmetricdefinition
 schema: 2.0.0
 ms.openlocfilehash: 3f7edf37fbd7283f851b9641e41de5f39b96506b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420564"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142393486"
 ---
 # Get-AzureRmMetricDefinition
 
@@ -55,7 +55,7 @@ Unit                   : Count
 
 Perintah ini mendapatkan definisi metrik untuk sumber daya yang ditentukan.
 
-### Contoh 2: Mendapatkan definisi metrik dengan output mendetail
+### Contoh 2: Dapatkan definisi metrik dengan output mendetail
 ```
 PS C:\>Get-AzureRmMetricDefinition -ResourceId "/subscriptions/d33fb0c7-69d3-40be-e35b-4f0deba70fff/resourceGroups/Default-Web-EastUS/providers/microsoft.web/sites/website2" -DetailedOutput
 Dimensions             : 
@@ -137,7 +137,7 @@ Outputnya mendetail.
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -151,9 +151,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DetailOutput
-Menunjukkan bahwa operasi ini menyertakan output detail.
-Jika Anda tidak menentukan parameter ini, output diringkas.
+### -DetailedOutput
+Menunjukkan bahwa operasi ini menyertakan output mendetail.
+Jika Anda tidak menentukan parameter ini, output akan diringkas.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -229,7 +229,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzureRmMetric](./Get-AzureRmMetric.md) 
- [New-AzureRmMetricFilter](./New-AzureRmMetricFilter.md)
+[Get-AzureRmMetric](./Get-AzureRmMetric.md)
+ [AzureRmMetricFilter Baru](./New-AzureRmMetricFilter.md)
 
 

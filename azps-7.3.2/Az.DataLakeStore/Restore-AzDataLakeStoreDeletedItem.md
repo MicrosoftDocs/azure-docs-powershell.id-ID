@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Restore-AzDataLakeStoreDeletedItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Restore-AzDataLakeStoreDeletedItem.md
-ms.openlocfilehash: d81df731b791c691a31b36ee33558ebca846a8fb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: b54a1d3181baaee830413098508ca7c7b5fd29fe
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140200919"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142375667"
 ---
 # Restore-AzDataLakeStoreDeletedItem
 
 ## SYNOPSIS
-Pulihkan folder atau file yang dihapus di Azure Data Lake.
+Memulihkan file atau folder yang dihapus di Azure Data Lake.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/restore-azdatalakestoredeleteditem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,18 +38,18 @@ Restore-AzDataLakeStoreDeletedItem [-Account] <String> [-DeletedItem] <DataLakeS
 ```
 
 ## DESCRIPTION
-Cmdlet **Restore-AzDataLakeStoreDeletedItem** memulihkan file atau folder yang dihapus di Data Lake Store. Memerlukan jalur item terhapus dalam sampah yang dikembalikan oleh Get-AzDataLakeStoreDeletedItem.
-Perhatian: Tidak perlu file dihapus adalah operasi terbaik. Tidak ada jaminan bahwa file dapat dipulihkan setelah dihapus. Penggunaan API ini diaktifkan melalui daftar yang diizinkan. Jika akun ADL Anda tidak masuk dalam daftar putih, maka menggunakan api ini akan memberikan Pengecualian tidak diterapkan. Untuk informasi dan bantuan lebih lanjut, silakan hubungi dukungan Microsoft.
+Cmdlet **Restore-AzDataLakeStoreDeletedItem** memulihkan file atau folder yang dihapus di Data Lake Store. Memerlukan jalur item yang dihapus dalam sampah yang dikembalikan oleh Get-AzDataLakeStoreDeletedItem.
+Perhatian: Menghapus file adalah operasi upaya terbaik. Tidak ada jaminan bahwa file dapat dipulihkan setelah dihapus. Penggunaan API ini diaktifkan melalui daftar yang diizinkan. Jika akun ADL Anda tidak diizinkan, maka penggunaan api ini akan memunculkan Pengecualian tidak diimplementasikan. Untuk informasi dan bantuan lebih lanjut, silakan hubungi dukungan Microsoft.
 
 ## EXAMPLES
 
-### Contoh 1: Pulihkan file dari Data Lake Store menggunakan opsi -force
+### Contoh 1: Memulihkan file dari Penyimpanan Data Lake menggunakan opsi -force
 ```
 PS > Restore-AzDataLakeStoreDeletedItem -Account ml1ptrashtest -Path 927e8fb1-a287-4353-b50e-3b4a39ae4088 -Destination adl://ml1ptrashtest.azuredatalake.com/test0/file_1230 -Type "file" -Force
 ```
-Perintah ini memulihkan file dari Data Lake Store menggunakan opsi -force
+Perintah ini memulihkan file dari Penyimpanan Data Lake menggunakan opsi -force
 
-### Contoh 2: Pulihkan file dari Data Lake Store menggunakan konfirmasi pengguna
+### Contoh 2: Memulihkan file dari Data Lake Store menggunakan konfirmasi pengguna
 ```
 PS > Restore-azdatalakestoredeleteditem -Account ml1ptrashtest -Path 927e8fb1-a287-4353-b50e-3b4a39ae4088 -Destination adl://ml1ptrashtest.azuredatalake.com/test4/file_1115 -Type file
 
@@ -61,7 +64,7 @@ Perintah ini memulihkan file dari Data Lake Store menggunakan konfirmasi penggun
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Data Lake Store.
+Menentukan nama akun Penyimpanan Data Lake.
 
 ```yaml
 Type: System.String
@@ -120,8 +123,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -150,7 +153,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
+### -Jalur
 Jalur file atau folder yang dihapus dalam sampah.
 
 ```yaml
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestoreAction
-Tindakan untuk mengambil alih nama tujuan yang berkonflik - "salin" atau "timpa"
+Tindakan untuk mengambil konflik nama tujuan - "salin" atau "timpa"
 
 ```yaml
 Type: System.String
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Tipe entri yang dipulihkan - "file" atau "folder"
+Tipe entri yang sedang dipulihkan - "file" atau "folder"
 
 ```yaml
 Type: System.String
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -204,7 +207,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Tidak ada
+### Tidak
 
 ## CATATAN
 
