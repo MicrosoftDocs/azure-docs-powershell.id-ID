@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/get-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Get-AzStackHCIVMAttestation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Get-AzStackHCIVMAttestation.md
-ms.openlocfilehash: a45b0eaacf8ba07b6b1d588d18acf37fe5f061bb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f758ea3e878ff38c052fe663fa7bd16ddc704463
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140183185"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142365821"
 ---
 # Get-AzStackHCIVMAttestation
 
 ## SYNOPSIS
-Get-AzStackHCIVMAttestation memperlihatkan daftar tamu yang ditambahkan ke Attestation IMDS di simpul.
+Get-AzStackHCIVMAttestation memperlihatkan daftar tamu yang ditambahkan ke Pengesahan IMDS pada simpul.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.stackhci/get-azstackhcivmattestation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Get-AzStackHCIVMAttestation [-Local] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get-AzStackHCIVMAttestation memperlihatkan daftar tamu yang ditambahkan ke Attestation IMDS di simpul.
+Get-AzStackHCIVMAttestation memperlihatkan daftar tamu yang ditambahkan ke Pengesahan IMDS pada simpul.
 
 ## EXAMPLES
 
@@ -33,7 +36,7 @@ Get-AzStackHCIVMAttestation memperlihatkan daftar tamu yang ditambahkan ke Attes
 C:\PS\>Get-AzStackHCIVMAttestation
 ```
 
-Mendapatkan semua tamu dalam kluster.
+Dapatkan semua tamu di kluster.
 
 ### CONTOH 2
 ```powershell
@@ -43,7 +46,7 @@ C:\PS\>Get-AzStackHCIVMAttestation -Local
 ## PARAMETERS
 
 ### -Lokal
-Hanya mengambil tamu dengan Attestation dari simpul menjalankan cmdlet.
+Hanya ambil tamu dengan Attestation dari simpul yang menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -58,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

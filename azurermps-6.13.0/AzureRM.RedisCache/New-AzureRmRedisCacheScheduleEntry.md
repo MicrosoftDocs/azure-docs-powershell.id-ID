@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RedisCache/Commands.RedisCache/help/New-AzureRmRedisCacheScheduleEntry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RedisCache/Commands.RedisCache/help/New-AzureRmRedisCacheScheduleEntry.md
 ms.openlocfilehash: 8364a3a8b9d88bfd3ce34f2e70f8fcae80e9b612
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428171"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142384264"
 ---
 # New-AzureRmRedisCacheScheduleEntry
 
@@ -28,25 +28,25 @@ New-AzureRmRedisCacheScheduleEntry -DayOfWeek <String> -StartHourUtc <Int32> [-M
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmRedisCacheScheduleEntry** membuat objek **PSScheduleEntry.**
-Cmdlet jadwal patch Cache Azure Redis, seperti cmdlet New-AzureRmRedisCachePatchSchedule, memerlukan objek entri jadwal.
+Cmdlet **New-AzureRmRedisCacheScheduleEntry** membuat objek **PSScheduleEntry** .
+Cmdlet jadwal singgahan Azure Redis Cache, seperti cmdlet New-AzureRmRedisCachePatchSchedule, memerlukan objek entri jadwal.
 
 ## EXAMPLES
 
-### Contoh 1: Buat entri jadwal untuk akhir pekan
+### Contoh 1: Membuat entri jadwal untuk akhir pekan
 ```
 PS C:\>New-AzureRmRedisCacheScheduleEntry -DayOfWeek "Weekend" -StartHourUtc 2 -MaintenanceWindow "06:00:00"
 ```
 
-Perintah ini membuat objek **PSScheduleEntry** yang mewakili jadwal akhir pekan yang memiliki waktu mulai dan jendela yang ditentukan.
+Perintah ini membuat objek **PSScheduleEntry** yang menunjukkan jadwal akhir pekan yang memiliki waktu mulai dan jendela yang ditentukan.
 
 ## PARAMETERS
 
 ### -DayOfWeek
 Menentukan hari dalam seminggu untuk entri jadwal.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Sehari-hari 
-- Weekend 
+- Everyday 
+- Akhir pekan 
 - Senin 
 - Selasa 
 - Rabu 
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaintenanceWindow
-Menentukan jumlah jendela waktu yang diperbolehkan untuk pembaruan.
+Menentukan jumlah waktu jendela yang diperbolehkan untuk pembaruan.
 
 ```yaml
 Type: System.Nullable`1[System.TimeSpan]
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -122,14 +122,14 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Int32
 
-### System.Nullable'1[[System.TimeSpan, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.TimeSpan, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.RedisCache.Models.PSScheduleEntry
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, redis, cache, web, webapp, website
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, redis, cache, web, webapp, situs web
 
 ## RELATED LINKS
 
@@ -137,6 +137,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmRedisCachePatchSchedule](./New-AzureRmRedisCachePatchSchedule.md)
 
-[Remove-AzureRmRedisCachePatchSchedule](./Remove-AzureRmRedisCachePatchSchedule.md)
+[Hapus-AzureRmRedisCachePatchSchedule](./Remove-AzureRmRedisCachePatchSchedule.md)
 
 

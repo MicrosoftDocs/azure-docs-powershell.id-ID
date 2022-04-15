@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Set-AzureRmApiManagementOpenIdConnectProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Set-AzureRmApiManagementOpenIdConnectProvider.md
 ms.openlocfilehash: 6f568f27cf5b50cd517d8133578d6cf36060252f
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132415020"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142390885"
 ---
 # Set-AzureRmApiManagementOpenIdConnectProvider
 
 ## SYNOPSIS
-Mengubah penyedia layanan OpenID Koneksi Anda.
+Mengubah penyedia Koneksi OpenID.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -30,7 +30,7 @@ Set-AzureRmApiManagementOpenIdConnectProvider -Context <PsApiManagementContext>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmApiManagementOpenIdConnectProvider** mengubah penyedia Koneksi OpenID di Manajemen API Azure.
+Cmdlet **Set-AzureRmApiManagementOpenIdConnectProvider** mengubah penyedia Koneksi OpenID di Azure API Management.
 
 ## EXAMPLES
 
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -MetadataEndpointUri
-Menentukan URI titik akhir metadata dari penyedia.
+Menentukan URI titik akhir metadata penyedia.
 
 ```yaml
 Type: System.String
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama yang mudah digunakan untuk penyedia.
+Menentukan nama yang mudah dikenali untuk penyedia.
 
 ```yaml
 Type: System.String
@@ -151,8 +151,8 @@ Accept wildcard characters: False
 ```
 
 ### -OpenIdConnectProviderId
-Menentukan ID untuk penyedia yang ditentukan cmdlet ini.
-Jika Anda tidak menentukan ID, cmdlet ini akan menghasilkan ID.
+Menentukan ID untuk penyedia yang diubah cmdlet ini.
+Jika Anda tidak menentukan ID, cmdlet ini akan menghasilkannya.
 
 ```yaml
 Type: System.String
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan bahwa cmdlet ini mengembalikan **PsApiManagementOpenIdConnectProvider** yang dimodifikasi cmdlet ini.
+Menunjukkan bahwa cmdlet ini mengembalikan **PsApiManagementOpenIdConnectProvider** yang diubah cmdlet ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

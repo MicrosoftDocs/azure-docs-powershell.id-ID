@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationAssessment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationAssessment.md
-ms.openlocfilehash: 81b4ae6ae565eb8fc797695393c839ed22824763
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 66c79b40c4a885f75310a777e6a3a268c8687fe8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140200902"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142375685"
 ---
 # Get-AzDataMigrationAssessment
 
 ## SYNOPSIS
-Mulai penilaian SQL Server instans
+Mulai penilaian pada instans SQL Server
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/get-azdatamigrationassessment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,11 +34,11 @@ Get-AzDataMigrationAssessment -ConfigFilePath <String> [-PassThru] [<CommonParam
 ```
 
 ## DESCRIPTION
-Mulai penilaian SQL Server instans
+Mulai penilaian pada instans SQL Server
 
 ## EXAMPLES
 
-### Contoh 1: Jalankan SQL Penilaian tentang penggunaan SQL Server menggunakan string koneksi
+### Contoh 1: Jalankan Penilaian SQL pada SQL Server tertentu menggunakan string koneksi
 ```powershell
 PS C:\> Get-AzDataMigrationAssessment -ConnectionString "Data Source=LabServer.database.net;Initial Catalog=master;Integrated Security=False;User Id=User;Password=password" -OutputFolder "C:\AssessmentOutput" -Overwrite
 
@@ -47,9 +50,9 @@ Assessment report saved to C:\Users\user\AppData\Local\Microsoft\SqlAssessment\S
 Event and Error Logs Folder Path: C:\Users\user\AppData\Local\Microsoft\SqlAssessment\Logs
 ```
 
-Perintah ini menjalankan SQL Assessment pada kali SQL Server menggunakan string koneksi.
+Perintah ini menjalankan Penilaian SQL pada SQL Server tertentu menggunakan string koneksi.
 
-### Contoh 2: Jalankan SQL Assessment on given SQL Server using assessment config file
+### Contoh 2: Jalankan Penilaian SQL pada SQL Server tertentu menggunakan file konfigurasi penilaian
 ```powershell
 PS C:\> Get-AzDataMigrationAssessment -ConfigFilePath "C:\Users\user\document\config.json"
 
@@ -61,7 +64,7 @@ Assessment report saved to C:\Users\user\AppData\Local\Microsoft\SqlAssessment\S
 Event and Error Logs Folder Path: C:\Users\user\AppData\Local\Microsoft\SqlAssessment\Logs
 ```
 
-Perintah ini menjalankan SQL Assessment pada aplikasi SQL Server menggunakan file assessment config.
+Perintah ini menjalankan Penilaian SQL pada SQL Server tertentu menggunakan file konfigurasi penilaian.
 
 ## PARAMETERS
 
@@ -110,7 +113,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Overwrite
+### -Timpa
 Aktifkan parameter ini untuk menimpa laporan penilaian yang sudah ada
 
 ```yaml
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

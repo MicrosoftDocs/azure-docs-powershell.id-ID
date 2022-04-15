@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubModuleConnectionString.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubModuleConnectionString.md
-ms.openlocfilehash: e4ac9fccb875bc95af91b2e29468f8a936b21df3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2e4611bbb873392d096e2d83cf7dd3225bcfc825
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140393999"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142373651"
 ---
 # Get-AzIotHubModuleConnectionString
 
 ## SYNOPSIS
-Dapatkan string koneksi modul perangkat IoT target dalam Iot Hub.
+Dapatkan string koneksi modul perangkat IoT target di Hub Iot.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubmoduleconnectionstring) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzIotHubModuleConnectionString [-ResourceId] <String> [-DeviceId] <String> [
 ```
 
 ## DESCRIPTION
-Daftar string koneksi semua modul atau modul tertentu dari perangkat IoT target yang dimuat dalam Azure IoT Hub.
+String koneksi daftar semua modul atau modul tertentu dari perangkat IoT target yang terdapat dalam Azure IoT Hub.
 
 ## EXAMPLES
 
@@ -52,7 +55,7 @@ module1   HostName=myiothub.azure-devices.net;DeviceId=myDevice1;ModuleId=module
 module2   HostName=myiothub.azure-devices.net;DeviceId=myDevice1;ModuleId=module2;x509=true
 ```
 
-Memperlihatkan semua string koneksi modul perangkat IoT target dalam Iot Hub.
+Menampilkan string koneksi semua modul perangkat IoT target di Hub Iot.
 
 ### Contoh 2
 ```powershell
@@ -63,7 +66,7 @@ Module Id Connection String
 module1   HostName=myiothub.azure-devices.net;DeviceId=myDevice1;ModuleId=module1;SharedAccessKey=/X4yj******
 ```
 
-Dapatkan string koneksi modul sekunder dari perangkat IoT target di Iot Hub.
+Dapatkan string koneksi modul sekunder dari perangkat IoT target di Hub Iot.
 
 ## PARAMETERS
 
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

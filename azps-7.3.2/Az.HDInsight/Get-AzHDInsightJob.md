@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightJob.md
-ms.openlocfilehash: 24e30a8414deb7579a77a13b8d0ec057a2eb4991
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c04fdf5e61685d5075b30ab076be35f3b5019e1d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140549882"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142374119"
 ---
 # Get-AzHDInsightJob
 
 ## SYNOPSIS
 Mendapatkan daftar pekerjaan dari kluster dan mencantumkannya dalam urutan kronologis terbalik, atau mengambil pekerjaan tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/get-azhdinsightjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,12 +30,12 @@ Get-AzHDInsightJob [-ClusterName] <String> [-HttpCredential] <PSCredential> [[-J
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzHDInsightJob** mendapatkan pekerjaan terbaru untuk kluster Azure HDInsight tertentu dalam urutan kronologis terbalik, dengan pekerjaan terbaru di bagian atas daftar.
-Dapatkan pekerjaan khusus dengan menyediakan parameter *JobId* .
+Cmdlet **Get-AzHDInsightJob** mendapatkan pekerjaan terbaru untuk cluster Azure HDInsight tertentu dalam urutan kronologis terbalik, dengan pekerjaan terbaru di bagian atas daftar.
+Dapatkan pekerjaan tertentu dengan menyediakan parameter *JobId* .
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan pekerjaan terbaru untuk kluster Azure HDInsight yang ditentukan
+### Contoh 1: Dapatkan pekerjaan terbaru untuk kluster Azure HDInsight yang ditentukan
 ```
 PS C:\># Cluster info
 PS C:\> $clusterName = "your-hadoop-001"
@@ -50,7 +53,7 @@ PS C:\> New-AzHDInsightHiveJobDefinition -StatusFolder $statusFolder `
             -ClusterCredential $clusterCreds
 ```
 
-Perintah ini mendapatkan semua pekerjaan terbaru untuk kluster bernama up-hadoop-001.
+Perintah ini mendapatkan semua pekerjaan terbaru untuk kluster bernama your-hadoop-001.
 
 ## PARAMETERS
 
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -84,8 +87,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpCredential
-Menentukan kredensial masuk kluster (HTTP) untuk kluster tersebut.
+### -HttpCredential
+Menentukan kredensial masuk kluster (HTTP) untuk kluster.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobId
-Menentukan ID pekerjaan pekerjaan untuk mendapatkan.
+Menentukan ID pekerjaan dari pekerjaan yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -NumOfJobs
-Menentukan jumlah pekerjaan untuk diambil.
+Menentukan jumlah pekerjaan yang akan diambil.
 
 ```yaml
 Type: System.Int32
@@ -145,11 +148,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

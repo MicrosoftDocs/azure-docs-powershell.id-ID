@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.diskpool/new-azd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/New-AzDiskPoolIscsiTarget.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/New-AzDiskPoolIscsiTarget.md
-ms.openlocfilehash: 45bc0ba98efe892ad26d263c3cae668dfd8e4545
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 7040d639bece0468fbf6b07ca483916b48bc44fe
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140550039"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142375019"
 ---
 # New-AzDiskPoolIscsiTarget
 
 ## SYNOPSIS
-Buat atau Perbarui Target iSCSI.
+Membuat atau Memperbarui Target iSCSI.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.diskpool/new-azdiskpooliscsitarget) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzDiskPoolIscsiTarget -DiskPoolName <String> -Name <String> -ResourceGroupNa
 ```
 
 ## DESCRIPTION
-Buat atau Perbarui Target iSCSI.
+Membuat atau Memperbarui Target iSCSI.
 
 ## EXAMPLES
 
@@ -40,7 +43,7 @@ Name               Type
 target1 Microsoft.StoragePool/diskPools/iscsiTargets
 ```
 
-Perintah ini akan membuat target iSCSI.
+Perintah ini membuat target iSCSI.
 
 ## PARAMETERS
 
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskPoolName
-Nama Disk Pool.
+Nama Kumpulan Disk.
 
 ```yaml
 Type: System.String
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 
 ### -Lun
 Daftar LUN yang akan diekspos melalui Target iSCSI.
-Untuk membuat, lihat bagian CATATAN untuk properti LUN dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti LUN dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DiskPool.Models.Api20210801.IIscsiLun[]
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedBy
-Id sumber daya Azure. Menunjukkan apakah sumber daya ini dikelola oleh sumber daya Azure lain.
+Id sumber daya Azure. Menunjukkan apakah sumber daya ini dikelola oleh sumber daya Azure lainnya.
 
 ```yaml
 Type: System.String
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -StaticAcl
-Daftar Kontrol Akses (ACL, Access Control List) untuk Target iSCSI; menentukan kebijakan masker LUN Untuk membangun, lihat bagian CATATAN untuk properti STATICACL dan membuat tabel hash.
+Access Control List (ACL) untuk Target iSCSI; menentukan kebijakan masking LUN Untuk membangun, lihat bagian CATATAN untuk properti STATICACL dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DiskPool.Models.Api20210801.IAcl[]
@@ -227,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetIqn
-iSCSI Target IQN (nama yang Memenuhi Syarat iSCSI); contoh: "iqn.2005-03.org.iscsi:server".
+iSCSI Target IQN (Nama Yang Memenuhi Syarat iSCSI); contoh: "iqn.2005-03.org.iscsi:server".
 
 ```yaml
 Type: System.String
@@ -242,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -258,7 +261,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -273,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -291,11 +294,11 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 LUN <IIscsiLun[]>: Daftar LUN yang akan diekspos melalui Target iSCSI.
-  - `ManagedDiskAzureResourceId <String>`: ID Sumber Daya Azure dari Disk yang Dikelola.
+  - `ManagedDiskAzureResourceId <String>`: AZURE Resource ID dari Managed Disk.
   - `Name <String>`: Nama yang ditentukan pengguna untuk iSCSI LUN; contoh: "lun0"
 
 STATICACL <IAcl[]>: Access Control List (ACL) untuk Target iSCSI; menentukan kebijakan masker LUN
-  - `InitiatorIqn <String>`: iSCSI inisiator IQN (Nama yang Memenuhi Syarat iSCSI); contoh: "iqn.2005-03.org.iscsi:client".
+  - `InitiatorIqn <String>`: inisiator iSCSI IQN (iSCSI Qualified Name); contoh: "iqn.2005-03.org.iscsi:client".
   - `MappedLun <String[]>`: Daftar nama LUN yang dipetakan ke ACL.
 
 ## RELATED LINKS

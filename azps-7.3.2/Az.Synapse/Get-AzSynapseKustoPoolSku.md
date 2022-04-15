@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseKustoPoolSku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseKustoPoolSku.md
-ms.openlocfilehash: 71fb234c8b07072fd7318f222284d041cec8ef0e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: af0b63835d7a6d62b62d25bd242418b47bc7cf04
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140570347"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142396817"
 ---
 # Get-AzSynapseKustoPoolSku
 
 ## SYNOPSIS
 Mencantumkan SKU yang memenuhi syarat untuk sumber daya Kusto Pool.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsekustopoolsku) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ Location             Name              ResourceType          Size
 
 Perintah di atas mencantumkan SKU yang memenuhi syarat.
 
-### Contoh 2: Daftar SKU yang memenuhi syarat untuk kusto pool tertentu
+### Contoh 2: Mencantumkan SKU yang memenuhi syarat untuk kumpulan kusto tertentu
 ```powershell
 PS C:\> Get-AzSynapseKustoPoolSku -ResourceGroupName testrg -WorkspaceName testws -KustoPoolName testnewkustopool
 
@@ -65,7 +68,7 @@ Microsoft.Synapse/workspaces/kustoPools
 Microsoft.Synapse/workspaces/kustoPools
 ```
 
-Perintah di atas mencantumkan SKU yang memenuhi syarat untuk kelompok kusto tertentu.
+Perintah di atas mencantumkan SKU yang memenuhi syarat untuk kumpulan kusto tertentu.
 
 ## PARAMETERS
 
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -KustoPoolName
-Nama pool Kusto.
+Nama kumpulan Kusto.
 
 ```yaml
 Type: System.String
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja
 
 ```yaml
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

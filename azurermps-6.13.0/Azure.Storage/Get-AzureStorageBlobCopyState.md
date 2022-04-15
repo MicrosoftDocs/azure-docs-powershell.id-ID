@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/Storage/Commands.Storage/help/Get-AzureStorageBlobCopyState.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/Storage/Commands.Storage/help/Get-AzureStorageBlobCopyState.md
 ms.openlocfilehash: 619f909ab794b5531d15d89343ea6263bea7ce03
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421733"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142391526"
 ---
 # Get-AzureStorageBlobCopyState
 
 ## SYNOPSIS
-Mendapatkan status salinan suatu Azure Storage blob.
+Mendapatkan status salinan blob Azure Storage.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -44,38 +44,38 @@ Get-AzureStorageBlobCopyState -CloudBlobContainer <CloudBlobContainer> [-Blob] <
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureStorageBlobCopyState** mendapatkan status salinan dari Azure Storage blob.
+Cmdlet **Get-AzureStorageBlobCopyState** mendapatkan status salinan blob Azure Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan status salinan blob
+### Contoh 1: Dapatkan status salinan blob
 ```
 C:\PS>Get-AzureStorageBlobCopyState -Blob "ContosoPlanning2015" -Container "ContosoUploads"
 ```
 
-Perintah ini mendapatkan status salinan blob bernama ContosoPlanning2015 dalam wadah ContosoUploads.
+Perintah ini mendapatkan status salinan blob bernama ContosoPlanning2015 dalam kontainer ContosoUploads.
 
-### Contoh 2: Dapatkan status salinan dari blob dengan menggunakan pipeline
+### Contoh 2: Dapatkan status salinan untuk blob menggunakan pipeline
 ```
 C:\PS>Get-AzureStorageBlob -Blob "ContosoPlanning2015" -Container "ContosoUploads" | Get-AzureStorageBlobCopyState
 ```
 
-Perintah ini mendapatkan blob bernama ContosoPlanning2015 dalam wadah yang bernama ContosoUploads dengan menggunakan cmdlet **Get-AzureStorageBlob,** lalu memberikan hasilnya ke cmdlet saat ini menggunakan operator pipeline.
+Perintah ini mendapatkan blob bernama ContosoPlanning2015 dalam wadah bernama ContosoUploads menggunakan cmdlet **Get-AzureStorageBlob** , lalu meneruskan hasil ke cmdlet saat ini menggunakan operator pipeline.
 Cmdlet **Get-AzureStorageBlobCopyState** mendapatkan status salinan untuk blob tersebut.
 
-### Contoh 3: Get the copy status for a blob in a container by using the pipeline
+### Contoh 3: Dapatkan status salinan untuk blob dalam wadah menggunakan pipeline
 ```
 C:\PS>Get-AzureStorageContainer -Name "ContosoUploads" | Get-AzureStorageBlobCopyState -Blob "ContosoPlanning2015"
 ```
 
-Perintah ini mendapatkan wadah bernama dengan menggunakan cmdlet **Get-AzureStorageBlob,** lalu menyampaikan hasilnya ke cmdlet saat ini.
+Perintah ini mendapatkan kontainer yang dinamai menggunakan cmdlet **Get-AzureStorageBlob** , lalu meneruskan hasilnya ke cmdlet saat ini.
 Cmdlet **Get-AzureStorageContainer** mendapatkan status salinan untuk blob bernama ContosoPlanning2015 dalam wadah tersebut.
 
 ## PARAMETERS
 
 ### -Blob
 Menentukan nama blob.
-Cmdlet ini mendapatkan status operasi salinan blob untuk Azure Storage blob yang ditentukan parameter ini.
+Cmdlet ini mendapatkan status operasi salinan blob untuk blob Azure Storage yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -90,9 +90,9 @@ Accept wildcard characters: False
 ```
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu yang habis di sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba permintaan.
-Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini akan mengembalikan kesalahan.
+Menentukan interval waktu habis pihak klien, dalam hitungan detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -107,8 +107,8 @@ Accept wildcard characters: False
 ```
 
 ### -CloudBlob
-Menentukan objek **CloudBlob** dari Azure Storage Client.
-Untuk mendapatkan objek **CloudBlob,** gunakan cmdlet Get-AzureStorageBlob.
+Menentukan objek **CloudBlob** dari pustaka Klien Azure Storage.
+Untuk mendapatkan objek **CloudBlob** , gunakan cmdlet Get-AzureStorageBlob.
 
 ```yaml
 Type: Microsoft.WindowsAzure.Storage.Blob.CloudBlob
@@ -123,9 +123,9 @@ Accept wildcard characters: False
 ```
 
 ### -CloudBlobContainer
-Menentukan objek **CloudBlobContainer** dari Azure Storage Client.
+Menentukan objek **CloudBlobContainer** dari pustaka klien Azure Storage.
 Cmdlet ini mendapatkan status salinan blob dalam wadah yang ditentukan parameter ini.
-Untuk mendapatkan objek **CloudBlobContainer,** gunakan cmdlet Get-AzureStorageContainer cmdlet.
+Untuk mendapatkan objek **CloudBlobContainer** , gunakan cmdlet Get-AzureStorageContainer.
 
 ```yaml
 Type: Microsoft.WindowsAzure.Storage.Blob.CloudBlobContainer
@@ -140,11 +140,11 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan jumlah maksimum panggilan jaringan bersama.
-Anda dapat menggunakan parameter ini untuk membatasi konkurensi guna membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Menentukan maksimum panggilan jaringan serentak.
+Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
 Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
-Parameter ini bisa membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth yang rendah, seperti 100 kilobit per detik.
-Nilai default adalah 10.
+Parameter ini dapat membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth rendah, seperti 100 kilobit per detik.
+Nilai defaultnya adalah 10.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -158,9 +158,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Container
+### -Kontainer
 Menentukan nama wadah.
-Cmdlet ini mendapatkan status salin untuk blob dalam wadah yang ditentukan parameter ini.
+Cmdlet ini mendapatkan status salinan untuk blob dalam wadah yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan interval waktu habis di sisi layanan, dalam detik, untuk permintaan.
+Menentukan interval batas waktu sisi layanan, dalam detik, untuk permintaan.
 Jika interval yang ditentukan berlalu sebelum layanan memproses permintaan, layanan penyimpanan mengembalikan kesalahan.
 
 ```yaml
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -WaitForComplete
-Menunjukkan bahwa cmdlet ini menunggu salinan selesai.
+Menunjukkan bahwa cmdlet ini menunggu hingga salinan selesai.
 Jika Anda tidak menentukan parameter ini, cmdlet ini akan segera mengembalikan hasil.
 
 ```yaml
@@ -238,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -250,7 +250,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.WindowsAzure.commands.common. Storage. ResourceModel.AzureStorageBlob
+### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureStorageBlob
 
 ## CATATAN
 

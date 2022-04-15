@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storagesync/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Remove-AzStorageSyncServerEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Remove-AzStorageSyncServerEndpoint.md
-ms.openlocfilehash: 76600eb391a332a85669c372a32ebbd2246ef681
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1d4630e070036f24728d18f1e1d2e971e31a504a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140400078"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142397537"
 ---
 # Remove-AzStorageSyncServerEndpoint
 
 ## SYNOPSIS
-Perintah ini akan menghapus titik akhir server yang ditentukan. Sinkronisasi ke lokasi ini akan segera berhenti.
+Perintah ini akan menghapus titik akhir server yang ditentukan. Sinkronkan ke lokasi ini akan segera berhenti.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/remove-azstoragesyncserverendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Remove-AzStorageSyncServerEndpoint [-ResourceId] <String> [-Force] [-PassThru] [
 ```
 
 ## DESCRIPTION
-Menghapus titik akhir server adalah operasi perusak. Lokasi server ini akan berhenti menyinkronkan. Operasi ini tidak boleh dilakukan untuk mengatasi masalah sinkronisasi. Jika lokasi server ini (incl. file tersebut) ditambahkan lagi ke grup sinkronisasi yang sama sebagai titik akhir server, itu bisa menyebabkan file yang berkonflik dan konsekuensi lain yang tidak diinginkan. Perintah ini ditujukan hanya untuk penipuan.
+Menghapus titik akhir server adalah operasi yang merusak. Lokasi server ini akan berhenti menyinkronkan. Operasi ini tidak boleh dilakukan untuk mengatasi masalah sinkronisasi. Jika lokasi server ini (termasuk. file) ditambahkan lagi ke grup sinkronisasi yang sama dengan titik akhir server, itu bisa menyebabkan file konflik dan konsekuensi lain yang tidak diinginkan. Perintah ini ditujukan untuk penolakan saja.
 
 ## EXAMPLES
 
@@ -53,7 +56,7 @@ Perintah ini akan menghapus titik akhir server.
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -82,8 +85,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Supply -Force untuk melewati konfirmasi perintah ini.
+### -Paksa
+Pasokan -Paksa untuk melewati konfirmasi perintah ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Dalam eksekusi normal, cmdlet ini tidak mengembalikan nilai berhasil. Jika Anda menyediakan parameter PassThru, maka cmdlet akan menulis nilai ke pipeline setelah eksekusi berhasil.
+Dalam eksekusi normal, cmdlet ini tidak mengembalikan nilai keberhasilan. Jika Anda memberikan parameter PassThru, cmdlet akan menulis nilai ke pipeline setelah eksekusi berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -SyncGroupName
-Nama GrupSinkronisasi.
+Nama GrupSinkronkan.
 
 ```yaml
 Type: System.String
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

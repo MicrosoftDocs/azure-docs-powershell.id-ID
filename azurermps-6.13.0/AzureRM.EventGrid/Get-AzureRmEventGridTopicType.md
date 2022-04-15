@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventGrid/Commands.EventGrid/help/Get-AzureRmEventGridTopicType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventGrid/Commands.EventGrid/help/Get-AzureRmEventGridTopicType.md
 ms.openlocfilehash: cd3182a2a00f488dabd70a97d06693362068768c
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140850872"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142357201"
 ---
 # Get-AzureRmEventGridTopicType
 
 ## SYNOPSIS
-Mendapatkan detail tentang tipe topik yang didukung oleh Kisi Acara Azure.
+Mendapatkan detail tentang tipe topik yang didukung oleh Azure Event Grid.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,9 +27,9 @@ Get-AzureRmEventGridTopicType [[-Name] <String>] [-IncludeEventTypeData]
 ```
 
 ## DESCRIPTION
-Mendapatkan detail tipe topik yang didukung oleh Kisi Acara Azure.
-Jika nama tipe topik ditentukan, detail tentang tipe topik tersebut akan dikembalikan.
-Jika nama tipe topik tidak ditentukan, detail tentang semua tipe topik akan dikembalikan.
+Mendapatkan detail tipe topik yang didukung oleh Azure Event Grid.
+Jika nama tipe topik ditentukan, detail tentang tipe topik tersebut dikembalikan.
+Jika nama tipe topik tidak ditentukan, detail tentang semua tipe topik dikembalikan.
 Jika IncludeEventTypes ditentukan, informasi tentang tipe kejadian yang didukung oleh setiap tipe topik disertakan dalam respons.
 
 ## EXAMPLES
@@ -58,7 +58,7 @@ Mendapatkan informasi tentang tipe topik StorageAccounts, termasuk tipe acara ya
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
