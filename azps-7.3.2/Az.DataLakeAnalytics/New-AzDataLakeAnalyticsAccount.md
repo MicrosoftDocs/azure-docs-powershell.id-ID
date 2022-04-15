@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/New-AzDataLakeAnalyticsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/New-AzDataLakeAnalyticsAccount.md
-ms.openlocfilehash: d70dd8e1b27dd41f78ef9219d960432028173851
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: b52df307cdc867026a733007edd8e6b943866d34
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140001269"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142472723"
 ---
 # New-AzDataLakeAnalyticsAccount
 
 ## SYNOPSIS
-Membuat akun Analitik Danau Data.
+Membuat akun Data Lake Analytics.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/new-azdatalakeanalyticsaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,21 +31,21 @@ New-AzDataLakeAnalyticsAccount [-ResourceGroupName] <String> [-Name] <String> [-
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataLakeAnalyticsAccount** membuat akun Azure Data Lake Analytics.
+Cmdlet **New-AzDataLakeAnalyticsAccount** membuat akun Data Lake Analytics Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat akun Analitik Danau Data
+### Contoh 1: Membuat akun Data Lake Analytics
 ```
 PS C:\>New-AzDataLakeAnalyticsAccount -Name "ContosoAdlAccount" -ResourceGroupName "ContosoOrg" -Location "East US 2" -DefaultDataLakeStore "ContosoAdlStore"
 ```
 
-Perintah ini membuat akun Analitik Danau Data bernama ContosoAdlAccount yang menggunakan Penyimpanan Data ContosoAdlStore, dalam grup sumber daya bernama ContosoOrg.
+Perintah ini membuat akun Data Lake Analytics bernama ContosoAdlAccount yang menggunakan Penyimpanan Data ContosoAdlStore, dalam grup sumber daya bernama ContosoOrg.
 
 ## PARAMETERS
 
 ### -DefaultDataLakeStore
-Menentukan nama akun Data Lake Store untuk ditetapkan sebagai sumber data default.
+Menentukan nama akun Data Lake Store untuk diatur sebagai sumber data default.
 
 ```yaml
 Type: System.String
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -72,8 +75,8 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi untuk membuat akun Analitik Danau Data.
-Hanya AS 2 Timur yang didukung saat ini.
+Menentukan lokasi untuk membuat akun Data Lake Analytics.
+Hanya AS Timur 2 yang didukung saat ini.
 
 ```yaml
 Type: System.String
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxAnalyticsUnits
-Unit analitik maksimum yang didukung opsional untuk akun ini.
+Unit analitik maksimum opsional yang didukung untuk akun ini.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxJobCount
-The optional maximum supported jobs running under the account at the same time. Jika tidak ada yang ditentukan, defaultnya adalah 3
+Pekerjaan maksimum yang didukung opsional yang berjalan di bawah akun pada saat yang sama. Jika tidak ada yang ditentukan, default ke 3
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama akun Analitik Danau Data.
+Menentukan nama akun Data Lake Analytics.
 
 ```yaml
 Type: System.String
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -QueryStoreRetention
-Jumlah hari opsional metadata pekerjaan dipertahankan. Jika tidak ada yang ditentukan, defaultnya adalah 30 hari.
+Jumlah hari opsional yang dipertahankan metadata pekerjaan. Jika tidak ada yang ditentukan, defaultnya adalah 30 hari.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -148,8 +151,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya dari akun Analitik Danau Data.
-Untuk membuat grup sumber daya, gunakan New-AzResourceGroup cmdlet.
+Menentukan nama grup sumber daya akun Data Lake Analytics.
+Untuk membuat grup sumber daya, gunakan cmdlet New-AzResourceGroup.
 
 ```yaml
 Type: System.String
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Kamus string dari tag yang terkait dengan akun ini
+String,kamus string tag yang terkait dengan akun ini
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -178,8 +181,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Tier
-Tingkat komitmen yang diinginkan untuk akun ini digunakan.
+### -Tingkat
+Tingkat komitmen yang diinginkan untuk digunakan akun ini.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Management.DataLake.Analytics.Models.TierType]
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -203,7 +206,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Hashtable
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Analytics.Models.TierType, Microsoft.Azure.Management.DataLake.Analytics, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
 
