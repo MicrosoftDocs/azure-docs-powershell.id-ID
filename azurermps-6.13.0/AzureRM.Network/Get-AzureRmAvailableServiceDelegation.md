@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmAvailableServiceDelegation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmAvailableServiceDelegation.md
-ms.openlocfilehash: f0ab07c5fe326e9edcbe17d8bdd38bb79899fed1ade85af673a5d95ddd054a36
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: bc5c09913209713df192603aff7ea7646e651699
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416513"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142386459"
 ---
 # Get-AzureRmAvailableServiceDelegation
 
 ## SYNOPSIS
-Dapatkan delegasi layanan yang tersedia di kawasan ini.
+Dapatkan delegasi layanan yang tersedia di kawasan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Get-AzureRmAvailableServiceDelegation -Location <String> [-DefaultProfile <IAzur
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmAvailableServiceDelegation** memungkinkan Anda mengambil semua delegasi layanan yang tersedia untuk subnet dalam lokasi yang disediakan. Cmdlet ini *tidak* menjelaskan delegasi mana yang dapat bekerja bersama pada satu subnet.
+Cmdlet **Get-AzureRmAvailableServiceDelegation** memungkinkan Anda mengambil semua delegasi layanan yang tersedia untuk subnet di lokasi yang disediakan. Cmdlet ini *tidak* menjelaskan delegasi mana yang mungkin ada bersama pada subnet tunggal.
 
 ## EXAMPLES
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi.
+Lokasinya.
 
 ```yaml
 Type: String
@@ -81,8 +81,8 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
-Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -95,7 +95,7 @@ Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsof
 ## CATATAN
 
 ## RELATED LINKS
-[Add-AzureRmDelegation](./Add-AzureRmDelegation.md) 
- [New-AzureRmDelegation](./New-AzureRmDelegation.md) 
- [Remove-AzureRmDelegation](./Remove-AzureRmDelegation.md) 
+[Add-AzureRmDelegation](./Add-AzureRmDelegation.md)
+ [New-AzureRmDelegation](./New-AzureRmDelegation.md)
+ [Hapus-AzureRmDelegation](./Remove-AzureRmDelegation.md)
  [Get-AzureRmDelegation](./Get-AzureRmDelegation.md)

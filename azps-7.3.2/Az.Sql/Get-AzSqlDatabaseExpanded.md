@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseExpanded.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseExpanded.md
-ms.openlocfilehash: b37334d3619308c0fdf488374084b13c0ca69697
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 020a4ff84eefa32ffddf1242943acd93154d4709
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139998653"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142400813"
 ---
 # Get-AzSqlDatabaseExpanded
 
 ## SYNOPSIS
 Mendapatkan database dan nilai propertinya yang diperluas.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabaseexpanded) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,19 +29,19 @@ Get-AzSqlDatabaseExpanded [-ServerName] <String> [[-DatabaseName] <String>] [-Re
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlDatabaseExpanded** mendapatkan database dan nilai propertinya yang diperluas.
+Cmdlet **Get-AzSqlDatabaseExpanded** mendapatkan database dan nilai properti yang diperluas.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan objek database yang memiliki informasi service tier advisor
+### Contoh 1: Dapatkan objek database yang memiliki informasi konsultan tingkat layanan
 ```
 PS C:\> Get-AzSqlDatabaseExpanded -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01"
 ```
 
-Perintah ini mengembalikan database yang memiliki properti yang diperluas yang berisi informasi penasihat tingkat layanan.
+Perintah ini mengembalikan database yang memiliki properti yang diperluas yang berisi informasi konsultan tingkat layanan.
 
-### Contoh 2: Daftar objek database menggunakan pemfilteran
+### Contoh 2: Mencantumkan objek database menggunakan pemfilteran
 ```
 PS C:\> Get-AzSqlDatabaseExpanded -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database*"
 ```
@@ -48,7 +51,7 @@ Perintah ini mengembalikan objek database yang diperluas untuk semua database di
 ## PARAMETERS
 
 ### -DatabaseName
-Menentukan nama database yang akan dapatkan.
+Menentukan nama database yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -63,7 +66,7 @@ Accept wildcard characters: True
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server yang menjadi host database.
+Menentukan nama server yang menghosting database.
 
 ```yaml
 Type: System.String
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -153,4 +156,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

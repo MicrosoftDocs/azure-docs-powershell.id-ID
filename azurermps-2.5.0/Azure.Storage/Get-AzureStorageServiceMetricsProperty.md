@@ -4,17 +4,17 @@ Module Name: Azure.Storage
 ms.assetid: 3B5B828A-6B3E-49BD-8BA9-916F8B69B8E9
 online version: https://docs.microsoft.com/en-us/powershell/module/azure.storage/get-azurestorageservicemetricsproperty
 schema: 2.0.0
-ms.openlocfilehash: ba3e158b5bfe818f52f715ef83967aaf6c61a44ed01d889ebc67da492283dab8
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 1d7d536d7815206f942a89da4458f4669c0c9fd2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140859824"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142394297"
 ---
 # Get-AzureStorageServiceMetricsProperty
 
 ## SYNOPSIS
-Mendapatkan properti metrik untuk layanan Azure Storage ini.
+Mendapatkan properti metrik untuk layanan Azure Storage.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -26,7 +26,7 @@ Get-AzureStorageServiceMetricsProperty [-ServiceType] <StorageServiceType> [-Met
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureStorageServiceMetricsProperty** mendapatkan properti metrik untuk Azure Storage ini.
+Cmdlet **Get-AzureStorageServiceMetricsProperty** mendapatkan properti metrik untuk layanan Azure Storage.
 
 ## EXAMPLES
 
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 
 ### -MetricsType
 Menentukan tipe metrik.
-Cmdlet ini mendapatkan Azure Storage metrik layanan untuk tipe metrik yang ditentukan parameter ini.
+Cmdlet ini mendapatkan properti metrik layanan Azure Storage untuk tipe metrik yang ditentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah: Jam dan Menit.
 
 ```yaml
@@ -92,9 +92,9 @@ Accept wildcard characters: False
 Menentukan tipe layanan penyimpanan.
 Cmdlet ini mendapatkan properti metrik untuk tipe yang ditentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Blob 
-- Tabel
-- Antrean
+- Gumpalan 
+- Meja
+- Antrian
 - File Nilai File saat ini tidak didukung.
 
 ```yaml
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -125,7 +125,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureStorageContext](./New-AzureStorageContext.md)
+[AzureStorageContext baru](./New-AzureStorageContext.md)
 
 [Set-AzureStorageServiceMetricsProperty](./Set-AzureStorageServiceMetricsProperty.md)
 

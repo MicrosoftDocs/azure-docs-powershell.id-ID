@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/KeyVault/Commands.KeyVault/help/Remove-AzureKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/KeyVault/Commands.KeyVault/help/Remove-AzureKeyVaultKey.md
 ms.openlocfilehash: 8beb5e1c582865e5ed730ca64342a30e822591b6
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422139"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142386899"
 ---
 # Remove-AzureKeyVaultKey
 
 ## SYNOPSIS
-Menghapus kunci di kunci vault.
+Menghapus kunci dalam kubah kunci.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -35,13 +35,13 @@ Remove-AzureKeyVaultKey [-InputObject] <PSKeyVaultKeyIdentityItem> [-Force] [-Pa
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzureKeyVaultKey akan menghapus kunci dalam kunci vault.
-Jika kunci tidak sengaja terhapus, kunci dapat dipulihkan menggunakan Undo-AzureKeyVaultKeyRemoval oleh pengguna dengan izin khusus 'pulihkan'.
-Cmdlet ini memiliki nilai yang tinggi untuk **properti ConfirmImpact.**
+Cmdlet Remove-AzureKeyVaultKey menghapus kunci dalam kubah kunci.
+Jika kunci dihapus secara tidak sengaja, kunci dapat dipulihkan menggunakan Undo-AzureKeyVaultKeyRemoval oleh pengguna dengan izin khusus 'pulihkan'.
+Cmdlet ini memiliki nilai tinggi untuk properti **ConfirmImpact** .
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus kunci dari key vault
+### Contoh 1: Menghapus kunci dari kubah kunci
 ```powershell
 PS C:\> Remove-AzureKeyVaultKey -VaultName 'Contoso' -Name 'ITSoftware' -PassThru
 
@@ -59,37 +59,37 @@ Purge Disabled       : False
 Tags                 :
 ```
 
-Perintah ini akan menghapus kunci yang bernama ITSoftware dari kunci vault bernama Contoso.
+Perintah ini menghapus kunci bernama ITSoftware dari kubah kunci bernama Contoso.
 
-### Contoh 2: Hapus kunci tanpa konfirmasi pengguna
+### Contoh 2: Menghapus kunci tanpa konfirmasi pengguna
 ```powershell
 PS C:\> Remove-AzureKeyVaultKey -VaultName 'Contoso' -Name 'ITSoftware' -Force
 ```
 
-Perintah ini akan menghapus kunci yang bernama ITSoftware dari kunci vault bernama Contoso.
-Perintah menentukan parameter *Paksa,* dan oleh karena itu, cmdlet tidak meminta konfirmasi Anda.
+Perintah ini menghapus kunci bernama ITSoftware dari kubah kunci bernama Contoso.
+Perintah menentukan parameter *Paksa* , dan oleh karena itu, cmdlet tidak meminta Anda untuk mengonfirmasi.
 
-### Contoh 3: Membersihkan kunci yang dihapus dari key vault secara permanen
+### Contoh 3: Membersihkan kunci yang dihapus dari kubah kunci secara permanen
 ```powershell
 PS C:\> Remove-AzureKeyVaultKey -VaultName 'Contoso' -Name 'ITSoftware' -InRemovedState
 ```
 
-Perintah ini akan menghapus kunci yang bernama ITSoftware dari penyimpanan kunci yang bernama Contoso secara permanen.
-Menjalankan cmdlet ini memerlukan izin 'pembersihan', yang harus sebelumnya dan secara eksplisit diberikan kepada pengguna untuk vault kunci ini.
+Perintah ini menghapus kunci bernama ITSoftware dari kubah kunci bernama Contoso secara permanen.
+Menjalankan cmdlet ini memerlukan izin 'pembersihan', yang harus telah diberikan secara eksplisit dan sebelumnya kepada pengguna untuk kubah kunci ini.
 
-### Contoh 4: Menghapus tombol menggunakan operator saluran
+### Contoh 4: Hapus tombol dengan menggunakan operator pipeline
 ```powershell
 PS C:\> Get-AzureKeyVaultKey -VaultName 'Contoso' | Where-Object {$_.Attributes.Enabled -eq $False} | Remove-AzureKeyVaultKey
 ```
 
-Perintah ini memasukkan semua tombol di kunci vault bernama Contoso, dan memasukkannya ke cmdlet **Where-Object** menggunakan operator pipeline.
-Cmdlet tersebut melewati tombol yang memiliki nilai lebih $False atribut **Enabled** ke cmdlet saat ini.
-Cmdlet tersebut akan menghapus tombol tersebut.
+Perintah ini mendapatkan semua kunci di kubah kunci bernama Contoso, dan meneruskannya ke cmdlet **Where-Object** menggunakan operator pipeline.
+Cmdlet tersebut melewati kunci yang memiliki nilai $False untuk atribut **Enabled** ke cmdlet saat ini.
+Cmdlet itu menghapus kunci tersebut.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -103,8 +103,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -InRemovedState
-Menghapus kunci yang dihapus sebelumnya secara permanen.
+Hapus kunci yang dihapus sebelumnya secara permanen.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 
 ### -Nama
 Menentukan nama kunci yang akan dihapus.
-Cmdlet ini menyusun nama domain (FQDN) yang sepenuhnya memenuhi syarat dari kunci berdasarkan nama yang ditentukan parameter ini, nama kunci vault, dan lingkungan Anda saat ini.
+Cmdlet ini menyusun nama domain yang sepenuhnya memenuhi syarat (FQDN) kunci berdasarkan nama yang ditentukan parameter ini, nama kubah kunci, dan lingkungan Anda saat ini.
 
 ```yaml
 Type: System.String
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan bahwa cmdlet ini mengembalikan objek **Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultKey.**
+Menunjukkan bahwa cmdlet ini mengembalikan objek **Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultKey** .
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -181,8 +181,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama key vault untuk menghapus kunci tersebut.
-Cmdlet ini menyusun FQDN dari kunci vault berdasarkan nama yang ditentukan parameter ini dan lingkungan Anda saat ini.
+Menentukan nama kubah kunci untuk menghapus kunci.
+Cmdlet ini menyusun FQDN kubah kunci berdasarkan nama yang ditentukan parameter ini dan lingkungan Anda saat ini.
 
 ```yaml
 Type: System.String
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -213,8 +213,8 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan. Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan. Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -249,5 +249,5 @@ Parameter: InputObject (ByValue)
 [Get-AzureKeyVaultKey](./Get-AzureKeyVaultKey.md)
 
 
-[Undo-AzureKeyVaultKeyRemoval](./Undo-AzureKeyVaultKeyRemoval.md)
+[Batalkan-AzureKeyVaultKeyRemoval](./Undo-AzureKeyVaultKeyRemoval.md)
 

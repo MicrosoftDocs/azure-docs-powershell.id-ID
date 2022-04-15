@@ -4,11 +4,11 @@ ms.assetid: B4102F33-979B-4649-99F4-96A295EAE43C
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: b547ea2754d67b4f40bb323dfc680e2b3a788621
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422058"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142381823"
 ---
 # Reset-AzureVNetGateway
 
@@ -24,7 +24,7 @@ Reset-AzureVNetGateway -VNetName <String> [-Profile <AzureSMProfile>] [<CommonPa
 ```
 
 ## DESCRIPTION
-Cmdlet **Reset-AzureVNetGateway** mereset dan memulai ulang gateway jaringan virtual jaringan privat (VPN, Virtual Private Network).
+Cmdlet **Reset-AzureVNetGateway** mengatur ulang dan memulai ulang gateway jaringan virtual jaringan privat (VPN) virtual.
 
 ## EXAMPLES
 
@@ -33,12 +33,12 @@ Cmdlet **Reset-AzureVNetGateway** mereset dan memulai ulang gateway jaringan vir
 PS C:\> Reset-AzureVNetGateway -VNetName "ContosoVN07"
 ```
 
-Perintah ini mereset gateway jaringan virtual dari jaringan virtual yang bernama ContosoVN07.
+Perintah ini mereset gateway jaringan virtual dari jaringan virtual bernama ContosoVN07.
 
 ## PARAMETERS
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini. Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca. Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -80,11 +80,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureVNetGateway](./Get-AzureVNetGateway.md)
 
-[New-AzureVNetGateway](./New-AzureVNetGateway.md)
+[AzureVNetGateway baru](./New-AzureVNetGateway.md)
 
-[Remove-AzureVNetGateway](./Remove-AzureVNetGateway.md)
+[Hapus-AzureVNetGateway](./Remove-AzureVNetGateway.md)
 
-[Resize-AzureVNetGateway](./Resize-AzureVNetGateway.md)
+[Mengubah ukuran AzureVNetGateway](./Resize-AzureVNetGateway.md)
 
 [Set-AzureVNetGatewayKey](./Set-AzureVNetGatewayKey.md)
 

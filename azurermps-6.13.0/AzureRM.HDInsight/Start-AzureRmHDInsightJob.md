@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Start-AzureRmHDInsightJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Start-AzureRmHDInsightJob.md
 ms.openlocfilehash: 38eb1a7468b56507c5e5f2c0f68f04f1a1d2020d
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424525"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142387423"
 ---
 # Start-AzureRmHDInsightJob
 
@@ -30,11 +30,11 @@ Start-AzureRmHDInsightJob [-ClusterName] <String> [-JobDefinition] <AzureHDInsig
 
 ## DESCRIPTION
 Cmdlet **Start-AzureRMHDInsightJob** memulai pekerjaan Azure HDInsight yang ditentukan pada kluster tertentu.
-Ini bisa menjadi pekerjaan MapReduce, pekerjaan Streaming MapReduce, pekerjaan Hive, atau pekerjaan Pig.
+Ini bisa berupa pekerjaan MapReduce, pekerjaan Streaming MapReduce, pekerjaan Hive, atau pekerjaan Babi.
 
 ## EXAMPLES
 
-### Contoh 1: Memulai pekerjaan pada kluster tertentu
+### Contoh 1: Memulai pekerjaan pada kluster yang ditentukan
 ```
 PS C:\># Cluster info
 PS C:\> $clusterName = "your-hadoop-001"
@@ -51,7 +51,7 @@ PS C:\> New-AzureRmHDInsightHiveJobDefinition -StatusFolder $statusFolder `
             -ClusterCredential $clusterCreds
 ```
 
-Perintah ini memulai pekerjaan pada kluster yang bernama up-hadoop-001.
+Perintah ini memulai pekerjaan di kluster bernama your-hadoop-001.
 
 ## PARAMETERS
 
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -85,8 +85,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpCredential
-Menentukan kredensial masuk kluster (HTTP) untuk kluster tersebut.
+### -HttpCredential
+Menentukan kredensial masuk kluster (HTTP) untuk kluster.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobDefinition
-Menentukan pekerjaan untuk dimulai pada kluster Azure HDInsight.
+Menentukan pekerjaan untuk memulai di kluster Azure HDInsight.
 
 ```yaml
 Type: Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightJobDefinition
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -148,10 +148,10 @@ Parameter: JobDefinition (ByValue)
 
 [Get-AzureRmHDInsightJob](./Get-AzureRmHDInsightJob.md)
 
-[New-AzureRmHDInsightHiveJobDefinition](./New-AzureRmHDInsightHiveJobDefinition.md)
+[Baru-AzureRmHDInsightHiveJobDefinition](./New-AzureRmHDInsightHiveJobDefinition.md)
 
 [Stop-AzureRmHDInsightJob](./Stop-AzureRmHDInsightJob.md)
 
-[Wait-AzureRmHDInsightJob](./Wait-AzureRmHDInsightJob.md)
+[Tunggu-AzureRmHDInsightJob](./Wait-AzureRmHDInsightJob.md)
 
 

@@ -5,16 +5,16 @@ ms.assetid: 0729687C-3104-4136-A80D-16BAEBD6B76C
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.keyvault/get-azurekeyvaultcertificatepolicy
 schema: 2.0.0
 ms.openlocfilehash: 692c639ac42d0a8f2dc2bf121321dfc116ebce1b
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132415068"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142393424"
 ---
 # Get-AzureKeyVaultCertificatePolicy
 
 ## SYNOPSIS
-Mendapatkan kebijakan untuk sertifikat di kunci vault.
+Mendapatkan kebijakan untuk sertifikat dalam kubah kunci.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -26,11 +26,11 @@ Get-AzureKeyVaultCertificatePolicy [-VaultName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureKeyVaultCertificatePolicy** mendapatkan kebijakan untuk sertifikat di kunci vault di Azure Key Vault.
+Cmdlet **Get-AzureKeyVaultCertificatePolicy** mendapatkan kebijakan untuk sertifikat dalam kubah kunci di Azure Key Vault.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan kebijakan sertifikat
+### Contoh 1: Dapatkan kebijakan sertifikat
 ```
 PS C:\>Get-AzureKeyVaultCertificatePolicy -VaultName "ContosoKV01" -Name "TestCert01"
 SecretContentType               : application/x-pkcs12
@@ -51,12 +51,12 @@ Created                         : 2/8/2016 11:10:29 PM
 Updated                         : 2/8/2016 11:10:29 PM
 ```
 
-Perintah ini mendapatkan kebijakan sertifikat untuk sertifikat TestCert01 dalam kunci vault ContosoVAULT01.
+Perintah ini mendapatkan kebijakan sertifikat untuk sertifikat TestCert01 dalam kubah kunci ContosoKV01.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: IAzureContextContainer
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kunci vault.
+Menentukan nama kubah kunci.
 
 ```yaml
 Type: String
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

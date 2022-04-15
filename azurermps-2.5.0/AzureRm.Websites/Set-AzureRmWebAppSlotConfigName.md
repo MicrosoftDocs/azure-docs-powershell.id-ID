@@ -5,16 +5,16 @@ ms.assetid: 7DBF937E-2D01-4356-9A5F-C5A4CB6D1A10
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.websites/set-azurermwebappslotconfigname
 schema: 2.0.0
 ms.openlocfilehash: 39c3ce693a1ee17a5b547c027ab9165388fe10f2
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140850978"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142391431"
 ---
 # Set-AzureRmWebAppSlotConfigName
 
 ## SYNOPSIS
-Menyetel nama Slot Config Web App
+Mengatur nama Web App Slot Config
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -35,7 +35,7 @@ Set-AzureRmWebAppSlotConfigName [[-AppSettingNames] <String[]>] [[-ConnectionStr
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmWebAppSlotConfigName** menandai App Pengaturan dan String Koneksi sebagai pengaturan slot
+Cmdlet **Set-AzureRmWebAppSlotConfigName** menandai Pengaturan Aplikasi dan String Koneksi sebagai pengaturan slot
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ Perintah ini menghapus semua pengaturan aplikasi dan string koneksi untuk Web Ap
 ## PARAMETERS
 
 ### -AppSettingNames
-App Pengaturan Array String Nama
+Array String Nama Pengaturan Aplikasi
 
 ```yaml
 Type: String[]
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionStringNames
-Array String Nama String
+Array String Nama String Koneksi
 
 ```yaml
 Type: String[]
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

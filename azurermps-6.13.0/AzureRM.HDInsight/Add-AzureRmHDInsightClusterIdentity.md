@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.hdins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Add-AzureRmHDInsightClusterIdentity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Add-AzureRmHDInsightClusterIdentity.md
-ms.openlocfilehash: dbadc77ef31ac7677888520de62840abf7e81283b3005cc3279d680229da27b5
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: d02dce12425015ed12e082f0bb3ba52c5b9b77c2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417328"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142387637"
 ---
 # Add-AzureRmHDInsightClusterIdentity
 
@@ -37,11 +37,11 @@ Add-AzureRmHDInsightClusterIdentity [-Config] <AzureHDInsightConfig> [-ObjectId]
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureRmHDInsightClusterIdentity** menambahkan identitas kluster ke objek konfigurasi Azure HDInsight yang dibuat oleh New-AzureRmHDInsightClusterConfig cmdlet.
+Cmdlet **Add-AzureRmHDInsightClusterIdentity** menambahkan identitas kluster ke objek konfigurasi Azure HDInsight yang dibuat oleh cmdlet New-AzureRmHDInsightClusterConfig.
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan informasi Identitas Kluster ke objek konfigurasi kluster
+### Contoh 1: Menambahkan info Identitas Kluster ke objek konfigurasi kluster
 ```
 PS C:\># Primary storage account info
 PS C:\> $storageAccountResourceGroupName = "Group"
@@ -84,7 +84,7 @@ PS C:\> New-AzureRmHDInsightClusterConfig `
                 -DefaultStorageContainer $storageAccountContainer
 ```
 
-Perintah ini menambahkan informasi Identitas Kluster ke kluster bernama up-hadoop-001, yang memungkinkan kluster mengakses Azure Data Lake Store.
+Perintah ini menambahkan info Identitas Kluster ke kluster bernama your-hadoop-001, yang memungkinkan kluster mengakses Azure Data Lake Store.
 
 ## PARAMETERS
 
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -CertificateFileContents
-Menentukan konten file dari sertifikat yang akan digunakan saat mengakses Azure Data Lake Store.
+Menentukan konten file sertifikat yang akan digunakan saat mengakses Azure Data Lake Store.
 
 ```yaml
 Type: System.Byte[]
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 
 ### -CertificateFilePath
 Menentukan jalur file ke sertifikat yang akan digunakan untuk mengautentikasi sebagai Prinsipal Layanan.
-Kluster ini akan digunakan saat mengakses Azure Data Lake Store.
+Kluster akan menggunakannya saat mengakses Azure Data Lake Store.
 
 ```yaml
 Type: System.String
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 
 ### -CertificatePassword
 Menentukan kata sandi untuk sertifikat yang akan digunakan untuk mengautentikasi sebagai Prinsipal Layanan.
-Kluster ini akan digunakan saat mengakses Azure Data Lake Store.
+Kluster akan menggunakannya saat mengakses Azure Data Lake Store.
 
 ```yaml
 Type: System.String
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -Config
-Menentukan objek konfigurasi kluster HDInsight yang dimodifikasi cmdlet ini.
+Menentukan objek konfigurasi kluster HDInsight yang diubah cmdlet ini.
 Objek ini dibuat oleh cmdlet New-AzureRmHDInsightClusterConfig.
 
 ```yaml
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -182,8 +182,8 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Menentukan ID objek Azure AD (GUID) Prinsipal Layanan Azure AD yang mewakili kluster.
-Kluster ini akan digunakan saat mengakses Azure Data Lake Store.
+Menentukan ID objek Azure AD (GUID) dari Azure AD Service Principal yang mewakili kluster.
+Kluster akan menggunakannya saat mengakses Azure Data Lake Store.
 
 ```yaml
 Type: System.Guid
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -216,6 +216,6 @@ Parameter: ObjectId (ByValue)
 
 ## RELATED LINKS
 
-[New-AzureRmHDInsightClusterConfig](./New-AzureRmHDInsightClusterConfig.md)
+[Baru-AzureRmHDInsightClusterConfig](./New-AzureRmHDInsightClusterConfig.md)
 
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventGrid/Commands.EventGrid/help/Get-AzureRmEventGridSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventGrid/Commands.EventGrid/help/Get-AzureRmEventGridSubscription.md
 ms.openlocfilehash: 3117433c677330eba4585d45337c44658225ee0a
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140857262"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142387862"
 ---
 # Get-AzureRmEventGridSubscription
 
@@ -48,9 +48,9 @@ Get-AzureRmEventGridSubscription [-InputObject] <PSTopic> [-DefaultProfile <IAzu
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzureRmEventGridSubscription mendapatkan detail langganan Kisi Kejadian yang ditentukan, atau daftar semua langganan Kisi Acara di grup sumber daya atau langganan Azure saat ini.
-Jika nama langganan acara disediakan, detail dari satu langganan Kisi Acara akan dikembalikan.
-Jika nama langganan acara tidak tersedia, daftar semua langganan acara akan dikembalikan.
+Cmdlet Get-AzureRmEventGridSubscription mendapatkan detail langganan Kisi Acara tertentu, atau daftar semua langganan Kisi Acara dalam grup sumber daya atau langganan Azure saat ini.
+Jika nama langganan acara disediakan, detail satu langganan Kisi Acara akan dikembalikan.
+Jika nama langganan acara tidak disediakan, daftar semua langganan acara akan dikembalikan.
 
 ## EXAMPLES
 
@@ -59,70 +59,70 @@ Jika nama langganan acara tidak tersedia, daftar semua langganan acara akan dike
 PS C:\> Get-AzureRmEventGridSubscription -ResourceGroupName MyResourceGroupName -TopicName Topic1 -EventSubscriptionName EventSubscription1
 ```
 
-Mendapatkan detail kejadian langganan EventSubscription1 \`\` yang dibuat untuk topik Topic1 \`di\` grup sumber daya \`MyResourceGroupName\`.
+Mendapatkan detail langganan acara EventSubscription1\` yang dibuat untuk topik \`Topik1\` dalam grup \`sumber daya MyResourceGroupName\`.\`
 
 ### Contoh 2
 ```
 PS C:\> Get-AzureRmEventGridSubscription -ResourceGroupName MyResourceGroupName -TopicName Topic1 -EventSubscriptionName EventSubscription1 -IncludeFullEndpointUrl
 ```
 
-Mendapatkan detail \`acara Langganan EventSubscription1 \`\` yang dibuat untuk topik Topic1\` \`di grup sumber daya MyResourceGroupName\`, termasuk URL titik akhir lengkap jika itu adalah langganan acara berbasis web.
+Mendapatkan detail langganan \`acara EventSubscription1\` yang dibuat untuk topik \`Topik1\` dalam grup \`sumber daya MyResourceGroupName\`, termasuk URL titik akhir penuh jika merupakan langganan acara berbasis webhook.
 
 ### Contoh 3
 ```
 PS C:\> Get-AzureRmEventGridSubscription -ResourceGroupName MyResourceGroupName -TopicName Topic1
 ```
 
-Dapatkan daftar semua langganan acara yang dibuat untuk topik Topic1 \`dalam grup\` sumber daya \`MyResourceGroupName\`.
+Dapatkan daftar semua langganan acara yang dibuat untuk topik \`Topik1\` dalam grup \`sumber daya MyResourceGroupName\`.
 
 ### Contoh 4
 ```
 PS C:\> Get-AzureRmEventGridSubscription -ResourceGroupName MyResourceGroupName -EventSubscriptionName EventSubscription1
 ```
 
-Mendapatkan detail kejadian langganan EventSubscription1 \`\` yang dibuat untuk grup sumber daya \`MyResourceGroupName\`.
+Mendapatkan detail langganan \`acara EventSubscription1\` yang dibuat untuk grup \`sumber daya MyResourceGroupName\`.
 
 ### Contoh 5
 ```
 PS C:\> Get-AzureRmEventGridSubscription -EventSubscriptionName EventSubscription1
 ```
 
-Dapatkan detail langganan acaraSubskrip1 \`yang dibuat\` untuk langganan Azure yang saat ini dipilih.
+Mendapatkan detail langganan \`acara Langganan acara1\` dibuat untuk langganan Azure yang saat ini dipilih.
 
 ### Contoh 6
 ```
 PS C:\> Get-AzureRmEventGridSubscription -ResourceGroupName MyResourceGroupName
 ```
 
-Mendapatkan daftar semua langganan acara global yang dibuat di bawah grup sumber daya \`MyResourceGroupName\`.
+Mendapatkan daftar semua langganan acara global yang dibuat di bawah grup \`sumber daya MyResourceGroupName\`.
 
 ### Contoh 7
 ```
 PS C:\> Get-AzureRmEventGridSubscription
 ```
 
-Dapatkan daftar semua langganan acara global yang dibuat di bawah langganan Azure yang saat ini dipilih.
+Mendapatkan daftar semua langganan acara global yang dibuat di bawah langganan Azure yang saat ini dipilih.
 
 ### Contoh 8
 ```
 PS C:\> Get-AzureRmEventGridSubscription -ResourceGroupName MyResourceGroupName -Location westus2
 ```
 
-Mendapatkan daftar semua langganan acara kawasan yang dibuat di bawah grup sumber daya \`MyResourceGroupName\` di lokasi tertentu \`westus2\`.
+Mendapatkan daftar semua langganan acara kawasan yang dibuat di bawah grup \`sumber daya MyResourceGroupName\` di lokasi \`yang ditentukan westus2\`.
 
 ### Contoh 9
 ```
 PS C:\> Get-AzureRmEventGridSubscription -ResourceId "/subscriptions/$subscriptionId/resourceGroups/$resourceGroupName/providers/Microsoft.EventHub/namespaces/$namespaceName"
 ```
 
-Mendapatkan daftar semua langganan acara yang dibuat untuk ruang nama EventHub yang ditentukan.
+Mendapatkan daftar semua langganan acara yang dibuat untuk ruang nama EventHub tertentu.
 
 ### Contoh 10
 ```
 PS C:\> Get-AzureRmEventGridSubscription -TopicTypeName "Microsoft.EventHub.Namespaces" -Location $location
 ```
 
-Mendapatkan daftar semua langganan acara yang dibuat untuk tipe topik yang ditentukan (ruang nama EventHub) di lokasi yang ditentukan.
+Mendapatkan daftar semua langganan acara yang dibuat untuk tipe topik tertentu (ruang nama EventHub) di lokasi yang ditentukan.
 
 ### Contoh 11
 ```
@@ -134,7 +134,7 @@ Mendapatkan daftar semua langganan acara yang dibuat untuk grup sumber daya tert
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeFullEndpointUrl
-Sertakan URL titik akhir lengkap tujuan langganan acara.
+Sertakan URL titik akhir penuh tujuan langganan acara.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Langganan Kejadian Event.
+Objek Langganan Kejadian EventGrid.
 
 ```yaml
 Type: Microsoft.Azure.Commands.EventGrid.Models.PSTopic
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya tempat langganan kejadian dibuat.
+Pengidentifikasi sumber daya tempat langganan acara telah dibuat.
 
 ```yaml
 Type: System.String
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -TopicTypeName
-Nama Jenis Topik
+Nama TopicType
 
 ```yaml
 Type: System.String
@@ -269,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

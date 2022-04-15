@@ -4,16 +4,16 @@ ms.assetid: 1BA472FB-E684-486C-8066-42C9215DBDEF
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: e8f3c7f2853a7421fe406fa904182328e470fd12
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427448"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142381769"
 ---
 # Set-AzureEndpoint
 
 ## SYNOPSIS
-Mengubah titik akhir yang ditetapkan ke komputer virtual.
+Mengubah titik akhir yang ditetapkan ke mesin virtual.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -28,25 +28,25 @@ Set-AzureEndpoint [-Name] <String> [[-Protocol] <String>] [[-LocalPort] <Int32>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureEndpoint** mengubah titik akhir yang ditetapkan ke komputer virtual Azure.
+Cmdlet **Set-AzureEndpoint** mengubah titik akhir yang ditetapkan ke mesin virtual Azure.
 Anda dapat menentukan perubahan pada titik akhir yang tidak memuat seimbang.
 
 ## EXAMPLES
 
-### Contoh 1: Ubah titik akhir untuk mendengarkan pada port
+### Contoh 1: Mengubah titik akhir untuk mendengarkan di port
 ```
 PS C:\> Get-AzureVM -ServiceName "ContosoService" -Name "VirutalMachine01" | Set-AzureEndpoint -Name "Web" -PublicPort 443 -LocalPort 443 -Protocol tcp | Update-AzureVM
 ```
 
-Perintah ini mengambil konfigurasi mesin virtual bernama VirtualMachine01 menggunakan cmdlet **Get-AzureVM.**
-Perintah itu meneruskannya ke cmdlet saat ini dengan menggunakan operator pipeline.
-Cmdlet ini mengubah titik akhir yang bernama Web untuk mendengarkan pada port 443.
-Perintah melewati objek mesin virtual ke cmdlet **Update-AzureVM,** yang menerapkan perubahan Anda.
+Perintah ini mengambil konfigurasi mesin virtual bernama VirtualMachine01 menggunakan cmdlet **Get-AzureVM** .
+Perintah meneruskannya ke cmdlet saat ini menggunakan operator pipeline.
+Cmdlet ini mengubah titik akhir bernama Web untuk mendengarkan port 443.
+Perintah melewati objek mesin virtual ke cmdlet **Update-AzureVM** , yang mengimplementasikan perubahan Anda.
 
 ## PARAMETERS
 
 ### -ACL
-Menentukan objek konfigurasi daftar kontrol akses (ACL, Access Control List) yang diterapkan cmdlet ini ke titik akhir.
+Menentukan objek konfigurasi daftar kontrol akses (ACL) yang diterapkan cmdlet ini ke titik akhir.
 
 ```yaml
 Type: NetworkAclObject
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 
 ### -DirectServerReturn
 Menentukan apakah cmdlet ini mengaktifkan pengembalian server langsung.
-Tentukan $True diaktifkan, atau $False dinonaktifkan.
+Tentukan $True untuk diaktifkan, atau $False untuk dinonaktifkan.
 
 ```yaml
 Type: Boolean
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdleTimeoutInMinutes
-Menentukan periode waktu habis tcp diam, dalam menit, untuk titik akhir.
+Menentukan periode waktu habis diam TCP, dalam menit, untuk titik akhir.
 
 ```yaml
 Type: Int32
@@ -92,16 +92,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -InternalLoadBalancerName
-Menentukan nama penyeimbang muat internal.
+Menentukan nama penyeimbang muatan internal.
 
 ```yaml
 Type: String
@@ -146,17 +146,17 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerDistribution
-Menentukan distribusi algoritma penyeimbang muat.
-Nilai valid adalah: 
+Menentukan algoritma distribusi penyeimbang beban.
+Nilai yang valid adalah: 
 
 - sourceIP.
-A two tuple affinity: Source IP, Destination IP 
+Affinity dua rangkap: IP Sumber, IP Tujuan 
 - sourceIPProtocol.
-Tiga daftar alamat: IP Sumber, IP Tujuan, Protokol 
-- tidak ada.
-Lima daftar alamat: IP Sumber, Port Sumber, IP Tujuan, Port Tujuan, Port Tujuan, Protokol 
+Affinity tiga rangkap: IP Sumber, IP Tujuan, Protokol 
+- Tidak.
+Affinity five tuple: Source IP, Source Port, Destination IP, Destination Port, Protocol 
 
-Nilai default adalah tidak ada.
+Nilai default tidak ada.
 
 ```yaml
 Type: String
@@ -171,8 +171,8 @@ Accept wildcard characters: False
 ```
 
 ### -LocalPort
-Menentukan port lokal dan privat yang digunakan titik akhir ini.
-Aplikasi dalam mesin virtual mendengarkan pada port ini untuk permintaan input layanan untuk titik akhir ini.
+Menentukan port lokal, privat, yang digunakan titik akhir ini.
+Aplikasi dalam mesin virtual mendengarkan port ini untuk permintaan input layanan untuk titik akhir ini.
 
 ```yaml
 Type: Int32
@@ -202,8 +202,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -217,12 +217,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
+### -Protokol
 Menentukan protokol titik akhir.
-Nilai valid adalah: 
+Nilai yang valid adalah: 
 
-- tcp 
-- udp
+- Tcp 
+- Udp
 
 ```yaml
 Type: String
@@ -252,9 +252,9 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualIPName
-Menentukan nama alamat IP virtual yang terkait dengan Azure ke titik akhir.
-Layanan Anda bisa memiliki beberapa IP virtual.
-Untuk membuat IP virtual, gunakan cmdlet **Add-AzureVirtualIP.**
+Menentukan nama alamat IP virtual yang dikaitkan Azure ke titik akhir.
+Layanan Anda dapat memiliki beberapa IP virtual.
+Untuk membuat IP virtual, gunakan cmdlet **Add-AzureVirtualIP** .
 
 ```yaml
 Type: String
@@ -269,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan mesin virtual tempat titik akhir tersebut berada.
+Menentukan mesin virtual tempat titik akhir berada.
 
 ```yaml
 Type: IPersistentVM
@@ -284,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -304,8 +304,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureVM](./Get-AzureVM.md)
 
-[Remove-AzureEndpoint](./Remove-AzureEndpoint.md)
+[Hapus-AzureEndpoint](./Remove-AzureEndpoint.md)
 
-[Update-AzureVM](./Update-AzureVM.md)
+[Perbarui-AzureVM](./Update-AzureVM.md)
 
 

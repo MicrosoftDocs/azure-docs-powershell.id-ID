@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/KeyVault/Commands.KeyVault/help/Get-AzureKeyVaultCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/KeyVault/Commands.KeyVault/help/Get-AzureKeyVaultCertificate.md
 ms.openlocfilehash: 113821d2c246d5e4cdfea4aa75612d1713088dd6
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425880"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142387201"
 ---
 # Get-AzureKeyVaultCertificate
 
 ## SYNOPSIS
-Mendapatkan sertifikat dari kunci vault.
+Mendapatkan sertifikat dari kubah kunci.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -77,7 +77,7 @@ Get-AzureKeyVaultCertificate [-ResourceId] <String> [-Name] <String> [-IncludeVe
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureKeyVaultCertificate** mendapatkan sertifikat tertentu atau versi sertifikat dari kunci vault di Azure Key Vault.
+Cmdlet **Get-AzureKeyVaultCertificate** mendapatkan sertifikat tertentu atau versi sertifikat dari kubah kunci di Azure Key Vault.
 
 ## EXAMPLES
 
@@ -110,9 +110,9 @@ Created     : 2/8/2016 11:21:45 PM
 Updated     : 2/8/2016 11:21:45 PM
 ```
 
-Perintah ini mendapatkan sertifikat yang bernama TestCert01 dari kunci vault bernama Contoso AZURE01.
+Perintah ini mendapatkan sertifikat bernama TestCert01 dari kubah kunci bernama ContosoKV01.
 
-### Contoh 2: Dapatkan semua sertifikat yang telah dihapus tetapi tidak di pembersihan untuk vault kunci ini.
+### Contoh 2: Dapatkan semua sertifikat yang telah dihapus tetapi tidak dibersihkan untuk kubah kunci ini.
 ```powershell
 PS C:\> Get-AzureKeyVaultCertificate -VaultName 'contoso' -InRemovedState
 
@@ -142,9 +142,9 @@ Version            :
 Id                 : https://contoso.vault.azure.net:443/certificates/test2
 ```
 
-Perintah ini mendapatkan semua sertifikat yang telah dihapus sebelumnya, namun tidak di pembersihan, di kunci vault bernama Contoso.
+Perintah ini mendapatkan semua sertifikat yang telah dihapus sebelumnya, tetapi tidak dibersihkan, dalam kubah kunci bernama Contoso.
 
-### Contoh 3: Mendapatkan sertifikat MyCert yang telah dihapus tetapi tidak di pembersihan untuk vault kunci ini.
+### Contoh 3: Mendapatkan sertifikat MyCert yang telah dihapus tetapi tidak dibersihkan untuk kubah kunci ini.
 ```powershell
 PS C:\> Get-AzureKeyVaultCertificate -VaultName 'contoso' -Name 'test1' -InRemovedState
 
@@ -184,13 +184,13 @@ Version            : 7fe415d5518240c1a6fce89986b8d334
 Id                 : https://contoso.vault.azure.net:443/certificates/test1/7fe415d5518240c1a6fce89986b8d334
 ```
 
-Perintah ini mendapatkan sertifikat yang bernama 'MyCert' yang telah dihapus sebelumnya, tetapi tidak dihapus, di kunci vault bernama Contoso.
-Perintah ini akan mengembalikan metadata seperti tanggal penghapusan, dan tanggal pembersihan terjadwal dari sertifikat yang dihapus ini.
+Perintah ini mendapatkan sertifikat bernama 'MyCert' yang telah dihapus sebelumnya, tetapi tidak dibersihkan, di kubah kunci bernama Contoso.
+Perintah ini akan mengembalikan metadata seperti tanggal penghapusan, dan tanggal pembersihan terjadwal sertifikat yang dihapus ini.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-objek KeyVault.
+Objek KeyVault.
 
 ```yaml
 Type: Microsoft.Azure.Commands.KeyVault.Models.PSKeyVault
@@ -250,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama sertifikat untuk mendapatkan.
+Menentukan nama sertifikat yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -277,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-KeyVault Resource Id.
+Id Sumber Daya KeyVault.
 
 ```yaml
 Type: System.String
@@ -292,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kunci vault.
+Menentukan nama kubah kunci.
 
 ```yaml
 Type: System.String
@@ -337,7 +337,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -362,7 +362,7 @@ Parameter: InputObject (ByValue)
 
 [Add-AzureKeyVaultCertificate](./Add-AzureKeyVaultCertificate.md)
 
-[Import-AzureKeyVaultCertificate](./Import-AzureKeyVaultCertificate.md)
+[Impor-AzureKeyVaultCertificate](./Import-AzureKeyVaultCertificate.md)
 
-[Remove-AzureKeyVaultCertificate](./Remove-AzureKeyVaultCertificate.md)
+[Hapus-AzureKeyVaultCertificate](./Remove-AzureKeyVaultCertificate.md)
 

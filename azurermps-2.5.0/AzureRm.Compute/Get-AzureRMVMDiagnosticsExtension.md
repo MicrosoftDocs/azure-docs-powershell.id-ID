@@ -5,16 +5,16 @@ ms.assetid: D5BEA683-44AE-4D71-827D-02A03F0BEAE9
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/get-azurermvmdiagnosticsextension
 schema: 2.0.0
 ms.openlocfilehash: e02c86407326d9ea5b12a5a589e5860c9dfb5c19
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422008"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142393929"
 ---
 # Get-AzureRmVMDiagnosticsExtension
 
 ## SYNOPSIS
-Dapatkan pengaturan ekstensi Diagnostik di komputer virtual.
+Mendapatkan pengaturan ekstensi Diagnostik di mesin virtual.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -26,21 +26,21 @@ Get-AzureRmVMDiagnosticsExtension [-ResourceGroupName] <String> [-VMName] <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmVMDiagnosticsExtension** mendapatkan pengaturan ekstensi Azure Diagnostics di komputer virtual.
+Cmdlet **Get-AzureRmVMDiagnosticsExtension** mendapatkan pengaturan ekstensi Diagnostik Azure pada mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Terapkan ekstensi diagnostik ke komputer virtual
+### Contoh 1: Dapatkan ekstensi diagnostik yang diterapkan ke mesin virtual
 ```
 PS C:\> Get-AzureRmVMDiagnosticsExtension -ResourceGroupName "ResourceGroup11" -VMName "ContosoVM22"
 ```
 
-Perintah ini akan menerapkan ekstensi diagnostik ke komputer virtual bernama ContosoVM22.
+Perintah ini akan menerapkan ekstensi diagnostik ke mesin virtual bernama ContosoVM22.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -55,7 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Tentukan nama ekstensi Diagnostik yang akan mendapatkan pengaturan cmdlet ini.
+Menentukan nama ekstensi Diagnostik di mana cmdlet ini mendapatkan pengaturan.
 
 ```yaml
 Type: String
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: String
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Mengindikasikan bahwa cmdlet ini menggunakan nilai Status.
+Menunjukkan bahwa cmdlet ini menggunakan nilai Status.
 
 ```yaml
 Type: SwitchParameter
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama komputer virtual tempat cmdlet ini mendapatkan ekstensi Diagnostik.
+Menentukan nama mesin virtual tempat cmdlet ini mendapatkan ekstensi Diagnostik.
 
 ```yaml
 Type: String
@@ -115,11 +115,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
