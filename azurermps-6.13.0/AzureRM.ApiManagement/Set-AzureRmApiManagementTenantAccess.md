@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.apima
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Set-AzureRmApiManagementTenantAccess.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Set-AzureRmApiManagementTenantAccess.md
-ms.openlocfilehash: 13a073194902369071577cf00f5407c76d3109d0224c141419d36dc6ff0a66b1
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: c8f05c7ca9ddeb5868d62633600d63f5d7f01be0
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417456"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142143780"
 ---
 # Set-AzureRmApiManagementTenantAccess
 
@@ -32,7 +32,7 @@ Cmdlet **Set-AzureRmApiManagementTenantAccess** mengaktifkan atau menonaktifkan 
 
 ## EXAMPLES
 
-### Contoh 1: Aktifkan akses penyewa
+### Contoh 1: Mengaktifkan akses penyewa
 ```
 PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Set-AzureRmApiManagementTenantAccess -Context $apimContext -Enabled $True
@@ -43,7 +43,7 @@ Perintah ini memungkinkan akses penyewa dalam konteks yang ditentukan.
 ## PARAMETERS
 
 ### -Konteks
-Menentukan objek **PsApiManagementContext.**
+Menentukan objek **PsApiManagementContext** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -72,9 +72,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Enabled
+### -Difungsikan
 Menentukan apakah cmdlet ini mengaktifkan atau menonaktifkan akses penyewa.
-Tentukan nilai yang $True aktifkan atau $False nonaktifkan.
+Tentukan nilai $True untuk diaktifkan atau $False untuk dinonaktifkan.
 
 ```yaml
 Type: System.Boolean
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengindikasikan bahwa cmdlet ini mengembalikan **PsApiManagementAccessInformation** yang dimodifikasi cmdlet ini.
+Menunjukkan bahwa cmdlet ini mengembalikan **PsApiManagementAccessInformation** yang diubah cmdlet ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

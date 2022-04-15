@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventHub/Commands.EventHub/help/New-AzureRmEventHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventHub/Commands.EventHub/help/New-AzureRmEventHub.md
 ms.openlocfilehash: 74921cb6ccfc77e2c45d734316cb2a67817c7ede
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140867483"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142141635"
 ---
 # New-AzureRmEventHub
 
@@ -37,16 +37,16 @@ New-AzureRmEventHub [-ResourceGroupName] <String> [-Namespace] <String> [-Name] 
 
 ## DESCRIPTION
 Cmdlet New-AzureRmEventHub membuat Hub Acara Azure baru.
-Untuk membuat Eventhub dengan properti Ambil deskripsi, silakan ikuti langkah-langkah di bawah ini (Contoh 2). 
+Untuk membuat Eventhub dengan properti deskripsi Capture, ikuti langkah-langkah di bawah ini (Contoh 2). 
 
 ## EXAMPLES
 
-### Contoh 1 - Buat EventHub baru
+### Contoh 1 - Membuat EventHub baru
 ```
 PS C:\> New-AzureRmEventHub -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -Name MyEventHubName
 ```
 
-Membuat Hub Kejadian yang bernama \`MyEventHubName\` dengan periode penyimpanan pesan 3 hari dan dua partisi, \`di lokasi WestUS\` , dengan \`grup sumber daya MyResourceGroupName\`.
+Membuat Hub Kejadian bernama \`MyEventHubName\` dengan periode penyimpanan pesan 3 hari dan dua partisi, di \`lokasi WestUS\` , dengan grup \`sumber daya MyResourceGroupName\`.
 
 ### Contoh 2 Perbarui Eventhub dengan 'CaptureDescription'
 ```
@@ -67,7 +67,7 @@ PS C:\> $createdEventHub.CaptureDescription.Destination.StorageAccountResourceId
 PS C:\> Set-AzureRmEventHub -ResourceGroupName MyResourceGroupName -Namespace MyNamespaceName -Name MyEventHubName -InputObject MyCreatedEventHub -messageRetentionInDays 4 -partitionCount 2
 ```
 
-Membuat Hub Kejadian yang \`bernama MyEventHubName\` dengan periode penyimpanan pesan 3 hari, 2 partisi dan properti CaptureDescription \`di lokasi WestUS\` , \`dengan grup sumber daya MyResourceGroupName\`.
+Membuat Hub Kejadian bernama \`MyEventHubName\` dengan periode penyimpanan pesan 3 hari, 2 partisi dan properti CaptureDescription di \`lokasi WestUS\` , dengan grup \`sumber daya MyResourceGroupName\`.
 
 ## PARAMETERS
 
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -MessageRetentionInDays
-Penyimpanan pesan Eventhub dalam hari
+Penyimpanan Pesan Eventhub Dalam Hari
 
 ```yaml
 Type: System.Nullable`1[System.Int64]
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -216,7 +216,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes
 
-### System.Nullable'1[[System.Int64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Int64, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 

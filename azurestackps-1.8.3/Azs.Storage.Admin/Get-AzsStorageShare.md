@@ -4,16 +4,16 @@ Module Name: Azs.Storage.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 0f8c9192100536a04b664f981a9df9e1508a1f87
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136580465"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142134755"
 ---
 # Get-AzsStorageShare
 
 ## SYNOPSIS
-Mengembalikan daftar penyimpanan yang bersesering.
+Mengembalikan daftar berbagi penyimpanan.
 
 ## SYNTAX
 
@@ -22,7 +22,7 @@ Mengembalikan daftar penyimpanan yang bersesering.
 Get-AzsStorageShare -FarmName <String> [-ResourceGroupName <String>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsStorageShare -FarmName <String> -ShareName <String> [-ResourceGroupName <String>] [<CommonParameters>]
 ```
@@ -33,7 +33,7 @@ Get-AzsStorageShare -ResourceId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Mengembalikan daftar penyimpanan yang bersesering.
+Mengembalikan daftar berbagi penyimpanan.
 
 ## EXAMPLES
 
@@ -42,12 +42,12 @@ Mengembalikan daftar penyimpanan yang bersesering.
 Get-AzsStorageShare -FarmName f9b8e2e2-e4b4-44e0-9d92-6a848b1a5376
 ```
 
-Dapatkan daftar ruang penyimpanan yang tersedia.
+Dapatkan daftar berbagi penyimpanan.
 
 ## PARAMETERS
 
 ### -FarmName
-Id Farm.
+Id Pertanian.
 
 ```yaml
 Type: String
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
