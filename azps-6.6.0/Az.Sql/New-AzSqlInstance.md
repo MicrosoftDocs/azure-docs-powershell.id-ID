@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlInstance.md
 ms.openlocfilehash: 979b1f5ddb9c18c1bd3971146f35d533b1a36b79
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140479929"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142298725"
 ---
 # New-AzSqlInstance
 
 ## SYNOPSIS
-Membuat Instans Azure SQL Database Terkelola.
+Membuat Instans terkelola Azure SQL Database.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqlinstance) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqlinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,7 +60,7 @@ New-AzSqlInstance [-InstancePoolResourceId] <String> [-Name] <String> [-Administ
  [-ZoneRedundant] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### NewBySkuNameParameterSetParameter
+### NewByskuNameParameterSetParameter
 ```
 New-AzSqlInstance [-Name] <String> [-ResourceGroupName] <String> [-AdministratorCredential <PSCredential>]
  -Location <String> -SubnetId <String> [-LicenseType <String>] [-StorageSizeInGB <Int32>] -VCore <Int32>
@@ -74,11 +74,11 @@ New-AzSqlInstance [-Name] <String> [-ResourceGroupName] <String> [-Administrator
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSqlInstance** membuat Azure SQL Database Yang Dikelola.
+Cmdlet **New-AzSqlInstance** membuat instans Azure SQL Database Dikelola.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat contoh baru
+### Contoh 1: Membuat instans baru
 ```powershell
 PS C:\>New-AzSqlInstance -Name managedInstance1 -ResourceGroupName ResourceGroup01 -Location westcentralus -AdministratorCredential (Get-Credential) -SubnetId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Network/virtualNetworks/vnet_name/subnets/subnet_name" -LicenseType LicenseIncluded -StorageSizeInGB 1024 -VCore 16 -SkuName GP_Gen4 -DnsZonePartner "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Sql/managedInstances/partnerServerForDnsZone"
 Location                 : westcentralus
@@ -101,7 +101,7 @@ InstancePoolName         :
 
 Perintah ini membuat instans baru menggunakan parameter SkuName.
 
-### Contoh 2: Membuat contoh baru
+### Contoh 2: Membuat instans baru
 ```powershell
 PS C:\>New-AzSqlInstance -Name managedInstance2 -ResourceGroupName ResourceGroup01 -Location westcentralus -AdministratorCredential (Get-Credential) -SubnetId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Network/virtualNetworks/vnet_name/subnets/subnet_name" -LicenseType LicenseIncluded -StorageSizeInGB 1024 -VCore 16 -Edition "GeneralPurpose" -ComputeGeneration Gen4
 Location                 : westcentralus
@@ -124,7 +124,7 @@ InstancePoolName         :
 
 Perintah ini membuat instans baru dengan menggunakan parameter Edition dan ComputeGeneration.
 
-### Contoh 3: Buat contoh baru dalam instance pool menggunakan objek instance pool
+### Contoh 3: Membuat instans baru dalam kumpulan instans menggunakan objek kumpulan instans
 ```powershell
 PS C:\> $instancePool = Get-AzSqlInstancePool -ResourceGroupName resourcegroup01 -Name instancepool0
 PS C:\> $instancePool | New-AzSqlInstance -Name managedInstance2 -AdministratorCredential (Get-Credential) -LicenseType LicenseIncluded -StorageSizeInGB 1024 -VCore 2
@@ -146,9 +146,9 @@ DnsZone                  : ad35cna0mw
 InstancePoolName         : instancepool0
 ```
 
-Perintah ini membuat instans baru dalam sebuah instance pool menggunakan objek instance pool.
+Perintah ini membuat instans baru dalam kumpulan instans menggunakan objek kumpulan instans.
 
-### Contoh 4: Buat instans baru dalam sebuah instance pool menggunakan pengidentifikasi sumber daya pool instance
+### Contoh 4: Membuat instans baru dalam kumpulan instans menggunakan pengidentifikasi sumber daya kumpulan instans
 ```powershell
 PS C:\> $instancePool | New-AzSqlInstance -Name managedInstance2 -AdministratorCredential (Get-Credential) -LicenseType LicenseIncluded -StorageSizeInGB 1024 -VCore 2 -InstancePoolResourceId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Sql/instancePools/instancePool0"
 Location                 : westcentralus
@@ -169,9 +169,9 @@ DnsZone                  : ad35cna0mw
 InstancePoolName         : instancepool0
 ```
 
-Perintah ini membuat instans baru dalam sebuah instance pool menggunakan pengidentifikasi sumber daya instance pool.
+Perintah ini membuat instans baru dalam kumpulan instans menggunakan pengidentifikasi sumber daya kumpulan instans.
 
-### Contoh 5: Membuat instans baru dalam sebuah instance pool
+### Contoh 5: Membuat instans baru dalam kumpulan instans
 ```powershell
 PS C:\>New-AzSqlInstance -Name managedInstance1 -ResourceGroupName resourceGroup01 -Location westcentralus -AdministratorCredential (Get-Credential) -SubnetId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Network/virtualNetworks/vnet_name/subnets/subnet_name" -LicenseType LicenseIncluded -StorageSizeInGB 32 -VCore 2 -ComputeGeneration Gen5 -Edition GeneralPurpose -InstancePoolName instancePool0
 Location                 : westcentralus
@@ -192,9 +192,9 @@ DnsZone                  : ad35cna0mw
 InstancePoolName         : instancePool0
 ```
 
-Perintah ini membuat instans baru dalam sebuah instance pool dengan instans namaPool0
+Perintah ini membuat instans baru dalam kumpulan instans dengan nama instancePool0
 
-### Contoh 6: Membuat contoh baru dengan konfigurasi pemeliharaan
+### Contoh 6: Membuat instans baru dengan konfigurasi pemeliharaan
 ```powershell
 PS C:\>New-AzSqlInstance -Name managedInstance1 -ResourceGroupName resourcegroup01 -Location "westus" -AdministratorCredential (Get-Credential) -SubnetId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Network/virtualNetworks/vnet_name/subnets/subnet_name" -VCore 8 -ComputeGeneration Gen5 -Edition GeneralPurpose -MaintenanceConfigurationId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/providers/Microsoft.Maintenance/publicMaintenanceConfigurations/SQL_WestUS_MI_2"
 Location                   : westus
@@ -223,9 +223,9 @@ BackupStorageRedundancy    : Geo
 MaintenanceConfigurationId : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/providers/Microsoft.Maintenance/publicMaintenanceConfigurations/SQL_WestUS_MI_2
 ```
 
-Perintah ini membuat contoh baru dengan konfigurasi pemeliharaan MI_2
+Perintah ini membuat instans baru dengan MI_2 konfigurasi pemeliharaan
 
-### Contoh 7: Buat instans baru dengan Administrator External(Azure Active Directory), Azure Active Directory Hanya Autentikasi dan tidak ada SqlAdministratorCredentials
+### Contoh 7: Membuat instans baru dengan Administrator External(Azure Active Directory), Azure Active Directory Hanya Autentikasi dan tidak ada SqlAdministratorCredentials
 ```powershell
 PS C:\>New-AzSqlInstance -Name managedInstance2 -ResourceGroupName ResourceGroup01 -ExternalAdminName DummyLogin -EnableActiveDirectoryOnlyAuthentication -Location westcentralus -SubnetId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Network/virtualNetworks/vnet_name/subnets/subnet_name" -LicenseType LicenseIncluded -StorageSizeInGB 1024 -VCore 16 -Edition "GeneralPurpose" -ComputeGeneration Gen4
 Location                 : westcentralus
@@ -274,9 +274,9 @@ TenantId                  : f553829b-6d84-481b-86a9-42db57c1dc73
 AzureADOnlyAuthentication : True
 ```
 
-Perintah ini membuat zona baru - instans tak perlu
+Perintah ini membuat zona baru - contoh berlebihan
 
-### Contoh 8: Membuat zona baru - contoh tak perlu
+### Contoh 8: Membuat zona baru - contoh berlebihan
 ```powershell
 PS C:\>New-AzSqlInstance -Name managedInstance1 -ResourceGroupName ResourceGroup01 -Location westcentralus -AdministratorCredential (Get-Credential) -SubnetId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Network/virtualNetworks/vnet_name/subnets/subnet_name" -LicenseType LicenseIncluded -StorageSizeInGB 1024 -VCore 16 -SkuName GP_Gen4 -DnsZonePartner "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Sql/managedInstances/partnerServerForDnsZone" -ZoneRedundant
 Location                 : westcentralus
@@ -298,12 +298,12 @@ InstancePoolName         :
 ZoneRedundant            : true
 ```
 
-Perintah ini akan membuat instans baru dengan properti administrator eksternal dan hanya mengaktifkan autentikasi azure active directory.
+Perintah ini membuat instans baru dengan properti administrator eksternal dan autentikasi azure active directory saja yang diaktifkan.
 
 ## PARAMETERS
 
 ### -AdministratorCredential
-Contoh SQL kredensial autentikasi contoh.
+Kredensial autentikasi SQL instans.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -318,7 +318,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -333,7 +333,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignIdentity
-Buat dan tetapkan identitas Azure Active Directory untuk instans Terkelola ini untuk digunakan dengan layanan manajemen kunci seperti Azure KeyVault.
+Buat dan tetapkan identitas Azure Active Directory untuk instans Terkelola ini untuk digunakan dengan layanan manajemen utama seperti Azure KeyVault.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -348,7 +348,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupStorageRedundancy
-Kelebihan penyimpanan Cadangan digunakan untuk menyimpan cadangan untuk Contoh Terkelola Sql Azure. Opsinya adalah: Lokal, Zona dan Geo
+Redundansi penyimpanan Cadangan yang digunakan untuk menyimpan cadangan untuk Instans Terkelola Azure Sql. Opsinya adalah: Lokal, Zona dan Geo
 
 ```yaml
 Type: System.String
@@ -364,7 +364,7 @@ Accept wildcard characters: False
 ```
 
 ### -Collation
-Collation of the Azure SQL Managed Instance to use.
+Kolatasi Azure SQL Managed Instance untuk digunakan.
 
 ```yaml
 Type: System.String
@@ -379,7 +379,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeGeneration
-Pembuatan perhitungan untuk contoh.
+Pembuatan komputasi untuk instans.
 
 ```yaml
 Type: System.String
@@ -409,7 +409,7 @@ Accept wildcard characters: False
 ```
 
 ### -DnsZonePartner
-Id sumber daya dari Server Terkelola mitra untuk mewarisi properti DnsZone dari pembuatan contoh yang dikelola
+Id sumber daya mitra Server terkelola untuk mewarisi properti DnsZone dari untuk pembuatan instans terkelola
 
 ```yaml
 Type: System.String
@@ -423,8 +423,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Edition
-Edisi contoh.
+### -Edisi
+Edisi untuk instans.
 
 ```yaml
 Type: System.String
@@ -439,7 +439,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableActiveDirectoryOnlyAuthentication
-Mengaktifkan Autentikasi Hanya Direktori Aktif di server.
+Aktifkan Autentikasi Direktori Aktif Saja pada server.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -454,7 +454,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExternalAdminName
-Menentukan nama tampilan pengguna, grup atau aplikasi yang merupakan Azure Active Directory administrator untuk server. Nama tampilan harus ada di direktori aktif yang terkait dengan langganan saat ini.
+Menentukan nama tampilan pengguna, grup, atau aplikasi yang merupakan administrator Azure Active Directory untuk server. Nama tampilan ini harus ada di direktori aktif yang terkait dengan langganan saat ini.
 
 ```yaml
 Type: System.String
@@ -468,8 +468,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ExternalAdminSID
-Menentukan ID objek pengguna, grup atau aplikasi yang merupakan Azure Active Directory administrator.
+### -ExternalAdminsID
+Menentukan ID objek pengguna, grup, atau aplikasi yang merupakan administrator Azure Active Directory.
 
 ```yaml
 Type: System.Nullable`1[System.Guid]
@@ -483,7 +483,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Lewati pesan konfirmasi untuk melakukan tindakan
 
 ```yaml
@@ -499,7 +499,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Tipe identitas yang akan ditetapkan ke server. Nilai yang mungkin adalah SystemAsssigned, UserAssigned, 'SystemAssigned,UserAssigned' dan None.
+Tipe identitas yang akan ditetapkan ke server. Nilai yang memungkinkan adalah SystemAsssigned, UserAssigned, 'SystemAssigned,UserAssigned' dan None.
 
 ```yaml
 Type: System.String
@@ -514,7 +514,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstancePool
-Objek induk pool instance.
+Objek induk kumpulan instans.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Instance_Pools.Model.AzureSqlInstancePoolModel
@@ -529,7 +529,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstancePoolName
-Pool instance untuk menempatkan contoh ini.
+Kumpulan instans untuk menempatkan contoh ini.
 
 ```yaml
 Type: System.String
@@ -544,7 +544,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstancePoolResourceId
-Instance pool resource id.
+Id sumber daya kumpulan instans.
 
 ```yaml
 Type: System.String
@@ -559,7 +559,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyId
-URI Azure Key Vault yang digunakan untuk enkripsi.
+Azure Key Vault URI yang digunakan untuk enkripsi.
 
 ```yaml
 Type: System.String
@@ -574,9 +574,9 @@ Accept wildcard characters: False
 ```
 
 ### -LicenseType
-Menentukan Tipe Lisensi mana yang digunakan. Nilai yang mungkin adalah:
-- BasePrice - Harga diskon Azure Hybrid Benefit (AHB) untuk pemilik SQL Server lisensi yang sudah ada diterapkan. Harga layanan Instans Terkelola akan didiskon untuk pemilik SQL Server lisensi yang sudah ada.
-- LicenseIncluded - Harga diskon Azure Hybrid Benefit (AHB) untuk pemilik SQL Server lisensi yang sudah ada tidak berlaku. Harga layanan Instans Terkelola akan menyertakan biaya SQL Server lisensi baru.
+Menentukan Tipe Lisensi mana yang akan digunakan. Nilai yang memungkinkan adalah:
+- Harga diskon BasePrice - Azure Hybrid Benefit (AHB) untuk pemilik lisensi SQL Server yang sudah ada diterapkan. Harga layanan Instans Terkelola akan didiskon untuk pemilik lisensi SQL Server yang sudah ada.
+- LicenseIncluded - Harga diskon Azure Hybrid Benefit (AHB) untuk pemilik lisensi SQL Server yang sudah ada tidak diterapkan. Harga layanan Instans Terkelola akan menyertakan biaya lisensi SQL Server baru.
 
 ```yaml
 Type: System.String
@@ -606,7 +606,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaintenanceConfigurationId
-Id konfigurasi Pemeliharaan untuk Contoh Terkelola Sql Azure.
+Id konfigurasi Pemeliharaan untuk Instans Terkelola Azure Sql.
 
 ```yaml
 Type: System.String
@@ -621,7 +621,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinimalTlsVersion
-Versi TLS minimal untuk diterapkan untuk Instans terkelola 
+Versi TLS minimal yang diterapkan untuk instans Terkelola 
 
 ```yaml
 Type: System.String
@@ -637,7 +637,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama contoh.
+Nama instans.
 
 ```yaml
 Type: System.String
@@ -652,7 +652,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryUserAssignedIdentityId
-Id utama User Managed Identity(UMI).
+Id Identitas Terkelola Pengguna (UMI) utama.
 
 ```yaml
 Type: System.String
@@ -667,7 +667,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProxyOverride
-Tipe koneksi yang digunakan untuk menghubungkan ke instans.
+Tipe koneksi yang digunakan untuk menyambungkan ke instans.
 
 ```yaml
 Type: System.String
@@ -682,7 +682,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicDataEndpointEnabled
-Apakah titik akhir data publik diaktifkan atau tidak.
+Apakah titik akhir data publik diaktifkan atau tidak untuk instans.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -727,7 +727,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageSizeInGB
-Menentukan seberapa Storage besar untuk dikaitkan dengan instans
+Menentukan berapa banyak ukuran Storage untuk dikaitkan dengan instans
 
 ```yaml
 Type: System.Int32
@@ -757,7 +757,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag untuk dikaitkan dengan contoh
+Tag yang akan dikaitkan dengan instans
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -772,7 +772,7 @@ Accept wildcard characters: False
 ```
 
 ### -TimezoneId
-Id zona waktu untuk instans yang diatur. Daftar id zona waktu diekspos melalui tampilan sys.time_zone_info (Transact-SQL).
+Id zona waktu untuk contoh yang diatur. Daftar id zona waktu diekspos melalui tampilan sys.time_zone_info (Transact-SQL).
 
 ```yaml
 Type: System.String
@@ -802,7 +802,7 @@ Accept wildcard characters: False
 ```
 
 ### -VCore
-Menentukan seberapa banyak VCore dikaitkan dengan contoh
+Menentukan berapa banyak VCore untuk dikaitkan dengan instance
 
 ```yaml
 Type: System.Int32
@@ -817,7 +817,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneRedundant
-Menggunakan penyimpanan berlebih zona
+Menggunakan penyimpanan zona berlebihan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -832,7 +832,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -848,7 +848,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -863,11 +863,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

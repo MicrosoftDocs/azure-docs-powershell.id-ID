@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerBackendAddressPoolConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerBackendAddressPoolConfig.md
-ms.openlocfilehash: 439ad3e9a1026f2fb3a9df692f9c9ae0977d721a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 91489d4fdfde52bd41a017bd6518a31098a8b008
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140007871"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142290391"
 ---
 # Get-AzLoadBalancerBackendAddressPoolConfig
 
 ## SYNOPSIS
-Mendapatkan konfigurasi pool alamat backend untuk penyeimbang muat.
+Mendapatkan konfigurasi kumpulan alamat backend untuk penyeimbang beban.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azloadbalancerbackendaddresspoolconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,23 +29,23 @@ Get-AzLoadBalancerBackendAddressPoolConfig -LoadBalancer <PSLoadBalancer> [-Name
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzLoadBalancerBackendAddressPoolConfig** mendapatkan satu pool alamat backend atau daftar kolam renang alamat backend dalam penyeimbang muat.
+Cmdlet **Get-AzLoadBalancerBackendAddressPoolConfig** mendapatkan satu kumpulan alamat backend atau daftar kumpulan alamat backend dalam load balancer.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pool alamat backend
+### Contoh 1: Dapatkan kumpulan alamat backend
 ```
 PS C:\>$loadbalancer = Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 PS C:\> Get-AzLoadBalancerBackendAddressPoolConfig -Name "BackendAddressPool02" -LoadBalancer $loadbalancer
 ```
 
-Perintah pertama mendapatkan penyeimbang muat yang sudah ada bernama MyLoadBalancer dalam grup sumber daya yang bernama MyResourceGroup, lalu menyimpannya di $loadbalancer lokal.
-Perintah kedua mendapatkan konfigurasi pool alamat backend terkait bernama BackendAddressPool02 untuk penyeimbang muat dalam $loadbalancer.
+Perintah pertama mendapatkan load balancer yang sudah ada bernama MyLoadBalancer dalam grup sumber daya bernama MyResourceGroup, lalu menyimpannya dalam variabel $loadbalancer.
+Perintah kedua mendapatkan konfigurasi kumpulan alamat backend terkait bernama BackendAddressPool02 untuk penyeimbang muatan di $loadbalancer.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan penyeimbang muat yang terkait dengan pool alamat backend untuk mendapatkan.
+Menentukan penyeimbang muatan yang terkait dengan kumpulan alamat backend yang akan didapatkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama penyeimbang muat yang berisi pool alamat backend untuk mendapatkan.
+Menentukan nama penyeimbang muatan yang berisi kumpulan alamat backend untuk didapatkan.
 
 ```yaml
 Type: System.String
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

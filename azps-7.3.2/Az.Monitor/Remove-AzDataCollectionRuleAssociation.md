@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzDataCollectionRuleAssociation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzDataCollectionRuleAssociation.md
-ms.openlocfilehash: 1264422ae4ebfd83b2d0078746d0384d4114ce2e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 24dc3c51234fafe16b02badb6d31e27b708fdaf9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140198535"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142291111"
 ---
 # Remove-AzDataCollectionRuleAssociation
 
 ## SYNOPSIS
-Menghapus asosiasi aturan pengumpulan data.
+Menghapus kaitan aturan pengumpulan data.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/remove-azdatacollectionruleassociation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,13 +57,13 @@ Remove-AzDataCollectionRuleAssociation
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzDataCollectionRuleAssociation** menghapus data collection rule association (DCRA).
+Cmdlet **Remove-AzDataCollectionRuleAssociation** menghapus asosiasi aturan pengumpulan data (DCRA).
 
-Untuk menerapkan DCR ke mesin virtual, Anda membuat asosiasi untuk mesin virtual. Mesin virtual mungkin memiliki kaitan ke beberapa DCR, dan DCR mungkin memiliki beberapa mesin virtual yang terkait dengannya. Ini memungkinkan Anda menentukan kumpulan DCR, setiap persyaratan tertentu yang cocok, dan menerapkannya hanya pada mesin virtual di mana ketentuan berlaku. Berikut adalah artikel ["Mengonfigurasi pengumpulan data untuk agen Azure Monitor"](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection-rule-azure-monitor-agent) menggunakan DCRA.
+Untuk menerapkan DCR ke mesin virtual, Anda membuat asosiasi untuk mesin virtual. Mesin virtual mungkin memiliki hubungan dengan beberapa DCR, dan DCR mungkin memiliki beberapa mesin virtual yang terkait dengannya. Ini memungkinkan Anda menentukan sekumpulan DCR, masing-masing cocok dengan persyaratan tertentu, dan menerapkannya hanya ke mesin virtual tempatnya diterapkan. Berikut adalah [artikel "Mengonfigurasi pengumpulan data untuk agen Azure Monitor"](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection-rule-azure-monitor-agent) menggunakan DCRA.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus parameter aturan pengumpulan data yang berhubungan dengan nama dan ID sumber daya target (mesin virtual terkait)
+### Contoh 1: Hapus aturan pengumpulan data yang terkait dengan parameter nama dan ID sumber daya target (mesin virtual terkait)
 ```
 PS C:\>Remove-AzDataCollectionRuleAssociation -TargetResourceId $vm.Id -AssociationName $assocName
 ```
@@ -70,7 +73,7 @@ PS C:\>Remove-AzDataCollectionRuleAssociation -TargetResourceId $vm.Id -Associat
 PS C:\>$dcrAssoc | Remove-AzDataCollectionRule
 ```
 
-### Contoh 3: Hapus aturan pengumpulan data dengan properti ID sumber daya asosiasi
+### Contoh 3: Menghapus aturan pengumpulan data dengan properti ID sumber daya asosiasi
 ```
 PS C:\>Remove-AzDataCollectionRule -AssociationId $dcrAssoc.Id
 ```
@@ -78,7 +81,7 @@ PS C:\>Remove-AzDataCollectionRule -AssociationId $dcrAssoc.Id
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetResourceId
-ID sumber daya yang terkait.
+ID sumber daya terkait.
 
 ```yaml
 Type: System.String
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-PSDataCollectionRuleResource Object
+Objek PSDataCollectionRuleResource
 
 ```yaml
 Type: Microsoft.Azure.Commands.Insights.OutputClasses.PSDataCollectionRuleAssociationProxyOnlyResource
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

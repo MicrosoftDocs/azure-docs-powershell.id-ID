@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Add-AzRecoveryServicesAsrReplicationProtectedItemDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Add-AzRecoveryServicesAsrReplicationProtectedItemDisk.md
-ms.openlocfilehash: 7cb5aa8569c04270465866885c25b4fd3b3335ee
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e7b6cb0e5115c2749e64997d57c73278f2259ce7
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140371355"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142289257"
 ---
 # Add-AzRecoveryServicesAsrReplicationProtectedItemDisk
 
 ## SYNOPSIS
-Tambahkan disk untuk proteksi untuk komputer virtual Azure yang sudah diproteksi.
+Tambahkan disk untuk perlindungan untuk mesin virtual azure yang sudah dilindungi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/add-azrecoveryservicesasrreplicationprotecteditemdisk) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Add-AzRecoveryServicesAsrReplicationProtectedItemDisk -InputObject <ASRReplicati
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzRecoveryServicesAsrReplicationProtectedItemDisk** menambahkan disk untuk perlindungan untuk komputer virtual Azure yang sudah diproteksi.
+Cmdlet **Add-AzRecoveryServicesAsrReplicationProtectedItemDisk** menambahkan disk untuk perlindungan untuk mesin virtual azure yang sudah dilindungi.
 
 ## EXAMPLES
 
@@ -35,19 +38,19 @@ Cmdlet **Add-AzRecoveryServicesAsrReplicationProtectedItemDisk** menambahkan dis
 PS C:> Add-AzRecoveryServicesAsrReplicationProtectedItemDisk -ReplicationProtectedItem $rpi -AzureToAzureDiskReplicationConfiguration $disk1,$disk2
 ```
 
-Mulai operasi untuk menambahkan konfigurasi disk tertentu untuk proteksi.
+Mulai operasi untuk menambahkan konfigurasi disk yang ditentukan untuk perlindungan.
 
 ### Contoh 2
 ```powershell
 PS C:> $ReplicationProtectedItem |Add-AzRecoveryServicesAsrReplicationProtectedItemDisk -AzureToAzureDiskReplicationConfiguration $disk1,$disk2
 ```
 
-Mulai operasi untuk menambahkan konfigurasi disk tertentu untuk proteksi. Item yang diproteksi replikasi input pemipaan.
+Mulai operasi untuk menambahkan konfigurasi disk yang ditentukan untuk perlindungan. Item terproteksi replikasi input perpipaan.
 
 ## PARAMETERS
 
 ### -AzureToAzureDiskReplicationConfiguration
-Menentukan konfigurasi disk yang akan digunakan untuk perlindungan disk bagi skenario pemulihan bencana Azure ke Azure.
+Menentukan konfigurasi disk yang akan digunakan untuk proteksi disk untuk Azure ke Azure skenario pemulihan bencana.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRAzuretoAzureDiskReplicationConfig[]
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek input ke cmdlet: Objek item terproteksi replikasi ASR yang terkait dengan disk baru mana yang harus diproteksi.
+Objek input ke cmdlet: Objek item yang dilindungi replikasi ASR yang terkait dengan disk baru yang harus dilindungi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -WaitForCompletion
-Tunggu penyelesaian
+Tunggu Penyelesaian
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,11 +141,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

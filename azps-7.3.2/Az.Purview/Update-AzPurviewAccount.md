@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/help/Update-AzPurviewAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/help/Update-AzPurviewAccount.md
-ms.openlocfilehash: bb9bfb634f80c1f5bb303eb3b10acf2e79586367
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 4735fd2d52159962c3c93bea68647080103e17e9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140196454"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142289383"
 ---
 # Update-AzPurviewAccount
 
 ## SYNOPSIS
 Memperbarui akun
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.purview/update-azpurviewaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Memperbarui akun
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui akun tampilan baru
+### Contoh 1: Memperbarui akun purview
 ```powershell
 PS C:\>  Update-AzPurviewAccount -Name test-pa -ResourceGroupName test-rg -Tag @{"k"="v"} | fl 
 
@@ -94,9 +97,9 @@ Tag                              : {
 Type                             : Microsoft.Purview/account
 ```
 
-Memperbarui tag akun tampilan bernama 'test-pa'
+Memperbarui tag akun purview bernama 'test-pa'
 
-### Contoh 2: Perbarui akun tampilan bersih dengan InputObject
+### Contoh 2: Memperbarui akun purview oleh InputObject
 ```powershell
 PS C:\>  $get = Get-AzPurviewAccount -Name test-pa -ResourceGroupName test-rg 
 PS C:\> Update-AzPurviewAccount -InputObject $get -Tag @{"k"="v"}
@@ -153,7 +156,7 @@ Tag                              : {
 Type                             : Microsoft.Purview/account
 ```
 
-Memperbarui tag akun tampilan yang dinamai 'test-pa' oleh InputObject
+Memperbarui tag akun purview bernama 'test-pa' oleh InputObject
 
 ## PARAMETERS
 
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purview.Models.IPurviewIdentity
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -293,7 +296,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag pada sumber daya Azure.
+Tag di sumber daya azure.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -308,7 +311,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -324,7 +327,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -339,7 +342,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

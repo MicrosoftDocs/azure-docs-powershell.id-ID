@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayBackendHealth.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayBackendHealth.md
-ms.openlocfilehash: 3d216aeadbeec7a3844b2922584203e3ccd23005
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: da12535e0731a8cdeea4aa3837560c272987b876
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140186041"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142290643"
 ---
 # Get-AzApplicationGatewayBackendHealth
 
 ## SYNOPSIS
 Mendapatkan kesehatan backend gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewaybackendhealth) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,19 +38,19 @@ Cmdlet Get-AzApplicationGatewayBackendHealth mendapatkan kesehatan backend gatew
 PS C:\>$BackendHealth = Get-AzApplicationGatewayBackendHealth -Name ApplicationGateway01 -ResourceGroupName ResourceGroup01
 ```
 
-Perintah ini akan mendapatkan kesehatan backend gateway aplikasi yang bernama ApplicationGateway01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01 dan menyimpannya dalam $BackendHealth sumber daya.
+Perintah ini mendapatkan kesehatan backend gateway aplikasi bernama ApplicationGateway01 yang termasuk dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $BackendHealth.
 
 ### Contoh 2: Mendapatkan kesehatan backend dengan sumber daya yang diperluas.
 ```
 PS C:\>$BackendHealth = Get-AzApplicationGatewayBackendHealth -Name ApplicationGateway01 -ResourceGroupName ResourceGroup01 -ExpandResource "backendhealth/applicationgatewayresource"
 ```
 
-Perintah ini akan mendapatkan kesehatan backend (dengan sumber daya yang diperluas) dari gateway aplikasi yang bernama ApplicationGateway01 yang termasuk dalam grup sumber daya yang bernama ResourceGroup01 dan menyimpannya dalam $BackendHealth sumber daya.
+Perintah ini mendapatkan kesehatan backend (dengan sumber daya yang diperluas) gateway aplikasi bernama ApplicationGateway01 yang termasuk dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $BackendHealth.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -62,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama gateway aplikasi yang akan dapatkan cmdlet ini.
+Menentukan nama gateway aplikasi yang didapatkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -131,7 +134,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayBackendHealth
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, network, networking
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan
 
 ## RELATED LINKS
 

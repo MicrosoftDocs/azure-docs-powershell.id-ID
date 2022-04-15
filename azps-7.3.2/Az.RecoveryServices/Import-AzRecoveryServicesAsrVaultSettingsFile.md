@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Import-AzRecoveryServicesAsrVaultSettingsFile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Import-AzRecoveryServicesAsrVaultSettingsFile.md
-ms.openlocfilehash: 26684806bdf72615c0e84f322c8fb2a68c7731a1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 08d465e22070bc77ae3694b98b045bf6803574ab
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140401631"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142288825"
 ---
 # Import-AzRecoveryServicesAsrVaultSettingsFile
 
 ## SYNOPSIS
-Mengimpor file pengaturan penyimpanan ASR tertentu untuk mengatur konteks vault(konteks sesi PowerShell) untuk operasi ASR berikutnya di sesi PowerShell.
+Mengimpor file pengaturan vault ASR tertentu untuk mengatur konteks kubah(konteks sesi PowerShell) untuk operasi ASR berikutnya dalam sesi PowerShell.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/import-azrecoveryservicesasrvaultsettingsfile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Import-AzRecoveryServicesAsrVaultSettingsFile [-Path] <String> [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Cmdlet **Import-AzRecoveryServicesAsrVaultSettingsFile** mengimpor file pengaturan vault Pemulihan Situs Azure. File pengaturan vault digunakan untuk mengatur konteks vault untuk operasi Pemulihan Situs Azure berikutnya dalam sesi saat ini.
+Cmdlet **Impor-AzRecoveryServicesAsrVaultSettingsFile** mengimpor file pengaturan azure Site Recovery kubah. File pengaturan kubah digunakan untuk mengatur konteks kubah untuk operasi Azure Site Recovery berikutnya dalam sesi saat ini.
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ Cmdlet **Import-AzRecoveryServicesAsrVaultSettingsFile** mengimpor file pengatur
 PS C:\> $VaultSettings = Import-AzRecoveryServicesAsrVaultSettingsFile -Path $FilePath
 ```
 
-Mengimpor file pengaturan penyimpanan Layanan Pemulihan tertentu dan mengembalikan pengaturan vault yang diimpor.
+Mengimpor file pengaturan kubah Layanan Pemulihan tertentu dan mengembalikan pengaturan kubah yang diimpor.
 
 ## PARAMETERS
 
@@ -54,9 +57,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur folder file pengaturan vault ASR.
-File ini dapat diunduh dari portal vault Layanan Pemulihan dan disimpan secara lokal.
+### -Jalur
+Menentukan jalur folder file pengaturan kubah ASR.
+File ini dapat diunduh dari portal kubah Layanan Pemulihan dan disimpan secara lokal.
 
 ```yaml
 Type: System.String
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -115,4 +118,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Cmdlet Layanan Pemulihan Azure](/powershell/module/az.recoveryservices)
+[Cmdlet Azure Recovery Services](/powershell/module/az.recoveryservices)
